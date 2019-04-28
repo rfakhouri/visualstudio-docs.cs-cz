@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1de8b942b64de56b93b2fece3f46b23413b6981
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea3286c2d4ae27afc7422700bd4f745ab28520fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399438"
 ---
 # <a name="debugging-gpu-code"></a>Ladění kódu GPU
 Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). Podpora v sadě Visual Studio pro ladění GPU zahrnuje závodu detekce spouštění procesů a připojení, a integraci do ladění systému windows.
@@ -27,7 +27,7 @@ Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). 
  Ladění se podporuje na [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)], a [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Pro ladění v softwarovém emulátoru [!INCLUDE[win8](../debugger/includes/win8_md.md)], nebo [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] je povinný. Pro ladění na hardwaru, je nutné nainstalovat ovladače pro grafickou kartu. Ne všichni dodavatelé hardwaru implementuje všechny funkce ladicího programu. Omezení v dokumentaci dodavatele.
 
 > [!NOTE]
->  Nezávislí dodavatelé hardwaru, kteří požadují pro podporu ladění GPU v sadě Visual Studio vytvořit knihovnu DLL, která implementuje rozhraní VSD3DDebug a cíle své vlastní ovladače.
+> Nezávislí dodavatelé hardwaru, kteří požadují pro podporu ladění GPU v sadě Visual Studio vytvořit knihovnu DLL, která implementuje rozhraní VSD3DDebug a cíle své vlastní ovladače.
 
 ## <a name="configuring-gpu-debugging"></a>Konfigurace ladění GPU
  Ladicí program nelze přerušit na kód CPU a GPU kódu v rámci stejné aplikace. Ve výchozím nastavení ladicí program přeruší na procesoru kódu. Ladění kódu GPU, použijte jeden z následujících dvou kroků:

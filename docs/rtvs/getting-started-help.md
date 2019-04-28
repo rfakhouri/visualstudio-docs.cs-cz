@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950604"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Nápovědu v nástroje jazyka R pro Visual Studio
 

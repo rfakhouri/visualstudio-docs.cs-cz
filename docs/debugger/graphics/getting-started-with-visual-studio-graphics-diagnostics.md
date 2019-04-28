@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d74b90fc0bcbe67b13cffadb2793bc15213b9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4fc7dd207a525eaed12db1b2e45e7720d96ee8b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388698"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Začínáme s diagnostikou grafiky sady Visual Studio
 V této části budete připravit k použití diagnostiky grafiky poprvé, pak budete moct zachytit snímků z aplikace Direct3D a kontrole v analyzátoru grafiky.
@@ -46,7 +46,7 @@ V této části budete připravit k použití diagnostiky grafiky poprvé, pak b
    Součást nástroje grafiky je také automaticky nainstalován při instalaci Windows 10 SDK.
 
 > [!TIP]
->  Volitelná součást nástroje grafiky Windows 10 obsahuje jednoduchý záznam a přehrávání funkce – například program příkazového řádku pro zachytávání **dxcap.exe**–, který je možné v podpory, testování a diagnostických scénáře počítače, kde nejsou nainstalovány nástroje pro vývojáře. Další informace najdete v tématu [nástroj příkazového řádku pro zachycení](command-line-capture-tool.md) tématu.
+> Volitelná součást nástroje grafiky Windows 10 obsahuje jednoduchý záznam a přehrávání funkce – například program příkazového řádku pro zachytávání **dxcap.exe**–, který je možné v podpory, testování a diagnostických scénáře počítače, kde nejsou nainstalovány nástroje pro vývojáře. Další informace najdete v tématu [nástroj příkazového řádku pro zachycení](command-line-capture-tool.md) tématu.
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>Při prvním použití diagnostiky grafiky
  Teď, když máte všechno, co potřebujete, jste připraveni začít používat diagnostiku grafiky. Postupujte podle těchto kroků.
@@ -63,7 +63,7 @@ V této části budete připravit k použití diagnostiky grafiky poprvé, pak b
  Teď jste připravení začít s vaší první relace diagnostiky grafiky. V sadě Visual Studio, zvolte v hlavní nabídce **ladění, grafiky, spustit ladění grafiky**, nebo stačí stisknout kombinaci kláves **Alt + F5**. To spustí vaši aplikaci v rámci diagnostiky grafiky a zobrazí okno relace diagnostiky v sadě Visual Studio.
 
 > [!IMPORTANT]
->  Pokud spouštíte aplikaci ve Windows 10 a volitelná součást nástroje grafiky ještě nenainstalovali, budete vyzváni k tomu teď. Musíte jej nainstalovat abyste mohli používat diagnostiky grafiky ve Windows 10.
+> Pokud spouštíte aplikaci ve Windows 10 a volitelná součást nástroje grafiky ještě nenainstalovali, budete vyzváni k tomu teď. Musíte jej nainstalovat abyste mohli používat diagnostiky grafiky ve Windows 10.
 
 ### <a name="3---capture-frames"></a>3 - zachycování snímků
  Jste připraveni k zachycení snímků co nejdříve po spuštění vaší aplikace.

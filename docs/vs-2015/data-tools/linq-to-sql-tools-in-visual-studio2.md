@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 44e12e616e453dcdc0390e8a6eb5b2065a51a6bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384048"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Nástroje LINQ to SQL v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Technologie LINQ to SQL byl první objektově relační mapování technologie v
  ![Technologie LINQ to SQL Návrhář](../data-tools/media/raddata-linq-to-sql-designer.png "raddata LINQ to SQL Návrháře")
 
 > [!IMPORTANT]
->  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Je jednoduchý objekt relační Mapovač, protože podporuje pouze relace mapování 1:1. Jinými slovy třídu entity může mít pouze mapování 1:1 relaci s databázové tabulky nebo zobrazení. Komplexní mapování, jako je například mapování třídu entity do tabulky připojené k doméně, není podporována. použití rozhraní Entity Framework pro komplexní mapování. Kromě toho Návrhář je generátor kódu jednosměrná. To znamená, že se projeví pouze změny provedené na plochu návrháře do souboru kódu. Ruční změny do souboru kódu se neprojeví v [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Všechny změny, které můžete provést ručně v souboru kódu jsou přepsány při návrháři se uloží a kód vygenerován znovu. Informace o tom, jak přidat uživatelský kód a rozšíření třídy generované [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], naleznete v tématu [jak: Rozšíření kódu vygenerovaného návrhářem relací objektů](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Je jednoduchý objekt relační Mapovač, protože podporuje pouze relace mapování 1:1. Jinými slovy třídu entity může mít pouze mapování 1:1 relaci s databázové tabulky nebo zobrazení. Komplexní mapování, jako je například mapování třídu entity do tabulky připojené k doméně, není podporována. použití rozhraní Entity Framework pro komplexní mapování. Kromě toho Návrhář je generátor kódu jednosměrná. To znamená, že se projeví pouze změny provedené na plochu návrháře do souboru kódu. Ruční změny do souboru kódu se neprojeví v [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Všechny změny, které můžete provést ručně v souboru kódu jsou přepsány při návrháři se uloží a kód vygenerován znovu. Informace o tom, jak přidat uživatelský kód a rozšíření třídy generované [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], naleznete v tématu [jak: Rozšíření kódu vygenerovaného návrhářem relací objektů](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="creating-and-configuring-the-datacontext"></a>Vytváření a konfiguraci DataContext
  Po přidání **třídy LINQ to SQL** položky do projektu a otevřete [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], prázdný návrhové ploše představuje prázdný <xref:System.Data.Linq.DataContext> jste připravení nakonfigurovat. <xref:System.Data.Linq.DataContext> má nakonfigurovanou připojení na základě informací poskytnutých první položka, která je přetažena na návrhovou plochu... Proto <xref:System.Data.Linq.DataContext> je nakonfigurován s použitím informací o připojení z první položky na návrhové ploše. Další informace o <xref:System.Data.Linq.DataContext> třídy viz [metod DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
@@ -53,7 +53,7 @@ Technologie LINQ to SQL byl první objektově relační mapování technologie v
  Můžete vytvořit <xref:System.Data.Linq.DataContext> metody, které volají (jsou namapovány na) uložené procedury a funkce přetažením z **Průzkumníka serveru**/**Průzkumník databáze** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Uložené procedury a funkce jsou přidány do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] jako metody <xref:System.Data.Linq.DataContext>.
 
 > [!NOTE]
->  Při přetažení uložených procedur a funkcí z **Průzkumníka serveru**/**Průzkumník databáze** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], návratový typ vytvořeného <xref:System.Data.Linq.DataContext> metoda se liší v závislosti na tom, kde je vyřadit položku. Další informace najdete v tématu [metod DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
+> Při přetažení uložených procedur a funkcí z **Průzkumníka serveru**/**Průzkumník databáze** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], návratový typ vytvořeného <xref:System.Data.Linq.DataContext> metoda se liší v závislosti na tom, kde je vyřadit položku. Další informace najdete v tématu [metod DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 ## <a name="configuring-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Konfigurace DataContext pro uložení dat mezi třídami entit a databází pomocí uložených procedur
  Jak bylo uvedeno dříve, můžete vytvořit <xref:System.Data.Linq.DataContext> metody, které volají uložených procedur a funkcí. Kromě toho můžete také přiřadit uložené procedury, které lze použít pro výchozí [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] chování za běhu, který provádí vložení, aktualizace a odstranění. Další informace najdete v tématu [jak: Přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).

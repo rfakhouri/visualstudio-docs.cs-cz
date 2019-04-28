@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 091ccc30f16081fdca8f10778efec208ef5ccb16
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58154449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993420"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
 Volá se, aby informovat objektu profileru pokaždé, když je profilování zastaveno na skriptovacím stroji. Tímto způsobem profiler objektu můžete volat jeho rutiny cleanup, podle potřeby. Tato metoda je volána také skriptovací modul, když skriptovací stroj se vypíná, nebo když volání [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) selže.  

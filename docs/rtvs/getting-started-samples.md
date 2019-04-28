@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950508"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Nástroje R pro Visual Studio ukázkových projektů
 
@@ -81,7 +81,7 @@ Toto porovnání ukazuje, že MLS a MRO s MKL jsou výrazně vyšší výpočetn
 
 ![Porovnání MLS a MRO s MKL r a MRO bez MKL](media/samples-speed-comparison.png)
 
-Technické porovnání jazyka R s MRO a MLS, projděte si [Lixun Potokar podrobné diskuze](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) v tomto tématu.
+Technické porovnání jazyka R s MRO a MLS, projděte si [Lixun Potokar podrobné diskuze](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) v tomto tématu.
 
 Na následujícím obrázku pak porovná uplynulý čas v sekundách použít při vytváření logistické regresní modely k předpovědi zpoždění letů delší než 15 minut.  Uplynulý čas při CRAN r. zvýší výrazně při zvýšení malý počet řádků, zatímco MLS zvyšuje úroveň pouze přibližně dvakrát. Podrobnosti o tomto srovnávacího testu, podívejte se *srovnávací testy/rxGlm_benchmark. R* příklad.
 

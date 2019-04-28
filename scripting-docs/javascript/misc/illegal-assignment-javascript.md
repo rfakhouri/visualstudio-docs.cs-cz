@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3fff0639659f7470b5f4baa69e4038b3544036c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007463"
 ---
 # <a name="illegal-assignment-javascript"></a>Neplatné přiřazení (JavaScript)
 Jste se pokusili přiřadit hodnotu identifikátoru jen pro čtení. Identifikátor jen pro čtení nelze přiřadit hodnotu. Například hostitel definované objekty a externí objekty modelu COM.  

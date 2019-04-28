@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1a5ad34904a2f0bf02e5a2221f1ff73093012a41
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916927"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 Toto rozhraní se používá program uzly k určení všech možných ladění motorů (DE), které můžete ladit tento program.

@@ -8,11 +8,11 @@ ms.workload:
 - cplusplus
 author: mikeblome
 ms.openlocfilehash: 90761092f3e3be9aad57ab2b47e4648676871f9d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973114"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Jak používat Google Test pro C++ v sadě Visual Studio
 V **Visual Studio 2017 verze 15.5** a později, Google Test je integrována do integrovaného vývojového prostředí sady Visual Studio jako součást výchozí **Desktop Development with C++** pracovního vytížení. Pokud chcete ověřit, jestli je nainstalovaný na počítači, otevřete instalační program sady Visual Studio a vyhledejte Google Test v seznamu součástí úlohy:

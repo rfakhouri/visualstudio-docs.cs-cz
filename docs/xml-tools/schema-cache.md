@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 28f5a7ffe202e7e02b06e676501ab508ee1a4ab2
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955550"
 ---
-# <a name="schema-cache"></a>Mezipaměti schémat
+# <a name="schema-cache"></a>Mezipaměť schémat
 
 XML editor poskytuje nachází v mezipaměti schématu *%VSInstallDir%\xml\Schemas* adresáře. Mezipaměti schématu je pro všechny uživatele ve vašem počítači globální a obsahuje standardní schémat XML, které slouží k ověření dokumentu technologie IntelliSense a XML.
 

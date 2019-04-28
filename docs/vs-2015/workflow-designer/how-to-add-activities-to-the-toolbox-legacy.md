@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c3a8c6f397bbafdbdb29ecbb193c4200a26335c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943357"
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Postupy: Přidání aktivit do panelu nástrojů (starší verze)
 Při vytváření řešení pracovního postupu s starší [!INCLUDE[wfd1](../includes/wfd1-md.md)] , který cílí [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], vlastní aktivity mohou být přidány do projektu pracovního postupu a jejich návrháři umístěny do **nástrojů** pro snadné přístup. Můžete také přidat aktivity přímo **nástrojů** z dynamické knihovny (DLL).  

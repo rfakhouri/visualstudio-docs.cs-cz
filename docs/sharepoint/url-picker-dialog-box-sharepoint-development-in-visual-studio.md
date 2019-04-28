@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d8f193e50053b5cdf0b89cf41b09471c513ee9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007949"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Dialogové okno pro výběr adresy URL (vývoj pro SharePoint v sadě Visual Studio)
   V dialogovém okně pro výběr adresy URL můžete soubory, jako jsou soubory stránky předlohy nebo obrazových souborů, které se nacházejí v projektu nebo na místním serveru, na kterém běží SharePoint.

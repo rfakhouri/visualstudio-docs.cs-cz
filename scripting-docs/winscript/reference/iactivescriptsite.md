@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 67e16e2825f03c9ae452e639d6a086bee584ac95
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992558"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 Implementovat hostitelem pro vytvoření webu pro modul skriptu Windows. Tato lokalita bude obvykle spojené s kontejnerem všechny objekty, které jsou viditelné pro skript (například ovládací prvky ActiveX). Tento kontejner se obvykle odpovídají dokumentu nebo zobrazení stránky. Microsoft Internet Explorer by například vytvořit kontejner, pro každou stránku HTML, který se zobrazí. Každý ActiveX na stránce a skriptovací stroj, ovládací prvek (nebo jiné automatizační objekt) by vyčíslitelné v tomto kontejneru.  

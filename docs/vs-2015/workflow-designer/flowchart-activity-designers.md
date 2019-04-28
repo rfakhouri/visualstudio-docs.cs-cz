@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d26c60dab3ab09d2fc9f42609568ab21ecd19104
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943389"
 ---
 # <a name="flowchart-activity-designers"></a>Návrháři aktivit vývojového diagramu
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] obsahuje několik poskytované systémem aktivit, které můžete použít při vytváření pracovního postupu. Tato část obsahuje poskytované systémem aktivity používat ke správě vývojových v rámci pracovního postupu. Následující témata obsahují jejich popis a pokyny, jak je používat.  

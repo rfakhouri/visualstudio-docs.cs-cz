@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f572405b6246619dac8b567283696319d65211bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953177"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Další zdroje informací pro vývoj řešení pro systém Office
   Nástroje Microsoft Office developer tools v sadě Visual Studio představují pouze jedna z mnoha způsoby, jak rozšířit aplikace Office. Aplikace Office mají také některé integrované funkce, jako je například otevřených formátů XML, které nejsou pokryty všemi Office developer tools v sadě Visual Studio nebo tuto dokumentaci.

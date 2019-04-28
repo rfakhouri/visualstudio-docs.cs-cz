@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b04897304bc90d35bcf9fd5e61f5329ce922ea91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948202"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Stránka Možnosti, vlastnosti uzlu textového editoru
 Tento dokument popisuje některé stránky (nebo kolekce vlastností), které jsou přidruženy **textový Editor** kategorie, `DTE.Properties("TextEditor", <Property Page>)`, nástroje **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu `Properties` kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.
@@ -26,7 +26,7 @@ Tento dokument popisuje některé stránky (nebo kolekce vlastností), které js
 ## <a name="general"></a>Obecné
  `DTE.Properties("TextEditor", "General")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boolean)|Pokud `True`, stiskněte escape při výběru způsobí, že kurzor přesunout do kterého byla spuštěna akce, která vytvořila tento výběr. `False` Přesune kurzor na konec výběru.|
 |DragNDropTextEditing|Get/Set (Boolean)|Určuje, zda lze při operacích kopírování nebo vyjmutí a vložení vybranou oblast textu přetáhnout v dokumentu z jednoho místa do jiného.|

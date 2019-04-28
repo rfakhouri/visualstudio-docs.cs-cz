@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 75e0d5edf7cf2f83e814036cec56a1b19a89813e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955117"
 ---
 # <a name="iactivescriptauthorgetscripttextattributes"></a>IActiveScriptAuthor::GetScriptTextAttributes
 Vrátí text atributy pro blok skriptu.  
@@ -52,7 +52,7 @@ HRESULT GetScriptTextAttributes(
  `dwFlags`  
  [in] Příznaky, které jsou spojeny s atributy textu bloku skriptu. Může být kombinací následujícího:  
   
-|Konstanta|Hodnota|Popis|  
+|Konstanta|Value|Popis|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Identifikujte identifikátory, které mají atribut SOURCETEXT_ATTR_IDENTIFIER a identifikovat tečkou operátory, které mají atribut SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Určete aktuální objekt, který má atribut SOURCETEXT_ATTR_THIS.|  

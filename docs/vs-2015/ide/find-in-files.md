@@ -21,12 +21,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 430f2a55f180428c781e7a8cbe1f78d3a0355128
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1d9c456c22b4d3003d9435f813a4c3c1dc47881
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383386"
 ---
 # <a name="find-in-files"></a>Najít v souborech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Najít v souborech ** umožňuje vyhledávat zadané sady souborů. Nalezených 
    Pokud chcete zrušit operaci hledání, stiskněte klávesy CTRL + BREAK.  
   
 > [!NOTE]
->  Nástroj Najít a nahradit neprohledává adresáře s `Hidden` nebo `System` sadu atributů.  
+> Nástroj Najít a nahradit neprohledává adresáře s `Hidden` nebo `System` sadu atributů.  
   
 ## <a name="find-what"></a>Najít  
  K vyhledání nový textový řetězec nebo výraz, zadejte do pole. K vyhledání všech 20 řetězce, které jste hledali naposledy, otevřete seznam a zvolte řetězce, pro který chcete vyhledávat. Zvolte sousedních **Tvůrce výrazů** tlačítko, pokud chcete použít jeden nebo více regulární výrazy ve vyhledávaném řetězci. Další informace najdete v tématu [pomocí regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
@@ -53,10 +53,10 @@ Najít v souborech ** umožňuje vyhledávat zadané sady souborů. Nalezených 
  Možnost výběru z **Hledat v** rozevíracího seznamu určuje, zda **najít v souborech** prohledávání pouze v aktuálně aktivních souborů nebo ve všech souborech se ukládají v určitých složkách. Obor vyhledávání vyberte ze seznamu nebo klikněte na tlačítko **Procházet (...)**  tlačítka pro zobrazení **zvolit složky pro hledání** dialogové okno a zadat vlastní sadu adresáře. Můžete také zadat přímo do cesty **Hledat v** pole.  
   
 > [!WARNING]
->  S **celé řešení** nebo **aktuální projekt** možnosti, projektu a řešení soubory nebudou vyhledány. Pokud chcete vyhledat v souborech projektu, zvolte složku výsledků hledání.  
+> S **celé řešení** nebo **aktuální projekt** možnosti, projektu a řešení soubory nebudou vyhledány. Pokud chcete vyhledat v souborech projektu, zvolte složku výsledků hledání.  
   
 > [!NOTE]
->  Pokud **Hledat v** zaškrtnutou možnost způsobí, že vám umožní vyhledávat soubor, který jste rezervovali ve správě zdrojového kódu, je prohledána pouze verze tohoto souboru, který byl stažen do místního počítače.  
+> Pokud **Hledat v** zaškrtnutou možnost způsobí, že vám umožní vyhledávat soubor, který jste rezervovali ve správě zdrojového kódu, je prohledána pouze verze tohoto souboru, který byl stažen do místního počítače.  
   
 ## <a name="include-subfolders"></a>Zahrnout podsložky  
  Určuje této podsložky **Hledat v** prohledá složku.  

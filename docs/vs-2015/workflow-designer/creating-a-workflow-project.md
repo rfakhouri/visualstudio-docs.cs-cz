@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976987"
 ---
 # <a name="creating-a-workflow-project"></a>Vytvoření projektu pracovního postupu
 Pracovní postupy, [!INCLUDE[indigo1](../includes/indigo1-md.md)] služby pracovního postupu, vlastních aktivit a návrháři lze vytvořit pomocí vlastních aktivit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony projektu. Tato část popisuje, jak vytvořit knihovny a aplikace pomocí šablony projektu, který je k dispozici v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -40,7 +40,7 @@ Pracovní postupy, [!INCLUDE[indigo1](../includes/indigo1-md.md)] služby pracov
  [Postupy: Vytvoření knihovny návrhářů aktivit](../workflow-designer/how-to-create-an-activity-designer-library.md)  
  Popisuje, jak vytvořit designery, které jsou přizpůsobené pro více cílových skupin.  
   
- [Postupy: Přidat novou položku do projektu pracovního postupu](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
+ [Postupy: Přidání nové položky do projektu pracovního postupu](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
  Popisuje, jak přidat aktivity další pracovního postupu nebo návrháře a další [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] položky, jako jsou činnosti kódu do existujícího projektu.  
   
 ## <a name="related-sections"></a>Související oddíly  

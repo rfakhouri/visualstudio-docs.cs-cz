@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5fd58603e287de31fab35375e9441f9113fb025
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973926"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Postupy: Přizpůsobení sloupců zobrazení sestavy
 Nástroje pro sledování výkonu v aplikaci Visual Studio Team System Development Edition jsou plně integrované do integrovaného vývojového prostředí (IDE) pro zajištění integrované uživatelské prostředí. V následujícím seznamu je zástupce zobrazení, které je možné přizpůsobit pomocí přidání, odebrání a změna uspořádání sloupců:

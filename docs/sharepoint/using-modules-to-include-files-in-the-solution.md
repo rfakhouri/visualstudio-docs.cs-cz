@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 569f1027163d5651d184254b4e6f57a02df2a39a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007838"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Vložení souborů do řešení pomocí modulů
   Může nastat situace, kdy můžete chtít nasadit soubory k Sharepointovému serveru bez ohledu na jejich typ souboru, jako je například nové stránky předlohy. K tomuto účelu můžete použít *moduly* (Nezaměňovat s [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduly kódu). Moduly jsou kontejnery pro soubory v řešení služby SharePoint. Když se řešení nasadí, soubory v modulu se zkopírují do zadaných složek na serveru SharePoint.

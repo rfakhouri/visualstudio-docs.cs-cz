@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982323"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Použití ovládacích prvků Windows Forms na listech aplikace Excel
   Můžete přidat ovládací prvky Windows Forms do sešitů aplikace Microsoft Office Excel stejným způsobem, že přidáte ovládací prvky Windows Forms. Obecné informace o práci s ovládacími prvky v dokumentech, najdete v části [ovládací prvky Windows Forms v přehledu dokumenty Office](../vsto/windows-forms-controls-on-office-documents-overview.md).

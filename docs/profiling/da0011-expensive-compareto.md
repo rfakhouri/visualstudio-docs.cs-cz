@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee5839e91e2205a98a38ed27823a26a4a127e1ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936584"
 ---
-# <a name="da0011-expensive-compareto"></a>DA0011: Náročná metoda CompareTo
+# <a name="da0011-expensive-compareto"></a>DA0011: Náročná funkce CompareTo
 
 |||
 |-|-|
@@ -30,7 +30,7 @@ ms.locfileid: "56621614"
 |Zpráva|Funkce CompareTo by měly být levné a nepřidělovat paměti. Snižte složitost funkce CompareTo Pokud je to možné.|
 |Typ pravidla|Upozornění|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Metoda CompareTo typu je nákladné nebo přidělí paměť.
 
 ## <a name="rule-description"></a>Popis pravidla

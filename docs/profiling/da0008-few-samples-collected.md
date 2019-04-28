@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b33193f30edd19ef18ead5cf15f2e41d352f4d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936615"
 ---
-# <a name="da0008-few-samples-collected"></a>DA0008: Shromážděno málo ukázek
+# <a name="da0008-few-samples-collected"></a>DA0008: Shromážděno málo vzorků
 
 |||
 |-|-|
@@ -30,7 +30,7 @@ ms.locfileid: "56630376"
 |Zpráva|Nebyly shromážděny vzorky jenom pár. Zvažte delší spuštění nebo rychlejší vzorkovací frekvenci pro více významné výsledky.|
 |Typ pravidla|Informace o|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Při spuštění profilace nebyly shromážděny vzorky jenom pár.
 
 ## <a name="rule-description"></a>Popis pravidla

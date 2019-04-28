@@ -11,11 +11,11 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: e7937311e01274570e34bd639a0dc5f68206a3aa
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992445"
 ---
 # <a name="iactivescriptsitedebug32-interface"></a>IActiveScriptSiteDebug32 Interface
 Implementace hostitelů `IActiveScriptSiteDebug32` rozhraní provádět správu dokumentů a k účasti v ladění. `IActiveScriptSite` Objekt obvykle poskytuje implementaci `IActiveScriptSiteDebug32` rozhraní. Pokud to uděláte, zavolejte `IActiveScriptSite::QueryInterface` metodu k získání `IActiveScriptSiteDebug32` rozhraní.  

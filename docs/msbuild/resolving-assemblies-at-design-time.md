@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a18082810feeabe0dcb17796f65e3dbd744e2da2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996719"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Přeložit sestavení v době návrhu
 Když přidáte odkaz na sestavení pomocí **.NET** karty **přidat odkaz** dialogové okno, odkaz odkazuje na zprostředkující referenční sestavení, což znamená, sestavení, která obsahuje všechny typ a informace o podpisu, ale nutně neobsahuje žádný kód. **.NET** karta obsahuje referenční sestavení, které odpovídají sestavením modulu runtime v rozhraní .NET Framework. Kromě toho obsahují referenční sestavení, které odpovídají sestavením modulu runtime v registrovaných složkách AssemblyFoldersEx, které jsou používány třetími stranami.

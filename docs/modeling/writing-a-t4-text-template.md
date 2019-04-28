@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386070"
 ---
 # <a name="writing-a-t4-text-template"></a>Tvorba textové šablony T4
 Textová šablona obsahuje text, který z ní bude vygenerován. Například šablonu, která vytvoří webovou stránku bude obsahovat "\<html >..." a všechny ostatní standardní části stránky HTML. Do šablony jsou *řídicí bloky*, což jsou fragmenty kódu programu. Řídicí bloky poskytují různé hodnoty a umožňují, aby části textu byly podmíněné a opakované.
@@ -94,7 +94,7 @@ Hello!
  Blok textu lze vložit všude, kde je v kódu povolen příkaz `Write();`.
 
 > [!NOTE]
->  Při vložení textového bloku do složeného příkazu, jako je například smyčky nebo podmínky, vždy používejte složené závorky {...} Chcete-li obsahující textový blok.
+> Při vložení textového bloku do složeného příkazu, jako je například smyčky nebo podmínky, vždy používejte složené závorky {...} Chcete-li obsahující textový blok.
 
 ### <a name="expression-control-blocks"></a>Řídicí bloky výrazu
  Řídicí blok výrazu vyhodnotí výraz a převede jej na řetězec. Ten je vložen do výstupního souboru.

@@ -13,11 +13,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 30281d8cd5d5ed94ed89a980006f9618292a778d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951967"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -45,4 +45,4 @@ Následující tabulka ukazuje <xref:System.Activities.Statements.InvokeDelegate
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Definice a používání delegátů aktivit v Návrháři postupu provádění](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+- [Postupy: Definování a použití delegátů aktivit v návrháři postupu provádění](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

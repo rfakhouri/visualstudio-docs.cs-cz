@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386710"
 ---
 # <a name="understanding-the-dsl-code"></a>Porozumění kódu DSL
 
@@ -131,7 +131,7 @@ Stisknutím klávesy **F5** a experimentovat, pokud nejste obeznámeni s touto �
   Třída, která představuje model domény. Je odvozen z <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
->  To však není stejný jako kořenová třída modelu.
+> To však není stejný jako kořenová třída modelu.
 
  Kopírování a odstranit uzávěry definovat další prvky, které je třeba zahrnout při elementu zkopíruje nebo odstranit. Toto chování můžete ovládat nastavením **šíří kopírování** a **šíří odstranit** Vlastnosti rolí na každé straně všech relací. Pokud chcete hodnoty, které mají být dynamicky rozlišit, můžete napsat kód k přepsání metod třídy uzavření.
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Chcete-li tento soubor upravit, upravit `.tt` souboru.
 
 > [!WARNING]
->  Při úpravě souboru .tt prostředky, jako jsou ikony nebo obrázky, ujistěte se, že prostředek je zahrnuta v sestavení VSIX. V Průzkumníku řešení, vyberte ho a ujistěte se, že **zahrnout do VSIX** vlastnost `True`.
+> Při úpravě souboru .tt prostředky, jako jsou ikony nebo obrázky, ujistěte se, že prostředek je zahrnuta v sestavení VSIX. V Průzkumníku řešení, vyberte ho a ujistěte se, že **zahrnout do VSIX** vlastnost `True`.
 
  Tento soubor řídí, jak DSL je zabalená do Visual Studio integrace rozšíření (VSIX). Další informace najdete v tématu [nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md).
 

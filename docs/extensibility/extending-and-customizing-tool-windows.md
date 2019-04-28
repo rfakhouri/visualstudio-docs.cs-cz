@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9d5c45c523263f469df7e89c484c252f1ed843d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912481"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Rozšířit a přizpůsobit panely nástrojů
 Visual Studio poskytuje několik různých typů systému windows, například okna nástrojů, okna dokumentu a dialogové okno windows. Ostatní okna, jako **vlastnosti** okně **výstup** okno a **seznamu úkolů** okna, jsou druhy oken nástrojů.

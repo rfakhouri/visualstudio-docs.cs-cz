@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00e1e849ba12303041d23b89e65230c2a5aafc9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 58094d505cf2fd3621b801040f0f71904796d86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388424"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Postupy: Úprava hodnoty registru (C#, C++, Visual Basic, F#)
 
@@ -37,10 +37,10 @@ Okno registrů je k dispozici pouze v případě, že je povoleno ladění úrov
 2. Zadejte novou hodnotu.
 
     > [!CAUTION]
-    >  Změna hodnot registru (zejména v registrech EIP a EBP) může mít vliv na provádění programu.
+    > Změna hodnot registru (zejména v registrech EIP a EBP) může mít vliv na provádění programu.
 
     > [!CAUTION]
-    >  Úpravy hodnot s plovoucí desetinnou čárkou mohou díky převodu komponenty zlomku z desítkové do binární soustavy způsobit drobné nepřesnosti. I zdánlivě neškodné úpravy mohou způsobit změny některých nejméně významných bitů v registru s plovoucí desetinnou čárkou.
+    > Úpravy hodnot s plovoucí desetinnou čárkou mohou díky převodu komponenty zlomku z desítkové do binární soustavy způsobit drobné nepřesnosti. I zdánlivě neškodné úpravy mohou způsobit změny některých nejméně významných bitů v registru s plovoucí desetinnou čárkou.
 
 ## <a name="see-also"></a>Viz také
 - [Postupy: Použití okna Registry](../debugger/how-to-use-the-registers-window.md)

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d5d1acc40b23c979a5746c50be50a584d11112b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966910"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Postupy: Přidání a odebrání mapovaných složek
   Některé složky v Sharepointu, běžně používají, jako je Image a rozložení, jsou hluboko vložené hierarchie souborů. Mapování těchto složek do projektu služby SharePoint pro přístup k nim snadněji. Mapované složky jsou složky v projektu služby SharePoint, které odpovídají na fyzické umístění souborů v instalaci SharePoint serveru.

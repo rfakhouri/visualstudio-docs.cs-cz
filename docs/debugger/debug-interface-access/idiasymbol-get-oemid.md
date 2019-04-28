@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cc6cd3e7948b88169489cf4f4c73d1e8fcc7d73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 91d6097fd558ee3fd4e61485eb53cd25a0b7c6a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399256"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 Načte hodnotu ID výrobce OEM (OEM) tohoto symbolu.
@@ -39,7 +39,7 @@ HRESULT get_oemId ( 
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
 
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+> Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
 
 ## <a name="remarks"></a>Poznámky
  Tato vlastnost se týká jenom pro symboly s [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) typ `SymTagCustomType`.

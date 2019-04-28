@@ -42,11 +42,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 09bf4f205b7fc200038b2aedfcf3a8318cb1c7a9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997152"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Možnosti, textový editor, všechny jazyky, karty
 
@@ -59,7 +59,7 @@ Pokud vyberete různá nastavení na stránkách možností karty pro konkrétn�
 
 ## <a name="indenting"></a>Odsazení
 
-Žádná
+Žádné
 
 Při výběru, nejsou nové řádky odsazeny. Kurzor je umístěn v prvním sloupci nový řádek.
 

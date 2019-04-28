@@ -11,11 +11,11 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: e772d8276de5528f0aed25278a03725d09edb180
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993394"
 ---
 # <a name="iactivescriptparseprocedure32parseproceduretext"></a>IActiveScriptParseProcedure32::ParseProcedureText
 Analyzuje daný kód postupu a postup přidá do oboru názvů.  
@@ -65,7 +65,7 @@ HRESULT ParseProcedureText(
  `dwFlags`  
  [in] Příznaky spojené s postupem. Může být kombinací těchto hodnot:  
   
-|Hodnota|Význam|  
+|Value|Význam|  
 |-----------|-------------|  
 |SCRIPTPROC_ISEXPRESSION|Označuje, že kód v `pstrCode` je výraz, který představuje návratová hodnota procedury. Ve výchozím nastavení může kód obsahovat výraz, seznam příkazů nebo cokoli, co jinak povoluje v proceduře skriptovací jazyk.|  
 |SCRIPTPROC_IMPLICIT_THIS|Označuje, že `this` ukazatel je zahrnuta v rámci procedury.|  

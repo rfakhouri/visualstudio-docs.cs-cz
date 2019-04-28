@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d629c0049966d0520e0e40d23b0fd41798ccf2b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386986"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Porozumění modelům, třídám a vztahům
 Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL, společně s jakýkoli vlastní program kód, který může zapisovat. Většina programového kódu v řešení DSL je generována z tohoto souboru.
@@ -93,7 +93,7 @@ Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL
  Při uložení modelu do souboru v podobě XML vložené prvky vnořit do svých nadřazených složek, pokud jste upravili serializace.
 
 > [!NOTE]
->  Vkládání není stejný jako dědičnosti. Podřízené položky v vztah obsažení nedědí vlastnosti nadřazeného objektu. Vložení je typ propojení mezi elementy modelu. Dědičnost je vztah mezi třídami a neslouží k vytvoření propojení mezi elementy modelu.
+> Vkládání není stejný jako dědičnosti. Podřízené položky v vztah obsažení nedědí vlastnosti nadřazeného objektu. Vložení je typ propojení mezi elementy modelu. Dědičnost je vztah mezi třídami a neslouží k vytvoření propojení mezi elementy modelu.
 
 ### <a name="embedding-rules"></a>Vkládání pravidla
  Každý prvek v modelu instance musí být cílem přesně jedno propojení vkládání, s výjimkou kořenu modelu.

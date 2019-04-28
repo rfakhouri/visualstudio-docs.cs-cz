@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996787"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadata položek v dávkování úloh
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] má schopnost rozdělení seznamů položek do různých kategorií nebo dávek, na základě položky metadat a spuštění úlohy jednou s jednotlivých dávek. Může být matoucí pochopit přesně položky, které jsou předávány pomocí které služby batch. Toto téma popisuje následující běžné scénáře, které se týkají dávkování.

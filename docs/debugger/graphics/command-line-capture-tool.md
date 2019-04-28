@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be492ea3d9e61e25c28d8fc74ab870d7a6f959a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389696"
 ---
 # <a name="command-line-capture-tool"></a>Nástroj příkazového řádku pro zachytávání
 DXCap.exe je nástroj příkazového řádku pro zachycení diagnostiky grafiky a přehrávání. Podporuje Direct3D 10 až Direct3D 12 přes všechny funkce úrovně.
@@ -63,7 +63,7 @@ DXCap.exe -info
  `-examine` `events` V režimu ověřování `events` určuje sadu událostí grafiky jsou porovnány jejichž okamžitou výsledky. Například `-examine present,draw,copy,clear` omezuje porovnávání pouze události, které patří do těchto kategorií.
 
 > [!TIP]
->  Doporučujeme začít se `-examine present,draw,copy,clear` vzhledem k tomu, že to bude odhalit většinu problémů, ale trvá mnohem kratší dobu než rozsáhlejší sadu událostí. V případě potřeby můžete zadat větší nebo jinou sadu událostí můžete ověřovat tyto události a odhalit další druhy problémů.
+> Doporučujeme začít se `-examine present,draw,copy,clear` vzhledem k tomu, že to bude odhalit většinu problémů, ale trvá mnohem kratší dobu než rozsáhlejší sadu událostí. V případě potřeby můžete zadat větší nebo jinou sadu událostí můžete ověřovat tyto události a odhalit další druhy problémů.
 
  `-haltonfail` V režimu ověřování `-haltonfail` zastaví ověření, když se zjistí rozdíly mezi hardwarem a WARP renderer. Ověření se obnoví po stisknutí klávesy.
 
@@ -114,7 +114,7 @@ DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"
  Příkaz v předchozím příkladu jsou zaznamenány informace grafiky z desktopové verzi Internet Exploreru při zobrazení webové stránky v www.fishgl.com využívající rozhraní API WebGL k vykreslení 3D obsahu.
 
 > [!NOTE]
->  Protože k němu jsou předány argumenty příkazového řádku, které se zobrazí po aplikaci, je nutné zadat argumenty, které jsou určené pro DXCap.exe před použitím `-c` možnost.
+> Protože k němu jsou předány argumenty příkazového řádku, které se zobrazí po aplikaci, je nutné zadat argumenty, které jsou určené pro DXCap.exe před použitím `-c` možnost.
 
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>Zachytit informace grafiky z aplikace pro UPW.
  Můžete zachytit informace grafiky z aplikace pro UPW.

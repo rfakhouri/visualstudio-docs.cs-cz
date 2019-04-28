@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a5b76e49285a629234557a973f6d4b45703f1cfd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967231"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Postupy: Přidání parametru k metodě
   Parametr použijte k předávání informací do metody nebo který vrací informace z metody. Všechny metody musí mít aspoň jeden parametr. Další informace o tom, jak navrhnout parametr pro podporu typ metody, kterou chcete vytvořit, naleznete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).

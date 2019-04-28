@@ -125,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: bda668e457cd144d868680f2dc009580c34ea81b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388547"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Zadávání poznámek k parametrům funkcí a návratovým hodnotám
 Tento článek popisuje typické použití poznámek pro jednoduchou funkci parametry – skaláry a ukazatele na třídy a struktury – a většinou druhů vyrovnávací paměti.  Tento článek také popisuje běžné vzory využití pro poznámky. Další poznámky, které se vztahují na funkce, najdete v části [zadávání poznámek k chování funkcí](../code-quality/annotating-function-behavior.md)
@@ -315,7 +315,7 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
   V následující tabulce jsou další podřetězců vloženy do název poznámky další kvalifikovat význam anotace.  Jsou různé podřetězců `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, a `_to_`.
 
 > [!IMPORTANT]
->  Pokud rozhraní, které jsou zadávání poznámek k modelu COM, formulář modelu COM těchto poznámek. U jiných typů rozhraní nepoužívat COM poznámky.
+> Pokud rozhraní, které jsou zadávání poznámek k modelu COM, formulář modelu COM těchto poznámek. U jiných typů rozhraní nepoužívat COM poznámky.
 
  **Poznámky a popisy**
 
@@ -471,7 +471,7 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
      Parametr, pole nebo výsledek je v rozsahu (včetně) z `low` k `hi`.  Ekvivalentní `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` , která je použita na objekt s poznámkami společně s odpovídající podmínky předem stavu nebo po stavu.
 
     > [!IMPORTANT]
-    >  I když obsahují názvy "v" a "out", sémantika `_In_` a `_Out_` proveďte **není** platí tyto poznámky.
+    > I když obsahují názvy "v" a "out", sémantika `_In_` a `_Out_` proveďte **není** platí tyto poznámky.
 
 - `_Pre_equal_to_(expr)`
 

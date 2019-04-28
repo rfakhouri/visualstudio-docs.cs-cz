@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 687d46136ad4ed0f043210839e95caf6071f87f2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891078"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Vytvořit panel nástrojů s více instancemi
 Panel nástrojů můžete naprogramovat tak, aby více instancí může být otevřeno současně. Ve výchozím nastavení nástroj windows může mít pouze jednu instanci otevřete.

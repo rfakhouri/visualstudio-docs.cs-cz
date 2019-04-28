@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 62b3c9185226512ff28c8d028cd0ba7d33b0f12f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977451"
 ---
 # <a name="activity-views-legacy"></a>Zobrazení aktivit (starší verze)
 Řada aktivit poskytované [!INCLUDE[wf](../includes/wf-md.md)], ze které pracovní postupy se skládají, mají několik zobrazení návrhu k dispozici ve starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Při přetažení Návrhář aktivity z **nástrojů** na návrhovou plochu a po tomto datu pokaždé, když vyberete aktivitu, můžete přepínat mezi zobrazeními návrhů pomocí **pracovního postupu**nabídek nebo kliknutím pravým tlačítkem myši vybranou aktivitou. Navíc při přesunutí ukazatele myši název vybrané aktivity rozevírací seznam karet se zobrazí sada můžete přepínat mezi různá zobrazení.  

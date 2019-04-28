@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eed4d9dee7cc6c7de387d590662c47d90a99a2ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001149"
 ---
 # <a name="access-a-form-region-at-runtime"></a>Přístup k oblasti formuláře za běhu
 
 |Platí pro|
 |----------------|
-|Informace v tomto tématu se vztahují jenom na tyto typy projektů a verze Microsoft Office. Další informace najdete v tématu [dostupné funkce podle typu aplikace a projekt sady Office](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Typ projektu**<br /><br /> -Projekty doplňků VSTO<br /><br /> **Verze aplikace Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
+|Informace v tomto tématu se vztahují pouze na následující typy projektů a verze systému Microsoft Office. Další informace najdete v tématu [dostupné funkce podle typu aplikace a projekt sady Office](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Typ projektu**<br /><br /> -Projekty doplňků VSTO<br /><br /> **Verze aplikace Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
 
  Použití `Globals` třídy pro oblasti formuláře přístup z libovolného místa v rámci projektu aplikace Outlook. Další informace o `Globals` najdete v tématu [globální přístup k objektům v projektech Office](../vsto/global-access-to-objects-in-office-projects.md).
 

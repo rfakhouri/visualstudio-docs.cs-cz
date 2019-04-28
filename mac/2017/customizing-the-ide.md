@@ -1,5 +1,5 @@
 ---
-title: Přizpůsobení integrovaného vývojového prostředí
+title: Přizpůsobení integrovaného vývojového prostředí (IDE)
 description: Visual Studio for Mac je možné přizpůsobit mnoha různými způsoby, uživatelé si můžou vyvíjet aplikace v prostředí, který vyhovuje jejich efektivitu a aesthetic potřebám. Toto téma popisuje různé způsoby, jak Visual Studio pro Mac lze upravit tak, aby odpovídala vašim potřebám.
 author: conceptdev
 ms.author: crdun
@@ -7,13 +7,13 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: b8386e5d27c2ddf6abd93ac93266f58869cd6c79
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931771"
 ---
-# <a name="customizing-the-ide"></a>Přizpůsobení integrovaného vývojového prostředí
+# <a name="customizing-the-ide"></a>Přizpůsobení integrovaného vývojového prostředí (IDE)
 
 Visual Studio for Mac je možné přizpůsobit mnoha různými způsoby, uživatelé si můžou vyvíjet aplikace v prostředí, které vyhovují jejich potřebám účinnosti a estetiku. Tento článek popisuje různé způsoby, Visual Studio for Mac můžete přizpůsobit tak, aby odpovídala vašim potřebám.
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3b7dcdfe5f101a3b832a550c53d02007d9afba1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e45306a831c8767b93e3c1baad0171fcfb60ba6b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400491"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 Získá příznak, který určuje, zda má funkce [naked](/cpp/cpp/naked-cpp) atribut (to znamená, funkce nemá žádný kód prologu nebo epilogu přidali kompilátorem).
@@ -39,7 +39,7 @@ HRESULT get_isNaked(
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
 
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+> Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
 
 ## <a name="requirements"></a>Požadavky
 

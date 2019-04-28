@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Podrobnosti o jaká předplatná jsou nabízené prostřednictvím programu Microsoft for Startups programu.
 searchscope: VS Subscription
 ms.openlocfilehash: 06bd2dac43adbfbbd48aad6fff796a3dbdd023ca
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007781"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Předplatná sady Visual Studio nabízí pro Start-upy
 Kvalifikovaný Start-upů, kteří připojte se k Microsoft pro Startups programu mohou zajistit výraznější 5 [měsíční Cloudová předplatná sady Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/). Jedná se o stejná předplatná, které jsou nabízeny komerčně, bez zvláštní omezení nebo omezení. Každé předplatné, musíte být přiřazeni koncovému uživateli (která je licencovaný uživatel) předtím, než uživatel může spustit sadu Visual Studio a získat renomé jako předplatitel sady Visual Studio Enterprise DevOps služby Azure.

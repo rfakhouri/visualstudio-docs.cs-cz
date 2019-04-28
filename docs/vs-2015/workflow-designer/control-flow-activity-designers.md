@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 25f8db1f6d14692538fe7f61ed2f9dbd37e0bd29
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977312"
 ---
 # <a name="control-flow-activity-designers"></a>Návrháři aktivit toku řízení
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] obsahuje několik poskytované systémem aktivit, které můžete použít při vytváření pracovního postupu. Tato část obsahuje poskytované systémem aktivit používaných pro řízení toku v rámci pracovního postupu. Následující témata obsahují jejich popis a pokyny, jak je používat.  
@@ -23,7 +23,7 @@ ms.locfileid: "57871808"
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  Spustí aktivitu obsažené v těle alespoň jednou, dokud je zadaná podmínka vyhodnocena jako **true**.  
   
- [ForEach\<T >](foreach-t-activity-designer.md)  
+ [ForEach\<T>](foreach-t-activity-designer.md)  
  Spustí aktivitu obsažené v těle pro každou položku v zadané kolekci.  
   
  [If](../workflow-designer/if-activity-designer.md)  
@@ -44,7 +44,7 @@ ms.locfileid: "57871808"
  [Sequence](../workflow-designer/sequence-activity-designer.md)  
  Obsahuje uspořádanou kolekci podřízené aktivity, které se provede v pořadí.  
   
- [Přepínač\<T >](switch-t-activity-designer.md)  
+ [Switch\<T>](switch-t-activity-designer.md)  
  Vyhodnotí zadaný výraz a spustí aktivity z kolekce aktivit, jejichž přidružené klíč odpovídá hodnotě získané z hodnocení.  
   
  [While](../workflow-designer/while-activity-designer.md)  

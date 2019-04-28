@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979641"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Řešení a projekty v sadě Visual Studio
 
@@ -57,7 +57,7 @@ Je součástí projektu *řešení*. Bez ohledu na jeho název řešení není "
 
 Visual Studio používá dva typy souborů (*.sln* a *.suo*) k ukládání nastavení řešení:
 
-|Linka|Name|Popis|
+|Linka|Název|Popis|
 |---------------|----------|-----------------|
 |.sln|Řešení sady Visual Studio|Uspořádá projekty, položky projektu a řešení položky v řešení.|
 |.suo|Uživatelské možnosti řešení|Ukládají se nastavení na úrovni uživatele a vlastní nastavení, jako například zarážky.|

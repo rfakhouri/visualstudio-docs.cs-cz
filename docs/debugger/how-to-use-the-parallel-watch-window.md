@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e41e3df54245b023a86f20921c4bfd4de74a952
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388464"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Nastavení sledování u proměnných v paralelních vláken v sadě Visual Studio (C#, Visual Basic, C++)
 V okně paralelního sledování můžete najednou zobrazit hodnoty, které obsahuje jeden výraz ve více vláknech. Každý řádek představuje vlákno, na kterém běží v aplikaci však vlákno může být reprezentován více řádků. Přesněji řečeno každý řádek představuje volání funkce, jejíž podpis funkce odpovídá funkci na aktuální rámec zásobníku. Můžete řadit, změnit pořadí, odebrat a seskupit položky, které jsou ve sloupcích. Můžete označit příznakem, odznačit, ukotvit (Pozastavit) a uvolnit vlákna (pokračovat). Tyto sloupce se zobrazí v **paralelní sledování** okno:
@@ -34,7 +34,7 @@ V okně paralelního sledování můžete najednou zobrazit hodnoty, které obsa
 - Konfigurovatelný sloupec, který může zobrazit počítač, proces, dlaždici, úloh a vlákna.
 
   > [!TIP]
-  >  Chcete-li zobrazit informace o úkolu v **paralelní sledování** okna, je nutné nejprve otevřít **úloh** okna.
+  > Chcete-li zobrazit informace o úkolu v **paralelní sledování** okna, je nutné nejprve otevřít **úloh** okna.
 
 - Prázdnou *Přidat kukátko* sloupce, ve kterých můžete zadat výrazy, které chcete sledovat.
 

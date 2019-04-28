@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389700"
 ---
 # <a name="capturing-graphics-information"></a>Zaznamenání grafických informací
 Zachytit informace grafiky z aplikace Direct3D analyzátoru grafiky sady Visual Studio můžete použít k diagnostice problémů s vykreslováním a problémy s výkonem.
@@ -40,7 +40,7 @@ Zachytit informace grafiky z aplikace Direct3D analyzátoru grafiky sady Visual 
 - Na klávesnici stiskněte klávesu Print Screen.
 
   > [!NOTE]
-  >  Když je aplikace spuštěna v rámci **diagnostiky grafiky**, klávesu Print Screen lze použít pouze k zachycení snímku informací grafiky; neprovádí její běžné funkci. To platí, dokud neukončíte zachycování informací grafiky – obvykle zastavením ladění nebo standardním ukončením aplikace, a to i když je aktivní jiná aplikace.
+  > Když je aplikace spuštěna v rámci **diagnostiky grafiky**, klávesu Print Screen lze použít pouze k zachycení snímku informací grafiky; neprovádí její běžné funkci. To platí, dokud neukončíte zachycování informací grafiky – obvykle zastavením ladění nebo standardním ukončením aplikace, a to i když je aktivní jiná aplikace.
 
 - Zachycení rozhraní sady Visual Studio, zvolte **zachytit snímek** tlačítko nacházel pod **diagnostické relace** časovou osu, nebo zvolte velké **zachytit snímek** tlačítko nacházel pod **snímků za sekundu** plavecké dráhy a napravo od všechny dříve zachycené snímky. Na následujícím obrázku jsou zvýrazněné obě tlačítka.
 

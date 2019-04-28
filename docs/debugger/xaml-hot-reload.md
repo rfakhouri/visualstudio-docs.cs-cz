@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57875079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929136"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Programujte a laďte spuštěním kódu XAML s horké znovu načíst XAML v sadě Visual Studio
 
@@ -45,8 +45,8 @@ Následující seznam uvádí známé, že omezení XAML za běhu načíst znovu
 |-|-|-|-|
 |Vzájemné propojení události pro ovládací prvky, když aplikace běží|Nepodporováno|Není podporováno|Zobrazit chybová zpráva: *Zkontrolujte události se nezdařilo*|
 |Vytváření objektů prostředků ve slovníku prostředků, jako například sítě na stránce/okna vaší aplikace nebo *App.xaml*|Nepodporováno|Podporováno|Příklad: přidání ```SolidColorBrush``` do slovníku prostředků pro použití jako ```StaticResource```.</br>Poznámka: Statické prostředky, převaděče stylu a další prvky zapsané do slovníku prostředků lze použít nebo používané při používání horké reload XAML. Vytvoření prostředku se nepodporuje.</br> Změna slovník prostředků ```Source``` vlastnost.| 
-|Přidání nových ovládacích prvků, třídy, windows nebo jiné soubory do projektu, když aplikace běží|Nepodporováno|Nepodporováno|Žádná|
-|Spravovat balíčky NuGet (přidání/odebrání/aktualizuje balíčky)|Nepodporováno|Nepodporováno|Žádná|
+|Přidání nových ovládacích prvků, třídy, windows nebo jiné soubory do projektu, když aplikace běží|Nepodporováno|Nepodporováno|Žádný|
+|Spravovat balíčky NuGet (přidání/odebrání/aktualizuje balíčky)|Nepodporováno|Nepodporováno|Žádné|
 |Změna datové vazby, který používá rozšíření značek {x: Bind}|Není k dispozici|Podporováno v aplikaci Visual Studio 2019 a novějších verzích|Nepodporované ve Visual Studio 2018 a předchozí verze|
 
 ## <a name="error-messages"></a>Chybové zprávy

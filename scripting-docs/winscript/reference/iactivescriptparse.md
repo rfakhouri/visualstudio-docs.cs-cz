@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a987b4be3430f2ed8b0562f41b51a94797f96dc4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009335"
 ---
 # <a name="iactivescriptparse"></a>IActiveScriptParse
 Pokud skript Windows modul umožňuje nezpracovaný text skriptlety kódu mají být přidány do skriptu nebo umožňuje textu výrazu, který se má vyhodnotit v době běhu implementuje `IActiveScriptParse` rozhraní. Pro interpretované skriptovací jazyky, které mají žádné nezávislé vývojovém prostředí, jako je například jazyk VBScript, to poskytuje alternativní mechanismus (jiné než `IPersist*`) Chcete-li získat kód skriptu do skriptovací stroj a připojit fragmenty skript do různých objektu události.  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fe706260bcb535f33a14eea2fd174ee37ea1c8aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388379"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Postupy: Rozbalení a sbalení stromů nástroje Spy ++
 Můžete rozbalit nebo sbalit zobrazení Windows, procesy a vlákna, dvěma způsoby: Kliknutím na ikony v okně nebo **stromu** nabídky. + A - ikony ve stromové struktuře fungovat stejně jako v okně projektu Visual C++.
@@ -30,7 +30,7 @@ Můžete rozbalit nebo sbalit zobrazení Windows, procesy a vlákna, dvěma způ
 |**Sbalit**|Plně Sbalí aktuálně vybrané položky.|
 
 > [!TIP]
->  Pokud rozbalíte procesu se zobrazí všechna vlákna, které vlastní proces. Pokud rozbalíte vlákno, zobrazí se seznam všech oken, které vlastní.
+> Pokud rozbalíte procesu se zobrazí všechna vlákna, které vlastní proces. Pokud rozbalíte vlákno, zobrazí se seznam všech oken, které vlastní.
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>Pro rozbalení a sbalení stromů nástroje Spy ++
 

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 318ca02899632fb4499010cc348f73379a2a562d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002409"
 ---
 # <a name="projectextensions-element-msbuild"></a>Projectextensions – element (MSBuild)
 Umožňuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] soubory tak, aby obsahovala jinou hodnotu než projektu[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informace. Cokoli uvnitř sady `ProjectExtensions` element se bude ignorovat ve [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
@@ -42,10 +42,10 @@ Umožňuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
  Následující části popisují atributy, podřízené prvky a nadřazené prvky.
 
 ### <a name="attributes"></a>Atributy
- Žádná
+ Žádné
 
 ### <a name="child-elements"></a>Podřízené prvky
- Žádná
+ Žádné
 
 ### <a name="parent-elements"></a>Nadřazené prvky
 

@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386011"
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Hierarchická aktualizace * se vztahuje k procesu ukládání aktualizovaná dat
  Nastavení pořadí provádění aktualizací sady pořadí jednotlivých vloží, aktualizace a odstranění, které jsou potřeba pro uložení upravených dat ve všech tabulkách datové sady. Když hierarchické aktualizace zapnutý, vloží jsou provést jako první, pak aktualizuje a pak odstraní. `TableAdapterManager` Poskytuje `UpdateOrder` vlastnost, která může být nastavena na provádění nejprve aktualizací, pak vložení a odstranění.  
   
 > [!NOTE]
->  Je důležité pochopit, že je vše zahrnuto pořadí aktualizace. To znamená když se aktualizace prováděly, vložení a odstranění jsou prováděny pro všechny tabulky v datové sadě.  
+> Je důležité pochopit, že je vše zahrnuto pořadí aktualizace. To znamená když se aktualizace prováděly, vložení a odstranění jsou prováděny pro všechny tabulky v datové sadě.  
   
  Chcete-li nastavit `UpdateOrder` vlastnost Po přetažení položky z [okna zdroje dat](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) do formuláře, vyberte `TableAdapterManager` v podokně komponent a pak nastavte `UpdateOrder` vlastnost v **vlastnosti** okna. Další informace najdete v tématu [jak: Nastavení pořadí provádění hierarchické aktualizace](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
@@ -71,7 +71,7 @@ Hierarchická aktualizace * se vztahuje k procesu ukládání aktualizovaná dat
  Ale v některých případech můžete chtít obnovit datové sady ze záložní kopie. Jedním z příkladů může dojít při použití hodnoty automatickým krokem. Pokud k uložení například operace se nezdaří, automatické zvyšování čísla hodnoty nejsou nastaveny v datové sadě a datové sady i nadále vytvářet automatické zvyšování hodnoty. Kvůli tomu mezera v číslování pro identifikátory, které nemusí být přijatelné ve vaší aplikaci. V situacích, kde je to problém `TableAdapterManager` poskytuje `BackupDataSetBeforeUpdate` vlastnost, která nahradí existující datovou sadu záložní kopii. Pokud se transakce nepovede.  
   
 > [!NOTE]
->  Záložní kopie je pouze v paměti, zatímco `TableAdapterManager.UpdateAll` metoda běží. Proto neexistuje žádný programový přístup k této datové sadě záloh ho nahradí původní datové sady nebo dostane mimo rozsah poté, co `TableAdapterManager.UpdateAll` metoda ukončení.  
+> Záložní kopie je pouze v paměti, zatímco `TableAdapterManager.UpdateAll` metoda běží. Proto neexistuje žádný programový přístup k této datové sadě záloh ho nahradí původní datové sady nebo dostane mimo rozsah poté, co `TableAdapterManager.UpdateAll` metoda ukončení.  
   
 ## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Upravte vygenerovaný uložit kód k provedení hierarchické aktualizace  
  Uložit změny z tabulek souvisejících dat v datové sadě k databázi pomocí volání `TableAdapterManager.UpdateAll` metoda a předání názvu datové sady, který obsahuje související tabulky. Například spusťte `TableAdapterManager.UpdateAll(NorthwindDataset)` metody k odeslání aktualizací ze všech tabulek v datové sadě NorthwindDataset do back-end databáze.  
@@ -81,7 +81,7 @@ Hierarchická aktualizace * se vztahuje k procesu ukládání aktualizovaná dat
  Uložit vygenerovaný kód také obsahuje jeden řádek kódu, který volá `CustomersBindingSource.EndEdit` metody. Přesněji řečeno, zavolá <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda první <xref:System.Windows.Forms.BindingSource>, který je přidán do formuláře. Jinými slovy, tento kód se generují jenom pro první tabulky, který je přetažen z **zdroje dat** okna do formuláře. <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Volání potvrzení změny, které jsou v procesu ve všech ovládacích prvcích vázaných na data, které jsou právě upravována. Proto, pokud ovládací prvek vázaný na data stále má fokus a klikněte na tlačítko **Uložit** tlačítko všechny čekající změny v tom, že ovládací prvek usilujeme o to před skutečné uložit ( `TableAdapterManager.UpdateAll` metoda).  
   
 > [!NOTE]
->  Návrhář Dataset přidá jenom `BindingSource.EndEdit` kódu jako první tabulku přetaženého do formuláře. Proto je nutné přidat řádek kódu pro volání `BindingSource.EndEdit` metoda pro každou související tabulku na formuláři. V tomto návodu, to znamená, je nutné přidat volání `OrdersBindingSource.EndEdit` metody.  
+> Návrhář Dataset přidá jenom `BindingSource.EndEdit` kódu jako první tabulku přetaženého do formuláře. Proto je nutné přidat řádek kódu pro volání `BindingSource.EndEdit` metoda pro každou související tabulku na formuláři. V tomto návodu, to znamená, je nutné přidat volání `OrdersBindingSource.EndEdit` metody.  
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Aktualizovat kód se zapsat změny do tabulky v relaci před uložením.  
   
@@ -95,7 +95,7 @@ Hierarchická aktualizace * se vztahuje k procesu ukládání aktualizovaná dat
    Kromě potvrzení změn v související podřízené tabulce, před uložením dat do databáze, může také mít nadřazené záznamy potvrzení nově vytvořené před přidáním nové podřízené záznamy do datové sady. Jinými slovy budete pravděpodobně nutné přidat nový záznam nadřazené (zákazníka) do datové sady než omezení cizího klíče povolit nové podřízené záznamy (objednávky) mají být přidány do datové sady. K tomu můžete použít podřízené `BindingSource.AddingNew` událostí.  
   
 > [!NOTE]
->  Zda je nutné potvrdit nové nadřazené záznamy, závisí na typu ovládacího prvku, který slouží k vytvoření vazby ke zdroji dat. V tomto názorném postupu použijete k připojení k nadřazené tabulky jednotlivých ovládacích prvků. To vyžaduje další kód do nového nadřazeného záznamu o zápisu. Pokud nadřazené záznamy se místo toho zobrazí v ovládacím prvku komplexní vazby <xref:System.Windows.Forms.DataGridView>, tuto další <xref:System.Windows.Forms.BindingSource.EndEdit%2A> volání pro nadřazený záznam by být nutné. Je to proto, že základní funkce datové vazby pro ovládací prvek zpracovává potvrzení nových záznamů.  
+> Zda je nutné potvrdit nové nadřazené záznamy, závisí na typu ovládacího prvku, který slouží k vytvoření vazby ke zdroji dat. V tomto názorném postupu použijete k připojení k nadřazené tabulky jednotlivých ovládacích prvků. To vyžaduje další kód do nového nadřazeného záznamu o zápisu. Pokud nadřazené záznamy se místo toho zobrazí v ovládacím prvku komplexní vazby <xref:System.Windows.Forms.DataGridView>, tuto další <xref:System.Windows.Forms.BindingSource.EndEdit%2A> volání pro nadřazený záznam by být nutné. Je to proto, že základní funkce datové vazby pro ovládací prvek zpracovává potvrzení nových záznamů.  
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Přidat kód pro potvrzení nadřazené záznamy v sadě dat před přidáním nové podřízené záznamy  
   

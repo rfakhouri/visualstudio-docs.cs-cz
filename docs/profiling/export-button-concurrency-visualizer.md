@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50c5aed4f12cc5bef9bc50c2a41009de4e6ad811
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969898"
 ---
 # <a name="export-button-concurrency-visualizer"></a>Tlačítko Exportovat (vizualizér souběžnosti)
 **Exportovat** tlačítko umožňuje exportovat jako zásobník volání. *sdílený svazek clusteru* soubor pro vlastní potřebu nebo pomocí jiného nástroje, jako je například aplikace Microsoft Excel.

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c138bcdb14b1f645a68407fac320f2688250c55b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6df598717685d3f198b61e4a750c3133e50f5a2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388713"
 ---
 # <a name="graphics-frame-analysis"></a>Analýza grafických snímků
 Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijte k analýze a optimalizovat výkon vykreslování Direct3D hře nebo aplikaci.
@@ -111,7 +111,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
  Informace z čítače hardwaru poskytuje velmi podrobné zobrazení chování specifické hardwarové platformy pro každé volání draw, která vám pomůže identifikovat příčiny problémových míst výkonu velmi přesně.
 
 > [!NOTE]
->  Jiné hardwarové platformy podporují různé čítače; neexistuje žádný standardní. Čítače a co představují jsou určeny výhradně každého výrobce GPU.
+> Jiné hardwarové platformy podporují různé čítače; neexistuje žádný standardní. Čítače a co představují jsou určeny výhradně každého výrobce GPU.
 
 ### <a name="marker-regions-and-events"></a>Oblasti značky a události
  Analýza snímků podporuje uživatelem definované události značek a skupiny událostí. Jsou zobrazeny v souhrnnou tabulku a podrobností tabulky.
@@ -132,13 +132,13 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
 
  Analýza snímků omezuje počet 10 opakování. Pokud má vaše platforma agresivní spotřeby nebo prostřednictvím brány hodiny, může způsobit analýza snímků ohlásit chybu, protože došlo k překročení limitu opakování a selhání. Je možné zmírnit potíže resetováním řízení spotřeby vaší platformě a hodiny, bude méně agresivní, pokud ji povolí platformu omezování rychlosti.
 
-##  <a name="HardwareSupport"></a> Hardwarovou podporu
+## <a name="HardwareSupport"></a> Hardwarovou podporu
 
 ### <a name="timestamps-and-occlusion-queries"></a>Časová razítka a uzavření dotazů
  Časová razítka jsou podporované na všech platformách, které podporují analýzu snímků. Hloubka uzavření dotazy – vyžadované pro čítač pixelů Occluded – jsou podporovány na platformách, které podporují úroveň funkcí 9.2 nebo vyšší.
 
 > [!NOTE]
->  I když časová razítka se podporuje na všech platformách, které podporují analýzu snímků, přesnost a důslednost časová razítka se liší od platformách.
+> I když časová razítka se podporuje na všech platformách, které podporují analýzu snímků, přesnost a důslednost časová razítka se liší od platformách.
 
 ### <a name="gpu-counters"></a>Čítače GPU
  Podpora GPU čítačů hardwaru je závislá na hardwaru.
@@ -150,7 +150,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
   Žádná jiná platforma, která podporuje analýzu snímků shromažďuje čítače hardwarové GPU.
 
 > [!NOTE]
->  Vzhledem k tomu čítačů hardwaru s GPU hardwarové prostředky, může trvat několik průchodů za účelem shromažďování kompletní sadu čítačů hardwaru pro každý typ variant vykreslování. V důsledku toho neurčené pořadí, ve které GPU se shromažďují čítače.
+> Vzhledem k tomu čítačů hardwaru s GPU hardwarové prostředky, může trvat několik průchodů za účelem shromažďování kompletní sadu čítačů hardwaru pro každý typ variant vykreslování. V důsledku toho neurčené pořadí, ve které GPU se shromažďují čítače.
 
 ## <a name="unsupported-scenarios"></a>Nepodporované scénáře
  Některé z mnoha možností použití analýza snímků nejsou podporovány nebo jsou právě nápad.
@@ -159,18 +159,18 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
  V analyzátoru grafiky sady při přehrávání souboru protokolu grafiky, která používá vyšší úroveň funkcí než počítač pro přehrávání podporuje, se automaticky vrátí k technologiím WARP. V analýza snímků se explicitně nepřecházel k WARP a vygeneruje chybu, je užitečné pro zkoumání správnosti aplikace Direct3D, ale ne pro zkoumání jeho výkon.
 
 > [!NOTE]
->  I když je potřeba vzít v úvahu problémy úroveň funkcí, můžete zachytit a přehrávání souborů na zařízeních a jiné hardwarové konfigurace protokolu grafiky. Protokol grafiky můžete přehrát zpět, dokud nebude obsahovat rozhraní API nebo použijte úrovní funkcí, které nejsou podporovány na počítači pro přehrávání souboru protokolu.
+> I když je potřeba vzít v úvahu problémy úroveň funkcí, můžete zachytit a přehrávání souborů na zařízeních a jiné hardwarové konfigurace protokolu grafiky. Protokol grafiky můžete přehrát zpět, dokud nebude obsahovat rozhraní API nebo použijte úrovní funkcí, které nejsou podporovány na počítači pro přehrávání souboru protokolu.
 
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 a nižší
  Pokud vaše aplikace volá rozhraní API Direct3D 10, analýza snímků nebudou rozpoznávání nebo je profil, i když jsou rozpoznány a používají jiné nástroje pro analyzátor grafiky sady.
 
 > [!NOTE]
->  To platí jenom pro rozhraní Direct3D volání rozhraní API, které používáte, není úrovní funkcí.
+> To platí jenom pro rozhraní Direct3D volání rozhraní API, které používáte, není úrovní funkcí.
 
 ### <a name="warp"></a>WARP
  Analýza snímků je určena pro použití k profilu a zvýšení výkonu vykreslování na skutečný hardware. Spouštění analýzy snímků na zařízení WARP není zabráněno, ale není obvykle vhodné výkonu vzhledem k tomu, že běží na vyšší kategorie procesoru WARP je pomalejší než i nejméně podporující moderní GPU a protože WARP výkonu může značně lišit v závislosti na konkrétním procesoru je spuštěn na.
 
-##  <a name="Variants"></a> Varianty
+## <a name="Variants"></a> Varianty
  Každá změna, kterou analýza snímků se provede tak, jak je vykreslen blok při přehrávání se označuje jako *variant*. Varianty, které zkoumá analýza snímků odpovídají běžné, je poměrně snadné provedených změn může zlepšit výkon při vykreslování nebo kvality vaší aplikace – například nezmenšit velikost této textury, komprese textur nebo povolte různé druhy anti-aliasing. Varianty přepsání kontextu obvykle vykreslování a parametry vaší aplikace. Toto je souhrn:
 
 |Variant|Popis|

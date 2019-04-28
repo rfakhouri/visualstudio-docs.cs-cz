@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3d6b12a1c23886cacc6fa317b86ea925d4bca636
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58144274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944894"
 ---
 # <a name="iobjectidentity-interface"></a>IObjectIdentity – rozhraní
 Kromě metod zděděných z `IUnknown`, `IObjectIdentity` rozhraní poskytuje následující metody.  

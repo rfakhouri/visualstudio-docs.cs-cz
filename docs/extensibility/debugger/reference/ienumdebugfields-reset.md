@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6bf669261a3ece31e452227b7c93d7ce8bf07c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62914632"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 Tato metoda resetuje na první prvek výčtu.
@@ -33,7 +33,7 @@ int Reset();
 ```
 
 #### <a name="parameters"></a>Parametry
- Žádná
+ Žádné
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

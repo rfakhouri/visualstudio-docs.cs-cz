@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 92a0b432e75cb8df6318be0961cc587257869b27
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009352"
 ---
 # <a name="word-object-model-overview"></a>Přehled modelu objektů aplikace Word
   Při vývoji řešení aplikace Word v sadě Visual Studio, budete moct používat objektovému modelu Wordu. Tento objektový model se skládá z třídy a rozhraní, které jsou k dispozici ve primárního spolupracujícího sestavení pro aplikaci Word a jsou definovány v <xref:Microsoft.Office.Interop.Word> oboru názvů.

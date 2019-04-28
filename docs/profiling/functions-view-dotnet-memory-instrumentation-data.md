@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a0699d74f67b3e43b65ab79d29acd4fb4e953666
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969722"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Zobrazení funkcí – data instrumentace paměti .NET
 Zobrazení funkcí .NET profilování data o přidělování paměti, která byla shromážděna pomocí metody instrumentace seznam funkcí, které přidělené paměti během spuštění profilování. Řádek funkce sestav, velikost a počet přidělení a dat časování pro funkci.

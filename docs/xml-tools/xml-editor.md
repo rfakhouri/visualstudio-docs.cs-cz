@@ -1,5 +1,5 @@
 ---
-title: XML editor
+title: Editor XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002482"
 ---
-# <a name="xml-editor"></a>XML editor
+# <a name="xml-editor"></a>Editor XML
 
 Editor XML v sadě Visual Studio je založená na textovém editoru a obsahuje další podporu jazyků XML. Když otevřete soubor XML v sadě Visual Studio se otevře v editoru XML.
 
@@ -42,11 +42,11 @@ XML editor obsahuje následující funkce:
 
 XML editor je vyvoláno pro dobře známé přípony, například *.xml*, *XSD*, *XSL*, a *.config*. Také vyvolá se v jakékoli neznámé příponu Pokud soubor je pravděpodobně obsahuje kód XML.
 
-## <a name="xslt-intellisense"></a>XSLT IntelliSense
+## <a name="xslt-intellisense"></a>IntelliSense pro XSLT
 
 [Technologie IntelliSense XSLT](../xml-tools/xml-editor-intellisense-features.md) vám umožní názvy sad atribut automatického dokončování, šablony režimech a názvy a názvy parametrů pro zadaný režim nebo zadané s názvem šablony.
 
-## <a name="xslt-profiler"></a>XSLT profiler
+## <a name="xslt-profiler"></a>Profiler XSLT
 
 [XSLT profiler](../xml-tools/xslt-profiler.md) vytvoří podrobné XSLT výkon sestavy, které vám pomůže měřit, vyhodnotit a řešit problémy související s výkonem v kódu XSLT. Profiler XSLT je také užitečné rady pro XSL a XSLT optimalizace list stylu.
 

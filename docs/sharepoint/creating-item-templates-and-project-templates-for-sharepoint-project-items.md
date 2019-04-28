@@ -17,19 +17,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a7bc365df9ef84b5ef8e501bcbbfd48865bb865e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1f8332b12b05c1d5db1f09afabacbba5e8ba83e9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952684"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Vytváření šablon položek a projektů pro položky projektu SharePoint
-  Při definování vlastního typu položky projektu služby SharePoint můžete přidružit ho šabloně položky nebo šablony projektu. Toto přidružení umožňuje ostatním vývojářům použít položku projektu v sadě Visual Studio. Můžete také vytvořit průvodce pro šablony.
 
- Například Visual Studio neobsahuje šablonu projektu nebo šablony položky pro přidání pole s webem služby SharePoint. Můžete definovat typ položky projektu služby SharePoint, který představuje pole a pak vytvořit šablony položky, ostatní vývojáři můžete použít k přidání položky pole do projektu služby SharePoint. Nebo můžete vytvořit šablonu projektu tak, aby vývojáři mohou vytvořit nový projekt služby SharePoint, který má položku pole. V obou případech můžete také zadat průvodce, který se zobrazí, když vývojáři pomocí šablony. Tento průvodce může shromažďovat informace od vývojářů pro konfiguraci nové položky nebo projektu.
+Při definování vlastního typu položky projektu služby SharePoint můžete přidružit ho šabloně položky nebo šablony projektu. Toto přidružení umožňuje ostatním vývojářům použít položku projektu v sadě Visual Studio. Můžete také vytvořit průvodce pro šablony.
 
- Šablony položek a šablony projektů jsou *ZIP* soubory, které obsahují soubory, které umožňují pomocí sady Visual Studio vytvořte projekt nebo položku projektu. Další informace o základní informace o šablon položek a projektů, naleznete v tématu [vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md).
+Například Visual Studio neobsahuje šablonu projektu nebo šablony položky pro přidání pole s webem služby SharePoint. Můžete definovat typ položky projektu služby SharePoint, který představuje pole a pak vytvořit šablony položky, ostatní vývojáři můžete použít k přidání položky pole do projektu služby SharePoint. Nebo můžete vytvořit šablonu projektu tak, aby vývojáři mohou vytvořit nový projekt služby SharePoint, který má položku pole. V obou případech můžete také zadat průvodce, který se zobrazí, když vývojáři pomocí šablony. Tento průvodce může shromažďovat informace od vývojářů pro konfiguraci nové položky nebo projektu.
+
+Šablony položek a šablony projektů jsou *ZIP* soubory, které obsahují soubory, které umožňují pomocí sady Visual Studio vytvořte projekt nebo položku projektu. Další informace o základní informace o šablon položek a projektů, naleznete v tématu [vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md).
 
 ## <a name="create-item-templates"></a>Vytváření šablon položek
  Když vytvoříte šablonu položky pro položky projektu služby SharePoint, existují některé soubory, které jsou vždy povinné a volitelné soubory, které by mohly používat určitých typů položek projektu. Názorný postup ukazuje, jak definovat typ položky projektu služby SharePoint a vytvoří se pro něj šablony položky, naleznete v tématu [návod: vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
@@ -43,7 +44,6 @@ ms.locfileid: "57868031"
 |Sestavení rozšíření sady Visual Studio, který implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> rozhraní.|Toto sestavení definuje chování položky projektu. Toto sestavení musí být součástí balíčku souboru VSIX pomocí šablony položky. Další informace najdete v tématu [definování vlastních typů položek projektu služby SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md) a [nasadit rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).|
 
  V následující tabulce jsou uvedeny některé nejběžnější volitelné soubory, které mohou být zahrnuty v šabloně položky. Některé typy položek projektu může vyžadovat další soubory, které tu nejsou uvedené.
-
 
 | Volitelný soubor | Popis |
 |----------------------| - |
@@ -72,7 +72,7 @@ ms.locfileid: "57868031"
 
 |Volitelný soubor|Popis|
 |-------------------|-----------------|
-|SharePoint – položky projektu|Může obsahovat jeden nebo více souborů .spdata, které definují typů položek projektu služby SharePoint. Každý *.spdata* soubor musí mít odpovídající <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> provádění v rozšíření sestavení, který je zahrnutý v balíčku souboru VSIX pomocí šablony projektu. Další informace najdete v tématu [Tvorba šablon položek s](#createitemtemplates).<br /><br /> Projekty SharePoint obvykle zahrnují aspoň jedna položka Sharepointového projektu. To však není povinné.|
+|SharePoint – položky projektu|Může obsahovat jeden nebo více souborů .spdata, které definují typů položek projektu služby SharePoint. Každý *.spdata* soubor musí mít odpovídající <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> provádění v rozšíření sestavení, který je zahrnutý v balíčku souboru VSIX pomocí šablony projektu. Další informace najdete v tématu [Tvorba šablon položek s](#create-item-templates).<br /><br /> Projekty SharePoint obvykle zahrnují aspoň jedna položka Sharepointového projektu. To však není povinné.|
 |*\<featureName>.feature*|Tento soubor definuje funkce služby SharePoint, který slouží k seskupení několik položek projektu pro nasazení. Při použití návrháře funkcí k přizpůsobení funkce ve vašem projektu, Visual Studio ukládá data o funkci v tomto souboru. Pokud chcete seskupit položky projektu do jiné funkce, může obsahovat více *.feature* soubory.<br /><br /> Když vytvoříte vlastní šablona projektu služby SharePoint, doporučujeme zahrnout pouze minimální požadovaný obsah v každém *.feature* souboru a konfiguraci funkcí s použitím rozhraní API v <xref:Microsoft.VisualStudio.SharePoint.Features> obor názvů v rozšíření, který je spojen se šablonou projektu. Pokud to uděláte, šablony projektu je chráněný před budoucí změny struktury *.feature* souboru. Příklad, který ukazuje, jak vytvořit *.feature* obsah souboru s pouze minimálním předpokladem naleznete v tématu [názorný postup: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Pokud chcete upravit *.feature* souboru přímo, můžete ověřit obsah pomocí schématu v *% Program Files (x86)%\Microsoft sady Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd*.|
 |*\<featureName >. Template.XML*|Tento soubor poskytuje základ pro soubor manifestu funkce (*Feature.xml*) pro jednotlivé funkce, který je generován z projektu. Pokud chcete zadat některé rysy chování sady, který není určený k jejich změně uživatelé typu projektu, můžete přidat obsah do tohoto souboru. Další informace najdete v tématu [stavebních bloků: Funkce](http://go.microsoft.com/fwlink/?LinkId=169183) a [Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795) soubory.<br /><br /> Při vytváření balíčku řešení z projektu sady Visual Studio slučuje obsah každý pár  *\<featureName > .feature* souboru a  *\<featureName >. Template.xml* soubory do funkce soubor manifestu. Další informace o vytváření balíčků řešení najdete v tématu [jak: Vytvoření balíčku řešení SharePoint pomocí úloh nástroje MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
 

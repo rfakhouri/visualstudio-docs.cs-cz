@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cc247a6391df0357905e2cbdb895bec4e469a248
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387542"
 ---
 # <a name="how-to-start-spy"></a>Postupy: Spuštění nástroje Spy++
 
@@ -24,7 +24,7 @@ Můžete spustit nástroje Spy ++ ze sady Visual Studio nebo příkazového řá
  Při spuštění nástroje Spy ++, pokud se zobrazí zpráva požádat oprávnění k provádění změn do počítače, vyberte **Ano**.
 
 > [!NOTE]
->  Můžete spustit pouze jedna instance nástroje Spy ++. Pokud se pokusíte spustit druhé instance, způsobí pouze aktuálně spuštěnou instanci získat fokus.
+> Můžete spustit pouze jedna instance nástroje Spy ++. Pokud se pokusíte spustit druhé instance, způsobí pouze aktuálně spuštěnou instanci získat fokus.
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -42,7 +42,7 @@ Na **nástroje** nabídce vyberte možnost **nástroje Spy ++**.
 Protože nástroje Spy ++ běží nezávisle na sobě po spuštění sady Visual Studio můžete zavřít.
 
 > [!NOTE]
->  Při protokolování zpráv pomocí nástroje Spy ++, může to způsobit pomalejší operačního systému.
+> Při protokolování zpráv pomocí nástroje Spy ++, může to způsobit pomalejší operačního systému.
 
 ## <a name="start-spy-at-a-command-prompt"></a>Spuštění nástroje Spy ++ z příkazového řádku
 

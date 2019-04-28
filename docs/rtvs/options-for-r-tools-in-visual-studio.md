@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999015"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>R Tools for Visual Studio options
 
@@ -78,7 +78,7 @@ Tyto možnosti určují způsob zpracování hodnot v [Průzkumníka proměnnýc
 | --- | --- | --- |
 | Dynamické vyhodnocení | `False` | Ve výchozím nastavení `View(<expression>)` funkce pořídí snímek dat jako datový rámec, který může spotřebovat značnou paměť s velkými datovými sadami. Tuto volbu nastavíte `True` znamená, že je výraz vyhodnocen při mřížky aktualizuje k načtení jenom data, která se zobrazí. Nicméně pokud výraz změny dat také změní, které mohou být vhodný pro výrazy pip dplyr. |
 
-### <a name="help"></a>Nápověda
+### <a name="help"></a>Help
 
 | Možnost | Výchozí hodnota | Popis |
 | --- | --- | --- |

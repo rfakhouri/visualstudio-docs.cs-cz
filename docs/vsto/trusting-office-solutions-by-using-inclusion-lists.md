@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 34b4ed5dbc0996239e73db38f1d6bea9e43d6de4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978299"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Vztah důvěryhodnosti řešení pro systém Office s použitím seznamů povolených položek
   Seznamy povolených položek povolit uživatelům, aby měli vztah důvěryhodnosti pro řešení pro Office, které jsou podepsané certifikátem, který identifikuje vydavatele. Seznamy povolených položek jsou specifické pro uživatele a mohou být použity pro přizpůsobení na úrovni dokumentu a doplňky VSTO.

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a3855b8975684b088b2838a866db36e6ec19e665
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936285"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Nepodporovaná verze CLR
 
@@ -32,7 +32,7 @@ ms.locfileid: "56635537"
 |Zpráva|Během shromažďování byla zjištěna nepodporovaná verze CLR. Nemůže vyřešit správně spravované symboly.|
 |Typ pravidla|Informace.|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Pokoušíte se profil aplikace, která se používá [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] , která není podporována nástrojů pro profilaci.
 
 ## <a name="rule-description"></a>Popis pravidla

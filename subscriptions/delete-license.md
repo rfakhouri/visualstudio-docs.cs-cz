@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Zjistěte, jak správce může odstranit přiřazení předplatného
 searchscope: VS Subscription
 ms.openlocfilehash: fa591d8ab6a53539c7f76ddea4a80270b9cbc1a3
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945904"
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>Odstraňuje se přiřazení v předplatných sady Visual Studio
 

@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 39137d5fe60a3c91c8fd3904e797eb83420a8f5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384029"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Postupy: Použití operace Upravit a pokračovat (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Pomocí funkce upravit a pokračovat pro jazyk C# můžete provést změny kódu
  Upravit a pokračovat je vyvolán automaticky, když změny v režimu pozastavení a pak zvolte možnost spuštění ladicího programu, jako příkaz **pokračovat**, **krok**, nebo **nastavit další příkaz**, nebo vyhodnotíte funkci v okně ladicího programu.  
   
 > [!NOTE]
->  Upravit a pokračovat není podporovaná při ladění Compact Framework, optimalizovaného kódu, Smíšeného nativního/spravovaného kódu nebo systému SQL Server common language runtime (CLR) integrace kódu. Pokud se pokusíte použít kód změny v jednom z těchto scénářů, ladicí program umístí nahoru dialogové okno s vysvětlením, že funkce upravit a pokračovat není podporována.  
+> Upravit a pokračovat není podporovaná při ladění Compact Framework, optimalizovaného kódu, Smíšeného nativního/spravovaného kódu nebo systému SQL Server common language runtime (CLR) integrace kódu. Pokud se pokusíte použít kód změny v jednom z těchto scénářů, ladicí program umístí nahoru dialogové okno s vysvětlením, že funkce upravit a pokračovat není podporována.  
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>Vyvolání funkce upravit a pokračovat automaticky  
   

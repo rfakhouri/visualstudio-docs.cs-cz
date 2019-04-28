@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0008b7476290558c098b2241fde5c9b209933a0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974043"
 ---
 # <a name="cvreleaseprovider-function"></a>Cvreleaseprovider – funkce
 Verze poskytovatele značek. Uvolňování poskytovatele značek neovlivní dříve vytvořené značky řady tohoto zprostředkovatele. Značky řady musí být verze samostatně voláním cvreleasemarkerseries –. Nepodařilo se uvolnit poskytovatele způsobí, že nevracení paměti.

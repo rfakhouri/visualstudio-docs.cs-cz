@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 118096d536b9a4db50568ab138cd4695e1f3dcbe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929794"
 ---
 # <a name="spy-help"></a>Nápověda nástroje Spy++
 Dokumentace k nástroji Spy ++ zahrnuje dvě skupiny obecná témata na použití nástroje Spy ++ a v zobrazení nástroje Spy ++. Tyto jsou následována nástroje Spy ++ odkaz, který obsahuje další podrobné informace o každé pole dialogové okno a příkaz nabídky k dispozici.

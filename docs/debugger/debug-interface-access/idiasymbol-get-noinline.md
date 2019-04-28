@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb68d65e3af5d59833eafea725129ecdf2305d30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1d0523618298cb6575a5bdb8b92bdc6a4b8c103c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400516"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 Získá příznak, který určuje, zda funkce byl označen jako není vložená (pomocí [noinline](/cpp/cpp/noinline) atributu).
@@ -39,7 +39,7 @@ HRESULT get_noInline(
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
 
 > [!NOTE]
->  Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
+> Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
 
 ## <a name="requirements"></a>Požadavky
 

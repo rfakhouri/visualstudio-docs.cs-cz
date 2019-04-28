@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a00c52b9c167d1fbffc64135b0454110dc929286
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388582"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Návod: Chybějící objekty z důvodu nesprávné konfigurace zřetězení
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Návod: Chybějící objekty z důvodu nesprávné konfigurace kanálu
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nástrojů diagnostiky grafiky k prozkoumání objekt, který nebyl nalezen kvůli nenastavené pixel shader.
 
  Tento návod ilustruje tyto úkoly:
@@ -61,7 +61,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includ
     V **fáze zřetězení grafiky** okně **vstupní Assembler** fáze ukazuje geometrie objektu ve předtím, než se transformuje a **Vertex Shader** fáze zobrazuje stejné objekt po je transformaci. V tomto scénáři, Všimněte si, že **fáze zřetězení grafiky** okno zobrazuje **vstupní Assembler** a **Vertex Shader** zpracování, ale ne **Pixel Shader**  fáze pro jeden z volání vykreslování.
 
    > [!NOTE]
-   >  Pokud jiné zřetězení – například, shader trupu, shader domény nebo geometry shader fáze, proces objektu, některý z nich může být příčinou problému. Obvykle problém souvisí s první fáze, ve kterém se nezobrazuje výsledek, nebo se zobrazí neočekávaným způsobem.
+   > Pokud jiné zřetězení – například, shader trupu, shader domény nebo geometry shader fáze, proces objektu, některý z nich může být příčinou problému. Obvykle problém souvisí s první fáze, ve kterém se nezobrazuje výsledek, nebo se zobrazí neočekávaným způsobem.
 
 4. Zastavte při dosažení volání draw, která odpovídá chybějícím objektu. V tomto scénáři **fáze zřetězení grafiky** okno znamená, že byl vydán geometrii do GPU (indikován přítomnost **vstupní Assembler** fázi) a transformovaná (indikován  **Vertex Shader** fázi), ale nezobrazí v cíle vykreslování, protože není nejspíš aktivní pixel shader (indikován absenci **Pixel Shader** fáze). V tomto scénáři můžete dokonce vidět obrysem chybí objekt v **slučovací modul výstupu** fáze:
 
@@ -84,7 +84,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includ
 1. Najít `PSSetShader` volání, které odpovídá chybějícím objektu. V **seznam událostí grafiky** okno, zadejte "Draw; PSSetShader"v **hledání** pole v pravém horním rohu **seznam událostí grafiky** okna. Vyfiltruje seznam tak, aby pouze obsahoval "PSSetShader" události a události, které mají "Draw" v názvech. Zvolte první `PSSetShader` volání, které se zobrazí před volání draw chybějící objektu.
 
    > [!NOTE]
-   >  `PSSetShader` nebude zobrazovat **seznam událostí grafiky** okno, pokud nebyla nastavena během tohoto rámce. Obvykle k tomu dochází pouze v případě, že právě jeden pixel shaderu se používá pro všechny objekty, nebo pokud `PSSetShader` volání přeskočila neúmyslně během tohoto rámce. V obou případech doporučujeme hledání zdrojový kód aplikace `PSSetShader` volání a použijte tradiční techniky ladění ke kontrole chování těchto volání.
+   > `PSSetShader` nebude zobrazovat **seznam událostí grafiky** okno, pokud nebyla nastavena během tohoto rámce. Obvykle k tomu dochází pouze v případě, že právě jeden pixel shaderu se používá pro všechny objekty, nebo pokud `PSSetShader` volání přeskočila neúmyslně během tohoto rámce. V obou případech doporučujeme hledání zdrojový kód aplikace `PSSetShader` volání a použijte tradiční techniky ladění ke kontrole chování těchto volání.
 
 2. Otevřít **zásobník volání událostí grafiky** okna. Na **diagnostiky grafiky** nástrojů, zvolte **zásobník volání událostí grafiky**.
 
@@ -93,7 +93,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includ
     ![Kód, který nelze inicializovat pixel shader](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")
 
    > [!NOTE]
-   >  Pokud nemůžete najít zdrojové hodnoty null stačí zkoumání zásobníku volání, doporučujeme nastavit podmíněné zarážky na `PSSetShader` volání, tak, že pokud se nastaví pixel shader, přestane fungovat provádění programu na hodnotu null. Potom restartujte aplikaci v režimu ladění a využijte tradiční techniky ladění vyhledat zdroj hodnotu null.
+   > Pokud nemůžete najít zdrojové hodnoty null stačí zkoumání zásobníku volání, doporučujeme nastavit podmíněné zarážky na `PSSetShader` volání, tak, že pokud se nastaví pixel shader, přestane fungovat provádění programu na hodnotu null. Potom restartujte aplikaci v režimu ladění a využijte tradiční techniky ladění vyhledat zdroj hodnotu null.
 
    Chcete-li vyřešit tento problém, přiřaďte správné pixel shader pomocí první parametr `ID3D11DeviceContext::PSSetShader` volání rozhraní API.
 

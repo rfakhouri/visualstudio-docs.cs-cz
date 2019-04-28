@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 33494836e463c9c2fd74acf7835d7e4630747b0e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000754"
 ---
 # <a name="idispatchexinvokeex"></a>IDispatchEx::InvokeEx
 Poskytuje přístup k vlastnostem a metodám vystaveným podle `IDispatchEx` objektu.  
@@ -55,7 +55,7 @@ HRESULT InvokeEx(
   
  Příznaky popisující kontext `InvokeEx` volání:  
   
-|Hodnota|Význam|  
+|Value|Význam|  
 |-----------|-------------|  
 |DISPATCH_METHOD|Člen je vyvolána jako metodu. Pokud je vlastnost se stejným názvem, lze nastavit to a příznak DISPATCH_PROPERTYGET (definované `IDispatch`).|  
 |DISPATCH_PROPERTYGET|Člen je načíst, protože vlastnost nebo datový člen (definované `IDispatch`).|  

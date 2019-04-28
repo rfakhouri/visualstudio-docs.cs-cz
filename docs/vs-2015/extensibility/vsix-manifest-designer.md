@@ -14,12 +14,12 @@ ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 308259e7addcf41ae6e15191934a8c37ac3f57b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 450d306718906c3b76bf05982594045e7fd215f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387572"
 ---
 # <a name="vsix-manifest-designer"></a>Návrhář manifestu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Upraví soubor manifestu balíčku VSIX, který nastaví chování při instalac
  Chcete-li otevřít **Návrhář manifestu VSIX**, vyhledejte soubor source.extension.vsixmanifest v **Průzkumníka řešení**a otevřete soubor. Pokud soubor neobsahuje platný kód XML, manifest designer nelze otevřít.  
   
 > [!NOTE]
->  Source.extension.vsixmanifest se výstup extension.vsixmanifest při vytváření balíčku.  
+> Source.extension.vsixmanifest se výstup extension.vsixmanifest při vytváření balíčku.  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
  **Návrhář manifestu VSIX** obsahuje čtyři oddíly, které odpovídají těmto nejvyšší úrovně prvky schématu:  

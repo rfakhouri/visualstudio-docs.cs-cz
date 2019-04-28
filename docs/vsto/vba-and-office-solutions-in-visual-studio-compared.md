@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982124"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Řešení VBA a Office v sadě Visual Studio porovnání
   Microsoft Visual Basic for Applications (VBA) používá nespravovaný kód, který je úzce integrovaná s aplikacemi Office. Projektů Microsoft Office vytvořených pomocí sady Visual Studio umožňují využít rozhraní .NET Framework a sady Visual Studio vývojové nástroje.

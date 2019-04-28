@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bfe4578b4896c137f3bcef8418c5dc0cafd70798
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910646"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>Přidat adresářů do dialogového okna Přidat novou položku
 Následující příklad kódu ukazuje, jak registrovat nová sada adresářů pro **přidat novou položku** dialogové okno. Adresáře pro **přidat novou položku** dialogové okno se liší pro každý projekt. Proto zaregistrován v adresářích **projekty** podklíč součástí **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**.
@@ -50,7 +50,7 @@ NoRemove Projects
  `SortPriority` Hodnota určuje prioritu třídění.
 
 ## <a name="add-items-to-an-existing-project"></a>Přidat položky do existujícího projektu
- Můžete také přidat položky do existujícího projektu. Třeba [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektu, můžete přidat položky, které chcete  *\<kořenové > \Program Files\Microsoft \CSharpProjectItems\LocalProjectItems # Visual Studio\VC* složky. V takovém případě `%GUID_Project%` je identifikátor GUID pro projekt C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
+ Můžete také přidat položky do existujícího projektu. Třeba [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektu, můžete přidat položky, které chcete  *\<kořenové > \Program Files\Microsoft Visual Studio\VC#\CSharpProjectItems\LocalProjectItems* složky. V takovém případě `%GUID_Project%` je identifikátor GUID pro projekt C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).
 
  Můžete také rozšířit existující projekt tím, že podtyp projektu. S podtyp projektu můžete rozšířit projektu, aniž byste museli napsat nový typ projektu. Další informace o podtypů projektů, naleznete v tématu [podtypů projektu](../../extensibility/internals/project-subtypes.md).
 

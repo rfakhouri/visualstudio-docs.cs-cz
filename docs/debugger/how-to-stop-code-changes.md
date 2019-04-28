@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661b18ef061a6bfdb2bcbe68f30463f39d08efe7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 33bc24aaea0f24d592a897bcc70f553cfaab9667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388349"
 ---
 # <a name="how-to-stop-code-changes"></a>Postupy: Zastavení změn kódu
 Upravit a pokračovat je právě aplikování změn kódu, můžete zastavit operaci.
 
 > [!CAUTION]
->  Zastavování změn kódu ve spravovaném kódu může vést k neočekávaným výsledkům. Provádění změn pro spravovaný kód je obvykle rychlé procesu, je málokdy potřeba zastavení změn kódu ve spravovaném kódu.
+> Zastavování změn kódu ve spravovaném kódu může vést k neočekávaným výsledkům. Provádění změn pro spravovaný kód je obvykle rychlé procesu, je málokdy potřeba zastavení změn kódu ve spravovaném kódu.
 
 ### <a name="to-stop-applying-code-changes"></a>Zastavit provádění změn kódu
 
