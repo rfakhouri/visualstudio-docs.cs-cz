@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437011"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Připojení k datům v databázi aplikace Access (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
      ![Změňte zprostředkovatele dat OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  I když zdroj dat **soubor databáze Microsoft Access (OLE DB)** může jevit tou správnou volbou, použijete tento typ zdroje dat pouze pro soubory databáze .mdb.  
+    > I když zdroj dat **soubor databáze Microsoft Access (OLE DB)** může jevit tou správnou volbou, použijete tento typ zdroje dat pouze pro soubory databáze .mdb.  
   
 8. V **zprostředkovatele OLE DB**vyberte **Office 12.0 Access Database modulu zprostředkovatele Microsoft OLE DB**.  
   
@@ -70,7 +70,7 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
 9. V **serveru nebo název souboru**, zadejte cestu a název souboru .accdb, ke kterému chcete připojit a pak vyberte **OK**.  
   
     > [!NOTE]
-    >  Pokud má soubor databáze uživatelské jméno a heslo, zadejte, je před výběrem **OK**.  
+    > Pokud má soubor databáze uživatelské jméno a heslo, zadejte, je před výběrem **OK**.  
   
 10. Vyberte **Další** na **vyberte datové připojení** stránky.  
   

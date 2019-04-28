@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f7218324e643355e7c6554f3a1cf6c74e8349d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 11171cf619e77508852178ee442ce6e26f9b573f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437240"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu
   Doplněk VSTO slouží k přizpůsobení dokumentů aplikace Word a sešitů aplikace Excel následujícími způsoby:
@@ -89,7 +89,7 @@ ms.locfileid: "60049467"
  Můžete přidat ovládací prvky Windows Forms nebo *hostování ovládacích prvků*. Hostitelský ovládací prvek je ovládací prvek poskytované [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , která zabalí odpovídající ovládací prvek v aplikaci Word nebo Excel primárního spolupracujícího sestavení. Hostitelský ovládací prvek zpřístupní všechna chování základní nativní objekt Office. Také vyvolává události a může být vázaný na data pomocí vazby datového modelu Windows Forms. Další informace najdete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).
 
 > [!NOTE]
->  Nelze přidat <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládacího prvku do listu, nebo <xref:Microsoft.Office.Tools.Word.XMLNode> nebo <xref:Microsoft.Office.Tools.Word.XMLNodes> ovládacího prvku na dokument, pomocí doplňku VSTO. Tyto hostitelské ovládací prvky nelze programově přidat. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Nelze přidat <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládacího prvku do listu, nebo <xref:Microsoft.Office.Tools.Word.XMLNode> nebo <xref:Microsoft.Office.Tools.Word.XMLNodes> ovládacího prvku na dokument, pomocí doplňku VSTO. Tyto hostitelské ovládací prvky nelze programově přidat. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ### <a name="persist-and-remove-controls"></a>Zachovat a odebrání ovládacích prvků
  Při přidání spravované ovládacích prvků do dokumentu nebo sešitu, ovládací prvky nejsou trvalé při uložení a pak zavření dokumentu. Všechny hostitelské ovládací prvky jsou odebrány, aby se zachovají jenom základní nativních objektů sady Office. Například <xref:Microsoft.Office.Tools.Excel.ListObject> stane <xref:Microsoft.Office.Interop.Excel.ListObject>. Budou odebrány také všechny ovládací prvky Windows Forms, ale ActiveX obálky pro ovládací prvky se zachovají v dokumentu. Je nutné zahrnout kód v vašeho doplňku VSTO pro vyčištění ovládací prvky nebo znovu vytvořte ovládací prvky při příštím otevření dokumentu. Další informace najdete v tématu [uchování dynamických ovládacích prvků v dokumentech systému Office](../vsto/persisting-dynamic-controls-in-office-documents.md).

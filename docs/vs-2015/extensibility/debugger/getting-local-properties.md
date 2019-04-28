@@ -12,26 +12,26 @@ ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 40f5a659617d8ca83ffd6f69282349f520ea92f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b174af9e107c13c3d8a79f00493fe5dbdd180ec6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436399"
 ---
 # <a name="getting-local-properties"></a>Načtení místních vlastností
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Visual Studio volání [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) získat [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objekt, který poskytuje přístup k místní hodnoty zobrazeného v **lokální** okna. Visual Studio pak zavolá [Další](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) získat informace o který se má zobrazit pro každý místní. V tomto příkladu třída `CEnumPropertyInfo` implementuje `IEnumDebugPropertyInfo2` rozhraní.  
   
  Tato implementace `IEnumDebugPropertyInfo2::Next` provádí následující úlohy:  
   
-1.  Vymaže pole, kde informace jsou k uložení.  
+1. Vymaže pole, kde informace jsou k uložení.  
   
-2.  Volání [Další](../../extensibility/debugger/reference/ienumdebugfields-next.md) pro každý místní ukládání vrácené [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) v poli, který se má vrátit. [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) objekt byl zadán při to `CEnumPropertyInfo` byla vytvořena instance třídy.  
+2. Volání [Další](../../extensibility/debugger/reference/ienumdebugfields-next.md) pro každý místní ukládání vrácené [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) v poli, který se má vrátit. [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) objekt byl zadán při to `CEnumPropertyInfo` byla vytvořena instance třídy.  
   
 ## <a name="managed-code"></a>Spravovaný kód  
  Tento příklad ukazuje implementaci `IEnumDebugPropertyInfo2::EnumChildren` pro místní hodnoty metod ve spravovaném kódu.  

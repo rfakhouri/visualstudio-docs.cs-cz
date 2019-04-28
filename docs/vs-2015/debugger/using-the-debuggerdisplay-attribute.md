@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 729639c99747ce7f7358ad3c4b0b6374bd64d010
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 04a941ae7aab30825c66ac5d3d81ac12d4b7c7db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437746"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Používání atributu DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "54789203"
  Určuje, zda ladicí program vyhodnotí tomto implicitní `ToString()` volání závisí nastavení hlavního názvu uživatele v **nástroje / Možnosti / ladění** dialogové okno. Visual Basic neimplementuje tomto implicitní `ToString()` hodnocení.  
   
 > [!IMPORTANT]
->  Pokud **zobrazit nezpracovanou strukturu objektů v oknech proměnných** zaškrtněte políčko v **nástroje/Možnosti / ladění** dialogové okno, pak bude `DebuggerDisplay` atribut se ignoruje.  
+> Pokud **zobrazit nezpracovanou strukturu objektů v oknech proměnných** zaškrtněte políčko v **nástroje/Možnosti / ladění** dialogové okno, pak bude `DebuggerDisplay` atribut se ignoruje.  
   
  V následující tabulce jsou uvedeny některé možné způsoby použití `DebuggerDisplay` atribut a příklad výstupy.  
   
@@ -101,7 +101,7 @@ public sealed class MyClass
 |**Název**|**Hodnota**|**Typ**|  
 |--------------|---------------|--------------|  
 |Key|"tři"|objekt {string}|  
-|Hodnota|3|objekt {int}|  
+|Value|3|objekt {int}|  
   
 ```csharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  

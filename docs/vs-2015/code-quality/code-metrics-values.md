@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437091"
 ---
 # <a name="code-metrics-values"></a>Hodnoty metrik kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Metriky kódu je sada softwarových opatření, která vývojářům poskytují 
 - **Cyklomatická složitost** – měří strukturální složitost kódu. Vytvoří se to vynásobením počtu odlišný kód cest v toku programu. Program, který se má komplexní řízení toku bude vyžadovat další testů k dosažení dobré kód pokrytí a bude méně udržovatelný.  
   
     > [!NOTE]
-    >  V některých případech se výpočet cyklomatická složitost metody v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] se liší od předchozích verzí. Další informace najdete v tématu "Změny v aplikaci Visual Studio 2010 složité výpočty části kódu" z [potíží metriky kódu](../code-quality/troubleshooting-code-metrics-issues.md).  
+    > V některých případech se výpočet cyklomatická složitost metody v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] se liší od předchozích verzí. Další informace najdete v tématu "Změny v aplikaci Visual Studio 2010 složité výpočty části kódu" z [potíží metriky kódu](../code-quality/troubleshooting-code-metrics-issues.md).  
   
 - **Hloubka dědičnosti** – označuje počet definice tříd, které rozšiřují do kořene hierarchie tříd. Čím hlouběji v hierarchii více obtížné pochopit, kde jsou definovány konkrétní metody a pole může být nebo / a Předefinovaná.  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae43b6b1cdc5a3c94e6eb14d0aaa398c320c6274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f77a6b9b655cc7dfbf0639a81d7d350b904ce82a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435230"
 ---
 # <a name="how-to-specify-build-events-c"></a>Postupy: Určení událostí sestavení (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ Použití událostí sestavení zadat příkazy, na kterých běží před zač�
 4. V **příkazový řádek události před sestavením** zadejte syntaxe události sestavení.  
   
     > [!NOTE]
-    >  Události před sestavením nebudou spuštěny, pokud je aktuální projekt a není aktivováno žádné sestavení.  
+    > Události před sestavením nebudou spuštěny, pokud je aktuální projekt a není aktivováno žádné sestavení.  
   
 5. V **příkazový řádek události po sestavení** zadejte syntaxe události sestavení.  
   
     > [!NOTE]
-    >  Přidat `call` než vše post-build příkazy, které spouštějí soubory .bat. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Přidat `call` než vše post-build příkazy, které spouštějí soubory .bat. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
 6. V **spustit událost po sestavení** zadejte za jakých podmínek spustit událost po sestavení.  
   
     > [!NOTE]
-    >  Přidejte zdlouhavé syntaxi, nebo vyberte některý makra ze sestavení [pre-build Event/po sestavení příkazového řádku dialogové okno události](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), klikněte na tlačítko se třemi tečkami (**...** ) k zobrazení do textového pole.  
+    > Přidejte zdlouhavé syntaxi, nebo vyberte některý makra ze sestavení [pre-build Event/po sestavení příkazového řádku dialogové okno události](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), klikněte na tlačítko se třemi tečkami (**...** ) k zobrazení do textového pole.  
   
      Syntaxe událost sestavení může obsahovat jakýkoli příkaz, který je platný, na příkazovém řádku nebo v souboru bat. Název souboru služby batch by měl předcházet `call` zajistit, že jsou provedeny všechny následné příkazy.  
   

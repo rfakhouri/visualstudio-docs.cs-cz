@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ed32908212f158532e5553752ef5c0b70306fe6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435344"
 ---
 # <a name="schema-cache"></a>Mezipaměť schémat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ XML Editor obsahuje schéma mezipaměti umístěné v adresáři %InstallRoot%\X
  Editor načte adresář mezipaměti schématu, když balíček editoru XML je načten a sleduje změny při spuštění. Pokud schéma se přidala, se automaticky načtou do indexu v paměti známých schémat. Pokud schéma byla odebrána, se automaticky odebere z indexu v paměti. Pokud schéma aktualizovalo, se automaticky zruší platnost mezipaměti v paměti tohoto schématu.  
 
 > [!NOTE]
->  Adresář mezipaměti schématu je globální k počítači, byste měli přidávat jenom zde schémata, které jsou užitečné pro všechny projekty sady Visual Studio, které mohou být vytvořeny v počítači a standardní.  
+> Adresář mezipaměti schématu je globální k počítači, byste měli přidávat jenom zde schémata, které jsou užitečné pro všechny projekty sady Visual Studio, které mohou být vytvořeny v počítači a standardní.  
 
  XML editor také podporuje libovolný počet soubory katalogu schématu v adresáři mezipaměti schématu. Katalogů schémat může odkazovat na jiné umístění pro schémat, které chcete, aby editoru vědět o. Soubor catalog.xsd definuje formát pro soubor katalogu a je součástí adresáře mezipaměti schématu. Výchozí katalog je soubor catalog.xml a obsahuje odkazy na jiná schémata v InstallDir %. Vzorkování catalog.xml souboru je následující:  
 
@@ -105,7 +105,7 @@ XML Editor obsahuje schéma mezipaměti umístěné v adresáři %InstallRoot%\X
  Můžete přizpůsobit umístění mezipaměti schémat pomocí **různé** stránka možností. Pokud máte adresář oblíbených schémat, místo toho použít tato schémata lze nastavit editoru.  
 
 > [!NOTE]
->  Tato změna ovlivní pouze aktuální uživatel Visual Studio.  
+> Tato změna ovlivní pouze aktuální uživatel Visual Studio.  
 
 #### <a name="to-change-the-schema-cache-location"></a>Chcete-li změnit umístění mezipaměti schémat  
 

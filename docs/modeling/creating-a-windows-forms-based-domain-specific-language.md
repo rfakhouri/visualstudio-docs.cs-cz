@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e5d1fec376a1f35a8b2214a7bde4834cc6bd9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438170"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Vytvoření doménově specifického jazyka založeného na Windows Forms
 Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro doménu (DSL), namísto použití DSL diagram. Toto téma vás provede vazbu formuláře Windows k DSL pomocí Visual Studio Visualization and Modeling SDK.
@@ -80,7 +80,7 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
      Nabízí další doménu vlastnosti s názvem `Size` typu **Int32**, a `IsOrganic` typu **logická**.
 
     > [!NOTE]
-    >  Pokud odstraníte třídu kořenové domény a pak vytvořte nový kořen, budete muset obnovit vlastnost kořenová třída editoru. V **Průzkumník DSL**vyberte **Editor**. V okně Vlastnosti nastavte **kořenová třída** k `Farm`.
+    > Pokud odstraníte třídu kořenové domény a pak vytvořte nový kořen, budete muset obnovit vlastnost kořenová třída editoru. V **Průzkumník DSL**vyberte **Editor**. V okně Vlastnosti nastavte **kořenová třída** k `Farm`.
 
 4. Použití **doménovou třídu s názvem** nástroj k vytvoření následujících doménové třídy:
 
@@ -105,7 +105,7 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
 10. Sestavení **Dsl** projektu.
 
     > [!NOTE]
-    >  V této fázi nebude ostatních projektů se sestaví bez chyb. Chceme sestavení projektu Dsl tak, aby byla k dispozici v Průvodci zdroje dat jeho sestavení.
+    > V této fázi nebude ostatních projektů se sestaví bez chyb. Chceme sestavení projektu Dsl tak, aby byla k dispozici v Průvodci zdroje dat jeho sestavení.
 
 ## <a name="updating-the-ui-project"></a>Aktualizuje se projekt uživatelského rozhraní
  Nyní můžete vytvořit nového uživatelského ovládacího prvku, který se zobrazí informace, které je uložen v modelu DSL. Nejjednodušší způsob, jak připojit uživatelský ovládací prvek modelu je prostřednictvím datové vazby. Datové vazby adaptér typ s názvem **ModelingBindingSource** je navržená speciálně pro připojení k rozhraní vmsdk následující položky DSL.
@@ -149,7 +149,7 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
 6. Pomocí nástrojů, vytvořte dvě instance **DataGridView**a pojmenujte je `AnimalGridView` a `FieldGridView`.
 
    > [!NOTE]
-   >  Alternativní krokem je přetáhnout položky pole a zvířat z okna zdroje dat na ovládací prvek. Tato akce automaticky vytvoří datových mřížek a vazby mezi zobrazení mřížky a zdrojem dat. Nicméně tato vazba nefunguje správně pro DSL. Proto je vhodnější vytvořit datových mřížek a vazby ručně.
+   > Alternativní krokem je přetáhnout položky pole a zvířat z okna zdroje dat na ovládací prvek. Tato akce automaticky vytvoří datových mřížek a vazby mezi zobrazení mřížky a zdrojem dat. Nicméně tato vazba nefunguje správně pro DSL. Proto je vhodnější vytvořit datových mřížek a vazby ručně.
 
 7. Pokud nebude obsahovat panelu nástrojů **ModelingBindingSource** nástroj, přidejte ji. V místní nabídce **Data** kartě **zvolit položky**. V **zvolit položky nástrojů** dialogového okna, vyberte **ModelingBindingSource** z **karta rozhraní .NET**.
 
@@ -221,7 +221,7 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
      `Goat1` Zobrazí se v **zvířat** zobrazení.
 
     > [!WARNING]
-    >  Nabídku je nutné použít na **farmy** uzlu, ne **zvířat** uzlu.
+    > Nabídku je nutné použít na **farmy** uzlu, ne **zvířat** uzlu.
 
 4. Vyberte **farmy** kořenový uzel a zobrazte její vlastnosti.
 

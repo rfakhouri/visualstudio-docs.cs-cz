@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b13931746cc9668ea18ead71babd5140e971818
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90fb5b1c9a388d64e191915bbcbbe3de65f6aa99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437629"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Vytvoření komentářů k dokumentaci XML pro technologie IntelliSense jazyka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "60079276"
  Toto téma obsahuje základní kurz o používání dokumentační komentáře XML. Další informace o použití další prvky, jako například [ \<var >](../ide/var-javascript.md) a [ \<hodnota >](../ide/value-javascript.md)a další příklady naleznete v tématu [dokumentační komentáře XML ](../ide/xml-documentation-comments-javascript.md). Informace o získání informací technologie IntelliSense pro asynchronní zpětné volání, jako `Promise`, naleznete v tématu [ \<vrátí >](../ide/returns-javascript.md).  
   
 > [!NOTE]
->  Dokumentační komentáře XML jsou k dispozici pouze z odkazovaných souborů, sestavení a služeb.  
+> Dokumentační komentáře XML jsou k dispozici pouze z odkazovaných souborů, sestavení a služeb.  
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>Chcete-li vytvořit dokumentační komentáře XML pro funkce jazyka JavaScript  
   
 - Ve funkci, přidejte [ \<summary >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), a [ \<vrátí >](../ide/returns-javascript.md) elementy a předcházet každý element s třemi lomítky (/ / / / /).  
   
     > [!NOTE]
-    >  Každý prvek musí být na jednom řádku.  
+    > Každý prvek musí být na jednom řádku.  
   
      Následující příklad ukazuje funkce jazyka JavaScript.  
   
@@ -118,7 +118,7 @@ ms.locfileid: "60079276"
 1. Vytvořte soubor XML, který se dokumentační komentáře ve formátu OpenAjax MessageBundle.  
   
     > [!IMPORTANT]
-    >  MessageBundle je doporučený formát. Tento formát není podporován v Microsoft Ajax nebo soubory .winmd. Další informace o použití alternativní `VSDoc` formátování naleznete v tématu [ \<umístění >](../ide/loc-javascript.md).  
+    > MessageBundle je doporučený formát. Tento formát není podporován v Microsoft Ajax nebo soubory .winmd. Další informace o použití alternativní `VSDoc` formátování naleznete v tématu [ \<umístění >](../ide/loc-javascript.md).  
   
      Následující příklad ukazuje obsahu v souboru sajdkára, která obsahuje lokalizované informace technologie IntelliSense. Toto je soubor XML, který je umístěný ve složce specifické pro jazykovou verzi, například JA. Složka musí být ve stejném umístění jako soubor .js, který obsahuje `<loc>` elementu. Název souboru XML souboru musí odpovídat `filename` zadané v parametru `<loc>` elementu.  
   

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e9c6dadd9e553d456bfb46d054a7ae727aa087
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a738a01df224051e3190d828f852fe1ccfa7e9da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434711"
 ---
 # <a name="sccadd-function"></a>Sccadd – funkce
 Tato funkce přidá nové soubory do systému správy zdrojového kódu.
@@ -68,7 +68,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>Návratová hodnota
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |SCC_OK|Přidat operace byla úspěšná.|
 |SCC_E_FILEALREADYEXISTS|Vybraný soubor je již pod správou zdrojových kódů.|
@@ -85,11 +85,11 @@ SCCRTN SccAdd(
  Obvyklého `fOptions` zde nahrazuje pole, `pfOptions`, s jednou `LONG` možnost specifikace na soubor. Je to proto, že tento typ souboru se může lišit od souboru.
 
 > [!NOTE]
->  Je neplatné zadat současně `SCC_FILETYPE_TEXT` a `SCC_FILETYPE_BINARY` možnosti pro stejný soubor, ale platnost nezadáte. Nastavení ani je stejné jako nastavení `SCC_FILETYPE_AUTO`, v takovém případě řídit zdroj modulu plug-in automatické typ souboru.
+> Je neplatné zadat současně `SCC_FILETYPE_TEXT` a `SCC_FILETYPE_BINARY` možnosti pro stejný soubor, ale platnost nezadáte. Nastavení ani je stejné jako nastavení `SCC_FILETYPE_AUTO`, v takovém případě řídit zdroj modulu plug-in automatické typ souboru.
 
  Níže je seznam příznaky použité při `pfOptions` pole:
 
-|Možnost|Hodnota|Význam|
+|Možnost|Value|Význam|
 |------------|-----------|-------------|
 |SCC_FILETYPE_AUTO|0x00|Modul plug-in správy zdrojového kódu musí rozpoznat typ souboru.|
 |SCC_FILETYPE_TEXT|0x01|Určuje textový soubor ASCII.|

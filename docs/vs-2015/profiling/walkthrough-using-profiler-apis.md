@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cb8d054a2e26caddb2ccc9f37d20bb973b1833f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6bcb7be3e2db3d8a48f03d971e104f1e64e1153c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435661"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Návod: Pomocí rozhraní API Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ DataCollection.CurrentId);
 1. Vytvořte nový projekt C# v sadě Visual Studio nebo pomocí příkazového řádku sestavení, v závislosti na vašich předvoleb.  
   
     > [!NOTE]
-    >  Sestavení musí odkazovat na knihovnu Microsoft.VisualStudio.Profiler.dll umístěn v adresáři 9\Team nástroje nástroje sady Microsoft Visual Studio.  
+    > Sestavení musí odkazovat na knihovnu Microsoft.VisualStudio.Profiler.dll umístěn v adresáři 9\Team nástroje nástroje sady Microsoft Visual Studio.  
   
 2. Zkopírujte a vložte následující kód do vašeho projektu:  
   

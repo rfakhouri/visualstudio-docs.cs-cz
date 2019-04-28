@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5a3bed451775c7b6df1d4abb5e318d664cd803f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436882"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelování aplikace&#39;s architektury
 K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potřebuje, si můžete vytvořit modelů v sadě Visual Studio jako součást vaší popis celkovou strukturu a chování softwarového systému nebo aplikace. Použití modelů, může také popisovat vzory, které se používají v návrhu. Tyto modely umožňují pochopit stávající architekturou, změny a jasně komunikovat vaše záměry.
@@ -24,7 +24,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
  Účel modelu je, abyste snížili nejasnosti, ke kterým dochází v přirozeném jazyce popisy a vy i vaši kolegové vizualizovat návrhu a diskutovat o alternativní návrhy. Model je třeba použít společně s další dokumenty nebo diskusí. Model samostatně, nepředstavuje kompletní specifikaci architektury.
 
 > [!NOTE]
->  V tomto tématu "systém" znamená, že software, který vyvíjíte. Může být velkou kolekci mnoho softwarové a hardwarové součásti, nebo jedné aplikace nebo součást aplikace.
+> V tomto tématu "systém" znamená, že software, který vyvíjíte. Může být velkou kolekci mnoho softwarové a hardwarové součásti, nebo jedné aplikace nebo součást aplikace.
 
  Architektura systému je možné rozdělit do dvou oblastí:
 

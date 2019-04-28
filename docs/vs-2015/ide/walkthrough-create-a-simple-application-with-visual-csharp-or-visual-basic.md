@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436823"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Návod: Vytvoření jednoduché aplikace s Vizuálem C# nebo Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
  [Ladění a testování aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Tento návod vychází ze systému Visual Studio Professional, který nabízí šablonu aplikace WPF, na které vytvoříte projekt pro tento návod. Visual Studio Express pro stolní počítače se systémem Windows tuto šablonu nabízí také, ale Visual Studio Express pro Windows a Visual Studio Express pro Web nikoli. Úvodní informace o tom, jak používat Visual Studio Express pro Windows, najdete v článku [středisko pro vývojáře pro Windows Store apps](http://msdn.microsoft.com/windows/apps/br229519). Úvodní informace o tom, jak používat Visual Studio Express for Web [Začínáme s rozhraním ASP.NET](http://www.asp.net/get-started). Vaše verze aplikace Visual Studio a nastavení, která používáte, určují také názvy a umístění některých prvků uživatelského rozhraní. Zobrazit [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Tento návod vychází ze systému Visual Studio Professional, který nabízí šablonu aplikace WPF, na které vytvoříte projekt pro tento návod. Visual Studio Express pro stolní počítače se systémem Windows tuto šablonu nabízí také, ale Visual Studio Express pro Windows a Visual Studio Express pro Web nikoli. Úvodní informace o tom, jak používat Visual Studio Express pro Windows, najdete v článku [středisko pro vývojáře pro Windows Store apps](http://msdn.microsoft.com/windows/apps/br229519). Úvodní informace o tom, jak používat Visual Studio Express for Web [Začínáme s rozhraním ASP.NET](http://www.asp.net/get-started). Vaše verze aplikace Visual Studio a nastavení, která používáte, určují také názvy a umístění některých prvků uživatelského rozhraní. Zobrazit [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="BKMK_ConfigureIDE"></a> Konfigurace integrovaného vývojového prostředí  
  Při prvním spuštění aplikace Visual Studio, Visual Studio vás vyzve k přihlášení pomocí služba účtu Microsoft (MSA), [Přihlaste se k sadě Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Není nutné se přihlásit a můžete provést později.  
@@ -109,7 +109,7 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
     **Průzkumník řešení** ukazuje, že název souboru je nyní Greetings.xaml, a pokud rozbalte soubor MainWindow.xaml uzlu (o vložení fokus v uzlu a stisknutím klávesy šipka vpravo), zobrazí se název souboru MainWindow.xaml.vb nebo MainWindow.xaml.cs je nyní Greetings.XAML.vb, případně Greetings.xaml.cs. Souboru s tímto kódem je vnořená v uzlu souboru .xaml lze zobrazit, že jsou velmi úzce souvisí k sobě navzájem.  
   
    > [!WARNING]
-   >  Tato změna způsobí chybu, kterou zjistíte později během ladění a opravování.  
+   > Tato změna způsobí chybu, kterou zjistíte později během ladění a opravování.  
   
 2. V **Průzkumníka řešení**, otevřete soubor Greetings.xaml v Návrháři (stisknutím klávesy Enter během uzel má fokus) a klikněte do záhlaví okna pomocí myši.  
   

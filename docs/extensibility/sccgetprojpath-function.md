@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3090048482d698c1678a80f2d3066569dcc243f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: abc7ecf0bb35f61785041d03f871409bbe499854
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434600"
 ---
 # <a name="sccgetprojpath-function"></a>Sccgetprojpath – funkce
 Tato funkce se zobrazí výzva pro cestu k projektu, což je řetězec, který má smysl pouze na modul plug-in správy zdrojového kódu. Je volána, když se uživatel:
 
--   Vytvoření nového projektu
+- Vytvoření nového projektu
 
--   Přidat existující projekt do správy verzí
+- Přidat existující projekt do správy verzí
 
--   Pokouším se najít existující projekt ovládacího prvku verze
+- Pokouším se najít existující projekt ovládacího prvku verze
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -89,7 +89,7 @@ SCCRTN SccGetProjPath (
 ## <a name="return-value"></a>Návratová hodnota
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |SCC_OK|Projekt byl úspěšně vytvořen nebo načten.|
 |SCC_I_OPERATIONCANCELED|Operace byla zrušena.|
@@ -105,7 +105,7 @@ SCCRTN SccGetProjPath (
  Pro `lpUser`, rozhraní IDE může předat uživatelské jméno, nebo ho jednoduše předat ukazatel na prázdný řetězec. Pokud je uživatelské jméno, modul plug-in správy zdrojového kódu by měl používat jako výchozí. Ale pokud nebyl předán žádný název, nebo pokud se přihlášení nezdařilo se zadaným názvem, modul plug-in by měl požádat uživatele o přihlášení a předejte název zpět v `lpUser` při přijetí platné přihlašovací údaje. Vzhledem k tomu, že modul plug-in mohou změnit tento řetězec, rozhraní IDE se vždy přidělí vyrovnávací paměť o velikosti (`SCC_USER_LEN`+ 1).
 
 > [!NOTE]
->  První akci prováděnou v integrovaném vývojovém prostředí může být volání na buď `SccOpenProject` funkce nebo `SccGetProjPath` funkce. Proto obou z nich mít identická `lpUser` parametr, který umožňuje přihlásit uživatele v době buď plug-in správy zdrojových kódů. I v případě, že vrácení z funkce naznačuje chybu, musí modulu plug-in zadejte tento řetězec s platným přihlašovacím jménem.
+> První akci prováděnou v integrovaném vývojovém prostředí může být volání na buď `SccOpenProject` funkce nebo `SccGetProjPath` funkce. Proto obou z nich mít identická `lpUser` parametr, který umožňuje přihlásit uživatele v době buď plug-in správy zdrojových kódů. I v případě, že vrácení z funkce naznačuje chybu, musí modulu plug-in zadejte tento řetězec s platným přihlašovacím jménem.
 
  `lpLocalPath` je adresář, ve kterém balancovat projektu. Může být prázdný řetězec. Pokud není žádný adresář aktuálně definován (třeba v případě uživatelů, pokus o stažení projektu ze správy zdrojového kódu) a pokud `bAllowChangePath` je `TRUE`, modul plug-in správy zdrojového kódu můžete požádat uživatele o vstup nebo některé jiné metody použijte k nastavení jeho vlastní řetězec do `lpLocalPath`. Pokud `bAllowChangePath` je `FALSE`, modul plug-in neměli měnit řetězec, protože uživatel již pracuje v zadaném adresáři.
 

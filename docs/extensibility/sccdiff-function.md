@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f9f381fbd9c6cb3f4f2128adc3910516be42962
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: ed96b7c893ba3ececb33be5dda55093b70c28659
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434695"
 ---
 # <a name="sccdiff-function"></a>Sccdiff – funkce
 Tato funkce zobrazí (nebo volitelně právě vyhledává) systém správy rozdíly mezi aktuálního souboru (na místním disku) a její verzi poslední vrácené se změnami ve zdroji.
@@ -58,7 +58,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>Návratová hodnota
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |SCC_OK|Verze v pracovní kopie a serveru jsou stejné.|
 |SCC_I_FILESDIFFERS|Pracovní kopie se liší od verze pod správou zdrojových kódů.|
@@ -77,7 +77,7 @@ SCCRTN SccDiff(
  Optimalizace výkonu, modul plug-in správy zdrojového kódu použít alternativu založené na součtu nebo časové razítko namísto porovnání bajt po bajtu volané pro `SCC_DIFF_CONTENTS`: porovnání jsou samozřejmě rychlejší, ale méně spolehlivé. Ne všechny systémy správy zdrojového kódu může podporovat tyto alternativní porovnávací metody a modulu plug-in může být nutné vrátit zpět k porovnání obsahu. Minimálně musí všechny zdroje moduly plug-in správy podporují porovnání obsahu.
 
 > [!NOTE]
->  Rychlé rozdíl příznaky se vzájemně vylučují. Je možné předat žádné příznaky, ale není platné. současně předat více než jeden. `SCC_DIFF_QUICK_DIFF`, což je masku, která kombinuje všechny příznaky, lze použít k testování, ale je nikdy byste je předat jako parametr.
+> Rychlé rozdíl příznaky se vzájemně vylučují. Je možné předat žádné příznaky, ale není platné. současně předat více než jeden. `SCC_DIFF_QUICK_DIFF`, což je masku, která kombinuje všechny příznaky, lze použít k testování, ale je nikdy byste je předat jako parametr.
 
 |`fOption`|Význam|
 |---------------|-------------|

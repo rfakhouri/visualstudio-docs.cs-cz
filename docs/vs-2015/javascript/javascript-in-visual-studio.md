@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14da091149f44d185d783c071f67294b7d2431e6
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MT
+ms.openlocfilehash: b9005b6cf7f23639481505a4727f8faa08241684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433486"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript ve Visual Studiu 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ JavaScript je prvotřídní jazyk v sadě Visual Studio. Při psaní kódu v jaz
 - Chcete-li vytvořit weby a webové aplikace, [najdete v článku webu ASP.NET](http://www.asp.net/get-started/websites).
 
   > [!NOTE]
-  >  Můžete vytvořit prázdný web ASP.Net a použít pro programování HTML, CSS a JavaScriptu. Soubor Webconfig poskytovaných technologií ASP.NET povolí ladění v sadě Visual Studio (nebo můžete použít nástroje F12 při spuštění aplikace).
+  > Můžete vytvořit prázdný web ASP.Net a použít pro programování HTML, CSS a JavaScriptu. Soubor Webconfig poskytovaných technologií ASP.NET povolí ladění v sadě Visual Studio (nebo můžete použít nástroje F12 při spuštění aplikace).
 
   Editor jazyka JavaScript v aplikaci Visual Studio poskytuje podporu technologie IntelliSense. Další informace najdete v tématu [technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md).
 

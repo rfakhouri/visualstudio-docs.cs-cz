@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6080539a3f8b5f93a8d6fcd144dbd26dbd9eeaf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: f12e8e50b07157f581635fcbd43dbe7863ec40f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436943"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Vytvoření formuláře Windows k vyhledávání dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,35 +38,35 @@ Běžný scénář, kdy aplikace se má zobrazit vybraná data ve formuláři. M
   
  Úlohy v tomto návodu zahrnují:  
   
--   Vytvoření nového projektu aplikace Windows Forms.  
+- Vytvoření nového projektu aplikace Windows Forms.  
   
--   Vytvoření a konfigurace zdroje dat ve vaší aplikaci se **konfigurace zdroje dat** průvodce.  
+- Vytvoření a konfigurace zdroje dat ve vaší aplikaci se **konfigurace zdroje dat** průvodce.  
   
--   Typ rozevírací položky v nastavení **zdroje dat** okna.  
+- Typ rozevírací položky v nastavení **zdroje dat** okna.  
   
--   Vytváření ovládacích prvků, které data zobrazit přetažením položek z **zdroje dat** okna do formuláře.  
+- Vytváření ovládacích prvků, které data zobrazit přetažením položek z **zdroje dat** okna do formuláře.  
   
--   Přidání ovládacích prvků pro zobrazení dat ve formuláři.  
+- Přidání ovládacích prvků pro zobrazení dat ve formuláři.  
   
--   Dokončuje **Tvůrce kritérií vyhledávání** dialogové okno.  
+- Dokončuje **Tvůrce kritérií vyhledávání** dialogové okno.  
   
--   Zadat parametry do formuláře a provádění parametrický dotaz.  
+- Zadat parametry do formuláře a provádění parametrický dotaz.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Pokud chcete dokončit tento návod, potřebujete:  
   
--   Přístup k ukázkové databázi Northwind.  
+- Přístup k ukázkové databázi Northwind.  
   
 ## <a name="create-the-windows-application"></a>Vytvoření aplikace Windows  
  Prvním krokem je vytvoření **aplikace Windows**. Přiřazení názvu projektu je volitelné v tomto kroku, ale budete jí přiřadit názvu na toto vzhledem k tomu, že ho budete později uložit.  
   
 #### <a name="to-create-the-new-windows-application-project"></a>Vytvoření nového projektu aplikace pro systém Windows  
   
-1.  Z **souboru** nabídky, vytvořte nový projekt.  
+1. Z **souboru** nabídky, vytvořte nový projekt.  
   
-2.  Pojmenujte projekt `WindowsSearchForm`.  
+2. Pojmenujte projekt `WindowsSearchForm`.  
   
-3.  Vyberte **aplikace Windows** a klikněte na tlačítko **OK**.  
+3. Vyberte **aplikace Windows** a klikněte na tlačítko **OK**.  
   
      **WindowsSearchForm** projekt je vytvořen a přidán do **Průzkumníka řešení**.  
   
@@ -75,25 +75,25 @@ Běžný scénář, kdy aplikace se má zobrazit vybraná data ve formuláři. M
   
 #### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat  
   
-1.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.  
+1. Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.  
   
-2.  V **zdroje dat** okně **přidat nový zdroj dat** spustit **konfigurace zdroje dat** průvodce.  
+2. V **zdroje dat** okně **přidat nový zdroj dat** spustit **konfigurace zdroje dat** průvodce.  
   
-3.  Vyberte **databáze** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.  
+3. Vyberte **databáze** na **zvolte typ zdroje dat** stránce a potom klikněte na tlačítko **Další**.  
   
-4.  Na **vyberte datové připojení** stránka provádění, jednu z následujících akcí:  
+4. Na **vyberte datové připojení** stránka provádění, jednu z následujících akcí:  
   
-    -   Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.  
+    - Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.  
   
-    -   Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno.  
+    - Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno.  
   
-5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak klikněte na tlačítko **Další**.  
+5. Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak klikněte na tlačítko **Další**.  
   
-6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.  
+6. Na **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.  
   
-7.  Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** uzlu.  
+7. Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** uzlu.  
   
-8.  Vyberte **zákazníkům** tabulku a pak klikněte na tlačítko **Dokončit**.  
+8. Vyberte **zákazníkům** tabulku a pak klikněte na tlačítko **Dokončit**.  
   
      **NorthwindDataSet** se přidá do vašeho projektu a **zákazníkům** tabulky se zobrazí v **zdroje dat** okna.  
   
@@ -102,9 +102,9 @@ Běžný scénář, kdy aplikace se má zobrazit vybraná data ve formuláři. M
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Vytvoření ovládacích prvků vázaných na data ve formuláři  
   
-1.  Rozbalte **zákazníkům** uzlu **zdroje dat** okno.  
+1. Rozbalte **zákazníkům** uzlu **zdroje dat** okno.  
   
-2.  Přetáhněte **zákazníkům** uzlu z **zdroje dat** okna do formuláře.  
+2. Přetáhněte **zákazníkům** uzlu z **zdroje dat** okna do formuláře.  
   
      A <xref:System.Windows.Forms.DataGridView> a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí ve formuláři. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
   
@@ -113,11 +113,11 @@ Běžný scénář, kdy aplikace se má zobrazit vybraná data ve formuláři. M
   
 #### <a name="to-create-a-parameterized-query-and-controls-to-enter-the-parameters"></a>Chcete-li vytvořit parametrický dotaz a ovládací prvky k zadání parametrů  
   
-1.  Vyberte <xref:System.Windows.Forms.DataGridView> ovládací prvek a klikněte na tlačítko **přidat dotaz** na **Data** nabídky.  
+1. Vyberte <xref:System.Windows.Forms.DataGridView> ovládací prvek a klikněte na tlačítko **přidat dotaz** na **Data** nabídky.  
   
-2.  Typ `FillByCity` v **nový název dotazu** oblast na **Tvůrce kritérií vyhledávání** dialogové okno.  
+2. Typ `FillByCity` v **nový název dotazu** oblast na **Tvůrce kritérií vyhledávání** dialogové okno.  
   
-3.  Přidat `WHERE City = @City` do dotazu v **Text dotazu** oblasti.  
+3. Přidat `WHERE City = @City` do dotazu v **Text dotazu** oblasti.  
   
      Dotaz by měl vypadat přibližně takto:  
   
@@ -128,9 +128,9 @@ Běžný scénář, kdy aplikace se má zobrazit vybraná data ve formuláři. M
      `WHERE City = @City`  
   
     > [!NOTE]
-    >  Přístup a technologie OLE DB zdroje dat používat otazník ("?") k označení parametrů, takže v klauzuli WHERE bude vypadat takto: `WHERE City = ?`.  
+    > Přístup a technologie OLE DB zdroje dat používat otazník ("?") k označení parametrů, takže v klauzuli WHERE bude vypadat takto: `WHERE City = ?`.  
   
-4.  Klikněte na tlačítko **OK** zavřete **Tvůrce kritérií vyhledávání** dialogové okno.  
+4. Klikněte na tlačítko **OK** zavřete **Tvůrce kritérií vyhledávání** dialogové okno.  
   
      A **FillByCityToolStrip** je přidán do formuláře.  
   
@@ -139,18 +139,18 @@ Běžný scénář, kdy aplikace se má zobrazit vybraná data ve formuláři. M
   
 #### <a name="to-test-the-application"></a>Testování aplikace  
   
-1.  Stisknutím klávesy F5 spusťte aplikaci.  
+1. Stisknutím klávesy F5 spusťte aplikaci.  
   
-2.  Typ **Londýn** do **Město** textové pole a pak klikněte na tlačítko **FillByCity**.  
+2. Typ **Londýn** do **Město** textové pole a pak klikněte na tlačítko **FillByCity**.  
   
      Datové mřížce se vyplní zákazníky, kteří splňují kritéria. V tomto příkladu datové mřížky se zobrazí pouze zákazníci, kteří mají hodnotu **Londýn** v jejich **Město** sloupce.  
   
 ## <a name="next-steps"></a>Další kroky  
  V závislosti na požadavcích aplikace existuje několik kroků, které můžete provést po vytvoření parametrizovaného formuláře. Mezi vylepšení, která je možné pro tento návod provést, patří:  
   
--   Přidání ovládacích prvků, které zobrazují související data.  
+- Přidání ovládacích prvků, které zobrazují související data.  
   
--   Úpravy datové sady pro přidání nebo odebrání databázové objekty. Další informace najdete v tématu [vytvoření a konfigurace datové sady](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
+- Úpravy datové sady pro přidání nebo odebrání databázové objekty. Další informace najdete v tématu [vytvoření a konfigurace datové sady](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vazby ovládacích prvků modelu Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
