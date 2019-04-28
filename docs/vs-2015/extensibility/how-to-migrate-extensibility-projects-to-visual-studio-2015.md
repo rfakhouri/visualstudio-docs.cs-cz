@@ -10,12 +10,12 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d7c21d3755d29ec3e71a3be756778320e678ab89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41bf80c8ae00aa22666750de7b4b23df981c8465
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435923"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Postupy: Migrace projektů rozšíření do sady Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60062773"
 Tady je postup upgradu rozšíření.  
   
 > [!IMPORTANT]
->  Pokud máte v úmyslu spravovat verze řešení rozšíření pro starší verzi sady Visual Studio, je potřeba vytvořit kopii, před provedením upgradu. Může být obtížné upgradovanou verzi vrátit do předchozího stavu.  
+> Pokud máte v úmyslu spravovat verze řešení rozšíření pro starší verzi sady Visual Studio, je potřeba vytvořit kopii, před provedením upgradu. Může být obtížné upgradovanou verzi vrátit do předchozího stavu.  
   
 #### <a name="to-upgrade-an-extensibility-solution"></a>Upgradovat řešení rozšiřitelnosti  
   
@@ -54,4 +54,4 @@ Tady je postup upgradu rozšíření.
 5. Můžete také přejít na verze NuGet nástroje sestavení sady SDK pro VS. Tento balíček NuGet je [Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) a jednou přidán do projektu bude obsahovat potřebné nástroje a cílové soubory umožňují vytvářet rozšíření projektu v počítači bez nainstalované VS SDK.  
   
 > [!NOTE]
->  Není vyžadováno, že aktualizujete existující projekty rozšiřitelnosti použít NuGet referenčních sestavení a nástroje.  Může i nadále sestavení pomocí referenčních sestavení a nástroje, které jsou nainstalovány se sadou SDK pro VS.
+> Není vyžadováno, že aktualizujete existující projekty rozšiřitelnosti použít NuGet referenčních sestavení a nástroje.  Může i nadále sestavení pomocí referenčních sestavení a nástroje, které jsou nainstalovány se sadou SDK pro VS.

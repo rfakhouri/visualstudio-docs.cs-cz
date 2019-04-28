@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07586cd9b839a514ebe3a0677fb894a8d6e9c71f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f5fe9f47fca2b83e0095c67e59c2db54a4a04159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447054"
 ---
 # <a name="project-solutions"></a>Projektová řešení
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] poskytuje šablony projektu, které slouží k vytváření doplňků VSTO pro aplikaci Microsoft Office Project. Doplňky VSTO slouží k automatizaci projektu, rozšíření funkcí projektu nebo přizpůsobení uživatelského rozhraní (UI) projektu.
@@ -32,7 +32,7 @@ ms.locfileid: "56642193"
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
 > [!NOTE]
->  Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+> Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
 
 ## <a name="automate-project-by-using-the-project-object-model"></a>Automatizace projektu pomocí objektového modelu projektu
  Model objektu projektu poskytuje mnoho typů, které můžete použít k automatizaci projektu. Tyto typy umožňují napsat kód pro zpracování běžných úkolů, jako je například prostřednictvím kódu programu vytvořit a upravit úlohy v projektu.
@@ -47,7 +47,7 @@ ms.locfileid: "56642193"
  Všechny objekty a členy v referenční dokumentace objektového modelu VBA odpovídají typy a členy v projektu primární definiční sestavení (PIA). Například objekt kalendáře v referenční dokumentace objektového modelu VBA odpovídá `Microsoft.Office.Interop.MSProject.Calendar` typu v projektu PIA. I když referenční dokumentace objektového modelu VBA poskytuje příklady kódu pro většinu vlastnosti, metody a události, pokud chcete použít v projektu doplňku VSTO pro Project, který vytvoříte pomocí Visual musí překládat kód VBA v této referenční dokumentace jazyka Visual Basic nebo Visual C# Studio.
 
 > [!NOTE]
->  V současné době neexistuje žádná referenční dokumentace pro primární spolupracující sestavení projektu.
+> V současné době neexistuje žádná referenční dokumentace pro primární spolupracující sestavení projektu.
 
 ### <a name="infrastructure-types-in-the-project-primary-interop-assembly"></a>Typy infrastruktury ve primárního spolupracujícího sestavení projektu
  Při psaní kódu, který používá PIA projektu, můžete si všimnout mnoho typů, které nebyly popsány v referenci VBA. Tyto další typy pomáhají přeložit objekty v modelu COM založené na objektovém projektu do spravovaného kódu, nejsou určeny k použití přímo ve vašem kódu.

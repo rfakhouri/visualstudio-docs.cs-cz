@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420201"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Postupy: Přizpůsobení balíčku řešení služby SharePoint
   Návrháři balíčku můžete použít k vytvoření a přizpůsobení balíčku (*.wsp*). Například můžete přidat položky Sharepointového projektu a funkce, určete, jestli je webový server obnovit, když se řešení nasadí a nastavit typ serveru nasazení.
@@ -47,7 +47,7 @@ ms.locfileid: "60074918"
 2. Rozbalte balíček, Rozbalit Package.package a pak otevřete *Package.Template.xml* souboru.
 
     > [!NOTE]
-    >  Když otevřete soubor manifestu XML pro balíček šablony, soubory se automaticky ověří a můžete ignorovat upozornění, které se zobrazí v okně Seznam chyb.
+    > Když otevřete soubor manifestu XML pro balíček šablony, soubory se automaticky ověří a můžete ignorovat upozornění, které se zobrazí v okně Seznam chyb.
 
 ## <a name="change-the-manifest-template"></a>Změny v šabloně manifestu
  Můžete změnit kód XML pro zabalené soubor manifestu v editoru XML sady Visual Studio nebo v podokně šablony manifestu. Jakékoli změny kódu XML jsou sloučeny do souboru manifestu balíčku pro balíček.
@@ -68,7 +68,7 @@ ms.locfileid: "60074918"
  Můžete zakázat návrháře balíčků a vytvoření *manifest.xml* soubor ručně. Při prvním provedení tohoto postupu, aktuální nastavení v Návrháři balíčku se uloží do souboru XML balíčku šablony. Potom můžete upravit nebo přepsat kód XML.
 
 > [!NOTE]
->  Je-li přidat nebo odebrat položky Sharepointového projektu a funkce v souboru XML, návrháři balíčku je zakázáno, tyto položky projektu a funkce nejsou zabaleny.
+> Je-li přidat nebo odebrat položky Sharepointového projektu a funkce v souboru XML, návrháři balíčku je zakázáno, tyto položky projektu a funkce nejsou zabaleny.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>K přepsání souboru manifestu balíčku zakázáním návrháře
 

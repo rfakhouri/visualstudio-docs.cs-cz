@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 0fa07029ee1b96f3b8f1328d654b4d5d83953142
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 77da71c6762927610900feedeeae20421a14c4d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432276"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Získávání popisy pole z okna Vlastnosti
 V dolní části **vlastnosti** okně oblasti popisu zobrazí informace související s vybranou vlastnost pole. Tato funkce je ve výchozím nastavení zapnutá. Pokud chcete skrýt pole Popis, klikněte pravým tlačítkem myši **vlastnosti** okno a klikněte na tlačítko **popis**. Tím také odstraněn znak zaškrtnutí vedle položky **popis** title v nabídce okno. Pole lze zobrazit znovu pomocí stejných kroků, chcete-li přepnout **popis** zpět na.  
@@ -26,7 +26,7 @@ V dolní části **vlastnosti** okně oblasti popisu zobrazí informace souvisej
 1. Přidat `helpstringdll` atribut příkaz library v knihovně typů (`typelib`).  
   
    > [!NOTE]
-   >  Tento krok je volitelný, pokud knihovna typů nachází v objektový soubor knihovny (.olb).  
+   > Tento krok je volitelný, pokud knihovna typů nachází v objektový soubor knihovny (.olb).  
   
 2. Zadejte `helpstringcontext` atributy pro řetězce. Můžete také určit `helpstring` atributy.  
   

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8cecb3e78cea90b927dc6b67b5b4a2cb50bfa87c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581093"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Vytváření sloupců webu, typů obsahu a seznamů pro službu SharePoint
   Visual Studio obsahuje šablony položek projektu pro mnoho různých základní položek služby SharePoint, včetně *uvádí* a *typů obsahu*, které můžete začlenit sloupců webu (nebo  *pole*). Návrháři nových typů obsahu a seznamů Ujistěte se, vytváří tyto položky se nyní ještě snazší.

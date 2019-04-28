@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fa00e8b5aafa131a9ca64b6fdaa7cba79fcb3b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 164f049b5ed1133acfd1f4e66f805b1510d29d5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411505"
 ---
 # <a name="t4-assembly-directive"></a>T4 – direktiva Assembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] návrhová textová šablona `ass
  Obecný přehled o psaní textových šablon, naleznete v tématu [vytvoření textové šablony T4](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  Není nutné `assembly` direktivy šablony textu za běhu (Předzpracované). Místo toho přidejte potřebná sestavení do **odkazy** z vaší [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu.  
+> Není nutné `assembly` direktivy šablony textu za běhu (Předzpracované). Místo toho přidejte potřebná sestavení do **odkazy** z vaší [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu.  
   
 ## <a name="using-the-assembly-directive"></a>Použití direktivy assembly  
  Syntaxe této direktivy je následující:  

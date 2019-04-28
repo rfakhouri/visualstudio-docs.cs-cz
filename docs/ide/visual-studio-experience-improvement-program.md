@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581999"
 ---
-# <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio programu zlepšování zkušeností zákazníků
+# <a name="visual-studio-customer-experience-improvement-program"></a>Program Zlepšování softwaru a služeb na základě zkušeností uživatelů pro Visual Studio
 
 Visual Studio zákazníka prostředí pro zlepšování programu (VSCEIP) je navržená můžete pomoci společnosti Microsoft, vylepšení sady Visual Studio v čase. Tento program [shromažďuje informace o chybách](../ide/diagnostic-data-collection.md), počítačový hardware, a jak ostatní používají Visual Studio, aniž by to ovlivnilo uživatele ve své úkoly v počítači. Shromažďované informace pomáhají společnosti Microsoft určit funkce, které ke zlepšení. Tento dokument obsahuje postup pro aktivování nebo zrušení VSCEIP.
 

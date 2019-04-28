@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8239b27cd92f66ae8f74ddb1accd95535bf56f93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62542334"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Nezveřejňujte nepřímo metody s požadavky propojení
 
@@ -30,7 +30,7 @@ ms.locfileid: "55953864"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Veřejný nebo chráněný člen má [požadavky propojení](/dotnet/framework/misc/link-demands) a je volán členem, který neprovádí žádné bezpečnostní kontroly.
 
 ## <a name="rule-description"></a>Popis pravidla

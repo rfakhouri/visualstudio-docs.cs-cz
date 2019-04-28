@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dbfe242434cdc953ec29fdd10a318c435abadc1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ce5534f5723a3f0e570779939f207018cac71cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438909"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Pohotové profilování webových stránek pomocí VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ ms.locfileid: "60049826"
 **VSPerfASPNETCmd** nástroj příkazového řádku vám umožní snadno profilu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webové aplikace. Ve srovnání s [VSPerfCmd](../profiling/vsperfcmd.md) nástroj příkazového řádku, možnosti jsou zmenšeny, musí být nastaveny žádné proměnné prostředí a restartování počítače se nevyžaduje. Pomocí **VSPerfASPNETCmd** upřednostňovanou metodou pro profilaci s samostatný profiler. Další informace najdete v tématu [jak: Instalovat samostatný Profiler](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
->  Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. Aplikace Windows Store také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. Aplikace Windows Store také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  V některých scénářích, jako je shromažďování dat souběžnosti nebo pozastavování a obnovování profilace, s použitím **VSPerfCmd** upřednostňuje profilování.  
   
 > [!NOTE]
->  Nástroje příkazového řádku nástrojů pro profilaci jsou umístěny v podadresáři nástroje \Team Tools\Performance [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] instalační adresář. Na 64bitových počítačích použijte nástroj VSPerfASPNETCmd nachází v adresáři nástroje \Team Tools\Performance 32 bitů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého. Další informace najdete v tématu [zadání cesty k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Nástroje příkazového řádku nástrojů pro profilaci jsou umístěny v podadresáři nástroje \Team Tools\Performance [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] instalační adresář. Na 64bitových počítačích použijte nástroj VSPerfASPNETCmd nachází v adresáři nástroje \Team Tools\Performance 32 bitů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého. Další informace najdete v tématu [zadání cesty k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
 ## <a name="profiling-an-aspnet-application"></a>Profilace aplikací ASP.NET  
  Do profilu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci, zadejte jeden z příkazů popsaných v následujících částech. Webový server je spuštěn a profiler zahájí sběr dat. Výkon vaší aplikace a pak ukončete prohlížeč. Pokud chcete profilaci zastavit, stiskněte klávesu Enter v okně příkazového řádku.  
   
 > [!NOTE]
->  Ve výchozím nastavení, nevrátí příkazový řádek po **vsperfaspnetcmd** příkazu. Můžete použít **/nowait** možnost pro vynucení příkazového řádku k vrácení. Zobrazit [pomocí možnosti/nowait](#UsingNoWait).  
+> Ve výchozím nastavení, nevrátí příkazový řádek po **vsperfaspnetcmd** příkazu. Můžete použít **/nowait** možnost pro vynucení příkazového řádku k vrácení. Zobrazit [pomocí možnosti/nowait](#UsingNoWait).  
   
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>Ke shromažďování statistik aplikace pomocí metody vzorkování  
  Vzorkování je výchozí metoda profilace **VSPerfASPNETCmd** nástroje a nebude muset zadat na příkazovém řádku. Následující příkazový řádek shromažďuje statistiky aplikace ze zadané webové aplikace:  
@@ -66,9 +66,9 @@ ms.locfileid: "60049826"
 ## <a name="to-collect-tier-interaction-data"></a>Ke shromažďování dat interakce vrstev  
   
 > [!WARNING]
->  (TIP) data profilace interakce vrstev lze shromažďovat pomocí [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], nebo [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Nicméně data profilace interakce vrstev lze zobrazit pouze v [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] a [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+> (TIP) data profilace interakce vrstev lze shromažďovat pomocí [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], nebo [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Nicméně data profilace interakce vrstev lze zobrazit pouze v [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] a [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
->  Ke shromažďování dat TIP na Windows 8 nebo Windows Server 2012, je nutné použít instrumentaci (**/trace**) možnost.  
+> Ke shromažďování dat TIP na Windows 8 nebo Windows Server 2012, je nutné použít instrumentaci (**/trace**) možnost.  
   
  Shromažďování dat interakce vrstev s vzorkování dat:  
   

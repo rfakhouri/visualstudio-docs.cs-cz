@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 36555d9b00c9aff3f594ae2217afe8434bb41542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442755"
 ---
 # <a name="how-to-start-spy"></a>Postupy: Spuštění nástroje Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Můžete spustit nástroje Spy ++ ze sady Visual Studio nebo příkazového řá
  Při spuštění nástroje Spy ++, pokud se zobrazí zpráva oprávnění k provedení změny v počítači, klikněte na tlačítko požádat **Ano**.  
   
 > [!NOTE]
->  Můžete spustit pouze jedna instance nástroje Spy ++. Pokud se pokusíte spustit jiná instance, způsobí pouze aktuálně spuštěnou instanci získat fokus.  
+> Můžete spustit pouze jedna instance nástroje Spy ++. Pokud se pokusíte spustit jiná instance, způsobí pouze aktuálně spuštěnou instanci získat fokus.  
   
 ### <a name="to-start-spy-from-visual-studio"></a>Spuštění nástroje Spy ++ ze sady Visual Studio  
   
@@ -35,7 +35,7 @@ Můžete spustit nástroje Spy ++ ze sady Visual Studio nebo příkazového řá
      Protože nástroje Spy ++ běží nezávisle na sobě po jeho spuštění, můžete zavřít aplikaci Visual Studio.  
   
     > [!NOTE]
-    >  Při protokolování zpráv pomocí nástroje Spy ++, může to způsobit pomalejší operačního systému.  
+    > Při protokolování zpráv pomocí nástroje Spy ++, může to způsobit pomalejší operačního systému.  
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>Spuštění nástroje Spy ++ z příkazového řádku  
   

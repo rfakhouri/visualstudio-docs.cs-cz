@@ -8,12 +8,12 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a38e711a8a0244992f9958b4d48920f3437a8329
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 098d94a1aed9020271db5010e278a4aa8fc68330
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442132"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio a Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Xamarin je platforma pro vývoj mobilních aplikací pro vytváření nativních
   Můžete pracovat se všemi funkcemi Xamarin prostřednictvím [libovolná edice sady Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional a Enterprise). Všimněte si také, že od 31. března 2016 Xamarin je součástí všech edic sady Visual Studio 2015 a už vyžaduje samostatnou licenci. Visual Studio 2013, můžete nainstalovat Xamarin samostatně, jako [nastavení a instalaci](../cross-platform/setup-and-install.md) téma popisuje.  
   
 > [!NOTE]
->  Tyto pokyny popisují konfiguraci počítače nejjednodušší a nejjednodušší pro ty, které mají Windows a Visual Studio na pozadí. S touto konfigurací celkové prostředí vývoje je jednodušší, protože je potřeba jenom komunikovat s počítači Mac použít simulátor iOS a připojené zařízení. Pokud místo toho pocházet z Mac na pozadí, doporučujeme, abyste spuštění sady Visual Studio uvnitř Parallels VMWare nebo pomocí Xamarin Studio Community. Odkazovat na [instalační program, instalace a ověření pro uživatele počítačů Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md) pokyny.  
+> Tyto pokyny popisují konfiguraci počítače nejjednodušší a nejjednodušší pro ty, které mají Windows a Visual Studio na pozadí. S touto konfigurací celkové prostředí vývoje je jednodušší, protože je potřeba jenom komunikovat s počítači Mac použít simulátor iOS a připojené zařízení. Pokud místo toho pocházet z Mac na pozadí, doporučujeme, abyste spuštění sady Visual Studio uvnitř Parallels VMWare nebo pomocí Xamarin Studio Community. Odkazovat na [instalační program, instalace a ověření pro uživatele počítačů Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md) pokyny.  
   
 > [!NOTE]
->  Pokud potřebujete pro vývoj pro různé platformy řešení založeného na HTML a CSS, projděte si Visual Studio Tools pro Apache Cordova, jak je popsáno v [vývoj pro různé platformy v sadě Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).
+> Pokud potřebujete pro vývoj pro různé platformy řešení založeného na HTML a CSS, projděte si Visual Studio Tools pro Apache Cordova, jak je popsáno v [vývoj pro různé platformy v sadě Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).

@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 000ce33b71c13f87f218a15c364fda21b99ccfe4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541832"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Volejte metody základní třídy u typů ISerializable
 
@@ -33,7 +33,7 @@ ms.locfileid: "55939720"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Typ je odvozen od typu, který implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> platí rozhraní a jeden z následujících podmínek:
 
 - Tento typ implementuje konstruktor serializace, to znamená, konstruktor s <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> parametru signatury, ale nevolá Serializační konstruktor základního typu.

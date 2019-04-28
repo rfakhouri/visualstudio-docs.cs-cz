@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8e6f39e420981615f391103c6cee431f930190bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 677a72f0378c62f2ca65515ec563069f22b9ff09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433008"
 ---
 # <a name="install-visual-studio-2015"></a>Nainstalovat sadu Visual Studio 2015
 
@@ -53,7 +53,7 @@ Předtím, než jsme proniknout do podrobností, tady je seznam našich nejčast
  Vlastní komponenty zahrnují Visual C++, Visual F#, SQL Server Data Tools, nástrojů pro různé platformy mobilních a sady SDK a sad SDK třetích stran a rozšíření. Některé z těchto komponent vlastní programy můžete nainstalovat později, i pokud nevyberete je při počátečním nastavení.
 
 > [!NOTE]
->  Vlastní instalace automaticky obsahuje součásti, které jsou ve výchozí instalaci.
+> Vlastní instalace automaticky obsahuje součásti, které jsou ve výchozí instalaci.
 
  Úplný seznam vlastních komponent vypadá takto:
 
@@ -70,7 +70,7 @@ Předtím, než jsme proniknout do podrobností, tady je seznam našich nejčast
  Visual Studio můžete nainstalovat pomocí instalačního média (DVD), pomocí služby předplatného sady Visual Studio z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) webu, stáhněte si instalační program, který web z [sady Visual Studio Soubory ke stažení](http://go.microsoft.com/fwlink/?LinkId=517106) webu, nebo tak, že vytvoříte rozložení pro offline instalaci (najdete v článku [vytvořit Offline instalace sady Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) stránky pro další podrobnosti).
 
 > [!IMPORTANT]
->  Je potřeba mít oprávnění správce k instalaci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ale nepotřebujete je, aby používaly [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] po její instalaci.
+> Je potřeba mít oprávnění správce k instalaci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ale nepotřebujete je, aby používaly [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] po její instalaci.
 
  Váš účet místního správce musí mít následující oprávnění povolit, aby nainstalovat vše, co v sadě Visual Studio.
 

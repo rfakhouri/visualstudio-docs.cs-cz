@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62574851"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Postupy: Programově definování a výběr oblastí v dokumentech
   Můžete definovat rozsah v dokumentu aplikace Microsoft Office Word s použitím <xref:Microsoft.Office.Interop.Word.Range> objektu. Můžete vybrat celý dokument v několika způsoby, například pomocí <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metodu <xref:Microsoft.Office.Interop.Word.Range> objektu, nebo pomocí vlastnosti obsahu <xref:Microsoft.Office.Tools.Word.Document> třídy (v přizpůsobení úrovni dokumentu) nebo <xref:Microsoft.Office.Interop.Word.Document> třídy (v Doplněk VSTO).

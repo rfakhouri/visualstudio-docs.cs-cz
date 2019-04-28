@@ -10,11 +10,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 0cd54f932a99ea79bf792ebe4175ddc6a031ddcb
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541061"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: Označte obslužné rutiny příkazů pomocí ValidateAntiForgeryToken
 
@@ -25,7 +25,7 @@ ms.locfileid: "58194441"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Metody akce kontroleru ASP.NET MVC není označen atributem [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)), nebo atribut určení příkaz protokolu HTTP, jako například [HttpGetAttribute](/previous-versions/aspnet/ee470993(v%3dvs.118)) nebo [ AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29).
 

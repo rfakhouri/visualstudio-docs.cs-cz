@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c01514a1f3a27c5e155bd9c3c5e0dc72e6dec0fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cc0a254f13c4689dd6526646ddd2ff30b6094411
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432989"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Možnosti, textový editor, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Použití **IntelliSense** stránku **možnosti** dialogové okno Upravit nastav
  Pokud je toto políčko zaškrtnuto a soubor s kódem JavaScript je otevřen mimo kontext projektu, stáhne Visual Studio vzdálené soubory jazyka JavaScript odkazované v tomto souboru za účelem získání informací technologie IntelliSense. Při výběru této možnosti se soubory stáhnou, pokud je vložíte jako referenci do souboru s kódem JavaScript.  
   
 > [!NOTE]
->  Pro webové projekty jsou ve výchozím nastavení vzdálené soubory, na které váš projekt odkazuje, staženy automaticky.  
+> Pro webové projekty jsou ve výchozím nastavení vzdálené soubory, na které váš projekt odkazuje, staženy automaticky.  
   
 ## <a name="statement-completion"></a>Doplňování výrazů  
  Tyto možnosti slouží ke změně chování při doplňování výrazů technologie IntelliSense.  
@@ -74,7 +74,7 @@ Použití **IntelliSense** stránku **možnosti** dialogové okno Upravit nastav
   Tato možnost určuje pořadí, v jakém se soubory načítají do kontextu jazykové služby. Pořadí lze konfigurovat pomocí **odebrat**, **nahoru**, a **přesunout dolů** tlačítka. Aby technologie IntelliSense správně fungovala, musí se po určení souboru načíst soubor, který je na něm závislý.  
   
 > [!CAUTION]
->  Pokud je objekt definován nepodmíněně ve dvou nebo více implicitních odkazech, použije se k definování tohoto objektu poslední odkaz v tomto seznamu.  
+> Pokud je objekt definován nepodmíněně ve dvou nebo více implicitních odkazech, použije se k definování tohoto objektu poslední odkaz v tomto seznamu.  
   
  **Přidat odkaz na aktuální skupinu**  
  Tato možnost poskytuje způsob, jak přidat další soubory .js technologie IntelliSense vyhledáním příslušných souborů.  

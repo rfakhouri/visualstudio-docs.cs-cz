@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f23d0593129cae2732c8b4df14b3f5e2d5a69f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 763aa2c73effdb1f7daf86c18e6033f03bef5108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434040"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4: Přidání obslužné rutiny události Click ke každému popisku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +48,10 @@ Okno Vlastnosti zobrazující událost Click
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#4)]  
   
     > [!NOTE]
-    >  Pokud zkopírujete a vložíte `label_Click()` blok kódu, spíše než ručního zadání kódu, nezapomeňte nahradit stávající `label_Click()` kódu. Jinak budete mít duplicitní kód bloku.  
+    > Pokud zkopírujete a vložíte `label_Click()` blok kódu, spíše než ručního zadání kódu, nezapomeňte nahradit stávající `label_Click()` kódu. Jinak budete mít duplicitní kód bloku.  
   
     > [!NOTE]
-    >  Můžete rozpoznat `object sender` v horní části obslužné rutiny události jako stejný jako ten používané [kurz 2: Vytvoření a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) kurzu. Protože jste připojili různé události Click ovládacího prvku popisku k jedné metodě obslužné rutiny události, volá se stejná metoda bez ohledu na to, který popisek uživatel zvolil. Metoda obslužné rutiny události potřebuje vědět, který popisek byl vybrán, takže použije jméno **odesílatele** k identifikaci ovládacího prvku popisku. První řádek metody dává pokyn programu, že není pouze obecný objekt, ale specificky ovládací prvek popisku a používá název **clickedLabel** pro přístup k vlastnostem a metodám popisku.  
+    > Můžete rozpoznat `object sender` v horní části obslužné rutiny události jako stejný jako ten používané [kurz 2: Vytvoření a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) kurzu. Protože jste připojili různé události Click ovládacího prvku popisku k jedné metodě obslužné rutiny události, volá se stejná metoda bez ohledu na to, který popisek uživatel zvolil. Metoda obslužné rutiny události potřebuje vědět, který popisek byl vybrán, takže použije jméno **odesílatele** k identifikaci ovládacího prvku popisku. První řádek metody dává pokyn programu, že není pouze obecný objekt, ale specificky ovládací prvek popisku a používá název **clickedLabel** pro přístup k vlastnostem a metodám popisku.  
   
      Tato metoda nejprve zkontroluje, jestli **clickedLabel** byl úspěšně převeden (přetypován) z objektu do ovládacího prvku popisku. Pokud neúspěšný, má hodnotu `null` (C#) nebo `Nothing` (Visual Basic), a nechcete provést zbytek kódu v metodě. Dále metoda zkontroluje barvu textu vybraného popisku pomocí popisku **ForeColor** vlastnost. Pokud je barva textu popisku černá, znamená to, že ikona již byla vybrána a metoda je provedena. (To `return` provádí příkaz: Říká programu, že má zastavit spouštění metody.) V opačném případě ikona nebyla vybrána, takže program změní barvu textu popisku na černou.  
   

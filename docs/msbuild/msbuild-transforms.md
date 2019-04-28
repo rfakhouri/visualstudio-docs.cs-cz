@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2fe127a98236c321db9d1e7450ab006e09badba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414701"
 ---
 # <a name="msbuild-transforms"></a>Transformace nástroje MSBuild
 Transformace je 1: 1 převod jednu položku seznamu do jiného. Kromě povolení projekt převést seznamy položek, umožňuje transformace cíl k identifikaci přímé mapování mezi její vstupy a výstupy. Toto téma vysvětluje, transformace a jak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] používá k sestavení projektů efektivněji.
@@ -33,7 +33,7 @@ V následujícím příkladu, seznam *RESX* soubory se transformuje na seznam *.
 Například, pokud jsou položky v seznamu položek @(RESXFile) *Form1.resx*, *Form2.resx*, a *Form3.resx*, budou výstupy v seznamu transformovaný  *Form1.Resources*, *Form2.resources*, a *Form3.resources*.
 
 > [!NOTE]
->  Vlastní oddělovač pro transformovaná položky seznamu můžete zadat stejným způsobem zadejte oddělovač pro standardní položky seznamu. Například samostatné transformovaný položky seznamu oddělte čárkou (,) namísto výchozí středníkem (;), použijte následující kód XML: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
+> Vlastní oddělovač pro transformovaná položky seznamu můžete zadat stejným způsobem zadejte oddělovač pro standardní položky seznamu. Například samostatné transformovaný položky seznamu oddělte čárkou (,) namísto výchozí středníkem (;), použijte následující kód XML: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
 
 ## <a name="use-multiple-modifiers"></a>Použití více modifikátory
  Transformace výraz může obsahovat více modifikátory, ve kterých je možné kombinovat v libovolném pořadí a lze je opakovat. V následujícím příkladu se změní název adresáře, který obsahuje soubory, ale soubory zachovat původní přípona názvu název a soubor.

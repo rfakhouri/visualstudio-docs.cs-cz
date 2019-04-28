@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e87429c38d5b456eca08daa6675edcb0bd3f056
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ace66b8a28061ea7e8fdc7fa64f419042edf11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410128"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Vytváření rozšíření pomocí šablony položky editoru
 Můžete použít šablony položek, které jsou zahrnuty v sadě Visual Studio SDK vytvořit rozšíření základního editoru, které aplikacím dodávají třídění, vylepšení a okraje editoru. Šablony položky editoru jsou k dispozici pro projekty Visual C# nebo Visual Basic VSIX.
@@ -63,7 +63,7 @@ Můžete použít šablony položek, které jsou zahrnuty v sadě Visual Studio 
  Šablona grafického doplňku zobrazení editoru vytvoří relativní k zobrazení dalších úprav, který přidá fialového pole, která má červené ohraničení na pravém horním rohu zobrazení.
 
 > [!NOTE]
->  **Zobrazení** je oblast, která je právě otevřeno zobrazení textu.
+> **Zobrazení** je oblast, která je právě otevřeno zobrazení textu.
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Chcete-li vytvořit rozšíření grafického doplňku zobrazení s použitím šablony grafického doplňku zobrazení editoru
 

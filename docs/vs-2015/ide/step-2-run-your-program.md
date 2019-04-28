@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f5b57b4246a7e047f64ca79c9a0021cbfc0766f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e8a28180270a5093bdeb59f45fde9e6838a6ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434044"
 ---
 # <a name="step-2-run-your-program"></a>Krok 2: Spuštění programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Panel nástrojů ladění
     - Výběrem tlačítka X v horním rohu **Form1** okna.  
   
     > [!NOTE]
-    >  Spustíte-li program zevnitř rozhraní IDE, nazývá *ladění* vzhledem k tomu, že je obvykle děláte za účelem vypátrání a opravení chyb v programu. I když je tento program malý a ve skutečnosti ještě nic neumí, jde stále o skutečný program. Můžete postupujte stejným způsobem ke spuštění a ladění ostatních programů. Další informace o ladění, naleznete v tématu [základy ladicího programu](../debugger/debugger-basics.md).  
+    > Spustíte-li program zevnitř rozhraní IDE, nazývá *ladění* vzhledem k tomu, že je obvykle děláte za účelem vypátrání a opravení chyb v programu. I když je tento program malý a ve skutečnosti ještě nic neumí, jde stále o skutečný program. Můžete postupujte stejným způsobem ke spuštění a ladění ostatních programů. Další informace o ladění, naleznete v tématu [základy ladicího programu](../debugger/debugger-basics.md).  
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   

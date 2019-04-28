@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420430"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementace barevného zvýrazňování syntaxe
 Když služba jazyka nabízí barevné zvýrazňování syntaxe, analyzátor převede řádek textu do pole položek, které lze zabarvit a vrátí odpovídající tyto které lze zabarvit položky pro typy tokenů. Analyzátor by měl vrátit typy tokenů, které patří do seznamu položek, které lze zabarvit. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] které lze zabarvit položky se zobrazí v okně kódu podle atributů přiřazených objektem colorizer odpovídající typ tokenu.
@@ -27,7 +27,7 @@ Když služba jazyka nabízí barevné zvýrazňování syntaxe, analyzátor př
  Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace o nový způsob implementace barevné zvýrazňování syntaxe, naleznete v tématu [názorný postup: Zvýraznění textu](../../extensibility/walkthrough-highlighting-text.md).
 
 > [!NOTE]
->  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.
+> Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Kroky, následuje editoru barevně zvýrazňovat Text
 
@@ -63,7 +63,7 @@ Když služba jazyka nabízí barevné zvýrazňování syntaxe, analyzátor př
  Rozhraní spravovaného balíčku (MPF) poskytuje všechny třídy, které jsou nutné k implementaci colorizer. Vaše třída jazyka služby by měla dědit <xref:Microsoft.VisualStudio.Package.LanguageService> třídy a implementuje požadované metody. Musíte zadat analyzátor a skener implementací <xref:Microsoft.VisualStudio.Package.IScanner> rozhraní a vracet instanci rozhraní z <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> – metoda (jedné z metod, které je třeba implementovat v <xref:Microsoft.VisualStudio.Package.LanguageService> třídy). Další informace najdete v tématu [barevné zvýrazňování syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
 ## <a name="see-also"></a>Viz také
-- [Postupy: Použití předdefinovaných položek které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Postupy: Použití předdefinovaných položek, které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Vlastní položky, které lze zabarvit](../../extensibility/internals/custom-colorable-items.md)
 - [Vývoj služby starší verze jazyka](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Barevné zvýrazňování syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

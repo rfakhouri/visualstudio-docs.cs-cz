@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e918eae56d35d134b9b7c3093d5f0599a12c5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 026ee7af3c60b3832449f5f2ed996f00c75a1c87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435384"
 ---
 # <a name="transition-activity-designer"></a>Návrhář aktivity Transition
 A <xref:System.Activities.Statements.Transition> představuje přechod mezi dvěma stavy.  
@@ -40,7 +40,7 @@ A <xref:System.Activities.Statements.Transition> představuje přechod mezi dvě
  Přechody se vytvoří, přetažením řádku z jednoho stavu do druhého nebo přetažením stavu na trojúhelníky, které se zobrazí, pokud státu přesune jiný stav. Přetažením vytvoříte přechod, najeďte myší na okraj stavu zdroje a přetáhněte čáru ze zdrojového na cílový stav. Vytvořit přechod pomocí přetažení, přetáhněte cílový stav najeďte myší stavu zdroje a umístěte ho na jednu ze čtyř trojúhelníků, které se zobrazí kolem stavu zdroje. Cílový stav může být buď nový stav přetáhnout z **nástrojů**, nebo stávající stav kvůli usnadnění použití vypsány v Návrháři pracovních postupů.  
   
 > [!NOTE]
->  Jeden stav stavového stroje. může mít až 76 přechody vytvořené pomocí návrháře postupu provádění. Omezení přechodů pro stav pro pracovní postupy vytvořené mimo návrháře je omezen pouze systémové prostředky.  
+> Jeden stav stavového stroje. může mít až 76 přechody vytvořené pomocí návrháře postupu provádění. Omezení přechodů pro stav pro pracovní postupy vytvořené mimo návrháře je omezen pouze systémové prostředky.  
   
  Sdílené spouštěcí události přechody jsou sadu přechody, které sdílejí stejnou aktivační událost. Sdílené spouštěcí události umožňuje podmíněný průběh na cílový stav. na základě vyhodnocení výrazů, které jsou nakonfigurované pro více přechodů, které sdílejí společné aktivační událost. Přidání další akce k přechodu a vytvořit sdílené přechod, klikněte na kruh, který označuje začátek požadované přechodu a přetáhněte ho do požadovaného stavu. Nový přechod budou sdílet stejnou spouštěcí událost jako počáteční přechodu, ale bude mít jedinečné podmínku a akce. Sdílené přechody lze také vytvořit z v rámci přechodu návrháře kliknutím **přidat sdílené triggeru, přechod** v dolní části návrháře přechod a pak vyberete požadovanou cílovou stavu z  **Dostupné stavy připojení** rozevíracího seznamu.  
   

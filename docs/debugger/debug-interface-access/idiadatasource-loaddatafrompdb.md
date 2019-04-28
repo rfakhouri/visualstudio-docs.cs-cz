@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fb34098f8d69d3c8618c406eff9666d52eace1f2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554141"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 Otevře a připraví soubor databáze (PDB) programu jako zdroj dat ladění.
@@ -38,7 +38,7 @@ pdbPath
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. V následující tabulce jsou uvedeny možné návratové hodnoty pro tuto metodu.
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|Nepovedlo se otevřít soubor, nebo určit, že soubor obsahuje neplatný formát.|
 |E_PDB_FORMAT|Došlo k pokusu o přístup k souboru se zastaralý formát.|

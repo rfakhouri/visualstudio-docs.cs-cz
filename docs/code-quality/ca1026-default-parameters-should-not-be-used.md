@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5dc7f7e62526050eeabdb91a557bbdf0fbcf6da
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779518"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Neměly by být použity výchozí parametry
 
@@ -30,7 +30,7 @@ ms.locfileid: "55957949"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Externě viditelný typ obsahuje externě viditelná metoda, která používá výchozí parametr.
 
 ## <a name="rule-description"></a>Popis pravidla

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417227"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Rozšíření vlastností, seznamu úkolů, výstupu a možnosti systému windows
 Jakékoli okno nástroje v sadě Visual Studio můžete přistupovat. Tento návod ukazuje, jak integrovat informace o vaší panelu nástrojů do nového **možnosti** stránky a nové nastavení na **vlastnosti** stránky a také způsob zápisu do **seznamu úkolů** a **výstup** systému windows.
@@ -33,7 +33,7 @@ Jakékoli okno nástroje v sadě Visual Studio můžete přistupovat. Tento náv
 1. Vytvoření projektu s názvem **TodoList** VSIX šablony a přidat šablonu vlastního nástroje okna položku s názvem **TodoWindow**.
 
     > [!NOTE]
-    >  Další informace o vytváření rozšíření pomocí panelu nástrojů najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Další informace o vytváření rozšíření pomocí panelu nástrojů najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="set-up-the-tool-window"></a>Vytvořit panel nástrojů
  Přidáte textové pole pro zadání nová položka ToDo, tlačítko Přidat novou položku do seznamu a seznam pro zobrazení položek v seznamu.
@@ -41,7 +41,7 @@ Jakékoli okno nástroje v sadě Visual Studio můžete přistupovat. Tento náv
 1. V *TodoWindow.xaml*, odstraňte z uživatelský ovládací prvek tlačítko, textového pole a StackPanel – ovládací prvky.
 
     > [!NOTE]
-    >  Tím nedojde k odstranění **button1_Click** obslužnou rutinu události, která bude znovu použít v pozdějším kroku.
+    > Tím nedojde k odstranění **button1_Click** obslužnou rutinu události, která bude znovu použít v pozdějším kroku.
 
 2. Z **všechny ovládací prvky WPF** část **nástrojů**, přetáhněte **plátna** ovládací prvek mřížky.
 

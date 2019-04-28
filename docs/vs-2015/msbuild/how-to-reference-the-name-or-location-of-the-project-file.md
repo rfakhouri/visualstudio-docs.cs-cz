@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e9493050e5deb2e25cf526d2464214399b10a7c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: eae8a32d4587b71f238c023d08a1328ce83ba37d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431394"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Postupy: Odkazy na název nebo umístění souboru projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Název nebo umístění projektu můžete použít v souboru projektu bez nutnos
   Výhodou použití rezervované vlastnosti je, že jsou automaticky součástí žádné změny k názvu souboru projektu. Při příštím sestavení projektu, výstupní soubor bude mít nový název se vyžadovat z vaší strany žádná další akce.  
   
 > [!NOTE]
->  Rezervované vlastnosti nelze předefinovat v souboru projektu.  
+> Rezervované vlastnosti nelze předefinovat v souboru projektu.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad souboru projektu odkazuje na název projektu jako vyhrazené vlastnosti a určit název pro výstup.  

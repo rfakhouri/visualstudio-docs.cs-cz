@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afe5ff877f83d9aae9b1da52b7836fb07afacf44
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581636"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Návod: Vytvoření prostředí pro sestavení s použitím více počítačů
 
@@ -264,7 +264,7 @@ V této tabulce jsou uvedeny podporované argumenty pro *vcvarsall.bat*:
 |x86_amd64|x64 Cross|x86, x64|x64|
 |amd64|x64 nativní|x64|x64|
 
-Pokud *vcvarsall.bat* proběhne úspěšně – tedy žádná chybová zpráva se zobrazí – můžete následující krok přeskočit a pokračovat na [sestavení nainstalovat nástroje MSBuild k globální mezipaměti sestavení (GAC) v počítači sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)část tohoto dokumentu.
+Pokud *vcvarsall.bat* proběhne úspěšně – tedy žádná chybová zpráva se zobrazí – můžete následující krok přeskočit a pokračovat na [sestavení nainstalovat nástroje MSBuild k globální mezipaměti sestavení (GAC) v počítači sestavení](#install-msbuild-to-gac)část tohoto dokumentu.
 
 ### <a name="manually-set-environment-variables"></a>Ruční nastavení proměnných prostředí
 
@@ -286,7 +286,7 @@ Pokud *vcvarsall.bat* proběhne úspěšně – tedy žádná chybová zpráva s
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>Instalace sestavení nástroje MSBuild k globální mezipaměti sestavení (GAC) v počítači sestavení
+## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Instalace sestavení nástroje MSBuild k globální mezipaměti sestavení (GAC) v počítači sestavení
 
 Nástroj MSBuild vyžaduje některých dalších sestavení nainstalovaná v GAC v počítači sestavení.
 

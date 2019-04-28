@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytváření místních nabídek pro záložky'
+title: 'Návod: Vytváření místních nabídek pro záložky'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 521347b2398f88252224f9002fbdd33d36945229
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438543"
 ---
-# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Průvodce: Vytváření místních nabídek pro záložky
+# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Návod: Vytváření místních nabídek pro záložky
   Tento návod ukazuje, jak vytvořit místní nabídky pro <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků v přizpůsobení úrovni dokumentu pro aplikaci Word. Když uživatel klepne pravým tlačítkem myši textu v záložce, místní nabídce se zobrazí a poskytuje možnosti uživatele pro formátování textu.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
@@ -42,25 +42,25 @@ ms.locfileid: "56599035"
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] Nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] Nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
 
-##  <a name="BKMK_CreateProject"></a> Vytvoření projektu
+## <a name="BKMK_CreateProject"></a> Vytvoření projektu
  Prvním krokem je vytvoření projektu dokumentu aplikace Word v sadě Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt
 
--   Vytvoření projektu dokumentu aplikace Word, který má název **Mé záložky nabídku**. V průvodci vyberte **vytvoříte nový textový dokument**. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+- Vytvoření projektu dokumentu aplikace Word, který má název **Mé záložky nabídku**. V průvodci vyberte **vytvoříte nový textový dokument**. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio otevře nový Wordový dokument v návrháři a přidá **Mé záložky nabídku** projektu **Průzkumníka řešení**.
 
-##  <a name="BKMK_addtextandbookmarks"></a> Přidání textu a záložky v dokumentu
+## <a name="BKMK_addtextandbookmarks"></a> Přidání textu a záložky v dokumentu
  Přidejte do dokumentu nějaký text a pak přidejte dvě překrývající se záložky.
 
 ### <a name="to-add-text-to-your-document"></a>Přidání textu do dokumentu
 
--   V dokumentu, který se zobrazí v Návrháři projektu zadejte následující text.
+- V dokumentu, který se zobrazí v Návrháři projektu zadejte následující text.
 
      **Toto je příklad vytvoření nabídku, když kliknete pravým tlačítkem na textu v záložce.**
 
@@ -79,35 +79,35 @@ ms.locfileid: "56599035"
     `bookmark2` je přidán do dokumentu.
 
    > [!NOTE]
-   >  Slova "klikněte pravým tlačítkem na text" jsou v obou `bookmark1` a `bookmark2`.
+   > Slova "klikněte pravým tlačítkem na text" jsou v obou `bookmark1` a `bookmark2`.
 
    Když přidáte záložku dokumentu v době návrhu <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek vytvořen. Můžete programovat proti několika událostem záložky. Můžete napsat kód <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> události záložky tak, že když uživatel klepne pravým tlačítkem myši textu v záložce, zobrazí místní nabídka.
 
-##  <a name="BKMK_AddCmndsShortMenu"></a> Přidání příkazů do místní nabídky
+## <a name="BKMK_AddCmndsShortMenu"></a> Přidání příkazů do místní nabídky
  Přidání tlačítek do místní nabídky, která se zobrazí, když kliknete pravým tlačítkem na dokument.
 
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>Přidání příkazů do místní nabídky
 
-1.  Přidat **kódu XML pásu karet** položky do projektu. Další informace najdete v tématu [jak: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md).
+1. Přidat **kódu XML pásu karet** položky do projektu. Další informace najdete v tématu [jak: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2.  V **Průzkumníka řešení**vyberte **ThisDocument.cs** nebo **ThisDocument.vb**.
+2. V **Průzkumníka řešení**vyberte **ThisDocument.cs** nebo **ThisDocument.vb**.
 
-3.  V panelu nabídky zvolte **zobrazení** > **kód**.
+3. V panelu nabídky zvolte **zobrazení** > **kód**.
 
      **ThisDocument** soubor třídy se otevře v editoru kódu.
 
-4.  Přidejte následující kód, který **ThisDocument** třídy. Tento kód přepíše metodu CreateRibbonExtensibilityObject a vrátí třídu kódu XML pásu karet do aplikace sady Office.
+4. Přidejte následující kód, který **ThisDocument** třídy. Tento kód přepíše metodu CreateRibbonExtensibilityObject a vrátí třídu kódu XML pásu karet do aplikace sady Office.
 
      [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
      [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
 
-5.  V **Průzkumníka řešení**, vyberte soubor XML pásu karet. Ve výchozím nastavení je Ribbon1.xml název souboru XML pásu karet.
+5. V **Průzkumníka řešení**, vyberte soubor XML pásu karet. Ve výchozím nastavení je Ribbon1.xml název souboru XML pásu karet.
 
-6.  V panelu nabídky zvolte **zobrazení** > **kód**.
+6. V panelu nabídky zvolte **zobrazení** > **kód**.
 
      Soubor xml pásu karet se otevře v editoru kódu.
 
-7.  V editoru kódu nahraďte obsah souboru XML pásu karet s následujícím kódem.
+7. V editoru kódu nahraďte obsah souboru XML pásu karet s následujícím kódem.
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -125,7 +125,7 @@ ms.locfileid: "56599035"
 
      Tento kód přidá dvě tlačítka do místní nabídky, která se zobrazí, když kliknete pravým tlačítkem na dokument.
 
-8.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na `ThisDocument`a potom klikněte na tlačítko **zobrazit kód**.
+8. V **Průzkumníka řešení**, klikněte pravým tlačítkem na `ThisDocument`a potom klikněte na tlačítko **zobrazit kód**.
 
 9. Deklarujte následující proměnné a proměnná záložku na úrovni třídy.
 
@@ -143,30 +143,30 @@ ms.locfileid: "56599035"
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]
 
-##  <a name="BKMK_formattextbkmk"></a> Formátování textu v záložce
+## <a name="BKMK_formattextbkmk"></a> Formátování textu v záložce
 
 ### <a name="to-format-the-text-in-the-bookmark"></a>K formátování textu v záložce
 
-1.  Soubor kódu pásu karet, přidejte `ButtonClick` obslužnou rutinu události pro formátování na záložku.
+1. Soubor kódu pásu karet, přidejte `ButtonClick` obslužnou rutinu události pro formátování na záložku.
 
      [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
      [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
 
-2.  **Průzkumník řešení**vyberte **ThisDocument.cs** nebo **ThisDocument.vb**.
+2. **Průzkumník řešení**vyberte **ThisDocument.cs** nebo **ThisDocument.vb**.
 
-3.  V panelu nabídky zvolte **zobrazení** > **kód**.
+3. V panelu nabídky zvolte **zobrazení** > **kód**.
 
      **ThisDocument** soubor třídy se otevře v editoru kódu.
 
-4.  Přidejte následující kód, který **ThisDocument** třídy.
+4. Přidejte následující kód, který **ThisDocument** třídy.
 
      [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]
      [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]
 
     > [!NOTE]
-    >  Musíte napsat kód pro zpracování případu, kdy záložky překrývat. Pokud tak neučiníte, ve výchozím nastavení, zavolá se kód pro všechny záložky ve výběru.
+    > Musíte napsat kód pro zpracování případu, kdy záložky překrývat. Pokud tak neučiníte, ve výchozím nastavení, zavolá se kód pro všechny záložky ve výběru.
 
-5.  V jazyce C#, je nutné přidat obslužné rutiny událostí pro ovládacích prvků záložek do <xref:Microsoft.Office.Tools.Word.Document.Startup> událostí. Informace o vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. V jazyce C#, je nutné přidat obslužné rutiny událostí pro ovládacích prvků záložek do <xref:Microsoft.Office.Tools.Word.Document.Startup> událostí. Informace o vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]
 
@@ -175,22 +175,22 @@ ms.locfileid: "56599035"
 
 ### <a name="to-test-your-document"></a>K otestování vašeho dokumentu
 
-1.  Stisknutím klávesy **F5** ke spuštění projektu.
+1. Stisknutím klávesy **F5** ke spuštění projektu.
 
-2.  Klikněte pravým tlačítkem v první záložce a potom klikněte na tlačítko **tučné**.
+2. Klikněte pravým tlačítkem v první záložce a potom klikněte na tlačítko **tučné**.
 
-3.  Ověřte, že veškerý text v `bookmark1` je formátován jako tučný.
+3. Ověřte, že veškerý text v `bookmark1` je formátován jako tučný.
 
-4.  Klikněte pravým tlačítkem na text, ve kterém záložky překrývají, a potom klikněte na tlačítko **Kurzíva**.
+4. Klikněte pravým tlačítkem na text, ve kterém záložky překrývají, a potom klikněte na tlačítko **Kurzíva**.
 
-5.  Ověřte, že veškerý text v `bookmark2` je kurzíva a pouze část textu v `bookmark1` , který se překrývá `bookmark2` kurzívy.
+5. Ověřte, že veškerý text v `bookmark2` je kurzíva a pouze část textu v `bookmark1` , který se překrývá `bookmark2` kurzívy.
 
 ## <a name="next-steps"></a>Další kroky
  Tady jsou některé úlohy, které by mohl pocházet Další:
 
--   Napsání kódu pro reakci na události hostitelské ovládací prvky v aplikaci Excel. Další informace najdete v tématu [názorný postup: Program ošetření událostí ovládacího prvku NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
+- Napsání kódu pro reakci na události hostitelské ovládací prvky v aplikaci Excel. Další informace najdete v tématu [názorný postup: Program ošetření událostí ovládacího prvku NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
--   Změna formátování na záložku pomocí zaškrtávacího políčka. Další informace najdete v tématu [názorný postup: Změna formátování dokumentů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Změna formátování na záložku pomocí zaškrtávacího políčka. Další informace najdete v tématu [názorný postup: Změna formátování dokumentů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
 ## <a name="see-also"></a>Viz také:
 - [Návody pro aplikaci Word](../vsto/walkthroughs-using-word.md)

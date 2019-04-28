@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: e41b7714ce5f9a98e50092c1507457b848201773
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419617"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Postupy: Vytvářet projekty pro Office v sadě Visual Studio
   Můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vytvoření doplňku VSTO a na úrovni dokumentu přizpůsobení pro aplikace Microsoft Office. Další informace o těchto typech projektů naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -44,7 +44,7 @@ ms.locfileid: "57868169"
     Zobrazí se dialogové okno **Nový projekt**.
 
    > [!NOTE]
-   >  Cílové projekty Office [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ve výchozím nastavení. Další informace najdete v tématu [profil klienta rozhraní .NET Framework](/dotnet/framework/deployment/client-profile).
+   > Cílové projekty Office [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ve výchozím nastavení. Další informace najdete v tématu [profil klienta rozhraní .NET Framework](/dotnet/framework/deployment/client-profile).
 
 2. V podokně šablon, pod uzlem jazyka, které chcete použít, rozbalte **Office/SharePoint**.
 
@@ -53,7 +53,7 @@ ms.locfileid: "57868169"
 4. V seznamu šablon projektu vyberte šablonu projektu doplňku VSTO. Seznam dostupných doplňku VSTO šablony projektů, naleznete v tématu [Přehled šablon projektů Office project](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Pokud šablony projektů nejsou zobrazeny po výběru **Office Add-ins** uzlu, ujistěte se, že **rozhraní .NET Framework 4** nebo novější je vybrané v poli se seznamem v horní části dialogového okna. Šablony projektů pro Office jsou zobrazeny pro obě verze rozhraní .NET Framework.
+   > Pokud šablony projektů nejsou zobrazeny po výběru **Office Add-ins** uzlu, ujistěte se, že **rozhraní .NET Framework 4** nebo novější je vybrané v poli se seznamem v horní části dialogového okna. Šablony projektů pro Office jsou zobrazeny pro obě verze rozhraní .NET Framework.
 
 5. V **název** zadejte název projektu. Ve výchozím nastavení název projektu slouží také jako název řešení.
 
@@ -147,7 +147,7 @@ ms.locfileid: "57868169"
    - Znak procenta (%)
 
    > [!NOTE]
-   >  Při použití existujícího dokumentu v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] projektu, použijte pouze dokumenty, které byly vytvořeny v nebo převést na [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Podobně pokud používáte existující dokument aplikace Word 2010 projektu, použijte pouze dokumenty, které byly vytvořeny v nebo převést na aplikaci Word 2010. Některé funkce budou zakázány v dokumentu, při použití dokumentu, který byl vytvořen v dřívější verzi aplikace Word. Pokud se pokusíte napsat kód, který používá tyto funkce, mohou se vyskytnout chyby ve vašem projektu. Chcete-li převést dokument, otevřete ho v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo Word 2010 na **souboru** kartu na pásu karet, zvolte **informace** > **převést**.
+   > Při použití existujícího dokumentu v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] projektu, použijte pouze dokumenty, které byly vytvořeny v nebo převést na [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Podobně pokud používáte existující dokument aplikace Word 2010 projektu, použijte pouze dokumenty, které byly vytvořeny v nebo převést na aplikaci Word 2010. Některé funkce budou zakázány v dokumentu, při použití dokumentu, který byl vytvořen v dřívější verzi aplikace Word. Pokud se pokusíte napsat kód, který používá tyto funkce, mohou se vyskytnout chyby ve vašem projektu. Chcete-li převést dokument, otevřete ho v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo Word 2010 na **souboru** kartu na pásu karet, zvolte **informace** > **převést**.
 
 8. Zvolte **Dokončit**.
 

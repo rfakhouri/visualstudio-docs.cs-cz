@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5afe96af1baa615e5000a6c1a19b543f3c89c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a5e65c086b69a712b2df5a1a12939b41828ad198
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445340"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Postupy: Povolit kód ke spuštění pozadí dokumentů s omezenými oprávněními
   Funkci Správa informačních práv (IRM) systému Microsoft Office můžete použít k omezení oprávnění k dokumentu nebo sešitu. Ve výchozím nastavení nemá oprávnění spustit kódu s omezeným přístupem dokument aplikace Microsoft Office Word nebo sešit aplikace Microsoft Office Excel. Výchozí nastavení můžete změnit tak, aby vaše rozšíření spravovaného kódu můžete přístup k objektu modelu, a vaše řešení bude fungovat.
@@ -38,7 +38,7 @@ ms.locfileid: "56637656"
 2. Klikněte na tlačítko **souboru** kartu, přejděte na **připravit**, přejděte na **omezit oprávnění**a potom klikněte na tlačítko **omezený přístup**.
 
    > [!NOTE]
-   >  Při prvním použití zobrazí výzva k instalaci klienta Windows Rights Management. Po instalaci klienta, můžete potřebovat zopakujte kroky.
+   > Při prvním použití zobrazí výzva k instalaci klienta Windows Rights Management. Po instalaci klienta, můžete potřebovat zopakujte kroky.
 
 3. V **oprávnění** dialogu **omezit oprávnění k tomuto dokumentu**a potom klikněte na tlačítko **další možnosti**.
 

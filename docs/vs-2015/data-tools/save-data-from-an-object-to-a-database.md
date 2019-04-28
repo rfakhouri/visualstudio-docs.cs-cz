@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c079d3f85dbab87e30edb059c76202dd727f715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425052"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Uložení dat z objektu do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Předáním hodnoty z objektu do jednoho objektu TableAdapter dbdirect – metod
  Ve výchozím nastavení vytvářejí dbdirect – metody na objektu typu TableAdapter, který můžete spustit přímo proti databázi. Tyto metody lze volat přímo a nevyžadují <xref:System.Data.DataSet> nebo <xref:System.Data.DataTable> objekty sloučit změny k odeslání aktualizací do databáze.  
   
 > [!NOTE]
->  Když konfigurujete TableAdapter, hlavního dotazu musí poskytnout dostatek informací pro dbdirect – metody, který se má vytvořit. Například pokud objektu TableAdapter je konfigurován pro dotazování na data z tabulky, která nemá sloupec primárního klíče definované, se nevygeneruje žádný dbdirect – metody.  
+> Když konfigurujete TableAdapter, hlavního dotazu musí poskytnout dostatek informací pro dbdirect – metody, který se má vytvořit. Například pokud objektu TableAdapter je konfigurován pro dotazování na data z tabulky, která nemá sloupec primárního klíče definované, se nevygeneruje žádný dbdirect – metody.  
   
 |TableAdapter dbdirect – metody|Popis|  
 |----------------------------------|-----------------|  
@@ -57,7 +57,7 @@ Předáním hodnoty z objektu do jednoho objektu TableAdapter dbdirect – metod
 - Upravit záznamy voláním `TableAdapter.Update` metody předáním v nových hodnotách aktualizovat záznam a předáním v původní hodnoty, které mají vyhledejte záznam.  
   
     > [!NOTE]
-    >  Objekt je potřeba udržovat původní hodnoty. Chcete-li předat jim `Update` metody. Tento příklad používá vlastnosti `orig` předpona, která uložit původní hodnoty.  
+    > Objekt je potřeba udržovat původní hodnoty. Chcete-li předat jim `Update` metody. Tento příklad používá vlastnosti `orig` předpona, která uložit původní hodnoty.  
   
      Následující příklad aktualizuje existující záznam v `Customers` předáním nových a původních hodnot v tabulce `Customer` objektu `TableAdapter.Update` metoda.  
   
@@ -69,7 +69,7 @@ Předáním hodnoty z objektu do jednoho objektu TableAdapter dbdirect – metod
 - Odstranit záznamy voláním `TableAdapter.Delete` metoda a předáním původní hodnoty, které mají vyhledejte záznam.  
   
     > [!NOTE]
-    >  Objekt je potřeba udržovat původní hodnoty. Chcete-li předat jim `Delete` metody. Tento příklad používá vlastnosti `orig` předpona, která uložit původní hodnoty.  
+    > Objekt je potřeba udržovat původní hodnoty. Chcete-li předat jim `Delete` metody. Tento příklad používá vlastnosti `orig` předpona, která uložit původní hodnoty.  
   
      Následující příklad odstraní záznam z `Customers` předáním původní hodnoty v tabulce `Customer` objektu `TableAdapter.Delete` metoda.  
   

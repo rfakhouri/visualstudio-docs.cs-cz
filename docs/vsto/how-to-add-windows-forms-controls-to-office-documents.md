@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 849bffa36050970e164083f7bb90353f18cff01a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9241cb34ca380b2efe0b3c2ceb7f5d11376bef2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427492"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Postupy: Přidání ovládacích prvků Windows Forms do dokumentů Office
   Můžete přidat ovládací prvky Windows Forms pro Microsoft Office Excelu nebo dokumentů Microsoft Office Word v době návrhu v projektech na úrovni dokumentu. Za běhu můžete přidat ovládací prvky v přizpůsobeních na úrovni dokumentu a doplňky VSTO. Například můžete přidat <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> ovládací prvek do listu aplikace tak, aby uživatelé můžou vybrat ze seznamu možností.
@@ -49,7 +49,7 @@ ms.locfileid: "60047108"
 2. V **běžné ovládací prvky** karty **nástrojů**, klepněte na ovládací prvek, který chcete přidat a přetáhněte ji do dokumentu.
 
     > [!NOTE]
-    >  Když vyberete ovládací prvek v aplikaci Excel, zobrazí se **=EMBED("WinForms.Control.Host","")** v **řádek vzorců**. Tento text je nutné a by neměl být odstraněn.
+    > Když vyberete ovládací prvek v aplikaci Excel, zobrazí se **=EMBED("WinForms.Control.Host","")** v **řádek vzorců**. Tento text je nutné a by neměl být odstraněn.
 
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>Chcete-li nakreslit ovládacího prvku Windows Forms v dokumentu
 
@@ -62,7 +62,7 @@ ms.locfileid: "60047108"
      Ovládací prvek se přidá do dokumentu na zadaném umístění a velikost.
 
     > [!NOTE]
-    >  Když vyberete ovládací prvek v aplikaci Excel, zobrazí se **=EMBED("WinForms.Control.Host","")** v **řádek vzorců**. Tento text je nutné a by neměl být odstraněn.
+    > Když vyberete ovládací prvek v aplikaci Excel, zobrazí se **=EMBED("WinForms.Control.Host","")** v **řádek vzorců**. Tento text je nutné a by neměl být odstraněn.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>Do dokumentu přidat ovládací prvek Windows Forms s jedním klepnutím na ovládací prvek
 
@@ -75,7 +75,7 @@ ms.locfileid: "60047108"
      Ovládací prvek je přidán do dokumentu s výchozí velikostí.
 
     > [!NOTE]
-    >  Když vyberete ovládací prvek v aplikaci Excel, zobrazí se **=EMBED("WinForms.Control.Host","")** v **řádek vzorců**. Tento text je nutné a by neměl být odstraněn.
+    > Když vyberete ovládací prvek v aplikaci Excel, zobrazí se **=EMBED("WinForms.Control.Host","")** v **řádek vzorců**. Tento text je nutné a by neměl být odstraněn.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>Přidání ovládacího prvku Windows Forms do dokumentů poklepáním na ovládací prvek
 
@@ -86,7 +86,7 @@ ms.locfileid: "60047108"
      Ovládací prvek je přidán do dokumentu v centru dokumentu nebo aktivního podokna.
 
     > [!NOTE]
-    >  Když vyberete ovládací prvek v aplikaci Excel, zobrazí se **=EMBED("WinForms.Control.Host","")** v **řádek vzorců**. Tento text je nutné a by neměl být odstraněn.
+    > Když vyberete ovládací prvek v aplikaci Excel, zobrazí se **=EMBED("WinForms.Control.Host","")** v **řádek vzorců**. Tento text je nutné a by neměl být odstraněn.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>Přidání ovládacího prvku Windows Forms do dokumentů stisknutím klávesy Enter
 
@@ -97,7 +97,7 @@ ms.locfileid: "60047108"
      Ovládací prvek je přidán do dokumentu v centru dokumentu nebo aktivního podokna.
 
     > [!NOTE]
-    >  Když vyberete ovládací prvek v aplikaci Excel, zobrazí se **=EMBED("WinForms.Control.Host","")** v **řádek vzorců**. Tento text je nutné a by neměl být odstraněn.
+    > Když vyberete ovládací prvek v aplikaci Excel, zobrazí se **=EMBED("WinForms.Control.Host","")** v **řádek vzorců**. Tento text je nutné a by neměl být odstraněn.
 
 ## <a name="runtimedoclevel"></a> Přidání ovládacích prvků za běhu v projektech na úrovni dokumentu
  Můžete programově přidat ovládací prvky Windows Forms do dokumentu za běhu. V aplikaci Word, použijte metody <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> vlastnost `ThisDocument` třídy. V aplikaci Excel, použití metod pro posunutí <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> vlastnost `Sheet` *n* třídy. Každá metoda má několik přetížení, která vám umožní určit umístění ovládacího prvku různými způsoby.
@@ -125,7 +125,7 @@ ms.locfileid: "60047108"
 1. Použijte metodu, která má název přidat\<*třídu ovládacího prvku*> (kde *třídu ovládacího prvku* je název třídy ovládacího prvku Windows Forms, který chcete přidat, jako například <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>).
 
     > [!NOTE]
-    >  V doplňku VSTO projekty, které cílí [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, je třeba přidat odkaz na *Microsoft.Office.Tools.Excel.v4.0.Utilities.dll* nebo *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* sestavení, abyste mohli přidat\<*třídu ovládacího prvku*> metody.
+    > V doplňku VSTO projekty, které cílí [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, je třeba přidat odkaz na *Microsoft.Office.Tools.Excel.v4.0.Utilities.dll* nebo *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* sestavení, abyste mohli přidat\<*třídu ovládacího prvku*> metody.
 
      Následující příklad kódu ukazuje, jak přidat <xref:Microsoft.Office.Tools.Word.Controls.Button> do prvního odstavce aktivního dokumentu pomocí doplňku VSTO pro Word.
 

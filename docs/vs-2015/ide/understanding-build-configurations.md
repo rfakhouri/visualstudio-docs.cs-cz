@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87e0280534eaf97fefebe54712b0f0b12e14bdac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 684bf375568b83333ac5e4c9f88eeae00449cd42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443253"
 ---
 # <a name="understanding-build-configurations"></a>Principy konfigurací sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60077274"
 Můžete ukládat různé konfigurace vlastností řešení a projektu pro použití v různé druhy sestavení. Chcete-li vytvořit, vyberte, upravit nebo odstranit konfiguraci, můžete použít **nástroje Configuration Manager**. Pokud chcete soubor otevřít, v řádku nabídek, zvolte **sestavení**, **nástroje Configuration Manager**, nebo zadejte **konfigurace** v **Snadné spuštění** pole. Můžete také použít **konfigurace řešení** seznamu **standardní** panelu nástrojů vyberte konfiguraci nebo otevřít **nástroje Configuration Manager**.  
   
 > [!NOTE]
->  Pokud nemůže najít řešení, konfigurace nastavení na panelu nástrojů a nemůžou přistupovat **nástroje Configuration Manager**, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] můžou vztahovat. vývojové nastavení. Další informace najdete v tématu [jak: Správa konfigurací s použitými nastaveními vývojáře jazyka Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
+> Pokud nemůže najít řešení, konfigurace nastavení na panelu nástrojů a nemůžou přistupovat **nástroje Configuration Manager**, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] můžou vztahovat. vývojové nastavení. Další informace najdete v tématu [jak: Správa konfigurací s použitými nastaveními vývojáře jazyka Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
   
  Ve výchozím nastavení, ladění a konfiguraci vydání jsou zahrnuté v projektech, které jsou vytvářeny instalační sadou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony. Konfigurace ladění podporuje ladění aplikace a konfiguraci vydané verze sestavení na verzi aplikace, který je možné nasadit. Další informace najdete v tématu [jak: Konfigurace nastavení ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md). Můžete také vytvořit vlastní řešení konfigurace a konfigurace projektu. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).  
   
@@ -49,9 +49,9 @@ Můžete ukládat různé konfigurace vlastností řešení a projektu pro použ
  Každá položka **projektu kontexty** pole v konfiguraci řešení představuje projekt v řešení. Pro každou kombinaci **konfigurace aktivního řešení** a **platformou aktivního řešení**, můžete nastavit, jak každý projekt používá. (Další informace o platformy řešení najdete v tématu [Principy platforem sestavení](../ide/understanding-build-platforms.md).)  
   
 > [!NOTE]
->  Při definování nové konfigurace řešení a vyberte **vytvořit nové konfigurace projektu** zaškrtávací políčko [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky přiřadí novou konfiguraci pro všechny projekty. Podobně když definovat nová platforma řešení a vyberete **vytvořit nové platformy projektu** zaškrtávací políčko [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky přiřadí novou platformu pro všechny projekty. Také pokud chcete přidat projekt, který cílí na novou platformu, Visual Studio přidá tuto platformu na seznam platformy řešení a přiřadí ji do všech projektů.  
+> Při definování nové konfigurace řešení a vyberte **vytvořit nové konfigurace projektu** zaškrtávací políčko [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky přiřadí novou konfiguraci pro všechny projekty. Podobně když definovat nová platforma řešení a vyberete **vytvořit nové platformy projektu** zaškrtávací políčko [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky přiřadí novou platformu pro všechny projekty. Také pokud chcete přidat projekt, který cílí na novou platformu, Visual Studio přidá tuto platformu na seznam platformy řešení a přiřadí ji do všech projektů.  
 >   
->  Pořád můžete upravit nastavení pro každý projekt.  
+> Pořád můžete upravit nastavení pro každý projekt.  
   
  Konfigurace aktivního řešení také poskytuje kontext do rozhraní IDE. Například pokud pracujete na projektu a konfigurace určuje, že dojde k jeho sestavení pro mobilní zařízení, **nástrojů** zobrazí pouze položky, které lze použít v projektu mobilních zařízení.  
   

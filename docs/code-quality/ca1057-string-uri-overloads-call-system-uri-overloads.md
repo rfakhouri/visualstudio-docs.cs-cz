@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: cd22a228f0963e2bdc87df284402d119a0353c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788634"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Přetížení řetězce identifikátoru URI volají přetížení System.Uri
 
@@ -34,7 +34,7 @@ ms.locfileid: "55922516"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Typ deklaruje přetížení metod, které se liší pouze nahrazením řetězcového parametru s <xref:System.Uri?displayProperty=fullName> parametr a přetížení přijímající řetězcový parametr nevolá přetížení přebírající <xref:System.Uri> parametru.
 

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4916f51c3044bbd0a6cb8f8dd283c741a216c015
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7afdf40c660a7433c51d2fa1130ef5f2cca616bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437842"
 ---
 # <a name="mt-task"></a>MT – úloha
 Zabalí nástroj Microsoft manifestu *mt.exe*. Další informace najdete v tématu [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).
@@ -38,7 +38,7 @@ Zabalí nástroj Microsoft manifestu *mt.exe*. Další informace najdete v téma
  Následující tabulka popisuje parametry **MT** úloh. Většinu úkolů parametrů a několik sad parametrů, odpovídají možnost příkazového řádku.
 
 > [!NOTE]
->  *Mt.exe* dokumentace používá pomlčkou (**-**) jako předponu pro možnosti příkazového řádku, ale toto téma používá lomítko (**/**). Buď předpona je přijatelné.
+> *Mt.exe* dokumentace používá pomlčkou (**-**) jako předponu pro možnosti příkazového řádku, ale toto téma používá lomítko (**/**). Buď předpona je přijatelné.
 
 |Parametr|Popis|
 |---------------|-----------------|

@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 920b15d1cd4f7ed0ec11614a50f5dd32e050995a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432399"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Přidání ověření vlastní architektury do diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
  Když uživatel vybere **ověřit architekturu** příkaz na diagramu vrstvy, je vyvolána metoda standardního ověření, následovaný všemi rozšířeními ověření, které byly nainstalovány.  
   
 > [!NOTE]
->  Ověření v diagramu vrstvy není stejné jako ověření v diagramech UML. V diagramu vrstev je hlavním účelem porovnat diagram pomocí programového kódu v dalších částech tohoto řešení.  
+> Ověření v diagramu vrstvy není stejné jako ověření v diagramech UML. V diagramu vrstev je hlavním účelem porovnat diagram pomocí programového kódu v dalších částech tohoto řešení.  
   
  Rozšíření ověření vrstvy můžete zabalit do Visual Studio integrace rozšíření (VSIX), které můžete distribuovat ostatním uživatelům aplikace Visual Studio. V rozšíření VSIX můžete umístit svůj validátor buď samostatně, nebo ho můžete zkombinovat ve stejném souboru VSIX jako další rozšíření. Měli byste psát kód validátoru ve svém vlastním projektu sady Visual Studio, není ve stejném projektu jako další rozšíření.  
   
 > [!WARNING]
->  Po vytvoření projektu ověření zkopírujte [ukázkový kód](#example) na konci tohoto tématu a upravte, vlastních potřeb.  
+> Po vytvoření projektu ověření zkopírujte [ukázkový kód](#example) na konci tohoto tématu a upravte, vlastních potřeb.  
   
 ## <a name="requirements"></a>Požadavky  
  Zobrazit [požadavky](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -48,7 +48,7 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
     Šablona vytvoří projekt, který obsahuje malý příklad.  
   
    > [!WARNING]
-   >  Do šablony makethe fungovat správně:  
+   > Do šablony makethe fungovat správně:  
    > 
    > - Upravte volání `LogValidationError` odebrat volitelné argumenty `errorSourceNodes` a `errorTargetNodes`.  
    >   - Pokud používáte vlastní vlastnosti, použijte aktualizace uvedené v [přidání vlastních vlastností do diagramů vrstev](../modeling/add-custom-properties-to-layer-diagrams.md).  
@@ -58,7 +58,7 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
 4. Chcete-li otestovat rozšíření, naleznete v tématu [ladění ověřování vrstev](#debugging).  
   
    > [!NOTE]
-   >  Vaše metoda bude volána pouze za zvláštních okolností a zarážky nebudou fungovat automaticky. Další informace najdete v tématu [ladění ověřování vrstev](#debugging).  
+   > Vaše metoda bude volána pouze za zvláštních okolností a zarážky nebudou fungovat automaticky. Další informace najdete v tématu [ladění ověřování vrstev](#debugging).  
   
 5. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve *bin\\*. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   
@@ -115,7 +115,7 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
 7. Chcete-li otestovat rozšíření, naleznete v tématu [ladění ověřování vrstev](#debugging).  
   
     > [!NOTE]
-    >  Vaše metoda bude volána pouze za zvláštních okolností a zarážky nebudou fungovat automaticky. Další informace najdete v tématu [ladění ověřování vrstev](#debugging).  
+    > Vaše metoda bude volána pouze za zvláštních okolností a zarážky nebudou fungovat automaticky. Další informace najdete v tématu [ladění ověřování vrstev](#debugging).  
   
 8. Chcete-li nainstalovat VSIX v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve **bin** adresáře projektu VSIX. Zkopírujte ho do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku Windows. (Průzkumník souborů v systému Windows 8.)  
   
@@ -147,7 +147,7 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
 - Pokud zjistíte chybu, můžete ji ohlásit pomocí `LogValidationError()`.  
   
   > [!WARNING]
-  >  Nepoužívejte volitelné parametry `LogValidationError`.  
+  > Nepoužívejte volitelné parametry `LogValidationError`.  
   
   Pokud uživatel vyvolá **ověřit architekturu** příkaz nabídky, systém modulu runtime vrstvy zanalyzuje vrstvy a jejich artefakty k vytvoření grafu. Graf má čtyři části:  
   
@@ -162,7 +162,7 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
   Pokud byl vytvořen graf, je volána metoda standardního ověření. Po jejím dokončení, všechny metody nainstalovaných rozšíření ověřování jsou zavolány v nespecifikovaném pořadí. Graf je předán pro každou `ValidateArchitecture` metodu, která může prohledávat graf a podávat zprávy o chybách, které nalezne.  
   
 > [!NOTE]
->  Toto není stejný jako proces ověření, který je použit pro diagramy UML a není stejný jako proces ověření, který lze použít v jazycích specifické pro doménu.  
+> Toto není stejný jako proces ověření, který je použit pro diagramy UML a není stejný jako proces ověření, který lze použít v jazycích specifické pro doménu.  
   
  Metody ověřování by neměly měnit model vrstvy nebo kód, který se ověřuje.  
   

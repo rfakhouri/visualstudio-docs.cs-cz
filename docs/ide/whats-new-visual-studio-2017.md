@@ -19,11 +19,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583353"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novinky v sadě Visual Studio 2017
 

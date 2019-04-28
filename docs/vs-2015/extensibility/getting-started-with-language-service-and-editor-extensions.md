@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4695e5f866ce9161ca9f90a0f39be441f5d71a44
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421129"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Začínáme s rozšířeními pro služby jazyka a editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
  Chcete-li začít psát rozšíření editoru, použijte editor šablony projektů, které se instalují jako součást sady Visual Studio SDK. Visual Studio SDK je ke stažení sady nástrojů, které usnadňují vývoj rozšíření sady Visual Studio pomocí rozšíření VSPackages nebo pomocí Managed Extensibility Framework (MEF).  
   
 > [!NOTE]
->  Další informace o sadě Visual Studio SDK naleznete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Další informace o sadě Visual Studio SDK naleznete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
  Doporučujeme, abyste před Tvorba vlastních rozšíření editoru informace o následujících konceptům a technologiím.  
   
@@ -36,7 +36,7 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
  Editor sady Visual Studio Managed Extensibility Framework (MEF) používá ke správě jeho součástmi a rozšíření. Rozhraní MEF také umožňuje další vývojářům snadno vytvářet rozšíření pro hostitelskou aplikaci, jako je Visual Studio. V tomto rámci definování rozšíření podle smlouvy MEF a exportujte ho jako součást MEF. Hostitelská aplikace spravuje dílů tím, že je, je registrace a ujistěte se, že se použijí pro správný kontext.  
   
 > [!NOTE]
->  Další informace o rozhraní MEF v editoru, najdete v části [Managed Extensibility Framework v Editor](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+> Další informace o rozhraní MEF v editoru, najdete v části [Managed Extensibility Framework v Editor](../extensibility/managed-extensibility-framework-in-the-editor.md).  
   
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Rozšiřovací body Editor sady Visual Studio a rozšíření  
  Editor Rozšiřovací body jsou součásti MEF, které můžete přizpůsobit a rozšířit. V některých případech můžete rozšířit rozšiřovací bod implementace rozhraní a export spolu s správných metadat. V ostatních případech stačí deklarovat rozšíření a exportujte ho jako konkrétního typu.  
@@ -61,7 +61,7 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
  Při instalaci rozšíření na počítači zahrnout binární soubory a manifest v podsložce složky, který znáte Visual Studio.  
   
 > [!WARNING]
->  Není nutné se starat o podrobnosti manifestů a umístění nasazení, pokud používáte některou ze šablon rozšíření editoru, které jsou zahrnuty v sadě Visual Studio. Šablony obsahují vše potřebné k registraci a nasadit rozšíření.  
+> Není nutné se starat o podrobnosti manifestů a umístění nasazení, pokud používáte některou ze šablon rozšíření editoru, které jsou zahrnuty v sadě Visual Studio. Šablony obsahují vše potřebné k registraci a nasadit rozšíření.  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>Spuštění rozšíření v experimentální instanci  
  Vaše pracovní verze sady Visual Studio můžete izolovat, zatímco vyvíjíte rozšíření nasazením v následující složce experimentální (ve Windows Vista a Windows 7):  
@@ -86,7 +86,7 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
   
 - [Návod: Použití příkazů prostředí s rozšířením editoru](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
-- [Návod: Pomocí klávesové zkratky s rozšířením editoru](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [Návod: Použití klávesové zkratky s rozšířením editoru](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Rozšiřovací body služeb jazyka a editoru](../extensibility/language-service-and-editor-extension-points.md)

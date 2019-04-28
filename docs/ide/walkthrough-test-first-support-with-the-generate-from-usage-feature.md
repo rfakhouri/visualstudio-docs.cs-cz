@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2084b2768a4b93b6174dfdb637b91d69a2072902
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432039"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Návod: Vývoj včasného testování s funkcí generování před využitím
 
@@ -65,7 +65,7 @@ Toto téma popisuje způsob použití [Generovat z využití](../ide/visual-csha
 2. Vyhledejte prohlášení pro třídu `UnitTest1` a přejmenujte ho na `AutomobileTest`.
 
    > [!NOTE]
-   >  Technologie IntelliSense teď poskytuje dvě možnosti pro doplňování příkazů IntelliSense: *doplňovacím režimem* a *režim návrhu*. Použijte režim návrhu pro situace, ve kterých se používají třídy a členy, než jsou definovány. Když **IntelliSense** je otevřeno okno, můžete stisknout **Ctrl**+**Alt**+**místo** přepínat mezi doplňovacím režimem a režimem návrhu. Zobrazit [použití IntelliSense](../ide/using-intellisense.md) Další informace. Režim návrhu vám pomůže při psaní `Automobile` v dalším kroku.
+   > Technologie IntelliSense teď poskytuje dvě možnosti pro doplňování příkazů IntelliSense: *doplňovacím režimem* a *režim návrhu*. Použijte režim návrhu pro situace, ve kterých se používají třídy a členy, než jsou definovány. Když **IntelliSense** je otevřeno okno, můžete stisknout **Ctrl**+**Alt**+**místo** přepínat mezi doplňovacím režimem a režimem návrhu. Zobrazit [použití IntelliSense](../ide/using-intellisense.md) Další informace. Režim návrhu vám pomůže při psaní `Automobile` v dalším kroku.
 
 3. Vyhledejte `TestMethod1()` metoda a přejmenujte ho na `DefaultAutomobileIsInitializedCorrectly()`. V této metodě vytvoření nové instance třídy s názvem `Automobile`, jak je znázorněno na následujících snímcích obrazovky. Zobrazí se podtržení vlnovkou, což znamená chybu kompilace a [rychlé akce](../ide/quick-actions.md) chyba se zobrazí žárovka do levého okraje, nebo přímo pod piktogram Pokud myší.
 

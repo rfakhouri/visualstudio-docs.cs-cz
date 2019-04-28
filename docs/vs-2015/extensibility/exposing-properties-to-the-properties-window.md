@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432128"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Vystavení vlastností v okně Vlastnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +177,7 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
 10. Zaškrtněte políčko **MyToolWindow** okna. **IsChecked** v **vlastnosti** okno se změní na **True**. Zrušte zaškrtnutí políčka v **MyToolWindow** okna. **IsChecked** v **vlastnosti** okno se změní na **False**. Změňte hodnotu vlastnosti **IsChecked** v **vlastnosti** okna. Zaškrtněte políčko v **MyToolWindow** okna změny tak, aby odpovídala nové hodnoty.  
   
     > [!NOTE]
-    >  Pokud musíte uvolnění objektu, který se zobrazí v **vlastnosti** okna, volání `OnSelectChange` s `null` zásobník pro výběr první. Po uvolnění vlastnost nebo objekt, můžete změnit na zásobník pro výběr, která se aktualizovala <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> a <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> seznamy.  
+    > Pokud musíte uvolnění objektu, který se zobrazí v **vlastnosti** okna, volání `OnSelectChange` s `null` zásobník pro výběr první. Po uvolnění vlastnost nebo objekt, můžete změnit na zásobník pro výběr, která se aktualizovala <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> a <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> seznamy.  
   
 ## <a name="changing-selection-lists"></a>Změna seznamů výběru  
  V této části můžete přidat seznam výběru pro vlastnost základní třídy a používat rozhraní okna nástroje rozhodnout, které seznamu výběru zobrazit.  
@@ -261,7 +261,7 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
 6. Zaškrtněte políčko v **MyToolWindow** okna. **Vlastnosti** v okně se zobrazí `Simple` vlastnosti, objektu **SomeText** a **jen pro čtení**. Zrušte zaškrtnutí políčka. Veřejné vlastnosti v okně se zobrazí v **vlastnosti** okna.  
   
     > [!NOTE]
-    >  Zobrazovaný název **SomeText** je **tento Text**.  
+    > Zobrazovaný název **SomeText** je **tento Text**.  
   
 ## <a name="best-practice"></a>Osvědčený postup  
  V tomto názorném postupu <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> je implementováno tak, že kolekce volitelných objektu a kolekce vybraných objektů jsou stejné kolekce. V prohlížeči vlastností seznamu se zobrazí pouze vybraný objekt. Úplnější ISelectionContainer implementaci najdete v ukázkách Reference.ToolWindow.  

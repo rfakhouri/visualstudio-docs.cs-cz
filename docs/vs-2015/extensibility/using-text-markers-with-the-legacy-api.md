@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430119"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Text značky pomocí starší verze rozhraní API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,16 +25,16 @@ Text značky je plovoucí rozsah textu ve vyrovnávací paměti, může mít vli
  Kvůli výkonu režii spojenou s text značky nevytvářejte mnoho značek pro vaše vyrovnávací paměti textu. Každá značka se aktualizuje pokaždé, když se, že uživatel upraví obsah vyrovnávací paměti.  
   
 > [!NOTE]
->  Uživatelé mohou změnit barvu typ viditelný značky, ale ne jeho tvar a styl. Další informace najdete v tématu [písma a barvy, prostředí, dialogové okno Možnosti](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+> Uživatelé mohou změnit barvu typ viditelný značky, ale ne jeho tvar a styl. Další informace najdete v tématu [písma a barvy, prostředí, dialogové okno Možnosti](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
 ## <a name="related-topics"></a>Související témata  
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md)|Popisuje postup přidání standardní text značky typ poskytovaný modulem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor k zobrazení textu.|  
-|[Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md)|Popisuje, jak implementovat instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] značky, který se používá k označení chyby pomocí červené podtržení vlnovkou.|  
-|[Postupy: Vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)|Popisuje, jak vytvořit a přidat typ značky vlastní text k zobrazení textu.|  
-|[Postupy: Použití značek Text](../extensibility/how-to-use-text-markers.md)|Vysvětluje, jak přidat text značky.|  
+|[Postupy: Přidání standardních textových značek](../extensibility/how-to-add-standard-text-markers.md)|Popisuje postup přidání standardní text značky typ poskytovaný modulem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor k zobrazení textu.|  
+|[Postupy: Implementace chybových značek](../extensibility/how-to-implement-error-markers.md)|Popisuje, jak implementovat instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] značky, který se používá k označení chyby pomocí červené podtržení vlnovkou.|  
+|[Postupy: Vytvoření vlastních textových značek](../extensibility/how-to-create-custom-text-markers.md)|Popisuje, jak vytvořit a přidat typ značky vlastní text k zobrazení textu.|  
+|[Postupy: Použití textových značek](../extensibility/how-to-use-text-markers.md)|Vysvětluje, jak přidat text značky.|  
 |[Práce v základní editoru](../extensibility/inside-the-core-editor.md)|Popisuje funkce základní editor a poskytuje podrobné informace o tom, jak přizpůsobit základní editor.|  
 |[Funkce editoru](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Popisuje funkce dostupné v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor.|  
   

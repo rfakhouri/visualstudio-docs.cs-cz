@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17abd78c193eb103597aa94f048bd715434e27a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bf656ed94b232e2ce19986696f4155dc225c8ad0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433639"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Dialogové okno Možnosti (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "59649651"
 **Možnosti** dialogové okno umožňuje konfigurovat integrované vývojové prostředí (IDE) podle vašich potřeb. Můžete například vytvořit výchozí umístění pro uložení pro vaše projekty, změnit výchozí vzhled a chování systému windows a vytvoření zkratky pro často používané příkazy. Existují také možnosti specifické pro vývojový jazyk a platformu. Můžete přistupovat **možnosti** z **nástroje** nabídky.
 
 > [!NOTE]
->  Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="layout-of-the-options-dialog-box"></a>Rozložení dialogové okno Možnosti
  **Možnosti** dialogové okno je rozdělena na dva oddíly: navigačního podokna na levé straně a zobrazení plochy na pravé straně. Ovládací prvek stromové struktury v navigačním podokně obsahuje uzly složek, jako je například prostředí, textového editoru, projekty a řešení a správy zdrojového kódu. Rozbalte uzel všechny složky do seznamu na stránkách možností, které obsahuje. Když vyberete uzel pro konkrétní stránce, jeho možnosti se zobrazí v oblasti zobrazení.
@@ -37,7 +37,7 @@ ms.locfileid: "59649651"
  Možnosti pro funkci integrovaného vývojového prostředí v navigačním podokně nezobrazí, dokud tato funkce je načten do paměti. Proto nemusí být zobrazeny stejné možnosti jako zahájit novou relaci, která se zobrazí jako dokončená poslední. Při vytváření projektu nebo spustit příkaz, který používá konkrétní aplikace, uzly pro příslušné možnosti jsou přidány do dialogového okna Možnosti. Tyto přidané možnosti pak zůstanou dostupné tak dlouho, dokud zůstává funkce integrovaného vývojového prostředí v paměti.
 
 > [!NOTE]
->  Některé nastavení kolekce oboru počet stránek, které se zobrazí v navigačním podokně dialogovém okně Možnosti. Můžete také zobrazit všechny možné stránky tak, že vyberete **zobrazit všechna nastavení**.
+> Některé nastavení kolekce oboru počet stránek, které se zobrazí v navigačním podokně dialogovém okně Možnosti. Můžete také zobrazit všechny možné stránky tak, že vyberete **zobrazit všechna nastavení**.
 
 ## <a name="how-options-are-applied"></a>Jak se používají možnosti
  Kliknutím na OK v **možnosti** dialogové okno uloží všechna nastavení na všech stránkách. Kliknutím na Storno na libovolné stránce zruší všechny žádosti o změnu, včetně všech říkám na jiné **možnosti** stránky. Některé změny nastavení možnosti, například změny na [písma a barvy, prostředí, dialogové okno Možnosti](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md), bude pouze projeví po můžete zavřít a znovu otevřete Visual Studio.

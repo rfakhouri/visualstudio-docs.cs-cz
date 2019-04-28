@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01a8a5609394f0dd428066e32fb425a2abb486c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62542050"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Typy musí být alespoň tak kritické, jako jejich základní typy a rozhraní
 
@@ -26,7 +26,7 @@ ms.locfileid: "55926863"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Transparentní typ je odvozen od typu, který je označen <xref:System.Security.SecuritySafeCriticalAttribute> nebo <xref:System.Security.SecurityCriticalAttribute>, nebo typ, který je označen <xref:System.Security.SecuritySafeCriticalAttribute> atribut je odvozen z typu, který je označen pomocí <xref:System.Security.SecurityCriticalAttribute> atribut.
 
 ## <a name="rule-description"></a>Popis pravidla

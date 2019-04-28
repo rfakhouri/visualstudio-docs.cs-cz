@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b2b3f87084d4bb1a64f2c43f860c7b8bcaae64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432394"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Přidání vlastnosti sledování do definice jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ Tento návod ukazuje, jak přidat vlastnosti sledování do modelu domény.
  Implementace `GetCustomProperties` popisovače typu pro metodu `ExampleModel` doménovou třídu.  
   
 > [!NOTE]
->  Kód, který nástroje DSL vygenerovat pro vlastního popisovače typu pro `ExampleModel` volání `GetCustomProperties`, nicméně nástroje DSL negenerují kód, který implementuje metodu.  
+> Kód, který nástroje DSL vygenerovat pro vlastního popisovače typu pro `ExampleModel` volání `GetCustomProperties`, nicméně nástroje DSL negenerují kód, který implementuje metodu.  
   
  Definování tato metoda vytvoří sledovací popisovač vlastnosti pro Namespace vlastnost sledování. Také umožňuje poskytuje atributy pro vlastnosti sledování **vlastnosti** okno k zobrazení vlastnost správně.  
   
@@ -344,7 +344,7 @@ Tento návod ukazuje, jak přidat vlastnosti sledování do modelu domény.
  Implementace `GetCustomElementsValue` metodu `ExampleModel` doménovou třídu.  
   
 > [!NOTE]
->  Kód, který nástroje DSL vygenerovat pro `ExampleModel` volání `GetCustomElementsValue`, nicméně nástroje DSL negenerují kód, který implementuje metodu.  
+> Kód, který nástroje DSL vygenerovat pro `ExampleModel` volání `GetCustomElementsValue`, nicméně nástroje DSL negenerují kód, který implementuje metodu.  
   
  Definování `GetCustomElementsValue` metoda obsahuje logiku pro vlastnost CustomElements počítá `ExampleModel`. Tato metoda vrátí počet `ExampleElement` doménovými třídami, které mají Namespace sledování vlastnost, která má uživatel aktualizovat hodnotu a vrátí řetězec, který představuje tento počet jako podíl celkové prvky v modelu.  
   
@@ -425,7 +425,7 @@ Tento návod ukazuje, jak přidat vlastnosti sledování do modelu domény.
  Přidejte také úložiště pro a metody k získání a nastavení, vlastnost Namespace vlastního úložiště `ExampleElement` doménovou třídu.  
   
 > [!NOTE]
->  Kód, který pro generování nástroje DSL `ExampleModel` volání get a set metod; však nástroje DSL negenerují kód, který implementuje metodu.  
+> Kód, který pro generování nástroje DSL `ExampleModel` volání get a set metod; však nástroje DSL negenerují kód, který implementuje metodu.  
   
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Chcete-li přidat metodu pro vlastní typ popisovače  
   
@@ -591,7 +591,7 @@ Tento návod ukazuje, jak přidat vlastnosti sledování do modelu domény.
  Přidání kódu, který podporuje vlastní chování po načtení pro serializaci kódu XML.  
   
 > [!NOTE]
->  Kód, nástroje DSL generovat volání `OnPostLoadModel` a `OnPostLoadModelAndDiagram` metody; však nástroje DSL negenerují kód, který implementuje tyto metody.  
+> Kód, nástroje DSL generovat volání `OnPostLoadModel` a `OnPostLoadModelAndDiagram` metody; však nástroje DSL negenerují kód, který implementuje tyto metody.  
   
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Přidání kódu, který podporuje vlastní chování po načtení  
   

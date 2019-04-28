@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 832af0383d2ff00b4f2d415257abdfbe3ad4bf91
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430418"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Návod: Vytváření rozšíření projektu SharePoint
   Tento návod ukazuje, jak vytvořit rozšíření pro projekty služby SharePoint. Rozšíření projektu můžete použít pro reakci na události na úrovni projektu, například pokud je projekt přidat, odstranit nebo přejmenovat. Můžete také přidat vlastní vlastnosti nebo odpovědět při změně hodnoty vlastnosti. Na rozdíl od rozšíření položky projektu projektu rozšíření nemůže být spojeny s konkrétní typ projektu služby SharePoint. Při vytváření rozšíření projektu rozšíření načte při otevření jakékoliv projektu služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -65,7 +65,7 @@ ms.locfileid: "60062350"
 3. V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** uzly a klikněte na tlačítko **rozšiřitelnost** uzlu.
 
     > [!NOTE]
-    >  Tento uzel je dostupná jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
+    > Tento uzel je dostupná jenom v případě, že nainstalujete Visual Studio SDK. Další informace najdete v oddílu požadavky dříve v tomto tématu.
 
 4. V horní části dialogového okna zvolte **rozhraní .NET Framework 4.5** v seznam verzí rozhraní .NET Framework a klikněte na tlačítko **projekt VSIX** šablony.
 
@@ -143,7 +143,7 @@ ms.locfileid: "60062350"
 6. V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Tato hodnota odpovídá `MEFComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Tato hodnota odpovídá `MEFComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. V **zdroj** klikněte na položku **projekt v aktuálním řešení** přepínač.
 

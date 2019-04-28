@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cfebf34b9fc45a94733b4b10cb22b74190ebb127
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: edf638420ac41d6ad6f7ebf5e20ab5d78d1c7b3d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435370"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Různé, XML, Textový editor, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "59667128"
 Toto dialogové okno umožňuje změnit nastavení automatického dokončování a schéma pro Editor XML. Můžete přistupovat **možnosti** dialogové **nástroje** nabídky.  
   
 > [!NOTE]
->  Tato nastavení jsou k dispozici, když vyberete **textový Editor** složku, **XML** složky a pak **různé** možnost **možnosti** dialogové okno.  
+> Tato nastavení jsou k dispozici, když vyberete **textový Editor** složku, **XML** složky a pak **různé** možnost **možnosti** dialogové okno.  
   
 ## <a name="auto-insert"></a>Automatické vkládání  
  **Zavřít značky**  

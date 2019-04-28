@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 756b1b1171c18fe435d318d5fb4bccf278aecc58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443530"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Vytváření řešení pracovního postupu služby SharePoint
 
@@ -57,7 +57,7 @@ Další informace o SharePoint, naleznete v tématu [Microsoft produktů a techn
  Po vytvoření pracovního postupu jde upravit její vlastnosti v okně Vlastnosti. I když většina vlastností pracovního postupu lze změnit přímo v okně Vlastnosti, některé vyžadují, abyste klikněte na tlačítko se třemi tečkami (![ASP.NET – Návrhář mobilních řešení Elipsa](../sharepoint/media/mwellipsis.gif "elipsa ASP.NET – Návrhář mobilních řešení")) do změňte jejich hodnoty. Toto tlačítko restartuje **Průvodce přizpůsobením SharePoint**. Po provedení vlastnost hodnota změny, zvolte **Dokončit** tlačítko pro jejich dokončení.
 
 > [!NOTE]
->  **Typ pracovního postupu** vlastnost je jen pro čtení a nedá se změnit. Pokud chcete změnit typ pracovního postupu, musíte vytvořit jiný pracovní postup.
+> **Typ pracovního postupu** vlastnost je jen pro čtení a nedá se změnit. Pokud chcete změnit typ pracovního postupu, musíte vytvořit jiný pracovní postup.
 
 ## <a name="design-a-sharepoint-workflow"></a>Návrh pracovního postupu služby SharePoint
  Po definování všechny kroky v obchodním procesu použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] návrháře pracovních postupů pro návrh pracovního postupu služby SharePoint. Chcete-li otevřít Návrhář, dvakrát klikněte na panel Workflow1.cs nebo Workflow1.vb v **Průzkumníka řešení**, nebo otevřete místní nabídku pro jednu z těchto souborů a pak zvolte **otevřete**.

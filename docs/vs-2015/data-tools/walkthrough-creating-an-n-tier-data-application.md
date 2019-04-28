@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b1f585aaa3677955cef61a923061a62dcdc1e62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424748"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Návod: Vytvoření vícevrstvé datové aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
  Prvním krokem tohoto průvodce je k vytváření řešení a dva projekty knihovny tříd. První třídy knihovny bude obsahovat datovou sadu (generované zadali třídu datové sady a datové tabulky, která bude obsahovat data aplikace). Tento projekt slouží jako vrstva entity dat aplikace a je obvykle umístěn ve střední vrstvě. Návrháři datových sad se používá k vytvoření počáteční datové sady a automaticky rozdělení kódu do knihovny dvou tříd.  
   
 > [!NOTE]
->  Nezapomeňte před kliknutím na správně název projektu a řešení **OK**. To usnadní vám k dokončení tohoto návodu.  
+> Nezapomeňte před kliknutím na správně název projektu a řešení **OK**. To usnadní vám k dokončení tohoto návodu.  
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Vytvoření n-vrstvého řešení a knihovny tříd DataEntityTier  
   
 1. Z **souboru** nabídky, vytvořte nový projekt.  
   
     > [!NOTE]
-    >  **Návrhář Dataset** je podporována v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] a projekty jazyka C#. Vytvoření nového projektu v jednom z těchto jazyků.  
+    > **Návrhář Dataset** je podporována v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] a projekty jazyka C#. Vytvoření nového projektu v jednom z těchto jazyků.  
   
 2. V **nový projekt** v dialogu **typy projektů** podokně klikněte na tlačítko **Windows**.  
   
@@ -125,7 +125,7 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
 6. Pokud databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak klikněte na tlačítko **Další**.  
   
     > [!NOTE]
-    >  Pokud jste vybrali lokálního databázového souboru (místo připojování k serveru SQL Server) může být vyzváni, pokud budete chtít přidat soubor do projektu. Klikněte na tlačítko **Ano** přidáte databázový soubor do projektu.  
+    > Pokud jste vybrali lokálního databázového souboru (místo připojování k serveru SQL Server) může být vyzváni, pokud budete chtít přidat soubor do projektu. Klikněte na tlačítko **Ano** přidáte databázový soubor do projektu.  
   
 7. Klikněte na tlačítko **Další** na **uložit připojovací řetězec do konfiguračního souboru aplikace** stránky.  
   
@@ -153,7 +153,7 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
    Datové sady a objekty TableAdapter jsou rozděleny do projektů knihovny dvou tříd. Projekt, který je původně obsahoval celou datovou sadu (DataAccessTier) teď obsahuje pouze objekty TableAdapter. Projekt je určeno v **projektu DataSet** vlastnost (DataEntityTier) obsahuje typové datové sady: NorthwindDataSet.Dataset.Designer.vb (or NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
->  Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady musí ručně přesunout do projektu datové sady.  
+> Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady musí ručně přesunout do projektu datové sady.  
   
 ## <a name="creating-a-new-service-application"></a>Vytvoření nové aplikace služby  
  Protože tento návod ukazuje, jak získat přístup k vrstvě přístupu k datům s použitím služby WCF, vytvořte nové aplikace služby WCF.  
@@ -220,7 +220,7 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
  Teď, když datová vrstva obsahuje metody, které se vrátí data, vytvářet metody v datové službě dovoluje volat metody ve vrstvě přístupu k datům.  
   
 > [!NOTE]
->  Pro projekty jazyka C#, je nutné přidat odkaz na `System.Data.DataSetExtensions` sestavení pro následující kód pro kompilaci.  
+> Pro projekty jazyka C#, je nutné přidat odkaz na `System.Data.DataSetExtensions` sestavení pro následující kód pro kompilaci.  
   
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Vytvoření funkcí GetCustomers a GetOrders v datové službě  
   
@@ -322,7 +322,7 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
 3. Vyberte **Service1** a klikněte na tlačítko **OK**.  
   
     > [!NOTE]
-    >  Pokud máte několik služeb, které na počítač, vyberte službu, kterou jste vytvořili dříve v tomto názorném postupu (službu, která obsahuje metod GetCustomers a GetOrders).  
+    > Pokud máte několik služeb, které na počítač, vyberte službu, kterou jste vytvořili dříve v tomto názorném postupu (službu, která obsahuje metod GetCustomers a GetOrders).  
   
 ## <a name="adding-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Přidání ovládacích prvků DataGridView do formuláře a zobrazení dat vrácených datovou službou  
  Poté, co přidáte odkaz na službu do datové služby **zdroje dat** okno se automaticky načtou data, která je vrácena službou.  
@@ -361,7 +361,7 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
  Protože služba vrátí data z tabulky Zákazníci a objednávky, výchozí hodnota pro maxReceivedMessageSize není dostatečně velký pro uložení dat a musí být zvýšena. V tomto návodu změníte hodnotu na 6553600. Změní hodnotu na straně klienta, a tím se automaticky aktualizuje odkaz na službu.  
   
 > [!NOTE]
->  Nižší výchozí velikost je určena k omezení rizika útoky na dostupnost služby (DoS). Další informace naleznete v tématu <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
+> Nižší výchozí velikost je určena k omezení rizika útoky na dostupnost služby (DoS). Další informace naleznete v tématu <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Zvýšení hodnoty maxReceivedMessageSize  
   

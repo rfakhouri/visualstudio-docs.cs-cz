@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 861ce1cf40dd5c56c043399387ef51fa3b4efee2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412247"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Klávesové zkratky a zkratky myši v diagramu tříd a okně podrobností třídy (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Klávesnice kromě myši můžete použít k provádění akcí navigace v Návr
 ## <a name="KeyboardClassDetails"></a> Pomocí klávesnice v okně podrobností třídy  
   
 > [!NOTE]
->  Následující klávesové zkratky byly rozhodli konkrétně tak, aby napodoboval prostředí psaní kódu.  
+> Následující klávesové zkratky byly rozhodli konkrétně tak, aby napodoboval prostředí psaní kódu.  
   
  Použijte následující klíče pro navigaci v okně podrobností třídy:  
   

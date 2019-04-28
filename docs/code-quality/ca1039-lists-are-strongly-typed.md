@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d11afe8a3ea8fcae971461b8e33fc4771b74eb75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778897"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Seznamy jsou silného typu
 
@@ -30,7 +30,7 @@ ms.locfileid: "55947468"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
 
 Veřejný nebo chráněný typ implementuje <xref:System.Collections.IList?displayProperty=fullName> ale neposkytuje metodu silného typu pro jeden nebo více z následujících akcí:
 

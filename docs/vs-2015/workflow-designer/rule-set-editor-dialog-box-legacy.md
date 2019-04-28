@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438891"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Dialogové okno Editor sad pravidel (starší verze)
 Toto téma popisuje, jak používat **editoru nastavte pravidlo** dialogové okno v starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -26,12 +26,12 @@ Toto téma popisuje, jak používat **editoru nastavte pravidlo** dialogové okn
  **Editoru nastavte pravidlo** dialogové okno se používá k vytvoření a úprava [aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) pravidlo sady, které se serializují do souboru .rules.  
   
 > [!NOTE]
->  Pokud chcete otevřít soubor .rules s **Editor XML s kódováním**, je zapotřebí nejdříve zavřít okno přidružené Návrháře pracovního postupu nebo aktivity.  
+> Pokud chcete otevřít soubor .rules s **Editor XML s kódováním**, je zapotřebí nejdříve zavřít okno přidružené Návrháře pracovního postupu nebo aktivity.  
   
  Informace o tom, jak získat přístup **editoru nastavte pravidlo** dialogovém okně naleznete v tématu [jak: Vytvoření sady pravidel aktivit zásad (starší verze)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
->  Editor pravidel starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] cílit na platformu, která se používá [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] není podporováno cílení na více verzí.  
+> Editor pravidel starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] cílit na platformu, která se používá [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] není podporováno cílení na více verzí.  
   
  Následující tabulka popisuje prvky uživatelského rozhraní (UI) **editoru nastavte pravidlo** dialogové okno.  
   

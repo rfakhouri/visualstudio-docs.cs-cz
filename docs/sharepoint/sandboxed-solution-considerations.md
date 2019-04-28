@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c31fe758d9c1a9a99fb71144f93c7145ea466ad0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435451"
 ---
 # <a name="sandboxed-solution-considerations"></a>Aspekty řešení v izolovaném prostoru
   *Řešení v izolovaném prostoru* jsou funkce v aplikaci Microsoft SharePoint 2010, která umožňuje lokality kolekce uživatelům odesílat své vlastní řešení vlastního kódu. Běžné řešení v izolovaném prostoru se uživatelé nahrání vlastní webové části.
@@ -34,7 +34,7 @@ ms.locfileid: "56621692"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] podporuje řešení v izolovaném prostoru pomocí vlastnosti Boolean projektu volá *řešení v izolovaném prostoru*. Tuto vlastnost lze nastavit v každém okamžiku v projektu, nebo můžete zadat, když vytvoříte projekt v **Průvodce přizpůsobením SharePoint**.
 
 > [!NOTE]
->  Změna *řešení v izolovaném prostoru* vlastnosti projektu po jeho vytvoření může dojít k chybám ověření.
+> Změna *řešení v izolovaném prostoru* vlastnosti projektu po jeho vytvoření může dojít k chybám ověření.
 
  Řešení se považuje za rozsahem farmy řešení, pokud *řešení v izolovaném prostoru* je nastavena na **false** nebo vyberete **nasadit jako řešení farmy** možnost. Ale toto řešení je zpracovávat odděleně od řešení farmy Pokud *řešení v izolovaném prostoru* je nastavena na **true** nebo vyberete **nasadit jako řešení v izolovaném prostoru** možnost v průvodci.
 

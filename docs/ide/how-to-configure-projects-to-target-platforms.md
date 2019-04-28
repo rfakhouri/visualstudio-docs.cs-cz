@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f605e761380b3dc856926dff5bd1712753a8ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438194"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Postupy: Konfigurace projektů pro cílové platformy
 
@@ -46,7 +46,7 @@ Visual Studio umožňuje nastavení aplikací na různých platformách, včetn�
     2. V **zadejte nebo vyberte novou platformu** klikněte na položku **x64**.
 
         > [!NOTE]
-        >  Pokud vaše konfigurace zadejte nový název, bude pravděpodobně nutné upravit nastavení v **Návrháře projektu** pro zaměření na správnou platformu.
+        > Pokud vaše konfigurace zadejte nový název, bude pravděpodobně nutné upravit nastavení v **Návrháře projektu** pro zaměření na správnou platformu.
 
     3. Pokud chcete tato nastavení zkopírovat z aktuální konfiguraci platformy, vyberte jej a klikněte na tlačítko **OK** tlačítko.
 

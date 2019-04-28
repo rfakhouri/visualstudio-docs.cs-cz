@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření stránky aplikace služby SharePoint | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření stránky aplikace služby SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778629"
 ---
-# <a name="walkthrough-create-a-sharepoint-application-page"></a>Průvodce: Vytvoření stránky aplikace služby SharePoint
+# <a name="walkthrough-create-a-sharepoint-application-page"></a>Návod: Vytvoření stránky aplikace služby SharePoint
 
 Stránka aplikace je specializovaná forma stránky technologie ASP.NET. Stránky aplikace obsahují obsah, který je sloučen s hlavní stránkou služby SharePoint. Další informace najdete v tématu [vytváření stránek aplikací pro SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 

@@ -9,11 +9,11 @@ author: angelosp
 ms.author: angelpe
 manager: jillfra
 ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548829"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Přizpůsobení vnořování souborů v Průzkumníku řešení
 
@@ -34,7 +34,7 @@ Dostupné možnosti pro vnořování souborů neupravené jsou:
 
 * **Web**: Tato možnost se vztahuje **webové** souboru vnoření chování do všech projektů v aktuálním řešení. Má mnoho pravidel a doporučujeme vám ji rezervovat a Řekněte nám, co si myslíte. Na následujícím snímku obrazovky najdete pár příkladů vnoření chování souboru, který dostanete, když je tato možnost:
 
-   ![Soubor vnoření v Průzkumníku řešení](media/filenesting.png)
+   ![Vnořování souborů v Průzkumníku řešení](media/filenesting.png)
 
 ## <a name="customize-file-nesting"></a>Vlastní nastavení vnořování souborů
 

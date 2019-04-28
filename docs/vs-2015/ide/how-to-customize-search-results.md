@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35fa2825d9fbb4b6a34d813c812bde1bc465f14f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d7add45e5dc2aac66eaf023eabcf2a1f7cdf189e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416847"
 ---
 # <a name="how-to-customize-search-results"></a>Postupy: Přizpůsobení výsledků vyhledávání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Můžete přizpůsobit, jak se výsledky hledání zobrazeny v **hledání** kar
  Dokumentace k může zahrnovat obsah v jiném jazyce než angličtině. Můžete zúžit výsledky hledání na obsah v určitém jazyce. Můžete použít také jakýkoliv obsah v angličtině, který odpovídá vašemu vyhledávacímu dotazu.  
   
 > [!WARNING]
->  Tato funkce je povolená jenom v případě, že primární jazyk nainstalovaný obsah není anglické.  
+> Tato funkce je povolená jenom v případě, že primární jazyk nainstalovaný obsah není anglické.  
   
 #### <a name="to-include-english-content-alongside-content-in-another-language"></a>Zahrnout anglický obsah spolu s obsahem v jiném jazyce  
   

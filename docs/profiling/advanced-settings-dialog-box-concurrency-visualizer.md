@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b36c648a0ab1c7df9d4f358d729e7f6b96212f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777994"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Dialogové okno Upřesnit nastavení (vizualizér souběžnosti)
 S použitím **Upřesnit nastavení** dialogové okno v Concurrency Visualizer můžete řídit, jak se shromáždí trasování.  Dialogové okno obsahuje karty pro symboly, pouze můj kód, ukládání do vyrovnávací paměti, filtrování, CLR události, značky, zprostředkovatele a soubory.

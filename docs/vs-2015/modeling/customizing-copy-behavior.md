@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b88d3541bc9c3b2f890c2aadf0103c48d3dad865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433304"
 ---
 # <a name="customizing-copy-behavior"></a>Přizpůsobení chování kopírování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -238,7 +238,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  Mnoho aspektů DSL chování s ohledem na kopírování, vložení, vytváření a odstraňování objektů se řídí instance <xref:Microsoft.VisualStudio.Modeling.ElementOperations> , který je s velkou provázaností do diagramu. Můžete změnit chování vašeho kódu DSL odvozením vlastních tříd z <xref:Microsoft.VisualStudio.Modeling.ElementOperations> a přepsáním <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> vlastnosti diagramu třídy.  
   
 > [!TIP]
->  Další informace o přizpůsobení modelu pomocí kódu programu najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+> Další informace o přizpůsobení modelu pomocí kódu programu najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
  ![Sekvenční diagram pro operaci kopírování](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")  
   

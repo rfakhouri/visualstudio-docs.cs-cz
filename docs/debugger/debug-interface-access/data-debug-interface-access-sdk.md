@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f0cf6e4f02d8a80f74d0edb46e188b41bfb425c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554945"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Data (Přístup k rozhraní ladění SDK)
 Všechny proměnné, jako jsou parametry, místní proměnné, globální proměnné a členy třídy, jsou identifikované `SymTagData` symboly. Konstantní hodnoty (`LocIsConstant`) se také identifikují s tímto typem.

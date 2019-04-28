@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59bdcbd3cefe185a8809e471be22f00ea2478857
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6833e9735aa6a360ce0642e991bd019df347d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442498"
 ---
 # <a name="step-6-add-a-timer"></a>Krok 6: Přidání časovače
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ V dalším kroku přidejte **časovače** ovládacího prvku do porovnávací hr
 Časovač  
   
     > [!NOTE]
-    >  Pokud je panel nástrojů prázdný, je nutné před otevřením sady nástrojů vybrat nástroj Návrhář a nikoli kód formuláře.  
+    > Pokud je panel nástrojů prázdný, je nutné před otevřením sady nástrojů vybrat nástroj Návrhář a nikoli kód formuláře.  
   
 2. Zvolte **Timer1** ikonu vyberte časovač. V **vlastnosti** okno, přepněte zobrazení z událostí na vlastnosti. Nastavte časovače **Interval** vlastnost **750**, ale ponechat jeho **povoleno** vlastnost nastavena na **False**. **Interval** vlastnost sděluje časovači, jak dlouho se má čekat mezi *značky*, nebo kdy se má událost impulzu spustit. Hodnota 750 říká časovači, aby před vyvoláním události impulzu čekal tři čtvrtiny sekundy (750 milisekund). Budete volat `Start()` metoda ke spuštění časovače, až poté, co hráč zvolí druhý popisek.  
   
@@ -41,7 +41,7 @@ V dalším kroku přidejte **časovače** ovládacího prvku do porovnávací hr
      Obslužná rutina události impulzu provádí tři věci: Nejprve zkontroluje, zda není spuštěn časovač, voláním `Stop()` metody. Potom použije dvě referenční proměnné `firstClicked` a `secondClicked`k nastavení ikon dvou popisků, které hráč zvolí znovu neviditelné. Nakonec resetuje `firstClicked` a `secondClicked` referenční proměnné k `null` v jazyce Visual C# a `Nothing` v jazyce Visual Basic. Tento krok je důležitý, protože ukazuje, jak se program sám resetuje. Teď ji není udržování přehledu o některý `Label` ovládací prvky a je připravený k si hráč znovu zvolí popisek.  
   
     > [!NOTE]
-    >  A `Timer` má objekt `Start()` metodu, která spustí časovač, a `Stop()` metodu, která ho zastaví. Při nastavení časovače **povoleno** vlastnost **True** v **vlastnosti** okna, spustí tikání ihned po spuštění programu. Ale když necháte nastavené na **False**, nespustí tikání až do jeho `Start()` metoda je volána. Za normálních okolností časovač vyvolá událost impulzu znovu a znovu, pomocí **Interval** a určí počet milisekund k čekání mezi impulzy. Jste si všimli jak časovače `Stop()` metoda je volána uvnitř události impulzu. To vloží časovač do *jednorázovém režimu*, což znamená, že `Start()` metoda je volána, čeká na zadaný interval, spustí jednu událost impulzu a poté se zastaví.  
+    > A `Timer` má objekt `Start()` metodu, která spustí časovač, a `Stop()` metodu, která ho zastaví. Při nastavení časovače **povoleno** vlastnost **True** v **vlastnosti** okna, spustí tikání ihned po spuštění programu. Ale když necháte nastavené na **False**, nespustí tikání až do jeho `Start()` metoda je volána. Za normálních okolností časovač vyvolá událost impulzu znovu a znovu, pomocí **Interval** a určí počet milisekund k čekání mezi impulzy. Jste si všimli jak časovače `Stop()` metoda je volána uvnitř události impulzu. To vloží časovač do *jednorázovém režimu*, což znamená, že `Start()` metoda je volána, čeká na zadaný interval, spustí jednu událost impulzu a poté se zastaví.  
   
 4. Chcete-li vidět nový časovač v akci, přejděte k editoru kódu a přidejte následující kód do horní a dolní část `label_Click()` metoda obslužné rutiny události. (Přidáte `if` příkaz do horní části a tři příkazy do dolní části; zbývající část metody zůstává stejná.)  
   

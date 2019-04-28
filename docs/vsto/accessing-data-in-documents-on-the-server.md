@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d12c8168ef01dd3a38616af4f9dab2c38662bfff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563104"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Přístup k datům v dokumentech na serveru
   Bez nutnosti použít objektový model Microsoft Office Word nebo Microsoft Office Excel můžete programovat proti data v přizpůsobení na úrovni dokumentu. To znamená, že přistupujete k datům, která je součástí dokumentu na serveru, který nemá Word nainstalována aplikace Excel. Například kód na serveru (například v [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] stránky) můžete přizpůsobit data v dokumentu a odeslání přizpůsobeného dokumentu pro koncového uživatele. Když koncový uživatel otevře dokument, sváže data vazební kód v sestavení řešení upravená data do dokumentu. To je možné, protože data v dokumentu je oddělená od uživatelského rozhraní. Další informace najdete v tématu [data v přizpůsobeních na úrovni dokumentu v mezipaměti](../vsto/cached-data-in-document-level-customizations.md).

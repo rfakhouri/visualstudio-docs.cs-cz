@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4884ef313d969ae59b8aea704490eeb2e4e5a91c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8a505fe3428a8e16c321eee4764f8a62fff65511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431109"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Postupy: Ruční vytvoření webových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54782207"
 Vytvoření šablony webu se liší od vytvoření jiných typů šablon. Protože joinkind šablony webových projektů **přidat nový web** dialogové okno a webové položky projektu jsou zařazené do kategorií podle programovacího jazyka, soubor .vstemplate musí určit, která šablona jako šablonu a identifikovat programování jazyk.  
   
 > [!NOTE]
->  Webové šablony musí obsahovat prázdný .webproj soubor, který je určen pomocí `File` atribut `Project` elementu. I když soubory projektu nevyžadují žádné webové projekty, tento soubor je potřeba Web šablona funguje správně.  
+> Webové šablony musí obsahovat prázdný .webproj soubor, který je určen pomocí `File` atribut `Project` elementu. I když soubory projektu nevyžadují žádné webové projekty, tento soubor je potřeba Web šablona funguje správně.  
   
 ### <a name="to-manually-create-a-web-template"></a>Ruční vytvoření webových šablon  
   

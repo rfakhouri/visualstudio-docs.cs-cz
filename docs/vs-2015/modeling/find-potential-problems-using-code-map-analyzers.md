@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db54fef40914dc234f507935a646292eb8d4914e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cd771cf35ef684edd8d5c9dd82436759ec9443a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437501"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Nalezení potenciálních problémů pomocí analyzátorů mapy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Spusťte analyzátory na mapách kódu, abyste mohli snadno identifikovat kód, 
    Analyzátorů mapy kódu bude nadále spuštěna po jejich použití. Pokud změníte na mapě, žádné použité Analyzátory se automaticky znovu zpracovat mapa aktualizovaná. Chcete-li zastavit spuštěný analyzátor, na panelu nástrojů mapy, zvolte **rozložení**, **analyzátory**. Vypněte vybrané analyzátor.  
   
 > [!TIP]
->  Pokud máte mapu velmi velké, může způsobit spuštěný analyzátor nedostatku paměti výjimky. Pokud k tomu dojde, upravit mapu ke snížení jeho rozsah nebo vygenerovat menší a potom spustit Analyzátor.  
+> Pokud máte mapu velmi velké, může způsobit spuštěný analyzátor nedostatku paměti výjimky. Pokud k tomu dojde, upravit mapu ke snížení jeho rozsah nebo vygenerovat menší a potom spustit Analyzátor.  
   
 ## <a name="see-also"></a>Viz také  
  [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)   

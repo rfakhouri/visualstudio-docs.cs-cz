@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ecae68c3c5d9569f2c63d484c53696bbec42e55
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443140"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Zápis více procesorů protokolovacích
 Schopnost [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] výhod více procesorů může zkrátit čas sestavení projektu, ale také zvyšuje složitost vytváření protokolování událostí. V prostředí s jedním procesorem události, zprávy, upozornění a chyby do protokolovacího nástroje předvídatelným, sekvenčním způsobem. V prostředí s více procesory mohou však události z různých zdrojů dorazí, ve stejnou dobu nebo mimo pořadí. K poskytování v takovém případě [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje více-procesorů s ohledem na protokolovací nástroj a nový model protokolování a umožňuje vám vytvořit vlastní "předávající Protokolovací nástroje".
@@ -78,7 +78,7 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 ```
 
 > [!NOTE]
->  Hvězdička (*) musí oddělovat názvy dvou protokolovacích v `-dl` přepnout.
+> Hvězdička (*) musí oddělovat názvy dvou protokolovacích v `-dl` přepnout.
 
  Použití ConfigurableForwardingLogger se podobá použití jiných protokolovacího nástroje (jak je uvedeno v [protokoly o sestavení získání](../msbuild/obtaining-build-logs-with-msbuild.md)), s tím rozdílem, že připojíte protokolovač ConfigurableForwardingLogger místo typické [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] protokolovací nástroj a zadejte jako parametry události, které chcete ConfigurableForwardingLogger předat do centrálního uzlu.
 

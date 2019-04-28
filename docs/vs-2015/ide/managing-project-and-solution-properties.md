@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e9ff4acbfd6df1980a3882311b3d3c4611e064
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: dd20552a72775723c4ad006708ce1fb7f18d4181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424634"
 ---
 # <a name="managing-project-and-solution-properties"></a>Správa vlastností projektů a řešení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Projekty mají vlastnosti, které řídí mnoho aspektů kompilace, ladění, te
  ![Vlastnosti uzlu stromové struktury Průzkumníka řešení](../ide/media/vs2015-props-se.png "VS2015_Props_SE")  
   
 > [!TIP]
->  Řešení mít několik vlastností a tak projektové položky. Tyto vlastnosti jsou přístupné z [okno vlastností](../ide/reference/properties-window.md), nikoli **Návrháře projektu**.  
+> Řešení mít několik vlastností a tak projektové položky. Tyto vlastnosti jsou přístupné z [okno vlastností](../ide/reference/properties-window.md), nikoli **Návrháře projektu**.  
   
 ## <a name="project-properties"></a>Vlastnosti projektu  
  Vlastnosti projektu jsou uspořádány do skupin a každá skupina má svou vlastní stránku vlastností a stránky můžou být různé pro různé jazyky a typy projektů.  

@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436185"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Blend for Visual Studio vám pomůže navrhnout založené na XAML Windows deskt
  Pokud začínáte blendu pro Visual Studio, věnujte chvíli seznámení s jedinečné funkce pracovního prostoru. Toto téma přejdete na stručný přehled.
 
 > [!NOTE]
->  Prohlédnete si funkce sdílené návrh například návrhovou plochu, Osnova dokumentu – okno a okno zařízení, najdete v článku [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+> Prohlédnete si funkce sdílené návrh například návrhovou plochu, Osnova dokumentu – okno a okno zařízení, najdete v článku [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
  **V tomto tématu**:
 

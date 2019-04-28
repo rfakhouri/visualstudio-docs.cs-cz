@@ -11,12 +11,12 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e39dcbcdb3fe8396c3d4d42003a7aa40b5f527a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f980c9d14bc2d0c9728f87374828cf690737429c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436411"
 ---
 # <a name="getting-a-port"></a>Získání portu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Port představuje připojení k počítači, na kterém běží procesů. Tento 
  Tento fragment kódu ukazuje, jak používat port zadaný pro [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) k registraci uzlu aplikace v [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Pro přehlednost byly vynechány parametry nemají přímou souvislost tento koncept.  
   
 > [!NOTE]
->  Tento příklad používá port, který můžete spustit a pokračovat v procesu a předpokládá, že [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) rozhraní je implementováno na portu. Toto je v žádném smyslu jediný způsob, jak provádět tyto úlohy a je možné, že port nemusí i možné zahrnutí jiné než a program [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) k němu.  
+> Tento příklad používá port, který můžete spustit a pokračovat v procesu a předpokládá, že [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) rozhraní je implementováno na portu. Toto je v žádném smyslu jediný způsob, jak provádět tyto úlohy a je možné, že port nemusí i možné zahrnutí jiné než a program [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) k němu.  
   
 ```cpp#  
 // This is an IDebugEngineLaunch2 method.  

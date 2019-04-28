@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c19ba7ea458f7922f5e82e3277b9ab305090a5cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444590"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalace komponenty Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Vizuální C++ pro vývoj mobilních řešení napříč platformami] (http://go
 - Požadavky na instalaci, naleznete v tématu [systémové požadavky sady Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
   > [!IMPORTANT]
-  >  Pokud používáte Windows 7 nebo Windows Server 2008 R2, můžete vyvíjet kód pro aplikace klasické Windows, aplikace Android Native Activity a knihovny a aplikací a knihoven kódu pro iOS, ale ne aplikace Windows Store nebo Windows Universal.  
+  > Pokud používáte Windows 7 nebo Windows Server 2008 R2, můžete vyvíjet kód pro aplikace klasické Windows, aplikace Android Native Activity a knihovny a aplikací a knihoven kódu pro iOS, ale ne aplikace Windows Store nebo Windows Universal.  
   
   K vytváření aplikací pro specifické platformy zařízení, existují některé další požadavky:  
   
@@ -75,12 +75,12 @@ Vizuální C++ pro vývoj mobilních řešení napříč platformami] (http://go
 4. Po dokončení instalace, ukončete instalační program a potom restartujte počítač. Některé akce nastavení pro komponenty třetích stran projeví až po restartování počítače.  
   
     > [!IMPORTANT]
-    >  Je nutné restartovat, aby se zajistilo, že všechno je správně nainstalované.  
+    > Je nutné restartovat, aby se zajistilo, že všechno je správně nainstalované.  
   
      Pokud Microsoft Visual Studio Emulator pro Android součásti se nepodařilo nainstalovat, pravděpodobně nemáte v počítači povolená technologie Hyper-V. Použití **Windows zapnout nebo vypnout funkce** aplikace ovládacích panelů k povolení technologie Hyper-V a pak znovu spusťte instalační program sady Visual Studio.  
   
     > [!NOTE]
-    >  Pokud váš počítač nebo vaši verzi systému Windows nepodporuje Hyper-V, nelze použít Microsoft Visual Studio Emulator pro Android komponentu. Home Edition z Windows nezahrnuje podporu technologie Hyper-V.  
+    > Pokud váš počítač nebo vaši verzi systému Windows nepodporuje Hyper-V, nelze použít Microsoft Visual Studio Emulator pro Android komponentu. Home Edition z Windows nezahrnuje podporu technologie Hyper-V.  
   
 5. Otevřít Visual Studio. Pokud je to poprvé, spustíte Visual Studio, může trvat nějakou dobu ke konfiguraci a přihlaste se. Když je připraven na Visual Studio **nástroje** nabídce vyberte možnost **rozšíření a aktualizace**, **aktualizace**. Pokud jsou že aktualizace nástroje Visual Studio k dispozici pro aplikaci Visual C++ pro vývoj mobilních řešení napříč platformami nebo pro Microsoft Visual Studio Emulator for Android, nainstalujte je.  
   
@@ -91,7 +91,7 @@ Vizuální C++ pro vývoj mobilních řešení napříč platformami] (http://go
  Pokud se rozhodnete nainstalovat jeden nebo více závislostí třetích stran pomocí instalačního programu sady Visual Studio, když instalujete Visual C++ vývoj mobilních aplikací možnost, můžete je nainstalovat později pomocí kroků v [nainstalovat nástroje](#InstallTheTools). Můžete také nainstalovat nebo aktualizovat nezávisle na Visual Studio.  
   
 > [!CAUTION]
->  Závislosti můžete nainstalovat v libovolném pořadí, s výjimkou Java. Musíte nainstalovat a nakonfigurovat sadu JDK, před instalací sady Android SDK.  
+> Závislosti můžete nainstalovat v libovolném pořadí, s výjimkou Java. Musíte nainstalovat a nakonfigurovat sadu JDK, před instalací sady Android SDK.  
   
  Přečtěte si následující informace a tyto odkazy použít ruční instalace závislostí.  
   
