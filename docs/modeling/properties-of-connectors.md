@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 754f479b99eef44159994425ddd7a0d812bcf2ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970806"
 ---
 # <a name="properties-of-connectors"></a>Vlastnosti konektorů
 Konektory představují vztahy domén ve vygenerovaném návrháři.
@@ -27,8 +27,8 @@ Konektory představují vztahy domén ve vygenerovaném návrháři.
 |-|-|-|
 |Barva|Barva této spojnice.|Black|
 |Styl přerušování|Styl přerušování čáry této spojnice (plný, Dash, tečka, DashDot, DashDotDot nebo vlastní).|Plná|
-|Styl počátku|Styl počátku této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádná|
-|Styl konce|Styl konce této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádná|
+|Styl počátku|Styl počátku této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádné|
+|Styl konce|Styl konce této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádné|
 |Barva textu|Barva, která je použitá pro dekoratéry textu, které jsou spojeny s tímto konektorem.|Black|
 |Tloušťka|Tloušťka čáry této spojnice v palcích.|0.03125|
 |Modifikátor přístupu|Úroveň přístupu třídy (`public` nebo `internal`).|Public|

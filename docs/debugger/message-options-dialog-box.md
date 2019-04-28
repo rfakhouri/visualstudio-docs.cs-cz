@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931315"
 ---
 # <a name="message-options-dialog-box"></a>Dialogové okno možností zpráv
 Použít toto dialogové okno vybrat zprávy, které jsou uvedeny v [zobrazení zpráv](../debugger/messages-view.md). Chcete-li zobrazit toto dialogové okno, zvolte **zprávy protokolu** z **Spy** nabídky.

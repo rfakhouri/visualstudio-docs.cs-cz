@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0862e6fc670be6cd3d3ca9fbf67f453aa0772a90
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58158981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009768"
 ---
 # <a name="appbreakflags-enumeration"></a>APPBREAKFLAGS – výčet
 Udávají aktuální stav ladění pro aplikace a vlákna.  
@@ -35,7 +35,7 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 ## <a name="members"></a>Členové  
   
-|Člen|Hodnota|Popis|  
+|Člen|Value|Popis|  
 |------------|-----------|-----------------|  
 |APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Modul jazyka by mělo dojít okamžitě na všech vláknech s BREAKREASON_DEBUGGER_BLOCK.|  
 |APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Jazyk modul by měl s BREAKREASON_DEBUGGER_HALT okamžité přerušení.|  

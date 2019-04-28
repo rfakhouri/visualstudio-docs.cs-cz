@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58144417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954990"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
 Objekt implementace tohoto rozhraní je předán [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) metoda pokaždé, když skriptovací stroj dojde k neošetřené chybě. Hostitel pak volá metody pro tento objekt k získání informací o chyby, ke které došlo k chybě.  

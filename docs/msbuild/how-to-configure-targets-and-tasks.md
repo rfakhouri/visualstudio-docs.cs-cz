@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946661"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Postupy: Konfigurace cílů a úloh
 Vybrané úlohy nástroje MSBuild může nastaven na spouštění v prostředí, které cílí, bez ohledu na prostředí, které vývojovém počítači. Například pokud používáte 64bitový počítač k sestavení aplikace pro danou architekturu cíle 32-bit, vybrané úlohy se spouštějí v 32bitový proces.

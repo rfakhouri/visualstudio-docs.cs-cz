@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002343"
 ---
 # <a name="report-based-on-visible-time-range"></a>Sestava pro viditelný časový rozsah
 Profil zobrazení sestavy, které jsou založeny na současném viditelném časovém rozsahu a kanály. Chcete-li zobrazit podrobnosti pro různé podmnožiny dat, klikněte na položky v legendě.

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977936"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Přehled vývoje řešení pro Office (VSTO)
   Pomocí aplikace Microsoft Office jako front-endu řešení, můžete využít známé uživatelské rozhraní aplikace Microsoft Office a nástrojů, jako jsou funkce zpracování textu ve Wordu, funkce pro analýzu dat aplikace Excel a funkcím pro správu e-mailu aplikace Outlook . Můžete vyvíjet řešení v sadě Visual Studio k přizpůsobení aplikace Office a přidejte konkrétní funkce, které potřebujete pro své podnikové procesy. Například můžete zapnout Word do smlouvy generátor, který sestaví kontrakty si již existující částí, které mohou být provedeny upravovatelného nebo nejde upravit. Pomocí aplikace Excel můžete vytvořit přizpůsobené pro různé projekty listu aplikace automatizované rozpočtu. Uživatelům můžete taky využít řešení pro systém office v režimu offline, což je komplexní řešení více praktické, než by se použily, pokud používáte architekturu založenou na web.

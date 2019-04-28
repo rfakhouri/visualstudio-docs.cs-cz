@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d2f2a70df72f6dfcdc8946ca2f5afec9efa21a65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934434"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Upozornění: závislost &#39;souboru&#39; v projektu &#39;projektu&#39; nelze zkopírovat do běhového adresáře, protože by přepsala odkaz &#39;souboru.&#39;
 Dojde ke konfliktu mezi závislosti víc souborů odlišné sestavení se stejným názvem, mají být zkopírovány do adresáře bin pro spuštění aplikace. Je schopen vyřešit konflikt, protože jednu ze závislostí je primární odkaz běhového adresáře.  

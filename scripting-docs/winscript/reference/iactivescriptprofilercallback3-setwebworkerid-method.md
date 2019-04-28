@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0798a23b4c8ad4e5859bec73ebfed47a56b322d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993100"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId – metoda
 Upozornění profileru o ID pracovního procesu má použít pro tuto relaci profilování. Pokud funkce není prováděna v kontextu stránky, není tato metoda vyvolána. Hodnota `webWorkerId` zvýší o 1 pro každý pracovního procesu začínající hodnotou 1. ID hodnoty nemají stabilní nad rámec relaci, a pouze odpovídají pořadí, ve kterém byly vytvořeny zaměstnanců.  

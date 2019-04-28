@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d9f1a68db05ac0d909108ce77587ae4b071c9a2b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58146276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935468"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
 Vrátí informace o jazyce.  
@@ -39,7 +39,7 @@ HRESULT GetLanguageFlags(
  `pgrfasa`  
  [out] Příznaky, které obsahují informace o jazyce. Může být kombinací následujícího:  
   
-|Konstanta|Hodnota|Popis|  
+|Konstanta|Value|Popis|  
 |--------------|-----------|-----------------|  
 |fasaPreferInternalHandler|0x0001|Jazyk upřednostňuje skript vytvoření obslužné rutiny událostí ve skriptu pro vytváření modulu namísto aplikace.|  
 |fasaSupportInternalHandler|0x0002|Jazyk podporuje vytvořen skriptem modul pro vytváření obslužných rutin událostí skriptu.|  
@@ -48,7 +48,7 @@ HRESULT GetLanguageFlags(
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   

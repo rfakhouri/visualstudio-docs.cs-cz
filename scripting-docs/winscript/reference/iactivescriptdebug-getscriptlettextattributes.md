@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 781282b5c825954ada4fbb35daa2a97b379c3f13
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955039"
 ---
 # <a name="iactivescriptdebuggetscriptlettextattributes"></a>IActiveScriptDebug::GetScriptletTextAttributes
 Vrátí text atributy pro libovolného skriptletu.  
@@ -52,7 +52,7 @@ HRESULT GetScriptletTextAttributes(
  `dwFlags`  
  [in] Příznaky spojené se skriptletem. Může být kombinací těchto hodnot:  
   
-|Konstanta|Hodnota|Popis|  
+|Konstanta|Value|Popis|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Označuje, že identifikátory a tečka mají identifikovat SOURCETEXT_ATTR_IDENTIFIER a SOURCETEXT_ATTR_MEMBERLOOKUP příznaků, v uvedeném pořadí.|  
 |GETATTRFLAG_THIS|0x0100|Označuje, že se mají s příznakem SOURCETEXT_ATTR_THIS identifikovat identifikátor pro aktuální objekt.|  
@@ -64,7 +64,7 @@ HRESULT GetScriptletTextAttributes(
 ## <a name="return-value"></a>Návratová hodnota  
  Metoda vrátí `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   

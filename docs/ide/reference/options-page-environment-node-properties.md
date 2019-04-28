@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945617"
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
 
@@ -26,7 +26,7 @@ Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 `DTE.Properties("Environment", "General")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |ShowStatusBar|Get/Set (Boolean)|Určuje, zda je viditelný stavový řádek.|
 |WindowMenuContainsNItems|Získá nebo nastaví (krátký)|Určuje, jak okna dokumentu jsou obsaženy v dolní části nabídky Windows.|
@@ -42,7 +42,7 @@ Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 `DTE.Properties("Environment", "AddinMacrosSecurity")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |MacrosEnabled|Get/Set (Boolean)|Umožňuje spuštění maker.|
 |AddinsEnabled|Get/Set (Boolean)|Umožňuje doplňků pro načtení.|
@@ -52,7 +52,7 @@ Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 `DTE.Properties("Environment", "Documents")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |ReuseSavedActiveDocWindow|Get/Set (Boolean)|Určuje, zda otevření nového souboru opětovně používá aktuální okno dokumentu Pokud je aktuální dokument uložen. `false` znamená, že vždy otevřít nové okno dokumentu pro každý dokument otevřít.|
 |DetectFileChangesOutsideIDE|Get/Set (Boolean)|Určuje, zda prostředí automaticky načte soubory otevřené v integrovaném vývojovém prostředí, když se operační systém upozornění rozhraní IDE, že soubory byly změněny na disku.|
@@ -70,7 +70,7 @@ Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 `DTE.Properties("Environment", "ExtensionManager")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |EnableAdminExtensions|Get/Set (Boolean)|Načte rozšíření vázaná na uživatele při spuštění sady Visual Studio v části přihlašovací údaje správce. Po změně této hodnoty je třeba restartovat Visual Studio.|
 |EnableOnline|Get/Set (Boolean)|Umožňuje přístup k rozšíření na Visual Studio Marketplace.|
@@ -101,7 +101,7 @@ Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 `DTE.Properties("Environment", "International")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |Jazyk|Získá nebo nastaví (String)|Hodnota LCID pro aktuální jazyk pro Visual Studio.|
 
@@ -109,7 +109,7 @@ Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 `DTE.Properties("Environment", "Keyboard")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |Schéma|Získá nebo nastaví (String)|Vrátí řetězec, který obsahuje vestavěné schéma, řetězec obsahující úplnou cestu souboru .vsk, který je načten nebo "(výchozí)" Pokud se žádný soubor .vsk, který je načten.|
 
@@ -117,7 +117,7 @@ Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 `DTE.Properties("Environment", "ProjectsAndSolution")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |OnRunOrPreview|Získá nebo nastaví (String)|Určuje, zda integrovaného vývojového prostředí všechno, co ukládat před náhledem nebo spuštěním sestavením projektu.|
 |ProjectsLocation|Získá nebo nastaví (String)|Určuje výchozí adresář, ve kterém se uloží nové projekty.|
@@ -143,7 +143,7 @@ Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 ::: moniker range="vs-2017"
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |OnStartUp|Get/Set (Enum)|Akce se má provést při spuštění z <xref:EnvDTE.vsStartUp>, s hodnotami 0 až 5:<br /><br /> -   0: Otevřít domovskou stránku<br />-   1: Načíst poslední načtené řešení<br />-   2: Zobrazit **otevřít projekt** dialogové okno<br />-   3: Zobrazit **nový projekt** dialogové okno<br />-   4: Zobrazit prázdné prostředí<br />-   5: Zobrazit úvodní stránku|
 |StartPageRSSUrl|Získá nebo nastaví (String)|Adresa URL pro informační kanál RSS informačního kanálu, který se používá při spuštění.|
@@ -154,7 +154,7 @@ Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 ::: moniker range=">=vs-2019"
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |OnStartUp|Get/Set (Enum)|Akce se má provést při spuštění z <xref:EnvDTE.vsStartUp>.|
 
@@ -164,7 +164,7 @@ Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 `DTE.Properties("Environment", "TaskList")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |ConfirmTaskDeletion|Get/Set (Boolean)|Určuje, zda potvrzovací okno se zobrazí při odstraňování úlohy **seznamu úkolů**.|
 |WarnOnAddingHiddenItem|Get/Set (Boolean)|Určuje, zda se zobrazí upozornění při přidávání uživatele úlohu, která se nezobrazí.|
@@ -175,7 +175,7 @@ Tento článek popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 `DTE.Properties("Environment", "WebBrowser")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |Domovská stránka|Získá nebo nastaví (String)|Představuje adresu URL domovské stránky.|
 |SearchPage|Získá nebo nastaví (String)|Představuje adresu URL stránky vyhledávání.|

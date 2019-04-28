@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a41b9286ba35351a0dea91d87a4852319a94e93
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969277"
 ---
 # <a name="options-page-debugging-node-properties"></a>Stránka Možnosti, vlastnosti uzlu ladění
 Následující tabulky popisují stránky (nebo kolekce vlastností), které jsou přidruženy **ladění** kategorie, `DTE.Properties("Debugging", <Property Page>)` z **možnosti** dialogové okno.
@@ -21,7 +21,7 @@ Následující tabulky popisují stránky (nebo kolekce vlastností), které jso
 ## <a name="general"></a>Obecné
  `DTE.Properties("Debugging", "General")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Boolean)|Určuje, zda ladicí program zobrazí výzvu k zadání oprávnění před smazáním všech zarážek v projektu.|
 |BreakAllProcesses|Get/Set (Boolean)|Určuje, zda ladicí program zruší všechny procesy pokaždé, když se jeden přeruší.|
@@ -51,7 +51,7 @@ Následující tabulky popisují stránky (nebo kolekce vlastností), které jso
 ## <a name="edit-and-continue"></a>Upravit a pokračovat
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Boolean)|Určuje, zda je povoleno upravit a pokračovat. Tato možnost se vztahuje na všechny jazyky, které podporují funkce upravit a pokračovat.|
 |InvokedByCommands|Get/Set (Boolean)|Určuje, zda funkce upravit a pokračovat automaticky aplikuje změny kódu když uživatel vybere příkaz ladění, jako **krok** nebo **pokračovat**. Tato možnost se týká pouze nativního kódu.|
@@ -63,7 +63,7 @@ Následující tabulky popisují stránky (nebo kolekce vlastností), které jso
 ## <a name="just-in-time"></a>za běhu
  `DTE.Properties("Debugging", "JustInTime")`
 
-|Název položky vlastnosti|Hodnota|Popis|
+|Název položky vlastnosti|Value|Popis|
 | - |-----------|-----------------|
 |JitManaged|Get/Set (Boolean)|Určuje, zda je povoleno ladění za běhu pro spravovaný kód.|
 |JitNative|Get/Set (Boolean)|Určuje, zda je povoleno ladění za běhu pro nativní kód.|

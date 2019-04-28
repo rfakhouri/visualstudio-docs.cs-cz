@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 82582936f2d9165a0aebea9e6000af24baf59941
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977430"
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Vytvořit vazbu k aktivitě&#39;dialogové okno Vlastnosti s (starší verze)
 Toto téma popisuje, jak používat **vytvořit vazbu na vlastnost aktivity** dialogové okno v starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

@@ -19,11 +19,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: a08a14d8d07248efdcac759852a38777745e9a51
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58789715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951549"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Upravit sadu Visual Studio přidáním nebo odebráním úlohy a komponenty
 

@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f070b02c9b91420fab9058e3d33aa682334f9cd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974667"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Práce s řešeními jazyka specifického pro doménu
 Vytvoření jazyka specifického pro doménu (DSL) pomocí řešení sady Visual Studio. Tato část se o tom, jak vytvořit a upravit řešení.

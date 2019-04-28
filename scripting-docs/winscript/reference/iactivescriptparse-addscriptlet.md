@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ee5d76060789118e9051c2d8dcc5fc570617f6a8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954951"
 ---
 # <a name="iactivescriptparseaddscriptlet"></a>IActiveScriptParse::AddScriptlet
 Přidá skriptlet kódu do skriptu. Tato metoda se používá v prostředích, kde trvalý stav souboru, který je vzájemně propojeny s dokumentem hostitele a hostitele je zodpovědný za obnovení skript, nikoli prostřednictvím `IPersist*` rozhraní. Primární příklady jsou skriptovací jazyky HTML, které umožňují skriptlety kód vložený v dokumentu HTML připojené na vnitřní události (například ONCLICK="button1.text='Exit" ").  

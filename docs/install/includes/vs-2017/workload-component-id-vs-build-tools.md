@@ -10,11 +10,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 703d1595373f29926984c5380ba3167083a4318c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57554632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968420"
 ---
 ## <a name="azure-development-build-tools"></a>Nástroje sestavení pro vývoj pro Azure
 
@@ -226,7 +226,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Nástroje statické ana
 Microsoft.VisualStudio.Component.VC.Tools.ARM | Kompilátory jazyka Visual C++ a knihovny pro ARM | 15.8.27825.0 | Požadováno
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 verze 15.9 v14.16 nejnovější nástroje v141 pro | 15.9.28230.55 | Požadováno
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Požadavky na sestavování univerzální platforma Windows | 15.8.27705.0 | Požadováno
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Doporučeno
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Doporučené
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | volitelná,
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | volitelná,
@@ -257,8 +257,8 @@ Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Distribuovatelné součá
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 verze 15.9 v14.16 nejnovější nástroje v141 pro | 15.9.28230.55 | Požadováno
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 15.6.27406.0 | Požadováno
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Základní funkce – Build Tools testovacích nástrojů | 15.7.27625.0 | Doporučeno
-Microsoft.VisualStudio.Component.VC.CMake.Project | Nástroje Visual C++ pro CMake | 15.9.28307.102 | Doporučeno
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Doporučeno
+Microsoft.VisualStudio.Component.VC.CMake.Project | Nástroje Visual C++ pro CMake | 15.9.28307.102 | Doporučené
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Doporučené
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 15.6.27309.0 | volitelná,
 Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 15.6.27406.0 | volitelná,
 Microsoft.Net.Component.4.6.1.TargetingPack | Rozhraní .NET framework 4.6.1 targeting pack | 15.6.27406.0 | volitelná,

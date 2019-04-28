@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 226056f139e45f432d757aff8f8774b013742de3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946599"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Nelze přiřazovat hodnoty do výsledku funkce
 Jste se pokusili pro přiřazení hodnoty do výsledku funkce. Výsledek funkce může být přiřazen proměnné, ale nelze ji použít jako proměnná. Pokud chcete přiřadit novou hodnotu samotné funkce, vynechejte závorky (operátor volání funkce). Následující příklad ukazuje situaci, ve kterém se tato chyba je generována.  

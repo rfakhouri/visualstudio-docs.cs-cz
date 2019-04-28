@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f717345689de9be640e03e9c7d81726a57d494b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008306"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Návod: Vytvoření pracovního postupu aktivity vlastního webu
   Tento návod ukazuje, jak vytvořit vlastní aktivitu pro pracovní postup na úrovni serveru pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Pracovní postupy na úrovni serveru platí pro celý web, nikoli pouze seznam na webu.) Vlastní aktivita vytvoří zálohu seznam oznámení a pak do něj zkopíruje obsah seznam oznámení.

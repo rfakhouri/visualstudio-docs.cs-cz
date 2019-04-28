@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952720"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Vytváření balíčků řešení služby SharePoint
   Pomocí návrháře balíčků, můžete vytvořit a přizpůsobit balíčky pro nasazení. Například můžete přidat položky Sharepointového projektu a funkce, obnovit server služby IIS, nastavit obory aktivace funkce a určit funkce závislostí. Návrhář také vygeneruje manifest, soubor XML, který popisuje každý balíček.

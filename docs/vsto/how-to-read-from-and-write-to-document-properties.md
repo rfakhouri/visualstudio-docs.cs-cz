@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ac0d81c9e42a5c3aa22a09d59f346e6127b1284f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961563"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Postupy: Čtení a zápis do vlastnosti dokumentu
   Můžete uložit vlastnosti dokumentu společně s dokumentem. Aplikace Office poskytují celou řadou integrované vlastnosti, jako je například autor, název a předmět. Toto téma ukazuje, jak nastavit vlastnosti dokumentu v aplikaci Microsoft Office Excel a Microsoft Office Word.

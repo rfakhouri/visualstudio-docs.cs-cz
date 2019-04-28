@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f2f9111acf656bf882a3d506fe95b8361f3693ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006205"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>Kódovaný identifikátor URI obsahuje neplatný znak
 Pokusili jste se kódování řetězec jako identifikátor URI (Uniform Resource Identifier), ale obsahuje neplatné znaky. I když většina znaky uvnitř řetězců, které má být převeden na identifikátory URI platný, některé sekvence znaků Unicode jsou neplatné.  

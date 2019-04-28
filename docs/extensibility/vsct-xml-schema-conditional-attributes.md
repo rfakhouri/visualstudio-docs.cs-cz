@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 73e48cfb0a30ca71592879c8276ef1be76cb973f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953138"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Podmíněné atributy VSCT XML schématu
 Podmíněné atributy můžete použít pro všechny seznamy a položky. Logické operátory a výrazy rozšíření symbol vyhodnocen na hodnotu true nebo false. Pokud je hodnota true, jsou přidružený seznam nebo položka je součástí výsledný výstup.

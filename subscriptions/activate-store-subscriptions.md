@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Zjistěte, jak aktivovat předplatná sady Visual Studio, které jste zakoupili v Microsoft Store.
 searchscope: VS Subscription
 ms.openlocfilehash: c6916e56e906df4e3d231f1942389e72ade4c9f3
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945886"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Jak si můžu aktivovat předplatného zakoupeného přes Microsoft Store?
 Pokud jste zakoupili předplatné sady Visual Studio přes Microsoft Store, postup aktivace můžete zahájit platby "Stránka potvrzení" nebo "Potvrzení e-mailu" jste obdrželi po zakoupení.

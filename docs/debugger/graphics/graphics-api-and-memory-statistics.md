@@ -12,14 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896016"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>Grafické rozhraní API a Statistika paměti
-<!-- VERSIONLESS --> Visual Studio 2017 nebo novější podporují nástroje statistiky grafické rozhraní API a Statistika paměti.  Tyto dva nástroje umožňují zobrazit různé části informace o použití rozhraní API Direct3D, jakož i spotřebu paměti GPU z různých zdrojů.
+<!-- VERSIONLESS -->
+Visual Studio 2017 nebo novější podporují nástroje statistiky grafické rozhraní API a Statistika paměti.  Tyto dva nástroje umožňují zobrazit různé části informace o použití rozhraní API Direct3D, jakož i spotřebu paměti GPU z různých zdrojů.
 
 ## <a name="graphics-api-statistics"></a>Statistika API grafiky
 Statistika API grafiky v Diagnostika grafiky sady Visual Studio umožňuje zobrazit všechna volání rozhraní Direct3D, které byly provedeny a počet každé volání.  Chcete-li zobrazit okno, vyberte **zobrazení > Statistika API** položky nabídky.

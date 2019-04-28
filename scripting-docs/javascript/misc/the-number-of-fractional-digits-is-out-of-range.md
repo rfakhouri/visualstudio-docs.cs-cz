@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 09c1e2ac48f12e82d268311c114919c732a44073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006493"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>Počet míst za desetinnou čárkou je mimo rozsah
 Pokusili jste se neplatný argument předat do funkce **Number.prototype.toExponential**. Argument pro funkci **toExponential()** musí být mezi 0 a 20 (včetně).  

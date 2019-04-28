@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972288"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalizace a lokalizace řešení pro Excel
   Tato část obsahuje informace o důležité informace pro řešení Microsoft Office Excel, která se spustí na počítačích, které mají jiné než anglické jazykové nastavení pro Windows. Většinu aspektů globalizace a lokalizace řešení pro Microsoft Office jsou stejné jako dojde při vytvoření jiných typů řešení s využitím sady Visual Studio. Obecné informace najdete v tématu [Globalize a lokalizace aplikací](../ide/globalizing-and-localizing-applications.md).

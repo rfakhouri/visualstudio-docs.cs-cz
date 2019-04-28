@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fbbdba27b5ccc52e64575aad018af4ca20cf2e14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008771"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Integrace obchodních dat do služby SharePoint
   Integraci obchodních dat do služby SharePoint. Obchodní data můžou pocházet z back endové serverové aplikace, jako například [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel a SAP, nebo webové službě. Uživatelé mohou zobrazit, přidat, aktualizovat nebo odstranit obchodních dat s použitím externí seznamy nebo obchodní Data webových částí služby SharePoint.  Uživatelé mohou také přístup k těmto datům v režimu offline v aplikaci Microsoft Office, jako je například Microsoft Outlook. Další informace najdete v tématu [kde lze je zobrazit externí Data](http://go.microsoft.com/fwlink/?LinkId=169295).

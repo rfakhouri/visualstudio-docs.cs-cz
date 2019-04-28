@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c4943d1305c2f25de4eec9e782949a66827de879
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58144872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955088"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
 Obor názvů pro skript přidá knihovnu typů. Podobá se to `#include` direktiva v jazyce C/C++. Umožňuje, aby sada předdefinovaných položek, jako jsou definice tříd `typedefs`a s názvem konstanty mají být přidány do běhové prostředí skriptu k dispozici.  
@@ -51,7 +51,7 @@ HRESULT AddTypeLib(
  `dwFlags`  
  [in] Příznaky možností. Může být následující:  
   
-|Hodnota|Význam|  
+|Value|Význam|  
 |-----------|-------------|  
 |SCRIPTTYPELIB_ISCONTROL|Knihovna typů popisuje ovládací prvek ActiveX používá hostitel.|  
   

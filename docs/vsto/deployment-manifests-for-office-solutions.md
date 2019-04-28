@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3c96f0d87f5a49add1f0e8cebb61bab9659277e6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972392"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifesty nasazení pro řešení pro systém Office
   Manifest nasazení je soubor XML, který popisuje nastavení nasazení řešení pro Office a identifikuje aktuální verze aplikace.

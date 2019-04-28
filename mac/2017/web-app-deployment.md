@@ -6,11 +6,11 @@ ms.author: sayedha
 ms.date: 01/25/2019
 ms.assetid: d746292d-0570-424a-bf43-e16ab85bbf0d
 ms.openlocfilehash: db0d564a4ea2cdd641f03fc94df63eaf9fc3e3d0
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985980"
 ---
 # <a name="aspnet-core-web-app-deployment"></a>Nasazení webové aplikace ASP.NET Core
 
@@ -20,6 +20,6 @@ Důležitým krokem při vývoji webových aplikací je publikování (nasazení
 
 Pomocí sady Visual Studio for Mac můžete publikovat webové aplikace přímo do služby Azure App Service. K publikování vašich ASP.NET Core najdete webové aplikace do služby Azure App Service [publikovat do služby Azure App Service](publish-app-svc.md) článku.
 
-## <a name="publish-to-folder"></a>Publikovat do složky
+## <a name="publish-to-folder"></a>Publikování do složky
 
 Můžete také publikovat vaše webové aplikace ASP.NET Core do složky. Další informace o tom, jak můžete publikovat webové aplikace do složky najdete v tématu [publikovat do složky](publish-folder.md).

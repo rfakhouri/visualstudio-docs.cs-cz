@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Zjistěte, jak předplatitelská data jsou anonymní, když se ztratí přístup k předplatným.
 searchscope: VS Subscription
 ms.openlocfilehash: a4249aa2520df6e9c1870fec121de2fdb2135308
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946199"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymizace informace předplatitele sady Visual Studio
 

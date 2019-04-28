@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952737"
 ---
 # <a name="create-sharepoint-features"></a>Vytvoření funkcí služby SharePoint
   Funkce služby SharePoint můžete použít k seskupení souvisejících položek projektu služby SharePoint pro snazší nasazení. Můžete vytvořit funkce, nastavit obory a označit jiné funkce jako závislosti pomocí funkce návrháře služby SharePoint. Návrhář také vygeneruje manifest, který je soubor XML, který popisuje každou funkci.

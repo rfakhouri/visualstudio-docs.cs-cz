@@ -10,11 +10,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5efc22f6254ec0040dc4d767d7ac2831b4bd96f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949159"
 ---
 # <a name="state-machine-activity-designers"></a>Návrháři aktivit stavového stroje
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] obsahuje několik návrháře aktivit, které můžete použít při vytváření pracovního postupu. Tato část obsahuje návrhářů aktivit poskytované systémem umožňuje vytvářet a spravovat pracovní postupy stavu počítače. Následující témata popisují tyto návrhářů a pokyny, jak je používat.  

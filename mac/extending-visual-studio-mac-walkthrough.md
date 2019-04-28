@@ -6,11 +6,11 @@ ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
 ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62984092"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Rozšíření sady Visual Studio pro Mac návodu
 
@@ -20,7 +20,7 @@ Tento příklad používá Tvůrce Add-in. Doplněk tvůrce vytvoří novou šab
 
 1. Začněte tím, že spuštění sady Visual Studio pro Mac, pokud již není otevřen:
 
-   ![Visual Studio for Mac – snímek obrazovky](media/extending-visual-studio-mac-addin3.png)
+   ![Visual Studio for Mac Screenshot](media/extending-visual-studio-mac-addin3.png)
 
 2. Nainstalujte _balíček rozšíření Maker Add-in_ pomocí Správce rozšíření. V nabídce sady Visual Studio zvolte **rozšíření...** :
 
@@ -28,7 +28,7 @@ Tento příklad používá Tvůrce Add-in. Doplněk tvůrce vytvoří novou šab
 
 3. Přejděte na kartu galerie a typ `Addin Maker` do panelu hledání v pravé horní části. Vyberte doplněk Tvůrce kategorii vývoj Add-in a klikněte na <kbd>nainstalovat</kbd>. Pokud není nic se zobrazí, stiskněte tlačítko Aktualizovat a hledat znovu:
 
-   ![Správce doplňků](media/extending-visual-studio-mac-addin5.png)
+   ![Addin Manager](media/extending-visual-studio-mac-addin5.png)
 
 4. Teď, když je nainstalován doplněk tvůrce, můžete začít vytvářet balíček rozšíření. Začněte vytvořením nového řešení.
 

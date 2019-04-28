@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Zjistěte, jak správci můžou zpracovávat vypršela platnost předplatných sady Visual Studio
 searchscope: VS Subscription
 ms.openlocfilehash: 3008f570c32970de2764871132e3ddde3dda226c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945797"
 ---
 # <a name="handling-expired-subscriptions"></a>Zpracování vypršela platnost předplatných
 

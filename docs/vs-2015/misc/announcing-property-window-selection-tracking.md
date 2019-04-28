@@ -14,11 +14,11 @@ ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002452"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Oznamujeme vydání výběr vlastností okna Sledování
 Pokud budete chtít pracovat **vlastnosti** okno nebo **vlastnost** stránek, například formuláře, text nebo výběr, pro kterou chcete zobrazit vlastnosti, je nutné úplné znalosti toho, jak můžete koordinovat výběru. Například musíte vědět, jestli máte výběru jednoho nebo více výběrů. Bude potřeba oznámit typ vašeho výběru (jeden nebo více) pro integrované vývojové prostředí s využitím <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> rozhraní. Toto rozhraní poskytuje informace vyžadované **vlastnosti** okna.  

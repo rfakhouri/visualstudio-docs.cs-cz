@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 84b454ba663760c4d8cc600dcc0d508e56547619
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c0c5c6a1bfb161f8eed37cbf9c95740596977852
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388500"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Jak aktivovat pozastavení, obnovení a události na pozadí při ladění aplikací pro UWP v sadě Visual Studio
 Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) řídí stav spuštění aplikace – spuštění, pozastavení, pokračování a ukončení aplikace v reakci na akce uživatelů a stav zařízení. Při ladění, zakáže Windows tyto aktivační události. Toto téma popisuje, jak vyvolat tyto události v ladicím programu.
@@ -52,7 +52,7 @@ Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) �
  Můžete aktivovat události, které spustí úlohy na pozadí pro aplikaci z ladicího programu.
 
 > [!NOTE]
->  Ladicí program může spustit pouze události, které neobsahují data, jako jsou události, které signalizovat změnu stavu v zařízení. Budete muset ručně aktivovat úlohy na pozadí, které vyžadují vstup uživatele nebo jiná data.
+> Ladicí program může spustit pouze události, které neobsahují data, jako jsou události, které signalizovat změnu stavu v zařízení. Budete muset ručně aktivovat úlohy na pozadí, které vyžadují vstup uživatele nebo jiná data.
 
  Většina realistické způsob, jak spouštět událost úlohy na pozadí při vaší aplikace neběží. Aktivuje událost ve standardní relaci ladění je však také podporováno.
 

@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33617b71c8ba13c459df8bcf29fb8a51cf948299
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936454"
 ---
-# <a name="da0012-significant-amount-of-reflection"></a>DA0012: Objem odrazů
+# <a name="da0012-significant-amount-of-reflection"></a>DA0012: Velký počet reflexí
 
 |||
 |-|-|
@@ -30,7 +30,7 @@ ms.locfileid: "56621354"
 |Zpráva|Budete pravděpodobně používáte nadměrně reflexi. Je náročná operace.|
 |Typ pravidla|Upozornění|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Volání metody System.Reflection například metodu InvokeMember a GetMember nebo typ metody, jako je například MemberInvoke je podstatnou část dat profilování. Pokud je to možné, zvažte nahrazení tyto metody s časná vazba metod závislá sestavení.
 
 ## <a name="rule-description"></a>Popis pravidla

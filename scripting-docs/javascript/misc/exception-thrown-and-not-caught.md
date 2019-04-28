@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bae4ed0a335a9c12d16cb46208f77c4b66f12547
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946326"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Byla vyvolána výjimka, která nebyla zachycena
 Můžete zahrnout `throw` příkaz v kódu, ale nebyl uzavřený do složených závorek **zkuste** bloku, nebo byla již přidružené **catch** bloku zachytávat chyby. Jsou výjimky vyvolány v rámci **zkuste** blokovat, s využitím **throw** příkaz a zachycené mimo **zkuste** blokovat s **catch** příkaz.  

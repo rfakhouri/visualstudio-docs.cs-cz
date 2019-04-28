@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5bf7c570c832fb5db5489a2a9f9bec459f26f0a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005952"
 ---
 # <a name="unterminated-comment"></a>Neukončený komentář
 Zahájení bloku víceřádkových komentářů, ale neukončil správně ho. Víceřádkový komentáře začínají "/\*" kombinace a konec s naopak "\*/" kombinaci. Následuje příklad:  

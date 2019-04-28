@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Další informace o předplatné školení Pluralsight, který je součástí vybraných předplatných sady Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: f0028d8dffb70e38ef818a8de7945b22f9664328
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947479"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 

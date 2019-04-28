@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949484"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Spolupráce na vývoji řešení pro systém Office
   Více vývojářů může pracovat na projektu pro Office v stejně, jako jsou spolupráce na jiné projekty sady Visual Studio. Visual Studio správně vyhledá instalace Microsoft Office na každém počítači i v případě Office je nainstalovaná v různých umístěních. Existují však některé důležité informace, je potřeba vědět.

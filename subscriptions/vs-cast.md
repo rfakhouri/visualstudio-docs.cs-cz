@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Další informace o benefitech PŘETYPOVÁNÍ zvýrazněte k dispozici ve vybraných předplatných sady Visual Studio
 searchscope: VS Subscription
 ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947892"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Zvýrazněte PŘETYPOVÁNÍ výhoda v předplatných sady Visual Studio
 

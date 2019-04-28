@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Přihlaste se k odběru předplatného MSDN Magazine součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947346"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Výhoda MSDN Magazine v předplatných sady Visual Studio
 

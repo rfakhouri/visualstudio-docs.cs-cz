@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5c034a34c5ae9b8bdaad5dbd14da2fb571c8dac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968090"
 ---
 # <a name="visualize-code"></a>Vizualizace kódu
 
@@ -37,7 +37,7 @@ Jaké edice sady Visual Studio podporují jednotlivé funkce najdete v tématu [
 |||
 |-|-|
 |**Pochopení kódu a jejích vztahů:**<br /><br /> Mapovat vztahy mezi konkrétní části kódu.<br /><br /> Zobrazit přehled vztahů v kódu pro celé řešení.|- [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br />- [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
-|**Principy struktur třídy:**<br /><br /> Vizualizujte strukturu tříd v projektu tak, že vytvoříte diagramů tříd z kódu.|[Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
+|**Principy struktur třídy:**<br /><br /> Vizualizujte strukturu tříd v projektu tak, že vytvoříte diagramů tříd z kódu.|[Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
 |**Popis návrhu systému vysoké úrovně a ověření kódu proti tohoto návrhu:**<br /><br /> Popis návrhu vysoké úrovně systému a jeho zamýšlených závislostí tak, že vytvoříte diagramů závislostí. Ověření kódu proti tohoto návrhu zajistit, aby zůstaly konzistentní s návrhem závislosti v kódu.|- [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />- [Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)<br />- [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="see-also"></a>Viz také:

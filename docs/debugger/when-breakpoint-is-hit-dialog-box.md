@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4cc3c2366ca20328f591b0661e8c2b3e5af1e45
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929196"
 ---
-# <a name="when-breakpoint-is-hit-dialog-box"></a>Dialogové okno Při průchodu zarážkou
+# <a name="when-breakpoint-is-hit-dialog-box"></a>Dialogové okno Když je volána zarážka
 V tomto dialogovém můžete přizpůsobit akci, která nastane, pokud je dosaženo zarážky.
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní

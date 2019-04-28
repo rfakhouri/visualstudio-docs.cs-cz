@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2514454f1aa1c1899c45edac80f7990d8208fdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9e27478255ccd8f3d5c2786fdfc806fa4f5c0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387018"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testování aplikací pro UPW a aplikací pro Windows Phone 8.1 pomocí programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +125,7 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
      V Průzkumníku řešení otevřete soubor CodedUITest1.vb. V CodedUITestMethod1() kódu metody testování, klikněte pravým tlačítkem na volání výrazu metody, které bylo automaticky přidáno `Me.UIMap.AssertMethod1()` a zvolte **přejít k definici**. Tím otevřete soubor UIMap.Designer.vb v editoru kódu, můžete zobrazit kód, který jste přidali pro metodu assert a ovládací prvky.  
   
     > [!WARNING]
-    >  Přímo neupravujte soubor UIMap.designer.cs ani UIMap.Designer.vb. Pokud to uděláte, změny do souboru budou přepsány pokaždé, když je generován test.  
+    > Přímo neupravujte soubor UIMap.designer.cs ani UIMap.Designer.vb. Pokud to uděláte, změny do souboru budou přepsány pokaždé, když je generován test.  
   
      **Assert – metoda**  
   

@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Další informace o předplatném školení Datacampu součástí vybraných předplatných sady Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: 5d6f9d2a642a13b350e539383a1abb74835bf9d3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948064"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhoda Datacampu školení v předplatných sady Visual Studio
 

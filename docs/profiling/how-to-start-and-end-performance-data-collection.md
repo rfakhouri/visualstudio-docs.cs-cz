@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c570145c2a8eae887de691c2507683dddb93b2cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996105"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>Postupy: Zahájení a ukončení shromažďování dat o výkonu
 Je nutné přidat cílový binární soubor, který chcete Profilovat, do relace výkonu, před zahájením profilování. Chcete-li přidat cíl, klikněte pravým tlačítkem na **cíle** v **prohlížeč výkonu**a potom klikněte na tlačítko **přidat cílový binární**. V **přidat cílový binární** dialogové okno, vyberte název souboru a pak klikněte na tlačítko **otevřít**. Přidání nové binární soubor.

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: db0a97c01d948a0c26850ebd1c3f47c6e3900614
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935794"
 ---
 # <a name="iactivescriptaddnameditem"></a>IActiveScript::AddNamedItem
 Přidá do oboru názvů skriptovací stroj název položky kořenové úrovně. Kořenovou položku je objekt s vlastností a metod, zdroj událostí nebo všechny tři.  
@@ -43,7 +43,7 @@ HRESULT AddNamedItem(
  `dwFlags`  
  [in] Příznaky spojené s položkou. Může být kombinací těchto hodnot:  
   
-|Hodnota|Význam|  
+|Value|Význam|  
 |-----------|-------------|  
 |SCRIPTITEM_CODEONLY|Označuje, že pojmenovanou položku představuje objekt jen pro kód a že hostitel nemá žádné `IUnknown` mají být spojeny s tímto objektem pouze kód. Hostitel má jenom název pro tento objekt. Tento příznak by objektově orientované jazyků C++, vytvořte třídu. Ne všechny jazyky podporují tento příznak.|  
 |SCRIPTITEM_GLOBALMEMBERS|Označuje, že položka je kolekce globální vlastnosti a metody asociované s skriptu. Za normálních okolností byste skriptovací stroj ignorovat název objektu (jiné než za účelem použití jako soubor cookie pro [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) metodu, nebo pro vyřešení explicitní oborů) a zobrazit její členy jako globální proměnné a metody. To umožňuje hostiteli rozšíření knihovny (běhové funkce a tak dále) k dispozici ke skriptu. Je ponecháno na vypořádat s názvem skriptovací stroj je v konfliktu (například když dvě položky SCRIPTITEM_GLOBALMEMBERS mají metody se stejným názvem), i když by neměl být vrácena chyba z důvodu této situaci.|  

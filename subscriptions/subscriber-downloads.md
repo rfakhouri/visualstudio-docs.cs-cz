@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Zjistěte, jak vyhledat a stáhnout produkty Microsoftu, které jsou součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953703"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Pomocí odběratele soubory ke stažení v předplatných sady Visual Studio
 Jako součást vaší výhody pro předplatitele máte přístup k široké škále stažení softwaru.

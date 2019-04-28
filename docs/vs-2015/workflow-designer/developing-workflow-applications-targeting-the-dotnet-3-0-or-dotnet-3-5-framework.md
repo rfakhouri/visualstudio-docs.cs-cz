@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cd7252605fd8c642c0bb331667543b1c67f9d95f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938490"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Vývoj aplikací pracovních postupů určených pro .NET Framework verze 3.0 nebo 3.5
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] poskytuje [!INCLUDE[wfd1](../includes/wfd1-md.md)] pro vytvoření [!INCLUDE[wf](../includes/wf-md.md)] aplikací, které se zaměřují [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Návrhář používá známá [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uživatelské rozhraní pro grafické vytváření a ladění aplikací pracovních postupů.  

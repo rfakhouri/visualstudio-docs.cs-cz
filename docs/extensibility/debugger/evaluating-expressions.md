@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: de25fca07642414ec42f17c2e458b90ce94041cb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925788"
 ---
 # <a name="evaluate-expressions"></a>Vyhodnocení výrazů
 Výrazy jsou vytvořeny z předáván z řetězce **automatické hodnoty**, **Watch**, **QuickWatch**, nebo **okamžité** systému windows. Při vyhodnocování výrazu generuje tisknutelný řetězec, který obsahuje název a typ proměnné nebo argumentu a jeho hodnotu. Tento řetězec se zobrazí v okně odpovídající integrovaného vývojového prostředí.

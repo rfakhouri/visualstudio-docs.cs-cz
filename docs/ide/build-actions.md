@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7820cbbe0477000c2a822e94f5204906d65025fa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975648"
 ---
 # <a name="build-actions"></a>Akce sestavení
 
@@ -40,6 +40,6 @@ Některé akce sestavení pro C# a soubory projektu Visual Basic jsou:
 
 ## <a name="see-also"></a>Viz také:
 
-- [C#možnosti kompilátoru](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)
+- [Možnosti kompilátoru jazyka C#](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)
 - [Možnosti kompilátoru jazyka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically)
 - [Vytvoření akce (Visual Studio for Mac)](/visualstudio/mac/build-actions)

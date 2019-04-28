@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8befb3da4e4b6f060a5f58aedec3604afe70aefb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58159046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992018"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
 Vrátí jednu standardní skript statistiky.  
@@ -41,7 +41,7 @@ HRESULT GetStat(
  `stid`  
  [in] Určuje, které statistiku k vrácení. Hodnota musí být:  
   
-|Konstanta|Hodnota|Popis|  
+|Konstanta|Value|Popis|  
 |--------------|-----------|-----------------|  
 |SCRIPTSTAT_STATEMENT_COUNT|1|Vrátí počet příkazů provést, protože spuštění skriptu nebo statistiku bylo obnoveno.|  
   
@@ -54,7 +54,7 @@ HRESULT GetStat(
 ## <a name="return-value"></a>Návratová hodnota  
  Metoda vrátí `HRESULT`. Možné hodnoty patří, ale nejsou omezeny pouze na hodnoty v následující tabulce.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   

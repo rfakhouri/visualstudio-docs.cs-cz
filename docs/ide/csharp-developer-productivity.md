@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07584f9e04be805ed699676c678b2147ec3679ff
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
-ms.translationtype: MT
+ms.openlocfilehash: 3e1f82a58dac3b0a6f607d1de7f881c5de9e91aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973281"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Produktivita nástroje Visual Studio Příručka pro C# vývojáře
 
@@ -154,10 +154,12 @@ Stáhněte si [IntelliCode rozšíření](https://marketplace.visualstudio.com/i
 Spouští se v sadě Visual Studio 2017, jsou četná vylepšení v testovacím prostředí. Můžete otestovat pomocí MSTest v1, MSTest v2, NUnit nebo XUnit rozhraní pro testování.
 
 - **Průzkumník testů** zjišťování testů je rychlá.
-- Uspořádání testů v **Průzkumník testů** s *řazení hierarchických*.
-- [Živé testování částí](../test/live-unit-testing.md) nepřetržitě spouští testy vliv změny kódu a aktualizuje vložené editor ikon s oznámením stav testů. Zahrnout nebo vyloučit určité testy nebo testování projektů ze sady testů za provozu.
 
-![Hierarchické zobrazení pro Text Explorer v sadě Visual Studio](../ide/media/VSGuide_Testing.png)
+- Uspořádání testů v **Průzkumník testů** s *řazení hierarchických*.
+
+   ![Hierarchické zobrazení pro Text Explorer v sadě Visual Studio](../ide/media/VSGuide_Testing.png)
+
+- [Živé testování částí](../test/live-unit-testing.md) nepřetržitě spouští testy vliv změny kódu a aktualizuje vložené editor ikon s oznámením stav testů. Zahrnout nebo vyloučit určité testy nebo testování projektů ze sady testů za provozu. (Visual Studio Enterprise edition jen.)
 
 ## <a name="debugging"></a>Ladění
 
@@ -211,5 +213,5 @@ Tady je seznam editoru a produktivitu funkcí pro zajištění efektivnějšího
 | Povolení úplné analýzy řešení | Zobrazit všechny chyby ve vašem řešení v **seznam chyb** | **Nástroje** > **možnosti** > **textový Editor** > **jazyka C#** > **Advanced**   >  **Povolení úplné analýzy řešení** |
 | Povolit navigaci na dekompilované zdroje | Povolit přejít k definici pro typy nebo členy z externích zdrojů a ILSpy decompiler znázornit těl metod. | **Nástroje** > **možnosti** > **textový Editor** > **jazyka C#** > **Advanced**   >  **Povolit navigaci na dekompilované zdroje** |
 | Režim dokončování a návrhu | Změny chování při dokončování IntelliSense. Použít jinou než výchozí nastavení tady mají tendenci vývojářům IntelliJ pozadí. | **Nabídka** > **upravit** > **IntelliSense** > **přepnout režim dokončení** |
-| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Zobrazí odkaz na informace o kódu a změnit historii v editoru | **Nástroje** > **možnosti** > **textový Editor** > **všechny jazyky**  >   **Funkce CodeLens** |
+| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Zobrazí odkaz na informace o kódu a změnit historii v editoru. (Zdrojového CodeLens nejsou k dispozici v aplikaci Visual Studio Community edition, ukazatele.) | **Nástroje** > **možnosti** > **textový Editor** > **všechny jazyky**  >   **Funkce CodeLens** |
 | [Fragmenty kódu](../ide/visual-csharp-code-snippets.md) | Nápověda zástupných procedur na společný kód často používaný text | Zadejte název fragmentu kódu a stiskněte klávesu **kartu** dvakrát. |

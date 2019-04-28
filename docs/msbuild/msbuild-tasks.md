@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90b6731cf75a1825139aba57fe8491cd7cb0253f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004561"
 ---
 # <a name="msbuild-tasks"></a>úlohy nástroje MSBuild
 Platformy sestavení musí být schopné spustit libovolný počet akcí během procesu sestavení. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] používá *úlohy* k provedení těchto akcí. Úkol je jednotka spustitelný kód, který používá [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k operacím atomického sestavení.

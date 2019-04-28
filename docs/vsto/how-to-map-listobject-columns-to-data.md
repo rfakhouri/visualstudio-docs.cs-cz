@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a37c0f12943d60f67ee0d17b15315ac85af509d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967882"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Postupy: Mapování sloupců objektu ListObject na data
   Po vytvoření vazby <xref:Microsoft.Office.Tools.Excel.ListObject> mít pod kontrolou <xref:System.Data.DataTable>, možná nebudete chtít zobrazit všechny sloupce v seznamu, nebo může být některé sloupce, které nejsou vázány na data. Můžete namapovat sloupce, které chcete zobrazit v <xref:Microsoft.Office.Tools.Excel.ListObject> při volání <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody.

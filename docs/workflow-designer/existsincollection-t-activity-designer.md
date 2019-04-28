@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06892bcfdca33e5e77e8c01f06f594849e5293e5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949718"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > návrháře aktivit
 
@@ -46,6 +46,6 @@ Následující tabulka ukazuje <xref:System.Activities.Statements.ExistsInCollec
 ## <a name="see-also"></a>Viz také:
 
 - [Kolekce](../workflow-designer/collection-activity-designers.md)
-- [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)
+- [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
 - [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)
 - [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)

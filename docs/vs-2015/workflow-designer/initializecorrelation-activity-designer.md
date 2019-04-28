@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 383a2e892c8f0962ab8c09d5e8984d3cc570ebaa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979979"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Návrhář aktivity InitializeCorrelation
 **InitializeCorrelation** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivitu, která se používá k navázání korelace mezi zprávy před odesláním nebo jejich přijetí.  

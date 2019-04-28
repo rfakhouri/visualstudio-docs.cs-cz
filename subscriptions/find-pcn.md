@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Zjistěte, jak najít vaše veřejné zákaznické číslo (PCN) nebo autorizační číslo
 searchscope: VS Subscription
 ms.openlocfilehash: b24654828cb0e44d6e064c01825feaaaff4558b0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946120"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Kde najdu své "Veřejné zákaznické číslo" (PCN) nebo autorizační číslo?
 

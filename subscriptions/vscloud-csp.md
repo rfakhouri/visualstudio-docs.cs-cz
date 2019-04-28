@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Informace pro poskytovatele Cloud Solution Provider, jak zakoupit a spravovat předplatné cloudu Visual Studio pro vaše zákazníky.
 searchscope: VS Subscription
 ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978507"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Nákup a správa cloudových předplatných sady Visual Studio pro vaše zákazníky
 
@@ -78,7 +78,7 @@ Chcete-li zobrazit ceny sady Visual Studio pro partnery CSP, přihlaste se [part
 
 Tady je postup pro interpretaci, co vidíte na tuto tabulku:
 
-| Kategorie měřiče    |   Name                 |  Jednotky                                |           Toto je                          |
+| Kategorie měřiče    |   Název                 |  Jednotky                                |           Toto je                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Předplatné                         | Měsíční předplatné sady Visual Studio Enterprise   |
 | Visual Studio     | Professional           |  Předplatné                         | Měsíční předplatné sady Visual Studio Professional |

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966975"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Postupy: Přidání nebo odebrání funkcí a položek z balíku pomocí návrháře balíčků
   Když vytvoříte řešení služby SharePoint, Visual Studio přidá výchozí funkce služby SharePoint do balíčku v řešení. Před posledním nasazení můžete přidávat a odebírat položky Sharepointového projektu a funkce, které chcete upravit balíček Sharepointu.

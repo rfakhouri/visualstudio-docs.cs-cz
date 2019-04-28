@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb56f7ef08241aed2e109e6845af8fb596cb42e4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895377"
 ---
 # <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
 Definuje výchozí název souboru pro soubor protokolu grafiky.
@@ -27,7 +27,7 @@ Definuje výchozí název souboru pro soubor protokolu grafiky.
 #### <a name="parameters"></a>Parametry
  `filename` Název souboru zadaný ve výchozím nastavení pro soubor protokolu grafiky při informací grafiky je zachycena prostřednictvím kódu programu.
 
-## <a name="value"></a>Hodnota
+## <a name="value"></a>Value
  Řetězcový literál, který představuje název souboru grafiky souboru protokolu. Ve výchozím nastavení, L"default.vsglog".
 
 ```C++

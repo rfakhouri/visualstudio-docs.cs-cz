@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3396aee8c044ee9b84d7d6256c6ad69a99965170
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58158864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954883"
 ---
 # <a name="iactivescriptparseparsescripttext"></a>IActiveScriptParse::ParseScriptText
 Analyzuje daný skriptlet kódu, přidává deklarace do oboru názvů a hodnotí kód podle potřeby.  
@@ -55,7 +55,7 @@ HRESULT ParseScriptText(
 |`ulStartingLineNumber`|[in] Založený na nule hodnota, která určuje, který řádek, začne analýza.|  
 |`dwFlags`|[in] Příznaky spojené se skriptletem. Může být kombinací těchto hodnot:|  
   
-|Hodnota|Význam|  
+|Value|Význam|  
 |-----------|-------------|  
 |SCRIPTTEXT_ISEXPRESSION|Pokud rozdíl mezi výpočetním výrazem a prohlášení je důležitý, ale syntakticky dvojznačný ve skriptovacím jazyku, tento příznak určuje, že skriptlet má být interpretován jako výraz, nikoli jako příkaz nebo seznamu příkazů. Standardně se předpokládají příkazy, pokud se dá určit správnou volbu podle syntaxe textu skriptletu.|  
 |SCRIPTTEXT_ISPERSISTENT|Označuje, že by měla uložit kód přidaný během volání, pokud je uložen skriptovací stroj (například pomocí volání `IPersist*::Save`), nebo pokud skriptovací stroj obnoven pomocí přechodu zpět do stavu spuštění.|  

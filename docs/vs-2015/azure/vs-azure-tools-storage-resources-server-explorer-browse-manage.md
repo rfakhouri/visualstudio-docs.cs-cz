@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
 ms.openlocfilehash: 8f7044c44278410e1fc800e0e974847c090da0e3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963028"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procházení a správa prostředků úložiště pomocí Průzkumníka serveru
 

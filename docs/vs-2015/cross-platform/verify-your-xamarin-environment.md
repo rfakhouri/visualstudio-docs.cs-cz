@@ -6,12 +6,12 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8dd993f918d9f2d884b9e2d082a71c9c4eebc9cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5373f1fa9d6bb596e099f3b7396ef13c91ee5a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387645"
 ---
 # <a name="verify-your-xamarin-environment"></a>Ověření prostředí Xamarinu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Po dokončení instalační programy (viz [nastavení a instalaci](../cross-plat
  ![Vytvoření nového projektu z aplikace prázdné výsledky &#40;nativní přenosná&#41; šablony](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin ověřte 1")  
   
 > [!NOTE]
->  Pokud nejsou, zobrazí se šablony [jsou šablony projektu Xamarin chybí? Vyzkoušejte to](#missing) v dolní části této stránky.  
+> Pokud nejsou, zobrazí se šablony [jsou šablony projektu Xamarin chybí? Vyzkoušejte to](#missing) v dolní části této stránky.  
   
 ## <a name="android"></a>Android  
   
@@ -59,7 +59,7 @@ Po dokončení instalační programy (viz [nastavení a instalaci](../cross-plat
         - Pro Windows 7 a starší: místo toho vyberte přehrávač Xamarin pro Android v rozevíracím seznamu a stiskněte klávesu F5 ke spuštění. Podrobnosti o Xamarin Playeru, jeho Správce zařízení a tipy pro řešení potíží najdete [přehrávač Xamarin Android](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com).  
   
 > [!NOTE]
->  V sadě Visual Studio můžete si všimnout přítomnost Android Emulator Manager (AVD) tlačítko na panelu nástrojů (Zobrazit níže), které se otevře Správce zařízení, které se konkrétně používá ke konfiguraci emulátor Google Android.  To nemá žádný vliv na buď emulátor Visual Studia pro Android nebo Xamarin Playeru, z nichž každý má své vlastní Správce zařízení pro konfiguraci profilů.  Zobrazit [představení sady Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (blogu Visual Studio ALM) a [přehrávač Xamarin Android](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) podrobnosti.  
+> V sadě Visual Studio můžete si všimnout přítomnost Android Emulator Manager (AVD) tlačítko na panelu nástrojů (Zobrazit níže), které se otevře Správce zařízení, které se konkrétně používá ke konfiguraci emulátor Google Android.  To nemá žádný vliv na buď emulátor Visual Studia pro Android nebo Xamarin Playeru, z nichž každý má své vlastní Správce zařízení pro konfiguraci profilů.  Zobrazit [představení sady Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (blogu Visual Studio ALM) a [přehrávač Xamarin Android](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) podrobnosti.  
 > ![CrossPlat Xamarin Verify 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin Verify 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  

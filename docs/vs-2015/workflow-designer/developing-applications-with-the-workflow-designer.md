@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977012"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Vývoj aplikací pomocí návrháře postupu provádění
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] Vizuálního návrháře a ladicí program pro grafický procesu vytváření a ladění [!INCLUDE[wf](../includes/wf-md.md)] aplikací v [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] , která je hostována v [!INCLUDE[vs2010](../includes/vs2010-md.md)] vývojové prostředí. Umožňuje sestavit aplikace složený pracovního postupu, knihovna aktivit nebo [!INCLUDE[indigo1](../includes/indigo1-md.md)] službu pomocí šablony a návrháři aktivit. [!INCLUDE[crabout](../includes/crabout-md.md)] pracovní postupy, najdete v článku [Windows Workflow Foundation &#91;rozhraní .NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  

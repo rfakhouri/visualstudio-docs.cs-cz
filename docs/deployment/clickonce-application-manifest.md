@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be9bfe19b92740d6be6c91802d193bf2fc401847
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928962"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce – manifest aplikace
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikace je soubor XML, který popisuje aplikace, která se nasadí pomocí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
@@ -33,7 +33,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu ap
 | [Element \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-application.md) | Povinný parametr. Určuje primární sestavení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
 | [Element \<trustInfo>](../deployment/trustinfo-element-clickonce-application.md) | Identifikuje požadavky na zabezpečení aplikace. | Žádné |
 | [\<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md) | Povinný parametr. Určuje vstupní bod pro kód aplikace. | `name` |
-| [Element \<dependency>](../deployment/dependency-element-clickonce-application.md) | Povinný parametr. Identifikuje každou závislost vyžaduje pro spuštění aplikace. Volitelně určuje sestavení, které je potřeba provést. | Žádné |
+| [Element \<dependency>](../deployment/dependency-element-clickonce-application.md) | Povinný parametr. Identifikuje každou závislost vyžaduje pro spuštění aplikace. Volitelně určuje sestavení, které je potřeba provést. | Žádný |
 | [Element \<file>](../deployment/file-element-clickonce-application.md) | Volitelné. Identifikuje každý nonassembly soubor, který používá aplikace. Izolace dat modelu COM (Component Object) přidružené k souboru může obsahovat. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
 | [Element \<fileAssociation>](../deployment/fileassociation-element-clickonce-application.md) | Volitelné. Určuje příponu souboru, který se má přidružit aplikaci. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 

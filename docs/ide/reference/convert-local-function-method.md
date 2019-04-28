@@ -1,5 +1,5 @@
 ---
-title: Převod místní funkce na metodu
+title: Převést metodu místní funkce
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,39 +10,39 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96064b16e53081e0456ed43275acd5edf7ead468
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a580077528c87e62f81e840ed6dee76ff1eac57f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968271"
 ---
-# <a name="convert-local-function-to-method"></a>Převod místní funkce na metodu
+# <a name="convert-a-local-function-to-a-method"></a>Převést metodu místní funkce
 
 Tento refaktoring platí pro:
 
 - C#
 - Visual Basic
 
-**Co:** Převést metodu místní funkce
+**Co:** Lokální funkce převeďte na metodu.
 
 **Kdy:** Máte místní funkci, kterou chcete definovat mimo aktuální místní kontext.
 
-**Proč:** Můžete chtít převést místní funkci na metodu, takže ho můžete volat mimo místní kontext. Můžete chtít převést na metodu, když lokální funkce je stále příliš dlouhý. Definování v samostatné metodě díky váš kód lépe čitelný.
+**Proč:** Má být převeden místní funkci do metody tak, aby při volání mimo místní kontext. Můžete chtít převést na metodu, když lokální funkce je stále příliš dlouhý. Při definici funkce v samostatné metodě, je váš kód lépe čitelný.
 
 ## <a name="convert-local-function-to-method-refactoring"></a>Převést místní funkci na refaktoring – metoda
 
 1. Umístěte kurzor místní funkci.
 
-    ![Převod místní funkce na metodu](media/convert-local-function-to-method.png)
+    ![Převést místní funkci na ukázku kódu – metoda](media/convert-local-function-to-method.png)
 
 2. Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
 
-    ![Převést místní funkci na opravu kódu – metoda](media/convert-local-function-to-method-codefix.png)
+    ![Převést místní funkci na ukázku opravu kódu – metoda](media/convert-local-function-to-method-codefix.png)
 
-2. Stisknutím klávesy **Enter** tak, aby přijímal operací refaktoringu.
+2. Stisknutím klávesy Enter můžete potvrdit přijetí operací refaktoringu.
 
-    ![Převést na výsledek metody místní funkce](media/convert-local-function-to-method-result.png)
+    ![Místní funkce CONVERT ukázku výsledek – metoda](media/convert-local-function-to-method-result.png)
 
 ## <a name="see-also"></a>Viz také:
 

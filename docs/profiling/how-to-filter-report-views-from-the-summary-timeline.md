@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57065a7b258e8f9a2491332250cb38919bcb7910
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973796"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Postupy: Filtrování zobrazení sestav ze souhrnné časové osy
 Můžete filtrovat data, která se zobrazí v sestavách výkonu tak, že zadáte čas segment v časové osy grafu souhrnné zobrazení. Při filtrování sestavy se mají zahrnout jenom časového úseku, který jste zadali reanalyzed soubor dat profilování.

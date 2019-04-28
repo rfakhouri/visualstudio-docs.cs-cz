@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6fac3676c96e3f9ebc69b34f688ad52efd1e7248
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934853"
 ---
 # <a name="expected-"></a>Byl očekáván znak '{'
 Jste nezahrnuli levou složenou závorku, který označuje začátek těla funkce. Kód, který tvoří tělo funkce, i když je jeden řádek, musí být obsažen v levé a pravé složené závorky. Všimněte si, že je přísnější než ve smyčkách použijte složené závorky do těla funkce.  

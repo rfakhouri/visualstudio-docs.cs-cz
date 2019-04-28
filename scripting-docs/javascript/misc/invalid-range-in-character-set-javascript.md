@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1cbfa4de401c2a1dc0626f8f00dbb0bd1bf24408
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007045"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Neplatný rozsah ve znakové sadě (JavaScript)
 Pokoušíte se o vytvoření regulárního výrazu s rozsahem sadě neplatný znak. Znakových sad musí být v rozsahu od jednotlivé znaky, jako je například a-z nebo 0-9; třídy znaků, jako je například \w nemůže obsahovat ve znakové sadě. První znak v rozsahu také musí být uvedena před druhým znakem v rozsahu. Příklad:  

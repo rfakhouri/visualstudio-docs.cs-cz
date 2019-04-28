@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 58735a36afd48132f919e370da5e27fd0c42a0f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956146"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Přizpůsobte pás karet pro aplikaci Outlook
   Při vlastním nastavení pásu karet v aplikaci Microsoft Office Outlook, musíte zvážit, kde se zobrazí váš vlastní pás karet v aplikaci. Aplikace Outlook zobrazí na pásu karet v hlavní aplikaci uživatelské rozhraní (UI) a v systému windows, které se otevřou při uživatelům provádět určité úlohy, jako je například vytváření e-mailové zprávy. Tyto aplikace pro windows jsou pojmenovány kontroly.

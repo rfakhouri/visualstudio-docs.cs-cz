@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949513"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Postupy: Definování a použití delegátů aktivit v návrháři postupu provádění
 
@@ -70,17 +70,17 @@ Rozhraní .NET framework 4.5 zahrnuje návrháře out-of-box <xref:System.Activi
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Použití vlastní aktivity v pracovním postupu
 
-1.  Sestavte projekt stisknutím kombinace kláves **Ctrl**+**Shift**+**B**.
+1. Sestavte projekt stisknutím kombinace kláves **Ctrl**+**Shift**+**B**.
 
-2.  V **Průzkumníka řešení**, otevřete **Workflow1.xaml** v návrháři.
+2. V **Průzkumníka řešení**, otevřete **Workflow1.xaml** v návrháři.
 
-3.  Přetáhněte **MyForEach** aktivitu z panelu nástrojů na plochu návrháře. Aktivita je v části nástrojů se stejným názvem jako projekt.
+3. Přetáhněte **MyForEach** aktivitu z panelu nástrojů na plochu návrháře. Aktivita je v části nástrojů se stejným názvem jako projekt.
 
-4.  Nastavte **položky** vlastnost **MyForEach** aktivitu **nové Object [] {1, "abc"}**.
+4. Nastavte **položky** vlastnost **MyForEach** aktivitu **nové Object [] {1, "abc"}**.
 
-5.  Přetáhněte <xref:System.Activities.Statements.WriteLine> aktivita z **primitiv** části panelu nástrojů **delegáta: Body** část **MyForEach** aktivity.
+5. Přetáhněte <xref:System.Activities.Statements.WriteLine> aktivita z **primitiv** části panelu nástrojů **delegáta: Body** část **MyForEach** aktivity.
 
-6.  Nastavte **Text** vlastnost <xref:System.Activities.Statements.WriteLine> aktivitu **Argument.ToString()**.
+6. Nastavte **Text** vlastnost <xref:System.Activities.Statements.WriteLine> aktivitu **Argument.ToString()**.
 
 Při spuštění pracovního postupu se konzola zobrazí následující výstup:
 

@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 20076e4f8cc05ad971a1cbe710c95f444b80938b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386891"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Používání 3D prostředků ve hře nebo aplikaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Tento článek popisuje, jak můžete [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 3. V části **vlastnosti konfigurace**, zvolte **Obecné**a poté v mřížce vlastností v rámci **Obecné**, nastavte **typ položky** vlastnost odpovídající obsahu kanálu typu položky. Například soubor obrázku nebo textury, zvolte možnost **kanál obsahu obrazu**.  
   
    > [!IMPORTANT]
-   >  Ve výchozím nastavení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] předpokládá, že mnoho druhů obrazových souborů zařadit pomocí **Image** typ, který je součástí položky [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Proto budete muset změnit **typ položky** vlastnosti každého obrázku, který má být zpracován kanálem obsahu obrázku. Jiné typy obsahu kanálu zdrojové soubory pro 3D modely a vizuálních shaderů grafiky výchozích hodnot **typ položky**.  
+   > Ve výchozím nastavení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] předpokládá, že mnoho druhů obrazových souborů zařadit pomocí **Image** typ, který je součástí položky [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Proto budete muset změnit **typ položky** vlastnosti každého obrázku, který má být zpracován kanálem obsahu obrázku. Jiné typy obsahu kanálu zdrojové soubory pro 3D modely a vizuálních shaderů grafiky výchozích hodnot **typ položky**.  
   
 4. Zvolte **OK** tlačítko.  
   
@@ -203,7 +203,7 @@ cbuffer MiscVars : register(b3)
 |Název|Popis|  
 |-----------|-----------------|  
 |[Postupy: Export textury obsahující mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Popisuje způsob použití obsahu kanálu obrazu pro export textury obsahující předem vypočtené mipmapy.|  
-|[Postupy: Export textury s Přednásobeným alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Popisuje způsob použití obsahu kanálu obrazu pro export textury obsahující předem vynásobené hodnoty alfa.|  
-|[Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Popisuje způsob použití obsahu kanálu obrázku k exportu textur, který lze použít v aplikaci Direct2D nebo JavaScript.|  
+|[Postupy: Export textury s přednásobenou hodnotou alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Popisuje způsob použití obsahu kanálu obrazu pro export textury obsahující předem vynásobené hodnoty alfa.|  
+|[Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Popisuje způsob použití obsahu kanálu obrázku k exportu textur, který lze použít v aplikaci Direct2D nebo JavaScript.|  
 |[Práce s 3D prostředky pro hry a aplikace](../designers/working-with-3-d-assets-for-games-and-apps.md)|Popisuje nástroje pro úpravy, které poskytuje Visual Studio pro vytváření a manipulaci se 3D prostředky, které zahrnují textury a obrázky, 3D modely a shadery.|  
-|[Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)|Popisuje, jak exportovat shader z Návrháře shaderu.|
+|[Postupy: Export shaderu](../designers/how-to-export-a-shader.md)|Popisuje, jak exportovat shader z Návrháře shaderu.|

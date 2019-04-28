@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 72b63c699b09081e843f36daeec3fcc556ebaf4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007370"
 ---
 # <a name="label-not-found"></a>Návěstí nebylo nalezeno
 Provedli jste odkaz na popisek, který neexistuje. Popisky lze použít k označení bloky kódu, ale v rámci zadaného oboru, musí být jedinečný.  

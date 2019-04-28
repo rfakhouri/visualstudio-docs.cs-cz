@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 64df7bd4c0d0dde303cdc15d7111688d14c7dc49
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58146978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935455"
 ---
 # <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
 Přidá skriptlet kódu jako podřízený objekt úrovni kořenového adresáře `IScriptNode` objektu. Na hostiteli může mít pouze dvě úrovně plně kvalifikovaný název skriptletu.  
@@ -70,7 +70,7 @@ HRESULT AddScriptlet(
 ## <a name="return-value"></a>Návratová hodnota  
  `HRESULT`. Možné hodnoty zahrnují hodnoty v následující tabulce, ale nejsou na ně omezeny.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |`S_OK`|Metoda byla úspěšná.|  
   

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6144ee367e7cf53ceb901bfe65cce9999f1e4680
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949060"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Shromažďování podrobných dat časování pro službu pomocí metody instrumentace z příkazového řádku profileru
 Tato část popisuje postupy a možnosti k shromažďování údajů o výkonu podrobná data služby Windows pomocí metody instrumentace z příkazového řádku.

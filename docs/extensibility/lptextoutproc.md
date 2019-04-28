@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ab1a2dcbf39be6f8e0366dcdccdaea168ad37c87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907267"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -63,7 +63,7 @@ Typ zprávy. Následující tabulka uvádí podporované hodnoty pro tento param
 
 ## <a name="return-value"></a>Návratová hodnota
 
-|Value|Popis|
+|Hodnota|Popis|
 |-----------|-----------------|
 |SCC_MSG_RTN_OK|Řetězec se zobrazí nebo operace byla úspěšně dokončena.|
 |SCC_MSG_RTN_CANCEL|Uživatel chce, aby na zrušení operace.|

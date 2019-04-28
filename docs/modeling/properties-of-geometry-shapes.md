@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1006fdb766c4c375c93a97f17cccd4e95568677
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998973"
 ---
 # <a name="properties-of-geometry-shapes"></a>Vlastnosti geometrických obrazců
 Obrazce geometrie můžete použít k určení, jak jsou instance třídy domény zobrazí v jazyka specifického pro doménu. Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md). Další informace o tom, jak pomocí těchto vlastností najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -41,7 +41,7 @@ Obrazce geometrie můžete použít k určení, jak jsou instance třídy domén
 |Základní obrazec geometrie|Základní třída tohoto obrazce.|(žádné)|
 |Název|Název tohoto obrazce.|Aktuální název|
 |Obor názvů|Obor názvů, který je přidružen s tímto obrazcem.|Aktuální obor názvů|
-|Popis typu|Jak popisek je definován (fixní, proměnná nebo žádný). Pokud pevně daná, a potom hodnoty `Fixed Tooltip Text` vlastnost se používá jako popis tlačítka; Pokud je proměnná, pak popisek je definován ve vlastním kódu.|Žádná|
+|Popis typu|Jak popisek je definován (fixní, proměnná nebo žádný). Pokud pevně daná, a potom hodnoty `Fixed Tooltip Text` vlastnost se používá jako popis tlačítka; Pokud je proměnná, pak popisek je definován ve vlastním kódu.|Žádné|
 |Poznámky|Neformální poznámky, které jsou spojeny s tímto elementem.|\<žádné >|
 |Počáteční výška|Počáteční výška tohoto obrazce v palcích.|1|
 |Počáteční šířka|Počáteční šířka tohoto obrazce v palcích.|1,5|

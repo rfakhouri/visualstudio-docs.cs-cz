@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2a1ddeb2b12d592c93bb0e5b88ba76c1b01c3c3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936550"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010: Náročná metoda GetHashCode
+# <a name="da0010-expensive-gethashcode"></a>DA0010: Náročná funkce GetHashCode
 
 |||
 |-|-|
@@ -30,7 +30,7 @@ ms.locfileid: "56625319"
 |Zpráva|Funkce GetHashCode by měly být levné a nepřidělovat paměti. Pokud je to možné snížit složitost funkce hodnoty hash.|
 |Typ zprávy|Upozornění|
 
-## <a name="cause"></a>příčina
+## <a name="cause"></a>Příčina
  Volání metody GetHashCode typu jsou podstatnou část dat profilování nebo metodu přidělí paměť.
 
 ## <a name="rule-description"></a>Popis pravidla
