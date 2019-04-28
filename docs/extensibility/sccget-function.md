@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434655"
 ---
 # <a name="sccget-function"></a>Sccget – funkce
 Tato funkce načte kopii jeden nebo více souborů pro zobrazení a kompilace, ale ne pro úpravy. Ve většině systémů jsou soubory označené jako jen pro čtení.
@@ -63,7 +63,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>Návratová hodnota
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:
 
-|Value|Popis|
+|Hodnota|Popis|
 |-----------|-----------------|
 |SCC_OK|Úspěšné operaci get.|
 |SCC_E_FILENOTCONTROLLED|Soubor není pod správou zdrojových kódů.|
@@ -81,7 +81,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL` Příznak je možné kombinovat s `SCC_GET_RECURSIVE` příznak načíst všechny soubory v daném adresáři a všech jeho podadresářích.
 
 > [!NOTE]
->  `SCC_GET_RECURSIVE` měl by být nikdy předán bez `SCC_GET_ALL`. Všimněte si také, že pokud adresáře *C:\A* a *C:\A\B* jsou předány v rekurzivní get, *C:\A\B* a všechny jeho podadresáře budou načítat skutečně dvakrát. Zodpovídá za rozhraní IDE, a ne zdrojový ovládací prvek modulu plug-in – abyste měli jistotu, že duplicitní položky, jako je například tento uchovávají mimo pole.
+> `SCC_GET_RECURSIVE` měl by být nikdy předán bez `SCC_GET_ALL`. Všimněte si také, že pokud adresáře *C:\A* a *C:\A\B* jsou předány v rekurzivní get, *C:\A\B* a všechny jeho podadresáře budou načítat skutečně dvakrát. Zodpovídá za rozhraní IDE, a ne zdrojový ovládací prvek modulu plug-in – abyste měli jistotu, že duplicitní položky, jako je například tento uchovávají mimo pole.
 
  Nakonec i v případě, že modul plug-in správy zdrojových kódů zadaný `SCC_CAP_GET_NOUI` příznak při inicializaci, která udává, že nemá žádné uživatelské rozhraní pro příkaz Get, tato funkce může stále volat integrovaným vývojovým prostředím, aby načítala soubory. Příznak jednoduše znamená, že rozhraní IDE nezobrazí položku nabídky Get a že modul plug-in není očekává poskytování uživatelského rozhraní.
 

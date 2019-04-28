@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 20e2b63e98969241dc91a24da81d4c170ef98b47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419728"
 ---
 # <a name="replace-in-files"></a>Nahradit v souborech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60082591"
 Nahradit v souborech ** umožňuje vyhledávání kódu zadané sady souborů pro řetězec nebo výraz a změnit některé nebo všechny nalezených shod. Nalezených shod a akcí provedených jsou uvedeny v **výsledky hledání** vybraný v interval **způsobit možnosti**.  
   
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Můžete použít některý z následujících metod k zobrazení **nahradit v souborech** v **najít a nahradit** okna.  
   
@@ -53,7 +53,7 @@ Nahradit v souborech ** umožňuje vyhledávání kódu zadané sady souborů pr
  Možnost výběru z **Hledat v** rozevíracího seznamu určuje, zda **nahradit v souborech** vyhledá pouze v současné době aktivní soubory, nebo vyhledá všechny soubory uložené v určitých složkách. Vyberte obor hledání v seznamu, zadejte cestu ke složce nebo klikněte na tlačítko **Procházet (...)**  tlačítka pro zobrazení **zvolit složky pro hledání** dialogového okna a vyberte sadu složek k prohledání. Můžete také zadat přímo do cesty **Hledat v** pole.  
   
 > [!NOTE]
->  Pokud **Hledat v** zaškrtnutou možnost způsobí, že vám umožní vyhledávat soubor, který jste rezervovali ve správě zdrojového kódu, je prohledána pouze verze tohoto souboru, který byl stažen do místního počítače.  
+> Pokud **Hledat v** zaškrtnutou možnost způsobí, že vám umožní vyhledávat soubor, který jste rezervovali ve správě zdrojového kódu, je prohledána pouze verze tohoto souboru, který byl stažen do místního počítače.  
   
 ## <a name="find-options"></a>Možnosti hledání  
  Můžete rozbalit nebo sbalit **možnosti hledání** oddílu. Následující možnosti můžete vybrané nebo zrušeno:  
@@ -88,7 +88,7 @@ Nahradit v souborech ** umožňuje vyhledávání kódu zadané sady souborů pr
  Při výběru, otevřete všechny soubory zůstanou ve kterých nahrazení byly provedeny, můžete vrátit zpět nebo uložte změny. Omezení paměti může být omezen počet souborů, které může zůstat otevřené po operaci nahradit.  
   
 > [!CAUTION]
->  Můžete použít **zpět** pouze u souborů, které zůstanou otevřené pro úpravy. Pokud tato možnost není vybraná, soubory, které ještě nebyly otevřete pro úpravy zůstanou uzavřené a ne **zpět** možnost je k dispozici v těchto souborech.  
+> Můžete použít **zpět** pouze u souborů, které zůstanou otevřené pro úpravy. Pokud tato možnost není vybraná, soubory, které ještě nebyly otevřete pro úpravy zůstanou uzavřené a ne **zpět** možnost je k dispozici v těchto souborech.  
   
 ## <a name="see-also"></a>Viz také  
  [Hledání a nahrazení textu](../ide/finding-and-replacing-text.md)   

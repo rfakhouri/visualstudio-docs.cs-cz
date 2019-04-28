@@ -11,12 +11,12 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8b4307caf3f76087867a942654b47bfe85c5011e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: eb0dac5e1282d544df9c04bf4c12303fb391739d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436643"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Přeformátování kódu ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54755679"
 V [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zdrojový kód můžete naformátována pomocí normalizace použití odsazení a mezery. To může zahrnovat vkládání nebo odebrání mezerami či tabulátory na začátku každého řádku, přidat nové řádky mezi řádky nebo nahrazení mezery tabulátory nebo tabulátory mezerami.  
   
 > [!NOTE]
->  **Poznámka:** vložení nebo odstranění znaky nového řádku může ovlivnit značky, jako je například zarážky a záložky, ale přidáním nebo odebráním mezerami či tabulátory nemá vliv na značky.  
+> **Poznámka:** vložení nebo odstranění znaky nového řádku může ovlivnit značky, jako je například zarážky a záložky, ale přidáním nebo odebráním mezerami či tabulátory nemá vliv na značky.  
   
  Uživatelé mohou spustit operaci reformatting tak, že vyberete **výběr formátu** nebo **formátovat dokument** z **Upřesnit** nabídce **upravit**nabídky. Reformatting operace se dá taky spustit při vložení fragmentu kódu nebo konkrétní znak. Například při psaní pravou složenou závorku v jazyce C# všechno mezi odpovídající levou složenou závorku a Zavřít složenou závorkou je automaticky odsazený správnou úroveň.  
   

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f5c285e71179c5dd59fad0357dbf71ee4b32f9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813886"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Postupy: Provedení příkazu SharePoint
   Pokud chcete použít objektový model serveru v rozšíření nástrojů služby SharePoint, je třeba vytvořit vlastní *příkaz serveru SharePoint* pro volání rozhraní API. Po definování příkazu a nasazení pomocí rozšíření nástrojů služby SharePoint, rozšíření můžete spustit příkaz provést volání do objektového modelu serveru SharePoint. Chcete-li spustit příkaz, použijte jednu z metod ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> objektu.

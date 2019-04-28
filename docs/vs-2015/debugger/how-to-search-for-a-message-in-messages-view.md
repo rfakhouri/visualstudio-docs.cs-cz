@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34f50b457dcc8b6db8e48e7072e8956fa78f6a7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6c89a763389abe364fe70166e63b41f932581837
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430912"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Postupy: Hledání zprávy v zobrazení zpráv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Můžete vyhledat konkrétní zprávy v zobrazení zpráv s použitím jeho popi
 4. Zrušte zaškrtnutí všech polí, u kterých nechcete k určení hodnot.  
   
    > [!TIP]
-   >  Chcete-li přehlednost obrazovky, vyberte **skrýt Spy** možnost. Tato možnost ukrývá hlavním nástroje Spy ++ okně byste museli opustit pouze **najít okno** dialogové okno viditelné nad vaší aplikace. Obnovení hlavního okna nástroje Spy ++, po kliknutí na **OK** nebo **zrušit**, nebo pokud zrušíte výběr **skrýt Spy ++** možnost.  
+   > Chcete-li přehlednost obrazovky, vyberte **skrýt Spy** možnost. Tato možnost ukrývá hlavním nástroje Spy ++ okně byste museli opustit pouze **najít okno** dialogové okno viditelné nad vaší aplikace. Obnovení hlavního okna nástroje Spy ++, po kliknutí na **OK** nebo **zrušit**, nebo pokud zrušíte výběr **skrýt Spy ++** možnost.  
   
 5. Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
   

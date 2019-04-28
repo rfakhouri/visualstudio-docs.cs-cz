@@ -12,12 +12,12 @@ ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 377a7eceff134211371c17ac14903cba0fb8daa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f4393a88a689e2a923291ada37a9b6d85718db5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431358"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Podpora více verzí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Termín *vedle sebe* znamená, že můžete nainstalovat a spravovat více verz�
      Další informace najdete v tématu [instalace rozšíření VSPackages s Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) a také [Správa komponent](../extensibility/internals/component-management.md).
 
     > [!NOTE]
-    >  Nainstalovat verzi sady Visual Studio nainstaluje taky odpovídající verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Například instalace sady Visual Studio 2010 a Visual Studio 2012 ve stejném počítači nainstaluje taky verze 4.0 a 4.5 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]v uvedeném pořadí.
+    > Nainstalovat verzi sady Visual Studio nainstaluje taky odpovídající verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Například instalace sady Visual Studio 2010 a Visual Studio 2012 ve stejném počítači nainstaluje taky verze 4.0 a 4.5 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]v uvedeném pořadí.
 
 ## <a name="in-this-section"></a>V tomto oddílu
  [Volba mezi sdílené a vyvíjených balíčků VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md) vysvětluje, jak vyřešit problémy vedle sebe ve vaší VSPackage.

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df8cc7fa837e5308d2e6ba18501d7bfb93a83223
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829931"
 ---
 # <a name="baseclass"></a>BaseClass
 Každou ze základních tříd pro uživatelem definovaný typ (UDT) symbol je identifikován podřízený s `SymTagBaseClass` značky. [Idiasymbol::get_type –](../../debugger/debug-interface-access/idiasymbol-get-type.md) vlastnost obsahuje symbol pro základní UDT a všechny vlastnosti ze základní UDT jsou k dispozici jako součást této baseclass – symbol.

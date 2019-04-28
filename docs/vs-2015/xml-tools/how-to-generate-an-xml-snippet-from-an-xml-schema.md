@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0e1ea270511a92df96fdb4cc38367074f224060
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431018"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Postupy: Generování fragmentu XML ze schématu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ XML Editor má schopnost generovat fragmentů XML ze schématu XML definice jazy
  Kroky v této části ukazují, jak použít generované schématu XML fragmentu kódu funkce v editoru XML.  
   
 > [!NOTE]
->  Než zahájíte tyto postupy, uložte soubor schématu do místního počítače.  
+> Než zahájíte tyto postupy, uložte soubor schématu do místního počítače.  
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Vytvořte nový soubor XML a přidružte jej k schématu XML  
   

@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ee92ad3c65c81849e70f7e76b93b9a3b6195156
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23117079dd0cd593446ce8af277670a643c820b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430807"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Krok 2: Přidejte náhodný objekt a seznam ikon
 V tomto kroku vytvoříte sadu odpovídajících symbolů pro hru. Každý symbol je přidán do dvou náhodných buněk v kontejneru TableLayoutPanel ve formuláři. Chcete-li to provést pomocí dvou `new` příkazy k vytvoření dvou objektů. První je <xref:System.Random> objektů, jako je ten, který jste použili ve hře matematický kvíz. V tomto kódu slouží k náhodnému výběru buněk v kontejneru TableLayoutPanel. Druhý objekt, který může být pro vás nová, se <xref:System.Collections.Generic.List%601> objekt, který se používá k ukládání náhodně zvolených symbolů.
@@ -36,7 +36,7 @@ V tomto kroku vytvoříte sadu odpovídajících symbolů pro hru. Každý symbo
      ![Okno Vlastnosti zobrazující klikněte na událost](../ide/media/express_listintellisense.png) okno technologie IntelliSense
 
     > [!NOTE]
-    >  Okno technologie IntelliSense se zobrazí jenom v případě, že kód zadáte ručně. Pokud kód zkopírujete a vložíte, nezobrazí se.
+    > Okno technologie IntelliSense se zobrazí jenom v případě, že kód zadáte ručně. Pokud kód zkopírujete a vložíte, nezobrazí se.
 
      Prohlédnete-li si kód (a poznámky) v malých oddílech, snadněji jim porozumíte. Programy mohou používat ke sledování mnoho různých typů položek seznamu objektů. Seznam může obsahovat čísla, hodnoty pravda/nepravda, text nebo jiné objekty. Může probíhat dokonce na seznamu objektů, který obsahuje další seznam objektů. Položky v seznamu se nazývají prvky a každý seznam obsahuje pouze jeden typ prvku. Takže seznam čísel může obsahovat pouze čísla – nelze na něj přidat text. Podobně nelze přidat čísla na seznam hodnot pravda/nepravda.
 
@@ -47,7 +47,7 @@ V tomto kroku vytvoříte sadu odpovídajících symbolů pro hru. Každý symbo
      Při použití inicializátoru kolekce s `new` příkaz, po vytvoření nového objektu seznamu, jej program vyplní daty, které jste zadali uvnitř složených závorek. V tomto případě získáte seznam řetězců s názvem ikony, a tento seznam bude inicializován tak, aby obsahoval šestnáct řetězců. Každý z těchto řetězců je jedno písmeno a všechny odpovídají ikonám, které budou v popiscích. Hra tak bude obsahovat pár vykřičníků, pár velkých písmen N, pár čárek atd. (Pokud jsou tyto znaky nastaveny na písmo Webdings, zobrazí se jako symboly, například jako autobus, kolo, pavouk a atd.) Seznam objektu bude mít dohromady šestnáct řetězců ve všech, jeden pro každou buňku na panelu TableLayoutPanel.
 
     > [!NOTE]
-    >  V jazyce Visual Basic získáte stejný výsledek, ale nejprve jsou řetězce vloženy do přechodného pole, které je pak převedeno do seznamu objektů. Pole je podobné seznamu, s výjimkou, že pole jsou například vytvářena s pevnou velikostí. Seznamy lze zmenšit a zvětšit podle potřeby, což je v tomto programu důležité.
+    > V jazyce Visual Basic získáte stejný výsledek, ale nejprve jsou řetězce vloženy do přechodného pole, které je pak převedeno do seznamu objektů. Pole je podobné seznamu, s výjimkou, že pole jsou například vytvářena s pevnou velikostí. Seznamy lze zmenšit a zvětšit podle potřeby, což je v tomto programu důležité.
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 

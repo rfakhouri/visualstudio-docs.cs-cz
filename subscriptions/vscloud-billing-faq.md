@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Dotazy k fakturaci cloudových předplatných.
 searchscope: VS Subscription
 ms.openlocfilehash: ab02b40926225860536b277b22c3f16768a56731
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810528"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio cloudovými předplatnými nejčastější dotazy k fakturaci
 

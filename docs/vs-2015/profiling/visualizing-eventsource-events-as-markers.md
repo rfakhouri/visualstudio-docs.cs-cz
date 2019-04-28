@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431085"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Vizualizace událostí EventSource v podobě značek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Vizualizátor souběžnosti můžete zobrazit události EventSource jako značky
  Použijte pole cvSpanId, int, tak, aby odpovídaly páry událostí. Hodnota pro každou dvojici spuštění a zastavení událostí, které představují rozsah musí být jedinečný. Obvykle pro souběžné kódu to vyžaduje použití primitiv synchronizace, jako <xref:System.Threading.Interlocked.Exchange%2A> k ověření, že klíč (hodnota, která se používá pro CvSpanID) je správná.  
   
 > [!NOTE]
->  Použití SpanID vnořit rozsahy, zajistí, aby částečně překrývají ve stejném vlákně, nebo povolit jejich spuštění v jednom vlákně a end na jiném není podporována.  
+> Použití SpanID vnořit rozsahy, zajistí, aby částečně překrývají ve stejném vlákně, nebo povolit jejich spuštění v jednom vlákně a end na jiném není podporována.  
   
 ## <a name="see-also"></a>Viz také  
  [Značky Vizualizéru souběžnosti](../profiling/concurrency-visualizer-markers.md)

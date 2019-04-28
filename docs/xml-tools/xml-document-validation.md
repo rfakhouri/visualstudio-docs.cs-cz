@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9953190220acf572ac04b18e9018c1d45a3b2c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 59b8ed5c74d998b47ff4a187b420695eab5be035
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807713"
 ---
 # <a name="xml-document-validation"></a>Ověření dokumentu XML
 
@@ -21,21 +21,21 @@ XML editor ověří syntaxi XML 1.0 a také provádí ověření dat při psaní
 
  Při ověřování se používají schémata se nacházejí to provede spárováním odpovídajících `targetNamespace` kompilované schématu s xmlns deklarací elementu. Zkompilovaných schémat jsou načteny z jednoho z následujících umístění, uvedeny v pořadí podle priority:
 
--   Od zadaný v názvu souboru **schémata** pole dokumentu **vlastnosti** okna.
+- Od zadaný v názvu souboru **schémata** pole dokumentu **vlastnosti** okna.
 
--   Vložené schéma nebo DTD.
+- Vložené schéma nebo DTD.
 
--   Externí specifikaci DTD nebo `xsd:schemaLocation` a `xsd:noNamespaceSchemaLocation` atribut
+- Externí specifikaci DTD nebo `xsd:schemaLocation` a `xsd:noNamespaceSchemaLocation` atribut
 
--   "X-schema" XDR schématu obor názvů služby identifikátoru URI.
+- "X-schema" XDR schématu obor názvů služby identifikátoru URI.
 
 Schémata můžete také najít v následujících umístěních další schéma obsahuje prázdný cílový obor názvů:
 
--   Jiné okno editoru obsahující schéma.
+- Jiné okno editoru obsahující schéma.
 
--   Schéma v aktuálním řešení.
+- Schéma v aktuálním řešení.
 
--   Schéma z adresáře mezipaměti schématu.
+- Schéma z adresáře mezipaměti schématu.
 
 ## <a name="xslt-files"></a>Soubory XSLT
  Při úpravách souboru XSLT *xslt.xsd* soubor umístěný v mezipaměti schématu se používá k ověření. Chyby ověřování se zobrazí jako modré podtržení vlnovkou. Chyby kompilátoru XSLT se zobrazují jako červené podtržení vlnovkou.

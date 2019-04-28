@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e95a2170bd90fbd2610cefb8ff986111ff0480a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425500"
 ---
 # <a name="pass-data-between-forms"></a>Předávání dat mezi formuláři
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60107070"
 Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho formuláře. Pomocí zákazníci a objednávky tabulky z databáze Northwind, jeden formulář umožňuje uživatelům vybrat zákazníka a druhý formulář pro zobrazení objednávek pro vybraného zákazníka. Tento návod ukazuje, jak vytvořit metodu na druhý formulář, který přijímá data z první formuláře.  
   
 > [!NOTE]
->  Tento návod ukazuje pouze jeden ze způsobů předání dat mezi formuláři. Existují další možnosti pro předávání dat do formuláře, včetně vytváření druhý konstruktor pro příjem dat, nebo vytvoření veřejné vlastnosti, které lze nastavit s daty z první formuláře.  
+> Tento návod ukazuje pouze jeden ze způsobů předání dat mezi formuláři. Existují další možnosti pro předávání dat do formuláře, včetně vytváření druhý konstruktor pro příjem dat, nebo vytvoření veřejné vlastnosti, které lze nastavit s daty z první formuláře.  
   
  Úlohy v tomto návodu zahrnují:  
   
@@ -142,7 +142,7 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
     ```  
   
     > [!NOTE]
-    >  Ověření parametru správná syntaxe pro vaši databázi. Například v aplikaci Microsoft Access, klauzuli WHERE vypadat nějak takto: `WHERE CustomerID = ?`.  
+    > Ověření parametru správná syntaxe pro vaši databázi. Například v aplikaci Microsoft Access, klauzuli WHERE vypadat nějak takto: `WHERE CustomerID = ?`.  
   
 6. Klikněte na **Další**.  
   

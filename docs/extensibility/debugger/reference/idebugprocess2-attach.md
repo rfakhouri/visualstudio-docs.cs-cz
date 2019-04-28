@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f700a6f6ff06fb37660419c46a394a0449d976bf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871286"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 Správce ladění relace (SDM) se připojí k procesu.
@@ -62,7 +62,7 @@ int Attach( 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. V následující tabulce jsou uvedeny další možné hodnoty.
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Zadaný proces je již připojen k ladicímu programu.|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Během procesu připojení došlo k porušení zabezpečení.|

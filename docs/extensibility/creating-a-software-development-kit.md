@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891205"
 ---
 # <a name="create-a-software-development-kit"></a>Vytvořit sadu software development kit
 (SDK) software development kit je kolekce rozhraní API, která může odkazovat jako jedna položka v sadě Visual Studio. **Správce odkazů** dialogové okno obsahuje všechny sady SDK, které jsou relevantní pro projekt. Když přidáte sadu SDK do projektu, rozhraní API, jsou k dispozici v sadě Visual Studio.

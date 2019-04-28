@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9131ce7950246d878c091f320e22700ba2b1f3ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910654"
 ---
 # <a name="context-parameters"></a>Kontextové parametry
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE), můžete přidat průvodce, kteří **nový projekt**, **přidat novou položku**, nebo **přidat dílčí projekt** dialogových oknech. Přidání průvodců jsou k dispozici na **souboru** nabídek nebo kliknutím pravým tlačítkem myši projekt v **Průzkumníka řešení**. Integrovaného vývojového prostředí předá parametr kontextu pro implementaci průvodce. Kontextové parametry definovat stav projektu při integrovaném vývojovém prostředí volá průvodce.

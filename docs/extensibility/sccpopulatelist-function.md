@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a28c4aef9284148379d65f3f8bef1b035f8580c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 583731e311f6e6257bfb43c9f21ac2db143145eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434593"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList – funkce
 Tato funkce aktualizuje seznam souborů pro konkrétní zdroj ovládacího příkazu a poskytuje stav správy zdrojového kódu na všechny soubory daného.
@@ -87,7 +87,7 @@ SCCRTN SccPopulateList (
  Modul plug-in stále volat `pfnPopulate` funkce, která přidáte a odstraníte soubory, dokud se dokončí a vrátí `SccPopulateList` funkce. Integrované vývojové prostředí potom můžete zobrazit seznam. `lpStatus` Pole představuje všechny soubory v původním seznamu předaných v integrovaném vývojovém prostředí. Funkce zpětného volání pomocí modulu plug-in vyplní stav všech těchto souborů kromě provádění.
 
 > [!NOTE]
->  Modul plug-in správy zdrojového kódu vždy má povolenou možnost jednoduše výsledky okamžitě z této funkce byste museli opustit seznamu, protože se jedná. Pokud modul plug-in implementuje tuto funkci, může to znamenat tak, že nastavíte `SCC_CAP_POPULATELIST` bitových parametrů funkce v prvním volání [sccinitialize –](../extensibility/sccinitialize-function.md). Ve výchozím nastavení, modul plug-in by měl vždy předpokládat, že jsou všechny položky předávaný soubory. Ale pokud je nastaví integrovaného vývojového prostředí `SCC_PL_DIR` příznak v `fOptions` parametr, jsou všechny položky předávaný považovat adresáře. Modul plug-in přidala všechny soubory, které patří v adresářích. Rozhraní IDE se nikdy předat kombinaci soubory a adresáře.
+> Modul plug-in správy zdrojového kódu vždy má povolenou možnost jednoduše výsledky okamžitě z této funkce byste museli opustit seznamu, protože se jedná. Pokud modul plug-in implementuje tuto funkci, může to znamenat tak, že nastavíte `SCC_CAP_POPULATELIST` bitových parametrů funkce v prvním volání [sccinitialize –](../extensibility/sccinitialize-function.md). Ve výchozím nastavení, modul plug-in by měl vždy předpokládat, že jsou všechny položky předávaný soubory. Ale pokud je nastaví integrovaného vývojového prostředí `SCC_PL_DIR` příznak v `fOptions` parametr, jsou všechny položky předávaný považovat adresáře. Modul plug-in přidala všechny soubory, které patří v adresářích. Rozhraní IDE se nikdy předat kombinaci soubory a adresáře.
 
 ## <a name="see-also"></a>Viz také
 - [Funkce modulu plug-in správy zdrojového kódu v rozhraní API](../extensibility/source-control-plug-in-api-functions.md)

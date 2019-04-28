@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 863e60592fe82c468f48912c4e36182b1bb1a36b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 454bcc4fe8e17530d71927d373a05f5f12beae61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432841"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Postupy: Připojit Profiler k webové aplikaci ASP.NET ke shromažďování dat paměti pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104145"
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkazového řádku nástrojů pro profilaci k připojení profileru k [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci a shromažďování dat o počtu a velikosti přidělení paměti rozhraní .NET Framework. Může také shromažďovat data o životnosti objektů paměti rozhraní .NET Framework.  
 
 > [!NOTE]
->  Nástroje příkazového řádku nástrojů pro profilaci jsou umístěny v podadresáři nástroje \Team Tools\Performance [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] instalační adresář. Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého. Další informace najdete v tématu [zadání cesty k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Nástroje příkazového řádku nástrojů pro profilaci jsou umístěny v podadresáři nástroje \Team Tools\Performance [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] instalační adresář. Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého. Další informace najdete v tématu [zadání cesty k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 
  Ke shromažďování dat výkonu z [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci, je nutné použít [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) nástroj k inicializaci příslušných proměnných prostředí v počítači, který je hostitelem [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci. Musíte pak restartujte počítač nakonfigurovat webový server pro profilování.  
 
@@ -66,7 +66,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
      Můžete použít některý z těchto možností s **/start:sample** možnost.  
 
    > [!NOTE]
-   >  **/User** a **/crosssession** možnosti jsou obvykle vyžadovány pro aplikace ASP.NET.  
+   > **/User** a **/crosssession** možnosti jsou obvykle vyžadovány pro aplikace ASP.NET.  
 
    |                                 Možnost                                  |                                                                                                                                                        Popis                                                                                                                                                        |
    |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

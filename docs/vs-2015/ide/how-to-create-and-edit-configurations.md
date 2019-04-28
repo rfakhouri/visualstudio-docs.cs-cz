@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422904"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Postupy: Vytvoření a úprava konfigurací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Můžete vytvořit několik konfigurací sestavení řešení. Například můž
 - V **Průzkumníka řešení**, otevřete místní nabídku řešení a klikněte na tlačítko **nástroje Configuration Manager**.  
   
   > [!NOTE]
-  >  Pokud **nástroje Configuration Manager** příkaz nezobrazí v místní nabídce vyhledejte v části **sestavení** nabídky na řádku nabídek. Pokud tam není, na panelu nabídek zvolte **nástroje**, **možnosti**a potom v levém podokně **možnosti** dialogového okna rozbalte **projekty a Řešení**, **Obecné**a v pravém podokně, vyberte **zobrazit pokročilé konfigurace sestavení** zaškrtávací políčko.  
+  > Pokud **nástroje Configuration Manager** příkaz nezobrazí v místní nabídce vyhledejte v části **sestavení** nabídky na řádku nabídek. Pokud tam není, na panelu nabídek zvolte **nástroje**, **možnosti**a potom v levém podokně **možnosti** dialogového okna rozbalte **projekty a Řešení**, **Obecné**a v pravém podokně, vyberte **zobrazit pokročilé konfigurace sestavení** zaškrtávací políčko.  
   
    V **nástroje Configuration Manager** dialogové okno, můžete použít **konfigurace aktivního řešení** rozevíracího seznamu vyberte konfiguraci sestavení celého řešení, upravit existující nebo vytvořte nový konfigurace. Můžete použít **platformou aktivního řešení** rozevírací seznam a vyberte platformu, že konfigurace cíle, upravte nějaký existující, nebo přidat novou platformu. **Projektu kontexty** podokně je seznam projektů v řešení. Pro každý projekt můžete vybrat konfigurace specifické pro projekt a platformy, upravte stávající, nebo vytvořit novou konfiguraci nebo přidat novou platformu. Můžete také vybrat zaškrtávací políčka, která udává, jestli je každý projekt zahrnuty při konfiguraci celé řešení použijete k vytvoření buildu nebo nasazení řešení.  
   

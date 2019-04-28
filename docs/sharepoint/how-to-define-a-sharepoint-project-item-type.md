@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0e0483f535dfd7a483d2b83728f78fa9c7167bcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814041"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Postupy: Definování typu položky projektu SharePoint
   Definování typu položky projektu, pokud chcete vytvořit vlastní položky projektu služby SharePoint. Další informace najdete v tématu [definování vlastních typů položek projektu služby SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).

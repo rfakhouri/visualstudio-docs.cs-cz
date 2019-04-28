@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845846"
 ---
 # <a name="messages-view"></a>Zobrazení zpráv
 Každé okno má datové proudy přidružené zpráv. Zobrazí okno pro zobrazení zprávy tohoto datového proudu zpráv. Popisovač okna, kód zprávy a zpráva se zobrazí. Můžete vytvořit zobrazení zprávy pro vlákna nebo procesu stejně. To umožňuje zobrazit zprávy, pošle se všem oknům vlastní konkrétní proces nebo vlákno, které je zvláště užitečné pro zaznamenání inicializace zprávy okna.

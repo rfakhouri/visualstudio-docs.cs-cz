@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f956f492c3dc690ef2edb67d9a7c75e6c0108820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433274"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Přizpůsobení vytvoření a přesunutí elementu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +72,9 @@ Můžete povolit element, který má přetahovat do jiného, z panelu nástrojů
    Například můžete nastavit vlastnosti v elementu sloučené s použitím dat z nové místo v modelu.  
   
 > [!NOTE]
->  Pokud píšete kód vlastní sloučení, ovlivní pouze sloučení, které se provádí pomocí této EMD. Pokud existují další EMDs, které sloučení stejného typu objektu, nebo pokud je jiný vlastní kód, který vytvoří tyto objekty bez použití EMD, nebude vliv kódem vlastní sloučení.  
+> Pokud píšete kód vlastní sloučení, ovlivní pouze sloučení, které se provádí pomocí této EMD. Pokud existují další EMDs, které sloučení stejného typu objektu, nebo pokud je jiný vlastní kód, který vytvoří tyto objekty bez použití EMD, nebude vliv kódem vlastní sloučení.  
 >   
->  Pokud chcete, aby se zajistilo, že nový prvek nebo nová relace je vždy zpracovány váš vlastní kód, zvažte možnost definice `AddRule` na vztah obsažení a `DeleteRule` v elementu doménovou třídu. Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+> Pokud chcete, aby se zajistilo, že nový prvek nebo nová relace je vždy zpracovány váš vlastní kód, zvažte možnost definice `AddRule` na vztah obsažení a `DeleteRule` v elementu doménovou třídu. Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>Příklad: Definování EMD bez vlastního kódu  
  Následující příklad umožňuje uživatelům vytvářet elementu a konektor ve stejnou dobu přetažením z panelu nástrojů do existujícího tvaru. V příkladu přidá EMD definici DSL. Před provedením této změny můžete uživatelům přetáhnout nástrojů do diagramu, ale ne na existující obrazce.  

@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900228"
 ---
 # <a name="create-bootstrapper-packages"></a>Vytváření balíčků bootstrapperu
 Instalační program je obecný instalační program, který můžete konfigurovat k rozpoznání a instalování distribuovatelných součástí, jako je například Instalační služby systému Windows (*MSI*) soubory a programy. Instalační program se také nazývá zaváděcí nástroj. To je programován sadou XML manifestů, které mohou specifikovat metadata pro správu instalace součásti.  Každý distribuovatelnou komponentu, nebo požadovaných součástí, která se zobrazí v **požadavky** dialogové okno pro ClickOnce je balíček zaváděcího nástroje. Balíček zaváděcího nástroje je skupina adresářů a souborů, které obsahují soubory manifestu, které popisují, jak by měly být nainstalovány kontrolu požadovaných součástí.

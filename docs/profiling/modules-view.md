@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 89b3e7492e0f5155dd1c36f0140f6a1ad11db027
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829967"
 ---
 # <a name="modules-view"></a>Zobrazení modulů
 Zobrazení modulů seznam modulů dat profilování. Každý modul je kořenový uzel hierarchického stromu. Profilované funkce modulu jsou uvedeny pod uzlem modulu. Pokud data profilace byla shromážděna pomocí metody odběru vzorků, informace o řádku je uvedena pod uzel funkce a data ukazatel instrukce je uvedena pod uzlem řádku.

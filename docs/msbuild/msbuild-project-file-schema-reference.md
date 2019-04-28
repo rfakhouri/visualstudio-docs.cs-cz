@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c49c2198a4ecc40a40e3f5f6414bfd4af47279b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842289"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referenční dokumentace schématu souboru projektu MSBuild
 Obsahuje všechny tabulky [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] prvky schématu XML s jejich dostupné atributy a podřízené prvky.
@@ -44,7 +44,7 @@ Obsahuje všechny tabulky [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 |[Output – element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Podmínka<br /><br /> ItemName<br /><br /> Vlastnost PropertyName<br /><br /> Parametr úkolu|
 |[Parameter – element](../msbuild/parameter-element.md)|--|Výstup<br /><br /> Zda položka ParameterType<br /><br /> Požadováno|
 |[Parametergroup – element](../msbuild/parametergroup-element.md)|*Parametr*|--|
-|[Project – element (MSBuild)](../msbuild/project-element-msbuild.md)|Zvolte<br /><br /> Import<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Target<br /><br /> Usingtask –|Defaulttargets –<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> atribut xmlns|
+|[Project – element (MSBuild)](../msbuild/project-element-msbuild.md)|Zvolte<br /><br /> Import<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Target<br /><br /> Usingtask –|Defaulttargets –<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|
 |[Projectextensions – element (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|
 |[Property – element (MSBuild)](../msbuild/property-element-msbuild.md)|--|Podmínka|
 |[PropertyGroup – element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Vlastnost*|Podmínka|

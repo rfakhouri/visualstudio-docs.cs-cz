@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Zjistěte, jak získat maximum z vašich předplatných sady Visual Studio
 searchscope: VS Subscription
 ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833933"
 ---
 # <a name="managing-subscriptions"></a>Správa předplatných
 
@@ -153,7 +153,7 @@ O: V závislosti na nákupní kanál Microsoft udržuje zákaznická data rozdí
 |--------------------------------------------------------|-----------------|
 |    Maloobchodní (např. přes Microsoft Store)               |    360          |
 |    Volume Licensing Service Center (VLSC)              |    180          |
-|    Produkty Microsoftu a smlouva o poskytování služeb (MPSA)    |    180          |
+|    Smlouva o produktech a službách společnosti Microsoft    |    180          |
 |    Cloudová předplatná sady Visual Studio                   |    180          |
 |    Program (například MCT, BizSpark, MPN, Imagine)          |    180          |
 |    Neprodejné (např. MVP, MSP)                      |    180          |

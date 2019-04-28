@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 577b12be220e2a695609db6c508d7aaf69c79f92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 537bae766b71744a61e5158b1a859cade4cdcda7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419655"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Postupy: Vytváření obslužných rutin událostí v projektech pro systém Office
   Existuje několik způsobů, jak vytváření obslužných rutin událostí v jazyce Visual Basic a C#. V návrhovém zobrazení můžete vytvořit výchozí obslužné rutiny událostí pro ovládací prvky poklepáním na ovládací prvek, nebo použijte v podokně události **vlastnosti** okno pro vytvoření obslužné rutiny pro všechny události v ovládacím prvku. Pokud jste v zobrazení kódu, nemusí však chcete přepnout do zobrazení návrhu k vytvoření obslužné rutiny události.
@@ -34,7 +34,7 @@ ms.locfileid: "60054518"
 1. Z **název třídy** rozevíracího seznamu v horní části stránky Editor kódu, vyberte objekt, který chcete vytvořit obslužná rutina události.
 
     > [!NOTE]
-    >  Pokud chcete vytvořit obslužné rutiny událostí pro `ThisDocument` nebo `ThisWorkbook`, je nutné vybrat **(ThisDocument události)** nebo **(ThisWorkbook události)** v **název třídy**rozevíracího seznamu
+    > Pokud chcete vytvořit obslužné rutiny událostí pro `ThisDocument` nebo `ThisWorkbook`, je nutné vybrat **(ThisDocument události)** nebo **(ThisWorkbook události)** v **název třídy**rozevíracího seznamu
 
 2. Z **název metody** rozevíracího seznamu v horní části stránky Editor kódu, zvolit událost.
 

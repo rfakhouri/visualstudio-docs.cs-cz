@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 955968137e1f8d2ba1322f5ccf9be2eac6196580
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845756"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Klávesy nástroje přímý výběr modifikátor v Blendu
 V následující tabulce jsou uvedeny klávesové zkratky, které můžete použít k úpravě obrazec s existující cestu **přímý výběr** nástroj ![nástroje přímý výběr](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Přidání nebo odebrání bodů na existující cestu nebo spojit dva existující cesty, použijte **pera** nástroj.

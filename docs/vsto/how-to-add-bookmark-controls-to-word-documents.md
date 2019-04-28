@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f4a6a5de3ccd10c7444b03aca2faaa0ae17c4f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7948af3a6a77fd100a6965f9e50cda70ac7b868d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427775"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word
   Projekty na úrovni dokumentu, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do dokumentu v projektu v době návrhu nebo za běhu. Projekty doplňků VSTO, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do libovolného otevřeného dokumentu za běhu.
@@ -94,7 +94,7 @@ ms.locfileid: "60104522"
      [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
 
     > [!NOTE]
-    >  Pokud chcete vytvořit <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku z existující <xref:Microsoft.Office.Interop.Word.Bookmark>, použijte <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> a předáte v existujícím <xref:Microsoft.Office.Interop.Word.Bookmark>.
+    > Pokud chcete vytvořit <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku z existující <xref:Microsoft.Office.Interop.Word.Bookmark>, použijte <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> a předáte v existujícím <xref:Microsoft.Office.Interop.Word.Bookmark>.
 
 ## <a name="runtimeaddin"></a> Přidání ovládacích prvků záložek za běhu v projektu doplňku VSTO
  Můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků prostřednictvím kódu programu do libovolného otevřeného dokumentu za běhu pomocí doplňku VSTO. Chcete-li to provést, vygenerovat <xref:Microsoft.Office.Tools.Word.Document> hostitelem položku, která vychází z otevřeného dokumentu a pak použijte metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> vlastnosti této položky hostitele. Existují dvě přetížení metody, které slouží k přidání <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek následujícími způsoby:

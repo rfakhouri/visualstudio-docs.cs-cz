@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b668f0331345e6a1022ef79105614f4a22e91d9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830075"
 ---
 # <a name="message-markers"></a>Značky zpráv
 Zpráva značky představuje výstup protokolu. Zpráva je řetězec, který vystavila konkrétním vlákně v určitém čase. Zprávy můžete exportovat do textového souboru pro použití s dalšími nástroji. Přesuňte ukazatel na zprávu zobrazíte řetězec zprávy ve vizualizátoru souběžnosti. A můžete zobrazit všechny značky zpráv v [sestava značek](../profiling/markers-report.md).  Následující obrázek znázorňuje zprávu značky.

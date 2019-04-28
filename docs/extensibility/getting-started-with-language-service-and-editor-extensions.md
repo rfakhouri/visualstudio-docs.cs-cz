@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: acb18a6471a7d2debbb20107dc780f67857327ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415565"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Začínáme s rozšířeními service a editoru jazyka
 Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnující například sbalování, párování složených závorek, technologie IntelliSense a návrhy, programovacího jazyka nebo jakýkoli typ obsahu. Můžete také přizpůsobit vzhled a chování editoru sady Visual Studio, například text barevné zvýrazňování, okrajů, vylepšení a další vizuální prvky. Můžete také definovat vlastní typ obsahu a definujte vzhled a chování textové zobrazení, ve kterých se zobrazí váš obsah.
@@ -23,7 +23,7 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
  Chcete-li začít psát rozšíření editoru, použijte editor šablony projektů, které se instalují jako součást sady Visual Studio SDK. Visual Studio SDK je ke stažení sady nástrojů, které usnadňují vývoj rozšíření sady Visual Studio pomocí rozšíření VSPackages nebo pomocí Managed Extensibility Framework (MEF).
 
 > [!NOTE]
->  Další informace o sadě Visual Studio SDK naleznete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+> Další informace o sadě Visual Studio SDK naleznete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
  Doporučujeme, abyste před Tvorba vlastních rozšíření editoru informace o následujících konceptům a technologiím.
 
@@ -34,7 +34,7 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
  Editor sady Visual Studio Managed Extensibility Framework (MEF) používá ke správě jeho součástmi a rozšíření. Rozhraní MEF také umožňuje další vývojářům snadno vytvářet rozšíření pro hostitelskou aplikaci, jako je Visual Studio. V tomto rámci definování rozšíření podle smlouvy MEF a exportujte ho jako součást MEF. Hostitelská aplikace spravuje dílů tím, že je, je registrace a ujistěte se, že se použijí pro správný kontext.
 
 > [!NOTE]
->  Další informace o rozhraní MEF v editoru, najdete v části [Managed Extensibility Framework v editor](../extensibility/managed-extensibility-framework-in-the-editor.md).
+> Další informace o rozhraní MEF v editoru, najdete v části [Managed Extensibility Framework v editor](../extensibility/managed-extensibility-framework-in-the-editor.md).
 
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio editor Rozšiřovací body a rozšíření
  Editor Rozšiřovací body jsou součásti MEF, které můžete přizpůsobit a rozšířit. V některých případech můžete rozšířit rozšiřovací bod implementace rozhraní a export spolu s správných metadat. V ostatních případech stačí deklarovat rozšíření a exportujte ho jako konkrétního typu.
@@ -59,7 +59,7 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
  Při instalaci rozšíření na počítači zahrnout binární soubory a manifest v podsložce složky, který znáte Visual Studio.
 
 > [!WARNING]
->  Není nutné se starat o podrobnosti manifestů a umístění nasazení, pokud používáte některou ze šablon rozšíření editoru, které jsou zahrnuty v sadě Visual Studio. Šablony obsahují vše potřebné k registraci a nasadit rozšíření.
+> Není nutné se starat o podrobnosti manifestů a umístění nasazení, pokud používáte některou ze šablon rozšíření editoru, které jsou zahrnuty v sadě Visual Studio. Šablony obsahují vše potřebné k registraci a nasadit rozšíření.
 
 ## <a name="run-extensions-in-the-experimental-instance"></a>Spusťte rozšíření v experimentální instanci
  Vaše pracovní verze sady Visual Studio můžete izolovat, zatímco vyvíjíte rozšíření nasazením v následující složce experimentální (ve Windows Vista a Windows 7):

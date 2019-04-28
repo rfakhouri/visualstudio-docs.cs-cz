@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: cdde44b5d960a3f9ef462e06b55260477a8933c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227d4ba765dbea3be5306f05995cc29d075e6a66
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434151"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalace a konfigurace nástrojů pro vytváření pomocí iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60097073"
 Visual C++ pro vývoj mobilních řešení napříč platformami můžete použít pro úpravy, ladění a nasazení iOS kódu do simulátoru iOS nebo zařízení s Iosem, ale z důvodu licenčních omezení, kód musí být vytvořená a vzdálené spouštění v počítačích Mac. Pokud chcete sestavovat a spouštět aplikace pro iOS pomocí sady Visual Studio, budete muset nastavit a nakonfigurovat vzdálený agent [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), na vašem počítači Mac. Vzdálený agent obslužné rutiny žádosti o sestavení ze sady Visual Studio aplikace a spustí se na zařízení s iOS připojené k počítači Mac, nebo simulátor iOS na macu  
   
 > [!NOTE]
->  Informace o používání služeb hostovaných v cloudu Mac místo Mac najdete v tématu [vytváření a simulace iOS v cloudu](https://taco.visualstudio.com/docs/build_ios_cloud/). Pokyny jsou určené pro sestavení pomocí nástrojů Visual Studio pro Apache Cordova. Chcete-li postupujte podle pokynů pro sestavení pomocí jazyka Visual C++ pro vývoj mobilních řešení napříč platformami, nahraďte vcremote pro vs-mda-remote.  
+> Informace o používání služeb hostovaných v cloudu Mac místo Mac najdete v tématu [vytváření a simulace iOS v cloudu](https://taco.visualstudio.com/docs/build_ios_cloud/). Pokyny jsou určené pro sestavení pomocí nástrojů Visual Studio pro Apache Cordova. Chcete-li postupujte podle pokynů pro sestavení pomocí jazyka Visual C++ pro vývoj mobilních řešení napříč platformami, nahraďte vcremote pro vs-mda-remote.  
   
  Jakmile nainstalujete nástroje pro vytváření pomocí iOS, přečtěte si toto téma způsoby, jak rychle nakonfigurovat a aktualizovat vzdálený agent pro vývoj pro iOS v sadě Visual Studio a na vašem počítači Mac.  
   
@@ -93,7 +93,7 @@ Visual C++ pro vývoj mobilních řešení napříč platformami můžete použ�
    Během instalace vcremote je nainstalovaná a je aktivován režim pro vývojáře na vašem počítači Mac. [Homebrew](http://brew.sh/) a nainstaluje se také dva balíčky npm, vcremote lib a vcremote-utils.  
   
   > [!NOTE]
-  >  K instalaci Homebrew, musí mít přístup sudo (správce). Pokud je potřeba nainstalovat vcremote bez sudo, můžete ručně nainstalujte Homebrew v umístění usr/local a jeho složku bin přidat do cesty. Další informace najdete v tématu [Homebrew dokumentaci](https://github.com/Homebrew/homebrew/wiki/Installation). Vývojářský režim povolit ručně, v aplikaci terminál zadejte tento příkaz: `DevToolsSecurity –enable`  
+  > K instalaci Homebrew, musí mít přístup sudo (správce). Pokud je potřeba nainstalovat vcremote bez sudo, můžete ručně nainstalujte Homebrew v umístění usr/local a jeho složku bin přidat do cesty. Další informace najdete v tématu [Homebrew dokumentaci](https://github.com/Homebrew/homebrew/wiki/Installation). Vývojářský režim povolit ručně, v aplikaci terminál zadejte tento příkaz: `DevToolsSecurity –enable`  
   
   Pokud aktualizujete na novou verzi sady Visual Studio, je třeba aktualizovat na aktuální verzi vzdáleného agenta. Aktualizace vzdáleného agenta, opakujte postup stažení a instalace vzdáleného agenta.  
   
@@ -154,7 +154,7 @@ Visual C++ pro vývoj mobilních řešení napříč platformami můžete použ�
 5. V **název hostitele** a **Port** pole, zadejte hodnoty určené vzdáleného agenta při jeho spuštění. Název hostitele může být název DNS nebo IP adresu vašeho macu. Výchozí port je 3030.  
   
    > [!NOTE]
-   >  Pokud je příkazem ping otestovat Mac pomocí názvu hostitele, budete muset použít IP adresu.  
+   > Pokud je příkazem ping otestovat Mac pomocí názvu hostitele, budete muset použít IP adresu.  
   
 6. Pokud používáte vzdálený agent ve výchozím režimu zabezpečené připojení, zkontrolujte **Secure** zaškrtávací políčko, zadejte PIN kód hodnotu zadanou pomocí vzdáleného agenta v **Pin** pole. Pokud používáte vzdálený agent v režimu nezabezpečená připojení, zrušte zaškrtnutí políčka **Secure** zaškrtávací políčko a nechat **Pin** prázdné pole.  
   

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79ae6aee44f720b868e30c831ee4d6aa61c9611d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f0f849088a2c3cc726adc6054aef1ff7a7c1c52f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427411"
 ---
 # <a name="how-to-add-xmlnode-controls-to-word-documents"></a>Postupy: Přidání ovládacích prvků XMLNode do dokumentů aplikace Word
   **Důležité** informace uvedené v tomto tématu týkající se Microsoft Word je zobrazené výhradně pro výhod a užívání o jednotlivci i organizacemi, kteří se nacházejí mimo Spojené státy a jeho území nebo kteří používají nebo vývoj programy, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft před 2010 dne, kdy Microsoft odebrána implementace konkrétní funkce související s vlastní XML z aplikace Microsoft Word. Tyto informace týkající se Microsoft Word nemusí být přečteny nebo používány jednotlivcům i organizacím v USA nebo v jeho území, které používáte, nebo vývoji programů, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft po 10. ledna 2010 ; tyto produkty se chovají stejně jako produkty licenci před tímto datem nebo zakoupených a licencovaná pro použití mimo území Spojených států.
@@ -28,7 +28,7 @@ ms.locfileid: "60090404"
  Při namapování neopakujícími element schématu XML na dokumentu aplikace Microsoft Office Word Visual Studio automaticky přidá <xref:Microsoft.Office.Tools.Word.XMLNode> ovládacího prvku do dokumentu. Informace o mapování opakující se prvky schématu XML, naleznete v tématu [jak: Přidání ovládacích prvků XMLNodes do dokumentů aplikace Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md).
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Word.XMLNode> Ovládací prvek není k dispozici **nástrojů** nebo **zdroje dat** časového intervalu a nelze vytvořit prostřednictvím kódu programu.
+> <xref:Microsoft.Office.Tools.Word.XMLNode> Ovládací prvek není k dispozici **nástrojů** nebo **zdroje dat** časového intervalu a nelze vytvořit prostřednictvím kódu programu.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "60090404"
 1. V dokumentu v návrháři aplikace Visual Studio na pásu karet, klepněte **Developer** kartu.
 
     > [!NOTE]
-    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 2. V **XML** klikněte na možnost **schématu**.
 

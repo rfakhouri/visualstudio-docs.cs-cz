@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 025f5366938eb00114b035f0b7992d61433cc181
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908153"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Ověřování zarážek ve službě starší verze jazyka
 Zarážky označuje, že spuštění programu by se měla zastavit v určitém místě, když je spuštěn v ladicí program. Uživatele můžete umístit zarážky na kterýkoli řádek v ve zdrojovém souboru, protože nemá žádné informace o tom, co platné umístění zarážky editoru. Když ladicí program se spustí, všechny označené zarážky (označované jako čekajících zarážek) jsou vázány na příslušné umístění v běžící aplikaci. Ve stejnou dobu, kterou zarážek se ověří a zkontrolujte, že se označení umístění platný kód. Například zarážky na komentář není platný, protože není na tomto místě ve zdrojovém kódu žádný kód. Ladicí program se zakáže neplatný zarážky.

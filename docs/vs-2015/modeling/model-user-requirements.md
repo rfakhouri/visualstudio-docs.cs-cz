@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b1d3a5209490c253f4646210d4eeeda9d807155
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417804"
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   Požadavky na model poskytuje největší výhody, pokud jej používat k aktivní diskuze s uživateli nebo svých zástupci a opakování na začátku každé iterace. Není nutné pro dokončení podrobně před psaním kódu. Částečně funkční aplikaci, i v případě velmi výrazně zjednodušené, obecně tento balíček je základem nejvíce podporovat diskuzi o požadavky s uživateli. Model je účinný způsob, jak vytvořit souhrn výsledků tyto diskuse. Další informace najdete v tématu [použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
->  V těchto tématech "systém" znamená, že systém nebo aplikace, kterou vyvíjíte. Rozsáhlá kolekce řadu softwarových a hardwarových součástí; může být nebo si jednu aplikaci; nebo softwarová součást uvnitř větší systému. V každém případě model požadavků popisuje chování, které je viditelné z vnějšku systému prostřednictvím uživatelského rozhraní nebo rozhraní API.  
+> V těchto tématech "systém" znamená, že systém nebo aplikace, kterou vyvíjíte. Rozsáhlá kolekce řadu softwarových a hardwarových součástí; může být nebo si jednu aplikaci; nebo softwarová součást uvnitř větší systému. V každém případě model požadavků popisuje chování, které je viditelné z vnějšku systému prostřednictvím uživatelského rozhraní nebo rozhraní API.  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
  Můžete vytvořit několik různých zobrazení podle požadavků uživatelů.  Každé zobrazení obsahuje konkrétního typu informací.  Při vytváření těchto zobrazení je nejvhodnější často přesunout na další. Můžete spustit z jakékoli zobrazení.  

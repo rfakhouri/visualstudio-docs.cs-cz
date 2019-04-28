@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae2894a60392b444a9415a4951170be097ef61a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee62d8c5b9a657b09feda01d6275a79ee91b487d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430811"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11: Spusťte program a vyzkoušejte další funkce
 Aplikace je dokončené a připravené ke spuštění. Můžete spustit váš program a nastavit barvu pozadí <xref:System.Windows.Forms.PictureBox>. Další informace, zkuste program zlepšit změnou barvy formuláře, přizpůsobením tlačítek a zaškrtávacího políčka a změnou vlastností formuláře.
@@ -34,7 +34,7 @@ Aplikace je dokončené a připravené ke spuštění. Můžete spustit váš pr
 3. Zvolte barvu, kterou chcete nastavit barvu pozadí ovládacího prvku PictureBox. Prohlédněte si blíže `backgroundButton_Click()` metoda pochopit, jak to funguje.
 
     > [!NOTE]
-    >  Načíst obrázek z Internetu vložením jeho URL do **otevřít soubor** dialogové okno. Pokuste se najít obrázek s průhledným pozadím, takže se zobrazí barva pozadí.
+    > Načíst obrázek z Internetu vložením jeho URL do **otevřít soubor** dialogové okno. Pokuste se najít obrázek s průhledným pozadím, takže se zobrazí barva pozadí.
 
 4. Zvolte **Vymazat obrázek** tlačítko, abyste měli jistotu, že se vymaže. Ukončete program výběrem **Zavřít** tlačítko.
 

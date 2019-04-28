@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Příklad LinqToXmlDataBinding'
+title: 'Návod: Příklad LinqToXmlDataBinding'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 67031266ce9b2ded595ab448d7c45674932b8751
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892542"
 ---
-# <a name="walkthrough-linqtoxmldatabinding-example"></a>Průvodce: Příklad LinqToXmlDataBinding
+# <a name="walkthrough-linqtoxmldatabinding-example"></a>Návod: Příklad LinqToXmlDataBinding
 Tento návod popisuje příklad LinqToXmlDataBinding a vysvětluje některé zajímavější obsah dva primární zdrojové soubory, *L2DBForm.xaml* a *L2DBForm.xaml.cs*.
 
 ## <a name="prerequisites"></a>Požadavky

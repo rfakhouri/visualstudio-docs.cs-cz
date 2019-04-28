@@ -8,12 +8,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0f1aee9fb3790a5ba7b766eba22f2ec6420dacfd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 004b09c471ea163a17391a8ad51abcc0aefee1ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430713"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Nepoužívejte slabé kryptografické algoritmy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60041766"
 |Narušující změna|Pevné|  
   
 > [!NOTE]
->  Toto upozornění byl naposledy aktualizován. listopadu 2015.  
+> Toto upozornění byl naposledy aktualizován. listopadu 2015.  
   
 ## <a name="cause"></a>Příčina  
  Algoritmy šifrování, jako <xref:System.Security.Cryptography.TripleDES> a algoritmy hash jako <xref:System.Security.Cryptography.SHA1> a <xref:System.Security.Cryptography.RIPEMD160> jsou považovány za slabé.  

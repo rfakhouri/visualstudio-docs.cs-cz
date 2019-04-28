@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5e7f82f667fffec09894ab65e277cea09d137a9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826706"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Postupy: Přidání ovládacích prvků ListObject do listů
   Můžete přidat <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků na list aplikace Microsoft Office Excel v době návrhu a za běhu v projektech na úrovni dokumentu.

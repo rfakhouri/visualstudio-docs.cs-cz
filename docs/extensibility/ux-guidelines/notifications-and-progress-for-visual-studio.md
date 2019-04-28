@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc5ddb4561c2c353271babe590a9e5b2b3c2e510
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a783d19136998bbc9a18daa975c1db87bda19779
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428738"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Oznámení a postup pro Visual Studio
 ## <a name="BKMK_NotificationSystems"></a> Systémy oznámení
@@ -417,7 +417,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 - V rámci kartu dokumentu
 
 > [!IMPORTANT]
->  Je možné umístit informačního panelu podávat zprávy o globální kontext. Tím se zobrazí mezi panely nástrojů a dobře dokumentu. To se nedoporučuje, protože to způsobuje problémy s "jump a jerk" rozhraní IDE a mělo by se vyhnout, není-li naprosto nezbytné a vhodné.
+> Je možné umístit informačního panelu podávat zprávy o globální kontext. Tím se zobrazí mezi panely nástrojů a dobře dokumentu. To se nedoporučuje, protože to způsobuje problémy s "jump a jerk" rozhraní IDE a mělo by se vyhnout, není-li naprosto nezbytné a vhodné.
 
 #### <a name="placing-an-infobar-in-a-toolwindowpane"></a>Umístění ToolWindowPane informačního panelu
  Metoda ToolWindowPane.AddInfoBar(IVsInfoBar) slouží k přidání informačního panelu do panelu nástrojů. Toto rozhraní API můžete přidat buď IVsInfoBar (které InfoBarModel je výchozí implementace), nebo IVsUIElement.

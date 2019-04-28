@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d6487f4a6021f36cecd490504075cdba2ac2293
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef65019223ba1978ea31fbdb9020993a166da89b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422202"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Řešení problémů s výkonem nástroje
 Při použití nástrojů pro profilaci setkat s jedním z následujících problémů:
@@ -45,4 +45,4 @@ Při použití nástrojů pro profilaci setkat s jedním z následujících prob
 - Vložení informací o symbolu dat profilování (. *Vsp*) soubor. Další informace najdete v tématu [uložit informace o symbolech s výkonem datové soubory](../profiling/saving-symbol-information-with-performance-data-files.md).
 
 > [!NOTE]
->  Analytický modul vyžaduje, aby. *pdb* soubor má stejnou verzi jako soubor kompilované aplikace. ODPOVĚĎ. *pdb* soubor z dřívější nebo pozdější sestavování souboru aplikace nebude fungovat.
+> Analytický modul vyžaduje, aby. *pdb* soubor má stejnou verzi jako soubor kompilované aplikace. ODPOVĚĎ. *pdb* soubor z dřívější nebo pozdější sestavování souboru aplikace nebude fungovat.

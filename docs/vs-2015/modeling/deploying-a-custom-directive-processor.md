@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a440fbd87e85a72b2807ea09c7af61adf9f8af7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c485209f47e2d119fe469a59fe379f7cabe03813
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422594"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Nastavení vlastního procesoru direktiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,7 +148,7 @@ Použití vlastního procesoru direktiv v [!INCLUDE[vsprvs](../includes/vsprvs-m
 ```  
   
 > [!NOTE]
->  Tento atribut je umístěn ve třídě balíčku, nikoli ve třídě procesoru direktiv.  
+> Tento atribut je umístěn ve třídě balíčku, nikoli ve třídě procesoru direktiv.  
   
  Soubor .pkgdef se vygeneruje při sestavení projektu. Při instalaci sady VSPackage zaregistruje soubor .pkgdef procesor direktiv.  
   
@@ -160,7 +160,7 @@ Použití vlastního procesoru direktiv v [!INCLUDE[vsprvs](../includes/vsprvs-m
  Tato metoda instalace vlastního procesoru direktiv se příliš nedoporučuje. Neposkytuje totiž pohodlný způsob zapnutí a vypnutí procesoru direktiv ani způsob distribuce procesoru direktiv jiným uživatelům.  
   
 > [!CAUTION]
->  Nesprávná úprava registru může vážně poškodit systém. Před prováděním změn registru nezapomeňte vytvořit zálohu všech cenných dat v počítači.  
+> Nesprávná úprava registru může vážně poškodit systém. Před prováděním změn registru nezapomeňte vytvořit zálohu všech cenných dat v počítači.  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Registrace procesoru direktiv nastavením klíče registru  
   

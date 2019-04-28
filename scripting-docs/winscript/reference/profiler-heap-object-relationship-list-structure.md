@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 23c6ee5f8ff4d7a8a19c19bae55bb72eb5c8fd06
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823876"
 ---
 # <a name="profilerheapobjectrelationshiplist-structure"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST – struktura
 Představuje seznam vztahy, které patří do objektu haldy.  
@@ -29,7 +29,7 @@ typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST{    UINT count;    [size_
   
 ## <a name="members"></a>Členové  
   
-|Člen|Typ|Popis|  
+|Člen|Type|Popis|  
 |------------|----------|-----------------|  
 |count|UINT|Počet vztahů objektu haldy.|  
 |elementy|[PROFILER_HEAP_OBJECT_RELATIONSHIP – struktura](../../winscript/reference/profiler-heap-object-relationship-structure.md)|Vztahy objektu haldy.|

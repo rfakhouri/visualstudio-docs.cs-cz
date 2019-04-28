@@ -7,11 +7,11 @@ ms.author: ghogen
 ms.topic: include
 ms.date: 03/05/2019
 ms.openlocfilehash: d01cba0f947752e9f1e277d6f23e74efa39d47fd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819992"
 ---
 1. V okně spuštění sady Visual Studio zvolte **vytvořte nový projekt**.
 1. Zvolte **webové aplikace ASP.NET Core**a zvolte **Další**.

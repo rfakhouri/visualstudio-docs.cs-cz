@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8dd2e677cae2e54a8dff716aef72f1d6abc6b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418471"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Postupy: Vytvoření souboru .vsct
 
@@ -69,7 +69,7 @@ Můžete vytvořit základě XML *.vsct* soubor z existující tabulky příkaz�
 
 5. V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] okna příkazového řádku, přejděte do adresáře.
 
-6. Typ
+6. Type
 
    ```
    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct
@@ -80,7 +80,7 @@ Můžete vytvořit základě XML *.vsct* soubor z existující tabulky příkaz�
     Tato akce vytvoří novou *.vsct* souboru zdroje tabulky příkazů XML. Soubor můžete zkompilovat pomocí *Vsct.exe*, kompilátor VSCT, jako jste vytvářeli jakýkoli jiný *.vsct* souboru.
 
    > [!NOTE]
-   >  Můžete zlepšit čitelnost *.vsct* souboru přeformátování komentáře XML.
+   > Můžete zlepšit čitelnost *.vsct* souboru přeformátování komentáře XML.
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
@@ -90,13 +90,13 @@ Můžete vytvořit základě XML *.vsct* soubor z existujícího binárního sou
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Vytvoření souboru .vsct ze souboru .cto
 
-1.  Získání kopií *.cto* Souborová služba a její odpovídající *.ctsym* souboru.
+1. Získání kopií *.cto* Souborová služba a její odpovídající *.ctsym* souboru.
 
-2.  Soubory umístit do stejného adresáře jako *vsct.exe* kompilátoru.
+2. Soubory umístit do stejného adresáře jako *vsct.exe* kompilátoru.
 
-3.  Na příkazovém řádku aplikace Visual Studio, přejděte do adresáře, který obsahuje *.cto* a *.ctsym* soubory.
+3. Na příkazovém řádku aplikace Visual Studio, přejděte do adresáře, který obsahuje *.cto* a *.ctsym* soubory.
 
-4.  Typ
+4. Type
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -111,9 +111,9 @@ Můžete vytvořit základě XML *.vsct* soubor z existujícího binárního sou
 
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>Přidat do projektu kompilace souboru .vsct
 
-1.  Otevřete soubor projektu v editoru. Pokud projekt načíst, musí se nejdřív uvolnit.
+1. Otevřete soubor projektu v editoru. Pokud projekt načíst, musí se nejdřív uvolnit.
 
-2.  Přidat [itemgroup – element](../../msbuild/itemgroup-element-msbuild.md) , která obsahuje `VSCTCompile` elementu, jak je znázorněno v následujícím příkladu.
+2. Přidat [itemgroup – element](../../msbuild/itemgroup-element-msbuild.md) , která obsahuje `VSCTCompile` elementu, jak je znázorněno v následujícím příkladu.
 
     ```xml
     <ItemGroup>
@@ -126,7 +126,7 @@ Můžete vytvořit základě XML *.vsct* soubor z existujícího binárního sou
 
      `ResourceName` Element by měl být vždy nastaven na `Menus.ctmenu`.
 
-3.  Pokud váš projekt obsahuje *RESX* přidejte `EmbeddedResource` element, který obsahuje `MergeWithCTO` elementu, jak je znázorněno v následujícím příkladu:
+3. Pokud váš projekt obsahuje *RESX* přidejte `EmbeddedResource` element, který obsahuje `MergeWithCTO` elementu, jak je znázorněno v následujícím příkladu:
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -138,9 +138,9 @@ Můžete vytvořit základě XML *.vsct* soubor z existujícího binárního sou
 
      Tento kód by měl přejít uvnitř `ItemGroup` element, který obsahuje vložené prostředky.
 
-4.  Otevřete soubor balíčku, obvykle s názvem  *\<ProjectName\>Package.cs* nebo  *\<ProjectName\>Package.vb*, v editoru.
+4. Otevřete soubor balíčku, obvykle s názvem  *\<ProjectName\>Package.cs* nebo  *\<ProjectName\>Package.vb*, v editoru.
 
-5.  Přidat `ProvideMenuResource` atribut třídě balíčku, jak je znázorněno v následujícím příkladu.
+5. Přidat `ProvideMenuResource` atribut třídě balíčku, jak je znázorněno v následujícím příkladu.
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]

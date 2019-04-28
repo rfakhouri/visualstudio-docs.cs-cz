@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f233e2256fc4baef9ee6ca7f07d3d7b71b68b47
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908431"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Použití rozhraní MPF (Managed Package Framework) k implementaci typu projektu (C#)
 Managed Package Framework (MPF) poskytuje třídy jazyka C# můžete použít nebo dědí implementovat vlastní typy projektů. MPF mnoho rozhraní sady Visual Studio očekává, že typ projektu chcete poskytnout, implementuje, poskytne vám zdarma soustředit na implementaci údaje vašeho typu projektu.

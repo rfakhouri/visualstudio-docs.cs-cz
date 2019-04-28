@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432584"
 ---
 # <a name="shader-designer"></a>Návrhář shaderů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 |**Pokročilé**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Export**: Umožňuje exportovat shader v různých formátech.<br /><br /> **Exportovat jako**: Shader exportuje jako zdrojový kód buď HLSL nebo jako hodnota bytecode funkce shader kompilované. Další informace o tom, jak exportovat shader, naleznete v tématu [jak: Exportovat Shader](../designers/how-to-export-a-shader.md).<br /><br /> **Grafické moduly**: Umožňuje výběr renderer, který se používá k zobrazení návrhové ploše.<br /><br /> **Vykreslení s D3D11**: Používá rozhraní Direct3D 11 k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Vykreslení s D3D11WARP**: Používá rozhraní Direct3D 11 Windows Advanced Rasterizační platformě WARP () k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Zobrazení**: Umožňuje výběr další informace o návrháři shaderu.<br /><br /> **Frekvence snímků**: Pokud povolená, zobrazí aktuální frekvenci snímků v pravém horním rohu návrhové plochy. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu.  Tato možnost je užitečná, když povolíte **režim vykreslování v reálném čase** možnost.|  
   
 > [!TIP]
->  Můžete použít **Upřesnit** tlačítko poslední příkaz spustit znovu.  
+> Můžete použít **Upřesnit** tlačítko poslední příkaz spustit znovu.  
   
 ### <a name="working-with-nodes-and-connections"></a>Práce s uzly a připojení  
  Použití **vyberte** režimu k přidání, odebrání, změna umístění, připojení a konfigurace uzlů. Tady je postup pro provádění těchto základních operací:  

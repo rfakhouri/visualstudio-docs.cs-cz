@@ -10,12 +10,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd99d223d8071b4f0c10052b0b42c421d2360e2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a6598e2f1a178845b3ad2017716576439185379e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426449"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Správa načítání projektů v řešení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
  Pokud se správce zatížení řešení pro správu obecně načítání řešení, se dá implementovat jako součást sady VSPackage. Balíček musí být nastavená na autoload tak, že přidáte <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> na VSPackage s hodnotou <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Správci řešení zatížení můžete v aktivovat <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
   
 > [!NOTE]
->  Další informace o balíčcích autoloading najdete v tématu [načítání rozšíření VSPackages](../extensibility/loading-vspackages.md).  
+> Další informace o balíčcích autoloading najdete v tématu [načítání rozšíření VSPackages](../extensibility/loading-vspackages.md).  
   
  Vzhledem k tomu, že Visual Studio rozpozná pouze poslední řešení zatížení správce aktivaci, by měl obecné řešení zatížení správci vždy zjistit, zda je před aktivací sami stávající správce zatížení. Pokud volání GetProperty() řešení služby pro <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> vrátí `null`, neexistuje žádný správce zatížení aktivního řešení. Pokud nevrací hodnotu null, zkontrolujte, zda je objekt stejný jako správce zatížení vašeho řešení.  
   
@@ -114,4 +114,4 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: volání této metody vynutí projekt v `guidProjectID` načíst dříve, než metoda vrátí.  
   
 > [!NOTE]
->  . Ve výchozím nastavení pouze projekty, které mají vyžádání načíst a byly načteny priority načítání na pozadí, ale pokud <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> příznak je předáno metodě, se načtou všechny projekty s výjimkou těch, které jsou označeny explicitně načíst.
+> . Ve výchozím nastavení pouze projekty, které mají vyžádání načíst a byly načteny priority načítání na pozadí, ale pokud <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> příznak je předáno metodě, se načtou všechny projekty s výjimkou těch, které jsou označeny explicitně načíst.

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ef4d25088e56f2223cb392dbc00c8454e1a291ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826376"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Postupy: Konfigurace zabezpečení se seznamem povolených položek
   Pokud máte oprávnění správce, můžete nakonfigurovat [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] důvěryhodný dotaz na ovládací prvek, zda koncovým uživatelům se zobrazí možnost instalace řešení pro systém Office uložením rozhodnutí o důvěryhodnosti na seznam povolených položek. Informace o seznamech povolených položek najdete v tématu [řešení důvěřovat Office s použitím seznamů povolených položek](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -52,7 +52,7 @@ ms.locfileid: "60102013"
 
 3. Přidejte následující podklíče jako **řetězcovou hodnotu**, pokud ještě neexistují, s přiřazenými hodnotami.
 
-    |Hodnota řetězce podklíče|Value|
+    |Hodnota řetězce podklíče|Hodnota|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
     |**UntrustedSites**|**Disabled** (Zakázáno)|
