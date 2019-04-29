@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21acd0970415db23da330ece46131cde72cd706a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416507"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Úpravy programových testů uživatelského rozhraní pomocí Editoru programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Editor programového testu uživatelského rozhraní umožňuje snadno upravovat
  V Průzkumníku řešení otevřete místní nabídku pro **UIMap.uitest** a zvolte **otevřete**. Programový test uživatelského rozhraní se zobrazí v Editoru programového testu uživatelského rozhraní. Nyní můžete zobrazit a upravit nahrané metody, akce a odpovídající ovládací prvky v programovém testu uživatelského rozhraní.  
   
 > [!TIP]
->  Když vyberete akci uživatelského rozhraní, který je umístěný v metodě v **akce uživatelského rozhraní** podokně odpovídající ovládací prvek je zvýrazněn. Můžete také upravit akce uživatelského rozhraní nebo vlastností ovládacích prvků.  
+> Když vyberete akci uživatelského rozhraní, který je umístěný v metodě v **akce uživatelského rozhraní** podokně odpovídající ovládací prvek je zvýrazněn. Můžete také upravit akce uživatelského rozhraní nebo vlastností ovládacích prvků.  
   
  *Nevidím* Editor programového testu uživatelského rozhraní.  
  Pravděpodobně používáte verzi sady Visual Studio Enterprise před 2012. Editor programového testu uživatelského rozhraní se také k dispozici v sadě Visual Studio 2010 funkce aktualizací Service Pack 2 s předplatným MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119).  
@@ -220,4 +220,4 @@ Editor programového testu uživatelského rozhraní umožňuje snadno upravovat
  [Vytváření programových testů UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Vytvoření datově řízeného programového testu UI](../test/creating-a-data-driven-coded-ui-test.md)   
  [Generování programového testu UI ze stávajícího záznamu akcí](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
- [Návod: Vytváření, úpravy a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+ [Návod: Vytváření, upravování a údržba programového testu uživatelského rozhraní](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

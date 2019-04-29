@@ -71,7 +71,7 @@
       href: updating-the-user-interface.md
     - name: Lokalizace příkazů nabídky
       href: localizing-menu-commands.md
-- name: Přidávání příkazů na panely nástrojů
+- name: Přidávání komentářů k panelům nástrojů
   href: adding-commands-to-toolbars.md
   items:
     - name: Přidání panelu nástrojů
@@ -105,7 +105,7 @@
       href: subscribing-to-an-event.md
     - name: Rozšíření okna Výstup
       href: extending-the-output-window.md
-    - name: 'Rozšíření vlastností, seznamu úkolů, oken Výstup a Možnosti'
+    - name: 'Rozšíření vlastností, seznamu úkolů a oken Výstup a Možnosti'
       href: extending-the-properties-task-list-output-and-options-windows.md
     - name: Vytváření a správa modálních dialogových oken
       href: creating-and-managing-modal-dialog-boxes.md
@@ -191,6 +191,8 @@
               href: how-to-open-standard-editors.md
             - name: Otevření editorů pro otevřené dokumenty
               href: how-to-open-editors-for-open-documents.md
+        - name: Průvodce migrací rozšiřitelnosti návrhářů XAML
+          href: xaml-designer-extensibility-migration.md
 - name: Rozšíření projektů
   href: extending-projects.md
   items:
@@ -210,7 +212,7 @@
       href: persisting-the-property-of-a-project-item.md
     - name: Správa projektů univerzálních aplikací pro Windows
       href: managing-universal-windows-projects.md
-- name: Řešení rozšíření
+- name: Rozšíření řešení
   href: extending-solutions.md
   items:
     - name: Rozšíření filtru Průzkumníka řešení
@@ -425,11 +427,11 @@
       href: ux-guidelines/evaluation-tools-for-visual-studio.md
     - name: Podpora schopnosti rozpoznávat nastavení DPI monitoru
       href: ux-guidelines/per-monitor-awareness-extenders.md
-- name: Řešení problémů s nastavením DPI
+- name: Řešení problémů s DPI
   href: addressing-dpi-issues2.md
 - name: Služba vyhledávání a katalog obrázků
   href: image-service-and-catalog.md
-- name: Používání a poskytování služeb
+- name: Využívání a poskytování služeb
   href: using-and-providing-services.md
   items:
     - name: Získání služby
@@ -440,7 +442,7 @@
       href: how-to-provide-an-asynchronous-visual-studio-service.md
     - name: Řešení problémů se službami
       href: how-to-troubleshoot-services.md
-- name: Správa rozšíření VSPackages
+- name: Správa balíčků VSPackage
   href: managing-vspackages.md
   items:
     - name: Experimentální instance

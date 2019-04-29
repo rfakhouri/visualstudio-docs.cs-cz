@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896617"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specifikátory formátu pro C++ v ladicím programu sady Visual Studio
 Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch**, **automatické hodnoty**, a **lokální** windows pomocí specifikátorů formátu.
@@ -37,7 +37,7 @@ Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch**, **automati
 Můžete také použít specifikátory formátu v **okamžité** okně **příkaz** okno v [zarážky s trasováním](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)a dokonce i ve zdrojových oknech. Pokud pozastavíte výraz v těchto oknech, výsledek se zobrazí v [datového tipu](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Zobrazení datového tipu odráží specifikátor formátu.
 
 > [!NOTE]
-> Při změně nativní ladicí program sady Visual Studio do nového modulu pro ladění, přidání některých nových specifikátorů formátu a některých jejich starých verzí byly odebrány. Starší ladicí program je stále používán, když provedete spolupráce (smíšená nativní a spravovaná) ladění s C + +/ CLI.
+> Při změně nativní ladicí program sady Visual Studio do nového modulu pro ladění, přidání některých nových specifikátorů formátu a některých jejich starých verzí byly odebrány. Starší ladicí program je stále používán, když provedete spolupráce (smíšená nativní a spravovaná) ladění pomocí C++vyhodnocovací.
 
 ## <a name="set-format-specifiers"></a>Specifikátory formátu sady
 Použijeme následující příklad kódu:
@@ -62,7 +62,7 @@ Můžete zobrazit a vybrat ze seznamu dostupných specifikátory přidáním č�
 ::: moniker-end
 
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Specifikátory formátu
-Následující tabulky popisují specifikátory formátu, které můžete použít v sadě Visual Studio. Specifikátory tučným písmem jsou podporovány pouze pro nové ladicí program a ne pro definiční ladění v jazyce C + +/ CLI.
+Následující tabulky popisují specifikátory formátu, které můžete použít v sadě Visual Studio. Specifikátory tučným písmem jsou podporovány pouze pro nové ladicí program a nikoli pro interop ladění s C++vyhodnocovací.
 
 ::: moniker range=">= vs-2019" 
 
@@ -144,8 +144,8 @@ Pokud máte ukazatel na objekt, který chcete zobrazit v poli, můžete použít
 |**[exp]**|Platný výraz jazyka C++, který je vyhodnocen jako celé číslo.|pBuffer [bufferSize]|Zobrazí pBuffer jako pole `bufferSize` elementy.|
 |**expand(n)**|Platný výraz jazyka C++, který je vyhodnocen jako celé číslo|pBuffer, expand(2)|Zobrazí třetího prvku pole  `pBuffer`|
 
-## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Specifikátory formátu pro interop ladění s C + +/ CLI
-Specifikátory **tučné** jsou podporovány pouze pro nativní ladění C + +/ CLI kódu.
+## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Specifikátory formátu pro interop ladění s C++vyhodnocovací
+Specifikátory **tučné** jsou podporovány pouze pro nativní ladění a C++vyhodnocovací kódu.
 
 |Specifikátor|Formát|Původní hodnota Watch|Zobrazená hodnota|
 |---------------|------------|--------------------------|---------------------|
@@ -167,7 +167,7 @@ Specifikátory **tučné** jsou podporovány pouze pro nativní ladění C + +/ 
 |wm|Čísla zpráv Windows|0x0010|WM_CLOSE|
 |!|Formát RAW ignorující veškerá přizpůsobení zobrazení typu dat|\<přizpůsobit reprezentace >|4|
 
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formát specifikátorů pro paměťových míst v interoperabilním ladění s C + +/ CLI
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formát specifikátorů pro paměťových míst v interoperabilním ladění s C++vyhodnocovací
 Následující tabulka popisuje symboly formátování použité pro místo v paměti. Specifikátor vyhledávání v paměti můžete použít s libovolnou hodnotou nebo výraz, který je vyhodnocován na místo.
 
 |Symbol|Formát|Původní hodnota Watch|Zobrazená hodnota|
@@ -180,7 +180,7 @@ Následující tabulka popisuje symboly formátování použité pro místo v pa
 |**mq**|2 x quadword|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|
 |**mu**|2bajtové znaky (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|
 
-### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Velikost specifikátoru pro ukazatele jako pole v interoperabilním ladění s C + +/ CLI
+### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Velikost specifikátoru pro ukazatele jako pole v interoperabilním ladění s C++vyhodnocovací
 Pokud máte ukazatel na objekt, který chcete zobrazit v poli, můžete k zadání počtu elementů pole celé číslo.
 
 |Specifikátor|Formát|Výraz|Zobrazená hodnota|
