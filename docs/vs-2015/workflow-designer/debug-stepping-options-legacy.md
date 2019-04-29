@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b1f0761ba750146ce7f8cc52e6992dae689f7779
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976964"
 ---
 # <a name="debug-stepping-options-legacy"></a>Možnosti krokování při ladění (starší verze)
 Toto téma popisuje, jak ladit [!INCLUDE[wf](../includes/wf-md.md)] aplikace, které mají souběžných aktivit v starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

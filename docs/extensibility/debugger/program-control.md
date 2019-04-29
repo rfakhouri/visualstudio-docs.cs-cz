@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 971eb3184fc12b9ed72675fbcd46a893981b4c9e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46e41cacafa2251c96ec7a97899b81034f455d6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414215"
 ---
 # <a name="program-control"></a>Řízení programu
 V sadě Visual Studio ladění, všechny následující krokování a pokračování rutiny probíhají na úrovni aplikace:
@@ -33,7 +33,7 @@ V sadě Visual Studio ladění, všechny následující krokování a pokračov�
 - Obnovování vláken součástí programu
 
 > [!NOTE]
->  Zobrazení zásobníku volání se implementuje na úrovni vlákna. Informace o snímcích výčet při zobrazení zásobníku volání pro vlákno, musí implementovat všechny metody [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) rozhraní.
+> Zobrazení zásobníku volání se implementuje na úrovni vlákna. Informace o snímcích výčet při zobrazení zásobníku volání pro vlákno, musí implementovat všechny metody [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) rozhraní.
 
 ## <a name="methods-of-program-control"></a>Metody řízení programu
  V následující tabulce jsou uvedeny metody objektu [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , který je nutné implementovat pro minimální funkční ladicího stroje (DE) a řízení provádění.

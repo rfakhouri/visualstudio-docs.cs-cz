@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2f10b239b4307b94c1f3b62b8e0a29767b22aaf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e9f27d203f317a63049015dbeba073d8ee075e61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428075"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Zpracování textových šablon pomocí vlastního hostitele
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,12 +25,12 @@ ms.locfileid: "54796756"
 *Transformace textové šablony* proces trvá *textové šablony* soubor jako vstup a vytvoří textový soubor jako výstup. Můžete volat z stroj pro transformaci textu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, nebo ze samostatné aplikace spuštěné v počítači, ve kterém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je nainstalována. Nicméně je nutné zadat *hostitele šablonování textu*. Tato třída připojuje šablonu k prostředí, vyhledává prostředky, jako jsou sestavení a vkládané soubory, a zpracovává výstup a chybové zprávy.  
   
 > [!TIP]
->  Pokud vytváříte balíček nebo rozšíření, které poběží v rámci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zvažte možnost použít službu šablonování textu místo psaní vlastního hostitele. Další informace najdete v tématu [volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+> Pokud vytváříte balíček nebo rozšíření, které poběží v rámci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zvažte možnost použít službu šablonování textu místo psaní vlastního hostitele. Další informace najdete v tématu [volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
 > [!NOTE]
->  Transformace textových šablon nedoporučujeme používat v serverových aplikacích. Transformace textových šablon nedoporučujeme používat jinak než v jednom vlákně. Stroj pro šablonování textu totiž používá k překladu, kompilaci a spouštění šablon jedinou doménu AppDomain. Přeložený kód není bezpečný pro přístup z více vláken. Tento stroj je určen k sériovému, zpracování souborů se nacházejí v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] v době návrhu projektu.  
+> Transformace textových šablon nedoporučujeme používat v serverových aplikacích. Transformace textových šablon nedoporučujeme používat jinak než v jednom vlákně. Stroj pro šablonování textu totiž používá k překladu, kompilaci a spouštění šablon jedinou doménu AppDomain. Přeložený kód není bezpečný pro přístup z více vláken. Tento stroj je určen k sériovému, zpracování souborů se nacházejí v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] v době návrhu projektu.  
 >   
->  Pro běhové aplikace zvažte použití předzpracovaných textových šablon: viz [generování textu za běhu pomocí textových šablon T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+> Pro běhové aplikace zvažte použití předzpracovaných textových šablon: viz [generování textu za běhu pomocí textových šablon T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
  Pokud vaše aplikace používá sadu šablon, které jsou v době kompilace fixní, je jednodušší použít předzpracované textové šablony. Tento přístup můžete také použít, pokud vaše aplikace poběží v počítači, ve kterém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] není nainstalována. Další informace najdete v tématu [generování textu za běhu pomocí textových šablon T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
@@ -53,7 +53,7 @@ string output = engine.ProcessTemplate(templateString, host);
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> je definován v **Microsoft.VisualStudio.TextTemplating.\*. 0 knihovna dll**, a <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> je definována v **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0 knihovna dll**.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Návod: Vytváření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
+ [Návod: Vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
  Ukazuje, jak vytvořit vlastního hostitele textových šablon, která je k dispozici mimo textové šablony funkce [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="reference"></a>Odkaz  
