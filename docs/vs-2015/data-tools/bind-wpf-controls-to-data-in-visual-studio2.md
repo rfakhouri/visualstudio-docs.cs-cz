@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b010ed5b1e3bf442be778b6cbb7d6e35efe1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437044"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Můžete vytvořit vázané na data [!INCLUDE[TLA#tla_titlewinclient](../include
 
 3. Proveďte jeden z následujících úloh k vytvoření ovládacích prvků vázaných na data:
 
-    - [Vytvoření ovládacího prvku, který je vázán na jedno pole dat.](#simple).
+    - [Vytvoření ovládacího prvku, který je vázán na jedno pole dat](#simple).
 
     - [Vytvoření ovládacího prvku, který je vázán na více polí dat](#complex).
 
@@ -80,7 +80,7 @@ Můžete vytvořit vázané na data [!INCLUDE[TLA#tla_titlewinclient](../include
      Chcete-li vybrat jiného ovládacího prvku, klikněte na šipku rozevíracího seznamu vedle položky a vyberte ovládací prvek. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     > [!NOTE]
-    >  Pokud nechcete zobrazit konkrétní sloupce nebo vlastnosti, rozbalte položku, kterou chcete zobrazit jeho podřízené položky. Klikněte na šipku rozevíracího seznamu vedle sloupce nebo vlastnosti, které nechcete zobrazit, a pak klikněte na **žádný**.
+    > Pokud nechcete zobrazit konkrétní sloupce nebo vlastnosti, rozbalte položku, kterou chcete zobrazit jeho podřízené položky. Klikněte na šipku rozevíracího seznamu vedle sloupce nebo vlastnosti, které nechcete zobrazit, a pak klikněte na **žádný**.
 
 3. Přetáhněte položku na platný kontejner v návrháři, jako například <xref:System.Windows.Controls.Grid>. Další informace o platné kontejnery, naleznete v tématu [ovládací prvky WPF vytvoření vazby k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -96,7 +96,7 @@ Můžete vytvořit vázané na data [!INCLUDE[TLA#tla_titlewinclient](../include
 2. Klikněte na šipku rozevíracího seznamu vedle položky a vyberte **podrobnosti**.
 
     > [!NOTE]
-    >  Pokud nechcete zobrazit konkrétní sloupce nebo vlastnosti, rozbalte položku, kterou chcete zobrazit jeho podřízené položky. Klikněte na šipku rozevíracího seznamu vedle sloupce nebo vlastnosti, které nechcete zobrazit, a pak klikněte na **žádný**.
+    > Pokud nechcete zobrazit konkrétní sloupce nebo vlastnosti, rozbalte položku, kterou chcete zobrazit jeho podřízené položky. Klikněte na šipku rozevíracího seznamu vedle sloupce nebo vlastnosti, které nechcete zobrazit, a pak klikněte na **žádný**.
 
 3. Přetáhněte položku na platný kontejner v návrháři, jako například <xref:System.Windows.Controls.Grid>. Další informace o platné kontejnery, naleznete v tématu [ovládací prvky WPF vytvoření vazby k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -118,7 +118,7 @@ Můžete vytvořit vázané na data [!INCLUDE[TLA#tla_titlewinclient](../include
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] a kódu pro ovládací prvek svázat data. Další informace najdete v tématu [ovládací prvky WPF vytvoření vazby k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
-    >  Pokud ovládací prvek je již vázán na data, je resetovat datové vazby pro ovládací prvek na položku, která byla naposledy přetahovat do ovládacího prvku.
+    > Pokud ovládací prvek je již vázán na data, je resetovat datové vazby pro ovládací prvek na položku, která byla naposledy přetahovat do ovládacího prvku.
 
 ## <a name="see-also"></a>Viz také
  [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [vytváření vyhledávacích tabulek v aplikacích WPF](../data-tools/create-lookup-tables-in-wpf-applications.md) [zobrazení souvisejících dat v aplikacích WPF](../data-tools/display-related-data-in-wpf-applications.md) [WPF vytvoření vazby ovládacích prvků do datové sady](../data-tools/bind-wpf-controls-to-a-dataset.md) [WPF vytvoření vazby ovládacích prvků do datové služby WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [názorný postup: Zobrazení souvisejících dat v aplikaci WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

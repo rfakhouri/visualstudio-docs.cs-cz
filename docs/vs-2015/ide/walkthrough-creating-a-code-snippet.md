@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee4e0c6fd686398ae89b5c079d6efc1297a19f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b23640abec76f04199abe6e64888c641940e7a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388334"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Návod: Vytvoření fragmentu kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60109801"
 Fragment kódu můžete vytvořit pouze v několika krocích. Všechno, co je třeba provést je vytvořit soubor XML, vyplnit odpovídající prvky a přidejte svůj kód do něj. Můžete také přidat odkazy a náhradní parametry do vašeho kódu. Fragment kódu můžete přidat k instalaci sady Visual Studio pomocí tlačítka importovat ve Správce fragmentů kódů (**nástroje/Správce fragmentů kódů**).  
   
 > [!TIP]
->  Informace o snadnějším psaní fragmentů kódu snadněji vyhledat na webu CodePlex komunitní nástroje [Editor fragmentů](http://go.microsoft.com/fwlink/?LinkId=251033).  
+> Informace o snadnějším psaní fragmentů kódu snadněji vyhledat na webu CodePlex komunitní nástroje [Editor fragmentů](http://go.microsoft.com/fwlink/?LinkId=251033).  
   
 ## <a name="snippet-template"></a>Šablona fragmentu  
  Šablona základního fragmentu je následující:  
