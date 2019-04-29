@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437958"
 ---
 # <a name="gpu-usage"></a>Využití GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Pomocí nástroje využití GPU ve výkon sady Visual Studio a centra diagnostik
 - GPU a ovladače, které podporují instrumentace nezbytné časování.  
   
   > [!NOTE]
-  >  Další informace o podporovaný hardware a ovladačů najdete v tématu [hardwarem a ovladači podporují](#hwsupport) na konci tohoto dokumentu.  
+  > Další informace o podporovaný hardware a ovladačů najdete v tématu [hardwarem a ovladači podporují](#hwsupport) na konci tohoto dokumentu.  
   
   Další informace o požadavcích diagnostiky grafiky, naleznete v tématu [Začínáme](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
@@ -47,7 +47,7 @@ Pomocí nástroje využití GPU ve výkon sady Visual Studio a centra diagnostik
     ![Zvolte diagnostické nástroje, které chcete použít. ](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  Ne všechny výkonu a diagnostické nástroje je možné ve stejnou dobu.  
+   > Ne všechny výkonu a diagnostické nástroje je možné ve stejnou dobu.  
   
 3. Zvolte modrá **Start** tlačítko v dolní části rozcestníku výkon a Diagnostika ke spouštění vaší aplikace v nabídce Nástroje, které jste vybrali.  
   
@@ -110,7 +110,7 @@ Pomocí nástroje využití GPU ve výkon sady Visual Studio a centra diagnostik
 |**ID vlákna**|ID vlákna, odkud událost pochází.|  
   
 > [!IMPORTANT]
->  Windows 8.1 se vyžaduje pro attribution události. Kromě toho pokud GPU nebo ovladač nepodporují funkce nezbytné instrumentace, všechny události se zobrazí jako "zjednodušeně". Ujistěte se, že aktualizace ovladače GPU a zkuste to znovu, pokud dochází k tomuto problému. Další informace najdete v tématu [hardwarem a ovladači podporují](#hwsupport) níže.  
+> Windows 8.1 se vyžaduje pro attribution události. Kromě toho pokud GPU nebo ovladač nepodporují funkce nezbytné instrumentace, všechny události se zobrazí jako "zjednodušeně". Ujistěte se, že aktualizace ovladače GPU a zkuste to znovu, pokud dochází k tomuto problému. Další informace najdete v tématu [hardwarem a ovladači podporují](#hwsupport) níže.  
   
 ## <a name="gpu-usage-settings"></a>Nastavení využití GPU  
  Můžete nakonfigurovat pomocí nástroje využití GPU se odložit kolekce profilace informace, a ne od lze shromažďovat informace o co nejdříve po spuštění aplikace. Protože velikost profilování informace můžou být důležité, to je užitečné, když víte, že zpomalení výkonu vaší aplikace se zobrazí až později.  
@@ -126,7 +126,7 @@ Pomocí nástroje využití GPU ve výkon sady Visual Studio a centra diagnostik
      ![Konfigurace při spuštění shromažďování využití GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  Odkládá se profilování se aktuálně nepodporuje pro aplikace rozhraní Direct3D 12.  
+> Odkládá se profilování se aktuálně nepodporuje pro aplikace rozhraní Direct3D 12.  
   
  Při shromažďování informací profilování odložení pomocí tohoto nastavení, bude k dispozici v dolní části okna nástroje využití GPU dodatečný odkaz, při spuštění aplikace v systému pomocí nástroje využití GPU. Aby začal shromažďovat analytické informace, zvolte **Start** odkaz v **zahájení shromažďování dalších podrobných dat o využití GPU** zprávy.  
   

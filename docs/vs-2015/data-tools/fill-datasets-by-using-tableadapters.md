@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431948"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Vyplnění datové sady s použitím objektů TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "59656775"
 Komponenty TableAdapter vyplní datovou sadu s daty z databáze, na základě jednoho nebo více dotazů nebo uložených procedur, které zadáte. Objekty TableAdapter lze provést také přidání, aktualizace a odstranění v databázi, a zachovat změny provedené do datové sady. Také můžete použít globální příkazy, které nesouvisí s jakoukoli konkrétní tabulku.  
   
 > [!NOTE]
->  Objekty TableAdapter jsou generovány pomocí návrháře sady Visual Studio. Pokud vytvoříte datové sady prostřednictvím kódu programu, použijte vlastnost DataAdapter, což je třída rozhraní .NET Framework.  
+> Objekty TableAdapter jsou generovány pomocí návrháře sady Visual Studio. Pokud vytvoříte datové sady prostřednictvím kódu programu, použijte vlastnost DataAdapter, což je třída rozhraní .NET Framework.  
   
  Podrobné informace o operacích TableAdapter můžete přeskočit přímo na jednu z těchto témat:  
   
@@ -98,7 +98,7 @@ Komponenty TableAdapter vyplní datovou sadu s daty z databáze, na základě je
  Objekt TableAdapter efektivně provede stejné operace s příkazy, které byste obvykle provedli. Například při volání adaptéru `Fill` metody adaptér spustí příkaz data jeho `SelectCommand` vlastnost a použije čtečku dat (například <xref:System.Data.SqlClient.SqlDataReader>) k načtení sady výsledků do tabulky data. Podobně při volání adaptéru `Update` metody spuštěn příslušný příkaz (v `UpdateCommand`, `InsertCommand`, a `DeleteCommand` vlastnosti) pro jednotlivé změněné záznamy v datové tabulce.  
   
 > [!NOTE]
->  Pokud v hlavním dotazu není k dispozici dostatek informací, příkazy `InsertCommand`, `UpdateCommand` a `DeleteCommand` jsou vytvořeny jako výchozí při generování objektu TableAdapter. Pokud hlavním dotazem objektu TableAdapter je více než jedné tabulky příkaz SELECT, je možné, Návrhář nebude možné generovat `InsertCommand`, `UpdateCommand`, a `DeleteCommand`. Pokud tyto příkazy nejsou vygenerovány, budete k chybě může dojít při spuštění `TableAdapter.Update` metody.  
+> Pokud v hlavním dotazu není k dispozici dostatek informací, příkazy `InsertCommand`, `UpdateCommand` a `DeleteCommand` jsou vytvořeny jako výchozí při generování objektu TableAdapter. Pokud hlavním dotazem objektu TableAdapter je více než jedné tabulky příkaz SELECT, je možné, Návrhář nebude možné generovat `InsertCommand`, `UpdateCommand`, a `DeleteCommand`. Pokud tyto příkazy nejsou vygenerovány, budete k chybě může dojít při spuštění `TableAdapter.Update` metody.  
   
 ## <a name="tableadapter-generatedbdirectmethods"></a>Vlastnost GenerateDBDirectMethods třídy TableAdapter  
  Kromě `InsertCommand`, `UpdateCommand`, a `DeleteCommand`, jsou objekty TableAdapter vytvořeny metodami, které lze spustit přímo proti databázi. Tyto metody (`TableAdapter.Insert`, `TableAdapter.Update` a `TableAdapter.Delete`) lze volat přímo pro manipulaci s daty v databázi. To znamená, že tyto metody lze volat z vašeho kódu namísto volání metody `TableAdapter.Update` zpracování vložení, aktualizace a odstranění, které čekají na vyřízení pro přidružená data tabulky.  

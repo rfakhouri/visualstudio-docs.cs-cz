@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a44a6a3474d56b1254333731d79b2172fd6143b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407633"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Použití samostatného kolektoru IntelliTrace (C#, Visual Basic)
 
@@ -26,10 +26,10 @@ ms.locfileid: "60077652"
  Sledujte nástroj IntelliTrace v akci: [Shromažďování a analýza dat IntelliTrace v produkčním prostředí pro ladění (video Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
->  Může také shromažďovat stejná data IntelliTrace pro webové aplikace a aplikace služby SharePoint spuštěna na vzdálených počítačích pomocí **agenta Microsoft Monitoring Agent** v **trasování** režimu.
+> Může také shromažďovat stejná data IntelliTrace pro webové aplikace a aplikace služby SharePoint spuštěna na vzdálených počítačích pomocí **agenta Microsoft Monitoring Agent** v **trasování** režimu.
 >
->  Události související s výkonem v IntelliTrace data může shromažďovat spuštěním agenta v **monitorování** režimu. **Monitorování** režim má menší dopad na výkon než **trasování** režimu nebo **samostatného kolektoru IntelliTrace**. Agenta Microsoft Monitoring Agent změnit prostředí cílového systému, když je nainstalovaná. Zobrazit [pomocí agenta Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
->  Samostatný kolektor IntelliTrace nepodporuje procesu snímky.
+> Události související s výkonem v IntelliTrace data může shromažďovat spuštěním agenta v **monitorování** režimu. **Monitorování** režim má menší dopad na výkon než **trasování** režimu nebo **samostatného kolektoru IntelliTrace**. Agenta Microsoft Monitoring Agent změnit prostředí cílového systému, když je nainstalovaná. Zobrazit [pomocí agenta Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> Samostatný kolektor IntelliTrace nepodporuje procesu snímky.
 
  **Požadavky**
 
@@ -38,7 +38,7 @@ ms.locfileid: "60077652"
 - Visual Studio Enterprise (ale ne Professional nebo Community edice) na vývojovém počítači nebo jiném počítači pro otevření souborů .iTrace
 
   > [!NOTE]
-  >  Ujistěte se, že chcete ukládat symbolu (.pdb) soubory. Chcete-li ladit pomocí nástroje IntelliTrace a krokovat kód, musíte mít odpovídající zdrojové soubory a soubory symbolů. Zobrazit [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md).
+  > Ujistěte se, že chcete ukládat symbolu (.pdb) soubory. Chcete-li ladit pomocí nástroje IntelliTrace a krokovat kód, musíte mít odpovídající zdrojové soubory a soubory symbolů. Zobrazit [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md).
 
   **Nejčastější dotazy**
 
@@ -111,7 +111,7 @@ ms.locfileid: "60077652"
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       >  Období (**.**) zachovává podsložky obsahující lokalizované plány sběru.
+       > Období (**.**) zachovává podsložky obsahující lokalizované plány sběru.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Nastavení oprávnění pro adresář kolekce
 
@@ -216,7 +216,7 @@ ms.locfileid: "60077652"
      `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
-    >  Po spuštění tohoto příkazu zadejte **Y** potvrďte, že chcete zahájit shromažďování data.
+    > Po spuštění tohoto příkazu zadejte **Y** potvrďte, že chcete zahájit shromažďování data.
 
      Chcete-li například shromažďovat data z aplikace služby SharePoint ve **SharePoint - 80** fondu aplikací:
 
@@ -247,7 +247,7 @@ ms.locfileid: "60077652"
      `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
-    >  Po spuštění tohoto příkazu zadejte **Y** potvrďte, že chcete shromažďování dat ukončit. Jinak kolektor může pokračovat ve shromažďování dat, iTrace soubor zůstane uzamčen nebo soubor nemusí obsahovat žádná užitečná data.
+    > Po spuštění tohoto příkazu zadejte **Y** potvrďte, že chcete shromažďování dat ukončit. Jinak kolektor může pokračovat ve shromažďování dat, iTrace soubor zůstane uzamčen nebo soubor nemusí obsahovat žádná užitečná data.
 
 6. [Otevřete soubor .iTrace v sadě Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
@@ -275,7 +275,7 @@ ms.locfileid: "60077652"
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Otevřete soubor .iTrace v sadě Visual Studio Enterprise
 
 > [!NOTE]
->  Chcete-li ladit pomocí nástroje IntelliTrace a krokovat kód, musíte mít odpovídající zdrojové soubory a soubory symbolů. Zobrazit [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md).
+> Chcete-li ladit pomocí nástroje IntelliTrace a krokovat kód, musíte mít odpovídající zdrojové soubory a soubory symbolů. Zobrazit [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md).
 
 1. Přesunout soubor .iTrace nebo ho zkopírujte do počítače s Visual Studio Enterprise (ale ne Professional nebo Community edice).
 
@@ -284,7 +284,7 @@ ms.locfileid: "60077652"
      Sada Visual Studio zobrazí **IntelliTrace – Souhrn** stránky. Ve většině částí lze prohlížet události nebo jiné položky, zvolte položku a začít ladit nástrojem IntelliTrace v okamžiku, kde a kdy k události došlo. Zobrazit [použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
-    >  Chcete-li ladit pomocí nástroje IntelliTrace a krokovat kód, musíte mít odpovídající zdrojové soubory a soubory na svém vývojovém počítači symbolů. Zobrazit [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md).
+    > Chcete-li ladit pomocí nástroje IntelliTrace a krokovat kód, musíte mít odpovídající zdrojové soubory a soubory na svém vývojovém počítači symbolů. Zobrazit [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md).
 
 ## <a name="Minimizing"></a> Jak lze získat většinu dat bez zpomalení aplikace?
  Nástroj IntelliTrace dokáže shromáždit velké množství dat, takže dopad na výkon aplikace závisí na data, která nástroj IntelliTrace shromažďuje a typu kódu, který analyzuje. Zobrazit [optimalizace kolekce IntelliTrace na provozních serverech](http://go.microsoft.com/fwlink/?LinkId=255233).

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 24bbd859b4867225e5ec5df95d298dd04146df46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421019"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Postupy: Aktualizace zdroje dat s použitím dat z hostitelského ovládacího prvku
   Můžete vytvořit vazbu hostitelského ovládacího prvku do zdroje dat a aktualizovat zdroj dat změny provedené u dat v ovládacím prvku. V tomto procesu existují dva hlavní kroky:
@@ -61,7 +61,7 @@ ms.locfileid: "60097489"
    - Pokud chcete aktualizovat zdroj dat při změně hodnoty vlastnosti vázané na data ovládacího prvku, nastavte tuto vlastnost na System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.
 
      > [!NOTE]
-     >  Možnost System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged se nevztahují na hostitelské ovládací prvky aplikace Word, protože slovo nemá nabídka dokumentů – nebo ovládací prvek – změna oznámení. Tato možnost je však možné pro ovládací prvky Windows Forms v dokumentech aplikace Word.
+     > Možnost System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged se nevztahují na hostitelské ovládací prvky aplikace Word, protože slovo nemá nabídka dokumentů – nebo ovládací prvek – změna oznámení. Tato možnost je však možné pro ovládací prvky Windows Forms v dokumentech aplikace Word.
 
      Následující příklad nastaví <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek se automaticky aktualizovat zdroj dat při změně hodnoty v ovládacím prvku. Tento příklad předpokládá, že máte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek s názvem `namedRange1` s jeho <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> vlastnost vázána na pole ve zdroji dat.
 
@@ -85,7 +85,7 @@ ms.locfileid: "60097489"
     - Chcete-li aktualizovat zdroj dat při změně hodnoty vlastnosti vázané na data ovládacího prvku, vyberte **OnPropertyChanged –**.
 
         > [!NOTE]
-        >  **OnPropertyChanged –** možnost se nevztahuje na hostitelské ovládací prvky aplikace Word, protože slovo nemá nabídka dokumentů – nebo ovládací prvek – změna oznámení. Tato možnost je však možné pro ovládací prvky Windows Forms v dokumentech aplikace Word.
+        > **OnPropertyChanged –** možnost se nevztahuje na hostitelské ovládací prvky aplikace Word, protože slovo nemá nabídka dokumentů – nebo ovládací prvek – změna oznámení. Tato možnost je však možné pro ovládací prvky Windows Forms v dokumentech aplikace Word.
 
 6. Zavřít **formátování a rozšířené vazby** dialogové okno.
 

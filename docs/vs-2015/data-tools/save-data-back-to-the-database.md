@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425339"
 ---
 # <a name="save-data-back-to-the-database"></a>Ukládání dat zpět do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
 |aktuální|Jan Wilson|James C. Wilson|  
   
 > [!CAUTION]
->  V `preserveChanges = true` scénář, pokud <xref:System.Data.DataSet.RejectChanges%2A> metoda je volána na záznam v datové sadě target a pak vrátí na původní data z *zdroj* datové sady. To znamená, že pokud se pokusíte aktualizovat původní zdroj dat s datovou sadou cíl, nemusí být schopna najít původní řádek aktualizovat. Narušení souběžného zpracování může zabránit tak, že vyplnění jinému objektu dataset pomocí aktualizovaných záznamů ze zdroje dat a potom provádění sloučení, aby se zabránilo narušení souběžného zpracování. (Když jiný uživatel upravuje záznam ve zdroji dat poté, co bylo vyplněno datové sady dojde k narušení souběžného zpracování.)  
+> V `preserveChanges = true` scénář, pokud <xref:System.Data.DataSet.RejectChanges%2A> metoda je volána na záznam v datové sadě target a pak vrátí na původní data z *zdroj* datové sady. To znamená, že pokud se pokusíte aktualizovat původní zdroj dat s datovou sadou cíl, nemusí být schopna najít původní řádek aktualizovat. Narušení souběžného zpracování může zabránit tak, že vyplnění jinému objektu dataset pomocí aktualizovaných záznamů ze zdroje dat a potom provádění sloučení, aby se zabránilo narušení souběžného zpracování. (Když jiný uživatel upravuje záznam ve zdroji dat poté, co bylo vyplněno datové sady dojde k narušení souběžného zpracování.)  
   
 ## <a name="update-constraints"></a>Aktualizovat omezení  
  Provádět změny existující řádek dat, přidat nebo aktualizovat data v jednotlivých sloupcích. Pokud datová sada obsahuje omezení (jako jsou cizí klíče nebo omezení NULL), je možné, že záznam dočasně lze v chybovém stavu při aktualizaci. To znamená může být v chybovém stavu po dokončení aktualizace jeden sloupec, ale než se ponoříte dalšímu.  
@@ -110,7 +110,7 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
   Po dokončení aktualizace se můžete znovu povolit kontroly omezení, která také znovu povolí aktualizace události a jejich vyvolá.  
   
 > [!NOTE]
->  Ve Windows Forms, architektuře vazby dat, která je integrována do objektu datagrid pozastaví omezení kontroly až fokus přesunete mimo řádek, a není nutné explicitně volat <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, nebo <xref:System.Data.DataRow.CancelEdit%2A> metody.  
+> Ve Windows Forms, architektuře vazby dat, která je integrována do objektu datagrid pozastaví omezení kontroly až fokus přesunete mimo řádek, a není nutné explicitně volat <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, nebo <xref:System.Data.DataRow.CancelEdit%2A> metody.  
   
  Omezení jsou automaticky zakázáno, pokud <xref:System.Data.DataSet.Merge%2A> metoda se vyvolá u datové sady. Po dokončení, pokud existuje jakákoliv omezení u datové sady, který není možné, sloučení <xref:System.Data.ConstraintException> je vyvolána výjimka. V takovém případě <xref:System.Data.DataSet.EnforceConstraints%2A> je nastavena na `false,` a všechna narušení omezení musí být vyřešeny před resetováním <xref:System.Data.DataSet.EnforceConstraints%2A> vlastnost `true`.  
   
@@ -182,12 +182,12 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
 - Po načtení datové sady. Načtení datové sady pomocí volání objektu TableAdapter `Fill` metoda pak adaptér pro vás automaticky provádí změny. Ale pokud načíst datovou sadu sloučením jinému objektu dataset do ní, pak budete muset provést změny ručně.  
   
   > [!NOTE]
-  >  Adaptér můžete zabránit automaticky potvrzování změny při volání `Fill` metodu tak, že nastavíte `AcceptChangesDuringFill` vlastnosti adaptéru `false`. Pokud je nastavena na `false`, pak bude <xref:System.Data.DataRow.RowState%2A> každého řádku, který je vložen během výplň je nastavena na <xref:System.Data.DataRowState>.  
+  > Adaptér můžete zabránit automaticky potvrzování změny při volání `Fill` metodu tak, že nastavíte `AcceptChangesDuringFill` vlastnosti adaptéru `false`. Pokud je nastavena na `false`, pak bude <xref:System.Data.DataRow.RowState%2A> každého řádku, který je vložen během výplň je nastavena na <xref:System.Data.DataRowState>.  
   
 - Po odeslání změn datové sady na jiný proces, jako jsou webové služby XML.  
   
   > [!CAUTION]
-  >  Provádění změn tímto způsobem se odstraní všechny informace o změně. Není změny provést až po můžete dokončit, provádění operací, které vyžadují vaše aplikace vědět, jaké změny byly provedeny v datové sadě.  
+  > Provádění změn tímto způsobem se odstraní všechny informace o změně. Není změny provést až po můžete dokončit, provádění operací, které vyžadují vaše aplikace vědět, jaké změny byly provedeny v datové sadě.  
   
   Tato metoda provede následující akce:  
   
@@ -208,7 +208,7 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Změny jsou potvrzeny při všech řádků ve všech tabulkách datové sady.|  
   
 > [!NOTE]
->  Načtení datové sady pomocí volání objektu TableAdapter `Fill` metody, není nutné explicitně přijetí změn. Ve výchozím nastavení `Fill` volání metody `AcceptChanges` metoda po vyplnění tabulky dat.  
+> Načtení datové sady pomocí volání objektu TableAdapter `Fill` metody, není nutné explicitně přijetí změn. Ve výchozím nastavení `Fill` volání metody `AcceptChanges` metoda po vyplnění tabulky dat.  
   
  Související metody `RejectChanges`, vrátí zpět změny tak, že zkopírujete <xref:System.Data.DataRowVersion> verze zpět do <xref:System.Data.DataRowVersion> verze záznamů. Také nastaví <xref:System.Data.DataRow.RowState%2A> z každého záznamu zpět a <xref:System.Data.DataRowState>.  
   
@@ -224,7 +224,7 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
 - V datech back-endu, díky odesílání dat do zdroje dat – například databáze a díky kterému jej následně přijímal nebo odmítal data. Při práci s databází, která má pokročilé funkce pro ověřování dat a poskytuje informace o chybě, to může být praktický, protože data bez ohledu na to, odkud můžete ověřit. Tento přístup však nemusí podle požadavků ověřování konkrétní aplikace. Kromě toho s ověření dat zdroje dat může způsobit řadu zpátečních cest ke zdroji dat, v závislosti na tom, jak vaše aplikace usnadňuje řešení chyb ověřování vyvolané back-endu.  
   
   > [!IMPORTANT]
-  >  Při použití dat příkazech <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> vlastnost, která je nastavena na <xref:System.Data.CommandType>, pečlivě zkontrolujte informace, které se odesílají z klienta před předáním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) změněné nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo poškození databáze. Před přenosem vstupu uživatele na databázi vždy ověřte, že informace platné. Je osvědčeným postupem je vždy používejte parametrizovaných dotazů nebo uložených procedur, pokud je to možné. Další informace najdete v tématu [přehled zneužije skriptů](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > Při použití dat příkazech <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> vlastnost, která je nastavena na <xref:System.Data.CommandType>, pečlivě zkontrolujte informace, které se odesílají z klienta před předáním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) změněné nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo poškození databáze. Před přenosem vstupu uživatele na databázi vždy ověřte, že informace platné. Je osvědčeným postupem je vždy používejte parametrizovaných dotazů nebo uložených procedur, pokud je to možné. Další informace najdete v tématu [přehled zneužije skriptů](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Po provedení změn v datové sadě, můžete přenést změny do zdroje dat. Nejčastěji to provedete voláním `Update` metody třídy TableAdapter (nebo datový adaptér). Metoda cyklicky projde každý záznam v tabulce dat, určuje, jaký typ aktualizace je povinný (aktualizace, vložení nebo odstranění), pokud existuje, a poté je spuštěn příslušný příkaz.  
   
@@ -256,7 +256,7 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
 - Přenášená příkaz jazyka SQL obsahuje klauzuli SET k nastavení nových hodnot položek upravené sloupce.  
   
     > [!NOTE]
-    >  Pokud objektu TableAdapter `UpdateCommand` vlastnost byla nastavena na název uložené procedury, adaptér konstruovat příkazu SQL. Místo toho volá uloženou proceduru s příslušnými parametry předané.  
+    > Pokud objektu TableAdapter `UpdateCommand` vlastnost byla nastavena na název uložené procedury, adaptér konstruovat příkazu SQL. Místo toho volá uloženou proceduru s příslušnými parametry předané.  
   
 ## <a name="passing-parameters"></a>Předávání parametrů  
  Obvykle použijete parametry k předání hodnot pro záznamy, které se chystáte aktualizovat v databázi.  Při objektu TableAdapter `Update` spuštěním příkazu UPDATE metody, je potřeba zadat hodnoty parametrů. Získá tyto hodnoty z `Parameters` kolekce pro příkaz příslušná data – v takovém případě `UpdateCommand` objekt v objektu TableAdapter.  
@@ -268,7 +268,7 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
  V příkazu UPDATE musíte zadat oba nové hodnoty (ty, které se zapíšou do záznamu) stejně jako původní hodnoty (tak, aby záznam může být umístěn v databázi). Proto existují dva parametry pro každou hodnotu: jednu pro klauzuli SET a jinou používat pro klauzuli WHERE. Oba parametry číst data ze záznamu, který se právě aktualizuje, ale získávají různé verze hodnotu ve sloupci podle parametru [SqlParameter.SourceVersion vlastnost](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). Parametr klauzule SET získá aktuální verzi, a parametrů pro klauzuli WHERE získá původní verze.  
   
 > [!NOTE]
->  Můžete také nastavit hodnoty `Parameters` kolekce sami v kódu, což by obvykle provést v obslužné rutiny události adaptéru dat <xref:System.Data.DataTable.RowChanging> událostí.  
+> Můžete také nastavit hodnoty `Parameters` kolekce sami v kódu, což by obvykle provést v obslužné rutiny události adaptéru dat <xref:System.Data.DataTable.RowChanging> událostí.  
   
 ## <a name="see-also"></a>Viz také  
  [Aktualizace dat pomocí TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   

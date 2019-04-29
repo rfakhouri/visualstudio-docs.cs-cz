@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 822676baf9f0c599fd1383f1841c8f85136be879
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411751"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Standardní stereotypy pro modely UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Přidávání stereotypů k elementům modelu UML na další informace pro čte�
 2. V okně Vlastnosti nastavte **profily** vlastnost prázdná.  
   
     > [!NOTE]
-    >  Profil, který lze odpojit pouze v případě, že žádný z elementů v modelu nebo balíček použít tento profil stereotypy.  
+    > Profil, který lze odpojit pouze v případě, že žádný z elementů v modelu nebo balíček použít tento profil stereotypy.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>Chcete-li použít stereotyp na prvek modelu  
   
@@ -67,7 +67,7 @@ Přidávání stereotypů k elementům modelu UML na další informace pro čte�
      Vybrané Stereotypy se zobrazí v rámci "odlišené dvojitou» v prvku modelu pro většinu typů element.  
   
     > [!NOTE]
-    >  Pokud nevidíte **Stereotypy** vlastnost, nebo pokud chcete stereotyp nezobrazí, ověřte, zda prvek modelu je uvnitř balíčku nebo modelu, ke kterému je propojená příslušný profil.  
+    > Pokud nevidíte **Stereotypy** vlastnost, nebo pokud chcete stereotyp nezobrazí, ověřte, zda prvek modelu je uvnitř balíčku nebo modelu, ke kterému je propojená příslušný profil.  
   
 3. Některé Stereotypy umožní nastavit hodnoty dalších vlastností pro ovládací prvek modelu. Chcete-li zobrazit tyto vlastnosti, rozbalte **Stereotypy** vlastnost.  
   

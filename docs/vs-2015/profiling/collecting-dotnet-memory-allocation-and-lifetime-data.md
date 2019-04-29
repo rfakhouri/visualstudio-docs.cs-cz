@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c40c2f824518ed00dacc41094c1b567f5de248ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 68decc73e14f8748d8434e05e50d6d3b48612d40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436771"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Shromažďování dat o alokaci paměti a době platnosti objektů .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60112816"
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. Aplikace Windows Store také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. Aplikace Windows Store také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  S použitím vzorkování nebo metoda profilace instrumentace lze shromažďovat data.  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60112816"
 - Při použití metody instrumentace profileru sleduje pouze přidělení paměti .NET a objekty, které jsou generovány instrumentované moduly.  
   
 > [!IMPORTANT]
->  Při shromažďování dat paměti .NET (přidělení, správu životnosti objektů nebo obě) pomocí metody vzorkování, jsou ignorovány všechny události zadané uživatelem vzorkování a události přidělení paměti odpovídající slouží ke shromažďování dat.  
+> Při shromažďování dat paměti .NET (přidělení, správu životnosti objektů nebo obě) pomocí metody vzorkování, jsou ignorovány všechny události zadané uživatelem vzorkování a události přidělení paměti odpovídající slouží ke shromažďování dat.  
   
  Pokud jsou povolená profilace přidělování paměti of.NET také povolit zobrazení přidělení. Pokud povolíte profilace data o životním cyklu .NET, je také povolit zobrazení doby života objektů. Další informace najdete v tématu [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md) a [zobrazení doby života objektu](../profiling/object-lifetime-view.md).  
   

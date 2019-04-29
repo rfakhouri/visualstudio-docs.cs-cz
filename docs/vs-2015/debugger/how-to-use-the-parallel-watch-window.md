@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b588168b62a9219d0de703a5deb6dbe153df6305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445087"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Postupy: Použití okna paralelního sledování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ V okně paralelního sledování můžete najednou zobrazit hodnoty, které obsa
 - Konfigurovatelný sloupec, který může zobrazit počítač, proces, dlaždici, úloh a vlákna.  
   
   > [!TIP]
-  >  Je nutné otevřít **paralelních úkolů** okno, aby obsahovalo informace o úkolu v **paralelní sledování** okna.  
+  > Je nutné otevřít **paralelních úkolů** okno, aby obsahovalo informace o úkolu v **paralelní sledování** okna.  
   
 -  **\<Přidat kukátko >** sloupec, ve kterém můžete zadat výrazy, které chcete sledovat.  
   

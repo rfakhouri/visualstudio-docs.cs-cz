@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c681a67b48baf89e1e601943c6cafd25e91ff332
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419797"
 ---
 # <a name="toolbox-data-tab"></a>Sada nástrojů, karta Data
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ ms.locfileid: "59663911"
 Zobrazí data objekty, které můžete přidat do formuláře a komponenty. **Data** karty **nástrojů** se zobrazí, když vytvoříte projekt, který má přidružený designer. **Nástrojů** se zobrazí ve výchozím nastavení v integrovaném vývojovém prostředí sady Visual Studio; Pokud chcete zobrazit **nástrojů**vyberte **nástrojů** z **Zobrazení** nabídky.  
   
 > [!TIP]
->  Spuštění Průvodce konfigurací zdroje dat automaticky vytvoří a nakonfiguruje většina datových položek. Další informace najdete v tématu [vytváření datových aplikací pomocí sady Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
+> Spuštění Průvodce konfigurací zdroje dat automaticky vytvoří a nakonfiguruje většina datových položek. Další informace najdete v tématu [vytváření datových aplikací pomocí sady Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>Seznam prvků uživatelského rozhraní  
  Chcete-li přejít přímo na stránce dokumentace rozhraní .NET Framework pro komponentu, stiskněte **F1** na položku v **nástrojů** nebo na položku součásti na hlavním panelu v návrháři.  
   
-|Name|Popis|  
+|Název|Popis|  
 |----------|-----------------|  
 |<xref:System.Data.DataSet>|Přidá instanci typovou nebo netypovou datovou sadu do formuláře nebo komponenty. Při přetažení tohoto objektu na Návrhář zobrazí dialogové okno, které vám umožní vybrat existující třídy typové datové sady nebo určit, že chcete vytvořit novou, prázdnou, netypové datové sady. **Poznámka:**  Je velmi riskantní používat <xref:System.Data.DataSet> objektu na **nástrojů** k vytvoření nové schéma typové datové sady a třídy. Další informace najdete v tématu [vytvoření a konfigurace datové sady](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
 |<xref:System.Windows.Forms.DataGridView>|Poskytuje výkonný a flexibilní způsob, jak zobrazit data ve formátu tabulky.|  

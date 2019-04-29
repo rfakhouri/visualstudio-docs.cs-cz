@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434205"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Upgrade vlastních šablon projektů a položek pro Visual Studio 2017
 
@@ -53,7 +53,7 @@ Na jiných místech (od uživatele) musí obsahovat manifest(.vstman) soubor, kt
     3. Znovu otevřete Visual Studio. Měli byste najít vaše šablony v očekávaném umístění.
 
     > [!NOTE]
-    >  Šablony projektů Visual Studio Extensibility nejsou k dispozici, když existuje klíč registru. Je nutné odstranit klíč registru (a znovu spusťte **devenv/installvstemplates**) k jejich použití.
+    > Šablony projektů Visual Studio Extensibility nejsou k dispozici, když existuje klíč registru. Je nutné odstranit klíč registru (a znovu spusťte **devenv/installvstemplates**) k jejich použití.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Další doporučení pro nasazení šablony projektů a položek
 

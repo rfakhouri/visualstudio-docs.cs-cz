@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc915136f64000da94132c0d10e153a206ed1ec0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445377"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace se sadou Visual Studio (MSBuild)
 Visual Studio hostuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k načtení a sestavení spravovaných projektů. Protože [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je zodpovědné za projekt, téměř každý projekt ve [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formát může být úspěšně použit v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], i když byl autorem jiný nástroj a má vlastní proces sestavení projektu.
@@ -63,7 +63,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
->  Některé názvy typů položek jsou pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , ale nejsou uvedené v tomto rozevíracím seznamu.
+> Některé názvy typů položek jsou pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , ale nejsou uvedené v tomto rozevíracím seznamu.
 
 ## <a name="in-process-compilers"></a>Vnitroprocesové kompilátory
  Pokud je to možné, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se pokusí použít verzi v procesu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilátoru pro zajištění zvýšeného výkonu. (Nevztahuje se na [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Aby to fungovalo správně musí být splněny následující podmínky:

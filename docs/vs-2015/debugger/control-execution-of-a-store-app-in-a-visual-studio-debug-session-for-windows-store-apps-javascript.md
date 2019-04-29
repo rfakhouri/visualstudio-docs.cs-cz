@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c23bbb74a4f166ebe33cc45f40f42f9847316d30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9238bd4f42291af23a1279c9caa83f1039c8f249
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437762"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Řízení spouštění aplikace pro Store v ladicí relaci sady Visual Studio pro aplikace Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Tento rychlý start ukazuje, jak pro navigaci v ladicím programu sady Visual St
  **Ladicí program klávesové zkratky.** Navigace v ladicím programu sady Visual Studio je optimalizovaná pro myš a klávesnici. Celá řada kroků v tomto tématu patří klávesové zkratky nebo klávesovou zkratku v kulatých závorek příspěvku. Například (klávesnice: F5) označuje zadáním klávesu F5, spustí nebo pokračuje v provádění ladicího programu.
 
 > [!NOTE]
->  **Vzor modulu**
+> **Vzor modulu**
 >
->  Aplikace Windows Store často používají jazyk JavaScript *modulu vzor* k zapouzdření data a funkce na stránce. Vzor modul používá jeden, samostatně prováděného a anonymní uzavření udržovat odděleně od globální obor názvů funkce stránky. V tomto tématu se budeme volat tuto funkci *modulu*.
+> Aplikace Windows Store často používají jazyk JavaScript *modulu vzor* k zapouzdření data a funkce na stránce. Vzor modul používá jeden, samostatně prováděného a anonymní uzavření udržovat odděleně od globální obor názvů funkce stránky. V tomto tématu se budeme volat tuto funkci *modulu*.
 
 ## <a name="in-this-topic"></a>V tomto tématu
  Můžete získat informace tom, jak:
