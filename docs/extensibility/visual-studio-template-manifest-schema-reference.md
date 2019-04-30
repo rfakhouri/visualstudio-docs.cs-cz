@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07754016132822b4a60f3e5ba48dd02224c06e35
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108851"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346793"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Odkaz na schéma manifestu šablony Visual Studio
 Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) souborů, které jsou generovány pro šablony sady Visual Studio projekt nebo položku. Schéma také popisuje umístění a další důležité informace o šabloně.
@@ -21,7 +21,7 @@ Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) 
  : Vzhledem k tomu, že existují samostatné položky a adresáře šablony projektu, manifest by měl mít nikdy kombinaci šablony položek a projektů.
 
 > [!IMPORTANT]
->  Tento manifest je k dispozici od verze Visual Studio 2017.
+> Tento manifest je k dispozici od verze Visual Studio 2017.
 
 ## <a name="vstemplatemanifest-element"></a>VSTemplateManifest – element
  Kořenový element v manifestu.
@@ -122,7 +122,7 @@ Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) 
  Následující kód představuje příklad šablony položky *.vstman* souboru.
 
 ```xml
-VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
   <VSTemplateContainer TemplateType="Item">
     <RelativePathOnDisk>CSharp\1033\ItemTemplate1</RelativePathOnDisk>
     <TemplateFileName>ItemTemplate1.vstemplate</TemplateFileName>

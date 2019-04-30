@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/19/2019
+ms.date: 04/24/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,14 +14,53 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 20130075ec285cf8d71c40831871c5eeeb342f52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 157b6065b09cdb4282e2b65250a3fea24f13f750
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068961"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346836"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Čísla sestavení a data vydání sady Visual Studio
+
+::: moniker range="vs-2019"
+
+## <a name="visual-studio-2019"></a>Visual Studio 2019
+
+Následující tabulka obsahuje kalendářní data pro čísla a uvolnění sestavení pro Visual Studio 2019 k datu.
+
+| **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
+| ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | Preview 2 | 23. dubna 2019 | 16.1.28822.285 |
+| 16.0.2 | Vydaná verze | 18. dubna 2019 | 16.0.28803.202 |
+| 16.1.0 | Ve verzi Preview 1 | 10. dubna 2019 | 16.1.28809.33 |
+| 16.0.1 | Vydaná verze | 9. dubna 2019 | 16.0.28803.156 |
+| 16.0.1 | Ve verzi Preview 1 | 9. dubna 2019 | 16.0.28803.156 |
+| 16.0.0 | Vydaná verze | 2. dubna 2019 | 16.0.28729.10 |
+| 16.0.0 | Preview 5 | 2. dubna 2019 | 16.0.28729.10 |
+| 16.0.0 | Verze Release Candidate 4 (RC.4) | 26. března 2019 | 16.0.28721.148 |
+| 16.0.0 | Ve verzi Preview 4.4 | 26. března 2019 | 16.0.28721.148 |
+| 16.0.0 | Verze Release Candidate 3 (verzi RC.3) | 19. března 2019 | 16.0.28714.193 |
+| 16.0.0 | Ve verzi Preview 4.3 | 19. března 2019 | 16.0.28714.193 |
+| 16.0.0 | Verze Release Candidate 2 (RC.2) | 12. března 2019 | 16.0.28711.60 |
+| 16.0.0 | Ve verzi Preview 4.2 | 12. března 2019 | 16.0.28711.60 |
+| 16.0.0 | Release Candidate 1 Svc1 (RC.1 Svc1) | 6. března 2019 | 16.0.28705.295 |
+| 16.0.0 | Ve verzi Preview 4.1 Svc1 | 6. března 2019 | 16.0.28705.295 |
+| 16.0.0 | Verze Release Candidate 1 (RC.1) | 5. března 2019 | 16.0.28701.123 |
+| 16.0.0 | Ve verzi Preview 4.1 | 5. března 2019 | 16.0.28701.123 |
+| 16.0.0 | Verze Release Candidate (RC) | 27. února 2019 | 16.0.28625.133 |
+| 16.0.0 | Preview 4 | 27. února 2019 | 16.0.28625.133 |
+| 16.0.0 | Preview 3 | 13. února 2019 | 16.0.28608.199 |
+| 16.0.0 | 2.2 ve verzi Preview | 5. února 2019 | 16.0.28602.52 |
+| 16.0.0 | Ve verzi Preview 2.1 | Od 31. května 2019 | 16.0.28529.54 |
+| 16.0.0 | Preview 2 | 23. ledna 2019 | 16.0.28522.59 |
+| 16.0.0 | Ve verzi Preview 1.1 | 10. prosince 2018 | 16.0.28408.50 |
+| 16.0.0 | Ve verzi Preview 1 | 4. prosince 2018 | 16.0.28329.73 |
+
+> [!NOTE]
+> Seznam čísel sestavení a vydání data pro předchozí verzi najdete v tématu [Visual Studio 2017 čísla sestavení a data vydání](visual-studio-build-numbers-and-release-dates.md?view=vs-2017)
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -182,44 +221,6 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 
 > [!NOTE]
 > Další informace o čísla sestavení a vydání data pro další verze sady Visual Studio, najdete v článku [Visual Studio 2019 čísla sestavení a data vydání](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019) stránky.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-## <a name="visual-studio-2019"></a>Visual Studio 2019
-
-Následující tabulka obsahuje kalendářní data pro čísla a uvolnění sestavení pro Visual Studio 2019 k datu.
-
-| **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
-| ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.0.2 | Vydaná verze | 18. dubna 2019 | 16.0.28803.202 |
-| 16.1.0 | Ve verzi Preview 1 | 10. dubna 2019 | 16.1.28809.33 |
-| 16.0.1 | Vydaná verze | 9. dubna 2019 | 16.0.28803.156 |
-| 16.0.1 | Ve verzi Preview 1 | 9. dubna 2019 | 16.0.28803.156 |
-| 16.0.0 | Vydaná verze | 2. dubna 2019 | 16.0.28729.10 |
-| 16.0.0 | Preview 5 | 2. dubna 2019 | 16.0.28729.10 |
-| 16.0.0 | Verze Release Candidate 4 (RC.4) | 26. března 2019 | 16.0.28721.148 |
-| 16.0.0 | Ve verzi Preview 4.4 | 26. března 2019 | 16.0.28721.148 |
-| 16.0.0 | Verze Release Candidate 3 (verzi RC.3) | 19. března 2019 | 16.0.28714.193 |
-| 16.0.0 | Ve verzi Preview 4.3 | 19. března 2019 | 16.0.28714.193 |
-| 16.0.0 | Verze Release Candidate 2 (RC.2) | 12. března 2019 | 16.0.28711.60 |
-| 16.0.0 | Ve verzi Preview 4.2 | 12. března 2019 | 16.0.28711.60 |
-| 16.0.0 | Release Candidate 1 Svc1 (RC.1 Svc1) | 6. března 2019 | 16.0.28705.295 |
-| 16.0.0 | Ve verzi Preview 4.1 Svc1 | 6. března 2019 | 16.0.28705.295 |
-| 16.0.0 | Verze Release Candidate 1 (RC.1) | 5. března 2019 | 16.0.28701.123 |
-| 16.0.0 | Ve verzi Preview 4.1 | 5. března 2019 | 16.0.28701.123 |
-| 16.0.0 | Verze Release Candidate (RC) | 27. února 2019 | 16.0.28625.133 |
-| 16.0.0 | Preview 4 | 27. února 2019 | 16.0.28625.133 |
-| 16.0.0 | Preview 3 | 13. února 2019 | 16.0.28608.199 |
-| 16.0.0 | 2.2 ve verzi Preview | 5. února 2019 | 16.0.28602.52 |
-| 16.0.0 | Ve verzi Preview 2.1 | Od 31. května 2019 | 16.0.28529.54 |
-| 16.0.0 | Preview 2 | 23. ledna 2019 | 16.0.28522.59 |
-| 16.0.0 | Ve verzi Preview 1.1 | 10. prosince 2018 | 16.0.28408.50 |
-| 16.0.0 | Ve verzi Preview 1 | 4. prosince 2018 | 16.0.28329.73 |
-
-> [!NOTE]
-> Seznam čísel sestavení a vydání data pro předchozí verzi najdete v tématu [Visual Studio 2017 čísla sestavení a data vydání](visual-studio-build-numbers-and-release-dates.md?view=vs-2017)
 
 ::: moniker-end
 

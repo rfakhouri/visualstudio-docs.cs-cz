@@ -1,7 +1,7 @@
 ---
 title: Řešení potíží při ladění snímků | Dokumentace Microsoftu
-ms.custom: seodec18
-ms.date: 11/07/2018
+ms.custom: ''
+ms.date: 04/24/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugger
@@ -11,16 +11,92 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e7a04d5761d7b67c58dc71b185e6d5db0b80c766
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58857759"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346880"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Řešení potíží a známé problémy pro ladění snímků v sadě Visual Studio
 
-Pokud problém nelze vyřešit pomocí postupu popsaného v tomto článku, obraťte se na snaphelp@microsoft.com.
+Pokud problém nelze vyřešit pomocí postupu popsaného v tomto článku, vyhledejte problém na [komunity vývojářů](https://developercommunity.visualstudio.com/spaces/8/index.html) nebo ohlásit nový problém výběrem **pomáhají** > **odeslat zpětnou vazbu**   >  **Nahlásit problém** v sadě Visual Studio.
+
+## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problém: "Připojit Snapshot Debugger" dojde k chybě kód stavu HTTP
+
+Pokud se zobrazí následující chyba v **výstup** okno při pokusu o připojení, může být známý problém, níže uvedené. Vyzkoušejte navrhované řešení a pokud problém nezmizí, kontaktujte před alias.
+
+`[TIMESTAMP] Error --- Unable to Start Snapshot Debugger - Attach Snapshot Debugger failed: System.Net.WebException: The remote server returned an error: (###) XXXXXX`
+
+### <a name="401-unauthorized"></a>Neautorizováno (401)
+
+Tato chyba označuje, že volání REST vydala Visual Studio na Azure používá neplatné přihlašovací údaje. O známý problém s modulem Azure Active Directory snadno OAuth může vést k této chybě.
+
+Proveďte tyto kroky:
+
+* Ujistěte se, že váš účet přizpůsobení sady Visual Studio má oprávnění k předplatnému Azure a prostředek, který při připojování k. Rychlý způsob, jak zjistit se to je zkontrolovat, zda daný prostředek k dispozici v dialogovém okně z **ladění** > **připojit Snapshot Debugger...**   >  **Prostředků azure** > **vybrat existující**, nebo v Průzkumníku cloudu.
+* Pokud k této chybě nezmizí, použijte jednu z kanálech zpětné vazby, které jsou popsané na začátku tohoto článku.
+
+### <a name="403-forbidden"></a>Zakázáno (403)
+
+Tato chyba označuje, že bylo odepřeno oprávnění. Příčinou může být mnoho různých problémů.
+
+Proveďte tyto kroky:
+
+* Ověřte, že váš účet Visual Studio má platné předplatné Azure s potřebnými oprávněními řízení přístupu na základě Role (RBAC) pro prostředek. Pro App Service, zaškrtněte, pokud máte oprávnění k [dotazu](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get) plánu služby App Service hostují vaši aplikaci.
+* Ověřte, že časové razítko ze svého klientského počítače je správné a aktuální. Servery s časovými razítky vypnout pomocí více než 15 minut od časové razítko požadavku obvykle vytvoří tuto chybu.
+* Pokud k této chybě nezmizí, použijte jednu z kanálech zpětné vazby, které jsou popsané na začátku tohoto článku.
+
+### <a name="404-not-found"></a>(404) nebyl nalezen
+
+Tato chyba označuje, že web se nenašel na serveru.
+
+Proveďte tyto kroky:
+
+* Ověřte, že máte nasazené a běží na prostředek služby App Service, který se připojuje k webu.
+* Ověřte, že lokalita je k dispozici na https://\<prostředků\>. azurewebsites.net
+* Pokud k této chybě nezmizí, použijte jednu z kanálech zpětné vazby, které jsou popsané na začátku tohoto článku.
+
+### <a name="406-not-acceptable"></a>(406) nepřijatelný
+
+Tato chyba označuje, že je schopna odpovědět na typ nastavený v hlavičce Accept požadavku na server.
+
+Proveďte tyto kroky:
+
+* Ověřte, že je web dostupný na https://\<prostředků\>. azurewebsites.net
+* Ověřte, jestli váš web nebyl migrován do nové instance. Snapshot Debugger pojem ARRAffinity používá pro směrování žádostí na konkrétní instance, které mohou způsobit přerušovaně k této chybě.
+* Pokud k této chybě nezmizí, použijte jednu z kanálech zpětné vazby, které jsou popsané na začátku tohoto článku.
+
+### <a name="409-conflict"></a>Konflikt (409)
+
+Tato chyba označuje, že žádost je v konfliktu s aktuálním stavem serveru.
+
+Jde o známý problém, ke které dochází, když se uživatel pokusí připojit Snapshot Debugger pro služby App Service, která povolila aplikaci ApplicationInsights. ApplicationInsights nastaví AppSettings s jinou velikostí písmen než Visual Studio, příčinou tohoto problému.
+
+::: moniker range=">= vs-2019"
+Můžeme to byly vyřešeny v aplikaci Visual Studio 2019.
+::: moniker-end
+
+Proveďte tyto kroky:
+
+::: moniker range="vs-2017"
+
+* Na webu Azure Portal ověřte, že AppSettings pro ladicího programu snímků (SNAPSHOTDEBUGGER_EXTENSION_VERSION) a InstrumentationEngine (INSTRUMENTATIONENGINE_EXTENSION_VERSION) jsou velká písmena. Pokud ne, aktualizujte nastavení ručně, což vynutí restartování serveru.
+::: moniker-end
+* Pokud k této chybě nezmizí, použijte jednu z kanálech zpětné vazby, které jsou popsané na začátku tohoto článku.
+
+### <a name="500-internal-server-error"></a>Interní chybu serveru (500)
+
+Tato chyba označuje, že web je úplně vypnutý nebo server nemůže zpracovat požadavek. Funkce pouze snímku ladicí program ke spuštění aplikace. [Application Insights Snapshot debuggeru](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger) poskytuje snímkování na výjimkách a může být vždycky ten nejlepší nástroj pro vaše potřeby.
+
+### <a name="502-bad-gateway"></a>Chybná brána (502)
+
+Tato chyba označuje síťové potíže na straně serveru a může být dočasné.
+
+Proveďte tyto kroky:
+
+* Počkejte několik minut, než Snapshot Debugger připojit znovu.
+* Pokud k této chybě nezmizí, použijte jednu z kanálech zpětné vazby, které jsou popsané na začátku tohoto článku.
 
 ## <a name="issue-snappoint-does-not-turn-on"></a>Problém: Snímkovací bod nezapne
 
@@ -30,7 +106,7 @@ Pokud se zobrazí výstražná ikona ![snímkovací bod výstražná ikona](../d
 
 Proveďte tyto kroky:
 
-1. Ujistěte se, že máte stejnou verzi zdrojového kódu, který byl použit k vytvoření a nasazení vaší app.isua1. Ujistěte se, že se načítají správné symbolů pro vaše nasazení. Pokud chcete to provést, podívejte se **moduly** okno při ladění snímků a ověřit soubor symbolů sloupci zobrazí soubor .pdb načtené pro modul, který ladíte. Snapshot Debugger se pokusí automaticky stáhnout a použít symbolů pro vaše nasazení.
+1. Ujistěte se, že máte stejnou verzi zdrojového kódu, který se používá k vytvoření a nasazení vaší aplikace. Ujistěte se, že se načítají správné symbolů pro vaše nasazení. Pokud chcete to provést, podívejte se **moduly** okno při ladění snímků a ověřit soubor symbolů sloupci zobrazí soubor .pdb načtené pro modul, který ladíte. Snapshot Debugger se pokusí automaticky stáhnout a použít symbolů pro vaše nasazení.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problém: Při otevření snímku se nenačtou symboly
 
@@ -75,20 +151,22 @@ Proveďte tyto kroky:
 
 - Snímky spotřebovávat málo paměti, ale máte poplatek za potvrzení. Pokud ladicí program snímků zjistí, že je server v paměti v případě velkého zatížení, nepořizuje snímky. Zastavuje se relace ladicího programu snímků a zkusit to znovu, můžete odstranit již zachycené snímky.
 
+::: moniker range=">= vs-2019"
 ## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problém: Ladění snímků s více verzemi nástroje Visual Studio, mi dává pocit chyby
 
-VS 2019 vyžaduje novější verzi rozšíření pro Snapshot Debugger web ve službě Azure App Service.  Tato verze není kompatibilní s starší verze rozšíření pro Snapshot Debugger web používá sady VS 2017.  Pokud se pokusíte připojit Snapshot Debugger ve VS 2019 do služby Azure App Service, který byl dříve ladit pomocí ladicího programu snímků v sadě VS 2017 se zobrazí následující chyba:
+Visual Studio 2019 vyžaduje novější verzi rozšíření pro Snapshot Debugger web ve službě Azure App Service.  Tato verze není kompatibilní s starší verze rozšíření pro Snapshot Debugger web používá Visual Studio 2017.  Pokud se pokusíte připojit Snapshot Debugger v aplikaci Visual Studio 2019 do služby Azure App Service, který byl dříve ladit pomocí ladicího programu snímků v sadě Visual Studio 2017 se zobrazí následující chyba:
 
-![Nekompatibilní rozšíření webu pro Snapshot Debugger VS 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "rozšíření webu nekompatibilní Snapshot Debugger VS 2019")
+![Nekompatibilní rozšíření webu pro Snapshot Debugger Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "rozšíření webu nekompatibilní Snapshot Debugger. 2019 Visual Studio")
 
-Naopak pokud připojit Snapshot Debugger do Azure App Service, která byla dříve ladit pomocí ladicího programu snímků ve VS 2019 pomocí sady VS 2017, zobrazí se vám následující chybu:
+Naopak pokud připojit Snapshot Debugger do Azure App Service, která byla dříve ladit pomocí ladicího programu snímků ve Visual Studio 2019 pomocí sady Visual Studio 2017, zobrazí se vám chybová zpráva:
 
-![Nekompatibilní rozšíření webu pro Snapshot Debugger sady VS 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "rozšíření webu nekompatibilní Snapshot Debugger VS2017")
+![Nekompatibilní rozšíření webu pro Snapshot Debugger Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "nekompatibilní Snapshot Debugger web rozšíření sady Visual Studio 2017")
 
 Chcete-li tento problém vyřešit, odstraňte následující nastavení aplikace na webu Azure Portal a znovu připojit Snapshot Debugger:
 
 - INSTRUMENTATIONENGINE_EXTENSION_VERSION
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+::: moniker-end
 
 ## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problém: Mám potíže s ladění snímků a je potřeba povolit další protokolování
 

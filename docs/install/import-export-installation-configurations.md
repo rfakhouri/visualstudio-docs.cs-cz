@@ -1,8 +1,8 @@
 ---
-title: Import a export konfigurace instalace
+title: Import a export konfigurací instalace
 titleSuffix: ''
 description: Další informace o použití funkce importu/exportu konfigurace v sadě Visual Studio
-ms.date: 04/15/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -18,14 +18,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ed380f2f83f3f64d7bd6bc4c19338dc3725d63a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118300"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346762"
 ---
-# <a name="import-or-export-installation-configurations"></a>Import a export konfigurace instalace
+# <a name="import-or-export-installation-configurations"></a>Import a export konfigurací instalace
 
 Visual Studio můžete nakonfigurovat ve vaší organizaci pomocí konfigurační soubor instalace. Uděláte to tak, jednoduše exportujte pracovního vytížení a komponenta informace do souboru .vsconfig pomocí instalačního programu sady Visual Studio. Pak můžete importovat konfiguraci do nových nebo stávajících zařízení.
 
@@ -46,7 +46,9 @@ Můžete exportovat konfigurační soubor instalace z obou dříve nainstalovano
 
 1. Na kartě produktu, zvolte **Další** tlačítko a pak vyberte **exportu konfigurace**.
 
-1. Vyhledejte nebo zadejte umístění, kam chcete uložit soubor .vconfig a klikněte na tlačítko **podrobnosti**.
+   ![Exportovat konfiguraci z karty produktu v instalačním programu sady Visual Studio](../install/media/vs-2019/vs-installer-export-config.png)
+
+1. Vyhledejte nebo zadejte umístění, kam chcete uložit soubor .vsconfig a klikněte na tlačítko **podrobnosti**.
 
    ![Exportovat konfiguraci z instalačního programu sady Visual Studio](../install/media/vs-2019/export-configuration-confirmation.png)
 
@@ -54,13 +56,13 @@ Můžete exportovat konfigurační soubor instalace z obou dříve nainstalovano
 
 ## <a name="import-a-configuration"></a>Importovat konfiguraci
 
-Až budete připraveni importovat konfigurační soubor instalace
+Až budete připraveni importovat konfigurační soubor instalace, postupujte podle těchto kroků.
 
 1. Spusťte instalační program sady Visual Studio.
 
 1. Na kartě produktu, zvolte **Další** tlačítko a pak vyberte **importovat konfiguraci**.
 
-1. Vyhledejte .vconfig soubor, který chcete importovat a klikněte na tlačítko **podrobnosti**.
+1. Vyhledejte .vsconfig soubor, který chcete importovat a klikněte na tlačítko **podrobnosti**.
 
 1. Ujistěte se, že máte úlohy a komponenty, které chcete a klikněte na tlačítko **Zavřít**.
 
@@ -72,7 +74,7 @@ Až budete připraveni importovat konfigurační soubor instalace
 
 ![Průzkumník řešení navrhne další součásti](../install/media/vs-2019/solution-explorer-config-file.png)
 
-Můžete také vygenerovat soubor .vsconfig přímo z Průzkumníka řešení. Tady je způsob.
+Můžete také vygenerovat soubor .vsconfig přímo z Průzkumníka řešení.
 
 1. Klikněte pravým tlačítkem na soubor řešení.
 
