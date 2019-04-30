@@ -9,16 +9,16 @@ f1_keywords:
 manager: jillfra
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 7b4f78bb2249ef60121cfc1557bf06e696e585b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 8a256d878339ddbfc1e37662e829d752f1be7bd6
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912047"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346777"
 ---
 # <a name="f1-help"></a>Nápověda F1
 
-Zdá se nám nepovedlo najít, co jste hledali a Omlouváme se. Prosím [Pomozte nám zlepšovat kvalitu](#help-us-improve-f1).
+Zdá se nám nepovedlo najít, co jste hledali a Omlouváme se. Pomůžete nám vylepšit zanechání zpětné vazby pomocí tlačítek v dolní části této stránky.
 
 ## <a name="cursor-position"></a>Pozice kurzoru
 
@@ -33,7 +33,3 @@ Pokud hledáte nápovědu F1 – klíčové slovo nebo název rozhraní API, mě
 - Pro F# pomoct, najdete v článku [ F# průvodce](/dotnet/fsharp/).
 - Nápovědu Pythonu najdete v tématu [Python v sadě Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
 - C++ – Nápověda, naleznete v tématu [C++ v sadě Visual Studio](/cpp/visual-cpp-in-visual-studio).
-
-## <a name="help-us-improve-f1"></a>Pomozte nám zlepšovat kvalitu F1
-
-Pomozte nám zlepšovat kvalitu prostředí nápovědy F1. Protokolovat problému s produktem nápovědy kliknutím **poskytnout názor na produkt** tlačítko níže. Zahrnout, co jste hledali nápovědu při stisknutí **F1**, například jaké symbol nebo se ukazatel myši na okno. Děkuju!

@@ -19,14 +19,14 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e2c51174f14cbfd550bde32192f9db52b1744365
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
-ms.translationtype: MT
+ms.openlocfilehash: 6d82cd5403b38fd4bbc7c5becef447255b01196f
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584581"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346902"
 ---
-# <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 
+# <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Migrace a upgrade odkaz na projekt pro Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -43,7 +43,7 @@ Tento článek k dispozici obsahuje podrobnosti pouze pro typy projektů, které
 
 Následující seznam popisuje podporu v sadě Visual Studio 2017 pro projekty, které byly vytvořeny v dřívějších verzích.
 
-Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najdete [Visual Studio 2015 verze tohoto článku](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) a pomocí možnosti "Poskytnout názor na dokumentaci" v dolní části této stránky můžete zadat podrobnosti vašeho projektu. (Pokud byste o ni odpověď, použijte názor na dokumentaci a ne anonymní "je tato stránka užitečná?" ovládací prvek.)
+Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najdete [Visual Studio 2015 verze tohoto článku](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) a použít **odeslat zpětnou vazbu o** > **tuto stránku**  tlačítko v dolní části této stránky můžete zadat podrobnosti vašeho projektu. (Pokud používáte anonymní "je tato stránka užitečná?" ovládací prvek, jsme nejsou schopné reagovat na vaši zpětnou vazbu.)
 
 | Typ projektu | Podpora |
 | --- | --- |
@@ -125,7 +125,7 @@ Tento článek obsahuje podrobnosti pro typy projektů, které lze migrovat. 201
 
 Následující seznam popisuje podporu v Visual Studio 2019 pro projekty, které byly vytvořeny v dřívějších verzích.
 
-Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najdete [Visual Studio 2017 verze tohoto článku](port-migrate-and-upgrade-visual-studio-projects.md) a pak pomocí možnosti "Poskytnout názor na dokumentaci" v dolní části této stránky můžete zadat podrobnosti vašeho projektu. (Pokud byste o ni odpověď, použijte názor na dokumentaci a ne anonymní "je tato stránka užitečná?" ovládací prvek.)
+Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najdete [Visual Studio 2017 verze tohoto článku](port-migrate-and-upgrade-visual-studio-projects.md) a pak použít **odeslat zpětnou vazbu o** > **tuto stránku**  tlačítko v dolní části této stránky můžete zadat podrobnosti vašeho projektu. (Pokud používáte anonymní "je tato stránka užitečná?" ovládací prvek, jsme nejsou schopné reagovat na vaši zpětnou vazbu.)
 
 | Typ projektu | Podpora |
 | --- | --- |
