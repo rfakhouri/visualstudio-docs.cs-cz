@@ -81,7 +81,7 @@ ms.locfileid: "63431545"
 **12345**
 **12345**
 **změna ukazatel - předány podle odkazu:** 
- ** 12345**
+ **12345**
 **12345 ABCDE**
 **předávání návratovou hodnotu:**
 **12345 ABCDE**
