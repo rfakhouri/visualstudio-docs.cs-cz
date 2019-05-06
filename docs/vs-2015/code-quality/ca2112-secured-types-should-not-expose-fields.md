@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: d0ac554ebee7188e0826de9e5c1852cf3bcc33cb
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54786486"
@@ -63,10 +63,10 @@ ms.locfileid: "54786486"
 
  Tento příklad vytvoří následující výstup.
 
- **Vytvoření instance SecuredTypeWithFields. ** 
- **Zabezpečené typ pole: 22, 33**
-**změna zabezpečeného typu pole... ** 
- **Pole objektů do mezipaměti: 99, 33**
+ **Vytvoření instance SecuredTypeWithFields.**
+**Zabezpečené typ pole: 22, 33**
+**změna zabezpečeného typu pole...**
+**Pole objektů do mezipaměti: 99, 33**
 ## <a name="related-rules"></a>Související pravidla
  [CA1051: Nedeklarujte viditelná pole instance](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 

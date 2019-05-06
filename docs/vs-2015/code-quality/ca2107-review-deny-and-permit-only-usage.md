@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082149"
@@ -72,10 +72,10 @@ ms.locfileid: "60082149"
 
  Tento příklad vytvoří následující výstup.
 
- **Vyžádání: Odepřít volajícího, jež nemá žádný vliv na vyžádání s potvrzením oprávnění. ** 
- **LinkDemand: Odepřít volajícího, jež nemá žádný vliv na LinkDemand s potvrzením oprávnění. ** 
- **LinkDemand: Odepřít volajícího, jež nemá žádný vliv kódem chráněné LinkDemand. ** 
- **LinkDemand: Tato odepřít nemá žádný vliv kódem chráněné LinkDemand.**
+ **Vyžádání: Odepřít volajícího, jež nemá žádný vliv na vyžádání s potvrzením oprávnění.**
+**LinkDemand: Odepřít volajícího, jež nemá žádný vliv na LinkDemand s potvrzením oprávnění.**
+**LinkDemand: Odepřít volajícího, jež nemá žádný vliv kódem chráněné LinkDemand.**
+**LinkDemand: Tato odepřít nemá žádný vliv kódem chráněné LinkDemand.**
 ## <a name="see-also"></a>Viz také
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName><xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>

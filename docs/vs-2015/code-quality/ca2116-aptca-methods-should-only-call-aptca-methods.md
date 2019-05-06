@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 916b30cf4cff357ba468faae524d6b0ca7806959
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54761289"
@@ -71,8 +71,8 @@ ms.locfileid: "54761289"
 
  Tento příklad vytvoří následující výstup.
 
- **Požadovat pro úplný vztah důvěryhodnosti: požadavek se nezdařil. ** 
- **ClassRequiringFullTrust.DoWork byla volána.**
+ **Požadovat pro úplný vztah důvěryhodnosti: požadavek se nezdařil.**
+**ClassRequiringFullTrust.DoWork byla volána.**
 ## <a name="related-rules"></a>Související pravidla
  [CA2117: Typy APTCA by měl rozšířit pouze základní typy APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
