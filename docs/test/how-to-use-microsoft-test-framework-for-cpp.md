@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 0b91a8b58c8abb10aac18b1461d6ea5548d39ef9
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
-ms.translationtype: HT
+ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226027"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461480"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Použít Microsoft rozhraní testování části pro C++ v sadě Visual Studio
 
@@ -52,10 +52,12 @@ Používají statické metody v [Assert](microsoft-visualstudio-testtools-cppuni
 ## <a name="run-the-tests"></a>Spustit testy
 
 1. Na **testovací** nabídce zvolte **Windows** > **Průzkumník testů**.
-2. Pokud všechny testy nejsou zobrazeny v okně, vytvoření testovacího projektu kliknutím pravým tlačítkem myši v jeho uzel **Průzkumníka řešení** a zvolíte **sestavení** nebo **znovu sestavit**.
 
-3. V **Průzkumník testů**, zvolte **spustit všechny**, nebo vyberte konkrétní testy, které chcete spustit. Klikněte pravým tlačítkem myši na test pro další možnosti, včetně spuštění v režimu ladění se zarážkami povolené.
-4. V **okno výstup** zvolte **testy** v rozevíracího seznamu ji můžete zapsat pomocí zobrazení zpráv `Logger` třídy:
+1. Pokud všechny testy nejsou zobrazeny v okně, vytvoření testovacího projektu kliknutím pravým tlačítkem myši v jeho uzel **Průzkumníka řešení** a zvolíte **sestavení** nebo **znovu sestavit**.
+
+1. V **Průzkumník testů**, zvolte **spustit všechny**, nebo vyberte konkrétní testy, které chcete spustit. Klikněte pravým tlačítkem myši na test pro další možnosti, včetně spuštění v režimu ladění se zarážkami povolené.
+
+1. V **okno výstup** zvolte **testy** v rozevíracího seznamu ji můžete zapsat pomocí zobrazení zpráv `Logger` třídy:
 
    ![Okno výstup C++ zkušební zprávy](media/cpp-test-output-window.png)
 
