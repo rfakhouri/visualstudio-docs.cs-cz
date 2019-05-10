@@ -9,16 +9,14 @@ ms.workload: multiple
 ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: 5cc386ae0d9a9d19acf3590786773e9efbda2725
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e8c57bfbfcf63c845c8d8eac3560e2327a99d4d
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819994"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084063"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Ladění aplikací v místním kontejneru Dockeru
-
-## <a name="overview"></a>Přehled
 
 Visual Studio poskytuje konzistentní způsob, jak vyvíjet v kontejneru Dockeru a ověřit vaše aplikace v místním prostředí.
 Není nutné restartovat kontejneru pokaždé, když provedete změně kódu.
@@ -46,7 +44,9 @@ Můžete použít [nástrojů Dockeru](https://www.docker.com/products/docker-to
 
 Pokud pomocí nástrojů Dockeru, musíte nakonfigurovat klienta Dockeru.
 
-## <a name="1-create-a-web-app"></a>1. Vytvoření webové aplikace
+Kontejnery dockeru jsou k dispozici pro projekty .NET Framework a .NET Core. Podívejme se na dva vzorové první webové aplikace .NET Core a druhé, konzolovou aplikaci .NET Framework.
+
+## <a name="create-a-web-app"></a>Vytvoření webové aplikace
 
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
@@ -55,7 +55,7 @@ Pokud pomocí nástrojů Dockeru, musíte nakonfigurovat klienta Dockeru.
 [!INCLUDE [create-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)
 ::: moniker-end
 
-## <a name="2-edit-your-code-and-refresh"></a>2. Upravit kód a aktualizace
+### <a name="edit-your-code-and-refresh"></a>Upravit kód a aktualizace
 
 Pokud chcete rychle iterovat změny, můžete spustit aplikaci v rámci kontejneru a pokračovat v provádění změn, zobrazení je jako při použití služby IIS Express.
 
@@ -80,7 +80,7 @@ Pokud chcete rychle iterovat změny, můžete spustit aplikaci v rámci kontejne
 
 6. Vaše změny se použily!
 
-## <a name="3-debug-with-breakpoints"></a>3. Ladění se zarážkami
+### <a name="debug-with-breakpoints"></a>Ladění se zarážkami
 
 Často změny potřebovat další kontroly, využívá funkce ladění sady Visual Studio.
 

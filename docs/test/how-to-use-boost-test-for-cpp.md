@@ -1,26 +1,27 @@
 ---
 title: Jak používat Boost.Test pro C++
-ms.date: 01/29/2018
+description: Použití Boost.Test pro vytvoření testů jednotek v sadě Visual Studio.
+ms.date: 05/06/2019
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed4d024b7d10f4432c6a2326f07bb068075971f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf962ec4ecade1bb88d9e301d62eb6ab8a5131cf
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970510"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226097"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak používat Boost.Test pro C++ v sadě Visual Studio
 
-V **Visual Studio 2017 verze 15.5** a později je testovací adaptér pro Boost.Test integrována do integrovaného vývojového prostředí sady Visual Studio jako součást sady **vývoj desktopových aplikací pomocí C++** pracovního vytížení.
+V sadě Visual Studio 2017 a novější testovací adaptér pro Boost.Test je integrována do integrovaného vývojového prostředí sady Visual Studio jako součást sady **vývoj desktopových aplikací pomocí C++**  pracovního vytížení.
 
 ![Testovací adaptér pro Boost.Test](media/cpp-boost-component.png)
 
-Pokud nemáte k dispozici **vývoj desktopových aplikací pomocí C++** nainstalovaná, úloha open **instalační program sady Visual Studio** a vyberte **změnit**. Vyberte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit** tlačítko.
+Pokud nemáte k dispozici **vývoj desktopových aplikací pomocí C++**  nainstalovaná, úloha open **instalační program sady Visual Studio**. Vyberte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit** tlačítko.
 
 ## <a name="install-boost"></a>Nainstalujte Boost
 
@@ -48,7 +49,7 @@ Vyžaduje Boost.Test [Boost](http://www.boost.org/)! Pokud nemáte Boost nainsta
 
 Šablona položky používá variantu single-header Boost.Test, ale můžete změnit #include cesta pro variantu samostatné knihovny. Další informace najdete v tématu [přidat direktiv](#add-include-directives).
 
-## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Vytvoření testovacího projektu (Visual Studio 2017 verze 15.5)
+## <a name="create-a-test-project"></a>Vytvoření testovacího projektu
 
 V sadě Visual Studio 2017 verze 15.5 jsou k dispozici pro Boost.Test žádná předem nakonfigurované testovací projekt nebo šablony položek. Proto budete muset vytvořit a nakonfigurovat projekt konzolové aplikace pro uložení vašich testů.
 

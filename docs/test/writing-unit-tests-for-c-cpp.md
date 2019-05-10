@@ -1,18 +1,19 @@
 ---
 title: Zápis testů jednotek pro C/C++
-ms.date: 10/09/2018
+description: Zápis C++ testování částí v sadě Visual Studio pomocí různých testovacích architektur, včetně CTest a Google Test a Boost.Test.
+ms.date: 05/06/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 308478bc47d62731494616a30ce320b3662de735
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945274"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461596"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů jednotek pro C/C++ v sadě Visual Studio
 
@@ -30,11 +31,11 @@ Visual Studio obsahuje tyto testovací rozhraní C++ se žádné další soubory
 
 Kromě rozhraní nainstalované můžete napsat vlastní testovací adaptér pro libovolné framework, které chcete použít v sadě Visual Studio. Testovací adaptér můžete integrovat testů jednotek s **Průzkumníka testů** okna. Několik adaptérů třetích stran jsou k dispozici na [Visual Studio Marketplace](https://marketplace.visualstudio.com). Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 verze 15.7 a novější (Professional a Enterprise)**
+**Visual Studio 2017 a novější (Professional a Enterprise)**
 
 Projekty testování částí C++ podporu [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-**Visual Studio 2017 verze 15.5 nebo novější**
+**Visual Studio 2017 a novější (všechny edice)**
 
 - **Google Test Adapter** je zahrnutý jako součást výchozí **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Obsahuje šablony projektů, můžete přidat do řešení prostřednictvím **přidat nový projekt** nabídky klikněte pravým tlačítkem na uzel řešení v **Průzkumníka řešení**a možnosti, které můžete nakonfigurovat přes **nástroje**  >  **Možnosti**. Další informace najdete v tématu [postupy: použití Google testu v sadě Visual Studio](how-to-use-google-test-for-cpp.md).
 
@@ -50,17 +51,35 @@ Si můžete stáhnout adaptér pro Google Test a Boost.Test adaptér rozšířen
 
 V následujících částech se dozvíte základní kroky, které vám pomůžou začít s testováním částí C++. Základní konfigurace je velmi podobný pro rozhraní Microsoft a Google Test. Boost.Test vyžaduje ručně vytvořte projekt testu.
 
-### <a name="create-a-test-project"></a>Vytvoření testovacího projektu
+::: moniker range="vs-2019"
+
+### <a name="create-a-test-project-in-visual-studio-2019"></a>Vytvoření testovacího projektu ve Visual Studio 2019
+
+Definovat a spouštět testy v jedné nebo více projekty testů, které jsou ve stejném řešení jako kód, který chcete testovat. Chcete-li přidat nový testovací projekt do existujícího řešení, klikněte pravým tlačítkem na uzel řešení v **Průzkumníka řešení** a zvolte **přidat** > **nový projekt**. Nastavte **jazyk** k C++ a zadejte "test" do vyhledávacího pole. Následující obrázek znázorňuje projekty testů, které jsou k dispozici, při **Desktop Development with C++**  a **vývoj UWP** úlohy jsou nainstalovány:
+
+![C++Projekty testů v aplikaci VIsual Studio 2019](media/vs-2019/cpp-new-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="create-a-test-project-in-visual-studio-2017"></a>Vytvořte projekt testu v sadě Visual Studio 2017
 
 Definovat a spouštět testy v jedné nebo více projekty testů, které jsou ve stejném řešení jako kód, který chcete testovat. Chcete-li přidat nový testovací projekt do existujícího řešení, klikněte pravým tlačítkem na uzel řešení v **Průzkumníka řešení** a zvolte **přidat** > **nový projekt**. V levém podokně zvolte **Visual C++ Test** a zvolte jeden z typů projektu v prostředním podokně. Následující obrázek znázorňuje projekty testů, které jsou k dispozici, při **Desktop Development with C++** je nainstalovaná úloha:
 
 ![Projekty testů C++](media/cpp-new-test-project.png)
+
+::: moniker-end
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Vytvořit odkazy na jiné projekty v řešení
 
 Pokud chcete povolit váš testovací kód pro přístup k funkcím v projektu, který má být testována, přidejte odkaz na projekt v projektu testu. Klikněte pravým tlačítkem na uzel projektu testu v **Průzkumníka řešení** a zvolte **přidat** > **odkaz**. V dialogovém okně vyberte projekty, které chcete testovat.
 
 ![Přidat odkaz](media/cpp-add-ref-test-project.png)
+
+### <a name="link-to-object-or-library-files"></a>Odkaz na objekt nebo soubory knihoven
+
+Pokud testovací kód neexportuje funkce, které chcete testovat, můžete přidat výstupní soubory .obj nebo .lib do závislostí testovacího projektu. Zobrazit [připojení testů k souborům objektů nebo knihoven](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef).
 
 ### <a name="add-include-directives-for-header-files"></a>Přidejte #include pro soubory hlaviček
 
@@ -117,7 +136,7 @@ Osvědčené postupy související s testování částí, naleznete v tématu [
 
 ## <a name="use-codelens"></a>Použití CodeLens
 
-**Visual Studio 2017 verze 15.7 a novější (edice Professional a Enterprise jenom)**
+**Visual Studio 2017 a novější (edice Professional a Enterprise)**
 
 [Funkce CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) umožňuje rychle zobrazit stav jednotky testování bez opuštění editoru kódu. Inicializovat CodeLens pro projekt testování částí C++ v některém z těchto způsobů:
 

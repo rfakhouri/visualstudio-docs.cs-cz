@@ -8,12 +8,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b687f9fb705f8f8c8bee7ca611d618e012e8507
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 007da4e5e534ce6f9d8563011c0284432e4d9c19
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443860"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226105"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Návod: Vytvoření sady SDK s využitím C# nebo Visual Basic
 V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu SDK jednoduché matematické knihovny a pak balíček sady SDK jako Visual Studio Extension (VSIX). Dokončíte následující postupy:
@@ -28,7 +31,7 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
 
 ## <a name="createClassLibrary"></a> Chcete-li vytvořit komponentu SimpleMath Windows Runtime
 
-1. V panelu nabídky zvolte **souboru** > **nový** > **nový projekt**.
+1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
 2. V seznamu šablon rozbalte **Visual C#** nebo **jazyka Visual Basic**, zvolte **Windows Store** uzel a klikněte na tlačítko **součástprostředíWindowsRuntime** šablony.
 
@@ -50,7 +53,7 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
 8. V **konfigurace** sloupce, ověřte, že **SimpleMath** řádek je nastavena na **vydání**a klikněte na tlačítko **Zavřít** tlačítko tak, aby přijímal Změňte.
 
    > [!IMPORTANT]
-   > Sada SDK pro komponentu SimpleMath obsahuje pouze jednu konfiguraci. Tato konfigurace musí být sestavení pro vydání, nebo aplikace, které používají součást nebudou předávat certifikaci[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
+   > Sada SDK pro komponentu SimpleMath obsahuje pouze jednu konfiguraci. Tato konfigurace musí být sestavení pro vydání, nebo aplikace, které používají součást nebudou předávat certifikaci [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
 
 9. V **Průzkumníka řešení**, otevřete místní nabídku **SimpleMath** uzel projektu a klikněte na tlačítko **sestavení**.
 
@@ -153,7 +156,7 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
 
 ## <a name="createSample"></a> K vytvoření ukázkové aplikace, která používá knihovnu tříd
 
-1. V panelu nabídky zvolte **souboru** > **nový** > **nový projekt**.
+1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
 2. V seznamu šablon rozbalte **Visual C#** nebo **jazyka Visual Basic**a klikněte na tlačítko **Windows Store** uzlu.
 
@@ -163,11 +166,11 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
 
 5. V seznamu typů odkazů, rozbalte **Windows**a klikněte na tlačítko **rozšíření**.
 
-6. V podokně podrobností vyberte **jednoduché matematické SDK** rozšíření.
+6. V podokně podrobností vyberte **WinRT matematické knihovny** rozšíření.
 
     Zobrazí se další informace o vaši sadu SDK. Můžete použít **. Další informace** odkaz k otevření https://msdn.microsoft.com/, jak jste zadali v souboru SDKManifest.xml dříve v tomto návodu.
 
-7. V **správce odkazů** dialogové okno, vyberte **jednoduché matematické SDK** zaškrtněte políčko a klikněte na tlačítko **OK** tlačítko.
+7. V **správce odkazů** dialogové okno, vyberte **WinRT matematické knihovny** zaškrtněte políčko a klikněte na tlačítko **OK** tlačítko.
 
 8. V panelu nabídky zvolte **zobrazení** > **prohlížeče objektů**.
 
@@ -181,11 +184,11 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
 
     ```xml
     <Page
-        x:Class="WinRTMathTestCS.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTestCS"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">
@@ -207,11 +210,11 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
 
     ```xml
     <Page
-        x:Class="WinRTMathTest.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTest"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">

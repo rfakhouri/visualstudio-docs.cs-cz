@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3f76746c29bff7dce76c2eda97fbd1287e5906a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cad26ea3c510a3aceb769da85e49b14919374ebc
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914270"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225573"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 Toto rozhraní vytváří výčet procesů spuštěných na port pro ladění.
@@ -55,6 +55,6 @@ IEnumDebugProcesses : IUnknown
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)

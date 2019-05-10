@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c325ab6cb12813000c981e978e728c251b06c55
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868728"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457284"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Získá vyjádření závislé na počítači rozsahu fyzické adresy přidružený blok zásobníku.
@@ -38,12 +41,12 @@ int GetPhysicalStackRange ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `paddrMin`
+## <a name="parameters"></a>Parametry
+ `paddrMin`\
 
  [out] Vrátí nejnižší fyzické adresy přidružené k tento rámec zásobníku.
 
- `paddrMax`
+ `paddrMax`\
 
  [out] Vrátí nejvyšší fyzické adresy přidružené k tento rámec zásobníku.
 
@@ -55,5 +58,5 @@ int GetPhysicalStackRange ( 
 
  Předpokládá se, že zásobník volání roste dolů, to znamená, že jsou přidány nové bloky zásobníku stále nižší adresy paměti. Za běhu architektury musíte zadat rozsahy adres fyzického zásobníku, které odpovídají tento předpoklad.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

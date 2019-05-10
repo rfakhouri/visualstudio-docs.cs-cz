@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386927"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476540"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Novinky pro programátory v sadě Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Ověřování závislostí v reálném čase
 
-Odebrání nechtěné závislosti je důležitou součástí správy technický dluh. Živé ověření závislosti je teď zahrnutá, poskytuje přesné informace o problémech a plně čerpat výhody nových funkcí v editoru a seznamu chyb.
+Odebrání nechtěné závislosti je důležitou součástí správy technický dluh. Visual Studio poskytuje živé ověření závislosti, včetně přesné informace o problémech, jako je například, kde právě jsou. Závislostí v reálném čase ověření trvá úplné výhody nových funkcí v editoru a seznamu chyb.
 
 ![Ověřování závislostí v reálném čase v akci](media/dep-validation-whatsnew-01.png)
 
-Prostředí pro vytváření změnil provádět ověřování závislostí zjistitelnější a dostupnější, změně terminologie z "Diagramu vrstev" k "Diagram závislostí".
+Prostředí pro vytváření změnil provádět ověřování závislostí zjistitelnější a dostupnější. Terminologie byl změněn z "Diagram vrstev" na "Diagram závislostí".
 
 **Architektura** nabídky teď obsahuje příkaz, který přímo vytvořit diagram závislostí:
 
 ![Položka závislostí v reálném čase na nabídku architektura](media/dep-validation-whatsnew-02.png)
 
-... a názvy vlastností vrstvy v diagramu závislostí a jejich popisy, se změnily tak, aby byly lépe vystihuje:
+Popisy a názvy vlastností vrstvy se změnily tak, aby byly lépe vystihuje:
 
 ![Aktualizovat názvy vlastností závislostí v reálném čase](media/dep-validation-whatsnew-03.png)
 
-Nyní uvidíte dopad změny okamžitě v výsledky analýzy zadání stávajícího kódu v řešení pokaždé, když uložíte diagram. Nemusíte už čekat na dokončení příkazu "Ověřte závislosti".
+Okamžitě uvidíte dopad změny ve výsledcích analýzy zadání stávajícího kódu v řešení pokaždé, když uložíte diagram. Nemusíte čekat na dokončení **ověření závislostí** příkazu.
 
 Další podrobnosti najdete v tématu [tento příspěvek na blogu](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Byly odebrány návrhářů UML
 
-Návrhářů UML byly odebrány z této verze sady Visual Studio Enterprise.
+Byly odebrány návrhářů UML v sadě Visual Studio.
 
 * Diagramy UML se nyní zobrazují jako soubory XML
 * V Průzkumníku modelu UML již existuje.
@@ -57,7 +57,7 @@ Návrhářů UML byly odebrány z této verze sady Visual Studio Enterprise.
 * Propojení zpět z DSL nebo vrstvě se už nepodporuje.
 * Rozšíření UML v sadě SDK modelování se už nepodporuje.
 
-Ale podporují pro vizualizaci architektury .NET a C++ kód je k dispozici prostřednictvím [map kódu](map-dependencies-across-your-solutions.md)a významná vylepšení ověřování závislostí je popsáno výše.
+Podpora pro vizualizaci architektury .NET a C++ kód je k dispozici prostřednictvím [map kódu](map-dependencies-across-your-solutions.md).
 
 Pokud jste uživatelem významné návrhářů UML, můžete nadále při rozhodování o alternativní nástroj pro vaše potřeby UML, použijte Visual Studio 2015 nebo starší verze.
 

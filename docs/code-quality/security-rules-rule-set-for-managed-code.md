@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72182607369094781050b94b1003398479dfe2cb
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825289"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459137"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Sada pravidel Pravidla zabezpečení pro spravovaný kód
 Měli byste zahrnout sadu pro maximalizaci počtu možných problémů se zabezpečením, které jsou hlášeny pravidel pravidla zabezpečení společnosti Microsoft.
@@ -66,6 +66,13 @@ Měli byste zahrnout sadu pro maximalizaci počtu možných problémů se zabezp
 |[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Nepoužívat nezabezpečený deserializátor BinaryFormatter|
 |[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|Nevolat BinaryFormatter.Deserialize dříve, než se nastaví BinaryFormatter.Binder|
 |[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Než zavoláte BinaryFormatter.Deserialize, ujistěte se, že je nastavený BinaryFormatter.Binder|
+|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|Nepoužívejte nezabezpečené deserializátor LosFormatter|
+|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|Nepoužívejte nezabezpečené deserializátor NetDataContractSerializer|
+|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|Nelze deserializovat bez první nastavení NetDataContractSerializer.Binder|
+|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|Ujistěte se, že NetDataContractSerializer.Binder nastavený před deserializaci|
+|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|Nepoužívejte nezabezpečené deserializátor ObjectStateFormatter|
+|[CA2321](ca2321.md)|Není ukončena deserializace s použitím JavaScriptSerializer pomocí SimpleTypeResolver|
+|[CA2322](ca2322.md)|Ujistěte se, že JavaScriptSerializer není inicializovaný se SimpleTypeResolver před deserializaci|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Zkontrolujte ohrožení zabezpečení injektáží SQL v kódu|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Zkontrolujte ohrožení zabezpečení proti XSS v kódu|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Zkontrolujte ohrožení zabezpečení injektáží cesty k souboru v kódu|

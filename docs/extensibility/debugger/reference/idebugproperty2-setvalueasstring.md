@@ -1,64 +1,68 @@
 ---
 title: IDebugProperty2::SetValueAsString | Dokumentace Microsoftu
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugProperty2::SetValueAsString
 helpviewer_keywords:
 - IDebugProperty2::SetValueAsString
 ms.assetid: 9e6a5054-41b7-4223-b509-b93689d366a5
-caps.latest.revision: 11
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6acc3c0c0ec271793832783b2fb7eb9f2ff2309a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 310d2e3cd8c7f1caea4e245c7c591cd402afdaf4
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869403"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458873"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Nastaví hodnotu vlastnosti ze zadaného řetězce.
 
-Nastaví hodnotu vlastnosti ze zadaného řetězce.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp#  
-HRESULT SetValueAsString (   
-   LPCOLESTR pszValue,  
-   UINT      nRadix,  
-   DWORD     dwTimeout  
-);  
-```  
-  
-```csharp  
-int SetValueAsString (   
-   string pszValue,  
-   uint   nRadix,  
-   uint   dwTimeout  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pszValue`  
- [in] Řetězec obsahující hodnotu, která se má nastavit.  
-  
- `nRadix`  
- [in] Základ, který se má použít při interpretaci jakékoli číselné informace. To může být 0 pokusí automaticky zjistit základ číselné soustavy.  
-  
- `dwTimeout`  
- [in] Určuje maximální dobu (v milisekundách) čekání před návratem z této metody. Použití `INFINITE` čekat po neomezenou dobu.  
-  
-## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. V následující tabulce jsou uvedeny další možné hodnoty.  
-  
-|Hodnota|Popis|  
-|-----------|-----------------|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Řetězec se nedá převést na hodnotu vlastnosti nebo nelze nastavit hodnotu vlastnosti.|  
-|`E_SETVALUE_VALUE_IS_READONLY`|Vlastnost je jen pro čtení.|  
-  
-## <a name="see-also"></a>Viz také  
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT SetValueAsString ( 
+   LPCOLESTR pszValue,
+   UINT      nRadix,
+   DWORD     dwTimeout
+);
+```
+
+```csharp
+int SetValueAsString ( 
+   string pszValue,
+   uint   nRadix,
+   uint   dwTimeout
+);
+```
+
+## <a name="parameters"></a>Parametry
+ `pszValue`\
+
+ [in] Řetězec obsahující hodnotu, která se má nastavit.
+
+ `nRadix`\
+
+ [in] Základ, který se má použít při interpretaci jakékoli číselné informace. To může být 0 pokusí automaticky zjistit základ číselné soustavy.
+
+ `dwTimeout`\
+
+ [in] Určuje maximální dobu (v milisekundách) čekání před návratem z této metody. Použití `INFINITE` čekat po neomezenou dobu.
+
+## <a name="return-value"></a>Návratová hodnota
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. V následující tabulce jsou uvedeny další možné hodnoty.
+
+|Value|Popis|
+|-----------|-----------------|
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Řetězec se nedá převést na hodnotu vlastnosti nebo nelze nastavit hodnotu vlastnosti.|
+|`E_SETVALUE_VALUE_IS_READONLY`|Vlastnost je jen pro čtení.|
+
+## <a name="see-also"></a>Viz také:
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

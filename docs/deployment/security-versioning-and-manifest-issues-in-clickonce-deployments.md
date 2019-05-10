@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c87fc29b24b3c5ab4bd59d9cca25113f82895ff4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8a7c0363ea774206cdf6f1db792ab5e7cbd2454
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928223"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226408"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Zabezpečení správy verzí, problémy a manifestem v nasazeních ClickOnce
 
@@ -97,5 +97,5 @@ Pokud chcete přesunout nebo kopírovat aplikaci, je nutné také aktualizovat `
 ## <a name="see-also"></a>Viz také:
 
 [Řešení potíží s nasazením ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
-[aplikací Securw ClickOnce](../deployment/securing-clickonce-applications.md)
+[zabezpečení ClickOnce applications](../deployment/securing-clickonce-applications.md)
 [volba strategie nasazení ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

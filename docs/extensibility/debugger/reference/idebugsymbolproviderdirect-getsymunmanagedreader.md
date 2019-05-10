@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0c038a7aa2b398a2ee58101248d2968913ba3b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 452866f885bb438589474bbb82e88e10300d988d
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868418"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224162"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 Načte modul pro načítání symbolů pro nespravovaný kód.
@@ -39,21 +42,21 @@ int GetSymUnmanagedReader (
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ulAppDomainID`
+## <a name="parameters"></a>Parametry
+ `ulAppDomainID`\
 
  [in] Identifikátor domény aplikace.
 
- `guidModule`
+ `guidModule`\
 
  [in] Jedinečný identifikátor modulu.
 
- `ppSymUnmanagedReader`
+ `ppSymUnmanagedReader`\
 
  [out] Vrátí objekt, který představuje modul pro načítání symbolů pro nespravovaný kód.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

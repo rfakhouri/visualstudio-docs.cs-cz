@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b2330c8462f88fca401c2e83980465f6f98fc5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4e61912ac04641595907b3ad14f45a5f6646248a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868330"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226133"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 Získá ukončovací kód vlákna.
@@ -36,13 +39,13 @@ int GetExitCode ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pdwExit`
+## <a name="parameters"></a>Parametry
+ `pdwExit`\
 
  [out] Vrátí ukončovací kód vlákna.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)

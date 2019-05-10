@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 017077717f5353fed941124d69d258beaab04e40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 920e74b547bba97a742b68ceb057a0719d6ef700
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823656"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459161"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Nainstalujte analyzátory FxCop v sadě Visual Studio
 
@@ -53,9 +53,9 @@ Určení verze balíčku analyzátory FxCop instalace pro vaši verzi sady Visua
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>Chcete-li nainstalovat analyzátory FxCop jako rozšíření VSIX
 
-V sadě Visual Studio 2017 verze 15.5 nebo novější, můžete nainstalovat [Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) rozšíření, které obsahuje všechny analyzátory FxCop pro spravované projekty.
-
 ::: moniker range="vs-2017"
+
+V sadě Visual Studio 2017 verze 15.5 nebo novější, můžete nainstalovat [Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) rozšíření, které obsahuje všechny analyzátory FxCop pro spravované projekty.
 
 1. V sadě Visual Studio, vyberte **nástroje** > **rozšíření a aktualizace**.
 
@@ -64,40 +64,52 @@ V sadě Visual Studio 2017 verze 15.5 nebo novější, můžete nainstalovat [Mi
    > [!NOTE]
    > Můžete také stáhnout přímo z rozšíření [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
 
+2. Rozbalte **Online** v levém podokně a pak vyberte **Visual Studio Marketplace**.
+
+3. Do vyhledávacího pole zadejte "analýza kódu" a vyhledejte **Microsoft Code Analysis 2017** rozšíření.
+
+   ![Rozšíření Microsoft Code Analysis 2017](media/extensions-and-updates-code-analysis.png)
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
+[Microsoft Code Analysis 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019) rozšíření obsahuje všechny analyzátory FxCop pro spravované projekty. Chcete-li toto rozšíření nainstalovat:
 
 1. V sadě Visual Studio, vyberte **rozšíření** > **spravovat rozšíření**.
 
    **Spravovat rozšíření** zobrazí se dialogové okno.
 
    > [!NOTE]
-   > Můžete také stáhnout přímo z rozšíření [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+   > Můžete také stáhnout přímo z rozšíření [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019).
+
+2. Rozbalte **Online** v levém podokně a pak vyberte **Visual Studio Marketplace**.
+
+3. Do vyhledávacího pole zadejte "analýza kódu" a vyhledejte **Microsoft Code Analysis 2019** rozšíření.
+
+   ![Rozšíření Microsoft 2019 analýzy kódu](media/manage-extensions-code-analysis.png)
 
 ::: moniker-end
 
-1. Rozbalte **Online** v levém podokně a pak vyberte **Visual Studio Marketplace**.
-
-1. Do vyhledávacího pole zadejte "analýza kódu" a vyhledejte **Microsoft Code Analysis 2017** rozšíření.
-
-   ![Rozšíření Microsoft analýzy kódu](media/extensions-and-updates-code-analysis.png)
-
-1. Vyberte **Stáhnout**.
+4. Vyberte **Stáhnout**.
 
    Rozšíření je stažen.
 
-1. Vyberte **OK** dialogové okno zavřete a pak zavřete všechny instance sady Visual Studio ke spuštění **instalátor VSIX**.
+5. Vyberte **OK** dialogové okno zavřete a pak zavřete všechny instance sady Visual Studio ke spuštění **instalátor VSIX**.
 
    **Instalátor VSIX** zobrazí se dialogové okno.
 
+   ::: moniker range="vs-2017"
+
    ![Instalátor VSIX pro analýzu kódu Microsoft](media/vsix-installer-code-analysis.png)
 
-1. Vyberte **změnit** spusťte instalaci.
+   ::: moniker-end
 
-1. Po jedné až dvou minutách dokončení instalace. Vyberte **Zavřít**.
+6. Vyberte **změnit** spusťte instalaci.
 
-1. Znovu otevřete Visual Studio.
+   Po jedné až dvou minutách dokončení instalace.
+
+7. Vyberte **Zavřít**, potom znovu otevřete Visual Studio.
 
 ::: moniker range="vs-2017"
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fd27ee043e55b4dd43be956e41dd870be550562
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4fe0a804922296e26846b9b477091883c742253e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865875"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458078"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
 Tato struktura se používá k nastavení JustMyCode informace pro modul.
@@ -39,9 +42,11 @@ public struct JMC_CODE_SPEC {
 ```
 
 ## <a name="members"></a>Členové
-fIsUserCode nenulová (`TRUE`), pokud modul považovat uživatelského kódu; v opačném případě hodnotu (`FALSE`) Pokud modul je považován za externí kód a není k ladění.
+`fIsUserCode`\
+Nenulová (`TRUE`), pokud modul považovat uživatelského kódu; v opačném případě hodnotu (`FALSE`) Pokud modul je považován za externí kód a není k ladění.
 
-Název modulu dotyčný bstrModuleName.
+`bstrModuleName`\
+Název modulu nejistá.
 
 ## <a name="remarks"></a>Poznámky
 Tato struktura je předán jako seznam struktur pro [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) metody.
@@ -53,6 +58,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)

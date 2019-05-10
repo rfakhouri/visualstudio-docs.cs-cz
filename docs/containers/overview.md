@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 4b03ccddadf954b8430b7ad9b5a4ed765fccc3f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe363e8f78cba9fa46f3634e59beb22e523ddfa
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824953"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084036"
 ---
 # <a name="container-tools-in-visual-studio"></a>Nástroje kontejneru v sadě Visual Studio
 
@@ -25,7 +25,7 @@ Nástroje v sadě Visual Studio pro vývoj s využitím kontejnerů se snadno po
 
 ## <a name="docker-support-in-visual-studio"></a>Podpora dockeru v sadě Visual Studio
 
-Podporu dockeru je k dispozici pro některé typy projektů .NET.  Je k dispozici pro projekty ASP.NET, ASP.NET Core projekty a projekty konzoly .NET Core a .NET Framework.
+Podporu dockeru je k dispozici pro projekty ASP.NET, ASP.NET Core projekty a projekty konzoly .NET Core a .NET Framework.
 
 Podpora pro Docker v sadě Visual Studio změnilo několik verzí v reakci na požadavky zákazníků. Existují dvě úrovně podpory Dockeru, které můžete přidat do projektu a podporované možnosti se liší podle typu projektu a verzi sady Visual Studio. U některých typů podporovaných projektu Pokud chcete kontejner pro jeden projekt, bez použití orchestraci, Uděláte to tak, že přidáte podporu Dockeru.  Další úrovní je podporu Orchestrace kontejnerů, která přidá odpovídající podpůrné soubory pro konkrétní orchestrátoru, který zvolíte.  
 
@@ -46,13 +46,9 @@ S Visual Studio 2019 můžete použít jako služeb Orchestrace kontejnerů Dock
 > Pokud používáte úplné rozhraní .NET Framework konzoly šablony projektu, když přidáte podporu Dockeru, je automaticky přidána podpora pro orchestraci pomocí Docker Compose.
 ::: moniker-end
 
-**Přidat > Podpora Dockeru** a **Přidat > Podpora Orchestrátoru kontejnerů** příkazy jsou umístěné v místní nabídce (nebo kontextovou nabídku) uzel projektu pro projekt ASP.NET Core v  **Průzkumník řešení**, jak je znázorněno na následujícím snímku obrazovky:
+### <a name="adding-docker-support"></a>Přidání podpory Dockeru
 
-![Přidejte podporu Dockeru nabídky v sadě Visual Studio](./media/overview/add-docker-support-menu.png)
-
-### <a name="adding-docker-support-without-orchestration"></a>Přidání podpory Dockeru (bez Orchestrace)
-
-Můžete přidat podporu Dockeru do existujícího projektu tak, že vyberete **přidat** > **podporu Dockeru** v **Průzkumníka řešení**. Můžete také povolit podporu Dockeru během vytváření projektu tak, že vyberete **povolit podporu Dockeru** při vytváření nového projektu, jak je znázorněno na následujícím snímku obrazovky:
+Můžete povolit podporu Dockeru během vytváření projektu tak, že vyberete **povolit podporu Dockeru** při vytváření nového projektu, jak je znázorněno na následujícím snímku obrazovky:
 
 ::: moniker range="vs-2017"
 ![Povolit podporu Dockeru pro novou webovou aplikaci ASP.NET Core v sadě Visual Studio](./media/overview/enable-docker-support-visual-studio.png)
@@ -60,6 +56,13 @@ Můžete přidat podporu Dockeru do existujícího projektu tak, že vyberete **
 ::: moniker range=">=vs-2019"
 ![Povolit podporu Dockeru pro novou webovou aplikaci ASP.NET Core v sadě Visual Studio](./media/overview/vs-2019/enable-docker-support-visual-studio.png)
 ::: moniker-end
+
+> [!NOTE]
+> Pro projekty .NET Framework (ne .NET Core) jsou k dispozici pouze pro kontejnery Windows.
+
+Můžete přidat podporu Dockeru do existujícího projektu tak, že vyberete **přidat** > **podporu Dockeru** v **Průzkumníka řešení**. **Přidat > Podpora Dockeru** a **Přidat > Podpora Orchestrátoru kontejnerů** příkazy jsou umístěné v místní nabídce (nebo kontextovou nabídku) uzel projektu pro projekt ASP.NET Core v  **Průzkumník řešení**, jak je znázorněno na následujícím snímku obrazovky:
+
+![Přidejte podporu Dockeru nabídky v sadě Visual Studio](./media/overview/add-docker-support-menu.png)
 
 Když přidáváte nebo povolit podporu Dockeru, Visual Studio přidá do projektu následující:
 

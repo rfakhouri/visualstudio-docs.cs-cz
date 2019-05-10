@@ -7,14 +7,14 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Zjistěte, jak můžou správci vyřešit over-pass-the nárokován předplatná
 searchscope: VS Subscription
-ms.openlocfilehash: 6c48bbc077c3d88e1d83f7fa860f4fc6c55fdcd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6217dcd3cef9a65db3e45ba76f57167f47535671
+ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580008"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "64945137"
 ---
-# <a name="handling-over-claimed-subscriptions"></a>Zpracování předplatných "over-pass-the jste požádali.
+# <a name="overallocated-subscriptions"></a>Přetížené předplatná
 
 Někdy jsou po předplatitele byly přidány, což může vést k nutnosti informace změnit objednávky přiřazené předplatné než počet licencí vlastněná vaší společností. Pokud k tomu dojde, předplatitelé karta zobrazuje výstrahy a poskytuje další informace.
 
@@ -24,8 +24,27 @@ Někdy jsou po předplatitele byly přidány, což může vést k nutnosti infor
 > [!div class="mx-imgBorder"]
 > ![Všimněte si, že over-pass-the nárokován předplatných](_img/over-claimed/over-claimed-alert.png)
 
-1. K vyřešení over-pass-the nárokován licencí, klikněte na tlačítko textu výstrahy. Tím se zobrazí filtrovaný seznam předplatitele, které jsou přiřazeny na úrovni předplatného a datum vypršení platnosti, která je nadměrně jste požádali. 
+## <a name="resolving-overallocated-subscriptions"></a>Řešení přetížené předplatná
+
+Chcete-li vyřešit přetížené licence:
+
+1. Klikněte na tlačítko textu výstrahy. Tím se zobrazí filtrovaný seznam předplatitele, které jsou přiřazeny na úrovni předplatného a datum vypršení platnosti, která je nadměrně jste požádali. 
 
 2. Odeberte odběratele podle potřeby k nápravě over-pass-the nárokován licence. 
 
 3. Přehled na levé straně stránky se aktualizuje a zobrazí, že jste ještě jednou v dodržování předpisů a všech over-pass-the nárokován upozornění zmizí. 
+
+## <a name="billing-and-true-up"></a>Fakturace a true nahoru
+
+Pokud vaše organizace má smlouvu Enterprise (EA), správci budou moct bez nutnosti pořizovat jejich přiřazení předplatných a platit později prostřednictvím odsouhlasení proces označovaný jako "true nahoru".  Pokud jste overallocate, vaše organizace bude účtovat maximální počet předplatných, které jsou přiřazené uživatelům během "true nahoru".  To platí i v případě, že už nebude mít maximální počet předplatných, které jsou přiřazeny v době probíhá true nahoru.  Další informace o monitorování maximální využití najdete [maximální využití](maximum-usage.md) tématu.
+
+> [!Important]
+> Pokud předplatných sady Visual Studio pomocí GitHub Enterprise mají přiřazenou správci předplatného sady Visual Studio a který by byl nákupu těchto předplatných, nebudou viditelné pro GitHub Enterprise admins v rámci organizace. K zajištění Githubu Enterprise předplatná jsou viditelné, nákupu včetně **alespoň jeden** pomocí GitHub Enterprise sady Visual Studio Professional nebo Visual Studio Enterprise s předplatným Githubu Enterprise by měl provést první čas, kdy jsou přiřazeny předplatná.  
+>
+> Je zodpovědností zákazníka, aby se zajistilo, že pro každé předplatné Githubu, který je přiřazen odpovídající sady Visual Studio s předplatným Githubu přiřazená portálu spravovat zůstal zajištěn soulad s licenčním požadavkům pro tento předplatné.
+
+
+Další informace o správě [předplatných sady Visual Studio pomocí GitHub Enterprise](assign-github.md).
+
+## <a name="support-resources"></a>Informační zdroje podpory
+-  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).

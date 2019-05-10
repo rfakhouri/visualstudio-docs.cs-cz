@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960625"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226041"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Vytvoření aplikace Vue.js pomocí Node.js Tools for Visual Studio
 
@@ -71,10 +71,10 @@ V tomto příkladu použijete prázdnou aplikaci ASP.NET Core (jazyk C#). Ale m�
 1. Otevřít Visual Studio a vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
-    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **asp.net**, klikněte na tlačítko **vytvořit novou webovou aplikaci ASP.NET Core**. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **asp.net**, klikněte na tlačítko **vytvořit novou webovou aplikaci ASP.NET Core**. V dialogovém okně, které se zobrazí, zadejte název **klientskou aplikaci**a klikněte na tlačítko **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogového okna rozbalte **Visual C#** , klikněte na tlačítko **webové**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**, klikněte na tlačítko **OK**.
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogového okna rozbalte **Visual C#** , klikněte na tlačítko **webové**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**, zadejte název **klientskou aplikaci**a klikněte na tlačítko **OK**.
     ::: moniker-end
 
     Pokud se nezobrazí **webové aplikace ASP.NET Core** šablony projektu, je nutné nainstalovat **vývoj pro ASP.NET a web** pracovního vytížení a. **.NET Core** úlohy pro vývoj první. K instalaci workload(s), klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno (vyberte **souboru**  >  **Nové** > **projektu**). Spustí se instalační program pro Visual Studio. Vyberte požadované úlohy.
@@ -100,14 +100,14 @@ Chcete-li nainstalovat modul npm vue rozhraní příkazového řádku, otevřete
 
 1. Přejděte na příkazovém řádku a přejděte do kořenové složky projektu.
 
-1. Typ `vue init webpack ClientApp` a postupujte podle kroků po zobrazení výzvy na další otázky.
+1. Typ `vue init webpack client-app` a postupujte podle kroků po zobrazení výzvy na další otázky.
 
     > [!NOTE]
     > Pro *.vue* soubory, budete muset použít Webpacku nebo podobné architekturu s zavaděč k provedení převodu. TypeScript a sady Visual Studio není známo, jak chcete-li zkompilovat *.vue* soubory. Totéž platí pro sdružování; TypeScript nebude vědět, jak převést ES2015 moduly (to znamená, `import` a `export` příkazy) do jedné koncový *js* soubor načíst v prohlížeči. Webpacku znovu, je nejlepší volbou. Centrum umožňující prosazovat tento proces z v rámci sady Visual Studio pomocí nástroje MSBuild, musíte spustit ze šablony sady Visual Studio. V současné době neexistuje žádná šablona technologie ASP.NET pro Vue.js vývoj in-the-box.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Upravit konfiguraci webpacku pro výstupní soubory sestavení do wwwroot
 
-* Otevřete soubor *./ClientApp/config/index.js*a změnit `build.index` a `build.assetsRoot` wwwroot cestu:
+* Otevřete soubor *./client-app/config/index.js*a změnit `build.index` a `build.assetsRoot` wwwroot cestu:
 
     ```js
     // Template for index.html
@@ -117,15 +117,15 @@ Chcete-li nainstalovat modul npm vue rozhraní příkazového řádku, otevřete
     assetsRoot: path.resolve(__dirname, '../../wwwroot'),
     ```
 
-#### <a name="indicate-the-project-to-build-the-clientapp-each-time-that-a-build-is-triggered"></a>Označení projektu k sestavení ClientApp pokaždé, když se aktivuje sestavení
+#### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Označení projekt můžete vytvořit klientskou aplikaci pokaždé, když se aktivuje sestavení
 
 1. V sadě Visual Studio, přejděte na **projektu** > **vlastnosti** > **události sestavení**.
 
-1. Na **příkazový řádek události před sestavením**, typ `npm --prefix ./ClientApp run build`.
+1. Na **příkazový řádek události před sestavením**, typ `npm --prefix ./client-app run build`.
 
 #### <a name="configure-webpacks-output-module-names"></a>Konfigurovat webpacku na výstup modulu názvy
 
-* Otevřete soubor *./ClientApp/build/webpack.base.conf.js*a přidejte následující vlastnosti na vlastnost výstup:
+* Otevřete soubor *./client-app/build/webpack.base.conf.js*a přidejte následující vlastnosti na vlastnost výstup:
 
     ```js
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
@@ -138,7 +138,7 @@ Tyto kroky vyžadují vue – rozhraní příkazového řádku 3.0, která je ak
 
 1. Přejděte na příkazovém řádku a změňte aktuální adresář ke kořenové složce projektu.
 
-1. Typ `vue create ClientApp`a klikněte na tlačítko **ručně vybrat funkce**.
+1. Typ `vue create client-app`a klikněte na tlačítko **ručně vybrat funkce**.
 
 1. Zvolte **Typescript**a pak vyberte další požadované možnosti.
 
@@ -146,11 +146,11 @@ Tyto kroky vyžadují vue – rozhraní příkazového řádku 3.0, která je ak
 
 #### <a name="configure-a-vuejs-project-for-typescript"></a>Konfigurace projektu Vue.js pro TypeScript
 
-1. Otevřete soubor *./ClientApp/tsconfig.json* a přidejte `noEmit:true` možností kompilátoru.
+1. Otevřete soubor *./client-app/tsconfig.json* a přidejte `noEmit:true` možností kompilátoru.
 
     Nastavením této možnosti byste se vyhnout, nebudou zbytečně zabírat váš projekt pokaždé, když sestavení v sadě Visual Studio.
 
-1. Dále vytvořte *vue.config.js* ve *./ClientApp/* a přidejte následující kód.
+1. Dále vytvořte *vue.config.js* ve *./client-app/* a přidejte následující kód.
 
     ```js
     module.exports = {
@@ -169,7 +169,7 @@ Tyto kroky vyžadují vue – rozhraní příkazového řádku 3.0, která je ak
 
 #### <a name="build-with-vue-cli-30"></a>Sestavení s vue – rozhraní příkazového řádku 3.0
 
-Neznámý problém s vue cli 3.0 brání automatizace procesu sestavení. Pokaždé, když se pokusíte aktualizovat složku wwwroot, je potřeba spustit příkaz `npm run build` ClientApp složky.
+Neznámý problém s vue cli 3.0 brání automatizace procesu sestavení. Pokaždé, když se pokusíte aktualizovat složku wwwroot, je potřeba spustit příkaz `npm run build` ve složce klientskou aplikaci.
 
 ## <a name="limitations"></a>Omezení
 
@@ -179,7 +179,7 @@ Neznámý problém s vue cli 3.0 brání automatizace procesu sestavení. Pokaž
 * Nerozpozná TypeScript *.vue* soubory jako moduly. Budete potřebovat soubor, který obsahuje například následující TypeScript říct, co kód *.vue* soubory vypadat (vue – rozhraní příkazového řádku 3.0 šablona již obsahuje tento soubor).
 
     ```js
-    // ./ClientApp/vue-shims.d.ts
+    // ./client-app/vue-shims.d.ts
     declare module "*.vue" {
         import Vue from "vue";
         export default Vue;

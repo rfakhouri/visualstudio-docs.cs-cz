@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85451229b9b34f63150b315521621368c60cb1ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f52205cd530e638146abe423890d6477fe62b45d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916272"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457343"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 Načte hodnotu metriky jeho název.
@@ -40,25 +43,25 @@ private int GetMetricDword(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pszType`
+## <a name="parameters"></a>Parametry
+ `pszType`\
 
  [in] Typ metriky.
 
- `guidSection`
+ `guidSection`\
 
  [in] Jedinečný identifikátor oddílu.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Název metriky.
 
- `pdwValue`
+ `pdwValue`\
 
  [out] Vrátí hodnotu metriky.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

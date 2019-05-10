@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a55328c4148aa911d86b8f2daf05ba84a50ff444
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867973"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223934"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Tato metoda se změní objekt, který představuje vizualizér.
@@ -40,16 +43,16 @@ int SetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pNewObject`
+## <a name="parameters"></a>Parametry
+ `pNewObject`\
 
  [in] Objekt, který chcete nastavit.
 
- `error`
+ `error`\
 
  [out] Pokud došlo k chybě nastavení objektu, tento řetězec obsahuje chybovou zprávu.
 
- `pException`
+ `pException`\
 
  [out] Pokud došlo k chybě, tento objekt obsahuje informace o výjimce.
 
@@ -59,6 +62,6 @@ int SetObjectForVisualizer(
 ## <a name="remarks"></a>Poznámky
  Záleží implementátora k určení, jak se vrátí informace o chybě. Je však možné, že některé volající může použít jenom vzhled zobrazíte, pokud byl vrácen objekt výjimky vědět, že došlo k chybě, takže tato metoda by měla vždycky vrátí objekt výjimky, když došlo k chybě. Chybový řetězec by měl být rovněž dodán v případě, že volající vyžaduje, aby využívání.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

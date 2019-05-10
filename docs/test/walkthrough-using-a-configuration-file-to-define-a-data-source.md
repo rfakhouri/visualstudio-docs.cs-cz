@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976198"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461465"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Návod: Použití konfiguračního souboru k definování zdroje dat
 
@@ -62,16 +62,16 @@ Zkontrolujte *app.config* souboru. Obsahuje nejméně deklarace XML a kořenový
 
 2. V rámci **configSections** elementu, vytvořit **části** elementu.
 
-3. V **části** elementu, přidejte atribut s názvem `name` a přiřaďte ho hodnotu `microsoft.visualstudio.testtools`. Přidat jiný atribut `type` a přiřaďte ho hodnotu `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. V **části** elementu, přidejte atribut s názvem `name` a přiřaďte ho hodnotu `microsoft.visualstudio.testtools`. Přidat jiný atribut `type` a přiřaďte ho hodnotu `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`.
 
 **Části** prvek by měl vypadat nějak takto:
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> Název sestavení musí odpovídat sestavení Microsoft Visual Studio .NET Framework, kterou používáte. Pokud používáte Visual Studio .NET Framework 3.5, nastavte 9.0.0.0 verzi. Pokud používáte Visual Studio .NET Framework 2.0, nastavte 8.0.0.0 verzi.
+> Název sestavení musí odpovídat sestavení Microsoft Visual Studio .NET Framework, kterou používáte.
 
 ## <a name="define-connection-strings"></a>Definujte připojovací řetězce
 

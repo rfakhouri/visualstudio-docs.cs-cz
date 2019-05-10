@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04a76c88e5fd3eee146f6c174087298bac2b6974
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9a5d4daad66ed6a4428724b20093473ba7b93856
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915624"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226234"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 Získá název vlákna.
@@ -36,8 +39,8 @@ int GetName ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pbstrName`
+## <a name="parameters"></a>Parametry
+ `pbstrName`\
 
  [out] Vrátí název vlákna.
 
@@ -47,6 +50,6 @@ int GetName ( 
 ## <a name="remarks"></a>Poznámky
  Načíst název je vždy název, který je možné zobrazit a popisuje tento název vlákna. Název vlákna mohou být odvozen od za běhu architektury, že podporuje s názvem vláken, nebo může být název odvozený z ladicího stroje. Alternativně lze nastavit název vlákna voláním [setthreadname –](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) metody.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)

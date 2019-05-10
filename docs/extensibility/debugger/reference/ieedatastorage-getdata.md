@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6dbf712fc21338f8f5c4699ca2e11d5344dbad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915305"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224186"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Načte zadaný počet bajtů z objektu.
@@ -40,16 +43,16 @@ int GetData(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dataSize`
+## <a name="parameters"></a>Parametry
+ `dataSize`\
 
  [in] Počet bajtů k načtení ( `data` pole musí obsahovat nejméně tento počet bajtů).
 
- `sizeGotten`
+ `sizeGotten`\
 
  [out] Vrátí počet bajtů ve skutečnosti načíst.
 
- `data`
+ `data`\
 
  [out v] Pole se vyplní požadovaná data.
 
@@ -59,6 +62,6 @@ int GetData(
 ## <a name="remarks"></a>Poznámky
  Doporučené použití této metody je pro načtení všech bajtů dat do místního pole, protože neexistuje žádný způsob, jak přeskočit bajtů v procesu načítání. V tomto případě parametr `dataSize` by měla být hodnota vrácené [getsize –](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) metody.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)

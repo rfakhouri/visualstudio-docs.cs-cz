@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e0864ec07250ed5886f864d4233aeb902ecf5ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22307115893407fa4703475e727b1e77355cad57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565619"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460556"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Objekty, které přidáváte do návrháře použít odlišné datové připojení než návrháře
 
@@ -36,5 +36,4 @@ Při přidávání položek do **Návrhář relací objektů** (**O/R Designer**
 
 ## <a name="see-also"></a>Viz také:
 
-- [Zprávy Návrháře relací objektů](../data-tools/o-r-designer-messages.md)
 - [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

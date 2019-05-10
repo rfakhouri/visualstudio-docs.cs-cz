@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27e7402de5de39a6135ad083f80f0699c1663e7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 750094cef6e207ef1a77196dab53b28ebdc7838b
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867817"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223653"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 Tato metoda získá počet vizualizérů typů, které jsou k dispozici z této služby.
@@ -36,8 +39,8 @@ int GetCustomViewerCount(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pcelt`
+## <a name="parameters"></a>Parametry
+ `pcelt`\
 
  [out] Vrátí číslo typu jsou k dispozici vizualizéry.
 
@@ -47,6 +50,6 @@ int GetCustomViewerCount(
 ## <a name="remarks"></a>Poznámky
 - [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) předá požadavek na tuto metodu v jeho podporu vizualizérů typů.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
 - [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)

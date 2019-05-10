@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95dc42b0e65ad0f849dd95e0ffead122e4cd1ebf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1225729ceb6d1a874f4ca5bedef287ababbdb962
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915696"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457439"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 Načte informace o modulech ve skupině symbol.
@@ -43,29 +46,29 @@ int GetCurrentModulesInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pCount`
+## <a name="parameters"></a>Parametry
+ `pCount`\
 
  [in] Počet modulů v `ppGuids` pole.
 
- `ppGuids`
+ `ppGuids`\
 
  [in] Pole, které obsahuje jedinečné identifikátory pro moduly.
 
- `pADIds`
+ `pADIds`\
 
  [in] Identifikátory pro domény aplikace.
 
- `pCurrentState`
+ `pCurrentState`\
 
  [in] Aktuální stav skupiny symbol.
 
- `ppCDModItfs`
+ `ppCDModItfs`\
 
  [out] Vrátí objekt, který obsahuje moduly ve skupině symbol.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

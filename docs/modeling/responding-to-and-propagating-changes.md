@@ -9,18 +9,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1d58ede1370976147b33cf1246f8b582adb3c5b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824004"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476604"
 ---
-# <a name="responding-to-and-propagating-changes"></a>Reagování na změny a šíření změn
+# <a name="respond-to-and-propagate-changes"></a>Reakce na změny a jejich šíření
+
 Po elementu se vytvoří, odstraní nebo aktualizuje, můžete napsat kód, který šíří změny dalších součástí modelu, nebo k externím prostředkům, jako jsou soubory, databáze nebo další komponenty.
 
-## <a name="in-this-section"></a>V tomto oddílu
- Jako vodítko vezměte v úvahu tyto postupy v tomto pořadí:
+## <a name="reference"></a>Odkaz
+
+Jako vodítko vezměte v úvahu tyto postupy v tomto pořadí:
 
 |Postup|Scénáře|Další informace|
 |-|-|-|
@@ -34,12 +36,13 @@ Po elementu se vytvoří, odstraní nebo aktualizuje, můžete napsat kód, kter
 |Výběr pravidla|Výběr pravidla konkrétně omezit, co může uživatel vybrat.|[Postupy: Přístup k aktuálnímu výběru a jeho omezení](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Označuje nové elementy modelu pomocí funkce obrazců a konektorů, jako jsou stínové, šipky, barvy a šířku čáry a stylu.|[Aktualizace obrazců a konektorů k vyjádření modelu](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**Porovnání pravidla a Store události**
- Změna žadateli, pravidla a události se spouštějí při změnách v modelu.
+## <a name="compare-rules-and-store-events"></a>Porovnat pravidla a uložení událostí
 
- Pravidla se obvykle používají v celé transakci, ve kterém došlo k změny a události se použijí po potvrzení změn v rámci transakce.
+Změna žadateli, pravidla a události se spouštějí při změnách v modelu.
 
- Při události v úložišti se budou synchronizovat model s objekty mimo Store a pravidla můžete zachovat konzistenci v rámci Store.
+Pravidla se obvykle používají v celé transakci, ve kterém došlo k změny a události se použijí po potvrzení změn v rámci transakce.
+
+Při události v úložišti se budou synchronizovat model s objekty mimo Store a pravidla můžete zachovat konzistenci v rámci Store.
 
 - **Vytváření vlastních pravidel** jako odvozené třídy abstraktní pravidlo vytvoříte vlastní pravidlo. Musíte také upozornit framework o vlastní pravidlo. Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
@@ -49,7 +52,7 @@ Po elementu se vytvoří, odstraní nebo aktualizuje, můžete napsat kód, kter
 
 - **Předávání argumentů událostí k pravidla a akce** obou událostí a pravidla jsou předány `EventArgs` parametr, který obsahuje informace o tom, model změnit.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: Zachycení kliknutí na obrazec nebo dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Zápis kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md)

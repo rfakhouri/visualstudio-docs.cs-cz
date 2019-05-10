@@ -1,18 +1,18 @@
 ---
 title: 'Postupy: Zápis testů jednotek pro knihovny DLL C++'
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 960eb242a8b03b863f1b4e38e0cb8cae53eed469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819693"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226351"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Postupy: Zápis testů jednotek pro knihovny DLL C++
 
@@ -38,13 +38,12 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí první tes
 
 1. Na **souboru** nabídce zvolte **nový** > **projektu**.
 
-     V dialogovém okně rozbalte **nainstalováno** > **šablony** > **Visual C++** > **Test**.
+     **Visual Studio 2017 a starší**: Rozbalte **nainstalované** > **šablony** > **Visual C++**   >  **testovací**.
+     **Visual Studio 2019**: Nastavte **jazyk** k C++ a zadejte "test" do vyhledávacího pole.
 
      Zvolte **nativní projekt testu jednotek** šablony nebo cokoli, co nainstalované rozhraní framework dáváte přednost. Pokud zvolíte jinou šablonu, jako je Google Test a Boost.Test, základní principy jsou stejné, i když některé podrobnosti se budou lišit.
 
      V tomto návodu je testovací projekt s názvem `NativeRooterTest`.
-
-     ![Vytvoření projektu testů jednotek C++](../test/media/utecpp01.png)
 
 2. V novém projektu, zkontrolujte **unittest1.cpp**
 
@@ -85,11 +84,45 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí první tes
 
 ## <a name="create_dll_project"></a> Vytvoření projektu knihovny DLL
 
-1. Vytvoření **Visual C++** projektu pomocí **projekt Win32** šablony.
+::: moniker range="vs-2019"
+
+Následující kroky ukazují postup vytvoření projektu knihovny DLL v aplikaci Visual Studio 2019.
+
+1. Vytvoření C++ projektu pomocí **desktopový Průvodce pro Windows**: Klikněte pravým tlačítkem na název řešení v **Průzkumníka řešení** a zvolte **přidat** > **nový projekt**. Nastavte **jazyk** k C++ a do vyhledávacího pole zadejte "windows". Zvolte **desktopový Průvodce pro Windows** ze seznamu výsledků. 
 
      V tomto názorném postupu má projekt název `RootFinder`.
 
-     ![Vytváří se projekt C++ Win32](../test/media/utecpp05.png)
+2. Stisknutím klávesy **vytvořit**. V dalším dialogovém okně v části **typ aplikace** zvolte **dynamická knihovna (dll)** a také zkontrolovat **exportovat symboly**.
+
+     **Exportovat symboly** možnost generuje pohodlný makro, které můžete použít k deklarování exportovaných metod.
+
+     ![Průvodce projektu C++ pro knihovny DLL a symboly exportu](../test/media/vs-2019/windows-desktop-project-dll.png)
+
+3. Deklarovat exportované funkce v objektu zabezpečení *.h* souboru:
+
+     ![Nový kód projektu a .h souboru DLL s makry rozhraní API](../test/media/utecpp07.png)
+
+     Deklarátor `__declspec(dllexport)` způsobí, že veřejné a chráněné členy třídy viditelný mimo knihovnu DLL. Další informace najdete v tématu [používání příkazů dllimport a dllexport ve třídách jazyka C++](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
+
+4. V objektu zabezpečení *.cpp* souboru, přidejte minimální tělo funkce:
+
+    ```cpp
+        // Find the square root of a number.
+        double CRootFinder::SquareRoot(double v)
+        {
+            return 0.0;
+        }
+    ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Následující kroky ukazují postup vytvoření projektu knihovny DLL v sadě Visual Studio 2017.
+
+1. Vytvoření C++ projektu pomocí **projekt Win32** šablony.
+
+     V tomto názorném postupu má projekt název `RootFinder`.
 
 2. Vyberte **DLL** a **symboly exportu** v Průvodci aplikací Win32.
 
@@ -112,6 +145,8 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí první tes
             return 0.0;
         }
     ```
+
+::: moniker-end
 
 ## <a name="make_functions_visible"></a> Několik testů projektu do projektu knihovny DLL
 

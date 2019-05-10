@@ -1,13 +1,15 @@
 - name: Analýza a modelování vaší architektury
-  href: analyze-and-model-your-architecture.md
   items:
+    - name: Analýza a modelování vaší architektury
+      href: analyze-and-model-your-architecture.md
     - name: Novinky pro programátory v sadě Visual Studio 2017
       href: what-s-new-for-design-in-visual-studio.md
     - name: Změna návrhu pomocí vizualizace a modelování
       href: scenario-change-your-design-using-visualization-and-modeling.md
     - name: Vizualizace kódu
-      href: visualize-code.md
       items:
+        - name: Vizualizace kódu
+          href: visualize-code.md
         - name: Použití map kódu k mapování závislostí
           href: map-dependencies-across-your-solutions.md
         - name: Sdílení map kódu
@@ -31,22 +33,25 @@
         - name: "Vytváření diagramů závislostí z\_kódu"
           href: create-layer-diagrams-from-your-code.md
     - name: Vytváření modelů pro aplikaci
-      href: create-models-for-your-app.md
       items:
+        - name: Vytváření modelů pro aplikaci
+          href: create-models-for-your-app.md
         - name: 'Diagramy závislostí: Odkaz'
           href: layer-diagrams-reference.md
         - name: 'Diagramy závislostí: Pokyny'
           href: layer-diagrams-guidelines.md
         - name: Sdílení modelů a export diagramů
-          href: share-models-and-exporting-diagrams.md
           items:
+            - name: Sdílení modelů a export diagramů
+              href: share-models-and-exporting-diagrams.md
             - name: "Čtení modelů a diagramů v\_jiných edicích sady Visual Studio"
               href: read-models-and-diagrams-in-other-visual-studio-editions.md
             - name: Exportovat diagramy jako obrázky
               href: export-diagrams-as-images.md
     - name: Použití modelů ve vývojových procesech
-      href: use-models-in-your-development-process.md
       items:
+        - name: Použití modelů ve vývojových procesech
+          href: use-models-in-your-development-process.md
         - name: Modelování uživatelských požadavků
           href: model-user-requirements.md
         - name: Modelování architektury aplikace
@@ -58,15 +63,17 @@
         - name: "Pokyny k\_nástrojům architektury Visual Studio"
           href: visual-studio-architecture-tooling-guidance.md
     - name: Ověřování systému během vývoje
-      href: validate-your-system-during-development.md
       items:
+        - name: Ověřování systému během vývoje
+          href: validate-your-system-during-development.md
         - name: "Vývoj testů z\_modelu"
           href: develop-tests-from-a-model.md
         - name: Ověřování kódu pomocí diagramů závislostí
           href: validate-code-with-layer-diagrams.md
     - name: Rozšíření diagramů závislostí
-      href: extend-layer-diagrams.md
       items:
+        - name: Rozšíření diagramů závislostí
+          href: extend-layer-diagrams.md
         - name: Přidávání příkazů a gest do diagramů závislostí
           href: add-commands-and-gestures-to-layer-diagrams.md
         - name: Přidání vlastního ověřování architektury do diagramů závislostí
@@ -74,8 +81,9 @@
         - name: Přidání vlastních vlastností do diagramů závislostí
           href: add-custom-properties-to-layer-diagrams.md
     - name: Sada Modeling SDK pro sadu Visual Studio – jazyky domény
-      href: modeling-sdk-for-visual-studio-domain-specific-languages.md
       items:
+        - name: Sada Modeling SDK pro sadu Visual Studio – jazyky domény
+          href: modeling-sdk-for-visual-studio-domain-specific-languages.md
         - name: Začínáme s jazyky specifickými pro doménu
           href: getting-started-with-domain-specific-languages.md
         - name: 'Vysvětlení modelů, tříd a vztahů'
@@ -83,11 +91,13 @@
         - name: Jak se definuje jazyk specifický pro doménu
           href: how-to-define-a-domain-specific-language.md
         - name: Přizpůsobení a rozšíření jazyka specifického pro doménu
-          href: customizing-and-extending-a-domain-specific-language.md
           items:
+            - name: Přizpůsobení a rozšíření jazyka specifického pro doménu
+              href: customizing-and-extending-a-domain-specific-language.md
             - name: Přizpůsobení prezentace v diagramu
-              href: customizing-presentation-on-the-diagram.md
               items:
+                - name: Přizpůsobení prezentace v diagramu
+                  href: customizing-presentation-on-the-diagram.md
                 - name: Definování obrazců a konektorů
                   href: defining-shapes-and-connectors.md
                 - name: 'Řízení barvy, stylu čáry a dalších vlastností obrazce'
@@ -113,8 +123,9 @@
             - name: Syntaxe cesty domény
               href: domain-path-syntax.md
             - name: Vlastnosti elementů modelu
-              href: properties-of-model-elements.md
               items:
+                - name: Vlastnosti elementů modelu
+                  href: properties-of-model-elements.md
                 - name: Vlastnosti definice DSL
                   href: properties-of-a-dsl-definition.md
                 - name: Vlastnosti tříd domény
@@ -144,8 +155,9 @@
             - name: Sdílení tříd mezi jazyky specifickými pro doménu (DSL) pomocí knihovny DSL
               href: sharing-classes-between-dsls-by-using-a-dsl-library.md
         - name: Zápis kódu pro úpravu jazyka specifického pro doménu
-          href: writing-code-to-customise-a-domain-specific-language.md
           items:
+            - name: Zápis kódu pro úpravu jazyka specifického pro doménu
+              href: writing-code-to-customise-a-domain-specific-language.md
             - name: Přepisování a rozšiřování vygenerovaných tříd
               href: overriding-and-extending-the-generated-classes.md
             - name: "Procházení a aktualizace modelu v\_programovém kódu"
@@ -173,8 +185,9 @@
         - name: Ověřování v jazyce specifickém pro doménu
           href: validation-in-a-domain-specific-language.md
         - name: Zápis uživatelských příkazů a akcí
-          href: writing-user-commands-and-actions.md
           items:
+            - name: Zápis uživatelských příkazů a akcí
+              href: writing-user-commands-and-actions.md
             - name: Úprava příkazu standardní nabídky v jazyce specifickém pro doménu
               href: how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md
             - name: Přidání příkazu do místní nabídky
@@ -186,8 +199,9 @@
             - name: Přístup k aktuálnímu výběru a jeho omezení
               href: how-to-access-and-constrain-the-current-selection.md
         - name: Odpovědi na změny a jejich šíření
-          href: responding-to-and-propagating-changes.md
           items:
+            - name: Odpovědi na změny a jejich šíření
+              href: responding-to-and-propagating-changes.md
             - name: Vypočtené a vlastní vlastnosti úložiště
               href: calculated-and-custom-storage-properties.md
             - name: Obslužná rutina změny hodnoty vlastnosti domény
@@ -199,8 +213,9 @@
             - name: Aktualizace obrazců a konektorů k vyjádření modelu
               href: updating-shapes-and-connectors-to-reflect-the-model.md
         - name: Vytváření kódu z jazyka specifického pro doménu
-          href: generating-code-from-a-domain-specific-language.md
           items:
+            - name: Vytváření kódu z jazyka specifického pro doménu
+              href: generating-code-from-a-domain-specific-language.md
             - name: Přístup k modelům z textových šablon
               href: accessing-models-from-text-templates.md
             - name: Použití rozšíření Visual Studio ModelBus v textové šabloně
@@ -214,8 +229,9 @@
         - name: Přizpůsobení úložiště souborů a serializace XML
           href: customizing-file-storage-and-xml-serialization.md
         - name: Nasazení řešení jazyka specifického pro doménu
-          href: deploying-domain-specific-language-solutions.md
           items:
+            - name: Nasazení řešení jazyka specifického pro doménu
+              href: deploying-domain-specific-language-solutions.md
             - name: Nasazení DSL v MSI a VSIX
               href: msi-and-vsix-deployment-of-a-dsl.md
             - name: Vícesouborové DSL v jediném řešení
@@ -227,8 +243,9 @@
         - name: Vytvoření jazyka specifického pro doménu založeného na WPF
           href: creating-a-wpf-based-domain-specific-language.md
         - name: Práce s řešeními jazyka specifického pro doménu
-          href: working-with-domain-specific-language-solutions.md
           items:
+            - name: Práce s řešeními jazyka specifického pro doménu
+              href: working-with-domain-specific-language-solutions.md
             - name: O jazycích specifických pro konkrétní domény
               href: about-domain-specific-languages.md
             - name: Přehled Jazykových nástrojů specifických pro doménu
@@ -254,11 +271,13 @@
         - name: "Referenční dokumentace rozhraní API k\_sadě Modeling SDK pro sadu Visual Studio"
           href: api-reference-for-modeling-sdk-for-visual-studio.md
     - name: "Vytvoření kódu a\_textové šablony T4"
-      href: code-generation-and-t4-text-templates.md
       items:
+        - name: "Vytvoření kódu a\_textové šablony T4"
+          href: code-generation-and-t4-text-templates.md
         - name: "Vytvoření kódu v\_době návrhu pomocí textových šablon T4"
-          href: design-time-code-generation-by-using-t4-text-templates.md
           items:
+            - name: "Vytvoření kódu v\_době návrhu pomocí textových šablon T4"
+              href: design-time-code-generation-by-using-t4-text-templates.md
             - name: 'Návod: Vytvoření kódu pomocí šablon textu'
               href: walkthrough-generating-code-by-using-text-templates.md
             - name: "Vytvoření kódu v\_procesu sestavení"
@@ -270,11 +289,13 @@
         - name: Generování textu za běhu pomocí textových šablon T4
           href: run-time-text-generation-with-t4-text-templates.md
         - name: Zápis textové šablony T4
-          href: writing-a-t4-text-template.md
           items:
+            - name: Zápis textové šablony T4
+              href: writing-a-t4-text-template.md
             - name: T4 – direktivy textových šablon
-              href: t4-text-template-directives.md
               items:
+                - name: T4 – direktivy textových šablon
+                  href: t4-text-template-directives.md
                 - name: T4 – direktiva Template
                   href: t4-template-directive.md
                 - name: T4 – direktiva Parameter
@@ -296,8 +317,9 @@
             - name: "Přístup k\_sadě Visual Studio nebo k\_jiným hostitelům z\_textové šablony"
               href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
             - name: "Použití řídicích sekvencí v\_textových šablonách"
-              href: using-escape-sequences-in-text-templates.md
               items:
+                - name: "Použití řídicích sekvencí v\_textových šablonách"
+                  href: using-escape-sequences-in-text-templates.md
                 - name: Generování šablon ze šablon pomocí řídicích sekvencí
                   href: how-to-generate-templates-from-templates-by-using-escape-sequences.md
         - name: Ladění textové šablony T4
@@ -307,13 +329,15 @@
         - name: Postupy pro textové šablony
           href: how-to-dot-dot-dot-with-text-templates.md
         - name: Přizpůsobení transformace textu T4
-          href: customizing-t4-text-transformation.md
           items:
+            - name: Přizpůsobení transformace textu T4
+              href: customizing-t4-text-transformation.md
             - name: Proces transformace textových šablon
               href: the-text-template-transformation-process.md
             - name: Vytváření vlastních procesorů pro direktivy textových šablon T4
-              href: creating-custom-t4-text-template-directive-processors.md
               items:
+                - name: Vytváření vlastních procesorů pro direktivy textových šablon T4
+                  href: creating-custom-t4-text-template-directive-processors.md
                 - name: Nasazení vlastního procesoru direktiv
                   href: deploying-a-custom-directive-processor.md
                 - name: 'Návod: Vytvoření vlastního procesoru direktiv'
@@ -321,8 +345,9 @@
             - name: "Volání transformací textu v\_rozšíření VS"
               href: invoking-text-transformation-in-a-vs-extension.md
             - name: Zpracování textových šablon pomocí vlastního hostitele
-              href: processing-text-templates-by-using-a-custom-host.md
               items:
+                - name: Zpracování textových šablon pomocí vlastního hostitele
+                  href: processing-text-templates-by-using-a-custom-host.md
                 - name: 'Návod: Vytvoření vlastního hostitele šablon textu'
                   href: walkthrough-creating-a-custom-text-template-host.md
         - name: "Referenční dokumentace k\_rozhraní API pro textové šablony T4"

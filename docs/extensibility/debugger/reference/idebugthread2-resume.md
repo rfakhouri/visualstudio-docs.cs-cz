@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4997b8c711a67a3bb45529627e81e70b786acf00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5fc7b8f5cf5cd5360a60e8c6fbf3b6bf43415575
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915506"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225999"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Pokračuje v provádění vlákna.
@@ -36,8 +39,8 @@ int Resume ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pdwSuspendCount`
+## <a name="parameters"></a>Parametry
+ `pdwSuspendCount`\
 
  [out] Vrátí počet pozastavení po operaci obnovení.
 
@@ -49,6 +52,6 @@ int Resume ( 
 
  Pro každé volání této metody musí být předchozí volání [pozastavit](../../../extensibility/debugger/reference/idebugthread2-suspend.md) metody. Počet potlačení Určuje, kolikrát `IDebugThread2::Suspend` dosud byla volána metoda.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

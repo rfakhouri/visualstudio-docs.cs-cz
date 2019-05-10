@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d64a568f4df1e4e1705e90ba186287c0b96a85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916347"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457615"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Vytvoří výčet vyhodnocení výrazu dostupné zadané identifikátory jazyka a dodavatele.
@@ -40,25 +43,25 @@ public int EnumEEs(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `celtBuffer`
+## <a name="parameters"></a>Parametry
+ `celtBuffer`\
 
  [in] Počet prvků v objektu `pceltEEs` vyrovnávací paměti.
 
- `rgguidLang`
+ `rgguidLang`\
 
  [out v] Jedinečný identifikátor pro programovací jazyk.
 
- `rgguidVendor`
+ `rgguidVendor`\
 
  [out v] Jedinečný identifikátor pro dodavatele.
 
- `pceltEEs`
+ `pceltEEs`\
 
  [out v] Pole vyhodnocovače výrazů.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

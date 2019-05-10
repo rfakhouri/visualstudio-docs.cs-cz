@@ -45,7 +45,7 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[vsindigo](../includes/
   
      V **Průzkumníka řešení**, dvakrát klikněte na panel IService1.vb nebo IService1.cs a vyhledejte následující řádek:  
   
-     [! code-csharp [WCFWalkthrough č. 4] (.. /Snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/IService1 (2).cs č. 4)] [! code-vb [WCFWalkthrough č. 4] (.. /Snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/VB/IService1 (2).vb č. 4)]  
+     [! code-csharp [WCFWalkthrough č. 4](../Snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/IService1 (2).cs č. 4)]   [!code-vb [WCFWalkthrough č. 4](../Snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/VB/IService1 (2).vb č. 4)]  
   
      Změnit typ `value` parametr `String`:  
   
@@ -58,7 +58,7 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[vsindigo](../includes/
   
      V **Průzkumníka řešení**, dvakrát klikněte na panel Service1.vb nebo Service1.cs a vyhledejte následující řádek:  
   
-     [! code-csharp [WCFWalkthrough č. 5] (.. /Snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1 (2).cs č. 5)] [! code-vb [WCFWalkthrough č. 5] (.. /Snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/VB/service1 (2).vb č. 5)]  
+     [! code-csharp [WCFWalkthrough č. 5](../Snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1 (2).cs č. 5)]   [! code-vb [WCFWalkthrough č. 5](../Snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/VB/service1 (2).vb č. 5)]  
   
      Změnit typ pro parametr hodnotu `String`:  
   

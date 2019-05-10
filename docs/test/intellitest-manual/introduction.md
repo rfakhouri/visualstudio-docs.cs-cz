@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999759"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461496"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Přehled Microsoft IntelliTest
 
@@ -115,8 +115,7 @@ V tomto smyslu výsledky volání neinstrumentované nebo nespravovaného kódu 
 
 Kromě toho program se považuje za jiných determistic Pokud změny hodnot z externích zdrojů, když znovu spustit program. V takových případech IntelliTest ztratí kontrolu nad provádění programu a hledání se stane neefektivní.
 
-Někdy není zřejmé Pokud k tomu dojde.
-Vezměte v úvahu následující příklady:
+Někdy není zřejmé Pokud k tomu dojde. Vezměte v úvahu následující příklady:
 
 * Výsledkem **GetHashCode()** metoda je poskytována nespravovaného kódu a není předvídatelný.
 * **System.Random** třída používá aktuální systémový čas k zajištění skutečně náhodné hodnoty.
