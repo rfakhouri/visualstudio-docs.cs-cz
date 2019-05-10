@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3a11e368b6260d00f3f6ed0b19d94aa26bd31a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58531e64c88c89a92b5eee7f2eac7067cf42775f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865463"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458012"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 Popisuje konkrétního modulu (knihovny DLL, EXE nebo sestavení).
@@ -59,29 +62,41 @@ public struct MODULE_INFO { 
 ```
 
 ## <a name="members"></a>Členové
- dwValidFields A kombinace příznaků z [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) výčet, který určuje, která pole jsou vyplněna.
+ `dwValidFields`\
+ Kombinace příznaků z [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) výčet, který určuje, která pole jsou vyplněna.
 
- m_bstrName název modulu.
+ `m_bstrName`\
+ Název modulu.
 
- Adresa URL modulu m_bstrUrl.
+ `m_bstrUrl`\
+ Adresa URL modulu.
 
- m_bstrVersion verze modulu.
+ `m_bstrVersion`\
+ Verze modulu.
 
- m_bstrDebugMessage volitelnou zprávu o modulu, třeba "symboly nelze načíst."
+ `m_bstrDebugMessage`\
+ Volitelnou zprávu o modulu, třeba "symboly nelze načíst."
 
- m_addrLoadAddress modulu načtení adresy.
+ `m_addrLoadAddress`\
+ Adresa načtení modulu.
 
- m_addrPreferredLoadAddress adresu upřednostňované načtení modulu.
+ `m_addrPreferredLoadAddress`\
+ Adresa upřednostňovaného zatížení modulu.
 
- m_dwSize velikost modulu.
+ `m_dwSize`\
+ Velikost modulu.
 
- m_dwLoadOrder pořadí načtení modulu.
+ `m_dwLoadOrder`\
+ Pořadí načítání modulu.
 
- m_TimeStamp čas poslední změny souboru symbolů.
+ `m_TimeStamp`\
+ Čas poslední změny souboru symbolů.
 
- m_bstrUrlSymbolLocation umístění souborů symbolů (například ".\\") zadaný v modulu. Najít symboly pro modul se používá jako výchozí umístění.
+ `m_bstrUrlSymbolLocation`\
+ Umístění souboru symbolů (například ".\\") zadaný v modulu. Najít symboly pro modul se používá jako výchozí umístění.
 
- m_dwModuleFlags A kombinace příznaků z [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) výčet, který popisuje modulu.
+ `m_dwModuleFlags`\
+ Kombinace příznaků z [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) výčet, který popisuje modulu.
 
 ## <a name="remarks"></a>Poznámky
  Tato struktura je předán [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) metody, kde je vyplněna.
@@ -95,7 +110,7 @@ public struct MODULE_INFO { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)

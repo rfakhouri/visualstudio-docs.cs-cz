@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 835509048e888e13b91c53d9e35bd03d7aebdfed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28af715c307ebede5fa264c46cd42b85e8868674
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913498"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457944"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 Zadaný druh informací k načtení procesu.
@@ -53,24 +56,33 @@ public enum enum_PROCESS_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Členové
- PIF_FILE_NAME inicializace/použít `bstrFileName` pole [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struktury.
+## <a name="fields"></a>Pole
+ `PIF_FILE_NAME`\
+ Inicializace/použít `bstrFileName` pole [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struktury.
 
- PIF_BASE_NAME inicializace/použít `bstrBaseName` pole `PROCESS_INFO` struktury.
+ `PIF_BASE_NAME`\
+ Inicializace/použít `bstrBaseName` pole `PROCESS_INFO` struktury.
 
- PIF_TITLE inicializace/použít `bstrTitle` pole `PROCESS_INFO` struktury.
+ `PIF_TITLE`\
+ Inicializace/použít `bstrTitle` pole `PROCESS_INFO` struktury.
 
- PIF_PROCESS_ID inicializace/použít `ProcessId` pole `PROCESS_INFO` struktury.
+ `PIF_PROCESS_ID`\
+ Inicializace/použít `ProcessId` pole `PROCESS_INFO` struktury.
 
- PIF_SESSION_ID inicializace/použít `dwSessionId` pole `PROCESS_INFO` struktury.
+ `PIF_SESSION_ID`\
+ Inicializace/použít `dwSessionId` pole `PROCESS_INFO` struktury.
 
- PIF_ATTACHED_SESSION_NAME inicializace/použít `bstrAttachedSessionName` pole `PROCESS_INFO` struktury.
+ `PIF_ATTACHED_SESSION_NAME`\
+ Inicializace/použít `bstrAttachedSessionName` pole `PROCESS_INFO` struktury.
 
- PIF_CREATION_TIME inicializace/použít `CreationTime` pole `PROCESS_INFO` struktury.
+ `PIF_CREATION_TIME`\
+ Inicializace/použít `CreationTime` pole `PROCESS_INFO` struktury.
 
- PIF_FLAGS inicializace/použít `Flags` pole `PROCESS_INFO` struktury.
+ `PIF_FLAGS`\
+ Inicializace/použít `Flags` pole `PROCESS_INFO` struktury.
 
- PIF_ALL vyplní všechna pole.
+ `PIF_ALL`\
+ Vyplní všechna pole.
 
 ## <a name="remarks"></a>Poznámky
  Předány [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) indikace polí s [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struktury mají být inicializovány.
@@ -86,6 +98,6 @@ public enum enum_PROCESS_INFO_FIELDS { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d63abefc67d54734380e6a1dc7f3364d5400c03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b577dc32a233d1f18518aa27001f340c634314c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565417"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458170"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Vybranou třídu nejde odstranit, protože se používá jako návratový typ pro minimálně jednu metodu DataContext.
 
@@ -29,5 +29,4 @@ Obnova návratové typy <xref:System.Data.Linq.DataContext> metody do jejich pů
 
 ## <a name="see-also"></a>Viz také:
 
-- [Zprávy Návrháře relací objektů](../data-tools/o-r-designer-messages.md)
 - [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

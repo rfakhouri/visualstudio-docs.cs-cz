@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99248291ce06aa4f07f627429bbb5cc2993a61c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ad712371049151b18daf3b70abd5063e6421efba
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915995"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458563"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 Získá přidružený blok zásobníku vlákna.
@@ -36,14 +39,14 @@ int GetThread ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppThread`
+## <a name="parameters"></a>Parametry
+ `ppThread`\
 
  [out] Vrátí [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt, který reprezentuje vlákna.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

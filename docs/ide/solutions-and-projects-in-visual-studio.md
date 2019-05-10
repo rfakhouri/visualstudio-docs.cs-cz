@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0116a8c4fa6326a1176c132aef59a789daabffca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979641"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461524"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Řešení a projekty v sadě Visual Studio
 
@@ -57,7 +57,7 @@ Je součástí projektu *řešení*. Bez ohledu na jeho název řešení není "
 
 Visual Studio používá dva typy souborů (*.sln* a *.suo*) k ukládání nastavení řešení:
 
-|Linka|Název|Popis|
+|Linka|Name|Popis|
 |---------------|----------|-----------------|
 |.sln|Řešení sady Visual Studio|Uspořádá projekty, položky projektu a řešení položky v řešení.|
 |.suo|Uživatelské možnosti řešení|Ukládají se nastavení na úrovni uživatele a vlastní nastavení, jako například zarážky.|
@@ -67,6 +67,8 @@ Visual Studio používá dva typy souborů (*.sln* a *.suo*) k ukládání nasta
 Nejjednodušší způsob, jak vytvořit nový projekt je začít z šablony projektu pro konkrétní typ aplikace nebo webu. Šablona projektu se skládá ze základní sady souborů předem generovaného kódu, konfigurační soubory, prostředky a nastavení. Tyto šablony jsou k dispozici v dialogovém okně místo, kde můžete vytvořit nový projekt (**souboru** > **nový** > **projektu**). Další informace najdete v tématu [vytvářet řešení a projekty](../ide/creating-solutions-and-projects.md).
 
 Můžete také vytvořit vlastní šablony projektů a položek. Další informace najdete v tématu [vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md).
+
+Když vytvoříte nový projekt, je uložen ve výchozím nastavení v *%USERPROFILE%\source\repos*. Můžete přizpůsobit v tomto umístění **umístění projektů** v nabídce **nástroje** > **možnosti** > **projekty a Řešení** > **umístění**. Další informace najdete v tématu [stránku projekty a řešení, dialogové okno Možnosti](../ide/reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="manage-projects-in-solution-explorer"></a>Spravovat projekty v Průzkumníkovi řešení
 

@@ -3,8 +3,9 @@
   expanded: true
   items:
     - name: Analýza kvality spravovaného kódu
-      href: analyzing-managed-code-quality-by-using-code-analysis.md
       items:
+        - name: Analýza kvality spravovaného kódu
+          href: analyzing-managed-code-quality-by-using-code-analysis.md
         - name: Přehled Analýzy kódu pro spravovaný kód
           href: code-analysis-for-managed-code-overview.md
         - name: 'Postupy: Povolení a zakázání automatické analýzy kódu'
@@ -18,37 +19,41 @@
         - name: 'Návod: Analýza defektů ve spravovaném kódu'
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Potlačení upozornění použitím atributu SuppressMessage
-          href: suppress-warnings-by-using-the-suppressmessage-attribute.md
           items:
+            - name: Potlačení upozornění použitím atributu SuppressMessage
+              href: suppress-warnings-by-using-the-suppressmessage-attribute.md
             - name: Přehled potlačování ve zdroji
               href: in-source-suppression-overview.md
             - name: 'Postupy: Potlačení upozornění použitím položky nabídky'
               href: how-to-suppress-warnings-by-using-the-menu-item.md
-        - name: 'Postupy: Potlačení upozornění pro vygenerovaný kód'
-          href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: 'Postupy: Přizpůsobení slovníku analýzy kódu'
-          href: how-to-customize-the-code-analysis-dictionary.md
-        - name: Anonymní metody a analýza kódu
-          href: anonymous-methods-and-code-analysis.md
-        - name: 'Postupy: Zobrazování defektů spravovaného kódu'
-          href: how-to-view-managed-code-defects.md
-        - name: 'Postupy: Vytvoření pracovní položky pro defekt spravovaného kódu'
-          href: how-to-create-a-work-item-for-a-managed-code-defect.md
-        - name: Upozornění Analýzy kódu pro spravovaný kód
-          href: code-analysis-for-managed-code-warnings.md
-          items:
-            - name: Upozornění podle CheckId
-              href: code-analysis-warnings-for-managed-code-by-checkid.md
-            - name: Upozornění kryptografie
-              href: cryptography-warnings.md
+            - name: 'Postupy: Potlačení upozornění pro vygenerovaný kód'
+              href: how-to-suppress-code-analysis-warnings-for-generated-code.md
+            - name: 'Postupy: Přizpůsobení slovníku analýzy kódu'
+              href: how-to-customize-the-code-analysis-dictionary.md
+            - name: Anonymní metody a analýza kódu
+              href: anonymous-methods-and-code-analysis.md
+            - name: 'Postupy: Zobrazování defektů spravovaného kódu'
+              href: how-to-view-managed-code-defects.md
+            - name: 'Postupy: Vytvoření pracovní položky pro defekt spravovaného kódu'
+              href: how-to-create-a-work-item-for-a-managed-code-defect.md
+            - name: Upozornění Analýzy kódu pro spravovaný kód
               items:
-                - name: 'CA5350: Nepoužívejte slabé kryptografické algoritmy'
-                  href: ca5350-do-not-use-weak-cryptographic-algorithms.md
-                - name: 'CA5351: Nepoužívejte poškozené kryptografické algoritmy'
-                  href: ca5351-do-not-use-broken-cryptographic-algorithms.md
+                - name: Upozornění Analýzy kódu pro spravovaný kód
+                  href: code-analysis-for-managed-code-warnings.md
+                - name: Upozornění podle CheckId
+                  href: code-analysis-warnings-for-managed-code-by-checkid.md
+                - name: Upozornění kryptografie
+                  items:
+                    - name: Upozornění kryptografie
+                      href: cryptography-warnings.md
+                    - name: 'CA5350: Nepoužívejte slabé kryptografické algoritmy'
+                      href: ca5350-do-not-use-weak-cryptographic-algorithms.md
+                    - name: 'CA5351: Nepoužívejte poškozené kryptografické algoritmy'
+                      href: ca5351-do-not-use-broken-cryptographic-algorithms.md
             - name: Upozornění návrhu
-              href: design-warnings.md
               items:
+                - name: Upozornění návrhu
+                  href: design-warnings.md
                 - name: 'CA1000: Nedeklarujte statické členy v obecných typech'
                   href: ca1000-do-not-declare-static-members-on-generic-types.md
                 - name: 'CA1001: Typy, které vlastní uvolnitelné pole, by měly být uvolnitelné'
@@ -174,8 +179,9 @@
                 - name: 'CA2210: Sestavení by měla mít platné silné názvy'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
             - name: Upozornění globalizace
-              href: globalization-warnings.md
               items:
+                - name: Upozornění globalizace
+                  href: globalization-warnings.md
                 - name: 'CA1300: Určete MessageBoxOptions'
                   href: ca1300-specify-messageboxoptions.md
                 - name: 'CA1301: Vyhněte se duplicitním akcelerátorům'
@@ -199,8 +205,9 @@
                 - name: 'CA2101: Určete zařazování pro argumenty řetězce volání nespravovaného kódu'
                   href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
             - name: Upozornění interoperability
-              href: interoperability-warnings.md
               items:
+                - name: Upozornění interoperability
+                  href: interoperability-warnings.md
                 - name: 'CA1400: Vstupní body volání nespravovaného kódu by měly existovat'
                   href: ca1400-p-invoke-entry-points-should-exist.md
                 - name: 'CA1401: Volání nespravovaných kódů by neměla být viditelná'
@@ -233,368 +240,380 @@
                   href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
                 - name: 'CA1415: Deklarujte správně volání nespravovaných kódů'
                   href: ca1415-declare-p-invokes-correctly.md
-            - name: Upozornění udržovatelnosti
-              href: maintainability-warnings.md
-              items:
-                - name: 'CA1500: Názvy proměnných by neměly odpovídat názvům polí'
-                  href: ca1500-variable-names-should-not-match-field-names.md
-                - name: 'CA1501: Vyhněte se nadměrné dědičnosti'
-                  href: ca1501-avoid-excessive-inheritance.md
-                - name: 'CA1502: Vyhněte se nadměrné složitosti'
-                  href: ca1502-avoid-excessive-complexity.md
-                - name: 'CA1504: Zkontrolujte zavádějící názvy polí'
-                  href: ca1504-review-misleading-field-names.md
-                - name: 'CA1505: Vyhněte se neudržovatelnému kódu'
-                  href: ca1505-avoid-unmaintainable-code.md
-                - name: 'CA1506: Vyhněte se nadměrnému párování tříd'
-                  href: ca1506-avoid-excessive-class-coupling.md
-            - name: Upozornění mobility
-              href: mobility-warnings.md
-              items:
-                - name: 'CA1600: Nepoužívejte prioritu nečinného procesu'
-                  href: ca1600-do-not-use-idle-process-priority.md
-                - name: 'CA1601: Nepoužívejte časovače, které zabraňují změně stavu napájení'
-                  href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
-            - name: Upozornění na pojmenování
-              href: naming-warnings.md
-              items:
-                - name: 'CA1700: Nepojmenovávejte výčty hodnot ''Reserved'''
-                  href: ca1700-do-not-name-enum-values-reserved.md
-                - name: 'CA1701: Malá a velká písmena složených slov řetězců prostředků by měla být použita správně'
-                  href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
-                - name: 'CA1702: Malá a velká písmena složených slov by měla být použita správně'
-                  href: ca1702-compound-words-should-be-cased-correctly.md
-                - name: 'CA1703: Řetězce prostředků by měly být zadány správně'
-                  href: ca1703-resource-strings-should-be-spelled-correctly.md
-                - name: 'CA1704: Identifikátory by měly být zadány správně'
-                  href: ca1704-identifiers-should-be-spelled-correctly.md
-                - name: 'CA1707: Identifikátory by neměly obsahovat podtržítka'
-                  href: ca1707-identifiers-should-not-contain-underscores.md
-                - name: 'CA1708: Identifikátory by se měly lišit více než použitím malých a velkých písmen'
-                  href: ca1708-identifiers-should-differ-by-more-than-case.md
-                - name: 'CA1709: Malá a velká písmena identifikátorů by měla být použita správně'
-                  href: ca1709-identifiers-should-be-cased-correctly.md
-                - name: 'CA1710: Identifikátory by měly mít správnou příponu'
-                  href: ca1710-identifiers-should-have-correct-suffix.md
-                - name: 'CA1711: Identifikátory by neměly mít nesprávnou příponu'
-                  href: ca1711-identifiers-should-not-have-incorrect-suffix.md
-                - name: 'CA1712: Nezačínejte hodnoty výčtu názvem typu'
-                  href: ca1712-do-not-prefix-enum-values-with-type-name.md
-                - name: 'CA1713: Události by neměly mít předponu před nebo po'
-                  href: ca1713-events-should-not-have-before-or-after-prefix.md
-                - name: 'CA1714: Výčty příznaků by neměly mít názvy v množném čísle'
-                  href: ca1714-flags-enums-should-have-plural-names.md
-                - name: 'CA1715: Identifikátory by měly mít správnou předponu'
-                  href: ca1715-identifiers-should-have-correct-prefix.md
-                - name: 'CA1716: Identifikátory by se neměly shodovat s klíčovými slovy'
-                  href: ca1716-identifiers-should-not-match-keywords.md
-                - name: 'CA1717: Pouze výčty FlagsAttribute by měly mít názvy v množném čísle'
-                  href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
-                - name: 'CA1719: Názvy parametrů by se neměly shodovat s názvy členů'
-                  href: ca1719-parameter-names-should-not-match-member-names.md
-                - name: 'CA1720: Identifikátory by neměly obsahovat názvy typů'
-                  href: ca1720-identifiers-should-not-contain-type-names.md
-                - name: 'CA1721: Názvy vlastností by se neměly shodovat s metodami Get'
-                  href: ca1721-property-names-should-not-match-get-methods.md
-                - name: 'CA1722: Identifikátory by neměly mít nesprávnou předponu'
-                  href: ca1722-identifiers-should-not-have-incorrect-prefix.md
-                - name: 'CA1725: Názvy parametrů by měly odpovídat základní deklaraci'
-                  href: ca1725-parameter-names-should-match-base-declaration.md
-                - name: 'CA1724: Názvy typů by se neměly shodovat s obory názvů'
-                  href: ca1724-type-names-should-not-match-namespaces.md
-                - name: 'CA1726: Použijte upřednostňované výrazy'
-                  href: ca1726-use-preferred-terms.md
-            - name: Upozornění výkonu
-              href: performance-warnings.md
-              items:
-                - name: 'CA1800: Nepřetypujte zbytečně'
-                  href: ca1800-do-not-cast-unnecessarily.md
-                - name: 'CA1802: Použijte literály, kde je to vhodné'
-                  href: ca1802-use-literals-where-appropriate.md
-                - name: 'CA1804: Odeberte nepoužívané lokální hodnoty'
-                  href: ca1804-remove-unused-locals.md
-                - name: 'CA1809: Vyhněte se nadměrným lokálním hodnotám'
-                  href: ca1809-avoid-excessive-locals.md
-                - name: 'CA1810: Inicializujte odkazový typ statického pole vloženě'
-                  href: ca1810-initialize-reference-type-static-fields-inline.md
-                - name: 'CA1811: Vyhněte se nevolanému privátnímu kódu'
-                  href: ca1811-avoid-uncalled-private-code.md
-                - name: 'CA1812: Vyhněte se nevytvořeným instancím interních tříd'
-                  href: ca1812-avoid-uninstantiated-internal-classes.md
-                - name: 'CA1813: Vyhněte se nezapečetěným atributům'
-                  href: ca1813-avoid-unsealed-attributes.md
-                - name: 'CA1814: Upřednostněte vícenásobná pole před multidimenzionálními'
-                  href: ca1814-prefer-jagged-arrays-over-multidimensional.md
-                - name: 'CA1815: Přepište rovnosti a operátory rovnosti u typů hodnot'
-                  href: ca1815-override-equals-and-operator-equals-on-value-types.md
-                - name: 'CA1819: Vlastnosti by neměly vracet pole'
-                  href: ca1819-properties-should-not-return-arrays.md
-                - name: 'CA1820: Testujte prázdné řetězce pomocí délky řetězce'
-                  href: ca1820-test-for-empty-strings-using-string-length.md
-                - name: 'CA1821: Odeberte prázdné finalizační metody'
-                  href: ca1821-remove-empty-finalizers.md
-                - name: 'CA1822: Označte členy jako statické'
-                  href: ca1822-mark-members-as-static.md
-                - name: 'CA1823: Vyhněte se nepoužitým privátním polím'
-                  href: ca1823-avoid-unused-private-fields.md
-                - name: 'CA1824: Označte sestavení pomocí NeutralResourcesLanguageAttribute'
-                  href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-            - name: Upozornění přenositelnosti
-              href: portability-warnings.md
-              items:
-                - name: 'CA1900: Pole typů hodnot by měla být přenosná'
-                  href: ca1900-value-type-fields-should-be-portable.md
-                - name: 'CA1901: Deklarace volání nespravovaného kódu by měla být přenosná'
-                  href: ca1901-p-invoke-declarations-should-be-portable.md
-                - name: 'CA1903: Používejte jen rozhraní API z cílové architektury'
-                  href: ca1903-use-only-api-from-targeted-framework.md
-            - name: Upozornění spolehlivosti
-              href: reliability-warnings.md
-              items:
-                - name: 'CA2000: Uvolňujte objekty před ztrátou oboru'
-                  href: ca2000-dispose-objects-before-losing-scope.md
-                - name: 'CA2001: Vyhněte se volání problematických metod'
-                  href: ca2001-avoid-calling-problematic-methods.md
-                - name: 'CA2002: Nepoužívejte zámky u objektů se slabou identitou'
-                  href: ca2002-do-not-lock-on-objects-with-weak-identity.md
-                - name: 'CA2003: Nezacházejte s vlákénky jako s vlákny'
-                  href: ca2003-do-not-treat-fibers-as-threads.md
-                - name: 'CA2004: Odeberte volání GC.KeepAlive'
-                  href: ca2004-remove-calls-to-gc-keepalive.md
-                - name: 'CA2006: Použijte SafeHandle k zapouzdření nativních prostředků'
-                  href: ca2006-use-safehandle-to-encapsulate-native-resources.md
-            - name: Upozornění zabezpečení
-              href: security-warnings.md
-              items:
-                - name: 'CA2100: Zkontrolujte chyby zabezpečení u dotazů SQL'
-                  href: ca2100-review-sql-queries-for-security-vulnerabilities.md
-                - name: 'CA2102: Zachycujte výjimky bez CLSCompliant v obecných obslužných rutinách'
-                  href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
-                - name: 'CA2103: Zkontrolujte imperativní zabezpečení'
-                  href: ca2103-review-imperative-security.md
-                - name: 'CA2104: Nedeklaruje proměnlivé odkazové typy pouze pro čtení'
-                  href: ca2104-do-not-declare-read-only-mutable-reference-types.md
-                - name: 'CA2105: Pole s poli by neměla být pouze pro čtení'
-                  href: ca2105-array-fields-should-not-be-read-only.md
-                - name: 'CA2106: Zabezpečte kontrolní příkazy'
-                  href: ca2106-secure-asserts.md
-                - name: 'CA2107: Zkontrolujte použití čistého odepření a povolení'
-                  href: ca2107-review-deny-and-permit-only-usage.md
-                - name: 'CA2108: Zkontrolujte deklarativní zabezpečení u typů hodnot'
-                  href: ca2108-review-declarative-security-on-value-types.md
-                - name: 'CA2109: Zkontrolujte viditelné obslužné rutiny událostí'
-                  href: ca2109-review-visible-event-handlers.md
-                - name: 'CA2111: Ukazatele by neměly být viditelné'
-                  href: ca2111-pointers-should-not-be-visible.md
-                - name: 'CA2112: Zabezpečené typy by neměly vystavovat pole'
-                  href: ca2112-secured-types-should-not-expose-fields.md
-                - name: 'CA2114: Zabezpečení metod by mělo být nadmnožinou typu'
-                  href: ca2114-method-security-should-be-a-superset-of-type.md
-                - name: 'CA2115: Volejte GC.KeepAlive při použití nativních prostředků'
-                  href: ca2115-call-gc-keepalive-when-using-native-resources.md
-                - name: 'CA2116: Metody APTCA by měly volat pouze metody APTCA'
-                  href: ca2116-aptca-methods-should-only-call-aptca-methods.md
-                - name: 'CA2117: Typy APTCA by měl rozšiřovat pouze základní typy APTCA'
-                  href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
-                - name: 'CA2118: Zkontrolujte použití SuppressUnmanagedCodeSecurityAttribute'
-                  href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
-                - name: 'CA2119: Zapečeťte metody, které vyhovují privátním rozhraním'
-                  href: ca2119-seal-methods-that-satisfy-private-interfaces.md
-                - name: 'CA2120: Zabezpečte serializační konstruktory'
-                  href: ca2120-secure-serialization-constructors.md
-                - name: 'CA2121: Statické konstruktory by měly být privátní'
-                  href: ca2121-static-constructors-should-be-private.md
-                - name: 'CA2122: Nezveřejňujte nepřímo metody s požadavky propojení'
-                  href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
-                - name: 'CA2123: Požadavky na propojení přepisů by měly být identické s bází'
-                  href: ca2123-override-link-demands-should-be-identical-to-base.md
-                - name: 'CA2124: Zabalte ohroženou klauzuli finally do vnějšího bloku try'
-                  href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
-                - name: 'CA2126: Požadavky na propojení typů vyžadují požadavky na dědičnost'
-                  href: ca2126-type-link-demands-require-inheritance-demands.md
-                - name: 'CA2130: Konstanty kritické pro zabezpečení musí být transparentní'
-                  href: ca2130-security-critical-constants-should-be-transparent.md
-                - name: 'CA2131: Typy kritické pro zabezpečení se nesmí účastnit ekvivalence typů'
-                  href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
-                - name: 'CA2132: Výchozí konstruktory musí být alespoň tak kritické, jako výchozí konstruktory základního typu'
-                  href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
-                - name: 'CA2133: Delegáti musí mít vazbu s metodami s konzistentní transparentností'
-                  href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
-                - name: 'CA2134: Metody musí při přepisování základních metod zachovávat konzistentní transparentnost'
-                  href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
-                - name: 'CA2135: Sestavení úrovně 2 by neměla obsahovat LinkDemands'
-                  href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
-                - name: 'CA2136: Členy by neměly mít konfliktní poznámky transparentnosti'
-                  href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
-                - name: 'CA2137: Transparentní metody musí obsahovat pouze ověřitelné IL'
-                  href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
-                - name: 'CA2138: Transparentní metody nesmí volat metody s atributem SuppressUnmanagedCodeSecurity'
-                  href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
-                - name: 'CA2139: Transparentní metody nemusí používat atribut HandleProcessCorruptingExceptions'
-                  href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
-                - name: 'CA2140: Transparentní kód nesmí odkazovat na položky kritické pro zabezpečení'
-                  href: ca2140-transparent-code-must-not-reference-security-critical-items.md
-                - name: 'CA2141:Transparentní metody nesmějí vyhovovat LinkDemands'
-                  href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
-                - name: 'CA2142: Transparentní kód by neměl být chráněn pomocí LinkDemands'
-                  href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
-                - name: 'CA2143: Transparentní metody by neměly používat požadavky zabezpečení'
-                  href: ca2143-transparent-methods-should-not-use-security-demands.md
-                - name: 'CA2144: Transparentní kód by neměl načítat sestavení z bajtových polí'
-                  href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
-                - name: 'CA2145: Transparentní metody by neměly být doplněny o SuppressUnmanagedCodeSecurityAttribute'
-                  href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
-                - name: 'CA2146: Typy musí být alespoň tak kritické, jako jejich základní typy a rozhraní'
-                  href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
-                - name: 'CA2147: Transparentní metody nemusí používat kontrolní příkazy zabezpečení'
-                  href: ca2147-transparent-methods-may-not-use-security-asserts.md
-                - name: 'CA2149: Transparentní metody nesmí provádět volání nativního kódu'
-                  href: ca2149-transparent-methods-must-not-call-into-native-code.md
-                - name: 'CA2151: Pole s kritickými typy by měla být kritická pro zabezpečení'
-                  href: ca2151-fields-with-critical-types-should-be-security-critical.md
-                - name: 'CA5122: Deklarace volání nespravovaného kódu nesmí být kritické pro zabezpečení'
-                  href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
-                - name: 'CA2153: Vyhněte se zpracování výjimek v poškozeném stavu'
-                  href: ca2153-avoid-handling-corrupted-state-exceptions.md
-                - name: 'CA3075: Zpracování nezabezpečené specifikace DTD'
-                  href: ca3075-insecure-dtd-processing.md
-                - name: 'CA3076: Spuštění nezabezpečeného skriptu XSLT'
-                  href: ca3076-insecure-xslt-script-execution.md
-                - name: 'CA3077: Nezabezpečené zpracování v návrhu rozhraní API, dokumentu XML a čtečce textu XML'
-                  href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
-            - name: Upozornění využití
-              href: usage-warnings.md
-              items:
-                - name: 'CA1801: Zkontrolujte nepoužité parametry'
-                  href: ca1801-review-unused-parameters.md
-                - name: 'CA1806: Neignorujte výsledky metody'
-                  href: ca1806-do-not-ignore-method-results.md
-                - name: 'CA1816: Volejte správně GC.SuppressFinalize'
-                  href: ca1816-call-gc-suppressfinalize-correctly.md
-                - name: 'CA2200: Znovu vyvolejte pro zachování podrobností zásobníku'
-                  href: ca2200-rethrow-to-preserve-stack-details.md
-                - name: 'CA2201: Nevyvolávejte vyhrazené typy výjimek'
-                  href: ca2201-do-not-raise-reserved-exception-types.md
-                - name: 'CA2202: Neuvolňujte objekty několikrát'
-                  href: ca2202-do-not-dispose-objects-multiple-times.md
-                - name: 'CA2204: Literály by měly být zadány správně'
-                  href: ca2204-literals-should-be-spelled-correctly.md
-                - name: 'CA2205: Použijte spravované ekvivalenty rozhraní Win32 API'
-                  href: ca2205-use-managed-equivalents-of-win32-api.md
-                - name: 'CA2207: Inicializujte statická pole s typem hodnoty vloženě'
-                  href: ca2207-initialize-value-type-static-fields-inline.md
-                - name: 'CA2208: Vytvořte správně instance výjimky argumentu'
-                  href: ca2208-instantiate-argument-exceptions-correctly.md
-                - name: 'CA2211: Nekonstantní pole by neměla být viditelná'
-                  href: ca2211-non-constant-fields-should-not-be-visible.md
-                - name: 'CA2212: Neoznačujte obsluhované komponenty pomocí WebMethod'
-                  href: ca2212-do-not-mark-serviced-components-with-webmethod.md
-                - name: 'CA2213: Uvolnitelná pole by měla být uvolněna'
-                  href: ca2213-disposable-fields-should-be-disposed.md
-                - name: 'CA2214: Nevolejte přepisovatelné metody v konstruktorech'
-                  href: ca2214-do-not-call-overridable-methods-in-constructors.md
-                - name: 'CA2215: Metody Dispose by měly volat uvolnění základní třídy'
-                  href: ca2215-dispose-methods-should-call-base-class-dispose.md
-                - name: 'CA2216: Uvolnitelné typy by měly deklarovat finalizační metodu'
-                  href: ca2216-disposable-types-should-declare-finalizer.md
-                - name: 'CA2217: Neoznačujte výčty pomocí FlagsAttribute'
-                  href: ca2217-do-not-mark-enums-with-flagsattribute.md
-                - name: 'CA2218: Přepište GetHashCode při přepsání Equals'
-                  href: ca2218-override-gethashcode-on-overriding-equals.md
-                - name: 'CA2219: Nevyvolávejte výjimky v klauzulích výjimky'
-                  href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
-                - name: 'CA2220: Finalizační metody by měly volat finalizační metodu základní třídy'
-                  href: ca2220-finalizers-should-call-base-class-finalizer.md
-                - name: 'CA2221: Finalizační metody by měly být chráněné'
-                  href: ca2221-finalizers-should-be-protected.md
-                - name: 'CA2222: Nesnižujte viditelnost zděděného členu'
-                  href: ca2222-do-not-decrease-inherited-member-visibility.md
-                - name: 'CA2223: Členy by se měly lišit více než návratovým typem'
-                  href: ca2223-members-should-differ-by-more-than-return-type.md
-                - name: 'CA2224: Přepište Equals při přetížení operátoru rovnosti'
-                  href: ca2224-override-equals-on-overloading-operator-equals.md
-                - name: 'CA2225: Přetížení operátoru mají pojmenované alternativy'
-                  href: ca2225-operator-overloads-have-named-alternates.md
-                - name: 'CA2226: Operátory by měly mít symetrická přetížení'
-                  href: ca2226-operators-should-have-symmetrical-overloads.md
-                - name: 'CA2227: Vlastnosti kolekce by měly být pouze pro čtení'
-                  href: ca2227-collection-properties-should-be-read-only.md
-                - name: 'CA2228: Nedodávejte nevydané formáty prostředku'
-                  href: ca2228-do-not-ship-unreleased-resource-formats.md
-                - name: 'CA2229: Implementujte serializační konstruktory'
-                  href: ca2229-implement-serialization-constructors.md
-                - name: 'CA2230: Použijte parametry pro proměnné argumenty'
-                  href: ca2230-use-params-for-variable-arguments.md
-                - name: 'CA2231: Přetižte operátor rovnosti při přetížení ValueType.Equals'
-                  href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
-                - name: 'CA2232: Označte vstupní body modelu Windows Forms pomocí STAThread'
-                  href: ca2232-mark-windows-forms-entry-points-with-stathread.md
-                - name: 'CA2233: Operace by neměly přetéct'
-                  href: ca2233-operations-should-not-overflow.md
-                - name: 'CA2234: Předejte objekty System.Uri namísto řetězců'
-                  href: ca2234-pass-system-uri-objects-instead-of-strings.md
-                - name: 'CA2235: Označte všechna neserializovatelná pole'
-                  href: ca2235-mark-all-non-serializable-fields.md
-                - name: 'CA2236: Volejte metody základní třídy u typů ISerializable'
-                  href: ca2236-call-base-class-methods-on-iserializable-types.md
-                - name: 'CA2237: Označte typy ISerializable pomocí SerializableAttribute'
-                  href: ca2237-mark-iserializable-types-with-serializableattribute.md
-                - name: 'CA2238: Implementujte správně metody serializace'
-                  href: ca2238-implement-serialization-methods-correctly.md
-                - name: 'CA2239: Zadejte metody deserializace pro nepovinná pole'
-                  href: ca2239-provide-deserialization-methods-for-optional-fields.md
-                - name: 'CA2240: Implementujte správně ISerializable'
-                  href: ca2240-implement-iserializable-correctly.md
-                - name: 'CA2241: Zadejte správné argumenty pro metody formátování'
-                  href: ca2241-provide-correct-arguments-to-formatting-methods.md
-                - name: 'CA2242: Testujte správně NaN'
-                  href: ca2242-test-for-nan-correctly.md
-                - name: 'CA2243: Řetězcové literály atributů by se měly správně parsovat'
-                  href: ca2243-attribute-string-literals-should-parse-correctly.md
-            - name: Chyby zásad Analýzy kódu
-              href: code-analysis-policy-errors.md
+                - name: Upozornění udržovatelnosti
+                  items:
+                    - name: Upozornění udržovatelnosti
+                      href: maintainability-warnings.md
+                    - name: 'CA1500: Názvy proměnných by neměly odpovídat názvům polí'
+                      href: ca1500-variable-names-should-not-match-field-names.md
+                    - name: 'CA1501: Vyhněte se nadměrné dědičnosti'
+                      href: ca1501-avoid-excessive-inheritance.md
+                    - name: 'CA1502: Vyhněte se nadměrné složitosti'
+                      href: ca1502-avoid-excessive-complexity.md
+                    - name: 'CA1504: Zkontrolujte zavádějící názvy polí'
+                      href: ca1504-review-misleading-field-names.md
+                    - name: 'CA1505: Vyhněte se neudržovatelnému kódu'
+                      href: ca1505-avoid-unmaintainable-code.md
+                    - name: 'CA1506: Vyhněte se nadměrnému párování tříd'
+                      href: ca1506-avoid-excessive-class-coupling.md
+                    - name: Upozornění mobility
+                      items:
+                        - name: Upozornění mobility
+                          href: mobility-warnings.md
+                        - name: 'CA1600: Nepoužívejte prioritu nečinného procesu'
+                          href: ca1600-do-not-use-idle-process-priority.md
+                        - name: 'CA1601: Nepoužívejte časovače, které zabraňují změně stavu napájení'
+                          href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
+                    - name: Upozornění na pojmenování
+                      items:
+                        - name: Upozornění na pojmenování
+                          href: naming-warnings.md
+                        - name: 'CA1700: Nepojmenovávejte výčty hodnot ''Reserved'''
+                          href: ca1700-do-not-name-enum-values-reserved.md
+                        - name: 'CA1701: Malá a velká písmena složených slov řetězců prostředků by měla být použita správně'
+                          href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
+                        - name: 'CA1702: Malá a velká písmena složených slov by měla být použita správně'
+                          href: ca1702-compound-words-should-be-cased-correctly.md
+                        - name: 'CA1703: Řetězce prostředků by měly být zadány správně'
+                          href: ca1703-resource-strings-should-be-spelled-correctly.md
+                        - name: 'CA1704: Identifikátory by měly být zadány správně'
+                          href: ca1704-identifiers-should-be-spelled-correctly.md
+                        - name: 'CA1707: Identifikátory by neměly obsahovat podtržítka'
+                          href: ca1707-identifiers-should-not-contain-underscores.md
+                        - name: 'CA1708: Identifikátory by se měly lišit více než použitím malých a velkých písmen'
+                          href: ca1708-identifiers-should-differ-by-more-than-case.md
+                        - name: 'CA1709: Malá a velká písmena identifikátorů by měla být použita správně'
+                          href: ca1709-identifiers-should-be-cased-correctly.md
+                        - name: 'CA1710: Identifikátory by měly mít správnou příponu'
+                          href: ca1710-identifiers-should-have-correct-suffix.md
+                        - name: 'CA1711: Identifikátory by neměly mít nesprávnou příponu'
+                          href: ca1711-identifiers-should-not-have-incorrect-suffix.md
+                        - name: 'CA1712: Nezačínejte hodnoty výčtu názvem typu'
+                          href: ca1712-do-not-prefix-enum-values-with-type-name.md
+                        - name: 'CA1713: Události by neměly mít předponu před nebo po'
+                          href: ca1713-events-should-not-have-before-or-after-prefix.md
+                        - name: 'CA1714: Výčty příznaků by neměly mít názvy v množném čísle'
+                          href: ca1714-flags-enums-should-have-plural-names.md
+                        - name: 'CA1715: Identifikátory by měly mít správnou předponu'
+                          href: ca1715-identifiers-should-have-correct-prefix.md
+                        - name: 'CA1716: Identifikátory by se neměly shodovat s klíčovými slovy'
+                          href: ca1716-identifiers-should-not-match-keywords.md
+                        - name: 'CA1717: Pouze výčty FlagsAttribute by měly mít názvy v množném čísle'
+                          href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
+                        - name: 'CA1719: Názvy parametrů by se neměly shodovat s názvy členů'
+                          href: ca1719-parameter-names-should-not-match-member-names.md
+                        - name: 'CA1720: Identifikátory by neměly obsahovat názvy typů'
+                          href: ca1720-identifiers-should-not-contain-type-names.md
+                        - name: 'CA1721: Názvy vlastností by se neměly shodovat s metodami Get'
+                          href: ca1721-property-names-should-not-match-get-methods.md
+                        - name: 'CA1722: Identifikátory by neměly mít nesprávnou předponu'
+                          href: ca1722-identifiers-should-not-have-incorrect-prefix.md
+                        - name: 'CA1725: Názvy parametrů by měly odpovídat základní deklaraci'
+                          href: ca1725-parameter-names-should-match-base-declaration.md
+                        - name: 'CA1724: Názvy typů by se neměly shodovat s obory názvů'
+                          href: ca1724-type-names-should-not-match-namespaces.md
+                        - name: 'CA1726: Použijte upřednostňované výrazy'
+                          href: ca1726-use-preferred-terms.md
+                    - name: Upozornění výkonu
+                      items:
+                        - name: Upozornění výkonu
+                          href: performance-warnings.md
+                        - name: 'CA1800: Nepřetypujte zbytečně'
+                          href: ca1800-do-not-cast-unnecessarily.md
+                        - name: 'CA1802: Použijte literály, kde je to vhodné'
+                          href: ca1802-use-literals-where-appropriate.md
+                        - name: 'CA1804: Odeberte nepoužívané lokální hodnoty'
+                          href: ca1804-remove-unused-locals.md
+                        - name: 'CA1809: Vyhněte se nadměrným lokálním hodnotám'
+                          href: ca1809-avoid-excessive-locals.md
+                        - name: 'CA1810: Inicializujte odkazový typ statického pole vloženě'
+                          href: ca1810-initialize-reference-type-static-fields-inline.md
+                        - name: 'CA1811: Vyhněte se nevolanému privátnímu kódu'
+                          href: ca1811-avoid-uncalled-private-code.md
+                        - name: 'CA1812: Vyhněte se nevytvořeným instancím interních tříd'
+                          href: ca1812-avoid-uninstantiated-internal-classes.md
+                        - name: 'CA1813: Vyhněte se nezapečetěným atributům'
+                          href: ca1813-avoid-unsealed-attributes.md
+                        - name: 'CA1814: Upřednostněte vícenásobná pole před multidimenzionálními'
+                          href: ca1814-prefer-jagged-arrays-over-multidimensional.md
+                        - name: 'CA1815: Přepište rovnosti a operátory rovnosti u typů hodnot'
+                          href: ca1815-override-equals-and-operator-equals-on-value-types.md
+                        - name: 'CA1819: Vlastnosti by neměly vracet pole'
+                          href: ca1819-properties-should-not-return-arrays.md
+                        - name: 'CA1820: Testujte prázdné řetězce pomocí délky řetězce'
+                          href: ca1820-test-for-empty-strings-using-string-length.md
+                        - name: 'CA1821: Odeberte prázdné finalizační metody'
+                          href: ca1821-remove-empty-finalizers.md
+                        - name: 'CA1822: Označte členy jako statické'
+                          href: ca1822-mark-members-as-static.md
+                        - name: 'CA1823: Vyhněte se nepoužitým privátním polím'
+                          href: ca1823-avoid-unused-private-fields.md
+                        - name: 'CA1824: Označte sestavení pomocí NeutralResourcesLanguageAttribute'
+                          href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                    - name: Upozornění přenositelnosti
+                      items:
+                        - name: Upozornění přenositelnosti
+                          href: portability-warnings.md
+                        - name: 'CA1900: Pole typů hodnot by měla být přenosná'
+                          href: ca1900-value-type-fields-should-be-portable.md
+                        - name: 'CA1901: Deklarace volání nespravovaného kódu by měla být přenosná'
+                          href: ca1901-p-invoke-declarations-should-be-portable.md
+                        - name: 'CA1903: Používejte jen rozhraní API z cílové architektury'
+                          href: ca1903-use-only-api-from-targeted-framework.md
+                    - name: Upozornění spolehlivosti
+                      items:
+                        - name: Upozornění spolehlivosti
+                          href: reliability-warnings.md
+                        - name: 'CA2000: Uvolňujte objekty před ztrátou oboru'
+                          href: ca2000-dispose-objects-before-losing-scope.md
+                        - name: 'CA2001: Vyhněte se volání problematických metod'
+                          href: ca2001-avoid-calling-problematic-methods.md
+                        - name: 'CA2002: Nepoužívejte zámky u objektů se slabou identitou'
+                          href: ca2002-do-not-lock-on-objects-with-weak-identity.md
+                        - name: 'CA2003: Nezacházejte s vlákénky jako s vlákny'
+                          href: ca2003-do-not-treat-fibers-as-threads.md
+                        - name: 'CA2004: Odeberte volání GC.KeepAlive'
+                          href: ca2004-remove-calls-to-gc-keepalive.md
+                        - name: 'CA2006: Použijte SafeHandle k zapouzdření nativních prostředků'
+                          href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+                    - name: Upozornění zabezpečení
+                      items:
+                        - name: Upozornění zabezpečení
+                          href: security-warnings.md
+                        - name: 'CA2100: Zkontrolujte chyby zabezpečení u dotazů SQL'
+                          href: ca2100-review-sql-queries-for-security-vulnerabilities.md
+                        - name: 'CA2102: Zachycujte výjimky bez CLSCompliant v obecných obslužných rutinách'
+                          href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
+                        - name: 'CA2103: Zkontrolujte imperativní zabezpečení'
+                          href: ca2103-review-imperative-security.md
+                        - name: 'CA2104: Nedeklaruje proměnlivé odkazové typy pouze pro čtení'
+                          href: ca2104-do-not-declare-read-only-mutable-reference-types.md
+                        - name: 'CA2105: Pole s poli by neměla být pouze pro čtení'
+                          href: ca2105-array-fields-should-not-be-read-only.md
+                        - name: 'CA2106: Zabezpečte kontrolní příkazy'
+                          href: ca2106-secure-asserts.md
+                        - name: 'CA2107: Zkontrolujte použití čistého odepření a povolení'
+                          href: ca2107-review-deny-and-permit-only-usage.md
+                        - name: 'CA2108: Zkontrolujte deklarativní zabezpečení u typů hodnot'
+                          href: ca2108-review-declarative-security-on-value-types.md
+                        - name: 'CA2109: Zkontrolujte viditelné obslužné rutiny událostí'
+                          href: ca2109-review-visible-event-handlers.md
+                        - name: 'CA2111: Ukazatele by neměly být viditelné'
+                          href: ca2111-pointers-should-not-be-visible.md
+                        - name: 'CA2112: Zabezpečené typy by neměly vystavovat pole'
+                          href: ca2112-secured-types-should-not-expose-fields.md
+                        - name: 'CA2114: Zabezpečení metod by mělo být nadmnožinou typu'
+                          href: ca2114-method-security-should-be-a-superset-of-type.md
+                        - name: 'CA2115: Volejte GC.KeepAlive při použití nativních prostředků'
+                          href: ca2115-call-gc-keepalive-when-using-native-resources.md
+                        - name: 'CA2116: Metody APTCA by měly volat pouze metody APTCA'
+                          href: ca2116-aptca-methods-should-only-call-aptca-methods.md
+                        - name: 'CA2117: Typy APTCA by měl rozšiřovat pouze základní typy APTCA'
+                          href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
+                        - name: 'CA2118: Zkontrolujte použití SuppressUnmanagedCodeSecurityAttribute'
+                          href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
+                        - name: 'CA2119: Zapečeťte metody, které vyhovují privátním rozhraním'
+                          href: ca2119-seal-methods-that-satisfy-private-interfaces.md
+                        - name: 'CA2120: Zabezpečte serializační konstruktory'
+                          href: ca2120-secure-serialization-constructors.md
+                        - name: 'CA2121: Statické konstruktory by měly být privátní'
+                          href: ca2121-static-constructors-should-be-private.md
+                        - name: 'CA2122: Nezveřejňujte nepřímo metody s požadavky propojení'
+                          href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
+                        - name: 'CA2123: Požadavky na propojení přepisů by měly být identické s bází'
+                          href: ca2123-override-link-demands-should-be-identical-to-base.md
+                        - name: 'CA2124: Zabalte ohroženou klauzuli finally do vnějšího bloku try'
+                          href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
+                        - name: 'CA2126: Požadavky na propojení typů vyžadují požadavky na dědičnost'
+                          href: ca2126-type-link-demands-require-inheritance-demands.md
+                        - name: 'CA2130: Konstanty kritické pro zabezpečení musí být transparentní'
+                          href: ca2130-security-critical-constants-should-be-transparent.md
+                        - name: 'CA2131: Typy kritické pro zabezpečení se nesmí účastnit ekvivalence typů'
+                          href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
+                        - name: 'CA2132: Výchozí konstruktory musí být alespoň tak kritické, jako výchozí konstruktory základního typu'
+                          href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
+                        - name: 'CA2133: Delegáti musí mít vazbu s metodami s konzistentní transparentností'
+                          href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
+                        - name: 'CA2134: Metody musí při přepisování základních metod zachovávat konzistentní transparentnost'
+                          href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
+                        - name: 'CA2135: Sestavení úrovně 2 by neměla obsahovat LinkDemands'
+                          href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
+                        - name: 'CA2136: Členy by neměly mít konfliktní poznámky transparentnosti'
+                          href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
+                        - name: 'CA2137: Transparentní metody musí obsahovat pouze ověřitelné IL'
+                          href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
+                        - name: 'CA2138: Transparentní metody nesmí volat metody s atributem SuppressUnmanagedCodeSecurity'
+                          href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
+                        - name: 'CA2139: Transparentní metody nemusí používat atribut HandleProcessCorruptingExceptions'
+                          href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
+                        - name: 'CA2140: Transparentní kód nesmí odkazovat na položky kritické pro zabezpečení'
+                          href: ca2140-transparent-code-must-not-reference-security-critical-items.md
+                        - name: 'CA2141:Transparentní metody nesmějí vyhovovat LinkDemands'
+                          href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
+                        - name: 'CA2142: Transparentní kód by neměl být chráněn pomocí LinkDemands'
+                          href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
+                        - name: 'CA2143: Transparentní metody by neměly používat požadavky zabezpečení'
+                          href: ca2143-transparent-methods-should-not-use-security-demands.md
+                        - name: 'CA2144: Transparentní kód by neměl načítat sestavení z bajtových polí'
+                          href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
+                        - name: 'CA2145: Transparentní metody by neměly být doplněny o SuppressUnmanagedCodeSecurityAttribute'
+                          href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
+                        - name: 'CA2146: Typy musí být alespoň tak kritické, jako jejich základní typy a rozhraní'
+                          href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
+                        - name: 'CA2147: Transparentní metody nemusí používat kontrolní příkazy zabezpečení'
+                          href: ca2147-transparent-methods-may-not-use-security-asserts.md
+                        - name: 'CA2149: Transparentní metody nesmí provádět volání nativního kódu'
+                          href: ca2149-transparent-methods-must-not-call-into-native-code.md
+                        - name: 'CA2151: Pole s kritickými typy by měla být kritická pro zabezpečení'
+                          href: ca2151-fields-with-critical-types-should-be-security-critical.md
+                        - name: 'CA5122: Deklarace volání nespravovaného kódu nesmí být kritické pro zabezpečení'
+                          href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
+                        - name: 'CA2153: Vyhněte se zpracování výjimek v poškozeném stavu'
+                          href: ca2153-avoid-handling-corrupted-state-exceptions.md
+                        - name: 'CA3075: Zpracování nezabezpečené specifikace DTD'
+                          href: ca3075-insecure-dtd-processing.md
+                        - name: 'CA3076: Spuštění nezabezpečeného skriptu XSLT'
+                          href: ca3076-insecure-xslt-script-execution.md
+                        - name: 'CA3077: Nezabezpečené zpracování v návrhu rozhraní API, dokumentu XML a čtečce textu XML'
+                          href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+                    - name: Upozornění využití
+                      items:
+                        - name: Upozornění využití
+                          href: usage-warnings.md
+                        - name: 'CA1801: Zkontrolujte nepoužité parametry'
+                          href: ca1801-review-unused-parameters.md
+                        - name: 'CA1806: Neignorujte výsledky metody'
+                          href: ca1806-do-not-ignore-method-results.md
+                        - name: 'CA1816: Volejte správně GC.SuppressFinalize'
+                          href: ca1816-call-gc-suppressfinalize-correctly.md
+                        - name: 'CA2200: Znovu vyvolejte pro zachování podrobností zásobníku'
+                          href: ca2200-rethrow-to-preserve-stack-details.md
+                        - name: 'CA2201: Nevyvolávejte vyhrazené typy výjimek'
+                          href: ca2201-do-not-raise-reserved-exception-types.md
+                        - name: 'CA2202: Neuvolňujte objekty několikrát'
+                          href: ca2202-do-not-dispose-objects-multiple-times.md
+                        - name: 'CA2204: Literály by měly být zadány správně'
+                          href: ca2204-literals-should-be-spelled-correctly.md
+                        - name: 'CA2205: Použijte spravované ekvivalenty rozhraní Win32 API'
+                          href: ca2205-use-managed-equivalents-of-win32-api.md
+                        - name: 'CA2207: Inicializujte statická pole s typem hodnoty vloženě'
+                          href: ca2207-initialize-value-type-static-fields-inline.md
+                        - name: 'CA2208: Vytvořte správně instance výjimky argumentu'
+                          href: ca2208-instantiate-argument-exceptions-correctly.md
+                        - name: 'CA2211: Nekonstantní pole by neměla být viditelná'
+                          href: ca2211-non-constant-fields-should-not-be-visible.md
+                        - name: 'CA2212: Neoznačujte obsluhované komponenty pomocí WebMethod'
+                          href: ca2212-do-not-mark-serviced-components-with-webmethod.md
+                        - name: 'CA2213: Uvolnitelná pole by měla být uvolněna'
+                          href: ca2213-disposable-fields-should-be-disposed.md
+                        - name: 'CA2214: Nevolejte přepisovatelné metody v konstruktorech'
+                          href: ca2214-do-not-call-overridable-methods-in-constructors.md
+                        - name: 'CA2215: Metody Dispose by měly volat uvolnění základní třídy'
+                          href: ca2215-dispose-methods-should-call-base-class-dispose.md
+                        - name: 'CA2216: Uvolnitelné typy by měly deklarovat finalizační metodu'
+                          href: ca2216-disposable-types-should-declare-finalizer.md
+                        - name: 'CA2217: Neoznačujte výčty pomocí FlagsAttribute'
+                          href: ca2217-do-not-mark-enums-with-flagsattribute.md
+                        - name: 'CA2218: Přepište GetHashCode při přepsání Equals'
+                          href: ca2218-override-gethashcode-on-overriding-equals.md
+                        - name: 'CA2219: Nevyvolávejte výjimky v klauzulích výjimky'
+                          href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
+                        - name: 'CA2220: Finalizační metody by měly volat finalizační metodu základní třídy'
+                          href: ca2220-finalizers-should-call-base-class-finalizer.md
+                        - name: 'CA2221: Finalizační metody by měly být chráněné'
+                          href: ca2221-finalizers-should-be-protected.md
+                        - name: 'CA2222: Nesnižujte viditelnost zděděného členu'
+                          href: ca2222-do-not-decrease-inherited-member-visibility.md
+                        - name: 'CA2223: Členy by se měly lišit více než návratovým typem'
+                          href: ca2223-members-should-differ-by-more-than-return-type.md
+                        - name: 'CA2224: Přepište Equals při přetížení operátoru rovnosti'
+                          href: ca2224-override-equals-on-overloading-operator-equals.md
+                        - name: 'CA2225: Přetížení operátoru mají pojmenované alternativy'
+                          href: ca2225-operator-overloads-have-named-alternates.md
+                        - name: 'CA2226: Operátory by měly mít symetrická přetížení'
+                          href: ca2226-operators-should-have-symmetrical-overloads.md
+                        - name: 'CA2227: Vlastnosti kolekce by měly být pouze pro čtení'
+                          href: ca2227-collection-properties-should-be-read-only.md
+                        - name: 'CA2228: Nedodávejte nevydané formáty prostředku'
+                          href: ca2228-do-not-ship-unreleased-resource-formats.md
+                        - name: 'CA2229: Implementujte serializační konstruktory'
+                          href: ca2229-implement-serialization-constructors.md
+                        - name: 'CA2230: Použijte parametry pro proměnné argumenty'
+                          href: ca2230-use-params-for-variable-arguments.md
+                        - name: 'CA2231: Přetižte operátor rovnosti při přetížení ValueType.Equals'
+                          href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
+                        - name: 'CA2232: Označte vstupní body modelu Windows Forms pomocí STAThread'
+                          href: ca2232-mark-windows-forms-entry-points-with-stathread.md
+                        - name: 'CA2233: Operace by neměly přetéct'
+                          href: ca2233-operations-should-not-overflow.md
+                        - name: 'CA2234: Předejte objekty System.Uri namísto řetězců'
+                          href: ca2234-pass-system-uri-objects-instead-of-strings.md
+                        - name: 'CA2235: Označte všechna neserializovatelná pole'
+                          href: ca2235-mark-all-non-serializable-fields.md
+                        - name: 'CA2236: Volejte metody základní třídy u typů ISerializable'
+                          href: ca2236-call-base-class-methods-on-iserializable-types.md
+                        - name: 'CA2237: Označte typy ISerializable pomocí SerializableAttribute'
+                          href: ca2237-mark-iserializable-types-with-serializableattribute.md
+                        - name: 'CA2238: Implementujte správně metody serializace'
+                          href: ca2238-implement-serialization-methods-correctly.md
+                        - name: 'CA2239: Zadejte metody deserializace pro nepovinná pole'
+                          href: ca2239-provide-deserialization-methods-for-optional-fields.md
+                        - name: 'CA2240: Implementujte správně ISerializable'
+                          href: ca2240-implement-iserializable-correctly.md
+                        - name: 'CA2241: Zadejte správné argumenty pro metody formátování'
+                          href: ca2241-provide-correct-arguments-to-formatting-methods.md
+                        - name: 'CA2242: Testujte správně NaN'
+                          href: ca2242-test-for-nan-correctly.md
+                        - name: 'CA2243: Řetězcové literály atributů by se měly správně parsovat'
+                          href: ca2243-attribute-string-literals-should-parse-correctly.md
+                - name: Chyby zásad Analýzy kódu
+                  href: code-analysis-policy-errors.md
+- name: Analýza kvality kódu C/C++
+  items:
     - name: Analýza kvality kódu C/C++
       href: analyzing-c-cpp-code-quality-by-using-code-analysis.md
+    - name: 'Rychlý start: Analýza kódu pro C/C++'
+      href: quick-start-code-analysis-for-c-cpp.md
+    - name: Použití sad pravidel k určování pravidel C++ pro spuštění
+      href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+    - name: Použití kontrolních mechanismů C++ Core Guidelines
+      href: using-the-cpp-core-guidelines-checkers.md
+    - name: Přehled Analýzy kódu pro C/C++
+      href: code-analysis-for-c-cpp-overview.md
+    - name: 'Postupy: Nastavení vlastností analýzy kódu pro projekty C/C++'
+      href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
+    - name: 'Návod: Analýza defektů v kódu C/C++'
       items:
-        - name: 'Rychlý start: Analýza kódu pro C/C++'
-          href: quick-start-code-analysis-for-c-cpp.md
-        - name: Použití sad pravidel k určování pravidel C++ pro spuštění
-          href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
-        - name: Použití kontrolních mechanismů C++ Core Guidelines
-          href: using-the-cpp-core-guidelines-checkers.md
-        - name: Přehled Analýzy kódu pro C/C++
-          href: code-analysis-for-c-cpp-overview.md
-        - name: 'Postupy: Nastavení vlastností analýzy kódu pro projekty C/C++'
-          href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
         - name: 'Návod: Analýza defektů v kódu C/C++'
           href: walkthrough-analyzing-c-cpp-code-for-defects.md
-          items:
-            - name: Demonstrační ukázka
-              href: demo-sample.md
+        - name: Demonstrační ukázka
+          href: demo-sample.md
+    - name: Použití poznámek SAL k snížení míry výskytu závad kódu C/C++
+      items:
         - name: Použití poznámek SAL k snížení míry výskytu závad kódu C/C++
           href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
-          items:
-            - name: Porozumění SAL
-              href: understanding-sal.md
-            - name: "Zadávání poznámek k\_parametrům funkcí a\_návratovým hodnotám"
-              href: annotating-function-parameters-and-return-values.md
-            - name: Zadávání poznámek k chování funkcí
-              href: annotating-function-behavior.md
-            - name: Zadávání poznámek ke strukturám a třídám
-              href: annotating-structs-and-classes.md
-            - name: Zadávání poznámek o chování při zamykání
-              href: annotating-locking-behavior.md
-            - name: "Určení, kdy a\_kde se má poznámka použít"
-              href: specifying-when-and-where-an-annotation-applies.md
-            - name: Vnitřní funkce
-              href: intrinsic-functions.md
-            - name: Doporučené postupy a příklady
-              href: best-practices-and-examples-sal.md
+        - name: Porozumění SAL
+          href: understanding-sal.md
+        - name: "Zadávání poznámek k\_parametrům funkcí a\_návratovým hodnotám"
+          href: annotating-function-parameters-and-return-values.md
+        - name: Zadávání poznámek k chování funkcí
+          href: annotating-function-behavior.md
+        - name: Zadávání poznámek ke strukturám a třídám
+          href: annotating-structs-and-classes.md
+        - name: Zadávání poznámek o chování při zamykání
+          href: annotating-locking-behavior.md
+        - name: "Určení, kdy a\_kde se má poznámka použít"
+          href: specifying-when-and-where-an-annotation-applies.md
+        - name: Vnitřní funkce
+          href: intrinsic-functions.md
+        - name: Doporučené postupy a příklady
+          href: best-practices-and-examples-sal.md
         - name: 'Postupy: Určení dalších informací o kódu pomocí __analysis_assume'
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: Upozornění Analýzy kódu pro C/C++
-          href: code-analysis-for-c-cpp-warnings.md
           items:
+            - name: Upozornění Analýzy kódu pro C/C++
+              href: code-analysis-for-c-cpp-warnings.md
             - name: C1250
               href: c1250.md
             - name: C1251
@@ -1167,129 +1186,136 @@
               href: c28350.md
             - name: C28351
               href: c28351.md
-    - name: Použití sad pravidel k seskupování pravidel analýzy kódu
-      href: using-rule-sets-to-group-code-analysis-rules.md
-      items:
-        - name: 'Návod: Konfigurace a používání vlastní sady pravidel'
-          href: walkthrough-configuring-and-using-a-custom-rule-set.md
-        - name: 'Postupy: Konfigurace analýzy kódu pro projekt spravovaného kódu'
-          href: how-to-configure-code-analysis-for-a-managed-code-project.md
-        - name: 'Postupy: Konfigurace analýzy kódu pro webovou aplikaci ASP.NET'
-          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-        - name: 'Postupy: Synchronizace sad pravidel projektu kódu pomocí zásad vracení zpět se změnami týmového projektu'
-          href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-        - name: 'Postupy: Určení sad pravidel pro více projektů v určitém řešení'
-          href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
-        - name: Vytváření vlastních sad pravidel
-          href: creating-custom-code-analysis-rule-sets.md
+        - name: Použití sad pravidel k seskupování pravidel analýzy kódu
           items:
-            - name: 'Postupy: Vytvoření vlastní sady pravidel'
-              href: how-to-create-a-custom-rule-set.md
-            - name: Práce s Editorem sad pravidel
-              href: working-in-the-code-analysis-rule-set-editor.md
-        - name: Referenční dokumentace sady pravidel nástroje Analýza kódu
-          href: code-analysis-rule-set-reference.md
+            - name: Použití sad pravidel k seskupování pravidel analýzy kódu
+              href: using-rule-sets-to-group-code-analysis-rules.md
+            - name: 'Návod: Konfigurace a používání vlastní sady pravidel'
+              href: walkthrough-configuring-and-using-a-custom-rule-set.md
+            - name: 'Postupy: Konfigurace analýzy kódu pro projekt spravovaného kódu'
+              href: how-to-configure-code-analysis-for-a-managed-code-project.md
+            - name: 'Postupy: Konfigurace analýzy kódu pro webovou aplikaci ASP.NET'
+              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+            - name: 'Postupy: Synchronizace sad pravidel projektu kódu pomocí zásad vracení zpět se změnami týmového projektu'
+              href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
+            - name: 'Postupy: Určení sad pravidel pro více projektů v určitém řešení'
+              href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
+            - name: Vytváření vlastních sad pravidel
+              items:
+                - name: Vytváření vlastních sad pravidel
+                  href: creating-custom-code-analysis-rule-sets.md
+                - name: 'Postupy: Vytvoření vlastní sady pravidel'
+                  href: how-to-create-a-custom-rule-set.md
+                - name: Práce s Editorem sad pravidel
+                  href: working-in-the-code-analysis-rule-set-editor.md
+            - name: Referenční dokumentace sady pravidel nástroje Analýza kódu
+              items:
+                - name: Referenční dokumentace sady pravidel nástroje Analýza kódu
+                  href: code-analysis-rule-set-reference.md
+                - name: Sada pravidel Všechna pravidla
+                  href: all-rules-rule-set.md
+                - name: Sada pravidel Základní pravidla správnosti pro spravovaný kód
+                  href: basic-correctness-rules-rule-set-for-managed-code.md
+                - name: Sada pravidel Základní pravidla obecných zásad návrhu pro spravovaný kód
+                  href: basic-design-guideline-rules-rule-set-for-managed-code.md
+                - name: Sada pravidel Rozšířená pravidla správnosti pro spravovaný kód
+                  href: extended-correctness-rules-rule-set-for-managed-code.md
+                - name: Sada pravidel Rozšířená pravidla pokynů návrhu pro spravovaný kód
+                  href: extended-design-guidelines-rules-rule-set-for-managed-code.md
+                - name: Sada pravidel Pravidla globalizace pro spravovaný kód
+                  href: globalization-rules-rule-set-for-managed-code.md
+                - name: Sada pravidel Spravovaná minimální pravidla pro spravovaný kód
+                  href: managed-minimun-rules-rule-set-for-managed-code.md
+                - name: Sada pravidel Spravovaná doporučená pravidla pro spravovaný kód
+                  href: managed-recommended-rules-rule-set-for-managed-code.md
+                - name: Sada pravidel Smíšená minimální pravidla
+                  href: mixed-minimum-rules-rule-set.md
+                - name: Sada pravidel Smíšená doporučená pravidla
+                  href: mixed-recommended-rules-rule-set.md
+                - name: Sada pravidel Nativní minimální pravidla
+                  href: native-minimum-rules-rule-set.md
+                - name: Sada pravidel Nativní doporučená pravidla
+                  href: native-recommended-rules-rule-set.md
+                - name: Sada pravidel Pravidla zabezpečení pro spravovaný kód
+                  href: security-rules-rule-set-for-managed-code.md
+        - name: Chyby aplikace Analýzy kódu
           items:
-            - name: Sada pravidel Všechna pravidla
-              href: all-rules-rule-set.md
-            - name: Sada pravidel Základní pravidla správnosti pro spravovaný kód
-              href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Základní pravidla obecných zásad návrhu pro spravovaný kód
-              href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Rozšířená pravidla správnosti pro spravovaný kód
-              href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Rozšířená pravidla pokynů návrhu pro spravovaný kód
-              href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Pravidla globalizace pro spravovaný kód
-              href: globalization-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Spravovaná minimální pravidla pro spravovaný kód
-              href: managed-minimun-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Spravovaná doporučená pravidla pro spravovaný kód
-              href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Smíšená minimální pravidla
-              href: mixed-minimum-rules-rule-set.md
-            - name: Sada pravidel Smíšená doporučená pravidla
-              href: mixed-recommended-rules-rule-set.md
-            - name: Sada pravidel Nativní minimální pravidla
-              href: native-minimum-rules-rule-set.md
-            - name: Sada pravidel Nativní doporučená pravidla
-              href: native-recommended-rules-rule-set.md
-            - name: Sada pravidel Pravidla zabezpečení pro spravovaný kód
-              href: security-rules-rule-set-for-managed-code.md
-    - name: Chyby aplikace Analýzy kódu
-      href: code-analysis-application-errors.md
-      items:
-        - name: CA0001
-          href: ca0001.md
-        - name: CA0051
-          href: ca0051.md
-        - name: CA0052
-          href: ca0052.md
-        - name: CA0053
-          href: ca0053.md
-        - name: CA0054
-          href: ca0054.md
-        - name: CA0055
-          href: ca0055.md
-        - name: CA0056
-          href: ca0056.md
-        - name: CA0057
-          href: ca0057.md
-        - name: CA0058
-          href: ca0058.md
-        - name: CA0059
-          href: ca0059.md
-        - name: CA0060
-          href: ca0060.md
-        - name: CA0061
-          href: ca0061.md
-        - name: CA0062
-          href: ca0062.md
-        - name: CA0063
-          href: ca0063.md
-        - name: CA0064
-          href: ca0064.md
-        - name: CA0065
-          href: ca0065.md
-        - name: CA0066
-          href: ca0066.md
-        - name: CA0067
-          href: ca0067.md
-        - name: CA0068
-          href: ca0068.md
-        - name: CA0069
-          href: ca0069.md
-        - name: CA0070
-          href: ca0070.md
-        - name: CA0501
-          href: ca0501.md
-        - name: CA0502
-          href: ca0502.md
-        - name: CA0503
-          href: ca0503.md
-        - name: CA0504
-          href: ca0504.md
-        - name: CA0505
-          href: ca0505.md
-        - name: Chyby jazyka FxCopCmd
-          href: fxcopcmd-errors.md
-    - name: Zvýšení kvality kódu použitím zásad vracení se změnami týmového projektu
-      href: enhancing-code-quality-with-team-project-check-in-policies.md
-      items:
-        - name: Vytváření a používání zásad vrácení se změnami Analýzy kódu
-          href: creating-and-using-code-analysis-check-in-policies.md
+            - name: Chyby aplikace Analýzy kódu
+              href: code-analysis-application-errors.md
+            - name: CA0001
+              href: ca0001.md
+            - name: CA0051
+              href: ca0051.md
+            - name: CA0052
+              href: ca0052.md
+            - name: CA0053
+              href: ca0053.md
+            - name: CA0054
+              href: ca0054.md
+            - name: CA0055
+              href: ca0055.md
+            - name: CA0056
+              href: ca0056.md
+            - name: CA0057
+              href: ca0057.md
+            - name: CA0058
+              href: ca0058.md
+            - name: CA0059
+              href: ca0059.md
+            - name: CA0060
+              href: ca0060.md
+            - name: CA0061
+              href: ca0061.md
+            - name: CA0062
+              href: ca0062.md
+            - name: CA0063
+              href: ca0063.md
+            - name: CA0064
+              href: ca0064.md
+            - name: CA0065
+              href: ca0065.md
+            - name: CA0066
+              href: ca0066.md
+            - name: CA0067
+              href: ca0067.md
+            - name: CA0068
+              href: ca0068.md
+            - name: CA0069
+              href: ca0069.md
+            - name: CA0070
+              href: ca0070.md
+            - name: CA0501
+              href: ca0501.md
+            - name: CA0502
+              href: ca0502.md
+            - name: CA0503
+              href: ca0503.md
+            - name: CA0504
+              href: ca0504.md
+            - name: CA0505
+              href: ca0505.md
+            - name: Chyby jazyka FxCopCmd
+              href: fxcopcmd-errors.md
+        - name: Zvýšení kvality kódu použitím zásad vracení se změnami týmového projektu
           items:
-            - name: 'Postupy: Vytváření nebo aktualizace standardních zásad vracení zpět se změnami analýzy kódu'
-              href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-            - name: Implementace vlastních zásad vrácení se změnami pro spravovaný kód
-              href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-            - name: 'Postupy: Vynucení udržovatelného kódu pomocí zásad vracení zpět se změnami analýzy kódu'
-              href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-            - name: Kompatibilita verzí pro zásady vracení se změnami Analýzy kódu
-              href: version-compatibility-for-code-analysis-check-in-policies.md
+            - name: Zvýšení kvality kódu použitím zásad vracení se změnami týmového projektu
+              href: enhancing-code-quality-with-team-project-check-in-policies.md
+            - name: Vytváření a používání zásad vrácení se změnami Analýzy kódu
+              items:
+                - name: Vytváření a používání zásad vrácení se změnami Analýzy kódu
+                  href: creating-and-using-code-analysis-check-in-policies.md
+                - name: 'Postupy: Vytváření nebo aktualizace standardních zásad vracení zpět se změnami analýzy kódu'
+                  href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
+                - name: Implementace vlastních zásad vrácení se změnami pro spravovaný kód
+                  href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
+                - name: 'Postupy: Vynucení udržovatelného kódu pomocí zásad vracení zpět se změnami analýzy kódu'
+                  href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
+                - name: Kompatibilita verzí pro zásady vracení se změnami Analýzy kódu
+                  href: version-compatibility-for-code-analysis-check-in-policies.md
 - name: Měření složitosti a udržovatelnosti spravovaného kódu
-  href: measuring-complexity-and-maintainability-of-managed-code.md
   items:
+    - name: Měření složitosti a udržovatelnosti spravovaného kódu
+      href: measuring-complexity-and-maintainability-of-managed-code.md
     - name: Hodnoty metrik kódu
       href: code-metrics-values.md
     - name: 'Postupy: Generování dat metrik kódu'
@@ -1297,8 +1323,9 @@
     - name: Práce s daty metrik kódu
       href: working-with-code-metrics-data.md
 - name: Řešení potíží s nástroji kvality
-  href: troubleshooting-quality-tools.md
   items:
+    - name: Řešení potíží s nástroji kvality
+      href: troubleshooting-quality-tools.md
     - name: Řešení potíží s Analýzou kódu
       href: troubleshooting-code-analysis-issues.md
     - name: Řešení potíží s metrikami kódu

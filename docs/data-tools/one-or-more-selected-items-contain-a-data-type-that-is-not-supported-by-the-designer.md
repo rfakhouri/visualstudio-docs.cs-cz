@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 12ec2ed7dc2a12556fcb6eeeddbe2d0745ae7f72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e27cf5c7cd6c6cb16de317e014083af405236019
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566365"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460596"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Minimálně jedna vybraná položka obsahuje datový typ, který návrhář nepodporuje.
 
@@ -27,5 +27,4 @@ Jeden nebo více položek přetáhnout z **Průzkumníka serveru** nebo **Průzk
 
 ## <a name="see-also"></a>Viz také:
 
-- [Zprávy Návrháře relací objektů](../data-tools/o-r-designer-messages.md)
 - [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

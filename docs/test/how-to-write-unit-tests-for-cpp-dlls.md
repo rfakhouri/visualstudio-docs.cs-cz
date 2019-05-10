@@ -1,18 +1,18 @@
 ---
 title: Zápis testů jednotek pro knihovny DLL C++
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7606f9f9b521d4bc752b99ad70237ef4ac6bc30e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226061"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Zápis testů jednotek pro knihovny DLL C++ v sadě Visual Studio
 
@@ -56,7 +56,17 @@ ms.locfileid: "62821043"
 
   1. Vytvořte projekt testu jednotek Native.
 
-      1. Na **souboru** nabídce zvolte **nový** > **projektu** > **Visual C++**  >  **Testovací** > **projekt testu jednotek C++**.
+      ::: moniker range="vs-2019"
+
+      1. Na **souboru** nabídce zvolte **nový** > **projektu**. V **přidat nový projekt** dialogové okno, nastavte **jazyk** k C++ a zadejte "test" do vyhledávacího pole. Klikněte na tlačítko **nativní projekt testu jednotek**.
+
+      ::: moniker-end
+
+      ::: moniker range="vs-2017"
+
+      1. Na **souboru** nabídce zvolte **nový** > **projektu** > **Visual C++**  >  **Test** >  **C++ projekt testu jednotek**.
+
+      ::: moniker-end
 
   2. V **Průzkumníka řešení**, v místní nabídce testovacího projektu, zvolte **odkazy**. Projekt **vlastnosti** otevře se okno.
 
@@ -80,7 +90,17 @@ ms.locfileid: "62821043"
 
   1. Vytvořte projekt testu jednotek Native.
 
-      1. Na **souboru** nabídce zvolte **nový** > **projektu** > **Visual C++**  >  **Testovací** > **nativní projekt testu jednotek**.
+      ::: moniker range="vs-2019"
+
+      1. Na **souboru** nabídce zvolte **nový** > **projektu**. V **přidat nový projekt** dialogové okno, nastavte **jazyk** k C++ a zadejte "test" do vyhledávacího pole. Klikněte na tlačítko **nativní projekt testu jednotek**.
+
+      ::: moniker-end
+      
+      ::: moniker range="vs-2017"
+
+      1. Na **souboru** nabídce zvolte **nový** > **projektu** > **Visual C++**  >  **Test** >  **C++ projekt testu jednotek**.
+
+      ::: moniker-end
 
   2. V **Průzkumníka řešení**, v místní nabídce testovacího projektu, zvolte **vlastnosti**.
 

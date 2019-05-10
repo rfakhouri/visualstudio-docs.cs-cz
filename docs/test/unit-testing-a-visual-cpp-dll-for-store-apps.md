@@ -1,18 +1,18 @@
 ---
 title: Testování knihovny DLL Visual C++ pro aplikace pro UPW
-ms.date: 02/15/2018
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 20749240e95d167d1b0268b2605ffeede8cf797a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01a7b6cfb6587baf5ae80b04178cbdc36e373b86
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562560"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226358"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Testování knihovny DLL Visual C++
 
@@ -24,15 +24,27 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro knihovny 
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> Vytvoření řešení a projektu testování částí
 
-1. Na **souboru** nabídce zvolte **nový** > **nový projekt**.
+::: moniker range="vs-2019"
 
-2. V dialogovém okně Nový projekt rozbalte **nainstalováno** > **Visual C++** a zvolte **Windows Universal**. Klikněte na tlačítko **aplikace testů jednotek (Universal Windows)** ze seznamu šablon projektu.
+Začněte tím, že vytvoříte nový testovací projekt. Na **souboru** nabídce zvolte **nový** > **projektu**. V **vytvořte nový projekt** dialogového okna, do vyhledávacího pole zadejte "test" a potom nastavte **jazyk** k C++. Klikněte na tlačítko **aplikace testů jednotek (Universal Windows)** ze seznamu šablon projektu.
 
-3. Pojmenujte projekt `RooterLibTests`, zadejte umístění, název řešení `RooterLib`; a ujistěte se, že **vytvořit adresář pro řešení** je zaškrtnuté políčko.
+   ![Vytvoření nového projektu testů UPW](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Začněte tím, že vytvoříte nový testovací projekt. Na **souboru** nabídce zvolte **nový** > **projektu**. V **nový projekt** dialogového okna, rozbalte **nainstalováno** > **Visual C++**  a zvolte **Windows Universal**. Klikněte na tlačítko **aplikace testů jednotek (Universal Windows)** ze seznamu šablon projektu.
+
+::: moniker-end
+
+1. V dialogovém okně Nový projekt rozbalte **nainstalováno** > **Visual C++** a zvolte **Windows Universal**. Klikněte na tlačítko **aplikace testů jednotek (Universal Windows)** ze seznamu šablon projektu.
+
+2. Pojmenujte projekt `RooterLibTests`, zadejte umístění, název řešení `RooterLib`; a ujistěte se, že **vytvořit adresář pro řešení** je zaškrtnuté políčko.
 
      ![Zadejte název řešení a projektu a umístění](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
-4. V novém projektu, otevřete **unittest1.cpp**.
+3. V novém projektu, otevřete **unittest1.cpp**.
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
@@ -67,13 +79,24 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro knihovny 
 
 ## <a name="Add_the_DLL_project_to_the_solution"></a> Přidat do řešení projekt knihovny DLL
 
-1. V **Průzkumníka řešení**, zvolte název řešení. V místní nabídce zvolte **přidat**a potom **přidat nový projekt**.
+::: moniker range="vs-2019"
 
-     ![Vytvoření projektu RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
+V **Průzkumníka řešení**, zvolte název řešení. V místní nabídce zvolte **přidat**a potom **nový projekt**. V **přidat nový projekt** dialogové okno, nastavte **jazyk** k C++ a do vyhledávacího pole zadejte "DLL". Ze seznamu výsledků zvolte **aplikace testů jednotek (Universal Windows - C++/CX)**.
 
-2. V **přidat nový projekt** dialogového okna zvolte **knihovny DLL (aplikace pro UPW)**.
+![Vytvoření projektu RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
-3. Přidejte následující kód, který *RooterLib.h* souboru:
+::: moniker-end
+
+::: moniker range="vs-2017"
+V **Průzkumníka řešení**, zvolte název řešení. V místní nabídce zvolte **přidat**a potom **nový projekt**.
+
+![Vytvoření projektu RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
+
+::: moniker-end
+
+1. V **přidat nový projekt** dialogového okna zvolte **knihovny DLL (aplikace pro UPW)**.
+
+2. Přidejte následující kód, který *RooterLib.h* souboru:
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -99,7 +122,7 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro knihovny 
 
      `CRooterLib` Třída deklaruje konstruktor a `SqareRoot` estimator metody.
 
-4. Přidejte ROOTERLIB_EXPORTS symbol do příkazového řádku.
+3. Přidejte ROOTERLIB_EXPORTS symbol do příkazového řádku.
 
     1. V **Průzkumníka řešení**, zvolte **RooterLib** projektu a klikněte na tlačítko **vlastnosti** z místní nabídky.
 
@@ -109,7 +132,7 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro knihovny 
 
     3. Zvolte  **\<Upravit … >** z **Definice preprocesoru** seznamu a pak přidejte `ROOTERLIB_EXPORTS` v **Definice preprocesoru** dialogové okno.
 
-5. Přidáte minimální implementace deklarovaná funkce. Otevřít *RooterLib.cpp* a přidejte následující kód:
+4. Přidáte minimální implementace deklarovaná funkce. Otevřít *RooterLib.cpp* a přidejte následující kód:
 
     ```cpp
     // constructor

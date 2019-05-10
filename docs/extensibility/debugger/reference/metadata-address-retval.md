@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913884"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460974"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Tato struktura reprezentuje návratovou hodnotu z metody nebo funkce.
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>Podmínky
- tokMethod ID metody tento vrácená hodnota je pro.
+## <a name="members"></a>Členové
+ `tokMethod`\
+ ID metody tento vrácená hodnota je pro.
 
- dwCorType základní typ vrácené hodnoty. Jedná se o hodnotu z `CorElementType` definované ve výčtu [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] souboru comimage_flags sady SDK.
+ `dwCorType`\
+ Základní typ vrácené hodnoty. Jedná se o hodnotu z `CorElementType` definované ve výčtu [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] souboru comimage_flags sady SDK.
 
- dwSigSize velikost podpisu návratovou hodnotu (jak je uložen v `rgSig`).
+ `dwSigSize`\
+ Velikost podpisu návratovou hodnotu (jak je uložen v `rgSig`).
 
- rgSig pole bajtů, které tvoří podpis metody návratovou hodnotu.
+ `rgSig`\
+ Pole bajtů, které tvoří podpis metody návratovou hodnotu.
 
 ## <a name="remarks"></a>Poznámky
  Tato struktura je součástí sjednocení v [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) strukturu, kdy `dwKind` pole `DEBUG_ADDRESS_UNION` struktura je nastavena na `ADDRESS_KIND_RETVAL` (hodnotu z [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) výčet).
@@ -61,7 +68,7 @@ public struct METADATA_ADDRESS_RETVAL {
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

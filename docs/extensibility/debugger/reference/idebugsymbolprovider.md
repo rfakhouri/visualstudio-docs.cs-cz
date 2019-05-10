@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db4e5592fac73f629aba69fa23d1a7163c794875
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98bd86cd219ec2604816e290f75e02d1f9530a53
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915798"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457633"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Toto rozhraní představuje poskytovatele symbol, který obsahuje symboly a typy, vrací jako pole.
@@ -103,5 +103,5 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Rozhraní poskytovatele symbolů ](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

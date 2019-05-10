@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d10c265ba8b77dc8cc434fd8a9c688f1c7188a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ba770dec92054f68c3cb95433d2a2c83bdb37bce
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869194"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457501"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 Získá odkaz na nejvíce odvozené odkaz. Vyhrazeno pro budoucí použití.
@@ -36,8 +39,8 @@ int GetDerivedMostReference( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppDerivedMost`
+## <a name="parameters"></a>Parametry
+ `ppDerivedMost`\
 
  [out] Vrátí [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objekt, který reprezentuje vlastnost nejvíce odvozené.
 
@@ -47,5 +50,5 @@ int GetDerivedMostReference( 
 ## <a name="remarks"></a>Poznámky
  Například, pokud je tato vlastnost popisuje objekt, který implementuje `ClassRoot` , ale která je ve skutečnosti instance `ClassDerived` , která je odvozena od `ClassRoot`, pak tato metoda vrátí [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objektu představuje odkaz na `ClassDerived` objektu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

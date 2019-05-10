@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f1d6742b28badf39a5c9273d2891c2da9a9d5f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4115a1d7e01558f2991503200a76dabbf81993bc
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864864"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461000"
 ---
 # <a name="stepunit"></a>STEPUNIT
 Určuje jednotku kroku pro procházení.
@@ -41,12 +44,15 @@ enum enum_STEPUNIT { 
 };
 ```
 
-## <a name="members"></a>Členové
- Kroky STEP_STATEMENT příkazem.
+## <a name="fields"></a>Pole
+ `STEP_STATEMENT`\
+ Kroky příkazem.
 
- Kroky STEP_LINE čárou.
+ `STEP_LINE`\
+ Kroky po řádku.
 
- STEP_INSTRUCTION kroky podle instrukce.
+ `STEP_INSTRUCTION`\
+ Kroky podle instrukce.
 
 ## <a name="remarks"></a>Poznámky
  Předán jako argument [krok](../../../extensibility/debugger/reference/idebugprocess3-step.md) metody.
@@ -58,6 +64,6 @@ enum enum_STEPUNIT { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

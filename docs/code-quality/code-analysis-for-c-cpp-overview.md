@@ -21,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c4221783768f1e579ecad74fdfaf6e74214edfd
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540820"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226143"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analýza kódu pro C/C++ – přehled
 
@@ -50,11 +50,11 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>Podpora #pragma
 
-Můžete použít `#pragma` směrnice zpracovávat upozornění jako chyby; povolit nebo zakázat upozornění a potlačení upozornění pro jednotlivé řádky kódu. Další informace najdete v tématu [jak: Nastavení vlastností analýzy kódu pro projekty C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
+Můžete použít `#pragma` směrnice zpracovávat upozornění jako chyby; povolit nebo zakázat upozornění a potlačení upozornění pro jednotlivé řádky kódu. Další informace najdete v tématu [direktivy Pragma a klíčové slovo __Pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Podpora poznámky
 
-Poznámky zlepšit přesnost analýzy kódu. Poznámky poskytují další informace o provedení před instrumentací a po podmínky na funkčních parametrů a návratové typy. Další informace najdete v tématu [jak: Určení dalších informací o kódu pomocí __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Poznámky zlepšit přesnost analýzy kódu. Poznámky poskytují další informace o provedení před instrumentací a po podmínky na funkčních parametrů a návratové typy. Další informace najdete v tématu [použití anotací SAL k snižte C /C++ vad kódu](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Spusťte nástroj pro analýzu jako součást zásady vrácení se změnami
 

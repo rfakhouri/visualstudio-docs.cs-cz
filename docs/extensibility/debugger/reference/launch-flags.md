@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ffdf2359b719be0fa3cf0a17ae4ed70bc36b673
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913920"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461065"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Určuje příznaky spuštění ladění.
@@ -43,14 +46,18 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="members"></a>Členové
-LAUNCH_DEBUG spustí proces pro ladění.
+## <a name="fields"></a>Pole
+`LAUNCH_DEBUG`\
+Spustí proces pro ladění.
 
-LAUNCH_NODEBUG spustí proces bez ladění.
+`LAUNCH_NODEBUG`\
+Spustí proces bez ladění.
 
-ZASTARALÉ LAUNCH_ENABLE_ENC NEPOUŽÍVEJTE.
+`LAUNCH_ENABLE_ENC`\
+ZASTARALÉ, NEPOUŽÍVEJTE.
 
-LAUNCH_MERGE_ENV spustí proces a sloučí prostředí s spouštění hostitele.
+`LAUNCH_MERGE_ENV`\
+Spustí proces a sloučí prostředí s spouštění hostitele.
 
 ## <a name="remarks"></a>Poznámky
 Tyto hodnoty jsou předány jako argument [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metody.
@@ -64,6 +71,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

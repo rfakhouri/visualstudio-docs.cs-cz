@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b40d3350fb348afb654ae09785eb0956fb950bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 09919ed73afc9115feffd1f828e9e8d14d1eae79
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869848"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457799"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
@@ -38,9 +41,9 @@ int GetHostMachineName_V7 (
 );
 ```
 
-#### <a name="parameters"></a>Parametry
+## <a name="parameters"></a>Parametry
 
-`pbstrHostMachineName`
+`pbstrHostMachineName`\
 
  [out] Vrátí název počítače, ve kterém je aplikace spuštěna.
 
@@ -53,6 +56,6 @@ Implementace by měla vždy vrátit `E_NOTIMPL`.
 > [!WARNING]
 > Od verze Visual Studio 2005, tato metoda se už nepoužívá a by měl vždy vrátit `E_NOTIMPL`.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

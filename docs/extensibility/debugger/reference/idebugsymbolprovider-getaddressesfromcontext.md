@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7b28010f117b1bb6616250f1e188bd5acb38cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 77306706c15be37a975742be917523095bec587f
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915857"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226435"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Tato metoda mapuje kontext dokumentu do pole adresy ladění.
@@ -42,20 +45,20 @@ int GetAddressesFromContext(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pDocContext`
+## <a name="parameters"></a>Parametry
+ `pDocContext`\
 
  [in] Kontext dokumentu.
 
- `fStatmentOnly`
+ `fStatmentOnly`\
 
  [in] Pokud je hodnota TRUE, omezí ladění adresy, které mají jeden příkaz.
 
- `ppEnumBegAddresses`
+ `ppEnumBegAddresses`\
 
  [out] Vrátí enumerátor pro počáteční ladění adresy přidružené k tomuto prohlášení nebo řádku.
 
- `ppEnumEndAddresses`
+ `ppEnumEndAddresses`\
 
  [out] Vrátí [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerátor pro koncové adresy ladění přidružené k tomuto prohlášení nebo řádku.
 
@@ -67,7 +70,7 @@ int GetAddressesFromContext(
 
  Je možné mít víc adres ladění, jako v případě šablon jeden příkaz.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

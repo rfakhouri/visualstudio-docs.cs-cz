@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a4cd8e01f0538e2551b4b7c1c3ad67a221667
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0228ab75da15099aad3a6f60feca3d71f644b4ff
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955576"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455094"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Ukázkový soubor XSD: Jednoduché schéma
 
@@ -45,3 +45,6 @@ Následující soubor XSD se používá v různých příkladů v dokumentaci k 
  </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> Vzorové společnosti, organizace, produkty, názvy domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené. Žádné jejich spojení se skutečnou společností, organizaci, produktu, název domény, e-mailovou adresu, loga, osoby, místa nebo události je určena ji vyvozovat.

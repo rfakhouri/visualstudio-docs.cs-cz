@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf31379f99c9cde8b0050b080797f3a4e70acea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 82b2e6da51b695bdc6fd2fd031a1f9decf484daa
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916560"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457661"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Získá seznam vlastních prohlížečů, které jsou přidružené k této vlastnosti.
@@ -42,20 +45,20 @@ int GetCustomViewerList(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`celtSkip`
+## <a name="parameters"></a>Parametry
+`celtSkip`\
 
  [in] Počet prohlížečů mají přeskočit.
 
-`celtRequested`
+`celtRequested`\
 
  [in] Počet prohlížeče k načtení (také určuje velikost `rgViewers` pole).
 
-`rgViewers`
+`rgViewers`\
 
  [out v] Pole [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) struktury být vyplněna.
 
-`pceltFetched`
+`pceltFetched`\
 
  [out] Vrátí skutečný počet prohlížeče.
 
@@ -89,7 +92,7 @@ STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested,
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

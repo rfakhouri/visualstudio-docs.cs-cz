@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1227cb697dc78a8833e304d775fb4b1af85a2a69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e4c109906ca586d58753c6471f20ed05adc08de4
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916629"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457749"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 Získá vlastnost nejvíce odvozené vlastnosti.
@@ -36,8 +39,8 @@ int GetDerivedMostProperty ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppDerivedMost`
+## <a name="parameters"></a>Parametry
+ `ppDerivedMost`\
 
  [out] Vrátí [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objekt, který reprezentuje vlastnost nejvíce odvozené.
 
@@ -47,5 +50,5 @@ int GetDerivedMostProperty ( 
 ## <a name="remarks"></a>Poznámky
  Například, pokud je tato vlastnost popisuje objekt, který implementuje `ClassRoot` , ale která je ve skutečnosti instance `ClassDerived` , která je odvozena od `ClassRoot`, pak tato metoda vrátí [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objektu popisující `ClassDerived` objektu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

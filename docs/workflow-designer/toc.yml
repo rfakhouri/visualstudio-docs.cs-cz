@@ -1,9 +1,11 @@
 - name: Vývoj aplikací pomocí Návrháře postupu provádění
-  href: developing-applications-with-the-workflow-designer.md
   items:
+    - name: Vývoj aplikací pomocí Návrháře postupu provádění
+      href: developing-applications-with-the-workflow-designer.md
     - name: Vytvoření projektu pracovního postupu
-      href: creating-a-workflow-project.md
       items:
+        - name: Vytvoření projektu pracovního postupu
+          href: creating-a-workflow-project.md
         - name: Přidání nové položky do projektu pracovního postupu
           href: how-to-add-a-new-item-to-a-workflow-project.md
     - name: Přidání aktivit do panelu nástrojů
@@ -25,11 +27,13 @@
     - name: Přidání komentářů do pracovního postupu v návrháři postupu provádění
       href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
     - name: Návrháři aktivit
-      href: using-the-activity-designers.md
       items:
+        - name: Návrháři aktivit
+          href: using-the-activity-designers.md
         - name: Návrháři aktivit toku řízení
-          href: control-flow-activity-designers.md
           items:
+            - name: Návrháři aktivit toku řízení
+              href: control-flow-activity-designers.md
             - name: Návrhář aktivity DoWhile
               href: dowhile-activity-designer.md
             - name: Návrhář aktivity ForEach<T>
@@ -51,8 +55,9 @@
             - name: Návrhář aktivity While
               href: while-activity-designer.md
         - name: Návrháři aktivit vývojového diagramu
-          href: flowchart-activity-designers.md
           items:
+            - name: Návrháři aktivit vývojového diagramu
+              href: flowchart-activity-designers.md
             - name: Návrhář aktivity Flowchart
               href: flowchart-activity-designer.md
             - name: Návrhář aktivity FlowDecision
@@ -60,8 +65,9 @@
             - name: Návrhář aktivity FlowSwitch<T>
               href: flowswitch-t-activity-designer.md
         - name: Návrháři aktivit stavového stroje
-          href: state-machine-activity-designers.md
           items:
+            - name: Návrháři aktivit stavového stroje
+              href: state-machine-activity-designers.md
             - name: Návrhář aktivity StateMachine
               href: statemachine-activity-designer.md
             - name: Návrhář aktivity State
@@ -71,8 +77,9 @@
             - name: Návrhář aktivity Transition
               href: transition-activity-designer.md
         - name: Návrháři aktivit zasílání zpráv
-          href: messaging-activity-designers.md
           items:
+            - name: Návrháři aktivit zasílání zpráv
+              href: messaging-activity-designers.md
             - name: Návrhář aktivity CorrelationScope
               href: correlationscope-activity-designer.md
             - name: Návrhář aktivity InitializeCorrelation
@@ -88,15 +95,17 @@
             - name: Návrhář aktivity TransactedReceiveScope
               href: transactedreceivescope-activity-designer.md
         - name: Návrháři runtime aktivit
-          href: runtime-activity-designers.md
           items:
+            - name: Návrháři runtime aktivit
+              href: runtime-activity-designers.md
             - name: Návrhář aktivity Persist
               href: persist-activity-designer.md
             - name: Návrhář aktivity TerminateWorkflow
               href: terminateworkflow-activity-designer.md
         - name: Návrháři aktivit primitiv
-          href: primitives-activity-designers.md
           items:
+            - name: Návrháři aktivit primitiv
+              href: primitives-activity-designers.md
             - name: Návrhář aktivity Assign
               href: assign-activity-designer.md
             - name: Návrhář aktivity Delay
@@ -108,8 +117,9 @@
             - name: Návrhář aktivity WriteLine
               href: writeline-activity-designer.md
         - name: Návrháři aktivit transakcí
-          href: transaction-activity-designers.md
           items:
+            - name: Návrháři aktivit transakcí
+              href: transaction-activity-designers.md
             - name: Návrhář aktivity CancellationScope
               href: cancellationscope-activity-designer.md
             - name: Návrhář aktivity CompensableActivity
@@ -121,8 +131,9 @@
             - name: Návrhář aktivity TransactionScope
               href: transactionscope-activity-designer.md
         - name: Návrháři aktivit kolekcí
-          href: collection-activity-designers.md
           items:
+            - name: Návrháři aktivit kolekcí
+              href: collection-activity-designers.md
             - name: Návrhář aktivity AddToCollection<T>
               href: addtocollection-t-activity-designer.md
             - name: Návrhář aktivity ClearCollection<T>
@@ -132,8 +143,9 @@
             - name: Návrhář aktivity RemoveFromCollection<T>
               href: removefromcollection-t-activity-designer.md
         - name: Návrháři aktivit zpracování chyb
-          href: error-handling-activity-designers.md
           items:
+            - name: Návrháři aktivit zpracování chyb
+              href: error-handling-activity-designers.md
             - name: Návrhář aktivity Rethrow
               href: rethrow-activity-designer.md
             - name: Návrhář aktivity Throw
@@ -141,13 +153,15 @@
             - name: Návrhář aktivity TryCatch
               href: trycatch-activity-designer.md
         - name: Návrháři aktivit migrace
-          href: migration-activity-designers.md
           items:
+            - name: Návrháři aktivit migrace
+              href: migration-activity-designers.md
             - name: Návrhář aktivity Interop
               href: interop-activity-designer.md
     - name: Ladění pracovních postupů
-      href: debugging-workflows-with-the-workflow-designer.md
       items:
+        - name: Ladění pracovních postupů
+          href: debugging-workflows-with-the-workflow-designer.md
         - name: Nastavení zarážek v pracovních postupech
           href: how-to-set-breakpoints-in-workflows.md
         - name: Ladění XAML pomocí návrháře postupu provádění
@@ -155,8 +169,9 @@
         - name: Nepodporované scénáře ladění
           href: unsupported-debugging-scenarios-in-the-workflow-designer.md
     - name: Referenční materiály pro uživatelské rozhraní
-      href: workflow-designer-ui-help.md
       items:
+        - name: Referenční materiály pro uživatelské rozhraní
+          href: workflow-designer-ui-help.md
         - name: Dialogové okno Procházet a vybrat typ .NET
           href: browse-and-select-a-dotnet-type-dialog-box.md
         - name: Dialogové okno Definice vlastnosti CorrelatesOn

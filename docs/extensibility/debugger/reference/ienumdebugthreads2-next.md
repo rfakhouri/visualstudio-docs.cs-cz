@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cdc06c8517442047778f2cc023478ede70b2a60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 05044241a1e5b708bffaa73fedd674cea7618715
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865925"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458168"
 ---
 # <a name="ienumdebugthreads2next"></a>IEnumDebugThreads2::Next
 Vrátí další sadu elementů z výčtu.
@@ -40,22 +43,22 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `celt`
+## <a name="parameters"></a>Parametry
+ `celt`\
 
  [in] Počet prvků, které mají načíst. Také určuje maximální velikost `rgelt` pole.
 
- `rgelt`
+ `rgelt`\
 
  [out v] Pole [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) prvků, které mají být vyplněna.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Vrátí počet prvků ve skutečnosti vrácených v `rgelt`.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` pokud menší než požadovaný počet prvků, které může být vrácena; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -9,8 +9,9 @@
     - name: Úloha Aplikace pro datovou vědu a analýzu
       href: data-science-and-analytical-applications-workload.md
 - name: Instalace
-  href: installing-python-support-in-visual-studio.md
   items:
+    - name: Instalace
+      href: installing-python-support-in-visual-studio.md
     - name: Instalace interpretů Pythonu
       href: installing-python-interpreters.md
 - name: Rychlý start
@@ -75,8 +76,9 @@
 - name: Koncepty
   items:
     - name: Projekty Pythonu
-      href: managing-python-projects-in-visual-studio.md
       items:
+        - name: Projekty Pythonu
+          href: managing-python-projects-in-visual-studio.md
         - name: Šablony webových projektů
           href: python-web-application-project-templates.md
         - name: Šablona webového projektu Django
@@ -88,8 +90,9 @@
 - name: Návody
   items:
     - name: Správa prostředí Pythonu
-      href: managing-python-environments-in-visual-studio.md
       items:
+        - name: Správa prostředí Pythonu
+          href: managing-python-environments-in-visual-studio.md
         - name: Výběr interpretu pro projekt
           href: selecting-a-python-environment-for-a-project.md
         - name: Používání souboru requirements.txt pro závislosti
@@ -101,8 +104,9 @@
         - name: Konfigurace webových aplikací pro službu IIS
           href: configure-web-apps-for-iis-windows.md
     - name: Úprava kódu v Pythonu
-      href: editing-python-code-in-visual-studio.md
       items:
+        - name: Úprava kódu v Pythonu
+          href: editing-python-code-in-visual-studio.md
         - name: Formátování kódu
           href: formatting-python-code.md
         - name: Refaktorování kódu
@@ -112,13 +116,15 @@
     - name: Definování vlastních příkazů nabídky
       href: defining-custom-python-project-commands.md
     - name: Interaktivní Python (REPL)
-      href: python-interactive-repl-in-visual-studio.md
       items:
+        - name: Interaktivní Python (REPL)
+          href: python-interactive-repl-in-visual-studio.md
         - name: Použití IPythonu REPL
           href: interactive-repl-ipython.md
     - name: Ladění
-      href: debugging-python-in-visual-studio.md
       items:
+        - name: Ladění
+          href: debugging-python-in-visual-studio.md
         - name: Ladění kódu na vzdálených linuxových počítačích
           href: debugging-python-code-on-remote-linux-machines.md
     - name: Publikování do služby Azure App Service na Linuxu

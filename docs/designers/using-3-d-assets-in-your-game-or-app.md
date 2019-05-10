@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892902"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459114"
 ---
-# <a name="use-3d-assets-in-your-game-or-app"></a>Používání 3D prostředků ve hře nebo aplikaci
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Postupy: Používání 3D prostředků ve hře nebo aplikaci
 
 Tento článek popisuje, jak můžete pomocí sady Visual Studio ke zpracování 3D prostředků a zahrnout je do sestavení.
 
@@ -34,7 +34,9 @@ Před nasazením 3D prostředků ve vašem sestavení v rámci Visual Studio obs
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Chcete-li přidat vlastní sestavení do projektu
 
-1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **závislosti sestavení** > **přizpůsobení sestavení**. **Visual C++ soubory vlastního nastavení sestavení** zobrazí se dialogové okno.
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **závislosti sestavení** > **přizpůsobení sestavení**.
+
+   **Visual C++ soubory vlastního nastavení sestavení** zobrazí se dialogové okno.
 
 2. V části **dostupné soubory úpravy sestavení**, zaškrtněte políčka, která odpovídají typům aktiv, které chcete použít v projektu, jak je popsáno v následující tabulce:
 
@@ -47,11 +49,14 @@ Před nasazením 3D prostředků ve vašem sestavení v rámci Visual Studio obs
 3. Zvolte **OK** tlačítko.
 
 ## <a name="include-assets-in-your-build"></a>Zahrnout prostředky v sestavení
- Teď, když váš projekt ví o různých druzích 3D prostředky, které chcete použít, dalším krokem je určit, které soubory jsou 3D aktiv a které druhy aktiv se.
+
+Teď, když váš projekt ví o různých druzích 3D prostředky, které chcete použít, dalším krokem je určit, které soubory jsou 3D aktiv a jaké druhy prostředků budou.
 
 ### <a name="to-add-an-asset-to-your-build"></a>Přidání prostředků vašeho sestavení
 
-1. V **Průzkumníka řešení**ve vašem projektu otevřete místní nabídku aktiva a klikněte na tlačítko **vlastnosti**. Asset **stránku vlastností** zobrazí se dialogové okno.
+1. V **Průzkumníka řešení**ve vašem projektu otevřete místní nabídku aktiva a klikněte na tlačítko **vlastnosti**.
+
+   Asset **stránku vlastností** zobrazí se dialogové okno.
 
 2. Ujistěte se, že **konfigurace** a **platformy** vlastnosti jsou nastaveny na hodnoty, u kterých chcete použít své změny.
 
@@ -76,11 +81,13 @@ Vlastnosti kanálu obsahu každého souboru prostředků můžete nastavit tak, 
 
 ### <a name="to-configure-content-pipeline-properties"></a>Konfigurace vlastností kanálu obsahu
 
-1. V **Průzkumníka řešení**ve vašem projektu otevřete místní nabídku pro soubor aktiv a klikněte na tlačítko **vlastnosti**. Asset **stránku vlastností** zobrazí se dialogové okno.
+1. V **Průzkumníka řešení**ve vašem projektu otevřete místní nabídku pro soubor aktiv a klikněte na tlačítko **vlastnosti**.
+
+   Asset **stránku vlastností** zobrazí se dialogové okno.
 
 2. Ujistěte se, že **konfigurace** a **platformy** vlastnosti jsou nastaveny na hodnoty, které chcete použít pro své změny.
 
-3. V části **vlastnosti konfigurace**, vyberte uzel obsahu kanálu – například **obsah kanálu obrazu** pro prostředky textury a obrazu – a v tabulce vlastností nastavte vlastnosti na odpovídající hodnoty. Například, chcete-li generování Mipmap pro textury během sestavení, nastavte **generovat Mips** vlastnost **Ano**.
+3. V části **vlastnosti konfigurace**, vyberte uzel obsahu kanálu (třeba **obsah kanálu obrazu** pro prostředky textury a obrazu) a v tabulce vlastností nastavte vlastnosti na odpovídající hodnoty. Například, chcete-li generování Mipmap pro textury během sestavení, nastavte **generovat Mips** vlastnost **Ano**.
 
 4. Zvolte **OK** tlačítko.
 
@@ -208,6 +215,6 @@ cbuffer MiscVars : register(b3)
 |-----------|-----------------|
 |[Postupy: Export textury obsahující mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Popisuje způsob použití obsahu kanálu obrazu pro export textury obsahující předem vypočtené mipmapy.|
 |[Postupy: Export textury s přednásobeným alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Popisuje způsob použití obsahu kanálu obrazu pro export textury obsahující předem vynásobené hodnoty alfa.|
-|[Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Popisuje způsob použití obsahu kanálu obrázku k exportu textur, který lze použít v aplikaci Direct2D nebo JavaScript.|
+|[Postupy: Export textury pro použití s Direct2D nebo JavaScript aplikace](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Popisuje způsob použití obsahu kanálu obrázku k exportu textur, který lze použít v aplikaci Direct2D nebo JavaScript.|
 |[Práce s 3D prostředky pro hry a aplikace](../designers/working-with-3-d-assets-for-games-and-apps.md)|Popisuje nástroje pro úpravy, které poskytuje Visual Studio pro vytváření a manipulaci se 3D prostředky, které zahrnují textury a obrázky, 3D modely a shadery.|
 |[Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)|Popisuje, jak exportovat shader z Návrháře shaderu.|

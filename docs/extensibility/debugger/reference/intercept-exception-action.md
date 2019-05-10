@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cac3e4fb6c072a26ede753213f6546c2ff50afa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d50ce2b695fa332057abd91ab54c5966c277ba45
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914058"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461267"
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
 Určuje, jaká opatření je třeba provést při zachycení výjimky.
@@ -39,8 +42,11 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 }
 ```
 
-#### <a name="parameters"></a>Parametry
-IEA_INTERCEPT umožňuje zachycení na aktuální výjimku. Toto je jediná hodnota podporovaná v současné době a musí být zadán.
+## <a name="parameters"></a>Parametry
+
+`IEA_INTERCEPT`\
+
+Povolí zachycení na aktuální výjimku. Toto je jediná hodnota podporovaná v současné době a musí být zadán.
 
 ## <a name="remarks"></a>Poznámky
 Tyto hodnoty jsou předány [interceptcurrentexception –](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) metody.
@@ -52,6 +58,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f73b08d4a8a5380fb72cdd64db3865afafefda87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08fd3c2d82e3e2bef3098770fdfbcf7cdfe95f7c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915236"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224042"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 Tato metoda načte objekt, který představuje tento vizualizér.
@@ -36,8 +39,8 @@ int GetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppObject`
+## <a name="parameters"></a>Parametry
+ `ppObject`\
 
  [out] Objekt reprezentované tento vizualizér
 
@@ -47,7 +50,7 @@ int GetObjectForVisualizer(
 ## <a name="remarks"></a>Poznámky
  `GetObjectForVisualizer` může vrátit verze uložené v mezipaměti objektu. Pokud volající chce se ujistit, zda je aktuální objekt, a bude volat [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

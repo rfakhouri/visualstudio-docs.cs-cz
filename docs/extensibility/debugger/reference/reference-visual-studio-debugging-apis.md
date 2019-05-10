@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f4a1c30542db5446c6f39054eb8ef4eaae19bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1e4c9f2d4edcd0e8c87207c2a1f3864b951c3e6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913443"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458444"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Referenční informace (Rozhraní API pro ladění sady Visual Studio)
 
@@ -35,6 +35,6 @@ Obsahuje dokumentaci pro rozhraní, výčty a struktury API ladění Visual Stud
 
 Obsahuje seznam podmínek spojené s laděním a jejich definice.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Rozšiřitelnost programu Visual Studio Debugger](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -1,12 +1,15 @@
 - name: "Vývoj pro Office a\_SharePoint v sadě Visual Studio"
-  href: office-and-sharepoint-development-in-visual-studio.md
   items:
+    - name: "Vývoj pro Office a\_SharePoint v sadě Visual Studio"
+      href: office-and-sharepoint-development-in-visual-studio.md
     - name: Vytváření doplňků VSTO pro Office
-      href: create-vsto-add-ins-for-office-by-using-visual-studio.md
       items:
+        - name: Vytváření doplňků VSTO pro Office
+          href: create-vsto-add-ins-for-office-by-using-visual-studio.md
         - name: Začínáme
-          href: getting-started-office-development-in-visual-studio.md
           items:
+            - name: Začínáme
+              href: getting-started-office-development-in-visual-studio.md
             - name: Přehled vývoje řešení pro systém Office
               href: office-solutions-development-overview-vsto.md
             - name: "Změny v\_návrhu projektů Office cílených na rozhraní .NET Framework 4 nebo .NET Framework 4.5"
@@ -14,8 +17,9 @@
             - name: Dostupné funkce podle aplikací systému Office a typů projektu
               href: features-available-by-office-application-and-project-type.md
             - name: Konfigurace počítače pro vývoj řešení pro systém Office
-              href: configuring-a-computer-to-develop-office-solutions.md
               items:
+                - name: Konfigurace počítače pro vývoj řešení pro systém Office
+                  href: configuring-a-computer-to-develop-office-solutions.md
                 - name: Konfigurace počítače pro vývoj řešení pro Office
                   href: how-to-configure-a-computer-to-develop-office-solutions.md
                 - name: Instalace nástrojů Visual Studio Tools for Office runtime Redistributable
@@ -35,11 +39,13 @@
             - name: Další zdroje informací o vývoji řešení pro systém Office
               href: additional-resources-for-developing-office-solutions.md
         - name: Upgradování a migrace řešení pro systém Office
-          href: upgrading-and-migrating-office-solutions.md
           items:
+            - name: Upgradování a migrace řešení pro systém Office
+              href: upgrading-and-migrating-office-solutions.md
             - name: Migrace řešení Office na rozhraní .NET Framework 4 nebo novější
-              href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
               items:
+                - name: Migrace řešení Office na rozhraní .NET Framework 4 nebo novější
+                  href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
                 - name: Požadované změny pro spouštění projektů Office
                   href: required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
                 - name: "Aktualizace projektů Excel a\_Word"
@@ -49,15 +55,17 @@
                 - name: "Aktualizace oblastí formulářů v\_projektech Outlook"
                   href: updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
         - name: "Architektura řešení pro systém Office v\_sadě Visual Studio"
-          href: architecture-of-office-solutions-in-visual-studio.md
           items:
+            - name: "Architektura řešení pro systém Office v\_sadě Visual Studio"
+              href: architecture-of-office-solutions-in-visual-studio.md
             - name: Architektura přizpůsobení na úrovni dokumentu
               href: architecture-of-document-level-customizations.md
             - name: Architektura doplňků VSTO
               href: architecture-of-vsto-add-ins.md
             - name: Přehled nástrojů Visual Studio Tools for Office runtime
-              href: visual-studio-tools-for-office-runtime-overview.md
               items:
+                - name: Přehled nástrojů Visual Studio Tools for Office runtime
+                  href: visual-studio-tools-for-office-runtime-overview.md
                 - name: Scénáře instalace nástrojů Visual Studio Tools for Office runtime
                   href: visual-studio-tools-for-office-runtime-installation-scenarios.md
                 - name: "Sestavení v\_nástrojích Visual Studio Tools for Office runtime"
@@ -67,8 +75,9 @@
             - name: Přehled přizpůsobených vlastností dokumentu
               href: custom-document-properties-overview.md
         - name: Navrhování a tvorba řešení pro systém Office
-          href: designing-and-creating-office-solutions.md
           items:
+            - name: Navrhování a tvorba řešení pro systém Office
+              href: designing-and-creating-office-solutions.md
             - name: Přehled šablon projektů Microsoft Office Project
               href: office-project-templates-overview.md
             - name: "Vytváření projektů pro Office v\_sadě Visual Studio"
@@ -86,8 +95,9 @@
             - name: Nastavení informací o konfiguraci u řešení pro Office
               href: how-to-set-up-configuration-information-for-an-office-solution.md
             - name: "Použití funkcí systému Office v\_aplikaci Visual Studio"
-              href: using-office-functionality-inside-of-visual-studio.md
               items:
+                - name: "Použití funkcí systému Office v\_aplikaci Visual Studio"
+                  href: using-office-functionality-inside-of-visual-studio.md
                 - name: "Ochrana dokumentů v\_řešeních na úrovni dokumentu"
                   href: document-protection-in-document-level-solutions.md
                 - name: "Přehled správy přístupových práv k\_informacím a\_rozšíření spravovaného kódu"
@@ -99,11 +109,13 @@
                 - name: Otevření řešení pro Office bez spuštění kódu
                   href: how-to-open-office-solutions-without-running-code.md
         - name: Vývoj řešení pro systém Office
-          href: developing-office-solutions.md
           items:
+            - name: Vývoj řešení pro systém Office
+              href: developing-office-solutions.md
             - name: "Psaní kódu v\_řešeních pro systém Office"
-              href: writing-code-in-office-solutions.md
               items:
+                - name: "Psaní kódu v\_řešeních pro systém Office"
+                  href: writing-code-in-office-solutions.md
                 - name: "Volitelné parametry v\_řešeních pro systém Office"
                   href: optional-parameters-in-office-solutions.md
                 - name: "Pozdní vazba v\_řešeních pro systém Office"
@@ -117,8 +129,9 @@
                 - name: Spolupráce na vývoji řešení pro systém Office
                   href: collaborative-development-of-office-solutions.md
             - name: Programování doplňků VSTO
-              href: programming-vsto-add-ins.md
               items:
+                - name: Programování doplňků VSTO
+                  href: programming-vsto-add-ins.md
                 - name: Zvýšení výkonu doplňku VSTO
                   href: improving-the-performance-of-a-vsto-add-in.md
                 - name: "Rozšíření wordových dokumentů a excelových sešitů v\_doplňcích VSTO za běhu"
@@ -130,11 +143,13 @@
                 - name: Přizpůsobení funkcí uživatelského rozhraní pomocí rozšiřujících rozhraní
                   href: customizing-ui-features-by-using-extensibility-interfaces.md
             - name: Programování přizpůsobení na úrovni dokumentu
-              href: programming-document-level-customizations.md
               items:
+                - name: Programování přizpůsobení na úrovni dokumentu
+                  href: programming-document-level-customizations.md
                 - name: Kombinování přizpůsobení na úrovních VBA a dokumentu
-                  href: combining-vba-and-document-level-customizations.md
                   items:
+                    - name: Kombinování přizpůsobení na úrovních VBA a dokumentu
+                      href: combining-vba-and-document-level-customizations.md
                     - name: "Vystavení kódu v\_projektu Visual Basic pro VBA"
                       href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
                     - name: "Vystavení kódu v\_projektu Visual C# pro VBA"
@@ -144,25 +159,29 @@
                     - name: "Návod: Volání kódu z\_jazyka VBA v\_projektu jazyka Visual C#"
                       href: walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md
                 - name: "Správa dokumentů na serveru s\_použitím třídy ServerDocument"
-                  href: managing-documents-on-a-server-by-using-the-serverdocument-class.md
                   items:
+                    - name: "Správa dokumentů na serveru s\_použitím třídy ServerDocument"
+                      href: managing-documents-on-a-server-by-using-the-serverdocument-class.md
                     - name: "Odebrání rozšíření spravovaného kódu z\_dokumentů"
                       href: how-to-remove-managed-code-extensions-from-documents.md
                     - name: "Připojení rozšíření spravovaného kódu k\_dokumentům"
                       href: how-to-attach-managed-code-extensions-to-documents.md
             - name: Přizpůsobení uživatelského rozhraní systému Office
-              href: office-ui-customization.md
               items:
+                - name: Přizpůsobení uživatelského rozhraní systému Office
+                  href: office-ui-customization.md
                 - name: "Ovládací prvky v\_dokumentech Office"
-                  href: controls-on-office-documents.md
                   items:
+                    - name: "Ovládací prvky v\_dokumentech Office"
+                      href: controls-on-office-documents.md
                     - name: Přehled hostitelských položek a hostitelských ovládacích prvků
                       href: host-items-and-host-controls-overview.md
                     - name: Programová omezení hostitelských položek a hostitelských ovládacích prvků
                       href: programmatic-limitations-of-host-items-and-host-controls.md
                     - name: "Přehled ovládacích prvků Windows Forms v\_dokumentech Office"
-                      href: windows-forms-controls-on-office-documents-overview.md
                       items:
+                        - name: "Přehled ovládacích prvků Windows Forms v\_dokumentech Office"
+                          href: windows-forms-controls-on-office-documents-overview.md
                         - name: "Omezení ovládacích prvků Windows Forms v\_dokumentech Office"
                           href: limitations-of-windows-forms-controls-on-office-documents.md
                         - name: Přidání ovládacích prvků Windows Forms do dokumentů Office
@@ -184,13 +203,15 @@
                         - name: Skrytí ovládacích prvků na listech při tisku
                           href: how-to-hide-controls-on-worksheets-when-printing.md
                     - name: Přidání ovládacích prvků do dokumentů Office za běhu
-                      href: adding-controls-to-office-documents-at-run-time.md
                       items:
+                        - name: Přidání ovládacích prvků do dokumentů Office za běhu
+                          href: adding-controls-to-office-documents-at-run-time.md
                         - name: "Uchování dynamických ovládacích prvků v\_dokumentech systému Office"
                           href: persisting-dynamic-controls-in-office-documents.md
                 - name: Přehled pásu karet
-                  href: ribbon-overview.md
                   items:
+                    - name: Přehled pásu karet
+                      href: ribbon-overview.md
                     - name: "Začínáme s\_přizpůsobením pásu karet"
                       href: how-to-get-started-customizing-the-ribbon.md
                     - name: Návrhář pásu karet
@@ -222,8 +243,9 @@
                     - name: 'Návod: Vytvoření vlastní karty pomocí kódu XML pásu karet'
                       href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
                 - name: Přehled podokna akcí
-                  href: actions-pane-overview.md
                   items:
+                    - name: Přehled podokna akcí
+                      href: actions-pane-overview.md
                     - name: Přidání podokna akcí do wordových dokumentů nebo excelových sešitů
                       href: how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md
                     - name: "Správa rozložení ovládacích prvků v\_podoknech akcí"
@@ -235,8 +257,9 @@
                     - name: "Návod: Vložení textu do dokumentu z\_podokna akcí"
                       href: walkthrough-inserting-text-into-a-document-from-an-actions-pane.md
                 - name: Vlastní podokna úloh
-                  href: custom-task-panes.md
                   items:
+                    - name: Vlastní podokna úloh
+                      href: custom-task-panes.md
                     - name: Přidání vlastního podokna úloh do aplikace
                       href: how-to-add-a-custom-task-pane-to-an-application.md
                     - name: "Návod: Automatizace aplikace z\_vlastního podokna úloh"
@@ -256,11 +279,13 @@
                 - name: 'Návod: Shromažďování dat pomocí formuláře Windows'
                   href: walkthrough-collecting-data-using-a-windows-form.md
             - name: "Data v\_řešeních pro systém Office"
-              href: data-in-office-solutions.md
               items:
+                - name: "Data v\_řešeních pro systém Office"
+                  href: data-in-office-solutions.md
                 - name: "Vázání dat k\_ovládacím prvkům v\_řešeních pro systém Office"
-                  href: binding-data-to-controls-in-office-solutions.md
                   items:
+                    - name: "Vázání dat k\_ovládacím prvkům v\_řešeních pro systém Office"
+                      href: binding-data-to-controls-in-office-solutions.md
                     - name: "Naplnění listů daty z\_databáze"
                       href: how-to-populate-worksheets-with-data-from-a-database.md
                     - name: "Naplnění dokumentů daty z\_databáze"
@@ -284,18 +309,21 @@
                     - name: "Návod: Komplexní datové vazby v\_projektu doplňku VSTO"
                       href: walkthrough-complex-data-binding-in-vsto-add-in-project.md
                 - name: Přehled vlastních částí XML
-                  href: custom-xml-parts-overview.md
                   items:
+                    - name: Přehled vlastních částí XML
+                      href: custom-xml-parts-overview.md
                     - name: Přidání vlastních částí XML do přizpůsobení na úrovni dokumentu
                       href: how-to-add-custom-xml-parts-to-document-level-customizations.md
                     - name: "Přidání vlastních částí XML do dokumentů s\_použitím doplňků VSTO"
                       href: how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md
                 - name: "Data uložená v\_mezipaměti v\_přizpůsobeních na úrovni dokumentu"
-                  href: cached-data-in-document-level-customizations.md
                   items:
+                    - name: "Data uložená v\_mezipaměti v\_přizpůsobeních na úrovni dokumentu"
+                      href: cached-data-in-document-level-customizations.md
                     - name: Ukládaní dat do mezipaměti
-                      href: caching-data.md
                       items:
+                        - name: Ukládaní dat do mezipaměti
+                          href: caching-data.md
                         - name: "Ukládání dat do mezipaměti pro použití v\_režimu offline nebo na serveru"
                           href: how-to-cache-data-for-use-offline-or-on-a-server.md
                         - name: "Ukládání zdroje dat v\_dokumentu Office do mezipaměti prostřednictvím kódu programu"
@@ -305,8 +333,9 @@
                         - name: "Návod: Vytvoření vztahu seznam-podrobnosti s\_použitím datové sady v\_mezipaměti"
                           href: walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md
                     - name: "Přístup k\_datům v\_dokumentech na serveru"
-                      href: accessing-data-in-documents-on-the-server.md
                       items:
+                        - name: "Přístup k\_datům v\_dokumentech na serveru"
+                          href: accessing-data-in-documents-on-the-server.md
                         - name: 'Návod: Vložení dat do sešitu na serveru'
                           href: walkthrough-inserting-data-into-a-workbook-on-a-server.md
                         - name: "Návod: Načtení dat uložených v\_mezipaměti ze sešitu na serveru"
@@ -314,8 +343,9 @@
                         - name: "Návod: Změna dat uložených v\_mezipaměti sešitu na serveru"
                           href: walkthrough-changing-cached-data-in-a-workbook-on-a-server.md
                 - name: "Schémata XML a data v\_přizpůsobeních na úrovni dokumentu"
-                  href: xml-schemas-and-data-in-document-level-customizations.md
                   items:
+                    - name: "Schémata XML a data v\_přizpůsobeních na úrovni dokumentu"
+                      href: xml-schemas-and-data-in-document-level-customizations.md
                     - name: "Mapování schémat na wordové dokumenty v\_sadě Visual Studio"
                       href: how-to-map-schemas-to-word-documents-inside-visual-studio.md
                     - name: "Mapování schémat na listy v\_sadě Visual Studio"
@@ -325,8 +355,9 @@
             - name: Jak ovlivňuje automatické ukládání řešení pro Office
               href: how-autosave-impacts-office-solutions.md
             - name: "Řešení potíží s\_řešeními pro systém Office"
-              href: troubleshooting-office-solutions.md
               items:
+                - name: "Řešení potíží s\_řešeními pro systém Office"
+                  href: troubleshooting-office-solutions.md
                 - name: "Řešení potíží s\_chybami v\_řešeních pro systém Office"
                   href: troubleshooting-errors-in-office-solutions.md
                 - name: Opětovné povolení zakázaného doplňku VSTO
@@ -346,14 +377,17 @@
             - name: "Usnadnění v\_projektech pro systém Office"
               href: accessibility-in-office-projects.md
         - name: Řešení pro aplikaci Excel
-          href: excel-solutions.md
           items:
+            - name: Řešení pro aplikaci Excel
+              href: excel-solutions.md
             - name: Přehled modelu objektů aplikace Excel
-              href: excel-object-model-overview.md
               items:
+                - name: Přehled modelu objektů aplikace Excel
+                  href: excel-object-model-overview.md
                 - name: Práce se sešity
-                  href: working-with-workbooks.md
                   items:
+                    - name: Práce se sešity
+                      href: working-with-workbooks.md
                     - name: Vytváření nových sešitů prostřednictvím kódu programu
                       href: how-to-programmatically-create-new-workbooks.md
                     - name: Otevírání sešitů prostřednictvím kódu programu
@@ -369,8 +403,9 @@
                     - name: Otevírání textových souborů jako sešitů prostřednictvím kódu programu
                       href: how-to-programmatically-open-text-files-as-workbooks.md
                 - name: "Práce s\_listy"
-                  href: working-with-worksheets.md
                   items:
+                    - name: "Práce s\_listy"
+                      href: working-with-worksheets.md
                     - name: Přidávání nových listů do sešitů prostřednictvím kódu programu
                       href: how-to-programmatically-add-new-worksheets-to-workbooks.md
                     - name: Kopírování listů prostřednictvím kódu programu
@@ -406,8 +441,9 @@
                     - name: Řazení dat na listech prostřednictvím kódu programu
                       href: how-to-programmatically-sort-data-in-worksheets.md
                 - name: "Práce s\_oblastmi"
-                  href: working-with-ranges.md
                   items:
+                    - name: "Práce s\_oblastmi"
+                      href: working-with-ranges.md
                     - name: "Odkazování na oblasti listů v\_kódu programu"
                       href: how-to-programmatically-refer-to-worksheet-ranges-in-code.md
                     - name: "Automatické naplňování oblastí s\_přírůstkově se měnícími daty prostřednictvím kódu programu"
@@ -425,8 +461,9 @@
                     - name: "Zobrazování řetězců v\_buňkách listů prostřednictvím kódu programu"
                       href: how-to-programmatically-display-a-string-in-a-worksheet-cell.md
             - name: "Automatizace v\_aplikaci Excel s\_použitím rozšířených objektů"
-              href: automating-excel-by-using-extended-objects.md
               items:
+                - name: "Automatizace v\_aplikaci Excel s\_použitím rozšířených objektů"
+                  href: automating-excel-by-using-extended-objects.md
                 - name: Hostitelská položka Workbook
                   href: workbook-host-item.md
                 - name: Hostitelská položka Worksheet
@@ -474,14 +511,17 @@
         - name: Řešení pro aplikaci InfoPath
           href: infopath-solutions.md
         - name: Řešení pro aplikaci Outlook
-          href: outlook-solutions.md
           items:
+            - name: Řešení pro aplikaci Outlook
+              href: outlook-solutions.md
             - name: Přehled modelu objektů aplikace Outlook
-              href: outlook-object-model-overview.md
               items:
+                - name: Přehled modelu objektů aplikace Outlook
+                  href: outlook-object-model-overview.md
                 - name: "Práce s\_položkami kontaktů"
-                  href: working-with-contact-items.md
                   items:
+                    - name: "Práce s\_položkami kontaktů"
+                      href: working-with-contact-items.md
                     - name: Přístup ke kontaktům Outlooku prostřednictvím kódu programu
                       href: how-to-programmatically-access-outlook-contacts.md
                     - name: Hledání konkrétního kontaktu prostřednictvím kódu programu
@@ -493,8 +533,9 @@
                     - name: Odstraňování kontaktů Outlooku prostřednictvím kódu programu
                       href: how-to-programmatically-delete-outlook-contacts.md
                 - name: "Práce s\_položkami pošty"
-                  href: working-with-mail-items.md
                   items:
+                    - name: "Práce s\_položkami pošty"
+                      href: working-with-mail-items.md
                     - name: Vytváření položek e-mailu prostřednictvím kódu programu
                       href: how-to-programmatically-create-an-e-mail-item.md
                     - name: Posílání e-mailů prostřednictvím kódu programu
@@ -508,8 +549,9 @@
                     - name: Načítání nepřečtených zpráv ze složky Doručená pošta prostřednictvím kódu programu
                       href: how-to-programmatically-retrieve-unread-messages-from-the-inbox.md
                 - name: Práce se složkami
-                  href: working-with-folders.md
                   items:
+                    - name: Práce se složkami
+                      href: working-with-folders.md
                     - name: "Hledání v\_rámci konkrétní složky prostřednictvím kódu programu"
                       href: how-to-programmatically-search-within-a-specific-folder.md
                     - name: Načítání složek podle názvu prostřednictvím kódu programu
@@ -521,8 +563,9 @@
                     - name: "Přesouvání položek v\_Outlooku prostřednictvím kódu programu"
                       href: how-to-programmatically-move-items-in-outlook.md
                 - name: "Práce s\_položkami kalendáře"
-                  href: working-with-calendar-items.md
                   items:
+                    - name: "Práce s\_položkami kalendáře"
+                      href: working-with-calendar-items.md
                     - name: Vytváření událostí prostřednictvím kódu programu
                       href: how-to-programmatically-create-appointments.md
                     - name: Odstraňování událostí prostřednictvím kódu programu
@@ -534,8 +577,9 @@
                 - name: Určení aktuální položky Outlooku prostřednictvím kódu programu
                   href: how-to-programmatically-determine-the-current-outlook-item.md
             - name: Vytváření oblastí formulářů aplikace Outlook
-              href: creating-outlook-form-regions.md
               items:
+                - name: Vytváření oblastí formulářů aplikace Outlook
+                  href: creating-outlook-form-regions.md
                 - name: Pokyny pro vytváření oblastí formulářů aplikace Outlook
                   href: guidelines-for-creating-outlook-form-regions.md
                 - name: Přidání oblasti formuláře do projektu doplňku pro Outlook
@@ -555,23 +599,27 @@
             - name: 'Návod: Vytvoření prvního doplňku VSTO pro Outlook'
               href: walkthrough-creating-your-first-vsto-add-in-for-outlook.md
         - name: Řešení pro aplikaci PowerPoint
-          href: powerpoint-solutions.md
           items:
+            - name: Řešení pro aplikaci PowerPoint
+              href: powerpoint-solutions.md
             - name: 'Návod: Vytvoření prvního doplňku VSTO pro PowerPoint'
               href: walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md
         - name: Projektová řešení
-          href: project-solutions.md
           items:
+            - name: Projektová řešení
+              href: project-solutions.md
             - name: 'Návod: Vytvoření prvního doplňku VSTO pro Project'
               href: walkthrough-creating-your-first-vsto-add-in-for-project.md
         - name: Řešení pro aplikaci Visio
-          href: visio-solutions.md
           items:
+            - name: Řešení pro aplikaci Visio
+              href: visio-solutions.md
             - name: Přehled modelu objektů aplikace Visio
               href: visio-object-model-overview.md
             - name: "Práce s\_dokumenty aplikace Visio"
-              href: working-with-visio-documents.md
               items:
+                - name: "Práce s\_dokumenty aplikace Visio"
+                  href: working-with-visio-documents.md
                 - name: Vytváření nových dokumentů aplikace Visio prostřednictvím kódu programu
                   href: how-to-programmatically-create-new-visio-documents.md
                 - name: Otevírání dokumentů aplikace Visio prostřednictvím kódu programu
@@ -583,21 +631,25 @@
                 - name: Tisk dokumentů aplikace Visio prostřednictvím kódu programu
                   href: how-to-programmatically-print-visio-documents.md
             - name: "Práce s\_obrazci aplikace Visio"
-              href: working-with-visio-shapes.md
               items:
+                - name: "Práce s\_obrazci aplikace Visio"
+                  href: working-with-visio-shapes.md
                 - name: Přidávání obrazců do dokumentů aplikace Visio prostřednictvím kódu programu
                   href: how-to-programmatically-add-shapes-to-a-visio-document.md
                 - name: "Kopírování a\_vkládání obrazců do dokumentů aplikace Visio prostřednictvím kódu programu"
                   href: how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md
         - name: Řešení pro Word
-          href: word-solutions.md
           items:
+            - name: Řešení pro Word
+              href: word-solutions.md
             - name: Přehled modelu objektů aplikace Word
-              href: word-object-model-overview.md
               items:
+                - name: Přehled modelu objektů aplikace Word
+                  href: word-object-model-overview.md
                 - name: "Práce s\_dokumenty"
-                  href: working-with-documents.md
                   items:
+                    - name: "Práce s\_dokumenty"
+                      href: working-with-documents.md
                     - name: Vytváření nových dokumentů prostřednictvím kódu programu
                       href: how-to-programmatically-create-new-documents.md
                     - name: Otevírání existujících dokumentů prostřednictvím kódu programu
@@ -625,8 +677,9 @@
                     - name: "Odstraňování všech komentářů z\_dokumentů prostřednictvím kódu programu"
                       href: how-to-programmatically-remove-all-comments-from-documents.md
                 - name: "Práce s\_textem v\_dokumentech"
-                  href: working-with-text-in-documents.md
                   items:
+                    - name: "Práce s\_textem v\_dokumentech"
+                      href: working-with-text-in-documents.md
                     - name: "Definování a\_výběr oblastí v\_dokumentech prostřednictvím kódu programu"
                       href: how-to-programmatically-define-and-select-ranges-in-documents.md
                     - name: "Načítání počátečních a\_koncových znaků oblastí prostřednictvím kódu programu"
@@ -660,8 +713,9 @@
                     - name: "Přidávání komentářů k\_textu dokumentů prostřednictvím kódu programu"
                       href: how-to-programmatically-add-comments-to-text-in-documents.md
                 - name: "Práce s\_tabulkami"
-                  href: working-with-tables.md
                   items:
+                    - name: "Práce s\_tabulkami"
+                      href: working-with-tables.md
                     - name: Vytváření tabulek ve Wordu prostřednictvím kódu programu
                       href: how-to-programmatically-create-word-tables.md
                     - name: Vkládání vlastností dokumentu do tabulek ve Wordu prostřednictvím kódu programu
@@ -671,8 +725,9 @@
                     - name: "Přidávání textu a\_formátování do buněk tabulek ve Wordu prostřednictvím kódu programu"
                       href: how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md
             - name: "Automatizace v\_aplikaci Word s\_použitím rozšířených objektů"
-              href: automating-word-by-using-extended-objects.md
               items:
+                - name: "Automatizace v\_aplikaci Word s\_použitím rozšířených objektů"
+                  href: automating-word-by-using-extended-objects.md
                 - name: Hostitelská položka Document
                   href: document-host-item.md
                 - name: Ovládací prvky obsahu
@@ -712,8 +767,9 @@
         - name: Ladění projektů Office
           href: debugging-office-projects.md
         - name: Zabezpečení řešení pro systém Office
-          href: securing-office-solutions.md
           items:
+            - name: Zabezpečení řešení pro systém Office
+              href: securing-office-solutions.md
             - name: Udělení důvěry řešením pro systém Office
               href: granting-trust-to-office-solutions.md
             - name: Udělení důvěry dokumentům
@@ -731,20 +787,23 @@
             - name: Řešení potíží se zabezpečením řešení pro systém Office
               href: troubleshooting-office-solution-security.md
         - name: Nasazení řešení Office
-          href: deploying-an-office-solution.md
           items:
+            - name: Nasazení řešení Office
+              href: deploying-an-office-solution.md
             - name: "Nasazení řešení Office s\_použitím technologie ClickOnce"
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: "Nasazení řešení Office s\_použitím Instalační služby systému Windows"
               href: deploying-an-office-solution-by-using-windows-installer.md
             - name: "Řešení potíží s\_nasazením řešení pro systém Office"
-              href: troubleshooting-office-solution-deployment.md
               items:
+                - name: "Řešení potíží s\_nasazením řešení pro systém Office"
+                  href: troubleshooting-office-solution-deployment.md
                 - name: Protokolování události u řešení pro systém Office
                   href: event-logging-for-office-solutions.md
         - name: Ukázky a návody
-          href: office-development-samples-and-walkthroughs.md
           items:
+            - name: Ukázky a návody
+              href: office-development-samples-and-walkthroughs.md
             - name: Ukázky vývoje pro systém Office
               href: office-development-samples.md
             - name: "Návody pro práci s\_aplikací Word"
@@ -758,13 +817,15 @@
             - name: Návody pro zabezpečení a nasazení
               href: security-and-deployment-walkthroughs.md
         - name: "Obecný odkaz (vývoj pro Office v\_sadě Visual Studio)"
-          href: general-reference-office-development-in-visual-studio.md
           items:
+            - name: "Obecný odkaz (vývoj pro Office v\_sadě Visual Studio)"
+              href: general-reference-office-development-in-visual-studio.md
             - name: Sestavení primární spolupráce sady Office
               href: office-primary-interop-assemblies.md
             - name: Manifesty aplikace pro řešení Office
-              href: application-manifests-for-office-solutions.md
               items:
+                - name: Manifesty aplikace pro řešení Office
+                  href: application-manifests-for-office-solutions.md
                 - name: Element <customHostSpecified>
                   href: customhostspecified-element-office-development-in-visual-studio.md
                 - name: Element <addin>
@@ -806,8 +867,9 @@
             - name: Manifesty nasazení pro řešení Office
               href: deployment-manifests-for-office-solutions.md
             - name: "Odkaz uživatelského rozhraní (vývoj pro Office v\_sadě Visual Studio)"
-              href: user-interface-reference-office-development-in-visual-studio.md
               items:
+                - name: "Odkaz uživatelského rozhraní (vývoj pro Office v\_sadě Visual Studio)"
+                  href: user-interface-reference-office-development-in-visual-studio.md
                 - name: 'Klávesnice aplikace Word sady Microsoft Office, nastavení klávesnice sady Microsoft Office, dialogové okno Možnosti'
                   href: microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md
                 - name: 'Klávesnice aplikace Office Excel sady Microsoft Office, nastavení klávesnice sady Microsoft Office, dialogové okno Možnosti'
@@ -819,8 +881,9 @@
                 - name: "Průvodce publikováním (vývoj pro Office v\_sadě Visual Studio)"
                   href: publish-wizard-office-development-in-visual-studio.md
             - name: "Chybové zprávy (vývoj pro Office v\_sadě Visual Studio)"
-              href: error-messages-office-development-in-visual-studio.md
               items:
+                - name: "Chybové zprávy (vývoj pro Office v\_sadě Visual Studio)"
+                  href: error-messages-office-development-in-visual-studio.md
                 - name: Sada Microsoft Office není v tomto počítači nainstalována.
                   href: microsoft-office-is-not-installed-on-this-computer.md
                 - name: 'Sešit použitý k vytvoření tohoto projektu obsahuje ovládací prvky ActiveX, které návrhář nemůže načíst.'
@@ -832,8 +895,9 @@
         - name: "Spravovaný odkaz (vývoj pro Office v\_sadě Visual Studio)"
           href: managed-reference-office-development-in-visual-studio.md
         - name: "Nespravovaná referenční dokumentace rozhraní API (vývoj pro Office v\_sadě Visual Studio)"
-          href: unmanaged-api-reference-office-development-in-visual-studio.md
           items:
+            - name: "Nespravovaná referenční dokumentace rozhraní API (vývoj pro Office v\_sadě Visual Studio)"
+              href: unmanaged-api-reference-office-development-in-visual-studio.md
             - name: EnsureVSTOComponent – funkce
               href: ensurevstocomponent-function.md
             - name: GetValidCompatibleFramework – funkce
@@ -841,15 +905,17 @@
             - name: GetVstoSolutionMetadata – funkce
               href: getvstosolutionmetadata-function.md
             - name: IManagedAddin – rozhraní
-              href: imanagedaddin-interface.md
               items:
+                - name: IManagedAddin – rozhraní
+                  href: imanagedaddin-interface.md
                 - name: Load – metoda
                   href: imanagedaddin-load.md
                 - name: Unload – metoda
                   href: imanagedaddin-unload.md
             - name: IWefDebuggingSupport – rozhraní
-              href: iwefdebuggingsupport-interface.md
               items:
+                - name: IWefDebuggingSupport – rozhraní
+                  href: iwefdebuggingsupport-interface.md
                 - name: GetAutoInsertExtensions – metoda
                   href: getautoinsertextensions-method.md
                 - name: SetWefProcessId – metoda

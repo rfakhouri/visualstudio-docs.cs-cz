@@ -9,16 +9,16 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c946fa81c46af38daac469e0de7a00abafb3394
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785733"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461587"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulovat očekávaného reálného využití webu nebo aplikace v rámci zátěžového testu pomocí modelu kombinace testů
+# <a name="test-mix-models-overview"></a>Přehled modelů poměru testů
 
-Pomocí možnosti modelování zatížení více přesně předpovědět očekávaného reálného využití webu nebo aplikace, které jsou zátěžové testování. Je důležité provést, protože zátěžový test, který není založen na modelu přesné zatížení lze generovat zavádějící výsledky.
+Pomocí možnosti modelování načtení více přesně předpovědět očekávaného reálného využití webu nebo aplikaci, která jsou zátěžové testování. Je důležité provést, protože zátěžový test, který není založen na modelu přesné zatížení lze generovat zavádějící výsledky.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -40,7 +40,8 @@ Můžete určit jednu z následujících možností model kombinace testů pro v
 - **Podle pořadí:** Každý virtuální uživatel spouští testy webového výkonu nebo Jednotkový v pořadí, že testy jsou definovány ve scénáři. Virtuální uživatel pokračuje procházením testy v tomto pořadí, dokud není dokončen zátěžový test. Další informace najdete v tématu [pořadí](#SequentialOrder).
 
 ### <a name="BasedOnTestsStarted"></a> Procento podle spuštěných testů
- Pro každý test v kombinaci můžete určit procento, která určuje, jak často testu jako další test vybrané ke spuštění. Například může přiřadit následující hodnoty procento tři testy:
+
+Pro každý test v kombinaci můžete určit procento, která určuje, jak často testu jako další test vybrané ke spuštění. Například může přiřadit následující hodnoty procento tři testy:
 
 - TestA (50%)
 
@@ -48,13 +49,14 @@ Můžete určit jednu z následujících možností model kombinace testů pro v
 
 - TestC (15%)
 
-  Pokud použijete toto nastavení, následující test spuštění je založená na přiřazené procenta. Můžete to provést bez ohledu na počet virtuálních uživatelů, kteří jsou aktuálně spuštěním každého testu.
+Pokud použijete toto nastavení, následující test spuštění je založená na přiřazené procenta. Můžete to provést bez ohledu na počet virtuálních uživatelů, kteří jsou aktuálně spuštěním každého testu.
 
 ### <a name="PercentageBasedonVirtualUsers"></a> Procento podle virtuálních uživatelů
  Model poměru testů Určuje procentuální podíl virtuálních uživatelů, kteří se spuštěním určitého testu. Pokud používáte model kombinace testů, další test spustit je založena pouze na přiřazené procenta, ale také na procentuální podíl virtuálních uživatelů, kteří jsou aktuálně spuštěný určitý test. Kdykoli během zátěžového testu odpovídá počet uživatelů, kteří jsou spuštěn určitý test co nejpřesněji přiřazené distribuce.
 
 ### <a name="PacingTestMix"></a> Interval poměru testů
- Pokud zadáte nemusely kombinace testů, nastavte počet spuštění testu pro jednotlivé virtuální uživatele pro každý test v kombinaci testů. Pro každý test je tato sazba vyjádřené jako testy spuštěny na virtuálního uživatele za hodinu. Například můžete přiřadit následující nemusely poměr testů na následující testy:
+
+Pokud zadáte nemusely kombinace testů, nastavte počet spuštění testu pro jednotlivé virtuální uživatele pro každý test v kombinaci testů. Pro každý test je tato sazba vyjádřené jako testy spuštěny na virtuálního uživatele za hodinu. Například můžete přiřadit následující nemusely poměr testů na následující testy:
 
 - TestA: 4 testů na uživatele za hodinu
 
@@ -62,9 +64,9 @@ Můžete určit jednu z následujících možností model kombinace testů pro v
 
 - TestC: 0,125 testů na uživatele za hodinu
 
-  Pokud používáte nemusely model kombinace testů, modulu runtime testu zatížení zaručuje, že skutečné kurz, ve kterém jsou testy spouštěny je menší než nebo rovna hodnotě zadané frekvence. Pokud testy se spouštějí příliš dlouhý pro číslo přiřazené k dokončení, je vrácena chyba.
+Pokud používáte nemusely model kombinace testů, modulu runtime testu zatížení zaručuje, že skutečné kurz, ve kterém jsou testy spouštěny je menší než nebo rovna hodnotě zadané frekvence. Pokud testy se spouštějí příliš dlouhý pro číslo přiřazené k dokončení, je vrácena chyba.
 
-  **Myslíte, že doba mezi cykly testu** nastavení neplatí při použití nemusely poměru testů.
+**Myslíte, že doba mezi cykly testu** nastavení neplatí při použití nemusely poměru testů.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Použít rozdělení na zpoždění stimulace
  Hodnota **použít rozdělení na zpoždění stimulace** ve scénáři testu zatížení může být nastavena na hodnotu true nebo false:

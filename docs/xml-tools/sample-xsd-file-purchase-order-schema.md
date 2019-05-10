@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a799337c098a8ce04bbb5dff0eb3eb046b04f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bea23307c5d35e997f41e4ec9cbfd41fa41bdee
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810577"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455117"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Ukázkový soubor XSD: Schéma nákupní objednávky
 
@@ -86,3 +86,6 @@ Následující soubor XSD se používá v různých příkladů v dokumentaci k 
   </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> Vzorové společnosti, organizace, produkty, názvy domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené. Žádné jejich spojení se skutečnou společností, organizaci, produktu, název domény, e-mailovou adresu, loga, osoby, místa nebo události je určena ji vyvozovat.

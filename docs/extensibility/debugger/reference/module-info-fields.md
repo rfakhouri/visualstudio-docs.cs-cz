@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4302a911e58a23bdcd58bb054c1fc90c389fed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dba231f173f3828243e284a7d68a877204df1bd0
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865450"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458020"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 Určuje příznaky pro ladicí informace modulu.
@@ -61,32 +64,45 @@ public enum enum_MODULE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Členové
- MIF_NONE inicializace/použití žádné z polí ve struktuře.
+## <a name="fields"></a>Pole
+ `MIF_NONE`\
+ Inicializace/použití žádné z polí ve struktuře.
 
- MIF_NAME inicializace/použít `m_bstrName` pole [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury.
+ `MIF_NAME`\
+ Inicializace/použít `m_bstrName` pole [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury.
 
- MIF_URL inicializace/použít `m_bstrUrl` pole `MODULE_INFO` struktury.
+ `MIF_URL`\
+ Inicializace/použít `m_bstrUrl` pole `MODULE_INFO` struktury.
 
- MIF_VERSION inicializace/použít `m_bstrVersion` pole `MODULE_INFO` struktury.
+ `MIF_VERSION`\
+ Inicializace/použít `m_bstrVersion` pole `MODULE_INFO` struktury.
 
- MIF_DEBUGMESSAGE inicializace/použít `m_bstrDebugMessage` pole `MODULE_INFO` struktury.
+ `MIF_DEBUGMESSAGE`\
+ Inicializace/použít `m_bstrDebugMessage` pole `MODULE_INFO` struktury.
 
- MIF_LOADADDRESS inicializace/použít `m_addrLoadAddress` pole `MODULE_INFO` struktury.
+ `MIF_LOADADDRESS`\
+ Inicializace/použít `m_addrLoadAddress` pole `MODULE_INFO` struktury.
 
- MIF_PREFFEREDADDRESS inicializace/použít `m_addrPreferredLoadAddress` pole `MODULE_INFO` struktury.
+ `MIF_PREFFEREDADDRESS`\
+ Inicializace/použít `m_addrPreferredLoadAddress` pole `MODULE_INFO` struktury.
 
- MIF_SIZE inicializace/použít `m_dwSize` pole `MODULE_INFO` struktury.
+ `MIF_SIZE`\
+ Inicializace/použít `m_dwSize` pole `MODULE_INFO` struktury.
 
- MIF_LOADORDER inicializace/použít `m_dwLoadOrder` pole `MODULE_INFO` struktury.
+ `MIF_LOADORDER`\
+ Inicializace/použít `m_dwLoadOrder` pole `MODULE_INFO` struktury.
 
- MIF_TIMESTAMP inicializace/použít `m_TimeStamp` pole `MODULE_INFO` struktury.
+ `MIF_TIMESTAMP`\
+ Inicializace/použít `m_TimeStamp` pole `MODULE_INFO` struktury.
 
- MIF_URLSYMBOLLOCATION inicializace/použít `m_bstrUrlSymbolLocation` pole `MODULE_INFO` struktury.
+ `MIF_URLSYMBOLLOCATION`\
+ Inicializace/použít `m_bstrUrlSymbolLocation` pole `MODULE_INFO` struktury.
 
- MIF_FLAGS inicializace/použít `m_dwModuleFlags` pole `MODULE_INFO` struktury.
+ `MIF_FLAGS`\
+ Inicializace/použít `m_dwModuleFlags` pole `MODULE_INFO` struktury.
 
- MIF_ALLFIELDS inicializace/použít všechna pole v `MODULE_INFO` struktury.
+ `MIF_ALLFIELDS`\
+ Inicializace/použít všechna pole v `MODULE_INFO` struktury.
 
 ## <a name="remarks"></a>Poznámky
  Tyto hodnoty jsou předány jako argument [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) indikace které pole [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury mají být inicializovány.
@@ -102,7 +118,7 @@ public enum enum_MODULE_INFO_FIELDS { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

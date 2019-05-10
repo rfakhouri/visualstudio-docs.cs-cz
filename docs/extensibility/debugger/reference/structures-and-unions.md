@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0ef171d24b3744657a2cb05338b2b124a6331c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7522e1c00598574e46e1f23622f0e051fcfb2c4e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864671"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460871"
 ---
 # <a name="structures-and-unions"></a>Struktury a sjednocení
 Níže jsou struktury a sjednocení v aplikaci Visual Studio SDK ladění.
@@ -139,5 +139,5 @@ Níže jsou struktury a sjednocení v aplikaci Visual Studio SDK ladění.
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Referenční dokumentace ke knihovně API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

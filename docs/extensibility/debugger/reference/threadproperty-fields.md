@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 641687dbcfa6bf50ba9e848de589662d282d0c7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1c908658662d96d5c1ad5f3b16e9dcce2e4f7235
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864570"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458487"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 Určuje, jaké informace o vlákno má být načtena.
@@ -49,20 +52,27 @@ public enum enum_THREADPROPERTY_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Členové
- TPF_ID inicializace/použít `dwThreadId` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.
+## <a name="fields"></a>Pole
+ `TPF_ID`\
+ Inicializace/použít `dwThreadId` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.
 
- TPF_SUSPENDCOUNT inicializace/použít `dwSuspendCount` pole `THREADPROPERTIE`struktura.
+ `TPF_SUSPENDCOUNT`\
+ Inicializace/použít `dwSuspendCount` pole `THREADPROPERTIE`struktura.
 
- TPF_STATE inicializace/použít `dwThreadState` pole `THREADPROPERTIE`struktura.
+ `TPF_STATE`\
+ Inicializace/použít `dwThreadState` pole `THREADPROPERTIE`struktura.
 
- TPF_PRIORITY inicializace/použít `bstrPriority` pole `THREADPROPERTIE`struktura.
+ `TPF_PRIORITY`\
+ Inicializace/použít `bstrPriority` pole `THREADPROPERTIE`struktura.
 
- TPF_NAME inicializace/použít `bstrName` pole `THREADPROPERTIE`struktura.
+ `TPF_NAME`\
+ Inicializace/použít `bstrName` pole `THREADPROPERTIE`struktura.
 
- TPF_LOCATION inicializace/použít `bstrLocation` pole `THREADPROPERTIE`struktura.
+ `TPF_LOCATION`\
+ Inicializace/použít `bstrLocation` pole `THREADPROPERTIE`struktura.
 
- TPF_ALLFIELDS určuje všechna pole.
+ `TPF_ALLFIELDS`\
+ Určuje všechna pole.
 
 ## <a name="remarks"></a>Poznámky
  Tyto hodnoty jsou předány jako argument [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) indikace které pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury mají být inicializovány.
@@ -78,7 +88,7 @@ public enum enum_THREADPROPERTY_FIELDS { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)

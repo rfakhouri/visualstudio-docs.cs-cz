@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e3ac6bda70a25baf7546c709849c650372c649
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 022712c0be8dfb569ba097bc4a86f8b02de93633
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869014"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457413"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Nastaví hodnotu odkazu z řetězce. Vyhrazeno pro budoucí použití.
@@ -40,21 +43,21 @@ int SetValueAsString ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pszValue`
+## <a name="parameters"></a>Parametry
+ `pszValue`\
 
  [in] Hodnota jako řetězec.
 
- `dwRadix`
+ `dwRadix`\
 
  [in] Základ, který se má použít v jakékoli číselné informace o formátování.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Maximální doba v milisekundách pro čekání před návratem z této metody. Použití `INFINITE` čekat po neomezenou dobu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Vždy vrátí `E_NOTIMPL`.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

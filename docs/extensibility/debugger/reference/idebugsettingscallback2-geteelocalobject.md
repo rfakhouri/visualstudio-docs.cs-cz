@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d95914ea3366578cb401c304ac52aa5db5e5a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9cdf108aa196e899da6188212708bacb3e147ff
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916255"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458624"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 Načte objekt místní Chyba při vyhodnocování výrazu daný název metriky.
@@ -40,25 +43,25 @@ private int GetEELocalObject(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `guidLang`
+## <a name="parameters"></a>Parametry
+ `guidLang`\
 
  [in] Jedinečný identifikátor programovací jazyk.
 
- `guidVendor`
+ `guidVendor`\
 
  [in] Jedinečný identifikátor na dodavatele.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Název metriky.
 
- `ppUnk`
+ `ppUnk`\
 
  [out] Vrátí výraz Chyba při vyhodnocování místní objekt.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 370ee63ff31bcb0eeba82fbb55fd37166de7ff52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e800d8d57d34c0ed99cb3cfa9a3f6a7b871a034d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869041"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458609"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 Načte soubor metriky Chyba při vyhodnocování výrazu danou název nebo metriku.
@@ -40,25 +43,25 @@ private int GetEEMetricFile(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `guidLang`
+## <a name="parameters"></a>Parametry
+ `guidLang`\
 
  [in] Jedinečný identifikátor programovací jazyk.
 
- `guidVendor`
+ `guidVendor`\
 
  [in] Jedinečný identifikátor na dodavatele.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Název metriky.
 
- `pbstrValue`
+ `pbstrValue`\
 
  [out] Vrátí obsah souboru metriky jako řetězec.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

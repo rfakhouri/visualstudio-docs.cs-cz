@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3ec96c5ba806e6eff735edc8093868b19ebaf5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b090fecf532ef862660b26432e930830cdb1d12b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913832"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460951"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 Použít k popisu modulu.
@@ -47,18 +50,24 @@ public enum enum_MODULE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Členové
- MODULE_FLAG_NONE určuje žádný modul.
+## <a name="fields"></a>Pole
+ `MODULE_FLAG_NONE`\
+ Určuje žádný modul.
 
- MODULE_FLAG_SYSTEM určuje systémového modulu.
+ `MODULE_FLAG_SYSTEM`\
+ Určuje modul systému.
 
- MODULE_FLAG_SYMBOLS Určuje symbol modulu.
+ `MODULE_FLAG_SYMBOLS`\
+ Určuje symbol modulu.
 
- MODULE_FLAG_64BIT určuje 64bitová verze modulu.
+ `MODULE_FLAG_64BIT`\
+ Určuje modul 64-bit.
 
- MODULE_FLAG_OPTIMIZED Určuje, které se v modulu došlo k optimalizaci. Tento stav se projeví v **moduly** okna.
+ `MODULE_FLAG_OPTIMIZED`\
+ Určuje, že byla optimalizována modulu. Tento stav se projeví v **moduly** okna.
 
- MODULE_FLAG_UNOPTIMIZED Určuje, které optimalizovanou modulu. Tento stav se projeví v **moduly** okna. Toto je výchozí stav.
+ `MODULE_FLAG_UNOPTIMIZED`\
+ Určuje, že optimalizovanou modulu. Tento stav se projeví v **moduly** okna. Toto je výchozí stav.
 
 ## <a name="remarks"></a>Poznámky
  Používá pro `m_dwModuleFlags` člena [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury.
@@ -72,6 +81,6 @@ public enum enum_MODULE_FLAGS { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

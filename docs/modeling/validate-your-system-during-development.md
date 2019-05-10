@@ -9,38 +9,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce0822f5731e7c09a6f6dff9116e70b97a529206
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9fb9810f1c212dfb881f5725676a79c6307b9cfa
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907143"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476508"
 ---
 # <a name="validate-your-system-during-development"></a>Ověřování systému během vývoje
-Visual Studio vám může pomoci udržovat konzistentní s požadavky uživatelů a architektuře systému vašeho softwaru.
 
- Které verze sady Visual Studio podporovat každé z těchto funkcí najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Visual Studio vám může pomoci udržovat konzistentní s požadavky na uživatele a architektuře systému vašeho softwaru.
+
+Které verze sady Visual Studio podporovat každé z těchto funkcí najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="key-tasks"></a>Klíčové úkoly
- Tyto úlohy slouží k ověření vašeho softwaru.
+
+K ověření vašeho softwaru, použijte následující úlohy:
 
 |**Úlohy**|**Související témata**|
 |-|-|
-|**Ujistěte se, že software splňuje požadavky uživatelů**:<br /><br /> Požadavky a architektury modely můžete pomoci vám organizovat testy systému a jeho součástí. Tento postup pomáhá zajistit, že testování požadavků, které jsou důležité pro uživatele a další zainteresované uživatele, a pomůže vám rychle aktualizovat testů při změně požadavků.|-   [Vývoj testů z modelu](../modeling/develop-tests-from-a-model.md)|
-|**Ujistěte se, že software zůstává konzistentní s zamýšleného návrhu systému:**<br /><br /> Diagramy závislostí popsat zamýšlené závislosti mezi komponentami vaší aplikace. Během vývoje můžete ověřit, že skutečné závislosti v kódu odpovídají zamýšleného návrhu.|-   [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)|
+|**Ujistěte se, že software splňuje požadavky uživatelů**:<br /><br />Pomocí požadavků a architektury modely můžete organizovat testy systému a jeho součástí. Tento postup pomáhá zajistit, že testování požadavků, které jsou důležité pro uživatele a další zainteresované uživatele, a pomůže vám rychle aktualizovat testů při změně požadavků.|- [Vývoj testů z modelu](../modeling/develop-tests-from-a-model.md)|
+|**Ujistěte se, že software zůstává konzistentní s zamýšleného návrhu systému:**<br /><br />Diagramy závislostí popsat zamýšlené závislosti mezi komponentami vaší aplikace. Během vývoje můžete ověřit, že skutečné závislosti v kódu odpovídají zamýšleného návrhu.|- [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="external-resources"></a>Externí zdroje
 
 |**Kategorie**|**Odkazy**|
 |-|-|
-|**Videa**|![odkaz na video](../data-tools/media/playvideo.gif) [Channel 9: Doug sedm: Porozumění kódu a návrhu systému sadou Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif) [Channel 9: Aplikační architektura založená na aplikaci pomocí Diagram závislostí](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif) [řady MSDN jak: Postup ověření kódu pomocí diagramů závislostí](http://go.microsoft.com/fwlink/?LinkID=214405)|
-|**Fóra**|-   [Visual Studio Visualization & Modeling nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogy**|-   [Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
-|**Technické články a deníky**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Videa**|![odkaz na video](../data-tools/media/playvideo.gif) [Channel 9: Doug sedm: Porozumění kódu a navrhování systémů pomocí Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif) [Channel 9: Aplikační architektura založená na aplikaci](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application))|
+|**Fóra**|- [Visual Studio Visualization & Modeling nástroje](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Rozšíření produktu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
 ## <a name="see-also"></a>Viz také:
 
-- [Testování aplikace](/azure/devops/test/overview?view=vsts)
 - [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)
 - [Analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)
 

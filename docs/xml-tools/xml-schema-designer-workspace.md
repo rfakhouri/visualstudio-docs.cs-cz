@@ -8,18 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6dde8eee0c21f41cb21acf97fb68961dd0beee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1350523b347d0dfb87831947b4fd1d9206521ca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933672"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461331"
 ---
-# <a name="xml-schema-designer-workspace"></a>Pracovní prostor Návrháře schémat XML
+# <a name="xml-schema-designer-workspace-views"></a>Zobrazení pracovního prostoru Návrhář schémat XML
 
-Návrhář schématu XML (XSD Designer) je grafický nástroj, který umožňuje zkoumat vaše schémat XML. Kromě [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md), která umožňuje procházet a procházet stromu XML schéma a provádět vyhledávání, Návrhář XSD poskytuje tři zobrazení, které vám umožní prozkoumat podrobněji schéma XSD. Počáteční zobrazení je výchozím bodem pro návrháře XSD; ze zobrazení spuštění můžete přejít na další zobrazení návrháře XSD a prohlédněte si podrobnosti o sadě schémat. Zobrazení grafu umožňuje vidíte Přehled schématu nastavení a vztahy mezi uzly schématu. Zobrazení modelu obsahu poskytuje grafické znázornění podrobnosti uzlů místní a globální schémat, včetně jednoduché a komplexní typy prvků, skupiny, atributy a skupiny atributů.
+Návrhář schématu XML (XSD Designer) je grafický nástroj, který umožňuje zkoumat vaše schémat XML. Kromě [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md), která umožňuje procházet a procházet stromu XML schéma a provádět vyhledávání, Návrhář XSD poskytuje tři zobrazení, kde můžete prozkoumat podrobněji schéma XSD.
 
-A začněte se seznamovat uzly, které vás zajímají, musíte je přidat do pracovního prostoru. Pracovní prostor se sdílí mezi všech zobrazení.
+- **Zobrazení Start** je výchozím bodem pro návrháře XSD; ze zobrazení spuštění můžete přejít na další zobrazení návrháře XSD a prohlédněte si podrobnosti o sadě schémat.
+- **Zobrazení grafu** umožňuje naleznete v tématu Přehled o sadě schémat a vztahy mezi uzly schématu.
+- **Zobrazení modelu obsahu** poskytuje grafické znázornění podrobnosti uzlů místní a globální schémat, včetně jednoduché a komplexní typy prvků, skupiny, atributy a skupiny atributů.
+
+A začněte se seznamovat uzly, které vás zajímá, musíte je přidat do pracovního prostoru. Pracovní prostor se sdílí mezi všech zobrazení.
 
 ## <a name="add-nodes-to-the-workspace"></a>Přidání uzlů do pracovního prostoru
 

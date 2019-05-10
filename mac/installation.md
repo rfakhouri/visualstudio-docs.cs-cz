@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4031b4358e77b5b3e66a6052a37724966621d608
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982949"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222783"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Install Visual Studio 2019 for Mac
 
@@ -55,7 +55,7 @@ Pokud máte potíže s sítě při instalaci v podnikovém prostředí, přečt�
 Další informace o změnách v [poznámky k verzi](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes).
 
 > [!NOTE]
-> Pokud zvolíte ne nainstalovat platformu nebo nástroj při původní instalaci (zrušením výběru ho v kroku #6), je nutné instalační program znovu spustit, pokud budete chtít později přidat komponenty.
+> Pokud jste se rozhodli nainstalovat platformu nebo nástroj při původní instalaci (zrušením výběru ho v kroku #6), je nutné instalační program znovu spustit, pokud budete chtít později přidat komponenty.
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalace sady Visual Studio pro Mac za bránou firewall nebo proxy serverem
 

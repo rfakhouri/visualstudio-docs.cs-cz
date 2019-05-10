@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56ba1933d1b63f9af863b115972f3ecf1dfc4346
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e5d298add846a7f3b7baf566f3c31e16c68b8dc5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913713"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460834"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Určuje, jak analyzovat výrazu.
@@ -41,12 +44,15 @@ public enum enum_PARSEFLAGS { 
 };
 ```
 
-## <a name="members"></a>Členové
- PARSE_EXPRESSION znamená, že výraz není příkaz.
+## <a name="fields"></a>Pole
+ `PARSE_EXPRESSION`\
+ Označuje, že výraz není příkaz.
 
- PARSE_FUNCTION_AS_ADDRESS znamená, že výrazu je analyzován (a později vyhodnotit) jako adresu.
+ `PARSE_FUNCTION_AS_ADDRESS`\
+ Označuje, že výraz má být analyzován (a později vyhodnoceny) jako adresu.
 
- PARSE_DESIGN_TIME_EXPR_EVAL označuje, že v době návrhu je analyzován výrazu (to znamená, když je Návrhář otevřený).
+ `PARSE_DESIGN_TIME_EXPR_EVAL`\
+ Označuje, že v době návrhu je analyzován výrazu (to znamená, když je Návrhář otevřený).
 
 ## <a name="remarks"></a>Poznámky
  Předán jako parametr [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) a [analyzovat](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metody.
@@ -58,7 +64,7 @@ public enum enum_PARSEFLAGS { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
 - [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

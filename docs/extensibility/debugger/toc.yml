@@ -5,13 +5,15 @@
 - name: Ukázky ladění sady Visual Studio
   href: visual-studio-debugging-samples.md
 - name: Vytvoření vlastního ladicího stroje
-  href: creating-a-custom-debug-engine.md
   items:
+    - name: Vytvoření vlastního ladicího stroje
+      href: creating-a-custom-debug-engine.md
     - name: Registrace vlastního ladicího stroje
       href: registering-a-custom-debug-engine.md
     - name: Povolení ladění programu
-      href: enabling-a-program-to-be-debugged.md
       items:
+        - name: Povolení ladění programu
+          href: enabling-a-program-to-be-debugged.md
         - name: Získání portu
           href: getting-a-port.md
         - name: Registrace programu
@@ -23,8 +25,9 @@
         - name: Odesílání požadovaných událostí
           href: sending-the-required-events.md
     - name: Řízení provádění a vyhodnocení stavu
-      href: execution-control-and-state-evaluation.md
       items:
+        - name: Řízení provádění a vyhodnocení stavu
+          href: execution-control-and-state-evaluation.md
         - name: Řízení programu
           href: program-control.md
         - name: Metody související se zarážkou
@@ -36,8 +39,9 @@
         - name: Události ovládacích prvků
           href: control-events.md
     - name: Odesílání událostí
-      href: sending-events.md
       items:
+        - name: Odesílání událostí
+          href: sending-events.md
         - name: Zdroje událostí (Visual Studio SDK)
           href: event-sources-visual-studio-sdk.md
         - name: Podporované typy událostí
@@ -47,8 +51,9 @@
     - name: Ukončení a odpojení
       href: termination-and-detaching.md
     - name: Volání událostí ladicího programu
-      href: calling-debugger-events.md
       items:
+        - name: Volání událostí ladicího programu
+          href: calling-debugger-events.md
         - name: Připojení a odpojení programu
           href: attaching-and-detaching-to-a-program.md
         - name: Spuštění ladicího programu
@@ -76,13 +81,15 @@
     - name: 'Postupy: Ladění vlastního ladicího stroje'
       href: how-to-debug-a-custom-debug-engine.md
 - name: Začínáme s rozšiřitelností ladicího programu
-  href: getting-started-with-debugger-extensibility.md
   items:
+    - name: Začínáme s rozšiřitelností ladicího programu
+      href: getting-started-with-debugger-extensibility.md
     - name: Plán pro rozšíření ladicího programu
       href: roadmap-for-extending-the-debugger.md
     - name: Komponenty ladicího programu
-      href: debugger-components.md
       items:
+        - name: Komponenty ladicího programu
+          href: debugger-components.md
         - name: Ladění balíčku
           href: debug-package.md
         - name: Správce ladění procesu
@@ -100,8 +107,9 @@
         - name: Vizualizér typů a vlastní prohlížeč
           href: type-visualizer-and-custom-viewer.md
     - name: Koncepty ladicího programu
-      href: debugger-concepts.md
       items:
+        - name: Koncepty ladicího programu
+          href: debugger-concepts.md
         - name: Ladicí relace
           href: debug-session.md
         - name: Servery (Visual Studio SDK)
@@ -125,8 +133,9 @@
         - name: Zarážky (Visual Studio SDK)
           href: breakpoints-visual-studio-sdk.md
     - name: Kontexty ladicího programu
-      href: debugger-contexts.md
       items:
+        - name: Kontexty ladicího programu
+          href: debugger-contexts.md
         - name: Kontext kódu
           href: code-context.md
         - name: Pozice dokumentu
@@ -136,13 +145,15 @@
         - name: Kontext vyhodnocení výrazu
           href: expression-evaluation-context.md
     - name: Úlohy ladění
-      href: debugging-tasks.md
       items:
+        - name: Úlohy ladění
+          href: debugging-tasks.md
         - name: Problémy se zabezpečením
           href: security-issues.md
         - name: Spuštění programu
-          href: launching-a-program.md
           items:
+            - name: Spuštění programu
+              href: launching-a-program.md
             - name: Upozornění portu
               href: notifying-the-port.md
             - name: Připojení po spuštění
@@ -160,13 +171,15 @@
         - name: Vizualizace a zobrazení dat
           href: visualizing-and-viewing-data.md
 - name: Zápis vyhodnocovače výrazů modulu CLR
-  href: writing-a-common-language-runtime-expression-evaluator.md
   items:
+    - name: Zápis vyhodnocovače výrazů modulu CLR
+      href: writing-a-common-language-runtime-expression-evaluator.md
     - name: Modul CLR a vyhodnocování výrazů
       href: common-language-runtime-and-expression-evaluation.md
     - name: Architektura vyhodnocovače výrazů
-      href: expression-evaluator-architecture.md
       items:
+        - name: Architektura vyhodnocovače výrazů
+          href: expression-evaluator-architecture.md
         - name: Kontext vyhodnocení
           href: evaluation-context.md
         - name: Rozhraní vyhodnocovače klíčových výrazů
@@ -174,16 +187,19 @@
     - name: Registrace vyhodnocovače výrazů
       href: registering-an-expression-evaluator.md
     - name: Implementace vyhodnocovače výrazů
-      href: implementing-an-expression-evaluator.md
       items:
+        - name: Implementace vyhodnocovače výrazů
+          href: implementing-an-expression-evaluator.md
         - name: Strategie implementace vyhodnocovače výrazů
           href: expression-evaluator-implementation-strategy.md
     - name: Zobrazení místních hodnot
-      href: displaying-locals.md
       items:
+        - name: Zobrazení místních hodnot
+          href: displaying-locals.md
         - name: Ukázková implementace místních hodnot
-          href: sample-implementation-of-locals.md
           items:
+            - name: Ukázková implementace místních hodnot
+              href: sample-implementation-of-locals.md
             - name: Implementace GetMethodProperty
               href: implementing-getmethodproperty.md
             - name: Vytváření výčtů pro místní hodnoty
@@ -195,32 +211,37 @@
             - name: Vyhodnocení místních hodnot
               href: evaluating-locals.md
     - name: Vyhodnocení výrazu okna kukátka
-      href: evaluating-a-watch-window-expression.md
       items:
+        - name: Vyhodnocení výrazu okna kukátka
+          href: evaluating-a-watch-window-expression.md
         - name: Ukázková implementace vyhodnocení výrazu
           href: sample-implementation-of-expression-evaluation.md
         - name: Vyhodnocení výrazu kukátka
           href: evaluating-a-watch-expression.md
     - name: Změna hodnoty místní hodnoty
-      href: changing-the-value-of-a-local.md
       items:
+        - name: Změna hodnoty místní hodnoty
+          href: changing-the-value-of-a-local.md
         - name: Ukázková implementace změny hodnot
           href: sample-implementation-of-changing-values.md
     - name: Implementace vizualizérů typů a vlastních prohlížečů
       href: implementing-type-visualizers-and-custom-viewers.md
 - name: Implementace dodavatele portu
-  href: implementing-a-port-supplier.md
   items:
+    - name: Implementace dodavatele portu
+      href: implementing-a-port-supplier.md
     - name: Implementace a registrace dodavatele portu
       href: implementing-and-registering-a-port-supplier.md
     - name: Požadovaná rozhraní dodavatele portu
       href: required-port-supplier-interfaces.md
 - name: Interní informace o paralelním rozšíření pro rozhraní .NET Framework
-  href: parallel-extension-internals-for-the-dotnet-framework.md
   items:
+    - name: Interní informace o paralelním rozšíření pro rozhraní .NET Framework
+      href: parallel-extension-internals-for-the-dotnet-framework.md
     - name: Třída Task – vnitřní členy
-      href: task-class-internal-members.md
       items:
+        - name: Třída Task – vnitřní členy
+          href: task-class-internal-members.md
         - name: m_action – pole
           href: m-action-field.md
         - name: m_contingentProperties – pole
@@ -250,34 +271,39 @@
         - name: NotifyDebuggerOfWaitCompletion – metoda
           href: notifydebuggerofwaitcompletion-method.md
     - name: Třída TaskScheduler – vnitřní členy
-      href: taskscheduler-class-internal-members.md
       items:
+        - name: Třída TaskScheduler – vnitřní členy
+          href: taskscheduler-class-internal-members.md
         - name: GetScheduledTasksForDebugger – metoda
           href: getscheduledtasksfordebugger-method.md
         - name: GetTaskSchedulersForDebugger – metoda
           href: gettaskschedulersfordebugger-method.md
     - name: Třída ContingentProperties – vnitřní členy
-      href: contingentproperties-class-internal-members.md
       items:
+        - name: Třída ContingentProperties – vnitřní členy
+          href: contingentproperties-class-internal-members.md
         - name: m_children – pole
           href: m-children-field.md
     - name: Struktura AsyncTaskMethodBuilder – vnitřní členy
-      href: asynctaskmethodbuilder-structure-internal-members.md
       items:
+        - name: Struktura AsyncTaskMethodBuilder – vnitřní členy
+          href: asynctaskmethodbuilder-structure-internal-members.md
         - name: AsyncTaskMethodBuilder.ObjectIdForDebugger – vlastnost
           href: asynctaskmethodbuilder-objectidfordebugger-property.md
         - name: AsyncTaskMethodBuilder.m_builder – pole
           href: asynctaskmethodbuilder-m-builder-field.md
     - name: Struktura AsyncTaskMethodBuilder<TResult> – vnitřní členy
-      href: asynctaskmethodbuilder-tresult-structure-internal-members.md
       items:
+        - name: Struktura AsyncTaskMethodBuilder<TResult> – vnitřní členy
+          href: asynctaskmethodbuilder-tresult-structure-internal-members.md
         - name: AsyncTaskMethodBuilder<TResult>.ObjectIdForDebugger – vlastnost
           href: asynctaskmethodbuilder-tresult-objectidfordebugger-property.md
         - name: AsyncTaskMethodBuilder<TResult>.m_task – pole
           href: asynctaskmethodbuilder-tresult-m-task-field.md
     - name: Struktura AsyncVoidMethodBuilder – vnitřní členy
-      href: asyncvoidmethodbuilder-structure-internal-members.md
       items:
+        - name: Struktura AsyncVoidMethodBuilder – vnitřní členy
+          href: asyncvoidmethodbuilder-structure-internal-members.md
         - name: AsyncVoidMethodBuilder.ObjectIdForDebugger – vlastnost
           href: asyncvoidmethodbuilder-objectidfordebugger-property.md
         - name: AsyncVoidMethodBuilder.m_objectIdForDebugger – pole

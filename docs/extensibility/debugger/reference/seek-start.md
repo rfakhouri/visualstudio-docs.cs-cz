@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e003b74faeb7c6ed165c43380a7c4c6b0520ea0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 341b321b529bc1359ba576cc26ec20cc99e96cb3
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864818"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458400"
 ---
 # <a name="seekstart"></a>SEEK_START
 Určuje umístění, ze kterého se má spustit vyhledávání ve službě stream zpětný překlad.
@@ -45,16 +48,21 @@ public enum enum_SEEK_START { 
 };
 ```
 
-## <a name="members"></a>Členové
- SEEK_START_BEGIN spustí vyhledávání na začátek aktuálního dokumentu.
+## <a name="fields"></a>Pole
+ `SEEK_START_BEGIN`\
+ Spustí hledání na začátek aktuálního dokumentu.
 
- SEEK_START_END spustí vyhledávání na konci aktuálního dokumentu.
+ `SEEK_START_END`\
+ Spustí hledání na konci aktuálního dokumentu.
 
- SEEK_START_CURRENT začíná hledání na aktuální pozici aktuálního dokumentu.
+ `SEEK_START_CURRENT`\
+ Spustí hledání na aktuální pozici aktuálního dokumentu.
 
- SEEK_START_CODECONTEXT spustí vyhledávání v kontextu daného kódu aktuálního dokumentu.
+ `SEEK_START_CODECONTEXT`\
+ Spustí hledání na daný kód kontextu aktuálního dokumentu.
 
- SEEK_START_CODELOCID začíná hledání na daný kód identifikátor umístění. Identifikátory umístění kódu je získán voláním [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
+ `SEEK_START_CODELOCID`\
+ Spustí hledání na daný kód identifikátor umístění. Identifikátory umístění kódu je získán voláním [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
 
 ## <a name="remarks"></a>Poznámky
  Předán jako argument [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) metody.
@@ -66,7 +74,7 @@ public enum enum_SEEK_START { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
 - [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec1012ef689750dcd16679763baa942be55f1805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d978f8108d35ab999c8ac2aea6fc068d889d3a95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865596"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460985"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 Tato struktura reprezentuje parametr metody nebo funkce.
@@ -40,12 +43,15 @@ public struct METADATA_ADDRESS_PARAM {
 }
 ```
 
-## <a name="terms"></a>Podmínky
- tokMethod ID metody parametru je součástí.
+## <a name="members"></a>Členové
+ `tokMethod`\
+ ID metody parametru je součástí.
 
- tokParam ID parametru.
+ `tokParam`\
+ ID parametru.
 
- dwIndex index parametru v seznamu parametrů.
+ `dwIndex`\
+ Index parametru v seznamu parametrů.
 
 ## <a name="remarks"></a>Poznámky
  Tato struktura je součástí sjednocení v [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) strukturu, kdy `dwKind` pole `DEBUG_ADDRESS_UNION` struktura je nastavena na `ADDRESS_KIND_PARAM` (hodnotu z [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) výčet).
@@ -57,7 +63,7 @@ public struct METADATA_ADDRESS_PARAM {
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

@@ -63,8 +63,9 @@
 - name: Návody
   items:
     - name: ClickOnce – zabezpečení a nasazení
-      href: clickonce-security-and-deployment.md
       items:
+        - name: ClickOnce – zabezpečení a nasazení
+          href: clickonce-security-and-deployment.md
         - name: Výběr strategie nasazení ClickOnce
           href: choosing-a-clickonce-deployment-strategy.md
         - name: ClickOnce – přehled mezipaměti
@@ -74,13 +75,15 @@
         - name: Implementace ClickOnce v systému Windows Vista
           href: clickonce-deployment-on-windows-vista.md
         - name: Lokalizace aplikací ClickOnce
-          href: localizing-clickonce-applications.md
           items:
+            - name: Lokalizace aplikací ClickOnce
+              href: localizing-clickonce-applications.md
             - name: Publikování projektu s konkrétním národním prostředím
               href: how-to-publish-a-project-that-has-a-specific-locale.md
         - name: Zabezpečení aplikací ClickOnce
-          href: securing-clickonce-applications.md
           items:
+            - name: Zabezpečení aplikací ClickOnce
+              href: securing-clickonce-applications.md
             - name: ClickOnce a kód Authenticode
               href: clickonce-and-authenticode.md
             - name: Přehled nasazení důvěryhodných aplikací
@@ -104,8 +107,9 @@
             - name: Podepsání souborů instalace pomocí SignTool.exe (ClickOnce)
               href: how-to-sign-setup-files-with-signtool-exe-clickonce.md
         - name: Publikování aplikací ClickOnce
-          href: publishing-clickonce-applications.md
           items:
+            - name: Publikování aplikací ClickOnce
+              href: publishing-clickonce-applications.md
             - name: Publikování aplikace ClickOnce pomocí průvodce publikováním
               href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
             - name: Vytváření aplikací ClickOnce k implementaci dalšími osobami
@@ -129,8 +133,9 @@
             - name: Automatická inkrementace verze publikování ClickOnce
               href: how-to-automatically-increment-the-clickonce-publish-version.md
             - name: Určení souborů k publikování aplikací ClickOnce
-              href: how-to-specify-which-files-are-published-by-clickonce.md
               items:
+                - name: Určení souborů k publikování aplikací ClickOnce
+                  href: how-to-specify-which-files-are-published-by-clickonce.md
                 - name: Zahrnutí datového souboru do aplikace ClickOnce
                   href: how-to-include-a-data-file-in-a-clickonce-application.md
             - name: Instalace nezbytných součástí s aplikací ClickOnce
@@ -144,13 +149,15 @@
             - name: Určení názvu úvodní nabídky pro aplikaci ClickOnce
               href: how-to-specify-a-start-menu-name-for-a-clickonce-application.md
             - name: Určení odkazu na technickou podporu
-              href: how-to-specify-a-link-for-technical-support.md
               items:
+                - name: Určení odkazu na technickou podporu
+                  href: how-to-specify-a-link-for-technical-support.md
                 - name: Určení adresy URL webu s podporou pro jednotlivé nezbytné součásti
                   href: how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md
             - name: Určení stránky publikování pro aplikaci ClickOnce
-              href: how-to-specify-a-publish-page-for-a-clickonce-application.md
               items:
+                - name: Určení stránky publikování pro aplikaci ClickOnce
+                  href: how-to-specify-a-publish-page-for-a-clickonce-application.md
                 - name: Úprava výchozí webové stránky pro aplikaci ClickOnce
                   href: how-to-customize-the-default-web-page-for-a-clickonce-application.md
             - name: Povolení funkce AutoStart pro instalace z disku CD
@@ -160,8 +167,9 @@
             - name: Načtení informací řetězce dotazu do online aplikace ClickOnce
               href: how-to-retrieve-query-string-information-in-an-online-clickonce-application.md
             - name: Zakázání aktivace adresy URL aplikací ClickOnce pomocí Návrháře
-              href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
               items:
+                - name: Zakázání aktivace adresy URL aplikací ClickOnce pomocí Návrháře
+                  href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
                 - name: Zakázání aktivace adresy URL aplikací ClickOnce
                   href: how-to-disable-url-activation-of-clickonce-applications.md
             - name: 'Nasazení aplikací, které lze spouštět na více verzích rozhraní .NET Framework'
@@ -169,15 +177,17 @@
             - name: Publikování aplikace WPF s povolenými vizuálními styly
               href: how-to-publish-a-wpf-application-with-visual-styles-enabled.md
             - name: 'Návod: Stahování sestavení na vyžádání pomocí Návrháře'
-              href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
               items:
+                - name: 'Návod: Stahování sestavení na vyžádání pomocí Návrháře'
+                  href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
                 - name: 'Návod: Stahování sestavení na vyžádání'
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: 'Návod: Stahování satelitních sestavení na vyžádání pomocí Návrháře'
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
             - name: 'Návod: Ruční nasazení aplikace ClickOnce'
-              href: walkthrough-manually-deploying-a-clickonce-application.md
               items:
+                - name: 'Návod: Ruční nasazení aplikace ClickOnce'
+                  href: walkthrough-manually-deploying-a-clickonce-application.md
                 - name: 'Návod: Ruční nasazení aplikace, která nevyžaduje opětovné podepsání'
                   href: walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md
             - name: 'Návod: Stahování satelitních sestavení na vyžádání'
@@ -185,8 +195,9 @@
             - name: 'Návod: Vytvoření vlastního instalačního programu'
               href: walkthrough-creating-a-custom-installer-for-a-clickonce-application.md
         - name: Výběr strategie aktualizace ClickOnce
-          href: choosing-a-clickonce-update-strategy.md
           items:
+            - name: Výběr strategie aktualizace ClickOnce
+              href: choosing-a-clickonce-update-strategy.md
             - name: Jak ClickOnce provádí aktualizaci aplikací
               href: how-clickonce-performs-application-updates.md
             - name: Programová kontrola aktualizací aplikace
@@ -196,8 +207,9 @@
         - name: "Ukázky nasazení ClickOnce a\_podrobné návody"
           href: clickonce-deployment-samples-and-walkthroughs.md
         - name: "Řešení potíží s\_nasazeními ClickOnce"
-          href: troubleshooting-clickonce-deployments.md
           items:
+            - name: "Řešení potíží s\_nasazeními ClickOnce"
+              href: troubleshooting-clickonce-deployments.md
             - name: Nastavení vlastního umístění souboru protokolu pro chyby nasazení ClickOnce
               href: how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md
             - name: Určení souborů podrobného protokolování pro nasazení ClickOnce
@@ -211,8 +223,9 @@
             - name: Ladění aplikací ClickOnce používajících System.Deployment.Application
               href: debugging-clickonce-applications-that-use-system-deployment-application.md
     - name: Nezbytné součásti nasazení aplikace
-      href: application-deployment-prerequisites.md
       items:
+        - name: Nezbytné součásti nasazení aplikace
+          href: application-deployment-prerequisites.md
         - name: Nasazení nezbytných součástí pro 64bitové aplikace
           href: deploying-prerequisites-for-64-bit-applications.md
         - name: Vytváření balíčků bootstrapperu
@@ -226,8 +239,9 @@
         - name: 'Návod: Vytvoření vlastního bootstrapperu s dotazem souvisejícím se soukromím'
           href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
         - name: Referenční schéma balíčku a produktu
-          href: product-and-package-schema-reference.md
           items:
+            - name: Referenční schéma balíčku a produktu
+              href: product-and-package-schema-reference.md
             - name: <Product> – element (zaváděcí nástroj)
               href: product-element-bootstrapper.md
             - name: <Package> – element (zaváděcí nástroj)
@@ -247,11 +261,13 @@
 - name: Odkaz
   items:
     - name: Referenční dokumentace technologie ClickOnce
-      href: clickonce-reference.md
       items:
+        - name: Referenční dokumentace technologie ClickOnce
+          href: clickonce-reference.md
         - name: 'ClickOnce – manifest aplikace '
-          href: clickonce-application-manifest.md
           items:
+            - name: 'ClickOnce – manifest aplikace '
+              href: clickonce-application-manifest.md
             - name: <assembly> – element (aplikace ClickOnce)
               href: assembly-element-clickonce-application.md
             - name: <assemblyIdentity> – element (aplikace ClickOnce)
@@ -267,8 +283,9 @@
             - name: <fileAssociation> – element (aplikace ClickOnce)
               href: fileassociation-element-clickonce-application.md
         - name: ClickOnce – manifest nasazení
-          href: clickonce-deployment-manifest.md
           items:
+            - name: ClickOnce – manifest nasazení
+              href: clickonce-deployment-manifest.md
             - name: <assembly> – element (nasazení ClickOnce)
               href: assembly-element-clickonce-deployment.md
             - name: <assemblyIdentity> – element (nasazení ClickOnce)

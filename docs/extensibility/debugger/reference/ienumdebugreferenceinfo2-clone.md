@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85c531f0629eecc73befe3732c540e93d8d1d575
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 648e1a1e801cb143dd87a1d0ced4a1e7d8e5dba7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865976"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461249"
 ---
 # <a name="ienumdebugreferenceinfo2clone"></a>IEnumDebugReferenceInfo2::Clone
 Vrátí kopii objektu do aktuálního výčtu jako samostatný objekt.
@@ -36,8 +39,8 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppEnum`
+## <a name="parameters"></a>Parametry
+ `ppEnum`\
 
  [out] Vrátí kopii objektu tento výčet jako samostatný objekt.
 
@@ -47,5 +50,5 @@ int Clone(
 ## <a name="remarks"></a>Poznámky
  Kopírování výčet má stejného stavu jako původní v době, kdy tato metoda je volána. Ale tuto kopii a původní stavy jsou oddělené a je možné změnit individuálně.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)

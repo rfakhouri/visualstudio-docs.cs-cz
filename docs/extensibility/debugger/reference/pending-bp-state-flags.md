@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7614b0633f6490e8c3bb6837ed89fda67575c71e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e51944c2a7b0ad72e2c03b54a61e90bb1883177d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913700"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457981"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 Určuje příznaky stavu čekající zarážka.
@@ -39,10 +42,10 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Členové
- PBPSF_NONE zástupný symbol.
+## <a name="fields"></a>Pole
+ `PBPSF_NONE` Zástupný symbol.
 
- PBPSF_VIRTUALIZED určuje virtualizovaných čekajících zarážek, ten, který má být vázaný pokaždé, když je načten nový kód.
+ `PBPSF_VIRTUALIZED` Určuje, virtualizovaných čekajících zarážek, ten, který má být vázaný pokaždé, když je načten nový kód.
 
 ## <a name="remarks"></a>Poznámky
  Používá pro `flags` člena [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struktury.
@@ -54,6 +57,6 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

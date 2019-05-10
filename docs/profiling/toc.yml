@@ -27,8 +27,9 @@
     - name: Analýza využití procesoru
       href: cpu-usage.md
     - name: Analýza využití paměti
-      href: analyze-memory-usage.md
       items:
+        - name: Analýza využití paměti
+          href: analyze-memory-usage.md
         - name: Vlastní nativní události haldy Trasování událostí pro Windows
           href: custom-native-etw-heap-events.md
         - name: Využití paměti bez ladicího programu
@@ -48,13 +49,15 @@
     - name: Analýza odezvy uživatelského rozhraní s kódem HTML
       href: html-ui-responsiveness.md
     - name: Použití prohlížeče výkonu
-      href: performance-explorer.md
       items:
+        - name: Použití prohlížeče výkonu
+          href: performance-explorer.md
         - name: Nástroje pro výkon v aplikacích pro Windows 8 a Windows Server 2012
           href: performance-tools-on-windows-8-and-windows-server-2012-applications.md
         - name: Přehledy (nástroje pro měření výkonu)
-          href: overviews-performance-tools.md
           items:
+            - name: Přehledy (nástroje pro měření výkonu)
+              href: overviews-performance-tools.md
             - name: Přehled výkonnostní relace
               href: performance-session-overview.md
             - name: Porozumění metodám shromažďování údajů o výkonu
@@ -76,8 +79,9 @@
             - name: Profilace a zabezpečení systému Windows Vista
               href: profiling-and-windows-vista-security.md
         - name: Začínáme s nástroji pro měření výkonu
-          href: getting-started-with-performance-tools.md
           items:
+            - name: Začínáme s nástroji pro měření výkonu
+              href: getting-started-with-performance-tools.md
             - name: Průvodce vzorkováním procesoru pro začátečníky
               href: beginners-guide-to-cpu-sampling.md
             - name: Shromažďování dat o výkonu pro webovou stránku
@@ -85,15 +89,17 @@
             - name: Ruční vytváření výkonnostních relací
               href: how-to-manually-create-performance-sessions.md
         - name: Konfigurace výkonnostních relací
-          href: configuring-performance-sessions.md
           items:
+            - name: Konfigurace výkonnostních relací
+              href: configuring-performance-sessions.md
             - name: Odkazování na informace o symbolech Windows
               href: how-to-reference-windows-symbol-information.md
             - name: Výběr metod shromažďování
               href: how-to-choose-collection-methods.md
             - name: Shromažďování statistik výkonu pomocí vzorkování
-              href: collecting-performance-statistics-by-using-sampling.md
               items:
+                - name: Shromažďování statistik výkonu pomocí vzorkování
+                  href: collecting-performance-statistics-by-using-sampling.md
                 - name: Výběr událostí vzorkování
                   href: how-to-choose-sampling-events.md
                 - name: Shromažďování dat vzorkování na úrovni řádků
@@ -101,8 +107,9 @@
             - name: Shromažďování dat o alokaci paměti a době platnosti objektů .NET
               href: collecting-dotnet-memory-allocation-and-lifetime-data.md
             - name: Shromažďování podrobných dat časování pomocí instrumentace
-              href: collecting-detailed-timing-data-by-using-instrumentation.md
               items:
+                - name: Shromažďování podrobných dat časování pomocí instrumentace
+                  href: collecting-detailed-timing-data-by-using-instrumentation.md
                 - name: Shromažďování dat čítačů procesoru
                   href: how-to-collect-cpu-counter-data.md
                 - name: Přemístění instrumentovaných binárních souborů
@@ -118,8 +125,9 @@
             - name: Shromažďování dat interakce vrstev
               href: collecting-tier-interaction-data.md
             - name: Shromažďování dalších dat o výkonu
-              href: collecting-additional-performance-data.md
               items:
+                - name: Shromažďování dalších dat o výkonu
+                  href: collecting-additional-performance-data.md
                 - name: Shromažďování dat čítačů Windows
                   href: how-to-collect-windows-counter-data.md
                 - name: Shromažďování dat trasování událostí pro Windows
@@ -139,8 +147,9 @@
             - name: Určení modulu runtime .NET Framework
               href: how-to-specify-the-dotnet-framework-runtime.md
         - name: Řízení shromažďování dat
-          href: controlling-data-collection.md
           items:
+            - name: Řízení shromažďování dat
+              href: controlling-data-collection.md
             - name: Zahájení a ukončení shromažďování dat o výkonu
               href: how-to-start-and-end-performance-data-collection.md
             - name: Připojení nástrojů pro měření výkonu ke spuštěným procesům a jejich odpojení
@@ -154,23 +163,27 @@
             - name: Vyloučení krátkých funkcí z instrumentace nebo jejich zahrnutí do instrumentace
               href: how-to-exclude-or-include-short-functions-from-instrumentation.md
         - name: Analýza dat nástrojů pro měření výkonu
-          href: analyzing-performance-tools-data.md
           items:
+            - name: Analýza dat nástrojů pro měření výkonu
+              href: analyzing-performance-tools-data.md
             - name: Použití pravidel výkonu k analýze dat
-              href: using-performance-rules-to-analyze-data.md
               items:
+                - name: Použití pravidel výkonu k analýze dat
+                  href: using-performance-rules-to-analyze-data.md
                 - name: Zobrazení upozornění výkonu
                   href: how-to-view-performance-warnings.md
                 - name: Konfigurace pravidel výkonu
                   href: how-to-configure-performance-rules.md
                 - name: Referenční dokumentace pravidel výkonu
-                  href: performance-rules-reference.md
                   items:
+                    - name: Referenční dokumentace pravidel výkonu
+                      href: performance-rules-reference.md
                     - name: Pravidla výkonu podle identifikátorů
                       href: performance-rules-by-id.md
                     - name: Pravidla výkonu použití rozhraní .NET Framework
-                      href: dotnet-framework-usage-performance-rules.md
                       items:
+                        - name: Pravidla výkonu použití rozhraní .NET Framework
+                          href: dotnet-framework-usage-performance-rules.md
                         - name: 'DA0001: Použití třídy StringBuilder ke zřetězení'
                           href: da0001-use-stringbuilder-for-concatenations.md
                         - name: 'DA0005: Časté shromažďování GC2'
@@ -202,15 +215,17 @@
                         - name: 'DA0039: Velmi vysoká míra konfliktů zámků'
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: Pravidla výkonu paměti a stránkování
-                      href: memory-and-paging-performance-rules.md
                       items:
+                        - name: Pravidla výkonu paměti a stránkování
+                          href: memory-and-paging-performance-rules.md
                         - name: 'DA0014: Velmi vysoké míry stránkování aktivní paměti na disk'
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
                         - name: 'DA0017: Vysoké míry stránkování aktivní paměti na disk'
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: Pravidla používání nástrojů pro profilaci
-                      href: profiling-tools-usage-rules.md
                       items:
+                        - name: Pravidla používání nástrojů pro profilaci
+                          href: profiling-tools-usage-rules.md
                         - name: 'DA0002: Chybí knihovna VSPerfCorProf.dll'
                           href: da0002-vsperfcorprof-dll-is-missing.md
                         - name: 'DA0003: Velký počet vzorků jádra'
@@ -226,8 +241,9 @@
                         - name: 'DA0030: Získání měření interakce vrstev pro databázové projekty'
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: Pravidla výkonu sledování prostředků
-                      href: resource-monitoring-performance-rules.md
                       items:
+                        - name: Pravidla výkonu sledování prostředků
+                          href: resource-monitoring-performance-rules.md
                         - name: 'DA0501: Průměrná spotřeba procesoru profilovaným procesem'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
                         - name: 'DA0502: Maximální spotřeba procesoru profilovaným procesem'
@@ -241,13 +257,15 @@
                         - name: 'DA0506: Maximální nesdílené bajty přidělené profilovanému procesu'
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: Zobrazení sestav výkonu
-              href: performance-report-views.md
               items:
+                - name: Zobrazení sestav výkonu
+                  href: performance-report-views.md
                 - name: Přehled sestav výkonu
                   href: performance-report-overview.md
                 - name: Obecná zobrazení dat
-                  href: common-data-views.md
                   items:
+                    - name: Obecná zobrazení dat
+                      href: common-data-views.md
                     - name: Zobrazení procesů
                       href: process-view.md
                     - name: Zobrazení značek
@@ -271,8 +289,9 @@
                     - name: Trasování událostí pro Windows – sestava
                       href: event-tracing-for-windows-etw-report.md
                 - name: Zobrazení dat metod vzorkování profileru
-                  href: profiler-sampling-method-data-views.md
                   items:
+                    - name: Zobrazení dat metod vzorkování profileru
+                      href: profiler-sampling-method-data-views.md
                     - name: Souhrnné zobrazení – vzorkování dat
                       href: summary-view-sampling-data.md
                     - name: Zobrazení stromu volání – vzorkování dat
@@ -288,8 +307,9 @@
                     - name: Zobrazení ukazatelů na instrukce – vzorkování dat
                       href: instruction-pointers-ips-view-sampling-data.md
                 - name: Zobrazení dat metody instrumentace
-                  href: instrumentation-method-data-views.md
                   items:
+                    - name: Zobrazení dat metody instrumentace
+                      href: instrumentation-method-data-views.md
                     - name: Souhrnné zobrazení – data instrumentace
                       href: summary-view-instrumentation-data.md
                     - name: Zobrazení stromu volání – data instrumentace
@@ -301,8 +321,9 @@
                     - name: Zobrazení funkcí – data instrumentace
                       href: functions-view-instrumentation-data.md
                 - name: Zobrazení dat paměti .NET
-                  href: dotnet-memory-data-views.md
                   items:
+                    - name: Zobrazení dat paměti .NET
+                      href: dotnet-memory-data-views.md
                     - name: Souhrnné zobrazení – data paměti .NET
                       href: summary-view-dotnet-memory-data.md
                     - name: Přidělení paměti .NET – zobrazení
@@ -330,8 +351,9 @@
                     - name: Zobrazení funkcí – data instrumentace paměti .NET
                       href: functions-view-dotnet-memory-instrumentation-data.md
                 - name: Zobrazení dat kolizí prostředku
-                  href: resource-contention-data-views.md
                   items:
+                    - name: Zobrazení dat kolizí prostředku
+                      href: resource-contention-data-views.md
                     - name: Souhrnné zobrazení – zobrazení kolize prostředků
                       href: summary-view-resource-contention-view.md
                     - name: Zobrazení stromu volání – data kolizí
@@ -355,13 +377,15 @@
                     - name: Zobrazení ukazatelů na instrukce – data kolizí
                       href: instruction-pointers-ips-view-contention-data.md
                 - name: Zobrazení interakce vrstvy
-                  href: tier-interaction-views.md
                   items:
+                    - name: Zobrazení interakce vrstvy
+                      href: tier-interaction-views.md
                     - name: Zobrazení interakcí vrstev
                       href: tier-interactions-view.md
             - name: Přizpůsobení nástrojů pro měření výkonu v zobrazení sestav
-              href: customizing-performance-tools-report-views.md
               items:
+                - name: Přizpůsobení nástrojů pro měření výkonu v zobrazení sestav
+                  href: customizing-performance-tools-report-views.md
                 - name: Přizpůsobení sloupců zobrazení sestav
                   href: how-to-customize-report-view-columns.md
                 - name: Filtrování zobrazení sestav
@@ -375,8 +399,9 @@
                 - name: Filtrování zobrazení sestav nástrojů pro profilaci k zobrazení pouze vlastního kódu
                   href: how-to-filter-profiling-tools-report-views-to-display-just-my-code.md
         - name: Porovnání datových souborů výkonu
-          href: comparing-performance-data-files.md
           items:
+            - name: Porovnání datových souborů výkonu
+              href: comparing-performance-data-files.md
             - name: Porovnání datových souborů výkonu
               href: how-to-compare-performance-data-files.md
         - name: Uložení informací o symbolech do datových souborů výkonu
@@ -384,8 +409,9 @@
         - name: Uložení a export dat nástrojů pro měření výkonu
           href: saving-and-exporting-performance-tools-data.md
         - name: Použití nástrojů pro profilaci z příkazového řádku
-          href: using-the-profiling-tools-from-the-command-line.md
           items:
+            - name: Použití nástrojů pro profilaci z příkazového řádku
+              href: using-the-profiling-tools-from-the-command-line.md
             - name: Určení umístění souboru se symboly z příkazového řádku
               href: how-to-specify-symbol-file-locations-from-the-command-line.md
             - name: Určení cesty k nástrojům příkazového řádku pro profilaci
@@ -395,11 +421,13 @@
             - name: "Přidání dat interakce vrstev z\_příkazového řádku"
               href: adding-tier-interaction-data-from-the-command-line.md
             - name: Profilace samostatných aplikací z příkazového řádku
-              href: command-line-profiling-of-stand-alone-applications.md
               items:
+                - name: Profilace samostatných aplikací z příkazového řádku
+                  href: command-line-profiling-of-stand-alone-applications.md
                 - name: Shromažďování statistik aplikace pro samostatné aplikace pomocí příkazového řádku profileru
-                  href: collecting-application-statistics-for-stand-alone-applications.md
                   items:
+                    - name: Shromažďování statistik aplikace pro samostatné aplikace pomocí příkazového řádku profileru
+                      href: collecting-application-statistics-for-stand-alone-applications.md
                     - name: Spuštění samostatné aplikace s profilerem a shromažďování statistik aplikace pomocí příkazového řádku
                       href: how-to-launch-a-stand-alone-app-and-collect-application-statistics.md
                     - name: Připojení profileru k samostatné aplikaci .NET Framework a shromažďování statistik aplikace pomocí příkazového řádku
@@ -407,15 +435,17 @@
                     - name: Připojení profileru k nativní samostatné aplikaci a shromažďování statistik aplikace pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md
                 - name: Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku profileru
-                  href: collecting-detailed-timing-data-for-a-stand-alone-application.md
                   items:
+                    - name: Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku profileru
+                      href: collecting-detailed-timing-data-for-a-stand-alone-application.md
                     - name: Instrumentace samostatné součásti rozhraní .NET Framework a shromažďování dat časování s profilerem z příkazového řádku
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md
                     - name: Instrumentace nativní samostatné součásti a shromažďování dat časování s profilerem z příkazového řádku
                       href: how-to-instrument-a-native-component-and-collect-timing-data.md
                 - name: Shromažďování dat souběžnosti pro samostatné aplikace pomocí příkazového řádku profileru
-                  href: collecting-concurrency-data-for-stand-alone-applications.md
                   items:
+                    - name: Shromažďování dat souběžnosti pro samostatné aplikace pomocí příkazového řádku profileru
+                      href: collecting-concurrency-data-for-stand-alone-applications.md
                     - name: Spuštění samostatné aplikace rozhraní .NET Framework s profilerem za účelem shromáždění dat souběžnosti pomocí příkazového řádku
                       href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md
                     - name: Spuštění samostatné nativní aplikace s profilerem za účelem shromažďování dat souběžnosti pomocí příkazového řádku
@@ -425,8 +455,9 @@
                     - name: Připojení profileru k nativní samostatné aplikaci a shromažďování dat souběžnosti pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md
                 - name: Shromažďování dat o paměti rozhraní .NET Framework pro samostatné aplikace pomocí příkazového řádku profileru
-                  href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
                   items:
+                    - name: Shromažďování dat o paměti rozhraní .NET Framework pro samostatné aplikace pomocí příkazového řádku profileru
+                      href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
                     - name: Spuštění samostatné aplikace rozhraní .NET Framework s profilerem za účelem shromáždění dat paměti pomocí příkazového řádku
                       href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md
                     - name: Připojení profileru k samostatné aplikaci .NET Framework ke shromažďování dat paměti pomocí příkazového řádku
@@ -436,30 +467,35 @@
                 - name: 'Návod: Profilace z příkazového řádku s použitím vzorkování'
                   href: walkthrough-command-line-profiling-using-sampling.md
             - name: Profilace webových aplikací ASP.NET z příkazového řádku
-              href: command-line-profiling-of-aspnet-web-applications.md
               items:
+                - name: Profilace webových aplikací ASP.NET z příkazového řádku
+                  href: command-line-profiling-of-aspnet-web-applications.md
                 - name: Pohotová profilace webových stránek pomocí VSPerfASPNETCmd
                   href: rapid-web-site-profiling-with-vsperfaspnetcmd.md
                 - name: Shromažďování statistik aplikace pro webové aplikace ASP.NET pomocí metody vzorkování profileru z příkazového řádku
-                  href: collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md
                   items:
+                    - name: Shromažďování statistik aplikace pro webové aplikace ASP.NET pomocí metody vzorkování profileru z příkazového řádku
+                      href: collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md
                     - name: Připojení profileru k webové aplikaci ASP.NET ke shromažďování statistik aplikace pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
                 - name: Shromažďování podrobných dat časování pro webovou aplikaci ASP.NET pomocí metody instrumentace profileru z příkazového řádku
-                  href: collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md
                   items:
+                    - name: Shromažďování podrobných dat časování pro webovou aplikaci ASP.NET pomocí metody instrumentace profileru z příkazového řádku
+                      href: collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md
                     - name: Instrumentace staticky kompilované webové aplikace ASP.NET a shromažďování podrobných dat časování s profilerem z příkazového řádku
                       href: how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md
                     - name: Instrumentace dynamicky kompilované webové aplikace ASP.NET a shromažďování podrobných dat časování s profilerem z příkazového řádku
                       href: how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md
                 - name: Shromažďování dat souběžnosti pro webovou aplikaci ASP.NET pomocí příkazového řádku profileru
-                  href: collecting-concurrency-data-for-an-aspnet-web-application.md
                   items:
+                    - name: Shromažďování dat souběžnosti pro webovou aplikaci ASP.NET pomocí příkazového řádku profileru
+                      href: collecting-concurrency-data-for-an-aspnet-web-application.md
                     - name: Připojení profileru k webové aplikaci ASP.NET ke shromažďování dat souběžnosti pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md
                 - name: Shromažďování dat paměti z webové aplikace ASP.NET pomocí příkazového řádku profileru
-                  href: collecting-memory-data-from-an-aspnet-web-application.md
                   items:
+                    - name: Shromažďování dat paměti z webové aplikace ASP.NET pomocí příkazového řádku profileru
+                      href: collecting-memory-data-from-an-aspnet-web-application.md
                     - name: Připojení profileru k webové aplikaci ASP.NET ke shromažďování dat paměti pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md
                     - name: Instrumentace staticky kompilované webové aplikace ASP.NET a shromažďování dat paměti pomocí příkazového řádku profileru
@@ -469,39 +505,45 @@
                 - name: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
                   href: how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md
             - name: Profilace služeb z příkazového řádku
-              href: command-line-profiling-of-services.md
               items:
+                - name: Profilace služeb z příkazového řádku
+                  href: command-line-profiling-of-services.md
                 - name: Shromažďování statistik aplikace pro služby pomocí metody vzorkování profileru
-                  href: collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md
                   items:
+                    - name: Shromažďování statistik aplikace pro služby pomocí metody vzorkování profileru
+                      href: collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md
                     - name: Připojení profileru ke službě .NET ke shromažďování statistik aplikace pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
                     - name: Připojení profileru k nativní službě ke shromažďování statistik aplikace pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md
                 - name: Shromažďování podrobných dat časování pro službu pomocí metody instrumentace z příkazového řádku profileru
-                  href: collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md
                   items:
+                    - name: Shromažďování podrobných dat časování pro službu pomocí metody instrumentace z příkazového řádku profileru
+                      href: collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md
                     - name: Instrumentace služby .NET a shromažďování podrobných dat časování pomocí příkazového řádku profileru
                       href: how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
                     - name: Instrumentace nativní služby a shromažďování podrobných dat časování pomocí příkazového řádku profileru
                       href: how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
                 - name: Shromažďování dat souběžnosti pro službu pomocí příkazového řádku profileru
-                  href: collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md
                   items:
+                    - name: Shromažďování dat souběžnosti pro službu pomocí příkazového řádku profileru
+                      href: collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md
                     - name: Připojení profileru ke službě .NET ke shromažďování dat souběžnosti pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md
                     - name: Připojení profileru k nativní službě ke shromažďování dat souběžnosti pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md
                 - name: Shromažďování dat paměti ze služeb rozhraní .NET Framework pomocí příkazového řádku profileru
-                  href: collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md
                   items:
+                    - name: Shromažďování dat paměti ze služeb rozhraní .NET Framework pomocí příkazového řádku profileru
+                      href: collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md
                     - name: Připojení profileru ke službě .NET ke shromažďování dat paměti pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md
                     - name: Instrumentace služby rozhraní .NET Framework a shromažďování dat paměti pomocí příkazového řádku profileru
                       href: how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md
             - name: Vytváření sestav profileru z příkazového řádku
-              href: creating-profiler-reports-from-the-command-line.md
               items:
+                - name: Vytváření sestav profileru z příkazového řádku
+                  href: creating-profiler-reports-from-the-command-line.md
                 - name: Vytváření základních sestav profilace z příkazového řádku
                   href: creating-basic-profiling-reports-from-the-command-line.md
                 - name: Filtrování sestav z příkazového řádku
@@ -517,8 +559,9 @@
             - name: Instalace samostatného profileru
               href: how-to-install-the-stand-alone-profiler.md
             - name: Referenční dokumentace nástrojů příkazového řádku pro profilaci
-              href: command-line-profiling-tools-reference.md
               items:
+                - name: Referenční dokumentace nástrojů příkazového řádku pro profilaci
+                  href: command-line-profiling-tools-reference.md
                 - name: VSInstr
                   href: vsinstr.md
                 - name: Upozornění VSInstr
@@ -526,8 +569,9 @@
                 - name: VSPerf
                   href: vsperf.md
                 - name: VSPerfCmd
-                  href: vsperfcmd.md
                   items:
+                    - name: VSPerfCmd
+                      href: vsperfcmd.md
                     - name: Spustit
                       href: start.md
                     - name: CrossSession
@@ -593,11 +637,13 @@
         - name: Profilování v klastrech HPC (High Performance Computing)
           href: profiling-on-hpc-high-performance-computing-clusters.md
         - name: Rozhraní API nástrojů pro profilaci
-          href: profiling-tools-apis.md
           items:
+            - name: Rozhraní API nástrojů pro profilaci
+              href: profiling-tools-apis.md
             - name: Referenční dokumentace rozhraní API profileru sady Visual Studio (nativní)
-              href: visual-studio-profiler-api-reference-native.md
               items:
+                - name: Referenční dokumentace rozhraní API profileru sady Visual Studio (nativní)
+                  href: visual-studio-profiler-api-reference-native.md
                 - name: CommentMarkAtProfile
                   href: commentmarkatprofile.md
                 - name: CommentMarkProfile
@@ -623,15 +669,17 @@
         - name: Řešení potíží s nástroji pro měření výkonu
           href: troubleshooting-performance-tools-issues.md
     - name: Vizualizér souběžnosti
-      href: concurrency-visualizer.md
       items:
+        - name: Vizualizér souběžnosti
+          href: concurrency-visualizer.md
         - name: Obecné vzory pro vícevláknové aplikace s nevhodným chováním
           href: common-patterns-for-poorly-behaved-multithreaded-applications.md
         - name: Navigátor využití
           href: utilization-navigator.md
         - name: Zobrazení využití
-          href: utilization-view.md
           items:
+            - name: Zobrazení využití
+              href: utilization-view.md
             - name: Graf využití procesoru
               href: cpu-utilization-graph.md
             - name: Průměrné využití procesoru
@@ -647,8 +695,9 @@
             - name: Aktivita GPU (jiné procesy)
               href: gpu-activity-other-processes.md
         - name: Zobrazení vláken (paralelní výkon)
-          href: threads-view-parallel-performance.md
           items:
+            - name: Zobrazení vláken (paralelní výkon)
+              href: threads-view-parallel-performance.md
             - name: Sestava profilu času blokace
               href: blocking-time-profile-report.md
             - name: Kanály (Zobrazení vláken)
@@ -710,8 +759,9 @@
             - name: Ovládací prvek Lupa (Zobrazení vláken)
               href: zoom-control-threads-view.md
         - name: Zobrazení jader
-          href: cores-view.md
           items:
+            - name: Zobrazení jader
+              href: cores-view.md
             - name: Legenda zobrazení jader
               href: cores-view-legend.md
             - name: Logická jádra zobrazení jader
@@ -723,8 +773,9 @@
         - name: Dialogové okno Upřesnit nastavení (Vizualizér souběžnosti)
           href: advanced-settings-dialog-box-concurrency-visualizer.md
         - name: Značky Vizualizéru souběžnosti
-          href: concurrency-visualizer-markers.md
           items:
+            - name: Značky Vizualizéru souběžnosti
+              href: concurrency-visualizer-markers.md
             - name: Značky příznaků
               href: flag-markers.md
             - name: Značky zpráv
@@ -734,29 +785,35 @@
             - name: Vizualizace událostí EventSource v podobě značek
               href: visualizing-eventsource-events-as-markers.md
         - name: SDK Vizualizéru souběžnosti
-          href: concurrency-visualizer-sdk.md
           items:
+            - name: SDK Vizualizéru souběžnosti
+              href: concurrency-visualizer-sdk.md
             - name: Použití SDK značek Vizualizéru souběžnosti
               href: how-to-use-the-concurrency-visualizer-markers-sdk.md
             - name: Referenční dokumentace knihoven jazyka C++
-              href: cpp-library-reference.md
               items:
+                - name: Referenční dokumentace knihoven jazyka C++
+                  href: cpp-library-reference.md
                 - name: Obor názvů souběžnosti (Vizualizér souběžnosti)
-                  href: concurrency-namespace-concurrency-visualizer.md
                   items:
+                    - name: Obor názvů souběžnosti (Vizualizér souběžnosti)
+                      href: concurrency-namespace-concurrency-visualizer.md
                     - name: Diagnostic – obor názvů
-                      href: diagnostic-namespace.md
                       items:
+                        - name: Diagnostic – obor názvů
+                          href: diagnostic-namespace.md
                         - name: span – třída
-                          href: span-class.md
                           items:
+                            - name: span – třída
+                              href: span-class.md
                             - name: 'span::~span – destruktor'
                               href: span-tilde-span-destructor.md
                             - name: 'span::span – konstruktor'
                               href: span-span-constructor.md
                         - name: marker_series – třída
-                          href: marker-series-class.md
                           items:
+                            - name: marker_series – třída
+                              href: marker-series-class.md
                             - name: 'marker_series::~marker_series – destruktor'
                               href: marker-series-tilde-marker-series-destructor.md
                             - name: 'marker_series::is_enabled – metoda'
@@ -772,8 +829,9 @@
                         - name: marker_importance – výčet
                           href: marker-importance-enumeration.md
             - name: Referenční dokumentace knihoven jazyka C
-              href: c-library-reference.md
               items:
+                - name: Referenční dokumentace knihoven jazyka C
+                  href: c-library-reference.md
                 - name: CvCreateDefaultMarkerSeriesOfDefaultProvider – funkce
                   href: cvcreatedefaultmarkerseriesofdefaultprovider-function.md
                 - name: CvCreateMarkerSeries – funkce

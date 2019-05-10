@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76baf1330ec63d1032b69fa6cfddce4776742a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869799"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458984"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Umožňuje proces oznámení o událostech portu.
@@ -46,8 +49,8 @@ int WatchForProviderEvents(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `Flags`
+## <a name="parameters"></a>Parametry
+ `Flags`\
 
  [in] Kombinace příznaků z [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) výčtu. Následující příznaky jsou typické pro toto volání:
 
@@ -58,23 +61,23 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Volající, byl připojený k ale není spuštěn pomocí ladicího programu.|
 |`PFLAG_REASON_WATCH`|Volající vyžaduje sledovat události. Pokud tento příznak není nastavený. pak odebrat událost zpětného volání a volající už nebude dostávat oznámení.|
 
- `pPort`
+ `pPort`\
 
  [in] Port volající proces běží na.
 
- `processId`
+ `processId`\
 
  [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktura obsahující dotyčný ID procesu, který obsahuje program.
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in] Pole identifikátorů GUID ladicími stroji spojených s procesem.
 
- `guidLaunchingEngine`
+ `guidLaunchingEngine`\
 
  [in] Identifikátor GUID ladicího stroje, který spustil tento proces (pokud existuje).
 
- `pEventCallback`
+ `pEventCallback`\
 
  [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) objekt, který obdrží oznámení události.
 
@@ -213,7 +216,7 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

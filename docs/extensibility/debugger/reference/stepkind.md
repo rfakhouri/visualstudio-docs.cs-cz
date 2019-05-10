@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa9c1805c7eaba480cd46ebc6e73ee370e3cbb22
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864783"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460774"
 ---
 # <a name="stepkind"></a>STEPKIND
 Určuje typ kroku pro procházení.
@@ -43,14 +46,18 @@ public enum enum_STEPKIND { 
 };
 ```
 
-## <a name="members"></a>Členové
- STEP_INTO kroky na funkci.
+## <a name="fields"></a>Pole
+ `STEP_INTO`\
+ Kroky na funkci.
 
- STEP_OVER při krokování ve funkci.
+ `STEP_OVER`\
+ Jednotlivé kroky k funkci.
 
- STEP_OUT vystoupí z funkce.
+ `STEP_OUT`\
+ Vystoupí z funkce.
 
- Kroky STEP_BACKWARDS zpět na funkci.
+ `STEP_BACKWARDS`\
+ Jednotlivé kroky zpět na funkci.
 
 ## <a name="remarks"></a>Poznámky
  Předán jako argument [krok](../../../extensibility/debugger/reference/idebugprocess3-step.md) metody.
@@ -62,6 +69,6 @@ public enum enum_STEPKIND { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

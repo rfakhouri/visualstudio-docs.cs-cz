@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16d2b9ae9c446d4c8082a8c35c9e4d1810233b95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f3485aa2e5650345c0b14c6cb8093034043285a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913858"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461015"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Určuje typ zprávy a důvod.
@@ -47,18 +50,24 @@ public enum enum_MESSAGETYPE { 
 };
 ```
 
-## <a name="members"></a>Členové
- MT_OUTPUTSTRING znamená, že zpráva poslat do okna výstup. To se vzájemně vylučuje z `MT_MESSAGEBOX`.
+## <a name="fields"></a>Pole
+ `MT_OUTPUTSTRING`\
+ Označuje, že zprávy by měl být odesláno do okna výstup. To se vzájemně vylučuje z `MT_MESSAGEBOX`.
 
- MT_MESSAGEBOX znamená, že zpráva by měla být zobrazena v okně se zprávou. To se vzájemně vylučuje z `MT_OUTPUTSTRING`.
+ `MT_MESSAGEBOX`\
+ Určuje, že zprávy by měl zobrazeny v okně se zprávou. To se vzájemně vylučuje z `MT_OUTPUTSTRING`.
 
- Hodnota masky MT_TYPE_MASK A k izolování cíl zprávy.
+ `MT_TYPE_MASK`\
+ Hodnota masky izolovat cíl zprávy.
 
- MT_REASON_EXCEPTION znamená, že se zobrazuje okno se zprávou v důsledku výjimky. To se vzájemně vylučuje z `MT_REASON_TRACEPOINT`.
+ `MT_REASON_EXCEPTION`\
+ Označuje, že se zobrazuje okno se zprávou v důsledku výjimky. To se vzájemně vylučuje z `MT_REASON_TRACEPOINT`.
 
- MT_REASON_TRACEPOINT znamená, že se v důsledku dosažení zarážku s trasováním zobrazuje okno se zprávou. Toto je vzájemně se vylučující k `MT_REASON_EXCEPTION`.
+ `MT_REASON_TRACEPOINT`\
+ Označuje, že se v důsledku dosažení zarážku s trasováním zobrazuje okno se zprávou. Toto je vzájemně se vylučující k `MT_REASON_EXCEPTION`.
 
- Hodnota masky MT_REASON_MASK A k izolování důvod se zobrazí zpráva.
+ `MT_REASON_MASK`\
+ Hodnota masky izolovat důvod se zobrazí zpráva.
 
 ## <a name="remarks"></a>Poznámky
  Tyto hodnoty jsou vráceny z [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) a [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) metody.
@@ -72,7 +81,7 @@ public enum enum_MESSAGETYPE { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)
 - [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)

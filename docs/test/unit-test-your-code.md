@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 900492cf7a4e617a044ca60b3b72d9891bdaa15b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5682d752ba2c1430d8ab708e3dadda754a1ba757
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788470"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461383"
 ---
 # <a name="unit-test-your-code"></a>Testování částí kódu
 
@@ -24,7 +24,7 @@ Testování částí poskytuje vývojářům a testerům rychlý způsob vyhled�
 
 Nástroje testování částí zahrnují:
 
-* **Průzkumník testů**&mdash;můžete spustit testy jednotky a analyzovat jejich výsledky v **Průzkumník testů**. Můžete použít libovolné rozhraní testování částí, včetně rozhraní třetích stran, které má adaptér pro **Průzkumníka testů**.
+* **Průzkumník testů**&mdash;spouštění testů jednotek a analyzovat jejich výsledky v **Průzkumník testů**. Můžete použít libovolné rozhraní testování částí, včetně rozhraní třetích stran, které má adaptér pro **Průzkumníka testů**.
 
 * **Rámce jednotkových testů společnosti Microsoft pro spravovaný kód**&mdash;rozhraní testování částí Microsoft pro spravovaný kód se instaluje se sadou Visual Studio a poskytuje rozhraní pro testování kódu rozhraní .NET.
 
@@ -38,18 +38,18 @@ Můžete také použít [IntelliTest](../test/generate-unit-tests-for-your-code-
 
 ## <a name="key-tasks"></a>Klíčové úkoly
 
-V následujících tématech naleznete informace týkající se vytváření testování částí a sloužící k jeho lepšímu pochopení:
+Abychom vám pomohli s principy a vytváření testů jednotek pomocí následujících článků:
 
-|Úlohy|Související témata|
+|Úkoly|Související témata|
 |-|-----------------------|
-|**Rychlé začátky a návody:** Další testování v sadě Visual Studio z příkladů kódů použijte následující témata.|-   [Návod: Vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Rychlý start: Vývoj řízený testováním pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Přidání testů jednotek do stávajících aplikací C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
-|**Testování částí pomocí Průzkumníka testů:** Zjistěte, jak může Průzkumník testů pomoci vytváření produktivnějších a efektivnějších testů jednotek.|-   [Základní informace o testování částí](../test/unit-test-basics.md)<br />-   [Vytvořte projekt testu jednotek](../test/create-a-unit-test-project.md)<br />-   [Spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)<br />-   [Nainstalujte rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)|
-|**Testování částí kódu C++**|-   [Zápis testů jednotek pro C/C++ se sadou Microsoft Unit Testing Framework pro C++](../test/writing-unit-tests-for-c-cpp.md)|
-|**Izolující testování částí**|-   [Izolace testovaného kódu pomocí Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**Použití pokrytí kódu pro identifikaci, jaká část projektového kódu je testována:** Další informace o funkcích pokrytí kódu testovacích nástrojů sady Visual Studio.|-   [Použití pokrytí kódu k určení, kolik kódu je právě testováno.](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Provedení zátěžové a výkonnostní analýzy použitím zátěžových testů:** Můžete vytvořit zátěžový test a testování částí přidejte do ní pro lepší izolaci výkonnostních a zátěžových problémů aplikace.|-   [Zátěžové testování (Azure testovací plány a sady TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**Nastavení brány kvality:** Můžete vytvořit brány kvality k vynucení spuštění testů předtím, než je kód se změnami nebo sloučení, k zajištění kvality kódu.|-   [Zásady vrácení se změnami (TFVC úložiště Azure)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
-|**Nastavení možností testování:** Například můžete určit, kde jsou uloženy výsledky testů.|[Konfigurace testů částí s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
+|**Rychlé starty a kurzy:** Další informace o testování v sadě Visual Studio z příkladů kódů.|- [Návod: Vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [Rychlý start: Vývoj řízený testováním pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [Jak: Přidání jednotkových testů do C++ aplikace](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
+|**Testování částí pomocí Průzkumníka testů:** Zjistěte, jak může Průzkumník testů pomoci vytváření produktivnějších a efektivnějších testů jednotek.|- [Základní informace o testování částí](../test/unit-test-basics.md)<br />- [Vytvořte projekt testu jednotek](../test/create-a-unit-test-project.md)<br />- [Spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)<br />- [Nainstalujte rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)|
+|**Testování částí C++ kódu**|- [Zápis testů jednotek pro C/C++](../test/writing-unit-tests-for-c-cpp.md)|
+|**Izolující testování částí**|- [Izolace testovaného kódu pomocí Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**Použití pokrytí kódu pro identifikaci, jaká část projektového kódu je testována:** Další informace o funkcích pokrytí kódu testovacích nástrojů sady Visual Studio.|- [Použití pokrytí kódu k určení, kolik kódu je právě testováno.](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Provedení zátěžové a výkonnostní analýzy použitím zátěžových testů:** Zjistěte, jak vytvořit zátěžové testy pro lepší izolaci výkonnostních a zátěžových problémů aplikace.|- [Rychlý start: Vytvoření projektu zátěžového testu](../test/quickstart-create-a-load-test-project.md)<br />- [Zátěžové testování (Azure testovací plány a sady TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**Nastavení brány kvality:** Zjistěte, jak vytvořit brány kvality k vynucení spuštění testů předtím, než je kód se změnami nebo sloučit.|- [Zásady vrácení se změnami (TFVC úložiště Azure)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Nastavení možností testování:** Zjistěte, jak nakonfigurovat možnosti testování, například ukládat výsledky testů.|[Konfigurace testů částí s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Referenční dokumentace rozhraní API
 

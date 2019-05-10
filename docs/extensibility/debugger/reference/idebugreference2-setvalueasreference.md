@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4af17f49e95818ed664e74aab53687540f653ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0fc6e2fee354d6dcc76676bf02d4ed88e1799f26
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916321"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458649"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 Nastaví hodnotu odkazu z jiného odkazu. Vyhrazeno pro budoucí použití.
@@ -42,25 +45,25 @@ int SetValueAsReference ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `rgpArgs`
+## <a name="parameters"></a>Parametry
+ `rgpArgs`\
 
  [in] Pole [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objekty sloužící k určení, jak nastavit hodnotu odkazu.
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in] Počet odkazů v poli.
 
- `pValue`
+ `pValue`\
 
  [in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objekt, ze kterého chcete nastavit hodnotu vlastnosti.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Maximální doba v milisekundách pro čekání před návratem z této metody. Použití `INFINITE` čekat po neomezenou dobu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Vždy vrátí `E_NOTIMPL`.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

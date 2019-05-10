@@ -1,6 +1,7 @@
 - name: Kurzy k jazyku Visual Basic
-  href: index.yml
   items:
+    - name: Kurzy k jazyku Visual Basic
+      href: index.yml
     - name: Přehled
       items:
         - name: O sadě Visual Studio

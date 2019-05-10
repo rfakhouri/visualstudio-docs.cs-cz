@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a22a1868a47fd4b54b19cf224f995897775b4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f1e8ea5487a4eecb6dc9fa1f2b16d18ec3fa07
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865781"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458054"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 Určuje, jaké informace se mají načíst pro konkrétní počítač.
@@ -41,12 +44,15 @@ public enum enum_MACHINE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Členové
- MCIF_NAME inicializace/použít `bstrName` pole ve struktuře.
+## <a name="fields"></a>Pole
+ `MCIF_NAME`\
+ Inicializace/použít `bstrName` pole ve struktuře.
 
- MCIF_FLAGS inicializace/použít `Flags` pole ve struktuře.
+ `MCIF_FLAGS`\
+ Inicializace/použít `Flags` pole ve struktuře.
 
- MIF_ALL inicializace/použít všechna pole ve struktuře.
+ `MIF_ALL`\
+ Inicializace/použít všechna pole ve struktuře.
 
 ## <a name="remarks"></a>Poznámky
  Tyto hodnoty jsou předány [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) metoda označíte, kteří členové [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) struktury mají být inicializovány.
@@ -62,7 +68,7 @@ public enum enum_MACHINE_INFO_FIELDS { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)
 - [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

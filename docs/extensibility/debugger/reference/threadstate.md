@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3019671b98d3eb17c92d97c368f2f7338ee55a1d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913337"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460716"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Určuje stav vlákna.
@@ -45,16 +48,21 @@ public enum enum_THREADSTATE { 
 };
 ```
 
-## <a name="members"></a>Členové
- THREADSTATE_RUNNING znamená, že je spuštěn podproces.
+## <a name="fields"></a>Pole
+ `THREADSTATE_RUNNING`\
+ Určuje, zda je spuštěn podproces.
 
- THREADSTATE_STOPPED označuje, že vlákno zastavena kvůli zarážku.
+ `THREADSTATE_STOPPED`\
+ Označuje, že vlákno zastavena kvůli zarážku.
 
- THREADSTATE_FRESH označuje, že se vytvořila vlákno, ale ještě není spuštěno kódu.
+ `THREADSTATE_FRESH`\
+ Označuje, že se vytvořila vlákno, ale ještě není spuštěno kódu.
 
- THREADSTATE_DEAD označuje, že vlákno je neaktivní.
+ `THREADSTATE_DEAD`\
+ Označuje, že vlákno je neaktivní.
 
- THREADSTATE_FROZEN označuje, že je zmrazené vlákno (bez spuštění lze provést).
+ `THREADSTATE_FROZEN`\
+ Označuje, že je zmrazené vlákno (bez spuštění lze provést).
 
 ## <a name="remarks"></a>Poznámky
  Používá pro `dwThreadState` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.

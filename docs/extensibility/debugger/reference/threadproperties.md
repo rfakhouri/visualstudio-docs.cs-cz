@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55b3334c8bd28d3975f06aa39ca8c7fd719f1f9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59b0fd83202ea8a5514d1ed637404d4864bf6b57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913350"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460729"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Popisuje vlastnosti vlákno.
@@ -49,19 +52,26 @@ public struct THREADPROPERTIES { 
 ```
 
 ## <a name="members"></a>Členové
- dwFields A kombinace příznaků z [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) výčet popisující, která pole v této struktuře jsou platné.
+ `dwFields`\
+ Kombinace příznaků z [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) výčet popisující, která pole v této struktuře jsou platné.
 
- dwThreadId ID vlákna.
+ `dwThreadId`\
+ ID vlákna.
 
- dwSuspendCount vlákno pozastavit count.
+ `dwSuspendCount`\
+ Vlákno pozastavit count.
 
- dwThreadState A maximum [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) výčet označující stav provozní vlákna.
+ `dwThreadState`\
+ Hodnota z [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) výčet označující stav provozní vlákna.
 
- řetězec určující priorita vlákna; bstrPriority například "Vyšší než normální", "Normal" nebo "Kritický čas".
+ `bstrPriority`\
+ Řetězec určující priorita vlákna; například "Vyšší než normální", "Normal" nebo "Kritický čas".
 
- bstName název vlákna.
+ `bstName`\
+ Název vlákna.
 
- bstrLocation umístění podprocesu (obvykle nejvyššího rámec zásobníku), obvykle vyjádřený jako název metody, kde aktuálně zastavení spuštění.
+ `bstrLocation`\
+ Vlákno umístění (obvykle nejvyššího rámec zásobníku), obvykle vyjádřený jako název metody, kde aktuálně zastavení spuštění.
 
 ## <a name="remarks"></a>Poznámky
  Tato struktura je vyplněna voláním [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) metody. Takže vrácené informace se obvykle používá při naplňování **vlákna** okna.
@@ -73,7 +83,7 @@ public struct THREADPROPERTIES { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)

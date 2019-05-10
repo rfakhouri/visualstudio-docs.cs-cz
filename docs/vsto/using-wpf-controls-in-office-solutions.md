@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8c447ce6b202fc3ccca65c6725e9eb3e5f13ecf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b0cd5939bf91a3f154cf28434f561ed93b1a597
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982255"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226666"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Použití ovládacích prvků WPF v řešeních pro systém Office
 
@@ -55,7 +55,7 @@ Nelze přidat ovládací prvky WPF přímo k elementům uživatelského rozhran�
 
     - Pro oblasti formuláře, přidejte **oblast formuláře Outlooku** položky do projektu. Další informace najdete v tématu [jak: Přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    - Podokna akcí, přidejte **ovládacího prvku podokna akcí** nebo **uživatelský ovládací prvek** položky do projektu. Další informace najdete v tématu [jak: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) a [jak: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    - Podokna akcí, přidejte **ovládacího prvku podokna akcí** nebo **uživatelský ovládací prvek** položky do projektu. Další informace najdete v tématu [jak: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
     - Vlastní podokna úloh, přidejte **uživatelský ovládací prvek** položky do projektu. Další informace najdete v tématu [jak: Přidání vlastního podokna úloh do aplikace](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 

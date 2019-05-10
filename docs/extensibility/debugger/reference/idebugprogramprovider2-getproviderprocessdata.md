@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 385ef2aaaadc8d1f66eaf245f06dbfd299638fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f63b43c1e7e8035320c6d4c7b527e069904191a5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916715"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459013"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Načte seznam spuštěných aplikací z určeného procesu.
@@ -44,8 +47,8 @@ int GetProviderProcessData(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `Flags`
+## <a name="parameters"></a>Parametry
+ `Flags`\
 
  [in] Kombinace příznaků z [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) výčtu. Následující příznaky jsou typické pro toto volání:
 
@@ -56,19 +59,19 @@ int GetProviderProcessData(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Volající, byl připojený k ale není spuštěn pomocí ladicího programu.|
 |`PFLAG_GET_PROGRAM_NODES`|Volající žádá seznam program uzlů, které se mají vrátit.|
 
- `pPort`
+ `pPort`\
 
  [in] Port volající proces běží na.
 
- `processId`
+ `processId`\
 
  [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktura obsahující dotyčný ID procesu, který obsahuje program.
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in] Pole identifikátorů GUID pro ladicí stroj přiřazené pro ladění tohoto procesu (ty se používají k filtrování sady, které jsou vráceny ve skutečnosti na základě co podporují zadané moduly; Pokud nejsou zadány žádné moduly, a vrátí se všechny programy).
 
- `pProcess`
+ `pProcess`\
 
  [out] A [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struktura, která se vyplní požadované informace.
 
@@ -78,7 +81,7 @@ int GetProviderProcessData(
 ## <a name="remarks"></a>Poznámky
  Tato metoda je obvykle volána postup získání seznamu sad programy spuštěné v tomto procesu. Vrácené informace se seznam [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objekty.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

@@ -9,38 +9,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebbb18e37356c1ef6ccc47f18afe4736a418c0c3
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414857"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476581"
 ---
-# <a name="customizing-and-extending-a-domain-specific-language"></a>Přizpůsobení a rozšíření jazyka specifického pro doménu
+# <a name="customize-and-extend-a-domain-specific-language"></a>Přizpůsobení a rozšíření jazyka specifického pro doménu
+
 Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky) nabízí několik úrovní, ve kterém můžete definovat nástrojů pro modelování:
 
-1. Definice jazyka specifického pro doménu (DSL) pomocí diagramem definice DSL. Můžete rychle vytvořit DSL s graficky zápis, čitelné formě XML a základní nástroje, které jsou nutné ke generování kódu a další artefakty.
-
-     Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md).
+1. Definice jazyka specifického pro doménu (DSL) pomocí diagramem definice DSL. Můžete rychle vytvořit DSL s graficky zápis, čitelné formě XML a základní nástroje, které jsou nutné ke generování kódu a další artefakty. Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md).
 
 2. Vylaďte DSL pomocí pokročilejších funkcí definici DSL. Například můžete provést další odkazy zobrazí, když uživatel vytvoří element. Tyto postupy jsou většinou dosáhnout v definici DSL a některé vyžadují pár řádků kódu programu.
 
-3. Rozšíření nástrojů pro modelování pomocí kódu programu. Vmsdk následující položky je navržená speciálně pro usnadnění integrace vašich rozšíření s kódem, který je generován z definice DSL.  Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+3. Rozšíření nástrojů pro modelování pomocí kódu programu. Vmsdk následující položky je navržená speciálně pro usnadnění integrace vašich rozšíření s kódem, který je generován z definice DSL. Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
-> Po aktualizaci souboru definic DSL, nezapomeňte kliknout na **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení před opětovné sestavování svého řešení.
+> Po aktualizaci souboru definic DSL, nezapomeňte kliknout na **Transformovat všechny šablony** na panelu nástrojů **Průzkumníka řešení** před opětovné sestavování svého řešení.
 
-## <a name="customShapes"></a> V této části
+## <a name="article-reference"></a>Odkaz na článek
 
 |Tohoto efektu dosáhnete tak|Přečtěte si toto téma|
 |-|-|
-|Umožní uživateli nastavit vlastnosti barvu a styl v tvaru.|Pravým tlačítkem myši na obrazec nebo spojnici třídy, přejděte na **přidat vystavený**a klikněte na položku.<br /><br /> Zobrazit [přizpůsobení prezentace v diagramu](../modeling/customizing-presentation-on-the-diagram.md).|
+|Umožní uživateli nastavit vlastnosti barvu a styl v tvaru.|Pravým tlačítkem myši na obrazec nebo spojnici třídy, přejděte na **přidat vystavený**a klikněte na položku.|
 |Různé třídy prvku modelu vypadat podobně jako v diagramu, vlastnosti, jako je počáteční výška a šířka, barvy, popisky pro sdílení obsahu.|Použití dědičnosti mezi tvarů nebo konektor třídy. Mapování mezi odvozené tvary a odvozené doménové třídy dědit podrobnosti mapování z rodičů.<br /><br /> Nebo mapování jinou doménu tříd na stejnou třídu tvaru.|
 |Třída elementu, model se zobrazí při různých tvarů kontexty.|Map – třída více než jeden tvar do stejné doménové třídy. Při sestavování řešení postupujte podle zprávy o chybách a zadejte požadovaný kód se rozhodnout, jaký tvar, který má použít.|
 |Barva obrazce nebo jiné funkce, jako je písmo označují aktuální stav.|Zobrazit [aktualizace obrazců a konektorů k vyjádření modelu](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Vytvoření pravidla, která aktualizuje vlastnosti zveřejněné. Zobrazit [pravidla šířící změny v modelu](../modeling/rules-propagate-changes-within-the-model.md).<br /><br /> Nebo použijte OnAssociatedPropertyChanged() k aktualizaci není vystavený funkce, jako je písmo nebo odkaz šipky.|
 |Ikona ve tvaru změny k označení stavu.|Nastavte viditelnost dekoratéru mapování v okně podrobností DSL. Vyhledejte několik dekoratéry bitové kopie na stejné pozici. Zobrazit [aktualizace obrazců a konektorů k vyjádření modelu](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Nebo přepsat `ImageField.GetDisplayImage()`. Viz příklad v <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
-|Nastavit obrázek pozadí na žádný obrazec|Přepište InitializeInstanceResources() přidat ukotvené ImageField. Zobrazit [přizpůsobení prezentace v diagramu](../modeling/customizing-presentation-on-the-diagram.md).|
-|Vnořování obrazců do libovolné hloubky|Nastavte rekurzivní vložení stromu. Definujte BoundsRules tak, aby obsahovala tvary. Zobrazit [přizpůsobení prezentace v diagramu](../modeling/customizing-presentation-on-the-diagram.md).|
+|Nastavit obrázek pozadí na žádný obrazec|Přepište InitializeInstanceResources() přidat ukotvené ImageField.|
+|Vnořování obrazců do libovolné hloubky|Nastavte rekurzivní vložení stromu. Definujte BoundsRules tak, aby obsahovala tvary.|
 |Připojte konektory na pevnou bodů na hranice prvku.|Definování vložené terminálu prvky reprezentována malé porty v diagramu. Použití BoundsRules opravit porty na místě. Zobrazit ukázku diagramu okruh v [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128).|
 |Textové pole zobrazí hodnotu odvozenou z jiných hodnot.|Mapování dekoratéru text na doménovou vlastnost počítané nebo vlastní úložiště. Další informace najdete v tématu [vypočtené a vlastní vlastnosti úložiště](../modeling/calculated-and-custom-storage-properties.md).|
 |Šíří změny mezi prvky modelu, nebo obrazce|Zobrazit [ověřování v jazyka specifického pro doménu](../modeling/validation-in-a-domain-specific-language.md).|

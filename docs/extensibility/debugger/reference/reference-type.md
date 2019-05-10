@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcfc3745676ba1309327dc84143b0706ba02b5a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 17e6690f434672c891ac499175332e03c7f1bbf8
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864769"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460788"
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
 Určuje typ odkazu.
@@ -39,10 +42,12 @@ public enum enum_REFERENCE_TYPE { 
 };
 ```
 
-## <a name="members"></a>Členové
- REF_TYPE_WEAK určuje nestálý odkaz. Nelze kombinovat s `REF_TYPE_STRONG`.
+## <a name="fields"></a>Pole
+ `REF_TYPE_WEAK`\
+ Určuje nestálý odkaz. Nelze kombinovat s `REF_TYPE_STRONG`.
 
- REF_TYPE_STRONG určuje silného odkazu. Nelze kombinovat s `REF_TYPE_WEAK`.
+ `REF_TYPE_STRONG`\
+ Určuje silného odkazu. Nelze kombinovat s `REF_TYPE_WEAK`.
 
 ## <a name="remarks"></a>Poznámky
  Použít jako `dwRefType` člena [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury.
@@ -56,7 +61,7 @@ public enum enum_REFERENCE_TYPE { 
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e643ab6566818df7cdfee2bc4e5b256ecf065b5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e5d335fb6f90e6e93d58013958e94f6d4555c39
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955563"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455101"
 ---
 # <a name="sample-xsd-file-relationships"></a>Ukázkový soubor XSD: Relace
 
@@ -63,3 +63,6 @@ Následující soubor XSD se používá v různých příkladů v dokumentaci k 
 
 </xs:schema>
 ```
+
+> [!NOTE]
+> Vzorové společnosti, organizace, produkty, názvy domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené. Žádné jejich spojení se skutečnou společností, organizaci, produktu, název domény, e-mailovou adresu, loga, osoby, místa nebo události je určena ji vyvozovat.
