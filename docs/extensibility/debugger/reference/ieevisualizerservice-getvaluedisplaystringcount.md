@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3ed52e8be77e5f4dce081fc6a60ae22cecbb990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e401e009cd4119704e72dec09614ec013aa9eee0
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915193"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223546"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 Získá počet řetězců hodnota má být zobrazen pro zadanou vlastnost nebo pole.
@@ -39,21 +42,21 @@ int GetValueDisplayStringCount (
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `displayKind`
+## <a name="parameters"></a>Parametry
+ `displayKind`\
 
  [in] Hodnota z [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) výčtu.
 
- `propertyOrField`
+ `propertyOrField`\
 
  [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) rozhraní, které představuje vlastnost nebo pole.
 
- `pcelt`
+ `pcelt`\
 
  [out] Vrátí hodnotu řetězce k zobrazení.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
