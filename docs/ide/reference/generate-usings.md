@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790029"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531630"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Generovat direktivy using v sadě Visual Studio
 
@@ -32,7 +32,7 @@ Tato generace kód platí pro:
 
 1. Zkopírujte kód ze souboru a vložte ho do nového objektu bez zahrnutí nezbytné `using` příkazy. Výsledná chyba je přiložena opravu kódu, který přidá chybějící `using` příkazy.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Je nutné povolit tohoto návrhu v **nástroje > Možnosti > textový Editor > C# > Upřesnit > direktivy Using**.
 
 2. Vyberte kombinaci kláves Ctrl +. Chcete-li otevřít **rychlé akce a Refaktoringy** nabídky.
@@ -47,4 +47,4 @@ Tato generace kód platí pro:
 
 - [Generování kódu](../code-generation-in-visual-studio.md)
 - [Náhled změn](../../ide/preview-changes.md)
-- [Tipy pro vývojáře .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Tipy pro vývojáře .NET](../csharp-developer-productivity.md)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4d2a6195fc2357eecc6f9e011a1a7a4c3fff789
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02ef55b44d57cecadb690637c17c0a35e9cb0659
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789481"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531616"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Postupy: Správa zalamování řádků v editoru
 
@@ -55,6 +55,5 @@ Pokud jste obeznámeni s zalamování řádků v poznámkovém bloku ++, Sublime
 
 ## <a name="see-also"></a>Viz také:
 
-- [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)
 - [Textový editor, dialogové okno Možnosti](../../ide/reference/text-editor-options-dialog-box.md)
 - [Funkce editoru kódu](../../ide/writing-code-in-the-code-and-text-editor.md)

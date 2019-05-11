@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dce682aad7ab0d049488a6da9b8ab4f3b444d88
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977395"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531709"
 ---
 # <a name="import-element-msbuild"></a>Import – element (MSBuild)
 Importuje obsah jednoho souboru projektu do jiného souboru projektu.
@@ -46,9 +46,10 @@ Importuje obsah jednoho souboru projektu do jiného souboru projektu.
 |---------------|-----------------|
 |`Project`|Požadovaný atribut.<br /><br /> Cesta souboru projektu k importu. Cesta může obsahovat zástupné znaky. Odpovídající soubory importují v seřazeném pořadí. Pomocí této funkce můžete přidat kód do projektu pouze přidáním kódu souboru do adresáře.|
 |`Condition`|Nepovinný atribut.<br /><br /> Stav, který se má vyhodnotit. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|
+|`Sdk`| Nepovinný atribut.<br /><br /> Odkazuje na sadu SDK projektu.|
 
 ### <a name="child-elements"></a>Podřízené prvky
- Žádný
+ Žádné
 
 ### <a name="parent-elements"></a>Nadřazené prvky
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d99d6ccfb7b5a310726fdb1cf2dbfebd6591bef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9ee5bb8d69cf3482105150f4ec62cb6ad167d7a
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989857"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531534"
 ---
 # <a name="setting-language-specific-editor-options"></a>Nastavení možností editoru pro konkrétní jazyk
 
@@ -54,6 +54,6 @@ Visual Studio nabízí celou řadu textového editoru, které platí pro konkré
 
 ## <a name="see-also"></a>Viz také:
 
-- [Přizpůsobení editoru](../../ide/customizing-the-editor.md)
+- [Přizpůsobení editoru](../how-to-change-text-case-in-the-editor.md)
 - [Vytvoření přenosného nastavení vlastního editoru pomocí řešení EditorConfig](../../ide/create-portable-custom-editor-options.md)
 - [Přizpůsobení prostředí IDE sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)

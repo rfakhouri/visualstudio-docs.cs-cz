@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0b9685ce6d4cf8ee6d4253c79759508cf43915e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7893ed676372cce94d883353139de91ef639aeb0
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968467"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531850"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>Převést smyčku foreach na LINQ
 
@@ -44,9 +44,9 @@ Tento refaktoring platí pro:
 3. Vyberte **převést na LINQ** nebo **převést na Linq (volání formulář)**.
 
    ![Ukázka výsledku dotazu LINQ](media/convert-foreach-to-LINQ-result.png)
-   
+
    ![Ukázka výsledku formuláře volání LINQ](media/convert-foreach-to-LINQ-callform-result.png)
-   
+
 ### <a name="sample-code"></a>Ukázka kódu
 
 ```csharp
@@ -79,4 +79,4 @@ public class Class1
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Okno předchozích změn](../../ide/preview-changes.md)
-- [Tipy pro vývojáře .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Tipy pro vývojáře .NET](../csharp-developer-productivity.md)

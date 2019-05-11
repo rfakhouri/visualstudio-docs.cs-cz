@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33d4f0cce0699c27068152827382eb7d8627b715
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824214"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531951"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Postupy: Změna velikosti písmen v editoru
 
@@ -42,6 +42,5 @@ Příkazy nabídky nebo klávesové zkratky můžete použít k převodu přípa
 
 ## <a name="see-also"></a>Viz také:
 
-- [Přizpůsobení editoru](../ide/customizing-the-editor.md)
 - [Dialogové okno Možnosti textového editoru](../ide/reference/text-editor-options-dialog-box.md)
 - [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)

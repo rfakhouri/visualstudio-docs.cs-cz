@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581978"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531660"
 ---
 # <a name="features-of-the-code-editor"></a>Funkce editoru kódu
 
@@ -52,7 +52,7 @@ Najdete řadu pokročilých funkcí na **upravit** > **Upřesnit** nabídka na p
 
 |||
 |-|-|
-|[Formátovat dokument](code-styles-and-quick-actions.md#format-document-command)|Nastaví správné odsazení řádků kódu a přesune složené závorky do samostatných řádků v dokumentu.|
+|Formátovat dokument|Nastaví správné odsazení řádků kódu a přesune složené závorky do samostatných řádků v dokumentu.|
 |Výběr formátu|Nastaví správné odsazení řádků kódu a přesune složené závorky do samostatných řádků ve výběru.|
 |Vybrané řádky posunout tabulátorem|Změny úvodních mezer na karty, kde je to vhodné.|
 |Zrušit posunutí tabulátorem u vybraných řádků|Změny úvodních karet na mezery. Pokud chcete převést všechny mezery v souboru na tabulátory (nebo všechny tabulátory na mezery), můžete použít `Edit.ConvertSpacesToTabs` a `Edit.ConvertTabsToSpaces` příkazy. Tyto příkazy se nezobrazují v nabídkách aplikace Visual Studio, ale můžete je z volat **rychlý přístup** okna nebo příkazové okno.|
@@ -84,7 +84,7 @@ Můžete sdílet nastavení sady Visual Studio s jiným vývojářem, aby vaše 
 
 Pokud chcete definovat nové klávesové zkratky nebo změnit existujícího klávesové zkratky, přejděte na **nástroje** > **možnosti** > **prostředí**  >  **Klávesnice**. Další informace o klávesových zkratkách naleznete v tématu [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Další informace o přizpůsobení editoru, najdete v části [přizpůsobit editor](../ide/customizing-the-editor.md). Možnosti editoru jazyka JavaScript specifické najdete v tématu [možnosti editoru jazyka JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
+Možnosti editoru jazyka JavaScript specifické najdete v tématu [možnosti editoru jazyka JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
 
 ## <a name="see-also"></a>Viz také:
 
