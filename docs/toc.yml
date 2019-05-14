@@ -16,9 +16,10 @@
   items:
     - name: Instalace sady Visual Studio
       href: install/install-visual-studio.md
-    - name: Přihlášení k sadě Visual Studio
+    - name: Účty
       items:
         - name: Přihlášení k sadě Visual Studio
+          displayName: peronalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: Práce s několika uživatelskými účty
           href: ide/work-with-multiple-user-accounts.md
@@ -34,6 +35,8 @@
       href: install/install-visual-studio-versions-side-by-side.md
     - name: Výběr umístění instalací
       href: install/change-installation-locations.md
+    - name: Import a export konfigurací instalace
+      href: install/import-export-installation-configurations.md
     - name: Řešení problémů s instalací
       href: install/troubleshooting-installation-issues.md
     - name: Aktualizace sady Visual Studio
@@ -48,7 +51,7 @@
       href: install/uninstall-visual-studio.md
     - name: Příručka správce sady Visual Studio
       items:
-        - name: Příručka správce sady Visual Studio
+        - name: Příručka správce
           href: install/visual-studio-administrator-guide.md
         - name: Použití příkazového řádku
           items:
@@ -62,9 +65,7 @@
               href: install/create-a-network-installation-of-visual-studio.md
             - name: Aktualizace síťové instalace sady Visual Studio
               href: install/update-a-network-installation-of-visual-studio.md
-            - name: Import a export konfigurací instalace
-              href: install/import-export-installation-configurations.md
-            - name: Instalace a používání sady Visual Studio za bránou firewall nebo proxy serverem
+            - name: Důležité informace z hlediska využívání sítě
               items:
                 - name: Instalace a používání sady Visual Studio za bránou firewall nebo proxy serverem
                   href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
@@ -90,7 +91,7 @@
           items:
             - name: 'Předplatná sady Visual Studio: Přehled správce'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: Příručka správce Help Vieweru
+        - name: Nasazení Help Vieweru
           items:
             - name: Příručka správce Help Vieweru
               href: help-viewer/administrator-guide.md
@@ -102,7 +103,8 @@
           items:
             - name: ID úloh a komponent sady Visual Studio
               items:
-                - name: ID úloh a komponent sady Visual Studio
+                - name: Přehled
+                  displayName: Workload and component IDs
                   href: install/workload-and-component-ids.md
                 - name: Visual Studio Enterprise
                   href: install/workload-component-id-vs-enterprise.md
@@ -128,7 +130,7 @@
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Použití sady Visual Studio z virtuálního počítače Azure
       href: install/using-visual-studio-vm.md
-    - name: Instalace Build Tools do kontejneru
+    - name: Kontejnery
       items:
         - name: Instalace Build Tools do kontejneru
           href: install/build-tools-container.md
@@ -173,11 +175,11 @@
   items:
     - name: Vývoj
       items:
-        - name: Vývoj
+        - name: 'Rejstřík: Psaní kódu pomocí integrovaného vývojového prostředí'
           href: ide/index-writing-code.md
         - name: Pohyb v integrovaném vývojovém prostředí
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
-        - name: Práce s řešeními a projekty
+        - name: Řešení a projekty
           items:
             - name: Práce s řešeními a projekty
               href: ide/solutions-and-projects-in-visual-studio.md
@@ -191,7 +193,7 @@
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
             - name: Správa vlastností projektu a řešení
               href: ide/managing-project-and-solution-properties.md
-            - name: Správa odkazů v projektu
+            - name: Odkazy na projekty
               items:
                 - name: Správa odkazů v projektu
                   href: ide/managing-references-in-a-project.md
@@ -205,13 +207,13 @@
                   href: ide/troubleshooting-broken-references.md
             - name: Správa prostředků aplikace (.NET)
               href: ide/managing-application-resources-dotnet.md
-            - name: Správa nastavení aplikace (.NET)
+            - name: Nastavení aplikace (.NET)
               items:
                 - name: Správa nastavení aplikace (.NET)
                   href: ide/managing-application-settings-dotnet.md
                 - name: 'Přidání konfiguračního souboru aplikace do projektu C#'
                   href: ide/how-to-add-app-config-file.md
-            - name: Správa podepsání sestavení a manifestu
+            - name: Podepsání manifestů
               items:
                 - name: Správa podepsání sestavení a manifestu
                   href: ide/managing-assembly-and-manifest-signing.md
@@ -219,13 +221,13 @@
                   href: ide/how-to-sign-application-and-deployment-manifests.md
             - name: 'Určení ikony aplikace (Visual Basic, C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
-            - name: Přehled cílení na více verzí
+            - name: Cílení na konkrétní architekturu
               items:
                 - name: Přehled cílení na více verzí
                   href: ide/visual-studio-multi-targeting-overview.md
                 - name: Cílení na verzi rozhraní .NET Framework
                   href: ide/how-to-target-a-version-of-the-dotnet-framework.md
-            - name: Vytváření šablon projektů a položek
+            - name: Vytváření šablon
               items:
                 - name: Vytváření šablon projektů a položek
                   href: ide/creating-project-and-item-templates.md
@@ -243,7 +245,7 @@
                   href: ide/how-to-troubleshoot-templates.md
             - name: Vyhledání šablon projektů a položek
               href: ide/how-to-locate-and-organize-project-and-item-templates.md
-            - name: Přizpůsobení šablon projektů a položek
+            - name: Přizpůsobení šablon
               items:
                 - name: Přizpůsobení šablon projektů a položek
                   href: ide/customizing-project-and-item-templates.md
@@ -256,9 +258,9 @@
             - name: podpora 64bitových technologií
               href: ide/visual-studio-ide-64-bit-support.md
         - name: Vývoj bez projektů nebo řešení
-          displayName: Open folder
           items:
-            - name: Otevřená složka
+            - name: 'Postupy: Vývoj bez projektu'
+              displayName: Open folder
               href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
             - name: Přizpůsobení úloh sestavení a ladění
               displayName: makefile tasks.vs.json
@@ -266,11 +268,11 @@
         - name: Připojení k projektu nebo úložišti
           displayName: Azure DevOps VSTS GitHub
           href: ide/connect-team-project.md
-        - name: Použití editoru
+        - name: Editor
           items:
             - name: Použití editoru
               href: ide/writing-code-in-the-code-and-text-editor.md
-            - name: Vyhledání a nahrazení textu
+            - name: Vyhledání a nahrazení
               items:
                 - name: Vyhledání a nahrazení textu
                   href: ide/finding-and-replacing-text.md
@@ -283,7 +285,7 @@
                   href: ide/find-in-files.md
                 - name: Nahradit v souborech
                   href: ide/replace-in-files.md
-            - name: Kódování a zalomení řádků
+            - name: Kódování
               items:
                 - name: Kódování a zalomení řádků
                   href: ide/encodings-and-line-breaks.md
@@ -292,26 +294,24 @@
             - name: Sbalování
               displayName: Expand and collapse
               href: ide/outlining.md
-            - name: Generování a oprava kódu
+            - name: Generování kódu a refaktoring
               items:
                 - name: Generování a oprava kódu
                   href: ide/code-generation-in-visual-studio.md
                 - name: Fragmenty kódu
                   items:
                     - name: Používání fragmentů kódu
-                      items:
-                        - name: Používání fragmentů kódu
-                          href: ide/code-snippets.md
-                        - name: 'Referenční informace k fragmentům kódu C#'
-                          href: ide/visual-csharp-code-snippets.md
-                        - name: Referenční informace k fragmentům kódu C++
-                          href: ide/visual-cpp-code-snippets.md
-                        - name: Vkládání komentářů do kódu XML
-                          href: ide/reference/generate-xml-documentation-comments.md
-                        - name: Použití příkazu Obklopit s fragmenty kódu
-                          href: ide/how-to-use-surround-with-code-snippets.md
-                        - name: Osvědčené postupy
-                          href: ide/best-practices-for-using-code-snippets.md
+                      href: ide/code-snippets.md
+                    - name: 'Referenční informace k fragmentům kódu C#'
+                      href: ide/visual-csharp-code-snippets.md
+                    - name: Referenční informace k fragmentům kódu C++
+                      href: ide/visual-cpp-code-snippets.md
+                    - name: Vkládání komentářů do kódu XML
+                      href: ide/reference/generate-xml-documentation-comments.md
+                    - name: Použití příkazu Obklopit s fragmenty kódu
+                      href: ide/how-to-use-surround-with-code-snippets.md
+                    - name: Osvědčené postupy
+                      href: ide/best-practices-for-using-code-snippets.md
                     - name: Vytváření fragmentů kódu
                       items:
                         - name: 'Návod: Vytvoření fragmentu kódu'
@@ -356,7 +356,8 @@
                       href: ide/reference/introduce-local-variable.md
                 - name: Refaktorování kódu
                   items:
-                    - name: Refaktorování kódu
+                    - name: Přehled
+                      displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
                     - name: Změna podpisu metody
                       href: ide/reference/change-method-signature.md
@@ -408,7 +409,7 @@
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'Návod: Generování kódu z využití'
                   href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-            - name: Tipy pro vyšší produktivitu
+            - name: "Tipy a\_triky"
               items:
                 - name: Tipy pro vyšší produktivitu
                   href: ide/productivity-tips-for-visual-studio.md
@@ -425,7 +426,7 @@
                 - name: 'Tipy pro vývojáře C#'
                   displayName: ReSharper
                   href: ide/csharp-developer-productivity.md
-            - name: Používání technologie IntelliSense
+            - name: IntelliSense
               items:
                 - name: Používání technologie IntelliSense
                   href: ide/using-intellisense.md
@@ -439,7 +440,7 @@
                   href: ide/visual-cpp-intellisense.md
                 - name: Konfigurace projektu C++ pro IntelliSense
                   href: ide/visual-cpp-intellisense-configuration.md
-            - name: Navigace v kódu
+            - name: Pohyb v kódu
               items:
                 - name: Navigace v kódu
                   href: ide/navigating-code.md
@@ -447,7 +448,7 @@
                   href: ide/finding-references.md
                 - name: Zobrazení definic typů a členů
                   items:
-                    - name: Zobrazení definic typů a členů
+                    - name: Přejít k definici a Náhled definice
                       href: ide/go-to-and-peek-definition.md
                     - name: "Zobrazení a\_úpravy kódu s\_použitím funkce Náhled definice"
                       href: ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md
@@ -455,8 +456,6 @@
                   href: ide/go-to.md
             - name: Přizpůsobení editoru
               items:
-                - name: Přizpůsobení editoru
-                  href: ide/customizing-the-editor.md
                 - name: Změna velikosti písmen
                   href: ide/how-to-change-text-case-in-the-editor.md
                 - name: Správa režimů editoru
@@ -473,10 +472,10 @@
                   href: ide/reference/how-to-display-urls-as-links-in-the-editor.md
                 - name: Nastavení možností editoru pro konkrétní jazyk
                   href: ide/reference/setting-language-specific-editor-options.md
-            - name: Předvolby stylu kódu
+            - name: Styl kódu
               items:
                 - name: Předvolby stylu kódu
-                  href: ide/code-styles-and-quick-actions.md
+                  href: /visualstudio/ide/code-styles-and-code-cleanup
                 - name: Použití souborů EditorConfig pro styl kódu
                   displayName: Configure code style analyzers
                   href: ide/create-portable-custom-editor-options.md
@@ -488,7 +487,7 @@
               href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
             - name: Nastavení záložek v kódu
               href: ide/setting-bookmarks-in-code.md
-            - name: Nalezení historie kódu pomocí CodeLensu
+            - name: CodeLens
               items:
                 - name: Nalezení historie kódu pomocí CodeLensu
                   href: ide/find-code-changes-and-other-history-with-codelens.md
@@ -496,7 +495,7 @@
                   href: ide/codeindex-command.md
             - name: Podpora editoru pro jiné jazyky
               href: ide/adding-visual-studio-editor-support-for-other-languages.md
-        - name: Zobrazení struktury kódu
+        - name: Zobrazení kódu
           items:
             - name: Zobrazení struktury kódu
               href: ide/viewing-the-structure-of-code.md
@@ -504,7 +503,7 @@
               href: ide/class-view-and-object-browser-icons.md
         - name: Použití seznamu úkolů
           href: ide/using-the-task-list.md
-        - name: Návrh tříd v Návrháři tříd
+        - name: Návrhář tříd
           items:
             - name: Návrh tříd v Návrháři tříd
               href: ide/class-designer/designing-and-viewing-classes-and-types.md
@@ -541,16 +540,14 @@
                 - name: Zápis člena a zápis asociace
                   href: ide/class-designer/how-to-change-between-member-notation-and-association-notation.md
             - name: Refaktorování tříd a typů
-              items:
-                - name: Refaktorování tříd a typů
-                  href: ide/class-designer/refactoring-classes-and-types.md
-                - name: Implementace rozhraní
-                  href: ide/class-designer/how-to-implement-an-interface.md
-                - name: Rozdělení třídy na dílčí třídy
-                  href: ide/class-designer/how-to-split-a-class-into-partial-classes.md
-                - name: Vytvoření typu s možnou hodnotou null
-                  href: ide/class-designer/how-to-create-a-nullable-type.md
-            - name: Práce s kódem jazyka Visual C++
+              href: ide/class-designer/refactoring-classes-and-types.md
+            - name: Implementace rozhraní
+              href: ide/class-designer/how-to-implement-an-interface.md
+            - name: Rozdělení třídy na dílčí třídy
+              href: ide/class-designer/how-to-split-a-class-into-partial-classes.md
+            - name: Vytvoření typu s možnou hodnotou null
+              href: ide/class-designer/how-to-create-a-nullable-type.md
+            - name: C++ v Návrháři tříd
               items:
                 - name: Práce s kódem jazyka Visual C++
                   href: ide/class-designer/working-with-visual-cpp-code.md
@@ -570,7 +567,7 @@
           href: ide/find-and-fix-code-errors.md
         - name: Vývoj mobilních řešení napříč platformami
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
-        - name: 'Vývoj v jazyce F#'
+        - name: 'F# v sadě Visual Studio'
           items:
             - name: 'Vývoj v jazyce F#'
               href: ide/fsharp-visual-studio.md
@@ -593,7 +590,8 @@
               items:
                 - name: 'Kurz 1: Vytvoření prohlížeče obrázků (C#)'
                   items:
-                    - name: 'Kurz 1: Vytvoření prohlížeče obrázků (C#)'
+                    - name: Přehled
+                      displayName: Tutorial 1 Picture viewer
                       href: ide/tutorial-1-create-a-picture-viewer.md
                     - name: 'Krok 1: Vytvoření projektu formulářové aplikace Windows'
                       href: ide/step-1-create-a-windows-forms-application-project.md
@@ -619,7 +617,8 @@
                       href: ide/step-11-run-your-program-and-try-other-features.md
                 - name: "Kurz 2: Vytvoření matematického kvízu s\_časovým limitem (C#)"
                   items:
-                    - name: "Kurz 2: Vytvoření matematického kvízu s\_časovým limitem (C#)"
+                    - name: Přehled
+                      displayName: Tutorial 2 Timed math quiz
                       href: ide/tutorial-2-create-a-timed-math-quiz.md
                     - name: 'Krok 1: Vytvoření projektu a přidání popisků do formuláře'
                       href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
@@ -639,7 +638,8 @@
                       href: ide/step-8-customize-the-quiz.md
                 - name: 'Kurz 3: Vytvoření hry s hledáním shody (C#)'
                   items:
-                    - name: 'Kurz 3: Vytvoření hry s hledáním shody (C#)'
+                    - name: Přehled
+                      displayName: Tutorial 3 Matching game
                       href: ide/tutorial-3-create-a-matching-game.md
                     - name: 'Krok 1: Vytvoření projektu a přidání tabulky do formuláře'
                       href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
@@ -667,13 +667,15 @@
       href: designers/designing-user-interfaces.md
     - name: Kompilace a sestavení
       items:
-        - name: Kompilace a sestavení
+        - name: Přehled
+          displayName: Compile build
           href: ide/compiling-and-building-in-visual-studio.md
         - name: 'Návod: Vytvoření aplikace'
           href: ide/walkthrough-building-an-application.md
         - name: Sestavení a vyčištění projektů a řešení
           items:
-            - name: Sestavení a vyčištění projektů a řešení
+            - name: Přehled
+              displayName: Build clean
               href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
             - name: Změna výstupního adresáře sestavení
               href: ide/how-to-change-the-build-output-directory.md
@@ -695,7 +697,7 @@
           href: ide/build-actions.md
         - name: Konfigurace sestavení
           items:
-            - name: Konfigurace sestavení
+            - name: Vysvětlení konfigurací sestavení
               href: ide/understanding-build-configurations.md
             - name: Vytvoření a úprava konfigurací
               href: ide/how-to-create-and-edit-configurations.md
@@ -705,7 +707,7 @@
               href: ide/how-to-build-multiple-configurations-simultaneously.md
         - name: Platformy sestavení
           items:
-            - name: Platformy sestavení
+            - name: Vysvětlení platforem sestavení
               href: ide/understanding-build-platforms.md
             - name: Konfigurace projektů pro cílovou platformu
               href: ide/how-to-configure-projects-to-target-platforms.md
@@ -742,9 +744,10 @@
       href: extensibility/visual-studio-sdk.md
     - name: Analýza a modelování architektury...
       href: modeling/analyze-and-model-your-architecture.md
-    - name: Přizpůsobení integrovaného vývojového prostředí
+    - name: Přizpůsobení
       items:
         - name: Přizpůsobení integrovaného vývojového prostředí
+          displayName: Personalize
           href: ide/personalizing-the-visual-studio-ide.md
         - name: 'Rychlý start: Přizpůsobení motivu a barev textu'
           href: ide/quickstart-personalize-the-ide.md
@@ -768,7 +771,7 @@
           displayName: 'marketplace, gallery, vsix'
         - name: Správa externích nástrojů
           href: ide/managing-external-tools.md
-    - name: Optimalizace výkonu
+    - name: Výkon
       items:
         - name: Optimalizace výkonu
           href: ide/optimize-visual-studio-performance.md
@@ -778,7 +781,7 @@
           href: ide/filtered-solutions.md
         - name: "Tipy a\_triky"
           href: ide/visual-studio-performance-tips-and-tricks.md
-    - name: Správa funkcí pro usnadnění přístupu
+    - name: Usnadnění
       items:
         - name: Správa funkcí pro usnadnění přístupu
           href: ide/reference/accessibility-features-of-visual-studio.md
@@ -819,11 +822,11 @@
           href: ide/reference/immediate-window.md
         - name: Ostatní soubory
           href: ide/reference/miscellaneous-files.md
-        - name: Dialogové okno Možnosti
+        - name: Možnosti
           items:
             - name: Dialogové okno Možnosti
               href: ide/reference/options-dialog-box-visual-studio.md
-            - name: Dialogové okno Možnosti prostředí
+            - name: Možnosti prostředí
               items:
                 - name: Dialogové okno Možnosti prostředí
                   href: ide/reference/environment-options-dialog-box.md
@@ -861,7 +864,7 @@
                   href: ide/reference/trust-settings.md
                 - name: Prostředí – Webový prohlížeč
                   href: ide/reference/web-browser-environment-options-dialog-box.md
-            - name: Dialogové okno Možnosti textového editoru
+            - name: Možnosti textového editoru
               items:
                 - name: Dialogové okno Možnosti textového editoru
                   href: ide/reference/text-editor-options-dialog-box.md
@@ -878,7 +881,7 @@
                 - name: 'Textový editor – Basic (Visual Basic), Upřesnit'
                   href: ide/reference/options-text-editor-basic-visual-basic.md
                 - name: 'Textový editor – Basic (Visual Basic), Styl kódu'
-                  href: ide/code-styles-and-quick-actions.md
+                  href: ide/code-styles-and-code-cleanup.md
                 - name: 'Textový editor – Basic (Visual Basic), IntelliSense'
                   href: ide/visual-basic-specific-intellisense.md
                 - name: 'Textový editor – C/C++, Formátování'
@@ -931,7 +934,7 @@
                   href: ide/reference/options-text-editor-xml-formatting.md
                 - name: 'Textový editor – XML, Různé'
                   href: ide/reference/options-text-editor-xml-miscellaneous.md
-            - name: Projekty a řešení – dialogové okno Možnosti
+            - name: Projekty a řešení – Možnosti
               items:
                 - name: Projekty a řešení – dialogové okno Možnosti
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
@@ -947,15 +950,16 @@
               href: ide/reference/xaml-designer.md
         - name: Okno Výstup
           href: ide/reference/output-window.md
-        - name: Referenční dokumentace k vlastnostem projektu
+        - name: Vlastnosti projektu
           items:
-            - name: Referenční dokumentace k vlastnostem projektu
+            - name: Odkaz
+              displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: 'Stránka Aplikace, Návrhář projektu (UPW)'
               href: ide/reference/application-page-project-designer-uwp.md
             - name: 'Stránka Aplikace, návrhář projektu (Visual Basic)'
               items:
-                - name: 'Stránka Aplikace, návrhář projektu (Visual Basic)'
+                - name: Stránka Aplikace
                   href: ide/reference/application-page-project-designer-visual-basic.md
                 - name: Dialogové okno Informace o sestavení
                   href: ide/reference/assembly-information-dialog-box.md
@@ -963,13 +967,13 @@
               href: ide/reference/application-page-project-designer-csharp.md
             - name: 'Stránka Události sestavení, návrhář projektu (C#)'
               items:
-                - name: 'Stránka Události sestavení, návrhář projektu (C#)'
+                - name: Stránka Události sestavení
                   href: ide/reference/build-events-page-project-designer-csharp.md
                 - name: Dialogové okno Příkazový řádek události před sestavením / po sestavení
                   href: ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md
             - name: 'Stránka Sestavení, návrhář projektu (C#)'
               items:
-                - name: 'Stránka Sestavení, návrhář projektu (C#)'
+                - name: Stránka Sestavení
                   href: ide/reference/build-page-project-designer-csharp.md
                 - name: 'Dialogové okno Upřesnit nastavení sestavení (C#)'
                   href: ide/reference/advanced-build-settings-dialog-box-csharp.md
@@ -977,7 +981,7 @@
               href: ide/reference/code-analysis-project-designer.md
             - name: 'Stránka Kompilovat, návrhář projektu (Visual Basic)'
               items:
-                - name: 'Stránka Kompilovat, návrhář projektu (Visual Basic)'
+                - name: Stránka Kompilovat
                   href: ide/reference/compile-page-project-designer-visual-basic.md
                 - name: Dialogové okno Upřesnit nastavení kompilátoru (Visual Basic)
                   href: ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md
@@ -989,7 +993,7 @@
               href: ide/reference/my-extensions-page-project-designer-visual-basic.md
             - name: 'Publikovat stránku, návrhář projektu'
               items:
-                - name: 'Publikovat stránku, návrhář projektu'
+                - name: Stránka Publikovat
                   href: ide/reference/publish-page-project-designer.md
                 - name: Dialogové okno Požadavky
                   href: ide/reference/prerequisites-dialog-box.md
@@ -997,13 +1001,13 @@
               href: ide/reference/references-page-project-designer-visual-basic.md
             - name: 'Stránka Zabezpečení, návrhář projektu'
               items:
-                - name: 'Stránka Zabezpečení, návrhář projektu'
+                - name: Stránka Zabezpečení
                   href: ide/reference/security-page-project-designer.md
                 - name: Dialogové okno Upřesnit nastavení zabezpečení
                   href: ide/reference/advanced-security-settings-dialog-box.md
             - name: 'Stránka Služby, návrhář projektu'
               items:
-                - name: 'Stránka Služby, návrhář projektu'
+                - name: Stránka Služby
                   href: ide/reference/services-page-project-designer.md
                 - name: Dialogové okno Pokročilé nastavení služeb
                   href: ide/reference/advanced-settings-for-services-dialog-box.md
@@ -1019,7 +1023,8 @@
           href: ide/reference/team-explorer-reference.md
         - name: Sada nástrojů
           items:
-            - name: Sada nástrojů
+            - name: Odkaz
+              displayName: Toolbox
               href: ide/reference/toolbox.md
             - name: 'Sada nástrojů, karta Součásti'
               href: ide/reference/toolbox-components-tab.md
@@ -1029,7 +1034,8 @@
               href: ide/reference/toolbox-html-tab.md
     - name: Devenv – přepínače příkazového řádku
       items:
-        - name: Devenv – přepínače příkazového řádku
+        - name: Odkaz
+          displayName: devenv command-line switches
           href: ide/reference/devenv-command-line-switches.md
         - name: '-? (devenv.exe)'
           href: ide/reference/q-devenv-exe.md
@@ -1077,7 +1083,8 @@
           href: ide/reference/useenv-devenv-exe.md
     - name: Příkazy sady Visual Studio
       items:
-        - name: Příkazy sady Visual Studio
+        - name: Odkaz
+          displayName: Visual Studio commands
           href: ide/reference/visual-studio-commands.md
         - name: Aliasy příkazů sady Visual Studio
           href: ide/reference/visual-studio-command-aliases.md
@@ -1159,7 +1166,8 @@
           href: ide/exempt-visual-studio-from-wip.md
     - name: Microsoft Help Viewer
       items:
-        - name: Microsoft Help Viewer
+        - name: Přehled
+          displayName: Help Viewer
           href: help-viewer/overview.md
         - name: Instalace a správa místního obsahu
           displayName: Offline books docs
@@ -1170,7 +1178,7 @@
               href: help-viewer/find-topics-index.md
             - name: Hledání témat v obsahu
               href: help-viewer/find-topics-toc.md
-            - name: Vyhledávání témat
+            - name: Hledat
               items:
                 - name: Vyhledávání témat
                   href: help-viewer/find-topics.md
@@ -1178,15 +1186,14 @@
                   href: help-viewer/logical-operators-search-expressions.md
         - name: Přizpůsobení programu Help Viewer
           href: help-viewer/customize.md
-        - name: Funkce usnadnění
-          items:
-            - name: Funkce usnadnění
-              href: help-viewer/accessibility-features.md
-            - name: Klávesové zkratky
-              href: help-viewer/shortcut-keys.md
+        - name: Usnadnění
+          href: help-viewer/accessibility-features.md
+        - name: Klávesové zkratky
+          href: help-viewer/shortcut-keys.md
     - name: Dotfuscator Community
       items:
-        - name: Dotfuscator Community
+        - name: Přehled
+          displayName: Dotfuscator Community
           href: ide/dotfuscator/index.md
         - name: Funkce Dotfuscatoru
           href: ide/dotfuscator/capabilities.md
@@ -1237,11 +1244,12 @@
           href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: Životní cyklus podpory a aktualizace
           href: /visualstudio/productinfo/vs-servicing-vs/
-    - name: Postup nahlášení problému v sadě Visual Studio
+    - name: Hlášení problémů
       items:
         - name: Postup nahlášení problému v sadě Visual Studio
           href: ide/how-to-report-a-problem-with-visual-studio.md
         - name: Nahlášení problémových stavů a nejčastější dotazy
+          displayName: Developer Community
           href: ide/report-a-problem.md
     - name: Navrhnout funkci pro sadu Visual Studio
       href: ide/suggest-a-feature.md
@@ -1249,7 +1257,8 @@
       href: ide/developer-community-privacy.md
     - name: Program Zlepšování softwaru a služeb na základě zkušeností uživatelů
       items:
-        - name: Program Zlepšování softwaru a služeb na základě zkušeností uživatelů
+        - name: Přehled
+          displayName: Customer Experience Improvement Program
           href: ide/visual-studio-experience-improvement-program.md
         - name: Protokoly generované systémem
           href: ide/diagnostic-data-collection.md
