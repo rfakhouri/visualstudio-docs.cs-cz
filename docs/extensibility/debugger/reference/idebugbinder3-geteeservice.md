@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d709124a392ffb6b6cbbb5a29576a985fe6d0f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eaaaf52a0a577d8b802540ca9b4ae11ab9aa1dbd
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877556"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614896"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Tato metoda vrátí požadovanou službu.
@@ -42,22 +45,18 @@ Int GetEEService(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `vendor`
+## <a name="parameters"></a>Parametry
+`vendor`\
+[in] `GUID` dodavatele (hodnota null je přijatelná).
 
- [in] `GUID` dodavatele (hodnota null je přijatelná).
+`language`\
+[in] `GUID` jazyka (hodnota null je přijatelná).
 
- `language`
+`iid`\
+[in] `IID` služby získat.
 
- [in] `GUID` jazyka (hodnota null je přijatelná).
-
- `iid`
-
- [in] `IID` služby získat.
-
- `ppService`
-
- [out] Rozhraní pro požadovanou službu.
+`ppService`\
+[out] Rozhraní pro požadovanou službu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -65,7 +64,7 @@ Int GetEEService(
 ## <a name="remarks"></a>Poznámky
  Předání `IID` pro [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) rozhraní (`IID_IEEVisualizerServiceProvider`) Pokud je k dispozici služba vizualizér typů. Pokud ano, můžete získat vyhodnocovací filtr výrazů [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) rozhraní pro podporu vizualizérů typů. Zobrazit [Visualizing a zobrazení dat](../../../extensibility/debugger/visualizing-and-viewing-data.md) podrobnosti.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

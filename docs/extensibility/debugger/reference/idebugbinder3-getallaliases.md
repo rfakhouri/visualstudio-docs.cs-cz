@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8545431dc0cb643ba18d415285447f8a66f66e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f54ad96b3e6e1832e63e858609a0a1d6ecbcc93e
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923702"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614783"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 Tato metoda načte seznam aliasů z programu.
@@ -40,21 +43,18 @@ int GetAllAliases(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `uRequest`
+## <a name="parameters"></a>Parametry
+`uRequest`\
+[in] Maximální počet aliasů vrátit (určuje délku pole předán `ppAliases`).
 
- [in] Maximální počet aliasů vrátit (určuje délku pole předán `ppAliases`).
+`ppAliases`\
+[out v] Pole pro vyplnění pomocí aliasů (Pokud je hodnota null a `uRequest` je 0, vrátí se počet aliasy, které mohou být vráceny podle `puFetched`).
 
- `ppAliases`
-
- [out v] Pole pro vyplnění pomocí aliasů (Pokud je hodnota null a `uRequest` je 0, vrátí se počet aliasy, které mohou být vráceny podle `puFetched`).
-
- `puFetched`
-
- [out] Vrátí počet aliasů získali.
+`puFetched`\
+[out] Vrátí počet aliasů získali.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

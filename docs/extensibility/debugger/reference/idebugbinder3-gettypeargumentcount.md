@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77d4140a37577fa5bf4734e386300e062ef80399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b34cbc89874110712ea1d630a27bd709d21894b3
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877507"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614986"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 Tato metoda vrátí počet typů argumentů, které jsou přidružené k tomuto objektu.
@@ -36,10 +39,9 @@ int GetTypeArgumentCount(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `uCount`
-
- [out] Počet typů argumentů, které jsou přidružené k tomuto objektu.
+## <a name="parameters"></a>Parametry
+`uCount`\
+[out] Počet typů argumentů, které jsou přidružené k tomuto objektu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -47,6 +49,6 @@ int GetTypeArgumentCount(
 ## <a name="remarks"></a>Poznámky
  Hodnota vrácená touto metodou je možné přidělit pole pro použití se službou [gettypearguments –](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) metody.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)

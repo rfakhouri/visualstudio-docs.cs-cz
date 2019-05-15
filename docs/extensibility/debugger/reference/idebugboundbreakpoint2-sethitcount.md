@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac7cbfa337bfdcf54d213b299badc9ca56d8dcba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cf86151f950aef49221677e2002ee3882b85e835
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877286"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614836"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 Nastaví počet průchodů pro vázaná zarážka.
@@ -37,10 +40,9 @@ int SetHitCount( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dwHitCount`
-
- [in] Počet přístupů k nastavení.
+## <a name="parameters"></a>Parametry
+`dwHitCount`\
+[in] Počet přístupů k nastavení.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Vrátí `E_BP_DELETED` Pokud státu objekt vázaná zarážka nastavená na `BPS_DELETED` (součástí [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) výčet).
@@ -50,6 +52,6 @@ int SetHitCount( 
 
  Tato metoda je obvykle volána ladicí stroj aktualizovat aktuální počet přístupů na této zarážce.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

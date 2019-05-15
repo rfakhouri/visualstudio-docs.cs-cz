@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea1e70c40846b382364067eae473ec27777b5526
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62888968"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615368"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Určuje strukturu řešení umístění zarážky.
@@ -46,35 +49,29 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>Členové
-`bpType` Hodnota z [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) výčet, který určuje, jak interpretovat `bpResLocation` sjednocení nebo `unionmemberX` členy.
+`bpType`\
+Hodnota z [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) výčet, který určuje, jak interpretovat `bpResLocation` sjednocení nebo `unionmemberX` členy.
 
-`bpResLocation.bpresCode`
+`bpResLocation.bpresCode`\
+[C++ pouze] Obsahuje [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) strukturu Pokud `bpType`  =  `BPT_CODE`.
 
- [C++ pouze] Obsahuje [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) strukturu Pokud `bpType`  =  `BPT_CODE`.
+`bpResLocation.bpresData`\
+[C++ pouze] Obsahuje [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) strukturu Pokud `bpType`  =  `BPT_DATA`.
 
-`bpResLocation.bpresData`
+`bpResLocation.unused`\
+[C++ pouze] Zástupný symbol.
 
- [C++ pouze] Obsahuje [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) strukturu Pokud `bpType`  =  `BPT_DATA`.
+`unionmember1`\
+[C# pouze] Viz poznámky o tom, jak interpretovat.
 
-`bpResLocation.unused`
+`unionmember2`\
+[C# pouze] Viz poznámky o tom, jak interpretovat.
 
- [C++ pouze] Zástupný symbol.
+`unionmember3`\
+[C# pouze] Viz poznámky o tom, jak interpretovat.
 
-`unionmember1`
-
- [C# pouze] Viz poznámky o tom, jak interpretovat.
-
-`unionmember2`
-
- [C# pouze] Viz poznámky o tom, jak interpretovat.
-
-`unionmember3`
-
- [C# pouze] Viz poznámky o tom, jak interpretovat.
-
-`unionmember4`
-
- [C# pouze] Viz poznámky o tom, jak interpretovat.
+`unionmember4`\
+[C# pouze] Viz poznámky o tom, jak interpretovat.
 
 ## <a name="remarks"></a>Poznámky
 Tato struktura je členem skupiny [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) a [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury.
@@ -123,7 +120,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)

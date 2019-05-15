@@ -1,7 +1,7 @@
 ---
 title: Instalace a konfigurace nástrojů pro vytváření pomocí iOS | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 05/21/2018
+ms.date: 05/13/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818487"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614437"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalace a konfigurace nástroje potřebné k vytváření pomocí iOS
 
@@ -32,13 +32,15 @@ Jakmile nainstalujete nástroje pro vytváření pomocí iOS, přečtěte si tot
 
 Chcete-li nainstalovat a používat vzdálený agent pro vývoj kódu pro iOS, musíte nejprve mít tyto požadavky:
 
-- Počítač Mac se systémem OS X Mavericks (verze 10.9) nebo novější
+- Počítač Mac s macOS verze Mojave 10.14 nebo novější
 
 - [Apple ID](https://appleid.apple.com/)
 
-- Aktivní [iOS Developer Program](https://developer.apple.com/programs/ios/) účtu Apple
+- Aktivní [Apple Developer Program](https://developer.apple.com/programs/) účtu
 
-- [Xcode](https://developer.apple.com/xcode/downloads/) verze 6 nebo novější.
+   Můžete získat bezplatný účet, který umožňuje zkušební načtení aplikací pro zařízení s Iosem pro testování pouze, ale nikoli pro distribuci.
+
+- [Xcode](https://developer.apple.com/xcode/downloads/) verze 10.2.1 nebo novější
 
    Xcode můžete stáhnout z App Store.
 
@@ -48,23 +50,22 @@ Chcete-li nainstalovat a používat vzdálený agent pro vývoj kódu pro iOS, m
 
    `xcode-select --install`
 
-- Podpisová identita nakonfigurované v prostředí Xcode pro iOS
+- Účet Apple ID nakonfigurované v prostředí Xcode jako podpisové identity k podepisování aplikací
 
-   Podrobné informace o získání identitu podepisování pro iOS najdete v tématu [údržby podpisové identity a certifikáty](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) v knihovně iOS Developer Library. Chcete-li zobrazit nebo nastavit podpisové identity v Xcode, otevřete **Xcode** nabídku a zvolte **Předvolby**. Vyberte **účty** a vyberte svoje Apple ID a klikněte na tlačítko **zobrazit podrobnosti o** tlačítko.
+   Chcete-li zobrazit nebo nastavit podpisové identity v Xcode, otevřete **Xcode** nabídku a zvolte **Předvolby**. Vyberte **účty** a vyberte svoje Apple ID a klikněte na tlačítko **zobrazit podrobnosti o** tlačítko. Zobrazit [přidal váš účet Apple ID, které](https://help.apple.com/xcode/mac/current/#/devaf282080a) podrobné pokyny.
+   
+   Podrobné informace o podepisování požadavky najdete v tématu [co je podepisování aplikací](https://help.apple.com/xcode/mac/current/#/dev3a05256b8). 
 
-- Pokud používáte zařízení s Iosem pro vývoj, zřizovací profil nakonfigurovaný v Xcode pro vaše zařízení
+- Pokud používáte zařízení s Iosem pro vývoj, že obsahují zřizovací profil nakonfigurovaný v Xcode pro vaše zařízení
 
-   Podrobné informace o vytváření zřizovací profily, najdete v části [vytvořit zřizovací profily pomocí centra](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) v knihovně iOS Developer Library.
+   Xcode poskytuje automatické podepisování, kde ji můžete podle potřeby vytvoří podpisové certifikáty. Podrobné informace o automatické podepisování Xcode naleznete v tématu [automatické podepisování](https://help.apple.com/xcode/mac/current/#/dev80cc24546).
 
-- [Node.js](https://nodejs.org/)
+   Pokud chcete provést ruční podepisování, musíte vytvořit zřizovací profil pro vaši aplikaci. Podrobné informace o vytváření zřizovací profily, najdete v části [vytváření vývojových zřizovací profil](https://help.apple.com/developer-account/#/devf2eb157f8). 
 
-   Nainstalujte nejnovější verzi dlouhá období podpory (LTS) 8.x Node.js na vašem počítači Mac. Mějte na paměti, že ostatní nejnovější verze nemusí podporovat některé moduly používané v vcremote a může způsobit selhání instalace vcremote.
+- [Node.js](https://nodejs.org/) verze 8.11.3 a npm verze 5.6.0
 
-- Najít aktualizovanou verzi npm
+   Nainstalovat verzi 8.11.3 Node.js na vašem počítači Mac. Pokud nainstalujete balíček Node.js, by měl mít npm verze 5.6.0. Všimněte si, že ostatní verze Node.js a npm nemusí podporovat některé moduly používané v vcremote vzdáleného agenta, což může způsobit selhání instalace vcremote.
 
-   Tato verze npm, která se dodává s využitím Node.js nemusí být dostatečně nová, aby instalace vcremote. Pokud chcete aktualizovat npm, otevřete aplikaci terminál na počítači Mac a zadejte následující příkaz:
-
-   `sudo npm install -g npm@latest`
 
 ## <a name="Install"></a> Instalace vzdáleného agenta pro iOS
 
@@ -131,7 +132,7 @@ Po zahájení vzdáleného agenta můžete použít v sadě Visual Studio až po
 
 Pro připojení ke vzdálenému agentu ze sady Visual Studio, musíte zadat konfigurace vzdáleného v možnostech sady Visual Studio.
 
-#### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Konfigurace vzdáleného agenta ze sady Visual Studio
+### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Konfigurace vzdáleného agenta ze sady Visual Studio
 
 1. Jestliže dosud není spuštěn agent na počítači Mac, postupujte podle kroků v [spustit vzdálený agent](#Start). Počítače Mac musí být spuštěná vcremote pro Visual Studio úspěšně spárovat, připojit a sestavte projekt.
 
@@ -168,7 +169,7 @@ Visual Studio používá stejné informace pro připojení k vzdáleného agenta
 
 Při prvním spuštění vzdáleného agenta vygenerovaný PIN kód je platný po omezenou dobu – ve výchozím nastavení, 10 minut. Pokud před vypršení časového limitu, nepárují sady Visual Studio se vzdáleným agentem, je potřeba vygenerovat nový kód PIN.
 
-#### <a name="to-generate-a-new-pin"></a>Chcete-li vygenerovat nový kód PIN
+### <a name="to-generate-a-new-pin"></a>Chcete-li vygenerovat nový kód PIN
 
 1. Zastavte agenta, nebo otevřete druhou okna aplikace na terminálu na svém počítači Mac a, který slouží k zadání příkazu.
 
@@ -182,7 +183,7 @@ Při prvním spuštění vzdáleného agenta vygenerovaný PIN kód je platný p
 
 Z bezpečnostních důvodů certifikáty serveru tento pár Visual Studio se vzdáleným agentem jsou svázány se IP adresa nebo název hostitele vašeho macu. Pokud tyto hodnoty změnit, musíte vygenerovat nový certifikát serveru a potom znovu nakonfigurovat sady Visual Studio s novými hodnotami.
 
-#### <a name="to-generate-a-new-server-certificate"></a>Pro vytvoření nového certifikátu serveru
+### <a name="to-generate-a-new-server-certificate"></a>Pro vytvoření nového certifikátu serveru
 
 1. Zastavte agenta vcremote.
 
@@ -204,7 +205,7 @@ Z bezpečnostních důvodů certifikáty serveru tento pár Visual Studio se vzd
 
 Můžete nakonfigurovat pomocí různých možností příkazového řádku vzdáleného agenta. Můžete například zadat port pro naslouchání požadavkům na sestavení a zadejte maximální počet buildů udržovat v systému souborů. Výchozí limit je 10 buildů. Vzdálený agent odebere sestavení, které překračují maximální na vypnutí.
 
-#### <a name="to-configure-the-remote-agent"></a>Konfigurace vzdáleného agenta
+### <a name="to-configure-the-remote-agent"></a>Konfigurace vzdáleného agenta
 
 - Pokud chcete zobrazit úplný seznam příkazů vzdáleného agenta, v terminálu aplikaci, zadejte:
 
@@ -233,6 +234,50 @@ Můžete nakonfigurovat pomocí různých možností příkazového řádku vzd�
    `vcremote --config config_file_path`
 
    kde *config_file_path* je cesta ke konfiguračnímu souboru ve formátu JSON. Možnosti spuštění a jejich hodnoty nesmí obsahovat pomlčky.
+
+## <a name="troubleshoot-the-remote-agent"></a>Řešení potíží s vzdáleného agenta
+
+### <a name="debugging-on-an-ios-device"></a>Ladění na zařízení s iOS
+
+Pokud nefunguje ladění na zařízení s Iosem, může být problémy s nástrojem [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller), který se používá ke komunikaci se zařízením s Iosem. Tento nástroj je obvykle nainstalován z Homebrew během instalace vcremote. Jako alternativní řešení proveďte následující postup.
+
+Otevřete aplikaci terminál a aktualizujte ideviceinstaller a jeho závislosti spuštěním následujícího v pořadí:
+
+1. Ujistěte se, že se aktualizuje Homebrew
+
+   `brew update`
+
+1. Odinstalujte libimobiledevice a usbmuxd
+
+   `brew uninstall --ignore-dependencies libimobiledevice`
+
+   `brew uninstall --ignore-dependencies usbmuxd`
+
+1. Nainstalujte nejnovější verzi libimobiledevice a usbmuxd
+
+   `brew install --HEAD usbmuxd`
+
+   `brew unlink usbmuxd`
+
+   `brew link usbmuxd`
+
+   `brew install --HEAD libimobiledevice`
+
+1. Odinstalujte a znovu nainstalujte ideviceinstaller
+
+   `brew uninstall ideviceinstaller`
+
+   `brew install ideviceinstaller`
+
+Ověřte, zda že tento ideviceinstaller může komunikovat s zařízení tak, že zkusíte seznam aplikací na zařízení nainstalovaný:
+
+`ideviceinstaller -l`
+
+Pokud ideviceinstaller chyby, nemá přístup ke složce `/var/db/lockdown`, změnit oprávnění pro složku s:
+
+`sudo chmod 777 /var/db/lockdown`
+    
+Zkontrolujte znovu Pokud ideviceinstaller může komunikovat se zařízením.
 
 ## <a name="see-also"></a>Viz také:
 

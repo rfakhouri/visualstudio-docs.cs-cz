@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 735b92bb649344c055f7a645b961925e3cbd4d6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5550a1f1e83b9343a031df39728675db07de3559
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924045"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615158"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 Získá prvek pole.
@@ -38,14 +41,12 @@ int GetElement(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dwIndex`
+## <a name="parameters"></a>Parametry
+`dwIndex`\
+[in] Index prvku.
 
- [in] Index prvku.
-
- `ppElement`
-
- [out] Vrátí [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) rozhraní, které představuje element.
+`ppElement`\
+[out] Vrátí [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) rozhraní, které představuje element.
 
 ## <a name="return-value"></a>Návratová hodnota
  V případě úspěchu vrátí hodnotu S_OK; v opačném případě vrátí kód chyby.
@@ -53,5 +54,5 @@ int GetElement(
 ## <a name="remarks"></a>Poznámky
  Tato metoda považuje všechny prvky objektu pole jednorozměrné pole, i když objekt pole je vícerozměrné. Mějme například pole `myarray[3][2][6]` a `dwIndex` parametr 20, vrátí tato metoda element z `myarray[1][1][2]`a `dwIndex` parametr 21 vracel element z `myarray[1][1][3]`. Použití [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) metodou ke zjištění celkový počet prvků v poli.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

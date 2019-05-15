@@ -9,12 +9,12 @@ f1_keywords:
 manager: jillfra
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 8a256d878339ddbfc1e37662e829d752f1be7bd6
-ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
-ms.translationtype: HT
+ms.openlocfilehash: 4779c9aa27f65a3295f3a234e4f46314d7fe3b69
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346777"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613574"
 ---
 # <a name="f1-help"></a>Nápověda F1
 
@@ -26,10 +26,11 @@ Pokud hledáte nápovědu F1 – klíčové slovo nebo název rozhraní API, mě
 
 ## <a name="useful-links"></a>Užitečné odkazy
 
-- Obecné informace o sadě Visual Studio najdete v tématu [Visual Studio – přehled](../../get-started/visual-studio-ide.md).
-- Nápovědu v textovém editoru sady Visual Studio najdete v tématu [použít editor kódu](../../ide/writing-code-in-the-code-and-text-editor.md).
+- Vyhledejte v dokumentaci se můžete na [.NET API browseru](/dotnet/api/).
 - C# nápovědu najdete v tématu [průvodce v C#](/dotnet/csharp/index).
 - Nápověda pro Visual Basic, najdete v článku [průvodce Visual Basicem](/dotnet/visual-basic/).
 - Pro F# pomoct, najdete v článku [ F# průvodce](/dotnet/fsharp/).
 - Nápovědu Pythonu najdete v tématu [Python v sadě Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
 - C++ – Nápověda, naleznete v tématu [C++ v sadě Visual Studio](/cpp/visual-cpp-in-visual-studio).
+- Informace o sadě Visual Studio najdete v tématu [Visual Studio – přehled](../../get-started/visual-studio-ide.md).
+- Nápovědu v textovém editoru sady Visual Studio najdete v tématu [použít editor kódu](../../ide/writing-code-in-the-code-and-text-editor.md).

@@ -1,6 +1,6 @@
 ---
 title: Vytvořit testy jednotek řízené daty
-ms.date: 11/04/2016
+ms.date: 05/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979237"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615429"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Postupy: Vytvoření testu jednotek řízené daty
 
-Pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód, můžete nastavit metodu testovací jednotky tak, k načtení hodnoty použité v testovací metodě ze zdroje dat. Metoda se spouští postupně pro každý řádek ve zdroji dat, která usnadňuje testování celé škály vstup pomocí jedné metody.
+Chcete-li nastavit metodu testovací jednotky k načtení hodnoty ze zdroje dat můžete použít rozhraní testování částí Microsoft pro spravovaný kód. Metoda se spouští postupně pro každý řádek ve zdroji dat, která usnadňuje testování celé škály vstup pomocí jedné metody.
 
 Vytvoření testu jednotek řízené daty zahrnuje následující kroky:
 
@@ -43,13 +43,13 @@ Jako příklad předpokládejme, že máte:
 
 2. Projekt v `MyBank` volá `BankDb` , který spravuje transakce pro účty.
 
-3. Třída nazývá `Maths` v `DbBank` projekt, který provádí matematické funkce zajistit, že všechny transakce je výhodné banky.
+3. Třída nazývá `Maths` v `BankDb` projekt, který provádí matematické funkce zajistit, že všechny transakce je výhodné banky.
 
 4. Projekt s názvem testování částí `BankDbTests` otestovat chování `BankDb` komponenty.
 
 5. Testování částí třídu s názvem `MathsTests` ověření chování `Maths` třídy.
 
-Testujeme metody v `Maths` , který přidá dvou celých čísel pomocí smyčka:
+Otestujeme metody v `Maths` , který přidá dvou celých čísel pomocí smyčka:
 
 ```csharp
 public int AddIntegers(int first, int second)
@@ -88,6 +88,9 @@ public TestContext TestContext
 
 V testovací metodě, získáte přístup k datům prostřednictvím `DataRow` vlastnost indexer `TestContext`.
 
+> [!NOTE]
+> Nepodporuje .NET core [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) atribut. Pokud se pokusíte získat přístup k datům test tímto způsobem v projektu testů jednotek .NET Core nebo UPW, zobrazí se vám chybu podobnou této **"'TestContext' neobsahuje definici pro"DataRow"a žádná metoda rozšíření přístupné DataRow přijímala první argument typu. TestContext' nebyl nalezen (nechybí using – direktiva nebo odkaz na sestavení?) "** .
+
 ## <a name="write-the-test-method"></a>Zápis testovací metody
 
 Testovací metody pro `AddIntegers` je docela jednoduché. Pro každý řádek ve zdroji dat volání `AddIntegers` s **Prvníčíslo** a **Druhéčíslo** sloupec hodnoty jako parametry a ověřte návratovou hodnotu proti **součet** Hodnota sloupce:
@@ -110,7 +113,7 @@ public void AddIntegers_FromDataSourceTest()
 }
 ```
 
-`Assert` Metoda obsahuje zprávu, která se zobrazí `x` a `y` hodnoty selhání iterace. Ve výchozím nastavení s potvrzením hodnoty `expected` a `actual`, jsou již zahrnuty podrobnosti o selhání testu.
+`Assert` Metoda obsahuje zprávu, která se zobrazí `x` a `y` hodnoty selhání iterace. Ve výchozím nastavení s potvrzením hodnot – `expected` a `actual` – jsou již zahrnuty podrobnosti o neúspěšných testů.
 
 ### <a name="specify-the-datasourceattribute"></a>Zadejte atribut
 

@@ -9,12 +9,12 @@ ms.workload: multiple
 ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: 7e8c57bfbfcf63c845c8d8eac3560e2327a99d4d
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: cdcfd381d74af4e3a11f96518ab3f31e79995978
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65084063"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614539"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Ladění aplikací v místním kontejneru Dockeru
 
@@ -96,6 +96,28 @@ Pokud chcete rychle iterovat změny, můžete spustit aplikaci v rámci kontejne
 5. Přepněte do aplikace Visual Studio zobrazit zarážky, kontrolovat hodnoty a tak dále.
 
    ![Zarážky](media/edit-and-refresh/breakpoint.png)
+
+## <a name="create-a-net-framework-console-app"></a>Vytvoření konzolové aplikace .NET Framework
+
+Pokud používáte projekty aplikace konzoly rozhraní .NET Framework, není podporována možnost přidat podporu Dockeru bez Orchestrace. Následující postup můžete použít i nadále i v případě, že používáte pouze jednoho projektu Dockeru.
+
+1. Vytvoření nového projektu aplikace konzoly rozhraní .NET Framework.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a zvolte **přidat** > **podpora Orchestrace kontejnerů**.  V zobrazeném dialogu vyberte **Docker Compose**. Soubor Dockerfile se přidá do vašeho projektu a přidá se s přidružené podpůrné soubory projektu Docker Compose.
+
+### <a name="debug-with-breakpoints"></a>Ladění se zarážkami
+
+1. V **Průzkumníka řešení**, otevřete `Program.cs`.
+2. Nahraďte obsah `Main` metoda následujícím kódem:
+
+   ```csharp
+       System.Console.WriteLine("Hello, world!");
+   ```
+
+3. Nastavte zarážku vlevo od řádku kódu.
+4. Stisknutím klávesy F5 spusťte ladění a zarážce.
+5. Přepněte do aplikace Visual Studio zobrazit zarážky, kontrolovat hodnoty a tak dále.
+
+   ![Zarážky](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="summary"></a>Souhrn
 

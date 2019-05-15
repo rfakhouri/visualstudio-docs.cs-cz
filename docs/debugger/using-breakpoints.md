@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902088"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614523"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Používání zarážek v ladicím programu sady Visual Studio
 Zarážky jsou jedním z nejdůležitějších technik ladění mezi nástroji pro vývojáře sady nástrojů. Můžete nastavit zarážky, bez ohledu na to chcete provést pozastavení spuštění ladicího programu. Můžete například zobrazit stav proměnných kódu se také podívat na zásobník volání na určité zarážce. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
@@ -267,7 +267,7 @@ Když vyberete **podmíněný výraz**, můžete si vybrat mezi dvě podmínky: 
 
 2. Spustit ladění a při spuštění, pozastavení na zarážce, vyberte **ladění** > **Windows** > **lokální** nebo **Alt** + **4** otevřít **lokální** okna.
 
-   Najít k zarážce v **lokální** okně pravým tlačítkem myši a vyberte **Ujistěte se, ID objektu**.
+   Najít instanci určitého objektu v **lokální** okně pravým tlačítkem myši a vyberte **Ujistěte se, ID objektu**.
 
    Měli byste vidět **$** plus číslo v **místní hodnoty** okna. To je ID objektu.
 

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5355e85007c04e523efa4030ca0603a01cf88c68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e9b445f8ec471774eaceb0d6dd06c44b7d167f79
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923764"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615204"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 Získá základní indexy (dolní meze) pro každý index zadaný počet dimenzí v poli.
@@ -37,14 +40,12 @@ int GetBaseIndices (
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dwRank`
+## <a name="parameters"></a>Parametry
+`dwRank`\
+[in] Počet rozměrů (pořadí) pole.
 
- [in] Počet rozměrů (pořadí) pole.
-
- `dwIndices`
-
- [out] Základní indexy (dolní meze) pro pole.
+`dwIndices`\
+[out] Základní indexy (dolní meze) pro pole.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -58,5 +59,5 @@ int[] lowerbounds = { 5 };
 Array.CreateInstance(typeof(int), lengths, lowerbounds);
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01cb000519647c415f68b369f5d2147a30e705e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7741ad4f7b587cbd31888e643557c744ca4200e2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923542"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614963"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 Tato metoda načte objekt paměti, který představuje tento objekt je vázán na paměť.
@@ -40,23 +43,20 @@ int GetMemoryObject(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pField`
+## <a name="parameters"></a>Parametry
+`pField`\
+[in] Určuje, jaké pole se má získat paměť objektu.
 
- [in] Určuje, jaké pole se má získat paměť objektu.
+`uConstant`\
+[in] Představuje adresu paměti nebo hodnotu pro konstantní hodnotu.
 
- `uConstant`
-
- [in] Představuje adresu paměti nebo hodnotu pro konstantní hodnotu.
-
- `ppObject`
-
- [out] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) představující, která tento objekt je vázána na paměť.
+`ppObject`\
+[out] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) představující, která tento objekt je vázána na paměť.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

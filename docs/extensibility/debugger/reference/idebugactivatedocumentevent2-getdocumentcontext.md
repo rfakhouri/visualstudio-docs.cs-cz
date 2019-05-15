@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45923ef6d219e7f7dd79581856d0875b792130d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ac048a26036457345f652a8d23a55fae54d59f0
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924242"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615533"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 Získá kontext dokumentu, který popisuje pozici v dokumentu, který má být provedeno aktivní balíčkem ladění.
@@ -37,10 +40,9 @@ int GetDocumentContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppDocContext`
-
- [out] Vrátí [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objekt, který představuje umístění ve zdrojovém souboru dokumentu.
+## <a name="parameters"></a>Parametry
+`ppDocContext`\
+[out] Vrátí [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objekt, který představuje umístění ve zdrojovém souboru dokumentu.
 
 ## <a name="remarks"></a>Poznámky
  Této pozici může být použit k zobrazení blikající kurzor, třeba.
@@ -48,6 +50,6 @@ int GetDocumentContext ( 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

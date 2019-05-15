@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 116a08025f70c2cd1e4c87f775511bd20ac0e4ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bda142c4209d2b369a169036cd2ee6aa7d5bafe2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923627"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615029"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 Tato metoda vrátí přesného typu proměnné.
@@ -38,19 +41,17 @@ int ResolveDynamicType(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pDynamic`
+## <a name="parameters"></a>Parametry
+`pDynamic`\
+[in] [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) představující typ proměnné.
 
- [in] [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) představující typ proměnné.
-
- `ppResolved`
-
- [out] Vrátí [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) poskytuje konkrétní informace o typu proměnné.
+`ppResolved`\
+[out] Vrátí [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) poskytuje konkrétní informace o typu proměnné.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)

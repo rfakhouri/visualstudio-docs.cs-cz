@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac7dc37787a91504988fc43636d49d2b3c9ce0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1426b1ad9799984f7b14604a1d8b685e9ce8813
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975148"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615411"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Postupy: Rozdělení třídy na částečné třídy v Návrháři tříd
 
@@ -36,7 +36,7 @@ Existují dva druhy částečné metody. V jazyce C# jsou volány deklarace a im
 Následující příklady rozdělení definice třídy `Employee` do dvě deklarace, z nichž každý definuje jiný postup. Dvě Částečná definice v příkladech může být v jednom zdrojovém souboru nebo ve dvou různých zdrojových souborů.
 
 > [!NOTE]
-> Visual Basic používá definicí částečné třídy pro oddělení sady Visual Studio – kód generovaný z uživatelem definovaných kódu. Kód je rozdělené na samostatné zdrojové soubory. Například **Návrhář formulářů Windows** definuje částečné třídy pro ovládací prvky, jako `Form`. Generovaný kód v těchto ovládacích prvků byste neměli měnit.
+> Visual Basic používá definicí částečné třídy pro oddělení kód generovaný sady Visual Studio z uživatelem definovaných kódu. Kód je rozdělené na samostatné zdrojové soubory. Například **Návrhář formulářů Windows** definuje částečné třídy pro ovládací prvky, jako `Form`. Generovaný kód v těchto ovládacích prvků byste neměli měnit.
 
 Další informace o částečné typy v jazyce Visual Basic najdete v tématu [částečné](/dotnet/visual-basic/language-reference/modifiers/partial).
 

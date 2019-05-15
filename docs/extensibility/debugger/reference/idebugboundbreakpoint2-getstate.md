@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 716721a94b5fa31bfff6dfcae647e1de2f45a995
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b52035d3f7a686c95f03f89a22bd0835b42caff2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877349"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615015"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 Získá stav vázaná zarážka.
@@ -37,10 +40,9 @@ int GetState( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pState`
-
- [out] Vrátí hodnotu z [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) výčet popisující stav zarážky.
+## <a name="parameters"></a>Parametry
+`pState`\
+[out] Vrátí hodnotu z [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) výčet popisující stav zarážky.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -68,6 +70,6 @@ HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

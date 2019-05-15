@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58675b5f9e963ec416a2c8586375a94f9c06ae69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2b0185b0c3f7f26cfe9ffa8806c5049af323c517
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877520"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614944"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 Tato metoda vyhledá alias, název. Všechny aliasy to bude hledat v programu.
@@ -38,14 +41,12 @@ int FindAlias(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pcstrName`
+## <a name="parameters"></a>Parametry
+`pcstrName`\
+[in] Název alias se najít.
 
- [in] Název alias se najít.
-
- `ppAlias`
-
- [out] Alias najít (pokud existuje) reprezentována [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) rozhraní.
+`ppAlias`\
+[out] Alias najít (pokud existuje) reprezentována [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) rozhraní.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` (Pokud není nalezena alias) nebo kód chyby.
@@ -53,6 +54,6 @@ int FindAlias(
 ## <a name="remarks"></a>Poznámky
  Tato metoda inicializuje cílového objektu na hodnotu null, před voláním; potom testy pro hodnotu null, následně k určení, zda byl nalezen alias.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

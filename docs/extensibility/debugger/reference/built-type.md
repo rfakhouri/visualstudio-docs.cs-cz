@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09f0438bed235729d390b784725b89abec201c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1a1ecf55b017319850f97c23d926a650c7e01680
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924767"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615346"
 ---
 # <a name="builttype"></a>BUILT_TYPE
 Tato struktura Určuje informace o typ pole z metadat.
@@ -40,12 +43,15 @@ public struct BUILT_TYPE {
 };
 ```
 
-#### <a name="parameters"></a>Parametry
-ulAppDomainID ID aplikace, ze kterého přišel symbolu. Slouží k jednoznačné identifikaci instance aplikace.
+## <a name="members"></a>Členové
+`ulAppDomainID`\
+ID aplikace, ze kterého přišel symbolu. Slouží k jednoznačné identifikaci instance aplikace.
 
-guidModule GUID modulu, který obsahuje toto pole.
+`guidModule`\
+Identifikátor GUID modulu, který obsahuje toto pole.
 
-pUnderlyingField [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objekt identifikuje základní pole přidružené k této vytvořené pole.
+`pUnderlyingField`\
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objekt identifikuje základní pole přidružené k této vytvořené pole.
 
 ## <a name="remarks"></a>Poznámky
 Tato struktura se zobrazí jako součást sjednocení v [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) strukturu, kdy `dwKind` pole `TYPE_INFO` struktura je nastavena na `TYPE_KIND_BUILT` (hodnotu z [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) výčet).
@@ -57,7 +63,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

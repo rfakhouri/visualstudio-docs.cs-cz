@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d4622e1de76406568cda4761005c5482f3169d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 39c1c8b6d8294676df3527cafbdd035a9da84548
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877494"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615078"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 Tato metoda určí run-time typu objektu.
@@ -38,14 +41,12 @@ int ResolveRuntimeType(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pObject`
+## <a name="parameters"></a>Parametry
+`pObject`\
+[in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) vyřešit.
 
- [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) vyřešit.
-
- `ppResolved`
-
- [out] Vrátí typ objektu jako [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+`ppResolved`\
+[out] Vrátí typ objektu jako [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -53,7 +54,7 @@ int ResolveRuntimeType(
 ## <a name="remarks"></a>Poznámky
  Za běhu typ objektu není vždy znám v době kompilace. Například pomocí polymorfismus, argument může být předán funkci jako její základní třídě, jako je například třída tlačítek. Skutečný argument může být odvozené třídy, jako je například třída tlačítek přepínače.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

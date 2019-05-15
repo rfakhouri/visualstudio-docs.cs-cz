@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4196916958de2df4f9c3a12f030b22d712e87502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b5d98d9f3b7453cf0337d529b9ef99815d92
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974230"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614503"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Příklady parametrů příkazového řádku pro instalaci sady Visual Studio
 
@@ -67,7 +67,21 @@ Seznam úloh a součástí, které můžete nainstalovat pomocí příkazového 
 * Čekání na instalační program sady Visual Studio a dokončete před provedením dalšího příkazu pomocí v dávkové soubory nebo skripty. Pro dávkové soubory `%ERRORLEVEL%` proměnné prostředí bude obsahovat vrácenou hodnotu příkazu, jak je uvedeno v [použít parametry příkazového řádku instalace sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md) stránky. Některé nástroje příkazového vyžadují další parametry, které chcete počkat na dokončení a k získání vrácené hodnoty instalačního programu. Následuje příklad další parametry pro příkaz skriptu prostředí PowerShell spuštění procesu:
 
    ```cmd
-   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+   start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
+   echo %errorlevel%
+   ```
+   ```PS
+   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
+   ```
+   or
+   ```PS
+    $startInfo = New-Object System.Diagnostics.ProcessStartInfo
+    $startInfo.FileName = "vs_enterprise.exe"
+    $startInfo.Arguments = "--all --quiet --wait" 
+    $process = New-Object System.Diagnostics.Process
+    $process.StartInfo = $startInfo
+    $process.Start() 
+    $process.WaitForExit()
    ```
 
 * První "– Počkejte" se používá tak, že instalační program sady Visual Studio a druhá ' – počkejte "je používán procesem' Start-" Čekání na dokončení. "-PassThru' parametr je používán procesem' Start-" použití instalačního programu ukončovací kód pro jeho návratovou hodnotu.

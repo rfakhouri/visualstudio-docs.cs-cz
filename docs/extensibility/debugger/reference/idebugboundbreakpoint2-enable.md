@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 267f7b3fed8df1a326bca9dd5c1ca8128330ee16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c0f178497b9f53c488c8f4cb3142559a7883778a
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877435"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614654"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 Povolí nebo zakáže zarážku.
@@ -37,10 +40,9 @@ int Enable( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`fEnable`
-
- [in] Nastavit na nenulovou (`TRUE`) k povolení nebo na hodnotu nula (`FALSE`) Chcete-li zakázat zarážku.
+## <a name="parameters"></a>Parametry
+`fEnable`\
+[in] Nastavit na nenulovou (`TRUE`) k povolení nebo na hodnotu nula (`FALSE`) Chcete-li zakázat zarážku.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Vrátí `E_BP_DELETED` Pokud státu objekt vázaná zarážka nastavená na `BPS_DELETED` (součástí [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) výčet).
@@ -95,6 +97,6 @@ HRESULT CBoundBreakpoint::Enable(BOOL fEnable)
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

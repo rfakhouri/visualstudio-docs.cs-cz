@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cbccb155b8a96a3a7480c4e898a597e57250df4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 164b6ca7fcfa71117060e5230cc9c9b3aeeb6c61
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923653"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614668"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 Tato metoda načte seznam typů argumentů, které jsou přidružené k tomuto objektu.
@@ -42,22 +45,18 @@ int GetTypeArguments(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `skip`
+## <a name="parameters"></a>Parametry
+`skip`\
+[in] Počet polí, přejděte před získáním typy argumentů.
 
- [in] Počet polí, přejděte před získáním typy argumentů.
+`count`\
+[in] Počet polí argument vrátit (také určuje velikost `ppFields` pole).
 
- `count`
+`ppFields`\
+[out v] Pole polí, která bude vyplněno při návratu tato metoda.
 
- [in] Počet polí argument vrátit (také určuje velikost `ppFields` pole).
-
- `ppFields`
-
- [out v] Pole polí, která bude vyplněno při návratu tato metoda.
-
- `pFetched`
-
- [out] \(volitelné) Počet argumentů typu pole ve skutečnosti vrátí.
+`pFetched`\
+[out] \(volitelné) Počet argumentů typu pole ve skutečnosti vrátí.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -65,6 +64,6 @@ int GetTypeArguments(
 ## <a name="remarks"></a>Poznámky
  Počet typů argumentů, které lze získat předem s [gettypeargumentcount –](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)
