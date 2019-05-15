@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780841"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686274"
 ---
 # <a name="profiling-tools"></a>Nástroje pro profilaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Profilace a Diagnostika nástroje pomáhají diagnostikovat paměť a využití 
 ## <a name="memory-usage"></a>Využití paměti  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- Vyhledání nevrácené paměti a neefektivní paměti během ladění s **využití paměti** nástroj. Nástroj umožňuje pořizovat snímky paměti spravovaný a nativní haldě. Tento nástroj můžete použít s aplikací klasické pracovní plochy, Windows Universal apps a aplikací ASP.NET. **Využití paměti** nástroj můžete spustit z **diagnostické nástroje** okno při ladění (**ladění / Windows / zobrazit diagnostické nástroje**) nebo mimo ladicí program (**Ladění / Profiler výkonu...**). Zobrazit [využití paměti](../profiling/memory-usage.md) a [využití paměti bez ladění](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) Další informace.  
+ Vyhledání nevrácené paměti a neefektivní paměti během ladění s **využití paměti** nástroj. Nástroj umožňuje pořizovat snímky paměti spravovaný a nativní haldě. Tento nástroj můžete použít s aplikací klasické pracovní plochy, Windows Universal apps a aplikací ASP.NET. **Využití paměti** nástroj můžete spustit z **diagnostické nástroje** okno při ladění (**ladění / Windows / zobrazit diagnostické nástroje**) nebo mimo ladicí program (**Ladění / Profiler výkonu...**). Zobrazit [využití paměti](../profiling/memory-usage.md) a [využití paměti bez ladění](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) Další informace.  
   
 ## <a name="cpu-usage"></a>Využití procesoru  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  

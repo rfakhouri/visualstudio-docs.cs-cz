@@ -18,19 +18,19 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431423"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690588"
 ---
 # <a name="javascript-console-commands"></a>Příkazy konzoly jazyka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Příkazy můžete použít k odesílání zpráv a provádění dalších úloh v okně konzoly jazyka JavaScript sady Visual Studio. Příklady, které ukazují, jak pomocí tohoto okna najdete v tématu [rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md). Informace v tomto tématu se vztahují na aplikace Windows Store, Windows Phone Store, aplikací a aplikací vytvořených pomocí Visual Studio Tools pro Apache Cordova. Informace o podporovaných konzole příkazy v aplikace Cordova, naleznete v tématu [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Informace o použití konzoly v nástrojích Internet Explorer F12 najdete v tématu [v tomto tématu](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Příkazy můžete použít k odesílání zpráv a provádění dalších úloh v okně konzoly jazyka JavaScript sady Visual Studio. Příklady, které ukazují, jak pomocí tohoto okna najdete v tématu [rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md). Informace v tomto tématu se vztahují na aplikace Windows Store, Windows Phone Store, aplikací a aplikací vytvořených pomocí Visual Studio Tools pro Apache Cordova. Informace o podporovaných konzole příkazy v aplikace Cordova, naleznete v tématu [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Informace o použití konzoly v nástrojích Internet Explorer F12 najdete v tématu [v tomto tématu](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Pokud je zavření okna konzoly jazyka JavaScript, lze jej otevřít při ladění v sadě Visual Studio výběrem **ladění** > **Windows** > **jazyka JavaScript Konzola**.  
   

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0b04692ed30e69e8904919748a6db0d0eff49f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b72b2c3bd6b03d1d3f3e50135c2ddf4758a4bd9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002114"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683050"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>Rozšíření VSPackages a rozhraní Managed Package Framework
 Tím, že vytvoříte VSPackage spolu s balíčkem spravované třídy rozhraní framework (MPF) namísto pomocí třídy modelu COM interop můžete zkrátit dobu vývoje.  
@@ -25,7 +25,7 @@ Tím, že vytvoříte VSPackage spolu s balíčkem spravované třídy rozhraní
   
 - Použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] balíček šablony projektu  
   
-     Další informace najdete v tématu [názorný postup: Vytvoření příkazu nabídky s použitím šablony sady Visual Studio balíček](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Další informace najdete v tématu [názorný postup: Vytvoření příkazu nabídky s použitím šablony sady Visual Studio balíček](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 - Vytvoření vašeho balíčku VSPackage bez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] balíček šablony projektu  
   
@@ -36,7 +36,7 @@ Tím, že vytvoříte VSPackage spolu s balíčkem spravované třídy rozhraní
  Popisuje a obsahuje seznam oborů názvů MPF třídy a soubory DLL.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Návod: Vytvoření příkazu nabídky s použitím balíčku šablony sady Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+ [Návod: Vytvoření příkazu nabídky s použitím balíčku šablony sady Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  Vysvětluje, jak vytvořit spravovaný VSPackage.  
   
  [Spravovaná rozšíření VSPackages](../misc/managed-vspackages.md)  

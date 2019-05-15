@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 12a854c4e43385177730ceddf045b76e2e61d342
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081395"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686902"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementuje správně IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60081395"
 
   Porušení některou z těchto vzorců se aktivuje toto upozornění.
 
-  Každý nezapečetěné kořenový typ IDisposable musíte zadat své vlastní chráněné virtuální void Dispose(bool) metody. Dispose() by měly volat Dipose(true) a Finalize by měly volat Dispose(false). Při vytváření typu IDisposable nezapečetěné root, musíte definovat Dispose(bool) a jeho volání. Další informace najdete v tématu [Cleaning Up Unmanaged Resources](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) v [pokyny k návrhu architektury](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) část dokumentace rozhraní .NET Framework.
+  Každý nezapečetěné kořenový typ IDisposable musíte zadat své vlastní chráněné virtuální void Dispose(bool) metody. Dispose() by měly volat Dipose(true) a Finalize by měly volat Dispose(false). Při vytváření typu IDisposable nezapečetěné root, musíte definovat Dispose(bool) a jeho volání. Další informace najdete v tématu [Cleaning Up Unmanaged Resources](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) v [pokyny k návrhu architektury](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) část dokumentace rozhraní .NET Framework.
 
 ## <a name="rule-description"></a>Popis pravidla
  Všechny typy IDisposable by měly správně implementovat vzor Dispose.

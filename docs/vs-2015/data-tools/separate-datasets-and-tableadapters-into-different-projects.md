@@ -17,17 +17,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bfd6cc62fc93ca3a535fb60c4ea5e1323c720558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425101"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690234"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdělování datových sad a objektů TableAdapter do různých projektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vylepšili jsme typové datové sady, aby [objekty TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) a do samostatné projekty se můžou generovat třídy datové sady. To umožňuje rychle samostatné aplikace a generovat vícevrstvých datových aplikací.  
+Vylepšili jsme typové datové sady, aby [objekty TableAdapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) a do samostatné projekty se můžou generovat třídy datové sady. To umožňuje rychle samostatné aplikace a generovat vícevrstvých datových aplikací.  
   
  Následující postup popisuje proces pomocí návrháře datových sad pro generování kódu datovou sadu do projektu, který je oddělen od projektu, který obsahuje vygenerovanou `TableAdapter` kódu.  
   
@@ -70,4 +70,4 @@ Vylepšili jsme typové datové sady, aby [objekty TableAdapter](http://msdn.mic
  [Návod: Vytvoření vícevrstvé datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Hierarchická aktualizace](../data-tools/hierarchical-update.md)   
  [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)

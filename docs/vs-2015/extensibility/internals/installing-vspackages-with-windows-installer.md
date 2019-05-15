@@ -11,19 +11,19 @@ ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d5b22479996bca6ee69c1334d79f012024b865d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35942f6babf18967e11f268ef0412acb4cc8edf7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782675"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687468"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Instalace balíčků VSPackage pomocí Instalační služby systému Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Integrace do vaší VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] vyžaduje více než pouhé kopírování souborů na počítači uživatele. Instalační program vašeho balíčku VSPackage musíte nainstalovat sady VSPackage a jeho závislých souborů a zaregistrovat a integrovat je do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Vaše VSPackage můžete využít výhod funkcí pro integraci například ikonu zobrazení na [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] úvodní obrazovky a o dialogové okno.  
   
- Soubory Instalační služby systému Microsoft Windows jsou doporučeným způsobem, jak distribuovat vaše rozšíření VSPackages. Snadno použitelné balíčky Instalační služby systému Windows můžete spustit v libovolném operačním systému Windows nepodporuje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Další informace najdete v tématu [Instalační služby systému Windows](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0).  
+ Soubory Instalační služby systému Microsoft Windows jsou doporučeným způsobem, jak distribuovat vaše rozšíření VSPackages. Snadno použitelné balíčky Instalační služby systému Windows můžete spustit v libovolném operačním systému Windows nepodporuje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Další informace najdete v tématu [Instalační služby systému Windows](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Základní informace o Instalační službě systému Windows](../../extensibility/internals/windows-installer-basics.md)  
@@ -50,7 +50,7 @@ Integrace do vaší VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] vy
  [Nasazování typů projektů](../../extensibility/internals/deploying-project-types.md)  
  Popisuje, jak použít nový typ projektu agregátor pro typy projektů spravovaného kódu.  
   
- [Postupy: Vygenerování informací registru pro instalační službu](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
+ [Postupy: Vygenerování informací registru pro instalační program](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
  Vysvětluje způsob používání RegPkg.exe ke generování manifestu registrace pro spravovaná VSPackage.  
   
  [Příkazy, které se musí spustit po instalaci](../../extensibility/internals/commands-that-must-be-run-after-installation.md)  

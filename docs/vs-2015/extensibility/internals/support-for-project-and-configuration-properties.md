@@ -11,26 +11,26 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ae770d36c0f030a060eccfe86bc3939dad9622d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408569"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691873"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Podpora vlastností projektu a konfigurace
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 **Vlastnosti** okna [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE) můžete zobrazit vlastnosti projektu a konfigurace. Stránky vlastností pro vlastní typ projektu můžete zadat tak, aby uživatel může nastavit vlastnosti pro vaši aplikaci.  
   
- Vyberte uzel projektu v **Průzkumníka řešení** a pak levým na **vlastnosti** na **projektu** nabídku, můžete otevřít dialogové okno, které obsahuje projekt a konfiguraci Vlastnosti. V [!INCLUDE[csprcs](../../includes/csprcs-md.md)] a [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]a typy odvozené z těchto jazyků toto dialogové okno se zobrazí jako stránka s kartami v projektu [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md). Další informace najdete v tématu [není v sestavení: Návod: Vystavení vlastností konfigurace projektů a (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ Vyberte uzel projektu v **Průzkumníka řešení** a pak levým na **vlastnosti** na **projektu** nabídku, můžete otevřít dialogové okno, které obsahuje projekt a konfiguraci Vlastnosti. V [!INCLUDE[csprcs](../../includes/csprcs-md.md)] a [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]a typy odvozené z těchto jazyků toto dialogové okno se zobrazí jako stránka s kartami v projektu [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md). Další informace najdete v tématu [není v sestavení: Návod: Vystavení vlastností konfigurace projektů a (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
  Managed Package Framework pro projekty (MPFProj) poskytuje pomocné třídy pro vytváření a správu nový systém projektů. Zdrojového kódu a kompilace pokyny najdete v [MPF projektů – Visual Studio 2013](http://mpfproj12.codeplex.com/).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Trvalost projektu a vlastnosti konfigurace  
- Vlastnosti projektu a konfigurace jsou ukládány v souboru projektu, který má příponu názvu souboru spojené s typem projektu, například, .csproj, .vbproj a .myproj. Soubor šablony projektů jazyka obvykle používají ke generování souboru projektu. Existují však skutečně několik způsobů, jak přidružit typy projektů a šablon. Další informace najdete v tématu [NIB: Šablony sady Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) a [popisu adresáře šablon (. Soubory VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Vlastnosti projektu a konfigurace jsou ukládány v souboru projektu, který má příponu názvu souboru spojené s typem projektu, například, .csproj, .vbproj a .myproj. Soubor šablony projektů jazyka obvykle používají ke generování souboru projektu. Existují však skutečně několik způsobů, jak přidružit typy projektů a šablon. Další informace najdete v tématu [NIB: Šablony sady Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) a [popisu adresáře šablon (. Soubory VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Vlastnosti projektu a konfigurace jsou vytvořena přidáním položky do souboru šablony. Tyto vlastnosti jsou pak k dispozici pro libovolný projekt vytvořen pomocí typu projektu, který používá tuto šablonu. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projekty a MPFProj používají [není v sestavení: Přehled nástroje MSBuild](http://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) schéma pro soubory šablon. Tyto soubory obsahují PropertyGroup část pro každou konfiguraci. Vlastnosti projektů jsou obvykle zachované v první části PropertyGroup, která má jako argument konfigurace nastavit na prázdný řetězec.  
+ Vlastnosti projektu a konfigurace jsou vytvořena přidáním položky do souboru šablony. Tyto vlastnosti jsou pak k dispozici pro libovolný projekt vytvořen pomocí typu projektu, který používá tuto šablonu. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projekty a MPFProj používají [není v sestavení: Přehled nástroje MSBuild](https://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) schéma pro soubory šablon. Tyto soubory obsahují PropertyGroup část pro každou konfiguraci. Vlastnosti projektů jsou obvykle zachované v první části PropertyGroup, která má jako argument konfigurace nastavit na prázdný řetězec.  
   
  Následující kód ukazuje začátek základního souboru projektu MSBuild.  
   
@@ -93,9 +93,9 @@ ms.locfileid: "63408569"
  `MyConfigProp` Vlastnost konfigurace se zobrazí na stránce vlastností konfigurace jako **Moje konfigurační vlastnost** v kategorii **kategorie Mé**. Pokud je vybraná možnost, popis, **Můj popis**, zobrazí se v panelu Popis.  
   
 ## <a name="see-also"></a>Viz také  
- [Není v sestavení: Návod: Vystavení vlastností konfigurace projektů a (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [Není v sestavení: Návod: Vystavení vlastností konfigurace projektů a (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
  [Přidávání a odebírání stránek vlastností](../../extensibility/adding-and-removing-property-pages.md)   
  [Stav balíčku VSPackage](../../misc/vspackage-state.md)   
  [Projekty](../../extensibility/internals/projects.md)   
- [NIB: Šablony sady Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
+ [NIB: Šablony sady Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
  [Soubory popisu adresáře šablon (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

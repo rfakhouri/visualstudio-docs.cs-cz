@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73fcc686b242109a65fce6befbbca5e2a357a25e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 074c6c1cace31797e46a192ec0891f1e13dac22b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049318"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684265"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Chyba: Ladění se nezdařilo, protože ověření integrované Windows není povoleno.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,4 +120,4 @@ Ověření uživatele, který požaduje ladění nebylo možné kvůli chybě ov
 ## <a name="see-also"></a>Viz také  
  [Ladění webových aplikací: Chyby a řešení potíží](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Microsoft Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=77938)   
- [Spouštění webových aplikací v systému Windows Vista se službou IIS 7.0 a Visual Studio](http://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [Spouštění webových aplikací v systému Windows Vista se službou IIS 7.0 a Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

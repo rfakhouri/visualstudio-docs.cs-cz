@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36d280cd62420b9805d0a4359df1b72ae452236d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 950e37fd1f1f42f534522c09a8322311c06cebd6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777745"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688511"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Měřit výkon aplikace díky analýze využití procesoru
 Nástroje pro profilaci v sadě Visual Studio můžete použít k analýze problémů s výkonem aplikace. V tomto postupu si ukážeme, jak používat kartu **Využití procesoru** v diagnostických nástrojích k získání dat o výkonu vaší aplikace. Diagnostické nástroje jsou podporované pro vývoj rozhraní .NET v sadě Visual Studio, včetně ASP.NET, nativního vývoje a vývoje v jazyce C++.

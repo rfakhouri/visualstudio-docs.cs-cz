@@ -10,19 +10,19 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59afc6a95e327460602ece8db58f075b483d0e09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5d2e7d15f7b479941c3186d8cd694c92f762bbf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538279"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690995"
 ---
 # <a name="extending-properties"></a>Rozšíření vlastností
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Vlastnosti** okno je univerzální vlastnost prohlížeče pro komponenty COM a modelu COM + a podporuje všechny [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] produktů. **Vlastnosti** okno funguje s `ITypeInfo` zadejte informace a metadata COM +. Chcete-li vypsat vlastnosti doby návrhu pro aktuálně vybraného objektu v druhém okně v integrovaném vývojovém prostředí (IDE).  
   
- **Vlastnosti** okna, která se dá otevřít stisknutím klávesy F4 nebo výběrem **okno vlastností** na **zobrazení** nabídky, se používá k zobrazení a úpravy Vlastnosti nezávislé na konfiguraci, návrhu a události vybraných objektů. Vlastnosti závislé na konfiguraci, přidružené k řešení a projekty jsou zobrazeny v [stránky vlastností](../../extensibility/internals/property-pages.md). Další informace najdete v tématu [vlastnosti NIB: projektu](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [Správa možností konfigurace](../../extensibility/internals/managing-configuration-options.md), a [správu NIB: položka v projektech](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ **Vlastnosti** okna, která se dá otevřít stisknutím klávesy F4 nebo výběrem **okno vlastností** na **zobrazení** nabídky, se používá k zobrazení a úpravy Vlastnosti nezávislé na konfiguraci, návrhu a události vybraných objektů. Vlastnosti závislé na konfiguraci, přidružené k řešení a projekty jsou zobrazeny v [stránky vlastností](../../extensibility/internals/property-pages.md). Další informace najdete v tématu [vlastnosti NIB: projektu](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [Správa možností konfigurace](../../extensibility/internals/managing-configuration-options.md), a [správu NIB: položka v projektech](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  ![Přehled okna vlastnosti](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Vlastnosti – okno  
@@ -70,19 +70,19 @@ Vlastnosti – okno
  [Kompilace a sestavení](../../ide/compiling-and-building-in-visual-studio.md)  
  Popisuje, jak můžete použít [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] platformu pro průběžné testování a ladění aplikací, jako je sestavení.  
   
- [Vlastnosti dokumentu HTML, okna Vlastnosti](http://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
+ [Vlastnosti dokumentu HTML, okna Vlastnosti](https://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
  Poskytuje pokyny pro úpravy dokument HTML přímo z okna Vlastnosti a tabulka s podrobnostmi o pole v dokumentu HTML v okně Vlastnosti.  
   
- [IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
+ [IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
  Popisuje `IDispatch` rozhraní, který byl původně navržený pro podporu automatizace, poskytuje mechanismus s pozdní vazbou a přístup k načtení informací o metod a vlastností objektu.  
   
- [NIB: Úvod k dynamické vlastnosti (Visual Studio)](http://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
+ [NIB: Úvod k dynamické vlastnosti (Visual Studio)](https://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
  Poskytuje základní informace o dynamické vlastnosti, které umožňují nakonfigurovat aplikaci tak, aby hodnoty vlastností jsou uložené v externích konfiguračním souboru místo zkompilovaný kód aplikace.  
   
- [NIB: projekty jako kontejnery](http://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
+ [NIB: projekty jako kontejnery](https://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
  Popisuje roli projektu jako kontejner v řešení, které logicky spravovat, vytvářet a ladit položky, které tvoří vaši aplikaci.  
   
- [NIB:Project Properties](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
+ [NIB:Project Properties](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
  Popisuje, jak projekt spravuje nastavení, která umožňují vlastnosti ovládacích prvků, které platí pro celý projekt a také vlastnosti, které jsou omezené na určité konfigurace sestavení projektu.  
   
  [Řešení a projekty](../../ide/solutions-and-projects-in-visual-studio.md)  

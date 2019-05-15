@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ec34dc0f4f2794f853b8e70670d4d3f59e7bae3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974868"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692312"
 ---
 # <a name="install-visual-studio"></a>Instalace sady Visual Studio
 
@@ -203,7 +203,7 @@ Ve výchozím nastavení instalační program pokusí tak, aby odpovídala jazyk
 
 Dalším způsobem, že můžete změnit výchozí jazyk je spuštění instalačního programu z příkazového řádku. Například můžete vynutit instalační program pro spuštění v anglickém jazyce pomocí následujícího příkazu: `vs_installer.exe --locale en-US`. Instalační program bude mějte na paměti Toto nastavení při příštím spuštění. Instalační program podporuje následující klíčová slova jazyka: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru a tr-tr.
 
-## <a name="step-7---change-the-installation-location-optional"></a>Krok 7: Změna umístění instalace (volitelné)
+## <a name="step-7---select-the-installation-location-optional"></a>Krok 7 – vybrat umístění instalace (volitelné)
 
 ::: moniker range="vs-2017"
 
@@ -217,7 +217,7 @@ Dalším způsobem, že můžete změnit výchozí jazyk je spuštění instala�
 
 Můžete snížit nároky na instalaci sady Visual Studio na systémovou jednotku. Můžete se rozhodnout, zda budou přesunuty mezipaměť pro stahování, sdílených komponent, sady SDK a nástrojů na jiné jednotky a sady Visual Studio na disku, na kterém běží nejrychlejší.
 
-  ![Visual Studio 2019 - Změna umístění instalací](media/vs-2019/vs-installer-installation-locations.png "Změna umístění instalace")
+  ![2019 Visual Studio – výběr instalační umístění](media/vs-2019/vs-installer-installation-locations.png "zvolte umístění instalace")
 
 ::: moniker-end
 

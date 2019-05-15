@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a2610c1fef92bb77d150dad7972bb991b6ef4a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445021"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686013"
 ---
 # <a name="securing-clickonce-applications"></a>Zabezpečování aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "63445021"
   
 1. Provádění obfuskace pomocí nástroje Dotfuscator.  
   
-2. Pro generování manifestů technologie ClickOnce a jejich podepsání použijte nástroje Mage.exe nebo MageUI.exe. Další informace najdete v tématu [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) a [MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+2. Pro generování manifestů technologie ClickOnce a jejich podepsání použijte nástroje Mage.exe nebo MageUI.exe. Další informace najdete v tématu [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) a [MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 3. Ručně publikujte (zkopírujte) soubory do zdrojového umístění nasazení (webový server, sdílené složky UNC nebo disk CD-ROM).  
   

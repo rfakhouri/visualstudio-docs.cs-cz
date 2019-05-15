@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4a0cf53dcc9870b5d0c93d2fcaaf2d942fd9959
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56b010a01ccd7e40e696653e13dd7c972c97a9cb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767940"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690540"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimalizace a ladění JIT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,4 +41,4 @@ Při ladění spravované aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   
  [Procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)   
  [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Proces spravovaného spuštění](http://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)
+ [Proces spravovaného spuštění](https://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)

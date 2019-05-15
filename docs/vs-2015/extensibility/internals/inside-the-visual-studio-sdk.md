@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3bdc65a145b64071087d72fce9967c67cc2f8426
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443894"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687538"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Práce se sadou Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Zobecněný zobrazení architektury v sadě Visual Studio
  Šablony obsahují projekt strukturu a základní soubory, které jsou nutné k vytvoření určitého druhu aplikace, ovládací prvek, knihovny nebo třídy. Pokud chcete k vývoji softwaru, který se podobá některou ze šablon, vytvořit projekt, který je založen na šabloně a potom upravte soubory v daném projektu.  
   
 > [!NOTE]
-> Tato architektura šablony není podporován pro [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projekty. Informace o tom, jak vytvořit [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] šablony projektů, naleznete v tématu [návrhu průvodce](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
+> Tato architektura šablony není podporován pro [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projekty. Informace o tom, jak vytvořit [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] šablony projektů, naleznete v tématu [návrhu průvodce](https://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
   
  Další informace najdete v tématu [přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   

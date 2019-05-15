@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d74fc577044cd11ca161f099e2432fd03ecfad2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb62c82722cbfc76264e760e117c828a6dc3bef0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440954"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687163"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapování závislostí napříč vaším řešením
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -284,7 +284,7 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
      ![Pomocí podokna filtru pro zjednodušení zobrazení](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ## <a name="SeeSourceHeader"></a> Zobrazení závislostí mezi zdrojovými soubory C a C++ a soubory hlaviček  
- Pokud chcete vytvořit podrobnější mapy pro projekty C++, nastavte možnost Procházet informace kompilátoru (**/FR**) na těchto projektech. Zobrazit [/FR, /Fr (vytvořit. Soubor SBR)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Jinak se objeví zpráva s dotazem, zda chcete tuto možnost nastavit. Pokud vyberete **OK**, tím se nastaví možnost pouze aktuální mapování. Můžete skrýt zprávu pro všechny pozdější mapy. Pokud je skrýt tuto zprávu, můžete si je znovu zobrazí. Nastavte následující klíč registru na `0` nebo klíč odstraňte:  
+ Pokud chcete vytvořit podrobnější mapy pro projekty C++, nastavte možnost Procházet informace kompilátoru (**/FR**) na těchto projektech. Zobrazit [/FR, /Fr (vytvořit. Soubor SBR)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Jinak se objeví zpráva s dotazem, zda chcete tuto možnost nastavit. Pokud vyberete **OK**, tím se nastaví možnost pouze aktuální mapování. Můžete skrýt zprávu pro všechny pozdější mapy. Pokud je skrýt tuto zprávu, můžete si je znovu zobrazí. Nastavte následující klíč registru na `0` nebo klíč odstraňte:  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
@@ -312,11 +312,11 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
 |Generovat mapu kódu se nezdařilo.|V řešení nebyly úspěšně sestaveny žádné projekty.|Opravte chyby sestavení, ke kterým došlo a potom znovu vytvořte mapu.|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] přestane reagovat při pokusu o generování mapy kódu z **architektura** nabídky.|Soubor databáze programů (.pdb) může být poškozen.<br /><br /> Soubor .pdb ukládá informace o ladění, jako je typ, metoda a informace zdrojového souboru.|Znovu sestavte řešení a potom akci opakujte.|  
 |Určitá nastavení pro databázi procházení IntelliSense jsou zakázána.|Určitá nastavení IntelliSense můžou být zakázané v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **možnosti** dialogové okno.|Chcete-li tato nastavení povolit, zapněte je.<br /><br /> Zobrazit [možnosti, textový Editor, C/C++, Upřesnit](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
-|Zpráva **neznámé metody** se zobrazí v uzlu metody.<br /><br /> K tomuto problému dochází, protože nelze vyřešit název metody.|Binární soubor nemusí mít základní tabulku přemístění.|Zapnout **/fixed: No** v linkeru možnost.<br /><br /> Zobrazit [/fixed (pevná základní adresa)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
-||Soubor databáze programů (.pdb) nemusí být vytvořen.<br /><br /> Soubor .pdb ukládá informace o ladění, jako je typ, metoda a informace zdrojového souboru.|Zapnout **/DEBUG** v linkeru možnost.<br /><br /> Zobrazit [/DEBUG (generování ladicích informací)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
+|Zpráva **neznámé metody** se zobrazí v uzlu metody.<br /><br /> K tomuto problému dochází, protože nelze vyřešit název metody.|Binární soubor nemusí mít základní tabulku přemístění.|Zapnout **/fixed: No** v linkeru možnost.<br /><br /> Zobrazit [/fixed (pevná základní adresa)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
+||Soubor databáze programů (.pdb) nemusí být vytvořen.<br /><br /> Soubor .pdb ukládá informace o ladění, jako je typ, metoda a informace zdrojového souboru.|Zapnout **/DEBUG** v linkeru možnost.<br /><br /> Zobrazit [/DEBUG (generování ladicích informací)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
 ||V očekávaných umístěních nelze otevřít nebo najít soubor .pdb.|Ujistěte se, že v předpokládaném umístění existuje soubor .pdb.|  
-||Informace o ladění byly ze souboru .pdb odstraněny.|Pokud **/PDBSTRIPPED** byla v nástroji linker použita možnost, místo toho zahrňte kompletní soubor .pdb.<br /><br /> Zobrazit [/PDBSTRIPPED (odstranění privátních symbolů)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
-||Volající není funkcí a je převodní rutinou v binárním souboru nebo ukazatelem v datové sekci.|Pokud je volající převodní rutinou, zkuste použít `_declspec(dllimport)` aby se zabránilo jiné bitové šířce.<br /><br /> Další informace:<br /><br /> -   [Obecná pravidla a omezení](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Import volání funkcí pomocí deklarace __declspec(dllimport)](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
+||Informace o ladění byly ze souboru .pdb odstraněny.|Pokud **/PDBSTRIPPED** byla v nástroji linker použita možnost, místo toho zahrňte kompletní soubor .pdb.<br /><br /> Zobrazit [/PDBSTRIPPED (odstranění privátních symbolů)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
+||Volající není funkcí a je převodní rutinou v binárním souboru nebo ukazatelem v datové sekci.|Pokud je volající převodní rutinou, zkuste použít `_declspec(dllimport)` aby se zabránilo jiné bitové šířce.<br /><br /> Další informace:<br /><br /> -   [Obecná pravidla a omezení](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Import volání funkcí pomocí deklarace __declspec(dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ## <a name="RenderMoreQuickly"></a> Ujistěte se, kód, který rychleji vykreslení mapy  
  Při prvním generování mapu, Visual Studio indexuje všechny závislosti, které nalezne. Tento proces může trvat nějakou dobu, zvláště pro velká řešení, ale zlepší výkon později. Pokud se změní kód, sada Visual Studio znovu indexuje pouze aktualizovaný kód. Chcete-li minimalizovat čas potřebný pro mapování na dokončení vykreslování, zvažte následující:  

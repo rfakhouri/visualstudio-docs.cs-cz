@@ -16,19 +16,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: deb2e446ff051b52e9c34d28abfa99436c064ad6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116742"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680910"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refaktoring pro extrahování rozhraní (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Extrahování rozhraní se operaci refaktoringu, která poskytuje snadný způsob, jak vytvořit nové rozhraní s členy, které pocházejí z existující třídy, struktury nebo rozhraní.  
   
- Několik klientů, použijete stejnou podmnožinu členů ze třídy, struktury nebo rozhraní, nebo pokud více třídy, struktury nebo rozhraní mají podmnožinu členů společné, může být užitečné začleněné podmnožinu členů v rozhraní. Další informace o použití rozhraní najdete v tématu [rozhraní](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
+ Několik klientů, použijete stejnou podmnožinu členů ze třídy, struktury nebo rozhraní, nebo pokud více třídy, struktury nebo rozhraní mají podmnožinu členů společné, může být užitečné začleněné podmnožinu členů v rozhraní. Další informace o použití rozhraní najdete v tématu [rozhraní](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
   
  Extrahování rozhraní generuje rozhraní v novém souboru a umístí kurzor na začátku nového souboru. Můžete určit, které členy mají extrahovat do nové rozhraní, název nového rozhraní a název generovaného souboru pomocí **extrahování rozhraní** dialogové okno.  
   

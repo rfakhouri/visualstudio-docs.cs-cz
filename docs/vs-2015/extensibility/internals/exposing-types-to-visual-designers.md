@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2db026367e43c1092cf9744817449ce51556a4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f4d6c0e163b751f1873fdb941e85c273dcc4fde5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436315"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691209"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Zveřejnění typů pro vizuální návrháře
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "63436315"
      Při kompilaci dočasné přenositelné Spustitelné pouze zdrojový soubor k dispozici pro kompilátor je výstup vlastního nástroje. Vlastní nástroj, který používá dočasné přenositelné Spustitelné proto musí vygenerovat výstupní soubory, které mohou být zkompilovány nezávisle na jiné soubory v projektu.  
   
 ## <a name="see-also"></a>Viz také  
- [Představení objektu BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [Představení objektu BuildManager](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [Implementace generátorů tvořených jedním souborem](../../extensibility/internals/implementing-single-file-generators.md)   
  [Určení výchozí Namespace projektu](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Registrace generátorů tvořených jedním souborem](../../extensibility/internals/registering-single-file-generators.md)

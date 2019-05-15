@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431085"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690208"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Vizualizace událostí EventSource v podobě značek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Vizualizátor souběžnosti můžete zobrazit události EventSource jako značky
   
 ### <a name="marker-type"></a>Typ značky  
   
-1. Události, které mají [operační kód](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win: spuštění nebo win: zastavení jsou považovány za začátku nebo konci rozsahu, v uvedeném pořadí.  Vnořený nebo překrývající se rozsahy nelze zobrazit. Nelze zobrazit páry událostí, které v jednom vlákně začínají i končí na další.  
+1. Události, které mají [operační kód](https://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win: spuštění nebo win: zastavení jsou považovány za začátku nebo konci rozsahu, v uvedeném pořadí.  Vnořený nebo překrývající se rozsahy nelze zobrazit. Nelze zobrazit páry událostí, které v jednom vlákně začínají i končí na další.  
   
-2. Událost, jejichž operační kód není win: Start ani win: zastavení je považováno za příznak značky, pokud jeho [úroveň](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) je win: podrobné nebo vyšší.  
+2. Událost, jejichž operační kód není win: Start ani win: zastavení je považováno za příznak značky, pokud jeho [úroveň](https://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) je win: podrobné nebo vyšší.  
   
 3. Ve všech ostatních případech je událost považována za zprávu.  
   
@@ -62,11 +62,11 @@ Vizualizátor souběžnosti můžete zobrazit události EventSource jako značky
   
 |Hodnota cvType|Výsledný typ značky|  
 |------------------|---------------------------|  
-|0|Zpráva|  
+|0|Message|  
 |1|Počáteční značky span|  
 |2|Koncové značky span|  
 |3|Příznak|  
-|Všechny ostatní hodnoty|Zpráva|  
+|Všechny ostatní hodnoty|Message|  
   
 ### <a name="importance"></a>Význam  
  Můžete použít `cvImportance` pole bajtů, k řízení nastavení důležitost události EventSource. Doporučujeme však řízení zobrazených důležitost události pomocí jeho úroveň.  

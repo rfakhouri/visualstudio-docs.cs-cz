@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: f0dd471e156f7a76462ac093c9ca54684f7dbc68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7f13a97adbec1da1bd0f279e14cf510532b9c62f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444489"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688627"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ V sadě Visual Studio můžete vytvářet aplikace, které se připojují k dat�
  Neexistuje žádný požadavek k používání některé z těchto technologií. V některých případech, zejména v případě, že je nejdůležitější, výkon jednoduše vám pomůže objektu DataReader čtení z databáze a zkopírujte hodnoty, které je třeba do objektu kolekce, jako je například seznam\<T >.
 
 ### <a name="native-c"></a>Nativní kód C++
- Používejte aplikací v jazyce C++, které se připojují k systému SQL Server [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx). Ostatní databáze přístupné prostřednictvím [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) nebo přímo ovladače OLE DB. ODBC je aktuální databáze standard rozhraní, ale většina databázových systémů poskytují vlastní funkce, která není přístupná přes rozhraní ODBC.  OLE DB je starou technologií přístupu k datům modelu COM, který je stále podporovány, ale nedoporučuje se u nových aplikací.  Další informace najdete v tématu [přístup k datům](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b).
+ Používejte aplikací v jazyce C++, které se připojují k systému SQL Server [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx). Ostatní databáze přístupné prostřednictvím [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) nebo přímo ovladače OLE DB. ODBC je aktuální databáze standard rozhraní, ale většina databázových systémů poskytují vlastní funkce, která není přístupná přes rozhraní ODBC.  OLE DB je starou technologií přístupu k datům modelu COM, který je stále podporovány, ale nedoporučuje se u nových aplikací.  Další informace najdete v tématu [přístup k datům](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b).
 
  Můžete použít programy v jazyce C++, které využívají služby REST [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
@@ -107,7 +107,7 @@ V sadě Visual Studio můžete vytvářet aplikace, které se připojují k dat�
 #### <a name="data-modeling"></a>Modelování dat
  Visual Studio neposkytuje vrstvu ORM pro jazyk C++.  [TYPU](http://www.codesynthesis.com/products/odb/) je oblíbený open source ORM pro jazyk C++.
 
- Další informace o starší verze technologií přístupu k datům Visual C++, naleznete v tématu [přístup k datům](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
+ Další informace o starší verze technologií přístupu k datům Visual C++, naleznete v tématu [přístup k datům](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 
 ### <a name="javascript"></a>JavaScript
  [JavaScript v sadě Visual Studio](https://msdn.microsoft.com/library/hh334522.aspx) je prvotřídní jazyk pro vytváření aplikací pro různé platformy, aplikací pro UWP, cloudové služby, weby a webové aplikace. Bower, Grunt, Gulp, npm a NuGet v sadě Visual Studio můžete použít k instalaci vašich oblíbených knihoven JavaScriptu a databáze produktů. Připojení k úložišti Azure a službám stažením sady SDK z [web Azure](https://azure.microsoft.com/).  Edge.js je knihovna, která se připojuje ke zdrojům dat ADO.NET JavaScript na straně serveru (Node.js).
@@ -118,7 +118,7 @@ V sadě Visual Studio můžete vytvářet aplikace, které se připojují k dat�
 ## <a name="in-this-section"></a>V tomto oddílu
  [Instalace systémů databází, nástroje a ukázky](../data-tools/installing-database-systems-tools-and-samples.md) pojednává o tom, jak získat databáze produkty a rozšíření sady Visual Studio nebo ovladače, které je podporují a kde najít ukázkové databáze pro služby experimentování ve službě a výukové účely.
 
- [Visual Studio data tools pro .NET](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) popisuje způsob použití okna nástrojů sady Visual Studio k připojení ke zdrojům dat, vytvoření datových sad a modelů Entity Framework a data svázat ovládací prvky uživatelského rozhraní.
+ [Visual Studio data tools pro .NET](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) popisuje způsob použití okna nástrojů sady Visual Studio k připojení ke zdrojům dat, vytvoření datových sad a modelů Entity Framework a data svázat ovládací prvky uživatelského rozhraní.
 
 ## <a name="related-topics"></a>Související témata
  [Data, zařízení a Analytics](https://msdn.microsoft.com/data-and-devices) obsahuje úvod k inteligentnímu cloudu Microsoft, včetně sady Cortana Analytics Suite a podpory pro Internet věcí.
@@ -129,16 +129,16 @@ V sadě Visual Studio můžete vytvářet aplikace, které se připojují k dat�
 
  [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx) popisuje nástroje, které usnadňují návrh, průzkum, testování a nasazení aplikace připojené ke data a databáze.
 
- [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca) popisuje architekturu ADO.NET a jak spravovat data aplikací a využívat zdroje dat a XML pomocí třídy rozhraní ADO.NET.
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca) popisuje architekturu ADO.NET a jak spravovat data aplikací a využívat zdroje dat a XML pomocí třídy rozhraní ADO.NET.
 
  [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) popisuje způsob vytváření datových aplikací, které umožňují vývojářům programovat proti Koncepční model místo přímo na relační databázi.
 
- [4.5 služby WCF Data](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) popisuje způsob použití [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] pro nasazení datových služeb na webu nebo intranetu, které implementují [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+ [4.5 služby WCF Data](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) popisuje způsob použití [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] pro nasazení datových služeb na webu nebo intranetu, které implementují [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
- [Data v řešeních pro systém Office](http://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) obsahuje odkazy na témata, která popisují, jak fungují data v řešeních pro systém Office. To zahrnuje informace o programování orientovaném na schéma, ukládání dat do mezipaměti a přístupu k datům na straně serveru.
+ [Data v řešeních pro systém Office](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) obsahuje odkazy na témata, která popisují, jak fungují data v řešeních pro systém Office. To zahrnuje informace o programování orientovaném na schéma, ukládání dat do mezipaměti a přístupu k datům na straně serveru.
 
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) popisuje do integrované možnosti dotazu C# a Visual Basic a společný model pro dotazování na relačních databází, dokumenty XML, datové sady a kolekce v paměti.
+ [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) popisuje do integrované možnosti dotazu C# a Visual Basic a společný model pro dotazování na relačních databází, dokumenty XML, datové sady a kolekce v paměti.
 
  [Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md) Tento článek popisuje práci s funkcí rozhraní .NET Framework XML dat, ladění XSLT, XML a architektura dotaz XML.
 
- [Dokumenty a Data XML](http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380) přehled komplexního a integrovaného sadu tříd, které pracují s dokumenty XML a data v rozhraní .NET Framework.
+ [Dokumenty a Data XML](https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380) přehled komplexního a integrovaného sadu tříd, které pracují s dokumenty XML a data v rozhraní .NET Framework.

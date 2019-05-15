@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3f842d45df1525cb3f736019eeec52dd65b67aa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 45bd0720bfd16be2266bbdb56e962d1744ebbf84
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443733"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674863"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Správa sestavení a podepsání manifestu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ Podepisování silným názvem poskytuje softwarová součást globálně jedine
   
  Silný název se skládá z identity sestavení (jednoduchý textový název, číslo verze a informace o jazykové verzi), plus token veřejného klíče a digitální podpis.  
   
- Informace o podepisování sestavení v projektech Visual Basic a C# najdete v tématu [vytvoření a použití sestavení](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
+ Informace o podepisování sestavení v projektech Visual Basic a C# najdete v tématu [vytvoření a použití sestavení](https://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
- Informace o podepisování sestavení ve Vizuálu C++ projektů, naleznete v tématu [sestavení se silným názvem (podepisování sestavení) (C++vyhodnocovací)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc).  
+ Informace o podepisování sestavení ve Vizuálu C++ projektů, naleznete v tématu [sestavení se silným názvem (podepisování sestavení) (C++vyhodnocovací)](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc).  
   
 ## <a name="asset-types-and-signing"></a>Typy prostředků a podepisování  
  Můžete podepisovat manifesty aplikace a sestavení .NET. Patří mezi ně například:  
@@ -61,12 +61,12 @@ Podepisování silným názvem poskytuje softwarová součást globálně jedine
 > [!WARNING]
 > Vždy byste měli chránit vašemu souboru s klíčem s heslem někdo zabránit jeho použití. Klíče můžete zabezpečit také pomocí zprostředkovatele nebo úložiště certifikátů.  
   
- Může také odkazovat na klíč, který jste už vytvořili. Další informace o vytváření klíčů najdete v tématu [jak: Vytvoření páru veřejného a privátního klíče](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Může také odkazovat na klíč, který jste už vytvořili. Další informace o vytváření klíčů najdete v tématu [jak: Vytvoření páru veřejného a privátního klíče](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
- Pokud máte přístup pouze k veřejným klíčem, můžete použít zpoždění podepsání odložení přiřazení klíč. Povolit zpoždění podepsání tak, že vyberete **zpoždění podepsání** zaškrtávací políčko. Projekt se zpožděným podpisem se nespustí a nelze ho ladit. Však můžete přeskočit ověření během vývoje s použitím [Sn.exe (nástroj Strong Name)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) s `-Vr` možnost.  
+ Pokud máte přístup pouze k veřejným klíčem, můžete použít zpoždění podepsání odložení přiřazení klíč. Povolit zpoždění podepsání tak, že vyberete **zpoždění podepsání** zaškrtávací políčko. Projekt se zpožděným podpisem se nespustí a nelze ho ladit. Však můžete přeskočit ověření během vývoje s použitím [Sn.exe (nástroj Strong Name)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) s `-Vr` možnost.  
   
  Informace o podepisování manifestů naleznete v tématu [jak: Podepsání manifestů aplikace a nasazení](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Sestavení se silným názvem](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Sestavení se silným názvem (podepisování sestavení) (C++/CLI)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)
+ [Sestavení se silným názvem](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Sestavení se silným názvem (podepisování sestavení) (C++/CLI)](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)

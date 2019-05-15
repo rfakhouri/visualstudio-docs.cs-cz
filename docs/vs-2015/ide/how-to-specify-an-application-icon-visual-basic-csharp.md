@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eaffdfa5a5caaa9a200f14230a67cac72af96df8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6f4502bcc439d55e36dad43add4c5b9852be21bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435199"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685378"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Postupy: Určení ikony aplikace (Visual Basic, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,4 +46,4 @@ ms.locfileid: "63435199"
  [Stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Stránka aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Správa vlastností aplikace](../ide/application-properties.md)  
- [Postupy: Přidání nebo odebrání prostředků](http://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
+ [Postupy: Přidání nebo odebrání prostředků](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

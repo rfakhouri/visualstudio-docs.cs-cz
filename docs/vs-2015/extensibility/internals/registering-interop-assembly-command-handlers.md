@@ -11,23 +11,23 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cfb8b493190429f6f3a0a6295d65db2c151639c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d2822e9eef36806f5c251813925fb4244242519
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436615"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705817"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrace obslužných rutin příkazů definičních sestavení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Musíte zaregistrovat VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tak, aby integrované vývojové prostředí (IDE) směruje příkazy správně.  
   
- Ruční úpravou nebo pomocí souboru registrátora (.rgs) je možné aktualizovat registr. Další informace najdete v tématu [vytváření skriptů registrátoru](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+ Ruční úpravou nebo pomocí souboru registrátora (.rgs) je možné aktualizovat registr. Další informace najdete v tématu [vytváření skriptů registrátoru](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
  Tuto funkci pomocí Managed Package Framework (MPF) poskytuje <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> třídy.  
   
- [Příkaz referenční příručka pro formátování tabulky](http://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) prostředky jsou umístěny v nespravované satelitní knihovny DLL uživatelského rozhraní.  
+ [Příkaz referenční příručka pro formátování tabulky](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) prostředky jsou umístěny v nespravované satelitní knihovny DLL uživatelského rozhraní.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Registrace obslužná rutina příkazu VSPackage  
  VSPackage funguje jako obslužné rutiny pro uživatelské rozhraní (UI) – na základě příkazů vyžaduje položku registru s názvem po sady VSPackage `GUID`. Tato položka registru určuje umístění souboru prostředků sady VSPackage uživatelského rozhraní a nabídky prostředků v rámci tohoto souboru. Samotné položky registru je umístěna ve složce HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<verze >* \Menus, kde  *\<verze >* je verze [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], například 9.0.  

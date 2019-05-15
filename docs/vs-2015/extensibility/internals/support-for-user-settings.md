@@ -12,12 +12,12 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d83c90d7e94471374f0c882f3868d16c963e4490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80734d9859df2e06bc51d40e1fffa40c7d97c7a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440086"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691813"
 ---
 # <a name="support-for-user-settings"></a>Podpora pro uživatelská nastavení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ VSPackage může definovat jeden nebo více kategorií nastavení, které jsou s
   
  Položky registru, který se označuje jako bod vlastní nastavení a identifikátor GUID definuje kategorie nastavení na VSPackage. VSPackage může podporovat více kategorie nastavení, každý definovaný pomocí vlastního nastavení bodu.  
   
-- Implementace nastavení, které jsou založeny na sestavení vzájemné spolupráce (pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> rozhraní) by měl vytvořit vlastní nastavení bodu pomocí úpravy registru nebo pomocí skriptu registrátoru (souboru .rgs). Další informace najdete v tématu [vytváření skriptů registrátoru](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+- Implementace nastavení, které jsou založeny na sestavení vzájemné spolupráce (pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> rozhraní) by měl vytvořit vlastní nastavení bodu pomocí úpravy registru nebo pomocí skriptu registrátoru (souboru .rgs). Další informace najdete v tématu [vytváření skriptů registrátoru](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
 - Kód, který používá Managed Package Framework (MPF) by měl vytvořit vlastní nastavení bodů připojením <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> VSPackage pro každý bod vlastní nastavení.  
   
@@ -52,7 +52,7 @@ VSPackage může definovat jeden nebo více kategorií nastavení, které jsou s
   
  AlternateParent = CategoryName  
   
-|Název|Typ|Data|Popis|  
+|Name|Typ|Data|Popis|  
 |----------|----------|----------|-----------------|  
 |(Výchozí)|REG_SZ|Název vlastního nastavení bodu|Název klíče, `<CSPName`>, je nelokalizovaný název vlastního nastavení bodu.<br /><br /> Pro implementace podle MPF, je tím, že zkombinujete získat název klíče `categoryName` a `objectName` argumenty <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> konstruktor do `categoryName_objectName`.<br /><br /> Klíč může být prázdný nebo měl obsahovat ID odkazu na lokalizovaný řetězec v satelitní knihovně DLL. Tato hodnota pochází z `objectNameResourceID` argument <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> konstruktoru.|  
 |Balíček|REG_SZ|GUID|Identifikátor GUID sady VSPackage, která implementuje vlastního nastavení bodu.<br /><br /> Implementace založené na používání MPF <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> třídy, použijte konstruktoru `objectType` argument, který obsahuje sady VSPackage <xref:System.Type> a reflexe získat tuto hodnotu.|  

@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e31d177a8bda5435c2201701241638cb919cf9ec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446102"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687552"
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -192,7 +192,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
   
 5. Proveďte změny následujících vlastností:  
   
-   |Nastavení|Hodnota|
+   |Nastavení|Value|
    |-|-|  
    |Vzdálený příkaz|C:\remotetemp\mymfc.exe|  
    |Pracovní adresář|C:\remotetemp|  
@@ -283,7 +283,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
  Další informace najdete v tématu nápovědy vzdáleného ladění (stisknutím klávesy **F1** v okně vzdáleného ladicího programu, nebo klikněte na tlačítko **Nápověda / využití**). Další informace najdete [.NET změny vzdálené načítání symbolů v sadě Visual Studio 2012 a 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
 ## <a name="bkmk_winstoreAzure"></a> Vzdálené ladění pro aplikace z Windows Store a Azure  
- Informace o vzdáleném ladění s aplikacemi pro Windows Store naleznete v tématu [ladění a testování aplikací pro Windows Store ve vzdáleném zařízení z aplikace Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
+ Informace o vzdáleném ladění s aplikacemi pro Windows Store naleznete v tématu [ladění a testování aplikací pro Windows Store ve vzdáleném zařízení z aplikace Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Informace o ladění v Azure najdete v jednom z těchto témat:  
   
@@ -291,7 +291,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
   
 - [Ladění v rozhraní .NET back-end v sadě Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
-- Úvod do vzdáleného ladění na webech Azure ([1. část](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [2. část](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [3. část](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Úvod do vzdáleného ladění na webech Azure ([1. část](https://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [2. část](https://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [3. část](https://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)   

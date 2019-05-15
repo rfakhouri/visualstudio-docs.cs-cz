@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca1b84990ed2747e530a1a83a17e17b99f36b116
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6e349dd5bea4e0d89c31864960a5438d1e2b13f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777852"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684077"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Používání atributu DebuggerTypeProxy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Debuggertypeproxyattribute –] (assetId:///T:System.Diagnostics.DebuggerTypePro
   
  Pokud jako cíl v použití obecného typu `DebuggerTypeProxy`, je nutné použít tuto syntaxi. `DebuggerTypeProxy` Mechanismus parametry typu odvodí z nich za vás.  
   
- Další informace o typech otevřené a uzavřené v jazyce C# najdete v článku [specifikace jazyka C#](http://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), otevřete část 20.5.2 a uzavření typů.  
+ Další informace o typech otevřené a uzavřené v jazyce C# najdete v článku [specifikace jazyka C#](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), otevřete část 20.5.2 a uzavření typů.  
   
  Visual Basic nemá otevřeného typu syntaxe proto nelze provést totéž v jazyce Visual Basic. Místo toho musíte použít řetězec představující název otevřeného typu.  
   
@@ -65,4 +65,4 @@ Debuggertypeproxyattribute –] (assetId:///T:System.Diagnostics.DebuggerTypePro
   
 ## <a name="see-also"></a>Viz také  
  [Používání atributu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
-  [Rozšíření ladění pomocí atributů zobrazení ladicího programu](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+  [Rozšíření ladění pomocí atributů zobrazení ladicího programu](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

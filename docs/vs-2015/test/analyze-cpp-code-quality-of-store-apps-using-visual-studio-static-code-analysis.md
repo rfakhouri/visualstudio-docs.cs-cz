@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc9b13ce1de0464db353fa5935d14ad8c8b328d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442845"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686535"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analýza kvality kódu aplikací pro Store pomocí sady Visual Studio statickou analýzu kódu C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Nástroj pro analýzu kódu v edicích express sady Visual Studio prozkoumá váš kód pro sadu běžné problémy a porušování programovacím vhodné. Upozornění analýzy kódu se liší od kompilátoru chyby a upozornění, protože analýza kódu hledá vzory v konkrétním kódu, které jsou platné, ale přesto vytvořit problémy pro vy nebo ostatní uživatelé, kteří používají váš kód. Analýzy kódu můžete také vyhledat chyby v kódu, které je obtížné vyhledat pomocí testování. Spuštění nástroje Analýza kódu v pravidelných intervalech během procesu vývoje můžete zvýšit tak kvalitu dokončené aplikace.
 
 > [!NOTE]
-> V sadě Visual Studio Ultimate, Visual Studio Premium a Visual Studio Professional můžete použít plnou funkčnost nástroje code analysis. Zobrazit [analýza kvality aplikace pomocí nástrojů pro analýzu kódu](http://msdn.microsoft.com/library/dd264897.aspx) v knihovně MSDN.
+> V sadě Visual Studio Ultimate, Visual Studio Premium a Visual Studio Professional můžete použít plnou funkčnost nástroje code analysis. Zobrazit [analýza kvality aplikace pomocí nástrojů pro analýzu kódu](https://msdn.microsoft.com/library/dd264897.aspx) v knihovně MSDN.
 
 ## <a name="BKMK_Run"></a> Spuštění analýzy kódu
  Spuštění analýzy kódu pro řešení sady Visual Studio:
@@ -116,7 +116,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |                       [C6504](../code-quality/c6504.md)                        |                                              Null na typech bez ukazatele                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               Vlastnost MustCheck na typ Void                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      Velikost vyrovnávací paměti na typech bez ukazatele nebo pole                                      |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Null Neshoda v přístupu přes ukazatel nula                                       |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Null Neshoda v přístupu přes ukazatel nula                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           K zápisu na konstantě                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Návratová hodnota použita na předpokladu                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        NULL byl ukončen na typech bez ukazatele                                         |
@@ -127,11 +127,11 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |                       [C6516](../code-quality/c6516.md)                        |                                          Atribut nemá žádné vlastnosti                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Platná velikost pro vyrovnávací paměť bez možnosti čtení                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Zapisovatelná velikost pro vyrovnávací paměť, Nezapisovatelný                                      |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Neplatná velikost řetězce přistoupit přes ukazatel                                        |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Neplatná velikost řetězce přistoupit přes ukazatel                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Typ řetězec neplatné velikosti                                            |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Neplatná velikost parametru řetězce                                         |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Neplatná velikost parametru řetězce                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Neplatná velikost řetězce-nedosažitelná oblast                                    |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Typ vyrovnávací paměti pro řetězec neplatné velikosti                                        |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Typ vyrovnávací paměti pro řetězec neplatné velikosti                                        |
 |                       [C6527](../code-quality/c6527.md)                        |              Neplatná Poznámka: Vlastnost 'NeedsRelease' nesmí být použita pro hodnoty typu void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Nerozpoznaný styl řetězce formátu                                        |
 |                       [C6540](../code-quality/c6540.md)                        | Použití poznámek atributu na této funkci způsobí neplatnost všech existujících poznámek __declspec  |

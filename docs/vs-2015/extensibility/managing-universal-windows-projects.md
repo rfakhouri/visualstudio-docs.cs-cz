@@ -8,17 +8,17 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 08d88ce08c6c91cbf46bcc6d15cbf098d61e604d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412336"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679933"
 ---
 # <a name="managing-universal-windows-projects"></a>Správa projektů univerzálních aplikací pro Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windows 8.1 a Windows Phone 8.1, umožňuje vývojářům používat kód a další prostředky na obě platformy. Sdílený kód a prostředky se ukládají do sdíleného projektu, zatímco kód specifický pro platformu a prostředky jsou uloženy v samostatné projekty, jeden pro Windows a druhou pro Windows Phone. Další informace o univerzálních aplikací pro Windows najdete v tématu [univerzálních aplikací pro Windows](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Rozšíření sady Visual Studio, které spravují projekty je třeba si uvědomit, že projekty univerzálních aplikací pro Windows mají strukturu, která se liší od aplikace jednu platformu. Tento návod ukazuje, jak procházet sdíleného projektu a správě sdílených položek.  
+Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windows 8.1 a Windows Phone 8.1, umožňuje vývojářům používat kód a další prostředky na obě platformy. Sdílený kód a prostředky se ukládají do sdíleného projektu, zatímco kód specifický pro platformu a prostředky jsou uloženy v samostatné projekty, jeden pro Windows a druhou pro Windows Phone. Další informace o univerzálních aplikací pro Windows najdete v tématu [univerzálních aplikací pro Windows](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Rozšíření sady Visual Studio, které spravují projekty je třeba si uvědomit, že projekty univerzálních aplikací pro Windows mají strukturu, která se liší od aplikace jednu platformu. Tento návod ukazuje, jak procházet sdíleného projektu a správě sdílených položek.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38239bd431f3e66e1a694361f3727c843fbf29d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0459168da627b8e67ad669486b70eb7758118d92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558460"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688194"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Práce s datovými sadami ve vícevrstvých aplikacích
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Vícevrstvé datové aplikace * jsou datově orientovaných aplikací, které js
  [Návod: Vytvoření vícevrstvé datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  Obsahuje podrobné pokyny pro vytvoření typové datové sady a oddělení kódu TableAdapter a datové sady do více projektů.  
   
- [Návod: Přidání ověřování do vícevrstvé datové aplikace](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Návod: Přidání ověřování do vícevrstvé datové aplikace](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
  Obsahuje podrobné pokyny pro přidání ověřování do aplikace, který byl vytvořen v návodu vícevrstvých datových aplikací.  
   
 ## <a name="reference"></a>Odkaz  
@@ -71,4 +71,4 @@ Vícevrstvé datové aplikace * jsou datově orientovaných aplikací, které js
 - [Hierarchická aktualizace](../data-tools/hierarchical-update.md)   
 - [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
 - [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
-- [N-vrstvé a vzdálené aplikace s LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+- [N-vrstvé a vzdálené aplikace s LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4985196feb8c2ddd5996c51210e39f9e503e953f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412310"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675169"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
 </asp:ScriptManager>
 ```
 
- Technologie IntelliSense také podporuje soubory skriptu, které jsou vloženy jako prostředky v sestavení ve webových aplikacích technologie ASP.NET AJAX. Další informace o integrovaných prostředků skriptu naleznete v tématu [názorný postup: Embedding a JavaScript File jako prostředek v sestavení](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
+ Technologie IntelliSense také podporuje soubory skriptu, které jsou vloženy jako prostředky v sestavení ve webových aplikacích technologie ASP.NET AJAX. Další informace o integrovaných prostředků skriptu naleznete v tématu [názorný postup: Embedding a JavaScript File jako prostředek v sestavení](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 #### <a name="ReferenceDirectives"></a> Odkazované direktivy
  A `reference` direktiva umožňuje [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] k vytvoření vztahu mezi skript, který právě upravujete a jinými skripty. `reference` Umožňuje zahrnout soubor skriptu do kontextu skriptování aktuálního souboru skriptu. Technologie IntelliSense tak může při kódování odkazovat na externě definované funkce, typy a pole.
@@ -284,5 +284,5 @@ Technologie IntelliSense umožňuje napsat kód rychleji a s menším množství
 - [Doplňování výrazů pro identifikátory](../ide/statement-completion-for-identifiers.md)
 - [Dokumentační komentáře XML](../ide/xml-documentation-comments-javascript.md)
 - [O objektovém modelu DHTML](http://go.microsoft.com/fwlink/?LinkID=92344)
-- [Seznam členů](http://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [Seznam členů](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [Atribut SRC &#124; vlastnost src](http://go.microsoft.com/fwlink/?LinkId=92345)

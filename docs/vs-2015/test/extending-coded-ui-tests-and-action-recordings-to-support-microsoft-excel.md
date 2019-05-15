@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61c802ebca49c15a3a7baa785400f90621a27e9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a85676fca972bb0d2d91f5ffd7c7cbf95bfc68c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416470"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686388"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Testovací rozhraní pro programové testy uživatelského rozhraní a zaznamen�
 ### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft doplněk Excelu: ExcelCodedUIAddinHelper  
  Tento projekt obsahuje doplněk, který běží v procesu Excelu. Zobrazit [doplňku ukázkové aplikace Excel pro programové testování uživatelského rozhraní](../test/sample-excel-add-in-for-coded-ui-testing.md) stručný přehled projektu doplňku.  
   
- Další informace najdete v tématu [názorný postup: Vytvoření vašeho prvního doplňku VSTO pro Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
+ Další informace najdete v tématu [názorný postup: Vytvoření vašeho prvního doplňku VSTO pro Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
   
 ### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Uživatelské rozhraní Excelu komunikace: ExcelUIcommunicationHelper  
  Tento projekt obsahuje `IExcelUICommunication` rozhraní a třídy informace, které se používají k předávání dat mezi kódované UI Testing Framework a Excel. Další informace najdete v tématu [ukázka rozhraní Komunikátoru Excel](../test/sample-excel-communicator-interface.md).  

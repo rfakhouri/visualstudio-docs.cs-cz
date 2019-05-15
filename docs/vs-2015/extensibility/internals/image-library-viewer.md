@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062595"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685574"
 ---
 # <a name="image-library-viewer"></a>Prohlížeč knihovny obrázků
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -130,7 +130,7 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|Uri|[Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) používání aplikace pro: / / / / / autority<br /><br /> Odkaz na prostředek – absolutní komponenty<br /><br /> – Cesta k souboru, který obsahuje nativní prostředky|  
+|Uri|[Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) používání aplikace pro: / / / / / autority<br /><br /> Odkaz na prostředek – absolutní komponenty<br /><br /> – Cesta k souboru, který obsahuje nativní prostředky|  
 |Pozadí|[Volitelné] Určuje, co na pozadí, který zdroj je určena pro použití typu.<br /><br /> Může být jeden z následujících akcí:<br /><br /> - *Světlý*: Zdroj lze použít v světla na pozadí.<br /><br /> - *Tmavě*: Zdroj lze použít v tmavém pozadí.<br /><br /> - *HighContrast*: Zdroj lze použít v jakékoli na pozadí v režimu vysokého kontrastu.<br /><br /> - *HighContrastLight*: Zdroj lze použít v světla na pozadí v režimu vysokého kontrastu.<br /><br /> -*HighContrastDark*: Zdroj lze použít v tmavém pozadí v režimu vysokého kontrastu.<br /><br /> Pokud **pozadí** atribut je vynechán, zdroj je použít na jakékoli pozadí.<br /><br /> Pokud **pozadí** je *světla*, *tmavě*, *HighContrastLight*, nebo *HighContrastDark*, Nikdy se převrátí zdroje barvy. Pokud **pozadí** je vynechán nebo nastaven na *funkce Vysoký kontrast*, inverzi barev zdroji se řídí na obrázku **AllowColorInversion** atribut.|  
   
  A \<zdroj > prvek může mít nastavený právě jeden z následující volitelné dílčí prvky:  

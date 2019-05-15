@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a2a7dac47731626407b34e49a3e0085d1a91b4d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0292bf5b62bf150a598b4c750929ba6928216a50
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108565"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691259"
 ---
 # <a name="debugging-linq"></a>Ladění LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60108565"
 ## <a name="BKMK_ViewingLINQResults"></a> Zobrazení výsledků LINQ  
  Můžete zobrazit výsledek příkazu LINQ pomocí datových tipů, okna kukátka a dialogového okna rychlého kukátka. Při použití okna zdroje můžete pozastavíte ukazatel myši na dotazu v okně zdroje a zobrazí se datatip. Můžete zkopírovat proměnnou LINQ a vložte ho do okna kukátka nebo dialogového okna rychlého kukátka.  
   
- V LINQ dotaz není vyhodnocen při vytváření nebo deklaraci, ale pouze v případě, že tento dotaz se použije. Proto dotaz nemá hodnotu, dokud není vyhodnocen. Úplný popis vytváření a vyhodnocování dotazu naleznete v tématu [Úvod do dotazů LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) nebo [zápis svůj první dotaz LINQ](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
+ V LINQ dotaz není vyhodnocen při vytváření nebo deklaraci, ale pouze v případě, že tento dotaz se použije. Proto dotaz nemá hodnotu, dokud není vyhodnocen. Úplný popis vytváření a vyhodnocování dotazu naleznete v tématu [Úvod do dotazů LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) nebo [zápis svůj první dotaz LINQ](https://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
   
  Pokud chcete zobrazit výsledky dotazu, ladicí program ho musí vyhodnotit. Toto implicitní hodnocení, ke kterému dochází při zobrazení výsledku dotazu LINQ v ladicím programu, má některé efekty, které byste měli zvážit:  
   
@@ -50,7 +50,7 @@ ms.locfileid: "60108565"
  V dotazech LINQ to SQL je kód predikátu mimo kontrolu ladicího programu. Proto je nelze krokovat s vnořením přistoupit predikovanému kódu. Jakýkoli dotaz, který kompiluje na strom výrazu vytvoří kód, který je mimo kontrolu ladicího programu.  
   
 ### <a name="stepping-in-visual-basic"></a>Krokování v jazyce Visual Basic  
- Když provádíte krokování pomocí programu Visual Basic a ladicí program zaznamená deklaraci dotazu, nepřikročí deklaraci, ale označí celou deklaraci jako jeden příkaz. K tomuto chování dochází, protože dotaz není vyhodnocen, dokud není volán. Další informace najdete v tématu [Úvod do LINQ v JAZYKU Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984).  
+ Když provádíte krokování pomocí programu Visual Basic a ladicí program zaznamená deklaraci dotazu, nepřikročí deklaraci, ale označí celou deklaraci jako jeden příkaz. K tomuto chování dochází, protože dotaz není vyhodnocen, dokud není volán. Další informace najdete v tématu [Úvod do LINQ v JAZYKU Visual Basic](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984).  
   
  Pokud projdete následující ukázkový kód, ladicí program zvýrazní deklaraci dotazu nebo vytvoření dotazu jako jeden příkaz.  
   
@@ -117,8 +117,8 @@ End Function
  V jazyce Visual Basic můžete upravit a pokračovat na kód jiný než LINQ, dokonce i v metodě, která obsahuje dotaz LINQ. Můžete přidat nebo odebrat kód před příkazem LINQ i v případě, že změny ovlivní počet řádků v dotazu LINQ. V jazyce Visual Basic prostředí ladění pro kód jiný než LINQ zůstává stejná jako před zavedením LINQ. Nelze změnit, přidat nebo odebrat dotaz LINQ, ale pokud chcete zastavit ladění, aby se změny projevily.  
   
 ## <a name="see-also"></a>Viz také  
- [Ladění SQL](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
- [Vedlejší efekty a výrazy](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
+ [Ladění SQL](https://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
+ [Vedlejší efekty a výrazy](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
  [Správa výjimek pomocí ladicího programu](../debugger/managing-exceptions-with-the-debugger.md)   
- [Úvod do dotazů LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
- [Úvod do LINQ v JAZYKU Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)
+ [Úvod do dotazů LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
+ [Úvod do LINQ v JAZYKU Visual Basic](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)

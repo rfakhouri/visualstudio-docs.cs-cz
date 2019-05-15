@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795055"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686761"
 ---
 # <a name="debugger-windows"></a>Ladicí program Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Můžete otevřít většinu oknech ladicího programu během ladění programu.
 |Nastavení výjimek|CTRL + ALT + E|[Správa výjimek pomocí ladicího programu](../debugger/managing-exceptions-with-the-debugger.md)|  
 |Výstup|CTRL + ALT + O|[Okno Výstup](../ide/reference/output-window.md)|  
 |Vlákna GPU|-|[Postupy: Použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md)|  
-|Úlohy|PEV.CENU: + SHIFT + D, K|[Použití okna úloh](../debugger/using-the-tasks-window.md)|  
+|Úkoly|PEV.CENU: + SHIFT + D, K|[Použití okna úloh](../debugger/using-the-tasks-window.md)|  
 |Paralelní zásobníky|PEV.CENU: + SHIFT + D, S|[Použití okna Paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)|  
 |Paralelní sledování|PEV.CENU: + SHIFT + D, (1, 2, 3, 4)|[Použití okna Paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)|  
 |Sledování|CTRL + ALT + W, (1, 2, 3, 4)|[Okna Kukátko a Rychlé kukátko](../debugger/watch-and-quickwatch-windows.md)|  
 |QuickWatch|SHIFT+F9|[Okna Kukátko a Rychlé kukátko](../debugger/watch-and-quickwatch-windows.md)|  
-|Auto|CTRL + ALT + V, A|[Proměnné Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|Místní hodnoty|CTRL + ALT + V, L|[Proměnné Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Auto|CTRL + ALT + V, A|[Proměnné Windows](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Místní hodnoty|CTRL + ALT + V, L|[Proměnné Windows](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Okamžité|CTRL + ALT + I|[Příkazové podokno](../ide/reference/immediate-window.md)|  
 |Interaktivní ladění Pythonu|SHIFT+ALT+I|[Začínáme s PTVS: Interaktivní Python](../python/getting-started-with-ptvs-interactive-python.md)|  
 |Konzola jazyka JavaScript|CTRL + ALT + V, C|[Rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md)|  

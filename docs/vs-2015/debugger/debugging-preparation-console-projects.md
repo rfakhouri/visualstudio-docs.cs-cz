@@ -18,17 +18,17 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 438e619be3e7650961709ef8fce8d69304d5c6ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5ac87f6c5ef5fcf9fc7ca5532fe7436dedb8ba97
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793416"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691217"
 ---
 # <a name="debugging-preparation-console-projects"></a>Příprava ladění: Projekty konzoly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Příprava na ladění projektu konzoly je podobný připravuje se ladit projekt Windows, se několik dalších důležitých informací. Další informace najdete v tématu [formulářových aplikací Windows](../debugger/debugging-preparation-windows-forms-applications.md), a [Příprava ladění: Windows Forms aplikace (.NET)](http://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Z důvodu podobnosti všechny konzolové aplikace Toto téma popisuje následující typy projektů:  
+Příprava na ladění projektu konzoly je podobný připravuje se ladit projekt Windows, se několik dalších důležitých informací. Další informace najdete v tématu [formulářových aplikací Windows](../debugger/debugging-preparation-windows-forms-applications.md), a [Příprava ladění: Windows Forms aplikace (.NET)](https://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Z důvodu podobnosti všechny konzolové aplikace Toto téma popisuje následující typy projektů:  
   
 - Konzolovou aplikaci C#  
   

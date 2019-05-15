@@ -11,14 +11,14 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6643c52ff8e5801c562524e99c4e3f03c00f74b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764409"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687489"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Nová generace projektů: Pod pokličkou část 2
+# <a name="new-project-generation-under-the-hood-part-two"></a>Nová generace projektů: Pod kapotou, část 2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 V [nová generace projektů: Pod pokličkou, část jednoho](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) jsme viděli jak **nový projekt** pole se vyplní dialogového okna. Předpokládejme, že jste vybrali **aplikace Visual C# Windows**, vyplněné **název** a **umístění** textová pole a kliknutí na OK.  
@@ -26,7 +26,7 @@ V [nová generace projektů: Pod pokličkou, část jednoho](../../extensibility
 ## <a name="generating-the-solution-files"></a>Generují se soubory řešení  
  Výběr šablony aplikace přesměruje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se rozzipují a otevřou odpovídající soubor .vstemplate a spusťte šablonu a interpretovat příkazy XML v tomto souboru. Tyto příkazy vytvoří projekty a položky projektu v rámci nového nebo existujícího řešení.  
   
- Šablona rozbalí zdrojové soubory, volá se, šablony položek ze stejné složky ZIP, který obsahuje soubor .vstemplate. Šablona zkopíruje tyto soubory do nového projektu přizpůsobení je odpovídajícím způsobem. Přehled šablon projektů a položek, naleznete v tématu [NIB: Šablony sady Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Šablona rozbalí zdrojové soubory, volá se, šablony položek ze stejné složky ZIP, který obsahuje soubor .vstemplate. Šablona zkopíruje tyto soubory do nového projektu přizpůsobení je odpovídajícím způsobem. Přehled šablon projektů a položek, naleznete v tématu [NIB: Šablony sady Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
   
 ### <a name="template-parameter-replacement"></a>Nahrazení parametru šablony  
  Když šablona zkopíruje do nového projektu šablony položky, nahradí řetězce pro přizpůsobení souboru žádné parametry šablony. Parametr šablony je speciální token, který je před a za nímž následuje znak dolaru, třeba $date$.  
@@ -156,5 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Nová generace projektů: Pod pokličkou část 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Nová generace projektů: Pod kapotou, část 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

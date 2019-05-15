@@ -112,12 +112,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 87b8913a95203d082a76e8b18a92d2f509cace16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ca9ff0678ba2c7abafa0d988efa09437ccd27dca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446175"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687561"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Nastavení projektu pro konfiguraci ladění jazyka C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -141,7 +141,7 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C nebo Visu
 |**Argumenty příkazového** (ladicí program místní Windows a Windows vzdálený ladicí program)|-Určuje argumenty pro příkaz zadaný dříve.<br /><br /> V tomto poli můžete použít následující operátory přesměrování:<br /><br /> < `file`<br /> Čte stdin ze souboru.<br /><br /> > `file`<br /> Zapíše hodnotu stdout do souboru.<br /><br /> >> `file`<br /> Připojí stdout do souboru.<br /><br /> 2> `file`<br /> Zapíše hodnotu stderr do souboru.<br /><br /> 2>> `file`<br /> Připojí stderr do souboru.<br /><br /> 2> &1<br /> Odešle výstup stderr (2) do stejného umístění jako stdout (1).<br /><br /> 1> &2<br /> Odešle stdout (1) výstup do stejného umístění jako stderr (2).<br /><br /> Ve většině případů jsou tyto operátory použitelné pouze pro konzolové aplikace.|  
 |**Pracovní adresář**|Určuje pracovní adresář laděného programu, relativně vzhledem k adresáři projektu, kde je umístěn váš soubor EXE. Pokud toto pole ponecháte prázdné, pracovní adresář je adresář projektu. Pro vzdálené ladění bude adresář projektu na vzdáleném serveru.|  
 |**Připojit** (ladicí program místní Windows a Windows vzdálený ladicí program)|Určuje, zda chcete spustit nebo připojit k aplikaci. Výchozí nastavení je Ne.|  
-|**Název vzdáleného severu** (Windows vzdálený ladicí program)|Určuje název počítače (kromě vašeho), na kterém chcete ladit aplikace.<br /><br /> Makro sestavení RemoteMachine je nastavena na hodnotu této vlastnosti; Další informace najdete v tématu [Macros for Build Commands and Properties](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).|  
+|**Název vzdáleného severu** (Windows vzdálený ladicí program)|Určuje název počítače (kromě vašeho), na kterém chcete ladit aplikace.<br /><br /> Makro sestavení RemoteMachine je nastavena na hodnotu této vlastnosti; Další informace najdete v tématu [Macros for Build Commands and Properties](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).|  
 |**Připojení** (Windows vzdálený ladicí program)|Umožňuje přepínat mezi typy standard a bez ověřování připojení pro vzdálené ladění. Zadejte název vzdáleného počítače v **název vzdáleného serveru** pole. Typy připojení patří:<br /><br /> -   **Vzdálený s ověřováním Windows**<br />-   **Vzdálený bez ověřování (pouze nativní)**<br /><br /> **Poznámka:** vzdálené ladění bez ověřování může zanechat vzdálený počítač zranitelné vůči narušení zabezpečení. Režim ověřování Windows je bezpečnější.<br /><br /> Další informace najdete v tématu [nastavení vzdáleného ladění](../debugger/remote-debugging.md).|  
 |**Adresa URL operace HTTP** (Web ladicí program služby a ladicí program webového prohlížeče)|Určuje adresu URL, kde je umístěn projekt, který ladíte.|  
 |**Typ ladicího programu**|Určuje typ ladicího programu, který se má použít: **Pouze nativní**, **pouze spravované**, **pouze GPU**, **smíšený**, **automaticky** (výchozí), nebo **skript**.<br /><br /> -   **Pouze nativní** je pro nespravovaný kód jazyka C++.<br />-   **Režim pouze spravovaný** je pro kód, který běží v rámci common language runtime (spravovaný kód).<br />-   **Smíšené** vyvolá ladicí programy pro spravovaný i nespravovaný kód.<br />-   **Automatické** Určuje typ ladicího programu na základě kompilátoru a informací souboru EXE.<br />-   **Skript** vyvolá ladicí program skriptů.<br />-   **Pouze GPU** je pro kód C++ AMP, který běží na GPU zařízení nebo v rasterizéru referenčního rozhraní DirectX. Zobrazit [ladění kódu GPU](../debugger/debugging-gpu-code.md).|  
@@ -159,7 +159,7 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C nebo Visu
   
 |Nastavení|Popis|  
 |-------------|-----------------|  
-|**Formát ladicích informací** ([/Z7, / Zd, Zi, /ZI](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8))|Určuje typ ladicích informací vytvářených pro projekt.<br /><br /> Výchozí možnost (/ZI) vytvoří databázi programu (PDB) ve formátu kompatibilním upravit a pokračovat. Další informace najdete v tématu [/Z7, / Zd, / zi, /ZI (formát informací o ladění)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).|  
+|**Formát ladicích informací** ([/Z7, / Zd, Zi, /ZI](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8))|Určuje typ ladicích informací vytvářených pro projekt.<br /><br /> Výchozí možnost (/ZI) vytvoří databázi programu (PDB) ve formátu kompatibilním upravit a pokračovat. Další informace najdete v tématu [/Z7, / Zd, / zi, /ZI (formát informací o ladění)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).|  
   
 ### <a name="cc-folder-optimization-category"></a>Složka C/C++ (optimalizační kategorie)  
   
@@ -171,19 +171,19 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C nebo Visu
   
 |Nastavení|Popis|  
 |-------------|-----------------|  
-|**Generovat ladicí informace** ([/DEBUG](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103))|Přikáže linkeru, aby zahrnul informace o ladění, který bude mít formát určený pomocí/Z7, / Zd, Zi nebo/zi.|  
-|**Generovat soubor databáze programu** ([/PDB:name](http://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d))|Zadejte název souboru PDB do tohoto pole. Je nutné vybrat ZI nebo /Zi pro formát informací o ladění.|  
-|**Odstranit privátní symboly** ([/PDBSTRIPPED:filename](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55))|Pokud nechcete zahrnout privátní symboly do souboru PDB, zadejte název souboru PDB do tohoto pole. Tato volba vytvoří druhý soubor databáze (PDB) programu při vytváření bitové kopie programu s žádným z kompilátoru nebo linkeru, které vytvářejí soubor PDB, např. / Debug, / Z7, / zd. Nebo/zi. Tento druhý soubor PDB vynechává symboly, které není vhodné k odeslání vašich zákazníků. Další informace najdete v tématu [/PDBSTRIPPED (odstranění privátních symbolů)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
-|**Generovat soubor mapy** ([/MAP](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63))|Přikáže linkeru, aby generoval soubor mapy během propojení. Výchozí nastavení je Ne. Další informace najdete v tématu [parametr/map (generování souboru mapování)](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).|  
-|**Název souboru mapy** ([/MAP:](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)*název*)|Pokud vyberete možnost Generovat soubor mapy, můžete zadat soubor mapy v tomto poli. Další informace najdete v tématu [parametr/map (generování souboru mapování)](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).|  
-|**Mapovat exporty** ([/MAPINFO:EXPORTS](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|Obsahuje exportované funkce v souboru mapy. Výchozí nastavení je Ne. Další informace najdete v tématu [parametr/MapInfo (zahrnout informace do souboru mapování)](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b).|  
-|**Laditelné sestavení** ([/assemblydebug](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|Určuje nastavení pro Linker/assemblydebug – možnost. Možné hodnoty jsou následující:<br /><br /> -   **Nevysílat žádný laditelný atribut**.<br />-   **Modul runtime sledování a zakázat optimalizace (/ ASSEMBLYDEBUG)**. Toto je výchozí nastavení<br />-   **Žádný modul runtime sledování a povolit optimizations(/ASSEMBLYDEBUG:DISABLE)**.<br />-   **\<Zdědit z nadřazené nebo projektu výchozích nastavení >**.<br />-Další informace najdete v tématu [/assemblydebug (přidání atributu DebuggableAttribute)](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).|  
+|**Generovat ladicí informace** ([/DEBUG](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103))|Přikáže linkeru, aby zahrnul informace o ladění, který bude mít formát určený pomocí/Z7, / Zd, Zi nebo/zi.|  
+|**Generovat soubor databáze programu** ([/PDB:name](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d))|Zadejte název souboru PDB do tohoto pole. Je nutné vybrat ZI nebo /Zi pro formát informací o ladění.|  
+|**Odstranit privátní symboly** ([/PDBSTRIPPED:filename](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55))|Pokud nechcete zahrnout privátní symboly do souboru PDB, zadejte název souboru PDB do tohoto pole. Tato volba vytvoří druhý soubor databáze (PDB) programu při vytváření bitové kopie programu s žádným z kompilátoru nebo linkeru, které vytvářejí soubor PDB, např. / Debug, / Z7, / zd. Nebo/zi. Tento druhý soubor PDB vynechává symboly, které není vhodné k odeslání vašich zákazníků. Další informace najdete v tématu [/PDBSTRIPPED (odstranění privátních symbolů)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
+|**Generovat soubor mapy** ([/MAP](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63))|Přikáže linkeru, aby generoval soubor mapy během propojení. Výchozí nastavení je Ne. Další informace najdete v tématu [parametr/map (generování souboru mapování)](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).|  
+|**Název souboru mapy** ([/MAP:](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)*název*)|Pokud vyberete možnost Generovat soubor mapy, můžete zadat soubor mapy v tomto poli. Další informace najdete v tématu [parametr/map (generování souboru mapování)](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).|  
+|**Mapovat exporty** ([/MAPINFO:EXPORTS](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|Obsahuje exportované funkce v souboru mapy. Výchozí nastavení je Ne. Další informace najdete v tématu [parametr/MapInfo (zahrnout informace do souboru mapování)](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b).|  
+|**Laditelné sestavení** ([/assemblydebug](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|Určuje nastavení pro Linker/assemblydebug – možnost. Možné hodnoty jsou následující:<br /><br /> -   **Nevysílat žádný laditelný atribut**.<br />-   **Modul runtime sledování a zakázat optimalizace (/ ASSEMBLYDEBUG)**. Toto je výchozí nastavení<br />-   **Žádný modul runtime sledování a povolit optimizations(/ASSEMBLYDEBUG:DISABLE)**.<br />-   **\<Zdědit z nadřazené nebo projektu výchozích nastavení >**.<br />-Další informace najdete v tématu [/assemblydebug (přidání atributu DebuggableAttribute)](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).|  
   
  Můžete změnit tato nastavení ve složce vlastnosti konfigurace (kategorie ladění) programově pomocí rozhraní Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings. Další informace naleznete v tématu <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění nativního kódu](../debugger/debugging-native-code.md)   
  [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   
- [Vytváření a spravování projektů Visual C++](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)   
- [/ ASSEMBLYDEBUG (přidání atributu DebuggableAttribute)](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)   
- [Běžná makra pro příkazy a vlastnosti sestavení](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
+ [Vytváření a spravování projektů Visual C++](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)   
+ [/ ASSEMBLYDEBUG (přidání atributu DebuggableAttribute)](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)   
+ [Běžná makra pro příkazy a vlastnosti sestavení](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)

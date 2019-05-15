@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083956"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679837"
 ---
 # <a name="signing-in-to-visual-studio"></a>Přihlášení k sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Můžete přizpůsobit a optimalizovat vaše zkušenosti s vývojem v sadě Visu
 
 - **Uděluje přístup k široké škále výhod** z programu Visual Studio Dev Essentials, včetně bezplatného softwaru, školení, podpory a další. Zobrazit [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) Další informace.
 
-- **Synchronizuje vaše nastavení sady Visual Studio** – nastavení, jako jsou klávesové zkratky, přizpůsobení rozložení oken a barevný motiv, se použije ihned při přihlášení k sadě Visual Studio na libovolném zařízení. Zobrazit [synchronizovaná nastavení v sadě Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Synchronizuje vaše nastavení sady Visual Studio** – nastavení, jako jsou klávesové zkratky, přizpůsobení rozložení oken a barevný motiv, se použije ihned při přihlášení k sadě Visual Studio na libovolném zařízení. Zobrazit [synchronizovaná nastavení v sadě Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
 - **Trvale odemkne Visual Studio Express Edition** – můžete použít libovolná edice sady Visual Studio Express pro, jak dlouho budete chtít, namísto na zkušební dobu 30 dnů.
 

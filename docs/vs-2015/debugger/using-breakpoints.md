@@ -41,12 +41,12 @@ caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa7f571a797df6ecd7a2967ba1cefa3d99a0463b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cadaf069bb53c9d212e6de5ebd6ea2cf9efe7bb1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064567"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684485"
 ---
 # <a name="using-breakpoints"></a>Použití zarážek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ Můžete nastavit zarážky, pokud chcete zastavit spuštění ladicího program
    Podmínka může být libovolný platný výraz, který je rozpoznán v ladicím programu. Další informace o zobrazení platných výrazů naleznete v tématu [výrazy v ladicím programu](../debugger/expressions-in-the-debugger.md).  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Pomocí ID objektů v podmínky zarážky (C# a F#)  
- Existují situace, kdy budete chtít sledovat chování konkrétního objektu. můžete třeba chtít zjistit, proč byl objekt vložen více než jednou do kolekce. V C# a F#, můžete vytvořit objekt ID pro určité instance [referenční typy](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) a jejich použití v podmínky zarážky. ID objektu je generována modulem common language runtime (CLR) ladění služeb a přidružená k objektu.  Pokud chcete vytvořit ID objektu, postupujte takto:  
+ Existují situace, kdy budete chtít sledovat chování konkrétního objektu. můžete třeba chtít zjistit, proč byl objekt vložen více než jednou do kolekce. V C# a F#, můžete vytvořit objekt ID pro určité instance [referenční typy](https://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) a jejich použití v podmínky zarážky. ID objektu je generována modulem common language runtime (CLR) ladění služeb a přidružená k objektu.  Pokud chcete vytvořit ID objektu, postupujte takto:  
   
 1. Nastavte zarážku v kódu nějakou dobu, po vytvoření objektu.  
   

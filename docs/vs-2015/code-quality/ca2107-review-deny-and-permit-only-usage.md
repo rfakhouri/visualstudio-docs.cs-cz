@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: d6ba41720ff97ffe9a085774477b2a9ee6426dbe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082149"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687385"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Zkontrolujte použití čistého odepření a povolení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "60082149"
  Metoda obsahuje kontrolu zabezpečení, která určuje akce zabezpečení PermitOnly nebo odepřít.
 
 ## <a name="rule-description"></a>Popis pravidla
- [Použití metody PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) a <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> akce zabezpečení by měly být používány pouze těmi, kdo mají pokročilé znalosti o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zabezpečení. Kód používající tyto bezpečnostní akce by měl být podroben revizi zabezpečení.
+ [Použití metody PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) a <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> akce zabezpečení by měly být používány pouze těmi, kdo mají pokročilé znalosti o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zabezpečení. Kód používající tyto bezpečnostní akce by měl být podroben revizi zabezpečení.
 
  Odepřít mění výchozí chování procházení zásobníku, ke které dochází v reakci na požadavek zabezpečení. To vám umožní určit oprávnění, která nesmí být po dobu trvání metodu zamítnutí bez ohledu na skutečnou oprávnění volajících v zásobníku volání. Pokud procházení zásobníku zjistí metodu, která je zabezpečena pomocí Odepřít a pokud požadované oprávnění je součástí odepření oprávnění, procházení zásobníku selže. PermitOnly také mění výchozí chování procházení zásobníku. Je možné zadat pouze oprávnění, která lze udělit, bez ohledu na oprávnění volající kód. Pokud procházení zásobníku zjistí metodu, která je zabezpečena pomocí PermitOnly, a pokud oprávnění, která jsou určena podle PermitOnly není součástí požadované oprávnění, procházení zásobníku selže.
 
  Kód, který závisí na tyto akce by pečlivě vyhodnotit pro ohrožení zabezpečení z důvodu jejich užitečnost omezené a drobným chování. Zvažte použití těchto zdrojů:
 
-- [Požadavky na propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) nejsou ovlivněny Deny nebo PermitOnly.
+- [Požadavky na propojení](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) nejsou ovlivněny Deny nebo PermitOnly.
 
 - Dojde-li Deny nebo PermitOnly v rámci zásobníku jako požadavek, který způsobí, že procházení zásobníku, akce zabezpečení nemají žádný vliv.
 
@@ -80,4 +80,4 @@ ms.locfileid: "60082149"
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName><xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [Pokyny pro zabezpečené kódování](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [přepsání kontrol zabezpečení](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [použití metody PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [Pokyny pro zabezpečené kódování](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [přepsání kontrol zabezpečení](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [použití metody PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

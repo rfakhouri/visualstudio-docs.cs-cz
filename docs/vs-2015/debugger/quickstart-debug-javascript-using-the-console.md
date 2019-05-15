@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a2256dfde39c761258ffb63ec6bbd9473e1be385
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446115"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687583"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Rychlý start: Ladění JavaScriptu pomocí konzoly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -283,4 +283,4 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  [Ladění ukázkový kód HTML, CSS a JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Ladění ovládacího prvku WebView](../debugger/debug-a-webview-control.md)   
- [Technická podpora a usnadnění přístupu](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Technická podpora a usnadnění přístupu](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

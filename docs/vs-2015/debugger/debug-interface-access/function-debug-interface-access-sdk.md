@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b403f457cead70f113609e30cebdcf1c53c1341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fb1355dfebaad4230c349c0c7b30ae400ecdaa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759946"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692173"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Funkce (Přístup k rozhraní ladění SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,14 +42,14 @@ Každá funkce je identifikovaná `SymTagFunction` symbol.
 |[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` Pokud funkce obsahuje výjimku C++ – vizuální styl zpracování (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
 |[IDiaSymbol::get_hasEHa](../../debugger/debug-interface-access/idiasymbol-get-haseha.md)|`BOOL`|`TRUE` Pokud funkce obsahuje asynchronní výjimky zpracování (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
 |[IDiaSymbol::get_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|`BOOL`|`TRUE` Pokud funkce obsahuje vložené sestavení (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
-|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` Pokud funkce obsahuje [longjmp](http://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) volání (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
+|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` Pokud funkce obsahuje [longjmp](https://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) volání (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
 |[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` Pokud funkce obsahuje kontroly zabezpečení (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|`BOOL`|`TRUE` Pokud funkce obsahuje výjimky Win32 stylu strukturované zpracování (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
-|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` Pokud funkce obsahuje [setjmp](http://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) volání (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
+|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` Pokud funkce obsahuje [setjmp](https://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) volání (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
 |[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE` Pokud je funkce vrácení z přerušení (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|`TRUE` Pokud je úvod virtuální funkce.|  
 |[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE` Pokud byl označen funkce s jednou z [inline, __inline, \__forceinline](../../misc/inline-inline-forceinline.md) atributy.|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` Pokud je funkce označena [naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) atribut (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` Pokud je funkce označena [naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) atribut (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
 |[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE` Pokud funkce je statická (pouze v DIA SDK ve verzi 8.0 nebo novější).|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Počet bajtů kód funkce, od umístění.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol ohraničující kompilace.|  

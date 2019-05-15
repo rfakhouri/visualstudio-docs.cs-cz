@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403449"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690034"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Práce s elementy v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403449"
 Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší aplikace v XAML, v kódu nebo s použitím návrháře XAML. Toto téma popisuje, jak pracovat s elementy v Návrháři XAML v sadě Visual Studio nebo nástroje Blend for Visual Studio.  
   
 ## <a name="adding-an-element-to-a-layout"></a>Přidat element do rozložení  
- *Rozložení* je proces pro změnu velikosti a rozmístění prvků v uživatelském rozhraní. Pokud chcete umístit vizuálních prvků, je nutné umístit je v rozložení [Panel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). A `Panel` má vlastnost podřízené, což je kolekce z [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx) typy. Můžete použít různé `Panel` podřízené prvky, jako například [plátna](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx), a [mřížky](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), která bude sloužit jako kontejnery rozložení a do pozice a uspořádání prvků na stránce.  
+ *Rozložení* je proces pro změnu velikosti a rozmístění prvků v uživatelském rozhraní. Pokud chcete umístit vizuálních prvků, je nutné umístit je v rozložení [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). A `Panel` má vlastnost podřízené, což je kolekce z [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx) typy. Můžete použít různé `Panel` podřízené prvky, jako například [plátna](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx), a [mřížky](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), která bude sloužit jako kontejnery rozložení a do pozice a uspořádání prvků na stránce.  
   
  Ve výchozím nastavení `Grid` panel slouží jako kontejner rozložení nejvyšší úrovně v rámci stránky nebo formuláře. Můžete přidat panely rozložení, ovládacích prvků nebo jiných prvků v rámci rozložení stránky nejvyšší úrovně.  
   
@@ -34,7 +34,7 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
   
     - Přetáhněte element z **nástrojů** na návrhovou plochu.  
   
-    - V **nástrojů**, vyberte jeden z kreslících nástrojů (například [Elipsa](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) nebo [obdélník](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) a následně nakreslete prvek v panelu aktivní.  
+    - V **nástrojů**, vyberte jeden z kreslících nástrojů (například [Elipsa](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) nebo [obdélník](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) a následně nakreslete prvek v panelu aktivní.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Změna pořadí vrstev elementů  
  Pokud existují dva prvky na návrhovou plochu v Návrháři XAML, jeden prvek se zobrazí před jiným v pořadí vrstev. V dolní části seznamu elementů v Osnova dokumentu okna je nejvíce vpředu prvek (s výjimkou, kdy **ZIndex** je nastavena vlastnost pro daný element). Při vkládání elementů do stránky, formuláře nebo kontejner rozložení, element automaticky umístěn před další prvky v elementu aktivní kontejner. Chcete-li změnit pořadí prvků, můžete použít **pořadí** příkazy nebo přetáhnout prvky v rámci stromů objektů v okně osnovy dokumentu.  

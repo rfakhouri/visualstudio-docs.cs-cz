@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5074af8f0a9ca172d04b4cd5bb1d9057ad4bb5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3f7ccd6af16d89c18f5a5bba63f6afc50de391c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384080"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688721"
 ---
 # <a name="insert-new-records-into-a-database"></a>Vkládání nových záznamů do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Vkládání nových záznamů do databáze, můžete `TableAdapter.Update` metod
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Chcete-li vkládání nových záznamů do databáze s použitím TableAdapter.Update – metoda  
   
-1. Přidání nových záznamů do požadované <xref:System.Data.DataTable> vytvořením nového <xref:System.Data.DataRow> a jejím přidáním na <xref:System.Data.DataTable.Rows%2A> kolekce. Další informace najdete v tématu [jak: Přidání řádků do DataTable určitého](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Přidání nových záznamů do požadované <xref:System.Data.DataTable> vytvořením nového <xref:System.Data.DataRow> a jejím přidáním na <xref:System.Data.DataTable.Rows%2A> kolekce. Další informace najdete v tématu [jak: Přidání řádků do DataTable určitého](https://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
 2. Po přidání nových řádků do <xref:System.Data.DataTable>, zavolejte `TableAdapter.Update` metody. Můžete řídit objem dat se aktualizovat předáním buď celý <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, pole <xref:System.Data.DataRow>s nebo jediný <xref:System.Data.DataRow>.  
   

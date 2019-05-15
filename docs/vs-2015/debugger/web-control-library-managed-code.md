@@ -17,17 +17,17 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18f6e72d18154f11866671a3e448d88c91768c7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 031f894eb2e117a213f4f9fbbf08ac57a1512d61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047095"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688165"
 ---
 # <a name="web-control-library-managed-code"></a>Knihovna webových prvků (spravovaný kód)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Šablona projektu knihovny ovládacích prvků webové vytvoří knihovnu DLL. Vzhledem k tomu, že knihovna tříd je knihovna DLL, nelze ji spustit přímo. Je nutné vytvořit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] stránka, která vloží ovládací prvek. Další informace najdete v tématu [šablony ovládacího prvku knihovny](http://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
+Šablona projektu knihovny ovládacích prvků webové vytvoří knihovnu DLL. Vzhledem k tomu, že knihovna tříd je knihovna DLL, nelze ji spustit přímo. Je nutné vytvořit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] stránka, která vloží ovládací prvek. Další informace najdete v tématu [šablony ovládacího prvku knihovny](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Chcete-li ladit Knihovna webových prvků (metoda 1)  
   

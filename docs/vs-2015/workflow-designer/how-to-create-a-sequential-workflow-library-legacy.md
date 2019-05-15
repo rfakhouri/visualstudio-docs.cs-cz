@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d44d1b83776cdd69c659ebed0bc2a1caaa53e123
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6563c209dfd86a74c2d51fc9179948c63e7cf4b2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433506"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686692"
 ---
 # <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Postupy: Vytvoření knihovny sekvenčních pracovních postupů (starší verze)
 Postupujte podle těchto kroků a vytvořte projekt knihovny sekvenčních pracovních postupů pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] poskytované [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -51,4 +51,4 @@ Postupujte podle těchto kroků a vytvořte projekt knihovny sekvenčních praco
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření projektů pracovních postupů starších verzí](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Styly pro tvorbu pracovního postupu](http://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)
+ [Styly pro tvorbu pracovního postupu](https://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)

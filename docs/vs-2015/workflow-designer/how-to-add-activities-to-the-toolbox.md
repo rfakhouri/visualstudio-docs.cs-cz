@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af470bbbebbf10fdfcf906c905171e86b0c100ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0aa6a76555a18c142acb8759b1bc71d56e9d7dcd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433539"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690944"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Postupy: Přidání aktivit do panelu nástrojů
 Aktivity mohou být přidány do **nástrojů** ve vašem řešení v několika různými způsoby. Můžete přidat z v rámci aktuálního projektu, odkazovat z jiného projektu nebo na ně odkazovat z jiného sestavení.  
@@ -34,7 +34,7 @@ Aktivity mohou být přidány do **nástrojů** ve vašem řešení v několika 
     > Panel nástrojů můžete zobrazit pouze jednu aktivitu daným názvem. Pokud dvě aktivity v různých sestaveních mají stejný název třídy, zobrazí se jenom jeden.  
   
     > [!NOTE]
-    > Domény aplikace se sdílí mezi instance editoru; Pokud používáte statické proměnné, bude sdílena mezi instance editoru i. Pokud to není požadované chování, služba by měla sloužit ke sledování proměnné instance. Zobrazit [použití kontextu úprav ModelItem](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1) informace o používání služby v rámci návrháře.  
+    > Domény aplikace se sdílí mezi instance editoru; Pokud používáte statické proměnné, bude sdílena mezi instance editoru i. Pokud to není požadované chování, služba by měla sloužit ke sledování proměnné instance. Zobrazit [použití kontextu úprav ModelItem](https://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1) informace o používání služby v rámci návrháře.  
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>Chcete-li přidat aktivitu z v rámci jiného projektu  
   

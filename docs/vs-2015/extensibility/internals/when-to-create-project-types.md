@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061707"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687702"
 ---
 # <a name="when-to-create-project-types"></a>Kdy vytvořit typy projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Vytváří se nový typ projektu poskytuje základ pro přizpůsobení [!INCLUDE
 |Úloha|Popis|  
 |----------|-----------------|  
 |Zpracování příkazů|Žádné VSPackage dokáže zpracovat příkazy.|  
-|Vytváření editoru|Lze registrovat vlastních editorech. Další informace najdete v tématu [dokumentu Windows a editory](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Vytváření editoru|Lze registrovat vlastních editorech. Další informace najdete v tématu [dokumentu Windows a editory](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
 |Vlastnící systému windows|Můžete vytvořit oken nástrojů a dokumentu bez přidání nového typu projektu.|  
 |Vystavení vlastností v okně Vlastnosti|Všechny objekty mohou vystavit vlastnosti.|  
   
@@ -60,6 +60,6 @@ Vytváří se nový typ projektu poskytuje základ pro přizpůsobení [!INCLUDE
  Podtypy projektů můžete použít k rozšíření typu spravovaný projekt bez nutnosti vytvářet nový typ projektu. Podtypy projektů použití agregace modelu COM pro rozšíření spravovaných projektů, které jsou napsané v Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] nebo [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. S průběhem modelu COM můžete znovu použít řadu implementace systému spravovaný projekt a však přizpůsobit pro konkrétní scénář prostřednictvím shromažďování a použití podporující rozhraní. Další informace o podtypů projektů, naleznete v tématu [podtypů projektů](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Dokument Windows a editory](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Dokument Windows a editory](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
  [Kontrolní seznam: Vytvoření nových typů projektů](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Hierarchie v sadě Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

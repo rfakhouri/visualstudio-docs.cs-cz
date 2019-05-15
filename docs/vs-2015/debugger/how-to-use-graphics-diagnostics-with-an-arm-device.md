@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2a89344785f997f3b878df7d827db6e4732860b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5bbe12449849b656af2658c5bab667b0e611515e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384011"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685865"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Postupy: Použití diagnostiky grafiky se zařízením ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,12 +28,12 @@ Diagnostika grafiky podporuje vzdálené ladění aplikací rozhraní Direct3D n
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>Jak aktivovat vzdálené ladění na vašem zařízení založené na ARM  
   
-1. Nainstalujte [zásady sad ARM](http://msdn.microsoft.com/windows/desktop/dn469188) na vašem zařízení založené na ARM.  
+1. Nainstalujte [zásady sad ARM](https://msdn.microsoft.com/windows/desktop/dn469188) na vašem zařízení založené na ARM.  
   
 2. Nainstalujte [nástroje pro vzdálené ladění](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) na vašem zařízení založené na ARM.  
   
 > [!IMPORTANT]
-> Pro zařízení s Windows Phone 8.1 budete muset zaregistrovat svůj telefon pro vývoj. Uděláte to tak, musí být registrovaný vývojář. Další informace najdete v tématu [o nasazení a spuštění aplikace pro Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
+> Pro zařízení s Windows Phone 8.1 budete muset zaregistrovat svůj telefon pro vývoj. Uděláte to tak, musí být registrovaný vývojář. Další informace najdete v tématu [o nasazení a spuštění aplikace pro Windows Phone 8](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
   
  Po povolení vzdáleného ladění na vašem zařízení, byl váš cíl ladění a spuštění diagnostiky grafiky.  
   

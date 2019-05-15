@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821306"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676706"
 ---
 # <a name="use-roslyn-analyzers"></a>Používání analyzátorů Roslyn
 
@@ -56,7 +56,7 @@ Upravit aktivní sadu pravidel v editoru sad pravidel, klikněte pravým tlačí
 Chcete-li změnit aktivní sadu pravidel pro projekt, přejděte na **analýzy kódu** karta Vlastnosti projektu. Vyberte sadu ze seznamu pravidel **spustit tuto sadu pravidel**. Chcete-li otevřít sadu pravidel, vyberte **otevřete**.
 
 > [!NOTE]
-> Projekty .NET core a .NET Standard nepodporují příkazy nabídky pro sady pravidel **Průzkumníka řešení**, například **otevřít aktivní sadu pravidel**. Chcete-li určit jiné než výchozí sadu pravidel pro projekt .NET Core nebo .NET Standard ručně [přidat **CodeAnalysisRuleSet** vlastnosti do souboru projektu](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Můžete nakonfigurovat pravidla v rámci sadu pravidel v sadě Visual Studio, sada pravidel uživatelské rozhraní editoru.
+> Projekty .NET core a .NET Standard nepodporují příkazy nabídky pro sady pravidel **Průzkumníka řešení**, například **otevřít aktivní sadu pravidel**. Chcete-li určit jiné než výchozí sadu pravidel pro projekt .NET Core nebo .NET Standard ručně [přidat **CodeAnalysisRuleSet** vlastnost](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) do souboru projektu. Stále můžete nakonfigurovat pravidla v rámci sadu pravidel v sadě Visual Studio, sada pravidel uživatelské rozhraní editoru.
 
 ## <a name="rule-severity"></a>Závažnost pravidla
 

@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e568286a5e17b13b5009eccf01988d458fc9cd47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445441"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686967"
 ---
 # <a name="managing-external-tools"></a>Správa externích nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Externí nástroje je možné volat v rámci aplikace Visual Studio. Jsou k disp
   
 1. Create GUID: vytvoří identifikátor GUID.  
   
-2. Chyba vyhledávání: na základě zadané hodnoty dostane chybovou zprávu. Další informace najdete v tématu [errlook – odkaz](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
+2. Chyba vyhledávání: na základě zadané hodnoty dostane chybovou zprávu. Další informace najdete v tématu [errlook – odkaz](https://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
   
 3. Trasovací nástroj ATL/MFC: ve zdrojích ATL a MFC zobrazí zprávy trasování ladění.  
   
@@ -85,7 +85,7 @@ Externí nástroje je možné volat v rámci aplikace Visual Studio. Jsou k disp
 6. Editor konfigurace služby WCF: Umožňuje vytvářet a upravovat nastavení konfigurace pro služby WCF.  
   
 > [!WARNING]
-> V závislosti na nainstalované verzi aplikace Visual Studio a na použitém nastavení profilu je možné vidět odlišný seznam externích nástrojů. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> V závislosti na nainstalované verzi aplikace Visual Studio a na použitém nastavení profilu je možné vidět odlišný seznam externích nástrojů. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Přidání nových nástrojů  
  Můžete přidat externí nástroj **nástroje** nabídky. Otevřít **externích nástrojů** dialogové okno a klikněte na tlačítko **přidat**, následně vyplňte informace. Následující položka například způsobí otevření programu Průzkumník Windows v adresáři souboru aktuálně otevřeného v aplikaci Visual Studio:  
@@ -102,7 +102,7 @@ Externí nástroje je možné volat v rámci aplikace Visual Studio. Jsou k disp
 > [!NOTE]
 > Stavový řádek IDE zobrazuje pro označení místa bodu vložení v aktivním editoru kódu proměnné Current Line a Current Column. Proměnná Current Text vrací text nebo kód vybraný v rámci tohoto místa.  
   
-|Název|Argument|Popis|  
+|Name|Argument|Popis|  
 |----------|--------------|-----------------|  
 |Cesta položky|$(ItemPath)|Celý název souboru aktuálního souboru (jednotka + cesta + název souboru).|  
 |Adresář položky|$(ItemDir)|Adresář aktuálního souboru (jednotka + cesta).|  
@@ -122,4 +122,4 @@ Externí nástroje je možné volat v rámci aplikace Visual Studio. Jsou k disp
 |Název souboru řešení|$(SolutionFileName)|Název souboru aktuálního řešení (jednotka + cesta + název souboru).|  
   
 ## <a name="see-also"></a>Viz také  
- [Nástroje sestavení C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [Nástroje sestavení C/C++](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

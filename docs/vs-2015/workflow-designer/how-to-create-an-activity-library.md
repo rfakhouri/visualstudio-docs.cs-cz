@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9463e46a7341a7da5c4aa79ae477d6aa0ff0c6cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444577"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686646"
 ---
 # <a name="how-to-create-an-activity-library"></a>Postupy: Vytvoření knihovny aktivit
 Vlastní aktivity se používají k modelování vašich konkrétních obchodních procesů v pracovním postupu. Šablona knihovny aktivit v [!INCLUDE[vs2010](../includes/vs2010-md.md)] má byla poskytnutá těmto osobám umožňují vytvářet tyto vlastní aktivity vizuálně pomocí [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -48,5 +48,5 @@ Vlastní aktivity se používají k modelování vašich konkrétních obchodní
     > V těle vaší vlastní aktivitě; jsou povoleny pouze jednu podřízenou aktivitu avšak podřízené aktivity mohou být složené aktivity, například <xref:System.Activities.Statements.Sequence> aktivity nebo <xref:System.Activities.Statements.Flowchart> aktivity.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: Vytvoření aktivity](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Postupy: Vytvoření aktivity](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Vytvoření projektu pracovního postupu](../workflow-designer/creating-a-workflow-project.md)

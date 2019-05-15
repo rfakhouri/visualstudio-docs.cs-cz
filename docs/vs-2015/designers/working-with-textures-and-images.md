@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3211f72b867063e07e339ff803019cb9699e94a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 89c8fd489c29fc9b352c34011349ff447e48adb4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403464"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690081"
 ---
 # <a name="working-with-textures-and-images"></a>Práce s texturami a obrázky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403464"
 Můžete použít Editor obrázků v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] k vytvoření a úprava textury a obrázky. Editor obrázků podporuje bohaté textury a obrazu formátech, jako jsou ty, které se používají při vývoji aplikace rozhraní DirectX.  
   
 > [!NOTE]
-> Editor obrázků nepodporuje barvy s nízkou Image jako ikony a kurzory. Chcete-li vytvořit nebo upravit tyto druhy imagí, použijte [Editor obrázků pro ikony](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
+> Editor obrázků nepodporuje barvy s nízkou Image jako ikony a kurzory. Chcete-li vytvořit nebo upravit tyto druhy imagí, použijte [Editor obrázků pro ikony](https://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
   
 ## <a name="textures-and-images"></a>Texturami a obrázky  
  Texturami a obrázky se na základní úrovni, pouze tabulky dat, které se používají k zajištění podrobností v grafické aplikace. Druh podrobností, které poskytuje textury nebo image závisí na způsobu jejich použití, ale vzorky barev, hodnoty alfa (průhlednost), normály a výška hodnoty jsou běžné příklady. Hlavní rozdíl mezi textury a obrazu je, že textury smyslem je lze používat společně s reprezentací tvar – obvykle na 3D model – vyjádřit kompletního objektu nebo scény, ale image je obvykle samostatné reprezentace objektu nebo scény .  

@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaa7288d46b57204a637dc81d1d8b943debd87fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 932b770f38f75d26028eceb6c0addc2ababeef6d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417452"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696347"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Postupy: Vytvoření konzolových aplikací sekvenčních pracovních postupů (starší verze)
 Postupujte podle těchto kroků a vytvořte projekt konzolové aplikace sekvenčního pracovního postupu pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] poskytované [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -54,4 +54,4 @@ Postupujte podle těchto kroků a vytvořte projekt konzolové aplikace sekvenč
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření projektů pracovních postupů starších verzí](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Vývoj pracovních postupů](http://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)
+ [Vývoj pracovních postupů](https://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)

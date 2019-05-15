@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ca90a90d476acc0bdbc1df426b981d98207bbd28
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427054"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687252"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
 1. Klikněte na tlačítko **Transformovat všechny šablony** v panelu nástrojů Průzkumníka řešení. To obnoví většinu zdrojový kód z DslDefinition.dsl.  
   
    > [!NOTE]
-   > Pokaždé, když změníte DslDefinition.dsl, musíte kliknout na **Transformovat všechny šablony** předtím, než znovu sestavte řešení. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   > Pokaždé, když změníte DslDefinition.dsl, musíte kliknout na **Transformovat všechny šablony** předtím, než znovu sestavte řešení. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Stiskněte klávesu F5 nebo na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
   

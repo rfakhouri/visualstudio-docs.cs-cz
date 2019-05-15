@@ -16,17 +16,17 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f4de01af6535a33607e5263966492210f8ce4a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 452c3b408ab6471963124e61bc803e99eb6be80d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647954"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686910"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Úlohy nástroje MSBuild specifické pro Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Úlohy poskytují kód, který se spustí během procesu sestavení. Při instalaci Visual C++ jsou k dispozici, kromě těch, které se instalují s následující úlohy [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Další informace najdete v tématu [přehled nástroje MSBuild (Visual C++)](http://msdn.microsoft.com/library/dd258f6f-ab51-48d9-b274-f7ba911d05ca).  
+Úlohy poskytují kód, který se spustí během procesu sestavení. Při instalaci Visual C++ jsou k dispozici, kromě těch, které se instalují s následující úlohy [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Další informace najdete v tématu [přehled nástroje MSBuild (Visual C++)](https://msdn.microsoft.com/library/dd258f6f-ab51-48d9-b274-f7ba911d05ca).  
   
  Kromě parametrů pro každou úlohu Každá úloha má také následující parametry.  
   

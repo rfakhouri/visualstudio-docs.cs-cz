@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db8c0c092ad8bc1435f939c862cf3fa7fc52179e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436555"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689152"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Řešení potíží s výjimkami: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> výjimka je vyvolána, když [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Určuje, že zpráva není správně zabezpečené nebo nebude bylo manipulováno. Dojde k chybě nejčastěji Pokud jsou splněny všechny následující podmínky:  
@@ -86,4 +86,4 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> výjimka je vyvol
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.ServiceModel.Security.MessageSecurityException>   
- [Použití Pomocníka pro výjimky](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+ [Použití Pomocníka pro výjimky](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

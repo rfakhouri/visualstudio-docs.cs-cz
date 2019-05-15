@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d5fbd50ec56173d0871aa1096825eabf87cf42e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 337341547891d87b577756350cbb71e13dd230ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766563"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691185"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Ladění chyb a dialogových oken s upozorněním
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ V následující tabulce jsou chyby a upozornění dialogová okna, které můž
   
  [Žádný zdrojový kód k dispozici pro aktuální umístění dialogových oken](../debugger/no-source-available.md)  
   
- [Dialogové okno žádné symbolické informace](http://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [Dialogové okno žádné symbolické informace](https://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [Dialogové okno Vyřešit nejednoznačnosti](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -64,9 +64,9 @@ V následující tabulce jsou chyby a upozornění dialogová okna, které můž
   
  [Chyby při vzdáleném ladění](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [Chybami připojení](http://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [Chybami připojení](https://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   
- [Řešení potíží s SQL, instalační program pro ladění](http://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [Řešení potíží s SQL, instalační program pro ladění](https://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
   
  [Ladění nejčastější dotazy k aplikaci Visual C++](../debugger/debugging-native-code-faqs.md)  
   

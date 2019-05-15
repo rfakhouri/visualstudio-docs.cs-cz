@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4752f9b04723934c0fe9a2cf8a74d4d07e474477
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4f92b96d99889c88236df34b3f60c7fd71d5032d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116196"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691347"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Příprava ladění: Typy projektů Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
    [V tomto tématu](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplikace Windows Forms (.NET)  
- **Windows Forms aplikace (.NET)** šablona vytvoří [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] aplikace Windows Forms. Další informace najdete v tématu [jak: Vytvoření projektu aplikace Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+ **Windows Forms aplikace (.NET)** šablona vytvoří [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] aplikace Windows Forms. Další informace najdete v tématu [jak: Vytvoření projektu aplikace Windows](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Ladění tohoto typu aplikace v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je podobná ve spravovaných aplikacích Windows Forms.  
   
@@ -117,4 +117,4 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
  [Nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Připojení více programů nebo spuštění programu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Postupy: Vytvoření projektu aplikace Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)
+ [Postupy: Vytvoření projektu aplikace Windows](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)

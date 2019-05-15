@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021927c9ff109e74956507b993c1c7192d109852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3dd28cad3036aaca1445cba7b4531580a2a44812
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756488"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691688"
 ---
 # <a name="performance-rules-by-id"></a>Pravidla výkonu podle identifikátorů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Upozornění|Popis|
 |[DA0006: Přepis Equals() pro typy hodnot](../profiling/da0006-override-equals-parens-for-value-types.md)|Volání metody Equals a operátory rovnosti veřejné hodnotového typu je podstatnou část dat profilování. Zvažte implementaci metodu efektivnější.|  
 |[DA0007: Vyhnutí se použití výjimek pro tok řízení](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|Vysoký počet obslužných rutin výjimek rozhraní .NET Framework byly volány v dat profilování. Zvažte použití další logiku toku řízení k omezení počtu výjimek, které jsou vyvolány.|  
 |[DA0008: Shromážděno málo vzorků](../profiling/da0008-few-samples-collected.md)|Pouze několik ukázky byly shromážděny během spuštění profilování. Zvažte delší spuštění nebo rychlejší vzorkovací frekvenci pro více významné výsledky.|  
-|[DA0009: Vysoká hodnota u % času v překladu za běhu](http://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Významného procenta času spuštění aplikace se využilo na kompilátoru právě In Time (JIT).|  
+|[DA0009: Vysoká hodnota u % času v překladu za běhu](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Významného procenta času spuštění aplikace se využilo na kompilátoru právě In Time (JIT).|  
 |[DA0010: Náročná funkce GetHashCode](../profiling/da0010-expensive-gethashcode.md)|Volání metody GetHashCode typu jsou podstatnou část dat profilování nebo metodu přidělí paměť.|  
 |[DA0011: Náročná funkce CompareTo](../profiling/da0011-expensive-compareto.md)|Metoda CompareTo typu je nákladné nebo přidělí paměť.|  
 |[DA0012: Velký počet reflexí](../profiling/da0012-significant-amount-of-reflection.md)|Volání metody System.Reflection například metodu InvokeMember a GetMember nebo typ metody, jako je například MemberInvoke je podstatnou část dat profilování. Pokud je to možné, zvažte nahrazení tyto metody s časná vazba metod závislá sestavení.|  

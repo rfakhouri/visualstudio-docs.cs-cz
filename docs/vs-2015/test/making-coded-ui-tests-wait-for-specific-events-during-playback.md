@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 036c0ced92fd4da85989883ab5725455ed172db4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8c0158370ceb101e8c6934f92e2dd3e8689254c5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416298"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686313"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Zajištění čekání programových testů UI na konkrétní události při přehrávání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Programové přehrávání testů uživatelského rozhraní webu můžete dát p
  Visual Studio Enterprise  
   
 > [!TIP]
-> Můžete také přidat zpoždění před akcí pomocí editoru programového testu UI. Další informace najdete v tématu [jak: Vložení prodlevy před akci uživatelského rozhraní pomocí editoru testů kódované UI](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
+> Můžete také přidat zpoždění před akcí pomocí editoru programového testu UI. Další informace najdete v tématu [jak: Vložení prodlevy před akci uživatelského rozhraní pomocí editoru testů kódované UI](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
   
  **UITestControl.WaitForControlXXX() Methods**  
   
@@ -117,4 +117,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  [Návod: Vytváření, úpravy a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
  [Anatomie programového testu UI](../test/anatomy-of-a-coded-ui-test.md)   
  [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Postupy: Vložení prodlevy před akci uživatelského rozhraní pomocí editoru testů programového uživatelského rozhraní](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+ [Postupy: Vložení prodlevy před akci uživatelského rozhraní pomocí editoru testů programového uživatelského rozhraní](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

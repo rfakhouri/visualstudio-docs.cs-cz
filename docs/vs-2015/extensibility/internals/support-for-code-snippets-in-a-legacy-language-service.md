@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33218dd8fe7cee4a6700dcb289719ffae932bbe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408452"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691791"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Podpora pro fragmenty kódu ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Vložení fragmentu kódu s použitím příkazu nabídky  
  Pomocí příkazu nabídky zobrazit v prohlížeči fragment, přidání příkazu nabídky a pak zavolat <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metodu <xref:Microsoft.VisualStudio.Package.ExpansionProvider> rozhraní v reakci na příkaz nabídky.  
   
-1. Přidejte do souboru .vsct příkazu a tlačítko. Proto v postupu můžete najít [názorný postup: Vytvoření příkazu nabídky s použitím šablony sady Visual Studio balíček](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1. Přidejte do souboru .vsct příkazu a tlačítko. Proto v postupu můžete najít [názorný postup: Vytvoření příkazu nabídky s použitím šablony sady Visual Studio balíček](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 2. Odvodit třídu z <xref:Microsoft.VisualStudio.Package.ViewFilter> třídy a přepsat <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> indikace podporu pro nový příkaz nabídky. Tento příklad povolí vždy příkazu nabídky.  
   

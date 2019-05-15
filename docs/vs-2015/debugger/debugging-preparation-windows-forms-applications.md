@@ -23,17 +23,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4574c5ec455f37813e4831cbf098ca4ba6c3c1ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b11855fbd19dc464f92b4339684ef8346556c21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691153"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Příprava ladění: Formulářová aplikace Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Šablona projektu Windows Forms vytvoří aplikace modelu Windows Forms. Ladění tohoto typu aplikace v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je jednoduché. Další informace najdete v tématu [vytvoření projektu aplikace Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+Šablona projektu Windows Forms vytvoří aplikace modelu Windows Forms. Ladění tohoto typu aplikace v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je jednoduché. Další informace najdete v tématu [vytvoření projektu aplikace Windows](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Při vytváření projektu Windows Forms pomocí šablony projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky vytvoří požadované nastavení konfigurace Debug a Release. V případě potřeby můžete tato nastavení změnit. Tato nastavení lze změnit v  **\<název projektu > stránky vlastností** dialogové okno (**Můj projekt** v jazyce Visual Basic).  
   
@@ -63,7 +63,7 @@ ms.locfileid: "54798605"
   
    3. Fokus a události ověřování.  
   
-      Další informace najdete v tématu [vytváření obslužných rutin událostí ve Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
+      Další informace najdete v tématu [vytváření obslužných rutin událostí ve Windows Forms](https://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
   
 3. Na **ladění** nabídky, klikněte na tlačítko **Start**.  
   
@@ -76,4 +76,4 @@ ms.locfileid: "54798605"
  [Nastavení projektu pro jazyk C# konfiguraci ladění](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Konfigurace ladění projektu v jazyce Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Windows Forms](http://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)
+ [Windows Forms](https://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)

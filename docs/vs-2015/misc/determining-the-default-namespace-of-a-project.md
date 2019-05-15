@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: jillfra
-ms.openlocfilehash: 0bc5cba2651f447e36491c641e9b0d05f728e5c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d58c8986922c30192d6300a623a635b24c34ed5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822576"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705776"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Určení výchozí Namespace projektu
-Pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], pokud `CustomToolNamespace` je nastavena na vstupní soubor, pak hodnota `CustomToolNamespace` změní hodnotu výchozí obor názvů parametr předán <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> metoda. V opačném případě `wszDefaultNamespace` byl předán parametr `Generate` se vždy rovná kořenového oboru názvů. Další informace o oborech názvů najdete v tématu [klíčová slova Namespace](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
+Pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], pokud `CustomToolNamespace` je nastavena na vstupní soubor, pak hodnota `CustomToolNamespace` změní hodnotu výchozí obor názvů parametr předán <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> metoda. V opačném případě `wszDefaultNamespace` byl předán parametr `Generate` se vždy rovná kořenového oboru názvů. Další informace o oborech názvů najdete v tématu [klíčová slova Namespace](https://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
   
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] používá obory názvů založené na složce. To znamená obor názvů se skládá z kořenového oboru názvů a názvy složek obsahující vlastní nástroj. Každý název složky je převést na platný identifikátor a všechny názvy oddělte období. Například pokud je vstupní soubor FolderA\FolderB\FolderC\MyInput.txt a kořenový obor názvů se CL9, pak vypočítané výchozí obor názvů by **CL9. FolderA.FolderB.FolderC**.  
   

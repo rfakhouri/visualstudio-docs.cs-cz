@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436567"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689096"
 ---
 # <a name="support-for-settings-categories"></a>Podpora pro kategorie nastavení
-Nastavení kategorie se skládá ze skupiny z možností, které přizpůsobení integrovaného vývojového prostředí (IDE). Například nastavení můžete řídit rozložení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows a obsah nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Nastavení kategorie se skládá ze skupiny z možností, které přizpůsobení integrovaného vývojového prostředí (IDE). Například nastavení můžete řídit rozložení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows a obsah nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Na **nástroje** klikněte na nabídku **nastavení importu a exportu** spustit **Průvodce importem a exportem nastavení**. Průvodce nabízí tři možnosti: exportovat, importovat nebo obnovit nastavení. Výběr export, například se otevře **zvolte nastavení pro Export** stránky průvodce.  
   
@@ -64,4 +64,4 @@ Nastavení kategorie se skládá ze skupiny z možností, které přizpůsobení
  [Vytvoření stránky Možnosti](../extensibility/creating-an-options-page.md)   
  [Ukázky VSSDK](../misc/vssdk-samples.md)   
  [Stav balíčku VSPackage](../misc/vspackage-state.md)   
- [Přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

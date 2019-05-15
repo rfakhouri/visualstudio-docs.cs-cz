@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: adecc608309c0a61e38da3e77446795540c41e63
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041832"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691018"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;nového v sadě Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Další informace o řadě vylepšení a nových funkcí v prostředí Visual St
  ![Visual Studio 2015 instalačním programu](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>Přihlaste se napříč několika účty
- Pomocí sady Visual Studio 2015 nové zjednodušené přihlašovací prostředí umožňuje výrazně zjednodušit přístup k online prostředkům, i v případě, že máte více účtů sady Visual Studio. Po přihlášení k sadě Visual Studio, budete automaticky přihlášeni na všechny instance sady Visual Studio 2015 a Blendu na svém počítači. Přihlášení se automaticky spustí cestovní nastavení za vás. V sadě Visual Studio 2015, váš účet je sdílen mezi funkcí tedy za předpokladu, budete mít dobrou token, dostanete k vašim účtům služby Visual Studio Team Services z **Team Exploreru**, zdrojů a webů Microsoft Azure předplatné v Průzkumníku serveru. Uvidíte také vaše prostředky Azure v dialogovém okně Nový projekt pro projekty služby Application Insights a zobrazí se vám Azure Mobile, Azure Storage, [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) a [tohoto developer](https://developer.salesforce.com/) účty v nové **přidat připojenou službu** dialogového okna.
+ Pomocí sady Visual Studio 2015 nové zjednodušené přihlašovací prostředí umožňuje výrazně zjednodušit přístup k online prostředkům, i v případě, že máte více účtů sady Visual Studio. Po přihlášení k sadě Visual Studio, budete automaticky přihlášeni na všechny instance sady Visual Studio 2015 a Blendu na svém počítači. Přihlášení se automaticky spustí cestovní nastavení za vás. V sadě Visual Studio 2015, váš účet je sdílen mezi funkcí tedy za předpokladu, budete mít dobrou token, dostanete k vašim účtům služby Visual Studio Team Services z **Team Exploreru**, zdrojů a webů Microsoft Azure předplatné v Průzkumníku serveru. Uvidíte také vaše prostředky Azure v dialogovém okně Nový projekt pro projekty služby Application Insights a zobrazí se vám Azure Mobile, Azure Storage, [Microsoft Office 365](https://msdn.microsoft.com/office/aa905340.aspx) a [tohoto developer](https://developer.salesforce.com/) účty v nové **přidat připojenou službu** dialogového okna.
 
  Můžete pracovat s několika uživatelskými účty v sadě Visual Studio tak, že je přidáte, co využijete, nebo pomocí nového účtu správce. Potom můžete přepínat mezi těmito účty v reálném čase při připojování k služby nebo přístup k online prostředkům. Visual Studio si pamatuje účty, které přidáte, takže je můžete využít z libovolné instance sady Visual Studio nebo program Blend. Visual Studio se zpřístupní také v seznamu účtů (v případě, že jsme roamingem nepřenesou cenné pověření) s vaším účtem přizpůsobení abyste je mohli rychle začít pracovat s některou z těchto účtů na jiném zařízení. Kdykoli můžete samozřejmě odebrat účty v dialogovém okně Nastavení účtu. Abyste mohli začít, najdete v článku [práce s několika uživatelskými účty](./ide/work-with-multiple-user-accounts.md).
 
@@ -53,7 +53,7 @@ Další informace o řadě vylepšení a nových funkcí v prostředí Visual St
  Xamarin je mobilní Platforma, která umožňuje psát kód v C#, která se sváže nativně operační systém na iOS a Android API. Microsoft uzavřel partnerství úzce s využitím kódu Xamarin na jejich vydání Xamarin pro Visual Studio, rozšíření, která umožňuje vývoj pro Android, iOS a Windows Phone v jediném řešení se sdíleným kódem. S využitím kódu Xamarin budete používat jeden jazyk a kódové základny s minimálními rozdíly mezi platformami.  Xamarin pro Visual Studio je podporováno v sadě Visual Studio 2010 a novějším. Počáteční verzi Xamarin je zahrnuta v sadě Visual Studio 2015. Abyste mohli začít, najdete v článku [vytvářet aplikace s nativním uživatelským rozhraním pomocí Xamarinu v sadě Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Mobilní aplikace pro různé platformy v HTML/JavaScript s Apache Cordova
- Visual Studio Tools for Apache Cordova je výsledkem úzké spolupráci mezi společnostmi Microsoft a open source Apache Cordova komunity. Povolit nástroje pro vývoj multiplatformních mobilních aplikací pomocí jazyka HTML, CSS a JavaScript (nebo Typescript). Můžete cílit na Android, iOS a Windows pomocí jediného základu kódu a bohatost Visual Studio IDE, včetně technologie IntelliSense jazyka JavaScript, Průzkumníka modelu DOM, konzoly jazyka JavaScript, zarážky, Watch, místní hodnoty, funkce pouze můj kód a dalších.  Visual Studio Tools for Apache Cordova, vaše aplikace mají přístup k nativním funkcím zařízení na všech platformách prostřednictvím modulů plug-in, které poskytují společného rozhraní JavaScript API. Abyste mohli začít, najdete v článku [Začínáme s Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
+ Visual Studio Tools for Apache Cordova je výsledkem úzké spolupráci mezi společnostmi Microsoft a open source Apache Cordova komunity. Povolit nástroje pro vývoj multiplatformních mobilních aplikací pomocí jazyka HTML, CSS a JavaScript (nebo Typescript). Můžete cílit na Android, iOS a Windows pomocí jediného základu kódu a bohatost Visual Studio IDE, včetně technologie IntelliSense jazyka JavaScript, Průzkumníka modelu DOM, konzoly jazyka JavaScript, zarážky, Watch, místní hodnoty, funkce pouze můj kód a dalších.  Visual Studio Tools for Apache Cordova, vaše aplikace mají přístup k nativním funkcím zařízení na všech platformách prostřednictvím modulů plug-in, které poskytují společného rozhraní JavaScript API. Abyste mohli začít, najdete v článku [Začínáme s Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Multiplatformní mobilní hry v jazyce C# pomocí Unity
  Unity je široce používaný platformu pro multiplatformní 2D a 3D her vývoj. Můžete napsat hry v jazyce C# a nativně běžet na Android, iOS, Windows Phone a mnoho dalších platforem. Visual Studio Tools for Unity je rozšíření, která se integruje s integrovaným vývojovým prostředím sady Visual Studio Unity. S touto příponou získáte všechny funkce verze Visual Studio IDE a ladicí program, kromě zvýšení produktivity, které jsou navržené pro vývojáře Unity. Visual Studio Tools pro Unity 2.0 Preview 2 přidá podporu pro sadu Visual Studio 2015, kromě řadu nových funkcí, jako je například lepší vizualizaci objektů v oknech místní hodnoty a sledování systému windows. Microsoft získal koupila SyntaxTree, nedávno autoři Visual Studio Tools for Unity. Stáhnout Visual Studio Tools pro Unity 2.0 ve verzi Preview 2 a další informace o Visual Studio Tools for Unity, najdete v článku [Visual Studio Tools for Unity 2.0](https://aka.ms/vstu).
@@ -70,7 +70,7 @@ Další informace o řadě vylepšení a nových funkcí v prostředí Visual St
 
  Spuštění aplikace na telefonu s Windows 10, Windows 10 desktop a Xbox. Jedná se o stejné balíček aplikace! Zavedení projektového systému Windows 10 jediném, sjednoceném jádře jeden balíček aplikace poběží na všech platformách. Několik platforem mají rozšíření SDK, která můžete přidat do své aplikace a využít výhod chování pro konkrétní platformu. Například zpracovává sadu SDK rozšíření pro mobilní zařízení se ve Windows phonu stisknutí tlačítka Zpět. Pokud ve vašem projektu odkazovat na rozšíření SDK, stačí přidat elementy kontroly za běhu, který testuje, jestli je k dispozici na této platformě této sady SDK. To je, jak můžete použít balíček aplikace pro každou platformu!
 
- Můžete vytvořit tyto jazycích C#, Visual Basic, C++ nebo JavaScript [Universal Windows apps](http://msdn.microsoft.com/library/dn975273.aspx).
+ Můžete vytvořit tyto jazycích C#, Visual Basic, C++ nebo JavaScript [Universal Windows apps](https://msdn.microsoft.com/library/dn975273.aspx).
 
 ### <a name="web"></a>Web
  ASP.NET 5 je hlavní aktualizace MVC, WebAPI a technologie SignalR a běží na Windows, Mac a Linux.  ASP.NET 5 byly navržené zdola nahoru zajistit, že jste s využitím .NET štíhlý a sestavitelný zásobník pro vytváření moderních cloudových aplikací. Nástroje Visual Studio 2015 je více úzce integrovaná s oblíbené webové vývojové nástroje, jako je například Boweru a Grunt. Abyste mohli začít, najdete v článku řada blogových příspěvků na [NET Web Development and Tools Blog](http://blogs.msdn.com/b/webdev/).
@@ -87,12 +87,12 @@ Další informace o řadě vylepšení a nových funkcí v prostředí Visual St
 
  Jazyky C# a Visual Basic obsahují mnoho smallish vylepšení v základním jazyce a integrovaném vývojovém prostředí podpory. Tato vylepšení všechny nasčítá a ujistěte se, vaše prostředí ještě více intuitivní, pohodlné a produktivitu pro kódování .NET.
 
- Další informace najdete v tématu [novinky](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) a [Blog k .NET](http://blogs.msdn.com/b/dotnet/).
+ Další informace najdete v tématu [novinky](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) a [Blog k .NET](http://blogs.msdn.com/b/dotnet/).
 
 #### <a name="c"></a>C++
  Visual C++ poskytuje důležité pokroky v C ++ 11/14 jazyk shoda, podporu pro vývoj pro různé platformy mobilních zařízení, podpora pro funkce s možností pokračování a operátoru await (aktuálně plánovaných pro normalizaci v C ++ 17), vylepšení a chyb řeší v c. Knihovny runtime (CRT) a C++ standardní knihovny (STL) implementací, resizeable dialogová okna v knihovně MFC, nové optimalizace kompilátoru, vytvářet lepší výkon, nové možnosti diagnostiky a nové nástroje pro produktivitu v editoru kódu.
 
- Další informace najdete v tématu [co je nového v jazyce Visual c++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) a [blogu Visual C++](http://blogs.msdn.com/b/vcblog/).
+ Další informace najdete v tématu [co je nového v jazyce Visual c++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) a [blogu Visual C++](http://blogs.msdn.com/b/vcblog/).
 
 ## <a name="device-preview-menu-bar"></a>Panel nabídek zařízení ve verzi Preview
  V projektech univerzální platformy Windows nabídek zařízení ve verzi preview vám umožní zobrazit, jak se vaše uživatelské rozhraní založené na XAML vykreslí na různé velikosti obrazovky.
@@ -123,11 +123,11 @@ Další informace o řadě vylepšení a nových funkcí v prostředí Visual St
 ## <a name="cross-platform-debugging-support"></a>Podpora ladění pro různé platformy
  Visual Studio můžete použít k vytváření a ladění nativních mobilních aplikací, které běží na Windows, iOS a androidem. Použití [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx), nebo připojte zařízení a ladění kódu přímo v sadě Visual Studio.
 
-- **JavaScript / Cordova**. Použití [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) můžete vytvářet nativní aplikace pro Windows, iOS a Android s použitím jazyka JavaScript.
+- **JavaScript / Cordova**. Použití [Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) můžete vytvářet nativní aplikace pro Windows, iOS a Android s použitím jazyka JavaScript.
 
-     [Ladění aplikace](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) v knihovně MSDN je podrobný pohled na podpora pro Cordova ladění sady Visual Studio.
+     [Ladění aplikace](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) v knihovně MSDN je podrobný pohled na podpora pro Cordova ladění sady Visual Studio.
 
-- **C# a Xamarin**. Použití [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) můžete vytvářet nativní aplikace pro Windows, iOS a Android v sadě Visual Studio s C#.
+- **C# a Xamarin**. Použití [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) můžete vytvářet nativní aplikace pro Windows, iOS a Android v sadě Visual Studio s C#.
 
      [Ladění](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) a [ladění na zařízení](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) v [příručky pro vývojáře Xamarinu](http://developer.xamarin.com/guides) popisují možnosti ladění.
 
@@ -262,11 +262,11 @@ Následující informace jsou nové nebo vylepšené nástroje, které provádí
 ### <a name="report-crashes-hangs-and-performance-issues"></a>Sestavy chyb, zablokování a problémy s výkonem
  V některých případech rychlé poznámky v zamračeného smajlíka právě není k dispozici dostatek vyjádřit úplný dopad to nebude vyhovovat. Pro časy, pokud máte problém s výkon, zhroucení nebo zablokování můžete jednoduše sdílet kroky pro reprodukci, výpisy při selhání a trasovací soubory pomocí dialogového okna se zobrazí po poslat zamračeného smajlíka.
 
- Poslat zamračeného smajlíka, nejprve, jak je popsáno výše. V dialogovém okně, která se otevře můžete označení vaší zpětné vazby pomocí jedné z výchozí značky nebo vytvořte vlastní značku. Značky pomáhají směrovat váš názor na odpovídající týmu. V **zvolit některou kategorii** rozevírací seznam, vyberte možnost, která představuje problém při vytváření sestav a postupujte podle kroků k reprodukci problému. Podrobné pokyny o tom, jak pomocí sady Visual Studio feedback sestavy jsou k dispozici. Další informace najdete v tématu [sady Visual Studio odeslat pokyny se usmívejte](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
+ Poslat zamračeného smajlíka, nejprve, jak je popsáno výše. V dialogovém okně, která se otevře můžete označení vaší zpětné vazby pomocí jedné z výchozí značky nebo vytvořte vlastní značku. Značky pomáhají směrovat váš názor na odpovídající týmu. V **zvolit některou kategorii** rozevírací seznam, vyberte možnost, která představuje problém při vytváření sestav a postupujte podle kroků k reprodukci problému. Podrobné pokyny o tom, jak pomocí sady Visual Studio feedback sestavy jsou k dispozici. Další informace najdete v tématu [sady Visual Studio odeslat pokyny se usmívejte](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
 ## <a name="see-also"></a>Viz také
 
-* [Vytváření aplikací pro různé platformy pomocí Apache Cordova](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
+* [Vytváření aplikací pro různé platformy pomocí Apache Cordova](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Vytváření aplikací s nativním uživatelským rozhraním pomocí Xamarinu v sadě Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Vytvářejte multiplatformní mobilní aplikace s jazykem Visual C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [Generování testů částí pro kód pomocí funkce IntelliTest](./test/generate-unit-tests-for-your-code-with-intellitest.md)

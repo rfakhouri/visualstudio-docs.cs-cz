@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bb5342dc2b5da3d1192aadbbea186b5b21f179f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434868"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691554"
 ---
 # <a name="debugging-gpu-code"></a>Ladění kódu GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). 
 ## <a name="troubleshooting"></a>Poradce při potížích  
   
 ### <a name="specifying-an-accelerator"></a>Určení akcelerátoru  
- Zarážky v kódu GPU jsou pouze přístupů, pokud je kód spuštěn [Accelerator::direct3d_ref –](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) akcelerátorů (odkaz). Pokud nezadáte akcelerátoru ve vašem kódu, je automaticky vybrán jako akcelerátor REF **typ akcelerátoru ladění** ve vlastnostech projektu. Pokud váš kód explicitně vybere akcelerátoru, akcelerátor REF se nepoužije během ladění a nebudou fungovat zarážky, pokud váš hardware GPU neobsahuje podporu ladění. Můžete to napravit napsáním kódu tak, aby používala akcelerátor REF během ladění. Další informace najdete ve vlastnostech projektu a [používání akcelerátoru a objektů accelerator_view](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) a [nastavení projektu pro C++ konfiguraci ladění](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ Zarážky v kódu GPU jsou pouze přístupů, pokud je kód spuštěn [Accelerator::direct3d_ref –](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) akcelerátorů (odkaz). Pokud nezadáte akcelerátoru ve vašem kódu, je automaticky vybrán jako akcelerátor REF **typ akcelerátoru ladění** ve vlastnostech projektu. Pokud váš kód explicitně vybere akcelerátoru, akcelerátor REF se nepoužije během ladění a nebudou fungovat zarážky, pokud váš hardware GPU neobsahuje podporu ladění. Můžete to napravit napsáním kódu tak, aby používala akcelerátor REF během ladění. Další informace najdete ve vlastnostech projektu a [používání akcelerátoru a objektů accelerator_view](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) a [nastavení projektu pro C++ konfiguraci ladění](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="conditional-breakpoints"></a>Podmíněné zarážky  
  Podmíněné zarážky v kódu GPU jsou podporované, ale ne každý výraz lze vyhodnotit na zařízení. Výraz nejde vyhodnotit na zařízení, se vyhodnotí na ladicí program. Ladicí program je pravděpodobně poběží pomaleji než zařízení.  
@@ -83,6 +83,6 @@ Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). 
  Je možné pro výpočtů C++ AMP překročit výchozí časový interval, který je nastaven tak, že Windows časový limit zjišťování a procesu obnovení (TDR). Pokud k tomu dojde, výpočet je zrušen a data budou ztracena. Další informace najdete v tématu [TDRs zpracování v jazyce C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Ladění aplikace C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
+ [Návod: Ladění aplikace C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [Nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Spustit ladění GPU v sadě Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)
