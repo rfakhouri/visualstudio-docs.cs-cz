@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8af5414b1c775a17421b87b9c18d58c34f544405
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666764"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698643"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Vývoj aplikací pro Univerzální platformu Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Univerzální platforma Windows a naše jednoho jádra Windows můžete spustit 
   
  **Co přesně je univerzální platformu Windows?**  
   
- Je jednoduše kolekce smluv a verze. Tyto rutiny umožňují vám do cíle, kde lze spustit vaši aplikaci. Nebudou cíleny operačního systému. Nyní můžete cílit své aplikace na jeden nebo více rodin zařízení. Přečtěte si další informace z tohoto [Průvodce platformou](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
+ Je jednoduše kolekce smluv a verze. Tyto rutiny umožňují vám do cíle, kde lze spustit vaši aplikaci. Nebudou cíleny operačního systému. Nyní můžete cílit své aplikace na jeden nebo více rodin zařízení. Přečtěte si další informace z tohoto [Průvodce platformou](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
 ## <a name="requirements"></a>Požadavky  
  Nástroje pro vývoj univerzálních aplikací pro Windows jsou dostupné emulátorů, které vám umožní zjistit, jak vaše aplikace funguje na různých zařízeních. Pokud chcete použít tyto emulátory, budete muset instalovat tento software na fyzickém počítači. Fyzický počítač musí spustit (x64) Windows 8.1 edice Professional nebo vyšší a procesor, který podporuje technologii klient Hyper-V a překlad adres druhé úrovně (SLAT). Emulátory nelze použít, když je na virtuálním počítači nainstalované sady Visual Studio.  
@@ -55,8 +55,8 @@ Univerzální platforma Windows a naše jednoho jádra Windows můžete spustit 
   Návrhář XAML můžete použít pouze pokud je Vývojová platforma Windows 10.  
   
 ## <a name="universal-windows-apps"></a>Univerzální aplikace pro Windows  
- Zvolte si jazyk oblíbeným vývojovým v jazycích C#, Visual Basic, C++ nebo JavaScript, který chcete [vytvoření aplikace pro Universal Windows pro zařízení s Windows 10](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Nebo si pusťte video [Toto úvodní video](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
+ Zvolte si jazyk oblíbeným vývojovým v jazycích C#, Visual Basic, C++ nebo JavaScript, který chcete [vytvoření aplikace pro Universal Windows pro zařízení s Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Nebo si pusťte video [Toto úvodní video](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
   
- Pokud máte existující aplikace Windows Store 8.1, aplikace pro Windows Phone 8.1 nebo Windows Universal aplikací vytvořených pomocí sady Visual Studio 2015 RC, [portu tyto existující aplikace](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) použít nejnovější univerzální platformu Windows.  
+ Pokud máte existující aplikace Windows Store 8.1, aplikace pro Windows Phone 8.1 nebo Windows Universal aplikací vytvořených pomocí sady Visual Studio 2015 RC, [portu tyto existující aplikace](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) použít nejnovější univerzální platformu Windows.  
   
  Po vytvoření aplikace pro Universal Windows, je nutné [zabalení aplikace](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) ho nainstalovat na zařízení s Windows 10 nebo odeslání do Windows Store.

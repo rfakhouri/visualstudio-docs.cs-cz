@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e8b2c26050fd3e78e76b93e6372a03836916387
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be8c468e8b6aac70d44485b1560a84524a4ef540
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416349"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686422"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Postupy: Konfigurace testování částí pro cílení na dřívější verzi rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Když vytvoříte projekt testů v sadě Microsoft Visual Studio, nejnovější 
   
   **Testování aplikací pro SharePoint**  
   
-  Funkce uvedené výše také umožňují zápis testů jednotek a testů integrace pro aplikace SharePoint pomocí sady Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] vývoj aplikací služby SharePoint pomocí sady Visual Studio, naleznete v tématu [vytvořit řešení služby SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [sestavování a ladění řešení služby SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) a [ověření a ladění služby SharePoint Kód](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
+  Funkce uvedené výše také umožňují zápis testů jednotek a testů integrace pro aplikace SharePoint pomocí sady Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] vývoj aplikací služby SharePoint pomocí sady Visual Studio, naleznete v tématu [vytvořit řešení služby SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [sestavování a ladění řešení služby SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) a [ověření a ladění služby SharePoint Kód](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
   
   **Omezení**  
   
@@ -126,7 +126,7 @@ Když vytvoříte projekt testů v sadě Microsoft Visual Studio, nejnovější 
 8. V Průzkumníku řešení zvolte **znovu načíst projekt** z místní nabídky pro nový testovací projekt Visual C++.  
   
 ## <a name="see-also"></a>Viz také  
- [Vytváření a spouštění testů jednotek pro existující kód](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Vytvoření řešení služby SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
- [Sestavování a ladění řešení služby SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
+ [Vytváření a spouštění testů jednotek pro existující kód](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Vytvoření řešení služby SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
+ [Sestavování a ladění řešení služby SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [Dialogové okno Pokročilé nastavení kompilátoru (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

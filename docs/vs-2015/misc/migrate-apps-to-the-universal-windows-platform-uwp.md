@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001302"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686657"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrace aplikací do Univerzální platformy Windows (UWP)
 Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pro Windows Store 8.1, aplikace pro Windows Phone 8.1 nebo Windows Universal aplikací vytvořených pomocí sady Visual Studio 2015 RC, tak, aby bylo možné s Visual Studio 2015 RTM. (Pokud máte projekt aplikace pro Windows i Windows Phone projektu univerzální aplikace Windows 8.1, musíte provést kroky k migraci každého projektu.)  
@@ -29,7 +29,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
 - [Jsou vyžadovány pro existující projekty testů jednotek pro aplikace Windows Universal vytvořené pomocí sady Visual Studio 2015 RC změny](#MigrateUnitTest).  
   
-  Pokud nechcete tyto změny udělat, zjistěte, jak [přenášet vaše stávající aplikace](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) do nového projektu Windows Universal.  
+  Pokud nechcete tyto změny udělat, zjistěte, jak [přenášet vaše stávající aplikace](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) do nového projektu Windows Universal.  
   
 ## <a name="MigrateCSharp"></a> Migrujte vaše C# /VB Windows Store 8.1 nebo Windows Phone 8.1 aplikace, které používají univerzální platformu Windows  
   
@@ -110,7 +110,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
     6. Přidat \<EnableDotNetNativeCompatibleProfile > element a nastavte jej na hodnotu: **true**.  
   
-    7. Výchozí asset škálování pro Universal Windows apps je 200. Pokud váš projekt obsahuje prostředky, ne škálovat s hodnotou 200, budete muset přidat \<UapDefaultAssetScale > element s hodnotou škálování vašich prostředků na tomto PropertyGroup. Další informace o [prostředky a škálování](http://msdn.microsoft.com/library/jj679352.aspx).  
+    7. Výchozí asset škálování pro Universal Windows apps je 200. Pokud váš projekt obsahuje prostředky, ne škálovat s hodnotou 200, budete muset přidat \<UapDefaultAssetScale > element s hodnotou škálování vašich prostředků na tomto PropertyGroup. Další informace o [prostředky a škálování](https://msdn.microsoft.com/library/jj679352.aspx).  
   
          Teď vaše \<PropertyGroup > prvek by měl vypadat nějak takto:  
   
@@ -272,7 +272,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
     4. Přidat \<EnableDotNetNativeCompatibleProfile > element a nastavte jej na hodnotu: true.  
   
-    5. Výchozí asset škálování pro Universal Windows apps je 200. Pokud váš projekt obsahuje prostředky, ne škálovat s hodnotou 200, budete muset přidat \<UapDefaultAssetScale > element s hodnotou škálování vašich prostředků na tomto PropertyGroup. Další informace o [prostředky a škálování](http://msdn.microsoft.com/library/jj679352.aspx).  
+    5. Výchozí asset škálování pro Universal Windows apps je 200. Pokud váš projekt obsahuje prostředky, ne škálovat s hodnotou 200, budete muset přidat \<UapDefaultAssetScale > element s hodnotou škálování vašich prostředků na tomto PropertyGroup. Další informace o [prostředky a škálování](https://msdn.microsoft.com/library/jj679352.aspx).  
   
     6. Projekty pro Windows Phone, pouze, změňte hodnotu vlastnosti \<ApplicationType > z Windows Phone pro Windows Store.  
   
@@ -651,7 +651,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
 4. Najít \<PropertyGroup > element, který obsahuje \<TargetPlatformVersion > a \<prvkem TargetPlatformMinVersion > elementy. Přepište stávající hodnotu vlastnosti \<TargetPlatformVersion > a \<prvkem TargetPlatformMinVersion > prvků, které mají být stejná verze nástroje univerzální platformy Windows, který jste nainstalovali.  
   
-    Výchozí asset škálování pro Universal Windows apps je 200. Projekty vytvořené pomocí Visual Studio 2015 RC zahrnuté prostředky škálování na 100, budete muset přidat \<UapDefaultAssetScale > element s hodnotou od 100 do této PropertyGroup. Další informace o [prostředky a škálování](http://msdn.microsoft.com/library/jj679352.aspx).  
+    Výchozí asset škálování pro Universal Windows apps je 200. Projekty vytvořené pomocí Visual Studio 2015 RC zahrnuté prostředky škálování na 100, budete muset přidat \<UapDefaultAssetScale > element s hodnotou od 100 do této PropertyGroup. Další informace o [prostředky a škálování](https://msdn.microsoft.com/library/jj679352.aspx).  
   
 5. Pokud jste přidali všechny odkazy na UPW rozšíření sady SDK (například: Mobile SDK pro Windows), budete muset aktualizovat verzi sady SDK. Například to \<sdkreference – > element:  
   
@@ -761,7 +761,7 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
      Přidat \<EnableDotNetNativeCompatibleProfile > element a nastavte jej na hodnotu na true, pokud prvek už neexistuje.  
   
-     Výchozí asset škálování pro Universal Windows apps je 200. Projekty vytvořené pomocí Visual Studio 2015 RC zahrnuté prostředky škálování na 100, budete muset přidat \<UapDefaultAssetScale > element s hodnotou od 100 do této PropertyGroup. Další informace o [prostředky a škálování](http://msdn.microsoft.com/library/jj679352.aspx).  
+     Výchozí asset škálování pro Universal Windows apps je 200. Projekty vytvořené pomocí Visual Studio 2015 RC zahrnuté prostředky škálování na 100, budete muset přidat \<UapDefaultAssetScale > element s hodnotou od 100 do této PropertyGroup. Další informace o [prostředky a škálování](https://msdn.microsoft.com/library/jj679352.aspx).  
   
      Proto tento \<PropertyGroup > prvek nyní bude podobný tomuto:  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 45a3f55e826133ce0fd55764e216824810ae45c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a436ffa96e6ca86479bdb5b4f91e30c386acc1a6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443274"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689296"
 ---
 # <a name="troubleshooting-broken-references"></a>Řešení potíží s poškozenými odkazy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Pokud vaše aplikace se pokusí použít poškozený odkaz, je vygenerována chy
   Toto jsou řešení těchto problémů.  
   
 > [!NOTE]
-> Soubory v sestavení je odkazováno pomocí absolutní cesty v souboru projektu. Proto je možné pro uživatele, kteří pracují v prostředí vývoj chybí odkazovaná sestavení svého místního prostředí. Aby nedocházelo k těmto chybám, je lepší v těchto případech pro přidání odkazů typu projekt projekt. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) a [programování se sestaveními](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
+> Soubory v sestavení je odkazováno pomocí absolutní cesty v souboru projektu. Proto je možné pro uživatele, kteří pracují v prostředí vývoj chybí odkazovaná sestavení svého místního prostředí. Aby nedocházelo k těmto chybám, je lepší v těchto případech pro přidání odkazů typu projekt projekt. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) a [programování se sestaveními](https://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
   
 ## <a name="reference-path-is-incorrect"></a>Cesta odkazu je nesprávný  
  Pokud projekty jsou sdíleny v různých počítačích, nemusí při komponenty se nachází v jiném adresáři na každém počítači nalezeny některé odkazy. Odkazy jsou uloženy pod názvem souboru součásti (například MyComponent). Při přidání odkazu do projektu, umístění složky souboru součásti (například C:\MyComponents\\) se připojí **ReferencePath** vlastnosti projektu.  
@@ -73,7 +73,7 @@ Pokud vaše aplikace se pokusí použít poškozený odkaz, je vygenerována chy
   
 - Pokud existuje odkaz na jiné místo v počítači, přečtěte si je z tohoto umístění.  
   
-- Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="referenced-file-has-been-renamed"></a>Odkazovaný soubor byl přejmenován.  
  Je možné, že byl přejmenován soubor, který se odkazuje.  
@@ -82,15 +82,15 @@ Pokud vaše aplikace se pokusí použít poškozený odkaz, je vygenerována chy
   
 - Odstranit odkazy a pak přidejte odkaz na soubor přejmenován.  
   
-- Pokud existuje odkaz na jiné místo v počítači, je nutné jej načíst z tohoto umístění. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Pokud existuje odkaz na jiné místo v počítači, je nutné jej načíst z tohoto umístění. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>Připojení k síti nebo ověřování se nezdařilo  
- Může být mnoho možných příčin nepřístupných souborů: došlo k chybě síťového připojení nebo se nezdařilo ověřování, například. Každou příčinou může být jedinečný prostředek obnovení; například budete muset obrátit na místního správce pro přístup k potřebným prostředkům. Odstranění odkazu a oprava kódu, který používá ho ale vždy možnost. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+ Může být mnoho možných příčin nepřístupných souborů: došlo k chybě síťového připojení nebo se nezdařilo ověřování, například. Každou příčinou může být jedinečný prostředek obnovení; například budete muset obrátit na místního správce pro přístup k potřebným prostředkům. Odstranění odkazu a oprava kódu, který používá ho ale vždy možnost. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="com-component-is-not-installed-on-computer"></a>V počítači není nainstalována komponenta modelu COM  
- Pokud uživatel byl přidán odkaz na komponentu COM a druhý uživatel pokusí o spuštění kódu na počítači, který nemá tuto součást nainstalovaná, druhý uživatel dojde k chybě, že je odkaz poškozený. Instalace součásti na druhý počítač bude opravte chybu. Další informace o tom, jak pomocí odkazů na komponenty modelu COM ve vašich projektech najdete v tématu [interoperabilita modelů COM v aplikacích .NET Framework](http://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d).  
+ Pokud uživatel byl přidán odkaz na komponentu COM a druhý uživatel pokusí o spuštění kódu na počítači, který nemá tuto součást nainstalovaná, druhý uživatel dojde k chybě, že je odkaz poškozený. Instalace součásti na druhý počítač bude opravte chybu. Další informace o tom, jak pomocí odkazů na komponenty modelu COM ve vašich projektech najdete v tématu [interoperabilita modelů COM v aplikacích .NET Framework](https://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d).  
   
 ## <a name="see-also"></a>Viz také  
- [Úvod do Návrháře projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Úvod do Návrháře projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Stránka odkazy, Návrhář projektu (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)   
- [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)
+ [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

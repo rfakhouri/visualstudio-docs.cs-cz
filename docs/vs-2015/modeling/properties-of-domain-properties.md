@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 372e19b9ebb1253bda28b4c7723a2366c90b7441
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b9bd974da022a8407c1249b4a84eac3ef6f61aec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412129"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701902"
 ---
 # <a name="properties-of-domain-properties"></a>Vlastnosti vlastností domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,4 +53,4 @@ A *doménovou vlastnost* je funkce, které může obsahovat hodnotu prvku modelu
 |**Typ**|Typ vlastnosti. Pokud chcete přidat do seznamu dostupných typů, klikněte pravým tlačítkem na kořenový DSL v Průzkumník DSL a klikněte na tlačítko **přidat externí**.|`String`|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

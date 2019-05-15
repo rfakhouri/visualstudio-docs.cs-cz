@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40b1d2961fa0f0187d11bd87df54ff2ad3124275
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0c258ea081e95179c507f76413ae2a5fc7d71a5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433521"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705855"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Postupy: Vytvoření aplikace služeb pracovního postupu WCF
 [!INCLUDE[indigo1](../includes/indigo1-md.md)] aplikace služeb pracovního postupu jsou distribuované komunikační služby, které předávání zpráv mezi klienty a sami přes hranice procesu. Implementace kontraktu služby na straně služby se provádí pomocí deklarace pomocí aktivit pracovního postupu v [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] způsobem, který je obdobou služby starší verze pracovních postupů v rozhraní .NET Framework 3.5.  
@@ -43,5 +43,5 @@ ms.locfileid: "63433521"
 8. Šablona projektu vytvoří definici služby jako XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Do návrhového zobrazení se otevře <xref:System.Activities.Statements.Sequence> aktivitu, která obsahuje sadu <xref:System.ServiceModel.Activities.Receive> a <xref:System.ServiceModel.Activities.SendReply> aktivity.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: Vytvoření aktivity](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Postupy: Vytvoření aktivity](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Vytvoření projektu pracovního postupu](../workflow-designer/creating-a-workflow-project.md)

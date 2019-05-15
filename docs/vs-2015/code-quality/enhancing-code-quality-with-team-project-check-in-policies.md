@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 31859128aed64ec6a1182f085685b2e82e485f84
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86aac26819e86455c8ab5c3676c8198bbb482e43
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437085"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697199"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Zvýšení kvality kódu použitím zásad vracení se změnami týmového projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Při použití Team Foundation verze ovládacího prvku (TFVC), můžete vytvoř
   
 |Úloha|Podpůrný obsah|  
 |----------|------------------------|  
-|**Vytvoření a použití zásad vrácení se změnami:** Můžete vytvořit zásady vrácení se změnami s použitím nastavení týmového projektu [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Nastavení a vynucení bran kvality](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**Vytvoření a použití zásad vrácení se změnami:** Můžete vytvořit zásady vrácení se změnami s použitím nastavení týmového projektu [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Nastavení a vynucení bran kvality](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
 |**Vytvoření a použití zásad vrácení se změnami analýzy kódu:** Můžete si vybrat z standardní sadu pravidel analýzy kódu, nebo můžete vytvořit vlastní sadu.|[Vytváření a používání zásad vrácení se změnami Analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
   
 ## <a name="related-tasks"></a>Související úlohy  
   
 |Úloha|Podpůrný obsah|  
 |----------|------------------------|  
-|**Nastavení vývojového prostředí:** Předtím, než můžete vytvářet nebo upravovat kód, musíte nastavit vaše vývojová a testovací prostředí s použitím příslušného zdrojového kódu. Při práci s databázemi, musí mít také přístup k jejich offline verzi.|[Nastavení vývojových prostředích](http://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
+|**Nastavení vývojového prostředí:** Předtím, než můžete vytvářet nebo upravovat kód, musíte nastavit vaše vývojová a testovací prostředí s použitím příslušného zdrojového kódu. Při práci s databázemi, musí mít také přístup k jejich offline verzi.|[Nastavení vývojových prostředích](https://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
 |**Použití analýzy kódu v procesu vývoje:** Členové týmu spouštějí analýzu kódu na svých vývojových prostředích. V sadě Visual Studio, vývojáři nakonfigurovat a spustit nastavují spuštění analýzu kódu pro projekty s odděleným kódem, zobrazit a analyzovat problémy nalezené spuštěními a vytvářejí pracovní položky pro upozornění.|[Analýza kvality aplikace](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|  
 |**Vytvoření a spuštění testování částí:** Testování částí poskytuje vývojářům a testerům rychlý způsob vyhledávání logických chyb v rámci metod tříd v C#, Visual Basic .NET a projekty v jazyce C++. Test jednotky můžete vytvořit jen jednou a spustit každé změně zdrojového kódu je zajistit, že k zavedení žádných chyb.|[Testování částí kódu](../test/unit-test-your-code.md)|  
-|**Sledování pracovních položek a vad:** Pracovní položky můžete použít ke sledování a spravování práce a informace o týmovém projektu. Pracovní položka je databáze záznam, který [!INCLUDE[esprfound](../includes/esprfound-md.md)] používá ke sledování přiřazení a postupu práce. Můžete použít různé typy pracovních položek pro sledování různých typů činnosti, jako jsou požadavky zákazníka, chyb produktů a vývojářských úloh.|[Sledování práce a správa pracovního postupu &#91;Přesměrováno&#93;](http://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
+|**Sledování pracovních položek a vad:** Pracovní položky můžete použít ke sledování a spravování práce a informace o týmovém projektu. Pracovní položka je databáze záznam, který [!INCLUDE[esprfound](../includes/esprfound-md.md)] používá ke sledování přiřazení a postupu práce. Můžete použít různé typy pracovních položek pro sledování různých typů činnosti, jako jsou požadavky zákazníka, chyb produktů a vývojářských úloh.|[Sledování práce a správa pracovního postupu &#91;Přesměrováno&#93;](https://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
   
 ## <a name="external-resources"></a>Externí zdroje  
   

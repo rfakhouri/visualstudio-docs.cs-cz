@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e15bf0b8de7f4228fda36c1e7fda24a239f9b335
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fc45927ad6cc1189ed1d08328b4dd362821cdcb6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097372"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696468"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>Ladění ve smíšeném režimu je podporováno, pouze pokud používáte rozhraní Microsoft .NET Framework 2.0 nebo 3.0.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Verze rozhraní Microsoft .NET Framework starší než 2.0 se neposkytuje podpor
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
-- Zobrazit [nastavení ladění SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+- Zobrazit [nastavení ladění SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění 64bitových aplikací](../debugger/debug-64-bit-applications.md)

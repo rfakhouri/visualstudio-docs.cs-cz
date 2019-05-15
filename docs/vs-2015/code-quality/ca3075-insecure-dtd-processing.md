@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425439"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693413"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Zpracování nezabezpečené specifikace DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63425439"
  Pokud používáte nezabezpečené <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> instance nebo odkaz na externí entity zdroje, analyzátor může přijmout nedůvěryhodné vstupní tak zveřejnit citlivé informace, které útočníci.
 
 ## <a name="rule-description"></a>Popis pravidla
- A [dokumentu typ definice (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) je jedním ze dvou způsobů analyzátor jazyka XML můžete určit platnosti dokumentu, podle definice [World Wide Web Consortium (W3C) značky XML (Extensible Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Toto pravidlo vyhledá vlastnosti a instance, kde je nedůvěryhodná data přijat upozornit vývojáře o potenciál [informacím](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) hrozeb, které mohou vést k [útok na dostupnost služby (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) útoky. Toto pravidlo aktivuje, když:
+ A [dokumentu typ definice (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) je jedním ze dvou způsobů analyzátor jazyka XML můžete určit platnosti dokumentu, podle definice [World Wide Web Consortium (W3C) značky XML (Extensible Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Toto pravidlo vyhledá vlastnosti a instance, kde je nedůvěryhodná data přijat upozornit vývojáře o potenciál [informacím](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) hrozeb, které mohou vést k [útok na dostupnost služby (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) útoky. Toto pravidlo aktivuje, když:
 
 - Je zapnutá DtdProcessing <xref:System.Xml.XmlReader> instanci, která přeloží externí entity XML pomocí <xref:System.Xml.XmlUrlResolver>.
 
@@ -59,7 +59,7 @@ ms.locfileid: "63425439"
 
 - Zakázat zpracování DTD, pokud pracujete se sekvenčním nedůvěryhodných zdrojů tak, že nastavíte <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> vlastnost **true** .
 
-- Pomocí třídy XmlTextReader má vyžádané dědičnosti úplný vztah důvěryhodnosti. Zobrazit [požadavky na dědičnost](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Další informace.
+- Pomocí třídy XmlTextReader má vyžádané dědičnosti úplný vztah důvěryhodnosti. Zobrazit [požadavky na dědičnost](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Další informace.
 
   Rozhraní .NET 4 a novější
 

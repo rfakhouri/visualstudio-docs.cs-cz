@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb4e07f90f3a05f61957898c579b9a70da6e5ce1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 58c06c67daef727db91fa42c7ee8ce97ff183f38
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039224"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685456"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Postupy: Ukládání a otevírání souborů s kódováním
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,5 +59,5 @@ Uložte soubory s konkrétní znak kódování pro podporu obousměrných jazyc�
 3. Postupujte podle kroků 2 a 3 v předchozím postupu.  
   
 ## <a name="see-also"></a>Viz také  
- [Kódování a globalizace Windows Forms](http://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
+ [Kódování a globalizace Windows Forms](https://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
  [Globalizace a lokalizace aplikací](../ide/globalizing-and-localizing-applications.md)

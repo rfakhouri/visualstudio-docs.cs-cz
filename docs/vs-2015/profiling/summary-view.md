@@ -16,12 +16,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7482fb99114b4a30281d84045faa14d1a6562471
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8c1b8b10234e8b297be471f596cc1739deab317d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110894"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674176"
 ---
 # <a name="summary-view"></a>Souhrnné zobrazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +52,8 @@ Souhrnné zobrazení zobrazuje informace o výkonu – nejdražší funkce nebo 
 |**Zobrazit oříznutý strom volání**|Nejdražší cesty spuštění se zobrazí v zobrazení stromu volání. Další informace najdete v tématu [zobrazení stromu volání](../profiling/call-tree-view.md).|  
 |**Zobrazit kritické řádky**|Není k dispozici pro profilaci dat, která byla shromážděna pomocí metody instrumentace. Nejdražší řádky zdrojového kódu se zobrazí v zobrazení řádků. Další informace najdete v tématu [zobrazení řádků](../profiling/lines-view.md).|  
 |**Porovnat sestavy**|Zobrazí **vybrat soubory analýzy k porovnání** dialogovému oknu, kde můžete určit jiný soubor dat profilování má být porovnán s aktuální soubor. Další informace najdete v tématu [porovnávání datových souborů výkonu](../profiling/comparing-performance-data-files.md).|  
-|**Export dat sestavy**|Zobrazí **Export sestavy** dialogovému oknu, kde můžete určit jeden nebo více zobrazení sestav pro uložení jako hodnoty oddělené čárkou (CSV) nebo soubory XML. Další informace najdete v tématu [jak: Nástroje pro profilaci export sestavy](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
-|**Uložit analyzovanou sestavu**|Uloží aktuální soubor dat profilování jako .vsps soubor, který otevře rychleji v rozhraní [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Další informace najdete v tématu [jak: Uložit analyzovat, datovými soubory profilace](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
+|**Export dat sestavy**|Zobrazí **Export sestavy** dialogovému oknu, kde můžete určit jeden nebo více zobrazení sestav pro uložení jako hodnoty oddělené čárkou (CSV) nebo soubory XML. Další informace najdete v tématu [jak: Nástroje pro profilaci export sestavy](https://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
+|**Uložit analyzovanou sestavu**|Uloží aktuální soubor dat profilování jako .vsps soubor, který otevře rychleji v rozhraní [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Další informace najdete v tématu [jak: Uložit analyzovat, datovými soubory profilace](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
 |**Filtrovat Data sestavy**|Zobrazí profilování podokna filtru sestavy, ve kterém můžete zadat kritéria k omezení dat v zobrazení sestav. Další informace najdete v tématu [filtr zobrazení sestav výkonu](../profiling/performance-report-view-filter.md)|  
 |**Přepnout režim celé obrazovky**|Přepíná režim celé obrazovky pro zobrazení sestavy.|  
   

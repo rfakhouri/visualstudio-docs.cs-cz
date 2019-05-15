@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2b2d4ee5feb0bed25ad41931f151e81db6edd3c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d65d1a758523aaf7652f2d47bec50aa9fdb91884
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442601"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694014"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3: Přiřazení náhodné ikony každému popisku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ Pokud se ikony každou hru zobrazí ve stejných buňkách, není to zrovna nár
   
      První řádek převede `control` proměnné pro popisek s názvem `iconLabel`. Následující řádek, který je `if` příkaz, který zkontroluje, ujistěte se, že převod pracovali. Pokud byl převod úspěšný, příkazy `if` příkaz spustit. (Jak si pravděpodobně pamatujete z předchozích tutoriálů, `if` prohlášení se používá k vyhodnocení libovolné podmínky.) První řádek `if` příkaz vytvoří proměnnou s názvem `randomNumber` , která obsahuje náhodné číslo, které odpovídá jedné z položek v seznamu ikon. K tomu použije `Next` metodu `Random` objekt, který jste vytvořili dříve. `Next` Metoda vrátí náhodné číslo. Tento řádek také používá `Count` vlastnost `icons` seznamu k určení rozsahu, ze kterého se náhodné číslo vybere. Další řádek přiřadí jednu ikony položky seznamu `Text` popisku. Komentovaný řádek je vysvětlen později v tomto tématu. Nakonec poslední řádek v `if` příkaz odebere ze seznamu ikonu, která byla přidána do formuláře.  
   
-     Nezapomeňte, že pokud si nejste jisti, co dělá některá část kódu, můžete umístit ukazatel myši nad prvek kódu a přečíst si zobrazený popisek. Můžete také krokovat po řádcích kódu, zatímco je program spuštěn pomocí ladicího programu sady Visual Studio. Zobrazit [postup: Krok v ladicím programu v sadě Visual Studio? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) nebo [procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md) Další informace.  
+     Nezapomeňte, že pokud si nejste jisti, co dělá některá část kódu, můžete umístit ukazatel myši nad prvek kódu a přečíst si zobrazený popisek. Můžete také krokovat po řádcích kódu, zatímco je program spuštěn pomocí ladicího programu sady Visual Studio. Zobrazit [postup: Krok v ladicím programu v sadě Visual Studio? ](https://msdn.microsoft.com/vstudio/ee672313.aspx) nebo [procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md) Další informace.  
   
-3. Pokud chcete zaplnit hrací plochu ikonami, je potřeba volat `AssignIconsToSquares()` metoda co nejdříve po spuštění programu. Pokud používáte jazyk Visual C#, přidejte příkaz pod volání `InitializeComponent()` metodu `Form1` *konstruktor*, aby formulář volal vaši novou metodu pro vlastní nastavení, než se zobrazí. Konstruktory jsou volány při vytváření nového objektu, například třídy nebo struktury. Zobrazit [konstruktory (C# Programming Guide)](http://msdn.microsoft.com/library/ace5hbzh.aspx) nebo [používání konstruktorů a destruktorů](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) v jazyce Visual Basic pro další informace.  
+3. Pokud chcete zaplnit hrací plochu ikonami, je potřeba volat `AssignIconsToSquares()` metoda co nejdříve po spuštění programu. Pokud používáte jazyk Visual C#, přidejte příkaz pod volání `InitializeComponent()` metodu `Form1` *konstruktor*, aby formulář volal vaši novou metodu pro vlastní nastavení, než se zobrazí. Konstruktory jsou volány při vytváření nového objektu, například třídy nebo struktury. Zobrazit [konstruktory (C# Programming Guide)](https://msdn.microsoft.com/library/ace5hbzh.aspx) nebo [používání konstruktorů a destruktorů](https://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) v jazyce Visual Basic pro další informace.  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#13)]  
   

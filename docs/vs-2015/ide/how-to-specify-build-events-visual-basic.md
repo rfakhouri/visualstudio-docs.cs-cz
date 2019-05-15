@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 315a0e2f6c68a98eac8bb2c36d184ef68998e5ae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c21b50aab30d3ce7603ab8e5f7e6582332e94628
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435128"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685406"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Postupy: Určení událostí sestavení (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -165,7 +165,7 @@ Událostí sestavení v jazyce Visual Basic můžete použít ke spouštění sk
     ```  
   
 ## <a name="see-also"></a>Viz také  
- [Správa vlastností kompilace](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Správa vlastností kompilace](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Stránka kompilovat, Návrhář projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Publikovat stranu, Návrhář projektu](../ide/reference/publish-page-project-designer.md)   
  [Dialogové okno Příkazový řádek události před sestavením události/po sestavení](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   

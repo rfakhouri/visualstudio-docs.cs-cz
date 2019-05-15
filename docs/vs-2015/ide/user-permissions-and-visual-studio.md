@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d8ba826e332141a3ee53a70185f0e8e18e465f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8bc4920c32d781d31a6aed88699efccf8be6b774
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443221"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703993"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uživatelská oprávnění a sada Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Z důvodu bezpečnosti by měl být systém Visual Studio spuštěn s normáln
 |Instalace|Instalace sady Visual Studio|[Instalaci sady Visual Studio 2015](../install/install-visual-studio-2015.md)|
 ||Upgrade ze zkušební edice sady Visual Studio|[Postupy: Upgrade ze zkušební edice sady Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Instalace, aktualizace nebo odebrání obsahu místní nápovědy|[Instalace a správa místního obsahu](../ide/install-and-manage-local-content.md)|
-|Typy aplikací|Vývoj řešení pro SharePoint 2010|[Požadavky na vývoj řešení služby SharePoint](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
+|Typy aplikací|Vývoj řešení pro SharePoint 2010|[Požadavky na vývoj řešení služby SharePoint](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||Získání vývojářské licence pro [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Získejte licenci vývojáře (aplikace pro Windows Store)](http://go.microsoft.com/fwlink/?LinkID=241313)|
 |Sada nástrojů|Přidání klasického modelu COM ovládacích prvků do **nástrojů**.|[Používání sady nástrojů](../ide/using-the-toolbox.md)|
-|Doplňky|Instalace a používání doplňků, které byly vytvořeny pomocí klasického modelu COM v rozhraní IDE|[Vytváření doplňků a průvodců](http://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
-|Sestavování|Použití událostí po sestavení, které registrují komponentu|[Seznámení s kroky vlastního sestavení a s událostmi sestavení](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
-||Zahrnutí registračního kroku do sestavování projektů v jazyce C++|[Seznámení s kroky vlastního sestavení a s událostmi sestavení](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
+|Doplňky|Instalace a používání doplňků, které byly vytvořeny pomocí klasického modelu COM v rozhraní IDE|[Vytváření doplňků a průvodců](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
+|Sestavování|Použití událostí po sestavení, které registrují komponentu|[Seznámení s kroky vlastního sestavení a s událostmi sestavení](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
+||Zahrnutí registračního kroku do sestavování projektů v jazyce C++|[Seznámení s kroky vlastního sestavení a s událostmi sestavení](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
 |Ladění|Ladění aplikací spouštěných se zvýšenými oprávněními|[Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)|
 ||Ladění aplikací, které běží pod jiným uživatelským účtem, jako jsou weby ASP.NET|[Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
-||Ladění v zóně pro aplikace prohlížeče XAML (XBAP)|[Hostitel WPF (PresentationHost.exe)](http://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
+||Ladění v zóně pro aplikace prohlížeče XAML (XBAP)|[Hostitel WPF (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
 ||Použití emulátoru k ladění projektů cloudových služeb pro Microsoft Azure.|[Ladění cloudové služby v sadě Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
-||Konfigurace brány firewall pro vzdálené ladění|[Nastavení nástroje Remote Tools na zařízení](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
+||Konfigurace brány firewall pro vzdálené ladění|[Nastavení nástroje Remote Tools na zařízení](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Nástroje pro měření výkonu|Profilace aplikace|[Průvodce začátečníka profilací výkonu](../profiling/beginners-guide-to-performance-profiling.md)|
 |Nasazení|Nasazení webové aplikace do Internetové informační služby (IIS) v místním počítači|[Nasazení webové aplikace ASP.NET u poskytovatele hostingu pomocí sady Visual Studio nebo Visual Web Developer: Nasazení do služby IIS jako testovacího prostředí](http://go.microsoft.com/fwlink/?LinkId=266478)|
 |Poskytování zpětné vazby společnosti Microsoft|Změna způsobu účasti v programu Visual Studio Customer Experience Program|[Postupy: Odeslat zpětnou vazbu](../misc/how-to-send-feedback-about-visual-studio.md)|

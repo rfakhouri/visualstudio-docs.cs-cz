@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0806df31b7e1f225ecefc823cbcbdb0a72ff2058
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660265"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686520"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Postupy: Sestavení projektu s prostředky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,18 +31,18 @@ Pokud vytváříte lokalizované verze projektu, musí se oddělit všechny prvk
   
 #### <a name="to-compile-resources-with-msbuild"></a>Chcete-li zkompilovat prostředků pomocí nástroje MSBuild  
   
-1.  Určit soubory prostředků v projektu a předat je do `GenerateResource` úkolů, buď jako seznam položek, nebo jako názvy souborů.  
+1. Určit soubory prostředků v projektu a předat je do `GenerateResource` úkolů, buď jako seznam položek, nebo jako názvy souborů.  
   
-2.  Zadejte `OutputResources` parametr `GenerateResource` úkol, který vám umožní nastavit názvy pro výstupní soubory prostředků.  
+2. Zadejte `OutputResources` parametr `GenerateResource` úkol, který vám umožní nastavit názvy pro výstupní soubory prostředků.  
   
-3.  Použití `Output` element úkolu k uložení hodnoty `OutputResources` parametr v položce.  
+3. Použití `Output` element úkolu k uložení hodnoty `OutputResources` parametr v položce.  
   
-4.  Pomocí položky vytvořené z `Output` element jako vstup do jiného úkolu.  
+4. Pomocí položky vytvořené z `Output` element jako vstup do jiného úkolu.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad kódu ukazuje jak `Output` element určuje, že `OutputResources` atribut `GenerateResource` úkol bude obsahovat soubory kompilované prostředků `alpha.resources` a `beta.resources` a že se tyto dva soubory umístit do `Resources` seznam položek. Díky identifikaci těchto souborů .resources jako kolekce položek se stejným názvem, můžete snadno použít jako vstupy pro jiný úkol, například [Csc](../msbuild/csc-task.md) úloh.  
   
- Tato úloha je ekvivalentní k použití **/compile** přepnout [Resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4):  
+ Tato úloha je ekvivalentní k použití **/compile** přepnout [Resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4):  
   
  `Resgen.exe /compile alpha.resx,alpha.resources /compile beta.txt,beta.resources`  
   
@@ -83,4 +83,4 @@ Pokud vytváříte lokalizované verze projektu, musí se oddělit všechny prvk
 [MSBuild](msbuild.md)  
  [Generateresource – úloha](../msbuild/generateresource-task.md)   
  [CSC – úloha](../msbuild/csc-task.md)   
- [Resgen.exe (generátor zdrojových souborů)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
+ [Resgen.exe (generátor zdrojových souborů)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)

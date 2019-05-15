@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da608c7f937a09d56b25b87625580e5047d560cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431940"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705050"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Nástroje modelu dat entity v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +53,8 @@ Entity Framework je objektově relační mapování technologie, která umožňu
 
 |Název|Popis|
 |-----------|-----------------|
-|[ADO.NET Entity Framework](http://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Popisuje způsob použití [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] nástroje, které [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] poskytuje k vytváření aplikací.|
-|[Model EDM (Entity Data Model)](http://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Obsahuje odkazy a informace pro práci s daty, která používá aplikace založené na [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
+|[ADO.NET Entity Framework](https://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Popisuje způsob použití [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] nástroje, které [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] poskytuje k vytváření aplikací.|
+|[Model EDM (Entity Data Model)](https://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Obsahuje odkazy a informace pro práci s daty, která používá aplikace založené na [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
 |[Začínáme na úplné rozhraní .NET (konzola, WinForms, WPF atd.)](/ef/ef6/get-started)|Kurzy týkající se vytváření desktopových aplikací .NET, které pomocí Entity Frameworku 7.|
 |[ASP.NET 5 aplikace pro novou databázi](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Popisuje, jak vytvořit novou aplikaci ASP.NET 5 pomocí Entity Frameworku 7.|
 

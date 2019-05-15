@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db5b2df99a887511351e6b5bd120968edf7c53cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 72af15a510fffedf4986f292058377989bb20973
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080862"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695592"
 ---
 # <a name="display-data-in-blend"></a>Zobrazení dat v Blendu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Při úpravách rozložení stránek, můžete zobrazit ukázkových dat do náv
  **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [vytvořit zdroj dat XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
 ## <a name="LiveStore"></a> Zobrazit živá data v aplikaci Store nebo telefon  
- Zobrazit [pracovat s daty a soubory (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
+ Zobrazit [pracovat s daty a soubory (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření uživatelského rozhraní pomocí nástroje Blend pro Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

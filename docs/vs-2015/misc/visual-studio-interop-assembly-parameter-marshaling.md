@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac95c40b356c542da323a3ea3744827087f2d840
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436528"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686928"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parametr spolupracujícího sestavení sady Visual Studio zařazování
-Volání nebo volat nespravovaný kód com. pravděpodobně rozšíření VSPackages, která jsou napsána ve spravovaném kódu. Argumenty metody jsou obvykle, transformovat nebo zařadit automaticky interoperační zařazovač. Ale někdy argumenty nelze transformovat v přímočarým způsobem. V těchto případech parametry prototyp metody sestavení vzájemné spolupráce se používají tak, aby odpovídaly parametrům funkcí modelu COM co nejpřesněji. Další informace najdete v tématu [zařazování Interop](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
+Volání nebo volat nespravovaný kód com. pravděpodobně rozšíření VSPackages, která jsou napsána ve spravovaném kódu. Argumenty metody jsou obvykle, transformovat nebo zařadit automaticky interoperační zařazovač. Ale někdy argumenty nelze transformovat v přímočarým způsobem. V těchto případech parametry prototyp metody sestavení vzájemné spolupráce se používají tak, aby odpovídaly parametrům funkcí modelu COM co nejpřesněji. Další informace najdete v tématu [zařazování Interop](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
 ## <a name="general-suggestions"></a>Obecná doporučení  
   
@@ -123,7 +123,7 @@ else
  Spravované metody, které volají rozhraní tohoto typu by měl vyžádání prvního prvku mimo [out] pole. Tento element lze zacházet, jako by šlo `retval` návratová hodnota z odpovídající rozhraní modelu COM.  
   
 ## <a name="see-also"></a>Viz také  
- [Zařazování spolupráce](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [Zařazování spolupráce](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
- [Řešení potíží s interoperabilitou](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
+ [Zařazování spolupráce](https://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Zařazování spolupráce](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [Řešení potíží s interoperabilitou](https://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [Spravovaná rozšíření VSPackages](../misc/managed-vspackages.md)

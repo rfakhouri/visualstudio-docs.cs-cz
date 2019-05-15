@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5381c33790cbe9a7b5083f29d2602af39387bf61
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 56feab0eb399c2ce99ce3a6f2442ff602209c634
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386748"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697758"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Postupy: Přidání ověřování do tříd entit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,5 +126,5 @@ ms.locfileid: "63386748"
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Ověřování dat](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)
+ [Technologie LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Ověřování dat](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)

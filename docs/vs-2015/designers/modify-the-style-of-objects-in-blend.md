@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ee1e1bc8762ae21ea69db5215d4dc472858d720
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5ca94c88a1f131065b7d5de57e9cdc200696d58
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442456"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681435"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Úpravy stylu objektů v Blendu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,12 +95,12 @@ Nejjednodušší způsob, jak přizpůsobit objektu je můžete nastavit vlastno
  **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [vytvoření stylu](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Platí pro ovládací prvek stylu nebo šablony  
- Klikněte pravým tlačítkem na objekt [objekty a časová osa](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelu, vyberte **upravit šablonu**a klikněte na tlačítko **aplikovat zdroj**.  
+ Klikněte pravým tlačítkem na objekt [objekty a časová osa](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelu, vyberte **upravit šablonu**a klikněte na tlačítko **aplikovat zdroj**.  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Obnovit výchozí styl nebo šablonu ovládacího prvku  
- Vyberte ovládací prvek a [vlastnosti](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelu, vyhledejte **styl** nebo **šablony** vlastnost. Potom klikněte na **pokročilé možnosti** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")a potom klikněte na tlačítko **resetování** v místní nabídce.  
+ Vyberte ovládací prvek a [vlastnosti](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelu, vyhledejte **styl** nebo **šablony** vlastnost. Potom klikněte na **pokročilé možnosti** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")a potom klikněte na tlačítko **resetování** v místní nabídce.  
   
 ## <a name="Visual"></a> Vizuální stavy: Změna vzhledu ovládacího prvku na základě jeho stavu  
  Ovládací prvky mohou mít různé vizuální vzhled na základě interakcí uživatele. Například můžete provést na tlačítko se změní na zelenou když na něj uživatel klikne nebo můžete spustit animaci. Zkraťte nebo prodloužit doba mezi vizuálních stavů pomocí přechodů.  

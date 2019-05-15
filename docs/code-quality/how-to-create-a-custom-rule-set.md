@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2f642ea8e41e4a9ccf2b35f432df528fc5e81d0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816563"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676564"
 ---
 # <a name="customize-a-rule-set"></a>Přizpůsobení sady pravidel
 
 Můžete vytvořit vlastní sadu pravidel, která podle potřeb konkrétního projektu pro analýzu kódu.
 
-## <a name="create-a-custom-rule-set"></a>Vytvoření vlastní sady pravidel
+## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Vytvoření vlastního pravidla nastavení z existující sady pravidel
 
 Chcete-li vytvořit vlastní pravidlo nastavte, můžete otevřít sadu předdefinovaných pravidel **s editorem sad pravidel**. Odtud můžete přidat nebo odebrat konkrétní pravidla a akce, která nastane, pokud došlo k porušení pravidla můžete změnit&mdash;například zobrazit upozornění nebo chybu.
 
@@ -40,7 +40,12 @@ Chcete-li vytvořit vlastní pravidlo nastavte, můžete otevřít sadu předdef
 
 4. Vyberte **otevřít** zobrazíte pravidla v editoru sad pravidel.
 
-Můžete také vytvořit nový soubor sady pravidel z **nový soubor** dialogové okno:
+> [!NOTE]
+> Pokud máte projekt .NET Core nebo .NET Standard, proces se mírně liší, protože neexistuje žádný **analýzy kódu** kartu vlastností. Uvedený postup [zkopírujte předem definované pravidlo, nastavte do vašeho projektu a nastavte ji jako aktivní sadu pravidel](analyzer-rule-sets.md). Po zkopírování přes sadu pravidel, můžete [upravit v sadě Visual Studio s editorem sad pravidel](working-in-the-code-analysis-rule-set-editor.md) otevřením z **Průzkumníka řešení**.
+
+## <a name="create-a-new-rule-set"></a>Vytvoření nové sady pravidel
+
+Můžete vytvořit nový soubor sady pravidel z **nový soubor** dialogové okno:
 
 1. Vyberte **souboru** > **nový** > **souboru**, nebo stiskněte klávesu **Ctrl**+**N**.
 
@@ -50,9 +55,12 @@ Můžete také vytvořit nový soubor sady pravidel z **nový soubor** dialogov�
 
    Nové *.ruleset* soubor se otevře v editoru sad pravidel.
 
-### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Vytvoření vlastního pravidla nastavit z více sad pravidel
+## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Vytvoření vlastního pravidla nastavit z více sad pravidel
 
-1. V Průzkumníku řešení klikněte pravým tlačítkem myši na projekt a pak vyberte **vlastnosti**.
+> [!NOTE]
+> Následující postup se nevztahují na projekty .NET Core, které nemají **analýzy kódu** kartu vlastností.
+
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a pak vyberte **vlastnosti**.
 
 2. Na **vlastnosti** stránky, vyberte **analýzy kódu** kartu.
 
@@ -68,7 +76,7 @@ Můžete také vytvořit nový soubor sady pravidel z **nový soubor** dialogov�
 
 6. Vyberte **otevřete** otevřete novou sadu pravidel v editoru sad pravidel.
 
-### <a name="rule-precedence"></a>Priorita pravidla
+## <a name="rule-precedence"></a>Priorita pravidla
 
 - Pokud je uvedené dva stejné pravidlo nebo víckrát v pravidle nastavit s jinou závažností, kompilátor vygeneruje chybu. Příklad:
 
@@ -112,7 +120,7 @@ Chcete-li změnit zobrazovaný název sady pravidel, která je otevřená v edit
 
 ## <a name="next-steps"></a>Další kroky
 
-Teď, když máte sadu pravidel, dalším krokem je přizpůsobit pravidla přidávání nebo odstraňování pravidel nebo úpravou závažnost porušení pravidel.
+Teď, když máte sadu pravidel, dalším krokem je přizpůsobit pravidla přidáváním nebo odebíráním pravidel nebo změna závažnosti porušení pravidel.
 
 > [!div class="nextstepaction"]
 > [Úprava pravidel v editoru sad pravidel](../code-quality/working-in-the-code-analysis-rule-set-editor.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e22a606c720f7d6b3304f6afb297ed76390f7ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92ab4afc410f08690d54488cc12d4d7be1ffb41d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558395"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694796"
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Práce s Konceptuálními modely (WCF Data Services)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,8 +34,8 @@ Při použití koncepčního modelu pro popis dat v databázi se můžete dotazo
   
 |Téma|Popis|  
 |-----------|-----------------|  
-|[Postupy: Spuštění dotazů v datové službě](http://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Ukazuje, jak provádět dotazy z datové služby [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aplikace.|  
-|[Postupy: Výsledky dotazu projektu](http://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Ukazuje, jak snížit množství dat, které jsou vráceny prostřednictvím dotazu v datové službě.|  
+|[Postupy: Spuštění dotazů v datové službě](https://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Ukazuje, jak provádět dotazy z datové služby [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aplikace.|  
+|[Postupy: Výsledky dotazu projektu](https://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Ukazuje, jak snížit množství dat, které jsou vráceny prostřednictvím dotazu v datové službě.|  
   
  Při použití konceptuálního modelu můžete definovat, jaký druh dat je platný v jazyce, který odpovídá vaší domény. Můžete definovat platná data v modelu, nebo můžete přidat ověření pro operace, které můžete provádět na entity nebo dat služby.  
   
@@ -43,15 +43,15 @@ Při použití koncepčního modelu pro popis dat v databázi se můžete dotazo
   
 |Téma|Popis|  
 |-----------|-----------------|  
-|[Postupy: Zachycování zpráv datové služby](http://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Ukazuje, jak přidat ověřování do datové operace služby.|  
+|[Postupy: Zachycování zpráv datové služby](https://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Ukazuje, jak přidat ověřování do datové operace služby.|  
   
  Následující témata ukazují, jak vytvořit, aktualizovat a odstraňovat data o provádění operací na entity.  
   
 |Téma|Popis|  
 |-----------|-----------------|  
-|[Postupy: Přidání, úpravy a odstranění entit](http://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Ukazuje, jak vytvářet, aktualizovat a odstraňovat data entity ve službě data.|  
-|[Postupy: Definování vztahů mezi entitami](http://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Ukazuje, jak vytvořit nebo změnit vztahy v datových služeb.|  
+|[Postupy: Přidání, úpravy a odstranění entit](https://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Ukazuje, jak vytvářet, aktualizovat a odstraňovat data entity ve službě data.|  
+|[Postupy: Definování vztahů mezi entitami](https://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Ukazuje, jak vytvořit nebo změnit vztahy v datových služeb.|  
   
 ## <a name="see-also"></a>Viz také  
  [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [Dotazování v datové službě](http://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)
+ [Dotazování v datové službě](https://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)

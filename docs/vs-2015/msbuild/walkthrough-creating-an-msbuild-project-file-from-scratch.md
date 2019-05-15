@@ -11,19 +11,19 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445610"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682365"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Návod: Vytvoření souboru projektu MSBuild od začátku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Programovací jazyky, které jsou cíleny rozhraní .NET Framework používají soubory projektu MSBuild k popisu a řízení procesu sestavení aplikace. Při použití sady Visual Studio k vytvoření souboru projektu MSBuild je odpovídající kód XML je automaticky přidán do souboru. Však může být pro vás užitečné porozumět uspořádání XML a jak můžete změnit, aby řídil sestavení.  
   
- Informace o vytváření souboru projektu pro projekt jazyka C++, naleznete v tématu [MSBuild (Visual C++)](http://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
+ Informace o vytváření souboru projektu pro projekt jazyka C++, naleznete v tématu [MSBuild (Visual C++)](https://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
   
  Tento návod ukazuje, jak vytvořit soubor základního projektu postupně pomocí textového editoru. Návod postupuje podle těchto kroků:  
   

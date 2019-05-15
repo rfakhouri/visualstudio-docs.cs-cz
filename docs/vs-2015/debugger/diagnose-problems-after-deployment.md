@@ -9,12 +9,12 @@ caps.latest.revision: 66
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40af4a29d35e4bd060251d0db8b6cb13dbb44caf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6b8c9cbc856559e349851dd4c08b65883793a640
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081005"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675904"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnostika problémů po nasazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použ
 #### <a name="TFS2013"></a> Team Foundation Server 2013  
  Nastavte definici sestavení přidat umístění zdroje, sestavení a symboly do manifestu sestavení (soubor BuildInfo.config). Team Foundation Build automaticky vytvoří tento soubor a umístí jej do výstupní složky vašeho projektu.  
   
-1. [Upravte definici sestavení nebo vytvořte novou definici sestavení.](http://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [Upravte definici sestavení nebo vytvořte novou definici sestavení.](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
     ![Zobrazit sestavení definice v TFS 2013](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
@@ -56,7 +56,7 @@ Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použ
   
     ![Nastavit cestu symbolů v definici sestavení TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-    Další informace o symbolech naleznete v tématu [publikování dat symbolů](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+    Další informace o symbolech naleznete v tématu [publikování dat symbolů](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
   
 4. Přidejte tento argument MSBuild, čímž zahrnout vaše TFS a umístění symbolů do souboru manifestu sestavení:  
   
@@ -144,7 +144,7 @@ Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použ
  **/p:BuildSymbolStorePath =**\<*cesty k symbolům*>  
   
 ## <a name="DeployRelease"></a> Krok 2: Vydávejte svoje aplikace  
- Pokud používáte [balíčku Web.Deploy](http://msdn.microsoft.com/library/dd394698.aspx) , která byla vytvořena procesem sestavení pro nasazení vaší aplikace, manifest sestavení automaticky přejmenován z "*ProjectName*. BuildInfo.config"k"BuildInfo.config"a je umístěn ve stejné složce se souborem Web.config vaší aplikace na webovém serveru.  
+ Pokud používáte [balíčku Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) , která byla vytvořena procesem sestavení pro nasazení vaší aplikace, manifest sestavení automaticky přejmenován z "*ProjectName*. BuildInfo.config"k"BuildInfo.config"a je umístěn ve stejné složce se souborem Web.config vaší aplikace na webovém serveru.  
   
  Pokud nasadíte aplikaci pomocí jiné metody, ujistěte se, že manifest sestavení je přejmenován ze "*ProjectName*. BuildInfo.config"k"BuildInfo.config"a je umístěn ve stejné složce se souborem Web.config vaší aplikace na webovém serveru.  
   
@@ -304,7 +304,7 @@ Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použ
   
    Informace o systému sestavení, buď `"TeamBuild"` nebo `"MSBuild"`, a tyto požadované vlastnosti:  
   
-  - **BuildLabel** (pro TeamBuild): Název sestavení a číslo. Tento popisek se také používá jako název události nasazení. Další informace o čísla sestavení najdete v tématu [použít sestavení čísla poskytnout smysluplné názvy k dokončeným sestavením](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
+  - **BuildLabel** (pro TeamBuild): Název sestavení a číslo. Tento popisek se také používá jako název události nasazení. Další informace o čísla sestavení najdete v tématu [použít sestavení čísla poskytnout smysluplné názvy k dokončeným sestavením](https://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
   
   - **SymbolPath** (doporučeno): Seznam identifikátorů URI pro vaše umístění symbolů (soubor PDB) oddělený středníky. Tyto identifikátory URI mohou být adresy URL nebo UNC. Díky tomu snadněji pro Visual Studio najít odpovídající symboly vám pomoci s laděním.  
   
@@ -364,7 +364,7 @@ Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použ
      ![Otevřít ze správy zdrojových kódů &#45; migrovat](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 #### <a name="WhatWorkspace"></a> DOTAZ: Co je pracovní prostor?  
- **ODPOVĚĎ:** Vaše [pracovní prostor ukládá kopie zdroje](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) takže můžete vyvinout a otestovat samostatně před vrácení práce se změnami. Pokud ještě nemáte pracovní prostor, který je přímo namapován na nalezené řešení nebo projekt, pak vás sada Visual Studio vyzve k výběru dostupného pracovního prostoru nebo k vytvoření nového pracovního prostoru s názvem vašeho počítače jako výchozím názvem pracovního prostoru.  
+ **ODPOVĚĎ:** Vaše [pracovní prostor ukládá kopie zdroje](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) takže můžete vyvinout a otestovat samostatně před vrácení práce se změnami. Pokud ještě nemáte pracovní prostor, který je přímo namapován na nalezené řešení nebo projekt, pak vás sada Visual Studio vyzve k výběru dostupného pracovního prostoru nebo k vytvoření nového pracovního prostoru s názvem vašeho počítače jako výchozím názvem pracovního prostoru.  
   
 #### <a name="UntrustedSymbols"></a> DOTAZ: Proč se zobrazí tato zpráva o nedůvěryhodných symbolech?  
  ![Ladit s cestou nedůvěryhodných symbolech? ](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  

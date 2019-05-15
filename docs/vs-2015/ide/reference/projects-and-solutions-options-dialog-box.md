@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92dac82de96323e1d057991e6570715371c9b272
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2bdcfc2f6a4b7655a6f4f2e335310e938e5acfed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438051"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701984"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projekty a řešení – dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63438051"
 Nastaví výchozí cestu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] složky projektu a určí výchozí chování **výstup** okně **seznamu úkolů**, a **Průzkumníka řešení** jako projekty jsou vyvíjeny a sestaven. Chcete-li získat přístup k tomuto dialogovému oknu, klikněte na tlačítko **Nástroje / možnosti** rozbalte **projekty a řešení**a klikněte na tlačítko **Obecné**.  
   
 > [!NOTE]
-> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Tato stránka nápovědy byl zapsán s **obecného vývojového nastavení** v úvahu. Chcete-li zobrazit nebo změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Tato stránka nápovědy byl zapsán s **obecného vývojového nastavení** v úvahu. Chcete-li zobrazit nebo změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Nastavení  
  **Umístění projektů**  
@@ -58,7 +58,7 @@ Nastaví výchozí cestu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] složky
  Při pokusu o vytvoření nového projektu nebo otevřete existující projekt do umístění, které není plně důvěryhodné (třeba na cestu UNC nebo cesta k protokolu HTTP), zobrazí se zpráva. Tuto možnost použijte k určení, zda zpráva se zobrazí pokaždé, když se při pokusu o vytvoření nebo otevření projektu do umístění, které není plně důvěryhodné.  
   
  **Zobrazit okno výstup při spuštění sestavení**  
- Automaticky zobrazí v okně výstupu v integrovaném vývojovém prostředí od počátku řešení sestavení. Další informace najdete v tématu [jak: Řízení výstupního okna](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Tato možnost je povolená ve výchozím nastavení.  
+ Automaticky zobrazí v okně výstupu v integrovaném vývojovém prostředí od počátku řešení sestavení. Další informace najdete v tématu [jak: Řízení výstupního okna](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Tato možnost je povolená ve výchozím nastavení.  
   
  **Vyzvat k symbolickému přejmenování při přejmenování souborů**  
  Pokud je vybráno, zobrazí pole zprávy s dotazem, zda je či není [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by měl také přejmenování všech referencí v projektu na prvek kódu.  

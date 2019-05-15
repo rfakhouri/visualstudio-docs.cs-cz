@@ -37,12 +37,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: feb0c1a5f486654844c592b6b946dedc9e2e02c0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 03f525d3b996875097ddee433d0e9ad887ee728f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840783"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679463"
 ---
 # <a name="create-models-for-your-app"></a>Vytváření modelů pro aplikaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ Diagramy modelování vám pochopit, objasnit a sdělovat nápady týkající se
 |[Modelování uživatelských požadavků](../modeling/model-user-requirements.md)|Použití modelů a komunikaci potřebám uživatelů.|  
 |[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|Použijte modely k popisu celkovou strukturu a chování vašeho systému a ujistěte se, že bude vyhovovat potřebám uživatelů.|  
 |[Ověřování systému během vývoje](../modeling/validate-your-system-during-development.md)|Ujistěte se, že software zůstane konzistentní s požadavky uživatelů a architektury systému.|  
-|[Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)<br /><br /> [Použití modelů v Agilním vývoji](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Použití modelů pro vám pomůže pochopit a změnit systému během vývoje.|  
+|[Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)<br /><br /> [Použití modelů v Agilním vývoji](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Použití modelů pro vám pomůže pochopit a změnit systému během vývoje.|  
 |[Strukturování řešení modelování](../modeling/structure-your-modeling-solution.md)|Uspořádejte modely ve velkém nebo středním projektu.|  
   
 ## <a name="external-resources"></a>Externí zdroje  

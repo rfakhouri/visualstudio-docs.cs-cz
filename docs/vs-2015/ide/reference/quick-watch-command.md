@@ -14,17 +14,17 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a4bc73046ca32645ffcdc8c3f2978c9245aaec6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c9ac805ebea19604343d561bf553448fff2ca575
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668064"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701750"
 ---
 # <a name="quick-watch-command"></a>Rychlé kukátko – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Zobrazí zadaný nebo vybraný text v poli výraz [dialogového okna rychlého kukátka](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867). Toto dialogové okno můžete použít k výpočtu aktuální hodnotu proměnné nebo výrazu rozpoznávaných ladicí program nebo obsah registru. Kromě toho můžete změnit hodnotu kterékoli proměnné nekonstantní nebo obsah jakékoli registru.  
+Zobrazí zadaný nebo vybraný text v poli výraz [dialogového okna rychlého kukátka](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867). Toto dialogové okno můžete použít k výpočtu aktuální hodnotu proměnné nebo výrazu rozpoznávaných ladicí program nebo obsah registru. Kromě toho můžete změnit hodnotu kterékoli proměnné nekonstantní nebo obsah jakékoli registru.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,7 +46,7 @@ Debug.QuickWatchq [text]
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: Pomocí dialogového okna QuickWatch](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Postupy: Pomocí dialogového okna QuickWatch](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
  [Okno příkazového řádku](../../ide/reference/command-window.md)   
  [Pole najít/příkaz](../../ide/find-command-box.md)   

@@ -11,12 +11,12 @@ ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 40f06ee57c5c889c2004dbd5b85e269bfd0841ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 719a2b3d073d90ff3977496c7f98ebecb1ab48a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785040"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696309"
 ---
 # <a name="visualizing-and-viewing-data"></a>Vizualizace a zobrazení dat
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ Vizualizérů typů a vlastních prohlížečů k dispozici data způsobem, kter
  [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) je získán voláním [CreateVisualizerService](../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md). Tato metoda vyžaduje [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md) rozhraní, které se získává z [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) předán rozhraní [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). `IEEVisualizerServiceProvider::CreateVisualizerService` také vyžaduje [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md) a [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) rozhraní, které byly předány `IDebugParsedExpression::EvaluateSync`. Poslední rozhraní potřebný k vytvoření `IEEVisualizerService` rozhraní je [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md) rozhraní, která implementuje EE. Toto rozhraní umožňuje, aby změny provést, vlastnosti, který je právě vizualizován. Všechny vlastnosti data zapouzdřena v [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) rozhraní, které je také implementováno pomocí EE.  
   
 ### <a name="accessing-property-data"></a>Přístup k datům vlastnost  
- Přístup k datům vlastnost se provádí prostřednictvím [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md) rozhraní. Pro získání toto rozhraní, sady Visual Studio volá [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na vlastnosti objektu zobrazíte [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md) rozhraní (implementovat na stejný objekt, který implementuje [ IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) rozhraní) a pak zavolá [GetPropertyProxy](../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) metodu k získání `IPropertyProxyEESide` rozhraní.  
+ Přístup k datům vlastnost se provádí prostřednictvím [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md) rozhraní. Pro získání toto rozhraní, sady Visual Studio volá [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na vlastnosti objektu zobrazíte [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md) rozhraní (implementovat na stejný objekt, který implementuje [ IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) rozhraní) a pak zavolá [GetPropertyProxy](../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) metodu k získání `IPropertyProxyEESide` rozhraní.  
   
  Všechna data předaná do a z celkového počtu `IPropertyProxyEESide` rozhraní, je zapouzdřena v [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md) rozhraní. Toto rozhraní představuje pole bajtů a je implementována pomocí sady Visual Studio a EE. Vlastnosti dat se změnit, vytvoří Visual Studio `IEEDataStorage` objektu, že nová data a volání [CreateReplacementObject](../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) s tímto objektem data, aby bylo možné získat nový `IEEDataStorage` objekt, který je dále Předaný [InPlaceUpdateObject](../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md) k aktualizaci dat vlastnost. `IPropertyProxyEESide::CreateReplacementObject` Umožňuje EE k vytvoření vlastní instance třídy, která implementuje `IEEDataStorage` rozhraní.  
   
 ## <a name="supporting-custom-viewers"></a>Podpora vlastních prohlížečů  
- Příznak `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` je nastavena v `dwAttrib` pole [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) strukturu (vrácený voláním [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)) k označení, že objekt má vlastní prohlížeč související s ním. Pokud je tento příznak nastaven, získá sady Visual Studio [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) rozhraní z [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) rozhraní pomocí [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3).  
+ Příznak `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` je nastavena v `dwAttrib` pole [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) strukturu (vrácený voláním [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)) k označení, že objekt má vlastní prohlížeč související s ním. Pokud je tento příznak nastaven, získá sady Visual Studio [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) rozhraní z [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) rozhraní pomocí [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3).  
   
  Pokud si uživatel vybere vlastní prohlížeč, vytvoří Visual Studio vlastní vieweru. použijte v prohlížeči `CLSID` poskytnutých `IDebugProperty3::GetCustomViewerList` metody. Visual Studio pak zavolá [položky DisplayValue](../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) k zobrazení hodnoty pro uživatele.  
   

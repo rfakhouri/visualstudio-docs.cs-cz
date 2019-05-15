@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096332"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696383"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Postupy: Řešení potíží s upgrady projektu úspěšné sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,4 +57,4 @@ Někdy Visual Studio nemůže převést plně projektu ze starší verze [!INCLU
    Pokud chcete, aby projektu pro spuštění v upgradovaný [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze, musíte aktualizovat odkazy na projekt a aktualizujte také některé `Imports` nebo `Using` příkazy, které volají odkazy. Pokud váš projekt je načten v integrovaném vývojovém prostředí, můžete aktualizovat odkazy pomocí **Průzkumníka řešení** nebo **správce odkazů** dialogové okno.
 
 ## <a name="see-also"></a>Viz také
- [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [převod na technologii ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [převod na technologii ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

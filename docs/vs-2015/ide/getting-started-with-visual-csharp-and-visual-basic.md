@@ -16,19 +16,19 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eec821993ec1aef2f8b2ad6ad8f5109c07d1156
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584693"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674766"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Začínáme s jazykem Visual C# a Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ať už začínáte s jazykem Visual C#, nebo Microsoft Visual Basic, jste zde správně. Nápověda Začínáme je série postupných lekcí, které vás seznámí s jazyky Visual C# a Visual Basic. Bavte se a napište nějaký skvělý software.  
   
- Další informace o jazyce Visual C++, naleznete v tématu [materiály pro Visual C++](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
+ Další informace o jazyce Visual C++, naleznete v tématu [materiály pro Visual C++](https://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Návod: Vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  

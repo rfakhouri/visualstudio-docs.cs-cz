@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9e0024ae6db5af3f1cf23c07fe29fbac8e4827d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a360ee4ad35fd48a46f6d866912a05a584a54c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687307"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Zabezpečení metod by mělo být nadmnožinou typu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54788891"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>Příčina
- Typ má deklarativní zabezpečení a jeden z jeho metod má deklarativní zabezpečení pro stejnou akci zabezpečení a akce zabezpečení není [požadavky propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) nebo [požadavky na dědičnost](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)a oprávnění vráceno uživatelem typu nejsou podmnožinu oprávnění ověří pomocí metody.
+ Typ má deklarativní zabezpečení a jeden z jeho metod má deklarativní zabezpečení pro stejnou akci zabezpečení a akce zabezpečení není [požadavky propojení](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) nebo [požadavky na dědičnost](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)a oprávnění vráceno uživatelem typu nejsou podmnožinu oprávnění ověří pomocí metody.
 
 ## <a name="rule-description"></a>Popis pravidla
  Metoda by neměla mít v obou úrovni metody nebo typ deklarativní zabezpečení pro stejnou akci. Dva kontroly nejsou sloučeny; je použita pouze vyžádání úrovni metod. Například, pokud typ požaduje oprávnění `X`, a jeden z jeho metod požaduje oprávnění `Y`, kód nemá oprávnění k `X` spustí metodu.
@@ -62,4 +62,4 @@ ms.locfileid: "54788891"
  **[žádné oprávnění k zápisu (požadováno podle typu)] osobní údaje: 6/16/1964 12:00:00 AM**
  **[žádná oprávnění ke čtení (vyžadována metoda)] nelze přístup k osobním informacím: Požadavek se nezdařil.**
 ## <a name="see-also"></a>Viz také
- [Pokyny pro zabezpečené kódování](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [požadavky na dědičnost](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [požadavky na propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Data a modelování](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Pokyny pro zabezpečené kódování](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [požadavky na dědičnost](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [požadavky na propojení](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Data a modelování](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

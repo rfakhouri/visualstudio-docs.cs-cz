@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fcb0ae81a2f758f548f11bb9875b2275f6ebfe3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782509"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705762"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Dialogové okno Upřesnit nastavení (Vizualizér souběžnosti)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ S použitím **Upřesnit nastavení** dialogové okno v Concurrency Visualizer m
  Ve výchozím nastavení události CLR se shromažďují pouze v případě, že je profilována spravovaného procesu, protože jsou obvykle zbytečné pro nativní procesy.  V některých případech (například když nativní proces je hostitelem modulu CLR) bude pravděpodobně shromažďování událostí modulu CLR pro nativní proces.  Pokud tomu tak, **shromáždit pro nativní procesy** zaškrtávací políčko.  
   
 ### <a name="disable-rundown-events"></a>Zakázat události Rundown  
- Modul CLR generuje události z dva poskytovatelé: modul runtime a doběhu.  Pokud chcete shromažďování událostí modulu runtime CLR, ale nechcete shromažďování události rundown, vyberte **zakažte události doběhu** zaškrtávací políčko.  To snižuje velikost souboru trasování, který je generován kolekce, ale nemusí vyřešit některé balíčky. Další informace najdete v tématu [CLR ETW – zprostředkovatelé](http://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
+ Modul CLR generuje události z dva poskytovatelé: modul runtime a doběhu.  Pokud chcete shromažďování událostí modulu runtime CLR, ale nechcete shromažďování události rundown, vyberte **zakažte události doběhu** zaškrtávací políčko.  To snižuje velikost souboru trasování, který je generován kolekce, ale nemusí vyřešit některé balíčky. Další informace najdete v tématu [CLR ETW – zprostředkovatelé](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
   
 ### <a name="sample-events"></a>Ukázkové události  
  Ukázkové události můžete shromažďovat zásobníky volání, které jsou spojeny s provádění vlákna. Tyto události se shromažďují přibližně jednou za milisekundu pro vlákna, které jsou spuštěny v aktuálním procesu. Pokud zakážete shromažďování události vzorku, zmenšení shromážděného trasování, ale nelze zobrazit žádné zásobníky volání, které jsou spojeny s provádění vlákna.  

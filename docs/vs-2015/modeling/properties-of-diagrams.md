@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 287e9362162c00a5292815ebacfb8047b2a0bb7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d669d01339b92c64cfe03ccb3ae897a1816aeac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799943"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701760"
 ---
 # <a name="properties-of-diagrams"></a>Vlastnosti diagramů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Můžete nastavit vlastnosti, které určují, jak diagramy se zobrazí ve vygen
 |Vlastní atributy|Umožňuje přidat atributy vytvořené třídě kódu.|\<žádné >|  
 |Generuje Double odvozené|Pokud `True`, se vygeneruje základní třídu a částečné třídy (pro podporu přizpůsobení pomocí přepisů). Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Má vlastní konstruktor|Pokud `True`, poskytneme vám vlastního konstruktoru ve zdrojovém kódu. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
-|Modifikátor dědičnosti|Popisuje druh dědičnosti třídy zdrojový kód, který je generován z diagramu (`none`, `abstract` nebo `sealed`).|Žádná|  
+|Modifikátor dědičnosti|Popisuje druh dědičnosti třídy zdrojový kód, který je generován z diagramu (`none`, `abstract` nebo `sealed`).|Žádný|  
 |Základní Diagram|Základní třída tento diagram.|(žádné)|  
-|Název|Název tohoto diagramu.|Aktuální název|  
+|Name|Název tohoto diagramu.|Aktuální název|  
 |Obor názvů|Obor názvů, který je přidružený tento diagram.|Aktuální obor názvů|  
 |Reprezentovaná třída|Kořenová třída domény, který představuje tento diagram.|Pokud je k dispozici aktuální kořenová třída|  
 |Poznámky|Neformální poznámky, které jsou spojeny s tímto elementem.|\<žádné >|  
@@ -50,4 +50,4 @@ Můžete nastavit vlastnosti, které určují, jak diagramy se zobrazí ve vygen
 |Klíčové slovo nápovědy|Klíčové slovo, je použít k indexování nápovědy klávesy F1 pro tento diagram.|\<žádné >|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

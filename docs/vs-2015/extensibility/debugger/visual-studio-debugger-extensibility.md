@@ -11,12 +11,12 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 528716c4ea354ab63dc7fcab2b3f90fe2860b655
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e337e87d162ac59cc6bb45676c1411692dd1a3bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771933"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675257"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Rozšiřitelnost programu Visual Studio Debugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Visual Studio obsahuje ladicí program kód plně interaktivní zdroje, poskytuj
   
  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Zahrnuje úplný odkaz na všechny [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prvky potřebný k vytvoření nové DE. Kromě toho existují ukázek a kurzů, které vám pomůžou vám pomůžou začít.  
   
- Začátku do konce vzorku systému projektu jazyka s podporu ladění, najdete v článku [IronPython ukázkové](http://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Začátku do konce vzorku systému projektu jazyka s podporu ladění, najdete v článku [IronPython ukázkové](https://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
   
  Následující části popisují, jak rozšířit pomocí ladicího programu [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   

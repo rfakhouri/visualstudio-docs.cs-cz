@@ -23,12 +23,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f98441afbe8056fa01a11d7265447a293cd10fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f1ec1c18fe92409a72994e4544215da01325d209
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446153"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687521"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Nastavení projektu pro konfiguraci ladění jazyka C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,10 +43,10 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C# v **str�
 |**Nastavení**|**Popis**|  
 |-----------------|---------------------|  
 |**Konfigurace**|Nastaví režim pro kompilaci aplikace. Zvolte mezi **aktivní (ladění)**, **ladění**, **vydání**, **všechny konfigurace**.|  
-|**Spustit akci**|Tato skupina ovládacích prvků určuje akci, která bude vytvářena při výběru spuštění v nabídce ladění.<br /><br /> -   **Spustit projekt** je výchozí nastavení a spuštění projektu po spuštění pro ladění. Další informace najdete v tématu [výběr spouštěného projektu](http://msdn.microsoft.com/222e3f32-a6fe-4941-bf37-6b2a921129fd).<br />-   **Spustit externí program** umožňuje spuštění a připojení k programu, který není součástí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. Další informace najdete v tématu [připojení ke spuštění programu](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).<br />-   **Spustit prohlížeč v adrese URL** umožňuje ladění webové aplikace.|  
+|**Spustit akci**|Tato skupina ovládacích prvků určuje akci, která bude vytvářena při výběru spuštění v nabídce ladění.<br /><br /> -   **Spustit projekt** je výchozí nastavení a spuštění projektu po spuštění pro ladění. Další informace najdete v tématu [výběr spouštěného projektu](https://msdn.microsoft.com/222e3f32-a6fe-4941-bf37-6b2a921129fd).<br />-   **Spustit externí program** umožňuje spuštění a připojení k programu, který není součástí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. Další informace najdete v tématu [připojení ke spuštění programu](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).<br />-   **Spustit prohlížeč v adrese URL** umožňuje ladění webové aplikace.|  
 |**Argumenty příkazového řádku**|Určuje argumenty příkazového řádku pro program k ladění. Název příkazu je zadané ve spuštění programu externí název programu. Pokud se spouštěcí akce nastavená na Otevřít adresu URL, nelze zadat argumenty příkazového řádku.|  
 |**Pracovní adresář**|Určuje pracovní adresář laděného programu. V [!INCLUDE[csprcs](../includes/csprcs-md.md)], pracovní adresář je adresář spuštění aplikace z \bin\debug ve výchozím nastavení.|  
-|**Použití vzdáleného počítače**|Název vzdáleného počítače kde bude aplikace spuštěna, pro účely ladění nebo [název serveru Msvsmon](http://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c). Umístění souboru exe ve vzdáleném počítači, je určené vlastností výstupní cestu ve složce vlastnosti konfigurace sestavení kategorie. Umístění musí být sdíleném adresáři na vzdáleném počítači.|  
+|**Použití vzdáleného počítače**|Název vzdáleného počítače kde bude aplikace spuštěna, pro účely ladění nebo [název serveru Msvsmon](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c). Umístění souboru exe ve vzdáleném počítači, je určené vlastností výstupní cestu ve složce vlastnosti konfigurace sestavení kategorie. Umístění musí být sdíleném adresáři na vzdáleném počítači.|  
 |**Povolit ladění nespravovaného kódu**|Umožňuje ladit volání nativního (nespravovaného) kódu Win32 z vaší spravované aplikace.|  
 |**Povolit ladění SQL serveru**|Umožňuje ladění objektů databáze systému SQL Server.|  
   

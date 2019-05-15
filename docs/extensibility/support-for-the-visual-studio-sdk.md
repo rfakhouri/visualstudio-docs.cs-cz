@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7e65f7e01971e6cf27bfad75e1536e83b833bd3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432431"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680792"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Podpora sady Visual Studio SDK
 Několik možnosti podpory jsou dostupné pro zákazníky, kteří mají dotazy týkající se rozšíření integrovaného vývojového prostředí (IDE) sady Visual Studio.
@@ -45,7 +45,7 @@ Můžete najít příklady opensourcové rozšíření VS SDK na Githubu v [uká
 ## <a name="included-support"></a>Podpory
 
 ### <a name="visual-studio-product-support"></a>Visual Studio Product Support
- Některé podpora je součástí nákupu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] produktů. Další informace najdete v tématu [Visual Studio – podpora](http://msdn.microsoft.com/vstudio/cc136615.aspx). Společnost Microsoft udržuje podporu vyhrazeného týmu odpovědi na otázky o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšiřitelnosti.
+ Některé podpora je součástí nákupu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] produktů. Další informace najdete v tématu [Visual Studio – podpora](https://msdn.microsoft.com/vstudio/cc136615.aspx). Společnost Microsoft udržuje podporu vyhrazeného týmu odpovědi na otázky o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšiřitelnosti.
 
 ### <a name="msdn-subscription-support"></a>Podpora pro předplatná MSDN
  Balíčky předplatné MSDN mohou zahrnovat také některé podporu. Další informace najdete v tématu [podpory pro předplatitele MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).
@@ -67,4 +67,4 @@ Informace o žádosti o podporu jednotlivých lze najít na [jednotlivé žádos
 
 ## <a name="see-also"></a>Viz také
 
-- [Kontaktujte nás](../ide/talk-to-us.md)
+- [Kontaktujte nás](../ide/feedback-options.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d603d2435183581cac92a7c6dae6a4044d8f8fe5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f67acff26d346b915f6b457fc0887f1d5f2ec3b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087427"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695904"
 ---
 # <a name="debug-64-bit-applications"></a>Ladění 64bitové aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,8 +58,8 @@ Můžete ladit 64bitovou aplikaci, na kterém běží na místním počítači n
 - Spustíte na výkon nebo zablokování problém se sadou Visual Studio. Pokud tento problém nastává pravidelně, můžete shromažďovat výpisy sady Visual Studio (devenv.exe) a pracovním procesem (msvsmon.exe) a odesílat do Microsoftu. 
   
 ## <a name="see-also"></a>Viz také  
- [64bitové aplikace](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Konfigurace programů pro 64bitové prostředí](http://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [64bitové aplikace](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [Konfigurace programů pro 64bitové prostředí](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
  [Podpora 64bitové integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
  [Použití souborů výpisu paměti](../debugger/using-dump-files.md)   
  [Vzdálené ladění](../debugger/remote-debugging.md)

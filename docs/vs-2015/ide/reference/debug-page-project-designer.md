@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25ffe4f9280dfbb0b3146ebf8b3dd7b62e908814
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 039b6722ca064c64c0e0b7f7757070852e908395
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441420"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703917"
 ---
 # <a name="debug-page-project-designer"></a>Stránka Ladění, návrhář projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,10 +35,10 @@ ms.locfileid: "63441420"
  Tyto možnosti umožňují vybrat konfigurace a platformy k zobrazení a úpravě.  
   
  **Konfigurace**  
- Určuje které nastavení konfigurace má být zobrazeno nebo upraveno. Toto nastavení může být **ladění** (výchozí), **vydání**, nebo **všechny konfigurace**. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Určuje které nastavení konfigurace má být zobrazeno nebo upraveno. Toto nastavení může být **ladění** (výchozí), **vydání**, nebo **všechny konfigurace**. Další informace najdete v tématu [konfigurace ladění a verzí projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Platforma**  
- Určuje které nastavení platformy má být zobrazeno nebo upraveno. Může zahrnovat volby **jakýkoli procesor** (výchozí), **x64**, a **x86**. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Určuje které nastavení platformy má být zobrazeno nebo upraveno. Může zahrnovat volby **jakýkoli procesor** (výchozí), **x64**, a **x86**. Další informace najdete v tématu [konfigurace ladění a verzí projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="start-action"></a>Spustit akci  
  **Zahájení** označuje položku, která se spustí při ladění aplikace: projekt, vlastní program, adresu URL nebo žádnou akci. Ve výchozím nastavení je tato možnost nastavená na **spustit projekt**. **Spustit akci** nastavení **ladění** stránky určuje hodnotu `StartAction` vlastnost.  
@@ -78,6 +78,6 @@ ms.locfileid: "63441420"
  [Ladění v sadě Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Nastavení projektu pro jazyk C# konfiguraci ladění](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Konfigurace ladění projektu v jazyce Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Správa vlastností ladění](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Správa vlastností ladění](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
  [Postupy: Ladění aplikace ClickOnce s omezenými oprávněními](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Postupy: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef4d1221b59e6f1e5ed3de94f91742bbea778462
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428612"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679331"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Napsání kódu pro obslužnou rutinu události zobrazení tlačítka s obrázkem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Kód Visual C#
   
     2. **IntelliSense** okno se otevře a zobrazí **openFileDialog1**. Zvolte klávesu TAB a vyberte ji. (V jazyce Visual Basic začíná počátečním velkým písmenem, takže se zobrazí **OpenFileDialog1**. Ujistěte se, že **OpenFileDialog1** je vybrán.)  
   
-         Další informace o `OpenFileDialog`, naleznete v tématu [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
+         Další informace o `OpenFileDialog`, naleznete v tématu [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
   
     3. Zadejte tečku (`.`) (mnoho programátorů to tečku.) Protože jste zadali tečku ihned po **openFileDialog1**, **IntelliSense** otevře se okno vyplněné se všemi **OpenFileDialog** vlastnostmi a metodami komponenty. Jedná se o stejné vlastnosti, které se zobrazují v **vlastnosti** okno při výběru v Návrháři formulářů Windows. Můžete také metody, které říct komponentě, aby provedla věci (jako je otevření dialogového okna).  
   
@@ -67,7 +67,7 @@ Ikona události
   
     4. Začněte zadáním `ShowDialog` (malá a velká písmena nejsou důležitá pro technologii IntelliSense). `ShowDialog()` Metoda se zobrazí **otevřít soubor** dialogové okno. Poté, co okno zvýraznilo **ShowDialog**, stiskněte klávesu Tabulátor. Můžete také zvýraznit "ShowDialog" a stisknutím klávesy F1 pro něj zobrazit nápovědu.  
   
-         Další informace o `ShowDialog()` metodu, najdete v článku [metody ShowDialog](http://msdn.microsoft.com/library/c7ykbedk.aspx).  
+         Další informace o `ShowDialog()` metodu, najdete v článku [metody ShowDialog](https://msdn.microsoft.com/library/c7ykbedk.aspx).  
   
     5. Při použití metody u ovládacího prvku nebo komponenty (označované jako *volání metody*), je třeba přidat závorky. Zadejte proto počáteční a ihned po "g" v `ShowDialog`: `()` To by teď měl vypadat takto: "openFileDialog1.ShowDialog()".  
   
@@ -83,7 +83,7 @@ Ikona události
   
     8. Zadejte tečku k otevření hodnotu DialogResult **IntelliSense** okna. Zadejte písmeno `O` a stiskněte klávesu TAB k vložení **OK**.  
   
-         Další informace o `DialogResult`, naleznete v tématu [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
+         Další informace o `DialogResult`, naleznete v tématu [DialogResult](https://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
   
         > [!NOTE]
         > První řádek kódu by měl být úplný. Pro jazyk Visual C# to mělo být jako následující.  

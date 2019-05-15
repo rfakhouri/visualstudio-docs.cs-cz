@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f50c5897f68e43071d4920f85f1a694cacbf655
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f135221564583d2d9726bb9fa153840b1328e96f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441312"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701818"
 ---
 # <a name="publish-page-project-designer"></a>Publikovat stránku, návrhář projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,16 +50,16 @@ ms.locfileid: "63441312"
  Pro aplikace WPF webového prohlížeče **aplikace je k dispozici také v režimu offline** možnost je zakázána, protože tyto aplikace jsou k dispozici pouze online.  
   
  **Soubory aplikace**  
- Otevře [aplikace souborech – dialogové](http://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8), který se používá k určení, jak a kde jsou nainstalovány jednotlivé soubory.  
+ Otevře [aplikace souborech – dialogové](https://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8), který se používá k určení, jak a kde jsou nainstalovány jednotlivé soubory.  
   
  **Požadavky**  
  Otevře [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md), který se používá k určení požadovaných součástí, jako je například rozhraní .NET Framework nainstalovat spolu s aplikací.  
   
  **Aktualizace**  
- Otevře [dialogového okna aktualizace aplikace](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), který se používá k určení chování aktualizací pro aplikaci. Nejsou k dispozici při **aplikace je dostupná pouze online** zaškrtnuto.  
+ Otevře [dialogového okna aktualizace aplikace](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), který se používá k určení chování aktualizací pro aplikaci. Nejsou k dispozici při **aplikace je dostupná pouze online** zaškrtnuto.  
   
  **Možnosti**  
- Otevře [dialogové okno publikování možnosti](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), který se používá k určení další pokročilé možnosti publikování.  
+ Otevře [dialogové okno publikování možnosti](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), který se používá k určení další pokročilé možnosti publikování.  
   
  **Verze publikování**  
  Nastaví číslo verze publikování pro aplikaci. Při změně číslo verze aplikace publikována jako aktualizace. Každá část verzi publikování (**hlavní**, **menší**, **sestavení**, **revize**) může mít maximální hodnotu 65355 (<xref:System.UInt16.MaxValue>), maximální povolenou <xref:System.Version>.  
@@ -70,7 +70,7 @@ ms.locfileid: "63441312"
  Volitelné. Když je vybraná tato možnost (výchozí), **revize** část čísla verze publikování se zvýší o jedna pokaždé, když je aplikace publikována. To způsobí, že aplikace má být publikován jako aktualizace.  
   
  **Průvodce publikováním**  
- Otevře [Průvodce publikováním](http://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Dokončuje se Průvodce publikováním má stejný účinek jako spuštění **publikovat** příkaz **sestavení** nabídky.  
+ Otevře [Průvodce publikováním](https://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Dokončuje se Průvodce publikováním má stejný účinek jako spuštění **publikovat** příkaz **sestavení** nabídky.  
   
  **Publikovat**  
  Publikuje aplikace s použitím aktuální nastavení. Ekvivalentní **Dokončit** tlačítko **PublishWizard**.  

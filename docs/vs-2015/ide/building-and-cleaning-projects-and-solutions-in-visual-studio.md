@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408433"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685708"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Sestavování a čištění projektů a řešení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63408433"
 Pomocí postupů v tomto tématu můžete vytvářet, znovu sestavit nebo vyčistit všechny nebo některé projekty nebo položky projektu v řešení. Podrobný návod najdete v části [názorný postup: Sestavení aplikace](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
-> Uživatelské rozhraní v vaší edicí sady Visual Studio se mohou lišit od co toto téma popisuje, v závislosti na aktivních nastaveních. Chcete-li změnit nastavení, otevřete **nástroje** nabídky a klikněte na tlačítko **nastavení importu a exportu**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Uživatelské rozhraní v vaší edicí sady Visual Studio se mohou lišit od co toto téma popisuje, v závislosti na aktivních nastaveních. Chcete-li změnit nastavení, otevřete **nástroje** nabídky a klikněte na tlačítko **nastavení importu a exportu**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Pokud chcete vytvořit, znovu sestavit nebo vyčištění celé řešení
 
@@ -110,4 +110,4 @@ Pomocí postupů v tomto tématu můžete vytvářet, znovu sestavit nebo vyčis
     - Zvolte Ctrl + Break klíče.
 
 ## <a name="see-also"></a>Viz také:
- [Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md) [získat protokoly o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md) [kompilování a sestavování](../ide/compiling-and-building-in-visual-studio.md) [Principy konfigurace sestavení](../ide/understanding-build-configurations.md) [Pro ladění a vydání konfigurace projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [Reference sestavení C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [přepínače příkazového řádku nástroje Devenv](../ide/reference/devenv-command-line-switches.md) [řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)
+ [Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md) [získat protokoly o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md) [kompilování a sestavování](../ide/compiling-and-building-in-visual-studio.md) [Principy konfigurace sestavení](../ide/understanding-build-configurations.md) [Pro ladění a vydání konfigurace projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [Reference sestavení C/C++](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [přepínače příkazového řádku nástroje Devenv](../ide/reference/devenv-command-line-switches.md) [řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)

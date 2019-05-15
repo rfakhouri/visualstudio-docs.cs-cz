@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 120297a7e1b3c1e973f1775d769ab6deb8c2902a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437011"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705565"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Připojení k datům v databázi aplikace Access (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -118,7 +118,7 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
      Do projektu je přidána datová sada a tabulky a zobrazení se zobrazí **zdroje dat** okna.  
   
 ## <a name="security"></a>Zabezpečení  
- Ukládání citlivých informací (například hesla) může ovlivnit zabezpečení aplikace. Bezpečnější způsob, jak řídit přístup k databázi, je ověřování systému Windows (označované také jako integrované zabezpečení). Další informace najdete v tématu [chrání informace o připojení](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).  
+ Ukládání citlivých informací (například hesla) může ovlivnit zabezpečení aplikace. Bezpečnější způsob, jak řídit přístup k databázi, je ověřování systému Windows (označované také jako integrované zabezpečení). Další informace najdete v tématu [chrání informace o připojení](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).  
   
 ## <a name="next-steps"></a>Další kroky  
  Je teď dostupná v datové sadě, kterou jste právě vytvořili **zdroje dat** okna. Nyní můžete provést kteroukoli z následujících úloh:  
@@ -131,7 +131,7 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
   
 ## <a name="see-also"></a>Viz také
 
- [Příprava aplikace pro příjem dat](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Příprava aplikace pro příjem dat](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Ověřování dat](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Návody k datům](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)
+ [Ověřování dat](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Návody k datům](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)

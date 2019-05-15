@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 684bf375568b83333ac5e4c9f88eeae00449cd42
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f3b4898166ec24cb429463f55f8b166056123e78
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443253"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683869"
 ---
 # <a name="understanding-build-configurations"></a>Principy konfigurací sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,5 +88,5 @@ Můžete ukládat různé konfigurace vlastností řešení a projektu pro použ
  [Návod: Sestavení aplikace](../ide/walkthrough-building-an-application.md)   
  [Kompilování a sestavování](../ide/compiling-and-building-in-visual-studio.md)   
  [Řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)   
- [Reference sestavení C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   
+ [Reference sestavení C/C++](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   
  [Devenv – přepínače příkazového řádku](../ide/reference/devenv-command-line-switches.md)

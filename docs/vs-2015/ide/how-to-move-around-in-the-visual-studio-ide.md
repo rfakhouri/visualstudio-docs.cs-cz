@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df45f28076bb520a3b1e8055d9c6fbac08cb7669
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93200995c3afa59b0a4a27aaa9c674fa17b5ee3f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435251"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685602"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Postupy: Pohyb v integrovaném vývojovém prostředí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63435251"
 Integrované vývojové prostředí (IDE) byla navržená tak, aby bylo možné přesunout okno s a soubor se souborem několika různými způsoby v závislosti na požadavcích předvoleb nebo projektu. Můžete procházet soubory lze otevřít v editoru nebo cyklicky procházet všechny aktivní okna nástrojů v rozhraní IDE. Také můžete přepnout na libovolný soubor otevřít v editoru, bez ohledu na pořadí, ve kterém byl naposledy přistupovat přímo. Tyto funkce může pomoct zvýšit vaši produktivitu při práci v integrovaném vývojovém prostředí.
 
 > [!NOTE]
-> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Tato stránka nápovědy byl zapsán s **obecným vývojovým nastavením** v úvahu. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Tato stránka nápovědy byl zapsán s **obecným vývojovým nastavením** v úvahu. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="keyboard-shortcuts"></a>Klávesové zkratky
  Téměř každý příkaz v sadě Visual Studio nemá klávesovou zkratku. Můžete také vytvořit vlastní klávesové zkratky. Další informace najdete v tématu [určení a přizpůsobení klávesových zkratek](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

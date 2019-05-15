@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82a9df8d7d3fae774e27e29e659d02aec35c7593
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fa8b438727160bb5a752643f7ef9791ca5e09245
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662150"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682140"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +60,4 @@ ms.locfileid: "59662150"
  [Referenční dokumentace úlohy](../msbuild/wpf-msbuild-task-reference.md)   
  [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
- [Sestavení aplikace WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [Sestavení aplikace WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

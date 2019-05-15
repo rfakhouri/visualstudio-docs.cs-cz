@@ -26,17 +26,17 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 86ca63ead6b2014dfe0d90d496ef4b7d7efe7f63
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e56c48468b6890f9c51e3ac79ac6167fd8647903
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784797"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675148"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Představení mezinárodních aplikací založených na prostředí .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], existují dvě části vytváření globalizované aplikace: globalizace, proces návrhu aplikací, které se přizpůsobí různé jazykové verze a lokalizace, proces převodu prostředky pro konkrétní jazykovou verzi. Obecné informace o navrhování aplikací pro mezinárodní cílové skupiny, najdete v části [osvědčené postupy pro vývoj globalizovaných aplikací](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
+V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], existují dvě části vytváření globalizované aplikace: globalizace, proces návrhu aplikací, které se přizpůsobí různé jazykové verze a lokalizace, proces převodu prostředky pro konkrétní jazykovou verzi. Obecné informace o navrhování aplikací pro mezinárodní cílové skupiny, najdete v části [osvědčené postupy pro vývoj globalizovaných aplikací](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
   
  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] – Model lokalizace se skládá z hlavní sestavení, která obsahuje kód aplikace a materiály záložního – řetězců, obrázků a dalších objektů pro jazyk, ve kterém je aplikace byl původně vyvinutý. Satelitní sestavení nebo sestavení, které obsahují lokalizované prostředky, bude mít každý lokalizované aplikace. Protože vždy hlavní sestavení obsahuje náhradní zdrojů, pokud se prostředek nenajde v lokalizovaná satelitní sestavení, <xref:System.Resources.ResourceManager> se pokusí načíst hierarchické způsobem, nakonec návrat k prostředku v hlavním sestavení. Záložní systém prostředků je vysvětleno podrobněji v [hierarchická organizace zdrojů pro lokalizaci](../ide/hierarchical-organization-of-resources-for-localization.md).  
   

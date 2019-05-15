@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac7d0896d501803a04da5bf9626e2b9e4716d41a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5a40d6aa7dca8b14210ea85b8428f4d315cd70b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442650"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679544"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11: Spuštění programu a vyzkoušení dalších funkcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Dialogové okno barvy
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   
-- Další informace o programování v sadě Visual Studio najdete v tématu [koncepty programování](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
+- Další informace o programování v sadě Visual Studio najdete v tématu [koncepty programování](https://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
   
-- Další informace o jazyce Visual Basic, naleznete v tématu [vývoj aplikací pomocí jazyka Visual Basic](http://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
+- Další informace o jazyce Visual Basic, naleznete v tématu [vývoj aplikací pomocí jazyka Visual Basic](https://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
   
-- Další informace o jazyce Visual C# najdete v tématu [Úvod do jazyka C# a rozhraní .NET Framework](http://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).  
+- Další informace o jazyce Visual C# najdete v tématu [Úvod do jazyka C# a rozhraní .NET Framework](https://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).  
   
 - Chcete-li přejít k dalšímu kurzu, přečtěte si téma [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   

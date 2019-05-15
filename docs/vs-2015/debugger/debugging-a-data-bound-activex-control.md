@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45a2f6e022c753b0fe543f2265c7ac1961fd474a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6945d1ccf72385b4d2fbe76736668e84b804e446
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752920"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686752"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>Ladění ovládacího prvku ActiveX vázaného na data
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Pokud vyvíjíte ovládacího prvku ActiveX, který bude vázán k ovládacímu 
  Můžete například vytvoření aplikace založené na dialogu MFC a umístit ovládací prvek vázaný na data a ovládací prvek zdroje dat v dialogovém okně. Tato aplikace knihovny MFC můžete použít pro testování za běhu a jako kontejner spustitelný pro ladění vašeho ovládacího prvku ActiveX vázaného na data.  
   
 ## <a name="using-the-test-container"></a>Pomocí testovacího kontejneru  
- Pokud chcete kontejner, který můžete snadno upravit pro podporu různých rozhraní buď ovládacího prvku nebo kontejneru, použijte kontejner testu ActiveX jako spustitelný soubor pro relaci ladění. V kontejneru testů ActiveX, klikněte na tlačítko **možnosti** z **kontejneru** nabídka umožňující různá rozhraní. Další informace najdete v tématu [testování vlastností a událostí pomocí testovacího kontejneru](http://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917).  
+ Pokud chcete kontejner, který můžete snadno upravit pro podporu různých rozhraní buď ovládacího prvku nebo kontejneru, použijte kontejner testu ActiveX jako spustitelný soubor pro relaci ladění. V kontejneru testů ActiveX, klikněte na tlačítko **možnosti** z **kontejneru** nabídka umožňující různá rozhraní. Další informace najdete v tématu [testování vlastností a událostí pomocí testovacího kontejneru](https://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917).  
   
- Pokud je potřeba při ladění s vnořením do kontejneru kódu, použijte ladicí verze vašeho kontejneru nebo použijte ladicí verze v kontejneru testů ActiveX. Další informace najdete v tématu [lze kontejner TSTCON vzorku: Kontejner testů ovládacích prvků ActiveX](http://msdn.microsoft.com/72fa40ef-27d3-400c-813f-10b03236e600).  
+ Pokud je potřeba při ladění s vnořením do kontejneru kódu, použijte ladicí verze vašeho kontejneru nebo použijte ladicí verze v kontejneru testů ActiveX. Další informace najdete v tématu [lze kontejner TSTCON vzorku: Kontejner testů ovládacích prvků ActiveX](https://msdn.microsoft.com/72fa40ef-27d3-400c-813f-10b03236e600).  
   
 ## <a name="see-also"></a>Viz také  
  [COM a ActiveX ladění](../debugger/com-and-activex-debugging.md)   
- [ActiveX – ovládací prvky](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)
+ [ActiveX – ovládací prvky](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)

@@ -13,12 +13,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 48d77b77367faa1ea1f59c1de7fdbad96d574e1b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d040353aadbc448b6608cd11fc78a134872fdafa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117639"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693566"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalace sady Visual Studio verze vedle sebe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Tuto verzi sady Visual Studio můžete nainstalovat na počítači s již nainst
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Verze rozhraní .NET framework a instalacemi nevyžádaného vedle sebe
 
-- Visual Basic, Visual C#a vizuální F# projekty použití **cílovou architekturu** možnost **Návrhář projektu** k určení, kterou verzi rozhraní .NET Framework projekt používá. Pro projekt jazyka C++ můžete ručně změnit cílové rozhraní úpravou souboru .vcxproj. Další informace najdete v tématu [Kompatibilita verzí](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
+- Visual Basic, Visual C#a vizuální F# projekty použití **cílovou architekturu** možnost **Návrhář projektu** k určení, kterou verzi rozhraní .NET Framework projekt používá. Pro projekt jazyka C++ můžete ručně změnit cílové rozhraní úpravou souboru .vcxproj. Další informace najdete v tématu [Kompatibilita verzí](https://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
 
      Když vytvoříte projekt, můžete určit, kterou verzi rozhraní .NET Framework je projekt cílen v **rozhraní .NET Framework** v seznamu **nový projekt** dialogové okno.
 
@@ -50,13 +50,13 @@ Tuto verzi sady Visual Studio můžete nainstalovat na počítači s již nainst
     |--------------|-----------|
     |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Stránka Aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
     |Visual C#|[Stránka Aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)|
-    |Visual F#|[Konfigurace projektů](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
-    |C++|[Postupy: Změna cílové architektury a sady nástrojů](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
-    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Spuštění aplikace JScript na předchozí verzi modulu Common Language Runtime](http://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
+    |Visual F#|[Konfigurace projektů](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
+    |C++|[Postupy: Změna cílové architektury a sady nástrojů](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
+    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Spuštění aplikace JScript na předchozí verzi modulu Common Language Runtime](https://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>Viz také
 
 - [Instalace sady Visual Studio](../install/install-visual-studio-2015.md)
 - [Přenos, migrace a Upgrade projektů sady Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
-- [Sestavení izolovaných aplikací C/C++ a souběžných sestavení](http://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
-- [Přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+- [Sestavení izolovaných aplikací C/C++ a souběžných sestavení](https://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
+- [Přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

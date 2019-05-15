@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f660a7b457f8ba70439321d3eb619389e50fe97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1eb88a5baa09256aa58d3c62b926047df01b32f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445711"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700995"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Postupy: Přidání nebo odebrání importovaných oborů názvů (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Import oboru názvů umožňuje použít elementy z daného oboru názvů ve va�
 3. V **importované obory názvů** seznam, zaškrtněte políčko pro obor názvů, který chcete přidat.  
   
     > [!NOTE]
-    > Aby bylo možné importovat, musí být obor názvů v odkazované součásti. Pokud obor názvů se nezobrazí v seznamu, musíte přidat odkaz na komponentu, která ji obsahuje. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    > Aby bylo možné importovat, musí být obor názvů v odkazované součásti. Pokud obor názvů se nezobrazí v seznamu, musíte přidat odkaz na komponentu, která ji obsahuje. Další informace najdete v tématu [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>Chcete-li odebrat importované oboru názvů  
   

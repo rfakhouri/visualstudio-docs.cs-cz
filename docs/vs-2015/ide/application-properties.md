@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfb0cd2931c7e07644b62993811ea1aaf0a8e99e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54757655"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685702"
 ---
 # <a name="application-properties"></a>Vlastnosti aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,10 +59,10 @@ Můžete nastavit obecné vlastnosti aplikace v jazyce Visual Basic C#, a F# apl
 ## <a name="see-also"></a>Viz také  
  [Stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Stránka aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [Úvod do Návrháře projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Úvod do Návrháře projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Zabezpečování aplikací ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Správa vlastností ladění](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Správa vlastností kompilace](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Správa vlastností ladění](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Správa vlastností kompilace](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Správa prostředků aplikace (.NET)](../ide/managing-application-resources-dotnet.md)   
  [Správa nastavení aplikace (.NET)](../ide/managing-application-settings-dotnet.md)

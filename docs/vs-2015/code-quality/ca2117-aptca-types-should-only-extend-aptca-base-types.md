@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078b7f5535dc80261917ef662b3a2f0069cb33a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786525"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687303"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Typy APTCA by měl rozšiřovat pouze základní typy APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54786525"
  Veřejný nebo chráněný typ v sestavení <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atribut je odvozen z typu deklarované v sestavení, který nemá atribut.
 
 ## <a name="rule-description"></a>Popis pravidla
- Ve výchozím nastavení, veřejné nebo chráněné typy v sestavení se silnými názvy jsou implicitně chráněné [požadavky na dědičnost](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pro úplný vztah důvěryhodnosti. Sestavení se silným názvem označené <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atribut (APTCA) nemají tuto ochranu. Atribut zakáže vyžádané dědičnosti. Díky tomu vystavené typy deklarované v sestavení odvoditelný typy, které nemají úplný vztah důvěryhodnosti.
+ Ve výchozím nastavení, veřejné nebo chráněné typy v sestavení se silnými názvy jsou implicitně chráněné [požadavky na dědičnost](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pro úplný vztah důvěryhodnosti. Sestavení se silným názvem označené <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atribut (APTCA) nemají tuto ochranu. Atribut zakáže vyžádané dědičnosti. Díky tomu vystavené typy deklarované v sestavení odvoditelný typy, které nemají úplný vztah důvěryhodnosti.
 
  Když je atribut APTCA uveden pro plně důvěryhodná sestavení a typ v sestavení je odvozen z typu, který neumožňuje volání částečně důvěryhodným volajícím, je možné zneužití zabezpečení. Pokud dva typy `T1` a `T2` splňovat následující podmínky, škodlivý volající použít typ `T1` obejít požadavek dědičnosti implicitní úplný vztah důvěryhodnosti, který chrání `T2`:
 
@@ -84,4 +84,4 @@ ms.locfileid: "54786525"
  [CA2116: Metody APTCA by měly volat pouze metody APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>Viz také
- [Pokyny pro zabezpečené kódování](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [sestavení rozhraní .NET Framework skriptem částečně důvěryhodný kód](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [používání knihoven z částečně důvěryhodného kódu](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [požadavky na dědičnost](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+ [Pokyny pro zabezpečené kódování](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [sestavení rozhraní .NET Framework skriptem částečně důvěryhodný kód](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [používání knihoven z částečně důvěryhodného kódu](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [požadavky na dědičnost](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

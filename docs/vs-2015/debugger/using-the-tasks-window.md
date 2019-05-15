@@ -18,21 +18,21 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 267a04e0d717bde311423aae7f35fba07ca6f39b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437710"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684041"
 ---
 # <a name="using-the-tasks-window"></a>Používání okna úloh
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Úlohy** okno vypadá podobně jako **vlákna** okna, s tím rozdílem, že se zobrazuje informace o <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle –](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), nebo [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) objekty namísto každé vlákno. Například vlákna úlohy představuje asynchronní operace, které můžou běžet souběžně; ale více úkolů může spustit ve stejném vlákně. Zobrazit [asynchronní programování v jazyce JavaScript (aplikace pro Windows Store)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) Další informace.  
+**Úlohy** okno vypadá podobně jako **vlákna** okna, s tím rozdílem, že se zobrazuje informace o <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle –](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), nebo [WinJS.Promise ](https://msdn.microsoft.com/library/windows/apps/br211867.aspx) objekty namísto každé vlákno. Například vlákna úlohy představuje asynchronní operace, které můžou běžet souběžně; ale více úkolů může spustit ve stejném vlákně. Zobrazit [asynchronní programování v jazyce JavaScript (aplikace pro Windows Store)](https://msdn.microsoft.com/library/windows/apps/hh700330.aspx) Další informace.  
   
- Ve spravovaném kódu, můžete použít **úlohy** okno při práci s <xref:System.Threading.Tasks.Task?displayProperty=fullName> objekty nebo se **await** a **asynchronní** klíčová slova (**Await** a **asynchronní** v VisualBasic). Další informace o úlohách ve spravovaném kódu najdete v tématu [paralelního programování](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
+ Ve spravovaném kódu, můžete použít **úlohy** okno při práci s <xref:System.Threading.Tasks.Task?displayProperty=fullName> objekty nebo se **await** a **asynchronní** klíčová slova (**Await** a **asynchronní** v VisualBasic). Další informace o úlohách ve spravovaném kódu najdete v tématu [paralelního programování](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
   
- V nativním kódu, můžete použít **úlohy** okno při práci s [skupiny úloh](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [paralelní algoritmy](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [asynchronních agentů](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), a [prostých úloh](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90). Další informace o úlohách v nativním kódu, naleznete v tématu [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
+ V nativním kódu, můžete použít **úlohy** okno při práci s [skupiny úloh](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [paralelní algoritmy](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [asynchronních agentů](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), a [prostých úloh](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90). Další informace o úlohách v nativním kódu, naleznete v tématu [Concurrency Runtime](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
   
  V jazyce JavaScript můžete použít okno úlohy při práci s kódem .then promise.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "63437710"
 |**příznaky**|Zobrazuje úlohy, které jsou označeny příznakem a umožňuje označit nebo zrušit označení příznakem úlohu.|  
 |**Ikony**|Žlutá šipka označuje aktuální úlohu. Aktuální úkol je úkol úplně nahoře v aktuálním vláknu.<br /><br /> Bílé šipka označuje zásadní úloh, to znamená, ten, který byl aktuální v době byla vyvolána ladicí program.<br /><br /> Ikona pozastavení označuje úlohu, která byla zmrazené uživatelem. Můžete ukotvit a uvolnění úlohy kliknutím pravým tlačítkem myši v seznamu.|  
 |**ID**|Číslo poskytnuté systémem pro úlohu. V nativním kódu jde o adresu úkolu.|  
-|**Status**|Aktuální stav (naplánované, aktivní, jeví jako zablokované, čekání nebo dokončené) úlohy. Naplánované úlohy je ten, který dosud nebyla spuštěna a proto se ještě nemá zásobník volání, přiřazené vlákno nebo související informace.<br /><br /> Aktivní úlohy je ten, který se spouští kód před přerušení v ladicím programu.<br /><br /> Čekání úlohy je ten, který je zablokovaná, protože se čeká na událost má být signalizován, uvolnění zámku nebo na dokončení jiné úlohy.<br /><br /> Jeví jako zablokované úkol je úkol čekání, jehož vlákna je zablokovaná s jiným vláknem.<br /><br /> Najeďte myší **stav** buňky jeví jako zablokované nebo čekající úlohy zobrazíte další informace o bloku. **Upozornění:**  **Úlohy** okno hlásí zablokování pouze pro zablokování úkol, který používá synchronizační jednoduchého typu, který je podporovaný počkejte procházení řetězce (WCT). Například pro jeví jako zablokované <xref:System.Threading.Tasks.Task> objektu, který používá WCT, ladicí program hlásí **zablokována čekáním**. Jeví jako zablokované úkolu, který je spravovaný nástrojem modulu Runtime souběžnosti, který nepoužívá WCT, ladicí program hlásí **čekání**. Další informace o WCT najdete v tématu [počkejte procházení řetězu](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
+|**Status**|Aktuální stav (naplánované, aktivní, jeví jako zablokované, čekání nebo dokončené) úlohy. Naplánované úlohy je ten, který dosud nebyla spuštěna a proto se ještě nemá zásobník volání, přiřazené vlákno nebo související informace.<br /><br /> Aktivní úlohy je ten, který se spouští kód před přerušení v ladicím programu.<br /><br /> Čekání úlohy je ten, který je zablokovaná, protože se čeká na událost má být signalizován, uvolnění zámku nebo na dokončení jiné úlohy.<br /><br /> Jeví jako zablokované úkol je úkol čekání, jehož vlákna je zablokovaná s jiným vláknem.<br /><br /> Najeďte myší **stav** buňky jeví jako zablokované nebo čekající úlohy zobrazíte další informace o bloku. **Upozornění:**  **Úlohy** okno hlásí zablokování pouze pro zablokování úkol, který používá synchronizační jednoduchého typu, který je podporovaný počkejte procházení řetězce (WCT). Například pro jeví jako zablokované <xref:System.Threading.Tasks.Task> objektu, který používá WCT, ladicí program hlásí **zablokována čekáním**. Jeví jako zablokované úkolu, který je spravovaný nástrojem modulu Runtime souběžnosti, který nepoužívá WCT, ladicí program hlásí **čekání**. Další informace o WCT najdete v tématu [počkejte procházení řetězu](https://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
 |**Čas spuštění**|Doba, jakou úloha začal být aktivní.|  
 |**Doba trvání**|Počet sekund, po které byl aktivní úloha.|  
 |**Čas dokončení**|Čas, kdy úloha dokončena.|  
@@ -61,7 +61,7 @@ ms.locfileid: "63437710"
 |**Přiřazení vlákna**|ID a název vlákna, na kterém je spuštěn úkol.|  
 |**Návratový stav**|Stav úlohy po jeho dokončení. Návratový stav hodnoty jsou **úspěch**, **zrušeno**, a **chyba**.|  
 |**AppDomain**|Pro spravovaný kód domény aplikace, ve kterém je spuštěn úkol.|  
-|**task_group**|Pro nativní kód, adresa [task_group –](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) objekt, který naplánované úlohy. Asynchronní agenti a jednoduché úlohy je tento sloupec nastavena na 0.|  
+|**task_group**|Pro nativní kód, adresa [task_group –](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) objekt, který naplánované úlohy. Asynchronní agenti a jednoduché úlohy je tento sloupec nastavena na 0.|  
 |Proces|ID procesu, který je spuštěn úkol na.|  
 |Asynchronní stav|Pro spravovaný kód, stav úlohy. Ve výchozím nastavení je tento sloupec skrytý. Chcete-li zobrazit tento sloupec, otevřete kontextovou nabídku pro jednu z záhlaví sloupců. Zvolte **sloupce**, **AsyncState**.|  
   
@@ -95,7 +95,7 @@ ms.locfileid: "63437710"
 ## <a name="see-also"></a>Viz také  
  [Základy ladicího programu](../debugger/debugger-basics.md)   
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   
- [Paralelní programování](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Paralelní programování](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Concurrency Runtime](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Použití okna paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)   
  [Návod: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md)

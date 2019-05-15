@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 288e0e4d017302a41b3267a3ae751573ab849b64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d9cd07ed41e39c931e67f43f1c77ff8bd56b2eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760633"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701765"
 ---
 # <a name="properties-of-decorators"></a>Vlastnosti dekorátorů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Dekorátory jsou ikony, text nebo Rozbalit/sbalit dvojité šipky, které se moh
 |Vlastnost|Popis|Výchozí|  
 |--------------|-----------------|-------------|  
 |displayName|Název, který se zobrazí ve vygenerovaném návrháři dekoratér.|Rozbalte sbalit Dekoratér|  
-|Název|Název dekoratéru|Dekoratér rozbalení a sbalení|  
+|Name|Název dekoratéru|Dekoratér rozbalení a sbalení|  
 |Poznámky|Neformální poznámky, které jsou spojeny s tohoto dekoratéru|\<žádné >|  
 |HorizontalOffset|Vodorovný posun vzhledem k výchozí pozici dekoratéru, v palcích. (Ve tvarech pouze.)|0|  
 |VerticalOffset|Svislý posun vzhledem k výchozí pozici dekoratéru, v palcích. (Ve tvarech pouze.)|0|  
@@ -44,7 +44,7 @@ Dekorátory jsou ikony, text nebo Rozbalit/sbalit dvojité šipky, které se moh
 |--------------|-----------------|-------------|  
 |DefaultIcon|Cesta souboru ikony nebo obrázku, který se má zobrazit.|\<žádné >|  
 |displayName|Název dekoratér, který se zobrazí ve vygenerovaném návrháři.|Dekoratér ikony|  
-|Název|Název dekoratéru|Dekoratér ikony|  
+|Name|Název dekoratéru|Dekoratér ikony|  
 |Poznámky|Neformální poznámky, které jsou spojeny s dekoratér.|\<žádné >|  
 |HorizontalOffset|Vodorovný posun vzhledem k výchozí pozici dekoratéru, v palcích. (Ve tvarech pouze.)|0|  
 |VerticalOffset|Svislý posun vzhledem k výchozí pozici dekoratéru, v palcích. (Ve tvarech pouze.)|0|  
@@ -60,7 +60,7 @@ Dekorátory jsou ikony, text nebo Rozbalit/sbalit dvojité šipky, které se moh
 |displayName|Název dekoratér, který se zobrazí ve vygenerovaném návrháři.|Popisek|  
 |Velikost písma|Velikost písma textu zobrazeného v dekoratéru.|8|  
 |FontStyle|Styl písma textu zobrazeného v dekoratéru.|Pravidelné|  
-|Název|Název dekoratéru|Popisek|  
+|Name|Název dekoratéru|Popisek|  
 |Poznámky|Neformální poznámky, které jsou spojeny s dekoratér.|\<žádné >|  
 |HorizontalOffset|Vodorovný posun vzhledem k výchozí pozici dekoratéru, v palcích. (Ve tvarech pouze.)|0|  
 |VerticalOffset|Svislý posun vzhledem k výchozí pozici dekoratéru, v palcích. (Ve tvarech pouze.)|0|  
@@ -69,4 +69,4 @@ Dekorátory jsou ikony, text nebo Rozbalit/sbalit dvojité šipky, které se moh
 |Pozice|Výchozí pozici dekoratéru.|TargetBottom|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

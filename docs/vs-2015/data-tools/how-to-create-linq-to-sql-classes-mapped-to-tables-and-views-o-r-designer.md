@@ -9,16 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5b6e661a79f190e5befdbcf5c28ec0f4bd29ebf4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b9bff102fbf87149e3adc80029eea17132e9b1b7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386658"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697731"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Postupy: Vytvoření LINQ na třídy SQL namapovaných na tabulky a zobrazení (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-LINQ na třídy SQL, které jsou mapovány na databázové tabulky a zobrazení se nazývají *tříd entit*. Třída entity se mapuje na záznam, zatímco jednotlivé vlastnosti třídy entity se mapují na jednotlivé sloupce, které tvoří záznam. Vytvoření tříd entit, které jsou založené na databázových tabulek nebo zobrazení přetažením tabulky a zobrazení z **Průzkumníka serveru**/**Průzkumník databáze** na [nástrojů LINQ to SQL v Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Vygeneruje třídy a platí konkrétní [! Technologie LINQ to SQL atributy umožňují [! Technologie LINQ to SQL funkce (datovou komunikaci a možnosti Úpravy <xref:System.Data.Linq.DataContext>). Podrobné informace o [! Třídy LINQ to SQL, najdete v článku [The LINQ to SQL objektový Model](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
+LINQ na třídy SQL, které jsou mapovány na databázové tabulky a zobrazení se nazývají *tříd entit*. Třída entity se mapuje na záznam, zatímco jednotlivé vlastnosti třídy entity se mapují na jednotlivé sloupce, které tvoří záznam. Vytvoření tříd entit, které jsou založené na databázových tabulek nebo zobrazení přetažením tabulky a zobrazení z **Průzkumníka serveru**/**Průzkumník databáze** na [nástrojů LINQ to SQL v Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Vygeneruje třídy a platí konkrétní [! Technologie LINQ to SQL atributy umožňují [! Technologie LINQ to SQL funkce (datovou komunikaci a možnosti Úpravy <xref:System.Data.Linq.DataContext>). Podrobné informace o [! Třídy LINQ to SQL, najdete v článku [The LINQ to SQL objektový Model](https://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
 
 > [!NOTE]
 > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Je jednoduchý objekt relační Mapovač, protože podporuje pouze relace mapování 1:1. Jinými slovy třídu entity může mít pouze mapování 1:1 relaci s databázové tabulky nebo zobrazení. Komplexní mapování, jako je například mapování třídu entity k několika tabulkám, se nepodporuje. Ale můžete namapovat třídu entity k zobrazení, které spojí více souvisejícími tabulkami.
@@ -39,7 +39,7 @@ LINQ na třídy SQL, které jsou mapovány na databázové tabulky a zobrazení 
      Třídu entity se vytvoří a zobrazí na návrhové ploše. Třída entity má vlastnosti, které se mapují na sloupce ve vybrané tabulky nebo zobrazení.
 
 ## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Vytvořit objektový zdroj dat a zobrazení dat ve formuláři
- Po vytvoření tříd entit pomocí [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], můžete vytvořit objektový zdroj dat a naplnění [okna zdroje dat](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) pomocí tříd entit.
+ Po vytvoření tříd entit pomocí [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], můžete vytvořit objektový zdroj dat a naplnění [okna zdroje dat](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) pomocí tříd entit.
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Chcete-li vytvořit zdroj dat objektu, který je založen na LINQ třídy SQL entity
 
@@ -63,10 +63,10 @@ LINQ na třídy SQL, které jsou mapovány na databázové tabulky a zobrazení 
 ## <a name="see-also"></a>Viz také:
 
 - [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Návod: Vytvoření třídy LINQ to SQL (Návrhář O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)
+- [Návod: Vytvoření třídy LINQ to SQL (Návrhář O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)
 - [Metody DataContext (Návrhář relací objektů)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Postupy: Vytvoření metod DataContext namapovaných na uložené procedury a funkce (Návrhář relací objektů)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
-- [Objektový model LINQ to SQL](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)
+- [Objektový model LINQ to SQL](https://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)
 - [Návod: Přizpůsobení chování tříd entit při vložení, aktualizaci a odstranění](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
-- [Návod: Přidání ověřování do tříd entit](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
+- [Návod: Přidání ověřování do tříd entit](https://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
 - [Postupy: Vytvoření přidružení (relace) mezi třídami LINQ to SQL (Návrhář relací objektů)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

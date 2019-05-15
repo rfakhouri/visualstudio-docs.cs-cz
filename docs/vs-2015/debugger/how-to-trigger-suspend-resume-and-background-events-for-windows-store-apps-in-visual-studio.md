@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ecf43708b854ebee444d2117bc32df41907118a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442729"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685929"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Jak aktivovat události pozastavení a obnovení a události na pozadí pro aplikace pro Windows Store v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) �
 
  Toto téma také popisuje, jak ladit **úloh na pozadí**. Úlohy na pozadí umožňují provádět určité operace v procesech na pozadí, i když je aplikace neběží. Ladicí program můžete umístit vaše aplikace v režimu ladění a pak – bez spuštění uživatelského rozhraní – spuštění a ladění úloh na pozadí.
 
- Další informace o úlohách proces správy životního cyklu a na pozadí v tématu [spouštění, obnovení a multitaskingu](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
+ Další informace o úlohách proces správy životního cyklu a na pozadí v tématu [spouštění, obnovení a multitaskingu](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
 
 ## <a name="BKMK_In_this_topic"></a> V tomto tématu
  [Aktivační proces správy životního cyklu události](#BKMK_Trigger_Process_Lifecycle_Management_events)
@@ -63,7 +63,7 @@ Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) �
      Všimněte si, že **pozastavit a ukončit** aplikace se zavře a ukončení relace ladění.
 
 ## <a name="BKMK_Trigger_background_tasks"></a> Úlohy na pozadí trigger
- Libovolná aplikace můžete zaregistrovat úlohu na pozadí na určité události systému, i když není aplikace spuštěna. Úlohy na pozadí nelze spustit kód, který přímo aktualizací uživatelského rozhraní; Místo toho zobrazí informace o uživateli s aktualizace dlaždice, oznámení "BADGE" aktualizace a informační zprávy. Další informace najdete v tématu [podpoře vaší aplikace v rámci úlohy na pozadí](http://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
+ Libovolná aplikace můžete zaregistrovat úlohu na pozadí na určité události systému, i když není aplikace spuštěna. Úlohy na pozadí nelze spustit kód, který přímo aktualizací uživatelského rozhraní; Místo toho zobrazí informace o uživateli s aktualizace dlaždice, oznámení "BADGE" aktualizace a informační zprávy. Další informace najdete v tématu [podpoře vaší aplikace v rámci úlohy na pozadí](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
 
  Můžete aktivovat události, které spustí úlohy na pozadí pro aplikaci z ladicího programu.
 
@@ -125,4 +125,4 @@ Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) �
 4. Zvolte **diagnostických** protokolu.
 
 ## <a name="see-also"></a>Viz také
- [Testování aplikací pro Store pomocí sady Visual Studio](../test/testing-store-apps-with-visual-studio.md) [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [životního cyklu aplikací](http://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [spouštění, obnovení a multitaskingu](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Testování aplikací pro Store pomocí sady Visual Studio](../test/testing-store-apps-with-visual-studio.md) [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [životního cyklu aplikací](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [spouštění, obnovení a multitaskingu](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

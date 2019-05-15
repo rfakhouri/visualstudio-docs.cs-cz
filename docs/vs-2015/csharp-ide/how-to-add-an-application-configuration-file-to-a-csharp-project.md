@@ -13,17 +13,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc5c8dbad4d2bb248a3183e2e73d7c2932e7bce4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434517"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681724"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Postupy: Přidejte do konfiguračního souboru aplikace C# projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Přidejte konfigurační soubor aplikace (soubor app.config) do projektu C#, můžete přizpůsobit, jak modul common language runtime vyhledá a načte soubory sestavení. Další informace o konfiguračních souborech aplikace najdete v tématu [jak modul Runtime vyhledává sestavení](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
+Přidejte konfigurační soubor aplikace (soubor app.config) do projektu C#, můžete přizpůsobit, jak modul common language runtime vyhledá a načte soubory sestavení. Další informace o konfiguračních souborech aplikace najdete v tématu [jak modul Runtime vyhledává sestavení](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
   
 > [!NOTE]
 > Windows Store nepodporuje <xref:System.Configuration>. Aplikace pro Store v důsledku toho neobsahují šablonu souboru app.config.  
@@ -44,7 +44,7 @@ Přidejte konfigurační soubor aplikace (soubor app.config) do projektu C#, mů
   
 ## <a name="see-also"></a>Viz také  
  [Správa nastavení aplikace (.NET)](../ide/managing-application-settings-dotnet.md)   
- [Schéma konfiguračního souboru](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
- [Konfigurace aplikací](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
- [Postupy: Konfigurace aplikace pro cílení na určitou verzi rozhraní .NET Framework](http://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
+ [Schéma konfiguračního souboru](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
+ [Konfigurace aplikací](https://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
+ [Postupy: Konfigurace aplikace pro cílení na určitou verzi rozhraní .NET Framework](https://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
  [Použití vývojového prostředí sady Visual Studio pro jazyk C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d0e34075fbadcc998dba09d1b7c13a5ffacc606
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61693f30044a8ac5888bebb519dd156ab1e9510b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556870"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705577"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat k ovládac
 
  1. Generovat pomocí modelu **modelu Entity Data Model** průvodce, potom tyto objekty přetáhnout do návrháře.
 
- 2. LINQ na třídy SQL se nezobrazí v **zdroje dat** okna. Můžete však přidat nový zdroj dat objektu, který je založen na LINQ třídy SQL a potom tyto objekty přetáhnout do návrháře k vytvoření ovládacích prvků vázaných na data. Další informace najdete v tématu [názorný postup: Vytvoření třídy LINQ to SQL (O R Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
+ 2. LINQ na třídy SQL se nezobrazí v **zdroje dat** okna. Můžete však přidat nový zdroj dat objektu, který je založen na LINQ třídy SQL a potom tyto objekty přetáhnout do návrháře k vytvoření ovládacích prvků vázaných na data. Další informace najdete v tématu [názorný postup: Vytvoření třídy LINQ to SQL (O R Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
 
 ## <a name="data-sources-window"></a>okno Zdroje dat
  Zdroje dat jsou k dispozici pro váš projekt jako položky **zdroje dat** okna. Toto okno je viditelný, nebo k ní z **zobrazení** nabídky, když návrhovou plochu formuláře je aktivní okno ve vašem projektu. Můžete přetáhnout položky z tohoto okna, chcete-li vytvořit ovládací prvky vázané na podkladová data a můžete taky nakonfigurovat zdroje dat kliknutím pravým tlačítkem myši.
@@ -71,4 +71,4 @@ Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat k ovládac
 |Přizpůsobení popisků pro ovládací prvky.|[Úprava způsobu, kterým Visual Studio vytváří titulky pro ovládací prvky vázané daty](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
 ## <a name="see-also"></a>Viz také
- [Visual Studio data tools pro .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [Windows Forms datové vazby](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)
+ [Visual Studio data tools pro .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [Windows Forms datové vazby](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

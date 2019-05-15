@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea9f23147c6ad7a8b3b28f799b90044763d36d16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66adcdeca1aa794649b42f4ae153d9b2f879deff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441392"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697141"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Možnosti, textový editor, C/C++, formátování
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Umožňuje změnit výchozí chování editoru kódu při programování v jazy
  Pro přístup k této stránce v **možnosti** dialogové okno, v levém podokně rozbalte **textový Editor**, rozbalte **C/C++** a potom klikněte na tlačítko **formátování** .  
   
 > [!NOTE]
-> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="cc-options"></a>Možnost jazyka C/C++  
  **Povolit automatické popisky rychlé informace**  
@@ -66,16 +66,16 @@ Umožňuje změnit výchozí chování editoru kódu při programování v jazy
  Když v textovém editoru otevřete soubor, můžete povolit funkci sbalování. Další informace najdete v tématu [Osnova](../../ide/outlining.md). Při výběru této možnosti se funkce sbalování povolí při otevření souboru.  
   
  **Automatické sbalení bloků #pragma region**  
- Pokud je tato možnost automatické sbalování pro [direktivy pragma](http://msdn.microsoft.com/library/9867b438-ac64-4e10-973f-c3955209873f) je povolená. V režimu sbalování tak můžete rozbalit nebo sbalit bloky pragma region.  
+ Pokud je tato možnost automatické sbalování pro [direktivy pragma](https://msdn.microsoft.com/library/9867b438-ac64-4e10-973f-c3955209873f) je povolená. V režimu sbalování tak můžete rozbalit nebo sbalit bloky pragma region.  
   
  **Automatické sbalování bloků příkazu**  
  Při výběru této možnosti je povoleno automatické sbalování následujících příkazových konstrukcí:  
   
-- [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
+- [if-else](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
   
-- [switch – příkaz (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
+- [switch – příkaz (C++)](https://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
   
-- [while – příkaz (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
+- [while – příkaz (C++)](https://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
   
 ## <a name="see-also"></a>Viz také  
  [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)   

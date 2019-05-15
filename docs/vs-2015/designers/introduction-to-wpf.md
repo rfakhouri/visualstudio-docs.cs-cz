@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f02018ed9ddb6f91f965d28767cde55e4c3e524
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b4061a5bc253782e7ca28478259efb4027c61f9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437307"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674746"
 ---
 # <a name="introduction-to-wpf"></a>Úvod do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ End Namespace
 ## <a name="Controls"></a> Ovládací prvky  
  Uživatelské prostředí, které se dodávají pomocí aplikačního modelu se vytvořený ovládací prvky. V subsystému WPF "control" se o zastřešující pojem, který se vztahuje na kategorii WPF tříd, které jsou hostované v okně nebo na stránce, uživatelské rozhraní a implementaci některých chování.  
   
- Další informace najdete v tématu [ovládací prvky](http://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599).  
+ Další informace najdete v tématu [ovládací prvky](https://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599).  
   
 ### <a name="wpf-controls-by-function"></a>Ovládací prvky WPF podle funkce  
  Tady jsou uvedené integrovaných ovládacích prvků WPF.  

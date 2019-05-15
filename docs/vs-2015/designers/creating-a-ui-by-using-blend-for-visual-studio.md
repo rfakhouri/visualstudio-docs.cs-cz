@@ -11,17 +11,17 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436185"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695926"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Blend for Visual Studio vám pomůže navrhnout založené na XAML Windows desktopových, webových, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), a [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) aplikace. Nabízí stejné základní XAML návrhové prostředí jako sady Visual Studio a přidá vizuální návrhářské nástroje pro pokročilé úlohy, jako je například animace a chování.
+Blend for Visual Studio vám pomůže navrhnout založené na XAML Windows desktopových, webových, [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), a [Windows Store](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx) aplikace. Nabízí stejné základní XAML návrhové prostředí jako sady Visual Studio a přidá vizuální návrhářské nástroje pro pokročilé úlohy, jako je například animace a chování.
 
  Blend for Visual Studio je zahrnutý jako součást sady Visual Studio, nemusíte si ho stáhnout. Musíte však vybrat v instalačním programu sady Visual Studio pro něj chcete nainstalovat do vašeho systému.
 

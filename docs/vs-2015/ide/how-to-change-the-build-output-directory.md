@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03288cdfce66527fb48a16891e745765a72615f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 968a9a2dc87063baec075e69e10fed96ba1ff3d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439262"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680585"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Postupy: Změna výstupního adresáře sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,5 +43,5 @@ Zadejte umístění výstupu na základě podle konfigurace (pro ladění, vydá
   
 ## <a name="see-also"></a>Viz také  
  [Stránka sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md)   
- [Obecná stránka vlastností (projekt)](http://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45)   
+ [Obecná stránka vlastností (projekt)](https://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45)   
  [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

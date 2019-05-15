@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 48632a08b3ed59d65b7a551244c295b012bef665
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444734"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690982"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv – přepínače příkazového řádku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ DEVENV umožňuje nastavit různé možnosti pro integrované vývojové prostř
 |[/ Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Spustí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] a zaznamená veškerou aktivitu do souboru protokolu.|  
 |[/ Spuštění (devenv.exe)](../../ide/reference/run-devenv-exe.md) nebo `/r`|Zkompiluje a spustí zadané řešení.|  
 |[/ Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Zkompiluje a spustí zadané řešení, minimalizuje integrovaného vývojového prostředí při spuštění řešení a ukončí rozhraní IDE po spuštění řešení.|  
-|[/ UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Způsobí, že integrované vývojové prostředí použít CESTU, zahrnutí a LIB proměnné prostředí pro [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] kompilace místo nastavení nakonfigurovaného v sekci adresáře VC ++ **projekty** možnosti **možnosti** Dialogové okno. Další informace najdete v tématu [nastavení cesty a proměnných prostředí pro sestavení příkazového řádku](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
+|[/ UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Způsobí, že integrované vývojové prostředí použít CESTU, zahrnutí a LIB proměnné prostředí pro [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] kompilace místo nastavení nakonfigurovaného v sekci adresáře VC ++ **projekty** možnosti **možnosti** Dialogové okno. Další informace najdete v tématu [nastavení cesty a proměnných prostředí pro sestavení příkazového řádku](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
 |[/ Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Otevře dané soubory v běžící instanci této aplikace. Pokud neexistují žádné spuštěné instance, spustí novou instanci se zjednodušeným rozložením okna.|  
 |[/ ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Spustí instanci integrovaného vývojového prostředí sady Visual Studio bez načtení zadaného Add-in.|  
 |[/ SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Spustí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] v nouzovém režimu a načte jenom výchozí prostředí a služby a dodaný verzích balíčky třetích stran.|  

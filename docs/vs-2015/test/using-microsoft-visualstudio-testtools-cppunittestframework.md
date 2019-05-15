@@ -8,12 +8,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02b33bfbb0e7de3007de9e36691fa1524f69b21b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 77bf44460bf9670cc53703fbf3b4836016135999
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117795"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705876"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Používání atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -652,5 +652,5 @@ public:
   
 ## <a name="see-also"></a>Viz také  
  [Testování částí kódu](../test/unit-test-your-code.md)   
- [Testování částí nativního kódu pomocí Průzkumníka testů](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)   
+ [Testování částí nativního kódu pomocí Průzkumníka testů](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)   
  [Přidání testů jednotek do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)

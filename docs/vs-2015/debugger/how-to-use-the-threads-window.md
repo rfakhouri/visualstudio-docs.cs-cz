@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434864"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685325"
 ---
 # <a name="how-to-use-the-threads-window"></a>Postupy: Použití okna vláken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
 ## <a name="freezing-and-thawing-threads"></a>Zmrazení a uvolnění vláken  
  Po ukotvení vlákno se systém nespustí provádění vlákna, i v případě, že prostředky jsou k dispozici.  
   
- V nativním kódu, můžete pozastavit nebo obnovit vlákna voláním funkce Windows `SuspendThread` a `ResumeThread` nebo funkce MFC [CWinThread::SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) a [CWinThread::ResumeThread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Při volání `SuspendThread` nebo `ResumeThread`, můžete změnit *pozastavený počet*, který se objevuje v **vlákna** okna. Pokud zmrazit nebo odblokovat nativních vláken, změníte není pozastavený počet. V nativním kódu vlákno nelze spustit, pokud je roztát a má nulový počet pozastavené.  
+ V nativním kódu, můžete pozastavit nebo obnovit vlákna voláním funkce Windows `SuspendThread` a `ResumeThread` nebo funkce MFC [CWinThread::SuspendThread](https://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) a [CWinThread::ResumeThread](https://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Při volání `SuspendThread` nebo `ResumeThread`, můžete změnit *pozastavený počet*, který se objevuje v **vlákna** okna. Pokud zmrazit nebo odblokovat nativních vláken, změníte není pozastavený počet. V nativním kódu vlákno nelze spustit, pokud je roztát a má nulový počet pozastavené.  
   
  Zmrazení nebo uvolnění vlákna ve spravovaném kódu mění pozastavený počet. Ve spravovaném kódu zmrazené vlákno je pozastavené počet 1. Zmrazené vlákno v nativním kódu, nemá pozastavený počet 0, pokud vlákna se pozastavilo, tak `SuspendThread` volání.  
   

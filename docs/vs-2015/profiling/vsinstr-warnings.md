@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 300088cb8051f53f5f1afbfe41be92dac9853b53
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b178afb59558f5e684d704137039891aefbf0e3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834320"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683247"
 ---
 # <a name="vsinstr-warnings"></a>Upozornění VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Následující tabulka obsahuje seznam upozornění vydané nástroj VSInstr.exe
 |Číslo upozornění|Popis|  
 |--------------------|-----------------|  
 |**VSP2000**|Vnitřní chyba Nelze získat název souboru modulu tohoto spustitelného souboru.|  
-|**VSP2001**|\<název sestavení > je sestavení se silným názvem. Musí být znovu podepsat předtím, než mohou být provedeny.<br /><br /> K tomuto upozornění dochází, když je instrumentováno podepsané sestavení. Binární soubor znovu podepsat nebo dočasně vypnout požadavek silným názvem, můžete použít nástroj sn.exe. Další informace najdete v tématu [Sn.exe (nástroj Strong Name)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).|  
+|**VSP2001**|\<název sestavení > je sestavení se silným názvem. Musí být znovu podepsat předtím, než mohou být provedeny.<br /><br /> K tomuto upozornění dochází, když je instrumentováno podepsané sestavení. Binární soubor znovu podepsat nebo dočasně vypnout požadavek silným názvem, můžete použít nástroj sn.exe. Další informace najdete v tématu [Sn.exe (nástroj Strong Name)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).|  
 |**VSP2002**|Nelze nalézt funkci \<funcname > v souboru \<název souboru ><br /><br /> K tomuto upozornění dochází, pokud funkci nelze umístit do zadaného souboru.|  
 |**VSP2003**|Nelze nalézt žádné křížové skoky na funkci \<funcname > v souboru \<název souboru >.<br /><br /> K tomuto upozornění dochází Pokud nemůže nástroj VSInstr nezruší se tím přejde mezi. Optimalizace kódu se používají křížových skoků.|  
 |**VSP2004**|Funkce \<funcname > byla vyloučena prostřednictvím přepínače příkazového řádku vyloučení, ale byla požadována, protože obsahovala křížový skok.<br /><br /> K tomuto upozornění dochází, pokud byl vyloučen, pomocí možnosti vyloučit funkce, ale je potřeba během procesu instrumentace. Profiler automaticky zahrne požadované funkce.|  

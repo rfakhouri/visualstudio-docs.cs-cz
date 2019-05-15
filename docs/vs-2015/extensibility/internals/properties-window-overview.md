@@ -10,12 +10,12 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e43893af3275258c49e3e23348afb106416636a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd4be229338d1a09c22b4d81384dc90f0544fa39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113843"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700744"
 ---
 # <a name="properties-window-overview"></a>Přehled okna Vlastnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60113843"
 |Název rozhraní|Popis|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Obsahuje seznam kategorií, které mají **vlastnosti** okno a jednotlivých vlastností se mapuje na kategorie.|  
-|[Rozhraní IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Poskytuje metody a vlastnosti programovací nástroje a další aplikace, které podporují automatizaci objektu.|  
+|[Rozhraní IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Poskytuje metody a vlastnosti programovací nástroje a další aplikace, které podporují automatizaci objektu.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Obsahuje tlačítko se třemi tečkami (...) tlačítka volá *tvůrci* , který otevře modální dialogové okno windows implementované samotného objektu. Použít, pokud hodnota není snadno zadaný uživatelem v textovém poli. Například se může použít k otevření barvu ovládacího prvku pro výběr, který určuje hodnotu RGB za vás.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Poskytuje přístup k objektům, které používá k aktualizaci informací zobrazených v **vlastnosti** okna. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> je implementováno rozšíření VSPackages pro každé okno, které obsahuje volitelný objekty s souvisejících vlastností, který se má zobrazit.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Poskytuje informace o typu objektu, jako jsou metody rozhraní a pole struktury.|  

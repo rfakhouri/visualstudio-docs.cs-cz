@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d045957dde862d0552d8eeb4885f29957e420f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a17931b9d7ccb8ef60158d6ea6d22e8b2f27b031
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441411"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697166"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Možnosti, textový editor, C/C++, upřesnit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Změnou tyto možnosti můžete změnit chování související se technologie I
  Pro přístup k této stránce v **možnosti** dialogové okno, v levém podokně rozbalte **textový Editor**, rozbalte **C/C++** a klikněte na tlačítko **Upřesnit**.  
   
 > [!NOTE]
-> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Zobrazit [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Zobrazit [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Procházení a navigace  
  Tyto možnosti s výjimkou případů, měli byste zvolit nikdy ve výjimečných případech, kde je tak velká, že aktivita databáze používá nepřijatelné množství systémových prostředků řešení.  
@@ -124,7 +124,7 @@ Změnou tyto možnosti můžete změnit chování související se technologie I
  **Maximální počet jednotek překladu uložené v mezipaměti.**  
  Maximální počet jednotek překladu, které se budou uchovávat v daný okamžik aktivní pro požadavky IntelliSense. Musíte zadat hodnotu v rozmezí 2 až 15. Toto číslo přímo souvisí s maximální počet procesů VCPkgSrv.exe, které bude možné spustit (pro danou instanci sady Visual Studio). Výchozí hodnota je 2, ale pokud máte dostupnou paměť, můžete tuto hodnotu zvýšit a případně dosáhnout mírně vyšší výkon na IntelliSense.  
   
- Další informace o jednotkách překladu naleznete v tématu [fáze překladu](http://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db).  
+ Další informace o jednotkách překladu naleznete v tématu [fáze překladu](https://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db).  
   
  **Zakázat agresivní člena seznamu**  
  Seznam členů se nezobrazí, když zadáte název typu nebo proměnné. V seznamu se zobrazí pouze po zadání jedním ze znaků potvrzení, jak jsou definovány v **potvrzující znaky seznamu členů** možnost.  

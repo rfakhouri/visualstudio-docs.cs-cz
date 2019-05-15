@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 03bb90b11e994ce2f823deb7e2395afc6aee7e04
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a4c6619bc5803c1b44e1c6b0516987c3110bbd30
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776555"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687421"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Nedeklaruje proměnlivé odkazové typy pouze pro čtení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "54776555"
 ## <a name="rule-description"></a>Popis pravidla
  Měnitelný typ je typ, jehož instanční data lze upravit. <xref:System.Text.StringBuilder?displayProperty=fullName> Je příkladem proměnlivý odkazový typ třídy. Obsahuje členy, které můžete změnit hodnotu vlastnosti instance třídy. Příklad nezměnitelný odkazový typ, který je <xref:System.String?displayProperty=fullName> třídy. Po jeho vytvoření instance, můžete jeho hodnotu nikdy nezmění.
 
- Modifikátor jen pro čtení ([jen pro čtení](http://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) v jazyce C#, [jen pro čtení](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], a [const](http://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) v jazyce C++) na odkazový typ pole (ukazatele v jazyce C++) brání pole nahrazuje jinou instanci typu odkazu. Modifikátor však nezabraňuje data instance pole nebylo možné měnit pomocí typu odkazu.
+ Modifikátor jen pro čtení ([jen pro čtení](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) v jazyce C#, [jen pro čtení](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], a [const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) v jazyce C++) na odkazový typ pole (ukazatele v jazyce C++) brání pole nahrazuje jinou instanci typu odkazu. Modifikátor však nezabraňuje data instance pole nebylo možné měnit pomocí typu odkazu.
 
  Pole pouze pro čtení se z tohoto pravidla vyjmuty, ale místo toho způsobit narušení [CA2105: Pole polí by neměly být pouze pro čtení](../code-quality/ca2105-array-fields-should-not-be-read-only.md) pravidlo.
 

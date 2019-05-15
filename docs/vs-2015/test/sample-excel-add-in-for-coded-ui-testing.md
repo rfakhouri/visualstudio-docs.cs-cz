@@ -10,19 +10,19 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30ba0d48676438f19581e93a3af3c900569f5d5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8588efe9ce460a34fc71f44bc0116b5977afe7aa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112220"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705942"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Ukázka doplňku Excel pro programové testování uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tato ukázka doplňku pro [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] je navržená speciálně pro podporu listů programové testy uživatelského rozhraní aplikace Excel, které se zaznamenávají a spustit v sadě Visual Studio Enterprise. Doplněk se vytvoří pomocí Visual Studio Tools for Office.  
   
- Další informace o tom, jak vytvořit Excel Add-In, naleznete v tématu [názorný postup: Vytvoření doplňku svůj první VSTO pro Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) nebo hledání MSDN pro "Excel Add-In".  
+ Další informace o tom, jak vytvořit Excel Add-In, naleznete v tématu [názorný postup: Vytvoření doplňku svůj první VSTO pro Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) nebo hledání MSDN pro "Excel Add-In".  
   
  I když Excelovém doplňku není primární předmět této dokumentace rozšíření programového testu UI pro Excel, množstvím komentářů může být užitečné.  
   
@@ -47,5 +47,5 @@ Tato ukázka doplňku pro [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] je 
   
 ## <a name="see-also"></a>Viz také  
  [Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
- [Návod: Vytvoření vašeho prvního doplňku VSTO pro Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
- [Office a vývoj pro SharePoint](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)
+ [Návod: Vytvoření vašeho prvního doplňku VSTO pro Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
+ [Office a vývoj pro SharePoint](https://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)

@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4f58c6f124aeef382dd8c4de06b919489354e109
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ab86b22faa173763856670c61946596677204b91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117853"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685437"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Postupy: Nastavení více projektů po spuštění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio můžete zadat více než jeden projekt je spuštěn při spuště
   
 3. Rozbalte **společné vlastnosti** uzel a klikněte na tlačítko **spouštěný projekt**.  
   
-4. Klikněte na tlačítko **více projektů po spuštění** a nastavte příslušné akce. Další informace najdete v tématu [NIB jak: Změna vlastností projektu a nastavení konfigurace](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).  
+4. Klikněte na tlačítko **více projektů po spuštění** a nastavte příslušné akce. Další informace najdete v tématu [NIB jak: Změna vlastností projektu a nastavení konfigurace](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).  
   
 ## <a name="see-also"></a>Viz také  
  [Kompilování a sestavování](../ide/compiling-and-building-in-visual-studio.md)   

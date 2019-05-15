@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7dda5f0f9d613a2e6704b0f8b1f688c76a759752
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117405"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705896"
 ---
 # <a name="troubleshooting-code-coverage"></a>Poradce při potížích s pokrytím kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Analytické nástroje pokrytí kódu v aplikaci Visual Studio shromažďují dat
  Ověřte, že sestavení není načteno z mezipaměti nativní bitové kopie.  
   
  Vysvětlení  
- Z důvodů výkonu nejsou sestavení nativní bitové kopie analyzovány. Další informace najdete v tématu [Ngen.exe (Generátor nativních obrázků)](http://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
+ Z důvodů výkonu nejsou sestavení nativní bitové kopie analyzovány. Další informace najdete v tématu [Ngen.exe (Generátor nativních obrázků)](https://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
   
  Řešení  
  Použijte verzi sestavení v jazyce MSIL. Nezpracovávejte jej pomocí technologie NGen.  

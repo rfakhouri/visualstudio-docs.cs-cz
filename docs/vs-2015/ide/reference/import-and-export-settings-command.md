@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db7ccd5a4b8266122c2d295cde3cdcca87dc0576
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 91b34183e36c86290c14e3da7d17687d45cfe180
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657831"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694664"
 ---
 # <a name="import-and-export-settings-command"></a>Nastavení importu a exportu – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
  Volitelné. Obnoví aktuální nastavení.  
   
 ## <a name="remarks"></a>Poznámky  
- Spuštění tohoto příkazu bez přepínače otevře **nastavení importu a exportu** průvodce. Další informace najdete v tématu [jak: Sdílení nastavení mezi počítači nebo verzemi sady Visual Studio](http://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882).  
+ Spuštění tohoto příkazu bez přepínače otevře **nastavení importu a exportu** průvodce. Další informace najdete v tématu [jak: Sdílení nastavení mezi počítači nebo verzemi sady Visual Studio](https://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882).  
   
 ## <a name="example"></a>Příklad  
  Následující příkaz exportuje aktuální nastavení do souboru `MyFile.vssettings`.  
@@ -53,5 +53,5 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [Přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)

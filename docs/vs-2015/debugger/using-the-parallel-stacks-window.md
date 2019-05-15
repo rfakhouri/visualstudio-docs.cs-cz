@@ -18,17 +18,17 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df764ac38f437be33b71e7a816709a46234f751e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795667"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684120"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Použití okna Paralelní zásobníky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Paralelní zásobníky** okna je užitečné při ladění aplikací s více vlákny. Jeho **zobrazení vláken** ukazuje informace v zásobníku volání pro všechna vlákna ve vaší aplikaci. Umožňuje procházet mezi vlákny a rámce zásobníku na tato vlákna. Ve spravovaném kódu **zobrazení úkolů** ukazuje volání zásobníků s <xref:System.Threading.Tasks.Task?displayProperty=fullName> objekty. V nativním kódu **zobrazení úkolů** ukazuje volání zásobníků s [skupiny úloh](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [paralelní algoritmy](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [asynchronních agentů](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)a [prostých úloh](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
+**Paralelní zásobníky** okna je užitečné při ladění aplikací s více vlákny. Jeho **zobrazení vláken** ukazuje informace v zásobníku volání pro všechna vlákna ve vaší aplikaci. Umožňuje procházet mezi vlákny a rámce zásobníku na tato vlákna. Ve spravovaném kódu **zobrazení úkolů** ukazuje volání zásobníků s <xref:System.Threading.Tasks.Task?displayProperty=fullName> objekty. V nativním kódu **zobrazení úkolů** ukazuje volání zásobníků s [skupiny úloh](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [paralelní algoritmy](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [asynchronních agentů](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)a [prostých úloh](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
   
 ## <a name="threads-view"></a>Zobrazení vláken  
  Následující obrázek znázorňuje jedno vlákno, které se nezdařilo z hlavní a b a pak na některé externí kód. Dvě ostatní vlákna spustit z externího kódu a pak se nepovedlo A, ale jedno z vláken pokračování b a pak na některé externí kód a další vlákno pokračuje na C a potom na některé AnonymousMethod.  
@@ -63,7 +63,7 @@ ms.locfileid: "54795667"
   
  ![Panel nástrojů v okna paralelní zásobníky](../debugger/media/parallel-stackstoolbar.png "Parallel_StacksToolbar")  
   
-|Popisek písmeno|Ovládací prvek|Popis|  
+|Popisek písmeno|Control|Popis|  
 |--------------------|-------------|-----------------|  
 |OBJEKT|Pole se seznamem vláken nebo úloh|Přepíná zobrazení mezi zásobníky vlákna volání a volání zásobníků s úkoly. Další informace najdete v zobrazení úloh a zobrazení vláken.|  
 |B|Zobrazit pouze označená příznakem|Zásobníky volání zobrazí pouze pro vlákna, která jsou označena jako v jiných oknech ladění **vlákna GPU** okno a **paralelní sledování** okna.|  
@@ -121,7 +121,7 @@ ms.locfileid: "54795667"
  [Návod: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Základy ladicího programu](../debugger/debugger-basics.md)   
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   
- [Paralelní programování](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Paralelní programování](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Používání okna úloh](../debugger/using-the-tasks-window.md)   
  [Návod: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task – třída](../extensibility/debugger/task-class-internal-members.md)

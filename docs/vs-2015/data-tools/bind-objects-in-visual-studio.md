@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09afb67f0e9431ca8cd520635f243dca70880f09
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439491"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683156"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Vytvoření vazby objektů v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio poskytuje nástroje návrhu pro práci s vlastní objekty jako zdr
 - Ukládání dat z objektů zpět do databáze.
 
 > [!NOTE]
-> Pokud chcete lépe pochopit a poskytuje kontext pro příkladech na této stránce, doporučujeme provést následující: [Návod: Připojování k datům v objektech (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Tento návod vytvoří objekty zde popsané.
+> Pokud chcete lépe pochopit a poskytuje kontext pro příkladech na této stránce, doporučujeme provést následující: [Návod: Připojování k datům v objektech (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Tento návod vytvoří objekty zde popsané.
 
 ### <a name="loaddata-into-objects"></a>Loaddata do objektů
  V tomto příkladu můžete načíst data do objektů pomocí objektů TableAdapter. Ve výchozím nastavení jsou objekty TableAdapter vytvořeny dva druhy metod, které načtou data z databáze a vkládání dat do tabulek.
@@ -75,7 +75,7 @@ Visual Studio poskytuje nástroje návrhu pro práci s vlastní objekty jako zdr
  [!code-vb[VbRaddataConnecting#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Form1.vb#4)]
 
 ### <a name="create-a-typed-collection-of-objects"></a>Vytvořit kolekci typu objektů
- Můžete vytvořit kolekce tříd pro objekty, nebo použít typu kolekce, které jsou automaticky poskytované [komponenty BindingSource](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9).
+ Můžete vytvořit kolekce tříd pro objekty, nebo použít typu kolekce, které jsou automaticky poskytované [komponenty BindingSource](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9).
 
  Při vytváření vlastní kolekce tříd pro objekty, doporučujeme, abyste dědili z <xref:System.ComponentModel.BindingList%601>. Tato obecná třída poskytuje funkce pro správu kolekce, stejně jako schopnost vyvolat události, které odesílají oznámení k infrastruktuře datové vazby v modelu Windows Forms.
 
@@ -92,9 +92,9 @@ Visual Studio poskytuje nástroje návrhu pro práci s vlastní objekty jako zdr
 ### <a name="addobjects-to-a-collection"></a>Addobjects do kolekce
  Přidání objektů do kolekce pomocí volání `Add` metodu ve vaší vlastní třídu kolekce nebo <xref:System.Windows.Forms.BindingSource>.
 
- Příklad přidání do kolekce pomocí <xref:System.Windows.Forms.BindingSource>, najdete v článku `LoadCustomers` metoda ve [názorný postup: Připojování k datům v objektech (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Příklad přidání do kolekce pomocí <xref:System.Windows.Forms.BindingSource>, najdete v článku `LoadCustomers` metoda ve [názorný postup: Připojování k datům v objektech (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
- Příklad přidání objektů do vlastní kolekce, najdete v článku `LoadOrders` metoda ve [názorný postup: Připojování k datům v objektech (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Příklad přidání objektů do vlastní kolekce, najdete v článku `LoadOrders` metoda ve [názorný postup: Připojování k datům v objektech (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
 > [!NOTE]
 > `Add` Metoda automaticky zajištěna pro vlastní shromažďování při dědit z <xref:System.ComponentModel.BindingList%601>.

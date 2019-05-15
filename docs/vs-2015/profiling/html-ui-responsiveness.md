@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438385"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697628"
 ---
 # <a name="html-ui-responsiveness"></a>Rychlost odezvy HTML UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -324,7 +324,7 @@ if (performance.mark && performance.measure) {
   
 - **Dekódování obrázku.** Označuje dobu strávenou dekomprimací a dekódováním obrázků.  
   
-  Profiler odezvy uživatelského rozhraní pro používání stylů pro kategorie a skript zadat data, která se dají dále rozvíjet v grafu podrobnosti časové osy. Pokud jako problém identifikovat problémy skriptování, můžete spustit profiler vzorkování procesoru s Profiler odezvy uživatelského rozhraní. Alternativně můžete použít funkci profileru sady Visual Studio získat podrobnější údaje. Další informace najdete v tématu [data analyzovat časování funkcí jazyka JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  Profiler odezvy uživatelského rozhraní pro používání stylů pro kategorie a skript zadat data, která se dají dále rozvíjet v grafu podrobnosti časové osy. Pokud jako problém identifikovat problémy skriptování, můžete spustit profiler vzorkování procesoru s Profiler odezvy uživatelského rozhraní. Alternativně můžete použít funkci profileru sady Visual Studio získat podrobnější údaje. Další informace najdete v tématu [data analyzovat časování funkcí jazyka JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
   Pro další kategorie událostí je možné identifikovat platformy vedlejší účinky, které jsou výsledkem přidání funkce do vaší aplikace, ale v těchto případech nemusí být schopni vyřešit problémy s konkrétní výkonem s použitím Profiler odezvy uživatelského rozhraní.  
   
@@ -358,9 +358,9 @@ if (performance.mark && performance.measure) {
   
 - Sledování [toto video](http://channel9.msdn.com/Events/Build/2013/3-316) z konference Build 2013 o Profiler odezvy uživatelského rozhraní.  
   
-- Přečtěte si tipy ke zvýšení výkonu pro aplikace Windows Store, které jsou vytvořené pro Windows pomocí jazyka JavaScript. Další informace najdete v tématu [osvědčené postupy z hlediska výkonu pro aplikace Windows Store využívající jazyk JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+- Přečtěte si tipy ke zvýšení výkonu pro aplikace Windows Store, které jsou vytvořené pro Windows pomocí jazyka JavaScript. Další informace najdete v tématu [osvědčené postupy z hlediska výkonu pro aplikace Windows Store využívající jazyk JavaScript](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
-- Informace o modelu provádění kódu s jedním vláknem a výkonu najdete v tématu [provádění kódu](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+- Informace o modelu provádění kódu s jedním vláknem a výkonu najdete v tématu [provádění kódu](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Viz také  
- [Analýza výkonu aplikace](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Analýza výkonu aplikace](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

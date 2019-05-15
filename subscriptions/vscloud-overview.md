@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Pronajmout sadu Visual Studio Professional nebo Visual Studio Enterprise na základě – měsíční nebo roční s bez dlouhodobé smlouvy.
 searchscope: VS Subscription
-ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978835"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679318"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Nákup cloudových předplatných sady Visual Studio Professional a Visual Studio Enterprise
 
@@ -113,10 +113,10 @@ O:  Vaši zákazníci nebudou moct nakupovat nové Visual Studio Cloud ročního
 O:  Stávající zákazníky to neovlivní. Noví zákazníci se muset rozhodnout, jestli chtějí koupit Visual Studio měsíční předplatná nebo přejít na jiný kanál například multilicenčních programů k nákupu předplatných sady Visual Studio.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>DOTAZ: Co když chci navýšení tohoto počtu předplatných pro své zákazníky?
-O:  Správce může stále zvýšit počet předplatných, která si [ https://manage.visualstudio.com ](https://manage.visualstudio.com) a postupujte podle pokynů v tomto článku pro zvýšení počtu předplatného.
+O: Roční předplatná zakoupená během daného měsíce se za něj hned účtovat za celý rok a jsou platné po celý rok. Z tohoto důvodu správce můžete změnit pouze počet licencí, do aktuálního měsíce nákupu (budou platné po dobu 1 roku a účtované po dobu 1 roku). Mimo měsíce nákupu se už nedají zvýšit počet předplatných.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>DOTAZ: Co když chci snížení počtu předplatných pro své zákazníky?
-O:  Správce může snížit počet předplatných, která stále návštěvou [ https://manage.visualstudio.com ](https://manage.visualstudio.com) a postupujte podle pokynů v tomto článku ke snížení počtu předplatného.
+O:  Správce může snížit počet předplatných, která stále návštěvou [ https://manage.visualstudio.com ](https://manage.visualstudio.com) a postupujte podle pokynů v tomto článku ke snížení počtu předplatného. Systém bude **není** generovat Dal poměrně. Náhrady je potřeba kontaktovat tým Azure fakturace.
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>DOTAZ: Pokud zákazníci zrušit předplatné, se budou moci koupit další roční Cloudová předplatná později?
 O:  I když se nebudou moci zakoupit další roční cloudové předplatné, existuje mnoho možností k nákupu předplatných sady Visual Studio.  Další informace najdete na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/).

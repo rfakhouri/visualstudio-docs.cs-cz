@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b8f81f22ffe566524e45a62330bc95c8ce00016
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444968"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686373"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problémy s konfigurací serveru a klienta v nasazeních ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
   
 - .deploy  
   
-  Ale můžete tuto možnost zakážete zrušením zaškrtnutí **použít příponu ".deploy"** možnost [dialogové okno publikování možnosti](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), v takovém případě musíte nakonfigurovat webový server k odblokování všechny přípony souborů použít v aplikaci.  
+  Ale můžete tuto možnost zakážete zrušením zaškrtnutí **použít příponu ".deploy"** možnost [dialogové okno publikování možnosti](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), v takovém případě musíte nakonfigurovat webový server k odblokování všechny přípony souborů použít v aplikaci.  
   
   Budete muset nakonfigurovat .manifest .application a .deploy, například pokud používáte IIS, kde jste dosud nenainstalovali [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], nebo pokud používáte jiný webový server (např. Apache).  
   
@@ -54,7 +54,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
   
  Můžete také použít opravu hotfix na rozhraní .NET Framework 2.0 tuto funkci povolil. Další informace naleznete v tématu http://go.microsoft.com/fwlink/?LinkId=158730.  
   
- Další informace najdete v tématu [ \<defaultProxy > – Element (nastavení sítě)](http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
+ Další informace najdete v tématu [ \<defaultProxy > – Element (nastavení sítě)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
 ## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce a kompatibilita webového prohlížeče  
  V současné době [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zařízení se spustí jenom v případě, že adresa URL pro manifest nasazení se otevře pomocí aplikace Internet Explorer. Nasazení, jehož adresa URL se spustí z jiné aplikace, jako je například aplikace Microsoft Office Outlook se úspěšně spustí jenom v případě, že aplikace Internet Explorer je nastaven jako výchozí webový prohlížeč.  
@@ -92,7 +92,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce a namapované jednotky  
- Pokud používáte sadu Visual Studio k publikování aplikace ClickOnce, nelze zadat mapovanou jednotku jako umístění instalace. Však můžete upravit aplikaci ClickOnce, instalace z mapované jednotky pomocí generátor manifestu a Editor (Mage.exe a MageUI.exe). Další informace najdete v tématu [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) a [MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+ Pokud používáte sadu Visual Studio k publikování aplikace ClickOnce, nelze zadat mapovanou jednotku jako umístění instalace. Však můžete upravit aplikaci ClickOnce, instalace z mapované jednotky pomocí generátor manifestu a Editor (Mage.exe a MageUI.exe). Další informace najdete v tématu [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) a [MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protokol FTP není podporován pro instalaci aplikací  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] podporuje instalaci aplikací z libovolné HTTP 1.1 webového nebo souborového serveru. FTP, File Transfer Protocol, není podporován pro instalaci aplikace. Publikování aplikací jenom pomocí funkce FTP. Následující tabulka shrnuje tyto rozdíly:  

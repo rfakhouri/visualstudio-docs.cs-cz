@@ -9,17 +9,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bca0b07922d1b0b0d1a218fcccfa51e68a64e7e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 437c6cc7af2b0337b362e14db19deb9584a3d412
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114779"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695541"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Návrh XAML v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio a Blend pro Visual Studio umožňují visual tools pro vytváření poutavější uživatelské rozhraní a bohatý mediální prostředí pro plochu Windows založené na XAML, web, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), a [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx)aplikace. Sdílí společnou sadu návrhu a okna nástrojů a v editoru XAML, ale poskytuje program Blend pro Visual Studio další návrhové nástroje pro pokročilé úlohy, jako je animace a chování.
+Visual Studio a Blend pro Visual Studio umožňují visual tools pro vytváření poutavější uživatelské rozhraní a bohatý mediální prostředí pro plochu Windows založené na XAML, web, [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), a [Windows Store](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx)aplikace. Sdílí společnou sadu návrhu a okna nástrojů a v editoru XAML, ale poskytuje program Blend pro Visual Studio další návrhové nástroje pro pokročilé úlohy, jako je animace a chování.
 
 ## <a name="choosing-the-right-tool"></a>Výběr správného nástroje
  Návrh nástrojů podle vaší volby je do značné míry závisí na vašich dovednostech. Pokud jste více orientovaný na kód, můžete napsat kód XAML v sadě Visual Studio k provádění úloh i pokročilý design. Pokud jste více orientovaný na návrh, Blend for Visual Studio umožňuje provádět pokročilé úlohy bez nutnosti psaní kódu.
@@ -41,11 +41,11 @@ Visual Studio a Blend pro Visual Studio umožňují visual tools pro vytvářen�
 
      ![Soubor znovu načíst prostředí](../designers/media/blendfilereload.png "BlendFileReload")
 
-- **Synchronizovaná rozložení a nastavení:** Vlastní rozložení umožňuje uložit a použít vlastní nastavení rozložení okna nástrojů. Visual Studio se synchronizují tato vlastní nastavení a předvolby pro Visual Studio i programu Blend for Visual Studio v počítačích při Přihlaste se pomocí stejného účtu Microsoft. Zobrazit [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+- **Synchronizovaná rozložení a nastavení:** Vlastní rozložení umožňuje uložit a použít vlastní nastavení rozložení okna nástrojů. Visual Studio se synchronizují tato vlastní nastavení a předvolby pro Visual Studio i programu Blend for Visual Studio v počítačích při Přihlaste se pomocí stejného účtu Microsoft. Zobrazit [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 - **Běžné Průzkumník řešení:** V Průzkumníku řešení vám poskytne uspořádaný náhled vašich projektů a jejich soubory, jakož i přístup k příkazů přidružených s nimi. Pomocí Průzkumníka řešení je snazší pracovat s velkými objemy podnikových projektů. Zobrazit [řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md).
 
-- **Průzkumník týmových projektů:** Pomocí Průzkumníka týmových projektů můžete spravovat vaše projekty s úložišti GIT nebo TFS usnadňuje spolupráci mezi týmy. Zobrazit [práci v Průzkumníku týmových projektů](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
+- **Průzkumník týmových projektů:** Pomocí Průzkumníka týmových projektů můžete spravovat vaše projekty s úložišti GIT nebo TFS usnadňuje spolupráci mezi týmy. Zobrazit [práci v Průzkumníku týmových projektů](https://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
 
 - **NuGet:** Můžete spravovat balíčky NuGet v sadě Visual Studio i programu Blend for Visual Studio. Správce balíčků NuGet je Správce balíčků pro rozhraní .NET Framework, která zjednodušuje instalace a odebrání balíčků z řešení.
 

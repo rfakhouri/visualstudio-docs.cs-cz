@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f6cee865542256906ac1685b937da0e63327a97d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425500"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694858"
 ---
 # <a name="pass-data-between-forms"></a>Předávání dat mezi formuláři
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
 - Vytvoření nového **aplikace Windows** projektu.  
   
-- Vytvoření a konfigurace datové sady [Průvodce konfigurací zdroje dat](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Vytvoření a konfigurace datové sady [Průvodce konfigurací zdroje dat](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 - Výběr ovládacího prvku, aby se ve formuláři vytvořen při přetažení položky z **zdroje dat** okna. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
@@ -64,7 +64,7 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
 2. Pojmenujte projekt `PassingDataBetweenForms`.  
   
-3. Vyberte **formulářová aplikace Windows**a klikněte na tlačítko **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Vyberte **formulářová aplikace Windows**a klikněte na tlačítko **OK**. Další informace najdete v tématu [klientské aplikace](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **PassingDataBetweenForms** projekt je vytvořen a přidán do **Průzkumníka řešení**.  
   

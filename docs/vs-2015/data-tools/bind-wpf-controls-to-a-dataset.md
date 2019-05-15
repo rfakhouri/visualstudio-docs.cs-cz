@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80233f0786018bf1b4b18dbfa990a143d298f559
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5231e37b7dd4881deaa6c85c8aa0e33d15bfcc0e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439514"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674004"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
   
 - Datových sad a TableAdapters. Další informace najdete v tématu [datovou sadu nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
   
-- Práce s WPF Designer. Další informace najdete v tématu [WPF a Silverlight Návrhář přehled](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Práce s WPF Designer. Další informace najdete v tématu [WPF a Silverlight Návrhář přehled](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- Datové vazby WPF. Další informace najdete v tématu [přehled datových vazeb](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Datové vazby WPF. Další informace najdete v tématu [přehled datových vazeb](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-project"></a>Vytvoření projektu  
  Vytvořte nový projekt WPF. Projekt se zobrazí záznamy produktů.  
@@ -226,7 +226,7 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]  
   
     > [!NOTE]
-    > V tomto příkladu `Save` metodu `TableAdapter` a uložte změny. To je vhodné v tomto názorném postupu, protože mění jenom jednu datovou tabulku. Pokud je potřeba uložit změny do několika tabulek dat, případně můžete použít `UpdateAll` metodu `TableAdapterManager` , který generuje sada Visual Studio s vaší datové sadě. Další informace najdete v tématu [TableAdapterManager – přehled](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
+    > V tomto příkladu `Save` metodu `TableAdapter` a uložte změny. To je vhodné v tomto názorném postupu, protože mění jenom jednu datovou tabulku. Pokud je potřeba uložit změny do několika tabulek dat, případně můžete použít `UpdateAll` metodu `TableAdapterManager` , který generuje sada Visual Studio s vaší datové sadě. Další informace najdete v tématu [TableAdapterManager – přehled](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
 ## <a name="test-the-application"></a>Testování aplikace  
  Sestavte a spusťte aplikaci. Ověřte, že můžete zobrazit a aktualizovat záznamy produktů.  
@@ -260,5 +260,5 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
  [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Nástroje datové sady v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
- [WPF a Silverlight Návrhář – přehled](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
- [Přehled datových vazeb](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [WPF a Silverlight Návrhář – přehled](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [Přehled datových vazeb](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

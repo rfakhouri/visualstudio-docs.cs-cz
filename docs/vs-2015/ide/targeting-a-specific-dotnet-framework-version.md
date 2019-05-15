@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11658e8cfe96da9c56b7cc1a63839510ed3c829
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429233"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679143"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Cílení na konkrétní verzi rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ V sadě Visual Studio můžete zadat verzi nebo profil, který chcete svůj proj
  Podrobně popisuje, jak určit konkrétní [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v jazyce Visual Basic, Visual C# nebo vizuální F# projektu.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Rozhraní .NET framework Multi-Targeting pro webové projekty ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
+ [Rozhraní .NET framework Multi-Targeting pro webové projekty ASP.NET](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  Vysvětluje způsob používání této verze sady Visual Studio pro vývoj webových aplikací, které běží ve starších verzích rozhraní .NET Framework.  
   
  [Stránka Aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)  
@@ -45,5 +45,5 @@ V sadě Visual Studio můžete zadat verzi nebo profil, který chcete svůj proj
  [Stránka Aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
  Popisuje **Cílová architektura** ovládací prvek v Návrháři projektu pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projekty.  
   
- [Postupy: Změna cílové architektury a sady nástrojů](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [Postupy: Změna cílové architektury a sady nástrojů](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  Popisuje, jak změnit nastavení pro projekty Visual C++ pro cílení na různé verze rozhraní .NET Framework a jiné sady nástrojů platformy.

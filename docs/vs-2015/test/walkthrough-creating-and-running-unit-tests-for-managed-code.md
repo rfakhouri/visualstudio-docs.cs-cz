@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2e120499893a5b2a85d9a40a57e078f3d8f6586d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408488"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695054"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Návod: Vytváření a spouštění testů jednotek pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Tento návod vás postupně provede vytváření, spouštění a přizpůsobení
 > Tento návod používá rozhraní testování částí Microsoft pro spravovaný kód. Průzkumník testů může také spouštět testy z jednotky třetí strany rozhraní pro testování, které mají adaptéry pro Průzkumník testů. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
-> Informace o tom, ke spuštění testů z příkazového řádku najdete v tématu [návod: použití testování z příkazového řádku](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
+> Informace o tom, ke spuštění testů z příkazového řádku najdete v tématu [návod: použití testování z příkazového řádku](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
 ## <a name="prerequisites"></a>Požadavky  
   

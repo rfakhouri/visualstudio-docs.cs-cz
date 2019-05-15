@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421129"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703762"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Začínáme s rozšířeními pro služby jazyka a editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
  Doporučujeme, abyste před Tvorba vlastních rozšíření editoru informace o následujících konceptům a technologiím.  
   
 ## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Windows Presentation Foundation (WPF) a rozšíření editoru  
- Visual Studio editor uživatelské rozhraní (UI) je implementovaný s využitím Windows Presentation Foundation (WPF). WPF poskytuje bohaté možnosti vzhled a konzistentní programovací model, který odděluje visual aspektů kód z obchodní logiky. Při vytváření rozšíření editoru, můžete použít mnoho prvků WPF a funkce. Další informace najdete v tématu [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
+ Visual Studio editor uživatelské rozhraní (UI) je implementovaný s využitím Windows Presentation Foundation (WPF). WPF poskytuje bohaté možnosti vzhled a konzistentní programovací model, který odděluje visual aspektů kód z obchodní logiky. Při vytváření rozšíření editoru, můžete použít mnoho prvků WPF a funkce. Další informace najdete v tématu [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
   
 ## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Rozhraní Managed Extensibility Framework (MEF) a rozšíření editoru  
  Editor sady Visual Studio Managed Extensibility Framework (MEF) používá ke správě jeho součástmi a rozšíření. Rozhraní MEF také umožňuje další vývojářům snadno vytvářet rozšíření pro hostitelskou aplikaci, jako je Visual Studio. V tomto rámci definování rozšíření podle smlouvy MEF a exportujte ho jako součást MEF. Hostitelská aplikace spravuje dílů tím, že je, je registrace a ujistěte se, že se použijí pro správný kontext.  

@@ -22,17 +22,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad496bb55bae8d9e08035408059e454430ab4e39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092972"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705371"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Návod: Ladění paralelní aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásobníky** ladění paralelní aplikace systému windows. Tato okna vám pomůžou pochopit a chování za běhu kódu, který se používá ověření [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) nebo [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Tento názorný postup obsahuje ukázkový kód, který má integrovanou zarážky. Poté, co kód přestane fungovat, návodu ukazuje způsob použití **paralelní úlohy** a **paralelní zásobníky** windows jej prozkoumat.  
+Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásobníky** ladění paralelní aplikace systému windows. Tato okna vám pomůžou pochopit a chování za běhu kódu, který se používá ověření [Task Parallel Library (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) nebo [Concurrency Runtime](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Tento názorný postup obsahuje ukázkový kód, který má integrovanou zarážky. Poté, co kód přestane fungovat, návodu ukazuje způsob použití **paralelní úlohy** a **paralelní zásobníky** windows jej prozkoumat.  
   
  Tento návod vás naučí tyto úlohy:  
   
@@ -308,7 +308,7 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
  [Ladění vícevláknových aplikací](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Základy ladicího programu](../debugger/debugger-basics.md)   
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   
- [Paralelní programování](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Paralelní programování](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Concurrency Runtime](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Použití okna paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)   
  [Použití okna úloh](../debugger/using-the-tasks-window.md)

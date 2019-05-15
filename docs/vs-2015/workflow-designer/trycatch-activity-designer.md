@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9d8c539d91c95b03f4946e256de7a825a6df7ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb155cc7bbf4efbda54666f91f2db3f92e6c378c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976602"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697075"
 ---
 # <a name="trycatch-activity-designer"></a>Návrhář aktivity TryCatch
 **TryCatch** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.TryCatch> aktivity.  
   
 ## <a name="the-trycatch-activity"></a>Aktivita TryCatch  
- <xref:System.Activities.Statements.TryCatch> Obsahuje aktivity <xref:System.Activities.Statements.TryCatch.Try%2A> aktivity, kolekce **Catch\<TException >** a <xref:System.Activities.Statements.TryCatch.Finally%2A> aktivity. A <xref:System.Activities.Statements.Catch%601> typu **TException** obsahuje <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> a <xref:System.Activities.Statements.Catch%601.Action%2A>. Společně se používají k implementaci typické chybové výjimky na základě mechanismu pro zpracování. A <xref:System.Activities.Statements.TryCatch> aktivity spuštění se pokusí jeho <xref:System.Activities.Statements.TryCatch.Try%2A> aktivity. Pokud <xref:System.Activities.Statements.TryCatch.Try%2A> aktivita vyvolá jakoukoliv výjimku, <xref:System.Activities.Statements.TryCatch> aktivita používá jeho **Catch < TException\>**  kolekce tak, aby odpovídaly výjimku. Pokud není nalezena shoda, pak bude <xref:System.Activities.Statements.Catch%601.Action%2A> k odpovídající položce **Catch\<TException >** provádí, slouží jako logiku pro výjimku zpracování chyb. Pokud aktivity v <xref:System.Activities.Statements.TryCatch.Try%2A> části úspěšně dokončena nebo aktivity v rámci <xref:System.Activities.Statements.TryCatch.Catches%2A> úspěšně dokončené <xref:System.Activities.Statements.TryCatch> aktivity spustí jeho <xref:System.Activities.Statements.TryCatch.Finally%2A> aktivity. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Výjimky](http://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136).  
+ <xref:System.Activities.Statements.TryCatch> Obsahuje aktivity <xref:System.Activities.Statements.TryCatch.Try%2A> aktivity, kolekce **Catch\<TException >** a <xref:System.Activities.Statements.TryCatch.Finally%2A> aktivity. A <xref:System.Activities.Statements.Catch%601> typu **TException** obsahuje <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> a <xref:System.Activities.Statements.Catch%601.Action%2A>. Společně se používají k implementaci typické chybové výjimky na základě mechanismu pro zpracování. A <xref:System.Activities.Statements.TryCatch> aktivity spuštění se pokusí jeho <xref:System.Activities.Statements.TryCatch.Try%2A> aktivity. Pokud <xref:System.Activities.Statements.TryCatch.Try%2A> aktivita vyvolá jakoukoliv výjimku, <xref:System.Activities.Statements.TryCatch> aktivita používá jeho **Catch < TException\>**  kolekce tak, aby odpovídaly výjimku. Pokud není nalezena shoda, pak bude <xref:System.Activities.Statements.Catch%601.Action%2A> k odpovídající položce **Catch\<TException >** provádí, slouží jako logiku pro výjimku zpracování chyb. Pokud aktivity v <xref:System.Activities.Statements.TryCatch.Try%2A> části úspěšně dokončena nebo aktivity v rámci <xref:System.Activities.Statements.TryCatch.Catches%2A> úspěšně dokončené <xref:System.Activities.Statements.TryCatch> aktivity spustí jeho <xref:System.Activities.Statements.TryCatch.Finally%2A> aktivity. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Výjimky](https://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136).  
   
 ### <a name="using-the-trycatch-activity-designer"></a>Pomocí návrháře aktivity TryCatch  
  **TryCatch** návrháře aktivit najdete v **zpracování chyb** kategorii **nástrojů**, který přistupuje po kliknutí **nástrojů** karty na levé straně [!INCLUDE[wfd2](../includes/wfd2-md.md)] (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo řadič + ALT + X.)  

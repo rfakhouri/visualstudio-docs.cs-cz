@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eab5a1b645023537ffee182804554f483d81f727
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9c69af03e88a8debf10763c1a62e82fe0e9430e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766134"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700587"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Práce s řešeními jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ Vytvoření jazyka specifického pro doménu (DSL) pomocí [!INCLUDE[vsprvs](../
  [Práce s průzkumníkem jazyka specifického pro doménu](../modeling/working-with-the-domain-specific-language-explorer.md)  
  Vysvětluje obsah v Průzkumníku  
   
- [Postupy: Změnit Namespace jazyka specifického pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)  
+ [Postupy: Změna oboru názvů jazyka specifického pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)  
  Kód, který negeneruje DSL má obor názvů, které jste nastavili při inicializaci vašeho řešení, ale můžete ji později změnit.  
   
- [Postupy: Rozšíření návrháře jazyka specifického pro doménu](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
+ [Postupy: Rozšíření Návrháře DSL](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  Návrhář DSL pomocí příkazů nabídky můžete přizpůsobit.  
   
- [Jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [Jak automatizovat Transformovat všechny šablony](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  Pokud chcete vyhnout Transformovat všechny šablony, můžete si je automatickou součástí sestavení.

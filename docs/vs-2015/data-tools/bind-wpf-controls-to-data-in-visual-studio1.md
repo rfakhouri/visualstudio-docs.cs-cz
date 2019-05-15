@@ -22,19 +22,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16a3868f564f39d4908adf74a6b1a44ae83ebc9d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b9bfa51dae4ab9ab08abf3493c747a471b924de1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437059"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675906"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat na [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] ovládacích prvků. Pokud chcete vytvořit tyto ovládací prvky vázané na data, můžete přetáhnout položky z **zdroje dat** okna do [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Toto téma popisuje některé nejběžnější úlohy, nástroje a třídy, které můžete použít k vytvoření vázané na data [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] aplikací.
 
- Obecné informace o tom, jak vytvořit ovládací prvky vázané na data v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], naleznete v tématu [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Další informace o [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] naleznete v tématu datové vazby, [Data Binding Overview](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
+ Obecné informace o tom, jak vytvořit ovládací prvky vázané na data v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], naleznete v tématu [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Další informace o [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] naleznete v tématu datové vazby, [Data Binding Overview](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Úkoly při vytvoření vazby ovládacích prvků WPF k datům
  V následující tabulce jsou uvedeny úlohy, které můžete provést přetažením položek z **zdroje dat** okna [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)].
@@ -98,7 +98,7 @@ Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat na [!INCLU
  Při přetažení objektu nebo vlastnosti z **zdroje dat** do okna návrháře, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , která vytvoří ovládací prvek vázaný na data (nebo naváže existující ovládací prvek na objekt či vlastnost). Ale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] negeneruje kód pro vyplnění objektu daty. Tento kód musíte napsat sami.
 
 > [!NOTE]
-> Vlastní třídy musí být veřejný a ve výchozím nastavení, mít konstruktor bez parametrů. Nemohou být vnořené třídy, které mají v syntaxi "tečku". Další informace najdete v tématu [XAML a vlastní třídy pro WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
+> Vlastní třídy musí být veřejný a ve výchozím nastavení, mít konstruktor bez parametrů. Nemohou být vnořené třídy, které mají v syntaxi "tečku". Další informace najdete v tématu [XAML a vlastní třídy pro WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , který provede následující akce:
 

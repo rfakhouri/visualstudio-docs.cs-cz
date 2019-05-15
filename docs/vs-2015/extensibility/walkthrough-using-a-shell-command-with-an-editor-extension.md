@@ -10,12 +10,12 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c82d77a617461a8d01d06fd2a502d2fef8399906
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0312d98dd6959cb5d67d593c4bf0af39fa1889eb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408694"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693350"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Návod: Použití příkazů prostředí s rozšířením editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Z balíčku VSPackage můžete přidat funkce, jako jsou příkazy do editoru. T
  Protože přidáváte komponentu MEF do sady VSPackage, je nutné zadat oba typy prostředků v manifestu.  
   
 > [!NOTE]
-> Další informace o rozhraní MEF, naleznete v tématu [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Další informace o rozhraní MEF, naleznete v tématu [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 #### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>K odkazování na Komponenta MEF v projektu VSPackage  
   

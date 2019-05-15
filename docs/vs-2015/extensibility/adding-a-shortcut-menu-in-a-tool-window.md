@@ -13,12 +13,12 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 604e5792c17e1458faccfd6518ab8cd5e7e303f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 60ac63be54c235187e66a85c541f925e1e34cafd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093732"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689856"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Přidání místní nabídky do panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Tento názorný postup vloží nabídku v panelu nástrojů. Místní nabídka j
   
  Tento návod ukazuje jak vytvořit místní nabídce jako nabídce sady Visual Studio deklarace položek nabídky v souboru .vsct a následným použitím rozhraní Managed Package Framework pro implementaci ve třídě, která definuje okno nástroje. Tento přístup umožňuje přístup k příkazy sady Visual Studio, prvky uživatelského rozhraní a model objektu automatizace.  
   
- Případně, pokud vaši nabídku nebudou přístup k funkcím sady Visual Studio, můžete použít <xref:System.Windows.FrameworkElement.ContextMenu%2A> vlastnost elementu XAML do uživatelského ovládacího prvku. Další informace najdete v tématu [ContextMenu](http://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
+ Případně, pokud vaši nabídku nebudou přístup k funkcím sady Visual Studio, můžete použít <xref:System.Windows.FrameworkElement.ContextMenu%2A> vlastnost elementu XAML do uživatelského ovládacího prvku. Další informace najdete v tématu [ContextMenu](https://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
   
 ## <a name="prerequisites"></a>Požadavky  
  Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

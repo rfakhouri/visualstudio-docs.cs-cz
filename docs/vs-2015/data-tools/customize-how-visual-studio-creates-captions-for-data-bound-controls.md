@@ -20,17 +20,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 960100db5a257ab30431c1edee2bce9ded21d46d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 549fa4842a4e57043ddac90683d05383b7c3d44d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431185"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693928"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Úprava způsobu, kterým Visual Studio vytváří titulky pro ovládací prvky vázané daty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Při přetažení položky z [okna zdroje dat](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) do Návrháře formulářů Windows, zvláštní pozornost vstupu do play: názvy sloupců v popiscích titulek jsou přeformátována na řetězec čitelnější, pokud dvě nebo více slov jsou nenašel se nedá zřetězit dohromady. Můžete změnit způsob, ve kterém jsou tyto popisky vytvořené, tak, že nastavíte **SmartCaptionExpression**, **SmartCaptionReplacement**, a **SmartCaptionSuffix** hodnoty v **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data návrháři** klíč registru.
+Při přetažení položky z [okna zdroje dat](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) do Návrháře formulářů Windows, zvláštní pozornost vstupu do play: názvy sloupců v popiscích titulek jsou přeformátována na řetězec čitelnější, pokud dvě nebo více slov jsou nenašel se nedá zřetězit dohromady. Můžete změnit způsob, ve kterém jsou tyto popisky vytvořené, tak, že nastavíte **SmartCaptionExpression**, **SmartCaptionReplacement**, a **SmartCaptionSuffix** hodnoty v **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data návrháři** klíč registru.
 
 > [!NOTE]
 > Tento klíč registru neexistuje, dokud ho vytvoříte.

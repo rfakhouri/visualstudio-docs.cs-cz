@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1aa81017f1a3d73e4ade1556ab141878e8a773f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444590"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698467"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalace komponenty Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Vizuální C++ pro vývoj mobilních řešení napříč platformami] (http://go
   
   K vytváření aplikací pro specifické platformy zařízení, existují některé další požadavky:  
   
-- Emulátory Windows Phone a Microsoft Visual Studio Emulator for Android vyžadují počítač, který můžete spustit Hyper-V. Aby bylo možné nainstalovat a spustit emulátory, musí být povolena funkce technologie Hyper-V ve Windows. Další informace najdete v tématu o emulátor [požadavky na systém](http://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf).  
+- Emulátory Windows Phone a Microsoft Visual Studio Emulator for Android vyžadují počítač, který můžete spustit Hyper-V. Aby bylo možné nainstalovat a spustit emulátory, musí být povolena funkce technologie Hyper-V ve Windows. Další informace najdete v tématu o emulátor [požadavky na systém](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf).  
   
 - X86 emulátorů Androidu, které jsou součástí sady Android SDK fungují nejlépe na počítačích se systémem ovladače Intel HAXM. Tento ovladač vyžaduje procesor Intel x64 VT-x a spustit Bit zakázat podporu. Další informace najdete v tématu [pokyny k instalaci pro Intel Hardware Accelerated spuštění Správce® – Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
   

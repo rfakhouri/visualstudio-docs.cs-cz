@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76729bd44d196028fd88bd13718a34518b1fbde4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: df2fb0c6505bc5fa756443bd50fdb31ff151e7d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052321"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673679"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Postupy: Používání zarážek v XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete nastavit zarážky v šabloně stylů XSLT, nebo ve zdrojovém dokumentu XML. Pokud nastavíte zarážku na značku, při spuštění zarážce přejde k další příkaz, který obsahuje informace o řádku zdroje.  
   
- Další informace najdete v tématu [základní informace o ladění: Zarážky](http://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
+ Další informace najdete v tématu [základní informace o ladění: Zarážky](https://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
   
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Nastavte zarážku v šabloně stylů  
  Zarážky lze nastavit na počáteční značky, koncovými značkami a textové uzly šablony stylů XSLT. Zarážky můžete také nastavit na kód v bloku skriptu.  

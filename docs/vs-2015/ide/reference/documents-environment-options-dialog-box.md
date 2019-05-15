@@ -33,12 +33,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd368730ec4df91840984525bf0042963587e68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a6616593f01218b4a7e15809f841ee3cb4e7edb0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444717"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700803"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumenty, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "63444717"
 Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazování dokumentů v integrovaném vývojovém prostředí (IDE) a spravovat externí změny dokumentů a souborů. Toto dialogové okno se zpřístupní po kliknutí **možnosti** na **nástroje** nabídky a následným výběrem **dokumenty** v **prostředí** uzlu. Pokud **dokumenty** se nezobrazují v seznamu vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
   
 > [!NOTE]
-> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Znovu použít aktuální okno dokumentu, je-li uložit**  
  Pokud je vybráno, zavře aktuální dokument, pokud byla uložena a ve stejném okně se otevře nový dokument. Pokud vaše aktuální dokument nebyl uložen, zůstane otevřený a je otevřen nový dokument v samostatném okně. Tato možnost vybrána, nové dokumenty vždy otevře v samostatném systému windows.  

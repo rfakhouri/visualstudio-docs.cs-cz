@@ -12,19 +12,19 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fa63e84cd7655ebf8a48ff47a8d844a471c193cd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d127aaa85cdd8da9e5daebe5c7841e0f6e85238d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651614"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674878"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Stránka Možnosti, vlastnosti uzlu textového editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Tento dokument popisuje některé stránky (nebo kolekce vlastností), které jsou přidruženy **textový Editor** kategorie, `DTE.Properties("TextEditor", <Property Page>)`, nástroje **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu `Properties` kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.  
   
- Makra jazyka Visual Basic v [Controlling Options Settings](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) ukazují, jak zobrazit aktuální možnosti a jejich hodnoty pro každou stránku **možnosti** dialogové okno.  
+ Makra jazyka Visual Basic v [Controlling Options Settings](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) ukazují, jak zobrazit aktuální možnosti a jejich hodnoty pro každou stránku **možnosti** dialogové okno.  
   
 ## <a name="general"></a>Obecné  
  `DTE.Properties("TextEditor", "General")`  
@@ -66,7 +66,7 @@ Tento dokument popisuje některé stránky (nebo kolekce vlastností), které js
 |CutCopyBlankLines|Get/Set (Boolean)|Vyjme nebo zkopíruje prázdné řádky, pokud jsou vybrány.|  
   
 ## <a name="see-also"></a>Viz také  
- [Řízení nastavení možností](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [Určování názvů položky vlastností na stránkách možností](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [Řízení nastavení možností](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Určování názvů položky vlastností na stránkách možností](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Stránka Možnosti, vlastnosti uzlu prostředí](../../ide/reference/options-page-environment-node-properties.md)   
  [Stránka Možnosti, vlastnosti uzlu Písma a barvy](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

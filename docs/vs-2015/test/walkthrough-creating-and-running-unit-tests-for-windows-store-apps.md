@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1f74502472a72416d33bcf48e473977d694e545f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428198"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695109"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Návod: Vytváření a spouštění testů jednotek pro aplikace Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Visual Studio zahrnuje podporu pro testování částí spravovaného [!INCLUDE[
     > [!NOTE]
     > Možnosti výběru by měly obsahovat pouze funkce, které jsou nezbytné pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] testování částí fungovat správně. Možnosti by nikdy neměli obsahovat funkce, které nejsou součástí [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace otestovali a obecně by měly být dílčí funkce možností určených pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]diskutujete testovanou aplikaci.  
   
-     Další informace o návrháři manifestu naleznete v tématu [nakonfigurovat balíček aplikace pro Windows 8.1 pomocí návrháře manifestu](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
+     Další informace o návrháři manifestu naleznete v tématu [nakonfigurovat balíček aplikace pro Windows 8.1 pomocí návrháře manifestu](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
      ![Unit Test Manifest](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
   
@@ -149,4 +149,4 @@ Visual Studio zahrnuje podporu pro testování částí spravovaného [!INCLUDE[
   
 ## <a name="see-also"></a>Viz také  
  [Testování aplikací pro Store pomocí sady Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Sestavení a testování aplikací pro Windows Store pomocí Team Foundation Build](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [Sestavení a testování aplikací pro Windows Store pomocí Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b490b379df401f4eb0c680524be8bac91dee410
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 883cdd8f3d150c894ecfbe7ccd2fbc2906c9e79b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437015"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705190"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dialogové okno Nastavit odkaz na službu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63437015"
 **Nastavit odkaz na službu** dialogové okno umožňuje konfigurovat chování [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] služby.  
   
 > [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Pro přístup **nastavit odkaz na službu** dialogové okno, klikněte pravým tlačítkem na službu odkazovat v **Průzkumníku řešení** a zvolte **nastavit odkaz na službu**. Dialogové okno se můžete dostat taky kliknutím **Upřesnit** tlačítko **Add Service Reference Dialog Box**.  
   
@@ -63,10 +63,10 @@ ms.locfileid: "63437015"
  Určuje, zda synchronně bude volat metody služby WCF (výchozí) nebo asynchronně.  
   
  **Generování operací podle úloh**  
- Při psaní asynchronního kódu, tato možnost umožňuje využívat nástroje Task Parallel Library (TPL), které se zavedly s využitím .net 4. Zobrazit [úkolů Parallel Library (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+ Při psaní asynchronního kódu, tato možnost umožňuje využívat nástroje Task Parallel Library (TPL), které se zavedly s využitím .net 4. Zobrazit [úkolů Parallel Library (TPL)](https://msdn.microsoft.com/library/dd460717.aspx).  
   
  **Vždy generovat kontrakty zprávy**  
- Určuje, zda typy kontraktů zpráv bude vytvořen pro klienta WCF. Další informace o kontraktů zpráv najdete v tématu [použití kontraktů zpráv](http://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249).  
+ Určuje, zda typy kontraktů zpráv bude vytvořen pro klienta WCF. Další informace o kontraktů zpráv najdete v tématu [použití kontraktů zpráv](https://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249).  
   
  **Typ kolekce**  
  Určuje typ kolekce seznamu pro klienta WCF. Výchozí typ je <xref:System.Array>.  
@@ -87,7 +87,7 @@ ms.locfileid: "63437015"
  Obsahuje seznam odkazovaných sestavení pro projekt nebo webu. Když **znovu použít typy v zadaných odkazovaných sestaveních** je vybrána, jednotlivá sestavení mohou být zaškrtnuto nebo ne.  
   
  **Přidat webový odkaz**  
- Zobrazí [NIB: Přidat webové Reference Dialog Box](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
+ Zobrazí [NIB: Přidat webové Reference Dialog Box](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
   
 > [!NOTE]
 > Tato možnost by měla sloužit pouze pro projekty, které cílí na verzi 2.0 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
@@ -96,6 +96,6 @@ ms.locfileid: "63437015"
 > **Přidat webový odkaz** tlačítko je k dispozici pouze tehdy, když **nastavit odkaz na službu** zobrazí dialogové okno z **Add Service Reference Dialog Box**.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: Přidání, aktualizace nebo odebrání odkazu na službu](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
- [Postupy: Přidejte odkaz na webovou službu](http://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
+ [Postupy: Přidání, aktualizace nebo odebrání odkazu na službu](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
+ [Postupy: Přidejte odkaz na webovou službu](https://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
  [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/configure-service-reference-dialog-box.md)

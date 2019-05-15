@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 497c8f2ff8defd0acdf943f4856f0195e50366ce
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5fd8175911def7fb1b63dc63d967c404d649e9e4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656827"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703698"
 ---
 # <a name="uidmanager-task"></a>UidManager – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,5 +62,5 @@ ms.locfileid: "59656827"
  [Referenční dokumentace úlohy](../msbuild/wpf-msbuild-task-reference.md)   
  [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
- [Sestavení aplikace WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [Postupy: Lokalizace aplikace](http://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)
+ [Sestavení aplikace WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [Postupy: Lokalizace aplikace](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

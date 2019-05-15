@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f1c31d858fbe7a5183456bfc7fcc1e602d4e051
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439960"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686043"
 ---
 # <a name="rename-refactoring-c"></a>Refaktoring pro přejmenování (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63439960"
 |-----------------|----------------------|  
 |Pole|Deklarace a použití tohoto pole se změní na nový název.|  
 |Lokální proměnná|Deklarace a použití proměnné se změní na nový název.|  
-|Metoda|Název metody a všechny odkazy na metody změní na nový název. **Poznámka:**  Pokud přejmenujete metodu rozšíření, operace přejmenování rozšíří do všech instancí metody, které jsou v oboru, bez ohledu na to, zda rozšiřující metoda se používá jako statickou metodu nebo metodu instance. Další informace najdete v tématu [rozšiřující metody](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Metoda|Název metody a všechny odkazy na metody změní na nový název. **Poznámka:**  Pokud přejmenujete metodu rozšíření, operace přejmenování rozšíří do všech instancí metody, které jsou v oboru, bez ohledu na to, zda rozšiřující metoda se používá jako statickou metodu nebo metodu instance. Další informace najdete v tématu [rozšiřující metody](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
 |Obor názvů|Název oboru názvů se změní na nový název v deklaraci všech `using` příkazy a plně kvalifikované názvy. **Poznámka:**  Při přejmenování obor názvů, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rovněž aktualizuje **výchozí Namespace** vlastnost **aplikace** stránku **Návrháře projektu**. Tuto vlastnost nelze obnovit tak, že vyberete **zpět** z **upravit** nabídky. Chcete-li obnovit **výchozí Namespace** hodnotu vlastnosti, je třeba upravit vlastnosti v **Návrháře projektu**. Další informace najdete v tématu [stránky aplikace](../ide/reference/application-page-project-designer-csharp.md).|  
 |Vlastnost|Deklarace a použití vlastnost se změní na nový název.|  
 |Type|Všechny deklarace a použití všech typu se změní na nový název, včetně konstruktorů a destruktorů. Pro částečné typy operace přejmenování rozšíří do všech částí.|  
@@ -170,4 +170,4 @@ var orderIDs =
   
 ## <a name="see-also"></a>Viz také  
  [Refaktoring (C#)](../csharp-ide/refactoring-csharp.md)   
- [Anonymní typy](http://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+ [Anonymní typy](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

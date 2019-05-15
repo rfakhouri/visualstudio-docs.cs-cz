@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf656ed94b232e2ce19986696f4155dc225c8ad0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc659641e64bde9da4f1e05abf285fbdec1877e3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433639"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674846"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Dialogové okno Možnosti (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63433639"
 **Možnosti** dialogové okno umožňuje konfigurovat integrované vývojové prostředí (IDE) podle vašich potřeb. Můžete například vytvořit výchozí umístění pro uložení pro vaše projekty, změnit výchozí vzhled a chování systému windows a vytvoření zkratky pro často používané příkazy. Existují také možnosti specifické pro vývojový jazyk a platformu. Můžete přistupovat **možnosti** z **nástroje** nabídky.
 
 > [!NOTE]
-> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="layout-of-the-options-dialog-box"></a>Rozložení dialogové okno Možnosti
  **Možnosti** dialogové okno je rozdělena na dva oddíly: navigačního podokna na levé straně a zobrazení plochy na pravé straně. Ovládací prvek stromové struktury v navigačním podokně obsahuje uzly složek, jako je například prostředí, textového editoru, projekty a řešení a správy zdrojového kódu. Rozbalte uzel všechny složky do seznamu na stránkách možností, které obsahuje. Když vyberete uzel pro konkrétní stránce, jeho možnosti se zobrazí v oblasti zobrazení.

@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5673ebf28cc652e3bcd973808db87b5bb058659c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442325"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683525"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Spouštění aplikací pro Windows Phone v emulátoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Emulátor Windows Phone poskytuje virtualizované prostředí, ve kterém můžete ladění a testování aplikací pro Windows Phone v počítači bez fyzického zařízení. Můžete simulovat běžné touch a otočení události a zvolte velikost fyzické obrazovky a rozlišení, kterou chcete emulovat. Můžete také otestovat mnoho běžně používaných funkcí, jako je například umístění, sítí, oznámení, senzory, akcelerometr a volitelné SD karty.  
   
- Další informace o funkcích, které můžete testovat se spustila v emulátoru najdete v tématu [testování funkcí aplikace v emulátoru Windows Phone](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Další informace o funkcích, které můžete testovat se spustila v emulátoru najdete v tématu [testování funkcí aplikace v emulátoru Windows Phone](https://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Emulátor spolu s Visual Studio, poskytuje kompletní prostředí, ve kterém můžete návrh, vývoj, ladění a testování aplikací pro Windows Phone.  
   
@@ -103,7 +103,7 @@ Emulátor Windows Phone poskytuje virtualizované prostředí, ve kterém může
 ### <a name="BKMK_depltool"></a> Spuštění aplikace s nástrojem pro nasazení aplikace  
  Můžete také použít nástroj pro nasazení aplikace Windows Phone (**AppDeploy.exe**) ke spuštění vaší aplikace se spustila v emulátoru. Tento nástroj je samostatná aplikace, který je nainstalován při instalaci nástroje pro vývoj Windows Phone.  
   
- Další informace najdete v tématu [aplikací nasadit Windows Phone 8.1 pomocí nástroje nasazení aplikace](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
+ Další informace najdete v tématu [aplikací nasadit Windows Phone 8.1 pomocí nástroje nasazení aplikace](https://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
   
 ## <a name="BKMK_toolbar"></a> Konfigurace emulátorem Windows Phone pomocí nástrojů emulátoru  
  Tato tabulka uvádí dostupné konfigurace tlačítka na panelu nástrojů emulátoru.  

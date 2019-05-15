@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 430154b1f9b9f652052dc828c921d3ded16a3787
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7ff519416d874462a86f7e615822d15139fc4726
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442704"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697633"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Postupy: Publikování aplikace ClickOnce pomocí průvodce publikováním
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Pro aplikaci ClickOnce zpřístupnit uživatelům, je nutné ji publikovat na sd
 > Při instalaci více než jednu verzi aplikace s použitím technologie ClickOnce, instalace přesune starší verze této aplikace do složky s názvem Archiv v umístění pro publikování, který zadáte. Archivace dřívějších verzí tímto způsobem udržuje instalační adresář čistý od složek starší verze.  
   
 > [!NOTE]
-> Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, klikněte na tlačítko **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, klikněte na tlačítko **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>K publikování do sdílené složky nebo cesta  
   
@@ -103,4 +103,4 @@ Pro aplikaci ClickOnce zpřístupnit uživatelům, je nutné ji publikovat na sd
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)   
  [Zabezpečování aplikací ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Nasazení řešení Office s použitím technologie ClickOnce](http://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)
+ [Nasazení řešení Office s použitím technologie ClickOnce](https://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)

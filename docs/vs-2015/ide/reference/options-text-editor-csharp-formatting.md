@@ -26,12 +26,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 96828d4fe9871e81b05923f2dc1bf9ca7a53faaa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f75d2b73946a006057945b1e68f018a358e38279
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441337"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674203"
 ---
 # <a name="options-text-editor-c-formatting"></a>Možnosti, textový editor, C#, formátování
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63441337"
 Použití **formátování** dialogové okno stránky vlastností pro nastavení možností pro formátování kódu v editoru kódu. Toto dialogové okno, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **textový Editor**, rozbalte **jazyka C#** a potom klikněte na tlačítko  **Formátování**.  
   
 > [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="general-settings"></a>Obecné nastavení  
  Obecné nastavení vliv na použití možností formátování kódu v editoru kódu.  

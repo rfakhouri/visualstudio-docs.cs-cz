@@ -9,19 +9,19 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db27e8665d74477f3bb668831cbfaeef00d622bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424803"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700219"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Návod: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje vizuální návrhová plocha pro vytváření a úpravu [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] třídy (třídy entity), které jsou založené na objektech v databázi. S použitím [technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), můžete použít technologii LINQ pro přístup k databázím SQL. Další informace najdete v tématu [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+[LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje vizuální návrhová plocha pro vytváření a úpravu [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] třídy (třídy entity), které jsou založené na objektech v databázi. S použitím [technologie LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), můžete použít technologii LINQ pro přístup k databázím SQL. Další informace najdete v tématu [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
- Ve výchozím nastavení, je poskytována logiku pro provádění aktualizací [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] modulu runtime. Modul runtime vytvoří výchozí příkazy Insert, Update a Delete na základě schématu tabulky (definice sloupců a informacemi o primárním klíči). Pokud nechcete použít výchozí chování, můžete nakonfigurovat chování aktualizací a určit konkrétní uložené procedury k provedení potřebné vložení, aktualizace a odstranění vyžadována pro práci s daty v databázi. Můžete také provést generování výchozího chování není, například při mapování tříd entit na zobrazení. Kromě toho můžete přepsat výchozí chování aktualizací databáze vyžaduje přístup k tabulce prostřednictvím uložené procedury. Další informace najdete v tématu [přizpůsobení operací pomocí pomocí uložené procedury](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
+ Ve výchozím nastavení, je poskytována logiku pro provádění aktualizací [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] modulu runtime. Modul runtime vytvoří výchozí příkazy Insert, Update a Delete na základě schématu tabulky (definice sloupců a informacemi o primárním klíči). Pokud nechcete použít výchozí chování, můžete nakonfigurovat chování aktualizací a určit konkrétní uložené procedury k provedení potřebné vložení, aktualizace a odstranění vyžadována pro práci s daty v databázi. Můžete také provést generování výchozího chování není, například při mapování tříd entit na zobrazení. Kromě toho můžete přepsat výchozí chování aktualizací databáze vyžaduje přístup k tabulce prostřednictvím uložené procedury. Další informace najdete v tématu [přizpůsobení operací pomocí pomocí uložené procedury](https://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
   
 > [!NOTE]
 > Tento návod vyžaduje dostupnost služby **InsertCustomer**, **UpdateCustomer**, a **DeleteCustomer** uložené procedury pro databázi Northwind.
@@ -65,7 +65,7 @@ ms.locfileid: "63424803"
     > [!NOTE]
     > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Je podporována v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] a projekty jazyka C#. Proto vytvořte nový projekt v jednom z těchto jazyků.  
   
-3. Klikněte na tlačítko **formulářová aplikace Windows** šablonu a klikněte na tlačítko **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Klikněte na tlačítko **formulářová aplikace Windows** šablonu a klikněte na tlačítko **OK**. Další informace najdete v tématu [klientské aplikace](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Je vytvořen a přidán do projektu UpdatingwithSProcsWalkthrough **Průzkumníka řešení**.  
   
@@ -253,14 +253,14 @@ ms.locfileid: "63424803"
 ## <a name="next-steps"></a>Další kroky  
  V závislosti na požadavcích aplikace existuje několik kroků, které můžete chtít provést po vytvoření [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] tříd entit. Mezi vylepšení, která by mohla provést do této aplikace, patří:  
   
-- Implementace souběžnost kontroly během aktualizace. Informace najdete v tématu [optimistického řízení souběžnosti: Přehled](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
+- Implementace souběžnost kontroly během aktualizace. Informace najdete v tématu [optimistického řízení souběžnosti: Přehled](https://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   
-- Přidání dotazů LINQ jak filtrovat data. Informace najdete v tématu [Úvod do dotazů LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
+- Přidání dotazů LINQ jak filtrovat data. Informace najdete v tématu [Úvod do dotazů LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Dotazy LINQ to SQL](http://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
+ [Technologie LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Dotazy LINQ to SQL](https://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
  [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Postupy: Přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [Připravte si, co je nového pro vývoj aplikací Data v sadě Visual Studio 2012](http://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)
+ [Připravte si, co je nového pro vývoj aplikací Data v sadě Visual Studio 2012](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)

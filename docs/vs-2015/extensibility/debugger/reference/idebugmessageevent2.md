@@ -12,12 +12,12 @@ ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3c2b76d0972768bf4d77e7f6d9bd153920799970
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7bb6b014ef8aa662abd42ab2989d47f703880a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759458"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685974"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugMessageEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- DE implementuje toto rozhraní pro odeslání zprávy do sady Visual Studio, která vyžaduje odpověď uživatele. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) na stejný objekt jako toto rozhraní musí implementovat rozhraní. Používá SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) přístup `IDebugEvent2` rozhraní.  
+ DE implementuje toto rozhraní pro odeslání zprávy do sady Visual Studio, která vyžaduje odpověď uživatele. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) na stejný objekt jako toto rozhraní musí implementovat rozhraní. Používá SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) přístup `IDebugEvent2` rozhraní.  
   
  Implementace tohoto rozhraní musí komunikovat volání sady Visual Studio [SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md) na DE. Například to můžete udělat a zobrazí se zpráva pošle zprávu je DE zpracování vláken, nebo objekt implementující toto rozhraní může obsahovat odkaz na DE a zpětné volání DE s odpovědí předaná do `IDebugMessageEvent2::SetResponse`.  
   
@@ -49,7 +49,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="remarks"></a>Poznámky  
  DE bude používat toto rozhraní, pokud vyžaduje konkrétní odpověď od uživatele pro konkrétní zprávu. Například pokud DE dostane zprávu "Přístup byl odepřen" po pokus o vzdálené připojení k programu, DE odešle tuto konkrétní zprávu do sady Visual Studio v `IDebugMessageEvent2` událost s poli styl zprávy `MB_RETRYCANCEL`. To mu umožní opakovat nebo ukončit operaci připojení.  
   
- DE Určuje, jak tuto zprávu zpracovat konvencemi funkce Win32 `MessageBox` (viz [AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) podrobnosti).  
+ DE Určuje, jak tuto zprávu zpracovat konvencemi funkce Win32 `MessageBox` (viz [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) podrobnosti).  
   
  Použití [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) rozhraní pro odesílání zpráv do Visual Studio, které nevyžadují odpověď od uživatele.  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d54d69a9aeda76c79208c2685efde94eaaab1017
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559823"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693774"
 ---
 # <a name="n-tier-data-applications-overview"></a>Přehled vícevrstvých datových aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ N-úroveň * datové aplikace jsou datové aplikace, které jsou rozděleny do n
   
 - [LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje nastavení pro generování třídy DataContext a dat do samostatných oborů názvů. Tato skutečnost umožňuje logické rozdělení přístupu k datům a vrstev datové entity.  
   
-- [Technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) poskytuje <xref:System.Data.Linq.Table%601.Attach%2A> metodu, která umožňuje sloučit DataContext z různých vrstev v aplikaci. Další informace najdete v tématu [N-vrstvé a vzdálené aplikace s LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+- [Technologie LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) poskytuje <xref:System.Data.Linq.Table%601.Attach%2A> metodu, která umožňuje sloučit DataContext z různých vrstev v aplikaci. Další informace najdete v tématu [N-vrstvé a vzdálené aplikace s LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
   
 ## <a name="presentation-tier"></a>Prezentační vrstva  
  *Prezentační vrstvy* je vrstva, ve které uživatelé komunikují s aplikací. Často také obsahuje další aplikační logiku. Mezi typické komponenty prezentační vrstvy patří:  
   
 - Komponenty datové vazby, jako je například <xref:System.Windows.Forms.BindingSource> a <xref:System.Windows.Forms.BindingNavigator>.  
   
-- Objektové reprezentace dat, jako například [technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) tříd entit pro použití v prezentační vrstvě.  
+- Objektové reprezentace dat, jako například [technologie LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) tříd entit pro použití v prezentační vrstvě.  
   
   Prezentační vrstva obvykle přistupuje střední vrstvě pomocí odkazu na službu (například [služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) aplikace). Prezentační vrstva obvykle nepřistupuje přímo k datové vrstvě. Prezentační vrstva komunikuje s datovou vrstvou prostřednictvím součásti datového přístupu v rámci střední vrstvy.  
   
@@ -57,9 +57,9 @@ N-úroveň * datové aplikace jsou datové aplikace, které jsou rozděleny do n
   
 - Komponenty datového přístupu a logiky, jako je například:  
   
-  - [Objekty TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) a [adaptéry a čtečky dat](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  - [Objekty TableAdapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) a [adaptéry a čtečky dat](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-  - Objektové reprezentace dat, jako například [technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) tříd entit.  
+  - Objektové reprezentace dat, jako například [technologie LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) tříd entit.  
   
   - Běžné služby aplikací, jako je například ověření, autorizace a přizpůsobení.  
   
@@ -87,9 +87,9 @@ Datová vrstva
   
  [Návod: Vytvoření vícevrstvé datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [Návod: Přidání ověřování do vícevrstvé datové aplikace](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Návod: Přidání ověřování do vícevrstvé datové aplikace](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
- [N-vrstvé a vzdálené aplikace s LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+ [N-vrstvé a vzdálené aplikace s LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.Data.Linq.ITable.Attach%2A>   

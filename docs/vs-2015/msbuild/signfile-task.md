@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 081899efb202917f1ebeac97a58dd89cf5a04f53
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 08db6a5d22cacc348a9ef36fd9e9857d5b55642a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444393"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703727"
 ---
 # <a name="signfile-task"></a>SignFile – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Zaregistruje zadaného souboru pomocí zadaného certifikátu.
 ```  
   
 > [!NOTE]
-> Kryptografický otisk certifikátu je hodnota hash SHA-1 certifikátu. Další informace najdete v tématu [získat hodnoty Hash SHA-1 certifikátu důvěryhodné kořenové certifikační Autority](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
+> Kryptografický otisk certifikátu je hodnota hash SHA-1 certifikátu. Další informace najdete v tématu [získat hodnoty Hash SHA-1 certifikátu důvěryhodné kořenové certifikační Autority](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
   
 ## <a name="example"></a>Příklad  
  Následující příklad používá `Exec` úloh se soubory v zadané `FilesToSign` kolekci položek s certifikátem určené `Certificate` vlastnost. To můžete použít k podepsání soubory Instalační služby systému Windows během procesu sestavení.  

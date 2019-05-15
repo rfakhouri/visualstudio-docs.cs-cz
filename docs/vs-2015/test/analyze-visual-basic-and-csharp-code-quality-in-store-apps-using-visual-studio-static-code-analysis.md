@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442881"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686560"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analýza kvality kódu jazyka Visual Basic a C# v aplikacích pro Store pomocí sady Visual Studio statické analýzy kódu
 
@@ -27,7 +27,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  Nástroj pro analýzu kódu v sadě Visual Studio Express prozkoumá váš kód pro sadu běžné závady a porušování programovacím vhodné. Upozornění analýzy kódu se liší od kompilátoru chyby a upozornění, protože nástroj pro analýzu kódu hledá vzory v konkrétním kódu, které jsou platné, ale přesto vytvořit problémy pro vy nebo ostatní uživatelé, kteří používají váš kód. Analýzy kódu můžete také vyhledat chyby v kódu, které je obtížné vyhledat pomocí testování. Spuštění nástroje Analýza kódu v pravidelných intervalech během procesu vývoje můžete zvýšit tak kvalitu dokončené aplikace.
 
 > [!NOTE]
-> V sadě Visual Studio Ultimate, Visual Studio Premium a Visual Studio Professional můžete použít všechny funkce pro analýzu kódu. Zobrazit [analýza kvality aplikace pomocí nástrojů pro analýzu kódu](http://msdn.microsoft.com/library/dd264897.aspx) v knihovně MSDN.
+> V sadě Visual Studio Ultimate, Visual Studio Premium a Visual Studio Professional můžete použít všechny funkce pro analýzu kódu. Zobrazit [analýza kvality aplikace pomocí nástrojů pro analýzu kódu](https://msdn.microsoft.com/library/dd264897.aspx) v knihovně MSDN.
 
 ## <a name="in-this-topic"></a>V tomto tématu
  Informace o:
@@ -98,12 +98,12 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 ## <a name="BKMK_Warnings"></a> Upozornění analýzy kódu jazyka Visual Basic a C#
  Analýza kódu vyvolává následujícími upozorněními:
 
- [CA1001: Typy, které vlastní uvolnitelné pole by měly být uvolnitelné](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: Typy, které vlastní uvolnitelné pole by měly být uvolnitelné](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: Odstraňte prázdné finalizační metody](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: Odstraňte prázdné finalizační metody](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: Uvolnitelné pole by mělo být uvolněno](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: Uvolnitelné pole by mělo být uvolněno](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: Implementovat Serializační konstruktory](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: Implementovat Serializační konstruktory](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: Přetižte operátor equals při přepsání ValueType.Equals](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: Přetižte operátor equals při přepsání ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)

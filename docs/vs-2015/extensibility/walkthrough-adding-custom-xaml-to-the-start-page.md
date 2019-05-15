@@ -11,12 +11,12 @@ ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5d41c68adc544806acc7a6abc02229e00f216f39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7b2de492bd1eddf4bf18e4824cdb64de4241fa5f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048577"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674113"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>Návod: Přidání vlastního souboru XAML na úvodní stránku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,4 +92,4 @@ Tento návod ukazuje, jak vytvořit vlastní aplikaci Visual Studio úvodní str
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení úvodní stránky](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Kontejner ovládacích prvků WPF](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)
+ [Kontejner ovládacích prvků WPF](https://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)

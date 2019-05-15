@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 57a370dd8fd243deba8db9b9a928202d25c7836d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424748"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675632"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Návod: Vytvoření vícevrstvé datové aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
   
 - Vytvoření typové datové sady s použitím **Průvodce konfigurací zdroje dat**.  
   
-- Oddělení generované [objekty TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) a kód datovou sadu do samostatných projektů.  
+- Oddělení generované [objekty TableAdapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) a kód datovou sadu do samostatných projektů.  
   
 - Vytvoření služby Windows Communication Foundation (WCF) Chcete-li volat vrstvě přístupu k datům.  
   
@@ -381,7 +381,7 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
 ## <a name="next-steps"></a>Další kroky  
  V závislosti na požadavcích aplikace existuje několik kroků, které můžete chtít provést po uložení souvisejících dat v aplikaci založené na Windows. Může například vytvořit následující vylepšení této aplikace:  
   
-- Přidání ověřování do datové sady. Informace najdete v tématu [názorný postup: Přidání ověřování do vícevrstvé datové aplikace](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+- Přidání ověřování do datové sady. Informace najdete v tématu [názorný postup: Přidání ověřování do vícevrstvé datové aplikace](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
 - Přidáte další metody pro službu pro aktualizaci dat zpět do databáze.  
   

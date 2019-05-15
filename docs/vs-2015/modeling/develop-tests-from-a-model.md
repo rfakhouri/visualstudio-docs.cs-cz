@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042051"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692261"
 ---
 # <a name="develop-tests-from-a-model"></a>Vývoj testů z modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Požadavky a architektury modely můžete pomoci vám organizovat testy systému
   
  Subsystém testování platí stejné zásady pro hlavní součásti systému. Jednotlivé komponenty se testovali odděleně od jiných komponent. Subsystém testuje zaměřit se na chování viditelné v součásti uživatelského rozhraní nebo rozhraní API.  
   
- Další informace o tom, jak spustit testy, naleznete v tématu [testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+ Další informace o tom, jak spustit testy, naleznete v tématu [testování aplikace](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Odvozování systémových testů z modelu požadavky  
  Můžete vytvořit a Udržovat vztah mezi testy systému a model požadavků. K navázání tohoto vztahu, psaní testů, které odpovídají hlavních prvků model požadavků. Visual Studio pomáhá udržovat relace umožňují vytvářet propojení mezi testy a součástí modelu. Další informace o modelech požadavky najdete v části [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
@@ -63,9 +63,9 @@ Požadavky a architektury modely můžete pomoci vám organizovat testy systému
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Propojení případu použití testy  
   
-1. V [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], vytvořit požadavek a základní sadu testů v něm. Další informace o to udělat najdete v tématu [testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. V [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], vytvořit požadavek a základní sadu testů v něm. Další informace o to udělat najdete v tématu [testování aplikace](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-    Je požadavek, který vytvoříte pracovní položku v [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Může být uživatelský scénář, požadavek nebo případ použití pracovní položky, v závislosti na šabloně procesu, který váš projekt používá s [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Další informace najdete v tématu [sledování práce pomocí Visual Studio Team Services nebo Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    Je požadavek, který vytvoříte pracovní položku v [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Může být uživatelský scénář, požadavek nebo případ použití pracovní položky, v závislosti na šabloně procesu, který váš projekt používá s [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Další informace najdete v tématu [sledování práce pomocí Visual Studio Team Services nebo Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Propojte pracovní položky požadavku na jeden nebo více případy použití v modelu.  
   
@@ -106,7 +106,7 @@ Assert (countAfter == countBefore = 1);
   
  Přístupové objekty a operace Updater již bude k dispozici prostřednictvím rozhraní API normální aplikace. Ale některé další funkce může mít k zapsání Chcete-li povolit testy. Tyto dodatečné přístupové objekty a operace Updater jsou někdy označovány jako 'test instrumentace'. Protože jsou závislé na interní návrhu systému, je odpovědností vývojáře v systému a umožnit jim, že testeři psát kód testy z hlediska model požadavků.  
   
- Při psaní automatizované testy můžete zabalit přístupové objekty a operace Updater obecné testy. Další informace najdete v tématu [vytváření automatizované, že testy spustitelný soubor pomocí obecné testy](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
+ Při psaní automatizované testy můžete zabalit přístupové objekty a operace Updater obecné testy. Další informace najdete v tématu [vytváření automatizované, že testy spustitelný soubor pomocí obecné testy](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
   
 ### <a name="tests-for-business-rules"></a>Testy pro obchodní pravidla  
  Některé požadavky přímo nesouvisí žádné jeden případ použití. Například obchodní DinnerNow umožňuje zákazníkům vybrat z mnoha nabídky, ale vyžaduje, aby každý mohl, všechny zvolené položky musí být v jediné nabídce. Toto obchodní pravidlo může být vyjádřený jako invariantní o přidružení mezi příkazy, nabídky a položky v třídě modelu požadavky.  
@@ -164,9 +164,9 @@ Assert (countAfter == countBefore = 1);
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Propojení prvku modelu nebo vztah testy  
   
-1. V [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], vytvořit požadavek a základní sadu testů v něm. Další informace o to udělat najdete v tématu [testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. V [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], vytvořit požadavek a základní sadu testů v něm. Další informace o to udělat najdete v tématu [testování aplikace](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     Je požadavek, který vytvoříte pracovní položku v [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Může být uživatelský scénář, požadavek nebo případ použití pracovní položky, v závislosti na šabloně procesu, který váš projekt používá s [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Další informace najdete v tématu [sledování práce pomocí Visual Studio Team Services nebo Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+     Je požadavek, který vytvoříte pracovní položku v [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Může být uživatelský scénář, požadavek nebo případ použití pracovní položky, v závislosti na šabloně procesu, který váš projekt používá s [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Další informace najdete v tématu [sledování práce pomocí Visual Studio Team Services nebo Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Propojte pracovní položky požadavku na jeden nebo více prvků ve vašem modelu.  
   

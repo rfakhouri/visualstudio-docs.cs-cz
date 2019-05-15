@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bd4b15fb7c0f1cbc0630779ecef0373977bb2056
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792116"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694212"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Práce s diagramem definice DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,4 +75,4 @@ Diagram [!INCLUDE[dsl](../includes/dsl-md.md)] definice je důležitý nástroj 
  Pokud doménovým vztahem obsahuje odvozené vztahů, nebo pokud má vztahů obsažení nebo odkazu pomocí jiné vztahy domén, můžete zobrazit vztah jako třídu kliknutím pravým tlačítkem vztah a pak levým na **zobrazit jako třídy** . Relace se zobrazí **vlastnosti domény** oddílů a zobrazí stromů dědičnost a vztahy.  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

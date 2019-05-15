@@ -10,17 +10,17 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4427931b079671a19e647860b263105ffdf52bd4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d14e60ec28fb5f8ba80f9986c4316058539b35e6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435530"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695025"
 ---
 # <a name="creating-a-settings-category"></a>Vytvoření kategorie nastavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-V tomto názorném postupu vytvoření kategorie nastavení sady Visual Studio a použít ho k uložení hodnot a obnovení hodnoty ze souboru nastavení. Nastavení kategorie je skupina souvisejících vlastností, které se zobrazují jako "bod vlastní nastavení"; To znamená, že jako zaškrtávací políčko v **Import a export nastavení** průvodce. (Najdete ho na **nástroje** nabídky.) Nastavení se uloží nebo obnovili kategorii a individuální nastavení nejsou zobrazeny v průvodci. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+V tomto názorném postupu vytvoření kategorie nastavení sady Visual Studio a použít ho k uložení hodnot a obnovení hodnoty ze souboru nastavení. Nastavení kategorie je skupina souvisejících vlastností, které se zobrazují jako "bod vlastní nastavení"; To znamená, že jako zaškrtávací políčko v **Import a export nastavení** průvodce. (Najdete ho na **nástroje** nabídky.) Nastavení se uloží nebo obnovili kategorii a individuální nastavení nejsou zobrazeny v průvodci. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Vytvoření kategorie nastavení odvozením z <xref:Microsoft.VisualStudio.Shell.DialogPage> třídy.  
   
@@ -38,7 +38,7 @@ V tomto názorném postupu vytvoření kategorie nastavení sady Visual Studio a
   
 2. Otevřete soubor VSPackage.resx a přidejte tyto tři řetězcové prostředky:  
   
-    |Název|Value|  
+    |Name|Value|  
     |----------|-----------|  
     |106|Moje kategorie|  
     |107|Moje nastavení|  

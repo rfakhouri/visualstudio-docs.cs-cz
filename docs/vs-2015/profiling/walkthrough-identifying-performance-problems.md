@@ -14,12 +14,12 @@ caps.latest.revision: 58
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0ac9d085a837ab3ab05754ce70d853112bc48d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6bc4135b9b861a460295c67c576405edd5c63211
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096514"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695003"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Návod: Identifikace problémů s výkonem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,4 +161,4 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci identifikovat problémy 
 ## <a name="see-also"></a>Viz také  
  [Přehledy](../profiling/overviews-performance-tools.md)   
  [Začínáme se službou](../profiling/getting-started-with-performance-tools.md)   
- [/Z7, /Zi, /ZI (formát informací o ladění)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+ [/Z7, /Zi, /ZI (formát informací o ladění)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

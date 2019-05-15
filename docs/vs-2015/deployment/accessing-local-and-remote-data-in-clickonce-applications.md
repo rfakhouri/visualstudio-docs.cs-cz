@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ce6b6ee633e926709b0c15c2234077055600a07
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427238"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688118"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Přístup k lokálním a vzdáleným datům v aplikacích ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndpteccl
   
  Izolované úložiště funguje ve všech verzích [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Izolované úložiště funguje taky v částečně důvěryhodné aplikace bez nutnosti udělení dalších oprávnění. Izolované úložiště byste měli použít, pokud vaše aplikace musí spustit v částečném vztahu důvěryhodnosti, ale musí spravovat data specifická pro aplikaci.  
   
- Další informace najdete v tématu [izolovaného úložiště](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
+ Další informace najdete v tématu [izolovaného úložiště](https://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
   
 ### <a name="other-local-files"></a>Další místní soubory  
  Pokud vaše aplikace musí fungovat s nebo uložit data koncových uživatelů, jako jsou sestavy, obrázky, Hudba a tak dále, aplikace bude vyžadovat <xref:System.Security.Permissions.FileIOPermission> ke čtení a zápis dat do místního systému souborů.  
@@ -86,7 +86,7 @@ Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndpteccl
  V určitém okamžiku vaše aplikace bude mít pravděpodobně k načtení informací ze vzdáleného webu, jako je například informace o zákaznících dat nebo na trhu. Tato část popisuje nejběžnější techniky pro načítání vzdálených dat.  
   
 ### <a name="accessing-files-by-using-http"></a>Přístup k souborům pomocí protokolu HTTP  
- Můžete přístup k datům z webového serveru pomocí <xref:System.Net.WebClient> nebo <xref:System.Net.HttpWebRequest> třídy v <xref:System.Net> oboru názvů. Data mohou být buď statické soubory nebo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace, které vracejí nezpracovaný text nebo XML data. Pokud jsou vaše data ve formátu XML, je nejrychlejší způsob, jak načíst data pomocí <xref:System.Xml.XmlDocument> třídy, jejichž <xref:System.Xml.XmlDocument.Load%2A> metoda přebírá adresu URL jako argument. Příklad najdete v tématu [čtení dokumentu XML do modelu DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
+ Můžete přístup k datům z webového serveru pomocí <xref:System.Net.WebClient> nebo <xref:System.Net.HttpWebRequest> třídy v <xref:System.Net> oboru názvů. Data mohou být buď statické soubory nebo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace, které vracejí nezpracovaný text nebo XML data. Pokud jsou vaše data ve formátu XML, je nejrychlejší způsob, jak načíst data pomocí <xref:System.Xml.XmlDocument> třídy, jejichž <xref:System.Xml.XmlDocument.Load%2A> metoda přebírá adresu URL jako argument. Příklad najdete v tématu [čtení dokumentu XML do modelu DOM](https://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
   
  Je nutné zvážit zabezpečení, když vaše aplikace přistupuje vzdálených dat prostřednictvím protokolu HTTP. Ve výchozím nastavení vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace přístup k síťovým prostředkům může být omezená, v závislosti na tom, jak se vaše aplikace nasazena. Tato omezení se použijí na škodlivé programy zabránit v získání přístupu k privilegovaným vzdálených dat nebo z počítače uživatele pomocí k útoku na jiné počítače v síti.  
   

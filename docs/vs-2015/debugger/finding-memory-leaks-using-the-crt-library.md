@@ -30,12 +30,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800925"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682425"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Hledání nevrácené paměti pomocí knihovny CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Nevracení paměti, definovaná jako neschopnost správně zrušit přidělení 
   
  Funkce CRT pracovaly správně `#include` příkazy musí odpovídat zde uvedenému pořadí.  
   
- Zahrnutí souboru crtdbg.h namapuje `malloc` a [bezplatné](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) funkce na jejich ladicí verze [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) a `free`, které sledují přidělování a vracení paměti. Toto mapování se vyskytuje pouze v sestavení ladění, které mají `_DEBUG`. Verze sestavení používají běžné `malloc` a `free` funkce.  
+ Zahrnutí souboru crtdbg.h namapuje `malloc` a [bezplatné](https://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) funkce na jejich ladicí verze [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) a `free`, které sledují přidělování a vracení paměti. Toto mapování se vyskytuje pouze v sestavení ladění, které mají `_DEBUG`. Verze sestavení používají běžné `malloc` a `free` funkce.  
   
  `#define` Příkaz mapuje základní verze funkcí haldy CRT pro korespondující verzi ladicího. Vynecháte-li `#define` prohlášení, bude výpis paměti méně podrobný.  
   
@@ -67,7 +67,7 @@ Nevracení paměti, definovaná jako neschopnost správně zrušit přidělení 
 _CrtDumpMemoryLeaks();  
 ```  
   
- Pokud aplikace obsahuje více východů, není nutné ručně umístit volání [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) v každém bodu vstupu. Volání `_CrtSetDbgFlag` na začátku aplikace způsobí automatické volání `_CrtDumpMemoryLeaks` na každém bodu ukončení. Je nutné nastavit dvě bitová pole zde uvedená:  
+ Pokud aplikace obsahuje více východů, není nutné ručně umístit volání [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) v každém bodu vstupu. Volání `_CrtSetDbgFlag` na začátku aplikace způsobí automatické volání `_CrtDumpMemoryLeaks` na každém bodu ukončení. Je nutné nastavit dvě bitová pole zde uvedená:  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -82,7 +82,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interpretace sestavy nevracení paměti  
- Pokud vaše aplikace nedefinuje `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) zobrazí sestava nevracení paměti, která vypadá takto:  
+ Pokud vaše aplikace nedefinuje `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) zobrazí sestava nevracení paměti, která vypadá takto:  
   
 ```  
 Detected memory leaks!  
@@ -109,7 +109,7 @@ Object dump complete.
   
 - Číslo přidělení paměti, což je `18` v tomto příkladu  
   
-- [Typ bloku](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), což je `normal` v tomto příkladu.  
+- [Typ bloku](https://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), což je `normal` v tomto příkladu.  
   
 - Umístění paměti v šestnáctkové soustavě, což je `0x00780E80` v tomto příkladu.  
   

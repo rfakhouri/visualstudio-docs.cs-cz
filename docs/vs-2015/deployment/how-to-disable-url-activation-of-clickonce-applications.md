@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 345e58b2c2a783bc9ffda8b915bf8baa66ad375a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 75a98706858323693ec01ec3c3420a6d2d25ffef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046965"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697216"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Postupy: Zakázání aktivace adresy URL aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Obvykle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace se autom
   
  Tento postup lze použít pouze pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace nainstalované v počítači uživatele z webového serveru. Nelze použít pro online jen pro aplikace, které lze spustit pouze pomocí jejich adresy URL. Další informace o rozdílu mezi pouze v režimu online a nainstalované aplikace najdete v tématu [Výběr strategie nasazení ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- Tento postup používá [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] nástroj MageUI.exe. Další informace o tomto nástroji najdete v tématu [MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). Můžete také provést tento postup pomocí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Tento postup používá [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] nástroj MageUI.exe. Další informace o tomto nástroji najdete v tématu [MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). Můžete také provést tento postup pomocí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="procedure"></a>Postup  
   

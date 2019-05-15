@@ -13,17 +13,17 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 854371293fd46893f41eef0abc36446f1c7955f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e975986a03e7005835653dc98931fc9a44681e28
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422393"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700487"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Obor názvů souběžnosti (Vizualizér souběžnosti)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Concurrency` Obor názvů obsahuje třídy a funkce, které umožňují přístup k modulu Concurrency Runtime, souběžnému programovacímu rámci pro jazyk C++. Další informace najdete v tématu [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
+`Concurrency` Obor názvů obsahuje třídy a funkce, které umožňují přístup k modulu Concurrency Runtime, souběžnému programovacímu rámci pro jazyk C++. Další informace najdete v tématu [Concurrency Runtime](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,7 +35,7 @@ namespace Concurrency;
   
 ### <a name="namespaces"></a>Jmenné prostory  
   
-|Název|Popis|  
+|Name|Popis|  
 |----------|-----------------|  
 |[diagnostic – obor názvů](../profiling/diagnostic-namespace.md)|`diagnostics` Obor názvů poskytuje funkce pro generování značek Vizualizéru souběžnosti.|  
   

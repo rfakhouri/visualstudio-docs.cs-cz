@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b5834e00cfaf43d1e5230ffbb221dbd5044d687
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 759b3268edd6155d733c18779ebf7ca4efc44a44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386828"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688855"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Postupy: Přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63386828"
 Uložené procedury lze přidat do Návrháře relací objektů a spustit jako typický <xref:System.Data.Linq.DataContext> metody. Můžete je také použít k přepsání výchozí [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] chování za běhu, který provádí vložení, aktualizace a odstranění při uložení změn z tříd entit k databázi (například při volání <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metoda).  
   
 > [!NOTE]
-> Pokud uložená procedura vrátí hodnoty, které se mají odeslat klientovi (například. hodnoty vypočítané v uložené proceduře aplikace), vytvoření výstupních parametrů v uložených procedurách. Pokud nemůžete použít výstupních parametrů, zápis přepsání implementace částečné metody, aniž byste museli spoléhat na generovaný návrhářem relací objektů. Databáze vygenerovala hodnoty členů muset být nastaven na odpovídající hodnoty po úspěšném dokončení operace INSERT nebo UPDATE. Další informace najdete v tématu [odpovědnosti pro vývojáře v přepisuje výchozí chování](http://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).  
+> Pokud uložená procedura vrátí hodnoty, které se mají odeslat klientovi (například. hodnoty vypočítané v uložené proceduře aplikace), vytvoření výstupních parametrů v uložených procedurách. Pokud nemůžete použít výstupních parametrů, zápis přepsání implementace částečné metody, aniž byste museli spoléhat na generovaný návrhářem relací objektů. Databáze vygenerovala hodnoty členů muset být nastaven na odpovídající hodnoty po úspěšném dokončení operace INSERT nebo UPDATE. Další informace najdete v tématu [odpovědnosti pro vývojáře v přepisuje výchozí chování](https://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).  
   
 > [!NOTE]
 > [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] databáze vygenerovala popisovače hodnoty automaticky pro identitu (automatické zvyšování čísla), rowguidcol (GUID databáze vygenerovala) a sloupce časového razítka. Databáze vygenerovala hodnoty v jiných typech sloupců neočekávaně způsobí hodnotu null. Na návratové hodnoty generovaných databází, měli byste ručně nastavit <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> k `true` a <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> na jednu z následujících akcí: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, nebo <xref:System.Data.Linq.Mapping.AutoSync>.  
@@ -67,6 +67,6 @@ Uložené procedury lze přidat do Návrháře relací objektů a spustit jako t
 ## <a name="see-also"></a>Viz také  
  [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Návod: Vytvoření třídy LINQ to SQL (Návrhář O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [Technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Operace vložení, aktualizace a odstranění](http://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
+ [Návod: Vytvoření třídy LINQ to SQL (Návrhář O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [Technologie LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Operace vložení, aktualizace a odstranění](https://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)

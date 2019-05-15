@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088142"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685334"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Volba mezi sdíleným a verzovaným rozšířením VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Různé verze sady Visual Studio můžou existovat společně na stejném počí
   
     - Program vašeho balíčku VSPackage umožní reagovat na verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve kterém je spuštěná. Pak v případě dotazů pro novější služby selžou, vašeho balíčku VSPackage můžou nabízet další služby, které jsou podporovány ve starších verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-- Zaregistrujte vašeho balíčku VSPackage odpovídajícím způsobem. Další informace najdete v tématu [registrace balíčku VSPackage](../extensibility/internals/vspackage-registration.md) a [spravovat registrace balíčku VSPackage](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+- Zaregistrujte vašeho balíčku VSPackage odpovídajícím způsobem. Další informace najdete v tématu [registrace balíčku VSPackage](../extensibility/internals/vspackage-registration.md) a [spravovat registrace balíčku VSPackage](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
 - Registrace přípon souborů odpovídajícím způsobem. Další informace najdete v tématu [registrace přípony názvů souborů pro nasazení vedle sebe](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69fac0b8ef5c17a8d66d32730e189f2813aa1158
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9176fe7bc7f9824610b7a77f1e1ef3b374b69ef3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760663"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701718"
 ---
 # <a name="properties-of-compartment-shapes"></a>Vlastnosti obrazců prostoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Obrazce oddílu jsou jedním z obrazce, které můžete použít k zobrazení do
 |Vlastní atributy|Slouží k přidání atributů do třídy zdrojový kód, který je generován z obrazce oddílu|\<žádné >|  
 |Generuje Double odvozené|Pokud `True`, se vygeneruje základní třídu a částečné třídy (pro podporu přizpůsobení pomocí přepisů). Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Má vlastní konstruktor|Pokud `True`, poskytneme vám vlastního konstruktoru ve zdrojovém kódu. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Modifikátor dědičnosti|Popisuje druh dědičnosti třídy zdrojový kód, který je generován z obrazec oddílu (`none`, `abstract` nebo `sealed`).|Žádná|  
+|Modifikátor dědičnosti|Popisuje druh dědičnosti třídy zdrojový kód, který je generován z obrazec oddílu (`none`, `abstract` nebo `sealed`).|Žádné|  
 |Základní obrazec oddílu|Základní třída tohoto obrazce.|(žádné)|  
-|Název|Název tohoto obrazce.|Aktuální název|  
+|Name|Název tohoto obrazce.|Aktuální název|  
 |Obor názvů|Obor názvů, který je přidružen s tímto obrazcem.|Aktuální obor názvů|  
 |Popis typu|Jak popisek je definován (fixní, proměnná nebo žádný). Pokud pevně daná, a potom hodnoty `Fixed Tooltip Text` vlastnost se používá jako popis tlačítka; Pokud je proměnná, pak popisek je definován ve vlastním kódu.|žádná|  
 |Poznámky|Neformální poznámky, které jsou spojeny s tímto obrazcem.|\<žádné >|  
@@ -60,4 +60,4 @@ Obrazce oddílu jsou jedním z obrazce, které můžete použít k zobrazení do
 |Klíčové slovo nápovědy|Klíčové slovo, je použít k indexování nápovědy klávesy F1 pro tento obrazec.|\<žádné >|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

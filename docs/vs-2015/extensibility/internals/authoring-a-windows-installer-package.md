@@ -11,12 +11,12 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30c941fd4f3c281dfe363d284a559bafe055451c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 5e92e965f0efe531f1618be509d0a7c9655c573d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872850"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682543"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Vytvoření balíčku Instalační služby systému Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Datové jednotky modelu Instalační služby systému Windows. Místo psaní skr
   
 - Integrace sady VSPackage v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] voláním **/Setup devenv.exe** (pomocí tabulky CustomAction).  
   
-  Další informace najdete v tématu [Instalační služby systému Windows](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
+  Další informace najdete v tématu [Instalační služby systému Windows](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
 ## <a name="setup-tools"></a>Instalační program nástroje  
  Různé nástroje třetích stran instalace nabízejí vývojové prostředí pro balíčky Instalační služby systému Windows. Dva bezplatné nástroje vám budou následující:  

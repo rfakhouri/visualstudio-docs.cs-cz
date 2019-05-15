@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35c5b1275ced5eb7f2fee85c0592be2b5ed94533
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7639225229aeaa37cd682307239d3097be313b66
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419757"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689931"
 ---
 # <a name="toolbox-html-tab"></a>Sada nástrojů, karta HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "63419757"
   
 ## <a name="tasks"></a>Úkoly  
   
-- [Postupy: Správa okna nástrojů](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+- [Postupy: Správa okna nástrojů](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
-- [Postupy: Manipulace s karty panelu nástrojů](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
+- [Postupy: Manipulace s karty panelu nástrojů](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
 ## <a name="ui-elements"></a>Prvky uživatelského rozhraní  
  Tyto nástroje jsou k dispozici ve výchozím nastavení na kartě HTML.  
@@ -41,7 +41,7 @@ ms.locfileid: "63419757"
  **Pointer**  
  ![ASP.NET Mobile Designer HTMLpage Pointer](../../ide/reference/media/vxpointer.gif "vxPointer")  
   
- Tento nástroj je standardně vybraná, po otevření libovolné kartě panelu nástrojů. Nelze odstranit. Ukazatel umožňuje přetáhněte objekty na návrhové ploše zobrazit, změnit jejich velikost a umístění na stránce nebo formuláře. Další informace najdete v tématu [jak: Správa okna nástrojů](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) a [jak: Manipulace s karty panelu nástrojů](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+ Tento nástroj je standardně vybraná, po otevření libovolné kartě panelu nástrojů. Nelze odstranit. Ukazatel umožňuje přetáhněte objekty na návrhové ploše zobrazit, změnit jejich velikost a umístění na stránce nebo formuláře. Další informace najdete v tématu [jak: Správa okna nástrojů](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) a [jak: Manipulace s karty panelu nástrojů](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  **Vstup (tlačítko)**  
  ![HTML web page button](../../ide/reference/media/vxbutton.gif "vxButton")  
@@ -54,7 +54,7 @@ ms.locfileid: "63419757"
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- Další informace najdete v tématu [vstupní ovládací prvky HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputButton serverového ovládacího prvku](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Postupy: Vytváření skriptů a úprava obslužných rutin události](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [mapa obsahu ovládací prvky tlačítka Webový Server](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, a <xref:System.Web.UI.WebControls.Button>.  
+ Další informace najdete v tématu [vstupní ovládací prvky HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputButton serverového ovládacího prvku](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Postupy: Vytváření skriptů a úprava obslužných rutin události](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [mapa obsahu ovládací prvky tlačítka Webový Server](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, a <xref:System.Web.UI.WebControls.Button>.  
   
  **Vstup (obnovení)**  
  ![Snímek obrazovky HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -67,7 +67,7 @@ ms.locfileid: "63419757"
 <input id="Reset1" type="reset" value="Reset" name="Reset1">  
 ```  
   
- Další informace najdete v tématu [vstupní ovládací prvky HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputReset serverového ovládacího prvku](http://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, a <xref:System.Web.UI.WebControls.Button>.  
+ Další informace najdete v tématu [vstupní ovládací prvky HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputReset serverového ovládacího prvku](https://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, a <xref:System.Web.UI.WebControls.Button>.  
   
  **Vstup (Odeslat)**  
  ![Snímek obrazovky HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "vxSubmit")  
@@ -80,7 +80,7 @@ ms.locfileid: "63419757"
 <input id="Submit1" type="submit" value="Submit" name="Submit1">  
 ```  
   
- Další informace najdete v tématu [vstupní ovládací prvky HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputSubmit webového serveru ovládacího prvku](http://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, a <xref:System.Web.UI.WebControls.Button>.  
+ Další informace najdete v tématu [vstupní ovládací prvky HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputSubmit webového serveru ovládacího prvku](https://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, a <xref:System.Web.UI.WebControls.Button>.  
   
  **Vstup (Text)**  
  ![Snímek obrazovky HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "vxTextfield")  
@@ -93,10 +93,10 @@ ms.locfileid: "63419757"
 <input id="Text1" TYPE="text" value="Text Field" name="Text1">  
 ```  
   
- Další informace najdete v tématu [vstupní ovládací prvky HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputText serverového ovládacího prvku](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [Přehled ovládacího prvku textového pole webového serveru](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText>, a <xref:System.Web.UI.WebControls.TextBox>.  
+ Další informace najdete v tématu [vstupní ovládací prvky HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputText serverového ovládacího prvku](https://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [Přehled ovládacího prvku textového pole webového serveru](https://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText>, a <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
-> Doporučujeme, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Doporučujeme, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Vstup (soubor)**  
  ![Stránka HTML pole souboru](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -109,10 +109,10 @@ ms.locfileid: "63419757"
 <input id="File1" type="file" name="File1">  
 ```  
   
- Další informace najdete v tématu [vstupní ovládací prvky HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputFile serverového ovládacího prvku](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6), a <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
+ Další informace najdete v tématu [vstupní ovládací prvky HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputFile serverového ovládacího prvku](https://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6), a <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
   
 > [!IMPORTANT]
-> Doporučujeme, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Doporučujeme, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Vstup (heslo)**  
  ![Visual Studio Password Field](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -125,10 +125,10 @@ ms.locfileid: "63419757"
 <input id="Password1" type="password" name="Password1">  
 ```  
   
- Další informace najdete v tématu [vstupní ovládací prvky HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputPassword serverového ovládacího prvku](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [jak: Nastavení ovládacího prvku TextBox webového serveru pro zadání hesla](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310), a [názorný postup: Ověřování uživatelských vstupů na webové stránky formuláře](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
+ Další informace najdete v tématu [vstupní ovládací prvky HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputPassword serverového ovládacího prvku](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [jak: Nastavení ovládacího prvku TextBox webového serveru pro zadání hesla](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310), a [názorný postup: Ověřování uživatelských vstupů na webové stránky formuláře](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
   
 > [!IMPORTANT]
-> Pokud aplikace přenáší uživatelská jména a hesla, měli byste nakonfigurovat vašeho webu na používání vrstvy SSL (Secure Sockets) k šifrování přenosu. Další informace najdete v tématu "Zabezpečení připojení pomocí protokolu SSL" [provozní příručce služby IIS](http://go.microsoft.com/fwlink/?linkid=47856). Kromě toho se doporučuje, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Pokud aplikace přenáší uživatelská jména a hesla, měli byste nakonfigurovat vašeho webu na používání vrstvy SSL (Secure Sockets) k šifrování přenosu. Další informace najdete v tématu "Zabezpečení připojení pomocí protokolu SSL" [provozní příručce služby IIS](http://go.microsoft.com/fwlink/?linkid=47856). Kromě toho se doporučuje, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Vstup (zaškrtávací políčko)**  
  ![Webová stránka HTML nástrojů zaškrtávací políčko možnost](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -141,7 +141,7 @@ ms.locfileid: "63419757"
 <input id="Checkbox1" type="checkbox" name="Checkbox1">   
 ```  
   
- Další informace najdete v tématu [vstupní ovládací prvky HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputCheckBox serverového ovládacího prvku](http://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [zaškrtávací políčko a Přehled ovládacích prvků webového serveru CheckBoxList](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>, a <xref:System.Web.UI.WebControls.CheckBox>.  
+ Další informace najdete v tématu [vstupní ovládací prvky HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputCheckBox serverového ovládacího prvku](https://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [zaškrtávací políčko a Přehled ovládacích prvků webového serveru CheckBoxList](https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>, a <xref:System.Web.UI.WebControls.CheckBox>.  
   
  **Vstup (přepínač)**  
  ![VisualStudioHTMLpageRadioButton screenshot](../../ide/reference/media/vxradio.gif "vxRadio")  
@@ -154,7 +154,7 @@ ms.locfileid: "63419757"
 <input id="Radio1" type="radio" name="Radio1">  
 ```  
   
- Další informace najdete v tématu [vstupní ovládací prvky HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputRadioButton serverového ovládacího prvku](http://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), [Přehled ovládacích prvků webového serveru RadioButtonListaovládacíhoprvkuRadioButton](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, a <xref:System.Web.UI.WebControls.RadioButton>.  
+ Další informace najdete v tématu [vstupní ovládací prvky HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputRadioButton serverového ovládacího prvku](https://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), [Přehled ovládacích prvků webového serveru RadioButtonListaovládacíhoprvkuRadioButton](https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, a <xref:System.Web.UI.WebControls.RadioButton>.  
   
  **Vstup (skryté)**  
  ![HTML stránka skrytá položka](../../ide/reference/media/vxhidden.gif "vxhidden")  
@@ -167,7 +167,7 @@ ms.locfileid: "63419757"
 <input id="Hidden1" type="hidden" name="Hidden1">   
 ```  
   
- Další informace najdete v tématu [vstupní ovládací prvky HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputHidden serverového ovládacího prvku](http://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9), a <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
+ Další informace najdete v tématu [vstupní ovládací prvky HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [deklarativní syntaxe HtmlInputHidden serverového ovládacího prvku](https://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9), a <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
   
  **Textové pole**  
  ![HTMLpage Toolbar Text Area](../../ide/reference/media/vxtextarea.gif "vxTextarea")  
@@ -180,10 +180,10 @@ ms.locfileid: "63419757"
 <textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>   
 ```  
   
- Další informace najdete v tématu [deklarativní syntaxe HtmlTextArea serverového ovládacího prvku](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea>, a <xref:System.Web.UI.WebControls.TextBox>.  
+ Další informace najdete v tématu [deklarativní syntaxe HtmlTextArea serverového ovládacího prvku](https://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea>, a <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
-> Doporučujeme, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Doporučujeme, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověřování uživatelského vstupu v ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Tabulka**  
  ![Snímek obrazovky HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")  
@@ -196,7 +196,7 @@ ms.locfileid: "63419757"
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>   
 ```  
   
- Další informace najdete v tématu [deklarativní syntaxe HtmlTable serverového ovládacího prvku](http://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [tabulka řádků tabulky a Přehled ovládacího prvku webového serveru buňky tabulky](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable>, a <xref:System.Web.UI.WebControls.Table>.  
+ Další informace najdete v tématu [deklarativní syntaxe HtmlTable serverového ovládacího prvku](https://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [tabulka řádků tabulky a Přehled ovládacího prvku webového serveru buňky tabulky](https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable>, a <xref:System.Web.UI.WebControls.Table>.  
   
  **Obrázek**  
  ![Stránka HTML obrázku položky](../../ide/reference/media/vximage.gif "vxImage")  
@@ -209,7 +209,7 @@ ms.locfileid: "63419757"
 <img alt="" src="">  
 ```  
   
- Další informace najdete v tématu [deklarativní syntaxe HtmlImage serverového ovládacího prvku](http://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Přehled ovládacího prvku webového serveru Image](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, a <xref:System.Web.UI.WebControls.Image>.  
+ Další informace najdete v tématu [deklarativní syntaxe HtmlImage serverového ovládacího prvku](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Přehled ovládacího prvku webového serveru Image](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, a <xref:System.Web.UI.WebControls.Image>.  
   
  **Výběr**  
  ![Stránka HTML rozevírací seznam nástrojů](../../ide/reference/media/vxdropdown.gif "vxDropdown")  
@@ -224,7 +224,7 @@ ms.locfileid: "63419757"
   
  Můžete vytvořit více řádky `select` element zvýšením hodnoty vlastnosti size.  
   
- Další informace najdete v tématu [deklarativní syntaxe serverového ovládacího prvku HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Postupy: Vytváření skriptů a úprava obslužných rutin události](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [přehled ovládací prvek DropDownList webového serveru](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Přehled ovládacího prvku ListBox webového serveru](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, a <xref:System.Web.UI.WebControls.DropDownList>.  
+ Další informace najdete v tématu [deklarativní syntaxe serverového ovládacího prvku HtmlSelect](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Postupy: Vytváření skriptů a úprava obslužných rutin události](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [přehled ovládací prvek DropDownList webového serveru](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Přehled ovládacího prvku ListBox webového serveru](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, a <xref:System.Web.UI.WebControls.DropDownList>.  
   
  **Vodorovná čára**  
  ![Stránka HTML vodorovné položku pravidla](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
@@ -237,7 +237,7 @@ ms.locfileid: "63419757"
 <hr width="100%" size=1>   
 ```  
   
- Další informace najdete v tématu [ovládací prvek vodorovné pravidlo](http://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f).  
+ Další informace najdete v tématu [ovládací prvek vodorovné pravidlo](https://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f).  
   
  **div**  
  ![HTML page Label](../../ide/reference/media/vxlabel.gif "vxLabel")  
@@ -250,9 +250,9 @@ ms.locfileid: "63419757"
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>  
 ```  
   
- Další informace najdete v tématu [ovládací prvek Div](http://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995), [Přehled ovládacího prvku webového serveru popisek](http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac), a <xref:System.Web.UI.WebControls.Label>.  
+ Další informace najdete v tématu [ovládací prvek Div](https://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995), [Přehled ovládacího prvku webového serveru popisek](https://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac), a <xref:System.Web.UI.WebControls.Label>.  
   
 ## <a name="see-also"></a>Viz také  
  [Panel nástrojů](../../ide/reference/toolbox.md)   
- [Standardní kartě panelu nástrojů](http://msdn.microsoft.com/library/35e9320d-fcbd-474b-8b8f-55705e9a1870)   
- [Ovládací prvky HTML](http://msdn.microsoft.com/library/83bc6f7e-a2b5-4fe9-9a34-eb34aef673be)
+ [Standardní kartě panelu nástrojů](https://msdn.microsoft.com/library/35e9320d-fcbd-474b-8b8f-55705e9a1870)   
+ [Ovládací prvky HTML](https://msdn.microsoft.com/library/83bc6f7e-a2b5-4fe9-9a34-eb34aef673be)

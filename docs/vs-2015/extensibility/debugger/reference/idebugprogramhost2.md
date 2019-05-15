@@ -12,12 +12,12 @@ ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7caa66f8a3adacc67c7277ceffaf4fa54cf7a60c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2bcb65872f9f451e1cc4e5030532e0a444af1139
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788770"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687787"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugProgramHost2 : IUnknown
  Ladicí stroj implementuje toto rozhraní na stejný objekt jako [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) rozhraní pro zadání informací o hostitelský proces. Toto je volitelné rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Volání [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na `IDebugProgram2` rozhraní k získání tohoto rozhraní.  
+ Volání [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) na `IDebugProgram2` rozhraní k získání tohoto rozhraní.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
  V následující tabulce jsou uvedeny metody objektu `IDebugProgramHost2`.  

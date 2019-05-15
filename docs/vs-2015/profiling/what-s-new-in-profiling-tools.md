@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0fc61a68e363c7a1616b35fb9ebc875e88550885
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ef76180bef1b643bb1f3ba3255b5b46dafdca272
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791516"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695001"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Co&#39;nového v nástrojích pro profilaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Informace o všechno, co je nového ve Visual Studio 2015 Update 1 ladění a Di
 ## <a name="whats-new-in-update-1"></a>Co je nového v aktualizaci 1  
  Od verze Visual Studio 2015 Update 1, můžete zobrazit rozpis využití procesoru jednotlivých funkcích aniž byste museli opustit ladicí program. Další informace najdete v tématu [profil procesoru v ladicím programu v sadě Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx).  
   
- **Diagnostické nástroje** okno má přidat možnosti vyhledávání a filtrování **události** kartu. Další informace najdete v tématu [integrované v ladicím programu profilace](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859) a [vyhledávání a filtrování na kartě události okna diagnostické nástroje](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+ **Diagnostické nástroje** okno má přidat možnosti vyhledávání a filtrování **události** kartu. Další informace najdete v tématu [integrované v ladicím programu profilace](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859) a [vyhledávání a filtrování na kartě události okna diagnostické nástroje](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
   
 ## <a name="diagnostics-with-debugging-ui-and-hotkey-changes"></a>Diagnostika s laděním změny uživatelského rozhraní a klávesové zkratky  
  Teď můžete spustit diagnostické nástroje během ladění s novými **diagnostické nástroje** okna. V okně se zobrazí automaticky, ale lze jej otevřít také s novou položku nabídky **zobrazit diagnostické nástroje** (Klávesová zkratka **Ctrl + Alt + F2**).  

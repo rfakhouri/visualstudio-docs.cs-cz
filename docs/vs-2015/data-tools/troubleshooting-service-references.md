@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f1c5886d4ac3efcb906a27f73af6a79fad95a5af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056716"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700240"
 ---
 # <a name="troubleshooting-service-references"></a>Řešení potíží s odkazy na služby
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Toto téma obsahuje seznam běžných problémů, které mohou nastat při prác
 
 3. Ujistěte se, že **zobrazit pokročilé konfigurace sestavení** zaškrtávací políčko zaškrtnuto a pak klikněte na **OK**.
 
-4. Načtěte projekt služby WCF. Další informace najdete v tématu [NIB jak: Vytváření řešení vícenásobného projektu](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4. Načtěte projekt služby WCF. Další informace najdete v tématu [NIB jak: Vytváření řešení vícenásobného projektu](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
 5. V **nástroje Configuration Manager** dialogové okno, nastavte **konfigurace aktivního řešení** k **ladění**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).
 

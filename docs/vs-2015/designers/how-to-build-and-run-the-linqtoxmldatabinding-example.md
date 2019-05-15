@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 612ef2485b0ef8b666833470e980667da16c2a97
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bebaeba2cc6f74a3ddbf059ca802252ad0bab6cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099114"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696157"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Postupy: Sestavení a spuštění příkladu Linqtoxmldatabinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma ukazuje, jak vytvořit a sestavit projekt sady Visual Studio LinqToXmlDataBinding a spuštění výsledné program příklad LinqToXmlDataBinding Windows Presentation Foundation (WPF).  
   
- Další informace o vytváření projektů pomocí Visual Studio najdete v tématu [vývoj aplikací v sadě Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68).  
+ Další informace o vytváření projektů pomocí Visual Studio najdete v tématu [vývoj aplikací v sadě Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68).  
   
 ## <a name="creating-and-populating-the-project"></a>Vytváří se a naplňuje projektu  
   
@@ -79,4 +79,4 @@ Toto téma ukazuje, jak vytvořit a sestavit projekt sady Visual Studio LinqToXm
 ## <a name="see-also"></a>Viz také  
  [Datové vazby WPF pomocí LINQ to XML příklad](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
  [Návod: Příklad LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [Vývoj aplikací v sadě Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)
+ [Vývoj aplikací v sadě Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 44d877f7ff6774e8e52428f4a44acab99816c480
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 98b08fc8ebf2fca207d41b644032d7abbcd97a24
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434414"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681732"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Kanál s obsahem obrazu může generovat textury, které jsou kompatibilní s Di
   
 2. Nakonfigurujte soubor textury tak, aby byl zpracován kanálem obsahu obrázku. V **Průzkumníka řešení**, otevřete místní nabídku pro soubor textury, který jste právě vytvořili a klikněte na tlačítko **vlastnosti**. Na **vlastnosti konfigurace**, **Obecné** nastavte **typ položky** vlastnost **kanál obsahu obrazu**. Ujistěte se, že **obsahu** je nastavena na **Ano** a **vyloučit ze sestavení** je nastavena na **ne**a klikněte na tlačítko  **Použít** tlačítko. **Kanál obsahu obrazu** se zobrazí stránka pro konfiguraci vlastností.  
   
-3. Nastavte formátu výstupu do jednoho z formátů komprimovanými. Na **vlastnosti konfigurace**, **kanál obsahu obrazu**, **Obecné** nastavte **komprimovat** vlastnost  **BC3_UNORM komprese (/ komprese: BC3_UNORM)**. Může zvolit některý z jiných formátů BC1, BC2 nebo BC3 formátů, v závislosti na vašich požadavcích. Direct2D nepodporuje aktuálně textury BC4, BC5, BC6 nebo BC7 textury. Další informace o různých formátech BC naleznete v tématu [bloková komprese (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).  
+3. Nastavte formátu výstupu do jednoho z formátů komprimovanými. Na **vlastnosti konfigurace**, **kanál obsahu obrazu**, **Obecné** nastavte **komprimovat** vlastnost  **BC3_UNORM komprese (/ komprese: BC3_UNORM)**. Může zvolit některý z jiných formátů BC1, BC2 nebo BC3 formátů, v závislosti na vašich požadavcích. Direct2D nepodporuje aktuálně textury BC4, BC5, BC6 nebo BC7 textury. Další informace o různých formátech BC naleznete v tématu [bloková komprese (Direct3D 10)](https://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).  
   
    > [!NOTE]
    > Formát komprese, který je určen Určuje formát souboru, který je vytvořen kanál obsahu obrázku. To se liší od **formátu** vlastnost zdrojového obrázku v editoru obrázků, což určuje formát zdrojového souboru bitové kopie uloženého na disku – to znamená, *pracovního formátu*. Obvykle nechcete komprimovaný pracovní formát.  

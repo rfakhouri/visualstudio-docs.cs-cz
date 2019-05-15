@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f12d6cde30dec9062dd67a18558bd0571e6fe6b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440443"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685225"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Spuštění ladicí relace pro Store app v sadě Visual Studio (VB, C#, C++ a XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -285,7 +285,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 
 #### <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Nastavte aplikaci spustit v režimu ladění
 
-1. Nainstalujte na zařízení nainstalovanou aplikaci Visual Studio Remote Tools. Zobrazit [instalace vzdálených nástrojů](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
+1. Nainstalujte na zařízení nainstalovanou aplikaci Visual Studio Remote Tools. Zobrazit [instalace vzdálených nástrojů](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
 
 2. Na obrazovce Start, vyhledejte `Debuggable Package Manager` a spusťte jej.
 

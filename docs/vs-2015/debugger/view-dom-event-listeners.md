@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64d4892080aaf0cf04e4b208b1a0bdb7a7a4480d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437682"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693573"
 ---
 # <a name="view-dom-event-listeners"></a>Zobrazení naslouchacích procesů událostí DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,9 +76,9 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
      **Události** karta zobrazuje naslouchacích procesů událostí pro libovolný element, který jste vybrali v seznamu hierarchie.
 
 ### <a name="Tips"></a> Tipy pro řešení problémů s naslouchacích procesů událostí
- V některých scénářích aplikace naslouchacích procesů událostí musí být explicitně odebrány [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Použití **události** kartu v Průzkumníku modelu DOM, který chcete otestovat, jestli naslouchacích procesů událostí byly odebrány z modelu DOM prvků za běhu programu. Zde jsou některé tipy pro řešení těchto typů problémů:
+ V některých scénářích aplikace naslouchacích procesů událostí musí být explicitně odebrány [removeEventListener](https://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Použití **události** kartu v Průzkumníku modelu DOM, který chcete otestovat, jestli naslouchacích procesů událostí byly odebrány z modelu DOM prvků za běhu programu. Zde jsou některé tipy pro řešení těchto typů problémů:
 
-- Pro aplikace, které používají model navigace jednostránkové implementované v sadě Visual Studio [šablony projektů](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), není obvykle nutné odebrat naslouchacích procesů událostí zaregistrované u objektů, jako jsou například prvky modelu DOM, které jsou součástí na stránce. V tomto scénáři prvek modelu DOM a jeho přidružené události naslouchací procesy mají stejnou životnost a mohou být uvolněna.
+- Pro aplikace, které používají model navigace jednostránkové implementované v sadě Visual Studio [šablony projektů](https://msdn.microsoft.com/library/windows/apps/hh758331.aspx), není obvykle nutné odebrat naslouchacích procesů událostí zaregistrované u objektů, jako jsou například prvky modelu DOM, které jsou součástí na stránce. V tomto scénáři prvek modelu DOM a jeho přidružené události naslouchací procesy mají stejnou životnost a mohou být uvolněna.
 
 - Pokud se liší od naslouchací proces související události životního cyklu od prvku modelu DOM nebo objektu, budete muset volat `removeEventListener` metody. Například, pokud použijete `window.onresize` událost, možná budete muset odebrat naslouchací proces událostí, jestliže opustíte na stránce, kde zpracování události.
 

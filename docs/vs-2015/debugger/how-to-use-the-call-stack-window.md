@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65dafa09035e937e9ee48005c4f29c441d983c37
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84c0bfead1633da13b4284cad04ace674045b057
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430298"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697477"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Postupy: Použijte okno zásobníku volání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ S použitím **zásobník volání** okně můžete zobrazit volání funkce neb
  Pomocí místní nabídky můžete zvolit, jestli se má zobrazit volání mezi vlákny.  
   
 > [!NOTE]
-> Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, vyberte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, vyberte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>Chcete-li zobrazit okno zásobníku volání v režimu přerušení nebo v režimu spuštění  
   
@@ -139,7 +139,7 @@ S použitím **zásobník volání** okně můžete zobrazit volání funkce neb
   
 ## <a name="see-also"></a>Viz také  
  [Smíšený kód a chybějící informace v okně zásobníku volání](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [Postupy: Změna numerického formátu ladicí program Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
+ [Postupy: Změna numerického formátu ladicí program Windows](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)   
  [Zadání symbolu (.pdb) a zdrojové soubory](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Použití zarážek](../debugger/using-breakpoints.md)

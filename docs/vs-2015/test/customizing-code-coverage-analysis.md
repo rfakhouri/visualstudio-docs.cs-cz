@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416647"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686442"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Přizpůsobení analýzy pokrytí kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ Ve výchozím nastavení analyzuje nástroj pokrytí kódu Visual Studio všechn
  Zvolte **testovací**, **nastavení testu**, **vybrat soubor nastavení testu** a vyberte soubor s příponou .runsettings. Soubor se zobrazí v nabídce Nastavení testu a můžete jej vybrat nebo zrušit. Po výběru souboru s příponou .runsettings použije při každém použití **analyzovat pokrytí kódu**.  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Přizpůsobení parametrů spuštění v testu příkazového řádku  
- Pro spuštění testů z příkazového řádku se používá příkaz vstest.console.exe. Soubor nastavení je parametr tohoto nástroje. Další informace najdete v tématu [použití konzole VSTest.console z příkazového řádku](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
+ Pro spuštění testů z příkazového řádku se používá příkaz vstest.console.exe. Soubor nastavení je parametr tohoto nástroje. Další informace najdete v tématu [použití konzole VSTest.console z příkazového řádku](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
 1. Spusťte příkazový řádek pro vývojáře v sadě Visual Studio:  
   
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407583"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678910"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Návod: Ladění formuláře systému Windows
 Aplikace modelu Windows Form jsou jedny nejběžnějších spravovaných aplikací. Model Windows Form vytvoří standardní aplikaci systému Windows. Tuto rekapitulaci lze dokončit pomocí jazyků Visual Basic, C# nebo C++.
@@ -165,23 +165,24 @@ Aplikace modelu Windows Form jsou jedny nejběžnějších spravovaných aplikac
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. Na **ladění** nabídce vyberte možnost **spustit bez ladění**.
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     Aplikace modelu Windows Form se spustí v systému Windows stejně, jako kdyby jste dvakrát kliknuli na její spustitelný soubor. Ladicí program není připojen.
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. Na **ladění** nabídce vyberte možnost **připojit k procesu**. (Tento příkaz je také k dispozici na **nástroje** nabídky.)
 
-     The **Attach to Process** dialog box appears.
+     **Připojit k procesu** zobrazí se dialogové okno.
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. V **procesy k dispozici** podokno, najděte název procesu (Walkthrough_SimpleDebug.exe) v **procesu** sloupce a klikněte na něj.
 
-5. Click the **Attach** button.
+5. Klikněte na tlačítko **připojit** tlačítko.
 
-6. In your Windows Form, click the one and only button.
+6. Na formuláři Windows Form vaší aplikace klikněte na tlačítko.
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     Ladicí program při dosažení zarážky přeruší spuštění formuláře aplikace modelu Windows Form.
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>Viz také
+- [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)
+- [Zabezpečení ladicího programu](../debugger/debugger-security.md)

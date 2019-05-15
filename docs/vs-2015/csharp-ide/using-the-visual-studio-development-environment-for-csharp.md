@@ -17,12 +17,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 485f4810f748af707cebba5c50c34144f78371ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6e5b52e74eac3e9301ebb10d91c560929b1ef313
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102943"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688034"
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>Použití vývojového prostředí sady Visual Studio pro jazyk C\#
 
@@ -36,13 +36,13 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio je kolekce výv
 |-----------|-----------------|
 |[Návod: Vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Poskytuje přehled mnoha funkcí a nástrojů, které jsou součástí sady Visual Studio pro vývoj aplikací.|
 |[Vytváření řešení a projektů](../ide/creating-solutions-and-projects.md)|Popisuje způsob vytvoření projektu, který obsahuje všechny soubory zdrojového kódu, soubory prostředků, jako jsou ikony, odkazy na externí soubory, a data konfigurace, jako například nastavení kompilátoru.|
-|[Úvod do Návrháře projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)|Poskytuje přehled pro Návrháře projektu, který nabízí centralizované umístění pro správu vlastností, nastavení a prostředků projektu.|
+|[Úvod do Návrháře projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)|Poskytuje přehled pro Návrháře projektu, který nabízí centralizované umístění pro správu vlastností, nastavení a prostředků projektu.|
 |[Psaní kódu](../ide/writing-code-in-the-code-and-text-editor.md)|Popisuje nástroje sady Visual Studio, které vám pomohou s úpravami a prací s textem a kódem, s označováním, vkládáním a konfigurací ovládacích prvků a dalších objektů a oborů názvů, a dále s přidáváním odkazů na externí komponenty a prostředky.|
 |[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)|Poskytuje odkazy na témata, která popisují funkce typické pro jazyk Visual C#, jako je například automatické generování kódu a technologie IntelliSense pro naposledy použité členy.|
 |[Fragmenty kódu v jazyce Visual C#](../ide/visual-csharp-code-snippets.md)|Poskytuje přehled používání fragmentů kódu v jazyce Visual C#, které vám umožňují automaticky přidat do aplikace běžné konstrukce kódu.|
 |[Psaní kódu](../ide/writing-code-in-the-code-and-text-editor.md)|Poskytuje odkazy na postupy používání okna Najít a nahradit, záložek, seznamů úkolů a seznamů chyb pro vyhledání řádků kódu.|
 |[Zobrazení struktury kódu](../ide/viewing-the-structure-of-code.md)|Objasňuje způsob procházení hierarchií tříd, členů tříd a prostředků.|
-|[Postupy: Přidejte do konfiguračního souboru aplikace C# projektu](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Popisuje způsob přidání konfiguračního souboru (app.config) do projektu v jazyce C#.|
+|[Postupy: Přidání konfiguračního souboru aplikace do projektu C#](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Popisuje způsob přidání konfiguračního souboru (app.config) do projektu v jazyce C#.|
 |[Metadata jako zdroj](../csharp-ide/metadata-as-source.md)|Popisuje způsob, jakým integrované vývojové prostředí umožňuje zobrazování metadat ve formě zdrojového kódu.|
 |[Refaktoring (C#)](../csharp-ide/refactoring-csharp.md)|Vytváří seznam operací refaktoringu, které vám pomohou při úpravách kódu beze změny chování aplikace.|
 |[Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)|Objasňuje způsob konfigurace sestavení ladící verze, sestavení pro vydání a zvláštního sestavení pro vaše řešení v rámci sady Visual Studio.|
@@ -51,6 +51,6 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio je kolekce výv
 
 ## <a name="see-also"></a>Viz také
 
-- [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
-- [Začínáme s jazykem C#](http://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
-- [Referenční dokumentace jazyka C#](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)
+- [C#](https://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
+- [Začínáme s jazykem C#](https://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
+- [Referenční dokumentace jazyka C#](https://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)

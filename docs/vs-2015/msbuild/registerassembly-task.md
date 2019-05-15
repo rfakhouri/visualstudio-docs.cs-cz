@@ -19,17 +19,17 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47fba490edd07c61490760114ca8df91b3e35eb1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 71ef27b61e162fedbf0b8fcaac38d93bedbc77c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668220"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682393"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Načte metadata v rámci zadaného sestavení a přidá nezbytné položky registru, které umožní klientům modelu COM vytvořit [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] třídy transparentně. Chování této úlohy je podobné, ale nejsou identické, která [Regasm.exe (Nástroj registrace sestavení)](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb).  
+Načte metadata v rámci zadaného sestavení a přidá nezbytné položky registru, které umožní klientům modelu COM vytvořit [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] třídy transparentně. Chování této úlohy je podobné, ale nejsou identické, která [Regasm.exe (Nástroj registrace sestavení)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb).  
   
 ## <a name="parameters"></a>Parametry  
  Následující tabulka popisuje parametry `RegisterAssembly` úloh.  

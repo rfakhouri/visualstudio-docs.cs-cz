@@ -22,17 +22,17 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8666f990265a1fcf9947ac5c7c18c7489a6bdb8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8307bc2c9efcbbab531754cd2d49fa18b04cc48a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653590"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698641"
 ---
 # <a name="cl-task"></a>CL – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustitelné soubory (.exe), dynamická knihovna (.dll) soubory nebo soubory kódu modulu (.netmodule). Další informace najdete v tématu [– možnosti kompilátoru](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
+Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustitelné soubory (.exe), dynamická knihovna (.dll) soubory nebo soubory kódu modulu (.netmodule). Další informace najdete v tématu [– možnosti kompilátoru](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
 ## <a name="parameters"></a>Parametry  
  Následující tabulka popisuje parametry **CL** úloh. Většinu úkolů parametrů a několik sad parametrů, odpovídají možnost příkazového řádku.  
@@ -43,7 +43,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Přidá adresář do seznamu adresáře, které se budou hledat vkládané soubory.  
   
-   Další informace najdete v tématu [/I (další vložené adresáře)](http://msdn.microsoft.com/library/3e9add2a-5ed8-4d15-ad79-5b411e313a49).  
+   Další informace najdete v tématu [/I (další vložené adresáře)](https://msdn.microsoft.com/library/3e9add2a-5ed8-4d15-ad79-5b411e313a49).  
   
 - **AdditionalOptions**  
   
@@ -51,13 +51,13 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Seznam možností příkazového řádku. Například "/*možnost1* /*možnost2* /*možnost #*". Tento parametr použijte k určení možnosti příkazového řádku, které nejsou reprezentovány všechny ostatní parametry úlohy.  
   
-   Další informace najdete v tématu [– možnosti kompilátoru](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
+   Další informace najdete v tématu [– možnosti kompilátoru](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
 - **AdditionalUsingDirectories** parametr volitelný řetězec [].  
   
    Určuje adresář, který kompilátor bude vyhledávání pro přeložení referencí souboru předaných **#using** směrnice.  
   
-   Další informace najdete v tématu [/AI (zadat adresáře metadat)](http://msdn.microsoft.com/library/fb9c1846-504c-4a3b-bb39-c8696de32f6f).  
+   Další informace najdete v tématu [/AI (zadat adresáře metadat)](https://msdn.microsoft.com/library/fb9c1846-504c-4a3b-bb39-c8696de32f6f).  
   
 - **AlwaysAppend**  
   
@@ -69,7 +69,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Vytvoří soubor výpisu, který obsahuje kód sestavení.  
   
-   Další informace najdete v tématu **/Fa** možnost [/FA, /Fa (soubor výpisu)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
+   Další informace najdete v tématu **/Fa** možnost [/FA, /Fa (soubor výpisu)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
 - **AssemblerOutput**  
   
@@ -89,13 +89,13 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **Všechny** -   **/facs**  
   
-    Další informace najdete v tématu **/FA**, **/FAC**, **/FAS**, a **/facs** možnosti [/FA, /Fa (výpis soubor)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
+    Další informace najdete v tématu **/FA**, **/FAC**, **/FAS**, a **/facs** možnosti [/FA, /Fa (výpis soubor)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
 - **BasicRuntimeChecks**  
   
    Volitelný parametr řetězce.  
   
-   Povolí nebo zakáže funkci kontroly chyb za běhu ve spojení s [runtime_checks –](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) direktivy pragma.  
+   Povolí nebo zakáže funkci kontroly chyb za běhu ve spojení s [runtime_checks –](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) direktivy pragma.  
   
    Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
@@ -107,7 +107,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **EnableFastChecks** -                          **/RTC1**  
   
-    Další informace najdete v tématu [/RTC (kontroly chyb za běhu)](http://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
+    Další informace najdete v tématu [/RTC (kontroly chyb za běhu)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
 - **BrowseInformation**  
   
@@ -115,7 +115,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, vytvoří soubor informací o procházení.  
   
-   Další informace najdete v tématu **/FR** možnost [/FR, /Fr (vytvořit. Soubor SBR)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
+   Další informace najdete v tématu **/FR** možnost [/FR, /Fr (vytvořit. Soubor SBR)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
   
 - **BrowseInformationFile**  
   
@@ -123,7 +123,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Určuje název souboru pro informačního souboru procházení.  
   
-   Další informace najdete v tématu **BrowseInformation** parametr v této tabulce a také viz [/FR, /Fr (vytvořit. Soubor SBR)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
+   Další informace najdete v tématu **BrowseInformation** parametr v této tabulce a také viz [/FR, /Fr (vytvořit. Soubor SBR)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
   
 - **BufferSecurityCheck**  
   
@@ -131,7 +131,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, rozpozná některá přetečení vyrovnávací paměti, která přepisují návratovou adresu běžná technika pro využívání kódu, která nevynucuje omezení velikosti vyrovnávací paměti.  
   
-   Další informace najdete v tématu [/GS (Kontrola zabezpečení vyrovnávací paměti)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e).  
+   Další informace najdete v tématu [/GS (Kontrola zabezpečení vyrovnávací paměti)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e).  
   
 - **BuildingInIDE**  
   
@@ -153,7 +153,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **StdCall** -                          **/Gz**  
   
-    Další informace najdete v tématu [/Gd, / GR, / gv, /Gz (konvence volání)](http://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3).  
+    Další informace najdete v tématu [/Gd, / GR, / gv, /Gz (konvence volání)](https://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3).  
   
 - **CompileAs**  
   
@@ -169,7 +169,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **CompileAsCpp** - **/TP**  
   
-    Další informace najdete v tématu [/Tc /Tp, /TC, /TP (určení typu zdrojového souboru)](http://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b).  
+    Další informace najdete v tématu [/Tc /Tp, /TC, /TP (určení typu zdrojového souboru)](https://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b).  
   
 - **CompileAsManaged**  
   
@@ -189,7 +189,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **OldSyntax** - **/clr:oldSyntax**  
   
-    Další informace najdete v tématu [/CLR (kompilace Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+    Další informace najdete v tématu [/CLR (kompilace Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 - **CreateHotpatchableImage**  
   
@@ -197,7 +197,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, instruuje kompilátor, aby připravit bitovou kopii pro *technologii hot patching*. Tento parametr se zajistí, že první instrukce pro každou funkci je o dva bajty, které jsou požadovány pro technologii hot patching.  
   
-   Další informace najdete v tématu [/hotpatch (vytvoření Image vyměnitelné za provozu)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798).  
+   Další informace najdete v tématu [/hotpatch (vytvoření Image vyměnitelné za provozu)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798).  
   
 - **DebugInformationFormat**  
   
@@ -213,7 +213,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **EditAndContinue** - **/ZI**  
   
-    Další informace najdete v tématu [/Z7, / zi, /ZI (formát informací o ladění)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).  
+    Další informace najdete v tématu [/Z7, / zi, /ZI (formát informací o ladění)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).  
   
 - **DisableLanguageExtensions**  
   
@@ -221,7 +221,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud **true**, informuje kompilátor generuje chybu pro konstruktory jazyka, které nejsou kompatibilní s ANSI C a ANSI C++.  
   
-   Další informace najdete v tématu **/Za** možnost [/Za, /Ze (zakázat jazyková rozšíření)](http://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2).  
+   Další informace najdete v tématu **/Za** možnost [/Za, /Ze (zakázat jazyková rozšíření)](https://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2).  
   
 - **DisableSpecificWarnings**  
   
@@ -229,7 +229,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Zakáže čísla upozornění, které jsou určené v seznam oddělený středníkem.  
   
-   Další informace najdete v tématu `/wd` možnost [/w, /W0, /W1, /W2, w3, / W4, /w1, /w2, w3, / W4, / wall, WD, / we, Wo, WV, /WX (úroveň upozornění)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Další informace najdete v tématu `/wd` možnost [/w, /W0, /W1, /W2, w3, / W4, /w1, /w2, w3, / W4, / wall, WD, / we, Wo, WV, /WX (úroveň upozornění)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **EnableEnhancedInstructionSet**  
   
@@ -243,7 +243,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **StreamingSIMDExtensions2** - **/arch:SSE2**  
   
-    Další informace najdete v tématu [/arch (x86)](http://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d).  
+    Další informace najdete v tématu [/arch (x86)](https://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d).  
   
 - **EnableFiberSafeOptimizations**  
   
@@ -251,7 +251,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, podporují bezpečnost vlákna pro data Alokovaná pomocí statického úložiště lokálního vlákna, to znamená, že data Alokovaná pomocí `__declspec(thread)`.  
   
-   Další informace najdete v tématu [/GT (Podpora úložiště Thread-Local zabezpečenými Vlákénky)](http://msdn.microsoft.com/library/071fec79-c701-432b-9970-457344133159).  
+   Další informace najdete v tématu [/GT (Podpora úložiště Thread-Local zabezpečenými Vlákénky)](https://msdn.microsoft.com/library/071fec79-c701-432b-9970-457344133159).  
   
 - **EnablePREfast**  
   
@@ -259,7 +259,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, povolit analýzu kódu.  
   
-   Další informace najdete v tématu [/ analyze (Analýza kódu)](http://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08).  
+   Další informace najdete v tématu [/ analyze (Analýza kódu)](https://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08).  
   
 - **ErrorReporting**  
   
@@ -277,7 +277,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **Send** - **/errorReport:send**  
   
-    Další informace najdete v tématu [/errorreport (sestava interními chybami kompilátoru)](http://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667).  
+    Další informace najdete v tématu [/errorreport (sestava interními chybami kompilátoru)](https://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667).  
   
 - **ExceptionHandling**  
   
@@ -295,7 +295,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **SyncCThrow** - **/EHs**  
   
-    Další informace najdete v tématu [/EH (Model zpracování výjimek)](http://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d).  
+    Další informace najdete v tématu [/EH (Model zpracování výjimek)](https://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d).  
   
 - **ExpandAttributedSource**  
   
@@ -303,7 +303,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, vytvoří soubor výpisu, který se rozšířila atributy vloženými do zdrojového souboru.  
   
-   Další informace najdete v tématu [/Fx (sloučení vloženého kódu)](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560).  
+   Další informace najdete v tématu [/Fx (sloučení vloženého kódu)](https://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560).  
   
 - **FavorSizeOrSpeed**  
   
@@ -319,7 +319,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **Rychlost** - **/Ot**  
   
-    Další informace najdete v tématu [/OS, /Ot (upřednostnění malého kódu, upřednostnění rychlého kódu)](http://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2).  
+    Další informace najdete v tématu [/OS, /Ot (upřednostnění malého kódu, upřednostnění rychlého kódu)](https://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2).  
   
 - **FloatingPointExceptions**  
   
@@ -327,7 +327,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, umožňuje spolehlivé výjimky s plovoucí desetinnou čárkou modelu. Výjimky, bude vyvolána okamžitě po aktivaci.  
   
-   Další informace najdete v tématu /**fp: except** možnost [/fp (určení chování plovoucí desetinné čárky)](http://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
+   Další informace najdete v tématu /**fp: except** možnost [/fp (určení chování plovoucí desetinné čárky)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
   
 - **FloatingPointModel**  
   
@@ -343,15 +343,15 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **Rychlé** - **Fast**  
   
-    Další informace najdete v tématu [/fp (určení chování plovoucí desetinné čárky)](http://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
+    Další informace najdete v tématu [/fp (určení chování plovoucí desetinné čárky)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
   
 - **ForceConformanceInForLoopScope**  
   
    Volitelný logický parametr.  
   
-   Pokud `true`, implementuje standardního chování jazyka C++ v [pro](http://msdn.microsoft.com/library/6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a) smyček, které používají rozšíření společnosti Microsoft ([/Ze](http://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2)).  
+   Pokud `true`, implementuje standardního chování jazyka C++ v [pro](https://msdn.microsoft.com/library/6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a) smyček, které používají rozšíření společnosti Microsoft ([/Ze](https://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2)).  
   
-   Další informace najdete v tématu [/Zc: forscope (vynutit dodržování standardu pro obor cyklu for)](http://msdn.microsoft.com/library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
+   Další informace najdete v tématu [/Zc: forscope (vynutit dodržování standardu pro obor cyklu for)](https://msdn.microsoft.com/library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
   
 - **ForcedIncludeFiles**  
   
@@ -359,7 +359,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Způsobí, že preprocesor zpracovat jeden nebo více souborů zadanou hlavičku.  
   
-   Další informace najdete v tématu [/FI (vynucené soubor zahrnutí názvu)](http://msdn.microsoft.com/library/07e79577-8152-4df9-a64c-aae08c603397).  
+   Další informace najdete v tématu [/FI (vynucené soubor zahrnutí názvu)](https://msdn.microsoft.com/library/07e79577-8152-4df9-a64c-aae08c603397).  
   
 - **ForcedUsingFiles**  
   
@@ -367,7 +367,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Způsobí, že preprocesor zpracovat jeden nebo více zadaných **#using** soubory.  
   
-   Další informace najdete v tématu [/FU (vynuceným názvem #using souboru)](http://msdn.microsoft.com/library/698f8603-457f-435a-baff-5ac9243d6ca1).  
+   Další informace najdete v tématu [/FU (vynuceným názvem #using souboru)](https://msdn.microsoft.com/library/698f8603-457f-435a-baff-5ac9243d6ca1).  
   
 - **FunctionLevelLinking**  
   
@@ -375,7 +375,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, umožňuje kompilátoru balíček individuálních funkcí ve formě zabalených funkcí (sekvence Comdat).  
   
-   Další informace najdete v tématu [/Gy (povolení funkce propojení na úrovni)](http://msdn.microsoft.com/library/0d3cf14c-ed7d-4ad3-b4b6-104e56f61046).  
+   Další informace najdete v tématu [/Gy (povolení funkce propojení na úrovni)](https://msdn.microsoft.com/library/0d3cf14c-ed7d-4ad3-b4b6-104e56f61046).  
   
 - **GenerateXMLDocumentationFiles**  
   
@@ -383,7 +383,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, způsobí, že kompilátor zpracovat dokumentaci komentáře do souborů zdrojového kódu a pokud chcete vytvořit soubor .xdc pro každý zdroj souboru kódu, který se dokumentační komentáře.  
   
-   Další informace najdete v tématu [/DOC (zpracování dokumentačních komentářů) (C/C++)](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Viz také **XMLDocumentationFileName** parametr v této tabulce.  
+   Další informace najdete v tématu [/DOC (zpracování dokumentačních komentářů) (C/C++)](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Viz také **XMLDocumentationFileName** parametr v této tabulce.  
   
 - **IgnoreStandardIncludePath**  
   
@@ -391,7 +391,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, zabraňuje kompilátor hledal soubory k zahrnutí v adresářích zadaných v proměnné prostředí PATH či INCLUDE.  
   
-   Další informace najdete v tématu [/X (Ignore Standard Include Paths)](http://msdn.microsoft.com/library/16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef).  
+   Další informace najdete v tématu [/X (Ignore Standard Include Paths)](https://msdn.microsoft.com/library/16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef).  
   
 - **InlineFunctionExpansion**  
   
@@ -409,7 +409,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **AnySuitable** -   **/ob2**  
   
-    Další informace najdete v tématu [/Ob (rozbalení vložené funkce)](http://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
+    Další informace najdete v tématu [/Ob (rozbalení vložené funkce)](https://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
   
 - **Intrinsicfunctions –**  
   
@@ -417,7 +417,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, nahradí určitou funkci volání s vnitřní nebo jinak speciální formuláře funkce, které vaší aplikaci pomůžou pracovat rychleji.  
   
-   Další informace najdete v tématu [/Oi (Generovat vnitřní funkce)](http://msdn.microsoft.com/library/fa4a3bf6-0ed8-481b-91c0-add7636132b4).  
+   Další informace najdete v tématu [/Oi (Generovat vnitřní funkce)](https://msdn.microsoft.com/library/fa4a3bf6-0ed8-481b-91c0-add7636132b4).  
   
 - **MinimalRebuild**  
   
@@ -425,7 +425,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, povolí minimální opětovné sestavení, která určuje, zda zdrojové soubory C++ obsahující změněné C++ třídy definice (uložené v souborech hlaviček (.h)) musí zopakovat.  
   
-   Další informace najdete v tématu [/Gm (povolení minimálního opětovného sestavení)](http://msdn.microsoft.com/library/d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59).  
+   Další informace najdete v tématu [/Gm (povolení minimálního opětovného sestavení)](https://msdn.microsoft.com/library/d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59).  
   
 - **MultiProcessorCompilation**  
   
@@ -433,7 +433,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, kompilaci pomocí více procesorů. Tento parametr vytvoří proces pro každý efektivní procesor ve vašem počítači.  
   
-   Další informace najdete v tématu [/MP (sestavení pomocí několika procesů)](http://msdn.microsoft.com/library/a932b14a-74fe-4b45-84e4-6bf53f0f5e07). Další informace naleznete **ProcessorNumber** parametr v této tabulce.  
+   Další informace najdete v tématu [/MP (sestavení pomocí několika procesů)](https://msdn.microsoft.com/library/a932b14a-74fe-4b45-84e4-6bf53f0f5e07). Další informace naleznete **ProcessorNumber** parametr v této tabulce.  
   
 - **ObjectFileName**  
   
@@ -441,7 +441,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Určuje název souboru objektů (.obj) nebo adresáře se použije místo výchozího.  
   
-   Další informace najdete v tématu [/Fo (název souboru objektů)](http://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
+   Další informace najdete v tématu [/Fo (název souboru objektů)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
   
 - **ObjectFiles**  
   
@@ -455,7 +455,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, vynechá výchozí název knihovny run-time C ze souboru objektů (.obj). Ve výchozím nastavení kompilátor vloží název tohoto knihovny do souboru .obj pro přesměrování linkeru, aby je správná knihovna.  
   
-   Další informace najdete v tématu [/Zl (vynechat název výchozí knihovny)](http://msdn.microsoft.com/library/b27d39d0-44d6-498c-84ae-27c1326fee59).  
+   Další informace najdete v tématu [/Zl (vynechat název výchozí knihovny)](https://msdn.microsoft.com/library/b27d39d0-44d6-498c-84ae-27c1326fee59).  
   
 - **OmitFramePointers**  
   
@@ -463,7 +463,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, potlačí vytváření ukazatelů rámců v zásobníku volání.  
   
-   Další informace najdete v tématu [/Oy (vynechání ukazatele na rámec)](http://msdn.microsoft.com/library/c451da86-5297-4c5a-92bc-561d41379853).  
+   Další informace najdete v tématu [/Oy (vynechání ukazatele na rámec)](https://msdn.microsoft.com/library/c451da86-5297-4c5a-92bc-561d41379853).  
   
 - **OpenMPSupport**  
   
@@ -471,7 +471,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, způsobí, že kompilátor zpracování OpenMP – klauzule a direktivy.  
   
-   Další informace najdete v tématu [/OpenMP (povolit podporu OpenMP 2.0)](http://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13).  
+   Další informace najdete v tématu [/OpenMP (povolit podporu OpenMP 2.0)](https://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13).  
   
 - **Optimalizace**  
   
@@ -489,7 +489,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **Úplné** - **/Ox**  
   
-    Další informace najdete v tématu [/O možnosti (Optimalizace kódu)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
+    Další informace najdete v tématu [/O možnosti (Optimalizace kódu)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
   
 - **PrecompiledHeader**  
   
@@ -505,7 +505,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **Použití** - **/Yu**  
   
-    Další informace najdete v tématu [/Yc (Vytvořit předkompilovaný hlavičkový soubor)](http://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) a [/Yu (Použít předkompilovaný hlavičkový soubor)](http://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Další informace naleznete **PrecompiledHeaderFile** a **PrecompiledHeaderOutputFile** parametry v této tabulce.  
+    Další informace najdete v tématu [/Yc (Vytvořit předkompilovaný hlavičkový soubor)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) a [/Yu (Použít předkompilovaný hlavičkový soubor)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Další informace naleznete **PrecompiledHeaderFile** a **PrecompiledHeaderOutputFile** parametry v této tabulce.  
   
 - **PrecompiledHeaderFile**  
   
@@ -513,7 +513,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Určuje název souboru předkompilované hlavičky vytvořit nebo použít.  
   
-   Další informace najdete v tématu [/Yc (Vytvořit předkompilovaný hlavičkový soubor)](http://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) a [/Yu (Použít předkompilovaný hlavičkový soubor)](http://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f).  
+   Další informace najdete v tématu [/Yc (Vytvořit předkompilovaný hlavičkový soubor)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) a [/Yu (Použít předkompilovaný hlavičkový soubor)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f).  
   
 - **PrecompiledHeaderOutputFile**  
   
@@ -521,7 +521,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Určuje název cesty pro předkompilované hlavičky místo použití výchozí název cesty.  
   
-   Další informace najdete v tématu [/Fp (název. Soubor pch)](http://msdn.microsoft.com/library/0fcd9cbd-e09f-44d3-9715-b41efb5d0be2).  
+   Další informace najdete v tématu [/Fp (název. Soubor pch)](https://msdn.microsoft.com/library/0fcd9cbd-e09f-44d3-9715-b41efb5d0be2).  
   
 - **PreprocessKeepComments**  
   
@@ -529,7 +529,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, zachová komentáře při předzpracování.  
   
-   Další informace najdete v tématu [/C (zachovat komentáře při předběžném zpracování)](http://msdn.microsoft.com/library/944567ca-16bc-4728-befe-d414a7787f26).  
+   Další informace najdete v tématu [/C (zachovat komentáře při předběžném zpracování)](https://msdn.microsoft.com/library/944567ca-16bc-4728-befe-d414a7787f26).  
   
 - **PreprocessorDefinitions**  
   
@@ -537,7 +537,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Definuje symbol předzpracování pro zdrojový soubor.  
   
-   Další informace najdete v tématu [/D (Definice preprocesoru)](http://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
+   Další informace najdete v tématu [/D (Definice preprocesoru)](https://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
   
 - **PreprocessOutput**  
   
@@ -551,7 +551,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Určuje název výstupního souboru, do kterého **PreprocessToFile** parametr zapíše Předzpracovaný výstup.  
   
-   Další informace najdete v tématu [/Fi (předběžné zpracování název výstupního souboru)](http://msdn.microsoft.com/library/6d0ba983-a8b7-41ec-84f5-b4688ef8efee).  
+   Další informace najdete v tématu [/Fi (předběžné zpracování název výstupního souboru)](https://msdn.microsoft.com/library/6d0ba983-a8b7-41ec-84f5-b4688ef8efee).  
   
 - **PreprocessSuppressLineNumbers**  
   
@@ -559,7 +559,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`předzpracuje zdrojové soubory jazyka C a C++ a zkopíruje soubory předzpracovaná do standardního výstupního zařízení.  
   
-   Další informace najdete v tématu [/EP (předběžné zpracování do direktiv bez příkazů #line)](http://msdn.microsoft.com/library/6ec411ae-e33d-4ef5-956e-0054635eabea).  
+   Další informace najdete v tématu [/EP (předběžné zpracování do direktiv bez příkazů #line)](https://msdn.microsoft.com/library/6ec411ae-e33d-4ef5-956e-0054635eabea).  
   
 - **PreprocessToFile**  
   
@@ -567,7 +567,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`předzpracuje zdrojové soubory jazyka C a C++ a zapíše Předzpracovaný výstup do souboru.  
   
-   Další informace najdete v tématu [/P (předběžné zpracování souboru)](http://msdn.microsoft.com/library/123ee54f-8219-4a6f-9876-4227023d83fc).  
+   Další informace najdete v tématu [/P (předběžné zpracování souboru)](https://msdn.microsoft.com/library/123ee54f-8219-4a6f-9876-4227023d83fc).  
   
 - **ProcessorNumber**  
   
@@ -581,7 +581,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Určuje název souboru pro soubor databáze (PDB) programu.  
   
-   Další informace najdete v tématu [/Fd (název souboru databáze programu)](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a).  
+   Další informace najdete v tématu [/Fd (název souboru databáze programu)](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a).  
   
 - **RuntimeLibrary**  
   
@@ -599,7 +599,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **MultiThreadedDebugDLL** - **/MDd**  
   
-    Další informace najdete v tématu [/ / MD, / MT, /LD (použití knihovny Run-Time)](http://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579).  
+    Další informace najdete v tématu [/ / MD, / MT, /LD (použití knihovny Run-Time)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579).  
   
 - **RuntimeTypeInfo**  
   
@@ -607,7 +607,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, přidá kód pro kontrolu typů objektů jazyka C++ za běhu (informace typu za běhu).  
   
-   Další informace najdete v tématu [/GR (povolení běhové informace o typu)](http://msdn.microsoft.com/library/d1f9f850-dcec-49fd-96ef-e72d01148906).  
+   Další informace najdete v tématu [/GR (povolení běhové informace o typu)](https://msdn.microsoft.com/library/d1f9f850-dcec-49fd-96ef-e72d01148906).  
   
 - **ShowIncludes**  
   
@@ -615,7 +615,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, způsobí, že kompilátor výstup seznam vložených souborů.  
   
-   Další informace najdete v tématu [/showincludes (seznam vložených souborů)](http://msdn.microsoft.com/library/0b74b052-f594-45a6-a7c7-09e1a319547d).  
+   Další informace najdete v tématu [/showincludes (seznam vložených souborů)](https://msdn.microsoft.com/library/0b74b052-f594-45a6-a7c7-09e1a319547d).  
   
 - **SmallerTypeCheck**  
   
@@ -623,7 +623,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, pokud hodnota je přiřazená menší datový typ a vede ke ztrátě dat sestavy chyb za běhu.  
   
-   Další informace najdete v tématu **/RTCc** možnost [/RTC (kontroly chyb za běhu)](http://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
+   Další informace najdete v tématu **/RTCc** možnost [/RTC (kontroly chyb za běhu)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
 - **Zdroje**  
   
@@ -637,7 +637,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, umožňuje kompilátoru vytvořit jednu kopii shodného řetězce do bitové kopie programu.  
   
-   Další informace najdete v tématu [/GF (odstranění duplicitní řetězce)](http://msdn.microsoft.com/library/bb7b5d1c-8e1f-453b-9298-8fcebf37d16c).  
+   Další informace najdete v tématu [/GF (odstranění duplicitní řetězce)](https://msdn.microsoft.com/library/bb7b5d1c-8e1f-453b-9298-8fcebf37d16c).  
   
 - **StructMemberAlignment**  
   
@@ -659,7 +659,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **16Bytes** - **/Zp16**  
   
-    Další informace najdete v tématu [/Zp (zarovnání členů struktury)](http://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f).  
+    Další informace najdete v tématu [/Zp (zarovnání členů struktury)](https://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f).  
   
 - **SuppressStartupBanner**  
   
@@ -667,7 +667,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, zabraňuje zobrazování čísel zprávu o autorských právech a verze při spuštění úlohy.  
   
-   Další informace najdete v tématu [/nologo (Potlačení úvodního nápisu) (C/C++)](http://msdn.microsoft.com/library/75930d8b-b11c-4db8-99e5-b52f97da0693).  
+   Další informace najdete v tématu [/nologo (Potlačení úvodního nápisu) (C/C++)](https://msdn.microsoft.com/library/75930d8b-b11c-4db8-99e5-b52f97da0693).  
   
 - **TrackerLogDirectory**  
   
@@ -683,7 +683,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Zpracovává zadaný seznam upozornění kompilátoru jako chyby.  
   
-   Další informace najdete v tématu **/we** `n` možnost [/w, /W0, /W1, /W2, w3, / W4, /w1, /w2, w3, / W4, / wall, WD, / we, Wo, WV, /WX (úroveň upozornění)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Další informace najdete v tématu **/we** `n` možnost [/w, /W0, /W1, /W2, w3, / W4, /w1, /w2, w3, / W4, / wall, WD, / we, Wo, WV, /WX (úroveň upozornění)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **TreatWarningAsError**  
   
@@ -691,7 +691,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, zpracovávat všechna upozornění kompilátoru jako chyby.  
   
-   Další informace najdete v tématu **/WX** možnost [/w, /W0, /W1, /W2, w3, / W4, /w1, /w2, w3, / W4, / wall, WD, / we, Wo, WV, /WX (úroveň upozornění)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Další informace najdete v tématu **/WX** možnost [/w, /W0, /W1, /W2, w3, / W4, /w1, /w2, w3, / W4, / wall, WD, / we, Wo, WV, /WX (úroveň upozornění)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **TreatWChar_tAsBuiltInType**  
   
@@ -699,7 +699,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, zpracovávat `wchar_t` typ jako nativního typu.  
   
-   Další informace najdete v tématu [/Zc: wchar_t (wchar_t je nativní typ)](http://msdn.microsoft.com/library/b0de5a84-da72-4e5a-9a4e-541099f939e0).  
+   Další informace najdete v tématu [/Zc: wchar_t (wchar_t je nativní typ)](https://msdn.microsoft.com/library/b0de5a84-da72-4e5a-9a4e-541099f939e0).  
   
 - **UndefineAllPreprocessorDefinitions**  
   
@@ -707,7 +707,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, nedefinovaných hodnot, které kompilátor definuje symboly specifické pro společnost Microsoft.  
   
-   Další informace najdete v tématu **/u** možnost [/U, /u (nedefinované symboly)](http://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
+   Další informace najdete v tématu **/u** možnost [/U, /u (nedefinované symboly)](https://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
   
 - **UndefinePreprocessorDefinitions**  
   
@@ -715,7 +715,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Určuje seznam jednoho nebo více symboly preprocesoru definice.  
   
-   Další informace najdete v tématu **/U** možnost [/U, /u (nedefinované symboly)](http://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
+   Další informace najdete v tématu **/U** možnost [/U, /u (nedefinované symboly)](https://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
   
 - **UseFullPaths**  
   
@@ -723,7 +723,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, zobrazí úplnou cestu souborů se zdrojovým kódem předány kompilátoru v diagnostice.  
   
-   Další informace najdete v tématu [/FC (úplná cesta ze souboru zdrojového kódu v diagnostice)](http://msdn.microsoft.com/library/1f11414e-cb42-421b-be68-9d369aab036b).  
+   Další informace najdete v tématu [/FC (úplná cesta ze souboru zdrojového kódu v diagnostice)](https://msdn.microsoft.com/library/1f11414e-cb42-421b-be68-9d369aab036b).  
   
 - **UseUnicodeForAssemblerListing**  
   
@@ -731,7 +731,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, způsobí, že výstupní soubor bude vytvořena ve formátu UTF-8.  
   
-   Další informace najdete v tématu **/fau vytvořte** možnost [/FA, /Fa (soubor výpisu)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
+   Další informace najdete v tématu **/fau vytvořte** možnost [/FA, /Fa (soubor výpisu)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
 - **WarningLevel**  
   
@@ -753,7 +753,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
   - **EnableAllWarnings** -   **/Wall**  
   
-    Další informace najdete v tématu **/W**_n_ možnost [/w, /W0, /W1, /W2, w3, / W4, /w1, /w2, w3, / W4, / wall, WD, / we, Wo, WV, /WX (úroveň upozornění)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+    Další informace najdete v tématu **/W**_n_ možnost [/w, /W0, /W1, /W2, w3, / W4, /w1, /w2, w3, / W4, / wall, WD, / we, Wo, WV, /WX (úroveň upozornění)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **WholeProgramOptimization**  
   
@@ -761,7 +761,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Pokud `true`, povolí optimalizaci celého programu.  
   
-   Další informace najdete v tématu [/GL (optimalizace celého programu)](http://msdn.microsoft.com/library/09d51e2d-9728-4bd0-b5dc-3b8284aca1d1).  
+   Další informace najdete v tématu [/GL (optimalizace celého programu)](https://msdn.microsoft.com/library/09d51e2d-9728-4bd0-b5dc-3b8284aca1d1).  
   
 - **XMLDocumentationFileName**  
   
@@ -769,7 +769,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
    Určuje název vygenerovaných dokumentačních souborů XML. Tento parametr může být název souboru nebo adresáře.  
   
-   Další informace najdete v tématu `name` argument v [/DOC (zpracování dokumentačních komentářů) (C/C++)](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Viz také **GenerateXMLDocumentationFiles** parametr v této tabulce.  
+   Další informace najdete v tématu `name` argument v [/DOC (zpracování dokumentačních komentářů) (C/C++)](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Viz také **GenerateXMLDocumentationFiles** parametr v této tabulce.  
   
 - **MinimalRebuildFromTracking**  
   

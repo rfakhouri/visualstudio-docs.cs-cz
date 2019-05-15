@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 549c4f5225773a7d9ac40c16a9db6ca9309c7d6f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3681523595c6e4db50a2a05a7a325decc065cfc5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437767"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684391"
 ---
 # <a name="using-saved-intellitrace-data"></a>Použití dat uložených nástrojem IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,8 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
     |**Zdroj**|**V tématu**|  
     |----------------|-------------|  
     |Relace IntelliTrace v sadě Visual Studio Enterprise (ale ne Professional nebo Community edice)|[Funkce IntelliTrace](../debugger/intellitrace-features.md)|  
-    |Testovací relace v nástroji Microsoft Test Manager. Tato možnost připojuje soubor .iTrace k pracovní položce serveru Team Foundation Server.|[Shromažďování více diagnostických dat v manuálních testů](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
-    |Microsoft Monitoring Agent, buď samostatně nebo pomocí System Center 2012 R2 Operations Manager pro technologii ASP.NET webové aplikace a služby SharePoint spuštěnými v nasazení|-   [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md)<br />-   [Co je nového pro System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
+    |Testovací relace v nástroji Microsoft Test Manager. Tato možnost připojuje soubor .iTrace k pracovní položce serveru Team Foundation Server.|[Shromažďování více diagnostických dat v manuálních testů](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
+    |Microsoft Monitoring Agent, buď samostatně nebo pomocí System Center 2012 R2 Operations Manager pro technologii ASP.NET webové aplikace a služby SharePoint spuštěnými v nasazení|-   [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md)<br />-   [Co je nového pro System Center 2012 R2 Operations Manager](https://technet.microsoft.com/library/dn249700.aspx)|  
   
 ## <a name="GetStarted"></a> Co chcete udělat?  
   
@@ -207,7 +207,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
   
     ![Protokol IntelliTrace &#45; SharePoint neošetřené výjimky](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   Návod, naleznete v tématu [názorný postup: Ladění aplikace SharePoint s použitím technologie IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Pro různé druhy dat, která najdete v článku záznamy agenta [funkce IntelliTrace](../debugger/intellitrace-features.md).  
+   Návod, naleznete v tématu [názorný postup: Ladění aplikace SharePoint s použitím technologie IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Pro různé druhy dat, která najdete v článku záznamy agenta [funkce IntelliTrace](../debugger/intellitrace-features.md).  
   
 ### <a name="ThreadsList"></a> Seznam vláken  
  Prozkoumejte zaznamenaná vlákna spuštěná v cílovém procesu. Můžete spustit ladění od první platné události IntelliTrace ve zvoleném vlákně.  
@@ -258,14 +258,14 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 |----------------|-------------------|  
 |**Název modulu**|Název souboru modulu|  
 |**Cesta modulu**|Umístění disku, kde byl modul načten|  
-|**ID modulu**|Jedinečný identifikátor modulu, který je specifický pro verzi a přispívá k odpovídající soubory symbolů (PDB). Zobrazit [hledání souborů symbolů (PDB) a zdrojové soubory](http://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**ID modulu**|Jedinečný identifikátor modulu, který je specifický pro verzi a přispívá k odpovídající soubory symbolů (PDB). Zobrazit [hledání souborů symbolů (PDB) a zdrojové soubory](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
 ### <a name="where-can-i-get-more-information"></a>Kde lze získat další informace?  
  [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [Funkce IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Shromažďování více diagnostických dat v manuálních testů](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
+ [Shromažďování více diagnostických dat v manuálních testů](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   

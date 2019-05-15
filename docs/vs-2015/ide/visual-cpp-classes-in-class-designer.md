@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5e772d5dddcdde2306212e8a8fc48b9e39ae47a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443184"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696404"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Třídy jazyka Visual C++ v návrháři tříd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > **Zobrazit odvozené třídy** příkaz není podporován pro kód C++. Lze zobrazit odvozené třídy tak, že přejdete na zobrazení tříd, rozbalení uzlu typu, rozšíření **odvozené typy** podsložky a následným přetažením tyto typy do diagramu tříd.  
   
- Další informace o dědičnosti více tříd, naleznete v tématu [vícenásobná dědičnost (NOTINBUILD)](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) a [více základních tříd](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
+ Další informace o dědičnosti více tříd, naleznete v tématu [vícenásobná dědičnost (NOTINBUILD)](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) a [více základních tříd](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
 ## <a name="abstract-classes"></a>Abstraktní třídy  
  Návrhář tříd podporuje abstraktních tříd (také s názvem "základních tříd abstraktu"). Toto jsou třídy, která nikdy vytvořit instanci, ale ze které odvozujete jiné třídy. Použijeme příklad z "Vícenásobné dědičnosti" dříve v tomto dokumentu, které může vytvořit instanci `Bird` třídy jako jednotlivé objekty následujícím způsobem:  
@@ -121,7 +121,7 @@ typedef struct
   
  Struktury také mohou být anonymní. Návrhář tříd zobrazí anonymní třídy a struktury stejné jako zobrazení příslušného typu. I když můžete deklarovat a zobrazení anonymní třídy a struktury, nebude návrhář tříd použít název značky, který zadáte. Použije název, který generuje zobrazení tříd. Třídy nebo struktury se zobrazí v zobrazení tříd a návrhář tříd jako element volá **__unnamed**.  
   
- Další informace o anonymních tříd naleznete v tématu [anonymní typy třídy](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
+ Další informace o anonymních tříd naleznete v tématu [anonymní typy třídy](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
   
 ## <a name="template-classes"></a>Třídy šablon  
  Návrhář tříd podporuje vizualizaci tříd šablon. Vnořené deklarace jsou podporovány. Následující tabulka uvádí některé typické deklarace.  
@@ -171,8 +171,8 @@ typedef struct
   
 ## <a name="see-also"></a>Viz také  
  [Práce s kódem jazyka Visual C++ (návrhář tříd)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Třídy a struktury](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [Anonymní typy třídy](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) Vícenásobná dědičnost](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [Vícenásobné třídy Base](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
- [Šablony](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+ [Třídy a struktury](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [Anonymní typy třídy](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
+ [(NOTINBUILD) Vícenásobná dědičnost](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [Vícenásobné třídy Base](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
+ [Šablony](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

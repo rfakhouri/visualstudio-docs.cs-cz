@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6d44e99b584ec347abd407753f965170658969b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435554"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685416"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Vytvoření systému základního projektu, část 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -281,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ je zadaný uživatelem na název **nový projekt** dialogovém okně Upravit a odebrat všechny problematické znaky a mezery.  
   
-  Úplný seznam parametrů šablony, najdete v části [parametry šablony](../ide/template-parameters.md).  Pokud chcete vytvořit vlastní šablony parametr, přečtěte si téma [NIB: Postupy: Vlastní parametry předat šablony](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Úplný seznam parametrů šablony, najdete v části [parametry šablony](../ide/template-parameters.md).  Pokud chcete vytvořit vlastní šablony parametr, přečtěte si téma [NIB: Postupy: Vlastní parametry předat šablony](https://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>K nahrazení parametrů šablony projektu  
   

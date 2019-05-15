@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7694f0f725af8a20ff3a5a01753b0669c0fd5d9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bfee16abf522284471baf4c8dc8b3c47468a032e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067349"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701482"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilování a sestavování v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Systém Visual Studio lze použít k vytváření aplikací a k vytváření ses
 |------------------|--------------|--------------------------|
 |Používání prostředí IDE|– Můžete snadno vytvořit a spouštět sestavení okamžitě.<br />-Lze spustit víceprocesorová sestavení pro projekty jazyka C++ a C#.<br />-Si můžete přizpůsobit některé aspekty systému sestavení.|[Sestavování a čištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|
 |Spuštění příkazového řádku MSBuild|-Projekty lze sestavit bez instalace sady Visual Studio.<br />-Lze spustit víceprocesorová sestavení pro všechny typy projektů.<br />-Si můžete přizpůsobit většinu oblastí systému sestavení.|[MSBuild](../msbuild/msbuild.md)|
-|Použití systému Team Foundation Build|-Můžete automatizovat proces sestavení. Lze například sestavit jeden nebo více projektů v noci nebo pokaždé, když je kód vrácen se změnami. Projekty lze také sestavit na sdílených serverech sestavení a nikoli na vašem vývojovém počítači.<br />– Je možné rychle zadat kód, který chcete sestavit, testy, které chcete spustit, a další běžné možnosti.<br />– Můžete upravit pracovní postup sestavení a podle potřeby a vytvořit aktivity sestavení provést hluboce přizpůsobené úkoly.|[Sestavení aplikace](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
+|Použití systému Team Foundation Build|-Můžete automatizovat proces sestavení. Lze například sestavit jeden nebo více projektů v noci nebo pokaždé, když je kód vrácen se změnami. Projekty lze také sestavit na sdílených serverech sestavení a nikoli na vašem vývojovém počítači.<br />– Je možné rychle zadat kód, který chcete sestavit, testy, které chcete spustit, a další běžné možnosti.<br />– Můžete upravit pracovní postup sestavení a podle potřeby a vytvořit aktivity sestavení provést hluboce přizpůsobené úkoly.|[Sestavení aplikace](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
 
 ## <a name="building-from-the-ide"></a>Sestavení v prostředí IDE
- Při vytváření projektu jsou definovány výchozí konfigurace sestavení a konfigurace sestavení řešení je přiřazena k projektu, čímž poskytuje kontext sestavení. Konfigurace řešení definují, jak jsou projekty v řešení sestaveny a nasazeny. Konfigurace projektu představují sadu vlastností projektu, které jsou jedinečné pro platformu a typ sestavení (například Vydaná verze Win32). Tyto výchozí konfigurace lze upravit a lze vytvořit vlastní konfigurace. Další informace najdete v tématu [Úvod do Návrháře projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) a [NIB jak: Změna vlastností projektu a nastavení konfigurace](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
+ Při vytváření projektu jsou definovány výchozí konfigurace sestavení a konfigurace sestavení řešení je přiřazena k projektu, čímž poskytuje kontext sestavení. Konfigurace řešení definují, jak jsou projekty v řešení sestaveny a nasazeny. Konfigurace projektu představují sadu vlastností projektu, které jsou jedinečné pro platformu a typ sestavení (například Vydaná verze Win32). Tyto výchozí konfigurace lze upravit a lze vytvořit vlastní konfigurace. Další informace najdete v tématu [Úvod do Návrháře projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) a [NIB jak: Změna vlastností projektu a nastavení konfigurace](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
 
  V rozhraní IDE lze provádět následující dodatečné úkoly:
 
@@ -53,4 +53,4 @@ Systém Visual Studio lze použít k vytváření aplikací a k vytváření ses
 - Zvýšit výkon sestavení pomocí paralelních sestavení Další informace najdete v tématu [sestavování více projektů současně](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) nebo blogový příspěvek [paralelního sestavení ladění jazyka C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Viz také
- [Návod: Sestavení aplikace](../ide/walkthrough-building-an-application.md) [Principy konfigurace sestavení](../ide/understanding-build-configurations.md) [platformy sestavení Principy](../ide/understanding-build-platforms.md) [sestavování projektů (kompilace) webu](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Jak: Vytváření a odebírání závislostí projektu](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Návod: Sestavení aplikace](../ide/walkthrough-building-an-application.md) [Principy konfigurace sestavení](../ide/understanding-build-configurations.md) [platformy sestavení Principy](../ide/understanding-build-platforms.md) [sestavování projektů (kompilace) webu](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Jak: Vytváření a odebírání závislostí projektu](../ide/how-to-create-and-remove-project-dependencies.md)

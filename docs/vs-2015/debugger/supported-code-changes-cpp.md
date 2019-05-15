@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65c802964a03fdfe99e4f2f51988de36a806dcbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f167b3e9d27145284defa2ff491bb9ce0085f2a3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090885"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684911"
 ---
 # <a name="supported-code-changes-c"></a>Podporované změny kódu (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Pokud jeden z těchto změn a pokuste se použít změny kódu, chyby nebo upozo
 ## <a name="BKMK_Unsupported_scenarios"></a> Nepodporované scénáře  
  Upravit a pokračovat pro C/C++ není k dispozici v následujících scénářích ladění:  
   
-- Ladění nativní aplikace kompilována s [/Zo (vylepšit optimalizované ladění)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+- Ladění nativní aplikace kompilována s [/Zo (vylepšit optimalizované ladění)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
   
 - Ve verzích sady Visual Studio před Visual Studio 2015 Update 1, ladění aplikací pro Windows Store nebo součásti. Od verze Visual Studio 2015 Update 1, můžete upravit a pokračovat v Windows Store C++ a aplikací rozhraní DirectX, protože teď podporuje `/ZI` přepínač kompilátoru se `/bigobj` přepnout. Můžete také upravit a pokračovat s binárními soubory zkompilovaná `/FASTLINK` přepnout.  
   
@@ -141,7 +141,7 @@ Pokud jeden z těchto změn a pokuste se použít změny kódu, chyby nebo upozo
 3. Zrušte **povolit předkompilování** zaškrtávací políčko.  
   
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> Omezení atributu IDL  
- Upravit a pokračovat neobnoví soubory rozhraní definice (IDL). Proto se změny IDL – atributy neprojeví během ladění. Pokud chcete zobrazit výsledek změny IDL – atributy, musí zastavit ladění a znovu sestavte aplikaci. Upravit a pokračovat nevygeneruje chybu nebo upozornění Pokud se změnily atributy IDL. Další informace najdete v tématu [IDL – atributy](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
+ Upravit a pokračovat neobnoví soubory rozhraní definice (IDL). Proto se změny IDL – atributy neprojeví během ladění. Pokud chcete zobrazit výsledek změny IDL – atributy, musí zastavit ladění a znovu sestavte aplikaci. Upravit a pokračovat nevygeneruje chybu nebo upozornění Pokud se změnily atributy IDL. Další informace najdete v tématu [IDL – atributy](https://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
   
 ## <a name="see-also"></a>Viz také  
  [Upravit a pokračovat (Visual C#)](../debugger/edit-and-continue-visual-cpp.md)

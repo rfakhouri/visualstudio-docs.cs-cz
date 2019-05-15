@@ -18,17 +18,17 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27090998a7afa6f99da9152e1f5bb7407fed6aa0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 17b906f721bea6e4183575eced962e9ed830cda1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423259"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675439"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce – zabezpečení a nasazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] je technologie nasazení, která vám umožní vytvořit automatických aktualizací aplikace založené na Windows, které mohou být nainstalovány a spuštěny vyžadují minimální interakci uživatele. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poskytuje plnou podporu pro publikování a aktualizace aplikací nasazených pomocí technologie ClickOnce, pokud jste vytvořili projekt v jazyce Visual Basic a Visual C#. Informace o nasazení aplikací v jazyce Visual C++, naleznete v tématu [ClickOnce – nasazení pro aplikace Visual C++](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] je technologie nasazení, která vám umožní vytvořit automatických aktualizací aplikace založené na Windows, které mohou být nainstalovány a spuštěny vyžadují minimální interakci uživatele. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poskytuje plnou podporu pro publikování a aktualizace aplikací nasazených pomocí technologie ClickOnce, pokud jste vytvořili projekt v jazyce Visual Basic a Visual C#. Informace o nasazení aplikací v jazyce Visual C++, naleznete v tématu [ClickOnce – nasazení pro aplikace Visual C++](https://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení překonává tři hlavní problémy v nasazení:  
   
@@ -98,8 +98,8 @@ ms.locfileid: "63423259"
 |----------|-----------------|  
 |[Stránka Zabezpečení, Návrhář projektu](../ide/reference/security-page-project-designer.md)|Příznaky manifesty aplikace a nasazení.|  
 |[Stránka Publikovat, Návrhář projektu](../ide/reference/publish-page-project-designer.md)|Generuje a úpravy manifestů aplikací a nasazení pro aplikace Visual Basic a Visual C#.|  
-|[Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Generuje manifesty aplikace a nasazení aplikací Visual Basic, Visual C# a Visual C++.<br /><br /> Podepíše a znovu podepíše manifesty aplikace a nasazení.<br /><br /> Můžete spouštět z dávkových skriptů a příkazový řádek.|  
-|[MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Generuje a úpravy manifestů aplikací a nasazení.<br /><br /> Podepíše a znovu podepíše manifesty aplikace a nasazení.|  
+|[Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Generuje manifesty aplikace a nasazení aplikací Visual Basic, Visual C# a Visual C++.<br /><br /> Podepíše a znovu podepíše manifesty aplikace a nasazení.<br /><br /> Můžete spouštět z dávkových skriptů a příkazový řádek.|  
+|[MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Generuje a úpravy manifestů aplikací a nasazení.<br /><br /> Podepíše a znovu podepíše manifesty aplikace a nasazení.|  
 |[GenerateApplicationManifest – úloha](../msbuild/generateapplicationmanifest-task.md)|Generuje manifest aplikace.<br /><br /> Můžete spustit z nástroje MSBuild. Další informace najdete v tématu [MSBuild Reference](../msbuild/msbuild-reference.md).|  
 |[GenerateDeploymentManifest – úloha](../msbuild/generatedeploymentmanifest-task.md)|Generuje manifest nasazení.<br /><br /> Můžete spustit z nástroje MSBuild. Další informace najdete v tématu [MSBuild Reference](../msbuild/msbuild-reference.md).|  
 |[SignFile – úloha](../msbuild/signfile-task.md)|Příznaky manifesty aplikace a nasazení.<br /><br /> Můžete spustit z nástroje MSBuild. Další informace najdete v tématu [MSBuild Reference](../msbuild/msbuild-reference.md).|  

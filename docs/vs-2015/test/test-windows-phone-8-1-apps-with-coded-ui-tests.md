@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e27478255ccd8f3d5c2786fdfc806fa4f5c0a15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a862b01eb4fdbb654ce31419742c07ba22194ffa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387018"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705984"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testování aplikací pro UPW a aplikací pro Windows Phone 8.1 pomocí programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -374,7 +374,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 |Funkce|Aplikace pro Windows Store|Aplikace Windows Phone|  
 |-------------|------------------------|------------------------|  
-|Cíl pro spouštění testů|Místním nebo vzdáleném počítači. Vzdálené počítače je možné zadat při spuštění testů pomocí automatizovaného testového případu. Zobrazit [automatizovaný testovací proces v nástroji Microsoft Test Manager](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulátor nebo zařízení. Zobrazit, [dotaz: Můžete testy spouštět pouze emulátor nebo můžu také použít fyzické zařízení? ](#TestingPhoneAppsCodedUI_EmulatorDevice) v tomto tématu.|  
+|Cíl pro spouštění testů|Místním nebo vzdáleném počítači. Vzdálené počítače je možné zadat při spuštění testů pomocí automatizovaného testového případu. Zobrazit [automatizovaný testovací proces v nástroji Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulátor nebo zařízení. Zobrazit, [dotaz: Můžete testy spouštět pouze emulátor nebo můžu také použít fyzické zařízení? ](#TestingPhoneAppsCodedUI_EmulatorDevice) v tomto tématu.|  
 |Spusťte z příkazového řádku|Není nutné určit cílový soubor s nastavením.|Chcete-li zadat cíl je vyžadován soubor Runsettings.|  
 |Specializované třídy pro ovládací prvky prostředí|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |Ovládací prvek WebView v aplikace v jazyce XAML|Podporováno, pokud použijete Html * specializované třídy pro interakci s prvky jazyka HTML. Viz <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Není podporováno.|  

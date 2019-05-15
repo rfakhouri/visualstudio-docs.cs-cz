@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70fca5b1329dc9091e0672b41de0798d93aba01a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436980"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705171"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ Když vytvoříte aplikaci, která zpracovává data v databázi, provedete zák
 5. V **hodnotu** sloupce, zadejte svůj připojovací řetězec (bez jakékoli mimo uvozovky) a pak uložte provedené změny.  
   
 > [!NOTE]
-> V reálné aplikaci byste měli uložit připojovací řetězec bezpečně, jak je popsáno v [připojovací řetězce a konfigurační soubory](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> V reálné aplikaci byste měli uložit připojovací řetězec bezpečně, jak je popsáno v [připojovací řetězce a konfigurační soubory](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Načtení připojovacího řetězce  
   
@@ -726,7 +726,7 @@ End Namespace
 |NC-12|Použití `ExecuteNonQuery` metodu `cmdNewCustomer` ke spuštění `Sales.uspNewCustomer` uložené procedury. To uložená procedura spuštění `INSERT` příkaz, nikoli dotaz.|  
 |NC-13|`@CustomerID` Je vrácena jako hodnota IDENTITY z databáze. Protože jde o celé číslo, bude nutné ji převést na řetězec pro zobrazení v **ID zákazníka** textového pole.<br /><br /> -Můžete deklarovat `parsedCustomerID` v NC-2.<br />-Store `@CustomerID` hodnota v `parsedCustomerID` pro pozdější použití.<br />-Převeďte vrácené ID zákazníka na řetězec a vložte jej do `txtCustomerID.Text`.|  
 |NC-14|V tomto příkladu přidejte jednoduchou klauzuli catch (ne produkční kvality).|  
-|NC-15|Vždy uzavírejte připojení po dokončení jeho použití, tak, aby mohlo být uvolněno do fondu připojení. Zobrazit [připojení k SQL serveru (ADO.NET) sdružování](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
+|NC-15|Vždy uzavírejte připojení po dokončení jeho použití, tak, aby mohlo být uvolněno do fondu připojení. Zobrazit [připojení k SQL serveru (ADO.NET) sdružování](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
 |NC-16|Definujte metodu k ověření, že je k dispozici název zákazníka.<br /><br /> – Pokud textové pole je prázdné, zobrazí zprávu a vrátí `false`, protože název se vyžaduje k vytvoření účtu.<br />-Pokud textové pole není prázdný, vrátí `true`.|  
 |NC-17|Přidejte kód pro obslužnou rutinu události kliknutí `btnPlaceOrder` tlačítko.|  
 |NC-18|Zabalte volání do `isPlaceOrderReady` kolem `btnPlaceOrder_Click` kód události tak, aby `uspPlaceNewOrder` nespustil, pokud požadovaný vstup není přítomen.|  

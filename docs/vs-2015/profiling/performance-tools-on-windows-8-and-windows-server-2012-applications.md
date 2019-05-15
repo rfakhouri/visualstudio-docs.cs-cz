@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bfd585a3185d83981d24c8dc77e62193c1363d4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb77271c37b02104a0e1695d5495ff085518acad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442541"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675270"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,19 +60,19 @@ Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 po
   
   [Spouštění aplikací pro Windows Store ve vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
-  [Analýza výkonu aplikace](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [Analýza výkonu aplikace](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
-- [Časování funkcí jazyka JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
+- [Časování funkcí jazyka JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [Časování funkcí jazyka JavaScript na vzdáleném zařízení](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [Časování funkcí jazyka JavaScript na vzdáleném zařízení](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
-- [Analýza dat časování funkcí jazyka JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [Analýza dat časování funkcí jazyka JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [Kód profilu Visual C++, Visual C# a Visual Basic v aplikacích pro Windows Store v místním počítači](http://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Kód profilu Visual C++, Visual C# a Visual Basic v aplikacích pro Windows Store v místním počítači](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
-- [Kód profilu Visual C++, Visual C# a Visual Basic v aplikacích pro Windows Store na vzdáleném zařízení](http://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [Kód profilu Visual C++, Visual C# a Visual Basic v aplikacích pro Windows Store na vzdáleném zařízení](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
-- [Analýza výkonnostních dat pro kód jazyka Visual C++, Visual C# a Visual Basic v aplikacích pro Windows Store](http://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Analýza výkonnostních dat pro kód jazyka Visual C++, Visual C# a Visual Basic v aplikacích pro Windows Store](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
   [V tomto tématu](#BKMK_In_this_topic)  
   
@@ -136,7 +136,7 @@ Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 po
   
    **Shromažďování dat TIP na vzdáleném počítači**  
   
-   Ke shromažďování dat interakce vrstev ve vzdáleném počítači, je nutné zkopírovat **vs\_profiler\_**_\<platformy >_ **\_**  _\<Jazyk >_**.exe** soubor _VSInstallDir %_**\Team Tools\Performance Tools\Setups**složky sady Visual Studio počítače ke vzdálenému počítači a nainstalujte ho. Nelze použít v nástrojů pro profilaci [Visual Studio Remote Tools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) stažení balíčku.  
+   Ke shromažďování dat interakce vrstev ve vzdáleném počítači, je nutné zkopírovat **vs\_profiler\_**_\<platformy >_ **\_**  _\<Jazyk >_**.exe** soubor _VSInstallDir %_**\Team Tools\Performance Tools\Setups**složky sady Visual Studio počítače ke vzdálenému počítači a nainstalujte ho. Nelze použít v nástrojů pro profilaci [Visual Studio Remote Tools](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) stažení balíčku.  
   
    Můžete použít [VSPerfCmd](../profiling/vsperfcmd.md) nebo [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) ke shromažďování dat profilování.  
   

@@ -32,12 +32,12 @@ caps.latest.revision: 129
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d7a36d2033fabf6562cadfde84db84b06fb63fee
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 59cb744b64137a3ccf34e87d89abcba22e2afc9b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867865"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680999"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analýza a modelování vaší architektury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Zajistěte, aby že vaše aplikace splňuje požadavky uživatelů pomocí sady 
   
 |||  
 |-|-|  
-|**Vizualizace kódu**:<br /><br /> – Podívejte organizaci a vztahy kódu vytvořením map kódu. Vizualizace závislostí mezi sestavení, oborů názvů, třídy, metody a tak dále.<br />– Podívejte na strukturu třídy a členy pro konkrétní projekt tak, že vytvoříte diagramů tříd z kódu.<br />-Vyhledání konfliktů mezi kódu a jeho návrhu tak, že vytvoříte diagramy vrstev pro ověření kódu.<br /><br /> **Poznámka:**: V této verzi sady Visual Studio termín *mapy kódu* je použito místo *graf závislosti*. Termín *grafu* při použití samostatného obvykle odkazuje na diagram orientovaného grafu nebo jazyka DGML (nebo dokumentu). Mapy kódu se speciálním typem DGML diagram.|-   [Vizualizace kódu](../modeling/visualize-code.md)<br />-   [Práce s třídami a ostatními typy (návrhář tříd)](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [Video: Pochopení závislostí kódu až po vizualizaci (kanál 9)](http://go.microsoft.com/fwlink/?LinkID=252065)<br />-   [Video: Vizualizujte dopad změn (kanál 9)](http://go.microsoft.com/fwlink/?LinkID=252068)|  
+|**Vizualizace kódu**:<br /><br /> – Podívejte organizaci a vztahy kódu vytvořením map kódu. Vizualizace závislostí mezi sestavení, oborů názvů, třídy, metody a tak dále.<br />– Podívejte na strukturu třídy a členy pro konkrétní projekt tak, že vytvoříte diagramů tříd z kódu.<br />-Vyhledání konfliktů mezi kódu a jeho návrhu tak, že vytvoříte diagramy vrstev pro ověření kódu.<br /><br /> **Poznámka:** V této verzi sady Visual Studio termín *mapy kódu* je použito místo *graf závislosti*. Termín *grafu* při použití samostatného obvykle odkazuje na diagram orientovaného grafu nebo jazyka DGML (nebo dokumentu). Mapy kódu se speciálním typem DGML diagram.|-   [Vizualizace kódu](../modeling/visualize-code.md)<br />-   [Práce s třídami a ostatními typy (návrhář tříd)](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [Video: Pochopení závislostí kódu až po vizualizaci (kanál 9)](http://go.microsoft.com/fwlink/?LinkID=252065)<br />-   [Video: Vizualizujte dopad změn (kanál 9)](http://go.microsoft.com/fwlink/?LinkID=252068)|  
 |**Popsat a sdělovat požadavky uživatelů**:<br /><br /> -Objasnění uživatelských scénářů, obchodní pravidla a další požadavky a pomáhají zajistit jejich konzistence kreslením diagramy UML, jako je například případ použití, aktivity a diagramy tříd.|-   [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)<br />-   [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)<br />-   [Video: Zlepšení architektury prostřednictvím modelování (kanál 9)](http://go.microsoft.com/fwlink/?LinkID=252078)|  
 |**Definice architektury**:<br /><br /> – Modelování ve velkém měřítku strukturu softwarového systému a vzory návrhu kreslením Komponenta UML, třídy a sekvenční diagramy.<br />-Definovat a vynucovat omezení závislosti mezi komponentami váš kód tak, že vytvoříte diagramy vrstev.|-   [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)<br />-   [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)<br />-   [Video: Zlepšení architektury prostřednictvím modelování (kanál 9)](http://go.microsoft.com/fwlink/?LinkID=252078)<br />-   [Video: Použijte diagramy vrstev k navrhování a ověřování architektury (kanál 9)](http://go.microsoft.com/fwlink/?LinkID=252073)|  
 |**Ověřování systému s požadavky a určené návrhu:**<br /><br /> -Definujte akceptační testy nebo testy systému podle požadavků na modely. Tím se vytvoří silný vztah mezi testy a požadavky vašich uživatelů a umožňuje snadno aktualizovat systém další při změně požadavků.<br />-Validate závislostí kódu pomocí diagramů vrstev, které popisují zamýšlenou architekturu a Neumožnit změny, které může být v konfliktu s návrhem.|-   [Ověřování systému během vývoje.](../modeling/validate-your-system-during-development.md)<br />-   [Video: Použijte diagramy vrstev k navrhování a ověřování architektury (kanál 9)](http://go.microsoft.com/fwlink/?LinkID=252073)|  
@@ -79,4 +79,4 @@ Zajistěte, aby že vaše aplikace splňuje požadavky uživatelů pomocí sady 
 ## <a name="see-also"></a>Viz také  
 
 - [Co je nového pro modelování v sadě Visual Studio 2015](../modeling/what-s-new-for-design-in-visual-studio.md)   
-- [DevOps a správa životního cyklu aplikací](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps a správa životního cyklu aplikací](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)

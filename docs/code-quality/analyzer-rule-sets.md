@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 696e6bd46c17054494be2ea0e0f2a1af4fd703d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387700"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675477"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Sady pravidel pro analyzátory Roslyn
 
@@ -25,11 +25,28 @@ Pokud migrujete ze starší verze "FxCop" statické analýzy kódu pro analyzát
 
 ## <a name="use-analyzer-rule-sets"></a>Použití sad pravidel v analyzátoru
 
-Poté co [instalaci balíčku NuGet analyzátor](install-roslyn-analyzers.md), vyhledejte předem definované pravidlo, nastavte jeho *sady pravidel* adresáře. Například pokud odkazujete `Microsoft.CodeAnalysis.FxCopAnalyzers` analyzátor balíček pak můžete najít jeho adresáře sady pravidel v *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<verze \>\rulesets*. Odtud lze přetáhnout a vyřadit, nebo zkopírujte a vložte jednu nebo více pravidel do projektu sady Visual Studio v **Průzkumníka řešení**.
+Poté co [instalaci balíčku NuGet analyzátor](install-roslyn-analyzers.md), vyhledejte předem definované pravidlo, nastavte jeho *sady pravidel* adresáře. Například pokud odkazujete `Microsoft.CodeAnalysis.FxCopAnalyzers` můžete najít analyzátor balíček a pak jeho *sady pravidel* adresáře v *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\ \<verze\>\rulesets*. Odtud, zkopírujte jeden nebo více pravidel a vložte je do adresáře, který obsahuje projekt sady Visual Studio nebo přímo do **Průzkumníka řešení**.
 
-Chcete-li aktivní sadu pravidel pro analýzu sadu pravidel, klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a zvolte **vlastnosti**. Na stránkách vlastností projektu, vyberte **analýzy kódu** kartu. V části **spustit tuto sadu pravidel**vyberte **Procházet**a potom vyberte požadované pravidlo sadu, kterou jste zkopírovali do adresáře projektu. Teď vidíte pouze porušení pravidel pro tato pravidla, které jsou povolené v vybranou sadu pravidel.
+Můžete také [přizpůsobení sady předdefinovaných pravidel](how-to-create-a-custom-rule-set.md) dle požadavků. Například můžete změnit závažnost jedno nebo více pravidel tak, aby narušení se zobrazují jako chyby nebo varování v **seznam chyb**.
 
-Můžete také [přizpůsobení sady předdefinovaných pravidel](how-to-create-a-custom-rule-set.md#create-a-custom-rule-set) dle požadavků. Například můžete změnit závažnost jedno nebo více pravidel tak, aby narušení se zobrazují jako chyby nebo varování v **seznam chyb**.
+## <a name="set-the-active-rule-set"></a>Nastavte aktivní sadu pravidel
+
+Proces pro nastavení aktivní sadu pravidel se mírně liší v závislosti na tom, zda je třeba projekt .NET Core/.NET Standard nebo .NET Framework projektu.
+
+### <a name="net-core"></a>.NET Core
+
+Chcete-li pravidlo nastavena aktivní sadu pravidel pro analýzu v projektech .NET Core nebo .NET Standard, ručně přidejte **CodeAnalysisRuleSet** vlastnosti do souboru projektu. Například následující kód fragment kódu nastaví `HelloWorld.ruleset` nastavit jako aktivní pravidlo.
+
+```xml
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
+```
+
+### <a name="net-framework"></a>.NET Framework
+
+Chcete-li aktivní sadu pravidel pro analýzu v projektech .NET Framework sadu pravidel, klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a zvolte **vlastnosti**. Na stránkách vlastností projektu, vyberte **analýzy kódu** kartu. V části **spustit tuto sadu pravidel**vyberte **Procházet**a potom vyberte požadované pravidlo sadu, kterou jste zkopírovali do adresáře projektu. Teď vidíte pouze porušení pravidel pro tato pravidla, které jsou povolené v vybranou sadu pravidel.
 
 ## <a name="available-rule-sets"></a>Sad pravidel k dispozici
 

@@ -21,12 +21,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91b0d7ee490b4e081a264c41b4fe85de07cb637b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 26e2b1300feb8d2a15e63089ee9bddde5f2d1ef4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437811"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702288"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Dialogové okno Konfigurace brány firewall pro vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,5 +48,5 @@ Toto dialogové okno se zobrazí, když brána Windows Firewall blokuje ladicí 
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [Nastavení nástroje Remote Tools na zařízení](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)   
+ [Nastavení nástroje Remote Tools na zařízení](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)   
  [Ladění odkazu uživatelského rozhraní](../debugger/debugging-user-interface-reference.md)

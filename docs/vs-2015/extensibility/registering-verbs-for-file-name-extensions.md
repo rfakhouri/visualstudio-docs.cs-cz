@@ -10,19 +10,19 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbd97310163a4eb3ae5502c6341dc73322ca653d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432552"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685271"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrace operací pro přípony názvů souborů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Přidružení příponu názvu souboru pomocí aplikace je obecně upřednostňované akce, ke které dochází, když uživatel pokliká soubor. To upřednostňovaný akce je spojena se slovesem, například aplikaci, která odpovídá akci.  
   
- Můžete zaregistrovat příkazy, které jsou spojeny s programový identifikátor (ProgID) pro rozšíření s použitím prostředí klíče umístěné na HKEY_CLASSES_ROOT\\*progid*\shell. Další informace najdete v tématu [typy souborů](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ Můžete zaregistrovat příkazy, které jsou spojeny s programový identifikátor (ProgID) pro rozšíření s použitím prostředí klíče umístěné na HKEY_CLASSES_ROOT\\*progid*\shell. Další informace najdete v tématu [typy souborů](https://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
 ## <a name="registering-standard-verbs"></a>Registruje standardní příkazy  
  Operační systém rozpozná standardní následující příkazy:  

@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2876a70eedb1191aaed91204505286f97e00a27b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 2803e220cd38bc03efa464bbe857ab41fff1ea52
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833774"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696231"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Transparentní metody musí obsahovat pouze ověřitelné IL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "54833774"
 ## <a name="rule-description"></a>Popis pravidla
  Toto pravidlo je vyvoláno při pokusech transparentního kódu zabezpečení spustit jazyk MSIL (Microsoft Intermediate Language), který nelze ověřit. Pravidlo však neobsahuje úplný ověřovatel jazyka IL a místo toho k zachycení většiny porušení ověření jazyka MSIL používá heuristiky.
 
- Ujistěte se, že váš kód obsahuje pouze ověřitelného kódu MSIL, spusťte [Peverify.exe (Nástroj PEVerify)](http://msdn.microsoft.com/library/f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa) v sestavení. Spustit PEVerify s **/ transparentní** možnost, která omezí výstup na pouze neověřitelný transparentních metodách, které by způsobilo chybu. Pokud / není použita možnost transparentní, PEVerify také ověří kritické metody, které můžou obsahovat kód, který nelze ověřit.
+ Ujistěte se, že váš kód obsahuje pouze ověřitelného kódu MSIL, spusťte [Peverify.exe (Nástroj PEVerify)](https://msdn.microsoft.com/library/f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa) v sestavení. Spustit PEVerify s **/ transparentní** možnost, která omezí výstup na pouze neověřitelný transparentních metodách, které by způsobilo chybu. Pokud / není použita možnost transparentní, PEVerify také ověří kritické metody, které můžou obsahovat kód, který nelze ověřit.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, označte metody <xref:System.Security.SecurityCriticalAttribute> nebo <xref:System.Security.SecuritySafeCriticalAttribute> atribut, nebo odeberte neověřitelný kód.

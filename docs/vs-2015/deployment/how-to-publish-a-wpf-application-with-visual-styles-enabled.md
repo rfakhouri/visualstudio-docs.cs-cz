@@ -9,18 +9,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2eb9da0913b3ce77ea30fd58d5243d5a380d19f
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c3691f782f317667b56f6bf3641c0f4c6a703eda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954468"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697576"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Postupy: Publikování aplikace WPF s povolenými vizuálními styly
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závislosti na motiv uživatelem. Ve výchozím nastavení nejsou povoleny vizuální styly pro aplikace Windows Presentation Foundation (WPF), takže je potřeba povolit ručně. Povolení vizuálních stylů pro aplikace WPF a pak tuto aplikaci publikovat řešení způsobí chybu. Toto téma popisuje, jak vyřešit tuto chybu a proces pro publikování aplikace WPF s povolenými vizuálními styly. Další informace o vizuálních stylů, najdete v části [vizuální styly přehled](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Další informace o chybové zprávě naleznete v tématu [řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
+Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závislosti na motiv uživatelem. Ve výchozím nastavení nejsou povoleny vizuální styly pro aplikace Windows Presentation Foundation (WPF), takže je potřeba povolit ručně. Povolení vizuálních stylů pro aplikace WPF a pak tuto aplikaci publikovat řešení způsobí chybu. Toto téma popisuje, jak vyřešit tuto chybu a proces pro publikování aplikace WPF s povolenými vizuálními styly. Další informace o vizuálních stylů, najdete v části [vizuální styly přehled](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Další informace o chybové zprávě naleznete v tématu [řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
 
  Chcete-li vyřešit chybu a publikovat řešení, je třeba provést následující úkoly:
 
@@ -125,7 +125,7 @@ Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závi
 
 1. Otevřít **příkazový řádek sady Visual Studio**.
 
-    Další informace o tom, jak otevřít **příkazový řádek sady Visual Studio**, naleznete v tématu [příkazové řádky](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
+    Další informace o tom, jak otevřít **příkazový řádek sady Visual Studio**, naleznete v tématu [příkazové řádky](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
 
    > [!NOTE]
    > Ve zbývajících krocích vytvořit následující předpoklady o řešení:
@@ -193,5 +193,5 @@ Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závi
 ## <a name="see-also"></a>Viz také
 
 [Řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
-[vizuální styly přehled](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
-[příkazové řádky](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)
+[vizuální styly přehled](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
+[příkazové řádky](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)

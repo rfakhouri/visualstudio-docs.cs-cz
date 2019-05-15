@@ -26,24 +26,24 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7b411574dcf65bdd1ec64c1fc51bd1813f09abb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: df35a25534961c6ab94891d2da6fe54f05c37a3e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432340"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681080"
 ---
 # <a name="how-to-debug-injected-code"></a>Postupy: Ladění vloženého kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 POZNÁMKA:]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- Pomocí atributů může výrazně zjednodušit programování C++. Další informace najdete v tématu [koncepty](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). Některé atributy jsou interpretovány kompilátorem přímo. Ostatní atributy vloží kód do zdroje program, který kompilátor pak zkompiluje. Tato vloženého kódu díky programování usnadnit tím, že snižuje množství kódu, který musíte napsat. V některých případech však chyba může způsobit selhání při provádění vloženého kódu aplikace. Pokud k tomu dojde, budete pravděpodobně chtít podívat na vložený kód. Visual Studio poskytuje dva způsoby, jak vidíte vloženého kódu:  
+ Pomocí atributů může výrazně zjednodušit programování C++. Další informace najdete v tématu [koncepty](https://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). Některé atributy jsou interpretovány kompilátorem přímo. Ostatní atributy vloží kód do zdroje program, který kompilátor pak zkompiluje. Tato vloženého kódu díky programování usnadnit tím, že snižuje množství kódu, který musíte napsat. V některých případech však chyba může způsobit selhání při provádění vloženého kódu aplikace. Pokud k tomu dojde, budete pravděpodobně chtít podívat na vložený kód. Visual Studio poskytuje dva způsoby, jak vidíte vloženého kódu:  
   
 - Můžete zobrazit kódu injektovaného do **zpětný překlad** okna.  
   
-- Pomocí [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), můžete vytvořit sloučené zdrojový soubor, který obsahuje původní a vloženého kódu.  
+- Pomocí [/Fx](https://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), můžete vytvořit sloučené zdrojový soubor, který obsahuje původní a vloženého kódu.  
   
   **Zpětný překlad** okno zobrazuje instrukcí sestavení jazyka, které odpovídají zdrojový kód a kód vložený atributy. Kromě toho **zpětný překlad** okna můžete zobrazit poznámky zdrojového kódu.  
   

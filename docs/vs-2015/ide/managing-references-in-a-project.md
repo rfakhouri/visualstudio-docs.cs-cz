@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ac17ba5bc828e7974ced9519728aa5de15db94
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a54df63d71eeb641aa16c5bf7d4a2cb0c8a8a292
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424540"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675091"
 ---
 # <a name="managing-references-in-a-project"></a>Správa odkazů v projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
 > Všechny projekty v sadě Visual Studio obsahují implicitní odkaz na `System.Core`i v případě `System.Core` se odebere ze seznamu odkazů.  
   
 ## <a name="references-to-shared-components-at-run-time"></a>Odkazy na sdílené komponenty za běhu  
- V době běhu, musí být komponenty v cestě výstupu projektu nebo v [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Pokud projekt obsahuje odkaz na objekt, který se nenachází v jednom z těchto umístění, musíte zkopírovat odkaz na výstupní cestu k projektu při sestavování projektu. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Vlastnost určuje, zda tato kopie má být provedena. Pokud je hodnota **True**, odkaz je zkopírován do adresáře projektu při sestavování projektu. Pokud je hodnota **False**, odkaz není kopírován.  
+ V době běhu, musí být komponenty v cestě výstupu projektu nebo v [Global Assembly Cache](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Pokud projekt obsahuje odkaz na objekt, který se nenachází v jednom z těchto umístění, musíte zkopírovat odkaz na výstupní cestu k projektu při sestavování projektu. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Vlastnost určuje, zda tato kopie má být provedena. Pokud je hodnota **True**, odkaz je zkopírován do adresáře projektu při sestavování projektu. Pokud je hodnota **False**, odkaz není kopírován.  
   
  Pokud nasadíte aplikaci, která obsahuje odkaz na vlastní komponentu registrovanou v mezipaměti GAC, komponenta nebude nasazena s aplikací bez ohledu na to <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> nastavení. V dřívějších verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete nastavit <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> vlastnost v odkazu k zajištění toho, že bylo sestavení nasazeno. Nyní je třeba ručně přidat sestavení do složky \Bin. To umístí všechny vlastní kódy pod kontrolu, což zmenší riziko publikování vlastního kódu, se kterým nejste obeznámeni.  
   
@@ -118,5 +118,5 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
   
 ## <a name="see-also"></a>Viz také  
  [Řešení potíží s poškozenými odkazy](../ide/troubleshooting-broken-references.md)   
- [Programování se sestaveními](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
+ [Programování se sestaveními](https://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
  [Postupy: Přidání nebo odebrání odkazů pomocí správce odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

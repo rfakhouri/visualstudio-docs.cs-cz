@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 814327befe538bfaa102b198988e76dbd52090bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432394"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705690"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Přidání vlastnosti sledování do definice jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Tento návod ukazuje, jak přidat vlastnosti sledování do modelu domény.
   
  Například v nástroje jazyka specifického pro doménu (DSL Tools), zobrazovaný název vlastnosti třídy domény má výchozí hodnotu, která se počítá pomocí názvu doménové třídy, ale uživatel změňte hodnotu v době návrhu nebo ho resetovat do počítanou hodnotu.  
   
- V tomto podrobném návodu vytvoření jazyka specifického pro doménu (DSL), který má Namespace sledování vlastnost, která má výchozí hodnotu na základě Namespace výchozí vlastnosti modelu. Další informace o sledování vlastnosti najdete v tématu [definování sledování vlastnosti](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ V tomto podrobném návodu vytvoření jazyka specifického pro doménu (DSL), který má Namespace sledování vlastnost, která má výchozí hodnotu na základě Namespace výchozí vlastnosti modelu. Další informace o sledování vlastnosti najdete v tématu [definování sledování vlastnosti](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 - Podpora nástroje DSL sledování popisovače vlastnosti. Návrhář DSL však nelze použít pro přidání vlastnosti sledování do jazyka. Proto je nutné přidat vlastní kód musel definovat a implementovat vlastnosti sledování.  
   

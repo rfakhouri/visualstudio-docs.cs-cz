@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a2449e9686f71cfd932a2bf6047ed0208da1d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114805"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675000"
 ---
 # <a name="managing-application-settings-net"></a>Správa nastavení aplikace (.NET)
 
@@ -59,7 +59,7 @@ Když vytvoříte nastavení s rozsahem uživatele (například výchozí písmo
 >
 > Pokud budete postupovat informace o připojovacím řetězci z externího zdroje, jako je například uživatelské zadání ID uživatele a heslo, musíte být opatrní a zkontrolujte, že hodnoty, které můžete použít k vytvoření připojení řetězec neobsahují další parametry připojovacího řetězce která mění chování vašeho připojení.
 >
-> Zvažte použití funkce Protected Configuration pro šifrování citlivých informací v konfiguračním souboru. Zobrazit [chrání informace o připojení](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4) Další informace.
+> Zvažte použití funkce Protected Configuration pro šifrování citlivých informací v konfiguračním souboru. Zobrazit [chrání informace o připojení](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4) Další informace.
 
 > [!NOTE]
 > Protože neexistuje žádný model konfiguračního souboru pro knihovny tříd, nastavení aplikace nelze aplikovat na projekty knihovny tříd. Výjimkou je Visual Studio Tools for Office DLL projekt, který může mít konfigurační soubor.
@@ -74,7 +74,7 @@ Návrhář nastavení nejprve hledá soubor Settings.settings, který vytvoří 
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Přístup nebo změna nastavení aplikace za běhu v jazyce Visual Basic
 
-V [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projekty, dostanete nastavení aplikace za běhu pomocí `My.Settings` objektu. Na **nastavení** stránky, klikněte na tlačítko **zobrazení kódu** tlačítko k zobrazení souboru Settings.vb. Settings.vb definuje `Settings` třídu, která umožňuje zpracování těchto událostí na třídě nastavení: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, a <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Všimněte si, že `Settings` třídy v Settings.vb je částečná třída zobrazující pouze uživatele kód, nikoli celou generovanou třídu. Další informace o přístup k nastavení aplikace s použitím `My.Settings` objektu, najdete v článku [přístup k nastavení aplikace](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
+V [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projekty, dostanete nastavení aplikace za běhu pomocí `My.Settings` objektu. Na **nastavení** stránky, klikněte na tlačítko **zobrazení kódu** tlačítko k zobrazení souboru Settings.vb. Settings.vb definuje `Settings` třídu, která umožňuje zpracování těchto událostí na třídě nastavení: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, a <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Všimněte si, že `Settings` třídy v Settings.vb je částečná třída zobrazující pouze uživatele kód, nikoli celou generovanou třídu. Další informace o přístup k nastavení aplikace s použitím `My.Settings` objektu, najdete v článku [přístup k nastavení aplikace](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
 
 Hodnoty nastavení rozsahu uživatele, které uživatel změní za běhu (například umístění formuláře) jsou uloženy v souboru user.config. Všimněte si, že výchozí hodnoty jsou stále uloženy v souboru app.config.
 
@@ -98,8 +98,8 @@ Musíte také explicitně volat `Save` metoda této obálkové třídy s cílem 
 Properties.Settings.Default.Save();
 ```
 
-Obecné informace o přístupu k nastavení aplikace prostřednictvím `Settings` najdete v tématu [přehled nastavení aplikace](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Informace o provádění iterací přes nastavení naleznete v tomto [příspěvek na fóru](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Obecné informace o přístupu k nastavení aplikace prostřednictvím `Settings` najdete v tématu [přehled nastavení aplikace](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Informace o provádění iterací přes nastavení naleznete v tomto [příspěvek na fóru](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Viz také
 
-- [Přístup k nastavení aplikace](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [Přístup k nastavení aplikace](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

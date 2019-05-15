@@ -10,12 +10,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ae47942e9b686ac02623e4b3f2d0681babf879f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f19b71c86d972b59a9d46f379bf7ec93f63aeb9a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084025"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679961"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Rozhraní Managed Extensibility Framework v editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Editor je sestavena pomocí Managed Extensibility Framework (MEF) komponenty. M�
   
  Rozhraní MEF je obsažen v sestavení rozhraní .NET Framework verze 4 System.ComponentModel.Composition.dll.  
   
- Další informace o rozhraní MEF, naleznete v tématu [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+ Další informace o rozhraní MEF, naleznete v tématu [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ### <a name="component-parts-and-composition-containers"></a>Součásti a složení kontejnery  
  Součást je třída nebo člen třídy, která můžete provést jednu (nebo obojí) z následujících akcí:  

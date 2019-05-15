@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 90a7611e0b8895b0ed3540cae861ebafec9ae4bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780676"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698504"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio – sada IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Studio slouží k vytvoření mnoha typech aplikací, od jednoduchého ú
 
 - Hry a aplikace náročné na grafiku pro širokou škálu zařízení Windows, včetně Xbox, pomocí rozhraní DirectX.
 
-Visual Studio ve výchozím nastavení poskytuje podporu pro C#, C a C++, JavaScript, F#a Visual Basic. Visual Studio funguje a také integrace s aplikací třetích stran, jako je Unity prostřednictvím [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) rozšíření a Apache Cordova prostřednictvím [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Můžete rozšířit Visual Studio sami tak, že vytvoříte vlastní nástroje, které se prováděly specializované úkoly.
+Visual Studio ve výchozím nastavení poskytuje podporu pro C#, C a C++, JavaScript, F#a Visual Basic. Visual Studio funguje a také integrace s aplikací třetích stran, jako je Unity prostřednictvím [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) rozšíření a Apache Cordova prostřednictvím [Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Můžete rozšířit Visual Studio sami tak, že vytvoříte vlastní nástroje, které se prováděly specializované úkoly.
 
 Pokud jste Visual Studio před nepoužívali, seznamte se se základy s naší [získat začít vyvíjet pomocí sady Visual Studio](../ide/get-started-developing-with-visual-studio.md) kurzy a návody.
 
@@ -133,7 +133,7 @@ Pokud chcete zjistit, o nových funkcích v sadě Visual Studio 2015, najdete v 
 
 8. **Přejít k definici** možnost místní nabídky přejít přímo na místě, kde je definována funkce nebo objektu. Další příkazy pro navigaci jsou k dispozici také kliknutím pravým tlačítkem myši v editoru.
 
-9. Související nástroje [prohlížeče objektů](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), umožňuje vám umožní zkontrolovat .NET nebo prostředí Windows Runtime sestavení ve vašem systému chcete podívat, jaké jsou typy obsahují a jaké metody a vlastnosti obsahují tyto typy.
+9. Související nástroje [prohlížeče objektů](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), umožňuje vám umožní zkontrolovat .NET nebo prostředí Windows Runtime sestavení ve vašem systému chcete podívat, jaké jsou typy obsahují a jaké metody a vlastnosti obsahují tyto typy.
 
      ![Prohlížeč objektů prohlížeči a zobrazí objekt System.Timer](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -154,7 +154,7 @@ Výstup sestavení, včetně úspěch nebo chyba zprávy, se zobrazí v **výstu
 
  [Podokna](../ide/reference/immediate-window.md) umožňuje zadejte ve výrazu a ihned sledujte jeho výsledek.
 
- [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) okno zaznamenává každé volání metody a další události v běžící aplikaci rozhraní .NET a může pomoct vám umožňuje rychle vyhledávat, kde problém vznikl.
+ [IntelliTrace](https://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) okno zaznamenává každé volání metody a další události v běžící aplikaci rozhraní .NET a může pomoct vám umožňuje rychle vyhledávat, kde problém vznikl.
 
  Další informace najdete v tématu [ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).
 
@@ -164,10 +164,10 @@ Výstup sestavení, včetně úspěch nebo chyba zprávy, se zobrazí v **výstu
  ![Průzkumník testu jednotek](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
 ## <a name="analyzing-code-quality-and-performance"></a>Analýza kvality kódu a výkonu
- Visual Studio obsahuje výkonné nástroje pro analýzu statického a modulu runtime. Nástroje statické analýzy mohli snadno identifikovat potenciální chyby v návrhu, globalizace, vzájemná funkční spolupráce, výkon, zabezpečení a jiných kategorií. Testování výkonu nebo profilování, zahrnuje měření vykonávání programu. Přístup z těchto nástrojů **analyzovat** nabídky. Další informace najdete v tématu [zlepšení kvality pomocí diagnostických nástrojů Visual Studia](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
+ Visual Studio obsahuje výkonné nástroje pro analýzu statického a modulu runtime. Nástroje statické analýzy mohli snadno identifikovat potenciální chyby v návrhu, globalizace, vzájemná funkční spolupráce, výkon, zabezpečení a jiných kategorií. Testování výkonu nebo profilování, zahrnuje měření vykonávání programu. Přístup z těchto nástrojů **analyzovat** nabídky. Další informace najdete v tématu [zlepšení kvality pomocí diagnostických nástrojů Visual Studia](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ## <a name="connecting-to-cloud-services-and-databases"></a>Připojení ke cloudovým službám a databází
- [Průzkumníka serveru](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) okna v sadě Visual Studio jsou uvedeny prostředky ve všech účtech spravované v rámci účtu přizpůsobení (tu jste přihlášení), včetně instancí systému SQL Server, Azure, Salesforce.com, Office 365, a websites.
+ [Průzkumníka serveru](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) okna v sadě Visual Studio jsou uvedeny prostředky ve všech účtech spravované v rámci účtu přizpůsobení (tu jste přihlášení), včetně instancí systému SQL Server, Azure, Salesforce.com, Office 365, a websites.
 
  ![Průzkumník serveru](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
@@ -184,7 +184,7 @@ Výstup sestavení, včetně úspěch nebo chyba zprávy, se zobrazí v **výstu
  Architektura a modelování nástrojů sady Visual Studio můžete použít pro návrh a modelování vaší aplikace. Tyto nástroje umožňují vizualizovat strukturu kódu, chování a vztahy. Modely můžete vytvořit na různých úrovních podrobností v průběhu životního cyklu aplikací v rámci vašeho vývojového procesu. Můžete sledovat požadavky, úkoly, testovací případy, chyby a další práci související s vašimi modely propojením prvků modelu s pracovní položky serveru Team Foundation Server a váš plán vývoje. Další informace najdete v tématu [návrh a modelování aplikace](../modeling/analyze-and-model-your-architecture.md).
 
 ## <a name="extending-visual-studio-through-the-visual-studio-sdk"></a>Rozšíření sady Visual Studio pomocí sady Visual Studio SDK
- Visual Studio je rozšiřitelná platforma. Rozšíření sady Visual Studio je vlastní nástroj, který se integruje s prostředím IDE. Můžete přidat rozšíření třetích stran nebo vytvořit vlastní. Další informace najdete v tématu [vývoj rozšíření sady Visual Studio](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14).
+ Visual Studio je rozšiřitelná platforma. Rozšíření sady Visual Studio je vlastní nástroj, který se integruje s prostředím IDE. Můžete přidat rozšíření třetích stran nebo vytvořit vlastní. Další informace najdete v tématu [vývoj rozšíření sady Visual Studio](https://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14).
 
  [Visual Studio zkušenosti uživatelů](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md) jsou základní referenční dokumentace pro každého, kdo psaní rozšíření pro Visual Studio. Tyto pokyny specifické pro platformu také informace o návrhu dialogového okna, písma, barvy, ikony, běžných ovládacích prvků a jiné vzory interakcí, které způsobí, že vaši novou funkci se hladce integrují s Visual Studio.
 
@@ -196,7 +196,7 @@ Výstup sestavení, včetně úspěch nebo chyba zprávy, se zobrazí v **výstu
 |[Postupy: Pohyb v integrovaném vývojovém prostředí](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Začínáme s vývojem pomocí jazyka Visual C++](../ide/get-started-developing-with-visual-studio.md)|
 |[Hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|[Řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Psaní kódu](../ide/writing-code-in-the-code-and-text-editor.md)|[Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)|
-|[Nástroje pro profilaci](../profiling/profiling-tools.md)|[Zlepšení kvality kódu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
+|[Nástroje pro profilaci](../profiling/profiling-tools.md)|[Zlepšení kvality kódu](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
 |[Návrh uživatelského rozhraní](../designers/designing-user-interfaces.md)|[Analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)|
 |[Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)|[Nasazení aplikací, služeb a komponent](../deployment/deploying-applications-services-and-components.md)|
 |[Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide-64-bit-support.md)|[Zabezpečení](../ide/security-in-visual-studio.md)|

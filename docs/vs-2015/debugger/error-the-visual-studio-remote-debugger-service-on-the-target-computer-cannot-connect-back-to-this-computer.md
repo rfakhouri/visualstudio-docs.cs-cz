@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7e828d0150e3519e588702be95111126fd1e2c04
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8f598d765e45b1f97d6a3e95d1ad57c325ea38fe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069234"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697350"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Chyba: Služba Visual Studio Remote Debugger na cílovém počítači se nemůže připojit zpět k tomuto počítači
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Tato chyba znamená, že se službou Visual Studio Remote Debugger uživatelské
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
-1. Ujistěte se, že služba Visual Studio Remote Debugger je správně nastavený na vzdáleném počítači. Další informace najdete v tématu [nastavit Up the Remote Tools na zařízení](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
+1. Ujistěte se, že služba Visual Studio Remote Debugger je správně nastavený na vzdáleném počítači. Další informace najdete v tématu [nastavit Up the Remote Tools na zařízení](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
 2. Spusťte službu vzdálený ladicí program pomocí účtu, který má přístup k počítači hostitele ladicího programu, jak je znázorněno v předchozí tabulce.  
   

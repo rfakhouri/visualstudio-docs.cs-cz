@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a1eae79e90a7d20419aaf25c1679aae885e3e92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442795"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686434"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testování částí s použitím souboru .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Testování částí v sadě Visual Studio můžete konfigurovat pomocí souboru
 > [!NOTE]
 > **.runsettings a .testsettings**  
 >   
-> Existují dva typy souboru pro konfigurace testů. *.runsettings se používají pro testování částí. A \*.testsettings pro [laboratorních prostředí testů](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), testování výkonnosti webů a zátěžové testy a pro přizpůsobení některých typů adaptérů diagnostických dat, jako jsou adaptéry IntelliTrace a protokolu událostí.  
+> Existují dva typy souboru pro konfigurace testů. *.runsettings se používají pro testování částí. A \*.testsettings pro [laboratorních prostředí testů](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), testování výkonnosti webů a zátěžové testy a pro přizpůsobení některých typů adaptérů diagnostických dat, jako jsou adaptéry IntelliTrace a protokolu událostí.  
 >   
 > V předchozích verzích sady Visual Studio až 2010, jednotky testů byly také přizpůsobit pomocí *.testsettings souborů. Můžete dál tak učinit, ale testy poběží pomaleji než při použití ekvivalentní konfiguraci v \*soubor s příponou .runsettings.  
   
@@ -141,7 +141,7 @@ Testování částí v sadě Visual Studio můžete konfigurovat pomocí souboru
 #### <a name="other-diagnostic-data-adapters"></a>Další adaptéry diagnostických dat  
  Adaptér pokrytí kódu je aktuálně jediný adaptér, který lze přizpůsobit pomocí souboru parametrů běhu.  
   
- Chcete-li přizpůsobit jakýkoli jiný typ adaptéru diagnostických dat, musíte použít soubor s nastavením testu. Další informace najdete v tématu [zadání nastavení testu pro testy Visual Studia](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901).  
+ Chcete-li přizpůsobit jakýkoli jiný typ adaptéru diagnostických dat, musíte použít soubor s nastavením testu. Další informace najdete v tématu [zadání nastavení testu pro testy Visual Studia](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901).  
   
 #### <a name="testrunparameters"></a>TestRunParameters  
  TestRunParameters poskytuje způsob, jak definovat proměnné a hodnoty, které jsou k dispozici pro testy v době běhu.  
@@ -149,10 +149,10 @@ Testování částí v sadě Visual Studio můžete konfigurovat pomocí souboru
 ### <a name="mstest-run-settings"></a>Parametry běhu adaptéru MSTest  
  Tato nastavení jsou specifická pro testovací adaptér, který spouští testovací metody, které mají `[TestMethod]` atribut.  
   
-|Konfigurace|Výchozí|Hodnoty|  
+|Konfiguraci|Výchozí|Hodnoty|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|false|V sadě Visual Studio 2012 byl optimalizován adaptér MSTest tak, aby byl rychlejší a lépe škálovatelný. Některé rysy chování sady, jako například pořadí, ve kterém jsou testy spuštěny, nemusí být přesně stejné jako v předchozích edicích sady Visual Studio. Nastavte tuto hodnotu `true` aby používala starší testovací adaptér.<br /><br /> Toto nastavení můžete například použít, pokud máte pro testování částí určen soubor app.config.<br /><br /> Doporučujeme zvážit refaktoring testů, aby bylo možné použít novější adaptér.|  
-|IgnoreTestImpact|false|Funkce dopadu testu upřednostňuje při spuštění testů prostřednictvím adaptéru MSTest nebo nástroje Microsoft Test Manager testy, které jsou ovlivněny nedávnými změnami. Toto nastavení funkci deaktivuje. Další informace najdete v tématu [jak: Shromáždění dat pro zkontrolovat, které testy mají být spuštěny po změně kódu](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
+|IgnoreTestImpact|false|Funkce dopadu testu upřednostňuje při spuštění testů prostřednictvím adaptéru MSTest nebo nástroje Microsoft Test Manager testy, které jsou ovlivněny nedávnými změnami. Toto nastavení funkci deaktivuje. Další informace najdete v tématu [jak: Shromáždění dat pro zkontrolovat, které testy mají být spuštěny po změně kódu](https://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
 |SettingsFile||Zde můžete určit soubor s nastavením testu, který chcete použít v adaptéru MSTest. Můžete také určit soubor nastavení testu pomocí nabídky **testování**, **nastavení testu**, **vybrat soubor nastavení testu**.<br /><br /> Pokud chcete zadat tuto hodnotu, je nutné také nastavit **ForcedlegacyMode** k **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|false|Po dokončení běhu testu je adaptér MSTest vypnut. Jakýkoli proces, který je spuštěn jako část testu, bude v tuto chvíli také ukončen. Pokud chcete zachovat prováděcí modul testování v provozu, přepněte tuto konfiguraci na hodnotu true.<br /><br /> Toto nastavení můžete například použít pro zachování chodu prohlížeče mezi programovými testy uživatelského rozhraní.|  
 |DeploymentEnabled|true|Pokud nastavíte hodnotu false, nezkopírují se položky nasazení, které jste určili v testovací metodě, do adresáře nasazení.|  
@@ -164,4 +164,4 @@ Testování částí v sadě Visual Studio můžete konfigurovat pomocí souboru
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md)   
- [Zadání nastavení testu pro testy Visual Studia](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
+ [Zadání nastavení testu pro testy Visual Studia](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

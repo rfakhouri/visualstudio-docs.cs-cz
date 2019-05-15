@@ -11,17 +11,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440950"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680294"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Správa modelů a diagramů pomocí správy verzí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spravovat různé verze projekty modelování a diagramy, včetně mapy kódu (soubory .dgml), pomocí [pomocí správy verzí Team Foundation nebo Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); buď místní Team Foundation Server nebo v cloudu s Vizuálem Studio Team Services.  
+Spravovat různé verze projekty modelování a diagramy, včetně mapy kódu (soubory .dgml), pomocí [pomocí správy verzí Team Foundation nebo Git](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); buď místní Team Foundation Server nebo v cloudu s Vizuálem Studio Team Services.  
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -77,7 +77,7 @@ Spravovat různé verze projekty modelování a diagramy, včetně mapy kódu (s
   
 - Změna vlastností vztahů, které překračují hranice balíčku.  
   
-- Další informace o zámcích pro rezervaci, naleznete v tématu [zkontrolujte out a úpravy souborů](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+- Další informace o zámcích pro rezervaci, naleznete v tématu [zkontrolujte out a úpravy souborů](https://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>Chcete-li přesunout soubor diagramu do nebo ze složky projektu  
   

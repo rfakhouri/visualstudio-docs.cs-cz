@@ -13,12 +13,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 323fbbc48953537dbcad4a13d2774fefec65dd52
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd26e08ab153e96fc601e89788008cb0e9ca38c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792091"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704086"
 ---
 # <a name="project-type-design-decisions"></a>Rozhodnutí týkající se návrhu typu projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Než vytvoříte nový typ projektu, je nutné provést několik rozhodnutí o n
   
  Položky v projektu mohou být soubory, nebo můžou být více abstraktní objekty, jako jsou objekty v databázi úložiště nebo datového připojení přes Internet. Pokud položky jsou soubory, může být projektu odkaz na základě nebo projektu založeného na adresář.  
   
- Položky můžete v projektech na základě odkazu, se zobrazí ve více než jeden projekt. Ale skutečný soubor, který představuje položku se nachází v jednom adresáři pouze. V projektech adresář existovat všechny položky projektu do struktury adresářů. Další informace najdete v tématu [správu NIB: položka v projektech](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Položky můžete v projektech na základě odkazu, se zobrazí ve více než jeden projekt. Ale skutečný soubor, který představuje položku se nachází v jednom adresáři pouze. V projektech adresář existovat všechny položky projektu do struktury adresářů. Další informace najdete v tématu [správu NIB: položka v projektech](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  Místní položky, které jsou uložené ve stejném počítači, kde je nainstalována aplikace. Vzdálené položky může být uloženy na jiném serveru v místní síti nebo jinde v síti Internet.  
   
@@ -60,7 +60,7 @@ Než vytvoříte nový typ projektu, je nutné provést několik rozhodnutí o n
   
 ## <a name="see-also"></a>Viz také  
  [Kontrolní seznam: Vytvoření nových typů projektů](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Správa NIB: položek v projektech](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
+ [Správa NIB: položek v projektech](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [Otevření a uložení položek projektu](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Trvalost projektu](../../extensibility/internals/project-persistence.md)   
  [Prvky modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)   

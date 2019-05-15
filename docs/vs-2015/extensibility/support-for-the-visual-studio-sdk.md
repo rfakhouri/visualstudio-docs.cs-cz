@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e71097bacd12e8e60690108a8dd62a370aed6f52
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 1bfb2a7e30542977906fd71e168652aa661fcc8d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193845"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688735"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Podpora sady Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Několik možnosti podpory jsou dostupné pro zákazníky, kteří mají dotazy 
 ## <a name="included-support"></a>Podpory  
   
 ### <a name="visual-studio-product-support"></a>Visual Studio Product Support  
- Některé podpora je součástí nákupu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produktů. Další informace najdete v tématu [Visual Studio – podpora](http://msdn.microsoft.com/vstudio/cc136615.aspx). Společnost Microsoft udržuje podporu vyhrazeného týmu odpovědi na otázky o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšiřitelnosti.  
+ Některé podpora je součástí nákupu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produktů. Další informace najdete v tématu [Visual Studio – podpora](https://msdn.microsoft.com/vstudio/cc136615.aspx). Společnost Microsoft udržuje podporu vyhrazeného týmu odpovědi na otázky o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšiřitelnosti.  
   
 ### <a name="msdn-subscription-support"></a>Podpora pro předplatná MSDN  
  Balíčky předplatné MSDN mohou zahrnovat také některé podporu. Další informace najdete v tématu [podpory pro předplatitele MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  

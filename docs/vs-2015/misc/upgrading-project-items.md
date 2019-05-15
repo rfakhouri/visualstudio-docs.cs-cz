@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3619e187c7856cf03ee60c8a04cbe527bf0a69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434173"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698689"
 ---
 # <a name="upgrading-project-items"></a>Upgrade položky projektu
 Je-li přidat nebo spravovat položky uvnitř systémů projektů, které neimplementuje, budete muset účastnit v procesu upgradu projektu. Crystal Reports je příklad položky, kterou lze přidat do projektu systému.  
@@ -38,5 +38,5 @@ Je-li přidat nebo spravovat položky uvnitř systémů projektů, které neimpl
 2. Položky projektu v době získá oznámení o upgrade projektu **Průvodce převodu Visual Studio** pořád zobrazuje. Proto měli používat metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> rozhraní kvůli upgradu zprávy do Průvodce vytvořením uživatelského rozhraní.  
   
 ## <a name="see-also"></a>Viz také  
- [Průvodce převodu Visual Studio](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Průvodce převodu Visual Studio](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Upgrade vlastních projektů](../misc/upgrading-custom-projects.md)

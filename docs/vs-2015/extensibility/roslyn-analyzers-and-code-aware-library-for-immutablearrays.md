@@ -8,17 +8,17 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c15b1f335129e7c749aadefaa78ee3f9c5862baa
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 44cb171594a6d595652b3c013505927bd82f947e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842952"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685250"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyzátory Roslyn a knihovny rozlišující kódy pro řešení ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") vám pomůže sestavit s ohledem na kód knihovny. S ohledem na kód knihovny poskytuje funkce, které můžete použít nástroje (analyzátory Roslyn), které vám pomohou při použití knihovny nejlepším způsobem, nebo aby nedocházelo k chybám. V tomto tématu se dozvíte, jak vytvářet analyzátoru Roslyn reálného světa zachytit běžných chyb při použití [NIB: Neměnné kolekce](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) balíček NuGet. Tento příklad také ukazuje, jak zajistit opravu kódu pro kód problém najít analyzátor. Uživatelé uvidí opravy kódu v sadě Visual Studio žárovky uživatelského rozhraní a provést opravu kódu automaticky.
+[.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") vám pomůže sestavit s ohledem na kód knihovny. S ohledem na kód knihovny poskytuje funkce, které můžete použít nástroje (analyzátory Roslyn), které vám pomohou při použití knihovny nejlepším způsobem, nebo aby nedocházelo k chybám. V tomto tématu se dozvíte, jak vytvářet analyzátoru Roslyn reálného světa zachytit běžných chyb při použití [NIB: Neměnné kolekce](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) balíček NuGet. Tento příklad také ukazuje, jak zajistit opravu kódu pro kód problém najít analyzátor. Uživatelé uvidí opravy kódu v sadě Visual Studio žárovky uživatelského rozhraní a provést opravu kódu automaticky.
 
 ## <a name="getting-started"></a>Začínáme
 Budete potřebovat následující sestavení tohoto příkladu:

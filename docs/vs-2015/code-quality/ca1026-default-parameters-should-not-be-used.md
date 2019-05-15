@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 25e38f6db5caa6b797774463552cd17fd07bdf5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7c20bfce7dd7fe3b2e116b982408afa813ebab25
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784126"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704187"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Neměly by být použity výchozí parametry
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "54784126"
 ## <a name="rule-description"></a>Popis pravidla
  Metody používající výchozí parametry jsou povoleny v rámci specifikace CLS (Common Language); ale specifikace CLS umožňuje kompilátorům Ignorovat hodnoty přiřazené těmto parametrům. Kód, který je napsán pro kompilátory, které ignorovat výchozí hodnoty parametrů musíte explicitně zadat argumenty pro každý parametr výchozí. Chcete-li zachovat shodné chování napříč programovacími jazyky, by měl vyměnit metody používající výchozí parametry přetížením metody, která výchozí parametry poskytují.
 
- Kompilátor ignoruje hodnoty výchozí parametry pro spravované rozšíření jazyka C++ při přístupu ke spravovaným kódem. Kompilátor jazyka Visual Basic podporuje metody, které mají výchozí parametry, které používají [volitelné](http://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) – klíčové slovo.
+ Kompilátor ignoruje hodnoty výchozí parametry pro spravované rozšíření jazyka C++ při přístupu ke spravovaným kódem. Kompilátor jazyka Visual Basic podporuje metody, které mají výchozí parametry, které používají [volitelné](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) – klíčové slovo.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, nahraďte metody používající výchozí parametry přetížením metody, které poskytují výchozí parametry.
@@ -55,4 +55,4 @@ ms.locfileid: "54784126"
  [CA1025: Nahraďte opakované argumenty polem](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
 ## <a name="see-also"></a>Viz také
- [Jazyková nezávislost a jazykově nezávislé komponenty](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [Jazyková nezávislost a jazykově nezávislé komponenty](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

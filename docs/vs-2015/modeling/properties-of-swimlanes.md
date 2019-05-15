@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04dee7bad28b6176ffb9499bfcdb5ff2dddc3e8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd4435ed0930a920cd36e741ac7461e6f95ba815
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804141"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701518"
 ---
 # <a name="properties-of-swimlanes"></a>Vlastnosti drah
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Plaveckých drah můžete přidat do diagramu. Plaveckých drah rozdělit svisl�
 |Má vlastní konstruktor|Pokud `True`, poskytneme vám vlastního konstruktoru ve zdrojovém kódu. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modifikátor dědičnosti|Popisuje druh dědičnosti třídy zdrojový kód, který je generován z plavecké (`none`, `abstract` nebo `sealed`).|žádná|  
 |Základní Plavecká dráha|Základní třída této plavecké dráhy.|(žádné)|  
-|Název|Název této plavecké dráhy.|Aktuální název|  
+|Name|Název této plavecké dráhy.|Aktuální název|  
 |Obor názvů|Obor názvů, který je přidružen k této plavecké dráhy.|Aktuální obor názvů|  
 |Popis typu|Jak je definován popisek (`fixed`, `variable`, nebo `none`). Pokud `fixed`, pak hodnota `Fixed Tooltip Text` vlastnost se používá; Pokud `variable`, pak je popis definovaný ve vlastním kódu.|\<žádné >|  
 |Poznámky|Neformální poznámky přidružené k této plavecké dráhy.|\<žádné >|  
@@ -55,4 +55,4 @@ Plaveckých drah můžete přidat do diagramu. Plaveckých drah rozdělit svisl�
 |Klíčové slovo nápovědy|Klíčové slovo, je použít k indexování nápovědy klávesy F1 pro této plavecké dráhy.|\<žádné >|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

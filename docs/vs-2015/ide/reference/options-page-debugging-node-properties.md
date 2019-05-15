@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9ebedd1a764098d8e4a4866a9645d10aa999062
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bd02ae0c3cd9f05e817e335b942a76c849655e44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670183"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674731"
 ---
 # <a name="options-page-debugging-node-properties"></a>Stránka Možnosti, vlastnosti uzlu ladění
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Následující tabulky popisují stránky (nebo kolekce vlastností), které jso
 ## <a name="general"></a>Obecné  
  `DTE.Properties("Debugging", "General")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |PromptOnBreakpointDelete|Get/Set (Boolean)|Určuje, zda ladicí program zobrazí výzvu k zadání oprávnění před smazáním všech zarážek v projektu.|  
 |BreakAllProcesses|Get/Set (Boolean)|Určuje, zda ladicí program zruší všechny procesy pokaždé, když se jeden přeruší.|  
@@ -54,7 +54,7 @@ Následující tabulky popisují stránky (nebo kolekce vlastností), které jso
 ## <a name="edit-and-continue"></a>Upravit a pokračovat  
  `DTE.Properties("Debugging", "EditAndContinue")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |EnableEditAndContinue|Get/Set (Boolean)|Určuje, zda je povoleno upravit a pokračovat. Tato možnost se vztahuje na všechny jazyky, které podporují funkce upravit a pokračovat.|  
 |InvokedByCommands|Get/Set (Boolean)|Určuje, zda funkce upravit a pokračovat automaticky aplikuje změny kódu když uživatel vybere příkaz ladění, jako **krok** nebo **pokračovat**. Tato možnost se týká pouze nativního kódu.|  
@@ -75,16 +75,16 @@ Následující tabulky popisují stránky (nebo kolekce vlastností), které jso
 ## <a name="native"></a>Nativní  
  `DTE.Properties("Debugging", "Native")`  
   
-|Název položky vlastnosti|Hodnota|Popis|  
+|Název položky vlastnosti|Value|Popis|  
 |------------------------|-----------|-----------------|  
 |LoadDllExports|Get/Set (Boolean)|Určuje, zda ladicí program načte tabulky exportu knihovny DLL.|  
 |EnableRPC|Get/Set (Boolean)|Určuje, zda ladicího programu můžete krokovat s vnořením COM vzdálených volání procedur.|  
   
 ## <a name="see-also"></a>Viz také  
- [Řízení nastavení možností](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [Určování názvů položky vlastností na stránkách možností](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [Řízení nastavení možností](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Určování názvů položky vlastností na stránkách možností](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Stránka Možnosti, vlastnosti uzlu barev a písem](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Stránka Možnosti, vlastnosti uzlu textového editoru](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Obecné, ladění, dialogové okno Možnosti](../../debugger/general-debugging-options-dialog-box.md)   
- [Upravit a pokračovat, ladění, dialogové okno Možnosti](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Upravit a pokračovat, ladění, dialogové okno Možnosti](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Za běhu, Ladění, dialogové okno Možnosti](../../debugger/just-in-time-debugging-options-dialog-box.md)

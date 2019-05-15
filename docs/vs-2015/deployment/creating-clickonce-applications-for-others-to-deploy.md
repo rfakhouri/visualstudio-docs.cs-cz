@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ff76fe46f07ef713cb3c0e529e8029730450f2a6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777458"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675604"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Vytváření aplikací ClickOnce k implementaci dalšími osobami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Ne všichni vývojáři, kteří vytvářejí nasazení ClickOnce v plánu nasad
 ## <a name="creating-customer-deployments-by-using-application-manifest-for-trust"></a>Vytvoření zákaznická nasazení s použitím Manifest aplikace pro vztah důvěryhodnosti  
  ClickOnce v rozhraní .NET Framework 3.5 obsahuje novou funkci, která poskytuje vývojářům a zákazníkům nové řešení pro scénář toho, jak by měl být podepsané manifesty. ClickOnce – manifest aplikace podporuje nový prvek s názvem `<useManifestForTrust>` , která umožňuje vývojář, abyste mohli označit, že digitální podpis manifestu aplikace je to, co má být použito pro rozhodování o důvěryhodnosti. Vývojář používá nástroje pro balení ClickOnce, jako je například Mage.exe a MageUI.exe, Visual Studio – zahrňte tento prvek v manifestu aplikace, jakož i pro vložení názvu vydavatele a název aplikace v manifestu.  
   
- Při použití `<useManifestForTrust>`, manifest nasazení nemusí podepisovat certifikátem Authenticode vydaný certifikační autoritou. Místo toho můžete být podepsány pomocí co se označuje jako certifikát podepsaný svým držitelem. Certifikát podepsaný svým držitelem vygeneruje zákazníka nebo vývojáři použít standardní nástroje rozhraní .NET Framework SDK a pak použije k manifestu nasazení pomocí nástroje pro standardní nasazení ClickOnce. Další informace najdete v tématu [Makecert.exe (Certificate Creation Tool)](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
+ Při použití `<useManifestForTrust>`, manifest nasazení nemusí podepisovat certifikátem Authenticode vydaný certifikační autoritou. Místo toho můžete být podepsány pomocí co se označuje jako certifikát podepsaný svým držitelem. Certifikát podepsaný svým držitelem vygeneruje zákazníka nebo vývojáři použít standardní nástroje rozhraní .NET Framework SDK a pak použije k manifestu nasazení pomocí nástroje pro standardní nasazení ClickOnce. Další informace najdete v tématu [Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
   
  Použití certifikátu podepsaného svým držitelem pro manifest nasazení nabízí několik výhod. Odstraněním potřeby zákazníků získat nebo vytvořit vlastní certifikát Authenticode `<useManifestForTrust>` zjednodušuje nasazení pro zákazník, a zároveň umožní vývojářům udržovat svoji vlastní identitu značky v aplikaci. Výsledkem je sada podepsaných nasazení, které jsou bezpečnější a mají jedinečné identity aplikace. Tím se eliminují potenciální konflikt, který může být z nasazení stejné aplikace na více zákazníků.  
   

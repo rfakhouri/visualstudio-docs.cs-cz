@@ -12,12 +12,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31840c40f2a494ffd32f5241e2770938138877e9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429155"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704089"
 ---
 # <a name="project-property-user-interface"></a>Uživatelské rozhraní vlastností projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,8 +55,8 @@ Podtyp projektu pomocí položek v projektu **stránky vlastností** dialogové 
   
   Vzhledem k tomu, že projekt podtypu agregace <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objektu, jej můžete přepsat definice těchto vlastností lze určit, které **stránky vlastností** dialogová okna se zobrazí. Podtyp projektu můžete načíst tyto vlastnosti z vnitřní základního projektu a pak přidat nebo odebrat CLSID podle potřeby.  
   
-  Nové stránky vlastností přidal podtyp projektu se předá objekt procházet konfigurace projektu z implementací základní projekt. Tento objekt procházet konfigurace projektu podporuje zařízení Extender automatizace. Další informace o AutomationExtenders najdete v tématu [implementace a rozšiřující objekty pomocí](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). Na stránkách vlastností, které implementují volání podtyp projektu <xref:EnvDTE.Project.Extender%2A> načíst vlastní projekt podtyp procházet objekt konfigurace, která rozšiřuje objekt procházet konfigurace základního projektu.  
+  Nové stránky vlastností přidal podtyp projektu se předá objekt procházet konfigurace projektu z implementací základní projekt. Tento objekt procházet konfigurace projektu podporuje zařízení Extender automatizace. Další informace o AutomationExtenders najdete v tématu [implementace a rozšiřující objekty pomocí](https://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). Na stránkách vlastností, které implementují volání podtyp projektu <xref:EnvDTE.Project.Extender%2A> načíst vlastní projekt podtyp procházet objekt konfigurace, která rozšiřuje objekt procházet konfigurace základního projektu.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:EnvDTE.IFilterProperties>   
- [Dialogové okno stránky vlastností](http://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)
+ [Dialogové okno stránky vlastností](https://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)

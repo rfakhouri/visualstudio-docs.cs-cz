@@ -23,21 +23,21 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68ce036d420293e8a75bec1b2cac9f9ee8f8fcd2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435714"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675615"
 ---
 # <a name="how-to-debug-optimized-code"></a>Postupy: Ladění optimalizovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 POZNÁMKA:]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
-> [/Zo (vylepšit optimalizované ladění)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)– možnost kompilátoru (představíme v sadě Visual Studio Update 3) generuje rozsáhlejší informace ladění pro optimalizovaný kód (projekty, které nejsou sestaveny s **/Od** – možnost kompilátoru. Zobrazit [/O možnosti (Optimalizace kódu)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). To zahrnuje Vylepšená podpora ladění lokálních proměnných a vložené funkce.  
+> [/Zo (vylepšit optimalizované ladění)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)– možnost kompilátoru (představíme v sadě Visual Studio Update 3) generuje rozsáhlejší informace ladění pro optimalizovaný kód (projekty, které nejsou sestaveny s **/Od** – možnost kompilátoru. Zobrazit [/O možnosti (Optimalizace kódu)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). To zahrnuje Vylepšená podpora ladění lokálních proměnných a vložené funkce.  
 >   
 > [Upravit a pokračovat](../debugger/edit-and-continue-visual-csharp.md) vypnutá při **/Zo** ocompiler možnost se používá.  
   
@@ -73,11 +73,11 @@ POZNÁMKA:]
   
 6. V části **C++** složky, vyberte `Optimization`.  
   
-7. V seznamu vlastnosti na pravé straně najít `Optimization`. Nastavení vedle sebe pravděpodobně říká `Disabled (` [/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Vyberte jednu z dalších možností (`Minimum Size``(`[/O1](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(` [/O2](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(` [/Ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)`, nebo `Custom`).  
+7. V seznamu vlastnosti na pravé straně najít `Optimization`. Nastavení vedle sebe pravděpodobně říká `Disabled (` [/Od](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Vyberte jednu z dalších možností (`Minimum Size``(`[/O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(` [/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(` [/Ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)`, nebo `Custom`).  
   
 8. Pokud jste zvolili `Custom` možnost `Optimization`, teď můžete nastavit možnosti pro všechny ostatní vlastnosti zobrazené v seznamu vlastností.  
   
-9. Vyberte vlastnosti konfigurace, C/C++, uzel příkazového řádku na stránce Vlastnosti projektu a přidejte `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` k **další možnosti** textového pole.  
+9. Vyberte vlastnosti konfigurace, C/C++, uzel příkazového řádku na stránce Vlastnosti projektu a přidejte `(` [/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` k **další možnosti** textového pole.  
   
     > [!WARNING]
     > `/Zo` vyžaduje Visual Studio 2013 Update 3 nebo novější.  
@@ -90,7 +90,7 @@ POZNÁMKA:]
 for (x=0; x<10; x++)  
 ```  
   
- Předpokládejme, že jste nastavili zarážku na tomto řádku. Očekáváte zarážce 10krát, ale pokud je optimalizovaný kód, zarážka se projeví pouze jednou. Důvodem je, že první instrukce nastaví hodnotu `x` na hodnotu 0. Kompilátor rozpozná, že to jenom je třeba provést jednou a přesouvá ji ze smyčky. Zarážka se přesune s ním. Pokyny, které porovnání a zvýší `x` zůstávají uvnitř smyčky. Při prohlížení **zpětný překlad** okně [jednotku kroku](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) se automaticky nastaví na instrukci pro větší kontrolu, což je užitečné, když krokovat optimalizovaný kód.  
+ Předpokládejme, že jste nastavili zarážku na tomto řádku. Očekáváte zarážce 10krát, ale pokud je optimalizovaný kód, zarážka se projeví pouze jednou. Důvodem je, že první instrukce nastaví hodnotu `x` na hodnotu 0. Kompilátor rozpozná, že to jenom je třeba provést jednou a přesouvá ji ze smyčky. Zarážka se přesune s ním. Pokyny, které porovnání a zvýší `x` zůstávají uvnitř smyčky. Při prohlížení **zpětný překlad** okně [jednotku kroku](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) se automaticky nastaví na instrukci pro větší kontrolu, což je užitečné, když krokovat optimalizovaný kód.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   

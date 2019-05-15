@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 638aba87698b32b18f41f8b389485893f880743f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8fc60ff83113193f854c3264b7384738dea64f03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050163"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674434"
 ---
 # <a name="memory-usage-without-debugging"></a>Využití paměti bez ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Můžete použít **využití paměti** nástroje bez ladění můžete provád�
   
 - Porovnejte snímky k nalezení původní příčiny problémů s pamětí.  
   
-  Toto téma popisuje, jak pomocí nástroje využití paměti analýza XAML Universal Windows app. Pokud chcete analyzovat využití paměti ve Windows Universal apps, které používají jazyk JavaScript a HTML, naleznete v tématu [analýza využití paměti (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  Toto téma popisuje, jak pomocí nástroje využití paměti analýza XAML Universal Windows app. Pokud chcete analyzovat využití paměti ve Windows Universal apps, které používají jazyk JavaScript a HTML, naleznete v tématu [analýza využití paměti (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ## <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Spuštění diagnostické relace využití paměti  
   
@@ -204,7 +204,7 @@ Můžete použít **využití paměti** nástroje bez ladění můžete provád�
   
 ## <a name="see-also"></a>Viz také  
  [Paměti jazyka JavaScript](../profiling/javascript-memory.md)   
- [Analýza výkonu aplikace](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
- [Spustit výkonu a diagnostické nástroje](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
- [Osvědčené postupy z hlediska výkonu pro aplikace Windows Store pomocí jazyka C++, C# a Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Analýza výkonu aplikace](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
+ [Spustit výkonu a diagnostické nástroje](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
+ [Osvědčené postupy z hlediska výkonu pro aplikace Windows Store pomocí jazyka C++, C# a Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnostika problémů s pamětí pomocí nového nástroje využití paměti v aplikaci Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

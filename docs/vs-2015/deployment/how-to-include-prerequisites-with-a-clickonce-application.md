@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1c2f3bfe9fc40aa21e02268bb403d7497ac41529
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cdeb1b847b746807c80509f4390daf445f65d90f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433830"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697658"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Postupy: Zahrnutí nezbytných součástí s aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63433830"
 Před distribucí požadovaného softwaru se [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace, musíte nejdřív stáhnout instalační balíčky pro tyto požadavky na vývojovém počítači. Když publikujete aplikaci a zvolte **stáhnout součásti ze stejného umístění, jako je má aplikace**, dojde k chybě, pokud instalační balíčky nejsou uloženy v **balíčky** složky.  
   
 > [!NOTE]
-> Přidání instalačního balíčku pro rozhraní .NET Framework naleznete v tématu [Průvodce nasazením rozhraní .NET Framework pro vývojáře](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
+> Přidání instalačního balíčku pro rozhraní .NET Framework naleznete v tématu [Průvodce nasazením rozhraní .NET Framework pro vývojáře](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
 ## <a name="Package"></a> K přidání instalačního balíčku pomocí souboru Package.xml  
   

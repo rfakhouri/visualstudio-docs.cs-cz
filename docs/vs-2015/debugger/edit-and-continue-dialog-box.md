@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46e5990b92dae5086d2986c8df9c8ba4106e913c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77fd48cd8e64be296231ff847b31d940d3d5831c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428583"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704148"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Dialogové okno Upravit a pokračovat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,4 +37,4 @@ Pouze nativní) Toto dialogové okno se zobrazí, když se po úpravě kódu bě
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [Upravit a pokračovat, ladění, dialogové okno Možnosti](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Upravit a pokračovat, ladění, dialogové okno Možnosti](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 885f96a4e1e43fe422c6fd9cfaa414fe5871bce1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444668"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688578"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analýza problémů s pamětí rozhraní .NET Framework
 Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní .NET Framework pomocí sady Visual Studio managed analyzátoru paměti. Minimální verze rozhraní .NET Framework cílový kód je rozhraní .NET Framework 4.5.  
@@ -47,7 +47,7 @@ Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
 ## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identifikovat problém paměti v aplikaci  
- Většina viditelným projevem problémy s pamětí je výkon vaší aplikace, zejména v případě, že v čase snižuje výkon. Snížení výkonu dalších aplikací, když běží vaše aplikace může také znamenat problém s paměti. Pokud máte podezření na chybu paměti, použijte nástroj jako správce úloh nebo [Windows Performance Monitor](http://technet.microsoft.com/library/cc749249.aspx) dále prozkoumat. Například vyhledejte nárůst celkové velikosti paměti, kterou nelze vysvětlují jako možné příčiny nevracení paměti:  
+ Většina viditelným projevem problémy s pamětí je výkon vaší aplikace, zejména v případě, že v čase snižuje výkon. Snížení výkonu dalších aplikací, když běží vaše aplikace může také znamenat problém s paměti. Pokud máte podezření na chybu paměti, použijte nástroj jako správce úloh nebo [Windows Performance Monitor](https://technet.microsoft.com/library/cc749249.aspx) dále prozkoumat. Například vyhledejte nárůst celkové velikosti paměti, kterou nelze vysvětlují jako možné příčiny nevracení paměti:  
   
  ![Konzistentní paměti nárůst sledování prostředků](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
@@ -56,7 +56,7 @@ Hledání nevrácené paměti a neefektivní paměti použijte v kódu rozhraní
  ![Špičky využití paměti v Resource Manageru](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
 ## <a name="BKMK_Collect_memory_snapshots"></a> Shromažďovat snímky paměti  
- Nástroj pro analýzu paměti analyzuje informace v *soubory s výpisem paměti* obsahující informace o haldě. V sadě Visual Studio můžete vytvořit soubory s výpisem paměti, nebo můžete použít nástroje, jako je [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) z [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Zobrazit [co je výpis paměti, a jak jeden vytvořit?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) na blogu týmu Visual Studio Debugger.  
+ Nástroj pro analýzu paměti analyzuje informace v *soubory s výpisem paměti* obsahující informace o haldě. V sadě Visual Studio můžete vytvořit soubory s výpisem paměti, nebo můžete použít nástroje, jako je [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) z [Windows Sysinternals](https://technet.microsoft.com/sysinternals). Zobrazit [co je výpis paměti, a jak jeden vytvořit?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) na blogu týmu Visual Studio Debugger.  
   
 > [!NOTE]
 > Většina nástrojů může shromažďovat informace z výpisu paměti s nebo bez dat kompletní haldy paměti. Analyzátor paměti Visual Studio vyžaduje úplnou haldy informace.  

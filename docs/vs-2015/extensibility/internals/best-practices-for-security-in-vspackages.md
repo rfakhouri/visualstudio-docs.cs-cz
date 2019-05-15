@@ -12,12 +12,12 @@ ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1db578f62e6fe42ba3d74df5870ca727bd884aaf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 940644cd3950c38c6383371c1844b54b328acd0c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772185"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697272"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Osvědčené postupy pro zabezpečení v balíčcích VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,8 +30,8 @@ Chcete-li nainstalovat [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] na své
   
  Uživatelé se ujistěte, že instalace rozšíření VSPackages pouze z důvěryhodných zdrojů. Společnosti vývoj rozšíření VSPackages by měla důrazně název a je podepište, aby bylo zaručeno, že manipulaci je zabráněno. Vývoj rozšíření VSPackages společnosti měli zkontrolovat jejich externí závislosti, jako jsou webové služby a vzdálenou instalaci, vyhodnocení a opravte všechny problémy se zabezpečením.  
   
- Další informace najdete v tématu zabezpečené kódování zásady pro rozhraní .NET Framework ([http://msdn.microsoft.com/library/d55zzx87.aspx](http://msdn.microsoft.com/library/d55zzx87.aspx)).  
+ Další informace najdete v tématu zabezpečené kódování zásady pro rozhraní .NET Framework ([https://msdn.microsoft.com/library/d55zzx87.aspx](https://msdn.microsoft.com/library/d55zzx87.aspx)).  
   
 ## <a name="see-also"></a>Viz také  
- [Zabezpečení doplňku](http://msdn.microsoft.com/library/44a5c651-6246-4310-b371-65378917c799)   
- [DDEX zabezpečení](http://msdn.microsoft.com/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+ [Zabezpečení doplňku](https://msdn.microsoft.com/library/44a5c651-6246-4310-b371-65378917c799)   
+ [DDEX zabezpečení](https://msdn.microsoft.com/44a52a70-5c98-450e-993d-4a3b32f69ba8)

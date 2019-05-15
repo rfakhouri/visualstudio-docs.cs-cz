@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54d64fd59e71b582548aa5efade8d45a24ddb560
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445670"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701159"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
   
 - Komponenty, která používá [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] je nekompatibilní s projektem, který se zaměřuje [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
-     Když vytvoříte novou aplikaci, některé projekty zaměřují [!INCLUDE[net_v45](../includes/net-v45-md.md)] ve výchozím nastavení. Další informace najdete v tématu [rozhraní .NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
+     Když vytvoříte novou aplikaci, některé projekty zaměřují [!INCLUDE[net_v45](../includes/net-v45-md.md)] ve výchozím nastavení. Další informace najdete v tématu [rozhraní .NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 - Můžete byste se vyhnout přidávání odkazů na soubory do výstupů jiného projektu ve stejném řešení, protože to může způsobit chyby kompilace. Místo toho použijte **projekty** karty **přidat odkaz** dialogové okno k vytvoření odkazů typu projekt projekt. Toto usnadňuje vývoj v týmu povolením lepší správy knihoven tříd, které vytvoříte ve svých projektech. Další informace najdete v tématu [řešení potíží s nefunkční odkazy](../ide/troubleshooting-broken-references.md).  
   
@@ -173,7 +173,7 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
 </PropertyGroup>  
 ```  
   
- Je nutné vybrat **Windows** v této podskupině zaškrtávací políčko. Poté budete moci používat elementy prostředí Windows Runtime. Je také vhodné přidat System.Runtime, ve kterém Windows Runtime definuje některé standardní třídy a rozhraní, například rozhraní IEnumerable, které se používají v knihovnách prostředí Windows Runtime. Informace o tom, jak přidat System.Runtime, naleznete v tématu [spravované aplikace klasické pracovní plochy a prostředí Windows Runtime](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
+ Je nutné vybrat **Windows** v této podskupině zaškrtávací políčko. Poté budete moci používat elementy prostředí Windows Runtime. Je také vhodné přidat System.Runtime, ve kterém Windows Runtime definuje některé standardní třídy a rozhraní, například rozhraní IEnumerable, které se používají v knihovnách prostředí Windows Runtime. Informace o tom, jak přidat System.Runtime, naleznete v tématu [spravované aplikace klasické pracovní plochy a prostředí Windows Runtime](https://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
   
 ### <a name="extensions-subgroup"></a>Podskupina Rozšíření  
  Podskupina Rozšíření obsahuje seznam uživatelských sad SDK, které rozšiřují cílenou platformu Windows. Na této kartě se zobrazí pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] pouze pro projekty aplikací. Projekty aplikací pro klasickou plochu tuto kartu nezobrazují, protože používají pouze soubory .winmd první strany.  
@@ -216,5 +216,5 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
  Na panelu hledání v **správce odkazů** dialogové okno funguje na kartě, která je aktivní. Například, pokud uživatel zadá panelu hledání text "Systém" **řešení** má fokus karta, vyhledávání nevrátí žádné výsledky, pokud řešení obsahuje název projektu, který obsahuje "slovo systém".  
   
 ## <a name="see-also"></a>Viz také  
- [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)

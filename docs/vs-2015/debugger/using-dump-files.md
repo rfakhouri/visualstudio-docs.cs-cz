@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3a316006ba8983e00906e041d243d8f7c82d6277
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071769"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684284"
 ---
 # <a name="using-dump-files"></a>Použití souborů výpisu paměti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,11 +76,11 @@ Soubory s výpisem paměti s nebo bez haldy –vytvořte soubor s výpisem, otev
   
 - Visual Studio můžete ladit soubory s výpisem paměti nativních aplikaci ze zařízení ARM. Visual Studio může také ladit soubory s výpisem paměti aplikací spravovaných aplikace ze zařízení ARM, avšak pouze v nativním ladicím programu.  
   
-- Chcete-li ladit [režimu jádra](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) vypsat soubory v sadě Visual Studio 2013, stáhněte si [Windows 8.1 verze z ladění nástroje pro Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Zobrazit [ladění jádra v aplikaci Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+- Chcete-li ladit [režimu jádra](https://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) vypsat soubory v sadě Visual Studio 2013, stáhněte si [Windows 8.1 verze z ladění nástroje pro Windows](https://msdn.microsoft.com/windows/hardware/gg463009). Zobrazit [ladění jádra v aplikaci Visual Studio](https://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
 - Visual Studio nemůže ladit soubory s výpisem paměti uložené ve starším formátu výpisu, známé jako [úplným uživatelským režimem výpisu](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Pamatujte, že výpis paměti s úplným uživatelským režimem není stejný jako výpis s daty haldy.  
   
-- Chcete-li ladit s [SOS.dll (SOS Debugging Extension)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) v sadě Visual Studio, je nutné nainstalovat ladění nástroje pro Windows, který je součástí sad Windows Driver Kit (WDK). Zobrazit [Windows 8.1 Preview: Stažení sad, bitů a nástrojů](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Chcete-li ladit s [SOS.dll (SOS Debugging Extension)](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) v sadě Visual Studio, je nutné nainstalovat ladění nástroje pro Windows, který je součástí sad Windows Driver Kit (WDK). Zobrazit [Windows 8.1 Preview: Stažení sad, bitů a nástrojů](https://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
@@ -91,7 +91,7 @@ Soubory s výpisem paměti s nebo bez haldy –vytvořte soubor s výpisem, otev
   
 - S [ladění za běhu](../debugger/just-in-time-debugging-in-visual-studio.md) povolená, můžete připojit ladicí modul k neúspěšnému procesu, který běží mimo ladicí program a následně uložit soubor s výpisem paměti. Zobrazit [připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
-  Můžete také vytvořit soubory s výpisem paměti pomocí libovolného programu, který podporuje formát minimálního výpisu Windows. Například **Procdump** nástroj příkazového řádku z [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) můžete vytvořit soubory s výpisem paměti při selhání procesu na základě aktivační události nebo na vyžádání. Zobrazit [požadavky a omezení](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) v tomto tématu pro další informace o použití jiných nástrojů pro vytváření souborů s výpisem paměti.  
+  Můžete také vytvořit soubory s výpisem paměti pomocí libovolného programu, který podporuje formát minimálního výpisu Windows. Například **Procdump** nástroj příkazového řádku z [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) můžete vytvořit soubory s výpisem paměti při selhání procesu na základě aktivační události nebo na vyžádání. Zobrazit [požadavky a omezení](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) v tomto tématu pro další informace o použití jiných nástrojů pro vytváření souborů s výpisem paměti.  
   
   ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   

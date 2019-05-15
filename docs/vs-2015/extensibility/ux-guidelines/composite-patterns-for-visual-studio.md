@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 196fc4bddba0cfa6addb786148cd3876e1ec8260
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 55ba291135b41d534d8f91cae5d6257a26d4e34c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430012"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686497"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Složené vzory pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -531,4 +531,4 @@ Složené vzory kombinovat elementy interakce a návrhu v různých konfigurací
 |Další důležité informace|||Vlastní klávesnice na obrazovce|
 
 #### <a name="gestures"></a>Gesta
- Gesta poskytují uživatelům zástupce příkazy, které by jinak vyžadovaly složitější interakce. Další informace naleznete pokyny pro Windows v [gesta dotykového ovládání běžné pro desktopových aplikací](http://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)a postupovat podle těchto pokynů pro většinu gesta, včetně jednoduchá gesta jako je například posouvání a zvětšování.
+ Gesta poskytují uživatelům zástupce příkazy, které by jinak vyžadovaly složitější interakce. Další informace naleznete pokyny pro Windows v [gesta dotykového ovládání běžné pro desktopových aplikací](https://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)a postupovat podle těchto pokynů pro většinu gesta, včetně jednoduchá gesta jako je například posouvání a zvětšování.

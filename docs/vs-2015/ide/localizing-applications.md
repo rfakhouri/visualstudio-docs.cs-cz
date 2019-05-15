@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a412016f2e51415456ee1a86a1b65fccf4d70a9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3d735544e034c397a06ba50e04160323c536b3d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800543"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674993"
 ---
 # <a name="localizing-applications"></a>Lokalizace aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "54800543"
  [Představení mezinárodních aplikací založených na prostředí .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Tento článek popisuje koncepty související s vývojem softwaru pro mezinárodní trh pomocí jazyka Visual Basic nebo Visual C#.  
   
- [Globalizace modelu Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Globalizace modelu Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  Obsahuje odkazy na stránky o vytváření aplikací pro Windows, které podporují více jazykových verzích.  
   
- [Globalizace a lokalizace](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [Globalizace a lokalizace](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  Obsahuje odkazy na stránky o vytváření webových aplikací, které podporují více jazykových verzích.  
   
- [Doporučené postupy pro vývoj aplikací připravených k použití](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Doporučené postupy pro vývoj aplikací připravených k použití](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Obsahuje informace o programování pro mezinárodní cílové skupiny, jako jsou problémy s návrhem a terminologii.

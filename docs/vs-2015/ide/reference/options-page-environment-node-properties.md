@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5c6a2314fe1673efba27d829c1141dcfd5be1cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 64deddd3ae8323298ad04e5a1a3a78e93c21a87a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666816"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674710"
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 ## <a name="import-and-export-settings"></a>Nastavení importu a exportu  
  `DTE.Properties("Environment", "Import and Export Settings")`  
   
-|Název položky vlastnosti|Value|Popis|  
+|Název položky vlastnosti|Hodnota|Popis|  
 |------------------------|-----------|-----------------|  
 |TrackTeamSettings|Get/Set (Boolean)|Použije nastavení v souboru určeném TeamSettingsFile.|  
 |TeamSettingsFile|Získá nebo nastaví (String)|Název souboru, který má nastavení týmu.|  
@@ -110,7 +110,7 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 ## <a name="projects-and-solution"></a>Projekty a řešení  
  `DTE.Properties("Environment", "ProjectsAndSolution")`  
   
-|Název položky vlastnosti|Value|Popis|  
+|Název položky vlastnosti|Hodnota|Popis|  
 |------------------------|-----------|-----------------|  
 |OnRunOrPreview|Získá nebo nastaví (String)|Určuje, zda integrovaného vývojového prostředí všechno, co ukládat před náhledem nebo spuštěním sestavením projektu.|  
 |ProjectsLocation|Získá nebo nastaví (String)|Určuje výchozí adresář kde **přidat projekt** dialogové okno uloží nové projekty.|  
@@ -161,8 +161,8 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |ViewSourceExternalProgram|Získá nebo nastaví (String)|Cesta v prohlížeči externího zdroje.|  
   
 ## <a name="see-also"></a>Viz také  
- [Řízení nastavení možností](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [Určování názvů položky vlastností na stránkách možností](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [Řízení nastavení možností](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Určování názvů položky vlastností na stránkách možností](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Stránka Možnosti, vlastnosti uzlu barev a písem](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Stránka Možnosti, vlastnosti uzlu textového editoru](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)

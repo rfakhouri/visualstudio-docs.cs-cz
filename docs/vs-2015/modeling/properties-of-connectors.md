@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 50e88a37e9d22fa99752864d1acbbeb4d15e6dab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3673a818f9460b8b40bb3fee2dcd5fe65fd02a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758407"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701733"
 ---
 # <a name="properties-of-connectors"></a>Vlastnosti konektorů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,8 +31,8 @@ Konektory představují vztahy domén ve vygenerovaném návrháři.
 |--------------|-----------------|-------------|  
 |Barva|Barva této spojnice.|Black|  
 |Styl přerušování|Styl přerušování čáry této spojnice (plný, Dash, tečka, DashDot, DashDotDot nebo vlastní).|Plná|  
-|Styl počátku|Styl počátku této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádná|  
-|Styl konce|Styl konce této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádná|  
+|Styl počátku|Styl počátku této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádné|  
+|Styl konce|Styl konce této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádný|  
 |Barva textu|Barva, která je použitá pro dekoratéry textu, které jsou spojeny s tímto konektorem.|Black|  
 |Tloušťka|Tloušťka čáry této spojnice v palcích.|0.03125|  
 |Modifikátor přístupu|Úroveň přístupu třídy (`public` nebo `internal`).|Public|  
@@ -41,7 +41,7 @@ Konektory představují vztahy domén ve vygenerovaném návrháři.
 |Má vlastní konstruktor|Pokud `True`, poskytneme vám vlastního konstruktoru ve zdrojovém kódu. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modifikátor dědičnosti|Popisuje druh dědičnosti třídy zdrojový kód, který je generován z konektoru nástroje (`none`, `abstract` nebo `sealed`).|žádná|  
 |Základní spojnice|Základní třída tento konektor.|(žádné)|  
-|Název|Název tohoto konektoru.|Aktuální název|  
+|Name|Název tohoto konektoru.|Aktuální název|  
 |Obor názvů|Obor názvů, který je přidružen s tímto konektorem.|Aktuální obor názvů|  
 |Popis typu|Jak popisek je definován (fixní, proměnná nebo žádný). Pokud pevně daná, a potom hodnoty `Fixed Tooltip Text` vlastnost se používá jako popis tlačítka; Pokud je proměnná, pak popisek je definován ve vlastním kódu.|\<žádné >|  
 |Poznámky|Neformální poznámky, které jsou spojeny s tímto konektorem.|\<žádné >|  
@@ -53,4 +53,4 @@ Konektory představují vztahy domén ve vygenerovaném návrháři.
 |Klíčové slovo nápovědy|Klíčové slovo, je použít k indexování nápovědy klávesy F1 pro tento element.|\<žádné >|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

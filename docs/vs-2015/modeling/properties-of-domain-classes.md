@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a5f2b2fa8c2ff39b0a7ec3e982145567602ab10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c668317fba69100701fac95bfa333ed7b3446488
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767341"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701971"
 ---
 # <a name="properties-of-domain-classes"></a>Vlastnosti tříd domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Doménové třídy mají vlastnosti v následující tabulce. Informace o tříd
 |Má vlastní konstruktor|Pokud `True`, poskytneme vám vlastního konstruktoru ve zdrojovém kódu. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|  
 |Modifikátor dědičnosti|Popisuje druh dědičnosti třídy zdrojový kód, který je generován z doménové třídy (`none`, `abstract` nebo `sealed`).|`none`|  
 |Základní třída|Pokud je toto doménová třída odvozena, název základní třídy.|\<žádné >|  
-|Název|Název třídy této domény.|Aktuální název|  
+|Name|Název třídy této domény.|Aktuální název|  
 |Obor názvů|Obor názvů této doménové třídy.|Aktuální obor názvů|  
 |Poznámky|Neformální poznámky, které jsou přidružené k této doménové třídě.|\<žádné >|  
 |Popis|Popis, který se používá k dokumentu uživatelského rozhraní vygenerovaného návrháře.|\<žádné >|  
@@ -39,4 +39,4 @@ Doménové třídy mají vlastnosti v následující tabulce. Informace o tříd
 |Klíčové slovo nápovědy|Nepovinné klíčové slovo, je použít k indexování nápovědy klávesy F1 pro tuto doménovou třídu.|\<žádné >|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

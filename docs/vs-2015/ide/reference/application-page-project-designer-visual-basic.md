@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9979283258611b38e894c08446352082bcc7134e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433749"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688097"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Stránka Aplikace, návrhář projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Použití **aplikace** stránky Návrháře projektu k určení nastavení aplik
  Tyto možnosti umožňují nakonfigurovat obecná nastavení pro aplikaci.  
   
  **Název sestavení**  
- Určuje název výstupního souboru, který bude obsahovat manifest sestavení. Pokud změníte tuto vlastnost **název výstupního** vlastnost se také změní. Můžete také provedení této změny na příkazovém řádku s použitím [/out (Visual Basic)](http://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae). Informace o tom, jak programově přístup k této vlastnosti naleznete v tématu <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Určuje název výstupního souboru, který bude obsahovat manifest sestavení. Pokud změníte tuto vlastnost **název výstupního** vlastnost se také změní. Můžete také provedení této změny na příkazovém řádku s použitím [/out (Visual Basic)](https://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae). Informace o tom, jak programově přístup k této vlastnosti naleznete v tématu <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **Kořenový obor názvů**  
  Určuje základní obor názvů pro všechny soubory v projektu. Například, pokud jste nastavili **kořenové Namespace** k `Project1` a máte `Class1` mimo libovolný obor názvů ve vašem kódu, jeho obor názvů by `Project1.Class1`. Pokud máte `Class2` v oboru názvů `Order` v kódu, jeho obor názvů by `Project1.Order.Class2`.  
@@ -43,11 +43,11 @@ Použití **aplikace** stránky Návrháře projektu k určení nastavení aplik
  Pokud zrušíte výběr **kořenové Namespace**, obor názvů strukturu projektu můžete zadat v kódu.  
   
 > [!NOTE]
-> Pokud používáte Global – klíčové slovo v [příkaz Namespace](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), můžete definovat obor názvů mimo kořenový obor názvů vašeho projektu. Pokud zrušíte výběr **kořenové Namespace**, `Global` stane oboru nejvyšší úrovně, která eliminuje potřebu `Global` – klíčové slovo v `Namespace` příkaz. Další informace najdete v tématu "Globální – klíčové slovo v Namespace příkazy" v [obory názvů v jazyce Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
+> Pokud používáte Global – klíčové slovo v [příkaz Namespace](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), můžete definovat obor názvů mimo kořenový obor názvů vašeho projektu. Pokud zrušíte výběr **kořenové Namespace**, `Global` stane oboru nejvyšší úrovně, která eliminuje potřebu `Global` – klíčové slovo v `Namespace` příkaz. Další informace najdete v tématu "Globální – klíčové slovo v Namespace příkazy" v [obory názvů v jazyce Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
   
- Informace o tom, jak vytvořit obory názvů ve vašem kódu, naleznete v tématu [příkaz Namespace](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
+ Informace o tom, jak vytvořit obory názvů ve vašem kódu, naleznete v tématu [příkaz Namespace](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
   
- Další informace o vlastnosti kořenový obor názvů najdete v tématu [/RootNamespace](http://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783).  
+ Další informace o vlastnosti kořenový obor názvů najdete v tématu [/RootNamespace](https://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783).  
   
  Informace o tom, jak programově přístup k této vlastnosti naleznete v tématu <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
@@ -71,10 +71,10 @@ Použití **aplikace** stránky Návrháře projektu k určení nastavení aplik
 > [!NOTE]
 > Modul Windows Runtime můžete promítnout typy tak, aby byly zobrazeny jako nativních objektů v libovolný preferovaný jazyk je využívá. Například použít jako sadu JavaScript – objekty jazyka JavaScript aplikace, které spolupracují s modulem Windows Runtime a aplikace C# použít knihovnu jako kolekce objektů .NET. Díky balení výstup projektu jako soubor WinMD, můžete využívat stejné technologie, která používá prostředí Windows Runtime.  
   
- Další informace o **typ aplikace** vlastnost, naleznete v tématu [/Target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Informace o tom, jak programově přístup k této vlastnosti naleznete v tématu <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Další informace o **typ aplikace** vlastnost, naleznete v tématu [/Target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Informace o tom, jak programově přístup k této vlastnosti naleznete v tématu <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Ikona**  
- Nastavuje soubor .ico, který chcete použít jako ikona programu. Vyberte  **\<Procházet... >** k vyhledání existujícího obrázku. Zobrazit [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (nebo [/win32icon (možnosti kompilátoru C#)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)) pro další informace. Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ Nastavuje soubor .ico, který chcete použít jako ikona programu. Vyberte  **\<Procházet... >** k vyhledání existujícího obrázku. Zobrazit [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (nebo [/win32icon (možnosti kompilátoru C#)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)) pro další informace. Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Úvodní formulář nebo spouštěcí objekt / spouštěcí identifikátor URI**  
  Určuje formuláře nebo vstupní bod při spuštění aplikace.  
@@ -85,7 +85,7 @@ Použití **aplikace** stránky Návrháře projektu k určení nastavení aplik
   
  Pokud **Povolit aplikační framework** není zaškrtnuto, tento seznam bude **spouštěcí objekt** a zobrazuje formuláře a tříd nebo moduly s `Sub Main`.  
   
- **Spouštěcí objekt** definuje vstupní bod, který bude volán při načtení aplikace. Obecně je nastavené na hodnotu hlavního formuláře v aplikaci nebo na `Sub Main` proceduru, která se má spustit při spuštění aplikace. Vzhledem k tomu, že nemá vstupní bod knihovny tříd, jejich jedinou možností pro tuto vlastnost je **(žádný)**. Další informace najdete v tématu [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ **Spouštěcí objekt** definuje vstupní bod, který bude volán při načtení aplikace. Obecně je nastavené na hodnotu hlavního formuláře v aplikaci nebo na `Sub Main` proceduru, která se má spustit při spuštění aplikace. Vzhledem k tomu, že nemá vstupní bod knihovny tříd, jejich jedinou možností pro tuto vlastnost je **(žádný)**. Další informace najdete v tématu [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
  **Informace o sestavení**  
  Kliknutím na toto tlačítko Zobrazit [dialogové okno informace o sestavení](../../ide/reference/assembly-information-dialog-box.md).  
@@ -110,7 +110,7 @@ Použití **aplikace** stránky Návrháře projektu k určení nastavení aplik
  Následující nastavení jsou dostupná **vlastnosti rozhraní framework aplikace Windows** oddílu. Tyto možnosti jsou dostupné pouze tehdy, pokud **Povolit aplikační framework** je zaškrtnuto políčko. Popisuje části následující za touto možností **vlastnosti rozhraní framework aplikace Windows** nastavení pro aplikace Windows Presentation Foundation (WPF).  
   
  **Povolení vizuálních stylů XP**  
- Povolí nebo zakáže vizuálních stylů Windows XP, označované také jako *Windows XP motivy*. Vizuální styly Windows XP povolit, například ovládací prvky s oblých rohů a dynamické barvy. Výchozí hodnota je povolená. Další informace o vizuálních stylů Windows XP, naleznete v tématu [funkce Windows XP a ovládací prvky Windows Forms](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Povolí nebo zakáže vizuálních stylů Windows XP, označované také jako *Windows XP motivy*. Vizuální styly Windows XP povolit, například ovládací prvky s oblých rohů a dynamické barvy. Výchozí hodnota je povolená. Další informace o vizuálních stylů Windows XP, naleznete v tématu [funkce Windows XP a ovládací prvky Windows Forms](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
   
  **Ujistěte se, jedna instance aplikace**  
  Zaškrtněte toto políčko, pokud chcete zabránit uživatelům ve spouštění více instancí aplikace. Ve výchozím nastavení toto políčko není zaškrtnuto. Toto nastavení umožňuje několik instancí aplikace ke spuštění.  
@@ -159,4 +159,4 @@ Použití **aplikace** stránky Návrháře projektu k určení nastavení aplik
  <xref:System.Windows.Application> Objekt vyvolává události, když dojde k určitým změnám stavu aplikace (třeba na spuštění aplikace nebo ukončení). Úplný seznam událostí, které tato třída zveřejňuje najdete v tématu <xref:System.Windows.Application>. Tyto události jsou zpracovány v oddíle kód uživatele `Application` částečné třídy.  
   
 ## <a name="see-also"></a>Viz také  
-[Správa vlastností aplikace](../../ide/application-properties.md) [psaní kódu v řešeních pro systém Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[Správa vlastností aplikace](../../ide/application-properties.md) [psaní kódu v řešeních pro systém Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

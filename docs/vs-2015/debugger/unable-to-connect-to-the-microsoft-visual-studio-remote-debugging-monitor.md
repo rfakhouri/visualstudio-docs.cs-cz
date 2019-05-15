@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db946e2dfac035a8e0ddb5581c37e36b0406fb24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d604c8505612ff2c33e4b14241288358f920c2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437781"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684836"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nepodařilo se připojit ke sledování Microsoft Visual Studio Remote Debugging Monitor.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63437781"
 Tato chybová zpráva se zobrazí, když zadáte neplatný název v aplikaci Visual Studio Remote Debugging Monitor **připojit k procesu** dialogové okno. Název sledování vzdáleného ladění, je obvykle stejný jako počítač, který se pokoušíte připojit ke vzdálenému ladění. Tato zpráva může dojít, protože vzdálený počítač v síti neexistuje, sledování vzdáleného ladění není správně nastavena na vzdáleném počítači nebo vzdálený počítač není dostupný kvůli potížím se sítí nebo přítomnost brány firewall.  
   
 > [!IMPORTANT]
-> Pokud si myslíte, že tato zpráva zobrazila z důvodu chyby produktu, ohlaste prosím tento problém se sadou Visual Studio [poslat smajlíka](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Pokud potřebujete další pomoc, přečtěte si téma [kontaktujte nás](../ide/talk-to-us.md) způsoby, jak kontaktovat Microsoft.  
+> Pokud si myslíte, že tato zpráva zobrazila z důvodu chyby produktu, ohlaste prosím tento problém se sadou Visual Studio [poslat smajlíka](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Pokud potřebujete další pomoc, přečtěte si téma [kontaktujte nás](../ide/talk-to-us.md) způsoby, jak kontaktovat Microsoft.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Tato zpráva zobrazila, když mi bylo místním ladění  
  Pokud se tato zpráva se zobrazuje při ladění místně, může být na straně zmocnitele antivirový software nebo brány firewall třetích stran. Visual Studio je 32bitová aplikace, aby používalo 64bitovou verzi vzdáleného ladicího programu pro ladění 64bitových aplikací. Dva procesy komunikovat prostřednictvím místní sítě v místním počítači. Žádné síťové přenosy nechá počítač, ale je možné, že zabezpečovací software třetí strany může blokovat komunikaci.  

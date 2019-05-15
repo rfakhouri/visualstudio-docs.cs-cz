@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7a3d731939f7497faa9c767e02e404c5ac75518
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fb9ed333a5e7719b98a3030ba398ad06208781c6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405916"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682146"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Postupy: Výhradní používání klávesnice
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63405916"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] poskytuje mnoho výchozí kombinace klávesových zkratek, které k tomu, aby k procházení a kódu v rámci integrovaného vývojového prostředí (IDE). Úplný seznam klávesových zkratek v sadě Visual Studio najdete v tématu [výchozí klávesové zkratky](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informace o klávesových zkratek, které jsou k dispozici pro ostatní produkty Microsoftu, najdete v části [ http://www.microsoft.com/enable/products/keyboard.aspx ](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="toolbox-controls"></a>Ovládací prvky panelu nástrojů  
  Můžete přidat ovládací prvek na panelu nástrojů do formuláře nebo klávesnice pomocí návrháře.  

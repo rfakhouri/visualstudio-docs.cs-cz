@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 671b9f9f851ee1c326f9d8cc2ea50d1f542ec00f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f43187faf1dd53cc9daf45da1191e1e944a43c8a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540310"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696297"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ Pomocí těchto tipů můžete rychleji a efektivněji psaní, navigace a laděn
 ## <a name="BKMK_Debugging"></a> Ladění kódu
  Ladění může spotřebovat spoustu času, ale následující tipy vám pomůžou zrychlit proces.
 
-- **Testování stejnou stránku, aplikaci nebo web v různých prohlížečích**. Při ladění kódu můžete snadno přepínat mezi nainstalovanými webovými prohlížeči, včetně [nástroj Page Inspector (Visual Studio)](http://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), aniž byste museli otevřít **procházet s** dialogové okno. Můžete použít **cíl ladění** seznam, který se nachází na **standardní** nástrojů vedle položky **spustit ladění** tlačítko pro rychlé kontrole aktuálně používaného ladění webového prohlížeče nebo zobrazení stránek.
+- **Testování stejnou stránku, aplikaci nebo web v různých prohlížečích**. Při ladění kódu můžete snadno přepínat mezi nainstalovanými webovými prohlížeči, včetně [nástroj Page Inspector (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), aniž byste museli otevřít **procházet s** dialogové okno. Můžete použít **cíl ladění** seznam, který se nachází na **standardní** nástrojů vedle položky **spustit ladění** tlačítko pro rychlé kontrole aktuálně používaného ladění webového prohlížeče nebo zobrazení stránek.
 
      ![Vyberte možnosti ladění webového prohlížeče](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 

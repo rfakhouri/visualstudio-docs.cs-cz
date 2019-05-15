@@ -13,19 +13,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a17db8fbdb281139ba095070130e6c608954b5a7
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64878174"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676283"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Postupy: Konfigurace analýzy kódu pro projekt spravovaného kódu
+# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>Postupy: Konfigurace statické analýzy kódu pro spravovaný kód
 
 V sadě Visual Studio, můžete ze seznamu analýzy kódu [sad pravidel](../code-quality/rule-set-reference.md) má použít pro spravovaný projekt kódu. Ve výchozím nastavení **Microsoft Minimální doporučená pravidla** je vybraná sada pravidel, můžete ale použít jinou sadu v případě potřeby pravidel. Sady pravidel lze použít na jeden nebo více projektů v řešení.
 
-> [!TIP]
-> Informace o tom, jak nakonfigurovat sadu pravidel pro webové aplikace ASP.NET najdete v tématu [jak: Konfigurace analýzy kódu pro ASP.NET web Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+Informace o tom, jak nakonfigurovat sadu pravidel pro webové aplikace ASP.NET najdete v tématu [jak: Konfigurace analýzy kódu pro ASP.NET web Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+
+> [!NOTE]
+> Tento článek se týká pro statickou analýzu kódu a nikoli k [analyzátory Roslyn](use-roslyn-analyzers.md), které nechcete spustit analýzu kódu po sestavení.
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Chcete-li konfigurovat sadu pravidel pro projekt rozhraní .NET Framework
 

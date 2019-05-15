@@ -13,17 +13,17 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 616a46b4d8349bd2c385fda0dd36e6dc69fa60af
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dbcc8f31d00c270cf0eb9af8d3283a8674a639e3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663869"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703709"
 ---
 # <a name="assembly-information-dialog-box"></a>Dialogové okno Informace o sestavení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-**Informace o sestavení** dialogové okno se používá k určení hodnoty [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] globálního sestavení atributy, které jsou uloženy v souboru AssemblyInfo automaticky vytvořené pomocí projektu. V **Průzkumníku řešení**, soubor se nachází v **Můj projekt** uzel v [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] (klikněte na tlačítko **zobrazit všechny soubory** zobrazíte jeho); je umístěn v rámci  **Vlastnosti** v [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Další informace o atributech sestavení naleznete v tématu [atributy](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).  
+**Informace o sestavení** dialogové okno se používá k určení hodnoty [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] globálního sestavení atributy, které jsou uloženy v souboru AssemblyInfo automaticky vytvořené pomocí projektu. V **Průzkumníku řešení**, soubor se nachází v **Můj projekt** uzel v [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] (klikněte na tlačítko **zobrazit všechny soubory** zobrazíte jeho); je umístěn v rámci  **Vlastnosti** v [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Další informace o atributech sestavení naleznete v tématu [atributy](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).  
   
  Pro přístup k tomuto dialogovému oknu, vyberte uzel projektu v **Průzkumníka řešení**a potom na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **aplikace** kartu. Na **aplikace** stránky, klikněte na tlačítko **informace o sestavení** tlačítko.  
   
@@ -63,4 +63,4 @@ ms.locfileid: "59663869"
   
 ## <a name="see-also"></a>Viz také  
  [Stránka aplikace, Návrhář projektu (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)   
- [Atributy](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+ [Atributy](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6c572d76389c5914f4a9b01b82677449ec1db28b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d3624fd8b69a51d3d9de1776bc6d2e7bc61a4c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097164"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696181"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) s aplikacemi Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho aktivit více než jen ps
  V tabulce dole najdete identifikuje jak Visual Studio ALM funkce použít nebo nemůžete použít při práci s Unity. Naleznete v dokumentaci propojené informace o funkcích, sami.  
   
 ## <a name="agile-tools"></a>Agilní nástroje  
- Referenční odkaz: **[Pracovní](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (pomocí Visual Studio Team Services nebo TFS, včetně Team Explorer Everywhere)  
+ Referenční odkaz: **[Pracovní](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (pomocí Visual Studio Team Services nebo TFS, včetně Team Explorer Everywhere)  
   
  Obecné komentáře: všechny plánování a sledování funkce jsou nezávislé na typu projektu a kódování jazyky.  
   
@@ -58,9 +58,9 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho aktivit více než jen ps
   
 |Funkce|Podporované v Unity|Další komentáře|  
 |-------------|--------------------------|-------------------------|  
-|[Použití správy verzí Team Foundation](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) nebo Visual Studio Team Services|Ano|Projekty Unity jsou jednoduše kolekce souborů, které jde umístit do systémů správy verzí, stejně jako libovolný jiný projekt, ale existuje několik důležitých popsané za touto tabulkou.|  
-|[Začínáme s úložištěm Git ve službě Team Services](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Ano|Pod tabulkou naleznete v poznámkách.|  
-|[Kód analýzy/zlepšení kvality kódu (odkazy, navrhované změny, atd.)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Ano||  
+|[Použití správy verzí Team Foundation](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) nebo Visual Studio Team Services|Ano|Projekty Unity jsou jednoduše kolekce souborů, které jde umístit do systémů správy verzí, stejně jako libovolný jiný projekt, ale existuje několik důležitých popsané za touto tabulkou.|  
+|[Začínáme s úložištěm Git ve službě Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Ano|Pod tabulkou naleznete v poznámkách.|  
+|[Kód analýzy/zlepšení kvality kódu (odkazy, navrhované změny, atd.)](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Ano||  
 |[Nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md)|Ano||  
 |[Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)|Ano||  
   
@@ -73,18 +73,18 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho aktivit více než jen ps
 3. Binární prostředky v Unity projektu – například textury nebo zvukové soubory, může trvat až velké množství úložiště. Různé systémy správy zdrojového kódu jako je Git uložit kopii soubor pro každé změny, který je vytvořen, jedinečný i v případě, že tato změna má vliv pouze malou část souboru. To může způsobit opakovaném úložiště Git. Z toho vývojářům Unity často se je rozhodnete pouze konečný prostředky přidejte do své úložiště a použít jiný způsob uchování historie pracovní svých prostředků, jako je například OneDrive, DropBox nebo git přílohy. Tento přístup funguje, protože tyto prostředky většinou nemusí být označené verzí společně se změnami zdrojového kódu. Vývojáři také běžně nastaven režim serializace Asset editoru projektu na platnost Text k ukládání souborů scény v textu, nikoli binární formát, který umožňuje sloučení ve správě zdrojového kódu. Podrobnosti najdete v tématu [nastavení editoru](http://docs.unity3d.com/Manual/class-EditorManager.html) (dokumentace k Unity).  
   
 ## <a name="build"></a>Sestavení  
- Referenční odkaz: **[Sestavení](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Referenční odkaz: **[Sestavení](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Funkce|Podporované v Unity|Další komentáře|  
 |-------------|--------------------------|-------------------------|  
 |Na místním serveru TFS|Je to možné|Projekty Unity jsou integrované prostřednictvím prostředí Unity a ne prostřednictvím sady Visual Studio sestavovacího systému (sestavení v rámci Visual Studio Tools pro Unity se zkompilovat skripty, ale výsledkem není spustitelný soubor). Je možné [sestavování projektů Unity z příkazového řádku](http://docs.unity3d.com/Manual/CommandLineArguments.html) (dokumentace k Unity), takže je možné nakonfigurovat procesu MSBuild na serveru TFS k provedení příslušné Unity příkazy, za předpokladu, že Unity samotného je nainstalovaný na Tento počítač.<br /><br /> Unity nabízí také [sestavení Unity cloudu](https://build.cloud.unity3d.com/landing/), který sleduje úložiště Git nebo SVN a spouští pravidelná sestavení. V současné době to nebude fungovat s verzí Team Foundation nebo Visual Studio Team Services.|  
-|Místní server sestavení propojené s Visual Studio Team Services|Je to možné|Zadaný stejných podmínek jako výše je dál možné přímé sestavení vyvolané prostřednictvím Visual Studio Team Services v místním počítači TFS.  Zobrazit [server sestavení](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) pokyny.|  
+|Místní server sestavení propojené s Visual Studio Team Services|Je to možné|Zadaný stejných podmínek jako výše je dál možné přímé sestavení vyvolané prostřednictvím Visual Studio Team Services v místním počítači TFS.  Zobrazit [server sestavení](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) pokyny.|  
 |Hostovaný kontroler služby Visual Studio Team Services|Ne|Unity sestavení nejsou v současné době nepodporují.|  
 |Vytvoření definice s předběžné a pozálohovacích skriptů|Ano|Definice vlastního sestavení, která používá Unity příkazový řádek pro spuštění sestavení můžete také nakonfigurovat pro skripty před a po sestavení.|  
 |Průběžná integrace, včetně hlídané vrácení se změnami se|Ano|Ověřované vrácení se změnami se pro TFVC pouze, jak Git funguje na modelu žádosti o přijetí změn spíše než vrácení se změnami.|  
   
 ## <a name="testing"></a>Testování  
- Referenční odkaz: **[Testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Referenční odkaz: **[Testování aplikace](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Funkce|Podporované v Unity|Další komentáře|  
 |-------------|--------------------------|-------------------------|  
@@ -96,12 +96,12 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho aktivit více než jen ps
 |[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)|Ne|Programové testy uživatelského rozhraní závisí na čitelné ovládací prvky v Uživatelském rozhraní aplikace; Jsou ze své podstaty grafické aplikace Unity a proto není čitelný pomocí nástroje test uživatelského rozhraní pro obsah.|  
   
 ## <a name="improve-code-quality"></a>Zlepšení kvality kódu  
- Referenční odkaz: **[Zlepšení kvality kódu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Referenční odkaz: **[Zlepšení kvality kódu](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Funkce|Podporované v Unity|Další komentáře|  
 |-------------|--------------------------|-------------------------|  
 |[Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|  
-|[Hledání duplicitního kódu pomocí zjišťování klonování kódu](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|  
+|[Hledání duplicitního kódu pomocí zjišťování klonování kódu](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|  
 |[Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|  
 |[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ne|Použití [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity webu).|  
 |[Analýza problémů paměti rozhraní .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Ne|Nástroje sady Visual Studio nemusí háky do Mono framework (jako Unity) pro profilování. Použití [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (dokumentace k Unity).|  

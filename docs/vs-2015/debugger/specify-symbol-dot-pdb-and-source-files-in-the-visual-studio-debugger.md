@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 23c570e9d29c2288da32469b524c5e4d9125b097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447298"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694912"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Zadání symbolu (.pdb) a zdrojových souborů v ladicím programu sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,10 +94,10 @@ Souboru databáze (PDB) program, nazývaný také soubor symbolů, mapuje identi
 
    Při výběru načte exportní tabulky knihovny DLL. Symbolické informace z tabulky exportu knihovny DLL mohou být užitečné, pokud pracujete se zprávami systému Windows, postupy systému Windows (WindowProcs), objekty COM nebo zařazování nebo libovolnou knihovnou DLL pro kterou nemáte symboly. Informace o exportu knihovny DLL pro čtení zahrnují nadměrné zatížení. Proto tato možnost je ve výchozím nastavení vypnuta.
 
-   Chcete-li zjistit, jaké symboly jsou k dispozici v exportní tabulce knihovny DLL, použijte `dumpbin /exports`. Symboly jsou k dispozici pro všechny 32bitové systémové knihovny DLL. V článku `dumpbin /exports` výstupu uvidíte přesný název funkce, včetně jiných než alfanumerických znaků. To je užitečné pro nastavení zarážky na funkci. Názvy funkcí z tabulky exportu knihovny DLL se mohou jinde v ladícím programu zobrazit ořezané. Volání jsou uvedena v pořadí volání s aktuální funkcí (nejhlouběji vnořených) nahoře. Další informace najdete v tématu [dumpbin/EXPORTS](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
+   Chcete-li zjistit, jaké symboly jsou k dispozici v exportní tabulce knihovny DLL, použijte `dumpbin /exports`. Symboly jsou k dispozici pro všechny 32bitové systémové knihovny DLL. V článku `dumpbin /exports` výstupu uvidíte přesný název funkce, včetně jiných než alfanumerických znaků. To je užitečné pro nastavení zarážky na funkci. Názvy funkcí z tabulky exportu knihovny DLL se mohou jinde v ladícím programu zobrazit ořezané. Volání jsou uvedena v pořadí volání s aktuální funkcí (nejhlouběji vnořených) nahoře. Další informace najdete v tématu [dumpbin/EXPORTS](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
 
 ### <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Použít servery symbolů ke hledání souborů symbolů nenainstalovaných v místním počítači
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] může stáhnout soubory symbolu ladění ze serverů symbolů, které implementují protokol symsrv. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) a [ladění nástroje pro Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) jsou dva nástroje, které implementují servery symbolů. Zadejte symbolové servery k použitím v VS **možnosti** dialogové okno.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] může stáhnout soubory symbolu ladění ze serverů symbolů, které implementují protokol symsrv. [Visual Studio Team Foundation Server](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) a [ladění nástroje pro Windows](https://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) jsou dva nástroje, které implementují servery symbolů. Zadejte symbolové servery k použitím v VS **možnosti** dialogové okno.
 
  Mezi servery se symboly, které můžete použít, patří:
 
@@ -165,9 +165,9 @@ Souboru databáze (PDB) program, nazývaný také soubor symbolů, mapuje identi
 
  **Možnosti jazyka C++**
 
- Soubor databáze programu (PDB) uchovává informace o ladění a stavu projektu, které umožňují přírůstkové propojení konfigurace ladění programu. Soubor PDB je vytvořen při sestavení s [příznakem/zi nebo /Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (pro C/C++).
+ Soubor databáze programu (PDB) uchovává informace o ladění a stavu projektu, které umožňují přírůstkové propojení konfigurace ladění programu. Soubor PDB je vytvořen při sestavení s [příznakem/zi nebo /Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (pro C/C++).
 
- V [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], [/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) možnost pojmenuje soubor .pdb vytvořený kompilátorem. Při vytváření projektu v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pomocí průvodců **/Fd** je možnost nastavená na vytvoření souboru .pdb s názvem *projektu*.pdb.
+ V [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], [/Fd](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) možnost pojmenuje soubor .pdb vytvořený kompilátorem. Při vytváření projektu v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pomocí průvodců **/Fd** je možnost nastavená na vytvoření souboru .pdb s názvem *projektu*.pdb.
 
  Pokud vytváříte aplikaci C/C++ pomocí souboru pravidel a zadáte **/zi** nebo **/zi** bez **/Fd**, skončíte se dvěma soubory PDB:
 
@@ -183,7 +183,7 @@ Souboru databáze (PDB) program, nazývaný také soubor symbolů, mapuje identi
 
   **Možnosti rozhraní .NET framework**
 
-  Soubor databáze programu (PDB) uchovává informace o ladění a stavu projektu, které umožňují přírůstkové propojení konfigurace ladění programu. Soubor PDB je vytvořen při sestavení s **/debug**. Můžete vytvářet aplikace pomocí **/Debug: Full** nebo **/debug:pdbonly**. Sestavování s **/Debug: Full** generuje laditelný kód. Sestavování s **/debug:pdbonly** generuje soubory PDB ale negeneruje `DebuggableAttribute` , který instruuje kompilátor JIT, že je k dispozici informace o ladění. Použití **/debug:pdbonly** Pokud chcete generovat soubory .pdb pro sestavení pro vydání, které nemá být laditelná. Další informace najdete v tématu [/Debug (možnosti kompilátoru C#)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) nebo [/Debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
+  Soubor databáze programu (PDB) uchovává informace o ladění a stavu projektu, které umožňují přírůstkové propojení konfigurace ladění programu. Soubor PDB je vytvořen při sestavení s **/debug**. Můžete vytvářet aplikace pomocí **/Debug: Full** nebo **/debug:pdbonly**. Sestavování s **/Debug: Full** generuje laditelný kód. Sestavování s **/debug:pdbonly** generuje soubory PDB ale negeneruje `DebuggableAttribute` , který instruuje kompilátor JIT, že je k dispozici informace o ladění. Použití **/debug:pdbonly** Pokud chcete generovat soubory .pdb pro sestavení pro vydání, které nemá být laditelná. Další informace najdete v tématu [/Debug (možnosti kompilátoru C#)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) nebo [/Debug (Visual Basic)](https://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
 
   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Ladicí program používá cestu k souboru .pdb v souboru EXE nebo DLL k vyhledání souboru project.pdb. Pokud ladicí program nemůže najít soubor PDB na tomto místě nebo je-li cesta neplatná, ladicí program hledá cestu, která obsahuje soubor EXE, a poté cesty symbolů zadané v **možnosti** dialogové okno. Tato cesta je obvykle **ladění** složky **symboly** uzlu. Ladicí program nenačte soubor .pdb, který neodpovídá laděnému spustitelnému souboru. Pokud ladicí program nemůže najít soubor .pdb **najít symboly** se zobrazí dialogové okno, které umožňuje hledat symboly nebo přidat další umístění pro cestu hledání.
 

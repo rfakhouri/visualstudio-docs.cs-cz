@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f539fd0a20bf852b04b5a41aff829cdcf0e52cf3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0aa4646bd9d3295aaa2a9da49cc4ed6f057d91a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445923"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695165"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Použití pokrytí kódu k určení rozsahu testovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  Je také možné získat větší kontrolu nad sestaveními a prvky vybranými pro analýzu pokrytí kódu vytvořením souboru .runsettings. Je tak například možné vyloučit určitá sestavení bez nutnosti přidávání atributů jejich třídám. Další informace najdete v tématu [přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md).  
   
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>Analýza pokrytí kódu ve službě sestavení  
- Při vrácení kódu se změnami jsou testy spuštěny na serveru sestavení společně se všemi dalšími testy ostatních členů týmu. (Pokud jste ještě nenastavili to, přečtěte si téma [spuštění testů v procesu sestavení](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Je užitečné analyzovat pokrytí kódu na službě sestavení, protože to poskytuje nejaktuálnější a nejsrozumitelnější obraz o pokrytí celého projektu. Takový postup bude také zahrnovat automatizované systémové testy a další kódované testy, které nejsou obvykle spouštěny na počítačích vývojářů.  
+ Při vrácení kódu se změnami jsou testy spuštěny na serveru sestavení společně se všemi dalšími testy ostatních členů týmu. (Pokud jste ještě nenastavili to, přečtěte si téma [spuštění testů v procesu sestavení](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Je užitečné analyzovat pokrytí kódu na službě sestavení, protože to poskytuje nejaktuálnější a nejsrozumitelnější obraz o pokrytí celého projektu. Takový postup bude také zahrnovat automatizované systémové testy a další kódované testy, které nejsou obvykle spouštěny na počítačích vývojářů.  
   
 1. V Průzkumníku týmových projektů otevřete **sestavení**a poté přidejte nebo upravte definici sestavení.  
   
@@ -265,7 +265,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
    Když sestavení proběhne, jsou výsledků pokrytí kódu připojeny k testovacímu běhu a zobrazí se v přehledu sestavení.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analýza pokrytí kódu v příkazovém řádku  
- Pro spuštění testů z příkazového řádku se používá příkaz vstest.console.exe. Pokrytí kódu je jednou z možností tohoto nástroje. Další informace najdete v tématu [možnosti příkazového řádku VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  
+ Pro spuštění testů z příkazového řádku se používá příkaz vstest.console.exe. Pokrytí kódu je jednou z možností tohoto nástroje. Další informace najdete v tématu [možnosti příkazového řádku VSTest.Console.exe](https://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  
   
 1. Spusťte příkazový řádek pro vývojáře v sadě Visual Studio:  
   

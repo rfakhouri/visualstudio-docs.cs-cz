@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eeb5d06b0e689391f450fec8744fa58a41f4508
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838673"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681544"
 ---
 # <a name="managing-the-toolbox"></a>Správa sady nástrojů
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Umožňuje VSPackage, například návrháři nebo editoru pro správu členství a vzhled **nástrojů**.  
   
- Kromě toho **nástrojů** samotný můžete spravovat pomocí služby automation. Další informace o správě nástrojů díky automatizaci, naleznete v tématu [jak: Řízení panelu nástrojů](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Kromě toho **nástrojů** samotný můžete spravovat pomocí služby automation. Další informace o správě nástrojů díky automatizaci, naleznete v tématu [jak: Řízení panelu nástrojů](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Výběr karty automatické sady nástrojů  
  Konkrétní **nástrojů** kartu nebo kategorie automaticky provádět aktivní na základě toho, jaké editoru nebo návrháře aktuálně aktivní. Například pokud je aktivovaná Návrháře formulářů, můžete **všechny formuláře Windows** vybraná karta.  
@@ -51,7 +51,7 @@ ms.locfileid: "62838673"
   
 - VSPackage musí buď použijte <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> můžete přidat ovládací prvky nebo hostování ovládacího prvku v ovládacím prvku obálky, která je odvozena z <xref:System.Windows.Forms.AxHost>.  
   
-   Visual Studio poskytuje `Aximp.exe` nástroj pro automatizaci zabalení ovládacího prvku ActiveX v ovládacím prvku odvozený od <xref:System.Windows.Forms.AxHost>. Další informace najdete v tématu [Aximp.exe (Importér ovládacích prvků ActiveX formulářů Windows)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Visual Studio poskytuje `Aximp.exe` nástroj pro automatizaci zabalení ovládacího prvku ActiveX v ovládacím prvku odvozený od <xref:System.Windows.Forms.AxHost>. Další informace najdete v tématu [Aximp.exe (Importér ovládacích prvků ActiveX formulářů Windows)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>, a <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> jsou k dispozici prostřednictvím sestavení vzájemné spolupráce COM rozhraní.  
   

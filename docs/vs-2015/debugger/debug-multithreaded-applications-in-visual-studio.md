@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8cb43c9a32f3dfd0a6383d466f7cd283acf0ab3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054297"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691284"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Ladění vícevláknových aplikací v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Vlákno je řada pokynů, pro které operační systém přiděluje čas proceso
 
  Kromě toho multithreading přináší některé nové typy možných chyb. Často například dvě nebo více vláken mít přístup ke stejnému prostředku, ale pouze jedno vlákno může bezpečně přistupovat k prostředku najednou. Některé forma vzájemného vyloučení je nezbytné, abyste měli jistotu, že pouze jedno vlákno k prostředku najednou. Pokud nesprávně provedeného vzájemného vyloučení můžete vytvořit *zablokování* podmínky, kdy žádné vlákno nelze spustit. Zablokování může být zásadním problémem při ladění.
 
- Visual Studio poskytuje **vlákna** oken, okno vlákna GPU, okno paralelního sledování a další funkce, které bylo vícevláknové ladění snazší. Tyto postupy je nejlepší způsob, jak Další informace o funkcích vláken. Zobrazit [názorný postup: Ladění vícevláknových aplikacích](../debugger/walkthrough-debugging-a-multithreaded-application.md) a [názorný postup: Ladění aplikace C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
+ Visual Studio poskytuje **vlákna** oken, okno vlákna GPU, okno paralelního sledování a další funkce, které bylo vícevláknové ladění snazší. Tyto postupy je nejlepší způsob, jak Další informace o funkcích vláken. Zobrazit [názorný postup: Ladění vícevláknových aplikacích](../debugger/walkthrough-debugging-a-multithreaded-application.md) a [názorný postup: Ladění aplikace C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
 
  Visual Studio také poskytuje výkonné zarážky a trasování, což může být velmi užitečné při ladění aplikací s více vlákny. Filtry zarážky slouží k umístění zarážek na jednotlivá vlákna. Zobrazit [použití zarážek](../debugger/using-breakpoints.md)
 
@@ -83,11 +83,11 @@ Seznámení s funkcemi, s důrazem na funkce jak ladění vlákna do [!INCLUDE[v
 
 - Zarážky s trasováním umožňuje trasování spuštění programu bez přerušení. To může být užitečné pro studium problémů například zablokování.
 
-  [Práce s vlákny](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) v koncepce práce s vlákny [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programování, včetně příkladu kódu.
+  [Práce s vlákny](https://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) v koncepce práce s vlákny [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programování, včetně příkladu kódu.
 
-  [Multithreading u komponent](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) jak používat multithreading u [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] komponenty.
+  [Multithreading u komponent](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) jak používat multithreading u [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] komponenty.
 
-  [Podpora multithreadingu ve starším kódu (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) dělení na vlákna koncepty a příklady kódu pro programátory C++ používající knihovnu MFC.
+  [Podpora multithreadingu ve starším kódu (Visual C++)](https://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) dělení na vlákna koncepty a příklady kódu pro programátory C++ používající knihovnu MFC.
 
 ## <a name="see-also"></a>Viz také
  [Ladění vláken a procesů](../debugger/debug-threads-and-processes.md) [vzdálené ladění](../debugger/remote-debugging.md)

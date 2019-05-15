@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ab38f4fc7e0269c1073e71fae9975b240da33f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695106"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Upgrade programových testů UI z produktu Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Testovací projekty obsahující programové testy uživatelského rozhraní, kt
 - Visual Studio Enterprise
 
 > [!NOTE]
-> Visual Studio obsahuje více než jeden typ testovacího projektu. Pokud vytvoříte nový kódovaný test uživatelského rozhraní, vytvoří se v typu projektu programového testu uživatelského rozhraní. Další informace najdete v tématu [upgradování testů ze starších verzí sady Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+> Visual Studio obsahuje více než jeden typ testovacího projektu. Pokud vytvoříte nový kódovaný test uživatelského rozhraní, vytvoří se v typu projektu programového testu uživatelského rozhraní. Další informace najdete v tématu [upgradování testů ze starších verzí sady Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
 > [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] projekty testů, které obsahují programové testy UI musí znovu vytvořit při otevření projektu testu v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nebo [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] – souběžně s [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
@@ -64,4 +64,4 @@ Testovací projekty obsahující programové testy uživatelského rozhraní, kt
 - **Zátěžové testování:** Při spuštění zátěžového testu společně s typem sítě než profil místní sítě (LAN) na počítači tohle běží systém Windows 8, ovladač emulace sítě způsobí, že operační systém při selhání. Další podrobnosti najdete v tématu [2736182 článku znalostní BÁZE](http://support.microsoft.com/kb/2736182).
 
 ## <a name="see-also"></a>Viz také
- [Přenosy, migrace a upgrade projektů sady Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [upgradování testů ze starších verzí sady Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md) [generování Programový Test uživatelského rozhraní ze stávajícího záznamu akcí](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Přenosy, migrace a upgrade projektů sady Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [upgradování testů ze starších verzí sady Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md) [generování Programový Test uživatelského rozhraní ze stávajícího záznamu akcí](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

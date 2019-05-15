@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6136caaec0cb8f0d79e3fb7b96245fc3fd070710
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049305"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675342"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Nastavení podpory fáze vrácení zpět v návrháři
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Návrháře, jako jsou editory, obvykle musí podporovat operace vrácení zpět
   
 - Podpora dodávky trvalosti a CodeDOM implementací <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> a <xref:System.ComponentModel.Design.IComponentChangeService> třídy.  
   
-  Další informace o vytváření pomocí návrháře [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], naleznete v tématu [rozšíření podpory během návrhu](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  Další informace o vytváření pomocí návrháře [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], naleznete v tématu [rozšíření podpory během návrhu](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
   [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Poskytuje infrastrukturu výchozí zpět podle:  
   
@@ -45,7 +45,7 @@ Návrháře, jako jsou editory, obvykle musí podporovat operace vrácení zpět
   
 - Využívá standardní kód založený na CodeDOM generování a systém analýzy pro generování kódu a uchovávání.  
   
-     Další informace o práci s podporou Visual Studio CodeDOM naleznete v tématu [dynamické generování zdrojového kódu a kompilace](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
+     Další informace o práci s podporou Visual Studio CodeDOM naleznete v tématu [dynamické generování zdrojového kódu a kompilace](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Kdy použít podpora pro explicitní návrháře vracení zpět  
  Návrháři musíte zadat management své vlastní vrácení zpět, je-li využívají grafické uživatelské rozhraní, označuje jako zobrazení adaptér, než poskytuje <xref:System.Windows.Forms.Control>.  
@@ -105,4 +105,4 @@ Návrháře, jako jsou editory, obvykle musí podporovat operace vrácení zpět
 ## <a name="see-also"></a>Viz také  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
- [Rozšíření podpory během návrhu](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Rozšíření podpory během návrhu](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

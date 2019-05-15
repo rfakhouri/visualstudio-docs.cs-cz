@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 209f56d8222d4cc446d15f8eedd4d89b08993c5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b38d36c1fdc0033115f1d7a4cf18265dc1f2a3ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548580"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696363"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>Výčty jazyka Visual C++ v návrháři tříd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +43,8 @@ enum class CardSuit {
   
  Tvar výčtu C++ v diagramu třídy vypadá a funguje jako tvar struktury, s tím rozdílem, že načte popisek **výčtu** nebo **Enum class**, je růžový místo modrý a má barevné ohraničení na levém a horním okraje. Obrazce výčtu i obrazce struktury mají hranaté rohy.  
   
- Další informace o používání `enum` zadejte naleznete v tématu [výčty](http://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3).  
+ Další informace o používání `enum` zadejte naleznete v tématu [výčty](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3).  
   
 ## <a name="see-also"></a>Viz také  
  [Práce s kódem jazyka Visual C++ (návrhář tříd)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Výčty](http://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)
+ [Výčty](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)

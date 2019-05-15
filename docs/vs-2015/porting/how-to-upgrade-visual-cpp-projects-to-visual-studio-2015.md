@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 022966ae483b958da6032769e219f4ab6750f330
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696445"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Postupy: Upgrade projektů Visual C++ pro Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,4 +54,4 @@ Při prvním otevření projektu Visual C++, který byl vytvořen v dřívějš�
  Pokud chcete pokračovat v práci s vlastním parametrem PlatformToolset v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], sada nástrojů se musí nacházet v části %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ v x x86 strojově, nebo v umístění % ProgramFiles (x86)%\MSBuild\ Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ x x64 počítače. Informace o tom, jak vytvořit vlastní PlatformToolset naleznete v tématu [cílení na více verzí v nativním C++](http://go.microsoft.com/fwlink/?LinkId=248587) na blogu týmu Visual C++.
 
 ## <a name="see-also"></a>Viz také
- [Visual C++ Průvodce přenosem a upgradem](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [přenosy, migrace a upgrade projektů sady Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ [Visual C++ Průvodce přenosem a upgradem](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [přenosy, migrace a upgrade projektů sady Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

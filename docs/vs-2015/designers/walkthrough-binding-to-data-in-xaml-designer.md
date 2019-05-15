@@ -11,17 +11,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7a27b2744247bba78575b0387a958bda5990d8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c839350dd37f71d4f3368e077f4d9afe1b2bb2f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071613"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701930"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Návod: Vazba s daty v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové ploše nebo v okně Vlastnosti. V příkladu v tomto návodu ukazuje, jak k vytvoření vazby dat k ovládacímu prvku. Konkrétně návodu ukazuje, jak vytvořit jednoduchou nákupního košíku třídu, která má [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) s názvem `ItemCount`a pak vytvoříte vazbu `ItemCount` vlastnost **Text** vlastnost nástroje [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) ovládacího prvku.  
+V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové ploše nebo v okně Vlastnosti. V příkladu v tomto návodu ukazuje, jak k vytvoření vazby dat k ovládacímu prvku. Konkrétně návodu ukazuje, jak vytvořit jednoduchou nákupního košíku třídu, která má [DependencyProperty](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) s názvem `ItemCount`a pak vytvoříte vazbu `ItemCount` vlastnost **Text** vlastnost nástroje [TextBlock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) ovládacího prvku.  
   
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Pro vytvoření třídy, který se použije jako zdroj dat  
   
@@ -66,7 +66,7 @@ V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové
     End Class  
     ```  
   
-     Tento kód nastaví hodnotu 0 jako počet položek výchozí pomocí [třída PropertyMetadata](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx) objektu.  
+     Tento kód nastaví hodnotu 0 jako počet položek výchozí pomocí [třída PropertyMetadata](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx) objektu.  
   
 5. Na **souboru** nabídce zvolte **sestavení**, **sestavit řešení**.  
   
@@ -74,7 +74,7 @@ V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové
   
 1. V Průzkumníku řešení otevřete místní nabídku souboru mainwindow.XAML a zvolte **Návrhář zobrazení**.  
   
-2. Na panelu nástrojů zvolte [mřížky](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) ovládací prvek a přidat do formuláře.  
+2. Na panelu nástrojů zvolte [mřížky](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) ovládací prvek a přidat do formuláře.  
   
 3. S `Grid` vybrán, v okně Vlastnosti zvolte **nový** vedle **DataContext** vlastnost.  
   
@@ -100,4 +100,4 @@ V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB: Přidat převaděč hodnot – dialogové okno](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+ [NIB: Přidat převaděč hodnot – dialogové okno](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d524319eb31d3c51613894ad51470c718c9008e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 258b9fcb8b36be1d179d9f907ef2da16ff1c3037
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652757"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696252"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Správa životního cyklu aplikací s aplikacemi Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Xamarin umožňuje vytvářet multiplatformní mobilní aplikace cílí na Andro
  V tabulce dole najdete identifikuje funkcí, které Visual Studio ALM můžete očekávat fungovat dobře si projekt Xamarin a ty, které mají omezení. Naleznete v dokumentaci propojené informace o funkcích, sami.  
   
 ## <a name="agile-tools"></a>Agilní nástroje  
- Referenční odkaz: **[Pracovní](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (pomocí Visual Studio Team Services nebo TFS, včetně Team Explorer Everywhere)  
+ Referenční odkaz: **[Pracovní](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (pomocí Visual Studio Team Services nebo TFS, včetně Team Explorer Everywhere)  
   
  Obecné komentáře: všechny plánování a sledování funkce jsou nezávislé na typu projektu a kódování jazyky.  
   
@@ -61,25 +61,25 @@ Xamarin umožňuje vytvářet multiplatformní mobilní aplikace cílí na Andro
   
 |Funkce|Nepodporuje se Xamarinem|Další komentáře|  
 |-------------|----------------------------|-------------------------|  
-|[Použití správy verzí Team Foundation](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) nebo Visual Studio Team Services|Ano||  
-|[Začínáme s úložištěm Git ve službě Team Services](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Ano||  
-|[Kód analýzy/zlepšení kvality kódu (odkazy, navrhované změny, atd.)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Ano||  
+|[Použití správy verzí Team Foundation](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) nebo Visual Studio Team Services|Ano||  
+|[Začínáme s úložištěm Git ve službě Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Ano||  
+|[Kód analýzy/zlepšení kvality kódu (odkazy, navrhované změny, atd.)](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Ano||  
 |[Nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md)|Ano|S výjimkou napříč hranicemi specifické pro platformu, kde implementace není vyřešený až do spuštění.|  
 |[Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)|Ano||  
   
 ## <a name="build"></a>Sestavení  
- Referenční odkaz: **[Sestavení](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Referenční odkaz: **[Sestavení](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Funkce|Nepodporuje se Xamarinem|Další komentáře|  
 |-------------|----------------------------|-------------------------|  
 |Na místním serveru TFS|Ano|Počítače sestavení musí mít nainstalovaný Xamarin a lze propojit na OSX počítač pro vývoj pro iOS. Zobrazit [konfigurace serveru TFS pro Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (webu Xamarin)|  
-|Místní server sestavení propojené s Visual Studio Team Services|Ano|Zobrazit [server sestavení](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) pokyny.|  
+|Místní server sestavení propojené s Visual Studio Team Services|Ano|Zobrazit [server sestavení](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) pokyny.|  
 |Hostovaný kontroler služby Visual Studio Team Services|Ano|Zobrazit [sestavení vaší aplikace Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Vytvoření definice s předběžné a pozálohovacích skriptů|Ano||  
 |Průběžná integrace, včetně hlídané vrácení se změnami se|Ano|Ověřované vrácení se změnami se pro TFVC pouze, jak Git funguje na modelu žádosti o přijetí změn spíše než vrácení se změnami.|  
   
 ## <a name="testing"></a>Testování  
- Referenční odkaz: **[Testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Referenční odkaz: **[Testování aplikace](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Funkce|Nepodporuje se Xamarinem|Další komentáře|  
 |-------------|----------------------------|-------------------------|  
@@ -91,12 +91,12 @@ Xamarin umožňuje vytvářet multiplatformní mobilní aplikace cílí na Andro
 |[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)|Pouze Windows|Rekordér testu uživatelského rozhraní sady Visual Studio je jenom pro Windows. Pro všechny platformy, najdete v článku [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Zlepšení kvality kódu  
- Referenční odkaz: **[Zlepšení kvality kódu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Referenční odkaz: **[Zlepšení kvality kódu](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Funkce|Nepodporuje se Xamarinem|Další komentáře|  
 |-------------|----------------------------|-------------------------|  
 |[Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Ano||  
-|[Hledání duplicitního kódu pomocí zjišťování klonování kódu](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ano||  
+|[Hledání duplicitního kódu pomocí zjišťování klonování kódu](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ano||  
 |[Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Ano||  
 |[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ne|Použití [Xamarin Profiler](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) přes Xamarin Studio místo. Všimněte si, že Xamarin Profiler je aktuálně ve verzi preview a ještě nefunguje pro Windows cíle.|  
 |[Analýza problémů paměti rozhraní .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Ne|Nástroje sady Visual Studio nemusí háky do Mono framework pro profilování.|  

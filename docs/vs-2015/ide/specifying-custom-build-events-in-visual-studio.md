@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ace8b173eb20b6e628fbb7066ff9010624cca9e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d00c520f75869e6cf886074c482575f1170e923a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441963"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679527"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Specifikace vlastních událostí sestavení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Zadání vlastního sestavení události, můžete automaticky spustit příkazy
 
 - Vizuální C# a F#--[jak: Určení událostí sestavení (C#)](../ide/how-to-specify-build-events-csharp.md).
 
-- Visual C++ –[určení událostí sestavení](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
+- Visual C++ –[určení událostí sestavení](https://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
 ## <a name="syntax"></a>Syntaxe
  Události sestavení, postupujte podle stejné syntaxe jako DOS příkazy, ale makra můžete jednoduše vytvořit události sestavení. Seznam dostupných maker naleznete v tématu [pre-build Event/po sestavení příkazového řádku dialogové okno události](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).

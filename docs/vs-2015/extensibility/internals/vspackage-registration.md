@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5dab1d68b9cf3e69c2f7a4a03d6e91a4fbab1907
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a11f05edb4e7d476fdbcab82d365f9327dd4869a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440806"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685289"
 ---
 # <a name="vspackage-registration"></a>Registrace balíčku VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Rozšíření VSPackages musíte poradit [!INCLUDE[vsprvs](../../includes/vsprvs
 > [!NOTE]
 > Přijaté praxe je během vývoje VSPackage používat samoobslužné registrace. Ale [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] partneři nelze odeslat vlastních produktů s využitím samoregistračního jako součást instalace.  
   
- Položky registru do balíčku Instalační služby systému Windows jsou obecně provedené v tabulce registru. Přípony souborů budete taky moct registrovat v tabulce registru. Ale instalační služby systému Windows obsahuje integrovanou podporu prostřednictvím programový identifikátor (ProgId), třída, rozšíření a operaci tabulky. Další informace najdete v tématu [databázových tabulek](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
+ Položky registru do balíčku Instalační služby systému Windows jsou obecně provedené v tabulce registru. Přípony souborů budete taky moct registrovat v tabulce registru. Ale instalační služby systému Windows obsahuje integrovanou podporu prostřednictvím programový identifikátor (ProgId), třída, rozšíření a operaci tabulky. Další informace najdete v tématu [databázových tabulek](https://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
   
  Ujistěte se, že vaše položky registru jsou spojeny s komponenta, která je vhodná pro vaši zvolenou strategii vedle sebe. Položky registru pro sdílený soubor například by měly být přidružené komponenty tento soubor Instalační služby systému Windows. Položky registru pro konkrétní verzi souboru, by měly být přidružené tento soubor komponenty. V opačném případě instalace nebo odinstalace vašeho balíčku VSPackage pro jednu verzi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by mohlo narušit vaše VSPackage v dalších verzích. Další informace najdete v tématu [podporuje více verzí sady Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   
@@ -58,5 +58,5 @@ Rozšíření VSPackages musíte poradit [!INCLUDE[vsprvs](../../includes/vsprvs
 - Samoregistračního kódu může být odepřen přístup k síťovým prostředkům, jako jsou knihovny typů, pokud komponenta je zadán jako spuštění ze zdroje i je uveden v tabulce SelfReg. To může způsobovat instalace součásti selhání během instalace pro správu.  
   
 ## <a name="see-also"></a>Viz také  
- [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
- [Registrace spravovaného balíčku](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
+ [Registrace spravovaného balíčku](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

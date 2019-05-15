@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dc0cf5d488c81b119d5a50464ae60ef44f233d7a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436878"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701790"
 ---
 # <a name="property-pages-javascript"></a>Stránky vlastností, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ ms.locfileid: "63436878"
  Vybrat konfigurace a platformy, zobrazit nebo upravit pomocí následujících možností.  
   
  **Konfigurace**  
- Určuje nastavení konfigurace má být zobrazeno nebo upraveno. Nastavení musí být **ladění** (výchozí), **vydání**, **všechny konfigurace**, nebo konfigurace definovaná uživatelem. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Určuje nastavení konfigurace má být zobrazeno nebo upraveno. Nastavení musí být **ladění** (výchozí), **vydání**, **všechny konfigurace**, nebo konfigurace definovaná uživatelem. Další informace najdete v tématu [konfigurace ladění a verzí projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Platforma**  
- Určuje nastavení platformy má být zobrazeno nebo upraveno. Nastavení musí být **jakýkoli procesor** (výchozí pro [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikace), **x64**, **ARM**, **x86**, nebo platforma definovaná uživatelem. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Určuje nastavení platformy má být zobrazeno nebo upraveno. Nastavení musí být **jakýkoli procesor** (výchozí pro [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikace), **x64**, **ARM**, **x86**, nebo platforma definovaná uživatelem. Další informace najdete v tématu [konfigurace ladění a verzí projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="general-page"></a>Obecná stránka  
  Pomocí následujících možností můžete nastavit obecné vlastnosti projektu.  
@@ -53,7 +53,7 @@ ms.locfileid: "63436878"
  **Výstupní cesta**  
  Určuje umístění výstupních souborů pro konfiguraci projektu. Cesta je relativní; Pokud zadáte absolutní cestu, absolutní cesta je uložena v projektu. Výchozí cesta je bin\Debug.  
   
- Při použití zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. Po kliknutí na **ladění**, **spustit ladění** (nebo stiskněte klávesu F5) je sestavení umístěno do místa ladění bez ohledu **výstupní cesta** zadáte. Ale **sestavit řešení** příkaz **sestavení** nabídky se vloží do umístění, které zadáte. Chcete-li povolit pokročilé konfigurace sestavení, na panelu nabídek zvolte **nástroje**, **možnosti**. V **možnosti** dialogového okna rozbalte **projekty a řešení**vyberte **Obecné**a poté zrušte zaškrtnutí **zobrazit pokročilé konfiguracesestavení**zaškrtávací políčko. To umožňuje ruční kontrolu všech hodnot konfigurace a určuje, zda je sestavena verze ladění nebo vydání. Další informace najdete v tématu [NIB: Obecné – projekty a řešení, dialogové okno Možnosti](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+ Při použití zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. Po kliknutí na **ladění**, **spustit ladění** (nebo stiskněte klávesu F5) je sestavení umístěno do místa ladění bez ohledu **výstupní cesta** zadáte. Ale **sestavit řešení** příkaz **sestavení** nabídky se vloží do umístění, které zadáte. Chcete-li povolit pokročilé konfigurace sestavení, na panelu nabídek zvolte **nástroje**, **možnosti**. V **možnosti** dialogového okna rozbalte **projekty a řešení**vyberte **Obecné**a poté zrušte zaškrtnutí **zobrazit pokročilé konfiguracesestavení**zaškrtávací políčko. To umožňuje ruční kontrolu všech hodnot konfigurace a určuje, zda je sestavena verze ladění nebo vydání. Další informace najdete v tématu [NIB: Obecné – projekty a řešení, dialogové okno Možnosti](https://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
  **Výchozí jazyk**  
  Určuje výchozí jazyk pro projekt. Jazykové možnosti vybrané v **hodiny, jazyk a oblast** v Ovládacích panelech určuje upřednostňovaný jazyk uživatele. Zadáním výchozího jazyka pro projekt, ujistěte se, že zadané výchozí jazykové prostředky se používají Pokud preferovaný jazyk uživatele neodpovídá jazykovým prostředkům poskytovaným v aplikaci.  

@@ -19,12 +19,12 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0352f98fe4d053f8c90d1b2c8f910e73cde23a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8d12603c10c238f74d8e9e7d79dad495d8840978
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441504"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680231"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Stránka Kompilovat, návrhář projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,28 +39,28 @@ Použití **kompilaci** stránky Návrháře projektu uvést pokyny kompilace. N
  Tato nastavení umožňují vybrat konfigurace a platformy k zobrazení a úpravě.  
   
 > [!NOTE]
-> Pomocí zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. Proto **konfigurace** a **platformy** seznamy se nezobrazují. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+> Pomocí zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. Proto **konfigurace** a **platformy** seznamy se nezobrazují. Další informace najdete v tématu [konfigurace ladění a verzí projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Konfigurace**  
- Určuje které nastavení konfigurace má být zobrazeno nebo upraveno. Nastavení musí být **ladění** (výchozí), **vydání**, nebo **všechny konfigurace**. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) a [jak: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).  
+ Určuje které nastavení konfigurace má být zobrazeno nebo upraveno. Nastavení musí být **ladění** (výchozí), **vydání**, nebo **všechny konfigurace**. Další informace najdete v tématu [konfigurace ladění a verzí projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) a [jak: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).  
   
  **Platforma**  
- Určuje které nastavení platformy má být zobrazeno nebo upraveno. Můžete zadat **jakýkoli procesor** (výchozí), **x64**, nebo **x86**. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Určuje které nastavení platformy má být zobrazeno nebo upraveno. Můžete zadat **jakýkoli procesor** (výchozí), **x64**, nebo **x86**. Další informace najdete v tématu [konfigurace ladění a verzí projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="compiler-configuration-options"></a>Konfigurace možností kompilátoru  
  Tato nastavení umožňují nastavit kompilátor možnosti konfigurace.  
   
  **Výstupní cesta sestavení**  
- Určuje umístění výstupních souborů pro tuto konfiguraci projektu. Zadejte cestu k výstupu sestavení v tomto poli, nebo klikněte na tlačítko **Procházet** tlačítko a vyberte cestu. Všimněte si, že cesta je relativní; Pokud zadáte absolutní cestu, bude uložena jako relativní. Výchozí cesta je bin\Debug\ nebo bin\Release\\. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Určuje umístění výstupních souborů pro tuto konfiguraci projektu. Zadejte cestu k výstupu sestavení v tomto poli, nebo klikněte na tlačítko **Procházet** tlačítko a vyberte cestu. Všimněte si, že cesta je relativní; Pokud zadáte absolutní cestu, bude uložena jako relativní. Výchozí cesta je bin\Debug\ nebo bin\Release\\. Další informace najdete v tématu [konfigurace ladění a verzí projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
- Pomocí zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. **Sestavení** příkaz **ladění** nabídky (F5) vloží sestavení do místa ladění bez ohledu na to **výstupní cesta** zadáte. Ale **sestavení** příkaz **sestavení** nabídky se vloží do umístění, které zadáte. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Pomocí zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. **Sestavení** příkaz **ladění** nabídky (F5) vloží sestavení do místa ladění bez ohledu na to **výstupní cesta** zadáte. Ale **sestavení** příkaz **sestavení** nabídky se vloží do umístění, které zadáte. Další informace najdete v tématu [konfigurace ladění a verzí projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Možnost explicit**  
  Určuje, jestli se má povolit implicitní deklaraci proměnných. Vyberte **na** tak, aby vyžadovala explicitní deklaraci proměnných. To způsobí, že kompilátor pro hlášení chyb Pokud proměnné nejsou deklarovány před jejich použití. Vyberte **vypnout** povolit implicitní deklaraci proměnných.  
   
- Toto nastavení odpovídá [/optionexplicit](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) – možnost kompilátoru.  
+ Toto nastavení odpovídá [/optionexplicit](https://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) – možnost kompilátoru.  
   
- Pokud soubor zdrojového kódu obsahuje [Option Explicit – příkaz](http://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc), `On` nebo `Off` hodnota v příkazu přepíše **Option Explicit** nastavení **kompilace stránka**.  
+ Pokud soubor zdrojového kódu obsahuje [Option Explicit – příkaz](https://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc), `On` nebo `Off` hodnota v příkazu přepíše **Option Explicit** nastavení **kompilace stránka**.  
   
  Když vytvoříte nový projekt **Option Explicit** nastavení **kompilace stránky** je nastavena na hodnotu **Option Explicit** nastavení **možnosti**  dialogové okno. Chcete-li zobrazit nebo změnit nastavení v tomto dialogovém okně na **nástroje** nabídky, klikněte na tlačítko **možnosti**. V **možnosti** dialogového okna rozbalte **projekty a řešení**a potom klikněte na tlačítko **VB výchozí**. Počáteční výchozí nastavení **Option Explicit** v **výchozí hodnoty pro VB** je **na**.  
   
@@ -75,15 +75,15 @@ Použití **kompilaci** stránky Návrháře projektu uvést pokyny kompilace. N
   
 - Implicitního zápisu, která vede `Object` typu  
   
-  Implicitní zužující převod chybám dochází při konverzi typu implicitní data, která je zužující převod. Další informace najdete v tématu [Option Strict – příkaz](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [implicitní a explicitní převody](http://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66), a [Widening a zúžení převodů](http://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd).  
+  Implicitní zužující převod chybám dochází při konverzi typu implicitní data, která je zužující převod. Další informace najdete v tématu [Option Strict – příkaz](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [implicitní a explicitní převody](https://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66), a [Widening a zúžení převodů](https://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd).  
   
-  Objekt je přiřazeno k vlastnosti nebo metody, která je deklarována se typ proměnné pozdní vazby `Object`. Další informace najdete v tématu [Option Strict – příkaz](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5) a [včasného a pozdní vazby](http://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
+  Objekt je přiřazeno k vlastnosti nebo metody, která je deklarována se typ proměnné pozdní vazby `Object`. Další informace najdete v tématu [Option Strict – příkaz](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5) a [včasného a pozdní vazby](https://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
   
-  Implicitní typ chybám dochází, když odpovídající typ se nedá odvodit deklarované proměnné, tak typu `Object` je odvozen. To dochází především při použití `Dim` příkaz k deklaraci proměnné bez použití `As` klauzule a `Option Infer` je vypnuté. Další informace najdete v tématu [Option Strict – příkaz](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Option Infer – příkaz](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)a [specifikace jazyka Visual Basic](http://msdn.microsoft.com/library/42c30017-19d0-442e-87a2-850b66ddc3df).  
+  Implicitní typ chybám dochází, když odpovídající typ se nedá odvodit deklarované proměnné, tak typu `Object` je odvozen. To dochází především při použití `Dim` příkaz k deklaraci proměnné bez použití `As` klauzule a `Option Infer` je vypnuté. Další informace najdete v tématu [Option Strict – příkaz](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Option Infer – příkaz](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)a [specifikace jazyka Visual Basic](https://msdn.microsoft.com/library/42c30017-19d0-442e-87a2-850b66ddc3df).  
   
-  **Option Strict** nastavení odpovídá [/optionstrict](http://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da) – možnost kompilátoru.  
+  **Option Strict** nastavení odpovídá [/optionstrict](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da) – možnost kompilátoru.  
   
-  Pokud soubor zdrojového kódu obsahuje [Option Strict – příkaz](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), `On` nebo `Off` hodnota v příkazu přepíše **Option Strict** nastavení **kompilace stránky** .  
+  Pokud soubor zdrojového kódu obsahuje [Option Strict – příkaz](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), `On` nebo `Off` hodnota v příkazu přepíše **Option Strict** nastavení **kompilace stránky** .  
   
   Při vytváření projektu, **Option Strict** nastavení **kompilace stránky** je nastavena na hodnotu **Option Strict** nastavení **možnosti** dialogové okno. Chcete-li zobrazit nebo změnit nastavení v tomto dialogovém okně na **nástroje** nabídky, klikněte na tlačítko **možnosti**. V **možnosti** dialogového okna rozbalte **projekty a řešení**a potom klikněte na tlačítko **VB výchozí**. Počáteční výchozí nastavení **Option Strict** v **výchozí hodnoty pro VB** je **vypnout**.  
   
@@ -102,25 +102,25 @@ Použití **kompilaci** stránky Návrháře projektu uvést pokyny kompilace. N
   **Možnost compare**  
   Určuje typ porovnání řetězců k použití. Vyberte **binární** dáte pokyn, aby kompilátor používal porovnávání řetězců binární, velká a malá písmena. Vyberte **Text** použít porovnávání řetězců specifické pro národní prostředí, nerozlišuje velikost písmen textu.  
   
-  Toto nastavení odpovídá [/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) – možnost kompilátoru.  
+  Toto nastavení odpovídá [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) – možnost kompilátoru.  
   
-  Pokud soubor zdrojového kódu obsahuje [možnost porovnat příkaz](http://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e), `Binary` nebo `Text` hodnota v příkazu přepíše **Option Compare** nastavení na **kompilace stránka**.  
+  Pokud soubor zdrojového kódu obsahuje [možnost porovnat příkaz](https://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e), `Binary` nebo `Text` hodnota v příkazu přepíše **Option Compare** nastavení na **kompilace stránka**.  
   
   Při vytváření projektu, **Option Compare** nastavení **kompilace stránky** je nastavena na hodnotu **Option Compare** nastavení **možnosti** dialogové okno. Chcete-li zobrazit nebo změnit nastavení v tomto dialogovém okně na **nástroje** nabídky, klikněte na tlačítko **možnosti**. V **možnosti** dialogového okna rozbalte **projekty a řešení**a potom klikněte na tlačítko **VB výchozí**. Počáteční výchozí nastavení **Option Compare** v **výchozí hodnoty pro VB** je **binární**.  
   
   **Možnost infer**  
   Určuje, jestli se má povolit odvození místního typu v deklaraci proměnných. Vyberte **na** k povolení použití odvození místního typu. Vyberte **vypnout** k odvození místního typu blok.  
   
-  Toto nastavení odpovídá [/optioninfer](http://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed) – možnost kompilátoru.  
+  Toto nastavení odpovídá [/optioninfer](https://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed) – možnost kompilátoru.  
   
-  Pokud soubor zdrojového kódu obsahuje [Option Infer – příkaz](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652), `On` nebo `Off` hodnota v příkazu přepíše **Option Infer** nastavení **kompilace stránky** .  
+  Pokud soubor zdrojového kódu obsahuje [Option Infer – příkaz](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652), `On` nebo `Off` hodnota v příkazu přepíše **Option Infer** nastavení **kompilace stránky** .  
   
   Při vytváření projektu, **Option Infer** nastavení **kompilace stránky** je nastavena na hodnotu **Option Infer** nastavení **možnosti**dialogové okno. Chcete-li zobrazit nebo změnit nastavení v tomto dialogovém okně na **nástroje** nabídky, klikněte na tlačítko **možnosti**. V **možnosti** dialogového okna rozbalte **projekty a řešení**a potom klikněte na tlačítko **VB výchozí**. Počáteční výchozí nastavení **Option Infer** v **výchozí hodnoty pro VB** je **na**.  
   
   **Cíl CPU**  
   Určuje procesor, který bude cílen výstupním souborem. Zadejte **x86** pro jakýkoli procesor kompatibilní s verzí Intel 32-bit **x64** pro jakýkoli procesor kompatibilní s verzí Intel 64-bit **ARM** pro jakýkoli procesor ARM nebo **jakýkoli procesor**  k určení, že je přijatelný jakýkoli procesor. **Jakýkoli procesor** je výchozí hodnota pro nové projekty, protože umožňuje aplikaci, aby běžela na největší počet typů hardwaru.  
   
-  Další informace najdete v tématu [/Platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+  Další informace najdete v tématu [/Platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
   **Preferovat 32 bitů**  
   Pokud **preferovat 32bitovou verzi** zaškrtávací políčko zaškrtnuto, aplikace běží jako 32bitová aplikace ve 32bitové a 64bitové verze Windows. V opačném případě aplikace běží jako 32bitová aplikace ve 32bitové verze Windows a jako na 64bitovými verzemi Windows 64-bit aplikace.  
@@ -143,7 +143,7 @@ Použití **kompilaci** stránky Návrháře projektu uvést pokyny kompilace. N
   **Zakázat všechna upozornění**  
   Určuje, jestli chce použít kompilátor, aby uvedená v upozornění na problémy **podmínku a oznámení** tabulky popsané dříve v tomto dokumentu. Ve výchozím nastavení je toto políčko zaškrtnuté. Toto políčko zaškrtnuto, abyste instruovali kompilátor není vydat upozornění a chyby.  
   
-  Toto nastavení odpovídá [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) – možnost kompilátoru.  
+  Toto nastavení odpovídá [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) – možnost kompilátoru.  
   
   **Považovat všechna upozornění jako chyby**  
   Určuje, jak zpracovávat upozornění. Ve výchozím nastavení, toto zaškrtávací políčko zaškrtnuto, takže všechna upozornění oznámení zůstanou nastavená na **upozornění**. Zaškrtněte toto políčko, chcete-li změnit všechna oznámení upozornění pro **chyba**.  
@@ -153,7 +153,7 @@ Použití **kompilaci** stránky Návrháře projektu uvést pokyny kompilace. N
   **Generovat soubor dokumentace XML**  
   Určuje, jestli se má generovat informace o dokumentaci. Ve výchozím nastavení je toto políčko zaškrtnuto, že kompilátoru generovat informace o dokumentaci a zahrnout do souboru XML. Zrušte zaškrtnutí tohoto políčka, abyste instruovali kompilátor nechcete vytvářet dokumentaci.  
   
-  Toto nastavení odpovídá [/doc](http://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65) – možnost kompilátoru.  
+  Toto nastavení odpovídá [/doc](https://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65) – možnost kompilátoru.  
   
   **Zaregistrovat pro interoperabilitu COM**  
   Určuje, zda bude vaše spravovaná aplikace vystavovat objekt modelu COM (Obálka volatelná aplikacemi COM) umožňující objektu modelu COM interakci s aplikací.  
@@ -169,8 +169,8 @@ Použití **kompilaci** stránky Návrháře projektu uvést pokyny kompilace. N
   Kliknutím na toto tlačítko přístup **AdvancedCompiler nastavení** dialogové okno. Použití **AdvancedCompiler nastavení** dialogové okno k zadání projekt rozšířenou vlastností konfigurace sestavení. Toto dialogové okno se vztahují na projekty Visual Basic pouze. Další informace najdete v tématu [Advanced kompilátoru dialogové okno nastavení (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
- [Správa vlastností kompilace](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Konfigurace ladění a verzí projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
+ [Správa vlastností kompilace](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Postupy: Určení událostí sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Visual Basic Command-Line Compiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
+ [Visual Basic Command-Line Compiler](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Postupy: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md)

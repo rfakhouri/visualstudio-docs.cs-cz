@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a8364f742a5bdd90ffa2532f01476b49e381289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7f3cefc7c6e2a78d757bb931a430f09c6da103c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441054"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681049"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Postupy: Migrace jazyka specifického pro doménu na novou verzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
    2. Klikněte na tlačítko **Transformovat všechny šablony** tlačítko v hlavičce Průzkumníku řešení.  
   
        > [!NOTE]
-       > Tento krok můžete provést zbytečné. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       > Tento krok můžete provést zbytečné. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Aktualizujte váš vlastní kód v projektech převedený.  
   

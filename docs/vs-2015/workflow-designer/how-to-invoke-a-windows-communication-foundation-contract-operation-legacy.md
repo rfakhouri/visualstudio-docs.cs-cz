@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d42c9698c6d3a247601909909c49fa92d2d29978
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1398d7fb62943c04ca026175a3f46b282bf6da69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855987"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696322"
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Postupy: Vyvolání operace kontraktu technologie Windows Communication Foundation (starší verze)
 Toto téma popisuje, jak vyvolat [!INCLUDE[indigo1](../includes/indigo1-md.md)] smlouvy operace pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] , který cílí [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -45,7 +45,7 @@ Toto téma popisuje, jak vyvolat [!INCLUDE[indigo1](../includes/indigo1-md.md)] 
   
 3. Rozbalte uzel token kanálu a zadejte název pro koncový bod klienta, které budete používat v <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> pole. Konfigurace koncového bodu se stejným názvem v konfiguračním souboru se použije ke konfiguraci kanálu.  
   
-4. Pokud ho ještě neexistuje, vytvořte v konfiguračním souboru konfigurace koncového bodu. Další informace o konfiguraci vašeho klienta najdete v tématu [přehled klientů WCF](http://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d).  
+4. Pokud ho ještě neexistuje, vytvořte v konfiguračním souboru konfigurace koncového bodu. Další informace o konfiguraci vašeho klienta najdete v tématu [přehled klientů WCF](https://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d).  
   
 ## <a name="see-also"></a>Viz také  
  [Zvolte dialogové okno operaci (starší verze)](../workflow-designer/choose-operation-dialog-box-legacy.md)   

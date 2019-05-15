@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7aca98a97919a741f43c3c746d96fc8e89cb9ea6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440927"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674218"
 ---
 # <a name="link-model-elements-and-work-items"></a>Propojení prvků modelu a pracovních položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ Sledujte úkoly, testovací případy, chyby, požadavky, problémy a další pr
 1. V **Team Exploreru**, ujistěte se, že jste připojeni k týmovému projektu kde jsou prvky modelu propojeny s pracovní položkou.  
   
     > [!NOTE]
-    > K prohlížení propojených prvků modelu lze použít pouze Průzkumník týmových projektů, nikoli nástroj Team Web Access. Zkontrolujte, zda je váš pracovní prostor mapován na projekt modelování, který obsahuje prvky nebo diagramy modelování. Pokud nemáte pracovní prostor, je třeba jej vytvořit. Zobrazit [Poradce při potížích s](#Troubleshooting) a [vytváření a práci s pracovními prostory](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > K prohlížení propojených prvků modelu lze použít pouze Průzkumník týmových projektů, nikoli nástroj Team Web Access. Zkontrolujte, zda je váš pracovní prostor mapován na projekt modelování, který obsahuje prvky nebo diagramy modelování. Pokud nemáte pracovní prostor, je třeba jej vytvořit. Zobrazit [Poradce při potížích s](#Troubleshooting) a [vytváření a práci s pracovními prostory](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. Otevřít pracovní položku, zvolte **odkazy**. V části **odkaz modelu**, otevřete místní nabídku pro propojený prvek modelu. Zvolte **otevřít odkazovanou položku**.  
   
@@ -168,7 +168,7 @@ Sledujte úkoly, testovací případy, chyby, požadavky, problémy a další pr
   
 |**Problém**|**Možná příčina**|**Řešení**|  
 |---------------|------------------------|--------------------|  
-|Nelze najít prvek modelu, který chcete propojit.|Element může být v diagramu v projektu modelování, který je v [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Pravděpodobně nemáte pracovní prostor, který se mapuje na diagram.|Namapujte pracovní prostor na projekt modelování a diagram. Pokud nemáte pracovní prostor, pak je třeba jej vytvořit.<br /><br /> Chybová zpráva, která se pro tuto chybu objeví, obsahuje cestu, kterou lze namapovat na pracovní prostor.<br /><br /> Zobrazit [vytváření a práci s pracovními prostory](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
+|Nelze najít prvek modelu, který chcete propojit.|Element může být v diagramu v projektu modelování, který je v [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Pravděpodobně nemáte pracovní prostor, který se mapuje na diagram.|Namapujte pracovní prostor na projekt modelování a diagram. Pokud nemáte pracovní prostor, pak je třeba jej vytvořit.<br /><br /> Chybová zpráva, která se pro tuto chybu objeví, obsahuje cestu, kterou lze namapovat na pracovní prostor.<br /><br /> Zobrazit [vytváření a práci s pracovními prostory](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
 |Nelze nalézt propojený prvek modelu.|Propojený prvek může být na diagramu, který byl přesunut, přejmenován nebo odstraněn.|1.  V pracovní položce odstraňte odkaz na prvek modelu.<br />2.  Vytvořte nové propojení z pracovní položky na prvek modelu.|  
 |Pracovní položka nemá očekávané propojené prvky modelu.|Pracovní položka ukazuje propojený prvek vrstvy, pouze pokud bylo propojení vytvořeno z pracovní položky. Pokud váš tým nepoužívá [!INCLUDE[esprscc](../includes/esprscc-md.md)], místní cesta diagramů se použije pro vytvoření propojení. Pokud jsou projekt modelování a jeho diagramy v [!INCLUDE[esprscc](../includes/esprscc-md.md)], všichni členové týmu, kteří mají přístup k projektu, vidět propojené prvky v pracovních položkách.|Zkuste aktualizovat pracovní položku.|  
 |Odstraněním propojení k prvku modelu z pracovní položky neodstraníte propojení prvku modelu s pracovní položkou.||Odstraňte odkaz na pracovní položku, přičemž začněte od prvku modelu.|  

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a27dac0c82b2784eac84b174f5cb67719093aace
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a51b4cdb67590b908bc406b78c04ddf0c5aa3e2f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444631"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694560"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Postupy: Vytvoření knihovny návrhářů aktivit
 Vlastní návrháři aktivit umožňují vytvářet uživatelské rozhraní pro standardní nebo vlastní aktivity. Řízení složitosti uživatelského rozhraní, aby bylo možné vytvořit více než jeden návrháře aktivit pro aktivitu. Tento scénář umožňuje vytvořit designery, které jsou přizpůsobené pro více cílových skupin.  
@@ -40,7 +40,7 @@ Vlastní návrháři aktivit umožňují vytvářet uživatelské rozhraní pro 
   
 8. Šablona projektu vytvoří definici návrháře aktivit v XAML a soubor implementace použití modelu code-behind ve zdrojovém kódu. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Otevře a zobrazí na plátně návrháře aktivit.  
   
-9. Přetáhněte [!INCLUDE[avalon1](../includes/avalon1-md.md)] ovládacích prvků z **nástrojů** na návrhovou plochu pro použití v Návrháři vaše vlastní aktivity.  Příklad implementace vlastního návrháře aktivit najdete v tématu [jak: Vytvoření vlastního návrháře aktivit](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
+9. Přetáhněte [!INCLUDE[avalon1](../includes/avalon1-md.md)] ovládacích prvků z **nástrojů** na návrhovou plochu pro použití v Návrháři vaše vlastní aktivity.  Příklad implementace vlastního návrháře aktivit najdete v tématu [jak: Vytvoření vlastního návrháře aktivit](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
     > Vlastní návrháři aktivit lze použít pro vlastní aktivit, stejně jako u výchozí [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]aktivity.  

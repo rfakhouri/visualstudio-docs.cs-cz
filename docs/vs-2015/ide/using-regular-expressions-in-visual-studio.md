@@ -19,16 +19,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1e57b3f8db5330f7d0778ee53e552c38e8295c62
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669338"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696413"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Použití regulárních výrazů v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio používá regulární výrazy rozhraní .NET Framework k hledání a nahrazení textu. Další informace o regulárních výrazech .NET najdete v tématu [regulárních výrazech .NET Frameworku](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
+Visual Studio používá regulární výrazy rozhraní .NET Framework k hledání a nahrazení textu. Další informace o regulárních výrazech .NET najdete v tématu [regulárních výrazech .NET Frameworku](https://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
 
 Visual Studio před Visual Studio 2012, použít vlastní syntaxi regulárního výrazu v oknech najít a nahradit. Zobrazit [Visual Studio regulární výraz převody](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx) vysvětlení toho, jak převést některé častěji používané vlastní symboly regulárních výrazů ve verzích .NET.
 
@@ -36,7 +36,7 @@ Visual Studio před Visual Studio 2012, použít vlastní syntaxi regulárního 
 > V operačních systémech Windows většina řádků končí "\r\n" (zalomení řádku a nový řádek). Tyto znaky se nezobrazí, ale jsou k dispozici v editoru a jsou předány službě regulárních výrazů .NET.
 
 > [!TIP]
-> Informace o formátování regulárních výrazů, které se používají ve vzorech pro nahrazení najdete v tématu [náhrady](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Chcete-li použít číslovanou zachycenou skupinu, syntaxe je `$1` k určení číslované skupiny a `(x)` k určení dané skupiny. Například seskupený regulární výraz `(\d)([a-z])` najde čtyři shod v následující řetězec: **1a 2b 3c 4d**. Řetězci pro nahrazení `z$1` převede tento řetězec na **z1 z2 z3 z4**.
+> Informace o formátování regulárních výrazů, které se používají ve vzorech pro nahrazení najdete v tématu [náhrady](https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Chcete-li použít číslovanou zachycenou skupinu, syntaxe je `$1` k určení číslované skupiny a `(x)` k určení dané skupiny. Například seskupený regulární výraz `(\d)([a-z])` najde čtyři shod v následující řetězec: **1a 2b 3c 4d**. Řetězci pro nahrazení `z$1` převede tento řetězec na **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Příklady regulárních výrazů
 

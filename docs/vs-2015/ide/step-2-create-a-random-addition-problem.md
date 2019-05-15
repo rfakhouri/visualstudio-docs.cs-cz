@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b36897236b71617c6eb36949d307e6b3e1d0204b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442617"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693963"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Krok 2: Vytvoření úlohy sčítání náhodných čísel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ V druhé části tohoto kurzu je náročnější kvíz přidáním matematickýc
   
      `Random` je znám jako objekt. Pravděpodobně jste slyšeli toto slovo dříve, a další informace o tom, co znamená pro programování v dalším kurzu. Teď stačí mějte na paměti, které můžete použít `new` příkazy k vytvoření tlačítek, popisků, panelů, dialogů pro otevření souborů, dialogů barev, hudebních přehrávačů, náhodných položek a dokonce i formulářů a tyto položky se označují jako objekty. Když svůj program spustíte, formulář bude spuštěn a kód za ním vytvoří `Random` objektu a pojmenuje ho **randomizer**.  
   
-     Brzy budete vytvářet metodu pro zkontrolování odpovědí, takže váš kvíz musí používat proměnné pro uložení náhodných čísel, která pro každý problém generují. Zobrazit [proměnné](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) nebo [typy](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Pro správné použití proměnných, je třeba je deklarovat, což znamená vypsat jejich názvy a datové typy.  
+     Brzy budete vytvářet metodu pro zkontrolování odpovědí, takže váš kvíz musí používat proměnné pro uložení náhodných čísel, která pro každý problém generují. Zobrazit [proměnné](https://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) nebo [typy](https://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Pro správné použití proměnných, je třeba je deklarovat, což znamená vypsat jejich názvy a datové typy.  
   
 4. Do formuláře přidat dvě celočíselné proměnné a pojmenujte je **addend1** a **addend2**.  
   

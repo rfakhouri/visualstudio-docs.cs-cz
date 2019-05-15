@@ -27,12 +27,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47287bdc5bf0081970f4077ee8749a1ed0d71dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118237"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682487"
 ---
 # <a name="format-specifiers-in-c"></a>Specifikátory formátu v jazyce C\#
 
@@ -64,7 +64,7 @@ V následující tabulce jsou uvedeny C# specifikátory formátu rozpoznán v la
 
 |Specifikátor|Formát|Původní hodnota Watch|Zobrazí|
 |---------------|------------|--------------------------|--------------|
-|ac|Vynucení vyhodnocení výrazu. To může být užitečné, když je vypnutý implicitní vyhodnocování vlastností a implicitních volání funkcí. Zobrazit [vedlejší efekty a výrazy](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Zpráva "implicitní vyhodnocení funkce vypnul uživatel"|\<Hodnota >|
+|ac|Vynucení vyhodnocení výrazu. To může být užitečné, když je vypnutý implicitní vyhodnocování vlastností a implicitních volání funkcí. Zobrazit [vedlejší efekty a výrazy](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Zpráva "implicitní vyhodnocení funkce vypnul uživatel"|\<Hodnota >|
 |d|Desítkové celé číslo|0x0065|101|
 |dynamické odkazy|Zobrazí zadaný objekt pomocí dynamického zobrazení|Zobrazí všechny členy objektu, včetně dynamického zobrazení|Zobrazí pouze dynamické zobrazení|
 |h|Šestnáctkové celé číslo|61541|0x0000F065|
@@ -76,4 +76,4 @@ V následující tabulce jsou uvedeny C# specifikátory formátu rozpoznán v la
 ## <a name="see-also"></a>Viz také
 
 - [Okna Kukátko a Rychlé kukátko](../debugger/watch-and-quickwatch-windows.md)
-- [Proměnné Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+- [Proměnné Windows](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

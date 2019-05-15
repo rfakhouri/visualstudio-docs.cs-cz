@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445637"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683859"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace sady Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zkontroluje podmínky `PropertyGroup`, `ItemGroup`, `Import`, vlastnost a prvky položek pro tento účel.  
   
 ## <a name="additional-build-actions"></a>Další akce sestavení  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umožňuje změnit název položky typu souboru v projektu s **akce sestavení** vlastnost [vlastnosti souboru](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) okna. `Compile`, `EmbeddedResource`, `Content`, a `None` názvy typů položek jsou vždy uvedeny v této nabídce a všechny další názvy typů položek již ve vašem projektu. Aby všechny vlastní názvy typů položek jsou vždy k dispozici v této nabídce můžete přidat názvy typů položek s názvem `AvailableItemName`. Například přidáním následujícího do vašeho souboru projektu bude přidán vlastní typ `JScript` k této nabídce pro všechny projekty, které importuje:  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umožňuje změnit název položky typu souboru v projektu s **akce sestavení** vlastnost [vlastnosti souboru](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) okna. `Compile`, `EmbeddedResource`, `Content`, a `None` názvy typů položek jsou vždy uvedeny v této nabídce a všechny další názvy typů položek již ve vašem projektu. Aby všechny vlastní názvy typů položek jsou vždy k dispozici v této nabídce můžete přidat názvy typů položek s názvem `AvailableItemName`. Například přidáním následujícího do vašeho souboru projektu bude přidán vlastní typ `JScript` k této nabídce pro všechny projekty, které importuje:  
   
 ```  
 <ItemGroup>  

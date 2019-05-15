@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abae34aad980d42018c217e150ea72b5896e436e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15c4ba33dda8e1e3220d8285e35000061fedd99f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815932"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676735"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Používání Visual Studio Tools for Unity
 
@@ -202,7 +202,7 @@ Všimněte si, že podle scénáře popsaného zde předpokládá, že máte zdr
 
    Soubory PDB jsou potřeba pro ladění, protože mohou obsahovat symboly pro ladění knihovny DLL a mapování kód knihovny DLL na jeho formě zdrojového kódu. Pokud se zaměřujete na starší verzi modulu runtime, Visual Studio Tools for Unity použije k vytvoření knihovny DLL informace z knihovny DLL a soubor PDB. Soubor MDB, což je formát symbolů ladění používá starší verzi Unity skriptovací stroj. Pokud cílíte na nový modul runtime a pomocí Portable PDB, Visual Studio Tools for Unity se nebude pokoušet provést jakýkoli převod symbolů je nativně využívat Portable PDB nový modul runtime Unity.
    
-   Další informace o generování souborů PDB může najít [tady](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019). Pokud se zaměřujete na nový modul runtime, ujistěte se prosím, že "Informace o ladění" je nastavena na "Přenosná", aby bylo možné správně generovat Portable PDB. Pokud se zaměřujete na starší verzi modulu runtime, budete muset použít "Úplné".
+   Další informace o generování souborů PDB může najít [tady](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Pokud se zaměřujete na nový modul runtime, ujistěte se prosím, že "Informace o ladění" je nastavena na "Přenosná", aby bylo možné správně generovat Portable PDB. Pokud se zaměřujete na starší verzi modulu runtime, budete muset použít "Úplné".
 
 4. Ladění kódu. Teď můžete ladit knihovnu DLL zdrojový kód společně se svým projektem Unity zdrojový kód a použít všechny ladění funkcí, které jste zvyklí, jako například zarážky a krokování kódu.
 

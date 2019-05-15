@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 229ce6d15d8f411a81c684d20945f4dcc9fb8957
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383432"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695039"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Vítá vás Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvěl
 
 1. [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Společný kód v základní C# pro všechna zařízení
 
-2. [Apache Cordova pomocí sady Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Společný kód základní pro HTML, CSS a JavaScript nebo Typescript
+2. [Apache Cordova pomocí sady Visual Studio](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Společný kód základní pro HTML, CSS a JavaScript nebo Typescript
 
 3. [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): Vývoj pro 2D a 3D her vC#
 
@@ -67,9 +67,9 @@ Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvěl
 ## <a name="connect-your-apps-to-services"></a>Připojení aplikací ke službám
  Můžete připojit k těmto službám úprav (za předpokladu, že máte účet pro každou službu):
 
-- [Azure Mobile Services](http://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure Mobile Services](https://azure.microsoft.com/documentation/services/mobile-services/)
 
-- [Azure Storage](http://azure.microsoft.com/documentation/services/storage/)
+- [Azure Storage](https://azure.microsoft.com/documentation/services/storage/)
 
 - Integrace rozhraní API REST pro Office 365 do vlastní aplikace pro připojení k datům uloženým v cloudu. Další informace najdete v tématu [tyto ukázky](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
@@ -79,7 +79,7 @@ Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvěl
 ## <a name="build-test-and-manage-your-code"></a>Sestavení, testování a správu kódu
 
 ### <a name="check-in-your-code"></a>Vrácení kódu se změnami
- Pokud pracujete v týmu, musíte také sdílet nejnovější verze kódu tak, že všichni členové týmu je pomocí stejného základu kódu. Visual Studio se hladce integrují s Visual Studio Team Services nebo Team Foundation Server, k poskytování řízení verze Git nebo TFVC (Team Foundation Version Control). Visual Studio Team Services použijte k uložení kódu v cloudu s využitím žádná Údržba místní server. Pokud chcete mít na místním serveru pomocí Team Foundation serveru. Pokaždé, když vytvoříte projekt kódu, máte možnost ho přidat do správy verzí. Další informace, o které správy verzí je nejvhodnější pro vaše potřeby systému: [Správa verzí](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
+ Pokud pracujete v týmu, musíte také sdílet nejnovější verze kódu tak, že všichni členové týmu je pomocí stejného základu kódu. Visual Studio se hladce integrují s Visual Studio Team Services nebo Team Foundation Server, k poskytování řízení verze Git nebo TFVC (Team Foundation Version Control). Visual Studio Team Services použijte k uložení kódu v cloudu s využitím žádná Údržba místní server. Pokud chcete mít na místním serveru pomocí Team Foundation serveru. Pokaždé, když vytvoříte projekt kódu, máte možnost ho přidat do správy verzí. Další informace, o které správy verzí je nejvhodnější pro vaše potřeby systému: [Správa verzí](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
 ### <a name="build-your-app"></a>Sestavení aplikace
  Je možné [sestavení aplikace místně](./ide/compiling-and-building-in-visual-studio.md) a ujistěte se, že funguje správně. Potom použijte [ladicí nástroje](./debugger/debugging-in-visual-studio.md) opravit případné problémy s vaší aplikací. Nebo projekty lze sestavit na sdílených serverech sestavení nebo v cloudu. Automatizujte proces sestavení k sestavení kódu, který ověří vývojáři ve vašem týmu do správy verzí. Lze například sestavit jeden nebo více projektů v noci nebo pokaždé, když je kód vrácen se změnami.
@@ -87,17 +87,17 @@ Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvěl
 ### <a name="test-your-app"></a>Testování aplikace
  [Vytvořit testy jednotek](./test/unit-test-your-code.md) a zlepšovat tak kvalitu vaší aplikace. Tyto testy můžete spustit pokaždé, když zkontrolujete v a jako součást vašeho sestavení.
 
- Plánovat, vytvářet a spouštět ruční a automatizované testy pro vaši aplikaci. Testovací plány, sady, testovací případy a výsledky testů jsou uloženy v cloudu pomocí služby Visual Studio Team Services nebo místní se serverem Team Foundation Server. Další informace o [testování aplikace](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
+ Plánovat, vytvářet a spouštět ruční a automatizované testy pro vaši aplikaci. Testovací plány, sady, testovací případy a výsledky testů jsou uloženy v cloudu pomocí služby Visual Studio Team Services nebo místní se serverem Team Foundation Server. Další informace o [testování aplikace](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ### <a name="deliver-your-teams-code-faster"></a>Rychlejší poskytování kódu vašeho týmu
- Odstranit překážky mezi členy týmu a zlepšuje spolupráci. Dál a automatizovat vydaných verzí vaší aplikace do každé fáze vývoje úplně přenést do produkčního prostředí. Monitorujte výkon a dostupnost, když za provozu vaší aplikace. Shromážděte data o využití v reálném čase o tom, jak vaši zákazníci skutečně používají vaši aplikaci. Zobrazit [DevOps a správa životního cyklu aplikací](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) další podrobnosti.
+ Odstranit překážky mezi členy týmu a zlepšuje spolupráci. Dál a automatizovat vydaných verzí vaší aplikace do každé fáze vývoje úplně přenést do produkčního prostředí. Monitorujte výkon a dostupnost, když za provozu vaší aplikace. Shromážděte data o využití v reálném čase o tom, jak vaši zákazníci skutečně používají vaši aplikaci. Zobrazit [DevOps a správa životního cyklu aplikací](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) další podrobnosti.
 
 ## <a name="whats-new"></a>Co je nového?
 
 |||||
 |-|-|-|-|
-|[Co je nového v sadě Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Co je nového v jazyce Visual C#](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Co je nového v rozhraní .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Co je nového pro ALM](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
-|[Co je nového pro C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Co je nového v jazyce Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Co je nového v jazyce JavaScript](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
+|[Co je nového v sadě Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Co je nového v jazyce Visual C#](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Co je nového v rozhraní .NET Framework 4.6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Co je nového pro ALM](https://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Co je nového pro C++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Co je nového v jazyce Visual Basic](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Co je nového v jazyce JavaScript](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
 ## <a name="in-this-section"></a>V tomto oddílu
@@ -116,18 +116,18 @@ Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvěl
 
 - [Vývoj mobilních řešení napříč platformami](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 
-- [C# a Visual Basic sdílí koncepty programování](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
+- [C# a Visual Basic sdílí koncepty programování](https://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
 
-- [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
+- [Visual C++](https://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
 
 - [JavaScript](./javascript/javascript-in-visual-studio.md)
 
 - [Python](./python/getting-started-with-python.md)
 
-- [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
+- [Visual F#](https://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
 
-- [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
+- [Visual Studio LightSwitch](https://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
-- [DevOps a správa životního cyklu aplikací](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps a správa životního cyklu aplikací](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
 - [Kontaktujte nás](./ide/talk-to-us.md)

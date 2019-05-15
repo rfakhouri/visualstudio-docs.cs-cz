@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a78025bd11e56b001514f580acca18b7d21d5424
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1a6160fb42ab3648eae9a7ea416e244b5cfabc99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700921"
 ---
 # <a name="cpu-usage"></a>Využití procesoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dob
   
  Návod, který analyzuje výkon aplikace pro Windows Store, naleznete v tématu [analýza využití procesoru v aplikacích pro Store](https://msdn.microsoft.com/library/windows/apps/dn641982.aspx).  
   
- centru pro výkon a diagnostiku vám nabízí spoustu dalších možností spouštění a správu diagnostickou relaci. Například můžete spustit **využití procesoru** nástroj na místních nebo vzdálených počítačích nebo na simulátoru nebo emulátoru. Můžete analyzovat výkon otevřít projekt v sadě Visual Studio, připojit k běžící aplikaci, nebo spusťte aplikaci, která se instaluje z Windows Store. Další informace najdete v tématu [spustit profilovací nástroje bez ladění](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+ centru pro výkon a diagnostiku vám nabízí spoustu dalších možností spouštění a správu diagnostickou relaci. Například můžete spustit **využití procesoru** nástroj na místních nebo vzdálených počítačích nebo na simulátoru nebo emulátoru. Můžete analyzovat výkon otevřít projekt v sadě Visual Studio, připojit k běžící aplikaci, nebo spusťte aplikaci, která se instaluje z Windows Store. Další informace najdete v tématu [spustit profilovací nástroje bez ladění](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_CPU_usage_data"></a> Shromažďování dat o využití procesoru  
   

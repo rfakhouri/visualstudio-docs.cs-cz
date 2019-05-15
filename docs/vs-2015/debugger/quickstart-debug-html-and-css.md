@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1820b1c9838e5558ea6ee96f2abdbcf88a24e4b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be85bd5c09d59df576d66cef6cf2d4e7e34876ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446126"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687654"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Rychlý start: Ladění kódu HTML a CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -306,4 +306,4 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
  [Klávesové zkratky](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [Příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md)   
  [Ladění ukázkový kód HTML, CSS a JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Technická podpora a usnadnění přístupu](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Technická podpora a usnadnění přístupu](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

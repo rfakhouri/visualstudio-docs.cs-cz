@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 863daa41820b8a08f6cd9a6af26c6169fcda97db
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441065"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697252"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,7 +214,7 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
   
 ##### <a name="to-test-the-new-domain-classes"></a>K testování nových tříd domény  
   
-1. **Klikněte na možnost Transformovat všechny šablony** na panelu nástrojů Průzkumníku řešení pro generování kódu návrháře DSL. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1. **Klikněte na možnost Transformovat všechny šablony** na panelu nástrojů Průzkumníku řešení pro generování kódu návrháře DSL. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. **Sestavte a spusťte DSL.** Stisknutím klávesy F5 nebo CTRL + F5, aby se spustil novou instanci třídy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] v experimentálním režimu. V experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otevření nebo vytvoření souboru, který má příponu názvu souboru tohoto kódu DSL.  
   

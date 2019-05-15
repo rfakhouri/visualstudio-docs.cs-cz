@@ -13,12 +13,12 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 538de61fed22f4bcfcb38022b41a81d1239f5f4e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 22cbe4fc34ae41f89709d5b20f2c1188edcd0de3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767077"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685303"
 ---
 # <a name="commandtable-element"></a>CommandTable – element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Commandtable – je kořenovým prvkem souboru .vsct. Toto je soubor, který def
   
 | Atribut |                                                                                                                   Popis                                                                                                                   |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   atribut xmlns   |                                   Povinný parametr. Obory názvů XML:<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>"                                   |
+|   xmlns   |                                   Povinný parametr. Obory názvů XML:<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>"                                   |
 | jazyk  | Volitelné. Atribut language slouží k určení výchozí jazyk všech \<řetězce > prvků v tabulce příkazu.  Pokud jazyk není zadán, použije se jazyk aktuálního procesu:<br /><br /> jazyk = "en-us" |
   
 ### <a name="child-elements"></a>Podřízené elementy  
@@ -63,13 +63,13 @@ Commandtable – je kořenovým prvkem souboru .vsct. Toto je soubor, který def
 |[VisibilityConstraints – element](../extensibility/visibilityconstraints-element.md)|Volitelné. Určuje statické viditelnost příkazů a panely nástrojů.|  
 |[KeyBindings – element](../extensibility/keybindings-element.md)|Volitelné. Určuje kombinace klávesových zkratek, pokud existuje, pro příkazy.|  
 |[UsedCommands – element](../extensibility/usedcommands-element.md)|Volitelné. Umožňuje VSPackage volitelně implementovat svou vlastní verzi funkce původně podporuje další rozšíření VSPackages.|  
-|[Symbols – element](http://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Volitelné. Obsahuje všechna data symbol--identifikátory GUID, ID a tak dále--pro kompilátor.|  
+|[Symbols – element](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Volitelné. Obsahuje všechna data symbol--identifikátory GUID, ID a tak dále--pro kompilátor.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|Žádná||  
+|Žádný||  
   
 ## <a name="see-also"></a>Viz také  
  [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -19,17 +19,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dcb55ee2128d237c2be6f57da828ec3c5877cfdd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c7b97c346cc933e14292fbb1198bfb69ecf59717
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445083"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696166"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Postupy: Použití okna vláken GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-V okně vlákna GPU můžete prozkoumat a práce s vlákny, která běží na grafickém procesoru v aplikaci, kterou ladíte. Další informace o aplikacích, které běží na GPU, naleznete v tématu [přehled modelu C++ AMP](http://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
+V okně vlákna GPU můžete prozkoumat a práce s vlákny, která běží na grafickém procesoru v aplikaci, kterou ladíte. Další informace o aplikacích, které běží na GPU, naleznete v tématu [přehled modelu C++ AMP](https://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
   
  Okna vláken GPU obsahuje tabulku, ve kterém každý řádek představuje sadu vlákna GPU, které mají stejné hodnoty ve všech sloupců. Můžete řadit, změnit pořadí, odebrat a seskupit položky, které jsou ve sloupcích. Můžete označit příznakem, odznačit, ukotvit (Pozastavit) a uvolnit vlákna (pokračovat) z okna vláken GPU. Tyto sloupce se zobrazí v okně vlákna GPU:  
   
@@ -108,4 +108,4 @@ V okně vlákna GPU můžete prozkoumat a práce s vlákny, která běží na gr
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Postupy: Použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md)   
- [Návod: Ladění aplikace C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Návod: Ladění aplikace C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

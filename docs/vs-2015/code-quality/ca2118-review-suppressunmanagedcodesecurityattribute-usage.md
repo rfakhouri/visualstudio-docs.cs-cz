@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4fdbf84cc981dfe9e7cee73fba06867250d2fc33
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059172"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687286"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Zkontrolujte použití SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60059172"
  Veřejný nebo chráněný typ nebo člen má <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atribut.
 
 ## <a name="rule-description"></a>Popis pravidla
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> mění výchozí chování zabezpečení systému pro členy vykonávající nespravovaný kód pomocí modelu COM interop nebo vyvolání platformy. Obecně platí, systém provede [Data a modelování](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) oprávnění pro nespravovaný kód. Tomuto požadavku dojde za běhu pro každé vyvolání členu a zkontroluje každý volající v zásobníku volání o oprávnění. Pokud atribut je k dispozici, systém provede [požadavky propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) oprávnění: se kontroluje oprávnění bezprostředního volajícího, když volající je zkompilován JIT Kompilátorem.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> mění výchozí chování zabezpečení systému pro členy vykonávající nespravovaný kód pomocí modelu COM interop nebo vyvolání platformy. Obecně platí, systém provede [Data a modelování](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) oprávnění pro nespravovaný kód. Tomuto požadavku dojde za běhu pro každé vyvolání členu a zkontroluje každý volající v zásobníku volání o oprávnění. Pokud atribut je k dispozici, systém provede [požadavky propojení](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) oprávnění: se kontroluje oprávnění bezprostředního volajícího, když volající je zkompilován JIT Kompilátorem.
 
  Tento atribut slouží především ke zvýšení výkonu, ačkoliv nárůst výkonu může být spojen s významnými riziky zabezpečení. Pokud umístit atribut na veřejné členy, které volají metody nativní volající v zásobníku volání (jiné než bezprostředního volajícího) není nutné nespravovaný kód oprávnění k provedení nespravovaného kódu. V závislosti na veřejný člen akce a zpracování vstupních mohl nedůvěryhodných volajících pro přístup k funkcím, obvykle s omezením pomocí specifikátoru pro důvěryhodného kódu.
 
@@ -72,4 +72,4 @@ ms.locfileid: "60059172"
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>Viz také
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Pokyny pro zabezpečené kódování](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [optimalizace zabezpečení](http://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [Data a modelování](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [požadavky na propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Pokyny pro zabezpečené kódování](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [optimalizace zabezpečení](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [Data a modelování](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [požadavky na propojení](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

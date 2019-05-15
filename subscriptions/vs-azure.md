@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zjistěte, jak aktivovat výhody služeb Azure součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948449"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685924"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Použití Microsoft Azure v předplatných sady Visual Studio
 
@@ -102,7 +102,7 @@ Pokud máte jiné aktivní předplatné sady Visual Studio na **různých** pře
 
 Pokud vaše předplatné má nastavený limit útraty a nepodniknete žádnou akci před vypršení jeho platnosti, předplatná Azure, kterou vaše předplatné se deaktivuje. Chcete-li převést na nabídku průběžných plateb a dál používat, přidejte platební nástroj a [odebrat limit útraty](/azure/billing/billing-spending-limit/).
 
-Pokud nechcete pokračovat v tomto předplatném sady Visual Studio v Azure, můžete převést prostředky, například virtuální počítače a databáze do jiného předplatného Azure a [zrušit](http://azure.microsoft.com/support/cancel-account/) toto předplatné kdykoli.
+Pokud nechcete pokračovat v tomto předplatném sady Visual Studio v Azure, můžete převést prostředky, například virtuální počítače a databáze do jiného předplatného Azure a [zrušit](https://azure.microsoft.com/support/cancel-account/) toto předplatné kdykoli.
 
 Pokud si myslíte, že tento e-mail jste dostali omylem, obraťte se prosím [Azure zákaznickou podporu](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 

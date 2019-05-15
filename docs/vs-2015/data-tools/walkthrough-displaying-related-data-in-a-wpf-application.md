@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: c7cd8a48092c39048d52a7ebe9cd27163ba32110
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 560852fc25a3e00134e4ed8b6bd06205248b208d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424781"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688428"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Návod: Zobrazení souvisejících dat v aplikaci WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ V tomto návodu vytvoříte aplikaci WPF, která zobrazí data z tabulek databá
   
   Předchozí znalosti následujících konceptů je také užitečné, ale nejsou vyžadovány k dokončení návodu:  
   
-- Datových modelech entity a ADO.NET Entity Framework. Další informace najdete v tématu [přehled Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Datových modelech entity a ADO.NET Entity Framework. Další informace najdete v tématu [přehled Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- Práce s WPF Designer. Další informace najdete v tématu [WPF a Silverlight Návrhář přehled](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Práce s WPF Designer. Další informace najdete v tématu [WPF a Silverlight Návrhář přehled](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- Datové vazby WPF. Další informace najdete v tématu [přehled datových vazeb](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Datové vazby WPF. Další informace najdete v tématu [přehled datových vazeb](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="creating-the-project"></a>Vytvoření projektu  
  Vytvořte nový projekt WPF, chcete-li zobrazit pořadí záznamů.  

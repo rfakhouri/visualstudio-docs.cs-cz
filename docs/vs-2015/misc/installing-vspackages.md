@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 43db03ef-ceb5-4c13-875f-90259f470cc7
 caps.latest.revision: 18
 manager: jillfra
-ms.openlocfilehash: 4bf99473faf8bc2bf7c02af360e24c398c48e297
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72eb9df3eda2535339cb7950578fd6a640a5a493
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948157"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681597"
 ---
 # <a name="installing-vspackages"></a>Instalace balíčků VSPackage
 Tato část popisuje, jak sestavit a nainstalovat rozšíření VSPackages a jak podporovat uživatelům, kteří používají více verzí z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve stejnou dobu.  
@@ -28,10 +28,10 @@ Tato část popisuje, jak sestavit a nainstalovat rozšíření VSPackages a jak
  Popisuje, jak vaše rozšíření VSPackages instalovat produkt release.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Přizpůsobení pro účely testování pomocí sady Visual Studio SDK](http://msdn.microsoft.com/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
+ [Přizpůsobení pro účely testování pomocí sady Visual Studio SDK](https://msdn.microsoft.com/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
  Popisuje, jak můžete rozšířit [!INCLUDE[vsprvstte](../includes/vsprvstte-md.md)] pro podporu nových typů testů.  
   
- [Zkoušky integrace sady Visual Studio](http://msdn.microsoft.com/8d741735-7d93-46c2-ab93-01da7a0e016d)  
+ [Zkoušky integrace sady Visual Studio](https://msdn.microsoft.com/8d741735-7d93-46c2-ab93-01da7a0e016d)  
  Poskytuje sadu testů, abyste měli jistotu, že rozšíření VSPackages správně integrovat do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Vydání produktu](../misc/releasing-a-visual-studio-integration-product.md)  

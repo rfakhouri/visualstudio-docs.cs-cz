@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74495c068cbd476014fa2c10088239e096d42f02
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840932"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696011"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Možnosti, textový editor, XAML, formátování
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "56840932"
 Použití **formátování** stránky vlastností k určení, jak jsou formátovány elementů a atributů v dokumentech XAML. Chcete-li otevřít **možnosti** dialogovém okně klikněte na tlačítko **nástroje** nabídky a pak klikněte na tlačítko **možnosti**. Přístup **formátování** vlastnost stránce, rozbalte **textový Editor**, **XAML**, **formátování** uzlu.
 
 > [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="auto-formatting-events"></a>Události automatického formátování
 Automatické formátování může dojít, když se zjistí některý z následujících událostí.
@@ -127,6 +127,6 @@ Toto nastavení použijte k určení, zda uživatelské ovládací prvky a vlast
 |**Automaticky naplnit panel nástrojů položkami**|Určuje, zda uživatelské ovládací prvky a vlastních ovládacích prvků v aktuálním řešení se zobrazují v panelu nástrojů automaticky.|
 
 ## <a name="see-also"></a>Viz také
-[XAML ve WPF](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[Postupy: Změna nastavení zobrazení XAML](http://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
-[Návody pro kód a XAML](http://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+[XAML ve WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
+[Postupy: Změna nastavení zobrazení XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
+[Návody pro kód a XAML](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

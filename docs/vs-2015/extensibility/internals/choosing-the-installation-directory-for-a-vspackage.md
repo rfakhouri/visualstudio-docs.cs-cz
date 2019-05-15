@@ -10,12 +10,12 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d8812ce6eef882f4f1b4effe97320492a34e0f2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4100c045181f32e51abcc59116a69cad6cc33b5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755564"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697250"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Výběr instalačního adresáře pro balíček VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ V systému souborů uživatele musí být VSPackage a jeho podpůrné soubory. U
 ## <a name="see-also"></a>Viz také  
  [Volba mezi sdíleným a Verzovaným rozšířením VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Správa rozšíření VSPackages](../../extensibility/managing-vspackages.md)   
- [Registrace spravovaného balíčku](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Registrace spravovaného balíčku](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

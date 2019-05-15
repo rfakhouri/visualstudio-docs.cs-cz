@@ -8,12 +8,12 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2558ec2c222bf07ad23c1d00fb3d99b4de5d9f25
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19c262690671966b20af767e53ba1f46c36592e2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087440"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695153"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Testování částí stávajících aplikací C++ pomocí Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -158,7 +158,7 @@ Doporučujeme, před změnou existující aplikace, zkontrolujte, že na něm do
    }  
    ```  
   
-   Další informace najdete v tématu [testování částí nativního kódu pomocí Průzkumníka testů](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c).  
+   Další informace najdete v tématu [testování částí nativního kódu pomocí Průzkumníka testů](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c).  
   
 ## <a name="run-the-tests"></a>Spustit testy  
   

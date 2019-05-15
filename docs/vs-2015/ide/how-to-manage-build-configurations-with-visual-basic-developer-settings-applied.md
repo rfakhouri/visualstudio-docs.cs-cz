@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5d7339ac0e79ac318dcf3913be97bec6847ec69
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c2cf949803bcc864937e67c1f94addaaf6abacbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430547"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685630"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Postupy: Správa konfigurací sestavení s použitými nastaveními vývojáře jazyka Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63430547"
 Ve výchozím nastavení jsou všechny možnosti rozšířené sestavení konfigurace skryté s [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] použitými nastaveními vývojáře. Toto téma vysvětluje, jak povolit tato nastavení ručně.  
   
 ## <a name="enabling-advanced-build-configurations"></a>Povolení upřesněné konfigurace sestavení  
- Ve výchozím nastavení [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] nastavení pro vývojáře Skrýt možnost otevření **nástroje Configuration Manager** dialogové okno a **konfigurace** a **platformy** seznamů v [Návrhář projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+ Ve výchozím nastavení [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] nastavení pro vývojáře Skrýt možnost otevření **nástroje Configuration Manager** dialogové okno a **konfigurace** a **platformy** seznamů v [Návrhář projektu](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 #### <a name="to-enable-advanced-build-configurations"></a>Chcete-li povolit pokročilé konfigurace sestavení  
   

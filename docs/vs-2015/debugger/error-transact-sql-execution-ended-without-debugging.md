@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 910b84e7a024547208ea2e7ae1d6a6897cf60893
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cdfcaa42c55f87711b0889c6a67d1a4799b84fed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431885"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681079"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Chyba: Spuštění Transact-SQL skončilo bez ladění.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ Tato chyba nastane, pokud se pokoušíte ladit příkazů jazyka Transact-SQL ne
   
   Chcete-li opravit tuto chybu, potřebujete:  
   
-- Ověřte nastavení oprávnění. Další informace najdete v tématu [jak: Nastavení oprávnění serveru SQL pro ladění](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+- Ověřte nastavení oprávnění. Další informace najdete v tématu [jak: Nastavení oprávnění serveru SQL pro ladění](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
 - Ujistěte se, že pokud ladění SQL zařídit správné nastavení.  
   
 - Poraďte se správcem vaší sítě nebo databáze.  
   
 ## <a name="see-also"></a>Viz také  
- [Nastavení ladění SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [Postupy: Nastavení oprávnění serveru SQL pro ladění](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [Nastavení ladění SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [Postupy: Nastavení oprávnění serveru SQL pro ladění](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   
  [Vzdálené ladění](../debugger/remote-debugging.md)

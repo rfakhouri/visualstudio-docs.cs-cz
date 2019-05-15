@@ -14,22 +14,22 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9c21bb50c9e97ed6a5daee713882f1d25456202
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1f59c6706a66596c3899de87a2c8142d71bcc4bf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660993"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679780"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Stránka Moje rozšíření, návrhář projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Použití **Moje rozšíření** stránku **Návrháře projektu** ke správě `My` rozšíření oboru názvů ve vašem projektu. `My` rozšíření oboru názvů umožňují přizpůsobit `My` obor názvů pro přidání vlastních členů. Informace o vytváření vlastních `My` rozšíření oboru názvů, naleznete v tématu [rozšíření My Namespace v jazyce Visual Basic](http://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e).  
+Použití **Moje rozšíření** stránku **Návrháře projektu** ke správě `My` rozšíření oboru názvů ve vašem projektu. `My` rozšíření oboru názvů umožňují přizpůsobit `My` obor názvů pro přidání vlastních členů. Informace o vytváření vlastních `My` rozšíření oboru názvů, naleznete v tématu [rozšíření My Namespace v jazyce Visual Basic](https://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e).  
   
  Pro přístup **Moje rozšíření** stránce, dvakrát klikněte na panel **Můj projekt** pro uzel projektu v **Průzkumníku řešení**. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **Moje rozšíření** kartu.  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
- Tyto možnosti umožňují přidávat nebo odebírat `My` rozšíření oboru názvů ve vašem projektu. A `My` obor názvů rozšíření je nutné nejdříve nainstalovat jako šablonu položky Visual Studio bude možné přidat. Informace o publikování a instalaci `My` rozšíření oboru názvů, naleznete v tématu [balení a nasazení Moje rozšíření pro vlastní](http://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21).  
+ Tyto možnosti umožňují přidávat nebo odebírat `My` rozšíření oboru názvů ve vašem projektu. A `My` obor názvů rozšíření je nutné nejdříve nainstalovat jako šablonu položky Visual Studio bude možné přidat. Informace o publikování a instalaci `My` rozšíření oboru názvů, naleznete v tématu [balení a nasazení Moje rozšíření pro vlastní](https://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21).  
   
  **Rozšíření rozhraní My namespace**  
  Tento seznam obsahuje všechny `My` rozšíření oboru názvů, které jsou nainstalované v projektu.  
@@ -41,7 +41,7 @@ Použití **Moje rozšíření** stránku **Návrháře projektu** ke správě `
  Vyberte jeden nebo více odkazů v **rozšíření rozhraní My namespace** seznamu a potom klikněte na toto tlačítko odeberete `My` rozšíření oboru názvů z projektu.  
   
 ## <a name="see-also"></a>Viz také  
- [Rozšíření My Namespace v jazyce Visual Basic](http://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e)   
- [Balení a nasazení vlastních rozšíření oboru názvů My](http://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21)   
- [Rozšíření aplikačního modelu jazyka Visual Basic](http://msdn.microsoft.com/library/e91d3bed-4c27-40e3-871d-2be17467c72c)   
- [Přizpůsobení výběru objektů dostupných v oboru názvů My](http://msdn.microsoft.com/library/4e8279c2-ed5b-4681-8903-8a6671874000)
+ [Rozšíření My Namespace v jazyce Visual Basic](https://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e)   
+ [Balení a nasazení vlastních rozšíření oboru názvů My](https://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21)   
+ [Rozšíření aplikačního modelu jazyka Visual Basic](https://msdn.microsoft.com/library/e91d3bed-4c27-40e3-871d-2be17467c72c)   
+ [Přizpůsobení výběru objektů dostupných v oboru názvů My](https://msdn.microsoft.com/library/4e8279c2-ed5b-4681-8903-8a6671874000)

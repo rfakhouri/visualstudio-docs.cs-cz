@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb123b952287de0b519bfdd40b0d9a851a0b81f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403574"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686878"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -297,11 +297,11 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
-- [Definování procesu sestavení](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [Definování procesu sestavení](https://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
-- [Použít proces sestavení hlídaného vrácení se změnami pro ověření změn](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [Použít proces sestavení hlídaného vrácení se změnami pro ověření změn](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
-- [Přizpůsobení šablony procesu sestavení](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Přizpůsobení šablony procesu sestavení](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
 ### <a name="GeneralTips"></a> Obecné tipy pro vytváření a použití modelů  
   
@@ -336,13 +336,13 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
   Další informace:  
   
-- [Sledování práce pomocí Visual Studio Team Services nebo Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [Sledování práce pomocí Visual Studio Team Services nebo Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 - [Propojení prvků modelu a pracovních položek](../modeling/link-model-elements-and-work-items.md)  
   
-- [Grafy, řídicí panely a sestavy pro Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [Grafy, řídicí panely a sestavy pro Visual Studio ALM](https://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
-- [Vytvoření nevyřízených položek a úkolů pomocí aplikace Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [Vytvoření nevyřízených položek a úkolů pomocí aplikace Project](https://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ### <a name="TestValidateCheckInCode"></a> Testování, ověřování a vrácení kódu se změnami  
  Jak týmy dokončují jednotlivé úkoly, vraťte jejich kód do správy verzí Team Foundation a přijměte připomenutí z Team Foundation Server, v případě, že zapomenete. Předtím, než Team Foundation Server přijme jejich vrácení se změnami, týmy spustí jednotkové testy a ověření vrstvy za účelem ověření kódu proti testovacím případům a návrhu. Používají Team Foundation Server pro sestavení, spouštět automatizované testy jednotky a pravidelné validaci vrstev. To pomáhá se ujistit, že kód splňuje následující kritéria:  
@@ -359,13 +359,13 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
   Další informace:  
   
-- [Testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [Testování aplikace](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
 - [Ověřování systému během vývoje](../modeling/validate-your-system-during-development.md)  
   
 - [Správa verzí](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
-- [Sestavení aplikace](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Sestavení aplikace](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ## <a name="UpdatingSystem"></a> Aktualizace systému pomocí vizualizace a modelování  
  Společnost Lucerne a Dinner Now musí integrovat své platební systémy. Následující oddíly zobrazují že diagramy modelování v sadě Visual Studio pomáhat při provedení této úlohy:  
@@ -888,6 +888,6 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
  [Vizualizace kódu](../modeling/visualize-code.md)   
  [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)   
  [Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)   
- [Použití modelů v Agilním vývoji](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Použití modelů v Agilním vývoji](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Ověřování systému během vývoje.](../modeling/validate-your-system-during-development.md)   
  [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)

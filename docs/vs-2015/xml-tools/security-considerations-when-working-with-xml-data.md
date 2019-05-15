@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fab67780f113c2348fa30e80c4174d1f26f130f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 448396ebf8bf6318a22d7c6b05037d3ea43b0fd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109046"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697131"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Aspekty zabezpečení při práci s daty XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +42,4 @@ Toto téma popisuje problémy se zabezpečením, které je potřeba vědět o p�
 - Chyba při vyhodnocování výrazu XSLT je načtena pomocí spravovaného ladicího stroje. Spravovaného ladicího stroje se předpokládá, že všechny kód se spouští z místního počítače uživatele. Odpovídajícím způsobem <xref:System.Xml.Xsl.XslCompiledTransform> třídy stáhne soubor XSLT do místního počítače uživatele. Možnost, že mohlo dojít ke zvýšení úrovně oprávnění v provádění oprávnění zmírnit provádění všechny transformace XSLT v nové doméně aplikace s omezenými oprávněními  
   
 ## <a name="see-also"></a>Viz také  
- [Aplikační domény](http://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)
+ [Aplikační domény](https://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)

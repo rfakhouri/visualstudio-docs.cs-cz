@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 039e6d5ae21059692aecc05de51bc2b311436334
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580630"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695634"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí Návrháře XAML v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní při návrh
 
  **Zarovnávacích čar** jsou zarovnávacích čar *hranicích zarovnání* , která se zobrazují jako přerušovaná red řádky k zobrazení při okraji ovládací prvky odpovídají nebo když jsou zarovnané text směrné plány. Hranice pro zarovnání se zobrazí pouze tehdy, když **přichycování k zarovnávacím čárám** je povolená.
 
- **Mřížka rails** `Grid` rails se používají ke správě řádků a sloupců v [mřížky](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) panelu. Můžete vytvářet a odstraňovat řádky a sloupce a můžeme upravit jejich relativní šířky a výšky. Svislé lišty mřížky, které se zobrazí na levé straně návrhové plochy, se používá pro řádky a vodorovná čára, která se zobrazí v horní části, se používá pro sloupce.
+ **Mřížka rails** `Grid` rails se používají ke správě řádků a sloupců v [mřížky](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) panelu. Můžete vytvářet a odstraňovat řádky a sloupce a můžeme upravit jejich relativní šířky a výšky. Svislé lišty mřížky, které se zobrazí na levé straně návrhové plochy, se používá pro řádky a vodorovná čára, která se zobrazí v horní části, se používá pro sloupce.
 
  **Doplňky pro úpravy mřížky** A `Grid` doplněk pro úpravy se zobrazí jako trojúhelník, který má k němu připojená na svislý nebo vodorovný řádku `Grid` lišty. Při přetažení `Grid` doplněk pro úpravy, šířky nebo výšky sousedící sloupce nebo řádky aktualizovat, protože najeďte myší.
 
@@ -50,7 +50,7 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní při návrh
 
  **Úchyty pro změnu velikosti** úchyty pro změnu velikosti, zobrazí se na vybraných ovládacích prvků a vám umožní změnit velikost ovládacího prvku. Při změně velikosti ovládacího prvku se zobrazí hodnoty šířky a výšky obvykle umožňují upravit velikost ovládacího prvku. Další informace o manipulaci s ovládacích prvků v návrhovém zobrazení najdete v tématu [práce s elementy v Návrháři XAML](../designers/working-with-elements-in-xaml-designer.md).
 
- **Okraje** okraje představují velikost pevné mezery mezi okrajem ovládacího prvku a hraničními zařízeními svého kontejneru. Můžete nastavit okraje ovládacího prvku pomocí [okraj](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) pod **rozložení** v okně Vlastnosti.
+ **Okraje** okraje představují velikost pevné mezery mezi okrajem ovládacího prvku a hraničními zařízeními svého kontejneru. Můžete nastavit okraje ovládacího prvku pomocí [okraj](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) pod **rozložení** v okně Vlastnosti.
 
  **Doplňky pro úpravy okrajů** Změna okrajů elementu vzhledem k jeho kontejner rozložení můžete použít doplňků pro úpravy rozpětí. Při otevření okrajů není nastavená okraj a doplněk pro úpravy rozpětí zobrazí porušený řetězec. Když není nastavená na okraji, zůstane prvky při změně velikosti kontejneru rozložení v době běhu na místě. Při zavření okrajů okrajů zobrazí Nepřerušený řetěz a prvky budou přesunuty spolu s okrajem při změně velikosti kontejneru rozložení v době běhu (na okraj zůstanou pevné).
 

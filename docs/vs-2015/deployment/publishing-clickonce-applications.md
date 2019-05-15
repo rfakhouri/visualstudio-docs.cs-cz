@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ba48e28d5ace9dc1c07d7ec302d070d5d5f15e6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: de804cb26eb9c51acc67445e1f1b1c0fdfabab91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834817"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697535"
 ---
 # <a name="publishing-clickonce-applications"></a>Publikování aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] vlastn
   
   Další informace najdete v tématu [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-## <a name="publish-page"></a>Stránka publikovat  
+## <a name="publish-page"></a>Stránka Publikovat  
  **Publikovat** stránku **Návrháře projektu** slouží ke konfiguraci vlastností pro nasazení ClickOnce. V následující tabulce jsou uvedeny témata  
   
 |Název|Popis|  
@@ -98,8 +98,8 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] vlastn
 |[Návod: Stahování satelitních sestavení na vyžádání rozhraním API pro nasazení ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Popisuje, jak označit vaše satelitní sestavení jako volitelné a stáhnout pouze sestavení klientský počítač, musí mít nastavení aktuální jazykové verze.|  
 |[Návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Vysvětluje způsob používání nástrojů rozhraní .NET Framework pro nasazení aplikace ClickOnce.|  
 |[Návod: Ruční nasazení aplikace ClickOnce, které nevyžaduje opětovné podepsání a zachovává údaje o poskytovateli](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|Vysvětluje způsob používání nástrojů rozhraní .NET Framework pro nasazení aplikace ClickOnce bez opětovné podepisování manifestů.|  
-|[NIB: Postupy: Optimalizovat aplikace pro konkrétní typ procesoru](http://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|Vysvětluje, jak publikovat pro 64bitový procesor tak, že změníte **cílový procesor** nebo **Cílová platforma** vlastnosti ve vašem projektu.|  
-|[Návod: Povolení aplikace ClickOnce spouštět na více verzí rozhraní .NET Framework](http://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Vysvětluje, jak povolit aplikace ClickOnce k instalaci a spuštění na více verzích rozhraní .NET Framework.|  
+|[NIB: Postupy: Optimalizovat aplikace pro konkrétní typ procesoru](https://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|Vysvětluje, jak publikovat pro 64bitový procesor tak, že změníte **cílový procesor** nebo **Cílová platforma** vlastnosti ve vašem projektu.|  
+|[Návod: Povolení aplikace ClickOnce spouštět na více verzí rozhraní .NET Framework](https://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Vysvětluje, jak povolit aplikace ClickOnce k instalaci a spuštění na více verzích rozhraní .NET Framework.|  
 |[Návod: Vytvoření vlastního instalátoru aplikace ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Vysvětluje, jak vytvořit vlastní instalační program pro instalaci aplikace ClickOnce.|  
 |[Postupy: Publikování aplikace WPF s povolenými vizuálními styly](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Obsahuje podrobné pokyny pro řešení chyby, jež se zobrazí při pokusu o publikování aplikace WPF, která má povoleny vizuální styly.|  
   

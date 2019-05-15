@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dec62254e64c137f133ddb1dbad849e25cb81f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d7a7663a2e365f800b754b771bffca4f539cee51
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755483"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675437"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Ukázky nasazení ClickOnce a podrobné návody
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,5 +41,5 @@ Tato část obsahuje ukázkové aplikace, ukázkový kód a podrobné návody, k
 |[Stahování sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Vysvětluje, jak stáhnout aplikaci sestavení pouze při prvním použití aplikace.|  
   
 ## <a name="see-also"></a>Viz také  
- [Návody pro Visual Studio](http://msdn.microsoft.com/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Návody pro Visual Studio](https://msdn.microsoft.com/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Ukázky sady Visual Studio](../ide/visual-studio-samples.md)

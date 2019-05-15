@@ -18,17 +18,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33c466d3c7a619de87baccd2713c9a595283d5ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4cba42203cb5d42e2518d2f1ead7fb998d9b6425
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422791"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680644"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Postupy: Konfigurace projektů pro cílové platformy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umožňuje nastavit vašich aplikací na různých platformách, včetně 64bitových platforem. Další informace o 64bitové platformě podporují v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], naleznete v tématu [64bitové aplikace](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umožňuje nastavit vašich aplikací na různých platformách, včetně 64bitových platforem. Další informace o 64bitové platformě podporují v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], naleznete v tématu [64bitové aplikace](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>Cílení na platformy s Configuration Managerem  
  **Nástroje Configuration Manager** poskytuje způsob, jak můžete rychle přidat novou platformu k cíli s projektem. Pokud vyberete některou z platforem součástí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dojde k úpravě vlastností pro váš projekt k sestavení projektu pro vybranou platformu.  
@@ -57,14 +57,14 @@ ms.locfileid: "63422791"
   
  Provedení tohoto úkolu se liší v závislosti na programovacím jazyku, který používáte. V následujících tématech pro další informace:  
   
-- Pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektů, naleznete v tématu [/Platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+- Pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektů, naleznete v tématu [/Platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
 - Pro [!INCLUDE[csprcs](../includes/csprcs-md.md)] projektů, naleznete v tématu [stránku sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
-- Pro [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektů, naleznete v tématu [/CLR (kompilace Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+- Pro [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektů, naleznete v tématu [/CLR (kompilace Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 ## <a name="see-also"></a>Viz také  
  [Principy platforem sestavení](../ide/understanding-build-platforms.md)   
- [/ Platform (možnosti kompilátoru C#)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
- [64bitové aplikace](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [/ Platform (možnosti kompilátoru C#)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
+ [64bitové aplikace](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide-64-bit-support.md)

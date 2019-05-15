@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 24b874ab71cba23a3fe6cf4a6fb36293d6753935
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384048"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697763"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Nástroje LINQ to SQL v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Technologie LINQ to SQL byl první objektově relační mapování technologie v
 
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Má dva různé oblasti na svém povrchu návrhu: v podokně entity na levé straně a metody podokno na pravé straně. V podokně entity je hlavní návrhovou plochu, zobrazující tříd entit, přidružení a hierarchie dědičnosti. Podokno metody je na návrhovou plochu, zobrazující <xref:System.Data.Linq.DataContext> metody, které jsou mapovány na uložené procedury a funkce.
 
- [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) Poskytuje vizuální návrhová plocha pro vytváření [technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) tříd entit a přidružení (relace), které jsou založeny na objekty v databázi. Jinými slovy [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] slouží k vytvoření objektového modelu v aplikaci, která mapuje pro objekty v databázi. Zároveň se vygeneruje silného typu <xref:System.Data.Linq.DataContext> , který slouží k odesílání a přijímání dat mezi třídami entit a databáze. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Také přiřazuje funkce mapě uložených procedur a funkcí <xref:System.Data.Linq.DataContext> metody pro vrácení dat a naplnění tříd entit. Nakonec [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] umožňuje návrh vztahy dědičnosti mezi třídami entit.
+ [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) Poskytuje vizuální návrhová plocha pro vytváření [technologie LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) tříd entit a přidružení (relace), které jsou založeny na objekty v databázi. Jinými slovy [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] slouží k vytvoření objektového modelu v aplikaci, která mapuje pro objekty v databázi. Zároveň se vygeneruje silného typu <xref:System.Data.Linq.DataContext> , který slouží k odesílání a přijímání dat mezi třídami entit a databáze. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Také přiřazuje funkce mapě uložených procedur a funkcí <xref:System.Data.Linq.DataContext> metody pro vrácení dat a naplnění tříd entit. Nakonec [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] umožňuje návrh vztahy dědičnosti mezi třídami entit.
 
 ## <a name="opening-the-or-designer"></a>Otevření Návrháře relací objektů
  Chcete-li přidat LINQ do SQL entity modelu do projektu, zvolte **projektu &#124; přidat novou položku** a klikněte na tlačítko **třídy LINQ to SQL** ze seznamu položek projektu:
@@ -62,7 +62,7 @@ Technologie LINQ to SQL byl první objektově relační mapování technologie v
  Jiné objekty, jako jsou [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] dědičnost lze použít třídy a být odvozen od jiných tříd. V databázi vztahy dědičnosti vytvoří několika způsoby. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Podporují koncept dědičnosti jedné tabulky, jak často je implementován v relačních systémech. Další informace najdete v tématu [jak: Konfigurace dědičnosti pomocí Návrháře relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>Dotazy LINQ to SQL
- Tříd entit, které jsou vytvořené [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] jsou určeny k použití s [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d). Další informace najdete v tématu [jak: Dotaz na informace o](http://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0).
+ Tříd entit, které jsou vytvořené [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] jsou určeny k použití s [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d). Další informace najdete v tématu [jak: Dotaz na informace o](https://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0).
 
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Oddělení generované DataContext a kód třídy Entity do různých oborech názvů
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Poskytuje **kontextu Namespace** a **Entity Namespace** vlastnosti <xref:System.Data.Linq.DataContext>. Tyto vlastnosti určují, jaký obor názvů <xref:System.Data.Linq.DataContext> a generování kódu entity třídy do. Ve výchozím nastavení, tyto vlastnosti jsou prázdné a <xref:System.Data.Linq.DataContext> a tříd entit, které jsou vygenerovány do oboru názvů aplikace. Ke generování kódu do oboru názvů, než je obor názvů aplikace, zadejte hodnotu do **kontextu Namespace** a/nebo **Entity Namespace** vlastnosti.
@@ -100,4 +100,4 @@ Technologie LINQ to SQL byl první objektově relační mapování technologie v
  <xref:System.Data.Linq>
 
 ## <a name="see-also"></a>Viz také
- [Visual Studio data tools pro .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [– nejčastější dotazy](http://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+ [Visual Studio data tools pro .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [– nejčastější dotazy](https://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [technologie LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

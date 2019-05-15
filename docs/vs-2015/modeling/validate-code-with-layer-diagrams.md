@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1a0ce9cfaa09a5332d0bce39b31f946b7b5a177
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d7df6e4a4bddc2d3e9bf7ab84375a65a6d2c98
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437491"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700656"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Ověřování kódu pomocí diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ Pokud chcete mít jistotu, že kód není v konfliktu s návrhem, ověřování 
 |Skrytí všech potlačených chyb v **seznam chyb** okna|Klikněte pravým tlačítkem kamkoli **seznam chyb** okno, přejděte na příkaz **spravovat chyby ověřování**a potom klikněte na tlačítko **skrýt všechny Potlačené chyby**.|  
   
 ## <a name="ValidateAuto"></a> Ověřování kódu automaticky  
- Ověřování vrstev lze provádět při každém spuštění místního sestavení. Pokud váš tým používá proces Team Foundation Build, můžete provést ověření vrstev s ověřenými vráceními se změnami, které lze určit vytvořením vlastní úlohy MSBuild, a použít sestavy sestavení pro sběr chyb ověřování. Vytvoření sestavení hlídaného vrácení se změnami naleznete v tématu [použít proces sestavení hlídaného vrácení se změnami pro ověření změn](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
+ Ověřování vrstev lze provádět při každém spuštění místního sestavení. Pokud váš tým používá proces Team Foundation Build, můžete provést ověření vrstev s ověřenými vráceními se změnami, které lze určit vytvořením vlastní úlohy MSBuild, a použít sestavy sestavení pro sběr chyb ověřování. Vytvoření sestavení hlídaného vrácení se změnami naleznete v tématu [použít proces sestavení hlídaného vrácení se změnami pro ověření změn](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Automatické ověřování kódu během místního sestavení  
   
@@ -197,15 +197,15 @@ Pokud chcete mít jistotu, že kód není v konfliktu s návrhem, ověřování 
   
    Další informace o chybách ověřování najdete v části [pochopení a vyřešení chyb ověřování vrstev](#UnderstandingValidationErrors). Další informace o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], naleznete v tématu:  
   
-- [Sestavení aplikace](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Sestavení aplikace](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-- [Použít výchozí šablonu pro proces sestavení](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
+- [Použít výchozí šablonu pro proces sestavení](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
   
-- [Upravit starší verze sestavení, které jsou založeny na UpgradeTemplate.xaml](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
+- [Upravit starší verze sestavení, které jsou založeny na UpgradeTemplate.xaml](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
   
-- [Přizpůsobení šablony procesu sestavení](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Přizpůsobení šablony procesu sestavení](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-- [Průběh můžete monitorovat spuštění sestavení](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
+- [Průběh můžete monitorovat spuštění sestavení](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
 ## <a name="TroubleshootingValidation"></a> Řešení potíží s problémy s ověřením vrstvy  
  Následující tabulka popisuje problémy s ověřením vrstvy a jejich řešení. Tyto problémy se liší od chyb, které vzniknou z konfliktů mezi kódem a návrhem. Další informace o těchto chybách naleznete v tématu [pochopení a vyřešení chyb ověřování vrstev](#UnderstandingValidationErrors).  

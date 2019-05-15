@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234b4252edc587ef52db57d3ec18eb98bb6b849b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fbf945459b0f0e2be041373da1db1cc419f776ed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778614"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674099"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definice Typedefs jazyka Visual C++ v návrháři tříd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ typedef class coord
 };  
 ```  
   
- Další informace o používání `typedef` zadejte naleznete v tématu [specifikátor typedef (NOTINBUILD)](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
+ Další informace o používání `typedef` zadejte naleznete v tématu [specifikátor typedef (NOTINBUILD)](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
   
  Obrazec C++ definice typedef má tvar typu určeného v typedef. Například, pokud zdroj deklaruje `typedef class`, tvar zaoblené rohy a popisek **třídy**. Pro `typedef struct`, hranaté rohy a popisek má obrazec **struktura**.  
   
@@ -64,7 +64,7 @@ typedef class coord
   
  *název* : *typu*  
   
-  – definice typedef  
+ – definice typedef  
   
  Nakreslí Asociační čára připojení na typ *název*, pokud je to možné.  
   
@@ -72,7 +72,7 @@ typedef class coord
   
  `func: void (*)(int)`  
   
-  – definice typedef  
+ – definice typedef  
   
  TypeDef pro ukazatele na funkce. Žádné Asociační čára vykreslením.  
   
@@ -87,7 +87,7 @@ class A {
   
  `MyInt: int`  
   
-  – definice typedef  
+ – definice typedef  
   
  `A`  
   
@@ -105,7 +105,7 @@ class A {
   
  `MyB : B`  
   
-  – definice typedef  
+ – definice typedef  
   
  Pravým tlačítkem myši na obrazec typedef a kliknete na **zobrazit jako přidružení** zobrazí typedef nebo třídy a **Alias** čáru spojující dva tvary (podobně jako Asociační čára).  
   
@@ -115,7 +115,7 @@ class A {
   
  `MyBar : Bar`  
   
-  – definice typedef  
+ – definice typedef  
   
  Stejné jako výše.  
   
@@ -134,7 +134,7 @@ class A {
   
  `MyB : B`  
   
-  – definice typedef  
+ – definice typedef  
   
  `A`  
   
@@ -156,7 +156,7 @@ class A {
   
  `MyIntVect : vector<int>`  
   
-  – definice typedef  
+ – definice typedef  
   
  `class B {};`  
   
@@ -166,7 +166,7 @@ class A {
   
  `MyB : B`  
   
-  – definice typedef  
+ – definice typedef  
   
  -> B  
   
@@ -192,7 +192,7 @@ class A {
   
  `MyIntVect : std::vector<int>`  
   
-  – definice typedef  
+ – definice typedef  
   
  `MyVect`  
   
@@ -202,4 +202,4 @@ class A {
   
 ## <a name="see-also"></a>Viz také  
  [Práce s kódem jazyka Visual C++ (návrhář tříd)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Specifikátor typedef (NOTINBUILD)](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
+ [Specifikátor typedef (NOTINBUILD)](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7173abd87a9e7345e7d7caee02d2bb333f507514
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438065"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696062"
 ---
 # <a name="output-window"></a>Okno Výstup
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,14 +61,14 @@ ms.locfileid: "63438065"
   
  Také můžete naprogramovat zapsat diagnostické zprávy v době běhu na vašich vlastních aplikací **výstup** podokně. K tomuto účelu použít členy <xref:System.Diagnostics.Debug> třídy nebo <xref:System.Diagnostics.Trace> třídy v <xref:System.Diagnostics> oboru názvů z knihovny tříd rozhraní .NET Framework. Členové <xref:System.Diagnostics.Debug> třídy zobrazit výstup při vytváření konfigurace ladění z řešení nebo projektu, členy <xref:System.Diagnostics.Trace> třídy zobrazit výstup při vytváření konfigurace ladění nebo vydání. Další informace najdete v tématu [diagnostické zprávy v okně výstupu](../../debugger/diagnostic-messages-in-the-output-window.md).  
   
- V [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], můžete vytvořit vlastní kroky sestavení a události sestavení, jejichž upozornění a chyby se zobrazí a jsou počítány v **výstup** podokně. Stisknutím klávesy F1 v řádku výstupu, můžete zobrazit příslušné téma nápovědy. Další informace najdete v tématu [Formátovaní výstupu vlastního kroku sestavení nebo události sestavení](http://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
+ V [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], můžete vytvořit vlastní kroky sestavení a události sestavení, jejichž upozornění a chyby se zobrazí a jsou počítány v **výstup** podokně. Stisknutím klávesy F1 v řádku výstupu, můžete zobrazit příslušné téma nápovědy. Další informace najdete v tématu [Formátovaní výstupu vlastního kroku sestavení nebo události sestavení](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
   
 ## <a name="scrolling-behavior"></a>Chování posouvání  
  Pokud používáte automatické procházení v okně Výstup a potom přejděte pomocí myši nebo šipka klíčů, zastaví se automatické procházení. Pokud chcete obnovit automatické procházení, stisknutím klávesy CTRL + END.  
   
 ## <a name="see-also"></a>Viz také  
  [Diagnostické zprávy v okně Výstup](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [Postupy: Řízení výstupního okna](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [Postupy: Řízení výstupního okna](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Kompilování a sestavování](../../ide/compiling-and-building-in-visual-studio.md)   
  [Principy konfigurací sestavení](../../ide/understanding-build-configurations.md)   
- [Přehled knihovny tříd](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
+ [Přehled knihovny tříd](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

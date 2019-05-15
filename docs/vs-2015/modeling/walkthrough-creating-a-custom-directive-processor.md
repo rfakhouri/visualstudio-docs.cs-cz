@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 325a0c594c142ab62aba47e5c721da5ade6f179f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446760"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704050"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Návod: Vytvoření vlastního procesoru direktiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -659,7 +659,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
     Klíč registru by měl mít následující hodnoty:  
 
-   |   Název    |  Typ  |                                   Data                                   |
+   |   Name    |  Typ  |                                   Data                                   |
    |-----------|--------|--------------------------------------------------------------------------|
    | (Výchozí) | REG_SZ |                             (hodnota nenastavena)                              |
    |   Třída   | REG_SZ |                    CustomDP.CustomDirectiveProcessor                     |
@@ -667,7 +667,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
     Pokud jste sestavení vložili do mezipaměti GAC, měly by tyto hodnoty vypadat takto:  
 
-   |   Název    |  Typ  |               Data                |
+   |   Name    |  Typ  |               Data                |
    |-----------|--------|-----------------------------------|
    | (Výchozí) | REG_SZ |          (hodnota nenastavena)          |
    |   Třída   | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -678,7 +678,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 ## <a name="testing-the-directive-processor"></a>Testování procesoru direktiv  
  Při testování procesoru direktiv potřebujete napsat textovou šablonu, která ho zavolá.  
 
- V tomto příkladu volá textová šablona direktivu a předá název souboru XML, který obsahuje dokumentaci pro soubor třídy. Další informace najdete v tématu [dokumentační komentáře XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
+ V tomto příkladu volá textová šablona direktivu a předá název souboru XML, který obsahuje dokumentaci pro soubor třídy. Další informace najdete v tématu [dokumentační komentáře XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
 
  Textová šablona pak pomocí <xref:System.Xml.XmlDocument> vlastnost, kterou direktiva vytvoří, přejde na soubor XML a vytiskne komentáře k dokumentaci.  
 

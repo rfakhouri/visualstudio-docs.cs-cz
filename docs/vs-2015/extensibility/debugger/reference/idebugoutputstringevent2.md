@@ -12,12 +12,12 @@ ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fa62889e2af87325c124fa8e8af1cd9cc4cff253
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 844d93a6752538c6b7239b6c10688fdfbd98b401
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760537"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695193"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugOutputStringEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- DE implementuje toto rozhraní lze odeslat řetězec k **výstup** okno integrovaného vývojového prostředí. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) na stejný objekt jako toto rozhraní musí implementovat rozhraní. Používá SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) přístup `IDebugEvent2` rozhraní.  
+ DE implementuje toto rozhraní lze odeslat řetězec k **výstup** okno integrovaného vývojového prostředí. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) na stejný objekt jako toto rozhraní musí implementovat rozhraní. Používá SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) přístup `IDebugEvent2` rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
  DE vytvoří a odešle objekt této události lze odeslat řetězec k **výstup** okna. Událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkce zpětného volání, který je poskytnut pomocí SDM, když je připojen k laděnému programu.  

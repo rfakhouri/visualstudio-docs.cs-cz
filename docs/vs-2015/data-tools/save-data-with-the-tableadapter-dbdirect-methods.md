@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cba6f91dd6dc0bb826531a312dc6ca5c94b21a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bc5384fcff280c8a38875878ac32051b490624f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558739"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704179"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Ukládání dat pomocí metod TableAdapter DBDirect
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL 
   
 - Vytvořte nový **aplikace Windows**.  
   
-- Vytvoření a konfigurace datové sady [Průvodce konfigurací zdroje dat](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Vytvoření a konfigurace datové sady [Průvodce konfigurací zdroje dat](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 - Vyberte ovládací prvek, který má být vytvořen ve formuláři při přetažení položek z **zdroje dat** okna. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
@@ -57,7 +57,7 @@ Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL 
   
 2. Pojmenujte projekt **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3. Vyberte **aplikace Windows**a pak vyberte **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Vyberte **aplikace Windows**a pak vyberte **OK**. Další informace najdete v tématu [klientské aplikace](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **TableAdapterDbDirectMethodsWalkthrough** projekt je vytvořen a přidán do **Průzkumníka řešení**.  
   
@@ -105,7 +105,7 @@ Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL 
   
 2. Nastavte následující **název** a **Text** vlastnosti na každé tlačítko.  
   
-    |Název|Text|  
+    |Name|Text|  
     |----------|----------|  
     |`InsertButton`|**Vložit**|  
     |`UpdateButton`|**Aktualizace**|  
@@ -153,7 +153,7 @@ Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL 
 ## <a name="next-steps"></a>Další kroky  
  V závislosti na požadavcích aplikace existuje několik kroků, které můžete chtít provést po vytvoření formuláře vázané na data. Mezi vylepšení, která je možné pro tento návod provést, patří:  
   
-- Přidání vyhledávací funkce do formuláře. Další informace najdete v tématu [jak: Přidání parametrického dotazu pro Windows Forms aplikace](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+- Přidání vyhledávací funkce do formuláře. Další informace najdete v tématu [jak: Přidání parametrického dotazu pro Windows Forms aplikace](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
 - Přidání další tabulky do datové sady výběrem **konfigurace datové sady pomocí průvodce** v rámci **zdroje dat** okna. Můžete přidat ovládací prvky zobrazující související data přetažením související uzly na formuláři. 
   

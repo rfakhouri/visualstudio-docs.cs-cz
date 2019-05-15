@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2594c7a6cf648c52f44ea9ee2f71d9481742a94b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a42a05c453c328dc156cadb86c9abc55d587c467
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441667"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674304"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Mezinárodní nastavení, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63441667"
 Stránka mezinárodní nastavení umožňuje změnit výchozí jazyk v případě, že máte více než jedna jazyková verze sady integrovaného vývojového prostředí (IDE) na vašem počítači nainstalovaný. Můžete přístup k tomuto dialogovému oknu výběrem **možnosti** z **nástroje** nabídky a následným výběrem možnosti **mezinárodní nastavení** z **prostředí** složky. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
   
 > [!NOTE]
-> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Jazyk**  
  Zobrazí seznam dostupných jazyků pro jazykové verze nainstalovaného produktu. Tato možnost není dostupná, pokud máte více než jedna jazyková verze na vašem počítači nainstalovaný. Pokud více jazyků produktů nebo smíšený jazyk instalace produktů sdílet prostředí, se změní výběr jazyka na **totéž jako Windows Microsoft**.  

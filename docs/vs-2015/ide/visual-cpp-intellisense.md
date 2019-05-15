@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2754a8ea663d888bb8ba2e2ff0276911976ff0af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802626"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696573"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ V sadě Visual Studio 2015 je k dispozici pro jeden kód soubory stejně jako so
 - Řádek 12 má nachová vlnovku na identifikátor BYE; Tento identifikátor není definován v aktuálně neaktivní Android.NativeActivity projektu.  
   
 ## <a name="single-file-intellisense"></a>Jeden soubor IntelliSense  
- Při otevření jednoho souboru mimo jakýkoli projekt stále získání funkce IntelliSense. Můžete povolit nebo zakázat konkrétní funkce tak, že přejdete do **textový Editor, C/C++, Upřesnit** můžete zapnout nebo vypnout funkce technologie IntelliSense. Chcete-li nakonfigurovat technologie IntelliSense pro jednotlivé soubory, které nejsou součástí projektu, vyhledejte **technologie IntelliSense a procházení pro neprojektové soubory** v **Upřesnit** oddílu. Zobrazit [průvodce Visual C++](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
+ Při otevření jednoho souboru mimo jakýkoli projekt stále získání funkce IntelliSense. Můžete povolit nebo zakázat konkrétní funkce tak, že přejdete do **textový Editor, C/C++, Upřesnit** můžete zapnout nebo vypnout funkce technologie IntelliSense. Chcete-li nakonfigurovat technologie IntelliSense pro jednotlivé soubory, které nejsou součástí projektu, vyhledejte **technologie IntelliSense a procházení pro neprojektové soubory** v **Upřesnit** oddílu. Zobrazit [průvodce Visual C++](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
   
  ![Visual C&#43; &#43; jednoho souboru intellisense](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   

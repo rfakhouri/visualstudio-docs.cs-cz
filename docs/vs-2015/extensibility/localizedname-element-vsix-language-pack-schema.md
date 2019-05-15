@@ -8,12 +8,12 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0747dfe89c2d8d4ceb8321f00f723f973f3ff526
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fcbda9f8c7a98d0830c898c81471854efc3a6403
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783717"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686143"
 ---
 # <a name="localizedname-element-vsix-language-pack-schema"></a>Element LocalizedName (VSIX Language Pack Schema)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Povinný parametr. Lokalizovaný název rozšíření k instalaci.
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|Žádná||  
+|Žádný||  
   
 ### <a name="child-elements"></a>Podřízené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|Žádná||  
+|Žádné||  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
@@ -62,4 +62,4 @@ Povinný parametr. Lokalizovaný název rozšíření k instalaci.
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace schématu VSX Language Pack](../extensibility/vsx-language-pack-schema-reference.md)   
  [Lokalizace balíčků VSIX](../extensibility/localizing-vsix-packages.md)   
- [Referenční dokumentace schématu 1.0 rozšíření VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [Referenční dokumentace schématu 1.0 rozšíření VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

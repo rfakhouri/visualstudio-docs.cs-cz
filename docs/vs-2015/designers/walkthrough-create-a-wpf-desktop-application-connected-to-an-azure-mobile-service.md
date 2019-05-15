@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421255"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693536"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Návod: Vytvoření aplikace WPF plochy připojené k mobilní službě Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Windows Presentation Foundation (WPF) můžete rychle vytvářet moderní aplika
   
 - Aktivní účet Microsoft Azure.  
   
-    - Si můžete zaregistrovat Bezplatný zkušební účet [tady](http://azure.microsoft.com/pricing/free-trial/).  
+    - Si můžete zaregistrovat Bezplatný zkušební účet [tady](https://azure.microsoft.com/pricing/free-trial/).  
   
     - Můžete si aktivovat [výhody pro předplatitele MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Vaše předplatné MSDN vám dává kredity každý měsíc, můžete použít k placení za služby Azure.  
   
@@ -566,7 +566,7 @@ Windows Presentation Foundation (WPF) můžete rychle vytvářet moderní aplika
   
  Více přitažlivé uživatelské rozhraní můžete nastavit tak, že přidáte barvy, tvary, grafika a animace. Zobrazit [návrh XAML v sadě Visual Studio a nástroje Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
   
- Můžete připojit k existující databáze SQL nebo jiných zdrojů dat pomocí Azure Mobile Services. Zobrazit [dokumentace k Mobile Services](http://azure.microsoft.com/services/app-service/mobile/).  
+ Můžete připojit k existující databáze SQL nebo jiných zdrojů dat pomocí Azure Mobile Services. Zobrazit [dokumentace k Mobile Services](https://azure.microsoft.com/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Moje první Desktopová aplikace WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)   

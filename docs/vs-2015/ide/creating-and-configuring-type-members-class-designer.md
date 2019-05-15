@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93d001af54a84bdb2cd2ec00f3e8fb80174c6436
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437604"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701214"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Vytváření a konfigurace členů typů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
 |Modul (pouze VB)|metoda, vlastnost, pole, událost, konstruktor, konstanta|  
   
 > [!NOTE]
-> Když přístupové objekty get a set nepotřebují další logiku, můžete deklaraci vlastnosti zestručnit pomocí automaticky implementovaných vlastností (pouze jazyk C#). Chcete-li zobrazit úplný podpis z **Diagram tříd** nabídce zvolte **změnit formát členů**, **zobrazit úplný podpis**. Další informace o automaticky implementovaných vlastnostech naleznete v tématu [implemented Properties](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Když přístupové objekty get a set nepotřebují další logiku, můžete deklaraci vlastnosti zestručnit pomocí automaticky implementovaných vlastností (pouze jazyk C#). Chcete-li zobrazit úplný podpis z **Diagram tříd** nabídce zvolte **změnit formát členů**, **zobrazit úplný podpis**. Další informace o automaticky implementovaných vlastnostech naleznete v tématu [implemented Properties](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
   
@@ -131,7 +131,7 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
      **Poznámka:** Klávesové zkratky můžete také použít k vytváření členů. Další informace najdete v tématu [klávesové zkratky a zkratky myši v diagramu tříd a okně podrobností třídy (návrhář tříd)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ## <a name="ModifyTypeMembers"></a> Změna členů typů  
- V Návrháři tříd můžete upravit členy typů, které se zobrazí v diagramu. Můžete upravit členy libovolného typu, které se zobrazí v diagramu třídy a nejsou jen pro čtení. (Viz [zobrazení informací jen pro čtení (návrhář tříd)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Členy typu změníte úpravou na místě na návrhové ploše, v okně Vlastnosti a v okně podrobností třídy  
+ V Návrháři tříd můžete upravit členy typů, které se zobrazí v diagramu. Můžete upravit členy libovolného typu, které se zobrazí v diagramu třídy a nejsou jen pro čtení. (Viz [zobrazení informací jen pro čtení (návrhář tříd)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Členy typu změníte úpravou na místě na návrhové ploše, v okně Vlastnosti a v okně podrobností třídy  
   
  Všechny členy zobrazené v okně podrobností třídy představují členy typů v diagramu třídy. Existují čtyři typy členů: metody, vlastnosti, pole a události.  
   
@@ -263,7 +263,7 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
   
  Všechny buňky v okně podrobností třídy jsou editovatelné, s několika výjimkami:  
   
-- Celý typ je jen pro čtení, když, například se nachází v odkazovaném sestavení (viz [zobrazení jen pro čtení informací (návrhář tříd)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Při výběru tvaru v Návrháři tříd, okno podrobností třídy zobrazí jeho detaily ve stavu jen pro čtení.  
+- Celý typ je jen pro čtení, když, například se nachází v odkazovaném sestavení (viz [zobrazení jen pro čtení informací (návrhář tříd)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Při výběru tvaru v Návrháři tříd, okno podrobností třídy zobrazí jeho detaily ve stavu jen pro čtení.  
   
 - V případě indexerů je název jen pro čtení a zbytek (typ, modifikátor, shrnutí) je editovatelný.  
   

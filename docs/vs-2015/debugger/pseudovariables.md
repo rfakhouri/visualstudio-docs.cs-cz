@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac9800025bd55237a4f1d19ca6f07c78c757b603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9ce72d69cb64b0421771324803a785546fa884f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753523"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693755"
 ---
 # <a name="pseudovariables"></a>Pseudoproměnné
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ $handles
 |`$clk`|Zobrazí čas v hodinových cyklech.|  
 |`$user`|Zobrazí se struktura s informacemi o účtu pro účet, který spouští aplikaci. Z bezpečnostních důvodů nejsou informace heslu zobrazeny.|  
 |`$exceptionstack`|Zobrazí trasování zásobníku aktuální výjimky prostředí Windows Runtime. `$ exceptionstack` funguje pouze v aplikacích pro Store, které jsou v systému Windows 8.1 nebo novějším. `$ exceptionstack` není podporováno pro výjimky C++ a SHE|  
-|`$ReturnValue`|Zobrazuje hodnotu vrácenou metody rozhraní .NET Framework. Zobrazit [Kontrola návratových hodnot volání metod](http://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
+|`$ReturnValue`|Zobrazuje hodnotu vrácenou metody rozhraní .NET Framework. Zobrazit [Kontrola návratových hodnot volání metod](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
   
  V jazyce C# a Visual Basic můžete použít pseudoproměnné uvedené v této tabulce:  
   
@@ -68,8 +68,8 @@ $handles
 |`$delete` Nebo `$$delete`|Odstraní implicitní proměnné, který byl vytvořen v **okamžité** okna. Syntaxe je `$delete,` *proměnnou* nebo`$delete,` *proměnné*`.`|  
 |`$objectids` Nebo `$listobjectids`|Zobrazí všechny aktivní ID objektů jako podřízené položky, z určeného výrazu. Syntaxe je `$objectid,` *výraz* nebo`$listobjectids,` *výraz*`.`|  
 |`$` *N* `#`|Zobrazí objekt s ID objektu rovna *N*.|  
-|`$dynamic`|Zobrazí zvláštní **dynamického zobrazení** uzlu pro objekt, který implementuje `IDynamicMetaObjectProvider`. rozhraní. Syntaxe je `$dynamic,` *objekt*. Tato funkce se vztahuje pouze na kód, který používá rozhraní .NET Framework verze 4. Zobrazit [dynamického zobrazení](http://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
+|`$dynamic`|Zobrazí zvláštní **dynamického zobrazení** uzlu pro objekt, který implementuje `IDynamicMetaObjectProvider`. rozhraní. Syntaxe je `$dynamic,` *objekt*. Tato funkce se vztahuje pouze na kód, který používá rozhraní .NET Framework verze 4. Zobrazit [dynamického zobrazení](https://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
   
 ## <a name="see-also"></a>Viz také  
  [Kukátko a Rychlé kukátko Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Proměnné Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [Proměnné Windows](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

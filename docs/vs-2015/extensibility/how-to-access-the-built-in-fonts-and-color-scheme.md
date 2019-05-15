@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a43fb3a22ecb2d04542eacf07bf883590868b75b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430927"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685312"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Postupy: Přístup k vestavěné písma a barvy schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schém
   
 2. Název kategorie musí přidat do tabulky řetězců uvnitř sady VSPackage soubor prostředků (.rc), tak, aby může být lokalizována, podle potřeby při zobrazení v rozhraní IDE.  
   
-    Další informace najdete v tématu [přidání nebo odstranění řetězce](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
+    Další informace najdete v tématu [přidání nebo odstranění řetězce](https://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>K registraci kategorie pomocí integrované písmo a barvy  
   
@@ -57,7 +57,7 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schém
   
 2. Naplnění registru uložených písma a barvy schéma pomocí čtyři hodnoty:  
   
-    |Název|Typ|Data|Popis|  
+    |Name|Typ|Data|Popis|  
     |----------|----------|----------|-----------------|  
     |Kategorie|REG_SZ|GUID|Libovolné GUID, který určuje kategorii, která obsahuje základní schéma písma a barvy.|  
     |Balíček|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Všechny balíčky VSPackages, které používají výchozí písmo a barvu konfigurace používá tento identifikátor GUID.|  

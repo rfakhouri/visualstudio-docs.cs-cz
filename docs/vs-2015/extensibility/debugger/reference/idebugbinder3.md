@@ -12,12 +12,12 @@ ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d6284b31752d21ddaddb5586a342fc8cda6f21c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f23c2ad4aeaf911e45b28686584d741e5c4d22f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439918"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704128"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ IDebugBinder3 : IDebugBinder
  Ladicí stroj implementuje toto rozhraní pro podporu aliasy, vlastní vizualizér služby a přístup k informacím o typu objektu.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) rozhraní získá pomocí tohoto rozhraní [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3).  
+ [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) rozhraní získá pomocí tohoto rozhraní [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3).  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
  Kromě metod poskytovaných parametrem [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) rozhraní, toto rozhraní implementuje následující:  

@@ -11,12 +11,12 @@ ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 98b3892d10b003d6236ae9ccfbebb83a602a5877
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cde3b86e19788c41df6e8f1c79a6bf829f491170
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759614"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675248"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Soubory tabulek příkazů sady Visual Studio (.Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ Příkaz tabulky konfigurační soubor je textový soubor, který popisuje sadu 
  [Návrh souborů tabulky příkazů XML (.Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  Popisuje postup návrhu soubory .vsct.  
   
- [Postupy: Vytvoření. Soubor Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
+ [Postupy: Vytvoření souboru .Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
  Porovnává metody pro vytvoření souboru .vsct. Popisuje proces pro ruční vytvoření nového souboru .vsct.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [XML schéma VSCT – referenční informace](../../extensibility/vsct-xml-schema-reference.md)  
  Obsahuje podrobné informace o každé části příkazu tabulky XML konfigurační soubor.  
   
- [Příkaz konfigurace tabulky (. Soubory CTC)](http://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [Příkaz konfigurace tabulky (. Soubory CTC)](https://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
  Obsahuje přehled nepoužívané .ctc formát souboru.  
   
  [Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  

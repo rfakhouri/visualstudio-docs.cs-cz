@@ -13,17 +13,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5a7a7522d0c3ddab224e19150f47120b92b2dd32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790004"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701530"
 ---
 # <a name="code-snippet-functions"></a>Funkce fragmentu kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Existují tři funkce, které jsou k dispozici pro použití s [!INCLUDE[csprcs](../includes/csprcs-md.md)] fragmenty kódu. Funkce jsou zadány v [funkce](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) element fragmentu kódu. Informace o vytváření fragmenty kódu najdete v tématu [fragmenty kódu](../ide/code-snippets.md).  
+Existují tři funkce, které jsou k dispozici pro použití s [!INCLUDE[csprcs](../includes/csprcs-md.md)] fragmenty kódu. Funkce jsou zadány v [funkce](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) element fragmentu kódu. Informace o vytváření fragmenty kódu najdete v tématu [fragmenty kódu](../ide/code-snippets.md).  
   
 ## <a name="functions"></a>Funkce  
  Následující tabulka popisuje dostupné k použití s funkcí `Function` element ve fragmentech kódu.  
@@ -154,5 +154,5 @@ Existují tři funkce, které jsou k dispozici pro použití s [!INCLUDE[csprcs]
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Funkce – Element (fragmenty kódu technologie Intellisense)](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [Funkce – Element (fragmenty kódu technologie Intellisense)](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Fragmenty kódu – odkaz schématu](../ide/code-snippets-schema-reference.md)

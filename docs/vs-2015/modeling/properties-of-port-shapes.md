@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 206f13610b22253a3b711413721411a1ff075570
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 69ec18362f596633fa508f1f842db027e59a616b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784868"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701535"
 ---
 # <a name="properties-of-port-shapes"></a>Vlastnosti obrazců portů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Tvary portu můžete použít k reprezentaci třídy domény ve vygenerovaném n
 |Má vlastní konstruktor|Pokud `True`, poskytneme vám vlastního konstruktoru ve zdrojovém kódu. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modifikátor dědičnosti|Popisuje druh dědičnosti třídy zdrojový kód, který je generován z portu (`none`, `abstract` nebo `sealed`).|žádná|  
 |Základní Port|Základní třída tohoto obrazce.|(žádné)|  
-|Název|Název tohoto obrazce.|Aktuální název|  
+|Name|Název tohoto obrazce.|Aktuální název|  
 |Obor názvů|Obor názvů, který je přidružen s tímto obrazcem.|Aktuální obor názvů|  
 |Typ Tip nástroje|Jak popisek je definován (fixní, proměnná nebo žádný). Pokud pevně daná, a potom hodnoty `Fixed Tooltip Text` vlastnost se používá jako popis tlačítka; Pokud je proměnná, pak popisek je definován ve vlastním kódu.|žádná|  
 |Poznámky|Neformální poznámky, které jsou spojeny s tímto obrazcem.|\<žádné >|  
@@ -58,4 +58,4 @@ Tvary portu můžete použít k reprezentaci třídy domény ve vygenerovaném n
 |Klíčové slovo nápovědy|Klíčové slovo, je použít k indexování nápovědy klávesy F1 pro tento obrazec.|\<žádné >|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

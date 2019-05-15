@@ -19,12 +19,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 397bb367207646e110243e050c271815b6258ff5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2ce412fdeb8d466708f3231cba14718d13720c69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668610"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676654"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,5 +78,5 @@ ms.locfileid: "59668610"
  [Referenční dokumentace úlohy](../msbuild/wpf-msbuild-task-reference.md)   
  [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
- [Sestavení aplikace WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [Přehled aplikací Prohlížeče WPF XAML](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
+ [Sestavení aplikace WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [Přehled aplikací Prohlížeče WPF XAML](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

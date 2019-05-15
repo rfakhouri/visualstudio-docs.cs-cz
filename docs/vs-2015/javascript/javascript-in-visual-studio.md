@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b9005b6cf7f23639481505a4727f8faa08241684
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433486"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705790"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript ve Visual Studiu 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 JavaScript je prvotřídní jazyk v sadě Visual Studio. Při psaní kódu v jazyce JavaScript v sadě Visual Studio IDE můžete použít téměř všechny standardní editační pomůcky (fragmenty kódu, funkci IntelliSense atd.). Můžete napsat kód jazyka JavaScript pro mnoho typů aplikací a služeb.
 
- Referenční dokumentaci jazyka JavaScript naleznete v tématu [JavaScript](http://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).
+ Referenční dokumentaci jazyka JavaScript naleznete v tématu [JavaScript](https://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).
 
  Konkrétní verze sady Visual Studio, nebo konkrétní rozšíření sady Visual Studio, může být nutné vyvíjet typy konkrétní aplikace a služby pomocí HTML a JavaScriptu. Následující seznam obsahuje odkazy na další informace.
 
@@ -29,7 +29,7 @@ JavaScript je prvotřídní jazyk v sadě Visual Studio. Při psaní kódu v jaz
 
 - Chcete-li vytvořit [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop)a univerzálních aplikací pro (, které podporují obě platformy), [získat potřebné nástroje](https://developer.microsoft.com/windows/downloads).
 
-- Vytvoření cloudové služby, najdete v tématu [webu Microsoft Azure](http://azure.microsoft.com/documentation/).
+- Vytvoření cloudové služby, najdete v tématu [webu Microsoft Azure](https://azure.microsoft.com/documentation/).
 
 - Chcete-li vytvořit weby a webové aplikace, [najdete v článku webu ASP.NET](http://www.asp.net/get-started/websites).
 
