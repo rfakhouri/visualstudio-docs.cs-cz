@@ -17,19 +17,19 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: adea3666c3f8b8d78c37b32a1a42f7f8b270369c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af9777667bef466dc97ea3a3d239f83f766816da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431174"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693956"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Vytváření vyhledávacích tabulek v aplikacích Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Termín *vyhledávací tabulka* popisuje ovládací prvky, které jsou vázány na dvě související tabulky dat. Tyto vyhledávací ovládací prvky zobrazují data v první tabulce na základě hodnoty vybrané v druhé tabulce.  
   
- Vyhledávací tabulky lze vytvořit přetažením hlavního uzlu nadřazené tabulky (z [okna zdroje dat](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) na ovládací prvek na formuláři, který je již vázán na sloupec v související podřízené tabulky.  
+ Vyhledávací tabulky lze vytvořit přetažením hlavního uzlu nadřazené tabulky (z [okna zdroje dat](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) na ovládací prvek na formuláři, který je již vázán na sloupec v související podřízené tabulky.  
   
  Předpokládejme například tabulku `Orders` v prodejní databázi. Každý záznam v `Orders` obsahuje tabulku `CustomerID`, určující, který zákazník objednávku vystavil. `CustomerID` je cizí klíč odkazující na záznam zákazníka v tabulce `Customers`. V tomto scénáři, rozbalte `Orders` v tabulku **zdroje dat** okno a nastavit hlavní uzel **podrobnosti**. Nastavte `CustomerID` sloupce <xref:System.Windows.Forms.ComboBox> (nebo jakýkoli jiný ovládací prvek, který podporuje vazbu vyhledávání) a přetáhněte ji `Orders` uzlu do formuláře. A konečně, přetáhněte `Customers` uzlu na ovládací prvek, který je vázán na odpovídající sloupec – v tomto případě <xref:System.Windows.Forms.ComboBox> vázán na `CustomerID` sloupce.  
   

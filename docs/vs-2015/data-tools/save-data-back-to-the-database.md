@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2882434f0638d565133efd9744a94d224d39d121
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425339"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692539"
 ---
 # <a name="save-data-back-to-the-database"></a>Ukládání dat zpět do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +166,7 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
   
  `GetChanges` samotným odebráním vrátí všechny změněné záznamy. Naproti tomu předáním požadované <xref:System.Data.DataRowState> jako parametr `GetChanges` metodu, můžete zadat jaké podmnožinou změněné záznamy, které chcete, aby: nově přidána záznamy, záznamy, které jsou označené k odstranění, odpojit záznamy nebo změněné záznamy.  
   
- Získání podmnožiny změněné záznamy je užitečné, když chcete odeslat do jiné součásti pro zpracování záznamů. Místo abyste odesílali celou datovou sadu, můžete snížit režijní náklady tím, že získáme pouze záznamy, které je nutné komponentu komunikovat s jinou součástí. Další informace najdete v tématu [jak: Načítání změněných řádků](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+ Získání podmnožiny změněné záznamy je užitečné, když chcete odeslat do jiné součásti pro zpracování záznamů. Místo abyste odesílali celou datovou sadu, můžete snížit režijní náklady tím, že získáme pouze záznamy, které je nutné komponentu komunikovat s jinou součástí. Další informace najdete v tématu [jak: Načítání změněných řádků](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 ## <a name="committing-changes-in-the-dataset"></a>Potvrzení změn v datové sadě  
  Jakmile v datové sadě, jsou provedeny změny <xref:System.Data.DataRow.RowState%2A> změněných řádků je nastavena. Navázat, udržovat a můžete podle aktuální a původní verzí záznamů <xref:System.Data.DataRowView.RowVersion%2A> vlastnost. Metadata, která je uložená ve vlastnosti těchto změněných řádků je nezbytné pro odeslání do zdroje dat správné aktualizace.  
@@ -219,12 +219,12 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
   
 - V obchodní vrstvě, přidáním kódu do vaší aplikace ověřit data. Tato datová sada je pohromadě, můžete to provést. Návrhář DataSet obsahuje některé z výhod back-end ověřování, jako je například schopnost ověřit změny, jak se změna hodnoty řádků a sloupců. Další informace najdete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md).  
   
-- V prezentační vrstvě podle Přidání ověření do formuláře. Další informace najdete v tématu [ověřování uživatelského vstupu ve Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- V prezentační vrstvě podle Přidání ověření do formuláře. Další informace najdete v tématu [ověřování uživatelského vstupu ve Windows Forms](https://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
 - V datech back-endu, díky odesílání dat do zdroje dat – například databáze a díky kterému jej následně přijímal nebo odmítal data. Při práci s databází, která má pokročilé funkce pro ověřování dat a poskytuje informace o chybě, to může být praktický, protože data bez ohledu na to, odkud můžete ověřit. Tento přístup však nemusí podle požadavků ověřování konkrétní aplikace. Kromě toho s ověření dat zdroje dat může způsobit řadu zpátečních cest ke zdroji dat, v závislosti na tom, jak vaše aplikace usnadňuje řešení chyb ověřování vyvolané back-endu.  
   
   > [!IMPORTANT]
-  > Při použití dat příkazech <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> vlastnost, která je nastavena na <xref:System.Data.CommandType>, pečlivě zkontrolujte informace, které se odesílají z klienta před předáním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) změněné nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo poškození databáze. Před přenosem vstupu uživatele na databázi vždy ověřte, že informace platné. Je osvědčeným postupem je vždy používejte parametrizovaných dotazů nebo uložených procedur, pokud je to možné. Další informace najdete v tématu [přehled zneužije skriptů](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > Při použití dat příkazech <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> vlastnost, která je nastavena na <xref:System.Data.CommandType>, pečlivě zkontrolujte informace, které se odesílají z klienta před předáním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) změněné nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo poškození databáze. Před přenosem vstupu uživatele na databázi vždy ověřte, že informace platné. Je osvědčeným postupem je vždy používejte parametrizovaných dotazů nebo uložených procedur, pokud je to možné. Další informace najdete v tématu [přehled zneužije skriptů](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Po provedení změn v datové sadě, můžete přenést změny do zdroje dat. Nejčastěji to provedete voláním `Update` metody třídy TableAdapter (nebo datový adaptér). Metoda cyklicky projde každý záznam v tabulce dat, určuje, jaký typ aktualizace je povinný (aktualizace, vložení nebo odstranění), pokud existuje, a poté je spuštěn příslušný příkaz.  
   
@@ -272,6 +272,6 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
   
 ## <a name="see-also"></a>Viz také  
  [Aktualizace dat pomocí TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Příprava aplikace pro příjem dat](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Příprava aplikace pro příjem dat](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Ověřování dat](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Ověřování dat](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

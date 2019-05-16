@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fb06c1d97c854aae05d993c086069e10e35518f5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431948"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704974"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Vyplnění datové sady s použitím objektů TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Komponenty TableAdapter vyplní datovou sadu s daty z databáze, na základě je
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
 ## <a name="associated-datatable-schema"></a>Přidružené schéma objektu DataTable  
- Při vytváření objektu typu TableAdapter, použijte počáteční dotaz nebo uloženou proceduru pro definování schématu objektu TableAdapter přidružené k <xref:System.Data.DataTable>. Spustit tento počáteční dotaz nebo uloženou proceduru voláním objektu TableAdapter `Fill` – metoda (která naplní TableAdapter přidružené k <xref:System.Data.DataTable>). Všechny změny provedené v hlavním dotazu objektu TableAdapter se projeví ve schématu přidružené tabulky dat. Také například odebráním sloupce z hlavního dotazu odeberete sloupec z přidružené tabulky dat. Pokud jakékoliv další dotazy na TableAdapter používají příkazy SQL vracející sloupce, které nejsou v hlavním dotazu, pokusí se Návrhář synchronizovat změny ve sloupcích mezi hlavním dotazem a dalších dotazů. Další informace najdete v tématu [jak: Upravování TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
+ Při vytváření objektu typu TableAdapter, použijte počáteční dotaz nebo uloženou proceduru pro definování schématu objektu TableAdapter přidružené k <xref:System.Data.DataTable>. Spustit tento počáteční dotaz nebo uloženou proceduru voláním objektu TableAdapter `Fill` – metoda (která naplní TableAdapter přidružené k <xref:System.Data.DataTable>). Všechny změny provedené v hlavním dotazu objektu TableAdapter se projeví ve schématu přidružené tabulky dat. Také například odebráním sloupce z hlavního dotazu odeberete sloupec z přidružené tabulky dat. Pokud jakékoliv další dotazy na TableAdapter používají příkazy SQL vracející sloupce, které nejsou v hlavním dotazu, pokusí se Návrhář synchronizovat změny ve sloupcích mezi hlavním dotazem a dalších dotazů. Další informace najdete v tématu [jak: Upravování TableAdapters](https://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
   
 ## <a name="tableadapter-update-commands"></a>Příkazy aktualizace objektu TableAdapter  
  Funkce aktualizace objektu TableAdapter je závislá na tom, kolik informací je k dispozici v hlavním dotazu v Průvodci vytvořením objektu TableAdapter. Například objekty TableAdapter, které jsou nakonfigurovány k načtení hodnot z více tabulek (spojení JOIN), skalárních hodnot, zobrazení nebo výsledků agregačních funkcí, nejsou původně vytvořeny s možností odesílat aktualizace zpět do databáze. Ale můžete nakonfigurovat ručně v příkazy INSERT, UPDATE a DELETE **vlastnosti** okna.  
@@ -106,7 +106,7 @@ Komponenty TableAdapter vyplní datovou sadu s daty z databáze, na základě je
  Pokud tyto přímé metody vytvořit nechcete, nastavte TableAdapter **GenerateDbDirectMethods** vlastnost `false` (v **vlastnosti** okno). Další dotazy, které jsou přidány do objektu TableAdapter jsou samostatné dotazy – není generovaných tyto metody.  
   
 ## <a name="tableadapter-support-for-nullable-types"></a>Třída TableAdapter podporuje typy s možnou hodnotou Null  
- Třída TableAdapter podporuje typy s možnou hodnotou Null `Nullable(Of T)` a `T?`. Další informace o typech s povolenou hodnotou Null v jazyce Visual Basic najdete v tématu [hodnotové typy s možnou hodnotou Null](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Další informace o typech s povolenou hodnotou Null v jazyce C# najdete v tématu [typy připouštějící hodnotu Null pomocí](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
+ Třída TableAdapter podporuje typy s možnou hodnotou Null `Nullable(Of T)` a `T?`. Další informace o typech s povolenou hodnotou Null v jazyce Visual Basic najdete v tématu [hodnotové typy s možnou hodnotou Null](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Další informace o typech s povolenou hodnotou Null v jazyce C# najdete v tématu [typy připouštějící hodnotu Null pomocí](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
   
 ## <a name="security"></a>Zabezpečení  
  Při použití dat příkazech `CommandType` vlastnost nastavena na <xref:System.Data.CommandType>, pečlivě zkontrolujte informace, které se odesílají z klienta před předáním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) změněné nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo poškození databáze. Před přenosem vstupu uživatele na databázi vždy ověřte, že informace platné. Osvědčeným postupem je vždycky potřeba použít parametrizovaných dotazů nebo uložených procedur, pokud je to možné.  
