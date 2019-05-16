@@ -74,7 +74,7 @@ Po zastavení na zarážce, budete mít různé způsoby, jak procházet kód ne
 | **Krokovat s Vystoupením** | **SHIFT**+**F11** | Spustí kód do konce aktuální funkci a pak kroky volání příkazu.  Tento příkaz je užitečné, když není nutné ladit zbytek aktuální funkce. |
 | **Spustit ke kurzoru** | **CTRL**+**F10** | Spustí kód do umístění blikající kurzor v editoru. Tento příkaz umožňuje snadno přeskočit část kódu, který není nutné k ladění. |
 | **Nastavení dalšího příkazu** | **CTRL**+**Shift**+**F10** | Změny aktuálního spuštění bodu do umístění blikajícího kurzoru v kódu. Tento příkaz umožňuje vynechat segment kódu na všech spuštění, jako když víte, kód je chybný nebo je výsledný nežádoucí vedlejší efekt. |
-| **Zobrazit další příkaz** | **ALT**+**Num****&#42;**| Vrátíte se do dalšího příkazu ke spuštění. Tento příkaz je užitečné, pokud jste hledání ve vašem kódu a nepamatujete, kde je zastavený ladicím programu. |
+| **Zobrazit další příkaz** | **ALT**+**Num** **&#42;**| Vrátíte se do dalšího příkazu ke spuštění. Tento příkaz je užitečné, pokud jste hledání ve vašem kódu a nepamatujete, kde je zastavený ladicím programu. |
 
 ### <a name="inspect-and-modify-values"></a>Kontrola a změny hodnot
 

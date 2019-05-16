@@ -81,7 +81,7 @@ VSPerfCmd [/U] [/options]
 
 |Možnost|Popis|
 |------------|-----------------|
-|**Admin:Security**, \< **povolit&#124;ODEPŘÍT**>, *vpravo*[ *vpravo*], \< *uživatele* &#124; *Skupiny*>|Povoluje nebo zakazuje zadaného uživatele nebo skupiny přístup k profilovací služby.<br /><br /> `Right` může být:<br /><br /> CrossSession – umožní uživateli přístup ke službě pro různé relace profilování.<br /><br /> SampleProfiling – umožní uživateli přístup k ovladači povolit profilaci vzorkování. Také umožňuje přístup k informacím o přechodu jádra během profilace trasování.<br /><br /> FullAccess – umožňuje uživateli CrossSession a SampleProfiling přístup.|
+|**Admin:Security**, \<**povolit&#124;ODEPŘÍT**>, *vpravo*[ *vpravo*], \<*uživatele*&#124;*Skupiny*>|Povoluje nebo zakazuje zadaného uživatele nebo skupiny přístup k profilovací služby.<br /><br /> `Right` může být:<br /><br /> CrossSession – umožní uživateli přístup ke službě pro různé relace profilování.<br /><br /> SampleProfiling – umožní uživateli přístup k ovladači povolit profilaci vzorkování. Také umožňuje přístup k informacím o přechodu jádra během profilace trasování.<br /><br /> FullAccess – umožňuje uživateli CrossSession a SampleProfiling přístup.|
 |**Admin:Security, List**|Zobrazí aktuální stav služeb profilace a zobrazí seznam oprávnění uživatele.|
 |**Správce:** \<*Služba*&#124;*ovladač*>\<**START**&#124;**Zastavit**&#124;**instalace** &#124; **Odinstalace**>|Spustí, zastaví, nainstaluje nebo odinstaluje komponentu služeb profilace (service) nebo ovladač zařízení režimu jádra (driver).|
 |**Správce:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Povolí nebo zakáže automatické spuštění služby profilace (service) nebo ovladač zařízení režimu jádra (driver) po restartu.|
