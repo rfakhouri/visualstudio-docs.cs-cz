@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b090833d766e36ba597bb32e8a6c793d674add88
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 100cd424b60ce09db8c62c049b38f4c301ebe26f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383951"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704840"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
 - Team Foundation Server 2013 nebo novější, Visual Studio Team Services nebo Git  
   
-- [Lync 2010 nebo novější nebo Skype pro firmy](http://technet.microsoft.com/lync), ke kontaktování týmem z editoru kódu  
+- [Lync 2010 nebo novější nebo Skype pro firmy](https://technet.microsoft.com/lync), ke kontaktování týmem z editoru kódu  
   
   Pro Visual C# .NET nebo Visual Basic .NET kód, který se uloží spolu s Team Foundation – správa verzí (TFVC) nebo Git, získání podrobností funkce CodeLens na úrovni třídy a metody (*úroveň element kódu* ukazatele). Pokud v TfGit je hostitelem vašeho úložiště Git, budete mít také odkazy na pracovní položky sady TFS.  
   
@@ -83,7 +83,7 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
  ![CodeLens: Get změnit historii vašeho kódu v TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
- Výchozí časové období se za posledních 12 měsíců. Pokud je váš kód uložen v sadě Team Foundation Server, můžete to změnit spuštěním [příkazu TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) s [codeindex – příkaz](../ide/codeindex-command.md) a **/indexHistoryPeriod** příznak.  
+ Výchozí časové období se za posledních 12 měsíců. Pokud je váš kód uložen v sadě Team Foundation Server, můžete to změnit spuštěním [příkazu TFSConfig](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) s [codeindex – příkaz](../ide/codeindex-command.md) a **/indexHistoryPeriod** příznak.  
   
  Chcete-li zobrazit podrobnou historii všech změn, včetně těch, které z více než rokem, zvolte **zobrazit všechny změny souborů**.  
   
@@ -222,7 +222,7 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
 - Ujistěte se, že je zapnutá funkce CodeLens. Přejděte na **nástroje**, **možnosti**, **textový Editor**, **všechny jazyky**, **CodeLens**.  
   
-- Pokud je váš kód uložen v sadě TFS, ujistěte se, jestli indexování kódu je zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
+- Pokud je váš kód uložen v sadě TFS, ujistěte se, jestli indexování kódu je zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
   
 - Indikátory související s aplikací TFS se zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a máte oprávnění otevírat propojené pracovní položky. [Potvrďte, že máte oprávnění člena týmu.](/azure/devops/organizations/security/view-permissions)  
   
@@ -283,4 +283,4 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
  **ODPOVĚĎ:** **Místní verze** šipka ukazuje na poslední sady změn ve vaší místní verzi tohoto souboru. Pokud na serveru existují novější sady změn, zobrazují se nad nebo pod **místní verze** šipku, v závislosti na pořadí použitém k řazení sady změn.  
   
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>DOTAZ: Můžete spravovat způsob, jak funkce CodeLens zpracuje kód k zobrazení historie a propojené položky?  
- **ODPOVĚĎ:** Ano, pokud je váš kód v TFS, použijte [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).
+ **ODPOVĚĎ:** Ano, pokud je váš kód v TFS, použijte [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).
