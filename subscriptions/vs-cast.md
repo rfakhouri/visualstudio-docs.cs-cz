@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech PŘETYPOVÁNÍ zvýrazněte k dispozici ve vybraných předplatných sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947892"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805346"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Zvýrazněte PŘETYPOVÁNÍ výhoda v předplatných sady Visual Studio
 
@@ -107,6 +107,6 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="next-steps"></a>Další kroky
 
-Pokud jste ještě neaktivovali Azure benefit, který je součástí vašeho předplatného, navštivte [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a klikněte na Azure dlaždici v kategorii nástroje pro nastavení vašeho předplatného Azure a jejího uplatnění kreditů Azure je zdarma.
+Pokud jste ještě neaktivovali Azure benefit, který je součástí vašeho předplatného, navštivte [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a klikněte na Azure dlaždici v kategorii nástroje pro nastavení vašeho předplatného Azure a jejího uplatnění kreditů Azure.
 
 A nezapomeňte se podívat ukázku uživatele průvodce a uvedené v e-mailu společnosti Greg výukových videí.

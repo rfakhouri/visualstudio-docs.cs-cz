@@ -1,6 +1,6 @@
 ---
 title: 'CA2213: Uvolnitelná pole by měla být uvolněna'
-ms.date: 11/05/2018
+ms.date: 05/14/2019
 ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fff209c9a432b78ce27e9c344c1afd29e93d57f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b38157fcc23561b47a919151aa78a71f98b3909b
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806677"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805002"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Uvolnitelná pole by měla být uvolněna
 
@@ -36,10 +36,21 @@ Typ, který implementuje <xref:System.IDisposable?displayProperty=fullName> dekl
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Typ je zodpovědná za uvolnění všech nespravovaných prostředků. Pravidlo CA2213 kontroluje, zda uvolnitelného typu (to znamená, jednu, která implementuje <xref:System.IDisposable>) `T` deklaruje pole `F` z uvolnitelného typu, který je instance `FT`. Pro každé pole `F` , které se má přiřadit místně vytvořený objekt v rámci metody nebo inicializátory nadřazeného typu `T`, pravidlo se pokusí najít volání `FT.Dispose`. Toto pravidlo vyhledá metody volané `T.Dispose` a jednu úroveň níže (to znamená, volání metody volané metody `FT.Dispose`).
+Typ je zodpovědná za uvolnění všech nespravovaných prostředků. Pravidlo CA2213 kontroluje, zda uvolnitelného typu (to znamená, jednu, která implementuje <xref:System.IDisposable>) `T` deklaruje pole `F` z uvolnitelného typu, který je instance `FT`. Pro každé pole `F` , které se má přiřadit místně vytvořený objekt v rámci metody nebo inicializátory nadřazeného typu `T`, pravidlo se pokusí najít volání `FT.Dispose`. Toto pravidlo vyhledá metody volané `T.Dispose` a jednu úroveň níže (to znamená, volání metody volané metody `T.Dispose`).
 
 > [!NOTE]
-> CA2213 pravidlo je vyvoláno pouze pro pole, které jsou přiřazeny místně vytvořené uvolnitelný objekt v rámci nadřazeného typu metody a inicializátory. Pokud je objekt vytvořen nebo přiřazené mimo typ `T`, pravidlo se neaktivuje. To snižuje šumu pro případy, kdy nadřazeného typu nevlastní odpovědnost za uvolnění objektu.
+> Než [zvláštní případy](#special-cases), pravidlo CA2213 je aktivována pouze pro pole, které jsou přiřazeny místně vytvořené uvolnitelný objekt v rámci nadřazeného typu metody a inicializátory. Pokud je objekt vytvořen nebo přiřazené mimo typ `T`, pravidlo se neaktivuje. To snižuje šumu pro případy, kdy nadřazeného typu nevlastní odpovědnost za uvolnění objektu.
+
+### <a name="special-cases"></a>Zvláštní případy
+
+CA2213 pravidlo můžete platit také pro pole z následujících typů i v případě, že objekt, který je přiřazený není vytvořeno místně:
+
+- <xref:System.IO.Stream?displayProperty=nameWithType>
+- <xref:System.IO.TextReader?displayProperty=nameWithType>
+- <xref:System.IO.TextWriter?displayProperty=nameWithType>
+- <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
+
+Předání objektu jednoho z těchto typů konstruktoru a pak ji přiřadíte do pole označuje *dispose převod vlastnictví* do nově konstruovaný typ. To znamená je nově konstruovaný typ nyní zodpovědná za uvolnění objektu. Pokud není uvolněn, dojde k narušení CA2213.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
@@ -47,7 +58,10 @@ Chcete-li opravit porušení tohoto pravidla, zavolejte <xref:System.IDisposable
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Potlačit upozornění tohoto pravidla, pokud ještě nejste zodpovědná pro uvolnění prostředku drží pole, nebo pokud můžete bezpečně volání <xref:System.IDisposable.Dispose%2A> dochází na hlubší úrovni volání než pravidla kontroly.
+Je bezpečné potlačit upozornění tohoto pravidla, pokud:
+
+- Typ s příznakem nezodpovídá za uvolnění prostředku drží pole (to znamená, typ nemá *dispose vlastnictví*)
+- Volání <xref:System.IDisposable.Dispose%2A> dochází na hlubší úrovni volání než pravidla kontroly
 
 ## <a name="example"></a>Příklad
 

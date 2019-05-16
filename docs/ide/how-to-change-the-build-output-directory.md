@@ -1,6 +1,6 @@
 ---
 title: 'Postupy: Změna výstupního adresáře sestavení'
-ms.date: 11/04/2016
+ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,32 +11,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0fda2363ec63572f29c6687cc10ee9a7ee06c76
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824227"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805053"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Postupy: Změna výstupního adresáře sestavení
 
-Zadejte umístění výstupu na základě podle konfigurace (pro ladění, vydání nebo obojí), vygenerované váš projekt.
-
-> [!NOTE]
-> Pokud máte **nastavení** projekt, naleznete v poznámce na konci tohoto článku.
+Můžete zadat umístění výstupu generovaného ve vašem projektu na základě podle konfigurace (pro ladění, vydání nebo obojí).
 
 ## <a name="change-the-build-output-directory"></a>Změna výstupního adresáře sestavení
 
-1. V panelu nabídky zvolte **projektu** > **\<název_aplikace > vlastnosti**. Můžete také kliknout pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**.
+1. Otevření stránek vlastností projektu, klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**.
 
-2. Pokud máte projekt jazyka Visual Basic, vyberte **kompilaci** kartu. Pokud máte projekt C#, vyberte **sestavení** kartu. Pokud máte projekt jazyka C++ nebo JavaScript projektu, vyberte **Obecné** kartu.
+2. Vyberte příslušnou kartu podle typu projektu:
 
-3. V rozevíracího seznamu v horní části konfigurace zvolte konfiguraci, jejíž výstup souboru umístění, které chcete změnit (debug, release nebo všechny).
+   - Pro C#, vyberte **sestavení** kartu.
+   - V jazyce Visual Basic, vyberte **kompilaci** kartu.
+   - Pro C++ nebo JavaScript, vyberte **Obecné** kartu.
 
-     Vyhledejte položku výstupní cestu (**výstupní cesta sestavení** v jazyce Visual Basic **výstupní adresář** v jazyce Visual C++ **výstupní cesta** v JavaScriptu a C#). Zadejte nový výstupní adresář sestavení relativní k adresáři projektu.
+3. V rozevíracího seznamu v horní části konfigurace zvolte konfiguraci, jejíž výstup chcete změnit umístění souboru (**ladění**, **vydání**, nebo **všechny konfigurace**).
 
-> [!NOTE]
-> V nastavení projektu **název výstupního souboru** pole se změní pouze umístění *Setup.exe* souboru, ne však umístění souborů projektu. Další informace najdete v tématu **sestavení, vlastnosti konfigurace, dialogové okno Vlastnosti projektu nasazení**.
+4. Vyhledejte položku výstupní cestu na stránce&mdash;se liší v závislosti na typu vašeho projektu:
+
+   - **Výstupní cesta** pro C# a projekty jazyka JavaScript
+   - **Výstupní cesta sestavení** pro projekty jazyka Visual Basic
+   - **Výstupní adresář** vizuálu C++ projekty
+
+   Zadejte cestu a generovat výstup (absolutní nebo relativní k adresáři projektu kořenový), nebo zvolte **Procházet** a místo toho přejděte do této složky.
+
+   ![Výstupní cesta k vlastnosti pro sadu Visual Studio C# projektu](media/output-path.png)
+
+> [!TIP]
+> Pokud výstup není generována umístění, které jste zadali, ujistěte se, že vytváříte odpovídající konfiguraci (například **ladění** nebo **vydání**) tak, že ji vyberete na panelu nabídek Visual Studio.
+>
+> ![Sestavení pro výběr konfigurace v aplikaci Visual Studio 2019](media/build-configuration-chooser.png)
 
 ## <a name="see-also"></a>Viz také:
 

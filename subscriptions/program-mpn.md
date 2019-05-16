@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Podrobnosti o jaká předplatná jsou k dispozici, platí pravidla a kolik předplatných v programu MPN nabízíme.
 searchscope: VS Subscription
-ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945398"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805296"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Předplatná sady Visual Studio nabízí pro partnery v Microsoft Partner Network (MPN)
 Partneři, kteří získejte kompetenci nebo kteří zakoupili Action Pack v programu MPN mají nárok na použití předplatná sady Visual Studio. Tato předplatná jsou licencovaný podle počtu uživatelů a platí pouze v případě přiřazenou na konkrétní uživatele, který se dá použít pro partnerské firmě s názvem.
@@ -52,7 +52,7 @@ Pomocí Action Pack partnera nepřesahuje **3 předplatných Visual Studio Profe
 - Windows Enterprise – pouze nejnovější verze, pro účely vývoje a testování pouze
 - Windows Server – pouze nejnovější verze, pro účely vývoje a testování pouze
 
-Předplatitelé sady Visual Studio Professional (MPN) můžete také stáhnout a použití bezplatného softwaru při jejich vývoji, včetně SQL serveru Developer Edition.
+Předplatitelé sady Visual Studio Professional (MPN) můžete také stáhnout a použít software pro jejich vývoj, včetně SQL serveru Developer Edition.
 
 Výhody služeb Azure DevOps, měsíční kredity Azure, technická podpora, školení nebo další výhody pro předplatitele, které jsou k dispozici s předplatnými Visual Studia, které jsou k dispozici neobsahuje předplatné Visual Studio Professional (MPN) komerčně.
 

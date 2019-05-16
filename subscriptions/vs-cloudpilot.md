@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech CloudPilot k dispozici ve vybraných předplatných sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78c72f68c8553e7e80b6f26846c19ffcb5f91184
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948375"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805368"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot výhoda v předplatných sady Visual Studio
 
@@ -86,4 +86,4 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="next-steps"></a>Další kroky
 
-Pokud jste ještě neaktivovali Azure benefit, který je součástí vašeho předplatného, navštivte [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a klikněte na Azure dlaždici v kategorii nástroje pro nastavení vašeho předplatného Azure a jejího uplatnění kreditů Azure je zdarma.
+Pokud jste ještě neaktivovali Azure benefit, který je součástí vašeho předplatného, navštivte [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a klikněte na Azure dlaždici v kategorii nástroje pro nastavení vašeho předplatného Azure a jejího uplatnění kreditů Azure.

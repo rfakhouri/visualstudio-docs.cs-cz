@@ -1,8 +1,8 @@
 ---
 title: Import a export konfigurací instalace
 titleSuffix: ''
-description: Další informace o použití funkce importu/exportu konfigurace v sadě Visual Studio
-ms.date: 04/19/2019
+description: Další informace o použití funkce importu/exportu konfigurace sdílení .vsconfig souborů v sadě Visual Studio
+ms.date: 05/17/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 3644a0c04ebabab8744f6df21f9dd166665a21c4
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64850752"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805352"
 ---
 # <a name="import-or-export-installation-configurations"></a>Import a export konfigurací instalace
 
-Visual Studio můžete nakonfigurovat ve vaší organizaci pomocí konfigurační soubor instalace. Uděláte to tak, jednoduše exportujte pracovního vytížení a komponenta informace do souboru .vsconfig pomocí instalačního programu sady Visual Studio. Pak můžete importovat konfiguraci do nových nebo stávajících zařízení.
+Visual Studio můžete nakonfigurovat ve vaší organizaci pomocí instalace konfiguračních souborů. Uděláte to tak, jednoduše exportujte pracovního vytížení a komponenta informace do souboru .vsconfig pomocí instalačního programu sady Visual Studio. Můžete importovat konfiguraci do nových nebo stávajících zařízení a také sdílet s ostatními.
 
 Tady je způsob.
 
