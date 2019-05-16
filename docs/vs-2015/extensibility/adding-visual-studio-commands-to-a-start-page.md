@@ -11,19 +11,19 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a2042ef9a96eed99636ea0a2f5f09d99cd35ea2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429013"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699156"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Přidání příkazů sady Visual Studio na úvodní stránku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Když vytvoříte vlastní úvodní stránku, můžete přidat příkazy sady Visual Studio k němu. Tento dokument popisuje různé způsoby, jak svázat objekty XAML na úvodní stránce příkazy sady Visual Studio.  
   
- Další informace o příkazech v XAML najdete v tématu [přehled příkazů](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
+ Další informace o příkazech v XAML najdete v tématu [přehled příkazů](https://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
   
 ## <a name="adding-commands-from-the-command-well"></a>Přidání příkazů z příkazu dobře  
  Na úvodní stránce vytvořené v [vytvoření vlastní úvodní stránku](../extensibility/creating-a-custom-start-page.md) přidán <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> a <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> obory názvů, následujícím způsobem.  
@@ -94,7 +94,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ## <a name="adding-commands-with-the-dte-object"></a>Přidání komentářů k objektu DTE  
  Objekt DTE můžete přistupovat z úvodní stránku značek a kódu.  
   
- V kódu, můžete k němu přístup s použitím [vazby – rozšíření značek](http://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) syntaxi pro volání <xref:EnvDTE.DTE> objektu. Tento přístup můžete použít k vytvoření vazby na jednoduché vlastnosti, jako jsou ty, které vracejí kolekce, ale nelze vytvořit vazbu s metod nebo služeb. Následující příklad ukazuje <xref:System.Windows.Controls.TextBlock> ovládací prvek, který se váže k <xref:EnvDTE._DTE.Name%2A> vlastnost a <xref:System.Windows.Controls.ListBox> ovládací prvek, který vytvoří výčet <xref:EnvDTE.Window.Caption%2A> vlastnosti kolekce, který je vrácen <xref:EnvDTE._DTE.Windows%2A> vlastnost.  
+ V kódu, můžete k němu přístup s použitím [vazby – rozšíření značek](https://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) syntaxi pro volání <xref:EnvDTE.DTE> objektu. Tento přístup můžete použít k vytvoření vazby na jednoduché vlastnosti, jako jsou ty, které vracejí kolekce, ale nelze vytvořit vazbu s metod nebo služeb. Následující příklad ukazuje <xref:System.Windows.Controls.TextBlock> ovládací prvek, který se váže k <xref:EnvDTE._DTE.Name%2A> vlastnost a <xref:System.Windows.Controls.ListBox> ovládací prvek, který vytvoří výčet <xref:EnvDTE.Window.Caption%2A> vlastnosti kolekce, který je vrácen <xref:EnvDTE._DTE.Windows%2A> vlastnost.  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  

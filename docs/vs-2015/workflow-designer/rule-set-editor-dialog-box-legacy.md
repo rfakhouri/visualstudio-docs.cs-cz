@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703197"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Dialogové okno Editor sad pravidel (starší verze)
 Toto téma popisuje, jak používat **editoru nastavte pravidlo** dialogové okno v starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -76,7 +76,7 @@ Toto téma popisuje, jak používat **editoru nastavte pravidlo** dialogové okn
   
   Priorita operátorů výraz následuje pravidla priorit operátor C#.  
   
-  Další informace o podmínkách najdete v tématu [podmínky použití v pracovních postupech](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
+  Další informace o podmínkách najdete v tématu [podmínky použití v pracovních postupech](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Zastavení a aktualizace funkcí  
  **Potom akce:** a **Else akce:** výrazy podporují **zastaví** a **aktualizace** funkce. Použít **zastaví** funkci, zadejte **Zastavit** do **pak akce:** nebo **Else akce:** textového pole. **Zastaví** akce způsobí spuštění sady pravidel se okamžitě zastavit a ovládací prvek vrátí volajícímu kódu. Můžete použít **aktualizace** funkce s vpřed řetězení.  

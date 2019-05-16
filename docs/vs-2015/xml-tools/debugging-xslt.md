@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e190af751e125a65e4e6e3ed56166aa39f631c1
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4ba095b9af87a36a1957ec94496f4445f0ed2bb7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873325"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697040"
 ---
 # <a name="debug-xslt"></a>Ladění XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Ladicí program sady Visual Studio můžete použít k ladění XSLT. Ladicí pr
  [Postupy: Vyhodnocení výrazu XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md)  
  Popisuje, jak vyhodnotit výraz jazyka XPath pomocí **QuickWatch** dialogové okno.  
   
- [Návod: Ladění stylů XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
+ [Návod: Ladění šablony stylů XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
  Ukazuje, jak ladit šablony stylů XSLT.  
   
  [Výchozí šablony XSLT](../xml-tools/xslt-default-templates.md)  
@@ -54,5 +54,5 @@ Ladicí program sady Visual Studio můžete použít k ladění XSLT. Ladicí pr
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)  
  Zavádí ladicího programu sady Visual Studio.  
   
- [Odkaz na XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [Odkaz na XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  Poskytuje referenční materiál pro elementy XSLT a funkce.

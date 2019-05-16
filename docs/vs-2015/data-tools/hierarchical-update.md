@@ -24,19 +24,19 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 521f878c9d4fafa61f8c717f4c9752622ef339d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386011"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699813"
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Hierarchická aktualizace * se vztahuje k procesu ukládání aktualizovaná data (z datové sady s dvěma nebo více souvisejícími tabulkami) do databáze při zachování pravidla referenční integrity. *Referenční integritu* odkazuje na pravidla konzistence poskytované omezení v databázi, která řídí chování vkládání, aktualizaci a odstraňování souvisejících záznamů. Například je referenční integritu, který vynutí vytvoření záznam zákazníka předtím, než pro zákazníka objednávky, který se má vytvořit.  Další informace o relacích v datových sadách najdete v tématu [vztahy v datových sadách](../data-tools/relationships-in-datasets.md)  
   
- Hierarchická aktualizace funkce používá `TableAdapterManager` ke správě `TableAdapter`ve typové datové sady. `TableAdapterManager` Komponenta [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]– vygeneruje třídy, takže není součástí [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Při přetažení tabulky z okna zdrojů dat na formuláři Windows nebo na stránce WPF, Visual Studio přidá proměnnou typu TableAdapterManager do formuláře nebo stránky a vidět ji v Návrháři v panelu komponent. Podrobné informace o `TableAdapterManager` třídy, najdete v části odkaz TableAdapterManager [TableAdapterManager – přehled](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
+ Hierarchická aktualizace funkce používá `TableAdapterManager` ke správě `TableAdapter`ve typové datové sady. `TableAdapterManager` Komponenta [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]– vygeneruje třídy, takže není součástí [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Při přetažení tabulky z okna zdrojů dat na formuláři Windows nebo na stránce WPF, Visual Studio přidá proměnnou typu TableAdapterManager do formuláře nebo stránky a vidět ji v Návrháři v panelu komponent. Podrobné informace o `TableAdapterManager` třídy, najdete v části odkaz TableAdapterManager [TableAdapterManager – přehled](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
  Ve výchozím nastavení datová sada považuje za související tabulky "pouze, vztahy" to znamená, že nebude vynutit omezení cizího klíče. Toto nastavení v době návrhu lze upravit pomocí návrháře datových sad. Vyberte řádek vztah mezi dvěma tabulkami, abyste vyvolali **vztah** dialogové okno. Zde provedené změny se určí, jak TableAdapterManager chová při odeslání změn v souvisejících tabulkách zpět do databáze.  
   
@@ -55,7 +55,7 @@ Hierarchická aktualizace * se vztahuje k procesu ukládání aktualizovaná dat
   
  Ve výchozím nastavení, se generují tabulek dat v datové sady s relací (<xref:System.Data.DataRelation>), které odpovídají vztahy v databázi. Vztah v této datové sadě ale negeneruje jako omezení foreign key. <xref:System.Data.DataRelation> Je nakonfigurovaný jako **vztah pouze** bez <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> nebo <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> v platnosti.  
   
- Ve výchozím nastavení aktualizace šablony a kaskádové odstranění jsou vypnuté i v případě, že relace databáze je nastavena pomocí kaskádových aktualizace nebo odstranění v kaskádě zapnuté. Třeba vytvoření nového zákazníka a nové objednávky a pak se pokusíte použít k ukládání dat může způsobit konflikt s omezeními cizího klíče, které jsou definovány v databázi. Další informace najdete v tématu [jak: Konfigurace omezení cizího klíče v datové sadě](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e).  
+ Ve výchozím nastavení aktualizace šablony a kaskádové odstranění jsou vypnuté i v případě, že relace databáze je nastavena pomocí kaskádových aktualizace nebo odstranění v kaskádě zapnuté. Třeba vytvoření nového zákazníka a nové objednávky a pak se pokusíte použít k ukládání dat může způsobit konflikt s omezeními cizího klíče, které jsou definovány v databázi. Další informace najdete v tématu [jak: Konfigurace omezení cizího klíče v datové sadě](https://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e).  
   
 ## <a name="set-the-order-to-perform-updates"></a>Nastavení pořadí provádění aktualizací  
  Nastavení pořadí provádění aktualizací sady pořadí jednotlivých vloží, aktualizace a odstranění, které jsou potřeba pro uložení upravených dat ve všech tabulkách datové sady. Když hierarchické aktualizace zapnutý, vloží jsou provést jako první, pak aktualizuje a pak odstraní. `TableAdapterManager` Poskytuje `UpdateOrder` vlastnost, která může být nastavena na provádění nejprve aktualizací, pak vložení a odstranění.  
@@ -63,7 +63,7 @@ Hierarchická aktualizace * se vztahuje k procesu ukládání aktualizovaná dat
 > [!NOTE]
 > Je důležité pochopit, že je vše zahrnuto pořadí aktualizace. To znamená když se aktualizace prováděly, vložení a odstranění jsou prováděny pro všechny tabulky v datové sadě.  
   
- Chcete-li nastavit `UpdateOrder` vlastnost Po přetažení položky z [okna zdroje dat](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) do formuláře, vyberte `TableAdapterManager` v podokně komponent a pak nastavte `UpdateOrder` vlastnost v **vlastnosti** okna. Další informace najdete v tématu [jak: Nastavení pořadí provádění hierarchické aktualizace](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
+ Chcete-li nastavit `UpdateOrder` vlastnost Po přetažení položky z [okna zdroje dat](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) do formuláře, vyberte `TableAdapterManager` v podokně komponent a pak nastavte `UpdateOrder` vlastnost v **vlastnosti** okna. Další informace najdete v tématu [jak: Nastavení pořadí provádění hierarchické aktualizace](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Vytvořit záložní kopii datové sady, než se pustíte do hierarchické aktualizace  
  Při ukládání dat (voláním `TableAdapterManager.UpdateAll()` metoda), `TableAdapterManager` pokusí k aktualizaci dat pro každou tabulku v rámci jedné transakce. Pokud žádnou část aktualizace pro jakoukoli tabulku selže, celá transakce vrácena zpět. Ve většině situací vrátí vrácení změn aplikace do původního stavu.  
@@ -120,7 +120,7 @@ Hierarchická aktualizace * se vztahuje k procesu ukládání aktualizovaná dat
 |`UpdateAll` – Metoda|Uloží všechna data ze všech dat tabulky.|  
 |`BackUpDataSetBeforeUpdate` Vlastnost|Určuje, jestli se má vytvořit záložní kopii datové sady, před spuštěním `TableAdapterManager.UpdateAll` metody. Datový typ Boolean.|  
 |*tableName* `TableAdapter` vlastnost|Představuje `TableAdapter`. Vygenerovaný `TableAdapterManager` obsahuje vlastnost pro každý `TableAdapter` spravuje. Například datovou sadu s tabulkou Zákazníci a objednávky generuje s použitím `TableAdapterManager` obsahující `CustomersTableAdapter` a `OrdersTableAdapter` vlastnosti.|  
-|`UpdateOrder` Vlastnost|Určuje pořadí jednotlivých insert, update a příkazů delete. Nastavte na jednu z hodnot v `TableAdapterManager.UpdateOrderOption` výčtu.<br /><br /> Ve výchozím nastavení `UpdateOrder` je nastavena na **InsertUpdateDelete**. To znamená, vloží, pak aktualizuje a odstraní se provádí pro všechny tabulky v datové sadě. Další informace najdete v tématu [jak: Nastavení pořadí provádění hierarchické aktualizace](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
+|`UpdateOrder` Vlastnost|Určuje pořadí jednotlivých insert, update a příkazů delete. Nastavte na jednu z hodnot v `TableAdapterManager.UpdateOrderOption` výčtu.<br /><br /> Ve výchozím nastavení `UpdateOrder` je nastavena na **InsertUpdateDelete**. To znamená, vloží, pak aktualizuje a odstraní se provádí pro všechny tabulky v datové sadě. Další informace najdete v tématu [jak: Nastavení pořadí provádění hierarchické aktualizace](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
   
 ## <a name="see-also"></a>Viz také  
  [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

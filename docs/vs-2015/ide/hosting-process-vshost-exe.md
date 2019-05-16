@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90aa5e77c6541b36619615fc253c55f5d78a6b45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 43feac58c024c0eda8b8930fba05c0c92f7ac6bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445701"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704321"
 ---
 # <a name="hosting-process-vshostexe"></a>Proces hostování (vshost.exe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Hostitelský proces je funkce v sadě Visual Studio, který zlepšuje výkon lad
 > Hostování souborů procesu (. vshost.exe) jsou určeny pro použití v aplikaci Visual Studio a by neměl být přímo spustit nebo nasazen s aplikací.  
   
 ## <a name="improved-debugging-performance"></a>Vylepšení ladění výkonu  
- Hostitelský proces vytvoří aplikační doménu a ladicí program přidruží k aplikaci. Provádění těchto úkolů můžete zavést významnému zpoždění mezi ladění v době spuštění a čas aplikace zahájí spuštění. Hostitelský proces vám pomůže zvýšit výkon tím vytváření domény aplikace a přidružení ladicího programu na pozadí a uložíte domény aplikace a spustí ladicí program stavu mezi aplikace. Další informace o aplikačních doménách najdete v tématu [aplikačních doménách](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8).  
+ Hostitelský proces vytvoří aplikační doménu a ladicí program přidruží k aplikaci. Provádění těchto úkolů můžete zavést významnému zpoždění mezi ladění v době spuštění a čas aplikace zahájí spuštění. Hostitelský proces vám pomůže zvýšit výkon tím vytváření domény aplikace a přidružení ladicího programu na pozadí a uložíte domény aplikace a spustí ladicí program stavu mezi aplikace. Další informace o aplikačních doménách najdete v tématu [aplikačních doménách](https://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8).  
   
 ## <a name="partial-trust-debugging"></a>Ladění v částečném vztahu důvěryhodnosti  
  Aplikace se dá nastavit jako aplikace s částečnou důvěryhodností v [stránku zabezpečení](../ide/reference/security-page-project-designer.md) z **Návrháře projektu**. Ladění aplikace s částečnou důvěryhodností vyžaduje speciální inicializaci domény aplikace. Tato inicializace zařizuje služba hostitelský proces.  
@@ -40,4 +40,4 @@ Hostitelský proces je funkce v sadě Visual Studio, který zlepšuje výkon lad
  [Ladění a proces hostování](../debugger/debugging-and-the-hosting-process.md)   
  [Postupy: Zákaz procesu hostování](../ide/how-to-disable-the-hosting-process.md)   
  [Příkazové podokno](../ide/reference/immediate-window.md)   
- [Aplikační domény](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8)
+ [Aplikační domény](https://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8)

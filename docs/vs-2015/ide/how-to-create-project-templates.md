@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a43fe714028b7211904a0bb993d2964bfe612ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 109810e3650ec4cf01d781026eddf09834fc3f18
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416923"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703102"
 ---
 # <a name="how-to-create-project-templates"></a>Postupy: Vytváření šablon projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Tento postup umožňuje vytvořit pomocí šablony **exportovat šablonu** prův
 1. Vytvoření projektu.  
   
     > [!NOTE]
-    > Při pojmenování projektu, který bude sloužit jako zdroj šablony, používejte pouze znaky platný identifikátor. Šablonu exportovat z projektu s názvem se neplatné znaky. mohou způsobit chyby kompilace v budoucnu projekty založené na šabloně. Další informace o platný identifikátor znaků naleznete v tématu [deklarované názvy elementů](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
+    > Při pojmenování projektu, který bude sloužit jako zdroj šablony, používejte pouze znaky platný identifikátor. Šablonu exportovat z projektu s názvem se neplatné znaky. mohou způsobit chyby kompilace v budoucnu projekty založené na šabloně. Další informace o platný identifikátor znaků naleznete v tématu [deklarované názvy elementů](https://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
   
 2. Upravte projekt, dokud nebude připravený exportovat jako šablonu.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 1ebe75fae15069efc5e76ac59e6f16f9ca06d1ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e5284ae41f961d8e027590b4296037236e7108f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759440"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699435"
 ---
 # <a name="intrinsic-functions"></a>Vnitřní funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ Výraz v SAL může být výraz jazyka C/C++, za předpokladu, že je výraz, kt
 |Poznámka|Popis|  
 |----------------|-----------------|  
 |`_String_length_(param)`|`param` je počet elementů v řetězec, který se má ale nezahrnuje ukončovací znak null. Tato poznámka je vyhrazený pro typy řetězce znaků.|  
-|`strlen(param)`|`param` je počet elementů v řetězec, který se má ale nezahrnuje ukončovací znak null. Tato poznámka je vyhrazený pro použití na znak pole a podobá se funkci C Runtime [strlen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
-|`wcslen(param)`|`param` počet prvků v řetězci nahoru (ale nikoli včetně), které je ukončovacího znaku null. Tato poznámka je vyhrazený pro použití na široké znaky pole a podobá se funkci C Runtime [wcslen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`strlen(param)`|`param` je počet elementů v řetězec, který se má ale nezahrnuje ukončovací znak null. Tato poznámka je vyhrazený pro použití na znak pole a podobá se funkci C Runtime [strlen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`wcslen(param)`|`param` počet prvků v řetězci nahoru (ale nikoli včetně), které je ukončovacího znaku null. Tato poznámka je vyhrazený pro použití na široké znaky pole a podobá se funkci C Runtime [wcslen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
   
 ## <a name="see-also"></a>Viz také  
  [Použití poznámek SAL k omezení defektů kódu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

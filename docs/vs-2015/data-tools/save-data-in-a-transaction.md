@@ -20,14 +20,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08480e46ab492acb1c7ab10c8514897721708aba
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559195"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692459"
 ---
-# <a name="save-data-in-a-transaction"></a>Ukládání dat do transakce
+# <a name="save-data-in-a-transaction"></a>Uložení dat do transakce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transactions> oboru názvů. V tomto příkladu `Customers` a `Orders` tabulek z ukázkové databáze Northwind.  
@@ -44,12 +44,12 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
 2. Pojmenujte projekt **SavingDataInATransactionWalkthrough**.  
   
-3. Vyberte **aplikace Windows**a pak vyberte **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Vyberte **aplikace Windows**a pak vyberte **OK**. Další informace najdete v tématu [klientské aplikace](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **SavingDataInATransactionWalkthrough** projekt je vytvořen a přidán do **Průzkumníka řešení**.  
   
 ## <a name="create-a-database-data-source"></a>Vytvoření databázového zdroje dat  
- Tento krok používá [Průvodce konfigurací zdroje dat](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) vytvořit zdroj dat na základě `Customers` a `Orders` tabulky v ukázkové databázi Northwind.  
+ Tento krok používá [Průvodce konfigurací zdroje dat](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) vytvořit zdroj dat na základě `Customers` a `Orders` tabulky v ukázkové databázi Northwind.  
   
 #### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat  
   

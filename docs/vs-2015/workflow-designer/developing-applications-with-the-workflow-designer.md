@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9eea79978b7b61de1e56d787b5a4cd9797be1aa6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977012"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704789"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Vývoj aplikací pomocí návrháře postupu provádění
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] Vizuálního návrháře a ladicí program pro grafický procesu vytváření a ladění [!INCLUDE[wf](../includes/wf-md.md)] aplikací v [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] , která je hostována v [!INCLUDE[vs2010](../includes/vs2010-md.md)] vývojové prostředí. Umožňuje sestavit aplikace složený pracovního postupu, knihovna aktivit nebo [!INCLUDE[indigo1](../includes/indigo1-md.md)] službu pomocí šablony a návrháři aktivit. [!INCLUDE[crabout](../includes/crabout-md.md)] pracovní postupy, najdete v článku [Windows Workflow Foundation &#91;rozhraní .NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] Vizuálního návrháře a ladicí program pro grafický procesu vytváření a ladění [!INCLUDE[wf](../includes/wf-md.md)] aplikací v [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] , která je hostována v [!INCLUDE[vs2010](../includes/vs2010-md.md)] vývojové prostředí. Umožňuje sestavit aplikace složený pracovního postupu, knihovna aktivit nebo [!INCLUDE[indigo1](../includes/indigo1-md.md)] službu pomocí šablony a návrháři aktivit. [!INCLUDE[crabout](../includes/crabout-md.md)] pracovní postupy, najdete v článku [Windows Workflow Foundation &#91;rozhraní .NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Následuje několik nových funkcí návrhu, které tuto novou verzi nastavit [!INCLUDE[wfd2](../includes/wfd2-md.md)] kromě starší verze [!INCLUDE[wfd2](../includes/wfd2-md.md)]:  
   
@@ -65,8 +65,8 @@ ms.locfileid: "62977012"
  [Vývoj aplikací pracovních postupů určených pro .NET Framework verze 3.0 nebo 3.5](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  Obsahuje pokyny, pomocí starší verze návrháře, který se zaměřuje [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
- [Změna hostování návrháře &#91;ukázky WF&#93;](http://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
+ [Změna hostování návrháře &#91;ukázky WF&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
  Tento příklad ukazuje, jak vytvořit rozložení WPF tak, aby obsahovala návrháře.  
   
- [Návrháři vlastních aktivit](http://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
+ [Návrháři vlastních aktivit](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
  Tato část obsahuje ukázkové aktivity, které používají vlastní návrháři zobrazení v Návrháři pracovních postupů.

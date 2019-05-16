@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff2031aa5e690829967ccc41ca35c67df23d325b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 416e17c95290643873f52f71ec892514d183b6d0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786122"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704564"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Jak mohu zachovat fokus při procházení programem?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Popis
  Program má problém Aktivace okna. Krokování pomocí programu v ladicím programu dochází ke kolizím s Moje schopnost reprodukujte problém, protože program spouštím ztrácí fokus. Existuje způsob, abyste tomu předešli?  
   
 ## <a name="solution"></a>Řešení  
- Pokud máte druhý počítač, použijte vzdálené ladění. Při spuštění ladicího programu na hostiteli můžete provozovat programu na vzdáleném počítači. Další informace najdete v tématu [jak: Výběr vzdáleného počítače](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+ Pokud máte druhý počítač, použijte vzdálené ladění. Při spuštění ladicího programu na hostiteli můžete provozovat programu na vzdáleném počítači. Další informace najdete v tématu [jak: Výběr vzdáleného počítače](https://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění nativního kódu nejčastější dotazy](../debugger/debugging-native-code-faqs.md)   

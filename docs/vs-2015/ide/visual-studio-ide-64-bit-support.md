@@ -13,24 +13,24 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e424078580ff4a739046b2555c3fb94ee17dafa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c83c4623854fd8f7605096d218de69460fc8a919
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089654"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698169"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umožňuje nastavit vašich aplikací na různých platformách, včetně 64bitových platforem. Další informace o 64bitové platformě podporují v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], naleznete v tématu [64bitové aplikace](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umožňuje nastavit vašich aplikací na různých platformách, včetně 64bitových platforem. Další informace o 64bitové platformě podporují v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], naleznete v tématu [64bitové aplikace](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
 
 ## <a name="deploying-a-64-bit-application"></a>Zavádění 64bitové aplikace
  Následující témata se zabývají nasazením 64bitových aplikací.
 
 - [Nasazení nezbytných součástí pro 64bitové aplikace](../deployment/deploying-prerequisites-for-64-bit-applications.md)
 
-- [Postupy: Vytvoření instalačního programu Windows pro 64bitové platformě](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
+- [Postupy: Vytvoření instalačního programu Windows pro 64bitové platformě](https://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
 
 ## <a name="configuring-projects-as-64-bit-applications"></a>Konfigurace projektů jako 64bitové aplikace
  Následující témata popisují konfiguraci projektů, které mají být sestaveny pro 64bitové aplikace.
@@ -40,7 +40,7 @@ ms.locfileid: "60089654"
 ## <a name="debugging-a-64-bit-application"></a>Ladění 64bitové aplikace
  Upravit a pokračovat není funkční v případě [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] běží v operačním systému Windows 64-bit. Následující témata se zabývají laděním 64bitových aplikací.
 
-- [Postupy: Ladění na 64bitové platformy](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
+- [Postupy: Ladění na 64bitové platformy](https://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
 
 - [Ladění 64bitových aplikací](../debugger/debug-64-bit-applications.md)
 

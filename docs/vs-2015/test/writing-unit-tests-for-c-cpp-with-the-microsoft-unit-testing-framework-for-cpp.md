@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d238b5923c6f1377ec68717c8ed658bc74fe8e6a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695277"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Zápis testů jednotek pro C/C++ s infrastrukturou testování částí Microsoft Unit Testing Framework pro C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ V sadě Visual Studio můžete vytvořit testy jednotek pro nespravovaný kód n
   
     - `#include` `.h` soubor obsahující deklarace funkcí knihovny DLL externě dostupný.  
   
-         `.h` Soubor by měl obsahovat deklarace funkce označené `_declspec(dllimport)`. Alternativně můžete exportovat metod pomocí souborů DEF. Další informace najdete v tématu [import a export](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
+         `.h` Soubor by měl obsahovat deklarace funkce označené `_declspec(dllimport)`. Alternativně můžete exportovat metod pomocí souborů DEF. Další informace najdete v tématu [import a export](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
   
          Testování částí můžete přistupovat pouze funkce, které byly exportovány z knihovny DLL v rámci testu.  
   
@@ -168,7 +168,7 @@ V sadě Visual Studio můžete vytvořit testy jednotek pro nespravovaný kód n
   
      ![Nový kód projektu a .h souboru DLL s makry API](../test/media/utecpp07.png "UteCpp07")  
   
-     Deklarátor `__declspec(dllexport)` způsobí, že veřejné a chráněné členy třídy viditelný mimo knihovnu DLL. Další informace najdete v tématu [používání příkazů dllimport a dllexport ve třídách jazyka C++](http://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
+     Deklarátor `__declspec(dllexport)` způsobí, že veřejné a chráněné členy třídy viditelný mimo knihovnu DLL. Další informace najdete v tématu [používání příkazů dllimport a dllexport ve třídách jazyka C++](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
   
 4. Soubor .cpp instančního objektu přidejte minimální tělo funkce:  
   
@@ -395,7 +395,7 @@ V sadě Visual Studio můžete vytvořit testy jednotek pro nespravovaný kód n
 ## <a name="see-also"></a>Viz také  
  [Přidání testů jednotek do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [Using Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
- [Přehled Interoperability spravovaného a nespravovaného kódu](http://msdn.microsoft.com/library/ms973872.aspx)   
+ [Přehled Interoperability spravovaného a nespravovaného kódu](https://msdn.microsoft.com/library/ms973872.aspx)   
  [Ladění nativního kódu](../debugger/debugging-native-code.md)   
- [Návod: Vytvoření a použití dynamické knihovny (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [Import a export](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+ [Návod: Vytvoření a použití dynamické knihovny (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [Import a export](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

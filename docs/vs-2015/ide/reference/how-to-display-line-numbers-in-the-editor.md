@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33dfcd989a71785918cf4d121e2a2624654a5101
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a2d6d3bd1d0a27a12194005422910236ea0fd02c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405675"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704401"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Postupy: Zobrazení čísel řádků v editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "63405675"
 Můžete zobrazit nebo skrýt číslování řádku ve váš kód.  
   
 > [!NOTE]
-> V závislosti na aktivních nastaveních se dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch, které jsou zde popsány. Chcete-li změnit nastavení, otevřete **nástroje / Import a Export nastavení**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> V závislosti na aktivních nastaveních se dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch, které jsou zde popsány. Chcete-li změnit nastavení, otevřete **nástroje / Import a Export nastavení**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="display-line-numbers-in-code"></a>Zobrazení čísel řádků v kódu  
  Čísla řádků nejsou přidány do kódu; jsou to pouze pro referenci. Pokud chcete tisknout čísla řádků **tisk** dialogové okno, vyberte **zahrnutí čísel řádků** zaškrtávací políčko.  

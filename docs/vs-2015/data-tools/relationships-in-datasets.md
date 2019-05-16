@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7f6aba4076f7532d5eab5d47515b734c4c312b99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425403"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692532"
 ---
 # <a name="relationships-in-datasets"></a>Vztahy v datových sadách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Datové sady, které obsahují data související tabulky použijte <xref:System
  Když vytvoříte <xref:System.Data.DataRelation> objektu, máte možnost určit, že relace lze použít pouze k vynucení omezení – to znamená, ho také se nepoužije pro přístup k souvisejících záznamů. Tuto možnost můžete použít ke generování datovou sadu, která je efektivnější a který obsahuje metody méně než jedna možnost související záznamy. Nebudete ale moci přistupovat k souvisejících záznamů. Například pouze omezení relace zabraňuje odstranění nadřazený záznam, který má stále podřízené záznamy a podřízené záznamy nelze přistupovat prostřednictvím nadřazené.  
   
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Ruční vytvoření vztahu data v návrháři datových sad  
- Při vytváření datových tabulek pomocí nástrojů pro návrh dat v sadě Visual Studio vztahy se vytvoří automaticky, pokud ze zdroje dat se dají shromáždit informace. Pokud chcete ručně přidat tabulky dat z **datovou sadu** karty **nástrojů**, možná budete muset ručně vytvořit relaci. Další informace o vytváření <xref:System.Data.DataRelation> prostřednictvím kódu programu, najdete v článku objekty [přidání datových relací](http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4).  
+ Při vytváření datových tabulek pomocí nástrojů pro návrh dat v sadě Visual Studio vztahy se vytvoří automaticky, pokud ze zdroje dat se dají shromáždit informace. Pokud chcete ručně přidat tabulky dat z **datovou sadu** karty **nástrojů**, možná budete muset ručně vytvořit relaci. Další informace o vytváření <xref:System.Data.DataRelation> prostřednictvím kódu programu, najdete v článku objekty [přidání datových relací](https://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4).  
   
  Relace mezi tabulkami dat zobrazovat jako řádky v **Návrhář Dataset**, s klíči a nekonečno piktogram znázorňující aspekt vztah jeden mnoho. Ve výchozím nastavení název relationshipCommentEnd Id = "1c8c78e19b7fa441" se nezobrazí na návrhové ploše.  
   
@@ -84,7 +84,7 @@ Datové sady, které obsahují data související tabulky použijte <xref:System
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>K vytvoření vztahu mezi dvěma datovými tabulkami  
   
-1. Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Přetáhněte **vztah** objektu z **datovou sadu** nástrojů do podřízené tabulky dat v relaci.  
   
@@ -98,9 +98,9 @@ Datové sady, které obsahují data související tabulky použijte <xref:System
   
 6. Vyberte sloupce, které spojení tabulek v **sloupce klíčů** a **sloupce cizího klíče** seznamy.  
   
-7. Vyberte, jestli chcete vytvořit relaci nebo omezení. Informace najdete v tématu [Úvod do objektů DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+7. Vyberte, jestli chcete vytvořit relaci nebo omezení. Informace najdete v tématu [Úvod do objektů DataRelation](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
-8. Zaškrtněte nebo zrušte zaškrtnutí **vnořené relace** pole. Výběr, tato možnost nastaví <xref:System.Data.DataRelation.Nested%2A> vlastnost `true`, a to způsobí, že podřízené řádky vztahu, chcete-li být vnořen v rámci nadřazeného sloupce, když jsou tyto řádky zapisují jako XML data nebo synchronizovat se službou <xref:System.Xml.XmlDataDocument>. Další informace najdete v tématu [vnoření datových relací](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
+8. Zaškrtněte nebo zrušte zaškrtnutí **vnořené relace** pole. Výběr, tato možnost nastaví <xref:System.Data.DataRelation.Nested%2A> vlastnost `true`, a to způsobí, že podřízené řádky vztahu, chcete-li být vnořen v rámci nadřazeného sloupce, když jsou tyto řádky zapisují jako XML data nebo synchronizovat se službou <xref:System.Xml.XmlDataDocument>. Další informace najdete v tématu [vnoření datových relací](https://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
   
 9. Nastavení pravidel vynucení když děláte změny na záznamy v těchto tabulkách. Další informace naleznete v tématu <xref:System.Data.Rule>.  
   
@@ -108,6 +108,6 @@ Datové sady, které obsahují data související tabulky použijte <xref:System
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Chcete-li zobrazit název relace v návrháři datových sad  
   
-1. Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Z **Data** nabídku, vyberte **zobrazení popisků relací** příkazu můžete zobrazit název vztahu. Tento příkaz Skrýt název vztahu vymažte.

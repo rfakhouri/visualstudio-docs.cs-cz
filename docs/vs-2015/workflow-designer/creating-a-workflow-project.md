@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91d84b6a763dd3fecfac8a030f8514c91e5ac61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976987"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704718"
 ---
 # <a name="creating-a-workflow-project"></a>Vytvoření projektu pracovního postupu
 Pracovní postupy, [!INCLUDE[indigo1](../includes/indigo1-md.md)] služby pracovního postupu, vlastních aktivit a návrháři lze vytvořit pomocí vlastních aktivit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony projektu. Tato část popisuje, jak vytvořit knihovny a aplikace pomocí šablony projektu, který je k dispozici v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -44,7 +44,7 @@ Pracovní postupy, [!INCLUDE[indigo1](../includes/indigo1-md.md)] služby pracov
  Popisuje, jak přidat aktivity další pracovního postupu nebo návrháře a další [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] položky, jako jsou činnosti kódu do existujícího projektu.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Návrh pracovních postupů](http://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
+ [Návrh pracovních postupů](https://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
   
 ## <a name="see-also"></a>Viz také  
  [Používání návrháře postupu provádění](../workflow-designer/using-the-workflow-designer.md)

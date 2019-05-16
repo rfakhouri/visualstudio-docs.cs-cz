@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc7c68fe767d2add0842e30f66c51a3dcc84905f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3f8b122deab5dbdc30b129bce221a804f8c53aa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447284"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699328"
 ---
 # <a name="source-server-security-alert"></a>Výstraha zabezpečení zdrojového serveru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,4 +36,4 @@ Při použití zdrojového serveru, používejte pouze soubory symbolů, které 
 ## <a name="see-also"></a>Viz také  
  [Zadání symbolu (.pdb) a zdrojové soubory](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [Zdrojový Server](http://msdn.microsoft.com/library/windows/desktop/ms680641.aspx)
+ [Zdrojový Server](https://msdn.microsoft.com/library/windows/desktop/ms680641.aspx)

@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 972f749d03ec81c40ed91a2fb40161ebdb8cd791
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 95e768fb4edbc4741f07ba497faac43ac512b8e5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650253"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692598"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Sada pravidel Nativní minimální pravidla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůle�
 |                       [C6504](../code-quality/c6504.md)                        |                                              Null na typech bez ukazatele                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               Vlastnost MustCheck na typ Void                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      Velikost vyrovnávací paměti na typech bez ukazatele nebo pole                                      |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                       Null Neshoda v přístupu přes ukazatel nula                                       |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                       Null Neshoda v přístupu přes ukazatel nula                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           K zápisu na konstantě                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Návratová hodnota použita na předpokladu                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        NULL byl ukončen na typech bez ukazatele                                         |
@@ -70,11 +70,11 @@ Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůle�
 |                       [C6516](../code-quality/c6516.md)                        |                                          Atribut nemá žádné vlastnosti                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Platná velikost pro vyrovnávací paměť bez možnosti čtení                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Zapisovatelná velikost pro vyrovnávací paměť, Nezapisovatelný                                      |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Neplatná velikost řetězce přistoupit přes ukazatel                                        |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Neplatná velikost řetězce přistoupit přes ukazatel                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Typ řetězec neplatné velikosti                                            |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Neplatná velikost parametru řetězce                                         |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Neplatná velikost parametru řetězce                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Neplatná velikost řetězce-nedosažitelná oblast                                    |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Typ vyrovnávací paměti pro řetězec neplatné velikosti                                        |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Typ vyrovnávací paměti pro řetězec neplatné velikosti                                        |
 |                       [C6527](../code-quality/c6527.md)                        |              Neplatná Poznámka: Vlastnost 'NeedsRelease' nesmí být použita pro hodnoty typu void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Nerozpoznaný styl řetězce formátu                                        |
 |                       [C6540](../code-quality/c6540.md)                        | Použití poznámek atributu na této funkci způsobí neplatnost všech existujících poznámek __declspec  |

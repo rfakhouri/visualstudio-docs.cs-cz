@@ -75,12 +75,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 158aff0f14886ea5d714c35456bf53d5768f57b8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057453"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697868"
 ---
 # <a name="crt-debug-heap-details"></a>Podrobnosti haldy ladění CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ Toto téma obsahuje podrobný pohled na haldu ladění CRT.
 ## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Najít přetečení vyrovnávací paměti s haldou ladění  
  Dva z nejběžnějších a vystopovatelných problémů, které potkávají programátory jsou přepisování konce přidělené vyrovnávací paměti a nevrácená paměť (neúspěšný pokus volná přidělení, poté, co už nejsou potřeba). Halda ladění poskytuje výkonné nástroje pro řešení problémů s přidělením paměti tohoto druhu.  
   
- Ladicí verze funkcí haldy volání standardní nebo základní verze, používané v verze sestavení. Pokud budete požadovat blok paměti, přidělí správce hald ladění ze základní haldy mírně větší blok paměti, než je požadován a vrací ukazatel na vaši část tohoto bloku. Předpokládejme například, že vaše aplikace obsahuje volání: `malloc( 10 )`. V sestavení pro vydání [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) by volat základní rutinu přidělení haldy požadující přidělení 10 bajtů. V sestavení pro ladění, ale `malloc` zavolal [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), která by potom volala základní rutinu přidělení haldy požadující přidělení 10 bajtů plus přibližně 36 bajtů další paměti. Všechny výsledné bloky paměti v haldě ladění jsou spojeny do jednoho propojeného seznamu a seřazeny podle toho, kdy byly přiděleny.  
+ Ladicí verze funkcí haldy volání standardní nebo základní verze, používané v verze sestavení. Pokud budete požadovat blok paměti, přidělí správce hald ladění ze základní haldy mírně větší blok paměti, než je požadován a vrací ukazatel na vaši část tohoto bloku. Předpokládejme například, že vaše aplikace obsahuje volání: `malloc( 10 )`. V sestavení pro vydání [malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) by volat základní rutinu přidělení haldy požadující přidělení 10 bajtů. V sestavení pro ladění, ale `malloc` zavolal [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), která by potom volala základní rutinu přidělení haldy požadující přidělení 10 bajtů plus přibližně 36 bajtů další paměti. Všechny výsledné bloky paměti v haldě ladění jsou spojeny do jednoho propojeného seznamu a seřazeny podle toho, kdy byly přiděleny.  
   
  Další paměť přidělená rutinami haldy ladění je používána pro ukládání informací, pro ukazatele, propojují paměť bloků ladicího dohromady a pro malé mezipaměti na každé straně vašich dat, které zachytí přepisy přiděleného regionu.  
   
@@ -150,10 +150,10 @@ typedef struct _CrtMemBlockHeader
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
 ## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Typy bloků na haldě ladění  
- Každý blok paměti v haldě ladění je přiřazen k jednomu z pěti typů rozdělení. Tyto typy jsou sledovány a jinak hlášeny pro účely detekce nevrácení a vykazování stavu. Můžete zadat typ bloku přidělením pomocí přímého volání jedné z funkcí přidělení haldy ladění, jako [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Pět typů bloků paměti v haldě ladění (nastavit **nBlockUse** člena **_CrtMemBlockHeader** struktura) jsou následující:  
+ Každý blok paměti v haldě ladění je přiřazen k jednomu z pěti typů rozdělení. Tyto typy jsou sledovány a jinak hlášeny pro účely detekce nevrácení a vykazování stavu. Můžete zadat typ bloku přidělením pomocí přímého volání jedné z funkcí přidělení haldy ladění, jako [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Pět typů bloků paměti v haldě ladění (nastavit **nBlockUse** člena **_CrtMemBlockHeader** struktura) jsou následující:  
   
  **_NORMAL_BLOCK**  
- Volání [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) nebo [calloc](http://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) vytvoří blok Normal. Pokud máte v úmyslu používat pouze normální bloky a nepotřebujete bloky klienta, můžete definovat [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), což způsobí, že všechny přidělení haldy namapována na své ekvivalenty ladění v sestaveních ladění volá. To vám umožní soubor název a informace čísla řádku o každého volání přidělení v odpovídajícím záhlaví bloku.  
+ Volání [malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) nebo [calloc](https://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) vytvoří blok Normal. Pokud máte v úmyslu používat pouze normální bloky a nepotřebujete bloky klienta, můžete definovat [_CRTDBG_MAP_ALLOC](https://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), což způsobí, že všechny přidělení haldy namapována na své ekvivalenty ladění v sestaveních ladění volá. To vám umožní soubor název a informace čísla řádku o každého volání přidělení v odpovídajícím záhlaví bloku.  
   
  `_CRT_BLOCK`  
  Bloky paměti přidělené interně mnoha funkcemi knihovny run-time jsou označeny jako CRT bloky tak mohly být zpracovány samostatně. V důsledku toho dochází k detekci přetečení a jiné operace nemusí být ovlivněny. Přidělení musí nikdy přidělit, přerozdělit nebo uvolnit jakýkoli blok typu CRT.  
@@ -166,7 +166,7 @@ typedef struct _CrtMemBlockHeader
 freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));  
 ```  
   
- Funkci háčku dodaná klientem pro výpis objektů uložených v blocích klienta lze nainstalovat pomocí [_CrtSetDumpClient](http://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033)a pak bude volána pokaždé, když bude blok klienta vypsán pomocí funkce ladění. Navíc [_CrtDoForAllClientObjects](http://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) slouží k volání dané funkce poskytnuté aplikací pro každý blok klient v haldě ladění.  
+ Funkci háčku dodaná klientem pro výpis objektů uložených v blocích klienta lze nainstalovat pomocí [_CrtSetDumpClient](https://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033)a pak bude volána pokaždé, když bude blok klienta vypsán pomocí funkce ladění. Navíc [_CrtDoForAllClientObjects](https://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) slouží k volání dané funkce poskytnuté aplikací pro každý blok klient v haldě ladění.  
   
  **_FREE_BLOCK**  
  Za normálních okolností jsou bloky, které jsou uvolněny odebrán ze seznamu. Zkontroluje, jestli uvolněné paměti není stále zapisováno, nebo simulovat podmínky nedostatku paměti, můžete zachovat uvolněné bloky v propojeném seznamu, označeny jako volné a se známou bajtovou hodnotou (nyní 0xDD).  
@@ -174,7 +174,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  **_IGNORE_BLOCK**  
  Je možné vypnout operace haldy ladění pro určitou dobu. Během této doby se bloky paměti jsou uloženy v seznamu, ale jsou označeny jako bloky ignorovat.  
   
- Pokud chcete zjistit typ a podtyp daného bloku, použijte funkci [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) a makra **_BLOCK_TYPE** a **_BLOCK_SUBTYPE**. Makra jsou definovány (v crtdbg.h) následovně:  
+ Pokud chcete zjistit typ a podtyp daného bloku, použijte funkci [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) a makra **_BLOCK_TYPE** a **_BLOCK_SUBTYPE**. Makra jsou definovány (v crtdbg.h) následovně:  
   
 ```  
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)  
@@ -187,10 +187,10 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  Mnoho funkcí haldy ladění je třeba přistupovat zevnitř vašeho kódu. Následující část popisuje některé funkce a jejich použití.  
   
  `_CrtCheckMemory`  
- Můžete použít volání [_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765), například pro kontrolu integrity haldy v libovolném bodě. Tato funkce zkontroluje každý blok paměti v haldě, ověří, že jsou platné informace záhlaví bloku paměti a potvrdí, že vyrovnávací paměti nebyly upraveny.  
+ Můžete použít volání [_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765), například pro kontrolu integrity haldy v libovolném bodě. Tato funkce zkontroluje každý blok paměti v haldě, ověří, že jsou platné informace záhlaví bloku paměti a potvrdí, že vyrovnávací paměti nebyly upraveny.  
   
  `_CrtSetDbgFlag`  
- Můžete řídit, jak haldy ladění uchovává informace o přidělení pomocí vnitřního příznaku [_crtDbgFlag](http://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973), který lze přečíst a nastavit pomocí [_CrtSetDbgFlag](http://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c) funkce. Tak, že tento příznak změníte, můžete dát pokyn haldě ladění pro kontrolu nevracení paměti při ukončení programu a podávala zjištění. Podobně můžete určit, že uvolněné bloky paměti nesmí být odebrány ze seznamu propojených pro simulaci situace nedostatku paměti. Při kontrole haldy tyto uvolněné bloky jsou kontrolovány v k zajištění toho, aby nebyly narušeny.  
+ Můžete řídit, jak haldy ladění uchovává informace o přidělení pomocí vnitřního příznaku [_crtDbgFlag](https://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973), který lze přečíst a nastavit pomocí [_CrtSetDbgFlag](https://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c) funkce. Tak, že tento příznak změníte, můžete dát pokyn haldě ladění pro kontrolu nevracení paměti při ukončení programu a podávala zjištění. Podobně můžete určit, že uvolněné bloky paměti nesmí být odebrány ze seznamu propojených pro simulaci situace nedostatku paměti. Při kontrole haldy tyto uvolněné bloky jsou kontrolovány v k zajištění toho, aby nebyly narušeny.  
   
  **_CrtDbgFlag** příznak obsahuje následující pole bit:  
   
@@ -306,11 +306,11 @@ typedef struct _CrtMemState
   
 |Funkce|Popis|  
 |--------------|-----------------|  
-|[_CrtMemCheckpoint](http://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|Uloží snímek haldy ve **_CrtMemState** struktura poskytnuté aplikací.|  
-|[_CrtMemDifference](http://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|Porovná dvě struktury stavu paměti, ukládá rozdíly mezi nimi ve třetí struktuře stavu a vrátí TRUE, pokud dva stavy se liší.|  
-|[_CrtMemDumpStatistics](http://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|Výpisy stavu systému daného **_CrtMemState** struktury. Struktura může obsahovat snímek stavu ladění haldy v daném okamžiku nebo rozdíl mezi dvěma snímky.|  
-|[_CrtMemDumpAllObjectsSince](http://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|Vypíše informace o všech objektech, které jsou přiděleny od pořízení daného snímku haldy nebo od začátku spuštění. Pokaždé, když se vypíše **_CLIENT_BLOCK** bloku volá funkci připojení poskytnutou aplikací, pokud byla nainstalována pomocí **_CrtSetDumpClient**.|  
-|[_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|Určuje, zda paměti došlo k nevrácení od spuštění programu a pokud ano, vypíše všechny přidělené objekty. Pokaždé, když **_CrtDumpMemoryLeaks** výpisy stavu systému **_CLIENT_BLOCK** bloku volá funkci připojení poskytnutou aplikací, pokud byla nainstalována pomocí **_CrtSetDumpClient**.|  
+|[_CrtMemCheckpoint](https://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|Uloží snímek haldy ve **_CrtMemState** struktura poskytnuté aplikací.|  
+|[_CrtMemDifference](https://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|Porovná dvě struktury stavu paměti, ukládá rozdíly mezi nimi ve třetí struktuře stavu a vrátí TRUE, pokud dva stavy se liší.|  
+|[_CrtMemDumpStatistics](https://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|Výpisy stavu systému daného **_CrtMemState** struktury. Struktura může obsahovat snímek stavu ladění haldy v daném okamžiku nebo rozdíl mezi dvěma snímky.|  
+|[_CrtMemDumpAllObjectsSince](https://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|Vypíše informace o všech objektech, které jsou přiděleny od pořízení daného snímku haldy nebo od začátku spuštění. Pokaždé, když se vypíše **_CLIENT_BLOCK** bloku volá funkci připojení poskytnutou aplikací, pokud byla nainstalována pomocí **_CrtSetDumpClient**.|  
+|[_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|Určuje, zda paměti došlo k nevrácení od spuštění programu a pokud ano, vypíše všechny přidělené objekty. Pokaždé, když **_CrtDumpMemoryLeaks** výpisy stavu systému **_CLIENT_BLOCK** bloku volá funkci připojení poskytnutou aplikací, pokud byla nainstalována pomocí **_CrtSetDumpClient**.|  
   
  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
@@ -321,7 +321,7 @@ typedef struct _CrtMemState
   
  Výhod jedinečného čísla požadavku přidělení u každého bloku haldy ladění je nejjednodušší způsob, jak identifikovat konkrétní volání přidělení haldy, které se nezdařilo. Pokud informace o bloku jsou vykázány jednou z funkcí s výpisem paměti, je toto číslo žádosti o přidělení uzavřeno ve složených závorkách (například "{36}").  
   
- Jakmile budete znát číslo žádosti o přidělení nesprávně přiděleného bloku, které můžete předat toto číslo [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) aby vytvořila zarážku. Spuštění se přeruší těsně před rozdělením bloku a vy tak můžete zpětně zjistit, jaké rutina je odpovědná za chybné volání. Aby se zabránilo opětovné kompilaci, můžete provést totéž v ladicím programu nastavením **_crtBreakAlloc** na číslo žádosti o přidělení vás zajímají.  
+ Jakmile budete znát číslo žádosti o přidělení nesprávně přiděleného bloku, které můžete předat toto číslo [_CrtSetBreakAlloc](https://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) aby vytvořila zarážku. Spuštění se přeruší těsně před rozdělením bloku a vy tak můžete zpětně zjistit, jaké rutina je odpovědná za chybné volání. Aby se zabránilo opětovné kompilaci, můžete provést totéž v ladicím programu nastavením **_crtBreakAlloc** na číslo žádosti o přidělení vás zajímají.  
   
  **Vytváření verzí ladění pro vaše rutiny přidělení**  
   

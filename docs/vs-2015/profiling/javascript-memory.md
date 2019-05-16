@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 816db8b2bc5d78541dc089d75ff155b98231ffd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435656"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704538"
 ---
 # <a name="javascript-memory"></a>Paměti jazyka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -382,15 +382,15 @@ if (performance && performance.mark) {
   
 - Hledejte objekty, které jsou zachovány v paměti neúmyslně po Uživatel přešel na novou stránku, což je běžné příčiny problémů s pamětí. Příklad:  
   
-    - Nesprávné použití [adresy URL. CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) funkce může způsobit potíže.  
+    - Nesprávné použití [adresy URL. CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) funkce může způsobit potíže.  
   
-    - Některé objekty můžou poskytovat `dispose` metoda a doporučení pro použití. Například byste měli volat `dispose` na [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) při volání v seznamu `createFiltered` metody a pak stránku opustit.  
+    - Některé objekty můžou poskytovat `dispose` metoda a doporučení pro použití. Například byste měli volat `dispose` na [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) při volání v seznamu `createFiltered` metody a pak stránku opustit.  
   
     - Můžete potřebovat k odebrání jedné nebo víc naslouchacích procesů událostí. Další informace najdete v tématu [naslouchacích procesů událostí DOM zobrazení](../debugger/view-dom-event-listeners.md).  
   
 - Podívejte se na druhé části [toto video](http://channel9.msdn.com/Events/Build/2013/3-316) z konference Build 2013 o analýzu paměti jazyka JavaScript.  
   
-- Čtení [správě paměti v aplikacích pro Windows Store](http://msdn.microsoft.com/magazine/jj651575.aspx).  
+- Čtení [správě paměti v aplikacích pro Windows Store](https://msdn.microsoft.com/magazine/jj651575.aspx).  
   
 - Vezměte v úvahu dočasná změna kódu k izolování problémů. Například můžete chtít:  
   

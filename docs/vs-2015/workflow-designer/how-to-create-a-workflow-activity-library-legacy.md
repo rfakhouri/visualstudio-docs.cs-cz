@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a94fbfd319489df0ac3bcbaf474c6a58cef66868
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9baa358c3728c6cbedc5f8768b29ba7efe64b399
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432378"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703293"
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>Postupy: Vytvoření knihovny aktivit pracovních postupů (starší verze)
 Postupujte podle těchto kroků a vytvořte projekt knihovny aktivit pracovních postupů pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] poskytované [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -52,5 +52,5 @@ Postupujte podle těchto kroků a vytvořte projekt knihovny aktivit pracovních
  [Vytváření projektů pracovních postupů starších verzí](../workflow-designer/creating-legacy-workflow-projects.md)   
  [Používání starší verze návrháře aktivit](../workflow-designer/using-the-legacy-activity-designer.md)   
  [Aktivity starších verzí pracovních postupů](../workflow-designer/legacy-workflow-activities.md)   
- [Vývoj aktivit pracovního postupu](http://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
- [Aktivity Windows Workflow Foundation](http://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
+ [Vývoj aktivit pracovního postupu](https://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
+ [Aktivity Windows Workflow Foundation](https://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)

@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ba55795e1f1b5f54b2a863ec0163a796111d9800
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437991"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689472"
 ---
 # <a name="signing-page-project-designer"></a>Stránka Podepisování, návrhář projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,9 +66,9 @@ Použití **podepisování** stránku **Návrháře projektu** k podepsání man
   
 ## <a name="assembly-signing"></a>Podepisování sestavení  
  **Podepsat sestavení** zaškrtávací políčko  
- Vyberte toto zaškrtávací políčko k podepsání sestavení a vytvoření silným názvem souboru klíče. Další informace o podepisování sestavení s použitím **Návrháře projektu**, naleznete v tématu [jak: Podepsání sestavení (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Vyberte toto zaškrtávací políčko k podepsání sestavení a vytvoření silným názvem souboru klíče. Další informace o podepisování sestavení s použitím **Návrháře projektu**, naleznete v tématu [jak: Podepsání sestavení (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Tato volba používá nástroj Al.exe poskytované [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] k podepsání sestavení. Další informace o Al.exe najdete v tématu [jak: Podepsání sestavení silným názvem](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Tato volba používá nástroj Al.exe poskytované [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] k podepsání sestavení. Další informace o Al.exe najdete v tématu [jak: Podepsání sestavení silným názvem](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  **Vyberte soubor klíče se silným názvem** seznamu  
  Umožňuje zadat nový nebo existující silným názvem soubor s klíčem, který se používá k podepsání sestavení. Vyberte  **\<Procházet... >** a vyberte existující soubor klíče.  
@@ -83,7 +83,7 @@ Použití **podepisování** stránku **Návrháře projektu** k podepsání man
  **Zpoždění podepsání** zaškrtávací políčko  
  Zaškrtněte toto políčko, pokud chcete povolit podepisování zpoždění.  
   
- Mějte na paměti, že zpoždění podepsané se nespustí a není možné ladit. Můžete však použít [Sn.exe (nástroj Strong Name)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) s `-Vr` možnost pro přeskočení ověření během vývoje.  
+ Mějte na paměti, že zpoždění podepsané se nespustí a není možné ladit. Můžete však použít [Sn.exe (nástroj Strong Name)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) s `-Vr` možnost pro přeskočení ověření během vývoje.  
   
 > [!NOTE]
 > Při podpisu sestavení, nemusí mít vždy přístup k privátnímu klíči. Organizace může například mít úzce strážených pár klíčů, aby vývojáři nemuseli přístup k každý den. Veřejný klíč může být k dispozici, ale přístup k privátnímu klíči omezen na několika jednotlivcům. V takovém případě můžete použít *zpožděné* nebo *částečné podepsání* poskytnout veřejný klíč, přidání soukromého klíče odložit, dokud je předáno sestavení.  
@@ -91,8 +91,8 @@ Použití **podepisování** stránku **Návrháře projektu** k podepsání man
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)   
  [Správa sestavení a podepsání manifestu](../../ide/managing-assembly-and-manifest-signing.md)   
- [Podepisování pro spravované aplikace silným názvem](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [Podepisování pro spravované aplikace silným názvem](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [Postupy: Přihlášení aplikace a manifestů nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Postupy: Podepsání sestavení (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Postupy: Podepsání sestavení silným názvem](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
- [Sestavení se silným názvem](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
+ [Postupy: Podepsání sestavení (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Postupy: Podepsání sestavení silným názvem](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Sestavení se silným názvem](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8b286a67b21d022b12f77ffff68a71da88256757
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f94183c6051ed0c2603bbfe35484fabb83a2160f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095773"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697991"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Sestavení by měla mít platné silné názvy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "60095773"
 
 - Pro [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v1.0 nebo v1.1, použijte buď <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> nebo <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> atribut.
 
-- Pro [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], použijte buď `/keyfile` nebo `/keycontainer` – možnost kompilátoru [/keyfile (zadat klíč nebo dvojici klíč k podepsání sestavení)](http://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) nebo  [ /keycontainer (určení kontejneru klíčů pro podpis sestavení)](http://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) – možnost linkeru v jazyce C++).
+- Pro [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], použijte buď `/keyfile` nebo `/keycontainer` – možnost kompilátoru [/keyfile (zadat klíč nebo dvojici klíč k podepsání sestavení)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) nebo  [ /keycontainer (určení kontejneru klíčů pro podpis sestavení)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) – možnost linkeru v jazyce C++).
 
   **K podepsání sestavení silným názvem v sadě Visual Studio**
 
@@ -89,11 +89,11 @@ ms.locfileid: "60095773"
 
    **K podepsání sestavení silným názvem mimo sadu Visual Studio**
 
-- Použijte nástroj pro silný název (Sn.exe), který je poskytován [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Další informace najdete v tématu [Sn.exe (nástroj Strong Name)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
+- Použijte nástroj pro silný název (Sn.exe), který je poskytován [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Další informace najdete v tématu [Sn.exe (nástroj Strong Name)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Pouze potlačit upozornění tohoto pravidla, pokud sestavení se používá v prostředí, kde manipulaci s obsahem není žádný problém.
 
 ## <a name="see-also"></a>Viz také
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName><xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [Postupy: Podepsání sestavení silným názvem](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (nástroj pro silný název)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
+ [Postupy: Podepsání sestavení silným názvem](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (nástroj pro silný název)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

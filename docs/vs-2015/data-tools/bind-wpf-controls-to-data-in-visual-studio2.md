@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e37d17cbe67bd1e4e64e306831f38996a7f93c80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437044"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697961"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Můžete vytvořit vázané na data [!INCLUDE[TLA#tla_titlewinclient](../include
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>Chcete-li vytvořit ovládací prvek, který je vázán na jedno pole dat.
 
-1. V **zdroje dat** okna, rozbalte položku, která představuje tabulku nebo objekt. Vyhledejte podřízené položky, která představuje sloupci nebo vlastnost, kterou chcete svázat. Vizuální příklad naleznete v tématu [okna zdroje dat](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. V **zdroje dat** okna, rozbalte položku, která představuje tabulku nebo objekt. Vyhledejte podřízené položky, která představuje sloupci nebo vlastnost, kterou chcete svázat. Vizuální příklad naleznete v tématu [okna zdroje dat](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Volitelně vyberte ovládací prvek k vytvoření. Každá položka v **zdroje dat** okno má výchozí ovládací prvek, který je vytvořen při přetažení položky do návrháře. Výchozí ovládací prvek závisí na základní datový typ položky.
 
@@ -73,7 +73,7 @@ Můžete vytvořit vázané na data [!INCLUDE[TLA#tla_titlewinclient](../include
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>Chcete-li vytvořit ovládací prvek, který je vázán na více polí dat
 
-1. V **zdroje dat** okna, vyberte položku, která představuje tabulku či objekt. Vizuální příklad naleznete v tématu [okna zdroje dat](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. V **zdroje dat** okna, vyberte položku, která představuje tabulku či objekt. Vizuální příklad naleznete v tématu [okna zdroje dat](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Volitelně vyberte ovládací prvek k vytvoření. Ve výchozím nastavení, jednotlivé položky **zdroje dat** okna, která představuje data tabulku či objekt je nastavena na vytvoření <xref:System.Windows.Controls.DataGrid> (Pokud je váš projekt cílí na rozhraní .NET Framework 4) nebo <xref:System.Windows.Controls.ListView> (pro starší verze rozhraní .NET Framework).
 
@@ -91,7 +91,7 @@ Můžete vytvořit vázané na data [!INCLUDE[TLA#tla_titlewinclient](../include
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>Chcete-li vytvořit sadu ovládacích prvků, které jsou vázány na více polí dat
 
-1. V **zdroje dat** okna, vyberte položku, která představuje tabulku či objekt. Vizuální příklad naleznete v tématu [okna zdroje dat](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. V **zdroje dat** okna, vyberte položku, která představuje tabulku či objekt. Vizuální příklad naleznete v tématu [okna zdroje dat](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Klikněte na šipku rozevíracího seznamu vedle položky a vyberte **podrobnosti**.
 

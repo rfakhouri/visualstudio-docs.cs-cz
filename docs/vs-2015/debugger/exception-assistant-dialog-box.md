@@ -23,19 +23,19 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4075340f87b46fd8316b5e30317e9d90108b914
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5019547d2e06684b51f1513445521eca0e5143e1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779761"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702879"
 ---
 # <a name="exception-assistant-dialog-box"></a>Dialogové okno Pomocník pro výjimky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Pomocníka pro výjimky** dialogové okno se zobrazí, když je vyvolána výjimka za běhu. **Pomocníka pro výjimky** zobrazí typ výjimky, poskytuje další informace a odkazy na tipy pro řešení potíží, poskytuje způsob, jak vyhledat další pomoc online a umožňuje uživatelům provádět určité akce, například zobrazení podrobností o výjimce.  
   
-## <a name="task-list"></a>Seznam úloh  
+## <a name="task-list"></a>Seznam úkolů  
  Pokud chcete zobrazit téma práci s řešením potíží typ výjimky, kterou jste se setkali, klikněte na některou tip zprávy zobrazeny v **tipy k řešení potíží s** podokně.  
   
  K provedení akce související s výjimkou, klikněte na jednu z akcí, zobrazí v podokně Akce.  
@@ -60,6 +60,6 @@ ms.locfileid: "54779761"
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [Použití Pomocníka pro výjimky](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
- [Postupy: Opravte chyby za běhu pomocí Pomocníka pro výjimky](http://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
- [Typy chyb](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)
+ [Použití Pomocníka pro výjimky](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [Postupy: Opravte chyby za běhu pomocí Pomocníka pro výjimky](https://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
+ [Typy chyb](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

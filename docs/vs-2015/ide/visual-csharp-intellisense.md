@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b1af6a2900a579e7490f47f2e8ee4983310e19e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443166"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698211"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ Visual C# IntelliSense je k dispozici při psaní kódu v editoru a při laděn�
   Seznamu dokončení v jazyce C# je také dostatečně inteligentní, aby odfiltrovat irelevantní tokeny a předem vyberte token na základě kontextu. Další informace najdete v tématu [filtrované seznamy dokončení v jazyce C#](../misc/filtered-completion-lists-in-csharp.md) a [Pre-selected položky seznamu dokončení v jazyce C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ### <a name="CodeSnippets"></a> Fragmenty kódu do seznamů dokončení  
- V jazyce Visual C#, seznam pro doplňování zahrnuje fragmenty kódu můžete snadno vložit předdefinované obsahy kódu do vaší aplikace. Fragmenty kódu se zobrazí v seznamu pro doplňování jako fragment [zástupce – Element (fragmenty kódu technologie Intellisense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Další informace o fragmenty kódu, které jsou k dispozici v jazyce Visual C# ve výchozím nastavení najdete v tématu [fragmenty kódu Visual C#](../ide/visual-csharp-code-snippets.md).  
+ V jazyce Visual C#, seznam pro doplňování zahrnuje fragmenty kódu můžete snadno vložit předdefinované obsahy kódu do vaší aplikace. Fragmenty kódu se zobrazí v seznamu pro doplňování jako fragment [zástupce – Element (fragmenty kódu technologie Intellisense)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Další informace o fragmenty kódu, které jsou k dispozici v jazyce Visual C# ve výchozím nastavení najdete v tématu [fragmenty kódu Visual C#](../ide/visual-csharp-code-snippets.md).  
   
 ### <a name="Keywords"></a> Klíčová slova jazyka do seznamů dokončení  
- V jazyce Visual C#, seznam pro doplňování také obsahuje klíčová slova jazyka. Další informace o klíčových slovech jazyka C# najdete v tématu [klíčová slova jazyka C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
+ V jazyce Visual C#, seznam pro doplňování také obsahuje klíčová slova jazyka. Další informace o klíčových slovech jazyka C# najdete v tématu [klíčová slova jazyka C#](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
 ### <a name="ExtensionMethods"></a> Rozšiřující metody do seznamů dokončení  
  V jazyce Visual C#, seznam pro doplňování obsahuje rozšiřující metody, které jsou v oboru.  
@@ -81,7 +81,7 @@ Visual C# IntelliSense je k dispozici při psaní kódu v editoru a při laděn�
  Technologie IntelliSense si pamatuje členy, které jste zvolili nedávno v místní nabídce [seznam členů](../ide/using-intellisense.md) pole pro název dokončení automatický objekt. Při příštím použití seznam členů, naposledy použité členy se zobrazí v horní části. Historie naposledy použité členy se vymaže mezi každou relaci v integrovaném vývojovém prostředí.  
   
 ## <a name="override"></a>override  
- Po zadání [přepsat](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) a pak stiskněte MEZERNÍK, technologie IntelliSense zobrazí všechny členy platný základní třídy, které můžete přepsat v rozevíracím seznamu místní nabídky. Zadáte návratový typ metody za `override` vyzve technologie IntelliSense, aby se zobrazily pouze metody, které vracejí stejného typu. Pokud technologie IntelliSense nemůže najít žádná shoda, zobrazí se všechny členy základní třídy.  
+ Po zadání [přepsat](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) a pak stiskněte MEZERNÍK, technologie IntelliSense zobrazí všechny členy platný základní třídy, které můžete přepsat v rozevíracím seznamu místní nabídky. Zadáte návratový typ metody za `override` vyzve technologie IntelliSense, aby se zobrazily pouze metody, které vracejí stejného typu. Pokud technologie IntelliSense nemůže najít žádná shoda, zobrazí se všechny členy základní třídy.  
   
 ## <a name="automatic-code-generation"></a>Automatické vytváření kódu  
   
@@ -102,7 +102,7 @@ Visual C# IntelliSense je k dispozici při psaní kódu v editoru a při laděn�
  Chcete-li zobrazit dostupné možnosti v sadě Visual Studio IDE, na **upravit** nabídky, přejděte **IntelliSense**a pak na **uspořádat direktivy using**. Rozhraní IDE poskytuje následující možnosti pro organizaci a odebrat `usings` direktivy:  
   
 ### <a name="implement-interface"></a>Implementovat rozhraní  
- Technologie IntelliSense poskytuje možnost, aby vám pomohly implementovat [rozhraní](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) při práci v editoru kódu. Za normálních okolností správně implementovat rozhraní musíte vytvořit deklaraci metody pro každého člena rozhraní ve své třídě. Díky technologii IntelliSense, jakmile zadáte název rozhraní v deklaraci třídy, zobrazí se inteligentní značky. Inteligentní značky nabízí možnost automaticky, implementovat rozhraní pomocí explicitní nebo implicitní pojmenování. V explicitní názvy provádění deklarace metody název rozhraní v části implicitní pojmenování, nevyžadují deklarace metody rozhraní, ke kterému patří. Metody rozhraní explicitně pojmenované je přístupný pouze prostřednictvím instance rozhraní a ne prostřednictvím instance třídy. Další informace najdete v tématu [explicitní implementaci rozhraní](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
+ Technologie IntelliSense poskytuje možnost, aby vám pomohly implementovat [rozhraní](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) při práci v editoru kódu. Za normálních okolností správně implementovat rozhraní musíte vytvořit deklaraci metody pro každého člena rozhraní ve své třídě. Díky technologii IntelliSense, jakmile zadáte název rozhraní v deklaraci třídy, zobrazí se inteligentní značky. Inteligentní značky nabízí možnost automaticky, implementovat rozhraní pomocí explicitní nebo implicitní pojmenování. V explicitní názvy provádění deklarace metody název rozhraní v části implicitní pojmenování, nevyžadují deklarace metody rozhraní, ke kterému patří. Metody rozhraní explicitně pojmenované je přístupný pouze prostřednictvím instance rozhraní a ne prostřednictvím instance třídy. Další informace najdete v tématu [explicitní implementaci rozhraní](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
   
  Implementovat rozhraní vygeneruje minimální počet zástupných procedur metoda, která je nutné k uspokojení rozhraní. Pokud základní třída implementuje částí rozhraní, pak tyto zástupné procedury se znova vygeneroval.  
   

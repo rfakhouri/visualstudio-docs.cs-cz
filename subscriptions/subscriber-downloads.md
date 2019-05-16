@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Zjistěte, jak vyhledat a stáhnout produkty Microsoftu, které jsou součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953703"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697773"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Pomocí odběratele soubory ke stažení v předplatných sady Visual Studio
 Jako součást vaší výhody pro předplatitele máte přístup k široké škále stažení softwaru.
@@ -31,7 +31,7 @@ Tady je několik důvodů, proč nemusí být dostupné pro předplatitele konkr
 - **Redundantní software.** Vybrané sady Office a samostatné soubory ke stažení Office a kódy product key už nejsou k dispozici v předplatných zahrnujících Office. Soubory ke stažení a kódy product key jsou dostupné pro odpovídající nejvyšší sadu Office stejné verze.  Pokud hledáte pro PowerPoint 2010, například vyhledávání nevytvoří žádné výsledky.  Můžete ale vyhledat pro Office 2010 - sady Office, který obsahoval PowerPoint 2010 - a stáhnout sady.
 
 ## <a name="what-do-i-get"></a>Co všechno získám?
-Počet a typ stahování závisí na vaše předplatné úrovně a program členství ve skupinách.  Předplatitelé s standardní předplatná sady Visual Studio Enterprise, například můžou mít různé soubory ke stažení je než předplatitelé, kteří získají svá předplatná prostřednictvím předplatného programu Microsoft Partner Network nebo BizSpark k dispozici.  Další informace o tom, jaké soubory ke stažení jsou k dispozici pro každou úroveň předplatného, stáhněte si seznam [produktů podle úrovně výhodu](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
+Počet a typ stahování závisí na vaše předplatné úrovně a program členství ve skupinách.  Předplatitelé s standardní předplatná sady Visual Studio Enterprise, například můžou mít různé soubory ke stažení je než předplatitelé, kteří získají svá předplatná prostřednictvím předplatného programu Microsoft Partner Network nebo BizSpark k dispozici.  Další informace o tom, jaké soubory ke stažení jsou k dispozici pro každou úroveň předplatného, stáhněte si seznam [produktů podle úrovně výhodu](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx).
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

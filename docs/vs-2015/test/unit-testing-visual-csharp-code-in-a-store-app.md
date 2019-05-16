@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 144097837eba5c8feeb5a424134fec887d51befe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445941"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695260"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Testování jednotek kódu jazyka Visual C# v Store app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro třídy V
 >   - Spusťte testy po každém sestavení.  
 >   - VS Enterprise také obsahuje Microsoft Fakes, izolované rozhraní pro spravovaný kód, který vám umožní zaměřit testů na váš vlastní kód nahrazením testovací kód pro systém a funkce třetích stran.  
 > 
->   Další informace najdete v tématu [ověřování kódu pomocí testování částí](http://msdn.microsoft.com/library/dd264975.aspx) v knihovně MSDN.  
+>   Další informace najdete v tématu [ověřování kódu pomocí testování částí](https://msdn.microsoft.com/library/dd264975.aspx) v knihovně MSDN.  
   
 ## <a name="BKMK_In_this_topic"></a> V tomto tématu  
  [Vytvoření řešení a projektu testování částí](#BKMK_Create_the_solution_and_the_unit_test_project)  

@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650236"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698711"
 ---
 # <a name="common-msbuild-project-properties"></a>Obecné vlastnosti projektu nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ V následující tabulce jsou uvedeny často používané vlastnosti, které jso
 |CleanFile|Název souboru, který se použije jako "čistá mezipaměť." Čistá mezipaměť je seznam vygenerovaných souborů mají být odstraněny během operace čištění. Soubor je umístěn v mezilehlé výstupní cestě procesem sestavení.<br /><br /> Tato vlastnost určuje pouze názvy souborů, které nemají informace o cestě.|  
 |Znaková stránka|Určuje znakovou stránku pro všechny soubory zdrojového kódu dané kompilace. Tato vlastnost je ekvivalentní `/codepage` přepínač kompilátoru.|  
 |CompilerResponseFile|Soubor volitelných odpovědí může být předán úkolům kompilátoru.|  
-|Konfigurace|Konfigurace, který vytváříte, buď "Ladění" nebo "Verze".|  
+|Konfiguraci|Konfigurace, který vytváříte, buď "Ladění" nebo "Verze".|  
 |CscToolPath|Cesta csc.exe, [!INCLUDE[csprcs](../includes/csprcs-md.md)] kompilátoru.|  
 |CustomBeforeMicrosoftCommonTargets|Název souboru projektu nebo soubor cílů, které mají být importovány automaticky před importem společných cílů.|  
 |DebugSymbols|Logická hodnota, která určuje, zda jsou symboly generovány sestavením.<br /><br /> Nastavení **/p:DebugSymbols = false** na příkazovém řádku zakáže generování souborů symbolů databáze (PDB) programu.|  
@@ -114,7 +114,7 @@ V následující tabulce jsou uvedeny často používané vlastnosti, které jso
 |Satellite_Version|Určuje informace o verzi satelitního sestavení.|  
 |Satellite_Win32Icon|Vloží soubor ikony .ico do satelitního sestavení.|  
 |Satellite_Win32Resource|Vloží prostředek systému Win32 (soubor .res) do satelitního sestavení.|  
-|SubsystemVersion|Určuje minimální verzi podsystému, který může používat vygenerovaný spustitelný soubor. Tato vlastnost je ekvivalentní `/subsystemversion` přepínač kompilátoru. Informace o výchozí hodnota této vlastnosti naleznete v tématu [/subsystemversion (Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) nebo [/subsystemversion (možnosti kompilátoru C#)](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
+|SubsystemVersion|Určuje minimální verzi podsystému, který může používat vygenerovaný spustitelný soubor. Tato vlastnost je ekvivalentní `/subsystemversion` přepínač kompilátoru. Informace o výchozí hodnota této vlastnosti naleznete v tématu [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) nebo [/subsystemversion (možnosti kompilátoru C#)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
 |TargetCompactFramework|Verze .NET Compact Framework, která je nutná ke spuštění aplikace, kterou vytváříte. Určení tohoto umožňuje odkazovat na určitá sestavení rozhraní, které nelze odkazovat, jinak.|  
 |TargetFrameworkVersion|Verze [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , který se vyžaduje pro spuštění aplikace, kterou vytváříte. Určení tohoto umožňuje odkazovat na určitá sestavení rozhraní, které nelze odkazovat, jinak.|  
 |TreatWarningsAsErrors|Parametr logické hodnoty, pokud `true`, způsobí, že všechna upozornění budou považována za chyby. Tento parametr je ekvivalentní `/nowarn` přepínač kompilátoru.|  

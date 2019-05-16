@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbd746a52084d2a2fc90a0c6890e20687fe7ee26
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ee29fd6309db34d4e0e4a013149e268051ab0e5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405632"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704400"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Postupy: Nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ ms.locfileid: "63405632"
  Kromě toho [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] podporuje typech klávesnic, které nejčastěji zadávané znaky přístupnější. Můžete také přizpůsobit výchozí klávesové zkratky, který je k dispozici [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Další informace najdete v tématu [určení a přizpůsobení klávesových zkratek](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>Editorech, dialogových oken a nástroj pro Windows  
  Ve výchozím nastavení, dialogová okna a okna nástrojů v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] použít stejnou velikost písma a barvy jako operační systém. Nastavení barev pro rámce IDE, dialogová okna, panely nástrojů a okna nástrojů jsou založeny barevném schématu: světlý nebo tmavý. Můžete změnit aktuální barvu motivu v [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md).  
   
- Automaticky otevíraná okna můžete také zobrazit v zobrazení kódu z editoru. Tato okna můžete vyzvat vás Dostupní členové na aktuální objekt a parametry pro dokončení funkce nebo příkaz. Tato okna, může být užitečné, pokud máte potíže s psaním. Ale narušují fokus v editoru kódu, který může být problematické pro některé uživatele. Můžete vypnout tato okna tak, že otevřete dialogové okno Možnosti a vymazání **automatický seznam členů** a **informace o parametrech** v **textový Editor**, **všechny Jazyky**, **Obecné** stránku **možnosti** dialogové okno. Další informace najdete v tématu [jak: Nastavení možností editoru Obecné](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Automaticky otevíraná okna můžete také zobrazit v zobrazení kódu z editoru. Tato okna můžete vyzvat vás Dostupní členové na aktuální objekt a parametry pro dokončení funkce nebo příkaz. Tato okna, může být užitečné, pokud máte potíže s psaním. Ale narušují fokus v editoru kódu, který může být problematické pro některé uživatele. Můžete vypnout tato okna tak, že otevřete dialogové okno Možnosti a vymazání **automatický seznam členů** a **informace o parametrech** v **textový Editor**, **všechny Jazyky**, **Obecné** stránku **možnosti** dialogové okno. Další informace najdete v tématu [jak: Nastavení možností editoru Obecné](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
  Můžete změnit uspořádání oken v integrovaném vývojovém prostředí (IDE) aby co nejlépe vyhovovalo způsob, jakým pracujete. Můžete ukotvit, float, skrýt nebo automaticky skrýt každé okno nástroje.  
   

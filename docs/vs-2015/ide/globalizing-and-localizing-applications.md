@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49702a40e081b4836e078a77368148451a29636d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe8671142aeda4972f9ac218fe536b4a991649a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794367"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704370"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizace a lokalizace aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ Pokud plánujete distribuce vaší aplikace pro mezinárodní cílovou skupinu, 
  [Globalizace aplikace (aplikace Windows Store pomocí jazyka C# / VB/C++ a XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
  Obsahuje témata s postupy a pokyny, které vám pomůžou globalizace a lokalizace vašich [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace vyvíjené v XAML a Visual C#, Visual Basic nebo Visual C++.  
   
- [Doporučené postupy pro vývoj aplikací připravených k použití](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Doporučené postupy pro vývoj aplikací připravených k použití](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Poskytuje základní informace o programování pro mezinárodní cílovou skupinu.  
   
- [Přehled knihovny tříd](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
+ [Přehled knihovny tříd](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
  Zavádí tříd, rozhraní a typů hodnot, které urychlují a optimalizovat proces vývoje a poskytují přístup k funkčnosti systému.  
   
  <xref:System.Globalization>  

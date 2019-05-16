@@ -23,12 +23,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73865d68c191d1287c1cf8a33095259bd9d659ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d5b10d3e40d889ffa9e7743d65de487c2d823cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760687"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698733"
 ---
 # <a name="edit-and-continue"></a>Upravit a pokračovat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Upravit a pokračovat, je funkce ušetří čas, který umožní vám provádět
   
  Tento oddíl obsahuje následující témata:  
   
- [Postupy: Explicitní použití změn kódu](http://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
+ [Postupy: Explicitní použití změn kódu](https://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
   
  [Postupy: Povolení a zakázání operace Upravit a pokračovat](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
  [Postupy: Zastavení změn kódu](../debugger/how-to-stop-code-changes.md)  
   
- [Bod provádění](http://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
+ [Bod provádění](https://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
   
  [Upravit a pokračovat (Visual C#)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -55,5 +55,5 @@ Upravit a pokračovat, je funkce ušetří čas, který umožní vám provádět
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [Upravit a pokračovat, ladění, dialogové okno Možnosti](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Upravit a pokračovat, ladění, dialogové okno Možnosti](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Základy ladicího programu](../debugger/debugger-basics.md)

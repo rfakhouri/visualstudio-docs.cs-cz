@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ab699ad2a70a63fe3f8124cc87960f104a3b4cc2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0cef64ae0b1aa5c6fee6422675e10b65c4713d2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663307"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703244"
 ---
 # <a name="msbuild-concepts"></a>Koncepty nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59663307"
 |[Úlohy](../msbuild/msbuild-tasks.md)|Ukazuje, jak vytvořit jednotku spustitelného kódu, které mohou být využívána [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] k operacím atomického sestavení.|  
 |[Porovnávání vlastností a položek](../msbuild/comparing-properties-and-items.md)|Porovná nástroj MSBuild vlastností a položek. Jak se používají k předávání informací do úlohy, vyhodnocení podmínky a ukládat hodnoty, které může být odkazováno v celém souboru projektu.|  
 |[Speciální znaky nástroje MSBuild](../msbuild/msbuild-special-characters.md)|Vysvětluje, jak některé řídicí znaky, které [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] rezervuje pro speciální použití v určitém kontextu.|  
-|[Návod: Vytváření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Ukazuje, jak vytvořit soubor základního projektu postupně pouze text pomocí editoru.|  
+|[Návod: Vytvoření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Ukazuje, jak vytvořit soubor základního projektu postupně pouze text pomocí editoru.|  
 |[Návod: Použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md)|Představuje stavebními bloky nástroje MSBuild a ukazuje, jak psát, manipulaci a ladit projekty MSBuild bez zavření sady Visual Studio integrované vývojové prostředí (IDE).|  
 |[Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)|Obsahuje odkazy na dokumenty, které obsahují referenční informace.|  
-|[MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Obsahuje přehled schématu XML pro soubor projektu a ukazuje, jak určuje procesy, které vytvoří software.|
+|[MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Obsahuje přehled schématu XML pro soubor projektu a ukazuje, jak určuje procesy, které vytvoří software.|

@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/07/2019
+ms.date: 05/14/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7a3d02ad903daba40da5ac0c9a9ebbb320747a49
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d420656345331cd5e02193e9de2b8a18a990472d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461346"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695454"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Čísla sestavení a data vydání sady Visual Studio
 
@@ -31,6 +31,7 @@ Následující tabulka obsahuje kalendářní data pro čísla a uvolnění sest
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.4 | Vydaná verze | 14. května 2019 | 16.0.28803.452 |
 | 16.1.0 | Preview 3 | 6. května 2019 | 16.1.28902.138 |
 | 16.0.3 | Vydaná verze | 30. dubna 2019 | 16.0.28803.352 |
 | 16.1.0 | Preview 2 | 23. dubna 2019 | 16.1.28822.285 |
@@ -72,10 +73,12 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.12 | Vydaná verze | 14. května 2019 | 15.9.28307.665 |
+| 15.0.23 | Vydaná verze | 14. května 2019 | 15.0.26228.85 |
 | 15.9.11 | Vydaná verze | 2. dubna 2019 | 15.9.28307.586 |
 | 15.9.10 | Vydaná verze | 25. března 2019 | 15.9.28307.557 |
 | 15.9.9 | Vydaná verze | 12. března 2019 | 15.9.28307.518 |
-| 15.0.21 | Vydaná verze | 12. března 2019 | 15.0.26228.76 |
+| 15.0.22 | Vydaná verze | 12. března 2019 | 15.0.26228.76 |
 | 15.9.8 | Vydaná verze | 5. března 2019 | 15.9.28307.481 |
 | 15.9.7 | Vydaná verze | 12. února 2019 | 15.9.28307.423 |
 | 15.0.21 | Vydaná verze | 12. února 2019 | 15.0.26228.73 |

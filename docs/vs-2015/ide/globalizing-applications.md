@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3d938a3768193d758a467e833f006d4019ea5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2948910463bc6d520accce0256bd8e74315c46
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584641"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704333"
 ---
 # <a name="globalizing-applications"></a>Globalizace aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ Globalizace je proces návrhu a vývoje softwarového produktu, který funguje p
  Tento článek popisuje třídy, které formátování kalendářních dat, čas, čísla, měny a další informace podle nastavení jazykové verze.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Globalizace modelu Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Globalizace modelu Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  Obsahuje odkazy na stránky nápovědy o globalizaci formulářů Windows.  
   
- [Globalizace a lokalizace](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [Globalizace a lokalizace](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  Obsahuje odkazy na stránky nápovědy o globalizaci stránky webových formulářů.  
   
  [Představení mezinárodních aplikací založených na prostředí .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Tento článek popisuje zásadní pojmy týkající se vývoje softwaru pro mezinárodní trh pomocí jazyka Visual Basic nebo Visual C#.  
   
- [Doporučené postupy pro vývoj aplikací připravených k použití](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Doporučené postupy pro vývoj aplikací připravených k použití](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Obsahuje informace o programování pro mezinárodní cílové skupiny, jako jsou problémy s návrhem a terminologii.

@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436813"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702642"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ke spuštěným procesům pomocí ladicího programu sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Tato funkce slouží k ladění aplikací, které běží na místním nebo vzd�
 ## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Připojit k procesu ve vzdáleném počítači
  Aby bylo možné připojit k procesu, musíte znát název procesu (viz [běžné scénáře ladění](#BKMK_Scenarios) pro několik běžných názvů procesu). Kompletní pokyny pro aplikace v ASP.NET, které jsou nasazené do služby IIS najdete v tématu [vzdálené ladění ASP.NET ve vzdáleném počítači IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Pro jiné aplikace budete moci najít název procesu, ve Správci úloh.
 
- Při použití **připojit k procesu** dialogovém okně můžete vybrat jiný počítač, který je nastavený pro vzdálené ladění. Další informace najdete v tématu [vzdálené ladění](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Po výběru vzdáleného počítače, můžete zobrazit seznam dostupných procesů spuštěných na tomto počítači a připojit k jednomu nebo více procesům pro ladění.
+ Při použití **připojit k procesu** dialogovém okně můžete vybrat jiný počítač, který je nastavený pro vzdálené ladění. Další informace najdete v tématu [vzdálené ladění](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Po výběru vzdáleného počítače, můžete zobrazit seznam dostupných procesů spuštěných na tomto počítači a připojit k jednomu nebo více procesům pro ladění.
 
  **Výběr vzdáleného počítače:**
 
@@ -106,7 +106,7 @@ Tato funkce slouží k ladění aplikací, které běží na místním nebo vzd�
 
 ## <a name="additional-info"></a>Další informace
 
-Můžete být připojení k více programům při ladění, ale pouze jeden program je v každém okamžiku aktivní v ladicím programu. Můžete nastavit aktivní program **umístění ladění** nástrojů nebo **procesy** okna. Další informace najdete v tématu [jak: Nastavit aktuální Program](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
+Můžete být připojení k více programům při ladění, ale pouze jeden program je v každém okamžiku aktivní v ladicím programu. Můžete nastavit aktivní program **umístění ladění** nástrojů nebo **procesy** okna. Další informace najdete v tématu [jak: Nastavit aktuální Program](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
 
 Pokud se pokusíte připojit k procesu vlastněnému nedůvěryhodným uživatelským účtem, zobrazí se potvrzovací dialogové okno s upozorněním zabezpečení. Další informace najdete v části [upozornění zabezpečení: Připojení k procesu, který patří nedůvěryhodnému uživateli, může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
 
@@ -136,7 +136,7 @@ Pro některé typy aplikací (např. aplikace pro Windows Store), nemusíte při
 > Připojit k Windows univerzální aplikace, která je napsána v jazyce JavaScript, je nutné nejprve povolit ladění pro aplikace. Zobrazit [připojit ladicí program](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) Windows Dev Center.
 
 > [!NOTE]
-> Ladicí program připojil kód napsaný v jazyce C++, musí kód generovat `DebuggableAttribute`. Můžete přidat to do kódu automaticky díky propojení s [/assemblydebug](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) – možnost linkeru.
+> Ladicí program připojil kód napsaný v jazyce C++, musí kód generovat `DebuggableAttribute`. Můžete přidat to do kódu automaticky díky propojení s [/assemblydebug](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) – možnost linkeru.
 
 ## <a name="what-debugger-features-can-i-use"></a>Jaké funkce ladicího programu můžete použít?
 

@@ -15,12 +15,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43f3a1c388a7b29fe83654d89b63e3fd304ebfa0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2744dabdb79d777661c1ed73e8a85b05b5308624
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437256"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704767"
 ---
 # <a name="application-page-project-designer-c"></a>Stránka Aplikace, návrhář projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ Použití **aplikace** stránku **Návrháře projektu** k určení nastavení a
  Tyto možnosti umožňují nakonfigurovat obecná nastavení pro aplikaci.  
   
  **Název sestavení**  
- Určuje název výstupního souboru, který bude obsahovat manifest sestavení. Změna této vlastnosti se také změní **název výstupního** vlastnost. Tuto změnu z příkazového řádku můžete také provést pomocí [/out (možnosti kompilátoru C#)](http://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5). Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Určuje název výstupního souboru, který bude obsahovat manifest sestavení. Změna této vlastnosti se také změní **název výstupního** vlastnost. Tuto změnu z příkazového řádku můžete také provést pomocí [/out (možnosti kompilátoru C#)](https://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5). Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **výchozí obor názvů**  
  Určuje základní obor názvů pro soubory přidané do projektu.  
   
- Zobrazit [obor názvů](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) pro další informace o vytváření oborů názvů ve vašem kódu.  
+ Zobrazit [obor názvů](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) pro další informace o vytváření oborů názvů ve vašem kódu.  
   
  Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
@@ -64,7 +64,7 @@ Použití **aplikace** stránku **Návrháře projektu** k určení nastavení a
 > [!NOTE]
 > Modul Windows Runtime můžete promítnout typy tak, aby byly zobrazeny jako nativních objektů v libovolný preferovaný jazyk je využívá. Například použít jako sadu JavaScript – objekty jazyka JavaScript aplikace, které spolupracují s modulem Windows Runtime a aplikace C# použít knihovnu jako kolekce objektů .NET. Díky balení výstup projektu jako soubor WinMD, můžete využívat stejné technologie, která používá prostředí Windows Runtime.  
   
- Další informace o **typ aplikace** vlastnost, naleznete v tématu [/Target (možnosti kompilátoru C#)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Informace o tom, jak programově přístup k této vlastnosti naleznete v tématu <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Další informace o **typ aplikace** vlastnost, naleznete v tématu [/Target (možnosti kompilátoru C#)](https://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Informace o tom, jak programově přístup k této vlastnosti naleznete v tématu <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Informace o sestavení**  
  Kliknutím na toto tlačítko se zobrazí [dialogové okno informace o sestavení](../../ide/reference/assembly-information-dialog-box.md).  
@@ -74,7 +74,7 @@ Použití **aplikace** stránku **Návrháře projektu** k určení nastavení a
   
  Ve výchozím nastavení v projektu aplikace WPF pro prohlížeč, tato možnost je **(Nenastaveno)**. Další možností je *Projectname*. App. V tento druh projektu je nutné nastavit počáteční identifikátor URI pro načtení prostředku uživatelského rozhraní při spuštění aplikace. Chcete-li to provést, otevřete soubor Application.xaml ve vašem projektu a nastavit `StartupUri` vlastnosti do souboru .xaml v projektu, jako je například Window1.xaml. Seznam prvků přijatelný kořenový najdete v tématu <xref:System.Windows.Application.StartupUri%2A>. Budete také muset definovat `public static void Main()` metody ve třídě v projektu. Tato třída se objeví v **spouštěcí objekt** jako seznam *ProjectName.ClassName*. Pak můžete vybrat třídu jako spouštěcí objekt.  
   
- Zobrazit [/Main (možnosti kompilátoru C#)](http://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) Další informace. Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ Zobrazit [/Main (možnosti kompilátoru C#)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) Další informace. Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
 ## <a name="resources"></a>Prostředky  
  Tyto možnosti umožňují nakonfigurovat obecná nastavení pro aplikaci.  
@@ -83,7 +83,7 @@ Použití **aplikace** stránku **Návrháře projektu** k určení nastavení a
  Ve výchozím nastavení, je přepínač vybrán a **ikonu** a **Manifest** aktivnují možnosti. To umožňuje vybrat vlastní ikona nebo vyberte jiný generování manifestu možnosti. Nechte tento přepínač vybrat, pokud poskytujete soubor prostředků pro projekt.  
   
  **Ikona**  
- Nastavuje soubor .ico, který chcete použít jako ikona programu. Klikněte na tlačítko se třemi tečkami k vyhledání existujícího obrázku nebo zadejte název souboru, který chcete. Zobrazit [/win32icon (možnosti kompilátoru C#)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) Další informace. Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ Nastavuje soubor .ico, který chcete použít jako ikona programu. Klikněte na tlačítko se třemi tečkami k vyhledání existujícího obrázku nebo zadejte název souboru, který chcete. Zobrazit [/win32icon (možnosti kompilátoru C#)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) Další informace. Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Manifest**  
  Vybere možnost generování manifestu, když je aplikace spuštěná v systému Windows Vista v rámci řízení uživatelských účtů (UAC). Tato možnost může mít následující hodnoty:  
@@ -101,4 +101,4 @@ Použití **aplikace** stránku **Návrháře projektu** k určení nastavení a
   
 ## <a name="see-also"></a>Viz také  
 [Správa vlastností aplikace](../../ide/application-properties.md)  
- [Psaní kódu v řešeních pro systém Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+ [Psaní kódu v řešeních pro systém Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

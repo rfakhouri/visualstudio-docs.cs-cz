@@ -29,12 +29,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 759376a6682287cbe41d4d1dc13666c5a540f8e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9c26cc17d00881a72928806089a4c2880fdbce2f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050554"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702345"
 ---
 # <a name="cc-assertions"></a>Kontrolní výrazy jazyka C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Příkaz kontrolní výraz určuje podmínku, která očekáváte, že na hodnot
 
 - Kontrolní výrazy knihovny MFC pro programy MFC.  
 
-- [ATLASSERT](http://msdn.microsoft.com/library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3) pro programy, které používají knihovnu ATL.  
+- [ATLASSERT](https://msdn.microsoft.com/library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3) pro programy, které používají knihovnu ATL.  
 
 - Kontrolní výrazy CRT pro programy, které používají knihovny run-time C.  
 
-- ANSI [vyhodnocení funkce](http://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40) pro programy C/C++.  
+- ANSI [vyhodnocení funkce](https://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40) pro programy C/C++.  
 
   Kontrolní výrazy můžete zachytávat chyby logiky, zkontrolujte výsledky operace a testování chybové stavy, které by měl zpracovat.  
 
@@ -94,7 +94,7 @@ ASSERT(nM++ > 0); // Don't do this!
 
 ```  
 
- Vzhledem k tomu, `ASSERT` výraz není vyhodnocen ve vydané verzi programu, `nM` budou mít různé hodnoty v ladění a vydání verze. Chcete-li předejít tomuto problému knihovny MFC, můžete použít [OVĚŘTE](http://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) – makro místo `ASSERT`.  `VERIFY` vyhodnotí výraz ve všech verzích ale nekontroluje výsledek ve vydané verzi.  
+ Vzhledem k tomu, `ASSERT` výraz není vyhodnocen ve vydané verzi programu, `nM` budou mít různé hodnoty v ladění a vydání verze. Chcete-li předejít tomuto problému knihovny MFC, můžete použít [OVĚŘTE](https://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) – makro místo `ASSERT`.  `VERIFY` vyhodnotí výraz ve všech verzích ale nekontroluje výsledek ve vydané verzi.  
 
  Být zejména opatrní při použití volání funkce v příkazech kontrolní výraz, protože vyhodnocení funkce může mít neočekávané vedlejší účinky.  
 
@@ -108,7 +108,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
  [V tomto tématu](#BKMK_In_this_topic)  
 
 ## <a name="BKMK_CRT_assertions"></a> Kontrolní výrazy CRT  
- CRTDBG. Definuje soubor hlaviček H [_ASSERT a _asserte – makra](http://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36) kontroly kontrolní výraz.  
+ CRTDBG. Definuje soubor hlaviček H [_ASSERT a _asserte – makra](https://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36) kontroly kontrolní výraz.  
 
 |   – Makro    |                                             Výsledek                                              |
 |------------|-------------------------------------------------------------------------------------------------|
@@ -128,30 +128,30 @@ VERIFY ( myFnctn(0)==1 ) // safe
    } while (0)  
 ```  
 
- Pokud s potvrzením výraz nevyhodnotí jako FALSE, [_CrtDbgReport](http://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) je volána k hlášení selhání kontrolního výrazu (pomocí dialogového okna zprávy ve výchozím nastavení). Pokud se rozhodnete **opakujte** v dialogovém okně zpráva `_CrtDbgReport` vrátí hodnotu 1 a `_CrtDbgBreak` volá ladicí program prostřednictvím `DebugBreak`.  
+ Pokud s potvrzením výraz nevyhodnotí jako FALSE, [_CrtDbgReport](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) je volána k hlášení selhání kontrolního výrazu (pomocí dialogového okna zprávy ve výchozím nastavení). Pokud se rozhodnete **opakujte** v dialogovém okně zpráva `_CrtDbgReport` vrátí hodnotu 1 a `_CrtDbgBreak` volá ladicí program prostřednictvím `DebugBreak`.  
 
 ### <a name="checking-for-heap-corruption"></a>Vyhledání poškození haldy  
- Následující příklad používá [_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) ke kontrole poškození haldy:  
+ Následující příklad používá [_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) ke kontrole poškození haldy:  
 
 ```  
 _ASSERTE(_CrtCheckMemory());  
 ```  
 
 ### <a name="checking-pointer-validity"></a>Kontrola platnosti ukazatele  
- Následující příklad používá [_crtisvalidpointer –](http://msdn.microsoft.com/library/91c35590-ea5e-450f-a15d-ad8d62ade1fa) k ověření, že rozsah danou paměť je platná pro čtení nebo zápis.  
+ Následující příklad používá [_crtisvalidpointer –](https://msdn.microsoft.com/library/91c35590-ea5e-450f-a15d-ad8d62ade1fa) k ověření, že rozsah danou paměť je platná pro čtení nebo zápis.  
 
 ```  
 _ASSERTE(_CrtIsValidPointer( address, size, TRUE );  
 ```  
 
- Následující příklad používá [_crtisvalidheappointer –](http://msdn.microsoft.com/library/caf597ce-1b05-4764-9f37-0197a982bec5) ověření ukazatel odkazuje na paměť v lokální haldy (haldy vytvořen a spravován společností této instance knihovny run-time jazyka C – knihovna DLL může mít svoji vlastní instanci knihovny, a proto vlastní haldy, mimo haldy aplikace). Tento kontrolní výraz zachytí není pouze hodnotu null nebo celočíselných adres, ale také ukazatelů na statické proměnné, proměnné zásobníku a další nemístní paměti.  
+ Následující příklad používá [_crtisvalidheappointer –](https://msdn.microsoft.com/library/caf597ce-1b05-4764-9f37-0197a982bec5) ověření ukazatel odkazuje na paměť v lokální haldy (haldy vytvořen a spravován společností této instance knihovny run-time jazyka C – knihovna DLL může mít svoji vlastní instanci knihovny, a proto vlastní haldy, mimo haldy aplikace). Tento kontrolní výraz zachytí není pouze hodnotu null nebo celočíselných adres, ale také ukazatelů na statické proměnné, proměnné zásobníku a další nemístní paměti.  
 
 ```  
 _ASSERTE(_CrtIsValidPointer( myData );  
 ```  
 
 ### <a name="checking-a-memory-block"></a>Kontrola bloku paměti  
- Následující příklad používá [_crtismemoryblock –](http://msdn.microsoft.com/library/f7cbbc60-3690-4da0-a07b-68fd7f250273) k ověření, že blok paměti v haldě, místní a má platný blok typu.  
+ Následující příklad používá [_crtismemoryblock –](https://msdn.microsoft.com/library/f7cbbc60-3690-4da0-a07b-68fd7f250273) k ověření, že blok paměti v haldě, místní a má platný blok typu.  
 
 ```  
 _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber));  
@@ -160,11 +160,11 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
  [V tomto tématu](#BKMK_In_this_topic)  
 
 ## <a name="BKMK_MFC_assertions"></a> MFC assertions  
- Definuje MFC [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) – makro kontroly kontrolní výraz. Definuje také `MFC ASSERT_VALID` a `CObject::AssertValid` metody kontroly vnitřní stav `CObject`-odvozenému objektu.  
+ Definuje MFC [ASSERT](https://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) – makro kontroly kontrolní výraz. Definuje také `MFC ASSERT_VALID` a `CObject::AssertValid` metody kontroly vnitřní stav `CObject`-odvozenému objektu.  
 
  Pokud argument MFC `ASSERT` – makro vyhodnocen jako nula nebo hodnotu NEPRAVDA, makro zastaví provádění programu a zobrazí uživateli výstrahu; v opačném případě pokračuje.  
 
- Pokud kontrolní výraz selže, zprávy dialogové okno zobrazí název zdrojového souboru a číslo řádku výrazu. Pokud vyberete možnost opakovat v dialogovém okně pole, volání [afxdebugbreak –](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) způsobí spuštění řízení ladicímu programu. V tomto okamžiku můžete prozkoumat zásobník volání a použít jiné zařízení pro ladicí program k určení, proč kontrolní výraz je neplatný. Pokud jste povolili [Just-in-time ladění](../debugger/just-in-time-debugging-in-visual-studio.md)a ladicí program se už běží, dialogové okno můžete spustit ladicí program.  
+ Pokud kontrolní výraz selže, zprávy dialogové okno zobrazí název zdrojového souboru a číslo řádku výrazu. Pokud vyberete možnost opakovat v dialogovém okně pole, volání [afxdebugbreak –](https://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) způsobí spuštění řízení ladicímu programu. V tomto okamžiku můžete prozkoumat zásobník volání a použít jiné zařízení pro ladicí program k určení, proč kontrolní výraz je neplatný. Pokud jste povolili [Just-in-time ladění](../debugger/just-in-time-debugging-in-visual-studio.md)a ladicí program se už běží, dialogové okno můžete spustit ladicí program.  
 
  Následující příklad ukazuje, jak používat `ASSERT` zkontrolovat návratovou hodnotu funkce:  
 
@@ -173,16 +173,16 @@ int x = SomeFunc(y);
 ASSERT(x >= 0);   //  Assertion fails if x is negative  
 ```  
 
- Můžete použít kontrolní VÝRAZ s [IsKindOf](http://msdn.microsoft.com/library/7c87c748-b7e0-4c6d-9694-6035e62fdfd6) funkce poskytují kontrolu typů argumentů funkce:  
+ Můžete použít kontrolní VÝRAZ s [IsKindOf](https://msdn.microsoft.com/library/7c87c748-b7e0-4c6d-9694-6035e62fdfd6) funkce poskytují kontrolu typů argumentů funkce:  
 
 ```  
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );  
 ```  
 
- `ASSERT` – Makro nevygeneruje žádný kód ve vydané verzi. Pokud potřebujete k vyhodnocení výrazu ve vydané verzi, použijte [OVĚŘTE](http://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) – makro místo ASSERT.  
+ `ASSERT` – Makro nevygeneruje žádný kód ve vydané verzi. Pokud potřebujete k vyhodnocení výrazu ve vydané verzi, použijte [OVĚŘTE](https://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) – makro místo ASSERT.  
 
 ### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID a CObject::AssertValid  
- [CObject::AssertValid](http://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157) metoda poskytuje vnitřní stav objektu se kontroly za běhu. I když není nutné přepsat `AssertValid` Pokud odvodit třídu z `CObject`, můžete provést vaší třídy spolehlivější tímto způsobem. `AssertValid` na všechny proměnné členů objektu k ověření, že obsahují platné hodnoty by měl provést kontrolní výrazy. Například by měl zkontrolovat, že členské proměnné ukazatele nemají hodnotu NULL.  
+ [CObject::AssertValid](https://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157) metoda poskytuje vnitřní stav objektu se kontroly za běhu. I když není nutné přepsat `AssertValid` Pokud odvodit třídu z `CObject`, můžete provést vaší třídy spolehlivější tímto způsobem. `AssertValid` na všechny proměnné členů objektu k ověření, že obsahují platné hodnoty by měl provést kontrolní výrazy. Například by měl zkontrolovat, že členské proměnné ukazatele nemají hodnotu NULL.  
 
  Následující příklad ukazuje, jak deklarovat `AssertValid` funkce:  
 
@@ -223,7 +223,7 @@ void CPerson::AssertValid() const
 
  Pokud některý z členské proměnné ukládat objekty, můžete použít `ASSERT_VALID` – makro otestovat jejich interní platnosti (pokud jejich třídám přepsat `AssertValid`).  
 
- Představte si třeba třídu `CMyData`, které obchody [coblist –](http://msdn.microsoft.com/library/80699c93-33d8-4f8b-b8cf-7b58aeab64ca) v jednom z jeho členské proměnné. `CObList` Proměnnou, `m_DataList`, uloží kolekci `CPerson` objekty. Zkrácený deklarace `CMyData` vypadá přibližně takto:  
+ Představte si třeba třídu `CMyData`, které obchody [coblist –](https://msdn.microsoft.com/library/80699c93-33d8-4f8b-b8cf-7b58aeab64ca) v jednom z jeho členské proměnné. `CObList` Proměnnou, `m_DataList`, uloží kolekci `CPerson` objekty. Zkrácený deklarace `CMyData` vypadá přibližně takto:  
 
 ```  
 class CMyData : public CObject  

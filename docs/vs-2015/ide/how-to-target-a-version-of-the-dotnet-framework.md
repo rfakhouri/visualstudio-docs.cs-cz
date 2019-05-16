@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a815a7ee13b415220c41189b6b060d893e8ef8e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a1d3d9ca1af5e2c96c497e6c677051c587047097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435146"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695367"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Postupy: Cílení na určitou verzi rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63435146"
 Tento dokument popisuje, jak při vytvoření projektu cílit na určitou verzi rozhraní .NET Framework a jak změnit cílenou verzi v existujícím projektu v jazyce Visual Basic, Visual C# nebo Visual F#.  
   
 > [!IMPORTANT]
-> Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [jak: Změna cílové architektury a sady nástrojů](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+> Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [jak: Změna cílové architektury a sady nástrojů](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
  **V tomto tématu**  
   
@@ -62,7 +62,7 @@ Tento dokument popisuje, jak při vytvoření projektu cílit na určitou verzi 
      ![Visual Studio Solution Explorer Properties](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    > Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [jak: Změna cílové architektury a sady nástrojů](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+    > Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [jak: Změna cílové architektury a sady nástrojů](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
 2. V levém sloupci okna vlastností zvolte **aplikace** kartu.  
   
@@ -82,9 +82,9 @@ Tento dokument popisuje, jak při vytvoření projektu cílit na určitou verzi 
   
 ## <a name="see-also"></a>Viz také  
  [Cílení na více verzí sady Visual Studio – přehled](../ide/visual-studio-multi-targeting-overview.md)   
- [Rozhraní .NET framework Multi-Targeting pro webové projekty ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
+ [Rozhraní .NET framework Multi-Targeting pro webové projekty ASP.NET](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [Řešení potíží s cílením na rozhraní .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   
  [Stránka aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
- [Konfigurace projektů](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
- [Postupy: Změna cílové architektury a sady nástrojů](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
+ [Konfigurace projektů](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
+ [Postupy: Změna cílové architektury a sady nástrojů](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)

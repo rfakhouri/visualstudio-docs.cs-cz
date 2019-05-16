@@ -33,17 +33,17 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68f2b400cc92673131dea2fc281b830df86019f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443874"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704375"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation (WCF) a [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], technologie společnosti Microsoft pro vytváření distribuované aplikace. Toto téma obsahuje úvod do služby [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] perspektivy. Úplnou dokumentaci najdete v tématu [4.5 služby WCF Data](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a).
+Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation (WCF) a [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], technologie společnosti Microsoft pro vytváření distribuované aplikace. Toto téma obsahuje úvod do služby [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] perspektivy. Úplnou dokumentaci najdete v tématu [4.5 služby WCF Data](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a).
 
 ## <a name="what-is-wcf"></a>Co je WCF?
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] je jednotné rozhraní pro vytváření zabezpečené, spolehlivé, počet zrušených zpracovaných a interoperabilní distribuovaných aplikací. Nahrazuje starší technologie meziprocesové komunikace, jako je ASMX webové služby vzdálené komunikace .NET, podnikové služby (DCOM) a služby MSMQ. WCF v sobě spojuje funkčnost všech těchto technologií ještě používáte v rámci jednotný programovací model. To zjednodušuje vývoj distribuovaných aplikací.
@@ -92,21 +92,21 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
 
  Když vyberete šablonu, soubory jsou přidány pro servisní smlouvy, implementace služby a konfiguraci služby. Všechny atributy vyžadované již byly přidány, vytvoření jednoduchého typu "Hello World" služby, a nemáte psát jakýkoli kód. Samozřejmě, můžete přidat kód k poskytování funkcí a metod pro vaši službu reálného světa, ale šablony poskytují základ.
 
- Další informace o šablonách WCF najdete v tématu [šablony sady Visual Studio WCF](http://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f).
+ Další informace o šablonách WCF najdete v tématu [šablony sady Visual Studio WCF](https://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f).
 
 #### <a name="wcf-service-host"></a>Hostitel služby WCF
  Při spuštění [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ladicího programu (stisknutím klávesy F5) pro projekt služby WCF, hostitel služby WCF, nástroj se automaticky spustí pro hostování služby místně. Hostitel služby WCF vytvoří výčet služby v projektu služby WCF, načte konfiguraci projektu a vytvoří instanci hostitele pro každou službu, kterou zjistí.
 
  Pomocí hostitele služby WCF můžete testovat službu WCF bez psaní kódu navíc nebo potvrzení pouze určitého hostitele během vývoje.
 
- Další informace o hostiteli služby WCF najdete v tématu [hostitel služby WCF (WcfSvcHost.exe)](http://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
+ Další informace o hostiteli služby WCF najdete v tématu [hostitel služby WCF (WcfSvcHost.exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
 
 #### <a name="wcf-test-client"></a>Testovací klient WCF
  Nástroj testovacího klienta WCF umožňuje vstupní parametry testu, odeslat tento vstup na službu WCF a zobrazovat odpovědi, které služba odesílá zpět. Poskytuje pohodlné službu testování prostředí, když ho spojovat se hostitel služby WCF. Nástroj najdete ve složce \Common7\IDE, která pro Visual Studio 2015 nainstalované v jednotce C: je tady: **C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\\**.
 
  Po stisknutí klávesy F5 začít ladit projekt služby WCF, Testovací klient WCF se otevře a zobrazí seznam koncových bodů služby, které jsou definovány v konfiguračním souboru. Můžete testovat parametry a spustit službu a opakujte tento postup a průběžné testování a ověřování služby.
 
- Další informace o testovací klient WCF najdete v tématu [testovací klient WCF (WcfTestClient.exe)](http://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7).
+ Další informace o testovací klient WCF najdete v tématu [testovací klient WCF (WcfTestClient.exe)](https://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7).
 
 ### <a name="accessing-wcf-services-in-visual-studio"></a>Přístup ke službám WCF v sadě Visual Studio
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zjednodušuje vytváření klientů WCF, automaticky se generuje proxy server a koncový bod služby, které můžete přidat pomocí **přidat odkaz na službu** dialogové okno. Všechny potřebné informace o konfiguraci se přidá do souboru app.config. Většinu času, vše, co musíte udělat, je vytvořit instanci služby použít.
@@ -236,12 +236,12 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
 |-----------|-----------------|
 |[Návod: Vytvoření jednoduché služby WCF v modelu Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Poskytuje podrobné demonstraci vytvoření a použití služeb WCF v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Návod: Vytvoření datové služby WCF pomocí WPF a Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Poskytuje podrobné demonstraci toho, jak vytvořit a používat [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|[Používání vývojářských nástrojů WCF](http://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|Tento článek popisuje postup vytvoření a testování služeb WCF v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|[Postupy: Přidání, aktualizace nebo odebrání odkazu na službu](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Popisuje postup přidání, aktualizace nebo odebrání služeb WCF z projektu.|
+|[Používání vývojářských nástrojů WCF](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|Tento článek popisuje postup vytvoření a testování služeb WCF v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Postupy: Přidání, aktualizace nebo odebrání odkazu na službu](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Popisuje postup přidání, aktualizace nebo odebrání služeb WCF z projektu.|
 |[Postupy: Přidání, aktualizace nebo odebrání odkazu na službu WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Popisuje, jak odkazovat a využívat [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Řešení potíží s odkazy na služby](../data-tools/troubleshooting-service-references.md)|Uvádí některé běžné chyby, které se mohou vyskytnout s odkazy na služby a jak nechcete, aby.|
 |[Ladění služeb WCF](../debugger/debugging-wcf-services.md)|Popisuje běžné problémy ladění a postupy, které se můžete setkat při ladění služeb WCF.|
-|[Přehled služby Windows Communication Foundation ověřování](http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Popisuje způsob použití WCF k poskytování služeb role webového serveru.|
+|[Přehled služby Windows Communication Foundation ověřování](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Popisuje způsob použití WCF k poskytování služeb role webového serveru.|
 |[Návod: Vytvoření vícevrstvé datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Obsahuje podrobné pokyny pro vytvoření typové datové sady a oddělení kódu TableAdapter a datové sady do více projektů.|
 |[Dialogové okno Nastavit odkaz na službu](../data-tools/configure-service-reference-dialog-box.md)|Popisuje prvky uživatelského rozhraní **nastavit odkaz na službu** dialogové okno.|
 

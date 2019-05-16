@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7729782fe23c1404aa6862116e884baa97b17f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8c5fd73eb64c79ac9476c0036b9f2d709294d178
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103592"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704585"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Jak mohu ladit funkce rozhraní API systému Windows?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Pokud chcete ladit funkce rozhraní Windows API, která má načteny symboly NT,
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     Chcete-li získat upravený název, přečtěte si téma [zobrazení dekorovaných názvů](http://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0).  
+     Chcete-li získat upravený název, přečtěte si téma [zobrazení dekorovaných názvů](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění nativního kódu nejčastější dotazy](../debugger/debugging-native-code-faqs.md)   

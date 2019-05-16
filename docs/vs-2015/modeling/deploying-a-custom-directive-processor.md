@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c485209f47e2d119fe469a59fe379f7cabe03813
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 14bb73043a3c206f5b7397717a113e479a4163d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422594"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699678"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Nastavení vlastního procesoru direktiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Použití vlastního procesoru direktiv v [!INCLUDE[vsprvs](../includes/vsprvs-m
   
  Alternativní metody jsou následující:  
   
-- [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Tato metoda poskytuje způsob, jak nainstalovat a odinstalovat procesor direktiv ve vašem vlastním počítači i v jiných počítačích. Zpravidla můžete do stejného rozšíření VSIX zabalit jiné funkce.  
+- [Visual Studio Extension (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Tato metoda poskytuje způsob, jak nainstalovat a odinstalovat procesor direktiv ve vašem vlastním počítači i v jiných počítačích. Zpravidla můžete do stejného rozšíření VSIX zabalit jiné funkce.  
   
 - [VSPackage](../extensibility/internals/vspackages.md). Pokud definujete VSPackage obsahující kromě procesoru direktiv i jiné funkce, lze procesor direktiv pohodlně zaregistrovat.  
   
@@ -34,7 +34,7 @@ Použití vlastního procesoru direktiv v [!INCLUDE[vsprvs](../includes/vsprvs-m
   Je třeba použít jednu z těchto metod pouze v případě, že chcete transformovat textovou šablony v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Pokud ve své aplikaci používáte vlastního hostitele, je tento vlastní hostitel odpovědný za vyhledání procesoru direktiv pro jednotlivé direktivy.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Nasazení procesoru direktiv v rozšíření VSIX  
- Můžete přidat vlastní procesor směrnice do [rozšíření aplikace Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+ Můžete přidat vlastní procesor směrnice do [rozšíření aplikace Visual Studio (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Přitom musíte zajistit, aby v souboru .vsix byly obsaženy následující dvě položky:  
   
@@ -186,7 +186,7 @@ Použití vlastního procesoru direktiv v [!INCLUDE[vsprvs](../includes/vsprvs-m
   
    Pokud vlastní procesor direktiv není v mezipaměti GAC, měly by podklíče registru vypadat podle následující tabulky:  
   
-|Název|Typ|Data|  
+|Name|Typ|Data|  
 |----------|----------|----------|  
 |(Výchozí)|REG_SZ|(hodnota nenastavena)|  
 |Třída|REG_SZ|**\<Název Namespace >. \<Název třídy >**|  
@@ -194,7 +194,7 @@ Použití vlastního procesoru direktiv v [!INCLUDE[vsprvs](../includes/vsprvs-m
   
  Pokud je sestavení v mezipaměti GAC, měly by podklíče registru vypadat podle následující tabulky:  
   
-|Název|Typ|Data|  
+|Name|Typ|Data|  
 |----------|----------|----------|  
 |(Výchozí)|REG_SZ|(hodnota nenastavena)|  
 |Třída|REG_SZ|\<**Váš plně kvalifikovaný název třídy**>|  

@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85fb8c1349590858391051b8df395c8e6a781a75
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c17bbb0989df9bf186652335cee6f77b047854fb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669788"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689489"
 ---
 # <a name="setting-language-specific-editor-options"></a>Nastavení možností editoru pro konkrétní jazyk
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ ms.locfileid: "59669788"
  [Možnosti, Textový editor, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
  Popisuje nastavení, která určují chování seznamu doplňování technologie IntelliSense při práci s kódem v jazyku C# a J#.  
   
- [Ověření, šablon stylů CSS, textový Editor, dialogové okno Možnosti](http://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
+ [Ověření, šablon stylů CSS, textový Editor, dialogové okno Možnosti](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
  Popisuje nastavení doplňování výrazů a opravy chyb pro šablony stylů CSS.  
   
- [Ověření, HTML, textový Editor, dialogové okno Možnosti](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
+ [Ověření, HTML, textový Editor, dialogové okno Možnosti](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
  Popisuje nastavení kontroly syntaxe kódu HTML na základě vybraného schématu.  
   
  [Možnosti, Textový editor, XAML, Formátování](../../ide/reference/options-text-editor-xaml-formatting.md)  
@@ -57,5 +57,5 @@ ms.locfileid: "59669788"
  [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)  
  Obsahuje odkazy na témata, která vysvětlují mnohé aspekty editoru, pro které lze nastavit předvolby.  
   
- [Přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ [Přizpůsobení nastavení pro vývoj v sadě Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
  Obsahuje odkazy na témata, která vysvětlují přizpůsobení nastavení, vazby klíčů a další funkce integrovaného vývojového prostředí.

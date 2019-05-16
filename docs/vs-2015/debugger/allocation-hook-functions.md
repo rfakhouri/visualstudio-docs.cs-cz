@@ -24,17 +24,17 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b617f0c154c14113370fff257c6837ce8314134a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81135546ffa208a4efb96569cd7968dfe560cdf9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439940"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702523"
 ---
 # <a name="allocation-hook-functions"></a>Funkce háku přidělení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Funkce háku přidělení, nainstalovat pomocí [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), je volána pokaždé, když přidělená, znovu přidělený nebo uvolnění paměti. Tento typ připojení je použít k mnoha různým účelům. Použije k testování způsob, jakým aplikace zpracovává situace nedostatku paměti, například nebo prozkoumat vzory přidělování nebo do protokolu informace o přidělení paměti pro pozdější analýzu.  
+Funkce háku přidělení, nainstalovat pomocí [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), je volána pokaždé, když přidělená, znovu přidělený nebo uvolnění paměti. Tento typ připojení je použít k mnoha různým účelům. Použije k testování způsob, jakým aplikace zpracovává situace nedostatku paměti, například nebo prozkoumat vzory přidělování nebo do protokolu informace o přidělení paměti pro pozdější analýzu.  
   
 > [!NOTE]
 > Mějte na paměti omezení týkající se použití funkce knihovny run-time jazyka C ve funkci háku přidělení, je popsáno v [zavěšení přidělení a přidělení paměti jazyka C Run-Time](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
@@ -47,7 +47,7 @@ int YourAllocHook(int nAllocType, void *pvData,
         const unsigned char * szFileName, int nLine )  
 ```  
   
- Ukazatel, který můžete předat [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) je typu **_crt_alloc_hook –**, jak jsou definovány v CRTDBG. V:  
+ Ukazatel, který můžete předat [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) je typu **_crt_alloc_hook –**, jak jsou definovány v CRTDBG. V:  
   
 ```  
 typedef int (__cdecl * _CRT_ALLOC_HOOK)  
@@ -59,4 +59,4 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
 ## <a name="see-also"></a>Viz také  
  [Háky přidělení a přidělení běhové paměti jazyka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [Zápis funkce háku ladění](../debugger/debug-hook-function-writing.md)   
- [Ukázka crt_dbg2](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)
+ [Ukázka crt_dbg2](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

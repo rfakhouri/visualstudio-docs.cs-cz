@@ -18,19 +18,19 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437322"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704487"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Postupy: Ladění aplikace s částečnou důvěryhodností
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Platí pro Windows a konzolových aplikací.  
   
- [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md) umožňuje snadno nasadit aplikace s částečnou důvěryhodností, které budou využívat [zabezpečení přístupu kódu](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) k omezení přístupu k prostředkům v počítači.  
+ [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md) umožňuje snadno nasadit aplikace s částečnou důvěryhodností, které budou využívat [zabezpečení přístupu kódu](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) k omezení přístupu k prostředkům v počítači.  
   
  Ladění aplikace částečným vztahem důvěryhodnosti může být složité, protože aplikace s částečnou důvěryhodností máte oprávnění různé zabezpečení (a tedy chovat jinak) v závislosti na tom, kde jsou instalovány z. Pokud instalaci z Internetu bude mít aplikace s částečnou důvěryhodností několik oprávnění. Instalaci z místní intranet, bude mít další oprávnění a instalaci z místního počítače, bude mít úplná oprávnění. Také může mít vlastní zóny pomocí vlastních oprávnění. Budete muset ladění aplikace s částečnou důvěryhodností za některé nebo všechny z těchto podmínek. Naštěstí sady Visual Studio usnadňuje to i.  
   

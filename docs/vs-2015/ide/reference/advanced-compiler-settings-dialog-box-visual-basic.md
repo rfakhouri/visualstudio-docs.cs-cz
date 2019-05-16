@@ -13,12 +13,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acf49209927d2d27d717c797d0abd729795a2c20
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f98d2209ca3a2869e4be69a9c46faa5c4755a06
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441126"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699914"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Dialogové okno Upřesnit nastavení kompilátoru (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Použití **AdvancedCompiler nastavení** dialogovému oknu **Návrháře projek
   
 2. Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **kompilace** kartu.  
   
-3. Na [stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), vyberte **konfigurace** a **platformy**. Ve zjednodušených konfigurací sestavení **konfigurace** a **platformy** seznamy se nezobrazují. Další informace najdete v tématu [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+3. Na [stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), vyberte **konfigurace** a **platformy**. Ve zjednodušených konfigurací sestavení **konfigurace** a **platformy** seznamy se nezobrazují. Další informace najdete v tématu [konfigurace ladění a verzí projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 4. Klikněte na tlačítko **Upřesnit možnosti kompilace**.  
   
@@ -55,7 +55,7 @@ Použití **AdvancedCompiler nastavení** dialogovému oknu **Návrháře projek
  Vyberte **žádný**, **úplné**, nebo **pouze soubor pdb** ze seznamu. **Žádný** Určuje, že nebudou generována žádná informace o ladění. **Úplné** Určuje, že nebudou generována úplné ladicí informace, a **pouze soubor pdb** Určuje, že nebudou generována pouze soubor PDB ladicí informace. Ve výchozím nastavení je tato možnost nastavená na **úplné**.  
   
 ## <a name="compilation-constants"></a>Kompilace konstanty  
- Konstanty pro podmíněnou kompilaci mít podobný pomocí vliv [#Const](http://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) direktivy preprocesoru ve zdroji souborů, s tím rozdílem, že konstanty definované jsou veřejné a použít na všechny soubory v projektu. Můžete použít konstanty pro podmíněnou kompilaci spolu s [#If... Pak... #Else](http://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) direktivy podmíněné kompilace zdrojové soubory. Zobrazit [podmíněné kompilace](http://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848).  
+ Konstanty pro podmíněnou kompilaci mít podobný pomocí vliv [#Const](https://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) direktivy preprocesoru ve zdroji souborů, s tím rozdílem, že konstanty definované jsou veřejné a použít na všechny soubory v projektu. Můžete použít konstanty pro podmíněnou kompilaci spolu s [#If... Pak... #Else](https://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) direktivy podmíněné kompilace zdrojové soubory. Zobrazit [podmíněné kompilace](https://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848).  
   
  **Definovat konstantu DEBUG**  
  Ve výchozím nastavení je toto políčko zaškrtnuto, určení nastavit konstantu DEBUG.  

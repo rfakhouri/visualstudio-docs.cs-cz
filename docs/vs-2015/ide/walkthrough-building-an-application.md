@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec0071cb8bf990974c700ce296ebeb86b5ad8c17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045470"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698411"
 ---
 # <a name="walkthrough-building-an-application"></a>Návod: Sestavení aplikace
 
@@ -78,7 +78,7 @@ Budete používat **rozšíření a aktualizace** dialogové okno Najít a nains
 
 ## <a name="BKMK_CreateBuildConfig"></a> Vytvořit vlastní proces sestavení
 
-Když vytvoříte řešení, konfigurace sestavení pro ladění a vydání a jejich výchozí cíle platformy jsou definovány pro řešení automaticky. Můžete poté přizpůsobit tyto konfigurace nebo vytvořit vlastní. Konfigurace sestavení určují typ sestavení. Platformy sestavení určují operační systém, který aplikace cílí pro danou konfiguraci. Další informace najdete v tématu [Principy konfigurací sestavení](../ide/understanding-build-configurations.md), [Principy platforem sestavení](../ide/understanding-build-platforms.md), a [konfigurace ladění a verzí projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
+Když vytvoříte řešení, konfigurace sestavení pro ladění a vydání a jejich výchozí cíle platformy jsou definovány pro řešení automaticky. Můžete poté přizpůsobit tyto konfigurace nebo vytvořit vlastní. Konfigurace sestavení určují typ sestavení. Platformy sestavení určují operační systém, který aplikace cílí pro danou konfiguraci. Další informace najdete v tématu [Principy konfigurací sestavení](../ide/understanding-build-configurations.md), [Principy platforem sestavení](../ide/understanding-build-platforms.md), a [konfigurace ladění a verzí projektu](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
 Můžete změnit nebo vytvořit konfigurace a nastavení platformy pomocí **nástroje Configuration Manager** dialogové okno. V tomto postupu vytvoříte konfiguraci sestavení pro testování.
 
@@ -197,9 +197,9 @@ Můžete změnit, se zobrazí v tom, kolik informací o procesu sestavení **vý
 
     Informace o sestavení obsahují čas spuštění sestavení (umístěný na začátku), pořadí, ve které soubory byly zpracovány a množství času, které potřeba k dokončení procesu (umístěné na konci). Tyto informace zahrnují také syntaxi skutečného kompilátoru, která sadě Visual Studio spustí během sestavování.
 
-    Například v sestavení Visual C# [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) možnost uvádí kód upozornění 1762, který jste zadali dříve v tomto tématu, a tři další varování.
+    Například v sestavení Visual C# [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) možnost uvádí kód upozornění 1762, který jste zadali dříve v tomto tématu, a tři další varování.
 
-    V sestavení Visual Basic [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) neobsahuje konkrétní upozornění k vyloučení, takže se nezobrazují žádné upozornění.
+    V sestavení Visual Basic [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) neobsahuje konkrétní upozornění k vyloučení, takže se nezobrazují žádné upozornění.
 
    > [!TIP]
    > Můžete prohledávat obsah **výstup** okna, je-li je zobrazit **najít** dialogové okno výběrem klávesy Ctrl + F.
@@ -264,6 +264,6 @@ Další informace najdete v tématu [jak: Změna výstupního adresáře sestave
 
 ## <a name="see-also"></a>Viz také
 
-- [Návod: Sestavení projektu (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
-- [Předkompilace přehled rozhraní ASP.NET Web Application Project](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [Návod: Sestavení projektu (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
+- [Předkompilace přehled rozhraní ASP.NET Web Application Project](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
 - [Návod: Použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md)

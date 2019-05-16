@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 646bba541e18fd372bd5236f7ebb6b91d1472d55
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 105efab7a28f0a21bd7567262ff8ec214715b8ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435084"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704582"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analýza využití procesoru v univerzální aplikace pro Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dobrým začátkem pochopení, jak využívá procesor. **Využití procesoru** nástroj ukazuje, kde procesor stráví času prováděním kódu. Zaměřit se na konkrétní scénáře, využití procesoru může běžet s [rychlost odezvy UI XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) nástroj, [spotřeba energie](../profiling/analyze-energy-use-in-store-apps.md) nástroje nebo oba nástroje v jedné relaci diagnostiky.  
+ Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dobrým začátkem pochopení, jak využívá procesor. **Využití procesoru** nástroj ukazuje, kde procesor stráví času prováděním kódu. Zaměřit se na konkrétní scénáře, využití procesoru může běžet s [rychlost odezvy UI XAML](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) nástroj, [spotřeba energie](../profiling/analyze-energy-use-in-store-apps.md) nástroje nebo oba nástroje v jedné relaci diagnostiky.  
   
 > [!NOTE]
 > **Využití procesoru** nástroj nelze použít s aplikacemi pro Windows Phone Silverlight 8.1.  

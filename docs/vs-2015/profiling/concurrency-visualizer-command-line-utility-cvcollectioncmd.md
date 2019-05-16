@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692748"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Nástroj příkazového řádku Vizualizéru souběžnosti (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (CV
   
 |Možnost|Popis|Parametry|Vrácené hodnoty|  
 |------------|-----------------|----------------|-------------------|  
-|Dotazy|Vrátí, zda shromažďování lze spustit.|Žádné|0, pokud kolekce je připraven ke spuštění.<br /><br /> 1, pokud kolekce je již spuštěna.<br /><br /> 2, pokud kolekce není v průběhu, ale jeden nebo více požadovaných [trasování událostí pro Windows](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) relace je již povolen.|  
+|Dotazy|Vrátí, zda shromažďování lze spustit.|Žádné|0, pokud kolekce je připraven ke spuštění.<br /><br /> 1, pokud kolekce je již spuštěna.<br /><br /> 2, pokud kolekce není v průběhu, ale jeden nebo více požadovaných [trasování událostí pro Windows](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) relace je již povolen.|  
 |Spuštění|Spustí zadaný procesu v rámci Vizualizátor souběžnosti.|Cesta ke spustitelnému souboru.|0, pokud spuštění úspěšné.<br /><br /> 1, pokud spuštění selhalo, protože nebylo možné spustit cílovou aplikaci.<br /><br /> 13, pokud spuštění selhalo, protože CVCollectionCmd nemá dostatečná oprávnění k zápisu do zadaného výstupního adresáře.|  
 |Připojit|Začne sběr trasování celého systému; v opačném případě připojí k procesu, pokud je zadaná.|Žádné|0, pokud byla úspěšná přílohy.<br /><br /> 1 pro přílohy se nezdařilo, protože určený proces je neplatný nebo nejednoznačný.<br /><br /> 13 Pokud přílohy se nezdařilo, protože CVCollectionCmd nemá dostatečná oprávnění k zápisu do zadaného výstupního adresáře:.|  
 |Odpojit|Zastaví shromažďování.|Žádné|0, pokud bylo úspěšné odpojení.<br /><br /> 1 pro odpojení se nezdařilo, protože kolekce není právě probíhá.<br /><br /> 2, pokud odpojení se nezdařilo, protože kolekce se nepovedlo zastavit.|  
@@ -76,7 +76,7 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (CV
 |MarkerProvider|Určuje zprostředkovatele jednu značku.|Musí obsahovat tyto prvky:<br /><br /> -Úroveň<br />-IDENTIFIKÁTOR GUID<br />– Název<br /><br /> Může obsahovat tyto prvky:<br /><br /> -Kategorie<br />-IsEnabled|  
 |úroveň|Nastaví úroveň důležitosti MarkerProvider.|– Nízká<br />-Normální<br />– Vysoká<br />– Kritické<br />-Vše|  
 |Guid|Globálně jedinečný identifikátor poskytovatele trasování událostí pro Windows značek.|A GUID.|  
-|Název|Určuje popis poskytovatele značek.|Řetězec.|  
+|Name|Určuje popis poskytovatele značek.|Řetězec.|  
 |Kategorie|Určuje kategorie shromážděných pro poskytovatele značek.|Řetězec oddělených čárkou čísla nebo rozsahy čísel.|  
 |hodnotu isEnabled|Nastaví hodnotu, která určuje, zda je povoleno poskytovatele značek pro kolekci.|-True<br />-False|  
 |FilterConfig|Určuje seznam možností konfigurace událostí trasování událostí pro Windows, které jsou filtrovány z kolekce.|Může obsahovat tyto prvky:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-CollectFileIO|  
