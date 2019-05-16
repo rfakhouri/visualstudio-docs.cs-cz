@@ -170,7 +170,7 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
  ![Příklad zobrazující násobnost n: n použití](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Na stav, že několik objektů actor stejné třídy dá využít jeden výskyt případu použití, nastavení násobnosti na konci přidružení objektu actor ** 1... \\***.  
+- Na stav, že několik objektů actor stejné třídy dá využít jeden výskyt případu použití, nastavení násobnosti na konci přidružení objektu actor **1..\\***.  
   
    Na obrázku dá využít jeden nebo více restaurace v plnění stejné objednávka jídla.  
   
