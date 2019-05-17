@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b794eb7c7a258a843763b2c68902000031c17eb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca9c4681cc19917ef965a4c8577e9559d71dd4be
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807144"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841963"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identifikátory by měly mít správnou předponu
 
@@ -62,7 +62,7 @@ Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-an
 
 Můžete nakonfigurovat, jestli se mají vyloučit z tohoto pravidla parametry typu jedním znakem. Například chcete-li určit, že toto pravidlo *by neměla* analyzovat parametry typu jedním znakem, přidejte jeden z následujících páry klíč hodnota do souboru .editorconfig ve vašem projektu:
 
-```
+```ini
 # Package version 2.9.0 and later
 dotnet_code_quality.CA1715.exclude_single_letter_type_parameters = true
 
@@ -77,7 +77,7 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 
 Můžete nakonfigurovat, které části vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich dostupnosti. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
 
-```
+```ini
 dotnet_code_quality.ca1715.api_surface = private, internal
 ```
 

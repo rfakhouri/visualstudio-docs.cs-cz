@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f35e450f17a671b800d003b94ceb5ebc2321c90
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545225"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841405"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Nečekejte přímo na úlohu
 
@@ -76,7 +76,7 @@ public async Task Execute()
 
 Můžete nakonfigurovat, zda mají být vyloučeny asynchronní metody, které nevracejí hodnotu z tohoto pravidla. K vyloučení těchto druzích metod, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
 
-```
+```ini
 # Package version 2.9.0 and later
 dotnet_code_quality.CA2007.exclude_async_void_methods = true
 
@@ -86,7 +86,7 @@ dotnet_code_quality.CA2007.skip_async_void_methods = true
 
 Můžete také nakonfigurovat, které výstupní typy sestavení použít toto pravidlo. Například tohoto pravidla lze použít pouze pro kód, který vytvoří aplikace konzoly nebo dynamicky propojené knihovny (to znamená, ne aplikace uživatelského rozhraní), přidejte do souboru .editorconfig ve vašem projektu následující dvojice klíč hodnota:
 
-```
+```ini
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
 ```
 

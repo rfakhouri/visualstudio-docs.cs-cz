@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794090"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845996"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Vytvoření nastavení přenosné vlastního editoru pomocí řešení EditorConfig
 
@@ -20,7 +20,13 @@ Můžete přidat [EditorConfig](http://editorconfig.org/) soubor do projektu neb
 
 EditorConfig nastavení podporuje řadu editory kódu a prostředími IDE, jako je Visual Studio. Je přenosný komponentu, která se přenáší pomocí kódu a můžete vynutit kódování styly i mimo sadu Visual Studio.
 
-Když přidáte soubor EditorConfig do projektu v sadě Visual Studio, formátování existující kód není změnit, dokud se formátovat dokument (**upravit** > **Upřesnit**  >  **Formátovat dokument** nebo **Ctrl**+**K**, **Ctrl**+**D**ve výchozím profilu). Však žádné nové řádky kódu se formátují podle nastavení EditorConfig. EditorConfig nastavení, které chcete, můžete definovat **formátovat dokument** použít [ **formátování** stránka možností](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Když přidáte soubor EditorConfig do projektu v sadě Visual Studio, formátování existující kód není změnit, dokud se formátovat dokument (**upravit** > **Upřesnit**  >  **Formátovat dokument** nebo **Ctrl**+**K**, **Ctrl**+**D**ve výchozím profilu). Však žádné nové řádky kódu se formátují podle nastavení EditorConfig.
+
+::: moniker range="vs-2017"
+
+EditorConfig nastavení, které chcete, můžete definovat **formátovat dokument** použít [ **formátování** stránka možností](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
+::: moniker-end
 
 > [!NOTE]
 > Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [EditorConfig v sadě Visual Studio pro Mac](/visualstudio/mac/editorconfig).
@@ -73,7 +79,7 @@ Pokud soubor EditorConfig odeberte z projektu nebo základ kódu, musí zavřete
 
 1. Upravte soubor podle potřeby, například:
 
-   ```EditorConfig
+   ```ini
    root = true
 
    [*.{cs,vb}]
@@ -104,7 +110,7 @@ Chcete-li přepsat některá nebo všechna nastavení EditorConfig, přidejte *.
 
 Pokud je zapotřebí přepsat některé, ale ne všechna nastavení, zadejte pouze tyto nastavení v *.editorconfig* souboru. Pouze vlastnosti, která explicitně zadáte v souboru nižší úrovně se přepíšou. Další nastavení z vyšší úrovně *.editorconfig* souborů i nadále. Pokud chcete zajistit, aby _žádné_ nastavení z _jakékoli_ vyšší úrovně *.editorconfig* soubory aplikují i na této části základu kódu, přidejte ```root=true``` vlastnost nižší úrovně *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # top-most EditorConfig file
 root = true
 ```
@@ -135,7 +141,7 @@ Podle očekávání, stiskněte **kartu** klíč na další řádek odsadí řá
 
 Přidat nový soubor s názvem *.editorconfig* do projektu s použitím následujícího obsahu. `[*.cs]` Nastavení znamená, že tato změna platí pouze pro kód soubory jazyka C# v projektu.
 
-```EditorConfig
+```ini
 # Top-most EditorConfig file
 root = true
 

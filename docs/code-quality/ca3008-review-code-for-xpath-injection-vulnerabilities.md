@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e66b75160df0e8ecf9d33601ee383ec71cd62c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806455"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841539"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008: Zkontrolujte ohrožení zabezpečení injektáží XPath v kódu
 
@@ -32,7 +32,7 @@ Potenciálně nedůvěryhodný vstup požadavku HTTP dosáhne dotaz XPath.
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Při práci s nedůvěryhodnému vstupu, dávejte útoků prostřednictvím injektáže XPath. Vytváření dotazů XPath pomocí nedůvěryhodný vstup může útočníkovi umožnit speciálně manipulovat s dotaz, který vrací výsledek neúmyslnému a pravděpodobně zpřístupnit obsah XML poslal dotaz. 
+Při práci s nedůvěryhodnému vstupu, dávejte útoků prostřednictvím injektáže XPath. Vytváření dotazů XPath pomocí nedůvěryhodný vstup může útočníkovi umožnit speciálně manipulovat s dotaz, který vrací výsledek neúmyslnému a pravděpodobně zpřístupnit obsah XML poslal dotaz.
 
 Toto pravidlo se pokusí najít vstup požadavků HTTP dosáhnout pomocí výrazu XPath.
 
@@ -40,7 +40,7 @@ Toto pravidlo se pokusí najít vstup požadavků HTTP dosáhnout pomocí výraz
 > Toto pravidlo nelze sledovat data napříč sestavení. Například pokud jedno sestavení načte vstup požadavku HTTP a předává je na jiné sestavení, který provede dotaz XPath, nevytvoří toto pravidlo upozornění.
 
 > [!NOTE]
-> Je konfigurovatelná omezení jak hluboko bude toto pravidlo analyzovat tok dat mezi volání metody. Zobrazit [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) jak nakonfigurovat limit v `.editorconfig` soubory.
+> Je konfigurovatelná omezení jak hluboko bude toto pravidlo analyzovat tok dat mezi volání metody. Zobrazit [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) jak nakonfigurovat limit v souboru EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
@@ -92,7 +92,7 @@ Partial Public Class WebForm
 
     Protected Sub Page_Load(sender As Object, e As EventArgs)
         Dim operation As String = Me.Request.Form("operation")
-        
+
         ' If an attacker uses this for input:
         '     ' or 'a' = 'a
         ' Then the XPath query will be:

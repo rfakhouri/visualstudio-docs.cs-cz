@@ -1,6 +1,6 @@
 ---
 title: 'CA1812: Vyhněte se nevytvořeným instancím interních tříd'
-ms.date: 11/04/2016
+ms.date: 05/16/2019
 ms.topic: reference
 f1_keywords:
 - CA1812
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08d8b907e4a211b0735f07377c21dec1c0a982c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: def22bd4aee4f64b5e14f2bbe7978a0dfa061261
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796901"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841427"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Vyhněte se nevytvořeným instancím interních tříd
 
@@ -32,7 +32,7 @@ ms.locfileid: "62796901"
 
 ## <a name="cause"></a>Příčina
 
-Instance typu na úrovni sestavení není vytvořena kódem v sestavení.
+Vnitřní typ (na úrovni sestavení) je nikdy vytvořena instance.
 
 ## <a name="rule-description"></a>Popis pravidla
 
@@ -50,19 +50,17 @@ Následující typy nejsou prozkoumat toto pravidlo:
 
 - Typy generované kompilátoru pole
 
-- Typy, které se nedá vytvořit instance, které definují `static` (`Shared` v jazyce Visual Basic) metody pouze.
+- Typy, které se nedá vytvořit instance, které definují pouze [ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` v jazyce Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) metody.
 
-Pokud použijete <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> na sestavení, které se právě analyzuje, toto pravidlo nedojde na žádné konstruktory, které jsou označeny jako `internal` protože nemůže určit, zda pole se používá jiným `friend` sestavení.
-
-I když toto omezení v analýzy kódu sady Visual Studio nelze vyřešit, externí samostatné FxCop dojde u interní konstruktory, pokud každý `friend` sestavení je k dispozici v analýze.
+Pokud použijete <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> sestavení, který je analyzován, toto pravidlo nebude příznakem typy, které jsou označeny jako [ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` v jazyce Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)) vzhledem k tomu, že pole může být používané sestavení typu friend.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
-Chcete-li opravit porušení tohoto pravidla, typ odeberte nebo přidejte kód, který ji používá. Pokud typ obsahuje pouze statické metody, přidejte jeden z následujících na typ pro zabránění kompilátoru generování výchozí veřejný konstruktor instance:
+Chcete-li opravit porušení tohoto pravidla, odeberte typ nebo přidejte kód, který ji používá. Pokud typ obsahuje pouze `static` jednu z následujících metod, přidejte na typ pro zabránění kompilátoru generování výchozí veřejný konstruktor instance:
 
 - Soukromý konstruktor pro typy, které jsou cíleny na rozhraní .NET Framework verze 1.0 a 1.1.
 
-- `static` (`Shared` v jazyce Visual Basic) modifikátor pro typy, které se zaměřují [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+- `static` Modifikátor pro C# typy, které se zaměřují [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] nebo novější.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
@@ -70,9 +68,9 @@ Je bezpečné potlačit upozornění tohoto pravidla. Doporučujeme vám, že je
 
 - Třída je vytvořená prostřednictvím reflexe pozdní vazby metod, jako <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
-- Modul runtime se automaticky vytvoří třídu nebo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Například třídy, které implementují <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> nebo <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Třída je vytvářena automaticky nástrojem runtime nebo technologie ASP.NET. Některé příklady automaticky vytvořené třídy jsou ty, které implementují <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> nebo <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
-- Třídy je předán jako parametr obecného typu, který má nové omezení. Například následující příklad vyvolá toto pravidlo.
+- Třídy je předán jako parametr typu, který má [ `new` omezení](/dotnet/csharp/language-reference/keywords/new-constraint). V následujícím příkladu budou označeny pravidlem CA1812:
 
     ```csharp
     internal class MyClass
@@ -88,17 +86,13 @@ Je bezpečné potlačit upozornění tohoto pravidla. Doporučujeme vám, že je
             return new T();
         }
     }
-    // [...]
+
     MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
     mc.Create();
     ```
 
-  V takových situacích doporučujeme že potlačení tohoto upozornění.
-
 ## <a name="related-rules"></a>Související pravidla
 
-[CA1811: Vyhněte se nevolanému místnímu kódu](../code-quality/ca1811-avoid-uncalled-private-code.md)
-
-[CA1801: Revize nepoužitých parametrů](../code-quality/ca1801-review-unused-parameters.md)
-
-[CA1804: Odeberte nepoužívané místní hodnoty](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811: Vyhněte se nevolanému místnímu kódu](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801: Revize nepoužitých parametrů](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804: Odeberte nepoužívané místní hodnoty](../code-quality/ca1804-remove-unused-locals.md)

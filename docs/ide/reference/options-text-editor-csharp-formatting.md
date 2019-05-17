@@ -18,18 +18,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec1847f30f5c04bd32ddea85ff95a0808daa8aa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a11fa7913828ef557c87ec50184c9de35a9e5bc4
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817812"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847434"
 ---
-# <a name="options-text-editor-c-code-style-formatting"></a>Možnosti, textový Editor, C#, styl formátování kódu
+# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Dialogové okno Možnosti: Textový Editor \> C# \> styl kódu \> formátování
 
-Použití **formátování** možnosti stránky lze nastavit možnosti formátování kódu v editoru kódu. Chcete-li získat přístup k této stránce Možnosti, zvolte **nástroje** > **možnosti**. V **možnosti** dialogového okna zvolte **textový Editor** > **jazyka C#** > **styl kódu**  >  **Formátování**.
+Použití **formátování** možnosti stránky a jeho podstránky ([**odsazení**](#indentation-page), **nové řádky**, **mezery** a **obtékání**) Chcete-li nastavit možnosti formátování kódu v editoru kódu.
 
-## <a name="general-page"></a>Obecná stránka
+Chcete-li získat přístup k této stránce Možnosti, zvolte **nástroje** > **možnosti** z řádku nabídek. V **možnosti** dialogového okna zvolte **textový Editor** > **jazyka C#** > **styl kódu**  >  **Formátování**.
+
+> [!TIP]
+> **Odsazení**, **nové řádky**, **mezery**, a **obtékání** podstránky každý zobrazit okno náhledu v dolní části, který ukazuje účinky jednotlivých možností. Pokud chcete použít okno náhledu, vyberte možnost formátování. Okno náhledu ukazuje příklad vybrané možnosti. Pokud změníte nastavení tak, že vyberete tlačítko přepínače nebo zaškrtávacího políčka, okno náhledu se aktualizuje a zobrazí vliv nové nastavení.
+
+## <a name="formatting-general-page"></a>Formátování stránky (Obecné)
 
 ### <a name="general-settings"></a>Obecná nastavení
 
@@ -43,9 +48,17 @@ Tato nastavení ovlivňují *při* editoru kódu se týká možnosti formátová
 |**Automaticky formátovat při vrácení**|Pokud je vybráno, formátuje text při **Enter** stisknutí podle možnosti formátování pro editor vybrané.|
 |**Automaticky formátovat při vložení**|Pokud je vybráno, formátuje text, který je vložen do editoru podle možnosti formátování pro editor vybrané.|
 
+::: moniker range="vs-2019"
+
+Pokud jste dříve použili nastavení stylu kódu pro C# soubory použijte **formátovat dokument** příkaz v sadě Visual Studio 2017, která je teď dostupná jako funkce [ **vyčištění kódu** ](../code-styles-and-code-cleanup.md#apply-code-styles).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 ### <a name="format-document-settings"></a>Formát dokumentu nastavení
 
-Tato nastavení konfigurují **formátovat dokument** příkazu, vyčistěte další kód v souboru. Další informace o tom, jak tato nastavení se použijí, naleznete v tématu [příkazu formát dokumentu](../code-styles-and-quick-actions.md#format-document-command).
+Tato nastavení konfigurují **formátovat dokument** příkazu, vyčistěte další kód v souboru. Další informace o tom, jak tato nastavení se použijí, naleznete v tématu [příkazu formát dokumentu](../code-styles-and-code-cleanup.md#apply-code-styles).
 
 |Popisek|Popis|Odpovídající EditorConfig a nástroje > Možnosti pravidla|
 |-----------|-----------------|-----------------|-----------------|
@@ -68,13 +81,18 @@ Tato nastavení konfigurují **formátovat dokument** příkazu, vyčistěte dal
 
 ![Nastavení vyčištění kódu pro jazyk C# v sadě Visual Studio](media/format-document-settings.png)
 
-## <a name="preview-windows"></a>Ve verzi Preview systému windows
+::: moniker-end
 
-**Odsazení**, **nové řádky**, **mezery**, a **obtékání** podstránky každý zobrazit okno náhledu dole. V okně verze preview demonstruje účinek jednotlivých možností. Pokud chcete použít okno náhledu, vyberte možnost formátování. Okno náhledu ukazuje příklad vybrané možnosti. Pokud změníte nastavení tak, že vyberete tlačítko přepínače nebo zaškrtávacího políčka, okno náhledu se aktualizuje a zobrazí vliv nové nastavení.
+## <a name="indentation-page"></a>Stránka odsazení
 
-## <a name="indentation-remarks"></a>Odsazení poznámky
+Odsazení možnosti na této stránce se projeví, když je kód automaticky formátován. Jedna je například když je kód automaticky formátován po vložení kódu do souboru při **automaticky formátovat při vložení** zaškrtnuto. ( **Automaticky formátovat při vložení** možnost je v části **formátování** > **Obecné**.)
 
-Možnosti odsazení **karty** stránky pro každý jazyk jenom určit, kde editoru kódu umístí kurzor po stisknutí klávesy **Enter** na konci řádku. Možnosti odsazení pod **formátování** použít, když kód je ve formátu automaticky, například po vložení kódu do souboru při **automaticky formátovat při vložení** je vybraná a kdy bloku právě formátovaná je zadat ručně.
+![C#Možnosti odsazení textového editoru v sadě Visual Studio](media/csharp-indentation-options.png)
+
+> [!TIP]
+> Existují také možnosti odsazení na **textový Editor** > **C#** > **karty** stránka možností. Tyto možnosti jenom určit, kde editoru kódu umístí kurzor po stisknutí klávesy **Enter** na konci řádku.
+>
+> ![C#textový editor přehled možností v sadě Visual Studio](media/csharp-tabs-options.png)
 
 ## <a name="see-also"></a>Viz také:
 

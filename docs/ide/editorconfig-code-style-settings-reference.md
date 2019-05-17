@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a5778764bb065ae6da53016c2c9bbb557db20c51
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557213"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847382"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
@@ -29,7 +29,7 @@ Můžete definovat a udržovat konzistentní kódu styl v vašeho základu kódu
 
 > [!TIP]
 > - Při definování konvence psaní kódu v souboru .editorconfig konfigurujete způsob [analyzátory stylu kódu](../code-quality/roslyn-analyzers-overview.md) , které jsou součástí Visual Studia pro analýzu kódu. Souboru .editorconfig se konfigurační soubor pro tyto analyzátory.
-> - Předvolby stylu kódu pro Visual Studio lze také nastavit [Možnosti textového editoru](code-styles-and-quick-actions.md) dialogového okna. Vezměte ale v .editorconfig nastavení priority a předvoleb nastavíte v **možnosti** nejsou spojeny s konkrétní projekt.
+> - Předvolby stylu kódu pro Visual Studio lze také nastavit [Možnosti textového editoru](code-styles-and-code-cleanup.md) dialogového okna. Vezměte ale v .editorconfig nastavení priority a předvoleb nastavíte v **možnosti** nejsou spojeny s konkrétní projekt.
 
 Konci tohoto článku obsahuje [souboru .editorconfig příklad](#example-editorconfig-file).
 
@@ -239,7 +239,7 @@ AddHandler Elapsed, AddressOf Handler
 
 Tato pravidla mohou být zobrazeny v *.editorconfig* to následujícím způsobem:
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_qualification_for_field = false:suggestion
@@ -307,7 +307,7 @@ Dim local = Int32.MaxValue
 
 Tato pravidla mohou být zobrazeny v *.editorconfig* to následujícím způsobem:
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
@@ -331,7 +331,7 @@ V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, použitelné
 
 Toto pravidlo přijímá hodnotu z následující tabulky:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | Vždy | Modifikátory dostupnosti. Chcete-li zadat raději |
 | for\_non\_interface_members | Preferovat modifikátory deklarovat s výjimkou veřejné členy. (To je stejný jako **vždy** a byla přidána kontroly pravopisu budoucnost if C# přidá výchozí metody rozhraní.) |
@@ -408,7 +408,7 @@ End Class
 
 Tato pravidla mohou být zobrazeny v *.editorconfig* to následujícím způsobem:
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_require_accessibility_modifiers = always:suggestion
@@ -530,7 +530,7 @@ Dim v = a.b.Length
 
 Tato pravidla mohou být zobrazeny v *.editorconfig* to následujícím způsobem:
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
@@ -822,7 +822,7 @@ End If
 
 Tato pravidla mohou být zobrazeny v *.editorconfig* to následujícím způsobem:
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_object_initializer = true:suggestion
@@ -898,7 +898,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 
 Tato pravidla mohou být zobrazeny v *.editorconfig* to následujícím způsobem:
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_coalesce_expression = true:suggestion
@@ -968,7 +968,7 @@ bool f = this.Init();
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_var_for_built_in_types = true:suggestion
@@ -995,7 +995,7 @@ V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, příslušn�
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | true | Preferovat členy s výrazem v těle metody |
 | when_on_single_line | Preferovat členy s výrazem v těle metody, když bude se jednat o jeden řádek |
@@ -1015,7 +1015,7 @@ public int GetAge() { return this.Age; }
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Value | Popis |
+| Hodnota | Popis |
 | ----- |:----------- |
 | true | Preferovat členové tvoření konstruktorů |
 | when_on_single_line | Dáváte přednost členové tvoření pro konstruktory, když bude se jednat o jeden řádek |
@@ -1057,7 +1057,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | true | Preferovat s výrazem v těle členy pro vlastnosti |
 | when_on_single_line | Raději s výrazem v těle členy pro vlastnosti, když bude se jednat o jeden řádek |
@@ -1115,7 +1115,7 @@ public int Age { get { return _age; } set { _age = value; } }
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_expression_bodied_methods = false:silent
@@ -1170,7 +1170,7 @@ if (s != null) {...}
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
@@ -1205,7 +1205,7 @@ if (int.TryParse(value, out i) {...}
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_inlined_variable_declaration = true:suggestion
@@ -1287,7 +1287,7 @@ fibonacci = (int n) =>
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_simple_default_expression = true:suggestion
@@ -1339,7 +1339,7 @@ if (func != null) { func(args); }
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_throw_expression = true:suggestion
@@ -1373,7 +1373,7 @@ if (test) this.Display();
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_braces = true:silent
@@ -1458,7 +1458,7 @@ using System.Threading.Tasks;
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # .NET formatting settings:
 [*.{cs,vb}]
 dotnet_sort_system_directives_first = true
@@ -1486,7 +1486,7 @@ using Octokit;
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # .NET formatting settings:
 [*.{cs,vb}]
 dotnet_separate_import_directive_groups = true
@@ -1683,7 +1683,7 @@ var q = from a in e from b in e
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_new_line_before_open_brace = methods, properties, control_blocks, types
@@ -1832,7 +1832,7 @@ class C
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_indent_case_contents = true
@@ -1924,7 +1924,7 @@ MyMethod(argument);
 
 Toto pravidlo je možné zadat jednu nebo více hodnot z následující tabulky:
 
-| Value | Popis |
+| Hodnota | Popis |
 | ----- |:------------|
 | control_flow_statements | Vložit mezeru mezi závorky řídícího toku výrazů |
 | výrazy | Vložit mezeru mezi závorky výrazů |
@@ -2011,7 +2011,7 @@ class C :I
 
 Toto pravidlo je možné zadat jednu hodnotu z následující tabulky:
 
-| Value | Popis |
+| Hodnota | Popis |
 | ----- |:------------|
 | before_and_after | Vložit mezeru před a za binární operátor |
 | žádná | Odebrat mezery před a za binární operátor |
@@ -2127,7 +2127,7 @@ void Goo(int x)
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_space_after_cast = true
@@ -2190,7 +2190,7 @@ public int MyProperty
 
 Příklad *.editorconfig* souboru:
 
-```EditorConfig
+```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_preserve_single_line_statements = true
@@ -2201,7 +2201,7 @@ csharp_preserve_single_line_blocks = true
 
 Abyste mohli začít pracovat, tady je příklad *.editorconfig* soubor s výchozími možnostmi:
 
-```EditorConfig
+```ini
 ###############################
 # Core EditorConfig Options   #
 ###############################
