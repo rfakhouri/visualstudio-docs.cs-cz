@@ -39,7 +39,7 @@ V okně paralelního sledování můžete najednou zobrazit hodnoty, které obsa
   > [!TIP]
   > Je nutné otevřít **paralelních úkolů** okno, aby obsahovalo informace o úkolu v **paralelní sledování** okna.  
   
--  **\<Přidat kukátko >** sloupec, ve kterém můžete zadat výrazy, které chcete sledovat.  
+- **\<Přidat kukátko>** sloupec, ve kterém můžete zadat výrazy, které chcete sledovat.  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

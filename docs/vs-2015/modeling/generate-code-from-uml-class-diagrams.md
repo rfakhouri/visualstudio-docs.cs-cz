@@ -108,7 +108,7 @@ Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual S
    **Popis** vlastnosti typů, atributů, operací a přidružení se zapisují do `<summary>` komentáře v generovaném kódu. Prvky komentářů, které jsou spojeny s typy se zapisují do `<remarks>` komentáře.  
 
 ## <a name="varying-the-generated-code"></a>Rozlišování generovaného kódu  
- Generovaný kód se liší v závislosti na vlastnostech každého typu, atributu nebo operace. Pokud nastavíte například **je abstraktní** vlastnost třídy na hodnotu true, pak bude `abstract` – klíčové slovo se zobrazí na tuto vygenerovanou třídu. Pokud jste nastavili **násobnost** atributu na ** 0..\\ , pak bude mít vygenerovaná vlastnost `IEnumerable<>` typu.  
+ Generovaný kód se liší v závislosti na vlastnostech každého typu, atributu nebo operace. Pokud nastavíte například **je abstraktní** vlastnost třídy na hodnotu true, pak bude `abstract` – klíčové slovo se zobrazí na tuto vygenerovanou třídu. Pokud jste nastavili **násobnost** atributu na **0..\\***, pak bude mít vygenerovaná vlastnost `IEnumerable<>` typu.  
 
  Každý stereotyp navíc obsahuje několik dalších vlastností, které lze nastavit. Tyto hodnoty jsou převedeny na příslušná klíčová slova v kódu jazyka C#. Například pokud nastavíte vlastnost `Is Static` na třídu, pak třída jazyka C# budou `static`.  
 
