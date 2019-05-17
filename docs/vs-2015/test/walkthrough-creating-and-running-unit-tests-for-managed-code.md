@@ -237,7 +237,7 @@ using BankAccountNS;
 ## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Oprava kódu a znovu spustit testy  
  **Analýza výsledků testování**  
   
- Výsledek testu obsahuje zprávu s popisem chyby. Pro `AreEquals` metoda, zpráva zobrazí očekávaným ((<strong>očekávaná\<*XXX*></strong>parametr) a co vlastně přijatých ( **Skutečné\<*YYY* >** parametr). Očekávali jsme zůstatek zůstatku, ale místo toho se zvýšila množství stažení.  
+ Výsledek testu obsahuje zprávu s popisem chyby. Pro `AreEquals` metoda, zpráva zobrazí očekávaným ((<strong>očekávaná\<*XXX*></strong>parametr) a co vlastně přijatých ( **Skutečné\<*YYY*>** parametr). Očekávali jsme zůstatek zůstatku, ale místo toho se zvýšila množství stažení.  
   
  Přezkoumání kódu ukazuje, že Jednotkový test proběhl úspěšně chybu. Množství stažení se přidá do zůstatek na účtu, když by měl být odečtena.  
   
