@@ -20,8 +20,9 @@
     - name: Analýza defektů ve spravovaném kódu
       href: walkthrough-analyzing-managed-code-for-code-defects.md
     - name: Analýza defektů v kódu C/C++
-      href: walkthrough-analyzing-c-cpp-code-for-defects.md
       items:
+        - name: Analýza defektů v kódu C/C++
+          href: walkthrough-analyzing-c-cpp-code-for-defects.md
         - name: Demonstrační ukázka
           href: demo-sample.md
 - name: Návody
@@ -35,8 +36,9 @@
             - name: Instalace
               href: install-fxcop-analyzers.md
             - name: Konfigurace
-              href: configure-fxcop-analyzers.md
               items:
+                - name: Konfigurace
+                  href: configure-fxcop-analyzers.md
                 - name: Možnosti konfigurace
                   href: fxcop-analyzer-options.md
             - name: Migrace ze statické analýzy kódu
@@ -56,8 +58,9 @@
         - name: Ruční spuštění analýzy kódu
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Potlačení upozornění
-          href: in-source-suppression-overview.md
           items:
+            - name: Potlačení upozornění
+              href: in-source-suppression-overview.md
             - name: Potlačení upozornění analýzy kódu pro vygenerovaný kód
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: Přizpůsobení slovníku analýzy kódu
@@ -73,8 +76,9 @@
         - name: Nastavení vlastností analýzy kódu
           href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
         - name: Použití anotací SAL k omezení defektů kódu
-          href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
           items:
+            - name: Použití anotací SAL k omezení defektů kódu
+              href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
             - name: Princip SAL
               href: understanding-sal.md
             - name: "Anotace parametrů funkcí a\_návratových hodnot"
@@ -94,13 +98,15 @@
         - name: Určení dalších informací o kódu pomocí funkce _Analysis_assume
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
     - name: Sady pravidel
-      href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: Sady pravidel
+          href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Sady pravidel pro balíčky analyzátoru
           href: analyzer-rule-sets.md
         - name: Sady pravidel pro spravovaný kód
-          href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
+            - name: Sady pravidel pro spravovaný kód
+              href: how-to-configure-code-analysis-for-a-managed-code-project.md
             - name: Konfigurace analýzy kódu pro webovou aplikaci ASP.NET
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: Sady pravidel pro kód C++
@@ -110,8 +116,9 @@
         - name: Použití editoru sad pravidel
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: Zásady operace vrácení se změnami
-      href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
       items:
+        - name: Zásady operace vrácení se změnami
+          href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
         - name: Implementace vlastních zásad vracení zpět se změnami analýzy kódu pro spravovaný kód
           href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
         - name: Vynucování udržitelného kódu
@@ -129,8 +136,9 @@
 - name: Odkaz
   items:
     - name: Sady pravidel
-      href: rule-set-reference.md
       items:
+        - name: Sady pravidel
+          href: rule-set-reference.md
         - name: Sada pravidel Všechna pravidla
           href: all-rules-rule-set.md
         - name: Sada pravidel Základní pravidla správnosti pro spravovaný kód
@@ -158,20 +166,23 @@
         - name: Sada pravidel Pravidla zabezpečení pro spravovaný kód
           href: security-rules-rule-set-for-managed-code.md
     - name: Upozornění Analýzy kódu pro spravovaný kód
-      href: code-analysis-for-managed-code-warnings.md
       items:
+        - name: Upozornění Analýzy kódu pro spravovaný kód
+          href: code-analysis-for-managed-code-warnings.md
         - name: Upozornění Analýzy kódu pro spravovaný kód podle CheckId
           href: code-analysis-warnings-for-managed-code-by-checkid.md
         - name: Upozornění kryptografie
-          href: cryptography-warnings.md
           items:
+            - name: Upozornění kryptografie
+              href: cryptography-warnings.md
             - name: 'CA5350: Nepoužívejte slabé kryptografické algoritmy'
               href: ca5350-do-not-use-weak-cryptographic-algorithms.md
             - name: 'CA5351: Nepoužívejte poškozené kryptografické algoritmy'
               href: ca5351-do-not-use-broken-cryptographic-algorithms.md
         - name: Upozornění ohledně návrhu
-          href: design-warnings.md
           items:
+            - name: Upozornění ohledně návrhu
+              href: design-warnings.md
             - name: 'CA1000: Nedeklarujte statické členy v obecných typech'
               href: ca1000-do-not-declare-static-members-on-generic-types.md
             - name: 'CA1001: Typy, které vlastní uvolnitelné pole, by měly být uvolnitelné'
@@ -297,8 +308,9 @@
             - name: 'CA2210: Sestavení by měla mít platné silné názvy'
               href: ca2210-assemblies-should-have-valid-strong-names.md
         - name: Upozornění globalizace
-          href: globalization-warnings.md
           items:
+            - name: Upozornění globalizace
+              href: globalization-warnings.md
             - name: 'CA1300: Určete MessageBoxOptions'
               href: ca1300-specify-messageboxoptions.md
             - name: 'CA1301: Vyhněte se duplicitním akcelerátorům'
@@ -322,8 +334,9 @@
             - name: 'CA2101: Určete zařazování pro argumenty řetězce volání nespravovaného kódu'
               href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
         - name: Upozornění interoperability
-          href: interoperability-warnings.md
           items:
+            - name: Upozornění interoperability
+              href: interoperability-warnings.md
             - name: 'CA1400: Vstupní body volání nespravovaného kódu by měly existovat'
               href: ca1400-p-invoke-entry-points-should-exist.md
             - name: 'CA1401: Volání nespravovaných kódů by neměla být viditelná'
@@ -357,8 +370,9 @@
             - name: 'CA1415: Deklarujte správně volání nespravovaných kódů'
               href: ca1415-declare-p-invokes-correctly.md
         - name: Upozornění udržovatelnosti
-          href: maintainability-warnings.md
           items:
+            - name: Upozornění udržovatelnosti
+              href: maintainability-warnings.md
             - name: 'CA1500: Názvy proměnných by neměly odpovídat názvům polí'
               href: ca1500-variable-names-should-not-match-field-names.md
             - name: 'CA1501: Vyhněte se nadměrné dědičnosti'
@@ -372,15 +386,17 @@
             - name: 'CA1506: Vyhněte se nadměrnému párování tříd'
               href: ca1506-avoid-excessive-class-coupling.md
         - name: Upozornění mobility
-          href: mobility-warnings.md
           items:
+            - name: Upozornění mobility
+              href: mobility-warnings.md
             - name: 'CA1600: Nepoužívejte prioritu nečinného procesu'
               href: ca1600-do-not-use-idle-process-priority.md
             - name: 'CA1601: Nepoužívejte časovače, které zabraňují změně stavu napájení'
               href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
         - name: Upozornění na pojmenování
-          href: naming-warnings.md
           items:
+            - name: Upozornění na pojmenování
+              href: naming-warnings.md
             - name: 'CA1700: Nepojmenovávejte výčty hodnot ''Reserved'''
               href: ca1700-do-not-name-enum-values-reserved.md
             - name: 'CA1701: Malá a velká písmena složených slov řetězců prostředků by měla být použita správně'
@@ -428,8 +444,9 @@
             - name: 'CA1726: Použijte upřednostňované výrazy'
               href: ca1726-use-preferred-terms.md
         - name: Upozornění výkonu
-          href: performance-warnings.md
           items:
+            - name: Upozornění výkonu
+              href: performance-warnings.md
             - name: 'CA1800: Nepřetypujte zbytečně'
               href: ca1800-do-not-cast-unnecessarily.md
             - name: 'CA1802: Použijte literály, kde je to vhodné'
@@ -463,8 +480,9 @@
             - name: 'CA1824: Označte sestavení pomocí NeutralResourcesLanguageAttribute'
               href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
         - name: Upozornění přenositelnosti
-          href: portability-warnings.md
           items:
+            - name: Upozornění přenositelnosti
+              href: portability-warnings.md
             - name: 'CA1900: Pole typů hodnot by měla být přenosná'
               href: ca1900-value-type-fields-should-be-portable.md
             - name: 'CA1901: Deklarace volání nespravovaného kódu by měla být přenosná'
@@ -472,8 +490,9 @@
             - name: 'CA1903: Používejte jen rozhraní API z cílové architektury'
               href: ca1903-use-only-api-from-targeted-framework.md
         - name: Upozornění spolehlivosti
-          href: reliability-warnings.md
           items:
+            - name: Upozornění spolehlivosti
+              href: reliability-warnings.md
             - name: 'CA2000: Uvolňujte objekty před ztrátou oboru'
               href: ca2000-dispose-objects-before-losing-scope.md
             - name: 'CA2001: Vyhněte se volání problematických metod'
@@ -489,8 +508,9 @@
             - name: 'CA2007: Nečekejte přímo na úlohu'
               href: ca2007-do-not-directly-await-task.md
         - name: Upozornění zabezpečení
-          href: security-warnings.md
           items:
+            - name: Upozornění zabezpečení
+              href: security-warnings.md
             - name: 'CA2100: Zkontrolujte chyby zabezpečení u dotazů SQL'
               href: ca2100-review-sql-queries-for-security-vulnerabilities.md
             - name: 'CA2102: Zachycujte výjimky bez CLSCompliant v obecných obslužných rutinách'
@@ -587,6 +607,20 @@
               href: ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md
             - name: 'CA2302: Než zavoláte BinaryFormatter.Deserialize, ujistěte se, že je nastavený BinaryFormatter.Binder'
               href: ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md
+            - name: 'CA2305: Nepoužívat nezabezpečený deserializátor LosFormatter'
+              href: ca2305-do-not-use-insecure-deserializer-losformatter.md
+            - name: 'CA2310: Nepoužívat nezabezpečený deserializátor NetDataContractSerializer'
+              href: ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md
+            - name: 'CA2311: Nedeserializovat dříve, než se nastaví NetDataContractSerializer.Binder'
+              href: ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md
+            - name: 'CA2312: Před deserializací se ujistěte, že je nastavený NetDataContractSerializer.Binder'
+              href: ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md
+            - name: 'CA2315: Nepoužívat nezabezpečený deserializátor ObjectStateFormatter'
+              href: ca2315-do-not-use-insecure-deserializer-objectstateformatter.md
+            - name: 'CA2321: Nedeserializovat se třídou JavaScriptSerializer pomocí třídy SimpleTypeResolver'
+              href: ca2321.md
+            - name: 'CA2322: Před deserializaci se ujistěte se, že třída JavaScriptSerializer není inicializována pomocí třídy SimpleTypeResolver'
+              href: ca2322.md
             - name: 'CA3001: Zkontrolujte ohrožení zabezpečení injektáží SQL v kódu'
               href: ca3001-review-code-for-sql-injection-vulnerabilities.md
             - name: 'CA3002: Zkontrolujte ohrožení zabezpečení proti XSS v kódu'
@@ -620,8 +654,9 @@
             - name: 'CA3147: Označte obslužné rutiny příkazů pomocí ValidateAntiForgeryToken'
               href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
         - name: Upozornění využití
-          href: usage-warnings.md
           items:
+            - name: Upozornění využití
+              href: usage-warnings.md
             - name: 'CA1801: Zkontrolujte nepoužité parametry'
               href: ca1801-review-unused-parameters.md
             - name: 'CA1806: Neignorujte výsledky metody'
@@ -711,8 +746,9 @@
         - name: Chyby zásad Analýzy kódu
           href: code-analysis-policy-errors.md
     - name: Upozornění kontrolních mechanismů C++ Core Guidelines
-      href: code-analysis-for-cpp-corecheck.md
       items:
+        - name: Upozornění kontrolních mechanismů C++ Core Guidelines
+          href: code-analysis-for-cpp-corecheck.md
         - name: C26400
           href: C26400.md
         - name: C26401
@@ -868,8 +904,9 @@
         - name: C26498
           href: C26498.md
     - name: Upozornění Analýzy kódu pro C/C++
-      href: code-analysis-for-c-cpp-warnings.md
       items:
+        - name: Upozornění Analýzy kódu pro C/C++
+          href: code-analysis-for-c-cpp-warnings.md
         - name: C1250
           href: c1250.md
         - name: C1251
@@ -1451,8 +1488,9 @@
         - name: C28351
           href: c28351.md
     - name: Chyby aplikace Analýzy kódu
-      href: code-analysis-application-errors.md
       items:
+        - name: Chyby aplikace Analýzy kódu
+          href: code-analysis-application-errors.md
         - name: CA0001
           href: ca0001.md
         - name: CA0051

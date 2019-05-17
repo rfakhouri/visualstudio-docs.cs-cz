@@ -1,16 +1,21 @@
 - name: Nástroje XML v sadě Visual Studio
-  href: xml-tools-in-visual-studio.md
   items:
+    - name: Přehled
+      href: xml-tools-in-visual-studio.md
     - name: Editor XML
-      href: xml-editor.md
       items:
+        - name: Přehled
+          displayName: XML editor
+          href: xml-editor.md
         - name: Ověření dokumentu XML
           href: xml-document-validation.md
         - name: Funkce IntelliSense editoru XML
           href: xml-editor-intellisense-features.md
         - name: Fragmenty kódu XML
-          href: xml-snippets.md
           items:
+            - name: Přehled
+              displayName: XML snippets overview
+              href: xml-snippets.md
             - name: Použití fragmentů kódu XML
               href: how-to-use-xml-snippets.md
             - name: Generování fragmentu kódu XML ze schématu XML
@@ -44,11 +49,14 @@
         - name: Dialogové okno Schémata XML
           href: xml-schemas-dialog-box.md
     - name: Návrhář schématu XML
-      href: xml-schema-designer.md
       items:
+        - name: Přehled
+          displayName: XML Schema Designer overview
+          href: xml-schema-designer.md
         - name: Průzkumník schémat XML
-          href: xml-schema-explorer.md
           items:
+            - name: Průzkumník schémat XML
+              href: xml-schema-explorer.md
             - name: Hledání v sadě schémat
               href: searching-the-schema-set.md
             - name: 'Řazení, filtrování a seskupování'
@@ -57,9 +65,10 @@
               href: context-menus-xml-schema-explorer.md
             - name: Integrace literálů XML
               href: integration-of-xml-literals-with-xml-schema-explorer.md
-        - name: Pracovní prostor Návrháře schémat XML
-          href: xml-schema-designer-workspace.md
+        - name: Pracovní prostor
           items:
+            - name: Přehled zobrazení
+              href: xml-schema-designer-workspace.md
             - name: Počáteční zobrazení
               href: start-view.md
             - name: Zobrazení modelu obsahu
@@ -91,17 +100,19 @@
             - name: Tisk diagramů
               href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
             - name: Ukázkové soubory XSD
-              href: sample-xsd-files.md
               items:
                 - name: Jednoduché schéma
+                  displayName: Sample XSD files
                   href: sample-xsd-file-simple-schema.md
                 - name: Schéma nákupní objednávky
                   href: sample-xsd-file-purchase-order-schema.md
                 - name: Relace
                   href: sample-xsd-file-relationships.md
     - name: Ladění XSLT
-      href: debugging-xslt.md
       items:
+        - name: Přehled
+          displayName: XSLT debugging
+          href: debugging-xslt.md
         - name: 'Návod: Ladění šablony stylů XSLT'
           href: walkthrough-debug-an-xslt-style-sheet.md
         - name: Vyhodnocení výrazu XPath

@@ -12,10 +12,11 @@
 ### [Stažení softwaru](subscriber-downloads.md)
 #### [Seznam dostupného softwaru ke stažení](software-download-list.md)
 ### [Získání a správa kódů Product Key](product-keys.md)
+### [Visual Studio s GitHub Enterprise](access-github.md)
+### [Výhody pro předplatitele](subscriber-benefits.md)
 ### Visual Studio Dev Essentials
 #### [Zapojení se do programu Visual Studio Dev Essentials](join-dev-essentials.md)
 #### [Výslovné odhlášení z programu Visual Studio Dev Essentials](leave-vsde.md)
-### [Výhody pro předplatitele](subscriber-benefits.md)
 ## Využití výhod pro předplatitele
 ### Nástroje
 #### [Integrované vývojové prostředí sady Visual Studio](vs-ide-benefit.md)
@@ -72,6 +73,7 @@
 #### [Maximální využití](maximum-usage.md)
 #### [Předplatná po konci platnosti](handle-expired-license.md)
 #### [Předplatitelé s přihlášením pomocí osobního e-mailu](personal-email-sign-ins.md)
+### [Správa sady Visual Studio s GitHub Enterprise](assign-github.md)
 ## Získání předplatných sady Visual Studio
 ### [Porovnání možností předplatného](https://visualstudio.microsoft.com/vs/pricing)
 ### Nákup cloudových předplatných

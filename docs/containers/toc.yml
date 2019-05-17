@@ -12,9 +12,9 @@
     - name: Kurzy
       expanded: true
       items:
-        - name: 'Kurz: Vícekontejnerová aplikace s použitím nástroje Docker Compose'
+        - name: Vícekontejnerová aplikace s použitím nástroje Docker Compose
           href: tutorial-multicontainer.md
-        - name: 'Kurz: Kubernetes v sadě ‏Visual Studio'
+        - name: Kubernetes v sadě ‏Visual Studio
           href: tutorial-kubernetes-tools.md
     - name: Postupy
       items:
@@ -24,6 +24,8 @@
           href: hosting-web-apps-in-docker.md
         - name: Nasazení do Azure App Service
           href: deploy-app-service.md
+        - name: Zobrazení a diagnostika kontejnerů
+          href: view-and-diagnose-containers.md
         - name: Konfigurace Nástrojů kontejneru
           href: container-tools-configure.md
     - name: Poradce při potížích

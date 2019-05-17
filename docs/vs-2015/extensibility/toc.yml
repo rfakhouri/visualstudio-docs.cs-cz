@@ -4,52 +4,30 @@
   href: installing-the-visual-studio-sdk.md
 - name: Začínáme s vývojem rozšíření sady Visual Studio
   href: starting-to-develop-visual-studio-extensions.md
-- name: 'Vytvořte své první rozšíření: Hello World'
-  href: extensibility-hello-world.md
-- name: Novinky – Visual Studio 2019 SDK
-  items:
-    - name: Novinky – Visual Studio 2019 SDK
-      href: whats-new-visual-studio-2019-sdk.md
-    - name: Automaticky synchronně načítaná rozšíření
-      href: synchronously-autoloaded-extensions.md
-- name: Novinky – Visual Studio 2017 SDK
-  items:
-    - name: Novinky – Visual Studio 2017 SDK
-      href: what-s-new-in-the-visual-studio-2017-sdk.md
-    - name: Nejnovější změny v možnostech rozšíření
-      href: breaking-changes-2017.md
-    - name: Podpora Ngen ve VSIX v. 3
-      href: ngen-support.md
-    - name: Instalace mimo složku rozšíření
-      href: set-install-root.md
-    - name: Migrace registrace ladicího programu modelu COM
-      href: migrate-debugger-com-registration.md
-    - name: Nejčastější dotazy
-      href: faq-2017.md
-- name: Migrace projektů rozšíření do sady Visual Studio 2017
-  href: how-to-migrate-extensibility-projects-to-visual-studio-2017.md
-- name: Zpětná rozšíření pro Visual Studio
-  href: how-to-roundtrip-VSIXs.md
-- name: Protokol jazyka serveru
-  items:
-    - name: Protokol jazyka serveru
-      href: language-server-protocol.md
-    - name: Přidání rozšíření pro protokol jazyka serveru
-      href: adding-an-lsp-extension.md
-- name: Otevřít složku
-  items:
-    - name: Otevřít složku
-      href: open-folder.md
-    - name: Pracovní prostory
-      href: workspaces.md
-    - name: Kontexty souborů
-      href: workspace-file-contexts.md
-    - name: Indexování
-      href: workspace-indexing.md
-    - name: Jazykové služby
-      href: workspace-language-services.md
-    - name: Sestavení
-      href: workspace-build.md
+- name: Novinky v sadě Visual Studio 2015 SDK
+  href: what-s-new-in-the-visual-studio-2015-sdk.md
+- name: Migrace projektů rozšíření do sady Visual Studio 2015
+  href: how-to-migrate-extensibility-projects-to-visual-studio-2015.md
+- name: 'Časté otázky: Převádění doplňků na rozšíření VSPackage'
+  href: faq-converting-add-ins-to-vspackage-extensions.md
+- name: Pravidla pro práci s uživatelským prostředím sady Visual Studio
+  href: ux-guidelines/visual-studio-user-experience-guidelines.md
+- name: Řešení problémů s nastavením DPI
+  href: addressing-dpi-issues2.md
+- name: Služba vyhledávání a katalog obrázků
+  href: image-service-and-catalog.md
+- name: Správa více vláken ve spravovaném kódu
+  href: managing-multiple-threads-in-managed-code.md
+- name: Rozšíření připojených služeb
+  href: extending-connected-services.md
+- name: Práce se sadou Visual Studio SDK
+  href: internals/inside-the-visual-studio-sdk.md
+- name: Podpora sady Visual Studio SDK
+  href: support-for-the-visual-studio-sdk.md
+- name: Rozšiřitelnost v sadě Visual Studio
+  href: extensibility-in-visual-studio.md
+- name: Povolení sady Azure SDK
+  href: enabling-the-azure-sdk.md
 - name: Rozšiřování nabídek a příkazů
   items:
     - name: Rozšiřování nabídek a příkazů
@@ -76,9 +54,9 @@
       href: updating-the-user-interface.md
     - name: Lokalizace příkazů nabídky
       href: localizing-menu-commands.md
-- name: Přidávání komentářů k panelům nástrojů
+- name: Přidávání příkazů na panely nástrojů
   items:
-    - name: Přidávání komentářů k panelům nástrojů
+    - name: Přidávání příkazů na panely nástrojů
       href: adding-commands-to-toolbars.md
     - name: Přidání panelu nástrojů
       href: adding-a-toolbar.md
@@ -112,7 +90,7 @@
       href: subscribing-to-an-event.md
     - name: Rozšíření okna Výstup
       href: extending-the-output-window.md
-    - name: 'Rozšíření vlastností, seznamu úkolů a oken Výstup a Možnosti'
+    - name: 'Rozšíření vlastností, seznamu úkolů, oken Výstup a Možnosti'
       href: extending-the-properties-task-list-output-and-options-windows.md
     - name: Vytváření a správa modálních dialogových oken
       href: creating-and-managing-modal-dialog-boxes.md
@@ -136,45 +114,43 @@
           href: language-service-and-editor-extension-points.md
         - name: Importy do editoru
           href: editor-imports.md
-        - name: Podpora EditorConfig
-          href: supporting-editorconfig.md
-        - name: 'Návod: Propojení typu obsahu s příponou názvu souboru'
+        - name: Propojení typu obsahu s příponou názvu souboru
           href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-        - name: 'Návod: Vytvoření okrajového piktogramu'
+        - name: Vytvoření okrajového piktogramu
           href: walkthrough-creating-a-margin-glyph.md
-        - name: 'Návod: Přizpůsobení zobrazení textu'
+        - name: Přizpůsobení zobrazení textu
           href: walkthrough-customizing-the-text-view.md
-        - name: 'Návod: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců)'
+        - name: 'Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců)'
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-        - name: 'Návod: Zvýraznění textu'
+        - name: Zvýraznění textu
           href: walkthrough-highlighting-text.md
-        - name: 'Návod: Sbalování'
+        - name: Sbalování
           href: walkthrough-outlining.md
-        - name: 'Návod: Zobrazení párových složených závorek'
+        - name: Zobrazení párových složených závorek
           href: walkthrough-displaying-matching-braces.md
-        - name: 'Návod: Zobrazení popisů tlačítek s rychlými informacemi'
+        - name: Zobrazení popisů tlačítek s rychlými informacemi
           href: walkthrough-displaying-quickinfo-tooltips.md
-        - name: 'Návod: Zobrazení vyhrazené nápovědy'
+        - name: Zobrazení vyhrazené nápovědy
           href: walkthrough-displaying-signature-help.md
-        - name: 'Návod: Zobrazení dokončování příkazů'
+        - name: Zobrazení dokončování příkazů
           href: walkthrough-displaying-statement-completion.md
-        - name: 'Návod: Implementace fragmentů kódu'
+        - name: Implementace fragmentů kódu
           href: walkthrough-implementing-code-snippets.md
-        - name: 'Návod: Zobrazení návrhů v podobě žárovky'
+        - name: Zobrazení návrhů v podobě žárovky
           href: walkthrough-displaying-light-bulb-suggestions.md
-        - name: 'Návod: Použití příkazů prostředí s rozšířením editoru'
+        - name: Použití příkazů prostředí s rozšířením editoru
           href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-        - name: 'Návod: Použití klávesové zkratky s rozšířením editoru'
+        - name: Použití klávesové zkratky s rozšířením editoru
           href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-        - name: 'Návod: Přístup k objektu DTE z rozšíření editoru'
+        - name: Přístup k objektu DTE z rozšíření editoru
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
     - name: Vytváření vlastních editorů a návrhářů
       items:
         - name: Vytváření vlastních editorů a návrhářů
           href: creating-custom-editors-and-designers.md
-        - name: 'Návod: Vytvoření vlastního editoru'
+        - name: Vytvoření vlastního editoru
           href: walkthrough-creating-a-custom-editor.md
-        - name: 'Návod: Přidání funkcí do vlastního editoru'
+        - name: Přidání funkcí do vlastního editoru
           href: walkthrough-adding-features-to-a-custom-editor.md
         - name: Inicializace návrháře a konfigurace metadat
           href: designer-initialization-and-metadata-configuration.md
@@ -202,8 +178,6 @@
               href: how-to-open-standard-editors.md
             - name: Otevření editorů pro otevřené dokumenty
               href: how-to-open-editors-for-open-documents.md
-        - name: Průvodce migrací rozšiřitelnosti návrhářů XAML
-          href: xaml-designer-extensibility-migration.md
 - name: Rozšíření projektů
   items:
     - name: Rozšíření projektů
@@ -224,9 +198,9 @@
       href: persisting-the-property-of-a-project-item.md
     - name: Správa projektů univerzálních aplikací pro Windows
       href: managing-universal-windows-projects.md
-- name: Rozšíření řešení
+- name: Řešení rozšíření
   items:
-    - name: Rozšíření řešení
+    - name: Řešení rozšíření
       href: extending-solutions.md
     - name: Rozšíření filtru Průzkumníka řešení
       href: extending-the-solution-explorer-filter.md
@@ -236,10 +210,6 @@
   items:
     - name: Vytváření vlastních šablon projektů a položek
       href: creating-custom-project-and-item-templates.md
-    - name: Upgrade vlastních šablon projektů a položek pro Visual Studio 2017
-      href: upgrading-custom-project-and-item-templates-for-visual-studio-2017.md
-    - name: Řešení potíží se zjišťováním šablon
-      href: troubleshooting-template-discovery.md
     - name: Použití průvodců se šablonami projektů
       href: how-to-use-wizards-with-project-templates.md
     - name: Odkaz na schéma šablon sady Visual Studio
@@ -252,10 +222,8 @@
           href: assembly-element-visual-studio-templates.md
         - name: Element sestavení (rozšíření průvodce pro šablony sady Visual Studio)
           href: assembly-element-visual-studio-template-wizard-extension.md
-        - name: BuildOnLoad – atribut a element (šablony sady Visual Studio)
-          href: buildonload-visual-studio-templates.md
-        - name: BuildProjectOnLoad – element (šablony sady Visual Studio)
-          href: buildprojectonload-element-visual-studio-templates.md
+        - name: BuildProjectOnLoad (šablony sady Visual Studio)
+          href: buildprojectonload-visual-studio-templates.md
         - name: CreateInPlace (šablony sady Visual Studio)
           href: createinplace-visual-studio-templates.md
         - name: CreateNewFolder – element (šablony sady Visual Studio)
@@ -318,10 +286,6 @@
           href: references-element-visual-studio-templates.md
         - name: RequiredFrameworkVersion – element (šablony sady Visual Studio)
           href: requiredframeworkversion-element-visual-studio-templates.md
-        - name: RequiredPlatformVersion – element (šablony sady Visual Studio)
-          href: requiredplatformversion-element-visual-studio-templates.md
-        - name: SDKReference – element (šablony sady Visual Studio)
-          href: sdkreference-element-visual-studio-templates.md
         - name: ShowByDefault (šablony sady Visual Studio)
           href: showbydefault-visual-studio-templates.md
         - name: SolutionFolder – element (šablony sady Visual Studio)
@@ -334,8 +298,6 @@
           href: supportslanguagedropdown-element-visual-studio-templates.md
         - name: SupportsMasterPage – element (šablony sady Visual Studio)
           href: supportsmasterpage-element-visual-studio-templates.md
-        - name: TargetPlatformName – element (šablony sady Visual Studio)
-          href: targetplatformname-element-visual-studio-templates.md
         - name: TemplateContent – element (šablony sady Visual Studio)
           href: templatecontent-element-visual-studio-templates.md
         - name: TemplateData – element (šablony sady Visual Studio)
@@ -350,8 +312,14 @@
           href: wizarddata-element-visual-studio-templates.md
         - name: WizardExtension – element (šablony sady Visual Studio)
           href: wizardextension-element-visual-studio-templates.md
-    - name: Odkaz na schéma manifestu šablon sady Visual Studio
-      href: visual-studio-template-manifest-schema-reference.md
+        - name: BuildProjectOnLoad – element (šablony sady Visual Studio)
+          href: buildprojectonload-element-visual-studio-templates.md
+        - name: RequiredPlatformVersion – element (šablony sady Visual Studio)
+          href: requiredplatformversion-element-visual-studio-templates.md
+        - name: SDKReference – element (šablony sady Visual Studio)
+          href: sdkreference-element-visual-studio-templates.md
+        - name: TargetPlatformName – element (šablony sady Visual Studio)
+          href: targetplatformname-element-visual-studio-templates.md
 - name: Rozšíření uživatelských nastavení a možností
   items:
     - name: Rozšíření uživatelských nastavení a možností
@@ -390,73 +358,21 @@
       items:
         - name: Vytvoření vlastní úvodní stránky
           href: creating-a-custom-start-page.md
-        - name: 'Návod: Přidání vlastního souboru XAML na úvodní stránku'
+        - name: Přidání vlastního souboru XAML na úvodní stránku
           href: walkthrough-adding-custom-xaml-to-the-start-page.md
         - name: Přidání uživatelského ovládacího prvku na úvodní stránku
           href: adding-user-control-to-the-start-page.md
         - name: Přidání příkazů sady Visual Studio na úvodní stránku
           href: adding-visual-studio-commands-to-a-start-page.md
-        - name: 'Návod: Ukládání uživatelských nastavení na úvodní stránce'
+        - name: Ukládání uživatelských nastavení na úvodní stránce
           href: walkthrough-saving-user-settings-on-a-start-page.md
         - name: Nasazení vlastních úvodních stránek
           href: deploying-custom-start-pages.md
     - name: Použití protokolu aktivit
       href: how-to-use-the-activity-log.md
-- name: Rozšiřitelnost projektu C++ v sadě Visual Studio
-  href: visual-cpp-project-extensibility.md
-- name: Pravidla pro práci s uživatelským prostředím sady Visual Studio
+- name: Používání a poskytování služeb
   items:
-    - name: Pravidla pro práci s uživatelským prostředím sady Visual Studio
-      href: ux-guidelines/visual-studio-user-experience-guidelines.md
-    - name: Základy uživatelského prostředí
-      href: ux-guidelines/ux-essentials-for-visual-studio.md
-    - name: Písma a formátování
-      href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
-    - name: Barvy a styly
-      items:
-        - name: Barvy a styly
-          href: ux-guidelines/colors-and-styling-for-visual-studio.md
-        - name: Sdílené barvy
-          href: ux-guidelines/shared-colors-for-visual-studio.md
-        - name: Referenční informace k hodnotám barev
-          href: ux-guidelines/color-value-reference-for-visual-studio.md
-    - name: Obrázky a ikony
-      items:
-        - name: Obrázky a ikony
-          href: ux-guidelines/images-and-icons-for-visual-studio.md
-        - name: Slovník vizuálního jazyka
-          href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
-    - name: Nabídky a příkazy
-      href: ux-guidelines/menus-and-commands-for-visual-studio.md
-    - name: Vzory interakcí
-      items:
-        - name: Vzory interakcí
-          href: ux-guidelines/interaction-patterns-for-visual-studio.md
-        - name: Vzory aplikací
-          href: ux-guidelines/application-patterns-for-visual-studio.md
-        - name: Vzory běžných ovládacích prvků
-          href: ux-guidelines/common-control-patterns-for-visual-studio.md
-        - name: Složené vzory
-          href: ux-guidelines/composite-patterns-for-visual-studio.md
-    - name: Text a nápověda uživatelského rozhraní
-      href: ux-guidelines/ui-text-and-help-for-visual-studio.md
-    - name: Rozložení dialogového okna
-      href: ux-guidelines/layout-for-visual-studio.md
-    - name: Oznámení a průběh
-      href: ux-guidelines/notifications-and-progress-for-visual-studio.md
-    - name: Animace
-      href: ux-guidelines/animations-for-visual-studio.md
-    - name: Nástroje pro vyhodnocení
-      href: ux-guidelines/evaluation-tools-for-visual-studio.md
-    - name: Podpora schopnosti rozpoznávat nastavení DPI monitoru
-      href: ux-guidelines/per-monitor-awareness-extenders.md
-- name: Řešení problémů s DPI
-  href: addressing-dpi-issues2.md
-- name: Služba vyhledávání a katalog obrázků
-  href: image-service-and-catalog.md
-- name: Využívání a poskytování služeb
-  items:
-    - name: Využívání a poskytování služeb
+    - name: Používání a poskytování služeb
       href: using-and-providing-services.md
     - name: Získání služby
       href: how-to-get-a-service.md
@@ -466,9 +382,9 @@
       href: how-to-provide-an-asynchronous-visual-studio-service.md
     - name: Řešení problémů se službami
       href: how-to-troubleshoot-services.md
-- name: Správa balíčků VSPackage
+- name: Správa rozšíření VSPackages
   items:
-    - name: Správa balíčků VSPackage
+    - name: Správa rozšíření VSPackages
       href: managing-vspackages.md
     - name: Experimentální instance
       href: the-experimental-instance.md
@@ -476,20 +392,52 @@
       href: registering-and-unregistering-vspackages.md
     - name: Načítání rozšíření VSPackages
       href: loading-vspackages.md
-    - name: Správa více vláken ve spravovaném kódu
-      href: managing-multiple-threads-in-managed-code.md
     - name: Použití AsyncPackage k načtení rozšíření VSPackages na pozadí
       href: how-to-use-asyncpackage-to-load-vspackages-in-the-background.md
     - name: Použití kontextu uživatelského rozhraní založeného na pravidlech pro rozšíření sady Visual Studio
       href: how-to-use-rule-based-ui-context-for-visual-studio-extensions.md
-    - name: Diagnostika výkonu rozšíření
-      href: how-to-diagnose-extension-performance.md
-    - name: Diagnostika zpoždění uživatelského rozhraní způsobených rozšířeními
-      href: how-to-diagnose-ui-delays-caused-by-extensions.md
     - name: Řešení potíží s rozšířením VSPackages
       href: troubleshooting-vspackages.md
-- name: Prostředí shell (integrované nebo izolované)
-  href: 'https://vspartner.com/pages/vsshells'
+- name: Prostředí (izolované nebo integrované)
+  items:
+    - name: Prostředí (izolované nebo integrované)
+      href: shell-isolated-or-integrated.md
+    - name: Izolované prostředí sady Visual Studio
+      items:
+        - name: Izolované prostředí sady Visual Studio
+          href: visual-studio-isolated-shell.md
+        - name: Vytvoření základní aplikace izolovaného prostředí
+          href: walkthrough-creating-a-basic-isolated-shell-application.md
+        - name: Přizpůsobení izolovaného prostředí
+          href: customizing-the-isolated-shell.md
+        - name: Rozšíření izolovaného prostředí
+          href: extending-the-isolated-shell.md
+        - name: Prvky izolovaného prostředí
+          items:
+            - name: Prvky izolovaného prostředí
+              href: elements-of-the-isolated-shell.md
+            - name: Soubory .Vsct
+              href: modifying-the-isolated-shell-by-using-the-dot-vsct-file.md
+            - name: Soubory .Pkgundef
+              href: modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md
+            - name: Soubory .Pkgdef
+              href: modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md
+            - name: Náhradní řetězce použité v souborech .Pkgdef a .Pkgundef
+              href: substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md
+            - name: Parametry vstupních bodů izolovaného prostředí (C++)
+              href: isolated-shell-entry-point-parameters-cpp.md
+            - name: Identifikátory GUID balíčků funkcí sady Visual Studio
+              href: package-guids-of-visual-studio-features.md
+    - name: Prostředí sady Visual Studio Shell (integrované)
+      href: visual-studio-shell-integrated.md
+    - name: Distribuce aplikací izolovaného prostředí
+      items:
+        - name: Distribuce aplikací izolovaného prostředí
+          href: distributing-isolated-shell-applications.md
+        - name: Instalace aplikací izolovaného prostředí
+          href: installing-an-isolated-shell-application.md
+        - name: Pokyny pro údržbu aplikací izolovaného prostředí
+          href: servicing-guidelines-for-isolated-shell-applications.md
 - name: Odesílání rozšíření sady Visual Studio
   items:
     - name: Odesílání rozšíření sady Visual Studio
@@ -498,12 +446,8 @@
       href: vsix-project-template.md
     - name: Začínáme se šablonou projektu VSIX
       href: getting-started-with-the-vsix-project-template.md
-    - name: 'Návod: Publikování rozšíření sady Visual Studio'
+    - name: Publikování rozšíření sady Visual Studio
       href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: 'Návod: Publikování rozšíření sady Visual Studio pomocí příkazového řádku'
-      href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
-    - name: 'Návod: Vytvoření balíčku rozšíření'
-      href: walkthough-create-extension-pack.md
     - name: Přidání závislosti k balíčku VSIX
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: Anatomie balíčku VSIX
@@ -520,9 +464,23 @@
       items:
         - name: Lokalizace balíčků VSIX
           href: localizing-vsix-packages.md
-        - name: VSIX Language Pack Schema 2.0 – referenční informace
-          href: vsix-language-pack-schema-2-0-reference.md
-    - name: Aktualizace rozšíření sady Visual Studio
+        - name: Referenční dokumentace schématu jazykové sady VSX
+          items:
+            - name: Referenční dokumentace schématu jazykové sady VSX
+              href: vsx-language-pack-schema-reference.md
+            - name: Element VSIX LanguagePack
+              items:
+                - name: Element VSIX LanguagePack
+                  href: vsixlanguagepack-element-vsix-language-pack-schema.md
+                - name: Element LocalizedName
+                  href: localizedname-element-vsix-language-pack-schema.md
+                - name: Element LocalizedDescription
+                  href: localizeddescription-element-vsix-language-pack-schema.md
+                - name: Element MoreInfoURL
+                  href: moreinfourl-element-vsix-language-pack-schema.md
+                - name: Element License
+                  href: license-element-vsix-language-pack-schema.md
+    - name: Aktualizace rozšíření
       href: how-to-update-a-visual-studio-extension.md
     - name: Příprava rozšíření pro nasazení Instalační služby systému Windows
       href: preparing-extensions-for-windows-installer-deployment.md
@@ -554,14 +512,124 @@
               href: registering-verbs-for-file-name-extensions.md
             - name: Správa přidružení souborů vedle sebe
               href: managing-side-by-side-file-associations.md
-    - name: Vyhledání sady Visual Studio
-      href: locating-visual-studio.md
-    - name: Spuštění sady Visual Studio pomocí DTE
-      href: launch-visual-studio-dte.md
-- name: Práce se sadou Visual Studio SDK
-  href: internals/toc.yml
-- name: Podpora sady Visual Studio SDK
-  href: support-for-the-visual-studio-sdk.md
+- name: Archivace
+  items:
+    - name: Archivace
+      href: archive.md
+    - name: Zastaralá rozhraní v editoru
+      items:
+        - name: Zastaralá rozhraní v editoru
+          href: legacy-interfaces-in-the-editor.md
+        - name: Přizpůsobení zastaralého kódu editoru
+          href: adapting-legacy-code-to-the-editor.md
+        - name: Nové nebo změněné chování adaptérů editoru
+          href: new-or-changed-behavior-with-editor-adapters.md
+        - name: Práce v základním editoru
+          href: inside-the-core-editor.md
+        - name: Vytvoření instance základního editoru pomocí zastaralého rozhraní API
+          href: instantiating-the-core-editor-by-using-the-legacy-api.md
+        - name: Objekty pro vytváření editoru
+          href: editor-factories.md
+        - name: Registrace typů souborů editoru
+          href: how-to-register-editor-file-types.md
+        - name: Vytvoření základního editoru a registrace typu souboru editoru
+          href: walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md
+        - name: Poskytnutí kontextu pro editory
+          href: how-to-provide-context-for-editors.md
+        - name: Jazykové služby a základní editor
+          items:
+            - name: Jazykové služby a základní editor
+              href: language-services-and-the-core-editor.md
+            - name: Poskytnutí kontextu jazykové služby pomocí zastaralého rozhraní API
+              href: providing-a-language-service-context-by-using-the-legacy-api.md
+            - name: Hostování technologie IntelliSense
+              href: intellisense-hosting.md
+            - name: Obsažené jazyky
+              href: contained-languages.md
+        - name: Přístup k vyrovnávací paměti textu pomocí zastaralého rozhraní API
+          items:
+            - name: Přístup k vyrovnávací paměti textu pomocí zastaralého rozhraní API
+              href: accessing-the-text-buffer-by-using-the-legacy-api.md
+            - name: Události vyrovnávací paměti textu v zastaralém rozhraní API
+              href: text-buffer-events-in-the-legacy-api.md
+            - name: Registrace událostí vyrovnávací paměti textu pomocí zastaralého rozhraní API
+              href: how-to-register-for-text-buffer-events-with-the-legacy-api.md
+        - name: Přístup k textovému zobrazení pomocí zastaralého rozhraní API
+          items:
+            - name: Přístup k textovému zobrazení pomocí zastaralého rozhraní API
+              href: accessing-thetext-view-by-using-the-legacy-api.md
+            - name: Změna nastavení zobrazení pomocí zastaralého rozhraní API
+              href: changing-view-settings-by-using-the-legacy-api.md
+            - name: Použití textového správce k monitorování globálního nastavení
+              href: using-the-text-manager-to-monitor-global-settings.md
+        - name: Přizpůsobení oken s kódem pomocí zastaralého rozhraní API
+          items:
+            - name: Přizpůsobení oken s kódem pomocí zastaralého rozhraní API
+              href: customizing-code-windows-by-using-the-legacy-api.md
+            - name: Hostování editoru v jiném editoru
+              href: how-to-host-an-editor-in-another-editor.md
+            - name: 'Aktivace událostí, když editor ztratí fokus'
+              href: how-to-fire-events-when-the-editor-loses-focus.md
+        - name: Přístup k textovým vrstvám pomocí zastaralého rozhraní API
+          href: accessing-text-layers-by-using-the-legacy-api.md
+        - name: Použití textových značek pomocí zastaralého rozhraní API
+          items:
+            - name: Použití textových značek pomocí zastaralého rozhraní API
+              href: using-text-markers-with-the-legacy-api.md
+            - name: Přidání standardních textových značek
+              href: how-to-add-standard-text-markers.md
+            - name: Implementace chybových značek
+              href: how-to-implement-error-markers.md
+            - name: Vytvoření vlastních textových značek
+              href: how-to-create-custom-text-markers.md
+            - name: Použití textových značek
+              href: how-to-use-text-markers.md
+        - name: Přizpůsobení ovládacích prvků a nabídek editoru pomocí zastaralého rozhraní API
+          items:
+            - name: Přizpůsobení ovládacích prvků a nabídek editoru pomocí zastaralého rozhraní API
+              href: customizing-editor-controls-and-menus-by-using-the-legacy-api.md
+            - name: Rozevírací panel
+              href: drop-down-bar.md
+            - name: Zpracování příkazů
+              href: command-handling.md
+            - name: Místní nabídky
+              href: context-menus.md
+            - name: Aktualizace stavového řádku
+              href: how-to-update-the-status-bar.md
+        - name: Správa příkazů Zpět a Znovu pomocí zastaralého rozhraní API
+          items:
+            - name: Správa příkazů Zpět a Znovu pomocí zastaralého rozhraní API
+              href: managing-undo-and-redo-by-using-the-legacy-api.md
+            - name: Implementace správy příkazu Zpět
+              href: how-to-implement-undo-management.md
+            - name: Vymazání zásobníku příkazu Zpět
+              href: how-to-clear-the-undo-stack.md
+            - name: Použití správy propojeného příkazu Zpět
+              href: how-to-use-linked-undo-management.md
+        - name: Implementace mechanismu Najít a nahradit
+          href: how-to-implement-the-find-and-replace-mechanism.md
+        - name: Potlačení oznámení o změně souboru
+          href: how-to-suppress-file-change-notifications.md
+        - name: Použití písem a barev
+          items:
+            - name: Použití písem a barev
+              href: using-fonts-and-colors.md
+            - name: Přehled písem a barev
+              href: font-and-color-overview.md
+            - name: Získání informací o písmu a barvě pro obarvení textu
+              href: getting-font-and-color-information-for-text-colorization.md
+            - name: Přístup k uloženým nastavením písem a barev
+              href: accessing-stored-font-and-color-settings.md
+            - name: Implementace vlastních kategorií a položek zobrazení
+              href: implementing-custom-categories-and-display-items.md
+            - name: Přístup k předdefinovaným písmům a barevnému schématu
+              href: how-to-access-the-built-in-fonts-and-color-scheme.md
+    - name: Okna nástrojů v registru
+      items:
+        - name: Okna nástrojů v registru
+          href: tool-windows-in-the-registry.md
+        - name: Konfigurace zobrazení oken nástrojů
+          href: tool-window-display-configuration.md
 - name: Referenční dokumentace sady Visual Studio SDK
   items:
     - name: Referenční dokumentace sady Visual Studio SDK
@@ -662,11 +730,11 @@
                   href: guidsymbol-element.md
                 - name: IDSymbol – element
                   href: idsymbol-element.md
-        - name: Podmíněné atributy XML schématu VSCT
+        - name: Podmíněné atributy
           href: vsct-xml-schema-conditional-attributes.md
-    - name: Identifikátory GUID a konstanty v sadě Visual Studio SDK
+    - name: Identifikátory GUID a konstanty
       items:
-        - name: Identifikátory GUID a konstanty v sadě Visual Studio SDK
+        - name: Identifikátory GUID a konstanty
           href: guids-and-constants-in-the-visual-studio-sdk.md
         - name: Identifikátory GUID integrovaného vývojového prostředí
           href: ide-guids.md
@@ -682,81 +750,81 @@
           items:
             - name: Funkce modulu plug-in správy zdrojového kódu v rozhraní API
               href: source-control-plug-in-api-functions.md
-            - name: SccAdd – funkce
+            - name: SccAdd
               href: sccadd-function.md
-            - name: SccAddFilesFromSCC – funkce
+            - name: SccAddFilesFromSCC
               href: sccaddfilesfromscc-function.md
-            - name: SccAddFromScc – funkce
+            - name: SccAddFromScc
               href: sccaddfromscc-function.md
-            - name: SccBackgroundGet – funkce
+            - name: SccBackgroundGet
               href: sccbackgroundget-function.md
-            - name: SccBeginBatch – funkce
+            - name: SccBeginBatch
               href: sccbeginbatch-function.md
-            - name: SccCheckin – funkce
+            - name: SccCheckin
               href: scccheckin-function.md
-            - name: SccCheckout – funkce
+            - name: SccCheckout
               href: scccheckout-function.md
-            - name: SccCloseProject – funkce
+            - name: SccCloseProject
               href: scccloseproject-function.md
-            - name: SccCreateSubProject – funkce
+            - name: SccCreateSubProject
               href: scccreatesubproject-function.md
-            - name: SccDiff – funkce
+            - name: SccDiff
               href: sccdiff-function.md
-            - name: SccDirDiff – funkce
+            - name: SccDirDiff
               href: sccdirdiff-function.md
-            - name: SccDirQueryInfo – funkce
+            - name: SccDirQueryInfo
               href: sccdirqueryinfo-function.md
-            - name: SccEndBatch – funkce
+            - name: SccEndBatch
               href: sccendbatch-function.md
-            - name: SccEnumChangedFiles – funkce
+            - name: SccEnumChangedFiles
               href: sccenumchangedfiles-function.md
-            - name: SccGet – funkce
+            - name: SccGet
               href: sccget-function.md
-            - name: SccGetCommandOptions – funkce
+            - name: SccGetCommandOptions
               href: sccgetcommandoptions-function.md
-            - name: SccGetEvents – funkce
+            - name: SccGetEvents
               href: sccgetevents-function.md
-            - name: SccGetExtendedCapabilities – funkce
+            - name: SccGetExtendedCapabilities
               href: sccgetextendedcapabilities-function.md
-            - name: SccGetParentProjectPath – funkce
+            - name: SccGetParentProjectPath
               href: sccgetparentprojectpath-function.md
-            - name: SccGetProjPath – funkce
+            - name: SccGetProjPath
               href: sccgetprojpath-function.md
-            - name: SccGetUserOption – funkce
+            - name: SccGetUserOption
               href: sccgetuseroption-function.md
-            - name: SccGetVersion – funkce
+            - name: SccGetVersion
               href: sccgetversion-function.md
-            - name: SccHistory – funkce
+            - name: SccHistory
               href: scchistory-function.md
-            - name: SccInitialize – funkce
+            - name: SccInitialize
               href: sccinitialize-function.md
-            - name: SccIsMultiCheckoutEnabled – funkce
+            - name: SccIsMultiCheckoutEnabled
               href: sccismulticheckoutenabled-function.md
-            - name: SccOpenProject – funkce
+            - name: SccOpenProject
               href: sccopenproject-function.md
-            - name: SccPopulateDirList – funkce
+            - name: SccPopulateDirList
               href: sccpopulatedirlist-function.md
-            - name: SccPopulateList – funkce
+            - name: SccPopulateList
               href: sccpopulatelist-function.md
-            - name: SccProperties – funkce
+            - name: SccProperties
               href: sccproperties-function.md
-            - name: SccQueryChanges – funkce
+            - name: SccQueryChanges
               href: sccquerychanges-function.md
-            - name: SccQueryInfo – funkce
+            - name: SccQueryInfo
               href: sccqueryinfo-function.md
-            - name: SccRemove – funkce
+            - name: SccRemove
               href: sccremove-function.md
-            - name: SccRename – funkce
+            - name: SccRename
               href: sccrename-function.md
-            - name: SccRunScc – funkce
+            - name: SccRunScc
               href: sccrunscc-function.md
-            - name: SccSetOption – funkce
+            - name: SccSetOption
               href: sccsetoption-function.md
-            - name: SccUncheckout – funkce
+            - name: SccUncheckout
               href: sccuncheckout-function.md
-            - name: SccUninitialize – funkce
+            - name: SccUninitialize
               href: sccuninitialize-function.md
-            - name: SccWillCreateSccFile – funkce
+            - name: SccWillCreateSccFile
               href: sccwillcreatesccfile-function.md
         - name: Funkce zpětného volání implementované integrovaným vývojovým prostředím
           items:
@@ -776,13 +844,13 @@
           items:
             - name: Enumerátory
               href: enumerators.md
-            - name: Enumerátor kódu příkazu
+            - name: Kód příkazu
               href: command-code-enumerator.md
-            - name: Enumerátor zpráv
+            - name: Zpráva
               href: message-enumerator.md
-            - name: Enumerátor kódu stavu souboru
+            - name: Kód stavu souboru
               href: file-status-code-enumerator.md
-            - name: Enumerátor kódu stavu adresáře
+            - name: Kód stavu adresáře
               href: directory-status-code-enumerator.md
         - name: Příznaky funkcí
           href: capability-flags.md
@@ -798,13 +866,13 @@
           href: best-practices-for-implementing-a-source-control-plug-in.md
         - name: Omezení délky řetězců
           href: restrictions-on-string-lengths.md
-        - name: Glosář modulu plug-in zdrojového kódu
+        - name: Slovníček
           href: source-control-plug-in-glossary.md
         - name: Vypnutí upozornění kompatibility pro moduly plug-in zdroje ovládacího prvku
           href: how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md
-    - name: Přepínače příkazového řádku (Visual Studio SDK)
+    - name: Přepínače příkazového řádku
       items:
-        - name: Přepínače příkazového řádku (Visual Studio SDK)
+        - name: Přepínače příkazového řádku
           href: command-line-switches-visual-studio-sdk.md
         - name: Přepínače příkazového řádku nástroje Devenv pro vývoj rozšíření VSPackage
           href: devenv-command-line-switches-for-vspackage-development.md
@@ -824,17 +892,17 @@
           href: vstextbuffer-object.md
         - name: VSTextView – objekt
           href: vstextview-object.md
-    - name: Glosář sady Visual Studio SDK
+    - name: Slovníček
       href: visual-studio-sdk-glossary.md
 - name: Vytvoření sady SDK (Software Development Kit)
   items:
     - name: Vytvoření sady SDK (Software Development Kit)
       href: creating-a-software-development-kit.md
-    - name: 'Návod: Vytvoření sady SDK pomocí jazyka C# nebo Visual Basic'
+    - name: 'Vytvoření sady SDK pomocí jazyka C# nebo Visual Basic'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-    - name: 'Návod: Vytvoření sady SDK pomocí jazyka C++'
+    - name: Vytvoření sady SDK pomocí jazyka C++
       href: walkthrough-creating-an-sdk-using-cpp.md
-    - name: 'Návod: Vytvoření sady SDK pomocí jazyka JavaScript'
+    - name: Vytvoření sady SDK pomocí jazyka JavaScript
       href: walkthrough-creating-an-sdk-using-javascript.md
 - name: Rozšíření .NET Compiler Platform („Roslyn“)
   items:
@@ -842,7 +910,5 @@
       href: dotnet-compiler-platform-roslyn-extensibility.md
     - name: Začínáme s analyzátory Roslyn
       href: getting-started-with-roslyn-analyzers.md
-    - name: Analyzátory Roslyn a knihovny rozlišující kódy pro řešení ImmutableArrays
+    - name: Skutečný analyzátor Roslyn
       href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
-    - name: Referenční informace k verzi balíčku Roslyn
-      href: roslyn-version-support.md

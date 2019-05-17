@@ -20,9 +20,10 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Entity Framework Tools
       href: entity-data-model-tools-in-visual-studio.md
-    - name: Nástroje datové sady
-      href: dataset-tools-in-visual-studio.md
+    - name: Datové sady
       items:
+        - name: Nástroje datové sady
+          href: dataset-tools-in-visual-studio.md
         - name: Typové a netypové datové sady
           href: typed-vs-untyped-datasets.md
         - name: Přehled objektů TableAdapter
@@ -37,18 +38,21 @@
   items:
     - name: Vytvoření databáze
       href: create-a-sql-database-by-using-a-designer.md
-    - name: Přidání připojení
-      href: add-new-connections.md
+    - name: Připojení
       items:
+        - name: Přidání připojení
+          href: add-new-connections.md
         - name: Uložení a úpravy připojovacích řetězců
           href: how-to-save-and-edit-connection-strings.md
         - name: Připojení k datům v accessové databázi
           href: connect-to-data-in-an-access-database-windows-forms.md
     - name: Přidání zdrojů dat .NET
       href: add-new-data-sources.md
-    - name: Použití nástrojů LINQ to SQL
-      href: linq-to-sql-tools-in-visual-studio2.md
+    - name: Nástroje LINQ to SQL
       items:
+        - name: Přehled
+          displayName: LINQ to SQL tools
+          href: linq-to-sql-tools-in-visual-studio2.md
         - name: Změna návratového typu metody DataContext
           href: how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md
         - name: Vytvoření metod DataContext namapovaných na uložené procedury
@@ -71,16 +75,17 @@
           href: how-to-turn-pluralization-on-and-off-o-r-designer.md
     - name: Nástroje datové sady
       items:
-        - name: Vytvoření a konfigurace datových sad v sadě Visual Studio
-          href: create-and-configure-datasets-in-visual-studio.md
+        - name: Vytvoření datových sad
           items:
-            - name: Vytváření vztahů mezi tabulkami
+            - name: Vytvoření a konfigurace datových sad
+              href: create-and-configure-datasets-in-visual-studio.md
+            - name: Vytváření relací mezi datovými sadami
               href: relationships-in-datasets.md
             - name: Vytvoření datové sady pomocí Návrháře datových sad
               href: walkthrough-creating-a-dataset-with-the-dataset-designer.md
             - name: Vytvoření datové tabulky pomocí Návrháře datových sad
               href: walkthrough-creating-a-datatable-in-the-dataset-designer.md
-        - name: TableAdapters
+        - name: Konfigurace objektů TableAdapter
           items:
             - name: Vytvoření a konfigurace objektů TableAdapter
               href: create-and-configure-tableadapters.md
@@ -99,8 +104,10 @@
         - name: Ověřování dat v datových sadách
           href: validate-data-in-datasets.md
         - name: Ukládání dat zpět do databáze
-          href: save-data-back-to-the-database.md
           items:
+            - name: Přehled
+              displayName: Save data to database
+              href: save-data-back-to-the-database.md
             - name: Vkládání nových záznamů do databáze
               href: insert-new-records-into-a-database.md
             - name: Aktualizace dat pomocí objektu TableAdapter
@@ -109,9 +116,10 @@
               href: hierarchical-update.md
             - name: Zpracování výjimky souběžnosti
               href: handle-a-concurrency-exception.md
-            - name: Ukládání dat pomocí transakce
-              href: save-data-by-using-a-transaction.md
+            - name: Transakce
               items:
+                - name: Ukládání dat pomocí transakce
+                  href: save-data-by-using-a-transaction.md
                 - name: 'Návod: Uložení dat do transakce'
                   href: save-data-in-a-transaction.md
             - name: Uložení dat do databáze (více tabulek)
@@ -134,16 +142,18 @@
               href: add-code-to-tableadapters-in-n-tier-applications.md
             - name: Rozdělování datových sad a objektů TableAdapter do různých projektů
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: Vytvoření vazby ovládacích prvků ke zdrojům dat
-      href: bind-controls-to-data-in-visual-studio.md
+    - name: Ovládací prvky
       items:
+        - name: Vytvoření vazby ovládacích prvků ke zdrojům dat
+          href: bind-controls-to-data-in-visual-studio.md
         - name: 'Nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdrojů dat'
           href: set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md
         - name: Přidání vlastních ovládacích prvků do okna zdrojů dat
           href: add-custom-controls-to-the-data-sources-window.md
-        - name: Vytvoření vazby ovládacích prvků WPF k datům
-          href: bind-wpf-controls-to-data-in-visual-studio.md
+        - name: Ovládací prvky WPF
           items:
+            - name: Vytvoření vazby ovládacích prvků WPF k datům
+              href: bind-wpf-controls-to-data-in-visual-studio.md
             - name: Vytvoření vazby ovládacích prvků WPF k datové sadě
               href: bind-wpf-controls-to-a-dataset.md
             - name: Vytvoření vazby ovládacích prvků WPF k datové službě WCF
@@ -154,9 +164,10 @@
               href: display-related-data-in-wpf-applications.md
             - name: Vytvoření vazby ovládacích prvků k obrázkům z databáze
               href: bind-controls-to-pictures-from-a-database.md
-        - name: Vytvoření vazby ovládacích prvků modelu Windows Forms k datům
-          href: bind-windows-forms-controls-to-data-in-visual-studio.md
+        - name: Ovládací prvky Windows Forms
           items:
+            - name: Vytvoření vazby ovládacích prvků modelu Windows Forms k datům
+              href: bind-windows-forms-controls-to-data-in-visual-studio.md
             - name: Filtrování a řazení dat ve formulářové aplikaci Windows
               href: filter-and-sort-data-in-a-windows-forms-application.md
             - name: Potvrzení úprav v procesu v ovládacích prvcích vázaných na data před uložením dat
@@ -178,8 +189,10 @@
         - name: 'Úprava způsobu, kterým Visual Studio vytváří titulky pro ovládací prvky vázané daty'
           href: customize-how-visual-studio-creates-captions-for-data-bound-controls.md
     - name: Služby Windows Communication Foundation a služby WCF Data Services
-      href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
       items:
+        - name: Přehled služby WCF v sadě Visual Studio
+          displayName: Windows Communication Foundation Services and WCF Data Services
+          href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
         - name: Práce s konceptuálním modelem
           href: working-with-a-conceptual-model-wcf-data-services.md
         - name: Připojení k datům ve službě
@@ -207,9 +220,9 @@
         - name: Dědičnost datových tříd
           href: data-class-inheritance-o-r-designer.md
         - name: Zprávy Návrháře relací objektů
-          href: o-r-designer-messages.md
           items:
             - name: 'Vybranou třídu nejde odstranit, protože se používá jako návratový typ pro minimálně jednu metodu DataContext.'
+              displayName: O/R Designer messages
               href: the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md
             - name: Připojovací řetězec obsahuje přihlašovací údaje s heslem uloženým jako nešifrovaný text a nevyužívá integrované zabezpečení.
               href: the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md
