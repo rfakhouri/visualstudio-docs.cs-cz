@@ -119,7 +119,7 @@ Jsme zobrazí body rozdíl mezi Visual Studio 2015 a Visual Studio 2017 verze so
 
 ```
 
- Na základě informací poskytnutých [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element zůstává stejná.  **\<VSTemplateContainer >** element odkazuje na soubor .vstemplate pro přidruženou šablonu.
+ Na základě informací poskytnutých [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element zůstává stejná.  **\<VSTemplateContainer>** element odkazuje na soubor .vstemplate pro přidruženou šablonu.
 
  Tady je výchozí soubor .vstemplate položky vytvořené pomocí sady Visual Studio 2015:
 
@@ -171,7 +171,7 @@ Jsme zobrazí body rozdíl mezi Visual Studio 2015 a Visual Studio 2017 verze so
 </VSTemplateManifest>
 ```
 
- Na základě informací poskytnutých  **\<TemplateData >** element zůstává stejná.  **\<VSTemplateContainer >** element odkazuje na soubor .vstemplate pro přidruženou šablonu
+ Na základě informací poskytnutých  **\<TemplateData >** element zůstává stejná.  **\<VSTemplateContainer>** element odkazuje na soubor .vstemplate pro přidruženou šablonu
 
  Další informace o různých prvků souboru .vstman najdete v tématu [Visual Studio Manifest odkaz na schéma šablon](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
