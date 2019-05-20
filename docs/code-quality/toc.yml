@@ -103,12 +103,10 @@
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Sady pravidel pro balíčky analyzátoru
           href: analyzer-rule-sets.md
-        - name: Sady pravidel pro spravovaný kód
-          items:
-            - name: Sady pravidel pro spravovaný kód
-              href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Konfigurace analýzy kódu pro webovou aplikaci ASP.NET
-              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+        - name: Konfigurace sad pravidel pro analýzu statického kódu
+          href: how-to-configure-code-analysis-for-a-managed-code-project.md
+        - name: Konfigurace analýzy kódu pro webovou aplikaci ASP.NET
+          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: Sady pravidel pro kód C++
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
         - name: Vytvoření vlastní sady pravidel

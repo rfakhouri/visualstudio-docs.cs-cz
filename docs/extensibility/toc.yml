@@ -34,7 +34,7 @@
   items:
     - name: Protokol jazyka serveru
       href: language-server-protocol.md
-    - name: Přidání rozšíření pro protokol jazyka serveru
+    - name: Přidání rozšíření protokolu LSP (Language Server Protocol)
       href: adding-an-lsp-extension.md
 - name: Otevřít složku
   items:
