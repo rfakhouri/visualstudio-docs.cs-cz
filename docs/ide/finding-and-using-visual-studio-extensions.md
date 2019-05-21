@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ca0b1defbec345acc02212498453972a3576f20
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962055"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934350"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Vyhledání a používání rozšíření sady Visual Studio
 
@@ -61,7 +61,7 @@ Můžete také stáhnout a nainstalovat rozšíření založená na Instalační
 
 ::: moniker range="vs-2017"
 
-V **rozšíření a aktualizace**, najít rozšíření, které chcete nainstalovat. (Pokud znáte název nebo část názvu rozšíření, je možné hledat **hledání** okna.) Klikněte na tlačítko **Stáhnout**. Rozšíření je naplánovaná instalace. Rozšíření se nainstaluje, když jsou uzavřeny všechny instance sady Visual Studio.
+Z **nástroje** > **rozšíření a aktualizace**, najít rozšíření, které chcete nainstalovat. (Pokud znáte název nebo část názvu rozšíření, je možné hledat **hledání** okna.) Klikněte na tlačítko **Stáhnout**. Rozšíření je naplánovaná instalace. Rozšíření se nainstaluje, když jsou uzavřeny všechny instance sady Visual Studio.
 
 Pokud se pokusíte nainstalovat rozšíření, která obsahuje závislosti, instalační služba zkontroluje, zda jsou již tyto závislosti nainstalovány. Pokud tyto produkty nejsou nainstalovány, **rozšíření a aktualizace** dialogové okno obsahuje závislosti, které je třeba nainstalovat před instalací rozšíření.
 
@@ -69,7 +69,7 @@ Pokud se pokusíte nainstalovat rozšíření, která obsahuje závislosti, inst
 
 ::: moniker range=">=vs-2019"
 
-V **spravovat rozšíření**, najít rozšíření, které chcete nainstalovat. (Pokud znáte název nebo část názvu rozšíření, je možné hledat **hledání** okna.) Klikněte na tlačítko **Stáhnout**. Rozšíření je naplánovaná instalace. Rozšíření se nainstaluje, když jsou uzavřeny všechny instance sady Visual Studio.
+Z **rozšíření** > **spravovat rozšíření**, najít rozšíření, které chcete nainstalovat. (Pokud znáte název nebo část názvu rozšíření, je možné hledat **hledání** okna.) Klikněte na tlačítko **Stáhnout**. Rozšíření je naplánovaná instalace. Rozšíření se nainstaluje, když jsou uzavřeny všechny instance sady Visual Studio.
 
 Pokud se pokusíte nainstalovat rozšíření, která obsahuje závislosti, instalační služba zkontroluje, zda jsou již tyto závislosti nainstalovány. Pokud tyto produkty nejsou nainstalovány, **spravovat rozšíření** dialogové okno obsahuje závislosti, které je třeba nainstalovat před instalací rozšíření.
 
@@ -91,7 +91,7 @@ Pokud chcete zakázat automatické aktualizace, můžete zakázat funkci pro vš
 
 ::: moniker range="vs-2017"
 
-- Chcete-li zakázat automatické aktualizace pro všechna rozšíření, zvolte **změnit nastavení rozšíření a aktualizace** odkaz v **rozšíření a aktualizace** dialogového okna. V **možnosti** dialogového okna, zrušte zaškrtnutí políčka **automatické aktualizace rozšíření**.
+- Chcete-li zakázat automatické aktualizace pro všechna rozšíření, zvolte **změnit nastavení rozšíření a aktualizace** odkaz v **nástroje** > **rozšíření a aktualizace**dialogové okno. V **možnosti** dialogového okna, zrušte zaškrtnutí políčka **automatické aktualizace rozšíření**.
 
 - Chcete-li zakázat automatické aktualizace pro konkrétní příponu, zrušte zaškrtnutí políčka **automaticky aktualizovat toto rozšíření** možnost v podokně podrobností rozšíření na pravé straně **rozšíření a aktualizace** dialogového okna.
 
@@ -99,7 +99,7 @@ Pokud chcete zakázat automatické aktualizace, můžete zakázat funkci pro vš
 
 ::: moniker range=">=vs-2019"
 
-- Chcete-li zakázat automatické aktualizace pro všechna rozšíření, zvolte **změnit nastavení pro rozšíření** odkaz v **spravovat rozšíření** dialogového okna. V **možnosti** dialogového okna, zrušte zaškrtnutí políčka **automatické aktualizace rozšíření**.
+- Chcete-li zakázat automatické aktualizace pro všechna rozšíření, zvolte **změnit nastavení pro rozšíření** propojit **rozšíření** > **spravovat rozšíření** Dialogové okno. V **možnosti** dialogového okna, zrušte zaškrtnutí políčka **automatické aktualizace rozšíření**.
 
 - Chcete-li zakázat automatické aktualizace pro konkrétní příponu, zrušte zaškrtnutí políčka **automaticky aktualizovat toto rozšíření** možnost v podokně podrobností rozšíření na pravé straně **spravovat rozšíření** dialogového okna.
 
@@ -115,13 +115,13 @@ Když tato oznámení jsou zobrazeny, můžete ignorovat oznámení nebo Absolvu
 
 ::: moniker range="vs-2017"
 
-- Zvolte **zakázat toto rozšíření**. Visual Studio zakáže rozšíření a poznáte, jestli je potřeba restartovat systém pro zakázání se projeví. Můžete znovu povolit doplněk **rozšíření a aktualizace** dialogovému oknu, chcete-li.
+- Zvolte **zakázat toto rozšíření**. Visual Studio zakáže rozšíření a poznáte, jestli je potřeba restartovat systém pro zakázání se projeví. Můžete znovu povolit doplněk **nástroje** > **rozšíření a aktualizace** dialogovému oknu, chcete-li.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Zvolte **zakázat toto rozšíření**. Visual Studio zakáže rozšíření a poznáte, jestli je potřeba restartovat systém pro zakázání se projeví. Můžete znovu povolit doplněk **spravovat rozšíření** dialogovému oknu, chcete-li.
+- Zvolte **zakázat toto rozšíření**. Visual Studio zakáže rozšíření a poznáte, jestli je potřeba restartovat systém pro zakázání se projeví. Můžete znovu povolit doplněk **rozšíření** > **spravovat rozšíření** dialogovému oknu, chcete-li.
 
 ::: moniker-end
 
@@ -147,13 +147,13 @@ Při instalaci online ukázky je řešení uloženo na dvou místech:
 
 ::: moniker range="vs-2017"
 
-Můžete použít **rozšíření a aktualizace** okna k provedení těchto úloh týkajících se ukázek:
+Můžete použít **nástroje** > **rozšíření a aktualizace** dialogové okno k provedení těchto úloh týkajících se ukázek:
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Můžete použít **spravovat rozšíření** okna k provedení těchto úloh týkajících se ukázek:
+Můžete použít **rozšíření** > **spravovat rozšíření** dialogové okno k provedení těchto úloh týkajících se ukázek:
 
 ::: moniker-end
 
@@ -171,13 +171,13 @@ Můžete použít **spravovat rozšíření** okna k provedení těchto úloh t�
 
 ::: moniker range="vs-2017"
 
-## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Instalace bez použití dialogovém okně rozšíření a aktualizace
+## <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Nainstalovat bez pomocí dialogového okna rozšíření a aktualizace
 
-Rozšíření, která byla zabalena v souboru *VSIX* soubory mohou být k dispozici v jiném umístění než Visual Studio Marketplace. **Rozšíření a aktualizace** dialogové okno nelze rozpoznat tyto soubory, ale můžete nainstalovat *VSIX* soubor poklikáte soubor nebo výběr souboru a stisknutím klávesy **Enter**klíč. Potom postupujte podle pokynů. Pokud je rozšíření nainstalované, můžete použít **rozšíření a aktualizace** dialogové okno povolit, zakázat nebo ho odinstalujte.
+Rozšíření, která byla zabalena v souboru *VSIX* soubory mohou být k dispozici v jiném umístění než Visual Studio Marketplace. **Nástroje** > **rozšíření a aktualizace** dialogové okno nelze rozpoznat tyto soubory, ale můžete nainstalovat *VSIX* soubor poklikáte soubor, nebo výběrem soubor a stisknutím klávesy **Enter** klíč. Potom postupujte podle pokynů. Pokud je rozšíření nainstalované, můžete použít **rozšíření a aktualizace** dialogové okno povolit, zakázat nebo ho odinstalujte.
 
 ## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>Rozšíření typy nejsou podporovány v dialogovém okně rozšíření a aktualizace
 
-Visual Studio i nadále podporuje rozšíření, které instaluje Microsoft Installer (MSI) ale není až **rozšíření a aktualizace** dialogové okno bez úprav.
+Visual Studio i nadále podporuje rozšíření, které instaluje Microsoft Installer (MSI) ale není až **nástroje** > **rozšíření a aktualizace** dialogové okno bez úprav.
 
 > [!TIP]
 > Pokud obsahuje rozšíření na základě Instalační služby MSI *extension.vsixmanifest* souboru, zobrazí se v rozšíření **rozšíření a aktualizace** dialogové okno.
@@ -186,13 +186,13 @@ Visual Studio i nadále podporuje rozšíření, které instaluje Microsoft Inst
 
 ::: moniker range=">=vs-2019"
 
-## <a name="installing-without-using-the-manage-extensions-dialog-box"></a>Instalace bez pomocí dialogového okna Spravovat rozšíření
+## <a name="install-without-using-the-manage-extensions-dialog-box"></a>Nainstalovat bez pomocí dialogového okna Spravovat rozšíření
 
-Rozšíření, která byla zabalena v souboru *VSIX* soubory mohou být k dispozici v jiném umístění než Visual Studio Marketplace. **Spravovat rozšíření** dialogové okno nelze rozpoznat tyto soubory, ale můžete nainstalovat *VSIX* soubor poklikáte soubor nebo výběr souboru a stisknutím klávesy **Enter** klíč. Potom postupujte podle pokynů. Pokud je rozšíření nainstalované, můžete použít **spravovat rozšíření** dialogové okno povolit, zakázat nebo ho odinstalujte.
+Rozšíření, která byla zabalena v souboru *VSIX* soubory mohou být k dispozici v jiném umístění než Visual Studio Marketplace. **Rozšíření** > **spravovat rozšíření** dialogové okno nelze rozpoznat tyto soubory, ale můžete nainstalovat *VSIX* souboru dvojitým kliknutím na soubor, nebo Výběr souboru a stisknutím klávesy **Enter** klíč. Potom postupujte podle pokynů. Pokud je rozšíření nainstalované, můžete použít **spravovat rozšíření** dialogové okno povolit, zakázat nebo ho odinstalujte.
 
 ## <a name="extension-types-not-supported-by-the-manage-extensions-dialog-box"></a>Rozšíření typy nejsou podporovány v dialogovém okně Spravovat rozšíření
 
-Visual Studio i nadále podporuje rozšíření, které instaluje Microsoft Installer (MSI) ale není až **spravovat rozšíření** dialogové okno bez úprav.
+Visual Studio i nadále podporuje rozšíření, které instaluje Microsoft Installer (MSI) ale není až **rozšíření** > **spravovat rozšíření** dialogové okno bez úprav.
 
 > [!TIP]
 > Pokud obsahuje rozšíření na základě Instalační služby MSI *extension.vsixmanifest* souboru, zobrazí se v rozšíření **spravovat rozšíření** dialogové okno.

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570289"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934520"
 ---
 # <a name="common-msbuild-project-properties"></a>Obecné vlastnosti projektu nástroje MSBuild
 V následující tabulce je často používané seznamy vlastností, které jsou definovány v souborech projektu sady Visual Studio nebo součástí *.targets* soubory, které poskytuje nástroj MSBuild.
@@ -50,7 +50,7 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | CleanFile | Název souboru, který se použije jako "čistá mezipaměť." Čistá mezipaměť je seznam vygenerovaných souborů mají být odstraněny během operace čištění. Soubor je umístěn v mezilehlé výstupní cestě procesem sestavení.<br /><br /> Tato vlastnost určuje pouze názvy souborů, které nemají informace o cestě. |
 | Znaková stránka | Určuje znakovou stránku pro všechny soubory zdrojového kódu dané kompilace. Tato vlastnost je ekvivalentní `/codepage` přepínač kompilátoru. |
 | CompilerResponseFile | Soubor volitelných odpovědí může být předán úkolům kompilátoru. |
-| Konfigurace | Konfigurace, který vytváříte, buď "Ladění" nebo "Verze". |
+| Konfiguraci | Konfigurace, který vytváříte, buď "Ladění" nebo "Verze". |
 | CscToolPath | Cesta k *csc.exe*, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kompilátoru. |
 | CustomBeforeMicrosoftCommonTargets | Název souboru projektu nebo soubor cílů, které mají být importovány automaticky před importem společných cílů. |
 | DebugSymbols | Logická hodnota, která určuje, zda jsou symboly generovány sestavením.<br /><br /> Nastavení **- p: DebugSymbols = false** na příkazovém řádku zakáže generování databázi programu (*PDB*) soubory symbolů. |
@@ -68,6 +68,7 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | Hodnotu FileAlignment | Určuje, v bajtech, kam chcete zarovnat oddíly výstupního souboru. Platné hodnoty jsou 512, 1024, 2048, 4096, 8192. Tato vlastnost je ekvivalentní `/filealignment` přepínač kompilátoru. |
 | FrameworkPathOverride | Určuje umístění *mscorlib.dll* a *microsoft.visualbasic.dll*. Tento parametr je ekvivalentní `/sdkpath` přepnout z *vbc.exe* kompilátoru. |
 | GenerateDocumentation | (Pouze Visual Basic) Parametr logické hodnoty označující, zda je dokumentace generovaná sestavením. Pokud `true`, sestavení generuje informace o dokumentaci a vloží je *.xml* soubor společně s názvem spustitelného souboru nebo knihovnu, která úkol sestavení vytvořen. |
+| GenerateSerializationAssemblies | Určuje, zda sestavení serializace XML by měly být generovány *SGen.exe*, které můžete nastavit, auto, nebo vypnout. Tato vlastnost se používá pro sestavení, které je cílem pouze rozhraní .NET Framework. Ke generování sestavení serializace XML pro sestavení .NET Core nebo .NET Standard, odkazovat *Microsoft.XmlSerializer.Generator* balíček NuGet. |
 | IntermediateOutputPath | Úplná cesta zprostředkujících výstupů odvozena z `BaseIntermediateOutputPath`, pokud není zadaná žádná cesta. Například *\obj\debug\\*. |
 | KeyContainerName | Název kontejneru klíčů se silným názvem. |
 | KeyOriginatorFile | Název souboru klíče silného názvu. |
@@ -91,8 +92,8 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | ProduceReferenceAssembly | Logická hodnota, která pokud je nastavena na `true` umožňuje produkce [odkazovat na sestavení](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) pro aktuální sestavení. `Deterministic` by měl být `true` při použití této funkce. Tato vlastnost odpovídá `/refout` přepnout z *vbc.exe* a *csc.exe* kompilátory. |
 | ProduceOnlyReferenceAssembly | Logická hodnota, která dává pokyn kompilátoru generovat referenční sestavení, spíše než zkompilovaný kód. Nelze použít ve spojení s `ProduceReferenceAssembly`.  Tato vlastnost odpovídá `/refonly` přepnout z *vbc.exe* a *csc.exe* kompilátory. |
 | RemoveIntegerChecks | Logická hodnota určující, zda chcete zakázat chyby kontroly přetečení celých čísel. Výchozí hodnota je `false`. Tato vlastnost je ekvivalentní `/removeintchecks` přepnout z *vbc.exe* kompilátoru. |
-| SGenUseProxyTypes | Logická hodnota, která určuje, zda typy proxy měly být generovány pomocí *SGen.exe*.<br /><br /> Cíl SGen používá tuto vlastnost pro nastavení příznaku UseProxyTypes. Výchozí hodnota této vlastnosti na hodnotu true a neexistuje žádné uživatelské rozhraní pro toto nastavení změnit. Generovat sestavení serializace pro typy bez, přidejte do souboru projektu tuto vlastnost a nastavte ji na hodnotu false před importem *cílů Microsoft.Common.Targets* nebo  *C#/VB.targets*. |
-| SGenToolPath | Volitelný nástroj pro cestu, která označuje, kde můžete získat *SGen.exe* při aktuální verzi *SGen.exe* je přepsána. |
+| SGenUseProxyTypes | Logická hodnota, která určuje, zda typy proxy měly být generovány pomocí *SGen.exe*. To platí pouze tehdy, když *GenerateSerializationAssemblies* nastavena na hodnotu on a pro rozhraní .NET Framework pouze.<br /><br /> Cíl SGen používá tuto vlastnost pro nastavení příznaku UseProxyTypes. Výchozí hodnota této vlastnosti na hodnotu true a neexistuje žádné uživatelské rozhraní pro toto nastavení změnit. Generovat sestavení serializace pro typy bez, přidejte do souboru projektu tuto vlastnost a nastavte ji na hodnotu false před importem *cílů Microsoft.Common.Targets* nebo  *C#/VB.targets*. |
+| SGenToolPath | Volitelný nástroj pro cestu, která označuje, kde můžete získat *SGen.exe* při aktuální verzi *SGen.exe* je přepsána. Tato vlastnost se používá pouze pro rozhraní .NET Framework.|
 | StartupObject | Určuje třídu nebo modul, který obsahuje metodu Main nebo Sub Main proceduru. Tato vlastnost je ekvivalentní `/main` přepínač kompilátoru. |
 | ProcessorArchitecture | Architektura procesoru, který se používá, když jsou překládány odkazy na sestavení. Platné hodnoty jsou "msil", "x86," "amd64" nebo "ia64". |
 | RootNamespace | Kořenový obor názvů použijte, pokud pojmenujete integrovaný zdroj. Tento obor názvů je částí názvu vloženého manifestu prostředků. |

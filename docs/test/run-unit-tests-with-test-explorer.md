@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946011"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934503"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů částí pomocí Průzkumníka testů
 
@@ -58,7 +58,7 @@ Spustit všechny testy v řešení, všechny testy ve skupině nebo sadu testů,
 |![Spustit po sestavení](../test/media/ute_runafterbuild_btn.png)|Chcete-li spouštět testy jednotek po každém místním sestavení, zvolte **testovací** ve standardní nabídce a klikněte na tlačítko **spustit testy po sestavení** na **Průzkumníka testů** nástrojů.|
 
 > [!NOTE]
-> Spuštění testů jednotky po každém sestavení vyžaduje Visual Studio Enterprise edition.
+> Spuštění testů jednotky po každém sestavení vyžaduje Visual Studio 2017 Enterprise nebo Visual Studio 2019. V aplikaci Visual Studio 2019 je součástí komunity Professional i Enterprise.
 
 ## <a name="view-test-results"></a>Zobrazení výsledků testu
 
@@ -200,7 +200,7 @@ Můžete určit množství kódu produktu, který je skutečně testován prost�
 
 Pokud chcete spustit pokrytí kódu pro testovací metody v řešení:
 
-1. Zvolte **testy** v nabídce sady Visual Studio a klikněte na tlačítko **analyzovat pokrytí kódu**.
+1. Zvolte **testovací** v horní nabídce panelu a klikněte na tlačítko **analyzovat pokrytí kódu**.
 
 2. Z podnabídky zvolte jeden z následujících příkazů:
 

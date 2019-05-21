@@ -1,18 +1,18 @@
 ---
 title: Použití architektury Microsoft pro testování jednotek pro jazyk C++
-ms.date: 05/01/2019
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461480"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934485"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Použít Microsoft rozhraní testování části pro C++ v sadě Visual Studio
 
@@ -30,16 +30,16 @@ V některých případech, například při testování Neexportované funkce v 
 
    1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu pro testování programu a pak zvolte **vlastnosti** > **vlastnosti konfigurace**  >  **Adresáře VC ++**.
 
-   2. Klikněte na šipku dolů v následujících řádcích a zvolte  **\<Upravit >** :
+   2. Klikněte na šipku dolů v následujících řádcích a zvolte  **\<Upravit >**. Přidejte tyto cesty:
 
       | Adresář | Vlastnost |
       |-| - |
-      | **Adresáře souborů k zahrnutí** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
-      | **Adresáře knihoven** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
+      | **Adresáře souborů k zahrnutí** | **Auxiliary\VS\UnitTest\include $(VCInstallDir)** |
+      | **Adresáře knihoven** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
 
 2. Přidáte soubor testu jednotek C++:
 
-   - Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a zvolte **přidat** > **nová položka** > **Jednotkový Test C++**.
+   - Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a zvolte **přidat** > **nová položka**  >  **C++ souboru (.cpp)**.
 
 ## <a name="write-the-tests"></a>Zápis testů
 
