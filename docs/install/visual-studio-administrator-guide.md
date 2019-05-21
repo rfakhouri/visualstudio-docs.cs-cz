@@ -2,7 +2,7 @@
 title: Příručka správce sady Visual Studio
 titleSuffix: ''
 description: Další informace o tom, jak nasadit aplikaci Visual Studio v podnikovém prostředí.
-ms.date: 04/02/2019
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,86 +17,151 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e228ca06aee6644b57782b30a1a9b02b17435f9d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b89f8415d34a4facaca694db8507c911d279bf8f
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951341"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976122"
 ---
 # <a name="visual-studio-administrator-guide"></a>Příručka správce sady Visual Studio
 
-V podnikovém prostředí je běžné, že správce systému nasadit zařízení pro koncové uživatele ze sdílené síťové složce nebo s použitím softwaru pro správu systému. Jsme navrhli tak instalačního modulu Visual Studio pro podporu nasazení v podniku, že správci systému možnost vytvářet instalace umístění v síti, předem nakonfigurovat výchozí nastavení instalace, nasazení během procesu instalace kódy product key a po úspěšné zavedení spravovat aktualizace produktu. Tato příručka pro správce poskytuje pokyny založené na scénářích pro rozsáhlá nasazení v síťovém prostředí.
+V podnikových prostředích správci systému obvykle nasazení instalace pro koncové uživatele ze sdílené síťové složce nebo s použitím softwaru pro správu systému. Jsme navrhli tak nastavení modul sady Visual Studio pro podporu nasazení v podnikovém prostředí tím, že správci systému umožňuje vytvořit umístění v síti nainstalovat, předem nakonfigurovat výchozí nastavení instalace, nasazení kódy product key během procesu instalace a Správa aktualizací produktu po úspěšné zavedení.
 
-## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Nasazení v podnikovém prostředí sady Visual Studio
+Tato příručka pro správce poskytuje pokyny založené na scénářích pro rozsáhlá nasazení v síťovém prostředí.
+
+## <a name="before-you-begin"></a>Před zahájením
+
+Před nasazením aplikace Visual Studio napříč vaší organizací, existuje několik rozhodnutí a na dokončení úloh:
+
+::: moniker range="vs-2019"
+
+* Ujistěte se, že každý cílový počítač splňuje [minimální požadavky na instalaci](/visualstudio/releases/2019/system-requirements/).
+
+* Při rozhodování o potřebách údržby.
+
+  Pokud vaše společnost potřebuje zůstat na funkci nastavit už ale stále chce dostávat pravidelné údržby aktualizace, naplánujte použití směrný plán údržby. Další informace najdete v tématu ***možnosti podpory pro zákazníky s Enterprise nebo Professional*** část [životního cyklu produktu Visual Studio a údržba](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) stránky.
+
+  Pokud máte v plánu údržby aktualizace spolu s funkcí kumulativní aktualizace, můžete nejnovější součásti.
+
+* Při rozhodování o aktualizace modelu.
+
+  Pokud chcete jednotlivých klientských počítačů má být aktualizován Konkrétně rozhodnete, jestli chcete získat aktualizace z Internetu nebo ze sdílené složky místní pořádaného microsoftem. Pokud se rozhodnete použít místní sdílenou složku, rozhodněte, jestli jednotlivým uživatelům můžete aktualizovat své vlastní klienty nebo pokud chcete, aby správce programově aktualizovat klienty.
+
+* Rozhodněte, která [úlohy a komponenty](workload-and-component-ids.md?view=vs-2019) vašim firemním potřebám.
+
+* Rozhodněte, jestli se má použít [soubor odpovědí](automated-installation-with-response-file.md?view=vs-2019) (zjednodušuje správu podrobnosti v souboru skriptu).
+
+* Rozhodněte, pokud chcete povolit zásady skupiny, a pokud chcete provést konfiguraci sady Visual Studio k zakázání zpětné vazby od zákazníků v jednotlivých počítačích.
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Visual Studio lze nasadit do klientských pracovních stanic tak dlouho, dokud každý cílový počítač splňuje [minimální požadavky na instalaci](/visualstudio/productinfo/vs2017-system-requirements-vs/). Jestli nasazujete prostřednictvím softwaru, jako je System Center nebo dávkového souboru, je obvykle vhodné kvůli tomu provádět následující kroky:
+* Ujistěte se, že každý cílový počítač splňuje [minimální požadavky na instalaci](/visualstudio/productinfo/vs2017-system-requirements-vs/).
+
+* Při rozhodování o potřebách údržby.
+
+  Pokud vaše společnost potřebuje zůstat na funkci nastavit už ale stále chce dostávat pravidelné údržby aktualizace, naplánujte použití směrný plán údržby. Další informace najdete v tématu ***podpora pro starší verze sady Visual Studio*** část [životního cyklu produktu Visual Studio a údržba](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) stránky.
+
+  Pokud máte v plánu údržby aktualizace spolu s funkcí kumulativní aktualizace, můžete nejnovější součásti.
+
+* Při rozhodování o aktualizace modelu.
+
+  Pokud chcete jednotlivých klientských počítačů má být aktualizován Konkrétně rozhodnete, jestli chcete získat aktualizace z Internetu nebo ze sdílené složky místní pořádaného microsoftem. Pokud se rozhodnete použít místní sdílenou složku, rozhodněte, jestli jednotlivým uživatelům můžete aktualizovat své vlastní klienty nebo pokud chcete, aby správce programově aktualizovat klienty.
+
+* Rozhodněte, která [úlohy a komponenty](workload-and-component-ids.md?view=vs-2017) vašim firemním potřebám.
+
+* Rozhodněte, jestli se má použít [soubor odpovědí](automated-installation-with-response-file.md?view=vs-2017) (zjednodušuje správu podrobnosti v souboru skriptu).
+
+* Rozhodněte, pokud chcete povolit zásady skupiny, a pokud chcete provést konfiguraci sady Visual Studio k zakázání zpětné vazby od zákazníků v jednotlivých počítačích.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Visual Studio lze nasadit do klientských pracovních stanic tak dlouho, dokud každý cílový počítač splňuje [minimální požadavky na instalaci](/visualstudio/releases/2019/system-requirements/). Jestli nasazujete prostřednictvím softwaru, jako je System Center nebo dávkového souboru, je obvykle vhodné kvůli tomu provádět následující kroky:
+## <a name="step-1---download-visual-studio-product-files"></a>Krok 1: Stáhněte si soubory produktu Visual Studio
+
+* [Vyberte úlohy a komponenty](workload-and-component-ids.md?view=vs-2019) , kterou chcete nainstalovat.
+
+* [Vytvoření sdílené síťové složky pro soubory produktu Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2019).
+
+## <a name="step-2---build-an-installation-script"></a>Krok 2: vytvoření instalačního skriptu
+
+* Vytváření instalačního skriptu, který používá [parametry příkazového řádku](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) řízení instalace.
+
+  >[!NOTE]
+  > Můžete zjednodušit pomocí skriptů [soubor odpovědí](automated-installation-with-response-file.md?view=vs-2019). Ujistěte se, že chcete vytvořit soubor odpovědí, který obsahuje výchozí možností instalace.
+
+* (Volitelné) [Použít volume license product key](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019) jako součást instalace skript tak, aby uživatelé nemuseli aktivovat software samostatně.
+
+* (Volitelné) Aktualizace rozložení sítě, které [řídit, kdy a kde z produktu doručování aktualizací na vaše koncové uživatele](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
+
+* (Volitelné) Nastavení zásad registru, které ovlivní také nasazení sady Visual Studio, jako je například, kde jsou nainstalovány některé balíčky sdílené s jinými verzemi nebo instance, [kde balíčky v mezipaměti](set-defaults-for-enterprise-deployments.md?view=vs-2019) nebo [Určuje, zda jsou balíčky v mezipaměti](disable-or-move-the-package-cache.md?view=vs-2019).
+
+* (Volitelné) Nastavení zásad skupiny. Můžete také [konfigurace sady Visual Studio k zakázání zpětné vazby od zákazníků](../ide/visual-studio-experience-improvement-program.md) v jednotlivých počítačích.
+
+## <a name="step-3---deploy"></a>Krok 3 – nasazení
+
+* Zvolených technologií nasazení použijte ke spuštění skriptu na vaše cílové vývojářské pracovní stanice.
+
+## <a name="step-4---deploy-updates"></a>Krok 4: nasazení aktualizací
+
+* [Aktualizujte vaše umístění v síti s nejnovějšími aktualizacemi](update-a-network-installation-of-visual-studio.md?view=vs-2019) do sady Visual Studio spuštěním příkazu, který jste použili v kroku 1 v pravidelných intervalech a přidejte aktualizované součásti.
+
+  Visual Studio můžete aktualizovat pomocí aktualizační skript. Chcete-li tak učinit, použijte [ `update` ](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) parametr příkazového řádku.
+
+## <a name="step-5---optional-use-visual-studio-tools"></a>Krok 5: (volitelné) pomocí aplikace Visual Studio tools
+
+Máme několik nástrojů, které vám pomůžou [zjišťovat a spravovat nainstalované instance sady Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2019) na klientských počítačích.
 
 ::: moniker-end
 
-1. [Vytvoření sdílené síťové složky, která obsahuje soubory produktu Visual Studio](create-a-network-installation-of-visual-studio.md) do umístění v síti.
+::: moniker range="vs-2017"
 
-2. [Vyberte úlohy a komponenty](workload-and-component-ids.md) chcete nainstalovat.
+## <a name="step-1---download-visual-studio-product-files"></a>Krok 1: Stáhněte si soubory produktu Visual Studio
 
-3. [Vytvořte soubor odpovědi](automated-installation-with-response-file.md) , která obsahuje výchozí možnosti instalace. Nebo alternativně [sestavení instalační skript](use-command-line-parameters-to-install-visual-studio.md) , který používá parametry příkazového řádku k řízení instalace.
+* [Vyberte úlohy a komponenty](workload-and-component-ids.md?view=vs-2017) , kterou chcete nainstalovat.
 
-4. Volitelně můžete [použít volume license product key](automatically-apply-product-keys-when-deploying-visual-studio.md) jako součást instalace skript tak, aby uživatelé nemuseli aktivovat software samostatně.
+* [Vytvoření sdílené síťové složky pro soubory produktu Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2017).
 
-5. Aktualizace rozložení sítě, které [řídit, kdy doručování aktualizací produktu pro vaše koncové uživatele](controlling-updates-to-visual-studio-deployments.md).
+## <a name="step-2---build-an-installation-script"></a>Krok 2: vytvoření instalačního skriptu
 
-6. Volitelně můžete nastavit klíče registru [řídit, co se uloží do mezipaměti na klientských pracovních stanicích](set-defaults-for-enterprise-deployments.md).
+* Vytváření instalačního skriptu, který používá [parametry příkazového řádku](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) řízení instalace.
 
-7. Spusťte skript vygenerované v předchozích krocích na vaše cílové vývojářské pracovní stanice pomocí zvolených technologií nasazení.
+  >[!NOTE]
+  > Můžete zjednodušit pomocí skriptů [soubor odpovědí](automated-installation-with-response-file.md?view=vs-2017). Ujistěte se, že chcete vytvořit soubor odpovědí, který obsahuje výchozí možností instalace.
 
-8. [Aktualizujte vaše umístění v síti s nejnovějšími aktualizacemi](update-a-network-installation-of-visual-studio.md) do sady Visual Studio spuštěním příkazu, který jste použili v kroku 1 v pravidelných intervalech a přidejte aktualizované součásti.
+* (Volitelné) [Použít volume license product key](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017) jako součást instalace skript tak, aby uživatelé nemuseli aktivovat software samostatně.
 
-> [!IMPORTANT]
-> Všimněte si, že instalace ze sítě sdílené složky se "nezapomeňte" zdrojové umístění pocházejí. To znamená, že oprava klientského počítače může být nutné se vraťte do sdílené síťové složky, které klient původně nainstalovali. Pečlivě vašemu umístění v síti tak, aby se budou přizpůsobovat dostupnému prostoru životního cyklu, které plánujete mít Visual Studio klientů se systémy ve vaší organizaci.
+* (Volitelné) Aktualizace rozložení sítě, které [řídit, kdy a kde z produktu doručování aktualizací na vaše koncové uživatele](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
 
-## <a name="use-visual-studio-tools"></a>Pomocí nástrojů sady Visual Studio
+* (Volitelné) Nastavení zásad registru, které ovlivní také nasazení sady Visual Studio, jako je například, kde jsou nainstalovány některé balíčky sdílené s jinými verzemi nebo instance, [kde balíčky v mezipaměti](set-defaults-for-enterprise-deployments.md?view=vs-2019) nebo [Určuje, zda jsou balíčky v mezipaměti](disable-or-move-the-package-cache.md?view=vs-2017).
 
-Máme několik nástrojů, které vám pomůžou [zjišťovat a spravovat nainstalované instance sady Visual Studio](tools-for-managing-visual-studio-instances.md) na klientských počítačích.
+* (Volitelné) Nastavení zásad skupiny. Můžete také [konfigurace sady Visual Studio k zakázání zpětné vazby od zákazníků](../ide/visual-studio-experience-improvement-program.md) v jednotlivých počítačích.
 
-> [!TIP]
-> Kromě dokumentaci v příručce pro správce, je dobré zdroje informací o instalaci sady Visual Studio [archivy instalační program Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+## <a name="step-3---deploy"></a>Krok 3 – nasazení
 
-## <a name="specify-customer-feedback-settings"></a>Určení nastavení zpětné vazby zákazníka
+* Zvolených technologií nasazení použijte ke spuštění skriptu na vaše cílové vývojářské pracovní stanice.
 
-Ve výchozím nastavení instalaci sady Visual Studio umožňuje zpětné vazby od zákazníků. Když povolíte zásady skupiny, můžete nakonfigurovat Visual Studio a zakázání zpětné vazby od zákazníků v jednotlivých počítačích. Uděláte to tak, nastavte zásadu založenou na registru pro následující klíč:
+## <a name="step-4---deploy-updates"></a>Krok 4: nasazení aktualizací
 
-**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**
+* [Aktualizujte vaše umístění v síti s nejnovějšími aktualizacemi](update-a-network-installation-of-visual-studio.md?view=vs-2017) do sady Visual Studio spuštěním příkazu, který jste použili v kroku 1 v pravidelných intervalech a přidejte aktualizované součásti.
 
-Položka = **OptIn**
+  Visual Studio můžete aktualizovat pomocí aktualizační skript. Chcete-li tak učinit, použijte [ `update` ](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) parametr příkazového řádku.
 
-Hodnota = (DWORD)
-* **0** je zakázána
-* **1** výslovného souhlasu
+## <a name="step-5---optional-use-visual-studio-tools"></a>Krok 5: (volitelné) pomocí aplikace Visual Studio tools
 
-Další informace o nastavení zpětné vazby zákazníka, najdete v článku [programu Visual Studio Customer Experience Improvement](../ide/visual-studio-experience-improvement-program.md) stránky.
+Máme několik nástrojů, které vám pomůžou [zjišťovat a spravovat nainstalované instance sady Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017) na klientských počítačích.
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Viz také:
 
-* [Instalace sady Visual Studio](install-visual-studio.md)
-* [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
-  * [Příklady parametrů příkazového řádku](command-line-parameter-examples.md)
-  * [Referenční dokumentace úlohy a ID komponenty](workload-and-component-ids.md)
-* [Vytvoření založené na síťové instalace sady Visual Studio](create-a-network-installation-of-visual-studio.md)
-  * [Instalace certifikátů vyžadovaných pro offline instalace sady Visual Studio](install-certificates-for-visual-studio-offline.md)
-* [Automatizace sady Visual Studio pomocí souboru odpovědí.](automated-installation-with-response-file.md)
-* [Automatické použití kódů Product Key při nasazení sady Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
-* [Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio](set-defaults-for-enterprise-deployments.md)
-* [Zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md)
-* [Aktualizace na základě síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Řízení aktualizací nasazení sady Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-* [Nástroje pro zjišťování a správu instancí sady Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Příklady parametrů příkazového řádku](command-line-parameter-examples.md)
+* [Instalace certifikátů vyžadovaných pro offline instalace sady Visual Studio](install-certificates-for-visual-studio-offline.md)
+* [Import a export konfigurace instalace](import-export-installation-configurations.md)
+* [Archivy instalační program sady Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/)
 * [Životního cyklu produktu Visual Studio a údržba](/visualstudio/releases/2019/servicing/)

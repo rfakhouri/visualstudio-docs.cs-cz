@@ -8,19 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816608"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975907"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Sada pravidel Rozšířená pravidla pokynů návrhu pro spravovaný kód
+
 Sada pravidel pravidla obecných zásad rozšířené návrhu Microsoft rozšiřuje možnosti návrhu základní pravidla obecných zásad pro maximalizaci problémů použitelnosti a udržovatelnosti, které jsou hlášeny. Je kladen zvláštní důraz na pokyny pro pojmenování. Zvažte zahrnutí této sady, pokud váš projekt zahrnuje kód knihovny nebo pokud chcete zajistit nejvyšší standardy pro psaní kódu, který se snadnou údržbou pravidel.
 
- Rozšířená pravidla obecných zásad návrhu zahrnují všechna pravidla pro základní obecných zásad návrhu společnosti Microsoft. Základní pravidla obecných zásad návrhu zahrnují všechny Microsoftu Minimální doporučená pravidla. Další informace najdete v tématu [sada pravidel základní pravidla obecných zásad návrhu pro spravovaný kód](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) a [sada pravidel spravovaná doporučená pravidla pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Rozšířená pravidla obecných zásad návrhu zahrnují všechna pravidla pro základní obecných zásad návrhu společnosti Microsoft. Základní pravidla obecných zásad návrhu zahrnují všechny Microsoftu Minimální doporučená pravidla. Další informace najdete v tématu [sada pravidel základní pravidla obecných zásad návrhu pro spravovaný kód](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) a [sada pravidel spravovaná doporučená pravidla pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- Následující tabulka popisuje všechna pravidla v sadě pravidel pravidla obecných zásad rozšířené návrhu společnosti Microsoft.
+Následující tabulka popisuje všechna pravidla v sadě pravidel pravidla obecných zásad rozšířené návrhu společnosti Microsoft.
 
 |Pravidlo|Popis|
 |----------|-----------------|

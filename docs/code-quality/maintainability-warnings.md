@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d5508e203b8ed5087f456c715c492d8f1ca7c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752a637ef01c33aa4e93083e9578d01f00977960
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823553"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976155"
 ---
 # <a name="maintainability-warnings"></a>Upozornění udržovatelnosti
 
@@ -35,7 +35,8 @@ Upozornění udržovatelnosti podporují údržby knihovny a aplikace.
 | [CA1504: Revize zavádějících názvů polí](../code-quality/ca1504-review-misleading-field-names.md) | Název pole instance začíná řetězcem "s_", nebo název statické (sdílené v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) pole začíná předponou "m_". |
 | [CA1505: Vyhněte se neudržovatelnému kódu](../code-quality/ca1505-avoid-unmaintainable-code.md) | Typ nebo metoda má nízkou hodnotu indexu udržovatelnosti. Nízký index udržovatelnosti označuje, že typ nebo metodu je pravděpodobně obtížné udržovat a je vhodné ji znovu navrhnout. |
 | [CA1506: Vyhněte se nadměrnému párování tříd](../code-quality/ca1506-avoid-excessive-class-coupling.md) | Toto pravidlo měří párování tříd podle počtu jedinečných odkazů na typ, které typ nebo metoda obsahuje. |
+| [CA1507: Nameof použijte místo řetězců](../code-quality/ca1507.md) | Řetězcový literál se používá jako argument kde `nameof` výraz může být použit. |
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/code-metrics-values.md)

@@ -1,7 +1,7 @@
 ---
 title: Nainstalovat a používat za bránou firewall nebo proxy serverem
-description: Projděte si adresy URL domén, porty a protokoly, které může být vhodné přidat na seznam povolených nebo otevřít, pokud vaše organizace používá Brána firewall nebo proxy server
-ms.date: 03/30/2019
+description: Projděte si adresy URL domén, porty a protokoly, které můžete chtít přidat do seznamu povolených položek nebo otevřít, pokud vaše organizace používá Brána firewall nebo proxy server
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,29 +17,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974706"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976217"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
 
-Pokud vy nebo vaše organizace používá bezpečnostní opatření, jako je například Brána firewall nebo proxy server, pak používají domény adresy URL, které můžete chtít "seznamu povolených IP adres" a porty a protokoly, které můžete chtít otevřít, abyste měli co nejlepších výsledků při instalaci a použití samostatného Visual dio a služby Azure.
+Pokud vy nebo vaše organizace používá bezpečnostní opatření, jako je například Brána firewall nebo proxy server, pak doména, kterou adresy URL může být vhodné přidat do "seznamu povolených" a porty a protokoly, které může být vhodné a otevřete tak, abyste měli co nejlepších výsledků při instalaci a použití  Visual Studio a služeb Azure.
 
-* **[Install Visual Studio](#install-visual-studio)**: Tyto tabulky obsahují domény adresy URL do seznamu povolených IP adres, abyste měli přístup ke všem součásti a úlohy, které chcete.
+* **[Install Visual Studio](#install-visual-studio)**: Tyto tabulky obsahují domény adresy URL, abyste měli přístup ke všem součásti a úlohy, které chcete přidat do seznamu povolených položek.
 
-* **[Pomocí sady Visual Studio a Azure Services](#use-visual-studio-and-azure-services)**: Tato tabulka obsahuje domény adresy URL do seznamu povolených IP adres a portů a protokolů a otevřete tak, aby měli přístup ke všem funkcím a služby, které chcete.
+* **[Pomocí sady Visual Studio a Azure Services](#use-visual-studio-and-azure-services)**: Tato tabulka obsahuje domény adresy URL pro přidání do seznamu povolených položek a porty a protokoly, abyste měli přístup ke všem funkcím a služby, které chcete otevřít.
 
 > [!NOTE]
 > Tento článek byl napsán pro sadu Visual Studio na Windows, ale některé informace platí také pro [instalace sady Visual Studio pro Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) za bránou firewall nebo proxy serverem.
 
 ## <a name="install-visual-studio"></a>Instalace sady Visual Studio
 
-### <a name="urls-to-whitelist"></a>Adresy URL do seznamu povolených IP adres
+### <a name="urls-to-add-to-an-allow-list"></a>Adresy URL pro přidání do seznamu povolených položek
 
-Vzhledem k tomu, že instalační program sady Visual Studio stáhne soubory z různých domén a jejich stažení serverů, tady jsou adresy URL domén, které můžete přidat na seznam povolených jako důvěryhodné, v uživatelském rozhraní nebo ve skriptech nasazení.
+Vzhledem k tomu, že instalační program sady Visual Studio stáhne soubory z různých domén a jejich stažení serverů, tady jsou adresy URL domén, které chcete přidat do seznamu povolených položek jako důvěryhodné, v uživatelském rozhraní nebo ve skriptech nasazení.
 
 #### <a name="microsoft-domains"></a>Microsoft domains
 
@@ -79,9 +79,9 @@ Vzhledem k tomu, že instalační program sady Visual Studio stáhne soubory z r
 
 ## <a name="use-visual-studio-and-azure-services"></a>Použijte sadu Visual Studio a službami Azure
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>Adresy URL do seznamu povolených IP adres a portů a protokolů, chcete-li otevřít
+### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>Adresy URL pro přidání do seznamu povolených položek a porty a protokoly, chcete-li otevřít
 
-Pokud chcete mít jistotu, že máte přístup ke všemu, co potřebujete při použití sady Visual Studio nebo služeb Azure za bránou firewall nebo proxy serverem, tady jsou adresy URL byste měli v seznamu povolených IP adres a portů a protokolů, které můžete chtít otevřít.
+Abyste měli jistotu, že máte přístup ke všemu, co potřebujete při použití sady Visual Studio nebo služeb Azure za bránou firewall nebo proxy serverem, tady jsou adresy URL, měli byste přidat na seznam povolených a porty a protokoly, které chcete otevřít.
 
 | Služba nebo scénáři | Koncový bod DNS | Protokol | Port | Popis |
 | - | - | - | - | - |

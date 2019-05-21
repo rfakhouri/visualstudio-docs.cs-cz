@@ -8,12 +8,12 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Vítá vás Visual Studio předplatná
 Searchscope: VS Subscription
-ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 939922aa418ee94d3018ac5f5743c31181e5e875
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62579939"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976110"
 ---
 # <a name="visual-studio-subscriptions"></a>Předplatná sady Visual Studio
 
@@ -169,7 +169,7 @@ Aby vaše předplatné ještě užitečnější, přidáme a často aktualizovat
                 <div class="card">
                     <div class="cardText">
                         <h3>Cloudové služby</h3>
-                        <p>S vaším předplatným sady Visual Studio můžete obdržet měsíční kredit Azure a bezplatný přístup ke službám Azure, zlevněné sazby pro vývoj a testování a exkluzivní přístup k imagi jenom pro předplatitele g alerie s předkonfigurovanými virtuálními počítači. V závislosti na vaše předplatné může zahrnovat cloudové služby:</p>
+                        <p>S vaším předplatným sady Visual Studio můžete obdržet měsíční kredit Azure pro přístup ke službám Azure, zvýhodněné sazby pro vývoj a testování a exkluzivní přístup do galler image jen pro předplatitele y s předkonfigurovanými virtuálními počítači. V závislosti na vaše předplatné může zahrnovat cloudové služby:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>

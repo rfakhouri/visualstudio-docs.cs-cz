@@ -14,17 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74c1a5202b05b3ffe6f9b6c5b24804fb259287c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 009422eaf9ac81af6e8f9d48732655b2528c85a0
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825335"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976148"
 ---
 # <a name="reliability-warnings"></a>Upozornění spolehlivosti
-Upozornění spolehlivosti podporu knihovny a aplikace spolehlivost, jako je například správné využití paměti a podproces.
 
-## <a name="in-this-section"></a>V tomto oddílu
+Upozornění spolehlivosti podporu knihovny a aplikace spolehlivost, jako je například správné využití paměti a podproces. Pravidla spolehlivosti patří:
 
 |Pravidlo|Popis|
 |----------|-----------------|
@@ -34,3 +33,4 @@ Upozornění spolehlivosti podporu knihovny a aplikace spolehlivost, jako je nap
 |[CA2003: Rozlišujte vlákénka od vláken](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Spravovaným vláknem se zachází jako vlákno Win32.|
 |[CA2004: Odeberte volání uvolňování paměti. KeepAlive](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Pokud převádíte na použití SafeHandle, odeberte veškerá volání uvolňování paměti. KeepAlive (objekt). Třídy v takovém případě by nemělo být volání uvolňování paměti. KeepAlive, za předpokladu, že nemají finalizační metodu, ale spoléhají na SafeHandle operačního systému dokončí zpracování pro ně.|
 |[CA2006: Použijte SafeHandle pro zapouzdření nativních prostředků](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|Použití IntPtr ve spravovaném kódu může znamenat možný problém zabezpečení a spolehlivosti. Všechna použití IntPtr musí být přezkoumána za účelem určení, zda je použití SafeHandle (nebo podobné technologie) na tomto místě vyžadováno.|
+|[CA2007: Není await přímo úkolu](../code-quality/ca2007-do-not-directly-await-task.md)|Asynchronní metoda [čeká](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> přímo.|
