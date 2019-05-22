@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3831fb06d23f622f85a55f5efd0a5650ca5e47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d23a19ad42f665f471274ee75f328056dd55b17d
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799044"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037106"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Automaticky synchronně načítaná rozšíření
 
@@ -29,7 +29,7 @@ Uživatelé můžou:
 
 - Klikněte na **tuto zprávu už nezobrazovat** chcete oznámení zavřít. Pokud vyberete tuto možnost, zabrání se také všechny budoucí oznámení z synchronně automaticky načtený rozšíření. Uživatelé budou dostávat oznámení o jiných funkcích sady Visual Studio.
 
-### <a name="performance-manager-dialog"></a>Dialogové okno Správce výkonu
+## <a name="performance-manager-dialog"></a>Dialogové okno Správce výkonu
 
 ![Dialogové okno Správce výkonu](media/performance-manager.png)
 
@@ -39,3 +39,17 @@ Zobrazí všechna rozšíření, která synchronně načíst všechny balíčky 
 * Můžou uživatelé kontaktovat svého dodavatele rozšíření pro průběh migrace.
 
 Autoři rozšíření najdete pokyny k migraci balíčků do asynchronní autoload na [migrovat AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Zadejte nastavení synchronní autoload pomocí zásad skupiny
+
+Visual Studio. 2019 Update 1, spouští se ve výchozím nastavení, autoload synchronní bloky instalace sady Visual Studio. Když povolíte zásady skupiny, můžete nakonfigurovat sady Visual Studio umožňuje synchronní autoload v jednotlivých počítačích. Uděláte to tak, nastavte zásadu založenou na registru pro následující klíč:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+
+Položka = **povoleno**
+
+Hodnota = (DWORD)
+* **0** nepovoluje synchronní autoload
+* **1** smí synchronní autoload
+
+Další informace o nastavení synchronní autoload ve Visual Studiu 2019 Update 1 najdete v článku [synchronní chování Autoload](https://aka.ms/AA52xzw) stránky.

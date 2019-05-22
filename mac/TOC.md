@@ -1,20 +1,24 @@
 # [Visual Studio pro Mac](index.yml)
 # [Prohlídka integrovaného vývojového prostředí (IDE)](ide-tour.md)
 
-# [Instalace](installation.md)
+# Instalace
+## [Instalace sady Visual Studio 2019 pro Mac](installation.md)
 ## [Instalace a používání za bránou firewall nebo proxy serverem](install-behind-a-firewall-or-proxy-server.md)
 ## [Instalace verze Preview](install-preview.md)
 ## [Aktualizace](update.md)
 ## [Odinstalace](uninstall.md)
 
-# [Uživatelské účty](user-accounts.md)
+# Uživatelské účty
+## [Přehled](user-accounts.md)
 ## [Přihlášení](signing-in.md)
 ## [Povolení předplatného](enable-subscription.md)
 
-# [Přizpůsobení integrovaného vývojového prostředí (IDE)](customizing-the-ide.md)
+# Přizpůsobení integrovaného vývojového prostředí (IDE)
+## [Přizpůsobení vzhledu a chování integrovaného vývojového prostředí (IDE)](customizing-the-ide.md)
 ## [Rozšíření sady Visual Studio pro Mac](extending-visual-studio-mac.md)
 
-# [Projekty a řešení](projects-and-solutions.md)
+# Projekty a řešení
+## [Přehled](projects-and-solutions.md)
 ## [Vytváření nových projektů](create-new-projects.md)
 ## [Přidávání a odebírání projektových položek](add-and-remove-project-items.md)
 ## [Správa vlastností řešení a projektu](managing-solutions-and-project-properties.md)
@@ -23,7 +27,8 @@
 ## [Správa prostředků aplikace](managing-app-resources.md)
 ## [Postupy: Otevření více řešení nebo instancí](open-multiple-solutions.md)
 
-# [Editor zdrojového kódu](source-editor.md)
+# Editor zdroje
+## [Funkce editoru](source-editor.md)
 ## [Refactoring](refactoring.md)
 ## [Komentáře](comments.md)
 ## [Chování editoru](editor-behavior.md)
@@ -34,10 +39,12 @@
 ## [EditorConfig](editorconfig.md)
 ## [Výchozí klávesové zkratky](keyboard-shortcuts.md)
 
-# [Ladění](debugging.md)
+# Ladění
+## [Přehled](debugging.md)
 ## [Vizualizace dat](data-visualizations.md)
 
-# [Kompilace a sestavení](compiling-and-building.md)
+# Kompilace a sestavení
+## [Přehled](compiling-and-building.md)
 ## [Sestavování a čištění projektů a řešení](building-and-cleaning-projects-and-solutions.md)
 ## [Akce sestavení](build-actions.md)
 ## [Postupy: Nastavení více projektů po spuštění](set-startup-projects.md)
@@ -45,18 +52,21 @@
 ## [Konfigurace](configurations.md)
 ### [Vytvoření a úprava konfigurací](create-and-edit-configurations.md)
 
-# [Správa verzí](version-control.md)
+# Správa verzí
+## [Přehled](version-control.md)
 ## [Správa verzí TF](tf-version-control.md)
 ## [Nastavení úložiště Git](set-up-git-repository.md)
 ## [Práce s úložištěm Git](working-with-git.md)
 ## [Nastavení úložiště Subversion](set-up-subversion-repository.md)
 ## [Práce s úložištěm Subversion](working-with-subversion.md)
 
-# [Nasazení webové aplikace](web-app-deployment.md)
+# Nasazení webové aplikace
+## [Přehled](web-app-deployment.md)
 ## [Publikování do Azure App Service](publish-app-svc.md)
 ## [Publikování do složky](publish-folder.md)
 
-# [Úlohy](workloads.md)
+# Sady funkcí
+## [Dostupné sady funkcí](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript a TypeScript](javascript.md)
@@ -73,7 +83,8 @@
 
 # [Usnadnění](accessibility.md)
 
-# [Odstraňování potíží](troubleshooting.md)
+# Poradce při potížích
+## [Protokoly a výjimky](troubleshooting.md)
 ## [Program Zlepšování softwaru a služeb na základě zkušeností uživatelů](visual-studio-experience-improvement-program.md)
 ## [Nahlášení problému](report-a-problem.md)
 ## [Odstraňování potíží: Proč se mi nezobrazují všechny šablony?](troubleshooting-no-templates.md)

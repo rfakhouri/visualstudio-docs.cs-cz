@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793449"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037013"
 ---
 # <a name="project-and-item-templates"></a>Šablony projektů a položek
 
@@ -47,7 +47,7 @@ Všechny šablony projektů a položek, zda je nainstalován se sadou Visual Stu
 
 ::: moniker-end
 
-   Další informace o *.vstemplate* soubory, naleznete v tématu [parametry šablony](../ide/template-parameters.md).
+   Další informace o *.vstemplate* soubory, naleznete v tématu [šablony značky](template-tags.md) a [parametry šablony](../ide/template-parameters.md).
 
 Když jsou tyto soubory zkomprimovány do *ZIP* soubor a uložte do správné složky, Visual Studio automaticky zobrazí na následujících místech:
 
@@ -71,6 +71,7 @@ Další informace o adresářích pro šablony najdete v tématu [jak: Hledání
 
 - [Postupy: Vytváření šablon projektu](../ide/how-to-create-project-templates.md)
 - [Postupy: Tvorba šablon položek](../ide/how-to-create-item-templates.md)
+- [Šablona značky](template-tags.md)
 - [Parametry šablony](../ide/template-parameters.md)
 - [Přizpůsobení šablony](../ide/customizing-project-and-item-templates.md)
 - [Balíčky NuGet ve šablony sady Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

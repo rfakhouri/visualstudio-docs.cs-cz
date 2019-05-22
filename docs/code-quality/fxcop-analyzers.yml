@@ -59,7 +59,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>Poznejte rozdíly mezi statická (FxCop) a balíček analyzátor pro analýzu kódu.</p>
+            html: <p>Poznejte rozdíly mezi statická (FxCop) a analyzátor pro analýzu kódu.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: Co je nového?
@@ -68,6 +68,11 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: Instalace analyzátorů FxCop
+          - href: fxcop-rule-port-status.md
+            html: '<p>Obsahuje seznam pravidel FxCop analýza statického kódu, které přenesené analyzátory FxCop.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
+            title: Přenesená a unported pravidla
           - href: 'use-roslyn-analyzers.md#command-line-usage'
             html: '<p>Obvykle při spuštění analýzy kódu z příkazového řádku, informace o používání analyzátorů z příkazového řádku.</p>'
             image:

@@ -16,10 +16,10 @@
   items:
     - name: Instalace sady Visual Studio
       href: install/install-visual-studio.md
-    - name: Účty
+    - name: Účty přizpůsobení
       items:
         - name: Přihlášení k sadě Visual Studio
-          displayName: peronalization accounts
+          displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: Práce s několika uživatelskými účty
           href: ide/work-with-multiple-user-accounts.md
@@ -43,15 +43,13 @@
       href: install/update-visual-studio.md
     - name: Úpravy sady Visual Studio
       href: install/modify-visual-studio.md
-    - name: Instalace Help Vieweru
-      href: help-viewer/installation.md
     - name: Oprava sady Visual Studio
       href: install/repair-visual-studio.md
     - name: Odinstalace sady Visual Studio
       href: install/uninstall-visual-studio.md
     - name: Příručka správce sady Visual Studio
       items:
-        - name: Příručka správce
+        - name: Přehled
           href: install/visual-studio-administrator-guide.md
         - name: Použití příkazového řádku
           items:
@@ -101,7 +99,7 @@
               href: help-viewer/behavior-overrides.md
         - name: Odkaz
           items:
-            - name: ID úloh a komponent sady Visual Studio
+            - name: ID sad funkcí a komponent sady Visual Studio
               items:
                 - name: Přehled
                   displayName: Workload and component IDs
@@ -138,6 +136,8 @@
           href: install/advanced-build-tools-container.md
         - name: Známé problémy s kontejnery
           href: install/build-tools-container-issues.md
+    - name: Instalace Help Vieweru
+      href: help-viewer/installation.md
 - name: Rychlý start
   items:
     - name: Orientace v sadě Visual Studio

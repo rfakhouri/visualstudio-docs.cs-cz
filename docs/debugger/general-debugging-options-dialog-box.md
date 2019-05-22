@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399380"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037390"
 ---
 # <a name="general-debugging-options"></a>Obecné možnosti ladění
 
@@ -136,7 +136,7 @@ Chcete-li zjistit, jaké symboly jsou k dispozici v exportní tabulce knihovny D
 
 - **Zobrazit nástroje runtime v aplikaci**: Ukazuje, **Live Visual Tree** příkazy na panelu nástrojů v hlavním okně aplikace XAML, která je právě laděna. Tato možnost byla zavedena v aplikaci Visual Studio 2015 Update 2.
 
-- **Povolit XAML upravit a pokračovat**:   Umožňuje použití operace upravit a pokračovat funkce s kódem XAML.
+- **Povolit horké Reload XAML**: Umožňuje použít funkce XAML horké reload s kódem XAML při spuštění aplikace. (Tato funkce byla dříve označované jako "XAML operaci upravit a pokračovat")
 
 **Při ladění povolit diagnostické nástroje**: **Diagnostické nástroje** při ladění, zobrazí se okno.
 

@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c17d5c9d6874c836954941e1fccd8ce9d9f2e3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccdf29e3a4cda2bf5d527a2b712878c1fbd76197
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789048"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037582"
 ---
-# <a name="wrap-indent-and-align-parameters"></a>Zabalení, odsazení a zarovnání parametrů
+# <a name="wrap-indent-and-align-parameters-or-arguments"></a>Zabalení, odsazení a zarovnání parametry nebo argumenty
 
 Tento refaktoring platí pro:
 
@@ -25,11 +25,11 @@ Tento refaktoring platí pro:
 
 - Visual Basic
 
-**Co:** Umožňuje zabalit, odsazení a zarovnání parametry.
+**Co:** Umožňuje zabalit, odsazení a zarovnání parametry nebo argumenty.
 
-**Kdy:** Máte deklaraci metody nebo volání, která má více parametrů.
+**Kdy:** Máte deklaraci metody nebo volání, která má více parametry nebo argumenty.
 
-**Proč:** Čtení dlouhý seznam parametrů je jednodušší, když jsou zabaleny, nebo odsazeny podle uživatelských předvoleb.
+**Proč:** Čtení dlouhý seznam parametry nebo argumenty je jednodušší, když jsou zabaleny, nebo odsazeny podle uživatelských předvoleb.
 
 ## <a name="how-to"></a>Postupy
 
