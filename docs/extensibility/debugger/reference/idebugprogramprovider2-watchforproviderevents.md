@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c9e660e27397c530d4ef06c8ddfa3312ee4888cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458984"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203730"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Umožňuje proces oznámení o událostech portu.
@@ -50,9 +50,8 @@ int WatchForProviderEvents(
 ```
 
 ## <a name="parameters"></a>Parametry
- `Flags`\
-
- [in] Kombinace příznaků z [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) výčtu. Následující příznaky jsou typické pro toto volání:
+`Flags`\
+[in] Kombinace příznaků z [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) výčtu. Následující příznaky jsou typické pro toto volání:
 
 |Příznak|Popis|
 |----------|-----------------|
@@ -61,25 +60,20 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Volající, byl připojený k ale není spuštěn pomocí ladicího programu.|
 |`PFLAG_REASON_WATCH`|Volající vyžaduje sledovat události. Pokud tento příznak není nastavený. pak odebrat událost zpětného volání a volající už nebude dostávat oznámení.|
 
- `pPort`\
+`pPort`\
+[in] Port volající proces běží na.
 
- [in] Port volající proces běží na.
+`processId`\
+[in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktura obsahující dotyčný ID procesu, který obsahuje program.
 
- `processId`\
+`EngineFilter`\
+[in] Pole identifikátorů GUID ladicími stroji spojených s procesem.
 
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktura obsahující dotyčný ID procesu, který obsahuje program.
+`guidLaunchingEngine`\
+[in] Identifikátor GUID ladicího stroje, který spustil tento proces (pokud existuje).
 
- `EngineFilter`\
-
- [in] Pole identifikátorů GUID ladicími stroji spojených s procesem.
-
- `guidLaunchingEngine`\
-
- [in] Identifikátor GUID ladicího stroje, který spustil tento proces (pokud existuje).
-
- `pEventCallback`\
-
- [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) objekt, který obdrží oznámení události.
+`pEventCallback`\
+[in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) objekt, který obdrží oznámení události.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

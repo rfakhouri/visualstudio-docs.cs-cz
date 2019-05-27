@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08534abc468ac358d7c5eeba25129d9752f84e5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0dfbe855f5bdcbfda384e7a9a180fc8f86595b85
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872825"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211939"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 Určuje, zda konkrétní vlastního atributu je definována.
@@ -36,13 +39,12 @@ int IsCustomAttributeDefined(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pszCustomAttributeName`
-
- [in] Řetězec obsahující název vlastního atributu k vyhledání.
+## <a name="parameters"></a>Parametry
+`pszCustomAttributeName`\
+[in] Řetězec obsahující název vlastního atributu k vyhledání.
 
 ## <a name="return-value"></a>Návratová hodnota
  Vrátí že hodnotu S_OK Pokud vlastního atributu je definována na tuto metodu, v opačném případě vrátí S_FALSE.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

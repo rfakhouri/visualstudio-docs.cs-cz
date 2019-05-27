@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c1bf5f210d9b37b35d43a393a25b1c9df44a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8a1b714856811ccd9b8e95d074cfc95740e27e5f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875878"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205520"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Umožňuje automatické připojení pro zadanou ladicí stroj.
@@ -42,22 +45,18 @@ int EnableAutoAttach(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `rgguidSpecificEngines`
+## <a name="parameters"></a>Parametry
+`rgguidSpecificEngines`\
+[in] Pole identifikátorů GUID pro každý ladicí stroj označit jako automatické připojení.
 
- [in] Pole identifikátorů GUID pro každý ladicí stroj označit jako automatické připojení.
+`celtSpecificEngines`\
+[in] Počet modulů, zadaný v `rgguidSpecificEngines`.
 
- `celtSpecificEngines`
+`pszStartPageUrl`\
+[in] Počáteční adresa URL má použít při připojení automaticky.
 
- [in] Počet modulů, zadaný v `rgguidSpecificEngines`.
-
- `pszStartPageUrl`
-
- [in] Počáteční adresa URL má použít při připojení automaticky.
-
- `pbstrSessionID`
-
- [out] ID relace, která byla automaticky připojen.
+`pbstrSessionID`\
+[out] ID relace, která byla automaticky připojen.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Jeden kód chyby: `E_AUTO_ATTACH_NOT_REGISTERED`, což znamená, že objekt pro vytváření tříd auto-attach nebyl registrován.
@@ -65,5 +64,5 @@ int EnableAutoAttach(
 ## <a name="remarks"></a>Poznámky
  Když se spustí program přidružený k zadané adrese URL, zadaný ladicími stroji automaticky zahájení a připojené.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

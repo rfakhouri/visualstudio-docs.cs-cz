@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3c8349b8a7f7b823d4596f167889a227b166b7a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e3661186357e82170cc67f6e3744e8662ebae76c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457372"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212131"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 Načte hodnotu, která odpovídá zadané metriky vyhodnocovací filtr výrazů.
@@ -44,21 +44,17 @@ private int GetEEMetricDword(
 ```
 
 ## <a name="parameters"></a>Parametry
- `guidLang`\
+`guidLang`\
+[in] Jedinečný identifikátor programovací jazyk.
 
- [in] Jedinečný identifikátor programovací jazyk.
+`guidVendor`\
+[in] Jedinečný identifikátor na dodavatele.
 
- `guidVendor`\
+`pszMetric`\
+[in] Název metriky.
 
- [in] Jedinečný identifikátor na dodavatele.
-
- `pszMetric`\
-
- [in] Název metriky.
-
- `pdwValue`\
-
- [out] Vrátí hodnotu, která odpovídá na metriky řetězec.
+`pdwValue`\
+[out] Vrátí hodnotu, která odpovídá na metriky řetězec.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

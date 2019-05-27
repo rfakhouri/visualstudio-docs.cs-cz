@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e800d8d57d34c0ed99cb3cfa9a3f6a7b871a034d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4a6b6a516e9827a05eb7eb2c36bee408ad3a5587
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458609"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212127"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 Načte soubor metriky Chyba při vyhodnocování výrazu danou název nebo metriku.
@@ -44,21 +44,17 @@ private int GetEEMetricFile(
 ```
 
 ## <a name="parameters"></a>Parametry
- `guidLang`\
+`guidLang`\
+[in] Jedinečný identifikátor programovací jazyk.
 
- [in] Jedinečný identifikátor programovací jazyk.
+`guidVendor`\
+[in] Jedinečný identifikátor na dodavatele.
 
- `guidVendor`\
+`pszMetric`\
+[in] Název metriky.
 
- [in] Jedinečný identifikátor na dodavatele.
-
- `pszMetric`\
-
- [in] Název metriky.
-
- `pbstrValue`\
-
- [out] Vrátí obsah souboru metriky jako řetězec.
+`pbstrValue`\
+[out] Vrátí obsah souboru metriky jako řetězec.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

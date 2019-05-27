@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45919c6c9fafceecca2cb53fa9c2c9f43b68e382
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 26f88e6e955b83bf96b0664ffc6daba9a5430aa9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870003"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203952"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 Získá název, popisný název nebo název souboru hostitelského procesu tohoto programu.
@@ -38,14 +41,12 @@ int GetHostName( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dwType`
+## <a name="parameters"></a>Parametry
+`dwType`\
+[in] Hodnota z [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) výčtu.
 
- [in] Hodnota z [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) výčtu.
-
- `pbstrHostName`
-
- [out] Vrátí název požadovaného hostitelského procesu.
+`pbstrHostName`\
+[out] Vrátí název požadovaného hostitelského procesu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -53,6 +54,6 @@ int GetHostName( 
 ## <a name="remarks"></a>Poznámky
  V typické implementace této metody `dwType` parametr je ignorován a vrátí se popisný název hostitelského počítače. Další možnou implementaci je předat `dwType` parametr volání [gethostname –](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metodu k získání názvu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)
 - [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

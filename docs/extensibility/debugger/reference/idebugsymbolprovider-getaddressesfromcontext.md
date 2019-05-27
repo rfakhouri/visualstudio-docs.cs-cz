@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77306706c15be37a975742be917523095bec587f
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a0d759e310128f641b063ba30430f88780fc41fa
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226435"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207344"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Tato metoda mapuje kontext dokumentu do pole adresy ladění.
@@ -46,21 +46,17 @@ int GetAddressesFromContext(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pDocContext`\
+`pDocContext`\
+[in] Kontext dokumentu.
 
- [in] Kontext dokumentu.
+`fStatmentOnly`\
+[in] Pokud je hodnota TRUE, omezí ladění adresy, které mají jeden příkaz.
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out] Vrátí enumerátor pro počáteční ladění adresy přidružené k tomuto prohlášení nebo řádku.
 
- [in] Pokud je hodnota TRUE, omezí ladění adresy, které mají jeden příkaz.
-
- `ppEnumBegAddresses`\
-
- [out] Vrátí enumerátor pro počáteční ladění adresy přidružené k tomuto prohlášení nebo řádku.
-
- `ppEnumEndAddresses`\
-
- [out] Vrátí [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerátor pro koncové adresy ladění přidružené k tomuto prohlášení nebo řádku.
+`ppEnumEndAddresses`\
+[out] Vrátí [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerátor pro koncové adresy ladění přidružené k tomuto prohlášení nebo řádku.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

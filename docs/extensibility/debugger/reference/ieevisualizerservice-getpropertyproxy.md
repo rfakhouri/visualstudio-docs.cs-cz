@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 64a05032118588679efcc455953b76227a973319
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 4779bb213f67527c62876410e2fdc92263754ae9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225865"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203660"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 Tato metoda vrátí proxy pro objekt vlastnosti.
@@ -42,13 +42,11 @@ int GetPropertyProxy(
 ```
 
 ## <a name="parameters"></a>Parametry
- `dwID`\
+`dwID`\
+[in] ID vlastnosti proxy pro načtení.
 
- [in] ID vlastnosti proxy pro načtení.
-
- `proxy`\
-
- [out] Požadované implementované v proxy serveru [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) rozhraní.
+`proxy`\
+[out] Požadované implementované v proxy serveru [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) rozhraní.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

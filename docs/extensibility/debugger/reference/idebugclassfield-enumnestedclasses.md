@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 512329317ce1e9587848edf15c68f57fe112299e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cf46b0a143b61be6897caa0adb03ab40c375e7bb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876839"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206873"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 Vytvoří čítač pro třídy vnořené v této třídě.
@@ -36,10 +39,9 @@ int EnumNestedClasses(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`ppEnum`
-
- [out] Vrátí [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objekt představující seznam vnořené třídy. Vrátí hodnotu null, pokud neexistují žádné vnořené třídy.
+## <a name="parameters"></a>Parametry
+`ppEnum`\
+[out] Vrátí [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objekt představující seznam vnořené třídy. Vrátí hodnotu null, pokud neexistují žádné vnořené třídy.
 
 ## <a name="return-value"></a>Návratová hodnota
 V případě úspěchu vrátí hodnotu S_OK nebo vrátí S_FALSE v případě, že neexistují žádné vnořené třídy. V opačném případě vrátí kód chyby.
@@ -57,6 +59,6 @@ class RootClass {
 
 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) výčtu by obsahovat jeden objekt představující `NestedClass` třídy.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

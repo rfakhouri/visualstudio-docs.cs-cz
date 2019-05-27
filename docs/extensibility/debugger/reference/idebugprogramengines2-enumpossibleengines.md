@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dc3185b644a1045428ead9f2c9851916df3249c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d226650592881e9e7f87a5fbf5c700dfd7d817cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917029"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211148"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 Vrátí GUID pro všechny možné ladění motorů (DE), které můžete ladit tento program.
@@ -40,18 +43,15 @@ int EnumPossibleEngines( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `celtBuffer`
+## <a name="parameters"></a>Parametry
+`celtBuffer`\
+[in] Počet identifikátorů GUID DE vrátit. Také určuje maximální velikost `rgguidEngines` pole.
 
- [in] Počet identifikátorů GUID DE vrátit. Také určuje maximální velikost `rgguidEngines` pole.
+`rgguidEngines`\
+[out v] Pole DE identifikátory GUID pro vyplnění.
 
- `rgguidEngines`
-
- [out v] Pole DE identifikátory GUID pro vyplnění.
-
- `pceltEngines`
-
- [out] Vrátí skutečný počet DE identifikátory GUID, které jsou vráceny.
+`pceltEngines`\
+[out] Vrátí skutečný počet DE identifikátory GUID, které jsou vráceny.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Vrátí [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` nebo [C#] 0x8007007A, pokud vyrovnávací paměť není dostatečně velký.
@@ -59,5 +59,5 @@ int EnumPossibleEngines( 
 ## <a name="remarks"></a>Poznámky
  Aby bylo možné zjistit, kolik motory existuje jsou, volejte tuto metodu jednou se `celtBuffer` parametr nastaven na hodnotu 0 a `rgguidEngines` parametr nastaven na hodnotu null. Vrátí `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A pro jazyk C#) a `pceltEngines` parametr vrací potřebná velikost vyrovnávací paměti.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

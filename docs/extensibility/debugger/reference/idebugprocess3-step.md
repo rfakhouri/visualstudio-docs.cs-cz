@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 296c76a386b72c3435a90e207dd76f9eeca56422
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24adde5d1c1a89949861481a3d370219875c2eb1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412955"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210955"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Způsobí, že proces kroku jedna instrukce nebo příkaz.
@@ -43,18 +46,15 @@ int Step(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pThread`
+## <a name="parameters"></a>Parametry
+`pThread`\
+[in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt představující vlákna se stupňovitým.
 
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt představující vlákna se stupňovitým.
+`sk`\
+[in] Jeden z [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) hodnoty.
 
- `sk`
-
- [in] Jeden z [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) hodnoty.
-
- `step`
-
- [in] Jeden z [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) hodnoty.
+`step`\
+[in] Jeden z [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) hodnoty.
 
 ## <a name="return-value"></a>Návratová hodnota
  V případě úspěchu vrátí hodnotu S_OK; v opačném případě vrátí kód chyby.
@@ -64,7 +64,7 @@ int Step(
 
  **Upozornění** Neodesílat událostí ukončení nebo okamžité (synchronní) události, která [události](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) při zpracování tohoto volání; v opačném případě ladicí program může přestat reagovat.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)

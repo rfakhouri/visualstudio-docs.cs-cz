@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fec036357fb92563eba81c919ab32fea2e58c3b3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872447"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211283"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 Nastaví hodnotu objektu z po sobě jdoucích řady bajtů.
@@ -38,14 +41,12 @@ int SetValue(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pValue`
+## <a name="parameters"></a>Parametry
+`pValue`\
+[in] Pole bajtů představuje novou hodnotu.
 
- [in] Pole bajtů představuje novou hodnotu.
-
- `nSize`
-
- [in] Velikost hodnoty v bajtech.
+`nSize`\
+[in] Velikost hodnoty v bajtech.
 
 ## <a name="return-value"></a>Návratová hodnota
  V případě úspěchu vrátí hodnotu S_OK; v opačném případě vrátí kód chyby.
@@ -53,6 +54,6 @@ int SetValue(
 ## <a name="remarks"></a>Poznámky
  Hodnoty v poli se zkopírují do tohoto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objektu nahradí všechny existující hodnoty. Velikost je nová hodnota může být větší nebo menší než stávající hodnotu. To `IDebugObject` nemůže být referencí s hodnotou null.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

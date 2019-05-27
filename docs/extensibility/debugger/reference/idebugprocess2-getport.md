@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753a384d4873aa6b78b06853213c57a1d540a5e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a7885f43d10f2644071e993697b04024fea2bc40
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917828"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202596"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 Získá port, který je proces spuštěn na.
@@ -36,14 +39,13 @@ int GetPort( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppPort`
-
- [out] Vrátí [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objekt, který reprezentuje port, na kterém byl proces spuštěn.
+## <a name="parameters"></a>Parametry
+`ppPort`\
+[out] Vrátí [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objekt, který reprezentuje port, na kterém byl proces spuštěn.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

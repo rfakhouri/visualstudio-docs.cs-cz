@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81ee68246aa999c8ac610b9590f914388e6fbbf2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 598bb33739a31bd09c733dddb3279d043cd68c81
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876936"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206654"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 Získá referenci k rozhraní ladění procesu.
@@ -34,10 +37,9 @@ public int GetProcess(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`ppProcess`
-
- [out] Reference k rozhraní ladění procesu.
+## <a name="parameters"></a>Parametry
+`ppProcess`\
+[out] Reference k rozhraní ladění procesu.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -65,5 +67,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

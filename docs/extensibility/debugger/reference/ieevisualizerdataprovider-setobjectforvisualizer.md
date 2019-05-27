@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 31bc89e248d609e8b828d4cc5b9ac41c8e15c70c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223934"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203691"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Tato metoda se změní objekt, který představuje vizualizér.
@@ -44,17 +44,14 @@ int SetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pNewObject`\
+`pNewObject`\
+[in] Objekt, který chcete nastavit.
 
- [in] Objekt, který chcete nastavit.
+`error`\
+[out] Pokud došlo k chybě nastavení objektu, tento řetězec obsahuje chybovou zprávu.
 
- `error`\
-
- [out] Pokud došlo k chybě nastavení objektu, tento řetězec obsahuje chybovou zprávu.
-
- `pException`\
-
- [out] Pokud došlo k chybě, tento objekt obsahuje informace o výjimce.
+`pException`\
+[out] Pokud došlo k chybě, tento objekt obsahuje informace o výjimce.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

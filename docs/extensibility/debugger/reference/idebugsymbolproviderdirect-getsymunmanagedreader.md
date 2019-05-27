@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 452866f885bb438589474bbb82e88e10300d988d
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: d73e04572a122c0bc6b3d3885b9806c54077fa83
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224162"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206935"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 Načte modul pro načítání symbolů pro nespravovaný kód.
@@ -43,17 +43,14 @@ int GetSymUnmanagedReader (
 ```
 
 ## <a name="parameters"></a>Parametry
- `ulAppDomainID`\
+`ulAppDomainID`\
+[in] Identifikátor domény aplikace.
 
- [in] Identifikátor domény aplikace.
+`guidModule`\
+[in] Jedinečný identifikátor modulu.
 
- `guidModule`\
-
- [in] Jedinečný identifikátor modulu.
-
- `ppSymUnmanagedReader`\
-
- [out] Vrátí objekt, který představuje modul pro načítání symbolů pro nespravovaný kód.
+`ppSymUnmanagedReader`\
+[out] Vrátí objekt, který představuje modul pro načítání symbolů pro nespravovaný kód.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

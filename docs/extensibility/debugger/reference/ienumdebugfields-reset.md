@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6bf669261a3ece31e452227b7c93d7ce8bf07c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4b123d1fa644873619d1db512da42031d2ee15ea
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914632"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208057"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 Tato metoda resetuje na první prvek výčtu.
@@ -41,6 +44,6 @@ int Reset();
 ## <a name="remarks"></a>Poznámky
  Až tato metoda je volána, další volání [Další](../../../extensibility/debugger/reference/ienumdebugfields-next.md) vrátí první prvek výčtu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [Next](../../../extensibility/debugger/reference/ienumdebugfields-next.md)

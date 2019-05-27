@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8936ab07f4df7b2e2295fae4192bca79205429ac
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 3a0d128666d3836495dd3169720bc6e58f6ef11e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224144"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207261"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 Tato metoda načte pole s údajem o adresa pro ladění.
@@ -42,13 +42,11 @@ int GetContainerField(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pAddress`\
+`pAddress`\
+[in] Adresa reprezentovaná [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) rozhraní.
 
- [in] Adresa reprezentovaná [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) rozhraní.
-
- `ppContainerField`\
-
- [out] Vrátí pole kontejneru reprezentována [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) rozhraní.
+`ppContainerField`\
+[out] Vrátí pole kontejneru reprezentována [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) rozhraní.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

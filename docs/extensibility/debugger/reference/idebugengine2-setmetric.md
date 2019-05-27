@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 325cd30a49fb636c56eebd9e6301b3999e851363
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 19c7a45647e20c72b7f446e2fb53667195f94f6a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920878"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207487"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
 Tato metoda nastaví hodnotu registru označované jako metriku.
@@ -38,14 +41,12 @@ int SetMetric(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pszMetric`
+## <a name="parameters"></a>Parametry
+`pszMetric`\
+[in] Název metriky.
 
- [in] Název metriky.
-
- `varValue`
-
- [in] Určuje hodnotu metriky.
+`varValue`\
+[in] Určuje hodnotu metriky.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -53,6 +54,6 @@ int SetMetric(
 ## <a name="remarks"></a>Poznámky
  Metrika je hodnota registru použít ke změně chování ladicího stroje nebo inzerovat podporované funkce. Tato metoda může předávat voláním příslušné formu [Pomocníci sad SDK pro ladění](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) funkci `SetMetric`.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [Pomocníci sad SDK pro ladění](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

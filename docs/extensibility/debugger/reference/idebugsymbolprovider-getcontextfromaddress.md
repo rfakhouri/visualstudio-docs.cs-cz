@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62c24adcc94b6dff82d3529658b563f811745c28
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a7697f22dc6c40b9b4e3de08bf6f27f0ed459482
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226536"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207213"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
 Tato metoda mapuje adresu ladění do kontextu dokumentu.
@@ -42,13 +42,11 @@ int GetContextFromAddress(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pAddress`\
+`pAddress`\
+[in] Adresa pro ladění reprezentovaná [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) rozhraní.
 
- [in] Adresa pro ladění reprezentovaná [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) rozhraní.
-
- `ppDocContext`\
-
- [out] Vrátí kontext dokumentu reprezentovaná [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) rozhraní.
+`ppDocContext`\
+[out] Vrátí kontext dokumentu reprezentovaná [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) rozhraní.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

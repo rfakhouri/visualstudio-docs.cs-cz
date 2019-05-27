@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17ba4ac3deb72185094c0f943adf5a2ae235fa95
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: c2b6a97dd00edc66699fbf815ed56031ed74ac3b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224066"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207041"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 Načte informace o import metadat.
@@ -43,17 +43,14 @@ int GetMetaDataImport (
 ```
 
 ## <a name="parameters"></a>Parametry
- `guid`\
+`guid`\
+[in] Jedinečný identifikátor pro modul.
 
- [in] Jedinečný identifikátor pro modul.
+`appID`\
+[in] Identifikátor pro doménu aplikace.
 
- `appID`\
-
- [in] Identifikátor pro doménu aplikace.
-
- `ppImport`\
-
- [out] Vrátí objekt, který obsahuje metadata importovat informace.
+`ppImport`\
+[out] Vrátí objekt, který obsahuje metadata importovat informace.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

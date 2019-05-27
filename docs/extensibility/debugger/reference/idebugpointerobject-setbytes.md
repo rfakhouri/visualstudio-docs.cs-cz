@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e54a7f38eed85ffe2757b373de1af59e1aaa126b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5b574e28ac0b42f065bfbf056188c655797e542b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842714"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209342"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 Nastaví hodnotu, na který je odkazováno v řadě po sobě jdoucích bajtů.
@@ -42,22 +45,18 @@ int SetBytes(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dwStart`
+## <a name="parameters"></a>Parametry
+`dwStart`\
+[in] Posun v bajtech od začátku objekt odkazoval.
 
- [in] Posun v bajtech od začátku objekt odkazoval.
+`dwCount`\
+[in] Počet bajtů, které mají nastavit.
 
- `dwCount`
+`pBytes`\
+[in] Pole bajtů představuje novou hodnotu. Tato hodnota bude uložena do objektu, spuštění na dané pozici.
 
- [in] Počet bajtů, které mají nastavit.
-
- `pBytes`
-
- [in] Pole bajtů představuje novou hodnotu. Tato hodnota bude uložena do objektu, spuštění na dané pozici.
-
- `pdwBytes`
-
- [out] Vrátí že počet bajtů ve skutečnosti nastavit.
+`pdwBytes`\
+[out] Vrátí že počet bajtů ve skutečnosti nastavit.
 
 ## <a name="return-value"></a>Návratová hodnota
  V případě úspěchu vrátí hodnotu S_OK; v opačném případě vrátí kód chyby.
@@ -65,6 +64,6 @@ int SetBytes(
 ## <a name="remarks"></a>Poznámky
  Tato metoda se používá, pokud ukazatel reprezentovaný tímto objektem [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) odkazuje na primitivní typ nebo jednoduchý pole primitivní typy (to znamená, pole, které může být reprezentován jednoduché pořadí bajtů). To `IDebugPointerObject` objektu nemůže být nulový odkaz (musí odkazovat na adresu v paměti).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

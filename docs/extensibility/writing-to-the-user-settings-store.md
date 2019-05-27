@@ -1,6 +1,6 @@
 ---
 title: Zápis do Store nastavení uživatele | Dokumentace Microsoftu
-ms.date: 11/04/2016
+ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: gregvanl
@@ -8,36 +8,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fe8187fe11f4818433aed847a7bc67d4a889ad3a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444908"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206886"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Zápis do úložiště uživatelských nastavení
 Uživatelská nastavení jsou zapisovatelné nastavení, jako je v **Nástroje / možnosti** dialogového okna, okna vlastností a některých dalších dialogových oknech. Rozšíření sady Visual Studio může použít k ukládání malé množství dat. Tento návod ukazuje, jak přidat program Poznámkový blok se sadou Visual Studio jako externího nástroje ve čtení a zápisu do úložiště uživatelských nastavení.
-
-### <a name="backing-up-your-user-settings"></a>Zálohování nastavení uživatele
-
-1. Musíte být schopni obnovit nastavení externí nástroje, aby mohli ladit a opakujte tento postup. Chcete-li to provést, musíte uložit původní nastavení tak, aby je mohli obnovit podle potřeby.
-
-2. Otevřete Regedit.exe.
-
-3. Přejděte na nástroje HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.
-
-    > [!NOTE]
-    > Ujistěte se, že máte před sebou klíč, který obsahuje \14.0Exp\ a ne \14.0\\. Když spustíte experimentální instanci sady Visual Studio, uživatelská nastavení jsou v podregistru "14.0Exp".
-
-4. Klikněte pravým tlačítkem na podklíč \External Tools\ a potom klikněte na tlačítko **exportovat**. Ujistěte se, že **Vybraná větev** zaškrtnuto.
-
-5. Výsledný soubor externí Tools.reg uložte.
-
-6. Později, pokud chcete obnovit nastavení externí nástroje, vyberte klíč registru HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ a klikněte na tlačítko **odstranit** v místní nabídce.
-
-7. Když **Potvrdit odstranění klíče** dialogové okno se zobrazí, klikněte na tlačítko **Ano**.
-
-8. Klikněte pravým tlačítkem na externí Tools.reg soubor, který jste předtím uložili, klikněte na tlačítko **otevřít v programu**a potom klikněte na tlačítko **Editor registru**.
 
 ## <a name="writing-to-the-user-settings-store"></a>Zápis do úložiště uživatelských nastavení
 

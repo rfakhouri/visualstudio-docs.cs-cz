@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5205cfbda0420e45fc1e22dac678d97975f937a8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457615"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212175"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Vytvoří výčet vyhodnocení výrazu dostupné zadané identifikátory jazyka a dodavatele.
@@ -44,21 +44,17 @@ public int EnumEEs(
 ```
 
 ## <a name="parameters"></a>Parametry
- `celtBuffer`\
+`celtBuffer`\
+[in] Počet prvků v objektu `pceltEEs` vyrovnávací paměti.
 
- [in] Počet prvků v objektu `pceltEEs` vyrovnávací paměti.
+`rgguidLang`\
+[out v] Jedinečný identifikátor pro programovací jazyk.
 
- `rgguidLang`\
+`rgguidVendor`\
+[out v] Jedinečný identifikátor pro dodavatele.
 
- [out v] Jedinečný identifikátor pro programovací jazyk.
-
- `rgguidVendor`\
-
- [out v] Jedinečný identifikátor pro dodavatele.
-
- `pceltEEs`\
-
- [out v] Pole vyhodnocovače výrazů.
+`pceltEEs`\
+[out v] Pole vyhodnocovače výrazů.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

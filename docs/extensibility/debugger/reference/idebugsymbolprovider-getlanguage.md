@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 071dac72e39a3cce5b0b17dc9e401b9072efda6a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 86429e4ffe46fc182ea923f249bd5492dd433812
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224054"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207196"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 Tato metoda načte jazyk, ve kterém byla použita pro kompilaci kódu na adrese ladění.
@@ -44,17 +44,14 @@ int GetLanguage(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pAddress`\
+`pAddress`\
+[in] Adresa objektu reprezentována [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) rozhraní.
 
- [in] Adresa objektu reprezentována [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) rozhraní.
+`pguidLanguage`\
+[out] Vrátí `GUID` , který určuje jazyk.
 
- `pguidLanguage`\
-
- [out] Vrátí `GUID` , který určuje jazyk.
-
- `pguidLanguageVendor`\
-
- [out] Vrátí `GUID` , který určuje jazyk dodavatele.
+`pguidLanguageVendor`\
+[out] Vrátí `GUID` , který určuje jazyk dodavatele.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

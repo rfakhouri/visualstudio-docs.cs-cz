@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe8b6768bf67cab4a4d69e82c509db0bd6f93543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1b03fe660cd6b909c1d86871556e4f0e6ecb945
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917258"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212293"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 Získá název a identifikátor GUID ladicího stroje (DE) spuštění tohoto programu.
@@ -38,14 +41,12 @@ int GetEngineInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pbstrEngine`
+## <a name="parameters"></a>Parametry
+`pbstrEngine`\
+[out] Vrátí název DE spuštěním tohoto programu.
 
- [out] Vrátí název DE spuštěním tohoto programu.
-
- `pguidEngine`
-
- [out] Vrátí identifikátor GUID DE spuštěním tohoto programu.
+`pguidEngine`\
+[out] Vrátí identifikátor GUID DE spuštěním tohoto programu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -53,5 +54,5 @@ int GetEngineInfo( 
 ## <a name="remarks"></a>Poznámky
  Každý DE definuje vlastní identifikátor GUID pro identifikaci.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

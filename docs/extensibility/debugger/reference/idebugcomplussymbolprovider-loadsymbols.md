@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c19070dce95a1f88398fe57d03e9d578086e9ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa910e483e4c743058d3671d8b873c5f88b4269e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922445"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206152"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 Načte zadaný ladicí symboly v paměti.
@@ -45,30 +48,24 @@ int LoadSymbols(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`ulAppDomainID`
+## <a name="parameters"></a>Parametry
+`ulAppDomainID`\
+[in] Identifikátor domény aplikace.
 
- [in] Identifikátor domény aplikace.
+`guidModule`\
+[in] Jedinečný identifikátor mondule.
 
-`guidModule`
+`baseAddress`\
+[in] Adresa základní paměti.
 
- [in] Jedinečný identifikátor mondule.
+`pUnkMetadataImport`\
+[in] Objekt, který obsahuje metadata pro symbol.
 
-`baseAddress`
+`bstrModuleName`\
+[in] Název modulu.
 
- [in] Adresa základní paměti.
-
-`pUnkMetadataImport`
-
- [in] Objekt, který obsahuje metadata pro symbol.
-
-`bstrModuleName`
-
- [in] Název modulu.
-
-`bstrSymSearchPath`
-
- [in] Cesta pro hledání souborů symbolů.
+`bstrSymSearchPath`\
+[in] Cesta pro hledání souborů symbolů.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -89,5 +86,5 @@ HRESULT CDebugSymbolProvider::LoadSymbols(
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

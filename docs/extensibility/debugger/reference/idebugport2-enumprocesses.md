@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a57768a1e4a6176fc5485971bc6a2ad32701ec7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 258a31a20a53dfdf9b9573a7a8fb9f53be1fc9ac
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871885"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209333"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 Vrátí seznam všech procesů spuštěných na portu.
@@ -36,14 +39,13 @@ int EnumProcesses( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppEnum`
-
- [out] Vrátí [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) objekt, který obsahuje seznam všech procesů spuštěných na portu.
+## <a name="parameters"></a>Parametry
+`ppEnum`\
+[out] Vrátí [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) objekt, který obsahuje seznam všech procesů spuštěných na portu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c31d3a858af2886a27a51e22e131cb89b2234d6e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7ef0ce265bc63ce9a00fd748c50a338d52294557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459066"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211688"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Získá název a identifikátor ladicího stroje (DE) spuštění programu.
@@ -42,13 +42,11 @@ int GetEngineInfo(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pbstrEngine`\
+`pbstrEngine`\
+[out] Vrátí název DE spuštění programu (C++-konkrétní: to může být ukazatel s hodnotou null, která udává, že volající není zúčastněnými názvu modulu).
 
- [out] Vrátí název DE spuštění programu (C++-konkrétní: to může být ukazatel s hodnotou null, která udává, že volající není zúčastněnými názvu modulu).
-
- `pguidEngine`\
-
- [out] Vrátí globálně jedinečný identifikátor DE spuštění programu (C++-konkrétní: to může být ukazatel s hodnotou null, která udává, že volající nemá zájem o GUID modul).
+`pguidEngine`\
+[out] Vrátí globálně jedinečný identifikátor DE spuštění programu (C++-konkrétní: to může být ukazatel s hodnotou null, která udává, že volající nemá zájem o GUID modul).
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

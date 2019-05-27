@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa66f61c7e72f1c629fe664baf2c2a5dcc9631e2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7d9e2ff4b853baec5da19b4c62cffe4e86102736
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458894"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211606"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Získá rozšířené informace o vlastnosti.
@@ -42,13 +42,11 @@ int GetExtendedInfo ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `guidExtendedInfo`\
+`guidExtendedInfo`\
+[in] Identifikátor GUID, který určuje typ rozšířené informace, které se mají načíst. Podrobnosti najdete v části poznámky.
 
- [in] Identifikátor GUID, který určuje typ rozšířené informace, které se mají načíst. Podrobnosti najdete v části poznámky.
-
- `pExtendedInfo`\
-
- [out] Vrátí `VARIANT` (C++) nebo objekt (C#), který slouží k načtení informací o rozšířené vlastnosti. Například může vrátit tento parametr `IUnknown` rozhraní, které je možné zadávat dotazy pro [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) rozhraní. Podrobnosti najdete v části poznámky.
+`pExtendedInfo`\
+[out] Vrátí `VARIANT` (C++) nebo objekt (C#), který slouží k načtení informací o rozšířené vlastnosti. Například může vrátit tento parametr `IUnknown` rozhraní, které je možné zadávat dotazy pro [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) rozhraní. Podrobnosti najdete v části poznámky.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Vrátí `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` Pokud neexistuje žádné rozšířené informace, které se mají načíst.

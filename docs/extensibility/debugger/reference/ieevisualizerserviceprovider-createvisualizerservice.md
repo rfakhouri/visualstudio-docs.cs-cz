@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b45db093a451331de20b3f38bdf58f2669f0577
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: bacf4fffe9c4cf6a3f54bff8a941b5e680cd57cf
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223664"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210307"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 Tato metoda vytvoří vizualizační službou.
@@ -48,25 +48,20 @@ int CreateVisualizerService(
 ```
 
 ## <a name="parameters"></a>Parametry
- `binder`\
+`binder`\
+[in] [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) předán objekt [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md).
 
- [in] [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) předán objekt [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md).
+`pSymProv`\
+[in] [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) předán objekt `IDebugParsedExpression::EvaluateSync`.
 
- `pSymProv`\
+`pAddress`\
+[in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) předán objekt `IDebugParsedExression::EvaluateSync`.
 
- [in] [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) předán objekt `IDebugParsedExpression::EvaluateSync`.
+`dataProvider`\
+[in] Implementaci objektu [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) rozhraní (zadané ve vyhodnocovací filtr výrazů).
 
- `pAddress`\
-
- [in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) předán objekt `IDebugParsedExression::EvaluateSync`.
-
- `dataProvider`\
-
- [in] Implementaci objektu [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) rozhraní (zadané ve vyhodnocovací filtr výrazů).
-
- `ppService`\
-
- [out] Vytvořená služba.
+`ppService`\
+[out] Vytvořená služba.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d056b14da0b41cf26278fc1e8cd0087332b682f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e2a90093938493b4d44f734e470951bb5a385e92
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922671"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206264"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
 Určuje, že funkce na adrese zadaný ladění se odstranila.
@@ -34,10 +37,9 @@ int IsFunctionDeleted(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pAddress`
-
- [in] Adresa pro ladění reprezentována [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) rozhraní. Tato adresa musí být METHOD_ADDRESS.
+## <a name="parameters"></a>Parametry
+`pAddress`\
+[in] Adresa pro ladění reprezentována [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) rozhraní. Tato adresa musí být METHOD_ADDRESS.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud funkce je odstraněn, vrátí `S_OK`. Pokud je funkce existuje, vrátí `S_FALSE`.
@@ -90,5 +92,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9967351e4b0654a21cab21c2f17eedcbcb471fff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7afcf34153c6910820068cfbea7e67b08568223a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919391"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212190"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 Tato metoda načte typ pole.
@@ -36,14 +39,13 @@ int GetKind(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pdwKind`
-
- [out] Vrátí typ pole jako kombinace [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) konstanty.
+## <a name="parameters"></a>Parametry
+`pdwKind`\
+[out] Vrátí typ pole jako kombinace [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) konstanty.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

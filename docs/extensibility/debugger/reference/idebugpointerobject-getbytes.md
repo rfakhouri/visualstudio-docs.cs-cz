@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a2c93e032175ce556d5504ed8b3f57dcf619a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d108613c7a557c189a2c42880a5618b42e0bd3b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842701"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209393"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Získá hodnotu, na který je odkazováno jako řadu bajtů po sobě jdoucích.
@@ -42,22 +45,18 @@ int GetBytes(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `dwStart`
+## <a name="parameters"></a>Parametry
+`dwStart`\
+[in] Posun v bajtech od začátku objekt odkazoval.
 
- [in] Posun v bajtech od začátku objekt odkazoval.
+`dwCount`\
+[in] Počet bajtů k načtení.
 
- `dwCount`
+`pBytes`\
+[out v] Pole, které se vyplní hodnotou jako řadu bajtů po sobě jdoucích, spuštění na dané pozici z objektu odkazoval.
 
- [in] Počet bajtů k načtení.
-
- `pBytes`
-
- [out v] Pole, které se vyplní hodnotou jako řadu bajtů po sobě jdoucích, spuštění na dané pozici z objektu odkazoval.
-
- `pdwBytes`
-
- [out] Vrátí počet bajtů ve skutečnosti načíst.
+`pdwBytes`\
+[out] Vrátí počet bajtů ve skutečnosti načíst.
 
 ## <a name="return-value"></a>Návratová hodnota
  V případě úspěchu vrátí hodnotu S_OK; v opačném případě vrátí kód chyby.
@@ -65,6 +64,6 @@ int GetBytes(
 ## <a name="remarks"></a>Poznámky
  Tato metoda se používá, pokud ukazatel reprezentovaný tímto objektem [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) odkazuje na primitivní typ nebo jednoduchý pole primitivní typy (to znamená, pole, které může být reprezentován jednoduché pořadí bajtů).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
 - [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

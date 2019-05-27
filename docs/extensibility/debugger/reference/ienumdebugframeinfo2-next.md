@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e369527afb3c229e1f34202850312f38b0512537
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 387ed48b4a9f7172aeda19db1d3f3756d257768b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226559"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207941"
 ---
 # <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
 Vrátí další sadu elementů z výčtu.
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>Parametry
- `celt`\
+`celt`\
+[in] Počet prvků, které mají načíst. Také určuje maximální velikost `rgelt` pole.
 
- [in] Počet prvků, které mají načíst. Také určuje maximální velikost `rgelt` pole.
+`rgelt`\
+[out v] Pole [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) prvků, které mají být vyplněna.
 
- `rgelt`\
-
- [out v] Pole [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) prvků, které mají být vyplněna.
-
- `pceltFetched`\
-
- [out] Vrátí počet prvků ve skutečnosti vrácených v `rgelt`.
+`pceltFetched`\
+[out] Vrátí počet prvků ve skutečnosti vrácených v `rgelt`.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` pokud menší než požadovaný počet prvků, které může být vrácena; v opačném případě vrátí kód chyby.

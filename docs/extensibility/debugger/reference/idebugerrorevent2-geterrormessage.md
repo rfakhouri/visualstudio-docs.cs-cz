@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95b94dca9ef948a07b5c6458a9c8c53c8612eddd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55c36c6649b8ff2b1b0bebc57012970625a964b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920166"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199946"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 Vrátí informace, které umožňuje tvorbu čitelné chybovou zprávu.
@@ -46,30 +49,24 @@ int GetErrorMessage(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pMessageType`
+## <a name="parameters"></a>Parametry
+`pMessageType`\
+[out] Vrátí hodnotu z [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) výčet popisující typ zprávy.
 
- [out] Vrátí hodnotu z [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) výčet popisující typ zprávy.
+`pbstrErrorFormat`\
+[out] Formát závěrečná zpráva uživateli (podrobnosti viz "Poznámky").
 
- `pbstrErrorFormat`
+`hrErrorReason`\
+[out] Kód chyby zprávy je o.
 
- [out] Formát závěrečná zpráva uživateli (podrobnosti viz "Poznámky").
+`pdwType`\
+[out] Závažnost chyby (použijte MB_XXX konstanty pro `MessageBox`; například `MB_EXCLAMATION` nebo `MB_WARNING`).
 
- `hrErrorReason`
+`pbstrHelpFileName`\
+[out] Cesta k souboru nápovědy (nastavena na hodnotu null, pokud neexistuje žádný soubor nápovědy).
 
- [out] Kód chyby zprávy je o.
-
- `pdwType`
-
- [out] Závažnost chyby (použijte MB_XXX konstanty pro `MessageBox`; například `MB_EXCLAMATION` nebo `MB_WARNING`).
-
- `pbstrHelpFileName`
-
- [out] Cesta k souboru nápovědy (nastavena na hodnotu null, pokud neexistuje žádný soubor nápovědy).
-
- `pdwHelpId`
-
- [out] ID tématu nápovědy k zobrazení (nastavena na 0, pokud není žádná Nápověda).
+`pdwHelpId`\
+[out] ID tématu nápovědy k zobrazení (nastavena na 0, pokud není žádná Nápověda).
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -77,6 +74,6 @@ int GetErrorMessage(
 ## <a name="remarks"></a>Poznámky
  Chybová zpráva musí být formátována podle `"What I was doing.  %1"`. `"%1"` By pak vyměnit volajícím s chybovou zprávou, odvozený z kódu chyby (kterou vrací `hrErrorReason`). `pMessageType` Určuje parametr volající zobrazení poslední chybová zpráva.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
 - [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

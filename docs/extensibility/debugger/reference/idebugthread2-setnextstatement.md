@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b6aca1ef95a8ae88301181955828f08c7c38bed
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 918b61856577ae730ca72f180e614ee3982c917b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226703"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199490"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 Nastaví aktuální ukazatel příkazu v kontextu daného kódu.
@@ -42,17 +42,16 @@ int SetNextStatement ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `pStackFrame`\
- Vyhrazeno pro budoucí použití; Nastavte na hodnotu null.
+`pStackFrame`\
+Vyhrazeno pro budoucí použití; Nastavte na hodnotu null.
 
- `pCodeContext`\
-
- [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objekt, který popisuje umístění se pokračovalo v kódu a jeho kontext.
+`pCodeContext`\
+[in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objekt, který popisuje umístění se pokračovalo v kódu a jeho kontext.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. V následující tabulce jsou uvedeny další možné hodnoty.
 
-|Value|Popis|
+|Hodnota|Popis|
 |-----------|-----------------|
 |E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|Následující příkaz nelze v zásobníku hlouběji v zásobníku rámce.|
 |E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|Další příkaz není přidružené žádné rámce v zásobníku.|

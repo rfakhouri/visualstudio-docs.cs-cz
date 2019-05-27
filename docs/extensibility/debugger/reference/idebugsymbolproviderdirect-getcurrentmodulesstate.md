@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4db91b1495484adff076e959021b4791f1e62a29
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 9d67c266295a69fe3f045aa5329b0f6667766128
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458224"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207020"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 Načte informace o skupině symbol, který poskytovatel symbolů je jejím členem.
@@ -41,13 +41,11 @@ int GetCurrentModulesState(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pState`\
+`pState`\
+[out] Stav skupiny poskytovatele symbolů.
 
- [out] Stav skupiny poskytovatele symbolů.
-
- `count`\
-
- [out] Počet modulů ve skupině.
+`count`\
+[out] Počet modulů ve skupině.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

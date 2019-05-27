@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58132d73cd532acd0c89ad5258c6ba4a59b905fa
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a3cad87c74a00f2feac4390921be032ed3f8b6cc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458623"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212093"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 Načte hodnotu řetězce metriku Chyba při vyhodnocování výrazu jeho název.
@@ -44,21 +44,17 @@ private int GetEEMetricString(
 ```
 
 ## <a name="parameters"></a>Parametry
- `guidLang`\
+`guidLang`\
+[in] Jedinečný identifikátor programovací jazyk.
 
- [in] Jedinečný identifikátor programovací jazyk.
+`guidVendor`\
+[in] Jedinečný identifikátor na dodavatele.
 
- `guidVendor`\
+`pszMetric`\
+[in] Název metriky.
 
- [in] Jedinečný identifikátor na dodavatele.
-
- `pszMetric`\
-
- [in] Název metriky.
-
- `pbstrValue`\
-
- [out] Vrátí řetězec hodnota metriky.
+`pbstrValue`\
+[out] Vrátí řetězec hodnota metriky.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

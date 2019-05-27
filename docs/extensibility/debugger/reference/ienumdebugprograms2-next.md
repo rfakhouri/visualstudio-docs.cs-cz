@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1140e4a4fc966d93b6ca097fce98152437840b73
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 51199a245124fbccf991f9834e18b5aaac202ba4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223425"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211036"
 ---
 # <a name="ienumdebugprograms2next"></a>IEnumDebugPrograms2::Next
 Vrátí další sadu elementů z výčtu.
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>Parametry
- `celt`\
+`celt`\
+[in] Počet prvků, které mají načíst. Také určuje maximální velikost `rgelt` pole.
 
- [in] Počet prvků, které mají načíst. Také určuje maximální velikost `rgelt` pole.
+`rgelt`\
+[out v] Pole [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) prvků, které mají být vyplněna.
 
- `rgelt`\
-
- [out v] Pole [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) prvků, které mají být vyplněna.
-
- `pceltFetched`\
-
- [out] Vrátí počet prvků ve skutečnosti vrácených v `rgelt`.
+`pceltFetched`\
+[out] Vrátí počet prvků ve skutečnosti vrácených v `rgelt`.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` pokud menší než požadovaný počet prvků, které může být vrácena; v opačném případě vrátí kód chyby.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0f9097ae2db70f3743eb703bd6c654c4e464882
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ca6afee5cce069b212a2f1a88335d2fbce2e0427
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224103"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206900"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 Volá obslužnou rutinou události k načtení výsledků o proces načítání symbolů.
@@ -44,20 +44,17 @@ int GetSymbolSearchInfo(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pModule`\
+`pModule`\
+[out] IDebugModule3 objekt, který reprezentuje modul, pro kterou byly načteny symboly.
 
- [out] IDebugModule3 objekt, který reprezentuje modul, pro kterou byly načteny symboly.
-
- `pbstrDebugMessage`\
-
- [out v] Vrátí řetězec obsahující všechny chybové zprávy z modulu. Pokud se nezobrazí žádná chyba, tento řetězec bude obsahovat pouze název modulu ale nikdy je prázdný.
+`pbstrDebugMessage`\
+[out v] Vrátí řetězec obsahující všechny chybové zprávy z modulu. Pokud se nezobrazí žádná chyba, tento řetězec bude obsahovat pouze název modulu ale nikdy je prázdný.
 
 > [!NOTE]
 > [C++] `pbstrDebugMessage` nemůže být `NULL` a musí být uvolněna pomocí operátoru `SysFreeString`.
 
- `pdwModuleInfoFlags`\
-
- [out] Kombinace příznaků z [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) výčet označující, zda nebyly načteny žádné symboly.
+`pdwModuleInfoFlags`\
+[out] Kombinace příznaků z [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) výčet označující, zda nebyly načteny žádné symboly.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

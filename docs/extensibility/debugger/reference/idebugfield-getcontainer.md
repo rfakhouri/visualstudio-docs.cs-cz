@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 283e23a70b95e3882569dbb18dda7ba365b8b765
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08ce207a4961ed9345c46ca7d19390647dc514b1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919491"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212279"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 Tato metoda získá kontejner pole.
@@ -36,10 +39,9 @@ int GetContainer(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppContainerField`
-
- [out] Vrátí kontejner reprezentovaná [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) rozhraní.
+## <a name="parameters"></a>Parametry
+`ppContainerField`\
+[out] Vrátí kontejner reprezentovaná [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) rozhraní.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -47,6 +49,6 @@ int GetContainer(
 ## <a name="remarks"></a>Poznámky
  Pokud toto pole nemá kontejner, vrácený `ppContainerField` bude mít hodnotu null.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

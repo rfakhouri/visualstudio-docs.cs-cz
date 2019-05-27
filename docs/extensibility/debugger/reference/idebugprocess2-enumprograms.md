@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c044961a4b360c028c560adbea3d6faee09ee49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d7d3abe711ae75340826a2d5aa4755ad0d62b40e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917875"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202749"
 ---
 # <a name="idebugprocess2enumprograms"></a>IDebugProcess2::EnumPrograms
 Načte seznam všech programů, které jsou součástí tohoto procesu.
@@ -36,14 +39,13 @@ int EnumPrograms( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppEnum`
-
- [out] Vrátí [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) objekt, který obsahuje seznam všech programů v procesu.
+## <a name="parameters"></a>Parametry
+`ppEnum`\
+[out] Vrátí [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) objekt, který obsahuje seznam všech programů v procesu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d946097d7a8f50cab65b41aaef73654dfbd18a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d554c4906867ca28cfab295ebea80cca15dcc879
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918309"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209020"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Spustí spustitelný soubor.
@@ -50,38 +53,30 @@ int LaunchSuspended( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pszExe`
+## <a name="parameters"></a>Parametry
+`pszExe`\
+[in] Název spustitelného souboru, která se má spustit. To může být úplná cesta nebo relativní vzhledem k zadaný v pracovní adresář `pszDir` parametru.
 
- [in] Název spustitelného souboru, která se má spustit. To může být úplná cesta nebo relativní vzhledem k zadaný v pracovní adresář `pszDir` parametru.
+`pszArgs`\
+[in] Argumenty k předání do spustitelného souboru. Může mít hodnotu null, pokud nejsou žádné argumenty.
 
- `pszArgs`
+`pszDir`\
+[in] Název pracovní adresář, který používá spustitelný soubor. Může mít hodnotu null, pokud je potřeba žádné pracovní adresář.
 
- [in] Argumenty k předání do spustitelného souboru. Může mít hodnotu null, pokud nejsou žádné argumenty.
+`bstrEnv`\
+[in] Blok prostředí řetězec zakončený null, za nímž následuje další ukončovací znak NULL.
 
- `pszDir`
+`hStdInput`\
+[in] Popisovač alternativní vstupní datový proud. Může být 0, pokud se nevyžaduje přesměrování.
 
- [in] Název pracovní adresář, který používá spustitelný soubor. Může mít hodnotu null, pokud je potřeba žádné pracovní adresář.
+`hStdOutput`\
+[in] Popisovač alternativní výstupní datový proud. Může být 0, pokud se nevyžaduje přesměrování.
 
- `bstrEnv`
+`hStdError`\
+[in] Zpracování do výstupního datového proudu alternativní chyby. Může být 0, pokud se nevyžaduje přesměrování.
 
- [in] Blok prostředí řetězec zakončený null, za nímž následuje další ukončovací znak NULL.
-
- `hStdInput`
-
- [in] Popisovač alternativní vstupní datový proud. Může být 0, pokud se nevyžaduje přesměrování.
-
- `hStdOutput`
-
- [in] Popisovač alternativní výstupní datový proud. Může být 0, pokud se nevyžaduje přesměrování.
-
- `hStdError`
-
- [in] Zpracování do výstupního datového proudu alternativní chyby. Může být 0, pokud se nevyžaduje přesměrování.
-
- `ppPortProcess`
-
- [out] Vrátí [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objekt, který reprezentuje spuštěn proces.
+`ppPortProcess`\
+[out] Vrátí [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objekt, který reprezentuje spuštěn proces.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -91,7 +86,7 @@ int LaunchSuspended( 
 
  Program můžete také spustit z ladicího stroje. Podrobnosti najdete v tématu [spuštění programu](../../../extensibility/debugger/launching-a-program.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 947e3cfc4c3ca435fe545ab8834c9b0a0c778786
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bad83e609f597f28dd5e15af7b5013f49dde6db3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917243"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210251"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 Získá počet bajtů paměti obsazena program.
@@ -36,10 +39,9 @@ int GetMemoryBytes( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `ppMemoryBytes`
-
- [out] Vrátí [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objekt, který reprezentuje počet bajtů paměti programu.
+## <a name="parameters"></a>Parametry
+`ppMemoryBytes`\
+[out] Vrátí [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objekt, který reprezentuje počet bajtů paměti programu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -47,6 +49,6 @@ int GetMemoryBytes( 
 ## <a name="remarks"></a>Poznámky
  Počet bajtů paměti reprezentovaná [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) je pro bitovou kopii programu v paměti a není paměti, který byl přiřazen, když se program spustil.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

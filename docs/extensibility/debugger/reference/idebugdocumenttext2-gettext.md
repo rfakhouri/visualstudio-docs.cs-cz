@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 62ee27d9780ba1bb3941320604ade1d3cf16e5fc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875179"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203323"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Získá text ze zadaného umístění v dokumentu.
@@ -42,22 +45,18 @@ int GetText(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pos`
+## <a name="parameters"></a>Parametry
+`pos`\
+[in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktura, která označuje umístění textu, který se má načíst.
 
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktura, která označuje umístění textu, který se má načíst.
+`cMaxChars`\
+[in] Maximální počet znaků textu, který se má načíst.
 
-`cMaxChars`
+`pText`\
+[out v] Ukazatel do vyrovnávací paměti, která se vyplní požadovaný text. Tuto vyrovnávací paměť musí být schopen obsahovat alespoň `cMaxChars` počet širokých znaků.
 
- [in] Maximální počet znaků textu, který se má načíst.
-
-`pText`
-
- [out v] Ukazatel do vyrovnávací paměti, která se vyplní požadovaný text. Tuto vyrovnávací paměť musí být schopen obsahovat alespoň `cMaxChars` počet širokých znaků.
-
-`pcNumChars`
-
- [out] Vrátí počet znaků ve skutečnosti načíst.
+`pcNumChars`\
+[out] Vrátí počet znaků ve skutečnosti načíst.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -101,6 +100,6 @@ namespace Mynamespace
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
