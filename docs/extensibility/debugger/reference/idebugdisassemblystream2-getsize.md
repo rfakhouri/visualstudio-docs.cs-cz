@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d415c87c67c20880615d83c1201b4588a683719c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5f39d1d7243c887c131107a3abe2c103de163cc8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921643"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204914"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 Získá velikost v pokynech pro tento převod do strojového jazyka datového proudu.
@@ -36,10 +39,9 @@ int GetSize( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pnSize`
-
- [out] Vrátí velikost v pokynech.
+## <a name="parameters"></a>Parametry
+`pnSize`\
+[out] Vrátí velikost v pokynech.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -47,7 +49,7 @@ int GetSize( 
 ## <a name="remarks"></a>Poznámky
  Hodnota vrácená z této metody můžete použít k přidělení matici [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury, které je pak předán [čtení](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metody.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
 - [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

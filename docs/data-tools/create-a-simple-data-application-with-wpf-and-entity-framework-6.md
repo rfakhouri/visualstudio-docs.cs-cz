@@ -1,5 +1,5 @@
 ---
-title: Vytvoření jednoduché datové aplikace s použitím WPF a Entity Framework 6
+title: Jednoduché datové aplikace s použitím WPF a Entity Framework 6
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d67ca69856f48ec916f27498798cbb58efb3e5ac
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568591"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177366"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Vytvoření jednoduché datové aplikace s použitím WPF a Entity Framework 6
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Vytvoření jednoduché datové aplikace pomocí WPF a Entity Framework 6
 
 Tento návod ukazuje, jak vytvořit základní "formy nad daty" aplikace v sadě Visual Studio. Aplikace používá SQL Server LocalDB, Northwind databáze, Entity Framework 6 a Windows Presentation Foundation. Ukazuje, jak provést základní datové vazby seznam podrobnosti zobrazení a také obsahuje vlastní Navigátor vazby pomocí tlačítka pro **přesunout na další**, **přesunout na předchozí**, **přejděte od**, **Přesunout na konec**, **aktualizace** a **odstranit**.
 

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 310d2e3cd8c7f1caea4e245c7c591cd402afdaf4
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ba8a7ab97c9b2fc405e10eb70246a049b4083993
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458873"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200208"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 Nastaví hodnotu vlastnosti ze zadaného řetězce.
@@ -44,17 +44,14 @@ int SetValueAsString ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `pszValue`\
+`pszValue`\
+[in] Řetězec obsahující hodnotu, která se má nastavit.
 
- [in] Řetězec obsahující hodnotu, která se má nastavit.
+`nRadix`\
+[in] Základ, který se má použít při interpretaci jakékoli číselné informace. To může být 0 pokusí automaticky zjistit základ číselné soustavy.
 
- `nRadix`\
-
- [in] Základ, který se má použít při interpretaci jakékoli číselné informace. To může být 0 pokusí automaticky zjistit základ číselné soustavy.
-
- `dwTimeout`\
-
- [in] Určuje maximální dobu (v milisekundách) čekání před návratem z této metody. Použití `INFINITE` čekat po neomezenou dobu.
+`dwTimeout`\
+[in] Určuje maximální dobu (v milisekundách) čekání před návratem z této metody. Použití `INFINITE` čekat po neomezenou dobu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. V následující tabulce jsou uvedeny další možné hodnoty.

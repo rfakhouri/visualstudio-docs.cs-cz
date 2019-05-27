@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfec12193efda49a520a40418b93f2d4cef6b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ca86175d34cc1bfd54882adda7e1f7cb464fb22f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870186"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212638"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
 Získá identifikátor GUID tohoto programu.
@@ -36,10 +39,9 @@ int GetProgramId( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pguidProgramId`
-
- [out] Vrátí `GUID` tohoto programu.
+## <a name="parameters"></a>Parametry
+`pguidProgramId`\
+[out] Vrátí `GUID` tohoto programu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -47,7 +49,7 @@ int GetProgramId( 
 ## <a name="remarks"></a>Poznámky
  Ladicí stroj (DE) musí vrátit identifikátor programu původně předána [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) nebo [připojit](../../../extensibility/debugger/reference/idebugengine2-attach.md) metody. Díky tomu identifikace programu v ladicím programu komponenty.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)
 - [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)

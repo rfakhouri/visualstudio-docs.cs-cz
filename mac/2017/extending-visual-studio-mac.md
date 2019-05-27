@@ -152,7 +152,7 @@ Informace o rozsahu oblastí, které jsou k dispozici pro vývoj najdete v člá
 * Moduly testu jednotek
 * Generátory kódu
 * Fragmenty kódu
-* Cílová rozhraní
+* Cílové architektury
 * Cílový modul runtime
 * VC back EndY
 * Refaktoring

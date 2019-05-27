@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05f5987037e63c3c81585ba51deed72f06fd3278
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a6791c4a88ae0440dbc6cee12e0f5b5e353e0d69
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461086"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198788"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 Inicializuje zdrojová data pro tento objekt a vrátí objekt, který obsahuje původní data.
@@ -40,9 +40,8 @@ int InitSourceDataProvider(
 ```
 
 ## <a name="parameters"></a>Parametry
- `dataOut`\
-
- [out] Vrátí [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objektu
+`dataOut`\
+[out] Vrátí [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objektu
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd1987be34cf0f07ce5f37f074cd298a8135a4fa
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b9df2f37a6e8acb9f8e37d2fbd1a379bc4572b39
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226392"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199465"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 Pozastaví vlákno.
@@ -40,9 +40,8 @@ HRESULT Suspend ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `pdwSuspendCount`\
-
- [out] Vrátí počet pozastavení po provedení této operace pozastavit.
+`pdwSuspendCount`\
+[out] Vrátí počet pozastavení po provedení této operace pozastavit.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

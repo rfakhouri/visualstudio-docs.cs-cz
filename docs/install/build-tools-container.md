@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cd2294d3018aba3d2e7ff8a0c0737b32a05214c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce2fe1d40c0aeddf12a898919150a32c0c77d72e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974251"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177629"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalace Build Tools do kontejneru
 
@@ -64,12 +64,12 @@ Visual Studio Build Tools - a ve větší míře, Visual Studio – vyžadují v
 
 1. [Přepnout **základní** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) tlačítko **Upřesnit**.
 
-1. Přidejte následující pole vlastnost JSON zvětšete místo na disku na 120 GB (víc než dost pro Build Tools se místo pro růst).
+1. Přidejte následující pole vlastnost JSON zvětšete místo na disku 127 GB (víc než dost pro Build Tools se místo pro růst).
 
    ```json
    {
      "storage-opts": [
-       "size=120GB"
+       "size=127G"
      ]
    }
    ```
@@ -83,12 +83,14 @@ Visual Studio Build Tools - a ve větší míře, Visual Studio – vyžadují v
      "debug": true,
      "experimental": true,
      "storage-opts": [
-       "size=120GB"
+       "size=127G"
      ]
    }
    ```
 
-1. Klikněte na tlačítko **použít**.
+   Zobrazit [modul Docker na Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) další možnosti konfigurace a tipy.
+
+1. Klikněte na tlačítko **Použít**.
 
 **V systému Windows Server 2016**:
 
@@ -100,17 +102,17 @@ Visual Studio Build Tools - a ve větší míře, Visual Studio – vyžadují v
 
 1. Z příkazového řádku se zvýšenými oprávněními upravit "% ProgramData%\Docker\config\daemon.json" (nebo cokoli, co jste zadali pro `dockerd --config-file`).
 
-1. Přidejte následující pole vlastnost JSON zvětšete místo na disku na 120 GB (víc než dost pro Build Tools se místo pro růst).
+1. Přidejte následující pole vlastnost JSON zvětšete místo na disku 127 GB (víc než dost pro Build Tools se místo pro růst).
 
    ```json
    {
      "storage-opts": [
-       "size=120GB"
+       "size=120G"
      ]
    }
    ```
 
-   Tato vlastnost se přidá do všechno, co už máte.
+   Tato vlastnost se přidá do všechno, co už máte. Zobrazit [modul Docker na Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) další možnosti konfigurace a tipy.
  
 1. Soubor uložte a zavřete.
 
@@ -148,8 +150,8 @@ Uložte soubor Dockerfile v následujícím příkladu do nového souboru na dis
    ```dockerfile
    # escape=`
 
-   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
-   FROM microsoft/dotnet-framework:4.7.1
+   # Use the latest Windows Server Core image with .NET Framework 4.7.2.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
@@ -175,11 +177,11 @@ Uložte soubor Dockerfile v následujícím příkladu do nového souboru na dis
    ```
 
    > [!WARNING]
-   > Pokud vytváříte svou image přímo na microsoft/windowsservercore, nemusí správně nainstalovat rozhraní .NET Framework a je uvedena žádná chyba instalace. Po dokončení instalace nemusí spouštět spravovaný kód. Místo toho na základní image [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) nebo novější. Všimněte si také, že Image, které jsou označené verzí 4.7.1 nebo vyšší může pomocí prostředí PowerShell jako výchozí `SHELL`, což způsobí, že `RUN` a `ENTRYPOINT` pokyny k selhání.
+   > Pokud základní image přímo na microsoft/windowsservercore nebo mcr.microsoft.com/windows/servercore (naleznete v tématu [syndikátní Microsoft podniky kontejneru katalogu](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/)), nemusí správně nainstalovat rozhraní .NET Framework a je žádná chyba instalace uvedené. Po dokončení instalace nemusí spouštět spravovaný kód. Místo toho na základní image [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) nebo novější. Všimněte si také, že Image, které jsou označené verzí 4.7.1 nebo vyšší může pomocí prostředí PowerShell jako výchozí `SHELL`, což způsobí, že `RUN` a `ENTRYPOINT` pokyny k selhání.
    >
    > Visual Studio 2017 verze 15,8 nebo starší (libovolný produkt) nenainstaluje správně mcr\.microsoft\.com\/windows\/servercore:1809 nebo novější. Se nezobrazí žádná chyba.
    >
-   > Zobrazit [známé problémy pro kontejnery](build-tools-container-issues.md) Další informace.
+   > Zobrazit [Kompatibilita verzí kontejnerů Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) zobrazíte, které verze kontejneru operačního systému se podporují na hostitelském operačním systému verze, a [známé problémy pro kontejnery](build-tools-container-issues.md) známých problémů.
 
    ::: moniker-end
 
@@ -188,8 +190,8 @@ Uložte soubor Dockerfile v následujícím příkladu do nového souboru na dis
    ```dockerfile
    # escape=`
 
-   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
-   FROM microsoft/dotnet-framework:4.7.1
+   # Use the latest Windows Server Core image with .NET Framework 4.8.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
@@ -217,7 +219,7 @@ Uložte soubor Dockerfile v následujícím příkladu do nového souboru na dis
    > [!WARNING]
    > Pokud vytváříte svou image přímo na microsoft/windowsservercore, nemusí správně nainstalovat rozhraní .NET Framework a je uvedena žádná chyba instalace. Po dokončení instalace nemusí spouštět spravovaný kód. Místo toho na základní image [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) nebo novější. Všimněte si také, že Image, které jsou označené verzí 4.7.1 nebo vyšší může pomocí prostředí PowerShell jako výchozí `SHELL`, což způsobí, že `RUN` a `ENTRYPOINT` pokyny k selhání.
    >
-   > Zobrazit [známé problémy pro kontejnery](build-tools-container-issues.md) Další informace.
+   > Zobrazit [Kompatibilita verzí kontejnerů Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) zobrazíte, které verze kontejneru operačního systému se podporují na hostitelském operačním systému verze, a [známé problémy pro kontejnery](build-tools-container-issues.md) známých problémů.
 
    ::: moniker-end
 

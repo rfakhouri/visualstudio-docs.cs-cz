@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Zjistěte, jak můžete Azure DevOps jako předplatitel sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 9c10a8ec7e8ec71bee29f707e9abb8eb43f2b3c3
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: dbd08914123455fe0fc9db6dd6927dfe9e49b22e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945149"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177719"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps výhody pro předplatitele sady Visual Studio
 
@@ -26,12 +26,16 @@ Při přihlášení k Azure DevOps pomocí identity, který jste použili pro ak
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní, měsíčních cloudových)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup>, FTE  | Azure panely & úložišť (Basic), kanály Azure testovací plány, artefaktů Azure, Azure (v místním prostředí)       |  Ano          |
-| Visual Studio Professional (standardní, měsíčních cloudových) | VL, Azure, maloobchodní prodej                                        | Azure panely & úložišť (Basic)                                                            |  Ano          |
+| Visual Studio Enterprise (standardní, měsíčních cloudových)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup>, FTE  | Azure panely & úložišť (Basic), Azure testovací plány, Azure artefakty<sup>2</sup>, kanály Azure (v místním prostředí)       |  Ano          |
+| Visual Studio Professional (standardní, měsíčních cloudových) | VL, Azure, maloobchodní prodej                                        | Azure panely & úložišť (Basic), Azure artefakty<sup>2</sup>                                                            |  Ano          |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Azure panely & úložišť (Basic), Azure testovacích plánů                                              |  Ano          |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Azure panely & úložišť (Basic), Azure testovacích plánů                                              |  Ano          |
 
 <sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), nejcennější Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (organizace), BizSpark, MCT Software & služby pro vývojáře. Vyloučí: MCT Software & Services, Imagine.*
+
+<sup>2</sup>*zahrnuje 2 GB zdarma* 
+
+
 
 > [!NOTE]
 > Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.

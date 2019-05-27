@@ -43,6 +43,8 @@
                   href: fxcop-analyzer-options.md
             - name: Migrace ze statické analýzy kódu
               href: fxcop-analyzers.yml
+            - name: Přenesená pravidla
+              href: fxcop-rule-port-status.md
         - name: Nejčastější dotazy k analyzátorům
           href: analyzers-faq.md
         - name: Instalace analyzátorů Roslyn

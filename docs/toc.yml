@@ -99,7 +99,7 @@
               href: help-viewer/behavior-overrides.md
         - name: Odkaz
           items:
-            - name: ID sad funkcí a komponent sady Visual Studio
+            - name: ID úloh a komponent sady Visual Studio
               items:
                 - name: Přehled
                   displayName: Workload and component IDs
@@ -231,6 +231,8 @@
               items:
                 - name: Vytváření šablon projektů a položek
                   href: ide/creating-project-and-item-templates.md
+                - name: Přidání značek do šablony
+                  href: ide/template-tags.md
                 - name: Vytváření šablon projektu
                   href: ide/how-to-create-project-templates.md
                 - name: Vytváření šablon vícenásobného projektu

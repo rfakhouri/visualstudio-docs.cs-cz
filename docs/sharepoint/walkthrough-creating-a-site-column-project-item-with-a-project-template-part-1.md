@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1 | Dokumentace Microsoftu'
+title: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 60e4f4e035b381b8bfda8e14ee705471b0fad2b8
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430392"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177559"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1
   Projekty SharePoint jsou kontejnery pro jeden nebo více položek projektu služby SharePoint. Systém projektu služby SharePoint v sadě Visual Studio můžete rozšířit vytvořením vlastních typů položek projektu služby SharePoint a potom jejich přidružení šablony projektu. V tomto návodu bude definovat typ položky projektu pro vytvoření sloupce webu a pak vytvoříte šablonu projektu, který slouží k vytvoření nového projektu, který obsahuje položky projektu sloupce webu.

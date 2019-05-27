@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 43d8bd1a32328c47cd463fc6232466df5bdbd857
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d819f198c0eb3c298726ffb1c910b0a985406827
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461027"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212812"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Tato struktura představuje adresu metody třídy.
@@ -45,17 +45,14 @@ public struct METADATA_ADDRESS_METHOD {
 
 ## <a name="members"></a>Členové
  `tokMethod`\
-
  ID metody.
 
  [C++] `_mdToken` je `typedef` pro 32bitovou verzi `int`.
 
  `dwOffset`\
-
  Posun od začátku třídy k této metodě (může představovat posun v tabulce vtable).
 
  `dwVersion`\
-
  Verze – metoda (Tato hodnota je jedinečné pro poskytovatele symbolů).
 
 ## <a name="remarks"></a>Poznámky

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc04de6de270053e20e05a30312a298e9e6e2f0f
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891205"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177346"
 ---
 # <a name="create-a-software-development-kit"></a>Vytvořit sadu software development kit
 (SDK) software development kit je kolekce rozhraní API, která může odkazovat jako jedna položka v sadě Visual Studio. **Správce odkazů** dialogové okno obsahuje všechny sady SDK, které jsou relevantní pro projekt. Když přidáte sadu SDK do projektu, rozhraní API, jsou k dispozici v sadě Visual Studio.
@@ -34,7 +34,7 @@ ms.locfileid: "62891205"
  Sady SDK platformy jsou nezbytné pro vývoj aplikací pro platformu. Například [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK je vyžadována k vývoji aplikací pro [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Instalace
- Všechny platformy sady SDK se nainstalují na*sady SDK HKLM\Software\Microsoft\Microsoft\\\v [stopami na PALEC] [TPV]\\ @InstallationFolder = [kořeni sady SDK]*. Odpovídajícím způsobem [!INCLUDE[win81](../debugger/includes/win81_md.md)] sada SDK je nainstalovaná na *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
+ Všechny platformy sady SDK se nainstalují na *sady SDK HKLM\Software\Microsoft\Microsoft\\\v [stopami na PALEC] [TPV]\\ @InstallationFolder = [kořeni sady SDK]*. Odpovídajícím způsobem [!INCLUDE[win81](../debugger/includes/win81_md.md)] sada SDK je nainstalovaná na *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
 ### <a name="layout"></a>Rozložení
  Sady SDK platformy mají následující rozložení:
@@ -161,7 +161,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 2. ProductFamilyName: Název produktu celkové sady SDK. Například [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] SDK má název "Microsoft.WinJS.1.0" a "Microsoft.WinJS.2.0", které patří do stejné řady produktů sady SDK, "Microsoft.WinJS". Tento atribut umožňuje sady Visual Studio a nástroje MSBuild, aby toto připojení. Pokud tento atribut neexistuje, název sady SDK se používá jako název rodiny produktů.
 
-3. FrameworkIdentity: Určuje závislost na jeden nebo více knihoven Windows komponent, které hodnota tohoto atributu je vložit do manifestu aplikace náročné. Tento atribut se vztahuje pouze na knihovny součástí Windows.
+3. FrameworkIdentity: Určuje závislost na jeden nebo více součástí knihovny Windows. Hodnota tohoto atributu je vložit do manifestu náročné aplikace. Tento atribut se vztahuje pouze na knihovny součástí Windows.
 
 4. TargetFramework: Určuje sady SDK, které jsou k dispozici ve Správci odkazů a panelu nástrojů. Toto je seznam oddělený středníkem monikery cílové rozhraní framework, například "rozhraní .NET Framework, verze = verze 2.0, rozhraní .NET Framework, verze = v4.5.1". Pokud nejsou zadány několik verzí stejného cílovou architekturu, používá správce odkazů pro účely filtrování nejnižší zadaná verze. Například pokud "rozhraní .NET Framework, verze = verze 2.0, rozhraní .NET Framework, verze = v4.5.1" není zadán, použije Správce odkazů "rozhraní .NET Framework, verze = v2.0". Pokud je zadaný profil framework konkrétní cíl pouze tento profil se použije Správce odkazů pro účely filtrování. Například, když "Silverlight, verze = v4.0 profilu = WindowsPhone" není zadána, filtruje správce odkazů na pouze profilu Windows Phone; projekt, který cílí na úplné rozhraní Framework programu Silverlight 4.0 SDK ve Správci odkazů nezobrazí.
 

@@ -22,7 +22,8 @@
 ## [Vytváření nových projektů](create-new-projects.md)
 ## [Přidávání a odebírání projektových položek](add-and-remove-project-items.md)
 ## [Správa vlastností řešení a projektu](managing-solutions-and-project-properties.md)
-## [Správa odkazů v projektu](managing-references-in-a-project.md)
+## Správa odkazů v projektu
+### [Přehled](managing-references-in-a-project.md)
 ### [Návod: Zahrnutí balíčku NuGet do projektu](nuget-walkthrough.md)
 ## [Správa prostředků aplikace](managing-app-resources.md)
 ## [Postupy: Otevření více řešení nebo instancí](open-multiple-solutions.md)
@@ -49,7 +50,8 @@
 ## [Akce sestavení](build-actions.md)
 ## [Postupy: Nastavení více projektů po spuštění](set-startup-projects.md)
 ## [Přizpůsobení procesu sestavení](customizing-build-system.md)
-## [Konfigurace](configurations.md)
+## Konfigurace
+### [Principy konfigurací sestavení](configurations.md)
 ### [Vytvoření a úprava konfigurací](create-and-edit-configurations.md)
 
 # Správa verzí
@@ -65,16 +67,20 @@
 ## [Publikování do Azure App Service](publish-app-svc.md)
 ## [Publikování do složky](publish-folder.md)
 
-# Sady funkcí
+# Úkoly
 ## [Dostupné sady funkcí](workloads.md)
-## [ASP.NET Core](asp-net-core.md)
+## ASP.NET Core
+### [Podpora platformy .NET Core](net-core-support.md)
+### [Vytvoření vaší první aplikace ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript a TypeScript](javascript.md)
-## [Azure](azure-workload.md)
+## Azure
+### [Přehled](azure-workload.md)
 ### [Úvod do Azure Functions](azure-functions.md)
 ### [Kurz: Azure Functions](azure-functions-lab.md)
 ### [Připojené služby](connected-services.md)
-## [Vývoj her pro Unity](unity-tools.md)
+## Vývoj her pro Unity
+### [Vývoj her pro Unity](unity-tools.md)
 ### [Instalace a nastavení](setup-vsmac-tools-unity.md)
 ### [Používání nástrojů Unity](using-vsmac-tools-unity.md)
 ### [Používání .NET 4.x v Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)

@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aae81d575585c9a960b3405a35047853e5fe1f4e
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 1e93cfc4c8a1ddb618286f79513874f8f89a9481
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226013"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199437"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Vytvoří ukazatel na zadaného typu.
@@ -41,13 +41,11 @@ int CreatePointerToType(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pTypeField`\
+`pTypeField`\
+[in] Přejděte na typ. Je reprezentován [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) rozhraní.
 
- [in] Přejděte na typ. Je reprezentován [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) rozhraní.
-
- `pPtrToTypeField`\
-
- [out] Vrací ukazatele reprezentovaného tímto nový **IDebugField** objektu.
+`pPtrToTypeField`\
+[out] Vrací ukazatele reprezentovaného tímto nový **IDebugField** objektu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

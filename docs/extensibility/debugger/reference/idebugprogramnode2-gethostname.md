@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7fcf99f290938a6f51ce1e59ac1e14966206ee5b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8eb68be0164b7fd558c5f5a02c476db9e641d574
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459064"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199007"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 Získá název procesu, který je hostitelem programu.
@@ -43,12 +43,10 @@ int GetHostName (
 
 ## <a name="parameters"></a>Parametry
 `dwHostNameType`\
-
- [in] Hodnota z [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) výčet, který určuje typ název, který vrátí.
+[in] Hodnota z [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) výčet, který určuje typ název, který vrátí.
 
 `pbstrHostName`\
-
- [out] Vrátí název hostitelského procesu.
+[out] Vrátí název hostitelského procesu.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef63656e645611e13bfc6e0fcf1fb3a5cc339abc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7000e72ee69b90d873dd85689b97157e83dc6856
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876951"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212872"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 Získá typ umístění zarážky tohoto požadavku na zarážku.
@@ -36,10 +39,9 @@ int GetLocationType(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pBPLocationType`
-
- [out] Vrátí hodnotu z [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) výčet, který popisuje umístění této žádosti zarážku.
+## <a name="parameters"></a>Parametry
+`pBPLocationType`\
+[out] Vrátí hodnotu z [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) výčet, který popisuje umístění této žádosti zarážku.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Vrátí `E_FAIL` Pokud `bpLocation` pole v přidruženém [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) struktura není platná.
@@ -78,7 +80,7 @@ HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationTy
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)

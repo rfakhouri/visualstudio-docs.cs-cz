@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ac507c2eac00d025a36bed3e4c3461a6b3fab2f0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457284"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212867"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Získá vyjádření závislé na počítači rozsahu fyzické adresy přidružený blok zásobníku.
@@ -42,13 +42,11 @@ int GetPhysicalStackRange ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `paddrMin`\
+`paddrMin`\
+[out] Vrátí nejnižší fyzické adresy přidružené k tento rámec zásobníku.
 
- [out] Vrátí nejnižší fyzické adresy přidružené k tento rámec zásobníku.
-
- `paddrMax`\
-
- [out] Vrátí nejvyšší fyzické adresy přidružené k tento rámec zásobníku.
+`paddrMax`\
+[out] Vrátí nejvyšší fyzické adresy přidružené k tento rámec zásobníku.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

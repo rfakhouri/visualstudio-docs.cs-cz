@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 7edce84f512dd31963f38215e0d86e24c3d73b37
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224186"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199272"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Načte zadaný počet bajtů z objektu.
@@ -44,17 +44,14 @@ int GetData(
 ```
 
 ## <a name="parameters"></a>Parametry
- `dataSize`\
+`dataSize`\
+[in] Počet bajtů k načtení ( `data` pole musí obsahovat nejméně tento počet bajtů).
 
- [in] Počet bajtů k načtení ( `data` pole musí obsahovat nejméně tento počet bajtů).
+`sizeGotten`\
+[out] Vrátí počet bajtů ve skutečnosti načíst.
 
- `sizeGotten`\
-
- [out] Vrátí počet bajtů ve skutečnosti načíst.
-
- `data`\
-
- [out v] Pole se vyplní požadovaná data.
+`data`\
+[out v] Pole se vyplní požadovaná data.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

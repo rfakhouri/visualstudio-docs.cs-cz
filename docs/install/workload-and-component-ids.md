@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cda1d4c5dd53b3d4f582253a91c676024c78f31a
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: cdab0458d67bb13ffdd456e2e50e86d290444f3c
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037597"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177676"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>ID úloh a komponent sady Visual Studio
 
@@ -50,7 +50,7 @@ Další informace o tom, jak pomocí těchto seznamů, najdete v článku [použ
 
 ::: moniker range="vs-2019"
 
-**Updated for [Visual Studio 2019 RC](/visualstudio/releases/2019/release-notes/)**
+**Aktualizováno pro [16.1 vydání](/visualstudio/releases/2019/release-notes/)**
 
 | **Edice** | **ID** | **Popis** |
 | ----------- | ------ | --------------- |

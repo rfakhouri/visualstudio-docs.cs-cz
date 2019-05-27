@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3644a8d8b8834056e5cf61fc8647d5c47056208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c1c88d5b719b8d800ef13f890bb65cd5f6b68d58
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917486"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200478"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 Tato metoda dotazy pro hodnoty zadané vlastnosti ladění procesu.
@@ -36,14 +39,12 @@ int QueryProperties(
    out object[ ]              rgtPropValues);
 ```
 
-#### <a name="parameters"></a>Parametry
- `celt`
+## <a name="parameters"></a>Parametry
+`celt`\
+[in] Velikost pole obsahující definice vlastností a hodnot vlastností.
 
- [in] Velikost pole obsahující definice vlastností a hodnot vlastností.
-
- `dwPropType`
-
- [in] Pole, která obsahuje definice vlastnosti poslal dotaz. Možné hodnoty jsou:
+`dwPropType`\
+[in] Pole, která obsahuje definice vlastnosti poslal dotaz. Možné hodnoty jsou:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -51,7 +52,8 @@ int QueryProperties(
 
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
-  `pvarPropValue` [out] Pole obsahující hodnoty vlastností.
+`pvarPropValue`\
+[out] Pole obsahující hodnoty vlastností.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -59,5 +61,5 @@ int QueryProperties(
 ## <a name="remarks"></a>Poznámky
  Tato metoda se používá jen zřídka.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)
