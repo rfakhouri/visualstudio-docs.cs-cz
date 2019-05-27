@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77d92a65b77cbec94a6c74852393627af6763bad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 88eb307836fa2a340ec3ba99577fc0be76352958
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917381"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200402"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 Načte seznam kontexty kód pro danou pozici ve zdrojovém souboru.
@@ -38,14 +41,11 @@ int EnumCodeContexts( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pDocPos`
+## <a name="parameters"></a>Parametry
+`pDocPos`\
+[in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) objekt představující abstraktní pozice ve zdrojovém souboru ví, rozhraní IDE.
 
- [in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) objekt představující abstraktní pozice ve zdrojovém souboru ví, rozhraní IDE.
-
- `ppEnum`
-
- [out] Vrátí [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) objekt, který obsahuje seznam kontext kódu.
+`ppEnum` [out] Vrátí [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) objekt, který obsahuje seznam kontext kódu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -53,7 +53,7 @@ int EnumCodeContexts( 
 ## <a name="remarks"></a>Poznámky
  Tato metoda umožňuje ladicí relace správci nebo integrované vývojové prostředí pro mapování pozici zdrojového souboru na pozici kódu. Více než jeden kontext kódu je vrácena, pokud zdroj generuje více bloků kódu (například šablony jazyka C++).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f0f11c3b1770ca32b34f7a5480d5d56acc2b2478
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919986"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201050"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analyzuje výrazu v textové podobě pro pozdější vyhodnocení.
@@ -46,30 +49,24 @@ int ParseText(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pszCode`
+## <a name="parameters"></a>Parametry
+`pszCode`\
+[in] Výraz, který má být analyzován.
 
- [in] Výraz, který má být analyzován.
+`dwFlags`\
+[in] Kombinace příznaků z [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) výčet, který řídí, analýza kódu.
 
-`dwFlags`
+`nRadix`\
+[in] Základ číselné soustavy, který se má použít při analýze všechny informace numerické `pszCode`.
 
- [in] Kombinace příznaků z [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) výčet, který řídí, analýza kódu.
+`ppExpr`\
+[out] Vrátí [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objekt, který reprezentuje analyzovaný výraz, který je připravený pro vazby a hodnocení.
 
-`nRadix`
+`pbstrError`\
+[out] Vrátí chybovou zprávu, pokud výraz obsahuje chybu.
 
- [in] Základ číselné soustavy, který se má použít při analýze všechny informace numerické `pszCode`.
-
-`ppExpr`
-
- [out] Vrátí [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objekt, který reprezentuje analyzovaný výraz, který je připravený pro vazby a hodnocení.
-
-`pbstrError`
-
- [out] Vrátí chybovou zprávu, pokud výraz obsahuje chybu.
-
-`pichError`
-
- [out] Vrátí znakový index chyby v `pszCode` Pokud výraz obsahuje chybu.
+`pichError`\
+[out] Vrátí znakový index chyby v `pszCode` Pokud výraz obsahuje chybu.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -128,7 +125,7 @@ HRESULT CEnvBlock::ParseText(
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)
 - [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

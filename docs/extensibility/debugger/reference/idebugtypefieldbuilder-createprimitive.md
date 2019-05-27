@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 06e88c22cb367be5bfb3d9328da24b049a743889
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 4b6958d52ee7fb20a5eb1839f2ed926ae14b888a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223976"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199382"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 Vytvoří objekt, který představuje primitivního typu.
@@ -41,13 +41,11 @@ int CreatePrimitive (
 ```
 
 ## <a name="parameters"></a>Parametry
- `dwElementType`\
+`dwElementType`\
+[in] Hodnota z [corelementtype – výčet](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , která představuje primitivního typu.
 
- [in] Hodnota z [corelementtype – výčet](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , která představuje primitivního typu.
-
- `pTypeField`\
-
- [out] Vrátí rozhraní IDebugField nového typu.
+`pTypeField`\
+[out] Vrátí rozhraní IDebugField nového typu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

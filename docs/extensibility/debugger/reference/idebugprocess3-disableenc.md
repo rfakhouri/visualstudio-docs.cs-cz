@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cc26c9d2dae65d8bab0126be5a62b144ebf42b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 65f79b73eaa9b97630cc3ef3e84e1ba4198835c9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413287"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202362"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 Tato metoda explicitně zakáže upravit a pokračovat na tento proces (a všechny programy obsahuje). Dodavatel port. Tento vlastní port byste vždy vrátí `E_NOTIMPL`.
@@ -35,10 +38,9 @@ HRESULT DisableENC(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `reason`
-
- [in] Hodnota z [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) výčtu.
+## <a name="parameters"></a>Parametry
+`reason`\
+[in] Hodnota z [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) výčtu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -49,6 +51,6 @@ HRESULT DisableENC(
 ## <a name="remarks"></a>Poznámky
  Jednou upravit a pokračovat je zakázaná pro proces, ho můžete znovu povolit pouze restartování procesu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

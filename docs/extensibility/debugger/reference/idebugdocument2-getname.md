@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ef243afd607a565e2c7a8e6f557f0b9906c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1e653f7f735be43f2edeb4bd3c7935d3c89a9e58
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875722"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204754"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 Získá název dokumentu v jednom z několika způsoby.
@@ -38,14 +41,12 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `gnType`
+## <a name="parameters"></a>Parametry
+`gnType`\
+[in] Hodnota z [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) výčet, který určuje typ název, který vrátí.
 
- [in] Hodnota z [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) výčet, který určuje typ název, který vrátí.
-
- `pbstrFileName`
-
- [out] Vrátí řetězec obsahující název dokumentu.
+`pbstrFileName`\
+[out] Vrátí řetězec obsahující název dokumentu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -53,6 +54,6 @@ int GetName( 
 ## <a name="remarks"></a>Poznámky
  Tato metoda může například vrátit název dokumentu, jako název nebo název souboru nebo dokonce i část názvu souboru.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

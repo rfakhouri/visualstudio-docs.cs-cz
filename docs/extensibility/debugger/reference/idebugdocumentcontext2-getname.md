@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c770c339399aaf01fee9598318c94266a391c55
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ec18ff6e906dd62383a7ff72dbb4502c7f8ba301
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921466"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204651"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 Získá zobrazitelný název dokumentu, který obsahuje tento kontext dokumentu.
@@ -38,14 +41,12 @@ int GetName(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`gnType`
+## <a name="parameters"></a>Parametry
+`gnType`\
+[in] Hodnota z [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) výčet, který určuje typ název, který vrátí.
 
- [in] Hodnota z [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) výčet, který určuje typ název, který vrátí.
-
-`pbstrFileName`
-
- [out] Vrátí název souboru.
+`pbstrFileName`\
+[out] Vrátí název souboru.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -93,6 +94,6 @@ HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

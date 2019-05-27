@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c646974a1d1303482785ffd0240b3374e2ed071f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2d37ec7c2a81b036c80e7fab30fc794d51f21703
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871546"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204282"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 Tato metoda načte objekt, který umožňuje výčet seznamu trvalých porty.
@@ -38,14 +41,12 @@ int EnumPersistedPorts(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `PortNames`
+## <a name="parameters"></a>Parametry
+`PortNames`\
+[in] A [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) strukturu, která obsahuje seznam názvů port pro vyhledání a vrácení mezi trvalý porty. Vrátí se pouze ty trvalý porty s těmito názvy.
 
- [in] A [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) strukturu, která obsahuje seznam názvů port pro vyhledání a vrácení mezi trvalý porty. Vrátí se pouze ty trvalý porty s těmito názvy.
-
- `ppEnum`
-
- [out] Objekt, který implementuje [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) rozhraní.
+`ppEnum`\
+[out] Objekt, který implementuje [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) rozhraní.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -53,7 +54,7 @@ int EnumPersistedPorts(
 ## <a name="remarks"></a>Poznámky
  Trvalé porty jsou načteny při dodavatele portu je vytvořena instance a uložily v době, kdy je zničen dodavatele portu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
 - [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)

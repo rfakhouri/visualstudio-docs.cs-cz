@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f626005621604d367f5878e36899aa2ff46114ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: db3ae4d8439c0906c528ed974f75db2a94e57335
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875234"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207715"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Informuje o tom ladicího stroje (DE), který byl zadaný program atypicky ukončen a že je DE musí vyčistit všechny odkazy na program a odeslat program zrušení události.
@@ -36,10 +39,9 @@ int DestroyProgram( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pProgram`
-
- [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objekt, který reprezentuje program, který byl atypicky ukončen.
+## <a name="parameters"></a>Parametry
+`pProgram`\
+[in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objekt, který reprezentuje program, který byl atypicky ukončen.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -49,7 +51,7 @@ int DestroyProgram( 
 
  Tato metoda není implementována (vrátí `E_NOTIMPL`) Pokud je DE běží ve stejném procesu jako program, který se právě ladí. Tato metoda je implementována pouze v případě, že je DE běží ve stejném procesu jako SDM.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

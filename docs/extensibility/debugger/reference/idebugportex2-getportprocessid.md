@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f55915297daa877b2a7e73ab0cccda1a2d70b991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bdc0dc1155c3ceffa5e784279f113a8c7d30a168
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918263"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209069"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 Získá ID procesu portu samotný.
@@ -36,10 +39,9 @@ int GetPortProcessId ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pdwProcessId`
-
- [out] Vrátí ID procesu fyzického portu samotný.
+## <a name="parameters"></a>Parametry
+`pdwProcessId`\
+[out] Vrátí ID procesu fyzického portu samotný.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -47,5 +49,5 @@ int GetPortProcessId ( 
 ## <a name="remarks"></a>Poznámky
  V modulu runtime Win32 například tato metoda obvykle volá funkci Win32 `GetCurrentProcessId` získat ID procesu fyzické.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

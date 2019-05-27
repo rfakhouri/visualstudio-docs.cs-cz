@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87b72f7bf9d91f7e59bd5550149ed7cf09f8827d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 68efedbf9e8fa19025c7e7f1e47ed70cc1e9d1cc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458104"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198706"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 Určuje umístění zadané spravované sestavení odkazu.
@@ -48,25 +48,20 @@ int ResolveAssemblyRef(
 ```
 
 ## <a name="parameters"></a>Parametry
- `assemName`\
+`assemName`\
+[in] Název sestavení, chcete-li vyřešit.
 
- [in] Název sestavení, chcete-li vyřešit.
+`assemBytes`\
+[out] Vrátí [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objekt, který obsahuje počet bajtů sestavení přidružené k odkazu.
 
- `assemBytes`\
+`assemPdb`\
+[out] Vrátí `IEEDataStorage` objekt, který obsahuje symbol ukládat data přidružená k tomuto odkazu.
 
- [out] Vrátí [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objekt, který obsahuje počet bajtů sestavení přidružené k odkazu.
+`assemLocation`\
+[out] Vrátí cestu umístění tohoto odkazu.
 
- `assemPdb`\
-
- [out] Vrátí `IEEDataStorage` objekt, který obsahuje symbol ukládat data přidružená k tomuto odkazu.
-
- `assemLocation`\
-
- [out] Vrátí cestu umístění tohoto odkazu.
-
- `alr`\
-
- [out] Vrátí hodnotu z [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) výčet označující umístění této referenční sestavení.
+`alr`\
+[out] Vrátí hodnotu z [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) výčet označující umístění této referenční sestavení.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

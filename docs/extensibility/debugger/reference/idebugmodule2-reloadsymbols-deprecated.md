@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc5651a85ccc89a8a084c608e3fc698aa326e07c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c2e12ecc097c2839bba43da04c88dec3fe3d7298
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918831"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203102"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 ZASTARALÉ. NEPOUŽÍVEJTE. Znovu načte symboly pro tento modul.
@@ -38,14 +41,12 @@ int ReloadSymbols( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pszUrlToSymbols`
+## <a name="parameters"></a>Parametry
+`pszUrlToSymbols`\
+[in] Cesta k úložišti symbolů.
 
- [in] Cesta k úložišti symbolů.
-
- `pbstrDebugMessage`
-
- [out] Vrátí informačních zpráv, jako je například stav nebo chybové zprávy, který se zobrazí napravo od názvu modulu v okně moduly.
+`pbstrDebugMessage`\
+[out] Vrátí informačních zpráv, jako je například stav nebo chybové zprávy, který se zobrazí napravo od názvu modulu v okně moduly.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Ladicí stroj by měla vždy vrátit `E_FAIL`.
@@ -53,6 +54,6 @@ int ReloadSymbols( 
 ## <a name="remarks"></a>Poznámky
  Tato metoda se už nepodporuje. Implementace [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) metoda místo.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)

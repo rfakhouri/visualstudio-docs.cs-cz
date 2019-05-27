@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1ea05511369d36b881afcaf7c161f796fd4925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 29f9b8ce9e235fc25a1c52930bbf31ec8d8cf557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875311"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207781"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Připojí ladicí stroj (DE) pro program nebo programy. Když DE je spuštěné v rámci procesu SDM volány správce ladění relace (SDM).
@@ -44,26 +47,21 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pProgram`
+## <a name="parameters"></a>Parametry
+`pProgram`\
+[in] Pole [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objekty, které představují programy k bude připojený. Jedná se o programy portu.
 
- [in] Pole [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objekty, které představují programy k bude připojený. Jedná se o programy portu.
+`rgpProgramNodes`\
+[in] Pole [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objekty, které představují program uzlů, jeden pro každou aplikaci. Uzly programů v tomto poli představují stejné programy jako v `pProgram`. Uzly programů jsou uvedeny tak, aby DE můžete identifikovat programy se připojit k.
 
- `rgpProgramNodes`
+`celtPrograms`\
+[in] Počet aplikací a program uzlech v `pProgram` a `rgpProgramNodes` pole.
 
- [in] Pole [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objekty, které představují program uzlů, jeden pro každou aplikaci. Uzly programů v tomto poli představují stejné programy jako v `pProgram`. Uzly programů jsou uvedeny tak, aby DE můžete identifikovat programy se připojit k.
+`pCallback`\
+[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objekt, který se má použít k odesílání událostí ladění na SDM.
 
- `celtPrograms`
-
- [in] Počet aplikací a program uzlech v `pProgram` a `rgpProgramNodes` pole.
-
- `pCallback`
-
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objekt, který se má použít k odesílání událostí ladění na SDM.
-
- `dwReason`
-
- [in] Hodnota z [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) výčet, který je obsažený důvod připojení těchto programů. Další informace najdete v části poznámky.
+`dwReason`\
+[in] Hodnota z [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) výčet, který je obsažený důvod připojení těchto programů. Další informace najdete v části poznámky.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -91,7 +89,7 @@ int Attach( 
 
    Před voláním metody program uzlu v poli uvedena v každém `pProgram` nebo `rgpProgramNodes`, zosobnění, pokud je to nutné, by měla být povolená na `IDebugProgram2` rozhraní, které představuje uzel programu. Za normálních okolností však tento krok není nezbytný. Další informace najdete v tématu [problémy se zabezpečením](../../../extensibility/debugger/security-issues.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

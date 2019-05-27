@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87b484a1f8e2a116bd6cae288be7cc295c1a93e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fb49e91b34b0847e5209ede471aef54544c1d74f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875323"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207747"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Je voláno správce ladění relace (SDM) k označení, že synchronní ladění události, které jste odeslali dřív pomocí ladicího stroje (DE) k SDM, přijala a zpracovala.
@@ -36,10 +39,9 @@ HRESULT ContinueFromSynchronousEvent(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pEvent`
-
- [in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objekt, který reprezentuje dříve odeslaných synchronní událostí, ze kterého by měl ladicí program nyní pokračovat.
+## <a name="parameters"></a>Parametry
+`pEvent`\
+[in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objekt, který reprezentuje dříve odeslaných synchronní událostí, ze kterého by měl ladicí program nyní pokračovat.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -86,6 +88,6 @@ HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

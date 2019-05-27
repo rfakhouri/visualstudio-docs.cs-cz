@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a67286b4732436c2a680e13e90740ca9faff299
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9824eb198a491e537500de23b03a2f218767200d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842760"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209490"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
 Nastavuje nebo mění podmínky spojené se čekající zarážkou.
@@ -37,10 +40,9 @@ int SetCondition( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `bpCondition`
-
- [in] A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struktura, která určuje podmínku, která má nastavit.
+## <a name="parameters"></a>Parametry
+`bpCondition`\
+[in] A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struktura, která určuje podmínku, která má nastavit.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -48,6 +50,6 @@ int SetCondition( 
 ## <a name="remarks"></a>Poznámky
  Jakoukoli podmínku, která byla dříve přidružená čekající zarážka se ztratí. Všechny zarážky, které jsou vázány z této čekající zarážka se nazývají nastavit jejich stav na hodnotu zadanou v `bpCondition` parametru.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

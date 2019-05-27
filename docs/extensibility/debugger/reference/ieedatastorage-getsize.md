@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e5bcbfe60284cb254054e66b9e03b5e0e31ce4b1
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 87818a12945e76f68ba3b96a7f90c38640a0aa39
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224134"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199257"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 Vrátí počet bajtů obsažených v tomto objektu.
@@ -40,9 +40,8 @@ int GetSize(
 ```
 
 ## <a name="parameters"></a>Parametry
- `size`\
-
- [out] Počet bajtů obsažených v tomto objektu.
+`size`\
+[out] Počet bajtů obsažených v tomto objektu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

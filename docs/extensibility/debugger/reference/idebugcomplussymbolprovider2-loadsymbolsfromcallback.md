@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d0d31530c5b0b81f3a8e622893874efecfbea5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9ea4ac391536575397cf45be0239ce1e94268349
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922398"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205913"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 Načtení ladění symbolů pomocí zadaná metoda zpětného volání.
@@ -47,34 +50,27 @@ int LoadSymbolsFromCallback(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`ulAppDomainID`
+## <a name="parameters"></a>Parametry
+`ulAppDomainID`\
+[in] Identifikátor domény aplikace.
 
- [in] Identifikátor domény aplikace.
+`guidModule`\
+[in] Jedinečný identifikátor modulu.
 
-`guidModule`
+`pUnkMetadataImport`\
+[in] Objekt, který obsahuje metadata pro symbol.
 
- [in] Jedinečný identifikátor modulu.
+`pUnkCorDebugModule`\
+[in] Objekt, který implementuje [icordebugmodule – rozhraní](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
-`pUnkMetadataImport`
+`bstrModuleName`\
+[in] Název modulu.
 
- [in] Objekt, který obsahuje metadata pro symbol.
+`bstrSymSearchPath`\
+[in] Cesta pro hledání souborů symbolů.
 
-`pUnkCorDebugModule`
-
- [in] Objekt, který implementuje [icordebugmodule – rozhraní](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`bstrModuleName`
-
- [in] Název modulu.
-
-`bstrSymSearchPath`
-
- [in] Cesta pro hledání souborů symbolů.
-
-`pCallback`
-
- [in] Objekt, který představuje metodu zpětného volání.
+`pCallback`\
+[in] Objekt, který představuje metodu zpětného volání.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -173,5 +169,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

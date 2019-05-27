@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fb22dfdfb92b4955624a587a340d9f57eb2d59c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 310f290eb19f7ec56f1508104a0c67241397e6fe
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876517"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206145"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 Načtení ladění symboly uvedené datového proudu.
@@ -43,26 +46,21 @@ int LoadSymbolsFromStream(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`ulAppDomainID`
+## <a name="parameters"></a>Parametry
+`ulAppDomainID`\
+[in] Identifikátor domény aplikace.
 
- [in] Identifikátor domény aplikace.
+`guidModule`\
+[in] Jedinečný identifikátor modulu.
 
-`guidModule`
+`baseAddress`\
+[in] Adresa základní paměti.
 
- [in] Jedinečný identifikátor modulu.
+`pUnkMetadataImport`\
+[in] Objekt, který obsahuje metadata pro symbol.
 
-`baseAddress`
-
- [in] Adresa základní paměti.
-
-`pUnkMetadataImport`
-
- [in] Objekt, který obsahuje metadata pro symbol.
-
-`pStream`
-
- [in] Datový proud, který obsahuje symboly.
+`pStream`\
+[in] Datový proud, který obsahuje symboly.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -83,5 +81,5 @@ HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

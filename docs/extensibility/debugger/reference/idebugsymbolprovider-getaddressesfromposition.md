@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1276a1c1a076c624ffcfd78c3b7f9d09df2a6e01
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b354c7c31f4633fd307f54954c5d5115436097d0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224024"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207350"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Tato metoda mapuje umístění dokumentu do pole adresy ladění.
@@ -46,21 +46,17 @@ int GetAddressesFromPosition( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `pDocPos`\
+`pDocPos`\
+[in] Pozice dokumentu.
 
- [in] Pozice dokumentu.
+`fStatmentOnly`\
+[in] Pokud je hodnota TRUE, omezí ladění adresy, které mají jeden příkaz.
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out] Vrátí enumerátor pro počáteční ladění adresy přidružené k tomuto prohlášení nebo řádku.
 
- [in] Pokud je hodnota TRUE, omezí ladění adresy, které mají jeden příkaz.
-
- `ppEnumBegAddresses`\
-
- [out] Vrátí enumerátor pro počáteční ladění adresy přidružené k tomuto prohlášení nebo řádku.
-
- `ppEnumEndAddresses`\
-
- [out] Vrátí [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerátor pro koncové adresy ladění přidružené k tomuto prohlášení nebo řádku.
+`ppEnumEndAddresses`\
+[out] Vrátí [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerátor pro koncové adresy ladění přidružené k tomuto prohlášení nebo řádku.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

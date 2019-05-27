@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65b2d8264ef75c46de32ee65d994794d526c7ddb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8ed00f3e4e6dbdb61e7a9ca39974e73f25246724
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871419"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204439"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
 Získá od jiného dodavatele portu port.
@@ -38,18 +41,16 @@ int GetPort( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `guidPort`
+## <a name="parameters"></a>Parametry
+`guidPort`\
+[in] Globálně jedinečný identifikátor (GUID) portu.
 
- [in] Globálně jedinečný identifikátor (GUID) portu.
-
- `ppPort`
-
- [out] Vrátí [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objekt, který reprezentuje port.
+`ppPort`\
+[out] Vrátí [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objekt, který reprezentuje port.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. Vrátí `E_PORTSUPPLIER_NO_PORT` Pokud neexistuje žádný port s daným identifikátorem.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

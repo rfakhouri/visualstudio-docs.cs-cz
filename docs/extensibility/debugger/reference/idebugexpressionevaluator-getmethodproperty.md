@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd13939a4c469c41d1d0726bb60aa443ab8fb9e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3fd0adf7d990c133b29dac724b863bc5608ac433
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919910"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200884"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 Tato metoda načte objekt vlastnost, která obsahuje oknech místní hodnoty, argumentů a další vlastnosti metody.
@@ -44,26 +47,21 @@ int GetMethodProperty(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pSymbolProvider`
+## <a name="parameters"></a>Parametry
+`pSymbolProvider`\
+[in] Poskytovatel symbolů se použije, vyjádřené jako [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) objektu.
 
- [in] Poskytovatel symbolů se použije, vyjádřené jako [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) objektu.
+`pAddress`\
+[in] Adresy v kódu, vyjádřené jako [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objektu, který by měly být opraveny na nejbližší obsahující funkci.
 
- `pAddress`
+`pBinder`\
+[in] Vazač, který má být použit, vyjádřené jako [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objektu.
 
- [in] Adresy v kódu, vyjádřené jako [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objektu, který by měly být opraveny na nejbližší obsahující funkci.
+`fIncludeHiddenLocals`\
+[in] Nenulová (`TRUE`) znamená, že chcete zahrnout skryté lokální; nula (`FALSE`) znamená, že chcete nechat si místní skryté hodnoty
 
- `pBinder`
-
- [in] Vazač, který má být použit, vyjádřené jako [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objektu.
-
- `fIncludeHiddenLocals`
-
- [in] Nenulová (`TRUE`) znamená, že chcete zahrnout skryté lokální; nula (`FALSE`) znamená, že chcete nechat si místní skryté hodnoty
-
- `ppProperty`
-
- [out] Vrátí [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objekt, který představuje metodu.
+`ppProperty`\
+[out] Vrátí [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objekt, který představuje metodu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -71,7 +69,7 @@ int GetMethodProperty(
 ## <a name="remarks"></a>Poznámky
  Skrytý místní hodnoty jsou obvykle proměnné, které jsou generovány kompilátorem.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a93d909fbc8882c5864097a2a36c36749327a2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3504ba7ec668e243b72536b940f0779a5c0b728d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843131"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200877"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Tato metoda převede řetězec s výrazem na analyzovaný výrazu.
@@ -46,30 +49,24 @@ int Parse(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `upstrExpression`
+## <a name="parameters"></a>Parametry
+`upstrExpression`\
+[in] Řetězec výrazu, který má být analyzován.
 
- [in] Řetězec výrazu, který má být analyzován.
+`dwFlags`\
+[in] Kolekce [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) konstanty, které určují, jak má být analyzován výraz.
 
- `dwFlags`
+`nRadix`\
+[in] Základ, který se má použít pro interpretaci jakékoli číselné informace.
 
- [in] Kolekce [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) konstanty, které určují, jak má být analyzován výraz.
+`pbstrError`\
+[out] Vrátí chybu jako čitelný text.
 
- `nRadix`
+`pichError`\
+[out] Vrátí pozici znaku start Chyba v řetězci výraz.
 
- [in] Základ, který se má použít pro interpretaci jakékoli číselné informace.
-
- `pbstrError`
-
- [out] Vrátí chybu jako čitelný text.
-
- `pichError`
-
- [out] Vrátí pozici znaku start Chyba v řetězci výraz.
-
- `ppParsedExpression`
-
- [out] Vrátí analyzovaný výrazu v [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objektu.
+`ppParsedExpression`\
+[out] Vrátí analyzovaný výrazu v [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objektu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -77,7 +74,7 @@ int Parse(
 ## <a name="remarks"></a>Poznámky
  Tato metoda vytváří analyzovaný výrazu, nikoli skutečnou hodnotu. Analyzovaná výrazu je připraven k vyhodnocení, to znamená, převést na hodnotu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 - [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)
 - [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)

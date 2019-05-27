@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f255d509d69741dd99c9f6dac3ce298d7e5fa0bd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921669"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205298"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Načte vlastní atribut jeho název.
@@ -39,18 +42,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
-`pszCustomAttributeName`
+## <a name="parameters"></a>Parametry
+`pszCustomAttributeName`\
+[in] Název vlastního atributu.
 
- [in] Název vlastního atributu.
-
-`ppBlob`
-
+`ppBlob`\
 [out v] Pole bajtů, které obsahují data vlastního atributu.
 
-`pdwLen`
-
- [out] Délka v bajtech `ppBlob` parametru.
+`pdwLen`\
+[out] Délka v bajtech `ppBlob` parametru.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`. Pokud vlastní atribut neexistuje, vrátí `S_FALSE`. V opačném případě vrátí kód chyby.
@@ -93,5 +93,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

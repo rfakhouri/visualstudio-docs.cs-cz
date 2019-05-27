@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4deb573ece9ed2678e617ee74772184d4327551a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ce1b5635685971b3a9390533589975ff0f323021
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459030"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203794"
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
 Připojí se k programu přidružené nebo odloží procesu připojování k [připojit](../../../extensibility/debugger/reference/idebugengine2-attach.md) metody.
@@ -40,9 +40,8 @@ int OnAttach(
 ```
 
 ## <a name="parameters"></a>Parametry
- `guidProgramId`\
-
- [in] `GUID` přiřazení k přidružené aplikaci.
+`guidProgramId`\
+[in] `GUID` přiřazení k přidružené aplikaci.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`. Vrátí `S_FALSE` Pokud [připojit](../../../extensibility/debugger/reference/idebugengine2-attach.md) by neměla být volána metoda. V opačném případě vrátí kód chyby.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8903e6634086a16462f7c8c285df7f9e56f21aff
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: f6288ca3f7fbb2ba05b16f7493f395c914c6b073
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225653"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203457"
 ---
 # <a name="ienumdebugports2getcount"></a>IEnumDebugPorts2::GetCount
 Vrátí počet prvků ve výčtu.
@@ -40,9 +40,8 @@ int GetCount(
 ```
 
 ## <a name="parameters"></a>Parametry
- `pcelt`\
-
- [out] Vrátí počet prvků ve výčtu.
+`pcelt`\
+[out] Vrátí počet prvků ve výčtu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fecff3d6a992360f2fec385e93d88a65b368db9f
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 427e76036329eef95398787a87d795538c480ba7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457516"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208719"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Vytvoří čítač pro rámce zásobníku, jako jsou místní proměnné přidružené vlastnosti.
@@ -50,29 +50,23 @@ int EnumProperties ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in] Kombinace příznaků z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) výčet, který určuje pole, která v výčtu [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury mají být vyplněna.
 
- [in] Kombinace příznaků z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) výčet, který určuje pole, která v výčtu [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury mají být vyplněna.
+`nRadix`\
+[in] Základ, který se má použít v jakékoli číselné informace o formátování.
 
- `nRadix`\
+`refiid`\
+[in] Identifikátor GUID filtru vybrat, kterou používá [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury jsou pro provedení výčtu, například `guidFilterLocals`.
 
- [in] Základ, který se má použít v jakékoli číselné informace o formátování.
+`dwTimeout`\
+[in] Maximální doba v milisekundách pro čekání před návratem z této metody. Použití `INFINITE` čekat po neomezenou dobu.
 
- `refiid`\
+`pcelt`\
+[out] Vrátí počet vlastností výčtu. To je stejný jako volání funkce [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) metody.
 
- [in] Identifikátor GUID filtru vybrat, kterou používá [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury jsou pro provedení výčtu, například `guidFilterLocals`.
-
- `dwTimeout`\
-
- [in] Maximální doba v milisekundách pro čekání před návratem z této metody. Použití `INFINITE` čekat po neomezenou dobu.
-
- `pcelt`\
-
- [out] Vrátí počet vlastností výčtu. To je stejný jako volání funkce [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) metody.
-
- `ppEnum`\
-
- [out] Vrátí [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objekt, který obsahuje seznam požadovaných vlastností.
+`ppEnum`\
+[out] Vrátí [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objekt, který obsahuje seznam požadovaných vlastností.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df878cc59a47a8d3cc7079f8b919f87d9bb60f43
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e5d1f1f4b31317e79c497e1b13dcd7e218ecd16b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457487"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212999"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 Porovná jeden odkaz na jiný. Vyhrazeno pro budoucí použití.
@@ -42,13 +42,11 @@ int Compare ( 
 ```
 
 ## <a name="parameters"></a>Parametry
- `dwCompare`\
+`dwCompare`\
+[in] Hodnota z [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) výčet, který určuje operaci porovnání, například rovno, menší nebo větší.
 
- [in] Hodnota z [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) výčet, který určuje operaci porovnání, například rovno, menší nebo větší.
-
- `pReference`\
-
- [in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objekt představující odkaz k porovnání s.
+`pReference`\
+[in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objekt představující odkaz k porovnání s.
 
 ## <a name="return-value"></a>Návratová hodnota
  Vždy vrátí `E_NOTIMPL`.

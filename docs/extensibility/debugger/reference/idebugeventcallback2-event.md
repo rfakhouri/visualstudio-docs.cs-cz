@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 461c2487c18cb6edc5601868c0f9644d7b8eeac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a947f473fe7dc1fcf3e7b5b2b96d13edc3098218
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874600"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201150"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 Odešle oznámení o událostech ladění.
@@ -48,34 +51,27 @@ int Event( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pEngine`
+## <a name="parameters"></a>Parametry
+`pEngine`\
+[in] [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) objekt, který reprezentuje ladicího stroje (DE), který odesílá této události. Zavedenými je potřeba vyplnit tento parametr.
 
- [in] [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) objekt, který reprezentuje ladicího stroje (DE), který odesílá této události. Zavedenými je potřeba vyplnit tento parametr.
+`pProcess`\
+[in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objekt, který představuje proces, ve kterém dojde k události. Tento parametr je vyplněna aplikací správce ladění relace (SDM). Zavedenými vždycky předá pro tento parametr hodnotu null.
 
- `pProcess`
+`pProgram`\
+[in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objekt, který reprezentuje program, ve kterém dojde k této události. Pro většinu události, tento parametr není hodnotu null.
 
- [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objekt, který představuje proces, ve kterém dojde k události. Tento parametr je vyplněna aplikací správce ladění relace (SDM). Zavedenými vždycky předá pro tento parametr hodnotu null.
+`pThread`\
+[in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt, který reprezentuje vláken, ve kterém dojde k této události. Pro události zastavení, tento parametr nemůže mít hodnotu null, rámce zásobníku získaný z tohoto parametru.
 
- `pProgram`
+`pEvent`\
+[in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objekt, který představuje událost ladění.
 
- [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objekt, který reprezentuje program, ve kterém dojde k této události. Pro většinu události, tento parametr není hodnotu null.
+`riidEvent`\
+[in] Identifikátor GUID, který identifikuje které události rozhraní získat z `pEvent` parametru.
 
- `pThread`
-
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt, který reprezentuje vláken, ve kterém dojde k této události. Pro události zastavení, tento parametr nemůže mít hodnotu null, rámce zásobníku získaný z tohoto parametru.
-
- `pEvent`
-
- [in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objekt, který představuje událost ladění.
-
- `riidEvent`
-
- [in] Identifikátor GUID, který identifikuje které události rozhraní získat z `pEvent` parametru.
-
- `dwAttrib`
-
- [in] Kombinace příznaků z [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) výčtu.
+`dwAttrib`\
+[in] Kombinace příznaků z [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) výčtu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -85,7 +81,7 @@ int Event( 
 
  Všechny výjimky ladění jsou odeslány asynchronně, bez ohledu na to, zda je událost samotné asynchronní nebo ne. Když Zavedenými volá tuto metodu, návratová hodnota neindikuje, zda událost byla zpracována, pouze to, zda byla přijata událost. Ve skutečnosti ve většině situací, události nebyl zpracován po návratu tato metoda.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

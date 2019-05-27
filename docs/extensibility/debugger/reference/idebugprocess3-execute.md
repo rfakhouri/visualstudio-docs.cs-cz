@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f9afe4bb5087c7589415a6ae7fc143f5fd01b21
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4b2870a50f4ab8bb0358e2e38529e996b143b7ae
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413221"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202385"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 Se bude spouštět dál tento proces v zastaveném stavu. Vymazat všechny předchozí stav provádění (například krok) a proces začne provádět znovu.
@@ -39,10 +42,9 @@ int Execute(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pThread`
-
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt představující spuštění vlákna.
+## <a name="parameters"></a>Parametry
+`pThread`\
+[in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt představující spuštění vlákna.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -53,7 +55,7 @@ int Execute(
 > [!WARNING]
 > Neodesílat událostí ukončení nebo okamžité (synchronní) události, která [události](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) při zpracování tohoto volání; v opačném případě ladicí program může přestat reagovat.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)

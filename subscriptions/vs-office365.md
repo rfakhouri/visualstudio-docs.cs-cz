@@ -7,20 +7,20 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech služeb Office 365 součástí některá předplatná sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 9f3df6923101bf5b8b4a2592460e96b57416c1c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0beffc3409a562382b2a97981254dca887ec6ac9
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947399"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177575"
 ---
-# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus v předplatných sady Visual Studio
+# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus v předplatných sady Visual Studio
 
-Vytvořte optimální práci. Kdekoli práce s aplikacemi, které se aktualizují vždy. Office 365 Pro Plus je předplatné, který je součástí aplikace úrovně premium, jako je Word, Excel, PowerPoint, OneNote, Outlook, vydavatele a přístupu (vydavatele a přístup k dispozici pouze počítače). Aplikace se dá nainstalovat na různých zařízeních, včetně počítačů, počítače Mac, Ipady, Iphony, tablety s Androidem a telefony s Androidem. Office 365 také součástí služby, jako je 1TB úložiště Onedrivu, 60 minut Skype za měsíc a chatu a phone podporu Microsoftu. S předplatným získejte nejnovější verze aplikace a automaticky přijímat aktualizace, když k nim dojde.
+Vytvořte optimální práci. Kdekoli práce s aplikacemi, které se aktualizují vždy. Office 365 ProPlus je odběr, který je součástí aplikace úrovně premium, jako je Word, Excel, PowerPoint, OneNote, Outlook, vydavatele a přístupu (vydavatele a přístup k dispozici pouze počítače). Aplikace se dá nainstalovat na různých zařízeních, včetně počítačů, počítače Mac, Ipady, Iphony, tablety s Androidem a telefony s Androidem. Office 365 také součástí služby, jako je 1TB úložiště Onedrivu, 60 minut Skype za měsíc a chatu a phone podporu Microsoftu. S předplatným získejte nejnovější verze aplikace a automaticky přijímat aktualizace, když k nim dojde.
 
-## <a name="getting-started-with-office-365-pro-plus"></a>Začínáme s Office 365 Pro Plus
+## <a name="getting-started-with-office-365-proplus"></a>Začínáme s Office 365 ProPlus
 
-Postupujte podle těchto kroků ke stažení a aktivace Office 365 Pro Plus:
+Postupujte podle těchto kroků ke stažení a aktivace Office 365 ProPlus:
 1. Přihlaste se k předplatnému sady Visual Studio Enterprise.
 2. Klikněte na **stáhne** kartu.
 3. Zobrazí se vám seznam vybrané soubory ke stažení. V seznamu Office zvolte **Office 365**.

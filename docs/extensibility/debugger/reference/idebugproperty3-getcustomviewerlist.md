@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82b2e6da51b695bdc6fd2fd031a1f9decf484daa
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 78060933846d60d1e8721cda676ac837ea2bff06
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457661"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200182"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Získá seznam vlastních prohlížečů, které jsou přidružené k této vlastnosti.
@@ -47,20 +47,16 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Parametry
 `celtSkip`\
-
- [in] Počet prohlížečů mají přeskočit.
+[in] Počet prohlížečů mají přeskočit.
 
 `celtRequested`\
-
- [in] Počet prohlížeče k načtení (také určuje velikost `rgViewers` pole).
+[in] Počet prohlížeče k načtení (také určuje velikost `rgViewers` pole).
 
 `rgViewers`\
-
- [out v] Pole [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) struktury být vyplněna.
+[out v] Pole [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) struktury být vyplněna.
 
 `pceltFetched`\
-
- [out] Vrátí skutečný počet prohlížeče.
+[out] Vrátí skutečný počet prohlížeče.
 
 ## <a name="return-value"></a>Návratová hodnota
 Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

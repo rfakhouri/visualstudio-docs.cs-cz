@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2d5feb32c4083dc44d731631f9f17d52b62c5123
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: c350e985a3874cf25c04d577cb4c2018cf11c771
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225602"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203408"
 ---
 # <a name="ienumdebugportsuppliers2clone"></a>IEnumDebugPortSuppliers2::Clone
 Vrátí kopii objektu do aktuálního výčtu jako samostatný objekt.
@@ -40,9 +40,8 @@ int Clone(
 ```
 
 ## <a name="parameters"></a>Parametry
- `ppEnum`\
-
- [out] Vrátí kopii objektu tento výčet jako samostatný objekt.
+`ppEnum`\
+[out] Vrátí kopii objektu tento výčet jako samostatný objekt.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

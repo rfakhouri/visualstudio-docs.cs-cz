@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95a06a283b417432fd755f100f8c2e68a0325571
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: bb1121786c07be83dac480474a5b3b934779beec
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225884"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198857"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 Tato metoda získá nový objekt pro vizualizér. Tato metoda vždy vytvoří nový objekt z existujícího objektu.
@@ -40,9 +40,8 @@ int GetNewObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>Parametry
- `ppObject`\
-
- [out] Nový objekt.
+`ppObject`\
+[out] Nový objekt.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27acdda0dad152bcb18c4bef304b97190444c63d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc51b89061dca3c0d3026b391b8d6b0106421542
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413144"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202348"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Tato metoda načte aktuální stav funkce upravit a pokračovat procesu. Dodavatel port. Tento vlastní port byste vždy vrátí `E_NOTIMPL`.
@@ -36,10 +39,9 @@ int GetENCAvailableState(
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pReason`
-
- [out] Hodnota z [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) výčtu.
+## <a name="parameters"></a>Parametry
+`pReason`\
+[out] Hodnota z [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) výčtu.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -50,7 +52,7 @@ int GetENCAvailableState(
 ## <a name="remarks"></a>Poznámky
  Tento stav může být ovlivněna [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd13d67917a395eb33e26a53e0db1fed7340c9c6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b0b92f5b3c1e60c58bebb21fde5612e4fffc0340
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412869"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200418"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 Dál spuštěním tohoto programu v zastaveném stavu. Všechny předchozí stav spuštění (například krok) se zachová, a program začne provádět znovu.
@@ -39,10 +42,8 @@ int Continue( 
 );
 ```
 
-#### <a name="parameters"></a>Parametry
- `pThread`
-
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt, který reprezentuje vlákna.
+## <a name="parameters"></a>Parametry
+`pThread` [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt, který reprezentuje vlákna.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.
@@ -53,6 +54,6 @@ int Continue( 
 > [!WARNING]
 > Neodesílat událostí ukončení nebo okamžité (synchronní) události, která [události](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) při zpracování tohoto volání; v opačném případě ladicí program může přestat reagovat.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
