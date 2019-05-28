@@ -81,6 +81,8 @@
               href: install/disable-or-move-the-package-cache.md
             - name: Řízení aktualizací nasazení sady Visual Studio
               href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: Aktualizace sady Visual Studio v servisním směrném plánu
+              href: install/update-servicing-baseline.md
         - name: Správa instalací
           items:
             - name: Nástroje pro zjišťování a správu instancí sady Visual Studio
