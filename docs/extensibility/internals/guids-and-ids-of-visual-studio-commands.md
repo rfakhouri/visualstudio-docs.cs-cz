@@ -9,17 +9,17 @@ helpviewer_keywords:
 - visual studio command
 - guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89274600d05b787182ac447902555f7d703851c2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860963"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329187"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Příkazy identifikátory GUID a ID sady Visual Studio
 Hodnoty GUID a ID příkazů součástí integrovaného vývojového prostředí (IDE) sady Visual Studio jsou definovány v souborech .vsct, které se instalují jako součást sady Visual Studio SDK. Další informace najdete v tématu [příkazy definované prostředím IDE, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -54,7 +54,7 @@ Hodnoty GUID a ID příkazů součástí integrovaného vývojového prostředí
 
 - Položky nabídky, které obsahují podrženého znaku, například **tisk** příkaz **souboru** nabídka, ve kterém *P* podtržené.
 
-     Znaky, které předchází znak ampersand (&) znaků v názvech položek nabídky se zobrazí jako podtržené. Ale *.vsct* soubory jsou zapsány ve formátu XML, který používá znak ampersand (&) k označení speciální znaky a vyžaduje, že musí být zadán znak ampersand, který se má zobrazit jako  *&amp;amp;*. Proto v *.vsct* souboru **tisk** příkazu se zobrazí jako  *&amp;amp; Tisk*.
+     Znaky, které předchází znak ampersand (&) znaků v názvech položek nabídky se zobrazí jako podtržené. Ale *.vsct* soubory jsou zapsány ve formátu XML, který používá znak ampersand (&) k označení speciální znaky a vyžaduje, že musí být zadán znak ampersand, který se má zobrazit jako  *&amp;amp;* . Proto v *.vsct* souboru **tisk** příkazu se zobrazí jako  *&amp;amp; Tisk*.
 
 - Příkazy, které mají dynamický text, například **Uložit** \<aktuální Filename\>a dynamicky generované položky nabídky, jako je například položky na **poslední soubory** seznamu.
 
