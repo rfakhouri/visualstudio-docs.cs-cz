@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 02ef202436e12ae075c41f507577bacaa968c60b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411337"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341584"
 ---
 # <a name="create-a-settings-category"></a>Vytvoření kategorie nastavení
 
@@ -37,7 +37,7 @@ Chcete-li spustit Tento názorný postup, musíte nejdřív dokončit první č�
 
 2. Otevřít *VSPackage.resx* a přidejte tyto tři řetězcové prostředky:
 
-    |Název|Hodnota|
+    |Name|Hodnota|
     |----------|-----------|
     |106|Moje kategorie|
     |107|Moje nastavení|

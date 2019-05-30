@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19c73e47e8c07ebcf7c1124e6e59d80f76101458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409993"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341659"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Vytvoření systému základního projektu, část 1
 Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k uspořádání souborů se zdrojovým kódem a dalších zdrojů. Projekty se zobrazují jako podřízené objekty daného řešení **Průzkumníka řešení**. Projekty umožňují organizovat, sestavovat, ladit a nasadit zdrojový kód a vytvořit odkazy na webové služby, databáze a další prostředky.
@@ -224,7 +224,7 @@ Templates
 
     Šablona projektu znovu sestavit zaregistruje.
 
-   Parametry `defaultProjectExtension` a `possibleProjectExtensions` jsou nastaveny na příponu názvu souboru projektu (*.myproj*). `projectTemplatesDirectory` Parametr je nastaven na relativní cestu *šablony* složky. Během sestavování tuto cestu převést na úplné sestavení a přidá do registru k registraci systém projektu.
+   Parametry `defaultProjectExtension` a `possibleProjectExtensions` jsou nastaveny na příponu názvu souboru projektu ( *.myproj*). `projectTemplatesDirectory` Parametr je nastaven na relativní cestu *šablony* složky. Během sestavování tuto cestu převést na úplné sestavení a přidá do registru k registraci systém projektu.
 
 ## <a name="test-the-template-registration"></a>Test registrace šablony
  Šablona registrace instruuje Visual Studio umístění složky projektu šablony tak, aby Visual Studio můžete zobrazit název šablony a ikona v **nový projekt** dialogové okno.

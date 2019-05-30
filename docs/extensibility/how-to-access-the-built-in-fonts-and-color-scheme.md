@@ -7,17 +7,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - colors, accessing built-in schemes
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2abc6606d33e4b59faeb1838bcb173fd51a28616
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415518"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340978"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Postupy: Přístup k vestavěné písma a barev ccheme
 Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schéma písma a barvy, který je spojen s okno editoru. Toto schéma prostřednictvím můžete přistupovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> rozhraní.
@@ -41,7 +41,7 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schém
     > [!NOTE]
     > Při načítání dat písma a barvy s <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> nebo jiných rozhraní rozšíření VSPackages použít tento identifikátor GUID k odkazování předdefinované informace.
 
-2. Název kategorie musí přidat do tabulky řetězců uvnitř sady VSPackage prostředky (*.rc*) souboru, takže může být lokalizována, podle potřeby při zobrazení v rozhraní IDE.
+2. Název kategorie musí přidat do tabulky řetězců uvnitř sady VSPackage prostředky ( *.rc*) souboru, takže může být lokalizována, podle potřeby při zobrazení v rozhraní IDE.
 
      Další informace najdete v tématu [přidání nebo odstranění řetězce](/cpp/windows/adding-or-deleting-a-string).
 
@@ -49,13 +49,13 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schém
 
 1. Vytvořte zvláštní druh položky registru kategorie v následujícím umístění:
 
-     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>* ]
 
      *\<Kategorie >* je nelokalizovaný název kategorie.
 
 2. Naplnění registru uložených písma a barvy schéma pomocí čtyři hodnoty:
 
-    |Název|Typ|Data|Popis|
+    |Name|Typ|Data|Popis|
     |----------|----------|----------|-----------------|
     |Kategorie|REG_SZ|GUID|Libovolné GUID, který určuje kategorii, která obsahuje základní schéma písma a barvy.|
     |Balíček|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Všechny balíčky VSPackages, které používají výchozí písmo a barvu konfigurace používá tento identifikátor GUID.|

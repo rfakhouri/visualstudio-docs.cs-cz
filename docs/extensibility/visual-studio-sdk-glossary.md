@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6157b4bc3537a4f88feb91d512241451b8324ba7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5aa8398f3a102031c3a40074f76557ef311d4d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838903"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322409"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK Glosář
 Tento glosář obsahuje definice podmínek, které se používají v [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] dokumentaci.
@@ -73,7 +73,7 @@ Tento glosář obsahuje definice podmínek, které se používají v [!INCLUDE[v
 
   součást nezávislé nejvyšší úrovně A součást, která používá nemodálního okna nejvyšší úrovně a může efektivně pracovat jako samostatné aplikace rozhraní okna, ale je implementována jako objekt v rámci procesu. Proto musí komponentu nezávislé nejvyšší úrovně koordinovat modalitě a služba smyčky zpráv pomocí integrovaného vývojového prostředí. Objekty v rámci procesu nemají své vlastní smyčku zpráv.
 
-  Poskytovatel informací o zprostředkovateli informace je modul, který můžete vyhledat klíčová slova a vrátí seznam témat, formu `IVsUserContextItem` objekty. K poskytování **F1** – klíčové slovo vyhledávání položek pro zprostředkovatele informace, zaregistrujte zkompilovaný soubor nápovědy (*. HxS*) se systémem. Témata nápovědy v těchto souborech zadejte seznam témat týkajících se zobrazí v okně Dynamická nápověda a zobrazí, zda uživatel stiskne **F1**.
+  Poskytovatel informací o zprostředkovateli informace je modul, který můžete vyhledat klíčová slova a vrátí seznam témat, formu `IVsUserContextItem` objekty. K poskytování **F1** – klíčové slovo vyhledávání položek pro zprostředkovatele informace, zaregistrujte zkompilovaný soubor nápovědy ( *. HxS*) se systémem. Témata nápovědy v těchto souborech zadejte seznam témat týkajících se zobrazí v okně Dynamická nápověda a zobrazí, zda uživatel stiskne **F1**.
 
   místní objekt balíčku VSPackage A komponenty, který implementuje `IOleInPlaceComponent` rozhraní pro správu okno, které je vizuálně obsažené v okně dokumentu vlastněné integrovaného vývojového prostředí. Místní součásti není součástí standardní OLE-slučování nabídek; Místo toho jsou jejich prvky uživatelského rozhraní integrace do integrovaného vývojového prostředí.
 

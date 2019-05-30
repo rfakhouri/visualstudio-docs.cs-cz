@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: a11c5b441b6806c1ee9a07d77044be1ab42d2197
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261321"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319525"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 
@@ -187,7 +187,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.NavigateTo|**CTRL +**|
 |Edit.NextBookmark|**CTRL + K, Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + N**|
-|Edit.OpenFile|**Ctrl + Shift + G**|
+|Edit.OpenFile|**Ctrl + Shift + G** (otevře se název souboru, pod kurzor)|
 |Edit.Paste|**CTRL + V**<br /><br /> or<br /><br /> **SHIFT + in**|
 |Edit.PreviousBookmark|**CTRL + K, Ctrl + P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + P**|
@@ -268,9 +268,9 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Project.AddNewItem|**Ctrl + Shift + A**|
 |Project.ClassWizard|**Ctrl + Shift + X**|
 |Project.Override|**Ctrl + Alt + in**|
-|Project.Previewchanges|**ALT +; ** pak **Alt + C**|
-|Project.Publishselectedfiles|**ALT +; ** pak **Alt + P**|
-|Project.Replaceselectedfilesfromserver|**ALT +; ** pak **Alt + R**|
+|Project.Previewchanges|**ALT +;**  pak **Alt + C**|
+|Project.Publishselectedfiles|**ALT +;**  pak **Alt + P**|
+|Project.Replaceselectedfilesfromserver|**ALT +;**  pak **Alt + R**|
 
 ### <a name="bkmk_projectContext"></a> Kontextové nabídky projektu a řešení
 
@@ -294,9 +294,9 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 
 |Příkazy|Klávesové zkratky|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**CTRL + [**, **O** (písmeno "jednoznakový)<br /><br /> or<br /><br /> **CTRL + [**, **Ctrl + O** (písmeno "jednoznakový)|
-|SolutionExplorer.PendingChangesFilter|**CTRL + [**, **P**<br /><br /> or<br /><br /> **CTRL + [**, **Ctrl + P**|
-|SolutionExplorer.SyncWithActiveDocument|**CTRL + [**, **S**<br /><br /> or<br /><br /> **CTRL + [**, **Ctrl + S**|
+|SolutionExplorer.OpenFilesFilter|**CTRL + [** , **O** (písmeno "jednoznakový)<br /><br /> or<br /><br /> **CTRL + [** , **Ctrl + O** (písmeno "jednoznakový)|
+|SolutionExplorer.PendingChangesFilter|**CTRL + [** , **P**<br /><br /> or<br /><br /> **CTRL + [** , **Ctrl + P**|
+|SolutionExplorer.SyncWithActiveDocument|**CTRL + [** , **S**<br /><br /> or<br /><br /> **CTRL + [** , **Ctrl + S**|
 
 ### <a name="bkmk_team"></a> Tým
 

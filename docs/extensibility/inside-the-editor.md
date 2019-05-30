@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861762"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340791"
 ---
 # <a name="inside-the-editor"></a>V editoru
 
@@ -108,7 +108,7 @@ A <xref:Microsoft.VisualStudio.Text.SnapshotPoint> představuje pozici znaku ve 
 
 #### <a name="spans-and-normalizedspancollections"></a>Rozsahy a NormalizedSpanCollections
 
-A <xref:Microsoft.VisualStudio.Text.Span> představuje intervalu, který lze použít k rozpětí textu ve snímku textu. Pozice snímku jsou založený na nule, rozsahy můžete začít v jakékoliv pozici včetně nula. `End` Vlastnost rozpětí je roven součtu jeho `Start` vlastnost a její `Length` vlastnost. A `Span` neobsahuje znak, který je indexované podle `End` vlastnost. Například značka span, který má počáteční = 5 a délka = 3 má konec = 8, a obsahuje znaky v místech, 5, 6 a 7. Pro toto rozpětí se 5..8).
+A <xref:Microsoft.VisualStudio.Text.Span> představuje intervalu, který lze použít k rozpětí textu ve snímku textu. Pozice snímku jsou založený na nule, rozsahy můžete začít v jakékoliv pozici včetně nula. `End` Vlastnost rozpětí je roven součtu jeho `Start` vlastnost a její `Length` vlastnost. A `Span` neobsahuje znak, který je indexované podle `End` vlastnost. Například značka span, který má počáteční = 5 a délka = 3 má konec = 8, a obsahuje znaky v místech, 5, 6 a 7. Zápis pro toto rozpětí [5..8).
 
 Dva rozsahy intersect, pokud mají všechny pozice v běžném, včetně koncová pozice. Proto je určena průsečíkem [3, 5) a [2, 7) je [3, 5) a je určena průsečíkem [3, 5) a [5, 7) je [5, 5). (Všimněte si, že [5, 5) je prázdný rozpětí.)
 

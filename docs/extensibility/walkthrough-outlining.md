@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df269c3018d850ed2d5ae7435b82eb4f3aee4e1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965051"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320613"
 ---
 # <a name="walkthrough-outlining"></a>Návod: Sbalování
 Nastavení funkce založené na jazyce jako třeba sbalování tak, že definujete druhy textu oblastí, které chcete rozbalit nebo sbalit. Můžete definovat oblastí v rámci služby jazyka, nebo definovat vlastní název souboru příponu a obsah zadejte a použít definici oblasti pouze tento typ nebo použít definice oblastí k existujícímu typu obsahu (jako je například "text"). Tento návod ukazuje, jak definovat a zobrazení sbalování oblastí.
@@ -34,9 +34,9 @@ Nastavení funkce založené na jazyce jako třeba sbalování tak, že definuje
 3. Odstraníte existující soubory tříd.
 
 ## <a name="implement-an-outlining-tagger"></a>Implementace sbalování označovatel
- Sbalování oblastí jsou označené nástrojem druh značky (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Tato značka poskytuje standardní sbalování chování. Ohraničené oblasti můžete rozbalit nebo sbalit. Ohraničené oblasti označené znaménko Plus (**+**) sbaleného nebo mínus (**-**) Pokud se rozbalí a rozbalená oblast je potřeba svislou čárou.
+ Sbalování oblastí jsou označené nástrojem druh značky (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Tato značka poskytuje standardní sbalování chování. Ohraničené oblasti můžete rozbalit nebo sbalit. Ohraničené oblasti označené znaménko Plus ( **+** ) sbaleného nebo mínus ( **-** ) Pokud se rozbalí a rozbalená oblast je potřeba svislou čárou.
 
- Následující kroky ukazují, jak definovat označovatel, který vytvoří sbalování oblastí pro všechny oblasti oddělen složenými závorkami (**[**,**]**).
+ Následující kroky ukazují, jak definovat označovatel, který vytvoří sbalování oblastí pro všechny oblasti oddělen složenými závorkami ( **[** , **]** ).
 
 ### <a name="to-implement-an-outlining-tagger"></a>K implementaci sbalování označovatel
 
@@ -129,7 +129,7 @@ Nastavení funkce založené na jazyce jako třeba sbalování tak, že definuje
     ]
     ```
 
-4. Měla by existovat sbalování oblastí, obsahující oba závorky. Byste měli být schopni klepněte na znaménko Minus nalevo od levou závorku sbalte sbalování oblastí. Když sbalen oblast, na symbol tří teček (*...* ) by se měla zobrazit nalevo od sbaleného regionu a automaticky otevíraného okna obsahující text **najetí na text** by se měla zobrazit při přesunutí ukazatele myši na tři tečky.
+4. Měla by existovat sbalování oblastí, obsahující oba závorky. Byste měli být schopni klepněte na znaménko Minus nalevo od levou závorku sbalte sbalování oblastí. Když sbalen oblast, na symbol tří teček ( *...* ) by se měla zobrazit nalevo od sbaleného regionu a automaticky otevíraného okna obsahující text **najetí na text** by se měla zobrazit při přesunutí ukazatele myši na tři tečky.
 
 ## <a name="see-also"></a>Viz také:
 - [Návod: Typ obsahu propojit příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

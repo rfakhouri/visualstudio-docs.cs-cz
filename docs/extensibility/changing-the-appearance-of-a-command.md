@@ -7,17 +7,17 @@ helpviewer_keywords:
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 119ce68dca4dfdea44cc7160855733080bc8e9ca
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926845"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321104"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Změna vzhledu příkazu
 Změnou vzhledu příkazu můžete poskytnou zpětnou vazbu uživatelů. Například můžete příkazu, který bude vypadat jinak, pokud není k dispozici. Můžete provést příkazy k dispozici nebo není k dispozici, skrýt nebo zobrazit, nebo zaškrtněte nebo zrušte jejich zaškrtnutí v nabídce.
@@ -80,7 +80,7 @@ Změna vzhledu příkazu, proveďte jednu z těchto akcí:
 
 6. Sestavte projekt a spusťte ladění. Experimentální instanci sady Visual Studio by se zobrazit.
 
-7. Na **nástroje** nabídky, klikněte na tlačítko **vyvolat ChangeMenuText** příkazu. V tomto okamžiku je název příkazu **vyvolat ChangeMenuText**, takže nemá volat obslužná rutina příkazu **ChangeMyCommand()**.
+7. Na **nástroje** nabídky, klikněte na tlačítko **vyvolat ChangeMenuText** příkazu. V tomto okamžiku je název příkazu **vyvolat ChangeMenuText**, takže nemá volat obslužná rutina příkazu **ChangeMyCommand()** .
 
 8. Na **nástroje** nabídky, měli byste vidět **nový Text**. Klikněte na tlačítko **nový Text**. Příkaz by měl nyní být zobrazena šedě.
 

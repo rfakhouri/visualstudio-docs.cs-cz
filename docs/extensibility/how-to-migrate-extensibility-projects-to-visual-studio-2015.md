@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fc518281880923f92caf5c517254dc424b49b5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9f8a2ec71db9b11ebcbe20ba780a0f142fc30a0d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415281"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318429"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Postupy: Migrace projektů rozšíření do sady Visual Studio 2015
 Tady je postup upgradu rozšíření.
@@ -35,7 +35,7 @@ Tady je postup upgradu rozšíření.
 
 4. Sestavte řešení. Vytvořené soubory jsou nasazené na:
 
-     *%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< vytvářet název\>\\< název projektu\>\\< verze projektu\>\\*.
+     *%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< vytvářet název\>\\< název projektu\>\\< verze projektu\>\\* .
 
 ### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Chcete-li aktualizovat projekt rozšiřitelnosti NuGet VS SDK referenčních sestavení
 
