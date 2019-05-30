@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b27df2b9b93276ade06f97c9e80fd0c0483ef963
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415146"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309988"
 ---
 # <a name="configuration-options-overview"></a>Přehled možností konfigurace
 Projekty v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] může podporovat více konfigurací, které je možné sestavit, ladění, běhu a/nebo nasazené. Konfigurace je popsané společně s pojmenovanou sadu vlastností, obvykle přepínače kompilátoru a umístění souborů typu sestavení. Ve výchozím nastavení, nová řešení obsahovat dvě konfigurace *ladění* a *vydání*. Tyto konfigurace lze použít pomocí jejich výchozí nastavení, nebo upravit tak, aby podle svých specifických požadavků řešení nebo projektu. Některé balíčky se dají dvěma způsoby: jako ActiveX editor nebo jako součást na místě. Projekty není nutné pro podporu více konfigurací, ale. Pokud není k dispozici pouze jedné konfigurace, tuto konfiguraci je namapována na všechny konfigurace řešení.

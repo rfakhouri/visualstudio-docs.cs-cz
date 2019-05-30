@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d9eb61a3f017f61ef717a27e89cb7426bad26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: edc91cf8599a8591b70d14c49611ff64d5e957e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62878048"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318229"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Popisuje jedna instrukce zpětný překlad pro integrované vývojové prostředí (IDE) pro zobrazení.
@@ -61,33 +64,45 @@ public struct DisassemblyData { 
 ```
 
 ## <a name="members"></a>Členové
-`dwFields` [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) konstanta, která určuje, která pole jsou vyplněna.
+`dwFields`\
+[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) konstanta, která určuje, která pole jsou vyplněna.
 
-`bstrAddress` Adresa jako posun od některé počáteční bod (obvykle začátek přidružené funkce).
+`bstrAddress`\
+Adresa jako posun od některé počáteční bod (obvykle začátek přidružené funkce).
 
-`bstrCodeBytes` Počet bajtů kód pro tuto instrukci.
+`bstrCodeBytes`\
+Počet bajtů kód pro tuto instrukci.
 
-`bstrOpcode` Operační kód pro tuto instrukci.
+`bstrOpcode`\
+Operační kód pro tuto instrukci.
 
-`bstrOperands` Operandy pro tuto instrukci.
+`bstrOperands`\
+Operandy pro tuto instrukci.
 
-`bstrSymbol` Název symbolu, pokud existuje, přidružené k adresám (veřejnými symboly, popisek a tak dále).
+`bstrSymbol`\
+Název symbolu, pokud existuje, přidružené k adresám (veřejnými symboly, popisek a tak dále).
 
-`uCodeLocationId` Identifikátor umístění kódu pro tento řádek zpětně přeložený. Pokud adresu kontext kódu jeden řádek je větší než adresu kód kontextu, identifikátor umístění zpětně přeložený kód prvního také být větší než identifikátor umístění kódu druhého.
+`uCodeLocationId`\
+Identifikátor umístění kódu pro tento řádek zpětně přeložený. Pokud adresu kontext kódu jeden řádek je větší než adresu kód kontextu, identifikátor umístění zpětně přeložený kód prvního také být větší než identifikátor umístění kódu druhého.
 
-`posBeg` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , který odpovídá na pozici v dokumentu, kde začíná data zpětný překlad.
+`posBeg`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , který odpovídá na pozici v dokumentu, kde začíná data zpětný překlad.
 
-`posEnd` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , který odpovídá pozici v dokumentu, kde končí data zpětný překlad.
+`posEnd`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , který odpovídá pozici v dokumentu, kde končí data zpětný překlad.
 
-`bstrDocumentUrl` Pro textové dokumenty, které můžou být vyjádřeny jako názvy souborů `bstrDocumentUrl` pole se vyplní název souboru, kde lze nalézt zdroj, pomocí formátu `file://file name`.
+`bstrDocumentUrl`\
+Pro textové dokumenty, které můžou být vyjádřeny jako názvy souborů `bstrDocumentUrl` pole se vyplní název souboru, kde lze nalézt zdroj, pomocí formátu `file://file name`.
 
 Pro textové dokumenty, které nemůže být reprezentovaná jako názvy souborů `bstrDocumentUrl` je jedinečný identifikátor pro dokument a ladicí stroj musí implementovat [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) metody.
 
 Toto pole může obsahovat také další informace o kontrolních součtů. Podrobnosti najdete v části poznámky.
 
-`dwByteOffset` Počet bajtů, které se podle pokynů od začátku řádku kódu.
+`dwByteOffset`\
+Počet bajtů, které se podle pokynů od začátku řádku kódu.
 
-`dwFlags` [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) konstanta, která určuje, které příznaky jsou aktivní.
+`dwFlags`\
+[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) konstanta, která určuje, které příznaky jsou aktivní.
 
 ## <a name="remarks"></a>Poznámky
 Každý `DisassemblyData` struktura popisuje jedna instrukce zpětný překlad. Vrátí pole těchto struktur [čtení](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metoda.
@@ -211,7 +226,7 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ef76bc111fc48a717605f1beea74c4b91d0f2b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420707"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351633"
 ---
 # <a name="detect-system-requirements"></a>Zjistit požadavky na systém
 VSPackage nemůže fungovat, pokud je nainstalována aplikace Visual Studio. Když spravovat instalaci vašeho balíčku VSPackage pomocí Instalační služby systému Windows, můžete nakonfigurovat instalační program a zjistit, zda je nainstalována aplikace Visual Studio. Můžete také nakonfigurovat tak, zkontrolujte systém, hledá další požadavky, například konkrétní verzi Windows nebo určité množství paměti RAM.
@@ -33,7 +33,7 @@ VSPackage nemůže fungovat, pokud je nainstalována aplikace Visual Studio. Kdy
 Při instalaci na novější verzi klíče registru pro tuto verzi jsou přidány stejně jako u starších edicích. To znamená, pokud je nainstalovaná edice Enterprise, **nainstalovat** klíč nastavený na *1* pro organizace, a také pro edice Professional a Community. Proto je potřeba zkontrolovat pouze pro nejnovější verzi, které potřebujete.
 
 > [!NOTE]
-> V 64bitové verzi systému editor registru, 32bitová verze klíče se zobrazí v části **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Klíče aplikace Visual Studio jsou v rámci **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
+> V 64bitové verzi systému editor registru, 32bitová verze klíče se zobrazí v části **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\** . Klíče aplikace Visual Studio jsou v rámci **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\** .
 
 |Produkt|Key|
 |-------------|---------|

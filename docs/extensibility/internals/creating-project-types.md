@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3d983da91fadbb0eb78eab6d0fa5bb02cca193
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 005765cb66a23f2efcf0c8defb323120d79bef60
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910004"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314562"
 ---
 # <a name="create-project-types"></a>Vytvořit typy projektů
 Můžete rozšířit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, že vytvoříte nový typ projektu. Pokud chcete vytvořit nový typ projektu, musíte porozumět několika konceptům a dokončit několik kroků. Následující témata poskytují přehled o tom, jak vytvořit typy projektů.
@@ -57,7 +57,7 @@ Můžete rozšířit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)
 
 - [Instalace balíčků VSPackage pomocí Instalační služby systému Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- Ukazuje, jak poskytnout vašeho balíčku VSPackage svou vlastní jedinečnou identitu a postup při zabalení vaší knihovny DLL balíčku VSPackage a další informace v balíčku Instalační služby systému Windows (*. MSI* souboru) pro nasazení tak, aby vaši zákazníci.
+ Ukazuje, jak poskytnout vašeho balíčku VSPackage svou vlastní jedinečnou identitu a postup při zabalení vaší knihovny DLL balíčku VSPackage a další informace v balíčku Instalační služby systému Windows ( *. MSI* souboru) pro nasazení tak, aby vaši zákazníci.
 
 - [Hierarchie v sadě Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 

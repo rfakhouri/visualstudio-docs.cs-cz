@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80d4081a567c67b73200f4f1d0e1d6bee32871e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411025"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312784"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Návod: Vytvoření základní editor a registraci typu souboru editoru
 Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základním editoru při otevření souboru se *.myext* příponu názvu souboru je načtena.
@@ -28,7 +28,7 @@ Tento návod ukazuje, jak vytvořit VSPackage, která se spustí [!INCLUDE[vsprv
 
 1. V části **rozšiřitelnosti Visual Basic**. Je výchozí jazyk projektu jazyka Visual Basic.
 
-2. V části **rozšíření jazyka C#**. Je výchozí jazyk projektu C#.
+2. V části **rozšíření jazyka C#** . Je výchozí jazyk projektu C#.
 
 3. V části **jiný projekt typy rozšíření**. Výchozí jazyk projektu je C++.
 

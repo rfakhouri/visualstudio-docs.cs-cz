@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_INFO_FLAGS enumeration
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 131e014e3714df708c5ef1526ecb911531c5a5c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ae512bec8f88be81a0c45ddf541c94d78b483284
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924567"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318377"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 Určuje, jaké informace se mají načíst informace o objektu vlastnosti ladění.
@@ -67,32 +70,45 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Členové
-DEBUGPROP_INFO_FULLNAME inicializace/použít `bstrFullName` pole.
+## <a name="fields"></a>Pole
+`DEBUGPROP_INFO_FULLNAME`\
+Inicializace/použít `bstrFullName` pole.
 
-DEBUGPROP_INFO_NAME inicializace/použít `bstrName` pole.
+`DEBUGPROP_INFO_NAME`\
+Inicializace/použít `bstrName` pole.
 
-DEBUGPROP_INFO_TYPE inicializace/použít `bstrType` pole.
+`DEBUGPROP_INFO_TYPE`\
+Inicializace/použít `bstrType` pole.
 
-DEBUGPROP_INFO_VALUE inicializace/použít `bstrValue` pole.
+`DEBUGPROP_INFO_VALUE`\
+Inicializace/použít `bstrValue` pole.
 
-DEBUGPROP_INFO_ATTRIB inicializace/použít `dwAttrib` pole.
+`DEBUGPROP_INFO_ATTRIB`\
+Inicializace/použít `dwAttrib` pole.
 
-DEBUGPROP_INFO_PROP inicializace/použít `pProperty` pole s údajem o [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) rozhraní.
+`DEBUGPROP_INFO_PROP`\
+Inicializace/použít `pProperty` pole s údajem o [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) rozhraní.
 
-DEBUGPROP_INFO_VALUE_AUTOEXPAND Určuje, že hodnota pole by měl obsahovat hodnotu automaticky rozbaleny, pokud je k dispozici pro tento typ objektu.
+`DEBUGPROP_INFO_VALUE_AUTOEXPAND`\
+Určuje, že hodnota pole by měl obsahovat hodnotu automaticky rozbaleny, pokud je k dispozici pro tento typ objektu.
 
-DEBUGPROP_INFO_VALUE_NOFUNCEVAL zastaralé.
+`DEBUGPROP_INFO_VALUE_NOFUNCEVAL`\
+Zastaralé
 
-DEBUGPROP_INFO_VALUE_RAW nevrátí žádné beautified hodnoty nebo členy (to znamená, Neformátovat hodnoty).
+`DEBUGPROP_INFO_VALUE_RAW`\
+Nevrátí žádné beautified hodnoty nebo členy (to znamená, Neformátovat hodnoty).
 
-DEBUGPROP_INFO_VALUE_NO_TOSTRING nevrátí žádné speciální syntetizovaný hodnoty (například Nevolejte `ToString()` na objekt k vytvoření hodnoty).
+`DEBUGPROP_INFO_VALUE_NO_TOSTRING`\
+Nevrátí žádné speciální syntetizovaný hodnoty (například Nevolejte `ToString()` na objekt k vytvoření hodnoty).
 
-DEBUGPROP_INFO_NONE Určuje, že jsou nastaveny žádné příznaky.
+`DEBUGPROP_INFO_NONE`\
+Určuje, jestli jsou nastavené žádné příznaky.
 
-DEBUGPROP_INFO_STANDARD inicializace/použít `dwAttrib`, `bstrName`, `bstrType`, a `bstrValue` pole.
+`DEBUGPROP_INFO_STANDARD`\
+Inicializace/použít `dwAttrib`, `bstrName`, `bstrType`, a `bstrValue` pole.
 
-DEBUGPROP_INFO_All označuje masku všechny příznaky.
+`DEBUGPROP_INFO_All`\
+Označuje masku všechny příznaky.
 
 ## <a name="remarks"></a>Poznámky
 Tyto hodnoty jsou předány [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), a [enumproperties –](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) metody k označení pole, která mají být inicializovány [ DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury.
@@ -108,7 +124,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)

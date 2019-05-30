@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress interface
 ms.assetid: bc709ff7-4966-4f36-9af2-690efe2cea1d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b9aba2be92516bab86f39eee55a3df4586eb09c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 653d2424d21a18e7053f66e0a74214ecc25d97da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877775"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317921"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 Toto rozhraní představuje adresu položky. Vrátí obslužnou rutinu symbol.
@@ -51,6 +51,6 @@ IDebugAddress : IUnknown
 
  Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Rozhraní poskytovatele symbolů ](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

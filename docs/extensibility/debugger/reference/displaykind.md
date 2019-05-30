@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bbb4af7b4269376d912ba312cfe8aacfef2e4ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c15726a3725b756e646e73804643f6b1ab36374
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924394"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318266"
 ---
 # <a name="displaykind"></a>DisplayKind
 Vytvoří výčet platné hodnoty, které představují typy informací, které mají trvat, než [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objektu a zobrazí uživateli.
@@ -41,12 +44,15 @@ public enum enum_DisplayKind
 };
 ```
 
-#### <a name="parameters"></a>Parametry
-DisplayKind_Value hodnotu pole.
+## <a name="fields"></a>Pole
+`DisplayKind_Value`\
+Hodnota pole.
 
-DisplayKind_Name název pole.
+`DisplayKind_Name`\
+Název pole.
 
-DisplayKind_Type typu pole.
+`DisplayKind_Type`\
+Typ pole.
 
 ## <a name="requirements"></a>Požadavky
 Záhlaví: EE.h
@@ -55,6 +61,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)

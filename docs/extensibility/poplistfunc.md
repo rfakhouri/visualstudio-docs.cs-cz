@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - POPLISTFUNC callback function
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e54cf1b0e6f15b1a6c5dc0af379a8b88bd77f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f3125c17ad30eec6c374c38df7d4baa9e299314a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434241"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336219"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Toto zpětné volání je zadán do [sccpopulatelist –](../extensibility/sccpopulatelist-function.md) integrovaným vývojovým prostředím a modulu plug-in správy zdrojového kódu slouží k aktualizaci seznamu souborů nebo adresářů (také zadaný pro `SccPopulateList` funkce).
@@ -47,7 +47,7 @@ typedef BOOL (*POPLISTFUNC) (
 
 ## <a name="return-value"></a>Návratová hodnota
 
-|Value|Popis|
+|Hodnota|Popis|
 |-----------|-----------------|
 |`TRUE`|Modul plug-in můžete dál volání této funkce.|
 |`FALSE`|Na straně integrovaného vývojového prostředí (například z důvodu nedostatku paměti situace) došlo k potížím. Modul plug-in by se měla zastavit operaci.|

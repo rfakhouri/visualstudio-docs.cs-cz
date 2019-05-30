@@ -3,18 +3,18 @@ title: 'Postupy: Migrace projektů rozšíření do sady Visual Studio 2017 | Do
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863580"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319310"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Postupy: Migrace projektů rozšíření do sady Visual Studio 2017
 
@@ -31,7 +31,7 @@ Ujistěte se, že vaše instalace zahrnuje následující úlohy:
 
 Všechny projekty VSIX se vyžadují jednosměrnou aktualizaci hlavní verze Visual Studio 2017.
 
-Soubor projektu (například **.csproj*) bude aktualizovat:
+Soubor projektu (například * *.csproj*) bude aktualizovat:
 
 * MinimumVisualStudioVersion – je nyní nastaveno na 15.0
 * OldToolsVersion (Pokud již existuje) – nastaví na 14.0
@@ -47,7 +47,7 @@ Chcete-li aktualizovat odkazy NuGet Microsoft.VSSDK.BuildTools:
 
 * Klikněte pravým tlačítkem na řešení a zvolte **spravovat balíčky NuGet pro řešení**.
 * Přejděte **aktualizace** kartu.
-* Vyberte **Microsoft.VSSDK.BuildTools (nejnovější verze)**.
+* Vyberte **Microsoft.VSSDK.BuildTools (nejnovější verze)** .
 * Stisknutím klávesy **aktualizace**.
 
 ![Nástroje VSSDK sestavení](media/vssdk-build-tools.png)

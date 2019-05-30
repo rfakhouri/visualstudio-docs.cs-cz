@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88ace66b8a28061ea7e8fdc7fa64f419042edf11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0bef42c67f34b8a24ac26a7765fecddc104ae74a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410128"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351003"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Vytváření rozšíření pomocí šablony položky editoru
 Můžete použít šablony položek, které jsou zahrnuty v sadě Visual Studio SDK vytvořit rozšíření základního editoru, které aplikacím dodávají třídění, vylepšení a okraje editoru. Šablony položky editoru jsou k dispozici pro projekty Visual C# nebo Visual Basic VSIX.

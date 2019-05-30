@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f31b33eeb782e71a87103d26a3bb78175611644e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877884"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318136"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 Určuje kritéria pro porovnání dvou kontextů dokumentu.
@@ -43,14 +46,18 @@ enum enum_DOCCONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>Členové
-DOCCONTEXT_EQUAL vyhledá první kontext dokumentu v seznamu, který je roven cílový kontext dokumentu.
+## <a name="fields"></a>Pole
+`DOCCONTEXT_EQUAL`\
+Vyhledá první kontext dokumentu v seznamu, který je roven cílový kontext dokumentu.
 
-V seznamu, který je menší než cílový kontext dokumentu DOCCONTEXT_LESS_THAN najít první kontext dokumentu.
+`DOCCONTEXT_LESS_THAN`\
+Vyhledá první kontext dokumentu v seznamu, která je menší než cílový kontext dokumentu.
 
-V seznamu, který je větší než cílový kontext dokumentu DOCCONTEXT_GREATER_THAN najít první kontext dokumentu.
+`DOCCONTEXT_GREATER_THAN`\
+Vyhledá první kontext dokumentu v seznamu, který je větší než cílový kontext dokumentu.
 
-V seznamu, který je ve stejném dokumentu jako cílový kontext dokumentu DOCCONTEXT_SAME_DOCUMENT najít první kontext dokumentu.
+`DOCCONTEXT_SAME_DOCUMENT`\
+Vyhledá první kontext dokumentu v seznamu, který je ve stejném dokumentu jako cílový kontext dokumentu.
 
 ## <a name="remarks"></a>Poznámky
 Předán jako argument [porovnání](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) metody.
@@ -64,6 +71,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5707e83545d2008f8e8ec042ea61208220887204
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964479"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318501"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Návod: Pomocí klávesové zkratky s rozšířením editoru
 Klávesové zkratky můžete reagovat v rozšíření editoru. Následující návod ukazuje, jak přidat grafického doplňku zobrazení k zobrazení textu s použitím klávesovou zkratku. Tento názorný postup je založen na šabloně editor grafického doplňku zobrazení, a umožňuje vám přidat dalších úprav s použitím na znak +.
@@ -108,7 +108,7 @@ Před Visual Studio 2017 verze 15.6 se implementace jediný způsob, jak zpracov
     }
     ```
 
-7. Implementace `Exec()` metoda tak Fialová box se přidá do zobrazení, pokud znaménko plus (**+**) znaku.
+7. Implementace `Exec()` metoda tak Fialová box se přidá do zobrazení, pokud znaménko plus ( **+** ) znaku.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -237,7 +237,7 @@ Obslužná rutina příkazu je implementace <xref:Microsoft.VisualStudio.Command
    }
    ```
 
-6. Implementace `ExecuteCommand()` metoda tak Fialová box se přidá do zobrazení, pokud znaménko plus (**+**) znaku.
+6. Implementace `ExecuteCommand()` metoda tak Fialová box se přidá do zobrazení, pokud znaménko plus ( **+** ) znaku.
 
    ```csharp
    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
