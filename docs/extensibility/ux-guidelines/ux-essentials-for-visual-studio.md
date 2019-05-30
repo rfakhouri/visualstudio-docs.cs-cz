@@ -3,17 +3,17 @@ title: Základy uživatelského prostředí pro Visual Studio | Dokumentace Micr
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e97aa60a983eef3034eab28f7835edc1abb6734
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45e4f1389317c67665d1b03e936a33380cb7ecf2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951786"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310808"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Základy uživatelského prostředí pro Visual Studio
 
@@ -134,10 +134,10 @@ V správný přístup znázorňuje **obrázek C**, nastavení se váže na řadu
 #### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Podtržení použitý jako název skupiny, ne hypertextový odkaz
  Podtržení text by měla sloužit pouze pro hypertextové odkazy.
 
- **Špatné:**\
+ **Špatné:** \
  ![Podtržený text, který není hypertextový odkaz je vzor proti sady Visual Studio. ](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102 g_GroupLabelIncorrect")<br />Podtržený text, který není hypertextový odkaz je vzor proti sady Visual Studio.
 
- **Dobré:**\
+ **Dobré:** \
  ![Styl správně,-hypertextový odkaz text se zobrazí prostým písmem prostředí. ](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102 h_GroupLabelCorrect")<br />Styl správně,-hypertextový odkaz text se zobrazí prostým písmem prostředí.
 
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Kliknutím na zaškrtávací políčko následek zobrazení dialogu

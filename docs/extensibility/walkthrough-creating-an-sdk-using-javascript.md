@@ -3,17 +3,17 @@ title: 'Návod: Vytvoření sady SDK pomocí jazyka JavaScript | Dokumentace Mic
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 61f18d2d7412b84827aaa9b6a229c80019716df4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796340"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312553"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Návod: Vytvoření sady SDK pomocí jazyka JavaScript
 Tento návod se naučíte vytvořit jednoduché matematické sadu SDK jako Visual Studio Extension (VSIX) pomocí jazyka JavaScript.  Návod je rozdělen na tyto části:
@@ -96,7 +96,7 @@ Tento návod se naučíte vytvořit jednoduché matematické sadu SDK jako Visua
 
 14. V místní nabídce pro **\js\\**  složky, zvolte **přidat** > **nová položka**.
 
-15. V části **položky Visual C#**, vyberte **webové** kategorie a pak vyberte **soubor JavaScript** položky. Název souboru `arithmetic.js`a klikněte na tlačítko **přidat** tlačítko.
+15. V části **položky Visual C#** , vyberte **webové** kategorie a pak vyberte **soubor JavaScript** položky. Název souboru `arithmetic.js`a klikněte na tlačítko **přidat** tlačítko.
 
 16. Vložte následující kód do *arithmetic.js*:
 
@@ -132,7 +132,7 @@ Tento návod se naučíte vytvořit jednoduché matematické sadu SDK jako Visua
 
 18. V **Průzkumníka řešení**, v místní nabídce pro **SimpleMathVSIX** projektu, zvolte **sestavení**.
 
-19. Po dokončení sestavení úspěšně, v místní nabídce projektu zvolte **otevřít složku v Průzkumníku souborů**. Přejděte do **\bin\debug\\**a spusťte `SimpleMathVSIX.vsix` k její instalaci.
+19. Po dokončení sestavení úspěšně, v místní nabídce projektu zvolte **otevřít složku v Průzkumníku souborů**. Přejděte do **\bin\debug\\** a spusťte `SimpleMathVSIX.vsix` k její instalaci.
 
 20. Zvolte **nainstalovat** tlačítko a umožňují instalace dokončena.
 

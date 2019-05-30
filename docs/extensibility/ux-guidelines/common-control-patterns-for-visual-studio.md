@@ -3,17 +3,17 @@ title: Vzory běžných ovládacích prvků pro sadu Visual Studio | Dokumentace
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89babf7dc9f90b4042d917bf5843a0703628883
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799485"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312302"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Vzory běžných ovládacích prvků pro sadu Visual Studio
 ## <a name="BKMK_CommonControls"></a> Běžné ovládací prvky
@@ -274,7 +274,7 @@ V některých případech slouží tlačítka v rámci upravený uživatelského
 
 Kdy použít jen pro tlačítko se třemi tečkami krátký tlačítko:
 
-- Pokud existuje více než jeden dlouhý **[Procházet...]**  tlačítko v dialogovém okně, například pokud několik polí Povolit pro procházení. Používat krátké **[...]**  tlačítko pro každý z nich matoucí přístupové klíče vytvořené v této situaci vyhnout (**& Procházet** a **B & rocházet** v dialogovém okně stejné).
+- Pokud existuje více než jeden dlouhý **[Procházet...]**  tlačítko v dialogovém okně, například pokud několik polí Povolit pro procházení. Používat krátké **[...]**  tlačítko pro každý z nich matoucí přístupové klíče vytvořené v této situaci vyhnout ( **& Procházet** a **B & rocházet** v dialogovém okně stejné).
 
 - V dialogovém okně úzkou nebo neexistuje žádný přiměřené umísťovat dlouhé tlačítko.
 
@@ -317,7 +317,7 @@ Změny velikosti pro grafické tlačítka je stejná jako zkrácené **[Procház
 Hypertextové odkazy se skvěle hodí pro navigaci na základě akce, jako jsou otevření tématu nápovědy, modální dialogové okno nebo průvodce. Pokud hypertextový odkaz se používá pro příkaz, je vždy zobrazit viditelné a výrazné změny v uživatelském rozhraní. Obecně platí akce, které se zavázali k akci (třeba uložit, zrušit a odstranit) se lépe předávají pomocí tlačítka.
 
 #### <a name="writing-style"></a>Styl psaní
-Postupujte podle [Windows Desktop pokyny pro text v uživatelském rozhraní](/windows/desktop/uxguide/text-ui). Nepoužívejte "Přečtěte si další informace o," "Řekněte mi více o" nebo "Get s tímto vám pomůže" frázového. Místo toho věta text nápovědy odkazu z hlediska primární otázku zodpoví technický obsah nápovědy. Například "**jak mohu přidat server do Průzkumníka serveru?**"
+Postupujte podle [Windows Desktop pokyny pro text v uživatelském rozhraní](/windows/desktop/uxguide/text-ui). Nepoužívejte "Přečtěte si další informace o," "Řekněte mi více o" nebo "Get s tímto vám pomůže" frázového. Místo toho věta text nápovědy odkazu z hlediska primární otázku zodpoví technický obsah nápovědy. Například "**jak mohu přidat server do Průzkumníka serveru?** "
 
 #### <a name="visual-style"></a>Vizuální styl
 

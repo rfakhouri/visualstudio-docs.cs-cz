@@ -3,17 +3,17 @@ title: Přehled protokolu Server Language | Dokumentace Microsoftu
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f6f114d7165b85051092234ea33dfc7f73e1487
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856662"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309628"
 ---
 # <a name="language-server-protocol"></a>Protokol jazyka serveru
 
@@ -55,7 +55,7 @@ Níže je příklad pro nástroj a jazyk serveru komunikaci během rutinu úprav
 
 * **Uživatel provede "Přejít k definici" na symbol v editoru**: Nástroj odešle požadavek ' textDocument/definici' se dvěma parametry: (1) na identifikátor URI dokumentu a (2) umístění textu, ze kterého byla spuštěna přejít na definici požadavku na server. Server odpoví identifikátor URI dokumentu a umístění definice symbolu v dokumentu.
 
-* **Uživatel nezavře dokument (soubor)**: ' TextDocument/didClose' oznámení se odesílá z nástroje informování jazyk serveru, na kterém je dokument nyní již v paměti a které aktuální obsah je nyní aktuální v systému souborů.
+* **Uživatel nezavře dokument (soubor)** : ' TextDocument/didClose' oznámení se odesílá z nástroje informování jazyk serveru, na kterém je dokument nyní již v paměti a které aktuální obsah je nyní aktuální v systému souborů.
 
 Tento příklad ukazuje, jak se protokol komunikuje se serverem nástroje jazyka na úrovni funkce editoru, jako je "Přejít k definici", "Najít všechny odkazy". Datové typy používané v protokolu jsou editoru nebo integrovaného vývojového prostředí datové typy jako otevřený textový dokument a pozici kurzoru. Datové typy, které nejsou na úrovni programovací model domény jazyka, která by obvykle mají stromu abstraktní syntaxe a kompilátoru symboly (například přeložit typy, obory názvů,...). To výrazně zjednodušuje protokolu.
 

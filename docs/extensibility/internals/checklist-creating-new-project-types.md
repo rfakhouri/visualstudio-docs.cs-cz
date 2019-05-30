@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 807a44d88d2799c8390547a5ab576bdbca3c074a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64e00c452f01c95046b4dc669dbd3bdd1517d287
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861749"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309203"
 ---
 # <a name="checklist-create-new-project-types"></a>Kontrolní seznam: Vytvoření nových typů projektů
 Je třeba provést několik úloh, chcete-li vytvořit nový typ projektu. Následující kontrolní seznam obsahuje příručky s těmito úlohami:
@@ -49,7 +49,7 @@ Je třeba provést několik úloh, chcete-li vytvořit nový typ projektu. Násl
 
     - Objekty a třídy odvozené od `IDispatch`, která je dostupná pro automatizaci.
 
-    - Tabulky příkazů XML (*.vsct*) soubory. Další informace najdete v tématu [soubory tabulky (.vsct) příkazů sady Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+    - Tabulky příkazů XML ( *.vsct*) soubory. Další informace najdete v tématu [soubory tabulky (.vsct) příkazů sady Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 6. Testování, ladění a spusťte váš typ projektu.
 

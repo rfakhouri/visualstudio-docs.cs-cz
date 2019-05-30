@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37e8b8e47b306f8b99e378cf407c0faf0955c737
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 76381731da62507217fb4408f20be6e8c35baa56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924855"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346376"
 ---
 # <a name="core-interfaces"></a>Základní rozhraní
 Následující rozhraní jsou základní rozhraní pro rozšíření ladicího programu s použitím [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].
@@ -303,6 +303,6 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|Poskytuje metody pro získání přístupu k datům, které se mají předat typ vizualizéru.|
 |[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|Reprezentuje vlastnost, která poskytuje přístup k [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) implementace.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Referenční dokumentace ke knihovně API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 - [Vytvoření vlastního ladicího stroje](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

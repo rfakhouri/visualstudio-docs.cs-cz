@@ -3,17 +3,17 @@ title: Prohlížeč knihovny obrázků | Dokumentace Microsoftu
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fbef0686671a504cd1a141b6f582d30043809af
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860604"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315702"
 ---
 # <a name="image-library-viewer"></a>Prohlížeč knihovny obrázků
 Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhledávat image manifestů, které uživateli umožňují s nimi manipulovat stejným způsobem, který by sady Visual Studio. Uživatel může změnit na pozadí, velikosti, DPI, vysoký kontrast a další nastavení. Tento nástroj také zobrazuje informace o načítání pro každou manifestu obrázků a zobrazí informace o zdroji pro každý obrázek v manifestu obrázků. Tento nástroj je užitečný pro:
@@ -186,7 +186,7 @@ Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhle
 
  Ve výchozím nastavení nástroj se pokusí najít adresáře instalace sady Visual Studio a přidat tyto adresáře do seznamu hledání adresářů. Můžete ručně přidat adresáře, které nástroj nedokáže najít.
 
- Jakmile jsou načteny všechny manifesty, nástroj je možné přepínat **pozadí** barvy, **DPI**, **vysoký kontrast –**, nebo **grayscaling** pro Image tak, aby uživatel můžete vizuálně zkoumat prostředky obrázků k ověření, že jsou správně vykreslení pro různá nastavení.
+ Jakmile jsou načteny všechny manifesty, nástroj je možné přepínat **pozadí** barvy, **DPI**, **vysoký kontrast –** , nebo **grayscaling** pro Image tak, aby uživatel můžete vizuálně zkoumat prostředky obrázků k ověření, že jsou správně vykreslení pro různá nastavení.
 
  ![Obrázek pozadí prohlížeč knihovny](../../extensibility/internals/media/image-library-viewer-background.png "pozadí prohlížeč knihovny obrázků")
 

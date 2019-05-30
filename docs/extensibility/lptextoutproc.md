@@ -11,17 +11,17 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1a2dcbf39be6f8e0366dcdccdaea168ad37c87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a990fc28ffcba4cffc199c1435fddb41bd896521
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907267"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309026"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -49,7 +49,7 @@ mesg_type
 
 Typ zprávy. Následující tabulka uvádí podporované hodnoty pro tento parametr.
 
-|Value|Popis|
+|Hodnota|Popis|
 |-----------|-----------------|
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Zpráva se považuje za informace, varování nebo chyba.|
 |`SCC_MSG_STATUS`|Zpráva se zobrazuje stav a mohou být zobrazeny ve stavovém řádku.|
@@ -63,7 +63,7 @@ Typ zprávy. Následující tabulka uvádí podporované hodnoty pro tento param
 
 ## <a name="return-value"></a>Návratová hodnota
 
-|Hodnota|Popis|
+|Value|Popis|
 |-----------|-----------------|
 |SCC_MSG_RTN_OK|Řetězec se zobrazí nebo operace byla úspěšně dokončena.|
 |SCC_MSG_RTN_CANCEL|Uživatel chce, aby na zrušení operace.|

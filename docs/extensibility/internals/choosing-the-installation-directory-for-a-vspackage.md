@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 249efe70cdcc2cf8ef600ca4d9e009e094e1b105
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862046"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309111"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Zvolte instalační adresář pro balíček VSPackage
 V systému souborů uživatele musí být VSPackage a jeho podpůrné soubory. Umístění závisí na, jestli sady VSPackage je spravovaná nebo nespravovaná, schéma vytváření verzí vedle sebe a výběru uživatelů.
@@ -55,7 +55,7 @@ V systému souborů uživatele musí být VSPackage a jeho podpůrné soubory. U
 
 4. Výchozí systémové nastavení LCID s dílčího výchozí.
 
-5. USA Angličtina (*. \1033* nebo *. \0x409*).
+5. USA Angličtina ( *. \1033* nebo *. \0x409*).
 
 Pokud vaše knihovna DLL balíčku VSPackage obsahuje prostředky a **SatelliteDll\DllName** záznam v registru odkazuje, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , pokusí se načíst ve výše uvedeném pořadí.
 

@@ -3,17 +3,17 @@ title: Sdílené barvy pro sadu Visual Studio | Dokumentace Microsoftu
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b36b7c123f4da9ca3ab7a6f33a972345cdf70e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430236"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310778"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Sdílené barvy pro Visual Studio
 Když vytváříte uživatelské rozhraní, které používá běžné prvky prostředí Visual Studio nebo prvek rozhraní konzistentní s podobnými funkcemi, například, vybrat a přiřadit barvy pomocí existující token názvy v souborech s definicí balíčku. Tím se zajistí, že vaše uživatelské rozhraní zůstane konzistentní s celkové prostředí sady Visual Studio a že se automaticky aktualizuje při přidávání nebo aktualizaci motivy.
@@ -299,7 +299,7 @@ Záhlaví sloupců se skládají z na pozadí, ohraničení, text nadpisu a voli
 | --- | --- |
 | Pozadí | Transparentní |
 | Popředí (Text) | `Environment.CommandBarTextActive` |
-| Ohraničení | Žádný |
+| Ohraničení | Žádné |
 
 **Seznam položek k zobrazení: aktivní stav**
 
@@ -307,7 +307,7 @@ Záhlaví sloupců se skládají z na pozadí, ohraničení, text nadpisu a voli
 | --- | --- |
 | Pozadí | `TreeView.SelectedItemActive` |
 | Popředí (Text) | `TreeView.SelectedItemActiveText` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 **Seznam položek k zobrazení: neaktivním stavu**
 
@@ -315,7 +315,7 @@ Záhlaví sloupců se skládají z na pozadí, ohraničení, text nadpisu a voli
 | --- | --- |
 | Pozadí | `TreeView.SelectedItemInactive` |
 | Popředí (Text) | `TreeView.SelectedItemInactiveText` |
-| Ohraničení | Žádný |
+| Ohraničení | Žádné |
 
 ### <a name="ui-text"></a>Text uživatelského rozhraní
 
@@ -735,7 +735,7 @@ Vyhledávací pole může být jedna z několika státy, z nichž některé se v
 | --- | --- |
 | Pozadí | Žádné |
 | Popředí (piktogram) | `SearchControl.ActionButtonDisabledGlyph` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 **Tlačítko rozevíracího seznamu Cílené hledání.**
 
@@ -873,7 +873,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.Background` |
 | Popředí (Text) | `TreeView.Background` |
 | Popředí (piktogram) | `TreeView.Glyph` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 **Položky zobrazení stromu: ukazatel stavu**
 
@@ -917,7 +917,7 @@ Hierarchické organizační schéma, jehož barvy jsou řízeny názvy barev v p
 | Pozadí | `TreeView.SelectedItemInactive` |
 | Popředí (Text) | `TreeView.SelectedItemInactive` |
 | Popředí (piktogram) | `TreeView.SelectedItemInactiveGlyph` |
-| Ohraničení | Žádný |
+| Ohraničení | Žádné |
 
 **Položky zobrazení stromu: při přechodu myší, vybrali a zaměřena stavu**
 
@@ -1008,7 +1008,7 @@ Nástroj Manifest Designer je navržená jako způsob, jak bylo snazší upravit
 | Prvek | Název tokenu: Category.Color |
 | --- | --- |
 | Pozadí | `ManifestDesigner.TabActive` |
-| Ohraničení | Žádný |
+| Ohraničení | Žádné |
 
 **Podokno vybrané popis manifestu Designer: výchozí stav**
 
@@ -1068,7 +1068,7 @@ Názvy nabídek se skládají z na pozadí, ohraničení a text nadpisu, jakož 
 | Pozadí | Žádné |
 | Popředí (text) | `Environment.CommandBarTextActive` |
 | Popředí (piktogramy) | `Environment.CommandBarMenuGlyph` |
-| Ohraničení | Žádné |
+| Ohraničení | Žádný |
 
 **Název nabídky: ukazatel stavu**
 
