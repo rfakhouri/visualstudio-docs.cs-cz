@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::CauseBreak
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06b392dd10c364e746f592a4d0ffd9ac32ca7df9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a01b5982b4f747bd70c3a35bc0b7191bb54cd21b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870565"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311347"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 Požadavky, že program zastavit provádění na další čas, po jednu z jeho vlákna pokusy o spuštění.
@@ -42,6 +45,6 @@ int CauseBreak();
 
  Tato metoda je asynchronní metoda vrátí hodnotu okamžitě bez nutně čekání na ukončení programu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)

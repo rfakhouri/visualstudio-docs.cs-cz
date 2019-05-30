@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2683c3a2ea80aad341b7fab4fb35d13ea5379c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be7d265db26c31bbec3527ad2bb60e127b1dc9c0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429054"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322637"
 ---
 # <a name="solution-configuration"></a>Konfigurace řešení
 Konfigurace řešení ukládání vlastností na úrovni řešení. Chování odkazují **Start** klíč (F5) a **sestavení** příkazy. Tyto příkazy ve výchozím nastavení, sestavit a spustit konfiguraci ladění. Oba příkazy se spustí v kontextu konfigurace řešení. To znamená, že uživatel můžete očekávat F5 pro spuštění a sestavení bez ohledu aktivním řešení se konfigurují prostřednictvím nastavení. Prostředí je určená k optimalizaci pro řešení než projektů při rozhodování o vytváření a spouštění.
@@ -31,7 +31,7 @@ Konfigurace řešení ukládání vlastností na úrovni řešení. Chování od
 
    Zobrazuje názvy projektů v aktuálním řešení se nenašly.
 
-- Konfigurace
+- Konfiguraci
 
    Zadejte seznam konfigurací podporována typem projektu a zobrazí na stránkách vlastností implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>.
 

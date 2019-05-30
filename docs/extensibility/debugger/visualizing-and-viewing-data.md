@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], viewing data
 - debugging [Debugging SDK], visualizing data
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 852616ac77096a5b31078d64051f67f6cbb3ecb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b29d1135df370232324edec9d1bd4a23397b17e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912826"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348342"
 ---
 # <a name="visualizing-and-viewing-data"></a>Vizualizace a zobrazení dat
 Vizualizérů typů a vlastních prohlížečů k dispozici data způsobem, který je rychle smysl pro vývojáře. Chyba při vyhodnocování výrazu (EE) můžete vizualizérů typů třetích stran taky zadat vlastní vlastních prohlížečů.

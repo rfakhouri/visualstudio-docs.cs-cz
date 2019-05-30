@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c13d32ab6b91dce94bab307f6bbc6744f9c17a0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411091"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322841"
 ---
 # <a name="vsix-manifest-designer"></a>Návrhář manifestu VSIX
 Upraví soubor manifestu balíčku VSIX, který nastaví chování při instalaci rozšíření sady Visual Studio.
@@ -60,15 +60,15 @@ Upraví soubor manifestu balíčku VSIX, který nastaví chování při instalac
 
   **Licence** Určuje textový soubor, který obsahuje licenci, pokud je k dispozici.
 
-  **Ikona** Určuje soubor grafiky (*.png*, *.bmp*, *.jpeg*, *.ico*), který obsahuje ikonu, který se má zobrazit v **Správce rozšíření**, pokud je k dispozici ikona. Obrázek ikony musí být 32 x 32 pixelů nebo změně velikosti se do příslušných dimenzí. Pokud není zadána žádná ikona, **Správce rozšíření** používá výchozí ikona.
+  **Ikona** Určuje soubor grafiky ( *.png*, *.bmp*, *.jpeg*, *.ico*), který obsahuje ikonu, který se má zobrazit v **Správce rozšíření**, pokud je k dispozici ikona. Obrázek ikony musí být 32 x 32 pixelů nebo změně velikosti se do příslušných dimenzí. Pokud není zadána žádná ikona, **Správce rozšíření** používá výchozí ikona.
 
-  **Obrázek náhledu** Určuje soubor grafiky (*.png*, *.bmp*, *.jpeg*, *.ico*), který obsahuje image ve verzi preview pro Zobrazit v **Správce rozšíření**, pokud image ve verzi preview je k dispozici. Obrázek náhledu, musí být 200 x 200 pixelů. Pokud není zadán žádný náhled obrázku, **Správce rozšíření** používá výchozí image.
+  **Obrázek náhledu** Určuje soubor grafiky ( *.png*, *.bmp*, *.jpeg*, *.ico*), který obsahuje image ve verzi preview pro Zobrazit v **Správce rozšíření**, pokud image ve verzi preview je k dispozici. Obrázek náhledu, musí být 200 x 200 pixelů. Pokud není zadán žádný náhled obrázku, **Správce rozšíření** používá výchozí image.
 
   **Značky** přidá text značky pro tipy pro hledání.
 
-  **Zpráva k vydání verze** Určuje soubor (*.txt*, *.rtf*), který obsahuje zprávu k vydání verze. Přijímá také adresu URL webu, který se zobrazí zpráva k vydání verze.
+  **Zpráva k vydání verze** Určuje soubor ( *.txt*, *.rtf*), který obsahuje zprávu k vydání verze. Přijímá také adresu URL webu, který se zobrazí zpráva k vydání verze.
 
-  **Příručka Začínáme** Určuje soubor (*.txt*, *.rtf*), který obsahuje informace o tom, jak použít rozšíření nebo obsah v balíčku souboru VSIX. Tento průvodce se zobrazí po dokončení instalace rozšíření. Přijímá také adresu URL webu, který se zobrazí v průvodci.
+  **Příručka Začínáme** Určuje soubor ( *.txt*, *.rtf*), který obsahuje informace o tom, jak použít rozšíření nebo obsah v balíčku souboru VSIX. Tento průvodce se zobrazí po dokončení instalace rozšíření. Přijímá také adresu URL webu, který se zobrazí v průvodci.
 
   **Další informace o adrese URL** Určuje adresu URL webu, který obsahuje další informace o produktu.
 

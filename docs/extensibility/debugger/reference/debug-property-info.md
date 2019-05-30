@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_PROPERTY_INFO structure
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11facd5b7de76aa407ef28366b789870cdad03c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7804cfad48d5029e16619b5ae524fa6e761f11b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924809"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346171"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 Obsahuje informace o vlastnosti ladění.
@@ -49,19 +52,26 @@ public struct DEBUG_PROPERTY_INFO {
 ```
 
 ## <a name="members"></a>Členové
-dwValidFields A kombinace příznaků z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) výčet, který určuje, která pole jsou vyplněna.
+`dwValidFields`\
+Kombinace příznaků z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) výčet, který určuje, která pole jsou vyplněna.
 
-bstrFullName úplný název vlastnosti.
+`bstrFullName`\
+Celý název vlastnosti.
 
-bstrName název vlastnosti v rámci kontextu.
+`bstrName`\
+Název vlastnosti v rámci kontextu.
 
-bstrType vlastnost typ jako formátovaný řetězec.
+`bstrType`\
+Typ vlastnosti jako formátovaný řetězec.
 
-bstrValue hodnota vlastnosti jako formátovaný řetězec.
+`bstrValue`\
+Hodnota vlastnosti jako formátovaný řetězec.
 
-pProperty [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objektem popsaným touto strukturou.
+`pProperty`\
+[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objektem popsaným touto strukturou.
 
-dwAttrib A kombinace příznaků z [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) výčet popisující vlastnosti této vlastnosti.
+`dwAttrib`\
+Kombinace příznaků z [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) výčet popisující vlastnosti této vlastnosti.
 
 ## <a name="remarks"></a>Poznámky
 Vlastnost je objekt hierarchickou povahu, který má název, typ a hodnotu. Například vlastnost popsat lokální proměnné, parametry, sledovat proměnné a výrazy a registry.
@@ -75,7 +85,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

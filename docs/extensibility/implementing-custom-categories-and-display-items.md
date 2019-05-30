@@ -6,17 +6,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4eeb8af06ee4e3285e15afbb3571fb2845adef98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418840"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321402"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementovat vlastní kategorie a zobrazení položek
 VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) prostřednictvím vlastní kategorie a zobrazit položky.
@@ -45,7 +45,7 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUD
 
 ## <a name="to-create-or-identify-categories"></a>K vytvoření nebo určení kategorie
 
-- Vytvořit zvláštní druh položky registru kategorie *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >*\FontAndColors\\ `<Category>`]*
+- Vytvořit zvláštní druh položky registru kategorie *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<verze sady Visual Studio > *\FontAndColors\\ `<Category>`]*
 
    *\<Kategorie >* je nelokalizovaný název kategorie.
 
@@ -60,7 +60,7 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUD
 
 ## <a name="to-create-or-identify-groups"></a>Vytvořte nebo Identifikujte skupiny
 
-- Vytvořit zvláštní druh položky registru kategorie *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >*\FontAndColors\\*  \<skupiny >*]*
+- Vytvořit zvláštní druh položky registru kategorie *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<verze sady Visual Studio > *\FontAndColors\\*  \<skupiny > *]*
 
    *\<skupiny >* je nelokalizovaný název skupiny.
 

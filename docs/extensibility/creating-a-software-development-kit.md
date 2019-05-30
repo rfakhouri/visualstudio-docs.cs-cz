@@ -3,17 +3,17 @@ title: Vytváření a Software Development Kit | Dokumentace Microsoftu
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc04de6de270053e20e05a30312a298e9e6e2f0f
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 6ad14712653aeca146ffe00cc5c79fd044ce2a4b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177346"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345378"
 ---
 # <a name="create-a-software-development-kit"></a>Vytvořit sadu software development kit
 (SDK) software development kit je kolekce rozhraní API, která může odkazovat jako jedna položka v sadě Visual Studio. **Správce odkazů** dialogové okno obsahuje všechny sady SDK, které jsou relevantní pro projekt. Když přidáte sadu SDK do projektu, rozhraní API, jsou k dispozici v sadě Visual Studio.
@@ -34,7 +34,7 @@ ms.locfileid: "66177346"
  Sady SDK platformy jsou nezbytné pro vývoj aplikací pro platformu. Například [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK je vyžadována k vývoji aplikací pro [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Instalace
- Všechny platformy sady SDK se nainstalují na *sady SDK HKLM\Software\Microsoft\Microsoft\\\v [stopami na PALEC] [TPV]\\ @InstallationFolder = [kořeni sady SDK]*. Odpovídajícím způsobem [!INCLUDE[win81](../debugger/includes/win81_md.md)] sada SDK je nainstalovaná na *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
+ Všechny platformy sady SDK se nainstalují na *sady SDK HKLM\Software\Microsoft\Microsoft\\\v [stopami na PALEC] [TPV]\\ @InstallationFolder = [kořeni sady SDK]* . Odpovídajícím způsobem [!INCLUDE[win81](../debugger/includes/win81_md.md)] sada SDK je nainstalovaná na *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
 ### <a name="layout"></a>Rozložení
  Sady SDK platformy mají následující rozložení:
@@ -74,7 +74,7 @@ ms.locfileid: "66177346"
 
 1. Zadejte ji v klíči registru:
 
-     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number\>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
+     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number\>\ExtensionSDKs\<SDKName>\<SDKVersion>** \
 
      a přidejte podklíč (výchozí), který má hodnotu `<path to SDK><SDKName><SDKVersion>`.
 
@@ -104,7 +104,7 @@ ms.locfileid: "66177346"
 
 2. *Odkazy na* složky: binární soubory, které obsahují rozhraní API. Může se jednat soubory Windows Metadata (WinMD) nebo sestavení.
 
-3. *Redistribuce* složky: soubory, které jsou potřebné pro ladění nebo za běhu a by měl získat zabalené jako součást aplikace daného uživatele. Všechny binární soubory by měl být umístěn pod *\redist\\< config\>\\< arch\>*, a binárními názvy by měl mít následující formát, který zajistí jedinečnost: *]* \<společnosti >. \<produktu >. \<účel >. \<rozšíření ><em>. Například *Microsoft.Cpp.Build.dll</em>. Všechny soubory s názvy, které mohou kolidovat s názvy souborů od ostatních sad SDK (například soubory jazyka javascript, css, pri, xaml, png a jpg) musí být umístěné pod <em>\redist\\< config\>\\< arch\> \\< sdkname\> \* s výjimkou souborů, které jsou spojeny s XAML ovládací prvky. Tyto soubory by měly být umístěny pod * \redist\\< config\>\\< arch\>\\< componentname\>\\</em>.
+3. *Redistribuce* složky: soubory, které jsou potřebné pro ladění nebo za běhu a by měl získat zabalené jako součást aplikace daného uživatele. Všechny binární soubory by měl být umístěn pod *\redist\\< config\>\\< arch\>* , a binárními názvy by měl mít následující formát, který zajistí jedinečnost: *]* \<společnosti >. \<produktu >. \<účel >. \<rozšíření ><em>. Například *Microsoft.Cpp.Build.dll</em>. Všechny soubory s názvy, které mohou kolidovat s názvy souborů od ostatních sad SDK (například soubory jazyka javascript, css, pri, xaml, png a jpg) musí být umístěné pod <em>\redist\\< config\>\\< arch\> \\< sdkname\> \* s výjimkou souborů, které jsou spojeny s XAML ovládací prvky. Tyto soubory by měly být umístěny pod * \redist\\< config\>\\< arch\>\\< componentname\>\\</em>.
 
 4. *Při návrhu* složky: soubory, které jsou potřebné jenom předprodukční-spuštění/ladění čas a nesmí se zabalil jako součást aplikace daného uživatele. To může být dokumentace XML, knihovny, záhlaví, binární soubory návrhových nástrojů, MSBuild artefakty a tak dále. Všechny sady SDK, která je určená pro využití v nativní projekt musí mít *SDKName.props* souboru. Následuje ukázka tento typ souboru.
 

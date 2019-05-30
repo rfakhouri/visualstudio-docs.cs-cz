@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, architecture
 ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3f8fea6457e6763fb5b4752d348a0ea906481a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c05ae692a364d4e7a81a017d376dd820ade56b73
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908541"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322508"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architektura balíčku VSPackage správy zdrojového kódu
 Balíček správy zdrojového kódu je VSPackage, která používá služby, které [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] poskytuje integrované vývojové prostředí. Balíček správy zdrojového kódu na oplátku poskytuje jeho funkce jako službu správy zdrojových kódů. Kromě toho balíček správy zdrojového kódu je větší variabilitu alternativní než plug-in pro integraci správy zdrojového kódu do správy zdrojových kódů [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

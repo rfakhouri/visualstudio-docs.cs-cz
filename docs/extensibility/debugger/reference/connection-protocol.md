@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a7d8d056fb816a428d78a8e13455cf6ccdd8a90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f52ef7e723b583d593f6f0d4fc18f5f6909b131
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62878266"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346524"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 Určuje protokol, který používá ke komunikaci mezi serverem pro ladění a ladit balíček (DE).
@@ -48,20 +51,27 @@ public enum CONNECTION_PROTOCOL {
 };
 ```
 
-#### <a name="parameters"></a>Parametry
-CONNECTION_NONE bez připojení k serveru.
+## <a name="fields"></a>Pole
+`CONNECTION_NONE`\
+Žádné připojení k serveru.
 
-CONNECTION_UNKNOWN A připojení, ale je neznámého typu.
+`CONNECTION_UNKNOWN`\
+Vytvoří připojení, ale je neznámého typu.
 
-CONNECTION_LOCAL připojení je na místním serveru.
+`CONNECTION_LOCAL`\
+Připojení je na místním serveru.
 
-CONNECTION_PIPE připojení je přes pojmenovaný kanál.
+`CONNECTION_PIPE`\
+Připojení je přes pojmenovaný kanál.
 
-CONNECTION_TCPIP připojení používá protokol TCP/IP.
+`CONNECTION_TCPIP`\
+Připojení používá protokol TCP/IP.
 
-CONNECTION_HTTP připojení používá protokol HTTP (prostřednictvím webového serveru).
+`CONNECTION_HTTP`\
+Připojení používá protokol HTTP (prostřednictvím webového serveru).
 
-CONNECTION_OTHER stal jiný typ připojení (Tato hodnota není aktuálně používá.).
+`CONNECTION_OTHER`\
+Vytvořilo se jiný typ připojení (Tato hodnota není aktuálně používá.).
 
 ## <a name="remarks"></a>Poznámky
 Tyto hodnoty jsou vráceny z [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) metody.
@@ -73,6 +83,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

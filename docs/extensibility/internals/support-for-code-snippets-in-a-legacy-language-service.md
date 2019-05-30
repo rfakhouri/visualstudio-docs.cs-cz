@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dfa3bfa86d39bcd430d96c3d71f192e9a69a9400
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428819"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322430"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Podpora pro fragmenty kódu ve službě starší verze jazyka
 Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotný fragment kódu je šablonu založený na formátu XML s sadu polí. Tato pole jsou zvýrazněny po vložení fragmentu kódu a může mít různé hodnoty v závislosti na kontextu, ve kterém se tento fragment vloží. Okamžitě po vložení fragmentu kódu můžete naformátovat služba jazyka fragmentu kódu.
@@ -50,7 +50,7 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
 
  Jsou obvykle dvou umístěních, kde jsou uložené soubory šablony fragmentu kódu: (1), kam se nainstaloval svůj jazyk a 2) ve složce daného uživatele. Tato místa jsou přidány do registru tak, která sadě Visual Studio **Správce fragmentů kódů** můžete najít fragmenty kódu. Složky uživatele je, kde jsou uložené fragmenty vytvořených uživatelem.
 
- Typické složku rozložení pro soubory šablon nainstalovaných fragment kódu vypadá takto: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.
+ Typické složku rozložení pro soubory šablon nainstalovaných fragment kódu vypadá takto: *[InstallRoot]* \\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.
 
  *[InstallRoot]*  je složka, je nainstalovaný jazyk.
 
@@ -58,7 +58,7 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
 
  *[LCID]*  je ID národního prostředí. Toto je lokalizovaných verzích vaše fragmenty jsou uložené. Identifikátor národního prostředí pro angličtina je například 1033, tak *[LCID]* nahrazuje 1033.
 
- Je nutné zadat jeden další soubor a, který je indexový soubor, obvykle nazývá SnippetsIndex.xml nebo ExpansionsIndex.xml (můžete použít libovolný platný název souboru končí na .xml). Tento soubor je obvykle uložen ve *[InstallRoot]*\\ *[TestLanguage]* složce a určuje přesné umístění složky fragmentů kódu a také ID jazyka a identifikátor GUID jazyka Služba, která používá fragmenty kódu. Jak je popsáno dále v "Instalace položky registru" přesnou cestu k souboru indexu přejde do registru. Tady je příklad souboru SnippetsIndex.xml:
+ Je nutné zadat jeden další soubor a, který je indexový soubor, obvykle nazývá SnippetsIndex.xml nebo ExpansionsIndex.xml (můžete použít libovolný platný název souboru končí na .xml). Tento soubor je obvykle uložen ve *[InstallRoot]* \\ *[TestLanguage]* složce a určuje přesné umístění složky fragmentů kódu a také ID jazyka a identifikátor GUID jazyka Služba, která používá fragmenty kódu. Jak je popsáno dále v "Instalace položky registru" přesnou cestu k souboru indexu přejde do registru. Tady je příklad souboru SnippetsIndex.xml:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>

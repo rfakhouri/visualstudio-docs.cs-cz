@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b965def820771b0bab883c1bdd9bf90d18414e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9ff49f0723153880e88a21376aadec26b250a62b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924429"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344477"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 Určuje typ pole, které jsou součástí [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objektu.
@@ -121,72 +124,105 @@ public enum enum_FIELD_KIND {
 };
 ```
 
-## <a name="members"></a>Členové
-FIELD_KIND_TYPE označuje, že pole je typu pouze.
+## <a name="fields"></a>Pole
+`FIELD_KIND_TYPE`\
+Označuje, že pole je typu pouze.
 
-FIELD_KIND_SYMBOL označuje, že pole je symbol, typ, název a další informace.
+`FIELD_KIND_SYMBOL`\
+Označuje, že pole je symbol, typ, název a další informace.
 
-FIELD_TYPE_PRIMITIVE znamená, že pole primitivních datových typů.
+`FIELD_TYPE_PRIMITIVE`\
+Označuje, že je pole primitivních datových typů.
 
-FIELD_TYPE_STRUCT označuje, že pole je struktura.
+`FIELD_TYPE_STRUCT`\
+Označuje, že pole je struktura.
 
-FIELD_TYPE_CLASS označuje, že pole je třída.
+`FIELD_TYPE_CLASS`\
+Označuje, že pole je třída.
 
-FIELD_TYPE_INTERFACE označuje, že pole je rozhraní.
+`FIELD_TYPE_INTERFACE`\
+Označuje, že pole je rozhraní.
 
-FIELD_TYPE_UNION označuje, že pole je sjednocení.
+`FIELD_TYPE_UNION`\
+Označuje, že pole je sjednocení.
 
-FIELD_TYPE_ARRAY označuje, že pole je pole.
+`FIELD_TYPE_ARRAY`\
+Označuje, že pole je pole.
 
-FIELD_TYPE_METHOD označuje, že pole je metoda.
+`FIELD_TYPE_METHOD`\
+Označuje, že pole je metoda.
 
-FIELD_TYPE_BLOCK označuje, že pole je blok.
+`FIELD_TYPE_BLOCK`\
+Označuje, že pole je blok.
 
-FIELD_TYPE_POINTER označuje, že pole je ukazatel.
+`FIELD_TYPE_POINTER`\
+Označuje, že pole je ukazatel.
 
-FIELD_TYPE_ENUM označuje, že pole je výčtový datový typ.
+`FIELD_TYPE_ENUM`\
+Označuje, že pole je výčtový datový typ.
 
-FIELD_TYPE_LABEL označuje, že pole je popisek.
+`FIELD_TYPE_LABEL`\
+Označuje, že pole je popisek.
 
-FIELD_TYPE_TYPEDEF označuje, že pole je definice typu.
+`FIELD_TYPE_TYPEDEF`\
+Označuje, že pole je definice typu.
 
-FIELD_TYPE_BITFIELD označuje, že pole je bitového pole.
+`FIELD_TYPE_BITFIELD`\
+Označuje, že pole je bitového pole.
 
-FIELD_TYPE_NAMESPACE označuje, že pole je obor názvů.
+`FIELD_TYPE_NAMESPACE`\
+Označuje, že pole je obor názvů.
 
-FIELD_TYPE_MODULE označuje, že pole je modul.
+`FIELD_TYPE_MODULE`\
+Označuje, že pole je modul.
 
-FIELD_TYPE_DYNAMIC označuje, že pole je dynamická.
+`FIELD_TYPE_DYNAMIC`\
+Označuje, že pole je dynamická.
 
-FIELD_TYPE_PROP označuje, že pole je vlastnost.
+`FIELD_TYPE_PROP`\
+Označuje, že pole je vlastnost.
 
-FIELD_TYPE_INNERCLASS označuje, že pole je vnitřní třídu.
+`FIELD_TYPE_INNERCLASS`\
+Označuje, že pole je vnitřní třídu.
 
-FIELD_TYPE_REFERENCE označuje, že pole je odkaz.
+`FIELD_TYPE_REFERENCE`\
+Označuje, že pole je odkaz.
 
-FIELD_TYPE_EXTENDED vyhrazen pro budoucí použití.
+`FIELD_TYPE_EXTENDED`\
+Vyhrazeno pro budoucí použití.
 
-FIELD_SYM_MEMBER označuje, že pole je členem.
+`FIELD_SYM_MEMBER`\
+Označuje, že pole je členem.
 
-FIELD_SYM_LOCAL označuje, že pole je místní.
+`FIELD_SYM_LOCAL`\
+Označuje, že pole je místní.
 
-FIELD_SYM_PARAMETER označuje, že pole je parametr.
+`FIELD_SYM_PARAMETER`\
+Označuje, že pole je parametr.
 
-FIELD_SYM_THIS označuje, že pole je ukazatel "Tento".
+`FIELD_SYM_THIS`\
+Označuje, že pole je ukazatel "Tento".
 
-FIELD_SYM_GLOBAL označuje, že pole je globální.
+`FIELD_SYM_GLOBAL`\
+Označuje, že pole je globální.
 
-FIELD_SYM_PROP_GETTER označuje, že pole načte vlastnosti.
+`FIELD_SYM_PROP_GETTER`\
+Označuje, že pole načte vlastnosti.
 
-FIELD_SYM_PROP_SETTER označuje, že pole nastaví vlastnosti.
+`FIELD_SYM_PROP_SETTER`\
+Označuje, že pole nastaví vlastnosti.
 
-FIELD_SYM_EXTENDED vyhrazen pro budoucí použití.
+`FIELD_SYM_EXTENDED`\
+Vyhrazeno pro budoucí použití.
 
-FIELD_KIND_MASK označuje maska pro typy polí.
+`FIELD_KIND_MASK`\
+Označuje maska pro typy polí.
 
-FIELD_TYPE_MASK označuje maska pro typy polí.
+`FIELD_TYPE_MASK`\
+Označuje maska pro typy polí.
 
-FIELD_SYM_MASK označuje maska informací o symbolu.
+`FIELD_SYM_MASK`\
+Označuje maska informací o symbolu.
 
 ## <a name="remarks"></a>Poznámky
 Vrácená z volání [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metody.
@@ -200,7 +236,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
 - [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)

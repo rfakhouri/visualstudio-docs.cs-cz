@@ -7,17 +7,17 @@ helpviewer_keywords:
 - buttons [Visual Studio], adding to Solution Explorer
 - Solution Explorer, adding buttons
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50b782beeb0496d781bcb6e9bd15f70278c4db73
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2cb5c0a8aac049b7d5ff0e79843724b87e4999e4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410155"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313533"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Přidání příkazu do panelu nástrojů Průzkumníka řešení
 Tento návod ukazuje, jak přidat tlačítko **Průzkumníka řešení** nástrojů.
@@ -27,7 +27,7 @@ Tento návod ukazuje, jak přidat tlačítko **Průzkumníka řešení** nástro
  Další informace o nabídkách, příkazy nástrojů a *.vsct* soubory, naleznete v tématu [příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Pomocí tabulky příkazů XML (*.vsct*) místo příkazu konfigurace tabulky souborů (*.ctc*) soubory k definování, jak zobrazit nabídek a příkazů vaše rozšíření VSPackages. Další informace najdete v tématu [tabulky příkazů aplikace Visual Studio (. Vsct) soubory](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Pomocí tabulky příkazů XML ( *.vsct*) místo příkazu konfigurace tabulky souborů ( *.ctc*) soubory k definování, jak zobrazit nabídek a příkazů vaše rozšíření VSPackages. Další informace najdete v tématu [tabulky příkazů aplikace Visual Studio (. Vsct) soubory](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Požadavky
  Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).

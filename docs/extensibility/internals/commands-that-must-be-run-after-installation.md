@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76960ae9ffce9cc43510ae1ffd34b8350d58214c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d8a59e1a6613936c586c5529dcfc6a56a957112c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418714"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341995"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Příkazy, které musí spustit po instalaci
 Pokud nasazení vašeho rozšíření prostřednictvím *MSI* souboru, je nutné spustit **devenv/Setup** jako součást vaší instalaci sady Visual Studio ke zjištění vašich rozšíření.
@@ -28,7 +28,7 @@ Pokud nasazení vašeho rozšíření prostřednictvím *MSI* souboru, je nutné
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Řádky tabulky RegLocator najít devenv.exe z různých verzí sady Visual Studio
 
-|podpis|Kořenové|Key|Název|Type|
+|podpis|Kořenové|Key|Name|Type|
 |-----------------|----------|---------|----------|----------|
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|
@@ -74,7 +74,7 @@ Pokud nasazení vašeho rozšíření prostřednictvím *MSI* souboru, je nutné
 
 ### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>Tabulka InstallExecuteSequence naplánování devenv.exe vlastní akce
 
-|Akce|Podmínka|Pořadí|
+|Akce|Podmínka|Sequence|
 |------------|---------------|--------------|
 |CA_RunDevenv2002|DEVENV_EXE_2002|6602|
 |CA_RunDevenv2003|DEVENV_EXE_2003|6603|

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_DATA structure
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70c1bb00fc8648cfe19f4bcecffdd0592e5f8deb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b8fcf2443cdc013e6f81968336101b78ea220784
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62888896"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346545"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
 Popisuje výsledek vazby datové zarážky.
@@ -43,13 +46,17 @@ public struct BP_RESOLUTION_DATA {
 ```
 
 ## <a name="members"></a>Členové
-`bstrDataExpr` Výraz data, která byla vázána.
+`bstrDataExpr`\
+Výraz data, která byla vázána.
 
-`bstrFunc` Název funkce datová zarážka má vázán v (pokud existuje).
+`bstrFunc`\
+Název funkce datová zarážka má vázán v (pokud existuje).
 
-`bstrImage` Název modulu (například MyModule.dll), která má datová zarážka vázána v.
+`bstrImage`\
+Název modulu (například MyModule.dll), která má datová zarážka vázána v.
 
-`dwFlags` Hodnota z [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) výčet popisující, jak je implementovaná datová zarážka.
+`dwFlags`\
+Hodnota z [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) výčet popisující, jak je implementovaná datová zarážka.
 
 ## <a name="remarks"></a>Poznámky
 Tato struktura je členem skupiny [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) strukturou, který je v zapnout člen [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) vrácené struktury [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)metody.
@@ -61,7 +68,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03b2db1fd58af6a8b2f8a57846e7753cdbc82352
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0502ab10398d37bcafee5316ba7e7566dbab4e01
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877909"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346170"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 Určuje, proč byl spuštěn proces pro ladění.
@@ -45,16 +48,21 @@ public enum enum_DEBUG_REASON {
 };
 ```
 
-#### <a name="parameters"></a>Parametry
-Došlo k chybě nespecifickou DEBUG_REASON_ERROR A (používá se jako výchozí podmínku Pokud žádná z nich důvodů, proč přizpůsobit).
+## <a name="fields"></a>Pole
+`DEBUG_REASON_ERROR`\
+Došlo k chybě nespecifickou (používá se jako výchozí podmínku Pokud žádná z nich důvodů, proč přizpůsobit).
 
-DEBUG_REASON_USER_LAUNCHED proces byl spuštěn na žádost uživatele.
+`DEBUG_REASON_USER_LAUNCHED`\
+Proces byl spuštěn na žádost uživatele.
 
-DEBUG_REASON_USER_ATTACHED již spuštěnému procesu byl připojen k uživatelem.
+`DEBUG_REASON_USER_ATTACHED`\
+Již spuštěnému procesu byl připojen k uživatelem.
 
-DEBUG_REASON_AUTO_ATTACHED procesu je automaticky připojen k při jejím spuštění.
+`DEBUG_REASON_AUTO_ATTACHED`\
+Proces byl automaticky připojen k při jejím spuštění.
 
-Proces byl spuštěn z důvodu DEBUG_REASON_CAUSALITY *Just-In-Time* ladění události (JIT).
+`DEBUG_REASON_CAUSALITY`\
+Proces byl spuštěn z důvodu *Just-In-Time* ladění události (JIT).
 
 ## <a name="remarks"></a>Poznámky
 Vrátilo [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) metody.
@@ -66,6 +74,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

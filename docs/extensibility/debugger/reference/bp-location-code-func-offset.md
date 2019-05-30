@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_FUNC_OFFSET structure
 ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c0fdc8739c9df321391cdcb43e915b5036ea7f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+ms.openlocfilehash: 25ac9881f44019d818c49091900ce759680a37a5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925122"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319082"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 Popisuje umístění posunu zarážky ve funkci v kódu.
@@ -32,9 +34,11 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 ```
 
 ## <a name="members"></a>Členové
-`bstrContext` Kontext k zarážce, obvykle název metody nebo funkce jako zobrazené v zásobníku volání.
+`bstrContext`\
+Kontext k zarážce, obvykle název metody nebo funkce jako zobrazené v zásobníku volání.
 
-`pFuncPos` [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) objekt, který popisuje název funkce a relativní pozice začátku funkce.
+`pFuncPos`\
+[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) objekt, který popisuje název funkce a relativní pozice začátku funkce.
 
 ## <a name="remarks"></a>Poznámky
 Tato struktura je členem skupiny [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktury v rámci sjednocení.
@@ -48,7 +52,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

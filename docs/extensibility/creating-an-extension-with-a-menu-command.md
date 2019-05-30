@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e8e98a20fafc825af0cf9486c8a9939c02e3b5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb18792e2d0d357bb131af6c12e97425cd72fd05
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891061"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345374"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Vytvoření rozšíření pomocí příkazu nabídky
 
@@ -32,7 +32,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
 
 1. Vytvořte projekt VSIX s názvem **FirstMenuCommand**. Šablona projektu VSIX v můžete najít **nový projekt** dialogové okno tak, že "vsix".
 
-2. Po otevření projektu přidat vlastní příkaz šablonu položky s názvem **FirstCommand**. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C#** > **rozšiřitelnost** a vyberte **vlastního příkazu**. V **název** pole v dolní části okna, změňte název souboru příkazu *FirstCommand.cs*.
+2. Po otevření projektu přidat vlastní příkaz šablonu položky s názvem **FirstCommand**. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C#**  > **rozšiřitelnost** a vyberte **vlastního příkazu**. V **název** pole v dolní části okna, změňte název souboru příkazu *FirstCommand.cs*.
 
 3. Sestavte projekt a spusťte ladění.
 
@@ -50,7 +50,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
 
 ::: moniker-end
 
-Teď přejděte **nástroje** nabídky v experimentální instanci aplikace. Měli byste vidět **vyvolat FirstCommand** příkazu. V tomto okamžiku zobrazí okno se zprávou, že příkaz **FirstCommandPackage uvnitř FirstMenuCommand.FirstCommand.MenuItemCallback()**. Uvidíme, jak se ve skutečnosti spustí program Poznámkový blok z tohoto příkazu v další části.
+Teď přejděte **nástroje** nabídky v experimentální instanci aplikace. Měli byste vidět **vyvolat FirstCommand** příkazu. V tomto okamžiku zobrazí okno se zprávou, že příkaz **FirstCommandPackage uvnitř FirstMenuCommand.FirstCommand.MenuItemCallback()** . Uvidíme, jak se ve skutečnosti spustí program Poznámkový blok z tohoto příkazu v další části.
 
 ## <a name="change-the-menu-command-handler"></a>Změnit obslužná rutina příkazu nabídky
 
