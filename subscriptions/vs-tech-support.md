@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Zjistěte, jak aktivovat výhody technické podpory součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811458"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402033"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivace a používání výhody technické podpory v předplatných sady Visual Studio
 
@@ -90,6 +90,9 @@ Při odeslání incidentu online, budete nejprve vyzváni k přihlášení. Pomo
 
    > [!div class="mx-imgBorder"]
    > ![Technická podpora výhody předkládání incidentů – vyberte plán](_img/vs-tech-support/vs-tech-support-choose-plan.png)
+
+   > [!NOTE]
+   > Pokud nevidíte svou podporu plánování, přejděte zpět na předchozí stránku a klikněte na tlačítko **Další** znovu.  Pokud se nezdaří, chcete-li zobrazit plán podpory, zkopírujte text váš problém podpory do schránky, aktualizujte stránku a znovu vytvořit problém podpory.
 
 6. Dokončete zbývající kroky (závažnost, kontaktní údaje, zkontrolujte).   Jakmile odešlete incident, uvidíte potvrzení, že byla úspěšně odeslána incident a mohou nahrávat soubory do případu. Podpora Professional se přiřadí incident a vás bude kontaktovat, chcete-li vyřešit váš problém pomocí způsob kontaktu, který jste vybrali.
 

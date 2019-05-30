@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře | Dokumentace Microsoftu'
+title: Vytvoření webové části pro službu SharePoint pomocí návrháře
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a22d814ce50dea1ee67ed3bf1f071839e60a797
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9963c2f7e829e9d295ca254aa651e37e3ad08efd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965294"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401149"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře
 

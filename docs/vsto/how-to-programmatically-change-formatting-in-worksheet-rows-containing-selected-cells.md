@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Změna formátování řádků listů obsahujících zvolené buňky prostřednictvím kódu programu'
+title: Změna formátů řádků obsahujících zvolené buňky prostřednictvím kódu.
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b96ce077ed2f45c22679c1be798ae8b2197e0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e77f555728ee89d7d202a35a91c9dbddba6224f3
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575673"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401380"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Postupy: Změna formátování řádků listů obsahujících zvolené buňky prostřednictvím kódu programu
   Můžete změnit písmo celý řádek, který obsahuje vybrané buňky tak, aby text tučné.

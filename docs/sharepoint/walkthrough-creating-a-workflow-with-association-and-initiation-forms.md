@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace | Dokumentace Microsoftu'
+title: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430381"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401158"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Návod: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace
   Tento návod ukazuje, jak vytvořit základní sekvenční pracovní postup, který zahrnuje použití formuláře pro asociaci a. Jedná se o ASPX formuláře, které umožňují parametry se mají přidat do pracovního postupu, pokud je první související (formulář přidružení) správcem služby SharePoint a při spuštění pracovního postupu uživatelem (inicializační formulář).
@@ -90,7 +90,7 @@ ms.locfileid: "63430381"
 
      **Průvodce přizpůsobením SharePoint** se zobrazí.
 
-10. V **zadejte název pracovního postupu pro ladění** stránce, přijměte výchozí název (**ExpenseReport - Workflow1**). Ponechte výchozí hodnotu typu šablony pracovního postupu (**pracovní postup seznamu)**. Zvolte **Další** tlačítko.
+10. V **zadejte název pracovního postupu pro ladění** stránce, přijměte výchozí název (**ExpenseReport - Workflow1**). Ponechte výchozí hodnotu typu šablony pracovního postupu (**pracovní postup seznamu)** . Zvolte **Další** tlačítko.
 
 11. V **přejete si Visual Studio automaticky přidružovala pracovní postup v ladicí relaci?** stránce, zrušte zaškrtnutí pole, které se automaticky přidruží šablony pracovního postupu, pokud je zaškrtnuto.
 

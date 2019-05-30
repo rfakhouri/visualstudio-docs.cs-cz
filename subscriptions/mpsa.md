@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Předplatná sady Visual Studio produktů společnosti Microsoft a smlouvu o poskytování služeb (MPSA)
 searchscope: VS Subscription
-ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac051650c26dc2dbb7c6ee6d9405963536dd98c9
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002319"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402165"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Předplatná sady Visual Studio v Microsoft Products a smlouvu Services (MPSA)
 
@@ -64,4 +64,4 @@ Vyžadovat pomoc nebo máte nějaké dotazy, můžete požádat podpory telefoni
 
 Podpora MPSA: **1-866-200-9611**, k dispozici od pondělí až pátek 5:30:00 do 5:30 hodin tichomořského času
 
-E-mailu: ngvlsup@microsoft.com
+Online:  https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f?sl=enampsc=US

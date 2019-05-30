@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Vytvoření uživatelského ovládacího prvku pro stránku aplikace služby SharePoint nebo webovou část | Dokumentace Microsoftu'
+title: Vytvoření uživatelského ovládacího prvku pro části stránky nebo webové aplikace služby SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a88a59e9b87a193329433e5eb0625afa1428026
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446505"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401483"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Postupy: Vytvoření uživatelského ovládacího prvku pro části stránky nebo webové aplikace služby SharePoint
   Můžete také vytvářet vlastní uživatelské ovládací prvky, které poskytují vlastní funkce pro řešení služby SharePoint, a tyto funkce v rámci svého projektu znovu využívat. De webové části nebo do stránky aplikace lze zahrnout uživatelské ovládací prvky, přidat další ovládací prvky technologie ASP.NET, ovládací prvky služby SharePoint a definovat vlastnosti a metody pro ovládací prvek. Další informace o uživatelských ovládacích prvcích najdete v tématu [vytvořit opakovaně použitelné ovládací prvky webové části nebo stránky aplikace](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) a [uživatelské ovládací prvky a ovládací prvky serveru ve službě SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -37,7 +37,7 @@ ms.locfileid: "63446505"
 
 4. V **nainstalováno** podokně, vyberte **Office/SharePoint** uzlu.
 
-5. V seznamu šablon služby SharePoint, zvolte **uživatelský ovládací prvek (pouze řešení farmy)**.
+5. V seznamu šablon služby SharePoint, zvolte **uživatelský ovládací prvek (pouze řešení farmy)** .
 
     > [!NOTE]
     > Uživatelské ovládací prvky fungují pouze pro řešení farmy.

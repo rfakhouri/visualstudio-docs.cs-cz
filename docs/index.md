@@ -3,9 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
 titleSuffix: ''
-description: 'Další informace o použití sady Visual Studio pro vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.'
+description: Další informace o použití sady Visual Studio pro vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: d2a81b150a73e37089d678ff4174b4b4bec78572
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402138"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -126,7 +132,7 @@ Visual Basic </a>
                                                         </td>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
                                                             <ul class="noBullet">                                     <li>
-                                                                    <a class="barLink" href="/cpp/get-started/">
+                                                                    <a class="barLink" href="/cpp/get-started/tutorial-console-cpp">
                                                                         <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="C++ icon">
 C++ </a>
                                                                 </li>

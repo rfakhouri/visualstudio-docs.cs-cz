@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Spuštění kódu pokud je projekt SharePoint nasazen nebo stažen | Dokumentace Microsoftu'
+title: Spuštění kódu pokud je projekt SharePoint nasazen nebo stažen
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4aadc089fba5c1f55488c72bfd5c3e46ebf59487
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e3f46ff9d2e83307f745180288e69839a0d336e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813469"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401766"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Postupy: Spuštění kódu pokud je projekt SharePoint nasazen nebo stažen
   Pokud chcete provádět další úlohy, když je projekt SharePoint nasazen nebo stažen, můžete zpracovávat události, které jsou vyvolány pomocí sady Visual Studio. Další informace najdete v tématu [balení a nasazení rozšíření SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

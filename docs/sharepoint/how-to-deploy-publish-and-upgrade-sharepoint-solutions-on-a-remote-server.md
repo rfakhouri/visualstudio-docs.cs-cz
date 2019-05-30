@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Nasazení, publikování a upgradování řešení služby SharePoint na vzdáleném serveru | Dokumentace Microsoftu'
+title: Nasazení, publikování a upgradování řešení služby SharePoint vzdáleně
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813940"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401448"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Postupy: Nasazení, publikování a upgradování řešení služby SharePoint na vzdáleném serveru
   Kromě nasazení řešení služby SharePoint do místního systému, můžete publikovat v izolovaném prostoru řešení SharePoint vzdálenými lokalitami nebo místní weby služby SharePoint. Tyto vzdálené kopie procesu publikování *.wsp* souboru na SharePoint serveru nainstaluje řešení a pak umožňuje aktivovat řešení. Rovněž lze upgradovat vzdálenou instalaci řešení služby SharePoint po provedení změn na ni.
@@ -37,7 +37,7 @@ ms.locfileid: "62813940"
 
 5. Pokud se vyžaduje ověření uživatele, přihlaste se ke vzdálenému serveru.
 
-     V sadě Visual Studio se zobrazí průběh publikování **výstup** okna. Po dokončení procesu, řešení (*.wsp*) soubor je nainstalovaný na vzdáleném serveru SharePoint. Nicméně je nutné stále ho aktivovat předtím, než je možné v Sharepointu.
+     V sadě Visual Studio se zobrazí průběh publikování **výstup** okna. Po dokončení procesu, řešení ( *.wsp*) soubor je nainstalovaný na vzdáleném serveru SharePoint. Nicméně je nutné stále ho aktivovat předtím, než je možné v Sharepointu.
 
 6. Na **Galerie řešení** stránky, vyberte aplikaci služby SharePoint a potom na pásu karet, zvolte **aktivovat** tlačítko.
 

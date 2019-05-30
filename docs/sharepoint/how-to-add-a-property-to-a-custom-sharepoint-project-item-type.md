@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Přidání vlastnosti typu položky projektu SharePoint vlastní | Dokumentace Microsoftu'
+title: Přidání vlastnosti do vlastního typu položky projektu SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9695755967aa1b66aa7cda2d784ae88b0fc1b42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d44f4d5995be8bacc447ea3f915663a309bee77
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967289"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401655"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Postupy: Přidání vlastnosti do vlastního typu položky projektu SharePoint
   Při definování vlastního typu položky projektu služby SharePoint, můžete přidat vlastnost do položky projektu. Vlastnost se zobrazí v **vlastnosti** okno při výběru položky projektu v **Průzkumníka řešení**.

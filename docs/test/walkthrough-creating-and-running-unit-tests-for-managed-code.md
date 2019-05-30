@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704662"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401723"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Návod: Vytváření a spouštění testů jednotek pro spravovaný kód
 
@@ -149,7 +149,7 @@ Nyní máte projekt s metodami, které můžete otestovat. V tomto článku se t
 
 2. V **nový projekt** dialogového okna rozbalte **nainstalováno**, rozbalte **Visual C#** a klikněte na tlačítko **Test**.
 
-3. V seznamu šablon vyberte **projekt testů MSTest (.NET Core)**.
+3. V seznamu šablon vyberte **projekt testů MSTest (.NET Core)** .
 
 4. V **název** zadejte `BankTests`a pak vyberte **OK**.
 
@@ -365,9 +365,9 @@ Spuštění těchto dvou metod testu ukazuje, že testy správně fungovat.
 
 ### <a name="continue-the-analysis"></a>Pokračování analýzy
 
-Dvě poslední metody testování jsou však také problematické. Můžete nemůže být určité která podmínka testované metody vyvolá výjimku, když je buď testovací běh. Nějaký způsob odlišení těchto dvou podmínek, který je částka negativní debetní nebo hodnota větší než zůstatek, zvýší vaši důvěru v tyto testy.
+Metoda testování lze dále zvýšit. Aktuální implementaci, máme k dispozici žádný způsob, jak zjistit, která podmínka (`amount > m_balance` nebo `amount < 0`) vedla k výjimce během testu. Právě víme, že `ArgumentOutOfRangeException` byla vyvolána někde v metodě. By bylo lepší, pokud jsme může zjistit, které podmínku v `BankAccount.Debit` způsobila výjimku, která je vyvolána (`amount > m_balance` nebo `amount < 0`), můžeme být jistí, že metodě je vhodnosti kontroly argumenty správně.
 
-Podívejte se na testované metody znovu a Všimněte si, že oba podmíněné příkazy používají `ArgumentOutOfRangeException` konstruktor, který právě přebírá název argumentu, který jako parametr:
+Podívejte se na metody testování (`BankAccount.Debit`) znovu a Všimněte si, že oba podmíněné příkazy používají `ArgumentOutOfRangeException` konstruktor, který právě přebírá název argumentu, který jako parametr:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

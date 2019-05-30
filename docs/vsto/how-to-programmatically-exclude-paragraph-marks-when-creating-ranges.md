@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Programově vyloučení značek odstavů při vytváření oblastí'
+title: Vyloučení značek odstavů při vytváření oblastí prostřednictvím kódu programu
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3362404fab0777202407aa47fea7e3d8c3044b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852dc6c51215e00c1fdc1571f51940a44f727794
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812886"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402144"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Postupy: Programově vyloučení značek odstavů při vytváření oblastí
   Vždy, když vytvoříte <xref:Microsoft.Office.Interop.Word.Range> objektu podle odstavce, všechny netisknutelné znaky, jako je například značek odstavů, jsou zahrnuté v rozsahu. Můžete vložit text odstavce zdroje do cílového odstavce. Pokud nechcete cílového odstavce rozdělit na samostatné odstavce, pak musíte nejdřív odebrat značku odstavce od zdroje odstavce. Navíc protože informace o formátování odstavce se uloží v rámci značku odstavce, pravděpodobně chcete zahrnout to při vložení do existujícího odstavce rozsahu.

@@ -1,5 +1,5 @@
 ---
-title: Pomocí zástupných procedury k izolování částí aplikace pro testování částí
+title: Pomocí zástupných procedury k izolování aplikace pro testování částí
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 08631af916947021f37bfb3c73b821ba37e3b462
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b88905df0c99eb66c64e529610d6713801fceece
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961964"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401717"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Vzájemná izolace částí aplikace pomocí zástupných procedur za účelem testování částí
 
@@ -228,9 +228,9 @@ class TestMyComponent
     public void TestVariableContosoPrice()
     {
         // Arrange:
-        int priceToReturn;
-        string companyCodeUsed;
-        var componentUnderTest = new StockAnalyzer(new StubIStockFeed()
+        int priceToReturn = 345;
+        string companyCodeUsed = "";
+        var componentUnderTest = new StockAnalyzer(new StockAnalysis.Fakes.StubIStockFeed()
             {
                GetSharePriceString = (company) =>
                   {
@@ -240,8 +240,6 @@ class TestMyComponent
                      return priceToReturn;
                   };
             };
-        // Set the value that will be returned by the stub:
-        priceToReturn = 345;
 
         // Act:
         int actualResult = componentUnderTest.GetContosoPrice();
@@ -263,7 +261,7 @@ Class TestMyComponent
     <TestMethod()> _
     Public Sub TestVariableContosoPrice()
         ' Arrange:
-        Dim priceToReturn As Integer
+        Dim priceToReturn As Integer = 345
         Dim companyCodeUsed As String = ""
         Dim stockFeed As New StockAnalysis.Fakes.StubIStockFeed()
         With stockFeed
@@ -278,8 +276,6 @@ Class TestMyComponent
         End With
         ' Create an object to test:
         Dim componentUnderTest As New StockAnalyzer(stockFeed)
-        ' Set the value that will be returned by the stub:
-        priceToReturn = 345
 
         ' Act:
         Dim actualResult As Integer = componentUnderTest.GetContosoPrice()
@@ -316,7 +312,7 @@ var stub = new StubIMyInterface ();
 stub.MyMethodString = (value) => 1;
 ```
 
-Pokud neposkytnete zástupnou proceduru pro funkci, vygeneruje rozhraní Fakes funkci, která vrátí výchozí hodnotu návratového typu. Pro čísla, výchozí hodnota je 0, a pro typy tříd je `null` (C#) nebo `Nothing` (Visual Basic).
+Pokud nezadáte zástupnou proceduru pro funkci, vygeneruje rozhraní Fakes funkci, která vrátí výchozí hodnotu návratového typu. Pro čísla, výchozí hodnota je 0 a pro typy tříd, to je `null` (C#) nebo `Nothing` (Visual Basic).
 
 ### <a name="properties"></a>Vlastnosti
 
@@ -340,7 +336,7 @@ stub.ValueGet = () => i;
 stub.ValueSet = (value) => i = value;
 ```
 
-Pokud neposkytnete metody zástupných procedur pro funkci nastavení nebo získání vlastnosti, vygeneruje rozhraní Fakes zástupnou proceduru, která ukládá hodnoty, takže zástupná vlastnost funguje jako jednoduchá proměnná.
+Pokud nezadáte metody zástupných procedur pro funkci nastavení nebo získání vlastnosti, vygeneruje rozhraní Fakes zástupnou proceduru, která ukládá hodnoty, takže zástupná vlastnost funguje jako jednoduchá proměnná.
 
 ### <a name="events"></a>Události
 
@@ -408,7 +404,7 @@ V předchozích příkladech byly zástupné procedury vytvořeny z rozhraní. M
     }
 ```
 
-V zástupné proceduře vygenerované z této třídy můžete nastavit metody delegáta pro DoAbstract() a DoVirtual(), ale nikoliv pro DoConcrete().
+V zástupné proceduře vygenerované z této třídy, můžete nastavit metody delegáta pro `DoAbstract()` a `DoVirtual()`, ale ne `DoConcrete()`.
 
 ```csharp
 // unit test
@@ -437,13 +433,13 @@ Typy zástupných procedur jsou navrženy pro zajištění plynulého ladění.
 
 ## <a name="stub-limitations"></a>Omezení zástupných procedur
 
-1. Signatury metody s ukazateli nejsou podporovány.
+- Signatury metody s ukazateli nejsou podporovány.
 
-2. Zapečetěné třídy nebo statické metody nemohou být zastoupeny, protože typy zástupných procedur závislé na odbavení virtuální metody. Pro tyto případy použijte typy překrytí, jak je popsáno v [izolace aplikace od ostatních sestavení pro testování částí pomocí Překryvné ovladače](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
+- Zapečetěné třídy nebo statické metody nemohou být zastoupeny, protože typy zástupných procedur závislé na odbavení virtuální metody. Pro tyto případy použijte typy překrytí, jak je popsáno v [izolace aplikace od ostatních sestavení pro testování částí pomocí Překryvné ovladače](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 
 ## <a name="change-the-default-behavior-of-stubs"></a>Změna výchozího chování zástupných procedur
 
-Každý generovaný typ zástupné procedury obsahuje instanci `IStubBehavior` rozhraní (až `IStub.InstanceBehavior` vlastnost). Chování je voláno pokaždé, když klient volá člen bez připojeného vlastního delegáta. Pokud chování nebylo nastaveno, bude používat instanci vrácenou `StubsBehaviors.Current` vlastnost. Ve výchozím nastavení, vrátí tato vlastnost chování, které se vyvolá `NotImplementedException` výjimky.
+Každý generovaný typ zástupné procedury obsahuje instanci `IStubBehavior` rozhraní (až `IStub.InstanceBehavior` vlastnost). Chování je voláno pokaždé, když klient volá člen bez připojeného vlastního delegáta. Pokud chování nebylo nastaveno, použije instanci vrácenou `StubsBehaviors.Current` vlastnost. Ve výchozím nastavení, vrátí tato vlastnost chování, které se vyvolá `NotImplementedException` výjimky.
 
 Chování můžete kdykoli změnit tak, že nastavíte `InstanceBehavior` vlastnost na jakékoli zástupné instanci. Například následující fragment kódu změní chování, které nic nedělá nebo vrací výchozí hodnotu návratového typu: `default(T)`:
 

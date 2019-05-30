@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytváření a ladění řešení pracovního postupu služby SharePoint | Dokumentace Microsoftu'
+title: Vytváření a ladění řešení pracovního postupu služby SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430366"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401047"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Návod: Vytváření a ladění řešení pracovního postupu služby SharePoint
   Tento návod ukazuje, jak vytvořit šablonu základního sekvenčního pracovního postupu. Pracovní postup kontroluje vlastnosti knihovny dokumentů sdílené k určení, zda byly zkontrolovány dokumentu. Pokud byly zkontrolovány dokumentu, dokončení pracovního postupu.
@@ -57,7 +57,7 @@ ms.locfileid: "63430366"
 
 3. Zvolte **knihovny** na **nástroje knihovny** pásu karet a klikněte na tlačítko **vytvořit sloupec** tlačítko na pásu karet a vytvoří nový sloupec.
 
-4. Název sloupce **stav dokumentu**, nastavte její typ na **volba (nabídka)**, zadejte následující tři možnosti a klikněte na tlačítko **OK** tlačítka:
+4. Název sloupce **stav dokumentu**, nastavte její typ na **volba (nabídka)** , zadejte následující tři možnosti a klikněte na tlačítko **OK** tlačítka:
 
     - **Musí se provést kontrola**
 

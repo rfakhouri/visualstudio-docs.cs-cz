@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Přidání nebo odebrání funkcí a položek z balíku pomocí Průzkumníku balíčků | Dokumentace Microsoftu'
+title: 'Průzkumník balení: Přidání a odebrání funkcí a položek balíčku'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0f01ecb67cb82ffe325ea471ad5fb5913c8e4d28
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431227"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401562"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Postupy: Přidání nebo odebrání funkcí a položek z balíku pomocí Průzkumníku balíčků
   Pokud chcete nakonfigurovat balíček pro nasazení služby SharePoint položky a funkce, můžete Průzkumníku balíčků. Můžete upravit položky Sharepointového projektu a funkce v souboru WSP.

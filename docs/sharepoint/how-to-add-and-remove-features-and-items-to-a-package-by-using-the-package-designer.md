@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Přidání nebo odebrání funkcí a položek z balíku pomocí návrháře balíčků | Dokumentace Microsoftu'
+title: 'Návrháři balíčku: Přidání a odebrání funkcí a položek balíčku'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbd44bbf3b337815c8c72cea66dd4d56fc645ade
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966975"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401616"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Postupy: Přidání nebo odebrání funkcí a položek z balíku pomocí návrháře balíčků
   Když vytvoříte řešení služby SharePoint, Visual Studio přidá výchozí funkce služby SharePoint do balíčku v řešení. Před posledním nasazení můžete přidávat a odebírat položky Sharepointového projektu a funkce, které chcete upravit balíček Sharepointu.

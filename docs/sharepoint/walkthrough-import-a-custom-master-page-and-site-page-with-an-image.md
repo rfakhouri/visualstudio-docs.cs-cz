@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Import vlastní stránky předlohy a stránky webu s bitovou kopii | Dokumentace Microsoftu'
+title: Import vlastní stránky předlohy a stránky webu s obrázkem
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bd2d9054571e52bc9fbb3906bc1880bb94e407a
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834384"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400898"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Návod: Import vlastní stránky předlohy a stránky webu s obrázkem
   Tento návod ukazuje, jak importovat vlastní stránku SharePoint předlohy a stránky webu s obrázkem do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.
@@ -27,7 +27,7 @@ ms.locfileid: "62834384"
 
 - Vytvoření vlastní stránky předlohy a stránky webu s použitím image v SharePoint designeru.
 
-- Exportovat vlastní stránku předlohy, image a stránku webu do řešení služby SharePoint (*.wsp*) soubor.
+- Exportovat vlastní stránku předlohy, image a stránku webu do řešení služby SharePoint ( *.wsp*) soubor.
 
 - Importujte a nasaďte *.wsp* do souboru [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint pomocí aplikace project importovat balíček řešení služby SharePoint.
 
@@ -127,7 +127,7 @@ ms.locfileid: "62834384"
 6. Uložte aktualizovaný web stránky.
 
 ## <a name="export-the-items-from-sharepoint"></a>Export položek ze Sharepointu
- Export položek ze Sharepointu do řešení služby SharePoint (*.wsp*) soubor.
+ Export položek ze Sharepointu do řešení služby SharePoint ( *.wsp*) soubor.
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>Export položky z aplikace SharePoint Designer
 

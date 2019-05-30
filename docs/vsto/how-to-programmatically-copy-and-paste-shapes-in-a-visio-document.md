@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Programově kopírování a vkládání obrazců do dokumentů aplikace Visio'
+title: Kopírování a vkládání obrazců do dokumentů aplikace Visio prostřednictvím kódu programu
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81941d131b51135771333aeab966716f4126a58b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 074a276fe37ef713d38078f60c4bee95145c4d8b
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575205"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402226"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Postupy: Programově kopírování a vkládání obrazců do dokumentů aplikace Visio
   Programově můžete zkopírovat tvary na jedné stránce dokumentu a vložte je do novou stránku ve stejném dokumentu. Můžete vkládat do výchozího umístění (střední části okna aktivní) nebo do stejné souřadnice umístění měly na původní stránku.

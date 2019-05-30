@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření externího seznamu ve službě SharePoint s použitím obchodních dat | Dokumentace Microsoftu'
+title: Vytvoření externího seznamu ve službě SharePoint s použitím obchodních dat
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf9c7d13e6aaac85d3bac4254247a3c07b39b5c3
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965216"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401071"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Návod: Vytvoření externího seznamu ve službě SharePoint s použitím obchodních dat
 
@@ -70,7 +70,7 @@ K dokončení tohoto návodu budete potřebovat následující komponenty:
 
      **Přidat novou položku** zobrazí se dialogové okno.
 
-8. V **šablony** podokně zvolte **Model Připojení obchodních dat (pouze řešení farmy)**, pojmenujte projekt **AdventureWorksContacts**a klikněte na tlačítko **Přidat** tlačítko.
+8. V **šablony** podokně zvolte **Model Připojení obchodních dat (pouze řešení farmy)** , pojmenujte projekt **AdventureWorksContacts**a klikněte na tlačítko **Přidat** tlačítko.
 
 ## <a name="add-data-access-classes-to-the-project"></a>Přidání tříd pro přístup k data do projektu
 
@@ -182,11 +182,11 @@ Přidání konkrétní vyhledávací metody k entitě kontakt s použitím **pod
 
 10. Zopakujte krok 6 k vytvoření popisovače typu pro každý z těchto polí.
 
-    |Název|Název typu|
+    |Name|Název typu|
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
-    |Telefon|System.String|
+    |Phone|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|

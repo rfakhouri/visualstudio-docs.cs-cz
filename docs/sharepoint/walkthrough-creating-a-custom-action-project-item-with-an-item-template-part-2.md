@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2 | Dokumentace Microsoftu'
+title: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fa4915b9621789c68ed994440de3a1ef544c40c
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430471"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401169"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružte jej k šabloně položky v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce můžete použít ke shromažďování informací od uživatelů při použití šablony přidáte novou instanci položky projektu do projektu. Informace, které slouží k inicializaci položky projektu.
@@ -175,7 +175,7 @@ ms.locfileid: "63430471"
 
 2. Na **podepisování** kartu, vyberte **podepsat sestavení** zaškrtávací políčko.
 
-3. V **vyberte soubor klíče se silným názvem** klikněte na položku  **\<nový … >**.
+3. V **vyberte soubor klíče se silným názvem** klikněte na položku  **\<nový … >** .
 
 4. V **vytvořit klíč se silným názvem** dialogového okna zadejte název, zrušte **chránit můj soubor klíče s heslem** zaškrtněte políčko a klikněte na tlačítko **OK** tlačítko.
 

@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1796ca10226e4aa5d0242bea89cc01f8452cf9e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943996"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402075"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Kurz: Otevření projektu z úložiště
 
@@ -177,9 +177,9 @@ Zobrazte následující animace zkontrolovat práci, kterou jste dokončili v p�
 
 Pokud jste připraveni kódu pomocí sady Visual Studio, Ponořte se do libovolného z následujících kurzů specifické pro jazyk:
 
-- [Visual Studio tutorials | **C#**](./csharp/index.yml)
+- [Visual Studio tutorials | **C#** ](./csharp/index.yml)
 - [Visual Studio tutorials | **Visual Basic**](./visual-basic/index.yml)
-- [Visual Studio kurzy | **C++**](/cpp/get-started/)
+- [Visual Studio kurzy | **C++** ](/cpp/get-started/tutorial-console-cpp)
 - [Visual Studio tutorials | **Python**](/visualstudio/python/)
 - [Visual Studio kurzy | **JavaScript**, **TypeScript**, a **Node.js**](/visualstudio/javascript/)
 

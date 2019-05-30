@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 11171cf619e77508852178ee442ce6e26f9b573f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2058029bfc188cd3284768e3d1782f7cda96c5c1
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437240"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402108"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu
   Doplněk VSTO slouží k přizpůsobení dokumentů aplikace Word a sešitů aplikace Excel následujícími způsoby:

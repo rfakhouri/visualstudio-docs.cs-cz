@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2 | Dokumentace Microsoftu'
+title: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 821638c09b64d9cf7045f8985a54cb5e4223d019
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436725"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401105"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružení šablony projektu v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce můžete použít ke shromažďování informací od uživatelů při použití šablony k vytvoření nového projektu, který obsahuje položky projektu. Informace, které slouží k inicializaci položky projektu.
@@ -368,7 +368,7 @@ ms.locfileid: "63436725"
 
 2. Na **podepisování** kartu, vyberte **podepsat sestavení** zaškrtávací políčko.
 
-3. V **vyberte soubor klíče se silným názvem** klikněte na položku  **\<nový … >**.
+3. V **vyberte soubor klíče se silným názvem** klikněte na položku  **\<nový … >** .
 
 4. V **vytvořit klíč se silným názvem** dialogové okno, zadejte název pro nový soubor klíče, zrušte zaškrtnutí pole **chránit můj soubor klíče s heslem** zaškrtněte políčko a klikněte na tlačítko **OK** tlačítko.
 

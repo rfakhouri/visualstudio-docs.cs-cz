@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit'
+title: Sbalit oblastí nebo výběrů v dokumentech prostřednictvím kódu programu
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6174688bbab5655a7a108e1c971e926ee5977ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7394e8703f0437493536655e11b00ed302e59cff
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575426"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402242"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Postupy: Oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit
   Pokud pracujete <xref:Microsoft.Office.Interop.Word.Range> nebo <xref:Microsoft.Office.Interop.Word.Selection> objektu, můžete chtít změnit výběr na bod vložení před vložení textu, aby nedošlo k přepsání existující text. Jak <xref:Microsoft.Office.Interop.Word.Range> a <xref:Microsoft.Office.Interop.Word.Selection> objekty mají sbalit metodu, která využívá <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> hodnot výčtu:
