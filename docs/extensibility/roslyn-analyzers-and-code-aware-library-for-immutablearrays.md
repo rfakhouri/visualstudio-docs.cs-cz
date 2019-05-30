@@ -3,17 +3,17 @@ title: Analyzátory Roslyn a knihovny pro řešení ImmutableArrays | Dokumentac
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0c2eed45ce27fb108b0cdd0c84f64e4e253c9c1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433328"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334160"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyzátory Roslyn a knihovny pro řešení ImmutableArrays
 
@@ -131,7 +131,7 @@ Console.WriteLine("b2.Length = {0}", b2.Length);
 
 Řádky kódu s `ImmutableArray` mít podtržení vlnovkou, protože je potřeba získat nezměnitelný balíček NuGet a přidejte `using` příkaz do vašeho kódu. Stiskněte tlačítko vpravo ukazatel myši na uzel projektu v **Průzkumníka řešení** a zvolte **spravovat balíčky NuGet**. Ve Správci NuGet, zadejte do vyhledávacího pole "Neměnné" a vyberte položku, která **System.Collections.Immutable** (nevybírejte **Microsoft.Bcl.Immutable**) v levém podokně a stiskněte klávesu  **Nainstalujte** tlačítko v pravém podokně. Instalace balíčku přidává odkaz na odkazy projektu.
 
-Se stále zobrazuje v části červenou vlnovkou `ImmutableArray`, proto umístěte blikající kurzor do tento identifikátor a stiskněte klávesu **Ctrl**+**.** (tečka) se vyvolali navrhované opravy nabídku a zvolte Přidat odpovídající `using` příkazu.
+Se stále zobrazuje v části červenou vlnovkou `ImmutableArray`, proto umístěte blikající kurzor do tento identifikátor a stiskněte klávesu **Ctrl**+ **.** (tečka) se vyvolali navrhované opravy nabídku a zvolte Přidat odpovídající `using` příkazu.
 
 **Uložte a zavřete** druhou instanci aplikace Visual Studio teď můžete umístit do čistého stavu, abyste mohli pokračovat.
 
@@ -210,7 +210,7 @@ Odeberte zarážku, takže můžete vidět vaše pracovní analyzer (a zastavit 
 
 Než začnete, zavřete druhou instanci aplikace Visual Studio a Zastavit ladění v první instance sady Visual Studio (Pokud vyvíjíte analyzátor).
 
-**Přidejte novou třídu.** Pomocí místní nabídky (tlačítko vpravo ukazatel) na uzel projektu v **Průzkumníka řešení** a chcete přidat novou položku. Přidejte třídu s názvem `BuildCodeFixProvider`. Tato třída musí být odvozen od `CodeFixProvider`, a budete muset použít **Ctrl**+**.** (tečka) k vyvolání opravu kódu, který přidá správnou `using` příkazu. Tato třída také musí být komentována atributem `ExportCodeFixProvider` atribut a je potřeba přidat `using` příkaz vyřešit `LanguageNames` výčtu. Měli byste soubor třídy v něm následujícím kódem:
+**Přidejte novou třídu.** Pomocí místní nabídky (tlačítko vpravo ukazatel) na uzel projektu v **Průzkumníka řešení** a chcete přidat novou položku. Přidejte třídu s názvem `BuildCodeFixProvider`. Tato třída musí být odvozen od `CodeFixProvider`, a budete muset použít **Ctrl**+ **.** (tečka) k vyvolání opravu kódu, který přidá správnou `using` příkazu. Tato třída také musí být komentována atributem `ExportCodeFixProvider` atribut a je potřeba přidat `using` příkaz vyřešit `LanguageNames` výčtu. Měli byste soubor třídy v něm následujícím kódem:
 
 ```csharp
 using Microsoft.CodeAnalysis;
@@ -223,7 +223,7 @@ namespace ImmutableArrayAnalyzer
     {}
 ```
 
-**Zástupné procedury na odvozené členy.** Nyní umístěte blikající kurzor editoru v identifikátoru `CodeFixProvider` a stiskněte klávesu **Ctrl**+**.** (tečka) se zakázaným o provedení této abstraktní základní třídy. Tím se vygeneruje vlastnost a metodu pro vás.
+**Zástupné procedury na odvozené členy.** Nyní umístěte blikající kurzor editoru v identifikátoru `CodeFixProvider` a stiskněte klávesu **Ctrl**+ **.** (tečka) se zakázaným o provedení této abstraktní základní třídy. Tím se vygeneruje vlastnost a metodu pro vás.
 
 **Implementuje vlastnost.** Vyplňte `FixableDiagnosticIds` vlastnosti `get` tělo s následujícím kódem:
 
@@ -244,14 +244,14 @@ var root = await context.Document
                         .GetSyntaxRootAsync(context.CancellationToken);
 ```
 
-**Najdete uzel s problémem.** Můžete předat značka span objektu context, ale na uzel, který vás nemusí být kód, který je nutné změnit. Značka span ohlášená Diagnostika poskytují jenom pro identifikátor typu (kde piktogram patřil), ale je třeba nahradit výraz vytvoření celý objekt, včetně `new` – klíčové slovo na začátku a na konci závorky. Přidejte následující kód k metodě (a použít **Ctrl**+**.** Chcete-li přidat `using` příkaz pro `ObjectCreationExpressionSyntax`):
+**Najdete uzel s problémem.** Můžete předat značka span objektu context, ale na uzel, který vás nemusí být kód, který je nutné změnit. Značka span ohlášená Diagnostika poskytují jenom pro identifikátor typu (kde piktogram patřil), ale je třeba nahradit výraz vytvoření celý objekt, včetně `new` – klíčové slovo na začátku a na konci závorky. Přidejte následující kód k metodě (a použít **Ctrl**+ **.** Chcete-li přidat `using` příkaz pro `ObjectCreationExpressionSyntax`):
 
 ```csharp
 var objectCreation = root.FindNode(context.Span)
                          .FirstAncestorOrSelf<ObjectCreationExpressionSyntax>();
 ```
 
-**Zaregistrujte svou opravu kódu pro návrhy uživatelského rozhraní.** Když si zaregistrujete kód opravit, Roslyn zpřístupní žárovku uživatelského rozhraní sady Visual Studio automaticky. Koncoví uživatelé uvidí, můžete použít **Ctrl**+**.** (tečka), když vaše analyzátor squiggles chybný `ImmutableArray<T>` použijte konstruktor. Vzhledem k tomu, že váš poskytovatel opravu kódu se provede jenom v případě dochází k nějakému problému, můžete předpokládat, že máte výraz vytvoření objektu, kterou jste hledali. Z kontextového parametru, můžete zaregistrovat nové opravu kódu přidáním následujícího kódu na konec `RegisterCodeFixAsync` metody:
+**Zaregistrujte svou opravu kódu pro návrhy uživatelského rozhraní.** Když si zaregistrujete kód opravit, Roslyn zpřístupní žárovku uživatelského rozhraní sady Visual Studio automaticky. Koncoví uživatelé uvidí, můžete použít **Ctrl**+ **.** (tečka), když vaše analyzátor squiggles chybný `ImmutableArray<T>` použijte konstruktor. Vzhledem k tomu, že váš poskytovatel opravu kódu se provede jenom v případě dochází k nějakému problému, můžete předpokládat, že máte výraz vytvoření objektu, kterou jste hledali. Z kontextového parametru, můžete zaregistrovat nové opravu kódu přidáním následujícího kódu na konec `RegisterCodeFixAsync` metody:
 
 ```csharp
 context.RegisterCodeFix(
@@ -262,9 +262,9 @@ context.RegisterCodeFix(
             context.Diagnostics[0]);
 ```
 
-Je potřeba umístit blikající kurzor editoru identifikátor `CodeAction`, pak použijte **Ctrl**+**.** (tečka) Chcete-li přidat odpovídající `using` pro tento typ příkazu.
+Je potřeba umístit blikající kurzor editoru identifikátor `CodeAction`, pak použijte **Ctrl**+ **.** (tečka) Chcete-li přidat odpovídající `using` pro tento typ příkazu.
 
-Umístěte kurzor editoru v `ChangeToImmutableArrayEmpty` identifikátor a použití **Ctrl**+**.** znovu se generovat podložení tuto metodu za vás.
+Umístěte kurzor editoru v `ChangeToImmutableArrayEmpty` identifikátor a použití **Ctrl**+ **.** znovu se generovat podložení tuto metodu za vás.
 
 Tento poslední fragment kódu, který jste přidali zaregistruje předáním opravu kódu `CodeAction` a ID diagnostiky pro typ nalezen problém. V tomto příkladu existuje pouze jeden ID diagnostiky, který poskytuje tento kód opraví, takže předáte na první prvek diagnostické pole ID. Při vytváření `CodeAction`, předáte do textu, který žárovky uživatelského rozhraní by měly používat jako popis opravu kódu. Můžete také předat ve funkci, která přijímá CancellationToken a vrací nový dokument. Nový dokument má nové stromu syntaxe, která zahrnuje verzi kódu, který volá `ImmutableArray.Empty`. Tento fragment kódu používá výraz lambda, takže můžete zavřít nad uzel objectCreation a objektu context dokumentu.
 
@@ -288,7 +288,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 }
 ```
 
-Budete muset vložit blikající kurzor editoru `SyntaxGenerator` identifikátor a použití **Ctrl**+**.** (tečka) Chcete-li přidat odpovídající `using` pro tento typ příkazu.
+Budete muset vložit blikající kurzor editoru `SyntaxGenerator` identifikátor a použití **Ctrl**+ **.** (tečka) Chcete-li přidat odpovídající `using` pro tento typ příkazu.
 
 Tento kód používá `SyntaxGenerator`, což je užitečné typ pro tvorbu nového kódu. Po získání generátor pro dokument, který má problém v kódu `ChangeToImmutableArrayEmpty` volání `MemberAccessExpression`, předávání typ, který má člen chceme, aby pro přístup k a předáním názvu členu jako řetězec.
 
@@ -296,9 +296,9 @@ V dalším kroku metodu načte kořen dokumentu, a protože to může zahrnovat 
 
 ## <a name="try-your-code-fix"></a>Zkuste opravit kód
 
-Nyní můžete stisknout **F5** pro spuštění vašeho analyzátor ve druhé instanci aplikace Visual Studio. Otevřete konzoly projekt, který jste použili dříve. Teď byste měli vidět žárovky objevit, ve kterém je váš nový výraz vytvoření objektu pro `ImmutableArray<int>`. Pokud stisknete **Ctrl**+**.** (interval) pak se zobrazí váš kód opravit, a zobrazí se v verzi preview rozdíl automaticky generovaného kódu v žárovky uživatelského rozhraní. To vytvoří Roslyn.
+Nyní můžete stisknout **F5** pro spuštění vašeho analyzátor ve druhé instanci aplikace Visual Studio. Otevřete konzoly projekt, který jste použili dříve. Teď byste měli vidět žárovky objevit, ve kterém je váš nový výraz vytvoření objektu pro `ImmutableArray<int>`. Pokud stisknete **Ctrl**+ **.** (interval) pak se zobrazí váš kód opravit, a zobrazí se v verzi preview rozdíl automaticky generovaného kódu v žárovky uživatelského rozhraní. To vytvoří Roslyn.
 
-**Tipu pro:** Pokud spustíte druhou instanci aplikace Visual Studio a nevidíte žárovka s kód opravit, budete muset vymazat mezipaměť komponenty Visual Studio. Vymazání mezipaměti vynutí Visual Studio a znovu zkontrolujte součásti, takže sady Visual Studio by měl pak nejnovější komponenty. Nejdřív vypněte druhou instanci aplikace Visual Studio. Potom v **Windows Explorer**, přejděte na *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. ("16.0" se změní na verzi pomocí sady Visual Studio.) Odstranit podadresáři *ComponentModelCache*.
+**Tipu pro:** Pokud spustíte druhou instanci aplikace Visual Studio a nevidíte žárovka s kód opravit, budete muset vymazat mezipaměť komponenty Visual Studio. Vymazání mezipaměti vynutí Visual Studio a znovu zkontrolujte součásti, takže sady Visual Studio by měl pak nejnovější komponenty. Nejdřív vypněte druhou instanci aplikace Visual Studio. Potom v **Windows Explorer**, přejděte na *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\* . ("16.0" se změní na verzi pomocí sady Visual Studio.) Odstranit podadresáři *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Mluví videa a dokončení projektu kódu
 

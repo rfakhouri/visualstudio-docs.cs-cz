@@ -3,17 +3,17 @@ title: Editor barev VSIX | Dokumentace Microsoftu
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1578db2775a076258023b05ec9d3f010ba6222a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f9c6dbcc47e4bbac4203d7ec49f563f2a85ba32
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858049"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332919"
 ---
 # <a name="vsix-color-editor"></a>Editor barev VSIX
 Nástroj editoru barev rozšíření sady Visual Studio můžete vytvářet a upravovat vlastní barvy pro sadu Visual Studio. Nástroj může také generovat klíče motivů prostředků tak, aby barvy můžete použít v kódu. Tento nástroj je užitečný pro provádění barvy pro rozšíření sady Visual Studio, který podporuje motivů. Tento nástroj můžete otevřít soubory .pkgdef a XML. Visual Studio motivů (.vstheme soubory) je možné rozšíření barva Editor sady Visual Studio tak, že změníte příponu .xml. Kromě toho lze importovat .vstheme soubory do aktuálního souboru .xml.
@@ -55,7 +55,7 @@ Nástroj editoru barev rozšíření sady Visual Studio můžete vytvářet a up
 
    **Krok 1: Určete název kategorie a token pro nové tokeny barvu.**
 
-   Upřednostňované pojmenování schéma je VSColor **[kategorie] [uživatelské rozhraní typu] [stav]**. Nepoužívejte slova "color" v názvech VSColor, protože je redundantní.
+   Upřednostňované pojmenování schéma je VSColor **[kategorie] [uživatelské rozhraní typu] [stav]** . Nepoužívejte slova "color" v názvech VSColor, protože je redundantní.
 
    Názvy kategorií zajišťují logické seskupení a musí být definován jako nejpřesnějším co nejvíc. Například název okna jediného nástroje může být název kategorie, ale není název celý obchodní jednotky nebo projektu týmu. Seskupení položek do kategorií pomáhá zabránit nejasnostem mezi barvy se stejným názvem.
 

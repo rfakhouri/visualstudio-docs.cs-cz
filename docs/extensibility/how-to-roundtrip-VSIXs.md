@@ -4,16 +4,16 @@ ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: gregvanl
+ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862790"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324898"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Postupy: Ujistěte se, rozšíření kompatibilní s Visual Studio 2017 a Visual Studio 2015
 
@@ -51,7 +51,7 @@ Důrazně doporučujeme spustit tento upgrade pomocí sady Visual Studio 2015, m
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Ujistěte se, že neexistuje žádný odkaz na project.json
 
-Dále v tomto dokumentu jsme se vloží příkazy podmíněné importu v k vaší **.csproj* souboru. To nebude fungovat, pokud vaše odkazy na NuGet se ukládají v *project.json*. V důsledku toho doporučujeme přesunout všechny odkazy NuGet *souboru packages.config* souboru.
+Dále v tomto dokumentu jsme se vloží příkazy podmíněné importu v k vaší * *.csproj* souboru. To nebude fungovat, pokud vaše odkazy na NuGet se ukládají v *project.json*. V důsledku toho doporučujeme přesunout všechny odkazy NuGet *souboru packages.config* souboru.
 Pokud váš projekt obsahuje *project.json* souboru:
 
 * Poznamenejte si odkazy v *project.json*.

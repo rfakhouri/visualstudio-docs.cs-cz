@@ -3,18 +3,18 @@ title: Vytvoření vlastní úvodní stránku | Dokumentace Microsoftu
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4fc12744dbf979a338cbc551a715284dffdf7385
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0b8c6fde31f4f4d9573381e511465e60086add
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926377"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336668"
 ---
 # <a name="creating-a-custom-start-page"></a>Vytvoření vlastní úvodní stránky
 
@@ -24,7 +24,7 @@ Můžete vytvořit vlastní úvodní stránky pomocí následujících kroků v 
 
 Nejprve se přesvědčte, tak, že vytvoříte prázdný úvodní stránka *.xaml* soubor, který má strukturu značku, která sadě Visual Studio rozpozná. Pak přidejte značky a modelu code-behind vzhled a funkce, které chcete vytvořit.
 
-1. Vytvořte nový projekt typu **aplikace WPF** (**Visual C#** > **Windows Desktop**).
+1. Vytvořte nový projekt typu **aplikace WPF** (**Visual C#**  > **Windows Desktop**).
 
 2. Přidejte odkaz na `Microsoft.VisualStudio.Shell.14.0`.
 

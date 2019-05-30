@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
 - Task class [.NET Framework debug engines]
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fb65b66bed790a306280a437a1722abea27848a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bfa171655afd808de4bd86fe0fbdb99531d2ab2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864200"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348420"
 ---
 # <a name="task-class---internal-members"></a>Třída úlohy – vnitřní členy
 Tento článek popisuje interní členy <xref:System.Threading.Tasks.Task?displayProperty=fullName> třída, která vám pomůže implementovat vlastní ladicího programu. Obecné informace o této třídy, najdete v článku <xref:System.Threading.Tasks.Task> článku.
@@ -42,14 +42,14 @@ Tento článek popisuje interní členy <xref:System.Threading.Tasks.Task?displa
 
 ### <a name="methods"></a>Metody
 
-|Název|Popis|
+|Name|Popis|
 |----------|-----------------|
 |[SetNotificationForWaitCompletion – metoda](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|Nastaví nebo vymaže stav bit TASK_STATE_WAIT_COMPLETION_NOTIFICATION.|
 |[NotifyDebuggerOfWaitCompletion – metoda](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|Zástupný symbol metoda použitá jako cíl zarážku ladicím programem.|
 
 ### <a name="fields"></a>Pole
 
-|Název|Popis|
+|Name|Popis|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|Delegát, který představuje kód pro spuštění v <xref:System.Threading.Tasks.Task> objektu.|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Ukládá další vlastnosti <xref:System.Threading.Tasks.Task> objektu.|

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9614d3b99df71c9bfa8328478348385472f1a8fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924324"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337671"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Určuje, jaké informace o načtení [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objektu.
@@ -47,14 +50,18 @@ public enum enum_FIELD_INFO_FIELDS {
 };
 ```
 
-## <a name="members"></a>Členové
-FIF_FULLNAME inicializace/použít `bstrFullName` pole [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury.
+## <a name="fields"></a>Pole
+`FIF_FULLNAME`\
+Inicializace/použít `bstrFullName` pole [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury.
 
-FIF_NAME inicializace/použít `bstrName` pole `FIELD_INFO` struktury.
+`FIF_NAME`\
+Inicializace/použít `bstrName` pole `FIELD_INFO` struktury.
 
-FIF_TYPE inicializace/použít `bstrType` pole `FIELD_INFO` struktury.
+`FIF_TYPE`\
+Inicializace/použít `bstrType` pole `FIELD_INFO` struktury.
 
-FIF_MODIFIERS inicializace/použít `bstrModifiers` pole `FIELD_INFO` struktury.
+`FIF_MODIFIERS`\
+Inicializace/použít `bstrModifiers` pole `FIELD_INFO` struktury.
 
 ## <a name="remarks"></a>Poznámky
 Tyto hodnoty jsou také předat jako argument [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) metody určíte, jaké pole [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury mají být inicializovány.
@@ -70,7 +77,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

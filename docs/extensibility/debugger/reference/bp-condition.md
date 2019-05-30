@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c37699e965698b4f5700bc1994ba25c8c0bbbd5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e20db594fcc00f641634bfaae8d5342d4b520d7f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889130"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337429"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
 Popisuje podmínky, za kterých mají být zarážky aktivní.
@@ -45,15 +48,20 @@ public struct BP_CONDITION {
 ```
 
 ## <a name="members"></a>Členové
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt představující aktivní vlákno aplikace, který obsahuje zarážku.
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt představující aktivní vlákno aplikace, který obsahuje zarážku.
 
-`styleCondition` Hodnota z [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) výčet popisující, styl tuto podmínku zarážky.
+`styleCondition`\
+Hodnota z [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) výčet popisující, styl tuto podmínku zarážky.
 
-`bstrContext` Umístění zarážky.
+`bstrContext`\
+Umístění zarážky.
 
-`bstrCondition` Stav jeho spuštění k zarážce.
+`bstrCondition`\
+Stav jeho spuštění k zarážce.
 
-`nRadix` Základ, který se má použít při hodnocení jakékoli číselné informace.
+`nRadix`\
+Základ, který se má použít při hodnocení jakékoli číselné informace.
 
 ## <a name="remarks"></a>Poznámky
 Tato struktura je členem skupiny [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) a [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.
@@ -67,7 +75,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

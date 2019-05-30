@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b89d4d4356245929bbd8ada7790729e78da3d15d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444928"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328140"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Návod: Pomocí příkazů prostředí s rozšířením editoru
 Z balíčku VSPackage můžete přidat funkce, jako jsou příkazy do editoru. Tento návod ukazuje, jak přidat dalších úprav k zobrazení textu v editoru tak, že vyvolá příkaz nabídky.
@@ -38,7 +38,7 @@ Z balíčku VSPackage můžete přidat funkce, jako jsou příkazy do editoru. T
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>Přidat rozšíření rozhraní MEF pro rozšíření příkazu
 
-1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel řešení, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nový projekt**. V **přidat nový projekt** dialogové okno, klikněte na tlačítko **rozšiřitelnost** pod **Visual C#**, pak **projekt VSIX**. Pojmenujte projekt `CommentAdornmentTest`.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel řešení, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nový projekt**. V **přidat nový projekt** dialogové okno, klikněte na tlačítko **rozšiřitelnost** pod **Visual C#** , pak **projekt VSIX**. Pojmenujte projekt `CommentAdornmentTest`.
 
 2. Protože tento projekt bude komunikovat s sestavení se silným názvem balíčku VSPackage, musíte podepsat sestavení. Můžete znovu použít soubor klíče, které jsou vytvořeny již pro sestavení VSPackage.
 

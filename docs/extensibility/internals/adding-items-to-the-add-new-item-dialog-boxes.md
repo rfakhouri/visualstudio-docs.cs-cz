@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61a9921103bf5954061fbb61c405ba1d36ffb782
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418691"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328056"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Přidání položek do dialogových oken přidat novou položku
 Proces přidávání položek do **přidat novou položku** spustí dialogové okno s klíči registru. Jak je znázorněno v následující položky registru **AddItemTemplates** oddíl obsahuje cestu a název adresáře, ve které položky k dispozici v **přidat novou položku** jsou umístěny dialogové okno.
@@ -35,7 +35,7 @@ Proces přidávání položek do **přidat novou položku** spustí dialogové o
 
  **SortPriority** = dword:00000064
 
-| Název | Type | Data (z *.rgs* souboru) | Popis |
+| Name | Type | Data (z *.rgs* souboru) | Popis |
 |------------------|-----------| - | - |
 | @ (Výchozí) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY % | ID prostředku pro **přidat položku** šablony. |
 | Val TemplatesDir | REG_SZ | TEMPLATE_PATH %\\&lt;SomeProjectItems&gt; | Cesta položky projektu zobrazí v dialogovém okně pro **přidat novou položku** průvodce. |
@@ -46,7 +46,7 @@ Proces přidávání položek do **přidat novou položku** spustí dialogové o
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- Adresář pro uvedené **TemplatesDir**, což je *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;*, je uzel na levé straně **přidat Nová položka** dialog box stromu. Další prvky ve stromu jsou založeny na podadresáře v tomto kořenovém adresáři. Položky v pravém podokně jsou k dispozici mají být přidány do projektu soubory **přidat novou položku** dialogové okno.
+ Adresář pro uvedené **TemplatesDir**, což je *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;* , je uzel na levé straně **přidat Nová položka** dialog box stromu. Další prvky ve stromu jsou založeny na podadresáře v tomto kořenovém adresáři. Položky v pravém podokně jsou k dispozici mají být přidány do projektu soubory **přidat novou položku** dialogové okno.
 
  Obvykle se tato složka obsahovat soubory šablon pro váš projekt, například šablonu HTML nebo *.cpp* soubor a všechny *.vsz* soubory pro spuštění průvodců. Pokud chcete řídit, jak jsou zobrazeny položky, můžete použít také *.vsdir* soubory pro lokalizaci názvy adresářů a ikony. Lokalizovaný řetězec je popisek, který se zobrazí v dialogovém okně, které představuje tento uzel v **přidat novou položku** dialog box stromu.
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6dfcae8855c2bdb821f61be65de39282db87dfd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926736"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337000"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Vytvoření systému základního projektu, část 2
 První názorný postup v této sérii [vytvoření systému základního projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md), ukazuje postup vytvoření systému základního projektu. Tento návod vychází systému základního projektu tak, že přidáte šablony sady Visual Studio, stránky vlastností a další funkce. Prvního průvodce musíte dokončit před zahájením tohoto objektu.
@@ -42,7 +42,7 @@ Tento návod se naučíte k provedení následujících úkolů:
 ## <a name="create-a-visual-studio-template"></a>Vytvořte šablonu sady Visual Studio
 - [Vytvoření systému základního projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md) ukazuje, jak vytvořit šablonu základního projektu a přidejte do systém projektu. Také ukazuje, jak zaregistrovat pomocí této šablony pomocí sady Visual Studio <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atribut, který zapisuje úplnou cestu *\\Templates\Projects\SimpleProject\\* složku v systému registru.
 
-Pomocí šablony sady Visual Studio (*.vstemplate* souboru) namísto šablonu základního projektu, můžete řídit, jak se šablona zobrazuje v **nový projekt** dialogové okno a jak jsou parametry šablony nahrazena. A *.vstemplate* soubor je soubor XML, který popisuje, jak mají být zahrnuty při vytvoření projektu pomocí šablony projektu systému zdrojové soubory. Samotný systém projektu je sestaven tak, že shromažďují *.vstemplate* souboru a zdrojové soubory v *ZIP* souboru a nasadit tak, že zkopírujete *ZIP* do umístění, která je známé sady Visual Studio. Tento proces je vysvětleno podrobněji dále v tomto návodu.
+Pomocí šablony sady Visual Studio ( *.vstemplate* souboru) namísto šablonu základního projektu, můžete řídit, jak se šablona zobrazuje v **nový projekt** dialogové okno a jak jsou parametry šablony nahrazena. A *.vstemplate* soubor je soubor XML, který popisuje, jak mají být zahrnuty při vytvoření projektu pomocí šablony projektu systému zdrojové soubory. Samotný systém projektu je sestaven tak, že shromažďují *.vstemplate* souboru a zdrojové soubory v *ZIP* souboru a nasadit tak, že zkopírujete *ZIP* do umístění, která je známé sady Visual Studio. Tento proces je vysvětleno podrobněji dále v tomto návodu.
 
 1. V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otevřete řešení SimpleProject, kterou jste vytvořili pomocí následujících [vytvoření systému základního projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md).
 
@@ -207,7 +207,7 @@ Podřízené uzly jsou vytvořeny tak, že změna souboru projektu a přidání 
 
 Tato část ukazuje, jak vytvořit podřízený uzel typu projektu SimpleProject konzoly.
 
-1. Přejmenovat *\\Templates\Projects\SimpleProject\\* složku  *\\Templates\Projects\ConsoleApp\\*.
+1. Přejmenovat *\\Templates\Projects\SimpleProject\\* složku  *\\Templates\Projects\ConsoleApp\\* .
 
 2. V **vlastnosti** okna, vyberte všechny pět souborů *\\Templates\Projects\ConsoleApp\\* složky a ujistěte se, že **akce sestavení**je nastavena na **ZipProject**.
 

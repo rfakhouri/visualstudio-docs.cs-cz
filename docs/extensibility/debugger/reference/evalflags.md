@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EVALFLAGS enumeration
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9d59262349891a5c0483297039578c5de4a7b72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2a56f7d5fe4741fa887814691eddcf8df93030cd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877960"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337884"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Určuje příznaky, které řídí vyhodnocení výrazu.
@@ -49,20 +52,27 @@ public enum enum_EVALFLAGS {
 }
 ```
 
-## <a name="members"></a>Členové
-EVAL_RETURNVALUE Určuje, že návratová hodnota, pokud existuje, vyhodnocen.
+## <a name="fields"></a>Pole
+`EVAL_RETURNVALUE`\
+Určuje, že návratová hodnota, pokud existuje, vyhodnocen.
 
-EVAL_NOSIDEEFFECTS Určuje, že nebudou povoleny vedlejší účinky.
+`EVAL_NOSIDEEFFECTS`\
+Určuje, že nebudou povoleny vedlejší účinky.
 
-EVAL_ALLOWBPS určuje zarážky se zastavuje.
+`EVAL_ALLOWBPS`\
+Určuje zastavení zarážky.
 
-Určuje EVAL_ALLOWERRORREPORT zpráv o chybách k hostiteli mají být povolena. Používá se především pro vyhodnocení výrazu ve skriptu v aplikaci Internet Explorer.
+`EVAL_ALLOWERRORREPORT`\
+Určuje zpráv o chybách k hostiteli mají být povolena. Používá se především pro vyhodnocení výrazu ve skriptu v aplikaci Internet Explorer.
 
-Funkce sil EVAL_FUNCTION_AS_ADDRESS má být vyhodnocen jako adresy, namísto volání funkce.
+`EVAL_FUNCTION_AS_ADDRESS`\
+Funkce sil má být vyhodnocen jako adresy, namísto volání funkce.
 
-Funkce zabraňuje EVAL_NOFUNCEVAL z právě vyhodnocuje. Představme si třeba, `int` token ve výrazu `myExpression(int) + 10`. Tato funkce může být správně vyhodnocen jako adresa, ale ne jako hodnotu.
+`EVAL_NOFUNCEVAL`\
+Zabraňuje vyhodnocení funkce. Představme si třeba, `int` token ve výrazu `myExpression(int) + 10`. Tato funkce může být správně vyhodnocen jako adresa, ale ne jako hodnotu.
 
-EVAL_NOEVENTS příznak označující, že správce ladění relace (SDM) nebo integrovaném vývojovém prostředí by se neměly posílat události, ke kterým dochází při vyhodnocení výrazu.
+`EVAL_NOEVENTS`\
+Příznak označující, že správce ladění relace (SDM) nebo integrovaném vývojovém prostředí by se neměly posílat události, ke kterým dochází při vyhodnocení výrazu.
 
 ## <a name="remarks"></a>Poznámky
 Tyto příznaky jsou předány jako argument [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) a [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) metody.
@@ -76,7 +86,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
