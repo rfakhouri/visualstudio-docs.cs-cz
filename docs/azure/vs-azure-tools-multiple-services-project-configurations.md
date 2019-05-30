@@ -1,5 +1,5 @@
 ---
-title: Konfigurace projektu Azure použití několika konfigurací služby | Dokumentace Microsoftu
+title: Konfigurace Azure projektu s více konfigurace služby
 description: Zjistěte, jak nakonfigurovat projekt cloudové služby Azure tak, že změníte soubor ServiceDefinition.csdef ServiceConfiguration.Local.cscfg a ServiceConfiguration.Cloud.cscfg soubory.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555297"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260653"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurace projektu Azure v sadě Visual Studio za účelem použití více konfigurací služby
 
@@ -51,7 +51,7 @@ Pokud jste už přidali koncový bod HTTPS, je ve výchozím nastavení povolena
 
 ### <a name="diagnostics"></a>Diagnostika
 
-Ve výchozím nastavení je povolená Diagnostika pro webovou roli. Účet služby Azure cloud projektu a úložiště jsou nastaveny na použití emulátoru lokálního úložiště. Až budete připravení nasadit do Azure, můžete vybrat tlačítko Tvůrce (**...** ) místo toho použít Azure storage. Diagnostická data můžou přenášet do účtu úložiště na vyžádání nebo automaticky plánovaných intervalech. Další informace o diagnostice Azure najdete v tématu [povolení diagnostiky v Azure Cloud Services a Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Ve výchozím nastavení je povolená Diagnostika pro webovou roli. Účet služby Azure cloud projektu a úložiště jsou nastaveny na použití emulátoru lokálního úložiště. Až budete připravení nasadit do Azure, můžete vybrat tlačítko Tvůrce ( **...** ) místo toho použít Azure storage. Diagnostická data můžou přenášet do účtu úložiště na vyžádání nebo automaticky plánovaných intervalech. Další informace o diagnostice Azure najdete v tématu [povolení diagnostiky v Azure Cloud Services a Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Stránka Nastavení
 

@@ -1,5 +1,5 @@
 ---
-title: Řešení potíží a známé problémy (Visual Studio Tools for Unity) | Dokumentace Microsoftu
+title: Řešení potíží a známé problémy (VS Tools for Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815583"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261119"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Řešení potíží a známé problémy (Visual Studio Tools for Unity)
 
@@ -54,7 +54,7 @@ To by měl váš problém vyřešit. V případě, že stále dochází k probl�
 
 Několik modulů plug-in Unity, jako jsou analýzy, FMOD, JÍMKU (univerzální přehrávač), ZFBrowser nebo vložený prohlížeče jsou pomocí nativních vláken. Protože představuje problém, když modul plug-in končí nativních vláken se připojuje k modulu runtime, který potom provede blokování volání do operačního systému. To znamená Unity nelze přerušit bylo vlákno pro ladicí program (nebo opětovné načtení domény) a přestane reagovat.
 
-Fmod –, existuje alternativní řešení, můžete předat `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` inicializace [příznak](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) zakázat asynchronního zpracování a provádět veškeré zpracování na hlavním vlákně.
+Fmod –, existuje alternativní řešení, můžete předat `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` inicializace [příznak](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) zakázat asynchronního zpracování a provádět veškeré zpracování na hlavním vlákně.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Nekompatibilní projektu v sadě Visual Studio
 

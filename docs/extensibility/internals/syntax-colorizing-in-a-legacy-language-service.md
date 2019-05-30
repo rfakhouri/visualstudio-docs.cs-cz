@@ -8,17 +8,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab4cd40393efcf0e3b5f037d2f0818319b60c890
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: edbb7f2dca6bc0bc28a328276680dd9e273f4176
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429912"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331137"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Barevné zvýrazňování syntaxe ve službě starší verze jazyka
 Barevné zvýrazňování syntaxe je funkce, která způsobí, že různé prvky programovací jazyk, který se má zobrazit ve zdrojovém souboru v různé barvy a styly. Chcete-li tuto funkci podporují, budete muset zadat analyzátor a skener, který může identifikovat typy Lexikální prvky nebo tokenů v souboru. Řadu jiných jazyků rozlišit klíčová slova, oddělovače (jako je například kulatých závorek nebo složených závorek) a komentáře podle jejich barevné zvýrazňování různými způsoby.
@@ -34,7 +34,7 @@ Barevné zvýrazňování syntaxe je funkce, která způsobí, že různé prvky
  Informace o barvě vrátit do editoru je index do seznamu, které lze zabarvit položek. Které lze zabarvit položky určuje hodnotu barvy a sadu atributů písma, jako například tučné písmo nebo přeškrtnutí. V editoru poskytuje sadu výchozích které lze zabarvit položek, které můžou používat vaše služba jazyka. Všechno, co je potřeba je zadat index odpovídající barev pro každý typ tokenu. Můžete však poskytnout sadu vlastní, které lze zabarvit položky a indexy, které zadáte pro tokeny a odkazují na vlastní seznam položek, které lze zabarvit namísto výchozího seznamu. Musíte taky nastavit `RequestStockColors` záznam v registru na hodnotu 0 (nebo nezadávejte `RequestStockColors` položky ve všech) pro podporu vlastních barev. Můžete nastavit tuto položku registru s pojmenovaným parametrem k <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> uživatelský atribut. Další informace o registraci služby jazyka a jeho možnosti nastavení najdete v tématu [registrace služby starší verze jazyka](../../extensibility/internals/registering-a-legacy-language-service1.md).
 
 ## <a name="custom-colorable-items"></a>Vlastní položky, které lze zabarvit
- Chcete-li zadat vlastní které lze zabarvit položek, je nutné přepsat <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> a <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metodu na <xref:Microsoft.VisualStudio.Package.LanguageService> třídy. První metoda vrátí počet vlastních které lze zabarvit položek, které podporuje služba jazyka a druhá získá vlastní které lze zabarvit položky podle indexu. Vytvoříte výchozí seznam položek, které lze zabarvit vlastní. V konstruktoru služby jazyka vše, co je potřeba je zadat každou které lze zabarvit položku s názvem. Visual Studio automaticky zpracovává případ, které si uživatel vybere jinou sadu položek, které lze zabarvit. Tento název se zobrazí v **písma a barvy** stránku vlastností na **možnosti** dialogové okno (k dispozici v sadě Visual Studio **nástroje** nabídky) a tento název určuje, které Barva uživatele přepsal. Možnosti uživatele jsou uloženy v mezipaměti v registru a přistupuje název barvy. **Písma a barvy** stránku vlastností jsou uvedeny všechny názvy barev v abecedním pořadí, tak můžete seskupit vlastních barev před každý název barvy s vaším jménem jazyk; například "**TestLanguage - Comment**"a"**TestLanguage – klíčové slovo**". Nebo můžete seskupit podle typu, které lze zabarvit položky "**komentář (TestLanguage)**"a"**– klíčové slovo (TestLanguage)**". Seskupení podle názvu jazyka je upřednostňována.
+ Chcete-li zadat vlastní které lze zabarvit položek, je nutné přepsat <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> a <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metodu na <xref:Microsoft.VisualStudio.Package.LanguageService> třídy. První metoda vrátí počet vlastních které lze zabarvit položek, které podporuje služba jazyka a druhá získá vlastní které lze zabarvit položky podle indexu. Vytvoříte výchozí seznam položek, které lze zabarvit vlastní. V konstruktoru služby jazyka vše, co je potřeba je zadat každou které lze zabarvit položku s názvem. Visual Studio automaticky zpracovává případ, které si uživatel vybere jinou sadu položek, které lze zabarvit. Tento název se zobrazí v **písma a barvy** stránku vlastností na **možnosti** dialogové okno (k dispozici v sadě Visual Studio **nástroje** nabídky) a tento název určuje, které Barva uživatele přepsal. Možnosti uživatele jsou uloženy v mezipaměti v registru a přistupuje název barvy. **Písma a barvy** stránku vlastností jsou uvedeny všechny názvy barev v abecedním pořadí, tak můžete seskupit vlastních barev před každý název barvy s vaším jménem jazyk; například "**TestLanguage - Comment**"a"**TestLanguage – klíčové slovo**". Nebo můžete seskupit podle typu, které lze zabarvit položky "**komentář (TestLanguage)** "a" **– klíčové slovo (TestLanguage)** ". Seskupení podle názvu jazyka je upřednostňována.
 
 > [!CAUTION]
 > Důrazně doporučujeme zahrnout název jazyka název které lze zabarvit položky pro zabránění kolizím s existující názvy, které lze zabarvit položky.

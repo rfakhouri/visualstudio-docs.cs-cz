@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a684002360f59d33e61c40261afc1bfd515511e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9fd0035ca0764f3673e07b4e3289b87773c8349b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408525"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261341"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Dialogové okno programu Microsoft Visual Studio Debugger (vyvolána výjimka)
 Ve vašem programu došlo k výjimce. Toto dialogové okno sestavy druh vyvolané výjimky. Váš kód je potřeba zpracovat tuto výjimku. Můžete si vybrat následující možnosti pro zpracování výjimek:
@@ -44,4 +44,4 @@ Ve vašem programu došlo k výjimce. Toto dialogové okno sestavy druh vyvolan�
 ## <a name="see-also"></a>Viz také
 - [Správa výjimek pomocí ladicího programu](../debugger/managing-exceptions-with-the-debugger.md)
 - [Doporučené postupy pro výjimky](/dotnet/standard/exceptions/best-practices-for-exceptions)
-- [Zpracování výjimek](/cpp/windows/exception-handling-cpp-component-extensions)
+- [Zpracování výjimek](/cpp/extensions/exception-handling-cpp-component-extensions)

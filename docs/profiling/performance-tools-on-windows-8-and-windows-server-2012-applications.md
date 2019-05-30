@@ -1,5 +1,5 @@
 ---
-title: Nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012 | Dokumentace Microsoftu
+title: Nástroje pro měření výkonu pro aplikace z Windows 8 a Windows Server 2012
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8258c259b7f065e28ba7a6e199ddddb432dfb4b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798208"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262959"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Nástroje pro výkon v aplikacích pro Windows 8 a Windows Server 2012
 
@@ -109,7 +109,7 @@ Je nutné přidat možnost kolekce dat interakce vrstvy do běhu profilování z
 
 **Shromažďování dat TIP na vzdáleném počítači**
 
-Ke shromažďování dat interakce vrstev ve vzdáleném počítači, je nutné zkopírovat **vs\_profiler\_**_\<platformy >_ **\_**  _\<Jazyk >_**.exe** soubor *%VSInstallDir%\Team Tools\Setups nástroje* složky počítače do sady Visual Studio vzdáleném počítači a nainstalujte ho. Nelze použít v nástrojů pro profilaci [vzdálené ladění](../debugger/remote-debugging.md) stažení balíčku.
+Ke shromažďování dat interakce vrstev ve vzdáleném počítači, je nutné zkopírovat **vs\_profiler\_** _\<platformy >_ **\_**  _\<Jazyk >_ **.exe** soubor *%VSInstallDir%\Team Tools\Setups nástroje* složky počítače do sady Visual Studio vzdáleném počítači a nainstalujte ho. Nelze použít v nástrojů pro profilaci [vzdálené ladění](../debugger/remote-debugging.md) stažení balíčku.
 
 Můžete použít [VSPerfCmd](../profiling/vsperfcmd.md) nebo [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) ke shromažďování dat profilování.
 

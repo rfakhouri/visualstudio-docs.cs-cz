@@ -7,17 +7,17 @@ helpviewer_keywords:
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77a7138e436002a0fda4e9ab72222821d2c9809e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6747695c92d44b87ed4acc34f234b8ff06fd307e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909035"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353370"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrace služby starší verze jazyka
 Následující části obsahují seznam položky registru pro různé jazykové služby možnostech dostupných v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -27,7 +27,7 @@ Následující části obsahují seznam položky registru pro různé jazykové 
 ## <a name="registry-entries-for-language-service-options"></a>Položky registru pro možnosti služby jazyka
  *VS Reg kořenové*\Languages\Language služby\\*název jazyka* klíč může obsahovat následující hodnoty.
 
-|Název|Type|Rozsah|Popis|
+|Name|Type|Rozsah|Popis|
 |----------|----------|-----------|-----------------|
 |(Výchozí)|REG_SZ|*\<GUID>*|Identifikátor GUID služby jazyka.|
 |LangResID|REG_DWORD|0x0-0xffff|Řetězec resource identifier (ResID) název základního textu jazyka.|
@@ -64,7 +64,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>Položky registru pro jazyky možnosti ladicího programu
  *VS Reg kořenové*\Languages\Language služby\\*název jazyka*\Debugger jazyky\\*GUID*\ klíč může obsahovat následující hodnoty.
 
-|Název|Type|Rozsah|Popis|
+|Name|Type|Rozsah|Popis|
 |----------|----------|-----------|-----------------|
 |(Výchozí)|REG_SZ|text|Výchozí hodnota je možné na název jazyku dokumentu. Název tohoto klíče je identifikátor GUID vyhodnocovače výrazů, který nemá odpovídající záznam v  *\<VS Reg Root >* \AD7Metrics\Expression Chyba při vyhodnocování.|
 
@@ -83,7 +83,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>Položky registru pro možnosti nástrojů editoru
  Můžete přidat klíče registru pod klíčem EditorToolsOptions stránky vlastností a vlastností uzly. Tyto klíče a jejich hodnoty identifikace stránky vlastností v **možnosti** dialogové okno (na **nástroje** nabídek), která se používají ke konfiguraci služby jazyka. V následujícím příkladu *název stránky* je název stránky vlastností a *název uzlu* je název uzlu ve stromu na **možnosti** dialogové okno. Položky stránky a uzel musí být zadávají samostatně.
 
-|Název|Type|Rozsah|Popis|
+|Name|Type|Rozsah|Popis|
 |----------|----------|-----------|-----------------|
 |(Výchozí)|REG_SZ|ResID|Lokalizovaný zobrazovaný název této stránce možnost. Název může obsahovat prostý text nebo #`nnn`, kde `nnn` je řetězec ID prostředku v satelitní knihovně DLL ze zadaného balíčku VSPackage.|
 |Balíček|REG_SZ|*GUID*|Identifikátor GUID sady VSPackage, která implementuje Tato stránka možností.|
@@ -117,7 +117,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>Položky registru pro rozšíření možností názvu souboru
  Položka pro příponu souboru by měla obsahovat úvodní tečku, například ".myext".
 
-|Název|Type|Rozsah|Popis|
+|Name|Type|Rozsah|Popis|
 |----------|----------|-----------|-----------------|
 |(Výchozí)|REG_SZ|*GUID*|Identifikátor GUID služby pro službu výchozí jazyk pro tento typ rozšíření názvu souboru.|
 
@@ -134,7 +134,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>Položky registru pro možnosti editoru
  *VS Reg kořenové*\Editors klíč může obsahovat následující hodnoty:
 
-|Název|Type|Rozsah|Popis|
+|Name|Type|Rozsah|Popis|
 |----------|----------|-----------|-----------------|
 |(Výchozí)|REG_SZ|""|NEPOUŽITÝ; můžete vložit sem patří vaše jméno dokumentaci.|
 |DefaultToolboxTab|REG_SZ|""|Název na kartě panelu nástrojů při aktivním editoru nastavit jako výchozí.|
@@ -159,7 +159,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>Položky registru pro možnosti logické zobrazení
  *VS Reg kořenové*\Editors\\*grafické uživatelské rozhraní editoru >* \LogicalViews klíč může obsahovat následující hodnoty.
 
-|Název|Type|Rozsah|Popis|
+|Name|Type|Rozsah|Popis|
 |----------|----------|-----------|-----------------|
 |(Výchozí)|REG_SZ||Nevyužité.|
 |*\<GUID>*|REG_SZ|""|Klíč k logické zobrazení podporována. Podle potřeby, můžete mít kolik z nich. Název položky registru je, co je důležité, nikoli hodnotu, která je vždy prázdný řetězec.|
@@ -181,7 +181,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>Položky registru pro možnosti rozšíření editoru
  *VS Reg kořenové*\Editors\\*identifikátor GUID editoru*\Extensions klíč může obsahovat následující hodnoty. Přípona názvu souboru neobsahuje první pozici tečku.
 
-|Název|Type|Rozsah|Popis|
+|Name|Type|Rozsah|Popis|
 |----------|----------|-----------|-----------------|
 |(Výchozí)|REG_SZ||Nevyužité.|
 |*\<ext>*|REG_DWORD|0-0xffffffff|Relativní priorita daného rozšíření. Pokud dva nebo více jazyků sdílet stejnou příponu, zvolí se jazyk s vyšší prioritou.|
@@ -207,7 +207,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 
  Tyto položky registru jsou přístupné prostřednictvím <xref:Microsoft.VisualStudio.Package.LanguagePreferences> třídy.
 
-|Název|Type|Rozsah|Popis|
+|Name|Type|Rozsah|Popis|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|Podpora pro operace IntelliSense.|
 |MatchBraces|REG_DWORD|0-1|Podpora pro odpovídající dvojice jazyků, jako jsou složené závorky, závorky a hranaté závorky.|

@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Sestavování specifických cílů v řešení pomocí MSBuild.exe | Dokumentace Microsoftu'
+title: Použít MSBuild.exe na sestavování specifických cílů v řešení
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53ce05490ac46d7a4f01010e5709364f5d35222d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34c04d12ccc17424a2f938c04751d4e3d4c9f05f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977260"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263780"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Postupy: Sestavování specifických cílů v řešení pomocí MSBuild.exe
 Můžete použít *MSBuild.exe* k sestavování specifických cílů konkrétní projekty v řešení.

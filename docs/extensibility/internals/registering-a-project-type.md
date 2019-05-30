@@ -7,17 +7,17 @@ helpviewer_keywords:
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fccd422a0f24a65532e648a1254aecedc484903e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b950ea6dde73ecb7f20ef45e945106e8711aefb0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425682"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353353"
 ---
 # <a name="registering-a-project-type"></a>Registrace typu projektu
 Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, které umožňují [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nerozpozná a nenahraje a pracovat s vašeho typu projektu. Tyto položky registru obvykle vytvoříte pomocí souboru registru skript (.rgs).
@@ -47,7 +47,7 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
    @="devenv.exe \"%1\""
 ```
 
-|Název|Typ|Data|Popis|
+|Name|Typ|Data|Popis|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrjFile`|Název a popis projektu zadejte soubory, které mají .figp rozšíření.|
 |`Content Type`|REG_SZ|`Text/plain`|Typ obsahu pro soubory projektu.|
@@ -79,7 +79,7 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"
 ```
 
-|Název|Typ|Data|Popis|
+|Name|Typ|Data|Popis|
 |----------|----------|----------|-----------------|
 |`@` (Výchozí)|REG_SZ|`FigPrj Project VSPackage`|Lokalizovatelný název registrované balíčku VSPackage (typ projektu).|
 |`InprocServer32`|REG_SZ|`%MODULE%`|Cesta k typu projektu DLL. Rozhraní IDE načte tuto knihovnu DLL a předává identifikátor CLSID VSPackage `DllGetClassObject` zobrazíte <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> k sestavení kompletních <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> objektu.|
@@ -130,7 +130,7 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
    "SortPriority"=dword:00000064
 ```
 
-|Název|Typ|Data|Popis|
+|Name|Typ|Data|Popis|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrj Project`|Výchozí název projektech tohoto typu.|
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|ID prostředku, který se má načíst z satelitní knihovny DLL název zaregistrován balíčky.|
@@ -170,7 +170,7 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|Název|Typ|Data|Popis|
+|Name|Typ|Data|Popis|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|ID prostředku pro nový projekt šablony.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Výchozí cesta pro projekty typu registrované projektu.|
@@ -191,7 +191,7 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
    "SortPriority"=dword:00000064
 ```
 
-|Název|Typ|Data|Popis|
+|Name|Typ|Data|Popis|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|Žádný|Výchozí hodnota, která označuje, že následující položky jsou pro různé soubory projektů položky.|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Hodnota ID prostředku pro soubory šablon přidat nové položky.|
@@ -220,7 +220,7 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
 
   Poslední pole určuje číslo verze CTMENU prostředku. V nabídce můžete sloučit znovu tak, že změníte číslo verze.
 
-|Název|Typ|Data|Popis|
+|Name|Typ|Data|Popis|
 |----------|----------|----------|-----------------|
 |%CLSID_Package%|REG_SZ|`,1000,1`|Prostředek, který chcete načíst informace o nabídce.|
 
@@ -234,7 +234,7 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|Název|Typ|Data|Popis|
+|Name|Typ|Data|Popis|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Hodnota ID prostředku pro šablony obrázky projekt nový projekt.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Výchozí cestu k adresáři nové projekty. Zobrazí se položky v tomto adresáři v **Průvodce novým projektem** dialogové okno.|
@@ -249,7 +249,7 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
    "UseInterface"=dword:00000001
 ```
 
-|Název|Typ|Data|Popis|
+|Name|Typ|Data|Popis|
 |----------|----------|----------|-----------------|
 |`Package`|REG_SZ|`%CLSID_Package%`|ID třídy registrované VSPackage.|
 |`UseInterface`|REG_DWORD|`1`|1 znamená, že uživatelské rozhraní se použije k interakci s tímto projektem. 0 znamená, že neexistuje žádná uživatelského rozhraní.|

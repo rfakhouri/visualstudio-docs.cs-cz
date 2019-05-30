@@ -8,14 +8,14 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e1ac0eb389a6f1747ef713cd99f9bb3006ff6b9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446197"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261648"
 ---
-# <a name="quick-start-test-driven-development-with-test-explorer"></a>Rychlý start: Vývoj řízený testy s použitím Průzkumníka testů
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>Rychlý start: Vývoj řízený testy s použitím Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně funguje napříč mnoha inkrementálními kroky vývoje. Existuje několik architektur, které můžete použít pro psaní jednotkových testů, včetně některých vyvinutých třetími stranami. Některá testovací rozhraní jsou zaměřena na testování v jiných jazycích či platformách. Průzkumník testů poskytuje tak jednotné rozhraní pro testování částí v některém z těchto rozhraní. Adaptéry jsou k dispozici pro nejčastěji používaná rozhraní a můžete napsat vlastní adaptér pro jiná rozhraní.  
@@ -65,10 +65,10 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
 > Výsledky, které se zobrazují se poslední spuštění. Obarvený panel výsledků zobrazuje pouze výsledky testů, které byly spuštěny. Například pokud spuštění více testů a některé z nich selhání a poté spustíte pouze úspěšné testy, pak na panelu výsledků bude celý zelený.  
   
 > [!NOTE]
-> Je-li zobrazen žádný test, ujistěte se, že máte nainstalován adaptér pro připojení Průzkumníku testů pro testovací rozhraní, kterou používáte. Další informace najdete v tématu [použití různých testovacích rozhraní](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+> Je-li zobrazen žádný test, ujistěte se, že máte nainstalován adaptér pro připojení Průzkumníku testů pro testovací rozhraní, kterou používáte. Další informace najdete v tématu [použití různých testovacích rozhraní](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 ## <a name="walkthrough"></a> Návod: Použití jednotkových testů pro vývoj metody  
- Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhraní Microsoft Unit Test framework. Můžete snadno přizpůsobit ho pro ostatní jazyky a použití jiných testovacích architektur, jako je například NUnit. Další informace najdete v tématu [Usa různých testovacích rozhraní](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhraní Microsoft Unit Test framework. Můžete snadno přizpůsobit ho pro ostatní jazyky a použití jiných testovacích architektur, jako je například NUnit. Další informace najdete v tématu [použití různých testovacích rozhraní](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Vytvoření testu a – metoda  
   
@@ -124,7 +124,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
 7. Vyberte položky v oblasti **trasování zásobníku** zobrazíte, pokud se test nezdařil.  
   
-   ![Testování jednotek Test Explorer zobrazující se nezdařilo. ](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+   ![Testování jednotek Test Explorer zobrazující se nezdařilo. ] (../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
    V tomto okamžiku jste vytvořili test a prázdnou metodu, kterou upravíte tak, aby byl test úspěšný.  
   
@@ -145,7 +145,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
      Test byl úspěšný.  
   
-     ![Průzkumník testů jednotek zobrazující prochází testem. ](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
+     ![Průzkumník testů jednotek zobrazující prochází testem. ] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Přidat testy do Rozšiřte rozsah vstupů  
   
@@ -287,4 +287,4 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
      Všechny testy jsou stále úspěšné.  
   
-     ![Úspěšné testy 3 zobrazuje Průzkumník testu jednotek. ](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Úspěšné testy 3 zobrazuje Průzkumník testu jednotek. ] (../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")

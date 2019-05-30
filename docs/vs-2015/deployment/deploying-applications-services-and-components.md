@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b573c85a6a19e2f84bcb2a6cae8b0c55768255
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675581"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260686"
 ---
 # <a name="deploying-applications-services-and-components"></a>Nasazení aplikací, služeb a komponent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +52,6 @@ Nasazením aplikace, služby nebo komponenty ji budete distribuovat pro instalac
 |**Nasazení aplikace klasické pracovní plochy:** Pomocí nasazení ClickOnce můžete publikovat aplikace klasické pracovní plochy na webový server nebo sdíleného síťového umístění. Uživatelé pak mohou aplikaci nainstalovat jediným kliknutím.|[ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)|  
 |**Vytvoření instalačního programu:** Instalační program můžete vytvořit pomocí programu InstallShield Limited Edition, které je zdarma.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
 |**Zachování stávajícího instalačního programu:** Instalační program, který je vytvořen v dřívější verzi sady Visual Studio po instalaci rozšíření projektů instalačního programu Visual Studio i nadále.|[Visual Studio Installer Projects Extension](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> Dokumentace pro projekty instalačního programu je k dispozici zde: [Nasazení instalačního programu sady Visual Studio](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Nasazení aplikace v jazyce Visual C++:** Modul runtime Visual C++ v aplikaci můžete nasadit s použitím centrálního nasazení, místní nasazení nebo statického propojení.|[Nasazení nativních aplikací klasické pracovní plochy (Visual C++)](https://msdn.microsoft.com/library/zebw5zk9.aspx)|  
+|**Nasazení aplikace v jazyce Visual C++:** Modul runtime Visual C++ v aplikaci můžete nasadit s použitím centrálního nasazení, místní nasazení nebo statického propojení.|[Nasazení nativních aplikací klasické pracovní plochy (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**Nasazení aplikace pro testování:** Můžete povolit složitější vývoj a testování nasazení aplikací ve virtuálních prostředích.|[Testování v testovacím prostředí](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
 |**Instalace požadovaných součástí:** Požadované součásti pro aplikace klasické pracovní plochy můžete nainstalovat pomocí konfigurace obecného instalačního programu, který je označován jako zaváděcí nástroj.|[Nezbytné součásti nasazení aplikace](../deployment/application-deployment-prerequisites.md)|

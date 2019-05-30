@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581636"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262942"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Návod: Vytvoření prostředí pro sestavení s použitím více počítačů
 
@@ -62,7 +62,7 @@ Tato část zahrnuje kopírování určitých souborů, kompilátory, nástroje 
 - Na x x86 počítače, výchozí umístění je *C:\Program Files\Microsoft Visual Studio*
 - X x64 počítače, výchozí umístění je *C:\Program Files (x86) \Microsoft Visual Studio*
 
-Všimněte si, že název *Program Files* složky závisí na operačním systému, který je nainstalován. Na x x86 je název počítače, *Program Files*; x x64 je název počítače, *Program Files (x86)*. Bez ohledu na architekturu systému tento návod odkazuje *Program Files* složky jako *% ProgramFiles %*.
+Všimněte si, že název *Program Files* složky závisí na operačním systému, který je nainstalován. Na x x86 je název počítače, *Program Files*; x x64 je název počítače, *Program Files (x86)* . Bez ohledu na architekturu systému tento návod odkazuje *Program Files* složky jako *% ProgramFiles %* .
 
 > [!NOTE]
 > V počítači sestavení všechny relevantní soubory musí být na stejné jednotce. Písmeno jednotky pro tuto jednotku však může být jiné než písmeno jednotky pro jednotku, kde je nainstalovaný Visual Studio v hostitelském počítači. V každém případě musíte vzít v úvahu umístění souborů při vytváření položky registru, jak je popsáno dále v tomto dokumentu.
@@ -169,7 +169,7 @@ Všimněte si, že název *Program Files* složky závisí na operačním systé
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Zkopírujte pouze následující soubory z *Debug_NonRedist\x86* nebo *Debug_NonRedist\x64* složky do počítače sestavení, jak je popsáno v [Příprava testovacího počítače ke spuštění spustitelného souboru ladění](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). Nelze zkopírovat žádné jiné soubory.
+5. Zkopírujte pouze následující soubory z *Debug_NonRedist\x86* nebo *Debug_NonRedist\x64* složky do počítače sestavení, jak je popsáno v [Příprava testovacího počítače ke spuštění spustitelného souboru ladění](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Nelze zkopírovat žádné jiné soubory.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -332,7 +332,7 @@ Můžete vytvořit prostředí sestavení, který je možné nasadit na různýc
 
 2. Kopírování adresářů a souborů, jak je popsáno v [kopírování souborů z hostitelského počítače do počítače sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) části tohoto názorného postupu, s výjimkou jejich pod vložení *% Depot %* adresář, který jste právě vytvořit. Například zkopírujte z *%ProgramFiles%\Windows Kits\8.0\bin* k *%Depot%\Windows Kits\8.0\bin*.
 
-3. Když jsou soubory vloženy do *% Depot %*, proveďte tyto změny:
+3. Když jsou soubory vloženy do *% Depot %* , proveďte tyto změny:
 
     - V % Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\a \Microsoft.CppCommon.targets\\, změňte každou instanci z
 
@@ -407,5 +407,5 @@ Můžete vytvořit prostředí sestavení, který je možné nasadit na různýc
 
 ## <a name="see-also"></a>Viz také:
 
-- [Příprava testovacího počítače ke spuštění ladicího spustitelného souboru](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Příprava testovacího počítače ke spuštění ladicího spustitelného souboru](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md)

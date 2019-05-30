@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vývoj včasného testování s funkcí generování před využitím'
+title: Vývoj včasného testování s funkcí generování před využitím
 ms.date: 10/09/2017
 dev_langs:
 - VB
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 186713daa3d4c913926779f79ffc61ff488578d5
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432039"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262855"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Návod: Vývoj včasného testování s funkcí generování před využitím
 
@@ -93,7 +93,7 @@ Předpokládejme, že specifikace uvádí, že `Automobile` třídy mají dvě v
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Vzhledem k tomu, že kód odkazuje na dva nedefinovanými vlastnostmi `Automobile`, podtržení vlnovkou se zobrazí v části `Model` a `TopSpeed`. Najeďte myší na `Model` a zvolte **rychlé akce** chyba světle žárovku a pak zvolte **generovat vlastnost "Automobile.Model"**.
+2. Vzhledem k tomu, že kód odkazuje na dva nedefinovanými vlastnostmi `Automobile`, podtržení vlnovkou se zobrazí v části `Model` a `TopSpeed`. Najeďte myší na `Model` a zvolte **rychlé akce** chyba světle žárovku a pak zvolte **generovat vlastnost "Automobile.Model"** .
 
 3. Generování provizorního kódu vlastnosti pro `TopSpeed` vlastnost stejným způsobem.
 
@@ -107,11 +107,11 @@ Teď vytvoříme testovací metoda, která se generovat podložení konstruktor 
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2. Klikněte na tlačítko **rychlé akce** chyba světle kuličky v rámci červená vlnovka a potom klikněte na **generovat konstruktor 'Auto'**.
+2. Klikněte na tlačítko **rychlé akce** chyba světle kuličky v rámci červená vlnovka a potom klikněte na **generovat konstruktor 'Auto'** .
 
      V `Automobile` třídy souboru, Všimněte si, že nový konstruktor má prověřit, názvy místních proměnných, které se používají ve volání konstruktoru, nalezené vlastnosti, které mají stejné názvy v `Automobile` třídy a zadaný kód v těle konstruktoru na ukládání hodnot argumentů v `Model` a `TopSpeed` vlastnosti.
 
-3. Jakmile vygenerujete nový konstruktor, podtržení vlnovkou se zobrazí pod volání výchozího konstruktoru v `DefaultAutomobileIsInitializedCorrectly`. Chybová zpráva uvádí, že `Automobile` třída nemá žádný konstruktor, který nepřijímá žádné argumenty. Chcete-li generovat explicitní výchozí konstruktor, který nemá žádné parametry, klikněte na tlačítko **rychlé akce** chyba žárovku a pak klikněte na **generovat konstruktor 'Auto'**.
+3. Jakmile vygenerujete nový konstruktor, podtržení vlnovkou se zobrazí pod volání výchozího konstruktoru v `DefaultAutomobileIsInitializedCorrectly`. Chybová zpráva uvádí, že `Automobile` třída nemá žádný konstruktor, který nepřijímá žádné argumenty. Chcete-li generovat explicitní výchozí konstruktor, který nemá žádné parametry, klikněte na tlačítko **rychlé akce** chyba žárovku a pak klikněte na **generovat konstruktor 'Auto'** .
 
 ### <a name="generate-a-stub-for-a-method"></a>Generování zástupných procedur pro metodu
 Předpokládejme, že specifikace uvádí, že nový `Automobile` můžou být přepnuté do `IsRunning` stavu, pokud jeho `Model` a `TopSpeed` vlastnosti jsou nastaveny na jinou hodnotu než výchozí hodnoty.
@@ -121,9 +121,9 @@ Předpokládejme, že specifikace uvádí, že nový `Automobile` můžou být p
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2. Klikněte na tlačítko **rychlé akce** chyba návrhy pro `myAuto.Start` metoda volání a pak klikněte na **generovat metodu "Automobile.Start"**.
+2. Klikněte na tlačítko **rychlé akce** chyba návrhy pro `myAuto.Start` metoda volání a pak klikněte na **generovat metodu "Automobile.Start"** .
 
-3. Klikněte na tlačítko **rychlé akce** návrhy pro `IsRunning` vlastnosti a pak klikněte na tlačítko **generovat vlastnost "Automobile.IsRunning"**.
+3. Klikněte na tlačítko **rychlé akce** návrhy pro `IsRunning` vlastnosti a pak klikněte na tlačítko **generovat vlastnost "Automobile.IsRunning"** .
 
      `Automobile` Třída nyní obsahuje metodu s názvem `Start()` a vlastnost s názvem `IsRunning`.
 

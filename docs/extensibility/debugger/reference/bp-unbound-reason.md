@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62881776"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350556"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 Poskytuje z důvodů, proč nevázaná zarážku.
@@ -43,14 +46,18 @@ public enum enum_BP_UNBOUND_REASON {
 };
 ```
 
-## <a name="members"></a>Členové
-BPUR_UNKNOWN důvod není znám.
+## <a name="fields"></a>Pole
+`BPUR_UNKNOWN`\
+Důvodem neznámý.
 
-BPUR_CODE_UNLOADED kód, který obsahuje zarážku byl uvolněn.
+`BPUR_CODE_UNLOADED`\
+Kód, který obsahuje zarážku byl uvolněn.
 
-BPUR_BREAKPOINT_REBIND zarážku bylo znovu připojeno, do jiného umístění. To může dojít po úpravě a pokračovat v operacích přesun zarážku nebo zarážku je vázán na soubor s cestou, která již není platný.
+`BPUR_BREAKPOINT_REBIND`\
+Zarážku bylo znovu připojeno, do jiného umístění. To může dojít po úpravě a pokračovat v operacích přesun zarážku nebo zarážku je vázán na soubor s cestou, která již není platný.
 
-Potom, co je svázána se omylem vyhodnotí BPUR_ BREAKPOINT_ERROR zarážku. K tomu dochází na spravovaných zarážky, jejíž podmínky už nejsou platné.
+`BPUR_ BREAKPOINT_ERROR`\
+Zarážka je určena jako chybu po je vázán. K tomu dochází na spravovaných zarážky, jejíž podmínky už nejsou platné.
 
 ## <a name="remarks"></a>Poznámky
 Vrácené [getreason –](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) metody.
@@ -62,6 +69,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

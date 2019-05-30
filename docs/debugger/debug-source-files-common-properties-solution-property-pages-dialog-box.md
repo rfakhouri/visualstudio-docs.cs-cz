@@ -1,5 +1,5 @@
 ---
-title: Ladění zdroje souborů, společná nastavení řešení vlastnost dialogového okna stránky | Dokumentace Microsoftu
+title: Ladit zdrojové soubory/Common vlastnosti nebo řešení vlastnosti stránky
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83bed0588a0959ab85906d949e1b0752396223ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 631ec8ed4f6b5cd410b3af51c55fa87935b9cddf
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852910"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263136"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Ladění zdrojových souborů, společná nastavení, dialogové okno stránek vlastností řešení
 Tuto stránku vlastností určuje, kde ladicí program vyhledá zdrojové soubory při ladění řešení.

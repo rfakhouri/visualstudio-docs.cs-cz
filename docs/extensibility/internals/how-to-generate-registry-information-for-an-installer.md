@@ -7,24 +7,24 @@ helpviewer_keywords:
 - VSPackages, registering
 - VSPackages, registration manifests
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e173819f4966bd1770ac862626987bafb9bf120
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 931950c399d853fc6296bf56e9fce0619c0e7e41
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418445"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328840"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Postupy: Vygenerování informací registru pro instalační službu
 
 *RegPkg.exe* nástroj můžete použít ke generování manifestu registrace pro spravovaná VSPackage. Manifest může být zahrnut do instalačního balíčku Instalační služby systému Windows. RegPkg můžete také vygenerovat soubor, který může být zahrnut ve zdrojovém souboru instalace na základě [sada nástrojů XML Instalační služby systému Windows](http://go.microsoft.com/fwlink/?LinkId=62238).
 
 > [!IMPORTANT]
-> RegPkg vygeneruje názvy cest, které jsou specifické pro váš vývojový systém, tak pokaždé, když používáte RegPkg, je nutné upravit výstupní použít příslušný instalační služby systému Windows ve formátu vlastnosti. Například `InprocServer32` hodnota by měla být  *\<SystemFolder\>mscoree.dll* a cesty používejte *\<#filekey\>* a  *\<$componentkey\>*. Úprava výstupu tímto způsobem podporuje počítače s Windows nainstalovat na jinou jednotku nebo v jiném adresáři, názvy lokalizovaném adresáři a cesty, které uživatelé si můžou vybrat. Další informace najdete v tématu [formátu](http://go.microsoft.com/fwlink/?LinkId=71120) v sadě SDK Instalační služby systému Windows. Pokud je pro vaše vývojové systémové cesty dodržují konvence RegPkg – například ID ve formátu souborů *název_\<filename\>*– potřebujete provést méně změn.
+> RegPkg vygeneruje názvy cest, které jsou specifické pro váš vývojový systém, tak pokaždé, když používáte RegPkg, je nutné upravit výstupní použít příslušný instalační služby systému Windows ve formátu vlastnosti. Například `InprocServer32` hodnota by měla být  *\<SystemFolder\>mscoree.dll* a cesty používejte *\<#filekey\>* a  *\<$componentkey\>* . Úprava výstupu tímto způsobem podporuje počítače s Windows nainstalovat na jinou jednotku nebo v jiném adresáři, názvy lokalizovaném adresáři a cesty, které uživatelé si můžou vybrat. Další informace najdete v tématu [formátu](http://go.microsoft.com/fwlink/?LinkId=71120) v sadě SDK Instalační služby systému Windows. Pokud je pro vaše vývojové systémové cesty dodržují konvence RegPkg – například ID ve formátu souborů *název_\<filename\>* – potřebujete provést méně změn.
 
 ## <a name="to-create-a-registration-manifest"></a>K vytvoření manifestu registrace
 

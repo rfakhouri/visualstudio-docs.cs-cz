@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RES_DATA_FLAGS enumeration
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfbf34af69accc3fa50e0648880b5f8633f1618a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7573d9bde08f69a7c7e7707d7631dc71e2d8d5e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62888928"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350646"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 Určuje, zda je datová zarážka emulovaných nebo implementované v hardwaru.
@@ -37,8 +40,9 @@ public enum enum_BP_RES_DATA_FLAGS {
 };
 ```
 
-## <a name="members"></a>Členové
-BP_RES_DATA_EMULATED Určuje, že je emulovaných datová zarážka.
+## <a name="fields"></a>Pole
+`BP_RES_DATA_EMULATED`\
+Určuje, že je emulovaných datová zarážka.
 
 ## <a name="remarks"></a>Poznámky
 Používá pro `dwFlags` člena [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struktury.
@@ -50,6 +54,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)

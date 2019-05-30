@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255d752e09a14e784de276fbed0d86a587bc4512
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 992440dd137b5622f4c619f1f81008eb38e1ff5f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411245"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334831"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Postupy: Ladění vlastního ladicího stroje
 Typ projektu spustí ladicí stroj (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. To znamená, že je DE spuštění pod kontrolou instance [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] řízení typ projektu. Ale tuto instanci [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nelze ladit DE. Následují kroky, které umožňují ladění vlastního DE.
@@ -43,7 +43,7 @@ Typ projektu spustí ladicí stroj (DE) z <xref:Microsoft.VisualStudio.Shell.Int
 
 7. V první instance [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (s projektem DE), vyberte **připojit k procesu** z **ladění** nabídky.
 
-8. V **připojit k procesu** dialogovém okně Změnit **přenosu** k **vzdálený (nativní pouze bez ověřování)**.
+8. V **připojit k procesu** dialogovém okně Změnit **přenosu** k **vzdálený (nativní pouze bez ověřování)** .
 
 9. Změnit **kvalifikátor** na název vašeho počítače (Poznámka: historie položek, je proto třeba tento název zadat pouze jednou).
 

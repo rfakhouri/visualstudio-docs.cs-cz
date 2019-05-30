@@ -1,5 +1,5 @@
 ---
-title: Shromažďování dat paměti pomocí příkazového řádku Profiler z webové aplikace ASP.NET | Dokumentace Microsoftu
+title: Získat ASP.NET web app dat paměti pomocí příkazového řádku profileru
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a9e6bfce4b9137283a9413168fe320e292195c12
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 03851869b2067efd014752ab854f30c2d4874711
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405876"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263543"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Shromažďování dat paměti z webové aplikace ASP.NET pomocí příkazového řádku profileru
 Tato část popisuje postupy a možnosti pro shromažďování paměť přidělení a objekt data o životním cyklu pro webovou aplikaci ASP.NET pomocí **VSPerfCmd** nástroj příkazového řádku.

@@ -1,5 +1,5 @@
 ---
-title: Rozšíření vlastností, seznamu úloh, výstup a možnosti Windows | Dokumentace Microsoftu
+title: Rozšíření vlastností, seznamu úloh, výstup, možnosti windows
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ab0b47246adcf337a774a8519cd5e782104fb9aa
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417227"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263661"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Rozšíření vlastností, seznamu úkolů, výstupu a možnosti systému windows
 Jakékoli okno nástroje v sadě Visual Studio můžete přistupovat. Tento návod ukazuje, jak integrovat informace o vaší panelu nástrojů do nového **možnosti** stránky a nové nastavení na **vlastnosti** stránky a také způsob zápisu do **seznamu úkolů** a **výstup** systému windows.

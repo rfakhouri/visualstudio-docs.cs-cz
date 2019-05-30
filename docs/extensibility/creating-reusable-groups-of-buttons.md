@@ -7,17 +7,17 @@ helpviewer_keywords:
 - VSPackages, creating reusable button groups
 - buttons, creating reusable groups
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48ab55b58eee8f6444b253c09db1eeedcc8c5692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 454e42ba0b99d47048fa54527e8771f8294dcbc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411360"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351982"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Vytváření znovu použitelných skupin tlačítek
 Skupina příkazu je kolekce příkazů, které se vždy zobrazují společně na nabídku nebo panel nástrojů. Všechny skupiny příkazů, lze ji znovu použít přiřazením do jiné nadřazené nabídky v části commandplacements – *.vsct* souboru.
@@ -28,7 +28,7 @@ Skupina příkazu je kolekce příkazů, které se vždy zobrazují společně n
 
 1. Vytvořte projekt VSIX s názvem `ReusableButtons`. Další informace najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Po otevření projektu přidat vlastní příkaz šablonu položky s názvem **ReusableCommand**. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C#** > **rozšiřitelnost** a vyberte **vlastního příkazu**. V **název** pole v dolní části okna, změňte název souboru příkazu *ReusableCommand.cs*.
+2. Po otevření projektu přidat vlastní příkaz šablonu položky s názvem **ReusableCommand**. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C#**  > **rozšiřitelnost** a vyberte **vlastního příkazu**. V **název** pole v dolní části okna, změňte název souboru příkazu *ReusableCommand.cs*.
 
 3. V *.vsct* souboru, přejděte do části symboly a najděte guidsymbol – element, který obsahuje skupiny a příkazy pro projekt. By měl být pojmenován guidReusableCommandPackageCmdSet.
 

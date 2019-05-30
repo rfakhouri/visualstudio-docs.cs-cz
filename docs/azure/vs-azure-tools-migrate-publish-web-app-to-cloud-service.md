@@ -1,22 +1,20 @@
 ---
-title: Jak migrovat a publikovat webovou aplikaci do cloudové služby Azure
+title: Přenést & publikovat webovou aplikaci do služby Azure Cloud Service
 description: Další informace o migraci a publikování vašich webových aplikací na cloudové služby Azure pomocí sady Visual Studio
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: aa0af441071c90ca42d7aa7169c75803bebeb255
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ca6fd7461ac928751192a18b00f255d7bad2a30
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62551378"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260620"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Postupy: Migrace a publikování webové aplikace do cloudové služby Azure ze sady Visual Studio
 
@@ -58,9 +56,9 @@ Pokud máte připojovací řetězec pro vaši webovou aplikaci, která použív�
 
 1. Vytvořte nezbytné cloudové účty služeb a úložiště ve vašem předplatném Azure podle pokynů na [Příprava k publikování nebo nasazení aplikace Azure ze sady Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. V sadě Visual Studio, klikněte pravým tlačítkem na projekt aplikace a vyberte **publikování ve službě Microsoft Azure...**  (která se liší od příkazu "Publikovat...".).
-1. V **publikování aplikaci Azure** , který se zobrazí, přihlaste se pomocí účtu s předplatným Azure a vyberte **Další >**.
+1. V **publikování aplikaci Azure** , který se zobrazí, přihlaste se pomocí účtu s předplatným Azure a vyberte **Další >** .
 1. V **Nastavení > Obecná nastavení** kartu, vyberte cílovou cloudovou službou od **Cloudovou službu** rozevíracího seznamu, spolu s vybrané prostředí a konfiguracemi.
-1. V **Nastavení > Upřesnit nastavení**, vyberte účet úložiště, který chcete použít, vyberte možnost **Další >**.
+1. V **Nastavení > Upřesnit nastavení**, vyberte účet úložiště, který chcete použít, vyberte možnost **Další >** .
 1. V **diagnostiky**, vyberte, jestli chcete posílat informace do Application Insights.
 1. Vyberte **Další >** Chcete-li zobrazit souhrn, zvolte **publikovat** ke spuštění nasazení.
 1. Visual Studio se otevře okno Protokol aktivit ve kterém můžete sledovat průběh:
@@ -92,13 +90,17 @@ Následující tabulka obsahuje podrobnosti o spuštění aplikace v Azure:
 1. Zadejte připojovací řetězec v `web.config` soubor v následujícím formátu a soubor uložte:
 
     ```xml
-    <addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
     Aktualizace *connectionString* hodnotu připojovací řetězec ADO.NET pro vaši databázi SQL Azure následujícím způsobem:
 
     ```xml
-    XMLCopy<addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
 ## <a name="supported-project-templates"></a>Šablony projektů podporované

@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: f24e3460cb1298a36d0365781aa82cf55d8478d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 261d26307a212fa44506b21caadf4b7351453e06
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824789"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261095"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalace multiplatformní vývoj mobilních aplikací pomocí C++
 
@@ -60,7 +60,7 @@ Zahrnuje instalačního programu sady Visual Studio pro Visual Studio 2017 **vý
 
 1. S **úlohy** vybraná karta, přejděte dolů a vyberte možnost **vývoj mobilních aplikací pomocí C++** úlohy v instalačním programu sady Visual Studio. Pokud je vybraná tato úloha, budou vybrány také další součásti potřebné pro vývoj v jazyce C++. Můžete také dalších úloh a jednotlivé komponenty k instalaci ve stejnou dobu. K vytvoření kódu pro různé platformy, které cílí i na UPW, vyberte **vývoj pro univerzální platformu Windows** pracovního vytížení.
 
-1. V **podrobné informace o instalaci** podokně rozbalte **vývoj mobilních aplikací pomocí C++**. V **volitelné** oddílu, můžete použít další verze sada NDK, emulátor Google Android, Intel Hardware Accelerated spuštění správce a IncrediBuild akcelerace nástroj sestavení.
+1. V **podrobné informace o instalaci** podokně rozbalte **vývoj mobilních aplikací pomocí C++** . V **volitelné** oddílu, můžete použít další verze sada NDK, emulátor Google Android, Intel Hardware Accelerated spuštění správce a IncrediBuild akcelerace nástroj sestavení.
 
 1. Ve výchozím nastavení jsou zahrnuté jeden nebo více součástí instalace sady Android SDK úlohy. Jsou k dispozici další verze sady SDK pro Android. Přidat do instalace, zvolte **jednotlivé komponenty** kartu a potom přejděte dolů k položce **sad SDK, knihoven a architektur** části svůj výběr.
 
@@ -74,7 +74,7 @@ Zahrnuje instalačního programu sady Visual Studio pro Visual Studio 2017 **vý
 1. Otevřít Visual Studio.
 
 > [!NOTE]
-> Pokud používáte Visual Studio 2015, najdete v článku [instalaci Visual C++ pro vývoj Multiplatformních mobilních aplikací (Visual Studio 2015)](/cross-platform/install-visual-cpp-for-cross-platform-mobile-development?view=vs-2015)
+> Pokud používáte Visual Studio 2015, najdete v článku [instalaci Visual C++ pro vývoj Multiplatformních mobilních aplikací (Visual Studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=vs-2015)
 
 ## <a name="install-tools-for-ios"></a>Instalace nástrojů pro iOS
 
@@ -119,11 +119,11 @@ Ve většině případů sady Visual Studio může zjistit konfiguraci softwaru 
 
 1. Na panelu nabídek sady Visual Studio vyberte **nástroje** > **možnosti**.
 
-1. V **možnosti** dialogu **různé platformy** > **C++** > **Android**.
+1. V **možnosti** dialogu **různé platformy** > **C++**  > **Android**.
 
    ![Nástroj pro Android cesta možnosti](../cross-platform/media/cppmdd_options_android.PNG "CPPMDD_Options_Android")
 
-1. Chcete-li změnit tuto cestu používají nástroj, zaškrtněte políčko vedle cestu a upravte cestu ke složce, do textového pole. Můžete také použít tlačítko Procházet (**...** ) Chcete-li otevřít **vyberte umístění** dialogového okna a vyberte složku.
+1. Chcete-li změnit tuto cestu používají nástroj, zaškrtněte políčko vedle cestu a upravte cestu ke složce, do textového pole. Můžete také použít tlačítko Procházet ( **...** ) Chcete-li otevřít **vyberte umístění** dialogového okna a vyberte složku.
 
 1. Zvolte **OK** k uložení umístění složek pro vlastní nástroj.
 

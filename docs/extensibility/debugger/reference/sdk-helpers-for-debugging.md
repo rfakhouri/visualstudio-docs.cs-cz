@@ -9,17 +9,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d57e764158531456bfcdba6d4915eef42aebd3d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 74b9047ef6df1e6bf20a5b5a95e40e27ed1b1926
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460910"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329214"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocníci sad SDK pro ladění
 Tyto funkce a deklarace jsou globální pomocných funkcí pro provádění ladicími stroji vyhodnocovače výrazů a poskytovatelé symbol v jazyce C++.
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
 > [!NOTE]
 > Ve většině případů, metriky, se zapíšou do klíče HKEY_LOCAL_MACHINE. Někdy ale HKEY_CURRENT_USER být cílový klíč. Dbgmetric.lib zpracovává oba klíče. Při získávání metriku, vyhledá HKEY_CURRENT_USER první pak HKEY_LOCAL_MACHINE. Při nastavení metriky parametr určuje, které klíč nejvyšší úrovně se má použít.
 
- *[klíč registru]*\
+ *[klíč registru]* \
 
  `Software`\
 
@@ -247,11 +247,11 @@ HRESULT EnumMetricSections(
 
  `VisualStudio`\
 
- *[kořenové verze]*\
+ *[kořenové verze]* \
 
- *[metriky kořenové]*\
+ *[metriky kořenové]* \
 
- *[typu metrika.]*\
+ *[typu metrika.]* \
 
  *[metrika] = [hodnota metriky]*
 
@@ -276,9 +276,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- *[identifikátor guid modulu]*\
+ *[identifikátor guid modulu]* \
 
- `CLSID` = *[identifikátor guid třídy]*
+ `CLSID` =  *[identifikátor guid třídy]*
 
  *[metrika] = [hodnota metriky]*
 
@@ -288,9 +288,9 @@ HRESULT EnumMetricSections(
 
  `PortSupplier`\
 
- `0` = *[guid dodavatele portu]*
+ `0` =  *[guid dodavatele portu]*
 
- `1` = *[guid dodavatele portu]*
+ `1` =  *[guid dodavatele portu]*
 
 |Zástupný symbol|Popis|
 |-----------------|-----------------|
@@ -299,13 +299,13 @@ HRESULT EnumMetricSections(
 |*[guid dodavatele portu]*|Identifikátor GUID dodavatele portu, pokud existuje. Mnoho ladicími stroji použít výchozí dodavatele portu a proto není zadán vlastní dodavatele. V takovém případě podklíče `PortSupplier` budou chybět.|
 
 ### <a name="port-suppliers"></a>Dodavatelé portů
- Následuje uspořádání metrik dodavatele portu v registru. `PortSupplier` je název typu Metrika pro dodavatele portu a odpovídá *[typ metriky]*.
+ Následuje uspořádání metrik dodavatele portu v registru. `PortSupplier` je název typu Metrika pro dodavatele portu a odpovídá *[typ metriky]* .
 
  `PortSupplier`\
 
- *[guid dodavatele portu]*\
+ *[guid dodavatele portu]* \
 
- `CLSID` = *[identifikátor guid třídy]*
+ `CLSID` =  *[identifikátor guid třídy]*
 
  *[metrika] = [hodnota metriky]*
 
@@ -317,15 +317,15 @@ HRESULT EnumMetricSections(
 |*[identifikátor guid třídy]*|Identifikátor GUID třídy, která implementuje tohoto dodavatele portu|
 
 ### <a name="symbol-providers"></a>Poskytovatelé symbol
- Následuje uspořádání metrik dodavatele symbolu v registru. `SymbolProvider` je název typu metrika. poskytovatel symbolů a odpovídá *[typ metriky]*.
+ Následuje uspořádání metrik dodavatele symbolu v registru. `SymbolProvider` je název typu metrika. poskytovatel symbolů a odpovídá *[typ metriky]* .
 
  `SymbolProvider`\
 
- *[symbol identifikátor guid]*\
+ *[symbol identifikátor guid]* \
 
  `file`\
 
- `CLSID` = *[identifikátor guid třídy]*
+ `CLSID` =  *[identifikátor guid třídy]*
 
  *[metrika] = [hodnota metriky]*
 
@@ -333,7 +333,7 @@ HRESULT EnumMetricSections(
 
  `metadata`\
 
- `CLSID` = *[identifikátor guid třídy]*
+ `CLSID` =  *[identifikátor guid třídy]*
 
  *[metrika] = [hodnota metriky]*
 
@@ -345,18 +345,18 @@ HRESULT EnumMetricSections(
 |*[identifikátor guid třídy]*|Identifikátor GUID třídy, která implementuje tento poskytovatel symbolů|
 
 ### <a name="expression-evaluators"></a>Vyhodnocovače výrazů
- Následuje uspořádání metrik Chyba při vyhodnocování výrazu v registru. `ExpressionEvaluator` je název typu Metrika pro vyhodnocovací filtr výrazů a odpovídá *[typ metriky]*.
+ Následuje uspořádání metrik Chyba při vyhodnocování výrazu v registru. `ExpressionEvaluator` je název typu Metrika pro vyhodnocovací filtr výrazů a odpovídá *[typ metriky]* .
 
 > [!NOTE]
 > Typ metriky pro `ExpressionEvaluator` není definovaný v dbgmetric.h, protože se předpokládá, že všechny metriky změny pro vyhodnocení výrazu půjdou přes metriky funkce Chyba při vyhodnocování výrazu odpovídající (rozložení `ExpressionEvaluator` podklíč je trochu složité, takže podrobné informace jsou skryty uvnitř dbgmetric.lib).
 
  `ExpressionEvaluator`\
 
- *[identifikátor guid jazyka]*\
+ *[identifikátor guid jazyka]* \
 
- *[identifikátor guid dodavatele]*\
+ *[identifikátor guid dodavatele]* \
 
- `CLSID` = *[identifikátor guid třídy]*
+ `CLSID` =  *[identifikátor guid třídy]*
 
  *[metrika] = [hodnota metriky]*
 
@@ -364,9 +364,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- `0` = *[ladicí stroj guid]*
+ `0` =  *[ladicí stroj guid]*
 
- `1` = *[ladicí stroj guid]*
+ `1` =  *[ladicí stroj guid]*
 
 |Zástupný symbol|Popis|
 |-----------------|-----------------|
@@ -376,11 +376,11 @@ HRESULT EnumMetricSections(
 |*[ladicí stroj guid]*|Identifikátor GUID ladicího stroje, který tato chyba při vyhodnocování výrazu spolupracuje s|
 
 ### <a name="expression-evaluator-extensions"></a>Rozšíření Chyba při vyhodnocování výrazu
- Následuje uspořádání metrik rozšíření Chyba při vyhodnocování výrazu v registru. `EEExtensions` je název metriky typu výrazu chyba při vyhodnocování rozšíření a odpovídá *[typ metriky]*.
+ Následuje uspořádání metrik rozšíření Chyba při vyhodnocování výrazu v registru. `EEExtensions` je název metriky typu výrazu chyba při vyhodnocování rozšíření a odpovídá *[typ metriky]* .
 
  `EEExtensions`\
 
- *[identifikátor guid rozšíření]*\
+ *[identifikátor guid rozšíření]* \
 
  *[metrika] = [hodnota metriky]*
 
@@ -391,21 +391,21 @@ HRESULT EnumMetricSections(
 |*[identifikátor guid rozšíření]*|Identifikátor GUID rozšíření Chyba při vyhodnocování výrazu|
 
 ### <a name="exceptions"></a>Výjimky
- Následuje uspořádání metrik výjimky v registru. `Exception` je název typu Metrika pro výjimky a odpovídá *[typ metriky]*.
+ Následuje uspořádání metrik výjimky v registru. `Exception` je název typu Metrika pro výjimky a odpovídá *[typ metriky]* .
 
  `Exception`\
 
- *[ladicí stroj guid]*\
+ *[ladicí stroj guid]* \
 
- *[typy výjimek]*\
+ *[typy výjimek]* \
 
- *[výjimka]*\
-
- *[metrika] = [hodnota metriky]*
+ *[výjimka]* \
 
  *[metrika] = [hodnota metriky]*
 
- *[výjimka]*\
+ *[metrika] = [hodnota metriky]*
+
+ *[výjimka]* \
 
  *[metrika] = [hodnota metriky]*
 
@@ -414,7 +414,7 @@ HRESULT EnumMetricSections(
 |Zástupný symbol|Popis|
 |-----------------|-----------------|
 |*[ladicí stroj guid]*|Identifikátor GUID ladicího stroje, který podporuje výjimky.|
-|*[typy výjimek]*|Obecný název podklíče identifikující třídu výjimky, které mohou být zpracovány. Typické názvy jsou **výjimky jazyka C++**, **výjimky Win32**, **výjimky modulu Common Language Runtime**, a **nativních kontrol za běhu**. Tyto názvy se také používají k identifikaci konkrétní třídu výjimky na uživatele.|
+|*[typy výjimek]*|Obecný název podklíče identifikující třídu výjimky, které mohou být zpracovány. Typické názvy jsou **výjimky jazyka C++** , **výjimky Win32**, **výjimky modulu Common Language Runtime**, a **nativních kontrol za běhu**. Tyto názvy se také používají k identifikaci konkrétní třídu výjimky na uživatele.|
 |*[výjimka]*|Název pro výjimku: například **_com_error** nebo **Ctrl + Break**. Tyto názvy se také používají k identifikaci konkrétní výjimky na uživatele.|
 
 ## <a name="requirements"></a>Požadavky

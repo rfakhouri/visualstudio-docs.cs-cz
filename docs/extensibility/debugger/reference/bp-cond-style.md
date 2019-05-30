@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70ab3655d27e810b3c05d0e0e81d81bc15a26950
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ded3d31f9be2d0a02a238ead4bc989cc21b4922a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925205"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351813"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 Určuje styl podmínku zarážky pro čekající a vázán zarážky.
@@ -41,12 +44,15 @@ public enum enum_BP_COND_STYLE {
 };
 ```
 
-## <a name="members"></a>Členové
-Zarážka BP_COND_NONE aktivuje se při dosažení zarážky na pozici. Není zadaná žádná podmínka zarážky.
+## <a name="fields"></a>Pole
+`BP_COND_NONE`\
+Při dosažení zarážky na pozici, je vyvoláno zarážku. Není zadaná žádná podmínka zarážky.
 
-BP_COND_WHEN_TRUE aktivuje zarážku, jen když podmíněný výraz přidružený k zarážce vyhodnocen `true`.
+`BP_COND_WHEN_TRUE`\
+Aktivuje zarážku, jen když podmíněný výraz přidružený k zarážce vyhodnocen `true`.
 
-Je aktivována BP_COND_WHEN_CHANGED zarážky pouze v případě, že hodnota podmíněný výraz přidružený k zarážce byl změněn z jeho předchozího vyhodnocení.
+`BP_COND_WHEN_CHANGED`\
+Je aktivována zarážka pouze v případě, že hodnota podmíněný výraz přidružený k zarážce byl změněn z jeho předchozí hodnocení.
 
 ## <a name="remarks"></a>Poznámky
 Používá pro `styleCondition` člena [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struktury.
@@ -58,6 +64,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

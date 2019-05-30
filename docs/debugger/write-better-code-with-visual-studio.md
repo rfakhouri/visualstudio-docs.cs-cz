@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b34e23b1bc7972563d6d8d014ba0728dc637b34
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901286"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262134"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Ladění technik a nástrojů, který pomáhá psát lepší kód
 
@@ -294,7 +294,7 @@ Tady je několik důležitých tipů pro zpracování výjimek:
     }
     ```
 
-* Neznámé funkce, které zahrnují ve své aplikaci expecially ty interakci s externími daty (například webové žádosti) najdete v dokumentaci, jaké výjimky funkce je pravděpodobně vyvolá výjimku. To může být důležité informace pro zpracování chyb správné a pro ladění vaší aplikace.
+* Neznámé funkce, které zahrnují ve své aplikaci zvlášť ty interakci s externími daty (například webové žádosti) najdete v dokumentaci, jaké výjimky funkce je pravděpodobně vyvolá výjimku. To může být důležité informace pro zpracování chyb správné a pro ladění vaší aplikace.
 
 Ukázkovou aplikaci, opravte `SerializationException` v `GetJsonData` metodu tak, že změníte `4o` k `40`.
 

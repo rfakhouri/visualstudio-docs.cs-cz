@@ -10,12 +10,12 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f565f4f8294fc7f1a467e20ad17a793dd3a09bae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 81043cc87dd659f14ec634dc14990956a0864f9b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097086"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263582"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Přidání vyhledávání do panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Při vytváření nebo aktualizace panelu nástrojů v rozšíření, můžete p
      V horní části okna nástroje, ovládací prvek vyhledávání se zobrazí s **hledání** mezí a s ikonou lupy zvětšení. Ale hledání ještě nefunguje vzhledem k tomu, že proces hledání ještě nebyla implementována.  
   
 ## <a name="to-add-the-search-implementation"></a>Chcete-li přidat implementace hledání  
- Když povolíte hledání na <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, jako v předchozím postupu, vytvoří panel nástrojů hledání hostitele. Tento hostitel nastavit a spravovat procesy, vyhledávání, které vždy odehrávat na vlákně na pozadí. Vzhledem k tomu, <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> třída spravuje vytváření hostitele vyhledávání a nastavení hledání, potřebujete jenom vytvoření vyhledávací úlohy a nabízejí způsob vyhledávání. Proces vyhledávání se provádí na vlákně na pozadí a volání do ovládacího prvku okno nástroje, ke kterým dochází na vlákně UI. Proto je nutné použít <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> metoda spravovat všechna volání, které provedete v práci s ovládacím prvkem.  
+ Když povolíte hledání na <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, jako v předchozím postupu, vytvoří panel nástrojů hledání hostitele. Tento hostitel nastavit a spravovat procesy, vyhledávání, které vždy odehrávat na vlákně na pozadí. Vzhledem k tomu, <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> třída spravuje vytváření hostitele vyhledávání a nastavení hledání, potřebujete jenom vytvoření vyhledávací úlohy a nabízejí způsob vyhledávání. Proces vyhledávání se provádí na vlákně na pozadí a volání do ovládacího prvku okno nástroje, ke kterým dochází na vlákně UI. Proto je nutné použít [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) metoda spravovat všechna volání, které provedete v práci s ovládacím prvkem.  
   
 1. V souboru TestSearch.cs, přidejte následující `using` příkazy:  
   
@@ -160,7 +160,7 @@ Při vytváření nebo aktualizace panelu nástrojů v rozšíření, můžete p
   
     - Přepsání <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> metodu pro vytvoření vyhledávací úlohy.  
   
-    - Přepsání <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> metodou pro obnovení stavu v textovém poli. Tato metoda je volána, když uživatel zruší úlohu vyhledávání a pokud uživatel nastaví nebo unsets možnosti nebo filtry. Obě <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> se nazývají na vlákně UI. Proto není nutné pro přístup k textovém poli prostřednictvím <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> metody.  
+    - Přepsání <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> metodou pro obnovení stavu v textovém poli. Tato metoda je volána, když uživatel zruší úlohu vyhledávání a pokud uživatel nastaví nebo unsets možnosti nebo filtry. Obě <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> se nazývají na vlákně UI. Proto není nutné pro přístup k textovém poli prostřednictvím [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) metody.  
   
     - Vytvoří třídu s názvem `TestSearchTask` , která dědí z <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, která poskytuje výchozí implementaci třídy <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.  
   

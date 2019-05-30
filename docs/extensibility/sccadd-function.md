@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a738a01df224051e3190d828f852fe1ccfa7e9da
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ee567dff65f184f604fb390ec19ebbf6d1e0208
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434711"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334014"
 ---
 # <a name="sccadd-function"></a>Sccadd – funkce
 Tato funkce přidá nové soubory do systému správy zdrojového kódu.
@@ -68,7 +68,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>Návratová hodnota
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:
 
-|Value|Popis|
+|Hodnota|Popis|
 |-----------|-----------------|
 |SCC_OK|Přidat operace byla úspěšná.|
 |SCC_E_FILEALREADYEXISTS|Vybraný soubor je již pod správou zdrojových kódů.|
@@ -89,7 +89,7 @@ SCCRTN SccAdd(
 
  Níže je seznam příznaky použité při `pfOptions` pole:
 
-|Možnost|Value|Význam|
+|Možnost|Hodnota|Význam|
 |------------|-----------|-------------|
 |SCC_FILETYPE_AUTO|0x00|Modul plug-in správy zdrojového kódu musí rozpoznat typ souboru.|
 |SCC_FILETYPE_TEXT|0x01|Určuje textový soubor ASCII.|

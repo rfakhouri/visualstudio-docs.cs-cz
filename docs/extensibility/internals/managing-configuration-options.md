@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - configuration options
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba3b7c2c1cac1255c6234d2b9a8ed6ab4fd05820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e093b3af6c0db75282d12f8766d36bc511d2cf4c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909434"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328654"
 ---
 # <a name="managing-configuration-options"></a>Správa možností konfigurace
 Když vytvoříte nový typ projektu, musíte spravovat projektu a řešení nastavení konfigurace, které určují, jak váš projekt bude vytvořen, zabalené nasazené a spuštění. Následující témata popisují konfiguraci projektů a řešení.

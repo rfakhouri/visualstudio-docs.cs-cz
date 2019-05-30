@@ -1,5 +1,6 @@
 ---
-title: Upgrade vlastních šablon projektů a položek pro Visual Studio 2017 | Dokumentace Microsoftu
+title: Upgrade vlastních šablon projektů a položek pro Visual Studio 2017
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -9,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 39dbe74c8f59171461cca04fc9015782e21fe9da
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434205"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261804"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Upgrade vlastních šablon projektů a položek pro Visual Studio 2017
 
@@ -26,7 +27,7 @@ Pokud chcete vytvořit šablonu projektu nebo položky jako součást rozšíře
 
 ## <a name="template-scanning"></a>Kontrola šablon
 
-V předchozích verzích sady Visual Studio **devenv/Setup** nebo **devenv/installvstemplates** zkontrolovaných místním disku do šablon projektů a položek. Spouští se v sadě Visual Studio 2017, kontrola se provádí pouze pro umístění úrovni uživatele. Výchozí umístění individuální **%USERPROFILE%\Documents\\< verze sady Visual Studio\>\Templates\\**. Toto umístění se používá pro šablony, které jsou generované **projektu** > **Export šablony...**  příkazu, pokud **automaticky importovat šablonu do sady Visual Studio** je vybraná možnost v průvodci.
+V předchozích verzích sady Visual Studio **devenv/Setup** nebo **devenv/installvstemplates** zkontrolovaných místním disku do šablon projektů a položek. Spouští se v sadě Visual Studio 2017, kontrola se provádí pouze pro umístění úrovni uživatele. Výchozí umístění individuální **%USERPROFILE%\Documents\\< verze sady Visual Studio\>\Templates\\** . Toto umístění se používá pro šablony, které jsou generované **projektu** > **Export šablony...**  příkazu, pokud **automaticky importovat šablonu do sady Visual Studio** je vybraná možnost v průvodci.
 
 Na jiných místech (od uživatele) musí obsahovat manifest(.vstman) soubor, který určuje umístění a další vlastnosti šablony. Souboru .vstman generováno spolu se souborem .vstemplate, používá se pro šablony. Pokud nainstalujete rozšíření pomocí VSIX, můžete to provést opětovnou kompilací rozšíření v sadě Visual Studio 2017. Ale pokud používáte byl soubor MSI, budete muset provést změny ručně. Seznam co je potřeba udělat, aby tyto změny najdete v tématu **upgrady pro rozšíření nainstalované pomocí. MSI** později na této stránce.
 
@@ -34,7 +35,7 @@ Na jiných místech (od uživatele) musí obsahovat manifest(.vstman) soubor, kt
 
 1. Otevřete řešení v sadě Visual Studio 2017. Zobrazí se výzva k upgradu kód. Klikněte na **OK**.
 
-2. Po dokončení upgradu, budete muset změnit verzi cíle instalace. V projektu VSIX, otevřete soubor source.extension.vsixmanifest a vyberte **cíle instalace** kartu. Pokud **rozsah verzí** pole je **[14.0]**, klikněte na tlačítko **upravit** a změnit tak, aby obsahovala Visual Studio 2017. Například můžete nastavit **[14.0,15.0]** nainstalovat rozšíření pro Visual Studio 2015 nebo Visual Studio 2017 nebo do **[15.0]** k její instalaci pouze Visual Studio 2017.
+2. Po dokončení upgradu, budete muset změnit verzi cíle instalace. V projektu VSIX, otevřete soubor source.extension.vsixmanifest a vyberte **cíle instalace** kartu. Pokud **rozsah verzí** pole je **[14.0]** , klikněte na tlačítko **upravit** a změnit tak, aby obsahovala Visual Studio 2017. Například můžete nastavit **[14.0,15.0]** nainstalovat rozšíření pro Visual Studio 2015 nebo Visual Studio 2017 nebo do **[15.0]** k její instalaci pouze Visual Studio 2017.
 
 3. Znovu zkompilujte kód.
 
@@ -119,7 +120,7 @@ Jsme zobrazí body rozdíl mezi Visual Studio 2015 a Visual Studio 2017 verze so
 
 ```
 
- Na základě informací poskytnutých [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element zůstává stejná.  **\<VSTemplateContainer>** element odkazuje na soubor .vstemplate pro přidruženou šablonu.
+ Na základě informací poskytnutých [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element zůstává stejná. **\<VSTemplateContainer>** element odkazuje na soubor .vstemplate pro přidruženou šablonu.
 
  Tady je výchozí soubor .vstemplate položky vytvořené pomocí sady Visual Studio 2015:
 
@@ -171,7 +172,7 @@ Jsme zobrazí body rozdíl mezi Visual Studio 2015 a Visual Studio 2017 verze so
 </VSTemplateManifest>
 ```
 
- Na základě informací poskytnutých  **\<TemplateData >** element zůstává stejná.  **\<VSTemplateContainer>** element odkazuje na soubor .vstemplate pro přidruženou šablonu
+ Na základě informací poskytnutých  **\<TemplateData >** element zůstává stejná. **\<VSTemplateContainer>** element odkazuje na soubor .vstemplate pro přidruženou šablonu
 
  Další informace o různých prvků souboru .vstman najdete v tématu [Visual Studio Manifest odkaz na schéma šablon](../extensibility/visual-studio-template-manifest-schema-reference.md).
 

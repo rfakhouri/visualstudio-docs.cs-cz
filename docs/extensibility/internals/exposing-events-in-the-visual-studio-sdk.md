@@ -6,17 +6,17 @@ helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cc905e359d7bcb2946d627ebcb3c28067233fa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 29fd9df90f58807ab3d48e077dcfa02d75eff837
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910325"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352605"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Vystavení události v sadě Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umožňuje zdroje událostí pomocí služby automation. Doporučujeme vám, že zdroj události pro projekty a položky projektu.
@@ -52,7 +52,7 @@ ms.locfileid: "62910325"
 
  **AutomationProjectItemEvents** = vrátí `AutomationProjectItemsEvents` objektu.
 
-|Název|Type|Rozsah|Popis|
+|Name|Type|Rozsah|Popis|
 |----------|----------|-----------|-----------------|
 |Výchozí (@)|REG_SZ|Nepoužitý|Nevyužité. Datové pole můžete použít pro dokumentaci.|
 |*AutomationProjectsEvents*|REG_SZ|Název objektu události.|Pouze název klíče je relevantní. Datové pole můžete použít pro dokumentaci.<br /><br /> V tomto příkladu pochází z ukázkové základního projektu.|

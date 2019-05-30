@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553350"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263027"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript v sadě Visual Studio 2017
 
@@ -247,7 +247,7 @@ Zobrazit [technologie IntelliSense jazyka JavaScript](/visualstudio/ide/javascri
 ### <a name="vsdoc"></a>VSDoc
 
 Dokumentační komentáře XML, který se někdy označuje jako VSDocs, může použít dříve k vyplnění zdrojového kódu s další data, která se použije k buff výsledky technologie IntelliSense.
-VSDoc se už nepodporuje nahrazený [JSDoc](http://usejsdoc.org/about-getting-started.html) tedy usnadňují zápis a přijaté standard pro jazyk JavaScript.
+VSDoc se už nepodporuje nahrazený [JSDoc](https://jsdoc.app/about-getting-started.html) tedy usnadňují zápis a přijaté standard pro jazyk JavaScript.
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` Rozšíření
 

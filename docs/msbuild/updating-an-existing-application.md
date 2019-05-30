@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 735874abd1f62ecf121713a18ab05b58d20d908e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686086"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263739"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualizace existující aplikace pro MSBuild 15
 
@@ -71,15 +71,17 @@ Odkaz na balíček Microsoft.Build.Locator zajistit, že vaše aplikace automati
 
 Sestavte projekt a zkontrolujte výstupní adresář, abyste měli jistotu, že neobsahuje žádné *Microsoft.Build\*. Knihovna DLL* sestavení jiný než *Microsoft.Build.Locator.dll*přidali v dalším kroku.
 
-### <a name="add-package-reference"></a>Přidání odkazu na balíček
+### <a name="add-package-reference-for-microsoftbuildlocator"></a>Přidání odkazu na balíček pro Microsoft.Build.Locator
 
-Přidat odkaz na balíček NuGet do [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/).
+Přidat odkaz na balíček NuGet pro [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/).
 
 ```xml
     <PackageReference Include="Microsoft.Build.Locator">
       <Version>1.1.2</Version>
     </PackageReference>
 ```
+
+Nezadávejte `ExcludeAssets=runtime` Microsoft.Build.Locator balíčku.
 
 ### <a name="register-instance-before-calling-msbuild"></a>Zaregistrovat instanci před voláním funkce MSBuild
 

@@ -1,5 +1,5 @@
 ---
-title: Použití uložených procedur za účelem update, insert a delete v technologii Linq to SQL O/R Designer
+title: Aktualizace dat (O/R Designer) pomocí uložené procedury v technologii LINQ to SQL
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 58dfb1016097429eeab10c3b50262adc7015e818
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402835"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260795"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Postupy: Přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Postupy: Přiřazení uložených procedur za účelem aktualizací, vkládání a odstraňování (Návrhář relací objektů)
 
 Uložené procedury lze přidat do **O/R Designer** a provést, protože Typická <xref:System.Data.Linq.DataContext> metody. Můžete je také použít k přepsání výchozích LINQ na SQL chování modulu runtime, které provádí vložení, aktualizace a odstranění při uložení změn z tříd entit k databázi (například při volání <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metoda).
 

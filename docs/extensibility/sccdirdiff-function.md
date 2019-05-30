@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirDiff function
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a0638b0e644242e471ff30bc58d550675089695
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3d207a171acba4127849cd479a1049afafa8492
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434682"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351900"
 ---
 # <a name="sccdirdiff-function"></a>Sccdirdiff – funkce
 Tato funkce zobrazí rozdíly mezi aktuální místní adresáře na disku klienta a odpovídající projekt pod správou zdrojových kódů.
@@ -58,7 +58,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>Návratová hodnota
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:
 
-|Value|Popis|
+|Hodnota|Popis|
 |-----------|-----------------|
 |SCC_OK|Adresáře na disku je stejný jako projektu ve správě zdrojového kódu.|
 |SCC_I_FILESDIFFER|Adresáře na disku se liší od projektu ve správě zdrojového kódu.|

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2fab9a97ef944b153287a58671193324aecf52c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 69774df555c4258ef36a65a3a18e6ce3fccbe555
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62888915"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350565"
 ---
 # <a name="bptype"></a>BP_TYPE
 Určuje, zda zarážka je v místě, kód, je umístění dat nebo je jiný typ zarážky.
@@ -43,14 +46,18 @@ public enum enum_BP_TYPE {
 };
 ```
 
-## <a name="members"></a>Členové
-BPT_NONE určuje žádný typ zarážky.
+## <a name="fields"></a>Pole
+`BPT_NONE`\
+Určuje žádný typ zarážky.
 
-BPT_CODE určuje kódu zarážku.
+`BPT_CODE`\
+Určuje kód zarážku.
 
-BPT_DATA Určuje datové zarážky.
+`BPT_DATA`\
+Určuje datové zarážky.
 
-Určuje BPT_SPECIAL zarážka, která není kód ani datového typu. Tento typ je zastaralý a neměl by se používat.
+`BPT_SPECIAL`\
+Určuje, který není kód ani datový typ zarážky. Tento typ je zastaralý a neměl by se používat.
 
 ## <a name="remarks"></a>Poznámky
 Předán jako parametr [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) a [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) metody.
@@ -62,7 +69,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

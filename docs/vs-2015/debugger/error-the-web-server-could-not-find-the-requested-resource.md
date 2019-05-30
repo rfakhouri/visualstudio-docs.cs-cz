@@ -16,14 +16,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 656ebd6f8b1e720afd129bca3d53712526fc914f
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b3904a9fcb2e15190018dbc4caabe925690e023f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869196"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263712"
 ---
-# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Chyba: Webový Server nenalezl požadovaný prostředek
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Chyba: Webový server nemohl najít požadovaný prostředek.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kvůli požadavky na zabezpečení služby IIS vrátilo Obecná chyba.  
@@ -35,5 +35,5 @@ Kvůli požadavky na zabezpečení služby IIS vrátilo Obecná chyba.
  Další informace o řešení potíží s IIS najdete v tématu [správu služby IIS a správu](http://go.microsoft.com/fwlink/?LinkId=255872).  
   
 ## <a name="see-also"></a>Viz také  
- [Nástroj UrlScan zabezpečení](https://www.iis.net/downloads/microsoft/urlscan)   
+ [Nástroj UrlScan zabezpečení](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [Chyba: Webový server je zamčený, a proto blokuje příkaz DEBUG.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

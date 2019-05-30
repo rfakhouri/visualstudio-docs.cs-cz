@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: abfe762b354d11297aa4d0c574b8f0e0a081d349
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438012"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263035"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Ladění aplikací v jazyce JavaScript nebo TypeScript v sadě Visual Studio
 
@@ -64,7 +64,7 @@ Připojit ladicí program sady Visual Studio a dosažení zarážky v kódu na s
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > Můžete také nastavit `--remote-debugging-port` příznak při spuštění prohlížeče tak, že vyberete **procházet s...**  > z **ladění** nástrojů, výběrem **přidat**a pak nastavení příznaku **argumenty** pole. Použít jiný popisný název pro prohlížeč například **Chrome s ladění**. Podrobnosti najdete v tématu [zpráva k vydání verze](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    > Můžete také nastavit `--remote-debugging-port` příznak při spuštění prohlížeče tak, že vyberete **procházet s...**  > z **ladění** nástrojů, výběrem **přidat**a pak nastavení příznaku **argumenty** pole. Použít jiný popisný název pro prohlížeč například **Chrome s ladění**. Podrobnosti najdete v tématu [zpráva k vydání verze](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
 
     ::: moniker-end
 
@@ -147,7 +147,7 @@ Pokud chcete přidat *tsconfig.json* soubor do projektu sady Visual Studio pova�
 
 * **inlineSourceMap**: Vygeneruje jediný soubor se zdrojovými mapováními namísto vytvoření samostatného zdrojového mapování pro každý zdrojový soubor.
 * **inlineSources**: Vygeneruje zdroj spolu zdrojových mapování v rámci jednoho souboru; vyžaduje *inlineSourceMap* nebo *zdrojového mapování* nastavit.
-* **mapRoot**: Určuje umístění, kde by měl ladicí program najít zdrojové mapovámí (*.map*) místo výchozího umístění souborů. Pomocí tohoto příznaku, pokud doba běhu *.map* soubory musí mít v jiném umístění než *js* soubory. Zadané umístění je součástí mapování zdroje pro přesměrování ladicí program na umístění *.map* soubory.
+* **mapRoot**: Určuje umístění, kde by měl ladicí program najít zdrojové mapovámí ( *.map*) místo výchozího umístění souborů. Pomocí tohoto příznaku, pokud doba běhu *.map* soubory musí mít v jiném umístění než *js* soubory. Zadané umístění je součástí mapování zdroje pro přesměrování ladicí program na umístění *.map* soubory.
 * **sourceMap**: Generuje odpovídající *.map* souboru.
 * **sourceRoot**: Určuje umístění, kde by měl ladicí program najít soubory TypeScript namísto umístění zdroje. Tento příznak použijte, pokud za běhu zdroje musí být v jiném umístění než umístění v době návrhu. Zadané umístění se vloží do zdrojové mapovámí ke směrování ladicího programu k umístění zdrojových souborů.
 

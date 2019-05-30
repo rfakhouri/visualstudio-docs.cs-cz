@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO2 structure
 ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81028ef1d4096a9aa434f6a402ee57124100bf9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8f9c601cf1620d002bd86b8bc110d28bdb533e61
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62888943"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352950"
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
 Obsahuje informace potřebné k implementaci zarážku, včetně dodavatele identifikátor GUID, omezení a zarážky s trasováním.
@@ -61,31 +64,44 @@ public struct BP_REQUEST_INFO2 {
 ```
 
 ## <a name="members"></a>Členové
-`dwFields` Kombinace příznaků z [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) výčet, který určuje, která pole jsou vyplněna.
+`dwFields`\
+Kombinace příznaků z [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) výčet, který určuje, která pole jsou vyplněna.
 
-`guidLanguage` Identifikátor GUID jazyka.
+`guidLanguage`\
+Identifikátor GUID jazyka.
 
-`bpLocation` [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktura, která určuje typ umístění zarážky.
+`bpLocation`\
+[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktura, která určuje typ umístění zarážky.
 
-`pProgram` [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objekt, který reprezentuje aplikaci, ve kterém dochází k zarážce.
+`pProgram`\
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objekt, který reprezentuje aplikaci, ve kterém dochází k zarážce.
 
-`bstrProgramName` Název aplikace, ve kterém dochází k zarážce.
+`bstrProgramName`\
+Název aplikace, ve kterém dochází k zarážce.
 
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt, který reprezentuje vláken, ve kterém dochází k zarážce.
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objekt, který reprezentuje vláken, ve kterém dochází k zarážce.
 
-`bstrThreadName` Název vlákna, ve kterém dochází k zarážce.
+`bstrThreadName`\
+Název vlákna, ve kterém dochází k zarážce.
 
-`bpCondition` [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struktura, která popisuje podmínky, za kterých se zarážka aktivuje.
+`bpCondition`\
+[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struktura, která popisuje podmínky, za kterých se zarážka aktivuje.
 
-`bpPassCount` [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) strukturu, která obsahuje informace o počtu průchodu této zarážky.
+`bpPassCount`\
+[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) strukturu, která obsahuje informace o počtu průchodu této zarážky.
 
-`dwFlags` Kombinace příznaků z [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) výčet, který určuje příznaky pro požadované zarážky.
+`dwFlags`\
+Kombinace příznaků z [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) výčet, který určuje příznaky pro požadované zarážky.
 
-`guidVendor` Identifikátor GUID dodavatele. Může mít hodnotu null.
+`guidVendor`\
+Identifikátor GUID dodavatele. Může mít hodnotu null.
 
-`bstrConstraint` Název omezení zarážku. Může mít hodnotu null.
+`bstrConstraint`\
+Název omezení zarážku. Může mít hodnotu null.
 
-`bstrTracepoint` Název bodu trasování. Může mít hodnotu null.
+`bstrTracepoint`\
+Název bodu trasování. Může mít hodnotu null.
 
 ## <a name="remarks"></a>Poznámky
 Tato struktura je vrácený [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) metody.
@@ -97,7 +113,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)

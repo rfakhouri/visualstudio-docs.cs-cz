@@ -8,17 +8,17 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f5e7db4b31607c05da32a09e5d691a85ef4173
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 6ab5866949d6ccfa9f3b1037abf7801ce40ace3d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614820"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332274"
 ---
 # <a name="createpkgdef-utility"></a>Nástroj CreatePkgDef
 Vezme soubor .dll pro rozšíření sady Visual Studio jako parametr a vytvoří *.pkgdef* souboru vyvíjený *.dll* souboru. *.Pkgdef* soubor obsahuje všechny informace, které by jinak zapsat do systémového registru po instalaci rozšíření.
@@ -33,7 +33,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
 ## <a name="arguments"></a>Arguments
-**/out=&lt;FileName&gt;**\
+**/out=&lt;FileName&gt;** \
 Povinný parametr. Nastaví název *.pkgdef* výstupní soubor &lt;FileName&gt;.
 
 **/ codebase**\
@@ -42,7 +42,7 @@ Volitelné. Vynutí registraci **CodeBase** nástroj.
 **/assembly**\
 Vynutí registraci **sestavení** nástroj.
 
-**&lt;AssemblyPath&gt;**\
+**&lt;AssemblyPath&gt;** \
 Cesta *.dll* soubor, ze kterého chcete generovat *.pkgdef*.
 
 ## <a name="remarks"></a>Poznámky
@@ -56,9 +56,9 @@ Nasazení rozšíření pomocí *.pkgdef* soubory nahradí požadavky na registr
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-Pokud je instalační složky sady *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\*, rozšíření sady Visual Studio rozpozná, ale je ve výchozím nastavení zakázané. Uživatel můžete povolit rozšíření pomocí **spravovat rozšíření**.
+Pokud je instalační složky sady *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\* , rozšíření sady Visual Studio rozpozná, ale je ve výchozím nastavení zakázané. Uživatel můžete povolit rozšíření pomocí **spravovat rozšíření**.
 
-Pokud je instalační složky sady *%vsinstalldir%\Common7\IDE\Extensions\\*, je rozšíření povoleno ve výchozím nastavení.
+Pokud je instalační složky sady *%vsinstalldir%\Common7\IDE\Extensions\\* , je rozšíření povoleno ve výchozím nastavení.
 
 > [!NOTE]
 > **Spravovat rozšíření** nástroj nelze použít pro přístup k rozšíření, pokud je nainstalován jako součást balíčku VSIX.
@@ -73,9 +73,9 @@ Pokud je instalační složky sady *%vsinstalldir%\Common7\IDE\Extensions\\*, je
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-Pokud je instalační složky sady *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\*, rozšíření sady Visual Studio rozpozná, ale je ve výchozím nastavení zakázané. Uživatel můžete povolit rozšíření pomocí **rozšíření a aktualizace**.
+Pokud je instalační složky sady *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\* , rozšíření sady Visual Studio rozpozná, ale je ve výchozím nastavení zakázané. Uživatel můžete povolit rozšíření pomocí **rozšíření a aktualizace**.
 
-Pokud je instalační složky sady *%vsinstalldir%\Common7\IDE\Extensions\\*, je rozšíření povoleno ve výchozím nastavení.
+Pokud je instalační složky sady *%vsinstalldir%\Common7\IDE\Extensions\\* , je rozšíření povoleno ve výchozím nastavení.
 
 > [!NOTE]
 > **Rozšíření a aktualizace** nástroj nelze použít pro přístup k rozšíření, pokud je nainstalován jako součást balíčku VSIX.

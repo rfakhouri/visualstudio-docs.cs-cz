@@ -7,22 +7,22 @@ helpviewer_keywords:
 - source control plug-ins, error codes
 - errors [Visual Studio SDK]
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e3dc26b8dd2e17e201cf760db68d0faf7e231ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d4f4289519dcc8ac5190221b7b45f64e98051da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863964"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334441"
 ---
 # <a name="error-codes"></a>Kódy chyb
 Po návratu funkce rozhraní API modulu Plug-in zdroje ovládacího prvku k chybě, očekává se, že se na jednu z následující kódy chyb. Všechny chyby jsou upozornění nebo informační chybové kódy jsou kladná, záporná, a úspěchu je 0.
 
-|Kód chyby|Hodnota|Popis|
+|Kód chyby|Value|Popis|
 |----------------|-----------|-----------------|
 |`SCC_I_SHARESUBPROJOK`|7|Modul plug-in podporuje přidávání souborů ze správy zdrojových kódů ve dvou krocích. Další informace najdete v tématu [sccsetoption –](../extensibility/sccsetoption-function.md).|
 |`SCC_I_FILEDIFFERS`|6|Místní soubor se liší od souboru v databázi správy zdrojových kódů (například [sccdiff –](../extensibility/sccdiff-function.md) může vrátit tuto hodnotu).|

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3adf4a26563560803f820d70ef6c6d5171e791d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47dd3b1c75ab7ff206714509a82449d744a02952
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891684"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333527"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Příznaky Bitflag používané konkrétními příkazy
 Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvku, které lze upravit tak, že nastavíte jeden nebo více bits jedinou hodnotu. Tyto hodnoty jsou označovány jako bitové příznaky. Různé příznaky bitflag používané rozhraní API modulu Plug-in zdroje ovládacího prvku je podrobně popsaný tady, seskupené podle funkce, která je používá.
@@ -23,7 +23,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="checked-out-flag"></a>Rezervovat příznak
  Tento příznak může nastavit buď [sccadd –](../extensibility/sccadd-function.md) nebo [scccheckin –](../extensibility/scccheckin-function.md).
 
-|Příznak|Value|Popis|
+|Příznak|Hodnota|Popis|
 |----------|-----------|-----------------|
 |`SCC_KEEP_CHECKEDOUT`|0x1000|Ponechte soubor rezervován.|
 
@@ -59,7 +59,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="populatedirlist-flags"></a>Příznaky PopulateDirList
  Tyto příznaky jsou používány [sccpopulatedirlist –](../extensibility/sccpopulatedirlist-function.md) v `fOptions` parametru.
 
-|Hodnota možnosti|Hodnota|Popis|
+|Hodnota možnosti|Value|Popis|
 |------------------|-----------|-----------------|
 |SCC_PDL_ONELEVEL|0x0000|Prozkoumejte pouze jednu úroveň adresářů pro adresáře (to je výchozí hodnota).|
 |SCC_PDL_RECURSIVE|0x0001|Rekurzivně zkontrolujte všechny adresáře v rámci každého daného adresáře.|
@@ -76,7 +76,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="get-flags"></a>Získat příznaky
  Tyto příznaky jsou používány [sccget –](../extensibility/sccget-function.md) a [scccheckout –](../extensibility/scccheckout-function.md).
 
-|Příznak|Value|Popis|
+|Příznak|Hodnota|Popis|
 |----------|-----------|-----------------|
 |`SCC_GET_ALL`|0x00000001L|Rozhraní IDE je předání adresáře, nikoli soubory: Získáte všechny soubory v těchto adresářích.|
 |`SCC_GET_RECURSIVE`|0x00000002L|Rozhraní IDE je předání adresáře: Získejte tyto adresáře a jejich podsložky.|
@@ -84,7 +84,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="noption-values"></a>nOption hodnoty
  Tyto příznaky jsou používány [sccsetoption –](../extensibility/sccsetoption-function.md) v `nOption` parametru.
 
-|Příznak|Value|Popis|
+|Příznak|Hodnota|Popis|
 |----------|-----------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|0x00000001L|Nastavit stav fronty událostí.|
 |`SCC_OPT_USERDATA`|0x00000002L|Určení uživatelských dat pro `SCC_OPT_NAMECHANGEPFN`.|

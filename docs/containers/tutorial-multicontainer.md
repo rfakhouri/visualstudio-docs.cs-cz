@@ -1,17 +1,17 @@
 ---
-title: Visual Studio kontejnerových nástrojů vícekontejnerových kurz pomocí Docker Compose a ASP.NET Core
+title: Vícekontejnerových kurz pomocí Docker Compose a ASP.NET Core
 author: ghogen
 description: Další informace o použití více kontejnerů pomocí Docker Compose
 ms.author: ghogen
 ms.date: 02/21/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 28b9cf02c29f488f50499e4ef52eacf18184981d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbaa516921649fa2834f03fbf8f9f2f39f35a9ef
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820624"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261179"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Kurz: Vytvoření vícekontejnerové aplikace pomocí Docker Compose
 

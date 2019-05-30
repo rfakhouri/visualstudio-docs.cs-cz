@@ -9,17 +9,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911378"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352045"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Postupy: Použití průvodců se šablonami projektů
 
@@ -210,7 +210,7 @@ Aby vaše vlastní šablonu projektu použít vlastního průvodce musíte podep
 
 1. Podepište sestavení. V **Průzkumníka řešení**, vyberte projekt VSIX, klikněte pravým tlačítkem a vyberte **vlastnosti projektu**.
 
-2. V **vlastnosti projektu** okna, vyberte **podepisování** kartu v **podepisování** kartě **podepsat sestavení**. V **vyberte soubor klíče se silným názvem** pole, vyberte  **\<nový >**. V **vytvořit klíč se silným názvem** okno v **název souboru klíče** zadejte **klíč.snk**. Zrušte zaškrtnutí políčka **chránit můj soubor klíče s heslem** pole.
+2. V **vlastnosti projektu** okna, vyberte **podepisování** kartu v **podepisování** kartě **podepsat sestavení**. V **vyberte soubor klíče se silným názvem** pole, vyberte  **\<nový >** . V **vytvořit klíč se silným názvem** okno v **název souboru klíče** zadejte **klíč.snk**. Zrušte zaškrtnutí políčka **chránit můj soubor klíče s heslem** pole.
 
 3. V **Průzkumníka řešení**, vyberte projekt VSIX a najít **vlastnosti** okna.
 
@@ -218,9 +218,9 @@ Aby vaše vlastní šablonu projektu použít vlastního průvodce musíte podep
 
 5. Znovu sestavte řešení.
 
-6. Můžete teď najít klíč.snk soubor v adresáři projektu MyProjectWizard (*\<umístění na disku > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopírovat *klíč.snk* souboru.
+6. Můžete teď najít klíč.snk soubor v adresáři projektu MyProjectWizard ( *\<umístění na disku > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopírovat *klíč.snk* souboru.
 
-7. Přejděte do výstupního adresáře a najít sestavení (*\<umístění na disku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Vložit *klíč.snk* souboru zde. (To není nezbytně nutné, ale to vám usnadní následující kroky.)
+7. Přejděte do výstupního adresáře a najít sestavení ( *\<umístění na disku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Vložit *klíč.snk* souboru zde. (To není nezbytně nutné, ale to vám usnadní následující kroky.)
 
 8. Otevřete okno příkazového řádku a přejděte do adresáře, ve kterém byla vytvořena sestavení.
 

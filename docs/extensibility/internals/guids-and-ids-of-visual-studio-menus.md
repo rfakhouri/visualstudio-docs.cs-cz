@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16871ba1115407e2665886d84b72594470f91287
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9f858bec8ff025061603c72eda4ff6fc6d36549c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420631"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263631"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Identifikátory GUID a ID sady Visual Studio nabídky
 Tento článek uvádí hodnoty GUID a ID nabídek a skupin v řádku nabídek sady Visual Studio. Tyto hodnoty jsou definovány v *.vsct* soubory, které se instalují jako součást sady Visual Studio SDK. Další informace najdete v tématu [příkazy definované prostředím IDE, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -56,6 +56,7 @@ Tento článek uvádí hodnoty GUID a ID nabídek a skupin v řádku nabídek sa
 |Sestavení|IDM_VS_MENU_BUILD|
 |Formát|IDM_VS_MENU_FORMAT|
 |Nástroje|IDM_VS_MENU_TOOLS|
+|Rozšíření|IDM_VS_MENU_EXTENSIONS|
 |Okno|IDM_VS_MENU_WINDOW|
 |Doplňky|IDM_VS_MENU_ADDINS|
 |Komunita|IDM_VS_MENU_COMMUNITY|

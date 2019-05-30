@@ -6,23 +6,23 @@ helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c176a558d7d5956c1d41593f5d0cc71184a9a820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1644cfa71296c4233cf17b6b225933aeeb3d477
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861690"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342179"
 ---
 # <a name="command-design"></a>Návrh příkazu
 Při přidání příkazu do VSPackage, musíte zadat, kam se má zobrazit, když je k dispozici a jak je zpracovat.
 
 ## <a name="define-commands"></a>Definujte příkazy
- Pokud chcete definovat nové příkazy, zahrnují tabulky příkazů sady Visual Studio (*.vsct*) soubor v projektu VSPackage. Když vytvoříte VSPackage pomocí balíčku šablony sady Visual Studio projekt obsahuje některý z těchto souborů. Další informace najdete v tématu [soubory tabulky (.vsct) příkazů sady Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+ Pokud chcete definovat nové příkazy, zahrnují tabulky příkazů sady Visual Studio ( *.vsct*) soubor v projektu VSPackage. Když vytvoříte VSPackage pomocí balíčku šablony sady Visual Studio projekt obsahuje některý z těchto souborů. Další informace najdete v tématu [soubory tabulky (.vsct) příkazů sady Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
  Visual Studio slučuje všechny *.vsct* soubory ho najde, tak, aby ho zobrazit příkazy. Protože tyto soubory se liší od sady VSPackage binární, není nutné načíst balíček najít příkazy sady Visual Studio. Další informace najdete v tématu [jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
 
@@ -36,7 +36,7 @@ Při přidání příkazu do VSPackage, musíte zadat, kam se má zobrazit, kdy�
 ## <a name="visual-studio-command-environment"></a>Visual Studio příkazového prostředí
  Visual Studio může být hostitelem libovolný počet rozšíření VSPackages a každý může přispívat svou vlastní sadu příkazů. Prostředí se zobrazí jenom příkazy, které jsou vhodné pro aktuální úlohu. Další informace najdete v tématu [příkaz dostupnosti](../../extensibility/internals/command-availability.md) a [kontextové objekty výběru](../../extensibility/internals/selection-context-objects.md).
 
- VSPackage, která definuje nové příkazy, nabídky, panely nástrojů nebo místní nabídky do sady Visual Studio poskytuje jeho informace o příkazu v době instalace prostřednictvím položky registru, které odkazují na prostředky v nativním nebo spravovaným sestavení. Každý prostředek pak odkazuje na prostředek binárních dat (*.cto*) soubor, který je vytvořen při kompilaci tabulky příkazů sady Visual Studio (*.vsct*) soubor. Díky tomu Visual Studio, abyste sady sloučené příkazů, nabídek a panelů nástrojů bez nutnosti načtení všech nainstalovaných VSPackage.
+ VSPackage, která definuje nové příkazy, nabídky, panely nástrojů nebo místní nabídky do sady Visual Studio poskytuje jeho informace o příkazu v době instalace prostřednictvím položky registru, které odkazují na prostředky v nativním nebo spravovaným sestavení. Každý prostředek pak odkazuje na prostředek binárních dat ( *.cto*) soubor, který je vytvořen při kompilaci tabulky příkazů sady Visual Studio ( *.vsct*) soubor. Díky tomu Visual Studio, abyste sady sloučené příkazů, nabídek a panelů nástrojů bez nutnosti načtení všech nainstalovaných VSPackage.
 
 ### <a name="command-organization"></a>Příkaz organizace
  Prostředí umístí příkazů podle skupiny, priority a nabídky.

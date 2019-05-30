@@ -1,5 +1,5 @@
 ---
-title: Použití metod profilace ke shromažďování dat výkonu z příkazového řádku | Dokumentace Microsoftu
+title: Použití metod profilace z příkazového řádku k získání údajů o výkonu
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831440"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263827"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Použití metod profilace ke shromažďování dat výkonu z příkazového řádku
 Podle vaší volby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci a možnosti závisí na faktorech jako typ aplikace, který profilujete, metodě profilování, který chcete použít, a určuje, zda je cílová aplikace napsané v nativní nebo [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]kódu.

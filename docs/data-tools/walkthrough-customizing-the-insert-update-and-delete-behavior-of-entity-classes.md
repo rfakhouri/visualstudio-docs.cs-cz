@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit'
+title: Přizpůsobení chování insert/update/delete tříd entit
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e869ae13c9d7ec82cb4d70fb5f3c5fce355691d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 189516fe90863d80467dc3070dcc6b44a4a492a0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565404"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262909"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Návod: Přizpůsobení způsobu chování při vkládání, aktualizacích a odstraňování tříd entit
 
@@ -195,7 +195,7 @@ Ve výchozím nastavení toto tlačítko není povoleno a uložit funkce není i
 
 5. V **vlastnosti** okna, vyberte **vložit** vlastnost.
 
-6. Klikněte na tlačítko se třemi tečkami (**...** ) vedle položky **používat Runtime** otevřít **konfigurace chování** dialogové okno.
+6. Klikněte na tlačítko se třemi tečkami ( **...** ) vedle položky **používat Runtime** otevřít **konfigurace chování** dialogové okno.
 
 7. Vyberte **přizpůsobit**.
 
@@ -217,7 +217,7 @@ Ve výchozím nastavení toto tlačítko není povoleno a uložit funkce není i
 13. Mapování **Original_CustomerID** argument metody pro výraz **CustomerID (původní)** vlastnost třídy.
 
     > [!NOTE]
-    > Ve výchozím nastavení bude při názvy odpovídají argumenty metody mapovat na vlastnosti třídy. Pokud názvy vlastností byly změněny a už neodpovídá mezi tabulkou a třídu entity, budete muset vybrat vlastnost ekvivalentní třídy k mapování, když **O/R Designer** nelze určit správné mapování. Kromě toho Pokud argumenty metody nemají vlastnosti platnou třídu pro mapování na, můžete nastavit **vlastnosti třídy** hodnota, která se **(žádný)**.
+    > Ve výchozím nastavení bude při názvy odpovídají argumenty metody mapovat na vlastnosti třídy. Pokud názvy vlastností byly změněny a už neodpovídá mezi tabulkou a třídu entity, budete muset vybrat vlastnost ekvivalentní třídy k mapování, když **O/R Designer** nelze určit správné mapování. Kromě toho Pokud argumenty metody nemají vlastnosti platnou třídu pro mapování na, můžete nastavit **vlastnosti třídy** hodnota, která se **(žádný)** .
 
 14. Klikněte na tlačítko **použít** se uložit konfiguraci pro vybranou třídu nebo chování.
 

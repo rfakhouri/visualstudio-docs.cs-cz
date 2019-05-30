@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 55b863d1bff16fb0170e749d00ebb212588b2dd3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebbbd2eb0cf47763868a6c23ef2637bdd4009b2e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403043"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261057"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Poradce při potížích s emulátorem sady Visual Studio pro Android
 Toto téma obsahuje informace, které pomáhají při řešení problémů, které mohou nastat při používání Visual Studio Emulator for Android.
@@ -143,7 +143,7 @@ Toto téma obsahuje informace, které pomáhají při řešení problémů, kter
 
 - Ujistěte se, že jsou splněny minimální požadavky na hardware a správnost nastavení systému BIOS.
 
-   Emulátor a Windows 8 Hyper-V vyžaduje 64bitový procesor s druhou překlad adres úrovně (SLAT). Pro Intel musíte v podstatě Core i3 i5 nebo i7 procesoru (nebo jeden z mnoha Xeons). Je k dispozici seznam AMD čipy [tady](http://support.amd.com/en-us).
+   Emulátor a Windows 8 Hyper-V vyžaduje 64bitový procesor s druhou překlad adres úrovně (SLAT). Pro Intel musíte v podstatě Core i3 i5 nebo i7 procesoru (nebo jeden z mnoha Xeons). Je k dispozici seznam AMD čipy [tady](https://www.amd.com/en/support).
 
   1. Ujistěte se, že váš počítač splňuje [požadavky na systém](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).
 

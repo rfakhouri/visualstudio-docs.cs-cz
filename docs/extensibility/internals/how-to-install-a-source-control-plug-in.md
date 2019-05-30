@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420516"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334914"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Postupy: Instalace modulu plug-in správy zdrojového kódu
 Vytvoření ovládacího prvku zdroj modulu plug-in zahrnuje tři kroky:
@@ -64,7 +64,7 @@ Vytvoření ovládacího prvku zdroj modulu plug-in zahrnuje tři kroky:
 
 3. Přidat podklíč, **SourceCodeControlProvider**v části **HKEY_LOCAL_MACHINE** klíče v **softwaru** podklíči.
 
-    V tomto podklíči položku registru **ProviderRegKey** je nastavena na řetězec, který představuje podklíče umístěny v registru v kroku 1. Vzor je **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *softwaru\\< název společnosti\>\\< název produktu \>*.
+    V tomto podklíči položku registru **ProviderRegKey** je nastavena na řetězec, který představuje podklíče umístěny v registru v kroku 1. Vzor je **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *softwaru\\< název společnosti\>\\< název produktu \>* .
 
     Následuje ukázkový obsah pro tento podklíč.
 
@@ -77,7 +77,7 @@ Vytvoření ovládacího prvku zdroj modulu plug-in zahrnuje tři kroky:
 
 4. Vytvořit podklíč s názvem **InstalledSCCProviders** pod **SourceCodeControlProvider** podklíče a umístěte jedna položka v tomto podklíči.
 
-    Název této položky je čitelný pro uživatele název zprostředkovatele (stejná jako hodnota zadaná pro položku SCCServerName) a hodnota je zase podklíč vytvořili v kroku 1. Vzor je **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< zobrazovaný název\>** = *softwaru\\< společnosti název\>\\< název produktu\>*.
+    Název této položky je čitelný pro uživatele název zprostředkovatele (stejná jako hodnota zadaná pro položku SCCServerName) a hodnota je zase podklíč vytvořili v kroku 1. Vzor je **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< zobrazovaný název\>**  = *softwaru\\< společnosti název\>\\< název produktu\>* .
 
     Příklad:
 

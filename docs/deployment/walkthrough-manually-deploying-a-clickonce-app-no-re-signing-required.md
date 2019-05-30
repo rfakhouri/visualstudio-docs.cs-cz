@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Ruční nasazení aplikace ClickOnce, která nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli | Dokumentace Microsoftu'
+title: Ruční nasazení ClickOnce zachování značky aplikace
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405840"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263416"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli
 Když vytvoříte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a pak mu přidělte zákazníkovi k publikování a nasazení, zákazník tradičně museli aktualizovat manifest nasazení a znovu podepsat. Který je stále upřednostňuje ve většině případů, rozhraní .NET Framework 3.5 vám umožní vytvořit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, která je možné nasadit pomocí zákazníky bez nutnosti znovu vygenerovat nový manifest nasazení. Další informace najdete v tématu [ClickOnce – nasazení aplikace pro testování a produkční servery bez opětovného podepsání](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -127,7 +127,7 @@ Když vytvoříte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 
 13. Vyberte **souboru**, **Uložit** z nabídky a uložit manifest aplikace. Jste vyzváni k podepsání manifestu aplikace, když jste jej uložili.
 
-14. Pokud máte certifikát uložený jako soubor ve vašem systému souborů, použijte **znaménko jako soubor certifikátu** možnost a vyberte certifikát ze systému souborů pomocí na tři tečky (**...** ) tlačítko.
+14. Pokud máte certifikát uložený jako soubor ve vašem systému souborů, použijte **znaménko jako soubor certifikátu** možnost a vyberte certifikát ze systému souborů pomocí na tři tečky ( **...** ) tlačítko.
 
      -nebo-
 

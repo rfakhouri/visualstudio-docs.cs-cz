@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a33911ffe8c28dd84166e3e16ac6b7f0f48f583c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674158"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263017"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Návod: Vytvoření prostředí více počítačů sestavení
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Návod: Vytvoření prostředí pro sestavení s použitím více počítačů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním sady Visual Studio v hostitelském počítači a následným kopírováním různých souborů a nastavení do jiného počítače tak, aby se mohl podílet na sestavení. Není nutné k instalaci sady Visual Studio na jiném počítači.  
@@ -197,7 +197,7 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Zkopírujte pouze následující soubory ze složky \Debug_NonRedist\x86\ nebo \Debug_NonRedist\x64\ do počítače sestavení, jak je popsáno v [Příprava testovací počítač pro běh spustitelný soubor ladění](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Nelze zkopírovat žádné jiné soubory.  
+5. Zkopírujte pouze následující soubory ze složky \Debug_NonRedist\x86\ nebo \Debug_NonRedist\x64\ do počítače sestavení, jak je popsáno v [Příprava testovací počítač pro běh spustitelný soubor ladění](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Nelze zkopírovat žádné jiné soubory.  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
          Pro nativní 64bitové sestavení přejděte na 64bitový MSBuild.  
   
 ## <a name="see-also"></a>Viz také  
- [Příprava testovacího počítače ke spuštění ladicího spustitelného souboru](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [Příprava testovacího počítače ke spuštění ladicího spustitelného souboru](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)   
  [Referenční dokumentace k příkazovému řádku](../msbuild/msbuild-command-line-reference.md)

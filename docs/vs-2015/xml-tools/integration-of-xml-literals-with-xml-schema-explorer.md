@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b81351deb31ffa9c66838ba39eebd6d2a138003e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c0c7cac1a5cedc154fdc771ef4615a79c7ead1cd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654422"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263839"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integrace literálů XML s Průzkumníkem schémat XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Visual Basic podporuje literály XML, což znamená, že můžete začlenit frag
   
  ![Literály XML v jazyce Visual Basic; Průzkumník schémat XML](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif "VBXMLLiteralsWithXMLSchemaExplorer2")  
   
- Tato funkce byla zavedena v systému Visual Studio 2008 SP1. Pokud chcete zhlédnout interview, ve kterém je podrobně vysvětlen tuto funkci, podívejte se [dotazovat kanál 9: Průzkumník schémat XML v aplikaci Visual Studio 2008 SP1](http://go.microsoft.com/fwlink/?LinkId=140183).  
+ Tato funkce byla zavedena v systému Visual Studio 2008 SP1. Pokud chcete zhlédnout interview, ve kterém je podrobně vysvětlen tuto funkci, podívejte se [dotazovat kanál 9: Průzkumník schémat XML v aplikaci Visual Studio 2008 SP1](https://channel9.msdn.com/Blogs/funkyonex/XML-Schema-Explorer-in-Visual-Studio-2008-SP1).  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Používání Návrháře schémat XML s literály XML](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

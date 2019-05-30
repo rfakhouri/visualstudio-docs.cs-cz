@@ -3,19 +3,19 @@ title: Přidání rozšíření protokol jazyka serveru | Dokumentace Microsoftu
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b268c0c15ce468ca40a90583c5b7310364c189
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 7518a9086d5923c7b6ad71f07227b76517934b56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805117"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352321"
 ---
-# <a name="add-a-language-server-protocol-extension"></a>Přidat příponu protokol jazyka serveru
+# <a name="add-a-language-server-protocol-extension"></a>Přidání rozšíření protokolu LSP (Language Server Protocol)
 
 Protokol jazyka serveru (LSP) je společný protokol ve formátu JSON RPC v2.0, používají k zajištění funkce služby pro různé editory kódu jazyka. Pomocí protokolu, můžou vývojáři psát, že jeden jazyk serveru, který poskytuje služba jazyka funkce jako IntelliSense, Diagnostika chyb najít všechny odkazy a tak dále, pro různé editory kódu, které podporují LSP. Tradičně jazykových služeb v sadě Visual Studio lze přidat pomocí souborů gramatiky TextMate poskytnout základní funkce, jako jsou zvýraznění syntaxe nebo zápisem vlastního jazykovými službami, které umožňuje poskytují kompletní sadu rozhraní API pro rozšíření sady Visual Studio Podrobnější údaje. S Visual Studio – podpora pro LSP je třetí možnost.
 
@@ -139,7 +139,7 @@ LSP neobsahuje specifikaci o tom, jak poskytnout zabarvení textu pro jazyky. Po
 
 4. Klikněte pravým tlačítkem na požadované soubory, vyberte **vlastnosti**. Změnit **sestavení** akce **obsahu** a změnit **zahrnout do VSIX** vlastnost **true**.
 
-Po dokončení předchozích kroků *gramatiky* přidat složku k instalaci balíčku adresář jako zdrojové úložiště s názvem 'MyLang' ("MyLang" je pouze název pro odstraňování mnohoznačnosti a může obsahovat libovolný jedinečný řetězec). Všechny gramatiku (*.tmlanguage* soubory) a soubory motivů (*.tmtheme* souborů) v tomto adresáři, vyberou se jako možnosti a mají přednost před integrované gramatik TextMate součástí. Pokud soubor gramatiky deklarované rozšíření odpovídají příponám souborů otevírané, TextMate přesune se krokování.
+Po dokončení předchozích kroků *gramatiky* přidat složku k instalaci balíčku adresář jako zdrojové úložiště s názvem 'MyLang' ("MyLang" je pouze název pro odstraňování mnohoznačnosti a může obsahovat libovolný jedinečný řetězec). Všechny gramatiku ( *.tmlanguage* soubory) a soubory motivů ( *.tmtheme* souborů) v tomto adresáři, vyberou se jako možnosti a mají přednost před integrované gramatik TextMate součástí. Pokud soubor gramatiky deklarované rozšíření odpovídají příponám souborů otevírané, TextMate přesune se krokování.
 
 ## <a name="create-a-simple-language-client"></a>Vytvořte Jednoduchý jazyk klienta
 

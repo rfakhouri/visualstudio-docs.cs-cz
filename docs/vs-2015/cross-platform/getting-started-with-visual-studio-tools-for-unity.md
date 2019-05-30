@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4532b7e566bbd315d9acbdef43198e0f91f5f195
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443045"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263556"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Začínáme s nástroji Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ V této části se dozvíte, jak nainstalovat Visual Studio Tools for Unity a na
   
  Jinak pokud začínáte Unity, začněte v malém se základním kurzem. Na stránce Unity další kurzy na ukázkové projekty, které můžete začít s a poznatků, na které můžete naučit ze sestavení vašich vlastních her pomocí Unity. Stránka Unity další má snadno následující kurzy pro několik různých hry.  
   
- [Kurzy – stránka Další Unity](http://unity3d.com/learn/tutorials/modules)  
+ [Kurzy – stránka Další Unity](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 – konfigurace Unity Editor používat Visual Studio Tools for Unity  
  Pokud chcete povolit projektu použít Visual Studio Tools for Unity, stačí nastavte Visual Studio jako editor externích skriptů. V Unity editoru v hlavní nabídce zvolte **Předvolby úprav**; potom v **Unity Předvolby** dialogovém okně zvolte **externích nástrojů**. Dále nastavte **externí Editor skriptů** vlastnost na verzi sady Visual Studio, kterou chcete použít (Visual Studio Tools for Unity musí být nainstalována tato verze sady Visual Studio) a ujistěte se, že **Editor připojení** je nastavena.  
@@ -77,7 +77,7 @@ V této části se dozvíte, jak nainstalovat Visual Studio Tools for Unity a na
   
  A konečně, ujistěte se, že nastavíte cíl sestavení prostřednictvím **nastavení sestavení** stránky a že **ladění skriptů** je povolená.  
   
- ![Konfigurace nastavení buildu Unity pro ladění. ](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![Konfigurace nastavení buildu Unity pro ladění. ] (../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
 #### <a name="3---launch-visual-studio-from-the-unity-editor"></a>3 – Spusťte sadu Visual Studio z Unity editoru  
  Od verze Unity 5.2 **Visual Studio Tools** nabídka rozšíření už nepotřebujete spusťte sadu Visual Studio nebo konfigurovat Visual Studio Tools for Unity. Místo toho jednou Visual Studio je nakonfigurovaný jako editor externích skriptů, prostě vybrat soubor skriptu z Unity editoru a váš kód se otevřou v sadě Visual Studio.  
@@ -90,23 +90,23 @@ V této části se dozvíte, jak nainstalovat Visual Studio Tools for Unity a na
   
  Jinak pokud začínáte Unity, začněte v malém se základním kurzem. Na stránce Unity další kurzy na ukázkové projekty, které můžete začít s a poznatků, na které můžete naučit ze sestavení vašich vlastních her pomocí Unity. Stránka Unity další má snadno následující kurzy pro několik různých hry.  
   
- [Kurzy – stránka Další Unity](http://unity3d.com/learn/tutorials/modules)  
+ [Kurzy – stránka Další Unity](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 – konfigurace Unity Editor používat Visual Studio Tools for Unity  
  Pokud začínáte z existujícího projektu Unity nebo nenaimportovali unitypackage nástroje sady Visual Studio při vytváření projektu, musíte importovat unitypackage nyní. V editoru Unity v hlavní nabídce zvolte **prostředky, importovat balíček, Visual Studio 2015 Tools** (zobrazí se možnost pro verzi sady Visual Studio, které jste si nainstalovali).  
   
- ![Importujte balíček VSTU ve vašem Unity projektu. ](../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
+ ![Importujte balíček VSTU ve vašem Unity projektu. ] (../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
   
  A konečně, ujistěte se, že nastavíte cíl sestavení prostřednictvím **nastavení sestavení** stránky a že **ladění skriptů** je povolená.  
   
- ![Konfigurace nastavení buildu Unity pro ladění. ](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![Konfigurace nastavení buildu Unity pro ladění. ] (../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
 #### <a name="3---launch-visual-studio-from-unity-editor"></a>3 – Spusťte sadu Visual Studio z Unity editoru  
  Posledním krokem je spuštění sady Visual Studio z Unity. To vytvoří řešení sady Visual Studio pro váš projekt a pak ho otevře v sadě Visual Studio.  
   
  V Unity editoru v hlavní nabídce zvolte **nástroje sady Visual Studio, otevřete v sadě Visual Studio**.  
   
- ![Otevřete svůj projekt unity v sadě Visual Studio. ](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
+ ![Otevřete svůj projekt unity v sadě Visual Studio. ] (../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   
 ## <a name="next-steps"></a>Další kroky  
  Informace o práci s a ladit svým projektem Unity v sadě Visual Studio najdete v tématu [pomocí Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  

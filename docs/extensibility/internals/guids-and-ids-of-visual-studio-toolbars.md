@@ -11,17 +11,17 @@ helpviewer_keywords:
 - tool window toolbar
 - guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a9dc406665dc754f0c57c401f672cd4799183ef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 62384942bb0577860161f8ae11d2eb6e787257bf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418458"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328888"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Identifikátory GUID a ID sady Visual Studio panelů nástrojů
 Toto téma uvádí hodnoty GUID a ID panelů nástrojů, které jsou součástí integrovaného vývojového prostředí (IDE) sady Visual Studio a skupin, které obsahují. Tyto hodnoty jsou definovány v *.vsct* soubory, které se instalují jako součást sady Visual Studio SDK. Další informace najdete v tématu [příkazy definované prostředím IDE, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -61,7 +61,7 @@ Toto téma uvádí hodnoty GUID a ID panelů nástrojů, které jsou součástí
 
 ### <a name="standard-toolbar-groups"></a>Skupiny na standardním panelu nástrojů
 
-|Název|ID|
+|Name|ID|
 |----------|--------|
 |Uložit a otevřít|IDG_VS_TOOLSB_SAVEOPEN|
 |Vyjmout/Kopírovat|IDG_VS_TOOLSB_CUTCOPY|
@@ -75,14 +75,14 @@ Toto téma uvádí hodnoty GUID a ID panelů nástrojů, které jsou součástí
 
 ### <a name="build-toolbar-groups"></a>Vytvořit skupiny pro panel nástrojů
 
-|Název|ID|
+|Name|ID|
 |----------|--------|
 |Panelu sestavení|IDG_VS_BUILDBAR|
 |Zrušit|IDG_VS_BUILD_CANCEL|
 
 ### <a name="text-editor-toolbar-groups"></a>Text editoru panelu nástrojů skupiny
 
-|Název|ID|
+|Name|ID|
 |----------|--------|
 |Dokončení|IDM_VS_TOOL_TEXTEDITOR|
 |Odsazení|IDG_VS_EDITTOOLBAR_INDENT|
@@ -91,7 +91,7 @@ Toto téma uvádí hodnoty GUID a ID panelů nástrojů, které jsou součástí
 
 ### <a name="debug-toolbar-groups"></a>Ladění nástrojů skupiny
 
-|Název|ID|
+|Name|ID|
 |----------|--------|
 |Spuštění|IDM_DEBUG_TOOLBAR|
 |Krokování|IDG_DEBUG_TOOLBAR_STEPPING|
@@ -100,7 +100,7 @@ Toto téma uvádí hodnoty GUID a ID panelů nástrojů, které jsou součástí
 
 ### <a name="debug-location-toolbar-groups"></a>Skupiny nástrojů umístění ladění
 
-|Název|ID|
+|Name|ID|
 |----------|--------|
 |Ladit umístění|IDG_DEBUG_CONTEXT_TOOLBAR|
 

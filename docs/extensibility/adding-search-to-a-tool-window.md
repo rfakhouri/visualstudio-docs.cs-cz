@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3c996b8b97217deb130d8e11a68b7efae01ee05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: e1d424b7af82a423b4d227b77cd77a63eba2559c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843758"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261305"
 ---
 # <a name="add-search-to-a-tool-window"></a>Přidání vyhledávání do panelu nástrojů
 Při vytváření nebo aktualizace panelu nástrojů v rozšíření, můžete přidat stejný integraci vyhledávacích funkcí, které se zobrazí jinde v sadě Visual Studio. Tato funkce zahrnuje následující funkce:
@@ -106,7 +106,7 @@ Podle tohoto postupu se dozvíte, jak provádět následující úlohy:
      V horní části okna nástroje, ovládací prvek vyhledávání se zobrazí s **hledání** mezí a s ikonou lupy zvětšení. Ale hledání ještě nefunguje vzhledem k tomu, že proces hledání ještě nebyla implementována.
 
 ## <a name="to-add-the-search-implementation"></a>Chcete-li přidat implementace hledání
- Když povolíte hledání na <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, jako v předchozím postupu, vytvoří panel nástrojů hledání hostitele. Tento hostitel nastavit a spravovat procesy, vyhledávání, které vždy odehrávat na vlákně na pozadí. Vzhledem k tomu, <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> třída spravuje vytváření hostitele vyhledávání a nastavení hledání, potřebujete jenom vytvoření vyhledávací úlohy a nabízejí způsob vyhledávání. Proces vyhledávání se provádí na vlákně na pozadí a volání do ovládacího prvku okno nástroje, ke kterým dochází na vlákně UI. Proto je nutné použít <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> metoda spravovat všechna volání, které provedete v práci s ovládacím prvkem.
+ Když povolíte hledání na <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, jako v předchozím postupu, vytvoří panel nástrojů hledání hostitele. Tento hostitel nastavit a spravovat procesy, vyhledávání, které vždy odehrávat na vlákně na pozadí. Vzhledem k tomu, <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> třída spravuje vytváření hostitele vyhledávání a nastavení hledání, potřebujete jenom vytvoření vyhledávací úlohy a nabízejí způsob vyhledávání. Proces vyhledávání se provádí na vlákně na pozadí a volání do ovládacího prvku okno nástroje, ke kterým dochází na vlákně UI. Proto je nutné použít [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) metoda spravovat všechna volání, které provedete v práci s ovládacím prvkem.
 
 1. V *TestSearch.cs* soubor, přidejte následující `using` příkazy:
 
@@ -127,7 +127,7 @@ Podle tohoto postupu se dozvíte, jak provádět následující úlohy:
 
     - Přepsání <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> metodu pro vytvoření vyhledávací úlohy.
 
-    - Přepsání <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> metodou pro obnovení stavu v textovém poli. Tato metoda je volána, když uživatel zruší úlohu vyhledávání a pokud uživatel nastaví nebo unsets možnosti nebo filtry. Obě <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> se nazývají na vlákně UI. Proto není nutné pro přístup k textovém poli prostřednictvím <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> metody.
+    - Přepsání <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> metodou pro obnovení stavu v textovém poli. Tato metoda je volána, když uživatel zruší úlohu vyhledávání a pokud uživatel nastaví nebo unsets možnosti nebo filtry. Obě <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> se nazývají na vlákně UI. Proto není nutné pro přístup k textovém poli prostřednictvím [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) metody.
 
     - Vytvoří třídu s názvem `TestSearchTask` , která dědí z <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, která poskytuje výchozí implementaci třídy <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.
 

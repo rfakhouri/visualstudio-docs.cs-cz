@@ -1,5 +1,5 @@
 ---
-title: Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku Profiler | Dokumentace Microsoftu
+title: 'Profiler příkazový řádek: Podrobnosti o dat časování pro samostatnou aplikaci'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bae9bbdff28312c36af91af57368d6b87028d44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13bc632d70b3d477b70f6e947e55d5c82c6ab064
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581337"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262891"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku profileru
 Tato část popisuje postupy a možnosti k shromažďování údajů o výkonu podrobné údaje pro klienta (samostatné) součásti pomocí metody instrumentace z příkazového řádku.

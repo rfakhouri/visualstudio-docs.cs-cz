@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce | Dokumentace Microsoftu'
+title: Stahování satelitních sestavení na vyžádání pomocí API nasazení ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34cde3a2444525e48455e445894fd5ab1c66fab8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405930"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262971"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Návod: Stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce
 Aplikace Windows Forms lze nastavit pro více jazykových verzí pomocí satelitních sestavení. A *satelitní sestavení* je sestavení obsahující prostředky aplikací pro jazykovou verzi, než je výchozí jazykovou verzi aplikace.
@@ -54,7 +54,7 @@ Aplikace Windows Forms lze nastavit pro více jazykových verzí pomocí satelit
 
 4. Klikněte na tlačítko **soubory** kartu.
 
-5. Klikněte na tlačítko **tlačítko se třemi tečkami** tlačítko (**...** ) a vyberte adresář obsahující sestavení vaší aplikace a soubory, včetně satelitní sestavení generována pomocí *Resgen.exe*. (Satelitní sestavení bude mít název ve tvaru  *\<isoCode > \ApplicationName.resources.dll*, kde \<isoCode > je identifikátor jazyka ve formátu RFC 1766.)
+5. Klikněte na tlačítko **tlačítko se třemi tečkami** tlačítko ( **...** ) a vyberte adresář obsahující sestavení vaší aplikace a soubory, včetně satelitní sestavení generována pomocí *Resgen.exe*. (Satelitní sestavení bude mít název ve tvaru  *\<isoCode > \ApplicationName.resources.dll*, kde \<isoCode > je identifikátor jazyka ve formátu RFC 1766.)
 
 6. Klikněte na tlačítko **naplnit** na přidání souborů do vašeho nasazení.
 

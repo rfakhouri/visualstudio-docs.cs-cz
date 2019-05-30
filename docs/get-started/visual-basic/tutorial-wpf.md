@@ -1,8 +1,8 @@
 ---
-title: 'Kurz: Aplikace Hello World pomocí Windows Presentation Foundation (WPF) v jazyce Visual Basic'
+title: Aplikace Hello World pomocí WPF v jazyce Visual Basic
 description: Vytvoření jednoduché aplikace Windows Desktop .NET v jazyce Visual Basic pomocí sady Visual Studio pomocí rozhraní Windows Presentation Foundation (WPF) uživatelského rozhraní.
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f56482dbbe76722e8b8d55fad01d283de2dc113e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965750"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263617"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Kurz: Vytvoření jednoduché aplikace pomocí jazyka Visual Basic
 
@@ -131,7 +131,7 @@ Okno aplikace by mělo vypadat jako na následujícím obrázku:
 Značka XAML by měl vypadat přibližně jako v následujícím příkladu:
 
 ```xaml
-<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+<TextBlock HorizontalAlignment="Left" Margin="381,100,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 ```
 
 ### <a name="customize-the-text-in-the-text-block"></a>Úprava textu v textovém bloku
@@ -298,9 +298,20 @@ Teď, když jste ověřili, že vše funguje, si můžete připravit sestavení 
 
 3. Sestavte řešení výběrem **sestavení** > **sestavit řešení**.
 
-Blahopřejeme k dokončení tohoto kurzu! Můžete najít *.exe* vytvořeným v adresáři řešení a projektu (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Blahopřejeme k dokončení tohoto kurzu! Můžete najít *.exe* vytvořeným v adresáři řešení a projektu ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Viz také:
 
-- [Co je nového v sadě Visual Studio 2017](../../ide/whats-new-visual-studio.md)
+::: moniker range="vs-2017"
+
+- [Co je nového v sadě Visual Studio 2017](../../ide/whats-new-visual-studio-2017.md)
 - [Tipy pro vyšší produktivitu](../../ide/productivity-tips-for-visual-studio.md)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Co je nového ve Visual Studio 2019](../../ide/whats-new-visual-studio-2019.md)
+- [Tipy pro vyšší produktivitu](../../ide/productivity-tips-for-visual-studio.md)
+
+::: moniker-end

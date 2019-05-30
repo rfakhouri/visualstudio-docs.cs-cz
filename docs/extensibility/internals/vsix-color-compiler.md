@@ -3,17 +3,17 @@ title: Kompilátor barev VSIX | Dokumentace Microsoftu
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f706cc0c84f4329e0e4e8ad9545a31d8f3c31ed4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908016"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332800"
 ---
 # <a name="vsix-color-compiler"></a>Kompilátor barev VSIX
 Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, která přebírá soubor XML představující barvy pro existující motivů aplikace Visual Studio a převede jej .pkgdef souboru tak, aby tyto barvy, je možné v sadě Visual Studio. Protože jde snadno porovnat rozdíly mezi soubory .xml, tento nástroj je užitečný pro správu vlastních barev ve správě zdrojového kódu. Je také může využívat do prostředí sestavení tak, aby výstupy sestavení soubor .pkgdef platný.
@@ -53,7 +53,7 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
 |||
 |-|-|
 |**Atribut**|**Definice**|
-|Název|[Povinné] Název motivu|
+|Name|[Povinné] Název motivu|
 |GUID|[Povinné] Identifikátor GUID motivu (musí odpovídat identifikátoru GUID formátování)|
 
  Při vytváření vlastní barvy pro sadu Visual Studio, musíte je definovat následující motivy tyto barvy. Pokud neexistují žádné barvy pro konkrétní motivu, Visual Studio se pokusí načíst chybějící barvy z světlý motiv.
@@ -79,7 +79,7 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
 |||
 |-|-|
 |**Atribut**|**Definice**|
-|Název|[Povinné] Název kategorie|
+|Name|[Povinné] Název kategorie|
 |GUID|[Povinné] Identifikátor GUID kategorie (musí odpovídat identifikátoru GUID formátování)|
 
  **Barva**
@@ -96,7 +96,7 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
 |||
 |-|-|
 |**Atribut**|**Definice**|
-|Název|[Povinné] Název barvy|
+|Name|[Povinné] Název barvy|
 
  **Na pozadí a/nebo popředí**
 

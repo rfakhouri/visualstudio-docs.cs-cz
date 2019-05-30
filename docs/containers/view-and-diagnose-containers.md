@@ -1,5 +1,5 @@
 ---
-title: Zobrazit protokoly kontejneru a proměnných prostředí a přístup k systému souborů.
+title: Protokoly kontejneru, proměnné prostředí a přístup k systému souborů
 description: Popisuje, jak Zlepšete svou schopnost ladění a Diagnostika aplikací založených na kontejnerech v sadě Visual Studio pomocí panelu nástrojů Pokud chcete zobrazit, co se děje uvnitř kontejnerů, které hostují vaši aplikaci.
 author: ghogen
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 05/06/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: a686d2e361f40ad4040ad112845e99ab844a3c15
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: b8e8e2db3f8f6e5aa60f3fa593caf017c349dca8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135605"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261197"
 ---
 # <a name="how-to-view-and-diagnose-containers-in-visual-studio"></a>Postup zobrazení a Diagnostika kontejnerů v sadě Visual Studio
 

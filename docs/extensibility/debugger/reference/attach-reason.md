@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11fba0944ca1b23c22caae6f0d6a4d9455099946
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c132b507d679fd6cec5ce7fff04362159cbc848
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889082"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351851"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 Určuje důvod ladicího stroje (DE) k připojení k uzlu programu.
@@ -41,12 +44,15 @@ public enum enum_ATTACH_REASON {
 };
 ```
 
-## <a name="members"></a>Členové
-ATTACH_REASON_AUTO připojit, protože proces je aktuálně v režimu ladění.
+## <a name="fields"></a>Pole
+`ATTACH_REASON_AUTO`\
+Připojte, protože proces je aktuálně v režimu ladění.
 
-ATTACH_REASON_LAUNCH připojit, protože proces byl spuštěn.
+`ATTACH_REASON_LAUNCH`\
+Připojte, protože proces byl spuštěn.
 
-ATTACH_REASON_USER připojit z důvodu požadavku uživatele.
+`ATTACH_REASON_USER`\
+Připojení z důvodu požadavku uživatele.
 
 ## <a name="remarks"></a>Poznámky
 Tyto hodnoty jsou použity jako parametr [připojit](../../../extensibility/debugger/reference/idebugengine2-attach.md) a [připojit](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) metody.
@@ -58,7 +64,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 - [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

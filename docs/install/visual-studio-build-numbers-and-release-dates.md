@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/22/2019
+ms.date: 05/24/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f6a3af52204bb75153e1b39eabcf78b1c0ca0688
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 5ebed44125ff1de0185b408298008dd2c048f580
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976191"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350688"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Čísla sestavení a data vydání sady Visual Studio
 
@@ -31,6 +31,7 @@ Následující tabulka obsahuje kalendářní data pro čísla a uvolnění sest
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.1 | Vydaná verze | 24. května 2019 | 16.1.28922.388 |
 | 16.1.0 | Vydaná verze | 21. května 2019 | 16.1.28917.181 |
 | 16.2.0 | Ve verzi Preview 1 | 21. května 2019 | 16.2.28917.182 |
 | 16.0.4 | Vydaná verze | 14. května 2019 | 16.0.28803.452 |

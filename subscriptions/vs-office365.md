@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech služeb Office 365 součástí některá předplatná sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 0beffc3409a562382b2a97981254dca887ec6ac9
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177575"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263129"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus v předplatných sady Visual Studio
 
@@ -26,7 +26,7 @@ Postupujte podle těchto kroků ke stažení a aktivace Office 365 ProPlus:
 3. Zobrazí se vám seznam vybrané soubory ke stažení. V seznamu Office zvolte **Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Stažení sady Office 365](_img/vs-office365/vs-office365-downloads.png)
-0. Instalace Office 365, budete potřebovat kód product key.  Klikněte na **Get klíč** odkaz v seznamu služeb Office 365.
+0. Instalace Office 365 ProPlus, budete potřebovat kód product key.  Klikněte na **Get klíč** odkaz v seznamu služeb Office 365.
    > [!div class="mx-imgBorder"]
    > ![Kód Product Key získat Office 365](_img/vs-office365/vs-office365-get-key.png)
 0. Nabídka okna se zobrazí všechny klíče, které jste již deklarována stejně jako ty, které jsou k dispozici.  Chcete-li získat nový klíč, klikněte na tlačítko **uplatnit kód** pod **Office Professional Plus 2019** výpis.

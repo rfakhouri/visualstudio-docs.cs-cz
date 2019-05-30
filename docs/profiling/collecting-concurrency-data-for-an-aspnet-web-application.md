@@ -1,5 +1,5 @@
 ---
-title: Shromažďování dat souběžnosti pro webové aplikace ASP.NET pomocí příkazového řádku Profiler | Dokumentace Microsoftu
+title: Profiler příkazový řádek pro získání dat souběžnosti webové aplikace ASP.NET
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7b1a99f3007a87738f55d0b13fa8943ded925266
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7ff0ff01e7f99592e33035c7d9502d3b83fc859
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960358"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263764"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Shromažďování dat souběžnosti pro webovou aplikaci ASP.NET pomocí příkazového řádku profileru
 Za použití metody souběžnosti z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady umožňuje shromažďovat data kolize prostředků.
