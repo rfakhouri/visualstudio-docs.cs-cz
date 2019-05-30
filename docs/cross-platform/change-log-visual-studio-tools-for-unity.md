@@ -1,7 +1,7 @@
 ---
 title: Protokol změn (Visual Studio Tools for Unity, Windows) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 05/28/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,75 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f6523f958d334108eb6a3fbe9e5c44e416ff8df7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: acf80d1c700c0ac6c889ecd786a53cccda8604f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403209"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327359"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Protokol změn (Visual Studio Tools for Unity, Windows)
 Protokol změn Visual Studio Tools for Unity.
+
+## <a name="4110"></a>4.1.1.0
+ vydáno 24. května 2019
+
+### <a name="new-features"></a>Nové funkce
+
+- **Integrace:**
+
+    - Aktualizace třídy MonoBehaviour. rozhraní API pro 2019.1.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+- **Integrace:**
+
+    - Opravili jsme generování sestav, upozornění a chyby výstupu, pokud je povolená zjednodušené sestavení.
+    
+    - Oprava lightweight výkon sestavení.
+
+## <a name="4100"></a>4.1.0.0
+ vydáno 21. května 2019
+
+### <a name="new-features"></a>Nové funkce
+
+- **Integrace:**
+
+    - Přidání podpory pro rozhraní API znovu načte projekty rychleji nové dávky.
+    
+    - Zakázat úplné sestavení pro projekty Unity, používat technologii IntelliSense chyby a upozornění. Ve skutečnosti Unity vytvoří řešení sady Visual Studio s projekty knihovny tříd, které představují Unity je činnosti interně. Který říká, výsledek sestavení v sadě Visual Studio je nikdy použít nebo vybere Unity jako jejich kompilace kanál je uzavřen. Vytváření v sadě Visual Studio právě spotřebovává prostředky pro žádnou akci. Pokud potřebujete úplného buildu, protože máte nástroje nebo instalační program, který na něm závisí, můžete zakázat tyto optimalizace (Nástroje/možnosti/Tools for Unity nebo zakázat úplné sestavení projektů). 
+
+    - Automaticky zobrazit Průzkumníka projektů Unity (UPE) při načtení projektu Unity. UPE bude ukotven vedle Průzkumníka řešení.
+    
+    - Aktualizovat mechanismus extrakce názvem projektu s Unity 2019.x.
+
+    - Přidání podpory pro balíčky UPE Unity. Pouze pro odkazované balíčky (pomocí manifest.json v ```Packages``` složku) a místní balíčky (vložené v ```Packages``` složky) jsou viditelné.
+    
+- **Generování projektu:**
+
+    - Zachovat vlastnosti externích při zpracování souboru řešení.
+
+- **Vyhodnocení:**
+
+    - Přidání podpory pro alias kvalifikované názvy (pouze globální obor názvů pro nyní). Chyba při vyhodnocování výrazu tedy nyní přijímá typů pomocí global::namespace.type formuláře.
+    
+    - Přidání podpory pro ```pointer[index]``` formulář, který je sémanticky stejný jako ukazatel přistoupit přes ukazatel ```*(pointer+index)``` formuláře.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+- **Integrace:**
+
+    - Oprava potíží závislostí s Microsoft.VisualStudio.MPF.
+    
+    - Oprava player UPW připojit bez žádného projektu načteného.
+    
+    - Obnovení databáze DM automatické, pokud dosud nebyl připojen sady Visual Studio.
+    
+    - Oprava potíží motiv s popisky a zaškrtávací políčka.
+    
+- **Ladicí program:**
+
+    - Opravili jsme krokování s statické konstruktory.
 
 ## <a name="4005"></a>4.0.0.5
  vydáno 27. února 2019

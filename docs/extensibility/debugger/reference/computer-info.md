@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - COMPUTER_INFO structure
 ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 980527de1681d773edcf1586f209ed25e2699502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55d3eb6c321875b479d8df597b963fc3ac30db12
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62878301"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346574"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
 Popisuje počítače, na kterém je spuštěný ladicí program.
@@ -40,12 +43,15 @@ public struct COMPUTER_INFO
 }
 ```
 
-## <a name="terms"></a>Podmínky
-wProcessorArchitecture identifikuje architektura mikroprocesoru.
+## <a name="members"></a>Členové
+`wProcessorArchitecture`\
+Architektura mikroprocesoru identifikuje.
 
-wSuiteMask identifikuje sadu masky.
+`wSuiteMask`\
+Identifikuje sadu masky.
 
-dwOperatingSystemVersion čísla verze operačního systému.
+`dwOperatingSystemVersion`\
+Číslo verze operačního systému.
 
 ## <a name="remarks"></a>Poznámky
 Tato struktura je vrácený [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) metody.
@@ -57,6 +63,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

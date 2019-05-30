@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO structure
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e7329acb3cdbff5c2f84fbd035867791012b2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1209036bced88cffb3681be0ceedd28942714419
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877749"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344466"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Popisuje rámec zásobníku.
@@ -61,31 +64,44 @@ public struct FRAMEINFO {
 ```
 
 ## <a name="members"></a>Členové
-m_dwValidFields A kombinace příznaků z [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) výčet, který určuje, která pole jsou vyplněna.
+`m_dwValidFields`\
+Kombinace příznaků z [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) výčet, který určuje, která pole jsou vyplněna.
 
-m_bstrFuncName název funkce přidružené rámce zásobníku.
+`m_bstrFuncName`\
+Název funkce související s rámce zásobníku.
 
-m_bstrReturnType návratový typ přidružený k rámce zásobníku.
+`m_bstrReturnType`\
+Návratový typ přidružený k rámce zásobníku.
 
-m_bstrArgs argumenty funkce související s rámce zásobníku.
+`m_bstrArgs`\
+Argumenty funkce související s rámce zásobníku.
 
-m_bstrLanguage jazyka ve kterém se funkce implementuje.
+`m_bstrLanguage`\
+Jazyk, ve kterém se funkce implementuje.
 
-m_bstrModule název modulu přidružené rámce zásobníku.
+`m_bstrModule`\
+Název modulu, který je přidružený k rámce zásobníku.
 
-m_addrMin adresy minimální fyzického zásobníku.
+`m_addrMin`\
+Adresy minimální fyzického zásobníku.
 
-m_addrMAX adresy maximální fyzického zásobníku.
+`m_addrMAX`\
+Adresy maximální fyzického zásobníku.
 
-m_pFrame [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objekt, který představuje tento rámec zásobníku.
+`m_pFrame`\
+[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objekt, který představuje tento rámec zásobníku.
 
-m_pFrame [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objekt, který představuje modul, který obsahuje tento rámec zásobníku.
+`m_pFrame`\
+[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objekt, který představuje modul, který obsahuje tento rámec zásobníku.
 
-m_fHasDebugInfo nenulová (`TRUE`) Pokud v daném rámci existuje ladicí informace.
+`m_fHasDebugInfo`\
+Nenulová (`TRUE`) Pokud v daném rámci existuje ladicí informace.
 
-m_fHasDebugInfo nenulová (`TRUE`) Pokud je spojen s kódem, který již není platný rámec zásobníku.
+`m_fHasDebugInfo`\
+Nenulová (`TRUE`) Pokud je spojen s kódem, který již není platný rámec zásobníku.
 
-m_fHasDebugInfo nenulová (`TRUE`) Pokud rámec zásobníku je označena pomocí Správce ladění relace (SDM).
+`m_fHasDebugInfo`\
+Nenulová (`TRUE`) Pokud rámec zásobníku je označena pomocí Správce ladění relace (SDM).
 
 ## <a name="remarks"></a>Poznámky
 Tato struktura je předán [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) metoda být vyplněna. Tato struktura je také obsažen v seznamu, který je součástí [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) rozhraní, které je pak vrácen z volání [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) metody.
@@ -97,7 +113,7 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

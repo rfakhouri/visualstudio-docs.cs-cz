@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28e81e8247e0ab7a7b2e972209805c8bcff053a7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62878314"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346403"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 Určuje kritéria pro porovnání dvou kontextů paměti.
@@ -53,24 +56,33 @@ public enum enum_CONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>Členové
-CONTEXT_EQUAL vyhledá první kontext paměti v seznamu, který je roven cílový kontext paměti.
+## <a name="fields"></a>Pole
+`CONTEXT_EQUAL`\
+Vyhledá první kontext paměti v seznamu, který je roven cílový kontext paměti.
 
-CONTEXT_LESS_THAN vyhledá první kontext paměti v seznamu, která je menší než cílový kontext paměti.
+`CONTEXT_LESS_THAN`\
+Vyhledá první kontext paměti v seznamu, která je menší než cílový kontext paměti.
 
-CONTEXT_GREATER_THAN vyhledá první kontext paměti v seznamu, která je větší než cílový kontext paměti.
+`CONTEXT_GREATER_THAN`\
+Vyhledá první kontext paměti v seznamu, která je větší než cílový kontext paměti.
 
-CONTEXT_LESS_THAN_OR_EQUAL vyhledá první kontext paměti v seznamu, která je menší než nebo rovna cílový kontext paměti.
+`CONTEXT_LESS_THAN_OR_EQUAL`\
+Vyhledá první kontext paměti v seznamu, která je menší než nebo rovna hodnotě cílový kontext paměti.
 
-CONTEXT_GREATER_THAN_OR_EQUAL vyhledá první kontext paměti v seznamu, který je větší než nebo rovna hodnotě cílový kontext paměti.
+`CONTEXT_GREATER_THAN_OR_EQUAL`\
+Najdete první paměťové oblasti v seznamu, který je větší než nebo rovna hodnotě cílový kontext paměti.
 
-CONTEXT_SAME_SCOPE vyhledá první kontext paměti v seznamu, který je ve stejném oboru jako cílový kontext paměti.
+`CONTEXT_SAME_SCOPE`\
+Vyhledá první kontext paměti v seznamu, který je ve stejném oboru jako cílový kontext paměti.
 
-CONTEXT_SAME_FUNCTION vyhledá první kontext paměti v seznamu, který je ve stejné funkci jako cílový obor paměti.
+`CONTEXT_SAME_FUNCTION`\
+Najdete první paměťové oblasti v seznamu, který je ve stejné funkci jako cílový obor paměti.
 
-CONTEXT_SAME_MODULE vyhledá první kontext paměti v seznamu, který je ve stejném modulu jako cílový kontext paměti.
+`CONTEXT_SAME_MODULE`\
+Vyhledá první kontext paměti v seznamu, který je ve stejném modulu jako cílový kontext paměti.
 
-CONTEXT_SAME_PROCESS vyhledá první kontext paměti v seznamu, který je ve stejném procesu jako cílový kontext paměti.
+`CONTEXT_SAME_PROCESS`\
+Vyhledá první kontext paměti v seznamu, který je ve stejném procesu jako cílový kontext paměti.
 
 ## <a name="remarks"></a>Poznámky
 Předán jako argument [porovnání](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) metody.
@@ -84,6 +96,6 @@ Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 
 Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 - [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

@@ -3,17 +3,17 @@ title: Vytváření rozšíření pomocí VSPackage | Dokumentace Microsoftu
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d76e0055c4bae6df270a304364c80cd945f4a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b66aef72d9af1ef40a061d1a82d18161a416586
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891029"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345362"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Vytvoření rozšíření pomocí VSPackage
 
@@ -27,7 +27,7 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
 
 1. Vytvořte projekt VSIX s názvem **FirstPackage**. Šablona projektu VSIX v můžete najít **nový projekt** dialogové okno tak, že "vsix".
 
-2. Po otevření projektu přidat šablonu položky balíčku sady Visual Studio s názvem **FirstPackage**. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C#** > **rozšiřitelnost** a vyberte **balíček Visual Studio**. V **název** pole v dolní části okna, změňte název souboru příkazu *FirstPackage.cs*.
+2. Po otevření projektu přidat šablonu položky balíčku sady Visual Studio s názvem **FirstPackage**. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C#**  > **rozšiřitelnost** a vyberte **balíček Visual Studio**. V **název** pole v dolní části okna, změňte název souboru příkazu *FirstPackage.cs*.
 
 3. Sestavte projekt a spusťte ladění.
 
@@ -76,4 +76,4 @@ V tomto okamžiku rozšíření nenačte, protože není nic, která způsobí, 
 
 3. Sestavte projekt a spusťte ladění. Zobrazí se experimentální instance.
 
-4. Otevřete řešení v experimentální instanci aplikace. Měli byste vidět okno se zprávou, že **první balíček uvnitř Initialize()**.
+4. Otevřete řešení v experimentální instanci aplikace. Měli byste vidět okno se zprávou, že **první balíček uvnitř Initialize()** .

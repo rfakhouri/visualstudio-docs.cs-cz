@@ -8,20 +8,20 @@ helpviewer_keywords:
 - VSCT XML schema elements, Extern
 - Extern element (VSCT XML schema)
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d62d52d490994889f7e9186fb74ea148cb52a06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34e38618a153aa74bdc2449895272fc9e399c82d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911892"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342803"
 ---
 # <a name="extern-element"></a>Extern – element
-Extern element odkazuje libovolné externích záhlaví (*.h*) soubory sloučit s *.vsct* soubor v době kompilace. Soubory, které chcete sloučit, musí být na cesty zahrnutí zadaný pro kompilátor VSCT nebo odkazuje [zahrnutý element](../extensibility/include-element.md). Soubory mohou být buď *.vsct* soubory nebo soubory hlaviček jazyka C++.
+Extern element odkazuje libovolné externích záhlaví ( *.h*) soubory sloučit s *.vsct* soubor v době kompilace. Soubory, které chcete sloučit, musí být na cesty zahrnutí zadaný pro kompilátor VSCT nebo odkazuje [zahrnutý element](../extensibility/include-element.md). Soubory mohou být buď *.vsct* soubory nebo soubory hlaviček jazyka C++.
 
  Definice v souborech hlaviček musí být ve formátu "#define [Symbol] [hodnota]" hodnota může být další symbol, pokud je již definován. Podmíněné příkazy příkaz položek lze definice. Jakýkoli symbol doopravdy nepoužije se zahodí.
 
