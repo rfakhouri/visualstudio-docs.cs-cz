@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045652"
@@ -97,7 +97,7 @@ V [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](..
   
 - Sbalit pravidla ve všech skupinách, klikněte na tlačítko **Sbalit vše**.  
   
-- Chcete-li změnit pole, pravidla se seskupují podle, vyberte pole ze seznamu **Group** seznamu. Pokud chcete zobrazit pravidla neseskupené, vyberte  **\<žádný >**.  
+- Chcete-li změnit pole, pravidla se seskupují podle, vyberte pole ze seznamu **Group** seznamu. Pokud chcete zobrazit pravidla neseskupené, vyberte  **\<žádný >** .  
   
 - Chcete-li přidat nebo odebrat pole ve sloupcích pravidlo, klikněte na tlačítko **možnosti sloupce**.  
   

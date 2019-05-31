@@ -139,7 +139,7 @@ Souboru databáze (PDB) program, nazývaný také soubor symbolů, mapuje identi
 
 - Chcete-li změnit cesty hledání, zvolte nevybranou cestu nebo vyberte **nový** a zadejte novou cestu. Zvolte **načíst** hledání cest a načtení souboru symbolů, pokud je nalezen.
 
-- Zvolte **Procházet a vyhledat**_název spustitelného souboru_**...**  pro přepsání jakékoli volby symbolu a opakujte hledání cesty. Pokud je nalezen soubor symbolů, bude načten, nebo se zobrazí Průzkumník souborů, kde můžete soubor symbolu vybrat ručně.
+- Zvolte **Procházet a vyhledat**_název spustitelného souboru_ **...**  pro přepsání jakékoli volby symbolu a opakujte hledání cesty. Pokud je nalezen soubor symbolů, bude načten, nebo se zobrazí Průzkumník souborů, kde můžete soubor symbolu vybrat ručně.
 
 - Zvolte **změnit nastavení symbolů...**  zobrazíte **ladění** / **symboly** stránky v dialogovém okně Možnosti VS.
 

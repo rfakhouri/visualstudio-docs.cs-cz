@@ -48,7 +48,7 @@ Aplikace modelu Windows Form jsou jedny nejběžnějších spravovaných aplikac
 
      **Nový projekt** zobrazí se dialogové okno.
 
-2. V podokně typy projektů, otevřete **jazyka Visual Basic**, **Visual C#**, nebo **Visual C++** uzlu, pak
+2. V podokně typy projektů, otevřete **jazyka Visual Basic**, **Visual C#** , nebo **Visual C++** uzlu, pak
 
     1. Pro Visual Basic nebo Visual C# vyberte **Windows Desktop** > **aplikaci pro formulář Windows**.
 

@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60064217"
@@ -55,7 +55,7 @@ V šesté části tohoto kurzu kurzu přidáte úlohu odčítání a zjistěte, 
      ![Okno popisu tlačítka technologie IntelliSense](../ide/media/express-overloads.png "Express_Overloads")  
 Okno popisu tlačítka technologie IntelliSense  
   
-     Zobrazí se popis **(+ 2 overload(s))**, což znamená, že můžete volat `Next()` metoda dvěma dalšími způsoby. Přetížení obsahují různá čísla nebo typy argumentů, tak, aby fungovaly mírně odlišně od sebe. Například metoda může převzít jediný celočíselný argument, zatímco jedno z jejich přetížení může trvat celé číslo a řetězec. Zvolíte správné přetížení na základě na co chcete udělat. Když přidáte kód, který `StartTheQuiz()` metoda, další informace se zobrazí v okně technologie Intellisense ihned poté, co zadáte `randomizer.Next(`. Stiskněte klávesy šipka nahoru a Šipka dolů k cyklování skrze přetížení, jako je vidět na následujícím obrázku.  
+     Zobrazí se popis **(+ 2 overload(s))** , což znamená, že můžete volat `Next()` metoda dvěma dalšími způsoby. Přetížení obsahují různá čísla nebo typy argumentů, tak, aby fungovaly mírně odlišně od sebe. Například metoda může převzít jediný celočíselný argument, zatímco jedno z jejich přetížení může trvat celé číslo a řetězec. Zvolíte správné přetížení na základě na co chcete udělat. Když přidáte kód, který `StartTheQuiz()` metoda, další informace se zobrazí v okně technologie Intellisense ihned poté, co zadáte `randomizer.Next(`. Stiskněte klávesy šipka nahoru a Šipka dolů k cyklování skrze přetížení, jako je vidět na následujícím obrázku.  
   
      ![Přetížení pro další&#40; &#41; metoda v technologii IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload")  
 Přetížení pro metodu Next() v IntelliSense  

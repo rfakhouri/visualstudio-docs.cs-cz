@@ -102,7 +102,7 @@ Akce, které byste měli provést, když se zobrazí sadě Visual Studio Just-in
 
      K povolení Just-In-Time ladění aplikace modelu Windows Forms, je třeba provést následující kroky:
 
-2. Nastavte `jitDebugging` hodnota, která se `true` v `system.windows.form` část souboru machine.config nebo  *\<název_aplikace >*. exe.config souboru:
+2. Nastavte `jitDebugging` hodnota, která se `true` v `system.windows.form` část souboru machine.config nebo  *\<název_aplikace >* . exe.config souboru:
 
     ```
     <configuration>
@@ -165,7 +165,7 @@ static void Main(string[] args)
 
  V části **možné ladící programy**, měli byste vidět, který **novou instanci sady Microsoft Visual Studio 2015** vybraný řádek. Pokud již není vybraná, vyberte ji.
 
- V dolní části okna v části **chcete ladit pomocí vybraný ladicí program?**, klikněte na tlačítko **Ano**.
+ V dolní části okna v části **chcete ladit pomocí vybraný ladicí program?** , klikněte na tlačítko **Ano**.
 
  ThrowsNullException projekt otevře v nové instanci sady Visual Studio, s provádění zastaveno na řádku, která vyvolala výjimku:
 

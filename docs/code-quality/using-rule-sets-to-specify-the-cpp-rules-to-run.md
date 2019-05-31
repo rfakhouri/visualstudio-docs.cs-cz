@@ -62,7 +62,7 @@ Chcete-li vytvořit nové vlastní pravidlo nastavte, uložte ho pomocí nového
 
 - Chcete-li sbalit pravidla ve všech skupinách, zvolte **Sbalit vše**.
 
-- Chcete-li změnit pole, pravidla se seskupují podle, zvolte na pole **Group** seznamu. Chcete-li zobrazit pravidla neseskupené, zvolte  **\<žádný >**.
+- Chcete-li změnit pole, pravidla se seskupují podle, zvolte na pole **Group** seznamu. Chcete-li zobrazit pravidla neseskupené, zvolte  **\<žádný >** .
 
 - Chcete-li přidat nebo odebrat pole ve sloupcích pravidlo, zvolte **možnosti sloupce**.
 

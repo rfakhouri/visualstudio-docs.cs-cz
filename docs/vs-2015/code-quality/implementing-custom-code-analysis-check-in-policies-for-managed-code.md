@@ -82,7 +82,7 @@ Určuje sadu pravidel, které členy týmového projektu musí běžet na zdrojo
   
 3. V **zásad vrácení se změnami** seznamu, klikněte dvakrát na **analýzy kódu**a ujistěte se, že **vynutit analýzu kódu pro spravovaný kód** je zaškrtnuto políčko.  
   
-4. V **spustit tuto sadu pravidel** klikněte na možnost  **\<vybrat sadu pravidel ze správy zdrojových kódů >**.  
+4. V **spustit tuto sadu pravidel** klikněte na možnost  **\<vybrat sadu pravidel ze správy zdrojových kódů >** .  
   
 5. Zadejte cestu souboru sady pravidel zásad vrácení se změnami do správy verzí.  
   
@@ -116,6 +116,6 @@ Určuje sadu pravidel, které členy týmového projektu musí běžet na zdrojo
   
 6. Chcete-li ignorovat kód v součásti od jiných společností, vyberte **potlačit Výsledky generovaného kódu** zaškrtávací políčko.  
   
-7. V **spustit tuto sadu pravidel** klikněte na možnost  **\<Procházet... >**.  
+7. V **spustit tuto sadu pravidel** klikněte na možnost  **\<Procházet... >** .  
   
 8. Zadejte místní verzi souboru sady pravidel zásad vrácení se změnami.
