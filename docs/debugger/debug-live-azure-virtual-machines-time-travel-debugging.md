@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53dce8b6b468dd5754b5708afccdcbe6cb908d1d
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854140"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432213"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Záznam a přehrávání živých aplikací technologie ASP.NET na Azure virtual machines pomocí ladicího programu snímků
 
@@ -44,7 +44,7 @@ V tomto kurzu se naučíte:
 * Ladění v době trvání cesty je k dispozici pro následující virtuální počítač Azure web apps:
   * Aplikace technologie ASP.NET (AMD64) v rozhraní .NET Framework 4.8 systému nebo novějším.
 
-## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Otevřete svůj projekt a spusťte ladicí program snímků s povoleným laděním doba trvání cesty
+## <a name="start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Spuštění ladicího programu snímků s povoleným laděním doba trvání cesty
 
 1. Otevřete projekt, pro které chcete shromažďovat čas cestovní záznam.
 

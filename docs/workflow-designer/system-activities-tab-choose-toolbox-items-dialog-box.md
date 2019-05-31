@@ -1,5 +1,5 @@
 ---
-title: Návrhář postupu provádění – karta System.Activities, zvolit položky panelu nástrojů – dialogové okno
+title: 'Návrhář pracovního postupu: System.Activities, zvolit položky panelu nástrojů'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b871f14f5f37afc80bb12139799405a669a3f1f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e057a0ff61bd095dd011c85970fd23ab1da75838
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434056"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432057"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Karta System.Activities, dialogové okno Zvolit položky panelu nástrojů
 
@@ -37,7 +37,7 @@ Tato karta **zvolit položky nástrojů** dialogové okno zobrazí seznam aktivi
 
  Sloupce v tomto dialogovém obsahují následující informace:
 
- Název
+ Name
 
  Obsahuje seznam aktivit pracovního postupu, které jsou aktuálně registrované na místním počítači.
 

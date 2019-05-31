@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822718"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432305"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analýza kódované UI testy pomocí programového protokolů testu uživatelského rozhraní
 
@@ -24,23 +24,23 @@ Programového uživatelského rozhraní testu protokoly filtr a záznam, který 
 
 V závislosti na scénáři použijte jednu z následujících metod k povolení protokolu:
 
-- Cílit na rozhraní .NET Framework verze 4 bez *App.config* soubor v projektu testu:
+- Pokud není žádný *App.config* soubor v projektu testu:
 
-   1. Otevřít *QTAgent32_40.exe.config* souboru. Ve výchozím nastavení je tento soubor umístěn ve *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Určení, které *QTAgent\*.exe* proces se spustí při spuštění vašeho testu. Můžete provést například jde Přehrát **podrobnosti** karty ve Windows **Správce úloh**.
+   
+   2. Otevřete odpovídající *.config* soubor *% ProgramFiles (x86) %\Microsoft Visual Studio\\\<verze >\\\<edition > \Common7\IDE* složky. Například pokud proces, který spouští je *QTAgent_40.exe*, otevřete *QTAgent_40.exe.config*.
 
-   2. Upravte hodnotu EqtTraceLevel na požadovanou úroveň protokolu.
+   2. Změnit hodnotu **EqtTraceLevel** na úroveň protokolu, který chcete.
+   
+      ```xml
+      <!-- You must use integral values for "value".
+           Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
+      <add name="EqtTraceLevel" value="4" />
+      ```
 
    3. Uložte soubor.
 
-- Cílit na rozhraní .NET Framework verze 4.5 bez *App.config* soubor v projektu testu:
-
-   1. Otevřít *QTAgent32.exe.config* souboru. Ve výchozím nastavení je tento soubor umístěn ve *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
-
-   2. Upravte hodnotu EqtTraceLevel na požadovanou úroveň protokolu.
-
-   3. Uložte soubor.
-
-- *App.config* soubor je k dispozici v projektu testu:
+- Pokud dojde *App.config* soubor v projektu testu:
 
     - Otevřít *App.config* souboru v projektu a přidejte následující kód v uzlu Konfigurace:
 
@@ -54,11 +54,13 @@ V závislosti na scénáři použijte jednu z následujících metod k povolení
 
 - Povolení protokolování z samotný kód testu:
 
-   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
+   ```csharp
+   Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
+   ```
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2: Spustit programový test uživatelského rozhraní a zobrazit protokol
 
-Při spuštění programového testu uživatelského rozhraní pomocí změny *QTAgent32.exe.config* soubor na místě, zobrazí se výstup na odkaz v **Průzkumníka testů** výsledky. Soubory protokolů jsou vytvářeny, ne jenom v případě, že se test nezdaří, ale také u úspěšných testů, pokud je úroveň trasování nastavena na "podrobné."
+Při spuštění programového testu uživatelského rozhraní pomocí změny *QTAgent\*. exe.config* soubor na místě, zobrazí se výstup na odkaz v **Průzkumníka testů** výsledky. Soubory protokolů jsou vytvářeny, nikoli pouze v případě test nepodaří ale také u úspěšných testů při úroveň trasování je nastavena na **podrobné**.
 
 1. Na **testovací** nabídce zvolte **Windows** a pak vyberte **Průzkumník testů**.
 

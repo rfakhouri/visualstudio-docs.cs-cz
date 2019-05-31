@@ -126,8 +126,8 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Feedback Client
                   href: install/workload-component-id-vs-feedback-client.md
-                - name: Změny v datové části balíčku
-                  href: install/changed-payloads.md
+            - name: Změny v datové části balíčku
+              href: install/changed-payloads.md
             - name: Čísla sestavení a data vydání sady Visual Studio
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Použití sady Visual Studio z virtuálního počítače Azure

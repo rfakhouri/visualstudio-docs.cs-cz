@@ -1,5 +1,5 @@
 ---
-title: 'Návrhář postupu provádění – jak: Přidání nové položky do projektu pracovního postupu'
+title: 'Návrhář pracovního postupu: Přidat novou položku do projektu pracovního postupu'
 ms.date: 06/25/2018
 ms.topic: conceptual
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f0fb6c013e3df041e750344c09fb19f8c43b254
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 29e4c03eef2a276995890bbd6b723fa457aefde2
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536971"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432033"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Postupy: Přidat novou položku do projektu pracovního postupu
 
@@ -21,7 +21,7 @@ Po vytvoření projektu pracovního postupu, můžete přidat do projektu aktivi
 
 V následující tabulce je přehled položek Windows Workflow Foundation (WF), které můžete přidat do projektu pracovního postupu:
 
-| Název | Popis |
+| Name | Popis |
 |-| - |
 | Aktivita | Aktivitu se skládá z jiné aktivity. Výběrem této položky přidá stejný soubor XAML do projektu, jak lze získat při výběru **knihovny aktivit** šablonu pro nový projekt. Další informace v tomto postupu najdete v tématu [vytvořit projekt workflow](creating-a-workflow-project.md). |
 | Návrhář aktivity | Návrhář pro přizpůsobení prostředí doby návrhu aktivity. Stejné soubory, které vyberete tuto položku přidá do projektu, jak lze získat při výběru **knihovny návrháře aktivit** šablonu pro nový projekt. |

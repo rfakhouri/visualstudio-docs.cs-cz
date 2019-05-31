@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26433d62a68b28450a56eee1282376733acfe55c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f0eb7cab3b1bc764f663cd647811928510281e8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838799"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432014"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -44,6 +44,8 @@ devenv /Edit [File1[ FileN]...]
 Pokud soubor není zadána, získá existující instanci sady Visual Studio fokus. Pokud není určen žádný soubor a neexistuje žádná instance sady Visual Studio, nástroj vytvoří instanci se zjednodušeným rozložením okna.
 
 Je-li existující instanci aplikace Visual Studio do modálního stavu, soubor se otevře v existující instanci když Visual Studio se ukončí modální stav. Například tato situace může nastat, když [dialogové okno Možnosti](../../ide/reference/options-dialog-box-visual-studio.md) je otevřený.
+
+Pokud je více než jednu instanci sady Visual Studio otevřené, je soubor otevřený v naposledy otevřeným instance.
 
 ## <a name="example"></a>Příklad
 

@@ -8,16 +8,16 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548829"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432272"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Přizpůsobení vnořování souborů v Průzkumníku řešení
+# <a name="file-nesting-in-solution-explorer"></a>Vnořování souborů v Průzkumníku řešení
 
-Vnoření sady souvisejících souborů v **Průzkumníka řešení** není nový, ale až do nyní neměl žádnou kontrolu nad vnoření pravidla. Můžete si vybrat přednastavení **vypnout**, **výchozí** a **webové**, ale můžete také přizpůsobit vnořování přesně na míru. Můžete dokonce vytvářet specifické pro řešení a nastavení specifická pro projekt, ale další informace o to později. Nejprve probereme získáte out-of-the-box.
+**Průzkumník řešení** vnoří souvisejících souborů a uspořádat je a je jednodušeji najít. Například pokud do projektu přidáte formulář Windows Forms, soubor kódu pro formulář je vnořená dole formulář v nástrojích pro **Průzkumníka řešení**. V projektech ASP.NET Core vnořování souborů děláte o krok dál. Můžete si vybrat přednastavení vnoření souborů **vypnout**, **výchozí**, a **webové**. Můžete také [přizpůsobit, jak jsou vnořené soubory](#customize-file-nesting) nebo [vytvořit nastavení specifická pro řešení a projektu](#create-project-specific-settings).
 
 > [!NOTE]
 > Tato funkce je momentálně podporována pouze pro projekty ASP.NET Core.
@@ -128,7 +128,7 @@ Můžete spravovat všechna nastavení, včetně vlastní nastavení, pomocí st
 
 ![Aktivovat vnoření vlastního souboru pravidel](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>Vytvoření nastavení specifická pro řešení a specifické pro projekt
+## <a name="create-project-specific-settings"></a>Vytvoření nastavení specifické pro projekt
 
 Můžete vytvořit nastavení specifická pro řešení a projektu prostřednictvím v místní nabídce (kontextová nabídka) jednotlivých řešení a projektu:
 
@@ -142,7 +142,7 @@ Můžete provést opak a že se sada Visual Studio *pouze* použít konkrétní 
 
 Nastavení specifická pro řešení a specifické pro projekt může být zařazeno do správy zdrojového kódu a celý tým, že funguje v základu kódu můžete je sdílet.
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Zákaz pravidel vnoření globálního souboru pro konkrétní řešení nebo projekt
+## <a name="disable-file-nesting-rules-for-a-project"></a>Zakázat pravidla vnoření souborů projektu
 
 Můžete zakázat existující pravidla vnoření globálního souboru pro konkrétní řešení nebo projektů s použitím **odebrat** akce zprostředkovatele místo **přidat**. Pokud přidáte následující kód nastavení do projektu, například všechny **pathSegment** pravidla, která mohou existovat globálně tohoto konkrétního projektu jsou zakázané:
 
@@ -157,3 +157,4 @@ Můžete zakázat existující pravidla vnoření globálního souboru pro konkr
 ## <a name="see-also"></a>Viz také:
 
 - [Přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)
+- [Řešení a projekty v sadě Visual Studio](solutions-and-projects-in-visual-studio.md)

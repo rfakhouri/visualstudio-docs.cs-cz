@@ -1,5 +1,5 @@
 ---
-title: Vytvoření vlastního editoru těla HTTP pro Editor testu výkonnosti webu
+title: Vytvoření HTTP vlastního editoru těla pro Editor testu výkonnosti webu
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a90d0e02d5ae3ce3ce2e91d4d152244b06fd049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b56195ce7cb6e52433e19dc2a7ae4b42e7580724
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950264"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431833"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Postupy: Vytvoření vlastního protokolu HTTP text editoru pro Editor testu výkonnosti webu
 
@@ -264,7 +264,7 @@ Po dokončení úprav textu řetězce a při kliknutí **OK** v dialogovém okn�
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Vytvoření a nasazení modulů plug-in
 
-1. Na **sestavení** nabídce zvolte **sestavení \<název projektu ovládacího prvku knihovny formulář Windows >**.
+1. Na **sestavení** nabídce zvolte **sestavení \<název projektu ovládacího prvku knihovny formulář Windows >** .
 
 2. Zavřete všechny instance sady Visual Studio.
 

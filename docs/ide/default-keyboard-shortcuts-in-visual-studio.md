@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b81d6be4ebb7e210efc2034f43fc9a91ec1844e
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: a2a2b4a8c747595a0aa1e0f3499b8d24b0b0d301
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402062"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432259"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 
@@ -170,11 +170,13 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.FindPreviousSelected|**Ctrl + Shift + F3**|
 |Edit.GenerateMethod|**CTRL + K, Ctrl + M**|
 |Edit.GoTo|**CTRL + G**|
+|Edit.GoToAll|**CTRL +** nebo **Ctrl + T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**CTRL + D**|
-|Edit.GoToNextLocation|**F8**|
-|Edit.GoToPrevLocation|**SHIFT + F8**|
+|Edit.GoToMember|**CTRL + 1, Ctrl + M** nebo **Ctrl + 1, M** nebo **Alt +\\**|
+|Edit.GoToNextLocation|**F8** (Další chyba v seznamu chyb nebo okně výstupu)|
+|Edit.GoToPrevLocation|**SHIFT + F8** (předchozí chyby v okně Seznam chyb nebo výstupní)|
 |Edit.InsertSnippet|**CTRL + K, Ctrl + X**|
 |Edit.MoveControlDown|**Ctrl + šipka dolů**|
 |Edit.MoveControlDownGrid|**Šipka dolů**|
@@ -184,7 +186,6 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.MoveControlRightGrid|**Šipka doprava**|
 |Edit.MoveControlUp|**Ctrl + šipka nahoru**|
 |Edit.MoveControlUpGrid|**Šipka nahoru**|
-|Edit.NavigateTo|**CTRL +**|
 |Edit.NextBookmark|**CTRL + K, Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + N**|
 |Edit.OpenFile|**Ctrl + Shift + G** (otevře se název souboru, pod kurzor)|
@@ -346,7 +347,6 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Tools.AttachtoProcess|**Ctrl + Alt + P**|
 |Tools.CodeSnippetsManager|**CTRL + K, Ctrl + B**|
 |Tools.ForceGC|**Ctrl + Shift + Alt + F12, Ctrl + Shift + Alt + F12**|
-|Tools.GoToCommandLine|**CTRL +/**|
 
 ### <a name="bkmk_view"></a> Zobrazení
 
@@ -354,7 +354,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |--------------| - |
 |View.AllWindows|**Shift + Alt + M**|
 |View.ArchitectureExplorer|**CTRL +\\, Ctrl + R**|
-|View.Backward|**ALT + Šipka doleva**|
+|View.Backward|**ALT + Šipka doleva** (funkce odlišně od View.NavigateBackward v textovém editoru)|
 |View.BookmarkWindow|**CTRL + K, Ctrl + W**|
 |View.BrowseNext|**Ctrl + Shift + 1**|
 |View.BrowsePrevious|**Ctrl + Shift + 2**|
@@ -369,7 +369,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |View.ErrorList|**CTRL +\\, E**<br /><br /> or<br /><br /> **CTRL +\\, Ctrl + E**|
 |View.F#Interactive|**Ctrl + Alt + F**|
 |View.FindSymbolResults|**Ctrl + Alt + F12**|
-|View.Forward|**ALT + Šipka vpravo**|
+|View.Forward|**ALT + Šipka vpravo** (funkce odlišně od View.NavigateForward v textovém editoru)|
 |View.ForwardBrowseContext|**Ctrl + Shift + 7**|
 |View.FullScreen|**Shift + Alt + Enter**|
 |View.NavigateBackward|**CTRL +-**|
@@ -779,7 +779,6 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 | Edit.CharRight | **Šipka doprava** |
 | Edit.CharRightExtend | **Shift + šipka doprava** |
 | Edit.CharRightExtendColumn | **Shift + Alt + šipka vpravo** |
-| Edit.CharTranspose | **Ctrl+T** |
 | Edit.ClearBookmarks | **CTRL + K, Ctrl + L** |
 | Edit.CollapseAllOutlining | **CTRL + M, Ctrl + A** |
 | Edit.CollapseCurrentRegion | **CTRL + M, Ctrl + S** |

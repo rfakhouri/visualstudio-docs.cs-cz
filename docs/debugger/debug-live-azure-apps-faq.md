@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea593ad5f88ba29f6b1c0d7c64a129b8f71c7f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43b76ad81a2c075a11ff55dcbd7fbc5e8a4b3fe7
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62853322"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431851"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Nejčastější dotazy k ladění snímků v sadě Visual Studio
 
@@ -49,7 +49,7 @@ Ano, ladění snímků může fungovat pro servery v zatížení. Snapshot Debug
 
 Odinstalovat rozšíření pro Snapshot Debugger web ve službě App Service pomocí následujících kroků:
 
-1. Vypnout aplikaci služby prostřednictvím Průzkumníka cloudu v sadě Visual Studio nebo Azure portal.
+1. Vypněte službu App Service pomocí Průzkumníka cloudu v sadě Visual Studio nebo na webu Azure portal.
 1. Přejděte na Web App Service Kudu (to znamená, yourappservice. **Správce řízení služeb**. azurewebsites.net) a přejděte do **rozšířením webu**.
 1. Kliknutím na křížek v rozšíření webu pro Snapshot Debugger jeho odstranění.
 
@@ -57,10 +57,148 @@ Odinstalovat rozšíření pro Snapshot Debugger web ve službě App Service pom
 
 Snapshot Debugger je potřeba otevřít sadu porty Pokud chcete ladit snímkům pořízeným v Azure, jde o stejné porty vyžadované pro vzdálené ladění. [Můžete najít seznam portů zde](../debugger/remote-debugger-port-assignments.md).
 
+#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>Jak zakázat rozšíření vzdálený ladicí program?
+
+Pro App Service:
+1. Zakážete rozšíření vzdálený ladicí program přes Azure portal pro službu App Service.
+2. Azure portal > okno prostředek aplikace služby > *nastavení aplikace*
+3. Přejděte *ladění* části a klikněte na tlačítko *vypnout* tlačítko pro *vzdálené ladění*.
+
+Pro AKS:
+1. Aktualizovat váš soubor Dockerfile odebrat oddíly odpovídající [Visual Studio Snapshot Debugger na imagích Dockeru](https://github.com/Microsoft/vssnapshotdebugger-docker).
+2. Sestavili a upravenou image Dockeru.
+
+Pro virtuální počítač nebo virtuální počítače škálovací sady odeberte rozšíření, certifikáty, KeyVaults a příchozí NAT fondů vzdálený ladicí program následujícím způsobem:
+
+1. Odebrat rozšíření vzdáleného ladicího programu  
+
+   Existuje několik způsobů, jak zakázat vzdálený ladicí program pro virtuální počítače a škálovací sady virtuálních počítačů:  
+
+      - Zakažte vzdálený ladicí program pomocí Průzkumníka cloudu  
+
+         - Cloud Explorer > prostředku vašeho virtuálního počítače > Zakázat ladění (Zakázání ladění neexistuje pro škálovací sady na Průzkumník cloudu virtuálních počítačů).  
+
+
+      - Zakažte vzdálený ladicí program pomocí skriptů a rutin prostředí PowerShell  
+
+         Pro virtuální počítač:  
+
+         ```
+         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
+         ```
+
+         Pro škálovací sady virtuálních počítačů:  
+         ```
+         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName  
+         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name  
+         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension  
+         ```
+
+      - Zakažte vzdálený ladicí program na webu Azure portal
+         - Azure portal > virtuální počítač nebo virtuální machine scale sets s okno prostředků > rozšíření  
+         - Odinstalovat rozšíření Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
+
+
+         > [!NOTE]
+         > Škálovací sady virtuálních počítačů – portál neumožňuje odebrání DebuggerListener porty. Je potřeba použít Azure PowerShell. Podrobnosti najdete níže.
+  
+2. Odebrat certifikáty a Azure KeyVault
+
+   Při instalaci rozšíření vzdálený ladicí program pro virtuální počítač nebo škálovací sady virtuálních počítačů, klientské a serverové certifikáty se vytváří za účelem ověření klienta VS s Azure Virtual Machine a virtual machine scale sets s prostředky.  
+
+   - Klientský certifikát  
+
+      Tento certifikát je podepsaný svým držitelem certifikátu uloženého v certifikátu: / CurrentUser/Moje /  
+
+      ```
+      Thumbprint                                Subject  
+      ----------                                -------  
+
+      1234123412341234123412341234123412341234  CN=ResourceName  
+      ```
+
+      Je možné odebrat tento certifikát z vašeho počítače přes PowerShell
+
+      ```
+      $ResourceName = 'ResourceName' # from above  
+      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item  
+      ```
+
+   - Certifikát serveru
+      - Odpovídající kryptografický otisk certifikátu serveru je nasazená jako tajný kód do Azure Key Vaultu. VS. pokusí se vyhledat nebo vytvořit trezor klíčů s předponou MSVSAZ * v oblasti odpovídající virtuální počítač nebo škálovací sady virtuálních počítačů resource. Všechny virtuální počítače nebo virtuálního počítače škálovací sady prostředky nasazené do této oblasti se proto sdílet stejný trezor klíčů.  
+      - Odstranění tajného klíče kryptografický otisk certifikátu serveru, přejděte na web Azure Portal a vyhledejte ve stejné oblasti, který je hostitelem vašeho prostředku KeyVault MSVSAZ *. Odstranění tajného klíče, které by měly být popsány `remotedebugcert<<ResourceName>>`  
+      - Musíte také odstranit tajný klíč serveru z vašich prostředků pomocí Powershellu.  
+
+      Pro virtuální počítače:  
+
+      ```
+      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()  
+      Update-AzVM -ResourceGroupName $rgName -VM $vm  
+      ```
+                        
+      Pro škálovací sady virtuálních počítačů:  
+
+      ```
+      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()  
+      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss  
+      ```
+                        
+3. Odeberte všechny fondy DebuggerListener příchozí NAT (škálovací sady virtuálních počítačů pouze)  
+
+   Vzdálený ladicí program představuje fondy NAT ve vázané na DebuggerListener, které se použijí pro nástroj pro vyrovnávání zatížení vaší škálovací sadě.  
+
+   ```
+   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools  
+   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
+                
+   if ($LoadBalancerName)  
+   {
+      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName  
+      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
+      Set-AzLoadBalancer -LoadBalancer $lb  
+   }
+   ```
+
+#### <a name="how-do-i-disable-snapshot-debugger"></a>Jak zakázat Snapshot Debugger?
+
+Pro službu App Service:
+1. Zakážete Snapshot Debugger pro službu App Service prostřednictvím portálu Azure portal.
+2. Azure portal > okno prostředek aplikace služby > *nastavení aplikace*
+3. Odstraňte následující nastavení aplikace na webu Azure Portal a uložte provedené změny. 
+    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
+    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+
+    > [!WARNING]
+    > Všechny změny nastavení aplikace opraví, zahájí se restartování aplikace. Podrobnosti o nastavení aplikace lze najít [tady](https://docs.microsoft.com/azure/app-service/web-sites-configure#app-settings). 
+
+Pro AKS:
+1. Aktualizovat váš soubor Dockerfile odebrat oddíly odpovídající [Visual Studio Snapshot Debugger na imagích Dockeru](https://github.com/Microsoft/vssnapshotdebugger-docker).
+2. Sestavili a upravenou image Dockeru.
+
+Pro virtuální počítač nebo virtuální počítače škálovací sady:
+
+Chcete-li zakázat Snapshot Debugger několika způsoby:
+- Cloud Explorer > váš virtuální počítač nebo virtuální počítače škálovací sady prostředků > zakázat diagnostiku
+
+- Azure portal > váš virtuální počítač nebo virtuální počítače škálovací sady okno prostředků > Rozšíření > Microsoft.Insights.VMDiagnosticsSettings odinstalace rozšíření
+
+- Rutiny Powershellu z [Az Powershellu](https://docs.microsoft.com/powershell/azure/overview)
+
+    Virtuální počítač:
+    ```
+        Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings 
+    ```
+    
+    Škálovací sady virtuálních počítačů:
+    ```
+        $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+        Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
+    ```
+
 ## <a name="see-also"></a>Viz také:
 
 - [Ladění v sadě Visual Studio](../debugger/index.md)
 - [Ladění živé aplikace v ASP.NET pomocí ladicího programu snímků](../debugger/debug-live-azure-applications.md)
-- [Ladění za provozu technologie ASP.NET Azure virtuální Machines\Virtual počítače Škálovací sady pomocí ladicího programu snímků](../debugger/debug-live-azure-virtual-machines.md)
+- [Ladění za provozu technologie ASP.NET Azure Virtual Machines Machines\Virtual škálovací sady pomocí ladicího programu snímků](../debugger/debug-live-azure-virtual-machines.md)
 - [Ladění za provozu technologie ASP.NET Kubernetes se službou Azure pomocí ladicího programu snímků](../debugger/debug-live-azure-kubernetes.md)
 - [Řešení potíží a známé problémy pro ladění snímků](../debugger/debug-live-azure-apps-troubleshooting.md)
