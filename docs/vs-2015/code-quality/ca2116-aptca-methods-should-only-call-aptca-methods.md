@@ -71,7 +71,7 @@ ms.locfileid: "65687347"
 
  Tento příklad vytvoří následující výstup.
 
- **Požadovat pro úplný vztah důvěryhodnosti: požadavek se nezdařil.**
+ **Požadovat pro úplný vztah důvěryhodnosti: požadavek se nezdařil.** 
 **ClassRequiringFullTrust.DoWork byla volána.**
 ## <a name="related-rules"></a>Související pravidla
  [CA2117: Typy APTCA by měl rozšířit pouze základní typy APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)

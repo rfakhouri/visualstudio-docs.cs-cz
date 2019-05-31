@@ -35,7 +35,7 @@ Při vytváření prohlížeče obrázků, prvním krokem je vytvoření projekt
 
 2. Zvolte buď **Visual C#**  nebo **jazyka Visual Basic** na levé straně **nový projekt** dialogové okno.
 
-3. V seznamu šablon vyberte **aplikace Windows Forms (.NET Framework)**. Zadejte název nového formuláře **PictureViewer**a klikněte na tlačítko **OK** tlačítko.
+3. V seznamu šablon vyberte **aplikace Windows Forms (.NET Framework)** . Zadejte název nového formuláře **PictureViewer**a klikněte na tlačítko **OK** tlačítko.
 
     >[!NOTE]
     >Pokud se nezobrazí **aplikace Windows Forms (.NET Framework)** šablony, instalace pomocí instalačního programu sady Visual Studio **vývoj desktopových aplikací .NET** pracovního vytížení.<br/><br/>![Úloha vývoj desktopových aplikací .NET v instalačním programu sady Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Další informace najdete v tématu [instalace sady Visual Studio](../install/install-visual-studio.md) stránky.
@@ -96,7 +96,7 @@ Visual Studio vytvoří řešení pro vaši aplikaci. Řešení se chová jako k
     - **Okno vlastností** v tomto okně můžete změnit vlastnosti položek, které vyberete v jiných oknech. Například pokud zvolíte Form1, můžete změnit jeho název nastavením **Text** vlastnost a můžete změnit barvu pozadí nastavením **Backcolor** vlastnost.
 
     > [!NOTE]
-    > Horní řádek v **Průzkumníka řešení** ukazuje **řešení "PictureViewer" (1 projekt)**, což znamená, že Visual Studio vytvořila řešení za vás. Řešení může obsahovat více než jeden projekt, ale prozatím budete pracovat s řešeními, která obsahují pouze jeden projekt.
+    > Horní řádek v **Průzkumníka řešení** ukazuje **řešení "PictureViewer" (1 projekt)** , což znamená, že Visual Studio vytvořila řešení za vás. Řešení může obsahovat více než jeden projekt, ale prozatím budete pracovat s řešeními, která obsahují pouze jeden projekt.
 
 1. V panelu nabídky zvolte **souboru** > **Uložit vše**.
 

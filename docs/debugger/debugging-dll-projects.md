@@ -76,7 +76,7 @@ Pro projekty C/C++ můžete nastavit hlavičky a knihovny LIB umístění soubor
 
 1. V horní části **vlastnosti** podokně v části **konfigurace**vyberte **všechny konfigurace**.
 
-1. V části **C/C++** > **Obecné** > **další adresáře souborů k zahrnutí**, zadejte složku obsahující soubory hlaviček.
+1. V části **C/C++**  > **Obecné** > **další adresáře souborů k zahrnutí**, zadejte složku obsahující soubory hlaviček.
 
 1. V části **Linkeru** > **Obecné** > **další adresáře knihoven**, zadejte složku, která obsahuje soubory LIB.
 

@@ -114,7 +114,7 @@ Ve výchozím nastavení **podrobností třídy** okno se automaticky zobrazí p
 
      Typ získá fokus a jeho obsah se zobrazí v **podrobností třídy** okna.
 
-2. V **podrobností třídy** okno, v části, která obsahuje typ členu, které chcete přidat, klikněte na tlačítko  **\<přidat člen >**. Například pokud chcete přidat pole, klikněte na možnost  **\<přidat pole >**.
+2. V **podrobností třídy** okno, v části, která obsahuje typ členu, které chcete přidat, klikněte na tlačítko  **\<přidat člen >** . Například pokud chcete přidat pole, klikněte na možnost  **\<přidat pole >** .
 
 3. Zadejte název členu, který chcete vytvořit, a stiskněte klávesu Enter.
 
@@ -225,7 +225,7 @@ Přidání parametrů do metody pomocí **podrobností třídy** okna. Parametry
 
      Zobrazí se řádek parametru, který obsahuje pouze dvojici závorek a slova  **\<přidat parametr >.**
 
-3. Klikněte na tlačítko  **\<přidat parametr >**, zadejte název nového parametru a stiskněte klávesu **Enter**.
+3. Klikněte na tlačítko  **\<přidat parametr >** , zadejte název nového parametru a stiskněte klávesu **Enter**.
 
      Nový parametr se přidá do metody a kódu metody. Zobrazí se v **podrobností třídy** okna a okna Vlastnosti.
 
@@ -241,7 +241,7 @@ Přidání parametrů do metody pomocí **podrobností třídy** okna. Parametry
 
      Zobrazí se řádek parametru, který obsahuje pouze dvojici závorek a slova  **\<přidat parametr >.**
 
-3. Klikněte na tlačítko  **\<přidat parametr >**, zadejte název nového parametru a stiskněte klávesu **Enter**.
+3. Klikněte na tlačítko  **\<přidat parametr >** , zadejte název nového parametru a stiskněte klávesu **Enter**.
 
      Nový parametr se přidá do metody a kódu metody. Zobrazí se v **podrobností třídy** okna a okna Vlastnosti.
 

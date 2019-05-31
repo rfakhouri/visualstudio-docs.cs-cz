@@ -63,7 +63,7 @@ Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k u
  Musíte si také stáhnout zdrojový kód [Managed Package Framework pro projekty](http://mpfproj12.codeplex.com/). Extrahujte soubor do umístění, které je přístupné k řešení, které se chystáte vytvořit.  
   
 ## <a name="creating-a-basic-project-type"></a>Vytvoření základního projektu typu  
- Vytvořte projekt VSIX C# s názvem **SimpleProject**. (**Soubor, nový, projekt** a potom **balíčku sady Visual Studio C#, rozšiřitelnosti,**). Přidat šablonu položky projektu balíček Visual Studio (v Průzkumníku řešení klikněte pravým tlačítkem myši na uzel projektu a vyberte **Add / nová položka**, pak přejděte na **rozšiřitelnost / balíček Visual Studio**). Název souboru **SimpleProjectPackage**.  
+ Vytvořte projekt VSIX C# s názvem **SimpleProject**. (**Soubor, nový, projekt** a potom **balíčku sady Visual Studio C#, rozšiřitelnosti,** ). Přidat šablonu položky projektu balíček Visual Studio (v Průzkumníku řešení klikněte pravým tlačítkem myši na uzel projektu a vyberte **Add / nová položka**, pak přejděte na **rozšiřitelnost / balíček Visual Studio**). Název souboru **SimpleProjectPackage**.  
   
 ## <a name="creating-a-basic-project-template"></a>Vytvoření základního projektu šablony  
  Nyní můžete upravit tento základní VSPackage implementovat nový typ projektu .myproj. Chcete-li vytvořit projekt, který je založen na typu projektu .myproj, Visual Studio obsahuje vědět, jaké soubory, prostředky a odkazy pro přidání do nového projektu. Tyto informace poskytnout, umístěte soubory projektu ve složce šablony projektu. Když uživatel .myproj projekt pro vytvoření projektu, soubory se zkopírují do nového projektu.  

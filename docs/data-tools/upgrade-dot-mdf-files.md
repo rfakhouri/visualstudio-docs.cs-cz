@@ -23,7 +23,7 @@ ms.locfileid: "62565157"
 ---
 # <a name="upgrade-mdf-files"></a>Upgrade souborů .mdf
 
-Toto téma popisuje možnosti pro upgrade databázového souboru (*.mdf*) po instalaci novější verze sady Visual Studio. Obsahuje pokyny pro následující úlohy:
+Toto téma popisuje možnosti pro upgrade databázového souboru ( *.mdf*) po instalaci novější verze sady Visual Studio. Obsahuje pokyny pro následující úlohy:
 
 - Upgrade databázového souboru, který chcete používat novější verzi SQL Server Express LocalDB
 
@@ -33,7 +33,7 @@ Toto téma popisuje možnosti pro upgrade databázového souboru (*.mdf*) po ins
 
 - Ujistěte se, SQL Server Express. databázový stroj výchozí
 
-Můžete použít Visual Studio otevřete projekt, který obsahuje soubor databáze (*.mdf*), která byla vytvořena pomocí starší verze systému SQL Server Express nebo LocalDB. Ale dalším vývoji projektu v sadě Visual Studio, musíte mít verzi systému SQL Server Express nebo LocalDB nainstalované ve stejném počítači jako Visual Studio, nebo musíte upgradovat tento databázový soubor. Pokud provedete upgrade databázového souboru, nebude možné k němu přistupovat pomocí starší verze systému SQL Server Express nebo LocalDB.
+Můžete použít Visual Studio otevřete projekt, který obsahuje soubor databáze ( *.mdf*), která byla vytvořena pomocí starší verze systému SQL Server Express nebo LocalDB. Ale dalším vývoji projektu v sadě Visual Studio, musíte mít verzi systému SQL Server Express nebo LocalDB nainstalované ve stejném počítači jako Visual Studio, nebo musíte upgradovat tento databázový soubor. Pokud provedete upgrade databázového souboru, nebude možné k němu přistupovat pomocí starší verze systému SQL Server Express nebo LocalDB.
 
 Také můžete být vyzváni k upgradu databáze soubor, který byl vytvořen pomocí dřívější verzi serveru SQL Server Express nebo LocalDB, pokud není kompatibilní s instancí systému SQL Server Express nebo LocalDB, který je aktuálně nainstalované verzi souboru. Chcete-li vyřešit tento problém, Visual Studio vás vyzve k upgradu soubor.
 

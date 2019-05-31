@@ -60,7 +60,7 @@ Tento článek obsahuje kroky k nastavení základní konfiguraci služby IIS na
 1. Vytvoření nové aplikace MVC ASP.NET.
 
     ::: moniker range=">=vs-2019"
-    V aplikaci Visual Studio 2019 zadejte **Ctrl + Q** otevřete do vyhledávacího pole zadejte **asp.net**, zvolte **šablony**, klikněte na tlačítko **vytvořit nové technologie ASP.NET webové aplikace (.NET Rozhraní Framework)**. V dialogovém okně, které se zobrazí, pojmenujte projekt **MyASPApp**a klikněte na tlačítko **vytvořit**. Vyberte **MVC** a zvolte **vytvořit**.
+    V aplikaci Visual Studio 2019 zadejte **Ctrl + Q** otevřete do vyhledávacího pole zadejte **asp.net**, zvolte **šablony**, klikněte na tlačítko **vytvořit nové technologie ASP.NET webové aplikace (.NET Rozhraní Framework)** . V dialogovém okně, které se zobrazí, pojmenujte projekt **MyASPApp**a klikněte na tlačítko **vytvořit**. Vyberte **MVC** a zvolte **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Chcete-li to provést v sadě Visual Studio 2017, zvolte **soubor > Nový > projekt**a pak vyberte **Visual C# > Web > Webová aplikace ASP.NET**. V **ASP.NET 4.5.2** části šablony vyberte **MVC**. Ujistěte se, že **povolit podporu Dockeru** není vybraná a že **ověřování** je nastavena na **bez ověřování**. Pojmenujte projekt **MyASPApp**.)
@@ -87,7 +87,7 @@ Když si stáhnete software, se může zobrazit žádosti o udělení oprávněn
 
 Pokud chcete podrobnější informace k instalaci technologie ASP.NET ve službě IIS, přečtěte si téma [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-1. V levém podokně ve Správci serveru vyberte **IIS**. Klikněte pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)**.
+1. V levém podokně ve Správci serveru vyberte **IIS**. Klikněte pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)** .
 
 1. Pomocí instalačního programu webové platformy (WebPI) k instalaci technologie ASP.NET 4.5 (z uzlu serveru ve Windows serveru 2012 R2, zvolte **získat nové komponenty webové platformy** a vyhledejte technologie ASP.NET)
 
@@ -144,7 +144,7 @@ Tuto možnost můžete použít k nasazení své aplikace, pokud chcete zkopíro
 
 1. Otevřete Průzkumníka Windows a vytvořte novou složku **C:\Publish**, kde bude později nasadit projekt ASP.NET.
 
-2. Pokud ho ještě není otevřený, otevřete **Správce Internetové informační služby (IIS)**. (V levém podokně ve Správci serveru vyberte **IIS**. Klikněte pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)**.)
+2. Pokud ho ještě není otevřený, otevřete **Správce Internetové informační služby (IIS)** . (V levém podokně ve Správci serveru vyberte **IIS**. Klikněte pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)** .)
 
 3. V části **připojení** v levém podokně přejděte do **lokality**.
 
@@ -234,7 +234,7 @@ Informace o spouštění vzdálený ladicí program jako službu, naleznete v t�
 
 7. Klikněte na tlačítko **připojení**
 
-8. Otevřete web, vzdáleném počítači. V prohlížeči přejděte na **http://\<název vzdáleného počítače >**.
+8. Otevřete web, vzdáleném počítači. V prohlížeči přejděte na **http://\<název vzdáleného počítače >** .
 
     Zobrazí se webová stránka ASP.NET.
 9. Ve spuštěné aplikaci ASP.NET, kliknutím na odkaz **o** stránky.

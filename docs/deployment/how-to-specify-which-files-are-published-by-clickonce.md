@@ -29,15 +29,15 @@ Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 
  Soubory pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se spravují v **soubory aplikace** dialogové okno, přístupné **publikovat** stránku **Návrháře projektu**.
 
- Standardně je skupina jeden soubor s názvem **(povinné)**. Můžete vytvořit další skupiny souborů a k nim přiřadíte soubory. Nelze změnit **skupina pro stažení** pro soubory, které jsou požadovány pro spuštění aplikace. Například .exe nebo soubory aplikace s označením datových souborů musí patřit do **(povinné)** skupiny.
+ Standardně je skupina jeden soubor s názvem **(povinné)** . Můžete vytvořit další skupiny souborů a k nim přiřadíte soubory. Nelze změnit **skupina pro stažení** pro soubory, které jsou požadovány pro spuštění aplikace. Například .exe nebo soubory aplikace s označením datových souborů musí patřit do **(povinné)** skupiny.
 
- Výchozí stav publikování je označené hodnotou souboru **(automaticky)**. Například .exe aplikace je ve stavu publikovat **Include (Auto)** ve výchozím nastavení.
+ Výchozí stav publikování je označené hodnotou souboru **(automaticky)** . Například .exe aplikace je ve stavu publikovat **Include (Auto)** ve výchozím nastavení.
 
  Soubory s **akce sestavení** vlastnost nastavena na hodnotu **obsahu** jsou označeny jako soubory aplikace a budou označeny jako zahrnuté ve výchozím nastavení. Můžete být zahrnuty, vyloučit nebo označeny jako datové soubory. Výjimky jsou následující:
 
-- Datové soubory, jako je SQL Database (*.mdf* a *.mdb*) a soubory XML se označí jako data souborů ve výchozím nastavení.
+- Datové soubory, jako je SQL Database ( *.mdf* a *.mdb*) a soubory XML se označí jako data souborů ve výchozím nastavení.
 
-- Odkazy na sestavení (*.dll* souborů) při přidání odkazu jsou určené následujícím způsobem: Pokud **Kopírovat místně** je **False**, je označena ve výchozím nastavení jako požadované sestavení (**předpoklad (automaticky)**), který musí být k dispozici v mezipaměti GAC, předtím, než se aplikace nainstaluje. Pokud **Kopírovat místně** je **True**, je sestavení označeno ve výchozím nastavení jako sestavení aplikace (**Include (Auto)**) a budou zkopírovány do složky aplikace během instalace. Odkaz modelu COM se zobrazí v **soubory aplikace** dialogové okno (jako *.ocx* souboru) pouze tehdy, pokud jeho **izolované** je nastavena na **True**. Ve výchozím nastavení bude součástí.
+- Odkazy na sestavení ( *.dll* souborů) při přidání odkazu jsou určené následujícím způsobem: Pokud **Kopírovat místně** je **False**, je označena ve výchozím nastavení jako požadované sestavení (**předpoklad (automaticky)** ), který musí být k dispozici v mezipaměti GAC, předtím, než se aplikace nainstaluje. Pokud **Kopírovat místně** je **True**, je sestavení označeno ve výchozím nastavení jako sestavení aplikace (**Include (Auto)** ) a budou zkopírovány do složky aplikace během instalace. Odkaz modelu COM se zobrazí v **soubory aplikace** dialogové okno (jako *.ocx* souboru) pouze tehdy, pokud jeho **izolované** je nastavena na **True**. Ve výchozím nastavení bude součástí.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Chcete-li přidat soubory do dialogového okna soubory aplikace
 
@@ -77,7 +77,7 @@ Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 
 3. Klikněte na tlačítko **soubory aplikace** tlačítko Otevřít **soubory aplikace** dialogové okno.
 
-4. V **soubory aplikace** dialogového okna, vyberte sestavení aplikace (*.dll* souboru), kterou chcete označit jako předpoklad. Všimněte si, že vaše aplikace musí mít odkaz na sestavení aplikace v pořadí, aby se zobrazí v seznamu.
+4. V **soubory aplikace** dialogového okna, vyberte sestavení aplikace ( *.dll* souboru), kterou chcete označit jako předpoklad. Všimněte si, že vaše aplikace musí mít odkaz na sestavení aplikace v pořadí, aby se zobrazí v seznamu.
 
 5. V **stav publikování** pole, vyberte **požadavků** z rozevíracího seznamu.
 

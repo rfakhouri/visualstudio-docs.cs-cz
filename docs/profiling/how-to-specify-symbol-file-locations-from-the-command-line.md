@@ -45,7 +45,7 @@ Chcete-li zobrazit informace o symbolech, jako jsou názvy funkcí a čísla ř�
 
 2. Použijte následující syntax k nastavení **_NT_SYMBOL_PATH** proměnné prostředí nebo možnost VSPerfReport/symbolpath:
 
-    **srv\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**
+    **srv\\** * *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**
 
     kde *LocalStore* je cesta k místnímu adresáři, který jste vytvořili.
 

@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d8412318efd2292fd0f5a0f0ef52fe36c7d06c
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60116287"
@@ -41,7 +41,7 @@ V tomto podrobném návodu analyzovat spravovaný projekt závad v kódu pomocí
   
 1. Na **souboru** nabídku [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], klikněte na tlačítko **nový** a potom klikněte na tlačítko **projektu**.  
   
-2. V **nový projekt** dialogovém okně **typy projektů**, klikněte na tlačítko **Visual C#**.  
+2. V **nový projekt** dialogovém okně **typy projektů**, klikněte na tlačítko **Visual C#** .  
   
 3. V části **šablony**vyberte **knihovny tříd**.  
   
@@ -149,7 +149,7 @@ V tomto podrobném návodu analyzovat spravovaný projekt závad v kódu pomocí
   
        Vyberte **podepsat sestavení** zaškrtávací políčko.  
   
-       V **vybrat soubor klíče název řetězce** seznamu vyberte  **\<nový … >**.  
+       V **vybrat soubor klíče název řetězce** seznamu vyberte  **\<nový … >** .  
   
        **Vytvořit klíč se silným názvem** zobrazí se dialogové okno.  
   

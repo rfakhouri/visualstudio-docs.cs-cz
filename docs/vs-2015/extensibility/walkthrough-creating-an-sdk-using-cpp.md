@@ -10,7 +10,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1312d61b2d287a5dd8cb757b73e818a9e9cb2241
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60110034"
@@ -33,7 +33,7 @@ Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovny sady SDK,
   
 1. V panelu nabídky zvolte **souboru**, **nový**, **projektu**.  
   
-2. V seznamu šablon rozbalte **Visual C++**, **Windows Store**a pak vyberte **knihovny DLL (aplikace pro Windows Store)** šablony. V **název** zadejte `NativeMath`a klikněte na tlačítko **OK** tlačítko.  
+2. V seznamu šablon rozbalte **Visual C++** , **Windows Store**a pak vyberte **knihovny DLL (aplikace pro Windows Store)** šablony. V **název** zadejte `NativeMath`a klikněte na tlačítko **OK** tlačítko.  
   
 3. Aktualizujte NativeMath.h tak, aby odpovídala následující kód.  
   
@@ -61,7 +61,7 @@ Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovny sady SDK,
   
 1. V **Průzkumníka řešení**, otevřete místní nabídku pro **řešení "NativeMath"** a klikněte na tlačítko **přidat**, **nový projekt**.  
   
-2. V seznamu šablon rozbalte **Visual C#**, **rozšiřitelnost**a pak vyberte **balíčku VSIX**. V **název** zadejte **NativeMathVSIX**a klikněte na tlačítko **OK** tlačítko.  
+2. V seznamu šablon rozbalte **Visual C#** , **rozšiřitelnost**a pak vyberte **balíčku VSIX**. V **název** zadejte **NativeMathVSIX**a klikněte na tlačítko **OK** tlačítko.  
   
 3. Jakmile se zobrazí Návrhář manifestů VSIX, zavřete ho.  
   
@@ -73,7 +73,7 @@ Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovny sady SDK,
   
 6. V **Průzkumníka řešení**, otevřete místní nabídku **NativeMathVSIX** projektu a klikněte na tlačítko **přidat**, **nová položka**.  
   
-7. V seznamu **položky Visual C#**, rozbalte **Data**a pak vyberte **soubor XML**. V **název** zadejte `SDKManifest.xml`a klikněte na tlačítko **OK** tlačítko.  
+7. V seznamu **položky Visual C#** , rozbalte **Data**a pak vyberte **soubor XML**. V **název** zadejte `SDKManifest.xml`a klikněte na tlačítko **OK** tlačítko.  
   
 8. Pomocí tohoto XML kódu nahraďte obsah souboru:  
   
@@ -145,7 +145,7 @@ Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovny sady SDK,
   
 1. V panelu nabídky zvolte **souboru**, **nový**, **projektu**.  
   
-2. V seznamu šablon rozbalte **Visual C++**, **Windows Store**a pak vyberte **prázdnou aplikaci**. V **název** zadejte **NativeMathSDKSample**a klikněte na tlačítko **OK** tlačítko.  
+2. V seznamu šablon rozbalte **Visual C++** , **Windows Store**a pak vyberte **prázdnou aplikaci**. V **název** zadejte **NativeMathSDKSample**a klikněte na tlačítko **OK** tlačítko.  
   
 3. V **Průzkumníka řešení**, otevřete místní nabídku **NativeMathSDKSample** projektu a klikněte na tlačítko **přidat**, **odkaz**.  
   

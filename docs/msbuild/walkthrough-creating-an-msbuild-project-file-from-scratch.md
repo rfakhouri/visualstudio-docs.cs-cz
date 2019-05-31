@@ -51,9 +51,9 @@ Chcete-li dokončit tohoto průvodce, musíte mít rozhraní .NET Framework (ver
 
 #### <a name="to-create-the-minimal-application"></a>Vytvoření minimální aplikace
 
-1. Na příkazovém řádku přejděte do složky, ve kterém chcete vytvořit aplikaci, například *\My dokumenty\\*  nebo *\Desktop\\*.
+1. Na příkazovém řádku přejděte do složky, ve kterém chcete vytvořit aplikaci, například *\My dokumenty\\*  nebo *\Desktop\\* .
 
-2. Typ **md HelloWorld** vytvořte podsložku s názvem *\HelloWorld\\*.
+2. Typ **md HelloWorld** vytvořte podsložku s názvem *\HelloWorld\\* .
 
 3. Typ **cd HelloWorld** přejdete do nové složky.
 
@@ -161,7 +161,7 @@ Váš soubor minimálního projektu by měl vypadat následovně:
 
 #### <a name="to-add-msbuild-to-your-path"></a>Chcete-li přidat do cesty nástroje MSBuild
 
-- Spouští se v sadě Visual Studio 2013, můžete najít *MSBuild.exe* ve složce nástroje MSBuild (*%ProgramFiles%\MSBuild* na 32bitové verzi operačního systému, nebo *% ProgramFiles (x86) %\MSBuild*na 64bitový operační systém).
+- Spouští se v sadě Visual Studio 2013, můžete najít *MSBuild.exe* ve složce nástroje MSBuild ( *%ProgramFiles%\MSBuild* na 32bitové verzi operačního systému, nebo *% ProgramFiles (x86) %\MSBuild*na 64bitový operační systém).
 
      Na příkazovém řádku zadejte **nastavit PATH=%PATH%;%ProgramFiles%\MSBuild** nebo **nastavte CESTU = % PATH %, % ProgramFiles (x86) %\MSBuild**.
 

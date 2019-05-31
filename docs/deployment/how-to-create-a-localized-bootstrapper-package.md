@@ -24,7 +24,7 @@ Po vytvoření balíčku zaváděcího nástroje lokalizované verze balíčku z
 
  Ve výchozím nastavení, Visual Studio 2010 obsahuje lokalizované balíčky zaváděcího nástroje pouze pro rozhraní .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 a F# 4.0 modulu Runtime. Lokalizované balíčky pro jiné bootstrapperů můžete vytvořit pomocí tří kroků.
 
-1. Vytvořte složku s názvem za název národního prostředí v *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >*.
+1. Vytvořte složku s názvem za název národního prostředí v *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >* .
 
 2. Vytvořit soubor, který obsahuje licenční podmínky pro software pro balíček zaváděcího nástroje a vložit ho do nové složky.
 

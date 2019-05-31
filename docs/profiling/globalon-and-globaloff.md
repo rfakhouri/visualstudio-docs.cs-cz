@@ -54,9 +54,9 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 
  **Připojení:** `PID` Zahájení profilace určeného procesu.
 
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID` Zastavení nebo spuštění profilace pro zadaný proces.
+ {**ProcessOff**&#124;**ProcessOn**} **:** `PID` Zastavení nebo spuštění profilace pro zadaný proces.
 
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID` Zastavení nebo spuštění profilace pro zadaný proces (pouze metody instrumentace).
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID` Zastavení nebo spuštění profilace pro zadaný proces (pouze metody instrumentace).
 
 ## <a name="example"></a>Příklad
  V tomto příkladu **GlobalOff** a **GlobalOn** možnosti slouží k zamezení shromažďování profilovacích dat pro spuštění aplikace a vypnutí.

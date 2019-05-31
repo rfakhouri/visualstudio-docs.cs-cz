@@ -122,7 +122,7 @@ Potlačit porušení pravidel několika způsoby:
 
 - Z **editoru kódu**
 
-   Potlačit porušení z editoru kódu, umístěte kurzor na řádek kódu s porušení a stiskněte klávesu **Ctrl**+**.** Chcete-li otevřít **rychlé akce** nabídky. Vyberte **potlačit CAXXXX** > **ve zdroji nebo v souboru potlačení**.
+   Potlačit porušení z editoru kódu, umístěte kurzor na řádek kódu s porušení a stiskněte klávesu **Ctrl**+ **.** Chcete-li otevřít **rychlé akce** nabídky. Vyberte **potlačit CAXXXX** > **ve zdroji nebo v souboru potlačení**.
 
    ![Potlačit diagnostiku z nabídky rychlé akce](media/suppress-diagnostic-from-editor.png)
 

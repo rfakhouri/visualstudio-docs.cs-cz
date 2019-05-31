@@ -24,12 +24,12 @@ Můžete generovat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ná
 
  Použijte následující syntaxi pro vytvoření sestavy porovnání:
 
- **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [**/**`Options`]
+ **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [ **/** `Options`]
 
  Z následující tabulky můžete přidat možnosti **VSPerfReport/diff** příkazového řádku.
 
 |Možnost|Popis|
 |------------|-----------------|
-|**DiffThreshold:**[*hodnotu*]|Rozdíl ignorujte, pokud byl pod tuto procentuální prahovou hodnotu. Také se nezobrazí nová data s hodnotami, které jsou pod touto prahovou hodnotou.|
+|**DiffThreshold:** [*hodnotu*]|Rozdíl ignorujte, pokud byl pod tuto procentuální prahovou hodnotu. Také se nezobrazí nová data s hodnotami, které jsou pod touto prahovou hodnotou.|
 |**DiffTable:** *TableName*|Pomocí této tabulce můžete porovnat soubory. Ve výchozím nastavení se používá tabulka funkcí. Zadejte identifikátor, který je uveden v **VSPerfReport/querydifftables**.|
 |**DiffColumn:** *Názevsloupce*|Tento sloupec slouží k porovnání hodnoty. Ve výchozím nastavení se používá sloupec procent výhradních vzorků. Zadejte identifikátor, který je uveden v **VSPerfReport/querydifftables**.|

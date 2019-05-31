@@ -249,7 +249,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     1. V **Průzkumníka řešení**, v místní nabídce projektu VSIX zvolte **otevřít složku v Průzkumníku Windows**.  
 
-    2. Vyhledejte soubor **bin\\\*\\**_YourProject_**VSIX.**  
+    2. Vyhledejte soubor **bin\\\*\\** _YourProject_**VSIX.**  
 
 2. Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat rozšíření. To může být vlastní počítač nebo jiný.  
 

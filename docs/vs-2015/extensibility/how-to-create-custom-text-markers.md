@@ -34,7 +34,7 @@ Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu
   
 1. Vytvořte položku registru následujícím způsobem:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* \Text Editor\External Markers\\ *\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>je `GUID` slouží k identifikaci značky přidávaný  
   
@@ -43,9 +43,9 @@ Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu
     *\<Packageguid došlo k chybě >* je identifikátor GUID balíčku VSPackage implementace objektu automatizace.  
   
    > [!NOTE]
-   > Kořenová cesta HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* monitorconfigurationoverride lze přepsat náhradní root při inicializaci prostředí sady Visual Studio, pro další informace naleznete v tématu [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > Kořenová cesta HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<verze >* monitorconfigurationoverride lze přepsat náhradní root při inicializaci prostředí sady Visual Studio, pro další informace naleznete v tématu [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2. Vytvořit čtyři hodnoty v rámci HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* \Text Editor\External značky\\*\<MarkerGUID >*  
+2. Vytvořit čtyři hodnoty v rámci HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<verze >* \Text Editor\External značky\\ *\<MarkerGUID >*  
   
    - (Výchozí)  
   

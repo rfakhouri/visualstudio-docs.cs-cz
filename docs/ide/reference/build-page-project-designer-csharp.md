@@ -35,7 +35,7 @@ Tyto možnosti umožňují vybrat konfigurace a platformy k zobrazení a úprav�
 
 **Konfigurace** určuje které nastavení konfigurace má být zobrazeno nebo upraveno. Toto nastavení může být **aktivní (ladění)** (Toto je výchozí), **ladění**, **vydání**, nebo **všechny konfigurace**.
 
-**Platforma** určuje které nastavení platformy má být zobrazeno nebo upraveno. Ve výchozím nastavení **aktivní (jakýkoli procesor)**. Můžete změnit aktivní platformu pomocí **nástroje Configuration Manager**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).
+**Platforma** určuje které nastavení platformy má být zobrazeno nebo upraveno. Ve výchozím nastavení **aktivní (jakýkoli procesor)** . Můžete změnit aktivní platformu pomocí **nástroje Configuration Manager**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Obecné
 Tyto možnosti umožňují konfigurovat několik nastavení kompilátoru jazyka C#.

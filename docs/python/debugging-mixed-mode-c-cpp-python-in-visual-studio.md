@@ -97,7 +97,7 @@ Pro všechny předchozí verze sady Visual Studio, s přímým přístupem ve sm
 
 ![Zásobník volání kombinované pomocí ladění ve smíšeném režimu](media/mixed-mode-debugging-call-stack.png)
 
-Přechody se zobrazí jako **[externí kód]**, bez zadání směr přechodu je, pokud **nástroje** > **možnosti**  >  **Ladění** > **Obecné** > **povolit volbu pouze vlastní kód** je možnost nastavená.
+Přechody se zobrazí jako **[externí kód]** , bez zadání směr přechodu je, pokud **nástroje** > **možnosti**  >  **Ladění** > **Obecné** > **povolit volbu pouze vlastní kód** je možnost nastavená.
 
 Dvojitým kliknutím jiné rámce volání stane aktivní a otevře příslušného zdrojového kódu, pokud je to možné. Pokud není k dispozici zdrojový kód, rámce stále se stane aktivní a můžete ho zkontrolovat lokální proměnné.
 
@@ -107,7 +107,7 @@ Při použití **Krokovat s vnořením** (**F11**) nebo **Krokovat s Vystoupení
 
 ### <a name="pyobject-values-view-in-native-code"></a>PyObject zobrazení hodnoty v nativním kódu
 
-Při aktivním je nativní rámec (C nebo C++) své místní proměnné zobrazí v ladicím programu **lokální** okna. V nativní rozšiřující moduly Pythonu, mnoho z těchto proměnných jsou typu `PyObject` (což je definice typu `_object`), nebo několik dalších základních typů Pythonu (viz seznam níže). V kombinovaném režimu ladění, tyto hodnoty k dispozici další podřízený uzel s názvem **[zobrazení Pythonu]**. Po rozbalení tento uzel zobrazuje reprezentace Python proměnné, shodné s co se zobrazí-li místní proměnná odkazuje na stejný objekt nacházel v rámci Python. Podřízené položky tohoto uzlu se upravovat.
+Při aktivním je nativní rámec (C nebo C++) své místní proměnné zobrazí v ladicím programu **lokální** okna. V nativní rozšiřující moduly Pythonu, mnoho z těchto proměnných jsou typu `PyObject` (což je definice typu `_object`), nebo několik dalších základních typů Pythonu (viz seznam níže). V kombinovaném režimu ladění, tyto hodnoty k dispozici další podřízený uzel s názvem **[zobrazení Pythonu]** . Po rozbalení tento uzel zobrazuje reprezentace Python proměnné, shodné s co se zobrazí-li místní proměnná odkazuje na stejný objekt nacházel v rámci Python. Podřízené položky tohoto uzlu se upravovat.
 
 ![Zobrazení Pythonu v okně místních hodnot](media/mixed-mode-debugging-python-view.png)
 
@@ -150,7 +150,7 @@ Podobně jako v předchozí části, můžete povolit **[C++ zobrazení]** nativ
 
 Pokud je pole podřízeného objektu typu `PyObject`, nebo jednoho z jiných podporované typy, pak má **[zobrazení Pythonu]** reprezentace uzel (pokud jsou povolené tyto reprezentace), což umožňuje přejít objekt grafů where odkazy nejsou přímo zveřejněné Python.
 
-Na rozdíl od **[zobrazení Pythonu]** uzly, které používají metadata objektu Python k určení typu objektu, není žádný podobně spolehlivé mechanismus pro **[C++ zobrazení]**. Obecně řečeno byla přidělena hodnota Pythonu (to znamená, `PyObject` odkaz) není možné spolehlivě zjistit, které struktura jazyka C/C++ se zálohuje. Ladění ve smíšeném režimu se pokusí odhadnout typu zobrazením různých polí typu objektu (například `PyTypeObject` odkazovaná jeho `ob_type` pole), které mají typy ukazatelů na funkci. Pokud jeden z těchto ukazatelů na funkce odkazuje na funkci, která lze vyřešit a má tuto funkci `self` parametr s typem konkrétnější než `PyObject*`, pak tento typ se považuje za základního typu. Například pokud `ob_type->tp_init` bodů zadaný objekt na následující funkce:
+Na rozdíl od **[zobrazení Pythonu]** uzly, které používají metadata objektu Python k určení typu objektu, není žádný podobně spolehlivé mechanismus pro **[C++ zobrazení]** . Obecně řečeno byla přidělena hodnota Pythonu (to znamená, `PyObject` odkaz) není možné spolehlivě zjistit, které struktura jazyka C/C++ se zálohuje. Ladění ve smíšeném režimu se pokusí odhadnout typu zobrazením různých polí typu objektu (například `PyTypeObject` odkazovaná jeho `ob_type` pole), které mají typy ukazatelů na funkci. Pokud jeden z těchto ukazatelů na funkce odkazuje na funkci, která lze vyřešit a má tuto funkci `self` parametr s typem konkrétnější než `PyObject*`, pak tento typ se považuje za základního typu. Například pokud `ob_type->tp_init` bodů zadaný objekt na následující funkce:
 
 ```c
 static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {

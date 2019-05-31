@@ -33,7 +33,7 @@ Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> roz
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Vytvoření projektu šablony projektu s projektem VSIX  
  Můžete začít vytvářet vlastní šablonu pomocí projektu šablony projektu., která je součástí sady Visual Studio SDK. V tomto postupu použijeme šablonu projektu projektu C#, ale je také projektu šablony projektů Visual Basic. Potom přidáte projekt VSIX do řešení, které obsahuje projekt šablony projektu.  
   
-1. Vytvoření projektu jazyka C# projekt šablony (v sadě Visual Studio **soubor / nový / Project / Visual C# / rozšiřitelnost / šablona projektu C#**). Pojmenujte ji **MyProjectTemplate**.  
+1. Vytvoření projektu jazyka C# projekt šablony (v sadě Visual Studio **soubor / nový / Project / Visual C# / rozšiřitelnost / šablona projektu C#** ). Pojmenujte ji **MyProjectTemplate**.  
   
     > [!NOTE]
     > Můžete být vyzváni k instalaci sady Visual Studio SDK. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -207,7 +207,7 @@ Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> roz
   
 1. Podepište sestavení. V **Průzkumníka řešení**, vyberte projekt VSIX, klikněte pravým tlačítkem a vyberte **vlastnosti projektu**.  
   
-2. V **vlastnosti projektu** okna, vyberte **podepisování** kartu v **podepisování** kartě **podepsat sestavení**. V **vyberte soubor klíče se silným názvem** pole, vyberte  **\<nový >**. V **vytvořit klíč se silným názvem** okno v **název souboru klíče** zadejte **klíč.snk**. Zrušte zaškrtnutí políčka **chránit můj soubor klíče s heslem** pole.  
+2. V **vlastnosti projektu** okna, vyberte **podepisování** kartu v **podepisování** kartě **podepsat sestavení**. V **vyberte soubor klíče se silným názvem** pole, vyberte  **\<nový >** . V **vytvořit klíč se silným názvem** okno v **název souboru klíče** zadejte **klíč.snk**. Zrušte zaškrtnutí políčka **chránit můj soubor klíče s heslem** pole.  
   
 3. V **Průzkumníka řešení**, vyberte projekt VSIX a najít **vlastnosti** okna.  
   
@@ -215,9 +215,9 @@ Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> roz
   
 5. Znovu sestavte řešení.  
   
-6. Můžete teď najít klíč.snk soubor v adresáři projektu MyProjectWizard (**\<umístění na disku > \MyProjectTemplate\MyProjectWizard\key.snk**). Zkopírujte soubor klíč.snk.  
+6. Můžete teď najít klíč.snk soubor v adresáři projektu MyProjectWizard ( **\<umístění na disku > \MyProjectTemplate\MyProjectWizard\key.snk**). Zkopírujte soubor klíč.snk.  
   
-7. Přejděte do výstupního adresáře a najít sestavení (**\<umístění na disku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Vložte soubor klíč.snk tady. (To není nezbytně nutné, ale to vám usnadní následující kroky.)  
+7. Přejděte do výstupního adresáře a najít sestavení ( **\<umístění na disku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Vložte soubor klíč.snk tady. (To není nezbytně nutné, ale to vám usnadní následující kroky.)  
   
 8. Otevřete okno příkazového řádku a přejděte do adresáře, ve kterém byla vytvořena sestavení.  
   

@@ -77,13 +77,13 @@ ms.locfileid: "63431545"
 
  Tento příklad vytvoří následující výstup.
 
- **Změna ukazatel - předán podle hodnoty:**
+ **Změna ukazatel - předán podle hodnoty:** 
 **12345**
 **12345**
 **změna ukazatel - předány podle odkazu:** 
  **12345**
 **12345 ABCDE**
-**předávání návratovou hodnotu:**
+**předávání návratovou hodnotu:** 
 **12345 ABCDE**
 ## <a name="related-rules"></a>Související pravidla
  [CA1021: Vyhněte se výstupním parametrům](../code-quality/ca1021-avoid-out-parameters.md)

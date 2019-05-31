@@ -39,7 +39,7 @@ ms.locfileid: "63447069"
 
 - Relativní nebo absolutní cesta ve standardním Windows, například formátování *C:\Deploy\MyApplication* nebo *\MyApplication*.
 
-- Cestu (Universal Naming Convention), jako například  *\\\ServerName\MyApplication\\*.
+- Cestu (Universal Naming Convention), jako například  *\\\ServerName\MyApplication\\* .
 
 - Adresa URL webového serveru, jako http://www.microsoft.com/MyApplication.
 

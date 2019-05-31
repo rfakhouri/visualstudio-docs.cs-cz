@@ -61,7 +61,7 @@ Můžete najít a nahradit text v editoru kódu sady Visual Studio a některých
   
  Možnostem výměny můžete přejít kliknutím na tlačítko vedle **najít** textového pole. Chcete-li nahrazovat po jednom čas, zvolte **nahradit další** vedle **nahradit** textového pole. Chcete-li nahradit všechny shody, zvolte **Nahradit vše** tlačítko.  
   
- Chcete-li změnit barvu zvýraznění shody, zvolte **nástroje** nabídce vyberte možnost **možnosti**a klikněte na tlačítko **prostředí**a vyberte **písma a barvy** . V **zobrazit nastavení pro** seznamu vyberte **textový Editor**a pak v **zobrazení položek** seznamu vyberte **najít zvýraznění (rozšíření)**.  
+ Chcete-li změnit barvu zvýraznění shody, zvolte **nástroje** nabídce vyberte možnost **možnosti**a klikněte na tlačítko **prostředí**a vyberte **písma a barvy** . V **zobrazit nastavení pro** seznamu vyberte **textový Editor**a pak v **zobrazení položek** seznamu vyberte **najít zvýraznění (rozšíření)** .  
   
 ### <a name="searching-tool-windows"></a>Hledání nástroj Windows  
  Můžete použít **najít** v ovládacím prvku kódu nebo textových oknech, jako například **výstup** windows, a **výsledky hledání** výběrem **najít a nahradit**na **upravit** nabídky nebo (CTRL + F).  

@@ -75,7 +75,7 @@ Zavřete všechny DataTips na **ladění** nabídce vyberte možnost **vymazat v
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Zavřete všechny DataTips pro konkrétní soubor
 
-Zavřete všechny DataTips pro konkrétní soubor, na **ladění** nabídce vyberte možnost **vymazat všechny DataTips připojené k \<název souboru >**.
+Zavřete všechny DataTips pro konkrétní soubor, na **ladění** nabídce vyberte možnost **vymazat všechny DataTips připojené k \<název souboru >** .
 
 ## <a name="expand-and-edit-information"></a>Rozbalte a upravit informace
 Používání tipů DataTips rozbalte pole, struktury nebo objektu pro zobrazení členů. Můžete také upravit hodnotu proměnné z DataTip.

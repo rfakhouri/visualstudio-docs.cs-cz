@@ -55,7 +55,7 @@ Pokrytí kódu vyžaduje soubory symbolů (*PDB* soubory) pro sestavení. Pro se
 ```
 
 > [!NOTE]
-> Vyhodnocování symbolů může trvat dobu, zvláště při použití vzdáleného umístění souborů s mnoha sestavení. Zvažte proto možnost zkopírování *PDB* soubory do stejného umístění jako binární soubor (*.dll* a *.exe*) soubory.
+> Vyhodnocování symbolů může trvat dobu, zvláště při použití vzdáleného umístění souborů s mnoha sestavení. Zvažte proto možnost zkopírování *PDB* soubory do stejného umístění jako binární soubor ( *.dll* a *.exe*) soubory.
 
 ### <a name="exclude-and-include"></a>Vyloučení a zahrnutí
 

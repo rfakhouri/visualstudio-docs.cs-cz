@@ -52,6 +52,6 @@ ms.locfileid: "54763626"
 
  Tento příklad vytvoří následující výstup.
 
- **Volání konstruktoru base.**
+ **Volání konstruktoru base.** 
 **Odvozené DoSomething nazývá - inicializovat? Ne**
 **volání odvozené ctor.**

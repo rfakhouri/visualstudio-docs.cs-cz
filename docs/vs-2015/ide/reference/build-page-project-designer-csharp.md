@@ -40,7 +40,7 @@ Použití **sestavení** stránku **Návrháře projektu** k určení vlastnost�
  Určuje které nastavení konfigurace má být zobrazeno nebo upraveno. Toto nastavení může být **aktivní (ladění)** (Toto je výchozí), **ladění**, **vydání**, nebo **všechny konfigurace**.  
   
  **Platforma**  
- Určuje které nastavení platformy má být zobrazeno nebo upraveno. Ve výchozím nastavení **aktivní (jakýkoli procesor)**. Můžete změnit aktivní platformu pomocí **nástroje Configuration Manager**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).  
+ Určuje které nastavení platformy má být zobrazeno nebo upraveno. Ve výchozím nastavení **aktivní (jakýkoli procesor)** . Můžete změnit aktivní platformu pomocí **nástroje Configuration Manager**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="general"></a>Obecné  
  Tyto možnosti umožňují konfigurovat několik nastavení kompilátoru jazyka C#.  

@@ -64,7 +64,7 @@ Tento návod vás postupně provede vytváření, spouštění a přizpůsobení
   
     Zobrazí se dialogové okno **Nový projekt**.  
   
-3. V části **nainstalované šablony**, klikněte na tlačítko **Visual C#**.  
+3. V části **nainstalované šablony**, klikněte na tlačítko **Visual C#** .  
   
 4. V seznamu typů aplikací, klikněte na tlačítko **knihovny tříd**.  
   

@@ -72,9 +72,9 @@ ms.locfileid: "65687385"
 
  Tento příklad vytvoří následující výstup.
 
- **Vyžádání: Odepřít volajícího, jež nemá žádný vliv na vyžádání s potvrzením oprávnění.**
-**LinkDemand: Odepřít volajícího, jež nemá žádný vliv na LinkDemand s potvrzením oprávnění.**
-**LinkDemand: Odepřít volajícího, jež nemá žádný vliv kódem chráněné LinkDemand.**
+ **Vyžádání: Odepřít volajícího, jež nemá žádný vliv na vyžádání s potvrzením oprávnění.** 
+**LinkDemand: Odepřít volajícího, jež nemá žádný vliv na LinkDemand s potvrzením oprávnění.** 
+**LinkDemand: Odepřít volajícího, jež nemá žádný vliv kódem chráněné LinkDemand.** 
 **LinkDemand: Tato odepřít nemá žádný vliv kódem chráněné LinkDemand.**
 ## <a name="see-also"></a>Viz také
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName><xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>

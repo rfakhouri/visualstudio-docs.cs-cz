@@ -129,7 +129,7 @@ Pokud máte přístup k DSL povolené MEF vytvořené sobě nebo někomu jinému
 
    - Toto sestavení obsahuje obvykle název, který končí na ". DSL.dll".
 
-   - Pokud máte přístup k projektu DSL, můžete najít soubor sestavení v adresáři **Dsl\bin\\\\***
+   - Pokud máte přístup k projektu DSL, můžete najít soubor sestavení v adresáři **Dsl\bin\\\\** *
 
    - Pokud máte přístup k souboru DSL VSIX, můžete najít sestavení tak, že změníte příponu názvu souboru VSIX na ".zip". Soubor .zip dekomprimujte.
 

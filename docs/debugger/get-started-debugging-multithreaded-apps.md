@@ -41,7 +41,7 @@ Nejprve musíte projekt aplikace s více vlákny. Následuje příklad.
 1. Otevřít Visual Studio a vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
-    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly** (nebo **c ++**), zvolte **šablony**a pak:
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly** (nebo **c ++** ), zvolte **šablony**a pak:
 
     - Pro C# nebo Visual Basic, zvolte **vytvořit nový projekt Konzolová aplikace (.NET Framework)** buď C# nebo Visual Basic. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
     - Pro jazyk C++, zvolte **vytvořit nový projekt konzolové aplikace** jazyka C++. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
@@ -51,9 +51,9 @@ Nejprve musíte projekt aplikace s více vlákny. Následuje příklad.
     ::: moniker range="vs-2017"
     V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně zvolte následující:
 
-    - Pro C# aplikace v části **Visual C#** , zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)**.
-    - Pro aplikace v jazyce Visual Basic v části **jazyka Visual Basic**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)**.
-    - Pro aplikace s C++ v rámci **Visual C++**, zvolte **Windows Desktop**a klikněte na tlačítko **Konzolová aplikace Windows**.
+    - Pro C# aplikace v části **Visual C#** , zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)** .
+    - Pro aplikace v jazyce Visual Basic v části **jazyka Visual Basic**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)** .
+    - Pro aplikace s C++ v rámci **Visual C++** , zvolte **Windows Desktop**a klikněte na tlačítko **Konzolová aplikace Windows**.
 
     Zadejte název, například **MyThreadWalkthroughApp** a klikněte na tlačítko **OK**.
     ::: moniker-end

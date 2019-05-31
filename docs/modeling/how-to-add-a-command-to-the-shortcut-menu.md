@@ -147,7 +147,7 @@ V tomto tématu použijte metodu, pokud:
 
 ## <a name="CommandSet"></a> Definuje chování příkazu
 
-Některé příkazy, které jsou implementovány v dílčí třídě, která je deklarována v DslPackage\GeneratedCode\CommandSet.cs již vašeho DSL. Přidání nových příkazů, musí tato třída rozšířit tak, že vytvoříte nový soubor, který obsahuje deklaraci částečné stejné třídy. Název třídy je obvykle  *\<YourDslName >*`CommandSet`. To je užitečné začněte tím, že název třídy ověření a zkontrolujete jeho obsah.
+Některé příkazy, které jsou implementovány v dílčí třídě, která je deklarována v DslPackage\GeneratedCode\CommandSet.cs již vašeho DSL. Přidání nových příkazů, musí tato třída rozšířit tak, že vytvoříte nový soubor, který obsahuje deklaraci částečné stejné třídy. Název třídy je obvykle  *\<YourDslName >* `CommandSet`. To je užitečné začněte tím, že název třídy ověření a zkontrolujete jeho obsah.
 
 Třída set příkazu je odvozen z <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 

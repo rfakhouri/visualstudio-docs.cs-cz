@@ -144,7 +144,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
   **Chcete-li vybrat konkrétní paměti diagnostické funkce s afxmemdf –**  
   
-- Pokud chcete přesnější kontrolu nad paměti diagnostické funkce, můžete selektivně zapnout diagnostické funkce jednotlivých paměti zapnout a vypnout tak, že nastavíte hodnotu globální proměnné knihovny MFC [afxmemdf –](https://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Tato proměnná může mít následující hodnoty podle specifikace výčtového typu **afxmemdf –**.  
+- Pokud chcete přesnější kontrolu nad paměti diagnostické funkce, můžete selektivně zapnout diagnostické funkce jednotlivých paměti zapnout a vypnout tak, že nastavíte hodnotu globální proměnné knihovny MFC [afxmemdf –](https://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Tato proměnná může mít následující hodnoty podle specifikace výčtového typu **afxmemdf –** .  
   
   |Value|Popis|  
   |-----------|-----------------|  
@@ -191,7 +191,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    Všimněte si, že se výpisy paměti kontrola uváděn v závorkách `#ifdef` [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** blokuje tak, aby se kompilují pouze v ladicí verze aplikace.  
+    Všimněte si, že se výpisy paměti kontrola uváděn v závorkách `#ifdef` [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/  **#endif** blokuje tak, aby se kompilují pouze v ladicí verze aplikace.  
   
     Teď, když víte, existuje nevracení paměti, můžete použít jiné členské funkce [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) , který vám pomůže ho najít.  
   
@@ -364,7 +364,7 @@ Phone #: 581-0215
 #### <a name="BKMK_Customizing_object_dumps"></a> Vypíše přizpůsobení objektu  
  Pokud odvodíte třídu od [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a), můžete přepsat `Dump` členskou funkci na další informace při použití [DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) na objekty s výpisem paměti pro [Okno výstup](../ide/reference/output-window.md).  
   
- `Dump` Funkce zapíše textovou reprezentaci řetězce objektu členské proměnné do kontextu s výpisem paměti ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). Kontext s výpisem paměti je podobný datovému proudu vstupně-výstupních operací. Můžete použít operátor, který připojení (**<<**) k odesílání dat do `CDumpContext`.  
+ `Dump` Funkce zapíše textovou reprezentaci řetězce objektu členské proměnné do kontextu s výpisem paměti ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). Kontext s výpisem paměti je podobný datovému proudu vstupně-výstupních operací. Můžete použít operátor, který připojení ( **<<** ) k odesílání dat do `CDumpContext`.  
   
  Při přepsání `Dump` funkce, měli byste nejprve zavolat základní třídu verzi `Dump` Vypsat obsah objektu základní třídy. Potom výstupní textový popis a hodnotu pro každou proměnnou člena odvozené třídy.  
   
@@ -438,7 +438,7 @@ pMyPerson->Dump( afxDump );
   
    1. V  **\<Projekt > stránky vlastností** dialogové okno, klikněte na tlačítko **nástroje Configuration Manager** tlačítko.  
   
-   2. V [dialogové okno nástroje Configuration Manager](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), vyhledejte svůj projekt v mřížce. V **konfigurace** sloupci vyberte  **\<nový … >**.  
+   2. V [dialogové okno nástroje Configuration Manager](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), vyhledejte svůj projekt v mřížce. V **konfigurace** sloupci vyberte  **\<nový … >** .  
   
    3. V [dialogové okno Nový projekt konfigurace](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), zadejte název pro novou konfiguraci, jako je například "Částečné Debug", **název konfigurace projektu** pole.  
   

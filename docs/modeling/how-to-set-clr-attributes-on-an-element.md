@@ -25,7 +25,7 @@ Vlastní atributy jsou speciální atributy, které lze přidat do domény prvky
 
 1. V **Průzkumník DSL**, vyberte požadovaný prvek, ke kterému chcete přidat vlastní atribut.
 
-2. V **vlastnosti** okna, další **vlastní atributy** vlastnosti, klikněte na tlačítko Procházet (**...** ) ikonu.
+2. V **vlastnosti** okna, další **vlastní atributy** vlastnosti, klikněte na tlačítko Procházet ( **...** ) ikonu.
 
      **Upravit atributy** zobrazí se dialogové okno.
 

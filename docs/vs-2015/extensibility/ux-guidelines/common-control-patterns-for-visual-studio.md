@@ -298,7 +298,7 @@ ms.locfileid: "63430031"
 
  Kdy použít jen pro tlačítko se třemi tečkami krátký tlačítko:
 
-- Pokud existuje více než jeden dlouhý **[Procházet...]**  tlačítko v dialogovém okně, například pokud několik polí Povolit pro procházení. Používat krátké **[...]**  tlačítko pro každý z nich matoucí přístupové klíče vytvořené v této situaci vyhnout (**& Procházet** a **B & rocházet** v dialogovém okně stejné).
+- Pokud existuje více než jeden dlouhý **[Procházet...]**  tlačítko v dialogovém okně, například pokud několik polí Povolit pro procházení. Používat krátké **[...]**  tlačítko pro každý z nich matoucí přístupové klíče vytvořené v této situaci vyhnout ( **& Procházet** a **B & rocházet** v dialogovém okně stejné).
 
 - V dialogovém okně úzkou nebo neexistuje žádný přiměřené umísťovat dlouhé tlačítko.
 
@@ -348,7 +348,7 @@ ms.locfileid: "63430031"
  Hypertextové odkazy se skvěle hodí pro navigaci na základě akce, jako je otevření tématu nápovědy, modální dialogové okno nebo průvodce. Pokud hypertextový odkaz se používá pro příkaz, je vždy zobrazit viditelné a výrazné změny v uživatelském rozhraní. Obecně platí akce, které se zavázali k akci (třeba uložit, zrušit a odstranit) se lépe předávají pomocí tlačítka.
 
 #### <a name="writing-style"></a>Styl psaní
- Postupujte podle [Windows Desktop pokyny pro text v uživatelském rozhraní](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). Nepoužívejte "Přečtěte si další informace o," "Řekněte mi více o" nebo "Get s tímto vám pomůže" frázového. Místo toho věta text nápovědy odkazu z hlediska primární otázku zodpoví technický obsah nápovědy. Například "**jak mohu přidat server do Průzkumníka serveru?**"
+ Postupujte podle [Windows Desktop pokyny pro text v uživatelském rozhraní](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). Nepoužívejte "Přečtěte si další informace o," "Řekněte mi více o" nebo "Get s tímto vám pomůže" frázového. Místo toho věta text nápovědy odkazu z hlediska primární otázku zodpoví technický obsah nápovědy. Například "**jak mohu přidat server do Průzkumníka serveru?** "
 
 #### <a name="visual-style"></a>Vizuální styl
 

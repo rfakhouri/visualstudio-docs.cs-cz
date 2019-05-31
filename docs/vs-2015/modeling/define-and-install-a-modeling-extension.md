@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60049734"
@@ -116,7 +116,7 @@ V sadě Visual Studio můžete definovat rozšíření pro modelování diagram�
   
     1. V **Průzkumníka řešení**, v místní nabídce vašeho projektu a klikněte na tlačítko **otevřít složku v Průzkumníku Windows**.  
   
-    2. Vyhledejte soubor **bin\\\*\\**_YourProject_**VSIX.**  
+    2. Vyhledejte soubor **bin\\\*\\** _YourProject_**VSIX.**  
   
 2. Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat rozšíření. To může být vlastní počítač nebo jiný.  
   

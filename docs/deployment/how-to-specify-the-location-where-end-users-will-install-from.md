@@ -39,7 +39,7 @@ Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 
 2. Klikněte na tlačítko **publikovat** kartu.
 
-3. Do pole Adresa URL instalace, zadejte umístění instalace pomocí plně kvalifikovanou adresu URL pomocí formátu *http://www.microsoft.com/ApplicationName*, nebo cestu UNC ve formátu  *\\\Server\ApplicationName*.
+3. Do pole Adresa URL instalace, zadejte umístění instalace pomocí plně kvalifikovanou adresu URL pomocí formátu *http://www.microsoft.com/ApplicationName* , nebo cestu UNC ve formátu  *\\\Server\ApplicationName*.
 
 ## <a name="see-also"></a>Viz také:
 - [Postupy: Zadejte, kde sada Visual Studio zkopíruje soubory](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)

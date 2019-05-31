@@ -24,7 +24,7 @@ ms.locfileid: "62988139"
   Obecně platí, sestavování a ladění řešení služby SharePoint je shodný sestavování a ladění ostatních typů projektů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Témata v této části popisují, které existují rozdíly.
 
 ## <a name="project-output-for-sharepoint-solutions"></a>Výstup projektu pro řešení služby SharePoint
- Vytváření řešení služby SharePoint vytvoří sestavení a balíček řešení (*.wsp*) soubor. Následující tabulka uvádí umístění těchto souborů během sestavování.
+ Vytváření řešení služby SharePoint vytvoří sestavení a balíček řešení ( *.wsp*) soubor. Následující tabulka uvádí umístění těchto souborů během sestavování.
 
 |Vytvoření položky|Výstupní složka|
 |----------------|-------------------|

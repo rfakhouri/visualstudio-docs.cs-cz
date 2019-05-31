@@ -163,7 +163,7 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C nebo Visu
 
 |Nastavení|Popis|
 |-------------|-----------------|
-|**Optimalizace**|Určuje, zda by měl kompilátor optimalizovat kód, který vytvoří. Optimalizace změní kód, který se spouští. Optimalizovaný kód již neodpovídá zdrojovému kódu, takže ladění obtížnější.<br /><br /> Výchozí možnost (**zakázáno (/ 0d)**) potlačí optimalizaci. Můžete vyvíjet s potlačenou optimalizací a potom zapnout, když vytváříte výrobní verzi kódu.|
+|**Optimalizace**|Určuje, zda by měl kompilátor optimalizovat kód, který vytvoří. Optimalizace změní kód, který se spouští. Optimalizovaný kód již neodpovídá zdrojovému kódu, takže ladění obtížnější.<br /><br /> Výchozí možnost (**zakázáno (/ 0d)** ) potlačí optimalizaci. Můžete vyvíjet s potlačenou optimalizací a potom zapnout, když vytváříte výrobní verzi kódu.|
 
 ## <a name="linker-folder-debugging-category"></a>Složka linkeru (kategorie ladění)
 
@@ -175,7 +175,7 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C nebo Visu
 |**Generovat soubor mapy** ([/MAP](/cpp/build/reference/map-generate-mapfile))|Přikáže linkeru, aby generoval soubor mapy během propojení. Výchozí nastavení je Ne. Další informace najdete v tématu [parametr/map (generování souboru mapování)](/cpp/build/reference/map-generate-mapfile).|
 |**Název souboru mapy** ([/MAP:](/cpp/build/reference/map-generate-mapfile)*název*)|Pokud vyberete možnost Generovat soubor mapy, můžete zadat soubor mapy v tomto poli. Další informace najdete v tématu [parametr/map (generování souboru mapování)](/cpp/build/reference/map-generate-mapfile).|
 |**Mapovat exporty** ([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Obsahuje exportované funkce v souboru mapy. Výchozí nastavení je Ne. Další informace najdete v tématu [parametr/MapInfo (zahrnout informace do souboru mapování)](/cpp/build/reference/mapinfo-include-information-in-mapfile).|
-|**Laditelné sestavení** ([/assemblydebug](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Určuje nastavení pro Linker/assemblydebug – možnost. Možné hodnoty jsou:<br /><br /> -   **Nevysílat žádný laditelný atribut**.<br />-   **Modul runtime sledování a zakázat optimalizace (/ ASSEMBLYDEBUG)**. Toto je výchozí nastavení<br />-   **Žádný modul runtime sledování a povolit optimizations(/ASSEMBLYDEBUG:DISABLE)**.<br />-   **\<Zdědit z nadřazené nebo projektu výchozích nastavení >**.<br />-Další informace najdete v tématu [/assemblydebug (přidání atributu DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|
+|**Laditelné sestavení** ([/assemblydebug](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Určuje nastavení pro Linker/assemblydebug – možnost. Možné hodnoty jsou:<br /><br /> -   **Nevysílat žádný laditelný atribut**.<br />-   **Modul runtime sledování a zakázat optimalizace (/ ASSEMBLYDEBUG)** . Toto je výchozí nastavení<br />-   **Žádný modul runtime sledování a povolit optimizations(/ASSEMBLYDEBUG:DISABLE)** .<br />-    **\<Zdědit z nadřazené nebo projektu výchozích nastavení >** .<br />-Další informace najdete v tématu [/assemblydebug (přidání atributu DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|
 
  Můžete změnit tato nastavení ve složce vlastnosti konfigurace (kategorie ladění) programově pomocí rozhraní Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings. Další informace naleznete v tématu <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>.
 

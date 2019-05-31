@@ -63,9 +63,9 @@ ms.locfileid: "65687329"
 
  Tento příklad vytvoří následující výstup.
 
- **Vytvoření instance SecuredTypeWithFields.**
+ **Vytvoření instance SecuredTypeWithFields.** 
 **Zabezpečené typ pole: 22, 33**
-**změna zabezpečeného typu pole...**
+**změna zabezpečeného typu pole...** 
 **Pole objektů do mezipaměti: 99, 33**
 ## <a name="related-rules"></a>Související pravidla
  [CA1051: Nedeklarujte viditelná pole instance](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)

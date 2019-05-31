@@ -24,7 +24,7 @@ Chcete-li povolit programu otevírání souborů obrázků a výběr barvy pozad
 
 ## <a name="to-add-dialog-components-to-your-form"></a>Přidat do svého formuláře komponenty dialogových oken
 
-1. Zvolte **Návrháře formulářů Windows** (**Form1.cs [Design]** nebo **Form1.vb [Design]**) a pak otevřete **dialogová okna** skupiny  **Panel nástrojů**.
+1. Zvolte **Návrháře formulářů Windows** (**Form1.cs [Design]** nebo **Form1.vb [Design]** ) a pak otevřete **dialogová okna** skupiny  **Panel nástrojů**.
 
     > [!NOTE]
     > **Dialogová okna** skupiny **nástrojů** komponentami, které otevírají mnoho užitečných dialogových oken, které je možné použít pro otevírání a ukládání souborů, procházení složek a výběru písma a barvy. V tomto projektu použijete dvě komponenty dialogového okna: OpenFileDialog – a ColorDialog

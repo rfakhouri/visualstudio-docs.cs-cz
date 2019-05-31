@@ -190,11 +190,11 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
    - **1** podílí každý odkaz na stav tohoto přesně jednu instanci této role.  
   
-   - **1..\\*** stav, který jeden nebo více instancí této role, které jsou součástí každého odkazu.  
+   - **1..\\** * stav, který jeden nebo více instancí této role, které jsou součástí každého odkazu.  
   
    - **0..1** stanovit účast je dobrovolná.  
   
-   - **\\*** do stavu, který nula nebo víc instancí této role, na které se účastní odkazu.  
+   - **\\** * do stavu, který nula nebo víc instancí této role, na které se účastní odkazu.  
   
 > [!NOTE]
 > Mnoho týmů Neumísťujte násobnost informace na diagramy případů použití, byste museli opustit násobnosti na výchozí hodnotu 1. Místo toho poskytují informace v popisy případy použití. V takovém případě se skryjí všechny násobnosti v diagramech případů použití.  

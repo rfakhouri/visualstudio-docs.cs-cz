@@ -109,7 +109,7 @@ Uživatelům také můžete vložit prvky do dalších prvků.
 
       Nástroj navigace cestu slouží k vytvoření jednotlivé cesty:
 
-      1. V části **pracovat sloučení vytvořením odkazů na cestách**, klikněte na tlačítko  **\<přidat cestu >**.
+      1. V části **pracovat sloučení vytvořením odkazů na cestách**, klikněte na tlačítko  **\<přidat cestu >** .
 
       2. Klikněte na rozevírací šipku napravo od položky seznamu. Zobrazení stromu se zobrazí.
 

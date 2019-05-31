@@ -59,7 +59,7 @@ Služby starší verze jazyka můžete migrovat na novější verzi sady Visual 
   
     - Na **aplikace** kartu, změňte **Cílová architektura** k **4.6.1**.  
   
-    - Na **ladění** kartě **externí program Start** zadejte  **\<cestu instalace sady Visual Studio > \Common7\IDE\devenv.exe.**.  
+    - Na **ladění** kartě **externí program Start** zadejte  **\<cestu instalace sady Visual Studio > \Common7\IDE\devenv.exe.** .  
   
          V **argumenty příkazového řádku** zadejte /**rootsuffix Exp**.  
   
@@ -105,7 +105,7 @@ Služby starší verze jazyka můžete migrovat na novější verzi sady Visual 
   
     - Soubor uložte a zavřete.  
   
-11. Sestavte řešení. Vytvořené soubory, které jsou nasazené na **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.  
+11. Sestavte řešení. Vytvořené soubory, které jsou nasazené na **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** .  
   
 12. Spusťte ladění. Otevřít druhou instanci aplikace Visual Studio.  
   

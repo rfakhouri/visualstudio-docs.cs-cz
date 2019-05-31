@@ -39,7 +39,7 @@ ms.locfileid: "62548343"
 ---
 # <a name="find-and-replace-text"></a>Vyhledání a nahrazení textu
 
-Můžete najít a nahradit text v editoru sady Visual Studio s použitím [najít a nahradit](#find-and-replace-control) (**Ctrl**+**F** nebo **Ctrl** + **H**) nebo [najít/nahradit v souborech](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F**  nebo **Ctrl**+**Shift**+**H**). Můžete také najít a nahradit pouze *některé* instance modelu s použitím  *[více blikající kurzor o výběr](#multi-caret-selection)*.
+Můžete najít a nahradit text v editoru sady Visual Studio s použitím [najít a nahradit](#find-and-replace-control) (**Ctrl**+**F** nebo **Ctrl** + **H**) nebo [najít/nahradit v souborech](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F**  nebo **Ctrl**+**Shift**+**H**). Můžete také najít a nahradit pouze *některé* instance modelu s použitím  *[více blikající kurzor o výběr](#multi-caret-selection)* .
 
 > [!TIP]
 > Pokud se přejmenování symboly kódu, jako jsou proměnné a metody, je lepší *[Refaktorujte](../ide/reference/rename.md)* je než můžete najít a nahradit. Refaktoring je inteligentní a rozumí oboru, zatímco najít a nahradit slepě nahradí všechny instance.
@@ -62,7 +62,7 @@ Můžete nastavit obor hledání na aktuální dokument, aktuální řešení ne
 
 Možnostem výměny můžete přejít kliknutím na tlačítko vedle **najít** textového pole. Chcete-li nahrazovat po jednom čas, zvolte **nahradit další** vedle **nahradit** textového pole. Chcete-li nahradit všechny shody, zvolte **Nahradit vše** tlačítko.
 
-Chcete-li změnit barvu zvýraznění shody, zvolte **nástroje** nabídce vyberte možnost **možnosti**a klikněte na tlačítko **prostředí**a vyberte **písma a barvy** . V **zobrazit nastavení pro** seznamu vyberte **textový Editor**a pak v **zobrazení položek** seznamu vyberte **najít zvýraznění (rozšíření)**.
+Chcete-li změnit barvu zvýraznění shody, zvolte **nástroje** nabídce vyberte možnost **možnosti**a klikněte na tlačítko **prostředí**a vyberte **písma a barvy** . V **zobrazit nastavení pro** seznamu vyberte **textový Editor**a pak v **zobrazení položek** seznamu vyberte **najít zvýraznění (rozšíření)** .
 
 ### <a name="search-tool-windows"></a>Hledání oken nástrojů
 
@@ -92,7 +92,7 @@ Můžete definovat obor hledání výběrem **zvolit složky pro hledání** tla
 
 ### <a name="create-custom-component-sets"></a>Vytvoření vlastních sad součástí
 
-Součást sady můžete definovat jako obor hledání výběrem **upravit sadu vlastních komponent** vedle **Hledat v** pole. Můžete určit nainstalované součásti .NET nebo COM, projekty aplikace Visual Studio, které jsou součástí vašeho řešení nebo libovolné sestavení nebo typ knihovny (*.dll*, *.tlb*, *.olb*, *.exe*, nebo *.ocx*). Chcete-li prohledat odkazy, vyberte **Hledat v odkazech** pole.
+Součást sady můžete definovat jako obor hledání výběrem **upravit sadu vlastních komponent** vedle **Hledat v** pole. Můžete určit nainstalované součásti .NET nebo COM, projekty aplikace Visual Studio, které jsou součástí vašeho řešení nebo libovolné sestavení nebo typ knihovny ( *.dll*, *.tlb*, *.olb*, *.exe*, nebo *.ocx*). Chcete-li prohledat odkazy, vyberte **Hledat v odkazech** pole.
 
 ## <a name="multi-caret-selection"></a>Výběr více blikajícího kurzoru
 
@@ -121,10 +121,10 @@ Použijte následující klíče a akcí pro výběr více blikající kurzor o 
 |**CTRL**+**Alt** + klikněte na|Přidat sekundární blikajícího kurzoru|
 |**CTRL**+**Alt** + dvakrát klikněte na panel|Přidat sekundární slovo výběr|
 |**CTRL**+**Alt** + klikněte na + přetažení|Přidat sekundární výběr|
-|**SHIFT**+**Alt**+**.**|Přidejte další odpovídající text jako výběr|
-|**Ctrl**+**Shift**+**Alt**+**,**|Přidejte všechny odpovídající text jako výběry|
-|**SHIFT**+**Alt**+**,**|Odebrat posledního výskytu vybrané|
-|**Ctrl**+**Shift**+**Alt**+**.**|Přeskočit další odpovídající výskyt|
+|**SHIFT**+**Alt**+ **.**|Přidejte další odpovídající text jako výběr|
+|**Ctrl**+**Shift**+**Alt**+ **,**|Přidejte všechny odpovídající text jako výběry|
+|**SHIFT**+**Alt**+ **,**|Odebrat posledního výskytu vybrané|
+|**Ctrl**+**Shift**+**Alt**+ **.**|Přeskočit další odpovídající výskyt|
 |**ALT** + klikněte na|Přidat pole výběru|
 |**ESC** nebo klikněte na tlačítko|Zrušte zaškrtnutí všech výběrů|
 

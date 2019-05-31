@@ -177,7 +177,7 @@ ms.locfileid: "63438552"
 
 5. Zakážete připojení k databázi. Odpojit síťový kabel z vašeho počítače, pokud se databáze nachází na serveru nebo zastavit službu systému SQL Server, pokud se databáze nachází na vašem vývojovém počítači.
 
-6. Otevřete aplikaci Excel a pak otevřete **Moje hlavní Detail.xlsx** z *\bin* adresáře (*\My Master-Detail\bin* v jazyce Visual Basic nebo *\My Master-Detail\bin\ ladění* v jazyce C#).
+6. Otevřete aplikaci Excel a pak otevřete **Moje hlavní Detail.xlsx** z *\bin* adresáře ( *\My Master-Detail\bin* v jazyce Visual Basic nebo *\My Master-Detail\bin\ ladění* v jazyce C#).
 
 7. Projděte si některé záznamy zobrazit, že do listu funguje normálně při odpojení.
 

@@ -11,7 +11,7 @@ ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c6dabbae5f2d3758aebe0562f99767ee6993d80
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54756736"
@@ -23,16 +23,16 @@ Můžete generovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro p
   
  Pro výčet identifikátorů porovnání kategorií a pole, zadejte na příkazovém řádku následující:  
   
- **VSPerfReport/querydifftables***VspFileName1* *VspFileName2*  
+ **VSPerfReport/querydifftables***VspFileName1*  *VspFileName2*  
   
  Použijte následující syntaxi pro vytvoření sestavy porovnání:  
   
- **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [**/**`Options`]  
+ **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [ **/** `Options`]  
   
  Z následující tabulky můžete přidat možnosti **VSPerfReport/diff** příkazového řádku.  
   
 |Možnost|Popis|  
 |------------|-----------------|  
-|**DiffThreshold:**[*hodnotu*]|Rozdíl ignorujte, pokud byl pod tuto procentuální prahovou hodnotu. Také se nezobrazí nová data s hodnotami, které jsou pod touto prahovou hodnotou.|  
+|**DiffThreshold:** [*hodnotu*]|Rozdíl ignorujte, pokud byl pod tuto procentuální prahovou hodnotu. Také se nezobrazí nová data s hodnotami, které jsou pod touto prahovou hodnotou.|  
 |**DiffTable:** *TableName*|Pomocí této tabulce můžete porovnat soubory. Ve výchozím nastavení se používá tabulka funkcí. Zadejte identifikátor, který je uveden v **VSPerfReport/querydifftables**.|  
 |**DiffColumn:** *Názevsloupce*|Tento sloupec slouží k porovnání hodnoty. Ve výchozím nastavení se používá sloupec procent výhradních vzorků. Zadejte identifikátor, který je uveden v **VSPerfReport/querydifftables**.|

@@ -141,7 +141,7 @@ Tento názorný postup vás provede procesem pomocí analýzy kódu pro analýzu
 
    1. Vyberte **podepsat sestavení** zaškrtávací políčko.
 
-   1. V **vybrat soubor klíče název řetězce** seznamu vyberte  **\<nový … >**.
+   1. V **vybrat soubor klíče název řetězce** seznamu vyberte  **\<nový … >** .
 
       **Vytvořit klíč se silným názvem** zobrazí se dialogové okno.
 

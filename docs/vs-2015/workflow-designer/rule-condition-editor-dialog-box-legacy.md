@@ -47,7 +47,7 @@ Toto téma popisuje, jak používat **Editor podmínek pravidla** dialogové okn
 |**OK**|Klikněte na tlačítko Uložit podmínka pro pravidlo.|  
   
 ## <a name="entering-condition-expressions"></a>Zadávání výrazů podmínku  
- Podmínka výrazy se zadávají jako text. Můžete zadat **to.** v editoru odkazovat na pole, vlastnosti a metody použité v pracovním postupu pomocí technologie IntelliSense jako nabídky. Můžete taky zadat název člena pracovního postupu přímo. Logické operátory můžete přidat do podmínky, jako je například AND, OR a NOT. Můžete také přidat predikáty. Predikát je binárním operátorem a dva operandy. Binární operátory jsou podporované jsou **==**, **>**, **\<**, **>=**, a **<=**. Konstantní hodnota, aritmetické funkce a oboru veřejné členy jsou podporované operandy.  
+ Podmínka výrazy se zadávají jako text. Můžete zadat **to.** v editoru odkazovat na pole, vlastnosti a metody použité v pracovním postupu pomocí technologie IntelliSense jako nabídky. Můžete taky zadat název člena pracovního postupu přímo. Logické operátory můžete přidat do podmínky, jako je například AND, OR a NOT. Můžete také přidat predikáty. Predikát je binárním operátorem a dva operandy. Binární operátory jsou podporované jsou **==** , **>** , **\<** , **>=** , a **<=** . Konstantní hodnota, aritmetické funkce a oboru veřejné členy jsou podporované operandy.  
   
  Můžete určit typ pro porovnání, a můžete porovnat s **null** nebo prázdný řetězec. Vnořená volání do členů provést na proměnnou, která obsahuje komplexní typ, třeba `this.Address.State == "WA"`.  
   

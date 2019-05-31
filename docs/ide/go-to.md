@@ -27,7 +27,7 @@ Visual Studio **přejít na** příkazy provádějí cílené hledání kódu v�
 
 Vstup | Funkce
 ------------ | ---
-**Klávesnice** | Stisknutím klávesy **Ctrl**+**T** nebo **Ctrl**+**,**
+**Klávesnice** | Stisknutím klávesy **Ctrl**+**T** nebo **Ctrl**+ **,**
 **Myši** | Vyberte **upravit** > **přejít na** > **ejít na vše**
 
 Malé okno se zobrazí v horní části přímo z editoru kódu.
@@ -38,7 +38,7 @@ Při psaní do textového pole, výsledky se zobrazí v rozevíracím seznamu po
 
 ![Navigovat na okno](../ide/media/vside_navigatetowindow.png)
 
-Můžete také zadat otazník (**?**) Chcete-li získat další pomoc.
+Můžete také zadat otazník ( **?** ) Chcete-li získat další pomoc.
 
 ![Přejít na všechny nápovědy](media/go-to-all-help.png)
 

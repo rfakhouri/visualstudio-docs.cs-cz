@@ -10,7 +10,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e953d9051b9bc7e95dc29e02eb580c4d93fca26
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60066946"
@@ -98,7 +98,7 @@ Tento návod se naučíte vytvořit jednoduché matematické sadu SDK jako Visua
   
 14. Na místní nabídku pro složku \js\, zvolte **přidat**, **nová položka**.  
   
-15. V části **položky Visual C#**, vyberte **webové** kategorie a pak vyberte **soubor JavaScript** položky. Název souboru `arithmetic.js`a klikněte na tlačítko **přidat** tlačítko.  
+15. V části **položky Visual C#** , vyberte **webové** kategorie a pak vyberte **soubor JavaScript** položky. Název souboru `arithmetic.js`a klikněte na tlačítko **přidat** tlačítko.  
   
 16. Vložte následující kód do arithmetic.js:  
   

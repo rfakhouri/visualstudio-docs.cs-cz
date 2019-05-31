@@ -131,7 +131,7 @@ Můžete rozšíření jazyka specifického pro doménu (DSL) pomocí Managed Ex
   
    - Toto sestavení obsahuje obvykle název, který končí na ". DSL.dll".  
   
-   - Pokud máte přístup k projektu DSL, můžete najít soubor sestavení v adresáři **Dsl\bin\\\\***  
+   - Pokud máte přístup k projektu DSL, můžete najít soubor sestavení v adresáři **Dsl\bin\\\\** *  
   
    - Pokud máte přístup k souboru DSL VSIX, můžete najít sestavení tak, že změníte příponu názvu souboru VSIX na ".zip". Soubor .zip dekomprimujte.  
   
@@ -147,7 +147,7 @@ Můžete rozšíření jazyka specifického pro doménu (DSL) pomocí Managed Ex
   
    - System.Windows.Forms.dll  
   
-4. Vytvořte VSIX projekt ve stejném řešení. Chcete-li to provést, v **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#**, klikněte na tlačítko **rozšiřitelnost**a pak vyberte  **Projekt VSIX**.  
+4. Vytvořte VSIX projekt ve stejném řešení. Chcete-li to provést, v **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#** , klikněte na tlačítko **rozšiřitelnost**a pak vyberte  **Projekt VSIX**.  
   
 5. V Průzkumníku řešení klikněte pravým tlačítkem na projekt VSIX a potom klikněte na tlačítko **nastavit jako spouštěný projekt**.  
   

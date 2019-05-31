@@ -32,7 +32,7 @@ Pokud nemáte nainstalovanou sadu Visual Studio, je možné zabránit Just-In-Ti
 
 - Pokud se snažíte spustit webovou aplikaci, zakážete ladění skriptů:
 
-  Ve Windows **ovládací panely** > **síť a Internet** > **Možnosti Internetu**vyberte **skript zakázání (ladění Aplikace Internet Explorer)** a **zakázat ladění skriptů (ostatní)**. Přesný postup a nastavení závisí na vaší verzi Windows a prohlížeče.
+  Ve Windows **ovládací panely** > **síť a Internet** > **Možnosti Internetu**vyberte **skript zakázání (ladění Aplikace Internet Explorer)** a **zakázat ladění skriptů (ostatní)** . Přesný postup a nastavení závisí na vaší verzi Windows a prohlížeče.
 
   ![Možnosti Internetu JIT](../debugger/media/jitinternetoptions.png "Možnosti Internetu JIT")
 

@@ -73,7 +73,7 @@ ms.locfileid: "63441885"
  Pokaždé, když vytvoříte projekt, datová sada vyprázdnění a znovu vytvořit. Pokud chcete ladit datové sady v mezipaměti, musíte otevřít dokument mimo sadu Visual Studio a potom připojit ladicí program.
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Ladění aplikace Word dokumentu projekty založené na dokument Wordu 97 – 2003 (* .doc) formát
- Chcete-li ladit Wordový dokument projektu založeného na dokument Wordu 97 – 2003 (*/* doc *) formát, složky projektu musíte přidat do seznamu důvěryhodných složek. Další informace o tom, jak to provést, najdete v části [udělit důvěryhodnost dokumenty](../vsto/granting-trust-to-documents.md).
+ Chcete-li ladit Wordový dokument projektu založeného na dokument Wordu 97 – 2003 ( */* doc *) formát, složky projektu musíte přidat do seznamu důvěryhodných složek. Další informace o tom, jak to provést, najdete v části [udělit důvěryhodnost dokumenty](../vsto/granting-trust-to-documents.md).
 
 ## <a name="debug-disabled-add-ins"></a>Ladění zakázané doplňky
  Aplikace Microsoft Office můžete zakázat doplňků VSTO, které neočekávané chování. Aplikace Microsoft Office zakáže doplňků VSTO zabránit problematického kódu načítání při každém spuštění aplikace. Je však také snadno způsobit neočekávané chování během ladění typické. Informace o tom, jak znovu povolit doplňků VSTO najdete v tématu [jak: Znovu povolit doplňku VSTO zakázaného](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).

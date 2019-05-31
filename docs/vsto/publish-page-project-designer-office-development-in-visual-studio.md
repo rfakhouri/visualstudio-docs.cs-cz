@@ -36,7 +36,7 @@ ms.locfileid: "63447012"
 
  Umístění složky pro publikování je adresář, do které Visual Studio kopíruje soubory řešení, jako je například manifesty, sestavení a dalších souborů ze sestavení. Musíte mít přístup pro zápis do tohoto adresáře.
 
- Mezi možnosti patří v místním počítači, UNC sdílené složky nebo webové stránky HTTP/HTTPS. Cesta může být místní (*c:\foldername\publishfolder*), relativní (*publikovat\\*), nebo plně kvalifikované umístění (*\\\servername\foldername* nebo http://<em>servername/foldername</em>).
+ Mezi možnosti patří v místním počítači, UNC sdílené složky nebo webové stránky HTTP/HTTPS. Cesta může být místní (*c:\foldername\publishfolder*), relativní (*publikovat\\* ), nebo plně kvalifikované umístění ( *\\\servername\foldername* nebo http://<em>servername/foldername</em>).
 
  Ve výchozím nastavení, je umístění pro publikování *http://localhost/projectname/* Pokud máte službu IIS nainstalovánu, nebo *publikovat\\*  adresáře, pokud nemáte nainstalovanou službu IIS.
 
@@ -44,7 +44,7 @@ ms.locfileid: "63447012"
 
  Adresa URL složky instalace je adresář, ze kterého koncový uživatel nainstaluje vlastního nastavení. Je také cestu pro toto řešení bude používat ke kontrole aktualizací. Cesta může být stejné jako umístění složky pro publikování, ale to není povinné.
 
- Mezi možnosti patří v místním počítači, UNC sdílené složky nebo webové stránky HTTP/HTTPS. Cesta může být místní (*c:\foldername\publishfolder*), relativní (*publikovat\\*), nebo plně kvalifikované umístění (*\\\servername\foldername* nebo http://<em>servername/foldername</em>). Všechna místa protokolu HTTP/HTTPS musí být vytvořena znaků US-ASCII. Znaky Unicode nejsou podporovány.
+ Mezi možnosti patří v místním počítači, UNC sdílené složky nebo webové stránky HTTP/HTTPS. Cesta může být místní (*c:\foldername\publishfolder*), relativní (*publikovat\\* ), nebo plně kvalifikované umístění ( *\\\servername\foldername* nebo http://<em>servername/foldername</em>). Všechna místa protokolu HTTP/HTTPS musí být vytvořena znaků US-ASCII. Znaky Unicode nejsou podporovány.
 
  Pokud cesta instalace je nastavena, musí být soubory vlastního nastavení v dané oblasti pro uživatele k instalaci vlastního nastavení. Umístění je třeba nastavit pouze v případě, že znáte umístění poslední nasazení.
 

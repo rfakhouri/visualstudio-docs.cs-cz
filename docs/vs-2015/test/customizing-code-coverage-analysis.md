@@ -101,7 +101,7 @@ Ve výchozím nastavení analyzuje nástroj pokrytí kódu Visual Studio všechn
 ### <a name="regular-expressions"></a>Regulární výrazy  
  Pomocí regulárních výrazů můžete zahrnout a vyloučit uzly. Další informace najdete v tématu [pomocí regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Regulární výrazy nejsou stejné jako zástupné znaky. Zejména:  
   
-1. **\.\\*** odpovídá řetězci libovolných znaků  
+1. **\.\\** * odpovídá řetězci libovolných znaků  
   
 2. **\\.** odpovídá tečce ".")  
   

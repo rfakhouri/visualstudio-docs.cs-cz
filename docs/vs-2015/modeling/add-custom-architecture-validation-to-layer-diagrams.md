@@ -60,7 +60,7 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
    > [!NOTE]
    > Vaše metoda bude volána pouze za zvláštních okolností a zarážky nebudou fungovat automaticky. Další informace najdete v tématu [ladění ověřování vrstev](#debugging).  
   
-5. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve *bin\\*. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
+5. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve *bin\\* . Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Přidání validátoru vrstvy do samostatného souboru VSIX  
  Pokud chcete vytvořit jeden VSIX, který obsahuje validátory vrstvy, příkazy a další rozšíření, doporučujeme vytvořit jeden projekt k definování VSIX a samostatné projekty pro obslužné rutiny. Informace o dalších typech rozšíření modelu naleznete v tématu [modelů a diagramů UML rozšířit](../modeling/extend-uml-models-and-diagrams.md).  
@@ -71,7 +71,7 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
   
 2. Určete nebo vytvořte VSIX projekt ve vašem řešení. Projekt VSIX obsahuje soubor s názvem **source.extension.vsixmanifest**. Pokud budete muset přidat projekt VSIX, postupujte podle těchto kroků:  
   
-    1. V **nový projekt** dialogového okna zvolte **Visual C#**, **rozšiřitelnost**, **projekt VSIX**.  
+    1. V **nový projekt** dialogového okna zvolte **Visual C#** , **rozšiřitelnost**, **projekt VSIX**.  
   
     2. V **Průzkumníka řešení**, v místní nabídce projektu VSIX **nastavit jako spouštěný projekt**.  
   

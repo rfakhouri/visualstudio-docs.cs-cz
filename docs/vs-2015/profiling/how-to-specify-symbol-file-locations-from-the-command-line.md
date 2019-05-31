@@ -48,7 +48,7 @@ Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbo
   
 2. Použijte následující syntax k nastavení **_NT_SYMBOL_PATH** proměnné prostředí nebo možnost VSPerfReport/symbolpath:  
   
-    **srv\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **srv\\** * *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     kde *LocalStore* je cesta k místnímu adresáři, který jste vytvořili.  
   

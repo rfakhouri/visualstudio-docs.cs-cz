@@ -57,7 +57,7 @@ Okno integrovaného vývojového prostředí
     - **Okno vlastností** v tomto okně můžete změnit vlastnosti položek, které vyberete v jiných oknech. Například pokud zvolíte Form1, můžete změnit jeho název nastavením **Text** vlastnost a můžete změnit barvu pozadí nastavením **Backcolor** vlastnost.  
   
     > [!NOTE]
-    > Horní řádek v **Průzkumníka řešení** ukazuje **řešení "PictureViewer" (1 projekt)**, což znamená, že Visual Studio vytvořila řešení za vás. Řešení může obsahovat více než jeden projekt, ale prozatím budete pracovat s řešeními, která obsahují pouze jeden projekt.  
+    > Horní řádek v **Průzkumníka řešení** ukazuje **řešení "PictureViewer" (1 projekt)** , což znamená, že Visual Studio vytvořila řešení za vás. Řešení může obsahovat více než jeden projekt, ale prozatím budete pracovat s řešeními, která obsahují pouze jeden projekt.  
   
 6. V panelu nabídky zvolte **souboru**, **Uložit vše**.  
   

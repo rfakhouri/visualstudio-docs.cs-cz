@@ -61,14 +61,14 @@ ms.locfileid: "63438909"
   
  Můžete také použít **/Trace** možnost zahrnout podrobných informací o časování s dat paměti .NET:  
   
- **Memory vsperfaspnetcmd**[**: Životnost**]   **/trace**`websiteUrl`  
+ **Memory vsperfaspnetcmd**[ **: Životnost**]   **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Ke shromažďování dat interakce vrstev  
   
 > [!WARNING]
 > (TIP) data profilace interakce vrstev lze shromažďovat pomocí [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], nebo [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Nicméně data profilace interakce vrstev lze zobrazit pouze v [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] a [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
-> Ke shromažďování dat TIP na Windows 8 nebo Windows Server 2012, je nutné použít instrumentaci (**/trace**) možnost.  
+> Ke shromažďování dat TIP na Windows 8 nebo Windows Server 2012, je nutné použít instrumentaci ( **/trace**) možnost.  
   
  Shromažďování dat interakce vrstev s vzorkování dat:  
   
@@ -80,14 +80,14 @@ ms.locfileid: "63438909"
   
  Shromažďování dat interakce vrstev s dat paměti .NET:  
   
- **Memory vsperfaspnetcmd**[**: Životnost**] **/tip**_websiteUrl_  
+ **Memory vsperfaspnetcmd**[ **: Životnost**] **/tip**_websiteUrl_  
   
 ## <a name="UsingNoWait"></a> Pomocí možnosti/nowait  
  Ve výchozím nastavení, nevrátí příkazový řádek po **vsperfaspnetcmd** příkazu. Následující syntaxe možnost můžete použít k vynucení příkazového řádku k vrácení. Pak můžete provádět další operace v okně příkazového řádku. Chcete-li ukončit profilace, použijte **/Shutdown** možnost v samostatném **vsperfaspnetcmd** příkazu.  
   
  Spuštění profilování:  
   
- **příkaz vsperfaspnetcmd** [*/možnosti*] **/nowait**_websiteUrl_  
+ **příkaz vsperfaspnetcmd** [ */možnosti*] **/nowait**_websiteUrl_  
   
  Do konce profilace:  
   

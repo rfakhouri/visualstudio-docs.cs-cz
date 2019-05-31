@@ -52,7 +52,7 @@ Nyní jsou zastaralé doplňky. Chcete-li nové rozšíření sady Visual Studio
   
      Zobrazí se druhé instanci aplikace Visual Studio. Této druhé instance se nazývá experimentální instanci a nemusí mít stejné nastavení jako instanci aplikace Visual Studio, které používáte k psaní kódu. Při prvním spuštění experimentální instance, zobrazí se výzva k přihlášení k VS Online a určit motivu a profilu.  
   
-     Na **nástroje** nabídky (v experimentální instanci) byste měli vidět tlačítko s názvem **název mé příkazu**. Když vyberete toto tlačítko, by měla zobrazit zpráva: **Inside TestVSPackagePackage.MenuItemCallback()**.  
+     Na **nástroje** nabídky (v experimentální instanci) byste měli vidět tlačítko s názvem **název mé příkazu**. Když vyberete toto tlačítko, by měla zobrazit zpráva: **Inside TestVSPackagePackage.MenuItemCallback()** .  
   
 ## <a name="BKMK_RunAddin"></a> Jak mohu spustit kód doplňku v sadě VSPackage?  
  Přidejte kód se obvykle běží v jednom ze dvou způsobů:  

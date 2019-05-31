@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
 ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63383409"
@@ -49,7 +49,7 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které jsou nak
   
 1. Na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **projektu**.  
   
-2. V **nový projekt** dialogovém okně **typy projektů**, klikněte na tlačítko **Visual C#**.  
+2. V **nový projekt** dialogovém okně **typy projektů**, klikněte na tlačítko **Visual C#** .  
   
 3. V části **Visual C#** vyberte **knihovny tříd**.  
   
@@ -140,7 +140,7 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které jsou nak
   
 2. V **vlastnosti** klikněte na tlačítko **analýzy kódu**.  
   
-    V **spustit tuto sadu pravidel** rozevíracího seznamu, klikněte na tlačítko  **\<Procházet... >**. Přejděte do kořenové složky projektu kódu a zvolte možnost **MyCustomRuleSet.ruleset**. Toto je nové sady pravidel, kterou jste vytvořili v předchozím postupu.  
+    V **spustit tuto sadu pravidel** rozevíracího seznamu, klikněte na tlačítko  **\<Procházet... >** . Přejděte do kořenové složky projektu kódu a zvolte možnost **MyCustomRuleSet.ruleset**. Toto je nové sady pravidel, kterou jste vytvořili v předchozím postupu.  
   
 3. Na **souboru** nabídky, klikněte na tlačítko **Uložit** uložte konfiguraci projektu. Můžete se teď dá vlastní sady pravidel s projektem.  
   

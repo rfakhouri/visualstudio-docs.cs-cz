@@ -210,7 +210,7 @@ ms.locfileid: "62981673"
 
 4. Klikněte na tlačítko se šipkou v **název** znovu záhlaví sloupce.
 
-5. Klikněte na tlačítko **(vše)**.
+5. Klikněte na tlačítko **(vše)** .
 
      Filtrování se odebere a zobrazí všechny řádky.
 

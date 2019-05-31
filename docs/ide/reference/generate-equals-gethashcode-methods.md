@@ -43,7 +43,7 @@ Tato generace kód platí pro:
 
 1. Dále proveďte jednu z následujících akcí:
 
-   - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
+   - Stisknutím klávesy **Ctrl**+ **.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
 
    - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
 

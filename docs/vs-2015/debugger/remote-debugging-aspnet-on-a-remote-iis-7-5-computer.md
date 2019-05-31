@@ -103,7 +103,7 @@ Po instalaci, ujistěte se, že vzdálený ladicí program je spuštěn na cílo
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. Otevřete web, vzdáleném počítači. V prohlížeči přejděte na **http://\<název vzdáleného počítače >**.
+1. Otevřete web, vzdáleném počítači. V prohlížeči přejděte na **http://\<název vzdáleného počítače >** .
     
     Zobrazí se webová stránka ASP.NET.
 1. Na webové stránce ASP.NET, kliknutím na odkaz **o** stránky.

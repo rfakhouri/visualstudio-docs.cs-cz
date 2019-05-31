@@ -63,7 +63,7 @@ ms.locfileid: "63438579"
 
 1. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
 
-2. V **přidat novou položku** dialogu **pásu karet (XML)**.
+2. V **přidat novou položku** dialogu **pásu karet (XML)** .
 
 3. Změňte název nového pásu karet na **MyRibbon**a klikněte na tlačítko **přidat**.
 

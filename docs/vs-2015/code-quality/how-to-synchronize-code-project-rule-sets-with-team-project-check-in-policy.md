@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 32558f746745fdcb717aa7c218f996924418ae79
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082045"
@@ -47,7 +47,7 @@ Synchronizovat nastavení analýzy kódu pro projekty kódu mají zásady vráce
   
 3. Klikněte na tlačítko **analýza kódu**.  
   
-4. V **spustit tuto sadu pravidel** klikněte na možnost  **\<Procházet... >**.  
+4. V **spustit tuto sadu pravidel** klikněte na možnost  **\<Procházet... >** .  
   
 5. V **otevřít** dialogového okna zadejte soubor sady pravidel zásad vrácení se změnami.  
   
@@ -65,6 +65,6 @@ Synchronizovat nastavení analýzy kódu pro projekty kódu mají zásady vráce
   
 5. Otevřete dialogové okno Vlastnosti projektu kódu a zobrazit **analýzy kódu** stránky.  
   
-6. V **spustit tuto sadu pravidel** klikněte na možnost  **\<Procházet... >**.  
+6. V **spustit tuto sadu pravidel** klikněte na možnost  **\<Procházet... >** .  
   
 7. V **otevřít** dialogového okna zadejte soubor sady pravidel.

@@ -31,10 +31,10 @@ Před distribucí požadovaného softwaru se [!INCLUDE[ndptecclick](../deploymen
 
 3. V poznámkovém bloku, otevřete *Package.xml* souboru.
 
-4. Vyhledejte **název** element, který obsahuje **http://go.microsoft.com/fwlink**a zkopírujte adresu URL. Zahrnout **LinkID** část.
+4. Vyhledejte **název** element, který obsahuje **http://go.microsoft.com/fwlink** a zkopírujte adresu URL. Zahrnout **LinkID** část.
 
    > [!NOTE]
-   > Pokud ne **název** obsahuje element **http://go.microsoft.com/fwlink**, otevřete **Product.xml** soubor v kořenové složce požadovaného softwaru a vyhledejte **fwlink** řetězec.
+   > Pokud ne **název** obsahuje element **http://go.microsoft.com/fwlink** , otevřete **Product.xml** soubor v kořenové složce požadovaného softwaru a vyhledejte **fwlink** řetězec.
 
    > [!IMPORTANT]
    > Některé požadované softwarové programy mohou mít několik instalačních balíčků (například v 32bitových nebo 64bitových systémech). Pokud je položek víc **název** elementy obsahovat **fwlink**, musí zopakovat zbývající kroky pro každý z nich.

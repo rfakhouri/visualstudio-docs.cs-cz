@@ -46,7 +46,7 @@ Můžete změnit obor názvů jazyka specifického pro doménu. Proveďte změnu
 
 10. Resetujte Visual Studio experimentální instanci aplikace.
 
-    1. Odstranit **\Users\\**_{name}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
+    1. Odstranit **\Users\\** _{name}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
 
     2. V Windows **Start** nabídce zvolte **všechny programy** > **Microsoft Visual Studio 2010 SDK** > **nástroje**  >  **Resetovat experimentální instanci**.
 

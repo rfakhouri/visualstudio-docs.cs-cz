@@ -47,7 +47,7 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
 - Jak windows zvládnout škálování prostřednictvím seskupování, přibližování a další související funkce.  
   
 ## <a name="prerequisites"></a>Požadavky  
- Tento návod předpokládá, že **pouze můj kód** je povolená. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **ladění** uzlu, vyberte **Obecné**a pak vyberte **povolit Pouze můj kód (pouze spravované)**. Pokud tato funkce není nastavený, můžete nadále používat Tento názorný postup, ale vaše výsledky můžou lišit od ilustrací.  
+ Tento návod předpokládá, že **pouze můj kód** je povolená. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **ladění** uzlu, vyberte **Obecné**a pak vyberte **povolit Pouze můj kód (pouze spravované)** . Pokud tato funkce není nastavený, můžete nadále používat Tento názorný postup, ale vaše výsledky můžou lišit od ilustrací.  
   
 ## <a name="c-sample"></a>Ukázka v jazyce C#  
  Pokud použitím této ukázky jazyka C# Tento názorný Průvodce také předpokládá, že externí kód je skrytá. Určí, zda se zobrazí externí kód, klikněte pravým tlačítkem myši **název** záhlaví tabulky **zásobník volání** okna a poté zaškrtněte nebo zrušte **zobrazit externí kód**. Pokud tato funkce není nastavený, můžete nadále používat Tento názorný postup, ale vaše výsledky můžou lišit od ilustrací.  

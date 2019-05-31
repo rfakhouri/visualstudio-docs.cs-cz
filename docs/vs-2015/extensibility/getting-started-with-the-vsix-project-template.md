@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60038663"
@@ -39,7 +39,7 @@ ms.locfileid: "60038663"
   
 2. Vytvoření prázdného projektu VSIX.  
   
-     Na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **projektu**. Vyberte buď **jazyka Visual Basic** nebo **Visual C#**. V části vybraného uzlu, vyberte **rozšiřitelnost**a pak vyberte **projekt VSIX**.  
+     Na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **projektu**. Vyberte buď **jazyka Visual Basic** nebo **Visual C#** . V části vybraného uzlu, vyberte **rozšiřitelnost**a pak vyberte **projekt VSIX**.  
   
 3. Přidejte do projektu soubor .zip. Nastavte jeho **kopírovat do výstupního adresáře** vlastnost `Copy Always`.  
   

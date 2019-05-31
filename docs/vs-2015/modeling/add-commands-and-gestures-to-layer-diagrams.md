@@ -55,7 +55,7 @@ Můžete definovat příkazy kontextové nabídky a obslužné rutiny gesta v di
   
     [Definování obslužné rutiny gesta](#gesture)  
   
-6. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve *bin\\*. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
+6. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve *bin\\* . Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Přidání příkazu nebo gesta do samostatného souboru VSIX  
  Pokud chcete vytvořit jeden VSIX, který obsahuje příkazy, validátory vrstvy a další rozšíření, doporučujeme vytvořit jeden projekt k definování VSIX a samostatné projekty pro obslužné rutiny. Informace o dalších typech rozšíření modelu naleznete v tématu [modelů a diagramů UML rozšířit](../modeling/extend-uml-models-and-diagrams.md).  
@@ -69,7 +69,7 @@ Můžete definovat příkazy kontextové nabídky a obslužné rutiny gesta v di
   
 2. Určete nebo vytvořte VSIX projekt ve vašem řešení. Projekt VSIX obsahuje soubor s názvem **source.extension.vsixmanifest**. Přidání projektu VSIX:  
   
-    1. V **nový projekt** dialogového okna rozbalte **Visual C#**, klikněte na **rozšiřitelnost**a potom klikněte na tlačítko **projekt VSIX**.  
+    1. V **nový projekt** dialogového okna rozbalte **Visual C#** , klikněte na **rozšiřitelnost**a potom klikněte na tlačítko **projekt VSIX**.  
   
     2. V Průzkumníku řešení klikněte pravým tlačítkem na projekt VSIX a potom klikněte na tlačítko **nastavit jako spouštěný projekt**.  
   

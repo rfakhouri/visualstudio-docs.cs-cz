@@ -43,7 +43,7 @@ ms.locfileid: "62967393"
 ## <a name="identifiers-for-sharepoint-project-items"></a>Identifikátory pro položky projektu SharePoint
  Každé položky projektu SharePoint má odpovídající identifikátor řetězce. Identifikátor pro položku projektu musíte vědět, pokud chcete provádět následující úlohy:
 
-- Vytváření rozšíření pro položky projektu. V takovém případě je nutné předat identifikátor pro položku projektu, který chcete rozšířit do konstruktoru <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Chcete-li vytvořit rozšíření pro všechny položky typů projektů, předejte **\\*** hodnotu řetězce.
+- Vytváření rozšíření pro položky projektu. V takovém případě je nutné předat identifikátor pro položku projektu, který chcete rozšířit do konstruktoru <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Chcete-li vytvořit rozšíření pro všechny položky typů projektů, předejte **\\** * hodnotu řetězce.
 
 - Programově přidáte položky projektu do projektu. V takovém případě je nutné předat identifikátor pro položku projektu do <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> metody.
 

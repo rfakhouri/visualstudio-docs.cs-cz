@@ -69,7 +69,7 @@ Automatizované testy, které ovládají aplikaci prostřednictvím jejího uži
 
 1. **Vytvořte projekt programového testu UI.**
 
-    Programové testy uživatelského rozhraní musí být součástí projektu programového testu UI. Pokud ještě nemáte projekt programového testu uživatelského rozhraní, vytvořte si ho. V **Průzkumníka řešení**, v místní nabídce řešení zvolte **přidat**, **nový projekt** a pak vyberte buď **jazyka Visual Basic** nebo **Visual C#**. Dále zvolte **testovací**, **programový Test uživatelského rozhraní**.
+    Programové testy uživatelského rozhraní musí být součástí projektu programového testu UI. Pokud ještě nemáte projekt programového testu uživatelského rozhraní, vytvořte si ho. V **Průzkumníka řešení**, v místní nabídce řešení zvolte **přidat**, **nový projekt** a pak vyberte buď **jazyka Visual Basic** nebo **Visual C#** . Dále zvolte **testovací**, **programový Test uživatelského rozhraní**.
 
    - <em>Nevidím **programový Test uživatelského rozhraní</em>* šablony projektu.*
 

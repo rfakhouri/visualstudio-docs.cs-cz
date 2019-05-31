@@ -117,7 +117,7 @@ Následující tabulka popisuje položky panelu **režim editoru obrázků** ná
 |**Volný výběr**|Umožňuje výběr nestandardní oblasti obrázku. Po výběru oblasti můžete vyjmout, kopírovat, přesunout, škálování, otočení, překlopit nebo ho odstranit. Když je aktivní výběr, nástrojů pro kreslení ovlivní pouze vybrané oblasti.|
 |**Výběr hůlka**|Umožňuje výběr podobně barevný oblasti obrázku. *Tolerance*– to znamená maximální rozdíl mezi sousedící barvy, ve kterém jsou považovány za podobné – dá použít menší nebo větší řadu podobné barvy. Po výběru oblasti můžete vyjmout, kopírovat, přesunout, škálování, otočení, překlopit nebo ho odstranit. Když je aktivní výběr, nástrojů pro kreslení ovlivní pouze vybrané oblasti.|
 |**Posouvání**|Umožňuje pohyb image relativně k rámu okna. V **Pan** režimu, vyberte bod na obrázku a potom pohybovat.<br /><br /> Můžete dočasně aktivovat **Pan** režimu stisknutím a podržením **Ctrl** klíč.|
-|**Přiblížení**|Umožňuje zobrazení více či méně detailů image relativně k rámu okna. V **přiblížení** režimu, vyberte bod na obrázku a poté jej přesunutím vpravo dolů zvětšete nebo přesunutím vlevo či nahoru out.<br /><br /> Provést přiblížení nebo oddálení podle stisknutím a podržením **Ctrl** použít kolečko myši nebo klepněte na znaménko plus (**+**) nebo minus (**-**) .|
+|**Přiblížení**|Umožňuje zobrazení více či méně detailů image relativně k rámu okna. V **přiblížení** režimu, vyberte bod na obrázku a poté jej přesunutím vpravo dolů zvětšete nebo přesunutím vlevo či nahoru out.<br /><br /> Provést přiblížení nebo oddálení podle stisknutím a podržením **Ctrl** použít kolečko myši nebo klepněte na znaménko plus ( **+** ) nebo minus ( **-** ) .|
 |**Na skutečnou velikost**|Pomocí vztahu 1:1 mezi pixely obrázku a pixelů na obrazovce zobrazí obrázek.|
 |**Přizpůsobit zobrazení**|Zobrazí úplnou bitovou kopii v rámci okna.|
 |**Přiblížit na šířku**|Zobrazí celou šířku obrázku v rámci okna.|
@@ -150,11 +150,11 @@ Následující tabulka popisuje položky panelu **Editor obrázků** nástrojů,
 
 ### <a name="work-with-mip-levels"></a>Práce s úrovní MIP
 
-Některé bitové kopie například formáty DirectDraw Surface (*.dds*), podpory úrovně MIP pro textury místa úrovně of-Detail lod (Level). Informace o tom, jak vytvořit a pracovat s úrovní MIP, naleznete v tématu [jak: Vytvoření a úprava úrovní MIP](../designers/how-to-create-and-modify-mip-levels.md)
+Některé bitové kopie například formáty DirectDraw Surface ( *.dds*), podpory úrovně MIP pro textury místa úrovně of-Detail lod (Level). Informace o tom, jak vytvořit a pracovat s úrovní MIP, naleznete v tématu [jak: Vytvoření a úprava úrovní MIP](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Práce s transparentnosti
 
-Některé bitové kopie například formáty DirectDraw Surface (*.dds*), podporují průhlednost. Existuje několik způsobů, jak můžete použít transparentnosti, v závislosti na nástroj, který používáte. Chcete-li určit úroveň průhlednosti pro výběr barev, v **vlastnosti** okno, nastavte **A** (alfa) součást výběr barvy.
+Některé bitové kopie například formáty DirectDraw Surface ( *.dds*), podporují průhlednost. Existuje několik způsobů, jak můžete použít transparentnosti, v závislosti na nástroj, který používáte. Chcete-li určit úroveň průhlednosti pro výběr barev, v **vlastnosti** okno, nastavte **A** (alfa) součást výběr barvy.
 
 Následující tabulka popisuje, jak různé druhy nástroje pro řízení použití průhlednosti:
 
@@ -250,8 +250,8 @@ Následující tabulka popisuje vlastnosti nástroje:
 |Vybrat vše|**Ctrl**+**A**|
 |Odstranit aktuální výběr|**Delete**|
 |Zrušit aktuální výběr|**ESC** (ESC)|
-|Přiblížit|**CTRL**+**kolečko myši dopředu**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Znaménko plus (**+**)|
-|Oddálit|**CTRL**-**kolečko myši dozadu**<br /><br /> **Ctrl**-**PageDown**<br /><br /> Znaménko minus (**-**)|
+|Přiblížit|**CTRL**+**kolečko myši dopředu**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Znaménko plus ( **+** )|
+|Oddálit|**CTRL**-**kolečko myši dozadu**<br /><br /> **Ctrl**-**PageDown**<br /><br /> Znaménko minus ( **-** )|
 |Posunout nahoru obrázek|**Kolečko myši dozadu**<br /><br /> **PageDown**|
 |Posunout dolů na obrázku|**Kolečko myši dopředu**<br /><br /> **PageUp**|
 |Posunout obrázek vlevo|**SHIFT**+**kolečko myši dozadu**<br /><br /> **Kolečko myši doleva**<br /><br /> **Shift**+**PageDown**|

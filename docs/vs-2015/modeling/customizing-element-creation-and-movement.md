@@ -111,7 +111,7 @@ Můžete povolit element, který má přetahovat do jiného, z panelu nástrojů
   
       Nástroj navigace cestu slouží k vytvoření jednotlivé cesty:  
   
-   3. V části **pracovat sloučení vytvořením odkazů na cestách**, klikněte na tlačítko  **\<přidat cestu >**.  
+   3. V části **pracovat sloučení vytvořením odkazů na cestách**, klikněte na tlačítko  **\<přidat cestu >** .  
   
    4. Klikněte na rozevírací šipku napravo od položky seznamu. Zobrazení stromu se zobrazí.  
   

@@ -29,7 +29,7 @@ Rychlé akce v této části opravit chyby v kódu, která může způsobit selh
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Opravte chybně symbol nebo – klíčové slovo
 
-Pokud budete mít překlep omylem typ nebo klíčové slovo v sadě Visual Studio, této rychlé akce ho automaticky opraví za vás. Uvidíte tyto položky v nabídce žárovky jako **"Změna"*chybně napsaná slova*"do"*opravit slovo*"**. Příklad:
+Pokud budete mít překlep omylem typ nebo klíčové slovo v sadě Visual Studio, této rychlé akce ho automaticky opraví za vás. Uvidíte tyto položky v nabídce žárovky jako **"Změna"*chybně napsaná slova*"do"*opravit slovo*"** . Příklad:
 
 ```csharp
 // Before

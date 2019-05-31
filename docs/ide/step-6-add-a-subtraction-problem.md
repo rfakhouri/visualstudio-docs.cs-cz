@@ -52,7 +52,7 @@ V šesté části tohoto kurzu kurzu přidáte úlohu odčítání a zjistěte, 
      ![Okno popisu tlačítka technologie IntelliSense](../ide/media/express_overloads.png)
 **IntelliSense** okno popisu tlačítka
 
-     Zobrazí se popis **(+ 2 overload(s))**, což znamená, že můžete volat `Next()` metoda dvěma dalšími způsoby. Přetížení obsahují různá čísla nebo typy argumentů, tak, aby fungovaly mírně odlišně od sebe. Například metoda může převzít jediný celočíselný argument a jedno z jejich přetížení může trvat celé číslo a řetězec. Zvolíte správné přetížení na základě na co chcete udělat. Když přidáte kód, který `StartTheQuiz()` metoda, další informace se zobrazí v okně technologie IntelliSense ihned poté, co zadáte `randomizer.Next(`. Chcete-li cyklování skrze přetížení, zvolte **šipka nahoru** a **šipka dolů** klíče, jak je znázorněno na následujícím obrázku:
+     Zobrazí se popis **(+ 2 overload(s))** , což znamená, že můžete volat `Next()` metoda dvěma dalšími způsoby. Přetížení obsahují různá čísla nebo typy argumentů, tak, aby fungovaly mírně odlišně od sebe. Například metoda může převzít jediný celočíselný argument a jedno z jejich přetížení může trvat celé číslo a řetězec. Zvolíte správné přetížení na základě na co chcete udělat. Když přidáte kód, který `StartTheQuiz()` metoda, další informace se zobrazí v okně technologie IntelliSense ihned poté, co zadáte `randomizer.Next(`. Chcete-li cyklování skrze přetížení, zvolte **šipka nahoru** a **šipka dolů** klíče, jak je znázorněno na následujícím obrázku:
 
      ![Přetížení pro další&#40; &#41; metoda v technologii IntelliSense](../ide/media/express_nextoverload.png) přetížení pro **Next()** metoda **technologie IntelliSense**
 

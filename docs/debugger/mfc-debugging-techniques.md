@@ -138,7 +138,7 @@ Před použitím zařízení diagnostiky paměti, je nutné povolit diagnostick�
 
   **Chcete-li vybrat konkrétní paměti diagnostické funkce s afxmemdf –**
 
-- Pokud chcete přesnější kontrolu nad paměti diagnostické funkce, můžete selektivně zapnout diagnostické funkce jednotlivých paměti zapnout a vypnout tak, že nastavíte hodnotu globální proměnné knihovny MFC [afxmemdf –](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Tato proměnná může mít následující hodnoty podle specifikace výčtového typu **afxmemdf –**.
+- Pokud chcete přesnější kontrolu nad paměti diagnostické funkce, můžete selektivně zapnout diagnostické funkce jednotlivých paměti zapnout a vypnout tak, že nastavíte hodnotu globální proměnné knihovny MFC [afxmemdf –](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Tato proměnná může mít následující hodnoty podle specifikace výčtového typu **afxmemdf –** .
 
   |Hodnota|Popis|
   |-----------|-----------------|
@@ -358,7 +358,7 @@ U objektů přidělených do ale je nutné explicitně odstranit objekt, aby se 
 #### <a name="BKMK_Customizing_object_dumps"></a> Vypíše přizpůsobení objektu
 Pokud odvodíte třídu od [CObject](/cpp/mfc/reference/cobject-class), můžete přepsat `Dump` členskou funkci na další informace při použití [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) na objekty s výpisem paměti pro [Okno výstup](../ide/reference/output-window.md).
 
-`Dump` Funkce zapíše textovou reprezentaci řetězce objektu členské proměnné do kontextu s výpisem paměti ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Kontext s výpisem paměti je podobný datovému proudu vstupně-výstupních operací. Můžete použít operátor, který připojení (**<<**) k odesílání dat do `CDumpContext`.
+`Dump` Funkce zapíše textovou reprezentaci řetězce objektu členské proměnné do kontextu s výpisem paměti ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Kontext s výpisem paměti je podobný datovému proudu vstupně-výstupních operací. Můžete použít operátor, který připojení ( **<<** ) k odesílání dat do `CDumpContext`.
 
 Při přepsání `Dump` funkce, měli byste nejprve zavolat základní třídu verzi `Dump` Vypsat obsah objektu základní třídy. Potom výstupní textový popis a hodnotu pro každou proměnnou člena odvozené třídy.
 
@@ -432,7 +432,7 @@ Vytváření vybrané moduly s knihovnami MFC ladění umožňuje používat kro
 
    1. V  **\<Projekt > stránky vlastností** dialogové okno, klikněte na tlačítko **nástroje Configuration Manager** tlačítko.
 
-   2. V [dialogové okno nástroje Configuration Manager](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), vyhledejte svůj projekt v mřížce. V **konfigurace** sloupci vyberte  **\<nový … >**.
+   2. V [dialogové okno nástroje Configuration Manager](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), vyhledejte svůj projekt v mřížce. V **konfigurace** sloupci vyberte  **\<nový … >** .
 
    3. V [dialogové okno Nový projekt konfigurace](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), zadejte název pro novou konfiguraci, jako je například "Částečné Debug", **název konfigurace projektu** pole.
 

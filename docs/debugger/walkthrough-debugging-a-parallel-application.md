@@ -46,7 +46,7 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
 - Jak windows zvládnout škálování prostřednictvím seskupování, přibližování a další související funkce.
 
 ## <a name="prerequisites"></a>Požadavky
- Tento návod předpokládá, že **pouze můj kód** je povolená (je povolená ve výchozím nastavení v novějších verzích sady Visual Studio). Na **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **ladění** uzlu, vyberte **Obecné**a pak vyberte **povolit Pouze můj kód (pouze spravované)**. Pokud tato funkce není nastavený, můžete nadále používat Tento názorný postup, ale vaše výsledky můžou lišit od ilustrací.
+ Tento návod předpokládá, že **pouze můj kód** je povolená (je povolená ve výchozím nastavení v novějších verzích sady Visual Studio). Na **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **ladění** uzlu, vyberte **Obecné**a pak vyberte **povolit Pouze můj kód (pouze spravované)** . Pokud tato funkce není nastavený, můžete nadále používat Tento názorný postup, ale vaše výsledky můžou lišit od ilustrací.
 
 ## <a name="c-sample"></a>Ukázka v jazyce C#
  Pokud použitím této ukázky jazyka C# Tento názorný Průvodce také předpokládá, že externí kód je skrytá. Určí, zda se zobrazí externí kód, klikněte pravým tlačítkem myši **název** záhlaví tabulky **zásobník volání** okna a poté zaškrtněte nebo zrušte **zobrazit externí kód**. Pokud tato funkce není nastavený, můžete nadále používat Tento názorný postup, ale vaše výsledky můžou lišit od ilustrací.
@@ -65,7 +65,7 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
 1. Otevřít Visual Studio a vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
-    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly** (nebo **c ++**), zvolte **šablony**a pak:
+    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **konzoly** (nebo **c ++** ), zvolte **šablony**a pak:
 
     - Pro C# nebo Visual Basic, zvolte **vytvořit nový projekt Konzolová aplikace (.NET Framework)** buď C# nebo Visual Basic. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
     - Pro jazyk C++, zvolte **vytvořit nový projekt konzolové aplikace** jazyka C++. V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
@@ -75,9 +75,9 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
     ::: moniker range="vs-2017"
     V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně zvolte následující:
 
-    - Pro C# aplikace v části **Visual C#** , zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)**.
-    - Pro aplikace v jazyce Visual Basic v části **jazyka Visual Basic**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)**.
-    - Pro aplikace s C++ v rámci **Visual C++**, zvolte **Windows Desktop**a klikněte na tlačítko **Konzolová aplikace Windows**.
+    - Pro C# aplikace v části **Visual C#** , zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)** .
+    - Pro aplikace v jazyce Visual Basic v části **jazyka Visual Basic**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)** .
+    - Pro aplikace s C++ v rámci **Visual C++** , zvolte **Windows Desktop**a klikněte na tlačítko **Konzolová aplikace Windows**.
 
     Potom zadejte název nebo použijte výchozí název a klikněte na tlačítko **OK**.
     ::: moniker-end

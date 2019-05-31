@@ -84,18 +84,18 @@ ms.locfileid: "63440372"
 
 |Excel|Word|
 |-----------|----------|
-|Excelový sešit (*.xlsx*)<br /><br /> Excelový sešit s podporou maker (*.xlsm*)<br /><br /> Binární Excelový sešit (*.xlsb*)<br /><br /> Sešit Excelu 97 – 2003 (*.xls*)<br /><br /> Šablona aplikace Excel (*XLTX*)<br /><br /> Šablona aplikace Excel s podporou maker (*.xltm*)<br /><br /> Šablona Excelu 97 – 2003 (*.xlt*)|Wordový dokument (*.docx*)<br /><br /> Wordový dokument s podporou maker (*DOCM*)<br /><br /> Dokument Wordu 97 – 2003 (*doc*)<br /><br /> Šablona aplikace Word (*DOTX*)<br /><br /> Šablona aplikace Word s podporou maker (*.dotm*)<br /><br /> Šablona Wordu 97 – 2003 (*.dot*)|
+|Excelový sešit ( *.xlsx*)<br /><br /> Excelový sešit s podporou maker ( *.xlsm*)<br /><br /> Binární Excelový sešit ( *.xlsb*)<br /><br /> Sešit Excelu 97 – 2003 ( *.xls*)<br /><br /> Šablona aplikace Excel (*XLTX*)<br /><br /> Šablona aplikace Excel s podporou maker ( *.xltm*)<br /><br /> Šablona Excelu 97 – 2003 ( *.xlt*)|Wordový dokument ( *.docx*)<br /><br /> Wordový dokument s podporou maker (*DOCM*)<br /><br /> Dokument Wordu 97 – 2003 (*doc*)<br /><br /> Šablona aplikace Word (*DOTX*)<br /><br /> Šablona aplikace Word s podporou maker ( *.dotm*)<br /><br /> Šablona Wordu 97 – 2003 ( *.dot*)|
 
- Měli byste navrhnout rozšíření spravovaného kódu pouze pro dokumenty v podporovaných formátů. V opačném případě určité události nemusí vyvolána při otevření dokumentu v aplikaci. Například <xref:Microsoft.Office.Tools.Excel.Workbook.Open> událost se vyvolá, když používáte rozšíření spravovaného kódu s sešity uložené ve formátu tabulky XML aplikace Excel nebo webové stránky (*.htm*; *.html*) formát.
+ Měli byste navrhnout rozšíření spravovaného kódu pouze pro dokumenty v podporovaných formátů. V opačném případě určité události nemusí vyvolána při otevření dokumentu v aplikaci. Například <xref:Microsoft.Office.Tools.Excel.Workbook.Open> událost se vyvolá, když používáte rozšíření spravovaného kódu s sešity uložené ve formátu tabulky XML aplikace Excel nebo webové stránky ( *.htm*; *.html*) formát.
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Podpora pro Wordové dokumenty, které mají přípony názvů souborů XML
  Šablony projektu na úrovni dokumentu není umožňují vytvářet projekty založené na následující formáty souborů:
 
-- Wordový dokument XML (*\*xml*).
+- Wordový dokument XML ( *\*xml*).
 
-- XML dokument aplikace Word 2003 (*\*xml*).
+- XML dokument aplikace Word 2003 ( *\*xml*).
 
-  Pokud chcete koncovým uživatelům použít vlastní nastavení do těchto formátů souborů, sestavovat a nasazovat vlastní nastavení, která používá jeden z podporovaných formátů uvedená v tabulce výše. Po instalaci přizpůsobení, koncovým uživatelům můžete uložit dokument v dokumentu XML (*\*xml*) formát nebo XML dokument aplikace Word 2003 (*\*xml*) formátu a přizpůsobení budou nadále fungovat podle očekávání.
+  Pokud chcete koncovým uživatelům použít vlastní nastavení do těchto formátů souborů, sestavovat a nasazovat vlastní nastavení, která používá jeden z podporovaných formátů uvedená v tabulce výše. Po instalaci přizpůsobení, koncovým uživatelům můžete uložit dokument v dokumentu XML ( *\*xml*) formát nebo XML dokument aplikace Word 2003 ( *\*xml*) formátu a přizpůsobení budou nadále fungovat podle očekávání.
 
 ## <a name="Components"></a> Součástí vlastní nastavení
  Hlavní součásti přizpůsobení se dokument a sestavení. Kromě těchto součástí existuje několik částí, které hrají důležitou roli v tom, jak aplikace Microsoft Office zjišťovat a načíst vlastní nastavení.

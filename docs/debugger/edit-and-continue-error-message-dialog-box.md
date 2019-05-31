@@ -40,7 +40,7 @@ Mezi možné důvody pro tato chybová zpráva patří:
 - Došlo k pokusu o úpravu kódu během ladění zotavení po havárii. Watson s výpisem paměti.
 - Při pokusu o úpravy kódu, jakmile dojde k neošetřené výjimce a možnost **vrátit zásobník volání v případě neošetřených výjimek** není vybraná.
 - Došlo k pokusu o úpravu kódu během ladění aplikace vložený modul runtime.
-- Došlo k pokusu o úpravu spravovaného kódu pomocí rozhraní .NET Framework verze starší než 4.5.1 s cílem 64bitové aplikace. Chcete-li použít funkci upravit a pokračovat pro rozhraní .NET Framework starší než 4.5.1, nastavte cíl na **x86** v  **\<ProjectName >** > **vlastnosti**  >  **Kompilaci** kartě **Advanced kompilátoru** nastavení.
+- Došlo k pokusu o úpravu spravovaného kódu pomocí rozhraní .NET Framework verze starší než 4.5.1 s cílem 64bitové aplikace. Chcete-li použít funkci upravit a pokračovat pro rozhraní .NET Framework starší než 4.5.1, nastavte cíl na **x86** v  **\<ProjectName >**  > **vlastnosti**  >  **Kompilaci** kartě **Advanced kompilátoru** nastavení.
 - Došlo k pokusu o úpravu kódu v sestavení, která byla změněna během ladění a má znovu načten.
 - Došlo k pokusu o úpravu kódu v sestavení, který není načtený.
 - Spuštění ladění starší verzi aplikace, protože na nejnovější verzi má chyby sestavení.

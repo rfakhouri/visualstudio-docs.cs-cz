@@ -61,14 +61,14 @@ Pokud chcete Profilovat staticky zkompilovány. *dll* soubory ve webové aplikac
 
  Můžete také použít **/Trace** možnost zahrnout podrobných informací o časování s dat paměti .NET:
 
- **Memory vsperfaspnetcmd**[**: Životnost**]   **/trace**`websiteUrl`
+ **Memory vsperfaspnetcmd**[ **: Životnost**]   **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Ke shromažďování dat interakce vrstev
 
 > [!WARNING]
 > (TIP) data profilace interakce vrstev lze shromažďovat pomocí libovolné edice sady Visual Studio. Nicméně data profilace interakce vrstev lze zobrazit pouze v sadě Visual Studio Enterprise.
 >
-> Ke shromažďování dat TIP na Windows 8 nebo Windows Server 2012, je nutné použít instrumentaci (**/trace**) možnost.
+> Ke shromažďování dat TIP na Windows 8 nebo Windows Server 2012, je nutné použít instrumentaci ( **/trace**) možnost.
 
 Shromažďování dat interakce vrstev s vzorkování dat:
 
@@ -80,7 +80,7 @@ Shromažďování dat interakce vrstev se data instrumentace:
 
 Shromažďování dat interakce vrstev s dat paměti .NET:
 
-**Memory vsperfaspnetcmd**[**: Životnost**] **/tip**_websiteUrl_
+**Memory vsperfaspnetcmd**[ **: Životnost**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>Použijte možnost/nowait
 
@@ -88,7 +88,7 @@ Ve výchozím nastavení, nevrátí příkazový řádek po **vsperfaspnetcmd** 
 
 Spuštění profilování:
 
-**příkaz vsperfaspnetcmd** [*/možnosti*] **/nowait**_websiteUrl_
+**příkaz vsperfaspnetcmd** [ */možnosti*] **/nowait**_websiteUrl_
 
 Do konce profilace:
 

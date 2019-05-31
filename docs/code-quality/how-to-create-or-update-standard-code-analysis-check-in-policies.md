@@ -61,7 +61,7 @@ Z **spustit tuto sadu pravidel** seznamu, použijte jednu z následujících met
 
 - Vyberte sadu standardních pravidel společnosti Microsoft.
 
-- Vyberte vlastní pravidlo. Klepnutím na  **\<vybrat sadu pravidel ze správy zdrojového kódu... >**. Zadejte cestu správy verzí sady pravidel, která v prohlížeči zdrojového ovládacího prvku. Syntaxe cestu správy verzí je následující:
+- Vyberte vlastní pravidlo. Klepnutím na  **\<vybrat sadu pravidel ze správy zdrojového kódu... >** . Zadejte cestu správy verzí sady pravidel, která v prohlížeči zdrojového ovládacího prvku. Syntaxe cestu správy verzí je následující:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 

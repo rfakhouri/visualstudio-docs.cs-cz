@@ -11,7 +11,7 @@ ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: e8361ec9f93ff150d3fd29bce315f635bd00048b
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60068636"
@@ -63,7 +63,7 @@ V [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] a [!INCLUDE[vsUltShort](.
   
 - Chcete-li sbalit pravidla ve všech skupinách, zvolte **Sbalit vše**.  
   
-- Chcete-li změnit pole, pravidla se seskupují podle, zvolte na pole **Group** seznamu. Chcete-li zobrazit pravidla neseskupené, zvolte  **\<žádný >**.  
+- Chcete-li změnit pole, pravidla se seskupují podle, zvolte na pole **Group** seznamu. Chcete-li zobrazit pravidla neseskupené, zvolte  **\<žádný >** .  
   
 - Chcete-li přidat nebo odebrat pole ve sloupcích pravidlo, zvolte **možnosti sloupce**.  
   
