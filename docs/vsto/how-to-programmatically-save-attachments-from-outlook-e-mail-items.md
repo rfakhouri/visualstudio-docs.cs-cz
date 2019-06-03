@@ -3,7 +3,6 @@ title: 'Postupy: Ukládání příloh položek e-mailu aplikace Outlook prostře
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
-- VB
 - CSharp
 helpviewer_keywords:
 - Outlook [Office development in Visual Studio], attachments
@@ -16,25 +15,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 874f19e0ae4e752a36ce95deab669ab46bfbf038
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d222924e753db1b476a5d7729e2c794a8ab305e2
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419523"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462119"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Postupy: Ukládání příloh položek e-mailu aplikace Outlook prostřednictvím kódu programu
-  V tomto příkladu se uloží přílohy e-mailů do zadané složky při přijetí e-mailu v doručené poště.
+
+V tomto příkladu se uloží přílohy e-mailů do zadané složky při přijetí e-mailu v doručené poště.
 
 > [!IMPORTANT]
 > Tento příklad funguje pouze v případě, že přidáte složku s názvem **TestFileSave** v kořenovém adresáři.
 
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+[!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Příklad
- [!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]
+
+[!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>Viz také:
+
 - [Práce s položkami pošty](../vsto/working-with-mail-items.md)
 - [Postupy: Programově načítání složek podle názvu](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [Postupy: Programově provádění akcí po přijetí e-mailovou zprávu](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

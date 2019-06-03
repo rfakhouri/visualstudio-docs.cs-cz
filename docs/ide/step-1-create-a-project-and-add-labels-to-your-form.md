@@ -1,6 +1,6 @@
 ---
 title: 'Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky'
-ms.date: 11/04/2016
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d32ae922726a13416086e982679483ae36f2ad0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5052cc84cb3c314885483f914385725189ba07d9
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949119"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462127"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky
 
@@ -24,7 +24,7 @@ Jako první kroky ve vývoji tohoto kvízu vytvoříte projekt a přidat popisky
 > [!NOTE]
 > Toto téma je součástí série kurzů o základních principech kódování. Přehled kurzu, naleznete v tématu [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
-## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Chcete-li vytvořit projekt a nastavit vlastnosti pro formulář
+## <a name="to-create-a-project-for-a-form"></a>Vytvoření projektu pro formulář
 
 ::: moniker range="vs-2017"
 
@@ -42,15 +42,32 @@ Jako první kroky ve vývoji tohoto kvízu vytvoříte projekt a přidat popisky
 
 1. V okně start zvolte **vytvořte nový projekt**.
 
-1. Do vyhledávacího pole zadejte "WPF", zvolte **aplikace WPF (.NET Framework)** a klikněte na tlačítko **Další**.
+   ![Zobrazit okno 'vytvořte nový projekt.](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-   (Pokud se nezobrazí **aplikace WPF (.NET Framework)** šablony, instalace pomocí instalačního programu sady Visual Studio **vývoj desktopových aplikací .NET** úlohy.)
+1. Na **vytvořte nový projekt** okno, zadejte nebo zadejte *Windows Forms* do vyhledávacího pole.
 
-1. Pojmenujte projekt, **MathQuiz**a zvolte **Create**
+1. Zvolte **aplikace Windows Forms (.NET Framework)** šablony a klikněte na tlačítko **Další**.
+
+   ![Výběr šablony jazyka Visual Basic pro aplikace Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > Pokud se nezobrazí **aplikace Windows Forms (.NET Framework)** šablony, můžete jej nainstalovat z **vytvořte nový projekt** okna. V **nenašli, co hledáte?** zprávu, zvolte **nainstalovat další nástroje a funkce** odkaz.
+   >
+   > ![Odkaz "Nainstalovat další nástroje a funkce" z 'Nemůžete najít, co hledáte' zprávy v okně "vytvořit nový projekt.](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
+   > Dále zvolte v Visual Studio Installer, zvolte **vývoj desktopových aplikací .NET** pracovního vytížení.
+   >
+   > ![Úlohy .NET core v instalačním programu sady Visual Studio](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > Po tomto, zvolte **změnit** tlačítko v instalačním programu sady Visual Studio. Můžete být vyzváni k uložte svou práci; Pokud ano, udělejte to. Dále zvolte **pokračovat** instalace zatížení.
+
+1. V **konfigurovat nový projekt** okno, zadejte nebo vložte *MathQuiz* v **název projektu** pole. Potom kliknutím na možnost **vytvořit**.
 
 ::: moniker-end
 
-1. Vyberte formulář a změňte jeho **Text** vlastnost **matematický kvíz**.
+## <a name="to-create-set-properties-for-a-form"></a>Chcete-li vytvořit sadu vlastností pro formulář
+
+1. V sadě Visual Studio, vyberte formulář (buď *Form1.cs* nebo *Form1.vb*, v závislosti na programovacím jazyce) a potom změňte jeho **Text** vlastnost  **Matematický kvíz**.
 
      **Vlastnosti** okno obsahuje vlastnosti pro formulář.
 
@@ -80,7 +97,7 @@ Jako první kroky ve vývoji tohoto kvízu vytvoříte projekt a přidat popisky
 
 6. V **vlastnosti** okna, vyberte **Text** vlastnost a klikněte na tlačítko **Backspace** klíč pro vymazání jeho hodnoty.
 
-7. Vyberte znaménko plus (**+**) vedle položky **písmo** vlastnost a potom změňte hodnotu **velikost** vlastnost **15,75**.
+7. Vyberte znaménko plus ( **+** ) vedle položky **písmo** vlastnost a potom změňte hodnotu **velikost** vlastnost **15,75**.
 
      Můžete změnit několik vlastností písma, jak ukazuje následující obrázek.
 
