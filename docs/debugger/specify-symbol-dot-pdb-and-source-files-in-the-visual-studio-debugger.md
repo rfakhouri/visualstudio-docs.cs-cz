@@ -62,7 +62,7 @@ Při ladění projektu v integrovaném vývojovém prostředí sady Visual Studi
 
 Ladicí program vyhledává také soubory se symboly v následujících umístěních:
 
-1. Umístění, které je zadáno uvnitř knihovny DLL nebo spustitelného souboru (*.exe*) soubor.
+1. Umístění, které je zadáno uvnitř knihovny DLL nebo spustitelného souboru ( *.exe*) soubor.
 
    Ve výchozím nastavení Pokud máte vytvořenou knihovnu DLL nebo s *.exe* souboru na počítači, linker umístí úplnou cestu a název souboru přidruženého *PDB* soubor v knihovně DLL nebo *.exe* souboru. Ladicí program zjistí, pokud existuje soubor se symboly v dané oblasti.
 
@@ -100,7 +100,7 @@ Na **nástroje** > **možnosti** > **ladění** > **symboly** stránky, můžete
 
    ![Nástroje &#45; možnosti &#45; ladění &#45; symboly stránky](media/dbg-options-symbols.png "nástroje &#45; možnosti &#45; ladění &#45; symboly stránky")
 
-2. V části **Symbol umístění souborů (.pdb)**,
+2. V části **Symbol umístění souborů (.pdb)** ,
    - Použít **Microsoft Symbol Servers**, zaškrtněte políčko.
 
    - Chcete-li přidat nové umístění serveru symbolů
@@ -177,11 +177,11 @@ Při sestavení projektu v prostředí Visual Studio IDE se standardem **laděn�
 
   - *VC\<x > pdb*, kde  *\<x >* představuje verzi jazyka Visual C++, například *VC11.pdb*
 
-    *VC\<x > pdb* soubor uchovává všechny informace o ladění pro jednotlivé objektových souborů a je umístěn ve stejném adresáři jako soubor pravidel projektu. Pokaždé, když se vytvoří soubor objektu, kompilátor C/C++ sloučí informace o ladění do *VC\<x > pdb*. Ano, i když každý zdrojový soubor obsahuje společné soubory hlaviček, jako  *\<windows.h >*, funkce typedefs z těchto záhlaví jsou uloženy pouze jednou, namísto do každého souboru objektu. Vložené informace obsahují informace o typu, ale neobsahuje informace o symbolech, jako jsou definice funkce.
+    *VC\<x > pdb* soubor uchovává všechny informace o ladění pro jednotlivé objektových souborů a je umístěn ve stejném adresáři jako soubor pravidel projektu. Pokaždé, když se vytvoří soubor objektu, kompilátor C/C++ sloučí informace o ladění do *VC\<x > pdb*. Ano, i když každý zdrojový soubor obsahuje společné soubory hlaviček, jako  *\<windows.h >* , funkce typedefs z těchto záhlaví jsou uloženy pouze jednou, namísto do každého souboru objektu. Vložené informace obsahují informace o typu, ale neobsahuje informace o symbolech, jako jsou definice funkce.
 
   - *\<Projekt > .pdb*
 
-     *\<Projekt > pdb* soubor uchovává všechny informace o ladění pro projektu *.exe* souboru a je *\debug* podadresáře.  *\<Projekt > pdb* soubor obsahuje úplné informace o ladění, včetně funkčních prototypů, nejen informace o typu uvedené v *VC\<x > pdb*.
+    *\<Projekt > pdb* soubor uchovává všechny informace o ladění pro projektu *.exe* souboru a je *\debug* podadresáře. *\<Projekt > pdb* soubor obsahuje úplné informace o ladění, včetně funkčních prototypů, nejen informace o typu uvedené v *VC\<x > pdb*.
 
   Oba *VC\<x > pdb* a  *\<Projekt > pdb* soubory umožňují přírůstkové aktualizace. Linker také vloží cestu k *PDB* soubory *.exe* nebo *.dll* soubor, který vytvoří.
 
@@ -236,7 +236,7 @@ Pokud k tomu dojde, ladicí program zobrazí **nebyly načteny žádné symboly*
 **Použití stránky dokumentu nebyly načteny žádné symboly vám pomůže najít a načíst chybějící symboly:**
 
 - Chcete-li změnit cesty pro hledání, zvolte nevybranou cestu nebo vyberte **novou cestu** nebo **nová cesta VSTS** a zadejte nebo vyberte novou cestu. Vyberte **načíst** hledání cest a načtení souboru symbolů, pokud je nalezen.
-- Chcete-li přepsání jakékoli volby symbolu a opakujte hledání cesty, vyberte **Procházet a vyhledat \<executable-name >**. Načtení souboru symbolů, je-li nalezeno, nebo **Průzkumníka souborů** otevře, takže můžete ručně vybrat soubor symbolů.
+- Chcete-li přepsání jakékoli volby symbolu a opakujte hledání cesty, vyberte **Procházet a vyhledat \<executable-name >** . Načtení souboru symbolů, je-li nalezeno, nebo **Průzkumníka souborů** otevře, takže můžete ručně vybrat soubor symbolů.
 - Chcete-li otevřít **možnosti** > **ladění** > **symboly** stránce **zobrazit nastavení symbolů**.
 - Chcete-li zobrazit rozebrání v novém okně jednou, vyberte **zobrazit zpětný překlad**, nebo vyberte **dialogové okno Možnosti** nastavení možnosti chcete vždy zobrazit rozebrání, když nebyly nalezeny zdrojové soubory nebo soubory symbolu.
 - Chcete-li zobrazit umístění, prohledávat a výsledek, rozbalte **informace o načítání symbolů**.
