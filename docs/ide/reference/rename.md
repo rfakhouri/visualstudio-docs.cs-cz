@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e45373c41358ba3e9c2d70222ace07cdf1b59e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b18f5763d68487e7642f5632c05516d2f1bd9e2
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812081"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500942"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Symbol kód refaktoring pro přejmenování
 
@@ -68,10 +68,13 @@ Tento refaktoring platí pro:
 
 4. Až budete spokojení s změny, zvolte **použít** tlačítko nebo stisknutím klávesy **Enter** a změny budou potvrzeny.
 
-> [!NOTE]
-> Pokud použijete název, který již existuje, která by způsobila konflikt, který **přejmenovat** vás upozorní pole.
->
-> ![Přejmenovat konflikt](media/rename-conflict-cs.png)
+## <a name="remarks"></a>Poznámky
+
+- Pokud použijete název, který již existuje, která by způsobila konflikt, který **přejmenovat** vás upozorní pole.
+
+   ![Přejmenovat konflikt](media/rename-conflict-cs.png)
+
+- Dalším způsobem, jak přejmenovat symbol je můžete změnit jeho název v editoru. Stiskněte kurzor v názvu symbolu, **Ctrl**+ **.** nebo stačí rozbalte nabídku ikonu žárovky, které se zobrazí a zvolte **přejmenovat \<starý název > na \<nový název >** .
 
 ## <a name="see-also"></a>Viz také:
 

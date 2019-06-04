@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5052cc84cb3c314885483f914385725189ba07d9
-ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
+ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66462127"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501137"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky
 
@@ -30,11 +30,14 @@ Jako první kroky ve vývoji tohoto kvízu vytvoříte projekt a přidat popisky
 
 1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
-1. V **nainstalované šablony** , zvolte buď **jazyka C#** nebo **jazyka Visual Basic**.
+1. Zvolte buď **Visual C#**  nebo **jazyka Visual Basic** na levé straně **nový projekt** dialogové okno a potom vyberte **Windows Desktop**.
 
-1. V seznamu šablon vyberte **formulářová aplikace Windows** šablony, pojmenujte ho **MathQuiz**a klikněte na tlačítko **OK** tlačítko.
+1. V seznamu šablon vyberte **aplikace Windows Forms (.NET Framework)** šablony, pojmenujte ho *MathQuiz*a klikněte na tlačítko **OK** tlačítko.
 
-     Formulář, který je pojmenován *Form1.cs* nebo *Form1.vb* v závislosti na programovacím jazyce, který jste zvolili.
+    Formulář, který je pojmenován *Form1.cs* nebo *Form1.vb* v závislosti na programovacím jazyce, který jste zvolili.
+
+   > [!NOTE]
+   > Pokud se nezobrazí **aplikace Windows Forms (.NET Framework)** šablony, instalace pomocí instalačního programu sady Visual Studio **vývoj desktopových aplikací .NET** pracovního vytížení.<br/><br/>![Úloha vývoj desktopových aplikací .NET v instalačním programu sady Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Další informace najdete v tématu [instalace sady Visual Studio](../install/install-visual-studio.md) stránky.
 
 ::: moniker-end
 
@@ -65,7 +68,7 @@ Jako první kroky ve vývoji tohoto kvízu vytvoříte projekt a přidat popisky
 
 ::: moniker-end
 
-## <a name="to-create-set-properties-for-a-form"></a>Chcete-li vytvořit sadu vlastností pro formulář
+## <a name="to-set-properties-for-a-form"></a>Chcete-li nastavit vlastnosti pro formulář
 
 1. V sadě Visual Studio, vyberte formulář (buď *Form1.cs* nebo *Form1.vb*, v závislosti na programovacím jazyce) a potom změňte jeho **Text** vlastnost  **Matematický kvíz**.
 

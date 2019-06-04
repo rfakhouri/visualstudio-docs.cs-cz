@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1662f484d8738c381f704732389537b0ac3ad5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f091ea0841ac66cd106c3fa613f1219ddaaffcf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431481"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501206"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5: Přidejte do svého formuláře ovládací prvky
 V tomto kroku přidáte ovládací prvky, například <xref:System.Windows.Forms.PictureBox> ovládacího prvku a <xref:System.Windows.Forms.CheckBox> ovládací prvek do formuláře. Potom přidáte <xref:System.Windows.Forms.Button> ovládací prvky do formuláře.
@@ -30,8 +30,7 @@ V tomto kroku přidáte ovládací prvky, například <xref:System.Windows.Forms
 
 4. Zvolte nový **PictureBox** ovládací prvek a vyberte ji a pak zvolte na černý trojúhelník na novém ovládacím prvku PictureBox k zobrazení jeho seznamu úloh, jak je znázorněno na následujícím obrázku.
 
-     ![Úlohy třídy PictureBox](../ide/media/express_pictureboxtasks.png)
-**PictureBox** úlohy
+     ![Úlohy třídy PictureBox](../ide/media/express_pictureboxtasks.png)<br/>***Ovládací prvek PictureBox*** *úlohy*
 
     > [!NOTE]
     > Pokud omylem přidáte nesprávný typ ovládacího prvku do vašeho kontejneru TableLayoutPanel, můžete ho odstranit. Klikněte pravým tlačítkem na ovládací prvek a klikněte na tlačítko **odstranit** v kontextové nabídce. Můžete také odebrat ovládací prvky z formuláře pomocí panelu nabídek. V panelu nabídky zvolte **upravit** > **zpět**, nebo **upravit** > **odstranit**.
@@ -45,8 +44,7 @@ V tomto kroku přidáte ovládací prvky, například <xref:System.Windows.Forms
 
 7. Zvolte **TableLayoutPanel** ve formuláři a potom přidejte ovládací prvek CheckBox do formuláře. Dvakrát klikněte **zaškrtávací políčko** položky v **nástrojů** přidat nový ovládací prvek CheckBox do další volné buňky v tabulce. Protože PictureBox zabírá v kontejneru TableLayoutPanel první dvě buňky, ovládací prvek CheckBox je přidán do levé dolní buňky. Zvolte **Text** vlastnost a zadejte hledané klíčové slovo **Stretch**, jak je znázorněno na následujícím obrázku.
 
-     ![TextBox – ovládací prvek s vlastností Stretch](../ide/media/express_pictureviewercheckbox.png)
-**TextBox** ovládacím prvkem **Stretch** vlastnost
+     ![TextBox – ovládací prvek s vlastností Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>***Textové pole*** *ovládacím prvkem* ***Stretch*** *vlastnost*
 
 8. Zvolte **TableLayoutPanel** na formuláři a potom přejděte na **kontejnery** ve **nástrojů** (kde jste získali váš ovládací prvek) a dvakrát klikněte na panel **FlowLayoutPanel** položka k přidání nového ovládacího prvku do poslední buňky v ovládacím prvku PictureBox (vpravo dole). Potom ukotvěte FlowLayoutPanel v TableLayoutPanel (výběrem **ukotvit v nadřazeném kontejneru** v seznamu úloh černého trojúhelníku panelu FlowLayoutPanel nebo nastavením panelu FlowLayoutPanel **ukotvit** Vlastnost **vyplnit**).
 
@@ -71,8 +69,7 @@ V tomto kroku přidáte ovládací prvky, například <xref:System.Windows.Forms
 
 5. Zvolte **Zavřít** tlačítko a vyberte ji. Podržte stisknutou klávesu **Ctrl** klíče a vyberte další tři tlačítka tak, aby byly všechny vybrány. Zatímco jsou všechna tlačítka vybrána, přejděte **vlastnosti** okno a posouvejte nahoru až **AutoSize** vlastnost. Tato vlastnost říká tlačítku, že automaticky změní velikost sebe sama na vhodnou všechen text. Nastavte ho na **true**. Tlačítka by měla být nyní správně velká a být ve správném pořadí. (Dokud jsou vybrány všechna čtyři tlačítka, můžete změnit všechny čtyři **AutoSize** vlastnosti ve stejnou dobu.) Následující obrázek znázorňuje čtyři tlačítka.
 
-     ![Prohlížeč obrázků se čtyřmi tlačítky](../ide/media/express_autosize.png)
-**prohlížeče obrázků** se čtyřmi tlačítky
+     ![Prohlížeč obrázků se čtyřmi tlačítky](../ide/media/express_autosize.png)<br/>***Obrázek prohlížeče*** *se čtyřmi tlačítky*
 
 6. Nyní spusťte váš program znovu, abyste viděli váš nově rozložený formulář. Volba tlačítek a zaškrtávacího políčka ještě nic neumí, ale bude brzy fungovat.
 

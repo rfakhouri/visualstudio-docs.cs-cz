@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: ed84e5478ae7a15905a5555a318bd656c664710e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82f3426cbba06a27f2d2f74fdd167f003ebb3eae
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982915"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500925"
 ---
 # <a name="javascript-and-typescript-support"></a>Podpora jazyka JavaScript a TypeScript
 
@@ -39,7 +39,7 @@ Visual Studio pro Mac používá [jazyková služba JavaScriptu](/visualstudio/i
 Technologie intellisense jazyka JavaScript v sadě Visual Studio pro Mac může být založen na odvození typu proměnné, JSDoc nebo TypeScript deklarace.
 
 - **Odvození typu** – typ objektu je zajištěno pomocí okolního kontext kódu. Další informace najdete v části Visual Studio na [IntelliSense podle odvození typu](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference).
-- **JSDoc** – existují situace, kdy odvození typu neposkytuje informace o správném typu. V těchto případech lze explicitně zadat informace o typu [JSDoc](http://usejsdoc.org/about-getting-started.html) poznámky. Další informace najdete v části Visual Studio na [IntelliSense podle JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
+- **JSDoc** – existují situace, kdy odvození typu neposkytuje informace o správném typu. V těchto případech lze explicitně zadat informace o typu [JSDoc](https://jsdoc.app/about-getting-started.html) poznámky. Další informace najdete v části Visual Studio na [IntelliSense podle JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
 - **Soubory TypeScript deklarace** – `.d.ts` soubory se používají k poskytnutí hodnot pro technologie IntelliSense jazyka JavaScript. Typy deklarované v tomto souboru mohou být použity jako typy v komentářích JSDoc. Další informace najdete v části Visual Studio na [na soubory TypeScript deklarací na základě technologie IntelliSense](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files)
 
     ![přidává se soubor definice typescript](media/javascript-image3.png)

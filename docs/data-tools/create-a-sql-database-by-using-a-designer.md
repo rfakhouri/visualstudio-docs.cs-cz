@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f227a7948f5a842120341432c03747119988ddf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569962"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501074"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Vytvoření databáze a přidání tabulek v sadě Visual Studio
 
@@ -26,7 +26,19 @@ Visual Studio můžete použít k vytvoření a aktualizaci souboru místní dat
 
 ## <a name="prerequisites"></a>Požadavky
 
-K dokončení tohoto návodu, musíte mít nepovinný **ukládání a zpracování dat** úlohy nainstalovaná v sadě Visual Studio. Ho Pokud chcete nainstalovat, otevřete **instalační program sady Visual Studio** a zvolte **Další** > **změnit** vedle verze sady Visual Studio, kterou chcete upravit (Pokud máte více než jedna verze nainstalovaná). Na **úlohy** ve skupině **Web a Cloud**, zvolte **ukládání a zpracování dat**a potom klikněte na tlačítko **změnit** přidat úlohy Visual Studio.
+K dokončení tohoto návodu, musíte mít nepovinný **ukládání a zpracování dat** úlohy nainstalovaná v sadě Visual Studio. Ho Pokud chcete nainstalovat, otevřete **instalační program sady Visual Studio** a zvolte **změnit** nebo **Další** > **změnit** vedle verze Visual Studio, kterou chcete upravit.
+
+::: moniker range=">=vs-2019"
+
+Na **úlohy** ve skupině **další sady nástrojů**, zvolte **ukládání a zpracování dat**a potom klikněte na tlačítko **změnit** přidat úlohy Visual Studio.
+
+::: moniker-end
+
+::: moniker range="=vs-2017"
+
+Na **úlohy** ve skupině **Web a Cloud**, zvolte **ukládání a zpracování dat**a potom klikněte na tlačítko **změnit** přidat úlohy Visual Studio.
+
+::: moniker-end
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Vytvoření projektu a lokálního databázového souboru
 

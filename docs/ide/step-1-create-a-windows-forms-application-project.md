@@ -1,6 +1,6 @@
 ---
 title: 'Krok 1: Vytvořte projekt Formulářové aplikace Windows'
-ms.date: 03/23/2019
+ms.date: 06/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b28b69f2a5f2b02c483c5d6813943297b13f173
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979853"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501057"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1: Vytvořte projekt Formulářové aplikace Windows
 
@@ -28,14 +28,13 @@ Při vytváření prohlížeče obrázků, prvním krokem je vytvoření projekt
 
 ## <a name="open-visual-studio-2017"></a>Open Visual Studio 2017
 
-1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**. Dialogové okno by měl vypadat takto.
+1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**. Dialogové okno vypadat podobně jako na následujícím snímku obrazovky.
 
-     ![Dialogové okno nového projektu](../ide/media/newprojectdialogcallouts.png)<br/>
-***Nový projekt** dialogové okno*
+     ![Dialogové okno nového projektu](../ide/media/newprojectdialogcallouts.png)<br/>***Nový projekt*** *dialogové okno*
 
-2. Zvolte buď **Visual C#**  nebo **jazyka Visual Basic** na levé straně **nový projekt** dialogové okno.
+2. Zvolte buď **Visual C#**  nebo **jazyka Visual Basic** na levé straně **nový projekt** dialogové okno a potom vyberte **Windows Desktop**.
 
-3. V seznamu šablon vyberte **aplikace Windows Forms (.NET Framework)** . Zadejte název nového formuláře **PictureViewer**a klikněte na tlačítko **OK** tlačítko.
+3. V seznamu šablon vyberte **aplikace Windows Forms (.NET Framework)** . Zadejte název nového formuláře *PictureViewer*a klikněte na tlačítko **OK** tlačítko.
 
     >[!NOTE]
     >Pokud se nezobrazí **aplikace Windows Forms (.NET Framework)** šablony, instalace pomocí instalačního programu sady Visual Studio **vývoj desktopových aplikací .NET** pracovního vytížení.<br/><br/>![Úloha vývoj desktopových aplikací .NET v instalačním programu sady Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Další informace najdete v tématu [instalace sady Visual Studio](../install/install-visual-studio.md) stránky.
@@ -50,7 +49,7 @@ Při vytváření prohlížeče obrázků, prvním krokem je vytvoření projekt
 
    ![Zobrazit okno 'vytvořte nový projekt.](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Na **vytvořte nový projekt** okno, zadejte nebo zadejte *Windows Forms* do vyhledávacího pole. Dále zvolte **jazyka Visual Basic** od jazyka seznamu a klikněte na tlačítko **Windows** ze seznamu platformy. 
+1. Na **vytvořte nový projekt** okno, zadejte nebo zadejte *Windows Forms* do vyhledávacího pole. Dále zvolte **jazyka Visual Basic** od jazyka seznamu a klikněte na tlačítko **Windows** ze seznamu platformy.
 
    Po použití filtrů jazyka a libovolné platformy, zvolte **aplikace Windows Forms (.NET Framework)** šablony a klikněte na tlačítko **Další**.
 
@@ -59,13 +58,13 @@ Při vytváření prohlížeče obrázků, prvním krokem je vytvoření projekt
    > [!NOTE]
    > Pokud se nezobrazí **aplikace Windows Forms (.NET Framework)** šablony, můžete jej nainstalovat z **vytvořte nový projekt** okna. V **nenašli, co hledáte?** zprávu, zvolte **nainstalovat další nástroje a funkce** odkaz.
    >
-   > ![Odkaz "Nainstalovat další nástroje a funkce" z 'Nemůžete najít, co hledáte' zprávy v okně "vytvořit nový projekt.](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![Odkaz "Nainstalovat další nástroje a funkce" z 'Nemůžete najít, co hledáte' zprávy v okně "vytvořit nový projekt.](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > Dále zvolte v Visual Studio Installer, zvolte **vývoj desktopových aplikací .NET** pracovního vytížení.
-   > 
+   >
    > ![Úlohy .NET core v instalačním programu sady Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Po tomto, zvolte **změnit** tlačítko v instalačním programu sady Visual Studio. Můžete být vyzváni k uložte svou práci; Pokud ano, udělejte to. Dále zvolte **pokračovat** instalace zatížení. 
+   > Po tomto, zvolte **změnit** tlačítko v instalačním programu sady Visual Studio. Můžete být vyzváni k uložte svou práci; Pokud ano, udělejte to. Dále zvolte **pokračovat** instalace zatížení.
 
 1. V **konfigurovat nový projekt** okno, zadejte nebo vložte *PictureViewer* v **název projektu** pole. Potom kliknutím na možnost **vytvořit**.
 

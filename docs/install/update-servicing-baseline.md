@@ -1,5 +1,5 @@
 ---
-title: Aktualizace sady Visual Studio na směrný plán údržby
+title: Aktualizace sady Visual Studio v servisním směrném plánu
 titleSuffix: ''
 description: Zjistěte, jak aktualizace sady Visual Studio při zachování směrný plán údržby.
 ms.date: 05/22/2019
@@ -13,18 +13,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8928feffed77f8bfbb3787bd9a20737b9c7b3f9e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 36bbec66e822d7e1daebcadbeeba30e166747368
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66213848"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501121"
 ---
-# <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualizace sady Visual Studio na směrný plán údržby
+# <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualizace sady Visual Studio v servisním směrném plánu
 
-Visual Studio 2019 bude mít časté aktualizace během její [životního cyklu produktu](/visualstudio/productinfo/release-rhythm.md#release-channel-updates). Patří oba vedlejší verze aktualizace (například: 16.0 k 16.1), které zahrnují nové funkce a součásti a opravné aktualizace (například: 16.0.4 k 16.0.5) obsahující pouze cílová opravy pro kritické problémy. 
+Visual Studio 2019 bude mít časté aktualizace během její [životního cyklu produktu](/visualstudio/productinfo/release-rhythm#release-channel-updates). Patří oba vedlejší verze aktualizace (například: 16.0 k 16.1), které zahrnují nové funkce a součásti a opravné aktualizace (například: 16.0.4 k 16.0.5) obsahující pouze cílová opravy pro kritické problémy. 
 
-Organizace mohou správci uchovat své klienty v údržby směrný plán, který je podporován aktualizace pro rok po vydání další údržby směrného plánu údržby. Díky tomu větší flexibilitu pro vývojáře a správce, abyste mohli přejít na nové funkce, opravy chyb nebo komponenty, které jsou součástí nový dílčí aktualizace. První směrného plánu údržby je 16.0.x. Zobrazit [možnosti podpory pro organizace a zákazníky se smlouvou professional](/visualstudio/releases/2019/servicing.md#support-options-for-enterprise-and-professional-customers) Další informace.
+Organizace mohou správci uchovat své klienty v údržby směrný plán, který je podporován aktualizace pro rok po vydání další údržby směrného plánu údržby. Díky tomu větší flexibilitu pro vývojáře a správce, abyste mohli přejít na nové funkce, opravy chyb nebo komponenty, které jsou součástí nový dílčí aktualizace. První směrného plánu údržby je 16.0.x. Zobrazit [možnosti podpory pro organizace a zákazníky se smlouvou professional](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) Další informace.
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Jak získat na směrný plán údržby
 
