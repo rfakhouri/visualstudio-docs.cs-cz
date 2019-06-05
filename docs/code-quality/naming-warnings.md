@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fc446207d2f8c2800135154ca435b821a0afd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90bdc70a2de900d43831994aff72e25031241cc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825439"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715302"
 ---
 # <a name="naming-warnings"></a>Upozornění na pojmenování
-Upozornění na pojmenování podporují dodržování konvencí pokyny k návrhu architektury .NET.
+
+Upozornění na pojmenování podporují dodržování konvencí pokyny k návrhu rozhraní .NET.
 
 ## <a name="in-this-section"></a>V tomto oddílu
 
@@ -42,7 +43,7 @@ Upozornění na pojmenování podporují dodržování konvencí pokyny k návrh
 |[CA1719: Názvy parametrů by neměly odpovídat názvům členů](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|Název parametru by měl sdělit význam parametru a název členu by měl sdělit význam členu. Byl by to vzácný návrh, pokud by byly stejné. Stejné pojmenování parametru i jeho členu je neintuitivní a činí knihovnu obtížně použitelnou.|
 |[CA1701: Složených slov prostředku řetězců by měla správně formátováno.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Každé slovo řetězce zdroje je rozděleno na tokeny, které jsou založeny na velká a malá písmena. Každá kombinace dvou sousedících tokenů je zkontrolována knihovnou kontroly pravopisu společnosti Microsoft. Je-li kombinace rozpoznána, způsobí slovo porušení pravidla.|
 |[CA1703: Řetězce prostředků by měly být zadány správně](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|Zdrojový řetězec obsahuje jedno nebo více slov, která knihovna kontroly pravopisu společnosti Microsoft nerozpoznala.|
-|[CA1724: Názvy typů by neměly odpovídat oborům názvů](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Názvy typů by neměly odpovídat názvům obory názvů, které jsou definovány v knihovně tříd rozhraní .NET Framework. Porušení tohoto pravidla může snížit použitelnost knihovny.|
+|[CA1724: Názvy typů by neměly odpovídat oborům názvů](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Názvy typů by neměly odpovídat názvům oborů názvů .NET. Porušení tohoto pravidla může snížit použitelnost knihovny.|
 |[CA1707: Identifikátory by neměly obsahovat podtržítka](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|Názvy identifikátorů podle konvence neobsahují znak podtržítka (_). Toto pravidlo kontroluje obory názvů, typy, členy a parametry.|
 |[CA1721: Názvy vlastností by neměly odpovídat metodám get](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|Název soukromého nebo chráněného členu začíná na „Get“ a dále se shoduje s názvem veřejné nebo chráněné vlastnosti. Metody „Get“ a vlastnosti by měly mít názvy, které zřetelně rozliší jejich funkce.|
 |[CA1716: Identifikátory by neměly odpovídat klíčovým slovům](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Název oboru názvů nebo název typu odpovídá vyhrazenému klíčovému slovu programovacího jazyka. Identifikátory pro obory názvů a typů by neměly odpovídat klíčovým slovům, která jsou definována jazyky cílenými na modul CLR (Common Language Runtime).|

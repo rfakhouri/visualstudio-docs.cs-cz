@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c251b9fbf8327369acf20ef6acea0518e2b16913
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c7f3bdc6351f30d5cad60a7ed9663824fa3d434
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808260"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714712"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Zkontrolujte použití čistého odepření a povolení
 
@@ -31,14 +31,16 @@ ms.locfileid: "62808260"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>Příčina
- Metoda obsahuje kontrolu zabezpečení, která určuje akce zabezpečení PermitOnly nebo odepřít.
+
+Metoda obsahuje kontrolu zabezpečení, která určuje akce zabezpečení PermitOnly nebo odepřít.
 
 ## <a name="rule-description"></a>Popis pravidla
- <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Akce zabezpečení by měly být používány pouze těmi, kdo mají pokročilé znalosti o zabezpečení rozhraní .NET Framework. Kód používající tyto bezpečnostní akce by měl být podroben revizi zabezpečení.
 
- Odepřít mění výchozí chování procházení zásobníku, ke které dochází v reakci na požadavek zabezpečení. To vám umožní určit oprávnění, která nesmí být po dobu trvání metodu zamítnutí bez ohledu na skutečnou oprávnění volajících v zásobníku volání. Pokud procházení zásobníku zjistí metodu, která je zabezpečena pomocí Odepřít a pokud požadované oprávnění je součástí odepření oprávnění, procházení zásobníku selže. PermitOnly také mění výchozí chování procházení zásobníku. Je možné zadat pouze oprávnění, která lze udělit, bez ohledu na oprávnění volající kód. Pokud procházení zásobníku zjistí metodu, která je zabezpečena pomocí PermitOnly, a pokud oprávnění, která jsou určena podle PermitOnly není součástí požadované oprávnění, procházení zásobníku selže.
+<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Akce zabezpečení by měly být používány pouze těmi, kdo mají pokročilé znalosti o zabezpečení rozhraní .NET. Kód používající tyto bezpečnostní akce by měl být podroben revizi zabezpečení.
 
- Kód, který závisí na tyto akce by pečlivě vyhodnotit pro ohrožení zabezpečení z důvodu jejich užitečnost omezené a drobným chování. Zvažte použití těchto zdrojů:
+Odepřít mění výchozí chování procházení zásobníku, ke které dochází v reakci na požadavek zabezpečení. To vám umožní určit oprávnění, která nesmí být po dobu trvání metodu zamítnutí bez ohledu na skutečnou oprávnění volajících v zásobníku volání. Pokud procházení zásobníku zjistí metodu, která je zabezpečena pomocí Odepřít a pokud požadované oprávnění je součástí odepření oprávnění, procházení zásobníku selže. PermitOnly také mění výchozí chování procházení zásobníku. Je možné zadat pouze oprávnění, která lze udělit, bez ohledu na oprávnění volající kód. Pokud procházení zásobníku zjistí metodu, která je zabezpečena pomocí PermitOnly, a pokud oprávnění, která jsou určena podle PermitOnly není součástí požadované oprávnění, procházení zásobníku selže.
+
+Kód, který závisí na tyto akce by pečlivě vyhodnotit pro ohrožení zabezpečení z důvodu jejich užitečnost omezené a drobným chování. Zvažte použití těchto zdrojů:
 
 - [Požadavky na propojení](/dotnet/framework/misc/link-demands) nejsou ovlivněny Deny nebo PermitOnly.
 
@@ -51,22 +53,24 @@ ms.locfileid: "62808260"
 - Pokud odepřít nemá žádný vliv, konkrétně, pokud volající nemá oprávnění, které zablokovaly odepřít, volající přístup chráněných prostředků přímo, bez použití odepřít. Podobně pokud volající nemá oprávnění k odepření, procházení zásobníku selže bez odepřít.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Jakékoli použití tyto bezpečnostní akce způsobí, že je porušení pravidel. Chcete-li opravit porušení, nepoužívejte tyto bezpečnostní akce.
+
+Jakékoli použití tyto bezpečnostní akce způsobí, že je porušení pravidel. Chcete-li opravit porušení, nepoužívejte tyto bezpečnostní akce.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačit upozornění tohoto pravidla, až poté, co dokončíte kontrolu zabezpečení.
+
+Potlačit upozornění tohoto pravidla, až poté, co dokončíte kontrolu zabezpečení.
 
 ## <a name="example-1"></a>Příklad 1
- Následující příklad ukazuje některá omezení Odepřít.
 
- Následující knihovny obsahuje třídu, která má dvě metody, které jsou stejné až požadavky na zabezpečení, které je chránit.
+Následující příklad ukazuje některá omezení Odepřít. Knihovna obsahuje třídu, která má dvě metody, které jsou stejné až požadavky na zabezpečení, které je chránit.
 
- [!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]
+[!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]
 
 ## <a name="example-2"></a>Příklad 2
- Následující aplikace ukazuje účinky odepřít na zabezpečené metody v knihovně.
 
- [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]
+Následující aplikace ukazuje účinky odepřít na zabezpečené metody v knihovně.
+
+[!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]
 
 Tento příklad vytvoří následující výstup:
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c22da2a31be1389ca0b60df6cc64ac6c9155ad69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ec10f226ad139ffbeb46badc6ef3dd6c384af91
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852487"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714938"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Ladění knihovny DLL v sadě Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -84,7 +84,7 @@ Pro projekty C/C++ můžete nastavit hlavičky a knihovny LIB umístění soubor
 
 1. Vyberte **OK**.
 
-Další informace o nastavení projektu jazyka C++, naleznete v tématu [stránky vlastností (Visual C++)](/cpp/ide/property-pages-visual-cpp).
+Další informace o nastavení projektu jazyka C++, naleznete v tématu [stránky vlastností (Visual C++)](/cpp/build/reference/property-pages-visual-cpp).
 
 ## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Sestavení ladicí verze
 

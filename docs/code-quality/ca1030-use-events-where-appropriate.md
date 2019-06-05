@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7e96009d689fec48d242f4db1790e6e0eacafa
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f9a3d2ef30018c7fe57f1e7d728ba1dd152f56f5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842370"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714291"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Použijte události, kde je to vhodné
 
@@ -45,11 +45,11 @@ Ve výchozím nastavení, toto pravidlo pouze prohledá externě viditelným met
 
 Toto pravidlo zjišťuje metody, které mají názvy obvykle používané pro události. Události podle návrhový vzor pozorovatel nebo publikování a odběru; používají se při změně stavu do jednoho objektu musí sdělí další objekty. Pokud metoda volána jako odpověď jednoznačně definovanou změnu stavu, by měl vyvolat metodu obslužné rutiny události. Objekty volající tuto metodu by měly místo přímého volání metody vyvolat událost.
 
-Některé běžné příklady událostí, které se nacházejí v uživatelských rozhraní aplikací, kde způsobí, že akce uživatele, jako je kliknutí na tlačítko segment kódu k provedení. Model události rozhraní .NET Framework není omezena pouze na uživatelské rozhraní; ji by měl být použít všude, kde musí komunikovat, že se stav změní na jeden nebo více objektů.
+Některé běžné příklady událostí, které se nacházejí v uživatelských rozhraní aplikací, kde způsobí, že akce uživatele, jako je kliknutí na tlačítko segment kódu k provedení. Model událostí .NET není omezen na uživatelská rozhraní. Ji by měl být použít všude, kde musí komunikovat, že se stav změní na jeden nebo více objektů.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
-Pokud metoda je volána při změně stavu objektu, měli byste zvážit změnu návrhu a použít model událostí .NET.
+Pokud metoda je volána při změně stavu objektu, zvažte změnu návrhu a použít model událostí .NET.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 

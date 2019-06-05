@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69ef227bb30703a41fe9519114a2bc9904e902f2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893920"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714810"
 ---
 # <a name="wpf-overview"></a>Přehled grafického subsystému WPF (Windows Presentation Foundation)
 
@@ -24,13 +24,13 @@ Windows Presentation Foundation (WPF) umožňuje vytvářet klasické pracovní 
 
 ![Ukázka uživatelského rozhraní contoso zdravotní péče](../designers/media/wpfintrofigure24.png)
 
-Základní WPF je nezávislé na řešení a vektorové vykreslování modul, který je sestaven využít moderní grafický hardware. WPF rozšiřuje základní s komplexní sadou funkcí vývoj aplikací, které zahrnují Extensible Application Markup Language (XAML), ovládací prvky, datové vazby, rozložení, 2D a 3D grafice, animace, styly, šablony, dokumenty, média, text, a Typografie. WPF je součástí rozhraní .NET Framework, takže můžete vytvářet aplikace, které zahrnují další prvky v knihovně tříd rozhraní .NET Framework.
+Základní WPF je nezávislé na řešení a vektorové vykreslování modul, který je sestaven využít moderní grafický hardware. WPF rozšiřuje základní s komplexní sadou funkcí vývoj aplikací, které zahrnují Extensible Application Markup Language (XAML), ovládací prvky, datové vazby, rozložení, 2D a 3D grafice, animace, styly, šablony, dokumenty, média, text, a Typografie. WPF je součástí rozhraní .NET, takže můžete vytvářet aplikace, které zahrnují další prvky rozhraní .NET API.
 
 Tento přehled je určená pro nové uživatele a popisuje klíčové funkce a koncepty WPF.
 
 ## <a name="program-with-wpf"></a>Program s WPF
 
-WPF existuje jako podmnožinu typů rozhraní .NET Framework, které se nacházejí ve většině případů v <xref:System.Windows> oboru názvů. Pokud máte dříve vytvořenou aplikace pomocí rozhraní .NET Framework pomocí spravované technologie, jako je ASP.NET a Windows Forms, by měla být základní WPF programovací prostředí známých; Vytvoření instance třídy, nastavte vlastnosti, volání metody a události popisovač, všechny pomocí oblíbeného programovacího jazyka, jako je C# nebo Visual Basic .NET.
+WPF existuje jako podmnožinu typů .NET (ve většině případů) uložených v <xref:System.Windows> oboru názvů. Pokud jste dříve vytvořili aplikace s využitím .NET spravovaná technologie, jako je ASP.NET a Windows Forms pomocí, měli seznámit; základní WPF programovací prostředí Vytvoření instance třídy, nastavte vlastnosti, volání metod a zpracovávat události pomocí oblíbeného programovacího jazyka, jako například .NET C# nebo Visual Basic.
 
 WPF obsahuje další programovací konstrukce, které zlepšují vlastnosti a události: [vlastnosti závislosti](/dotnet/framework/wpf/advanced/dependency-properties-overview) a [směrovaných událostí](/dotnet/framework/wpf/advanced/routed-events-overview).
 
@@ -220,7 +220,7 @@ Následující obrázek ukazuje výsledek z kódu XAML v předchozím příkladu
 
 ![Stránka DockPanel](../designers/media/wpfintrofigure11.png)
 
-## <a name="data-binding"></a>Vytváření datových vazeb
+## <a name="data-binding"></a>Datová vazba
 
 Většina aplikací se vytvoří uživatelům poskytnout způsob, jak zobrazit a upravit data. Pro aplikace WPF práci při ukládání a přístup k datům je již podle technologie, jako je SQL Server a ADO .NET. Po přístupu k datům a načtena do aplikací spravovaných objektů, začne těžkou práci pro aplikace WPF. V podstatě to zahrnuje dvě věci:
 

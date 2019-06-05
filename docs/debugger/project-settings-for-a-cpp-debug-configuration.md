@@ -112,12 +112,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: df0b604d865c31bb389fe8955521fb61208e4c11
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407889"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715442"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Nastavení projektu pro konfiguraci ladění jazyka C++
 Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C nebo Visual C++ v **stránky vlastností** dialogové okno, jak je popsáno v [jak: Nastavení ladění a vydání konfigurace](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** dialogové okno.
@@ -139,7 +139,7 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C nebo Visu
 | **Argumenty příkazového** (ladicí program místní Windows)<br /><br /> **Argumenty vzdáleného příkazu** (Windows vzdálený ladicí program) | -Určuje argumenty pro příkaz zadaný dříve.<br /><br /> V tomto poli můžete použít následující operátory přesměrování:<br /><br /> < `file`<br /> Čte stdin ze souboru.<br /><br /> > `file`<br /> Zapíše hodnotu stdout do souboru.<br /><br /> >> `file`<br /> Připojí stdout do souboru.<br /><br /> 2> `file`<br /> Zapíše hodnotu stderr do souboru.<br /><br /> 2>> `file`<br /> Připojí stderr do souboru.<br /><br /> 2> &1<br /> Odešle výstup stderr (2) do stejného umístění jako stdout (1).<br /><br /> 1> &2<br /> Odešle stdout (1) výstup do stejného umístění jako stderr (2).<br /><br /> Ve většině případů jsou tyto operátory použitelné pouze pro konzolové aplikace. |
 | **Pracovní adresář** | Určuje pracovní adresář laděného programu, relativně vzhledem k adresáři projektu, kde je umístěn váš soubor EXE. Pokud toto pole ponecháte prázdné, pracovní adresář je adresář projektu. Pro vzdálené ladění projektu adresář je na vzdáleném serveru. |
 | **Připojit** (ladicí program místní Windows a Windows vzdálený ladicí program) | Určuje, zda chcete spustit nebo připojit k aplikaci. Výchozí nastavení je Ne. |
-| **Název vzdáleného severu** (Windows vzdálený ladicí program) | Určuje název počítače (kromě vašeho), na kterém chcete ladit aplikace.<br /><br /> Makro sestavení RemoteMachine je nastavena na hodnotu této vlastnosti; Další informace najdete v tématu [sestavení makra pro příkazy a vlastnosti](/cpp/ide/common-macros-for-build-commands-and-properties). |
+| **Název vzdáleného severu** (Windows vzdálený ladicí program) | Určuje název počítače (kromě vašeho), na kterém chcete ladit aplikace.<br /><br /> Makro sestavení RemoteMachine je nastavena na hodnotu této vlastnosti; Další informace najdete v tématu [sestavení makra pro příkazy a vlastnosti](/cpp/build/reference/common-macros-for-build-commands-and-properties). |
 | **Připojení** (Windows vzdálený ladicí program) | Umožňuje přepínat mezi typy standard a bez ověřování připojení pro vzdálené ladění. Zadejte název vzdáleného počítače v **název vzdáleného serveru** pole. Typy připojení patří:<br /><br /> -   **Vzdálený s ověřováním Windows**<br />-   **Vzdálený bez ověřování**<br /><br /> **Poznámka:** vzdálené ladění bez ověřování může zanechat vzdálený počítač zranitelné vůči narušení zabezpečení. Režim ověřování Windows je bezpečnější.<br /><br /> Další informace najdete v tématu [vzdálené ladění nastavení](../debugger/remote-debugging.md). |
 | **Adresa URL operace HTTP** (Web ladicí program služby a ladicí program webového prohlížeče) | Určuje adresu URL, kde je umístěn projekt, který ladíte. |
 | **Typ ladicího programu** | Určuje typ ladicího programu, který se má použít: **Pouze nativní**, **pouze spravované**, **pouze GPU**, **smíšený**, **automaticky** (výchozí), nebo **skript**.<br /><br /> -   **Pouze nativní** je pro nespravovaný kód jazyka C++.<br />-   **Režim pouze spravovaný** je pro kód, který běží v rámci common language runtime (spravovaný kód).<br />-   **Smíšené** vyvolá ladicí programy pro spravovaný i nespravovaný kód.<br />-   **Automatické** Určuje typ ladicího programu na základě kompilátoru a informací souboru EXE.<br />-   **Skript** vyvolá ladicí program skriptů.<br />-   **Pouze GPU** je pro kód C++ AMP, který běží na GPU zařízení nebo v rasterizéru referenčního rozhraní DirectX. Zobrazit [kódu ladění GPU](../debugger/debugging-gpu-code.md). |

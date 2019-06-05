@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fef5f63d8c3fd843ed6f92a313102a9c9879003f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582547"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715369"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurace projektu C++ pro IntelliSense
 
@@ -45,8 +45,6 @@ Je-li spustit vaše sestavení mimo rozhraní IDE sady Visual Studio a sestaven�
 Pro projekty souborů pravidel, které jsou založeny na šabloně NMake projektu, zvolte **NMake** v levém podokně a pak zvolte **cesty hledání zahrnutí** pod **IntelliSense** kategorie:
 
 ![Cesty zahrnutí projektu souboru pravidel](media/vcpp-intellisense-makefile-include-paths.png)
-
-Další informace najdete v tématu [jak: Povolení technologie IntelliSense pro projekty souborů pravidel](/cpp/ide/how-to-enable-intellisense-for-makefile-projects).
 
 ### <a name="open-folder-projects"></a>Otevřete složku projekty
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c8b92ae2f607ae449b7b4392fc3638fcdcb6a80
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554867"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715340"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump – ukázka
 
@@ -42,9 +42,9 @@ Ve výchozím nastavení je v instalačním adresáři chráněném adresáři. 
 
 1. V **Průzkumníka řešení**, vyberte projekt dia2dump – (nikoli řešení).
 
-1. Otevřete v projektu **stránky vlastností** dialogové okno. Podrobnosti najdete v tématu [práce s vlastnostmi projektu](/cpp/ide/working-with-project-properties).
+1. Otevřete v projektu **stránky vlastností** dialogové okno. Podrobnosti najdete v tématu [práce s vlastnostmi projektu](/cpp/build/working-with-project-properties).
 
-1. Otevřít **vlastnosti konfigurace** > **C/C++** > **Obecné** stránku vlastností.
+1. Otevřít **vlastnosti konfigurace** > **C/C++**  > **Obecné** stránku vlastností.
 
 1. V **další adresáře souborů k zahrnutí** vlastnost, zvolte ovládací prvek rozevírací seznam a zvolte **upravit**.
 

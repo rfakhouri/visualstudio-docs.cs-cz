@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825040"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715272"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Návod: Analýza defektů spravovaného kódu
 
 V tomto podrobném návodu analyzujete spravovaný projekt závad v kódu pomocí nástroje Analýza kódu.
 
-Tento názorný postup vás provede procesem pomocí analýzy kódu pro analýzu sestavení .NET spravovat kód pro soulad s pokyny k návrhu rozhraní Microsoft .NET Framework.
+Tento názorný postup vás provede procesem pomocí analýzy kódu pro analýzu sestavení .NET spravovat kód pro soulad s pokyny k návrhu rozhraní .NET.
 
 ## <a name="create-a-class-library"></a>Vytvoření knihovny tříd
 

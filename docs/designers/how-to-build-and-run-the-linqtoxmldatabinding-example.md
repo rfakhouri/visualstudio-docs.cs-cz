@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Sestavení a spuštění příkladu Linqtoxmldatabinding'
+title: 'Postupy: Sestavení a spuštění příkladu LinqToXmlDataBinding'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d53f8d08222eb35660f7a4454164d6b821a976d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897556"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714831"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Postupy: Postupy: Sestavení a spuštění příkladu LinqToXmlDataBinding
 
@@ -22,7 +22,9 @@ Další informace o sadě Visual Studio najdete v tématu [přehled Visual Studi
 
 ## <a name="create-the-project"></a>Vytvoření projektu
 
-1. Otevřete Visual Studio a vytvořte C# **aplikace WPF** s názvem **LinqToXmlDataBinding**. Projekt musí cílit na rozhraní .NET Framework 3.5 (nebo novější).
+1. Otevřete Visual Studio a vytvořte C# **aplikace WPF** s názvem **LinqToXmlDataBinding**.
+
+   Projekt musí cílit na rozhraní .NET Framework 3.5 (nebo novější).
 
 1. Pokud není již k dispozici, přidejte odkazy na projekt pro následující sestavení .NET:
 

@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3032c73d92f69e6380427bfc675ee263a3eb013f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564822"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714487"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio
 
@@ -56,7 +56,7 @@ Služby WCF Data Services je implementace standardní protokol Open Data (OData)
 
 ### <a name="wcf-programming-model"></a>Model programování WCF
 
-Komunikace mezi dvěma entitami podle programovacího modelu WCF: klienta WCF a služby WCF. Programovací model, je zapouzdřena v <xref:System.ServiceModel> oboru názvů v rozhraní .NET Framework.
+Komunikace mezi dvěma entitami podle programovacího modelu WCF: klienta WCF a služby WCF. Programovací model, je zapouzdřena v <xref:System.ServiceModel> oboru názvů v rozhraní .NET.
 
 ### <a name="wcf-service"></a>Služby WCF
 
@@ -228,7 +228,7 @@ Můžete vytvořit vazbu dat vrácené službou Windows Communication Foundation
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Postupy: Nakonfigurujte službu znovu použít existující typy
 
-Při odkazu na službu se přidá do projektu, jsou generovány všechny typy definované v rámci služby v místním projektu. V mnoha případech se vytvoří duplicitní typy, když služba používá běžné typy rozhraní .NET Framework, nebo když jsou definovány typy ve sdílené knihovně.
+Při odkazu na službu se přidá do projektu, jsou generovány všechny typy definované v rámci služby v místním projektu. V mnoha případech se vytvoří duplicitní typy, když služba používá běžné typy .NET, nebo když jsou definovány typy ve sdílené knihovně.
 
 K tomuto problému vyhnout, typy v odkazovaných sestaveních jsou sdílené ve výchozím nastavení. Pokud chcete zakázat sdílení typu pro jeden nebo více sestavení, můžete provést, **nakonfigurovat odkazy na služby** dialogové okno.
 

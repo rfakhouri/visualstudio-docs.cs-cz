@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5403803a4da0821978a8c6bbfc31e45c31104640
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818225"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715283"
 ---
 # <a name="access-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 
@@ -152,6 +152,6 @@ Nainstalujte [podpora Pythonu v sadě Visual Studio](../python/overview-of-pytho
 
 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;popisuje možnosti dotazu, integrované do jazyka C# a Visual Basic a společný model pro dotazování na relačních databází, dokumenty XML, datové sady a kolekce v paměti.
 
-[Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;Tento článek popisuje práci s funkcí rozhraní .NET Framework XML dat, ladění XSLT, XML a architektura dotaz XML.
+[Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;Tento článek popisuje práci s funkcí .NET XML dat, ladění XSLT, XML a architektura dotaz XML.
 
-[Dokumenty a Data XML](/dotnet/standard/data/xml/index)&mdash;přehled komplexního a integrovaného sadu tříd, které pracují s dokumenty XML a data v rozhraní .NET Framework.
+[Dokumenty a Data XML](/dotnet/standard/data/xml/index)&mdash;přehled komplexního a integrovaného sadu tříd, které pracují s dokumenty XML a data v rozhraní .NET.

@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797535"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714687"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Určete IFormatProvider
 
@@ -36,7 +36,7 @@ ms.locfileid: "62797535"
 
 Metoda nebo konstruktor volá jeden nebo více členů, které mají přetížení <xref:System.IFormatProvider?displayProperty=fullName> parametr a tato metoda nebo konstruktor nevolá přetížení přebírající <xref:System.IFormatProvider> parametru.
 
-Toto pravidlo ignoruje volání metod rozhraní .NET Framework, které jsou popsány jako ignoruje <xref:System.IFormatProvider> parametru. Pravidla i ignoruje následujících metod:
+Toto pravidlo ignoruje volání metod rozhraní .NET, které jsou popsány jako ignoruje <xref:System.IFormatProvider> parametru. Pravidla i ignoruje následujících metod:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ Toto pravidlo ignoruje volání metod rozhraní .NET Framework, které jsou pops
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Když <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> nebo <xref:System.IFormatProvider> objektu není zadán, výchozí hodnota zadaná pomocí přetíženého členu nemusí mít ve všech národních prostředích požadovaný efekt. Kromě toho členy rozhraní .NET Framework zvolte výchozí jazykovou verzi a formátování podle předpokladů, které nemusí být správná pro váš kód. Pokud chcete mít jistotu, že kód funguje podle očekávání pro vaše scénáře, by měla poskytnout informace specifické jazykové verze podle následujících pokynů:
+Když <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> nebo <xref:System.IFormatProvider> objektu není zadán, výchozí hodnota zadaná pomocí přetíženého členu nemusí mít ve všech národních prostředích požadovaný efekt. Kromě toho členy rozhraní .NET zvolte výchozí jazykovou verzi a formátování podle předpokladů, které nemusí být správná pro váš kód. Pokud chcete mít jistotu, že kód funguje podle očekávání pro vaše scénáře, by měla poskytnout informace specifické jazykové verze podle následujících pokynů:
 
 - Pokud uživateli se zobrazí hodnotu, použijte aktuální jazykové verze. Viz <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 

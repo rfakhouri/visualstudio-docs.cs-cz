@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 085e2fe029daf246f6883e6856ddff6a9bacccdc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b258b456aa614c851be138c017b3378cc13984cc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790112"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715389"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Postupy: Vložit komentáře XML pro generování dokumentace
 
@@ -24,7 +24,7 @@ Visual Studio vám může pomoct dokumentovat prvků kódu, jako jsou třídy a 
 XML souboru generovaného kompilátorem můžete distribuovat spolu s sestavení .NET, aby Visual Studio a jiná Integrovaná vývojová prostředí pomocí technologie IntelliSense můžete zobrazit rychlé informace o typech a členech. Kromě toho lze spustit soubor XML prostřednictvím nástrojů jako [DocFX](https://dotnet.github.io/docfx/) a [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) ke generování websites referenční dokumentace rozhraní API.
 
 > [!NOTE]
-> **Vložit komentář** příkaz, který automaticky vloží dokumentační komentáře XML je k dispozici v [ C# ](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) a [jazyka Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation). Však můžete ručně vložit [dokumentační komentáře XML v jazyce C++](/cpp/ide/xml-documentation-visual-cpp) soubory a stále Generovat soubory dokumentace XML v době kompilace.
+> **Vložit komentář** příkaz, který automaticky vloží dokumentační komentáře XML je k dispozici v [ C# ](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) a [jazyka Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation). Však můžete ručně vložit [dokumentační komentáře XML v jazyce C++](/cpp/build/reference/xml-documentation-visual-cpp) soubory a stále Generovat soubory dokumentace XML v době kompilace.
 
 ## <a name="to-insert-xml-comments-for-a-code-element"></a>Chcete-li vložit komentáře XML pro prvek kódu
 
@@ -57,5 +57,5 @@ XML souboru generovaného kompilátorem můžete distribuovat spolu s sestavení
 - [Dokumentace kódu s komentáři XML (C# průvodce)](/dotnet/csharp/codedoc)
 - [Postupy: Vytvoření dokumentace XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [Komentáře v jazyce C++](/cpp/cpp/comments-cpp)
-- [XML dokumentace (C++)](/cpp/ide/xml-documentation-visual-cpp)
+- [XML dokumentace (C++)](/cpp/build/reference/xml-documentation-visual-cpp)
 - [Generování kódu](../code-generation-in-visual-studio.md)

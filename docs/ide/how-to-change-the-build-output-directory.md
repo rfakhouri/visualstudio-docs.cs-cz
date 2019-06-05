@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0fda2363ec63572f29c6687cc10ee9a7ee06c76
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: f9dce876b477dfb802b9cf64214af2ca1cec6a4e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805053"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715353"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Postupy: Změna výstupního adresáře sestavení
 
@@ -52,5 +52,5 @@ Můžete zadat umístění výstupu generovaného ve vašem projektu na základ�
 ## <a name="see-also"></a>Viz také:
 
 - [Stránka sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md)
-- [Stránka Obecné vlastností (projekt)](/cpp/ide/general-property-page-project)
+- [Stránka Obecné vlastností (projekt)](/cpp/build/reference/general-property-page-project)
 - [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: aafe875ee8fe759d80f8db866a565a40ce16a054
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e5f88acccd9ccbcd880b8403edb0eb40f97ad2e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953670"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714490"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – nejčastější dotazy
 
@@ -33,7 +33,7 @@ Live Unit Testing spolupracuje s tři rozhraní testování částí oblíbenýc
 |Rozhraní pro testování  |Minimální verze aplikace Visual Studio adaptéru  |Minimální verze rozhraní Framework  |
 |---------|---------|---------|
 |xUnit.net |verze 2.2.0-beta3-build1187 xunit.Runner.VisualStudio |1.9.2 xunit |
-|NUnit |NUnit3TestAdapter verzí 3.5.1 |NUnit verze 3.5.0 |
+|NUnit |Verze NUnit3TestAdapter 3.7.0 |NUnit verze 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 Pokud máte starší založené na MSTest testovací projekty tento odkaz `Microsoft.VisualStudio.QualityTools.UnitTestFramework` a nechcete přesunout na novější balíčky MSTest NuGet, proveďte upgrade na Visual Studio 2017 verze 15.4 nebo novější.
@@ -46,7 +46,7 @@ V některých případech budete muset explicitně obnovit balíčky NuGet odkaz
 
 Ano. Live Unit Testing spolupracuje s .NET Core a .NET Framework. Přidala se podpora pro .NET Core v sadě Visual Studio 2017 verze 15.3. Upgradovat na tuto verzi sady Visual Studio nebo novější, pokud chcete podporu Live Unit Testing pro .NET Core.
 
-## <a name="configuration"></a>Konfigurace
+## <a name="configuration"></a>Konfiguraci
 
 **Proč Live Unit Testing nefunguje, pokud můžu ho zapnout?**
 

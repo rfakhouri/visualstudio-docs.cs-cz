@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fa965caf63dad6e81e2aeabbc93e97c7aa4b7a80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef7b693a881aaa1457004c84968ebc80936fc2b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546196"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714844"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Typy automatického rozložení by neměly být viditelné modelu COM
 
@@ -39,7 +39,7 @@ Typ hodnoty viditelné modelu COM (Component Object) je označena <xref:System.R
 
 ## <a name="rule-description"></a>Popis pravidla
 
-<xref:System.Runtime.InteropServices.LayoutKind> modul common language runtime spravuje typy rozložení. Mezi verzemi rozhraní .NET Framework, který přeruší klienty modelu COM, které očekávají specifické rozložení můžete změnit rozložení těchto typů. Pokud <xref:System.Runtime.InteropServices.StructLayoutAttribute> atribut není zadán, C#, Visual Basic, a zadejte kompilátory C++ [hodnotu LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) pro typy hodnot.
+<xref:System.Runtime.InteropServices.LayoutKind> modul common language runtime spravuje typy rozložení. Mezi verzemi rozhraní .NET, který přeruší klienty modelu COM, které očekávají specifické rozložení můžete změnit rozložení těchto typů. Pokud <xref:System.Runtime.InteropServices.StructLayoutAttribute> atribut není zadán, C#, Visual Basic, a zadejte kompilátory C++ [hodnotu LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) pro typy hodnot.
 
 Pokud není označen jinak, všechny veřejné, neobecné typy jsou viditelné modelu COM, a všechny neveřejné a obecné typy nejsou viditelná modelu COM. Pokud chcete snížit počet falešně pozitivních výsledků, vyžaduje toto pravidlo viditelnost modelu COM typ, který má být explicitně uvedena. Musí být označené obsahující sestavení <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> nastavena na `false` a typ musí být označeny pomocí <xref:System.Runtime.InteropServices.ComVisibleAttribute> nastavena na `true`.
 

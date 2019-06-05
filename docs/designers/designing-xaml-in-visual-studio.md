@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 252e9d17ba272dd61af87427ad91f42d2fcd13ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a558ce97e642c38b5c54c1a2e3d01cce2e2e280
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897890"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715455"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Návrh XAML v sadě Visual Studio
 
@@ -52,7 +52,7 @@ Nejzákladnější úkoly integrovaném vývojovém prostředí sady Visual Stud
 
 - **Průzkumník týmových projektů:** Pomocí Průzkumníka týmových projektů můžete spravovat vaše projekty s úložišti GIT nebo TFS usnadňuje spolupráci mezi týmy. Zobrazit [práci v Průzkumníku týmových projektů](/azure/devops/user-guide/work-team-explorer).
 
-- **NuGet:** Můžete spravovat balíčky NuGet v sadě Visual Studio i programu Blend for Visual Studio. Správce balíčků NuGet je Správce balíčků pro rozhraní .NET Framework, která zjednodušuje instalace a odebrání balíčků z řešení.
+- **NuGet:** Můžete spravovat balíčky NuGet v sadě Visual Studio i programu Blend for Visual Studio. Správce balíčků NuGet je Správce balíčků pro .NET, která zjednodušuje instalace a odebrání balíčků z řešení.
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Pokročilé funkce v programu Blend for Visual Studio
 

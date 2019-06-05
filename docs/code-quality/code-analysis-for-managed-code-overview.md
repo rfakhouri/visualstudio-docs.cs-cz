@@ -12,23 +12,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81c4d6ba7cc4ae870c74733a4e78733c023e3f58
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540691"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713963"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Přehled statické analýzy kódu pro spravovaný kód v sadě Visual Studio
 
 Visual Studio můžete provést analýzu kódu spravovaného kódu dvěma způsoby: pomocí *FxCop* statické analýzy spravovaných sestavení a s další moderní *analyzátory Roslyn*. Toto téma popisuje FxCop statickou analýzu kódu. Další informace o analýze kódu pomocí analyzátorů kódu, naleznete v tématu [analyzátory Roslyn přehled](../code-quality/roslyn-analyzers-overview.md).
 
-Analýza kódu pro spravovaný kód analyzuje spravovaná sestavení a hlásí informace o sestaveních, jako jsou porušení programování a návrhu pravidel stanoví pokyny pro návrh rozhraní Microsoft .NET Framework.
+Analýza kódu pro spravovaný kód analyzuje spravovaná sestavení a hlásí informace o sestavení, například porušení pravidel programování a návrhu stanoví [pokyny k návrhu .NET](/dotnet/standard/design-guidelines/).
 
 Analytický nástroj představuje kontroly, které provádí během analýzy jako upozornění. Upozornění identifikují jakékoli relevantní problémy programování a návrhu a kdy je možné, poskytují informace o tom, jak tento problém vyřešit.
 
 > [!NOTE]
-> Analýza statického kódu není podporována pro projekty .NET Core a .NET Standard v sadě Visual Studio. Pokud spuštění analýzy kódu pro projekt .NET Core nebo .NET Standard v rámci nástroje msbuild zobrazí zpráva podobná **Chyba: CA0055: Nelze identifikovat platformu pro \<your.dll >**. Chcete-li provést analýzu kódu v projektech .NET Core nebo .NET Standard, použijte [analyzátory Roslyn](../code-quality/roslyn-analyzers-overview.md) místo.
+> Analýza statického kódu není podporována pro projekty .NET Core a .NET Standard v sadě Visual Studio. Pokud spuštění analýzy kódu pro projekt .NET Core nebo .NET Standard v rámci nástroje msbuild zobrazí zpráva podobná **Chyba: CA0055: Nelze identifikovat platformu pro \<your.dll >** . Chcete-li provést analýzu kódu v projektech .NET Core nebo .NET Standard, použijte [analyzátory Roslyn](../code-quality/roslyn-analyzers-overview.md) místo.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integrace integrovaného vývojového prostředí (IDE)
 
@@ -36,7 +36,7 @@ Analýza kódu na svůj projekt můžete spustit ručně nebo automaticky.
 
 Chcete-li spustit analýzu kódu při každém sestavení projektu, vyberte **povolit analýzu kódu na sestavení** na stránce vlastností projektu. Další informace najdete v tématu [jak: Povolení a zákaz automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Chcete-li ruční spuštění analýzy kódu na projektu, na panelu nabídek zvolte **analyzovat** > **spustit analýzu kódu** > **spustit analýzu kódu na \<projektu >**.
+Chcete-li ruční spuštění analýzy kódu na projektu, na panelu nabídek zvolte **analyzovat** > **spustit analýzu kódu** > **spustit analýzu kódu na \<projektu >** .
 
 ## <a name="rule-sets"></a>Sady pravidel
 

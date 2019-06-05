@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f666dc71aaf9683d9a7c936cc4985e97146d9454
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842518"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714388"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Použijte instance obecných obslužných rutin události
 
@@ -41,7 +41,7 @@ Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné typy
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Než .NET, chcete-li předat informace o vlastním obslužné rutiny události nového delegáta musí deklarovat, která je určena třída, která byla odvozena z <xref:System.EventArgs?displayProperty=fullName> třídy. To platí už v rozhraní .NET. Rozhraní .NET Framework zavedené <xref:System.EventHandler%601?displayProperty=fullName> delegáta, obecného delegáta, který umožňuje jakoukoli třídu, která je odvozena od <xref:System.EventArgs> se použije spolu s obslužnou rutinu události.
+Než .NET, chcete-li předat informace o vlastním obslužné rutiny události nového delegáta musí deklarovat, která je určena třída, která byla odvozena z <xref:System.EventArgs?displayProperty=fullName> třídy. V rozhraní .NET, Obecné <xref:System.EventHandler%601?displayProperty=fullName> delegáta umožňuje jakoukoli třídu, která je odvozena od <xref:System.EventArgs> se použije spolu s obslužnou rutinu události.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 

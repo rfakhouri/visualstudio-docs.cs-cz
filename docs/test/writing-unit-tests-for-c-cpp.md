@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 308478bc47d62731494616a30ce320b3662de735
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: f27e2585d082f61021fbc736b394612095f56684
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461596"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715259"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů jednotek pro C/C++ v sadě Visual Studio
 
@@ -41,7 +41,7 @@ Projekty testování částí C++ podporu [CodeLens](../ide/find-code-changes-an
 
 - **Boost.Test** je zahrnutý jako součást výchozí **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Je integrován s **Průzkumník testů** aktuálně nepodporuje, ale není nutné šablonu projektu, proto musí být ručně nakonfigurovat. Další informace najdete v tématu [postupy: použití testu Boost.Test v sadě Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- **CTest** podpora je součástí [nástroje CMake pro Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp) komponenta, která je součástí sady **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Nicméně CTest není dosud plně integrovaná **Průzkumník testů**. Další informace najdete v tématu [postupy: použití testu CTest v sadě Visual Studio](how-to-use-ctest-for-cpp.md).
+- **CTest** podpora je součástí [nástroje CMake pro Visual Studio](/cpp/build/cmake-tools-for-visual-cpp) komponenta, která je součástí sady **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Nicméně CTest není dosud plně integrovaná **Průzkumník testů**. Další informace najdete v tématu [postupy: použití testu CTest v sadě Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 a starší**
 

@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7ac4d91de1e41477e1acd21118422e3164e20e80
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445377"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715422"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace se sadou Visual Studio (MSBuild)
 Visual Studio hostuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k načtení a sestavení spravovaných projektů. Protože [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je zodpovědné za projekt, téměř každý projekt ve [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formát může být úspěšně použit v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], i když byl autorem jiný nástroj a má vlastní proces sestavení projektu.
 
  Tento článek popisuje konkrétní aspekty [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]společnosti [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] hostování, který by měl zvážit při přizpůsobení projektů a *.targets* soubory, které chcete k načtení a sestavení [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ty vám pomohou Ujistěte se, že [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] funkce jako IntelliSense a ladění práce pro váš vlastní projekt.
 
- Informace o projektech C++, naleznete v tématu [soubory projektu](/cpp/ide/project-files).
+ Informace o projektech C++, naleznete v tématu [soubory projektu](/cpp/build/reference/project-files).
 
 ## <a name="project-file-name-extensions"></a>Přípony názvů souborů projektu
  *MSBuild.exe* rozpozná všechny příponu názvu souboru projektu odpovídající vzoru *.\* proj*. Ale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozpozná pouze podmnožinu těchto přípon názvů souborů projektu, které určují projekt specifický pro jazyk systému, který načte projekt. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nemá jazykově neutrální [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] systém projektu.
@@ -133,9 +133,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **uvolnit projekt**.
 
-     Projekt je označen **(není k dispozici)**.
+     Projekt je označen **(není k dispozici)** .
 
-2. V **Průzkumníka řešení**, otevřete místní nabídku pro nedostupný projekt a klikněte na tlačítko **upravit \<soubor projektu >**.
+2. V **Průzkumníka řešení**, otevřete místní nabídku pro nedostupný projekt a klikněte na tlačítko **upravit \<soubor projektu >** .
 
      Soubor projektu se otevře v editoru XML sady Visual Studio.
 
