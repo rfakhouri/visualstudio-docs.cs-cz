@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 79ed1bd03e90a92d8246c5f51a6ad64d52758167
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 442a98b76efb8013d5d40607e14586299718afc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260959"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715091"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdrojů dat
 
@@ -45,7 +45,7 @@ V tomto kontextu termín *objekt* odkazuje na vlastní obchodní objekt, entity 
 
     - K zobrazení všech dat v ovládacím prvku jednoho, vyberte jiný ovládací prvek v seznamu, jako je například **DataGrid** nebo **seznamu** v aplikaci WPF nebo **DataGridView** ve Windows Forms aplikace.
 
-    Seznam dostupných ovládacích prvků, závisí na návrháře, který máte otevřený, kterou verzi rozhraní .NET Framework váš projekt cílí, a určuje, zda jste přidali vlastní ovládací prvky tuto podporu datové vazby k **nástrojů**. Pokud ovládací prvek, který chcete vytvořit není v seznamu dostupných ovládacích prvků, můžete přidat ovládací prvek do seznamu. Další informace najdete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    Seznam dostupných ovládacích prvků, závisí na návrháře, který máte otevřený, kterou verzi rozhraní .NET váš projekt cílí, a určuje, zda jste přidali vlastní ovládací prvky tuto podporu datové vazby k **nástrojů**. Pokud ovládací prvek, který chcete vytvořit není v seznamu dostupných ovládacích prvků, můžete přidat ovládací prvek do seznamu. Další informace najdete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
     Další informace o vytvoření vlastního ovládacího prvku Windows Forms, který lze přidat do seznamu ovládacích prvků pro data tabulky nebo objekty v **zdroje dat** okna, naleznete v tématu [vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje komplexní data Vytvoření vazby](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
 
@@ -63,7 +63,7 @@ Před přetažením položky, která představuje sloupci nebo vlastnosti z obje
 
 4. Klikněte na rozevírací nabídku pro sloupec nebo vlastnost a potom vyberte ovládací prvek, který chcete vytvořit, když je položku přetáhli do návrháře.
 
-     Seznam dostupných ovládacích prvků, závisí na návrháře, který máte otevřený, kterou verzi rozhraní .NET Framework váš projekt cílí, a který vlastní ovládací prvky, které podporují vytváření datových vazeb, které jste přidali do **nástrojů**. Pokud je ovládací prvek, který chcete vytvořit seznam dostupných ovládacích prvků, můžete přidat ovládací prvek do seznamu. Další informace najdete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+     Seznam dostupných ovládacích prvků, závisí na návrháře, který máte otevřený, kterou verzi rozhraní .NET váš projekt cílí, a který vlastní ovládací prvky, které podporují vytváření datových vazeb, které jste přidali do **nástrojů**. Pokud je ovládací prvek, který chcete vytvořit seznam dostupných ovládacích prvků, můžete přidat ovládací prvek do seznamu. Další informace najdete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
      Další informace o vytvoření vlastního ovládacího prvku, který lze přidat do seznamu ovládacích prvků pro datové sloupce nebo vlastnosti v **zdroje dat** okna, naleznete v tématu [vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje jednoduchou datovou vazbu](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
 

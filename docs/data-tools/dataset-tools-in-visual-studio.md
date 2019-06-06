@@ -47,21 +47,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00873cd84b5a6d89469de26ed982b98d2dffa27c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567101"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715211"
 ---
-# <a name="dataset-tools-in-visual-studio"></a>Nástroje datové sady v sadě Visual Studio
+# <a name="dataset-tools-in-visual-studio"></a>Nástroje datových sad v sadě Visual Studio
 
 > [!NOTE]
 > Datové sady a související třídy jsou starší verze technologie .NET v rané fázi 2000s, která umožňují aplikacím pro práci s daty v paměti z databáze se odpojené aplikace. Jsou zvláště užitečné pro aplikace, které umožňují uživatelům upravovat data a zachová tak změny zpět do databáze. I když datové sady ukázaly jako velmi úspěšná technologie, doporučujeme použít rozhraní Entity Framework nové aplikace .NET. Entity Framework poskytuje přirozenější způsob, jak fungují s tabulkovými daty jako objektové modely a je jednodušší programovací rozhraní.
 
 A `DataSet` objekt je objekt v paměti, která je v podstatě zkrácené databáze. Obsahuje `DataTable`, `DataColumn`, a `DataRow` objekty, ve kterých můžete ukládat a upravit data z jedné nebo víc databází, aniž byste museli udržovat otevřené připojení. Datovou sadu uchovává informace o změny dat, takže aktualizace můžete sledovat a odesílá zpět do databáze, když vaše aplikace bude znovu připojeny.
 
-Datové sady a související třídy jsou definovány v <xref:System.Data?displayProperty=fullName> oboru názvů v knihovně tříd rozhraní .NET Framework. Můžete vytvářet a upravovat datové sady dynamicky v kódu pomocí technologie ADO.NET. Dokumentace v této části ukazuje, jak pracovat s datovými sadami pomocí návrháře sady Visual Studio. Datové sady, které jsou vytvořeny pomocí návrhářů **TableAdapter** objekty k interakci s databází. Použití datových sad, které jsou vytvořené prostřednictvím kódu programu **DataAdapter** objekty. Informace o vytváření datových sad prostřednictvím kódu programu najdete v tématu [adaptéry a čtečky dat](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Datové sady a související třídy jsou definovány v <xref:System.Data?displayProperty=fullName> obor názvů v rozhraní .NET API. Můžete vytvářet a upravovat datové sady dynamicky v kódu pomocí technologie ADO.NET. Dokumentace v této části ukazuje, jak pracovat s datovými sadami pomocí návrháře sady Visual Studio. Datové sady, které jsou vytvořeny pomocí návrhářů **TableAdapter** objekty k interakci s databází. Použití datových sad, které jsou vytvořené prostřednictvím kódu programu **DataAdapter** objekty. Informace o vytváření datových sad prostřednictvím kódu programu najdete v tématu [adaptéry a čtečky dat](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
 Pokud vaše aplikace je potřeba jenom číst data z databáze a nebude provádět aktualizace, přidá nebo odstraní, obvykle můžete získat lepší výkon pomocí `DataReader` objektu k načtení dat do obecného `List` nebo jiný objekt kolekce. Pokud je zobrazení dat, je můžete vytvořte datovou vazbu uživatelského rozhraní do kolekce.
 

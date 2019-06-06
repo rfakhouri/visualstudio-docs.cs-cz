@@ -1,5 +1,5 @@
 ---
-title: Vyplnění datové sady s použitím objektů TableAdapter
+title: Vyplnění datových sad pomocí objektů TableAdapter
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,19 +19,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566900"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715193"
 ---
-# <a name="fill-datasets-by-using-tableadapters"></a>Vyplnění datové sady s použitím objektů TableAdapter
+# <a name="fill-datasets-by-using-tableadapters"></a>Vyplnění datových sad pomocí objektů TableAdapter
 
 Komponenty TableAdapter vyplní datovou sadu s daty z databáze, na základě jednoho nebo více dotazů nebo uložených procedur, které zadáte. Objekty TableAdapter lze provést také přidání, aktualizace a odstranění v databázi, a zachovat změny provedené do datové sady. Také můžete použít globální příkazy, které nesouvisí s jakoukoli konkrétní tabulku.
 
 > [!NOTE]
-> Objekty TableAdapter jsou generovány pomocí návrháře sady Visual Studio. Pokud vytvoříte datové sady prostřednictvím kódu programu, použijte vlastnost DataAdapter, což je třída rozhraní .NET Framework.
+> Objekty TableAdapter jsou generovány pomocí návrháře sady Visual Studio. Pokud vytvoříte datové sady prostřednictvím kódu programu, použijte vlastnost DataAdapter, což je třída rozhraní .NET.
 
 Podrobné informace o operacích TableAdapter můžete přeskočit přímo na jednu z těchto témat:
 

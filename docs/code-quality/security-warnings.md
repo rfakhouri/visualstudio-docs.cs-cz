@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c52db730e471d845989b8fdfbadd259b5d166e8f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825276"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715225"
 ---
 # <a name="security-warnings"></a>Upozornění zabezpečení
 
@@ -36,7 +36,7 @@ Upozornění zabezpečení podporují bezpečnější knihovny a aplikace. Tato 
 |[CA2104: Nedeklarujte čtení proměnlivé odkazové typy pouze](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|Externě viditelný typ obsahuje externě viditelné pole měnitelného referenčního typu, které je určeno jen pro čtení. Měnitelný typ je typ, jehož instanční data lze upravit.|
 |[CA2105: Pole polí by neměly být pouze pro čtení](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|Pokud použijete modifikátor jen pro čtení (ReadOnly v jazyce Visual Basic) na pole, které obsahuje pole, pole nelze změnit tak, aby odkazovaly na jiné pole. Avšak prvky pole, které jsou uloženy v poli určeném jen pro čtení, mohou být změněny.|
 |[CA2106: Zabezpečte nepodmíněné výrazy](../code-quality/ca2106-secure-asserts.md)|Metoda uplatňuje oprávnění a na volajícím nejsou vykonány žádné kontroly zabezpečení. Uplatnění oprávnění zabezpečení bez provedení jakékoliv kontroly zabezpečení může zanechat ve vašem kódu zneužitelné slabé stránky zabezpečení.|
-|[CA2107: Revize Odepřít a povolit pouze](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|Metoda PermitOnly a akce zabezpečení CodeAccessPermission.Deny by měly být používány pouze těmi, kdo mají pokročilé znalosti o zabezpečení rozhraní .NET Framework. Kód používající tyto bezpečnostní akce by měl být podroben revizi zabezpečení.|
+|[CA2107: Revize Odepřít a povolit pouze](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|Pomocí PermitOnly metoda a akce zabezpečení CodeAccessPermission.Deny by měly být používány pouze těmi, které mají pokročilé znalosti o zabezpečení rozhraní .NET. Kód používající tyto bezpečnostní akce by měl být podroben revizi zabezpečení.|
 |[CA2108: Revize deklarativních zabezpečení na hodnotách](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Veřejný nebo chráněný hodnotový typ je zabezpečen pomocí přístupu k datům nebo požadavků propojení.|
 |[CA2109: Zkontrolujte viditelných obslužných rutin událostí](../code-quality/ca2109-review-visible-event-handlers.md)|Byla zjištěna veřejná nebo chráněná metoda zpracování událostí. Metody zpracování událostí by neměly být vystaveny, pokud to není nezbytně nutné.|
 |[CA2111: Ukazatelé by neměli být viditelné](../code-quality/ca2111-pointers-should-not-be-visible.md)|Ukazatel není soukromý, interní nebo jen pro čtení. Škodlivý kód může změnit hodnotu ukazatele, což potenciálně umožňuje přístup do libovolného umístění v paměti nebo může způsobit selhání aplikace nebo systému.|

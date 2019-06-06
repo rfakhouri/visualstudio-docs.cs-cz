@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f3c8fbde60e247ca9ec5fe82c9a16f28aded2abc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676283"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715059"
 ---
 # <a name="how-to-configure-static-code-analysis-for-managed-code"></a>Postupy: Konfigurace statické analýzy kódu pro spravovaný kód
 
@@ -29,7 +29,7 @@ Informace o tom, jak nakonfigurovat sadu pravidel pro webové aplikace ASP.NET n
 > [!NOTE]
 > Tento článek se týká pro statickou analýzu kódu a nikoli k [analyzátory Roslyn](use-roslyn-analyzers.md), které nechcete spustit analýzu kódu po sestavení.
 
-## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Chcete-li konfigurovat sadu pravidel pro projekt rozhraní .NET Framework
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Nakonfigurujte sadu pravidel pro projekt rozhraní .NET Framework
 
 1. Otevřít **analýzy kódu** karty na stránkách vlastností projektu. Můžete to provést v jednom z následujících způsobů:
 

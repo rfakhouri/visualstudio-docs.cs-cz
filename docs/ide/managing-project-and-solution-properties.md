@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3d5b1150c67eeb5d47741ed9331dcdc11a82582
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537395"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714957"
 ---
 # <a name="manage-project-and-solution-properties"></a>Správa vlastností projektu a řešení
 
@@ -48,7 +48,7 @@ Projekty C++ a JavaScript mít různé uživatelské rozhraní pro správu vlast
 
 ![Visual C&#43; &#43; vlastnosti projektu](../ide/media/vs2015_projprops_cpp.png)
 
-Informace o vlastnostech projektů C++, naleznete v tématu [práce s vlastnostmi projektu (C++)](/cpp/ide/working-with-project-properties). Další informace o vlastnostech jazyka JavaScript naleznete v tématu [stránky vlastností, JavaScript](../ide/reference/property-pages-javascript.md).
+Informace o vlastnostech projektů C++, naleznete v tématu [práce s vlastnostmi projektu (C++)](/cpp/build/working-with-project-properties). Další informace o vlastnostech jazyka JavaScript naleznete v tématu [stránky vlastností, JavaScript](../ide/reference/property-pages-javascript.md).
 
 ## <a name="solution-properties"></a>Vlastnosti řešení
 

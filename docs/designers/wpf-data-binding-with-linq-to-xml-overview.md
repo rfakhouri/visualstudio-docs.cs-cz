@@ -1,5 +1,5 @@
 ---
-title: Datová vazba WPF s LINQ to XML přehled
+title: Přehled datové vazby WPF s LINQ to XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef02735ab10d6223e9098a4fa03312507d961cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 400686710e09c19a806493232d471a1c946a630d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843924"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715065"
 ---
-# <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Datová vazba WPF s LINQ to XML přehled
+# <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Přehled datové vazby WPF s LINQ to XML
 
 Toto téma popisuje funkce vazby dynamických dat v <xref:System.Xml.Linq> oboru názvů. Tyto funkce lze použít jako zdroj dat pro prvky uživatelského rozhraní (UI) v aplikacích Windows Presentation Foundation (WPF). Tento scénář závisí na službě speciální *dynamické vlastnosti* z <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> a <xref:System.Xml.Linq.XElement?displayProperty=fullName>.
 
 ## <a name="xaml-and-linq-to-xml"></a>XAML a LINQ to XML
 
-Rozšiřitelné aplikace Markup Language (XAML) je XML dialekt vytvořeného microsoftem pro podporu technologií rozhraní .NET Framework 3.0. Používá se v subsystému WPF představující prvky uživatelského rozhraní a související funkce, jako jsou události a datové vazby. V modelu Windows Workflow Foundation XAML se používá k reprezentování struktura programu, jako je například ovládací prvek programu (*pracovních postupů*). XAML umožňuje deklarativní aspekty technologie být odděleno od související procedurální kódu, který definuje více individualizovaná chování programu.
+Rozšiřitelné aplikace Markup Language (XAML) je XML dialekt vytvořeného microsoftem pro podporu technologie .NET. Používá se v subsystému WPF představující prvky uživatelského rozhraní a související funkce, jako jsou události a datové vazby. V modelu Windows Workflow Foundation XAML se používá k reprezentování struktura programu, jako je například ovládací prvek programu (*pracovních postupů*). XAML umožňuje deklarativní aspekty technologie být odděleno od související procedurální kódu, který definuje více individualizovaná chování programu.
 
 Existují dva široké způsobů, kterými můžete pracovat XAML a LINQ to XML:
 
