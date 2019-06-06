@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f567fa1d1f793395532efac5991b01c5087b638a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94f1b2709f3541692a0dfcd2a92559135639c2a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545747"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744596"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Odeberte nepoužívané lokální hodnoty
 
@@ -40,7 +40,11 @@ ms.locfileid: "62545747"
  Nepoužívané místní proměnné a zbytečná přiřazení zvětšují velikost sestavení a snižují výkon.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, odeberte nebo použijte místní proměnnou. Všimněte si, že kompilátor jazyka C#, která je součástí [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] odebere nepoužívané místní proměnné při `optimize` je povolená možnost.
+
+Chcete-li opravit porušení tohoto pravidla, odeberte nebo použijte místní proměnnou.
+
+> [!NOTE]
+> C# Kompilátor odebere nepoužívané místní proměnné při `optimize` je povolená možnost.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Potlačit upozornění tohoto pravidla, je-li proměnná byla kompilátoru, protože ho. Je také bezpečné upozornění tohoto pravidla můžete potlačit nebo zakážete pravidlo, pokud výkon a údržba kódu nejsou primární obavy.

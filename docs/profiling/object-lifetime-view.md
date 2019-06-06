@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0819a4d9e1438b300daa68db4208bfe5908d800
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6127ae8e76ff7233ff7ad4f7b336325555e57b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794346"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747208"
 ---
 # <a name="object-lifetime-view"></a>Zobrazení doby života objektu
 Zobrazení doby života objektu je k dispozici, když **také shromažďovat data o životním cyklu objektu .NET** proběhne na **relace výkonu** stránky vlastností.
 
- Ze systému uvolňování paměti [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] spravuje přidělování a uvolňování paměti pro vaši aplikaci. Za účelem optimalizace výkonu systému uvolňování paměti spravované haldy rozdělen na tři generace: 0, 1 a 2. Uvolňování paměti modulu runtime uloží nové objekty 0. generace. Objekty, které byly zachovány při kolekce jsou povýšeny a uloženy v generace 1 a 2.
+ Uvolňování paměti rozhraní .NET Framework spravuje přidělování a uvolňování paměti pro vaši aplikaci. Za účelem optimalizace výkonu systému uvolňování paměti spravované haldy rozdělen na tři generace: 0, 1 a 2. Uvolňování paměti modulu runtime uloží nové objekty 0. generace. Objekty, které byly zachovány při kolekce jsou povýšeny a uloženy v generace 1 a 2.
 
  Získá systém uvolňování paměti podle rušení přidělení celé generace objektů. Pro objekty, které byly vytvořeny profilované aplikace zobrazení doba života objektu zobrazí počet a velikost objektů a generování, ve kterém se uvolní.
 

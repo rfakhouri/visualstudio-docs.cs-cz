@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406605"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746073"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Přístup k lokálním a vzdáleným datům v aplikacích ClickOnce
 Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] poskytuje širokou škálu možností pro čtení a zápis dat, místně i vzdáleně.
@@ -37,7 +37,7 @@ Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndpteccl
 ### <a name="clickonce-data-directory"></a>Adresář dat ClickOnce
  Každý [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace je nainstalovaná na místním počítači má datový adresář, který je uložený ve složce Dokumenty a nastavení uživatele. Všechny soubory součástí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a označena jako "data" soubor zkopírován do tohoto adresáře, když je nainstalovaná určitá aplikace. Datové soubory mohou být libovolného typu souboru, nejčastěji používané text, XML a soubory databáze, jako jsou například aplikace Microsoft Access .mdb soubory.
 
- Do adresáře dat je určená pro data spravované aplikace, které jsou data, která aplikace explicitně uchovává a udržuje. Všechny statické, nezávislé soubory nejsou označeny jako "data" v manifestu aplikace se místo toho jsou umístěny v adresáři aplikace. Tento adresář je, kde aplikace spustitelného souboru (*.exe*) jsou umístěny soubory a sestavení.
+ Do adresáře dat je určená pro data spravované aplikace, které jsou data, která aplikace explicitně uchovává a udržuje. Všechny statické, nezávislé soubory nejsou označeny jako "data" v manifestu aplikace se místo toho jsou umístěny v adresáři aplikace. Tento adresář je, kde aplikace spustitelného souboru ( *.exe*) jsou umístěny soubory a sestavení.
 
 > [!NOTE]
 > Když [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se odinstaluje, odebere se také jeho Data adresáře. Nikdy nepoužívejte datový adresář k uložení dat řízených na koncového uživatele, jako jsou například dokumenty.
@@ -60,7 +60,7 @@ Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndpteccl
 
  Můžete také získat cestu k adresáři data pomocí příslušných proměnných na <xref:System.Windows.Forms.Application> třídy, jako například <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.
 
- Manipulace s další typy souborů můžou vyžadovat další oprávnění. Například, pokud chcete použít databázi aplikace Access (*.mdb*) soubor, aplikace musí uplatnit úplný vztah důvěryhodnosti pro použití příslušných \<xref:System.Data > tříd.
+ Manipulace s další typy souborů můžou vyžadovat další oprávnění. Například, pokud chcete použít databázi aplikace Access ( *.mdb*) soubor, aplikace musí uplatnit úplný vztah důvěryhodnosti pro použití příslušných \<xref:System.Data > tříd.
 
 #### <a name="data-directory-and-application-versions"></a>Datový adresář a verze aplikace
  Každá verze aplikace má vlastní datový adresář, který je izolovaný od ostatních verzí. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vytvoří tento adresář bez ohledu na to, zda jsou všechny datové soubory zahrnuté v nasazení tak, aby aplikace měla umístění pro vytvoření nové datové soubory v době běhu. Při instalaci nové verze aplikace [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zkopíruje všechny existující soubory dat z předchozí verze datový adresář do adresáře dat novou verzi – Určuje, zda byly zahrnuty do původního nasazení nebo vytvořené aplikace.
@@ -72,7 +72,7 @@ Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndpteccl
 ### <a name="isolated-storage"></a>Izolované úložiště
  Izolované úložiště poskytuje rozhraní API pro vytváření a přístup k souborům s použitím jednoduchého rozhraní API. Skutečné umístění uložené soubory se skryje vývojáře a uživatele.
 
- Izolované úložiště funguje ve všech verzích [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Izolované úložiště funguje taky v částečně důvěryhodné aplikace bez nutnosti udělení dalších oprávnění. Izolované úložiště byste měli použít, pokud vaše aplikace musí spustit v částečném vztahu důvěryhodnosti, ale musí spravovat data specifická pro aplikaci.
+ Izolované úložiště funguje ve všech verzích rozhraní .NET Framework. Izolované úložiště funguje taky v částečně důvěryhodné aplikace bez nutnosti udělení dalších oprávnění. Izolované úložiště byste měli použít, pokud vaše aplikace musí spustit v částečném vztahu důvěryhodnosti, ale musí spravovat data specifická pro aplikaci.
 
  Další informace najdete v tématu [izolovaného úložiště](/dotnet/standard/io/isolated-storage).
 
@@ -98,7 +98,7 @@ Většina aplikací spotřebovávají nebo vytvářejí data. [!INCLUDE[ndpteccl
  Pokud vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace nemůže přistupovat k webového serveru z důvodu omezení zabezpečení, musí aplikace uplatnit <xref:System.Net.WebPermission> pro tento web. Další informace o zvýšení oprávnění zabezpečení pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, najdete v článku [zabezpečení ClickOnce applications](../deployment/securing-clickonce-applications.md).
 
 ### <a name="access-data-through-an-xml-web-service"></a>Přístup k datům prostřednictvím webové služby XML
- Pokud je zveřejnit vaše data jako webové služby XML, můžete přístup k datům pomocí proxy XML webové služby. Server proxy je [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] třídy můžete vytvořit buď pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Operace webové služby XML, třeba načítání zákazníků, uvedení objednávky a tak dále – jsou vystaveny jako metody na proxy serveru. To umožňuje mnohem jednodušší než nezpracovaný text nebo soubory XML webové služby.
+ Pokud je zveřejnit vaše data jako webové služby XML, můžete přístup k datům pomocí proxy XML webové služby. Proxy server je třída rozhraní .NET Framework, můžete vytvořit buď pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Operace webové služby XML, třeba načítání zákazníků, uvedení objednávky a tak dále – jsou vystaveny jako metody na proxy serveru. To umožňuje mnohem jednodušší než nezpracovaný text nebo soubory XML webové služby.
 
  Pokud vaše webová služba XML pracuje přes protokol HTTP, služba bude vázána stejná omezení zabezpečení, jako <xref:System.Net.WebClient> a <xref:System.Net.HttpWebRequest> třídy.
 

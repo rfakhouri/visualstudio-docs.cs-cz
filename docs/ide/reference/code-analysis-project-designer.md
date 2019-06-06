@@ -13,66 +13,56 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23de974e7d8587cc7185eb9bb01d029fc2dcc27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3271befd714f1b07c357426a931d62a7a854cbec
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569721"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745008"
 ---
 # <a name="code-analysis-project-designer"></a>Analýza kódu, návrhář projektu
-Obsahuje nástroj pro analýzu kódu, který můžete se rozhodnout spustit na vašem kódu. Informace o sestavení, kterou nástroj hlásí, například porušení programování a návrhu pravidel stanovených v pokyny pro návrh rozhraní Microsoft .NET Framework.
+
+Obsahuje nástroj pro analýzu kódu, který můžete se rozhodnout spustit na vašem kódu. Informace o sestavení, kterou nástroj hlásí, například porušení pravidel programování a návrhu stanoví pokyny k návrhu rozhraní Microsoft .NET.
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
- Povolit analýzu kódu
 
+ Povolit Analysis\ kódu
  Povolí nebo zakáže analýzy kódu pro váš projekt.
 
- Pravidla návrhu
-
+ Návrh Rules\
  Povolí nebo zakáže pravidla návrhu. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Pravidla globalizace
-
+ Globalizace Rules\
  Povolí nebo zakáže pravidla globalizace. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Pravidla interoperability
-
+ Vzájemná funkční spolupráce Rules\
  Povolí nebo zakáže pravidla interoperability. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Pravidla udržovatelnosti
-
+ Rules\ udržovatelnosti
  Povolí nebo zakáže pravidla udržovatelnosti. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Pravidla mobility
-
+ Mobility Rules\
  Povolí nebo zakáže pravidla mobility. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Pravidla pojmenování
-
+ Pojmenování Rules\
  Povolí nebo zakáže pravidla pojmenování. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Pravidla výkonu
-
+ Rules\ výkonu
  Povolí nebo zakáže pravidla výkonu. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Pravidla přenositelnosti
-
+ Přenositelnost Rules\
  Povolí nebo zakáže pravidla přenositelnosti. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Pravidla spolehlivosti
-
+ Spolehlivost Rules\
  Povolí nebo zakáže pravidla spolehlivosti. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Pravidla zabezpečení
-
+ Rules\ zabezpečení
  Povolí nebo zakáže pravidla zabezpečení. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Pravidla používání
-
+ Využití Rules\
  Povolí nebo zakáže použití pravidla. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Upozornění Analýzy kódu pro spravovaný kód](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Přehled Analýzy kódu pro spravovaný kód](../../code-quality/code-analysis-for-managed-code-overview.md)

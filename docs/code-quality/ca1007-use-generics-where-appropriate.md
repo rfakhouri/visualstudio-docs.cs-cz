@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cf2939f0484c6defb76b88fb072fcd4b51849b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4f72ba56b27d87d785ca561bad0de6e59dfdc2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779709"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744770"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Použijte obecné typy, kde je to vhodné
 
@@ -34,7 +34,7 @@ ms.locfileid: "62779709"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>Příčina
- Externě viditelná metoda obsahuje referenční parametr typu <xref:System.Object?displayProperty=fullName>a obsahující cíle sestavení [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Externě viditelná metoda obsahuje referenční parametr typu <xref:System.Object?displayProperty=fullName>, a příslušné sestavení zacíleno na rozhraní .NET Framework 2.0.
 
 ## <a name="rule-description"></a>Popis pravidla
  Odkaz na parametr je parametr, který je upraven pomocí `ref` (`ByRef` v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) – klíčové slovo. Typ argumentu, který je zadán pro referenční parametr musí přesně odpovídat na referenční typ parametru. Pokud chcete použít typ, který je odvozen z parametrů typu odkazu, typ musí nejprve být přetypování a přiřazen proměnné typu odkazu, parametr. Použití generické metody umožňuje všechny typy v souladu s omezením, které se mají předat metodě bez předchozího přetypování typu na referenční typ parametru.

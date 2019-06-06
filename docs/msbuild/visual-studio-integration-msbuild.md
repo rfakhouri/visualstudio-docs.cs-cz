@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac4d91de1e41477e1acd21118422e3164e20e80
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715422"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747438"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace se sadou Visual Studio (MSBuild)
 Visual Studio hostuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k načtení a sestavení spravovaných projektů. Protože [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je zodpovědné za projekt, téměř každý projekt ve [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formát může být úspěšně použit v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], i když byl autorem jiný nástroj a má vlastní proces sestavení projektu.
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, obsahující specifikace původní položky odkazu.
 
-  - `ResolvedFrom`, pokud bylo vyřešeno z nastavte na "{TargetFrameworkDirectory}" [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] adresáře.
+  - `ResolvedFrom`, pokud bylo vyřešeno z adresáře rozhraní .NET Framework, nastavte na "{TargetFrameworkDirectory}".
 
 - Odkazy modelu COM:
 

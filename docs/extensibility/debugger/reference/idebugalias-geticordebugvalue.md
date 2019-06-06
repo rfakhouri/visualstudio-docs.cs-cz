@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50fb7800c4446e7d13334957ee9f5f6534f254bf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f8ef27f9af5626b716339281c010c62c2515fb8b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338215"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746846"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Načte rozhraní spravovaného kódu, které představuje hodnotu přidruženou k tento alias.
@@ -47,7 +47,7 @@ int GetICorDebugValue(
  V případě úspěchu vrátí hodnotu S_OK; v opačném případě vrátí kód chyby.
 
 ## <a name="remarks"></a>Poznámky
- Tento postup se vztahuje jenom na spravované hodnoty ( `ICorDebugValue` je k dispozici v rozhraní [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] a je definován v [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] sady SDK v souboru cordebug.idl).
+ Tento postup se vztahuje jenom na spravované hodnoty ( `ICorDebugValue` rozhraní je k dispozici v rozhraní .NET Framework a je definován v sadě SDK rozhraní .NET Framework v souboru cordebug.idl).
 
 ## <a name="see-also"></a>Viz také:
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

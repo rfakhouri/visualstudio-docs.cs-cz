@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791068"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744996"
 ---
 # <a name="application-page-project-designer-c"></a>Stránka Aplikace, návrhář projektu (C#)
 
@@ -50,14 +50,18 @@ Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.Pr
 
 **Cílová architektura**
 
-Určuje verzi rozhraní .NET Framework, který aplikace cílí. Tato možnost může mít různé hodnoty v závislosti na nainstalovaných verzí rozhraní .NET Framework v počítači.
+Určuje verzi rozhraní .NET, který aplikace cílí. Tato možnost může mít různé hodnoty v závislosti na tom, které verze rozhraní .NET jsou nainstalovány ve vašem počítači.
 
-Výchozí hodnota je stejná jako Cílová architektura, kterou jste vybrali při vytváření projektu.
+Pro projekty .NET Framework výchozí hodnota odpovídá cílovou architekturu, který jste zadali při vytváření projektu.
+
+Pro projekt .NET Core, který cílí na dostupné verze může vypadat takto:
+
+![Cílová verze rozhraní framework pro projekt .NET Core](../media/application-target-framework.png)
 
 > [!NOTE]
 > Požadované balíčky uvedené v [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md) se nastaví automaticky při prvním otevření dialogu. Pokud později změníte cílový rámec projektu, je třeba vybrat předpoklady ručně, aby odpovídaly novému cílovému rozhraní.
 
-Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [cílení na více verzí sady Visual Studio přehled](../../ide/visual-studio-multi-targeting-overview.md).
+Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [Framework – přehled cílení na](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Typ výstupu**
 
@@ -77,9 +81,9 @@ Další informace o přesměrování najdete v tématu [přesměrování verze s
 
 **Spouštěcí objekt**
 
-Definuje vstupní bod, který bude volán při načtení aplikace. Obvykle je tato možnost nastavená buď hlavního formuláře v aplikaci nebo na `Main` proceduru, která se má spustit při spuštění aplikace. Vzhledem k tomu, že nemá vstupní bod knihovny tříd, jejich jedinou možností pro tuto vlastnost je **(Nenastaveno)**.
+Definuje vstupní bod, který bude volán při načtení aplikace. Obvykle je tato možnost nastavená buď hlavního formuláře v aplikaci nebo na `Main` proceduru, která se má spustit při spuštění aplikace. Vzhledem k tomu, že nemá vstupní bod knihovny tříd, jejich jedinou možností pro tuto vlastnost je **(Nenastaveno)** .
 
-Ve výchozím nastavení v rámci projektu aplikace WPF, je tato možnost nastavená na **(Nenastaveno)**. Další možností je \[názevprojektu] .app. V rámci projektu WPF musíte nastavit počáteční identifikátor URI pro načtení prostředku uživatelského rozhraní při spuštění aplikace. Chcete-li to provést, otevřete *Application.xaml* souboru ve vašem projektu a nastavit `StartupUri` vlastnost *.xaml* souborů ve vašem projektu, jako například *Window1.xaml*. Seznam prvků přijatelný kořenový najdete v tématu <xref:System.Windows.Application.StartupUri%2A>. Musíte také definovat `public static void Main()` metody ve třídě v projektu. Tato třída se objeví v **spouštěcí objekt** jako seznam *ProjectName.ClassName*. Pak můžete vybrat třídu jako spouštěcí objekt.
+Ve výchozím nastavení v rámci projektu aplikace WPF, je tato možnost nastavená na **(Nenastaveno)** . Další možností je \[názevprojektu] .app. V rámci projektu WPF musíte nastavit počáteční identifikátor URI pro načtení prostředku uživatelského rozhraní při spuštění aplikace. Chcete-li to provést, otevřete *Application.xaml* souboru ve vašem projektu a nastavit `StartupUri` vlastnost *.xaml* souborů ve vašem projektu, jako například *Window1.xaml*. Seznam prvků přijatelný kořenový najdete v tématu <xref:System.Windows.Application.StartupUri%2A>. Musíte také definovat `public static void Main()` metody ve třídě v projektu. Tato třída se objeví v **spouštěcí objekt** jako seznam *ProjectName.ClassName*. Pak můžete vybrat třídu jako spouštěcí objekt.
 
 Zobrazit [/Main (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) Další informace. Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -115,4 +119,4 @@ Vybere možnost generování manifestu, když je aplikace spuštěná v systému
 
 Když zadáváte soubor prostředků pro projekt, vyberte přepínač. Výběrem této možnosti zakáže **ikonu** a **Manifest** možnosti.
 
-Zadejte název cesty nebo klikněte na tlačítko Procházet (**...** ) Chcete-li přidat soubor prostředků Win32 do projektu.
+Zadejte název cesty nebo klikněte na tlačítko Procházet ( **...** ) Chcete-li přidat soubor prostředků Win32 do projektu.

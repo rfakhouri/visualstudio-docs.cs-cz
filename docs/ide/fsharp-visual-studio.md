@@ -1,5 +1,5 @@
 ---
-title: F#nástroje
+title: Nástroje jazyka F#
 description: Další informace, které funkce sady Visual Studio jsou podporovány v F#.
 ms.date: 07/11/2018
 ms.topic: reference
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f71e17eae1e728ab755d048daee2c0d156425964
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793410"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747589"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Vývoj s Vizuálem F# v sadě Visual Studio
 
@@ -48,7 +48,7 @@ Následující tabulka shrnuje funkce ve vlastnostech projektu pro F#:
 |Cílení na více verzí|Ano||
 |Ikona a manifest|Ne|K dispozici prostřednictvím možnosti příkazového řádku kompilátoru.|
 |Klienta služby ASP.NET|Ne||
-|ClickOnce|Ne|Použijte projekt klienta v jiném jazyce rozhraní .NET Framework, pokud je k dispozici.|
+|ClickOnce|Ne|Použijte projekt klienta v jiném jazyce .NET, pokud je k dispozici.|
 |Vytváření silných názvů|Ne|K dispozici prostřednictvím možnosti příkazového řádku kompilátoru.|
 |Sestavení, publikování a správa verzí|Ne||
 |Analýza kódu|Ne|Nástroje pro analýzu kódu můžete spustit ručně nebo jako součást příkazu po sestavení.|
@@ -60,10 +60,10 @@ Následující tabulka shrnuje funkce ve vlastnostech projektu pro F#:
 
 |Stránky Návrháře projektu|Související odkazy|Popis|
 | - |-------------|-----------|
-|Aplikace|[Stránka aplikace, Návrhář projektu](reference/application-page-project-designer-csharp.md)|Umožňuje určit nastavení na úrovni aplikace a vlastnosti, například zda vytváříte knihovnu nebo spustitelný soubor, jakou verzi rozhraní .NET Framework aplikace je cílen na verzi a informace o kde prostředek soubory, které aplikace používá se ukládají.|
+|Aplikace|[Stránka aplikace, Návrhář projektu](reference/application-page-project-designer-csharp.md)|Umožňuje určit nastavení na úrovni aplikace a vlastnosti, například zda vytváříte knihovnu nebo spustitelný soubor, jakou verzi .NET cíle aplikace a informace o umístění ukládaných souborů prostředků, které aplikace používá.|
 |Sestavení|[Vytvořit stránku, Návrhář projektu](reference/build-page-project-designer-csharp.md)|Umožňuje řídit způsob kompilace kódu.|
 |Události sestavení|[Stránka události, Návrhář projektu sestavení](reference/build-events-page-project-designer-csharp.md)|Umožňuje určit příkazy se spustí před nebo po kompilaci.|
-|Ladit|[Stránka Ladění, Návrhář projektu](reference/debug-page-project-designer.md)|Umožňuje řídit, jak je aplikace spuštěná během ladění. Jedná se o co příkazy mají použít, a co je vaše aplikace spouští, adresář je a jakékoli speciální režimů ladění, které chcete povolit, jako je například nativního kódu a SQL.|
+|Ladění|[Stránka Ladění, Návrhář projektu](reference/debug-page-project-designer.md)|Umožňuje řídit, jak je aplikace spuštěná během ladění. Jedná se o co příkazy mají použít, a co je vaše aplikace spouští, adresář je a jakékoli speciální režimů ladění, které chcete povolit, jako je například nativního kódu a SQL.|
 |Balíček (pouze sada .NET SDK)|Není k dispozici|Umožňuje definovat metadata balíčku NuGet při publikování jako balíček NuGet.|
 |Cesty odkazů|[Správa odkazů v projektu](managing-references-in-a-project.md)|Umožňuje zadat, kam mají hledat sestavení, na kterém závisí kódu.|
 |Prostředky (pouze sada .NET SDK)|Není k dispozici|Umožňuje vytvářet a spravovat výchozí soubor prostředků.|
@@ -89,7 +89,7 @@ Jsou podporovány následující funkce editory sady Visual Studio code a text v
 |Změna odsazení|Odsazení nebo zruší odsazení vybraných řádků.|Ano|
 |Inteligentní odsazení|Automaticky odsadí a zrušení odsazení kurzor podle F# pravidel oboru.|Ano|
 |[Vyhledání a nahrazení textu](finding-and-replacing-text.md)|Umožňuje hledat v souboru, projekt nebo řešení a potenciálně změnit text.|Ano|
-|Přejít k definici rozhraní API .NET Framework|Když se kurzor na rozhraní API .NET Framework, se zobrazí kód generovaný z metadata rozhraní .NET Framework.|Ne|
+|Přejít k definici rozhraní API .NET|Když se kurzor na rozhraní API .NET, se zobrazí kód generovaný z .NET metadat.|Ne|
 |Přejít k definici pro uživatelské rozhraní API|Pokud je kurzor na entitu program, který jste definovali, přesune kurzor na místo v kódu, kde je definován entity.|Ano|
 |Přechod na řádek|Umožňuje přejít na konkrétní řádek v souboru číslem řádku.|Ano|
 |Navigační panely v horní části souboru|Umožňuje přejít na umístění v kódu, například název funkce.|Ano|

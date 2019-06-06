@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003658"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746589"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper – úloha
 Poskytuje automatizovaný způsob, jak zjistit, stáhnout a nainstalovat aplikace a její požadované součásti. Slouží jako jeden instalační program, který integruje dva různé instalační programy pro všechny součásti tvořící aplikaci.
@@ -152,7 +152,7 @@ Dále jsou parametry `GenerateBootstrapper` úloh.
 Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Příklad
-V následujícím příkladu `GenerateBootstrapper` úloh k instalaci aplikace, která musí mít [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] nainstalována jako předpoklad.
+V následujícím příkladu `GenerateBootstrapper` úloh k instalaci aplikace, která musí mít jako předpoklad nainstalované rozhraní .NET Framework 2.0.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

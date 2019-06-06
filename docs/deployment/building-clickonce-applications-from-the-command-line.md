@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc3cdf49746340c76855e9afb000c754464d6223
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929161"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746089"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Vytváření aplikací ClickOnce z příkazového řádku
-V [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], můžete sestavovat projekty z příkazového řádku, i když jsou vytvořeny v integrovaném vývojovém prostředí (IDE). Ve skutečnosti můžete znovu sestavit projekt vytvořený s [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na jiném počítači, který má pouze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] nainstalované. Díky tomu můžete pro reprodukci pomocí automatizovaného procesu sestavení, například v Centrální sestavení testovacího prostředí nebo pomocí pokročilé techniky nad rámec sestavení projektu, samotný skriptování.
+V [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], můžete sestavovat projekty z příkazového řádku, i když jsou vytvořeny v integrovaném vývojovém prostředí (IDE). Ve skutečnosti můžete znovu sestavit projekt vytvořený s [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na jiném počítači, který má pouze rozhraní .NET Framework nainstalované. Díky tomu můžete pro reprodukci pomocí automatizovaného procesu sestavení, například v Centrální sestavení testovacího prostředí nebo pomocí pokročilé techniky nad rámec sestavení projektu, samotný skriptování.
 
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Použití nástroje MSBuild pro reprodukci nasazení aplikací ClickOnce
  Při vyvolání msbuild/target: publish na příkazovém řádku informuje systém MSBuild se projekt sestavil a vytvářet [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace ve složce publikování. Jedná se o ekvivalent pro výběr **publikovat** příkazu v integrovaném vývojovém prostředí.
@@ -73,7 +73,7 @@ V [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)],
 
 5. Typ `msbuild /target:publish`.
 
-   Výše uvedené kroky vytvoří úplný [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení aplikace v podsložce s názvem projektu **publikovat**. *CmdLineDemo.application* je [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu nasazení. Složka *CmdLineDemo_1.0.0.0* obsahuje soubory *CmdLineDemo.exe* a *CmdLineDemo.exe.manifest*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace. *Setup.exe* je zaváděcí nástroj, který ve výchozím nastavení je nastavena k instalaci [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. DotNetFX obsahuje distribuovatelné součásti pro [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Toto je celá sada soubory, které potřebujete k nasazení vaší aplikace prostřednictvím webu nebo název UNC nebo disk CD/DVD.
+   Výše uvedené kroky vytvoří úplný [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení aplikace v podsložce s názvem projektu **publikovat**. *CmdLineDemo.application* je [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu nasazení. Složka *CmdLineDemo_1.0.0.0* obsahuje soubory *CmdLineDemo.exe* a *CmdLineDemo.exe.manifest*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace. *Setup.exe* je zaváděcí nástroj, který ve výchozím nastavení je nastavena k instalaci rozhraní .NET Framework. DotNetFX obsahuje redistribuovatelnosti pro rozhraní .NET Framework. Toto je celá sada soubory, které potřebujete k nasazení vaší aplikace prostřednictvím webu nebo název UNC nebo disk CD/DVD.
 
 ## <a name="publish-properties"></a>Publikovat vlastnosti
  Při publikování aplikace ve výše uvedených postupů následující vlastnosti jsou vloženy do souboru projektu pomocí Průvodce publikováním. Tyto vlastnosti přímo ovlivňují způsob, jakým [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se vytvářejí.

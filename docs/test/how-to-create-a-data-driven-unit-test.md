@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615429"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745859"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Postupy: Vytvoření testu jednotek řízené daty
 
@@ -179,4 +179,4 @@ Při nápravě testované metody a test spustit znovu, výsledky panel zbarví z
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Testování částí kódu](../test/unit-test-your-code.md)
 - [Spouštění testování částí pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)
-- [Zápis testů částí pro rozhraní .NET Framework s rozhraní testování částí Microsoft pro spravovaný kód](../test/unit-test-your-code.md)
+- [Zápis testů částí pro rozhraní .NET pomocí rozhraní testování částí Microsoft](../test/unit-test-your-code.md)

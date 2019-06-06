@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: df9c1f83e8a839c7e767c3145e734eba80add485
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e92885e652c9456503bfa75fbce5640c377b684
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566073"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745340"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Práce s Konceptuálními modely (WCF Data Services)
 
@@ -27,7 +27,7 @@ Při použití koncepčního modelu pro popis dat v databázi se můžete dotazo
 
 | Téma | Popis |
 | - | - |
-| [Postupy: Provádění dotazů v datové službě](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Ukazuje, jak provádět dotazy z datové služby [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplikace. |
+| [Postupy: Provádění dotazů v datové službě](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Ukazuje, jak zadávat dotazy na datovou službu z aplikace .NET. |
 | [Postupy: Výsledky dotazu projektu](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Ukazuje, jak snížit množství dat, které jsou vráceny prostřednictvím dotazu v datové službě. |
 
  Při použití konceptuálního modelu můžete definovat, jaký druh dat je platný v jazyce, který odpovídá vaší domény. Můžete definovat platná data v modelu, nebo můžete přidat ověření pro operace, které můžete provádět na entity nebo dat služby.

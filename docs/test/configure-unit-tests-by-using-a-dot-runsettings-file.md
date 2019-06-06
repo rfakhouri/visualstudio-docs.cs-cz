@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5030498702808dc9d41a5daa12520893c3de2627
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531992"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746561"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek s použitím *s příponou .runsettings* souboru
 
-Testování částí v sadě Visual Studio můžete konfigurovat pomocí *s příponou .runsettings* souboru. Například můžete změnit verzi rozhraní .NET Framework, na kterém jsou testy spuštěny, adresář pro výsledky testů nebo data, která je shromážděn v rámci testovacího běhu.
+Testování částí v sadě Visual Studio můžete konfigurovat pomocí *s příponou .runsettings* souboru. Můžete například změnit rozhraní .NET verze, na kterém jsou testy spuštěny, adresář pro výsledky testů nebo data, která je shromážděn v rámci testovacího běhu.
 
 Soubory parametrů běhu jsou volitelné. Pokud nevyžadují žádnou zvláštní konfiguraci, není nutné *s příponou .runsettings* souboru. Nejběžnější použití nástroje *s příponou .runsettings* soubor je pro přizpůsobení [analýza pokrytí kódu](../test/customizing-code-coverage-analysis.md).
 
@@ -248,7 +248,7 @@ Pokud chcete používat parametry testovacího běhu, přidejte privátní <xref
 
 Tato nastavení jsou specifická pro testovací adaptér, který spouští testovací metody, které mají <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atribut.
 
-|Konfigurace|Výchozí|Hodnoty|
+|Konfiguraci|Výchozí|Hodnoty|
 |-|-|-|
 |**ForcedLegacyMode**|false|V sadě Visual Studio 2012 se k němu rychlejší a lépe škálovatelný optimalizované adaptér MSTest. Některé rysy chování sady, jako například pořadí, ve kterém jsou testy spuštěny, nemusí být přesně stejné jako v předchozích edicích sady Visual Studio. Nastavte tuto hodnotu na **true** aby používala starší testovací adaptér.<br /><br />Například můžete použít toto nastavení, pokud máte *app.config* souboru určeného pro testování částí.<br /><br />Doporučujeme zvážit refaktoring testů, aby bylo možné použít novější adaptér.|
 |**IgnoreTestImpact**|false|Funkce dopadu testu upřednostňuje při spuštění testů prostřednictvím adaptéru MSTest nebo nástroje Microsoft Test Manager testy, které jsou ovlivněny nedávnými změnami. Toto nastavení funkci deaktivuje. Další informace najdete v tématu [které testy je třeba spustit od předchozího sestavení](https://msdn.microsoft.com/library/dd286589).|

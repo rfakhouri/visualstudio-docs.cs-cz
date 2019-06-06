@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950047"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747236"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Postupy: Vytvoření doplňku sady Visual Studio pro prohlížeč výsledků testu výkonnosti webu
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Postupy: Vytvoření doplňku pro prohlížeč výsledků testu výkonnosti webu
 
 Můžete rozšířit uživatelské rozhraní pro **prohlížeče výsledků testu výkonnosti webu** pomocí následujících oborů názvů:
 
@@ -256,9 +256,9 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu WebPerfTestResultsViewerControl a vyberte **vlastnosti**.
 
-2. Vyberte **aplikace** kartě a klikněte na tlačítko **Cílová architektura** rozevíracího seznamu a vyberte **rozhraní .NET Framework 4** a zavřít **vlastnosti**.
+2. Vyberte **aplikace** kartě a klikněte na tlačítko **Cílová architektura** rozevíracího seznamu a vyberte **rozhraní .NET Framework 4** (nebo novější). Zavřít **vlastnosti** okna.
 
-     To je nutné pro podporu odkazů na knihovnu DLL, které jsou potřeba pro rozšíření **prohlížeče výsledků testu výkonnosti webu**.
+   To je nutné pro podporu odkazů na knihovnu DLL, které jsou potřeba pro rozšíření **prohlížeče výsledků testu výkonnosti webu**.
 
 3. V **Průzkumníka řešení**, v projektu WebPerfTestResultsViewerControl klikněte pravým tlačítkem myši **odkazy** uzel a vyberte možnost **přidat odkaz**.
 
@@ -300,15 +300,11 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
             }
     ```
 
-## <a name="build-the-webperftestresultsvieweraddin-solution"></a>Sestavte řešení WebPerfTestResultsViewerAddin
-
-### <a name="to-build-the-solution"></a>Abyste mohli sestavit řešení
+## <a name="build-the-solution"></a>Sestavte řešení
 
 - Na **sestavení** nabídce vyberte možnost **sestavit řešení**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Registrace doplňku WebPerfTestResultsViewerAddin
-
-### <a name="to-register-the-add-in-using-the-add-in-manager"></a>Chcete-li zaregistrovat doplněk pomocí Správce doplňků
 
 1. Na **nástroje** nabídce vyberte možnost **Add-in správce**.
 
@@ -318,15 +314,13 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 4. Zvolte **OK**.
 
-## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Spuštění testu výkonnosti webu pomocí sestavení doplňku WebPerfTestResultsViewerAddin
-
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Ke spuštění nové VS doplňku pro prohlížeč výsledků testu webu
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Spuštění testu výkonnosti webu pomocí prohlížeče výsledků testu webu
 
 1. Spuštění testu výkonnosti webu a zobrazí se doplňku WebPerfTestResultsViewerAddin nová karta s názvem zobrazí v ukázkové **prohlížeče výsledků testu výkonnosti webu**.
 
 2. Klepněte na kartu pro zobrazení vlastnosti zobrazených v ovládacím prvku DataGridView.
 
-## <a name="net-framework-security"></a>Zabezpečení rozhraní .NET Framework
+## <a name="net-security"></a>Zabezpečení rozhraní .net
 
 Chcete-li zlepšit zabezpečení zabráněním škodlivým doplňkům v automatické aktivaci, Visual Studio obsahuje nastavení na **možnosti nástrojů** stránku s názvem **přidat doplňků/maker zabezpečení**.
 

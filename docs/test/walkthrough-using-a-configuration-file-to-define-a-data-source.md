@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa57582a241400cbdfc9115d16326fda8019a5ae
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432242"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746766"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Návod: Použití konfiguračního souboru k definování zdroje dat
 
@@ -71,7 +71,7 @@ Zkontrolujte *app.config* souboru. Obsahuje nejméně deklarace XML a kořenový
 ```
 
 > [!NOTE]
-> Název sestavení musí odpovídat sestavení Microsoft Visual Studio .NET Framework, kterou používáte.
+> Název sestavení musí odpovídat verzi, kterou používáte.
 
 ## <a name="define-connection-strings"></a>Definujte připojovací řetězce
 

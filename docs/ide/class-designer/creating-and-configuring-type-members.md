@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975546"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746929"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Vytvoření a konfigurace členů typů v Návrháři tříd
 
@@ -308,7 +308,7 @@ Pokud se pokusíte uložit projekt obsahující typ, jehož soubor zdrojového k
 
 Pokud soubor s kódem obsahuje chybu syntaxe, tvary zobrazující kód v daném souboru budou dočasně jen pro čtení, dokud chyba syntaxe nebude opravena. Tvary v tomto stavu zobrazí červený text a červenou ikonu, která zobrazí popisek s textem „Soubor zdrojového kódu obsahuje chybu analýzy“.
 
-Odkazovaný typ (například typ rozhraní .NET Framework), který existuje v rámci jiného uzlu projektu nebo uzlu odkazovaného sestavení, je na návrhové ploše Návrháře tříd uveden jako jen pro čtení. Místní typ, který existuje v projektu, jež chcete otevřít, je pro čtení i zápis a jeho tvar na návrhové ploše Návrháře tříd je takto označen.
+Odkazovaný typ (například typ .NET), který existuje v rámci jiného uzlu projektu nebo uzlu odkazovaného sestavení, je uveden na návrhové ploše návrháře tříd jako jen pro čtení. Místní typ, který existuje v projektu, jež chcete otevřít, je pro čtení i zápis a jeho tvar na návrhové ploše Návrháře tříd je takto označen.
 
 Indexery jsou pro čtení i zápis v kódu a **podrobností třídy** okna, ale název indexeru je jen pro čtení.
 

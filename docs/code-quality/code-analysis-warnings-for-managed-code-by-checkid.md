@@ -260,12 +260,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87461cfe06ac1c038176c3b9d4dcd513733e8d43
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a36eb66e0308fddbc17e5ea9627562c2939f4bd7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714506"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745474"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Upozornění analýzy kódu pro spravovaný kód podle CheckId
 
@@ -492,7 +492,7 @@ Následující tabulka obsahuje seznam upozornění analýzy kódu pro spravovan
 | CA2225 | [CA2225: Přetížení operátoru mají pojmenované alternativy](../code-quality/ca2225-operator-overloads-have-named-alternates.md) |Bylo zjištěno přetížení operátoru a alternativní metoda s očekávaným názvem nebyla nalezena. Pojmenovaný alternativní člen poskytuje přístup ke stejným funkcím jako operátor a je k dispozici pro vývojáře, kteří programují v jazycích nepodporujících přetížené operátory. |
 | CA2226 | [CA2226: Operátory by měly mít symetrické přetížení](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md) | Typ implementuje operátor rovnosti nebo nerovnosti a neimplementuje opačný operátor. |
 | CA2227 |[CA2227: Vlastnosti kolekce by měly být jen pro čtení](../code-quality/ca2227-collection-properties-should-be-read-only.md) |Zapisovatelná vlastnost kolekce umožňuje uživateli nahradit kolekci jinou kolekcí. Vlastnost jen pro čtení neumožňuje kolekci nahradit, ale stále umožňuje nastavit jednotlivé členy. |
-| CA2228 | [CA2228: Nedodávejte nevydané formáty prostředku](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md) | Soubory prostředků, které byly vytvořeny pomocí předprodejní verze rozhraní .NET Framework nemusí být použitelné podporovanými verzemi rozhraní .NET Framework. |
+| CA2228 | [CA2228: Nedodávejte nevydané formáty prostředku](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md) | Soubory prostředků, které byly vytvořeny pomocí předprodejní verze rozhraní .NET nemusí být použitelné podporovanými verzemi rozhraní .NET. |
 | CA2229 | [CA2229: Implementovat Serializační konstruktory](../code-quality/ca2229-implement-serialization-constructors.md) | Implementací konstruktoru serializace se vyřeší porušení tohoto pravidla. Pro zapečetěnou třídu musí být konstruktor soukromý. V ostatních případech musí být chráněný. |
 | CA2230 | [CA2230: Použijte parametry pro proměnné argumenty](../code-quality/ca2230-use-params-for-variable-arguments.md) | Veřejný nebo chráněný typ obsahuje veřejnou nebo chráněnou metodu, která používá konvenci volání VarArgs místo klíčového slova params. |
 | CA2231 | [CA2231: Přetižte operátor equals při přepsání ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | Hodnotový typ přepisuje metodu Object.Equals, ale neimplementuje operátor rovnosti. |

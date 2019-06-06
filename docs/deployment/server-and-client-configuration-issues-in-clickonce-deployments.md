@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 71b9df9a8422d1b24a3e5476005942113356c353
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263479"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747428"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problémy s konfigurací serveru a klienta v nasazeních ClickOnce
 Pokud používáte Internetové informační služby (IIS) v systému Windows Server a vaše nasazení obsahuje typ souboru, který se nedokáže rozpoznat Windows, jako je například Microsoft Word soubor, služba IIS odmítne přenášet tento soubor a nasazení se nezdaří.
@@ -41,7 +41,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
 
   Ale můžete tuto možnost zakážete zrušením zaškrtnutí **použít příponu ".deploy"** možnost [dialogové okno publikování možnosti](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), v takovém případě musíte nakonfigurovat webový server k odblokování všechny přípony souborů použít v aplikaci.
 
-  Budete muset nakonfigurovat *.manifest*, *.application*, a *.deploy*, například, pokud používáte IIS, kde jste dosud nenainstalovali [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], nebo pokud jste pomocí jiného webového serveru (např. Apache).
+  Budete muset nakonfigurovat *.manifest*, *.application*, a *.deploy*, například, pokud používáte IIS, kde nemáte nainstalované rozhraní .NET Framework, nebo pokud jste pomocí jiného webového serveru (např. Apache).
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce a Secure Sockets Layer (SSL)
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace bude fungovat přes protokol SSL, s výjimkou případů, kdy aplikace Internet Explorer vyvolá řádku o certifikát SSL. Řádku tento příkaz může být je aktivována v případě, že něco špatného certifikát, jako je například, když nejsou shodné názvy webů nebo certifikátu vypršela. Chcete-li [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fungovat připojení přes protokol SSL, ujistěte se, že certifikát je aktuální, a že data certifikátu odpovídá data lokality.
@@ -121,14 +121,14 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
   Konkrétní pokyny ke konfiguraci typy MIME ve Windows serveru, najdete v článku znalostní báze Microsoft Knowledge Base KB326965, "IIS 6.0 neobsluhuje neznámé typy MIME" v [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).
 
 ## <a name="content-type-mappings"></a>Mapování typu obsahu
- Při publikování přes protokol HTTP, typ obsahu (označované také jako typ MIME) *.application* soubor by měl být "application/x-ms aplikace." Pokud máte [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] nainstalovaná na serveru, se nastaví pro vás automaticky. Pokud to není nainstalován, pak budete muset vytvořit přidružení typu MIME pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] virtuální kořenový adresář aplikace (nebo celý server).
+ Při publikování přes protokol HTTP, typ obsahu (označované také jako typ MIME) *.application* soubor by měl být "application/x-ms aplikace." Pokud máte na serveru nainstalované rozhraní .NET Framework 2.0, nastaví ho pro vás automaticky. Pokud to není nainstalován, pak budete muset vytvořit přidružení typu MIME pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] virtuální kořenový adresář aplikace (nebo celý server).
 
  Pokud nasadíte pomocí serveru služby IIS, spusťte <em>inetmgr.</em> soubor EXE a přidejte nový typ "application/x-ms-application" obsahu pro *.application* rozšíření.
 
 ## <a name="http-compression-issues"></a>Problémy komprese protokolu HTTP
  S [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], můžete provádět souborů ke stažení, které používají komprese protokolu HTTP, technologii webového serveru, který používá algoritmus GZIP ke kompresi datového proudu před odesláním datový proud do klienta. Klient – v takovém případě [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]– dekomprimuje datového proudu před čtením soubory.
 
- Pokud používáte službu IIS, můžete snadno povolit kompresi HTTP. Nicméně pokud je povolena komprese protokolu HTTP, je povolena pouze pro některé typy souborů – zejména, HTML a textové soubory. Chcete-li povolit kompresi pro sestavení (*.dll*), XML (*.xml*), manifesty nasazení (*.application*), manifesty aplikace a (*.manifest*), je nutné přidat tyto typy souborů k seznamu typů pro službu IIS zkomprimovat. Dokud nepřidáte typy souborů k nasazení, se zkomprimují pouze text nebo soubory HTML.
+ Pokud používáte službu IIS, můžete snadno povolit kompresi HTTP. Nicméně pokud je povolena komprese protokolu HTTP, je povolena pouze pro některé typy souborů – zejména, HTML a textové soubory. Chcete-li povolit kompresi pro sestavení ( *.dll*), XML ( *.xml*), manifesty nasazení ( *.application*), manifesty aplikace a ( *.manifest*), je nutné přidat tyto typy souborů k seznamu typů pro službu IIS zkomprimovat. Dokud nepřidáte typy souborů k nasazení, se zkomprimují pouze text nebo soubory HTML.
 
  Podrobné pokyny pro službu IIS najdete v tématu [jak určit další dokumentů typy pro kompresi HTTP](http://go.microsoft.com/fwlink/?LinkId=178459).
 

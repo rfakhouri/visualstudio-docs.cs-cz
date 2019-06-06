@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d012c0902aa82eb057f9d69c0b85b13262e847a
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821640"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66747616"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uživatelská oprávnění a sada Visual Studio
 
@@ -33,7 +33,7 @@ V režimu normálního uživatele lze provádět téměř cokoli v integrovaném
 |Instalace|Instalace sady Visual Studio.|[Instalace sady Visual Studio](../install/install-visual-studio.md)|
 ||Instalace, aktualizace nebo odebrání místního obsahu nápovědy.|[Nainstalovat a spravovat místní obsah nápovědy](../help-viewer/install-manage-local-content.md)|
 |Sada nástrojů|Přidat klasické ovládací prvky modelu COM pro **nástrojů**.|[Panel nástrojů](../ide/reference/toolbox.md)|
-|Sestavování|Události po sestavení, které registrují komponentu použijte.|[Vlastní kroky sestavení porozumět a vybudovat události](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+|Sestavování|Události po sestavení, které registrují komponentu použijte.|[Vlastní kroky sestavení porozumět a vybudovat události](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||Zahrnout krok registrace při vytváření projektů v jazyce C++.||
 |Ladění|Ladění aplikací spouštěných se zvýšenými oprávněními.|[Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)|
 ||Ladění aplikací, které běží pod jiným uživatelským účtem, jako jsou weby ASP.NET.|[Ladění aplikací ASP.NET a AJAX](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|

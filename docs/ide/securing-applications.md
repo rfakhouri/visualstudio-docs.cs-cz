@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6398a28394c8918d574a3b3eca4cf54b21f3d7bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c5b0f4c748cd923ca02cb16ba374747c20d12d7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979533"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747656"
 ---
 # <a name="secure-applications"></a>Zabezpečené aplikace
 
@@ -40,7 +40,7 @@ Zabezpečení je také důležité zvážit v procesu sestavení. Pár dalších
 
 ## <a name="see-also"></a>Viz také:
 
-- [Zabezpečení v rozhraní .NET Framework](/dotnet/standard/security/index)
+- [Zabezpečení v rozhraní .NET](/dotnet/standard/security/index)
 - [Zabezpečení Azure](/azure/security/)
 - [Průvodce zabezpečením Windows 10 Mobile](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Funkce zabezpečení platformy Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)

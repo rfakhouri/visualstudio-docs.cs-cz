@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d93071aa62c4d2305b0104ec17e8242bacefa6d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38cde5c1500168dcb36021c530799d1d8d1effb9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994991"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745323"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Clustery profilu v prostředí HPC (vysokovýkonné výpočetní prostředí)
 
@@ -36,9 +36,9 @@ Chcete-li Profilovat na výpočetním uzlu HPC, postupujte takto:
 
 - Instalace sady Microsoft HPC Pack 2008 na stejném počítači jako Visual Studio. Počítač nemá se jednat o část cluster prostředí HPC. Instalací sady HPC Pack na [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414).
 
-- Nainstalujte [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] a samostatné verze nástrojů pro profilaci na HPC v prostředí výpočetního uzlu. Instalace aplikací pro obě [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] a samostatný profiler jsou k dispozici na instalačním médiu nástroje Visual Studio. **Poznámka:** po instalaci je nutné restartovat výpočetní [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] a před instalací nástrojů pro profilaci.
+- Instalace rozhraní .NET Framework 4 a samostatné verze nástrojů pro profilaci na HPC v prostředí výpočetního uzlu. Instalační programy pro samostatný profiler i rozhraní .NET Framework jsou k dispozici na instalačním médiu nástroje Visual Studio. **Poznámka:** až po restartování výpočetní po instalaci rozhraní .NET Framework a před instalací nástrojů pro profilaci.
 
-  Chcete-li nainstalovat [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] a samostatného nástroje pro profilaci na aktivní prostředí HPC výpočetních uzlů a povolit profilaci na počítači clusteru, postupujte podle těchto kroků:
+  Chcete-li nainstalovat rozhraní .NET Framework 4 a samostatného nástroje pro profilaci na aktivní výpočetní uzel HPC a povolit profilaci na počítači clusteru, postupujte podle těchto kroků:
 
 1. Otevřete okno příkazového řádku, který je nainstalován se sadou HPC pack.
 
@@ -53,7 +53,7 @@ Chcete-li Profilovat na výpočetním uzlu HPC, postupujte takto:
 | | |
 |------------------| - |
 | *%HeadNode%* | Název hlavního uzlu clusteru. |
-| *%FxPath%* | Cesta k [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] Instalační služby. Na instalačním médiu nástroje Visual Studio je cesta: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%FxPath%* | Cesta k Instalační služby rozhraní .NET Framework 4. Na instalačním médiu nástroje Visual Studio je cesta: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
 | *%ProfilerPath%* | Cesta k verzi samostatného instalačního programu nástrojů pro profilaci sady. Na instalačním médiu nástroje Visual Studio je cesta: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Provádějte profilaci na výpočetním uzlu HPC
@@ -139,7 +139,7 @@ Můžete změnit vlastnosti relace výkonu, které jste nastavili v prostředí 
 |---------------------------------------| - |
 | **název projektu** | Název aktuálního [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] projekt nebo řešení. |
 | **Vyčištění při zastavení profileru** | V případě hodnoty true odeberou binární soubory, které jsou nasazené v prováděcím adresáři. V tomto kroku se neodeberou soubory a adresáře vytvořené programem uživatele. Pokud provádění adresář a adresáře nasazení vytvořené integrovaným vývojovým prostředím, rozhraní IDE se pokusí odebrat je ale nelze provést, pokud mají soubory nejsou nasazené v integrovaném vývojovém prostředí. |
-| **Další soubory k nasazení** | Určuje středníky oddělený seznam případných dalších souborů k nasazení na výpočetním uzlu. Můžete kliknout na tlačítko se třemi tečkami (**...** ) Chcete-li vybrat více souborů pomocí dialogového okna. |
+| **Další soubory k nasazení** | Určuje středníky oddělený seznam případných dalších souborů k nasazení na výpočetním uzlu. Můžete kliknout na tlačítko se třemi tečkami ( **...** ) Chcete-li vybrat více souborů pomocí dialogového okna. |
 | **Příkaz Mpiexec** | Určuje aplikaci, která spustí aplikace MPI. Výchozí hodnota je **mpiexec.exe** |
 | **Argumenty Mpiexec** | Určuje argumenty pro příkaz mpiexec.exe. |
 | **Požadované uzly v clusteru** | Určuje počet uzlů v clusteru, ve kterém se spustí aplikace. |

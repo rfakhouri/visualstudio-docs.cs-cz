@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4bf5545deecccb647b5113c4335539c6acb488
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8206e199acc3ccb76cf89603d48bed0173129218
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408590"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746064"
 ---
 # <a name="application-deployment-prerequisites"></a>Nezbytné součásti nasazení aplikace
 
-Pokud chcete, aby vaše aplikace k instalaci a spuštění úspěšně, nejprve nainstalujte všechny součásti, na kterých vaše aplikace je závislá na cílovém počítači. Například většiny aplikací vytvořených pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jsou závislé [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Správnou verzi CLR v tomto případě musí být k dispozici na cílovém počítači před instalací aplikace.
+Pokud chcete, aby vaše aplikace k instalaci a spuštění úspěšně, nejprve nainstalujte všechny součásti, na kterých vaše aplikace je závislá na cílovém počítači. Například většiny aplikací vytvořených pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jsou závislé na rozhraní .NET Framework. Správnou verzi CLR v tomto případě musí být k dispozici na cílovém počítači před instalací aplikace.
 
  Můžete vybrat tyto požadavky **dialogové okno požadavky** a nainstalovat rozhraní .NET Framework a další distribuovatelné jako součást instalace. Tento postup se označuje jako *spuštění*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vygeneruje spustitelný program Windows s názvem *Setup.exe*, označované také jako *zaváděcí nástroj*. Zaváděcí nástroj je odpovědný za instalaci těchto nezbytných podmínkách před spuštěním vaší aplikace. Další informace o výběru těchto nezbytných podmínkách naleznete v tématu [dialogové okno požadavky](../ide/reference/prerequisites-dialog-box.md).
 
@@ -76,7 +76,7 @@ Pokud chcete, aby vaše aplikace k instalaci a spuštění úspěšně, nejprve 
 | **-?, -h, -help** | Zobrazí dialogové okno nápovědy. |
 | **-url, -componentsurl** | Zobrazí uloženou adresu URL a adresu url komponent pro toto nastavení. |
 | **-url=** `location` | Nastaví adresu URL kde *Setup.exe* bude hledat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. |
-| **-componentsurl=** `location` | Nastaví adresu URL kde *Setup.exe* bude hledat závislosti, jako [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| **-componentsurl=** `location` | Nastaví adresu URL kde *Setup.exe* bude hledat závislosti, jako je například rozhraní .NET Framework. |
 | **-homesite=** `true` **&#124;** `false` | Když `true`, stahuje závislosti z preferované umístění na webu dodavatele. Toto nastavení potlačí **- componentsurl** nastavení. Když `false`, soubory ke stažení závislostí v adrese URL zadané hodnotou **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>Podpora operačního systému

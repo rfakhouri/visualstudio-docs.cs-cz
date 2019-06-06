@@ -1,6 +1,6 @@
 ---
 title: Spuštění a ladění testů jednotek pomocí Průzkumníka testů
-description: Zjistěte, jak chcete provozovat testy pomocí Exlorer testu v sadě Visual Studio. Toto téma popisuje, jak povolit automatické testy po sestavení, zobrazit výsledky testů, skupiny a filtrovat seznam testů, vytvořit seznam stop, ladit testy a použít klávesové zkratky testu.
+description: Zjistěte, jak ke spuštění testů pomocí Průzkumníka testů v sadě Visual Studio. Toto téma popisuje, jak povolit automatické testy po sestavení, zobrazit výsledky testů, skupiny a filtrovat seznam testů, vytvořit seznam stop, ladit testy a použít klávesové zkratky testu.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934503"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747781"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů částí pomocí Průzkumníka testů
 
@@ -23,7 +23,7 @@ Použití **Průzkumníka testů** spouštění testů jednotek sady Visual Stud
 
 Visual Studio obsahuje rozhraní testování částí Microsoft pro spravovaný i nativní kód. Ale **Průzkumníka testů** můžete taky spustit libovolné jednotky rozhraní testování, který zavedl adaptér Test Explorer. Další informace o instalaci rozhraní pro testování jednotky třetí strany, naleznete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)
 
-**Průzkumník testů** můžete spouštět testy z více zkušebních projektů v řešení a z testů tříd, které jsou součástí výroby kódu projektů. Projekty testů mohou použít jiné jednotky rozhraní testování. Pokud testovaný kód je určené pro rozhraní .NET Framework, testovací projekt lze zapsat v libovolném jazyce, který také cílí na rozhraní .NET Framework, bez ohledu na jazyk cílového kódu. Nativní projekty kódu C/C++ musí být testovány pomocí rozhraní testování částí C++. Další informace najdete v tématu [zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md).
+**Průzkumník testů** můžete spouštět testy z více zkušebních projektů v řešení a z testů tříd, které jsou součástí výroby kódu projektů. Projekty testů mohou použít jiné jednotky rozhraní testování. Pokud testovaný kód je určené pro rozhraní .NET, testovací projekt lze zapsat v libovolném jazyce, který také cílí na .NET, bez ohledu na jazyk cílového kódu. Nativní projekty kódu C/C++ musí být testovány pomocí rozhraní testování částí C++. Další informace najdete v tématu [zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Spustit testy v Průzkumníku testů
 

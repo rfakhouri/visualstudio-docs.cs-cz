@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e6e5bf2152fffb06acfb8b5e1f3283da75a19a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900355"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745958"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;závislost&gt; – element (aplikace ClickOnce)
 Určuje závislost platformy nebo sestavení, která je požadována pro aplikaci.
@@ -126,7 +126,7 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 |-----------------------| - |
 | `dependencyType` | Povinný parametr. Určuje typ závislosti. Platné hodnoty jsou `preprequisite` a `install`. `install` Sestavení je nainstalován jako součást [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. A `prerequisite` sestavení musí být k dispozici v globální mezipaměti sestavení (GAC) před [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci jde nainstalovat. |
 | `allowDelayedBinding` | Povinný parametr. Určuje, zda sestavení lze načíst prostřednictvím kódu programu za běhu. |
-| `group` | Volitelné. Pokud `dependencyType` atribut je nastaven na `install`, určuje skupinu s názvem sestavení tohoto nainstalují jenom na vyžádání. Další informace najdete v tématu [názorný postup: Stahování sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Pokud nastavit `framework` a `dependencyType` atribut je nastaven na `prerequisite`, označí sestavení jako součást rozhraní .NET Framework. Pro toto sestavení nepovolenou mezipaměti globálního sestavení (GAC) při instalaci [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] a novějších verzích. |
+| `group` | Volitelné. Pokud `dependencyType` atribut je nastaven na `install`, určuje skupinu s názvem sestavení tohoto nainstalují jenom na vyžádání. Další informace najdete v tématu [názorný postup: Stahování sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Pokud nastavit `framework` a `dependencyType` atribut je nastaven na `prerequisite`, označí sestavení jako součást rozhraní .NET Framework. Pro toto sestavení není zaškrtnutá mezipaměti globálního sestavení (GAC), při instalaci rozhraní .NET Framework 4 a novější verze. |
 | `codeBase` | Požadováno, pokud `dependencyType` atribut je nastaven na `install`. Cesta k závislého sestavení. Může být absolutní cesta nebo cesta relativní k kódu manifestu základní. Tato cesta musí být platný identifikátor URI platný v pořadí pro manifest sestavení. |
 | `size` | Požadováno, pokud `dependencyType` atribut je nastaven na `install`. Velikost závislého sestavení, v bajtech. |
 

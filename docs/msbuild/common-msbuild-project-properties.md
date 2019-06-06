@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934520"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745891"
 ---
 # <a name="common-msbuild-project-properties"></a>Obecné vlastnosti projektu nástroje MSBuild
 V následující tabulce je často používané seznamy vlastností, které jsou definovány v souborech projektu sady Visual Studio nebo součástí *.targets* soubory, které poskytuje nástroj MSBuild.
 
- Soubory v sadě Visual Studio projektu (*.csproj*, *.vbproj*, *.vcxproj*a jiné) obsahují kód XML nástroje MSBuild, která se spouští při vytváření projektu pomocí rozhraní IDE. Projekty obvykle importují jeden nebo více *.targets* soubory pro definování jejich procesu sestavení. Další informace najdete v tématu [MSBuild – soubory .targets](../msbuild/msbuild-dot-targets-files.md).
+ Soubory v sadě Visual Studio projektu ( *.csproj*, *.vbproj*, *.vcxproj*a jiné) obsahují kód XML nástroje MSBuild, která se spouští při vytváření projektu pomocí rozhraní IDE. Projekty obvykle importují jeden nebo více *.targets* soubory pro definování jejich procesu sestavení. Další informace najdete v tématu [MSBuild – soubory .targets](../msbuild/msbuild-dot-targets-files.md).
 
 ## <a name="list-of-common-properties-and-parameters"></a>Seznam běžných vlastností a parametrů
 
@@ -39,7 +39,7 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | ALToolPath | Cesta kde *AL.exe* najdete. Tato vlastnost přepíše aktuální verzi *AL.exe* povolit používání jiné verze. |
 | ApplicationIcon | *.Ico* soubor ikony pro předání kompilátoru k vložení v podobě ikony Win32. Vlastnost je ekvivalentní `/win32icon` přepínač kompilátoru. |
 | ApplicationManifest | Určuje cestu k souboru, který se používá ke generování manifestu informace externí řízení uživatelských účtů (UAC). Platí pouze pro projekty Visual Studio, které jsou zacílené [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].<br /><br /> Ve většině případů je manifest vložený. Nicméně pokud použijete COM bez registrace nebo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení a manifest může být externí soubor, který je nainstalován společně s vaším sestavením aplikace. Další informace viz vlastnost NoWin32Manifest v tomto tématu. |
-| AssemblyOriginatorKeyFile | Určuje soubor, který se používá k podepsání sestavení (*.snk* nebo *.pfx*) a který je předán [resolvekeysource – úloha](../msbuild/resolvekeysource-task.md) k vygenerování skutečného klíče, který se používá k podepsání sestavení. |
+| AssemblyOriginatorKeyFile | Určuje soubor, který se používá k podepsání sestavení ( *.snk* nebo *.pfx*) a který je předán [resolvekeysource – úloha](../msbuild/resolvekeysource-task.md) k vygenerování skutečného klíče, který se používá k podepsání sestavení. |
 | AssemblySearchPaths | Seznam umístění pro hledání sestavení referenční sestavení řešení. Pořadí, ve kterém se cesty zobrazují v tomto seznamu má smysl, protože výše uvedené cesty má přednost před pozdějšími položkami. |
 | AssemblyName | Název finálního výstupního sestavení po sestavení projektu. |
 | BaseAddress | Určuje základní adresu hlavního výstupního sestavení. Tato vlastnost je ekvivalentní `/baseaddress` přepínač kompilátoru. |
@@ -69,7 +69,7 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | FrameworkPathOverride | Určuje umístění *mscorlib.dll* a *microsoft.visualbasic.dll*. Tento parametr je ekvivalentní `/sdkpath` přepnout z *vbc.exe* kompilátoru. |
 | GenerateDocumentation | (Pouze Visual Basic) Parametr logické hodnoty označující, zda je dokumentace generovaná sestavením. Pokud `true`, sestavení generuje informace o dokumentaci a vloží je *.xml* soubor společně s názvem spustitelného souboru nebo knihovnu, která úkol sestavení vytvořen. |
 | GenerateSerializationAssemblies | Určuje, zda sestavení serializace XML by měly být generovány *SGen.exe*, které můžete nastavit, auto, nebo vypnout. Tato vlastnost se používá pro sestavení, které je cílem pouze rozhraní .NET Framework. Ke generování sestavení serializace XML pro sestavení .NET Core nebo .NET Standard, odkazovat *Microsoft.XmlSerializer.Generator* balíček NuGet. |
-| IntermediateOutputPath | Úplná cesta zprostředkujících výstupů odvozena z `BaseIntermediateOutputPath`, pokud není zadaná žádná cesta. Například *\obj\debug\\*. |
+| IntermediateOutputPath | Úplná cesta zprostředkujících výstupů odvozena z `BaseIntermediateOutputPath`, pokud není zadaná žádná cesta. Například *\obj\debug\\* . |
 | KeyContainerName | Název kontejneru klíčů se silným názvem. |
 | KeyOriginatorFile | Název souboru klíče silného názvu. |
 | MSBuildProjectExtensionsPath | Určuje cestu, kde se nachází projektu rozšíření. Ve výchozím nastavení, tato akce trvá stejnou hodnotu jako `BaseIntermediateOutputPath`. |
@@ -115,10 +115,10 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | Satellite_Trademark | Určuje řetězec pro pole Trademark v satelitním sestavení. |
 | Satellite_Version | Určuje informace o verzi satelitního sestavení. |
 | Satellite_Win32Icon | Vloží *.ico* soubor ikony v satelitním sestavení. |
-| Satellite_Win32Resource | Vloží prostředek systému Win32 (*.res* soubor) do satelitního sestavení. |
+| Satellite_Win32Resource | Vloží prostředek systému Win32 ( *.res* soubor) do satelitního sestavení. |
 | SubsystemVersion | Určuje minimální verzi podsystému, který může používat vygenerovaný spustitelný soubor. Tato vlastnost je ekvivalentní `/subsystemversion` přepínač kompilátoru. Informace o výchozí hodnota této vlastnosti naleznete v tématu [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) nebo [/subsystemversion (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Verze .NET Compact Framework, která je nutná ke spuštění aplikace, kterou vytváříte. Určení tohoto umožňuje odkazovat na určitá sestavení rozhraní, které nelze odkazovat, jinak. |
-| TargetFrameworkVersion | Verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , který se vyžaduje pro spuštění aplikace, kterou vytváříte. Určení tohoto umožňuje odkazovat na určitá sestavení rozhraní, které nelze odkazovat, jinak. |
+| TargetFrameworkVersion | Verze rozhraní .NET Framework, která je nutná ke spuštění aplikace, kterou vytváříte. Určení tohoto umožňuje odkazovat na určitá sestavení rozhraní, které nelze odkazovat, jinak. |
 | TreatWarningsAsErrors | Parametr logické hodnoty, pokud `true`, způsobí, že všechna upozornění budou považována za chyby. Tento parametr je ekvivalentní `/nowarn` přepínač kompilátoru. |
 | UseHostCompilerIfAvailable | Parametr logické hodnoty, pokud `true`, způsobí, že úkol sestavení použije objekt vnitroprocesového kompilátoru, pokud je k dispozici. Tento parametr je používán pouze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | Utf8Output | Parametr logické hodnoty, pokud `true`, protokoluje výstup kompilátoru pomocí kódování UTF-8. Tento parametr je ekvivalentní `/utf8Output` přepínač kompilátoru. |

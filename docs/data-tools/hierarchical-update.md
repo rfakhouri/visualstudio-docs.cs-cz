@@ -21,18 +21,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15daaf5ac98bc2efc4ce83bb2370b94e9f59123
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566783"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745463"
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 
 *Hierarchická aktualizace* odkazuje na proces ukládání aktualizovaná data (z datové sady s dvěma nebo více souvisejícími tabulkami) do databáze při zachování pravidla referenční integrity. *Referenční integritu* odkazuje na pravidla konzistence poskytované omezení v databázi, která řídí chování vkládání, aktualizaci a odstraňování souvisejících záznamů. Například je referenční integritu, který vynutí vytvoření záznam zákazníka předtím, než pro zákazníka objednávky, který se má vytvořit.  Další informace o relacích v datových sadách najdete v tématu [vztahy v datových sadách](../data-tools/relationships-in-datasets.md).
 
-Hierarchická aktualizace funkce používá `TableAdapterManager` ke správě `TableAdapter`ve typové datové sady. `TableAdapterManager` Komponenta je Visual Studio vygeneruje třídy, takže není součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Při přetažení tabulky z **zdroje dat** okno na stránku formuláře Windows nebo WPF, Visual Studio přidá proměnnou typu TableAdapterManager formulář nebo stránky a vidět ji v Návrháři v panelu komponent. Podrobné informace o `TableAdapterManager` třídy, najdete v části odkaz TableAdapterManager [objekty TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+Hierarchická aktualizace funkce používá `TableAdapterManager` ke správě `TableAdapter`ve typové datové sady. `TableAdapterManager` Komponenta je Visual Studio vygeneruje třídy, typ formátu .NET. Při přetažení tabulky z **zdroje dat** okno na stránku formuláře Windows nebo WPF, Visual Studio přidá proměnnou typu TableAdapterManager formulář nebo stránky a vidět ji v Návrháři v panelu komponent. Podrobné informace o `TableAdapterManager` třídy, najdete v části odkaz TableAdapterManager [objekty TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
 Ve výchozím nastavení datová sada považuje za související tabulky "pouze, vztahy" to znamená, že nebude vynutit omezení cizího klíče. Toto nastavení v době návrhu lze upravit pomocí **Návrhář Dataset**. Vyberte řádek vztah mezi dvěma tabulkami, abyste vyvolali **vztah** dialogové okno. Zde provedené změny se určit, jak `TableAdapterManager` chová při odeslání změn v souvisejících tabulkách zpět do databáze.
 
@@ -114,7 +114,7 @@ Kromě potvrzení změn v související podřízené tabulce, před uložením d
 
 Ve výchozím nastavení `TableAdapterManager` třídy se vygeneruje, když vytvoříte datovou sadu, která obsahuje související tabulky. Abyste zabránili generovaná třída, změňte hodnotu `Hierarchical Update` vlastnosti datové sady na hodnotu false. Při přetažení tabulky, která má vztah na návrhovou plochu formuláře Windows nebo WPF stránku sady Visual Studio deklaruje členské proměnné třídy. Pokud nepoužíváte vázání dat, budete muset ručně deklarovat proměnnou.
 
-`TableAdapterManager` Třída není součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Proto je nelze vyhledat v dokumentaci. Vytvoří se v době návrhu jako součást procesu vytváření datové sady.
+`TableAdapterManager` Třída není typ formátu .NET. Proto je nelze vyhledat v dokumentaci. Vytvoří se v době návrhu jako součást procesu vytváření datové sady.
 
 Toto jsou často používané metody a vlastnosti `TableAdapterManager` třídy:
 

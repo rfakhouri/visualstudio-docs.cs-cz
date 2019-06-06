@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a454218bbddb6c135ff7dc2a5910e6e4a9b3c7e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565076"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745309"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools for .NET
 
-Visual Studio a rozhraní .NET Framework společně poskytují rozsáhlé rozhraní API a podpora nástrojů pro připojení k databázím, modelování dat v paměti a zobrazení dat v uživatelském rozhraní. Tříd rozhraní .NET Framework, které poskytují přístup k datům funkce jsou označovány jako [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, spolu s daty nástroje v sadě Visual Studio, je navržená především pro podporu relačních databází a XML. V dnešních dnech mnoho dodavatelů databáze typu NoSQL nebo třetími stranami, nabízejí poskytovatele ADO.NET.
+Visual Studio a .NET společně poskytují rozsáhlé rozhraní API a podpora nástrojů pro připojení k databázím, modelování dat v paměti a zobrazení dat v uživatelském rozhraní. Třídy rozhraní .NET, které poskytují přístup k datům funkce jsou označovány jako [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, spolu s daty nástroje v sadě Visual Studio, je navržená především pro podporu relačních databází a XML. V dnešních dnech mnoho dodavatelů databáze typu NoSQL nebo třetími stranami, nabízejí poskytovatele ADO.NET.
 
-[.NET core](/dotnet/core/) podporuje technologie ADO.NET, s výjimkou datové sady a souvisejících typů. Pokud se zaměřujete na .NET Core a vyžadují vrstvu objektově relační mapování (ORM), použijte [Entity Framework Core](/ef/core/).
+[.NET core](/dotnet/core/) podporuje technologie ADO.NET, s výjimkou datových sad a jejich souvisejících typů. Pokud cílíte .NET Core a vyžadují vrstvu objektově relační mapování (ORM), použijte [Entity Framework Core](/ef/core/).
 
 Následující diagram znázorňuje zjednodušenou zobrazení základní architektury:
 

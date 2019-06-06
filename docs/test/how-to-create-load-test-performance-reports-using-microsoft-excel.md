@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950151"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747585"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Postupy: Vytváření sestav výkonnosti pro zátěžový test pomocí aplikace Microsoft Excel
 
@@ -70,7 +70,7 @@ Sestavy aplikace Excel mohou být generovány v **Analyzéru zátěžového test
 
    2. V **vyberte databázi, která obsahuje testy zatížení** stránce v části **název serveru**, zadejte název serveru obsahující výsledky zátěžového testu.
 
-   3. V **Databasename** rozevíracího seznamu vyberte databázi obsahující výsledky zátěžového testu.
+   3. V **název_databáze** rozevíracího seznamu vyberte databázi obsahující výsledky zátěžového testu.
 
 3. V **jak chcete generovat sestavy** stránce ověřte, jestli **vytvoření sestavy** je vybranou a stiskněte tlačítko **Další**.
 
@@ -125,7 +125,7 @@ Sestavy aplikace Excel mohou být generovány v **Analyzéru zátěžového test
 
    2. V **vyberte databázi, která obsahuje testy zatížení** stránce v části **název serveru**, zadejte název serveru obsahující výsledky zátěžového testu.
 
-   3. V **Databasename** rozevíracího seznamu vyberte databázi obsahující výsledky zátěžového testu.
+   3. V **název_databáze** rozevíracího seznamu vyberte databázi obsahující výsledky zátěžového testu.
 
 3. V **jak chcete generovat sestavy** stránce ověřte, jestli **vytvoření sestavy** je vybranou a stiskněte tlačítko **Další**.
 
@@ -144,7 +144,7 @@ Sestavy aplikace Excel mohou být generovány v **Analyzéru zátěžového test
    > [!TIP]
    > Pro lepší sestavy jsou k dispozici v zátěžových testech a testech výkonnosti webu, které umožňují lepší sestavy několik vlastností. Požadavek na stránku má dvě vlastnosti, které jsou uvedeny v sestavách: Cíl a název výkazu. Doba odezvy stránky se bude vykazovány vůči cíli a namísto adresy URL v sestavách se použije název výkazu. V nastavení běhu, pod spravovat sady čítačů zátěžového testu je vlastnost značky počítače zobrazí v sestavě názvů počítače. To je velmi užitečné pro popis role konkrétního stroje v sestavě.
 
-## <a name="net-framework-security"></a>zabezpečení v rozhraní .NET Framework
+## <a name="net-security"></a>Zabezpečení rozhraní .net
 
 Výsledky zátěžového testu a sestavy obsahují potenciálně citlivé informace, které se dají zneužít k útoku proti vašemu počítači nebo síti. Výsledky zátěžového testu a sestavy obsahují názvy počítačů a připojovací řetězce. Je třeba tomu věnovat pozornost při sdílení sestav zátěžových testů s ostatními.
 

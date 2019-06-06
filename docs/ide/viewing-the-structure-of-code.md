@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2ec8e3e51036749030036eee6ff1d268a44f69
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 685915d963e506d86c81a6bc4f7fc62998a0f7d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263071"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747715"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Zobrazení struktury kódu pomocí různá okna nástrojů
 
-Můžete zkontrolovat třídy a jejich členy v sadě Visual Studio pomocí různá okna nástrojů, včetně **zobrazení tříd**, **hierarchie volání**, **prohlížeče objektů**a **Code Definition** (pouze C++). Kód v projektech Visual Studio, součásti rozhraní .NET Framework, komponenty modelu COM, dynamické knihovny (DLL), můžete zkontrolovat těchto oknech nástrojů a knihoven (vyrovnávací paměti TLB) typů.
+Můžete zkontrolovat třídy a jejich členy v sadě Visual Studio pomocí různá okna nástrojů, včetně **zobrazení tříd**, **hierarchie volání**, **prohlížeče objektů**a **Code Definition** (pouze C++). Kód v projektech Visual Studio, součásti rozhraní .NET, komponenty modelu COM, dynamické knihovny (DLL), můžete zkontrolovat těchto oknech nástrojů a knihoven (vyrovnávací paměti TLB) typů.
 
 Můžete také použít **Průzkumníka řešení** pro přechod na typy a členy v projektech, hledání pro symboly, Zobrazit metody hierarchie volání, najít odkazy na symboly a další, aniž byste museli přepínat mezi více oken nástrojů.
 
@@ -56,7 +56,7 @@ Pokud váš projekt se změnami do správy zdrojového kódu, každý **zobrazen
 
 |||
 |-|-|
-|**Nová složka**|Vytvoří virtuální složku nebo podsložku, ve kterém můžete uspořádat často používaných elementy. Jsou uložené v aktivním řešení (*.suo*) soubor. Po přejmenování nebo odstranění elementu v kódu, může zobrazit ve virtuální složce jako uzel k chybě. Chcete-li tento problém, odstraňte uzel chyby. Pokud jste přejmenovali element, můžete jej přesunout z hierarchie projektu do složky znovu.|
+|**Nová složka**|Vytvoří virtuální složku nebo podsložku, ve kterém můžete uspořádat často používaných elementy. Jsou uložené v aktivním řešení ( *.suo*) soubor. Po přejmenování nebo odstranění elementu v kódu, může zobrazit ve virtuální složce jako uzel k chybě. Chcete-li tento problém, odstraňte uzel chyby. Pokud jste přejmenovali element, můžete jej přesunout z hierarchie projektu do složky znovu.|
 |**Zpět**|Přejde na dříve vybrané položky.|
 |**Vpřed**|Přejde na další vybranou položku.|
 |**Zobrazit Diagram tříd** (kódové projekty pouze spravované)|K dispozici při vyberte obor názvů nebo typ v **zobrazení tříd**. Pokud je vybraná oboru názvů, třídy diagram znázorňuje všechny typy v ní. Když vyberete typ, diagram tříd se zobrazí pouze typu.|

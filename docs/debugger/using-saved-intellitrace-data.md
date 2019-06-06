@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408623"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746156"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Použití uložených dat řešení IntelliTrace (C#, Visual Basic, C++)
 
@@ -37,7 +37,6 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
     |**Zdroj**|**V tématu**|
     |----------------|-------------|
     |Relace IntelliTrace v sadě Visual Studio Enterprise (ale ne Professional nebo Community edice)|[Funkce IntelliTrace](../debugger/intellitrace-features.md)|
-    |Testovací relace v nástroji Microsoft Test Manager. Tato možnost připojuje soubor .iTrace k pracovní položce serveru Team Foundation Server.|[Shromažďování více diagnostických dat v manuálních testů](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |Microsoft Monitoring Agent, buď samostatně nebo pomocí System Center 2012 R2 Operations Manager pro technologii ASP.NET webové aplikace a služby SharePoint spuštěnými v nasazení|-   [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md)<br />-   [Co je nového pro System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="GetStarted"></a> Co chcete udělat?
@@ -67,7 +66,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 > Pokud jste zavřeli soubor IntelliTrace během ladění, můžete lze jej snadno znovu otevřít. Přejděte **ladění** nabídce zvolte **IntelliTrace**, **zobrazit souhrn protokolu**. Můžete také zvolit **zobrazit souhrn protokolu** v **IntelliTrace** okna. To je k dispozici pouze při ladění pomocí IntelliTrace.
 
 ## <a name="Understand"></a> Principy protokolu IntelliTrace
- Některé z těchto částí v souboru .iTrace zobrazí pouze v případě, že byla data shromážděna z určitého zdroje, například z nástroje Test Manager nebo z aplikace služby SharePoint.
+ Některé z těchto částí v souboru .iTrace zobrazí pouze v případě, že byla data shromážděna z určitého zdroje, například z aplikací služby SharePoint.
 
 |**Oddíl**|**Obsahuje**|**Zdroj kolekce**|
 |-----------------|------------------|---------------------------|
@@ -76,7 +75,6 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 |[Analýza](#Analysis)|SharePoint 2010 a SharePoint 2013 pouze pro aplikace. Diagnostika události IntelliTrace a SharePoint, jako je například události ladicího programu, události ULS, neošetřené výjimky a jiná data, která zaznamenávají agenta Microsoft Monitoring Agent.|Microsoft Monitoring Agent, buď samostatného kolektoru nebo pomocí System Center 2012 R2 Operations Manager|
 |[Systémové informace](#SystemInfo)|Nastavení a specifikace hostitelského systému|Všechny zdroje|
 |[Seznam vláken](#ThreadsList)|Vlákna spuštěná během shromažďování|Všechny zdroje|
-|[Testovací Data](#TestData)|Kroky testu a jejich výsledky z testovací relace|Test Manager|
 |[Moduly](#Modules)|Moduly, které načtené cílovým procesem v pořadí, ve kterém byly načteny.|Všechny zdroje|
 |[Webový požadavek](#Modules)|Webové žádosti o data pro produkční prostředí služby IIS webová aplikace a služby SharePoint 2010 a SharePoint 2013|Microsoft Monitoring Agent a samostatného kolektoru|
 
@@ -84,7 +82,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 
 - Vyberte záhlaví sloupce seřadíte data.
 
-- Pomocí vyhledávacího pole filtrovat data. Hledání ve formátu prostého textu funguje napříč všechny sloupce kromě sloupce čas. Můžete také filtrovat hledání v určitém sloupci s jeden filtr na sloupec. Zadejte název sloupce bez mezer, dvojtečkou (**:**) a hledanou hodnotu. Použít tento oddělte středníkem. (**;**) můžete přidat jinou hodnotu sloupce a hledání.
+- Pomocí vyhledávacího pole filtrovat data. Hledání ve formátu prostého textu funguje napříč všechny sloupce kromě sloupce čas. Můžete také filtrovat hledání v určitém sloupci s jeden filtr na sloupec. Zadejte název sloupce bez mezer, dvojtečkou ( **:** ) a hledanou hodnotu. Použít tento oddělte středníkem. ( **;** ) můžete přidat jinou hodnotu sloupce a hledání.
 
      Například vyhledejte události výkonu, které obsahují slovo "pomalé" v **popis** sloupců, typ:
 
@@ -227,9 +225,6 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 |**Název**|Název vlákna. Nepojmenovaná vlákna se zobrazují jako "\<bez názvu >".|
 |**Čas spuštění**|Čas vytvoření vlákna|
 |**Koncový čas**|Čas, kdy vlákno bylo dokončeno.|
-
-### <a name="TestData"></a> Testovací Data
- Prozkoumejte data IntelliTrace, které Test Manager poznamenali během testování vaší aplikace.
 
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>Spuštění ladění od konkrétního kroku testu
 

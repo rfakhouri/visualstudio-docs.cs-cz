@@ -11,21 +11,19 @@ helpviewer_keywords:
 - IntelliTrace, debugging applications
 - debugger, (See also IntelliTrace [Visual Studio ALM])
 - debugging, (See also IntelliTrace [Visual Studio ALM])
-- IntelliTrace, collecting data from Test Manager
 - IntelliTrace
-- Test Manager, debugging with IntelliTrace
 - IntelliTrace, debugging after a crash
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf491eae46c22d0804c66ab51071740e42de631c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d297b883c4d5217a0175c739bf460872d464503f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678812"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746674"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace for Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -44,7 +42,6 @@ Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition
 |||
 |-|-|
 |**Ladit aplikaci pomocí nástroje IntelliTrace:**<br /><br /> -Zobrazit minulé události.<br />-Zobrazit informace o s minulými událostmi volání.<br />-Uložte relaci nástroje IntelliTrace.<br />-Řízení dat, která nástroj IntelliTrace shromažďuje.|- [Kontrola předchozí nové aplikace pomocí nástroje IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Návod: Použití funkce IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkce IntelliTrace](../debugger/intellitrace-features.md)<br />- [Historické ladění](../debugger/historical-debugging.md)|
-|**Shromažďovat IntelliTrace data během testovací relace v nástroji Test Manager**|- [Shromažďování více diagnostických dat v manuálních testů](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Shromažďovat IntelliTrace data z nasazené aplikace**|- [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Spuštění ladění ze souboru protokolu IntelliTrace (soubor .iTrace).**|- [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
 
@@ -71,8 +68,6 @@ Můžete ukládat data IntelliTrace z těchto zdrojů:
 
 - Relace IntelliTrace v systému Visual Studio 2015 Enterprise nebo novější verze ani předchozích verzích sady Visual Studio Ultimate.
 
-- Testovací relace v nástroji Microsoft Test Manager
-
 - Webové aplikace ASP.NET jsou hostovány službou IIS, nebo SharePoint 2010 a SharePoint 2013 spuštěnými v nasazení při použití nástroje Microsoft Monitoring Agent, buď samostatně, nebo s nástrojem System Center 2012. Zobrazit [použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) a [sledování pomocí agenta Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).
 
 Zde je několik příkladů, jak nástroj IntelliTrace může pomoci s laděním:
@@ -84,10 +79,6 @@ Zde je několik příkladů, jak nástroj IntelliTrace může pomoci s laděním
 - Dochází k výjimce.
 
      Bez nástroje IntelliTrace se zobrazí zpráva o výjimce, ale nemáte množství informací o událostech, které vedly k výjimce. Můžete prozkoumat zásobník volání a podívat se na řetězec volání, která vedla k výjimce, ale nelze zobrazit posloupnost událostí, ke kterým došlo během těchto volání. Pomocí nástroje IntelliTrace můžete zkoumat události, ke kterým došlo před výjimkou.
-
-- Vaše aplikace dojde k chybě v testovacím počítači, ale funguje na vývojovém počítači.
-
-     Můžete shromáždit data IntelliTrace z nástroje Microsoft Test Manager, uložit tato data do souboru .iTrace a připojit tento soubor k pracovní položce serveru Team Foundation Server pro pozdější zkoumání. Zobrazit [shromažďování více diagnostických dat v manuálních testech](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) a [použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
 - K chybě nebo selhání dochází v nasazené aplikaci.
 

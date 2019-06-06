@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55884fe34fda7f29370439d8a792a595763292b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed0f396613cea4ec2b6d9869e3ef1b121cac236b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004766"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747378"
 ---
 # <a name="msbuild-task-reference"></a>Referenční dokumentace úlohy nástroje MSBuild
 
@@ -169,7 +169,7 @@ Kromě uvedených v tématech v této části parametrů také každý úkol má
 
 - [Getframeworkpath – úloha](../msbuild/getframeworkpath-task.md)
 
- Načte cestu k [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sestavení.
+ Načte cestu k sestavení rozhraní .NET Framework.
 
 - [GetFrameworkSdkPath task](../msbuild/getframeworksdkpath-task.md)
 

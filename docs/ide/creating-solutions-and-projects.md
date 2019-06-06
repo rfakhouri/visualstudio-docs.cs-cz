@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793533"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746871"
 ---
 # <a name="create-solutions-and-projects"></a>Vytváření řešení a projektů
 
@@ -61,11 +61,11 @@ Pokud máte soubor, který platí pro více projektů, jako je například soubo
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Vytvořit projekt .NET, který cílí na konkrétní verzi rozhraní .NET Framework
 
-Když vytvoříte projekt, můžete zadat konkrétní verzi rozhraní .NET Framework, který chcete projekt, který používá.
+Při vytváření projektu rozhraní .NET Framework, můžete zadat konkrétní verzi rozhraní .NET Framework, který chcete projekt, který používá. (Při vytváření projektu .NET Core nezadáte verzi rozhraní framework.)
 
 ::: moniker range="vs-2017"
 
-Chcete-li určit verzi rozhraní .NET framework, zvolte **Framework** v rozevírací nabídce **nový projekt** dialogové okno.
+Chcete-li určit verzi rozhraní .NET Framework, zvolte **Framework** v rozevírací nabídce **nový projekt** dialogové okno.
 
 ![Rozhraní Framework rozevírací seznam v dialogovém okně Nový projekt](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ Chcete-li určit verzi rozhraní .NET framework, zvolte **Framework** v rozevír
 
 ::: moniker range=">=vs-2019"
 
-Chcete-li určit verzi rozhraní .NET framework, zvolte **Framework** rozevírací nabídky na **vytvořte nový projekt** stránky.
+Chcete-li určit verzi rozhraní .NET Framework, zvolte **Framework** rozevírací nabídky na **vytvořte nový projekt** stránky.
 
 ![Selektor Framework v konfiguraci nového projektu](media/vs-2019/configure-new-project-framework.png)
 

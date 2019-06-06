@@ -8,38 +8,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9760dbf4fd2eabb43e88e0b99858eba3e09c8fb5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004612"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747402"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild cílová rozhraní framework a cílová platforma
 Projekt se dají spouštět na *Cílová architektura*, což je konkrétní verzi rozhraní .NET Framework a *cílovou platformu*, což je zejména softwarovou architekturu.  Například můžete zacílit aplikaci pro spuštění v rozhraní .NET Framework 2.0 na 32bitové platformě, která je kompatibilní s 802 x 86 procesorů ("x86"). Kombinace Cílová architektura a cílová platforma se označuje jako *cílový kontext*.
 
 ## <a name="target-framework-and-profile"></a>Cílové rozhraní framework a profil
- Je konkrétní verzi rozhraní .NET framework [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , který váš projekt se vytvořil pro spuštění na. Specifikace rozhraní .NET framework je povinné, protože umožňuje kompilátoru funkce a odkazy na sestavení, které jsou výhradně pro tuto verzi rozhraní framework.
+ Rozhraní .NET framework je konkrétní verzi rozhraní .NET Framework, který váš projekt se vytvořil pro spuštění na. Specifikace rozhraní .NET framework je povinné, protože umožňuje kompilátoru funkce a odkazy na sestavení, které jsou výhradně pro tuto verzi rozhraní framework.
 
  V současné době jsou k dispozici pro použití následující verze rozhraní .NET Framework:
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 (zahrnutý v sadě Visual Studio 2005)
+- Rozhraní .NET Framework 2.0 (zahrnutý v sadě Visual Studio 2005)
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0 (součástí [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- Rozhraní .NET Framework 3.0 (součástí [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5 (součástí [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- Rozhraní .NET Framework 3.5 (součástí [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2
+- Rozhraní .NET Framework 4.5.2
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6 (součástí [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- Rozhraní .NET Framework 4.6 (součástí [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1
+- .NET Framework 4.6.1
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2
+- Rozhraní .NET Framework 4.6.2
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7
+- Rozhraní .NET Framework 4.7
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1
+- Rozhraní .NET Framework 4.7.1
 
 Verze rozhraní .NET Framework v seznamu sestavení, že každý zpřístupní odkazovat navzájem liší. Například nelze sestavit aplikace Windows Presentation Foundation (WPF), pokud váš projekt cílí na rozhraní .NET Framework verze 3.0 nebo vyšší.
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c64e13d6ed0f4951b0b196931f8f627b5c042ea
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715434"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746533"
 ---
 # <a name="output-window"></a>Výstup – okno
 
@@ -65,7 +65,7 @@ Chcete-li zobrazit **výstup** okna pokaždé, když se v sestavení projektu, *
 
 Některé funkce integrovaného vývojového prostředí a příkazech vyvolaných v [příkazové okno](../../ide/reference/command-window.md) dodávat svůj výstup do **výstup** okna. Výstup z externí nástroje, jako *.bat* a *.com* soubory, které je obvykle v příkazovém okně zobrazí, se rozšíří do **výstup** podokně vyberete  **Okno výstup** možnost [Správa externích nástrojů](../../ide/managing-external-tools.md). Řadu dalších typů zpráv, které mohou být zobrazeny v **výstup** také podoken. Například když syntaxe jazyka Transact-SQL v uložené proceduře je porovnávána s cílovou databázi, výsledky se zobrazí v **výstup** okna.
 
-Také můžete naprogramovat zapsat diagnostické zprávy v době běhu na vašich vlastních aplikací **výstup** podokně. K tomuto účelu použít členy <xref:System.Diagnostics.Debug> třídy nebo <xref:System.Diagnostics.Trace> třídy v <xref:System.Diagnostics> oboru názvů z knihovny tříd rozhraní .NET Framework. Členové <xref:System.Diagnostics.Debug> třídy zobrazit výstup při vytváření konfigurace ladění z řešení nebo projektu, členy <xref:System.Diagnostics.Trace> třídy zobrazit výstup při vytváření konfigurace ladění nebo vydání. Další informace najdete v tématu [diagnostické zprávy v okně výstupu](../../debugger/diagnostic-messages-in-the-output-window.md).
+Také můžete naprogramovat zapsat diagnostické zprávy v době běhu na vašich vlastních aplikací **výstup** podokně. K tomuto účelu použít členy <xref:System.Diagnostics.Debug> třídy nebo <xref:System.Diagnostics.Trace> třídy v <xref:System.Diagnostics> obor názvů rozhraní .NET API. Členové <xref:System.Diagnostics.Debug> třídy zobrazit výstup při vytváření konfigurace ladění z řešení nebo projektu, členy <xref:System.Diagnostics.Trace> třídy zobrazit výstup při vytváření konfigurace ladění nebo vydání. Další informace najdete v tématu [diagnostické zprávy v okně výstupu](../../debugger/diagnostic-messages-in-the-output-window.md).
 
 V jazyce C++ můžete vytvářet vlastní kroky sestavení a události sestavení, jejichž upozornění a chyby se zobrazí a jsou počítány v **výstup** podokně. Stisknutím klávesy **F1** na řádek výstupu, můžete zobrazit příslušné téma nápovědy. Další informace najdete v tématu [formátování výstupu vlastní krok sestavení](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event).
 

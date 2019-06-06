@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c7a915301dabc0afcfae450c87a435d12e10d15
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927454"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745668"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Řešení konkrétních chyb v nasazeních ClickOnce
 Tento článek uvádí následující běžné chyby, které se mohou vyskytnout při nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a popisuje kroky k vyřešení jednotlivých problémů.
@@ -36,7 +36,7 @@ Tento článek uvádí následující běžné chyby, které se mohou vyskytnout
 
  Nejprve se ujistěte, že je server nakonfigurován pro přidružení *.application* rozšíření s obsahem typ "application/x-ms aplikace."
 
- Pokud je server nakonfigurován správně, zkontrolujte, že [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] je nainstalovaná ve vašem počítači. Pokud [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] je nainstalován, a stále dochází k tomuto problému, zkuste odinstalace a opětovné instalace [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] pro opětovné zaregistrování typu obsahu na straně klienta.
+ Pokud je server nakonfigurován správně, zkontrolujte, jestli je rozhraní .NET Framework 2.0 nainstalovaný ve vašem počítači. Pokud je nainstalované rozhraní .NET Framework 2.0 a stále dochází k tomuto problému, zkuste odinstalace a opětovné instalace rozhraní .NET Framework 2.0 pro opětovné zaregistrování obsah typu na straně klienta.
 
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Říká chybová zpráva "Nepodařilo se načíst aplikace. Soubory v nasazení chybí"nebo"stažení aplikace byla přerušena, zkontrolujte chyby sítě a zkuste to znovu později"
  Tato zpráva znamená, že jeden nebo více souborů se na ně odkazovat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty nelze stáhnout. Nejjednodušší způsob, jak ladění této chyby je pokus stáhnout adresu URL, která [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] říká nelze stáhnout. Tady jsou některé možné příčiny:

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b96327205369d0280a865b632801edbf199745
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407854"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746032"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; – element (nasazení ClickOnce)
 Určuje verzi rozhraní .NET Framework, ve kterém můžete tuto aplikaci nainstalovat a spustit.
@@ -41,7 +41,7 @@ Určuje verzi rozhraní .NET Framework, ve kterém můžete tuto aplikaci nainst
 ```
 
 ## <a name="elements-and-attributes"></a>Elementy a atributy
- `compatibleFrameworks` Element se vyžaduje pro manifesty nasazení, které se zaměřují [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] runtime poskytovaného službou [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] nebo novější. `compatibleFrameworks` Element obsahuje jeden nebo více `framework` elementy, které určují verze rozhraní .NET Framework, na kterých tato aplikace mohla spustit. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Modul runtime spustí aplikaci v prvním dostupné `framework` v tomto seznamu.
+ `compatibleFrameworks` Element se vyžaduje pro manifesty nasazení, které se zaměřují [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] runtime k dispozici v rozhraní .NET Framework 4 nebo novější. `compatibleFrameworks` Element obsahuje jeden nebo více `framework` elementy, které určují verze rozhraní .NET Framework, na kterých tato aplikace mohla spustit. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Modul runtime spustí aplikaci v prvním dostupné `framework` v tomto seznamu.
 
  V následující tabulce jsou uvedeny atribut, který `compatibleFrameworks` elementu podporuje.
 
@@ -61,7 +61,7 @@ Určuje verzi rozhraní .NET Framework, ve kterém můžete tuto aplikaci nainst
 ## <a name="remarks"></a>Poznámky
 
 ## <a name="example"></a>Příklad
- Následující příklad kódu ukazuje `compatibleFrameworks` prvek [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu nasazení. Toto nasazení můžete spustit na [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Můžete také spustit [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] vzhledem k tomu, že je nadstavbou jazyka [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
+ Následující příklad kódu ukazuje `compatibleFrameworks` prvek [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu nasazení. Toto nasazení můžete spustit na [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Lze je také spustit v rozhraní .NET Framework 4 vzhledem k tomu, že je nadstavbou jazyka [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
 
 ```xml
 <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">

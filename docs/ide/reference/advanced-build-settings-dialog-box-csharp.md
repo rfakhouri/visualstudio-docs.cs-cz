@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 908f79b40b17eba5c0e3f518e6d7f2f3ae58e9c7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792215"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745012"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Dialogové okno Upřesnit nastavení sestavení (C#)
 
@@ -91,7 +91,7 @@ Určuje velikost oddíly výstupního souboru. Platné hodnoty jsou **512**, **1
 
 **Základní adresa knihovny**
 
-Určuje upřednostňovaná základní adresa, ve kterém se má načíst knihovnu DLL. Výchozí základní adresa pro knihovnu DLL se nastavuje [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] společného jazykového modulu runtime. Další informace najdete v tématu [/BaseAddress (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
+Určuje upřednostňovaná základní adresa, ve kterém se má načíst knihovnu DLL. Výchozí základní adresa knihovny DLL je nastavit modul common language runtime rozhraní .NET Framework. Další informace najdete v tématu [/BaseAddress (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
 ## <a name="see-also"></a>Viz také
 

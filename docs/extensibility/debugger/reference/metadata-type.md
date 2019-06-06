@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5aa21d4bfccd50e31c2fd7e76bb8808bba19bc58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3d608e4e9bf9987eb1dd430a9e22660c1da6a90a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333754"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746702"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 Tato struktura Určuje informace o typ pole z metadat.
@@ -58,7 +58,7 @@ public struct METADATA_TYPE {
 ## <a name="remarks"></a>Poznámky
  Tato struktura se zobrazí jako součást sjednocení v [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) strukturu, kdy `dwKind` pole `TYPE_INFO` struktura je nastavena na `TYPE_KIND_METADATA` (hodnotu z [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) výčet).
 
- `tokClass` Hodnotu, která jednoznačně identifikuje typ tokenu metadat. Podrobnosti o tom, jak interpretovat horní bits ID tokenu metadat najdete v tématu `CorTokenType` výčtu v souboru comimage_flags v [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK.
+ `tokClass` Hodnotu, která jednoznačně identifikuje typ tokenu metadat. Podrobnosti o tom, jak interpretovat horní bits ID tokenu metadat najdete v tématu `CorTokenType` výčtu v souboru comimage_flags v rozhraní .NET Framework SDK.
 
 ## <a name="requirements"></a>Požadavky
  Záhlaví: sh.h

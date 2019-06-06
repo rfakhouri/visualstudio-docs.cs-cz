@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a13e6ce35b798a79d3c8a283aa941b801ff03141
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263491"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745610"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Zabezpečení správy verzí, problémy a manifestem v nasazeních ClickOnce
 
@@ -59,7 +59,7 @@ Této chybě může dojít pouze v případě, že upravujete vaše [!INCLUDE[nd
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>V manifestu zadejte jednotlivá sestavení rozhraní .NET Framework
 
-Vaše aplikace se nepodaří načíst, pokud musíte ručně upravit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení tak, aby odkazovaly na starší verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sestavení. Například, pokud jste přidali odkaz na sestavení System.Net verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] starší než verze určená v manifestu, pak by dojít k chybě. Obecně by se neměly pokoušet zadat odkazy na jednotlivé [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sestavení jako verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] proti které aplikace běží je zadán jako závislost v manifestu aplikace.
+Vaše aplikace se nepodaří načíst, pokud musíte ručně upravit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení tak, aby odkazovalo na starší verzi sestavení rozhraní .NET Framework. Například pokud jste přidali odkaz na sestavení System.Net pro verzi rozhraní .NET Framework starší než verze určená v manifestu, pak by dojít k chybě. Obecně byste se neměli pokoušet zadat odkazy na jednotlivá sestavení rozhraní .NET Framework, verze rozhraní .NET Framework, proti kterému vaše aplikace spuštěná uvedené jako závislosti v manifestu aplikace.
 
 ## <a name="manifest-parsing-issues"></a>Manifest – potíže analýzy
 

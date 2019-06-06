@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d04e5703c96b710208cc1ecc79a169a458463497
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535568"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747041"
 ---
 # <a name="manage-references-in-a-project"></a>Správa odkazů v projektu
 
@@ -38,7 +38,7 @@ Přidání odkazu, klikněte pravým tlačítkem na **odkazy** nebo **závislost
 
 Můžete přidat odkaz na následující typy komponent a služeb:
 
-- Knihovny tříd rozhraní .NET framework nebo sestavení
+- Knihovny tříd .NET nebo sestavení
 
 - U aplikací pro UPW
 
@@ -50,7 +50,7 @@ Můžete přidat odkaz na následující typy komponent a služeb:
 
 ## <a name="uwp-app-references"></a>Odkazy na aplikace pro UPW
 
-### <a name="project-references"></a>Odkazy na projekt
+### <a name="project-references"></a>Odkazy na projekty
 
 Projekty pro Universal Windows Platform (UWP) můžete vytvořit odkazy na jiné projekty UWP v řešení nebo projekty Windows 8.1 nebo binární soubory, za předpokladu, že tyto projekty nepoužívají rozhraní API, která se již nepoužívají v systému Windows 10. Další informace najdete v tématu [přesunout z Windows 8 modulu Runtime pro UPW](/windows/uwp/porting/w8x-to-uwp-root).
 
@@ -101,11 +101,11 @@ Pokud nasadíte aplikaci, která obsahuje odkaz na vlastní komponentu registrov
 
 Ve výchozím nastavení <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> je nastavena na **False** Pokud sestavení nebo komponenta v globální mezipaměti sestavení, nebo je komponentou architektury. V opačném případě je hodnota nastavena na **True**. Odkazy typu projekt projekt jsou vždy nastaveny na **True**.
 
-## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Odkaz na projekt nebo sestavení, které cílí na jinou verzi rozhraní .NET Framework
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Odkaz na projekt nebo sestavení, které cílí na jinou verzi rozhraní .NET
 
-Můžete vytvářet aplikace, které odkazují na projekty nebo sestavení, která je jiná cílová verze rozhraní .NET Framework. Například můžete vytvořit aplikaci cíleného rozhraní .NET Framework 4.6, které odkazuje na sestavení, které cílí na rozhraní .NET Framework 4.5. Pokud vytvoříte projekt, který se zaměřuje na starší verzi rozhraní .NET Framework, nemůžete nastavit odkaz v projektu na projekt nebo sestavení, který se zaměřuje na novější verzi.
+Můžete vytvářet aplikace, které odkazují na projekty nebo sestavení, které cílí na jinou verzi rozhraní .NET. Například můžete vytvořit aplikaci cíleného rozhraní .NET Framework 4.6, které odkazuje na sestavení, které cílí na rozhraní .NET Framework 4.5. Pokud vytvoříte projekt, který se zaměřuje na starší verzi rozhraní .NET, nemůžete nastavit odkaz v projektu na projekt nebo sestavení, který se zaměřuje na novější verzi.
 
-Další informace najdete v tématu [přehled multiplatformního zacílení](../ide/visual-studio-multi-targeting-overview.md).
+Další informace najdete v tématu [Framework – přehled cílení na](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Projekt pro odkazy na projekt
 

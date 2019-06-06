@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407633"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746112"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Použití samostatného kolektoru IntelliTrace (C#, Visual Basic)
 
@@ -106,12 +106,12 @@ ms.locfileid: "63407633"
 
    2. Přejděte do adresáře kolektoru, například: **C:\IntelliTraceCollector**
 
-   3. Použití **rozbalte** příkaz, včetně tečky (**.**) na konci, a rozbalte soubor IntelliTraceCollection.cab:
+   3. Použití **rozbalte** příkaz, včetně tečky ( **.** ) na konci, a rozbalte soubor IntelliTraceCollection.cab:
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > Období (**.**) zachovává podsložky obsahující lokalizované plány sběru.
+       > Období ( **.** ) zachovává podsložky obsahující lokalizované plány sběru.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Nastavení oprávnění pro adresář kolekce
 
@@ -157,7 +157,7 @@ ms.locfileid: "63407633"
 
             - V 64bitových operačních systémech otevřete místní nabídku pro **prostředí Windows PowerShell**. Zvolte **spustit jako správce**.
 
-            - Na 32bitové operační systémy, otevřete místní nabídku pro **prostředí Windows PowerShell (x86)**. Zvolte **spustit jako správce**.
+            - Na 32bitové operační systémy, otevřete místní nabídku pro **prostředí Windows PowerShell (x86)** . Zvolte **spustit jako správce**.
 
     2. V příkazovém okně prostředí PowerShell, použijte **Import-Module** příkaz pro import **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
@@ -377,9 +377,7 @@ ms.locfileid: "63407633"
 
 ## <a name="WhereElse"></a> Kde jinde lze získat IntelliTrace data?
 
-- V relaci v sadě Visual Studio Enterprise ladění IntelliTrace, zobrazit [funkce IntelliTrace](../debugger/intellitrace-features.md).
-
-- Z testovací relace v nástroji Microsoft Test Manager, najdete na stránce [jak: Shromáždit Data IntelliTrace pro snazší ladění složitých problémů](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+Získat IntelliTrace data z IntelliTrace relaci ladění v sadě Visual Studio Enterprise. Zobrazit [funkce IntelliTrace](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>Kde lze získat další informace?
  [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 346a7f4cc7c7a8e6f579f94c6294ce9577fa01c7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842093"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744597"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Statické typy vlastníků by měly být zapečetěné
 
@@ -46,7 +46,7 @@ CA1052 pravidlo předpokládá, že typ, který obsahuje pouze statické členy 
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
-Chcete-li opravit porušení tohoto pravidla, označte typ jako `sealed` nebo `NotInheritable`. Pokud cílíte rozhraní .NET Framework 2.0 nebo novější, je lepším řešením pro označení typu jako `static` nebo `Shared`. Tímto způsobem není nutné deklarovat soukromý konstruktor třídy zabránit vytváří.
+Chcete-li opravit porušení tohoto pravidla, označte typ jako `sealed` nebo `NotInheritable`. Pokud projekt cílí na rozhraní .NET Framework 2.0 nebo novější, je lepším řešením pro označení typu jako `static` nebo `Shared`. Tímto způsobem není nutné deklarovat soukromý konstruktor třídy zabránit vytváří.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 

@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548140"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745817"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí správce odkazů
 
@@ -56,11 +56,11 @@ Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkaz
 
 ## <a name="assemblies-tab"></a>Karta Sestavení
 
-**Sestavení** karta obsahuje seznam všech sestavení rozhraní .NET Framework, které jsou k dispozici pro odkazování. **Sestavení** kartu neobsahuje žádná sestavení z globální mezipaměti sestavení (GAC), protože sestavení v GAC jsou součástí běhového prostředí. Pokud nasadíte nebo zkopírujete aplikaci, která obsahuje odkaz na sestavení, které je registrované v GAC, sestavení nebude nasazena nebo zkopírována s aplikací, bez ohledu na to **Kopírovat místně** nastavení. Další informace najdete v tématu [Správa odkazů v projektu](../ide/managing-references-in-a-project.md).
+**Sestavení** karta obsahuje seznam všech sestavení .NET, které jsou k dispozici pro odkazování. **Sestavení** kartu neobsahuje žádná sestavení z globální mezipaměti sestavení (GAC), protože sestavení v GAC jsou součástí běhového prostředí. Pokud nasadíte nebo zkopírujete aplikaci, která obsahuje odkaz na sestavení, které je registrované v GAC, sestavení nebude nasazena nebo zkopírována s aplikací, bez ohledu na to **Kopírovat místně** nastavení. Další informace najdete v tématu [Správa odkazů v projektu](../ide/managing-references-in-a-project.md).
 
 Pokud ručně přidáte odkaz na jakýkoli obor názvů EnvDTE (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a>, nebo <xref:EnvDTE100>), můžete nastavit **Embed Interop Types** vlastnosti odkazu na **False** v **vlastnosti** okna. Nastavení této vlastnosti na **True** může způsobit problémy sestavení z důvodu určitých vlastností EnvDTE, které nemůže být vložený.
 
-Všechny desktopové projekty obsahují implicitní odkaz na **mscorlib**. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projekty obsahují implicitní odkaz na <xref:Microsoft.VisualBasic>. Všechny projekty obsahují implicitní odkaz na **System.Core**, i když je odebrán ze seznamu odkazů.
+Všechny desktopové projekty obsahují implicitní odkaz na **mscorlib**. Projekty Visual Basic obsahují implicitní odkaz na <xref:Microsoft.VisualBasic>. Všechny projekty obsahují implicitní odkaz na **System.Core**, i když je odebrán ze seznamu odkazů.
 
 Pokud typ projektu nepodporuje sestavení, na kartě nezobrazí v **správce odkazů** dialogové okno.
 
@@ -68,7 +68,9 @@ Pokud typ projektu nepodporuje sestavení, na kartě nezobrazí v **správce odk
 
 1. **Rozhraní Framework** obsahuje seznam všech sestavení, které tvoří cílené rozhraní.
 
-    Projekty pro Windows 8.x Store aplikace obsahují odkazy na všechna sestavení v cíleném [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] ve výchozím nastavení při vytvoření projektu. Ve spravovaných projektech, uzel jen pro čtení v rámci **odkazy** složky **Průzkumníka řešení** označuje odkaz na celé rozhraní. Odpovídajícím způsobem **Framework** kartu nebude žádná sestavení z rozhraní a místo toho zobrazí následující zpráva: "Všechna sestavení rozhraní je již odkazováno. Použijte prohlížeč objektů pro prozkoumání odkazů rozhraní Framework." Pro desktopové projekty **Framework** karta zobrazuje sestavení z cíleného rozhraní a uživatel musí přidat odkazy, které aplikace vyžaduje.
+   Pro projekty, které není cílit na .NET Core nebo univerzální platformu Windows **Framework** karta zobrazuje sestavení z cíleného rozhraní. Uživatel musí přidat všechny odkazy, které aplikace vyžaduje.
+
+   Projekty pro Universal Windows obsahují odkazy na všechna sestavení v cílové rozhraní framework ve výchozím nastavení. Ve spravovaných projektech, uzel jen pro čtení v rámci **odkazy** složky **Průzkumníka řešení** označuje odkaz na celé rozhraní. Proto **Framework** kartu nemá seznam všech sestavení z rozhraní a namísto toho se zobrazí následující zpráva: "Všechna sestavení rozhraní je již odkazováno. Použijte prohlížeč objektů pro prozkoumání odkazů v rámci".
 
 2. **Rozšíření** obsahuje seznam všech sestavení, která vyvinuli externí dodavatelé součástí a ovládacích prvků pro rozšíření cíleného rozhraní. Podle účelu dané aplikace mohou být tato sestavení potřebná.
 
@@ -84,22 +86,20 @@ Pokud typ projektu nepodporuje sestavení, na kartě nezobrazí v **správce odk
 
    A starší verze identifikátoru [Target Framework]
 
-   Například, pokud projekt cílí na rozhraní .NET Framework 4 na 32bitovém počítači **rozšíření** vytvoří výčet sestavení, která jsou registrována pod *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx*, a  *\Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*.
+   Například, pokud projekt cílí na rozhraní .NET Framework 4 na 32bitovém počítači **rozšíření** vytvoří výčet sestavení, která jsou registrována pod *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx*, a *\ Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*.
 
-Některé součásti v seznamu se nemusí zobrazit, v závislosti na verzi rozhraní .NET Framework projektu. Tato situace může nastat za následujících podmínek:
+Některé součásti v seznamu se nemusí zobrazit, v závislosti na verzi rozhraní framework projektu. Tato situace může nastat za následujících podmínek:
 
-- Komponenta, která používá nejnovější verzi rozhraní .NET Framework je nekompatibilní s projektem, který se zaměřuje na starší verzi rozhraní .NET Framework.
+- Komponenta, která používá novější verzi rozhraní framework je nekompatibilní s projektem, zaměřuje na starší verzi.
 
-    Informace o tom, jak změnit cílovou verzi rozhraní .NET Framework pro projekt, naleznete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Informace o tom, jak změnit cílovou verzi rozhraní framework pro projekt, naleznete v tématu [jak: Cílení na určitou verzi rozhraní framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-- Komponenty, která používá [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] je nekompatibilní s projektem, který se zaměřuje [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)].
-
-    Když vytvoříte novou aplikaci, některé projekty zaměřují [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] ve výchozím nastavení.
+- Komponenta, která používá rozhraní .NET Framework 4 je nekompatibilní s projektem, který se zaměřuje na rozhraní .NET Framework 4.5.
 
 Můžete byste se vyhnout přidávání odkazů na soubory do výstupů jiného projektu ve stejném řešení, protože to může způsobit chyby kompilace. Místo toho použijte **projekty** karty **přidat odkaz** dialogové okno k vytvoření odkazů typu projekt projekt. Toto usnadňuje vývoj v týmu povolením lepší správy knihoven tříd, které vytvoříte ve svých projektech. Další informace najdete v tématu [nefunkční odkazy na řešení potíží](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
-> V sadě Visual Studio 2015 nebo vyšší odkaz na soubor místo odkazu na projekt je vytvořen, pokud cílová verze rozhraní .NET Framework jednoho projektu je verze 4.5 nebo novější a cílová verze jiného projektu je verze 2, 3, 3.5 nebo 4.0.
+> V sadě Visual Studio 2015 nebo vyšší odkaz na soubor místo odkazu na projekt je vytvořen, pokud cílová verze rozhraní framework jednoho projektu je rozhraní .NET Framework 4.5 nebo novější a cílová verze jiného projektu je rozhraní .NET Framework 2, 3, 3.5 nebo 4.0.
 
 ### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Zobrazení sestavení v dialogovém okně Přidat odkaz
 
@@ -125,7 +125,7 @@ Můžete byste se vyhnout přidávání odkazů na soubory do výstupů jiného 
 
    - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>*  je nejnižší verze rozhraní .NET Framework, která se použije. Pokud *\<VersionMinimum\>* je v3.0, složky zadané v *AssemblyFoldersEx* vztahují na projekty, které cílí na .NET Framework 3.0 nebo novější.
+   *\<VersionMinimum\>*  je nejnižší verze rozhraní framework, která se použije. Pokud *\<VersionMinimum\>* je v3.0, složky zadané v *AssemblyFoldersEx* vztahují na projekty, které cílí na .NET Framework 3.0 nebo novější.
 
    *\<AssemblyLocation\>*  je adresář sestavení, která se má zobrazit v **přidat odkaz** dialogové okno, například *C:\MyAssemblies*.
 
@@ -137,13 +137,10 @@ Můžete byste se vyhnout přidávání odkazů na soubory do výstupů jiného 
 
 **Projekty** karta obsahuje všechny kompatibilní projekty v aktuálním řešení, v **řešení** dílčí kartu.
 
-Projekt může odkazovat na jiný projekt, který cílí na jinou verzi rozhraní .NET Framework. Například můžete vytvořit projekt, který cílí [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] , ale který odkazuje na sestavení vytvořené pro rozhraní .NET Framework 2. Však nemůže odkazovat na rozhraní .NET Framework 2 projekt [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] projektu. Další informace najdete v tématu [přehled multiplatformního zacílení](../ide/visual-studio-multi-targeting-overview.md).
+Projekt může odkazovat na jiný projekt, který cílí na verzi jiné rozhraní. Například můžete vytvořit projekt, který cílí na .NET Framework 4, ale, která odkazuje na sestavení vytvořené pro rozhraní .NET Framework 2. Projekt rozhraní .NET Framework 2 ale nemůže odkazovat projekt rozhraní .NET Framework 4. Další informace najdete v tématu [Framework – přehled cílení na](../ide/visual-studio-multi-targeting-overview.md).
 
-Projekt, který se zaměřuje [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] je nekompatibilní s projektem, který se zaměřuje [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
-
-Odkaz na soubor místo odkazu na projekt je vytvořen, pokud jeden projekt cílí na .NET Framework 4 a jiný projekt cílí na starší verzi.
-
-Projekt, který cílí na [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] nelze přidat odkaz na projekt do projektu, který cílí na .NET Framework a naopak.
+> [!NOTE]
+> Projekt, který cílí na rozhraní .NET Framework 4 je nekompatibilní s projektem, který cílí na .NET Framework 4 Client Profile.
 
 ## <a name="universal-windows-tab"></a>Karta Universal Windows
 
@@ -177,9 +174,9 @@ Pokud typ projektu nepodporuje model COM, nebude tato karta se v **správce odka
 
 Můžete použít **Procházet** tlačítko vyhledat součást v systému souborů.
 
-Projekt se může odkazovat na součást, která cílí na jinou verzi rozhraní .NET Framework. Například můžete vytvořit aplikaci, který cílí .NET Framework 4.7, který odkazuje na součást, která cílí na rozhraní .NET Framework 4. Další informace najdete v tématu [přehled multiplatformního zacílení](../ide/visual-studio-multi-targeting-overview.md).
+Projekt může odkazovat na součást, která cílí na verzi jiné rozhraní. Můžete například vytvořit aplikaci, která cílí na .NET Framework 4.7, ale odkazuje na součást, která cílí na rozhraní .NET Framework 4. Další informace najdete v tématu [Framework – přehled cílení na](../ide/visual-studio-multi-targeting-overview.md).
 
-Měli byste se vyhnout přidávání odkazů na soubory do výstupů jiného projektu ve stejném řešení, protože to může vést k chybám při kompilaci. Místo toho použijte **řešení** karty **správce odkazů** dialogové okno k vytvoření odkazů typu projekt projekt. Toto usnadňuje vývoj v týmu povolením lepší správy knihoven tříd, které vytvoříte ve svých projektech. Další informace najdete v tématu [nefunkční odkazy na řešení potíží](../ide/troubleshooting-broken-references.md).
+Se vyhněte přidávání odkazů na soubory do výstupů jiného projektu ve stejném řešení, protože to může způsobit chyby kompilace. Místo toho použijte **řešení** karty **správce odkazů** dialogové okno k vytvoření odkazů typu projekt projekt. Toto usnadňuje vývoj v týmu povolením lepší správy knihoven tříd, které vytvoříte ve svých projektech. Další informace najdete v tématu [nefunkční odkazy na řešení potíží](../ide/troubleshooting-broken-references.md).
 
 Nelze procházet k sadě SDK a přidat do projektu. Je možné přejít pouze k souboru (například sestavení nebo *.winmd*) a přidejte ho do projektu.
 

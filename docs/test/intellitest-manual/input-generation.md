@@ -9,30 +9,26 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8634f1852d10a1935b3ee55b6e80ad9503923fe9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe0215b3474e72316d848c89f2284ab4e39f213b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550211"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746310"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Vstupní generování pomocí dynamické symbolické spuštění
 
-IntelliTest generuje vstupy pro [parametrizované testy částí](test-generation.md#parameterized-unit-testing) díky analýze podmíněného vytváření větve v programu.
-Testovací vstupy jsou zvolili podle toho, jestli můžete aktivovat nové chování větvení programu.
-Analýza je přírůstkové proces. Zpřesnění predikát **dotaz: Můžu -> {true, false}** přes formální vstupní parametry testu **můžu**. **q** představuje sadu chování, které již IntelliTest sledoval.
-Na začátku **q: = false**, protože nic ještě pozorováno.
+IntelliTest generuje vstupy pro [parametrizované testy částí](test-generation.md#parameterized-unit-testing) díky analýze podmíněného vytváření větve v programu. Testovací vstupy jsou zvolili podle toho, jestli můžete aktivovat nové chování větvení programu. Analýza je přírůstkové proces. Zpřesnění predikát `q: I -> {true, false}` přes formální vstupní parametry testu `I`. `q` představuje sadu chování, které již IntelliTest sledoval. Na začátku `q := false`, protože nic ještě pozorováno.
 
 Kroky smyčky jsou:
 
-1. IntelliTest určuje vstupy **můžu** tak, aby **q (i) = false** pomocí [Řešitel omezení](#constraint-solver).
-   Pomocí vytváření, vstup **můžu** bude trvat cestu k provádění není online. Zpočátku to znamená, že **můžu** může být jakýkoli vstup, protože žádná cesta provedení ještě nebyla zjištěná.
+1. IntelliTest určuje vstupy `i` tak, aby `q(i)=false` pomocí [Řešitel omezení](#constraint-solver). Pomocí konstrukce, vstup `i` bude trvat cestu k provádění není online. Zpočátku to znamená, že `i` může být jakýkoli vstup, protože žádná cesta provedení ještě nebyla zjištěná.
 
-1. IntelliTest spustí test s vybraným vstup **můžu**a sleduje spuštění testu a testovaném programu.
+1. IntelliTest spustí test s vybraným vstupní `i`a sleduje spuštění testu a testovaném programu.
 
-1. Během provádění program přebere konkrétní cestu, která je určená podmínkových větví program. Je volána sada všechny podmínky k určení provádění *podmínka cesty*napsaných jako predikát **p: Můžu -> {true, false}** přes formální vstupní parametry. IntelliTest vypočítá reprezentace Tento predikát.
+1. Během provádění program přebere konkrétní cestu, která je určená podmínkových větví program. Sada všechny podmínky, které určují, provádění se nazývá *podmínka cesty*napsaných jako predikát `p: I -> {true, false}` přes formální vstupní parametry. IntelliTest vypočítá reprezentace Tento predikát.
 
-1. IntelliTest sady **q: = (q nebo p)**. Jinými slovy, zaznamenává skutečnost, že zaznamenal cesty představované **p**.
+1. IntelliTest sady `q := (q or p)`. Jinými slovy, zaznamenává skutečnost, že zaznamenal cesty představované `p`.
 
 1. Přejděte ke kroku 1.
 
@@ -47,14 +43,12 @@ IntelliTest filtruje vstupy, které porušují uvedené předpoklady.
 
 Kromě okamžité vstupy (argumenty [parametrizované testy částí](test-generation.md#parameterized-unit-testing)), testu můžete nakreslit další vstupní hodnoty z [PexChoose](static-helper-classes.md#pexchoose) statické třídě. Volby taky určit chování [parametrizované mocks](#parameterized-mocks).
 
-<a name="constraint-solver"></a>
 ## <a name="constraint-solver"></a>Řešitel omezení
 
 IntelliTest Řešitel omezení používá k určení vstupní hodnoty testu a testovaném programu.
 
 IntelliTest používá [Z3](https://github.com/Z3Prover/z3/wiki) Řešitel omezení.
 
-<a name="dynamic-code-coverage"></a>
 ## <a name="dynamic-code-coverage"></a>Dynamický kód pokrytí
 
 IntelliTest jako vedlejší efekt modulu runtime, monitorování, shromažďuje data o pokrytí kódu dynamické.
@@ -63,12 +57,10 @@ Tento postup se nazývá *dynamické* protože IntelliTest ví pouze o kód, kte
 Například když IntelliTest hlásí dynamické pokrytí jako základní bloky 5/10, to znamená, že pět bloků mimo deset byly pokryty, kde celkový počet bloků v všechny metody, které jste zatím přejít pomocí analýzy (na rozdíl od všech metod, které existují v sestavení v rámci testu) je deset.
 Dále v analýzu, jako jsou dostupné další metody zjištění obou čítači (5 v tomto příkladu) a může zvýšit jmenovatel (10).
 
-<a name="integers-and-floats"></a>
 ## <a name="integers-and-floats"></a>Celá čísla a float
 
 IntelliTest společnosti [Řešitel omezení](#constraint-solver) určuje testovací vstupní hodnoty primitivních elementů typů, jako **bajtů**, **int**, **float**a dalšími lidmi v pořadí pro aktivaci různých pracovních cesty pro tento test a testovaném programu.
 
-<a name="objects"></a>
 ## <a name="objects"></a>Objekty
 
 IntelliTest můžete buď [vytvořit instance existujících tříd .NET](#existing-classes), nebo můžete pomocí funkce IntelliTest k automaticky [vytvořit mock objektů](#parameterized-mocks) , který konkrétní rozhraní a chovají různě v závislosti na využití.
@@ -85,10 +77,9 @@ Pokud jsou všechna pole třídy [viditelné](#visibility), Intellitestu automat
 
 Pokud typ není viditelný, nebo pole nejsou [viditelné](#visibility), Intellitestu potřebuje nápovědu k vytvoření objektů a přiřaďte je do zajímavého stavů, abyste dosáhli pokrytí kódu maximální. IntelliTest použít k vytváření a inicializace instancí libovolně reflexe, ale to není obvykle žádoucí, protože to může být přenese objekt do stavu, ve kterém může nikdy dojít během provádění programu normální. IntelliTest se místo toho spoléhá na pomocné parametry od uživatele.
 
-<a name="visibility"></a>
 ## <a name="visibility"></a>Viditelnost
 
-Rozhraní .NET Framework je model propracované viditelnost: typy, metody, pole a ostatní členové mohou být **privátní**, **veřejné**, **interní**a provádění dalších akcí.
+.NET má model propracované viditelnost: typy, metody, pole a ostatní členové mohou být **privátní**, **veřejné**, **interní**a provádění dalších akcí.
 
 Když IntelliTest vygeneruje testy, pokusí se provádět jenom akce (například voláním konstruktorů, metod a nastavení polí), které jsou přípustné s ohledem na pravidla viditelnosti .NET z v rámci kontextu vygenerované testy.
 
@@ -105,7 +96,6 @@ Pravidla jsou následující:
 * **Viditelnost veřejné členy**
   * IntelliTest se předpokládá, že ho může využívat všechny exportované členy viditelné v rámci [PexClass](attribute-glossary.md#pexclass).
 
-<a name="parameterized-mocks"></a>
 ## <a name="parameterized-mocks"></a>Parametrizované mocks
 
 Jak se testovací metoda, která má parametr typu rozhraní? Nebo nezapečetěné třídy? IntelliTest neví, implementace, které se později použije, když tato metoda je volána. A možná není k dispozici i skutečné implementaci k dispozici v době testu.
@@ -123,12 +113,10 @@ Parametrizované mocks mít dva režimy různých spuštění:
 
 Použití [PexChoose](static-helper-classes.md#pexchoose) a získat hodnoty pro parametry mocks.
 
-<a name="structs"></a>
 ## <a name="structs"></a>Struktury
 
 IntelliTest v důvody o **struktura** hodnoty je podobným způsobem, jakým se zabývá [objekty](#objects).
 
-<a name="arrays-and-strings"></a>
 ## <a name="arrays-and-strings"></a>Pole a řetězce
 
 IntelliTest monitoruje prováděnou pokyny při spuštění testu a testovaném programu. Zejména dodržuje, když program závisí na délce řetězce nebo pole (a dolní meze a délek vícerozměrné pole).
@@ -141,11 +129,10 @@ IntelliTest se pokusí pro minimalizaci velikosti pole a řetězců, které jsou
 
 [PexChoose](static-helper-classes.md#pexchoose) statické třídy lze získat další vstupy pro testovací a slouží k implementaci [parametrizované mocks](#parameterized-mocks).
 
-<a name="further-reading"></a>
-## <a name="further-reading"></a>Další čtení
-
-* [Jak to funguje?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
-
 ## <a name="got-feedback"></a>Máte nějakou zpětnou vazbu?
 
 Publikovat své nápady a funkce na požadavky [komunity vývojářů](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+
+## <a name="further-reading"></a>Další čtení
+
+* [Jak to funguje?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

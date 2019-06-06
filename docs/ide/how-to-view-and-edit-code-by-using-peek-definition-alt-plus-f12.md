@@ -7,22 +7,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537484"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747335"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)
 
 Můžete použít **definice operace Peek** příkaz k zobrazení a úpravám kódu bez přepnutí mimo kód, který píšete. **Náhled definice** a **přejít k definici** obsahují stejné informace, ale **definice operace Peek** zobrazí v místním okně a **přejít k definici** ukazuje kód v samostatném okně s kódem. **Přejít k definici** způsobí, že váš kontext (tedy okno s aktivním kódem, aktuální řádek a pozice kurzoru) přejděte do okna Definice kódu. S použitím **definice operace Peek**, můžete zobrazit a upravit definici a pohyb uvnitř souboru definice při zachování svého místa v původním souboru kódu.
 
-Můžete použít **definice operace Peek** s kódem jazyka C#, Visual Basic a C++. V jazyce Visual Basic **definice operace Peek** zobrazuje odkaz **prohlížeče objektů** pro symboly, které neobsahují metadata definice (například typy rozhraní .NET Framework, které jsou integrované v).
+Můžete použít **definice operace Peek** s kódem jazyka C#, Visual Basic a C++. V jazyce Visual Basic **definice operace Peek** zobrazuje odkaz **prohlížeče objektů** pro symboly, které neobsahují metadata definice (například typy .NET, které jsou integrované v).
 
-## <a name="working-with-peek-definition"></a>Práce s náhledem definice
+## <a name="use-peek-definition"></a>Použití náhledu definice
 
-### <a name="to-open-a-peek-definition-window"></a>Otevření okna Náhled definice
+### <a name="open-a-peek-definition-window"></a>Otevření okna Náhled definice
 
 1. Výběrem můžete prohlížet definici **funkce Náhled definice** v místní nabídce pro typ nebo člen, který chcete prozkoumat. Pokud je povolena možnost, můžete také prohlížet definice pomocí myši, stisknutím klávesy **Ctrl** (nebo jiného modifikátoru) a kliknutím na název členu. Nebo z klávesnice, stiskněte klávesu **Alt**+**F12**.
 
@@ -75,7 +75,7 @@ Můžete použít tyto klávesové zkratky v **definice operace Peek** okno:
 |Otevřít okno definice|**Alt**+**F12**|
 |Zavřít okno definice|**ESC**|
 |Povýšit okno definice na běžnou kartu dokumentu|**SHIFT**+**Alt**+**Domů**|
-|Navigace mezi okny definice|**CTRL**+**Alt** + **-** a **Ctrl**+**Alt**+**=**|
+|Navigace mezi okny definice|**CTRL**+**Alt** + **-** a **Ctrl**+**Alt**+ **=**|
 |Navigace mezi několika výsledky|**F8** a **Shift**+**F8**|
 |Přepnout mezi oknem editoru kódu a oknem definice|**SHIFT**+**Esc**|
 

@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf115ad6ce8fb589e9b1c617f40053cf95af2b9c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 78ba7398694e097f324695b6357abc0b35f8d3ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263208"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745568"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Postupy: Zadejte adresu URL podpory pro jednotlivé předpoklady v nasazení ClickOnce
-A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] otestovat nasazení pro celou řadou požadavky, které musí být k dispozici v klientském počítači pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] spuštění aplikace. Zahrnout požadovaná minimální verze těchto závislostí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], verzi operačního systému a všechna sestavení, které musí být předinstalován v globální mezipaměti sestavení (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], však nemůže nainstalovat některý z těchto nezbytných podmínkách; Pokud není nalezen předpoklad, jednoduše zastaví instalaci a zobrazí dialogové okno s vysvětlením, proč se instalace nepovedla.
+A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] otestovat nasazení pro celou řadou požadavky, které musí být k dispozici v klientském počítači pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] spuštění aplikace. Tyto závislosti zahrnují minimální požadovanou verzi rozhraní .NET Framework, verze operačního systému a všechna sestavení, které musí být předinstalován v globální mezipaměti sestavení (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], však nemůže nainstalovat některý z těchto nezbytných podmínkách; Pokud není nalezen předpoklad, jednoduše zastaví instalaci a zobrazí dialogové okno s vysvětlením, proč se instalace nepovedla.
 
  Existují dvě metody pro instalaci požadavků. Můžete nainstalovat pomocí aplikace zaváděcího nástroje. Alternativně můžete zadat adresu URL podpory pro jednotlivé předpoklady, které se zobrazí uživatelům na dialogové okno, pokud se nenajde kontrolu požadovaných součástí. Na stránce odkazuje tuto adresu URL může obsahovat odkazy na pokyny k instalaci požadované součásti. Pokud aplikace neuvádějí adresu URL podpory pro jednotlivé předpoklady [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zobrazí adresa URL podpory určená v manifestu nasazení pro aplikaci jako celek, pokud je definována.
 
@@ -31,7 +31,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] otestovat na
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Zadejte adresu URL podpory pro jednotlivé předpoklady
 
-1. Otevřete manifest aplikace ( *.manifest* souboru) pro vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace v textovém editoru.
+1. Otevřete manifest aplikace ( *.manifest* souboru) pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace v textovém editoru.
 
 2. Předpoklad pro provedení operačního systému, přidejte `supportUrl` atribut `dependentOS` element:
 
@@ -65,7 +65,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] otestovat na
      </dependency>
    ```
 
-5. Volitelné. U aplikací určených pro rozhraní .NET Framework 4, otevření manifestu nasazení ( *.application* souboru) pro vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace v textovém editoru.
+5. Volitelné. U aplikací určených pro rozhraní .NET Framework 4, otevření manifestu nasazení ( *.application* souboru) pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace v textovém editoru.
 
 6. Součásti rozhraní .NET Framework 4, přidejte `supportUrl` atribut `compatibleFrameworks` element:
 

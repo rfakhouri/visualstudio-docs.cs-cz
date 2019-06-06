@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5b5f2c1d350f487b6490d0c2b4ce4fe0b83bb38f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263827"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746769"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Použití metod profilace ke shromažďování dat výkonu z příkazového řádku
-Podle vaší volby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci a možnosti závisí na faktorech jako typ aplikace, který profilujete, metodě profilování, který chcete použít, a určuje, zda je cílová aplikace napsané v nativní nebo [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]kódu.
+Podle vaší volby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci a možnosti závisí na faktorech jako typ aplikace, který profilujete, metodě profilování, který chcete použít, a určuje, zda je cílová aplikace napsané v nativní nebo .NET Kódu architektury.
 
  V tomto tématu jsou uspořádané příkazového řádku témat s postupy podle zvolené metodě profilování.
 
@@ -50,9 +50,9 @@ Podle vaší volby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] př
 - [Nativní služby](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Použijte metody paměti .NET ke shromažďování dat paměti přidělení a objekt životnosti
- Metoda paměti .NET nástrojů pro profilaci umožňuje shromažďovat [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] data o přidělování paměti a informace o životnosti objektů v [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Metoda paměti .NET nástrojů pro profilaci umožňuje shromažďovat data o přidělování paměti rozhraní .NET Framework a informace o životnosti objektů v rozhraní .NET Framework.
 
- Můžete spustit cílovou aplikaci pomocí profileru; můžete připojení profileru k běžící instance aplikace. a můžete vytvořit instrumentované verze této aplikace ke shromažďování podrobných informací o časování spolu s [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] data paměti.
+ Můžete spustit cílovou aplikaci pomocí profileru; můžete připojení profileru k běžící instance aplikace. a můžete vytvořit instrumentované verze této aplikace ke shromažďování podrobných informací o časování spolu s daty paměti rozhraní .NET Framework.
 
 |Úloha|Typ cílové aplikace|
 |----------|-----------------------------|

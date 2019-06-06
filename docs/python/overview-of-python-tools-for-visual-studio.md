@@ -2,7 +2,7 @@
 title: Podpora Pythonu v sadě Visual Studio ve Windows
 titleSuffix: ''
 description: Přehled funkce Pythonu v sadě Visual Studio, takže nejlepší prostředí Python IDE ve Windows (označované také jako Python Tools for Visual Studio, PTVS).
-ms.date: 03/12/2019
+ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8bcc0be91892494a81dd42f141da9c77329767cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f218db0d10e6a7e959b3a5fdc2f38ceff2299c9b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785191"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747571"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Práce s využitím Pythonu v sadě Visual Studio ve Windows
 
@@ -37,6 +37,11 @@ Jak začít:
 - Projděte si jeden nebo více šablon rychlý start k vytvoření projektu. Pokud si nejste jisti, začněte tématem [rychlý start: Otevření a spuštění kódu Pythonu ve složce](quickstart-05-python-visual-studio-open-folder.md) nebo [vytvoření webové aplikace pomocí Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 ::: moniker-end
 - Postupujte podle [pracovat s využitím Pythonu v sadě Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) kurzu pro prostředí úplného začátku do konce.
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio podporuje všechny oficiálně podporované verze jazyka Python, jak jsou určené [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). Konkrétně verze 2.7, 3.5, 3.6 a 3.7.
+::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Podpora pro více interprety
 
@@ -150,9 +155,9 @@ Další informace:
 
 ## <a name="azure-sdk-for-python"></a>Azure SDK pro Python
 
-Úlohy Python obsahuje sadu Azure SDK pro Python, která zjednodušuje využívání služeb Azure z aplikace pro Windows, Mac OS X a Linux.
+Knihovny Azure pro Python zjednodušit využívání služeb Azure z aplikace pro Windows, Mac OS X a Linux. Můžete je použít k vytváření a správě prostředků Azure, jakož i pro připojení ke službám Azure. 
 
-Další informace najdete v tématu [sady Azure SDK for Python](/python/azure/?view=azure-python).
+Další informace najdete v tématu [sady Azure SDK for Python](/python/azure/?view=azure-python) a [knihovny Azure pro Python](/python/azure/python-sdk-azure-overview?view=azure-python) .
 
 ## <a name="questions-and-answers"></a>Otázky a odpovědi
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a58235b724f97e3934ab620677e530fbd9ba9726
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437853"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747355"
 ---
 # <a name="msbuild-task"></a>MSBuild – úloha
 Sestaví [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty z jiného [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.
@@ -44,7 +44,7 @@ Sestaví [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
 | `TargetAndPropertyListSeparators` | Volitelné `String[]` parametru.<br /><br /> Určuje seznam cíle a vlastnosti jako `Project` metadata položky). Oddělovače budou uvozeny řídicími znaky před zpracováním. třeba % 3B (uvozený uvozovacím znakem ";") bude zacházeno, jako by šlo uvozeny řídicími znaky ";". |
 | `TargetOutputs` | Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupního parametru.<br /><br /> Vrátí výstupy sestavených cílů ze všech vygenerovaných souborů projektu. Výstupy z cíle, které se zadaly nezobrazí, není žádné výstupy, které mohou existovat na cíle, které tyto cíle závisí na.<br /><br /> `TargetOutputs` Parametr obsahuje také následující metadata:<br /><br /> -   `MSBuildSourceProjectFile`: [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Soubor projektu, který obsahuje cíl, nastavte výstupy.<br />-   `MSBuildSourceTargetName`: Cíl, nastavte výstupy. **Poznámka:**  Pokud chcete identifikovat výstupy z každého souboru projektu nebo cílové samostatně, spusťte `MSBuild` úkol samostatně pro každý projekt soubor nebo cíl. Pokud spustíte `MSBuild` úkolů pouze jednou, pokud chcete sestavit všechny soubory projektu, výstupy všechny cíle se shromáždí do jednoho pole. |
 | `Targets` | Volitelné `String` parametru.<br /><br /> Určuje cíl nebo cíle sestavení v souborech projektu. K oddělení seznam cílových názvů použijte středník. Pokud nejsou zadány žádné cíle v `MSBuild` úkolu, jsou integrované výchozí cíle zadané v souborech projektu. **Poznámka:**  Cíle, které musí být stejné ve všech souborech projektu. Pokud tomu tak není, dojde k chybě sestavení. |
-| `ToolsVersion` | Volitelné `String` parametru.<br /><br /> Určuje, `ToolsVersion` pro použití při sestavování projektů předaný k tomuto úkolu.<br /><br /> Umožňuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] úkolů k sestavení projektu, který se zaměřuje na jinou verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] než verze zadaná v projektu. Platné hodnoty jsou `2.0`, `3.0` a `3.5`. Výchozí hodnota je `3.5`. |
+| `ToolsVersion` | Volitelné `String` parametru.<br /><br /> Určuje, `ToolsVersion` pro použití při sestavování projektů předaný k tomuto úkolu.<br /><br /> Umožňuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] úkolů k sestavení projektu, který cílí na jinou verzi rozhraní .NET Framework než zadanou v projektu. Platné hodnoty jsou `2.0`, `3.0` a `3.5`. Výchozí hodnota je `3.5`. |
 | `UnloadProjectsOnCompletion` | Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, projekt bude zrušeno po dokončení operace. |
 | `UseResultsCache` | Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, výsledky uložené v mezipaměti bude vrácen, pokud jsou k dispozici.<br /><br />  Pokud je spuštěn úkol MSBuild, bude do mezipaměti výsledek v oboru <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> jako seznam položek sestavení |
 

@@ -1,7 +1,7 @@
 ---
 title: Vyberte a instalace interpretů Pythonu
 description: Úplný seznam interpretů Pythonu, které jsou podporovány v sadě Visual Studio s stručné pokyny, ve kterém můžete najít jejich instalační programy.
-ms.date: 03/13/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3cfe5e54e4893ffa0bed6e3be1bf142fdda60be
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957409"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747150"
 ---
 # <a name="install-python-interpreters"></a>Instalace interpretů Pythonu
 
@@ -26,6 +26,11 @@ Alternativně můžete nainstalovat interpretů pythonu standardní z **přidat 
 ::: moniker-end
 
 Můžete nainstalovat také ručně žádné interprety uvedené v následující tabulce mimo instalačního programu sady Visual Studio. Například pokud jste nainstalovali Anaconda 3 před instalací sady Visual Studio, není nutné znovu nainstalovat pomocí instalačního programu sady Visual Studio. Můžete také nainstalovat interpretu ručně pokud, třeba novější verzi k dispozici, který ještě se nezobrazí v instalačním programu sady Visual Studio.
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio podporuje všechny oficiálně podporované verze jazyka Python, jak jsou určené [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). Konkrétně verze 2.7, 3.5, 3.6 a 3.7.
+::: moniker-end
 
 Pro **sady Visual Studio 2015 a starší**, musíte ručně nainstalovat jeden interprety.
 

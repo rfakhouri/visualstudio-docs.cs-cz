@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc17f59858637048c12929411a0f413ed625ad10
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e243ccfc92c5e17dd25e6d77dede439daac08761
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331625"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747719"
 ---
 # <a name="supply-undo-support-to-designers"></a>Podpora pro vracení zpět dodávek do návrháře
 
@@ -29,7 +29,7 @@ Návrháře implementace, které potřebují k poskytování podpory pro funkci 
 
 - Podpora dodávky trvalosti a CodeDOM implementací <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> a <xref:System.ComponentModel.Design.IComponentChangeService> třídy.
 
-Další informace o vytváření pomocí návrháře [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], naleznete v tématu [rozšíření podpory během návrhu](/previous-versions/37899azc(v=vs.140)).
+Další informace o psaní Návrháři pomocí rozhraní .NET Framework naleznete v tématu [rozšíření podpory během návrhu](/previous-versions/37899azc(v=vs.140)).
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Poskytuje infrastrukturu výchozí zpět podle:
 
@@ -50,7 +50,7 @@ Všechny návrháře vytvořené v sadě Visual Studio podporuje automatické a 
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Kdy použít podpora pro explicitní návrháře vracení zpět
  Návrháři musíte zadat management své vlastní vrácení zpět, je-li využívají grafické uživatelské rozhraní, označuje jako zobrazení adaptér, než poskytuje <xref:System.Windows.Forms.Control>.
 
- Příkladem může být vytváření produktu se rozhraní založeného na webu grafickou návrhovou spíše než [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]– na základě grafického rozhraní.
+ Příkladem můžou být vytváření produktu se rozhraní založeného na webu grafickou návrhovou místo grafické rozhraní založené na rozhraní .NET Framework.
 
  V takových případech by jedna muset zaregistrovat tento adaptér zobrazení s použitím sady Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>a zajistit správu explicitní vrácení zpět.
 
@@ -59,7 +59,7 @@ Všechny návrháře vytvořené v sadě Visual Studio podporuje automatické a 
 ## <a name="undo-support-features-of-the-designer"></a>Zrušit podporu funkce návrháře
  Sada SDK prostředí poskytuje výchozí implementaci rozhraní potřebných k poskytování zpět podporu, která je možné pomocí Návrháře bez použití <xref:System.Windows.Forms.Control> na základě třídy pro jejich uživatelských rozhraní nebo standardní model CodeDOM a trvalost.
 
- <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Třída odvozena z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] <xref:System.ComponentModel.Design.UndoEngine> pomocí implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> třídy ke správě zrušení operací.
+ <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Třídy je odvozen z rozhraní .NET Framework <xref:System.ComponentModel.Design.UndoEngine> pomocí implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> třídy ke správě zrušení operací.
 
  Visual Studio poskytuje následující funkce návrháře vrácení zpět:
 

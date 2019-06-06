@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de3ca40696549ad9208ffd181f8dbc4e7f092b5d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 38418a1ca11c23ab12d64deadfb91079bc957493
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263207"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747486"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Postupy: Použití ClickOnce k nasazení aplikací, které můžou běžet na více verzích rozhraní .NET framework
 Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET Framework pomocí nasazení technologie ClickOnce. To vyžaduje generovat a aktualizujte manifesty aplikace a nasazení.
 
 > [!NOTE]
-> Před změnou aplikace pro cílení na více verzí rozhraní .NET Framework, měli byste zajistit, že vaše aplikace spuštěná ve více verzích rozhraní .NET Framework. Modul common language runtime verze se liší mezi [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] oproti .NET Framework 2.0, .NET Framework 3.0 a rozhraní .NET Framework 3.5.
+> Před změnou aplikace pro cílení na více verzí rozhraní .NET Framework, měli byste zajistit, že vaše aplikace spuštěná ve více verzích rozhraní .NET Framework. Modul common language runtime verze se liší mezi rozhraní .NET Framework 4 a .NET Framework 2.0, .NET Framework 3.0 a rozhraní .NET Framework 3.5.
 
  Tento postup vyžaduje následující kroky:
 
@@ -88,7 +88,7 @@ Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET F
    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">
    ```
 
-3. Aktualizovat číslo verze `<assemblyIdentity>` – element pro Microsoft.Windows.CommonLanguageRuntime číslo verze pro rozhraní .NET Framework, který je nejmenším společným jmenovatelem. Například, pokud aplikace cílí na rozhraní .NET Framework 3.5 a [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], použijte 2.0.50727.0 číslo verze a XML by měl vypadat nějak takto:
+3. Aktualizovat číslo verze `<assemblyIdentity>` – element pro Microsoft.Windows.CommonLanguageRuntime číslo verze pro rozhraní .NET Framework, který je nejmenším společným jmenovatelem. Například pokud aplikace cílí na rozhraní .NET Framework 3.5 a rozhraní .NET Framework 4, použijte 2.0.50727.0 číslo verze a XML by měl vypadat nějak takto:
 
    ```xml
    <dependency>

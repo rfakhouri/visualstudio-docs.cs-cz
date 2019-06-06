@@ -12,17 +12,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eea3cb0abe4c0e1151b15680bbab984f9131c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: de7bb2ee0335322e0b089fd2af81026b1f6bd1ca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321028"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747793"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Výběr mezi sdíleným a verzovaným rozšířením VSPackages
 Různé verze sady Visual Studio můžou existovat společně na stejném počítači. Rozšíření VSPackages může podporovat všechny kombinace [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verze.
 
- Povolíte-souběžnými instalacemi balíčků VSPackage pomocí kteréhokoliv z dvou strategií, sdílené strategii nebo systémovou správou verzí strategie. Obě podle přítomnosti více verzí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a související verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Povolíte-souběžnými instalacemi balíčků VSPackage pomocí kteréhokoliv z dvou strategií, sdílené strategii nebo systémovou správou verzí strategie. Obě podle přítomnosti více verzí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a související verze rozhraní .NET Framework.
 
  Ve sdílené strategie je zaregistrovaný jednoho balíčku VSPackage pro použití ve více verzích [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Při použití strategie označené verzí jsou nainstalovány více knihoven dll balíčku VSPackage, jeden pro každou verzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , kterou podporujete.
 

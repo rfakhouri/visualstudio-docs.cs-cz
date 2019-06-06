@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb101dc1f272ae56ceb0058afb2806aec4154936
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945454"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747688"
 ---
 # <a name="toolbox"></a>Sada nástrojů
 
@@ -33,7 +33,7 @@ Ve spojení s návrháře zobrazení, například jako zobrazení návrháře XA
 > [!NOTE]
 > U některých typů projektu **nástrojů** nemusí zobrazit všechny položky.
 
-Verze rozhraní .NET Framework, že váš projekt cílí také ovlivní sadu ovládacích prvků, které jsou viditelné v panelu nástrojů. Můžete nastavit projekt tak, aby je jiná cílová verze rozhraní .NET Framework ze stránek vlastností projektu. Vyberte uzel projektu v **Průzkumníka řešení**a pak na panelu nabídek zvolte **projektu** > **projectname vlastnosti**. Na **aplikace** kartu, použijte **Cílová architektura** rozevíracího seznamu.
+Verze rozhraní .NET, že váš projekt cílí také ovlivní sadu ovládacích prvků, které jsou viditelné v panelu nástrojů. Můžete změnit cílovou architekturu na verzi ze stránky vlastností projektu, v případě potřeby. Vyberte uzel projektu v **Průzkumníka řešení**a pak na panelu nabídek zvolte **projektu** > **projectname vlastnosti**. Na **aplikace** kartu, použijte **Cílová architektura** rozevíracího seznamu.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Správa oken nástrojů a jejích ovládacích prvků
 

@@ -14,21 +14,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1423cbcfcae53948f7b9c9cd52eb90f57251bc24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ef0daf5fd28bd829edcdce412839b03ed8347bf
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851052"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745439"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Chyba: Ladění ve smíšeném režimu pro procesy x64 je podporované, jenom pokud používáte rozhraní Microsoft .NET Framework 4 nebo vyšší.
-Chcete-li ladit smíšené nativního a spravovaného kódu do 64bitového procesu, musíte mít [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verze 4. Kombinovaný režim ladění 64bitových procesů s [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verze starší než 4 není podporováno.
+Chcete-li ladit smíšené nativního a spravovaného kódu do 64bitového procesu, musíte mít rozhraní .NET Framework verze 4. Kombinovaný režim ladění 64bitových procesů pomocí rozhraní .NET Framework verze starší než 4 se nepodporuje.
 
 ### <a name="to-correct-this-error"></a>Oprava této chyby
 
 - Proveďte jeden z následujících kroků:
 
-  - Upgrade vašeho [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] na verzi 4.
+  - Upgrade rozhraní .NET Framework verze 4.
 
   - Sestavení 32bitové verze ladění vaší aplikace.
 

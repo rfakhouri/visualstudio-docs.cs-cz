@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbe046f07a27a9fdcf07fc891f7c264a45a3d61c
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974134"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744726"
 ---
 # <a name="how-to-choose-collection-methods"></a>Postupy: Výběr metod shromažďování
 
@@ -34,7 +34,7 @@ Můžete použít relaci výkonu **metoda** vlastnosti a určit nejvhodnější 
 |----------------------------| - |
 | **Vzorkování procesoru** | Shromažďuje statistiky aplikace, které jsou užitečné pro počáteční analýzu a analyzovat problémy s využitím procesoru. |
 | **Instrumentace** | Shromažďuje podrobných dat časování, které jsou užitečné pro přesně zacílenou analýzu a analyzovat problémy s výkonem vstupu a výstupu. |
-| **Přidělení paměti .NET** | Shromažďuje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] data o přidělování paměti pomocí metoda profilování vzorkování. |
+| **Přidělení paměti .NET** | S použitím metoda profilování vzorkování shromažďuje data o přidělování paměti rozhraní .NET Framework. |
 | **Souběžnost** | Shromažďuje data kolize prostředků číselná. |
 
 ## <a name="performance-explorer"></a>Prohlížeč výkonu
@@ -75,7 +75,7 @@ Můžete použít relaci výkonu **metoda** vlastnosti a určit nejvhodnější 
 
 4. Klikněte na tlačítko **vzorkování** nebo **instrumentace**.
 
-5. Klikněte na tlačítko **.NET shromažďovat informace o přidělení objektu** shromažďovat velikosti a počtu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] přidělení objektu.
+5. Klikněte na tlačítko **.NET shromažďovat informace o přidělení objektu** shromažďovat velikost a počet přidělení objektu rozhraní .NET Framework.
 
 6. (Volitelné) Klikněte na tlačítko **také shromažďovat informace o životnosti objektů .NET** ke shromažďování dat o generace uvolňování paměti kolekce, ve kterých byl regenerované paměti objektu.
 

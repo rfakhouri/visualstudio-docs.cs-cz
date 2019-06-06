@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898708"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747515"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; – element (zaváděcí nástroj)
 `PackageFiles` Obsahuje element `PackageFile` prvky, které definují instalační balíčky provést kvůli `Command` elementu.
@@ -62,7 +62,7 @@ ms.locfileid: "62898708"
 | `Hash` | Volitelné. Hodnota hash SHA1 souboru balíčku. Slouží k ověření integrity souboru chvíli instalace. Shodná hodnota hash nelze vypočítat ze souboru balíčku, balíčku nenainstalují. |
 
 ## <a name="example"></a>Příklad
- Následující příklad kódu definuje balíčky pro [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Distribuovatelný balíček a jeho závislosti, jako je například Instalační služby systému Windows.
+ Následující příklad kódu definuje balíčky pro Distribuovatelný balíček rozhraní .NET Framework a jeho závislosti, jako je například Instalační služby systému Windows.
 
 ```xml
 <PackageFiles>

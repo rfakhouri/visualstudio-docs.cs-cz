@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790925"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744981"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Zvolit položky panelu nástrojů, součásti WPF
 
@@ -31,7 +31,7 @@ Tato karta **zvolit položky nástrojů** dialogové okno zobrazí seznam dostup
 - Pokud je zrušeno zaškrtnutí políčka vedle komponenty, příslušnou ikonu se odebere z **nástrojů**.
 
     > [!NOTE]
-    > Součásti rozhraní .NET Framework nainstalované v počítači nadále k dispozici, zda jsou ikony pro ně zobrazí **nástrojů**.
+    > Součásti rozhraní .NET nainstalované na počítači nadále k dispozici, zda jsou ikony pro ně zobrazí **nástrojů**.
 
 Sloupce **součásti WPF** karta obsahovat následující informace:
 
@@ -41,15 +41,15 @@ Seznamy názvů ovládacích prvků WPF pro položky, které existují v registr
 
 **Namespace**
 
-Zobrazuje hierarchii [rozhraní .NET Framework třída API](/dotnet/api/?view=netframework-4.7) obor názvů, který definuje strukturu komponenty. Výsledky můžete řadit podle sloupce seznam součástí, které jsou v každém oboru názvů rozhraní .NET Framework nainstalované v počítači k dispozici.
+Zobrazuje hierarchii [rozhraní .NET API](/dotnet/api/?view=netframework-4.7) obor názvů, který definuje strukturu komponenty. Výsledky můžete řadit podle sloupce seznam součástí, které jsou v každém oboru názvů rozhraní .NET nainstalované na počítači k dispozici.
 
 **Název sestavení**
 
-Zobrazí název sestavení rozhraní .NET Framework, který obsahuje obor názvů pro jednotlivé komponenty. Výsledky můžete řadit podle sloupce do seznamu oborů názvů obsažené v každé sestavení rozhraní .NET Framework nainstalované v počítači.
+Zobrazí název sestavení .NET, který obsahuje obor názvů pro jednotlivé komponenty. Výsledky můžete řadit podle sloupce do seznamu oborů názvů obsažené v každé sestavení rozhraní .NET nainstalované v počítači.
 
 **Adresář**
 
-Zobrazí umístění sestavení rozhraní .NET Framework. Je výchozím umístěním pro všechna sestavení do globální mezipaměti sestavení. Další informace o globální mezipaměti sestavení, naleznete v tématu [práce se sestaveními a s globální pamětí sestavení](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+Zobrazí umístění sestavení .NET. Je výchozím umístěním pro všechna sestavení do globální mezipaměti sestavení. Další informace o globální mezipaměti sestavení, naleznete v tématu [práce se sestaveními a s globální pamětí sestavení](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
 

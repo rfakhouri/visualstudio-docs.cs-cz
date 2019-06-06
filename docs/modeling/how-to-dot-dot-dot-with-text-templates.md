@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3bbcbb078925f36204c472c27821e6ba94fa4e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993544"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747537"
 ---
 # <a name="how-to--with-text-templates"></a>Postupy pro textové šablony
 Textové šablony v sadě Visual Studio nabízejí praktický způsob generování textu jakéhokoli druhu. Textové šablony můžete použít ke generování textu za běhu v rámci vaší aplikace a v době návrhu k vygenerování nějakých kód projektu. Toto téma obsahuje souhrn nejčastěji dotaz "Jak na to...?" dotazy.
@@ -45,13 +45,14 @@ Textové šablony v sadě Visual Studio nabízejí praktický způsob generován
      Ve vašem kódu, použijte `this.Host.ResolvePath(filename)` získat úplnou cestu k souboru.
 
 ### <a name="invoke-methods-from-a-template"></a>Vyvolání metody ze šablony
- Pokud metody ještě neexistuje, například ve standardním [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] třídy:
+
+Pokud metody ještě neexistuje, například v .NET třídy:
 
 - Použít \<#@assembly#> direktiva načíst sestavení a používání \<#@import#> Chcete-li nastavit obor názvů kontextu. Další informace najdete v tématu [T4 – Direktiva Import](../modeling/t4-import-directive.md).
 
    Často používají stejnou sadu sestavení, direktivy import, zvažte vytvoření procesor direktiv. V každé šabloně můžete vyvolat procesor direktiv, který lze načíst sestavení a soubory modelu a nastavte kontext oboru názvů. Další informace najdete v tématu [vytváření vlastních procesorů textových šablon T4 – direktiva](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
-  Pokud píšete metody sami:
+Pokud píšete metody sami:
 
 - Při psaní textové šabloně běhu zapište definice částečné třídy, který má stejný název jako textové šabloně běhu. Přidejte další metody této třídy.
 

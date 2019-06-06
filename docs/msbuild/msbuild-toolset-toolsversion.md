@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9250382284fffbc3f1761f8143903327fa845832
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b7da41b1b82299bd32d1af805ea6226690e79115
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436863"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747384"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Sada nástrojů MSBuild (atribut ToolsVersion)
 
@@ -48,7 +48,7 @@ Nástroj MSBuild používá sada nástrojů pro úkoly, cíle a nástrojů k ses
 
 ## <a name="how-the-toolsversion-attribute-works"></a>Jak funguje atribut ToolsVersion
 
- Při vytváření projektu v sadě Visual Studio nebo upgrade existujícího projektu, atribut s názvem `ToolsVersion` automaticky zahrnut v projektu soubor a jeho hodnota odpovídá verzi nástroje MSBuild, který je součástí edici sady Visual Studio. Další informace najdete v tématu [cílení na konkrétní verzi rozhraní .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+ Při vytváření projektu v sadě Visual Studio nebo upgrade existujícího projektu, atribut s názvem `ToolsVersion` automaticky zahrnut v projektu soubor a jeho hodnota odpovídá verzi nástroje MSBuild, který je součástí edici sady Visual Studio. Další informace najdete v tématu [Framework – přehled cílení na](../ide/visual-studio-multi-targeting-overview.md).
 
  Když `ToolsVersion` hodnota je definována v souboru projektu, MSBuild používá tuto hodnotu k určení hodnoty vlastnosti sady nástrojů, které jsou k dispozici do projektu. Jedna sada nástrojů vlastnost `$(MSBuildToolsPath)`, který určuje cestu k nástrojům rozhraní .NET Framework. Pouze vlastnosti sady nástrojů (nebo `$(MSBuildBinPath)`), je povinný.
 

@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5387ce65532cb532192191bd67f29cc7af6e28c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545290"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744804"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Zkontrolujte chyby zabezpečení u dotazů SQL
 
@@ -36,7 +36,8 @@ ms.locfileid: "62545290"
 |Narušující změna|Nenarušující|
 
 ## <a name="cause"></a>Příčina
- Nastaví metodu <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> vlastnost s použitím řetězec, který je sestaven z řetězcového argumentu k metodě.
+
+Nastaví metodu <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> vlastnost s použitím řetězec, který je sestaven z řetězcového argumentu k metodě.
 
 ## <a name="rule-description"></a>Popis pravidla
 
@@ -48,7 +49,7 @@ Toto pravidlo předpokládá, že řetězcový argument obsahuje vstup uživatel
 
 - Ověření vstupu uživatele pro typ a obsah, před sestavením řetězec příkazu.
 
-Implementujte následující typy rozhraní .NET Framework <xref:System.Data.IDbCommand.CommandText%2A> vlastnost nebo zadejte konstruktory, které se nastavit vlastnost použitím argumentu řetězce.
+Implementujte následující typy .NET <xref:System.Data.IDbCommand.CommandText%2A> vlastnost nebo zadejte konstruktory, které se nastavit vlastnost použitím argumentu řetězce.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> a <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -60,32 +61,36 @@ Implementujte následující typy rozhraní .NET Framework <xref:System.Data.IDb
 
 Všimněte si, že při použití metody ToString typu explicitně nebo implicitně porušení tohoto pravidla k vytvoření řetězce dotazu. Následuje příklad.
 
-```
+```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
- Porušení pravidla vzhledem k tomu, že uživatel se zlými úmysly může přepsat metodu ToString().
+Porušení pravidla vzhledem k tomu, že uživatel se zlými úmysly může přepsat metodu ToString().
 
- Toto pravidlo je také poruší, když se implicitně používá ToString.
+Toto pravidlo je také poruší, když se implicitně používá ToString.
 
-```
+```csharp
 int x = 10;
 string query = String.Format("SELECT TOP {0} FROM Table", x);
 ```
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, použijte parametrický dotaz.
+
+Chcete-li opravit porušení tohoto pravidla, použijte parametrický dotaz.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla, je-li text příkazu neobsahuje vstupu uživatele.
+
+Je bezpečné potlačit upozornění tohoto pravidla, je-li text příkazu neobsahuje vstupu uživatele.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje metodu, `UnsafeQuery`, který porušuje pravidla a metodu, `SaferQuery`, který splňuje pravidlo s použitím řetězec parametrizovaného příkazu.
 
- [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
- [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
- [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
+Následující příklad ukazuje metodu, `UnsafeQuery`, který porušuje pravidla a metodu, `SaferQuery`, který splňuje pravidlo s použitím řetězec parametrizovaného příkazu.
+
+[!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
+[!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
+[!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
 
 ## <a name="see-also"></a>Viz také:
- [Přehled zabezpečení](/dotnet/framework/data/adonet/security-overview)
+
+- [Přehled zabezpečení](/dotnet/framework/data/adonet/security-overview)

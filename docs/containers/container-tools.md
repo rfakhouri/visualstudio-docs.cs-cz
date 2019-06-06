@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: ad0c882ee9a11bf1d7acbcd30da928e3e134ca91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 446e4d7e7ce8fd8803f394dfb2f4525445457471
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820145"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745088"
 ---
 # <a name="quickstart-docker-in-visual-studio"></a>Rychlý start: Docker v sadě Visual Studio
 
@@ -30,7 +30,6 @@ ms.locfileid: "62820145"
 ## <a name="additional-resources"></a>Další zdroje
 
 * [Kontejner vývoj pomocí sady Visual Studio](/visualstudio/containers)
-* [Řešení potíží s Visual Studio 2017 vývoj aplikací pomocí Dockeru](troubleshooting-docker-errors.md)
+* [Řešení potíží s Visual Studio vývoj aplikací pomocí Dockeru](troubleshooting-docker-errors.md)
 * [Úložiště Visual Studio kontejner nástroje Githubu](https://github.com/Microsoft/DockerTools)
 
-[0]:media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png

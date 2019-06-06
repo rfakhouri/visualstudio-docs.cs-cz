@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f0047ee38a6fda4738c773c36a85e14cba1e37fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715193"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745541"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Vyplnění datových sad pomocí objektů TableAdapter
 
@@ -85,7 +85,7 @@ Objekty TableAdapter rozšiřují funkce standardních datových adaptérů zapo
 
 ## <a name="tableadapter-methods-and-properties"></a>Vlastnosti a metody třídy TableAdapter
 
-Třída TableAdapter není součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. To znamená, že je nelze vyhledat v dokumentaci nebo **prohlížeče objektů**. Vytvoří se v době návrhu, když použijete jednu z výše uvedených průvodců. Název, který je přiřazen objektu typu TableAdapter při jeho vytvoření vychází z názvu tabulky, ve které pracujete. Například při vytváření objektu typu TableAdapter na základě tabulky v databázi s názvem `Orders`, má název TableAdapter `OrdersTableAdapter`. Název třídy TableAdapter lze změnit pomocí **název** vlastnost **Návrhář Dataset**.
+Třída TableAdapter není typ formátu .NET. To znamená, že je nelze vyhledat v dokumentaci nebo **prohlížeče objektů**. Vytvoří se v době návrhu, když použijete jednu z výše uvedených průvodců. Název, který je přiřazen objektu typu TableAdapter při jeho vytvoření vychází z názvu tabulky, ve které pracujete. Například při vytváření objektu typu TableAdapter na základě tabulky v databázi s názvem `Orders`, má název TableAdapter `OrdersTableAdapter`. Název třídy TableAdapter lze změnit pomocí **název** vlastnost **Návrhář Dataset**.
 
 Tady jsou běžně používané metody a vlastnosti třídy TableAdapter:
 
@@ -122,7 +122,7 @@ Třída TableAdapter podporuje typy s možnou hodnotou Null `Nullable(Of T)` a `
 
 Ve výchozím nastavení vygeneruje třídu TableAdapterManager při vytváření datové sady, který obsahuje související tabulky. Abyste zabránili generovaná třída, změňte hodnotu `Hierarchical Update` vlastnosti datové sady na hodnotu false. Při přetažení tabulky, která má vztah na návrhovou plochu formuláře Windows nebo WPF stránku sady Visual Studio deklaruje členské proměnné třídy. Pokud nepoužíváte vázání dat, budete muset ručně deklarovat proměnnou.
 
-Třída TableAdapterManager není součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Proto je nelze vyhledat v dokumentaci. Vytvoří se v době návrhu jako součást procesu vytváření datové sady.
+Třída TableAdapterManager není typ formátu .NET. Proto je nelze vyhledat v dokumentaci. Vytvoří se v době návrhu jako součást procesu vytváření datové sady.
 
 Toto jsou často používané metody a vlastnosti `TableAdapterManager` třídy:
 

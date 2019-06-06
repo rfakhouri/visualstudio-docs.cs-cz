@@ -7,22 +7,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438170"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746796"
 ---
-# <a name="creating-a-windows-forms-based-domain-specific-language"></a>Vytvoření doménově specifického jazyka založeného na Windows Forms
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Vytvoření jazyka specifického pro doménu formulářů Windows
+
 Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro doménu (DSL), namísto použití DSL diagram. Toto téma vás provede vazbu formuláře Windows k DSL pomocí Visual Studio Visualization and Modeling SDK.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) A DSL instance, zobrazující uživatelské rozhraní formulář Windows a Průzkumníka modelu.
+Následující obrázek ukazuje formulář uživatelské rozhraní Windows a Průzkumníka modelu DSL instance:
 
-## <a name="creating-a-windows-forms-dsl"></a>Vytvoření prvku Windows Forms DSL
- **Minimální návrháře WinForm** DSL šablona vytvoří minimální DSL, který můžete upravit tak, aby vyhovoval vašim požadavkům.
+![Instance DSL v sadě Visual Studio](../modeling/media/dsl-wpf-2.png)
 
-#### <a name="to-create-a-minimal-winforms-dsl"></a>Chcete-li vytvořit minimální WinForms DSL
+## <a name="create-a-windows-forms-dsl"></a>Vytvoření prvku Windows Forms DSL
+
+**Minimální návrháře WinForm** DSL šablona vytvoří minimální DSL, který můžete upravit tak, aby vyhovoval vašim požadavkům.
 
 1. Vytvoření DSL z **minimální návrháře WinForm** šablony.
 
@@ -37,7 +39,7 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
 
    1. Transformujte všechny šablony.
 
-   2. Sestavení a spuštění ukázky (**CTRL + F5**).
+   2. Sestavení a spuštění ukázky (**Ctrl**+**F5**).
 
    3. V experimentální instanci sady Visual Studio, otevřete `Sample` soubor v ladění projektu.
 
@@ -62,14 +64,14 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
     - Soubor s názvem `DataBinding.cs` , který obsahuje další částečnou definici z `ModelViewControl`. Chcete-li zobrazit jeho obsah v **Průzkumníka řešení**, otevřete místní nabídku pro soubor a zvolte **zobrazit kód**.
 
 ### <a name="about-the-ui-project"></a>Informace o projektu uživatelského rozhraní
- Při aktualizaci souboru definice DSL definovat vlastní DSL, budete muset aktualizovat ovládacího prvku `UI` projektu k zobrazení vašeho DSL. Na rozdíl od `Dsl` a `DslPackage` projekty, ukázka `UI` projektu negeneruje z `DslDefinitionl.dsl`. Můžete přidat soubory .tt ke generování kódu, pokud chcete, i když v tomto názorném postupu, který není součástí.
 
-## <a name="updating-the-dsl-definition"></a>Aktualizaci definice DSL
- Následující definice DSL se používá v tomto názorném postupu.
+Při aktualizaci souboru definice DSL definovat vlastní DSL, budete muset aktualizovat ovládacího prvku `UI` projektu k zobrazení vašeho DSL. Na rozdíl od `Dsl` a `DslPackage` projekty, ukázka `UI` projektu negeneruje z `DslDefinitionl.dsl`. Můžete přidat soubory .tt ke generování kódu, pokud chcete, i když v tomto názorném postupu, který není součástí.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+## <a name="update-the-dsl-definition"></a>Aktualizovat definici DSL
 
-#### <a name="to-update-the-dsl-definition"></a>Chcete-li aktualizovat definici DSL
+Následující definice DSL se používá v tomto názorném postupu.
+
+![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. Otevřete DslDefinition.dsl v Návrháři DSL.
 
@@ -107,10 +109,11 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
     > [!NOTE]
     > V této fázi nebude ostatních projektů se sestaví bez chyb. Chceme sestavení projektu Dsl tak, aby byla k dispozici v Průvodci zdroje dat jeho sestavení.
 
-## <a name="updating-the-ui-project"></a>Aktualizuje se projekt uživatelského rozhraní
- Nyní můžete vytvořit nového uživatelského ovládacího prvku, který se zobrazí informace, které je uložen v modelu DSL. Nejjednodušší způsob, jak připojit uživatelský ovládací prvek modelu je prostřednictvím datové vazby. Datové vazby adaptér typ s názvem **ModelingBindingSource** je navržená speciálně pro připojení k rozhraní vmsdk následující položky DSL.
+## <a name="update-the-ui-project"></a>Aktualizovat projekt uživatelského rozhraní
 
-#### <a name="to-define-your-dsl-model-as-a-data-source"></a>Chcete-li definovat jako zdroj dat modelu DSL
+Nyní můžete vytvořit nového uživatelského ovládacího prvku, který se zobrazí informace, které je uložen v modelu DSL. Nejjednodušší způsob, jak připojit uživatelský ovládací prvek modelu je prostřednictvím datové vazby. Datové vazby adaptér typ s názvem **ModelingBindingSource** je navržená speciálně pro připojení k rozhraní vmsdk následující položky DSL.
+
+### <a name="define-your-dsl-model-as-a-data-source"></a>Definovat jako zdroj dat modelu DSL
 
 1. Na **Data** nabídce zvolte **zobrazit zdroje dat**.
 
@@ -128,7 +131,7 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
 
      ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
-#### <a name="to-connect-your-model-to-a-form"></a>K připojení vašeho modelu do formuláře
+### <a name="connect-your-model-to-a-form"></a>Připojte se k formuláři modelu
 
 1. V **uživatelského rozhraní** projektu, odstraňte všechny existující soubory CS.
 
@@ -151,7 +154,7 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
    > [!NOTE]
    > Alternativní krokem je přetáhnout položky pole a zvířat z okna zdroje dat na ovládací prvek. Tato akce automaticky vytvoří datových mřížek a vazby mezi zobrazení mřížky a zdrojem dat. Nicméně tato vazba nefunguje správně pro DSL. Proto je vhodnější vytvořit datových mřížek a vazby ručně.
 
-7. Pokud nebude obsahovat panelu nástrojů **ModelingBindingSource** nástroj, přidejte ji. V místní nabídce **Data** kartě **zvolit položky**. V **zvolit položky nástrojů** dialogového okna, vyberte **ModelingBindingSource** z **karta rozhraní .NET**.
+7. Pokud nebude obsahovat panelu nástrojů **ModelingBindingSource** nástroj, přidejte ji. V místní nabídce **Data** kartě **zvolit položky**. V **zvolit položky nástrojů** dialogového okna, vyberte **ModelingBindingSource** z **rozhraní .NET Framework** kartu.
 
 8. Pomocí nástrojů, vytvořte dvě instance **ModelingBindingSource**a pojmenujte je `AnimalBinding` a `FieldBinding`.
 
@@ -173,7 +176,7 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
 
   ![DslWpf4](../modeling/media/dslwpf4.png) schématu propojení mezi zdroji dat a zobrazení.
 
-#### <a name="to-complete-the-bindings-to-the-dsl"></a>K dokončení vazby na DSL
+### <a name="complete-the-bindings-to-the-dsl"></a>Dokončení vazby na DSL
 
 1. Přidejte následující kód v samostatném souboru kódu v **uživatelského rozhraní** projektu:
 
@@ -207,10 +210,9 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
     string viewControlTypeName = "FarmControl";
     ```
 
-## <a name="testing-the-dsl"></a>Testování DSL
- DSL řešení teď můžete sestavit a spustit, i když může být vhodné případná zlepšení další rozšíření později.
+## <a name="test-the-dsl"></a>Testování DSL
 
-#### <a name="to-test-the-dsl"></a>K otestování DSL
+DSL řešení teď můžete sestavit a spustit, i když může být vhodné případná zlepšení další rozšíření později.
 
 1. Sestavte a spusťte řešení.
 
@@ -229,21 +231,21 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
 
      Když přejdete mimo každé pole ve formuláři, odpovídající změny vlastností v okně Vlastnosti.
 
-## <a name="enhancing-the-dsl"></a>Rozšíření DSL
+## <a name="enhance-the-dsl"></a>Vylepšení DSL
 
-#### <a name="to-make-the-properties-update-immediately"></a>Chcete-li vlastnosti aktualizovat hned
+### <a name="make-the-properties-update-immediately"></a>Vlastnosti aktualizovat hned
 
 1. V návrhovém zobrazení FarmControl.cs vyberte jednoduché pole, jako je název, velikost nebo IsOrganic.
 
-2. V okně Vlastnosti rozbalte **DataBindings** a otevřete **(rozšířené)**.
+2. V okně Vlastnosti rozbalte **DataBindings** a otevřete **(rozšířené)** .
 
-     V **formátování a rozšířené vazby** dialogového okna, v části **režim aktualizace zdroje dat**, zvolte **OnPropertyChanged –**.
+     V **formátování a rozšířené vazby** dialogového okna, v části **režim aktualizace zdroje dat**, zvolte **OnPropertyChanged –** .
 
 3. Sestavte a spusťte řešení.
 
      Ověřte, že když změníte obsah pole odpovídající vlastnost okamžitě změny modelu farmy.
 
-#### <a name="to-provide-add-buttons"></a>K poskytování tlačítka pro přidání
+### <a name="provide-add-buttons"></a>Zadejte tlačítka pro přidání
 
 1. V návrhovém zobrazení FarmControl.cs vytvoření tlačítka na formuláři pomocí panelu nástrojů.
 
@@ -301,7 +303,8 @@ Windows Forms slouží k zobrazení stavu modelu jazyka specifického pro domén
    ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>O kódu pro přidání elementu
- Pro nový prvek tlačítka následující alternativní kód je poněkud jednodušší.
+
+Pro nový prvek tlačítka následující alternativní kód je poněkud jednodušší.
 
 ```csharp
 private void NewSheepButton_Click(object sender, EventArgs e)
@@ -314,11 +317,11 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 }
 ```
 
- Tento kód však není nastavena výchozí název pro novou položku. Nejde spustit všechny přizpůsobené sloučení, které může jste definovali v **direktivy sloučení elementů** nástroje DSL, a nejde ho spustit jakýkoli kód vlastní sloučení, které byly definovány.
+Tento kód však není nastavena výchozí název pro novou položku. Nejde spustit všechny přizpůsobené sloučení, které může jste definovali v **direktivy sloučení elementů** nástroje DSL, a nejde ho spustit jakýkoli kód vlastní sloučení, které byly definovány.
 
- Proto doporučujeme použít <xref:Microsoft.VisualStudio.Modeling.ElementOperations> k vytvoření nových prvků. Další informace najdete v tématu [přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md).
+Proto doporučujeme použít <xref:Microsoft.VisualStudio.Modeling.ElementOperations> k vytvoření nových prvků. Další informace najdete v tématu [přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md)
 - [Zápis kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md)

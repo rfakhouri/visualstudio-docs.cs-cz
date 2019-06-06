@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84874328c2f7a20a79370ff210eb51d966ec4648
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e918521a404914c2acc9a8fd6283815b1ee324e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791653"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744944"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Stránka Aplikace, návrhář projektu (Visual Basic)
 
@@ -57,14 +57,14 @@ Informace o tom, jak programově přístup k této vlastnosti naleznete v témat
 
 ### <a name="target-framework-all-configurations"></a>Cílová architektura (všechny konfigurace)
 
-Určuje verzi rozhraní .NET Framework, který aplikace cílí. Tato možnost může mít různé hodnoty v závislosti na nainstalovaných verzí rozhraní .NET Framework v počítači.
+Určuje verzi rozhraní .NET, který aplikace cílí. Tato možnost může mít různé hodnoty v závislosti na tom, které verze rozhraní .NET jsou nainstalovány ve vašem počítači.
 
-Výchozí hodnota odpovídá cílovou architekturu, který jste zadali při vytváření projektu.
+Pro projekty .NET Framework výchozí hodnota odpovídá cílovou architekturu, který jste zadali při vytváření projektu.
 
 > [!NOTE]
 > Požadované balíčky, které jsou uvedeny v [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md) se nastaví automaticky, když otevřete dialogové okno poprvé. Pokud později změníte cílový rámec projektu, je nutné zadat předpoklady ručně, aby odpovídaly novému cílovému rozhraní.
 
-Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [cílení na více verzí sady Visual Studio přehled](../../ide/visual-studio-multi-targeting-overview.md).
+Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [Framework – přehled cílení na](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Typ aplikace
 
@@ -90,7 +90,7 @@ Pokud je projekt aplikace WPF pro prohlížeč, je tento seznam s názvem **spou
 
 Pokud **Povolit aplikační framework** není zaškrtnuto, tento seznam bude **spouštěcí objekt** a zobrazuje formuláře a tříd nebo moduly s `Sub Main`.
 
-**Spouštěcí objekt** definuje vstupní bod, který bude volán při načtení aplikace. Obecně je nastavené na hodnotu hlavního formuláře v aplikaci nebo na `Sub Main` proceduru, která se má spustit při spuštění aplikace. Vzhledem k tomu, že nemá vstupní bod knihovny tříd, jejich jedinou možností pro tuto vlastnost je **(žádný)**. Další informace najdete v tématu [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+**Spouštěcí objekt** definuje vstupní bod, který bude volán při načtení aplikace. Obecně je nastavené na hodnotu hlavního formuláře v aplikaci nebo na `Sub Main` proceduru, která se má spustit při spuštění aplikace. Vzhledem k tomu, že nemá vstupní bod knihovny tříd, jejich jedinou možností pro tuto vlastnost je **(žádný)** . Další informace najdete v tématu [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
 ### <a name="icon"></a>Ikona
 
@@ -153,7 +153,7 @@ Vyberte **na hlavní okno zavřete** k určení, že aplikace ukončena, když h
 
 ### <a name="splash-screen"></a>Úvodní obrazovka
 
-Vyberte formulář, který chcete použít jako úvodní obrazovka. Musí mít dříve vytvoříte úvodní obrazovky pomocí formuláře nebo šablony. Výchozí hodnota je **(žádný)**.
+Vyberte formulář, který chcete použít jako úvodní obrazovka. Musí mít dříve vytvoříte úvodní obrazovky pomocí formuláře nebo šablony. Výchozí hodnota je **(žádný)** .
 
 ### <a name="view-application-events"></a>Zobrazit události aplikace
 

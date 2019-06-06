@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b836a0fef26f34e83f7238ebe4f6c64731b84257
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d7bf2432e37278c924d1604e735feec7b848b01
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977666"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747559"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath – úloha
-Načte cestu k [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sestavení.
+Načte cestu k sestavení rozhraní .NET Framework.
 
 ## <a name="task-parameters"></a>Parametry úlohy
 Následující tabulka popisuje parametry `GetFrameworkPath` úloh.
@@ -41,12 +41,12 @@ Následující tabulka popisuje parametry `GetFrameworkPath` úloh.
 |`Path`|Volitelné `String` výstupní parametr.<br /><br /> Obsahuje cestu k nejnovější sestavení rozhraní, pokud jsou nějaké k dispozici. V opačném případě vrátí `null`.|
 
 ## <a name="remarks"></a>Poznámky
-Pokud se několik verzí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] jsou nainstalované, tato úloha vrátí verzi, která [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je navržen pro spouštění na.
+Pokud nainstalovaných několik verzí rozhraní .NET Framework, tato úloha vrátí verzi, která [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je navržen pro spouštění na.
 
 Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Příklad
-V následujícím příkladu `GetFrameworkPath` úloh pro uložení této cesty do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] v `FrameworkPath` vlastnost.
+V následujícím příkladu `GetFrameworkPath` úloh pro uložení této cesty v rozhraní .NET Framework `FrameworkPath` vlastnost.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

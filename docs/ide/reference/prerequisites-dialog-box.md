@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b83a3851c74d97992fa75e9ce533ca707e2115c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 925f36f2ed82f65afcc0eef9622cab1a8c9542b5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969128"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746492"
 ---
 # <a name="prerequisites-dialog-box"></a>dialogové okno Požadavky
 
@@ -42,7 +42,7 @@ Požadované součásti, které se zobrazují v **požadavky** dialogové okno s
 
 |Prvek|Popis|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Tento balíček nainstaluje následující:<br /><br /> – .NET framework verze 2.0, 3.0 a 3.5.<br />-Podpora pro všechny verze rozhraní .NET Framework na 32-bit (x86) a (x64) 64bitové operační systémy.<br />– Jazykové sady pro každou verzi rozhraní .NET Framework je nainstalována spolu s balíčkem.<br />-Service Pack pro rozhraní .NET Framework 2.0 a 3.0.<br /><br /> Rozhraní .NET framework 3.0 je součástí systému Windows Vista a rozhraní .NET Framework 3.5 je součástí sady Visual Studio. Rozhraní .NET framework 3.5 je vyžadováno pro všechny projekty jazyka Visual Basic a C#, které jsou kompilovány pro 32bitové operační systémy a pro který je nastaven cílovou architekturu na **rozhraní .NET Framework 3.5**a pro projekty jazyka Visual Basic a C# zkompilovány pro 64bitové prostředí operační systémy. (IA64 není podporován.) Všimněte si, že jsou projekty Visual Basic a C# zkompilovány pro všechny architektury procesoru ve výchozím nastavení. Další informace najdete v tématu [Visual Studio přehled multiplatformního zacílení](../../ide/visual-studio-multi-targeting-overview.md) a [nasazení nezbytných součástí pro 64bitové aplikace](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**.NET Framework 3.5 SP1**|Tento balíček nainstaluje následující:<br /><br /> – .NET framework verze 2.0, 3.0 a 3.5.<br />-Podpora pro všechny verze rozhraní .NET Framework na 32-bit (x86) a (x64) 64bitové operační systémy.<br />– Jazykové sady pro každou verzi rozhraní .NET Framework je nainstalována spolu s balíčkem.<br />-Service Pack pro rozhraní .NET Framework 2.0 a 3.0.<br /><br /> Rozhraní .NET framework 3.0 je součástí systému Windows Vista a rozhraní .NET Framework 3.5 je součástí sady Visual Studio. Rozhraní .NET framework 3.5 je vyžadováno pro všechny projekty jazyka Visual Basic a C#, které jsou kompilovány pro 32bitové operační systémy a pro který je nastaven cílovou architekturu na **rozhraní .NET Framework 3.5**a pro projekty jazyka Visual Basic a C# zkompilovány pro 64bitové prostředí operační systémy. (IA64 není podporován.) Všimněte si, že jsou projekty Visual Basic a C# zkompilovány pro všechny architektury procesoru ve výchozím nastavení. Další informace najdete v tématu [Framework targeting přehled](../../ide/visual-studio-multi-targeting-overview.md) a [nasazení nezbytných součástí pro 64bitové aplikace](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Tento balíček nainstaluje rozhraní .NET Framework 4.x x86 a x64 platforem.|
 |**Microsoft System CLR Types pro SQL Server 2014 (x64 a x86)**|Tento balíček nainstaluje Microsoft System CLR Types pro SQL Server 2014 x64 nebo x86.|
 |**SQL Server 2008 R2 Express**|Tento balíček nainstaluje Microsoft SQL Server 2008 R2 Express, bezplatnou edici systému Microsoft SQL Server 2008 R2, ideální databázi pro malý web, server nebo aplikací klasické pracovní plochy. To je možné zdarma pro vývoj a provoz.|
@@ -57,4 +57,4 @@ Požadované součásti, které se zobrazují v **požadavky** dialogové okno s
 - [Stránka Publikovat, Návrhář projektu](../../ide/reference/publish-page-project-designer.md)
 - [Nezbytné součásti nasazení aplikace](../../deployment/application-deployment-prerequisites.md)
 - [Nasazení nezbytných součástí pro 64bitové aplikace](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
-- [Přehled cílení na více verzí sady Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
+- [Přehled cílení na rozhraní Framework](../../ide/visual-studio-multi-targeting-overview.md)

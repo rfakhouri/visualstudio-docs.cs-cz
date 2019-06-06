@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 688ef92fae5bd0cbaa5ddc653bbaab5692f4827f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536422"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747139"
 ---
 # <a name="interop-activity-designer"></a>Návrhář aktivity Interop
 
@@ -29,11 +29,7 @@ ms.locfileid: "62536422"
 
 **Zprostředkovatele komunikace s objekty** návrháře aktivit najdete v **migrace** kategorii **nástrojů**, který přistupuje po kliknutí **nástrojů**kartu. Můžete také vybrat **nástrojů** z **zobrazení** nabídky nebo stisknutím klávesy **Ctrl**+**Alt** + **X**.
 
-[Migrace](../workflow-designer/migration-activity-designers.md) kategorii, která obsahuje <xref:System.Activities.Statements.Interop> aktivitu zobrazí jen v **nástrojů** Pokud váš projekt cílí na úplné rozhraní .NET Framework 4.
-
-Pro projekty jazyka C#, můžete znovu cílit projekt na používání úplné rozhraní .NET Framework 4 kliknutím pravým tlačítkem myši na projekt v **Průzkumníka řešení** a vyberete **vlastnosti**. Na **aplikace** kartu, vyberte **NET Framework 4** možnost **Cílová architektura**. Vyberte **Ano** potvrďte tuto změnu.
-
-Pro projekty jazyka Visual Basic, můžete znovu cílit projekt na používání úplné rozhraní .NET Framework 4 kliknutím pravým tlačítkem myši na projekt v **Průzkumníka řešení** a vyberete **vlastnosti**. Na **kompilaci** klikněte na tlačítko **Upřesnit možnosti kompilace** tlačítko. Vyberte **rozhraní .net Framework 4** z **cílového rozhraní framework seznamu**a potom klikněte na tlačítko **OK**. Vyberte **Ano** potvrďte tuto změnu.
+[Migrace](../workflow-designer/migration-activity-designers.md) kategorii, která obsahuje <xref:System.Activities.Statements.Interop> aktivity se zobrazí jenom v **nástrojů** Pokud váš projekt cílí na rozhraní .NET Framework 4 (úplné) nebo novější. Pokud třeba, můžete změnit verzi rozhraní framework, který váš projekt cílí.
 
 **Interop** návrháře aktivit můžete přetáhnout z **nástrojů** a vyřadit na plochu návrháře postupu provádění bez ohledu na to aktivity jsou obvykle umístěny, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Vyřazení **zprostředkovatele komunikace s objekty** vytvoří Návrhář aktivity <xref:System.Activities.Statements.Interop> aktivity s výchozím **DisplayName** ze zprostředkovatele komunikace s objekty. Můžete upravit <xref:System.Activities.Activity.DisplayName%2A> v záhlaví **zprostředkovatele komunikace s objekty** návrháře aktivit, nebo **DisplayName** pole mřížku vlastností.
 

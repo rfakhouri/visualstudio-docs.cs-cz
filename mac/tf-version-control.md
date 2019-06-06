@@ -3,16 +3,16 @@ title: Team Foundation Version Control (TFVC)
 description: Připojení z aplikace Visual Studio pro Mac na Team Foundation serveru/Azure DevOps s Team Foundation Version Control (TFVC).
 author: conceptdev
 ms.author: crdun
-ms.date: 04/04/2019
+ms.date: 04/28/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 20c739057bcbded922df62ce00e1b0c7e07d9f75
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: c21658b6381405c05e5b0fedbb72e33f8ed72a83
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501000"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745555"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Připojování k Team Foundation – správa verzí
 
@@ -21,7 +21,7 @@ ms.locfileid: "66501000"
 
 Úložiště Azure nabízí dva modely správy verzí: [Git](/azure/devops/repos/git/?view=azure-devops), distribuovaný systém řízení verze, a [Team Foundation Version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), centralizované verze ovládacího prvku systému.
 
-Visual Studio for Mac obsahuje plnou podporu pro úložiště Git, ale vyžaduje nějaké řešení pro práci s TFVC. Pokud používáte TFVC pro správu verzí ještě dnes, tady jsou některá řešení, které lze použít pro přístup k zdrojového kódu hostovaná v TFVC.
+Visual Studio for Mac obsahuje plnou podporu pro úložiště Git, ale vyžaduje nějaké řešení pro práci s TFVC. Pokud používáte TFVC pro správu verzí ještě dnes, tady jsou některá řešení, které lze použít pro přístup k zdrojového kódu hostovaná v TFVC:
 
 * [Použijte Visual Studio Code a rozšíření úložiště Azure pro grafické uživatelské rozhraní](#use-visual-studio-code-and-the-azure-repos-extension)
 * [Připojení k úložišti pomocí Team Explorer Everywhere příkazového řádku klienta (TEE CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
@@ -31,7 +31,7 @@ Zbývající část tohoto článku vás provede výše uvedených možností.
 
 ## <a name="requirements"></a>Požadavky
 
-* Visual Studio Community, Professional nebo Enterprise for Mac verze 7,8 nebo novější.
+* Visual Studio Community, Professional nebo Enterprise for Mac verze 7,8 a novější.
 * Služby Azure DevOps, Team Foundation Server 2013 a novější, nebo v Azure DevOps Server 2018 nebo později.
 * Projekt Azure DevOps Services nebo Team Foundation serveru/Azure DevOps serveru, nakonfigurovaný pro použití správy verzí Team Foundation.
 
@@ -44,8 +44,6 @@ Pokud chcete pracovat s grafické rozhraní pro správu souborů ve správě ver
 Pokud vám vyhovuje, pomocí macOS terminálu, a potom Team Explorer Everywhere klienta příkazového řádku (TEE CLC) poskytuje podporovaný způsob, jak se připojit ke zdroji v TFVC.
 
 Provedením následujících kroků k nastavení připojení pro TFVC a změn.
-
-Speciální díky Chris Pilcher, vývojář v naší komunitě, jehož [původní pokyny pro TEE-CLC](https://gist.github.com/chris-pilcher/a3f14eb081d7ab983e5c) vytvořený na základě této části.
 
 ### <a name="setting-up-the-tee-clc"></a>Nastavení TEE-CLC
 
@@ -82,7 +80,7 @@ tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
 
 `TF_AUTO_SAVE_CREDENTIALS` Nastavení prostředí, které se používá k uložení svých přihlašovacích údajů, zobrazí se výzva k zadání je více než jednou. Po zobrazení výzvy k zadání uživatelského jména použijte osobní přístupový token, který jste vytvořili v předchozí části a heslo necháte prázdné.
 
-Nyní, pokud chcete vytvořit mapování zdrojových souborů do místní složky, budete používat `tf workfold` příkazu. Následující příklad provede mapování složky s názvem "WebApp.Services" z "MyRepository" TFVC projekt a nastavit tak, aby je možné zkopírovat do složky místní ~/Projects/ (to znamená "Projekty" složku v aktuální uživatel domovskou složku).
+Pokud chcete vytvořit mapování zdrojových souborů do místní složky, budete používat `tf workfold` příkazu. Následující příklad provede mapování složky s názvem "WebApp.Services" z "MyRepository" TFVC projekt a nastavit tak, aby je možné zkopírovat do složky místní ~/Projects/ (to znamená "Projekty" složku v aktuální uživatel domovskou složku).
 
 ```bash
 tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/

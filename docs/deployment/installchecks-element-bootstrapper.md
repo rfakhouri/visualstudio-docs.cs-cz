@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79bbb413c31c77e59ec39b706d4937421096168f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927904"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747534"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; – element (zaváděcí nástroj)
 `InstallChecks` Element podporuje spouštění různých testy proti místnímu počítači, abyste měli jistotu, že byly nainstalovány všechny příslušné požadavky pro aplikaci.
@@ -144,7 +144,7 @@ ms.locfileid: "62927904"
  Zatímco prvky pod `InstallChecks` definovat testy ke spuštění, se nemůžou provést. Chcete-li spustit testy, musíte vytvořit `Command` prvky pod `Commands` elementu.
 
 ## <a name="example"></a>Příklad
- Následující příklad kódu ukazuje, `InstallChecks` element, protože se používá v souboru produktu pro [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Následující příklad kódu ukazuje, `InstallChecks` element, protože se používá v souboru produktu pro rozhraní .NET Framework.
 
 ```xml
 <InstallChecks>

@@ -18,15 +18,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649ba0583a70d0d53d8b12f26573daf3c52cf5e9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5e79969c3b4be22a3c9bb01f06297f54b0734ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331207"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746010"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Podpůrné nástroje procházení symbolů
-**Prohlížeč objektů**, **zobrazení tříd**, **volání prohlížeče** a **výsledky hledáni symbolu** nástroje poskytují možnosti v sadě Visual Studio procházení symbolů. Tyto nástroje hierarchické stromové zobrazení symbolů a zobrazení vztahů mezi symboly ve stromové struktuře. Symboly mohou představovat obory názvů, objektů, tříd, členů třídy a další prvky jazyka, které jsou obsažené v různých komponent. Součásti zahrnují projektů sady Visual Studio, externí [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] komponenty a knihovny typů (.tlb). Další informace najdete v tématu [zobrazení struktury kódu](../../ide/viewing-the-structure-of-code.md).
+**Prohlížeč objektů**, **zobrazení tříd**, **volání prohlížeče** a **výsledky hledáni symbolu** nástroje poskytují možnosti v sadě Visual Studio procházení symbolů. Tyto nástroje hierarchické stromové zobrazení symbolů a zobrazení vztahů mezi symboly ve stromové struktuře. Symboly mohou představovat obory názvů, objektů, tříd, členů třídy a další prvky jazyka, které jsou obsažené v různých komponent. Součásti zahrnují projektů sady Visual Studio, externí komponenty rozhraní .NET Framework a knihovny typů (.tlb). Další informace najdete v tématu [zobrazení struktury kódu](../../ide/viewing-the-structure-of-code.md).
 
 ## <a name="symbol-browsing-libraries"></a>Procházení symbolů knihovny
  Jako implementátora jazyk můžete rozšířit možnosti procházení symbolů Visual Studio tak, že vytvoříte knihovny, které sledovat symboly v vaše komponenty a k poskytování seznamů symbolů pro objekt správce sady Visual Studio prostřednictvím sady rozhraní. Knihovny je popsán <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> rozhraní. Objekt správce sady Visual Studio odpovídá na požadavky pro nová data z nástroje procházení symbolů získáním dat z knihoven a uspořádání. Následně naplní nebo aktualizuje nástroje požadovaná data. K získání odkazu na objekt správce sady Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, předat <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> ID do služby `GetService` metody.

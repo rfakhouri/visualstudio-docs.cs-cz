@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3d4339295c47ee6bc8915eecfb581d9a0e8a4bed
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406639"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747672"
 ---
 # <a name="trusted-application-deployment-overview"></a>Důvěryhodné Přehled nasazení aplikace
 Toto téma obsahuje přehled o tom, jak nasadit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, které se zvýšenými oprávněními pomocí technologie Trusted Application Deployment.
@@ -80,7 +80,7 @@ Musíte následujícím postupem využít výhod nasazení důvěryhodné aplika
 - *CertMgr.exe*, který je součástí aplikace Internet Explorer a proto existuje ve Windows 98 a všech novějších verzích. Další informace najdete v tématu [Certmgr.exe (nástroj Certificate Manager)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Vytvoření aplikace ClickOnce
- A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace je [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] klientská aplikace spolu se soubory manifestu, které popisují aplikace a zadat parametry instalace. Můžete zapnout program do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace s použitím **publikovat** v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Alternativně můžete generovat všechny soubory potřebné pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí nástrojů, které jsou součástí [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Podrobné pokyny o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, najdete v článku [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace je v kombinaci s soubory manifestu, které popisují aplikace a zadat parametry instalace klienta aplikace rozhraní .NET Framework. Můžete zapnout program do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace s použitím **publikovat** v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Alternativně můžete generovat všechny soubory potřebné pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí nástrojů, které jsou součástí [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Podrobné pokyny o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, najdete v článku [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
  Nasazení důvěryhodných aplikací je specifické pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]a jde použít jenom s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací.
 

@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d2ce13fc55c94514bb9da24e43a5c54671becde5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfe17100fcdcb0d475a7467233caa51ba7895225
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906488"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747476"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Postupy: Určení verze rozhraní .NET Framework pro ladění (C#, Visual Basic, F#)
 
-Ladicí program sady Visual Studio podporuje ladění starších verzích Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] stejně jako aktuální verze. Pokud spouštíte aplikaci ze sady Visual Studio, ladicí program může vždy identifikovat správnou verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pro aplikaci, kterou ladíte. Nicméně pokud aplikace je již spuštěn a spustit ladění pomocí **připojit k**, ladicí program, nemusí být vždy schopen identifikovat starší verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Pokud k tomu dojde, zobrazí se chybová zpráva s upozorněním,
+Ladicí program sady Visual Studio podporuje ladění starších verzí rozhraní Microsoft .NET Framework a také v aktuální verzi. Pokud spouštíte aplikaci ze sady Visual Studio, ladicí program může vždy identifikovat správnou verzi rozhraní .NET Framework pro aplikace, kterou ladíte. Nicméně pokud aplikace je již spuštěn a spustit ladění pomocí **připojit k**, ladicí program, nemusí být vždy schopen identifikovat starší verzi rozhraní .NET Framework. Pokud k tomu dojde, zobrazí se chybová zpráva s upozorněním,
 
 ``` cmd
-The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] version your application is going to use.
+The debugger has made an incorrect assumption about the .NET Framework version your application is going to use.
 ```
 
 Ve výjimečných případech, kde se zobrazí tato chyba můžete nastavit klíče registru k označení k ladicímu programu, které verze se má použít.
@@ -62,7 +62,7 @@ Ve výjimečných případech, kde se zobrazí tato chyba můžete nastavit klí
 
 9. Zavřít **Editor registru**.
 
-     Pokud se stále zobrazí chybová zpráva při zahájení ladění, ověřte, že zadáte číslo verze správně v registru. Dál ověřte, že používáte verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] podporovaného Visual Studiem. Ladicí program je kompatibilní s aktuální verze rozhraní .NET Framework a předchozími verzemi, ale možná není dopředně kompatibilní s budoucí verze.
+     Pokud se stále zobrazí chybová zpráva při zahájení ladění, ověřte, že zadáte číslo verze správně v registru. Dál ověřte, že používáte verzi rozhraní .NET Framework podporuje Visual Studio. Ladicí program je kompatibilní s aktuální verze rozhraní .NET Framework a předchozími verzemi, ale možná není dopředně kompatibilní s budoucí verze.
 
 ## <a name="see-also"></a>Viz také
 - [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)

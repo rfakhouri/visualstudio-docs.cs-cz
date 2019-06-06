@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714265"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744705"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Vyhněte se nevytvořeným instancím interních tříd
 
@@ -58,7 +58,7 @@ Pokud použijete <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribu
 
 Chcete-li opravit porušení tohoto pravidla, odeberte typ nebo přidejte kód, který ji používá. Pokud typ obsahuje pouze `static` jednu z následujících metod, přidejte na typ pro zabránění kompilátoru generování výchozí veřejný konstruktor instance:
 
-- `static` Modifikátor pro C# typy, které se zaměřují [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] nebo novější.
+- `static` Modifikátor pro C# typy, které jsou cíleny na rozhraní .NET Framework 2.0 nebo novější.
 
 - Soukromý konstruktor pro typy, které jsou cíleny na rozhraní .NET Framework verze 1.0 a 1.1.
 
