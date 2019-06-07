@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f2343d71d2ed0745f9c5a2a799c3018a2e64945
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045339"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746254"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Zadání symbolu (.pdb) a zdrojových souborů v ladicím programu sady Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -76,7 +76,7 @@ Ladicí program vyhledává také soubory se symboly v následujících umístě
 
      Servery symbolů, které můžete použít, patří:
 
-     **Veřejné Microsoft Symbol Servers**: K ladění selhání, ke kterému dojde během volání systémové knihovny DLL nebo knihovny třetí strany, budete často potřebovat systémové *PDB* soubory. Systém *PDB* soubory obsahují symboly pro knihovny DLL pro Windows, *.exe* soubory a ovladače zařízení. Můžete získat symboly pro operační systémy Windows, MDAC, IIS, ISA a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] z veřejné symbolové servery společnosti Microsoft.
+     **Veřejné Microsoft Symbol Servers**: K ladění selhání, ke kterému dojde během volání systémové knihovny DLL nebo knihovny třetí strany, budete často potřebovat systémové *PDB* soubory. Systém *PDB* soubory obsahují symboly pro knihovny DLL pro Windows, *.exe* soubory a ovladače zařízení. Symboly pro operační systémy Windows, MDAC, IIS, ISA a rozhraní .NET Framework můžete získat z veřejné symbolové servery společnosti Microsoft.
 
      **Servery v interní síti nebo na místním počítači symbolů**: Váš tým nebo společnost může vytvořit servery symbolů pro vaše vlastní produkty a jako mezipaměť pro symboly z externích zdrojů. Symbolový server můžete mít na vlastním počítači.
 
