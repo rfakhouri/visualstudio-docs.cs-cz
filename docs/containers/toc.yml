@@ -7,8 +7,10 @@
     - name: Rychlý start
       expanded: true
       items:
-        - name: Nástroje kontejneru v sadě Visual Studio
+        - name: Aplikace ASP.NET Core v kontejneru
           href: container-tools.md
+        - name: Jednostránková aplikace React.js v kontejneru
+          href: container-tools-react.md
     - name: Kurzy
       expanded: true
       items:
