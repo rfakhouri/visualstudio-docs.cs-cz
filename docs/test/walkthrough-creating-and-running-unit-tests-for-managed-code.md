@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401723"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820943"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Návod: Vytváření a spouštění testů jednotek pro spravovaný kód
 
@@ -179,19 +179,23 @@ Nyní máte projekt s metodami, které můžete otestovat. V tomto článku se t
 
 ## <a name="create-the-test-class"></a>Vytvoření testovací třídy
 
-Vytvořte třídu testu k ověření `BankAccount` třídy. Můžete použít *UnitTest1.cs* soubor, který se vygeneroval pomocí šablony projektu, ale dát souboru a třídě více popisné názvy. Můžete to udělat v jednom kroku přejmenováním souboru v **Průzkumníka řešení**.
+Vytvořte třídu testu k ověření `BankAccount` třídy. Můžete použít *UnitTest1.cs* soubor, který se vygeneroval pomocí šablony projektu, ale dát souboru a třídě více popisné názvy.
 
 ### <a name="rename-a-file-and-class"></a>Přejmenování souboru nebo třídy
 
 1. Přejmenování souboru v **Průzkumníka řešení**, vyberte *UnitTest1.cs* soubor v projektu BankTests. V místní nabídce zvolte **přejmenovat**a potom přejmenujte soubor, který má *BankAccountTests.cs*.
 
-   ::: moniker range="vs-2017"
+::: moniker range="vs-2017"
 
-   V dialogovém okně, která se otevře, zvolte **ne**.
+2. Chcete-li tuto třídu přejmenovat, zvolte **Ano** v dialogovém okně, které otevře a zobrazí dotaz, jestli chcete přejmenovat také odkazy na prvek kódu.
 
-   ::: moniker-end
+::: moniker-end
 
-2. Pro tuto třídu přejmenovat, umístěte kurzor na `UnitTest1` v editoru kódu a stiskněte klávesu **F2** (nebo klikněte pravým tlačítkem a zvolte **přejmenovat**). Zadejte **BankAccountTests** a potom stiskněte klávesu **Enter**.
+::: moniker range=">=vs-2019"
+
+2. Pro tuto třídu přejmenovat, umístěte kurzor na `UnitTest1` v editoru kódu, klikněte pravým tlačítkem a pak zvolte **přejmenovat**. Zadejte **BankAccountTests** a potom stiskněte klávesu **Enter**.
+
+::: moniker-end
 
 *BankAccountTests.cs* soubor nyní obsahuje následující kód:
 
@@ -336,7 +340,6 @@ Vytvořte testovací metodu k ověření správné chování při debetní velik
 
 ```csharp
 [TestMethod]
-[ExpectedException(typeof(ArgumentOutOfRangeException))]
 public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 {
     // Arrange
@@ -344,14 +347,12 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
     double debitAmount = -100.00;
     BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
 
-    // Act
-    account.Debit(debitAmount);
-
-    // Assert is handled by the ExpectedException attribute on the test method.
+    // Act and assert
+    Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => account.Debit(debitAmount));
 }
 ```
 
-Použití <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> atribut k vyhodnocení, že byla vyvolána správná výjimka. Atribut způsobí, že se test nezdaří, pokud <xref:System.ArgumentOutOfRangeException> je vyvolána výjimka. Pokud upravíte dočasně testované vyvolat další obecné metody <xref:System.ApplicationException> při MD částka menší než nula, správné chování testu&mdash;tedy selže.
+Použití <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A> metody k vyhodnocení, že byla vyvolána správná výjimka. Tato metoda způsobí, že se test nezdaří, pokud <xref:System.ArgumentOutOfRangeException> je vyvolána výjimka. Pokud upravíte dočasně testované vyvolat další obecné metody <xref:System.ApplicationException> při MD částka menší než nula, správné chování testu&mdash;tedy selže.
 
 K otestování případu, kdy vybíraná hodnota je větší než zůstatek, proveďte následující kroky:
 
@@ -361,7 +362,7 @@ K otestování případu, kdy vybíraná hodnota je větší než zůstatek, pro
 
 3. Nastavte `debitAmount` na číslo větší než zůstatek na účtu.
 
-Spuštění těchto dvou metod testu ukazuje, že testy správně fungovat.
+Spuštění testů, dva a ověřte, že bude úspěšné.
 
 ### <a name="continue-the-analysis"></a>Pokračování analýzy
 
@@ -387,20 +388,20 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount is less than 
 Změňte dva podmíněné příkazy v `Debit` metody:
 
 ```csharp
-    if (amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
-    }
+if (amount > m_balance)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
+}
 
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
-    }
+if (amount < 0)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
+}
 ```
 
 ### <a name="refactor-the-test-methods"></a>Refaktoring testovacích metod
 
-Odeberte `ExpectedException` testu atribut method a místo toho zachyťte vyvolanou výjimku a ověřte její přidružené zprávy. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Metoda poskytuje možnost k porovnání dvou řetězců.
+Refaktoring testovacích metod odebráním volání <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>. Zabalte volání do `Debit()` v `try/catch` blokovat, zachytit specifické výjimky, která se očekává a ověřte její přidružené zprávy. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Metoda poskytuje možnost k porovnání dvou řetězců.
 
 Nyní `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` může vypadat třeba takto:
 
@@ -418,7 +419,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
@@ -448,7 +449,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);

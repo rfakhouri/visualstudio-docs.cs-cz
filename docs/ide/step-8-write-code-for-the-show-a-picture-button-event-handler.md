@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2e67692daed4d00b841b7472e7d13ede0ca500
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61bb5391f52bcfc587664259821d02ff2786acd3
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420417"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820689"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka
 
@@ -87,7 +87,7 @@ Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vá
         >
         >  `If OpenFileDialog1.ShowDialog() = DialogResult.OK Then`
 
-    9. Nyní můžete přidáte další řádek kódu. Můžete ji zadat (nebo zkopírujte a vložte ji), ale zvažte použití technologie IntelliSense a přidejte ji. Více se seznámíte s podporou technologie IntelliSense, tím rychleji můžete napsat vlastní kód. Výsledná `showButton_Click()` metoda vypadá takto. (Zvolte **VB** kartu k zobrazení verze kódu jazyka Visual Basic.)
+    9. Nyní můžete přidáte další řádek kódu. Můžete ji zadat (nebo zkopírujte a vložte ji), ale zvažte použití technologie IntelliSense a přidejte ji. Více se seznámíte s podporou technologie IntelliSense, tím rychleji můžete napsat vlastní kód. Výsledná `showButton_Click()` metoda vypadá takto.
 
          [!code-csharp[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)]
          [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]

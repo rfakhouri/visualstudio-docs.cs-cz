@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899333"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820430"
 ---
 # <a name="draw-shapes-and-paths"></a>Kreslení tvarů a cest
 
@@ -93,8 +93,8 @@ Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na di
 |||||
 |-|-|-|-|
 |![Dva tvary před kombinování](../designers/media/b1_1.png)|Dva tvary před kombinování|![Intersect](../designers/media/b1_4.png)|Intersect|
-|![Vyloučit překryv](../designers/media/b1_2.png)|Sjednocení|![](../designers/media/b1_5.png)|Vyloučit překryv|
-|![Odečíst](../designers/media/b1_3.png)|Dělení|![](../designers/media/b1_6.png)|Odečíst|
+|![Sjednocení](../designers/media/b1_2.png)|Sjednocení|![Vyloučit překryv](../designers/media/b1_5.png)|Vyloučit překryv|
+|![Dělení](../designers/media/b1_3.png)|Dělení|![Odečíst](../designers/media/b1_6.png)|Odečíst|
 
  **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Kombinace cesty](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 

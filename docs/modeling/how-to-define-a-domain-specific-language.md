@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c4c55461960e48a7ecce74dd9f88e371853e705
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445199"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820992"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Do definice jazyka specifického pro doménu (DSL), vytvoříte ze šablony řešení sady Visual Studio. Klíčovou součástí řešení je diagramem definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a tvary DSL. Po úpravě a přidáte k těmto prvkům můžete přidat kód programu k přizpůsobení DSL podrobněji.
@@ -99,7 +99,7 @@ Pokud chcete vytvořit nový jazyk specifický pro doménu, vytvořte nové ře�
 
  Pokud spuštění řešení, které jste vytvořili z **minimální jazykový** šablony, experimentální sady Visual Studio bude vypadat podobně jako v následujícím příkladu:
 
- ![](../modeling/media/dsl_min.png)
+ ![Stromové ukázkové domény konkrétní jazyk v sadě Visual Studio](../modeling/media/dsl_min.png)
 
  Experimentujte s nástroji. Vytvářet prvky a jejich připojení.
 

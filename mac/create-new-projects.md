@@ -3,40 +3,53 @@ title: Vytváří se nové projekty a řešení
 description: Tento článek popisuje, jak vytvořit projekty a řešení v sadě Visual Studio pro Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 04/02/2019
+ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 045d92365501b888e56ce4ae397331e597b5b33a
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983638"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820738"
 ---
-# <a name="creating-new-projects-and-solutions"></a>Vytváří se nové projekty a řešení
+# <a name="creating-a-new-project"></a>Vytvoření nového projektu
 
-## <a name="creating-new-projects-and-solutions-from-a-template"></a>Vytváření nových projektů a řešení ze šablony
+## <a name="opening-the-project-creation-dialog"></a>Otevřete dialogové okno Vytvoření projektu
 
-Pomocí předdefinované šablony se dají vytvářet řešení kdykoli. Počínaje Visual Studio 2019 pro Mac, zvolte **nový** z okna start. Případně přejděte do **soubor > Nový řešení**. Vyberte požadované platforem a potom požadovanou šablonu:
+Existuje několik způsobů, jak vytvořit nový projekt v sadě Visual Studio pro Mac. Při prvním otevření sady Visual Studio pro Mac, zobrazí se na úvodní obrazovce. Odsud můžete **nový** což vás přesměruje na obrazovku pro vytvoření projektu.
 
-![Vytvořit nové řešení](media/projects-and-solutions-image0.png)
+> [!TIP]
+> Kromě toho z úvodní obrazovky, můžete také otevřít a vyhledejte poslední projekty a řešení. Posledních projektů můžete otevřít také tak, že přejdete na řádku nabídek a zvolíte **soubor > poslední řešení**
 
-Tím se vytvoří řešení, které mohou obsahovat jeden nebo více projektů, v závislosti na typu zvolené šablony.
+![Úvodní obrazovka s vytvořením nového projektu](media/first-run-project.png)
 
-V Průzkumníku řešení se dá Navigovat pomocí kontextu akce nebo nabídek.
+Pokud Visual Studio for Mac je už otevřená řešení načtení, můžete vytvořit nové řešení tak, že přejdete na řádku nabídek a zvolíte **soubor > Nový řešení**. Vytvoření nového řešení tímto způsobem se zavřít řešení, které je již načtena.
 
-Chcete-li přidat nový projekt do řešení, klikněte pravým tlačítkem na název řešení a vyberte **Přidat > Přidat nový projekt** zobrazíte dialogové okno Nový projekt:
+## <a name="creating-a-new-project-from-a-template"></a>Vytvoření nového projektu ze šablony
 
-![Přidat nový projekt](media/projects-and-solutions-image4.png)
+**Nový projekt** dialogové okno, ve výchozím nastavení, zobrazí vaše naposledy použité šablony, seřazené podle *naposledy použitých*.
 
-Tato metoda přidávání nových projektů umožňuje využít možnosti sdílení kódu Xamarin. Přidání sdíleného projektu nebo přenosné knihovny šablony do existujícího řešení poskytuje způsob, jak všechny multiplatformní logiku, která se dá použít v jiné projekty v řešení. Další informace o vytváření multiplatformních aplikací, najdete [příslušném průvodci](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/).
+Pokud nechcete použít poslední šablonu, můžete z kategorií nalevo od dialogového okna. Každá kategorie obsahuje několik šablon projektů si můžete vybírat. Kliknutím na typu projektu umožňuje zobrazit popis na pravé straně obrazovky.
 
-## <a name="opening-recent-solutions"></a>Otevírání poslední řešení.
+![Nová obrazovka projektu](media/project-creation-screen.png)
 
-V okně spuštění sady Visual Studio se zobrazí seznam posledních projektů, které pracujete na:
+## <a name="configuring-your-new-project"></a>Konfigurace nového projektu
 
-![Poslední část řešení na úvodní stránce](media/create-new-projects-recent.png)
+Když vyberete šablonu projektu na následující obrazovce vás provede všech kroků konfigurace požadovaných nastavení projektu. To se může lišit podle typu projektu.
 
-Můžete filtrovat tento seznam pomocí pole filtr nebo odebrání jednotlivých položek ze seznamu.
+Všechny projekty vyžadují nový projekt, spolu s umístění pro uložení souborů. Pokud je projekt součástí nové řešení, místo jeho přidání k existujícím řešení, název řešení bude také vyžadovat.
+
+V této fázi můžete volitelně můžete také nakonfigurovat možností správy zdrojového kódu Git. Na následujícím obrázku je příklad posledním krokem konfigurace pro projekt .NET Core:
+
+![Konfigurace nového projektu](media/configure-new-project.png)
+
+## <a name="adding-additional-projects-to-a-solution"></a>Přidání další projekty do řešení
+
+Můžete přidat další projekty do řešení pravým tlačítkem na řešení v oblasti řešení a zvolením buď **Přidat > Přidat nový projekt** nebo **Přidat > Přidat existující projekt**.
+
+Přidáním nového projektu se dostanete pomocí vytvoření projektu, jak je znázorněno v [konfigurace váš nový projekt](#configuring-your-new-project).
+
+Zvolíte-li přidat existující projekt vám umožní vyhledat existující projekt na vašem počítači a přidat do řešení.
 
 ## <a name="see-also"></a>Viz také:
 

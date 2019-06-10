@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2651a5fc2c32de5018e8fa07f42c5067d469758c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847327"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820562"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend pro Visual Studio – přehled
 
@@ -60,7 +60,7 @@ Vytvoření objektů výběrem nástroj a vykreslení na návrhovou plochu pomoc
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**Vyhledávací pole** zadejte **hledání** pole filtrovat seznam prostředků.|
+|![Pole Hledat prostředky](../designers/media/b1_1.png)|**Vyhledávací pole** zadejte **hledání** pole filtrovat seznam prostředků.|
 |![Režimy mřížka a seznam](../designers/media/b1_2.png)|**Režimy mřížka a seznam** přepínání **režim mřížky** zobrazení a **režim seznamu** zobrazení prostředků.|
 |![Kategorie prostředků](../designers/media/b1_3.png)|**Kategorie prostředků** klikněte na tlačítko kategorie nebo podkategorie, chcete-li zobrazit seznam prostředků v dané kategorii.|
 |![Styly](../designers/media/b1_4.png)|**Styly** zobrazit všechny styly, které jsou obsaženy ve slovníku prostředků.|
@@ -115,7 +115,7 @@ Toto okno k zobrazení a úprava vlastností objektu. Můžete je také nastavit
 |![RGB barevný prostor](../designers/media/b1_12.png)|**RGB barevný prostor** změnit barvu nastavením hodnoty **R**, **G**, nebo **B** editory (červená, zelená, modrá) čísla.|
 |![Alfa kanál](../designers/media/b1_13.png)|**Alfa kanál** upravte hodnotu alfa pomocí editoru číslo vedle položky **A**.|
 |![Převést barvu na prostředek](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Převést barvu na prostředek** převést vybranou barvu na prostředek barvy. Prostředky barev jsou k dispozici, když kliknete na kartě prostředky barev.|
-|![](../designers/media/b1_15.png)|**Šestnáctková hodnota** zobrazení šestnáctkové hodnoty barev zobrazí.|
+|![Šestnáctková hodnota barvy](../designers/media/b1_15.png)|**Šestnáctková hodnota** zobrazení šestnáctkové hodnoty barev zobrazí.|
 |![Popisek 16](../designers/media/b5_label_16.png)|**Jezdcem přechodu** nabídnuta jen v případě, že je vybraná štětce přechodu.|
 |![Zobrazit upřesňující vlastnosti](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Zobrazit upřesňující vlastnosti** zobrazení kategorií vlastností, které jsou méně často používány.|
 

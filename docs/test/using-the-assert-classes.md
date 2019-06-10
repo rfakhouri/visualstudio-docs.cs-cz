@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d9d02ee375a5b9e6069a94cd7b534b871792088a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d145734dc89faafcedbca6730f0a90da174376c4
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962005"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820321"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Používání tříd Assert pro testování částí
 
@@ -45,7 +45,7 @@ Použití <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert> tří
 
 Pokud píšete nový, Assert – třída výjimky dědit ze základní třídy <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> pro snazší identifikaci výjimku jako selhání kontrolního výrazu místo Neočekávaná výjimka vyvolána v testovacím nebo produkčním kódu.
 
-Uspořádání testovací metodu s <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> atribut, pokud chcete testovací metodu za účelem ověření, že je vyvolána výjimka očekáváte, která je vyvolána metoda v kódu aplikace.
+Chcete-li ověřit, že je vyvolána výjimka očekáváte, která je vyvolána metoda v kódu aplikace, použijte <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> metody.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -3,19 +3,19 @@ title: Zahrnutí balíčku NuGet do projektu
 description: Tento dokument popisuje postup zahrnutí balíčku NuGet do projektu Xamarin. Provede hledání a stahování balíčku, jakož i představení funkcí integrace integrovaného vývojového prostředí.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/14/2017
+ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692327"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820621"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Zahrnutí balíčku NuGet do projektu
 
-NuGet je nejoblíbenější Správce balíčků pro vývoj na platformě .NET a je součástí sady Visual Studio pro Mac a Visual Studio na Windows. Můžete vyhledat a přidat balíčky pro vaše projekty Xamarin.iOS a Xamarin.Android buď integrovaném vývojovém prostředí.
+NuGet je nejoblíbenější Správce balíčků pro vývoj na platformě .NET a je součástí sady Visual Studio pro Mac a Visual Studio na Windows. Můžete vyhledat a přidat balíčků pro Xamarin, projekty .NET Core a ASP.NET buď integrovaném vývojovém prostředí.
 
 Tento článek popisuje, jak zahrnout do projektu balíček NuGet a ukazuje řetězce nástrojů, které zajišťuje bezproblémovou procesu.
 
@@ -31,7 +31,7 @@ Nejprve vytvořte projekt s názvem `HelloNuget` jak je znázorněno níže. Ten
 
 ## <a name="adding-a-package"></a>Přidání balíčku
 
-V sadě Visual Studio pro Mac po otevření projektu klikněte pravým tlačítkem na **balíčky** složky **oblasti řešení** a vyberte **přidat balíčky**:
+V sadě Visual Studio pro Mac po otevření projektu klikněte pravým tlačítkem na **balíčky** složky **oblasti řešení** a vyberte **přidat balíčky NuGet**:
 
 ![Přidat novou akci kontextu balíček NuGet](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -43,9 +43,9 @@ Po otevření okna načte seznam balíčků z výchozí zdroj balíčku: nuget.o
 
 ![Seznam balíčků NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Pomocí vyhledávacího pole v pravém horním rohu k vyhledání konkrétního balíčku, například `azure`. Pokud nenajdete balíček, který chcete použít, vyberte ho a klikněte **přidat balíček** tlačítko a spusťte instalaci.
+Pomocí vyhledávacího pole v pravém horním rohu k vyhledání konkrétního balíčku, například `azure mobile`. Po nalezení balíček, který chcete použít, vyberte ho a klikněte **přidat balíček** tlačítko a spusťte instalaci.
 
-[Přidejte balíček NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
+![Přidejte balíček NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
 
 Po stažení balíčku, přidá se do projektu. Řešení se změní takto:
 
@@ -77,9 +77,9 @@ Klikněte pravým tlačítkem na **balíčky** pro přístup k místní nabídky
 
 ![Balíčky nabídky](media/nuget-walkthrough-PackagesMenu.png)
 
-* **Přidání balíčků** -otevře se okno pro přidání dalších balíčků do projektu.
-* **Aktualizace** – kontroluje zdrojový server pro každý balíček a stáhne všechny novější verze.
-* **Obnovení** – soubory ke stažení všechny chybějící balíčky (bez aktualizace existující balíčky na novější verze).
+*   **Přidání balíčků NuGet** -otevře se okno pro přidání dalších balíčků do projektu.
+*   **Aktualizace** – kontroluje zdrojový server pro každý balíček a stáhne všechny novější verze.
+*   **Obnovení** – soubory ke stažení všechny chybějící balíčky (bez aktualizace existující balíčky na novější verze).
 
 Aktualizace a možnosti obnovení jsou také k dispozici na úrovni řešení a vliv na všechny projekty v řešení.
 

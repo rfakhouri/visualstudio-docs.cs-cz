@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842012"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820634"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementuje správně IDisposable
 
@@ -52,7 +52,7 @@ ms.locfileid: "65842012"
 
 Porušení některou z těchto vzorců se aktivuje upozornění CA1063.
 
-Každý nezapečetěný typ, který deklaruje a implementuje <xref:System.IDisposable> rozhraní musí poskytnout vlastní `protected virtual void Dispose(bool)` metody. `Dispose()` by měly volat `Dipose(true)`, a měla by volat finalizační metodu `Dispose(false)`. Pokud vytvoříte nezapečetěný typ, který deklaruje a implementuje <xref:System.IDisposable> rozhraní, je nutné definovat `Dispose(bool)` a jeho volání. Další informace najdete v tématu [vyčistit nespravované prostředky (Průvodce technologií .NET)](/dotnet/standard/garbage-collection/unmanaged) a [vzor Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
+Každý nezapečetěný typ, který deklaruje a implementuje <xref:System.IDisposable> rozhraní musí poskytnout vlastní `protected virtual void Dispose(bool)` metody. `Dispose()` by měly volat `Dispose(true)`, a měla by volat finalizační metodu `Dispose(false)`. Pokud vytvoříte nezapečetěný typ, který deklaruje a implementuje <xref:System.IDisposable> rozhraní, je nutné definovat `Dispose(bool)` a jeho volání. Další informace najdete v tématu [vyčistit nespravované prostředky (Průvodce technologií .NET)](/dotnet/standard/garbage-collection/unmanaged) a [vzor Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
 
 Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné typy, ale je to [konfigurovatelné](#configurability).
 

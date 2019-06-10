@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38cf992612126e8d24f05b23efd8af7fff4b4a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dfcc4a01dfd5e9b63dc16afa0c2b3286419c193
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966551"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820654"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Vítá vás Visual Studio IDE | Visual Basic
 
@@ -30,7 +30,7 @@ Visual Studio *integrovaného vývojového prostředí* je creative odrazový, m
 
 ::: moniker range=">=vs-2019"
 
-[![](media/vs-2019/ide-overview.png "Prostředí IDE sady Visual Studio")](media/vs-2019/ide-overview.png#lightbox)
+[![Visual Studio IDE. 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -306,7 +306,7 @@ Pojďme začít a vytvořit jednoduchý program.
 
    ![Ladit > Spustit bez ladění nabídky](../media/overview-start-without-debugging.png)
 
-   Visual Studio vytvoří aplikaci a otevře se okno konzoly se zprávou **Hello World!**. Nyní máte funkční aplikaci.
+   Visual Studio vytvoří aplikaci a otevře se okno konzoly se zprávou **Hello World!** . Nyní máte funkční aplikaci.
 
    ![Okno konzoly](../media/overview-console-window.png)
 
@@ -373,7 +373,7 @@ Pojďme začít a vytvořit jednoduchý program.
 
    ![Ladit > Spustit bez ladění nabídky](media/vs-2019/start-without-debugging.png)
 
-   Visual Studio vytvoří aplikaci a otevře se okno konzoly se zprávou **Hello World!**. Nyní máte funkční aplikaci.
+   Visual Studio vytvoří aplikaci a otevře se okno konzoly se zprávou **Hello World!** . Nyní máte funkční aplikaci.
 
    ![Okno konzoly](../media/vs-2019/overview-console-window.png)
 
@@ -418,7 +418,7 @@ Nejprve přejmenujme `name` proměnné:
 
    Všimněte si, že šedé pole se zobrazí kolem proměnnou a žárovky se zobrazí na okraji.
 
-3. Vyberte ikonu žárovky k zobrazení dostupných [rychlé akce](../../ide/quick-actions.md). Vyberte **přejmenovat "název" na "username"**.
+3. Vyberte ikonu žárovky k zobrazení dostupných [rychlé akce](../../ide/quick-actions.md). Vyberte **přejmenovat "název" na "username"** .
 
    ![Přejmenujte akci v sadě Visual Studio](media/rename-quick-action.png)
 

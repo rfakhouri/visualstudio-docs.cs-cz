@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4242fabe943dd27624e44a9900981343ec180fcd
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442384"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820904"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
 
@@ -21,7 +21,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
 > [!NOTE]
 > SDK transformace textové šablony a Visual Studio SDK modelování jsou nainstalovány automaticky při instalaci konkrétní funkce sady Visual Studio. Další podrobnosti najdete v tématu [tento příspěvek na blogu](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího prostředí nástroje DSL**, které můžete vyhledat v této lokalitě: [Visualizaton a modelování SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího prostředí nástroje DSL**, které můžete vyhledat v této lokalitě: [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co můžete dělat s jazyka specifického pro doménu?
 
@@ -137,11 +137,11 @@ Všimněte si, že následující aspekty nové řešení:
 
 Experimentální sady Visual Studio bude vypadat podobně jako v následujícím příkladu:
 
-![](../modeling/media/dsl_min.png)
+![Stromové ukázkové domény konkrétní jazyk v sadě Visual Studio](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>Obsah modelu
 
-Obsah souboru, který je instancí DSL je volána *modelu*. Model obsahuje *modelu*<em>prvky</em> a *odkazy* mezi prvky. Definice DSL Určuje, jaké typy prvků modelu a odkazy mohou existovat v modelu. Například v DSL vytvořené z šablony minimální jazykový, je jeden typ prvku modelu a jeden typ odkazu.
+Obsah souboru, který je instancí DSL je volána *modelu*. Model obsahuje *modelu* <em>prvky</em> a *odkazy* mezi prvky. Definice DSL Určuje, jaké typy prvků modelu a odkazy mohou existovat v modelu. Například v DSL vytvořené z šablony minimální jazykový, je jeden typ prvku modelu a jeden typ odkazu.
 
 Definice DSL můžete určit, jak se model zobrazen v diagramu. Můžete vybrat z různých stylů obrazců a konektorů. Můžete určit, že nějaké obrazce uvnitř ostatním tvarům.
 
@@ -180,7 +180,7 @@ Do projektu můžete přidat libovolný počet soubory textových šablon. Každ
 > [!NOTE]
 > Při změně definice DSL ukázkový kód šablony textu nebude fungovat, pokud ji aktualizovat.
 
-Další informace najdete v tématu [generování kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md) a [psaní kódu pro úpravu jazyka specifického pro doménu specifického](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+Další informace najdete v tématu [generování kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md) a [psaní kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ## <a name="customizing-the-dsl"></a>Přizpůsobení DSL
 
@@ -392,7 +392,7 @@ Přejmenujte existující doménovými třídami a vztahy. Například od defini
 
  Stejný postup slouží k instalaci DSL ve vašem počítači, takže není potřeba použít experimentální instanci sady Visual Studio.
 
- Další informace najdete v tématu [nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md).
+ Další informace najdete v tématu [nasazení řešení jazyka specifického pro doménu](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="Reset"></a> Odebrání starého experimentální DSL
  Pokud jste vytvořili experimentální DSL, které už nechcete, můžete ho odebrat z počítače resetováním Visual Studio experimentální instanci aplikace.

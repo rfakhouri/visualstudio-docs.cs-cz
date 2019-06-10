@@ -1,5 +1,5 @@
 ---
-title: Připojení k datům v databázi aplikace Access (Windows Forms)
+title: Připojení k datům v databázi Accessu (model Windows Forms)
 ms.date: 02/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff2fbc41a3e5a9388a3cae7776a22c8671703d1f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568514"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820408"
 ---
-# <a name="connect-to-data-in-an-access-database-windows-forms"></a>Připojení k datům v databázi aplikace Access (Windows Forms)
+# <a name="connect-to-data-in-an-access-database-windows-forms"></a>Připojení k datům v databázi Accessu (model Windows Forms)
 
-Můžete připojit k databázi aplikace Access (buď *.mdf* souboru nebo *.accdb* souboru) pomocí sady Visual Studio. Po definování připojení se data zobrazí v **zdroje dat** okna. Odtud můžete přetáhnout tabulky nebo zobrazení do formulářů.
+Můžete připojit k databázi aplikace Access (buď *.mdb* souboru nebo *.accdb* souboru) pomocí sady Visual Studio. Po definování připojení se data zobrazí v **zdroje dat** okna. Odtud můžete přetáhnout tabulky nebo zobrazení do formulářů.
 
 ## <a name="prerequisites"></a>Požadavky
 
-Pokud chcete použít tyto postupy, potřebujete projekt aplikace Windows Forms a databáze aplikace Access (*.accdb* soubor) nebo databázi aplikace Access 2000-2003 (*.mdb* souboru). Postupujte podle kroků odpovídajících vašemu typu souboru.
+Pokud chcete použít tyto postupy, potřebujete projekt aplikace Windows Forms a databáze aplikace Access ( *.accdb* soubor) nebo databázi aplikace Access 2000-2003 ( *.mdb* souboru). Postupujte podle kroků odpovídajících vašemu typu souboru.
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>Vytvoření datové sady pro soubor .accdb
 
@@ -51,7 +51,7 @@ Můžete připojit k databázím vytvořeným pomocí aplikace Access 2013, Offi
 
    **Přidat připojení** zobrazí se dialogové okno.
 
-7. Pokud **zdroj dat** není nastavená na **soubor databáze Microsoft Access (OLE DB)**, vyberte **změnu** tlačítko.
+7. Pokud **zdroj dat** není nastavená na **soubor databáze Microsoft Access (OLE DB)** , vyberte **změnu** tlačítko.
 
    **Změnit zdroj dat** zobrazí se dialogové okno. V seznamu zdrojů dat, zvolte **soubor databáze Microsoft Access**. V **poskytovatele dat** rozevíracího seznamu, vyberte **zprostředkovatele dat .NET Framework pro OLE DB**a klikněte na tlačítko **OK**.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e1c84aecf40e9a4fd0b58ee046dad93cec9f059
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715080"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820309"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Přizpůsobení sestavení a ladění úlohy pro vývoj "Otevřít složku"
 
@@ -313,7 +313,7 @@ Můžete mít libovolný počet *.vscode\settings.json* soubory ve vašem zákla
 ## <a name="see-also"></a>Viz také:
 
 - [Vývoj kódu bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Otevřete složku projekty jazyka C++](/cpp/build/non-msbuild-projects)
-- [Projekty CMake v jazyce C++](/cpp/build/cmake-tools-for-visual-cpp)
+- [Projekty Otevřít složku pro C++](/cpp/build/open-folder-projects-cpp)
+- [Projekty CMakeC++](/cpp/build/cmake-projects-in-visual-studio)
 - [NMake – odkaz](/cpp/build/reference/nmake-reference)
 - [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)

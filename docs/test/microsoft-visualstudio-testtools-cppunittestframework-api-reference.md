@@ -1,5 +1,5 @@
 ---
-title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Reference
+title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
 ms.date: 11/04/2017
 ms.topic: reference
 ms.author: mblome
@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 045f205ff5450b09d4ec4e76e14493a988bae375
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784079"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820765"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referenční dokumentace rozhraní API atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 Toto téma obsahuje seznam veřejných členů náležících `Microsoft::VisualStudio::CppUnitTestFramework` oboru názvů. Pomocí těchto rozhraní API pro psaní jednotkových testů C++ založené na Microsoft nativní testu jednotek. Je [příklad použití](#example) na konci tohoto tématu.
 
- Soubory hlaviček jsou umístěny v _VisualStudio2012 [x 86] InstallFolder_**\VC\UnitTest\include** složky.
+ Soubory hlaviček jsou umístěny v _VisualStudio2012 [x 86] InstallFolder_ **\VC\UnitTest\include** složky.
 
- Lib – soubory jsou umístěny v _VisualStudio2012 [x 86] InstallFolder_**\VC\UnitTest\lib** složky.
+ Lib – soubory jsou umístěny v _VisualStudio2012 [x 86] InstallFolder_ **\VC\UnitTest\lib** složky.
 
 Hlavičky a knihovny lib cesty se automaticky nakonfigurují v nativní testovacího projektu.
 
