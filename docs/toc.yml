@@ -583,11 +583,13 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Práce se soubory XML a XSLT
           href: xml-tools/xml-tools-in-visual-studio.md
-        - name: Vývoj mezinárodních aplikací
-          displayName: Globalization localization world-ready
-          href: ide/globalizing-and-localizing-applications.md
-        - name: Obousměrné jazyky
-          href: ide/creating-applications-in-bi-directional-languages.md
+        - name: Vývoj inkluzivních aplikací
+          items:
+            - name: Návrh přístupných aplikací
+              href: ide/reference/resources-for-designing-accessible-applications.md
+            - name: Vývoj mezinárodních aplikací
+              displayName: Globalization localization world-ready
+              href: ide/globalizing-and-localizing-applications.md
         - name: Další kurzy
           items:
             - name: 'Vytvoření aplikace WPF s C# nebo Visual Basicem'
@@ -799,8 +801,6 @@
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: Produkty a služby pro usnadnění přístupu od Microsoftu
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
-        - name: Zdroje informací pro navrhování aplikací usnadňujících přístup
-          href: ide/reference/resources-for-designing-accessible-applications.md
 - name: Odkaz
   items:
     - name: Obecné prvky uživatelského rozhraní
@@ -1170,6 +1170,8 @@
           href: ide/user-permissions-and-visual-studio.md
         - name: Windows Information Protection (WIP)
           href: ide/exempt-visual-studio-from-wip.md
+    - name: Zadání v obousměrných jazycích
+      href: ide/use-bidirectional-languages.md
     - name: Microsoft Help Viewer
       items:
         - name: Přehled
