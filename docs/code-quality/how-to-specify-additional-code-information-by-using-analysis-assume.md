@@ -12,29 +12,31 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 09db0ff784c7d8fa5a9889487f6090ad9afbfea0
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: f23dd3821744687d4f595ad404bc076e1d05af7b
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260873"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835923"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Postupy: Určení dalších informací o kódu pomocí funkce _Analysis_assume
+
 Můžete zadat informace pro nástroj pro analýzu kódu pro kód C/C++, který pomůže proces analýzy a snížit upozornění. Na další informace, použijte následující funkce:
 
- `_Analysis_assume(`  `expr`  `)`
+`_Analysis_assume(`  `expr`  `)`
 
- `expr` -libovolný výraz, který předpokládá, že je vyhodnocen na hodnotu true.
+`expr` -libovolný výraz, který předpokládá, že je vyhodnocen na hodnotu true.
 
- Nástroj pro analýzu kódu předpokládá, že je reprezentována výrazem podmínka pravdivá v místě, kde funkce se zobrazí a bude platit pořád, dokud je změněn výrazu, například v přiřazením do proměnné.
+Nástroj pro analýzu kódu předpokládá, že je reprezentována výrazem podmínka pravdivá v místě, kde funkce se zobrazí a bude platit pořád, dokud je změněn výrazu, například v přiřazením do proměnné.
 
 > [!NOTE]
 > `_Analysis_assume` nemá žádný vliv optimalizace kódu. Mimo nástroj pro analýzu kódu `_Analysis_assume` je definován jako no-op.
 
 ## <a name="example"></a>Příklad
- Následující kód používá `_Analysis_assume` Chcete-li opravit toto upozornění analýzy kódu [C6388](../code-quality/c6388.md):
 
-```
+Následující kód používá `_Analysis_assume` Chcete-li opravit toto upozornění analýzy kódu [C6388](../code-quality/c6388.md):
+
+```cpp
 #include<windows.h>
 #include<codeanalysis\sourceannotations.h>
 
@@ -55,5 +57,6 @@ void test( )
 }
 ```
 
-## <a name="see-also"></a>Viz také
- [__assume](/cpp/intrinsics/assume)
+## <a name="see-also"></a>Viz také:
+
+- [__assume](/cpp/intrinsics/assume)

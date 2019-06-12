@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 960c2b546abe3554a5912efde9bd09bb5b2189b7
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260475"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835962"
 ---
 # <a name="code-metrics-values"></a>Hodnoty metrik kódu
 
@@ -32,7 +32,7 @@ Následující seznam uvádí kód výsledků metrik, které vypočítá sady Vi
 
 - **Cyklomatická složitost** – měří strukturální složitost kódu. Vytvoří se to vynásobením počtu odlišný kód cest v toku programu. Program, který se má komplexní řízení toku vyžaduje více testů k dosažení dobré kód pokrytí a je menší Údržba. Další informace najdete v tématu [Wikipedia zadání cyklomatická složitost](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
-- **Hloubka dědičnosti** – Určuje, kolik různých tříd, které dědí od sebe, všechny až k základní třídy. Hloubka dědičnosti se podobá v tom, že změna v základní třídě může ovlivnit některé z jejích zděděných tříd párování tříd. Čím vyšší toto číslo, hlubší dědičnosti a vyšší riziko změny základní třídy se narušující změnit. Hloubka dědičnosti je dobrým nízkou hodnotu a vysoké hodnoty je chybný. 
+- **Hloubka dědičnosti** – Určuje, kolik různých tříd, které dědí od sebe, všechny až k základní třídy. Hloubka dědičnosti se podobá v tom, že změna v základní třídě může ovlivnit některé z jejích zděděných tříd párování tříd. Čím vyšší toto číslo, hlubší dědičnosti a vyšší riziko změny základní třídy se narušující změnit. Hloubka dědičnosti je dobrým nízkou hodnotu a vysoké hodnoty je chybný.
 
 - **Třída párování** – měří párování na jedinečné třídy prostřednictvím parametrů, místní proměnné, návratové typy, volání metod, vytváření instancí obecného nebo šablony, základní třídy, implementací rozhraní, polí definovaných pro externí typy, a atribut dekorace. Software dobrý návrh přikazuje, typy a metody by měly mít vysokou soudržnost a nízkou párování. Vysoká párování označuje návrh, který je obtížné opakovaně používat a spravovat z důvodu jeho mnoho vzájemných závislostí na jiné typy. Další informace najdete v tématu [párování tříd](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) blogový příspěvek.
 
@@ -43,9 +43,7 @@ Následující seznam uvádí kód výsledků metrik, které vypočítá sady Vi
 
 ## <a name="anonymous-methods"></a>Anonymní metody
 
-*Anonymní metoda* je právě metodu, která nemá žádný název. Anonymní metody se nejčastěji používají k předání bloku kódu jako parametr delegátu. Výsledky metrik pro anonymní metody, která je deklarována v členu, například metoda nebo přístupový objekt, jsou spojeny s člena, který deklaruje metodu. Nejsou přidružené člena, který volá metodu.
-
-Další informace o způsobu metriky kódu s anonymními metodami najdete v tématu [anonymní metody a analýza kódu](../code-quality/anonymous-methods-and-code-analysis.md).
+*Anonymní metoda* je právě metodu, která nemá žádný název. Anonymní metody se nejčastěji používají k předání bloku kódu jako parametr delegátu. Metriky kódu výsledky pro anonymní metody, která je deklarována v členu, například metoda nebo přístupový objekt, jsou spojeny s člena, který deklaruje metodu. Nejsou přidružené člena, který volá metodu.
 
 ## <a name="generated-code"></a>Generovaný kód
 

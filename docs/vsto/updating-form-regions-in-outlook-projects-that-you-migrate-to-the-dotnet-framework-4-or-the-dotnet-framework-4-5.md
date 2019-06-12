@@ -1,5 +1,5 @@
 ---
-title: Aktualizace oblastí formulářů v projektech Outlook při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5
+title: Aktualizace oblastí formulářů aplikace Outlook v projektech migrovat na rozhraní .NET Framework 4, 4.5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fed87ee8106c3e8a09c341b9de4709060627dac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982565"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836049"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizace oblastí formulářů v projektech Outlook při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Pokud cílové rozhraní projektu doplňku VSTO v Outlooku se oblast formuláře se změní na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později, musí provést některé změny do oblasti kódu generovaném formuláři a jakýkoli kód, který vytvoří instanci určité třídy oblasti formuláře za běhu.

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office Word klávesnice, nastavení klávesnice sady Microsoft Office, dialogové okno Možnosti
+title: Klávesnice aplikace Word Office, nastavení klávesnice, dialogové okno Možnosti
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6506fec976822ea4a4e675c9961395c952a7a35f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5180aa2f4c5022cedcba2c5377d2ff2ac14ffb28
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970302"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835984"
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Word klávesnice, nastavení klávesnice sady Microsoft Office, dialogové okno Možnosti
   Aplikace Microsoft Office Word a sady Visual Studio i zpracování klávesových zkratek. Stejnou klávesovou zkratku srozumitelný pro různé příkazy v aplikaci Word a v sadě Visual Studio. Při otevření v úrovni dokumentu projektu v sadě Visual Studio slovo obdrží jenom jednu aplikaci v čase klíče příkazy místní. Ve výchozím nastavení, Visual Studio obdrží všechny klíče příkazy místní, ale může být slovo přijímat, když je dokument fokus tak, že vyberete **chéma dynamické klávesnice**.

@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru | Dokumentace Microsoftu'
+title: 'Průzkumník serveru: Rozšíření uzlu připojení služby SharePoint'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430447"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835945"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Návod: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru
   Tento návod ukazuje, jak volat z rozšíření pro objektového modelu klienta SharePoint **připojení služby SharePoint** uzel v **Průzkumníka serveru**. Další informace o tom, jak pomocí objektového modelu klienta SharePoint, naleznete v tématu [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -240,7 +240,7 @@ Znalost následujících konceptů je užitečná, ale není požadována k doko
 
     2. V **přidat připojení k Sharepointu** dialogového okna zadejte adresu URL pro Sharepointový web, ke kterému chcete připojit a klikněte na tlačítko **OK** tlačítko.
 
-         Chcete-li určit web služby SharePoint ve svém vývojovém počítači, zadejte **http://localhost**.
+         Chcete-li určit web služby SharePoint ve svém vývojovém počítači, zadejte **http://localhost** .
 
 3. Rozbalte uzel připojení serveru (který zobrazuje adresu URL vašeho webu) a potom rozbalte uzel serveru podřízený (například **týmový web**).
 

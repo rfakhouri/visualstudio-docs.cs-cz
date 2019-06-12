@@ -1,5 +1,5 @@
 ---
-title: Požadované změny pro spouštění projektů Office migrovaných na rozhraní .NET Framework 4 nebo .NET Framework 4.5
+title: Změny požadované pro projekty Office migrovat na rozhraní .NET Framework 4, 4.5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a83207633d60348d664e3c9337b48288bb6c1baf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 82ae3f8a43b65e6ff617192dc38149691d229455
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447038"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836063"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Požadované změny pro spouštění projektů Office migrovaných na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Pokud cílové rozhraní projektu pro Office se změní na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později z dřívější verze rozhraní .NET Framework, je třeba provést následující úkoly a ujistěte se, že můžete řešení spustit na vývojovém počítači a v počítačích koncových uživatelů:

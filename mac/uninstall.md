@@ -6,20 +6,21 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2093d6d0f6d123bf6d904b225c17714a98c5ee9a
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971438"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835897"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalace sady Visual Studio pro Mac
 
-Existuje několik produktů Xamarin, které umožňují vývoj aplikací napříč platformami, včetně samostatné aplikace, jako je Visual Studio pro Mac.
-
-Tato příručka slouží k odinstalaci jednotlivých produktů jednotlivě tak, že přejdete do příslušné části, nebo můžete použít skripty v [skript](#uninstall-script) část týkající se odinstalace všechno.
+Tato příručka slouží k odinstalaci jednotlivé komponenty v sadě Visual Studio pro Mac jednotlivě tak, že přejdete do příslušné části, nebo můžete použít skripty v [skript](#uninstall-script) část týkající se odinstalace všechno.
 
 Pokud jste dřív měli Xamarin Studio v počítači byly nainstalovány, budete také muset postupujte podle pokynů v [společnosti Xamarin odinstalovat](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) průvodce, kromě následujících kroků.
+
+> [!NOTE]
+> Tyto informace se odebrat pouze Visual Studio 2019 nebo 2017 pro Mac z vašeho počítače. odinstalovat Visual Studio Code, najdete v článku [tento problém](https://github.com/Microsoft/vscode/issues/52151) podrobnosti.
 
 ## <a name="uninstall-script"></a>Odinstalace skriptu
 
@@ -103,7 +104,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
-Můžete také odebrat následující adresáře, který obsahuje různé Xamarin soubory a složky. Nicméně než se pustíte do byste měli vědět, že tento adresář obsahuje Android podpisových klíčů. Další informace najdete v části  **[odinstalaci sady Android SDK a sady Java SDK](#uninstall-android-sdk-and-java-sdk)**:
+Můžete také odebrat následující adresáře, který obsahuje různé Xamarin soubory a složky. Nicméně než se pustíte do byste měli vědět, že tento adresář obsahuje Android podpisových klíčů. Další informace najdete v části  **[odinstalaci sady Android SDK a sady Java SDK](#uninstall-android-sdk-and-java-sdk)** :
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin

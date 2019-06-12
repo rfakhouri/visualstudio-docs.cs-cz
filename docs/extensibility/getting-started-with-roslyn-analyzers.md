@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebe4922c79e546ad4ee5ae50179424bff9746a15
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bb224d1c84f9216ed303c919118af4997be2405c
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342404"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835917"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Začínáme s analyzátory Roslyn
 
@@ -21,22 +21,19 @@ Pomocí analyzátorů kódu za provozu, na základě projektu v sadě Visual Stu
 
 ## <a name="get-started"></a>Začínáme
 
-[Úvod analyzátory Roslyn živého kódu a návody](https://msdn.microsoft.com/magazine/dn879356.aspx)
+[Přehled analyzátory Roslyn](../code-quality/roslyn-analyzers-overview.md)
+
+[Kurz: Zápis první opravu analyzátoru a kódu](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 
 [Přidejte kód opravy názorný postup: Zadejte uživatele opravy pro analyzátor problémů](https://msdn.microsoft.com/magazine/dn904670.aspx)
-
-[Úvod a návod, analyzátor reálného světa mluví](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [Analyzátor Roslyn reálného světa](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) , můžete se také podívat jako [komunikovat](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [Několik příkladů na Githubu, seskupených do tři druhy analyzátory](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-[Úvod a prohlídku několik analyzátory mluví](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Přehled analyzátory Roslyn](../code-quality/roslyn-analyzers-overview.md)
-- [Kurz: Zápis první opravu analyzátoru a kódu](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 - [Referenční verze balíčku platformy kompilátoru .NET](roslyn-version-support.md)
 - [Další dokumentace na webu GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [Pravidla FxCop implementováno s analyzátory Roslyn](http://roslynanalyzersstatus.azurewebsites.net/)
