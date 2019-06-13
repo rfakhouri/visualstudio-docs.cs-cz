@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Spusťte samostatné aplikace rozhraní .NET Framework s Profiler ke shromažďování dat paměti pomocí příkazového řádku | Dokumentace Microsoftu'
+title: 'Profiler příkazový řádek: Otevřete aplikaci klienta rozhraní .NET Framework, získání dat o paměti'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6600444d5fb991bce0500c587cb66b9baefdd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a1d08656ea4234f277265c81b1bef4275de7625
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386051"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032954"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Postupy: Spuštění samostatné aplikace rozhraní .NET Framework s profilerem ke shromažďování dat paměti pomocí příkazového řádku
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci spuštění samostatné (klientské) aplikaci rozhraní .NET Framework a shromažďování dat paměti.
@@ -42,9 +42,9 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
     **/Start:sample VSPerfCmd/output:** `OutputFile` [`Options`]
 
-   - [/Start](../profiling/start.md)**: Ukázka** možnost inicializuje profiler.
+   - [/Start](../profiling/start.md) **: Ukázka** možnost inicializuje profiler.
 
-   - [/Output](../profiling/output.md)**:** `OutputFile` možnost je vyžadována s **/start**. `OutputFile` Určuje název a umístění souboru dat profilování (.vsp).
+   - [/Output](../profiling/output.md) **:** `OutputFile` možnost je vyžadována s **/start**. `OutputFile` Určuje název a umístění souboru dat profilování (.vsp).
 
      Můžete použít některý z těchto možností s **/start:sample** možnost.
 
@@ -55,9 +55,9 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
 3. Spusťte cílovou aplikaci. Zadejte:
 
-    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:**{**allocation**&#124;**lifetime**}[`Options`]
+    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:** {**allocation**&#124;**lifetime**}[`Options`]
 
-   - [/GC –](../profiling/gc-vsperfcmd.md)**:** `Keyword` možnost je vyžadována ke shromažďování dat paměti .NET Framework. Parametr – klíčové slovo určuje, zda chcete shromažďovat data o přidělování paměti nebo získat informace o přidělování paměti a životnosti objektů.
+   - [/GC –](../profiling/gc-vsperfcmd.md) **:** `Keyword` možnost je vyžadována ke shromažďování dat paměti .NET Framework. Parametr – klíčové slovo určuje, zda chcete shromažďovat data o přidělování paměti nebo získat informace o přidělování paměti a životnosti objektů.
 
      |Klíčové slovo|Popis|
      |-------------|-----------------|
@@ -82,8 +82,8 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 
     |Možnost|Popis|
     |------------|-----------------|
-    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Spustí (**globalon**) nebo zastaví (**/globaloff**) sběr dat pro všechny procesy.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Spustí (**/processon**) nebo zastaví (**/processoff**) sběr dat pro proces určený identifikátorem procesu (`PID`).|
+    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Spustí (**globalon**) nebo zastaví ( **/globaloff**) sběr dat pro všechny procesy.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Spustí ( **/processon**) nebo zastaví ( **/processoff**) sběr dat pro proces určený identifikátorem procesu (`PID`).|
     |[/ attach](../profiling/attach.md) **:** `PID` [/ odpojení](../profiling/detach.md)|**/ attach** spustí sběr dat pro proces určený pomocí `PID` (ID procesu). **/ detach** zastaví sběr dat pro všechny procesy.|
 
 - Můžete také použít **VSPerfCmd.exe**[/mark](../profiling/mark.md) možnost k vložení profilovací značky do datového souboru. **/Mark** příkaz přidá identifikátor, časové razítko a volitelný uživatelem definovaný textový řetězec. Značky lze použít k filtrování dat.

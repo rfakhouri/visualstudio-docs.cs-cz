@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech CloudPilot k dispozici ve vybraných předplatných sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 78c72f68c8553e7e80b6f26846c19ffcb5f91184
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805368"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032576"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot výhoda v předplatných sady Visual Studio
 
@@ -64,7 +64,6 @@ CloudPilot, podle UnifyCloud, slouží k což vývojářům umožňuje rychle a 
 | Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | 1 licence, 30 dnů, jednu kontrolu                                                            |  Ne.  K dispozici pro nové předplatitele pouze           |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                             |  Není k dispozici           |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              |  Není k dispozici          |
-| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici | Není k dispozici |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Není k dispozici  | Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 

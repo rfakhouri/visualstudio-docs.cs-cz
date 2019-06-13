@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech PŘETYPOVÁNÍ zvýrazněte k dispozici ve vybraných předplatných sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 5a6a7024653027f3b813de6a417dc01e07d30084
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805346"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032896"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Zvýrazněte PŘETYPOVÁNÍ výhoda v předplatných sady Visual Studio
 
@@ -52,7 +52,7 @@ Předplatitelé sady Visual Studio Enterprise můžete získat předplatné jede
    >
    > *Vaše žádost o aktivaci a přístup, abyste měli na očích PŘETYPOVÁNÍ aktuálně revizi. Z jiné mi uslyší ve více než 48 hodin.*
    >
-   > *Nejlepším řešením,*
+   > *Nejlepším řešením,* 
    > *Greg*
 
 Po schválení vaší žádosti obdržíte e-mail s druhou potvrzení úspěšné vytvoření vašeho účtu a s výzvou, abyste na aktivační odkaz pro dokončení procesu aktivace.
@@ -72,7 +72,7 @@ Po schválení vaší žádosti obdržíte e-mail s druhou potvrzení úspěšn�
    > - Výukové video - [konfigurace vašeho portfolia](https://www.youtube.com/watch?v=MDm8ln4vuGE)
    > - Výukové video - [připojení vaší aplikace](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
    >
-   > *Nejlepším řešením,*
+   > *Nejlepším řešením,* 
    > *Greg*
 
    > [!NOTE]
@@ -86,7 +86,6 @@ Po schválení vaší žádosti obdržíte e-mail s druhou potvrzení úspěšn�
 | Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                             |  Není k dispozici          |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                             |  Není k dispozici           |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              |  Není k dispozici          |
-| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici | Není k dispozici |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Není k dispozici  | Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 

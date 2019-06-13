@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: Další informace o předplatné školení Pluralsight, který je součástí vybraných předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 0b4211fbba6a5f1602906a281869b40068f3d6f1
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: cc96d9c088a270342be792a2e7514e172a72ea45
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225498"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032776"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -72,9 +72,9 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
 |         Visual Studio Professional (Standard)          | VL, Azure, maloobchodního prodeje |   3 měsíce    | Ano<sup>2</sup> |
 |              Visual Studio Test Professional (Standard)              |    VL maloobchodního prodeje     |   3 měsíce    | Ne |
 |                      Předplatné MSDN Platforms (Standard)                       |    VL maloobchodního prodeje     |   3 měsíce    | Ne |
-|                     Visual Studio Dev Essentials                     |        Není k dispozici         |   1 měsíc    |       Ne       |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) |       Azure       | Není k dispozici |       Není k dispozici       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Není k dispozici |       Není k dispozici       |
+||
 
 <sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & služby pro vývojáře, MCT Software a služby, nejcennější Professional (MVP) Regional Director (RD), Microsoft Partner Network (MPN), FTE Imagine.*
 

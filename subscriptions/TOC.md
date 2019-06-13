@@ -14,9 +14,7 @@
 ### [Získání a správa kódů Product Key](product-keys.md)
 ### [Visual Studio s GitHub Enterprise](access-github.md)
 ### [Výhody pro předplatitele](subscriber-benefits.md)
-### Visual Studio Dev Essentials
-#### [Zapojení se do programu Visual Studio Dev Essentials](join-dev-essentials.md)
-#### [Výslovné odhlášení z programu Visual Studio Dev Essentials](leave-vsde.md)
+### [Visual Studio Dev Essentials](join-dev-essentials.md)
 ## Využití výhod pro předplatitele
 ### Nástroje
 #### [Integrované vývojové prostředí sady Visual Studio](vs-ide-benefit.md)
@@ -33,7 +31,6 @@
 #### [Vývojářský účet pro Windows](vs-windows-dev.md)
 #### [Předplatné Office 365](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
-#### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Průběžné platby za Azure](vs-azure-payg.md)
 ### [Profesní rozvoj](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)

@@ -7,12 +7,12 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Zjistěte, jak stáhnout a nainstalovat Visual Studio IDE, které jsou součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5e836eac14cbf50abe79230444a4c8ee8c01643d
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420801"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032868"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Používání benefitu Visual Studio 2019
 
@@ -69,7 +69,7 @@ Chcete-li stáhnout integrovaném vývojovém prostředí:
 | Visual Studio Professional (standardní, měsíčních cloudových) | VL, Azure, maloobchodního prodeje                                       | K dispozici                                                            |  Ano          |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | K dispozici                                             |  Ano         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              |  Není k dispozici          |
-| Visual Studio Dev Essentials | Není k dispozici  | Visual Studio Community |Ano |
+
 
 <sup>1</sup>*zahrnuje:  Neprodejné (NFR) Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, nejcennější Professional (MVP) Regional Director (RD).  Vyloučí: MCT Software & Services.*
 

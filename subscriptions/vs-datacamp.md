@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o předplatném školení Datacampu součástí vybraných předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5d6f9d2a642a13b350e539383a1abb74835bf9d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e29f5d13c9869995aad0b7a6793304b677d54ba
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948064"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032174"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhoda Datacampu školení v předplatných sady Visual Studio
 
@@ -70,7 +70,6 @@ Můžete kdykoli zastavit a obnovit trénování v příští relaci.  Stačí n
 | Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | 3 měsíce                                                            |  Ne.  K dispozici pro nové předplatitele pouze           |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | 3 měsíců                                             |  Ne.  K dispozici pro nové předplatitele pouze           |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | 3 měsíců                                              |  Ne.  K dispozici pro nové předplatitele pouze           |
-| Visual Studio Dev Essentials | Není k dispozici  | 2 měsíce | Ne. K dispozici pro nové předplatitele pouze |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Není k dispozici  | Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 

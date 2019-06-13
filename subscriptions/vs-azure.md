@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zjistěte, jak aktivovat výhody služeb Azure součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685924"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032203"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Použití Microsoft Azure v předplatných sady Visual Studio
 
@@ -30,7 +30,6 @@ Jako předplatitel sady Visual Studio můžete použít Microsoft Azure bez dal�
 |              Visual Studio Professional měsíčně              |        Není k dispozici        |                                                             |
 |                    Visual Studio Test Pro                    |     měsíční kredit ve výši 50 USD      |                             Ano                             |
 |                        Předplatné MSDN Platforms                        |     měsíční kredit 100 USD     |                             Ano                             |
-|                 Visual Studio Dev Essentials                 | Bezplatné služby a kreditem 200 USD | Bezplatné služby jsou trvalé.  pouze je jednorázový kreditem 200 USD. |
 |               Visual Studio Enterprise – NFR\*               |     měsíční kredit 150 USD     |                             Ano                             |
 |                Visual Studio Enterprise – FTE                |     měsíční kredit 150 USD     |                             Ano                             |
 |     Visual Studio Enterprise – Microsoft Partner Network     |     měsíční kredit 150 USD     |                             Ano                             |

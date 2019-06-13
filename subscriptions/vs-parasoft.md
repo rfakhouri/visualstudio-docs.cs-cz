@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zjistěte, jak chcete předplatné aktivovat, Test Professional Parasoft Virtualize/SOA součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce0c1e3d00e73bfdfee5e2fbe2bea8adddc2d305
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947267"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032746"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop v předplatných sady Visual Studio
 
@@ -76,8 +76,8 @@ Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici 
 | Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                           |Není k dispozici         |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                                           |Není k dispozici         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                                           |Není k dispozici         |
-| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici|Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
+||
 
 <sup>1</sup>*zahrnuje: Microsoft Partner Network (Enterprise).  Vyloučí:  Neprodejné (NFR) Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, nejcennější Professional (MVP) Regional Director (RD).  MCT Software & Services.*
 

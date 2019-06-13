@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zjistěte, jak chcete předplatné aktivovat, nástroj WhiteSource Bolt je součástí předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: ab373a21924aaac1a2a5660ed3032c69f04260e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 773284a163004958dbf89aea871414105792b338
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810924"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031932"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Nástroj WhiteSource Bolt v předplatných sady Visual Studio
 
@@ -78,8 +78,8 @@ Klikněte na zelené **nainstalovat** tlačítko, pokud používáte Azure DevOp
 | Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                           |Není k dispozici         |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                             |  Není k dispozici         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              | Není k dispozici         |
-| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
+||
 
 <sup>1</sup>*zahrnuje:  Microsoft Partner Network (Enterprise).  Vyloučí: Další není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, nejcennější Professional (MVP), Regional Director (RD), MCT Software & Services, Microsoft Partner Network (Professional) .*
 

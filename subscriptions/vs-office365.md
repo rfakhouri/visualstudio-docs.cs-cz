@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech služeb Office 365 součástí některá předplatná sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 33e70c6208505df175161b248a60e0527f7b2a6b
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263129"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032823"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus v předplatných sady Visual Studio
 
-Vytvořte optimální práci. Kdekoli práce s aplikacemi, které se aktualizují vždy. Office 365 ProPlus je odběr, který je součástí aplikace úrovně premium, jako je Word, Excel, PowerPoint, OneNote, Outlook, vydavatele a přístupu (vydavatele a přístup k dispozici pouze počítače). Aplikace se dá nainstalovat na různých zařízeních, včetně počítačů, počítače Mac, Ipady, Iphony, tablety s Androidem a telefony s Androidem. Office 365 také součástí služby, jako je 1TB úložiště Onedrivu, 60 minut Skype za měsíc a chatu a phone podporu Microsoftu. S předplatným získejte nejnovější verze aplikace a automaticky přijímat aktualizace, když k nim dojde.
+Vytvořte optimální práci. Kdekoli práce s aplikacemi, které se aktualizují vždy. Office 365 ProPlus je odběr, který je součástí aplikace úrovně premium, jako je Word, Excel, PowerPoint, OneNote, Outlook, vydavatele a přístupu (vydavatele a přístup k dispozici pouze počítače). Aplikace se dá nainstalovat na různých zařízeních, včetně počítačů, počítače Mac, Ipady, Iphony, tablety s Androidem a telefony s Androidem. S předplatným získejte nejnovější verze aplikace a automaticky přijímat aktualizace, když k nim dojde.
 
 ## <a name="getting-started-with-office-365-proplus"></a>Začínáme s Office 365 ProPlus
 
@@ -58,7 +58,7 @@ Pokud máte v plánu pro vývoj aplikací pro Office, bude potřeba aktivovat v�
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                             |  Není k dispozici          |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              |  Není k dispozici          |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
-| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
+|  |
 
 <sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře BizSpark, nejcennější Professional (MVP), Regional Director (RD), MCT Software & Services, představte si, Microsoft Partner Network.*
 

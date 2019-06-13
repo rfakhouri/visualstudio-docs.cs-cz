@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET | Dokumentace Microsoftu'
+title: 'Soubor Web.Config: Nástroj & profil dynamické kompilované webové aplikace ASP.NET'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e1e0f6377da52a0f1b26a6f50db44efc9a847f30
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422925"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032944"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů web.config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
 Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady metody instrumentace ke shromažďování podrobných dat časování, data o přidělování paměti .NET a životnosti objektů .NET z dynamicky zkompilován [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.
@@ -59,7 +59,7 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nás
 
    | Název atributu | Hodnota atributu |
    |--------------------| - |
-   | **Jméno** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
+   | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **Jazyková verze** | **Neutrální** |
 

@@ -3,15 +3,15 @@ title: Rozšíření sady Visual Studio pro Mac
 description: Visual Studio pro Mac funkce, je možné rozšířit pomocí modulů s názvem balíčky rozšíření. První část tohoto průvodce vytvoří jednoduchý Visual Studio for Mac rozšíření balíčku vložit datum a čas do dokumentu. Druhá část Tento průvodce představuje Principy systému rozšíření balíčku a některé základní rozhraní API, která tvoří základ sady Visual Studio pro Mac.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/14/2017
+ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1753eef9987bc59be55298489e10c5698eb944cc
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983180"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033119"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Rozšíření sady Visual Studio pro Mac
 
@@ -28,7 +28,7 @@ Pořadí rozšíření balíčku k sestavení ze sady Visual Studio pro Mac mus�
 Výhodou této modulárního návrhu je, že Visual Studio for Mac je možné rozšířit – existuje mnoho Rozšiřovací body, které můžou být postavené na pomocí rozšíření vlastních balíčků. Příklady aktuální balíčky rozšíření zahrnují podporu pro C# a F#ladicího programu nástroje a šablony projektů.
 
 > [!NOTE]
-> **Poznámka:** Pokud máte projekt doplňku tvůrce, který byl vytvořen ještě před doplněk Tvůrce 1.2, budete muset migrovat projekt, jak je uvedeno v krocích [tady](https://mhut.ch/addinmaker/1.2).
+> Pokud máte projekt doplňku tvůrce, který byl vytvořen ještě před doplněk Tvůrce 1.2, budete muset migrovat projekt, jak je uvedeno v krocích [tady](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -36,7 +36,7 @@ Této části se probírají různé soubory generované záznamem pro tvůrce A
 
 ## <a name="attribute-files"></a>Atribut soubory
 
-Balíčky rozšíření ukládají metadata o jejich název, verzi, závislosti a další informace v jazyce C# atributy. Doplněk tvůrce vytvoří dva soubory `AddinInfo.cs` a `AssemblyInfo.cs` můžete ukládat a uspořádávat tyto informace. Balíčky rozšíření musí mít jedinečné id a obor názvů určený ve svých *doplněk atribut*:
+Balíčky rozšíření ukládají metadata o jejich název, verzi, závislosti a další informace v jazyce C# atributy. Doplněk tvůrce vytvoří dva soubory `AddinInfo.cs` a `AssemblyInfo.cs` můžete ukládat a uspořádávat tyto informace. Balíčky rozšíření musí mít jedinečné ID a obor názvů určený ve svých  *`Addin` atribut*:
 
 ```csharp
 [assembly:Addin (
@@ -46,7 +46,7 @@ Balíčky rozšíření ukládají metadata o jejich název, verzi, závislosti 
 )]
 ```
 
-Balíčky rozšíření musí deklarovat také závislosti na balíčky rozšíření, které vlastní Rozšiřovací body, které se připojte. Automaticky jsou odkazovány v okamžiku sestavení.
+Balíčky rozšíření musí deklarovat také závislosti na balíčky rozšíření, které vlastní rozšíření body, které jsou pružný, které jsou automaticky odkazována v okamžiku sestavení.
 
 Kromě toho další odkazy jde přidat prostřednictvím doplňku referenční uzel v oblasti řešení pro projekt, jako jsou znázorněny na následujícím obrázku:
 
@@ -81,10 +81,10 @@ Příkaz rozšíření, které jsou definovány pomocí přidání položek `/Mo
 
 Uzel výrazu obsahuje atribut cesty, která určuje rozšiřovací bod, který ho se připojit k, v tomto případě `/MonoDevelop/Ide/Commands/Edit`. Kromě toho funguje jako nadřazený uzel k příkazu. Příkaz uzel má následující atributy:
 
-* **ID** -Určuje identifikátor pro tento příkaz. Identifikátory příkazů musí být deklarována jako členy výčtu a slouží k připojení k CommandItems příkazy.
-* **_jmenovka** -text zobrazovaný v nabídkách.
-* **_popis** – text, který se zobrazí jako popisek pro tlačítka panelu nástrojů.
-* **defaultHandler** – Určuje, `CommandHandler` třídy, která je základem příkazu
+* `id` : Určuje identifikátor pro tento příkaz. Identifikátory příkazů musí být deklarována jako členy výčtu a slouží k připojení k CommandItems příkazy.
+* `_label` -Text zobrazený v nabídkách.
+* `_description` – Text, který se zobrazí jako popisek pro tlačítka panelu nástrojů.
+* `defaultHandler` : Určuje, že `CommandHandler` třída, která je základem příkazu
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -96,7 +96,7 @@ CommandItem rozšíření, které zpřístupní `/MonoDevelop/Ide/MainMenu/Edit`
 </Extension>
 ```
 
-CommandItem umístí příkaz do nabídky je uveden v atributu jeho id. Rozšíření této CommandItem `/MonoDevelop/Ide/MainMenu/Edit` rozšiřovacího bodu, což zajišťuje popisek příkazu se zobrazí v **nabídky Úpravy**. Všimněte si, že **id** CommandItem odpovídá id uzlu příkaz `InsertDate`. Pokud byste chtěli odebrat CommandItem, **vložit datum** možnost zmizí z nabídky Úpravy.
+CommandItem umístí příkaz zadaný v jeho `id` atribut do nabídky. Rozšíření této CommandItem `/MonoDevelop/Ide/MainMenu/Edit` rozšiřovacího bodu, což zajišťuje popisek příkazu se zobrazí v **nabídky Úpravy**. Všimněte si, že ID v CommandItem odpovídá ID uzlu příkaz `InsertDate`. Pokud odeberete CommandItem, **vložit datum** možnost zmizí z nabídky Úpravy.
 
 ### <a name="command-handlers"></a>Obslužné rutiny příkazů
 
@@ -129,7 +129,7 @@ public enum DateInserterCommands
 }
 ```
 
-To spojuje příkazu a CommandItem – CommandItem tento příkaz volá, když vyberete CommandItem ze **nabídky Úpravy**.
+Příkaz i jeho CommandItem jsou nyní spojených dohromady – CommandItem volá příkaz při výběru CommandItem z **nabídky Úpravy**.
 
 ## <a name="ide-apis"></a>Integrované vývojové prostředí rozhraní API
 
@@ -158,6 +158,35 @@ Informace o rozsahu oblastí, které jsou k dispozici pro vývoj najdete v člá
 * Refaktoring
 * Spuštění obslužné rutiny
 * Zvýrazňování syntaxe
+
+## <a name="extending-the-new-editor"></a>Rozšíření nového editoru
+
+Visual Studio pro Mac [zavádí nové nativní Cocoa textového editoru uživatelského rozhraní](https://aka.ms/vs/mac/editor/learn-more) postavené na stejné editor vrstvy ze sady Visual Studio na Windows.
+
+Jednou z mnoha výhod sdílení editor mezi Visual Studio a Visual Studio for Mac je, že kód zaměřený editor sady Visual Studio, mohou být přizpůsobeny pro spuštění v sadě Visual Studio pro Mac.
+
+> [!NOTE]
+> Nový editor podporuje jenom C# soubory v tuto chvíli. Ostatní jazyky a formátů souborů se otevře v editoru starší verze. Starší verze editor implementovat ale některé z editoru sady Visual Studio rozhraní API je popsáno níže.
+
+### <a name="visual-studio-editor-overview"></a>Přehled editoru sady Visual Studio
+
+![Architektura editoru sady Visual Studio](media/vs-editor-architecture.png)
+
+Před na podrobnosti o rozšíření specifické pro Visual Studio pro Mac, je dobré znát další informace o sdílených samotný editor. Níže je několik prostředků, které může prohloubit tyto znalosti:
+
+* [Rozhraní Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
+* [MEF v editoru](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [Práce v editoru](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
+* [Rozšiřovací body služeb jazyka a editoru](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Video Úvod do architektury editoru](https://www.youtube.com/watch?v=PkYVztKjO9A)
+
+Pomocí těchto prostředků v dolním jsou primární koncepty, které potřebujete znát [ `ITextBuffer` ](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) a [ `ITextView` ](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview):
+
+* `ITextBuffer` Je reprezentací v paměti text, který můžete v průběhu času měnit. `CurrentSnapshot` Vlastnost `ITextBuffer` vrátí *neměnné* reprezentace aktuální obsah vyrovnávací paměti, instance `ITextSnapshot`. Po provedení úprav ve vyrovnávací paměti, vlastnost CurrentSnapshot se aktualizuje na nejnovější verzi. Analyzátory, můžete si prohlédnout snímek text v libovolném vlákně a jeho obsah je zaručeno, že nikdy nezmění.
+
+* `ITextView` Je reprezentace uživatelského rozhraní jak `ITextBuffer` se vykreslí na obrazovce v ovládacím prvku editoru. Obsahuje odkaz na jeho textové vyrovnávací paměti, stejně jako `Caret`, `Selection`a další koncepty související s Uživatelským rozhraním.
+
+Pro danou [ `MonoDevelop.Ide.Gui.Document` ](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5), můžete načíst související základní `ITextBuffer` a `ITextView` prostřednictvím `Document.GetContent<ITextBuffer>()` a `Document.GetContent<ITextView>()` v uvedeném pořadí.
 
 ## <a name="additional-information"></a>Další informace
 

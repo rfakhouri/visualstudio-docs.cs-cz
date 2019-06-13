@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Instrumentaci komponenty samostatné rozhraní .NET Framework a shromažďovat paměťová Data se Profiler příkazového řádku | Dokumentace Microsoftu'
+title: 'Profiler příkazový řádek: Instrumentace součásti .NET klienta, získání dat o paměti'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d09cc46a-70f5-48f9-aa24-89913e67b359
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 06fd67a62e37b3e498272fcc629b479b50c42944
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33056deb51d11769d6d172ea7404e3e417f552e4
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436762"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032914"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Postupy: Instrumentace samostatné součásti rozhraní .NET Framework a shromažďování dat paměti s profilerem z příkazového řádku
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k instrumentaci komponenty rozhraní .NET Framework samostatné aplikace, například .exe nebo .dll soubor a shromažďovat informace o paměti pomocí profileru.
@@ -37,7 +37,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
 3. Inicializace proměnných prostředí profilování rozhraní .NET Framework. Zadejte:
 
-    **VSPerfClrEnv** {**/tracegc** &#124; **/tracegclife**}
+    **VSPerfClrEnv** { **/tracegc** &#124; **/tracegclife**}
 
    - **/Tracegc** a **/tracegclife** možnosti inicializace proměnných prostředí, které chcete shromažďovat pouze data o přidělování paměti nebo získat informace o přidělování paměti a životnosti objektů.
 
@@ -50,15 +50,15 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
-   - [/Start](../profiling/start.md)**: trasování** možnost inicializuje profiler.
+   - [/Start](../profiling/start.md) **: trasování** možnost inicializuje profiler.
 
-   - [/Output](../profiling/output.md)**:** `OutputFile` možnost je vyžadována s **/start**. `OutputFile` Určuje název a umístění dat profilování (. *Vsp*) soubor.
+   - [/Output](../profiling/output.md) **:** `OutputFile` možnost je vyžadována s **/start**. `OutputFile` Určuje název a umístění dat profilování (. *Vsp*) soubor.
 
      Můžete použít některý z těchto možností s **/start:trace** možnost.
 
    | Možnost | Popis |
    | - | - |
-   | [/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Určuje doménu a uživatelské jméno účtu vlastnícího profilovaný proces. Tato možnost je vyžadována, pouze pokud je proces spuštěn pod jiným než přihlášeným uživatelem. Vlastník procesu je uvedena ve sloupci uživatelské jméno na **procesy** karty ve Správci úloh Windows. |
+   | [/ User](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Určuje doménu a uživatelské jméno účtu vlastnícího profilovaný proces. Tato možnost je vyžadována, pouze pokud je proces spuštěn pod jiným než přihlášeným uživatelem. Vlastník procesu je uvedena ve sloupci uživatelské jméno na **procesy** karty ve Správci úloh Windows. |
    | [/ crosssession](../profiling/crosssession.md) | Umožňuje profilování procesů v jiných relacích. Tato možnost je vyžadována, pokud je aplikace spuštěna v jiné relaci. Relace je vypsán ve **ID relace** sloupec **procesy** karty ve Správci úloh Windows. **Protokolovacímu** může být zadán jako zkratka pro **/crosssession**. |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | Chcete-li spustit profiler s shromažďování dat pozastaveno, přidejte **/globaloff** umožňuje **/start** příkazového řádku. Použití **globalon** obnovu profilování provedete. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Určuje čítač výkonu Windows má být shromážděn během profilování. |
@@ -77,9 +77,9 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
     |Možnost|Popis|
     |------------|-----------------|
-    |[/globalon](../profiling/globalon-and-globaloff.md) [/globaloff](../profiling/globalon-and-globaloff.md)|Spustí (**globalon**) nebo zastaví (**/globaloff**) sběr dat pro všechny procesy.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Spustí (**/processon**) nebo zastaví (**/processoff**) sběr dat pro proces určený identifikátorem procesu (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Spustí (**/threadon**) nebo zastaví (**/threadoff**) shromažďování dat pro vlákno, který je určen pomocí ID vlákna (`TID`).|
+    |[/globalon](../profiling/globalon-and-globaloff.md) [/globaloff](../profiling/globalon-and-globaloff.md)|Spustí (**globalon**) nebo zastaví ( **/globaloff**) sběr dat pro všechny procesy.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Spustí ( **/processon**) nebo zastaví ( **/processoff**) sběr dat pro proces určený identifikátorem procesu (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Spustí ( **/threadon**) nebo zastaví ( **/threadoff**) shromažďování dat pro vlákno, který je určen pomocí ID vlákna (`TID`).|
 
 ## <a name="end-the-profiling-session"></a>Ukončit relaci profilování
  Chcete-li ukončit relaci profilování, ukončete aplikaci, která je spuštěna instrumentovaná komponenta a následně zavolat **VSPerfCmd** [/Shutdown](../profiling/shutdown.md) možnost se profiler vypne a uzavře soubor dat profilování. **VSPerfClrEnv / off** příkaz vymaže proměnné prostředí profilování.

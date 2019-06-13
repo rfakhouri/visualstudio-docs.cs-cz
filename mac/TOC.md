@@ -71,7 +71,8 @@
 ## [Dostupné sady funkcí](workloads.md)
 ## ASP.NET Core
 ### [Podpora platformy .NET Core](net-core-support.md)
-### [Vytvoření vaší první aplikace ASP.NET Core](asp-net-core.md)
+### [Začínáme s ASP.NET Core](asp-net-core.md)
+### [Vytváření aplikací ASP.NET Core v sadě Visual Studio pro Mac](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript a TypeScript](javascript.md)
 ## Azure
@@ -82,6 +83,7 @@
 ## Vývoj her pro Unity
 ### [Vývoj her pro Unity](unity-tools.md)
 ### [Instalace a nastavení](setup-vsmac-tools-unity.md)
+### [Začínáme s Unity](unity-walkthrough.md)
 ### [Používání nástrojů Unity](using-vsmac-tools-unity.md)
 ### [Používání .NET 4.x v Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Protokol Změn](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)

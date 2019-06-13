@@ -1,5 +1,5 @@
 ---
-title: Nasazení základních charakteristikách
+title: První seznámení s nasazováním
 description: Další informace o dostupných možnostech při nasazování aplikací ze sady Visual Studio.
 ms.custom: mvc
 ms.date: 01/29/2019
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261974"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032553"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>První pohled na nasazení v sadě Visual Studio
 
@@ -40,7 +40,7 @@ Najdete v rychlých startů a kurzů pro podrobné pokyny. Přehled možností n
 
 Nasazení do místní složky se obvykle používá pro testování, nebo začněte dvoufázové nasazení, ve kterém se používá jiný nástroj pro poslední nasazení.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, a.** .NET Core**: Pomocí nástroje Publish pro nasazení do místní složky. Přesné dostupné možnosti závisí na typ vaší aplikace. V Průzkumníku řešení klikněte pravým tlačítkem myši na projekt a zvolte **publikovat**. (Pokud jste nenakonfigurovali dříve žádné profily publikování, kterou musí a klikněte na **vytvořit nový profil**.) Dále zvolte **složky**. Další informace najdete v tématu [nasadit do místní složky](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, a. **.NET Core**: Pomocí nástroje Publish pro nasazení do místní složky. Přesné dostupné možnosti závisí na typ vaší aplikace. V Průzkumníku řešení klikněte pravým tlačítkem myši na projekt a zvolte **publikovat**. (Pokud jste nenakonfigurovali dříve žádné profily publikování, kterou musí a klikněte na **vytvořit nový profil**.) Dále zvolte **složky**. Další informace najdete v tématu [nasadit do místní složky](quickstart-deploy-to-local-folder.md).
 
     ![Tlačítko Publikovat](../deployment/media/quickstart-publish.png)
 
@@ -120,6 +120,16 @@ Můžete povolit složitější vývoj a testování nasazení aplikací ve virt
 ## <a name="continuous-deployment"></a>Průběžné nasazování
 
 Kanály Azure můžete povolit průběžné nasazování vašich aplikací. Další informace najdete v tématu [kanály Azure](/azure/devops/pipelines/index?view=vsts) a [nasadit do Azure](/azure/devops/deploy-azure/index?view=vsts).
+
+## <a name="deploy-a-sql-database"></a>Nasazení databáze SQL
+
+- [Změnit cílové platformy a publikujte projekt databáze (SQL Server Data Tools (SSDT))](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
+
+- [Nasadit projekt služby Analysis Services (SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
+
+- [Nasadit projekty Integration Services (SSIS) a balíčky](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+
+- [Vytvoření a nasazení do místní databáze](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>Nasazení pro další typy aplikací
 

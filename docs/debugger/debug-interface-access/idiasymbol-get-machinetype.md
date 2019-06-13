@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83156630aee0727502894b286f8c6823e25a5fe9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: eef0507ccb7036748f5c9d36c9de521a17860a39
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399269"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032727"
 ---
 # <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
 Načte typ cíle procesoru.
@@ -33,7 +33,7 @@ HRESULT get_machineType ( 
 #### <a name="parameters"></a>Parametry
  `pRetVal`
 
-[out] Vrátí hodnotu z [cv_cpu_type_e – výčet](../../debugger/debug-interface-access/cv-cpu-type-e.md) výčet, který určuje cílový typ procesoru.
+[out] Vrátí hodnotu z [IMAGE_FILE_MACHINE_ konstanty](/windows/desktop/SysInfo/image-file-machine-constants) , který určuje cílový typ procesoru.
 
 ## <a name="return-value"></a>Návratová hodnota
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.
@@ -42,5 +42,5 @@ HRESULT get_machineType ( 
 > Vrácená hodnota `S_FALSE` znamená, že vlastnost není k dispozici pro symbol.
 
 ## <a name="see-also"></a>Viz také
-- [CV_CPU_TYPE_e – výčet](../../debugger/debug-interface-access/cv-cpu-type-e.md)
+- [IMAGE_FILE_MACHINE_ konstanty](/windows/desktop/SysInfo/image-file-machine-constants) 
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

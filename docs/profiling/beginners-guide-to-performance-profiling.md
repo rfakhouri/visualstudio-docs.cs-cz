@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 950e37fd1f1f42f534522c09a8322311c06cebd6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a79bcf2aade3a84e0453aec1d64e37c8a6a5c24c
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688511"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033038"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Měřit výkon aplikace díky analýze využití procesoru
 Nástroje pro profilaci v sadě Visual Studio můžete použít k analýze problémů s výkonem aplikace. V tomto postupu si ukážeme, jak používat kartu **Využití procesoru** v diagnostických nástrojích k získání dat o výkonu vaší aplikace. Diagnostické nástroje jsou podporované pro vývoj rozhraní .NET v sadě Visual Studio, včetně ASP.NET, nativního vývoje a vývoje v jazyce C++.
@@ -131,9 +131,9 @@ Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kar
     |||
     |-|-|
     |![1. krok](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Nejvyšší uzel ve stromech volání Využití procesoru je fiktivní.|
-    |![2. krok](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Ve většině aplikací, ve kterých zakážete možnost [Zobrazit externí kód](#view-external-code), je v druhé úrovni uzel **[Externí kód]**, který obsahuje systémový kód a kód architektury, který spouští a zastavuje aplikaci, vykresluje uživatelské rozhraní, řídí plánování podprocesů a na nejnižší úrovni zajišťuje pro aplikaci další služby.|
+    |![2. krok](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Ve většině aplikací, ve kterých zakážete možnost [Zobrazit externí kód](#view-external-code), je v druhé úrovni uzel **[Externí kód]** , který obsahuje systémový kód a kód architektury, který spouští a zastavuje aplikaci, vykresluje uživatelské rozhraní, řídí plánování podprocesů a na nejnižší úrovni zajišťuje pro aplikaci další služby.|
     |![3. krok](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Uzlu druhé úrovně jsou podřízeny metody uživatelského kódu a asynchronní rutiny, které volá nebo vytváří systémový kód a kód architektury druhé úrovně.|
-    |![4. krok](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Podřízené uzly metody obsahují jenom data pro volání nadřízené metody. Pokud zakážete **Zobrazit externí kód**, mohou metody aplikace obsahovat také uzel **[Externí kód]**.|
+    |![4. krok](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Podřízené uzly metody obsahují jenom data pro volání nadřízené metody. Pokud zakážete **Zobrazit externí kód**, mohou metody aplikace obsahovat také uzel **[Externí kód]** .|
 
     Další informace k hodnotám ve sloupcích:
 
@@ -149,15 +149,18 @@ Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kar
     ![Nástroje diagnostiky kritickou cestu](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
 
+    > [!NOTE]
+    > Pokud se zobrazí kód ve stromu volání označen jako kód "přerušení" nebo "unwalkable stohování", to znamená, že události trasování událostí pro Windows (ETW) pravděpodobně byly vyřazeny. Zkuste shromažďování trasování stejné podruhé k vyřešení daného problému.
+
 ## <a name="view-external-code"></a>Zobrazit externí kód
 
-Externím kódem se rozumí funkce systémových komponent a komponent architektury, které jsou spouštěné vámi napsaným kódem. Externí kód zahrnuje funkce, které spouštějí a zastavují aplikaci, vykreslují uživatelské rozhraní, řídí dělení na podprocesy a na nejnižší úrovni zajišťuje pro aplikaci další služby. Externí kód vás většinou nebude zajímat, a proto nástroj Využití procesoru shromažďuje externí funkce metody uživatele do jednoho uzlu **[Externí kód]**.
+Externím kódem se rozumí funkce systémových komponent a komponent architektury, které jsou spouštěné vámi napsaným kódem. Externí kód zahrnuje funkce, které spouštějí a zastavují aplikaci, vykreslují uživatelské rozhraní, řídí dělení na podprocesy a na nejnižší úrovni zajišťuje pro aplikaci další služby. Externí kód vás většinou nebude zajímat, a proto nástroj Využití procesoru shromažďuje externí funkce metody uživatele do jednoho uzlu **[Externí kód]** .
 
 Pokud se chcete podívat na cesty volání externího kódu, vyberte v seznamu **filtru zobrazení** možnost **Zobrazit externí kód** a pak zvolte **Použít**.
 
 ![Filtr zobrazení s vybranou možností Zobrazit externí kód](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 
-Myslete na to, že řetězy volání externího kódu je většinou hluboko vnořené, takže šířka sloupce Název funkce může na většině počítačových monitorů – s výjimkou těch největších – přesáhnout šířku zobrazení. V takovém případě se názvy funkcí zobrazují jako **[...]**.
+Myslete na to, že řetězy volání externího kódu je většinou hluboko vnořené, takže šířka sloupce Název funkce může na většině počítačových monitorů – s výjimkou těch největších – přesáhnout šířku zobrazení. V takovém případě se názvy funkcí zobrazují jako **[...]** .
 
 K nalezení hledaného uzlu použijte vyhledávací pole a pak použijte k zobrazení dat vodorovný posuvník.
 

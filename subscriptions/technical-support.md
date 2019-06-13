@@ -7,12 +7,12 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 description: Další informace o výhody technické podpory, které jsou součástí předplatných sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 50b6245be908bffc0d2abb9db7f74ed14f878224
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94c8ac818fbdee17c75c508f509e93b50c3871ec
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427478"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033109"
 ---
 # <a name="technical-support-benefits-included-with-visual-studio-subscriptions"></a>Výhody technické podpory, které jsou součástí předplatných sady Visual Studio
 
@@ -29,6 +29,6 @@ Pokud máte otázky nebo potřebujete pomoc s technickými problémy, jsou k dis
 
 - [Technická podpora](vs-tech-support.md): Odborná pomoc je k dispozici pro řešení problémů typu break-fix v neprodukčních prostředích.
 
-- [Prioritní podpora](vs-priority-support.md): Položte svou otázku ve výběrovém seznamu fór. Pokud komunity vývojářů neodpovídá do dvou dnů, Microsoft bude reagovat. (Podporováno pouze pomocí Accounts Microsoft).
+- [Komunitní fóra pro vývojáře](vs-priority-support.md): Přístup k fórům úplný rozsah Developer Network. 
 
 - [Komunikace se specialistou](vs-concierge-chat.md): Chat s námi o pomoc najít technickou dokumentaci nebo informace o produktu nebo využít výhody vašeho předplatného.

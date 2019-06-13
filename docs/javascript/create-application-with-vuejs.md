@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226041"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033138"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Vytvoření aplikace Vue.js pomocí Node.js Tools for Visual Studio
 
@@ -169,7 +169,15 @@ Tyto kroky vyžadují vue – rozhraní příkazového řádku 3.0, která je ak
 
 #### <a name="build-with-vue-cli-30"></a>Sestavení s vue – rozhraní příkazového řádku 3.0
 
-Neznámý problém s vue cli 3.0 brání automatizace procesu sestavení. Pokaždé, když se pokusíte aktualizovat složku wwwroot, je potřeba spustit příkaz `npm run build` ve složce klientskou aplikaci.
+Neznámý problém s vue cli 3.0 může zabránit automatizace procesu sestavení. Pokaždé, když se pokusíte aktualizovat složku wwwroot, je potřeba spustit příkaz `npm run build` ve složce klientskou aplikaci.
+
+Alternativně můžete sestavit projekt vue – rozhraní příkazového řádku 3.0 jako událost před sestavením používání vlastností projektu ASP.NET. Klikněte pravým tlačítkem na projekt, zvolte **vlastnosti**a zahrnovat následující příkazy v **sestavení** kartě **příkazový řádek události před sestavením** textového pole.
+
+``` cmd
+cd ./client-app
+npm run build
+cd ../
+```
 
 ## <a name="limitations"></a>Omezení
 

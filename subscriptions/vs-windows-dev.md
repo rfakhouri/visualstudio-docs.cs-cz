@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o účtu pro vývojáře Windows, součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a497db64345cffe4f87e768a83816489ebd4c21a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aacd9dab6353d3cfde727717c67c400f6e17514f
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978701"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032735"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Účet pro vývojáře Windows v předplatných sady Visual Studio
 
@@ -55,8 +55,8 @@ Doporučujeme vytvořit okno prohlížeče "privátní" pro tento proces.  Třeb
 | Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | Zahrnuje                                                            |Ano|
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                            |  Není k dispozici|
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              |  Není k dispozici                                            |  Není k dispozici|
-| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici                                            |  Není k dispozici|
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
+||
 
 <sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services pro vývojáře. Vyloučí:  Microsoft Partner Network (MPN), Imagine nejcennější Professional (MVP), Regional Director (RD), MCT Software & Services.*
 

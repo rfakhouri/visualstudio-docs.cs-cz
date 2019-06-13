@@ -1,5 +1,5 @@
 ---
-title: Ladicí program systému windows | Dokumentace Microsoftu
+title: Zkontrolujte data pomocí ladicího programu systému windows | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 04/25/2018
 ms.topic: conceptual
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de19d073a3002c777c0458a99381ee943d297944
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e14f1864452edd00237164e14af74330e3c209f7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852503"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033002"
 ---
-# <a name="learn-about-debugger-windows-in-visual-studio"></a>Další informace o ladicím programu Windows v sadě Visual Studio
+# <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Zkontrolujte data pomocí okna ladicího programu v sadě Visual Studio
 
 Můžete otevřít většinu oknech ladicího programu během ladění programu. Pokud chcete zobrazit seznam oken ladicího programu, nastavte zarážku a spusťte ladění. Při dosažení zarážky a provádění zastaví, klikněte na tlačítko **ladit > Windows**.
 

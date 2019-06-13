@@ -399,6 +399,8 @@
                       href: ide/reference/move-type-to-matching-file.md
                     - name: Přesunutí člena nahoru
                       href: ide/reference/pull-members-up.md
+                    - name: Dokončení regulární výraz pomocí IntelliSense
+                      href: ide/reference/regex-completion-through-intellisense.md
                     - name: Odebrání nedosažitelného kódu
                       href: ide/reference/remove-unreachable-code.md
                     - name: přejmenování

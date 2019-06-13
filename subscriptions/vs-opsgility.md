@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o dovedností mě nahoru – používá technologii výhodu školení Opsgility součástí vybraného předplatného sady Visual Studio.
 searchscope: VS Subscriptions
-ms.openlocfilehash: 110ae0871e907a33dce20b059188919f645b4401
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c986eac1c98d2ba7b511cc01f03a823ced496d63
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946991"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032821"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Dovednosti mě až – používá technologii výhoda školení Opsgility v předplatných sady Visual Studio
 
@@ -39,8 +39,8 @@ Vybraná předplatná sady Visual Studio zahrnují přístup k odborné školen�
 | Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | 3 měsíce                                                            |Ne.  K dispozici pro nové předplatitele pouze         |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | 3 měsíce                                             |  Ne.  K dispozici pro nové předplatitele pouze         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | 3 měsíce                                              | Ne.  K dispozici pro nové předplatitele pouze         |
-| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici | Není k dispozici  |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
+||
 
 *Vyloučí:  Microsoft Partner Network (MPN), nejcennější Professional (MVP), Regional Director (RD), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
 

@@ -7,19 +7,34 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Další informace o Visual Studio Dev Essentials a jak se zaregistrovat.
 searchscope: VS Subscription
-ms.openlocfilehash: 3f193d2f1d2f2f1f031773dcde3b2a209f8eebb7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dc900de5f20c48f683c0dc27f7c9645bd38fcc0
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833982"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033100"
 ---
-# <a name="how-to-join-visual-studio-dev-essentials"></a>Jak propojit Visual Studio Dev Essentials
+# <a name="visual-studio-dev-essentials"></a>Visual Studio Dev Essentials
 
 Visual Studio Dev Essentials získáte všechno, co potřebujete k vytvoření a nasazení vaší aplikace na libovolné platformě. Díky nástrojům stavu moderní, sílu cloudu, školení a podpora je náš zatím nejkomplexnější bezplatný vývojářský program všech dob.
 
 Navštivte [Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) Další informace o všech novinkách, který je součástí sady Visual Studio Dev Essentials členství.
 
+## <a name="opt-in-to-visual-studio-dev-essentials"></a>Přihlásit se k programu Visual Studio Dev Essentials
+
 Jakmile budete připraveni k registraci, stačí kliknout [přidejte se nyní](https://my.visualstudio.com/Benefits?wt.mc_id=o~msft~vscom~devessentials-hero~mt689&campaign=o~msft~vscom~devessentials-hero~mt689) tlačítko.
 
 To je všechno je to.
+
+## <a name="opt-out-of-visual-studio-dev-essentials"></a>Vyjádřit výslovný nesouhlas Visual Studio Dev Essentials
+
+Pokud budete chtít zapojení do programu Visual Studio Dev Essentials, postupujte podle těchto kroků:
+
+1. Přejít na [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
+2. Přihlaste se ke svému předplatnému.  (Nápověda [přihlášení](signing-in.md).)
+3. Po úspěšném přihlášení se zobrazí seznam aktuálních předplatných.
+4. Na řádku spojeném s Visual Studio Dev Essentials, klikněte na tlačítko **opustit program** ve sloupci odkazy vpravo na konci.
+5. Zobrazí se automaticky otevírané okno. Vyberte **potvrďte**.
+
+    > [!NOTE]
+    > Opětovné zapojení se do programu Visual Studio Dev Essentials je snadné.  Jednoduše postupujte podle kroků 1-5 a klikněte **připojte se k Visual Studio Dev Essentials** tlačítko v horní části sloupce odkazy. Pak klikněte na tlačítko **potvrdit**.

@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Zjistěte, jak aktivovat výhody technické podpory součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 238fd0b4c79e5fb99c629d82386676ec175a2a17
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402033"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032802"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivace a používání výhody technické podpory v předplatných sady Visual Studio
 
@@ -116,8 +116,8 @@ Pokud chcete používat vaše výhoda Visual Studio předplatné technickou podp
 | Visual Studio Professional (Standard) | VL, Azure, maloobchod, vybrali NFR<sup>2</sup>                                        | 2 incidenty                                                          |Ano         |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | 2 incidenty                                             |  Ano         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | 2 incidenty                                               | Ano         |
-| Visual Studio Dev Essentials | Není k dispozici | Není k dispozici |Není k dispozici|
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
+||
 
 <sup>1</sup> *zahrnuje: Imagine Premium, BizSpark. Vyloučí: Neprodejné (NFR) Imagine Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Standard, nejcennější Professional (MVP), Regional Director (RD), MCT Software & Services.*
 

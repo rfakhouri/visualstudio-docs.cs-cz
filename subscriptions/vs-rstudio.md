@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: conceptual
 description: Další informace o benefitech RStudio Desktop součástí předplatných sady Visual Studio Enterprise
 searchscope: VS Subscription
-ms.openlocfilehash: 59d0e3de91417969e904221e05b5fcd74d8ba44a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b52d22cce30a668065e148494bb84568535eab7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947058"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031946"
 ---
 # <a name="the-rstudio-desktop-benefit-included-in-visual-studio-enterprise-subscriptions"></a>Výhoda RStudio Desktop součástí předplatných sady Visual Studio Enterprise
 
@@ -91,9 +91,9 @@ RStudio je dostupné v open source a komerční edice a běží na ploše (Windo
 |         Visual Studio Professional (Standard)          | VL maloobchodního prodeje |   Není k dispozici    | Není k dispozici |
 |              Visual Studio Test Professional (Standard)              |    VL maloobchodního prodeje     |   Není k dispozici    | Není k dispozici |
 |                      Předplatné MSDN Platforms (Standard)                       |    VL maloobchodního prodeje     |   Není k dispozici   | Není k dispozici |
-|                     Visual Studio Dev Essentials                     |        Není k dispozici         |   Není k dispozici    |       Není k dispozici       |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) |       Azure       | Není k dispozici |       Není k dispozici       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Není k dispozici |       Není k dispozici       |
+||
 
 <sup>1</sup>*NFR zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & služby pro vývojáře, MCT Software a služby, nejcennější Professional (MVP) Regional Director (RD), Microsoft Partner Network (MPN), FTE Imagine.*
 

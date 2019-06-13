@@ -1,25 +1,25 @@
 ---
 title: Instalace a používání sady Visual Studio pro Mac za bránou firewall nebo proxy serverem
-description: Tento dokument obsahuje seznam hostitelů, které musí být uvedeny v seznamu povolených v bráně firewall povolit sady Visual Studio pro Mac (a její úlohy, včetně Xamarinu) pro práci v podnikovém prostředí.
+description: Tento dokument obsahuje seznam hostitelů, které musí být povoleno v bráně firewall umožníte softwaru Visual Studio pro Mac (a její úlohy, včetně Xamarinu) pro práci v podnikovém prostředí.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: 70ac8defdcea9cccd8a3b3f9be71d38fb78c9c50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 446baf89dacfe7b742e3da3307711435495c8da4
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997956"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033194"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio pro Mac za bránou firewall nebo proxy serverem
 
-Pokud vy nebo vaše organizace používá bezpečnostní opatření, jako je například Brána firewall nebo proxy server, pak používají domény adresy URL, které můžete chtít "seznamu povolených IP adres" a porty a protokoly, které můžete chtít otevřít, abyste měli co nejlepších výsledků při instalaci a použití samostatného Visual dio pro Mac a služby Azure.
+Pokud vy nebo vaše organizace používá bezpečnostní opatření, jako je například Brána firewall nebo proxy server, pak jsou domény může být vhodné přidat do "seznamu povolených" a porty a protokoly, které může být vhodné a otevřete tak, abyste měli co nejlepších výsledků při instalaci a použití vztahu Protokolování přístupu uživatele Studio pro Mac a služby Azure.
 
-- [**Install Visual Studio for Mac**](#install-visual-studio-for-mac): Tyto tabulky obsahují adresy URL do seznamu povolených IP adres, abyste měli přístup ke všem funkcím a úlohy sady Visual Studio pro Mac.
+- [**Install Visual Studio for Mac**](#install-visual-studio-for-mac): Tyto tabulky obsahují domény, které musí umožňovat připojení, abyste měli přístup ke všem funkcím a úlohy sady Visual Studio pro Mac.
 
-- [**Pomocí sady Visual Studio pro Mac**](#use-visual-studio-for-mac): Abyste měli přístup ke všem službám a funkcím, které mají tyto tabulky obsahují adresy URL do seznamu povolených IP adres.
+- [**Pomocí sady Visual Studio pro Mac**](#use-visual-studio-for-mac): Tyto tabulky obsahují domény, které musí umožňovat připojení, abyste měli přístup k související funkce.
 
 ## <a name="install-visual-studio-for-mac"></a>Instalace sady Visual Studio pro Mac
 
@@ -50,7 +50,7 @@ Vzhledem k tomu, že Visual Studio pro Mac – instalační program stáhne z r�
 
 ## <a name="use-visual-studio-for-mac"></a>Pomocí sady Visual Studio pro Mac
 
-Pokud chcete mít jistotu, že máte přístup pro všechny funkce, které potřebujete v sadě Visual Studio pro Mac během za proxy nebo brány firewall, doporučujeme na seznam povolených následující domény a porty.
+Pokud chcete mít jistotu, že máte přístup pro všechny funkce, které potřebujete v sadě Visual Studio pro Mac během za proxy nebo brány firewall, doporučujeme přidat následující porty a domény do seznamu Povolené přístupu.
 
 ### <a name="general"></a>Obecné
 

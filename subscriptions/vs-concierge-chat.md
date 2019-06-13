@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech specialistou součástí předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: fd190dbd22f25dd14e18d11f73ee17327fc8c27d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51fb2242c87ba3d091f62bc2271aea60b56f1283
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947849"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032194"
 ---
 # <a name="concierge-chat"></a>Komunikace se specialistou
 
@@ -45,7 +45,7 @@ Získání nápovědy prostřednictvím specialistou služby jsou velmi snadné.
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | K dispozici                                             |  Ano          |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | K dispozici                                              |  Ano          |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
-| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
+
 
 <sup>1</sup>*zahrnuje:  Neprodejné (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Vyloučí:  FTE Imagine nejcennější Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN).*
 

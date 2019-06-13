@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o předplatné Power BI Pro, které jsou součástí vybraných předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: bb13ad93095a5a4d0e7c94ae24889220477feb0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948733"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031980"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro v předplatných sady Visual Studio
 
@@ -73,8 +73,8 @@ Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo se přih
 | Visual Studio Professional (standardní, měsíčních cloudových) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                            |Není k dispozici         |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                                            |Není k dispozici         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | K dispozici       |  Ano|
-| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici|
 | Visual Studio Enterprise (měsíční cloud) | Azure                                       | Není k dispozici                                  |Není k dispozici|
+||
 
 <sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & služby pro vývojáře, MCT Software & služby, nejcennější Professional (MVP) Regional Director (RD).  Vyloučí:  Microsoft Partner Network (MPN), FTE, Imagine.*
 

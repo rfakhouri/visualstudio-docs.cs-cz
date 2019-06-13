@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech Office 365 pro vývojáře, které jsou součástí vašeho předplatného sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 12851dcb19824ceccb16bacbba2fdeec29c7df47
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501190"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032714"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Zvýhodněné předplatné Office 365 pro vývojáře v předplatných sady Visual Studio
 
@@ -70,8 +70,8 @@ Další informace o předplatné Office 365 pro vývojáře, podívejte se [k pr
 | Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | Zahrnuje                                                            |Ano         |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                             |  Není k dispozici         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              | Není k dispozici         |
-| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
+||
 
 <sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services pro vývojáře, MCT Software & Services.  Vyloučí:  Microsoft Partner Network (MPN), představte si, nejcennější Professional (MVP) Regional Director (RD).*
 
