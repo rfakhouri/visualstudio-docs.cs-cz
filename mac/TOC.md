@@ -97,3 +97,6 @@
 ## [Nahlášení problému](report-a-problem.md)
 ## [Odstraňování potíží: Proč se mi nezobrazují všechny šablony?](troubleshooting-no-templates.md)
 ## [Odstraňování potíží: Aktualizátor obsahuje chyby načítání informací](updater-troubleshooting.md)
+
+# [Zpráva k vydání verze](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [Zpráva k vydání verze Preview](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
