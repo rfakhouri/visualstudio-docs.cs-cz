@@ -1,18 +1,18 @@
 ---
 title: Použití architektury Microsoft pro testování jednotek pro jazyk C++
-ms.date: 05/20/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934485"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132133"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Použít Microsoft rozhraní testování části pro C++ v sadě Visual Studio
 
@@ -28,9 +28,9 @@ V některých případech, například při testování Neexportované funkce v 
 
 1. Upravte vlastnosti projektu, aby zahrnovaly hlavičkové soubory a soubory knihoven, které jsou požadovány pro testování částí.
 
-   1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu pro testování programu a pak zvolte **vlastnosti** > **vlastnosti konfigurace**  >  **Adresáře VC ++**.
+   1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu pro testování programu a pak zvolte **vlastnosti** > **vlastnosti konfigurace**  >  **Adresáře VC ++** .
 
-   2. Klikněte na šipku dolů v následujících řádcích a zvolte  **\<Upravit >**. Přidejte tyto cesty:
+   2. Klikněte na šipku dolů v následujících řádcích a zvolte  **\<Upravit >** . Přidejte tyto cesty:
 
       | Adresář | Vlastnost |
       |-| - |
@@ -39,7 +39,7 @@ V některých případech, například při testování Neexportované funkce v 
 
 2. Přidáte soubor testu jednotek C++:
 
-   - Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a zvolte **přidat** > **nová položka**  >  **C++ souboru (.cpp)**.
+   - Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a zvolte **přidat** > **nová položka**  >  **C++ souboru (.cpp)** .
 
 ## <a name="write-the-tests"></a>Zápis testů
 

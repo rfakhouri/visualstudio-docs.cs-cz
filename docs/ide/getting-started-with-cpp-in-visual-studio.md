@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a132787a5af0aca9b42775931b343b89710ce91b
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962776"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043397"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Začínáme s C++ v sadě Visual Studio
 
@@ -177,4 +177,4 @@ Blahopřejeme k dokončení tohoto rychlého startu!
 
 - [Pomocí integrovaného vývojového prostředí sady Visual Studio pro vývoj pro klientské počítače C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
 - [Návod: Vytvoření jednoduché aplikace s C# nebo Visual Basic](../get-started/csharp/tutorial-wpf.md)
-- [Tipy pro vyšší produktivitu sady Visual Studio](../ide/productivity-tips-for-visual-studio.md)
+- [Pro zvýšení produktivity v sadě Visual Studio](../ide/productivity-features.md)

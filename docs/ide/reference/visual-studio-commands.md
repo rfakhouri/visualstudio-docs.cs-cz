@@ -12,20 +12,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 294ca45123faf1625b6f09a638ddc089a31d85cc
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789367"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043594"
 ---
-# <a name="visual-studio-commands"></a>Příkazy sady Visual Studio
+# <a name="visual-studio-commands"></a>příkazy sady Visual Studio
 
-Příkazy sady Visual Studio umožňují spuštění příkazu z **příkaz** okně **okamžité** okna, nebo **najít/příkaz** pole. V obou případech znak větší (`>`) se používá k označení, že je má následovat příkaz a ne operace hledání nebo ladění.
+Můžete zadat příkazy sady Visual Studio v **příkaz** okně **okamžité** okna, nebo **najít/příkaz** pole. V obou případech znak větší (`>`) označuje, že následující příkaz, a ne operace hledání nebo ladění.
 
-Úplný seznam příkazů a jejich syntaxi můžete najít **klávesnice, možnosti prostředí** dialogové okno.
+Úplný seznam příkazů a jejich syntaxi můžete najít na **klávesnice** stránku **nástroje** > **možnosti**  >   **Prostředí**.
 
-Řídicí znak pro příkazy sady Visual Studio je znak stříšky (^), což znamená, že okamžitě následující znak je interpretován doslovně a ne jako řídicí znak. To slouží k vložení uvozovek ("), mezer, úvodních lomítek, střížek nebo jakýmikoli literálními znaky parametru nebo hodnotě switch s výjimkou názvů switchů. Například
+V lokalizovaných verzích rozhraní IDE lze zadat názvy příkazů v původním jazyce rozhraní IDE nebo v angličtině. Například můžete zadat buď `File.NewFile` nebo `Fichier.NouveauFichier` ve francouzském prostředí IDE, chcete-li spustit tak stejný příkaz.
+
+Mnoho příkazů má aliasy. Seznam příkazových aliasů naleznete v tématu [příkaz aliasy](../../ide/reference/visual-studio-command-aliases.md). Příkaz klávesové zkratky, naleznete v tématu [výchozí klávesové zkratky v sadě Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md).
+
+## <a name="escape-character"></a>Řídicí znak
+
+Řídicí znak pro příkazy sady Visual Studio je znak stříšky (^). Řídicí znak znamená, že znak, který bezprostředně následují je interpretován doslovně a ne v jako řídicí znak. To slouží k vložení uvozovek ("), mezer, úvodních lomítek, střížek nebo jakýmikoli literálními znaky parametru nebo hodnotě switch s výjimkou názvů switchů. Příklad:
 
 ```
 >Edit.Find ^^t /regex
@@ -33,11 +39,9 @@ Příkazy sady Visual Studio umožňují spuštění příkazu z **příkaz** ok
 
 Stříška funguje stejně, ať už se jedná o vnitřní nebo vnější uvozovky. Pokud poslední znak na řádku stříška, je ignorován.
 
-V lokalizovaných verzích rozhraní IDE lze zadat názvy příkazů v původním jazyce rozhraní IDE nebo v angličtině. Například můžete zadat buď `File.NewFile` nebo `Fichier.NouveauFichier` ve francouzském prostředí IDE, chcete-li spustit tak stejný příkaz.
+## <a name="commands-with-arguments"></a>Příkazy s argumenty
 
-Mnoho příkazů má aliasy. Seznam příkazových aliasů naleznete v tématu [aliasy příkazů aplikace Visual Studio](../../ide/reference/visual-studio-command-aliases.md).
-
-Následující příkazy přijmou argumenty a/nebo přepínače.
+Následující příkazy přijmou argumenty nebo přepínače:
 
 | Název příkazu | Popis |
 | - | - |
@@ -74,8 +78,8 @@ Následující příkazy přijmou argumenty a/nebo přepínače.
 | [Přepnout zarážku](../../ide/reference/toggle-breakpoint-command.md) | V závislosti na jejím aktuálním stavu na aktuální pozici v souboru se změní na zarážku, zapnout nebo vypnout. |
 | [Příkaz Kukátko](../../ide/reference/watch-command.md) | Vytvoří a otevře zadanou instanci **Watch** okna. |
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Příkazové okno](../../ide/reference/command-window.md)
-- [Pole Najít/příkaz](../../ide/find-command-box.md)
-- [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Okno příkazového řádku](../../ide/reference/command-window.md)
+- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Visual Studio aliasy příkazů](../../ide/reference/visual-studio-command-aliases.md)

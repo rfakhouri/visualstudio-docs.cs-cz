@@ -13,20 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: cdef82a8601cb2c9b0b4d3e4cad4071241f239a8
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820949"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043370"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 
-Další informace o přístupnost přes klávesnici, naleznete v tématu [a tipy k přístupnosti](../ide/reference/accessibility-tips-and-tricks.md) a [jak: Výhradní používání klávesnice](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Můžete zpřístupnit různé druhy [příkazy](reference/visual-studio-commands.md) a windows v sadě Visual Studio výběrem příslušné klávesové zkratky. Na této stránce jsou uvedeny výchozí klávesové zkratky příkaz pro **Obecné** profilu, který jste možná vybrali při instalaci sady Visual Studio. Bez ohledu na to, který profil vyberete, je možné [Identifikujte zástupce](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) pro příkaz tak, že otevřete **možnosti** dialogovém okně rozšíření **prostředí** uzel a poté volbou **Klávesnice**. Klávesové zkratky můžete také upravit přiřazením různých zkratek jakémukoli příkazu.
 
-Řadu příkazů a oken v sadě Visual Studio můžete přistupovat výběrem příslušné klávesové zkratky. Na této stránce jsou uvedeny výchozí klávesové zkratky pro **Obecné** profilu, který jste možná vybrali při instalaci sady Visual Studio. Bez ohledu na to, který profil vyberete, můžete identifikovat klávesovou zkratku pro příkaz tak, že otevřete **možnosti** dialogovém okně rozšíření **prostředí** uzel a poté volbou **klávesnice**. Klávesové zkratky můžete také upravit přiřazením různých zkratek jakémukoli příkazu.
+Seznam běžných klávesových zkratek a další informace o zvýšení produktivity naleznete v tématu:
 
-Seznam běžných klávesových zkratek a další informace o zvýšení produktivity naleznete v tématu [výchozí klávesové zkratky pro často používané příkazy v sadě Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [klávesnice tipy](../ide/tips-and-tricks-for-visual-studio.md), a [ Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md).
+- [Klávesové zkratky pro často používané příkazy](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Tipy pro používání klávesnice](../ide/productivity-shortcuts.md)
+- [Tipy pro vyšší produktivitu](../ide/productivity-features.md).
+
+Další informace o usnadnění přístupu v sadě Visual Studio najdete v tématu [a tipy k přístupnosti](../ide/reference/accessibility-tips-and-tricks.md) a [jak: Výhradní používání klávesnice](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 |||||
 |-|-|-|-|
@@ -1150,5 +1154,4 @@ Tyto klávesové zkratky jsou určeny *globální*, což znamená, že je lze vy
 
 ## <a name="see-also"></a>Viz také:
 
-- [Editor obrázků pro ikony](/cpp/windows/image-editor-for-icons)
-- [Používání atributu IntelliSense](../ide/using-intellisense.md)
+- [Příkazy sady Visual Studio](reference/visual-studio-commands.md)

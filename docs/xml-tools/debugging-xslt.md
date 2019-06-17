@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e108e476bfa9cb3ce699a16c77eb3520ed4785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67ea95e3c52daed03acfe451f353edc039e1fecb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838477"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043532"
 ---
 # <a name="debugging-xslt"></a>Ladění XSLT
 
@@ -25,7 +25,7 @@ Krokování s vnořením do krokování přes nebo krokování mimo kód můžet
 Po spuštění ladění otevře ladicí program XSLT windows lze zobrazit, že vstupní dokument a XSLT výstupu.
 
 > [!NOTE]
-> Ladicí program XSLT je dostupná pouze v edici Enterprise systému Visual Studio.
+> Ladicí program XSLT je pouze k dispozici v edicích sady Visual Studio Professional a Enterprise.
 
 ## <a name="debug-from-the-xml-editor"></a>Ladění z editoru XML
 

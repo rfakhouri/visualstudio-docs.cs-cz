@@ -1,18 +1,18 @@
 ---
 title: 'Postupy: Zápis testů jednotek pro knihovny DLL C++'
-ms.date: 05/01/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 38d792ad9264c007dab296b65aa330dfa142769e
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226351"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132153"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Postupy: Zápis testů jednotek pro knihovny DLL C++
 
@@ -152,13 +152,9 @@ Následující kroky ukazují postup vytvoření projektu knihovny DLL v sadě V
 
 1. Přidejte projekt knihovny DLL do odkazů projektu testovacího projektu:
 
-   1. Otevřete vlastnosti projektu testu a zvolte **společné vlastnosti** > **rámec a odkazy**.
+   1. Klikněte pravým tlačítkem na uzel projektu testu v **Průzkumníka řešení** a zvolte **přidat** > **odkaz**.
 
-        ![Vlastnosti projektu C++ | Rámec a odkazy](../test/media/utecpp08.png)
-
-   2. Zvolte **přidat nový odkaz**.
-
-        V **přidat odkaz** dialogového okna, vyberte projekt knihovny DLL a vyberte **přidat**.
+   2. V **přidat odkaz** dialogového okna, vyberte projekt knihovny DLL a vyberte **přidat**.
 
         ![Vlastnosti projektu C++ | Přidat nový odkaz](../test/media/utecpp09.png)
 

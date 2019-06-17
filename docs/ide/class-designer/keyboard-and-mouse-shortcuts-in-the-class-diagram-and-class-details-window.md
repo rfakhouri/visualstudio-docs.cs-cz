@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a867986f26037473f5a45341f8d454b560c586ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37c56a14e5ac4358be53baa41094c23253608bbb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975057"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043037"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Klávesové zkratky klávesnice a myši v diagramu tříd a podrobností třídy okna
 
@@ -103,3 +103,6 @@ Pomocí těchto klíčů přejděte **podrobností třídy** okno:
 ## <a name="see-also"></a>Viz také:
 
 - [Vytvoření a konfigurace členů typu](creating-and-configuring-type-members.md)
+- [Jak výhradní používání klávesnice](../reference/how-to-use-the-keyboard-exclusively.md)
+- [Výchozí klávesové zkratky v sadě Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md)
+- [Klávesové zkratky v Blendu](../../designers/keyboard-shortcuts-in-blend.md)

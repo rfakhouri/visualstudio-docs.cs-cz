@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f56482dbbe76722e8b8d55fad01d283de2dc113e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 924b3000ffa0648a9086ed4771e921a939859804
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263617"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043557"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Kurz: Vytvoření jednoduché aplikace pomocí jazyka Visual Basic
 
@@ -305,13 +305,13 @@ Blahopřejeme k dokončení tohoto kurzu! Můžete najít *.exe* vytvořeným v 
 ::: moniker range="vs-2017"
 
 - [Co je nového v sadě Visual Studio 2017](../../ide/whats-new-visual-studio-2017.md)
-- [Tipy pro vyšší produktivitu](../../ide/productivity-tips-for-visual-studio.md)
+- [Tipy pro vyšší produktivitu](../../ide/productivity-features.md)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 - [Co je nového ve Visual Studio 2019](../../ide/whats-new-visual-studio-2019.md)
-- [Tipy pro vyšší produktivitu](../../ide/productivity-tips-for-visual-studio.md)
+- [Tipy pro vyšší produktivitu](../../ide/productivity-features.md)
 
 ::: moniker-end

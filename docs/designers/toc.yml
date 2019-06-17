@@ -144,7 +144,7 @@
               href: ../ide/step-3-add-a-countdown-timer.md
             - name: 'Krok 4: Přidání metody CheckTheAnswer()'
               href: ../ide/step-4-add-the-checktheanswer-parens-method.md
-            - name: 'Krok 5: Přidání obslužných rutin událostí pro ovládací prvky NumericUpDown'
+            - name: 'Krok 5: Přidání obslužných rutin událostí Enter pro ovládací prvky NumericUpDown'
               href: ../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
             - name: 'Krok 6: Přidání úlohy odčítání'
               href: ../ide/step-6-add-a-subtraction-problem.md
@@ -159,7 +159,7 @@
               href: ../ide/tutorial-3-create-a-matching-game.md
             - name: 'Krok 1: Vytvoření projektu a přidání tabulky do formuláře'
               href: ../ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-            - name: 'Krok 2: Přidání objektu Random a seznamu ikon'
+            - name: 'Krok 2: Přidání náhodného objektu a seznamu ikon'
               href: ../ide/step-2-add-a-random-object-and-a-list-of-icons.md
             - name: 'Krok 3: Přiřazení náhodné ikony každému popisku'
               href: ../ide/step-3-assign-a-random-icon-to-each-label.md

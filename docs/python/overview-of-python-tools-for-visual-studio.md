@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f218db0d10e6a7e959b3a5fdc2f38ceff2299c9b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c137b6bd8a38ac606a547ce961c4f040e60c6d87
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747571"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043363"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Práce s využitím Pythonu v sadě Visual Studio ve Windows
 
@@ -40,7 +40,7 @@ Jak začít:
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio podporuje všechny oficiálně podporované verze jazyka Python, jak jsou určené [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). Konkrétně verze 2.7, 3.5, 3.6 a 3.7.
+> Visual Studio podporuje Python verze 2.7, stejně jako verze 3.5 nebo novější. I když je možné použít Visual Studio k úpravě kódu napsaného v jiných verzích Pythonu, nejsou oficiálně podporované těchto verzí a funkce, jako je IntelliSense a ladění nemusí fungovat.
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Podpora pro více interprety

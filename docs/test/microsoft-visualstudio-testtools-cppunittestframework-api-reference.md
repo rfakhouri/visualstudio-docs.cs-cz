@@ -1,18 +1,18 @@
 ---
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
-ms.date: 11/04/2017
+ms.date: 06/13/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3634dcd7cf136aa52de3ebf6bf5bfc3d57632d2c
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820765"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132147"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referenční dokumentace rozhraní API atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -25,7 +25,8 @@ Toto téma obsahuje seznam veřejných členů náležících `Microsoft::Visual
 Hlavičky a knihovny lib cesty se automaticky nakonfigurují v nativní testovacího projektu.
 
 ## <a name="In_this_topic"></a> V tomto tématu
- [CppUnitTest.h](#cppUnitTest_h)
+
+[CppUnitTest.h](#cppUnitTest_h)
 
 - [Vytvoření testovací třídy a metody](#create_test_classes_and_methods)
 
@@ -184,7 +185,7 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
- Přidá atributy definované s jedním nebo více `TEST_METHOD_ATTRIBUTE` makra testovací metody *testClassName*.
+ Přidá atributy definované s jedním nebo více `TEST_METHOD_ATTRIBUTE` makra testovací metody *testMethodName*.
 
  A `TEST_METHOD_ATTRIBUTE` makra definuje atribut s názvem *attributeName* a hodnota *: vlastnost attributeValue*.
 
@@ -215,37 +216,38 @@ END_TEST_MODULE_ATTRIBUTE()
  A `TEST_MODULE_ATTRIBUTE` makra definuje atribut s názvem *attributeName* a hodnota *: vlastnost attributeValue*.
 
 #### <a name="pre_defined_attributes"></a> Předem definované atributy
- Tyto předdefinované atributy a makra lze nahrazuje makra `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE`, nebo `TEST_MODULE_ATTRIBUTE` popsané výše.
+
+ Tyto předdefinované atributy a makra jsou k dispozici v zájmu usnadnění práce pro běžné případy. Mohou být nahrazeny makra `TEST_METHOD_ATTRIBUTE` popsané výše.
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
- Definuje atribut s názvem `Owner` a hodnota atributu *ownerAlias*.
+ Definuje `TEST_METHOD_ATTRIBUTE` s názvem `Owner` a hodnota atributu *ownerAlias*.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
- Definuje atribut s názvem `Description` a hodnota atributu *popis*.
+ Definuje `TEST_METHOD_ATTRIBUTE` s názvem `Description` a hodnota atributu *popis*.
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
- Definuje atribut s názvem `Priority` a hodnota atributu *priority*.
+ Definuje `TEST_METHOD_ATTRIBUTE` s názvem `Priority` a hodnota atributu *priority*.
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
- Definuje atribut s názvem `WorkItem` a hodnota atributu *pracovní položky*.
+ Definuje `TEST_METHOD_ATTRIBUTE` s názvem `WorkItem` a hodnota atributu *pracovní položky*.
 
 ```cpp
 TEST_IGNORE()
 ```
 
- Definuje atribut s názvem `Ignore` a hodnota atributu `true`.
+ Definuje `TEST_METHOD_ATTRIBUTE` s názvem `Ignore` a hodnota atributu `true`.
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 

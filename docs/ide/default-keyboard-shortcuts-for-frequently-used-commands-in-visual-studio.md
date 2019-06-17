@@ -7,19 +7,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96f9f56c2b73b8f3c39635c81019cd01fa8a69a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72e010d76188be1ebe07eb9400b7cde60c2bf0a6
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946932"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043329"
 ---
-# <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Výchozí klávesové zkratky pro často používané příkazy v sadě Visual Studio
+# <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Oblíbené klávesové zkratky pro Visual Studio
 
 Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k často používaným příkazům v sadě Visual Studio. Úplný seznam příkazů, které mají výchozí klávesové zkratky, naleznete v tématu [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
+*Globální* kontextu znamená, že je klávesovou zkratku použít v okně libovolného nástroje v sadě Visual Studio.
+
 > [!NOTE]
-> Klávesovou zkratku pro jakýkoli příkaz můžete vyhledat otevřením **možnosti** dialogovém okně rozšíření **prostředí** uzel a poté volbou **klávesnice**.
+> Můžete [vyhledat zástupce](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) pro kterýkoli příkaz tak, že otevřete **možnosti** dialogovém okně rozšíření **prostředí** uzel a poté volbou **klávesnice**.
 
 ## <a name="build"></a>Sestavení
 
@@ -38,7 +40,7 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 |Debug.BreakAll|**Ctrl + Alt + Break** [Global]|
 |Debug.DeleteAllBreakpoints|**Ctrl + Shift + F9** [Global]|
 |Debug.Exceptions|**Ctrl + Alt + E** [Global]|
-|Debug.QuickWatch|**Ctrl + Alt + Q** [Global]<br /><br /> nebo **Shift + F9** [Global]|
+|Debug.QuickWatch|**Ctrl + Alt + Q** [Global]<br /><br />nebo **Shift + F9** [Global]|
 |Debug.Restart|**Ctrl + Shift + F5** [Global]|
 |Debug.RunToCursor|**CTRL + F10** [Global]|
 |Debug.SetNextStatement|**Ctrl + Shift + F10** [Global]|
@@ -54,13 +56,13 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 
 |Příkazy|Klávesové zkratky [kontexty]|
 |--------------| - |
-|Edit.BreakLine|**Zadejte** [Text Editor, Návrhář sestav, Windows Forms Designer]<br /><br /> nebo **Shift + Enter** [Text Editor]|
+|Edit.BreakLine|**Zadejte** [Text Editor, Návrhář sestav, Windows Forms Designer]<br /><br />nebo **Shift + Enter** [Text Editor]|
 |Edit.CollapseToDefinitions|**CTRL + M**, **Ctrl + O** [Text Editor]|
 |Edit.CommentSelection|**CTRL + K**, **Ctrl + C** [Text Editor]|
-|Edit.CompleteWord|**ALT + Šipka vpravo** [Text Editor, Workflow Designer]<br /><br /> nebo **Ctrl + mezerník** [Text Editor, Workflow Designer]<br /><br /> nebo **Ctrl + K**, **W** [Workflow Designer]<br /><br /> nebo **Ctrl + K, Ctrl + W** [Workflow Designer]|
-|Edit.Copy|**CTRL + C** [Global]<br /><br /> nebo **Ctrl + Insert** [Global]|
-|Edit.Cut|**CTRL + X** [Global]<br /><br /> nebo **Shift + Delete** [Global]|
-|Edit.Delete|**Odstranit** [Global, Průzkumník týmových projektů]<br /><br /> nebo **Shift + Delete** [sekvence diagramu, Diagram činností UML, Layer Diagram]<br /><br /> nebo **kombinaci kláves Ctrl + Delete** [Diagram tříd]|
+|Edit.CompleteWord|**ALT + Šipka vpravo** [Text Editor, Workflow Designer]<br /><br />nebo **Ctrl + mezerník** [Text Editor, Workflow Designer]<br /><br />nebo **Ctrl + K**, **W** [Workflow Designer]<br /><br />nebo **Ctrl + K, Ctrl + W** [Workflow Designer]|
+|Edit.Copy|**CTRL + C** [Global]<br /><br />nebo **Ctrl + Insert** [Global]|
+|Edit.Cut|**CTRL + X** [Global]<br /><br />nebo **Shift + Delete** [Global]|
+|Edit.Delete|**Odstranit** [Global, Průzkumník týmových projektů]<br /><br />nebo **Shift + Delete** [sekvence diagramu, Diagram činností UML, Layer Diagram]<br /><br />nebo **kombinaci kláves Ctrl + Delete** [Diagram tříd]|
 |Edit.Find|**CTRL + F** [Global]|
 |Edit.FindAllReferences|**SHIFT + F12** [Global]|
 |Edit.FindinFiles|**Ctrl + Shift + F** [Global]|
@@ -78,14 +80,14 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 |Edit.LineCut|**CTRL + L** [Text Editor]|
 |Edit.LineDownExtendColumn|**Shift + Alt + Šipka dolů** [Text Editor]|
 |Edit.LineOpenAbove|**Ctrl + Enter** [Text Editor]|
-|Edit.ListMembers|**CTRL + J** [Text Editor, Workflow Designer]<br /><br /> nebo **Ctrl + K, Ctrl + L** [Workflow Designer]<br /><br /> nebo **Ctrl + K, L** [Workflow Designer]|
+|Edit.ListMembers|**CTRL + J** [Text Editor, Workflow Designer]<br /><br />nebo **Ctrl + K, Ctrl + L** [Workflow Designer]<br /><br />nebo **Ctrl + K, L** [Workflow Designer]|
 |Edit.NavigateTo|**CTRL +** [Global]|
 |Edit.OpenFile|**Ctrl + Shift + G** [Global]|
 |Edit.OvertypeMode|**Vložit** [Text Editor]|
-|Edit.ParameterInfo|**Ctrl + Shift + mezerník** [Text Editor, Workflow Designer]<br /><br /> nebo **Ctrl + K, Ctrl + P** [Workflow Designer]<br /><br /> nebo **Ctrl + K, P** [Workflow Designer]|
-|Edit.Paste|**CTRL + V** [Global]<br /><br /> nebo **Shift + Insert** [Global]|
+|Edit.ParameterInfo|**Ctrl + Shift + mezerník** [Text Editor, Workflow Designer]<br /><br />nebo **Ctrl + K, Ctrl + P** [Workflow Designer]<br /><br />nebo **Ctrl + K, P** [Workflow Designer]|
+|Edit.Paste|**CTRL + V** [Global]<br /><br />nebo **Shift + Insert** [Global]|
 |Edit.PeekDefinition|**ALT + F12** [Text Editor]|
-|Edit.Redo|**CTRL + Y** [Global]<br /><br /> nebo **Shift + Alt + Backspace** [Global]<br /><br /> nebo **Ctrl + Shift + Z** [Global]|
+|Edit.Redo|**CTRL + Y** [Global]<br /><br />nebo **Shift + Alt + Backspace** [Global]<br /><br />nebo **Ctrl + Shift + Z** [Global]|
 |Edit.Replace|**CTRL + H** [Global]|
 |Edit.SelectAll|**CTRL + A** [Global]|
 |Edit.SelectCurrentWord|**CTRL + W** [Text Editor]|
@@ -97,7 +99,7 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 |Edit.ToggleCompletionMode|**Ctrl + Alt + mezerník** [Text Editor]|
 |Edit.ToggleOutliningExpansion|**CTRL + M, Ctrl + M** [Text Editor]|
 |Edit.UncommentSelection|**CTRL + K, Ctrl + U** [Text Editor]|
-|Edit.Undo|**CTRL + Z** [Global]<br /><br /> nebo **Alt + Backspace** [Global]|
+|Edit.Undo|**CTRL + Z** [Global]<br /><br />nebo **Alt + Backspace** [Global]|
 |Edit.WordDeleteToEnd|**CTRL + Delete** [Text Editor]|
 |Edit.WordDeleteToStart|**Ctrl + Backspace** [Text Editor]|
 
@@ -142,7 +144,7 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 |--------------| - |
 |View.ClassView|**Ctrl + Shift + C** [Global]|
 |View.EditLabel|**F2** [Global]|
-|View.ErrorList|**CTRL +\\, Ctrl + E** [Global]<br /><br /> nebo **Ctrl +\\, E** [Global]|
+|View.ErrorList|**CTRL +\\, Ctrl + E** [Global]<br /><br />nebo **Ctrl +\\, E** [Global]|
 |View.NavigateBackward|**CTRL +-** [Global]|
 |View.NavigateForward|**Ctrl + Shift +-** [Global]|
 |View.ObjectBrowser|**Ctrl + Alt + J** [Global]|
@@ -150,11 +152,11 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 |View.PropertiesWindow|**F4**|
 |View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**Ctrl + Alt + S** [Global]|
-|View.ShowSmartTag|**Ctrl+.** [Global]<br /><br /> nebo **Shift + Alt + F10** [Global, HTML Editor Design View]|
+|View.ShowSmartTag|**Ctrl+.** [Global]<br /><br />nebo **Shift + Alt + F10** [Global, HTML Editor Design View]|
 |View.SolutionExplorer|**Ctrl + Alt + L** [Global]|
 |View.TfsTeamExplorer|**CTRL +\\, Ctrl + M** [Global]|
 |View.Toolbox|**Ctrl + Alt + X** [Global]|
-|View.ViewCode|**Zadejte** [Diagram tříd]<br /><br /> nebo **F7** [Settings Designer]|
+|View.ViewCode|**Zadejte** [Diagram tříd]<br /><br />nebo **F7** [Settings Designer]|
 |View.ViewDesigner|**SHIFT + F7** [zobrazení zdroje editoru HTML]|
 
 ## <a name="window"></a>Okno
@@ -170,3 +172,4 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 ## <a name="see-also"></a>Viz také:
 
 - [Identifikování a přizpůsobení klávesových zkratek v sadě Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Všechny klávesové zkratky v sadě Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

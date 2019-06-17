@@ -1,6 +1,6 @@
 ---
 title: Přizpůsobení sestavení | Dokumentace Microsoftu
-ms.date: 06/14/2017
+ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e644fd6fc521318512bbc5dd25838a379af78a9
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778098"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141160"
 ---
 # <a name="customize-your-build"></a>Přizpůsobení sestavení
 
@@ -93,7 +93,7 @@ Předpokládejme, že máte tato struktura standardní řešení:
     \Project2Tests
 ```
 
-Může být žádoucí použít společná nastavení pro všechny projekty *(1)*, společná nastavení pro *src* projekty *(2 src)* a běžné vlastnosti  *testování* projekty *(2-test)*.
+Může být žádoucí použít společná nastavení pro všechny projekty *(1)* , společná nastavení pro *src* projekty *(2 src)* a běžné vlastnosti  *testování* projekty *(2-test)* .
 
 Aby MSBuild správně sloučit "vnitřní" soubory (*2 src* a *2 test*) s "vnější" souboru (*1*), musí vzít v úvahu, že jakmile MSBuild najde *Directory.Build.props* souboru, zastaví další kontrolu. Pokud chcete pokračovat, kontrolu a sloučení do vnějšího souboru, vložte tento kód do obou vnitřní souborů:
 
@@ -107,6 +107,36 @@ Přehled nástroje MSBuild pro obecný postup je následující:
 - Chcete-li řízení procesu skenování/sloučení, použijte `$(DirectoryBuildPropsPath)` a `$(ImportDirectoryBuildProps)`
 
 Nebo jednoduše: první *Directory.Build.props* , který není nic importu je, kde zastaví MSBuild.
+
+### <a name="choose-between-adding-properties-to-a-props-or-targets-file"></a>Výběr mezi přidání vlastností do souboru props nebo .targets
+
+Nástroj MSBuild je závislé na import pořadí a poslední definice vlastnosti (nebo `UsingTask` nebo cíl) je definice použitá.
+
+Při použití explicitní importy, můžete importovat z *.props* nebo *.targets* soubor v libovolném bodě. Tady je často používaný konvence:
+
+- *.props* importu souborů v rané fázi importu pořadí.
+
+- *.TARGETS* soubory jsou importovány v pořadí sestavení.
+
+Tato konvence je vynucena `<Project Sdk="SdkName">` importuje (to znamená, import *Sdk.props* nastane dřív, než celý obsah souboru, pak *Sdk.targets* obsahuje poslední, až potom obsah Soubor).
+
+Při rozhodování, kam chcete vložit vlastnosti, použijte následující obecné pokyny:
+
+- Pro mnoho vlastností nezáleží, ve které jsou definovány, protože se nepřepíšou a pouze v době spuštění se budou číst.
+
+- Pro chování, které může přizpůsobit v jednotlivých projektů, nastavit výchozí hodnoty *.props* soubory.
+
+- Vyhněte se nastavování závislé vlastnosti *.props* soubory načtením hodnota může být vlastní vlastnosti, protože vlastní nastavení se neprovede, dokud nástroj MSBuild načítá projektu daného uživatele.
+
+- Nastavte závislé vlastnosti *.targets* soubory, protože budete vyzvednutí vlastní nastavení z jednotlivých projektů.
+
+- Pokud je potřeba přepsat vlastnosti, provést *.targets* souboru po všechna vlastní nastavení uživatele a project jste využili příležitost dobře se projeví. Buďte opatrní při použití odvozených vlastnosti; odvozené vlastnosti může být potřeba také přepsat.
+
+- Zahrnout položky v *.props* soubory (záleží na vlastnost). Všechny vlastnosti jsou považovány za před jakoukoli položku, tak, aby uživatel projektu vlastnost přizpůsobení získat neexistoval, a to projektu daného uživatele dává příležitost `Remove` nebo `Update` libovolnou položku získaných importu.
+
+- Definování cílů v *.targets* soubory. Nicméně pokud *.targets* importovaných souborů pomocí sady SDK, mějte na paměti, že tento scénář umožňuje přepsání cíl obtížnější, protože uživatele projekt nemá místo, kde můžete přepsat ve výchozím nastavení.
+
+- Pokud je to možné preferovat úpravy vlastností v době vyhodnocení přes změna vlastností v cíli. Toto pravidlo je snazší načtení projektu a pochopit, co dělají.
 
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
@@ -138,7 +168,7 @@ před jejich obsah a
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
-později. To umožňuje nainstalovaných sad SDK k posílení logiku sestavení běžných typů projektu.
+později. Tato konvence umožňuje nainstalovaných sad SDK k posílení logiku sestavení běžných typů projektu.
 
 Stejnou adresářovou strukturu je prohledávána v `$(MSBuildUserExtensionsPath)`, což je složka uživatelská *%LOCALAPPDATA%\Microsoft\MSBuild*. Pro všechna sestavení odpovídající typ projektu spuštěné pod přihlašovacími údaji uživatele se naimportují soubory umístěné v této složce. Rozšíření uživatele můžete zakázat nastavením vlastnosti s názvem po importu souboru ve vzoru `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Například nastavení `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` k `false` by jinak znemožňovaly import `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
 

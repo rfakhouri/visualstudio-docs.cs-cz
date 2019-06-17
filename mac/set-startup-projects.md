@@ -7,40 +7,42 @@ ms.date: 02/21/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: a4a4f2f4fd4ce6cd88d11979a21e4e9184adfca8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd76eaf30dd0151216a503bbaf1d76414ed56eef
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937127"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043503"
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>Postupy: Nastavení více projektů po spuštění
+# <a name="set-multiple-startup-projects"></a>Nastavení více projektů po spuštění
 
-Visual Studio for Mac můžete zadat více než jeden projekt je spuštěn při ladění nebo spuštění vašeho řešení.
+Visual Studio for Mac umožňuje určit, že více než jeden projekt by měl být spuštěn při ladění nebo spuštění vašeho řešení.
 
 ## <a name="to-set-multiple-startup-projects"></a>Chcete-li nastavit více projektů po spuštění
 
-1. V **oblasti řešení**, vyberte řešení (na nejvyšší uzel).
+1. V oblasti řešení vyberte řešení (na nejvyšší uzel).
 
-2. Vyberte uzel řešení nabídka (kliknutí pravým tlačítkem myši) a pak zvolte **nastavit projekty po spuštění...** .
+2. Klikněte pravým tlačítkem na uzel řešení a pak vyberte **nastavit projekty po spuštění**:
 
-   ![Nastavení spuštění projektů kontextové nabídky](media/startup-proj-ctx-menu.png)
+   ![Vybraná sada spouštěných projektů](media/startup-proj-ctx-menu.png)
 
-3. **Vytvoření konfigurace spuštění řešení** se zobrazí dialogové okno. Toto dialogové okno se vytvoří nový pojmenovaný spuštění konfigurace řešení pro vaše řešení. Můžete udělit jakýkoli název, který vám vyhovuje, je výchozí název `Multiple Projects`.
+3. **Vytvoření konfigurace spuštění řešení** zobrazí se dialogové okno. Toto dialogové okno umožňuje vytvořit nový s názvem spustit konfigurace řešení pro vaše řešení. Můžete použít libovolný název, který vám vyhovuje. Výchozí název je `Multiple Projects`.
 
-   ![Vytvořit dialogové okno Konfigurace spuštění řešení](media/create-sln-run-config.png)
+   ![Vytvoření dialogového okna konfigurace spuštění řešení](media/create-sln-run-config.png)
 
-4. Klikněte na tlačítko **vytvoření konfigurace spuštění**. **Možnosti řešení** otevře dialogové okno s nové řešení spustit vybranou konfiguraci.
+4. Vyberte **vytvoření konfigurace spuštění**. **Možnosti řešení** dialogové okno s nové řešení spustit vybranou konfiguraci:
 
-   ![Dialogové okno možností řešení](media/sln-options-run-config-multi-projects.png)
+   ![Dialogové okno Možnosti řešení](media/sln-options-run-config-multi-projects.png)
 
-5. Vyberte projekty, které chcete spustit při ladění nebo spuštění aplikace ze sady Visual Studio pro Mac.
+5. Vyberte projekty, které chcete spustit při ladění nebo spuštění aplikace ze sady Visual Studio pro Mac:
 
-   ![Dialogové okno možností řešení s nakonfigurovanou konfigurace spuštění](media/sln-options-run-config-multi-projects-configured.png)
+   ![Dialogové okno možností řešení s vybraných projektů](media/sln-options-run-config-multi-projects-configured.png)
 
-6. Klikněte na **OK**. Dialogové okno se zavře a novou konfiguraci spuštění řešení je nastavená na aktivní konfigurace spuštění.
+6. Vyberte **OK**. Nová konfigurace spuštění řešení je nastaven jako aktivní konfigurace spuštění:
 
-   ![Řešení s více projekty nakonfigurované za účelem spuštění na ladění nebo spuštění](media/startup-project-configured.png) uvidíte, že dva projekty jsou nakonfigurované na spustit, protože oba projekty jsou v **tučné** v **oblasti řešení**. Na panelu nástrojů novou konfiguraci spuštění je nakonfigurovaný jako aktuální konfigurace spuštění řešení.
+   ![Řešení s více projekty nakonfigurované za účelem spuštění na ladění nebo spuštění](media/startup-project-configured.png)
+
+   Uvidíte, že dva projekty jsou nakonfigurované na spustit, protože jsou oba projekty **tučné** v oblasti řešení. Na panelu nástrojů novou konfiguraci spuštění nastavit jako aktuální konfigurace spuštění řešení.
 
 ## <a name="next-steps"></a>Další kroky
 

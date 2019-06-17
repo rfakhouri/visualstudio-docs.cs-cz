@@ -99,7 +99,7 @@
               href: help-viewer/command-line-arguments.md
             - name: Přepsání voleb aplikace Help Content Manager
               href: help-viewer/behavior-overrides.md
-        - name: Odkaz
+        - name: Referenční informace
           items:
             - name: ID úloh a komponent sady Visual Studio
               items:
@@ -399,7 +399,7 @@
                       href: ide/reference/move-type-to-matching-file.md
                     - name: Přesunutí člena nahoru
                       href: ide/reference/pull-members-up.md
-                    - name: Dokončení regulární výraz pomocí IntelliSense
+                    - name: Doplňování regulárních výrazů pomocí IntelliSense
                       href: ide/reference/regex-completion-through-intellisense.md
                     - name: Odebrání nedosažitelného kódu
                       href: ide/reference/remove-unreachable-code.md
@@ -417,23 +417,6 @@
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'Návod: Generování kódu z využití'
                   href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-            - name: "Tipy a\_triky"
-              items:
-                - name: Tipy pro vyšší produktivitu
-                  href: ide/productivity-tips-for-visual-studio.md
-                - name: Klávesové zkratky
-                  items:
-                    - name: Klávesové zkratky
-                      href: ide/tips-and-tricks-for-visual-studio.md
-                    - name: Identifikování a přizpůsobení klávesových zkratek
-                      href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
-                    - name: Klávesové zkratky pro často používané příkazy
-                      href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
-                    - name: Všechny klávesové zkratky
-                      href: ide/default-keyboard-shortcuts-in-visual-studio.md
-                - name: 'Tipy pro vývojáře C#'
-                  displayName: ReSharper
-                  href: ide/csharp-developer-productivity.md
             - name: IntelliSense
               items:
                 - name: Používání technologie IntelliSense
@@ -677,6 +660,20 @@
       href: extensibility/visual-studio-sdk.md
     - name: Analýza a modelování architektury...
       href: modeling/analyze-and-model-your-architecture.md
+    - name: "Tipy a\_triky"
+      items:
+        - name: Produktivita – funkce
+          href: ide/productivity-features.md
+        - name: Produktivita – klávesové zkratky
+          href: ide/productivity-shortcuts.md
+        - name: 'Tipy pro vývojáře C#'
+          displayName: ReSharper
+          href: ide/csharp-developer-productivity.md
+        - name: Přizpůsobení klávesových zkratek
+          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
+        - name: Výhradní používání klávesnice
+          displayName: accessibility
+          href: ide/reference/how-to-use-the-keyboard-exclusively.md
     - name: Přizpůsobení
       items:
         - name: Přizpůsobení integrovaného vývojového prostředí
@@ -685,6 +682,7 @@
         - name: 'Rychlý start: Přizpůsobení motivu a barev textu'
           href: ide/quickstart-personalize-the-ide.md
         - name: Nastavení prostředí
+          displayName: profiles
           href: ide/environment-settings.md
         - name: Synchronizovaná nastavení
           href: ide/synchronized-settings-in-visual-studio.md
@@ -704,7 +702,7 @@
           displayName: 'marketplace, gallery, vsix'
         - name: Správa externích nástrojů
           href: ide/managing-external-tools.md
-    - name: Výkon
+    - name: Výkon sady Visual Studio
       items:
         - name: Optimalizace výkonu
           href: ide/optimize-visual-studio-performance.md
@@ -720,14 +718,95 @@
           href: ide/reference/accessibility-features-of-visual-studio.md
         - name: Nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí
           href: ide/reference/how-to-set-ide-accessibility-options.md
-        - name: Výhradní používání klávesnice
-          href: ide/reference/how-to-use-the-keyboard-exclusively.md
         - name: Rady a tipy k usnadnění přístupu
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: Produkty a služby pro usnadnění přístupu od Microsoftu
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Odkaz
+- name: Referenční informace
   items:
+    - name: Klávesové zkratky
+      items:
+        - name: Oblíbené příkazy
+          displayName: keyboard shortcuts
+          href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
+        - name: Všechny příkazy
+          displayName: keyboard commands
+          href: ide/default-keyboard-shortcuts-in-visual-studio.md
+    - name: Příkazy sady Visual Studio
+      items:
+        - name: Referenční informace
+          displayName: Visual Studio commands
+          href: ide/reference/visual-studio-commands.md
+        - name: Aliasy příkazů
+          href: ide/reference/visual-studio-command-aliases.md
+        - name: Přidat existující položku – příkaz
+          href: ide/reference/add-existing-item-command.md
+        - name: Přidat existující projekt – příkaz
+          href: ide/reference/add-existing-project-command.md
+        - name: Přidat novou položku – příkaz
+          href: ide/reference/add-new-item-command.md
+        - name: Alias – příkaz
+          href: ide/reference/alias-command.md
+        - name: Ohodnotit příkaz – příkaz
+          href: ide/reference/evaluate-statement-command.md
+        - name: Najít – příkaz
+          href: ide/reference/find-command.md
+        - name: Najít v souborech – příkaz
+          href: ide/reference/find-in-files-command.md
+        - name: Přejít na – příkaz
+          href: ide/reference/go-to-command.md
+        - name: Nastavení importu a exportu – příkaz
+          href: ide/reference/import-and-export-settings-command.md
+        - name: Listovat zásobník volání – příkaz
+          href: ide/reference/list-call-stack-command.md
+        - name: Zobrazit zpětný překlad – příkaz
+          href: ide/reference/list-disassembly-command.md
+        - name: Listovat paměť – příkaz
+          href: ide/reference/list-memory-command.md
+        - name: Listovat moduly – příkaz
+          href: ide/reference/list-modules-command.md
+        - name: Listovat registry – příkaz
+          href: ide/reference/list-registers-command.md
+        - name: Listovat zdroj – příkaz
+          href: ide/reference/list-source-command.md
+        - name: Listovat vlákna – příkaz
+          href: ide/reference/list-threads-command.md
+        - name: Okno výstupu příkazů protokolu – příkaz
+          href: ide/reference/log-command-window-output-command.md
+        - name: Nový soubor – příkaz
+          href: ide/reference/new-file-command.md
+        - name: Otevřít soubor – příkaz
+          href: ide/reference/open-file-command.md
+        - name: Otevřít projekt – příkaz
+          href: ide/reference/open-project-command.md
+        - name: Tisk – příkaz
+          href: ide/reference/print-command.md
+        - name: Rychlé kukátko – příkaz
+          href: ide/reference/quick-watch-command.md
+        - name: Nahradit – příkaz
+          href: ide/reference/replace-command.md
+        - name: Nahradit v souborech – příkaz
+          href: ide/reference/replace-in-files-command.md
+        - name: Nastavit aktuální proces
+          href: ide/reference/set-current-process.md
+        - name: Nastavit aktuální rámec zásobníku – příkaz
+          href: ide/reference/set-current-stack-frame-command.md
+        - name: Nastavit aktuální vlákno – příkaz
+          href: ide/reference/set-current-thread-command.md
+        - name: Nastavit základ – příkaz
+          href: ide/reference/set-radix-command.md
+        - name: Prostředí – příkaz
+          href: ide/reference/shell-command.md
+        - name: ShowWebBrowser – příkaz
+          href: ide/reference/showwebbrowser-command.md
+        - name: Spustit – příkaz
+          href: ide/reference/start-command.md
+        - name: Cesta k symbolu – příkaz
+          href: ide/reference/symbol-path-command.md
+        - name: Přepnout zarážku – příkaz
+          href: ide/reference/toggle-breakpoint-command.md
+        - name: Kukátko – příkaz
+          href: ide/reference/watch-command.md
     - name: Obecné prvky uživatelského rozhraní
       displayName: Windows and dialogs
       items:
@@ -883,7 +962,7 @@
           href: ide/reference/output-window.md
         - name: Vlastnosti projektu
           items:
-            - name: Odkaz
+            - name: Referenční informace
               displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: 'Stránka Aplikace, Návrhář projektu (UPW)'
@@ -954,7 +1033,7 @@
           href: ide/reference/team-explorer-reference.md
         - name: Sada nástrojů
           items:
-            - name: Odkaz
+            - name: Referenční informace
               displayName: Toolbox
               href: ide/reference/toolbox.md
             - name: 'Sada nástrojů, karta Součásti'
@@ -965,7 +1044,7 @@
               href: ide/reference/toolbox-html-tab.md
     - name: Devenv – přepínače příkazového řádku
       items:
-        - name: Odkaz
+        - name: Referenční informace
           displayName: devenv command-line switches
           href: ide/reference/devenv-command-line-switches.md
         - name: '-? (devenv.exe)'
@@ -1012,81 +1091,6 @@
           href: ide/reference/upgrade-devenv-exe.md
         - name: '-UseEnv (devenv.exe)'
           href: ide/reference/useenv-devenv-exe.md
-    - name: Příkazy sady Visual Studio
-      items:
-        - name: Odkaz
-          displayName: Visual Studio commands
-          href: ide/reference/visual-studio-commands.md
-        - name: Aliasy příkazů sady Visual Studio
-          href: ide/reference/visual-studio-command-aliases.md
-        - name: Přidat existující položku – příkaz
-          href: ide/reference/add-existing-item-command.md
-        - name: Přidat existující projekt – příkaz
-          href: ide/reference/add-existing-project-command.md
-        - name: Přidat novou položku – příkaz
-          href: ide/reference/add-new-item-command.md
-        - name: Alias – příkaz
-          href: ide/reference/alias-command.md
-        - name: Ohodnotit příkaz – příkaz
-          href: ide/reference/evaluate-statement-command.md
-        - name: Najít – příkaz
-          href: ide/reference/find-command.md
-        - name: Najít v souborech – příkaz
-          href: ide/reference/find-in-files-command.md
-        - name: Přejít na – příkaz
-          href: ide/reference/go-to-command.md
-        - name: Nastavení importu a exportu – příkaz
-          href: ide/reference/import-and-export-settings-command.md
-        - name: Listovat zásobník volání – příkaz
-          href: ide/reference/list-call-stack-command.md
-        - name: Zobrazit zpětný překlad – příkaz
-          href: ide/reference/list-disassembly-command.md
-        - name: Listovat paměť – příkaz
-          href: ide/reference/list-memory-command.md
-        - name: Listovat moduly – příkaz
-          href: ide/reference/list-modules-command.md
-        - name: Listovat registry – příkaz
-          href: ide/reference/list-registers-command.md
-        - name: Listovat zdroj – příkaz
-          href: ide/reference/list-source-command.md
-        - name: Listovat vlákna – příkaz
-          href: ide/reference/list-threads-command.md
-        - name: Protokolovat výstup příkazového okna – příkaz
-          href: ide/reference/log-command-window-output-command.md
-        - name: Nový soubor – příkaz
-          href: ide/reference/new-file-command.md
-        - name: Otevřít soubor – příkaz
-          href: ide/reference/open-file-command.md
-        - name: Otevřít projekt – příkaz
-          href: ide/reference/open-project-command.md
-        - name: Tisk – příkaz
-          href: ide/reference/print-command.md
-        - name: Rychlé kukátko – příkaz
-          href: ide/reference/quick-watch-command.md
-        - name: Nahradit – příkaz
-          href: ide/reference/replace-command.md
-        - name: Nahradit v souborech – příkaz
-          href: ide/reference/replace-in-files-command.md
-        - name: Nastavit aktuální proces
-          href: ide/reference/set-current-process.md
-        - name: Nastavit aktuální rámec zásobníku – příkaz
-          href: ide/reference/set-current-stack-frame-command.md
-        - name: Nastavit aktuální vlákno – příkaz
-          href: ide/reference/set-current-thread-command.md
-        - name: Nastavit základ – příkaz
-          href: ide/reference/set-radix-command.md
-        - name: Prostředí – příkaz
-          href: ide/reference/shell-command.md
-        - name: ShowWebBrowser – příkaz
-          href: ide/reference/showwebbrowser-command.md
-        - name: Spustit – příkaz
-          href: ide/reference/start-command.md
-        - name: Cesta k symbolu – příkaz
-          href: ide/reference/symbol-path-command.md
-        - name: Přepnout zarážku – příkaz
-          href: ide/reference/toggle-breakpoint-command.md
-        - name: Kukátko – příkaz
-          href: ide/reference/watch-command.md
     - name: Zabezpečení
       items:
         - name: Vývoj zabezpečených aplikací

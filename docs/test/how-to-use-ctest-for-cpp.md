@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: a97aa7dfcc1cc46d64813ea7714629cb8557055d
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1bd42d29842bde5f5f0ce70c64561e0ce77b33a4
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714885"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043472"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Postup použití testu CTest pro C++ v sadě Visual Studio 2017 a novější
 
-CMake (která zahrnuje CTest) je integrována do integrovaného vývojového prostředí sady Visual Studio ve výchozím nastavení jako součást sady **Desktop Development with C++** pracovního vytížení. Pokud je potřeba nainstalovat na svém počítači, spusťte program Instalační program sady Visual Studio, klikněte na tlačítko **Desktop Development with C++**  tlačítko a pak klikněte na **změnit**. Zkontrolujte [nástroje CMake pro Visual C++ ](/cpp/build/cmake-tools-for-visual-cpp) v seznamu součástí úlohy.
+CMake (která zahrnuje CTest) je integrována do integrovaného vývojového prostředí sady Visual Studio ve výchozím nastavení jako součást sady **Desktop Development with C++** pracovního vytížení. Pokud je potřeba nainstalovat na svém počítači, spusťte program Instalační program sady Visual Studio, klikněte na tlačítko **Desktop Development with C++**  tlačítko a pak klikněte na **změnit**. Zkontrolujte [nástroje CMake pro Visual C++ ](/cpp/ide/cmake-tools-for-visual-cpp) v seznamu součástí úlohy.
 
 ## <a name="to-write-tests"></a>K psaní testů
 

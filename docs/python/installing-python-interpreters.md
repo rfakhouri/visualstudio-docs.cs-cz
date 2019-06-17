@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e3cfe5e54e4893ffa0bed6e3be1bf142fdda60be
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 16c8773e87784c43b4203b6837fb7c58ba5adce5
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747150"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043481"
 ---
 # <a name="install-python-interpreters"></a>Instalace interpretů Pythonu
 
@@ -29,7 +29,7 @@ Můžete nainstalovat také ručně žádné interprety uvedené v následujíc�
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio podporuje všechny oficiálně podporované verze jazyka Python, jak jsou určené [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). Konkrétně verze 2.7, 3.5, 3.6 a 3.7.
+> Visual Studio podporuje Python verze 2.7, stejně jako verze 3.5 nebo novější. I když je možné použít Visual Studio k úpravě kódu napsaného v jiných verzích Pythonu, nejsou oficiálně podporované těchto verzí a funkce, jako je IntelliSense a ladění nemusí fungovat.
 ::: moniker-end
 
 Pro **sady Visual Studio 2015 a starší**, musíte ručně nainstalovat jeden interprety.

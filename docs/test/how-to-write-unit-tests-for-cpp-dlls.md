@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226061"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132168"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Zápis testů jednotek pro knihovny DLL C++ v sadě Visual Studio
 
@@ -46,7 +46,7 @@ ms.locfileid: "65226061"
 
   2. Zvolte **vlastnosti konfigurace** > **Obecné**.
 
-  3. Nastavte **typ konfigurace** k **statická knihovna (.lib)**.
+  3. Nastavte **typ konfigurace** k **statická knihovna (.lib)** .
 
   Pokračujte postupem [připojení testů k souborům objektů nebo knihoven](#objectRef).
 
@@ -68,17 +68,15 @@ ms.locfileid: "65226061"
 
       ::: moniker-end
 
-  2. V **Průzkumníka řešení**, v místní nabídce testovacího projektu, zvolte **odkazy**. Projekt **vlastnosti** otevře se okno.
+  1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt testů a pak zvolte **přidat** > **odkaz**.
 
-  3. Vyberte **společné vlastnosti** > **rámec a odkazy**a klikněte na tlačítko **přidat nový odkaz** tlačítko.
-
-  4. Vyberte **projekty**a pak Testovaný projekt.
+  1. Vyberte **projekty**a pak Testovaný projekt.
 
        Zvolte **přidat** tlačítko.
 
-  5. Ve vlastnostech testovacího projektu přidejte umístění testovaného projektu do adresáře Include.
+  1. Ve vlastnostech testovacího projektu přidejte umístění testovaného projektu do adresáře Include.
 
-       Zvolte **vlastnosti konfigurace** > **adresáře VC ++** > **adresáře souborů k zahrnutí**.
+       Zvolte **vlastnosti konfigurace** > **adresáře VC ++**  > **adresáře souborů k zahrnutí**.
 
        Zvolte **upravit**a poté přidejte hlavní adresář testovaného projektu.
 
@@ -112,7 +110,7 @@ ms.locfileid: "65226061"
 
        Zvolte **upravit**a přidejte cestu k adresáři **.obj** nebo **lib** soubory. Cesta je obvykle ve složce sestavení testovaného projektu.
 
-  5. Zvolte **vlastnosti konfigurace** > **adresáře VC ++** > **adresáře souborů k zahrnutí**.
+  5. Zvolte **vlastnosti konfigurace** > **adresáře VC ++**  > **adresáře souborů k zahrnutí**.
 
        Zvolte **upravit**a poté přidejte hlavní adresář testovaného projektu.
 
@@ -124,7 +122,7 @@ ms.locfileid: "65226061"
 
    1. V **Průzkumníka řešení**, v místní nabídce testovaného projektu, zvolte **vlastnosti**. Projekt **vlastnosti** otevře se okno.
 
-   2. Zvolte **vlastnosti konfigurace** > **adresáře VC ++**.
+   2. Zvolte **vlastnosti konfigurace** > **adresáře VC ++** .
 
    3. Upravte adresáře Include a Library:
 
@@ -135,7 +133,7 @@ ms.locfileid: "65226061"
 
 2. Přidáte soubor testu jednotek C++:
 
-   - V **Průzkumníka řešení**, v místní nabídce projektu zvolte **přidat** > **nová položka** > **Jednotkový Test C++**.
+   - V **Průzkumníka řešení**, v místní nabídce projektu zvolte **přidat** > **nová položka** > **Jednotkový Test C++** .
 
    Přejděte na [zápis testů jednotek](#addTests).
 

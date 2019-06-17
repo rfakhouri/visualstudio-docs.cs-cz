@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 01a7b6cfb6587baf5ae80b04178cbdc36e373b86
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 723e61f60550230774eb909dfce44d5f91ae7a64
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226358"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132196"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Testování knihovny DLL Visual C++
 
@@ -81,7 +81,7 @@ Začněte tím, že vytvoříte nový testovací projekt. Na **souboru** nabídc
 
 ::: moniker range="vs-2019"
 
-V **Průzkumníka řešení**, zvolte název řešení. V místní nabídce zvolte **přidat**a potom **nový projekt**. V **přidat nový projekt** dialogové okno, nastavte **jazyk** k C++ a do vyhledávacího pole zadejte "DLL". Ze seznamu výsledků zvolte **aplikace testů jednotek (Universal Windows - C++/CX)**.
+V **Průzkumníka řešení**, zvolte název řešení. V místní nabídce zvolte **přidat**a potom **nový projekt**. V **přidat nový projekt** dialogové okno, nastavte **jazyk** k C++ a do vyhledávacího pole zadejte "DLL". Ze seznamu výsledků zvolte **aplikace testů jednotek (Universal Windows - C++/CX)** .
 
 ![Vytvoření projektu RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -94,7 +94,7 @@ V **Průzkumníka řešení**, zvolte název řešení. V místní nabídce zvol
 
 ::: moniker-end
 
-1. V **přidat nový projekt** dialogového okna zvolte **knihovny DLL (aplikace pro UPW)**.
+1. V **přidat nový projekt** dialogového okna zvolte **knihovny DLL (aplikace pro UPW)** .
 
 2. Přidejte následující kód, který *RooterLib.h* souboru:
 
@@ -152,13 +152,9 @@ V **Průzkumníka řešení**, zvolte název řešení. V místní nabídce zvol
 
 1. Přidáte RooterLib RooterLibTests projektu.
 
-   1. V **Průzkumníka řešení**, zvolte **RooterLibTests** projektu a klikněte na tlačítko **odkazy** v místní nabídce.
+   1. V **Průzkumníka řešení**, zvolte **RooterLibTests** projektu a klikněte na tlačítko **přidat** > **odkaz** na zástupce nabídka.
 
-   2. Na **vlastnosti projektu RooterLib** dialogového okna rozbalte **společné vlastnosti** a zvolte **rámec a odkazy**.
-
-   3. Zvolte **přidat nový odkaz**
-
-   4. V **přidat odkaz** dialogového okna rozbalte **řešení** a klikněte na tlačítko **projekty**. Vyberte **RouterLib** položky.
+   1. V **přidat odkaz** dialogového okna zvolte **projekty**. Vyberte **RouterLib** položky.
 
 2. Zahrnutím souboru hlaviček RooterLib v *unittest1.cpp*.
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747335"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043413"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)
 
@@ -86,4 +86,4 @@ Můžete použít tyto klávesové zkratky v **definice operace Peek** okno:
 
 - [Vyhledání kódu](../ide/navigating-code.md)
 - [Přejít k definici a Náhled definice](../ide/go-to-and-peek-definition.md)
-- [Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md)
+- [Pro zvýšení produktivity v sadě Visual Studio](../ide/productivity-features.md)
