@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e918521a404914c2acc9a8fd6283815b1ee324e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 032bc54d5e904cf23d3e886c7dfeb38aa3ecfd93
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744944"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160073"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Stránka Aplikace, návrhář projektu (Visual Basic)
 
@@ -64,7 +64,7 @@ Pro projekty .NET Framework výchozí hodnota odpovídá cílovou architekturu, 
 > [!NOTE]
 > Požadované balíčky, které jsou uvedeny v [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md) se nastaví automaticky, když otevřete dialogové okno poprvé. Pokud později změníte cílový rámec projektu, je nutné zadat předpoklady ručně, aby odpovídaly novému cílovému rozhraní.
 
-Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [Framework – přehled cílení na](../../ide/visual-studio-multi-targeting-overview.md).
+Další informace najdete v tématu [Framework – přehled cílení na](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Typ aplikace
 

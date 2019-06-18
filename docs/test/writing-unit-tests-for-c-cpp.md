@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f27e2585d082f61021fbc736b394612095f56684
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715259"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160174"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů jednotek pro C/C++ v sadě Visual Studio
 
@@ -37,11 +37,11 @@ Projekty testování částí C++ podporu [CodeLens](../ide/find-code-changes-an
 
 **Visual Studio 2017 a novější (všechny edice)**
 
-- **Google Test Adapter** je zahrnutý jako součást výchozí **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Obsahuje šablony projektů, můžete přidat do řešení prostřednictvím **přidat nový projekt** nabídky klikněte pravým tlačítkem na uzel řešení v **Průzkumníka řešení**a možnosti, které můžete nakonfigurovat přes **nástroje**  >  **Možnosti**. Další informace najdete v tématu [postupy: použití Google testu v sadě Visual Studio](how-to-use-google-test-for-cpp.md).
+- **Google Test Adapter** je zahrnutý jako součást výchozí **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Obsahuje šablony projektů, můžete přidat do řešení prostřednictvím **přidat nový projekt** nabídky klikněte pravým tlačítkem na uzel řešení v **Průzkumníka řešení**a možnosti, které můžete nakonfigurovat přes **nástroje**  >  **Možnosti**. Další informace najdete v tématu [jak: V sadě Visual Studio používat Google Test](how-to-use-google-test-for-cpp.md).
 
-- **Boost.Test** je zahrnutý jako součást výchozí **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Je integrován s **Průzkumník testů** aktuálně nepodporuje, ale není nutné šablonu projektu, proto musí být ručně nakonfigurovat. Další informace najdete v tématu [postupy: použití testu Boost.Test v sadě Visual Studio](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** je zahrnutý jako součást výchozí **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Je integrován s **Průzkumník testů** aktuálně nepodporuje, ale není nutné šablonu projektu, proto musí být ručně nakonfigurovat. Další informace najdete v tématu [jak: Použití testu Boost.Test v sadě Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- **CTest** podpora je součástí [nástroje CMake pro Visual Studio](/cpp/build/cmake-tools-for-visual-cpp) komponenta, která je součástí sady **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Nicméně CTest není dosud plně integrovaná **Průzkumník testů**. Další informace najdete v tématu [postupy: použití testu CTest v sadě Visual Studio](how-to-use-ctest-for-cpp.md).
+- **CTest** podpora je součástí  **C++ nástroje CMake** komponenta, která je součástí sady **vývoj desktopových aplikací pomocí C++**  pracovního vytížení. Nicméně CTest není dosud plně integrovaná **Průzkumník testů**. Další informace najdete v tématu [jak: Použití testu CTest v sadě Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 a starší**
 

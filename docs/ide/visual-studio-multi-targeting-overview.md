@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb7af190ac7fc5d4d5ce547029689f6c902a6e4f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b652c603cd98f9c9ec9366a225971485def187b6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747626"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160145"
 ---
 # <a name="framework-targeting-overview"></a>Přehled cílení na rozhraní Framework
 
-V sadě Visual Studio můžete určit verzi rozhraní .NET, který má váš projekt zaměřit. Pro aplikace rozhraní .NET Framework pro spuštění v jiném počítači, verzi rozhraní framework, cíle, které aplikace musí být kompatibilní s verzí rozhraní framework, který je nainstalován v počítači.
+V sadě Visual Studio můžete určit verzi rozhraní .NET, který má váš projekt zaměřit. Cílení rozhraní pomáhá zaručit, že aplikace používá pouze funkce, které jsou k dispozici ve verzi zadaného rámce. Pro aplikace rozhraní .NET Framework pro spuštění v jiném počítači, verzi rozhraní framework, cíle, které aplikace musí být kompatibilní s verzí rozhraní framework, který je nainstalován v počítači.
+
+Řešení sady Visual Studio může obsahovat projekty, které cílí různé verze rozhraní .NET.
 
 Další informace o cílové architektury, najdete v části [platforem](/dotnet/standard/frameworks).
-
-Můžete také vytvořit řešení, které obsahuje projekty zaměřené na různé verze rozhraní .NET. Cílení rozhraní pomáhá zaručit, že aplikace používá pouze funkce, které jsou k dispozici ve verzi zadaného rámce.
 
 > [!TIP]
 > Můžete také směrovat aplikace pro různé platformy. Další informace najdete v tématu [cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md).
@@ -79,13 +79,40 @@ Při vytváření projektu rozhraní .NET Framework, můžete vybrat cílovou ve
 
 ::: moniker-end
 
-V existujícím projektu můžete změnit cílovou verzi rozhraní .NET v dialogovém okně Vlastnosti projektu. Další informace najdete v tématu [jak: Cílení na verzi .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+## <a name="change-the-target-framework"></a>Změnit cílovou architekturu
+
+V jazyce Visual Basic se existující C#, nebo F# projektu změnit cílovou verzi rozhraní .NET v dialogovém okně Vlastnosti projektu. Informace o tom, jak změnit cílovou verzi pro C++ projektů, naleznete v tématu [úpravy v cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset) místo.
+
+1. V **Průzkumníka řešení**, otevřete nabídku klikněte pravým tlačítkem na projekt, který chcete změnit a klikněte na tlačítko **vlastnosti**.
+
+1. V levém sloupci **vlastnosti** okna, vyberte **aplikace** kartu.
+
+   ![Karta aplikace vlastnosti projektu](../ide/media/vs_slnexplorer_properties_applicationtab.png)
+
+   > [!NOTE]
+   > Po vytvoření aplikace pro UPW, nelze změnit cílenou verzi systému Windows nebo .NET.
+
+1. V **Cílová architektura** , zvolte verzi, která chcete.
+
+1. V dialogovém okně ověřování, který se zobrazí, zvolte **Ano** tlačítko.
+
+   Projekt se uvolní. Až se znovu načte, zaměřuje verzi rozhraní .NET, kterou jste vybrali.
+
+> [!NOTE]
+> Pokud váš kód obsahuje odkazy na jinou verzi rozhraní .NET než ten, který jste určili, mohou se zobrazit chybové zprávy při kompilaci či spuštění kódu. Chcete-li vyřešit tyto chyby, upravte odkazy. Zobrazit [.NET řešení potíží s cílením](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
+
+> [!TIP]
+> V závislosti na cílové rozhraní lze znázornit v souboru projektu následujícím způsobem:
+>
+> - Pro .NET Core aplikace: `<TargetFramework>netcoreapp2.1</TargetFramework>`
+> - Pro aplikace .NET Standard: `<TargetFramework>netstandard2.0</TargetFramework>`
+> - Pro .NET Framework aplikace: `<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>`
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Přeložit odkazy na sestavení systémových a uživatelských
 
 K cílení na určitou verzi rozhraní .NET, musíte nejprve nainstalovat odpovídající odkazy na sestavení. Můžete stáhnout balíčky pro vývojáře pro různé verze rozhraní .NET [.NET stáhne](https://www.microsoft.com/net/download/windows) stránky.
 
-Pro projekty .NET Framework **přidat odkaz** dialogové okno zakáže sestavení systému, které se netýkají cílové verze rozhraní .NET tak, že není možné je přidat neúmyslně do projektu. (Systémová sestavení jsou *.dll* soubory, které jsou zahrnuty v rozhraní .NET Framework verze.) Odkazy, které patří do verze rozhraní, která je vyšší než cílová verze, neposkytne řešení a ovládací prvky, které jsou závislé na takovém odkazu nelze přidat. Pokud chcete povolit takový odkaz, obnovení, který obsahuje odkaz na cílové rozhraní .NET Framework projektu. Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Pro projekty .NET Framework **přidat odkaz** dialogové okno zakáže sestavení systému, které se netýkají cílové verze rozhraní .NET tak, že není možné je přidat neúmyslně do projektu. (Systémová sestavení jsou *.dll* soubory, které jsou zahrnuty v rozhraní .NET Framework verze.) Odkazy, které patří do verze rozhraní, která je vyšší než cílová verze, neposkytne řešení a ovládací prvky, které jsou závislé na takovém odkazu nelze přidat. Pokud chcete povolit takový odkaz, obnovení, který obsahuje odkaz na cílové rozhraní .NET Framework projektu.
 
 Další informace o odkazech na sestavení naleznete v tématu [přeložit sestavení v době návrhu](../msbuild/resolving-assemblies-at-design-time.md).
 

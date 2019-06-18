@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a5778764bb065ae6da53016c2c9bbb557db20c51
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 5d4f4f462e95610b24da2958142d3d4bb8bad528
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847382"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160113"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
@@ -1015,7 +1015,7 @@ public int GetAge() { return this.Age; }
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | true | Preferovat členové tvoření konstruktorů |
 | when_on_single_line | Dáváte přednost členové tvoření pro konstruktory, když bude se jednat o jeden řádek |
@@ -1077,7 +1077,7 @@ public int Age { get { return _age; }}
 
 Toto pravidlo je možné zadat hodnoty v následující tabulce:
 
-| Value | Popis |
+| Hodnota | Popis |
 | ----- |:----------- |
 | true | Preferovat členové tvoření pro indexery |
 | when_on_single_line | Členové tvoření pro indexery dáváte přednost, když bude se jednat o jeden řádek |
@@ -1418,6 +1418,8 @@ Následující seznam ukazuje dostupné v sadě Visual Studio pravidla formátov
         - csharp_space_between_method_declaration_empty_parameter_list_parentheses
         - csharp_space_between_method_call_name_and_opening_parenthesis
         - csharp_space_between_method_call_empty_parameter_list_parentheses
+        - csharp_space_after_comma
+        - csharp_space_after_dot
     - [Nastavení zalamování](#wrapping)
         - csharp_preserve_single_line_statements
         - csharp_preserve_single_line_blocks
@@ -1781,7 +1783,7 @@ default:
 
 Toto pravidlo nepřijímá **true** nebo **false** hodnota; místo toho přijímá hodnotu z následující tabulky:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:----------- |
 | flush_left | Popisky jsou umístěny ve sloupci nejvíce vlevo |
 | one_less_than_current | Popisky jsou umístěny na jednom méně odsazení aktuálního kontextu |
@@ -1859,6 +1861,8 @@ Následující tabulka uvádí názvy pravidel, použitelné jazyky, výchozí h
 | csharp_space_between_method_declaration_empty_parameter_list_parentheses | C# | false | 15.7 |
 | csharp_space_between_method_call_name_and_opening_parenthesis | C# | false | 15.7 |
 | csharp_space_between_method_call_empty_parameter_list_parentheses | C# | false | 15.7 |
+| csharp_space_after_comma | C# | true | | 
+| csharp_space_after_dot | C# | false | |
 
 **csharp\_space\_after_cast**
 
@@ -1924,7 +1928,7 @@ MyMethod(argument);
 
 Toto pravidlo je možné zadat jednu nebo více hodnot z následující tabulky:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:------------|
 | control_flow_statements | Vložit mezeru mezi závorky řídícího toku výrazů |
 | výrazy | Vložit mezeru mezi závorky výrazů |
@@ -2011,7 +2015,7 @@ class C :I
 
 Toto pravidlo je možné zadat jednu hodnotu z následující tabulky:
 
-| Hodnota | Popis |
+| Value | Popis |
 | ----- |:------------|
 | before_and_after | Vložit mezeru před a za binární operátor |
 | žádná | Odebrat mezery před a za binární operátor |
@@ -2125,6 +2129,36 @@ void Goo(int x)
 }
 ```
 
+**csharp_space_after_comma**
+
+- Pokud toto pravidlo je nastaven na **true**, vkládat mezeru za čárku.
+- Pokud toto pravidlo je nastaven na **false**, odebere mezeru za čárku.
+
+Příklady kódu:
+
+```csharp
+// csharp_space_after_comma = true
+int[] x = new int[] { 1, 2, 3, 4, 5 };
+
+// csharp_space_after_comma = false
+int[] x = new int[] { 1,2,3,4,5 }
+```
+
+**csharp_space_after_dot**
+
+- Pokud toto pravidlo je nastaven na **true**, vkládat mezeru za tečku.
+- Pokud toto pravidlo je nastaven na **false**, odebere mezeru za tečku.
+
+Příklady kódu:
+
+```csharp
+// csharp_space_after_dot = true
+this. Goo();
+
+// csharp_space_after_dot = false
+this.Goo();
+```
+
 Příklad *.editorconfig* souboru:
 
 ```ini
@@ -2141,6 +2175,8 @@ csharp_space_around_binary_operators = before_and_after
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
 csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_after_comma = true
+csharp_space_after_dot = false
 ```
 
 #### <a name="wrapping"></a>Nastavení zalamování
@@ -2341,6 +2377,8 @@ csharp_space_around_binary_operators = before_and_after
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
 csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_after_comma = true
+csharp_space_after_dot = false
 
 # Wrapping preferences
 csharp_preserve_single_line_statements = true

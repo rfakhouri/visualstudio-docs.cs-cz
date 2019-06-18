@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745817"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160161"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí správce odkazů
 
@@ -92,7 +92,7 @@ Některé součásti v seznamu se nemusí zobrazit, v závislosti na verzi rozhr
 
 - Komponenta, která používá novější verzi rozhraní framework je nekompatibilní s projektem, zaměřuje na starší verzi.
 
-   Informace o tom, jak změnit cílovou verzi rozhraní framework pro projekt, naleznete v tématu [jak: Cílení na určitou verzi rozhraní framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Informace o tom, jak změnit cílovou verzi rozhraní framework pro projekt, naleznete v tématu [Framework – přehled cílení na](visual-studio-multi-targeting-overview.md).
 
 - Komponenta, která používá rozhraní .NET Framework 4 je nekompatibilní s projektem, který se zaměřuje na rozhraní .NET Framework 4.5.
 

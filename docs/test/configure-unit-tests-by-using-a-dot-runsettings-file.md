@@ -1,38 +1,40 @@
 ---
 title: Konfigurace testů jednotek pomocí souboru .runsettings
-ms.date: 02/28/2018
+ms.date: 06/14/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746561"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160196"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek s použitím *s příponou .runsettings* souboru
 
 Testování částí v sadě Visual Studio můžete konfigurovat pomocí *s příponou .runsettings* souboru. Můžete například změnit rozhraní .NET verze, na kterém jsou testy spuštěny, adresář pro výsledky testů nebo data, která je shromážděn v rámci testovacího běhu.
 
-Soubory parametrů běhu jsou volitelné. Pokud nevyžadují žádnou zvláštní konfiguraci, není nutné *s příponou .runsettings* souboru. Nejběžnější použití nástroje *s příponou .runsettings* soubor je pro přizpůsobení [analýza pokrytí kódu](../test/customizing-code-coverage-analysis.md).
+Soubory parametrů běhu jsou volitelné. Pokud nevyžadují žádnou zvláštní konfiguraci, není nutné *s příponou .runsettings* souboru. Běžně se používají *s příponou .runsettings* soubor je pro přizpůsobení [analýza pokrytí kódu](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="specify-a-run-settings-file"></a>Zadejte soubor parametrů běhu
 
 Soubory můžete použít ke konfiguraci testů, které jsou spouštěny z parametrů spuštění [příkazového řádku](vstest-console-options.md), v integrovaném vývojovém prostředí nebo v [sestavení pracovního postupu](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) pomocí Azure testovací plány nebo Team Foundation Server (TFS).
 
-### <a name="specify-a-run-settings-file-in-the-ide"></a>Zadejte soubor parametrů spuštění v integrovaném vývojovém prostředí
+### <a name="ide"></a>IDE – integrované vývojové prostředí
 
-Vyberte **testovací** > **nastavení testu** > **vybrat soubor nastavení testu** a pak vyberte *s příponou .runsettings*souboru. Soubor se zobrazí na **nastavení testu** nabídky kde můžete vybrat nebo výběr zrušte. Po výběru souboru parametrů běhu platí vždy, když vyberete **analyzovat pokrytí kódu**.
+Chcete-li zadat soubor parametrů spuštění v integrovaném vývojovém prostředí, vyberte **testovací** > **nastavení testu** > **vybrat soubor nastavení testu**a pak vyberte *s příponou .runsettings* souboru.
 
 ![Vyberte nabídky Soubor nastavení testu v sadě Visual Studio](media/select-test-settings-file.png)
 
-### <a name="specify-a-run-settings-file-at-the-command-line"></a>Zadejte soubor parametrů běhu na příkazovém řádku
+Soubor se zobrazí na **nastavení testu** nabídky kde můžete vybrat nebo výběr zrušte. Po výběru souboru parametrů běhu platí vždy, když vyberete **analyzovat pokrytí kódu**.
 
-Ke spuštění testů z příkazového řádku, použijte *vstest.console.exe* a zadejte soubor s nastaveními pomocí **/Settings** parametru.
+### <a name="command-line"></a>Příkazový řádek
+
+Ke spuštění testů z příkazového řádku, použijte *vstest.console.exe*a zadejte soubor s nastaveními pomocí **/Settings** parametru.
 
 1. Spusťte příkazový řádek pro vývojáře v sadě Visual Studio:
 
@@ -52,6 +54,12 @@ Ke spuštění testů z příkazového řádku, použijte *vstest.console.exe* a
 
    ```cmd
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
+   ```
+
+   or
+
+   ```cmd
+   vstest.console.exe --settings:test.runsettings test.dll
    ```
 
 Další informace najdete v tématu [možnosti příkazového řádku VSTest.Console.exe](vstest-console-options.md).
@@ -174,7 +182,7 @@ Následující části podrobně popisují prvky *s příponou .runsettings* sou
 |Uzel|Výchozí|Hodnoty|
 |-|-|-|
 |**ResultsDirectory**||Adresář, kde jsou umístěny výsledky testů.|
-|**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Toto nastavení určuje verzi rozhraní testování částí pro zjištění a provedení testů. Může se lišit od verze platformy .NET, kterou jste zadali ve vlastnostech sestavení projektu testování částí.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` pro .NET Core zdroje `FrameworkUap10` založené na UPW zdrojů `Framework45` pro rozhraní .NET Framework 4.5 a vyšší, `Framework40` pro rozhraní .NET Framework 4.0 a `Framework35` pro rozhraní .NET Framework 3.5.<br /><br />Toto nastavení určuje verzi rozhraní testování částí pro zjištění a provedení testů. Může se lišit od verze platformy .NET, kterou jste zadali ve vlastnostech sestavení projektu testování částí.<br /><br />Vynecháte-li `TargetFrameworkVersion` element z *s příponou .runsettings* souboru platformu automaticky určuje verzi rozhraní framework podle sestavené binární soubory.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Jednu nebo více cest k adresáři, kde se nachází TestAdapters|
@@ -263,5 +271,6 @@ Tato nastavení jsou specifická pro testovací adaptér, který spouští testo
 
 ## <a name="see-also"></a>Viz také:
 
+- [Konfigurace testovacího běhu](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md)
 - [Testovací úloha Visual Studia (testovací plány Azure)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

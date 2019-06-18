@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeadbd977b8c7d97af611a2054692a6071f21a36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0650738d4883e5458f5352155de04884498b5b9e
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808299"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159996"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Pole s poli by neměla být pouze pro čtení
 
@@ -74,6 +74,10 @@ Výstup z tohoto příkladu je:
 Before tampering: Grades: 90, 90, 90 Private Grades: 90, 90, 90  Secure Grades, 90, 90, 90
 After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades, 90, 90, 90
 ```
+
+## <a name="related-rules"></a>Související pravidla
+
+ - [CA2104 : Nedeklarujte čtení proměnlivé odkazové typy pouze](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md) 
 
 ## <a name="see-also"></a>Viz také:
 

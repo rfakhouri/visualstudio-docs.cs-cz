@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744996"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160055"
 ---
 # <a name="application-page-project-designer-c"></a>Stránka Aplikace, návrhář projektu (C#)
 
@@ -61,7 +61,7 @@ Pro projekt .NET Core, který cílí na dostupné verze může vypadat takto:
 > [!NOTE]
 > Požadované balíčky uvedené v [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md) se nastaví automaticky při prvním otevření dialogu. Pokud později změníte cílový rámec projektu, je třeba vybrat předpoklady ručně, aby odpovídaly novému cílovému rozhraní.
 
-Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [Framework – přehled cílení na](../../ide/visual-studio-multi-targeting-overview.md).
+Další informace najdete v tématu [Framework – přehled cílení na](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Typ výstupu**
 

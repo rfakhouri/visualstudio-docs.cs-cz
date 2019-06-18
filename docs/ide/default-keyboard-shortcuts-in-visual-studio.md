@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdef82a8601cb2c9b0b4d3e4cad4071241f239a8
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043370"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160039"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 
@@ -789,6 +789,7 @@ Tyto klávesové zkratky jsou určeny *globální*, což znamená, že je lze vy
 | Edit.CollapseCurrentRegion | **CTRL + M, Ctrl + S** |
 | Edit.CollapseTag | **CTRL + M, Ctrl + T** |
 | Edit.CollapseToDefinitions | **CTRL + M, Ctrl + O** (písmeno "jednoznakový) |
+| Edit.ContractSelection | **Shift + Alt +-** (jinou hodnotu nežC++ jenom) |
 | Edit.CommentSelection | **CTRL + K, Ctrl + C** |
 | Edit.CompleteWord | **CTRL + MEZERNÍK**<br /><br /> or<br /><br /> **ALT + Šipka vpravo** |
 | Edit.CopyParameterTip | **Ctrl + Shift + Alt + C** |
@@ -801,6 +802,8 @@ Tyto klávesové zkratky jsou určeny *globální*, což znamená, že je lze vy
 | Edit.DocumentStartExtend | **Ctrl + Shift + Home** |
 | Edit.ExpandAllOutlining | **CTRL + M, Ctrl + X** |
 | Edit.ExpandCurrentRegion | **CTRL + M, Ctrl + E** |
+| Edit.ExpandSelection | **Shift + Alt +=** (jinou hodnotu nežC++ jenom) |
+| Edit.ExpandSelectiontoContainingBlock | **Shift + Alt +]** |
 | Edit.FormatDocument | **CTRL + K, Ctrl + D** |
 | Edit.FormatSelection | **CTRL + K, Ctrl + F** |
 | Edit.GotoAll | **Ctrl+T**<br /><br /> or<br /><br /> **CTRL +** |

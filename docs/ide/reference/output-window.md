@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 4503066cab8e7ca324e7c81317999b737c750dd6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746533"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159944"
 ---
 # <a name="output-window"></a>Výstup – okno
 
@@ -67,7 +67,7 @@ Některé funkce integrovaného vývojového prostředí a příkazech vyvolaný
 
 Také můžete naprogramovat zapsat diagnostické zprávy v době běhu na vašich vlastních aplikací **výstup** podokně. K tomuto účelu použít členy <xref:System.Diagnostics.Debug> třídy nebo <xref:System.Diagnostics.Trace> třídy v <xref:System.Diagnostics> obor názvů rozhraní .NET API. Členové <xref:System.Diagnostics.Debug> třídy zobrazit výstup při vytváření konfigurace ladění z řešení nebo projektu, členy <xref:System.Diagnostics.Trace> třídy zobrazit výstup při vytváření konfigurace ladění nebo vydání. Další informace najdete v tématu [diagnostické zprávy v okně výstupu](../../debugger/diagnostic-messages-in-the-output-window.md).
 
-V jazyce C++ můžete vytvářet vlastní kroky sestavení a události sestavení, jejichž upozornění a chyby se zobrazí a jsou počítány v **výstup** podokně. Stisknutím klávesy **F1** na řádek výstupu, můžete zobrazit příslušné téma nápovědy. Další informace najdete v tématu [formátování výstupu vlastní krok sestavení](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event).
+V jazyce C++ můžete vytvářet vlastní kroky sestavení a události sestavení, jejichž upozornění a chyby se zobrazí a jsou počítány v **výstup** podokně. Stisknutím klávesy **F1** na řádek výstupu, můžete zobrazit příslušné téma nápovědy. Další informace najdete v tématu [formátování výstupu vlastní krok sestavení](/cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event).
 
 ## <a name="scroll-behavior"></a>Chování posouvání
 
