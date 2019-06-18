@@ -99,7 +99,7 @@
               href: help-viewer/command-line-arguments.md
             - name: Přepsání voleb aplikace Help Content Manager
               href: help-viewer/behavior-overrides.md
-        - name: Referenční informace
+        - name: Odkaz
           items:
             - name: ID úloh a komponent sady Visual Studio
               items:
@@ -226,11 +226,7 @@
             - name: 'Určení ikony aplikace (Visual Basic, C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: Cílení na konkrétní architekturu
-              items:
-                - name: Přehled cílení na více verzí
-                  href: ide/visual-studio-multi-targeting-overview.md
-                - name: Cílení na verzi rozhraní .NET Framework
-                  href: ide/how-to-target-a-version-of-the-dotnet-framework.md
+              href: ide/visual-studio-multi-targeting-overview.md
             - name: Vytváření šablon
               items:
                 - name: Vytváření šablon projektů a položek
@@ -405,6 +401,10 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: přejmenování
                       href: ide/reference/rename.md
+                    - name: Dělení a slučování příkazů if
+                      href: ide/reference/split-or-merge-if-statement.md
+                    - name: Synchronizovat obor názvů a název složky
+                      href: ide/reference/sync-namespace-and-folder-name.md
                     - name: Synchronizace typu a názvu souboru
                       href: ide/reference/sync-type-and-file.md
                     - name: Použití explicitního typu
@@ -722,7 +722,7 @@
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: Produkty a služby pro usnadnění přístupu od Microsoftu
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Referenční informace
+- name: Odkaz
   items:
     - name: Klávesové zkratky
       items:
@@ -734,7 +734,7 @@
           href: ide/default-keyboard-shortcuts-in-visual-studio.md
     - name: Příkazy sady Visual Studio
       items:
-        - name: Referenční informace
+        - name: Odkaz
           displayName: Visual Studio commands
           href: ide/reference/visual-studio-commands.md
         - name: Aliasy příkazů
@@ -755,7 +755,7 @@
           href: ide/reference/find-in-files-command.md
         - name: Přejít na – příkaz
           href: ide/reference/go-to-command.md
-        - name: Nastavení importu a exportu – příkaz
+        - name: nastavení importu a exportu – příkaz
           href: ide/reference/import-and-export-settings-command.md
         - name: Listovat zásobník volání – příkaz
           href: ide/reference/list-call-stack-command.md
@@ -777,7 +777,7 @@
           href: ide/reference/new-file-command.md
         - name: Otevřít soubor – příkaz
           href: ide/reference/open-file-command.md
-        - name: Otevřít projekt – příkaz
+        - name: otevřít projekt – příkaz
           href: ide/reference/open-project-command.md
         - name: Tisk – příkaz
           href: ide/reference/print-command.md
@@ -962,7 +962,7 @@
           href: ide/reference/output-window.md
         - name: Vlastnosti projektu
           items:
-            - name: Referenční informace
+            - name: Odkaz
               displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: 'Stránka Aplikace, Návrhář projektu (UPW)'
@@ -1033,7 +1033,7 @@
           href: ide/reference/team-explorer-reference.md
         - name: Sada nástrojů
           items:
-            - name: Referenční informace
+            - name: Odkaz
               displayName: Toolbox
               href: ide/reference/toolbox.md
             - name: 'Sada nástrojů, karta Součásti'
@@ -1044,7 +1044,7 @@
               href: ide/reference/toolbox-html-tab.md
     - name: Devenv – přepínače příkazového řádku
       items:
-        - name: Referenční informace
+        - name: Odkaz
           displayName: devenv command-line switches
           href: ide/reference/devenv-command-line-switches.md
         - name: '-? (devenv.exe)'

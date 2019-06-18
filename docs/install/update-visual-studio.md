@@ -2,7 +2,7 @@
 title: Aktualizace sady Visual Studio
 titleSuffix: ''
 description: Zjistěte, jak aktualizovat na nejnovější verzi, podrobné sady Visual Studio.
-ms.date: 06/15/2019
+ms.date: 06/18/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b495587d6107a06ef5d36e614c892e226011aa
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: c28a7ecb7d7f1cf7be52f7d77af9551b94236233
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160028"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195108"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizace na nejnovější verzi sady Visual Studio
 
@@ -28,7 +28,7 @@ ms.locfileid: "67160028"
 
 Doporučujeme vám přejít na maximum [novější verzi](/visualstudio/releasenotes/vs2017-relnotes/) sady Visual Studio 2017 tak, že vždycky získáte nejnovější funkce, opravy a vylepšení.
 
-A pokud chcete vyzkoušet naše nejnovější verze, vezměte v úvahu stahování [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) místo.
+A pokud chcete vyzkoušet naše nejnovější verzi, zvažte stažení a instalaci [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) místo.
 
 > [!IMPORTANT]
 > Musíte se přihlásit pomocí účtu, který má oprávnění správce k instalaci, aktualizaci nebo úpravy sady Visual Studio. Další informace najdete v tématu [uživatelská oprávnění a sada Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -164,6 +164,8 @@ Pokud vyberete možnost Ignorovat upozornění, Visual Studio zastaví, abych ho
 
 Doporučujeme vám přejít na maximum [novější verzi](/visualstudio/releases/2019/release-notes/) sady Visual Studio 2019 tak, že vždycky získáte nejnovější funkce, opravy a vylepšení.
 
+Pokud jste ještě nenainstalovali aplikaci Visual Studio 2019, pokračujte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) stránku a nainstalovat zdarma.
+
 > [!IMPORTANT]
 > Musíte se přihlásit pomocí účtu, který má oprávnění správce k instalaci, aktualizaci nebo úpravy sady Visual Studio. Další informace najdete v tématu [uživatelská oprávnění a sada Visual Studio](../ide/user-permissions-and-visual-studio.md).
 >
@@ -263,6 +265,7 @@ Můžete si vyhledejte aktualizaci a nainstalujte ji pomocí panelu nabídek neb
 ## <a name="see-also"></a>Viz také:
 
 * [Aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
+* [Aktualizace sady Visual Studio na směrný plán údržby](update-servicing-baseline.md)
 * [Aktualizace sady Visual Studio pro Mac](/visualstudio/mac/update)
 * [Úpravy sady Visual Studio](modify-visual-studio.md)
 * [Odinstalace sady Visual Studio](uninstall-visual-studio.md)

@@ -1,6 +1,6 @@
 ---
 title: Nástroj MSBuild speciálních znaků | Dokumentace Microsoftu
-ms.date: 11/04/2016
+ms.date: 06/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - escape characters
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7af1f137624c0af1fce02fde524d7fb4178cbad
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: cf312c1b73dbed58cc261c77a74555d00b0b04ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65084059"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195065"
 ---
 # <a name="msbuild-special-characters"></a>Speciální znaky nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rezervuje některé znaky pro speciální použití v určitém kontextu. Stačí dostala mimo tyto znaky, pokud chcete použít doslova v kontextu, ve kterém jsou vyhrazené. Například hvězdičku má zvláštní význam pouze v `Include` a `Exclude` atributy definici položky a ve voláních `CreateItem`. Pokud chcete hvězdičku jako hvězdičky v jednom z těchto kontextech, musíte je přeskočit. V každé další kontext zadejte hvězdičku, kde chcete, aby se zobrazí.
@@ -32,7 +32,7 @@ ms.locfileid: "65084059"
 |%|%25|Odkazování na metadata|
 |$|%24|Odkazování na vlastnosti|
 |@|%40|Referenční seznamy položek|
-|&#96;|%27|Podmínky a jiných výrazech|
+|'|%27|Podmínky a jiných výrazech|
 |;|%3B|Oddělovač seznamu|
 |?|%3F|Zástupný znak pro názvy souborů v `Include` a `Exclude` atributy|
 |*|% 2|Zástupný znak pro použití v názvech souborů v `Include` a `Exclude` atributy|

@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825460"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195249"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Přehled analyzátory pro .NET Compiler Platform
 
-.NET compiler Platform ("Roslyn") analyzátory analyzovat svůj kód pro styl, kvality a udržovatelnosti, návrhu a další potíže. Visual Studio obsahuje integrované sady analyzátory, které analyzují vaše C# nebo kódu jazyka Visual Basic jako vy, zadejte. Konfigurace předvoleb pro tyto integrované analyzátorů na [textový editor možnosti](../ide/code-styles-and-quick-actions.md) stránky nebo [souboru .editorconfig](../ide/editorconfig-code-style-settings-reference.md). Jako rozšíření sady Visual Studio nebo pomocí balíčku NuGet můžete nainstalovat další analyzátory.
+.NET compiler Platform ("Roslyn") analyzátory analyzovat svůj kód pro styl, kvality a udržovatelnosti, návrhu a další potíže. Visual Studio obsahuje integrované sady analyzátory, které analyzují vaše C# nebo kódu jazyka Visual Basic jako vy, zadejte. Konfigurace předvoleb pro tyto integrované analyzátorů na [textový editor možnosti](../ide/code-styles-and-code-cleanup.md) stránky nebo [souboru .editorconfig](../ide/editorconfig-code-style-settings-reference.md). Jako rozšíření sady Visual Studio nebo pomocí balíčku NuGet můžete nainstalovat další analyzátory.
 
-Pokud analyzátor se objevila porušení pravidel, jsou hlášeny v editoru kódu (jako *podtržení* pod problematický kód) a **seznam chyb** okno.
+Pokud analyzátor se objevila porušení pravidel, jsou hlášeny v editoru kódu (jako *vlnovku* pod problematický kód) a **seznam chyb** okno.
 
 Mnoho pravidla analyzátoru nebo *diagnostiky*, mají jednu nebo více přidružené *opravy kódu* , můžete použít k opravě problému. Diagnostika analyzátoru, které jsou součástí sady Visual Studio máte to napravit přidružený kód. Opravy kódu se zobrazují v nabídce ikonu žárovky společně s další typy [rychlé akce](../ide/quick-actions.md). Informace o těchto opravy kódu, naleznete v tématu [běžné rychlé akce](../ide/common-quick-actions.md).
 
@@ -32,9 +32,9 @@ Mnoho pravidla analyzátoru nebo *diagnostiky*, mají jednu nebo více přidruž
 
 Analyzátory .NET compiler Platform ("Roslyn") bude nakonec nahradí [statickou analýzu kódu](../code-quality/code-analysis-for-managed-code-overview.md) pro spravovaný kód. Mnoho pravidel analýzy kódu statických již byla přepsali jsme jako Roslyn analyzátor diagnostiky.
 
-Jako je porušení pravidel pro analýzu statického kódu, porušení analyzátor Roslyn joinkind **seznam chyb**. Kromě toho Roslyn analyzátor porušení zobrazí také v editoru kódu jako *squigglies* pod problematický kód. Barva podtržení závisí [nastavení závažnosti](../code-quality/use-roslyn-analyzers.md#rule-severity) pravidla. Následující snímek obrazovky ukazuje tři porušení&mdash;jeden červené, jedna, zelené a jeden gray:
+Jako je porušení pravidel pro analýzu statického kódu, porušení analyzátor Roslyn joinkind **seznam chyb**. Kromě toho Roslyn analyzátor porušení zobrazí také v editoru kódu jako *podtržení vlnovkou* pod problematický kód. Barva piktogram závisí [nastavení závažnosti](../code-quality/use-roslyn-analyzers.md#rule-severity) pravidla. Následující snímek obrazovky ukazuje tři porušení&mdash;jeden červené, jedna, zelené a jeden gray:
 
-![Squigglies v editoru kódu](media/diagnostics-severity-colors.png)
+![Podtržení vlnovkou v editoru kódu](media/diagnostics-severity-colors.png)
 
 Analyzátory Roslyn analýza kódu v okamžiku sestavení, jako je analýza statického kódu, pokud je povoleno, ale také na live při psaní. Pokud povolíte [úplné analýzy řešení](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), analyzátorů Roslyn také poskytují analýzu návrhu soubory kódu, které nejsou otevřené v editoru.
 
@@ -64,7 +64,7 @@ Rozlišovat mezi porušení z analyzátory Roslyn a statickou analýzu kódu v *
 
 Sada .NET compiler Platform analyzátory může být nainstalována na projektu prostřednictvím balíčku NuGet, nebo Visual Studio na úrovni jako rozšíření sady Visual Studio. Existují některé klíčové rozdíly mezi těmito dvěma metodami [instalace analyzátorů](../code-quality/install-roslyn-analyzers.md).
 
-### <a name="scope"></a>Rozsah
+### <a name="scope"></a>Scope
 
 Pokud nainstalujete analyzátory jako rozšíření sady Visual Studio, na všechny instance sady Visual Studio se vztahují na úrovni řešení. Pokud nainstalujete analyzátory jako balíček NuGet, který je upřednostňovanou metodou, se vztahují pouze k projektu, kam se nainstaloval balíček NuGet. V prostředích team analyzátory nainstalována jako balíčky NuGet jsou v oboru pro *všichni vývojáři* , které fungují v daném projektu.
 
@@ -79,6 +79,14 @@ Následující snímek obrazovky ukazuje sestavení z příkazového řádku vý
 ### <a name="rule-severity"></a>Závažnost pravidla
 
 Závažnost pravidla nelze nastavit v analyzátory, které byly nainstalovány jako rozšíření sady Visual Studio. Ke konfiguraci [pravidlo závažnost](../code-quality/use-roslyn-analyzers.md#rule-severity), instalace analyzátorů jako balíček NuGet.
+
+### <a name="categories"></a>Kategorie
+
+Níže jsou uvedeny různé druhy analyzátory, které vám usnadní analýzu kódu. 
+
+- Doporučené analyzátorů od Microsoftu: [Analyzátory FxCop](../code-quality/fxcop-analyzers.yml)
+- Visual Studio IDE analyzátory: [EditorConfig](../ide/code-styles-and-code-cleanup.md)
+- Analyzátory třetích stran: [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 ## <a name="next-steps"></a>Další kroky
 

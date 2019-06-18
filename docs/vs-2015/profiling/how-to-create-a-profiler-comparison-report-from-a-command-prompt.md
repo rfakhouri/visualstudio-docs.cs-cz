@@ -23,7 +23,7 @@ Můžete generovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro p
   
  Pro výčet identifikátorů porovnání kategorií a pole, zadejte na příkazovém řádku následující:  
   
- **VSPerfReport/querydifftables***VspFileName1*  *VspFileName2*  
+ **VSPerfReport/querydifftables**  *VspFileName1* *VspFileName2*  
   
  Použijte následující syntaxi pro vytvoření sestavy porovnání:  
   
