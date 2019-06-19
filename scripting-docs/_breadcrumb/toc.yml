@@ -12,7 +12,7 @@
           items: null
         - name: Skriptovací rozhraní systému Windows
           tocHref: /scripting/winscript/
-          topicHref: /scripting/winscript/windows-scripting-interfaces
+          topicHref: /scripting/winscript/windows-script-interfaces
           items:
             - name: Odkaz
               tocHref: /scripting/winscript/reference/
