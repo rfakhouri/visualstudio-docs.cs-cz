@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b76ad81a2c075a11ff55dcbd7fbc5e8a4b3fe7
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431851"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255992"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Nejčastější dotazy k ladění snímků v sadě Visual Studio
 
@@ -169,7 +169,7 @@ Pro službu App Service:
     - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
     > [!WARNING]
-    > Všechny změny nastavení aplikace opraví, zahájí se restartování aplikace. Podrobnosti o nastavení aplikace lze najít [tady](https://docs.microsoft.com/azure/app-service/web-sites-configure#app-settings). 
+    > Všechny změny nastavení aplikace opraví, zahájí se restartování aplikace. Další informace o nastavení aplikace najdete v tématu [nakonfigurovat aplikaci služby App Service na webu Azure Portal](/azure/app-service/web-sites-configure).
 
 Pro AKS:
 1. Aktualizovat váš soubor Dockerfile odebrat oddíly odpovídající [Visual Studio Snapshot Debugger na imagích Dockeru](https://github.com/Microsoft/vssnapshotdebugger-docker).

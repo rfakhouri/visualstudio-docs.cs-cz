@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0bb0bdc4354274349076263f3302956f7123680b
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65845996"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253994"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Vytvoření nastavení přenosné vlastního editoru pomocí řešení EditorConfig
 
@@ -55,7 +55,7 @@ Editor v sadě Visual Studio podporuje základní sadu [EditorConfig vlastnosti]
 - insert\_final_newline
 - kořen
 
-EditorConfig editor nastavení je podporované ve všech jazycích, Visual Studio podporované s výjimkou XML. Kromě toho podporuje EditorConfig [styl kódu](../ide/editorconfig-code-style-settings-reference.md) a [pojmenování](../ide/editorconfig-naming-conventions.md) konvence pro C# a Visual Basic.
+EditorConfig editor nastavení je podporované ve všech jazycích, Visual Studio podporované s výjimkou XML. Kromě toho podporuje EditorConfig [styl kódu](../ide/editorconfig-code-style-settings-reference.md) konvence včetně [jazyk](../ide/editorconfig-language-conventions.md), [formátování](../ide/editorconfig-formatting-conventions.md), a [pojmenování](../ide/editorconfig-naming-conventions.md) konvence pro C# a Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Přidání a odebrání souborů EditorConfig
 
@@ -94,7 +94,7 @@ Pokud soubor EditorConfig odeberte z projektu nebo základ kódu, musí zavřete
 
 Existuje několik způsobů přidáte soubor EditorConfig do projektu:
 
-- Nainstalujte [rozšíření služeb jazyka EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) snadněji přidat prázdnou *.editorconfig* soubor do projektu. Až nainstalujete toto rozšíření, jednoduše zvolte **přidat** > **.editorconfig File** z nabídky klikněte pravým tlačítkem nebo kontext uzel řešení, uzel projektu nebo v jakékoli složce  **Průzkumník řešení**. Toto rozšíření také zlepšuje prostředí pro úpravy *.editorconfig* souboru.
+- Nainstalujte [rozšíření služeb jazyka EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) snadněji přidat prázdnou *.editorconfig* soubor do projektu. Až nainstalujete toto rozšíření, jednoduše zvolte **přidat** >  **.editorconfig File** z nabídky klikněte pravým tlačítkem nebo kontext uzel řešení, uzel projektu nebo v jakékoli složce  **Průzkumník řešení**. Toto rozšíření také zlepšuje prostředí pro úpravy *.editorconfig* souboru.
 
    ![Přidat .editorconfig soubor s příponou](media/editorconfig-extension-add.png)
 
@@ -175,7 +175,6 @@ Obor vaše EditorConfig konvence můžete řídit nastavením ```root=true``` vl
 ## <a name="see-also"></a>Viz také:
 
 - [Konvence stylu kódu .NET](../ide/editorconfig-code-style-settings-reference.md)
-- [Zásady vytváření názvů rozhraní .NET](../ide/editorconfig-naming-conventions.md)
 - [Podpora EditorConfig pro služby jazyka](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Funkce editoru kódu](writing-code-in-the-code-and-text-editor.md)

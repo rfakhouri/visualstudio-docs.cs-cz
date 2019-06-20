@@ -8,12 +8,12 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Vítá vás Visual Studio předplatná
 Searchscope: VS Subscription
-ms.openlocfilehash: 939922aa418ee94d3018ac5f5743c31181e5e875
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 1515b7da3cadb8397f38554498fb4880db2d3b03
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976110"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259478"
 ---
 # <a name="visual-studio-subscriptions"></a>Předplatná sady Visual Studio
 
@@ -194,7 +194,6 @@ Aby vaše předplatné ještě užitečnější, přidáme a často aktualizovat
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (firmy, technické a tvorba)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (cloud, návrh, mobilní zařízení a data)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (datové vědy a AI)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a> (vývoj pro mobilní zařízení)</li>
                             <li><a href="/visualstudio/subscriptions/vs-opsgility">Školení Opsgility</a> (zaměřeno na cloud)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Incidenty profesionální technické podpory Microsoftu</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Chat s poradcem pro Azure</a></li>

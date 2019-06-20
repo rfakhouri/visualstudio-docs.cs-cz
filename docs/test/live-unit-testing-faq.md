@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5f88acccd9ccbcd880b8403edb0eb40f97ad2e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714490"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258132"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – nejčastější dotazy
 
@@ -197,15 +197,6 @@ Testy, které využívají tyto hodnoty může selhat při spuštění metodou L
 Vaše řešení můžete vytvářet i v případě, že nejsou provádění úprav, pokud proces sestavení vašeho řešení generuje zdrojový kód, který je součástí vlastním řešením a cílové soubory sestavení nemají odpovídající vstupy a výstupy zadán. Cíle by se měly provádět seznam vstupů a výstupů tak, aby MSBuild může provést příslušné kontroly aktuální a určit, jestli je potřeba nové sestavení.
 
 Live Unit Testing spustí sestavení pokaždé, když se zjistí, že došlo ke změně zdrojových souborů. Protože sestavení vašeho řešení generuje zdrojové soubory, Live Unit Testing dostane do sestavení nekonečné smyčky. Pokud však vstupy a výstupy cíle jsou kontrolovány při Live Unit Testing (po zjištění nově vytvořených zdrojových souborů z předchozího buildu) spuštění druhé sestavení, protože se vstupy a výstupy kontroly, ji budou přerušit ze smyčky sestavení Označuje, že všechno, co je aktuální.  
-
-## <a name="lightweight-solution-load"></a>Zjednodušené načtení řešení
-
-**Live Unit testing práce s funkce zjednodušeného řešení načtení jak?**
-
-Live Unit Testing nyní nefunguje s funkce zjednodušeného načtení řešení. Funguje pouze po nejméně jeden z testovacích projektů načtení. Dokud to neuděláte, nebude fungovat, protože Live Unit Testing je závislá na alespoň jeden z testovacích projektů odkazující na adaptér testu (MSTest, xUnit a NUnit) načítán.
-
-> [!NOTE]
-> Zjednodušené načtení řešení již není k dispozici v sadě Visual Studio 2017 verze 15.5 nebo novější. V sadě Visual Studio 2017 verze 15.5 nebo novější spravované velká řešení obsahující kód zatížení mnohem rychleji než dřív, i bez zjednodušené načtení řešení.
 
 ## <a name="new-process-coverage"></a>Nový proces pokrytí
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 9d82e3ace2cc26022a5ae39c690c5018a6325360
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261965"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253894"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Zásady vytváření názvů .NET pro EditorConfig
 
@@ -46,7 +46,7 @@ Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot
 - \* (Tato hodnota slouží k určení všechny symboly)
 - – obor názvů
 - třída
-- struct 
+- struct
 - rozhraní
 - enum
 - property
@@ -56,7 +56,7 @@ Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot
 - delegát
 - parametr
 - type_parameter
-- místní
+- local
 - local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>Úrovně přístupnosti symbolů
@@ -74,7 +74,7 @@ Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot
 - protected
 - chráněné\_interní nebo protected_friend
 - privátní\_chráněné
-- místní
+- local
 
    `local` Úrovni přístupu platí pro symboly definované v rámci metody. Je užitečné pro definování zásady vytváření názvů pro symboly, jehož usnadnění nelze zadat v kódu. Pokud zadáte například `applicable_accessibilities = local` na zásady vytváření názvů pro konstanty (`required_modifiers = const`), se pravidlo vztahuje pouze na konstanty definované v rámci metody a ne těch, které jsou definovány v rámci typu.
 
@@ -209,6 +209,8 @@ Pokud ho zavřete a znovu otevřít souboru s kódem, místo toho návrhů v č�
 
 ## <a name="see-also"></a>Viz také:
 
+- [Jazykové konvence](editorconfig-language-conventions.md)
+- [Konvence formátování](editorconfig-formatting-conventions.md)
 - [Zásady vytváření názvů Roslyn](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
-- [Jazyk a zásady formátování rozhraní .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Vytvoření přenosné vlastního editoru](../ide/create-portable-custom-editor-options.md)
+- [EditorConfig nastavení konvence psaní kódu .NET](editorconfig-code-style-settings-reference.md)
