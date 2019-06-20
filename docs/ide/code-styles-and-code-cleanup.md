@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2ebad946d62016199212cfeaae54c32db74d4c
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 6144e5bf26436e7010e773fa7ac03ad24ad7c490
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64558293"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67290999"
 ---
 # <a name="code-style-preferences"></a>Předvolby stylu kódu
 
@@ -90,9 +90,14 @@ Pro C# má soubory kódu, Visual Studio 2019 **vyčištění kódu** tlačítko 
 > [!TIP]
 > Se závažností z nakonfigurovaných pravidel **žádný** nehrají roli, v vyčištění kódu však lze použít jednotlivě prostřednictvím **rychlé akce a Refaktoringy** nabídky.
 
-Nejprve nakonfigurujte styly kódu, které chcete použít (v jednom ze dvou profilů) v **konfigurace vyčištění kódu** dialogové okno. Chcete-li otevřít toto dialogové okno, klikněte na rozbalovací šipku vedle ikony zarovnání vyčištění kódu a klikněte na tlačítko **konfigurace vyčištění kódu**. Také můžete stisknout klávesu **Ctrl**+**K**, **Ctrl**+**Q**.
+Nejprve nakonfigurujte styly kódu, které chcete použít (v jednom ze dvou profilů) v **konfigurace vyčištění kódu** dialogové okno. Chcete-li otevřít toto dialogové okno, klikněte na rozbalovací šipku vedle ikony zarovnání vyčištění kódu a klikněte na tlačítko **konfigurace vyčištění kódu**.  
 
 ![Konfigurace vyčištění kódu ve Visual Studio 2019](media/configure-code-cleanup.png)
+
+Po nakonfigurování vyčištění kódu můžete kliknutím na ikonu zarovnání nebo stisknutím klávesy **Ctrl**+**K**, **Ctrl**+**E** ke spuštění kódu čištění. Můžete také spustit čištění kódu napříč celý projekt nebo řešení. Klikněte pravým tlačítkem na název projektu nebo řešení v **Průzkumníka řešení**vyberte **analyzovat a vyčištění kódu**a pak vyberte **spuštění kódu čištění**.
+
+
+![Spuštění kódu čištění přes celý projekt nebo řešení](media/run-code-cleanup-project-solution.png)
 
 Pokud chcete, aby vaše nastavení stylu kódu použít pokaždé, když uložíte soubor, může jako [vyčištění kódu při uložení](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave) rozšíření.
 

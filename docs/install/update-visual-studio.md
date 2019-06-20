@@ -15,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27074b20aafe046d03b11f92d49b6af1a01c3067
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253666"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67290656"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizace na nejnovější verzi sady Visual Studio
 
 ::: moniker range="vs-2017"
 
-Doporučujeme vám přejít na maximum [novější verzi](/visualstudio/releasenotes/vs2017-relnotes/) sady Visual Studio 2017 tak, že vždycky získáte nejnovější funkce, opravy a vylepšení.
+Doporučujeme vám přejít na maximum [poslední verzi](/visualstudio/releasenotes/vs2017-relnotes/) sady Visual Studio 2017 tak, že vždycky získáte nejnovější funkce, opravy a vylepšení.
 
 A pokud chcete vyzkoušet naše nejnovější verzi, zvažte stažení a instalaci [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) místo.
 
@@ -162,7 +162,7 @@ Pokud vyberete možnost Ignorovat upozornění, Visual Studio zastaví, abych ho
 
 ::: moniker range="vs-2019"
 
-Doporučujeme vám přejít na maximum [novější verzi](/visualstudio/releases/2019/release-notes/) sady Visual Studio 2019 tak, že vždycky získáte nejnovější funkce, opravy a vylepšení.
+Doporučujeme vám přejít na maximum [poslední verzi](/visualstudio/releases/2019/release-notes/) sady Visual Studio 2019 tak, že vždycky získáte nejnovější funkce, opravy a vylepšení.
 
 A pokud jste ještě nenainstalovali aplikaci Visual Studio 2019, přejděte na [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalujte ji zdarma.
 
@@ -264,6 +264,7 @@ Můžete si vyhledejte aktualizaci a nainstalujte ji pomocí panelu nabídek neb
 
 ## <a name="see-also"></a>Viz také:
 
+* [Instalace sady Visual Studio verze vedle sebe](install-visual-studio-versions-side-by-side.md)
 * [Aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Aktualizace sady Visual Studio na směrný plán údržby](update-servicing-baseline.md)
 * [Aktualizace sady Visual Studio pro Mac](/visualstudio/mac/update)

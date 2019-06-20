@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f623fd040bdd06b4d9de7c2258c6e907e2953edf
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 3b65b8bc50fb56ea4749852371ffde8f25bb7827
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043419"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291010"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Produktivita nástroje Visual Studio Příručka pro C# vývojáře
 
@@ -57,6 +57,8 @@ Tady jsou oblíbené klávesové zkratky sady Visual Studio:
 | **CTRL**+**K**,**D** (výchozí profil) nebo **Ctrl**+**E**,**D**  (Profil jazyka C#) | Formátovat dokument | Vyčistí formátování narušení v souboru na základě nového řádku, mezery a nastavení odsazení |
 | **CTRL**+ **\\** ,**Ctrl**+**E** (výchozí profil) nebo **Ctrl** + **W**,**E** (profil jazyka C#) | Zobrazení seznamu chyb | Zobrazit všechny chyby v dokumentu, projekt nebo řešení |
 | **ALT** + **Page Up nebo PAGE DOWN** | Přejít na další/předchozí problém | Přejít na předchozí nebo další chyba, upozornění, návrh v dokumentu (k dispozici v **Visual Studio 2017 verze 15.8** a novější) |
+| **Ctrl**+**K**, **/** | Přepnout jednořádkový komentář nebo zrušte komentář u | Tento příkaz přidá nebo odebere jednořádkový komentář v závislosti na tom, jestli je už opatřený komentáři váš výběr |
+| **Ctrl**+**Shift**+ **/** | Přepínací tlačítko blok okomentovat/odkomentovat | Tento příkaz přidá nebo odebere blokovat komentáře v závislosti na tom, co jste vybrali |
 
 > [!NOTE]
 > Některá rozšíření odpojit klávesové zkratky sady Visual Studio výchozí. Použití výše uvedené příkazy, obnovit vaše klávesové zkratky nastavení sady Visual Studio tak, že přejdete do **nástroje** > **nastavení importu a exportu** > **obnovit všechna nastavení**  nebo **nástroje** > **možnosti** > **klávesnice** > **resetování**.
@@ -107,6 +109,10 @@ Můžete použít *.editorconfig* souboru kodifikovat konvence kódování a mí
 Visual Studio poskytuje na vyžádání formátování souboru s kódem, včetně předvoleb stylu kódu prostřednictvím **vyčištění kódu** funkce. Ke spuštění kódu čištění, klikněte na ikonu zarovnání v dolní části editoru nebo stisknutím klávesy **Ctrl**+**K**, **Ctrl**+**E**.
 
 ![Kód čištění tlačítko v aplikaci Visual Studio 2019](media/execute-code-cleanup.png)
+
+Můžete také spustit čištění kódu napříč celý projekt nebo řešení. Klikněte pravým tlačítkem na název projektu nebo řešení v **Průzkumníka řešení**vyberte **analyzovat a vyčištění kódu**a pak vyberte **spuštění kódu čištění**.
+
+![Spuštění kódu čištění přes celý projekt nebo řešení](media/run-code-cleanup-project-solution.png)
 
 Kromě formát souboru pro mezery, odsazení, ještě, **vyčištění kódu** také použije stylů vybraného kódu. Předvolby pro každý styl kódu se načítají z [souborů EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), pokud máte pro projekt, nebo z [nastavení stylu kódu](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) v **možnosti** dialogové okno.
 

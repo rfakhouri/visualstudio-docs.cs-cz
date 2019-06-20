@@ -8,18 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-- vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820309"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291032"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Přizpůsobení sestavení a ladění úlohy pro vývoj "Otevřít složku"
 
@@ -33,7 +32,6 @@ Přizpůsobení vašeho projektu bez základu kódu s použitím následujícíc
 |-|-|
 |*tasks.vs.json*|Určení vlastního sestavení příkazy a přepínače kompilátoru a libovolného (bez sestavení související) úlohy.<br>Přístup přes **Průzkumníka řešení** klikněte pravým tlačítkem na položku nabídky **nakonfigurovat úlohy**.|
 |*launch.vs.json*|Zadejte argumenty příkazového řádku pro ladění.<br>Přístup přes **Průzkumníka řešení** klikněte pravým tlačítkem na položku nabídky **nastavení ladění a spouštění**.|
-|*VSWorkspaceSettings.json*|Obecná nastavení, která může mít vliv na úlohy a spustit. Například definování `envVars` v *VSWorkspaceSettings.json* přidá zadané proměnné prostředí pro spuštění příkazů externě.<br>Tento soubor vytvořit ručně.|
 
 Tyto *.json* soubory jsou umístěny ve skryté složce s názvem *.vs* v kořenové složce vašeho základu kódu. *Tasks.vs.json* a *souboru launch.vs.json* soubory jsou vytvořeny pomocí sady Visual Studio na základě potřeby, po výběru některé **nakonfigurovat úlohy** nebo **ladění Nastavení a spouštění** pro soubor nebo složku v **Průzkumníka řešení**. Tyto *.json* soubory jsou skryté, protože uživatelé zbytečné vrátit je do správy zdrojového kódu. Ale pokud chcete mít možnost zkontrolovat do správy zdrojového kódu, přetáhněte soubory v kořenové složce vašeho základu kódu, kde jsou viditelné.
 
@@ -193,7 +191,7 @@ Více *tasks.vs.json* soubory mohou existovat v kořenové a podadresářů zák
 - Nadřazený adresář aktuálního adresáře, až do kořenového adresáře.
 - Soubory nastavení v kořenovém adresáři.
 
-Platí následující pravidla agregace *tasks.vs.json* a *VSWorkspaceSettings.json* soubory. Informace o tom, jak se agregují nastavení v jiném souboru naleznete v části odpovídající pro tento soubor v tomto článku.
+Platí následující pravidla agregace *tasks.vs.json*. Informace o tom, jak se agregují nastavení v jiném souboru naleznete v části odpovídající pro tento soubor v tomto článku.
 
 ### <a name="properties-for-tasksvsjson"></a>Vlastnosti pro tasks.vs.json
 
@@ -289,10 +287,6 @@ Při ukládání tohoto souboru se zobrazí název nové konfigurace v rozevíra
 
 > [!NOTE]
 > `configurations` Pole vlastnosti v *souboru launch.vs.json* číst ze dvou umístění souboru&mdash;kořenový adresář pro základ kódu a *.vs* adresáře. Pokud dojde ke konfliktu, Priorita se určuje na hodnotu v *.vs\launch.vs.json*.
-
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>Definujte nastavení pracovního prostoru v VSWorkspaceSettings.json
-
-Můžete zadat Obecná nastavení, která může mít vliv na úlohy a spustíte *VSWorkspaceSettings.json* souboru. Například pokud definujete `envVars` v *VSWorkspaceSettings.json*, Visual Studio přidá zadané proměnné do příkazů, které jsou spouštěny externě. Pokud chcete použít tento soubor, je třeba ji ručně vytvořit.
 
 ## <a name="additional-settings-files"></a>Další nastavení soubory
 
