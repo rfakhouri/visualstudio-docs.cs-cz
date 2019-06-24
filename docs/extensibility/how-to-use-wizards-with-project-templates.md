@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3831cbc484fde7c61dbe1baf5ecd9ab07556a7f5
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352045"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342416"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Postupy: Použití průvodců se šablonami projektů
 
@@ -68,7 +68,7 @@ Tento postup ukazuje, jak vytvořit vlastního průvodce, který otevře formul�
 
 3. Přidáte sestavení jako prostředek do projektu VSIX. Otevřít *source.extension.vsixmanifest* a vyberte možnost **prostředky** kartu. V **přidat nové aktivum** okně pro **typ** vyberte **Microsoft.VisualStudio.Assembly**, pro **zdroj** vyberte **A projekt v aktuálním řešení**a pro **projektu** vyberte **MyProjectWizard**.
 
-4. Přidejte následující odkazy do projektu VSIX. (V **Průzkumníka řešení**, pod uzlem projektu VSIX zvolte **odkazy**, klikněte pravým tlačítkem a vyberte **přidat odkaz**.) V **přidat odkaz** dialogového okna v **Framework** kartu, najdete **System.Windows formuláře** sestavení a vyberte ji. Teď vyberte **rozšíření** kartu. Najít **EnvDTE** sestavení a vyberte ji. Také najít **Microsoft.VisualStudio.TemplateWizardInterface** sestavení a vyberte ji. Klikněte na **OK**.
+4. Přidejte následující odkazy do projektu VSIX. (V **Průzkumníka řešení**, pod uzlem projektu VSIX zvolte **odkazy**, klikněte pravým tlačítkem a vyberte **přidat odkaz**.) V **přidat odkaz** dialogového okna v **Framework** kartu, najdete **System.Windows formuláře** sestavení a vyberte ji. Také najít a vybrat **systému** a **System.Drawing** sestavení. Teď vyberte **rozšíření** kartu. Najít **EnvDTE** sestavení a vyberte ji. Také najít **Microsoft.VisualStudio.TemplateWizardInterface** sestavení a vyberte ji. Klikněte na **OK**.
 
 5. Přidejte třídu pro implementaci průvodce do projektu VSIX. (V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu VSIX a vyberte **přidat**, pak **nová položka**, pak **třídy**.) Název třídy **WizardImplementation**.
 
@@ -157,7 +157,7 @@ Tento postup ukazuje, jak vytvořit vlastního průvodce, který otevře formul�
 
    - <xref:System.Object> Pole, které obsahuje sadu parametrů předaných průvodci pomocí sady Visual Studio.
 
-     V tomto příkladu přidá hodnotu parametru ze vstupního formuláře uživatele do <xref:System.Collections.Generic.Dictionary%602> parametru. Každá instance `$custommessage$` parametr v projektu bude nahrazena textem zadaným uživatelem. Do projektu přidejte následující sestavení: **Systém** a **System.Drawing**.
+     V tomto příkladu přidá hodnotu parametru ze vstupního formuláře uživatele do <xref:System.Collections.Generic.Dictionary%602> parametru. Každá instance `$custommessage$` parametr v projektu bude nahrazena textem zadaným uživatelem.
 
 7. Teď vytvořte **UserInputForm**. V *WizardImplementation.cs* přidejte následující kód na konci `WizardImplementation` třídy.
 

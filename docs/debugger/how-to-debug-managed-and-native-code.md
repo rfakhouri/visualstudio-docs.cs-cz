@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 3dfdc230a4dc873cc9a068e2f641da022018aff3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8e62b9a99f178a45466ff8afa46753981be61424
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679401"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342384"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Kurz: Ladění C# a C++ ve stejné relaci ladění
 
@@ -58,7 +58,7 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
     Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **prázdný projekt**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový prázdný projekt projekt** pro jazyk C ++. V dialogovém okně, které se zobrazí, zvolte **vytvořit**. Zadejte název, například **Mixed_Mode_Debugging** a klikněte na tlačítko **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **Visual C++**, zvolte **jiných**a potom v prostředním podokně vyberte **prázdný projekt**. Zadejte název, například **Mixed_Mode_Debugging** a klikněte na tlačítko **OK**.
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **Visual C++** , zvolte **jiných**a potom v prostředním podokně vyberte **prázdný projekt**. Zadejte název, například **Mixed_Mode_Debugging** a klikněte na tlačítko **OK**.
     ::: moniker-end
 
     Pokud se nezobrazí **prázdný projekt** šablony projektu, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
@@ -73,7 +73,7 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 
 1. V **Průzkumníka řešení**vyberte **zdrojové soubory**a pak vyberte **projektu** > **přidat novou položku**. Nebo klikněte pravým tlačítkem na **zdrojové soubory** a vyberte **přidat** > **nová položka**.
 
-1. V **nová položka** dialogového okna, vyberte **soubor C++ (.cpp)**. Typ **Mixed_Mode.cpp** v **název** pole a pak vyberte **přidat**.
+1. V **nová položka** dialogového okna, vyberte **soubor C++ (.cpp)** . Typ **Mixed_Mode.cpp** v **název** pole a pak vyberte **přidat**.
 
     Visual Studio přidá nový soubor C++ **Průzkumníka řešení**.
 
@@ -85,7 +85,7 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 
 1. V **Průzkumníka řešení**vyberte **hlavičkové soubory**a pak vyberte **projektu** > **přidat novou položku**. Nebo klikněte pravým tlačítkem na **hlavičkové soubory** a vyberte **přidat** > **nová položka**.
 
-1. V **nová položka** dialogového okna, vyberte **soubor hlaviček (.h)**. Typ **Mixed_Mode.h** v **název** pole a pak vyberte **přidat**.
+1. V **nová položka** dialogového okna, vyberte **soubor hlaviček (.h)** . Typ **Mixed_Mode.h** v **název** pole a pak vyberte **přidat**.
 
    Visual Studio přidá nový soubor záhlaví **Průzkumníka řešení**.
 
@@ -119,7 +119,7 @@ Pokud máte nainstalovanou sadu Visual Studio, ale nemáte úlohy, které potře
 
 1. V části **vlastnosti konfigurace** v levém podokně vyberte **Linkeru** > **Upřesnit**a v rozevíracím seznamu vedle **bez vstupního bodu**vyberte **ne**. Pokud jste museli změňte ji na **ne**vyberte **použít**.
 
-1. V části **vlastnosti konfigurace**vyberte **Obecné**a v rozevíracím seznamu vedle **typ konfigurace**vyberte **dynamická knihovna (.dll)**. Vyberte **použít**a pak vyberte **OK**.
+1. V části **vlastnosti konfigurace**vyberte **Obecné**a v rozevíracím seznamu vedle **typ konfigurace**vyberte **dynamická knihovna (.dll)** . Vyberte **použít**a pak vyberte **OK**.
 
    ![Přepnout na nativní knihovnu DLL](../debugger/media/mixed-mode-set-as-native-dll.png)
 
@@ -200,7 +200,7 @@ Ve většině verzí sady Visual Studio, počínaje verzí Visual Studio 2017, j
    >[!NOTE]
    >Ve výchozím nastavení *launchSettings.json* probíhá *C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties*. Pokud *launchSettings.json* neexistuje, vyberte **Mixed_Mode_Calling_App** projekt **Průzkumníka řešení** a pak vyberte **vlastnosti** ikonu, nebo klikněte pravým tlačítkem na projekt a vyberte **vlastnosti**. Změňte dočasné v **ladění** kartu a sestavte projekt. Tím se vytvoří *launchSettings.json* souboru. Vrátit zpět změny, které jste provedli v **ladění** kartu.
 
-1. V *lauchsettings.json* přidejte následující řádek:
+1. V *launchsettings.json* přidejte následující řádek:
 
     ```csharp
     "nativeDebugging": true
