@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bb0bdc4354274349076263f3302956f7123680b
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: f48a690513c80b02683df61a0abf68a3cad58293
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253994"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328806"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Vytvoření nastavení přenosné vlastního editoru pomocí řešení EditorConfig
 
@@ -59,11 +59,11 @@ EditorConfig editor nastavení je podporované ve všech jazycích, Visual Studi
 
 ## <a name="add-and-remove-editorconfig-files"></a>Přidání a odebrání souborů EditorConfig
 
-Přidání EditorConfig soubor do projektu nebo základ kódu nelze převést existující styly nové značky. Například pokud máte odsazení v souboru, které jsou formátovány pomocí karty a přidání EditorConfig souboru, který odsazení pomocí mezer, znaků odsazení nebudou automaticky převedena na mezery. Však žádné nové řádky kódu se formátují podle EditorConfig souboru. Kromě toho pokud formátovat dokument (**upravit** > **Upřesnit** > **formátovat dokument** nebo **Ctrl** + **K**, **Ctrl**+**D**), použijí se nastavení v souboru EditorConfig do existujícího kódu.
+Při přidání souboru EditorConfig do projektu nebo základ kódu, všechny nové řádky kódu, který napíšete se formátují podle EditorConfig souboru. Ale přidání souboru EditorConfig nejde převést existující styly nové otisky. dokud formátovat dokument. Například pokud máte odsazení v souboru, které jsou formátovány pomocí karty a přidání EditorConfig souboru, který odsazení pomocí mezer, znaků odsazení nebudou automaticky převedena na mezery. Při formátování dokumentu (**upravit** > **Upřesnit** > **formátovat dokument** nebo **Ctrl** + **K**, **Ctrl**+**D**), použijí se nastavení v souboru EditorConfig do existujícího kódu.
 
-Pokud soubor EditorConfig odeberte z projektu nebo základ kódu, musí zavřete a znovu otevřít soubory se vrátit do editoru globální nastavení pro nové řádky kódu.
+Pokud soubor EditorConfig odeberte z projektu nebo základ kódu a chcete, aby nové řádky kódu, který formátovaný podle nastavení globální editoru, musí zavřete a znovu otevřít soubory.
 
-### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>Chcete-li přidat soubor s příponou EditorConfig projektu nebo řešení
+### <a name="add-an-editorconfig-file-to-a-project"></a>Přidejte do projektu soubor EditorConfig
 
 1. Otevřete projekt nebo řešení v sadě Visual Studio. Vyberte uzel projektu nebo řešení, podle toho, jestli vaše *.editorconfig* nastavení platit pro všechny projekty v řešení nebo jen jeden. Můžete také vybrat složku ve vašem projektu nebo řešení pro přidání *.editorconfig* do souboru.
 
@@ -71,34 +71,27 @@ Pokud soubor EditorConfig odeberte z projektu nebo základ kódu, musí zavřete
 
    **Přidat novou položku** zobrazí se dialogové okno.
 
-1. V kategoriích vlevo vyberte **Obecné**a klikněte na tlačítko **textový soubor** šablony. V **název** textové pole, zadejte `.editorconfig` a klikněte na tlačítko **přidat**.
+1. Do vyhledávacího pole vyhledejte **editorconfig**.
+
+   Dvě **editorconfig souboru** šablony položek jsou zobrazena ve výsledcích hledání.
+
+   ![EditorConfig soubor šablony položek v sadě Visual Studio](media/editorconfig-item-templates.png)
+
+1. Vyberte **editorconfig souboru (výchozí)** šablona pro přidání souboru EditorConfig naplněna dvě základní možnosti EditorConfig pro styl odsazení a velikosti. Nebo vyberte **editorconfig souboru (.NET)** šablona pro přidání souboru EditorConfig naplněna výchozí [styl kódu .NET, formátování a zásady vytváření názvů](../ide/editorconfig-code-style-settings-reference.md).
 
    *.Editorconfig* souboru se zobrazí v Průzkumníku řešení a otevře v editoru.
 
-   ![.editorconfig souboru v Průzkumníku řešení](media/editorconfig-in-solution-explorer.png)
+   ![souboru .editorconfig v Průzkumníku řešení a editor](media/editorconfig-dotnet.png)
 
-1. Upravte soubor podle potřeby, například:
-
-   ```ini
-   root = true
-
-   [*.{cs,vb}]
-   indent_size = 4
-   trim_trailing_whitespace = true
-
-   [*.cs]
-   csharp_new_line_before_open_brace = methods
-   ```
+1. Upravte soubor podle potřeby.
 
 ### <a name="other-ways-to-add-an-editorconfig-file"></a>Další způsoby přidávání souboru EditorConfig
 
 Existuje několik způsobů přidáte soubor EditorConfig do projektu:
 
-- Nainstalujte [rozšíření služeb jazyka EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) snadněji přidat prázdnou *.editorconfig* soubor do projektu. Až nainstalujete toto rozšíření, jednoduše zvolte **přidat** >  **.editorconfig File** z nabídky klikněte pravým tlačítkem nebo kontext uzel řešení, uzel projektu nebo v jakékoli složce  **Průzkumník řešení**. Toto rozšíření také zlepšuje prostředí pro úpravy *.editorconfig* souboru.
+- [Funkci odvození kódu](/visualstudio/intellicode/code-style-inference) sady pro sadu Visual Studio IntelliCode odvodí z něj styl kódu z existujícího kódu. Potom vytvoří prázdný soubor EditorConfig s předvolby stylu kódu již definována.
 
-   ![Přidat .editorconfig soubor s příponou](media/editorconfig-extension-add.png)
-
-- Vyzkoušejte si [IntelliCode rozšíření](/visualstudio/intellicode/intellicode-visual-studio). Tento experimentální rozšíření odvodí z něj styl kódu z existujícího kódu a pak vytvoří neprázdný *.editorconfig* soubor s předvolby stylu kódu již definována.
+- Od verze Visual Studio 2019, můžete [generování EditorConfig souboru na základě svého nastavení stylu kódu](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) v **nástroje** > **možnosti**.
 
 ## <a name="file-hierarchy-and-precedence"></a>Hierarchie souborů a Priorita
 

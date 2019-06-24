@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření vazby k datům ze služby v projektu doplňku VSTO'
+title: Vytvoření vazby k datům ze služby v projektu doplňku VSTO
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ba36b62aa9f4330cc88eaa198d0488d7e43b341
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6278e4e849d698097fe3760411a3121d977df07
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982077"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328857"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Návod: Vytvoření vazby k datům ze služby v projektu doplňku VSTO
   Vytvoření vazby dat k ovládacím prvkům hostitele v projekty doplňku VSTO. Tento návod ukazuje, jak přidat ovládací prvky do dokumentu aplikace Microsoft Office Word, svázat ovládací prvky dat načtených z obsahu služby MSDN a reagovat na události v době běhu.

@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel'
+title: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3f9763fd670495de9ae4ef8b35a282d644ffe4d
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438530"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328392"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel
   Tento úvodní názorný postup ukazuje, jak k vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Excel. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pouze při otevření konkrétní sešitu. Nelze použít přizpůsobení úrovni dokumentu provést změny celou aplikaci, například zobrazení novou kartu pásu karet při otevření libovolné sešitu.
@@ -73,13 +73,13 @@ ms.locfileid: "63438530"
 
    - *FirstWorkbookCustomization*.xlsx – představuje Excelový sešit v projektu. Obsahuje všechny listy a grafy.
 
-   - List1 (*.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#)-list, který poskytuje návrhová plocha a kód pro první listu v sešitu. Další informace najdete v tématu [hostitelská položka Worksheet](../vsto/worksheet-host-item.md).
+   - List1 ( *.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#)-list, který poskytuje návrhová plocha a kód pro první listu v sešitu. Další informace najdete v tématu [hostitelská položka Worksheet](../vsto/worksheet-host-item.md).
 
-   - List2 (*.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#)-list, který poskytuje návrhová plocha a kód pro druhý listu v sešitu.
+   - List2 ( *.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#)-list, který poskytuje návrhová plocha a kód pro druhý listu v sešitu.
 
-   - Sheet3 – (*.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#)-list, který poskytuje návrhová plocha a kód pro třetí listu v sešitu.
+   - Sheet3 – ( *.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#)-list, který poskytuje návrhová plocha a kód pro třetí listu v sešitu.
 
-   - ThisWorkbook (*.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#) – obsahuje návrhová plocha a kód pro přizpůsobení na úrovni sešitu. Další informace najdete v tématu [hostitelská položka Workbook](../vsto/workbook-host-item.md).
+   - ThisWorkbook ( *.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#) – obsahuje návrhová plocha a kód pro přizpůsobení na úrovni sešitu. Další informace najdete v tématu [hostitelská položka Workbook](../vsto/workbook-host-item.md).
 
      Soubor kódu List1 je automaticky otevřít v návrháři.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Hledání e-mailových adres v kontaktech prostřednictvím kódu programu'
+title: Najít e-mailovou adresu v kontaktech prostřednictvím kódu programu
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 178549a815fd9a17377986a5b19e02db12ec76d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26e32314db68ae064edac5537222447625cb051d
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962291"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328974"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Postupy: Hledání e-mailových adres v kontaktech prostřednictvím kódu programu
   Tento příklad vyhledá složku kontaktů pro kontakty, které mají název domény **example.com** v e-mailové adresy.

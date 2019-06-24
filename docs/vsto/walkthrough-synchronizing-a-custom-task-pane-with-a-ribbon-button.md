@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Synchronizace vlastního podokna úloh s tlačítkem pásu karet'
+title: Synchronizace vlastního podokna úloh s tlačítkem pásu karet
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb74c56536a749629def4654f90206808e3b87e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443979"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328327"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Návod: Synchronizace vlastního podokna úloh s tlačítkem pásu karet
   Tento návod ukazuje, jak vytvořit vlastního podokna úloh, které uživatelé můžou skrýt nebo zobrazit kliknutím na přepínací tlačítko na pásu karet. Vždy byste měli vytvořit prvek uživatelského rozhraní (UI), jako je například tlačítko, který mohou uživatelé kliknout a zobrazit nebo skrýt vlastního podokna úloh, protože aplikace Microsoft Office se neposkytuje výchozí způsob, jak uživatelé zobrazení nebo skrytí vlastních podoken úloh.
@@ -71,7 +71,7 @@ ms.locfileid: "63443979"
 
 1. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
 
-2. V **přidat novou položku** dialogu **pás karet (vizuální návrhář)**.
+2. V **přidat novou položku** dialogu **pás karet (vizuální návrhář)** .
 
 3. Změňte název nového pásu karet na **ManageTaskPaneRibbon**a klikněte na tlačítko **přidat**.
 

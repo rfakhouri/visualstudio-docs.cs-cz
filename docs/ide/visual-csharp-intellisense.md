@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a875ea2690a2932a10ff3a16364dd9d362a7642
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581938"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328846"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -86,7 +86,7 @@ Po zadání [přepsat](/dotnet/csharp/language-reference/keywords/override) a po
 
 ### <a name="ai-enhanced-intellisense"></a>AI-enhanced IntelliSense
 
-Můžete nainstalovat experimentální [IntelliCode rozšíření](/visualstudio/intellicode/intellicode-visual-studio) pro Visual Studio, která poskytuje rozšířené umělé inteligence seznamy doplňování technologie IntelliSense. Toto rozšíření předpovídá největší pravděpodobností správné rozhraní API pro použití, ne jenom nabízí ten samý abecední seznam členů. Používá aktuální kontext kódu a vzory pro poskytování dynamického seznamu.
+[Visual Studio IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) poskytuje rozšířené umělé inteligence seznamy doplňování technologie IntelliSense. IntelliCode předpovídá, že s největší pravděpodobností Opravte rozhraní API pro použití namísto pouze nabízí ten samý abecední seznam členů. Používá aktuální kontext kódu a vzory pro poskytování dynamického seznamu.
 
 ## <a name="automatic-code-generation"></a>Automatické generování kódu
 
@@ -124,7 +124,7 @@ V rámci každé nedefinovaný identifikátor se zobrazí červené podtržení 
 
 - Klikněte na nedefinovaný identifikátor. A **rychlé akce** žárovky chyba se zobrazí v části identifikátoru. Klikněte na žárovku chyby.
 
-- Klikněte na nedefinovaný identifikátor a potom stiskněte klávesu **Ctrl**+**.** (**Ctrl** + tečka).
+- Klikněte na nedefinovaný identifikátor a potom stiskněte klávesu **Ctrl**+ **.** (**Ctrl** + tečka).
 
 - Klikněte pravým tlačítkem na nedefinovaný identifikátor a potom klikněte na tlačítko **rychlé akce a Refaktoringy**.
 
@@ -158,7 +158,7 @@ Pokud stisknete **kartu**, technologie IntelliSense automaticky dokončení př�
 Pokud stisknete **kartu**, technologie IntelliSense tříd stub si metodu se správným podpisem a umístí kurzor do těla obslužné rutiny události.
 
 > [!NOTE]
-> Použití **přejít zpět** příkaz **zobrazení** nabídky (**Ctrl**+**-**) se vrátíte k události propojení příkazu.
+> Použití **přejít zpět** příkaz **zobrazení** nabídky (**Ctrl**+ **-** ) se vrátíte k události propojení příkazu.
 
 ## <a name="see-also"></a>Viz také:
 

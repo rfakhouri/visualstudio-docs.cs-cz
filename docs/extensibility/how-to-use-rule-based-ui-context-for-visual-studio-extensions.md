@@ -7,12 +7,12 @@ author: madskristensen
 ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9136268bf1bfb7ccebf79de035fb19f40223002
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3075ca5092dd1b8a69aa4b34c0e507505cf7123
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324699"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309683"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Postupy: Použít pravidlo na základě kontextu uživatelského rozhraní pro rozšíření sady Visual Studio
 
@@ -140,6 +140,10 @@ Tady jsou různé typy podmínek, které jsou podporovány:
 |ActiveProjectCapability:\<výrazu >|Termín má hodnotu true, když aktivní projekt možnosti odpovídají zadaného výrazu. Výraz může být třeba VB &#124; CSharp.|
 |SolutionHasProjectCapability:\<výrazu >|Podobně jako výše, ale termín je true, pokud řešení obsahuje načtený projekt, který odpovídá výrazu.|
 |SolutionHasProjectFlavor:\<projectTypeGuid >|Výraz bude mít hodnotu true, vždy, když řešení obsahuje projekt, který je flavored (souhrn) a má flavor odpovídající danému projektu typu GUID.|
+|ProjectAddedItem:\<vzor >| Termín má hodnotu true, pokud soubor odpovídající vzoru"" je přidána do projektu v soluion, která je otevřena.|
+|ActiveProjectOutputType:\<outputType>|Termín má hodnotu true při výstupní typ pro aktivní projekt odpovídá přesně.  Element outputType může být celé číslo nebo <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE> typu.|
+|ActiveProjectBuildProperty:\<buildProperty>=\<regex>|Termín má hodnotu true, pokud aktivní projekt má vlastnost zadaného sestavení a hodnota vlastnosti odpovídají filtr využívající regulární výrazy, které jsou k dispozici. Odkazovat na [uchování dat v souborech projektu MSBuild](internals/persisting-data-in-the-msbuild-project-file.md) pro další informace o vlastnosti sestavení.|
+|SolutionHasProjectBuildProperty:\<buildProperty>=\<regex>|Termín má hodnotu true, pokud řešení obsahuje načtený žádný spustitelný projekt s vlastností zadaného sestavení a hodnota vlastnosti odpovídají filtr využívající regulární výrazy, které jsou k dispozici.|
 
 ## <a name="compatibility-with-cross-version-extension"></a>Kompatibilita s verzí rozšíření
 

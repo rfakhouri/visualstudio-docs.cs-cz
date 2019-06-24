@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvořte relaci hlavní podrobností pomocí datové sady v mezipaměti'
+title: Vytvořit hlavní podrobný vztah pomocí datové sady v mezipaměti
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3380b9c5302ed6e8a1bf6965f5fb1f259e3a6682
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438552"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328356"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Návod: Vytvořte relaci hlavní podrobností pomocí datové sady v mezipaměti
   Tento názorný postup ukazuje vytvoření vztah záznamů master/detail v listu a dat do mezipaměti, takže toto řešení je možné do offline režimu.

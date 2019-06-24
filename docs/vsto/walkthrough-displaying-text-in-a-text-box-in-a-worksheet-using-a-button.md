@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Zobrazení textu v textovém poli na listu s použitím tlačítka'
+title: Zobrazení textu v textovém poli v listu s použitím tlačítka
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f74eaa8618ce497a760754d084f390a4d1b8c1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436095"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328710"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Návod: Zobrazení textu v textovém poli na listu s použitím tlačítka
   Tento návod ukazuje základy používání tlačítka a textová pole v aplikaci Microsoft Office Excel listů a jak vytvářet projekty aplikace Excel pomocí nástroje pro vývoj pro Office v sadě Visual Studio. Výsledek jako úplnou vzorovou najdete v ukázce ovládací prvky aplikace Excel v [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md).

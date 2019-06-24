@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432272"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309800"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Vnořování souborů v Průzkumníku řešení
 
@@ -86,19 +86,42 @@ Tento zprostředkovatel funguje stejně jako **extensionToExtension** zprostřed
 
 ### <a name="the-addedextension-provider"></a>Poskytovatel addedExtension
 
-Tento zprostředkovatel vnoří soubory s příponou další v rámci souboru bez další rozšíření. Další rozšíření může nacházet pouze na konci úplný název souboru. Vezměte v úvahu v následujícím příkladu:
+Tento zprostředkovatel vnoří soubory s příponou další v rámci souboru bez další rozšíření. Další rozšíření může nacházet pouze na konci úplný název souboru.
+
+Vezměte v úvahu v následujícím příkladu:
 
 ![Příklad pravidla addedExtension](media/filenesting_addedextension.png) ![Příklad efekt addedExtension](media/filenesting_addedextension_effect.png)
 
 * *File.HTML.CSS* je vnořený *file.html* z důvodu **addedExtension** pravidlo
 
+> [!NOTE]
+> Nezadávejte žádné přípony souborů pro `addedExtension` pravidlo; automaticky aplikuje na všechny přípony souborů. To znamená libovolný soubor se stejným názvem a příponou jako jiný soubor s příponou další na konci vnořit jiného souboru. Nelze omezit účinek tohoto zprostředkovatele k jenom určité přípony souborů.
+
 ### <a name="the-pathsegment-provider"></a>Poskytovatel pathSegment
 
-Tento zprostředkovatel vnoří soubory s příponou další v rámci souboru bez další rozšíření. Další rozšíření může vyskytovat jenom na střední úplný název souboru. Vezměte v úvahu v následujícím příkladu:
+Tento zprostředkovatel vnoří soubory s příponou další v rámci souboru bez další rozšíření. Další rozšíření může vyskytovat jenom na střední úplný název souboru.
+
+Vezměte v úvahu v následujícím příkladu:
 
 ![Příklad pravidla pathSegment](media/filenesting_pathsegment.png) ![Příklad efekt pathSegment](media/filenesting_pathsegment_effect.png)
 
 * *jQuery.min.js* je vnořený *jquery.js* z důvodu **pathSegment** pravidlo
+
+> [!NOTE]
+> - Pokud nezadáte žádné konkrétní přípony souborů pro `pathSegment` pravidlo se vztahuje na všechny přípony souborů. To znamená jakýkoli soubor se stejným názvem a příponou jako jiný soubor s příponou další uprostřed vnořit jiného souboru.
+> - Můžete omezit účinek `pathSegment` pravidlo na konkrétní přípony souborů tak, že zadáte následujícím způsobem:
+>    ```
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>Poskytovatel allExtensions
 

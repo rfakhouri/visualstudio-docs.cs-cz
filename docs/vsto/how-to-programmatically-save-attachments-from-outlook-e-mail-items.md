@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Ukládání příloh položek e-mailu aplikace Outlook prostřednictvím kódu programu'
+title: Ukládání příloh položek e-mailu aplikace Outlook prostřednictvím kódu programu
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d222924e753db1b476a5d7729e2c794a8ab305e2
-ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
+ms.openlocfilehash: e7e0cff4761b26bac8265592b681d4e56f2ad92f
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66462119"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328954"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Postupy: Ukládání příloh položek e-mailu aplikace Outlook prostřednictvím kódu programu
 

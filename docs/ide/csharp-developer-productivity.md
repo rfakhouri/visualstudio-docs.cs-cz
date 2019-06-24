@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3b65b8bc50fb56ea4749852371ffde8f25bb7827
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: bd36b75f3df640df0e1910fb3a7a52d17c37d30f
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291010"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328782"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Produktivita nástroje Visual Studio Příručka pro C# vývojáře
 
@@ -78,31 +78,27 @@ Visual Studio obsahuje funkci s názvem **přejít na vše** (**Ctrl**+**T**). *
 
 ## <a name="enforce-code-style-rules"></a>Vynucení pravidel stylu kódu
 
-Můžete použít *.editorconfig* souboru kodifikovat konvence kódování a mít je přenášet společně s vaším zdrojem.
+Můžete použít soubor s příponou EditorConfig kodifikovat konvence kódování a mít je přenášet společně s vaším zdrojem.
 
-::: moniker range="vs-2017"
+![Vynucení stylu kódu v sadě Visual Studio](../ide/media/VSGuide_CodeStyle.png)
 
-- Můžete nainstalovat [služba jazyka EditorConfig rozšíření](https://aka.ms/editorconfig), což usnadňuje přidávání a úprava *.editorconfig* souboru v sadě Visual Studio.
+- Přidat výchozí nebo. NET – vizuální styl EditorConfig soubor do projektu výběrem **přidat** > **nová položka**. V **přidat novou položku** dialogové okno, vyhledejte "editorconfig". V obou **editorconfig souboru** šablon položek a pak zvolte **přidat**.
 
-::: moniker-end
+   ![EditorConfig šablon položek v sadě Visual Studio](media/editorconfig-item-templates.png)
 
 ::: moniker range=">=vs-2019"
 
-- Automaticky vytvořit *.editorconfig* soubor z nastavení stylu kódu v **nástroje** > **možnosti** > **textový Editor**  > **C#** > **Styl kódu**.
+- Automaticky vytvořit *.editorconfig* soubor založený na vaše nastavení stylu kódu v **nástroje** > **možnosti** > **Text Editor** > **C#** > **styl kódu**.
 
    ![Generování souboru .editorconfig z nastavení v VS 2019](media/vs-2019/generate-editorconfig-file.png)
 
 ::: moniker-end
 
-- Vyzkoušejte si [IntelliCode rozšíření pro Visual Studio](/visualstudio/intellicode/intellicode-visual-studio). IntelliCode odvodí z něj styl kódu z existujícího kódu a pak vytvoří neprázdný *.editorconfig* soubor s předvolby stylu kódu již definována.
+- [Funkci odvození kódu](/visualstudio/intellicode/code-style-inference) sady pro sadu Visual Studio IntelliCode odvodí z něj styl kódu z existujícího kódu. Potom vytvoří prázdný soubor EditorConfig s předvolby stylu kódu již definována.
 
-- Podívejte se [možnosti konvence psaní kódu .NET](editorconfig-code-style-settings-reference.md) dokumentaci.
+Podívejte se [možnosti konvence psaní kódu .NET](editorconfig-code-style-settings-reference.md) dokumentaci, která také obsahuje příklad kompletní EditorConfig souboru.
 
-- Zobrazit [tento gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) příklad *.editorconfig* souboru.
-
-![Vynucení stylu kódu v sadě Visual Studio](../ide/media/VSGuide_CodeStyle.png)
-
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="code-cleanup"></a>Kód čištění
 
@@ -124,18 +120,19 @@ Visual Studio se dodává s mnoha refaktoringů, akcí generování kódu a opra
 
 Oblíbené rychlých oprav a refaktoringy patří:
 
-- *Přejmenovat*
-- *Extrahování metody*
-- *Podpis změny metod*
-- *Generování konstruktoru*
-- *Generování metody*
-- *Přesun typu do souboru*
-- *Přidat kontrolu hodnoty Null*
-- *Přidat parametr*
-- *Odebrat nepotřebné direktivy using*
-- *Smyčka foreach dotaz LINQ a LINQ – metoda*
-- *Dotyčného členy*
-- Další informace najdete v tématu [funkce generování kódu](code-generation-in-visual-studio.md)
+- přejmenování
+- extrahování metody
+- Změna podpisu metody
+- Generovat konstruktor
+- Generování metody
+- Přesun typu do souboru
+- Přidat kontrolu hodnoty Null
+- Přidat parametr
+- Odebrat nepotřebné direktivy using
+- Smyčka foreach dotaz LINQ a LINQ – metoda
+- Dotyčného členy
+
+Další informace najdete v tématu [funkce generování kódu](code-generation-in-visual-studio.md).
 
 Je možné [nainstalovat analyzátory FxCop](../code-quality/install-fxcop-analyzers.md) příznakem potíží s kódem. Nebo vlastní refaktoring nebo kód opravit pomocí zápisu [analyzátory Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 
@@ -165,7 +162,7 @@ Visual Studio obsahuje mnoho funkcí a usnadňuje vyhledávání a [navigace v k
 
 ## <a name="improved-intellisense"></a>Vylepšená technologie IntelliSense
 
-Stáhněte si [IntelliCode pro sadu Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) zobrazíte [dokončování kódu podle kontextu](/visualstudio/intellicode/intellicode-visual-studio) místo jenom abecední seznam. Můžete také trénování [vlastního modelu IntelliSense](/visualstudio/intellicode/custom-model-faq) založená na knihovnách vlastní domény.
+Pomocí sady Visual Studio IntelliCode [dokončování kódu podle kontextu](/visualstudio/intellicode/intellicode-visual-studio) místo jenom abecední seznam. Můžete také trénování [vlastního modelu IntelliSense](/visualstudio/intellicode/custom-model-faq) založená na knihovnách vlastní domény.
 
 ## <a name="unit-testing"></a>Testování jednotek
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d82e3ace2cc26022a5ae39c690c5018a6325360
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253894"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309826"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Zásady vytváření názvů .NET pro EditorConfig
 
@@ -25,7 +25,7 @@ Zásady vytváření názvů by měl být seřazené od specifické pro většin
 
 Pro každé zásady vytváření názvů je nutné zadat symboly, které se vztahuje na, styl pojmenování a závažnost pro vynucení konvence, pomocí vlastností popsaných níže. Vlastnosti pořadí není důležité.
 
-Pokud chcete začít, vyberte záhlaví pravidla pojmenování, kterou budete používat ve všech vlastností, které jsou potřeba k plně popis pravidla. Například `public_members_must_be_capitalized` je dobré, popisný název pro pravidlo pro pojmenování. Budeme odkazovat na název, vyberte jako **< namingRuleTitle\>**  v následujících částech.
+Pokud chcete začít, vyberte záhlaví pravidla pojmenování, kterou budete používat ve všech vlastností, které jsou potřeba k plně popis pravidla. Například `public_members_must_be_capitalized` je dobré, popisný název pro pravidlo pro pojmenování. Tato stránka bude odkazovat na název, vyberte jako **< namingRuleTitle\>**  v následujících částech.
 
 ## <a name="symbols"></a>Symboly
 
@@ -116,7 +116,7 @@ Pravidlo pro pojmenování shoduje s podpisy, které mají *všechny* modifikát
 
 ## <a name="style"></a>Styl
 
-Teď, když jsme identifikovali symboly, které chcete použít pravidlo pro pojmenování pro skupiny, popisujeme musí styl pojmenování. Styl může být, že název obsahuje určité předponu nebo příponu určité nebo jednotlivých slov v názvu jsou odděleny určitých znaků. Můžete také určit styl malá a velká písmena. Vlastnost stylu má následující formát:
+Teď, když jste identifikovali skupiny symboly pro pojmenování pravidlo použít, můžete popsat styl pojmenování. Styl může být, že název obsahuje určité předponu nebo příponu určité nebo jednotlivých slov v názvu jsou odděleny určitých znaků. Můžete také určit styl malá a velká písmena. Vlastnost stylu má následující formát:
 
 `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
 
@@ -174,6 +174,14 @@ error | Když tento styl nedodrží, zobrazit chybu kompilátoru ve **seznam chy
 
 > [!NOTE]
 > Nemáte k sestavení projektu, chcete-li zobrazit názvy porušení pravidel. Se zobrazují jako kód je upravovat, buď **seznam chyb** nebo jako návrh.
+
+## <a name="default-naming-styles"></a>Výchozí styly pojmenování
+
+Pokud nezadáte žádné vlastní pravidla pojmenování, Visual Studio používá následující výchozí styly:
+
+- Pro třídy, struktury, výčty, vlastností a událostí pomocí `public`, `private`, `internal`, `protected`, nebo `protected_internal` přístupnost, výchozí styl pojmenování je pascalcase.
+
+- Pro rozhraní s `public`, `private`, `internal`, `protected`, nebo `protected_internal` usnadnění, je výchozí styl pojmenování pascalcase se vyžaduje předpona **můžu**.
 
 ## <a name="example"></a>Příklad
 

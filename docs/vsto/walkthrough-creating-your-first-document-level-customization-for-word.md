@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word'
+title: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a38d3ae806439c286a5230ee704acedf2070e27
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8662e5d08c420d1204e9fd5159be810397d4bbe1
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438514"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328280"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word
   Tento úvodní názorný postup ukazuje, jak k vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pouze při otevření určitého dokumentu. Nelze použít přizpůsobení úrovni dokumentu provést změny celou aplikaci, například zobrazení novou kartu pásu karet, když jakýkoliv dokument je otevřen.

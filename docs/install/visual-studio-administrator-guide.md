@@ -2,7 +2,7 @@
 title: Příručka správce sady Visual Studio
 titleSuffix: ''
 description: Další informace o tom, jak nasadit aplikaci Visual Studio v podnikovém prostředí.
-ms.date: 05/22/2019
+ms.date: 06/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037488"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328786"
 ---
 # <a name="visual-studio-administrator-guide"></a>Příručka správce sady Visual Studio
 
@@ -40,7 +40,7 @@ Před nasazením aplikace Visual Studio napříč vaší organizací, existuje n
 
 * Při rozhodování o potřebách údržby.
 
-  Pokud vaše společnost potřebuje zůstat na funkci nastavit už ale stále chce dostávat pravidelné údržby aktualizace, naplánujte použití směrný plán údržby. Další informace najdete v tématu ***možnosti podpory pro zákazníky s Enterprise nebo Professional*** část [životního cyklu produktu Visual Studio a údržba](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) stránky.
+  Pokud vaše společnost potřebuje zůstat na funkci nastavit už ale stále chce dostávat pravidelné údržby aktualizace, naplánujte použití směrný plán údržby. Další informace najdete v tématu ***možnosti podpory pro zákazníky s Enterprise nebo Professional*** část [životního cyklu produktu Visual Studio a údržba](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) stránky, stejně jako [jak: Aktualizace sady Visual Studio na směrný plán údržby](update-servicing-baseline.md) stránky.
 
   Pokud máte v plánu údržby aktualizace spolu s funkcí kumulativní aktualizace, můžete nejnovější součásti.
 
@@ -62,7 +62,7 @@ Před nasazením aplikace Visual Studio napříč vaší organizací, existuje n
 
 * Při rozhodování o potřebách údržby.
 
-  Pokud vaše společnost potřebuje zůstat na funkci nastavit už ale stále chce dostávat pravidelné údržby aktualizace, naplánujte použití směrný plán údržby. Další informace najdete v tématu ***podpora pro starší verze sady Visual Studio*** část [životního cyklu produktu Visual Studio a údržba](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) stránky.
+  Pokud vaše společnost potřebuje zůstat na funkci nastavit už ale stále chce dostávat pravidelné údržby aktualizace, naplánujte použití směrný plán údržby. Další informace najdete v tématu ***podpora pro starší verze sady Visual Studio*** část [životního cyklu produktu Visual Studio a údržba](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) stránky, stejně jako [jak: Aktualizace sady Visual Studio na směrný plán údržby](update-servicing-baseline.md) stránky.
 
   Pokud máte v plánu údržby aktualizace spolu s funkcí kumulativní aktualizace, můžete nejnovější součásti.
 

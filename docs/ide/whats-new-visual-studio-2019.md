@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976237"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328833"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novinky v sadě Visual Studio 2019
 
@@ -33,9 +33,9 @@ Visual Studio 2019 získáte ve své třídě nejlepší nástroje a služby pro
 
 Tady je podrobný rekapitulace toho, co je nového:
 
-* **[Vývoj](#develop)**: Udržte si zaměření a produktivity pomocí Vylepšený výkon, rychlé kód čištění a lepší výsledky hledání.
-* **[Spolupráce](#collaborate)**: Využijte přirozené spolupráci prostřednictvím Git první pracovní postup v reálném čase, úpravy a ladění, a revize kódu přímo v sadě Visual Studio.
-* **[Ladění](#debug)**: Zvýrazněte a přejděte na konkrétní hodnoty, optimalizovat využití paměti a provést automatické snímky spuštění vaší aplikace.
+* **[Vývoj](#develop)** : Udržte si zaměření a produktivity pomocí Vylepšený výkon, rychlé kód čištění a lepší výsledky hledání.
+* **[Spolupráce](#collaborate)** : Využijte přirozené spolupráci prostřednictvím Git první pracovní postup v reálném čase, úpravy a ladění, a revize kódu přímo v sadě Visual Studio.
+* **[Ladění](#debug)** : Zvýrazněte a přejděte na konkrétní hodnoty, optimalizovat využití paměti a provést automatické snímky spuštění vaší aplikace.
 
 Úplný seznam všech, který je v této verzi nové, najdete v článku [poznámky k verzi](/visualstudio/releases/2019/release-notes/).
 
@@ -90,7 +90,7 @@ Spárovat s nový indikátor stavu dokumentu je nový příkaz vyčištění kó
 
 Kolekce fixers můžete také uložit jako profil. Například pokud máte malou sadu cílových fixers, které můžete použít při kódu můžete často, a pak máte jiné komplexní sadu fixers použít před přezkoumání kódu, můžete nakonfigurovat profily k vyřešení těchto různých úloh.
 
-   ![Snímek obrazovky nového ovládacího prvku vyčištění kódu v aplikaci Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Snímek obrazovky konfigurace kód čištění ovládacího prvku na Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>Clustery vykreslování (PMA) na monitorování
 

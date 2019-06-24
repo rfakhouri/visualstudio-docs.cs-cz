@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Změna formátování listů s použitím ovládacích prvků CheckBox'
+title: Změna formátování listů s použitím ovládacích prvků CheckBox
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438615"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328693"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Návod: Změna formátování listů s použitím ovládacích prvků CheckBox
   Tento návod ukazuje základy používání zaškrtávacích políček na list aplikace Microsoft Office Excel Změna formátování. Nástroje pro vývoj pro Office v sadě Visual Studio použije k vytvoření a přidání kódu do projektu. Výsledek jako úplnou vzorovou najdete v ukázce ovládací prvky aplikace Excel v [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md).
@@ -80,7 +80,7 @@ ms.locfileid: "63438615"
 
 6. Přetáhněte třetí zaškrtávací políčko na nebo blízko ní buňky **B6** a změnit následující vlastnosti:
 
-    |Vlastnost|Hodnota|
+    |Vlastnost|Value|
     |--------------|-----------|
     |**Název**|**applyUnderlineFont**|
     |**Text**|**Podtržení**|

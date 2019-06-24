@@ -11,46 +11,39 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ee5bb8d69cf3482105150f4ec62cb6ad167d7a
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 750af5101dfdf9d040457873be9d40d4a9da55e1
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531534"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328985"
 ---
-# <a name="setting-language-specific-editor-options"></a>Nastavení možností editoru pro konkrétní jazyk
+# <a name="set-language-specific-editor-options"></a>Nastavení možností editoru pro konkrétní jazyk
 
-Visual Studio nabízí celou řadu textového editoru, které platí pro konkrétní programovací jazyky. Můžete nakonfigurovat možnosti **možnosti** dialogové okno, ke kterému přistupují z **nástroje** nabídky. Můžete také nakonfigurovat některá nastavení editoru na projekt - nebo codebase – základ vytvořením EditorConfig souboru. Zobrazit [vytvořit nastavení přenosné vlastního editoru pomocí řešení EditorConfig](../../ide/create-portable-custom-editor-options.md).
+Visual Studio nabízí celou řadu textového editoru, které platí pro konkrétní programovací jazyky. Můžete nakonfigurovat možnosti **možnosti** dialogové okno, ke kterému přistupují z **nástroje** nabídky. Můžete taky nakonfigurovat některá nastavení editoru na projekt - nebo codebase – základ podle [vytvoření souboru EditorConfig](../../ide/create-portable-custom-editor-options.md).
 
 ## <a name="settings-available-in-the-options-dialog-box"></a>Nastavení k dispozici v dialogovém okně Možnosti
 
- [Možnosti, Textový editor, Basic (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)
+[Možnosti, textový Editor, Basic (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)\
+Popisuje nastavení koncových konstrukcí, přeformátování kódu, sbalování a návrhů pro opravy chyb, mimo jiné pro kód jazyka Visual Basic.
 
- Popisuje nastavení koncových konstrukcí, přeformátování kódu, sbalování a návrhů pro opravy chyb, mimo jiné pro [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] kódu.
+[Možnosti, textový Editor, C/C++, formátování](../../ide/reference/options-text-editor-c-cpp-formatting.md)\
+Popisuje sbalování, odsazení, rychlé informace a další nastavení pro kód jazyka C a C++.
 
- [Možnosti, Textový editor, C/C++, Formátování](../../ide/reference/options-text-editor-c-cpp-formatting.md)
+[Možnosti, textový Editor, C/C++, Upřesnit](../../ide/reference/options-text-editor-c-cpp-advanced.md)\
+Popisuje nastavení technologie IntelliSense a databázových souborů při použití jazyka C a C++.
 
- Popisuje sbalování, odsazení, rychlé informace a další nastavení pro kód jazyka C a C++.
+[Options, Text Editor, C#, Formatting](../../ide/reference/options-text-editor-csharp-formatting.md)\
+Popisuje nastavení odsazení, formátování nových řádků a zalamování textu, mimo jiné C#.
 
- [Možnosti, Textový editor, C/C++, Upřesnit](../../ide/reference/options-text-editor-c-cpp-advanced.md)
+[Options, Text Editor, C#, Advanced](../../ide/reference/options-text-editor-csharp-advanced.md)\
+Popisuje sbalování, identifikaci chyb a nastavení komentářů v dokumentaci XML pro C#.
 
- Popisuje nastavení technologie IntelliSense a databázových souborů při použití jazyka C a C++.
+[Options, Text Editor, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)\
+Popisuje nastavení, která určují chování seznamu doplňování technologie IntelliSense při práci v C# kódu.
 
- [Možnosti, Textový editor, C#, Formátování](../../ide/reference/options-text-editor-csharp-formatting.md)
-
- Popisuje nastavení odsazení, formátování nových řádků a zalamování textu, mimo jiné C#.
-
- [Možnosti, Textový editor, C#, Upřesnit](../../ide/reference/options-text-editor-csharp-advanced.md)
-
- Popisuje sbalování, identifikaci chyb a nastavení komentářů v dokumentaci XML pro C#.
-
- [Možnosti, Textový editor, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)
-
- Popisuje nastavení, která určují chování seznamu doplňování technologie IntelliSense při práci v C# kódu.
-
- [Možnosti, Textový editor, XAML, Formátování](../../ide/reference/options-text-editor-xaml-formatting.md)
-
- Popisuje nastavení pro uspořádání elementů a atributů v dokumentech XAML.
+[Options, Text Editor, XAML, Formatting](../../ide/reference/options-text-editor-xaml-formatting.md)\
+Popisuje nastavení pro uspořádání elementů a atributů v dokumentech XAML.
 
 ## <a name="see-also"></a>Viz také:
 

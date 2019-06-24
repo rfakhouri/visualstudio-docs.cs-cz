@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook'
+title: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fa86c07ba964ca918c7ad225d5152b31a2e1d9ae
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440875"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328350"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Návod: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook
   Tento návod ukazuje, jak zobrazit jedinečnou instanci vlastního podokna úloh s každou e-mailové zprávy, který je vytvořen nebo otevřen. Uživatelům můžete zobrazit nebo skrýt podokno úloh s použitím tlačítko na pásu karet z každého e-mailové zprávy.
@@ -90,7 +90,7 @@ ms.locfileid: "63440875"
 
 1. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
 
-2. V **přidat novou položku** dialogu **pás karet (vizuální návrhář)**.
+2. V **přidat novou položku** dialogu **pás karet (vizuální návrhář)** .
 
 3. Změňte název nového pásu karet na **ManageTaskPaneRibbon**a klikněte na tlačítko **přidat**.
 

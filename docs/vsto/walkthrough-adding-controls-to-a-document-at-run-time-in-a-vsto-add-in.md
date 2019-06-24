@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO'
+title: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ac01f32a14589837d0cb7707cb3d2f8946bd0a
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982425"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328404"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Návod: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO
   Můžete přidat ovládací prvky do libovolného otevřeného dokumentu aplikace Microsoft Office Word s použitím doplňku VSTO. Tento návod ukazuje, jak používat na pásu karet umožňující uživatelům přidávat <xref:Microsoft.Office.Tools.Word.Controls.Button> nebo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu.
@@ -62,7 +62,7 @@ ms.locfileid: "62982425"
 
 1. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
 
-2. V **přidat novou položku** dialogu **pás karet (vizuální návrhář)**.
+2. V **přidat novou položku** dialogu **pás karet (vizuální návrhář)** .
 
 3. Změňte název nového pásu karet na **MyRibbon**a klikněte na tlačítko **přidat**.
 
@@ -78,14 +78,14 @@ ms.locfileid: "62982425"
 
 8. V **vlastnosti** okně změnit následující vlastnosti.
 
-   | Vlastnost | Value |
+   | Vlastnost | Hodnota |
    |-----------|-----------------------|
    | **Název** | **addButtonCheckBox** |
    | **Popisek** | **Přidání tlačítka** |
 
 9. Přidejte druhý zaškrtnutím políčka **group1**a potom změňte následující vlastnosti.
 
-   | Vlastnost | Hodnota |
+   | Vlastnost | Value |
    |-----------|---------------------------|
    | **Název** | **addRichTextCheckBox** |
    | **Popisek** | **Přidání ovládacího prvku RTF** |

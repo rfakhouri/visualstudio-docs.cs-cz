@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: f989ccba45a034d90562b69eabf871e0e2a545b4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 1f8cfd597d2bfe8642c5b83940ceb03b7dd06e69
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037537"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309778"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Install Visual Studio 2019 for Mac
 
@@ -46,9 +46,21 @@ K vytváření aplikací Xamarin pro iOS nebo macOS, budete také potřebovat:
 
     [![Na odkazech na ochranu osobních údajů a podmínky a potom pokračovat, souhlasíte s](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
 
-6. Zobrazí se seznam dostupných úloh. Vyberte ty, které chcete použít:
+6. Zobrazí se seznam dostupných úloh. Vyberte komponenty, které chcete použít:
 
-    [![Zvolte nepovinné úlohy funkcí, které chcete nainstalovat](media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![Zvolte nepovinné úlohy funkcí, které chcete nainstalovat](media/install-selection.png)](media/install-selection.png#lightbox)
+
+   Pokud nechcete instalovat všechny platformy, vám pomohou rozhodnout, které platformy nainstalovat pomocí Průvodce níže:
+
+   * **Aplikace pomocí Xamarinu**:
+      - Xamarin.Forms – vyberte **Android** a **iOS** platformy.
+      - iOS – vybrat **iOS** platformy (Všimněte si, že budete muset nainstalovat [ **Xcode**](https://developer.apple.com/xcode/)).
+      - Android – vybrat **Android** platformy (Všimněte si, že musí také vybrat příslušné závislosti).
+      - Vybrat pouze – Mac **macOS** platformy (Všimněte si, že budete muset nainstalovat [ **Xcode**](https://developer.apple.com/xcode/)).
+      - Vyberte plně multiplatformní aplikace Xamarin – **Android**, **iOS**, a **macOS** platformy.
+   * **Aplikace .NET core** – vyberte **.NET Core** platformy.
+   * **Webové aplikace ASP.NET Core** – vyberte **.NET Core** platformy.
+   * **Multiplatformní vývoj her Unity** – žádné další platformy je potřeba nainstalovat za Visual Studio pro Mac. Odkazovat [Průvodce nastavením Unity](/visualstudio/mac/setup-vsmac-tools-unity) pro další informace o instalaci rozšíření Unity.
 
 7. Po provedení výběru, stiskněte **nainstalovat** tlačítko.
 8. Instalační program se zobrazí průběh, stáhne a nainstaluje sadu Visual Studio pro Mac a vybrané úlohy. Vám může zobrazit výzva k zadání hesla k udělení oprávnění pro instalaci.

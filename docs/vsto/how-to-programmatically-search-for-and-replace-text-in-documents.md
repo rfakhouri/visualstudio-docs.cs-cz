@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Programově hledání a nahrazování textu v dokumentech'
+title: Najít a nahradit text v dokumentech prostřednictvím kódu programu
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9799e958903c56f5a3423f86736668a2affd87da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6508fee244dd50a1d2fd42203c2982b959b0e547
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962025"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328908"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Postupy: Programově hledání a nahrazování textu v dokumentech
   <xref:Microsoft.Office.Interop.Word.Find> Objektu je členem obou <xref:Microsoft.Office.Interop.Word.Selection> a <xref:Microsoft.Office.Interop.Word.Range> objektů a vy můžete použít buď pro hledání textu v dokumentech aplikace Microsoft Office Word. Příkaz replace je rozšířením najít příkaz.
@@ -74,7 +74,7 @@ ms.locfileid: "62962025"
     [!code-vb[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#72)]
     [!code-csharp[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#72)]
 
-2. Použití <xref:Microsoft.Office.Interop.Word.Range.Find%2A> vlastnost <xref:Microsoft.Office.Interop.Word.Range> objektu, nejprve zrušte všechny existující možnosti formátování a vyhledejte řetězec **nepracuju,**.
+2. Použití <xref:Microsoft.Office.Interop.Word.Range.Find%2A> vlastnost <xref:Microsoft.Office.Interop.Word.Range> objektu, nejprve zrušte všechny existující možnosti formátování a vyhledejte řetězec **nepracuju,** .
 
     [!code-vb[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#73)]
     [!code-csharp[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#73)]
