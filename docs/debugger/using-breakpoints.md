@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: c2bf6a62bde77ce49c7723e435bc34c3cad74702
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614523"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365399"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Používání zarážek v ladicím programu sady Visual Studio
 Zarážky jsou jedním z nejdůležitějších technik ladění mezi nástroji pro vývojáře sady nástrojů. Můžete nastavit zarážky, bez ohledu na to chcete provést pozastavení spuštění ladicího programu. Můžete například zobrazit stav proměnných kódu se také podívat na zásobník volání na určité zarážce. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
@@ -49,7 +49,7 @@ Zarážky jsou jedním z nejdůležitějších technik ladění mezi nástroji p
 
  Pokud chcete nastavit zarážku ve zdrojovém kódu, klikněte v levém okraji vedle řádku kódu. Můžete také vybrat řádku a stisknutím klávesy **F9**vyberte **ladění** > **Přepnout zarážku**, nebo klikněte pravým tlačítkem a vyberte **zarážku**  >  **Vložit zarážku**. Zarážka se zobrazí jako červená tečka na levém okraji.
 
-V C# automaticky zvýrazněný kód, zarážky a aktuální provádění řádky. Pro kód C++ můžete zapnout zvýraznění zarážky a aktuální řádky tak, že vyberete **nástroje** (nebo **ladění**) > **možnosti**  >   **Ladění** >  **zvýraznit celý řádek zdrojového kódu pro zarážky a aktuální příkaz (pouze C++)**.
+V C# automaticky zvýrazněný kód, zarážky a aktuální provádění řádky. Pro kód C++ můžete zapnout zvýraznění zarážky a aktuální řádky tak, že vyberete **nástroje** (nebo **ladění**) > **možnosti**  >   **Ladění** >  **zvýraznit celý řádek zdrojového kódu pro zarážky a aktuální příkaz (pouze C++)** .
 
  ![Nastavit zarážku](../debugger/media/basicbreakpoint.png "základní zarážku")
 
@@ -144,9 +144,9 @@ Vizuálně sledovat zarážky během provádění kódu, naleznete v tématu [ma
 
 4. Přidejte následující text do **název funkce** a vyberte **C++** jazyka.
 
-    ```C++
-    ((my_class *) 0xcccccccc)->my_method
-    ```
+   ```cpp
+   ((my_class *) 0xcccccccc)->my_method
+   ```
 
 ::: moniker range=">= vs-2019"
 
@@ -167,7 +167,7 @@ Datové zarážky v .NET Core nebude fungovat pro:
 - Vlastnosti, které nejsou rozšiřitelné v popisu, lokální, automatické hodnoty, nebo okno kukátka
 - Statické proměnné
 - Třídy pomocí atributu DebuggerTypeProxy
-- Pole uvnitř struktur 
+- Pole uvnitř struktur
 
 ::: moniker-end
 
@@ -189,11 +189,12 @@ Zarážky data nefungují za těchto podmínek:
 - Proces, který se neladí se zapíše do umístění v paměti.
 - Umístění v paměti jsou sdílena mezi dvěma nebo více procesy.
 - Umístění v paměti je aktualizováno v rámci jádra. Například, pokud je paměť předána 32bitové Windows `ReadFile` funkce, paměť se budou aktualizovat z režimu jádra, aby ladicí program nebudou porušovat na aktualizaci.
+- Kde je větší než 4 bajtů na 32-bit hardwaru a 8 bajtů na 64bitový hardware výrazu kukátka. Jedná se o omezení x86 architektury.
 
->[!NOTE]
->- Datové zarážky, závisí na konkrétní paměťové adresy. Adresa proměnné změny z jedné relace ladění na další, abyste na konci každé relace ladění jsou automaticky zakázány datové zarážky.
+> [!NOTE]
+> - Datové zarážky, závisí na konkrétní paměťové adresy. Adresa proměnné změny z jedné relace ladění na další, abyste na konci každé relace ladění jsou automaticky zakázány datové zarážky.
 >
->- Pokud nastavíte zarážku dat na lokální proměnné, zarážka zůstane povolena po skončení funkce, ale adresa paměti není nadále vhodné, takže nepředvídatelné chování zarážky. Pokud nastavíte zarážku dat na lokální proměnné, musíte odstranit nebo zakázat zarážku před ukončením funkce.
+> - Pokud nastavíte zarážku dat na lokální proměnné, zarážka zůstane povolena po skončení funkce, ale adresa paměti není nadále vhodné, takže nepředvídatelné chování zarážky. Pokud nastavíte zarážku dat na lokální proměnné, musíte odstranit nebo zakázat zarážku před ukončením funkce.
 
 ## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Spravovat zarážky v okně zarážek
 
@@ -273,7 +274,7 @@ Když vyberete **podmíněný výraz**, můžete si vybrat mezi dvě podmínky: 
 
 3. Přidat novou zarážku v okamžiku, kdy chcete prozkoumat; například když je přidán do kolekce. Klikněte pravým tlačítkem myši zarážka a vyberte **podmínky**.
 
-4. Použití atributu ID objektu **podmíněný výraz** pole. Například pokud proměnnou `item` je objekt, který má být přidána do kolekce, vyberte **platí** a typ **položky == $\<n >**, kde \<n > je číslo ID objektu .
+4. Použití atributu ID objektu **podmíněný výraz** pole. Například pokud proměnnou `item` je objekt, který má být přidána do kolekce, vyberte **platí** a typ **položky == $\<n >** , kde \<n > je číslo ID objektu .
 
    Spuštění se přeruší v okamžiku, když je přidán do kolekce.
 

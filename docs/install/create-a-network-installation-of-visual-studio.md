@@ -1,7 +1,7 @@
 ---
 title: Vytvoření síťové instalace
 description: Zjistěte, jak vytvořit bod instalace sítě pro nasazení sady Visual Studio v rámci organizace.
-ms.date: 03/30/2019
+ms.date: 04/26/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974093"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365333"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Vytvoření síťové instalace sady Visual Studio
 
-Obvykle správce podnikové sítě vytvoří bod instalace sítě pro nasazení do klientských pracovních stanic. Jsme navrhli tak Visual Studio vám umožní soubory pro počáteční instalaci spolu se všechny aktualizace produktů do jedné složky do mezipaměti. (Tento proces se také označuje jako _vytvoření rozložení platného pro_.) 
+Obvykle správce podnikové sítě vytvoří bod instalace sítě pro nasazení do klientských pracovních stanic. Jsme navrhli tak Visual Studio vám umožní soubory pro počáteční instalaci spolu se všechny aktualizace produktů do jedné složky do mezipaměti. (Tento proces se také označuje jako _vytvoření rozložení platného pro_.)
 
 Jsme udělali to tak, aby pracovní stanice klienta můžete používat stejné umístění v síti ke správě jejich instalace i v případě, že ještě neprovedli aktualizaci na nejnovější servisní aktualizace.
 
@@ -145,13 +145,13 @@ Tady je několik příkladů toho, jak vytvořit vlastní částečné rozložen
 * Chcete-li stáhnout dvě úlohy a všechny jejich doporučené součásti:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * Chcete-li stáhnout dvě úlohy a všechny jejich doporučené a volitelné součásti, spusťte:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
 ::: moniker range="vs-2017"
@@ -225,11 +225,7 @@ Při instalaci z rozložení, je obsah, který je nainstalován získaných z ro
 
 Pokud jste použili `--wait` parametr a potom v závislosti na výsledek operace, `%ERRORLEVEL%` proměnnou prostředí je nastavená na jednu z následujících hodnot:
 
-  | **Hodnota** | **výsledek** |
-  | --------- | ---------- |
-  | 0 | Operace byla úspěšně dokončena |
-  | 3010 | Operace byla úspěšně dokončena, ale instalace aktualizace vyžaduje restartování, než je možné |
-  | Ostatní | Došlo k selhání podmínku – Další informace v protokolech |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 ## <a name="update-a-network-install-layout"></a>Síťový diagram instalace aktualizace
 
@@ -241,9 +237,9 @@ Jakmile budou dostupné aktualizace produktu, můžete chtít [aktualizovat sí�
 
 > [!NOTE]
 > Bootstrapperů sady Visual Studio, které jsou k dispozici na [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) stáhnout a nainstalovat nejnovější verzi sady Visual Studio, který je k dispozici pokaždé, když se jejich spuštění.
-> 
+>
 > Pokud stahujete Visual Studio *zaváděcí nástroj* ještě dnes a spustit ho za šest měsíců od této chvíle, instaluje na vydání sady Visual Studio, které jsou aktuální v době spuštění zaváděcí nástroj.
-> 
+>
 > Ale pokud jste vytvořili *rozložení* a pak nainstalujte z něj, rozložení nainstaluje konkrétní verzi nástroje Visual Studio, která existuje v rozložení. I když online možná existuje novější verze, získat verzi sady Visual Studio, která je v rozložení.
 
 ::: moniker-end
@@ -252,9 +248,9 @@ Jakmile budou dostupné aktualizace produktu, můžete chtít [aktualizovat sí�
 
 > [!NOTE]
 > Bootstrapperů sady Visual Studio, které jsou k dispozici na [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stáhnout a nainstalovat nejnovější verzi sady Visual Studio, který je k dispozici pokaždé, když se jejich spuštění.
-> 
+>
 > Pokud stahujete Visual Studio *zaváděcí nástroj* ještě dnes a spustit ho za šest měsíců od této chvíle, instaluje na vydání sady Visual Studio, které jsou aktuální v době spuštění zaváděcí nástroj.
-> 
+>
 > Ale pokud jste vytvořili *rozložení* a pak nainstalujte z něj, rozložení nainstaluje konkrétní verzi nástroje Visual Studio, která existuje v rozložení. I když online možná existuje novější verze, získat verzi sady Visual Studio, která je v rozložení.
 
 ::: moniker-end
@@ -267,13 +263,14 @@ Pokud dochází k potížím s offline instalací chcete vědět o něm. Nejlep�
 
 Nabízíme také [ **živý chat** ](https://visualstudio.microsoft.com/vs/support/#talktous) (jenom v angličtině) možnost podpory pro problémy související s instalací.
 
-Další možnosti podpory dostupné, máme příliš. Seznam najdete v tématu naše [kontaktujte nás](../ide/talk-to-us.md) stránky.
+Další možnosti podpory dostupné, máme příliš. Seznam najdete v tématu naše [zpětnou vazbu](../ide/feedback-options.md) stránky.
 
 ## <a name="see-also"></a>Viz také:
 
-* [Aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md)
-* [Životního cyklu produktu Visual Studio a údržba](/visualstudio/releases/2019/servicing/)
-* [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
-* [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
-* [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)
+- [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
+- [Aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
+- [Řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md)
+- [Životního cyklu produktu Visual Studio a údržba](/visualstudio/releases/2019/servicing/)
+- [Aktualizace sady Visual Studio na směrný plán údržby](update-servicing-baseline.md)
+- [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
+- [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)

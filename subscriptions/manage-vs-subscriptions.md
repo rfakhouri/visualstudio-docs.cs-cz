@@ -1,18 +1,18 @@
 ---
 title: Spravovat předplatná sady Visual Studio
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 06/24/2019
 ms.topic: conceptual
 description: Zjistěte, jak získat maximum z vašich předplatných sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d03dbd24b6fd8f00248e0c0d653359f9995da0d
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833933"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365427"
 ---
 # <a name="managing-subscriptions"></a>Správa předplatných
 
@@ -125,6 +125,12 @@ Můžete snadno změnit kontaktní informace a předvolby ve vašem profilu.
    > [!div class="mx-imgBorder"]
    > ![Úprava informací profilu](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
+### <a name="setting-communications-preferences"></a>Nastavení předvoleb komunikace
+Pokud chcete dostávat pravidelné aktualizace týkající se předplatného a výhody, včetně k odběru bulletinu měsíční předplatná sady Visual Studio [aktualizujte Předvolby](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) zaškrtnutím zaškrtávacího políčka pro předplatná sady Visual Studio ve vaší Profil sady Visual Studio. Můžete změnit tyto předvolby a kdykoli. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Nastavení předvoleb](_img/manage-vs-subscriptions/change-prefs.png)
+   
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Propojení předplatného Azure nebo předplatné na stávající služby Azure DevOps
 
 Pokud se přihlásit k předplatnému pomocí osobního účtu Microsoft (MSA) a s předplatným, které zahrnuje Azure DevOps služby nebo Microsoft Azure pomocí svého pracovního nebo školního účtu, které spravuje Azure, můžete propojit dva odběry. To se nazývá "Alternativní účet" a umožňuje nadále používat MSA k přihlášení ke svému předplatnému přitom má přístup ke stávajícím prostředkům Azure, Azure DevOps služby nebo integrovaného vývojového prostředí, které jsou spojeny s váš školní nebo pracovní účet.
