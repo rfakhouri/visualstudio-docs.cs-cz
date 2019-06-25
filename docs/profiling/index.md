@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Měření výkonu aplikace pomocí profilace | Dokumentace Microsoftu
-description: 'Zjistěte, jak pomocí sady Visual Studio na profil výkonu vaší aplikace, služby a nástroje v jazyce podle vašeho výběru.'
+description: Zjistěte, jak pomocí sady Visual Studio na profil výkonu vaší aplikace, služby a nástroje v jazyce podle vašeho výběru.
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+ms.openlocfilehash: e47f44a78fbd8632b834c46c451f5f3106c85fcd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995439"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Měřit výkon aplikace v sadě Visual Studio
 
