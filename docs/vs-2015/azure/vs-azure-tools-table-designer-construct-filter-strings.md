@@ -1,18 +1,16 @@
 ---
 title: Vytváření řetězce filtru pro návrháře tabulky | Dokumentace Microsoftu
 description: Vytváření řetězce filtru pro Návrhář tabulky
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/18/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 11/18/2016
+ms.author: ghogen
 ms.openlocfilehash: ab38ffd1f94e6c8c432d25d8408a0209e4f96e30
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
@@ -43,9 +41,9 @@ Pro všechny typy vlastností jsou podporovány následující logické operáto
 
 Při vytváření řetězce filtru, jsou důležité následující pravidla:
 
-- Použijte logické operátory k porovnání vlastnosti na hodnotu. Všimněte si, že není možné porovnat vlastnost s dynamickou hodnotou; jedna strana výrazu musí být konstanta.
-- Všechny části řetězce filtru jsou malá a velká písmena.
-- Hodnota konstanty musí být stejného datového typu jako vlastnost, aby filtr vrátil platné výsledky. Další informace o podporovaných typech vlastností najdete v tématu [Principy datového modelu služby Table Service](http://go.microsoft.com/fwlink/p/?LinkId=400448).
+* Použijte logické operátory k porovnání vlastnosti na hodnotu. Všimněte si, že není možné porovnat vlastnost s dynamickou hodnotou; jedna strana výrazu musí být konstanta.
+* Všechny části řetězce filtru jsou malá a velká písmena.
+* Hodnota konstanty musí být stejného datového typu jako vlastnost, aby filtr vrátil platné výsledky. Další informace o podporovaných typech vlastností najdete v tématu [Principy datového modelu služby Table Service](http://go.microsoft.com/fwlink/p/?LinkId=400448).
 
 ## <a name="filtering-on-string-properties"></a>Filtrování podle vlastností řetězce
 Při filtrování na vlastnosti řetězce, uzavřete do jednoduchých uvozovek řetězcová konstanta.
@@ -94,5 +92,3 @@ Chcete-li filtrovat na základě hodnot data a času, zadejte **data a času** �
 Následující příklad vrací entity, kde je vlastnost CustomerSince rovno 10. července 2008:
 
     CustomerSince eq datetime'2008-07-10T00:00:00Z'
-
-<!-- Update_Description: update metedata properties -->
