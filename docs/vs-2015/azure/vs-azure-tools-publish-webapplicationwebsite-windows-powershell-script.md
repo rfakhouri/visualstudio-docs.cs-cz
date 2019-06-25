@@ -1,18 +1,16 @@
 ---
 title: Publikování – WebApplicationWebSite (skript prostředí Windows PowerShell) | Dokumentace Microsoftu
 description: Zjistěte, jak publikovat projekt webu na web Azure. Tento skript vytvoří požadované prostředky ve vašem předplatném Azure, pokud ještě neexistují.
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/11/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 11/11/2016
+ms.author: ghogen
 ms.openlocfilehash: 6953d8944bb8619560ade4c7b3924dc9e89d3b11
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
@@ -25,13 +23,12 @@ ms.locfileid: "62830521"
 Webový projekt se publikuje na web Azure. Skript vytvoří požadované prostředky ve vašem předplatném Azure, pokud ještě neexistují.
 
     Publish-WebApplicationWebSite
-    -Configuration <configuration>
+    –Configuration <configuration>
     -SubscriptionName <subscriptionName>
     -WebDeployPackage <packageName>
     -DatabaseServerPassword @{Name = "name"; Password = "password"}
     -SendHostMessagesToOutput
     -Verbose
-
 
 ## <a name="configuration"></a>Konfigurace
 Cesta ke konfiguračnímu souboru JSON popisující podrobnosti o nasazení.
@@ -102,7 +99,7 @@ Konfigurační soubor JSON má podrobnosti o co se má nasadit. Obsahuje informa
         "environmentSettings": {
             "webSite": {
                 "name": "WebApplication10554",
-                "location": "China North"
+                "location": "West US"
             },
             "databases": [
                 {
@@ -114,7 +111,7 @@ Konfigurační soubor JSON má podrobnosti o co se má nasadit. Obsahuje informa
                     "edition": "",
                     "size": "",
                     "collation": "",
-                    "location": "China North"
+                    "location": "West US"
                 }
             ]
         }
@@ -124,6 +121,3 @@ Můžete upravit konfigurační soubor JSON, chcete-li změnit, co se nasadí. �
 
 ## <a name="next-steps"></a>Další kroky
 Další informace najdete v tématu [Publish-WebApplicationVM (skript Windows Powershellu)](vs-azure-tools-publish-webapplicationvm.md)
-
-
-<!-- Update_Description: update metedata properties -->
