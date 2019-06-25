@@ -30,7 +30,7 @@ VSCEIP je ve výchozím nastavení zapnutá. Můžete ji vypnout nebo zpět na, 
 
     ![Vyberte přepínač tak, aby odrážely vaši volbu účasti](media/visual-studio-experience-improvement-program-image1.png)
 
-[!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
+[!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="see-also"></a>Viz také:
 
