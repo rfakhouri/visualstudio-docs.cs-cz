@@ -4,8 +4,6 @@ description: Zjistěte, jak k zadání přihlašovacích údajů, které Visual 
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -40,6 +38,6 @@ Pokud chcete vytvořit certifikát, můžete použít pokyny v [vytvoření a na
 ## <a name="next-steps"></a>Další kroky
 
 - [Obecný přehled o Web Apps](https://docs.microsoft.com/azure/app-service/)
-- [Nasazení aplikace do služby Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [Nasazení aplikace do služby Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
 - [Nasazení WebJobs pomocí sady Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Vytvořit a nasadit cloudovou službu](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
