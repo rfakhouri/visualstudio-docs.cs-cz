@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf482d5ae90894e66e790423b514cc349701f8
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900545"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67399020"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce a kód Authenticode
 *Authenticode* je technologie společnosti Microsoft, které používá standardní kryptografie pro podepsání kódu aplikace s digitálními certifikáty, které ověření pravosti vydavatele. Pomocí technologie Authenticode pro nasazení aplikace [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] snižuje riziko trojského koně. Trojský kůň, není virus nebo jiný škodlivý program, který zkresluje skutečnost třetí strana jako legitimní program pocházejí z důvěryhodného zdroje a zavedené. Podepisování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí digitálního certifikátu je volitelný krok pro ověření, že se sestaveními a soubory nebylo manipulováno.
@@ -33,7 +33,7 @@ ms.locfileid: "62900545"
 ## <a name="authenticode-and-code-signing"></a>Authenticode a podepisování kódu
  A *digitální certifikát* je soubor, který obsahuje veřejného a privátního klíče páru kryptografických, spolu s metadata popisující vydavatele a kterému certifikát byl vydán a subjekt, který vystavila certifikát.
 
- Existují různé typy certifikátů Authenticode. Každý z nich je nakonfigurovaný pro různé typy podepisování. Pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací, musí mít Authenticode certifikát, který je platný pro podepisování kódu. Pokud se pokusíte přihlásit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace s jiným typem certifikátu, jako jsou e-mailu digitální certifikát, nebude fungovat. Další informace najdete v tématu [Úvod k podepisování kódu](http://go.microsoft.com/fwlink/?LinkId=179452).
+ Existují různé typy certifikátů Authenticode. Každý z nich je nakonfigurovaný pro různé typy podepisování. Pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací, musí mít Authenticode certifikát, který je platný pro podepisování kódu. Pokud se pokusíte přihlásit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace s jiným typem certifikátu, jako jsou e-mailu digitální certifikát, nebude fungovat. Další informace najdete v tématu [Úvod k podepisování kódu](https://docs.microsoft.com/windows/desktop/seccrypto/cryptography-tools).
 
  Certifikát pro podepisování v jednom ze tří způsobů kódu můžete získat:
 
