@@ -8,6 +8,12 @@ metadata:
   description: Další informace o použití sady Visual Studio pro vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru pro jakoukoli platformu nebo zařízení.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
+  ms.openlocfilehash: 1ce6f4c489f0a3c5ccf5b62f9541cba615f10742
+  ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+  ms.translationtype: MT
+  ms.contentlocale: cs-CZ
+  ms.lasthandoff: 06/22/2019
+  ms.locfileid: "67328810"
 highlightedContent:
   items:
   - title: Nastavení a instalace
@@ -200,9 +206,3 @@ additionalContent:
       - text: Vývoj pro různé platformy .NET core
         url: /dotnet/core/
   footer: '[Blogy](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [hlášení problémů](ide/talk-to-us.md)  -  [Komunity vývojářů](https://developercommunity.visualstudio.com/spaces/8/index.html)'
-ms.openlocfilehash: 1ce6f4c489f0a3c5ccf5b62f9541cba615f10742
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328810"
