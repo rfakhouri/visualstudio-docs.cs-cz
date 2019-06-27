@@ -8,18 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eace6e7f3d970de5aa0ab0e74530d3182af0e177
+ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567197"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412287"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools v sadě Visual Studio
 
 Entity Framework je objektově relační mapování technologie, která umožňuje vývojářům .NET pro práci s relačními daty pomocí objektů specifických pro doménu. Díky tomu není nutná většina kódu pro přístup k datům, který vývojáři obvykle musí vytvářet. Entity Framework je doporučené objektově relační mapování (ORM určené) modelování technologie pro nové aplikace .NET.
 
-Entity Framework Tools jsou určeny pro vám pomůže vytvářet aplikace Entity Framework (EF). Úplnou dokumentaci rozhraní Entity Framework je tady: [EF Core a EF 6](/ef/).
+Entity Framework Tools jsou určeny pro vám pomůže vytvářet aplikace Entity Framework (EF). Úplnou dokumentaci rozhraní Entity Framework je tady: [Přehled – EF 6](/ef/ef6/).
+
+  > [!NOTE]
+  > Entity Framework Tools popsané na této stránce se používají ke generování *edmx* soubory, které nejsou podporovány v EF Core. Ke generování modelu EF Core z existující databázi, naleznete v tématu [Reverse Engineering – EF Core](/ef/core/managing-schemas/scaffolding). Další informace o rozdílech mezi EF 6 a EF Core najdete v tématu [porovnání EF 6 a EF Core](/ef/efcore-and-ef6/).
 
 Pomocí Entity Framework Tools můžete vytvářet *koncepčního modelu* z existující databáze a pak graficky vizualizovat a upravit koncepčního modelu. Nebo můžete graficky nejprve vytvořte Koncepční model a pak vytvořte databázi, která podporuje model. V obou případech můžete automaticky aktualizovat váš model, pokud základní změny databáze a automatickému generování kódu na objektové vrstvě pro vaši aplikaci. Generování databáze a objektové vrstvě generování kódu jsou přizpůsobitelné.
 

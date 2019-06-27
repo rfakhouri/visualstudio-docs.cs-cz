@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: ghogen
-ms.openlocfilehash: dd27ff29d8e0d7581046d18457877532d4ce4c56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca43098740a1e8e940f27eae8d2c4d405c23230b
+ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819928"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412274"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Řešení potíží při vývoji v sadě Visual Studio pomocí Dockeru
 
@@ -41,7 +41,7 @@ K vyřešení tohoto problému:
 
 Při přidávání podpory Docker do projektu, zvolte Windows nebo Linuxem kontejneru. Hostitele Docker musí běžet stejný typ kontejneru. Chcete-li změnit typ kontejneru v běžící instanci Dockeru, klikněte pravým tlačítkem na ikonu Dockeru na hlavním panelu a vyberte **přepnout na kontejnery Windows...**  nebo **přepnout na kontejnery Linuxu...** .
 
-## <a name="unable-to-start-debugging"></a>Nelze spustit ladění
+## <a name="unable-to-start-debugging"></a>Nejde spustit ladění
 
 Jedním z důvodů může souviset s tím, že komponenty zastaralé ladění ve složce profilu uživatele. Spusťte následující příkazy k odebrání těchto složek tak, aby se stáhnou nejnovější ladění komponenty na příští relaci ladění.
 
@@ -55,6 +55,31 @@ Pokuste se spustit skript ke stažení z [sítě hostitele kontejneru vyčiště
 ## <a name="mounts-denied"></a>Připojení byl odepřen
 
 Při použití Dockeru pro macOS, pravděpodobně dojde k chybě odkazující na složku /usr/local/share/dotnet/sdk/NuGetFallbackFolder. Přidat složku na kartě Sdílení souborů v Dockeru
+
+## <a name="docker-users-group"></a>Skupina uživatelů dockeru
+
+Při práci s kontejnery se můžete setkat s následující chybu v sadě Visual Studio:
+
+```
+The current user must be in the 'docker-users' group to use Docker Desktop. 
+Add yourself to the 'docker-users' group and then log out of Windows.
+```
+
+Abyste měli oprávnění pro práci s kontejnery Dockeru, musí být členem skupiny docker uživatelů.  Přidání uživatele do skupiny ve Windows 10, postupujte podle těchto kroků:
+
+1. Z nabídky Start otevřít **Správa počítače**.
+1. Rozbalte **místní uživatelé a skupiny**a zvolte **skupiny**.
+1. Najít **docker – uživatelé** skupiny, klikněte pravým tlačítkem a zvolte **přidat do skupiny**.
+1. Přidáte uživatelský účet nebo účty.
+1. Odhlaste se a znovu přihlásit tyto změny se projeví.
+
+Můžete také použít `net localgroup` příkazu příkazového řádku správce přidat uživatele do konkrétní skupiny.
+
+```cmd
+net localgroup docker-users DOMAIN\username /add
+```
+
+V prostředí PowerShell, použijte [přidat LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember) funkce.
 
 ## <a name="microsoftdockertools-github-repo"></a>Úložiště GitHub Microsoft/DockerTools
 
