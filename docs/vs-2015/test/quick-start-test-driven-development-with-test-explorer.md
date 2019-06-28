@@ -39,7 +39,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
    1. Vytvoření testovacího projektu.  
   
-        V **nový projekt** dialogového okna rozbalte **jazyka Visual Basic**, **Visual C#**, nebo **Visual C++** a klikněte na tlačítko **Test**.  
+        V **nový projekt** dialogového okna rozbalte **jazyka Visual Basic**, **Visual C#** , nebo **Visual C++** a klikněte na tlačítko **Test**.  
   
         Vyberte **projekt testu jednotek**.  
   
@@ -76,7 +76,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
 2. Vytvoření testovacího projektu.  
   
-   - V **nový projekt** dialogovém okně zvolte **Visual C#**, **testovací** a klikněte na tlačítko **projekt testu jednotek**.  
+   - V **nový projekt** dialogovém okně zvolte **Visual C#** , **testovací** a klikněte na tlačítko **projekt testu jednotek**.  
   
         ![Nové projekty kódu a testování](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
@@ -124,7 +124,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
 7. Vyberte položky v oblasti **trasování zásobníku** zobrazíte, pokud se test nezdařil.  
   
-   ![Testování jednotek Test Explorer zobrazující se nezdařilo. ] (../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+   ![Testování jednotek Test Explorer zobrazující se nezdařilo.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
    V tomto okamžiku jste vytvořili test a prázdnou metodu, kterou upravíte tak, aby byl test úspěšný.  
   
@@ -145,7 +145,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
      Test byl úspěšný.  
   
-     ![Průzkumník testů jednotek zobrazující prochází testem. ] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
+     ![Průzkumník testů jednotek zobrazující prochází testem. ](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Přidat testy do Rozšiřte rozsah vstupů  
   
@@ -287,4 +287,4 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
      Všechny testy jsou stále úspěšné.  
   
-     ![Úspěšné testy 3 zobrazuje Průzkumník testu jednotek. ] (../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Úspěšné testy 3 zobrazuje Průzkumník testu jednotek. ](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
