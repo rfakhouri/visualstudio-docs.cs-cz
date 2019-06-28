@@ -57,7 +57,7 @@ Tento článek obsahuje kroky k nastavení základní konfiguraci služby IIS na
     V aplikaci Visual Studio 2019 zadejte **Ctrl + Q** otevřete do vyhledávacího pole zadejte **asp.net**, zvolte **šablony**, klikněte na tlačítko **vytvořit novou webovou aplikaci ASP.NET Core** . V dialogovém okně, které se zobrazí, pojmenujte projekt **MyASPApp**a klikněte na tlačítko **vytvořit**. Dále zvolte **webové aplikace (Model-View-Controller)** a klikněte na tlačítko **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    V sadě Visual Studio 2017, zvolte **soubor > Nový > projekt**a pak vyberte **Visual C# > Web > Webová aplikace ASP.NET Core**. V části šablony ASP.NET Core, vyberte **webové aplikace (Model-View-Controller)**. Ujistěte se, že je vybraný ASP.NET Core 2.1, který **povolit podporu Dockeru** není vybraná a že **ověřování** je nastavena na **bez ověřování**. Pojmenujte projekt **MyASPApp**.
+    V sadě Visual Studio 2017, zvolte **soubor > Nový > projekt**a pak vyberte **Visual C# > Web > Webová aplikace ASP.NET Core**. V části šablony ASP.NET Core, vyberte **webové aplikace (Model-View-Controller)** . Ujistěte se, že je vybraný ASP.NET Core 2.1, který **povolit podporu Dockeru** není vybraná a že **ověřování** je nastavena na **bez ověřování**. Pojmenujte projekt **MyASPApp**.
     ::: moniker-end
 
 4. Otevřete soubor About.cshtml.cs a nastavte zarážku v `OnGet` – metoda (ve starších šablonách HomeController.cs místo toho otevřít a nastavit zarážku v `About()` metoda).
@@ -130,7 +130,7 @@ Tuto možnost můžete použít k nasazení své aplikace, pokud chcete zkopíro
 
 1. Otevřete Průzkumníka Windows a vytvořte novou složku **C:\Publish**, kde bude později nasadit projekt ASP.NET.
 
-2. Pokud ho ještě není otevřený, otevřete **Správce Internetové informační služby (IIS)**. (V levém podokně ve Správci serveru vyberte **IIS**. Klikněte pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)**.)
+2. Pokud ho ještě není otevřený, otevřete **Správce Internetové informační služby (IIS)** . (V levém podokně ve Správci serveru vyberte **IIS**. Klikněte pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)** .)
 
 3. V části **připojení** v levém podokně přejděte do **lokality**.
 
@@ -213,7 +213,7 @@ Informace o spouštění vzdálený ladicí program jako službu, naleznete v t�
 
 7. Klikněte na tlačítko **připojit**.
 
-8. Otevřete web, vzdáleném počítači. V prohlížeči přejděte na **http://\<název vzdáleného počítače >**.
+8. Otevřete web, vzdáleném počítači. V prohlížeči přejděte na **http://\<název vzdáleného počítače >** .
 
     Zobrazí se webová stránka ASP.NET.
 
