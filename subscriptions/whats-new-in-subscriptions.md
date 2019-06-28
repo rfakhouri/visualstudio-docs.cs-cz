@@ -2,64 +2,45 @@
 title: Co je nového v předplatných sady Visual Studio
 description: Další informace o nových a aktualizovaných funkcích, které můžete použít ke správě předplatných sady Visual Studio.
 ms.custom: ''
-ms.date: 06/25/2018
+ms.date: 06/27/2019
 searchscope: VS Subscription
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 647009d7e01cc821bdf4fa6a573e6caa73cb7794
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+author: evanwindom
+ms.author: lank
+manager: lank
+ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259487"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465112"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s novou v předplatných sady Visual Studio
 
-Budeme aktualizovat balíček výhod předplatného často mají být ještě užitečnější pro vás. Přečtěte si další informace o nejnovějších funkcích čtvrtletně seřazeny.
+Budeme aktualizovat balíček výhod předplatného často mají být ještě užitečnější pro vás. Zpřístupníme vylepšení našich odběratele a odběr portálech pro správu k poskytování nejlepšího možného prostředí.  Pokračujte ve čtení a seznamte se s nejnovějšími funkcemi a aktualizacemi, čtvrtletně seřazeny.
 
-## <a name="2018-q2-april-june"></a>2. čtvrtletí 2018 (duben–červen)
+## <a name="2019-q1-january-march"></a>1\. čtvrtletí 2019 (leden–březen)
 
-Tady je rychlá rekapitulace toho, co je nového v 2. čtvrtletí.
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>Maximální využití přidán do [portál pro správu předplatných](https://manage.visualstuido.com)
+Nová funkce v portálu pro správu předplatných sady Visual Studio pomáhá sledovat kolik předplatných, které jste zakoupili a přiřazeny a identifikuje nejvyšší počet předplatných každou úroveň přiřazení, jak v rámci v minulém roce, celém průběhu Doba trvání vašich smlouvách. Pomůže vám to pochopit aktuální využití předplatného a plánovat budoucí nákupy. 
 
-### <a name="cloud-administrators"></a>Správci cloudu
+  > [!div class="mx-imgBorder"]
+  > ![Maximální využití nabídky](_img/maximum-usage/maximum-usage-menu.png)
 
-Přidali jsme nové funkce pro správce cloudu, umožňující snadnější správa cloudových předplatných:
+Zobrazí se také spuštěné historii přiřazení, včetně nákupů a přiřazení.   
 
-* [**Hromadné přiřazení**](/visualstudio/subscriptions/assign-license#bulk-assignments): Přidat a načíst několik předplatitelů hromadně.
+Další informace najdete našem [maximální využití](maximum-usage.md) článku. 
 
-  ![Přidávání více uživatelů pomocí hromadné přidání tlačítka](media/bulk-add-multiple-subscribers.png)
+## <a name="2019-q2-april-june"></a>2\. čtvrtletí 2019 (duben–červen)
 
-* [**Export**](/visualstudio/subscriptions/exporting-subscriptions): Exportujte seznam uživatelů a podrobnosti o jejich přiřazení. Seznam například to může být velmi užitečné, pokud chcete ke sledování přiřazení a datum vypršení platnosti.
+### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Visual Studio s předplatnými Githubu Enterprise
+Na konferenci //build v květnu společnost Microsoft oznámila, že zákazníci se smlouvou Enterprise si teď můžou koupit předplatná sady Visual Studio, které zahrnují Githubu Enterprise.  Je snadný způsob, jak získat Visual Studio subscriptoins a Githubu Enterprise pro jednu nižší cenu.  
 
-   ![Exportovat seznam předplatitelů do aplikace Excel s použitím tlačítko pro Export](media/export-subscriber-list-to-csv.png)
+GitHub Enterprise je k dispozici s předplatnými sady Visual Studio Enterprise a Visual Studio Professional získali prostřednictvím smlouvy Enterprise. Je také "stupňované" nabídka, která slouží k přidání Githubu Enterprise i v případě vaší smlouvy Enterprise není kvůli obnovení.
 
-* [**Hromadná úprava**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-using-bulk-edit): Informace o předplatném několik předplatitelů hromadných úprav
+Další informace o výhodách, možnostech a cenách najdete https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
 
-  ![Úprava více uživatelů pomocí tlačítka hromadných úprav](media/bulk-edit-multiple-subscribers.png)
-
-* Prozkoumejte nová pole, které jsou k dispozici v [ **přidat předplatné** prostředí](assign-license.md):
-
-  * **E-mailové oznámení**: Pokud vaše organizace nepoužívá Azure AD a chcete použít jinou e-mailová oznámení než přihlašovací e-mailu, můžete ho přidat.
-
-    ![Přidáte novou e-mailovou adresu oznámení](media/add-new-subscriber-notification-email.png)
-
-  * **Předvolby komunikace**: Zvolte jazyk, který chcete použít k odesílání e-mailů přiřazení.
-
-    ![Změnit jazyk, který chcete použít při odesílání oznámení e-mailů](media/change-subscriber-communication-preference.png)
-
-  * **Přidat odkaz na**: Přidáte odkaz na poznámky pro předplatná, která spravujete.
-
-    ![Přidat poznámky odkaz na předplatné](media/add-subscriber-reference-notes.png)
-
-* [**Znovu poslat e-mail s přiřazením**](resend-assignment-email.md): Znovu posílejte e-mailové oznámení všem uživatelům ve vašem seznamu odběratele a pro libovolný počet, kolikrát chcete.
-
-  ![Znovu poslat aktivační e-mail pro všechny uživatele nebo více uživatelů, pokaždé, když chcete](media/resend-subscriber-activation-emails.png)
-
-* [**Filtr**](search-license.md): Uspořádání a filtrování vaše předplatitelská data do nejlépe vyhovovat vašim potřebám.
-
-  ![Filtrovat předplatitele data, jak na základě dostupných polí](media/filter-subscriber-data.png)
+Pokud vaše organizace už má Visual Studio s předplatnými Githubu Enterprise, další [Správa sady Visual Studio pomocí GitHub Enterprise](assign-github.md) předplatná v naší dokumentaci.  
 
 A je to teď!
 

@@ -9,12 +9,12 @@ ms.workload: multiple
 ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: cdcfd381d74af4e3a11f96518ab3f31e79995978
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 4ed7af80583e5c0890e0b0e6d631f99d77943cd8
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614539"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465094"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Ladění aplikací v místním kontejneru Dockeru
 
@@ -118,6 +118,12 @@ Pokud používáte projekty aplikace konzoly rozhraní .NET Framework, není pod
 5. Přepněte do aplikace Visual Studio zobrazit zarážky, kontrolovat hodnoty a tak dále.
 
    ![Zarážky](media/edit-and-refresh/breakpoint-console.png)
+
+## <a name="container-reuse"></a>Opětovné použití kontejnerů
+
+Během cyklu vývoje sady Visual Studio pouze znovu sestaví Image kontejnerů a kontejner sám o sobě při změně souboru Dockerfile, ale pokud ne, znovu použije kontejneru z předchozích spuštění.
+
+Pokud jste ručně změnili kontejneru a chcete restartovat z image kontejneru čisté, použijte **sestavení** > **Vyčistit** příkazů v sadě Visual Studio a následně vytvořit jako obvykle.
 
 ## <a name="summary"></a>Souhrn
 

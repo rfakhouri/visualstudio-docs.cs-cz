@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Pronajmout sadu Visual Studio Professional nebo Visual Studio Enterprise na základě – měsíční nebo roční s bez dlouhodobé smlouvy.
 searchscope: VS Subscription
-ms.openlocfilehash: 1b704b6180937d3a1b937b702fad4a2e564d93c6
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: de95cd0d1cc49006e451bf00c34757ab7daa5c0b
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177571"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465131"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Nákup cloudových předplatných sady Visual Studio Professional a Visual Studio Enterprise
 
-Můžete si koupit [předplatných sady Visual Studio Professional a Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) z [Visual Studio Marketplace](https://marketplace.visualstudio.com). Toto nastavení se nazývá **"Cloudová předplatná"**.
+Můžete si koupit [předplatných sady Visual Studio Professional a Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) z [Visual Studio Marketplace](https://marketplace.visualstudio.com). Toto nastavení se nazývá **"Cloudová předplatná"** .
 
 [Porovnání výhod předplatného cloudu a cen](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -28,7 +28,7 @@ Můžete si koupit [předplatných sady Visual Studio Professional a Visual Stud
 * Pro fakturaci nákupů, budete potřebovat [předplatného Azure](https://azure.microsoft.com/pricing/purchase-options/). Je možné [zaregistrovat](https://portal.azure.com) před prvním nákupem nebo v průběhu prvního nákupu na Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Kdo může zakoupit Cloudová předplatná sady Visual Studio?
-Každý, kdo má [přístup vlastníka a přispěvatelů](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) do Azure můžete zakoupit předplatné cloudových předplatných.
+Každý, kdo má [vlastníka](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [Správce služby](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), nebo [spolusprávce](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) přístup k předplatnému Azure si můžete koupit cloudovými předplatnými.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Jak koupit cloudové předplatné
 
