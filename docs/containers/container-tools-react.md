@@ -5,13 +5,13 @@ description: Další informace o použití nástroje kontejneru sady Visual Stud
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
-ms.topic: include
-ms.openlocfilehash: b35a4c8a593129d2bdf72ab9eac2972611c8989f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.topic: quickstart
+ms.openlocfilehash: 09209393ea32b4eb9b86a8c0c4263103ee5de344
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66748499"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465096"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Rychlý start: Použití Docker s React jednostránkovou aplikaci, a to v sadě Visual Studio
 
