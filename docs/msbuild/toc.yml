@@ -8,9 +8,9 @@
       href: what-s-new-in-msbuild-15-0.md
     - name: Koncepty nástroje MSBuild
       items:
-        - name: Koncepty nástroje MSBuild
+        - name: Koncepty nástroje MSBuild – přehled
           href: msbuild-concepts.md
-        - name: Vlastnosti nástroje MSBuild
+        - name: Vlastnosti
           items:
             - name: Vlastnosti nástroje MSBuild
               href: msbuild-properties.md
@@ -22,7 +22,7 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: Funkce vlastností
               href: property-functions.md
-        - name: Položky nástroje MSBuild
+        - name: Položky
           items:
             - name: Položky nástroje MSBuild
               href: msbuild-items.md
@@ -36,7 +36,7 @@
               href: item-definitions.md
             - name: Funkce položek
               href: item-functions.md
-        - name: Cíle nástroje MSBuild
+        - name: Cíle
           items:
             - name: Cíle nástroje MSBuild
               href: msbuild-targets.md
@@ -56,7 +56,7 @@
               href: how-to-clean-a-build.md
             - name: Odkazy na sadu SDK projektu MSBuild
               href: how-to-use-project-sdk.md
-        - name: Úlohy nástroje MSBuild
+        - name: Úkoly
           items:
             - name: Úlohy nástroje MSBuild
               href: msbuild-tasks.md
@@ -66,7 +66,7 @@
               href: how-to-ignore-errors-in-tasks.md
             - name: Sestavení projektu s prostředky
               href: how-to-build-a-project-that-has-resources.md
-            - name: Vložené úlohy nástroje MSBuild
+            - name: Vložené úlohy
               items:
                 - name: Vložené úlohy nástroje MSBuild
                   href: msbuild-inline-tasks.md
@@ -76,7 +76,7 @@
               href: msbuild-roslyncodetaskfactory.md
         - name: Porovnávání vlastností a položek
           href: comparing-properties-and-items.md
-        - name: Speciální znaky nástroje MSBuild
+        - name: Speciální znaky
           items:
             - name: Speciální znaky nástroje MSBuild
               href: msbuild-special-characters.md
@@ -84,11 +84,11 @@
               href: how-to-escape-special-characters-in-msbuild.md
             - name: "Použití vyhrazených znaků XML v\_souborech projektu"
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: Rozšířené koncepty nástroje MSBuild
+    - name: Rozšířené koncepty
       items:
         - name: Rozšířené koncepty nástroje MSBuild
           href: msbuild-advanced-concepts.md
-        - name: Dávkování nástroje MSBuild
+        - name: Dávkování
           items:
             - name: Dávkování nástroje MSBuild
               href: msbuild-batching.md
@@ -98,7 +98,7 @@
               href: item-metadata-in-target-batching.md
         - name: Transformace nástroje MSBuild
           href: msbuild-transforms.md
-        - name: Integrace sady Visual Studio (MSBuild)
+        - name: Integrace sady Visual Studio
           items:
             - name: Integrace sady Visual Studio (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -108,7 +108,7 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Registrace rozšíření rozhraní .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Paralelní sestavování více projektů současně pomocí nástroje MSBuild
+        - name: Paralelní sestavování více projektů současně
           items:
             - name: Paralelní sestavování více projektů současně pomocí nástroje MSBuild
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -116,11 +116,11 @@
               href: using-multiple-processors-to-build-projects.md
             - name: Efektivní využívání paměti při sestavování rozsáhlých projektů
               href: using-memory-efficiently-when-you-build-large-projects.md
-        - name: Přehled cílení na více verzí nástroje MSBuild
+        - name: Cílení na více verzí
           items:
             - name: Přehled cílení na více verzí nástroje MSBuild
               href: msbuild-multitargeting-overview.md
-            - name: Sada nástrojů MSBuild (atribut ToolsVersion)
+            - name: Sada nástrojů (atribut ToolsVersion)
               items:
                 - name: Sada nástrojů MSBuild (atribut ToolsVersion)
                   href: msbuild-toolset-toolsversion.md
@@ -132,7 +132,7 @@
               href: msbuild-target-framework-and-target-platform.md
             - name: "Překlad sestavení v\_době návrhu"
               href: resolving-assemblies-at-design-time.md
-            - name: Konfigurace cílů a úloh
+            - name: Cíle a konfigurace úlohy
               items:
                 - name: Konfigurace cílů a úloh
                   href: configuring-targets-and-tasks.md
@@ -142,7 +142,7 @@
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: Sledování souborů
           items:
-            - name: Sledování souborů
+            - name: Sledování souborů – přehled
               href: file-tracking.md
             - name: EndTrackingContext
               href: endtrackingcontext.md
@@ -166,9 +166,9 @@
           href: customize-your-build.md
         - name: Doporučené postupy nástroje MSBuild
           href: msbuild-best-practices.md
-    - name: "Protokolování v\_nástroji MSBuild"
+    - name: protokolování
       items:
-        - name: "Protokolování v\_nástroji MSBuild"
+        - name: "Protokolování v\_nástroji MSBuild – přehled"
           href: logging-in-msbuild.md
         - name: "Získávání protokolů o\_sestavení pomocí nástroje MSBuild"
           href: obtaining-build-logs-with-msbuild.md
@@ -186,11 +186,11 @@
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: Referenční dokumentace nástroje MSBuild
       items:
-        - name: Referenční dokumentace nástroje MSBuild
+        - name: Referenční dokumentace nástroje MSBuild – přehled
           href: msbuild-reference.md
         - name: Referenční dokumentace schématu souboru projektu nástroje MSBuild
           items:
-            - name: Referenční dokumentace schématu souboru projektu nástroje MSBuild
+            - name: Referenční dokumentace schématu souboru projektu nástroje MSBuild – přehled
               href: msbuild-project-file-schema-reference.md
             - name: Choose – element (MSBuild)
               href: choose-element-msbuild.md
@@ -236,13 +236,13 @@
               href: usingtask-element-msbuild.md
             - name: When – prvek (MSBuild)
               href: when-element-msbuild.md
-        - name: Referenční dokumentace úlohy nástroje MSBuild
+        - name: Referenční dokumentace úlohy
           items:
-            - name: Referenční dokumentace úlohy nástroje MSBuild
+            - name: Referenční dokumentace úlohy nástroje MSBuild – přehled
               href: msbuild-task-reference.md
-            - name: Úlohy nástroje MSBuild specifické pro Visual C++
+            - name: Úlohy specifické pro Visual C++
               items:
-                - name: Úlohy nástroje MSBuild specifické pro Visual C++
+                - name: Úlohy nástroje MSBuild specifické pro Visual C++ – přehled
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake – úloha
                   href: bscmake-task.md
@@ -438,15 +438,15 @@
           href: msbuild-well-known-item-metadata.md
         - name: Soubory odezvy nástroje MSBuild
           href: msbuild-response-files.md
-        - name: Referenční dokumentace WPF MSBuild
+        - name: Referenční dokumentace WPF
           items:
-            - name: Referenční dokumentace WPF MSBuild
+            - name: Referenční dokumentace nástroje WPF MSBuild – přehled
               href: wpf-msbuild-reference.md
             - name: WPF – soubory .Targets
               href: wpf-dot-targets-files.md
-            - name: WPF MSBuild – referenční dokumentace úlohy
+            - name: Referenční dokumentace úlohy WPF
               items:
-                - name: WPF MSBuild – referenční dokumentace úlohy
+                - name: Referenční dokumentace úlohy nástroje WPF MSBuild – přehled
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier – úloha
                   href: fileclassifier-task.md

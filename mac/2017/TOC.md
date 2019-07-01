@@ -5,6 +5,7 @@
 ## [Instalace a používání za bránou firewall nebo proxy serverem](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 ## [Instalace verze Preview](/visualstudio/mac/install-preview)
 ## [Aktualizace](/visualstudio/mac/update)
+## [Aktualizace sady Visual Studio 2019 pro Mac](/visualstudio/mac/update-vsmac-8.0)
 ## [Odinstalace](/visualstudio/mac/uninstall)
 
 # [Uživatelské účty](/visualstudio/mac/user-accounts)

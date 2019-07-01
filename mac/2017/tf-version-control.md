@@ -3,21 +3,23 @@ title: Team Foundation Version Control (TFVC)
 description: Připojení z aplikace Visual Studio pro Mac na Team Foundation serveru/Azure DevOps s Team Foundation Version Control (TFVC).
 author: conceptdev
 ms.author: crdun
-ms.date: 04/28/2019
+ms.date: 06/25/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: c21658b6381405c05e5b0fedbb72e33f8ed72a83
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 52b40f8dbf24dd1e712bd0481e36f39cfcc1fc7d
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746335"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67398992"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Připojování k Team Foundation – správa verzí
 
 > [!NOTE]
 > Pro nejlepší výkon verze ovládacího prvku v systému macOS doporučujeme používat Git namísto Team Foundation verze ovládacího prvku (TFVC). Git je podporováno v sadě Visual Studio pro Mac a výchozí volba pro úložiště hostovaná v Team Foundation Server (TFS) nebo Azure DevOps. Další informace o používat Git na TFS/Azure DevOps, najdete v článku [nastavení úložiště Git](/visualstudio/mac/set-up-git-repository) článku.
+>
+> Pokud jste dříve používali ve verzi preview TFVC rozšíření pro Visual Studio pro Mac, je již není podporována při upgradu na Visual Studio 2019 pro Mac.
 
 Úložiště Azure nabízí dva modely správy verzí: [Git](/azure/devops/repos/git/?view=azure-devops), distribuovaný systém řízení verze, a [Team Foundation Version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), centralizované verze ovládacího prvku systému.
 
@@ -110,10 +112,12 @@ Další informace o příkazy popsané zde, nebo jiné, můžete pomocí násled
 
 > [!NOTE]
 > Pro nejlepší výkon verze ovládacího prvku v systému macOS doporučujeme používat Git namísto Team Foundation verze ovládacího prvku (TFVC). Git je podporováno v sadě Visual Studio pro Mac a výchozí volba pro úložiště hostovaná v Team Foundation Server (TFS) nebo Azure DevOps. Další informace o používat Git na TFS/Azure DevOps, najdete v článku [nastavení úložiště Git](/visualstudio/mac/set-up-git-repository) článku.
+>
+> Pokud jste dříve používali ve verzi preview TFVC rozšíření pro Visual Studio pro Mac, je již není podporována při upgradu na Visual Studio 2019 pro Mac.
 
 V sadě Visual Studio pro Mac rozšíření Galerie je rozšíření pro ovládací prvky verzí produktu Team Foundation, která nabízí omezenou podporu pro připojení k TFVC. Rozšíření není podporovaný a má několik známých problémů, takže vaše zkušenosti mohou lišit v závislosti na jeho použití.
 
-Chcete-li nainstalovat rozšíření, spusťte sadu Visual Studio pro Mac a zvolte **sady Visual Studio > rozšíření** nabídky. V **Galerie** kartu, vyberte možnost **verzí > správy verzí Team Foundation serveru TFS a Azure DevOps** a klikněte na tlačítko **instalace...** :
+Chcete-li nainstalovat rozšíření, spusťte sadu Visual Studio pro Mac a zvolte **sady Visual Studio > rozšíření** nabídky. V **Galerie** kartu, vyberte možnost **verzí > správy verzí Team Foundation serveru TFS a Azure DevOps** a klikněte na tlačítko **instalace...**:
 
 ![Správce rozšíření](media/tfvc-install.png)
 
@@ -121,13 +125,13 @@ Postupujte podle pokynů k instalaci rozšíření. Po instalaci ji restartujte 
 
 ### <a name="updating-the-extension"></a>Aktualizuje se rozšíření
 
-Aktualizace rozšíření TFVC probíhají pravidelně. Přístup k aktualizace, zvolte **sady Visual Studio > rozšíření...**  z nabídky a vybereme **aktualizace** kartu. Vyberte požadované rozšíření v seznamu a stisknutím klávesy **aktualizace** tlačítka:
+Aktualizace rozšíření TFVC probíhají pravidelně. Přístup k aktualizace, zvolte **sady Visual Studio > rozšíření...** z nabídky a vybereme **aktualizace** kartu. Vyberte požadované rozšíření v seznamu a stisknutím klávesy **aktualizace** tlačítka:
 
 Stisknutím klávesy **nainstalovat** v dalším dialogovém okně starý balíček odinstalovat a nainstalovat nové.
 
 ### <a name="using-the-extension"></a>Pomocí rozšíření
 
-Po instalaci rozšíření, vyberte **verzí > TFS/Azure DevOps > Otevřít ze vzdáleného úložiště...**  položky nabídky.
+Po instalaci rozšíření, vyberte **verzí > TFS/Azure DevOps > Otevřít ze vzdáleného úložiště...** položky nabídky.
 
 ![Položka nabídky otevřít rozšíření](media/tfvc-source-control-explorer-devops.png)
 

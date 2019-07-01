@@ -377,14 +377,20 @@
                       href: ide/reference/convert-foreach-linq.md
                     - name: Konverze dotazu LINQ na příkaz foreach
                       href: ide/reference/convert-linq-to-foreach.md
+                    - name: Převedení příkazu switch na výraz switch
+                      href: ide/reference/convert-switch-statement-to-switch-expression.md
                     - name: Zapouzdření pole
                       href: ide/reference/encapsulate-field.md
                     - name: Extrahování rozhraní
                       href: ide/reference/extract-interface.md
                     - name: Extrahování metody
                       href: ide/reference/extract-method.md
+                    - name: Vygenerování parametru
+                      href: ide/reference/generate-parameter.md
                     - name: Vložená dočasná proměnná
                       href: ide/reference/inline-temporary-variable.md
+                    - name: Neimportované typy dokončování IntelliSense
+                      href: ide/reference/intellisense-completion-unimported-types.md
                     - name: Invertování podmíněných výrazů a logických operací
                       href: ide/reference/invert-conditional-logical.md
                     - name: Invertování příkazů if
@@ -393,6 +399,8 @@
                       href: ide/reference/move-declaration-near-reference.md
                     - name: Přesunutí typu do odpovídajícího souboru
                       href: ide/reference/move-type-to-matching-file.md
+                    - name: Přesun typu do oboru názvů
+                      href: ide/reference/move-type-to-namespace.md
                     - name: Přesunutí člena nahoru
                       href: ide/reference/pull-members-up.md
                     - name: Doplňování regulárních výrazů pomocí IntelliSense
@@ -401,6 +409,8 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: přejmenování
                       href: ide/reference/rename.md
+                    - name: Řazení direktiv using
+                      href: ide/reference/sort-usings.md
                     - name: Dělení a slučování příkazů if
                       href: ide/reference/split-or-merge-if-statement.md
                     - name: Synchronizovat obor názvů a název složky
@@ -470,10 +480,16 @@
                 - name: Použití souborů EditorConfig pro styl kódu
                   displayName: Configure code style analyzers
                   href: ide/create-portable-custom-editor-options.md
-                - name: Jazyk a zásady formátování rozhraní .NET
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: Zásady vytváření názvů rozhraní .NET
-                  href: ide/editorconfig-naming-conventions.md
+                - name: Konvence kódování .NET
+                  items:
+                    - name: Přehled
+                      href: ide/editorconfig-code-style-settings-reference.md
+                    - name: Konvence jazyka
+                      href: ide/editorconfig-language-conventions.md
+                    - name: Konvence formátování
+                      href: ide/editorconfig-formatting-conventions.md
+                    - name: Zásady vytváření názvů
+                      href: ide/editorconfig-naming-conventions.md
             - name: Přizpůsobení posuvníku
               href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
             - name: Nastavení záložek v kódu
