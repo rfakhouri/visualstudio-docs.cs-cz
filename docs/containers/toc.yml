@@ -30,5 +30,15 @@
           href: view-and-diagnose-containers.md
         - name: Konfigurace Nástrojů kontejneru
           href: container-tools-configure.md
+        - name: Spuštění testů jednotek
+          href: container-unit-testing.md
+    - name: Koncepty
+      items:
+        - name: Vytváření kontejnerizovaných aplikací
+          href: container-build.md
     - name: Poradce při potížích
       href: troubleshooting-docker-errors.md
+    - name: Odkaz
+      items:
+        - name: Vlastnosti nástroje MSBuild pro kontejnerové projekty
+          href: container-msbuild-properties.md
