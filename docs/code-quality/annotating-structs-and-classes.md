@@ -1,6 +1,6 @@
 ---
 title: Zadávání poznámek ke strukturám a třídám
-ms.date: 11/04/2016
+ms.date: 06/28/2019
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -24,14 +24,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: fa459e3461ef5e58eb1e5b0c675c7e1b408d6f88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571417"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493639"
 ---
 # <a name="annotating-structs-and-classes"></a>Zadávání poznámek ke strukturám a třídám
+
 Členy struktury a třídy může opatřit poznámkami pomocí poznámek, které fungují jako výstupních podmínek, jsou považovány za na hodnotu true v jakékoli volání funkce nebo funkce zahájení/ukončení, která zahrnuje ohraničující struktuře jako parametr nebo je výsledná hodnota.
 
 ## <a name="struct-and-class-annotations"></a>Struktury a třídy poznámky
@@ -75,6 +76,39 @@ ms.locfileid: "62571417"
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
     ```
+
+## <a name="example"></a>Příklad
+
+```cpp
+#include <sal.h>
+// For FIELD_OFFSET macro
+#include <windows.h>
+
+// This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
+_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+struct MyBuffer
+{
+    static int MaxBufferSize;
+    
+    _Field_z_
+    const char* name;
+    
+    int firstField;
+
+    // ... other fields
+
+    _Field_range_(1, MaxBufferSize)
+    int bufferSize;
+    _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
+    int buffer[0];
+};
+```
+
+Poznámky v tomto příkladu:
+
+- `_Field_z_` je ekvivalentní `_Null_terminated_`.  `_Field_z_` Název pole určuje, že pole název je řetězec zakončený hodnotou null.
+- `_Field_range_` pro `bufferSize` Určuje, že hodnota `bufferSize` by měla být v rámci 1 a `MaxBufferSize` (obojí včetně).
+- Výsledky end `_Struct_size_bytes_` a `_Field_size_` poznámky jsou ekvivalentní. Pro struktury nebo třídy, které mají podobné rozložení `_Field_size_` je snadněji čte i údržbu, protože má menší počet odkazů a výpočty, než ekvivalentní `_Struct_size_bytes_` poznámky. `_Field_size_` nevyžaduje převod na velikost v bajtech. Pokud velikost v bajtech je jedinou možností, například pro pole ukazatelů void, `_Field_size_bytes_` lze použít. Pokud mají oba `_Struct_size_bytes_` a `_Field_size_` neexistuje, jak budou mít k dispozici nástroje. Je nástroj pro co dělat, když dva poznámky Nesouhlasím.
 
 ## <a name="see-also"></a>Viz také
 

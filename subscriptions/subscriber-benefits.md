@@ -2,23 +2,24 @@
 title: Předplatná sady Visual Studio – výhody pro předplatitele
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 02/12/2018
+manager: lank
+ms.date: 06/28/2019
 ms.topic: conceptual
 description: Informace o výhodách, které jsou součástí vašeho předplatného sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427790"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493733"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Výhody, které jsou součástí vašeho předplatného sady Visual Studio
 
-Předplatná sady Visual Studio nabízí nejkomplexnější sada prostředků můžete vytvářet, nasazovat a spravovat skvělé aplikace pro vaše preferované platformy a zařízení, včetně Windows, iOS, Androidu a Linuxu.  Určité výhody budou lišit v závislosti na typu vašeho předplatného, které máte.  Zajištění maximální hodnota pro předplatitele, výhody poskytované pravidelně měnit během úprav a zaměřte se na nejnovější a nejvhodnější technologie, školicí materiály a výhodám pro partnery dostupný.
+Předplatná sady Visual Studio (dříve předplatná MSDN) nabízí nejkomplexnější sada prostředků můžete vytvářet, nasazovat a spravovat skvělé aplikace pro vaše preferované platformy a zařízení, včetně Windows, iOS, Androidu a Linuxu.  Určité výhody budou lišit v závislosti na typu vašeho předplatného, které máte.  Zajištění maximální hodnota pro předplatitele, výhody poskytované pravidelně měnit během úprav a zaměřte se na nejnovější a nejvhodnější technologie, školicí materiály a výhodám pro partnery dostupný.
 
-Výhody jsou seskupené do tří kategorií:
+
+Výhody jsou seskupené do tří kategorií v [portál pro předplatitele](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:).
 
 ## <a name="tools"></a>Nástroje
 Kategorie nástrojů poskytuje přístup k celou řadu výhod, včetně nejdůležitějšího výhody, jako [Visual Studio IDE](vs-ide-benefit.md), [Azure DevOps služby](vs-azure-devops.md), a [Azure](vs-azure.md).  V závislosti na vaší úrovni předplatného uvidíte také Windows a účty Office 365 pro vývojáře, Visual Studio App Center a výhody od partnerů, jako je například nástroj WhiteSource Bolt a ModernRequirements.
@@ -30,7 +31,7 @@ Můžete průběžně vylepšovat vaše dovednosti a držet krok s nejnovější
 - Microsoft Azure pro vývojáře na platformě .net a další skvělý obsah od společnosti Pluralsight
 - Vědecké zpracování dat pro vývojáře od Datacampu
 - Navrhování řešení pro databáze systému SQL Server z webu Microsoft Virtual Academy
-- LinkedIn Learning přenést přístup k lidem, přehledům a dovednostem, které je potřeba aplikace excel.
+- LinkedIn Learning a přináší přístup k lidem, přehledům a dovednostem, které je potřeba aplikace excel.
 
 ## <a name="support"></a>Podpora
 Jako předplatitel sady Visual Studio máte také přístup k různým typům podpory v případě, že máte otázky nebo potřebujete odbornou pomoc.

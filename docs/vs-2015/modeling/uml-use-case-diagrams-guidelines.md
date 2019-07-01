@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424309"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493662"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramy případů použití UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,11 +170,11 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
  ![Příklad zobrazující násobnost n: n použití](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Na stav, že několik objektů actor stejné třídy dá využít jeden výskyt případu použití, nastavení násobnosti na konci přidružení objektu actor **1..\\***.  
+- Na stav, že několik objektů actor stejné třídy dá využít jeden výskyt případu použití, nastavení násobnosti na konci přidružení objektu actor **1..\*** .  
   
    Na obrázku dá využít jeden nebo více restaurace v plnění stejné objednávka jídla.  
   
-- Chcete-li zobrazit, že každý objekt actor se můžete zúčastnit ve stejnou dobu v několika výskytů případu použití, nastavení násobnosti na konci případu použití přidružení k **\\***.  
+- Chcete-li zobrazit, že každý objekt actor se můžete zúčastnit ve stejnou dobu v několika výskytů případu použití, nastavení násobnosti na konci případu použití přidružení k **\*** .  
   
    Na obrázku může každý restaurace pracovat na splnění pořadí více než jeden po druhém.  
   
@@ -190,11 +190,11 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
    - **1** podílí každý odkaz na stav tohoto přesně jednu instanci této role.  
   
-   - **1..\\** * stav, který jeden nebo více instancí této role, které jsou součástí každého odkazu.  
+   - **1..\***  do stavu, který jeden nebo více instancí této role, které jsou součástí každého odkazu.  
   
    - **0..1** stanovit účast je dobrovolná.  
   
-   - **\\** * do stavu, který nula nebo víc instancí této role, na které se účastní odkazu.  
+   - **\*** na stav, který se nula nebo víc instancí této role, na které se účastní odkazu.  
   
 > [!NOTE]
 > Mnoho týmů Neumísťujte násobnost informace na diagramy případů použití, byste museli opustit násobnosti na výchozí hodnotu 1. Místo toho poskytují informace v popisy případy použití. V takovém případě se skryjí všechny násobnosti v diagramech případů použití.  
