@@ -1204,6 +1204,15 @@
         - name: Nahlášení problémových stavů a nejčastější dotazy
           displayName: Developer Community
           href: ide/report-a-problem.md
+        - name: Vytváření minimálních výpisů pro proces sady Visual Studio se všemi zásobníky volání
+          displayName: Create minidumps with call stacks
+          href: ide/report-a-problem-minidumps.md
+        - name: Vytváření protokolů k problémům s MSBuild
+          displayName: Create logs for MSBuild problems
+          href: ide/msbuild-logs.md
+        - name: Shromažďování trasovacích protokolů ETL pomocí nástroje PerfView
+          displayName: ETL trace with PerfView
+          href: ide/report-a-problem-perfview.md
     - name: Navrhnout funkci pro sadu Visual Studio
       href: ide/suggest-a-feature.md
     - name: Ochrana osobních údajů komunity vývojářů
