@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 21486fb42f689fbdd5876353a0d99b8f818cf817
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9953a1c58ea6ddd13ca0555959ed621905ba710a
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974407"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552888"
 ---
 # <a name="known-issues-for-containers"></a>Známé problémy s kontejnery
 
@@ -53,6 +53,7 @@ Následující známé problémy dojít, když instalujete Visual Studio Build T
 Při použití nástroje pro sestavení kontejneru, může dojít k následující známé problémy. Zobrazit, zda byly vyřešeny problémy nebo pokud existují další známé problémy, navštivte https://developercommunity.visualstudio.com.
 
 * IntelliTrace nemusí fungovat [některé scénáře](https://github.com/Microsoft/vstest/issues/940) v rámci kontejneru.
+* Výchozí velikost image kontejneru ke starším verzím rozhraní Docker pro Windows, je pouze 20 GB a nevejde Build Tools. Postupujte podle [pokyny ke změně velikosti obrázku](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/container-storage#image-size) 127 GB nebo více.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

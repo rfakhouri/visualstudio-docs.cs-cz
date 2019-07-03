@@ -30,8 +30,6 @@
           href: view-and-diagnose-containers.md
         - name: Konfigurace Nástrojů kontejneru
           href: container-tools-configure.md
-        - name: Spuštění testů jednotek
-          href: container-unit-testing.md
     - name: Koncepty
       items:
         - name: Vytváření kontejnerizovaných aplikací

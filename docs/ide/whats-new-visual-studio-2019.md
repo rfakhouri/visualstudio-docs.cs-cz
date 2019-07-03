@@ -2,7 +2,7 @@
 title: Novinky v sadě Visual Studio 2019
 titleSuffix: ''
 description: Další informace o nových funkcích sady Visual Studio 2019.
-ms.date: 05/22/2019
+ms.date: 06/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328833"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552866"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novinky v sadě Visual Studio 2019
 
@@ -41,8 +41,8 @@ Tady je podrobný rekapitulace toho, co je nového:
 
 ## <a name="develop"></a>Vývoj
 
-Ušetřete čas s novými funkcemi.
-<br><br>
+Zobrazte na následující video a další informace o tom, jak můžete ušetřit čas s novými funkcemi. <br><br>*Délka videa: 3.00 minut*
+
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>Vylepšené vyhledávání
@@ -104,8 +104,8 @@ Další informace najdete v tématu [lepší prostředí pro více monitorů s V
 
 ## <a name="collaborate"></a>Spolupráce
 
-Týmové vyřešit nějaký problém.
-<br><br>
+Zobrazte na následující video a další informace o tom, jak můžete seskupit vyřešit nějaký problém. <br><br>*Délka videa: 4.22 minut*
+
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
 ### <a name="cloud-first-workflow"></a>Cloudového pracovního postupu
@@ -142,8 +142,8 @@ Další informace najdete v tématu [revize kódu pomocí rozšíření pro Visu
 
 ## <a name="debug"></a>Ladění
 
-Nula pomocí cílení na přesné.
-<br><br>
+Zobrazte na následující video a další informace o tom, jak můžete nula pomocí přesné cílení během ladění. <br><br>*Délka videa: 3.54 minut*
+
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>Zvýšení výkonu

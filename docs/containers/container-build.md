@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 26b9bab096c65ff987d4e7c824555544a7e38cd6
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 9f2da112bfeebe4e0bce976736eee5696d888105
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67467404"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552825"
 ---
 # <a name="building-containerized-apps-using-visual-studio-or-the-command-line"></a>Sestavování kontejnerizovaných aplikací pomocí sady Visual Studio nebo příkazového řádku
 
@@ -21,7 +21,7 @@ Když Visual Studio vytvoří projekt, který nepoužívá kontejnery Dockeru, M
 
 ## <a name="multistage-build"></a>Vícefázových sestavení
 
-Funkce vícefázových sestavení pomáhá zjednodušit proces vytváření kontejnerů efektivnější a díky kontejnery menší tím, že je tak, aby obsahovala pouze bity, které vaše aplikace potřebuje za běhu.
+Funkce vícefázových sestavení pomáhá zjednodušit proces vytváření kontejnerů efektivnější a díky kontejnery menší tím, že je tak, aby obsahovala pouze bity, které vaše aplikace potřebuje za běhu. Vícefázových sestavení se používá pro projekty .NET Core, není u projektů .NET Framework.
 
 Umožňuje vícefázových sestavení Image kontejneru bude vytvořena ve fázích, které vytvářejí zprostředkující imagí. Jako příklad, zvažte typické soubor Dockerfile vygenerované sadou Visual Studio – první fází `base`:
 
@@ -62,7 +62,9 @@ Závěrečná fáze spuštění znovu z `base`a zahrnuje `COPY --from=publish` k
 
 ## <a name="faster-builds-for-the-debug-configuration"></a>Rychlejší sestavování pro konfiguraci ladění
 
-Z důvodů výkonu procesu sestavení pro kontejnerizované aplikace není tak přímočaré jako jednoduše podle kroků uvedených v souboru Dockerfile. Vytváření v kontejneru je mnohem pomalejší než sestavení v místním počítači.  Takže když vytváříte v **ladění** konfigurace sady Visual Studio, skutečně sestavuje projekty v místním počítači a pak sdílí do výstupní složky pro kontejner pomocí připojení svazku. Je volána metoda build s optimalizací povolené *rychlé* režimu sestavení.
+Existuje několik optimalizací, že se Visual Studio, které pomáhají s výkonu procesu sestavení pro kontejnerizované projekty. Při spuštění ladění (F5), dříve sestavenou image je znovu použít, pokud je to možné. Pokud nechcete, aby znovu použít předchozí kontejneru, můžete použít **znovu sestavit** nebo **Vyčistit** příkazy v sadě Visual Studio k vynucení sady Visual Studio používat nový kontejner.
+
+Pokud chcete zlepšit výkon, není tak přímočaré jako jednoduše podle kroků uvedených v souboru Dockerfile proces sestavení pro kontejnerizované aplikace. Vytváření v kontejneru je mnohem pomalejší než sestavení v místním počítači.  Takže když vytváříte v **ladění** konfigurace sady Visual Studio, skutečně sestavuje projekty v místním počítači a pak sdílí do výstupní složky pro kontejner pomocí připojení svazku. Je volána metoda build s optimalizací povolené *rychlé* režimu sestavení.
 
 V **rychlé** režimu, volání sady Visual Studio `docker build` s argumentem, který říká Dockeru k vytvoření pouze `base` fázi.  Visual Studio se stará o zbytek procesu bez ohledu na obsah souboru Dockerfile. Takže když upravíte vašem souboru Dockerfile, například k přizpůsobení prostředí kontejneru nebo nainstalovat další závislosti, byste měli umístit provedené změny v první fázi.  Všechny vlastní kroky umístěny v souboru Dockerfile `build`, `publish`, nebo `final` fáze nebude provedeno.
 
@@ -76,7 +78,7 @@ Pokud chcete zakázat optimalizace výkonu a sestavení jako Určuje soubor Dock
 </PropertyGroup>
 ```
 
-Chcete-li obnovit optimalizaci výkonu, nastavte hodnotu na **rychlé**.
+Chcete-li obnovit optimalizaci výkonu, odeberte vlastnost ze souboru projektu.
 
 ## <a name="building-from-the-command-line"></a>Sestavování z příkazového řádku
 
@@ -84,49 +86,33 @@ Můžete použít `docker build` nebo `MSBuild` k sestavení z příkazového ř
 
 ### <a name="docker-build"></a>sestavení dockeru
 
-K vytvoření kontejnerové řešení z příkazového řádku, můžete obvykle použít příkaz `docker build <context>` pro každý projekt v řešení. Můžete zadat *sestavení kontextu* argument. *Sestavení kontextu* pro soubor Dockerfile je složce na místním počítači, který se používá jako pracovní složku pro vytvoření bitové kopie. Například je f'older, která kopírování souborů z při kopírování do kontejneru.  V projektech .NET Core použijte složku obsahující soubor řešení (.sln).  Vyjádřena jako relativní cesta, tento argument je obvykle ".." pro soubor Dockerfile v složky projektu a soubor řešení v nadřazené složky.  Kontext sestavení pro projekty .NET Framework je složky projektu, nikoli složku řešení.
+K vytvoření kontejnerové řešení z příkazového řádku, můžete obvykle použít příkaz `docker build <context>` pro každý projekt v řešení. Můžete zadat *sestavení kontextu* argument. *Sestavení kontextu* pro soubor Dockerfile je složce na místním počítači, který se používá jako pracovní složku pro vytvoření bitové kopie. Například je složka, která kopírování souborů z při kopírování do kontejneru.  V projektech .NET Core použijte složku obsahující soubor řešení (.sln).  Vyjádřena jako relativní cesta, tento argument je obvykle ".." pro soubor Dockerfile v složky projektu a soubor řešení v nadřazené složky.  Kontext sestavení pro projekty .NET Framework je složky projektu, nikoli složku řešení.
 
-> [!NOTE] 
-> Pro projekty rozhraní .NET Framework a pro projekty .NET Core, které jsou vytvořené pomocí verze sady Visual Studio před Visual Studio 2017 Update 4 soubor Dockerfile vícefázových sestavení nepoužili. Při sestavení sady Visual Studio se tyto soubory Dockerfile, namísto vytváření projektu v souboru Dockerfile, Visual Studio vytvoří každý projekt a pak zkopíruje výsledek do kontejneru. Vzhledem k tomu, že kroky sestavení nejsou zahrnuty v souboru Dockerfile, nelze sestavit takových projektů pomocí `docker build` z příkazového řádku. Měli byste použít MSBuild k sestavení těchto projektů.
+```cmd
+docker build -f Dockerfile ..
+```
 
 ### <a name="msbuild"></a>MSBuild
 
-Pokud chcete sestavit projekt nebo řešení pro kontejner jedné dockeru, můžete použít MSBuild s parametrem / `/t:ContainerBuild` možnost příkazu.
+Soubory Dockerfile vytvořené pomocí sady Visual Studio pro projekty .NET Framework (a pro projekty .NET Core, které jsou vytvořené pomocí verze sady Visual Studio před Visual Studio 2017 Update 4) nejsou vícefázových soubory Dockerfile.  Kroky v tyto soubory Dockerfile, nejde zkompilovat kód.  Místo toho když Visual Studio vytvoří soubor Dockerfile rozhraní .NET Framework, nejprve kompilaci projektu pomocí nástroje MSBuild.  Když se tato operace úspěšná, Visual Studio vytvoří soubor Dockerfile, který jednoduše kopíruje výstup sestavení z nástroje MSBuild do výsledné image Dockeru.  Vzhledem k tomu, že kroky ke kompilaci kódu nejsou zahrnuty v souboru Dockerfile, nelze sestavit soubory Dockerfile rozhraní .NET Framework pomocí `docker build` z příkazového řádku. Měli byste použít MSBuild k sestavení těchto projektů.
+
+K vytvoření image pro jeden docker kontejneru projektu MSBuild s parametrem/můžete `/t:ContainerBuild` možnost příkazu. Příklad:
 
 ```cmd
-MSBuild <solution_name>.sln /t:ContainerBuild /p:Configuration=Debug
+MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-Zobrazí výstup podobný uvidíte v **výstup** okno při sestavování řešení v integrovaném vývojovém prostředí sady Visual Studio.
+Zobrazí výstup podobný uvidíte v **výstup** okno při sestavování řešení v integrovaném vývojovém prostředí sady Visual Studio. Vždy používejte `/p:Configuration=Release`, protože v případech, kde sada Visual Studio používá vícefázových sestavení výsledků optimalizace, při vytváření **ladění** konfigurace nemusí být podle očekávání.
 
-Když **ladění** zadána konfigurace (a **ContainerDevelopmentMode** je nastavena na **rychlé**), Visual Studio používá sestavení optimalizace je popsáno v Tento článek, takže váš projekt sestavení rychleji v místním počítači a je zkopírován do kontejneru.  Když **vydání** zadat konfiguraci, sestavení, vyvolá se v kontejneru a může být pomalejší.
+Pokud používáte projektu Docker Compose, použijte příkaz k vytvoření imagí:
 
-Pokud používáte projektu Docker Compose, použijte příkaz:
-
+```cmd
+msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-compose.dcproj
 ```
-msbuild /t:DockerPackageService /p:DockerAppType=AspNet /p:Configuration=Release <project_name>\<project_name>.csproj
-msbuild /p:Configuration=Release docker-compose.dcproj
-```
-
-## <a name="scripting-a-containerized-build-using-azure-devops"></a>Skriptování kontejnerizovaných sestavení pomocí Azure DevOps
-
-Kanály Azure můžete použít pro sestavování kontejnerizovaných aplikací a publikování na Azure Container Registry nebo Docker Hubu. Postupujte podle pokynů pro nastavení kanálu služby Azure v tomto článku: [Sestavování, testování a aplikace kontejneru Docker push](/azure/devops/pipelines/languages/docker?view=azure-devops). Pro vytvoření řešení, ale přidáte úlohu nástroje MSBuild do kanálu. Interně, nástroj MSBuild používá `docker build` vytvářet kontejnery.
-
-Přidejte úlohu nástroje MSBuild do kanálu následujícím způsobem:
-
-```
-- task: MSBuild@1
-  displayName: 'Build Application and main Docker Image'
-  inputs:
-    solution: '**/*.sln'
-    msbuildArguments: '/t:ContainerBuild /p:Configuration=$(buildConfiguration)'
-```
-
-Další informace najdete v tématu [úlohy nástroje MSBuild](/azure/devops/pipelines/tasks/build/msbuild?view=azure-devops).
 
 ## <a name="next-steps"></a>Další kroky
 
-Zjistěte, jak dále přizpůsobit sestavení tak, že nastavíte další vlastnosti nástroje MSBuild v souborech projektu. Zobrazit [vlastnosti sestavení nástroje kontejneru sady](container-msbuild-properties.md).
+Zjistěte, jak dále přizpůsobit sestavení tak, že nastavíte další vlastnosti nástroje MSBuild v souborech projektu. Zobrazit [vlastnosti nástroje MSBuild pro projekty kontejneru](container-msbuild-properties.md).
 
 ## <a name="see-also"></a>Viz také:
 
