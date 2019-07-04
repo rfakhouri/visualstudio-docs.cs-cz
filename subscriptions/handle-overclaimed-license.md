@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Zjistěte, jak můžou správci vyřešit over-pass-the nárokován předplatná
 searchscope: VS Subscription
-ms.openlocfilehash: 6217dcd3cef9a65db3e45ba76f57167f47535671
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: d8209385ca7b1b070fd67116411814f15a8c0df8
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945137"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559739"
 ---
 # <a name="overallocated-subscriptions"></a>Přetížené předplatná
 
@@ -47,4 +47,5 @@ Pokud vaše organizace má smlouvu Enterprise (EA), správci budou moct bez nutn
 Další informace o správě [předplatných sady Visual Studio pomocí GitHub Enterprise](assign-github.md).
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).

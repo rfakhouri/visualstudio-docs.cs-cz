@@ -7,12 +7,12 @@ ms.date: 04/23/2019
 ms.topic: conceptual
 description: Správa předplatných sady Visual Studio a sadu GitHub
 searchscope: VS Subscription
-ms.openlocfilehash: a775317029db1a2be3b01411955ae197c7df6873
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: aa57363cd9ae9be490004c7f182c49bdaa7f2e6c
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64946663"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559663"
 ---
 # <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>Správa předplatných sady Visual Studio pomocí GitHub Enterprise
 
@@ -44,9 +44,9 @@ Protože tento proces je složitější, může trvat několik dní, po předpla
 
 GitHub je k dispozici jako webu GitHub.com cloudové nebo místní Githubu Enterprise Server.  Procesy pro správu dvě verze se liší.  GitHub poskytuje celou řadu témat nápovědy a správce, kteří vám pomohou při správě předplatných Githubu Enterprise.  Připravili jsme vám odkazy na vybrané témata.  
 
-### <a name="githubspanspancom"></a>GitHub<span></span>.com 
+### <a name="githubcom"></a>GitHub.com 
 
-Další informace o správě Githubu<span></span>.com najdete v následujících tématech na [nápovědy ke Githubu](https://help.github.com/en).
+Další informace o správě webu GitHub.com najdete v následujících tématech na [nápovědy ke Githubu](https://help.github.com/en).
 - [Úplný seznam témat nápovědy](https://help.github.com/en)
 - [Správa členství ve vaší organizaci](https://help.github.com/en/articles/managing-membership-in-your-organization)
 > - [Pozvání uživatelům připojit se k vaší organizaci](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
@@ -72,11 +72,13 @@ Nápovědy ke Githubu poskytuje širokou škálu správce, kteří zodpovědět 
 
 
 ## <a name="support-resources"></a>Informační zdroje podpory
--  Můžete najít odpovědi na otázky na široké škály témat GitHub na [nápovědy ke Githubu](https://help.github.com/en).
--  Získejte pomoc od jiných uživatelů GitHub [Fórum komunity Githubu](https://github.community/).
--  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
--  Získat [technickou podporu](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) pro GitHub Enterprise.   
+
+- Můžete najít odpovědi na otázky na široké škály témat GitHub na [nápovědy ke Githubu](https://help.github.com/en).
+- Získejte pomoc od jiných uživatelů GitHub [Fórum komunity Githubu](https://github.community/).
+- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Získat [technickou podporu](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) pro GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Další kroky
+
 Další informace o správě předplatných sady Visual Studio pomocí GitHub Enterprise, podívejte se na Visual Studio [portál pro správu předplatných](https://visualstudio.microsoft.com/subscriptions-administration/).

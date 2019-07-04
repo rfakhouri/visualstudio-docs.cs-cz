@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9302ae3119bceb466e3d681036753bd8237cbeae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316340"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559759"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Upgrade vlastních šablon projektů a položek pro Visual Studio 2017
 
@@ -180,9 +180,9 @@ Jsme zobrazí body rozdíl mezi Visual Studio 2015 a Visual Studio 2017 verze so
 
 Některá rozšíření využívajícím MSI nasazení šablony do společného umístění šablon například následující adresáře:
 
-- **\<Visual Studio Instalační adresář > \Common7\IDE\\< ProjectTemplates/šablon položek >**
+- **\<Visual Studio Instalační adresář > \Common7\IDE\\< ProjectTemplates/šablon položek\>**
 
-- **\<Visual Studio Instalační adresář > \Common7\IDE\Extensions\\< ExtensionName\>\\< projektů a šablon položek >**
+- **\<Visual Studio Instalační adresář > \Common7\IDE\Extensions\\< ExtensionName\>\\< šablon projektů a položek\>**
 
 Pokud vaše rozšíření provede nasazení služby na základě Instalační služby MSI, musíte do manifestu šablony vygenerovat ručně a ujistěte se, že je součástí instalace rozšíření. Porovnání výše uvedených příkladech .vstman a [Visual Studio Manifest odkaz na schéma šablon](../extensibility/visual-studio-template-manifest-schema-reference.md).
 

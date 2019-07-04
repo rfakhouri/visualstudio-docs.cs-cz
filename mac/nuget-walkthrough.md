@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 51ac13718beaf01340b51e1fa3c5a7022f159d96
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820621"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559775"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Zahrnutí balíčku NuGet do projektu
 
@@ -77,9 +77,9 @@ Klikněte pravým tlačítkem na **balíčky** pro přístup k místní nabídky
 
 ![Balíčky nabídky](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Přidání balíčků NuGet** -otevře se okno pro přidání dalších balíčků do projektu.
-*   **Aktualizace** – kontroluje zdrojový server pro každý balíček a stáhne všechny novější verze.
-*   **Obnovení** – soubory ke stažení všechny chybějící balíčky (bez aktualizace existující balíčky na novější verze).
+* **Přidání balíčků NuGet** -otevře se okno pro přidání dalších balíčků do projektu.
+* **Aktualizace** – kontroluje zdrojový server pro každý balíček a stáhne všechny novější verze.
+* **Obnovení** – soubory ke stažení všechny chybějící balíčky (bez aktualizace existující balíčky na novější verze).
 
 Aktualizace a možnosti obnovení jsou také k dispozici na úrovni řešení a vliv na všechny projekty v řešení.
 

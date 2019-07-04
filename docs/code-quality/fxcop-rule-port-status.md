@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0d78e7dcd7dfd203a15510037b277b8c2633805e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4a458a50be6161e320b3ffbbe702e21f9f502c77
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038668"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559671"
 ---
 # <a name="fxcop-rule-port-status"></a>Stav portu pravidla FxCop
 
@@ -67,8 +67,8 @@ ID pravidla | Název
 [CA1063](ca1063-implement-idisposable-correctly.md) | Implementuje správně IDisposable
 [CA1064](ca1064-exceptions-should-be-public.md) | Výjimky by měly být veřejné
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Nevyvolávejte výjimky v neočekávaných umístěních
-CA1066 | Typ {0} by měly implementovat IEquatable<T> protože přepsání Equals
-CA1067 | Při implementaci IEquatable Object.Equals(objekt)<T>
+CA1066 | Typ {0} by měly implementovat IEquatable\<T > protože přepsání Equals
+CA1067 | Při implementaci IEquatable Object.Equals(objekt)\<T >
 CA1068 | CancellationToken parametry musí být poslední
 CA1200 | Vyhněte se použití cref značky s předponou
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Nepředávejte literály jako lokalizované parametry

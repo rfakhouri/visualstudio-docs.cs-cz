@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a04d5761d7b67c58dc71b185e6d5db0b80c766
-ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
-ms.translationtype: HT
+ms.openlocfilehash: e3c66ba4a5031326ec288d3a5f2f3c4851d17ca6
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346880"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559767"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Řešení potíží a známé problémy pro ladění snímků v sadě Visual Studio
 
@@ -189,7 +189,7 @@ Protokoly agenta najdete v následujících umístěních:
 Instrumentace protokoly najdete v následujících umístěních:
 
 - App Services:
-  - Protokolování chyb je automaticky odeslán do D:\Home\LogFiles\eventlog.xml, události jsou označené << název zprostředkovatele = "Instrumentace modul" / / >> nebo "Produkční zarážky"
+  - Protokolování chyb je automaticky odeslán do D:\Home\LogFiles\eventlog.xml, události jsou označené `<Provider Name="Instrumentation Engine" />` nebo "Produkční zarážky"
 - VM/VMSS:
   - Přihlaste se ke svému virtuálnímu počítači a otevřete Prohlížeč událostí.
   - Otevřete následujícím způsobem: *Protokoly Windows > aplikace*.
