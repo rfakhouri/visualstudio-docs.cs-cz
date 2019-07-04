@@ -1,44 +1,42 @@
 - name: Kurzy k jazyku Visual Basic
+  href: index.yml
+- name: Přehled
   items:
-    - name: Kurzy k jazyku Visual Basic
-      href: index.yml
-    - name: Přehled
-      items:
-        - name: O sadě Visual Studio
-          href: visual-studio-ide.md
-        - name: O editoru kódu
-          href: tutorial-editor.md
-        - name: O projektech a řešeních
-          href: tutorial-projects-solutions.md
-        - name: Další funkce sady Visual Studio
-          href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-    - name: Vytvoření aplikace
-      expanded: true
-      items:
-        - name: Vytvoření konzolové aplikace
-          href: tutorial-console.md
-        - name: Vytvoření aplikace pro UPW
-          href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-        - name: Vytvoření aplikace WPF
-          href: tutorial-wpf.md
-        - name: Vytvoření webové aplikace
-          href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
-        - name: Vytvoření aplikace modelu Windows Forms
-          href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-    - name: Poznejte Visual Studio
-      expanded: true
-      items:
-        - name: Otevření projektu z úložiště
-          href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-        - name: Psaní kódu a jeho úpravy
-          href: tutorial-editor.md
-        - name: Kompilace a sestavení
-          href: ../../ide/compiling-and-building-in-visual-studio.md
-        - name: Ladění kódu
-          href: ../visual-basic/tutorial-debugger.md
-        - name: Testování jednotek
-          href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-        - name: Nasazení projektu
-          href: ../../deployment/index.md
-        - name: Přístup k datům
-          href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    - name: O sadě Visual Studio
+      href: visual-studio-ide.md
+    - name: O editoru kódu
+      href: tutorial-editor.md
+    - name: O projektech a řešeních
+      href: tutorial-projects-solutions.md
+    - name: Další funkce sady Visual Studio
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+- name: Vytvoření aplikace
+  expanded: true
+  items:
+    - name: Vytvoření konzolové aplikace
+      href: tutorial-console.md
+    - name: Vytvoření aplikace pro UPW
+      href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    - name: Vytvoření aplikace WPF
+      href: tutorial-wpf.md
+    - name: Vytvoření webové aplikace
+      href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
+    - name: Vytvoření aplikace modelu Windows Forms
+      href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+- name: Poznejte Visual Studio
+  expanded: true
+  items:
+    - name: Otevření projektu z úložiště
+      href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    - name: Psaní kódu a jeho úpravy
+      href: tutorial-editor.md
+    - name: Kompilace a sestavení
+      href: ../../ide/compiling-and-building-in-visual-studio.md
+    - name: Ladění kódu
+      href: ../visual-basic/tutorial-debugger.md
+    - name: Testování jednotek
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    - name: Nasazení projektu
+      href: ../../deployment/index.md
+    - name: Přístup k datům
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
