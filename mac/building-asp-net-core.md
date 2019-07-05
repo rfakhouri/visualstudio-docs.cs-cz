@@ -5,22 +5,20 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 640622a54daa6dd92a16b40741d26e5e68f937b7
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253797"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586835"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Aplikací ASP.NET Core v sadě Visual Studio pro Mac 
-
 
 ASP.NET Core je open source a multiplatformní rozhraní pro vytváření moderních cloudových aplikací připojených k Internetu, například webové aplikace a služby, aplikace IoT a mobilní back-EndY. Aplikace ASP.NET Core můžete spustit na [.NET Core](https://www.microsoft.com/net/core/platform) nebo na verze rozhraní .NET Framework. Byl navržen k poskytování optimalizované vývojářská platforma pro aplikace, které jsou nasazené do cloudu nebo místní spouštění. Se skládá z modulární komponenty s minimální režií, takže zachování flexibility při sestavování řešení. Můžete vyvíjet a spouštět multiplatformní aplikace ASP.NET Core ve Windows, Mac a Linux. ASP.NET Core je open source v [Githubu](https://github.com/aspnet/home).
 
 V tomto testovacím prostředí vytvoříte a prozkoumejte aplikace ASP.NET Core pomocí sady Visual Studio pro Mac.
 
 ## <a name="objectives"></a>Cíle
-
 
 > [!div class="checklist"]
 > * Vytvoření webové aplikace ASP.NET Core

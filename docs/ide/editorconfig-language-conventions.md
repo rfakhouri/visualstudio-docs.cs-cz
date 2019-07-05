@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2dcd0af308da3f16af461dd4b61aae3e31af0236
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 90c080b62be8f3aba128b26aafe9d2b6e30446f5
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67262832"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586778"
 ---
-# <a name="language-conventions"></a>Jazykové konvence
+# <a name="language-conventions"></a>Konvence jazyka
 
 Jazykové konvence pro EditorConfig v sadě Visual Studio se dělí do dvou kategorií:
 
@@ -39,11 +39,11 @@ Pravidla pro vytváření názvů jazyka mají následující obecný formát:
 
 Pro každý jazyk konvence zadejte hodnotu, která definuje, jestli nebo kdy se má přednost styl. Mnoho pravidel přijmout hodnotu `true` (preferovat tímto stylem) nebo `false` (nepreferovat tímto stylem); ostatní, jako přijmout hodnoty `when_on_single_line` nebo `never`. Druhá část pravidlo určuje **závažnost**.
 
-### <a name="severity"></a>Severity
+### <a name="severity"></a>severity
 
 Závažnost konvence jazyk určuje úroveň, kde k vynucení stylu. Následující tabulka uvádí možné závažnost hodnoty a jejich důsledky:
 
-Severity | Efekt
+severity | Efekt
 :------- | ------
 `none` | Nezobrazovat nic uživateli při porušení tohoto pravidla. Funkce generování kódu ale generování kódu v tomto stylu. Pravidla s `none` závažnost nikdy objeví v **rychlé akce a Refaktoringy** nabídky. Ve většině případů to považován za "zakázáno" nebo "ignoruje".
 `silent` (také `refactoring` v sadě Visual Studio 2017 verze 15,8 a novější) | Nezobrazovat nic uživateli při porušení tohoto pravidla. Funkce generování kódu ale generování kódu v tomto stylu. Pravidla s `silent` závažnost účastnit vyčištění stejně jako se zobrazí v **rychlé akce a Refaktoringy** nabídky.
@@ -970,7 +970,7 @@ Pravidla stylu v této části jsou pouze pro C#.
    - CSharp\_styl\_vzor\_místní\_přes\_anonymous_function
 - ["Null" Kontrola předvolby](#null-checking-preferences)
    - csharp\_style\_throw_expression
-    - csharp\_style\_conditional\_delegate_call
+   - csharp\_style\_conditional\_delegate_call
 - [Předvolby bloku kódu](#code-block-preferences)
    - csharp\_prefer_braces
 

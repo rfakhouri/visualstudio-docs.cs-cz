@@ -7,12 +7,12 @@ ms.date: 04/23/2019
 ms.topic: conceptual
 description: Správa předplatných sady Visual Studio a sadu GitHub
 searchscope: VS Subscription
-ms.openlocfilehash: aa57363cd9ae9be490004c7f182c49bdaa7f2e6c
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: adc06dd13579697d6aa74158f980cd873ea661fe
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559663"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586860"
 ---
 # <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>Správa předplatných sady Visual Studio pomocí GitHub Enterprise
 
@@ -69,7 +69,6 @@ Nápovědy ke Githubu poskytuje širokou škálu správce, kteří zodpovědět 
 > > - [Odebrání lidí z týmů a organizace](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
 > - [Zabezpečení pro uživatele](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
 - [Instalace a konfigurace serveru GitHub Enterprise](https://help.github.com/en/enterprise/2.16/admin/installation)
-
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 

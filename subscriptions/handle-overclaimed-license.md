@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Zjistěte, jak můžou správci vyřešit over-pass-the nárokován předplatná
 searchscope: VS Subscription
-ms.openlocfilehash: d8209385ca7b1b070fd67116411814f15a8c0df8
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 06da8c460e9660857b0f03062bde5bd983bd176d
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559739"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586993"
 ---
 # <a name="overallocated-subscriptions"></a>Přetížené předplatná
 
@@ -42,7 +42,6 @@ Pokud vaše organizace má smlouvu Enterprise (EA), správci budou moct bez nutn
 > Pokud předplatných sady Visual Studio pomocí GitHub Enterprise mají přiřazenou správci předplatného sady Visual Studio a který by byl nákupu těchto předplatných, nebudou viditelné pro GitHub Enterprise admins v rámci organizace. K zajištění Githubu Enterprise předplatná jsou viditelné, nákupu včetně **alespoň jeden** pomocí GitHub Enterprise sady Visual Studio Professional nebo Visual Studio Enterprise s předplatným Githubu Enterprise by měl provést první čas, kdy jsou přiřazeny předplatná.  
 >
 > Je zodpovědností zákazníka, aby se zajistilo, že pro každé předplatné Githubu, který je přiřazen odpovídající sady Visual Studio s předplatným Githubu přiřazená portálu spravovat zůstal zajištěn soulad s licenčním požadavkům pro tento předplatné.
-
 
 Další informace o správě [předplatných sady Visual Studio pomocí GitHub Enterprise](assign-github.md).
 

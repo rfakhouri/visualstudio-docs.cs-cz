@@ -7,17 +7,16 @@ ms.date: 06/28/2019
 ms.topic: conceptual
 description: Informace o výhodách, které jsou součástí vašeho předplatného sady Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 27ec141156de16c4bca8862ed88f89731924d1af
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493733"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586991"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Výhody, které jsou součástí vašeho předplatného sady Visual Studio
 
 Předplatná sady Visual Studio (dříve předplatná MSDN) nabízí nejkomplexnější sada prostředků můžete vytvářet, nasazovat a spravovat skvělé aplikace pro vaše preferované platformy a zařízení, včetně Windows, iOS, Androidu a Linuxu.  Určité výhody budou lišit v závislosti na typu vašeho předplatného, které máte.  Zajištění maximální hodnota pro předplatitele, výhody poskytované pravidelně měnit během úprav a zaměřte se na nejnovější a nejvhodnější technologie, školicí materiály a výhodám pro partnery dostupný.
-
 
 Výhody jsou seskupené do tří kategorií v [portál pro předplatitele](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:).
 

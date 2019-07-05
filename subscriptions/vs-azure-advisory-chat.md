@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Naučte se, abyste mohli využívat výhody Azure Advisory Chat součástí předplatných sady Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: c5d547062fa820ff868fe12f8cb899d9d1e508b8
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 329aa109349a8f97e64cc478b7e843ca4d7b24e3
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033176"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586968"
 ---
 # <a name="azure-advisory-chat"></a>Chat s poradcem pro Azure
 
@@ -42,7 +42,6 @@ Použití poradce Azure konverzace je jednoduché.
 | Visual Studio Professional (standardní, měsíčních cloudových) sady Visual Studio Enterprise (měsíční cloudu, NFR<sup>1</sup>) |        Všechny        | Není k dispozici |     Ne     |
 |                                          Visual Studio Test Professional (Standard)                                          |        Všechny        | Není k dispozici |     Ne     |
 |                                                  Předplatné MSDN Platforms (Standard)                                                   |        Všechny        | Není k dispozici |     Ne     |
-
 
 <sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), nejcennější Professional (MVP), Regional Director (RD) Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
 

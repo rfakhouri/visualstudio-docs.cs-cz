@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 411ab7f097a82fa850e3850c662d378f51ffd548
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614437"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586820"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalace a konfigurace nástroje potřebné k vytváření pomocí iOS
 
@@ -66,7 +66,6 @@ Chcete-li nainstalovat a používat vzdálený agent pro vývoj kódu pro iOS, m
 
    Nainstalovat verzi 8.11.3 Node.js na vašem počítači Mac. Pokud nainstalujete balíček Node.js, by měl mít npm verze 5.6.0. Všimněte si, že ostatní verze Node.js a npm nemusí podporovat některé moduly používané v vcremote vzdáleného agenta, což může způsobit selhání instalace vcremote.
 
-
 ## <a name="Install"></a> Instalace vzdáleného agenta pro iOS
 
 Při instalaci Visual C++ pro vývoj Multiplatformních mobilních řešení pro Visual Studio může komunikovat s [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), vzdáleného agenta spuštěného na počítači Mac, přenos souborů, sestavte a spusťte aplikaci pro iOS a odeslat příkazy ladění.
@@ -79,7 +78,7 @@ Před instalací vzdáleného agenta, ujistěte se, že jste splnili [požadavky
 
    `sudo npm install -g --unsafe-perm vcremote`
 
-   Globální instalace (**-g**) přepínač se doporučuje, ale nevyžaduje.
+   Globální instalace ( **-g**) přepínač se doporučuje, ale nevyžaduje.
 
    Během instalace vcremote je nainstalovaná a je aktivován režim pro vývojáře na vašem počítači Mac. [Homebrew](https://brew.sh/) a nainstaluje se také dva balíčky npm, vcremote lib a vcremote-utils. Po dokončení instalace je bezpečné ignorovat upozornění o přeskočené volitelné závislosti.
 
@@ -142,7 +141,7 @@ Pro připojení ke vzdálenému agentu ze sady Visual Studio, musíte zadat konf
 
 1. Na řádku nabídek sady Visual Studio, zvolte **nástroje**, **možnosti**.
 
-1. V **možnosti** dialogového okna rozbalte **různé platformy**, **C++**, **iOS**.
+1. V **možnosti** dialogového okna rozbalte **různé platformy**, **C++** , **iOS**.
 
 1. V **název hostitele** a **Port** pole, zadejte hodnoty určené vzdáleného agenta při jeho spuštění. Název hostitele může být název DNS nebo IP adresu vašeho macu. Výchozí port je 3030.
 
@@ -159,7 +158,7 @@ Pro připojení ke vzdálenému agentu ze sady Visual Studio, musíte zadat konf
 
    Pokud spárování úspěšné není, ověřte, že vzdálený agent běží, pomocí kroků v [spustit vzdálený agent](#Start). Pokud příliš mnoho času uplynulo od vzdáleného agenta PIN kód se vygeneroval, postupujte podle kroků v [vygenerovat nový bezpečnostní kód PIN](#GeneratePIN) na Macu a zkuste to znovu. Pokud použijete název hostitele počítače Mac, zkuste použít IP adresu v **název hostitele** místo toho.
 
-1. Aktualizovat název složky v **vzdálený kořen** pole zadat složku, která používají vzdálený agent doma (*~*) adresáře na počítači Mac. Ve výchozím nastavení vzdálený agent používá /Users/`username`/vcremote jako vzdálený kořen.
+1. Aktualizovat název složky v **vzdálený kořen** pole zadat složku, která používají vzdálený agent doma ( *~* ) adresáře na počítači Mac. Ve výchozím nastavení vzdálený agent používá /Users/`username`/vcremote jako vzdálený kořen.
 
 1. Zvolte **OK** se uložit nastavení vzdáleného připojení párování.
 

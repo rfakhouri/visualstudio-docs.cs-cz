@@ -17,17 +17,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d466dec85a0bdf242120ef5e88a0d5f5d2ac48e
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 04f33f3852f051e1f492cb2b6dca44fcdb260e11
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934512"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587007"
 ---
 # <a name="custombuild-task"></a>CustomBuild úkolu
 
 Zabalí nástroj kompilátoru Visual C++ cmd.exe. Tato třída je odvozena z [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), ale nepoužívá sledování souborů ke zjištění závislostem. Všechny závislosti by měl být explicitně zadané jako AdditionalDependencies pro přírůstkové sestavení funguje správně.
-
 
 ## <a name="parameters"></a>Parametry
 
