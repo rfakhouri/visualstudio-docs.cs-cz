@@ -4,12 +4,12 @@ description: Zjistěte, jak spravovat více než jednoho kontejneru a komunikaci
 author: bytesguy
 ms.author: adhartle
 ms.date: 06/17/2019
-ms.openlocfilehash: df130e86de7f35c43459a70a12c0e9cfafbbe3a4
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 76c55a43540e2f8ab791b4530044c0ab4da4ecdc
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67196405"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586772"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Vytvoření více kontejnerů aplikace pomocí Docker Compose
 
@@ -82,14 +82,14 @@ Teď máme dva projekty ASP.NET v našich řešení a jsou nakonfigurovány s po
    ```
 
 1. V *Index.cshtml* přidejte řádek pro zobrazení `ViewData["Message"]` tak, že soubor bude vypadat jako v následujícím kódu:
-    
+
       ```cshtml
       @page
       @model IndexModel
       @{
           ViewData["Title"] = "Home page";
       }
-    
+
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
           <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -98,7 +98,7 @@ Teď máme dva projekty ASP.NET v našich řešení a jsou nakonfigurovány s po
       ```
 
 1. Teď v projektu webového rozhraní API, přidejte kód do kontroleru hodnoty chcete přizpůsobit zprávu o vrácená rozhraním API pro volání, které jste přidali z *webfrontend*:
-    
+
       ```csharp
         // GET api/values/5
         [HttpGet("{id}")]
@@ -107,6 +107,7 @@ Teď máme dva projekty ASP.NET v našich řešení a jsou nakonfigurovány s po
             return "webapi (with value " + id + ")";
         }
       ```
+
 1. Nastavte `docker-compose` projekt jako spouštěný projekt, přejděte na **spuštění > Spustit ladění**. Pokud je vše nastaveno správně, zobrazí zprávu "Hello z webfrontend a webová rozhraní API (s hodnotou 1).":
 
 ![Řešení kontejnerů dockeru s více spuštění](media/docker-multicontainer-debug.png)
