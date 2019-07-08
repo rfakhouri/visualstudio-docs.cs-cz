@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: c982d999f3fa974db6ea409ee85e3bb7bbc57414
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b431803a8edee146db0341e02ea7f845099e22d0
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550940"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624040"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Správa rolí v cloudových službách Azure pomocí sady Visual Studio
 Po vytvoření cloudové služby Azure, můžete k němu přidat nové role nebo z něj odebrat existující role. Můžete také naimportovat existující projekt a převeďte jej na roli. Můžete například importovat webové aplikace ASP.NET a určit ji jako webová role.
@@ -48,24 +48,26 @@ Pokud odeberete roli z projektu cloudové služby, ale později se rozhodnete p�
 
 Například je možné odebrat roli webové služby a později se rozhodnete přidat tuto roli zpět do vašeho řešení. Pokud to uděláte, dojde k chybě. K této chybě zabránit, budete muset přidat `<LocalResources>` uvedeného v následující kód XML do prvku `ServiceDefinition.csdef` souboru. Použijte název role webové služby, který jste přidali do projektu jako součást atribut name  **\<LocalStorage >** elementu. V tomto příkladu je název role webové služby **WCFServiceWebRole1**.
 
-    <WebRole name="WCFServiceWebRole1">
-        <Sites>
-          <Site name="Web">
-            <Bindings>
-              <Binding name="Endpoint1" endpointName="Endpoint1" />
-            </Bindings>
-          </Site>
-        </Sites>
-        <Endpoints>
-          <InputEndpoint name="Endpoint1" protocol="http" port="80" />
-        </Endpoints>
-        <Imports>
-          <Import moduleName="Diagnostics" />
-        </Imports>
-       <LocalResources>
-          <LocalStorage name="WCFServiceWebRole1.svclog" sizeInMB="1000" cleanOnRoleRecycle="false" />
-       </LocalResources>
-    </WebRole>
+```xml
+<WebRole name="WCFServiceWebRole1">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+    </Endpoints>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <LocalResources>
+      <LocalStorage name="WCFServiceWebRole1.svclog" sizeInMB="1000" cleanOnRoleRecycle="false" />
+    </LocalResources>
+</WebRole>
+```
 
 ## <a name="next-steps"></a>Další kroky
 - [Konfigurace role pro cloudové služby Azure pomocí sady Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md)

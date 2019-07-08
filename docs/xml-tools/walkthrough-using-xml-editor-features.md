@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e443cf23b8726161a4252e6cef3b77f5d3c37bb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808491"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624198"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Návod: Použití funkcí editoru XML
 
@@ -30,7 +30,7 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
 
      Nový soubor je otevřen v editoru. Tento soubor obsahuje deklaraci XML výchozí `<?xml version="1.0" encoding="utf-8">`.
 
-3. V okně Vlastnosti dokumentu, klikněte na tlačítko Procházet (**...** ) na **schémata** pole.
+3. V okně Vlastnosti dokumentu, klikněte na tlačítko Procházet ( **...** ) na **schémata** pole.
 
      **Schémata XSD** se zobrazí dialogové okno.
 
@@ -58,7 +58,7 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
 
     - **Zaměstnanec** přidat kořenový element.
 
-2. Vyberte **<!--** přidat uzel komentáře a stiskněte klávesu **Enter**.
+2. Vyberte  **&lt;!--** přidat uzel komentáře a stiskněte klávesu **Enter**.
 
      Editor vloží koncová značka komentáře a umístí kurzor mezi počáteční a koncové značky pro komentáře.
 
@@ -70,7 +70,7 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
 
 5. Typ `>` zavřete značky.
 
-6. Editor přidá koncová značka. Koncová značka se přidá s podtržení vlnovkou udávající chybu ověřování. **Popisek** zobrazí zprávu: **Element 'zaměstnance' má neúplný obsah. Byl očekáván 'ID'**.
+6. Editor přidá koncová značka. Koncová značka se přidá s podtržení vlnovkou udávající chybu ověřování. **Popisek** zobrazí zprávu: **Element 'zaměstnance' má neúplný obsah. Byl očekáván 'ID'** .
 
 7. Typ `<` a vyberte **ID** ze seznamu členů. Zadejte `>`.
 
@@ -86,7 +86,7 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
 
 10. Vraťte se do souboru XML a nahraďte **abc** text s **123**.
 
-     Podtržení vlnovkou a **popisek** jsou vymazány pod hodnotou element ID. **Popisek** pro zaměstnance koncové značky nyní zobrazí zprávu: **Element 'zaměstnance' má neúplný obsah. Byl očekáván "datum přijetí"**.
+     Podtržení vlnovkou a **popisek** jsou vymazány pod hodnotou element ID. **Popisek** pro zaměstnance koncové značky nyní zobrazí zprávu: **Element 'zaměstnance' má neúplný obsah. Byl očekáván "datum přijetí"** .
 
 11. Umístěte kurzor po ID koncovou značku, zadejte v `<`vyberte **datum přijetí** seznam členů a pak zadejte `>`.
 
@@ -106,7 +106,7 @@ Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Pr�
 
 1. Z **souboru** nabídce vyberte možnost **uložit jako**.
 
-     **Uložit soubor jako** se zobrazí dialogové okno. Výchozí název souboru je *"XMLFile1"*.
+     **Uložit soubor jako** se zobrazí dialogové okno. Výchozí název souboru je *"XMLFile1"* .
 
 2. Zadejte název souboru a umístění dokumentu XML a klikněte na tlačítko **Uložit**.
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
-ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000951"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624454"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
-Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentModel.Design.MenuCommand> nebo z <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objektu a impementling obslužné rutiny události. Ve většině případů můžete použít <xref:System.ComponentModel.Design.MenuCommand>, jak funkce balíčku VSPackage šablony projektu, ale někdy možná muset použít <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
+Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentModel.Design.MenuCommand> nebo z <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objektu a implementace obslužné rutiny události. Ve většině případů můžete použít <xref:System.ComponentModel.Design.MenuCommand>, jak funkce balíčku VSPackage šablony projektu, ale někdy možná muset použít <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
   
  Příkazy, VSPackage zpřístupňují integrovaného vývojového prostředí musí být viditelné a povolené před uživatele můžete využít. Příkazy jsou v souboru .vsct vytvořen pomocí šablony projektu balíček Visual Studio, jsou viditelné a povolené ve výchozím nastavení. Nastavení některých příznaků příkazů, jako například `DynamicItemStart`, můžete změnit výchozí chování. Viditelnost, povoleného stavu a dalších vlastností příkaz lze také změnit v kódu v době běhu díky přístupu <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objekt, který je přidružený příkaz.  
   
@@ -115,7 +115,7 @@ Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentMo
    </CommandPlacements>
    ```
       
-        Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
+      Vytvoření více umístění příkazu, která mají stejné GUID:ID a jiné nadřazené způsobí, že nabídky se zobrazí v několika umístěních. Další informace najdete v tématu [commandplacements –](../extensibility/commandplacements-element.md) elementu.  
   
     Další informace o skupinách příkazu a vztahy k nadřazeným položkám najdete v tématu [vytvoření opakovaně použitelného skupiny z tlačítka](../extensibility/creating-reusable-groups-of-buttons.md).  
   

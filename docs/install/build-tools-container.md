@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 75c5607043e83ece8ae95b770e8e50b6ab8fbc26
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: 1c7d4b2cb910a6e6ee55ecb783fe124958d251e2
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552914"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624119"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalace Build Tools do kontejneru
 
@@ -89,7 +89,7 @@ Uložte soubor Dockerfile v následujícím příkladu do nového souboru na dis
    ```
 
    > [!WARNING]
-   > Pokud základní image přímo na microsoft/windowsservercore nebo mcr.microsoft.com/windows/servercore (naleznete v tématu [syndikátní Microsoft podniky kontejneru katalogu](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/)), nemusí správně nainstalovat rozhraní .NET Framework a je žádná chyba instalace uvedené. Po dokončení instalace nemusí spouštět spravovaný kód. Místo toho na základní image [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) nebo novější. Všimněte si také, že Image, které jsou označené verzí 4.7.2 nebo vyšší může pomocí prostředí PowerShell jako výchozí `SHELL`, což způsobí, že `RUN` a `ENTRYPOINT` pokyny k selhání.
+   > Pokud základní image přímo na microsoft/windowsservercore nebo mcr.microsoft.com/windows/servercore (naleznete v tématu [syndikátní Microsoft podniky kontejneru katalogu](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/)), nemusí správně nainstalovat rozhraní .NET Framework a je žádná chyba instalace uvedené. Po dokončení instalace nemusí spouštět spravovaný kód. Místo toho na základní image [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) nebo novější. Všimněte si také, že Image, které jsou označené verzí 4.7.2 nebo vyšší může pomocí prostředí PowerShell jako výchozí `SHELL`, což způsobí, že `RUN` a `ENTRYPOINT` pokyny k selhání.
    >
    > Visual Studio 2017 verze 15,8 nebo starší (libovolný produkt) se nenainstaluje správně mcr.microsoft.com/windows/servercore:1809 nebo novější. Se nezobrazí žádná chyba.
    >

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 05a74c77d4b2e4e75379adec8738ab92270596e3
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900228"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624529"
 ---
 # <a name="create-bootstrapper-packages"></a>Vytváření balíčků bootstrapperu
 Instalační program je obecný instalační program, který můžete konfigurovat k rozpoznání a instalování distribuovatelných součástí, jako je například Instalační služby systému Windows (*MSI*) soubory a programy. Instalační program se také nazývá zaváděcí nástroj. To je programován sadou XML manifestů, které mohou specifikovat metadata pro správu instalace součásti.  Každý distribuovatelnou komponentu, nebo požadovaných součástí, která se zobrazí v **požadavky** dialogové okno pro ClickOnce je balíček zaváděcího nástroje. Balíček zaváděcího nástroje je skupina adresářů a souborů, které obsahují soubory manifestu, které popisují, jak by měly být nainstalovány kontrolu požadovaných součástí.
@@ -43,36 +43,44 @@ Vytvoření balíčku zaváděcího nástroje, jste k vytvoření manifestu prod
 
 Po vytvoření těchto souborů uložte soubor manifestu produktu do složky s názvem pro vlastní zaváděcí nástroj. Soubor manifestu balíčku přejde do složky s názvem pro národní prostředí. Například pokud soubor manifestu balíčku je pro anglickou distribuci, uložte soubor do složky s názvem en. Tento proces opakujte pro každé národní prostředí, jako je například ja pro japonské písmo a de pro němčinu. Konečný vlastní balíček zaváděcího nástroje může mít následující strukturu složek.
 
-    ```xml
-    CustomBootstrapperPackage
-      product.xml
-      CustomBootstrapper.msi
-      de
-        eula.rtf
-        package.xml
-      en
-        eula.rtf
-        package.xml
-      ja
-        eula.rtf
-        package.xml
-    ```
+```
+CustomBootstrapperPackage
+  product.xml
+  CustomBootstrapper.msi
+  de
+    eula.rtf
+    package.xml
+  en
+    eula.rtf
+    package.xml
+  ja
+    eula.rtf
+    package.xml
+```
 
 V dalším kroku zkopírujte redistribuovatelné soubory do umístění složky zaváděcího nástroje. Další informace najdete v tématu [jak: Vytvoření lokalizovaného balíčku bootstrapperu](../deployment/how-to-create-a-localized-bootstrapper-package.md).
 
-    *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 or
 
-    *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 Můžete také určit umístění složky zaváděcího nástroje z **cesta** hodnotu v následujícím klíči registru:
 
-    *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
 
 Na 64bitových systémech použijte následující klíč registru:
 
-    *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
 
 Každá distribuovatelná součást se zobrazí ve vlastní podsložce v adresáři balíčků. Produkt manifestu a redistribuovatelné soubory musí být vloženy do této podsložky. Lokalizované verze manifestů komponent a balíčků musí být vloženy do podsložek pojmenovaných podle jazykové.
 

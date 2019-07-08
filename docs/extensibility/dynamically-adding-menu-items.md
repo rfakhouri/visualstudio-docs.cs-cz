@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 619c06d23e3bc1abfce1473627fb483612766728
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62ff05de5cfd6dfa01f8e93f22f9ac09b8e61575
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353387"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624473"
 ---
 # <a name="dynamically-add-menu-items"></a>Dynamicky přidat položky nabídky
 Můžete přidat položky nabídky v době běhu tak, že zadáte `DynamicItemStart` příkazu příznak na definici tlačítko zástupný symbol v příkazu table sady Visual Studio ( *.vsct*) souboru a pak definovat (v kódu) počet položek nabídky pro zobrazení a zpracování příkazy. Při načítání sady VSPackage zástupný text nahrazen dynamickou nabídku položky.
@@ -320,15 +320,15 @@ Můžete přidat položky nabídky v době běhu tak, že zadáte `DynamicItemSt
 
 Teď implementujte predikát shoda. Potřebujeme k určení dvě věci: nejprve, zda ID příkazu, který je platný (je větší než nebo rovna hodnotě Identifikátor deklarovaný příkazu) a druhý, zda určuje projekt je to možné (je menší než počet projektů v řešení).
 
-    ```csharp
-    private bool IsValidDynamicItem(int commandId)
-    {
-        // The match is valid if the command ID is >= the id of our root dynamic start item
-        // and the command ID minus the ID of our root dynamic start item
-        // is less than or equal to the number of projects in the solution.
-        return (commandId >= (int)DynamicMenuPackageGuids.cmdidMyCommand) && ((commandId - (int)DynamicMenuPackageGuids.cmdidMyCommand) < dte2.Solution.Projects.Count);
-    }
-    ```
+```csharp
+private bool IsValidDynamicItem(int commandId)
+{
+    // The match is valid if the command ID is >= the id of our root dynamic start item
+    // and the command ID minus the ID of our root dynamic start item
+    // is less than or equal to the number of projects in the solution.
+    return (commandId >= (int)DynamicMenuPackageGuids.cmdidMyCommand) && ((commandId - (int)DynamicMenuPackageGuids.cmdidMyCommand) < dte2.Solution.Projects.Count);
+}
+```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>Nastavení balíčku VSPackage pro načtení pouze při řešení obsahuje více projektů
  Protože **nastavte projekt po spuštění** příkaz nedává smysl, pokud aktivního řešení neobsahuje více než jeden projekt, můžete nastavit vašeho balíčku VSPackage pro automatické načtení pouze v tom případě. Použijete <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> spolu s kontextu uživatelského rozhraní <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>. V *DynamicMenuPackage.cs* soubor přidejte do třídy DynamicMenuPackage následující atributy:

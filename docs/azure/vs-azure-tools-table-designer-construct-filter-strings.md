@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: d19084e9cfc9813434f5e68829345440763df7e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f63872d3578a8abe03887bfc8bf188ba83f0b1d
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572233"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624070"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Vytváření filtračních řetězců pro Návrháře tabulky
 ## <a name="overview"></a>Přehled
 Jak filtrovat data v tabulce Azure, který se zobrazí v sadě Visual Studio **návrháře tabulky**, sestavit řetězec filtru a zadejte do pole filtru. Přesná syntaxe filtru je definována služby WCF Data Services je podobná klauzuli WHERE příkazu SQL, ale je odeslána do služby Table service prostřednictvím požadavku HTTP. **Návrháře tabulky** zpracovává správné kódování, tak k filtrování hodnotu požadované vlastnosti, byste třeba zadat název vlastnosti, operátor porovnání, hodnotu pro kritéria a volitelně, logická hodnota operátoru do pole filtru. Není potřeba zahrnují možnost dotazu $filter, jako kdybyste se generuje adresu URL a dotaz tabulku prostřednictvím [Reference k REST API služby Storage](http://go.microsoft.com/fwlink/p/?LinkId=400447).
 
-Služby WCF Data Services jsou založené na [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Podrobnosti o filtru možností dotazu systému (**$filter**), najdete v článku [specifikace konvence prostředí OData pro identifikátor URI](http://go.microsoft.com/fwlink/p/?LinkId=214806).
+Služby WCF Data Services jsou založené na [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Podrobnosti o filtru možností dotazu systému ( **$filter**), najdete v článku [specifikace konvence prostředí OData pro identifikátor URI](http://go.microsoft.com/fwlink/p/?LinkId=214806).
 
 ## <a name="comparison-operators"></a>Operátory porovnání
 Pro všechny typy vlastností jsou podporovány následující logické operátory:
@@ -48,45 +48,63 @@ Při filtrování na vlastnosti řetězce, uzavřete do jednoduchých uvozovek �
 
 Následující příklad filtry **PartitionKey** a **RowKey** vlastnosti; další neklíčovým vlastnosti může také být přidán do řetězce filtru:
 
-    PartitionKey eq 'Partition1' and RowKey eq '00001'
+```
+PartitionKey eq 'Partition1' and RowKey eq '00001'
+```
 
 Každý výraz filtru lze uvést v závorkách, i když není potřeba:
 
-    (PartitionKey eq 'Partition1') and (RowKey eq '00001')
+```
+(PartitionKey eq 'Partition1') and (RowKey eq '00001')
+```
 
 Všimněte si, že služba Table service nepodporuje dotazy zástupný znak a nejsou podporovány v Návrháři tabulek buď. Však můžete provést pomocí operátorů porovnání na požadovanou předponu porovnávání předpon. Následující příklad vrátí entity, které LastName vlastnosti, začínající písmenem "A":
 
-    LastName ge 'A' and LastName lt 'B'
+```
+LastName ge 'A' and LastName lt 'B'
+```
 
 ## <a name="filtering-on-numeric-properties"></a>Filtrování na číselné vlastnosti
 Chcete-li filtrovat na celé číslo nebo číslo s plovoucí desetinnou čárkou, zadejte číslo bez uvozovek.
 
 V tomto příkladu vrátí všechny entity s vlastností stáří jehož hodnota je větší než 30:
 
-    Age gt 30
+```
+Age gt 30
+```
 
 V tomto příkladu vrátí všechny entity, s jehož hodnota je menší nebo rovna 100.25 AmountDue vlastností:
 
-    AmountDue le 100.25
+```
+AmountDue le 100.25
+```
 
 ## <a name="filtering-on-boolean-properties"></a>Filtrování na logické vlastnosti
 Chcete-li filtrovat na logickou hodnotu, zadejte **true** nebo **false** bez uvozovek.
 
 Následující příklad vrátí všechny entity, kde je vlastnost IsActive nastaven na **true**:
 
-    IsActive eq true
+```
+IsActive eq true
+```
 
 Výraz filtru bez logický operátor, který lze také zapsat. V následujícím příkladu služba Table service také vrátí všechny entity se IsActive **true**:
 
-    IsActive
+```
+IsActive
+```
 
 Chcete-li vrátit všechny entity, pokud má hodnotu false IsActive, můžete použít nikoli operátor:
 
-    not IsActive
+```
+not IsActive
+```
 
 ## <a name="filtering-on-datetime-properties"></a>Filtrování podle vlastnosti datum a čas
 Chcete-li filtrovat na základě hodnot data a času, zadejte **data a času** – klíčové slovo, za nímž následuje datum a čas – konstanta v jednoduchých uvozovkách. Konstanta data a času musí být ve formátu UTC kombinované, jak je popsáno v [formátování hodnot data a času vlastností](http://go.microsoft.com/fwlink/p/?LinkId=400449).
 
 Následující příklad vrací entity, kde je vlastnost CustomerSince rovno 10. července 2008:
 
-    CustomerSince eq datetime'2008-07-10T00:00:00Z'
+```
+CustomerSince eq datetime'2008-07-10T00:00:00Z'
+```

@@ -9,26 +9,28 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 2e5bd615e83c56a257e093c42fca2a98c5a3efd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ad49cc9efd97fbd51159a0527ee1dc7aa2e25b6
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427439"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623978"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (skript Windows PowerShellu)
 ## <a name="syntax"></a>Syntaxe
 Webový projekt se publikuje na web Azure. Skript vytvoří požadované prostředky ve vašem předplatném Azure, pokud ještě neexistují.
 
-    Publish-WebApplicationWebSite
-    –Configuration <configuration>
-    -SubscriptionName <subscriptionName>
-    -WebDeployPackage <packageName>
-    -DatabaseServerPassword @{Name = "name"; Password = "password"}
-    -SendHostMessagesToOutput
-    -Verbose
+```
+Publish-WebApplicationWebSite
+–Configuration <configuration>
+-SubscriptionName <subscriptionName>
+-WebDeployPackage <packageName>
+-DatabaseServerPassword @{Name = "name"; Password = "password"}
+-SendHostMessagesToOutput
+-Verbose
+```
 
-## <a name="configuration"></a>Konfigurace
+## <a name="configuration"></a>Konfiguraci
 Cesta ke konfiguračnímu souboru JSON popisující podrobnosti o nasazení.
 
 | Parametr | Výchozí hodnota |
@@ -93,27 +95,29 @@ Pokud je hodnota true, tisk zpráv ze skriptu do výstupního datového proudu.
 
 Konfigurační soubor JSON má podrobnosti o co se má nasadit. Obsahuje informace, které jste zadali při vytváření projektu, jako jsou název a uživatelské jméno pro web. Zahrnuje také databáze, kterou chcete zřídit, pokud existuje. Následující kód ukazuje příklad konfigurace souboru JSON:
 
-    {
-        "environmentSettings": {
-            "webSite": {
-                "name": "WebApplication10554",
+```json
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "WebApplication10554",
+            "location": "West US"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "WebApplication10554_db",
+                "serverName": "iss00brc88",
+                "user": "sqluser2",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
                 "location": "West US"
-            },
-            "databases": [
-                {
-                    "connectionStringName": "DefaultConnection",
-                    "databaseName": "WebApplication10554_db",
-                    "serverName": "iss00brc88",
-                    "user": "sqluser2",
-                    "password": "",
-                    "edition": "",
-                    "size": "",
-                    "collation": "",
-                    "location": "West US"
-                }
-            ]
-        }
+            }
+        ]
     }
+}
+```
 
 Můžete upravit konfigurační soubor JSON, chcete-li změnit, co se nasadí. Části webu je povinný, ale databáze část je nepovinná.
 

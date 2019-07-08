@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: f4cfa0abb9a6b61bdb5c27d3dd4243250162aa37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22c266516a2810191f05bb3de1d7215ea65dd040
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427653"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624105"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procházení a správa prostředků úložiště pomocí Průzkumníka serveru
 
@@ -94,7 +94,7 @@ Protože složky v kontejnerech objektů blob jsou virtuální složky, nelze vy
 
 Můžete filtrovat objekty BLOB, které jsou zobrazeny zadáním běžnou předponu.
 
-Například, pokud zadáte předponu **hello** do filtru textového pole a pak vyberte **Execute** (**!**) se zobrazí tlačítko, pouze na objekty BLOB, které začínají řetězcem "hello".
+Například, pokud zadáte předponu **hello** do filtru textového pole a pak vyberte **Execute** ( **!** ) se zobrazí tlačítko, pouze na objekty BLOB, které začínají řetězcem "hello".
 
 ![Filtrovat textové pole](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -183,7 +183,7 @@ V tabulce jsou uspořádána podle entity (viz řádky) a vlastnosti (zobrazené
 
 V Návrháři tabulek, otevřete místní nabídku pro entitu (jeden řádek) nebo vlastnosti (jedinou buňku) a pak vyberte **upravit**.
 
-    ![Add or edit a table entity](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Přidat nebo upravit entitu tabulky](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Entity v jedné tabulce nejsou musí mít stejnou sadu vlastnosti (sloupce). Mějte na paměti následující omezení pro prohlížení a úpravy dat tabulky:
 
