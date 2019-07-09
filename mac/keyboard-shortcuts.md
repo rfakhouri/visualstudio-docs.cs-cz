@@ -2,15 +2,15 @@
 title: Výchozí klávesové zkratky v sadě Visual Studio pro Mac
 description: V tomto článku jsou uvedené výchozí klávesové zkratky v sadě Visual Studio pro Mac
 ms.date: 03/14/2019
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: a19c63b2ce32095a3af4aa4586b8ab0d604a14dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09fd7ff678043e399ad37923956a61cbcf8ce80a
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982710"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691439"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Výchozí klávesové zkratky v sadě Visual Studio pro Mac
 
@@ -32,11 +32,11 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Předchozí chyba|**⌥⇧⇞**|
 |Předchozí problém v souboru|**⌥⇞**|
 
-## <a name="debug"></a>Ladit
+## <a name="debug"></a>Ladění
 
 |Příkazy|Klávesové zkratky|
 |-|-|
-|Povolit nebo zakázat zarážku|**⌥⌘/**, **⌘F9**|
+|Povolit nebo zakázat zarážku|**⌥⌘/** , **⌘F9**|
 |Pause|**⌥⌘P**, **⌥⌘L5**|
 |Odebrat všechny zarážky|**⇧⌘F9**|
 |Spustit ke kurzoru|**⌘F10**|
@@ -45,7 +45,7 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Krokovat s vnořením|**⇧⌘I**, **⌘F11**|
 |Krokovat s Vystoupením|**⇧⌘U**, **⇧⌘F11**|
 |Krok přes|**⇧⌘O**, **F10**|
-|Přepnout zarážku|**⌘\\**, **F9**|
+|Přepnout zarážku|**⌘\\** , **F9**|
 |Zobrazit zarážky|**⌥⌘B**|
 
 ## <a name="designer"></a>Návrhář
@@ -225,8 +225,8 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Zobrazit další|**⌥⌘↓**, **F8**|
 |Zobrazit předchozí|**⌥⌘↑**, **⇧F8**|
 |Dva sloupce editoru|**⌥⌘2**|
-|Přiblížit|**⌘+**, **⌘=**|
-|Horizonální oddálení|**⌘-**, **⌘_**|
+|Přiblížit|**⌘+** , **⌘=**|
+|Horizonální oddálení|**⌘-** , **⌘_**|
 
 ## <a name="window"></a>Okno
 
@@ -244,8 +244,8 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Skrýt ostatní|**⌥⌘H**|
 |Hide Visual Studio|**⌘H**|
 |Minimalizovat|**⌘M**|
-|Následující dokument|**⌘}**, **⌘F6**|
-|Předchozí dokument|**⌘{**, **⇧⌘F6**|
+|Následující dokument|**⌘}** , **⌘F6**|
+|Předchozí dokument|**⌘{** , **⇧⌘F6**|
 |Přepnout na následující dokument|**⌃⇥**|
 |Přepnout na další panel|**⌃⌥⇥**|
 |Přepnout na předchozí dokument|**⌃⇧⇥**|

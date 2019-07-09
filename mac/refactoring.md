@@ -1,17 +1,17 @@
 ---
 title: Refaktoring kódu
 description: Ladění kódu pomocí sady Visual Studio pro Mac a rychlé akce.
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937813"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691288"
 ---
 # <a name="refactoring"></a>Refaktoring
 
@@ -57,7 +57,7 @@ Ikona, která se zobrazí, když je k dispozici je rychlá akce obsahuje údaj o
 
 - Ikony žárovky šroubováky zobrazí a do levého okraje editoru při přesunutí blikající kurzor do jediného řádku kódu, pro který je k dispozici rychle reagovat.
 
-- Stisknutím klávesy **možnost (⌥)**+**Enter** kdekoli na řádek zobrazíte seznam dostupných rychlé akce a refaktoringy.
+- Stisknutím klávesy **možnost (⌥)** +**Enter** kdekoli na řádek zobrazíte seznam dostupných rychlé akce a refaktoringy.
 
 ![Zobrazit kontext položky](media/refactoring-context-action.png)
 

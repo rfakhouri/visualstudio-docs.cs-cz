@@ -1,18 +1,18 @@
 ---
 title: Úvod do Azure Functions
 description: Pomocí Azure functions v sadě Visual Studio pro Mac.
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62984947"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692828"
 ---
 # <a name="introduction-to-azure-functions"></a>Úvod do Azure Functions
 

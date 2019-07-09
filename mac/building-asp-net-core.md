@@ -1,16 +1,16 @@
 ---
 title: Aplikací ASP.NET Core v sadě Visual Studio pro Mac
 description: Tento článek popisuje, jak začít pracovat s technologií ASP.NET v sadě Visual Studio pro Mac, včetně instalace a vytvoření nového projektu.
-author: asb3993
-ms.author: amburns
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 640622a54daa6dd92a16b40741d26e5e68f937b7
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: f0a2e8433877b3eb61228a886280707f3b4a37fe
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586835"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693142"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Aplikací ASP.NET Core v sadě Visual Studio pro Mac 
 

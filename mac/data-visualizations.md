@@ -1,17 +1,17 @@
 ---
 title: Ladění - vizualizace dat
 description: Ladění je běžné a potřeby součástí programování. Visual Studio for Mac obsahuje celou sadu funkcí pro zajištění snadné ladění. Tento článek ukazuje různé datové vizualizace, které si můžou prohlédnout při kontrole objektů v ladicím programu.
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62984409"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691731"
 ---
 # <a name="data-visualizations"></a>Vizualizace dat
 

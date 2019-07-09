@@ -1,17 +1,17 @@
 ---
 title: Rozšíření sady Visual Studio pro Mac
 description: Visual Studio pro Mac funkce, je možné rozšířit pomocí modulů s názvem balíčky rozšíření. První část tohoto průvodce vytvoří jednoduchý Visual Studio for Mac rozšíření balíčku vložit datum a čas do dokumentu. Druhá část Tento průvodce představuje Principy systému rozšíření balíčku a některé základní rozhraní API, která tvoří základ sady Visual Studio pro Mac.
-author: conceptdev
-ms.author: crdun
+author: alanjclark
+ms.author: alcl
 ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 1753eef9987bc59be55298489e10c5698eb944cc
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033119"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691650"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Rozšíření sady Visual Studio pro Mac
 

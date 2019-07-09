@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: c14de7498cf893169295c08947d6687a2121bd6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 810ebfcfb4cb4354c3df4c0d9892a37ca1624256
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964863"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692085"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurace rolí cloudové služby Azure v sadě Visual Studio
 Cloudové služby Azure může mít jednu nebo více pracovních procesů nebo webové role. Pro každou roli budete muset definovat, jak nastavit tuto roli a také nakonfigurovat tak, jak tuto roli běží. Další informace o rolích v cloudových službách, podívejte se na video [Úvod do služby Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -239,21 +239,20 @@ Tato část ukazuje, jak programově přístup k místní úložiště pomocí j
 
 Následující kód ukazuje příklad toho, jak zápis do textového souboru do místního úložiště. Nahradit &lt;LocalStorageName > zástupný symbol s odpovídající hodnotou.
 
-    ```csharp
-    // Retrieve an object that points to the local storage resource
-    LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
+```csharp
+// Retrieve an object that points to the local storage resource
+LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
 
-    //Define the file name and path
-    string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
-    String filePath = Path.Combine(paths);
+//Define the file name and path
+string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
+String filePath = Path.Combine(paths);
 
-    using (FileStream writeStream = File.Create(filePath))
-    {
-        Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
-        writeStream.Write(textToWrite, 0, textToWrite.Length);
-    }
-
-    ```
+using (FileStream writeStream = File.Create(filePath))
+{
+    Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
+    writeStream.Write(textToWrite, 0, textToWrite.Length);
+}
+```
 
 ### <a name="find-a-file-written-to-local-storage"></a>Najít soubor se zapisují do místního úložiště
 

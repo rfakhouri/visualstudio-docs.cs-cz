@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: ca216f3f2a65e1c17e2ab8cc1ca17f6f707afb79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5a6dd04cd080f57d6a6ba97b3696b0351a0a8aa
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989520"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692999"
 ---
 # <a name="set-up-a-git-repository"></a>Nastavení úložiště Git
 
@@ -81,7 +81,7 @@ Pokud už máte existující projekt, který _není_ již ve správě verzí, n�
 
     ![Verze ovládacího prvku nabídka](media/version-control-git10.png)
 
-10. Jakmile začnete udělat další změny, vyberte **dodejte změny** vložíte změny do **vzdálené** úložiště. To vám umožní odpovídající uživatelům zobrazit na webu github.com:
+10. Jakmile začnete udělat další změny, vyberte **dodejte změny** vložíte změny do **vzdálené** úložiště. To vám umožní odpovídající uživatelům zobrazit na webu github.com:
 
     ![Dodejte změny do vzdáleného úložiště](media/version-control-git11.png)
 

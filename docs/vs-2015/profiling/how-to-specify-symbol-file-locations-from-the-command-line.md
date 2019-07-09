@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5ff4290d0cffa99a9f476c543626c5aa15be87a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e08a2f8fc93f91cafe40d2dc5e9bdb8b49770b3b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436914"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692844"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Postupy: Zadejte umístění souborů se symboly z příkazového řádku
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Postupy: Zadání umístění souborů se symboly z příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbolu, jako jsou názvy funkcí a čísla řádků, vyžaduje přístup k soubory symbolů (PDB) PROFILOVANÉHO komponent a souborů systému Windows. Soubory symbolů se vytvoří při kompilaci komponentu. Další informace najdete v tématu [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport automaticky vyhledá soubory symbolů v následujících umístěních:  
@@ -48,7 +48,7 @@ Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbo
   
 2. Použijte následující syntax k nastavení **_NT_SYMBOL_PATH** proměnné prostředí nebo možnost VSPerfReport/symbolpath:  
   
-    **srv\\** * *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **srv\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     kde *LocalStore* je cesta k místnímu adresáři, který jste vytvořili.  
   

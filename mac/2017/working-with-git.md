@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: ba98312617aaf636ee388ec97f47c14ede75507d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d18ef3d693c3906c1312cfecb8da605c6a27226
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986613"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692970"
 ---
 # <a name="working-with-git"></a>Práce s úložištěm Git
 
@@ -59,7 +59,7 @@ Tyto rutiny umožňují následující akce:
 
 ## <a name="switching-branches"></a>Přepínání větví
 
-Ve výchozím nastavení, se nazývá první větev vytvořená v úložišti **hlavní** větve. Není technicky nic jiného mezi hlavní větve a jakékoli jiné, ale hlavní větev je ten, který je nejčastěji považovat za v vývojové týmy "live" nebo "produkční" větve.
+Ve výchozím nastavení, se nazývá první větev vytvořená v úložišti **hlavní** větve. Není technicky nic jiného mezi hlavní větve a jakékoli jiné, ale hlavní větev je ten, který je nejčastěji považovat za v vývojové týmy "live" nebo "produkční" větve.
 
 Nezávislé řádku vývoje mohou vytvořit větvení Master (nebo jakékoli větve, k tomuto účelu). To poskytuje novou verzi hlavní větve v bodě v čase, umožňující vývoj bez ohledu na jejich, co je "live". Použití větví tímto způsobem se často používá pro funkce ve vývoji softwaru
 

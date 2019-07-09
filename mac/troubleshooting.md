@@ -2,16 +2,16 @@
 title: Řešení potíží
 description: Běžné problémy a řešení pro Visual Studio pro Mac.
 ms.topic: troubleshooting
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 06/18/2019
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0f10e1f70349126ab48c41efc40f982212836f1
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971481"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691889"
 ---
 # <a name="troubleshooting"></a>Poradce při potížích
 

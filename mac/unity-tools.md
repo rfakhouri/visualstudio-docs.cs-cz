@@ -3,14 +3,14 @@ title: Visual Studio for Mac Tools for Unity
 description: Představení Visual Studio Tools for Unity rozšíření
 author: therealjohn
 ms.author: johmil
-ms.date: 05/25/2018
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: f275288ea54b4b24996825aeb14c7a55ee3a3018
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98a34df9960ca95edbaf6b9c5ae91d7cd4e06568
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971382"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691858"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 
@@ -19,6 +19,9 @@ ms.locfileid: "62971382"
 Visual Studio for Mac Tools for Unity je bezplatné rozšíření sady Visual Studio, které promění sadu Visual Studio for Mac ve výkonný nástroj pro vývoj her a aplikací pro různé platformy pomocí platformy Unity.
 
 Integrace Unity spadá mimo pole v sadě Visual Studio pro Mac a Visual Studio pro Mac od Unity 2018.1, je výchozí C# integrované vývojové prostředí pro projekty Unity.
+
+> [!NOTE]
+> Tyto informace jsou pro Visual Studio pro Mac integrovaného vývojového prostředí. Visual Studio Code najdete v části [Tato příručka](https://code.visualstudio.com/docs/other/unity) Další informace.
 
 ## <a name="overview"></a>Přehled
 

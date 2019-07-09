@@ -1,17 +1,17 @@
 ---
 title: Updating Visual Studio for Mac
 description: Pokyny k aktualizaci sady Visual Studio pro Mac a přístup k preview verze.
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 8cadbeba73afadbffb32aeaca04ad3de4df8733b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7aef66e53fee6578707afa60b6ebcf2b7892207b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827501"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691840"
 ---
 # <a name="update-visual-studio-for-mac"></a>Update Visual Studio for Mac
 

@@ -1,18 +1,18 @@
 ---
 title: Razor
 description: Informace o podpoře razor na aplikace v asp.net core v sadě Visual Studio pro Mac
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 181059ae2985f570ad1dc0749045e39ed4ec1e7e
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 9e5a3f61ee7065a0615a381bdcc03dafc3566893
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624520"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691260"
 ---
 # <a name="razor"></a>Razor
 
@@ -51,8 +51,8 @@ Razor webové aplikace se skládá z následujících součástí:
 ### <a name="pages-folder"></a>Složka stránek
 
 Složka stránek v rámci projektu je, kde lze nalézt webové stránky, spolu s kódu pro každé:
-*    A * *.cshtml* soubor pro kód HTML a syntaxe Razor.
-*    A * *. cshtml.cs* soubor pro vaše C# kódu pro zpracování událostí stránky.
+* A * *.cshtml* soubor pro kód HTML a syntaxe Razor.
+* A * *. cshtml.cs* soubor pro vaše C# kódu pro zpracování událostí stránky.
 
 Podpůrné soubory mají názvy, které začínají znakem podtržítka. Například soubor _Layout.cshtml nastaví prvky uživatelského rozhraní, které jsou společné pro všechny stránky. Tento soubor nastaví navigační nabídce v horní části stránky a o autorských právech v dolní části stránky. Další informace najdete v tématu [rozložení v ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/layout).
 

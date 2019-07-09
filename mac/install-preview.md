@@ -1,18 +1,18 @@
 ---
 title: Nainstalujte ve verzi preview nebo aktualizace pro sadu Visual Studio pro Mac
 description: Pokyny k aktualizaci sady Visual Studio pro Mac a přístup k preview verzí, včetně Visual Studio 2019 pro Mac verze Preview.
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: fbd6f51ee2a4db7407bb96dff82e31d6dca7389d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73852795a693d3003912332d946a4d850e39a018
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982855"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691449"
 ---
 # <a name="install-a-preview-or-update-for-visual-studio-for-mac"></a>Nainstalujte ve verzi preview nebo aktualizace pro sadu Visual Studio pro Mac
 

@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af3f393aea8d1ecddaf021c896839d663b7d4028
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860387"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692116"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Ladění živé aplikace ASP.NET Azure pomocí ladicího programu snímků
 
@@ -65,17 +65,17 @@ V tomto kurzu se naučíte:
 ::: moniker range=">=vs-2019"
 2. Zvolte **ladit > připojit Snapshot Debugger...** . Vyberte váš projekt je nasazen na službě Azure App Service a účet úložiště Azure a pak klikněte na tlačítko **připojit**.
 
-      ![Spuštění ladicího programu snímků z nabídky ladění](../debugger/media/snapshot-debug-menu-attach.png)
+   ![Spuštění ladicího programu snímků z nabídky ladění](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![Vyberte prostředek Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
+   ![Vyberte prostředek Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
 
 ::: moniker-end
 
-  > [!IMPORTANT]
-  > Při prvním vyberete **připojit Snapshot Debugger**, budete vyzváni k instalaci rozšíření webu pro Snapshot Debugger ve službě Azure App Service. Tato instalace vyžaduje restartování služby Azure App Service.
+   > [!IMPORTANT]
+   > Při prvním vyberete **připojit Snapshot Debugger**, budete vyzváni k instalaci rozšíření webu pro Snapshot Debugger ve službě Azure App Service. Tato instalace vyžaduje restartování služby Azure App Service.
 
-  > [!NOTE]
-  > Rozšíření webu Application Insights podporuje také ladění snímků. Pokud narazíte na chybovou zprávu "aktuální rozšíření webu", přečtěte si téma [řešení potíží, tipy a známé problémy pro ladění snímků](../debugger/debug-live-azure-apps-troubleshooting.md) pro upgrade podrobnosti.
+   > [!NOTE]
+   > Rozšíření webu Application Insights podporuje také ladění snímků. Pokud narazíte na chybovou zprávu "aktuální rozšíření webu", přečtěte si téma [řešení potíží, tipy a známé problémy pro ladění snímků](../debugger/debug-live-azure-apps-troubleshooting.md) pro upgrade podrobnosti.
 
    Visual Studio je nyní v režimu ladění snímků.
    ![Režim ladění snímků](../debugger/media/snapshot-message.png)

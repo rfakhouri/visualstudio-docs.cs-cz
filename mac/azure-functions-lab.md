@@ -1,18 +1,18 @@
 ---
 title: 'Kurz: Azure Functions'
 description: Pomocí Azure functions v sadě Visual Studio pro Mac.
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aebee9f649f183995f209568d78ef08fbde1ef1a
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986503"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692887"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Kurz: Začínáme se službou Azure Functions
 
@@ -243,7 +243,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
     }
     ```
 
-1. Také aktualizovat **entryPoint** vlastnost v dolní části souboru, který chcete použít metodu s názvem **"Add2"**, tak jak je znázorněno níže. Toto je pro ilustraci, že cesta **rozhraní api/přidávání...**  namapovat na odpovídající metodu s názvem (**Add2** tady).
+1. Také aktualizovat **entryPoint** vlastnost v dolní části souboru, který chcete použít metodu s názvem **"Add2"** , tak jak je znázorněno níže. Toto je pro ilustraci, že cesta **rozhraní api/přidávání...**  namapovat na odpovídající metodu s názvem (**Add2** tady).
 
     ```json
     "entryPoint": "<project-name>.<function-class-name>.Add2"
@@ -299,7 +299,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 
     ![Adresa URL pro funkce protokolu Http](media/azure-functions-lab-image31.png)
 
-1. Vrátí okno prohlížeče a přejděte do **http://localhost:7071/api/Adder/3/5**.
+1. Vrátí okno prohlížeče a přejděte do **http://localhost:7071/api/Adder/3/5** .
 
 1. Znovu, tentokrát metoda funguje, aktivní parametry z cesty a vytváření součet.
 
@@ -348,7 +348,7 @@ Služby, které vytváříte často, může být mnohem složitější než co j
 
 1. Stisknutím klávesy **F5** sestavte a spusťte projekt.
 
-1. Na záložce prohlížeče, přejděte na **http://localhost:7071/api/Process/4/6**. To další zprávu zařadí do fronty, který by nakonec vést další řádek přidán do tabulky.
+1. Na záložce prohlížeče, přejděte na **http://localhost:7071/api/Process/4/6** . To další zprávu zařadí do fronty, který by nakonec vést další řádek přidán do tabulky.
 
 1. Vraťte se na **terminálu** a podívejte se na příchozí žádosti pro **4 + 6**.
 
@@ -381,11 +381,11 @@ Služby, které vytváříte často, může být mnohem složitější než co j
 
 1. Stisknutím klávesy **F5** sestavte a spusťte projekt.
 
-1. Na záložce prohlížeče, aktualizujte adresu URL na **http://localhost:7071/api/Process/4/6**. Vzhledem k tomu, že řádek tabulky pro tento záznam neexistuje, měla by vrátit okamžitě a bez chyb. Protože neexistuje žádný výstup protokolu HTTP, zobrazí se výstup, v terminálu.
+1. Na záložce prohlížeče, aktualizujte adresu URL na **http://localhost:7071/api/Process/4/6** . Vzhledem k tomu, že řádek tabulky pro tento záznam neexistuje, měla by vrátit okamžitě a bez chyb. Protože neexistuje žádný výstup protokolu HTTP, zobrazí se výstup, v terminálu.
 
     ![Existuje terminálu výstup už zobrazuje řádek tabulky](media/azure-functions-lab-image33.png)
 
-1. Aktualizace adresy URL tak, aby odrážely kombinaci není dosud neotestovali, jako například **http://localhost:7071/api/Process/5/7**. Všimněte si zpráv, v terminálu, což znamená, že řádek tabulky nebyl nalezen (podle očekávání).
+1. Aktualizace adresy URL tak, aby odrážely kombinaci není dosud neotestovali, jako například **http://localhost:7071/api/Process/5/7** . Všimněte si zpráv, v terminálu, což znamená, že řádek tabulky nebyl nalezen (podle očekávání).
 
     ![Terminálu výstup zobrazuje nový proces](media/azure-functions-lab-image34.png)
 

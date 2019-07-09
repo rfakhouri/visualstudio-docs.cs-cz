@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9e4699a1d4e2826cad205ce89ab46812cd5c4b2d
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697598"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692804"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Zahrnutí balíčku NuGet do projektu
 
@@ -43,7 +43,7 @@ Po otevření okna načte seznam balíčků z výchozí zdroj balíčku: nuget.o
 
 ![Seznam balíčků NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Pomocí vyhledávacího pole v pravém horním rohu k vyhledání konkrétního balíčku, například `azure`. Pokud nenajdete balíček, který chcete použít, vyberte ho a klikněte **přidat balíček** tlačítko a spusťte instalaci.
+Pomocí vyhledávacího pole v pravém horním rohu k vyhledání konkrétního balíčku, například `azure`. Pokud nenajdete balíček, který chcete použít, vyberte ho a klikněte **přidat balíček** tlačítko a spusťte instalaci.
 
 [Přidejte balíček NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
 
@@ -57,7 +57,7 @@ Po stažení balíčku, přidá se do projektu. Řešení se změní takto:
 
 Jakmile se přidal balíček NuGet a aktualizovat odkazy projektu, můžete programovat proti rozhraní API, jako by se všechny odkazy projektu.
 
-Ujistěte se, že přidáte všechny požadované `using` příkazů horní části souboru:
+Ujistěte se, že přidáte všechny požadované `using` příkazů horní části souboru:
 
 ```csharp
 using Newtonsoft.Json;

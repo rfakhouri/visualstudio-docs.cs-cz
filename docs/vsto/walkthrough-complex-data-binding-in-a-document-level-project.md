@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981673"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692345"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Návod: Rozšířené datové vazby v projektech na úrovni dokumentu
   Tento návod ukazuje základní informace o rozšířené datové vazby v projektech na úrovni dokumentu. Více buněk v listu aplikace Microsoft Office Excel můžete vázat na pole v databázi Northwind SQL serveru.
@@ -174,7 +174,7 @@ ms.locfileid: "62981673"
 
 1. Zvolte buňky uvnitř seznamu objektů.
 
-    Zobrazí se nový řádek v dolní části seznamu s hvězdičkou (**\\***) do první buňky nový řádek.
+    Zobrazí se nový řádek v dolní části seznamu s hvězdičkou ( **\*** ) do první buňky nový řádek.
 
 2. V prázdném řádku, přidejte následující informace.
 

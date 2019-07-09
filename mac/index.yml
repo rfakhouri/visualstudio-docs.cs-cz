@@ -3,8 +3,8 @@ documentType: LandingData
 title: 2019 Visual Studio pro Mac dokumentace
 metadata:
   description: Tento článek obsahuje představení funkcí sady Visual Studio pro Mac.
-  author: conceptdev
-  ms.author: crdun
+  author: asb3993
+  ms.author: amburns
   ms.date: 04/02/2019
   ms.topic: landing-page
   ms.prod: visual-studio-mac
@@ -102,7 +102,7 @@ sections:
             html: <p>Spusťte aplikaci v ladicím programu k prozkoumání problémů.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: Ladit
+            title: Ladění
           - href: ~/version-control.md
             html: '<p>Přístup k Azure DevOps, Git nebo Subversion zdrojového úložiště.</p>'
             image:

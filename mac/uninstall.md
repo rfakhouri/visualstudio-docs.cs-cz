@@ -1,17 +1,17 @@
 ---
 title: Uninstall Visual Studio for Mac
 description: Pokyny k odinstalaci sady Visual Studio pro Mac a související nástroje.
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2093d6d0f6d123bf6d904b225c17714a98c5ee9a
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 65f5dedce42d6f2391c23bc82e37a5228bfe7242
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835897"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691909"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalace sady Visual Studio pro Mac
 

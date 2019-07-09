@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b4748cd71416ce4d3e9cce64826f1ec97ceef85
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994522"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692985"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozšíření vašeho DSL pomocí MEF
 
@@ -129,7 +129,7 @@ Pokud máte přístup k DSL povolené MEF vytvořené sobě nebo někomu jinému
 
    - Toto sestavení obsahuje obvykle název, který končí na ". DSL.dll".
 
-   - Pokud máte přístup k projektu DSL, můžete najít soubor sestavení v adresáři **Dsl\bin\\\\** *
+   - Pokud máte přístup k projektu DSL, můžete najít soubor sestavení v adresáři **Dsl\\bin\\\***
 
    - Pokud máte přístup k souboru DSL VSIX, můžete najít sestavení tak, že změníte příponu názvu souboru VSIX na ".zip". Soubor .zip dekomprimujte.
 
@@ -157,7 +157,7 @@ Pokud máte přístup k DSL povolené MEF vytvořené sobě nebo někomu jinému
 
    1. V **source.extension.vsixmanifest**, klikněte na tlačítko **přidat odkaz**
 
-   2. V dialogovém okně klikněte na tlačítko **přidat datové části** a vyhledejte soubor VSIX DSL. Soubor VSIX je součástí řešení DSL v ** DslPackage\bin\\\\***.
+   2. V dialogovém okně klikněte na tlačítko **přidat datové části** a vyhledejte soubor VSIX DSL. Soubor VSIX je součástí řešení DSL v **DslPackage\\bin\\\*** .
 
        To umožňuje uživatelům s instalací DSL a rozšíření ve stejnou dobu. Pokud uživatel již nainstaloval DSL, nainstaluje se pouze rozšíření.
 

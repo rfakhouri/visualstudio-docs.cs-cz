@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2def790511a69dc7b5cab8a5020f488e58b85db9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986872"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693002"
 ---
 # <a name="code-snippets"></a>Fragmenty kódu
 
-Fragmenty kódu, často označuje jako kód _kód šablony_, jsou užitečné pro efektivní programování, protože umožňují vkládání a úpravy předpřipravené bloky kódu. Používání fragmentů kódu může být vhodné pro rychlé přidání běžných vzorů nebo dokonce pro výuku nová schémata Pokud jako vývojář si nejste jisti syntaxe. Nejsou k dispozici pro šablony C#, F#, HTML, XML, Python a syntaxe Razor.
+Fragmenty kódu, často označuje jako kód _kód šablony_, jsou užitečné pro efektivní programování, protože umožňují vkládání a úpravy předpřipravené bloky kódu. Používání fragmentů kódu může být vhodné pro rychlé přidání běžných vzorů nebo dokonce pro výuku nová schémata Pokud jako vývojář si nejste jisti syntaxe. Nejsou k dispozici pro šablony C#, F#, HTML, XML, Python a syntaxe Razor.
 
 Tato část vysvětluje, jak vytvářet, vkládat a používání fragmentů kódu.
 
@@ -30,7 +30,7 @@ Existují některé jiné způsoby, jak přidat fragmenty kódu, z nichž někte
 
   [![Fragmenty kódu v sadě nástrojů](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Vložit šablony příkaz** &ndash; aktuálně nejsou k dispozici žádné výchozí klíč vazby sady pro vkládání šablony. Chcete-li jeden vytvořit, přejděte na **sady Visual Studio > Předvolby > vazeb klíče** a vyhledejte `template`. To umožňuje přidání požadovaného vazbu klíče do pole Upravit vazby, pak klikněte na tlačítko **použít**:
+- **Vložit šablony příkaz** &ndash; aktuálně nejsou k dispozici žádné výchozí klíč vazby sady pro vkládání šablony. Chcete-li jeden vytvořit, přejděte na **sady Visual Studio > Předvolby > vazeb klíče** a vyhledejte `template`. To umožňuje přidání požadovaného vazbu klíče do pole Upravit vazby, pak klikněte na tlačítko **použít**:
 
   ![Příkaz vložené šablony](media/source-editor-image15.png)
 
