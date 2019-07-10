@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech služeb Office 365 součástí některá předplatná sady Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 33e70c6208505df175161b248a60e0527f7b2a6b
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 1ef768ea09e156f2fb60d2125303fd85f208adac
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032823"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784525"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus v předplatných sady Visual Studio
 

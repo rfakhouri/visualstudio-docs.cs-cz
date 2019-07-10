@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 09/19/2018
 ms.topic: conceptual
 description: Zjistěte, jak můžete Azure DevOps jako předplatitel sady Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: ece1a09f900cad499082d3bf41a7d9f0a97a09ac
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 766bb49678080a926553f4aa42af72f15fd30f98
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586914"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784690"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps výhody pro předplatitele sady Visual Studio
 

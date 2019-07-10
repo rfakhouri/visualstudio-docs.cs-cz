@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: Zjistěte, jak nastavit účet Azure s průběžnými platbami.
-searchscope: VS Subscription
-ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa5cd98b1526f654a4bb2803e5b22dde72cb8fda
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948229"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784675"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Nastavení předplatného služby Azure pro vývoj/testování s průběžnými platbami
 Spolupracujte se svým týmem v cloudu.  Vytvořte více předplatných pro vývoj / testování s průběžnými moct pracovat společně s dalšími předplatiteli a současně zajistí izolaci mezi týmy a prostředím.  Získají exkluzivní zlevněné hodinové sazby pro vývoj a testování a práva na používání cloudu pro svého předplaceného softwaru v Azure.

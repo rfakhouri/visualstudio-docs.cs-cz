@@ -1,17 +1,20 @@
 ---
 title: Migrace rozšiřitelnost návrháře XAML
-ms.date: 04/17/2019
+ms.date: 07/09/2019
 ms.topic: conceptual
 author: lutzroeder
 ms.author: lutzr
 manager: jillfra
+dev_langs:
+- csharp
+- vb
 monikerRange: vs-2019
-ms.openlocfilehash: f83c40a67dc36301816b2384242d790a9f776044
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447337"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784472"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Migrace rozšiřitelnost návrháře XAML
 
@@ -44,7 +47,7 @@ Když jsou kompilovány knihoven třetích stran ovládacího prvku pro skutečn
 
 Model rozšiřitelnosti surface izolace neumožňuje rozšíření záviset na knihovnách skutečný ovládací prvek, a proto rozšíření nemohou odkazovat na typy z knihovny ovládacích prvků. Například *MyLibrary.designtools.dll* by neměl být závislý na *MyLibrary.dll*.
 
-Při registraci metadat pro typy prostřednictvím atributu tabulky byly nejběžnější těchto závislostí. Typy kódu rozšíření, která odkazuje na knihovny ovládacích prvků přímo prostřednictvím [typeof](/dotnet/csharp/language-reference/keywords/typeof) pomocí typu založeného na řetězec názvů nahrazeny v nových rozhraní API:
+Při registraci metadat pro typy prostřednictvím atributu tabulky byly nejběžnější těchto závislostí. Typy kódu rozšíření, která odkazuje na knihovny ovládacích prvků přímo prostřednictvím [typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) v jazyce Visual Basic) je nahrazena v nových rozhraní API s použitím názvů typů založené na řetězci:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -68,6 +71,27 @@ public class AttributeTableProvider : IProvideAttributeTable
 }
 ```
 
+```vb
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Metadata
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Features
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Model
+
+<Assembly: ProvideMetadata(GetType(AttributeTableProvider))>
+
+Public Class AttributeTableProvider
+    Implements IProvideAttributeTable
+
+    Public ReadOnly Property AttributeTable As AttributeTable Implements IProvideAttributeTable.AttributeTable
+        Get
+            Dim builder As New AttributeTableBuilder
+            builder.AddCustomAttributes("MyLibrary.MyControl", New DescriptionAttribute(Strings.MyControlDescription))
+            builder.AddCustomAttributes("MyLibrary.MyControl", New FeatureAttribute(GetType(MyControlDefaultInitializer)))
+            Return builder.CreateTable()
+        End Get
+    End Property
+End Class
+```
+
 ## <a name="feature-providers-and-model-api"></a>Poskytovatelé funkce a rozhraní API pro Model
 
 Poskytovatelé funkce jsou implementované v sestavení rozšíření a načten v procesu sady Visual Studio. `FeatureAttribute` budou dál odkazovat funkce poskytovatele typů přímo pomocí [typeof](/dotnet/csharp/language-reference/keywords/typeof).
@@ -84,6 +108,16 @@ TypeDefinition buttonType = ModelFactory.ResolveType(
 if (type != null && buttonType != type.IsSubclassOf(buttonType))
 {
 }
+```
+
+```vb
+Dim type As TypeDefinition = ModelFactory.ResolveType(
+    item.Context, New TypeIdentifier("MyLibrary.MyControl"))
+Dim buttonType As TypeDefinition = ModelFactory.ResolveType(
+    item.Context, New TypeIdentifier("System.Windows.Controls.Button"))
+If type?.IsSubclassOf(buttonType) Then
+
+End If
 ```
 
 Rozhraní API odebráno ze sady možností izolace rozšiřitelnost rozhraní API:
@@ -123,7 +157,7 @@ Rozhraní API, která pomocí `TypeDefinition` místo <xref:System.Type>:
 * `ModelService.Find(ModelItem startingItem, Predicate<Type> match)`
 * `ModelItem.ItemType`
 * `ModelProperty.AttachedOwnerType`
-* `ModelProperty.PropertyType
+* `ModelProperty.PropertyType`
 * `FeatureManager.CreateFeatureProviders(Type featureProviderType, Type type)`
 * `FeatureManager.CreateFeatureProviders(Type featureProviderType, Type type, Predicate<Type> match)`
 * `FeatureManager.InitializeFeatures(Type type)`
@@ -140,7 +174,7 @@ Rozhraní API, která pomocí `ModelItem` místo <xref:System.Object>:
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-Primitivní typy, jako jsou známé `int`, `string`, nebo `Thickness` lze předat do rozhraní API modelu jako instance rozhraní .NET Framework a se převedou na odpovídající objekt v cílovém procesu modulu runtime. Příklad:
+Primitivní typy, jako jsou známé `Int32`, `String`, nebo `Thickness` lze předat do rozhraní API modelu jako instance rozhraní .NET Framework a se převedou na odpovídající objekt v cílovém procesu modulu runtime. Příklad:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -154,6 +188,20 @@ public class MyControlDefaultInitializer : DefaultInitializer
     base.InitializeDefaults(item);
   }
 }
+```
+
+```vb
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Features
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Model
+
+Public Class MyControlDefaultInitializer
+    Inherits DefaultInitializer
+
+    Public Overrides Sub InitializeDefaults(item As ModelItem)
+        item.Properties!Width.SetValue(800.0)
+        MyBase.InitializeDefaults(item)
+    End Sub
+End Class
 ```
 
 ## <a name="limited-support-for-designdll-extensions"></a>Omezená podpora. design.dll rozšíření

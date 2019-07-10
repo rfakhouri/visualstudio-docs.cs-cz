@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o účtu pro vývojáře Windows, součástí vašeho předplatného sady Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: aacd9dab6353d3cfde727717c67c400f6e17514f
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 2a70cba2fa8feaaa256f76bd77a29535ca1940ea
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032735"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784464"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Účet pro vývojáře Windows v předplatných sady Visual Studio
 

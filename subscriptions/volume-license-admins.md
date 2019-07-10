@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/14/2018
 ms.topic: conceptual
 description: Zjistěte, jak můžou správci předplatného přístup k portálu pro správu a spravovat odběry, které získali prostřednictvím webu Volume Licensing (VL)
-searchscope: VS Subscription
-ms.openlocfilehash: 6c8a68a1a25e99018e7f41fedbfc9d01b191e2e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 765f33b59c89dbc99772c5ccd8df43a9fcbd0b0f
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428037"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784742"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Přístup na portál a řízení správců – pro předplatná získaných prostřednictvím webu Volume Licensing (VL)
 

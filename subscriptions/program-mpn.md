@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Podrobnosti o jaká předplatná jsou k dispozici, platí pravidla a kolik předplatných v programu MPN nabízíme.
-searchscope: VS Subscription
-ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 5b31cc6ef83583074920e5544b0551aa14edf1d5
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805296"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784997"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Předplatná sady Visual Studio nabízí pro partnery v Microsoft Partner Network (MPN)
 Partneři, kteří získejte kompetenci nebo kteří zakoupili Action Pack v programu MPN mají nárok na použití předplatná sady Visual Studio. Tato předplatná jsou licencovaný podle počtu uživatelů a platí pouze v případě přiřazenou na konkrétní uživatele, který se dá použít pro partnerské firmě s názvem.
@@ -47,7 +46,7 @@ Bez ohledu na to, kolik činnost nepřesahuje partnera počet předplatných sad
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Předplatná pro partnery zakoupení Action Pack
 Partneři s kompetencí nejsou nárok na zakoupení Action Pack. Pouze jeden Action Pack si můžete koupit na partnera.
 
-Pomocí Action Pack partnera nepřesahuje **3 předplatných Visual Studio Professional (MPN)**. Visual Studio Professional (MPN) je vlastní nabídka bez ekvivalentu komerčně dostupná na trhu. Zde je, co je součástí:
+Pomocí Action Pack partnera nepřesahuje **3 předplatných Visual Studio Professional (MPN)** . Visual Studio Professional (MPN) je vlastní nabídka bez ekvivalentu komerčně dostupná na trhu. Zde je, co je součástí:
 - Visual Studio Professional – pouze nejnovější verze
 - Windows Enterprise – pouze nejnovější verze, pro účely vývoje a testování pouze
 - Windows Server – pouze nejnovější verze, pro účely vývoje a testování pouze

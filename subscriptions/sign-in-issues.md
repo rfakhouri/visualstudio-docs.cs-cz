@@ -6,13 +6,12 @@ manager: lank
 ms.date: 11/07/2018
 ms.topic: conceptual
 description: Další informace o problémech, které mohou vzniknout při přihlašování k předplatná sady Visual Studio
-searchscope: VS Subscription
-ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0687d08503389826b4c23b6add2a56f68e6a483
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008044"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784941"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Potíže s přihlášením k předplatným sady Visual Studio
 Na používání vašeho předplatného sady Visual Studio, musíte nejdřív přihlásit.  V závislosti na vaše předplatné může nastavíte ho s účtem Microsoft (MSA) nebo identita Azure Active Directory (AAD).  Tento článek popisuje některé problémy, které můžete narazit při přihlašování k vašemu předplatnému.

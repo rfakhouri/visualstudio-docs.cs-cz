@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/23/2018
 ms.topic: conceptual
 description: Předplatná sady Visual Studio – proč vidím Hotmailu nebo Gmailu adresy pro moje předplatitele?
-searchscope: VS Subscription
-ms.openlocfilehash: 0ba4029fcec0c8d35a58def14ab38afbb79e2fee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f546151beba8ac360c0ad7db3154ea836942798
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539453"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784455"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Předplatná sady Visual Studio – proč vidím Hotmailu nebo Gmailu adresy pro moje předplatitele?
 

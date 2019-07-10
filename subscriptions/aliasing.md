@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/02/2018
 ms.topic: conceptual
 description: Přihlášení může selhat, pokud se používají aliasy nebo popisné názvy
-searchscope: VS Subscription
-ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7285c1ede495a1aa2603216f2a9e9fe9f89331ea
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946165"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783679"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Přihlášení k předplatná sady Visual Studio může selhat, pokud aliasy using
 
@@ -110,7 +109,7 @@ Prosím využít pokynů v tématu [přiřazení předplatitele adresář účtu
 
 Po přiřazení předplatného je k odběrateli, dostanou e-mail s požadavkem na web [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) výhod svých předplatitelských výhod.  Při pokusu o přihlášení, přihlášení předplatné sady Visual Studio dojde k selhání s chyba oznamující, že účet nebyl rozpoznán.  Před přihlášením na stránce [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) prostředí, požádejte vašeho odběratele postupujte podle následujících pokynů.  Pokud nezbytné, může být využit [šablony](#notifying-your-subscribers-using-personal-accounts) oznámit vaše odběratele po přiřazení předplatného.
 
-1. Přejděte do https://my.visualstudio.coma klikněte na tlačítko **vytvořit nový účet Microsoft**.
+1. Přejděte do https://my.visualstudio.com a klikněte na tlačítko **vytvořit nový účet Microsoft**.
 
 2. Vyplňte pole:
    - Zadejte e-mailovou adresu, který obdržel Uvítacího e-mailu v Someone@example.com pole

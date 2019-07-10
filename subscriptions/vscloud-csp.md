@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/15/2018
 ms.topic: conceptual
 description: Informace pro poskytovatele Cloud Solution Provider, jak zakoupit a spravovat předplatné cloudu Visual Studio pro vaše zákazníky.
-searchscope: VS Subscription
-ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eed13a25c76cdacdd86923a1d4519d29374d25e
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978507"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784902"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Nákup a správa cloudových předplatných sady Visual Studio pro vaše zákazníky
 
@@ -78,10 +77,10 @@ Chcete-li zobrazit ceny sady Visual Studio pro partnery CSP, přihlaste se [part
 
 Tady je postup pro interpretaci, co vidíte na tuto tabulku:
 
-| Kategorie měřiče    |   Název                 |  Jednotky                                |           Toto je                          |
+| Kategorie měřiče    |   Name                 |  Jednotky                                |           Toto je                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Visual Studio     | Enterprise             |  Předplatné                         | Měsíční předplatné sady Visual Studio Enterprise   |
-| Visual Studio     | Professional           |  Předplatné                         | Měsíční předplatné sady Visual Studio Professional |
+| Visual Studio     | Enterprise             |  Subscription                         | Měsíční předplatné sady Visual Studio Enterprise   |
+| Visual Studio     | Professional           |  Subscription                         | Měsíční předplatné sady Visual Studio Professional |
 
 Nabízíme 5 % slevu na jednotce 6, které můžete (pro daného zákazníka) každý měsíc koupit každého předplatného sady Visual Studio. To je důvod, proč se zobrazí dva řádky u každého odběru. Jeden řádek ukazuje "Minimální hodnotu" 0, což by měl interpretovat jako základní ceny pro jednotky 1 až 5. Druhý řádek ukazuje "Minimální hodnotu" 5, tohle je 5 % slevu za cenu, která se vztahuje na jednotky 6 a vyšší.
 

@@ -3,17 +3,16 @@ title: Co je nového v předplatných sady Visual Studio
 description: Další informace o nových a aktualizovaných funkcích, které můžete použít ke správě předplatných sady Visual Studio.
 ms.custom: ''
 ms.date: 06/27/2019
-searchscope: VS Subscription
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 85c327a2690096aa0786b4851348657d2295a223
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465112"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784897"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s novou v předplatných sady Visual Studio
 
@@ -34,7 +33,7 @@ Další informace najdete našem [maximální využití](maximum-usage.md) člá
 ## <a name="2019-q2-april-june"></a>2\. čtvrtletí 2019 (duben–červen)
 
 ### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Visual Studio s předplatnými Githubu Enterprise
-Na konferenci //build v květnu společnost Microsoft oznámila, že zákazníci se smlouvou Enterprise si teď můžou koupit předplatná sady Visual Studio, které zahrnují Githubu Enterprise.  Je snadný způsob, jak získat Visual Studio subscriptoins a Githubu Enterprise pro jednu nižší cenu.  
+Na konferenci //build v květnu společnost Microsoft oznámila, že zákazníci se smlouvou Enterprise si teď můžou koupit předplatná sady Visual Studio, které zahrnují Githubu Enterprise.  Je snadný způsob, jak získat předplatná sady Visual Studio a Githubu Enterprise pro jednu nižší cenu.  
 
 GitHub Enterprise je k dispozici s předplatnými sady Visual Studio Enterprise a Visual Studio Professional získali prostřednictvím smlouvy Enterprise. Je také "stupňované" nabídka, která slouží k přidání Githubu Enterprise i v případě vaší smlouvy Enterprise není kvůli obnovení.
 

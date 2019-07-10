@@ -6,13 +6,12 @@ manager: lank
 ms.date: 04/23/2019
 ms.topic: conceptual
 description: Správa předplatných sady Visual Studio a sadu GitHub
-searchscope: VS Subscription
-ms.openlocfilehash: adc06dd13579697d6aa74158f980cd873ea661fe
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 875f91f19aee33d290933e6a5455a4dead78d6f0
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586860"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783637"
 ---
 # <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>Správa předplatných sady Visual Studio pomocí GitHub Enterprise
 
