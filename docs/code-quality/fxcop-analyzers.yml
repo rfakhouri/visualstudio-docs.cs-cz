@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Migrace z FxCop pro analýzu kódu na analyzátory platformě kompilátoru .NET
+title: Migrace z binární analýzy (FxCop) do zdrojová analýza (analyzátory FxCop)
 metadata:
   title: Dokumentace k migraci FxCop
-  description: Další informace o migraci ze starších verzí FxCop na analyzátory pro analýzu kódu.
-  ms.date: 07/18/2018
+  description: 'Zjistěte, jak přejít od starších verzí binární analýzy (FxCop) do zdrojového kódu analysis (analyzátory FxCop) při analýze kódu.'
+  ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -14,7 +14,7 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: 'Zjistěte, jak analyzovat kód poprvé nebo o migraci na nový způsob analýzy spravovaného kódu pomocí analyzátorů od FxCop.'
+  description: 'Zjistěte, jak analyzovat kód poprvé nebo o migraci na nový způsob analýzy spravovaného kódu pomocí zdrojová analýza (analyzátory FxCop) z binární analýzy (FxCop).'
   aside:
     image:
       alt: Běžné úlohy logo Správa
@@ -25,7 +25,7 @@ abstract:
 sections:
   - title: Nejčastější dotazy
     items:
-      - html: Získejte odpovědi na některé <a href="fxcop-analyzers-faq.md">– nejčastější dotazy</a> o rozdílech mezi FxCop a analyzátory.
+      - html: Získejte odpovědi na některé <a href="fxcop-analyzers-faq.md">– nejčastější dotazy</a> o rozdílech mezi binární FxCop analýzy a analýzy zdroje s využitím analyzátory FxCop.
   - title: Pokud začínáte analýzy kódu...
     items:
       - type: list
@@ -53,7 +53,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: Použití příkazového řádku
-  - title: Pokud patříte mezi uživatele FxCop...
+  - title: Pokud aktuálně používáte binární analýzy (FxCop)...
     items:
       - type: list
         style: cards
@@ -61,7 +61,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>Poznejte rozdíly mezi statická (FxCop) a analyzátor pro analýzu kódu.</p>
+            html: <p>Poznejte rozdíly mezi binární analýzy (FxCop) a zdrojová analýza (analyzátory FxCop).</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: Co je nového?
@@ -71,7 +71,7 @@ sections:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: Instalace analyzátorů FxCop
           - href: fxcop-rule-port-status.md
-            html: '<p>Obsahuje seznam pravidel FxCop analýza statického kódu, které přenesené analyzátory FxCop.</p>'
+            html: '<p>Obsahuje seznam pravidel binární analýzy (FxCop), které přenesené zdrojová analýza (analyzátory FxCop).</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
             title: Přenesená a unported pravidla

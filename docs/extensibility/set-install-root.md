@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b17bc1936d077e379ff9eca7460fab1a3a37722
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338397"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852199"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>Instalace mimo složku rozšíření
+# <a name="install-outside-the-extensions-folder"></a>Instalace mimo složku rozšíření
 
-Od verze Visual Studio 2017 a VSIX v3 (verze 3), byla přidána podpora pro instalaci rozšíření prostředků mimo složku rozšíření. V současné době jsou povoleny následující umístění jako umístění platná instalace (kde [INSTALLDIR] je namapována na instanci aplikace Visual Studio Instalační adresář):
+Od verze Visual Studio 2017 a VSIX v. 3 (verze 3), rozšíření prostředků je možné nainstalovat mimo složku rozšíření. V současné době jsou povoleny následující umístění jako umístění platná instalace (kde [INSTALLDIR] je namapována na instanci aplikace Visual Studio Instalační adresář):
 
 * \MSBuild [INSTALLDIR]
 * [INSTALLDIR]\Xml\Schemas
@@ -25,9 +25,10 @@ Od verze Visual Studio 2017 a VSIX v3 (verze 3), byla přidána podpora pro inst
 * \Licenses [INSTALLDIR]
 * [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
 * [INSTALLDIR]\Common7\IDE\RemoteDebugger
-* [INSTALLDIR]\Common7\IDE\VC\VCTargets
+* [INSTALLDIR] \Common7\IDE\VC\VCTargets (pouze podporované pro Visual Studio 2017; zastaralé funkce pro Visual Studio 2019 a novější)
 
->**Poznámka:** Formát VSIX neumožňuje instalovat mimo strukturu složek instalace VS.
+> [!NOTE]
+> Formát VSIX neumožňuje instalovat mimo strukturu složek instalace sady Visual Studio. 
 
 Aby bylo možné podporovat instalace pro tyto adresáře, musí být rozšíření VSIX nainstalovaná "jednotlivé instance vázaná na počítač". Lze povolit zaškrtnutím políčka "all users" v Návrháři extension.vsixmanifest:
 
@@ -49,7 +50,8 @@ Některá metadata se přidá do příslušné `ProjectReference` vlastnost v so
  </ProjectReference>
 ```
 
->**Poznámka:** Pokud dáváte přednost můžete přímo, upravte soubor csproj.
+> [!NOTE]
+> Pokud dáváte přednost můžete přímo, upravte soubor csproj.
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>Jak nastavit podřízená cesta v rámci InstallRoot
 

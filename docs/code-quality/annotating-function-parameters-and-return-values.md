@@ -1,6 +1,6 @@
 ---
 title: Zadávání poznámek k parametrům funkcí a návratovým hodnotám
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,18 +119,21 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388547"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852171"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Zadávání poznámek k parametrům funkcí a návratovým hodnotám
 Tento článek popisuje typické použití poznámek pro jednoduchou funkci parametry – skaláry a ukazatele na třídy a struktury – a většinou druhů vyrovnávací paměti.  Tento článek také popisuje běžné vzory využití pro poznámky. Další poznámky, které se vztahují na funkce, najdete v části [zadávání poznámek k chování funkcí](../code-quality/annotating-function-behavior.md)
@@ -285,6 +288,7 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
      Ukazatel na pole zakončené znakem null pro kterou výraz `p`  -  `_Curr_` (to znamená `p` minus `_Curr_`) je definován na příslušný jazyk standardní.  Prvky před `p` nemusí být platné v předběžné stavu a musí být platný po stavu.
 
 ## <a name="optional-pointer-parameters"></a>Volitelné ukazatele parametry
+
  Pokud obsahuje anotaci parametru ukazatel `_opt_`, znamená to, že tento parametr může mít hodnotu null. V opačném případě Poznámka provádí shodná s verzí, který neobsahuje `_opt_`. Tady je seznam `_opt_` varianty ukazatel parametr poznámky:
 
 ||||
@@ -384,6 +388,7 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
    Vrácený ukazatel odkazuje na platnou vyrovnávací paměť, pokud je funkce úspěšná, nebo hodnota null, pokud funkce selže. Tato poznámka se pro referenční parametr.
 
 ## <a name="output-reference-parameters"></a>Výstupní parametry odkazu
+
  Běžné použití parametru odkaz je pro výstupní parametry.  Pro jednoduché výstupní parametry odkaz – například `int&`–`_Out_` poskytne tak sémantiku správné.  Ale když výstupní hodnota je ukazatel – například `int *&`– poznámky ekvivalentní ukazatel, jako jsou `_Outptr_ int **` neposkytují správné sémantiku.  Stručně a výstižně express sémantiku odkazu výstupních parametrů pro typy ukazatelů, použijte tyto složené poznámky:
 
  **Poznámky a popisy**
@@ -445,13 +450,62 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
      Výsledek musí být platný po stavu, ale může mít hodnotu null v příspěvku stavu. Odkazuje na platnou vyrovnávací paměť `s` bajtů platné prvky.
 
 ## <a name="return-values"></a>Návratové hodnoty
+
  Vypadá podobně jako návratovou hodnotu funkce `_Out_` parametr je ale na jiné úrovni de-reference a není nutné vzít v úvahu koncept ukazatel na výsledek.  Pro následující poznámky, vrácená hodnota je objekt s poznámkami – skalární, ukazatel na strukturu nebo ukazatel do vyrovnávací paměti. Tyto poznámky obsahují stejnou sémantiku jako odpovídající `_Out_` poznámky.
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
+## <a name="format-string-parameters"></a>Parametry řetězce formátu
+
+- `_Printf_format_string_` Označuje, že parametr je řetězec formátu pro aplikaci `printf` výrazu.
+
+     **Příklad**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_` Označuje, že parametr je řetězec formátu pro aplikaci `scanf` výrazu.
+
+     **Příklad**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_` Označuje, že parametr je řetězec formátu pro aplikaci `scanf_s` výrazu.
+
+     **Příklad**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args; 
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args); 
+           return ret;
+    }
+    ```
+
 ## <a name="other-common-annotations"></a>Další běžné poznámky
+
  **Poznámky a popisy**
 
 - `_In_range_(low, hi)`
@@ -490,6 +544,7 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>Související prostředky
+
  [Blog týmu analýzy kódu](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Viz také
