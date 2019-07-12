@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e45306a831c8767b93e3c1baad0171fcfb60ba6b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400491"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64790144"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 Získá příznak, který určuje, zda má funkce [naked](/cpp/cpp/naked-cpp) atribut (to znamená, funkce nemá žádný kód prologu nebo epilogu přidali kompilátorem).
