@@ -23,14 +23,14 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 48b9bbc596e97215654ff48c72298242a47f603e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704538"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825462"
 ---
-# <a name="javascript-memory"></a>Paměti jazyka JavaScript
+# <a name="javascript-memory"></a>Paměť (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, které vám pomohou porozumět využití paměti a najít nevracení paměti v aplikacích Store vytvořená pro Windows pomocí jazyka JavaScript. Podporované aplikace patří aplikace pro Windows Phone Store a Windows Store.  
@@ -282,14 +282,14 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
   
   Chcete-li filtrovat rozdílové informace mezi snímky, vyberte jednu z **oboru** filtrů v horní části rozdílové zobrazení.  
   
-- **Objekty přetrvávající ze snímku č\<číslo >**. Tento filtr ukazuje rozdíl mezi objekty do haldy přidávají nebo odebírají z haldy ve srovnání s referenčním snímkem a předchozí snímek. Například, pokud snímku souhrn zobrazuje +205 /-195 v počet objektů, tento filtr se seznámíte deset objekty, které byly přidány, ale neodeberou.  
+- **Objekty přetrvávající ze snímku č\<číslo >** . Tento filtr ukazuje rozdíl mezi objekty do haldy přidávají nebo odebírají z haldy ve srovnání s referenčním snímkem a předchozí snímek. Například, pokud snímku souhrn zobrazuje +205 /-195 v počet objektů, tento filtr se seznámíte deset objekty, které byly přidány, ale neodeberou.  
   
   > [!TIP]
   > K zobrazení velmi užitečné informace v tomto filtru, postupujte podle kroků popsaných v [izolovat nevracení paměti](#Isolate).  
   
-- **Objekty přidané mezi snímek č\<číslo > a #\<číslo >**. Tento filtr zobrazí všechny objekty do haldy z předchozího snímku.  
+- **Objekty přidané mezi snímek č\<číslo > a #\<číslo >** . Tento filtr zobrazí všechny objekty do haldy z předchozího snímku.  
   
-- **Všechny objekty ve snímku č\<číslo >**. Toto nastavení filtru není odfiltrovat všechny objekty do haldy.  
+- **Všechny objekty ve snímku č\<číslo >** . Toto nastavení filtru není odfiltrovat všechny objekty do haldy.  
   
   Chcete-li zobrazit odkazy na objekty, které se neshodují. aktuální **oboru** filtr, vyberte **zobrazit neshodné odkazy** v seznamu nastavení ![nastavení rozevírací&#45;dolů seznam v analyzátoru paměti ](../profiling/media/js-mem-settings.png "JS_Mem_Settings") v pravém horním rohu podokna. Pokud povolíte toto nastavení, neodpovídající odkazy se zobrazí s textem šedá.  
   
@@ -382,11 +382,11 @@ if (performance && performance.mark) {
   
 - Hledejte objekty, které jsou zachovány v paměti neúmyslně po Uživatel přešel na novou stránku, což je běžné příčiny problémů s pamětí. Příklad:  
   
-    - Nesprávné použití [adresy URL. CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) funkce může způsobit potíže.  
-  
-    - Některé objekty můžou poskytovat `dispose` metoda a doporučení pro použití. Například byste měli volat `dispose` na [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) při volání v seznamu `createFiltered` metody a pak stránku opustit.  
-  
-    - Můžete potřebovat k odebrání jedné nebo víc naslouchacích procesů událostí. Další informace najdete v tématu [naslouchacích procesů událostí DOM zobrazení](../debugger/view-dom-event-listeners.md).  
+  - Nesprávné použití [adresy URL. CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) funkce může způsobit potíže.  
+
+  - Některé objekty můžou poskytovat `dispose` metoda a doporučení pro použití. Například byste měli volat `dispose` na [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) při volání v seznamu `createFiltered` metody a pak stránku opustit.  
+
+  - Můžete potřebovat k odebrání jedné nebo víc naslouchacích procesů událostí. Další informace najdete v tématu [naslouchacích procesů událostí DOM zobrazení](../debugger/view-dom-event-listeners.md).  
   
 - Podívejte se na druhé části [toto video](http://channel9.msdn.com/Events/Build/2013/3-316) z konference Build 2013 o analýzu paměti jazyka JavaScript.  
   
@@ -394,11 +394,11 @@ if (performance && performance.mark) {
   
 - Vezměte v úvahu dočasná změna kódu k izolování problémů. Například můžete chtít:  
   
-    - Pomocí příkazů pro analyzátor paměti `console.takeSnapshot` a `performance.mark`. (Viz [přidružit zdrojového kódu s daty o využití paměti](#JSConsoleCommands).)  
-  
-         Můžete použít tyto příkazy a určit tak problémy, které nelze izolovat ručně provedením snímek haldy.  
-  
-    - Vytvořte objekt testu a sledovat v zobrazeních analyzátoru paměti JavaScriptu, jako jsou typy zobrazení. Například můžete připojit velmi velké objekty na jiný objekt, pokud chcete zobrazit, zda určitý objekt nebo element byla uvolněna.  
-  
+  - Pomocí příkazů pro analyzátor paměti `console.takeSnapshot` a `performance.mark`. (Viz [přidružit zdrojového kódu s daty o využití paměti](#JSConsoleCommands).)  
+
+    Můžete použít tyto příkazy a určit tak problémy, které nelze izolovat ručně provedením snímek haldy.  
+
+  - Vytvořte objekt testu a sledovat v zobrazeních analyzátoru paměti JavaScriptu, jako jsou typy zobrazení. Například můžete připojit velmi velké objekty na jiný objekt, pokud chcete zobrazit, zda určitý objekt nebo element byla uvolněna.  
+
 ## <a name="see-also"></a>Viz také  
  [Návod: Vyhledání nevrácené paměti (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

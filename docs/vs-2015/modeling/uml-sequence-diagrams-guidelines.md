@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a38d9b354de528797d0044f7b631bd2287c34fb4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445668"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823567"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Sekvenční diagramy UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,7 +205,7 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
   
 - Mějte na paměti výjimky nebo alternativy, které může provádět jako alternativu k typická posloupnost znázorněno. Například "zákazníka můžete přeskočit zbývající část tohoto pořadí."  
   
-    - Zvažte použití fragmentů formálnější alternativou pro tento typ poznámek. Zobrazit [popisující struktury řízení pomocí fragmentů](#Fragments)  
+  - Zvažte použití fragmentů formálnější alternativou pro tento typ poznámek. Zobrazit [popisující struktury řízení pomocí fragmentů](#Fragments)  
   
 ## <a name="deciding-the-scope-of-the-diagram"></a>Rozhodování o tom, rozsah diagramu  
  Je důležité, aby bylo jasné, o jaké diagramu je určená k zobrazení.  
@@ -372,13 +372,13 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
   
 - Klikněte pravým tlačítkem na zprávu, kterou chcete přesunout a potom klikněte na tlačítko **přesunout do diagramu**.  
   
-     Visual Studio:  
-  
-    - Nahradí interakci použít vybrané zprávy a všechny podpůrné zprávy.  
-  
-    - Nahrazené zprávy přesune na nový sekvenční diagram.  
-  
-    - Vytvoří propojení mezi použitím interakce a nový sekvenční diagram.  
+  Visual Studio:  
+
+  - Nahradí interakci použít vybrané zprávy a všechny podpůrné zprávy.  
+
+  - Nahrazené zprávy přesune na nový sekvenční diagram.  
+
+  - Vytvoří propojení mezi použitím interakce a nový sekvenční diagram.  
   
 #### <a name="to-navigate-to-the-sequence-referenced-by-an-interaction-use"></a>Přejít na pořadí odkazuje použitím interakce  
   

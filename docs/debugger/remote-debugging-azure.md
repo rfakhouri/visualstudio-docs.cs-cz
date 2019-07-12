@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2fbdc27ba7a3ae69494bf8129e4c870f325fe621
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407764"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824437"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Vzdálené ladění ASP.NET Core ve službě IIS v Azure v sadě Visual Studio
 
@@ -63,7 +63,7 @@ Ladění mezi dvěma počítači připojený prostřednictvím proxy serveru nen
     V aplikaci Visual Studio 2019 zadejte **Ctrl + Q** otevřete do vyhledávacího pole zadejte **asp.net**, zvolte **šablony**, klikněte na tlačítko **vytvořit novou webovou aplikaci ASP.NET Core** . V dialogovém okně, které se zobrazí, pojmenujte projekt **MyASPApp**a klikněte na tlačítko **vytvořit**. Dále zvolte **webové aplikace (Model-View-Controller)** a klikněte na tlačítko **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    V sadě Visual Studio 2017, zvolte **soubor > Nový > projekt**a pak vyberte **Visual C# > Web > Webová aplikace ASP.NET Core**. V části šablony ASP.NET Core, vyberte **webové aplikace (Model-View-Controller)**. Ujistěte se, že je vybraný ASP.NET Core 2.1, který **povolit podporu Dockeru** není vybraná a že **ověřování** je nastavena na **bez ověřování**. Pojmenujte projekt **MyASPApp**.
+    V sadě Visual Studio 2017, zvolte **soubor > Nový > projekt**a pak vyberte **Visual C# > Web > Webová aplikace ASP.NET Core**. V části šablony ASP.NET Core, vyberte **webové aplikace (Model-View-Controller)** . Ujistěte se, že je vybraný ASP.NET Core 2.1, který **povolit podporu Dockeru** není vybraná a že **ověřování** je nastavena na **bez ověřování**. Pojmenujte projekt **MyASPApp**.
     ::: moniker-end
 
 1. Otevřete soubor About.cshtml.cs a nastavte zarážku v `OnGet` – metoda (ve starších šablonách HomeController.cs místo toho otevřít a nastavit zarážku v `About()` metoda).
@@ -108,9 +108,9 @@ Tento článek obsahuje kroky k nastavení základní konfiguraci služby IIS na
 
 * Pokud potřebujete pomoc, abyste měli jistotu, že vaše aplikace je nastavené, nasazení a fungování ve službě IIS, takže můžete ladit, postupujte podle všech kroků v tomto tématu.
 
-    * Než začnete, postupujte podle kroků popsaných v [instalace a spuštění služby IIS](/azure/virtual-machines/windows/quick-create-portal).
+  * Než začnete, postupujte podle kroků popsaných v [instalace a spuštění služby IIS](/azure/virtual-machines/windows/quick-create-portal).
 
-    * Při otevření portu 80 ve skupině zabezpečení sítě také otevřít [opravte port](#bkmk_openports) pro vzdálený ladicí program (4024 nebo 4022). Tímto způsobem není nutné jej spustit později.
+  * Při otevření portu 80 ve skupině zabezpečení sítě také otevřít [opravte port](#bkmk_openports) pro vzdálený ladicí program (4024 nebo 4022). Tímto způsobem není nutné jej spustit později.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Aktualizovat nastavení zabezpečení prohlížeče ve Windows serveru
 
@@ -251,7 +251,7 @@ Stáhněte si verzi nástrojů remote tools, která odpovídá verzi sady Visual
 
 7. Klikněte na tlačítko **připojit**.
 
-8. Otevřete web, vzdáleném počítači. V prohlížeči přejděte na **http://\<název vzdáleného počítače >**.
+8. Otevřete web, vzdáleném počítači. V prohlížeči přejděte na **http://\<název vzdáleného počítače >** .
 
     Zobrazí se webová stránka ASP.NET.
 9. Ve spuštěné aplikaci ASP.NET, kliknutím na odkaz **o** stránky.

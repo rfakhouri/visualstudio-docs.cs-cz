@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ae010fac8978b0669021bc6645449f57da754d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ac7cd1ea69bb6b96066da876ab2ce88aabb8a08
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437862"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823492"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Je platforma pro vytváření aplikací. Tento modul, který se také nazývá MSBuild, obsahuje schéma XML souboru projektu, který určuje, jak platforma sestavení zpracuje a vytvoří software. Visual Studio používá MSBuild, ale není závislé na Visual Studio. Vyvoláním *msbuild.exe* v souboru projektu nebo řešení můžete organizovat a vytvářet produkty v prostředích, kde není nainstalovaná sada Visual Studio.
 
- Visual Studio používá MSBuild k načtení a sestavení spravovaných projektů. Soubory projektu v sadě Visual Studio (*.csproj*, *.vbproj*, *.vcxproj*a jiné) obsahují kód XML nástroje MSBuild, který se spustí po sestavení projektu s použitím rozhraní IDE. Importovat všechna potřebná nastavení projektů sady Visual Studio a vytvoří procesy pro typickou vývojovou práci, ale můžete je rozšířit nebo upravit z aplikace Visual Studio nebo pomocí editoru XML.
+ Visual Studio používá MSBuild k načtení a sestavení spravovaných projektů. Soubory projektu v sadě Visual Studio ( *.csproj*, *.vbproj*, *.vcxproj*a jiné) obsahují kód XML nástroje MSBuild, který se spustí po sestavení projektu s použitím rozhraní IDE. Importovat všechna potřebná nastavení projektů sady Visual Studio a vytvoří procesy pro typickou vývojovou práci, ale můžete je rozšířit nebo upravit z aplikace Visual Studio nebo pomocí editoru XML.
 
  Informace o nástroji MSBuild jazyka C++, naleznete v tématu [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).
 
@@ -35,13 +35,13 @@ ms.locfileid: "63437862"
 
 - Chcete změnit systém sestavení. Například můžete chtít povolit následující akce:
 
-    - Předběžné zpracujte soubory, než dosáhnou kompilátoru.
+  - Předběžné zpracujte soubory, než dosáhnou kompilátoru.
 
-    - Zkopírujte výstupy sestavení na jiné místo.
+  - Zkopírujte výstupy sestavení na jiné místo.
 
-    - Vytvořte komprimované soubory z výstupů sestavení.
+  - Vytvořte komprimované soubory z výstupů sestavení.
 
-    - Proveďte krok následného zpracování. Můžete například chtít razítko sestavení s jinou verzí.
+  - Proveďte krok následného zpracování. Můžete například chtít razítko sestavení s jinou verzí.
 
 V integrovaném vývojovém prostředí sady Visual Studio můžete napsat kód, ale spustit sestavení pomocí nástroje MSBuild. Jako další alternativu můžete sestavit kód v rozhraní IDE na vývojovém počítači, ale pomocí příkazového řádku MSBuild sestavit kód, který je integrován od více vývojářů.
 
@@ -182,7 +182,7 @@ Další informace najdete v tématu [cílení na více verzí](../msbuild/msbuil
 | [Protokolování v nástroji MSBuild](../msbuild/logging-in-msbuild.md) | Popisuje, jak protokolovat události sestavení, zprávy a chyby. |
 | [Další zdroje informací](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Uvádí komunitu a prostředky podpory pro další informace o nástroji MSBuild. |
 
-## <a name="reference"></a>Odkaz
+## <a name="reference"></a>Reference
 - [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md) odkazy na témata, která obsahují referenční informace.
 
 - [Glosář](msbuild-glossary.md) definuje společné termíny MSBuild.

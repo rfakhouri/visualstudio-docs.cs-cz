@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676706"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821516"
 ---
 # <a name="use-roslyn-analyzers"></a>Používání analyzátorů Roslyn
 
@@ -62,13 +62,13 @@ Chcete-li změnit aktivní sadu pravidel pro projekt, přejděte na **analýzy k
 
 Můžete nakonfigurovat závažnost pravidla analyzátoru nebo *diagnostiky*, pokud jste [instalace analyzátorů](../code-quality/install-roslyn-analyzers.md) jako balíček NuGet. Následující tabulka uvádí možnosti závažnosti pro diagnostiku:
 
-|Severity|Chování sestavení|Chování editoru|
+|severity|Chování sestavení|Chování editoru|
 |-|-|-|
 |Chyba|Narušení se zobrazují jako *chyby* v **seznam chyb** a do příkazového řádku výstup sestavení a sestavení selže.|Poškozený kód je podtržený s červenou vlnovkou a označené jako malé červeným rámečkem posuvníku.|
 |Upozornění|Narušení se zobrazují jako *upozornění* v **seznam chyb** do příkazového řádku výstup sestavení, ale nezpůsobí sestavení selhala.|Poškozený kód je podtržený s zelenou vlnovkou a označené pomocí malé zeleného pole do oblasti posuvníku.|
 |Informace o|Narušení se zobrazují jako *zprávy* v **seznam chyb**a vůbec ne ve výstupu sestavení z příkazového řádku.|Poškozený kód je podtržený s šedá vlnovkou a označené pomocí malé šedé pole do oblasti posuvníku.|
 |Hidden|Non viditelné pro uživatele.|Non viditelné pro uživatele. Diagnostiky se hlásí k modulu diagnostiky integrovaného vývojového prostředí, ale.|
-|Žádné|Zcela potlačit.|Zcela potlačit.|
+|Žádný|Zcela potlačit.|Zcela potlačit.|
 
 Kromě toho můžete "obnovit" závažnost pravidla nastavením na **výchozí**. Každý diagnostiky má výchozí závažnost, která si můžete prohlédnout ve **vlastnosti** okna.
 
@@ -110,40 +110,40 @@ Potlačit porušení pravidel několika způsoby:
 
 - Z **analyzovat** nabídky
 
-   Vyberte **analyzovat** > **spustit analýzu kódu a potlačit aktivních problémů** na panelu nabídek potlačí všechna aktuální porušení pravidel. To se někdy označuje jako "monitorování standardních hodnot".
+  Vyberte **analyzovat** > **spustit analýzu kódu a potlačit aktivních problémů** na panelu nabídek potlačí všechna aktuální porušení pravidel. To se někdy označuje jako "monitorování standardních hodnot".
 
 - Z **Průzkumníka řešení**
 
-   Potlačit narušení v **Průzkumníka řešení**, nastavit závažnost pravidla **žádný**.
+  Potlačit narušení v **Průzkumníka řešení**, nastavit závažnost pravidla **žádný**.
 
 - Z **s editorem sad pravidel**
 
-   Chcete-li potlačit porušení z editoru sad pravidel, zrušte zaškrtnutí políčka vedle jeho názvu nebo nastavte **akce** k **žádný**.
+  Chcete-li potlačit porušení z editoru sad pravidel, zrušte zaškrtnutí políčka vedle jeho názvu nebo nastavte **akce** k **žádný**.
 
 - Z **editoru kódu**
 
-   Potlačit porušení z editoru kódu, umístěte kurzor na řádek kódu s porušení a stiskněte klávesu **Ctrl**+ **.** Chcete-li otevřít **rychlé akce** nabídky. Vyberte **potlačit CAXXXX** > **ve zdroji nebo v souboru potlačení**.
+  Potlačit porušení z editoru kódu, umístěte kurzor na řádek kódu s porušení a stiskněte klávesu **Ctrl**+ **.** Chcete-li otevřít **rychlé akce** nabídky. Vyberte **potlačit CAXXXX** > **ve zdroji nebo v souboru potlačení**.
 
-   ![Potlačit diagnostiku z nabídky rychlé akce](media/suppress-diagnostic-from-editor.png)
+  ![Potlačit diagnostiku z nabídky rychlé akce](media/suppress-diagnostic-from-editor.png)
 
 - Z **seznam chyb**
 
-   Můžete potlačit diagnostiku pro jeden nebo více z **seznam chyb** výběrem ty, které chcete potlačit, a klikněte pravým tlačítkem myši a vyberete **potlačit** > **Source/In v Souboru potlačení**.
+  Můžete potlačit diagnostiku pro jeden nebo více z **seznam chyb** výběrem ty, které chcete potlačit, a klikněte pravým tlačítkem myši a vyberete **potlačit** > **Source/In v Souboru potlačení**.
 
-   - Pokud jste potlačit **zdroje v**, **náhled změn** dialogové okno se otevře a zobrazí náhled C# [varování #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) nebo Visual Basic [#Disable upozornění](/dotnet/visual-basic/language-reference/directives/directives) – direktiva, která je přidána ke zdrojovému kódu.
+  - Pokud jste potlačit **zdroje v**, **náhled změn** dialogové okno se otevře a zobrazí náhled C# [varování #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) nebo Visual Basic [#Disable upozornění](/dotnet/visual-basic/language-reference/directives/directives) – direktiva, která je přidána ke zdrojovému kódu.
 
-      ![Přidání upozornění #pragma v souboru kódu ve verzi Preview](media/pragma-warning-preview.png)
+    ![Přidání upozornění #pragma v souboru kódu ve verzi Preview](media/pragma-warning-preview.png)
 
-   - Pokud vyberete **v souboru potlačení**, **náhled změn** dialogové okno se otevře a zobrazí náhled <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut, který se přidá do soubor globálního potlačení.
+  - Pokud vyberete **v souboru potlačení**, **náhled změn** dialogové okno se otevře a zobrazí náhled <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut, který se přidá do soubor globálního potlačení.
 
-      ![Přidání atributu SuppressMessage do souboru potlačení ve verzi Preview](media/preview-changes-in-suppression-file.png)
+    ![Přidání atributu SuppressMessage do souboru potlačení ve verzi Preview](media/preview-changes-in-suppression-file.png)
 
-   V **náhled změn** dialogového okna, vyberte **použít**.
+  V **náhled změn** dialogového okna, vyberte **použít**.
 
-   > [!NOTE]
-   > Pokud se nezobrazí **potlačit** nabídky v **Průzkumníka řešení**, porušení pravděpodobně pochází z sestavení a ne za analýzu. **Seznam chyb** zobrazí diagnostiky nebo pravidlo porušení z obou živá analýza kódu a sestavení. Protože Diagnostika sestavení může být zastaralá, například pokud jste upravili kódu, chcete-li vyřešit porušení zásad, ale nebyly znovu sestavit, nelze potlačit tato Diagnostika z **seznam chyb**. Diagnostika živých analýzy nebo technologie IntelliSense, jsou vždy aktuální s aktuálním zdroji a lze potlačit z **seznam chyb**. Vyloučit *sestavení* Diagnostika z výběru, přepínat **seznam chyb** zdrojový filtr ze sloupce **sestavení + IntelliSense** k **pouze technologie Intellisense**. Vyberte diagnostiky, které chcete potlačit a pokračovat, jak je popsáno výše.
-   >
-   > ![Filtr zdroje seznam chyb v sadě Visual Studio](media/error-list-filter.png)
+  > [!NOTE]
+  > Pokud se nezobrazí **potlačit** nabídky v **Průzkumníka řešení**, porušení pravděpodobně pochází z sestavení a ne za analýzu. **Seznam chyb** zobrazí diagnostiky nebo pravidlo porušení z obou živá analýza kódu a sestavení. Protože Diagnostika sestavení může být zastaralá, například pokud jste upravili kódu, chcete-li vyřešit porušení zásad, ale nebyly znovu sestavit, nelze potlačit tato Diagnostika z **seznam chyb**. Diagnostika živých analýzy nebo technologie IntelliSense, jsou vždy aktuální s aktuálním zdroji a lze potlačit z **seznam chyb**. Vyloučit *sestavení* Diagnostika z výběru, přepínat **seznam chyb** zdrojový filtr ze sloupce **sestavení + IntelliSense** k **pouze technologie Intellisense**. Vyberte diagnostiky, které chcete potlačit a pokračovat, jak je popsáno výše.
+  >
+  > ![Filtr zdroje seznam chyb v sadě Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Použití příkazového řádku
 

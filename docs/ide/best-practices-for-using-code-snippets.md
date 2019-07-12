@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42a6eec4b6478f9a789c81311fdfdec4e664cb8a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975611"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825949"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Osvědčené postupy pro používání fragmentů kódu
 
@@ -31,7 +31,7 @@ Při umístění souborů můžete přizpůsobit pro vaši aplikaci, byste uvaž
 
 - Hledání na dostupném místě. Nemusí mít uživatelé přístup k *Program Files* složky na počítači, takže ukládání souborů pomocí aplikace soubory května není pracovní.
 
-- Hledání na bezpečném místě. Ukládání souborů v kořenové složce (*C:\\*) není zabezpečený. Pro data aplikací, doporučujeme, abyste *Data aplikací* složky. Pro data jednotlivých uživatelů, můžete vytvořit aplikace pro každého uživatele v souboru *dokumenty* složky.
+- Hledání na bezpečném místě. Ukládání souborů v kořenové složce (*C:\\* ) není zabezpečený. Pro data aplikací, doporučujeme, abyste *Data aplikací* složky. Pro data jednotlivých uživatelů, můžete vytvořit aplikace pro každého uživatele v souboru *dokumenty* složky.
 
 - Pomocí platný název souboru. Můžete použít <xref:System.Windows.Forms.OpenFileDialog> a <xref:System.Windows.Forms.SaveFileDialog> ovládacích prvků pro snížení pravděpodobnosti výskytu neplatné názvy souborů. Mějte na paměti, že mezi časem uživatel vybere soubor a čas, váš kód zpracovává soubor, mohou odstranit soubor. Kromě toho uživatel nemá oprávnění k zápisu do souboru.
 
@@ -61,11 +61,11 @@ Fragmenty kódu technologie IntelliSense ve Visual Studio nainstalované nejsou 
 
 - Otevřít všechny soubory stažené fragmentu kódu v programu Poznámkový blok nebo editoru XML sady Visual Studio a pečlivě zkontrolujte před instalací. Vyhledejte následující problémy:
 
-    - Fragment kódu by mohl poškodit váš systém, pokud je spuštěn. Pečlivě si přečtěte zdrojový kód před jejím spuštěním.
+  - Fragment kódu by mohl poškodit váš systém, pokud je spuštěn. Pečlivě si přečtěte zdrojový kód před jejím spuštěním.
 
-    - Adresa URL nápovědy bloku soubor výstřižku může obsahovat adresy URL, které spustit škodlivý soubor nebo zobrazit urážlivé webu.
+  - Adresa URL nápovědy bloku soubor výstřižku může obsahovat adresy URL, které spustit škodlivý soubor nebo zobrazit urážlivé webu.
 
-    - Fragment kódu mohou obsahovat odkazy, které jsou tiše přidány do projektu a mohou být načteny z kdekoli ve vašem systému. Tyto odkazy může být stažené do vašeho počítače ze kterého jste stáhli fragmentu kódu. Fragment kódu může proveďte volání metody v odkazu, který se spustí škodlivý kód. Chránit proti takového útoku, najdete v tématu importy a odkazy na bloky souboru fragmentu kódu.
+  - Fragment kódu mohou obsahovat odkazy, které jsou tiše přidány do projektu a mohou být načteny z kdekoli ve vašem systému. Tyto odkazy může být stažené do vašeho počítače ze kterého jste stáhli fragmentu kódu. Fragment kódu může proveďte volání metody v odkazu, který se spustí škodlivý kód. Chránit proti takového útoku, najdete v tématu importy a odkazy na bloky souboru fragmentu kódu.
 
 ## <a name="see-also"></a>Viz také:
 

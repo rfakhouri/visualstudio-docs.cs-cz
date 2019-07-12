@@ -11,12 +11,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76f66d11a824a756b262460ebd4e7af78e88f766
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19f22fc56881287cfb501143aaa4397f9a035d78
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038170"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821636"
 ---
 # <a name="msbuild-items"></a>Položky nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle předsta
   
 - [Metadata položky](#BKMK_ItemMetadata)  
   
-    - [Odkazování na Metadata položky v souboru projektu](#BKMK_ReferencingItemMetadata)  
-  
-    - [Metadata známé položky](#BKMK_WellKnownItemMetadata)  
-  
-    - [Transformace typy položek na základě metadat](#BKMK_Transforming)  
+  - [Odkazování na Metadata položky v souboru projektu](#BKMK_ReferencingItemMetadata)  
+
+  - [Metadata známé položky](#BKMK_WellKnownItemMetadata)  
+
+  - [Transformace typy položek na základě metadat](#BKMK_Transforming)  
   
 - [Definice položek](#BKMK_ItemDefinitions)  
   
 - [Atributy pro položky v ItemGroup cíl](#BKMK_AttributesWithinTargets)  
   
-    - [Odebrat atribut](#BKMK_RemoveAttribute)  
-  
-    - [Atribut KeepMetadata](#BKMK_KeepMetadata)  
-  
-    - [RemoveMetadata Attribute](#BKMK_RemoveMetadata)  
-  
-    - [Atribut KeepDuplicates](#BKMK_KeepDuplicates)  
+  - [Odebrat atribut](#BKMK_RemoveAttribute)  
+
+  - [Atribut KeepMetadata](#BKMK_KeepMetadata)  
+
+  - [RemoveMetadata Attribute](#BKMK_RemoveMetadata)  
+
+  - [Atribut KeepDuplicates](#BKMK_KeepDuplicates)  
   
 ## <a name="BKMK_Creating1"></a> Vytvoření položky v souboru projektu  
  Deklarujete položky v souboru projektu jako podřízené prvky [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Název podřízeného prvku je typ položky. `Include` Atribut elementu, který určuje položky (soubory), které chcete být součástí tohoto typu položky. Například následující XML kód vytvoří typ položky, který je pojmenován `Compile`, který obsahuje dva soubory.  
@@ -96,7 +96,7 @@ Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle předsta
   
 - Na? zástupný znak odpovídá jednomu znaku.  
   
-- * Zástupný znak odpovídá nula nebo více znaků.  
+- \* Zástupný znak odpovídá nula nebo více znaků.  
   
 - ** Sekvence znaků zástupný znak odpovídá část cesty.  
   

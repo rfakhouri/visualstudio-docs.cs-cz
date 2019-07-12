@@ -8,12 +8,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c2fa6b0ddf0e7596f5345a3c36290fa931d3bb4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea4f2b49838340fcee41bc9c41ef94558e44825e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079005"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823614"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Text uživatelského rozhraní a nápovědu k sadě Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -193,11 +193,11 @@ ms.locfileid: "60079005"
 
 - Některé dotazy položte si otázku: při vytváření chybová zpráva:
 
-    - Může uživatel přijít na to, jak vyřešit problém s touto chybou samostatně?
+  - Může uživatel přijít na to, jak vyřešit problém s touto chybou samostatně?
 
-    - Používá uživatel slovník stejný jako tato chyba?
+  - Používá uživatel slovník stejný jako tato chyba?
 
-    - Je tato chyba ambigious nebo sdíleného v několika situacích? Pokud ano, jak vám vedou uživatele k řešení, které potřebují?
+  - Je tato chyba ambigious nebo sdíleného v několika situacích? Pokud ano, jak vám vedou uživatele k řešení, které potřebují?
 
 #### <a name="build-errors"></a>Chyby sestavení
  Visual Studio je nástroj pro vývoj softwaru, řada jeho součástí má kompilace, převod, nebo krok vývojáři převést do binárního formátu kódování. Tyto převody mohou způsobit chyby, pokud kompilátor nemůže zpracovat nesprávně vytvořené soubory nebo pokud – možnosti kompilátoru nebyly nastaveny správně.

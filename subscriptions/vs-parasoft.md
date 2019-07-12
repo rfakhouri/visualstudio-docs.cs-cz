@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zjistěte, jak chcete předplatné aktivovat, Test Professional Parasoft Virtualize/SOA součástí vašeho předplatného sady Visual Studio.
-ms.openlocfilehash: d8204820c4651de8ea034f531f52efbfb8cd4a18
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784520"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824646"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop v předplatných sady Visual Studio
 
@@ -85,7 +85,7 @@ Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici 
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 - Potřebujete pomoc s produkty Parasoft?  Projděte si tyto prostředky:
-    - Technické podpory:  https://www.parasoft.com/support/
-    - Parasoft Resource Center:  https://www.parasoft.com/resources/
+  - Technické podpory:  https://www.parasoft.com/support/
+  - Parasoft Resource Center:  https://www.parasoft.com/resources/
 - Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
 - Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

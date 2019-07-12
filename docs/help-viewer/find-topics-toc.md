@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e75a732ddc9c56e7305e4ebbfec6a188fb6df2bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bd55a95675505648179161ae3fb7cacea6a83104
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951334"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825077"
 ---
 # Postupy: Hledání témat v obsahu
 
@@ -31,7 +31,7 @@ V **obsah** kartu, můžete použít obsah (TOC) k nalezení informací o. Obsah
 
 ## Filtrování obsahu
 
-Můžete filtrovat-li zúžit rozsah témat, která se zobrazí v obsahu **obsah** kartu. Zobrazí v seznamu jenom v případě, že obsahují kořen termínu, který zadáte. Například pokud zadáte "problém" jako filtr, pouze produkty, které obsahují text "problém" nebo "problém" zobrazí. Uzly, jejichž nadpisy neobsahují daný výraz, jsou sbaleny do jednoho uzlu se třemi tečkami (**...** ).
+Můžete filtrovat-li zúžit rozsah témat, která se zobrazí v obsahu **obsah** kartu. Zobrazí v seznamu jenom v případě, že obsahují kořen termínu, který zadáte. Například pokud zadáte "problém" jako filtr, pouze produkty, které obsahují text "problém" nebo "problém" zobrazí. Uzly, jejichž nadpisy neobsahují daný výraz, jsou sbaleny do jednoho uzlu se třemi tečkami ( **...** ).
 
 1. Zvolte **obsah** kartu.
 

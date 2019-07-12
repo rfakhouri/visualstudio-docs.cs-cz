@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c5713adc98a0b6ed3f57e604e2e1874b3d95f0a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ed6e544378089222cb69c491b0cd473544e05220
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678866"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825654"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Synchronizovaná nastavení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Při použití stejného účtu individuálního nastavení pro přihlášení k
 
 - Následující možnosti **nástroje &#124; možnosti** stránky:
 
-    - **Motiv** a nabídek na malá a velká písmena nastavení, **prostředí**, **Obecné** stránky Možnosti
+  - **Motiv** a nabídek na malá a velká písmena nastavení, **prostředí**, **Obecné** stránky Možnosti
 
-    - Všechna nastavení na **prostředí**, **písma a barvy** stránky Možnosti
+  - Všechna nastavení na **prostředí**, **písma a barvy** stránky Možnosti
 
-    - Všechny klávesové zkratky, na **prostředí**, **klávesnice** stránky Možnosti
+  - Všechny klávesové zkratky, na **prostředí**, **klávesnice** stránky Možnosti
 
-    - Všechna nastavení na **prostředí, karty a Windows** stránky Možnosti
+  - Všechna nastavení na **prostředí, karty a Windows** stránky Možnosti
 
-    - Všechna nastavení na **prostředí**, **spuštění** stránky Možnosti
+  - Všechna nastavení na **prostředí**, **spuštění** stránky Možnosti
 
-    - Všechna nastavení na **textový Editor** možnosti stránky
+  - Všechna nastavení na **textový Editor** možnosti stránky
 
 - Všechna nastavení v Návrháři XAML možnosti stránky
 

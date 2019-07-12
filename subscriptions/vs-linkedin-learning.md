@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech LinkedIn Learning zahrnutý jako součást předplatného LinkedIn Premium součástí vybraných předplatných sady Visual Studio.
-ms.openlocfilehash: 50a8b518866e7756f57513832f5c075b1c86201b
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 2ae1bd5442a062514525df3d1bada70eba71a81d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784575"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824802"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Výhoda Linkedinem v předplatných sady Visual Studio
 
@@ -109,7 +109,7 @@ O:  Ne, LinkedIn Learning nabídka je dostupná pro nové předplatitele pouze.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 - Potřebujete pomoc s Linkedinem?  Projděte si tyto prostředky:
-    - Smyslem [pomocí LinkedIn Learning](https://www.linkedin.com/help/learning).
-    - Nápověda k obecné otázky o [LinkedIn](https://www.linkedin.com/help/linkedin) jako je vytváření účtů a profilů a zachování vaší sítě.
+  - Smyslem [pomocí LinkedIn Learning](https://www.linkedin.com/help/learning).
+  - Nápověda k obecné otázky o [LinkedIn](https://www.linkedin.com/help/linkedin) jako je vytváření účtů a profilů a zachování vaší sítě.
 - Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
 - Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

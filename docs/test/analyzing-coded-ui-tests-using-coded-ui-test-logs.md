@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432305"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824486"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analýza kódované UI testy pomocí programového protokolů testu uživatelského rozhraní
 
@@ -42,15 +42,15 @@ V závislosti na scénáři použijte jednu z následujících metod k povolení
 
 - Pokud dojde *App.config* soubor v projektu testu:
 
-    - Otevřít *App.config* souboru v projektu a přidejte následující kód v uzlu Konfigurace:
+  - Otevřít *App.config* souboru v projektu a přidejte následující kód v uzlu Konfigurace:
 
-      ```xml
-      <system.diagnostics>
-        <switches>
-          <add name="EqtTraceLevel" value="4" />
-        </switches>
-      </system.diagnostics>`
-      ```
+    ```xml
+    <system.diagnostics>
+      <switches>
+        <add name="EqtTraceLevel" value="4" />
+      </switches>
+    </system.diagnostics>`
+    ```
 
 - Povolení protokolování z samotný kód testu:
 

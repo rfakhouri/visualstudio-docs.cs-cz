@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974732"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826288"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalace certifikátů vyžadovaných pro offline instalace sady Visual Studio
 
@@ -135,20 +135,20 @@ Pokud vytváříte skript nasazení sady Visual Studio v režimu offline klients
 Tři. P12 soubory v této složce každý obsahují zprostředkující certifikát a kořenový certifikát. Většina systémů, které jsou aktuálně s aktualizací Windows mají tyto certifikáty už nainstalovaná.
 
 * **ManifestSignCertificates.p12** obsahuje:
-    * Zprostředkující certifikát: **DPS 2011 pro podepisování kódu Microsoft**
-        * Není nutné. Zlepšuje výkon v některých scénářích, pokud jsou k dispozici.
-    * Kořenový certifikát: **Microsoft kořenové certifikační autority 2011**
-        * Vyžaduje se v systémech Windows 7 Service Pack 1, které nemají nainstalované nejnovější aktualizace Windows.
+  * Zprostředkující certifikát: **DPS 2011 pro podepisování kódu Microsoft**
+    * Není nutné. Zlepšuje výkon v některých scénářích, pokud jsou k dispozici.
+  * Kořenový certifikát: **Microsoft kořenové certifikační autority 2011**
+    * Vyžaduje se v systémech Windows 7 Service Pack 1, které nemají nainstalované nejnovější aktualizace Windows.
 * **ManifestCounterSignCertificates.p12** obsahuje:
-    * Zprostředkující certifikát: **Microsoft časové razítko DPS 2010**
-        * Není nutné. Zlepšuje výkon v některých scénářích, pokud jsou k dispozici.
-    * Kořenový certifikát: **Microsoft kořenové certifikační autority 2010**
-        * Vyžaduje se pro systémy Windows 7 Service Pack 1, které nemají nainstalované nejnovější aktualizace Windows.
+  * Zprostředkující certifikát: **Microsoft časové razítko DPS 2010**
+    * Není nutné. Zlepšuje výkon v některých scénářích, pokud jsou k dispozici.
+  * Kořenový certifikát: **Microsoft kořenové certifikační autority 2010**
+    * Vyžaduje se pro systémy Windows 7 Service Pack 1, které nemají nainstalované nejnovější aktualizace Windows.
 * **Vs_installer_opc. SignCertificates.p12** obsahuje:
-    * Zprostředkující certifikát: **DPS pro podepisování kódu Microsoft**
-        * Vyžaduje se pro všechny systémy. Všimněte si, že všechny aktualizace použije ze služby Windows Update v systémech nemusí obsahovat tento certifikát.
-    * Kořenový certifikát: **Microsoft kořenové certifikační autority**
-        * Povinný parametr. Tento certifikát se dodává s systémy s operačním systémem Windows 7 nebo novější.
+  * Zprostředkující certifikát: **DPS pro podepisování kódu Microsoft**
+    * Vyžaduje se pro všechny systémy. Všimněte si, že všechny aktualizace použije ze služby Windows Update v systémech nemusí obsahovat tento certifikát.
+  * Kořenový certifikát: **Microsoft kořenové certifikační autority**
+    * Povinný parametr. Tento certifikát se dodává s systémy s operačním systémem Windows 7 nebo novější.
 
 **Aktualizace**: Pro Visual Studio 2017 verze 15,8 ve verzi Preview 2 nebo novější, instalační program sady Visual Studio vyžaduje pouze kořenové certifikáty k instalaci v systému.
 
@@ -157,20 +157,20 @@ Tři. P12 soubory v této složce každý obsahují zprostředkující certifik�
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates.p12** obsahuje:
-    * Zprostředkující certifikát: **DPS 2011 pro podepisování kódu Microsoft**
-        * Není nutné. Zlepšuje výkon v některých scénářích, pokud jsou k dispozici.
-    * Kořenový certifikát: **Microsoft kořenové certifikační autority 2011**
-        * Vyžaduje se v systémech Windows 7 Service Pack 1, které nemají nainstalované nejnovější aktualizace Windows.
+  * Zprostředkující certifikát: **DPS 2011 pro podepisování kódu Microsoft**
+    * Není nutné. Zlepšuje výkon v některých scénářích, pokud jsou k dispozici.
+  * Kořenový certifikát: **Microsoft kořenové certifikační autority 2011**
+    * Vyžaduje se v systémech Windows 7 Service Pack 1, které nemají nainstalované nejnovější aktualizace Windows.
 * **ManifestCounterSignCertificates.p12** obsahuje:
-    * Zprostředkující certifikát: **Microsoft časové razítko DPS 2010**
-        * Není nutné. Zlepšuje výkon v některých scénářích, pokud jsou k dispozici.
-    * Kořenový certifikát: **Microsoft kořenové certifikační autority 2010**
-        * Vyžaduje se pro systémy Windows 7 Service Pack 1, které nemají nainstalované nejnovější aktualizace Windows.
+  * Zprostředkující certifikát: **Microsoft časové razítko DPS 2010**
+    * Není nutné. Zlepšuje výkon v některých scénářích, pokud jsou k dispozici.
+  * Kořenový certifikát: **Microsoft kořenové certifikační autority 2010**
+    * Vyžaduje se pro systémy Windows 7 Service Pack 1, které nemají nainstalované nejnovější aktualizace Windows.
 * **Vs_installer_opc. SignCertificates.p12** obsahuje:
-    * Zprostředkující certifikát: **DPS pro podepisování kódu Microsoft**
-        * Vyžaduje se pro všechny systémy. Všimněte si, že všechny aktualizace použije ze služby Windows Update v systémech nemusí obsahovat tento certifikát.
-    * Kořenový certifikát: **Microsoft kořenové certifikační autority**
-        * Povinný parametr. Tento certifikát se dodává s systémy s operačním systémem Windows 7 nebo novější.
+  * Zprostředkující certifikát: **DPS pro podepisování kódu Microsoft**
+    * Vyžaduje se pro všechny systémy. Všimněte si, že všechny aktualizace použije ze služby Windows Update v systémech nemusí obsahovat tento certifikát.
+  * Kořenový certifikát: **Microsoft kořenové certifikační autority**
+    * Povinný parametr. Tento certifikát se dodává s systémy s operačním systémem Windows 7 nebo novější.
 
 Instalační program sady Visual Studio vyžaduje pouze kořenové certifikáty k instalaci v systému.
 
@@ -188,7 +188,7 @@ Jedním ze způsobů můžete zkontrolovat na instalaci systému je postupujte p
   a. Klikněte na tlačítko **souboru**a pak vyberte **Přidat/odebrat modul Snap-in**.<br/>
   b. Dvakrát klikněte na panel **certifikáty**vyberte **účet počítače**a potom klikněte na tlačítko **Další**.<br/>
   c. Vyberte **místního počítače**, klikněte na tlačítko **Dokončit**a potom klikněte na tlačítko **OK**.<br/>
-  d. Rozbalte **certifikáty (místní počítač)**.<br/>
+  d. Rozbalte **certifikáty (místní počítač)** .<br/>
   e. Rozbalte **důvěryhodných kořenových certifikačních autorit**a pak vyberte **certifikáty**.<br/>
     * Najdete v tomto seznamu nezbytné kořenové certifikáty.<br/>
 

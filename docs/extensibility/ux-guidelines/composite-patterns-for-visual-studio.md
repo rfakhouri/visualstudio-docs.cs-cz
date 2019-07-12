@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ecf0e87a954afc2577c5e374bd22ac9da024be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 918368ff9ce8f9d0363d3ae0cba85e55dc361086
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335405"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824608"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Složené vzory pro sadu Visual Studio
 Složené vzory kombinovat elementy interakce a návrhu v různých konfiguracích. Některé z vašich nejdůležitějších složené vzory v sadě Visual Studio s ohledem na konzistenci patří:
@@ -226,7 +226,7 @@ Složené vzory kombinovat elementy interakce a návrhu v různých konfigurací
 
 - **Vždy** pokusu o vytvoření indikátor, který shrnuje informace jsou k dispozici. Zvažte poskytnutí počet počet datových položek, které jsou k dispozici (například "3 odkazy" namísto jednoduše odkazy na"") nebo jiným způsobem slouží ke shrnutí dat si můžete představit.
 
-    - V případech, kdy data pro indikátor nemůže vždy být vypočítán a zobrazí okamžitě vezměte v úvahu poskytování zpětné vazby na postupné, jak se počítají hodnoty. Představte si třeba animace změn, které aktualizace k dispozici dat, podobně jako způsob, jakým živou dlaždici e-mailu na Windows Phone aktualizuje jako počet nepřečtených e-mailů zvyšuje.
+  - V případech, kdy data pro indikátor nemůže vždy být vypočítán a zobrazí okamžitě vezměte v úvahu poskytování zpětné vazby na postupné, jak se počítají hodnoty. Představte si třeba animace změn, které aktualizace k dispozici dat, podobně jako způsob, jakým živou dlaždici e-mailu na Windows Phone aktualizuje jako počet nepřečtených e-mailů zvyšuje.
 
 - **Nikdy** přidat další indikátory, než uživatel rozumně udělat pro určitou část obsahu. Ambientní ukazatele by měl být užitečné bez nutnosti zásahu uživatele. Indikátory ke ztrátě svých podmínek vyžadují přetečení a další ovládací prvky správy a změňte je na zobrazení.
 
@@ -235,11 +235,11 @@ Složené vzory kombinovat elementy interakce a návrhu v různých konfigurací
 
 - **Vždy** bude uživatel muset provést některé explicitní gesta otevřete další obsah. Běžné otevřít gesta patří:
 
-    - **Při najetí myší:** popisky nebo jako neinteraktivní informativní obsah
+  - **Při najetí myší:** popisky nebo jako neinteraktivní informativní obsah
 
-    - **Explicitní příkaz:** vložené přednášejícího
+  - **Explicitní příkaz:** vložené přednášejícího
 
-    - **Dvakrát klikněte na indikátor okolí:** Automaticky otevírané okno CodeLens
+  - **Dvakrát klikněte na indikátor okolí:** Automaticky otevírané okno CodeLens
 
 - **Vždy** Zavřít podrobnosti o obsahu vždy, když uživatel stiskne klávesu Esc.
 

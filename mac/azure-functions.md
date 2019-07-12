@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: ca5c3133e3f03d4e68449156b35d6643c637a11b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692828"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825554"
 ---
 # <a name="introduction-to-azure-functions"></a>Úvod do Azure Functions
 
@@ -138,14 +138,14 @@ Je jedním z důležitých nastavení budete muset nastavit `FUNCTIONS_EXTENSION
 ## <a name="available-function-templates"></a>K dispozici funkce šablon
 
 - **Aktivační událost Githubu** – reakce na události, ke kterým dochází ve svých úložištích Githubu. Další informace najdete v tématu [Azure Functions článku na Githubu](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - Komentátor Githubu – tato funkce se spustí, když přijme webhook Githubu pro problém nebo o přijetí změn žádost a přidá komentář.
-    - WebHook Githubu – tato funkce se spustí, když přijme webhook Githubu.
+  - Komentátor Githubu – tato funkce se spustí, když přijme webhook Githubu pro problém nebo o přijetí změn žádost a přidá komentář.
+  - WebHook Githubu – tato funkce se spustí, když přijme webhook Githubu.
 
 - **HTTP** – aktivace provádění kódu pomocí požadavku HTTP. Existují explicitní šablony pro následující aktivační události HTTP:
-    - Http Trigger
-    - CRUD GET protokolu HTTP
-    - HTTP POST CRUD
-    - Aktivační událost HTTP s parametry
+  - Http Trigger
+  - CRUD GET protokolu HTTP
+  - HTTP POST CRUD
+  - Aktivační událost HTTP s parametry
 
 - **Časovač** – provádění úkolů čištění nebo jiných dávkových úkolů podle předdefinovaného plánu. Tato šablona má dvě pole: název a plánu, což je výraz CRONU pole. Další informace najdete v tématu [Azure functions článek na čas](/azure/azure-functions/functions-create-scheduled-function)
 

@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e822ae5f50436a2f1b0b4863b7e6cf3a7d5d0963
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441828"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826059"
 ---
 # <a name="events-in-office-projects"></a>Události v projektech pro systém Office
   Každá šablona projektu Office automaticky vygeneruje několik obslužných rutin událostí. Obslužné rutiny událostí pro přizpůsobení na úrovni dokumentu se mírně liší od obslužné rutiny událostí pro doplňky VSTO.
@@ -56,13 +56,13 @@ ms.locfileid: "63441828"
 
 - Obslužné rutiny událostí pro projekty Microsoft Office Excel, mají následující názvy:
 
-    - `Sheet1_Startup`
+  - `Sheet1_Startup`
 
-    - `Sheet2_Startup`
+  - `Sheet2_Startup`
 
-    - `Sheet3_Startup`
+  - `Sheet3_Startup`
 
-    - `ThisWorkbook_Startup`
+  - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>událost vypnutí
  **Vypnutí** událost se vyvolá pro každou z položek hostitele (dokumentu nebo listu), když je doména aplikace, který váš kód je načten v Chystáte se odinstalovat. Je to poslední věcí, kterou má být volána ve třídě, jako je uvolněn.
@@ -73,13 +73,13 @@ ms.locfileid: "63441828"
 
 - Obslužné rutiny událostí pro projekty Microsoft Office Excel, mají následující názvy:
 
-    - `Sheet1_Shutdown`
+  - `Sheet1_Shutdown`
 
-    - `Sheet2_Shutdown`
+  - `Sheet2_Shutdown`
 
-    - `Sheet3_Shutdown`
+  - `Sheet3_Shutdown`
 
-    - `ThisWorkbook_Shutdown`
+  - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
 > Neodebírejte ovládacích prvků při prostřednictvím kódu programu **vypnutí** obslužná rutina události dokumentu. Prvky uživatelského rozhraní dokumentu již nejsou k dispozici při **vypnutí** dojde k události. Pokud chcete odebrání ovládacích prvků, než aplikaci zavře, přidejte svůj kód na jinou obslužnou rutinu události, jako například **BeforeClose** nebo **BeforeSave**.

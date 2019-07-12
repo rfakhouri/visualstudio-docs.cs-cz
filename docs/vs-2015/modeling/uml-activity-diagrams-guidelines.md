@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 310e13e781997fd3a6431e4257918f8e61b9420d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439729"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823570"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramy činnosti UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,15 +208,15 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
  Můžete určit, jak jsou položky ve vyrovnávací paměti uložené nastavením vlastnosti z objektu uzlu:  
   
 - Nastavte **řazení** vlastnost:  
-  
-    - **Neseřazený** k určení náhodných nebo neurčené pořadí. (Výchozí).  
-  
-    - **Seřazené** k určení pořadí podle určitého klíče.  
-  
-    - **FIFO** k určení pořadí první dovnitř, první ven.  
-  
-    - **LIFO** k určení pořadí poslední dovnitř, první.  
-  
+
+  - **Neseřazený** k určení náhodných nebo neurčené pořadí. (Výchozí).  
+
+  - **Seřazené** k určení pořadí podle určitého klíče.  
+
+  - **FIFO** k určení pořadí první dovnitř, první ven.  
+
+  - **LIFO** k určení pořadí poslední dovnitř, první.  
+
 - Nastavte **horní mez** vlastnosti a určit maximální počet objektů, které mohou být obsaženy ve vyrovnávací paměti. Výchozí hodnota je *. To znamená, že není nijak omezený.  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Popis toku dat s vstupní a výstupní spojky.  
@@ -317,7 +317,7 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
 - Můžete nastavit **je synchronní** vlastnost Akce, která označuje, zda vaše aktivita čeká na dokončení operace.  
   
-    - Pokud nastavíte **je synchronní** na hodnotu false, jsou označující, že tok můžete i nadále další akce před názvem operace se dokončila. Výstup by neměl definovat PIN kódy nebo odchozích dat toky z akce.  
+  - Pokud nastavíte **je synchronní** na hodnotu false, jsou označující, že tok můžete i nadále další akce před názvem operace se dokončila. Výstup by neměl definovat PIN kódy nebo odchozích dat toky z akce.  
   
 ## <a name="Concurrent"></a> Souběžné toků  
  Můžete použít **Forku uzel** a **připojit k uzlu** k popisu dvě či více vláken aktivit, které můžete spustit ve stejnou dobu.  

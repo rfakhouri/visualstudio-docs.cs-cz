@@ -12,14 +12,14 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 022966ae483b958da6032769e219f4ab6750f330
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c998433ca96c46f6a24b75aec5d3a2a95912b786
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696445"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823296"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Postupy: Upgrade projektů Visual C++ pro Visual Studio 2015
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Postupy: Upgrade projektů Visual C++ pro sadu Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nejnovější dokumentaci pro sadu Visual Studio 2017 najdete v tématu [průvodce Visual C++ přenosem a upgradováním](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
@@ -36,12 +36,12 @@ Při prvním otevření projektu Visual C++, který byl vytvořen v dřívějš�
 
 - Pokud byl projekt (.vcxproj) vytvořen v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] máte dvě možnosti:
 
-    - Aktualizaci můžete přeskočit. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] načte projekt bez provedení změn, pokud má přístup k nástrojům aplikace Visual C++ v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] s aktualizací SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Tento přístup můžete poskytnout instalací verze Visual Studio, která projekt byl vytvořen s ve stejném počítači, který má [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Další informace najdete v tématu [instalaci verzí sady Visual Studio Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).
+  - Aktualizaci můžete přeskočit. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] načte projekt bez provedení změn, pokud má přístup k nástrojům aplikace Visual C++ v [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] s aktualizací SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Tento přístup můžete poskytnout instalací verze Visual Studio, která projekt byl vytvořen s ve stejném počítači, který má [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Další informace najdete v tématu [instalaci verzí sady Visual Studio Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).
 
-    - Můžete aktualizovat projekt tím, že [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] provést změny, které jsou popsány dále v tomto tématu. Pokud máte více než jeden projekt Visual C++ ve vašem řešení, musíte aktualizovat všechny z nich.
+  - Můžete aktualizovat projekt tím, že [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] provést změny, které jsou popsány dále v tomto tématu. Pokud máte více než jeden projekt Visual C++ ve vašem řešení, musíte aktualizovat všechny z nich.
 
-        > [!NOTE]
-        > Pokud aktualizaci odmítnete při první výzvě, můžete aktualizovat projekt později výběrem **aktualizovat projekt VC ++** na **projektu** nabídky. Pokud tento příkaz nezobrazí, není aktualizace požadována.
+    > [!NOTE]
+    > Pokud aktualizaci odmítnete při první výzvě, můžete aktualizovat projekt později výběrem **aktualizovat projekt VC ++** na **projektu** nabídky. Pokud tento příkaz nezobrazí, není aktualizace požadována.
 
 ## <a name="upgrading-a-visual-c-project"></a>Upgrade projektu Visual C++
  Pokud je povoleno [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] automaticky aktualizovat projekt, budou provedeny tyto změny:

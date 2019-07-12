@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: daf5251aa32f4101bfba21d053d72abceef1eb15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a103777005718a54d271d2f94cb0e5cf0b094ce6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440855"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826137"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Návod: Vložení dat do sešitu na serveru
   Tento návod ukazuje, jak vložit data do datové sady, které se uloží do mezipaměti v sešitu aplikace Microsoft Office Excel bez spuštění pomocí aplikace Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy.
@@ -54,9 +54,9 @@ ms.locfileid: "63440855"
 
 - Přístup ke spuštěné instanci serveru Microsoft SQL Server nebo Microsoft SQL Server Express, který má k němu připojené ukázkové databáze AdventureWorksLT. Můžete stáhnout z databáze AdventureWorksLT [webu CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Další informace o připojení databáze naleznete v následujících tématech:
 
-    - Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    - Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
+  - Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Vytvořte projekt knihovny tříd, který definuje datovou sadu
  Pokud chcete použít stejné datové sady v projektu sešitu aplikace Excel a konzolové aplikace, musí definovat datové sady v samostatné sestavení, který je odkazován oba z těchto projektů. V tomto návodu definování datové sady v projektu knihovny tříd.
@@ -104,7 +104,7 @@ ms.locfileid: "63440855"
 
 6. V **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.
 
-7. V **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** a vyberte **produkt (SalesLT)**.
+7. V **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** a vyberte **produkt (SalesLT)** .
 
 8. Klikněte na tlačítko **Dokončit**.
 
@@ -286,7 +286,7 @@ ms.locfileid: "63440855"
 
 3. Ověřte, že <xref:Microsoft.Office.Tools.Excel.ListObject> naplněný daty po otevření sešitu.
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
 Další informace o práci s data uložená v mezipaměti naleznete v těchto tématech:
 

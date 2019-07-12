@@ -11,12 +11,12 @@ ms.author: ronpet
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 96ac53900806cc37e215342573f998be995289f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86ed90e6a4fe211d162f12785b0f3f555802ad17
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785881"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823758"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Co je nového v Live Unit Testing pro Visual Studio 2017
 
@@ -28,9 +28,9 @@ Od verze Visual Studio 2017 verze 15.4, Live Unit Testing obsahuje vylepšení v
 
 - **Vylepšené možnosti rozpoznání**. Pro uživatele, kteří neznáte, které Live Unit Testing funkce existuje, integrovaném vývojovém prostředí sady Visual Studio zobrazuje zlatý pruh, který uvádí Live Unit Testing pokaždé, když uživatel otevře řešení, která obsahuje testy jednotek, ale Live Unit Testing není povolená. Informace uváděné v zlatý pruh umožňuje uživateli získat další informace o Live Unit Testing a chcete ho povolit. Zlatý pruh také zobrazí informace, pokud Live Unit Testing požadavky nejsou splněny. Zde jsou některé z nich:
 
-   - Adaptéry testu nebyly nalezeny.
-   - Starší verze adaptéry testu jsou k dispozici.
-   - Je potřeba obnovit balíčky NuGet odkazované řešení.
+  - Adaptéry testu nebyly nalezeny.
+  - Starší verze adaptéry testu jsou k dispozici.
+  - Je potřeba obnovit balíčky NuGet odkazované řešení.
 
 - **Integrace s oznámeními Centrum úkolů**. Integrované vývojové prostředí sady Visual Studio teď zobrazují Live Unit Testing zpracování na pozadí oznámení v centru úloh tak, aby uživatelé mohli snadno určit, co se děje při zapnuté funkci Live Unit Testing. To řeší klíče problém spouští se Live Unit Testing na velkých projektech. Dříve pár minut dokud ikony pokrytí objevily, uživatelé nelze určit, jestli se ve skutečnosti povolená Live Unit Testing a určuje, zda byla práce. Už ne.
 
@@ -60,9 +60,9 @@ Kromě těchto hlavními dodatky Live Unit Testing zahrnuje následující vylep
 
 - Následující atributy můžete nyní použít k určení ve zdrojovém kódu, že chcete vyloučit z Live Unit Testing cílové testovací metody:
 
-   - Pro xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
-   - Pro NUnit: `[Category("SkipWhenLiveUnitTesting")]`
-   - Pro MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
+  - Pro xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+  - Pro NUnit: `[Category("SkipWhenLiveUnitTesting")]`
+  - Pro MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Viz také:
 

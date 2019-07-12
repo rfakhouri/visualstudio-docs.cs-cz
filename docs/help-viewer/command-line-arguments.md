@@ -3,17 +3,17 @@ title: Argumenty příkazového řádku pro Help Content Manager
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09b63b3d01329a5fe243d100eeea921299061433
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824679"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825090"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumenty příkazového řádku pro Help Content Manager
 
@@ -49,7 +49,7 @@ Následující tabulka definuje přepínače a argumenty, které můžete použ�
 |/ catalogname|Ano|Určuje název katalogu obsahu.|
 |/ Locale|Ne|Určuje národní prostředí produktu, který slouží k zobrazení a správě obsahu pro aktuální instanci Help viewer. Například zadejte `EN-US` pro americkou angličtinu.<br /><br /> Pokud nezadáte národní prostředí, se používá národní prostředí operačního systému. Pokud nelze určit toto národní prostředí, `EN-US` se používá.<br /><br /> Pokud zadáte národní prostředí, která není platná, je zaznamenána chybová zpráva v protokolu událostí.|
 |/e|Ne|Zvýší oprávnění správce obsahu nápovědy k oprávnění pro správu, pokud má aktuální uživatel přihlašovací údaje pro správu.|
-|/sourceURI|Ne|Určuje adresu URL, ze kterého je obsah nainstalován (API služby) nebo cesta k souboru instalace obsahu (*.msha*). Adresa URL může odkazovat do skupiny produktů (uzel nejvyšší úrovně) nebo na produktové knihy (uzel úrovně listu) v koncovém bodu ve stylu Visual Studio 2010. Nemusíte zahrnovat lomítko (/) na konci adresy URL. Pokud zahrnete koncové lomítko, bude zpracováno odpovídajícím způsobem.<br /><br /> Zaznamenána chybová zpráva se v případě protokolu Pokud zadáte soubor, který není nalezen, není platný nebo není přístupný, nebo pokud není k dispozici připojení k Internetu, nebo je přerušeno během správy obsahu.|
+|/sourceURI|Ne|Určuje adresu URL, ze kterého je obsah nainstalován (API služby) nebo cesta k souboru instalace obsahu ( *.msha*). Adresa URL může odkazovat do skupiny produktů (uzel nejvyšší úrovně) nebo na produktové knihy (uzel úrovně listu) v koncovém bodu ve stylu Visual Studio 2010. Nemusíte zahrnovat lomítko (/) na konci adresy URL. Pokud zahrnete koncové lomítko, bude zpracováno odpovídajícím způsobem.<br /><br /> Zaznamenána chybová zpráva se v případě protokolu Pokud zadáte soubor, který není nalezen, není platný nebo není přístupný, nebo pokud není k dispozici připojení k Internetu, nebo je přerušeno během správy obsahu.|
 |/ Vendor|Ne|Určuje dodavatele obsahu produktu, který bude odebrán (například `Microsoft`). Výchozí argument pro tento přepínač je Microsoft.|
 |argumentů|Ne|Určuje produktový název knih, které se odeberou. Název produktu je identifikován v *helpcontentsetup.msha* nebo *books.html* soubory, které byly dodány s obsahem. Najednou můžete odebrat knihy pouze z jednoho produktu. Chcete-li odebrání knihy z více produktů, je nutné provést více instalací.|
 |/ booklist|Ne|Určuje názvy knih, které mají být spravovány, oddělené mezerami. Hodnoty musí odpovídat formálním názvům, jak je uvedeno na instalačním médiu.<br /><br /> Pokud nezadáte tento argument, jsou nainstalované všechny doporučené knihy pro daný produkt v/sourceuri.<br /><br /> Obsahuje-li název knihy jednu nebo více mezer, uzavřete jej mezi dvojité uvozovky (") tak, aby seznam správně oddělován.<br /><br /> Pokud zadáte parametr/sourceuri, který není platný nebo není dostupný, budou zaznamenány chybové zprávy.|

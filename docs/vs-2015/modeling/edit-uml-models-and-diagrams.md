@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 446e6eb6231ff4d744f22bd3d1ba4fa6dcca6525
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442969"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823189"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Úpravy modelů a diagramů UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ Můžete vytvořit a upravit model UML prostřednictvím zobrazení poskytuje n�
   
      \- nebo –  
   
-- Na **návrháři architektury** nástrojů, klikněte na znaménko plus (**+**) nebo minus (**-**), nebo zvolit úroveň zvětšení.  
+- Na **návrháři architektury** nástrojů, klikněte na znaménko plus ( **+** ) nebo minus ( **-** ), nebo zvolit úroveň zvětšení.  
   
 ## <a name="Searching"></a> Hledání v diagramu  
  Funkce Rychlé hledání najdete položky v diagramu. Je nutné nastavit **oblast hledání:** k **aktuální dokument**.  
@@ -294,9 +294,9 @@ Můžete vytvořit a upravit model UML prostřednictvím zobrazení poskytuje n�
   
 - Klikněte pravým tlačítkem na element buď v **Průzkumníku modelů UML** nebo v diagramu a pak klikněte na tlačítko **odstranit z modelu**.  
   
-    - Prvek je odstraněn z každý diagram, ve kterém se zobrazí.  
-  
-    - Každý vztah, který končí na tento element je také odstranit z modelu.  
+  - Prvek je odstraněn z každý diagram, ve kterém se zobrazí.  
+
+  - Každý vztah, který končí na tento element je také odstranit z modelu.  
   
 #### <a name="to-delete-a-relationship-from-the-model"></a>Odstranění relace z modelu  
   

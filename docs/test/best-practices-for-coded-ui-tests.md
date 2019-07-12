@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822973"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826083"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Osvědčené postupy pro programové testy uživatelského rozhraní
 
@@ -62,11 +62,11 @@ Uživatelské rozhraní se často měnit během vývoje. Tady jsou některé zp�
 
 - Pokud má ovládací prvek, který již není platný kontrolní výraz:
 
-    - Odstraníte metodu, která obsahuje kontrolní výraz.
+  - Odstraníte metodu, která obsahuje kontrolní výraz.
 
-    - Odeberte volání této metody z testovací metody.
+  - Odeberte volání této metody z testovací metody.
 
-    - Přidat kontrolní výraz nové přetažením nitkového kříže tlačítko na ovládací prvek uživatelského rozhraní, otevřete v mapování uživatelského rozhraní a přidat nový kontrolní výraz.
+  - Přidat kontrolní výraz nové přetažením nitkového kříže tlačítko na ovládací prvek uživatelského rozhraní, otevřete v mapování uživatelského rozhraní a přidat nový kontrolní výraz.
 
 Další informace o tom, jak zaznamenat programové testy UI, naleznete v tématu [automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md).
 

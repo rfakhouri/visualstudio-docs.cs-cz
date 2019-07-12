@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715211"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821372"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Nástroje datových sad v sadě Visual Studio
 
@@ -75,13 +75,13 @@ Visual Studio poskytuje nástroje ke zjednodušení práce s datovými sadami. J
 
 - Použití **Průvodce nastavením TableAdapter** k určení dotazu nebo uložené procedury, které naplňuje datovou sadu a jaké operace databáze (update, delete a podobně) k implementaci. Další informace najdete v těchto tématech:
 
-    - [Vyplnění datových sad pomocí objektů TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Vyplnění datových sad pomocí objektů TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Úprava dat v datových sadách](../data-tools/edit-data-in-datasets.md)
+  - [Úprava dat v datových sadách](../data-tools/edit-data-in-datasets.md)
 
-    - [Ověřování dat v datových sadách](../data-tools/validate-data-in-datasets.md)
+  - [Ověřování dat v datových sadách](../data-tools/validate-data-in-datasets.md)
 
-    - [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)
+  - [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)
 
 - Dotazování a hledání dat v datové sadě. Další informace najdete v tématu [dotazování datových sad](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] umožňuje [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) nad daty v <xref:System.Data.DataSet> objektu. Další informace najdete v tématu [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 

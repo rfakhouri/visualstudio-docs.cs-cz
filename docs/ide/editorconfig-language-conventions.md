@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 90c080b62be8f3aba128b26aafe9d2b6e30446f5
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 0ddb6173095b8d4fd552e108f458a271321511c7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586778"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823306"
 ---
 # <a name="language-conventions"></a>Konvence jazyka
 
@@ -56,36 +56,36 @@ severity | Efekt
 Pravidla stylu v této části se vztahují na C# i Visual Basic.
 
 - ["This." a "Me." kvalifikátory](#this-and-me)
-   - DotNet\_styl\_kvalifikace\_for_field
-   - dotnet\_style\_qualification\_for_property
-   - DotNet\_styl\_kvalifikace\_for_method
-   - DotNet\_styl\_kvalifikace\_for_event
+  - DotNet\_styl\_kvalifikace\_for_field
+  - dotnet\_style\_qualification\_for_property
+  - DotNet\_styl\_kvalifikace\_for_method
+  - DotNet\_styl\_kvalifikace\_for_event
 - [Klíčová slova jazyka místo framework názvy typů pro odkazy na typ](#language-keywords)
-   - DotNet\_styl\_předdefinované\_typ\_pro\_lokální\_parameters_members
-   - dotnet\_style\_predefined\_type\_for\_member_access
+  - DotNet\_styl\_předdefinované\_typ\_pro\_lokální\_parameters_members
+  - dotnet\_style\_predefined\_type\_for\_member_access
 - [Modifikátor předvolby](#normalize-modifiers)
-   - dotnet\_style\_require\_accessibility_modifiers
-   - csharp\_preferred\_modifier_order
-   - visual\_basic\_preferred\_modifier_order
-   - dotnet\_style\_readonly\_field
+  - dotnet\_style\_require\_accessibility_modifiers
+  - csharp\_preferred\_modifier_order
+  - visual\_basic\_preferred\_modifier_order
+  - dotnet\_style\_readonly\_field
 - [Předvolby závorky](#parentheses-preferences)
-   - DotNet\_styl\_závorky\_v\_aritmetické\_binární\_operátory
-   - DotNet\_styl\_závorky\_v\_jiných\_binární\_operátory
-   - DotNet\_styl\_závorky\_v\_jiných\_operátory
-   - DotNet\_styl\_závorky\_v\_relační\_binární\_operátory
+  - DotNet\_styl\_závorky\_v\_aritmetické\_binární\_operátory
+  - DotNet\_styl\_závorky\_v\_jiných\_binární\_operátory
+  - DotNet\_styl\_závorky\_v\_jiných\_operátory
+  - DotNet\_styl\_závorky\_v\_relační\_binární\_operátory
 - [Předvolby výrazu úrovni](#expression-level-preferences)
-   - dotnet\_style\_object_initializer
-   - DotNet\_styl\_collection_initializer
-   - dotnet\_style\_explicit\_tuple_names
-   - dotnet\_style\_prefer\_inferred\_tuple_names
-   - DotNet\_styl\_raději\_odvodit\_anonymní\_typ\_member_names
-   - dotnet\_style\_prefer\_auto\_properties
-   - DotNet\_styl\_raději\_je\_null\_zkontrolujte\_přes\_odkaz\_rovnosti\_– metoda
-   - DotNet\_styl\_raději\_podmíněného\_výraz\_přes\_přiřazení
-   - DotNet\_styl\_raději\_podmíněného\_výraz\_přes\_vrátit
+  - dotnet\_style\_object_initializer
+  - DotNet\_styl\_collection_initializer
+  - dotnet\_style\_explicit\_tuple_names
+  - dotnet\_style\_prefer\_inferred\_tuple_names
+  - DotNet\_styl\_raději\_odvodit\_anonymní\_typ\_member_names
+  - dotnet\_style\_prefer\_auto\_properties
+  - DotNet\_styl\_raději\_je\_null\_zkontrolujte\_přes\_odkaz\_rovnosti\_– metoda
+  - DotNet\_styl\_raději\_podmíněného\_výraz\_přes\_přiřazení
+  - DotNet\_styl\_raději\_podmíněného\_výraz\_přes\_vrátit
 - ["Null" Kontrola předvolby](#null-checking-preferences)
-   - dotnet\_style\_coalesce_expression
-   - dotnet\_style\_null_propagation
+  - dotnet\_style\_coalesce_expression
+  - dotnet\_style\_null_propagation
 
 ### <a name="this-and-me"></a>"This." a "Me." Kvalifikátory
 
@@ -949,30 +949,30 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 Pravidla stylu v této části jsou pouze pro C#.
 
 - [Implicitní a explicitní typy](#implicit-and-explicit-types)
-   - csharp\_style\_var\_for\_built\_in_types
-   - csharp\_style\_var\_when\_type\_is_apparent
-   - csharp\_style\_var_elsewhere
+  - csharp\_style\_var\_for\_built\_in_types
+  - csharp\_style\_var\_when\_type\_is_apparent
+  - csharp\_style\_var_elsewhere
 - [Členové tvoření výrazy](#expression-bodied-members)
-   - csharp\_style\_expression\_bodied_methods
-   - csharp\_style\_expression\_bodied_constructors
-   - csharp\_style\_expression\_bodied_operators
-   - csharp\_style\_expression\_bodied_properties
-   - csharp\_style\_expression\_bodied_indexers
-   - csharp\_style\_expression\_bodied_accessors
+  - csharp\_style\_expression\_bodied_methods
+  - csharp\_style\_expression\_bodied_constructors
+  - csharp\_style\_expression\_bodied_operators
+  - csharp\_style\_expression\_bodied_properties
+  - csharp\_style\_expression\_bodied_indexers
+  - csharp\_style\_expression\_bodied_accessors
 - [Porovnávání vzorů](#pattern-matching)
-   - csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
-   - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
+  - csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
+  - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
 - [Vložená deklarace proměnné](#inlined-variable-declarations)
-   - csharp\_style\_inlined\_variable_declaration
+  - csharp\_style\_inlined\_variable_declaration
 - [Předvolby výrazu úrovni](#expression-level-preferences)
-   - csharp\_prefer\_simple\_default_expression
-   - csharp\_style\_deconstructed\_variable_declaration
-   - CSharp\_styl\_vzor\_místní\_přes\_anonymous_function
+  - csharp\_prefer\_simple\_default_expression
+  - csharp\_style\_deconstructed\_variable_declaration
+  - CSharp\_styl\_vzor\_místní\_přes\_anonymous_function
 - ["Null" Kontrola předvolby](#null-checking-preferences)
-   - csharp\_style\_throw_expression
-   - csharp\_style\_conditional\_delegate_call
+  - csharp\_style\_throw_expression
+  - csharp\_style\_conditional\_delegate_call
 - [Předvolby bloku kódu](#code-block-preferences)
-   - csharp\_prefer_braces
+  - csharp\_prefer_braces
 
 ### <a name="implicit-and-explicit-types"></a>Implicitní a explicitní typy
 

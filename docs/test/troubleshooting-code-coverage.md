@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc94f3486a4a290dbcdff40303f58b8b42f3f9d9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990503"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825869"
 ---
 # <a name="troubleshoot-code-coverage"></a>Řešení problémů s pokrytím kódu
 
-Analytické nástroje pokrytí kódu v sadě Visual Studio shromažďuje data pro nativní a spravovaná sestavení (*.dll* nebo *.exe* soubory). V některých případech se však **výsledky pokrytí kódu** v okně se zobrazí zpráva podobná "generovány prázdné výsledky:..." Tady je několik důvodů, proč můžete získat prázdné výsledky. Tento článek pomůže při řešení těchto problémů.
+Analytické nástroje pokrytí kódu v sadě Visual Studio shromažďuje data pro nativní a spravovaná sestavení ( *.dll* nebo *.exe* soubory). V některých případech se však **výsledky pokrytí kódu** v okně se zobrazí zpráva podobná "generovány prázdné výsledky:..." Tady je několik důvodů, proč můžete získat prázdné výsledky. Tento článek pomůže při řešení těchto problémů.
 
 ## <a name="what-you-should-see"></a>Co byste měli vidět
 
@@ -97,11 +97,11 @@ Rozlišení&mdash;existují dva typy možných chyb:
 
 - **Chyba regulárního výrazu**
 
-     Každý řetězec v souboru je regulární výraz. Zkontrolujte každé z nich nejsou chyby a hledejte zejména:
+  Každý řetězec v souboru je regulární výraz. Zkontrolujte každé z nich nejsou chyby a hledejte zejména:
 
-    - Neshoda závorek (...) nebo závorky \\(...) \\). Pokud ve vyhledávacím řetězci chcete najít závorky, musíte je přeskočit. Chcete-li například funkci, použijte: `.*MyFunction\(double\)`
+  - Neshoda závorek (...) nebo závorky \\(...) \\). Pokud ve vyhledávacím řetězci chcete najít závorky, musíte je přeskočit. Chcete-li například funkci, použijte: `.*MyFunction\(double\)`
 
-    - Hvězdička nebo plus na začátku výrazu. Pro vyhledání libovolného řetězce znaků, použijte tečku následovanou hvězdičkou: `.*`
+  - Hvězdička nebo plus na začátku výrazu. Pro vyhledání libovolného řetězce znaků, použijte tečku následovanou hvězdičkou: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Nesprávná vyloučení ve vlastním souboru .runsettings
 

@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 622af2c5f15187f6e04b53b4f0ba433c91f85a07
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701184"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826194"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Vytváření aplikací v obousměrných jazycích
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Visual Studio můžete vytvářet aplikace pro správné zobrazení textu v jazy
   
 - **Doleva pořadí čtení** ve výchozím nastavení, ovládací prvky zadání textu můžete použít v sadě Visual Studio používat pořadí čtení zleva doprava. Ve většině případů můžete použít standardní Windows gesta přepnout pořadí čtení. Například můžete stiskněte klávesu Shift Ctrl + šipka vpravo přepnout v okně Vlastnosti pro podporu hodnoty vlastností pořadí čtení zprava doleva.  
   
-     Pořadí čtení zprava doleva není ale podporované všude v sadě Visual Studio. Výjimky patří:  
-  
-    - Zaškrtávací políčka, rozevírací seznamy a další ovládací prvky v dialogových oknech sady Visual Studio použijte vždy pořadí čtení zleva doprava.  
-  
-    - Editor kódu (a textový editor) nepodporuje pořadí čtení zprava doleva. Můžete zadat text v obousměrných jazyků, ale je vždy o pořadí čtení zleva doprava.  
+  Pořadí čtení zprava doleva není ale podporované všude v sadě Visual Studio. Výjimky patří:  
+
+  - Zaškrtávací políčka, rozevírací seznamy a další ovládací prvky v dialogových oknech sady Visual Studio použijte vždy pořadí čtení zleva doprava.  
+
+  - Editor kódu (a textový editor) nepodporuje pořadí čtení zprava doleva. Můžete zadat text v obousměrných jazyků, ale je vždy o pořadí čtení zleva doprava.  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>Pojmenování věci pomocí arabské nebo hebrejské Text  
  Arabský nebo hebrejský text můžete přiřadit názvy složek, proměnné nebo jiné objekty. Při práci s arabština, můžete použít libovolný Arabské znaků včetně kašidy a diakritických znamének.  

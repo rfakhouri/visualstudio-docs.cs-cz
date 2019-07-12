@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433152"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825933"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definování obslužné rutiny gest v diagramu modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -282,34 +282,34 @@ V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, kdy
   
 - `ShapeElement target`. Tvar nebo diagram, do kterého uživatel něco přetáhl.  
   
-     `ShapeElement` je třída implementace, které je základem UML v modelovacích nástrojích. Aby se snížilo riziko uvedení modelu a diagramů do nekonzistentního stavu, doporučujeme vám, že je velmi riskantní používat metody této třídy přímo. Místo toho zabalte prvek do `IShape`a pak použijte metody popsané v [zobrazení modelu UML v diagramech](../modeling/display-a-uml-model-on-diagrams.md).  
-  
-    - Získat `IShape`:  
-  
-        ```  
-        IShape targetIShape = target.CreateIShape(target);  
-        ```  
-  
-    - Chcete-li získat prvek modelu, který je cílen operací přetažení nebo poklepání:  
-  
-        ```  
-        IElement target = targetIShape.Element;  
-        ```  
-  
-         Můžete přetypovat na konkrétnější typ prvku.  
-  
-    - Získání úložiště modelu UML, který obsahuje UML model:  
-  
-        ```  
-        IModelStore modelStore =   
-          targetIShape.Element.GetModelStore();   
-        ```  
-  
-    - Chcete-li získat přístup k hostiteli a poskytovateli služby:  
-  
-        ```  
-        target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
-        ```  
+    `ShapeElement` je třída implementace, které je základem UML v modelovacích nástrojích. Aby se snížilo riziko uvedení modelu a diagramů do nekonzistentního stavu, doporučujeme vám, že je velmi riskantní používat metody této třídy přímo. Místo toho zabalte prvek do `IShape`a pak použijte metody popsané v [zobrazení modelu UML v diagramech](../modeling/display-a-uml-model-on-diagrams.md).  
+
+  - Získat `IShape`:  
+
+      ```  
+      IShape targetIShape = target.CreateIShape(target);  
+      ```  
+
+  - Chcete-li získat prvek modelu, který je cílen operací přetažení nebo poklepání:  
+
+      ```  
+      IElement target = targetIShape.Element;  
+      ```  
+
+        You can cast this to a more specific type of element.  
+
+  - Získání úložiště modelu UML, který obsahuje UML model:  
+
+      ```  
+      IModelStore modelStore =   
+        targetIShape.Element.GetModelStore();   
+      ```  
+
+  - Chcete-li získat přístup k hostiteli a poskytovateli služby:  
+
+      ```  
+      target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
+      ```  
   
 - `DiagramDragEventArgs eventArgs`. Tento parametr provede serializovanou formu zdrojového objektu operace přetažení:  
   

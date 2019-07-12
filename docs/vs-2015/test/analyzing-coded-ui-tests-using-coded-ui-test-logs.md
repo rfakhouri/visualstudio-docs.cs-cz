@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7040b4dd07eebb4332634d5d8ffc1d9bc8d8c06b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90e8e85882225fbecb4947de234081ccfc26fbbb
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686484"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824217"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analýza programových testů uživatelského rozhraní pomocí protokolů z těchto testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,35 +34,35 @@ Programového uživatelského rozhraní testu protokoly filtr a záznam, který 
   
 - Cílová verze rozhraní .NET Framework 4 s soubor App.config nacházejí v projektu testu  
   
-    - Otevřít **QTAgent32_40.exe.config** souboru.  
-  
-         Ve výchozím nastavení je tento soubor umístěn ve  **\<drvie >: \Program soubory (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Upravte hodnotu EqtTraceLevel na požadovanou úroveň protokolu.  
-  
-         Uložte soubor.  
-  
+  - Otevřít **QTAgent32_40.exe.config** souboru.  
+
+    Ve výchozím nastavení je tento soubor umístěn ve  **\<drvie >: \Program soubory (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
+
+    Upravte hodnotu EqtTraceLevel na požadovanou úroveň protokolu.  
+
+    Uložte soubor.  
+
 - Cílová verze rozhraní .NET Framework 4.5 s soubor App.config nacházejí v projektu testu  
   
-    - Otevřít **QTAgent32.exe.config** souboru.  
-  
-         Ve výchozím nastavení je tento soubor umístěn ve  **\<drvie >: \Program soubory (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Upravte hodnotu EqtTraceLevel na požadovanou úroveň protokolu.  
-  
-         Uložte soubor.  
+  - Otevřít **QTAgent32.exe.config** souboru.  
+
+    Ve výchozím nastavení je tento soubor umístěn ve  **\<drvie >: \Program soubory (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.  
+
+    Upravte hodnotu EqtTraceLevel na požadovanou úroveň protokolu.  
+
+    Uložte soubor.  
   
 - K dispozici v testovacím projektu souboru app.config  
   
-    - Otevřete soubor App.config v projektu.  
-  
-         Přidejte následující kód v uzlu Konfigurace:  
-  
-         `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
+  - Otevřete soubor App.config v projektu.  
+
+    Přidejte následující kód v uzlu Konfigurace:  
+
+    `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
   
 - Povolení protokolování z samotný kód testu  
   
-    - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
+  - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
 ### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2: Spustit programový test uživatelského rozhraní a zobrazit protokol  
  Při spuštění programového testu uživatelského rozhraní pomocí změny **QTAgent32.exe.config** soubor na místě, se zobrazí ve výsledcích Průzkumníka testů není odkaz na výstup. Soubory protokolů jsou vytvářeny, ne jenom v případě, že se test nezdaří, ale také u úspěšných testů, pokud je úroveň trasování nastavena na "podrobné."  

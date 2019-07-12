@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3681523595c6e4db50a2a05a7a325decc065cfc5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b1e22447581deee70c133dfdb4c42df6630e26ad
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684391"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823459"
 ---
 # <a name="using-saved-intellitrace-data"></a>Použití dat uložených nástrojem IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,11 +59,11 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
   
 - Pokud soubor .iTrace připojen k pracovní položce serveru Team Foundation Server, postupujte podle těchto kroků v pracovní položce:  
   
-    - V části **všechny odkazy**, najděte soubor .iTrace. Otevřete jej.  
-  
-         \- nebo –  
-  
-    - V části **kroky pro reprodukci**, zvolte **IntelliTrace** odkaz.  
+  - V části **všechny odkazy**, najděte soubor .iTrace. Otevřete jej.  
+
+        \- or -  
+
+  - V části **kroky pro reprodukci**, zvolte **IntelliTrace** odkaz.  
   
 > [!TIP]
 > Pokud jste zavřeli soubor IntelliTrace během ladění, můžete lze jej snadno znovu otevřít. Přejděte **ladění** nabídce zvolte **IntelliTrace**, **zobrazit souhrn protokolu**. Můžete také zvolit **zobrazit souhrn protokolu** v **IntelliTrace** okna. To je k dispozici pouze při ladění pomocí IntelliTrace.  
@@ -85,7 +85,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
   
 - Vyberte záhlaví sloupce seřadíte data.  
   
-- Pomocí vyhledávacího pole filtrovat data. Hledání ve formátu prostého textu funguje napříč všechny sloupce kromě sloupce čas. Můžete také filtrovat hledání v určitém sloupci s jeden filtr na sloupec. Zadejte název sloupce bez mezer, dvojtečkou (**:**) a hledanou hodnotu. Použít tento oddělte středníkem. (**;**) můžete přidat jinou hodnotu sloupce a hledání.  
+- Pomocí vyhledávacího pole filtrovat data. Hledání ve formátu prostého textu funguje napříč všechny sloupce kromě sloupce čas. Můžete také filtrovat hledání v určitém sloupci s jeden filtr na sloupec. Zadejte název sloupce bez mezer, dvojtečkou ( **:** ) a hledanou hodnotu. Použít tento oddělte středníkem. ( **;** ) můžete přidat jinou hodnotu sloupce a hledání.  
   
      Například vyhledejte události výkonu, které obsahují slovo "pomalé" v **popis** sloupců, typ:  
   

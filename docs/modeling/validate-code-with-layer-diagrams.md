@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e21c3699d796d6037d3b8ca0e744e792b9810b6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971352"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824544"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Ověřování kódu pomocí diagramů závislostí
 
@@ -66,8 +66,8 @@ Nastane, ověřování závislostí v reálném čase a zobrazují se chyby okam
 
 * K povolení úplné analýzy řešení při použití ověřování závislostí v reálném čase, otevřete nastavení možností z zlatý pruh, který se zobrazí **seznam chyb**.
 
-   - Zlatý pruh můžete trvale zavřít, pokud si nejste nepotřebujete vidět všechny architektury problémy ve vašem řešení.
-   - Pokud nepovolíte úplné analýzy řešení, analýze se provádí pouze u souborů, který právě upravujete.
+  - Zlatý pruh můžete trvale zavřít, pokud si nejste nepotřebujete vidět všechny architektury problémy ve vašem řešení.
+  - Pokud nepovolíte úplné analýzy řešení, analýze se provádí pouze u souborů, který právě upravujete.
 
 * Při upgradu projekty Povolit živé ověření, zobrazí dialogové okno průběhu převodu.
 
@@ -162,7 +162,7 @@ Během procesu vývoje můžete chtít potlačit některé vykázané konflikty 
 
 Tyto úlohy slouží ke správě chyb ověřování v **seznam chyb** okno:
 
-|**Komu**|**Postupujte podle těchto kroků**|
+|**To**|**Postupujte podle těchto kroků**|
 |-|-|
 |Potlačení vybraných chyb během ověřování|Klikněte pravým tlačítkem na jeden nebo více vybraných chyb, přejděte na **spravovat chyby ověřování**a potom klikněte na tlačítko **potlačit chyby**.<br /><br /> Potlačené chyby se zobrazují s přeškrtnutím. Při příštím spuštění ověřování se tyto chyby nezobrazí.<br /><br /> Potlačené chyby jsou sledovány v souboru .suppressions pro odpovídající soubor diagramu závislostí.|
 |Ukončení potlačování vybraných chyb|Klikněte pravým tlačítkem na Potlačené chyby nebo chyby, přejděte na **spravovat chyby ověřování**a potom klikněte na tlačítko **ukončit potlačování chyb**.<br /><br /> Vybrané potlačené chyby se při příštím spuštění ověřování zobrazí.|

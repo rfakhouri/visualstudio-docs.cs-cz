@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324898"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826034"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Postupy: Ujistěte se, rozšíření kompatibilní s Visual Studio 2017 a Visual Studio 2015
 
@@ -57,8 +57,8 @@ Pokud váš projekt obsahuje *project.json* souboru:
 * Poznamenejte si odkazy v *project.json*.
 * Z **Průzkumníka řešení**, odstranit *project.json* soubor z projektu. Tím se odstraní *project.json* souboru a odebere z projektu.
 * Přidáte že odkazy na NuGet zpátky do projektu:
-    * Klikněte pravým tlačítkem na **řešení** a zvolte **spravovat balíčky NuGet pro řešení**.
-    * Visual Studio automaticky vytvoří *souboru packages.config* souboru za vás.
+  * Klikněte pravým tlačítkem na **řešení** a zvolte **spravovat balíčky NuGet pro řešení**.
+  * Visual Studio automaticky vytvoří *souboru packages.config* souboru za vás.
 
 > [!NOTE]
 > Pokud váš projekt obsahoval EnvDTE balíčky, může potřebovat přidat kliknutím pravým tlačítkem na **odkazy** výběr **přidat odkaz na** a přidejte příslušný odkaz. Pomocí balíčků NuGet může vytvořit chyby při pokusu o svůj projekt sestavit.

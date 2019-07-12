@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8217a6aa349a31921ed454e76ddea306785dea9d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569677"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825904"
 ---
 # <a name="compare-properties-and-items"></a>Porovnávání vlastností a položek
 Vlastnosti nástroje MSBuild a položek se používají k předávání informací do úlohy, vyhodnocení podmínky a ukládat hodnoty, které může být odkazováno v celém souboru projektu.
@@ -93,15 +93,15 @@ Ale to není celý příběh. Když je definována vlastnost, definice položky 
 
 - Během fáze vyhodnocení sestavení:
 
-    - Vlastnosti jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny. Funkce vlastností jsou spuštěny. Hodnoty vlastností ve formě $(PropertyName) rozbaleny v rámci výrazů. Hodnota vlastnosti je nastavena na rozbalené výraz.
+  - Vlastnosti jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny. Funkce vlastností jsou spuštěny. Hodnoty vlastností ve formě $(PropertyName) rozbaleny v rámci výrazů. Hodnota vlastnosti je nastavena na rozbalené výraz.
 
-    - Definice položek jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny. Funkce vlastností byl rozbalen ve výrazech. Metadata hodnoty jsou nastaveny na rozbalené výrazy.
+  - Definice položek jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny. Funkce vlastností byl rozbalen ve výrazech. Metadata hodnoty jsou nastaveny na rozbalené výrazy.
 
-    - Typy položek jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny. Hodnoty položek ve formuláři @(ItemType) rozbaleny. Transformace položky jsou také rozšířit. Funkce vlastností a hodnot už rozšířily ve výrazech. Hodnoty položky seznamu a metadata jsou nastaveny na rozbalené výrazy.
+  - Typy položek jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny. Hodnoty položek ve formuláři @(ItemType) rozbaleny. Transformace položky jsou také rozšířit. Funkce vlastností a hodnot už rozšířily ve výrazech. Hodnoty položky seznamu a metadata jsou nastaveny na rozbalené výrazy.
 
 - Během fáze spuštění sestavení:
 
-    - Vlastnosti a položky, které jsou definovány v rámci cíle jsou vyhodnocovány společně v pořadí, v jakém jsou uvedeny. Vlastnosti funkcí se spustí a hodnoty vlastností jsou rozbaleny v rámci výrazů. Hodnoty položek a transformace položky jsou také rozšířit. Hodnoty vlastností, hodnoty položek typu a hodnoty metadat jsou nastaveny na rozbalené výrazy.
+  - Vlastnosti a položky, které jsou definovány v rámci cíle jsou vyhodnocovány společně v pořadí, v jakém jsou uvedeny. Vlastnosti funkcí se spustí a hodnoty vlastností jsou rozbaleny v rámci výrazů. Hodnoty položek a transformace položky jsou také rozšířit. Hodnoty vlastností, hodnoty položek typu a hodnoty metadat jsou nastaveny na rozbalené výrazy.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Malý vliv pořadí vyhodnocování
 Vyhodnocení vlastnosti v fáze vyhodnocení sestavení předchází vyhodnocení položky. Vlastnosti však může mít hodnoty, které se zobrazují závisí na hodnoty položek. Vezměte v úvahu následující skript.

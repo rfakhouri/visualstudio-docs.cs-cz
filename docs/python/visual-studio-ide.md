@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 690ffff0aa31b90cea58997c982406a900299550
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957440"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826165"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Vítá vás Visual Studio IDE | Python
 
@@ -27,16 +27,16 @@ Visual Studio *integrovaného vývojového prostředí* je creative odrazový m�
 Tento obrázek ukazuje Visual Studio s otevřeném projektu Pythonu a několika okny nástrojů klíče, které budete pravděpodobně používat:
 
 - [**Průzkumník řešení** ](../ide/solutions-and-projects-in-visual-studio.md) (vpravo nahoře) umožňuje zobrazit, přejděte a spravovat soubory kódu. **Průzkumník řešení** pomáhá organizovat kód seskupením soubory do [řešení a projekty](/visualstudio/get-started/tutorial-projects-solutions).
-    - Spolu s **Průzkumníka řešení** je [ **prostředí Pythonu**](managing-python-environments-in-visual-studio.md), kde budete spravovat různé interpretů Pythonu, které jsou nainstalovány ve vašem počítači.
+  - Spolu s **Průzkumníka řešení** je [ **prostředí Pythonu**](managing-python-environments-in-visual-studio.md), kde budete spravovat různé interpretů Pythonu, které jsou nainstalovány ve vašem počítači.
 
-    ::: moniker range=">=vs-2019"
-    - Můžete také otevřít a spuštění kódu Pythonu ve složce bez vytvoření souborů projektu a řešení sady Visual Studio. Další informace najdete v tématu [rychlý start: Otevření a spuštění kódu Pythonu ve složce](quickstart-05-python-visual-studio-open-folder.md).
-    ::: moniker-end
+  ::: moniker range=">=vs-2019"
+  - Můžete také otevřít a spuštění kódu Pythonu ve složce bez vytvoření souborů projektu a řešení sady Visual Studio. Další informace najdete v tématu [rychlý start: Otevření a spuštění kódu Pythonu ve složce](quickstart-05-python-visual-studio-open-folder.md).
+  ::: moniker-end
 
 - [Okno editoru](../ide/writing-code-in-the-code-and-text-editor.md) (System center), kde budete pravděpodobně tráví většinu svého času zobrazí obsah souboru. Tady je [úpravy kódu v Pythonu](editing-python-code-in-visual-studio.md), navigace v rámci struktury kódu a nastavit zarážky během relace ladění. S využitím Pythonu, můžete také vybrat kód a stiskněte klávesy Ctrl + Enter pro spuštění tohoto kódu [interaktivního okna REPL](python-interactive-repl-in-visual-studio.md).
 
 - [Okno výstup](../ide/reference/output-window.md) (dole uprostřed) je, kde sada Visual Studio odešle oznámení, jako jsou ladění a chybové zprávy, upozornění, publikování stavové zprávy a další. Každý zdroj zprávy má svůj vlastní kartu.
-    - A [okno REPL interaktivní Python](python-interactive-repl-in-visual-studio.md) se zobrazí ve stejné oblasti jako v okně výstup.
+  - A [okno REPL interaktivní Python](python-interactive-repl-in-visual-studio.md) se zobrazí ve stejné oblasti jako v okně výstup.
 
 - [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (vpravo dole) umožňuje sledování pracovních položek a sdílet s ostatními kód pomocí technologie pro řízení verze, například [Git](https://git-scm.com/) a [Team Foundation verze ovládacího prvku (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
@@ -94,6 +94,10 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
     Od verze Visual Studio 2019, můžete otevřít složku obsahující kód Pythonu mohli využívat výhody funkcí, jako je IntelliSense a ladění bez nutnosti vytvářet projekt sady Visual Studio Code.
 ::: moniker-end
 
+- [Spolupráce ve Visual Studiu](https://docs.microsoft.com/visualstudio/liveshare/use/vs)
+  
+    Visual Studio Live Share umožňuje spolupracovat editujte a laďte s ostatními v reálném čase, bez ohledu na to, jaký programovací jazyk, který používáte nebo typy aplikací, které sestavujete. 
+
 - [Interaktivní okno REPL Pythonu](python-interactive-repl-in-visual-studio.md)
 
     Visual Studio poskytuje oknem interaktivní čtení vyhodnocení print smyčky (REPL) pro každé prostředí Pythonu, které dále to vylepšuje REPL všechno získáte s *python.exe* na příkazovém řádku. V **interaktivní** okně můžete zadat libovolný kód Pythonu a zobrazit výsledky okamžitě.
@@ -124,7 +128,7 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
 
     ![Testování zobrazující stav selhání testu jednotek](media/unit-test-A-fail.png)
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
 Python v sadě Visual Studio dále prozkoumejte pomocí jednoho z následujících kurzů nebo rychlých startů:
 

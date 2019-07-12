@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430418"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825793"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Návod: Vytváření rozšíření projektu SharePoint
   Tento návod ukazuje, jak vytvořit rozšíření pro projekty služby SharePoint. Rozšíření projektu můžete použít pro reakci na události na úrovni projektu, například pokud je projekt přidat, odstranit nebo přejmenovat. Můžete také přidat vlastní vlastnosti nebo odpovědět při změně hodnoty vlastnosti. Na rozdíl od rozšíření položky projektu projektu rozšíření nemůže být spojeny s konkrétní typ projektu služby SharePoint. Při vytváření rozšíření projektu rozšíření načte při otevření jakékoliv projektu služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -30,11 +30,11 @@ ms.locfileid: "63430418"
 
 - Vytváření [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozšíření pro projekty služby SharePoint, který provede následující akce:
 
-    - Přidá vlastní vlastnost projektu v okně Vlastnosti. Vlastnost se vztahuje do jakéhokoli projektu SharePoint.
+  - Přidá vlastní vlastnost projektu v okně Vlastnosti. Vlastnost se vztahuje do jakéhokoli projektu SharePoint.
 
-    - Přidat mapovanou složku do projektu používá model objektu projektu služby SharePoint.
+  - Přidat mapovanou složku do projektu používá model objektu projektu služby SharePoint.
 
-    - Používá [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modelu automatizačních objektů (DTE) pro mapovanou složku odstranit z projektu.
+  - Používá [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modelu automatizačních objektů (DTE) pro mapovanou složku odstranit z projektu.
 
 - Vytváření [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Extension (VSIX) balíčku pro nasazení sestavení rozšíření vlastnost projektu.
 

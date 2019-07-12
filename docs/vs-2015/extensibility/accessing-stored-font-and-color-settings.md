@@ -12,20 +12,20 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fbb2f118d903eae2124e705f14c7aa7b51bf9c4d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403263"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821828"
 ---
-# <a name="accessing-stored-font-and-color-settings"></a>Přístup k uložené písma a barev
+# <a name="accessing-stored-font-and-color-settings"></a>Přístup k uloženým nastavením písem a barev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integrované vývojové prostředí (IDE) ukládá změny nastavení písem a barev v registru. Můžete použít <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní pro přístup k nastavení.  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Zahájení stavů trvalost písma a barvy  
- Písma a barvy informace jsou uloženy podle kategorií v následujícím umístění registru: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >* \FontAndColors\\  *\<CategoryGUID >*], kde  *\<CategoryGUID >* je kategorie identifikátor GUID.  
+ Písma a barvy informace jsou uloženy podle kategorií v následujícím umístění registru: [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<verze sady Visual Studio >* \FontAndColors\\  *\<CategoryGUID >* ], kde  *\<CategoryGUID >* je kategorie identifikátor GUID.  
   
  Proto zahájíte trvalost VSPackage musí:  
   
@@ -35,16 +35,16 @@ ms.locfileid: "63403263"
   
 - Použití <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> metodu otevření kategorie natrvalo pomocí identifikátoru GUID kategorii a příznak režimu jako argumenty.  
   
-     Režimu určeném `fFlags` argument, je vytvořen z hodnot v <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> výčtu. Tento režim – ovládací prvky:  
-  
-    - Nastavení, která je přístupná prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní.  
-  
-    - Všechna nastavení nebo jenom na ty, které uživatelé upravovat a, které jsou získat prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní.  
-  
-    - Metody šíření změn nastavení pro uživatele.  
-  
-    - Formát hodnot barev, které se používají.  
-  
+  Režimu určeném `fFlags` argument, je vytvořen z hodnot v <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> výčtu. Tento režim – ovládací prvky:  
+
+  - Nastavení, která je přístupná prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní.  
+
+  - Všechna nastavení nebo jenom na ty, které uživatelé upravovat a, které jsou získat prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní.  
+
+  - Metody šíření změn nastavení pro uživatele.  
+
+  - Formát hodnot barev, které se používají.  
+
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Použití stavu trvalost písma a barvy  
  Zachování písma a barvy zahrnuje:  
   

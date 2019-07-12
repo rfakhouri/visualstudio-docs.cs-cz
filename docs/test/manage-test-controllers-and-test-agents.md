@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e15982734731defabd79416c73eef4538f0c04
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788749"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824245"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Správa kontrolerů testů a testovacích agentů
 
@@ -186,25 +186,25 @@ Při přidání role pro vaši aplikaci do nastavení testu pro sadu Visual Stud
 
 - Pro roli, která se musí spustit testy k dispozici není žádný agent. Testy nelze spustit. Můžete provést jednu z následujících akcí a opětovně spusťte vaše testy:
 
-    - Můžete počkat, až agent k dispozici pro tuto roli pro spuštění testů.
+  - Můžete počkat, až agent k dispozici pro tuto roli pro spuštění testů.
 
-    - Pokud existují agenti, kteří jsou v režimu offline, který můžete použít pro tuto roli, můžete restartovat agenta tak, aby byly k dispozici.
+  - Pokud existují agenti, kteří jsou v režimu offline, který můžete použít pro tuto roli, můžete restartovat agenta tak, aby byly k dispozici.
 
-    - Přidat jiného agenta se správnými vlastnostmi pro tuto roli do testovacího kontroléru.
+  - Přidat jiného agenta se správnými vlastnostmi pro tuto roli do testovacího kontroléru.
 
-    - Můžete změnit vlastnosti agenta pro tuto roli v nastavení testu pro povolení jiných agentů, které chcete použít.
+  - Můžete změnit vlastnosti agenta pro tuto roli v nastavení testu pro povolení jiných agentů, které chcete použít.
 
 - Pro jednu nebo víc rolí, na kterých běží adaptéry diagnostických dat k dispozici není žádný agent. Testy můžete spustit, ale adaptér diagnostických dat nelze spustit. Můžete spustit testy bez adaptéru diagnostických dat, nebo můžete provést jednu z následujících akcí a znovu spustit testy:
 
-    - Můžete počkat, až agent k dispozici pro tyto role.
+  - Můžete počkat, až agent k dispozici pro tyto role.
 
-    - Pokud existují agenti, kteří jsou v režimu offline, který můžete použít pro tuto roli, musíte změnit stav agenta na online z **spravovat testovací Kontrolér** na **Test** nabídky. Kromě toho budete muset restartovat agenta, pokud byl odpojen z kontroleru.
+  - Pokud existují agenti, kteří jsou v režimu offline, který můžete použít pro tuto roli, musíte změnit stav agenta na online z **spravovat testovací Kontrolér** na **Test** nabídky. Kromě toho budete muset restartovat agenta, pokud byl odpojen z kontroleru.
 
-    - Ověřte, že všechny agenty, které můžete potřebovat pro tento testovací běh není zaneprázdněn spouštěním testů. Můžete zkontrolovat stav jakýchkoli agentů v **spravovat testovací Kontrolér** na **Test** nabídky.
+  - Ověřte, že všechny agenty, které můžete potřebovat pro tento testovací běh není zaneprázdněn spouštěním testů. Můžete zkontrolovat stav jakýchkoli agentů v **spravovat testovací Kontrolér** na **Test** nabídky.
 
-    - Přidat jiného agenta se správnými vlastnostmi pro tuto roli do testovacího kontroléru.
+  - Přidat jiného agenta se správnými vlastnostmi pro tuto roli do testovacího kontroléru.
 
-    - Můžete změnit vlastnosti agenta pro roli v nastavení testu pro povolení jiných agentů, které chcete použít.
+  - Můžete změnit vlastnosti agenta pro roli v nastavení testu pro povolení jiných agentů, které chcete použít.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Načíst testy ze sestavení se zpožděným podpisem
 

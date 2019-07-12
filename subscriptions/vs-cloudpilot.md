@@ -6,12 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech CloudPilot k dispozici ve vybraných předplatných sady Visual Studio
-ms.openlocfilehash: f6398a24dafd87abc6da0f5d011ea25a53a6f78d
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784608"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825922"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot výhoda v předplatných sady Visual Studio
 
@@ -75,13 +75,13 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 - Potřebujete pomoc s používáním CloudPilot?  Projděte si tyto prostředky:
-    - [Obraťte se na UnifyCloud](https://www.unifycloud.com/contacts/) pro dotazy týkající se produktů UnifyCloud.
-    - [CloudPilot uživatelská příručka](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-    - [Odeslat žádost o podporu](https://support.datacamp.com/hc/requests/new)
+  - [Obraťte se na UnifyCloud](https://www.unifycloud.com/contacts/) pro dotazy týkající se produktů UnifyCloud.
+  - [CloudPilot uživatelská příručka](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
+  - [Odeslat žádost o podporu](https://support.datacamp.com/hc/requests/new)
 
 - Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
 - Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
 Pokud jste ještě neaktivovali Azure benefit, který je součástí vašeho předplatného, navštivte [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a klikněte na Azure dlaždici v kategorii nástroje pro nastavení vašeho předplatného Azure a jejího uplatnění kreditů Azure.

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401097"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825625"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Návod: Vytvoření vlastního kroku nasazení pro projekty SharePoint
   Při nasazení projektu služby SharePoint, aplikace Visual Studio provede série kroků nasazení v určitém pořadí. Visual Studio obsahuje mnoho vestavěné kroky nasazení, ale můžete také vytvořit svoje vlastní.
@@ -29,9 +29,9 @@ ms.locfileid: "66401097"
 
 - Vytváření rozšíření pro Visual Studio, který provádí dvě hlavní úlohy:
 
-    - Definuje rozšíření vlastního kroku nasazení pro upgrade řešení služby SharePoint.
+  - Definuje rozšíření vlastního kroku nasazení pro upgrade řešení služby SharePoint.
 
-    - Toto rozšíření vytvoří rozšíření projektu, který definuje novou konfiguraci nasazení, což je sada kroky nasazení, které jsou spouštěny pro daný projekt. Novou konfiguraci nasazení zahrnuje krok vlastního nasazení a několik vestavěné kroky nasazení.
+  - Toto rozšíření vytvoří rozšíření projektu, který definuje novou konfiguraci nasazení, což je sada kroky nasazení, které jsou spouštěny pro daný projekt. Novou konfiguraci nasazení zahrnuje krok vlastního nasazení a několik vestavěné kroky nasazení.
 
 - Vytvoření dvou vlastních příkazů služby SharePoint, která volá sestavení rozšíření. SharePoint – příkazy jsou metody, které je možné vyvolat v sestavení rozšíření, které chcete používat rozhraní API v objektovém modelu serveru SharePoint. Další informace najdete v tématu [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 

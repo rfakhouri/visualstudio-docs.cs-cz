@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114961"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826248"
 ---
 # <a name="xsd-task"></a>XSD – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ Zabalí nástroj definici schématu XML (xsd.exe), který generuje schématu neb
   
      Volitelné **řetězec** parametru.  
   
-     Seznam možností, jak je uvedeno na příkazovém řádku. Například "*/option1 /option2 /option#*". Tento parametr použijte k určení možností, které nejsou reprezentovány jakýkoli jiný **XSD** parametr úlohy.  
+     Seznam možností, jak je uvedeno na příkazovém řádku. Například " */option1 /option2 /option#* ". Tento parametr použijte k určení možností, které nejsou reprezentovány jakýkoli jiný **XSD** parametr úlohy.  
   
 - **GenerateFromSchema**  
   
-     Volitelné **řetězec** parametru.  
-  
-     Určuje typy, které se generují z určené schéma.  
-  
-     Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnost XSD.  
-  
-    - **třídy** -   **/třídy**  
-  
-    - **dataset** - **/dataset**  
+  Volitelné **řetězec** parametru.  
+
+  Určuje typy, které se generují z určené schéma.  
+
+  Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnost XSD.  
+
+  - **třídy** -   **/třídy**  
+
+  - **dataset** -  **/dataset**  
   
 - **Jazyk**  
   

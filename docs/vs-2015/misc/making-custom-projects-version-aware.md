@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422732"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825683"
 ---
 # <a name="making-custom-projects-version-aware"></a>Vytváření vlastních projektů s ohledem na verzi
 Ve vaší vlastní projektový systém můžete povolit projektech tohoto typu se načíst ve více verzích sady Visual Studio. Můžete také zabránit projektech tohoto typu načítání v dřívější verzi sady Visual Studio. Můžete také povolit tento projekt v případě, že projekt vyžaduje opravu, převod nebo vyřazení identifikovat na novější verzi.  
@@ -142,12 +142,12 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
 - LogMessage funkce má následující hodnoty parametru ERRORLEVEL při:  
   
-    - pro všechny informace, které byste chtěli trasování je 0.  
-  
-    - 1 je pro upozornění.  
-  
-    - 2 je pro chybu  
-  
-    - 3 je pro formátování sestav. Při upgradu projektu protokolu slovo "Převedený" jednou a lokalizaci slovo.  
+  - pro všechny informace, které byste chtěli trasování je 0.  
+
+  - 1 je pro upozornění.  
+
+  - 2 je pro chybu  
+
+  - 3 je pro formátování sestav. Při upgradu projektu protokolu slovo "Převedený" jednou a lokalizaci slovo.  
   
 - Pokud projekt nevyžaduje žádné opravy nebo upgrade, Visual Studio vygeneruje soubor protokolu pouze v případě, že systém projektu měl protokoluje upozornění nebo chybu během UpgradeProject_CheckOnly nebo UpgradeProjectFlavor_CheckOnly metody.

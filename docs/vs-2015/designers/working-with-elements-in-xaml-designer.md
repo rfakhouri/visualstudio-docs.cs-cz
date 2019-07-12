@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1ecb5981a8111f3fca013d3b5f115155ac7baf89
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690034"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824850"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Práce s elementy v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
   
 - V Návrháři XAML proveďte jednu z následujících akcí:  
   
-    - Klikněte dvakrát na prvek v **nástrojů** (Vybrat prvek na panelu nástrojů nebo stisknutím klávesy Enter).  
-  
-    - Přetáhněte element z **nástrojů** na návrhovou plochu.  
-  
-    - V **nástrojů**, vyberte jeden z kreslících nástrojů (například [Elipsa](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) nebo [obdélník](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) a následně nakreslete prvek v panelu aktivní.  
+  - Klikněte dvakrát na prvek v **nástrojů** (Vybrat prvek na panelu nástrojů nebo stisknutím klávesy Enter).  
+
+  - Přetáhněte element z **nástrojů** na návrhovou plochu.  
+
+  - V **nástrojů**, vyberte jeden z kreslících nástrojů (například [Elipsa](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) nebo [obdélník](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) a následně nakreslete prvek v panelu aktivní.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Změna pořadí vrstev elementů  
  Pokud existují dva prvky na návrhovou plochu v Návrháři XAML, jeden prvek se zobrazí před jiným v pořadí vrstev. V dolní části seznamu elementů v Osnova dokumentu okna je nejvíce vpředu prvek (s výjimkou, kdy **ZIndex** je nastavena vlastnost pro daný element). Při vkládání elementů do stránky, formuláře nebo kontejner rozložení, element automaticky umístěn před další prvky v elementu aktivní kontejner. Chcete-li změnit pořadí prvků, můžete použít **pořadí** příkazy nebo přetáhnout prvky v rámci stromů objektů v okně osnovy dokumentu.  

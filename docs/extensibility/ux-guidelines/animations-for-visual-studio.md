@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a99ddbe8bf1b98ce6f2fabc32b9597cd02a704e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f113bf8d9a77e8569126a6f0c7d96f1fe4f0eea
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337026"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825244"
 ---
 # <a name="animations-for-visual-studio"></a>Animace pro sadu Visual Studio
 ## <a name="animation-fundamentals"></a>Základy animace
@@ -25,13 +25,13 @@ Postupujte podle těchto pravidel zajistit konzistentní a uživatelsky přívě
 
 - **Načasování a rychlost jsou důležité** zajistit, že přechody pocit, že rychlé a přirozené:
 
-    - Dokončení animovaný přechodů v rámci jedné půl sekundy (500 milisekund).
+  - Dokončení animovaný přechodů v rámci jedné půl sekundy (500 milisekund).
 
-    - Animace, které by tomu bylo, často je potřeba dostatečně rychle, že jejich není přerušení pracovního postupu uživatele. Podívejte se na animace ve smyčce a upravit načasování, dokud je správný.
+  - Animace, které by tomu bylo, často je potřeba dostatečně rychle, že jejich není přerušení pracovního postupu uživatele. Podívejte se na animace ve smyčce a upravit načasování, dokud je správný.
 
-    - Animace by neměl být tak rychlé nebo jarring, že je obtížné porozumět, ale ne tak pomalé, že je jeden netrpělivý pro přechod na Dokončit.
+  - Animace by neměl být tak rychlé nebo jarring, že je obtížné porozumět, ale ne tak pomalé, že je jeden netrpělivý pro přechod na Dokončit.
 
-    - Pomocí proměnné časování zdůraznění důležitosti. Během procházení posloupnost položek v diagramu tříd, rychlost prostřednictvím přechody mezi položkami pak zpomalit soustředit na důležité položky.
+  - Pomocí proměnné časování zdůraznění důležitosti. Během procházení posloupnost položek v diagramu tříd, rychlost prostřednictvím přechody mezi položkami pak zpomalit soustředit na důležité položky.
 
 - **Použití postupné nelineárních usnadnění** z jednoho stavu do druhého, dává smysl klidné a přirozené pohybu.
 
@@ -47,13 +47,13 @@ Postupujte podle těchto pravidel zajistit konzistentní a uživatelsky přívě
 
 - **Při zobrazení stav nebo průběh** prostřednictvím animace:
 
-    - Zastavte zobrazující průběh přesunu, pokud není posunutí základního procesu.
+  - Zastavte zobrazující průběh přesunu, pokud není posunutí základního procesu.
 
-    - Neurčitá procesy odlišili od determinate procesy.
+  - Neurčitá procesy odlišili od determinate procesy.
 
-    - Zajistěte, aby animace identifikovatelné stavy ukončení a selhání.
+  - Zajistěte, aby animace identifikovatelné stavy ukončení a selhání.
 
-    - Minimalizujte použití animací efekt, které zobrazují stav a ujistěte se, jestli obsahují skutečné hodnoty tím, že poskytuje další informace o skutečném použití. Mezi příklady patří přechodný stav se změní a nouzové situace co
+  - Minimalizujte použití animací efekt, které zobrazují stav a ujistěte se, jestli obsahují skutečné hodnoty tím, že poskytuje další informace o skutečném použití. Mezi příklady patří přechodný stav se změní a nouzové situace co
 
 #### <a name="animation-donts"></a>Animace proti:
 

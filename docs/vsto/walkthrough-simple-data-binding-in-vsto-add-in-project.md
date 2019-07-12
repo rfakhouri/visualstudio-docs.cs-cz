@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b6cf1e800c785f73ebb11e09f11b617fe42aa32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eccab4b899f3af22d54952d4eb9e8f990932afa4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981076"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825208"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Návod: Jednoduché datové vazby v projektu doplňku VSTO
 
@@ -47,9 +47,9 @@ K dokončení tohoto návodu budete potřebovat následující komponenty:
 
 - Přístup ke spuštěné instanci systému SQL Server 2005 nebo SQL Server 2005 Express, který má `AdventureWorksLT` ukázkovou databázi k němu připojená. Můžete stáhnout `AdventureWorksLT` databáze z [webu CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Další informace o připojení databáze naleznete v následujících tématech:
 
-    - Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    - Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
+  - Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
@@ -83,7 +83,7 @@ Použití **zdroje dat** okno pro přidání typové datové sady do projektu.
 
 5. V **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.
 
-6. V **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** a vyberte **zákazníků (SalesLT)**.
+6. V **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** a vyberte **zákazníků (SalesLT)** .
 
 7. Klikněte na tlačítko **Dokončit**.
 

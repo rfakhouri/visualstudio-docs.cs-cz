@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0cb4fc7b43ab3ae48f83f4497fe6fd0042d0c51a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 546713cd77ca1477984120f9ef9a245c1c780eaf
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981630"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824139"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Návod: Rozšířené datové vazby v projektu doplňku VSTO
   Vytvoření vazby dat k hostitelské ovládací prvky a ovládacích prvků Windows Forms v projekty doplňku VSTO. Tento návod ukazuje, jak přidat ovládací prvky na list aplikace Microsoft Office Excel a vytvoření vazby ovládacích prvků k datům v době běhu.
@@ -43,9 +43,9 @@ ms.locfileid: "62981630"
 
 - Přístup ke spuštěné instanci systému SQL Server 2005 nebo SQL Server 2005 Express, který má `AdventureWorksLT` ukázkovou databázi k němu připojená. Můžete stáhnout `AdventureWorksLT` databáze z [webu CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Další informace o připojení databáze naleznete v následujících tématech:
 
-    - Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    - Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
+  - Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
  Prvním krokem je vytvoření projektu doplňku VSTO v Excelu.
@@ -75,7 +75,7 @@ ms.locfileid: "62981630"
 
 5. V **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.
 
-6. V **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** a vyberte **adresu (SalesLT)**.
+6. V **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** a vyberte **adresu (SalesLT)** .
 
 7. Klikněte na tlačítko **Dokončit**.
 

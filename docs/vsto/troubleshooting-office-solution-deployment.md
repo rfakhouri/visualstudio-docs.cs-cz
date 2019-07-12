@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcd102d8717b455a402bceb98e7ce85a2907e3bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694984"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821301"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Řešení potíží s nasazením řešení pro systém Office
   Toto téma obsahuje informace o tom, jak řešit běžné problémy, které se mohou vyskytnout při nasazení řešení Office.
@@ -73,9 +73,12 @@ ms.locfileid: "65694984"
 
 2. Na **aplikace** zvolte **informace o sestavení**.
 
-3. V prvním **verze sestavení** , zadejte hvězdičku (\*) a klikněte na tlačítko **OK** tlačítko.
+3. Sada číslo revize, třetí položka **verze sestavení**, na zástupný znak (\*). Například "1.0. *".  Klikněte na tlačítko **OK** tlačítko.
 
    Po změně verze sestavení, můžete pokračovat k podepsání sestavení silným názvem a Fusion načte nejnovější verzi vlastního nastavení.
+
+ [!NOTE]
+> Dojde k spuštění sady Visual Studio 2017, pokud se pokusíte pomocí zástupných znaků ve verzi sestavení k chybě sestavení.  Je to proto, že zástupné znaky se v verze sestavení přeruší MSBuild Deterministické funkce. Budete vyzváni buď odebrat zástupné znaky z verze sestavení, nebo zakažte determinismus.  Další informace o funkci Deterministické naleznete v tématu: [Obecné vlastnosti projektu nástroje MSBuild](../msbuild/common-msbuild-project-properties.md) a [přizpůsobení sestavení](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Instalace selže, pokud identifikátor URI obsahuje znaky, které nejsou US-ASCII
  Při publikování řešení Office na umístění protokolu HTTP/HTTPS nebo FTP, cesta nemůže obsahovat libovolné znaky Unicode, které nejsou v US-ASCII. Tyto znaky může způsobit nekonzistentní chování v instalačním programu. Používejte US-ASCII znaky pro cestu instalace.

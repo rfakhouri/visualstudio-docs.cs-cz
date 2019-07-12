@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065178"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826179"
 ---
 # <a name="property-functions"></a>Funkce vlastností
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ V rozhraní .NET Framework verze 4 a 4.5 lze použít funkce vlastností k vyhod
   
 - [Syntaxe funkce vlastností](#BKMK_Syntax)  
   
-    - [Funkce vlastností řetězce](#BKMK_String)  
-  
-    - [Funkce statických vlastností](#BKMK_Static)  
-  
-    - [Volání metody Instance ve statické vlastnosti](#BKMK_InstanceMethods)  
-  
-    - [MSBuild Property Functions](#BKMK_PropertyFunctions)  
+  - [Funkce vlastností řetězce](#BKMK_String)  
+
+  - [Funkce statických vlastností](#BKMK_Static)  
+
+  - [Volání metody Instance ve statické vlastnosti](#BKMK_InstanceMethods)  
+
+  - [MSBuild Property Functions](#BKMK_PropertyFunctions)  
   
 - [Vnořené vlastnosti funkce](#BKMK_Nested)  
   

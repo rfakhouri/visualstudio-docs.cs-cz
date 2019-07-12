@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 795cc62ca88f7ede87e978d910d397e0ce6e2ad7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430346"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825976"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Návod: Rozšíření typu položky projektu SharePoint
   Můžete použít **Model Připojení obchodních dat** položku projektu pro vytvoření modelu služby připojení dat obchodní (BDC) ve službě SharePoint. Ve výchozím nastavení když vytvoříte model pomocí tuto položku projektu data v modelu se uživatelům nezobrazí. Musíte také vytvořit externí seznam na Sharepointu a umožňují uživatelům zobrazovat data.
@@ -28,9 +28,9 @@ ms.locfileid: "63430346"
 
 - Vytváření rozšíření pro Visual Studio, který provádí dvě hlavní úlohy:
 
-    - Generuje externí seznam, který zobrazuje data v modelu služby BDC. Rozšíření používá objektový model pro projekt systému SharePoint ke generování *Elements.xml* soubor, který definuje seznam. Také přidá soubor do projektu tak, aby byl nasazen spolu s modelem služby BDC.
+  - Generuje externí seznam, který zobrazuje data v modelu služby BDC. Rozšíření používá objektový model pro projekt systému SharePoint ke generování *Elements.xml* soubor, který definuje seznam. Také přidá soubor do projektu tak, aby byl nasazen spolu s modelem služby BDC.
 
-    - Přidá položky místní nabídky k **Model Připojení obchodních dat** položky v projektu **Průzkumníka řešení**. Vývojáři mohou kliknutím na tuto položku nabídky generovat externí seznam pro model služby BDC.
+  - Přidá položky místní nabídky k **Model Připojení obchodních dat** položky v projektu **Průzkumníka řešení**. Vývojáři mohou kliknutím na tuto položku nabídky generovat externí seznam pro model služby BDC.
 
 - Vytváření rozšíření aplikace Visual Studio (VSIX) balíčku pro nasazení sestavení rozšíření.
 

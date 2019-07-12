@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 76e8c92707279979cec6406bd1bcd5ad44a1f315
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680294"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825787"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Správa modelů a diagramů pomocí správy verzí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Spravovat různé verze projekty modelování a diagramy, včetně mapy kódu (s
   
 - Každý diagram je uložen ve dvou souborech. Diagram třídy má například:  
   
-    - **DiagramName.classdiagram** – Pokud je tento soubor odstraněn nebo poškozen, diagram budou ztraceny, ale třídy a přidružení, která ukazoval bude i nadále v modelu a lze je zobrazit v Průzkumníku modelů UML.  
-  
-    - **DiagramName.classdiagram.layout** -li tento soubor odstraněn, tvary se nadále zobrazí v diagramu, ale dojde ke ztrátě jejich velikostí a umístění. Každý soubor rozložení je podřízený souboru diagramu. Zobrazíte ho kliknutím na [+] vedle souboru diagramu v Průzkumníku řešení.  
+  - **DiagramName.classdiagram** – Pokud je tento soubor odstraněn nebo poškozen, diagram budou ztraceny, ale třídy a přidružení, která ukazoval bude i nadále v modelu a lze je zobrazit v Průzkumníku modelů UML.  
+
+  - **DiagramName.classdiagram.layout** -li tento soubor odstraněn, tvary se nadále zobrazí v diagramu, ale dojde ke ztrátě jejich velikostí a umístění. Každý soubor rozložení je podřízený souboru diagramu. Zobrazíte ho kliknutím na [+] vedle souboru diagramu v Průzkumníku řešení.  
   
 > [!NOTE]
 > Je důležité zajistit konzistenci těchto souborů. Například pokud používáte správy zdrojového kódu vrátit zpět provedené změny v souboru s příponou UML, měli byste vrátit zpět odpovídající změny. * diagram a .layout soubory ve stejnou dobu. Elementy zastoupené v. \*soubor diagramu budou ztraceny, pokud nejsou také reprezentovány v souboru .uml.  
@@ -55,9 +55,9 @@ Spravovat různé verze projekty modelování a diagramy, včetně mapy kódu (s
   
 - Abyste zajistili, že změníte pouze balíček, na které pracujete:  
   
-    - Nastavte **LinkedPackage** vlastnost třídy UML, komponenty nebo diagramu případu použití.  
-  
-    - V Průzkumníku modelů UML přetáhněte aktivitu nebo interakci do balíčku ihned po jeho vytvoření. Tento prvek se zobrazí v Průzkumníku modelů UML při vytvoření prvního uzlu v činnosti nebo sekvenčním diagramu.  
+  - Nastavte **LinkedPackage** vlastnost třídy UML, komponenty nebo diagramu případu použití.  
+
+  - V Průzkumníku modelů UML přetáhněte aktivitu nebo interakci do balíčku ihned po jeho vytvoření. Tento prvek se zobrazí v Průzkumníku modelů UML při vytvoření prvního uzlu v činnosti nebo sekvenčním diagramu.  
   
 - Abyste mohli udržovat přehled o balíčky, přejmenujte soubory balíčku tak, aby odrážely skutečné názvy balíčku.  
   

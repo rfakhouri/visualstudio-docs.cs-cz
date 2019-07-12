@@ -14,14 +14,14 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 631c6daf808e08b9c7da9147116464a4140b076f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683538"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823843"
 ---
-# <a name="run-windows-store-apps-in-the-simulator"></a>Spouštění v simulátoru Windows Store apps
+# <a name="run-windows-store-apps-in-the-simulator"></a>Spouštění aplikací pro Windows Store v simulátoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasické pracovní plochy, který simuluje aplikace Windows Store. Můžete spouštět aplikace a simulace událostí otočení a běžné touch na vašem vývojovém počítači. Můžete také velikost fyzické obrazovky a rozlišení, které chcete emulovat a simulovat vlastnosti připojení k síti.  
@@ -55,30 +55,30 @@ Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasick
  Nastaví režim interakce pro ovládání stažením prstů a gesta dvěma prsty přiblížení.  
   
 - ![Cíl simulátoru dvě prstem](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
-  
-    - Dvojité cílovou ikonu označuje umístění dvěma prsty na obrazovce zařízení.  
-  
-    - Najeďte myší na pozici ikony na objekt na obrazovce zařízení.  
-  
-    - Otočení kolečka myši, chcete-li změnit simulované vzdálenost dvěma prsty před roztažením prstů nebo zvětšení dopředu nebo dozadu.  
-  
+
+  - Dvojité cílovou ikonu označuje umístění dvěma prsty na obrazovce zařízení.  
+
+  - Najeďte myší na pozici ikony na objekt na obrazovce zařízení.  
+
+  - Otočení kolečka myši, chcete-li změnit simulované vzdálenost dvěma prsty před roztažením prstů nebo zvětšení dopředu nebo dozadu.  
+
 - ![Ovládání stažením prstů, přibližování a otáčení cíle](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
-  
-    - Stiskněte tlačítko vlevo a otočit kolečko dozadu (směrem k) Chcete-li zvětšit (stažení).  
-  
-    - Stiskněte tlačítko vlevo a otáčením kolečko myši dopředu (směrem od) horizonální oddálení (Lupa).  
+
+  - Stiskněte tlačítko vlevo a otočit kolečko dozadu (směrem k) Chcete-li zvětšit (stažení).  
+
+  - Stiskněte tlačítko vlevo a otáčením kolečko myši dopředu (směrem od) horizonální oddálení (Lupa).  
   
 ## <a name="object-rotation"></a>Otočení objektu  
  **Emulace dotykového ovládání otočit** tlačítka nastaví režim interakce na gesta otočení pomocí dvěma prsty.  
   
 - Najeďte myší na pozici ikony na objekt na obrazovce zařízení.  
   
-    - Otočení kolečka myši, chcete-li změnit simulované orientace dvěma prsty před otočit objekt dopředu nebo dozadu.  
-  
+  - Otočení kolečka myši, chcete-li změnit simulované orientace dvěma prsty před otočit objekt dopředu nebo dozadu.  
+
 - Stiskněte tlačítko vlevo a otáčením kolečka zpětné (směrem k) Otočit proti směru hodinových ručiček objektu. Jak otočení kolečka myši, jednu z ikon dvou cílové otočí kolem druhý k určení relativní velikosti otočení.  
-  
-    - Stiskněte tlačítko vlevo a otočení objektu po směru hodinových ručiček otáčením kolečko myši dopředu (směrem od).  
-  
+
+  - Stiskněte tlačítko vlevo a otočení objektu po směru hodinových ručiček otáčením kolečko myši dopředu (směrem od).  
+
 ## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Povolení nebo zakázání vždy na začátek režimu  
  Můžete nastavit okno simulátoru vždy být nad ostatními okny. **Nejvrchnější okna přepnout** tlačítko povolí nebo zakáže **vždy navrchu** režimu okno simulátoru.  
   

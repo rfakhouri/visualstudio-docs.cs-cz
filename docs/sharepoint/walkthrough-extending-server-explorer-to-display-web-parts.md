@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1c84cfcde4a5ffac1e1563a4d2b141bd6240b772
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430342"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821990"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Návod: Rozšíření Průzkumníka serveru pro zobrazení částí webu
   V sadě Visual Studio, můžete použít **připojení služby SharePoint** uzlu **Průzkumníka serveru** zobrazíte komponenty na webech služby SharePoint. Ale **Průzkumníka serveru** nezobrazí některé součásti ve výchozím nastavení. V tomto návodu budete rozšíříte **Průzkumníka serveru** tak, aby zobrazil galerii webových částí na každý z nich připojený web služby SharePoint.
@@ -29,9 +29,9 @@ ms.locfileid: "63430342"
 
 - Vytváření rozšíření pro Visual Studio, který rozšiřuje **Průzkumníka serveru** následujícími způsoby:
 
-    - Přidá rozšíření **Galerie webových částí** uzel za každý uzel webu služby SharePoint v **Průzkumníka serveru**. Tento nový uzel obsahuje podřízené uzly, které představují jednotlivé webové části v galerii webových částí na webu.
+  - Přidá rozšíření **Galerie webových částí** uzel za každý uzel webu služby SharePoint v **Průzkumníka serveru**. Tento nový uzel obsahuje podřízené uzly, které představují jednotlivé webové části v galerii webových částí na webu.
 
-    - Rozšíření definuje nový typ uzlu, který představuje instanci webové části. Tento nový typ uzlu je základem pro podřízené uzly pod novou **Galerie webových částí** uzlu. Nový typ uzlu webovou část se zobrazí informace v **vlastnosti** okno o webové části, který představuje. Typ uzlu je také položky vlastní místní nabídky, který slouží jako výchozí bod pro provádění další úloh, které se týkají webové části.
+  - Rozšíření definuje nový typ uzlu, který představuje instanci webové části. Tento nový typ uzlu je základem pro podřízené uzly pod novou **Galerie webových částí** uzlu. Nový typ uzlu webovou část se zobrazí informace v **vlastnosti** okno o webové části, který představuje. Typ uzlu je také položky vlastní místní nabídky, který slouží jako výchozí bod pro provádění další úloh, které se týkají webové části.
 
 - Vytvoření dvou vlastních příkazů služby SharePoint, která volá sestavení rozšíření. SharePoint – příkazy jsou metody, které je možné vyvolat v sestavení rozšíření, které chcete používat rozhraní API v objektovém modelu serveru SharePoint. V tomto návodu vytvoříte příkazy, které načítají informace webové části z místního webu služby SharePoint ve vývojovém počítači. Další informace najdete v tématu [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
@@ -338,7 +338,7 @@ ms.locfileid: "63430342"
 
     2. V **přidat připojení k Sharepointu** dialogového okna zadejte adresu URL pro Sharepointový web, ke kterému chcete připojit a klikněte na tlačítko **OK** tlačítko.
 
-         Chcete-li určit web služby SharePoint ve svém vývojovém počítači, zadejte **http://localhost**.
+         Chcete-li určit web služby SharePoint ve svém vývojovém počítači, zadejte **http://localhost** .
 
 3. Rozbalte uzel připojení serveru (který zobrazuje adresu URL vašeho webu) a potom rozbalte uzel serveru podřízený (například **týmový web**).
 

@@ -8,12 +8,12 @@ ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 07d650e127b5f15abbfac8aef179bb9e01a36297
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 24ea04e59178248c7a9795a2f928c311ba83db2e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096488"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824075"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Hodnocení nástroje pro Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,11 +51,11 @@ ms.locfileid: "60096488"
 
 - Ověřte, že tlačítka, příkazy a odkazy příkaz spustit uživatelské rozhraní pro zachycení uživatelského vstupu končit trojtečka **[...]** .
 
-     Příklady:
+  Příklady:
 
-    - **[Rozšířené...]**  tlačítko dialogového okna.
+  - **[Rozšířené...]**  tlačítko dialogového okna.
 
-    - Možnosti příkazu v nabídce Nástroje (**nástroje > Možnosti**) by neměl získat třemi tečkami, protože spouští dialogového okna, samotného je cílem příkazu.
+  - Možnosti příkazu v nabídce Nástroje (**nástroje > Možnosti**) by neměl získat třemi tečkami, protože spouští dialogového okna, samotného je cílem příkazu.
 
 - Ověřte, zda obsahuje uživatelské rozhraní bez zkratky, s výjimkou standardní podmínky. Pro instanci HTML ani TCP/IP musí být zadány, přestože by měl OOM (nedostatek paměti) a identifikovatelné osobní údaje (identifikovatelné osobní údaje).
 
@@ -147,9 +147,9 @@ ms.locfileid: "60096488"
 
 - Pokud je datové pole povinné pole, které musí být určen jako takové, ověření:
 
-    - který je nastaven na pozadí `Environment.ControlEditRequiredBackground` a popředí je nastavený na `Environment.ControlEditRequiredHintText`
+  - který je nastaven na pozadí `Environment.ControlEditRequiredBackground` a popředí je nastavený na `Environment.ControlEditRequiredHintText`
 
-    - zda je text nápovědy v ovládacím prvku, který se zobrazí jako **"\<vyžaduje >"**
+  - zda je text nápovědy v ovládacím prvku, který se zobrazí jako **"\<vyžaduje >"**
 
 #### <a name="button-controls"></a>ovládací prvky tlačítek
 
@@ -171,11 +171,11 @@ ms.locfileid: "60096488"
 
 - Ověřte, že VS barvy použité jsou:
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - Ověřte, že hypertextové odkazy modré s žádná podtržení, pokud součástí odstavce.
 

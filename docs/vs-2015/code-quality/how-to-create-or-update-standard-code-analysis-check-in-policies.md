@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47e7c2b6e02aab3b6b1df0c54ba91668bbb2673c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436848"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825816"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Postupy: Vytváření nebo aktualizace standardních zásad vracení zpět se změnami analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Může vyžadovat spustit analýzu kódu na všechny projekty kódu v týmovém 
   
 - Z **spustit tuto sadu pravidel** seznamu, použijte jednu z následujících metod:  
   
-    - Vyberte sadu standardních pravidel společnosti Microsoft.  
-  
-    - Chcete-li vybrat vlastní sady pravidel, klikněte na tlačítko  **\<vybrat sadu pravidel ze správy zdrojového kódu... >** a pak zadejte cestu správy verzí sady pravidel, která v prohlížeči zdrojového ovládacího prvku. Syntaxe cestu správy verzí je následující:  
-  
-    - **$/** `TeamProjectName` **/** `VersionControlPath`  
-  
-    - Další informace o tom, jak vytvořit a implementovat vlastní zásady vrácení se změnami sady, naleznete v tématu [implementace vlastních zásad vrácení se změnami pro spravovaný kód](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+  - Vyberte sadu standardních pravidel společnosti Microsoft.  
+
+  - Chcete-li vybrat vlastní sady pravidel, klikněte na tlačítko  **\<vybrat sadu pravidel ze správy zdrojového kódu... >** a pak zadejte cestu správy verzí sady pravidel, která v prohlížeči zdrojového ovládacího prvku. Syntaxe cestu správy verzí je následující:  
+
+  - **$/** `TeamProjectName` **/** `VersionControlPath`  
+
+  - Další informace o tom, jak vytvořit a implementovat vlastní zásady vrácení se změnami sady, naleznete v tématu [implementace vlastních zásad vrácení se změnami pro spravovaný kód](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření a používání zásad vrácení se změnami Analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 19d651e6b55fd5d18ece318e20aa7db67cf57fee
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698808"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824190"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Vývoj multiplatformních mobilních řešení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ Vytvářejte aplikace pro zařízení s Androidem, iOS a Windows pomocí sady Vi
 
 - [Vytváření aplikací pro Android, iOS a Windows (.NET Framework)](#NET)
 
-    - [Cíl Android, iOS a Windows z jediného základu kódu](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+  - [Cíl Android, iOS a Windows z jediného základu kódu](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    - [Cílové zařízení s Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+  - [Cílové zařízení s Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
 - [Vytváření aplikací pro Android, iOS a Windows (HTML/JavaScript)](#HTML)
 
@@ -54,7 +54,7 @@ Vytvářejte aplikace pro zařízení s Androidem, iOS a Windows pomocí sady Vi
 |[Další informace o sadě Visual Studio Emulator for Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ### <a name="AndroidHTML"></a> Cíl Android, iOS a Windows z jediného základu kódu
- Můžete vytvářet nativní aplikace pro Android, iOS a Windows s použitím C# nebo F# (Visual Basic není podporován v tuto chvíli).  Abyste mohli začít, nainstalujte Visual Studio 2015, vyberte **vlastní** možnosti v instalačním programu a zaškrtněte políčko v oblasti **mobilních řešení pro různé platformy > C# / .NET (Xamarin)**. Můžete také začít s [instalační program Xamarin](https://www.xamarin.com/download), které jsou potřebné k instalaci Xamarin pro Visual Studio 2013.
+ Můžete vytvářet nativní aplikace pro Android, iOS a Windows s použitím C# nebo F# (Visual Basic není podporován v tuto chvíli).  Abyste mohli začít, nainstalujte Visual Studio 2015, vyberte **vlastní** možnosti v instalačním programu a zaškrtněte políčko v oblasti **mobilních řešení pro různé platformy > C# / .NET (Xamarin)** . Můžete také začít s [instalační program Xamarin](https://www.xamarin.com/download), které jsou potřebné k instalaci Xamarin pro Visual Studio 2013.
 
  Pokud už máte nainstalovanou sadu Visual Studio 2015, spusťte instalační program z **ovládací panely > programy a funkce** a vyberte stejné **vlastní** možnost pro Xamarin, jak je uvedeno výše.
 

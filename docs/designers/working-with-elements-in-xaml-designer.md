@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844039"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823817"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Práce s elementy v Návrháři XAML
 
@@ -43,15 +43,15 @@ Chcete-li změnit pořadí vrstev, proveďte jednu z následujících akcí:
 
 - Klikněte pravým tlačítkem myši na prvek v okně Osnova dokumentu nebo na návrhovou plochu, pro kterou chcete změnit pořadí vrstev, přejděte na **pořadí**a pak klikněte na jednu z následujících akcí:
 
-   - **Přenést do popředí** elementu uvést úplně přenést do popředí pořadí.
+  - **Přenést do popředí** elementu uvést úplně přenést do popředí pořadí.
 
-   - **Přenést blíž** vám elementu vpřed o jednu úroveň v pořadí.
+  - **Přenést blíž** vám elementu vpřed o jednu úroveň v pořadí.
 
-   - **Přenést dál** odeslat zpět o jednu úroveň element v pořadí.
+  - **Přenést dál** odeslat zpět o jednu úroveň element v pořadí.
 
-   - **Přenést do pozadí** odesílat elementu úplně přenést do pozadí pořadí.
+  - **Přenést do pozadí** odesílat elementu úplně přenést do pozadí pořadí.
 
-   Změnit **ZIndex** vlastnost **rozložení** oddíl v okně Vlastnosti. Pro překrývající se prvky, **ZIndex** vlastnost má přednost před pořadí prvků, které jsou zobrazeny v okně Osnova dokumentu. Element, který má vyšší **ZIndex** hodnota se zobrazí v popředí při prvky překrývat.
+  Změnit **ZIndex** vlastnost **rozložení** oddíl v okně Vlastnosti. Pro překrývající se prvky, **ZIndex** vlastnost má přednost před pořadí prvků, které jsou zobrazeny v okně Osnova dokumentu. Element, který má vyšší **ZIndex** hodnota se zobrazí v popředí při prvky překrývat.
 
 ## <a name="change-the-alignment-of-an-element"></a>Změna zarovnání prvku
 

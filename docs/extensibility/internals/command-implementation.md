@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307f54deff676ce1add8c745e9d92f1bb3fd657
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342197"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824944"
 ---
 # <a name="command-implementation"></a>Implementace příkazu
 Implementace příkazu v sadě VSPackage, je třeba provést následující úkoly:
@@ -67,23 +67,23 @@ if ( null != mcs )
 
 - Pokud vaše implementace některé z metod rozpozná GUID a příkaz, pak metoda by měla nastavit pole příznaků příkazů každý příkaz (v `prgCmds` parametr) pomocí následujících <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> příznaky:
 
-    - `OLECMDF_SUPPORTED`: Příkaz je podporován.
+  - `OLECMDF_SUPPORTED`: Příkaz je podporován.
 
-    - `OLECMDF_INVISIBLE`: Příkaz by neměly být viditelné.
+  - `OLECMDF_INVISIBLE`: Příkaz by neměly být viditelné.
 
-    - `OLECMDF_LATCHED`: Příkaz je zapnutá a byly vráceny se zobrazí.
+  - `OLECMDF_LATCHED`: Příkaz je zapnutá a byly vráceny se zobrazí.
 
-    - `OLECMDF_ENABLED`: Příkaz je povolen.
+  - `OLECMDF_ENABLED`: Příkaz je povolen.
 
-    - `OLECMDF_DEFHIDEONCTXTMENU`: Příkaz skryt, pokud se zobrazí v místní nabídce.
+  - `OLECMDF_DEFHIDEONCTXTMENU`: Příkaz skryt, pokud se zobrazí v místní nabídce.
 
-    - `OLECMDF_NINCHED`: Příkaz je kontroleru nabídky a není povolené, ale jeho seznamu rozevírací nabídky není prázdný a je stále k dispozici. (Tento příznak se používá jen zřídka.)
+  - `OLECMDF_NINCHED`: Příkaz je kontroleru nabídky a není povolené, ale jeho seznamu rozevírací nabídky není prázdný a je stále k dispozici. (Tento příznak se používá jen zřídka.)
 
 - Pokud byl příkaz definovaný v *.vsct* souboru `TextChanges` příznak, nastavte následující parametry:
 
-    - Nastavte `rgwz` elementu `pCmdText` parametr nový text příkazu.
+  - Nastavte `rgwz` elementu `pCmdText` parametr nový text příkazu.
 
-    - Nastavte `cwActual` elementu `pCmdText` parametr velikosti řetězec příkazu.
+  - Nastavte `cwActual` elementu `pCmdText` parametr velikosti řetězec příkazu.
 
 Ujistěte se také, že aktuálním kontextu není funkce automatizace, pokud váš příkaz je určený speciálně pro zpracování funkcí automatizace.
 

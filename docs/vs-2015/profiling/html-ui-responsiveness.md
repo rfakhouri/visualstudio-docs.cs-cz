@@ -20,14 +20,14 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697628"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824841"
 ---
-# <a name="html-ui-responsiveness"></a>Rychlost odezvy HTML UI
+# <a name="html-ui-responsiveness"></a>Rychlost odezvy uživatelského rozhraní (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pomocí Profiler odezvy uživatelského rozhraní, nástroj výkon, který je k dispozici pro aplikace Windows Universal.  
@@ -259,9 +259,9 @@ if (performance.mark && performance.measure) {
   
 - Zobrazit v zobrazení časové osy a mřížky přibližné spuštění, dobu trvání a koncový čas pro událost. Podrobnosti o grafu časová osa můžete zobrazit období od 30 milisekund do 30 sekund v mřížkovém zobrazení, v závislosti na stavu přiblížení. Pro hodnoty typu duration:  
   
-    - Inkluzivní časy představují dobu trvání události, včetně podřízených prvků události. V zobrazení mřížky tato hodnota se zobrazí první.  
-  
-    - Výhradní čas představují dobu trvání události bez zahrnutí podřízené položky události. V zobrazení mřížky tato hodnota se zobrazí v závorkách.  
+  - Inkluzivní časy představují dobu trvání události, včetně podřízených prvků události. V zobrazení mřížky tato hodnota se zobrazí první.  
+
+  - Výhradní čas představují dobu trvání události bez zahrnutí podřízené položky události. V zobrazení mřížky tato hodnota se zobrazí v závorkách.  
   
 - Rozbalte události v hierarchii k zobrazení podřízených prvků události. Podřízené objekty událostí jsou ostatní události, které jsou generovány události nadřazené. Události modelu DOM může mít například naslouchacích procesů událostí, které se zobrazují jako podřízené objekty. Naslouchací proces událostí může mít jiné události, které vznikají, jako je rozložení události.  
   
@@ -269,13 +269,13 @@ if (performance.mark && performance.measure) {
   
 - Zobrazit podrobnosti pro každou jednotlivou událost v podokně podrobností (pravé podokno). Vlastnosti se liší v závislosti na konkrétní události, jak ukazují tyto příklady:  
   
-    - Časovače, naslouchacích procesů událostí (události modelu DOM) a zpětná volání snímků animace **funkce zpětného volání** vlastnost obsahuje odkaz na umístění zdrojového kódu spolu s názvem události obslužné rutiny nebo zpětného volání funkce.  
-  
-    - Pro časovače, naslouchacích procesů událostí (události modelu DOM), rozložení události a zpětná volání snímků animace, joinkind barevně souhrn vybrané události a všechny její podřízené **souhrn celkové doby** oddílu (barevně okruhu). Každou barevně řezu obrázku představuje typ události. Popisy tlačítek zadejte název typu události.  
-  
-    > [!TIP]
-    > Podrobnosti o grafu časové osy a **souhrn celkové doby** může pomoct najít pro optimalizaci. Pokud některý z těchto zobrazení zobrazuje velký počet malých úlohy, události může být Release candidate pro optimalizaci. Například aplikace může být aktualizace elementů modelu DOM často, což vede k velkým počtem rozložení a analýza událostí HTML. Je možné optimalizovat výkon tím, že tuto práci do dávek.  
-  
+  - Časovače, naslouchacích procesů událostí (události modelu DOM) a zpětná volání snímků animace **funkce zpětného volání** vlastnost obsahuje odkaz na umístění zdrojového kódu spolu s názvem události obslužné rutiny nebo zpětného volání funkce.  
+
+  - Pro časovače, naslouchacích procesů událostí (události modelu DOM), rozložení události a zpětná volání snímků animace, joinkind barevně souhrn vybrané události a všechny její podřízené **souhrn celkové doby** oddílu (barevně okruhu). Každou barevně řezu obrázku představuje typ události. Popisy tlačítek zadejte název typu události.  
+
+  > [!TIP]
+  > Podrobnosti o grafu časové osy a **souhrn celkové doby** může pomoct najít pro optimalizaci. Pokud některý z těchto zobrazení zobrazuje velký počet malých úlohy, události může být Release candidate pro optimalizaci. Například aplikace může být aktualizace elementů modelu DOM často, což vede k velkým počtem rozložení a analýza událostí HTML. Je možné optimalizovat výkon tím, že tuto práci do dávek.  
+
 ### <a name="FilterTimelineDetails"></a> Filtrovat podrobnosti časové osy  
  Zobrazení podrobnosti časové osy na určitou událost můžete filtrovat výběrem **filtru na události** z místní nabídky pro určité události. Když vyberete tuto možnost, mají rozsah zobrazení časové osy a mřížky pro zvolenou událost. Výběr v graf využití procesoru, také obory na konkrétní události.  
   

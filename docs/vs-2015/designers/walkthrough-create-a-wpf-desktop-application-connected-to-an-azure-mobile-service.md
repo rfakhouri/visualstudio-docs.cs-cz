@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ac6e9a890c8009e493341b4bcda87f1e3e162d90
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693536"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824550"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Návod: Vytvoření aplikace WPF plochy připojené k mobilní službě Azure
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Návod: Vytvoření desktopové aplikace WPF připojené ke službě Azure Mobile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF) můžete rychle vytvářet moderní aplikace, která používá Azure Mobile Service k ukládání a poskytují data.  
@@ -28,9 +28,9 @@ Windows Presentation Foundation (WPF) můžete rychle vytvářet moderní aplika
   
 - Aktivní účet Microsoft Azure.  
   
-    - Si můžete zaregistrovat Bezplatný zkušební účet [tady](https://azure.microsoft.com/pricing/free-trial/).  
-  
-    - Můžete si aktivovat [výhody pro předplatitele MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Vaše předplatné MSDN vám dává kredity každý měsíc, můžete použít k placení za služby Azure.  
+  - Si můžete zaregistrovat Bezplatný zkušební účet [tady](https://azure.microsoft.com/pricing/free-trial/).  
+
+  - Můžete si aktivovat [výhody pro předplatitele MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Vaše předplatné MSDN vám dává kredity každý měsíc, můžete použít k placení za služby Azure.  
   
 ## <a name="create-a-project-and-add-references"></a>Vytvořte projekt a přidejte odkazy  
  Prvním krokem je vytvoření projektu WPF a přidání balíčku NuGet, který vám umožní připojit se k mobilním službám Azure.  

@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117652"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823542"
 ---
 # <a name="supported-code-changes-c"></a>Podporované změny kódu (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,17 +57,17 @@ Upravit a pokračovat zpracovává většinu typů změn kódu uvnitř těla met
   
 - Ladění LINQ kódu za určitých okolností. Další informace najdete v tématu [ladění LINQ](../debugger/debugging-linq.md).  
   
-    - Zachycení proměnné, která se nezachytila dřív.  
-  
-    - Změna typu výrazu dotazu (například vyberte a = > vyberte nový {A =};)  
-  
-    - Odebrání `where` , který obsahuje aktivní příkaz.  
-  
-    - Odebrání `let` , který obsahuje aktivní příkaz.  
-  
-    - Odebrání `join` , který obsahuje aktivní příkaz.  
-  
-    - Odebrání `orderby` , který obsahuje aktivní příkaz.  
+  - Zachycení proměnné, která se nezachytila dřív.  
+
+  - Změna typu výrazu dotazu (například vyberte a = > vyberte nový {A =};)  
+
+  - Odebrání `where` , který obsahuje aktivní příkaz.  
+
+  - Odebrání `let` , který obsahuje aktivní příkaz.  
+
+  - Odebrání `join` , který obsahuje aktivní příkaz.  
+
+  - Odebrání `orderby` , který obsahuje aktivní příkaz.  
   
 - Ladění ve smíšeném režimu (nativní a spravovaná).  
   

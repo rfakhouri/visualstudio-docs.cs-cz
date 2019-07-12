@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b9217031866a53e229cb03838b1be835019b62ba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746156"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825603"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Použití uložených dat řešení IntelliTrace (C#, Visual Basic, C++)
 
@@ -56,11 +56,11 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 
 - Pokud soubor .iTrace připojen k pracovní položce serveru Team Foundation Server, postupujte podle těchto kroků v pracovní položce:
 
-    - V části **všechny odkazy**, najděte soubor .iTrace. Otevřete jej.
+  - V části **všechny odkazy**, najděte soubor .iTrace. Otevřete jej.
 
-         \- nebo –
+    \- nebo –
 
-    - V části **kroky pro reprodukci**, zvolte **IntelliTrace** odkaz.
+  - V části **kroky pro reprodukci**, zvolte **IntelliTrace** odkaz.
 
 > [!TIP]
 > Pokud jste zavřeli soubor IntelliTrace během ladění, můžete lze jej snadno znovu otevřít. Přejděte **ladění** nabídce zvolte **IntelliTrace**, **zobrazit souhrn protokolu**. Můžete také zvolit **zobrazit souhrn protokolu** v **IntelliTrace** okna. To je k dispozici pouze při ladění pomocí IntelliTrace.

@@ -8,12 +8,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075815"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824058"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Písma a formátování pro Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (Nahradit `Microsoft.VisualStudio.Shell.11.0` v aktuální verzi knihovny dll MPF.)
 
- Chcete-li zobrazit dialogové okno, zavolejte "**ShowModal()**" ve třídě přes **ShowDialog()**. **ShowModal()** nastaví správnou modální stav v prostředí, zajišťuje je zarovnaný na střed dialogového okna v nadřazené okno a tak dále.
+ Chcete-li zobrazit dialogové okno, zavolejte "**ShowModal()** " ve třídě přes **ShowDialog()** . **ShowModal()** nastaví správnou modální stav v prostředí, zajišťuje je zarovnaný na střed dialogového okna v nadřazené okno a tak dále.
 
  Kód je následujícím způsobem:
 
@@ -417,11 +417,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Větší záhlaví (písmo prostředí x 155 % nebo vyšší) můžou mít barvy pro tyto účely:
 
-    - K poskytování vizuální vzhled podpis uživatelského rozhraní Visual Studio
+  - K poskytování vizuální vzhled podpis uživatelského rozhraní Visual Studio
 
-    - Chcete-li upoutat pozornost na konkrétní oblasti
+  - Chcete-li upoutat pozornost na konkrétní oblasti
 
-    - Nabízí osvobození od standardního prostředí tmavě šedé/Černá barva textu
+  - Nabízí osvobození od standardního prostředí tmavě šedé/Černá barva textu
 
 - Barva záhlaví by je měli využít stávající sady Visual Studio značkové barvy, především hlavní nachová #FF68217A.
 

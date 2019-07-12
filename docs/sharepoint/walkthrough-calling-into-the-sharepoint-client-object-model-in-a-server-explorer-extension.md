@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835945"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824166"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Návod: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru
   Tento návod ukazuje, jak volat z rozšíření pro objektového modelu klienta SharePoint **připojení služby SharePoint** uzel v **Průzkumníka serveru**. Další informace o tom, jak pomocí objektového modelu klienta SharePoint, naleznete v tématu [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -27,9 +27,9 @@ ms.locfileid: "66835945"
 
 - Vytváření [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozšíření, které rozšiřuje **připojení služby SharePoint** uzlu **Průzkumníka serveru** následujícími způsoby:
 
-    - Přidá rozšíření **Galerie webových částí** uzel za každý uzel webu služby SharePoint v **Průzkumníka serveru**. Tento nový uzel obsahuje podřízené uzly, které představují jednotlivé webové části v galerii webových částí na webu.
+  - Přidá rozšíření **Galerie webových částí** uzel za každý uzel webu služby SharePoint v **Průzkumníka serveru**. Tento nový uzel obsahuje podřízené uzly, které představují jednotlivé webové části v galerii webových částí na webu.
 
-    - Rozšíření definuje nový typ uzlu, který představuje instanci webové části. Tento nový typ uzlu je základem pro podřízené uzly pod novou **Galerie webových částí** uzlu. Zobrazí informace v nového typu uzlu webové části **vlastnosti** okno o webové části, která představuje uzel.
+  - Rozšíření definuje nový typ uzlu, který představuje instanci webové části. Tento nový typ uzlu je základem pro podřízené uzly pod novou **Galerie webových částí** uzlu. Zobrazí informace v nového typu uzlu webové části **vlastnosti** okno o webové části, která představuje uzel.
 
 - Vytváření balíčku rozšíření Visual Studio (VSIX) k nasazení rozšíření.
 

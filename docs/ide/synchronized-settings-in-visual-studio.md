@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950429"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824817"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronizovat nastavení sady Visual Studio mezi několik počítačů
 
@@ -31,19 +31,19 @@ Ve výchozím nastavení jsou synchronizována následující nastavení:
 
 - Následující možnosti **nástroje** > **možnosti** stránky:
 
-   - Motiv a nabídky panelu nastavení malých a velkých písmen na **prostředí** > **Obecné** stránka možností.
+  - Motiv a nabídky panelu nastavení malých a velkých písmen na **prostředí** > **Obecné** stránka možností.
 
-   - Všechna nastavení na **prostředí** > **písma a barvy** stránka možností.
+  - Všechna nastavení na **prostředí** > **písma a barvy** stránka možností.
 
-   - Všechny klávesové zkratky na **prostředí** > **klávesnice** stránka možností.
+  - Všechny klávesové zkratky na **prostředí** > **klávesnice** stránka možností.
 
-   - Všechna nastavení na **prostředí** > **karty a Windows** stránka možností.
+  - Všechna nastavení na **prostředí** > **karty a Windows** stránka možností.
 
-   - Všechna nastavení na **prostředí** > **spuštění** stránka možností.
+  - Všechna nastavení na **prostředí** > **spuštění** stránka možností.
 
-   - Všechna nastavení na **textový Editor** možnosti stránky, například [předvolby stylu kódu](code-styles-and-quick-actions.md).
+  - Všechna nastavení na **textový Editor** možnosti stránky, například [předvolby stylu kódu](code-styles-and-code-cleanup.md).
 
-   - Všechna nastavení na **návrháře XAML** možnosti stránky.
+  - Všechna nastavení na **návrháře XAML** možnosti stránky.
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Vypnout synchronizovaná nastavení v určitém počítači
 

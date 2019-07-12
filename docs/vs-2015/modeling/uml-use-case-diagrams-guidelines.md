@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: fc5dbc6b483313d169a80dc66550dce80a147c96
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493662"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823838"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramy případů použití UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,13 +115,13 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
 - Vytvoření **Actors** představující třídy lidé, organizace, jiných systémů, softwaru nebo zařízení, které pracují s systému nebo subsystému.  
   
-    - Zjistěte, jak nakreslit objekty actor a další prvky, naleznete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
-  
-    - Pro každou odlišnou sadu cílů Identifikujte actors podle jejich typu nebo role, i když fyzické osoby nebo entity můžou být stejné. Restaurace a zákazníků jsou samostatné subjekty, i když zaměstnanec restaurace může být někdy zákazníka.  
+  - Zjistěte, jak nakreslit objekty actor a další prvky, naleznete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
+
+  - Pro každou odlišnou sadu cílů Identifikujte actors podle jejich typu nebo role, i když fyzické osoby nebo entity můžou být stejné. Restaurace a zákazníků jsou samostatné subjekty, i když zaměstnanec restaurace může být někdy zákazníka.  
   
 - Vytvoření **případy použití** pro jednotlivé cíle, které každý objekt actor se snaží dosáhnout pomocí systému.  
   
-    - Zadejte název a popis případy použití ve slovech, které by objekt actor rozumí, namísto implementace podmínky.  
+  - Zadejte název a popis případy použití ve slovech, které by objekt actor rozumí, namísto implementace podmínky.  
   
 - Použít **přidružení** k aktéry s případy použití.  
   

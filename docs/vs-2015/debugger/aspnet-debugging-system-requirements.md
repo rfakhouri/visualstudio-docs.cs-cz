@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa8951be6da4d77ffb51b6bc8f09a796b373a944
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439944"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826264"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Ladění ASP.NET: Požadavky na systém
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Toto téma popisuje požadavky na software a zabezpečení pro [!INCLUDE[vstecas
   
 - Místní ladění, ve kterém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a webovou aplikaci spustit ve stejném počítači. Existují dvě verze tohoto scénáře:  
   
-    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kód se nachází v systému souborů.  
-  
-    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kód se nachází na webu služby IIS.  
+  - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kód se nachází v systému souborů.  
+
+  - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kód se nachází na webu služby IIS.  
   
 - Vzdálené ladění, ve kterém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] běží na klientském počítači a ladí webovou aplikaci, která běží na vzdáleném serveru.  
   
@@ -44,7 +44,7 @@ Toto téma popisuje požadavky na software a zabezpečení pro [!INCLUDE[vstecas
   
  Název [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces se liší podle scénáře ladění a verze služby IIS. Další informace najdete v tématu [jak: Hledání názvu procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
- Můžete změnit uživatelského účtu, který [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces běží pod tak, že upravíte soubor machine.config na serveru, na kterém běží služby IIS. Nejlepší způsob, jak to provést, je použít **Správce Internetové informační služby (IIS)**. Další informace najdete v tématu [jak: Spuštění pracovního procesu v rámci uživatelského účtu](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
+ Můžete změnit uživatelského účtu, který [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces běží pod tak, že upravíte soubor machine.config na serveru, na kterém běží služby IIS. Nejlepší způsob, jak to provést, je použít **Správce Internetové informační služby (IIS)** . Další informace najdete v tématu [jak: Spuštění pracovního procesu v rámci uživatelského účtu](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
   
  Pokud změníte [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovní proces pro spuštění v rámci vlastní uživatelský účet není potřeba mít oprávnění správce na serveru, na kterém běží služba IIS.  
   

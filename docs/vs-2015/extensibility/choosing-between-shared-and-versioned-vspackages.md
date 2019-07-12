@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 289e506d3cd404bba9a3a63d97179b89a948d381
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685334"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821978"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Volba mezi sdíleným a verzovaným rozšířením VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Různé verze sady Visual Studio můžou existovat společně na stejném počí
   
 - Ujistěte se, vaši VSPackage kompatibilní s více verzemi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dva způsoby, jak udělat proto jsou k dispozici:  
   
-    - Omezit vašeho balíčku VSPackage pomocí pouze funkce nejstarší verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , kterou podporujete.  
-  
-    - Program vašeho balíčku VSPackage umožní reagovat na verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve kterém je spuštěná. Pak v případě dotazů pro novější služby selžou, vašeho balíčku VSPackage můžou nabízet další služby, které jsou podporovány ve starších verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  - Omezit vašeho balíčku VSPackage pomocí pouze funkce nejstarší verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , kterou podporujete.  
+
+  - Program vašeho balíčku VSPackage umožní reagovat na verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve kterém je spuštěná. Pak v případě dotazů pro novější služby selžou, vašeho balíčku VSPackage můžou nabízet další služby, které jsou podporovány ve starších verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 - Zaregistrujte vašeho balíčku VSPackage odpovídajícím způsobem. Další informace najdete v tématu [registrace balíčku VSPackage](../extensibility/internals/vspackage-registration.md) a [spravovat registrace balíčku VSPackage](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   

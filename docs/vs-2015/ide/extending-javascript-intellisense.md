@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eea71ffe2b449e0ee5aff893efd05e12e4ecae73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441468"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824922"
 ---
 # <a name="extending-javascript-intellisense"></a>Rozšíření JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Funkce rozšíření technologie IntelliSense jazyka JavaScript umožňuje přiz
   
  Mechanismus automatického zjišťování umožňuje služba jazyka automaticky najděte rozšíření, které podle konvence pojmenování souborů *NázevKnihovny*. intellisense.js a, které se nacházejí ve stejném adresáři jako knihovny do která se vztahuje rozšíření. Například by platnou příponu knihovny jQuery jQuery.intellisense.js. Pro více omezující jQuery rozšíření můžete použít názvy souborů, například jQuery-1.7.1.intellisense.js (rozšíření specifické pro verzi) nebo jQuery.ui.intellisense.js (rozšíření knihovny jQuery oboru). Nejvíc omezující verze rozšíření se používá, pokud je nalezen více než jedno rozšíření pro danou knihovnu.  
   
- Pokud chcete použít rozšíření pro všechny soubory projektu JavaScript, můžete místo toho přidejte rozšíření do referenční skupiny. Existuje několik typů referenčních skupin, buď ty, které obsahují implicitní odkazy a ty, které zahrnují vyhrazených pracovních serverů odkazů. Chcete-li přidat rozšíření, je obvykle potřeba přidat soubor jako implicitní referenční skupina, buď **implicitní (Windows)**, **implicitní (Web)**. Implicitní odkazy jsou v oboru pro každý soubor .js otevřený v editoru kódu. Když použijete tuto metodu, budete muset přidat rozšíření a soubor, který je doplnit rozšíření.  
+ Pokud chcete použít rozšíření pro všechny soubory projektu JavaScript, můžete místo toho přidejte rozšíření do referenční skupiny. Existuje několik typů referenčních skupin, buď ty, které obsahují implicitní odkazy a ty, které zahrnují vyhrazených pracovních serverů odkazů. Chcete-li přidat rozšíření, je obvykle potřeba přidat soubor jako implicitní referenční skupina, buď **implicitní (Windows)** , **implicitní (Web)** . Implicitní odkazy jsou v oboru pro každý soubor .js otevřený v editoru kódu. Když použijete tuto metodu, budete muset přidat rozšíření a soubor, který je doplnit rozšíření.  
   
  Použití **IntelliSense** stránku **možnosti** dialogové okno Přidat rozšíření jako referenční skupiny. Můžete přistupovat **IntelliSense** stránky výběrem **nástroje**, **možnosti** na řádku nabídek a pak zvolíte **textový Editor**, **JavaScript**, **IntelliSense**, **odkazy**. Další informace o referenčních skupin najdete v tématu [technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md) a [možnosti, textový Editor, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
   
@@ -147,9 +147,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `paramComments`. Vrátí pole představující komentáře pro každého parametru ve funkci. Členy pole patří:  
   
-    - `name`. Vrátí řetězec představující název parametru.  
-  
-    - `comment`. Vrátí řetězec, který obsahuje parametr komentář.  
+  - `name`. Vrátí řetězec představující název parametru.  
+
+  - `comment`. Vrátí řetězec, který obsahuje parametr komentář.  
   
 ### <a name="FunctionHelp"></a> functionHelp vlastnost  
  Vrátí Nápověda pro funkci. Tato vlastnost je k dispozici pro `signaturehelp` objektu události.  
@@ -162,47 +162,47 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `signatures`. Čtení a zápis Získá nebo nastaví pole signatury funkce. Každý prvek v poli je `signature` objektu. Některé `signature` vlastnosti, jako například `locid`, odpovídají na běžné [dokumentační komentáře XML](../ide/xml-documentation-comments-javascript.md) atributy.  
   
-     Členové `signature` objekt obsahovat:  
-  
-    - `description`. Čtení a zápis Vrátí řetězec, který popisuje funkce.  
-  
+  Členové `signature` objekt obsahovat:  
+
+  - `description`. Čtení a zápis Vrátí řetězec, který popisuje funkce.  
+
+  - `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci, informace o funkci.  
+
+  - `helpKeyword`. Čtení a zápis Vrátí řetězec, který obsahuje klíčové slovo nápovědy.  
+
+  - `externalFile`. Čtení a zápis Vrátí řetězec, který představuje soubor, který obsahuje ID člena.  
+
+  - `externalid`. Čtení a zápis Vrátí řetězec, který představuje ID členské funkce.  
+
+  - `params`. Čtení a zápis Získá nebo nastaví pole parametrů pro funkci. Každý prvek v poli parametrů `parameter` objekt, který obsahuje vlastnosti, které odpovídají na následující atributy [ \<param >](../ide/param-javascript.md) element:  
+
+    - `name`. Čtení a zápis Vrátí řetězec představující název parametru.  
+
+    - `type`. Čtení a zápis Vrátí řetězec, který představuje typ parametru.  
+
+    - `elementType`. Čtení a zápis Pokud je typ `Array`, vrátí řetězec, který představuje typ prvků v poli.  
+
+    - `description`. Čtení a zápis Vrátí řetězec, který popisuje parametr.  
+
     - `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci, informace o funkci.  
-  
+
+    - `optional`. Čtení a zápis Vrátí řetězec, který označuje, zda se jedná o volitelný parametr. `true` Označuje, že parametr je volitelná. `false` označuje, že není.  
+
+  - `returnValue`. Čtení a zápis Získá nebo nastaví návratovou hodnotu objekt s vlastnostmi, které odpovídají na následující atributy [ \<vrátí >](../ide/returns-javascript.md) element:  
+
+    - `type`. Čtení a zápis Vrátí řetězec, který představuje návratovým typem.  
+
+    - `elementType`. Čtení a zápis Pokud je typ `Array`, vrátí řetězec, který představuje typ prvků v poli.  
+
+    - `description`. Čtení a zápis Vrátí řetězec, který popisuje návratovou hodnotu.  
+
+    - `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci, informace o funkci.  
+
     - `helpKeyword`. Čtení a zápis Vrátí řetězec, který obsahuje klíčové slovo nápovědy.  
-  
+
     - `externalFile`. Čtení a zápis Vrátí řetězec, který představuje soubor, který obsahuje ID člena.  
-  
+
     - `externalid`. Čtení a zápis Vrátí řetězec, který představuje ID členské funkce.  
-  
-    - `params`. Čtení a zápis Získá nebo nastaví pole parametrů pro funkci. Každý prvek v poli parametrů `parameter` objekt, který obsahuje vlastnosti, které odpovídají na následující atributy [ \<param >](../ide/param-javascript.md) element:  
-  
-        - `name`. Čtení a zápis Vrátí řetězec představující název parametru.  
-  
-        - `type`. Čtení a zápis Vrátí řetězec, který představuje typ parametru.  
-  
-        - `elementType`. Čtení a zápis Pokud je typ `Array`, vrátí řetězec, který představuje typ prvků v poli.  
-  
-        - `description`. Čtení a zápis Vrátí řetězec, který popisuje parametr.  
-  
-        - `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci, informace o funkci.  
-  
-        - `optional`. Čtení a zápis Vrátí řetězec, který označuje, zda se jedná o volitelný parametr. `true` Označuje, že parametr je volitelná. `false` označuje, že není.  
-  
-    - `returnValue`. Čtení a zápis Získá nebo nastaví návratovou hodnotu objekt s vlastnostmi, které odpovídají na následující atributy [ \<vrátí >](../ide/returns-javascript.md) element:  
-  
-        - `type`. Čtení a zápis Vrátí řetězec, který představuje návratovým typem.  
-  
-        - `elementType`. Čtení a zápis Pokud je typ `Array`, vrátí řetězec, který představuje typ prvků v poli.  
-  
-        - `description`. Čtení a zápis Vrátí řetězec, který popisuje návratovou hodnotu.  
-  
-        - `locid`. Čtení a zápis Vrátí identifikátor řetězce, který obsahuje informace o lokalizaci, informace o funkci.  
-  
-        - `helpKeyword`. Čtení a zápis Vrátí řetězec, který obsahuje klíčové slovo nápovědy.  
-  
-        - `externalFile`. Čtení a zápis Vrátí řetězec, který představuje soubor, který obsahuje ID člena.  
-  
-        - `externalid`. Čtení a zápis Vrátí řetězec, který představuje ID členské funkce.  
   
 ### <a name="ParentObject"></a> parentObject vlastnost  
  Vrátí nadřazený objekt členské funkce. Například pro `document.getElementByID`, `parentObject` vrátí `document` objektu. Tato vlastnost je k dispozici pro `signaturehelp` objektu události.  

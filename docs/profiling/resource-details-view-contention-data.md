@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b6331c4f0f4e2590fff76d2d7bf8a33a82376f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c4c3922f8f41f950ede7065e2e15ece07890ba6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797770"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825854"
 ---
 # <a name="resource-details-view---contention-data"></a>Zobrazení podrobností o prostředku – data kolizí
 Zobrazení podrobností prostředků zobrazí graf časové osy blokujících událostí, které byly způsobeny kolizí nad vybraný prostředek. Blokování události dojde, když vlákno je nucen k pozastavení provádění, protože jiné vlákno má uzamčený přístup k prostředku.
@@ -36,9 +36,9 @@ Zobrazení podrobností prostředků zobrazí graf časové osy blokujících ud
 
 - Proveďte jeden z následujících kroků:
 
-    - Klikněte na tlačítko **Oddálit** se vraťte na předchozí úroveň přiblížení.
+  - Klikněte na tlačítko **Oddálit** se vraťte na předchozí úroveň přiblížení.
 
-    - Klikněte na tlačítko **přiblížení resetování** a zobrazit všechny časové osy v zobrazení.
+  - Klikněte na tlačítko **přiblížení resetování** a zobrazit všechny časové osy v zobrazení.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>Chcete-li zobrazit zásobník volání události
 

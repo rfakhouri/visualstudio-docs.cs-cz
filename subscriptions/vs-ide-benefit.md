@@ -6,12 +6,12 @@ manager: lank
 ms.date: 04/03/2019
 ms.topic: conceptual
 description: Zjistěte, jak stáhnout a nainstalovat Visual Studio IDE, které jsou součástí vašeho předplatného sady Visual Studio.
-ms.openlocfilehash: fa01d3f9e5ffe12f4fbe7216750f14feaa1052e4
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784587"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824659"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Používání benefitu Visual Studio 2019
 
@@ -78,6 +78,6 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 - Potřebujete pomoc s Visual Studio IDE, podívejte se na tyto prostředky:
-    - Technické podpory: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-    - [Dokumentace](/visualstudio/)
+  - Technické podpory: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [Dokumentace](/visualstudio/)
 - Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).

@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93518a6ca5fa6464bf8f2e72f11cfa90b4dd4dd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433339"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825595"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Vytvoření doménově specifického jazyka založeného na Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ Instance DSL zobrazující uživatelské rozhraní formulář Windows a Průzkum
 
 - `UI` Projekt obsahuje ukázkový pracovní ovládacího prvku formuláře vázán na DSL. Ale nebude fungovat, pokud jste změnili definici DSL. `UI` Projekt obsahuje:  
 
-    - Windows Forms třídu s názvem `ModelViewControl`.  
+  - Windows Forms třídu s názvem `ModelViewControl`.  
 
-    - Soubor s názvem `DataBinding.cs` , který obsahuje další částečnou definici z `ModelViewControl`. Chcete-li zobrazit jeho obsah v **Průzkumníka řešení**, otevřete místní nabídku pro soubor a zvolte **zobrazit kód**.  
+  - Soubor s názvem `DataBinding.cs` , který obsahuje další částečnou definici z `ModelViewControl`. Chcete-li zobrazit jeho obsah v **Průzkumníka řešení**, otevřete místní nabídku pro soubor a zvolte **zobrazit kód**.  
 
 ### <a name="about-the-ui-project"></a>Informace o projektu uživatelského rozhraní  
  Při aktualizaci souboru definice DSL definovat vlastní DSL, budete muset aktualizovat ovládacího prvku `UI` projektu k zobrazení vašeho DSL. Na rozdíl od `Dsl` a `DslPackage` projekty, ukázka `UI` projektu negeneruje z `DslDefinitionl.dsl`. Můžete přidat soubory .tt ke generování kódu, pokud chcete, i když v tomto názorném postupu, který není součástí.  
@@ -241,9 +241,9 @@ Instance DSL zobrazující uživatelské rozhraní formulář Windows a Průzkum
 
 1. V návrhovém zobrazení FarmControl.cs vyberte jednoduché pole, jako je název, velikost nebo IsOrganic.  
 
-2. V okně Vlastnosti rozbalte **DataBindings** a otevřete **(rozšířené)**.  
+2. V okně Vlastnosti rozbalte **DataBindings** a otevřete **(rozšířené)** .  
 
-     V **formátování a rozšířené vazby** dialogového okna, v části **režim aktualizace zdroje dat**, zvolte **OnPropertyChanged –**.  
+     V **formátování a rozšířené vazby** dialogového okna, v části **režim aktualizace zdroje dat**, zvolte **OnPropertyChanged –** .  
 
 3. Sestavte a spusťte řešení.  
 

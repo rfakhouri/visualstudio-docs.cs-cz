@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1377034853907ce0c3585e4672296c1c8747259f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892999"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823859"
 ---
 # <a name="shader-designer"></a>Návrhář shaderů
 
@@ -52,7 +52,7 @@ Tato část popisuje, jak přidat do projektu Visual Studio C++ DGSL shader a ob
 
 2. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt jazyka C++, ke kterému chcete přidat shaderu a klikněte na tlačítko **přidat** > **nová položka**.
 
-3. V **přidat novou položku** dialogovém okně **nainstalováno**vyberte **grafiky**a pak vyberte **vizuální graf shaderu (.dgsl)**.
+3. V **přidat novou položku** dialogovém okně **nainstalováno**vyberte **grafiky**a pak vyberte **vizuální graf shaderu (.dgsl)** .
 
    > [!NOTE]
    > Pokud se nezobrazí **grafiky** v kategorii **přidat novou položku** dialogových oken a budete mít **obrázků a 3D modelů editory** nainstalována součást grafické položky nejsou podporovány pro typ vašeho projektu.
@@ -109,17 +109,17 @@ Použití **vyberte** režimu k přidání, odebrání, změna umístění, při
 
 - Tady je způsob:
 
-   - Pokud chcete přidat uzel do grafu, vyberte ji v **nástrojů** a přesuňte jej na návrhovou plochu.
+  - Pokud chcete přidat uzel do grafu, vyberte ji v **nástrojů** a přesuňte jej na návrhovou plochu.
 
-   - Odebrání uzlu z grafu, vyberte ho a potom stiskněte klávesu **odstranit**.
+  - Odebrání uzlu z grafu, vyberte ho a potom stiskněte klávesu **odstranit**.
 
-   - Chcete-li změnit umístění uzlu, vyberte ho a přesuňte ho do nového umístění.
+  - Chcete-li změnit umístění uzlu, vyberte ho a přesuňte ho do nového umístění.
 
-   - Pro připojení dvou uzlů, přesuňte výstupní terminál jednoho z uzlů do vstupní terminálu z jiného uzlu. Můžete připojit pouze terminály, které mají nekompatibilní typy. Čáry mezi terminály zobrazuje připojení.
+  - Pro připojení dvou uzlů, přesuňte výstupní terminál jednoho z uzlů do vstupní terminálu z jiného uzlu. Můžete připojit pouze terminály, které mají nekompatibilní typy. Čáry mezi terminály zobrazuje připojení.
 
-   - Chcete-li odebrat připojení, na místní nabídku pro jednu z připojených terminály, zvolte **přerušit odkazy**.
+  - Chcete-li odebrat připojení, na místní nabídku pro jednu z připojených terminály, zvolte **přerušit odkazy**.
 
-   - Chcete-li konfigurovat vlastnosti uzlu, vyberte uzel a pak na **vlastnosti** okno, zadejte nové hodnoty pro vlastnosti.
+  - Chcete-li konfigurovat vlastnosti uzlu, vyberte uzel a pak na **vlastnosti** okno, zadejte nové hodnoty pro vlastnosti.
 
 ### <a name="preview-shaders"></a>Shader ve verzi Preview.
 
@@ -168,7 +168,7 @@ Který tvar otočí, stiskněte a podržte **Alt**a potom vyberte libovolného b
 
 Před použitím shaderu ve vaší aplikaci, musíte ho exportovat ve formátu, který se rozumí rozhraní DirectX.
 
-Jako zdrojový kód HLSL nebo jako hodnota bytecode funkce shader kompilované můžete exportovat shadery. HLSL zdrojový kód je exportovat do textového souboru, který má *.hlsl* příponu názvu souboru. Hodnota bytecode funkce shader může být buď Nezpracovaná binární soubor, který je exportován *.cso* příponu názvu souboru nebo hlaviček jazyka C++ (*.h*) soubor, který kóduje hodnota bytecode funkce shader do pole.
+Jako zdrojový kód HLSL nebo jako hodnota bytecode funkce shader kompilované můžete exportovat shadery. HLSL zdrojový kód je exportovat do textového souboru, který má *.hlsl* příponu názvu souboru. Hodnota bytecode funkce shader může být buď Nezpracovaná binární soubor, který je exportován *.cso* příponu názvu souboru nebo hlaviček jazyka C++ ( *.h*) soubor, který kóduje hodnota bytecode funkce shader do pole.
 
 Další informace o tom, jak exportovat shader, naleznete v tématu [jak: Exportovat shader](../designers/how-to-export-a-shader.md).
 
@@ -182,8 +182,8 @@ Další informace o tom, jak exportovat shader, naleznete v tématu [jak: Export
 |Vybrat vše|**Ctrl**+**A**|
 |Odstranit aktuální výběr|**Delete**|
 |Zrušit aktuální výběr|**Řídicí** (**Esc**)|
-|Přiblížit|**CTRL**+**kolečko myši dopředu**<br /><br /> Znaménko plus (**+**)|
-|Oddálit|**CTRL**+**kolečko myši dozadu**<br /><br /> Znaménko minus (**-**)|
+|Přiblížit|**CTRL**+**kolečko myši dopředu**<br /><br /> Znaménko plus ( **+** )|
+|Oddálit|**CTRL**+**kolečko myši dozadu**<br /><br /> Znaménko minus ( **-** )|
 |Posunout nahoru na návrhovou plochu|**Kolečko myši dozadu**<br /><br /> **PageDown**|
 |Posunout návrhové ploše dolů|**Kolečko myši dopředu**<br /><br /> **PageUp**|
 |Posunout doleva návrhové ploše|**SHIFT**+**kolečko myši dozadu**<br /><br /> **Kolečko myši doleva**<br /><br /> **Shift**+**PageDown**|

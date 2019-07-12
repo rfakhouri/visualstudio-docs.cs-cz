@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4fb99a7f7fcd7c91003bc7d74cf0ef6639cf773
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 13029e05e4f29e532918562afd2fee520b387464
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698041"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821626"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,14 +59,14 @@ ms.locfileid: "65698041"
   
 - [Soubor projektu](#BKMK_ProjectFile)  
   
-    - [Vlastnosti](#BKMK_Properties)  
-  
-    - [Položky](#BKMK_Items)  
-  
-    - [Úlohy](#BKMK_Tasks)  
-  
-    - [Cíle](#BKMK_Targets)  
-  
+  - [Vlastnosti](#BKMK_Properties)  
+
+  - [Položky](#BKMK_Items)  
+
+  - [Úlohy](#BKMK_Tasks)  
+
+  - [Cíle](#BKMK_Targets)  
+
 - [Protokoly o sestavení](#BKMK_BuildLogs)  
   
 - [Použití nástroje MSBuild v sadě Visual Studio](#BKMK_VisualStudio)  
@@ -205,7 +205,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 |[Protokolování v nástroji MSBuild](../msbuild/logging-in-msbuild.md)|Popisuje, jak protokolovat události sestavení, zprávy a chyby.|  
 |[Další prostředky](../msbuild/additional-msbuild-resources.md)|Uvádí komunitu a prostředky podpory pro další informace o nástroji MSBuild.|  
   
-## <a name="reference"></a>Odkaz  
+## <a name="reference"></a>Reference  
  [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)  
  Obsahuje odkazy na témata, která obsahují referenční informace.  
   

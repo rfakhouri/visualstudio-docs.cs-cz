@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f510568c977579fa3e48d57db548040d16dcb574
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335490"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824334"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Písma a formátování pro Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> Písmo prostředí
@@ -394,11 +394,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Větší záhlaví (písmo prostředí x 155 % nebo vyšší) můžou mít barvy pro tyto účely:
 
-    - K poskytování vizuální vzhled podpis uživatelského rozhraní Visual Studio
+  - K poskytování vizuální vzhled podpis uživatelského rozhraní Visual Studio
 
-    - Chcete-li upoutat pozornost na konkrétní oblasti
+  - Chcete-li upoutat pozornost na konkrétní oblasti
 
-    - Nabízí osvobození od standardního prostředí tmavě šedé/Černá barva textu
+  - Nabízí osvobození od standardního prostředí tmavě šedé/Černá barva textu
 
 - Barva záhlaví by je měli využít stávající sady Visual Studio značkové barvy, především hlavní nachová #FF68217A.
 

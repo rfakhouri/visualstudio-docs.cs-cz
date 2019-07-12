@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 995328205e99117f68050833853ada76f06eb4c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566451"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821904"
 ---
 # <a name="n-tier-data-applications-overview"></a>Přehled vícevrstvých datových aplikací
 *N-vrstvá* datové aplikace jsou datové aplikace, které jsou rozděleny do několika *úrovně*. Nazývají se také „distribuované aplikace“ a „vícevrstvé aplikace“. N-vrstvé aplikace oddělují zpracování do samostatných vrstev, které jsou distribuovány mezi klientem a serverem. Při vývoji aplikací s přístupem k datům by mělo být cíleno na rozdělení mezi různými úrovněmi, které aplikaci tvoří.
@@ -49,11 +49,11 @@ Prezentační vrstva obvykle přistupuje střední vrstvě pomocí odkazu na slu
 
 - Komponenty datového přístupu a logiky, jako je například:
 
-    - [Objekty TableAdapter](create-and-configure-tableadapters.md) a [adaptéry a čtečky dat](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+  - [Objekty TableAdapter](create-and-configure-tableadapters.md) a [adaptéry a čtečky dat](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-    - Objektové reprezentace dat, jako například [technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) tříd entit.
+  - Objektové reprezentace dat, jako například [technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) tříd entit.
 
-    - Běžné služby aplikací, jako je například ověření, autorizace a přizpůsobení.
+  - Běžné služby aplikací, jako je například ověření, autorizace a přizpůsobení.
 
 Následující obrázek znázorňuje funkce a technologie, které jsou k dispozici v aplikaci Visual Studio a které je možné v rámci n-vrstvé aplikace umístit do střední vrstvy.
 

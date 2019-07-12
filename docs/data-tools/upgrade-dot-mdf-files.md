@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 334898fe9bb6ec5a7dcd84e081f99994e18ccb89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2b6029002e62f5b13f5fc40bc24f817364c148
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565157"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821664"
 ---
 # <a name="upgrade-mdf-files"></a>Upgrade souborů .mdf
 
@@ -95,9 +95,9 @@ Můžete také upravit připojení SQL Server Express LocalDB použít tak, že 
 
 - V sadě Visual Studio otevřete projekt bez upgradu ho.
 
-    - Chcete-li spustit projekt, vyberte **F5** klíč.
+  - Chcete-li spustit projekt, vyberte **F5** klíč.
 
-    - Chcete-li upravit databázi, otevřete *.mdf* ve **Průzkumníka řešení**a rozbalte uzel v **Průzkumníka serveru** pro práci s databází.
+  - Chcete-li upravit databázi, otevřete *.mdf* ve **Průzkumníka řešení**a rozbalte uzel v **Průzkumníka serveru** pro práci s databází.
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Chcete-li systém SQL Server Express výchozí databázový stroj
 

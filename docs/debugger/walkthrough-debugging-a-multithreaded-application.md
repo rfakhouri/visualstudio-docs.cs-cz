@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406943"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821590"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Zobrazit vlákna v ladicím programu sady Visual Studio pomocí okna vlákna (C#, Visual Basic, C++)
 V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou ladíte. Podrobné pokyny o tom, jak používat **vlákna** okna, naleznete v tématu [názorný postup: Ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md).
@@ -101,9 +101,9 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
 
 - Použijte jednu z následujících kroků:
 
-    - Klikněte dvakrát na libovolného vlákna.
+  - Klikněte dvakrát na libovolného vlákna.
 
-    - Klikněte pravým tlačítkem na vlákno a vyberte **přepnout na vlákno**.
+  - Klikněte pravým tlačítkem na vlákno a vyberte **přepnout na vlákno**.
 
 ## <a name="group-and-sort-threads"></a>Skupiny a řadit vlákna
  Při seskupování vlákna nadpis se zobrazí v tabulce pro každou skupinu. Záhlaví obsahuje popis skupiny, jako například **pracovní vlákna** nebo **vlákna bez příznaku**a ovládacím prvkem strom. Vlákna člena každé skupiny se zobrazí v záhlaví skupiny. Pokud chcete skrýt člena vláken pro skupiny, pomocí ovládacího prvku stromu sbalit skupiny.

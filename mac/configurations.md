@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 62f7f2a8ebdafcccc6082edce2c4a7f1d91ff48e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693104"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826073"
 ---
 # <a name="understanding-build-configurations"></a>Principy konfigurací sestavení
 
@@ -51,21 +51,21 @@ Aktivity jinak než `MainLauncher` bude muset mít `Exported=true` přidána do 
 Následující seznam obsahuje několik příkladů dat, která může být součástí konfigurace spuštění:
 
 * Pravidelné projektové .NET
-    * Alternativní umístění pro spouštění aplikací
-    * Počáteční argumenty
-    * Pracovní adresář
-    * Proměnné prostředí
-    * Modul mono runtime možnosti (který se má použít jenom při spouštění v Mono)
+  * Alternativní umístění pro spouštění aplikací
+  * Počáteční argumenty
+  * Pracovní adresář
+  * Proměnné prostředí
+  * Modul mono runtime možnosti (který se má použít jenom při spouštění v Mono)
 * Projekt pro Android
-    * Vstupní bod (aktivity, služby, příjemce)
-    * Záměru argumenty a data
+  * Vstupní bod (aktivity, služby, příjemce)
+  * Záměru argumenty a data
 * projekt pro iOS
-    * Režim (normální, načítání na pozadí)
+  * Režim (normální, načítání na pozadí)
 * projekt rozšíření pro iOS
-    * Při spuštění aplikace: výchozí nebo vlastní
+  * Při spuštění aplikace: výchozí nebo vlastní
 * Projekt WatchKit
-    * Režim (první pohled, oznámení)
-    * Datová část oznámení
+  * Režim (první pohled, oznámení)
+  * Datová část oznámení
 
 ## <a name="see-also"></a>Viz také:
 

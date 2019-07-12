@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690554"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825399"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Postupy: Přidání obslužné rutiny operace podporující přetahování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ DSL, můžete přidat obslužné rutiny události přetažení myší, tak, aby 
   
 - Alternativní způsoby definování obslužné rutiny gesta v prvních dvou částech:  
   
-    - [Definování obslužné rutiny gesta ShapeElement přepsání metody](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`, a další metody můžete přepsat.  
-  
-    - [Definování obslužné rutiny gesta pomocí MEF](#MEF). Tuto metodu použijte, pokud chcete, aby vývojáři třetích stran, abyste mohli definovat jejich vlastní obslužné rutiny do vašeho DSL. Uživatelé mohou nainstalovat rozšíření třetích stran po instalují vašeho DSL.  
+  - [Definování obslužné rutiny gesta ShapeElement přepsání metody](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`, a další metody můžete přepsat.  
+
+  - [Definování obslužné rutiny gesta pomocí MEF](#MEF). Tuto metodu použijte, pokud chcete, aby vývojáři třetích stran, abyste mohli definovat jejich vlastní obslužné rutiny do vašeho DSL. Uživatelé mohou nainstalovat rozšíření třetích stran po instalují vašeho DSL.  
   
 - [Dekódování přetaženou položku](#extracting). Elementy můžete přetáhnout z jakékoli okno nebo z plochy, stejně jako z DSL.  
   

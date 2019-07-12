@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 3ace83b86b3b1772cd111a36b5f011d023189501
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476595"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824508"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 
@@ -355,11 +355,11 @@ Diagram třídy má následující hlavní funkce:
 
 - Typy, jako jsou třídy, rozhraní a výčty:
 
-    - A *třídy* je definice objektů, které sdílejí určité strukturální nebo behaviorální charakteristiky.
+  - A *třídy* je definice objektů, které sdílejí určité strukturální nebo behaviorální charakteristiky.
 
-    - *Rozhraní* definuje část externě viditelného chování objektu.
+  - *Rozhraní* definuje část externě viditelného chování objektu.
 
-    - *Výčet* je klasifikátor, který obsahuje seznam hodnot literálů.
+  - *Výčet* je klasifikátor, který obsahuje seznam hodnot literálů.
 
 - *Atributy* jsou hodnoty určitého typu, které popisují každý výskyt *třídění*. Klasifikátor je obecný název pro typy, komponenty, případy použití a dokonce aktéry.
 

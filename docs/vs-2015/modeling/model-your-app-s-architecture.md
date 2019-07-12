@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9e5de52fbe15049f4acb3dacf236bfe9f4ecc92
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417784"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823268"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelování aplikace&#39;s architektury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -244,9 +244,9 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
 - Model hlavních částí a jejich vztahy. Může se jednat třídy nebo součásti a rozhraní se přidružení a závislostí mezi nimi. Elementy obvykle spadají do dvou kategorií:  
   
-    - Elementy, které vývojář musí replikovat v každé části kódu, kde se používá vzor. Typy šablon můžete použít k popisu tyto. Další informace najdete v tématu [diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md).  
-  
-    - Prvky, který popisuje třídy rozhraní framework, které vývojář by měl používat.  
+  - Elementy, které vývojář musí replikovat v každé části kódu, kde se používá vzor. Typy šablon můžete použít k popisu tyto. Další informace najdete v tématu [diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md).  
+
+  - Prvky, který popisuje třídy rozhraní framework, které vývojář by měl používat.  
   
 - Model interakcí mezi částmi, pomocí pořadí nebo aktivita diagramů.  
   

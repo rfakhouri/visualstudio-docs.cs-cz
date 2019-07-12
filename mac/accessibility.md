@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 383f9fb46341eec78fa2daa59bba31dde89ac437
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985316"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824451"
 ---
 # <a name="accessibility"></a>Usnadnění
 
@@ -62,9 +62,9 @@ VoiceOver příkazy se zobrazují v tomto průvodci jako **VO + * klíč*** kter
 Přejít Visual Studio pro Mac uživatelské rozhraní, použijte následující kombinace kláves:
 
 - **VO + šipka doprava nebo doleva**: Navigace mezi elementy uživatelského rozhraní
-    - VoiceOver bude oznámit popisek a typ ovládacího prvku a popisují, jak pracovat s ním.
+  - VoiceOver bude oznámit popisek a typ ovládacího prvku a popisují, jak pracovat s ním.
 - **VO + Shift + dolů / nahoru**: Krok do / z elementu
-    - Po uvnitř elementu lze použít **VO + vlevo / vpravo** k navigaci v prvky v ní.
+  - Po uvnitř elementu lze použít **VO + vlevo / vpravo** k navigaci v prvky v ní.
 - **VO + MEZERNÍK**: Vyberte / pracovat s ovládacím prvkem
 - **VO + M**: Interakce s aplikací Visual Studio pro Mac nabídek
 

@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o předplatném školení Datacampu součástí vybraných předplatných sady Visual Studio.
-ms.openlocfilehash: 0182e8e69545191285fc4f45b8bd832dae4d1317
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 5f5b327bb5b1c328fe746fdbafc1a7550eefacd6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784631"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825346"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhoda Datacampu školení v předplatných sady Visual Studio
 
@@ -81,8 +81,8 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 - Potřebujete pomoc s používáním Datacampu?  Projděte si tyto prostředky:
-    - [Společenství Datacampu](https://www.datacamp.com/community/tutorials), fóra a kurzy.
-    - [Centrum pro nápovědu Datacampu](https://support.datacamp.com/hc), kde hledat témata podpory a dotazy žádost uživatele.
-    - [Odeslat žádost o podporu](https://support.datacamp.com/hc/requests/new)
+  - [Společenství Datacampu](https://www.datacamp.com/community/tutorials), fóra a kurzy.
+  - [Centrum pro nápovědu Datacampu](https://support.datacamp.com/hc), kde hledat témata podpory a dotazy žádost uživatele.
+  - [Odeslat žádost o podporu](https://support.datacamp.com/hc/requests/new)
 - Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
 - Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978394"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823373"
 ---
 # <a name="developer-community-data-privacy"></a>Ochrana osobních údajů komunity vývojářů
 
@@ -64,24 +64,24 @@ Pokud **nahlásit problém** je zahájeno z aplikace Visual Studio shromažďuje
 
 - Web ladicí program protokolové soubory, pokud neexistují:
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+  - *%TEMP%\vscode-chrome-debug.txt*
 
-   - *%TEMP%\vscode-node-debug2.txt*
+  - *%TEMP%\vscode-node-debug2.txt*
 
-   - *%TEMP%\vscode-edge-debug.txt*
+  - *%TEMP%\vscode-edge-debug.txt*
 
 - Snímek obrazovky, pokud budete chtít zahrnout
 
 - Nahrávání dat, pokud budete chtít zahrnout záznam, který obsahuje:
 
-   - Kroky pro reprodukci problému
+  - Kroky pro reprodukci problému
 
-   - Soubor trasování ETL
+  - Soubor trasování ETL
 
-   - Soubor s výpisem paměti
+  - Soubor s výpisem paměti
 
-    > [!NOTE]
-    > Můžete odstranit záznam datům, které nechcete odesílat před odesláním do sestavy.
+  > [!NOTE]
+  > Můžete odstranit záznam datům, které nechcete odesílat před odesláním do sestavy.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -24,14 +24,14 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685325"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824244"
 ---
-# <a name="how-to-use-the-threads-window"></a>Postupy: Použití okna vláken
+# <a name="how-to-use-the-threads-window"></a>Postupy: Použití okna Vlákna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou ladíte.  
@@ -72,11 +72,11 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
   
 - Proveďte některý z následujících kroků:  
   
-    - Klikněte dvakrát na libovolného vlákna.  
-  
-    - Klikněte pravým tlačítkem na vlákno a klikněte na tlačítko **přepnout na vlákno**.  
-  
-         Žlutá šipka vedle nové aktivní vlákno. Šedé osnovy šipka označuje vlákno, kde se spuštění dostalo do ladicího programu.  
+  - Klikněte dvakrát na libovolného vlákna.  
+
+  - Klikněte pravým tlačítkem na vlákno a klikněte na tlačítko **přepnout na vlákno**.  
+
+    Žlutá šipka vedle nové aktivní vlákno. Šedé osnovy šipka označuje vlákno, kde se spuštění dostalo do ladicího programu.  
   
 ## <a name="grouping-and-sorting-threads"></a>Seskupování a řazení vláken  
  Při seskupování vlákna nadpis se zobrazí v tabulce pro každou skupinu. Záhlaví obsahuje popis skupiny, jako je například "Pracovní vlákna" nebo "Vlákna bez příznaku" a ovládacím prvkem strom. Vlákna člena každé skupiny se zobrazí v záhlaví skupiny. Pokud chcete skrýt člena vláken pro skupiny, můžete do ovládacího prvku stromu sbalí skupinu.  
@@ -116,11 +116,11 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
   
 - Na panelu nástrojů v horní části **vlákna** okno, přejděte **hledání** boxu tak buď:  
   
-    - Zadejte hledaný řetězec a stiskněte klávesu ENTER.  
-  
-         \- nebo –  
-  
-    - Klikněte na rozevírací seznam vedle položky **hledání** a vyberte hledaný řetězec předešlých hledání.  
+  - Zadejte hledaný řetězec a stiskněte klávesu ENTER.  
+
+    \- nebo –  
+
+  - Klikněte na rozevírací seznam vedle položky **hledání** a vyberte hledaný řetězec předešlých hledání.  
   
 - (Volitelné) Chcete-li do hledání zahrnout úplného zásobníku volání, vyberte **zásobník volání hledání**.  
   

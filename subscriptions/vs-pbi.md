@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o předplatné Power BI Pro, které jsou součástí vybraných předplatných sady Visual Studio.
-ms.openlocfilehash: db6f9ec6fd37101dbf4353ff5cf6eda3ec4d4323
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784510"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824632"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro v předplatných sady Visual Studio
 
@@ -110,11 +110,11 @@ O:  Ne.  Power BI Pro benefit nelze přidat do tenantech pro státní správu.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 - Potřebujete pomoc s Power BI Pro?
-    - Podívejte se [online dokumentaci](/power-bi/).
-    - Problémy s registrací?  Podívejte se na [registrace ke službě Power BI jako individuální uživatel](/power-bi/service-self-service-signup-for-power-bi)
-    - Prozkoumejte nejčastější problémy, získejte pomoc od komunity nebo odeslat lístek podpory na [stránku podpory](https://powerbi.microsoft.com/support/).
+  - Podívejte se [online dokumentaci](/power-bi/).
+  - Problémy s registrací?  Podívejte se na [registrace ke službě Power BI jako individuální uživatel](/power-bi/service-self-service-signup-for-power-bi)
+  - Prozkoumejte nejčastější problémy, získejte pomoc od komunity nebo odeslat lístek podpory na [stránku podpory](https://powerbi.microsoft.com/support/).
 - Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
 - Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 Power BI Pro výhodu si aktivujete, navštivte [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

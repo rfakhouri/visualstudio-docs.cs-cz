@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c09817f54310ec27eed8c59b4d91e7d82613eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 281631332692d249ea30e747fa4a0fd69ca110f4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442244"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825670"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Postupy: Pozastavení a opětovné spuštění shromažďování dat o výkonu
 Z okna stránky relace profilování můžete interaktivně ovládat shromažďování dat profilování.
@@ -31,11 +31,11 @@ Z okna stránky relace profilování můžete interaktivně ovládat shromažď
 
 - Na stránce relace profilování:
 
-    - Zvolte **pozastavit shromažďování** pro shromažďování dat pozastavit.
+  - Zvolte **pozastavit shromažďování** pro shromažďování dat pozastavit.
 
-    - Zvolte **opět spustit shromažďování** chcete restartovat shromažďování dat poté, co bylo pozastaveno.
+  - Zvolte **opět spustit shromažďování** chcete restartovat shromažďování dat poté, co bylo pozastaveno.
 
-    - Zvolte **zastavení profilování** ukončit relaci profilování a generování sestav.
+  - Zvolte **zastavení profilování** ukončit relaci profilování a generování sestav.
 
 ## <a name="see-also"></a>Viz také:
 - [Řízení shromažďování dat](../profiling/controlling-data-collection.md)

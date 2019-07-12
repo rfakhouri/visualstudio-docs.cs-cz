@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 922edcd45dd42c8da5a9ec4dc8d3e8f450ceea09
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089572"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823602"
 ---
 # <a name="resource-details-view---contention-data"></a>Zobrazení podrobností o prostředku – data kolizí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ Zobrazení podrobností prostředků zobrazí graf časové osy blokujících ud
   
 - Proveďte jeden z následujících kroků:  
   
-    - Klikněte na tlačítko **Oddálit** se vraťte na předchozí úroveň přiblížení.  
-  
-    - Klikněte na tlačítko **přiblížení resetování** a zobrazit všechny časové osy v zobrazení.  
-  
+  - Klikněte na tlačítko **Oddálit** se vraťte na předchozí úroveň přiblížení.  
+
+  - Klikněte na tlačítko **přiblížení resetování** a zobrazit všechny časové osy v zobrazení.  
+
 #### <a name="to-view-the-call-stack-of-an-event"></a>Chcete-li zobrazit zásobník volání události  
   
 - Časová osa grafu klikněte na panel události.  

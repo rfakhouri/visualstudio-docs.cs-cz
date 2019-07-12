@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39fd588a51771aae79d22d2d7f0a02a648184c05
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825815"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821566"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Potlačení upozornění analýzy kódu
 
@@ -67,17 +67,17 @@ Vlastnosti atributu:
 
 - **Obor** – cíl, na kterém je potlačeno upozornění. Pokud cíl není zadán, je nastavena na cíl atributu. Podporované [obory](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) patří následující:
 
-   - `module`
+  - `module`
 
-   - `resource`
+  - `resource`
 
-   - `type`
+  - `type`
 
-   - `member`
+  - `member`
 
-   - `namespace` – Tento obor potlačí upozornění pro obor názvů, samotného. Upozornění s typy v rámci oboru názvů je nepotlačuje.
+  - `namespace` – Tento obor potlačí upozornění pro obor názvů, samotného. Upozornění s typy v rámci oboru názvů je nepotlačuje.
 
-   - `namespaceanddescendants` – Tento obor (Nový pro Visual Studio 2019) potlačí upozornění v oboru názvů a všechny jeho odvozené symboly. `namespaceanddescendants` Hodnota je platná pouze pro analyzátory Roslyn a je ignorován binární, na základě FxCop statické analýzy.
+  - `namespaceanddescendants` – Tento obor (Nový pro Visual Studio 2019) potlačí upozornění v oboru názvů a všechny jeho odvozené symboly. `namespaceanddescendants` Hodnota je platná pouze pro analyzátory Roslyn a je ignorován binární, na základě FxCop statické analýzy.
 
 - **Cíl** – identifikátor, který se používá k určení cíle, na kterém je potlačeno upozornění. Musí obsahovat položky plně kvalifikovaný název.
 

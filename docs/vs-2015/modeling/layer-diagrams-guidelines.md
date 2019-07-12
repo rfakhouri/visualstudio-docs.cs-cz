@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4a4b607adcd4aab4c5b70f02cb28f06219c7d655
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440999"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823710"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramy vrstev: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,14 +96,14 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
 ## <a name="EditArchitecture"></a> Úprava vrstev a závislostí za účelem zobrazení zamýšleného návrhu  
  K popisu změn, které máte v plánu provést vašeho systému nebo v požadované architektuře, postupujte následovně Chcete-li upravit diagram vrstev. Můžete také zvážit provádíme některé změny refaktoringu pro zlepšení strukturu kódu před jeho rozšíření. Zobrazit [zlepšení strukturu kódu](#Improving).  
   
-|**Komu**|**Proveďte tyto kroky**|  
+|**To**|**Proveďte tyto kroky**|  
 |------------|-----------------------------|  
 |Odstranit závislost, která by neměla existovat|Klepněte na závislost a stiskněte klávesu **odstranit**.|  
 |Změna nebo omezení směru závislosti|Nastavte jeho **směr** vlastnost.|  
 |Vytvoření nových závislostí|Použití **závislost** a **obousměrná závislost** nástroje.<br /><br /> Chcete-li nakreslit více závislostí, klikněte na nástroj dvakrát. Až budete hotovi, klikněte na tlačítko **ukazatel** nástrojů nebo stisknete klávesu **ESC** klíč.|  
-|Zadání toho, aby artefakty spojené s vrstvou nemohly záviset na zadaných oborech názvů|Zadejte obory názvů do vrstvy **je zakázané závislosti Namespace** vlastnost. Použijte středník (**;**) k oddělení oborů názvů.|  
-|Zadání toho, aby artefakty spojené s vrstvou nesměly patřit zadanému oboru názvů|Zadejte obory názvů do vrstvy **zakázané obory názvů** vlastnost. Použijte středník (**;**) k oddělení oborů názvů.|  
-|Zadání toho, aby artefakty spojené s vrstvou musely patřit jednomu ze zadaných oborů názvů|Zadejte obor názvů vrstvy **požadované obory názvů** vlastnost. Použijte středník (**;**) k oddělení oborů názvů.|  
+|Zadání toho, aby artefakty spojené s vrstvou nemohly záviset na zadaných oborech názvů|Zadejte obory názvů do vrstvy **je zakázané závislosti Namespace** vlastnost. Použijte středník ( **;** ) k oddělení oborů názvů.|  
+|Zadání toho, aby artefakty spojené s vrstvou nesměly patřit zadanému oboru názvů|Zadejte obory názvů do vrstvy **zakázané obory názvů** vlastnost. Použijte středník ( **;** ) k oddělení oborů názvů.|  
+|Zadání toho, aby artefakty spojené s vrstvou musely patřit jednomu ze zadaných oborů názvů|Zadejte obor názvů vrstvy **požadované obory názvů** vlastnost. Použijte středník ( **;** ) k oddělení oborů názvů.|  
   
 ### <a name="Improving"></a> Zlepšení struktury kódu  
  Refaktorování změnami jsou vylepšení, které nemají vliv na chování aplikace, ale pomohou lépe kód změnit a v budoucnu rozšířit. Strukturované kódu je návrh, který se snadno abstraktní do diagramu vrstev.  
@@ -134,7 +134,7 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
   
 - Změna barvy vrstvy a závislosti.  
   
-    - Vyberte jeden nebo více vrstev nebo závislosti, klikněte pravým tlačítkem a pak klikněte na tlačítko **vlastnosti**. V **vlastnosti** okně Upravit **barva** vlastnost.  
+  - Vyberte jeden nebo více vrstev nebo závislosti, klikněte pravým tlačítkem a pak klikněte na tlačítko **vlastnosti**. V **vlastnosti** okně Upravit **barva** vlastnost.  
   
 ## <a name="Validate"></a> Ověření kódu proti diagramu  
  Pokud jste upravili diagramu, můžete ověřit ho s kódem kdykoli ručně nebo automaticky při každém spuštění místního sestavení nebo [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].  

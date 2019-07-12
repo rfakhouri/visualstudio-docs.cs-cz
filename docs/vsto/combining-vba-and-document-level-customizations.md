@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e1a4eeeaf6cc979fd9ee7c3ea36a900899596a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33481307ea6065b0421cd3ae20e54ca778ee4fd4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447163"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826018"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Kombinování přizpůsobení na úrovni dokumentu a VBA
   Používat Visual Basic for Applications (VBA) kódu v dokumentu, který je součástí přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Word nebo Microsoft Office Excel. Můžete volat kód VBA v dokumentu z vlastního nastavení sestavení nebo projektu, aby umožňoval kód VBA v dokumentu k volání kódu v sestavení přizpůsobení můžete nakonfigurovat.
@@ -88,9 +88,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - Dokument musí mít jednu z následujících přípony názvů souborů:
 
-    - Pro Word: *DOCM* nebo *doc*
+  - Pro Word: *DOCM* nebo *doc*
 
-    - Pro aplikaci Excel: *.xlsm*, *.xltm*, *.xls*, nebo *.xlt*
+  - Pro aplikaci Excel: *.xlsm*, *.xltm*, *.xls*, nebo *.xlt*
 
 - Dokument již musí obsahovat projekt VBA, který má kód VBA v ní.
 

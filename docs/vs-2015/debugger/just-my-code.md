@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: efcabf9c7dc201f95515cd24bf3a14727f7149fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421816"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823958"
 ---
 # <a name="just-my-code"></a>Pouze můj kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
 ### <a name="BKMK_NET_Exception_behavior"></a> Výjimka chování  
  Pokud dojde k neošetřené výjimce v neuživatelském kódu, ladicí program přeruší na řádku v uživatelském kódu, ve kterém se vygeneroval výjimku.  
   
- Pokud první příležitosti výjimky jsou povolené pro výjimku, řádku uživatelského kódu je zvýrazněn zeleně. Zásobník volání se zobrazí rámce s poznámkami s popiskem **[externí kód]**.  
+ Pokud první příležitosti výjimky jsou povolené pro výjimku, řádku uživatelského kódu je zvýrazněn zeleně. Zásobník volání se zobrazí rámce s poznámkami s popiskem **[externí kód]** .  
   
 ## <a name="BKMK_C___Just_My_Code"></a> Pouze můj kód C++  
   
@@ -222,9 +222,9 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
   
 - Pokud `debugger` – klíčové slovo je zaznamenáno v:  
   
-    - **LibraryCode** kód, ladicí program vždy přeruší.  
-  
-    - **UnrelatedCode** kód, ladicí program nelze zastavit.  
+  - **LibraryCode** kód, ladicí program vždy přeruší.  
+
+  - **UnrelatedCode** kód, ladicí program nelze zastavit.  
   
 ### <a name="BKMK_JS_Exception_behavior"></a> Výjimka chování  
  Pokud dojde k neošetřené výjimce v:  

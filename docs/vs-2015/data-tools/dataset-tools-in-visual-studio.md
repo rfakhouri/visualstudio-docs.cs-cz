@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df415b9ad56e8e9b740da57709d039737f1bd24a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e53a31a274a356d5686c3225ed2635e6c61231c2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697908"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824711"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Nástroje datové sady v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ POZNÁMKA:]
 
 - Použití **Průvodce nastavením TableAdapter** zadat dotaz nebo uloženou proceduru, která bude při naplnění datové sady a jaké operace databáze (update, delete a podobně) k implementaci. Další informace najdete v těchto tématech:
 
-    - [Vyplnění datových sad pomocí objektů TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Vyplnění datových sad pomocí objektů TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Úprava dat v datových sadách](../data-tools/edit-data-in-datasets.md)
+  - [Úprava dat v datových sadách](../data-tools/edit-data-in-datasets.md)
 
-    - [Ověřování dat v datových sadách](../data-tools/validate-data-in-datasets.md)
+  - [Ověřování dat v datových sadách](../data-tools/validate-data-in-datasets.md)
 
-    - [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)
+  - [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)
 
 - Dotazování a hledání dat v datové sadě. Další informace najdete v tématu [dotazování datových sad](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] umožňuje [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) nad daty v <xref:System.Data.DataSet> objektu. Další informace najdete v tématu [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 

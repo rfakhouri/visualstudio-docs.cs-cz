@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7917bdd3b7a94af605b2626016c9a9a725fa2b29
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb4066d9728dd633492b05e4cc872dbdd8a91b5c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310798"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823594"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Text uživatelského rozhraní a nápovědu k sadě Visual Studio
 ## <a name="BKMK_UITextAndTerminology"></a> Text uživatelského rozhraní a terminologie
@@ -191,11 +191,11 @@ ms.locfileid: "66310798"
 
 - Některé dotazy položte si otázku: při vytváření chybová zpráva:
 
-    - Může uživatel přijít na to, jak vyřešit problém s touto chybou samostatně?
+  - Může uživatel přijít na to, jak vyřešit problém s touto chybou samostatně?
 
-    - Používá uživatel slovník stejný jako tato chyba?
+  - Používá uživatel slovník stejný jako tato chyba?
 
-    - Je tato chyba ambigious nebo sdíleného v několika situacích? Pokud ano, jak vám vedou uživatele k řešení, které potřebují?
+  - Je tato chyba ambigious nebo sdíleného v několika situacích? Pokud ano, jak vám vedou uživatele k řešení, které potřebují?
 
 #### <a name="build-errors"></a>Chyby sestavení
  Visual Studio je nástroj pro vývoj softwaru, řada jeho součástí má kompilace, převod, nebo krok vývojáři převést do binárního formátu kódování. Tyto převody mohou způsobit chyby, pokud kompilátor nemůže zpracovat nesprávně vytvořené soubory nebo pokud – možnosti kompilátoru nebyly nastaveny správně.

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1491caef3b13f6d5345d7d09f0abf4d680dd8e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fcf217f2826bf618db2288107fafeff091e6a2bd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704740"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824693"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Váš kód pomocí uživatelského rozhraní testu
 
@@ -285,23 +285,23 @@ Po vytvoření vašich programových testů uživatelského rozhraní, můžete 
 
 - **Editor kódu:**
 
-    - Ručně přidejte kód pro ovládací prvky v testu, jak je popsáno v [akce uživatelského rozhraní pro řízení a vlastnosti](#coded-ui-control-actions-and-properties) v tomto tématu.
+  - Ručně přidejte kód pro ovládací prvky v testu, jak je popsáno v [akce uživatelského rozhraní pro řízení a vlastnosti](#coded-ui-control-actions-and-properties) v tomto tématu.
 
-    - Po vytvoření programových testů uživatelského rozhraní, můžete upravit tak být řízený daty. Další informace najdete v tématu [vytvořit základě dat programových testů uživatelského rozhraní](../test/creating-a-data-driven-coded-ui-test.md).
+  - Po vytvoření programových testů uživatelského rozhraní, můžete upravit tak být řízený daty. Další informace najdete v tématu [vytvořit základě dat programových testů uživatelského rozhraní](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - V přehrávání testů programového uživatelského rozhraní můžete dát pokyn testů čekala určitých událostí pravděpodobnější, jako je okno se zobrazí indikátor průběhu signalizující zmizí a tak dále. K tomu přidáte odpovídající metodu UITestControl.WaitForControlXXX(). Úplný seznam dostupných metod najdete v tématu [vytvořit kódované testy uživatelského rozhraní čekání na konkrétní události při přehrávání](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Příklad programových testů uživatelského rozhraní, která čeká na ovládací prvek pro povolit pomocí WaitForControlEnabled metodu, najdete v části [názorný postup: Vytváření, úpravy a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+  - V přehrávání testů programového uživatelského rozhraní můžete dát pokyn testů čekala určitých událostí pravděpodobnější, jako je okno se zobrazí indikátor průběhu signalizující zmizí a tak dále. K tomu přidáte odpovídající metodu UITestControl.WaitForControlXXX(). Úplný seznam dostupných metod najdete v tématu [vytvořit kódované testy uživatelského rozhraní čekání na konkrétní události při přehrávání](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Příklad programových testů uživatelského rozhraní, která čeká na ovládací prvek pro povolit pomocí WaitForControlEnabled metodu, najdete v části [názorný postup: Vytváření, úpravy a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
-    - Programové testy UI zahrnují podporu pro některé ovládací prvky jazyka HTML5, které jsou zahrnuty v aplikaci Internet Explorer 9 a Internet Explorer 10. Další informace najdete v tématu [ovládacích prvků pomocí specifikace HTML5 v programových testů UI](../test/using-html5-controls-in-coded-ui-tests.md).
+  - Programové testy UI zahrnují podporu pro některé ovládací prvky jazyka HTML5, které jsou zahrnuty v aplikaci Internet Explorer 9 a Internet Explorer 10. Další informace najdete v tématu [ovládacích prvků pomocí specifikace HTML5 v programových testů UI](../test/using-html5-controls-in-coded-ui-tests.md).
 
-    - Programový test UI kódování pokyny:
+  - Programový test UI kódování pokyny:
 
-       - [Anatomie programového testu uživatelského rozhraní](../test/anatomy-of-a-coded-ui-test.md)
+    - [Anatomie programového testu uživatelského rozhraní](../test/anatomy-of-a-coded-ui-test.md)
 
-       - [Osvědčené postupy pro programové testy uživatelského rozhraní](../test/best-practices-for-coded-ui-tests.md)
+    - [Osvědčené postupy pro programové testy uživatelského rozhraní](../test/best-practices-for-coded-ui-tests.md)
 
-       - [Testování rozsáhlé aplikace s více mapami uživatelského rozhraní](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [Testování rozsáhlé aplikace s více mapami uživatelského rozhraní](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-       - [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+    - [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="the-generated-code"></a>Generovaný kód
 

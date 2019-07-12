@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech Visual Studio App Center, které jsou součástí předplatných sady Visual Studio.
-ms.openlocfilehash: 858cb55a81f8bfc59b017c58a6737a7de235dbdf
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1f57f6518c82c0eb60cbea9636c9973d2c9fd624
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784874"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826219"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center v předplatných sady Visual Studio
 
@@ -66,7 +66,7 @@ Teď by měl být mít přístup k portálu App Center a vytvořte si účet.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 - Potřebujete pomoc s App Center?
-    - Získejte Rady a odpovědi od týmu App Center v [aplikace centrum nápovědy](https://intercom.help/appcenter/).
-    - Podívejte se na dokončení [dokumentace k App Center](/appcenter/)
+  - Získejte Rady a odpovědi od týmu App Center v [aplikace centrum nápovědy](https://intercom.help/appcenter/).
+  - Podívejte se na dokončení [dokumentace k App Center](/appcenter/)
 - Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
 - Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

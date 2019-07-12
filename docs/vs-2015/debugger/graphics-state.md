@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fe97461800d6f6e6eb285dd7eddb610ab2f5b5ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 87972fe12cb8be78b89261d0aaaa272d9e2d5a14
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420060"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825581"
 ---
 # <a name="graphics-state"></a>Stav grafiky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +38,12 @@ Okno stavu ve Visual Studio graphics Diagnostics vám pomůže pochopit stav gra
 ##### <a name="to-change-the-state-view"></a>Chcete-li změnit zobrazení stavu  
   
 - V okně stavu, v horním levém pod záhlaví klikněte na tlačítko, který odpovídá stylu zobrazení stavu, který chcete použít.  
-  
-    - **Zobrazit vstupní stav rozhraní API**  
-  
-    - **Zobrazit logického stavu zobrazení**  
-  
-    - **Zobrazit stav Pinned**  
+
+  - **Zobrazit vstupní stav rozhraní API**  
+
+  - **Zobrazit logického stavu zobrazení**  
+
+  - **Zobrazit stav Pinned**  
   
 > [!IMPORTANT]
 > Musí připnout stav v **API zobrazit vstupní stav** nebo **zobrazit logického stavu** zobrazení, který se má zobrazit **zobrazit připnuté zobrazení stavu**.  
@@ -53,9 +53,9 @@ Okno stavu ve Visual Studio graphics Diagnostics vám pomůže pochopit stav gra
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|Název|Název položky stavu. Pokud se tato položka představuje sadu stavu, je možné rozšířit položky zobrazení.<br /><br /> V **API vstupní zobrazení stavu** a **logického stavu zobrazení** stavy, názvy odsazeny zobrazíte hierarchický vztah mezi stavy.<br /><br /> V **připnuté zobrazení stavu** stavu, plně kvalifikovaných názvů se zobrazí jako plochý seznam.|  
+|Name|Název položky stavu. Pokud se tato položka představuje sadu stavu, je možné rozšířit položky zobrazení.<br /><br /> V **API vstupní zobrazení stavu** a **logického stavu zobrazení** stavy, názvy odsazeny zobrazíte hierarchický vztah mezi stavy.<br /><br /> V **připnuté zobrazení stavu** stavu, plně kvalifikovaných názvů se zobrazí jako plochý seznam.|  
 |Value|Hodnota položky stavu.|  
-|Type|Typ položky stavu.|  
+|type|Typ položky stavu.|  
   
 ### <a name="changed-state"></a>Změna stavu  
  Stav grafiky obvykle přírůstkové změny mezi voláními výkresu následné a různé druhy problémů s vykreslováním jsou způsobeny, když se stav změní nesprávně. Můžete najít v jakém stavu se od předchozího volání kreslení změnila, stavu, která se změnila s hvězdičkou a zobrazí červeně – to platí nejen stav samotný, ale jeho nadřazenou položku stavu, takže můžete snadno Přímá změna stavu na nejvyšší úroveň a pak procházení k podrobnostem.  

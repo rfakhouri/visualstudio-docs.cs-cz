@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6249a5ab4a8beef8ff8af766d4bac5a0e110ad66
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676592"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825530"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Kontrola předchozí nové aplikace pomocí zpětného kroku IntelliTrace v sadě Visual Studio (Visual Studio Enterprise)
 
@@ -36,7 +36,7 @@ V tomto kurzu se naučíte:
 
 1. Otevřít **nástroje** > **možnosti** > **IntelliTrace** nastavení a vyberete možnost **IntelliTrace události a snímky** .
 
-    Spouští se v sadě Visual Studio 2017 Enterprise verzi 15.9 ve verzi Preview 2, tato možnost je **snímky IntelliTrace (spravovaný a nativní)**.
+    Spouští se v sadě Visual Studio 2017 Enterprise verzi 15.9 ve verzi Preview 2, tato možnost je **snímky IntelliTrace (spravovaný a nativní)** .
 
     ![Povolit režim události IntelliTrace a snímky](../debugger/media/intellitrace-enable-snapshots.png "režim povolit události IntelliTrace a snímky")
 
@@ -119,8 +119,8 @@ Dopad na celkový výkon taktování závisí na vaší aplikace. Nároky na po�
 
 * Pokud na aplikaci, která používá trvalý soubor mapovaných do paměti se pořídí snímek aplikace procesu, proces se snímkem udržuje výhradní zámek souborů mapovaných do paměti (i po nadřazený proces vydala platnost zámku). Jiné procesy jsou stále moct číst, ale nikoli zápis do souborů mapovaných do paměti.
 
-    Alternativní řešení:
-    * Vymažte všechny snímky tím, že ukončení relace ladění.
+  Alternativní řešení:
+  * Vymažte všechny snímky tím, že ukončení relace ladění.
 
 * Při ladění aplikace, jejichž proces má vysoký počet jedinečných paměti oblastech, jako je například aplikace, která načte velký počet knihoven DLL, krokování výkonu pomocí snímků povolené může mít vliv. Tento problém bude vyřešen v budoucí verzi systému Windows. Pokud máte potíže, kontaktujte nás na adrese stepback@microsoft.com.
 

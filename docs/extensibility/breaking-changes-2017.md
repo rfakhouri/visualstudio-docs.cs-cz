@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321361"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823810"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Změny v rozšíření sady Visual Studio 2017
 
@@ -63,35 +63,35 @@ Většina základních sestavení sady Visual Studio jsou již nainstalovány do
 
 * Sestavení, které byly nainstalovány pouze do GAC:
 
-   Tato sestavení jsou teď nainstalované v adresáři <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> nebo *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Tyto složky jsou součástí definovaných cest proces sady Visual Studio.
+  Tato sestavení jsou teď nainstalované v adresáři <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> nebo *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Tyto složky jsou součástí definovaných cest proces sady Visual Studio.
 
 * Sestavení, které byly nainstalovány do cesty – testování a do mezipaměti GAC:
 
-   * Kopie v mezipaměti GAC byl odebrán z instalačního programu.
-   * A *.pkgdef* soubor se přidal k určení základní záznam kódu pro sestavení.
+  * Kopie v mezipaměti GAC byl odebrán z instalačního programu.
+  * A *.pkgdef* soubor se přidal k určení základní záznam kódu pro sestavení.
 
-      Příklad:
+    Příklad:
 
-      ```xml
-      [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
-      "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
-      "publicKeyToken"="Public Key Token"
-      "culture"="neutral"
-      "version"=15.0.0.0
-      ```
+    ```
+    [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
+    "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
+    "publicKeyToken"="Public Key Token"
+    "culture"="neutral"
+    "version"=15.0.0.0
+    ```
 
-      Za běhu, subsystému pkgdef sady Visual Studio slučuje tyto položky do konfigurační soubor procesu Visual Studio modulu runtime (v části *[VSAPPDATA]\devenv.exe.config*) jako [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementy. Toto je doporučeným způsobem, jak umožnit proces sady Visual Studio najít sestavení, protože se eliminuje prohledávat zjišťování cesty.
+    Za běhu, subsystému pkgdef sady Visual Studio slučuje tyto položky do konfigurační soubor procesu Visual Studio modulu runtime (v části *[VSAPPDATA]\devenv.exe.config*) jako [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementy. Toto je doporučeným způsobem, jak umožnit proces sady Visual Studio najít sestavení, protože se eliminuje prohledávat zjišťování cesty.
 
 ### <a name="reacting-to-this-breaking-change"></a>Reakce na tento zásadní změna
 
 * Pokud v rámci procesu Visual Studio běží vaše rozšíření:
 
-   * Váš kód bude moct vyhledat sestavení sady Visual Studio core.
-   * Zvažte použití *.pkgdef* soubor v případě potřeby zadejte cestu k sestavení.
+  * Váš kód bude moct vyhledat sestavení sady Visual Studio core.
+  * Zvažte použití *.pkgdef* soubor v případě potřeby zadejte cestu k sestavení.
 
 * Pokud vaše rozšíření běží mimo proces sady Visual Studio:
 
-   Vezměte v úvahu hledáte Visual Studio core sestavení v rámci <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> nebo *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*použitím překladač konfigurační soubor nebo sestavení.
+  Vezměte v úvahu hledáte Visual Studio core sestavení v rámci <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> nebo *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*použitím překladač konfigurační soubor nebo sestavení.
 
 ## <a name="change-reduce-registry-impact"></a>Změna: Dopad registru
 

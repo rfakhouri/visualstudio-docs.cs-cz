@@ -14,12 +14,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a3ed1acdbf8d09616c413fa832dc452af277434b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6790e61eddc81045bb168028ee7aeef7a0492e3c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441201"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825751"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Testovací příručka pro moduly plug-in správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,53 +59,53 @@ Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových 
   
 - [Testovací oblast 1: Přidání nebo otevření ze správy zdrojového kódu](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    - Případu 1a: Přidat řešení do správy zdrojového kódu  
-  
-    - Případu 1b: Otevřít řešení ze správy zdrojového kódu  
-  
-    - Případ 1c: Přidat řešení ze správy zdrojového kódu  
-  
+  - Případu 1a: Přidat řešení do správy zdrojového kódu  
+
+  - Případu 1b: Otevřít řešení ze správy zdrojového kódu  
+
+  - Případ 1c: Přidat řešení ze správy zdrojového kódu  
+
 - [Testovací oblast 2: Získání ze správy zdrojového kódu](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
 - [Testovací oblast 3: Rezervace a zrušení rezervace](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    - Případ 3: Podívejte se na / Zrušit rezervaci  
-  
-    - Případu 3a: Rezervovat  
-  
-    - Případu 3b: Odpojené rezervace  
-  
-    - Případ 3c: Query Edit/Query Save (QEQS)  
-  
-    - Malá a velká 3d: Bezobslužné ověření  
-  
-    - Případu 3e: Vrátit zpět rezervaci  
+  - Případ 3: Podívejte se na / Zrušit rezervaci  
+
+  - Případu 3a: Rezervovat  
+
+  - Případu 3b: Odpojené rezervace  
+
+  - Případ 3c: Query Edit/Query Save (QEQS)  
+
+  - Malá a velká 3d: Bezobslužné ověření  
+
+  - Případu 3e: Vrátit zpět rezervaci  
   
 - [Testovací oblast 4: Vrácení se změnami](../../extensibility/internals/test-area-4-check-in.md)  
   
-    - Případu 4a: Změněné položky  
-  
-    - Případu 4b: Přidávání souborů  
-  
-    - Případ 4c: Přidávání projektů  
+  - Případu 4a: Změněné položky  
+
+  - Případu 4b: Přidávání souborů  
+
+  - Případ 4c: Přidávání projektů  
   
 - [Testovací oblast 5: Změna správy zdrojového kódu](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    - Případu 5a: Vytvoření vazby  
-  
-    - Případu 5b: Zrušení vazby  
-  
-    - Případ 5c: obnovení vazby  
-  
+  - Případu 5a: Vytvoření vazby  
+
+  - Případu 5b: Zrušení vazby  
+
+  - Případ 5c: obnovení vazby  
+
 - [Testovací oblast 6: Odstranění](../../extensibility/internals/test-area-6-delete.md)  
-  
+
 - [Testovací oblast 7: Sdílení](../../extensibility/internals/test-area-7-share.md)  
-  
+
 - [Testovací oblast 8: Přepínání modulů plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)  
-  
-    - Případu 8a: Automaticky změnit  
-  
-    - Případu 8b: Řešení na základě změn  
-  
+
+  - Případu 8a: Automaticky změnit  
+
+  - Případu 8b: Řešení na základě změn  
+
 ## <a name="see-also"></a>Viz také  
  [Moduly plug-in správy zdrojového kódu](../../extensibility/source-control-plug-ins.md)

@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548423"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821408"
 ---
 # <a name="installation"></a>Instalace
 
@@ -88,27 +88,27 @@ Nakonec musíme ověřit, zda je správně nainstalován Python 3.5 a upgradovat
 
 - **Windows**
 
-    ```cmd
-    C:\Users\test>python -V
-    Python 3.5.4
+  ```cmd
+  C:\Users\test>python -V
+  Python 3.5.4
 
-    C:\Users\test>pip3.5 -V
-    pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+  C:\Users\test>pip3.5 -V
+  pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
 
-    C:\Users\test>python -m pip install -U pip
-    ```
+  C:\Users\test>python -m pip install -U pip
+  ```
 
 - **macOS**
 
-    ```bash
-    MyMac:~ test$ python3.5 -V
-    Python 3.5.4
+  ```bash
+  MyMac:~ test$ python3.5 -V
+  Python 3.5.4
 
-    MyMac:~ test$ pip3.5 -V
-    pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+  MyMac:~ test$ pip3.5 -V
+  pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
 
-    MyMac:~ test$ python3.5 -m pip install -U pip
-    ```
+  MyMac:~ test$ python3.5 -m pip install -U pip
+  ```
 
 ### <a name="python-on-visual-studio"></a>Python v sadě Visual Studio
 
@@ -162,15 +162,15 @@ Pokud chcete nainstalovat MXNet, spusťte následující příkaz, v terminálu:
 
 - S GPU
 
-    ```bash
-    pip3.5 install mxnet-cu80==0.12.0
-    ```
+  ```bash
+  pip3.5 install mxnet-cu80==0.12.0
+  ```
 
 - Bez GPU
 
-    ```bash
-    pip3.5 install mxnet==0.12.0
-    ```
+  ```bash
+  pip3.5 install mxnet==0.12.0
+  ```
 
 ### <a name="keras"></a>Keras
 
@@ -203,33 +203,33 @@ Pokud chcete nainstalovat PyTorch, spusťte následující příkaz, v terminál
 
 - **Windows**
 
-   Dosud neexistuje žádné oficiální wheel balíčku. Můžete stáhnout balíček třetí strany z [Anaconda](https://anaconda.org/pytorch/repo?type=all) nebo [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
+  Dosud neexistuje žádné oficiální wheel balíčku. Můžete stáhnout balíček třetí strany z [Anaconda](https://anaconda.org/pytorch/repo?type=all) nebo [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
 
-   - Dekomprimovat domovský adresář, například *C:\Users\test\pytorch*.
-   - Přidat *C:\Users\test\pytorch\Lib\site-packages* do proměnné prostředí % PYTHONPATH %.
+  - Dekomprimovat domovský adresář, například *C:\Users\test\pytorch*.
+  - Přidat *C:\Users\test\pytorch\Lib\site-packages* do proměnné prostředí % PYTHONPATH %.
 
-      ```bash
-      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
-      pip3 install torchvision
-      ```
+    ```bash
+    pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+    pip3 install torchvision
+    ```
 
 - **macOS**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > macOS binárních souborů není podpora CUDA, nainstalujte ze zdroje v případě potřeby CUDA
+  > [!NOTE]
+  > macOS binárních souborů není podpora CUDA, nainstalujte ze zdroje v případě potřeby CUDA
 
 - **Linux**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > Tento jeden balíček podporuje GPU a CPU.
+  > [!NOTE]
+  > Tento jeden balíček podporuje GPU a CPU.
 
 Nakonec nainstalujte torchvision na jiných Windows:
 

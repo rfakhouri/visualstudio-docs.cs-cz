@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 44b6c0cfa1adf8ff1378dd8a426ab531ae90e096
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459208"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824617"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Postupy: Export textury pro použití s Direct2D nebo JavaScript aplikace
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi JavaScript
 
 Kanál s obsahem obrazu může generovat textury, které jsou kompatibilní s Direct2D interní konvencí vykreslování. Textury tohoto druhu jsou vhodné pro použití v aplikacích, které používají rozhraní Direct2D a v aplikacích pro UPW vytvořené pomocí jazyka JavaScript.
 
@@ -25,11 +25,11 @@ Tento dokument vysvětluje tyto činnosti:
 
 - Konfigurace obsahu kanálu obrázku ke generování textur, který vám pomůže v aplikaci Direct2D nebo JavaScript.
 
-    - Generovat komprimovanými *.dds* souboru.
+  - Generovat komprimovanými *.dds* souboru.
 
-    - Generoval vynásobený kanál alfa.
+  - Generoval vynásobený kanál alfa.
 
-    - Zakážete generování mipmap.
+  - Zakážete generování mipmap.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Vykreslování konvence v Direct2D
 
@@ -39,11 +39,11 @@ Textury, které se používají v souvislosti s Direct2D musí splňovat tyto vn
 
 - Textura musí být zadána *.dds* formátu pomocí jedné z těchto formátů komprese bloku:
 
-   - Komprese BC1_UNORM
+  - Komprese BC1_UNORM
 
-   - BC2_UNORM komprese
+  - BC2_UNORM komprese
 
-   - BC3_UNORM komprese
+  - BC3_UNORM komprese
 
 - Mipmapy nejsou podporovány.
 
@@ -53,12 +53,12 @@ Textury, které se používají v souvislosti s Direct2D musí splňovat tyto vn
 
 2. Nakonfigurujte soubor textury tak, aby byl zpracován kanálem obsahu obrázku. V **Průzkumníka řešení**, otevřete místní nabídku pro soubor textury, který jste právě vytvořili a klikněte na tlačítko **vlastnosti**. Na **vlastnosti konfigurace** > **Obecné** nastavte **typ položky** vlastnost **kanál obsahu obrazu**. Ujistěte se, že **obsahu** je nastavena na **Ano** a **vyloučit ze sestavení** je nastavena na **ne**a klikněte na tlačítko  **Použít** tlačítko. **Kanál obsahu obrazu** se zobrazí stránka pro konfiguraci vlastností.
 
-3. Nastavte formátu výstupu do jednoho z formátů komprimovanými. Na **vlastnosti konfigurace** > **kanál obsahu obrazu** > **Obecné** nastavte **komprimovat**vlastnost **BC3_UNORM komprese (/ komprese: BC3_UNORM)**. Může zvolit některý z jiných formátů BC1, BC2 nebo BC3 formátů, v závislosti na vašich požadavcích. Direct2D nepodporuje aktuálně textury BC4, BC5, BC6 nebo BC7 textury. Další informace o různých formátech BC naleznete v tématu [blokovat komprese (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
+3. Nastavte formátu výstupu do jednoho z formátů komprimovanými. Na **vlastnosti konfigurace** > **kanál obsahu obrazu** > **Obecné** nastavte **komprimovat**vlastnost **BC3_UNORM komprese (/ komprese: BC3_UNORM)** . Může zvolit některý z jiných formátů BC1, BC2 nebo BC3 formátů, v závislosti na vašich požadavcích. Direct2D nepodporuje aktuálně textury BC4, BC5, BC6 nebo BC7 textury. Další informace o různých formátech BC naleznete v tématu [blokovat komprese (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
 
    > [!NOTE]
    > Formát komprese, který je určen Určuje formát souboru, který je vytvořen kanál obsahu obrázku. To se liší od **formátu** vlastnost zdrojového obrázku v editoru obrázků, což určuje formát zdrojového souboru bitové kopie uloženého na disku – to znamená, *pracovního formátu*. Obvykle nechcete komprimovaný pracovní formát.
 
-4. Nakonfigurujte kanál obsahu obrázku vytvořit výstup, který používá předem vynásobené hodnoty alfa. Na **vlastnosti konfigurace** > **kanál obsahu obrazu** > **Obecné** nastavte **převést na Formát přednásobené alfa** vlastnost **Ano (/ generatepremultipliedalpha)**.
+4. Nakonfigurujte kanál obsahu obrázku vytvořit výstup, který používá předem vynásobené hodnoty alfa. Na **vlastnosti konfigurace** > **kanál obsahu obrazu** > **Obecné** nastavte **převést na Formát přednásobené alfa** vlastnost **Ano (/ generatepremultipliedalpha)** .
 
 5. Nakonfigurujte kanál obsahu obrázku tak, aby negeneroval mipmapy. Na **vlastnosti konfigurace** > **kanál obsahu obrazu** > **Obecné** nastavte **generovat Mips** vlastnost **ne**.
 

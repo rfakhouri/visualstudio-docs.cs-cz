@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zjistěte, jak aktivovat výhody služeb Azure součástí vašeho předplatného sady Visual Studio.
-ms.openlocfilehash: 12f547e195ed5585a6c29b061ad57f0cf1392c3c
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 542f460e6c228564e05affd9467f6deaaf2b0506
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784654"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823749"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Použití Microsoft Azure v předplatných sady Visual Studio
 
@@ -107,7 +107,7 @@ Pokud si myslíte, že tento e-mail jste dostali omylem, obraťte se prosím [Az
 ## <a name="support-resources"></a>Informační zdroje podpory
 
 - Potřebujete pomoc s Azure?  Projděte si tyto prostředky:
-    - Technické podpory: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
-    - [Dokumentace ke službě Azure](/azure/)
+  - Technické podpory: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+  - [Dokumentace ke službě Azure](/azure/)
 - Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
 - Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

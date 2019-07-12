@@ -6,12 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech PŘETYPOVÁNÍ zvýrazněte k dispozici ve vybraných předplatných sady Visual Studio
-ms.openlocfilehash: 9ee1468534e9f0c68465f841bd43e5fac0229780
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784652"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823686"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Zvýrazněte PŘETYPOVÁNÍ výhoda v předplatných sady Visual Studio
 
@@ -97,13 +97,13 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 - Potřebujete pomoc s používáním PŘETYPOVÁNÍ zvýrazněte?  Projděte si tyto prostředky:
-    - [Odeslat žádost o podporu](https://casthighlight.com/support/)
-    - [Příručka Začínáme (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+  - [Odeslat žádost o podporu](https://casthighlight.com/support/)
+  - [Příručka Začínáme (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
 - Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
 - Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
 Pokud jste ještě neaktivovali Azure benefit, který je součástí vašeho předplatného, navštivte [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a klikněte na Azure dlaždici v kategorii nástroje pro nastavení vašeho předplatného Azure a jejího uplatnění kreditů Azure.
 

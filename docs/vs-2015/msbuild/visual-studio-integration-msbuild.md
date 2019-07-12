@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683859"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825426"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace sady Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,9 +134,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **uvolnit projekt**.  
   
-     Projekt je označen **(není k dispozici)**.  
+     Projekt je označen **(není k dispozici)** .  
   
-2. V **Průzkumníka řešení**, otevřete místní nabídku pro nedostupný projekt a klikněte na tlačítko **upravit \<soubor projektu >**.  
+2. V **Průzkumníka řešení**, otevřete místní nabídku pro nedostupný projekt a klikněte na tlačítko **upravit \<soubor projektu >** .  
   
      Soubor projektu se otevře v editoru XML sady Visual Studio.  
   
@@ -160,13 +160,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 - Odkazy na sestavení:  
   
-     Projektový systém volá cíl s dobře známým názvem `ResolveAssemblyReferences`. Tento cíl by měl vytvářet položky s názvem položky typu `ReferencePath`. Každá z těchto položek by měla mít specifikaci položky (hodnota `Include` atribut položky) obsahující úplnou cestu k odkazu. Položky by měly mít všechna metadata ze vstupních položek prošla kromě následujících nových metadat:  
-  
-    - `CopyLocal`, která udává, zda sestavení má být zkopírováno do výstupní složky, nastavte na hodnotu true nebo false.  
-  
-    - `OriginalItemSpec`, obsahující specifikace původní položky odkazu.  
-  
-    - `ResolvedFrom`, pokud bylo vyřešeno z nastavte na "{TargetFrameworkDirectory}" [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] adresáře.  
+  Projektový systém volá cíl s dobře známým názvem `ResolveAssemblyReferences`. Tento cíl by měl vytvářet položky s názvem položky typu `ReferencePath`. Každá z těchto položek by měla mít specifikaci položky (hodnota `Include` atribut položky) obsahující úplnou cestu k odkazu. Položky by měly mít všechna metadata ze vstupních položek prošla kromě následujících nových metadat:  
+
+  - `CopyLocal`, která udává, zda sestavení má být zkopírováno do výstupní složky, nastavte na hodnotu true nebo false.  
+
+  - `OriginalItemSpec`, obsahující specifikace původní položky odkazu.  
+
+  - `ResolvedFrom`, pokud bylo vyřešeno z nastavte na "{TargetFrameworkDirectory}" [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] adresáře.  
   
 - Odkazy modelu COM:  
   
