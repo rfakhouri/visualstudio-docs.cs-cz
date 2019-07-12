@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f6bd74400146e1c2ea98daf27d6d97fc639cc13
-ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
-ms.translationtype: HT
+ms.openlocfilehash: 10869ad290b0b8df614d25d792d0b3ed1e88eb17
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346817"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825571"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ systému sada nástrojů a rozšíření integrace s Project
 
@@ -72,7 +72,7 @@ Hodnoty těchto vlastností zadat názvy složek v rámci `$(VCTargetsPath)` ko�
 
 ### <a name="add-a-new-platform-toolset"></a>Přidat novou sadu nástrojů platformy
 
-Chcete-li přidat novou sadu nástrojů, například "MyToolset" existující platformy Win32, vytvořit *MyToolset* ve složce `$(VCTargetsPath)`  *\\platformy\\Win32\\ PlatformToolsets\\*a vytvořit *Toolset.props* a *Toolset.targets* soubory.
+Chcete-li přidat novou sadu nástrojů, například "MyToolset" existující platformy Win32, vytvořit *MyToolset* ve složce `$(VCTargetsPath)`  *\\platformy\\Win32\\ PlatformToolsets\\* a vytvořit *Toolset.props* a *Toolset.targets* soubory.
 
 Každý název složky v části *PlatformToolsets* se zobrazí v **vlastnosti projektu** dialogového okna jako dostupná **sada nástrojů platformy** pro danou platformu, jak je znázorněno zde:
 
@@ -82,7 +82,7 @@ Vytvoření podobné *MyToolset* složky a *Toolset.props* a *Toolset.targets* s
 
 ### <a name="add-a-new-platform"></a>Přidat novou platformu
 
-Pokud chcete přidat novou platformu, například "MyPlatform", vytvořte *MyPlatform* ve složce `$(VCTargetsPath)`  *\\platformy\\*a vytvořit  *Platform.default.props*, *Platform.props*, a *Platform.targets* soubory. Také vytvořit `$(VCTargetsPath)`  *\\platformy\\*<strong><em>MyPlatform</em></strong>*\\PlatformToolsets\\*  složky a vytvořte alespoň jednu sadu nástrojů v ní.
+Pokud chcete přidat novou platformu, například "MyPlatform", vytvořte *MyPlatform* ve složce `$(VCTargetsPath)`  *\\platformy\\* a vytvořit  *Platform.default.props*, *Platform.props*, a *Platform.targets* soubory. Také vytvořit `$(VCTargetsPath)`  *\\platformy\\* <strong><em>MyPlatform</em></strong> *\\PlatformToolsets\\*  složky a vytvořte alespoň jednu sadu nástrojů v ní.
 
 Všechny názvy složek v rámci *platformy* složku pro každý `$(ApplicationType)` a `$(ApplicationTypeRevision)` se zobrazí v integrovaném vývojovém prostředí, jak jsou k dispozici **platformy** voleb pro projekt.
 
@@ -153,13 +153,13 @@ I když sadu nástrojů můžete přepsat proces celé sestavení, obvykle je vh
 
 - `$(VCTargetsPath)`\\*Microsoft.CppCommon.targets*
 
-   Tento soubor definuje hlavních částí procesu sestavení nativní a také naimportuje:
+  Tento soubor definuje hlavních částí procesu sestavení nativní a také naimportuje:
 
-   - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
 
-   - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
 
-   - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
+  - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
 
 - `$(VCTargetsPath)`\\*Microsoft.Cpp.Common.props*
 
@@ -324,7 +324,7 @@ Příkazový řádek .tlog soubory obsahují informace o příkazové řádky v 
 
 *Čtení* .tlog soubory (\*.read.\*. tlog) obsahují informace o zdrojových souborů a jejich závislosti.
 
-Stříšky (**^**) na začátku řádku určuje jeden nebo více zdrojů. Zdrojů, které sdílejí stejnou závislosti jsou oddělené symbolem svislá čára (**\|**).
+Stříšky ( **^** ) na začátku řádku určuje jeden nebo více zdrojů. Zdrojů, které sdílejí stejnou závislosti jsou oddělené symbolem svislá čára ( **\|** ).
 
 Závislost soubory jsou uvedeny po zdrojů, každou na samostatném řádku. Všechny názvy souborů jsou úplné cesty.
 
@@ -349,7 +349,7 @@ Není potřeba psát názvy souborů velkými písmeny, ale je praktické pro n�
 
 *Zápis* .tlog (\*.write.\*. soubory tlog určené) připojení zdroje a výstupy.
 
-Stříšky (**^**) na začátku řádku určuje jeden nebo více zdrojů. Více zdrojů, které jsou oddělené symbolem svislá čára (**\|**).
+Stříšky ( **^** ) na začátku řádku určuje jeden nebo více zdrojů. Více zdrojů, které jsou oddělené symbolem svislá čára ( **\|** ).
 
 Výstupní soubory vytvořené ze zdroje by měly být uvedeny po zdrojů, každou na samostatném řádku. Všechny názvy souborů musí být úplné cesty.
 
@@ -470,7 +470,7 @@ Pravidlo soubory musí být přidány do `PropertyPageSchema` skupiny položek:
 
 Prohlášení CPS podporuje jiné hodnoty pro typ kontextu, nejsou však použity v projektech Visual C++.
 
-Pokud toto pravidlo má být zobrazen ve více než jednom kontextu, použijte středníky (**;**) k oddělení místní hodnoty, jak je znázorněno zde:
+Pokud toto pravidlo má být zobrazen ve více než jednom kontextu, použijte středníky ( **;** ) k oddělení místní hodnoty, jak je znázorněno zde:
 
 ```xml
 <PropertyPageSchema Include="$(MyFolder)\MyRule.xml">
@@ -588,7 +588,7 @@ Upgrader používá tato kritéria se rozhodnout, jestli je možné projekt upgr
 
 1. Vlastnost `_UpgradePlatformToolsetFor_<safe_toolset_name>` jsou definovány pro aktuální sadu nástrojů, a její hodnota není rovna aktuální sady nástrojů.
 
-   Tyto názvy vlastností  *\<safe_toolset_name >* představuje název sady nástrojů s všechny jiné než alfanumerické znaky podtržítkem (**\_**).
+   Tyto názvy vlastností  *\<safe_toolset_name >* představuje název sady nástrojů s všechny jiné než alfanumerické znaky podtržítkem ( **\_** ).
 
 Když je možné upgradovat projekt, se podílí na *mění se cílení řešení*. Další informace najdete v tématu [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2).
 
