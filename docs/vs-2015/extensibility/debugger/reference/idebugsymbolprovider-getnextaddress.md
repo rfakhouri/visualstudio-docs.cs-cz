@@ -1,60 +1,59 @@
 ---
 title: IDebugSymbolProvider::GetNextAddress | Dokumentace Microsoftu
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider::GetNextAddress
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNextAddress method
 ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: e1bf0798e0f49d9e7b2871c5601f966bc282b186
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "62421447"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Získá adresu ladění, který následuje adresa pro danou ladění v metodě.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntaxe
-
-```cpp
-HRESULT GetNextAddress( 
-   IDebugAddress*  pAddress,
-   BOOL            fStatementOnly,
-   IDebugAddress** ppAddress
-);
-```
-
-```csharp
-int GetNextAddress( 
-   IDebugAddress     pAddress,
-   bool              fStatementOnly,
-   out IDebugAddress ppAddress
-);
-```
-
-#### <a name="parameters"></a>Parametry
- `pAddress`
-
- [in] Adresa pro danou ladění.
-
- `fStatementOnly`
-
- [in] Pokud je hodnota TRUE, omezí ladění adresy, které mají jeden příkaz.
-
- `ppAddress`
-
- [out] Vrátí adresu další ladění.
-
-## <a name="return-value"></a>Návratová hodnota
- Bude vracet platnou `HRESULT`, obvykle S_OK.
-
-## <a name="see-also"></a>Viz také
-- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+Získá adresu ladění, který následuje adresa pro danou ladění v metodě.  
+  
+## <a name="syntax"></a>Syntaxe  
+  
+```cpp#  
+HRESULT GetNextAddress(   
+   IDebugAddress*  pAddress,  
+   BOOL            fStatementOnly,  
+   IDebugAddress** ppAddress  
+);  
+```  
+  
+```csharp  
+int GetNextAddress(   
+   IDebugAddress     pAddress,  
+   bool              fStatementOnly,  
+   out IDebugAddress ppAddress  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametry  
+ `pAddress`  
+ [in] Adresa pro danou ladění.  
+  
+ `fStatementOnly`  
+ [in] Pokud je hodnota TRUE, omezí ladění adresy, které mají jeden příkaz.  
+  
+ `ppAddress`  
+ [out] Vrátí adresu další ladění.  
+  
+## <a name="return-value"></a>Návratová hodnota  
+ Bude vracet platnou `HRESULT`, obvykle S_OK.  
+  
+## <a name="see-also"></a>Viz také  
+ [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
