@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1d0523618298cb6575a5bdb8b92bdc6a4b8c103c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400516"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64786263"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 Získá příznak, který určuje, zda funkce byl označen jako není vložená (pomocí [noinline](/cpp/cpp/noinline) atributu).

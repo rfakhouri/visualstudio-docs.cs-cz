@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41987007dd5121dff8cce1eb91ea9e1c4d93578c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401440"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64816347"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 Získá příznak, který určuje, zda funkce obsahuje některý [strukturovaného zpracování výjimek (C /C++)](/cpp/cpp/structured-exception-handling-c-cpp) (například __try /\__except bloků).

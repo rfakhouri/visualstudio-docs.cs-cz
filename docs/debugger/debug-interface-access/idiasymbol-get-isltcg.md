@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f5fe47d8575c47756cce8fd1580ced5f3036766
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399955"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64785715"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 Získá příznak, který určuje, zda [Kompilantu](../../debugger/debug-interface-access/compiland.md) bylo propojeno pomocí přepínače linkeru [parametru/LTCG (generování kódu při propojování odkaz)](/cpp/build/reference/ltcg-link-time-code-generation), což pomáhá při optimalizaci celého programu. Tento přepínač platí pouze pro spravovaný kód.

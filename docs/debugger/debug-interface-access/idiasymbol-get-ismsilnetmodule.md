@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0cb96291f7a867bcdd0248cc68c2fbccb6ac9f87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399859"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64828799"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 Získá příznak označující, zda modul je .netmodule (Microsoft Intermediate Language (MSIL) modul, který obsahuje pouze metadata a žádné nativní symboly).
