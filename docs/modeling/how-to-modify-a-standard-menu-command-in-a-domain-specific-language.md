@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 120696fe335245775c6ea7188efc059ae9e71342
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 466df3030793603319cf73085910a164fd222e29
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263690"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890598"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Postupy: Úprava příkazu standardní nabídky v jazyce specifickém pro doménu
 
@@ -65,7 +65,8 @@ Vytvořte nový soubor, který obsahuje částečné deklarace třídy příkazu
     { internal partial class Language1CommandSet { ...
     ```
 
-     **Poznámka:** Pokud jste použili k vytvoření nového souboru. soubor šablony třídy, je nutné opravit obor názvů a název třídy.
+    > [!NOTE]
+    > Pokud jste použili k vytvoření nového souboru. soubor šablony třídy, je nutné opravit obor názvů a název třídy.
 
 ## <a name="override-the-command-methods"></a>Přepište metody příkaz
 

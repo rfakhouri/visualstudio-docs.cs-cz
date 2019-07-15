@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 03/02/2018
 ms.topic: conceptual
 description: Dotazy k fakturaci cloudových předplatných.
-ms.openlocfilehash: 54fa25cfe7387f04797335f544f0ba647fd0a8e7
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 21e32bc6fd1517b2c6724e97863cf70734caac80
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785095"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891100"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio cloudovými předplatnými nejčastější dotazy k fakturaci
 
@@ -42,7 +42,7 @@ O: Nejjednodušším přístupem k určení, pokud máte správná oprávnění 
 Uvedený seznam předplatných Azure, které jsou aktuálně propojení pro vaše přihlášení potřebujete vyberte předplatné Azure (což je fakturační účet).
 Protože název předplatného Azure. výchozí hodnota je typu fakturační účet ("S průběžnými platbami", "Enterprise Agreement" atd.), často je jasné, jestli se předplatné Azure, které je součástí smlouvy Enterprise.
 
-Další možností je pokus o naleznete [Azure Enterprise Portal](http://ea.azure.com).  Pokud jste k němu přistoupit úspěšně, již máte podnikový správce nebo role vlastníka účtu. Pouze vlastníci účtu můžete nastavit nové fakturační účty Azure v rámci smlouvy Enterprise. Nemůže získat přístup k portálu Azure Enterprise Portal, pak prosím Dotázat se ve vaší organizaci a zjistěte, kdo je správce vaší organizace, a s žádostí, aby vás přidal jako vlastník účtu v rámci portálu Azure Enterprise.  Pokud nemůžete najít tuto osobu, můžete si [vyplňte lístek podpory](https://aka.ms/AzureEntSupport) a žádat o kontaktní informace.  Budete potřebovat název vaší organizace a číslo registrace smlouvy Enterprise lístku podpory.
+Další možností je pokus o naleznete [Azure Enterprise Portal](https://ea.azure.com).  Pokud jste k němu přistoupit úspěšně, již máte podnikový správce nebo role vlastníka účtu. Pouze vlastníci účtu můžete nastavit nové fakturační účty Azure v rámci smlouvy Enterprise. Nemůže získat přístup k portálu Azure Enterprise Portal, pak prosím Dotázat se ve vaší organizaci a zjistěte, kdo je správce vaší organizace, a s žádostí, aby vás přidal jako vlastník účtu v rámci portálu Azure Enterprise.  Pokud nemůžete najít tuto osobu, můžete si [vyplňte lístek podpory](https://aka.ms/AzureEntSupport) a žádat o kontaktní informace.  Budete potřebovat název vaší organizace a číslo registrace smlouvy Enterprise lístku podpory.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>DOTAZ: Můžu použít prostředky peněžních závazků Azure ze smlouvy Enterprise kupovat Cloudová předplatná sady Visual Studio?
 

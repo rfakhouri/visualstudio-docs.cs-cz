@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688158"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890470"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Návod: Zápis Vizualizéru v jazyce C\#
 
@@ -39,7 +39,7 @@ Kód vizualizéru musí být umístěn v knihovně DLL, které budou číst ladi
 
 1. Na **souboru** nabídce zvolte **nový** a potom klikněte na tlačítko **nový projekt**.
 
-2. V **nový projekt** dialogovém okně **typu projektu**s, vyberte **Visual C#**.
+2. V **nový projekt** dialogovém okně **typu projektu**s, vyberte **Visual C#** .
 
 3. V **šablony** zvolte **knihovny tříd**.
 
@@ -196,7 +196,8 @@ Kód vizualizéru musí být umístěn v knihovně DLL, které budou číst ladi
 
 2. Upravte název na něco smysluplnějšího, jako je například TestConsole.cs ze souboru Program.cs.
 
-    **Poznámka:** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky změní deklaraci třídy v TestConsole.cs tak, aby odpovídaly nový název souboru.
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky změní deklaraci třídy v TestConsole.cs tak, aby odpovídaly nový název souboru.
 
 3. V TestConsole.cs, přidejte následující kód, který `using` příkazy:
 
@@ -234,7 +235,7 @@ Kód vizualizéru musí být umístěn v knihovně DLL, které budou číst ladi
 
 1. Na **souboru** nabídce zvolte **přidat** a potom klikněte na tlačítko **nový projekt**.
 
-2. V **přidat nový projekt** dialogovém okně **typu projektu**s, vyberte **Visual C#**.
+2. V **přidat nový projekt** dialogovém okně **typu projektu**s, vyberte **Visual C#** .
 
 3. V **šablony** zvolte **knihovny tříd**.
 

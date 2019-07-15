@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 372c30caa15ef8783aa1fead479087e7618e707b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442367"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890663"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Postupy: Přidání příkazu do místní nabídky
 
@@ -167,7 +167,8 @@ Třída set příkazu je odvozen z <xref:Microsoft.VisualStudio.Modeling.Shell.C
 
      `{ internal partial class Language1CommandSet { ...`
 
-     **Poznámka:** Pokud jste použili k vytvoření nového souboru šablony třídy, je nutné opravit obor názvů a název třídy.
+     > [!NOTE]
+     > Pokud jste použili k vytvoření nového souboru šablony třídy, je nutné opravit obor názvů a název třídy.
 
 Příkaz set kódu obvykle muset importujte následující obory názvů:
 
@@ -334,7 +335,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 **Příkaz v nabídce nezobrazí:**
 
-- Příkaz se zobrazí jenom v ladění instance sady Visual Studio, dokud nenainstalujete balíček DSL. Další informace najdete v tématu [nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md).
+- Příkaz se zobrazí jenom v ladění instance sady Visual Studio, dokud nenainstalujete balíček DSL. Další informace najdete v tématu [nasazení řešení jazyka specifického pro doménu](msi-and-vsix-deployment-of-a-dsl.md).
 
 - Ujistěte se, že je experimentální vzorku správnou příponu názvu souboru pro tento DSL. Pokud chcete zkontrolovat příponu názvu souboru, otevřete DslDefinition.dsl v instanci hlavní aplikace Visual Studio. V Průzkumníku DSL, klikněte pravým tlačítkem na uzel Editor a pak klikněte na vlastnosti. V okně Vlastnosti zkontrolujte vlastnost FileExtension.
 
@@ -362,7 +363,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - [Zápis kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Postupy: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [Nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md)
+- [Nasazení řešení jazyka specifického pro doménu](msi-and-vsix-deployment-of-a-dsl.md)
 - [Ukázkový kód: Diagramy okruh](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

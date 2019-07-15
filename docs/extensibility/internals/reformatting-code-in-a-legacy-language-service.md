@@ -11,18 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c489fcc3c845ae6421706f7d660083f2e5422e19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 16130191eb6a4d8b6d7703a05aaf3271f8c739f5
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341326"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891126"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Přeformátování kódu ve službě starší verze jazyka
 
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zdrojový kód můžete naformátována pomocí normalizace použití odsazení a mezery. To může zahrnovat vkládání nebo odebrání mezerami či tabulátory na začátku každého řádku, přidat nové řádky mezi řádky nebo nahrazení mezery tabulátory nebo tabulátory mezerami.
 
->**Poznámka:** Vložení nebo odstranění znaky nového řádku může ovlivnit značky, jako je například zarážky a záložky, ale přidáním nebo odebráním mezerami či tabulátory nemá vliv na značky.
+> [!NOTE]
+> Vložení nebo odstranění znaky nového řádku může ovlivnit značky, jako je například zarážky a záložky, ale přidáním nebo odebráním mezerami či tabulátory nemá vliv na značky.
 
 Uživatelé mohou spustit operaci reformatting tak, že vyberete **výběr formátu** nebo **formátovat dokument** z **Upřesnit** nabídce **upravit**nabídky. Reformatting operace se dá taky spustit při vložení fragmentu kódu nebo konkrétní znak. Například při psaní pravou složenou závorku v jazyce C# všechno mezi odpovídající levou složenou závorku a Zavřít složenou závorkou je automaticky odsazený správnou úroveň.
 

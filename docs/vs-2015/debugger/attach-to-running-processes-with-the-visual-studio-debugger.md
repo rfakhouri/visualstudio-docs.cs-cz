@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15b9921514f76d788430c1eda66603e9fc446361
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65702642"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891030"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ke spuštěným procesům pomocí ladicího programu sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,8 @@ Tato funkce slouží k ladění aplikací, které běží na místním nebo vzd�
 
    1. Zadejte název do **kvalifikátor** pole se seznamem.
 
-      >**Poznámka:** Pokud v dalších krocích se nemůžete připojit, pomocí názvu vzdáleného počítače, použijte IP adresu. (Číslo portu může automaticky zobrazit po výběru procesu. Můžete také zadat ho ručně. Na následující ilustraci 4020 je výchozí port pro vzdálené ladění.)
+      > [!NOTE]
+      > Pokud v dalších krocích se nemůžete připojit, pomocí názvu vzdáleného počítače, použijte IP adresu. (Číslo portu může automaticky zobrazit po výběru procesu. Můžete také zadat ho ručně. Na následující ilustraci 4020 je výchozí port pro vzdálené ladění.)
 
    2. Klikněte na šipku rozevíracího seznamu, který je připojen k **kvalifikátor** a z rozevíracího seznamu vyberte název počítače.
 

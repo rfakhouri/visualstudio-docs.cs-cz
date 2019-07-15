@@ -7,12 +7,12 @@ ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 85c327a2690096aa0786b4851348657d2295a223
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784897"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891077"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s novou v předplatných sady Visual Studio
 
@@ -20,7 +20,7 @@ Budeme aktualizovat balíček výhod předplatného často mají být ještě u�
 
 ## <a name="2019-q1-january-march"></a>1\. čtvrtletí 2019 (leden–březen)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>Maximální využití přidán do [portál pro správu předplatných](https://manage.visualstuido.com)
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>Maximální využití přidán do [portál pro správu předplatných](https://manage.visualstudio.com)
 Nová funkce v portálu pro správu předplatných sady Visual Studio pomáhá sledovat kolik předplatných, které jste zakoupili a přiřazeny a identifikuje nejvyšší počet předplatných každou úroveň přiřazení, jak v rámci v minulém roce, celém průběhu Doba trvání vašich smlouvách. Pomůže vám to pochopit aktuální využití předplatného a plánovat budoucí nákupy. 
 
   > [!div class="mx-imgBorder"]

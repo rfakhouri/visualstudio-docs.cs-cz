@@ -1,5 +1,6 @@
 ---
 title: Přidat nebo upravit značky v šablonách projektů
+description: Zjistěte, jak přidat nebo upravit značky pro šablony projektu v sadě Visual Studio.
 ms.date: 04/30/2019
 author: minsa110
 ms.author: somin
@@ -12,36 +13,36 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 4a5113fa7f420d58892e2737ec9196422486490e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038662"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891142"
 ---
 # <a name="add-tags-to-project-templates"></a>Přidání značek do šablony projektu
 
-Počínaje [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) verze 16.1 ve verzi Preview 2, můžete přidat jazyk, platformu a značky typu projektu do šablon projektu. Značky se používají na dvou místech v dialogovém okně Nový projekt:
+Počínaje [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) verze 16.1 ve verzi Preview 2, můžete přidat jazyk, platformu a značky typu projektu do šablon projektu. 
 
-- Značky se zobrazí v části Popis šablony
+Značky se používají na dvou místech ve **nový projekt** dialogové okno:
+
+- Značky se zobrazí v části Popis šablony.
 
    ![Šablona projektu se značkami v dialogovém okně Nový projekt](media/npd-item-with-template-tags.png)
 
-- Značky umožňují šablonu, kterou chcete vyhledávat a filtrovat
+- Značky umožňují šablonu, kterou chcete vyhledávat a filtrovat.
 
    ![Vyhledávání a filtrování v dialogovém okně Nový projekt](media/npd-search-and-filter.png)
 
-Můžete přidat značky aktualizací *.vstemplate* souborů XML pomocí šablony značky integrované do sady Visual Studio, případně můžete vytvořit vlastní šablonu značky. Značky šablony objevit jenom v dialogové okno nového projektu aplikace Visual Studio 2019. Neovlivňují vykreslování šablony v předchozích verzích sady Visual Studio.
+Můžete přidat značky aktualizací *.vstemplate* souboru XML. Můžete použít šablonu značky, které jsou integrované do sady Visual Studio, nebo vytvořit vlastní šablonu značky. Značky šablony se zobrazí jenom v aplikaci Visual Studio 2019 **nový projekt** dialogové okno. Šablona značky nemají vliv na způsob šablona vykresluje v dřívějších verzích sady Visual Studio.
 
 ## <a name="add-or-edit-tags"></a>Přidat nebo upravit značky
 
-Můžete chtít přidat nebo upravit značky v šabloně projektu *.vstemplate* XML při můžete:
+Můžete chtít přidat nebo upravit značky v šabloně projektu *.vstemplate* XML při proveďte jednu z následujících akcí:
 
-* [Vytvořte novou šablonu projektu](/visualstudio/ide/how-to-create-project-templates) s použitím Průvodce exportem šablony
-
-* [Aktualizovat stávající šablonu projektu](/visualstudio/ide/how-to-update-existing-templates)
-
-* [Vytvoření nové šablony projektu VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+* [Vytvořte novou šablonu projektu](/visualstudio/ide/how-to-create-project-templates) s použitím Průvodce exportem šablony.
+* [Aktualizovat stávající šablonu projektu](/visualstudio/ide/how-to-update-existing-templates).
+* [Vytvoření nové šablony projektu VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -53,7 +54,7 @@ Můžete chtít přidat nebo upravit značky v šabloně projektu *.vstemplate* 
 
 ## <a name="attributes"></a>Atributy
 
-Následující atributy jsou volitelné a pro scénáře pro pokročilé uživatele.
+Následující volitelné atributy můžete použít ve scénářích pokročilé uživatele:
 
 |Atribut|Popis|
 |---------------|-----------------|
@@ -78,17 +79,19 @@ Syntaxe:
 
 |Prvek|Popis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Povinné) Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Povinné) Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** dialogové okno nebo **přidat novou položku** dialogové okno.|
 
 ## <a name="text-value"></a>Textová hodnota
 
-Pokud je vyžadována textová hodnota `Package` a `ID` atributy se používají.
+Je vyžadována textová hodnota, pokud nechcete použít `Package` a `ID` atributy.
 
 Text obsahuje název šablony.
 
 ## <a name="built-in-tags"></a>Integrované značky
 
-Visual Studio nabízí že seznam integrovaných značek, který při přidání, vykreslení lokalizovaný prostředek. Následuje seznam integrovaných značek a jejich odpovídající hodnoty v závorkách.
+Visual Studio nabízí seznam integrovaných značek. Když přidáte integrované značky, vykreslí značku lokalizovaný prostředek. 
+
+Následující seznam obsahuje integrované značky, které jsou k dispozici v sadě Visual Studio. Hodnoty, které odpovídají jsou uvedeny v závorkách.
 
 | Jazyk | Platforma | Typ projektu |
 | -- | -- | -- |
@@ -110,7 +113,7 @@ Visual Studio nabízí že seznam integrovaných značek, který při přidání
 
 ## <a name="example"></a>Příklad
 
-Následující příklad ukazuje metadata pro šablony projektu pro vizuál C# aplikace.
+Následující příklad ukazuje metadata pro šablony projektu pro vizuál C# aplikace:
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -147,4 +150,4 @@ Následující příklad ukazuje metadata pro šablony projektu pro vizuál C# a
 - [Visual Studio odkaz na schéma šablon](/visualstudio/extensibility/visual-studio-template-schema-reference)
 - [Vytváření šablon projektů a položek](/visualstudio/ide/creating-project-and-item-templates)
 - [Přizpůsobení šablon projektů a položek](/visualstudio/ide/customizing-project-and-item-templates)
-- [Začínáme se šablonou projektu VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+- [Začínáme s šablonou projektu VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)

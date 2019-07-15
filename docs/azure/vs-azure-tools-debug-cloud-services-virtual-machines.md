@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c29158be17320e8d7f842386a00c44ac86bf5513
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c3d67bddced5e7d335f019273f8c008da6c8e59
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550717"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890653"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Ladění Azure cloudové služby nebo virtuálního počítače v sadě Visual Studio
 
@@ -39,7 +39,8 @@ Emulátor služby Azure Compute simuluje a běží v místním prostředí, tak�
 
 3. Krok přes aplikaci tak, že vyberete příkazy na **ladění** nabídky a nastavení zarážek v kódu. Krocích v ladicím programu aplikace se zobrazí aktuální stav aplikace aktualizují podokna. Při zastavení ladění, nasazení aplikace, které se odstraní. Pokud vaše aplikace obsahuje webové role a nastavíte vlastnost po spuštění akce spuštění webového prohlížeče, Visual Studio spustí webovou aplikaci v prohlížeči. Pokud změníte počet instancí role v konfiguraci služby, musíte zastavit cloudovou službu a pak znovu spusťte ladění, takže můžete ladit tyto nové instance role.
 
-    **Poznámka:** Při zastavení spuštění nebo ladění služby nejsou zastavena místním výpočetním emulátoru a emulátoru úložiště. Musíte explicitně zastavit z oznamovací oblasti.
+    > [!NOTE]
+    > Při zastavení spuštění nebo ladění služby nejsou zastavena místním výpočetním emulátoru a emulátoru úložiště. Musíte explicitně zastavit z oznamovací oblasti.
 
 ## <a name="debug-a-cloud-service-in-azure"></a>Ladění cloudové služby v Azure
 
@@ -145,7 +146,8 @@ Projekty aplikace Visual Studio ASP.NET nabízejí možnost vytvoření virtuál
 
     ![Vytvořit dialogové okno projektu ASP.NET pro web](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
-    **Poznámka:** Budete vyzváni k přihlášení ke svému účtu Azure, pokud jste ještě nejste přihlášení.
+    > [!NOTE]
+    > Budete vyzváni k přihlášení ke svému účtu Azure, pokud jste ještě nejste přihlášení.
 
 3. Vyberte různá nastavení pro virtuální počítač a pak vyberte **OK**. Zobrazit [virtuálních počítačů](http://go.microsoft.com/fwlink/?LinkId=623033) Další informace.
 

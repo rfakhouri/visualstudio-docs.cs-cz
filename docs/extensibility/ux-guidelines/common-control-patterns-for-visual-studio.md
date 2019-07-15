@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312302"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890976"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Vzory běžných ovládacích prvků pro sadu Visual Studio
 ## <a name="BKMK_CommonControls"></a> Běžné ovládací prvky
@@ -296,7 +296,8 @@ Pokyny, pomocí tlačítka:
 #### <a name="graphical-buttons"></a>Grafické tlačítka
 Některá tlačítka by měla vždy použít grafické image a nikdy obsahovat text ušetřit místo a vyhnout se potíže s lokalizací. Často používají v jiných seřaditelné seznamy a pole výběr.
 
-> **Poznámka:** Uživatelé mají na kartě tato tlačítka (neexistují žádné přístupové klíče), takže je umístit v rozumné pořadí. Mapování `name` vlastnosti tlačítka na akci, která je potřebná tak, aby čtečky obrazovky správně interpretovat akce tlačítka.
+> [!NOTE]
+> Uživatelé mají na kartě tato tlačítka (neexistují žádné přístupové klíče), takže je umístit v rozumné pořadí. Mapování `name` vlastnosti tlačítka na akci, která je potřebná tak, aby čtečky obrazovky správně interpretovat akce tlačítka.
 
 | Funkce | Tlačítko |
 | --- | --- |
