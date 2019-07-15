@@ -708,8 +708,10 @@
               href: assertion-failed-dialog-box.md
             - name: Nelze změnit hodnotu – dialogové okno
               href: cannot-change-value-dialog-box.md
-            - name: Ladicí program nemůže zobrazit zdrojový kód nebo zpětný překlad.
+            - name: Ladicí program nemůže zobrazit zdrojový kód nebo zpětný překlad
               href: debugger-cannot-display-source-code-or-disassembly.md
+            - name: Službám ladicího programu začíná docházet paměť
+              href: error-debugger-services-no-memory.md
             - name: Spustitelný soubor pro relaci ladění – dialogové okno
               href: executable-for-debugging-session-dialog-box.md
             - name: Upravit a pokračovat – dialogové okno (C++)

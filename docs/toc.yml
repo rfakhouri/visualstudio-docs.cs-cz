@@ -16,15 +16,6 @@
   items:
     - name: Instalace sady Visual Studio
       href: install/install-visual-studio.md
-    - name: Účty přizpůsobení
-      items:
-        - name: Přihlášení k sadě Visual Studio
-          displayName: personalization accounts
-          href: ide/signing-in-to-visual-studio.md
-        - name: Práce s několika uživatelskými účty
-          href: ide/work-with-multiple-user-accounts.md
-        - name: Prodloužení zkušební verze nebo aktualizace licence
-          href: ide/how-to-unlock-visual-studio.md
     - name: Offline instalace
       items:
         - name: Vytvoření offline instalace sady Visual Studio
@@ -61,8 +52,6 @@
           items:
             - name: Vytvoření síťové instalace sady Visual Studio
               href: install/create-a-network-installation-of-visual-studio.md
-            - name: Aktualizace síťové instalace sady Visual Studio
-              href: install/update-a-network-installation-of-visual-studio.md
             - name: Důležité informace z hlediska využívání sítě
               items:
                 - name: Instalace a používání sady Visual Studio za bránou firewall nebo proxy serverem
@@ -77,28 +66,32 @@
               href: install/automatically-apply-product-keys-when-deploying-visual-studio.md
             - name: Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio
               href: install/set-defaults-for-enterprise-deployments.md
-            - name: Zakázání nebo přesunutí mezipaměti balíčku
-              href: install/disable-or-move-the-package-cache.md
-            - name: Řízení aktualizací nasazení sady Visual Studio
-              href: install/controlling-updates-to-visual-studio-deployments.md
-            - name: Aktualizace sady Visual Studio v servisním směrném plánu
-              href: install/update-servicing-baseline.md
-        - name: Správa instalací
+            - name: Nasazení Help Vieweru
+              items:
+                - name: Příručka správce Help Vieweru
+                  href: help-viewer/administrator-guide.md
+                - name: Argumenty příkazového řádku pro aplikaci Help Content Manager
+                  href: help-viewer/command-line-arguments.md
+                - name: Přepsání voleb aplikace Help Content Manager
+                  href: help-viewer/behavior-overrides.md
+        - name: Správa a aktualizace instalací
           items:
             - name: Nástroje pro zjišťování a správu instancí sady Visual Studio
               href: install/tools-for-managing-visual-studio-instances.md
+            - name: Aktualizace síťové instalace sady Visual Studio
+              href: install/update-a-network-installation-of-visual-studio.md
+            - name: Aktualizace sady Visual Studio v servisním směrném plánu
+              href: install/update-servicing-baseline.md
+            - name: Řízení aktualizací nasazení sady Visual Studio
+              href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: Správa změn datových částí balíčků
+              href: install/changed-payloads.md
+            - name: Zakázání nebo přesunutí mezipaměti balíčku
+              href: install/disable-or-move-the-package-cache.md
         - name: Spravovat předplatná
           items:
             - name: 'Předplatná sady Visual Studio: Přehled správce'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: Nasazení Help Vieweru
-          items:
-            - name: Příručka správce Help Vieweru
-              href: help-viewer/administrator-guide.md
-            - name: Argumenty příkazového řádku pro aplikaci Help Content Manager
-              href: help-viewer/command-line-arguments.md
-            - name: Přepsání voleb aplikace Help Content Manager
-              href: help-viewer/behavior-overrides.md
         - name: Odkaz
           items:
             - name: ID úloh a komponent sady Visual Studio
@@ -126,8 +119,6 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Feedback Client
                   href: install/workload-component-id-vs-feedback-client.md
-            - name: Změny v datové části balíčku
-              href: install/changed-payloads.md
             - name: Čísla sestavení a data vydání sady Visual Studio
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Použití sady Visual Studio z virtuálního počítače Azure
@@ -718,6 +709,15 @@
           displayName: 'marketplace, gallery, vsix'
         - name: Správa externích nástrojů
           href: ide/managing-external-tools.md
+        - name: Účty přizpůsobení
+          items:
+            - name: Přihlášení k sadě Visual Studio
+              displayName: personalization accounts
+              href: ide/signing-in-to-visual-studio.md
+            - name: Práce s několika uživatelskými účty
+              href: ide/work-with-multiple-user-accounts.md
+            - name: Prodloužení zkušební verze nebo aktualizace licence
+              href: ide/how-to-unlock-visual-studio.md
     - name: Výkon sady Visual Studio
       items:
         - name: Optimalizace výkonu
