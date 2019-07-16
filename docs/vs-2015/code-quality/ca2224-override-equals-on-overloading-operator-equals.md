@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b4c16ed5858f18456af59c4cc26f2e0d56e6006a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142470"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Přepište Equals při přetížení operátoru rovnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54761359"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Veřejný typ implementuje operátor rovnosti, ale nepřepisuje <xref:System.Object.Equals%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Popis pravidla
@@ -62,8 +62,8 @@ ms.locfileid: "54761359"
 
  Tento příklad vytvoří následující výstup.
 
- **= ([0] 1,1) a, b = ([1] 2,2) jsou stejné? No**
-**a == b ? Ne**
+ **= ([0] 1,1) a, b = ([1] 2,2) jsou stejné? Ne**
+ **== b? Ne**
 **a1 a a jsou stejná? Ano**
 **a1 ==? Ano**
 **b a bcopy jsou stejné? Ne**
@@ -80,8 +80,8 @@ ms.locfileid: "54761359"
 
  Tento příklad vytvoří následující výstup.
 
- **= (1,1) a, b = (2,2) jsou stejné? No**
-**a == b ? Ne**
+ **= (1,1) a, b = (2,2) jsou stejné? Ne**
+ **== b? Ne**
 **a1 a a jsou stejná? Ano**
 **a1 ==? Ano**
 **b a bcopy jsou stejné? Ano**

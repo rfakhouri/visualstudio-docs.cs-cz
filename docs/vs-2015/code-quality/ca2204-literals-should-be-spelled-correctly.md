@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: a08cb7cee2af51ade4b94dbf675ff83d7da456e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142504"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Literály by měly být zadány správně
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54786561"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Metoda předává řetězcový literál, který se používá v parametru nebo vlastnost, která vyžaduje lokalizovaný řetězec a řetězcový literál obsahuje jedno nebo více slov, která knihovna kontroly pravopisu společnosti Microsoft nerozpoznala.
 
 ## <a name="rule-description"></a>Popis pravidla

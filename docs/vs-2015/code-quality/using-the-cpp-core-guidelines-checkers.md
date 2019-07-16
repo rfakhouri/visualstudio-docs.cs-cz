@@ -10,11 +10,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142059"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Použití kontrolních mechanismů C++ Core Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Podle dokumentu C++ Core Guidelines jsou přenosná sadu pokynů, pravidla a osv
   
    ![Stránka vlastností pro nastavení rozšířeními pro analýzu kódu](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Chcete-li povolit nebo zakázat sady pravidel C++ Core Check, otevřete **stránky vlastností** dialogové okno pro váš projekt. V části **vlastnosti konfigurace**, rozbalte **analýzy kódu**, **rozšíření**. V rozevíracím seznamu řízení vedle **povolit C++ Core Check (vydání)** nebo **povolit C++ Core Check (experimentální)**, zvolte **Ano** nebo **ne**. Zvolte **OK** nebo **použít** uložte provedené změny.  
+   Chcete-li povolit nebo zakázat sady pravidel C++ Core Check, otevřete **stránky vlastností** dialogové okno pro váš projekt. V části **vlastnosti konfigurace**, rozbalte **analýzy kódu**, **rozšíření**. V rozevíracím seznamu řízení vedle **povolit C++ Core Check (vydání)** nebo **povolit C++ Core Check (experimentální)** , zvolte **Ano** nebo **ne**. Zvolte **OK** nebo **použít** uložte provedené změny.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Zkontrolujte typy, hranice a životnosti  
  C++ Core Check balíček nyní obsahuje tyto moduly pro kontrolu pro [bezpečnost typů](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [vazeb bezpečnosti](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), a [životnost bezpečnosti](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) profily.  
@@ -90,16 +90,16 @@ int main()
   **1 >---Sestavení začalo: Projekt: CoreCheckExample, konfigurace: Ladění Win32--**  
 **----**  
 **1>  CoreCheckExample.cpp**  
-**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (úplný soubor PDB)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp(6): upozornění C26494: Uninitializ je proměnná "směrování žádostí na aplikace.**  
 **vydání bude vždy inicializovat objekt. (type.5: http://go.microsoft.com/fwlink/p/?Link**  
 **ID=620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): warning C26485: Výraz "směrování žádostí na aplikace": Rozklad pole na**  
+**ckexample\corecheckexample.cpp(7): upozornění C26485: Výraz "směrování žádostí na aplikace": Rozklad pole na**  
  **decay ukazatele. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
 **=== Sestavení: 1 úspěšné, 0 selhalo, 0 aktuálních, 0 vynecháno ===** The C++ Core Guidelines existují k pomoci psát lepší a bezpečnější kódu. Pokud máte instanci, kde by neměl použít pravidlo, nebo profil, je však snadné potlačit přímo v kódu. Můžete použít `gsl::suppress` atribut zabránit C++ Core Check zjišťování a vytváření sestav nedodržení pravidla v následující bloku kódu. Můžete označit jednotlivé příkazy můžete potlačit specifická pravidla. Můžete dokonce potlačit celý profil napsáním `[[gsl::suppress(bounds)]]` bez zahrnutí příslušné pravidlo číslo.  
   

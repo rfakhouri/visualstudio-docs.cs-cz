@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143153"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Použijte upřednostňované výrazy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1726: Po
 |Kategorie|Microsoft.Naming|  
 |Narušující změna|Zásadní - při vyvolání na sestavení<br /><br /> Bez konce – při vyvolání na parametry typu|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Název externě viditelného identifikátoru zahrnuje výraz, pro který existuje alternativní upřednostňovaný výraz. Název případně obsahuje také výraz příznak nebo příznaky.  
   
 ## <a name="rule-description"></a>Popis pravidla  

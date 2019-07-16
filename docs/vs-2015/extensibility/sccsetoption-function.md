@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f2660ca99d8704f5dd8e7b9aa66c9c8fc5bdbb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143749"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>Návratová hodnota  
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |SCC_OK|Možnost byl úspěšně nastaven.|  
 |SCC_I_SHARESUBPROJOK|Pokud vrácená `nOption` byl `SCC_OPT_SHARESUBPROJ` a modulu plug-in správy zdrojového kódu umožňuje rozhraní IDE k nastavení cílové složky.|  
@@ -84,7 +84,7 @@ SCCRTN SccSetOption(
   
 ## <a name="see-also"></a>Viz také  
  [Funkce rozhraní API modulu Plug-in zdroje ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   
- [SccInitialize](../extensibility/sccinitialize-function.md)   
+ [Sccinitialize –](../extensibility/sccinitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [SccAddFromScc](../extensibility/sccaddfromscc-function.md)   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)   

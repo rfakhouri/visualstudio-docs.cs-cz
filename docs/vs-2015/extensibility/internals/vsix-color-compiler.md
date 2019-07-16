@@ -7,11 +7,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147949"
 ---
 # <a name="vsix-color-compiler"></a>Kompilátor barev VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|Název|[Povinné] Název motivu|  
+|Name|[Povinné] Název motivu|  
 |GUID|[Povinné] Identifikátor GUID motivu (musí odpovídat identifikátoru GUID formátování)|  
   
  Při vytváření vlastní barvy pro sadu Visual Studio, musíte je definovat následující motivy tyto barvy. Pokud neexistují žádné barvy pro konkrétní motivu, Visual Studio se pokusí načíst chybějící barvy z světlý motiv.  
@@ -79,7 +79,7 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|Název|[Povinné] Název kategorie|  
+|Name|[Povinné] Název kategorie|  
 |GUID|[Povinné] Identifikátor GUID kategorie (musí odpovídat identifikátoru GUID formátování)|  
   
  **Barva**  
@@ -96,7 +96,7 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|Název|[Povinné] Název barvy|  
+|Name|[Povinné] Název barvy|  
   
  **Na pozadí a/nebo popředí**  
   
@@ -110,7 +110,7 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|Type|[Povinné] Typ barvy. Může být jeden z následujících akcí:<br /><br /> *CT_INVALID:* Barva je neplatný nebo není nastavená.<br /><br /> *CT_RAW:* Nezpracovaná hodnota ARGB.<br /><br /> *CT_COLORINDEX:* NEPOUŽÍVEJTE.<br /><br /> *CT_SYSCOLOR:* Barva systému Windows z SysColor.<br /><br /> *CT_VSCOLOR:* Visual Studio barvu z __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Automatická barva.<br /><br /> *CT_TRACK_FOREGROUND:* NEPOUŽÍVEJTE.<br /><br /> *CT_TRACK_BACKGROUND:* NEPOUŽÍVEJTE.|  
+|type|[Povinné] Typ barvy. Může být jeden z následujících akcí:<br /><br /> *CT_INVALID:* Barva je neplatný nebo není nastavená.<br /><br /> *CT_RAW:* Nezpracovaná hodnota ARGB.<br /><br /> *CT_COLORINDEX:* NEPOUŽÍVEJTE.<br /><br /> *CT_SYSCOLOR:* Barva systému Windows z SysColor.<br /><br /> *CT_VSCOLOR:* Visual Studio barvu z __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Automatická barva.<br /><br /> *CT_TRACK_FOREGROUND:* NEPOUŽÍVEJTE.<br /><br /> *CT_TRACK_BACKGROUND:* NEPOUŽÍVEJTE.|  
 |Source|[Povinné] Hodnota barvy v šestnáctkovém|  
   
  Podporované výčtem __VSCOLORTYPE všechny hodnoty jsou podporovány na schéma v atributu typu. Doporučujeme však, že používáte pouze CT_RAW a CT_SYSCOLOR.  
@@ -151,7 +151,7 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
   
 - VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
-- VsixColorCompiler D:\xml\colors.xml /noLogo  
+- / Nologo VsixColorCompiler D:\xml\colors.xml  
   
 ## <a name="notes"></a>Poznámky  
   

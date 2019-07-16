@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b8b3f64a0b5f70067367e98d7e1d1471fc670099
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157067"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Anonymní metody a analýza kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ class Class
   
  Třída může obsahovat vložené anonymní metody, který přiřazuje hodnotu pole, která má víc konstruktorů. V takovém případě metriky a upozorněními jsou spojeny s všechny konstruktory není-li tento konstruktor zřetězený jiný konstruktor ve stejné třídě.  
   
- Například ve třídě následující upozornění, které se nacházejí v deklaraci **anonymousMethod** by měla být zvýšena proti **Class(int)** a **Class(string)** ale Ne před **Class()**.  
+ Například ve třídě následující upozornění, které se nacházejí v deklaraci **anonymousMethod** by měla být zvýšena proti **Class(int)** a **Class(string)** ale Ne před **Class()** .  
   
 ```vb  
   

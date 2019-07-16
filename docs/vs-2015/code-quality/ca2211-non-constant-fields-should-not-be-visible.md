@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 48d1a449301c422aa457346d1eb3d48d2f395f2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142493"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Nekonstantní pole by neměla být viditelná
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54783927"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Veřejný nebo chráněný statické pole není konstantní, ani není jen pro čtení.
 
 ## <a name="rule-description"></a>Popis pravidla

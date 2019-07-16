@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 237091c4304b6d6fef90197d503f84fe86c12b9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142345"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Upozornění Analýzy kódu pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Nástroj pro analýzu spravovaného kódu poskytuje upozornění, které označu
   
 |Položka|Popis|  
 |----------|-----------------|  
-|Typ|Název typu pravidla.|  
+|type|Název typu pravidla.|  
 |CheckId|Jedinečný identifikátor pro pravidlo. ID kontroly a kategorie se používají pro-source potlačení upozornění.|  
 |Kategorie|Kategorie upozornění.|  
 |Narušující změna|Určuje, zda oprava porušení tohoto pravidla je zásadní změnu. Zásadní změna znamená, že sestavení, které obsahuje závislost na cíl, který způsobil porušení nebude znovu zkompilovat pomocí nové verze nelze upravovat nebo může v době běhu selhat z důvodu této změny. Při více opravy jsou k dispozici a alespoň jednu opravu je zásadní změnu a jednu opravu není, jsou určeny "Přerušení" i "Bez přerušení".|  
-|Příčina|Konkrétní spravovaný kód, který způsobí, že pravidlo generování upozornění.|  
+|příčina|Konkrétní spravovaný kód, který způsobí, že pravidlo generování upozornění.|  
 |Popis|Tento článek popisuje problémy, které jsou za upozornění.|  
 |Jak vyřešit porušení|Vysvětluje, jak změnit zdrojový kód a splňovat pravidla zabránit generování upozornění.|  
 |Kdy potlačit upozornění|Popisuje, když je bezpečný pro potlačení upozornění z pravidla.|  

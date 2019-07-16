@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14192551543bdfd5cc352ed4c7c45fa95630dcd3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156423"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Velmi vysoká míra konfliktů zámků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,12 +30,12 @@ Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [DA0039: Ve
 |Id pravidla|DA0039|  
 |Kategorie|Použití rozhraní .NET framework|  
 |Metod profilace|Vzorkování<br /><br /> Instrumentace<br /><br /> Paměť .NET|  
-|Zpráva|Dochází k velmi vysoké míře sporů zámků platformy .NET. Zjistěte důvod pro tento spor zámku spuštěním profilace souběžnosti.|  
+|Message|Dochází k velmi vysoké míře sporů zámků platformy .NET. Zjistěte důvod pro tento spor zámku spuštěním profilace souběžnosti.|  
 |Typ pravidla|Upozornění|  
   
  Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit alespoň 25 vzorky k aktivaci tohoto pravidla.  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Systém údaje o výkonu, která se shromažďují se data profilace označuje, že došlo k příliš vysoké míře sporů zámků při spuštění aplikace. Vezměte v úvahu profilaci znovu pomocí metody profilace souběžného zpracování najít příčinu spory.  
   
 ## <a name="rule-description"></a>Popis pravidla  

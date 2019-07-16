@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 158e200a33b4783df9f63f42a1eca7bb8957d449
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145688"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elementy (dynamická vlastnost XElement)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

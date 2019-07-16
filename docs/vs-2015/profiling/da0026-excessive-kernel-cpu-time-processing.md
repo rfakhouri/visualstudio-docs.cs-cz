@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fef0a3c42be1057bd1217ec676ae43b220d80345
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152663"
 ---
-# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Čas zpracování procesoru jádra nadměrné
+# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Nadměrný čas zpracování procesoru jádra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id pravidla | TODO |  
@@ -31,7 +31,7 @@ Id pravidla | TODO |
   
  Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit minimálně 10 vzorky k aktivaci tohoto pravidla.  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Čas procesoru poměr, který se spustil v režimu jádra překročil množství času strávené v uživatelském režimu. Zvažte profilaci znovu a vzorkování počet volání systému (syscalls) a zjistěte příčinu časy spuštění režimu jádra vysoká.  
   
 ## <a name="rule-description"></a>Popis pravidla  

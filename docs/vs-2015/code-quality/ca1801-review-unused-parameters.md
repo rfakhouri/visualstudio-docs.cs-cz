@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143130"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Zkontrolujte nepoužité parametry
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1801: Re
 |Kategorie|Microsoft.Usage|  
 |Narušující změna|Bez konce – Pokud člen není viditelný mimo sestavení, bez ohledu na změnu provedete.<br /><br /> Bez konce – Pokud změníte členu, který chcete použít parametr v rámci svého těla.<br /><br /> Rozdělení – odeberte parametr a je viditelný mimo sestavení.|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Podpis metody obsahuje parametr, který není použit v těle metody. Toto pravidlo nezkoumá následujících metod:  
   
 - Metody odkazuje delegáta.  

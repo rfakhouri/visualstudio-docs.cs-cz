@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bfc2ff97a2eb465fe7306ebe368a20e2a7fd8638
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155728"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;Vlastnost assemblyIdentity&gt; – Element (nasazení ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,4 +71,4 @@ Určuje primární sestavení [!INCLUDE[ndptecclick](../includes/ndptecclick-md.
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – Manifest nasazení](../deployment/clickonce-deployment-manifest.md)   
- [\<Vlastnost assemblyIdentity > – Element](../deployment/assemblyidentity-element-clickonce-application.md)
+ [Element \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-application.md)

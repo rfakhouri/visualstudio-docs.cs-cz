@@ -7,11 +7,11 @@ ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
 ms.openlocfilehash: 0555aeb722132ba7b9628be9096847d45efb66ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820144"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68146999"
 ---
 Pomocí sady Visual Studio můžete snadno vytvářet, ladit a spouštění kontejnerizovaných aplikací ASP.NET Core a publikujte je na Azure Container Registry (ACR), Docker Hub, Azure App Service nebo vlastního registru kontejneru. V tomto článku budeme publikovat do služby ACR.
 
@@ -69,7 +69,7 @@ Předchozí *soubor Dockerfile* vychází [microsoft/aspnetcore](https://hub.doc
 
 Při nové dialogu projekt **konfigurace pro protokol HTTPS** zaškrtávací políčko zaškrtnuto, *soubor Dockerfile* poskytuje dva porty. Jeden port se používá pro přenos HTTP; jiný port se používá pro protokol HTTPS. Pokud políčko není zaškrtnuto, jeden port (80) je přístupný pro přenosy pomocí protokolu HTTP.
 
-## <a name="debug"></a>Ladit
+## <a name="debug"></a>Ladění
 
 Vyberte **Docker** z ladění rozevírací seznam v panelu nástrojů a spusťte ladění aplikace. Může se zobrazit zpráva s výzvou o důvěřovat certifikátu; rozhodnete důvěřovat certifikátům, abyste mohli pokračovat.
 
@@ -107,7 +107,7 @@ Po dokončení cyklu vývoje a ladění aplikace můžete vytvořit image produk
 
     | Nastavení      | Navrhovaná hodnota  | Popis                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **DNS Prefix** | Globálně jedinečný název | Název, který jednoznačně identifikuje vašeho registru kontejneru. |
+    | **Předpona DNS** | Globálně jedinečný název | Název, který jednoznačně identifikuje vašeho registru kontejneru. |
     | **Předplatné** | Vaše předplatné | Předplatné Azure používat. |
     | **[Skupina prostředků](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Název skupiny prostředků, ve kterém chcete vytvořit registr kontejnerů. Zvolte **nový** vytvořit novou skupinu prostředků.|
     | **[SKLADOVÁ POLOŽKA](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standard | Úrovně služby do registru kontejneru  |

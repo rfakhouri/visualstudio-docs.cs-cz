@@ -21,13 +21,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157874"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Postupy: Spuštění pracovního procesu v rámci uživatelského účtu
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Postupy: Spuštění pracovního procesu pod uživatelským účtem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nastavení počítače tak, aby mohly běžet [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovního procesu (aspnet_wp.exe nebo w3wp.exe) v rámci uživatelského účtu, postupujte podle těchto kroků.  

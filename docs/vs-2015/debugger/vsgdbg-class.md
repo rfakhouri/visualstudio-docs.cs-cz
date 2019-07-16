@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 053647d48324f056148375bae9268b997ba8721f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145697"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg – třída
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ class VsgDbg;
   
 ### <a name="public-constructors"></a>Veřejné konstruktory  
   
-|Název|Popis|  
+|Name|Popis|  
 |----------|-----------------|  
 |[VsgDbg::VsgDbg (konstruktor)](../debugger/vsgdbg-vsgdbg-constructor.md)|Vytvoří instanci objektu `VsgDbg` třídy a volitelně připraví komponentu v aplikaci diagnostiky grafiky k aktivně zachycení a zaznamenání grafických informací.|  
 |[VsgDbg::~VsgDbg (destruktor)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)|Odstraní instanci `VsgDbg` třídy.|  
   
 ### <a name="public-methods"></a>Veřejné metody  
   
-|Název|Popis|  
+|Name|Popis|  
 |----------|-----------------|  
 |[AddMessage](../debugger/addmessage.md)|Přidá vlastní zprávu pro diagnostiku grafiky HUD (zobrazení vedoucí nahoru).|  
 |[BeginCapture](../debugger/begincapture.md)|Začne sběr intervalu, který bude končit `EndCapture`.|  

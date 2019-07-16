@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a54f446cb82b3181ee057d4887b37940868a5920
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150769"
 ---
 # <a name="msbuild-special-characters"></a>Speciální znaky nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,8 +36,8 @@ ms.locfileid: "59650795"
 |$|%24|Odkazování na vlastnosti|  
 |@|%40|Referenční seznamy položek|  
 |'|%27|Podmínky a jiných výrazech|  
-|;|%3B|Oddělovač seznamu|  
-|?|%3F|Zástupný znak pro názvy souborů v `Include` a `Exclude` atributy|  
+|;|% 3B|Oddělovač seznamu|  
+|?|% 3F|Zástupný znak pro názvy souborů v `Include` a `Exclude` atributy|  
 |*|% 2|Zástupný znak pro použití v názvech souborů v `Include` a `Exclude` atributy|  
   
 ## <a name="see-also"></a>Viz také  

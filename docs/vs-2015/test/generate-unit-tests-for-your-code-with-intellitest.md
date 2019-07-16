@@ -11,13 +11,13 @@ caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 304b26f8724413dceef8126434861bd7128d588c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147295"
 ---
-# <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generování testů jednotek pro kód pomocí funkce IntelliTest
+# <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generování testů jednotek kódu pomocí funkce IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Inteligentní testování vám umožní prozkoumat kód .NET a vygenerovat testovací data a sady testování částí. Pro každý příkaz v kódu se generuje zkušební vstup, který tento příkaz spustí. Pro každou podmíněnou větev v kódu se provede Případová analýza. Například, pokud jsou analyzovány příkazy, výrazy a všechny operace, které můžou vyvolat výjimku. Této analýzy se generují testovací data pro parametrizovaný test části metod, vytváření testů jednotek s vysokým pokrytím kódu používá.  

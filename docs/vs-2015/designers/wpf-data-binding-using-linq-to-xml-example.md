@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e5f92b616b33c95d9d1a7de71d2a5fe5c9026991
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148085"
 ---
-# <a name="wpf-data-binding-using-linq-to-xml-example"></a>Datové vazby WPF pomocí LINQ to XML příklad
+# <a name="wpf-data-binding-using-linq-to-xml-example"></a>Příklad datové vazby WPF pomocí LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tato část poskytuje příklad Windows Presentation Foundation (WPF), která se sváže součásti uživatelského rozhraní pro vložený zdroj dat XML. Název v tomto příkladu (a projekt aplikace Visual Studio, který ji obsahuje) je *LinqToXmlDataBinding*.  
@@ -25,7 +25,7 @@ Tato část poskytuje příklad Windows Presentation Foundation (WPF), která se
   
 |Téma|Popis|  
 |-----------|-----------------|  
-|[Postupy: Sestavení a spuštění příkladu Linqtoxmldatabinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|Obsahuje podrobné pokyny o tom, jak vytvářet, naplnit a sestavte projekt sady Visual Studio pro účely tohoto příkladu.|  
+|[Postupy: Sestavení a spuštění příkladu LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|Obsahuje podrobné pokyny o tom, jak vytvářet, naplnit a sestavte projekt sady Visual Studio pro účely tohoto příkladu.|  
 |[Návod: Příklad LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)|Obsahuje primární zdrojové soubory pro projekt a jak LINQ to XML slouží k vytváření datových vazeb v rámci tohoto kódu popis.|  
   
 ## <a name="see-also"></a>Viz také  

@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899164"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143520"
 ---
 
 1. Na počítači, kde máte otevřený v sadě Visual Studio projekt ASP.NET, klikněte pravým tlačítkem na projekt v Průzkumníku řešení a zvolte **publikovat**.

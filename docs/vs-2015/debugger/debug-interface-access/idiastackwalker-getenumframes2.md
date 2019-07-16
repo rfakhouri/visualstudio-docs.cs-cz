@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 25090ae66d28ebd9eb62f62f14979de1e82c5302
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144721"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,8 +53,8 @@ Načte čítač rámce zásobníku pro typ konkrétní platformy.
  K získání seznamu rámce zásobníku pro právě x86 platformy, volání [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) metody.  
   
 ## <a name="see-also"></a>Viz také  
- [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   
+ [Idiastackwalker –](../../debugger/debug-interface-access/idiastackwalker.md)   
  [Cv_cpu_type_e – výčet](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
+ [Idiastackframe –](../../debugger/debug-interface-access/idiastackframe.md)   
  [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)

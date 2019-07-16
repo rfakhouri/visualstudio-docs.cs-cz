@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160413"
 ---
 # <a name="common-msbuild-project-items"></a>Společné položky projektu nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
 ## <a name="common-items"></a>Společné položky  
  Následuje seznam všechny společné položky projektu.  
   
-### <a name="reference"></a>Odkaz  
+### <a name="reference"></a>Reference  
  Představuje odkaz na sestavení (spravované) v projektu.  
   
 |Název položky|Popis|  
@@ -120,7 +120,7 @@ V [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], položka je pojmenov
 |Viditelné|Nepovinný datový typ boolean. Určuje, zda se zobrazí soubor v **Průzkumníka řešení** v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Volitelný řetězec. Určuje, jestli se má zkopírovat soubor do výstupního adresáře. Hodnoty jsou:<br /><br /> 1.  Nikdy<br />2.  Vždy<br />3.  PreserveNewest|  
   
-### <a name="none"></a>Žádný  
+### <a name="none"></a>Žádné  
  Představuje soubory, které by se neměly nijak podílet v procesu sestavení.  
   
 |Název položky|Popis|  

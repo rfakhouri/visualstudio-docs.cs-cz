@@ -9,18 +9,18 @@ caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 42da15899bb9bab6388d32c87132796eff768d7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158177"
 ---
 # <a name="sample-excel-communicator-interface"></a>Ukázka rozhraní komunikátoru Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ukázka `IExcelUICommunication` rozhraní se používá v `ExcelUICommunicator` objekt `ExcelAddIn` projektu.  
   
-## <a name="iexceluicommunication-interface"></a>IExcelUICommunication Interface  
+## <a name="iexceluicommunication-interface"></a>IExcelUICommunication rozhraní  
  Toto rozhraní definuje body komunikace mezi `CodedUIExtension`, která se spouští v procesu programový Test uživatelského rozhraní a `ExcelCodedUIAddIn`, která se spouští v [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] procesu.  
   
  `ExcelCodedUIAddinHelper` Obsahuje sestavení `ExcelUICommunicator` třídu, která je odvozena z tohoto rozhraní a používá model objektů aplikace Excel ke zpracování metody.  

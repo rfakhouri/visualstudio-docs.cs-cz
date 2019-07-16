@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88fce548d5adbd6d4dc930db767fd3e52690490b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148781"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;soubor&gt; – Element (aplikace ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

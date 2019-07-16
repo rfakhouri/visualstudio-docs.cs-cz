@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154843"
 ---
 # <a name="msbuild-glossary"></a>Slovníček nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Tyto podmínky se používají k popisu Microsoft Build Engine (MSBuild) a jeho 
 
  Zobrazit *projektu, podřízené*.
 
- Podmínka
+ condition
 
  Mnoho prvků MSBuild může podmíněně; definovaný To znamená `Condition` atributu se zobrazí v elementu. Obsah podmíněných prvků se ignoruje, pokud je podmínka vyhodnocena jako `true`. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).
 
@@ -102,7 +102,7 @@ Tyto podmínky se používají k popisu Microsoft Build Engine (MSBuild) a jeho 
 
  Možnost pro aplikace nebo sestavení projekt cílit na mnoha různých CLR a rozhraní MSBuild a ze sady Visual Studio.
 
- Profil
+ profile
 
  Podmnožinu úplné rozhraní framework. To umožňuje minimalizovat, kterou je potřeba stáhnout do počítače.
 
@@ -170,7 +170,7 @@ Tyto podmínky se používají k popisu Microsoft Build Engine (MSBuild) a jeho 
 
  Zobrazit *vlastnost, registru*.
 
- cíl
+ target
 
  Cíl seskupuje úlohy v určitém pořadí a zpřístupňuje části souboru projektu jako vstupní body do procesu sestavení. Další informace najdete v tématu [cíle](../msbuild/msbuild-targets.md).
 

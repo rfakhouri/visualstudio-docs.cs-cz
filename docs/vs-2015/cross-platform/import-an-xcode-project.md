@@ -8,11 +8,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150892"
 ---
 # <a name="import-an-xcode-project"></a>Import projektu XCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Microsoft Visual C++ pro vývoj mobilních řešení napříč platformami zahrn
   
     ![Import z podokna XCode globální vlastnosti](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
   
-    Tyto globální cesty lze také nastavit v sadě Visual Studio **možnosti** dialogového okna. Je, vyhledejte na **nástroje** nabídce vyberte možnost **možnosti**. V **možnosti** dialogového okna, rozbalte **různé platformy**, **C++**, **iOS**, **globální vlastnosti**.  
+    Tyto globální cesty lze také nastavit v sadě Visual Studio **možnosti** dialogového okna. Je, vyhledejte na **nástroje** nabídce vyberte možnost **možnosti**. V **možnosti** dialogového okna, rozbalte **různé platformy**, **C++** , **iOS**, **globální vlastnosti**.  
   
     Zvolte **Další** pokračujte.  
   

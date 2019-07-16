@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8bb49e650f2395bac8a3b5eb1d0f52e2e168731
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146108"
 ---
-# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Postupy: Vyloučení nebo zahrnutí krátkých funkcí z instrumentace
+# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Postupy: Zahrnutí nebo vyloučení krátkých funkcí z instrumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ve výchozím nastavení, nástroje pro profilaci vyloučit *malé funkce* z instrumentace. Malé funkce jsou krátkých funkcí, které Nedovolte, aby byly všechny volání funkce. Kromě těchto malé funkce poskytuje pro menší nároky na instrumentace a proto zlepšit rychlost instrumentace. Vyloučení malé funkce taky snižuje velikost souboru (.vsp) výkonu profilování dat a čas, který je vyžadován pro analýzu. Pokud jsou malé funkce vyloučit, čas, který byl stráven malé funkce počítat celkové a výhradní čas jejich nadřazené funkce. Malé funkce můžete vyloučit nebo součástí instrumentace, jak je popsáno v následujícím postupu.  

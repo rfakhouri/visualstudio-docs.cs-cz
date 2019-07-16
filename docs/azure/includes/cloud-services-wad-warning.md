@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0170c6ed655ce54e2dbadf57341dff56616186ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556291"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68147234"
 ---
 > [!WARNING]
 > Když povolíte diagnostiku pro existující role, jsou při nasazení balíčku zakázat všechna rozšíření, které jste už nastavili. Zde jsou některé z nich:
@@ -14,7 +14,7 @@ ms.locfileid: "62556291"
 > * Microsoft Antimalware                 
 > * Microsoft Monitoring Agent
 > * Agent služby Microsoft Profiler      
-> * Windows Azure Domain Extension        
+> * Rozšíření Azure domény Windows        
 > * Rozšíření diagnostiky Azure Windows   
 > * Windows Azure rozšíření vzdálené plochy
 > * Windows Azure Log Collector

@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 362e50e20519c358564d13ba169f706fe384ca5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152762"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Vyhodnocení výrazu v režimu přerušení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Následující část popisuje proces, který nastane, pokud je v režimu přeru
   
 3. Pokud ParseText nevrací hodnotu S_OK, vrátí se z důvodu chyby.  
   
-     -otherwise-  
+     -jinak-  
   
      Pokud ParseText nevrátí hodnotu S_OK, SDM pak můžete volat buď [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) nebo [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) získat konečnou hodnotu z analyzovaného výrazu.  
   
