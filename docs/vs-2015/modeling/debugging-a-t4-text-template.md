@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164581"
 ---
 # <a name="debugging-a-t4-text-template"></a>Ladění textové šablony T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Můžete nastavit zarážky v textových šablonách. Chcete-li ladit návrhové
 |V direktivě 'šablony' byla zadána neplatná jazyková verze. Jazyková verze musí být ve formátu "xx-XX". Se používá invariantní jazyková verze.|Nastane, pokud je nesprávně zadán parametr jazykové verze v direktivě šablony. Zpráva obsahuje číslo řádku – direktiva šablony.|Změňte parametr jazykové verze na platná jazyková verze ve formátu "xx-XX".|  
 |Neplatná ladicí hodnota "{0}' byl zadán v direktivě šablony. Ladicí hodnota musí být "true" nebo "false". Použije se výchozí hodnotu "false".|Nastane, když `debug` je nesprávně zadán parametr v direktivě šablony. Zpráva obsahuje číslo řádku – direktiva šablony.|Nastavte parametr ladění "true" nebo "false".|  
 |Neplatná hodnota HostSpecific "{0}' byl zadán v direktivě šablony. Hodnota HostSpecific musí být "true" nebo "false". Použije se výchozí hodnotu "false".|Vyvolá se při parametr do konkrétního hostitele `template` nesprávně zadána direktiva. Zpráva obsahuje číslo řádku – direktiva šablony.|Nastavte parametr specifický pro hostitele na "true" nebo "false".|  
-|Neplatný jazyk "{0}' byl zadán v direktivě 'šablony'. Jazyk musí být buď "C" nebo "VB". Použije se výchozí hodnota "C".|Nastane, pokud je zadán nepodporovaný jazyk v `template` směrnice. Pouze "C" nebo "VB" jsou povoleny (malých písmen). Zpráva obsahuje číslo řádku – direktiva šablony.|Nastavte `language` parametr v direktivě šablony na "C" nebo "VB".|  
+|Neplatný jazyk "{0}' byl zadán v direktivě 'šablony'. Jazyk musí být buď "C#" nebo "VB". Výchozí hodnota "C#" se použije.|Nastane, pokud je zadán nepodporovaný jazyk v `template` směrnice. Pouze "C#" nebo "VB" jsou povoleny (malých písmen). Zpráva obsahuje číslo řádku – direktiva šablony.|Nastavte `language` parametr v direktivě šablony "C#" nebo "VB".|  
 |V šabloně bylo nalezeno více direktiv výstupu. Budou ignorovány všechny kromě první z nich.|Vyvolá se při více `output` direktivy jsou uvedeny v souboru šablony. Zpráva obsahuje číslo řádku směrnice duplicitním výstupem.|Odebrat duplicitní `output` direktivy.|  
 |V šabloně bylo nalezeno více direktiv šablony. Budou ignorovány všechny kromě první z nich. Více parametrů direktivy šablony by měl být zadán v rámci jedné direktivy šablony.|Nastane, pokud zadáte více `template` direktivy v souboru šablony textu (včetně zahrnuté soubory). Zpráva obsahuje číslo řádku směrnice duplikovat šablonu.|Agregovat různých `template` direktivy do jedné `template` směrnice.|  
 |Nebyl určen žádný procesor pro direktivu s názvem "{0}". Direktiva se bude ignorovat.|Nastane, pokud zadáte `custom` směrnice, ale neposkytují `processor` atribut. Zpráva obsahuje název směrnice a číslo řádku.|Zadejte `processor` atribut s názvem `directive` procesoru pro direktivu.|  
@@ -71,7 +71,7 @@ Můžete nastavit zarážky v textových šablonách. Chcete-li ladit návrhové
 |Povinný parametr "{0}"pro direktivu"{1}' nebyl nalezen. Direktiva se bude ignorovat.|Vyvolá se v případě systému neposkytuje direktiv povinný parametr. Zpráva obsahuje název parametru chybí název směrnice a číslo řádku.|Zadejte parametr chybí.|  
 |Procesor s názvem "{0}"nepodporuje direktivu s názvem"{1}". Direktiva se bude ignorovat.|Nastane, pokud procesor direktiv nepodporuje direktivu. Zpráva obsahuje název a číslo řádku porušilo směrnice spolu s názvem procesor direktiv.|Opravte název direktivy.|  
 |Direktiva zahrnutí souboru "{0}' způsobuje nekonečnou smyčku.|Pokud cyklické direktiv zadávají (například soubor obsahuje soubor B, který obsahuje soubor A).|Nezadávejte cyklické direktiv.|  
-|Spouštění transformace:|Připojí na začátek tohoto řetězce pro všechny chyby nebo upozornění, které jsou generovány při spuštění transformace.|Nelze použít.|  
+|Spouštění transformace:|Připojí na začátek tohoto řetězce pro všechny chyby nebo upozornění, které jsou generovány při spuštění transformace.|Není k dispozici.|  
 |V rámci bloku byla nalezena neočekávaná počáteční nebo koncová značka. Ujistěte se, že jste nenapsali počáteční nebo koncová značka. proto, že nemáte žádné vnořené bloky v šabloně.|Zobrazí, když máte neočekávanou \<# nebo #>. To znamená pokud máte \<# po jiné otevřít značky, které ještě nebyly uzavřeny, nebo můžete mít #> když neexistuje žádná neuzavřený otevřete značka před ní. Zpráva obsahuje číslo řádku neodpovídající značky.|Buď odeberte neodpovídající počáteční nebo koncová značka, nebo použijte řídicí znak.|  
 |Direktiva byla zadána v nesprávném formátu. Direktiva se bude ignorovat. Zadejte prosím direktivu ve formátu `<#@ name [parametername="parametervalue"]*  #>`|Zobrazit analyzátorem, pokud není zadán direktivu ve správném formátu. Zpráva obsahuje číslo řádku nesprávné směrnice.|Ujistěte se, všechna direktivy jsou ve formě `<#@ name [parametername="parametervalue"]*  #>`. Další informace najdete v tématu [direktivy textové šablony T4](../modeling/t4-text-template-directives.md).|  
 |Nepovedlo se načíst sestavení '{0}"pro registrovaný procesor direktiv"{1}.<br /><br /> {2}|Nastane, pokud procesor direktiv nebylo možné načíst podle hostitele. Zpráva identifikuje sestavení k dispozici pro procesor direktiv a název procesor direktiv.|Ujistěte se, že je procesor direktiv správně zaregistrován a zda existuje sestavení.|  
