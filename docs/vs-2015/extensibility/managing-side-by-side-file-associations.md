@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b8ca68aec180c51a170fd6ecce58237a5b306705
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194391"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Správa přidružení souborů vedle sebe
 
@@ -53,7 +53,7 @@ Pokud chcete, aby více rozšíření VSPackages vedle sebe používat stejnou p
 
   **CustomAction řádky tabulky, které určují nejnovější verzi sady Visual Studio**
 
-  |Akce|Typ|Zdroj|Target|
+  |Akce|type|Source|Target|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -61,10 +61,10 @@ Pokud chcete, aby více rozšíření VSPackages vedle sebe používat stejnou p
 
   **InstallExecuteSequence řádky tabulky, které určují nejnovější verzi sady Visual Studio**
 
-  |Akce|Podmínka|Pořadí|
+  |Akce|Podmínka|Sequence|
   |------------|---------------|--------------|
   |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 A NENÍ (DEVENV_EXE_2003 NEBO DEVENV_EXE_2005)|410|
-  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 AND NOT DEVENV_EXE_2005|420|
+  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 A NE DEVENV_EXE_2005|420|
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|
 
    Vlastnost DEVENV_EXE_LATEST v tabulce registru balíček Instalační služby systému Windows můžete použít k zápisu HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand klíč výchozí hodnotu [DEVENV_EXE_LATEST] "%1"

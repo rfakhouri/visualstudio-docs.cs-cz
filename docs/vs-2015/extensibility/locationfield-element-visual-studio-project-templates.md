@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b28fe0e696b23724758bd877b6031287290f879e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194464"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField – element (šablony projektů Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,8 +25,8 @@ ms.locfileid: "60068779"
 Určuje, zda je či není **umístění** textové pole **nový projekt** dialogové okno je povolena, zakázané nebo skrytý pro šablonu projektu.  
   
  \<Vstemplate – >  
- \<TemplateData>  
- \<LocationField>  
+ \<TemplateData >  
+ \<Locationfield – >  
   
 ## <a name="syntax"></a>Syntaxe  
   

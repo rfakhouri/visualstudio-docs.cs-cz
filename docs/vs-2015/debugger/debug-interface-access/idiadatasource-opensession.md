@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4bec5507d15374e6e88afd4567d4b0fec9ca6cb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198603"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ HRESULT openSession ( 
 ## <a name="return-value"></a>Návratová hodnota  
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby. V následující tabulce jsou uvedeny možné návratové hodnoty pro tuto metodu.  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |E_UNEXPECTED, JE-|[Idiadatasource –](../../debugger/debug-interface-access/idiadatasource.md) objekt nebyl inicializován dříve se zdrojem symboly.|  
 |E_INVALIDARG|Neplatný `ppSession` parametru.|  

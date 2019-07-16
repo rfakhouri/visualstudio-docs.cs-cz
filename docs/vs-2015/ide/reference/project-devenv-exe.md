@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 398d92065b1ff1b5447017c7a21fc0def1e0da52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200890"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 ```  
   
 ## <a name="arguments"></a>Arguments  
- /build  
+ / Build  
  Vytvoří projekt určený `/project` `ProjName`.  
   
  / clean  
@@ -58,7 +58,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
  / Project `ProjName`  
  Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat relativní cestu z `SolutionName` složku do souboru projektu nebo zobrazované jméno projektu, nebo úplnou cestu a název souboru projektu.  
   
- /projectconfig `ProjConfigName`  
+ / projectconfig `ProjConfigName`  
  Volitelné. Název projektu konfigurace použít k sestavení `/project` s názvem.  
   
 ## <a name="remarks"></a>Poznámky  

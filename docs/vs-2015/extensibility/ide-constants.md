@@ -17,11 +17,11 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204044"
 ---
 # <a name="ide-constants"></a>Konstanty integrovaného vývojového prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,14 +41,14 @@ ms.locfileid: "54789497"
   
 ## <a name="editor-factory-flags"></a>Příznaky Factory editoru  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Zastaralé příznak kombinovat bitový jako první parametr <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> metody.|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Bitový operátor jako první parametr v kombinaci <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, metoda, znamená to objekt factory editoru by měl provádět potřebné opravy.|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Bitový jako první parametr v kombinaci <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> metody tohoto příznaku je vzájemně exclusive [CEF. CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015).|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Bitový operátor jako první parametr v kombinaci <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> metoda, znamená to objekt factory editoru měli vytvořit editoru bez zobrazení uživatelského rozhraní (UI).|  
   
-## <a name="visual-studio-errors"></a>Visual Studio Errors  
+## <a name="visual-studio-errors"></a>Chyby sady Visual Studio  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -64,7 +64,7 @@ ms.locfileid: "54789497"
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Metoda vrátí tuto hodnotu, pokud má dokument formátu, který nelze otevřít v editoru.|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Hodnota HRESULT, která označuje, že uživatel stiskněte tlačítko Zpět v Průvodci sady Visual Studio.|  
   
-## <a name="visual-studio-constants"></a>Visual Studio Constants  
+## <a name="visual-studio-constants"></a>Visual Studio konstanty  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -75,8 +75,8 @@ ms.locfileid: "54789497"
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Konstanta, která je specifická pro Visual Studio pro všesměrové vysílání zprávy oznámení prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> metoda označující, že došlo ke změně metriky příkazového řádku.|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Konstanta, která je specifická pro Visual Studio, která označuje, že soubor cookie není nastavený.|  
 |[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Identifikátor položky sady Visual Studio, představujícího chybějící položky projektu. Tato hodnota se používá, pokud nebyla vybrána žádná aktuální položka.|
-|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Identifikátor položky sady Visual Studio, který představuje nejnižší úrovni hierarchie projektu a slouží k identifikaci celou hierarchii, na rozdíl od jedné položky.|
-|[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Identifikátor položky sady Visual Studio, který představuje aktuálně vybrané položky nebo položek, které mohou zahrnovat kořenu hierarchie.| 
+|[VSITEMID. Kořenové](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Identifikátor položky sady Visual Studio, který představuje nejnižší úrovni hierarchie projektu a slouží k identifikaci celou hierarchii, na rozdíl od jedné položky.|
+|[VSITEMID. Výběr](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Identifikátor položky sady Visual Studio, který představuje aktuálně vybrané položky nebo položek, které mohou zahrnovat kořenu hierarchie.| 
   
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents  
  Popisuje, jaká součást rozhraní IDE jenom byl vybrán, v <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> volat, například.  
@@ -93,7 +93,7 @@ ms.locfileid: "54789497"
 ## <a name="vsselelemid"></a>VSSELELEMID  
  Konstanty používané k označení nového stavu výběru.  
   
-|Konstanta|Hodnota|  
+|Konstanta|Value|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|  
@@ -106,10 +106,10 @@ ms.locfileid: "54789497"
   
 ## <a name="component-selector-dialog-constants"></a>Konstanty dialogové okno Výběr součástí  
   
-|Konstanta|Hodnota|  
+|Konstanta|Value|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|  
-|<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|  
+|<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER +. 1281|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_CLEARSELECTION>|WM_USER + 1290|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_GETSELECTION>|WM_USER + 1287|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_INITIALIZELIST>|WM_USER + 1285|  

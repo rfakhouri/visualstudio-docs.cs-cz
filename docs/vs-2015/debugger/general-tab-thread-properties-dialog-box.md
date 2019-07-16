@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b1a8e6fd583f6035fc84f0c86adcee059562235d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159945"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Karta Obecné, dialogové okno vlastností vlákna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Použijte toto dialogové okno pro další informace o konkrétním vlákně. Zo
   
  **Vlastností vlákna** dialogové okno obsahuje jedno podokno, **Obecné** kartu. K dispozici jsou následující nastavení:  
   
-|Položka|Popis|  
+|Entry|Popis|  
 |-----------|-----------------|  
 |**Název modulu**|Název modulu.|  
 |**ID vlákna**|Jedinečné ID tohoto vlákna. Všimněte si, že jsou opakovaně využívána ID vlákna; vlákno identifikují pouze po dobu životnosti toto vlákno.|  

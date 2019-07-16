@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: a58e40ff973467e9a24a923410ff2f73981ecaab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189188"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Identifikátory by se měly lišit více než použitím malých a velkých písmen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54759830"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Názvy dva typy, členy, parametry nebo plně kvalifikovaný obory názvů jsou identické, když jsou převedeny na malá písmena.
 
 ## <a name="rule-description"></a>Popis pravidla

@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 468561a627a3ad7eb477328b5afef794c7acf2c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199950"
 ---
 # <a name="overriding-toolsversion-settings"></a>Přepsání nastavení parametru ToolsVersion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,5 +129,5 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
 ## <a name="see-also"></a>Viz také  
  [Cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)   
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
- [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
+ [Sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
  [Standardní a vlastní konfigurace sady nástrojů](../msbuild/standard-and-custom-toolset-configurations.md)

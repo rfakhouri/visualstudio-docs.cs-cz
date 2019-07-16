@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14a0b573609d52269809dcaa6e900e17affcecfd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196379"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,6 +63,6 @@ pSession->findSymbolByVAEx( va, SymTagFunction, &pFunc, &disp );
 ## <a name="see-also"></a>Viz také  
  [Idiasession –](../../debugger/debug-interface-access/idiasession.md)   
  [Idiasession::findchildren –](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
+ [Idiasession::findsymbolbyva –](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   
+ [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md)

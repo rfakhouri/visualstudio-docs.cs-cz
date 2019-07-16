@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18fa69929f78d5ae661169a09db97697d98f4d94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198644"
 ---
 # <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ HRESULT set_imageHeaders ( 
  cbData  
  [in] Počet bajtů dat záhlaví. Musí být `n*sizeof(IMAGE_SECTION_HEADER)` kde `n` je číslo oddílu záhlaví ve spustitelném souboru.  
   
- data[]  
+ data]  
  [in] Pole `IMAGE_SECTION_HEADER` struktury má být použit jako hlavičky bitové kopie.  
   
  originalHeaders  

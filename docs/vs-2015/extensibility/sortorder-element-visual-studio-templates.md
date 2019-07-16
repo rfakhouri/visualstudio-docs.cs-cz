@@ -14,11 +14,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 825ec785a83cae0aaa8a31ae1375e956228b634e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205518"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder – element (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54759974"
 Určuje hodnotu, která slouží k uspořádání šablony, mezi další šablony ve stejné kategorii, jak se zobrazí v buď **nový projekt** nebo **přidat novou položku** dialogové okno.  
   
  \<Vstemplate – >  
- \<TemplateData>  
+ \<TemplateData >  
  \<SortOrder – >  
   
 ## <a name="syntax"></a>Syntaxe  

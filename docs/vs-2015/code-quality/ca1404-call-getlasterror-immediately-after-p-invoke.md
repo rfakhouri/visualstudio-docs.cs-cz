@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: e33c724d2cebb9423f2e475d95bf42ac5e2cc966
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200306"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Volejte GetLastError ihned po volání nespravovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60053283"
 |Kategorie|Microsoft.Interoperability|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Je provedeno volání <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> metody nebo ekvivalentní Win32 `GetLastError` funkce a volání, která se dodává bezprostředně před není na platformu vyvolání metody.
 
 ## <a name="rule-description"></a>Popis pravidla

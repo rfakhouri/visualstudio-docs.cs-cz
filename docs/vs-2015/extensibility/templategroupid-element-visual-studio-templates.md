@@ -14,11 +14,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53d1f6628ff9df48879a34417b7d89223d848dd8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186440"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID – element (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54777162"
 Určuje, jaký typ projektu šablony položek se zobrazí. Tento element je důležité, když [ShowByDefault (šablony sady Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) je nastavena na `false`. Když [ShowByDefault (šablony sady Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) je nastavena na `true`, bude k dispozici ve všech typech projektů, šablony položky.  
   
  \<Vstemplate – >  
- \<TemplateData>  
+ \<TemplateData >  
  \<TemplateGroupID>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -62,13 +62,13 @@ Určuje, jaký typ projektu šablony položek se zobrazí. Tento element je důl
   
 |Hodnota Visual C++|Význam|  
 |------------------------|-------------|  
-|VC-Native|Použít u nativních projektů. Také výchozí Pokud nelze určit typ projektu.|  
+|Nativní VC|Použít u nativních projektů. Také výchozí Pokud nelze určit typ projektu.|  
 |Spravované VC|Použít pro spravované (/ clr) projekty|  
 |VC-Windows|Používá pro všechny projekty, které cílí na platformu windows (nativní a spravovaná/úložiště)|  
 |WinRT-Native-UAP|Používá pro projekty pro Windows 10 store|  
 |CodeSharing-Native|Používá pro projekty sdílené položky|  
-|WinRT-Native-6.3|Používá pro projekty pro Windows 8.1 Store|  
-|WinRT-Native-Phone-6.3|Používá pro projekty pro Windows Phone 8.1|  
+|WinRT. nativní 6.3|Používá pro projekty pro Windows 8.1 Store|  
+|WinRT nativní telefonní 6.3|Používá pro projekty pro Windows Phone 8.1|  
 |WinRT-Native|Používá pro projekty Windows Store 8.0|  
 |VC-Android|Použít pro projekty pro Android|  
   

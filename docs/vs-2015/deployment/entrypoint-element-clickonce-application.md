@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193498"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;vstupní bod&gt; – Element (aplikace ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Určuje sestavení, které by měla být spuštěna při to [!INCLUDE[ndptecclic
   
  `entryPoint` obsahuje následující prvky.  
   
-## <a name="assemblyidentity"></a>assemblyIdentity  
+## <a name="assemblyidentity"></a>Vlastnost assemblyIdentity  
  Povinný parametr. Role `assemblyIdentity` a jeho atributy jsou definovány v [ \<assemblyIdentity > Element](../deployment/assemblyidentity-element-clickonce-application.md).  
   
  `processorArchitecture` Atribut tohoto elementu a `processorArchitecture` atributu definovanému v `assemblyIdentity` jinde v aplikaci musí odpovídat manifestu.  

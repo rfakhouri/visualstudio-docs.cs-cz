@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 00d188188f722907c2bac20e84cb9291ef8bc0fe
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200429"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: Výjimky by měly být veřejné
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54833637"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Neveřejné výjimka je odvozena přímo z <xref:System.Exception>, <xref:System.SystemException>, nebo <xref:System.ApplicationException>.
 
 ## <a name="rule-description"></a>Popis pravidla

@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201841"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Postupy: Tvorba šablon položek s více soubory
+# <a name="how-to-create-multi-file-item-templates"></a>Postupy: Vytváření šablon položek s více soubory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Šablony položek může zadat jenom jednu položku, ale někdy položky skládá z více souborů. Například šablonu položky formulářů Windows v jazyce Visual Basic vyžaduje následující tři soubory:  
@@ -53,7 +53,7 @@ ms.locfileid: "60056899"
   
      Když je položka odvozená z této šablony se přidá do projektu, názvy souborů se podle název zadaný uživatelem **přidat novou položku** dialogové okno.  
   
-3. Vyberte soubory, které chcete zahrnout do vaší šablony, klikněte pravým tlačítkem na výběr, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)**. Do souboru .zip jsou komprimované soubory, které jste vybrali.  
+3. Vyberte soubory, které chcete zahrnout do vaší šablony, klikněte pravým tlačítkem na výběr, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)** . Do souboru .zip jsou komprimované soubory, které jste vybrali.  
   
 4. Uložte soubor .zip v umístění šablon položek uživatele. Ve výchozím adresáři je Documents\Visual Studio *verze*\Templates\ItemTemplates\\. Další informace najdete v tématu [jak: Hledání a organizace šablon](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   

@@ -13,11 +13,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d2b36bd226d4eb19a694347edcba51812ee6f771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190873"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ SCCRTN SccRunScc(
 ## <a name="return-value"></a>Návratová hodnota  
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |SCC_OK|Úspěšně byl vyvolán nástroj pro správu zdrojového ovládacího prvku.|  
 |SCC_I_OPERATIONCANCELED|Operace byla zrušena.|  

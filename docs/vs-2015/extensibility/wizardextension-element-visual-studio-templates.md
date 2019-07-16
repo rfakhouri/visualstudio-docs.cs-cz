@@ -14,11 +14,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 69e35d4bebf7a16a1429be674ba3533b4f082b05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201914"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension – element (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

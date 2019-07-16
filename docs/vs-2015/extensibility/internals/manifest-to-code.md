@@ -7,11 +7,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192651"
 ---
 # <a name="manifest-to-code"></a>Manifest do kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Manifest pro nástroj kódu je konzolová aplikace, která přijímá soubor .im
 ||||  
 |-|-|-|  
 |**Název přepínače**|**Poznámky**|**Požadované nebo volitelné**|  
-|/manifest|Cesta k manifestu image chcete použít k vytvoření nebo aktualizaci kódu obálky.|Požadováno|  
+|Volba/manifest|Cesta k manifestu image chcete použít k vytvoření nebo aktualizaci kódu obálky.|Požadováno|  
 |/Language|Jazyk, ve které se mají vygenerovat obálku kódu.<br /><br /> Platné hodnoty: CPP, C++, CS, CSharp, C#, VB nebo VSCT hodnoty jsou malá a velká písmena.<br /><br /> Pro jazyk VSCT možnost /monikerClass, /classAccess a/Namespace možnosti jsou ignorovány.|Požadováno|  
 |/imageIdClass|Název imageIdClass a přidružený soubor vytvořené nástrojem. Pro možnost jazyka C++ jsou generovány pouze soubory hlaviček.<br /><br /> Výchozí hodnota: \<Cesta k manifestu > \MyImageIds. \<Lang ext, přípona >|volitelná,|  
 |/monikerClass|Název monikerClass a přidružený soubor vytvořené nástrojem. Pro možnost jazyka C++ jsou generovány pouze soubory hlaviček. To se ignoruje pro VSCT jazyk.<br /><br /> Výchozí hodnota: \<Cesta k manifestu > \MyMonikers. \<Lang ext, přípona >|volitelná,|  
@@ -44,7 +44,7 @@ Manifest pro nástroj kódu je konzolová aplikace, která přijímá soubor .im
   
 - ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++/namespace: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
-- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Poznámky  
   

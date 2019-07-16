@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204082"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Postupy: Potlačit oznámení o změně souborů
+# <a name="how-to-suppress-file-change-notifications"></a>Postupy: Potlačení oznámení o změně souboru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Při změně fyzického souboru představující textovou vyrovnávací paměť, dialogové okno zobrazí se zpráva **chcete uložit změny následujících položek?** To se označuje jako oznámení o změně souboru. Pokud mnoho změn se bude do souboru, ale toto dialogové okno zobrazení tytéž může být nepříjemné.  

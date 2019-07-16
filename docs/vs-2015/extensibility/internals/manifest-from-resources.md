@@ -7,11 +7,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192625"
 ---
 # <a name="manifest-from-resources"></a>Manifest z prostředků
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Manifest z prostředků nástroje je konzolová aplikace, která přebírá sezn
 |**Název přepínače**|**Poznámky**|**Požadované nebo volitelné**|  
 |/Resources|Středníkem oddělený seznam imagí nebo adresáře. Tento seznam by měl vždy obsahovat seznam všech imagí, které budou v manifestu. -Li zadána je částečný seznam, jen položky nejsou zahrnuty budou ztraceny.<br /><br /> Pokud je soubor daný prostředek obrázku, nástroj bude ho rozdělte do samostatné obrázky před přidáním každý subimage do manifestu.<br /><br /> Pokud na obrázku je soubor ve formátu PNG, doporučujeme že formát názvu tímto způsobem tak, aby nástroj můžete přejít k vyplnění správné atributy obrázku: \<Název >. \<Šířka >. \<Výška > PNG.|Požadováno|  
 |/ Assembly|Název spravovaného sestavení (nikoli včetně přípony) nebo cesta k modulu runtime nativní sestavení, který je hostitelem zdroje (relativní k umístění manifestu modulu runtime).|Požadováno|  
-|/manifest|Název souboru generovaného .imagemanifest. To může zahrnovat absolutní nebo relativní cestu k vytvoření souboru v jiném umístění. Výchozí název odpovídá názvu sestavení.<br /><br /> Výchozí hodnota: \<Aktuální adresář >\\< sestavení\>.imagemanifest|volitelná,|  
+|Volba/manifest|Název souboru generovaného .imagemanifest. To může zahrnovat absolutní nebo relativní cestu k vytvoření souboru v jiném umístění. Výchozí název odpovídá názvu sestavení.<br /><br /> Výchozí hodnota: \<Aktuální adresář >\\< sestavení\>.imagemanifest|volitelná,|  
 |/guidName|Název symbolu identifikátor GUID pro všechny Image v generovaném manifestu.<br /><br /> Výchozí hodnota: AssetsGuid|volitelná,|  
 |/rootPath|Kořenová cesta, kterou je potřeba se odstraní před vytvořením spravovaného prostředku identifikátorů URI. (Tento příznak je pomoct s případy, kde nástroj získá relativní cestou URI chybný, způsobí prostředky na nepodaří zavést.)<br /><br /> Výchozí hodnota: \<Aktuální adresář >|volitelná,|  
 |/ Recursive|Nastavení tohoto příznaku instruuje nástroj rekurzivně prohledávat všechny adresáře v argumentu /resources. Tento příznak vynechání způsobí top-úrovně pouze pro vyhledávání adresářů.|volitelná,|  

@@ -11,13 +11,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8483068ae03c9a57fc67b528393e5d6830c3ec33
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180281"
 ---
-# <a name="legacy-interfaces-in-the-editor"></a>Starší verze rozhraní v editoru
+# <a name="legacy-interfaces-in-the-editor"></a>Zastaralá rozhraní v editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Editor sady Visual Studio můžete přistupovat ze starší verze rozhraní. Visual Studio SDK zahrnuje adaptérů, označované jako *překrytí*, která umožňují tato rozhraní pro interakci s nového editoru. Doporučujeme však, že aktualizujete starší kód Refaktorovat pro použití nového editoru rozhraní API. Váš kód budou líp fungovat a využívat nové technologie, jako je Windows Presentation Foundation (WPF) a Managed Extensibility Framework (MEF).  
@@ -31,9 +31,9 @@ Editor sady Visual Studio můžete přistupovat ze starší verze rozhraní. Vis
 |[Práce v základní editoru](../extensibility/inside-the-core-editor.md)|Popisuje různé součásti dřívějších verzích editoru.|  
 |[Vytvoření instance základního editoru pomocí zastaralého rozhraní API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)|Vysvětluje způsob používání starší verze rozhraní API k vytvoření instance základní editor.|  
 |[Objekty pro vytváření editoru](../extensibility/editor-factories.md)|Vysvětluje, jak používat objekty pro vytváření editoru pomocí starší verze rozhraní API.|  
-|[Postupy: Typy souborů Editor registru](../extensibility/how-to-register-editor-file-types.md)|Vysvětluje, jak propojit příponu názvu souboru do editoru.|  
-|[Návod: Vytvoření základní Editor a registrace typu souboru editoru](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|Vysvětluje, jak vytvořit základní editor a odkaz na něj příponu názvu souboru.|  
-|[Postupy: Poskytuje kontext pro editory](../extensibility/how-to-provide-context-for-editors.md)|Vysvětluje, jak poskytnout kontext pro editor.|  
+|[Postupy: Registrace typů souborů editoru](../extensibility/how-to-register-editor-file-types.md)|Vysvětluje, jak propojit příponu názvu souboru do editoru.|  
+|[Návod: Vytvoření základního editoru a registrace typu souboru editoru](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|Vysvětluje, jak vytvořit základní editor a odkaz na něj příponu názvu souboru.|  
+|[Postupy: Poskytnutí kontextu pro editory](../extensibility/how-to-provide-context-for-editors.md)|Vysvětluje, jak poskytnout kontext pro editor.|  
 |[Jazykové služby a základní editor](../extensibility/language-services-and-the-core-editor.md)|Vysvětluje interakce mezi služba jazyka a editoru.|  
 |[Přístup k vyrovnávací paměti textu pomocí zastaralého rozhraní API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)|Vysvětluje, jak získat přístup k vyrovnávací paměti textu pomocí starší verze rozhraní API.|  
 |[Přístup k textovému zobrazení pomocí zastaralého rozhraní API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)|Vysvětluje, jak získat přístup k zobrazení textu pomocí starší verze rozhraní API.|  
@@ -42,8 +42,8 @@ Editor sady Visual Studio můžete přistupovat ze starší verze rozhraní. Vis
 |[Použití textových značek pomocí zastaralého rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)|Vysvětluje, jak přidat text značky pomocí starší verze rozhraní API.|  
 |[Přizpůsobení ovládacích prvků a nabídek editoru pomocí zastaralého rozhraní API](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)|Vysvětluje, jak přizpůsobit ovládací prvky editoru pomocí starší verze rozhraní API.|  
 |[Správa příkazů Zpět a Znovu pomocí zastaralého rozhraní API](../extensibility/managing-undo-and-redo-by-using-the-legacy-api.md)|Vysvětluje, jak spravovat vrácení zpět a znovu pomocí starší verze rozhraní API.|  
-|[Postupy: Implementace najít a nahradit mechanismus](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|Vysvětluje, jak spravovat najít a nahradit pomocí starší verze rozhraní API.|  
-|[Postupy: Potlačit oznámení o změně souborů](../extensibility/how-to-suppress-file-change-notifications.md)|Vysvětluje, jak můžete potlačit oznámení o změně souborů pomocí starší verze rozhraní API.|  
+|[Postupy: Implementace mechanismu Najít a nahradit](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|Vysvětluje, jak spravovat najít a nahradit pomocí starší verze rozhraní API.|  
+|[Postupy: Potlačení oznámení o změně souboru](../extensibility/how-to-suppress-file-change-notifications.md)|Vysvětluje, jak můžete potlačit oznámení o změně souborů pomocí starší verze rozhraní API.|  
 |[Vytváření vlastních editorů a návrhářů](../extensibility/creating-custom-editors-and-designers.md)|Vysvětluje vytváření vlastních editorů a návrhářů.|  
 |[Vývoj služby starší verze jazyka](../extensibility/internals/developing-a-legacy-language-service.md)|Obsahuje odkazy na dokumenty o funkcích, které umožňují přizpůsobení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základním editoru tak, že přidáte podporu pro jazykové služby.|  
 |[Použití písem a barev](../extensibility/using-fonts-and-colors.md)|Vysvětluje, jak pomocí starší verze rozhraní písma a barvy.|

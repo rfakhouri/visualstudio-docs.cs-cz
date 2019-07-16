@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: ea70b7f9462e3195a78b915691a5069ebd6fe6aa
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154355"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: Zabezpečte serializační konstruktory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54834887"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Tento typ implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> rozhraní, není delegát nebo rozhraní a je deklarována v sestavení, které povoluje částečně důvěryhodné volající. Typ má konstruktor, který přijímá <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objektu a <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objektu (podpis serializace konstruktoru). Tento konstruktor není zabezpečen pomocí kontroly zabezpečení, ale jeden nebo více běžných konstruktorů typ je zabezpečen.
 
 ## <a name="rule-description"></a>Popis pravidla

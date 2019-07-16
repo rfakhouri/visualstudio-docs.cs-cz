@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205789"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Postupy: Nastavení možností názvu souboru dat výkonu
+# <a name="how-to-set-performance-data-file-name-options"></a>Postupy: Nastavení možností názvu souboru s údaji o výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ve výchozím nastavení uložte souboru dat profilování (.vsp) pomocí následující syntaxe:  
@@ -33,7 +33,7 @@ Ve výchozím nastavení uložte souboru dat profilování (.vsp) pomocí násle
 |-|-|  
 |*Cesta*|Adresář, který obsahuje sestavu. Výchozí umístění je složka řešení nebo výchozí umístění pro projekty a řešení pro daného uživatele.|  
 |*VSP-File*|Název souboru dat profilování. Výchozí název je název řešení nebo spustitelného souboru, která je profilována.|  
-|*YYMMDD*|Časové razítko, který ukazuje, rok, měsíc a den, shromážděná data profilace.|  
+|*RRMMDD*|Časové razítko, který ukazuje, rok, měsíc a den, shromážděná data profilace.|  
 |*(N)*|Pokud existuje více než jeden soubor dat profilování se zvyšující číslo přidá k názvu souboru mezi závorky.|  
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>Chcete-li změnit pojmenování syntaxe datových souborů profilace relace výkonu  

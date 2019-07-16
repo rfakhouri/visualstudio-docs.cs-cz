@@ -12,11 +12,11 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184162"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nová generace projektů: Pod kapotou, část 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -80,12 +80,12 @@ devenv /installvstemplates
   
  \<Visual Studio instalační_cesta > \VC#\VCSPackages\1033\csprojui.dll  
   
- Chcete-li to ověřit, otevřete Průzkumníka souborů a přetáhněte csprojui.dll do adresáře sady Visual Studio... Tabulka řetězců ukazuje, že má zdroj #2345 titulek **Visual C#**.  
+ Chcete-li to ověřit, otevřete Průzkumníka souborů a přetáhněte csprojui.dll do adresáře sady Visual Studio... Tabulka řetězců ukazuje, že má zdroj #2345 titulek **Visual C#** .  
   
 ##### <a name="sortpriority"></a>SortPriority  
  Určuje pozici kořenový uzel ve **typy projektů** stromu.  
   
- SortPriority REG_DWORD 0x00000014 (20)  
+ REG_DWORD SortPriority 0x00000014 (20)  
   
  Čím nižší je číslo prioritu, tím vyšší pozici ve stromu.  
   
@@ -215,4 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** se zobrazí jako podřízený uzel Visual C# jen v uzlu Windows.  
   
 ## <a name="see-also"></a>Viz také  
- [Nová generace projektů: Pod pokličkou část 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Nová generace projektů: Pod kapotou, část 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

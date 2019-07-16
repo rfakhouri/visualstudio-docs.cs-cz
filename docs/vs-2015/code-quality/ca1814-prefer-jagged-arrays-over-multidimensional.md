@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 73b20ef9a93e59f3fae30407deda8d21befc57f5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201702"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Upřednostněte vícenásobná pole před multidimenzionálními
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54794945"
 |Kategorie|Microsoft.Performance|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Člen je deklarovaný jako multidimenzionálního pole.
 
 ## <a name="rule-description"></a>Popis pravidla

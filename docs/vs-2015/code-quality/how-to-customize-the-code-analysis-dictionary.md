@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26a9d65ed21eed00820a7968617c610e4b11c153
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201360"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Postupy: Přizpůsobení slovníku analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Analýza kódu používá integrované slovník ke kontrole identifikátory v k�
   
 - [Slovník/slova/DiscreteExceptions/termín](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
   
-- [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
+- [Slovník/zkratky/CasingExceptions/zkratka](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
 ### <a name="BKMK_DictionaryWordsRecognizedWord"></a> Slovník/slova/rozpoznán nebo Word  
  Aby byly termín, který v seznamu podmínek, které identifikuje analýzy kódu jako správně zadány, přidejte výraz jako vnitřní text prvku/slova/Recognized/slovo. Podmínky v elementech/slova/Recognized/slovo nerozlišují malá a velká písmena.  

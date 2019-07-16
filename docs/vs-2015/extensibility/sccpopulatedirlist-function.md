@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6078f0fd90855c432b333fd5967367460d0a364e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200024"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="return-value"></a>Návratová hodnota  
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |SCC_OK|Operace se úspěšně dokončila.|  
 |SCC_E_UNKNOWNERROR|Došlo k chybě.|  

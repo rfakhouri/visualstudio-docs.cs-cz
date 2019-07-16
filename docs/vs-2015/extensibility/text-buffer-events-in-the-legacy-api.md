@@ -11,13 +11,13 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e82fa31ca435d0c850a4d9e75e927cff9613b046
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186408"
 ---
-# <a name="text-buffer-events-in-the-legacy-api"></a>Události vyrovnávací paměti textu v rozhraní API pro starší verze
+# <a name="text-buffer-events-in-the-legacy-api"></a>Události vyrovnávací paměti textu v zastaralém rozhraní API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Objekt vyrovnávací paměti textu vysílá několik různých událostí, které umožní reagovat na různé situace.  
@@ -53,4 +53,4 @@ Objekt vyrovnávací paměti textu vysílá několik různých událostí, kter�
   
 ## <a name="see-also"></a>Viz také  
  [Přístup k vyrovnávací paměti textu s použitím rozhraní API pro starší verze](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Postupy: Zaregistrujte se na textové vyrovnávací paměti události s rozhraním API starší verze](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+ [Postupy: Registrace událostí vyrovnávací paměti textu pomocí zastaralého rozhraní API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

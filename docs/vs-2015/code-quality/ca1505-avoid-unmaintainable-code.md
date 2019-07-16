@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: d9d5dc976c27ca2459fa64b95fe0502579a500b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191216"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Vyhněte se neudržovatelnému kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54765936"
 |Kategorie|Microsoft.Maintainability|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Typ nebo metoda má nízkou hodnotu indexu udržovatelnosti.
 
 ## <a name="rule-description"></a>Popis pravidla

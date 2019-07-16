@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26f50580c8d29e24b25a9dad520a81d22a3dfc0c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189075"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: Vyhněte se volání problematických metod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54778272"
 |Kategorie|Microsoft.Reliability|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Člen volá potencionálně nebezpečnou nebo problematickou metodu.
 
 ## <a name="rule-description"></a>Popis pravidla

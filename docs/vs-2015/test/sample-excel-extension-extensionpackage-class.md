@@ -9,13 +9,13 @@ caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 668913d231115e955cc50df10de045eab3d4ac92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189476"
 ---
-# <a name="sample-excel-extension-extensionpackage-class"></a>Ukázka rozšíření Excel: ExtensionPackage – třída
+# <a name="sample-excel-extension-extensionpackage-class"></a>Ukázka rozšíření Excel: Třída ExtensionPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tato třída rozšiřuje <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> třídy a představuje vstupní bod pro programový test UI, který je testování [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] listu.  

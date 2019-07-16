@@ -11,13 +11,13 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194181"
 ---
-# <a name="new-or-changed-behavior-with-editor-adapters"></a>Nové nebo změněné chování editoru adaptéry
+# <a name="new-or-changed-behavior-with-editor-adapters"></a>Nové nebo změněné chování adaptérů editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud provádíte aktualizaci kódu napsaného pro starší verze sady Visual Studio core editor a plánujete používat editor adaptéry (nebo překrytí) místo použití nového rozhraní API, byste měli vědět následující rozdíly v chování editoru adaptéry s ohledem na předchozí základní editor.  

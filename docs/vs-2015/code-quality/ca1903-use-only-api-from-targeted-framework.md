@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189084"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Používejte jen rozhraní API z cílové architektury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1903: Po
 |Kategorie|Microsoft.Portability|  
 |Narušující změna|Zásadní - při vyvolání s podpisem externě viditelného členu nebo typu.<br /><br /> Bez konce – při vyvolání v těle metody.|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Člen nebo typ používá člen nebo typ, který byl zaveden v aktualizaci service pack, která není součástí cílové rozhraní projektu.  
   
 ## <a name="rule-description"></a>Popis pravidla  

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: e21585a7a56fde2fb46ea86adde92eecfd1a4565
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201686"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Přepište rovnosti a operátory rovnosti u typů hodnot
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54785107"
 |Kategorie|Microsoft.Performance|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Veřejné hodnotový typ nemůže přepsat <xref:System.Object.Equals%2A?displayProperty=fullName>, nebo neimplementuje operátor rovnosti (==). Toto pravidlo nekontroluje výčty.
 
 ## <a name="rule-description"></a>Popis pravidla

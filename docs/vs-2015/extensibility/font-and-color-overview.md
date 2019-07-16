@@ -12,13 +12,13 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204345"
 ---
-# <a name="font-and-color-overview"></a>Písma a barvy – přehled
+# <a name="font-and-color-overview"></a>Přehled písem a barev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje nastavení písem a barev textu v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE). Se také seznámíte se základními pojmy kategorií a zobrazit položky, a popisuje jak použít rozšíření VSPackages a základní editor atributů textu.  

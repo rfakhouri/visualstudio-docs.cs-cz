@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7fc580a6dc1dd8a1b0c0ad8964ade6dd6145ada2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199271"
 ---
 # <a name="find-in-files-command"></a>Najít v souborech – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
  / Reset nebo /e  
  Volitelné. Vrátí možnosti hledání na jejich výchozí nastavení a nebude provádět vyhledávání.  
   
- /stop  
+ / stop  
  Volitelné. Zastaví aktuální operace vyhledávání, pokud je v průběhu. Hledání ignoruje všechny argumenty při `/stop` nebyl zadán. Například chcete-li ukončit aktuální hledání zadáte následující:  
   
 ```  
@@ -90,5 +90,5 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
  [Najít v souborech](../../ide/find-in-files.md)   
  [Okno příkazového řádku](../../ide/reference/command-window.md)   
  [Pole najít/příkaz](../../ide/find-command-box.md)   
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
+ [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e69c8123af3ac9061141058d5eb41178e5cd0e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189898"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ HRESULT Item ( 
  index  
  [in] Index o [idiasegment –](../../debugger/debug-interface-access/idiasegment.md) objekt, který se má načíst. Index je v rozsahu 0 až `count`-1, kde `count` je vrácený [idiaenumsegments::get_count –](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) metody.  
   
- segment  
+ Segment  
  [out] Vrátí [idiasegment –](../../debugger/debug-interface-access/idiasegment.md) objekt představující požadovaný segment.  
   
 ## <a name="return-value"></a>Návratová hodnota  

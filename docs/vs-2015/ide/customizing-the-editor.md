@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 54e2e44650179cafb4fd4cc9169ac27810bbdf91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183349"
 ---
 # <a name="customizing-the-editor"></a>Vlastní nastavení editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Formátování, karty, písma a barvy, technologie IntelliSense a mnoho dalšíc
  [Postupy: Změna velikosti písmen v editoru](../ide/how-to-change-text-case-in-the-editor.md)  
  Vysvětluje, jak změnit velikost písmen textu v kódu.  
   
- [Postupy: Správa Windows editoru](../ide/how-to-manage-editor-windows.md)  
+ [Postupy: Správa oken editoru](../ide/how-to-manage-editor-windows.md)  
  Ukazuje, jak pracovat s okna editoru.  
   
  [Postupy: Správa režimů editoru](../ide/how-to-manage-editor-modes.md)  

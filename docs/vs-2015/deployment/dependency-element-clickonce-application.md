@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199886"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;závislost&gt; – Element (aplikace ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +107,7 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 ### <a name="osversioninfo"></a>osVersionInfo  
  Povinný parametr. Tento element je podřízeným prvkem `dependentOS` elementu a obsahuje `os` elementu. Tento element nemá žádné atributy.  
   
-### <a name="os"></a>os  
+### <a name="os"></a>operační systém  
  Povinný parametr. Tento element je podřízeným prvkem `osVersionInfo` elementu. Tento element má následující atributy.  
   
 |Atribut|Popis|  
@@ -133,7 +133,7 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 |`codeBase`|Požadováno, pokud `dependencyType` atribut je nastaven na `install`. Cesta k závislého sestavení. Může být absolutní cesta nebo cesta relativní k kódu manifestu základní. Tato cesta musí být platný identifikátor URI platný v pořadí pro manifest sestavení.|  
 |`size`|Požadováno, pokud `dependencyType` atribut je nastaven na `install`. Velikost závislého sestavení, v bajtech.|  
   
-### <a name="assemblyidentity"></a>assemblyIdentity  
+### <a name="assemblyidentity"></a>Vlastnost assemblyIdentity  
  Povinný parametr. Tento element je podřízeným prvkem `dependentAssembly` prvek a má následující atributy.  
   
 |Atribut|Popis|  
@@ -221,4 +221,4 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – Manifest aplikace](../deployment/clickonce-application-manifest.md)   
- [\<závislost > – Element](../deployment/dependency-element-clickonce-deployment.md)
+ [Element \<dependency>](../deployment/dependency-element-clickonce-deployment.md)

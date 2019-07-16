@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35c332682b609f6620f96cc8eb8499cca921d399
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204269"
 ---
 # <a name="group-element"></a>Group – element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ Definuje skupinu příkazů VSPackage.
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|identifikátor GUID|Povinný parametr. Identifikátor GUID identifikátoru GUID a ID příkazu.|  
+|guid|Povinný parametr. Identifikátor GUID identifikátoru GUID a ID příkazu.|  
 |id|Povinný parametr. ID identifikátoru GUID a ID příkazu.|  
-|priorita|Volitelné. Číselná hodnota, která určuje prioritu.|  
+|priority|Volitelné. Číselná hodnota, která určuje prioritu.|  
 |Podmínka|Volitelné. Zobrazit [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Podřízené elementy  

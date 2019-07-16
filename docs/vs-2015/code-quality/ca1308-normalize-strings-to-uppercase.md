@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 8385839ce7029ef0676225fd443582ba750b618b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200394"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizujte řetězce na velká písmena
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54789696"
 |Kategorie|Microsoft.Globalization|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Operace normalizuje řetězec na malá písmena.
 
 ## <a name="rule-description"></a>Popis pravidla

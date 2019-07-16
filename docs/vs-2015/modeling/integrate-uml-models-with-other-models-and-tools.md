@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1a8b67e5c784e24b1af71089d33e7db60cb1f92c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190390"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrace modelů UML s jinými modely a nástroji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Modely UML je možné integrovat s jinými modely a jazyky specifickými pro dom
   
    Další informace najdete v části [definování obslužné rutiny gest v diagramu modelování](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) a [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-## <a name="samples"></a>Ukázky kódu  
+## <a name="samples"></a>Ukázky  
  Podrobnosti najdete v ukázce kódu [propojení elementů UML diagramů nebo jiných souborů](http://go.microsoft.com/fwlink/?LinkId=213813). Ukázka umožňuje uživatelům přetažením souboru na libovolný prvek UML a později otevřít dvojitým kliknutím element. Diagram aktivity může například odkaz na prvek případu použití. Zobrazuje ikona, u které prvky mají odkazy.  
   
  Tento vzorový kód ukazuje následujících postupů:  

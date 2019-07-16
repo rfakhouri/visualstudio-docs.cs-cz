@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 6603e0869a9eb7947735c52a4c438b39d64b9140
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157715"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Označte výčty pomocí FlagsAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54764049"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Veřejný výčet hodnoty mocniny dvou nebo kombinací jiné hodnoty, které jsou definovány ve výčtu, a <xref:System.FlagsAttribute?displayProperty=fullName> atribut není k dispozici. Pokud chcete snížit počet falešně pozitivních výsledků, toto pravidlo sestavu porušení pro výčty, které mají souvislých hodnot.
 
 ## <a name="rule-description"></a>Popis pravidla

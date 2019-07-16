@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d31213dc970fa7cb28c4d4620c6731692db83d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185245"
 ---
 # <a name="net-memory-data-views"></a>Zobrazení dat paměti .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Tato část obsahuje informace o zobrazeních a sestavách souborů dat profiler
  [Zobrazení funkcí – Instrumentace](../profiling/functions-view-dotnet-memory-instrumentation-data.md)  
  Uvádí data o přidělování paměti pro instrumentovanou funkcí během spuštění profilování.  
   
-## <a name="reference"></a>Odkaz  
+## <a name="reference"></a>Reference  
  [Zobrazení podrobností funkce](../profiling/function-details-view.md)  
  Zobrazuje graf vztahů mezi vybranou funkci a funkce, které volá a byly volány vybranou funkcí.  
   

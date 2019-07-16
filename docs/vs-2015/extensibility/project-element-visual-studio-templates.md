@@ -14,11 +14,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c9708bb8c35e66199aaf3665883307e48a63c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193965"
 ---
 # <a name="project-element-visual-studio-templates"></a>Element projektu (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Určuje soubory nebo adresáře přidat do projektu.
 |Prvek|Popis|  
 |-------------|-----------------|  
 |[Složka](../extensibility/folder-element-visual-studio-project-templates.md)|Volitelný element.<br /><br /> Určuje složku, kterou chcete přidat do projektu.|  
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Volitelný element.<br /><br /> Určuje soubor a přidejte do projektu.|  
+|[ProjectItem –](../extensibility/projectitem-element-visual-studio-project-templates.md)|Volitelný element.<br /><br /> Určuje soubor a přidejte do projektu.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Požadovaný element.|  
+|[TemplateContent –](../extensibility/templatecontent-element-visual-studio-templates.md)|Požadovaný element.|  
   
 ## <a name="remarks"></a>Poznámky  
  `Project` je volitelný podřízený prvek `TemplateContent`.  

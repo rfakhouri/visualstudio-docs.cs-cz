@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67184daeae3b2a50da266e2eb420d5a2ae9896db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198395"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Shromažďování dat paměti ze služeb rozhraní .NET Framework pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Tato část popisuje postupy a možnosti pro shromažďování paměť přiděle
   
 ## <a name="related-tasks"></a>Související úlohy  
   
-### <a name="profiling-services"></a>Profilace služeb  
+### <a name="profiling-services"></a>Profilování služeb  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
@@ -49,5 +49,5 @@ Tato část popisuje postupy a možnosti pro shromažďování paměť přiděle
 ### <a name="analyzing-net-memory-data-views-and-reports"></a>Analýza dat o paměti .NET zobrazeních a sestavách  
  [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)  
   
-## <a name="reference"></a>Odkaz  
+## <a name="reference"></a>Reference  
  [Referenční dokumentace nástrojů příkazového řádku pro profilaci](../profiling/command-line-profiling-tools-reference.md)

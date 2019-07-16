@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198879"
 ---
-# <a name="debugger-settings-and-preparation"></a>Nastavení ladicího programu a příprava
+# <a name="debugger-settings-and-preparation"></a>Nastavení a příprava ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tato část popisuje nastavení vlastnosti související s ladicího programu a příprava potřebných pro ladění programu s [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ladicího programu. Pokud vytváříte program v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pomocí šablony projektu, tato nastavení jsou nastaveny správně v konfiguraci ladění.  

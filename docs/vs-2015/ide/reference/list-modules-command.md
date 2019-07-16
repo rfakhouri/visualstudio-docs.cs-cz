@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7d24b081c20b5874d6daa57832136023ac678c0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199148"
 ---
 # <a name="list-modules-command"></a>Listovat moduly – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
  / Souborsymbolů:`yes|no`  
  Volitelné. Určuje, jestli se má zobrazit soubory symbolů z modulů. Výchozí hodnota je `no`.  
   
- /SymbolStatus:`yes|no`  
+ / SymbolStatus:`yes|no`  
  Volitelné. Určuje, jestli se má zobrazit symbol stavy modulů. Výchozí hodnota je `yes`.  
   
  / Časové razítko:`yes|no`  
@@ -73,6 +73,6 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
+ [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Okno příkazového řádku](../../ide/reference/command-window.md)   
  [Postupy: Použití okna Moduly](../../debugger/how-to-use-the-modules-window.md)

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a8d4726ba91be6df455d16907a0cf122cc1effa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192325"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Karta Proces, dialogové okno vlastnosti okna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Použití **procesu** kartu k identifikaci procesu vybrané okno. Zobrazíte [di
   
  Následující nastavení jsou k dispozici na **procesu** kartu:  
   
-|Položka|Popis|  
+|Entry|Popis|  
 |-----------|-----------------|  
 |**ID procesu**|ID procesu, který vlastní vlákno, které vytvoří toto okno. Zvolte tuto hodnotu a zobrazte vlastnosti tohoto procesu.|  
 |**ID vlákna**|ID podprocesu, který vytvoří toto okno. Zvolte tuto hodnotu a zobrazte vlastnosti tohoto vlákna.|

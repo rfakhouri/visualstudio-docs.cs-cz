@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d361e5231d72df81fae164818bbe8341442c9f89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199171"
 ---
 # <a name="list-disassembly-command"></a>Zobrazit zpětný překlad – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
  /symbolnames:`yes` &#124; `no` [nebo] /names:`yes` &#124; `no` [nebo] / n:`yes`&#124;`no`  
  Volitelné. Označuje, zda chcete-li zobrazit názvy symbolů. Výchozí hodnota je `yes`.  
   
- [/linenumbers:`yes`&#124;`no`]  
+ [/ linenumbers:`yes`&#124;`no`]  
  Volitelné. Umožňuje zobrazení čísla řádků související se zdrojovým kódem. Přepínač/Source musí mít hodnotu `yes` /linenumbers přepínač.  
   
 ## <a name="example"></a>Příklad  
@@ -64,7 +64,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ## <a name="see-also"></a>Viz také  
  [Příkaz listovat zásobník volání](../../ide/reference/list-call-stack-command.md)   
  [Listovat vlákna – příkaz](../../ide/reference/list-threads-command.md)   
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
+ [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Okno příkazového řádku](../../ide/reference/command-window.md)   
  [Pole najít/příkaz](../../ide/find-command-box.md)   
  [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 05c32bfc6c3220739c433ef519b696953bc8b1b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190319"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Postupy: Používání Návrháře schémat XML s literály XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Toto téma popisuje postup zobrazení schématu přidružené k literálu v proj
   
 ### <a name="to-create-a-new-visual-basic-console-application-project"></a>Chcete-li vytvořit nový projekt konzolové aplikace v jazyce Visual Basic  
   
-1. Start Visual Studio 2010.  
+1. Spusťte sadu Visual Studio 2010.  
   
 2. Z **souboru** nabídce vyberte možnost **nový**a pak vyberte **projektu**. Zobrazí se dialogové okno **Nový projekt**. Pro **typy projektů**vyberte **jiné jazyky,** a pak vyberte **jazyka Visual Basic**. Pro **šablony**, vyberte konzolové aplikace. Zadejte `XMLLiterals` v **název** pole a umístění projektu v **umístění** pole. Klikněte na **OK**.  
   

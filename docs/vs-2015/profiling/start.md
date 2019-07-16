@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192817"
 ---
 # <a name="start"></a>Spustit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **CrossSession**&#124;**CS**  
  Umožňuje procesy profilace. Názvy možností **CrossSession** a **CS** jsou podporovány.  
   
- **Uživatel:**[`domain\`]`username`  
+ **Uživatel:** [`domain\`]`username`  
  Umožňuje přístup klienta k monitoru ze zadaného účtu.  
   
  **WinCounter:** `Path` [**Automark**:`n`]  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **Status**  
  **Stav** se vztahuje na tyto procesy, které jsou profilovány. Vypíše procesy a vlákna a jejich aktuální stavy profilu (zapnuto/vypnuto). Například, pokud proces zastavená **stav** nebude to znamenat v sestavě. **Stav** se zobrazí, že je buď profilována procesu nebo ne.  
   
- **Shutdown**[**:**`Timeout`]  
+ **Vypnutí**[ **:** `Timeout`]  
  Vypne profilování.  
   
 ## <a name="example"></a>Příklad  

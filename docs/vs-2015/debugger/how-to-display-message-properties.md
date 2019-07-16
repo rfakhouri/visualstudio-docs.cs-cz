@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b440d2883a06b41b751b6ae84e41b118e864cfec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205365"
 ---
-# <a name="how-to-display-message-properties"></a>Postupy: Zobrazení vlastností zpráv
+# <a name="how-to-display-message-properties"></a>Postupy: Zobrazení vlastností zprávy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Další informace o zprávě uvedené v [zobrazení zpráv](../debugger/messages-view.md), použijte [dialogové okno vlastností zpráv](../debugger/message-properties-dialog-box.md).  

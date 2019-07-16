@@ -14,11 +14,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 209f015103a291940f2d43ccdbfd140d71c9e8ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184616"
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54756934"
 Určuje, jestli se projekt sestavil ihned po jeho vytvoření.  
   
  \<Vstemplate – >  
- \<TemplateData>  
+ \<TemplateData >  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Syntaxe  

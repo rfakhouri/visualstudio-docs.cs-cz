@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186370"
 ---
 # <a name="usedcommand-element"></a>UsedCommand – element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Umožňuje pro přístup k příkazu, který je definován v jiném souboru .vsc
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|identifikátor GUID|Povinný parametr. Identifikátor GUID, které odpovídá páru ID identifikátoru GUID identifikující příkazu.|  
+|guid|Povinný parametr. Identifikátor GUID, které odpovídá páru ID identifikátoru GUID identifikující příkazu.|  
 |id|Povinný parametr. ID, které odpovídá páru ID identifikátoru GUID identifikující příkazu.|  
 |Podmínka|Volitelné. Zobrazit [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
@@ -44,7 +44,7 @@ Umožňuje pro přístup k příkazu, který je definován v jiném souboru .vsc
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|Žádná||  
+|Žádný||  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
