@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191564"
 ---
 # <a name="midl-task"></a>MIDL – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Volitelné **řetězec** parametru.  
   
-     Seznam možností příkazového řádku. Například **"**_/option1 /option2 /option#_". Tento parametr použijte k určení možnosti příkazového řádku, které nejsou reprezentovány všechny ostatní parametry MIDL – úloha.  
+     Seznam možností příkazového řádku. Například **"** _/option1 /option2 /option#_ ". Tento parametr použijte k určení možnosti příkazového řádku, které nejsou reprezentovány všechny ostatní parametry MIDL – úloha.  
   
      Další informace najdete v tématu "Reference k příkazovému řádku MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
@@ -117,7 +117,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
     |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
     |**Žádné**|**/ Error none**|  
-    |**EnableCustom**|**/error**|  
+    |**EnableCustom**|**/ Error**|  
     |**Vše**|**/ Error všechny**|  
   
      Další informace najdete v tématu **/Error** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
@@ -144,7 +144,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Pokud `true`, zkontroluje, zda jsou hodnoty výčtu v povoleném rozmezí.  
   
-     Další informace najdete v tématu **/Error enum** možnost Nápověda příkazového řádku (**/?**) pro midl.exe.  
+     Další informace najdete v tématu **/Error enum** možnost Nápověda příkazového řádku ( **/?** ) pro midl.exe.  
   
 - **ErrorCheckRefPointers**  
   
@@ -302,9 +302,9 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    |Value|Možnost příkazového řádku|  
+    |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<žádné >*|  
+    |**Nenastaveno**|*\<žádné >*|  
     |**1**|**/Zp1**|  
     |**2**|**/Zp2**|  
     |**4**|**/Zp4**|  
@@ -338,7 +338,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
     |Value|Možnost příkazového řádku|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<žádné >*|  
+    |**Nenastaveno**|*\<žádné >*|  
     |**Win32**|**/ env win32**|  
     |**Itanium**|**/ env ia64**|  
     |**X64**|**/env x64**|  

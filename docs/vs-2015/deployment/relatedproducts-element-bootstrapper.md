@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 70afe724be5b782bc90e162fd65f83ad1b0d0d23
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202535"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; – Element (zaváděcí nástroj)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,4 +86,4 @@ ms.locfileid: "54791855"
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [\<Produkt > – Element](../deployment/product-element-bootstrapper.md)
+ [Element \<Product>](../deployment/product-element-bootstrapper.md)

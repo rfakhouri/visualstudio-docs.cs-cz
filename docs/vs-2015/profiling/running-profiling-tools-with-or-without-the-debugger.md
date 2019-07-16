@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191698"
 ---
-# <a name="running-profiling-tools-with-or-without-the-debugger"></a>Spuštění nástroje pro profilaci s nebo bez ladicího programu
+# <a name="running-profiling-tools-with-or-without-the-debugger"></a>Spouštění nástrojů pro profilaci s ladicím programem nebo bez něj
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (například **využití procesoru** a **využití paměti**) můžete spustit s nebo bez ladicího programu. Výkon bez ladicího programu nástroje jsou určeny ke spuštění na verzi konfigurace, zatímco integrované v ladicím programu nástroje jsou určeny ke spuštění na konfiguraci ladění.  
@@ -106,7 +106,7 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
 |![3. krok](../profiling/media/procguid-3.png "ProcGuid_3")|Nástroj zobrazí jeden nebo více hlavní grafy. Pokud diagnostické relace je vytvořena pomocí různých nástrojů, jsou zobrazeny všechny hlavní grafy.|  
 |![4. krok](../profiling/media/procguid-4.png "ProcGuid_4")|Můžete rozbalovat a sbalovat jednotlivé grafy.|  
 |![Krok 5](../profiling/media/procguid-6.png "ProcGuid_6")|Pokud data obsahují informace z různých nástrojů, podrobnosti o nástroj je shromažďovat v rámci karty.|  
-|![Step 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Nástroj může mít jeden nebo více zobrazení podrobností. Zobrazení se filtruje podle vybrané oblasti na časové ose.|  
+|![Krok 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Nástroj může mít jeden nebo více zobrazení podrobností. Zobrazení se filtruje podle vybrané oblasti na časové ose.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Nastavení cílové analýzy na jiném zařízení  
  Kromě spuštění vaší aplikace z projektu sady Visual Studio, můžete také spustit diagnostické relace na alternativní cíle. Můžete například chtít diagnostikovat problémy s výkonem na verzi aplikace, která byla nainstalovaná z App Store Windows.  

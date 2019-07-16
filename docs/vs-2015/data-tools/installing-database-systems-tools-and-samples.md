@@ -18,13 +18,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196068"
 ---
-# <a name="installing-database-systems-tools-and-samples"></a>Instalace systémů databází, nástroje a ukázky
+# <a name="installing-database-systems-tools-and-samples"></a>Instalace databázových systémů, nástrojů a ukázek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Samotné sady Visual Studio nezahrnuje žádné databáze systémů než ty, které se používá interně. K vývoji aplikace připojená data v sadě Visual Studio, obvykle instalace databáze systému na svém místním vývojovém počítači a pak nasadit aplikace a databáze do produkčního prostředí Jakmile jsou připravené. Pro systém databáze byla přístupná z aplikací .NET a mají být zobrazeny v okna nástroje sady Visual Studio data musí mít poskytovatele dat ADO.NET. Zprostředkovatel musí specificky podporují Entity Framework, pokud budete chtít použít datových modelech Entity v aplikaci .NET.     Pomocí Správce balíčků NuGet nebo prostřednictvím Galerie sady Visual Studio nabízí mnoho poskytovatelů.  

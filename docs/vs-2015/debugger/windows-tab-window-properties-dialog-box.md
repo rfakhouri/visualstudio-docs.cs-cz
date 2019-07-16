@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c474a85499b221a3ee1d5dfd6befb872f6710f63
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159683"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Karta Okna, dialogové okno vlastnosti okna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Použití **Windows** kartu zobrazíte informace o windows související s vybra
   
  Následující nastavení jsou k dispozici na **Windows** kartu:  
   
-|Položka|Popis|  
+|Entry|Popis|  
 |-----------|-----------------|  
 |**Další okna**|Popisovač okna na stejné úrovni dalšího ve stejném pořadí (pořadí vykreslování) zobrazí ve stromovém zobrazení okna ("none" Pokud neexistuje žádné další okno). Zvolte tuto položku, chcete-li zobrazit vlastnosti dalšího okna.|  
 |**Předchozí okno**|Popisovač předchozího okna na stejné úrovni ve stejném pořadí (pořadí vykreslování) zobrazí ve stromovém zobrazení okna ("none" Pokud neexistuje žádný předchozí okno). Zvolte tuto položku, chcete-li zobrazit vlastnosti předchozího okna.|  

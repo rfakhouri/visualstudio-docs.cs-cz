@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 834651f525ccb292f82d5cf0ab5a7068a1cf7f20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197860"
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>Postupy: Vytvoření základního 3D modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,5 +78,5 @@ Tento dokument popisuje způsob použití Editoru modelů pro vytvoření zákla
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Model 3D terénu](../designers/how-to-model-3-d-terrain.md)   
- [Model Editor](../designers/model-editor.md)   
+ [Editor modelů](../designers/model-editor.md)   
  [Návrhář shaderů](../designers/shader-designer.md)

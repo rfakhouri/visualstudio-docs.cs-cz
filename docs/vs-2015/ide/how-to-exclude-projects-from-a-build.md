@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6a0b46a4aaa780357faa38a9ee4b01d04b1a0ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178865"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Postupy: Vyloučení projektů ze sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Vytvoření řešení bez nutnosti všechny projekty, které obsahuje. Napříkl
   
 1. V panelu nabídky zvolte **sestavení**, **nástroje Configuration Manager**.  
   
-2. V **konfigurace aktivního řešení** klikněte na položku  **\<nový >**.  
+2. V **konfigurace aktivního řešení** klikněte na položku  **\<nový >** .  
   
 3. V **název** pole, zadejte název konfigurace řešení.  
   

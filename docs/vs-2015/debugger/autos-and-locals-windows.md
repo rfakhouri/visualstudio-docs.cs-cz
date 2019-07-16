@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161765"
 ---
-# <a name="autos-and-locals-windows"></a>Automatické hodnoty a místní hodnoty Windows
+# <a name="autos-and-locals-windows"></a>Okna automatických a místních hodnot
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Automatické hodnoty** okno (při ladění, **CTRL + ALT + V, A**, nebo **ladění / Windows / auta**) a **lokální** okno (při ladění,  **CTRL + ALT + V, L**, nebo **ladění / Windows / lokální**) jsou velmi užitečné, pokud chcete zobrazit hodnoty proměnných během ladění. **Lokální** okně se zobrazí proměnné, které jsou definovány v místním rozsahem, což je obvykle funkce nebo metoda, která se právě zpracovává. **Automatické hodnoty** okně se zobrazí proměnné používané kolem aktuálního řádku (místo, kde je zastavený ladicím programu). Přesně zobrazí které proměnné se liší v různých jazycích. Zobrazit proměnné, které se zobrazí v okně Automatické hodnoty? níže.  
@@ -114,7 +114,7 @@ private static int subtractVars(int i, int j)
   
  Nastavit zarážku na int `x = sumVars(a, b) + subtractVars(c, d);` řádku.  
   
- Spustit ladění a při provádění přeruší v k první zarážce, stiskněte klávesu **F10 (Krokovat s přeskočením)**. Měli byste vidět v následující **automatické hodnoty** okno:  
+ Spustit ladění a při provádění přeruší v k první zarážce, stiskněte klávesu **F10 (Krokovat s přeskočením)** . Měli byste vidět v následující **automatické hodnoty** okno:  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   

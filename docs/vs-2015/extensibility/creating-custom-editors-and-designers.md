@@ -12,11 +12,11 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197408"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Vytváření vlastních editorů a návrhářů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio může hostovat
  [Návod: Vytvoření vlastního editoru](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Vysvětluje, jak vytvořit vlastní editor.  
   
- [Návod: Přidávání funkcí do vlastního editoru](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [Návod: Přidání funkcí do vlastního editoru](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Vysvětluje, jak přidat funkce do vlastní editor.  
   
  [Inicializace návrháře a konfigurace metadat](../extensibility/designer-initialization-and-metadata-configuration.md)  

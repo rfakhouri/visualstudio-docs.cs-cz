@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9746b156d2ec959f2ffb5bbff41b3891516d130f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193614"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>Co&#39;nového v MSBuild 12.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60074109"
 Nástroj MSBuild je nyní nainstalován jako součást sady Visual Studio, nikoli jako součást rozhraní .NET Framework. Aktuální číslo verze nástroje MSBuild je 12.0. Pokud chcete nainstalovat nástroj MSBuild samostatně, stáhněte si instalační balíček z [MSBuild Stáhnout](http://go.microsoft.com/fwlink/?LinkId=309745).  
   
 ## <a name="changed-path"></a>Změněné cesta  
- Nástroj MSBuild je nyní nainstalován přímo pod *% ProgramFiles %*– například v C:\Program Files\MSBuild\\.  
+ Nástroj MSBuild je nyní nainstalován přímo pod *% ProgramFiles %* – například v C:\Program Files\MSBuild\\.  
   
 ## <a name="changed-properties"></a>Změněné vlastnosti  
  V důsledku nové číslo verze se mění následující vlastnosti nástroje MSBuild:  

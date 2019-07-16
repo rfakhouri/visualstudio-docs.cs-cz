@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cc543a07176f307641c53a2ef3e132881821ce7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162160"
 ---
 # <a name="define-element"></a>Define – element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Definuje symbol dvojice název a hodnotu. Tento symbol lze vyhodnotit podmíněn
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|name|Povinný parametr. Název symbolu:<br /><br /> name="Mode"|  
+|name|Povinný parametr. Název symbolu:<br /><br /> název = "Režim"|  
 |value|Povinný parametr. Hodnota symbolu:<br /><br /> value="Standard"|  
 |Podmínka|Volitelné. Další informace najdete v tématu [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   

@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 932dbc9e3971598748e462de92280ac7112f8c62
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199196"
 ---
 # <a name="list-call-stack-command"></a>Listovat zásobník volání – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,10 +58,10 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
  / Showmodulezobrazitmoduly:`yes` &#124; `no` [nebo] / m:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se mají zobrazovat název modulu. Výchozí hodnota je `yes`.  
   
- /ShowLineOffset:`yes`&#124;`no` [or] /#:`yes`&#124;`no`  
+ / Showlineoffsetzobrazitodsazenířádku:`yes` &#124; `no` [nebo] které:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se mají zobrazovat posun řádku. Výchozí hodnota je `no`.  
   
- /ShowByteOffset:`yes`&#124;`no` [or] /B:`yes`&#124;`no`  
+ / Showbyteoffsetzobrazitodsazeníbajtu:`yes` &#124; `no` [nebo] / b:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se má zobrazit bajtovým posunem. Výchozí hodnota je `no`.  
   
  / Showlanguagezobrazitjazyk:`yes` &#124; `no` [nebo] l:`yes`&#124;`no`  
@@ -102,7 +102,7 @@ kb 2
 ## <a name="see-also"></a>Viz také  
  [Příkaz Zobrazit zpětný překlad](../../ide/reference/list-disassembly-command.md)   
  [Listovat vlákna – příkaz](../../ide/reference/list-threads-command.md)   
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
+ [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Okno příkazového řádku](../../ide/reference/command-window.md)   
  [Pole najít/příkaz](../../ide/find-command-box.md)   
  [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
