@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6798f3a1dfd8979db926960a6155c5b07e255f21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784638"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68149974"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,15 +60,15 @@ HRESULT findChildrenExByVA ( 
  Lokální symboly, které jsou vráceny zahrnovat informace o rozsahu za provozu.  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   
  DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Viz také  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
+ [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
  [Symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
+ [Idiaenumsymbols –](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [Idiasession::findchildren –](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [NameSearchOptions – výčet](../../debugger/debug-interface-access/namesearchoptions.md)
