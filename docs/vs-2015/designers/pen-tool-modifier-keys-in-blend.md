@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fc4f5e798e5ae675a04e7df701d08210a83062d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185073"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Modifikační klávesy nástroje pero v Blendu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,8 +23,8 @@ V následující tabulce jsou uvedeny klávesových zkratek, které můžete pou
   
 |Pro tuto akci|Postup|Ukazatel|  
 |-----------------------|-------------|-------------|  
-|Vytvořit bod spuštění segment rovné čáry|Klikněte na tlačítko Vytvořit nový bod|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Ukazatel pera|  
-|Vytvořit bod spuštění segment křivku|Kliknout pro vytvoření nového bodu a pak přetáhněte upravit tečný popisovače před uvolněním tlačítka myši|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Ukazatel pera|  
+|Vytvořit bod spuštění segment rovné čáry|Klikněte na tlačítko Vytvořit nový bod|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4AD4-aed8-40e09f8b7ab8")<br /><br /> Ukazatel pera|  
+|Vytvořit bod spuštění segment křivku|Kliknout pro vytvoření nového bodu a pak přetáhněte upravit tečný popisovače před uvolněním tlačítka myši|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4AD4-aed8-40e09f8b7ab8")<br /><br /> Ukazatel pera|  
 |Upravit poslední tečnu bez smooth omezení, které umožňují ostrý roh|Klikněte na tlačítko Vytvořit nový bod a potom stiskněte klávesu ALT před uvolněním tlačítka myši|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Psaní perem ukazatel|  
 |Rozdělit poslední tangens tak, aby tečný koncový bod pracovat nezávisle na sobě, díky tomu můžete dělat ostrý roh|Klikněte na tlačítko pro vytvoření nového bodu a pak podržte klávesu ALT a před uvolněním tlačítka myši přetáhnout|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Psaní perem ukazatel|  
 |Přesunutí tangenty koncový bod, okolo nový bod v 15 stupňů|Klikněte na tlačítko Vytvořit nový bod a pak podržte klávesu SHIFT + ALT a před uvolněním tlačítka myši přetáhnout|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Psaní perem ukazatel|  

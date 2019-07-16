@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7086d5bab5be2df4cc1249cc629468883c9247a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156086"
 ---
 # <a name="clickonce-reference"></a>Referenční dokumentace technologie ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Na následujících stránkách popisují strukturu souborů XML používá k re
  [Referenční dokumentace nespravovaného rozhraní API ClickOnce](../deployment/clickonce-unmanaged-api-reference.md)  
  Seznamy nespravované veřejného rozhraní API z dfshim.dll.  
   
-## <a name="reference"></a>Odkaz  
+## <a name="reference"></a>Reference  
   
 ## <a name="related-sections"></a>Související oddíly  
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSourceFile::get_checksumType | Microsoft Docs
+title: Idiasourcefile::get_checksumtype – | Dokumentace Microsoftu
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f859bce63e2976b23ab613e249dad41b2bc63486
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190700"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ HRESULT get_checksumType ( 
 ## <a name="remarks"></a>Poznámky  
  Typ kontrolního součtu je hodnota, která je možné mapovat na algoritmus kontrolního součtu. Například standardní formát souborů PDB může obvykle mít jednu z následujících hodnot:  
   
-|Typ kontrolního součtu|CryptoAPI Label|Popis|  
+|Typ kontrolního součtu|Popisek rozhraní CryptoAPI|Popis|  
 |-------------------|---------------------|-----------------|  
 |0|\<žádné >|Žádné kontrolní součet k dispozici.|  
 |1|`CALG_MD5`|kontrolní součet generuje s použitím algoritmu hash MD5.|  

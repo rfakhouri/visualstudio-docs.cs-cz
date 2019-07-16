@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2086473bc484fed4e8e351f0c3838074557586c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194074"
 ---
 # <a name="parent-element"></a>Nadřazený element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Nadřazené tlačítko nebo pole se seznamem pole může být pouze skupinu. Nad
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|identifikátor GUID|Povinný parametr. Identifikátor GUID identifikátoru GUID a ID příkazu.|  
+|guid|Povinný parametr. Identifikátor GUID identifikátoru GUID a ID příkazu.|  
 |id|Povinný parametr. Identifikátor ID identifikátoru GUID a ID příkazu.|  
   
 ### <a name="child-elements"></a>Podřízené elementy  
- Žádná  
+ Žádné  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   

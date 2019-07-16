@@ -13,11 +13,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201437"
 ---
 # <a name="demo-sample"></a>Demonstrační ukázka
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,13 +56,13 @@ Tato následující postupy ukazují, jak vytvořit vzorku pro [názorný postup
   
 3. V **Obecné** seznamu, vyberte text ve sloupci vedle **cílová přípona**a pak zadejte **lib**.  
   
-4. V **výchozí nastavení projektu**, klikněte ve sloupci vedle **typ konfigurace**a potom klikněte na tlačítko **statické knihovny Lib (.lib)**.  
+4. V **výchozí nastavení projektu**, klikněte ve sloupci vedle **typ konfigurace**a potom klikněte na tlačítko **statické knihovny Lib (.lib)** .  
   
 ### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Přidat záhlaví a zdrojový soubor do projektu CodeDefects  
   
 1. V Průzkumníku řešení rozbalte **CodeDefects**, klikněte pravým tlačítkem na **hlavičkové soubory**, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nová položka**.  
   
-2. V **přidat novou položku** dialogové okno, klikněte na tlačítko **kód**a potom klikněte na tlačítko **soubor hlaviček (.h)**.  
+2. V **přidat novou položku** dialogové okno, klikněte na tlačítko **kód**a potom klikněte na tlačítko **soubor hlaviček (.h)** .  
   
 3. V **název** zadejte **Bug.cpp** a potom klikněte na tlačítko **přidat**.  
   
@@ -170,13 +170,13 @@ Tato následující postupy ukazují, jak vytvořit vzorku pro [názorný postup
   
 6. V **Obecné** seznamu, vyberte text ve sloupci vedle **cílová přípona**a pak zadejte **lib**.  
   
-7. V **výchozí nastavení projektu**, klikněte ve sloupci vedle **typ konfigurace**a potom klikněte na tlačítko **statické knihovny Lib (.lib)**.  
+7. V **výchozí nastavení projektu**, klikněte ve sloupci vedle **typ konfigurace**a potom klikněte na tlačítko **statické knihovny Lib (.lib)** .  
   
 ### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Přidat hlavičku souboru a zdrojový soubor do projektu poznámky  
   
 1. V Průzkumníku řešení rozbalte **poznámky**, klikněte pravým tlačítkem na **hlavičkové soubory**, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nová položka**.  
   
-2. V **přidat novou položku** dialogové okno, klikněte na tlačítko **soubor hlaviček (.h)**.  
+2. V **přidat novou položku** dialogové okno, klikněte na tlačítko **soubor hlaviček (.h)** .  
   
 3. V **název** zadejte **annotations.h** a potom klikněte na tlačítko **přidat**.  
   

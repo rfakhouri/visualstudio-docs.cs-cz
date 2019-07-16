@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156857"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Přechod na relaci ladění ve Visual Studiu (Xaml a C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual St
 
   Najeďte myší proměnnou `a`. Poznámka: Zadejte název, hodnotu a data. Najeďte myší proměnnou `methodTrack`. Zadejte název, hodnotu a data znovu, mějte na paměti.
 
-  **Zkontrolujte hodnoty proměnné v okně místních hodnot.** Na **ladění** nabídky, přejděte k **Windows**a klikněte na tlačítko **lokální**. (Klávesnice: Alt+4).
+  **Zkontrolujte hodnoty proměnné v okně místních hodnot.** Na **ladění** nabídky, přejděte k **Windows**a klikněte na tlačítko **lokální**. (Klávesnice: ALT+ 4).
 
   ![Okno místních hodnot](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")
 

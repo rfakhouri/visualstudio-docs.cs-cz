@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26482e844a4850efb1c50b15e51e4153baf1f9ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186266"
 ---
 # <a name="how-to-update-existing-templates"></a>Postupy: Aktualizace existujících šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Po vytvoření šablony a soubory zkomprimujte do souboru .zip, můžete upravit
   
 4. Otevřít, upravit a uložit XML souboru .vstemplate pro zpracování aktualizované chování nebo nové soubory. Další informace o schématu .vstemplate naleznete v tématu [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md). Další informace o můžete parametrizovat ve zdrojových souborech najdete v tématu [parametry šablony](../ide/template-parameters.md)  
   
-5. Vyberte soubory do šablony, klikněte pravým tlačítkem, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)**. Do souboru .zip jsou komprimované soubory, které jste vybrali.  
+5. Vyberte soubory do šablony, klikněte pravým tlačítkem, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)** . Do souboru .zip jsou komprimované soubory, které jste vybrali.  
   
 6. Vložte nový soubor ZIP ve stejném adresáři jako starý soubor .zip.  
   

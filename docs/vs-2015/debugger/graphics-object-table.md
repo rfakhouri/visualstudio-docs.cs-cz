@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86279ff4e1721007814163787bd9ed06edc9fb13
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161177"
 ---
 # <a name="graphics-object-table"></a>Tabulka grafických objektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Tabulka grafických objektů v grafické analýzy Visual Studia vám pomůže po
   
  Můžete také přepínat **zobrazit posuny** zaškrtávací políčko Skrýt nebo Zobrazit posun každý prvek ve vyrovnávací paměti.  
   
-|Typ|Popis|  
+|type|Popis|  
 |----------|-----------------|  
 |**float**|Hodnota s plovoucí desetinnou čárkou 32-bit.|  
 |**float2**|Vektor, který obsahuje dva 32bitové hodnoty s plovoucí desetinnou čárkou.|  

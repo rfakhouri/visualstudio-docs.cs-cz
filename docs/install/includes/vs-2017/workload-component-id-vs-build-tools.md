@@ -10,11 +10,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 703d1595373f29926984c5380ba3167083a4318c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968420"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68176879"
 ---
 ## <a name="azure-development-build-tools"></a>Nástroje sestavení pro vývoj pro Azure
 

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 7973646aab545484287f5628eb0fa3cf3629db84
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189209"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Identifikátory by neměly obsahovat podtržítka
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [CA1707: Id
 |Kategorie|Microsoft.Naming|  
 |Narušující změna|Zásadní – při aktivaci pro sestavení<br /><br /> Bez konce – při aktivaci pro parametry typu|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Název identifikátoru obsahuje znak podtržítka (_).  
   
 ## <a name="rule-description"></a>Popis pravidla  

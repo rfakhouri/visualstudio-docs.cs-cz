@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f98a3211bebf832009b84fac0fc1305a4162c610
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154825"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Vlastnosti operací v diagramech tříd UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ V diagramu tříd UML lze přidat *operace* u tříd a rozhraní. Operace je met
 |      Vlastnost       |   Výchozí    |                                                                                                                                                                                 Popis                                                                                                                                                                                 |
 |---------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      **Název**       | (nové jméno) |                                                                                                                                                                Musí být jedinečné v rámci nadřazeného typu.                                                                                                                                                                 |
-|   **Parametry**    |    (žádné)    |      Seznam, který má tvar <em>název</em>**:**<em>typ</em>**,** <em>název</em>**:**  <em>Typ</em>**,...** Klikněte na tlačítko **[...]**  můžete upravit seznam.<br /><br /> Typy mohou být primitivní typy nebo typy, které jsou definovány v modelu. Pokud zadáte název pro nový typ této vlastnosti, typ se přidají do **nespecifikované typy** části Průzkumníku modelů UML.      |
+|   **Parametry**    |    (žádné)    |      Seznam, který má tvar <em>název</em> **:** <em>typ</em> **,** <em>název</em> **:**  <em>Typ</em> **,...** Klikněte na tlačítko **[...]**  můžete upravit seznam.<br /><br /> Typy mohou být primitivní typy nebo typy, které jsou definovány v modelu. Pokud zadáte název pro nový typ této vlastnosti, typ se přidají do **nespecifikované typy** části Průzkumníku modelů UML.      |
 |   **Návratový typ**   |    (žádné)    |                                                                               **(žádné)** , nebo primitivní typ nebo typ, který je definován v modelu. Pokud zadáte název pro nový typ této vlastnosti, typ se přidají do **nespecifikované typy** části Průzkumníku modelů UML.                                                                                |
 | **Vstupních**  |    (žádné)    |                                                                                                                         Určení vztahu mezi stav systému před a po spuštění operace nepovinnou podmínku.                                                                                                                         |
 |  **Předběžné podmínky**  |    (žádné)    |                                                                                                                            Nepovinnou podmínku určující předpoklady o stavu systému před provedením operace zahájí vykonávání.                                                                                                                            |

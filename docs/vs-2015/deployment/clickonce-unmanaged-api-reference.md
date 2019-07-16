@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 714d7b18995bf1ad51b07e02227e440879f73c9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192309"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Referenční dokumentace nespravovaného rozhraní API ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "54790925"
   
 ### <a name="parameters"></a>Parametry  
   
-|Parametr|Popis|Typ|  
+|Parametr|Popis|type|  
 |---------------|-----------------|----------|  
 |`pcwzActivationUrl`|Ukazatel `ActivationURL`.|LPCWSTR|  
 |`pcwzPathToDeploymentManifest`|Ukazatel `PathToDeploymentManifest`.|LPCWSTR|  
@@ -73,7 +73,7 @@ ms.locfileid: "54790925"
   
 ### <a name="parameters"></a>Parametry  
   
-|Parametr|Popis|Typ|  
+|Parametr|Popis|type|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|Ukazatel na řetězec zakončený hodnotou NULL, který obsahuje adresu URL v manifestu nasazení.|LPCWSTR|  
 |`data`|Vyhrazeno pro budoucí použití. Musí mít hodnotu NULL.|LPVOID –|  

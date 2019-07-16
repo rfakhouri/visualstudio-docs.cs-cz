@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cf5bd504bb5f7090dc07bea32e73333c0f182d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162081"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>Identifikátory CATID pro objekty používané obvykle k rozšíření projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Následující tabulka uvádí identifikátory CatID, které se používají k r
   
 ## <a name="listing-of-catids"></a>Seznam identifikátory CatID  
   
-|Název|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProject>|{610D4614-D0D5-11D2-8599-006097C68E81}|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|  
@@ -34,7 +34,7 @@ Následující tabulka uvádí identifikátory CatID, které se používají k r
 ## <a name="visual-basic-catids"></a>Identifikátory CatID jazyka Visual Basic  
  Následující tabulka uvádí identifikátory CatID, které se používají k rozšíření [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] procházet objekty. Všechny jsou definovány v VSLangProj.olb.  
   
-|Název|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectBrowseObject>|{E0FDC879-C32A-4751-A3D3-0B3824BD575F}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectConfigBrowseObject>|{67F8DD11-14EB-489b-87F0-F01C52AF3870}|  
@@ -45,7 +45,7 @@ Následující tabulka uvádí identifikátory CatID, které se používají k r
 ## <a name="visual-c-catids"></a>Identifikátory CatID Visual C#  
  Následující identifikátory CatID je možné rozšířit [!INCLUDE[csprcs](../../includes/csprcs-md.md)] procházet objekty. Všechny jsou definovány v VSLangProj.olb.  
   
-|Název|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectBrowseObject>|{4EF9F003-DE95-4d60-96B0-212979F2A857}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectConfigBrowseObject>|{A12CE10A-227F-4963-ADB6-3A43388513CA}|  
@@ -56,7 +56,7 @@ Následující tabulka uvádí identifikátory CatID, které se používají k r
 ## <a name="c-catids"></a>Identifikátory CatID C++  
  Následující [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] systému identifikátory CatID nejsou zveřejněné v knihovnách typů v projektu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 a mají být zahrnuty ve vašem kódu pokaždé, když chcete rozšířit tyto objekty projektu. Do knihovny typů v pozdějších verzích se zahrnou tyto identifikátory CatID [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-|Název|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |`CVCProjectNode`|{EE8299CB-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCFolderNode`|{EE8299CA-19B6-4f20-ABEA-E1FD9A33B683}|  
@@ -72,7 +72,7 @@ const LPOLESTR CVCFileNode::s_wszCATID = L"{EE8299C9-19B6-4f20-ABEA-E1FD9A33B683
   
  Následující [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] systému identifikátory CatID nezveřejňují také v knihovnách typů v projektu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 a mají být zahrnuty ve vašem kódu pokaždé, když chcete rozšířit tyto objekty projektu. Tyto identifikátory CatID jsou k dispozici pouze v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 a nebude k dispozici v pozdějších verzích [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-|Název|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |`CVCAssemblyReferenceNode` **:**|{FE8299C9-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCProjectReferenceNode`|{593DCFCE-20A7-48e4-ACA1-49ADE9049887}|  

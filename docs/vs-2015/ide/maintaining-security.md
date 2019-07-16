@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186094"
 ---
 # <a name="maintaining-security"></a>Správa zabezpečení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "57872826"
  [Zabezpečení, ochrany osobních údajů a účty](http://go.microsoft.com/fwlink/?LinkId=72881)  
  Získejte nápovědu k zabezpečení, ochraně osobních údajů a uživatelským účtům, včetně informací o virech, heslech, rodičovské kontrole, branách firewall a šifrování disku...  
   
- [Microsoft Security Bulletin Search](/security-updates/)  
+ [Hledání bulletinu zabezpečení Microsoftu](/security-updates/)  
  Na této stránce můžete snadno najít dříve vydané bulletiny. Bulletiny zabezpečení jsou určeny pro odborníky v oblasti IT a poskytují podrobné informace o aktualizacích zabezpečení.  
   
  [Příručka zabezpečení systému Windows Server 2003] (/previous-versions/tn-archive/cc163140(v=technet.10) poskytuje pokyny, které jsou nezbytné pro odborníky v oblasti IT pro bezpečné provozování prostředí systému Windows Server 2003 při zajištění práva na přístup ke správnému obsahu pro správné uživatele.  

@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7d58d1477b9d7f58242f8cb4db7c3c360c248b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184469"
 ---
-# <a name="changing-view-settings-by-using-the-legacy-api"></a>Změna nastavení zobrazení pomocí starší verze rozhraní API
+# <a name="changing-view-settings-by-using-the-legacy-api"></a>Změna nastavení zobrazení pomocí zastaralého rozhraní API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nastavení pro základní funkce editoru, jako je například zalamování řádků, okraj výběru a virtuální prostor, můžete změnit podle uživatele prostřednictvím **možnosti** dialogové okno. Je však také možné změnit tato nastavení programově.  

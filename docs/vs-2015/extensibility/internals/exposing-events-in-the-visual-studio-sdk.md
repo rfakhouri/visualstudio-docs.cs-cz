@@ -12,11 +12,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7056497c505bbb355287416e468e411b4e5a2a62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196692"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Zveřejňování událostí v sadě Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "54763719"
   
  "AutomationProjectItemEvents"="vrátí objekt AutomationProjectItemsEvents"  
   
-|Název|Typ|Rozsah|Popis|  
+|Name|type|Rozsah|Popis|  
 |----------|----------|-----------|-----------------|  
 |Výchozí (@)|REG_SZ|Nepoužitý|Nevyužité. Datové pole můžete použít pro dokumentaci.|  
 |AutomationProjectsEvents|REG_SZ|Název objektu události.|Pouze název klíče je relevantní. Datové pole můžete použít pro dokumentaci.<br /><br /> V tomto příkladu pochází z ukázkové základního projektu.|  

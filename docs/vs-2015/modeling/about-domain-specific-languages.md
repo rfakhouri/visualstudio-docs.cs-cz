@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165441"
 ---
 # <a name="about-domain-specific-languages"></a>O jazycích specifických pro konkrétní domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Na rozdíl od pro obecné účely jazyka, jako je C# nebo UML jazyka specifické
 ### <a name="notation"></a>Zápis  
  Jazyka specifického pro doménu, musí mít poměrně malého počtu prvků, které lze snadno definované a rozšířená tak, aby představují konstrukce jazyka specifického pro doménu. Zápis se skládá z tvary, které zastupují elementy, a konektorů, které představují vztahy mezi elementy, na ploše Grafický diagram. V [!INCLUDE[dsl](../includes/dsl-md.md)], tvary můžou být dále rozšiřována a vylepšili o představují prvky jazyka specifického pro doménu.  
   
-### <a name="domain-model"></a>Domain Model  
+### <a name="domain-model"></a>Doménový Model  
  Jazyka specifického pro doménu obsahující kombinaci sadu elementů a vztahů mezi nimi do koherentního gramatiky. Musíte také definovat, zda kombinace různých typů elementů a vztahů jsou platné. Například programovacích jazyků obvykle zakázat Cyklické dědění, ve které jedna třída je odvozena z třídy sekundu a druhá třída je odvozena od třídy první. Omezení je také možné vyjádřit obchodní logiky, například jedna osoba nemůže být závislá aplikace sám. [!INCLUDE[dsl](../includes/dsl-md.md)] pomocí omezení express typy omezení, které vyžadují nejvíc jazyky specifickými pro doménu.  
   
 ### <a name="artifact-generation"></a>Generování artefaktu  

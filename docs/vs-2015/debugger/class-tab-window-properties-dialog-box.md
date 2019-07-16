@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a7f81a100b2c2311444732434df0f5c5599742a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161616"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Karta Třída, dialogové okno vlastnosti okna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Použití **třídy** karta zobrazuje informace ve třídě vybrané okno. Zobra
   
  Následující nastavení jsou k dispozici na **třídy** kartu:  
   
-|Položka|Popis|  
+|Entry|Popis|  
 |-----------|-----------------|  
 |**Název třídy**|Název (nebo ordinální číslo) této třídy okna.|  
 |**Styly třídy**|Kombinace stylu kódů třídy.|  
@@ -37,4 +37,4 @@ Použití **třídy** karta zobrazuje informace ve třídě vybrané okno. Zobra
 |**Název nabídky**|Název hlavní nabídky, která souvisí s windows z této třídy ("none" Pokud neexistuje žádná nabídka).|  
 |**Popisovač ikony**|Popisovač ikony, která souvisí s windows z této třídy ("none" Pokud neexistuje žádná ikona).|  
 |**Popisovač ukazatele**|Popisovač pro kurzor, který je přidružený k windows této třídy ("none" Pokud neexistuje žádný kurzor).|  
-|**Bkgnd Brush**|Popisovač pro štětec pozadí, která souvisí s windows z této třídy, nebo jednu z předdefinovaných COLOR_ * barev pro vykreslování pozadí okna ("none" Pokud neexistuje žádný štětec).|
+|**Štětec pozadí**|Popisovač pro štětec pozadí, která souvisí s windows z této třídy, nebo jednu z předdefinovaných COLOR_ * barev pro vykreslování pozadí okna ("none" Pokud neexistuje žádný štětec).|

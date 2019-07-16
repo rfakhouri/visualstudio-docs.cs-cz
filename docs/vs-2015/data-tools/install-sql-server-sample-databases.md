@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 056e5d1fad258d063e30cfd97e85529ff3a0c9bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160198"
 ---
-# <a name="install-sql-server-sample-databases"></a>Instalace ukázkových databází systému SQL Server
+# <a name="install-sql-server-sample-databases"></a>Instalace ukázkové databáze SQL Serveru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ukázkové databáze jsou užitečné pro experimentování s dotazy SQL a LINQ, vázání dat, modelování Entity Framework a tak dále.  Každý databázový produkt má svůj vlastní ukázkových databází. Northwind a AdventureWorks jsou dvě oblíbené ukázkové databáze systému SQL Server.  

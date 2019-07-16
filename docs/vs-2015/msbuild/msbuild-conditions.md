@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b29138ef9ab5bffa263a8392396091a38ea91a2e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181104"
 ---
 # <a name="msbuild-conditions"></a>Podmínky nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,4 +45,4 @@ ms.locfileid: "59666973"
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)   
  [Podmíněné konstrukce](../msbuild/msbuild-conditional-constructs.md)   
- [Návod: Vytváření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
+ [Návod: Vytvoření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

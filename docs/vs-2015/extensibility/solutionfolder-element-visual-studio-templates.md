@@ -14,20 +14,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 84d0c1765a14f60363b71fcdec182d448cb4f112
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205546"
 ---
-# <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder – element (šablony Visual Studia)
+# <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder – element (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Seskupuje projekty do víceprojektových šablon.  
   
  \<Vstemplate – >  
  \<TemplateContent>  
- \<ProjectCollection>  
+ \<Projectcollection – >  
  \<SolutionFolder>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -51,7 +51,7 @@ Seskupuje projekty do víceprojektových šablon.
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|Volitelný element.<br /><br /> Určuje cestu k souboru .vstemplate jednoho projektu ve víceprojektové šabloně.|  
+|[ProjectTemplateLink –](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|Volitelný element.<br /><br /> Určuje cestu k souboru .vstemplate jednoho projektu ve víceprojektové šabloně.|  
 |`SolutionFolder`|Volitelný element.<br /><br /> Seskupuje projekty do víceprojektových šablon.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  

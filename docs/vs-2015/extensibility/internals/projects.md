@@ -15,11 +15,11 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a251af12ccf4be5f0f48f789ac59fedaed3299b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183939"
 ---
 # <a name="projects"></a>Projekty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ V sadě Visual Studio jsou projekty kontejnery, které vývojáři použít k us
  [Webové projekty](../../extensibility/internals/web-projects.md)  
  Vysvětluje webový projekt, který zase vytvářet webové aplikace.  
   
- [Nová generace projektů: Pod pokličkou, část 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) a [nová generace projektů: Pod pokličkou část 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ [Nová generace projektů: Pod pokličkou, část 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) a [nová generace projektů: Pod kapotou, část 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
  Vysvětluje, co se ve skutečnosti stane při vytvoření nového projektu.  
   
  [Ukázky VSSDK](../../misc/vssdk-samples.md)  

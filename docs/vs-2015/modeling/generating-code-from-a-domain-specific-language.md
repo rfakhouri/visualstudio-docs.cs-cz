@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63e1b48a7582294c200b1e30147d85a9b26165d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182808"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Vytváření kódu z jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] poskytuje efektivní způsob, j
   
  Popisuje souboru příkazů, které provádí TextTransform spustitelný soubor na příkazovém řádku pro textové šablony, které odkazují na jazyky specifickými pro doménu.  
   
-## <a name="reference"></a>Odkaz  
+## <a name="reference"></a>Reference  
  [Zápis textové šablony T4](../modeling/writing-a-t4-text-template.md)  
   
  Poskytuje syntaxi direktivy textové šablony a řídicí bloky.  

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 37609a2ee4b52931c8df1a95af9d494e64bb473e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158228"
 ---
 # <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Shromažďování dat o paměti rozhraní .NET Framework pro samostatné aplikace pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,5 +50,5 @@ Tato část popisuje postupy a možnosti k shromažďování údajů o přidělo
 ### <a name="analyzing-net-memory-data-views-and-reports"></a>Analýza dat o paměti .NET zobrazeních a sestavách  
  [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)  
   
-## <a name="reference"></a>Odkaz  
+## <a name="reference"></a>Reference  
  [Referenční dokumentace nástrojů příkazového řádku pro profilaci](../profiling/command-line-profiling-tools-reference.md)

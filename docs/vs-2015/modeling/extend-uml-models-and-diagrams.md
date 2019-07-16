@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182869"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Rozšíření modelů a diagramů UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Toto téma shrnuje různé způsoby, ve kterém můžete rozšířit nástroje, 
   
  Další informace najdete v tématu [jak: Reakce na změny v modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
-## <a name="model-bus"></a>Model Bus  
+## <a name="model-bus"></a>Sběrnice modelu  
  Model Service Bus vám umožní přistupovat k formuláři modelu nebo diagramu z jiného diagramu nebo z jiného [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozšíření. Mimo jiné to umožňuje rozprostřít informace napříč více než jeden model tak, aby několik lidí může pracovat na kombinovaný model ve stejnou dobu.  
   
  Společnost Fabrikam pomocí elementů v diagramech činnosti představují sobě zpracování zařízení. Každá položka zařízení může mít podrobnější specifikace do jiného diagramu, který může být v jiném modelu. Omezení ověření v diagramu toku sobě můžete načíst relevantní vlastnosti zařízení z ostatních diagramů. Odkazy na ostatní diagramy jsou uloženy v další vlastnosti definované v stereotypy.  
@@ -116,7 +116,7 @@ Toto téma shrnuje různé způsoby, ve kterém můžete rozšířit nástroje, 
 |**Videa**|![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [řady MSDN jak: Nástroje UML a rozšiřitelnost](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML pomocí sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**Fóra**|-   [Visual Studio Visualization & Modeling nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogy**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
-|**Technické články a deníky**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|  
+|**Technické články a deníky**|[Centrum architektury MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)   

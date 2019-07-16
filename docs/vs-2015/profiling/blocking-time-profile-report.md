@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147245"
 ---
 # <a name="blocking-time-profile-report"></a>Sestava profilu času blokace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Profil sestavy poskytují data agregace času blokování pro zásobníky volán
   
 |Název sloupce|Popis|  
 |-----------------|-----------------|  
-|Název|Název funkce pro každou úroveň zásobníku volání.|  
+|Name|Název funkce pro každou úroveň zásobníku volání.|  
 |Instance|Počet instancí blokovacího hovoru viditelném časovém období.|  
 |Celkový čas blokace|Celkový počet blokování času stráveného pro všechny balíčky, které jsou zahrnuty do této úrovně stromu zásobníku volání. Celkový počet je součtem výhradní čas zablokování pro tuto funkci a výhradní čas zablokování pro všechny jeho podřízené uzly.|  
 |Výhradní čas blokace|Celková doba blokování, který byl stráven během které bude tato funkce je nejnižší úroveň zásobníku volání. Položka zásobníku volání jedinečné, který má vysokou výhradní čas zablokování může být funkce, které vás zajímají.|  

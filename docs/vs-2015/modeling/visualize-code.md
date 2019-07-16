@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2d5803544e4e7279179929c7c04a3792e4dd9318
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183867"
 ---
 # <a name="visualize-code"></a>Vizualizace kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,8 +41,8 @@ Vizualizace a modelování nástroje v sadě Visual Studio můžete použít k v
   
 |||  
 |-|-|  
-|**Pochopení kódu a jejích vztahů:**<br /><br /> Mapovat vztahy mezi konkrétní části kódu.<br /><br /> Zobrazit přehled vztahů v kódu pro celé řešení.<br /><br /> **Poznámka:**: V této verzi sady Visual Studio termín *mapy kódu* je použito místo *graf závislosti*.|-   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
-|**Principy struktur třídy:**<br /><br /> Vizualizujte strukturu tříd v projektu tak, že vytvoříte diagramů tříd z kódu.|[Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
+|**Pochopení kódu a jejích vztahů:**<br /><br /> Mapovat vztahy mezi konkrétní části kódu.<br /><br /> Zobrazit přehled vztahů v kódu pro celé řešení.<br /><br /> **Poznámka:** V této verzi sady Visual Studio termín *mapy kódu* je použito místo *graf závislosti*.|-   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
+|**Principy struktur třídy:**<br /><br /> Vizualizujte strukturu tříd v projektu tak, že vytvoříte diagramů tříd z kódu.|[Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
 |**Popis návrhu systému vysoké úrovně a ověření kódu proti tohoto návrhu:**<br /><br /> Vytvořením diagramy vrstev popisují návrh vysoké úrovně systému a jeho zamýšlených závislostí. Ověření kódu proti tohoto návrhu zajistit, aby zůstaly konzistentní s návrhem závislosti v kódu.|-   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)<br />-   [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)|  
 |**Komunikaci uživatelských požadavků a architektury:**<br /><br /> Modelování uživatelských požadavků a architektury softwarového systému kreslením následující diagramy UML: aktivita, komponenty, třídy, pořadí a případ použití.|-   [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)<br />-   [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)<br />-   [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ea2881cfebaf10d7a72e8651214cf3a6f64debae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164674"
 ---
 # <a name="customizing-t4-text-transformation"></a>Přizpůsobení transformace textu T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Textové šablony jsou funkce [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , kte
   
  Pokud píšete [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, zvažte možnost použít existující službu transformace textu místo psaní vlastního hostitele. Další informace najdete v tématu [volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
-## <a name="reference"></a>Odkaz  
+## <a name="reference"></a>Reference  
  [Zápis textové šablony T4](../modeling/writing-a-t4-text-template.md)  
   
  Poskytuje syntaxi direktivy textové šablony a řídicí bloky.

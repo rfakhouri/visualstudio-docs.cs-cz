@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7667aac348a6f7b208786191c35afe86542862d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148235"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |Možnosti|Popis|  
 |-------------|-----------------|  
 |**U**|Výstup sestavy a přesměrovaný výstup konzoly je zapsán jako Unicode. První možnost je povinná.|  
-|**Shrnutí:**[*typy*]|Vytvoří jeden nebo více typů sestav.<br /><br /> -   `All` -jsou generovány všechny typy sestav.<br />-   `CallerCallee` -nadřazené a podřízené vztahy mezi funkcemi.<br />-   `Function` -volané funkce.<br />-   `CallTree` -hierarchii volané funkce.<br />-   `Counter` -všechny značky společně s Windows performance hodnoty čítačů.<br />-   `Ip` -pokyny profilována.<br />-   `Life` -dobu životnosti přidělených objektů (k dispozici, když jsou shromážděná data o přidělování.)<br />-   `Line` data profilu řádku zdrojového kódu.<br />-   `Header` -Sestava obsahuje informace o souboru záhlaví.<br />-   `Mark` všechny značky.<br />-   `Module` -Profilované moduly.<br />-   `Process` -Profilovat procesy.<br />-   `Thread` -vlákna profilována.<br />-   `Type` -přidělené typy.<br />-   `Contention` -Sporty prostředků.<br />-   `RuleWarnings` -problémy pravidla výkonu<br />-   `ETW` -všechny události trasování událostí pro Windows (ETW) shromážděné při spuštění profilace. Datový soubor ETL musí být v původním umístění nebo do adresáře, který obsahuje soubor .vsp nebo .vsps.|  
+|**Shrnutí:** [*typy*]|Vytvoří jeden nebo více typů sestav.<br /><br /> -   `All` -jsou generovány všechny typy sestav.<br />-   `CallerCallee` -nadřazené a podřízené vztahy mezi funkcemi.<br />-   `Function` -volané funkce.<br />-   `CallTree` -hierarchii volané funkce.<br />-   `Counter` -všechny značky společně s Windows performance hodnoty čítačů.<br />-   `Ip` -pokyny profilována.<br />-   `Life` -dobu životnosti přidělených objektů (k dispozici, když jsou shromážděná data o přidělování.)<br />-   `Line` data profilu řádku zdrojového kódu.<br />-   `Header` -Sestava obsahuje informace o souboru záhlaví.<br />-   `Mark` všechny značky.<br />-   `Module` -Profilované moduly.<br />-   `Process` -Profilovat procesy.<br />-   `Thread` -vlákna profilována.<br />-   `Type` -přidělené typy.<br />-   `Contention` -Sporty prostředků.<br />-   `RuleWarnings` -problémy pravidla výkonu<br />-   `ETW` -všechny události trasování událostí pro Windows (ETW) shromážděné při spuštění profilace. Datový soubor ETL musí být v původním umístění nebo do adresáře, který obsahuje soubor .vsp nebo .vsps.|  
 |**Xml**|Výstup sestavy ve formátu XML.|  
 |**CallTrace**|Vytvoří seznam vstupu funkce a ukončí, událostí trasování událostí pro Windows a značky.|  
 |**ClearPackedSymbols**|Odebere dříve vložený symboly z datového souboru profilování. Tento příkaz spustit před spuštěním PackSymbols a druhý čas.|  
@@ -72,14 +72,14 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Možnosti|Popis|  
 |-------------|-----------------|  
-|**JustMyCode**[**:**[`caller`][,`callee`]]|Zobrazit pouze uživatele volání funkcí aplikace; Skryjte systémových volání.<br /><br /> -Žádné parametry - skrýt všechny systémové funkce.<br />-   `caller` -Zobrazit jednu úroveň funkce systému, které volají funkce aplikace.<br />-   `callee` -Zobrazit jednu úroveň funkce systému, které jsou volány pomocí funkcí aplikace uživatele.|  
-|**StartTime:**[*value*]|Zobrazit pouze data shromážděná za hodnotou (v milisekundách).|  
-|**EndTime:**[*hodnotu*]|Zobrazit pouze data shromážděná před hodnotou (v milisekundách).|  
+|**JustMyCode**[ **:** [`caller`] [,`callee`]]|Zobrazit pouze uživatele volání funkcí aplikace; Skryjte systémových volání.<br /><br /> -Žádné parametry - skrýt všechny systémové funkce.<br />-   `caller` -Zobrazit jednu úroveň funkce systému, které volají funkce aplikace.<br />-   `callee` -Zobrazit jednu úroveň funkce systému, které jsou volány pomocí funkcí aplikace uživatele.|  
+|**StartTime:** [*hodnotu*]|Zobrazit pouze data shromážděná za hodnotou (v milisekundách).|  
+|**EndTime:** [*hodnotu*]|Zobrazit pouze data shromážděná před hodnotou (v milisekundách).|  
 |**FilterFile:** `VSPFFile`|Určuje umístění souboru filtru, která byla vygenerována z okna sestavy výkonu Visual Studio.|  
-|**MsFilter:**[*časzahájeni, trvání*]|Zobrazit pouze data od `starttime` až do délky `duration` (v milisekundách).|  
-|**Proces:**[*pid*]|Zobrazit pouze data ze zadaného procesu.|  
-|**Vlákna:**[*idvlákna*]|Zobrazit pouze data ze zadaného vlákna.|  
-|**Vlákna:**[*idvlákna, idprocesu*]|Zobrazit pouze data ze zadaného vlákna přidruženého se zadaným procesem.|  
+|**MsFilter:** [*časzahájeni, trvání*]|Zobrazit pouze data od `starttime` až do délky `duration` (v milisekundách).|  
+|**Proces:** [*pid*]|Zobrazit pouze data ze zadaného procesu.|  
+|**Vlákna:** [*idvlákna*]|Zobrazit pouze data ze zadaného vlákna.|  
+|**Vlákna:** [*idvlákna, idprocesu*]|Zobrazit pouze data ze zadaného vlákna přidruženého se zadaným procesem.|  
   
 ## <a name="difference-report-options"></a>Možnosti sestavy rozdíl  
  Následující tabulka popisuje možnosti pro porovnávání souborů sestav.  
@@ -87,9 +87,9 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |Možnosti|Popis|  
 |-------------|-----------------|  
 |**Diff**  `vspfile1 vspfile2`|Porovnejte dva soubory (.vsp nebo .vsps) souborů sestav. Možnosti souhrnu budou ignorovány pomocí možnosti rozdílů.|  
-|**Diff:**[*hodnotu*]|Nižší než tato prahová hodnota bude ignorována rozdíl mezi dvěma hodnotami. Také se nezobrazí nová data s hodnotami pod tuto mezní hodnotu.|  
-|**DiffTable:**[*tablename*]|Použijte tuto konkrétní tabulku pro porovnání souborů. Výchozí hodnota je tabulka funkcí.|  
-|**DiffColumn:**[*názevsloupce*]|Pomocí tohoto konkrétního sloupce porovnání hodnot. Výchozí hodnota je sloupec procent výhradních vzorků.|  
+|**Diff:** [*hodnotu*]|Nižší než tato prahová hodnota bude ignorována rozdíl mezi dvěma hodnotami. Také se nezobrazí nová data s hodnotami pod tuto mezní hodnotu.|  
+|**DiffTable:** [*tablename*]|Použijte tuto konkrétní tabulku pro porovnání souborů. Výchozí hodnota je tabulka funkcí.|  
+|**DiffColumn:** [*názevsloupce*]|Pomocí tohoto konkrétního sloupce porovnání hodnot. Výchozí hodnota je sloupec procent výhradních vzorků.|  
 |**QueryDiffTables**|Vypsat platné tabulky a sloupce příslušné dva soubory sestav, které jsou k dispozici.|  
   
 ## <a name="see-also"></a>Viz také  

@@ -8,11 +8,11 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 0d0903db05b193b3318dc30c250bfdb21e76b093
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155280"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools pro Apache Cordova
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

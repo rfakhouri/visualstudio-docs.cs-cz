@@ -26,11 +26,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158335"
 ---
 # <a name="using-intellisense"></a>Používání atributu IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Technologie IntelliSense je obecný termín pro celou řadu funkcí: Seznam čle
   
  Pokud je funkce přetížena, technologie IntelliSense nemusí zobrazit informace pro všechny formy přetížení.  
   
- Rychlé informace v jazyce c++ můžete vypnout nastavením **nástroje / Možnosti / textový Editor/C/C + +/ Upřesnit/automatické informace** k `false`.  
+ Můžete vypnout rychlé informace C++ nastavením **nástroje / Možnosti / textový Editor/C/C++Upřesnit/automatické informace** k `false`.  
   
 ## <a name="complete-word"></a>Dokončit slovo  
  Jakmile zadáte dostatečný počet znaků pro odstranění dvojznačnosti termínu, funkce Dokončit slovo dokončí zbytek proměnné, příkazu nebo názvu funkce. Dokončit slovo můžete vyvolat kliknutím **upravit/IntelliSense/dokončit slovo**, zadáním kombinace kláves CTRL + MEZERNÍK nebo kliknutím **dokončit slovo** tlačítko na panelu nástrojů editoru.  
@@ -104,5 +104,5 @@ MessageBox( hWnd, "String literal|") )
 ## <a name="see-also"></a>Viz také  
  [Specifické pro jazyk Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)   
  [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)   
- [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
+ [Technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md)   
  [Zadávání komentářů ke kódu XML](../ide/supplying-xml-code-comments.md)

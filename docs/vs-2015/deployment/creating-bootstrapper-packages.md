@@ -22,11 +22,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187811"
 ---
 # <a name="creating-bootstrapper-packages"></a>Vytváření balíčků zaváděcího nástroje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Redistribuovatelný seznam je soubor XML, který byste měli pojmenovat pomocí následujícího formátu: *Company Name*.*Component Name*.RedistList.xml. Ano například pokud se komponenta nazývá Datawidgets provedená Acme, použijte Acme.DataWidgets.RedistList.xml. Příklad redistribuovatelného seznamu obsahů může vypadat takto:  
+ Redistribuovatelný seznam je soubor XML, který byste měli pojmenovat pomocí následujícího formátu: *Název společnosti*. *Název komponenty*. RedistList.xml. Ano například pokud se komponenta nazývá Datawidgets provedená Acme, použijte Acme.DataWidgets.RedistList.xml. Příklad redistribuovatelného seznamu obsahů může vypadat takto:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  

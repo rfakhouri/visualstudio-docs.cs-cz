@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: acf285c895e5160e850b6bc8f20f920279a5e26c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154781"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise – element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Určuje blok kódu budou spuštěny, pokud a pouze tehdy, pokud podmínky všech
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|Volitelný element.<br /><br /> Vyhodnotí jako podřízené prvky a vyberte jednu část kódu ke spuštění. Může být nula nebo více `Choose` prvky `Otherwise` elementu.|  
+|[Zvolte](../msbuild/choose-element-msbuild.md)|Volitelný element.<br /><br /> Vyhodnotí jako podřízené prvky a vyberte jednu část kódu ke spuštění. Může být nula nebo více `Choose` prvky `Otherwise` elementu.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Volitelný element.<br /><br /> Obsahuje sadu uživatelem definované [položky](../msbuild/item-element-msbuild.md) elementy. Může být nula nebo více `ItemGroup` prvky `Otherwise` elementu.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Volitelný element.<br /><br /> Obsahuje sadu uživatelem definované [vlastnost](../msbuild/property-element-msbuild.md) elementy. Může být nula nebo více `PropertyGroup` prvky `Otherwise` elementu.|  
   
@@ -68,7 +68,7 @@ Určuje blok kódu budou spuštěny, pokud a pouze tehdy, pokud podmínky všech
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|Vyhodnotí jako podřízené prvky a vyberte jednu část kódu ke spuštění.|  
+|[Zvolte](../msbuild/choose-element-msbuild.md)|Vyhodnotí jako podřízené prvky a vyberte jednu část kódu ke spuštění.|  
   
 ## <a name="remarks"></a>Poznámky  
  Může existovat pouze jeden `Otherwise` prvek `Choose` element a musí být posledním prvkem.  

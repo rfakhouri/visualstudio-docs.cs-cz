@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea37c105114e915e812a470474ccd8f52609056f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184353"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Přepínače příkazového řádku (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

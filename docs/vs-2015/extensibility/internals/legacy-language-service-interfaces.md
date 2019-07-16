@@ -12,11 +12,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 02f63cd5e3f0599723aee12f7aed2c56b74c3249
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196109"
 ---
 # <a name="legacy-language-service-interfaces"></a>Rozhraní služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

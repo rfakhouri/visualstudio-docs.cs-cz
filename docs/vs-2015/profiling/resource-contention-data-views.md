@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1d672d90254626cfef9bd87bfef9dcf2426aa346
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160301"
 ---
 # <a name="resource-contention-data-views"></a>Zobrazení dat kolizí prostředku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +58,6 @@ Tato část obsahuje informace o zobrazeních a sestavách souborů dat profiler
  [Zobrazení procesů](../profiling/process-view-contention-data.md)  
  Zobrazí seznam kolize prostředků podle procesu a vlákně.  
   
-## <a name="reference"></a>Odkaz  
+## <a name="reference"></a>Reference  
  [Zobrazení podrobností funkce](../profiling/function-details-view.md)  
  Zobrazuje graf vztahů mezi vybranou funkci a funkce, které volá a byly volány vybranou funkcí.

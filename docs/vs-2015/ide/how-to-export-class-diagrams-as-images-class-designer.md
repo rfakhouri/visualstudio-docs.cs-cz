@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c859e4488a4e1ef6d843ffe27f5b342ea1a92e0b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182890"
 ---
-# <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Postupy: Export diagramů tříd jako obrázky (návrhář tříd)
+# <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Postupy: Export diagramů tříd jako obrázků (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Export diagramu tříd, který jste vytvořili z kódu v projektu, uložte jako obrázek diagramu. Pokud chcete místo toho export diagramů tříd UML, přečtěte si téma [exportování diagramů jako obrázků](../modeling/export-diagrams-as-images.md).  

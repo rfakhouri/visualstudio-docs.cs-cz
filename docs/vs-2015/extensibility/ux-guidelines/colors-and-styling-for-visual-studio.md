@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176998"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Barvy a styly pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 #### <a name="helper-classes-and-methods-for-managed-code"></a>Pomocné rutiny třídy a metody pro spravovaný kód
  Pro spravovaný kód k prostředí Managed Package Framework knihovna (Microsoft.VisualStudio.Shell.12.0.dll) obsahuje několik pomocných tříd usnadnění použití motivy barev.
 
- Pomocné metody v **Microsoft.VisualStudio.Shell.VsColors** zahrnují třídy v MPF **GetThemedGDIColor()** a **GetThemedWPFColor()**. Těchto metod helper vrátí hodnotu barvy motivu vstupu jako System.Drawing.Color nebo System.Windows.Media.Color, který se má použít v WinForms nebo WPF uživatelského rozhraní.
+ Pomocné metody v **Microsoft.VisualStudio.Shell.VsColors** zahrnují třídy v MPF **GetThemedGDIColor()** a **GetThemedWPFColor()** . Těchto metod helper vrátí hodnotu barvy motivu vstupu jako System.Drawing.Color nebo System.Windows.Media.Color, který se má použít v WinForms nebo WPF uživatelského rozhraní.
 
 ```
 IVsUIShell5 shell5;

@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180294"
 ---
-# <a name="language-services-and-the-core-editor"></a>Jazykové služby a základní Editor
+# <a name="language-services-and-the-core-editor"></a>Jazykové služby a základní editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Editory v sadě Visual Studio jsou často spojeny s služba jazyka. Mimo jiné poskytuje služba jazyka barevné zvýrazňování syntaxe, dokončování příkazů, technologie IntelliSense a formátování textu.  
@@ -27,7 +27,7 @@ Editory v sadě Visual Studio jsou často spojeny s služba jazyka. Mimo jiné p
   
  Další informace najdete v tématu [určující, které Editor otevře soubor v projektu](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## <a name="language-services-and-the-core-editor"></a>Jazykové služby a základní Editor  
+## <a name="language-services-and-the-core-editor"></a>Jazykové služby a základní editor  
  Implementací služba jazyka můžete řídit, jak se data zobrazí v zobrazení dokumentu. Služba jazyka poskytuje informace a chování, které jsou specifické pro daný jazyk, jako je například Visual C++. Při vytváření textové vyrovnávací paměti a určit název souboru rozšíření pro dokument, který otevíráte, textové vyrovnávací paměti určuje jazyk služba spojená s touto příponou názvu souboru z klíče registru, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors \\\Extensions {YourLanguageService GUID}. Standardní VSPackage načítání postupu pak načte váš balíček VSPackage správy kódu a je vytvořena instance vaší služby jazyka.  
   
  Služba základní jazyk je zobrazena na následujícím obrázku.  

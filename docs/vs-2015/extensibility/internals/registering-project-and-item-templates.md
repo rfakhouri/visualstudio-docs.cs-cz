@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185840"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrace šablon projektů a položek
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|Název|Typ|Popis|  
+|Name|Typ|Popis|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Výchozí název projektů tohoto druhu.|  
-|displayName|REG_SZ|ID prostředku, který se má načíst z satelitní knihovny DLL název zaregistrován balíčky.|  
+|DisplayName|REG_SZ|ID prostředku, který se má načíst z satelitní knihovny DLL název zaregistrován balíčky.|  
 |Balíček|REG_SZ|ID třídy balíčku zaregistrován balíčky.|  
 |ProjectTemplatesDir|REG_SZ|Výchozí cesty k souboru šablony projektu. Soubory šablon projektu se zobrazí podle **nový projekt** šablony.|  
   
@@ -57,7 +57,7 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
 "SortPriority"=dword:00000064  
 ```  
   
-|Název|Typ|Popis|  
+|Name|Typ|Popis|  
 |----------|----------|-----------------|  
 |@|REG_SZ|ID prostředku pro přidat položku šablony.|  
 |TemplatesDir|REG_SZ|Cesta položky projektu zobrazí v dialogovém okně **přidat novou položku** průvodce.|  
@@ -67,7 +67,7 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
 ### <a name="registering-file-filters"></a>Registrace filtry souborů  
  Volitelně můžete zaregistrovat filtry, které [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] používá, když ho vyzve k zadání názvů souborů. Například [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrovat **otevřít soubor** dialogové okno je:  
   
- **Visual C# Files (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
+ **Soubory Visual C# (\*.cs,\*.resx,\*.settings,\*XSD,\*WSDL);\*. cs,\*.resx,\*.settings,\*XSD,\*WSDL)**  
   
  Pro podporu registrace více filtrů, každý filtr je zaregistrován ve vlastní podklíč pod HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*verze*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*podklíč*>. Název podklíče je libovolný. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignoruje v podklíči název a používá jenom jeho hodnoty.  
   
@@ -84,7 +84,7 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
 "SortPriority"=dword:00000064  
 ```  
   
-|Název|Typ|Popis|  
+|Name|Typ|Popis|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Vytvoří jeden z běžných filtrů filtr na **najít v souborech** dialogové okno. Běžné filtry jsou uvedeny v seznamu filtru před filtry, které nejsou označeny jako běžné.|  
 |CommonOpenFilesFilter|REG_DWORD|Vytvoří jeden z běžných filtrů filtr na **otevřít soubor** dialogové okno. Běžné filtry jsou uvedeny v seznamu filtru před filtry, které nejsou označeny jako běžné.|  
@@ -112,7 +112,7 @@ Typy projektů musíte zaregistrovat adresáře, kde se nachází jejich šablon
   
  \Form  
   
- \Web Page  
+ \Web stránky  
   
  \HelperFiles (obsahuje soubory používané v položkách projektu více soubory)  
   

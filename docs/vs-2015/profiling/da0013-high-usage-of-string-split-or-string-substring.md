@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6ff05e7e8cc74eacb00b5ec8ff42bd48faaa12c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159190"
 ---
-# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Vysoké použití String.Split nebo String.Substring
+# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Vysoký výskyt použití String.Split nebo String.Substring
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id pravidla | DA0013 |  
@@ -33,7 +33,7 @@ Id pravidla | DA0013 |
 | Zpráva | Zvažte snížení použití funkcí String.Split a String.Substring. |  
 | Typ pravidla | Upozornění |  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Volání metody System.String.Split nebo System.String.Substring jsou podstatnou část dat profilování. Zvažte použití System.String.IndexOf nebo System.String.IndexOfAny Pokud testujete existenci podřetězce v řetězci.  
   
 ## <a name="rule-description"></a>Popis pravidla  

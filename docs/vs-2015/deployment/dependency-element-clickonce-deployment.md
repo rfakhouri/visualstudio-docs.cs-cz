@@ -27,11 +27,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f191b11dfce5b3877d0a31e260e092000a556a5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187774"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;závislost&gt; – Element (nasazení ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ Určuje verzi aplikace k instalaci a umístění manifestu aplikace.
 |`codebase`|Volitelné. Úplná cesta k manifestu aplikace.|  
 |`size`|Volitelné. Velikost manifest aplikace v bajtech.|  
   
-## <a name="assemblyidentity"></a>assemblyIdentity  
+## <a name="assemblyidentity"></a>Vlastnost assemblyIdentity  
  Povinný parametr. Tento element je podřízeným prvkem `dependentAssembly` elementu. Obsah `assemblyIdentity` musí být stejné jako nastavení popsané v [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikace. V následující tabulce jsou uvedeny atributy `assemblyIdentity` elementu.  
   
 |Atribut|Popis|  
@@ -185,4 +185,4 @@ Určuje verzi aplikace k instalaci a umístění manifestu aplikace.
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – Manifest nasazení](../deployment/clickonce-deployment-manifest.md)   
- [\<závislost > – Element](../deployment/dependency-element-clickonce-application.md)
+ [Element \<dependency>](../deployment/dependency-element-clickonce-application.md)

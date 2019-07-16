@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1055136562d59412a6187524dc6023c55ef2dc3c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158665"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Náročná funkce GetHashCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [DA0010: N�
 |Id pravidla|DA0010|  
 |Kategorie|Použití rozhraní .NET framework|  
 |Metod profilace|Vzorkování<br /><br /> Paměť .NET|  
-|Zpráva|Funkce GetHashCode by měly být levné a nepřidělovat paměti. Pokud je to možné snížit složitost funkce hodnoty hash.|  
+|Message|Funkce GetHashCode by měly být levné a nepřidělovat paměti. Pokud je to možné snížit složitost funkce hodnoty hash.|  
 |Typ zprávy|Upozornění|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Volání metody GetHashCode typu jsou podstatnou část dat profilování nebo metodu přidělí paměť.  
   
 ## <a name="rule-description"></a>Popis pravidla  

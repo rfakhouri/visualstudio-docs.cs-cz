@@ -6,11 +6,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 048edb85742e71e6236d1491565a007bf7da84b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553761"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68176867"
 ---
 Tabulky v tomto seznamu stránce ID, můžete použít k instalaci sady Visual Studio z příkazového řádku, nebo je můžete zadat jako závislost v manifestu VSIX. Přidáme další součásti po vydání aktualizace sady Visual Studio.
 

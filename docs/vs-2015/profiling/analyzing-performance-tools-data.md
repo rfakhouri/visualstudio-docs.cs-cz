@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a141e6f02c8457adaee45ddc6905470a747123d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156436"
 ---
-# <a name="analyzing-performance-tools-data"></a>Analýza výkonu nástrojů pro Data
+# <a name="analyzing-performance-tools-data"></a>Analýza údajů nástrojů pro měření výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Výkon sestavy z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro profilaci sady umožňují zobrazit a analyzovat problémy s výkonem aplikací. Tato část obsahuje přehled o výkonu sestav a zobrazení, která umožňuje zkoumat data o výkonu.  

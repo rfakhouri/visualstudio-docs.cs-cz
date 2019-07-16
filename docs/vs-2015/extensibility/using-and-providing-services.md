@@ -13,11 +13,11 @@ caps.latest.revision: 42
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f58e29797e9a7760aa0f48c68868199f51b3c92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177430"
 ---
 # <a name="using-and-providing-services"></a>Používání a poskytování služeb
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ Služba je kontrakt mezi dvěma rozšíření VSPackages. Jeden VSPackage nabíz
  [Postupy: Získání služby](../extensibility/how-to-get-a-service.md)  
  Popisuje, jak požádat o (spotřebovávat) služby.  
   
- [Postupy: Poskytování služeb](../extensibility/how-to-provide-a-service.md)  
+ [Postupy: Poskytování služby](../extensibility/how-to-provide-a-service.md)  
  Popisuje, jak poskytovat služby.  
   
- [Postupy: Zadejte službu asynchronní aplikace Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ [Postupy: Poskytování asynchronní služby sady Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  Popisuje, jak k poskytování asynchronní služby.  
   
- [Postupy: Odstraňování potíží se službami](../extensibility/how-to-troubleshoot-services.md)  
+ [Postupy: Řešení problémů se službami](../extensibility/how-to-troubleshoot-services.md)  
  Tento článek popisuje běžné problémy a nabídne řešení k nim.  
   
 ## <a name="related-sections"></a>Související oddíly  

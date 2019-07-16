@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4ef58a39f1ff96a3c72cbb5a48940e378997cbca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157818"
 ---
 # <a name="replace-command"></a>Nahradit – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -92,5 +92,5 @@ Edit.Replace findwhat replacewith [/all] [/case]
  [Hledání a nahrazení textu](../../ide/finding-and-replacing-text.md)   
  [Okno příkazového řádku](../../ide/reference/command-window.md)   
  [Pole najít/příkaz](../../ide/find-command-box.md)   
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
+ [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

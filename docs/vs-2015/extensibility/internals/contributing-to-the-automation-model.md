@@ -11,11 +11,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c84ea078f9b7c1268b765111cc400f6e51b783f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196997"
 ---
 # <a name="contributing-to-the-automation-model"></a>Přispívání do modelu automatizace
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Visual Studio poskytuje sadu rozhraní automatizace pro přizpůsobení prostře
  [Automatizace pro konfiguraci a objekty SelectedItem](../../extensibility/internals/automation-for-configuration-and-selecteditem-objects.md)  
  Poskytuje informace o automatizaci pro možnosti konfigurace a automatizace pro vybrané položky.  
   
-## <a name="reference"></a>Odkaz  
+## <a name="reference"></a>Reference  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>  
  Obsahuje ukázku kódu, který ukazuje, jak VSPackage podílí na objektový model DTE automatizace. Obsahuje seznam parametrů, vrácené hodnoty a vybrané poznámky.  
   

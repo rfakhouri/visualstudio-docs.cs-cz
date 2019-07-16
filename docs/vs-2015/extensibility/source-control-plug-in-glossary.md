@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f5120a5c6678cac32ef65e08ef7dc34649364cf9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160609"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glosář modulu plug-in zdrojového kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Užitečné následující pojmy a definice se vztahují k dokumentaci zdrojové
  Sloučit  
  Proces, během kterého nejmíň dva zdroje jsou soubory kódu se spojí dohromady a tvoří nový soubor, který zahrnuje všechny funkce z předchozí soubory. Tento koncept je důležité ve správě verzí místo, kde dva nebo více vývojáři pracovat na souborech současně.  
   
- Projekt  
+ Project  
  Složku správy zdrojového kódu se často označuje jako projekt. To nemá žádný vztah s projekty nebo řešení v sadě Visual Studio.  
   
  Modul plug-in  

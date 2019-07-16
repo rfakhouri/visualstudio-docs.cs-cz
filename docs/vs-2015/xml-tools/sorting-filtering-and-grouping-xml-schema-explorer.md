@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 86c13f7c710e462e1edd45acbf68fa4642d3d422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150678"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Řazení, filtrování a seskupování (Průzkumník schémat XML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **řaze
   
 - **Zobrazit soubory schémat**.  
   
-- **Zobrazit tvůrce (pořadí/volba/all)**.  
+- **Zobrazit tvůrce (pořadí/volba/all)** .  
   
 ## <a name="sorting-options"></a>Možnosti řazení  
  Jsou k dispozici následující možnosti řazení. Výchozí hodnota je **řazení podle typu**. Řadit podle možnosti se nevztahují na soubory a obory názvů.  

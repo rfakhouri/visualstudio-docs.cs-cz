@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154866"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Vlastnosti atributů v diagramech tříd UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ V diagramu tříd UML lze přidat *atributy* u tříd a rozhraní. Atribut defin
 |    **List**    |    False     |                                                                                                                                                                    Pokud je hodnota true, není určený k tomu předefinování tento atribut v odvozených typech.                                                                                                                                                                     |
 |  **Je odvozen**   |    False     |                                                                                                              Při hodnotě true se tento atribut se počítá od jiné atributy. Úhlopříčně, například počítají na základě šířku a výšku. Podrobnosti by měly být napsány v **popis** nebo připojeného komentáře.                                                                                                              |
 |  **Popis**  |   (prázdné)    |                                                                                                                                                                        Pro obecné poznámky nebo k definování omezení hodnot v atributu.                                                                                                                                                                        |
-| **Násobnost**  |      1       | **1** – tento atribut je samostatná hodnota ze zadaného typu.<br /><br /> **0..1** – tento atribut může mít hodnotu `null`.<br /><br /> **\\**\* – Hodnota tohoto atributu je kolekce hodnot.<br /><br /> **1..\\**  \* – hodnota tohoto atributu je kolekce, která obsahuje alespoň jednu hodnotu.<br /><br /> *n* **..** *m* – hodnota tohoto atributu je kolekce, který obsahuje od *n* a *m* hodnoty. |
+| **Násobnost**  |      1       | **1** – tento atribut je samostatná hodnota ze zadaného typu.<br /><br /> **0..1** – tento atribut může mít hodnotu `null`.<br /><br /> **\\** \* – Hodnota tohoto atributu je kolekce hodnot.<br /><br /> **1..\\**  \* – hodnota tohoto atributu je kolekce, která obsahuje alespoň jednu hodnotu.<br /><br /> *n* **..** *m* – hodnota tohoto atributu je kolekce, který obsahuje od *n* a *m* hodnoty. |
 |  **Je seřazen**   |    False     |                                                                                                                                                                    Při hodnotě true se vytváří kolekce sekvenční seznamu. Pro **násobnost** více než 1.                                                                                                                                                                     |
 |   **Je jedinečný**   |    False     |                                                                                                                                                                Pokud je hodnota true, nejsou v kolekci žádné duplicitní hodnoty. Pro **násobnost** více než 1.                                                                                                                                                                |
 

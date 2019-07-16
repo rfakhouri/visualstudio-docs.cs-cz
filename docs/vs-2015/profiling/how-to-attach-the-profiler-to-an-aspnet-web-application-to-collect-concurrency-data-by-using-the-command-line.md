@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d720779019ab4106fa6c4b727e9994f168a2d8f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179285"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Postupy: Připojit Profiler k webové aplikaci ASP.NET ke shromažďování dat souběžnosti pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
    - [/Start](../profiling/start.md) inicializuje možnost profileru sbírat data kolize prostředků.  
 
-   - [/Output](../profiling/output.md)**:** `OutputFile` možnost je vyžadována s **/start**. `OutputFile` Určuje název a umístění souboru dat profilování (.vsp).  
+   - [/Output](../profiling/output.md) **:** `OutputFile` možnost je vyžadována s **/start**. `OutputFile` Určuje název a umístění souboru dat profilování (.vsp).  
 
      V následující tabulce můžete použít jakoukoli možnost **/start** možnost.  
 
    |                               Možnost                               |                                                                     Popis                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | [/ User](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` |                           Určuje volitelnou doménu a uživatelské jméno účtu, který má být udělen přístup k profileru.                           |
+   | [/ User](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` |                           Určuje volitelnou doménu a uživatelské jméno účtu, který má být udělen přístup k profileru.                           |
    |           [/ crosssession](../profiling/crosssession.md)            |                                               Umožňuje profilování procesů v jiných přihlašovacích relacích.                                                |
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      Určuje čítač výkonu Windows má být shromážděn během profilování.                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | Použití s **/wincounter** pouze. Určuje počet milisekund mezi událostmi sběru čítače výkonu Windows. Výchozí hodnota je 500. |
@@ -49,7 +49,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 2. Spusťte aplikaci ASP.NET obvyklým způsobem.  
 
-3. Připojit profiler k pracovnímu procesu ASP.NET zadáním následujícího příkazu:**VSPerfCmd / připojit:** `PID` [**targetclr:**`Version`]  
+3. Připojit profiler k pracovnímu procesu ASP.NET zadáním následujícího příkazu:**VSPerfCmd / připojit:** `PID` [**targetclr:** `Version`]  
 
    - `PID` Určuje ID nebo název pracovního procesu technologie ASP.NET. ID všech spuštěných procesů lze zobrazit ve Správci úloh Windows.  
 
@@ -64,9 +64,9 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
     |Možnost|Popis|  
     |------------|-----------------|  
-    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Spustí (**globalon**) nebo zastaví (**/globaloff**) sběr dat pro všechny procesy.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Spustí (**/processon**) nebo zastaví (**/processoff**) sběr dat pro proces, který ID procesu (`PID`) určuje.|  
-    |[/ attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/ attach** spustí sběr dat pro proces, který ID procesu (`PID`) nebo názvem procesu (*ProcName*) určuje. **/ detach** zastaví sběr dat pro zadaný proces nebo pro všechny procesy, pokud není zadán žádný proces.|  
+    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Spustí (**globalon**) nebo zastaví ( **/globaloff**) sběr dat pro všechny procesy.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Spustí ( **/processon**) nebo zastaví ( **/processoff**) sběr dat pro proces, který ID procesu (`PID`) určuje.|  
+    |[/ attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/ attach** spustí sběr dat pro proces, který ID procesu (`PID`) nebo názvem procesu (*ProcName*) určuje. **/ detach** zastaví sběr dat pro zadaný proces nebo pro všechny procesy, pokud není zadán žádný proces.|  
 
 ## <a name="ending-the-profiling-session"></a>Ukončení relace profilování  
  Chcete-li ukončit relaci profilování, profiler nesmí pokračovat ve shromažďování dat. Zastavit shromažďování dat z aplikace, která je profilována metodou souběžnosti restartování pracovního procesu technologie ASP.NET nebo vyvoláním **VSPerfCmd / detach** možnost. Poté je zapotřebí vyvolat **VSPerfCmd/Shutdown** možnost se profiler vypne a uzavře soubor dat profilování. **VSPerfClrEnv /globaloff** příkaz vymaže proměnné prostředí profilování, ale konfigurace systému není obnovena, až po restartování počítače.  

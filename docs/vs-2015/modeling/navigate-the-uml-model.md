@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158980"
 ---
 # <a name="navigate-the-uml-model"></a>Procházení modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Toto téma uvádí hlavní typy modelu UML.
   
 |Typ atributu|Získáte přístup k|Další informace|  
 |--------------------|----------------------------------|----------------------|  
-|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> .IDiagramContext<br /><br /> (in Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Aktuální diagram výběru.|[Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> .IDiagramContext<br /><br /> (v Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Aktuální diagram výběru.|[Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
 |Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (v Microsoft.VisualStudio.Modeling.Sdk. [version] .dll)|Umožňuje seskupení změn do transakce.|[Propojení aktualizací modelu UML pomocí transakcí](../modeling/link-uml-model-updates-by-using-transactions.md)|  
 |Microsoft.VisualStudio.Shell. SVsServiceProvider<br /><br /> (v Microsoft.VisualStudio.Shell.Immutable. [version] .dll)|Hostitel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Odtud můžete přístup k souborům, projektům a další aspekty.|[Otevření modelu UML pomocí rozhraní API sady Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|  
   

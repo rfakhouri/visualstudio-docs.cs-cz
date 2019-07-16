@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151034"
 ---
 # <a name="create-an-android-native-activity-app"></a>Vytvoření aplikace s NativeActivity pro Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Při instalaci Visual C++ pro vývoj mobilních řešení napříč platformami 
   
 1. Otevřít Visual Studio. V panelu nabídky zvolte **souboru**, **nový**, **projektu**.  
   
-2. V **nový projekt** dialogovém okně **šablony**, zvolte **Visual C++**, **různé platformy**a klikněte na tlačítko  **Aplikace s Nativeactivity (Android)** šablony.  
+2. V **nový projekt** dialogovém okně **šablony**, zvolte **Visual C++** , **různé platformy**a klikněte na tlačítko  **Aplikace s Nativeactivity (Android)** šablony.  
   
 3. Dejte aplikaci s názvem jako `MyAndroidApp`a klikněte na tlačítko **OK**.  
   

@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180332"
 ---
 # <a name="keybinding-element"></a>KeyBinding – element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Keybinding – element určuje klávesové zkratky pro příkazy.
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|identifikátor GUID|Povinný parametr.|  
+|guid|Povinný parametr.|  
 |id|Povinný parametr.|  
 |editor|Povinný parametr. Identifikátor GUID editoru určuje kontext úprav, pro kterou bude klávesová zkratka aktivní. Hodnota oboru globální vazby je "guidVSStd97".|  
 |key1|Povinný parametr. Platné hodnoty jsou všechny typable alfanumerické znaky a také předchází 0 x a VK_constants šestnáctkové hodnoty dvou číslic.|  

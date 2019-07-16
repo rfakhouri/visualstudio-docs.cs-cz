@@ -11,11 +11,11 @@ caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e8e3bebc82ffc2f714a6418afdb73de9092aab55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158205"
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Ukázka rozšíření programového testu UI pro Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Architektura přípony aplikace Excel
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
  [Třída ExtensionPackage](../test/sample-excel-extension-extensionpackage-class.md)   
- [TechnologyManager Class](../test/sample-excel-extension-technologymanager-class.md)   
+ [Třída TechnologyManager](../test/sample-excel-extension-technologymanager-class.md)   
  [Třída ActionFilter](../test/sample-excel-extension-actionfilter-class.md)   
  [Třídy element](../test/sample-excel-extension-element-classes.md)   
  [PropertyProvider – třída](../test/sample-excel-extension-propertyprovider-class.md)

@@ -18,11 +18,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: f7820947921e584d96d7f9e7299b70410b3d0587
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157146"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Analýza kvality kódu C/C++ pomocí nástroje Analýza kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Váš kód C/C++ lze zvýšit pomocí analýzy kódu v sadě Visual Studio můž
 |||  
 |-|-|  
 |[Přehled Analýzy kódu pro C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)|Další informace o funkcích nástroje Analýza kódu.|  
-|[Rychlý Start: Analýza kódu pro C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)|Naučte se základy analýzy kódu pro C/C++.|  
+|[Rychlý start: Analýza kódu pro C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)|Naučte se základy analýzy kódu pro C/C++.|  
 |[Použití sad pravidel k určování pravidel C++ pro spuštění](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)|Zadejte pravidla pro spuštění v projektu nebo řešení.|  
 |[Použití kontrolních mechanismů C++ Core Guidelines](../code-quality/using-the-cpp-core-guidelines-checkers.md)|Do projektu přidejte tyto moduly pro kontrolu podle dokumentu C++ Core Guidelines.|  
 |[Postupy: Nastavení vlastností analýzy kódu pro projekty C/C++](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md)|Popisuje konfiguraci nastavení pro analýzu kódu.|  

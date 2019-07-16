@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158634"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Návod: Ladění stylů XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Návod: Ladění šablony stylů XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kroky v tomto názorném postupu ukazují, jak použít ladicí program XSLT. Kroky zahrnují zobrazení proměnné, nastavovat zarážky a krokování kódu. Šablony stylů vyhledá všechny knihy, které náklady pod průměrnou cenu knih.  
@@ -37,7 +37,7 @@ Kroky v tomto názorném postupu ukazují, jak použít ladicí program XSLT. Kr
   
     Šablona stylů je otevřen v editoru XML.  
   
-3. Klikněte na tlačítko Procházet (**...** ) na **vstup** pole v okně Vlastnosti dokumentu.  
+3. Klikněte na tlačítko Procházet ( **...** ) na **vstup** pole v okně Vlastnosti dokumentu.  
   
 4. Vyhledejte soubor books.xml a klikněte na tlačítko **otevřít**.  
   

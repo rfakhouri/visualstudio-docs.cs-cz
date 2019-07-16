@@ -10,13 +10,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b17693523c75dc434fdda258c07a9b17ecfda1b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180236"
 ---
-# <a name="visual-studio-lifecycle-policy-exceptions"></a>Výjimky zásad životního cyklu sady Visual Studio
+# <a name="visual-studio-lifecycle-policy-exceptions"></a>Výjimky ze zásad životního cyklu sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio obsahuje sbírku kompilátorů, jazyků, modulů runtime, prostředí a dalších prostředků, které umožňují vývoj pro mnoho platforem Microsoftu. Visual Studio může pro potřeby zákazníků instalovat určité sady SDK a další komponenty společnosti Microsoft, které cílí a podporují tyto platformy Microsoftu. Tyto komponenty mohou být licencovány a podporovány podle vlastních podmínek a zásad.  
@@ -33,7 +33,7 @@ Visual Studio obsahuje sbírku kompilátorů, jazyků, modulů runtime, prostře
 |[Entity Framework 6](http://go.microsoft.com/fwlink/?LinkId=328950)|Entity Framework 6|  
 |[Exchange 2013](http://go.microsoft.com/fwlink/?LinkId=328950)|Webové služby Exchange|  
 |[Microsoft OWIN](http://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  
-|[Microsoft Web Developer Tools 2013](http://go.microsoft.com/fwlink/?LinkId=328952)|Microsoft Web Developer Tools 2013|  
+|[Nástroje Microsoft Web Developer Tools 2013](http://go.microsoft.com/fwlink/?LinkId=328952)|Microsoft Web Developer Tools 2013|  
 |Aktualizace těchto komponent se distribuují prostřednictvím rozšíření NuGet a jejich životní cyklus se neřídí standardními zásadami společnosti Microsoft.  Zobrazit [ http://docs.nuget.org/ ](http://docs.nuget.org/) Další informace.|JSON Web Token Handler for rozhraní Microsoft .NET Framework 4.5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web Optimization Framework<br /><br /> WebGrease|  
 |[ODataLib](http://go.microsoft.com/fwlink/?LinkId=328954)|ODataLib|  
 |[Office 2013](http://support.microsoft.com/lifecycle/?p1=16674)|Open XML SDK|  

@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c9526b2deaafb36e991afce6d29ace47f8564ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179355"
 ---
 # <a name="using-the-task-list"></a>Používání seznamu úkolů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Použít **seznamu úkolů** ke sledování komentářů kódu, které používa
   
 #### <a name="to-open-the-task-list"></a>Otevření seznamu úkolů  
   
-- Na **zobrazení** nabídce zvolte **seznamu úkolů** (klávesnice: Ctrl+\\,T).  
+- Na **zobrazení** nabídce zvolte **seznamu úkolů** (klávesnice: CTRL+\\, T).  
   
      ![Okno seznam úkolů](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -98,7 +98,7 @@ Použít **seznamu úkolů** ke sledování komentářů kódu, které používa
   
      [Seznamu úloh, prostředí, dialogové okno Možnosti](../ide/reference/task-list-environment-options-dialog-box.md) se zobrazí.  
   
-     ![Visual Studio Task List](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")  
+     ![Seznam úkolů sady Visual Studio](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")  
   
 3. V **tokeny** kategorie v **název** textového pole zadejte název tokenu, například "Chyba".  
   
@@ -113,7 +113,7 @@ Použít **seznamu úkolů** ke sledování komentářů kódu, které používa
   
 2. V **možnosti** dialogovém okně Otevřít **textový Editor**.  
   
-3. V části **C/C++**, zvolte **zobrazení**a potom nastavte **vytvořit výčet úkolů komentáře** k **False**.  
+3. V části **C/C++** , zvolte **zobrazení**a potom nastavte **vytvořit výčet úkolů komentáře** k **False**.  
   
 ## <a name="shortcuts"></a> Klávesové zkratky  
  A *místní* je záložka v kódu, který je sledována v **seznamu úkolů**; má jinou ikonu než regulární záložku. Dvakrát klikněte na zástupce v **seznamu úkolů** přejít na příslušné místo v kódu.  
@@ -122,7 +122,7 @@ Použít **seznamu úkolů** ke sledování komentářů kódu, které používa
   
 #### <a name="to-create-a-shortcut"></a>Vytvoření zástupce  
   
-- Umístěte ukazatel myši do kódu tam, kde chcete zástupce vložit. Zvolte **upravit &#124; záložky &#124; přidat zástupce seznamu úkolů** nebo stiskněte klávesu (klávesnice: Ctrl+K, Ctrl+H).  
+- Umístěte ukazatel myši do kódu tam, kde chcete zástupce vložit. Zvolte **upravit &#124; záložky &#124; přidat zástupce seznamu úkolů** nebo stiskněte klávesu (klávesnice: CTRL + K, Ctrl + H).  
   
      Procházet zástupce v kódu, zvolit zástupce v seznamu a klikněte na tlačítko **dalším úkolem** nebo **předchozího úkolu** z místní nabídky.  
   

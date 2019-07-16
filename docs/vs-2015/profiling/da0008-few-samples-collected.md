@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03fd9b6fd794320faf76119616900b79d5bf4333
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187860"
 ---
-# <a name="da0008-few-samples-collected"></a>DA0008: Shromážděno málo ukázek
+# <a name="da0008-few-samples-collected"></a>DA0008: Shromážděno málo vzorků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id pravidla | DA0008 |  
@@ -30,7 +30,7 @@ Id pravidla | DA0008 |
 | Zpráva | Nebyly shromážděny vzorky jenom pár. Zvažte delší spuštění nebo rychlejší vzorkovací frekvenci pro více významné výsledky. |  
 | Typ pravidla | Informace |  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Při spuštění profilace nebyly shromážděny vzorky jenom pár.  
   
 ## <a name="rule-description"></a>Popis pravidla  

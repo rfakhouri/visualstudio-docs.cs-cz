@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac4e3bf3c5dfa20729fe2270121b7649041d9e59
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159611"
 ---
 # <a name="instrumentation-method-data-views"></a>Zobrazení dat metody instrumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Tato část obsahuje informace o zobrazeních a sestavách souborů dat profiler
  [Zobrazení funkcí](../profiling/functions-view-instrumentation-data.md)  
  Uvádí data profilování dle funkce.  
   
-## <a name="reference"></a>Odkaz  
+## <a name="reference"></a>Reference  
  [Zobrazení podrobností funkce](../profiling/function-details-view.md)  
  Zobrazuje graf vztahů mezi vybranou funkci a funkce, které volá a byly volány vybranou funkcí.  
   

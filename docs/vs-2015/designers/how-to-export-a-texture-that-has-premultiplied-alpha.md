@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 61a53d8fca979fce04113aeb963e8cae94a49137
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159433"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Postupy: Export textury s Přednásobeným alfa
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Postupy: Export textury s přednásobenou hodnotou alfa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kanál s obsahem obrazu může generovat vynásobené alfa textury ze zdrojového obrazu. To může být jednodušší použít a robustnější než textury, které neobsahují předem vynásobené hodnoty alfa.  
@@ -44,7 +44,7 @@ Kanál s obsahem obrazu může generovat vynásobené alfa textury ze zdrojovéh
   
 2. Nakonfigurujte soubor textury tak, aby byl zpracován kanálem obsahu obrázku. V **Průzkumníka řešení**, otevřete místní nabídku pro soubor textury a klikněte na tlačítko **vlastnosti**. Na **vlastnosti konfigurace**, **Obecné** nastavte **typ položky** vlastnost **kanál obsahu obrazu**. Ujistěte se, že **obsahu** je nastavena na **Ano** a **vyloučit ze sestavení** je nastavena na **ne**a klikněte na tlačítko  **Použít** tlačítko. **Kanál obsahu obrazu** se zobrazí stránka pro konfiguraci vlastností.  
   
-3. Nakonfigurujte kanál obsahu obrázku ke generování předem vynásobených hodnot alfa. Na **vlastnosti konfigurace**, **kanál obsahu obrazu**, **Obecné** nastavte **převést na formát přednásobené alfa** Vlastnost **Ano (/ generatepremultipliedalpha)**.  
+3. Nakonfigurujte kanál obsahu obrázku ke generování předem vynásobených hodnot alfa. Na **vlastnosti konfigurace**, **kanál obsahu obrazu**, **Obecné** nastavte **převést na formát přednásobené alfa** Vlastnost **Ano (/ generatepremultipliedalpha)** .  
   
 4. Zvolte **OK** tlačítko.  
   

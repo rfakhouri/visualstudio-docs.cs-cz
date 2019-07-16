@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 931e1ab46793a5ff7e0434949330eaf4dbc820e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164423"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Konstanty (Přístup k rozhraní ladění SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ Tyto řetězcové konstanty lze použít k identifikaci různých oddílů sady 
 ## <a name="constants"></a>Konstanty  
  Následující jsou deklarovány jako makra jazyka C/C++.  
   
-|– Makro|Hodnota|  
+|– Makro|Value|  
 |-----------|-----------|  
 |`DiaTable_Symbols`|L "Symboly"|  
-|`DiaTable_Sections`|L"Sections"|  
+|`DiaTable_Sections`|L "Části"|  
 |`DiaTable_SrcFiles`|L "SourceFiles"|  
-|`DiaTable_LineNums`|L"LineNumbers"|  
+|`DiaTable_LineNums`|L "LineNumbers"|  
 |`DiaTable_SegMap`|L"SegmentMap"|  
 |`DiaTable_Dbg`|L"Dbg"|  
 |`DiaTable_InjSrc`|L "InjectedSource"|  

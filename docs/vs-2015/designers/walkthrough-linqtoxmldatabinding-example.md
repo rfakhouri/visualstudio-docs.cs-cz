@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Příklad LinqToXmlDataBinding | Dokumentace Microsoftu'
+title: 'Návod: Příklad LinqToXmlDataBinding | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 379c95e4de7831c833d8d82d48643a9da10be323
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187487"
 ---
-# <a name="walkthrough-linqtoxmldatabinding-example"></a>Průvodce: Příklad LinqToXmlDataBinding
+# <a name="walkthrough-linqtoxmldatabinding-example"></a>Návod: Příklad LinqToXmlDataBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento návod popisuje příklad LinqToXmlDataBinding a vysvětluje některé zajímavější obsah jeho dvě primární zdrojové soubory, L2DBForm.xaml a L2DBForm.xaml.cs.  
@@ -50,4 +50,4 @@ Tento návod popisuje příklad LinqToXmlDataBinding a vysvětluje některé zaj
   
 ## <a name="see-also"></a>Viz také  
  [Datové vazby WPF pomocí LINQ to XML příklad](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
- [Postupy: Sestavení a spuštění příkladu Linqtoxmldatabinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)
+ [Postupy: Sestavení a spuštění příkladu LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)

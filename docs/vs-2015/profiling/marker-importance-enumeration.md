@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4451a7b222b66f0fe5bea2b0e5f2b8499c9033c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198392"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance – výčet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ enum marker_importance;
   
 ### <a name="values"></a>Hodnoty  
   
-|Název|Popis|  
+|Name|Popis|  
 |----------|-----------------|  
 |`critical_importance`|Určuje, že má značku stěžejní význam.|  
 |`high_importance`|Určuje, že značky má vysokou důležitostí.|  
@@ -45,7 +45,7 @@ enum marker_importance;
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** cvmarkersobj.h  
   
- **Namespace:** Concurrency::diagnostic  
+ **Namespace:** Concurrency::Diagnostic –  
   
 ## <a name="see-also"></a>Viz také  
  [diagnostic – obor názvů](../profiling/diagnostic-namespace.md)

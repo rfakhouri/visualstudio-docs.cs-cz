@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0920999eee7460c8bf697e245bae55a3641b8e18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184280"
 ---
-# <a name="contained-languages"></a>Omezením jazyky
+# <a name="contained-languages"></a>Obsažené jazyky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
 *Jazyky obsažené* jazyků, které jsou obsaženy v jiných jazycích. Například ve formátu HTML v [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] stránky mohou obsahovat [!INCLUDE[csprcs](../includes/csprcs-md.md)] nebo [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] skripty. Architektura s duální jazyka je vyžadována pro editor souborů .aspx a poskytuje technologie IntelliSense, zabarvení a dalších funkcí pro úpravy pro kód HTML a skriptovací jazyk.  

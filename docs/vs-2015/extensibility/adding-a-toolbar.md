@@ -12,11 +12,11 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184859"
 ---
 # <a name="adding-a-toolbar"></a>Přidání panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ Tento návod ukazuje, jak přidat panel nástrojů Visual Studio IDE.
   
 6. Klikněte pravým tlačítkem na řádku nabídek sady Visual Studio zobrazíte seznam panely nástrojů. Vyberte **testování nástrojů**.  
   
-7. Teď byste měli vidět panelu nástrojů jako ikony napravo od najít v souborech ikonu. Když kliknete na ikonu, zobrazí se okno se zprávou, že **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+7. Teď byste měli vidět panelu nástrojů jako ikony napravo od najít v souborech ikonu. Když kliknete na ikonu, zobrazí se okno se zprávou, že **ToolbarTestCommandPackage. Uvnitř IDEToolbar.ToolbarTestCommand.MenuItemCallback()** .  
   
 ## <a name="see-also"></a>Viz také  
  [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

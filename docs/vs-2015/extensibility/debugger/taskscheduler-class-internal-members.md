@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 427a84b3dcda0471f5ec9d71883a5a8e859bb92d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176703"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Třída TaskScheduler – vnitřní členy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Toto téma popisuje interní členy <xref:System.Threading.Tasks.TaskScheduler?d
   
 ### <a name="methods"></a>Metody  
   
-|Název|Popis|  
+|Name|Popis|  
 |----------|-----------------|  
 |[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Načte pole všech naplánovaných úloh.|  
 |[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Pole všech <xref:System.Threading.Tasks.TaskScheduler> objekty, které jsou momentálně aktivní.|  

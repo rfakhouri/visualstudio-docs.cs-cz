@@ -11,11 +11,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162119"
 ---
 # <a name="description-element-visual-studio-templates"></a>Element popisu (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54833643"
 Určuje popis šablony, protože se zobrazí buď **nový projekt** nebo **přidat novou položku** dialogové okno.  
   
  \<Vstemplate – >  
- \<TemplateData>  
+ \<TemplateData >  
  \<Popis >  
   
 ## <a name="syntax"></a>Syntaxe  

@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161159"
 ---
-# <a name="halfquarter-texture-dimensions-variant"></a>Varianta dimenze polovině/textury
+# <a name="halfquarter-texture-dimensions-variant"></a>Varianta polovičních/čtvrtinových dimenzí textury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Snižuje rozměrů textury na textury, které nejsou cíle vykreslování.  

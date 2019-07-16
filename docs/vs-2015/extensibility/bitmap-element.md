@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc1fb57c7ec43421b211b29cfd6ab97b24a1864c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184748"
 ---
 # <a name="bitmap-element"></a>Bitmap – element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Definuje rastrový obrázek. Rastrový obrázek je načten z prostředku nebo ze
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|identifikátor GUID|Povinný parametr. Identifikátor GUID identifikátoru GUID a ID příkazu.<br /><br /> Atribut guid rastrového obrázku není přidružené žádné VSPackage nebo jiné skupiny příkazů.  Musí být jedinečné pro definici bitmapy a neměl by se používat k žádnému jinému účelu.|  
+|guid|Povinný parametr. Identifikátor GUID identifikátoru GUID a ID příkazu.<br /><br /> Atribut guid rastrového obrázku není přidružené žádné VSPackage nebo jiné skupiny příkazů.  Musí být jedinečné pro definici bitmapy a neměl by se používat k žádnému jinému účelu.|  
 |resID|ID identifikátoru GUID a ID příkazu. Je požadován resID nebo atribut href.<br /><br /> Atribut resID je ID prostředku celé číslo, které určuje pruhu rastrový obrázek, který má být načten při slučování tabulky příkazů.  Při načítání tabulky příkazů rastrové obrázky určené ID prostředku se načtou z prostředku stejného modulu.|  
 |usedList|Povinné, pokud je přítomen atribut resID. Vybere dostupných imagí v pruhu rastrového obrázku.|  
 |href|Cesta k rastrového obrázku. Je požadován resID nebo atribut href.<br /><br /> Cesty zahrnutí se hledá soubor uvedeného obrázku, který je součástí výsledný binární soubor.  Během sloučení příkaz tabulky zkopírovat bitovou kopii a je potřeba žádné další prostředků vyhledávání nebo zatížení.  Pokud atribut usedList není k dispozici, jsou dostupné všechny Image v pruhu. **Poznámka:**  Image může být zadána v jednom z několika formátů, které zahrnují BMP, PNG nebo .gif.  Starší verze kompilátoru nepodporuje 32bitové rastrové obrázky, které měly alfa informace pro částečnou průhlednost. Alternativní řešení pro tyto verze má formát PNG.|  
