@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 981b37fe1ebaad5e45f0308143ab0384ef1d559b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145609"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,16 +49,16 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 ## <a name="invalid-options"></a>Neplatné možnosti  
  Tyto možnosti nelze zadat na stejném příkazovém řádku jako **Sys**.  
   
- **PF**[**:**`Events`]  
+ **PF**[ **:** `Events`]  
  Nastaví událost odběru vzorků na chyby stránek a volitelně nastaví interval vzorkování na `Events`. Výchozí interval PF je 10.  
   
- **Timer**[**:**`Cycles`]  
+ **Časovač**[ **:** `Cycles`]  
  Nastaví událost odběru vzorků na hodin procesoru cykly a volitelně nastaví interval vzorkování na `Cycles`. Výchozí interval časovače je 10 000 000.  
   
  **Čítač:** `Name`[`,Reload`[`,FriendlyName`]]  
  Nastaví událost odběru vzorků na výkon procesoru čítač určené `Name` a nastaví interval vzorkování na `Reload`.  
   
- **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
  Shromažďuje data paměti .NET. Ve výchozím nastavení (**přidělení**), data se shromažďují v každé události přidělení paměti. Když **životnost** parametr zadán, data se shromažďují také na všechny události uvolňování paměti kolekce.  
   
 ## <a name="example"></a>Příklad  

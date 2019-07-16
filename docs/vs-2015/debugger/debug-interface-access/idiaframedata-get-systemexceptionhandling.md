@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba6bddf905834f711cfcd5ab9606420e9fbfa6b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161437"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ HRESULT get_systemExceptionHandling ( 
 ## <a name="remarks"></a>Poznámky  
  Zpracování výjimek systému se běžně označuje jako strukturované zpracování výjimek.  
   
- Chcete-li zjistit, zda zpracování výjimek jazyka C++ je v platnosti, zavolejte [idiaframedata::get_cplusplusexceptionhandling –](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) metody.  
+ Určete, jestli C++ zpracování výjimek je v platnosti, zavolejte [idiaframedata::get_cplusplusexceptionhandling –](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) metody.  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

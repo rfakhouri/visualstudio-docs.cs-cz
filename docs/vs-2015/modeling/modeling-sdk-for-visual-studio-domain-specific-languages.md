@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7bcfe986877305c55f6b459b8c519e4f12f5a503
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159020"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Sada Modeling SDK pro sadu Visual Studio – jazyky domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,10 +72,10 @@ Pomocí sady SDK modelování pro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (
 
  [Vytvoření jazyka specifického pro doménu založeného na WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Postupy: Rozšíření návrháře jazyka specifického pro doménu](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Postupy: Rozšíření Návrháře DSL](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Verze sady Visual Studio podporované pro Visualization & Modeling SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [Postupy: Migrace jazyka specifického pro doménu na novou verzi.](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [Postupy: Migrace jazyka specifického pro doménu na novou verzi](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Referenční dokumentace rozhraní API k sadě Modeling SDK pro Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

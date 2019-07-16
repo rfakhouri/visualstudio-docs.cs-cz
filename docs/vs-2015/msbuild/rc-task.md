@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9bc8b770e654442f14e693fda35d7cf6f5edbd12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158258"
 ---
 # <a name="rc-task"></a>RC – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Zabalí nástroj Microsoft Windows Resource Compiler, rc.exe. **RC** úloh zkomp
 |Parametr|Popis|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|Volitelné **String []** parametru.<br /><br /> Přidá adresář do seznamu adresáře, které se budou hledat vkládané soubory.<br /><br /> Další informace najdete v tématu **/I** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webové stránce MSDN.|  
-|**AdditionalOptions**|Volitelné **řetězec** parametru.<br /><br /> Seznam příklad příkazového řádku optionsor **"**_/option1 /option2 /option#_". Tento parametr použijte k určení možnosti příkazového řádku, které nejsou reprezentovány jakýkoli jiný **RC** parametr úlohy.<br /><br /> Další informace najdete v tématu Možnosti v [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webové stránce MSDN.|  
+|**AdditionalOptions**|Volitelné **řetězec** parametru.<br /><br /> Seznam příklad příkazového řádku optionsor **"** _/option1 /option2 /option#_ ". Tento parametr použijte k určení možnosti příkazového řádku, které nejsou reprezentovány jakýkoli jiný **RC** parametr úlohy.<br /><br /> Další informace najdete v tématu Možnosti v [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webové stránce MSDN.|  
 |**Jazyková verze**|Volitelné **řetězec** parametru.<br /><br /> Určuje ID národního prostředí, který představuje jazykovou verzi používané prostředky.<br /><br /> Další informace najdete v tématu **/l** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webové stránce MSDN.|  
 |**IgnoreStandardIncludePath**|Volitelné **logická** parametru.<br /><br /> Pokud `true`, zabrání kontrole proměnná prostředí INCLUDE při hledání hlavičkové soubory nebo soubory prostředků kompilátor prostředků.<br /><br /> Další informace najdete v tématu **/x** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webové stránce MSDN.|  
 |**NullTerminateStrings**|Volitelné **logická** parametru.<br /><br /> Pokud `true`, všechny řetězce v tabulce řetězců končí hodnotou null.<br /><br /> Další informace najdete v tématu **/n** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webové stránce MSDN.|  

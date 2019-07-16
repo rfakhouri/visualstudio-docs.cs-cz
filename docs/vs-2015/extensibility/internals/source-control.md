@@ -11,11 +11,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a29071035ccdd8a94b4ae26323780bcb24e8e23
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155659"
 ---
 # <a name="source-control"></a>Správa zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
