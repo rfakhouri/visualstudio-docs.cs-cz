@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156327"
 ---
-# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Postupy: Použití shaderu na 3D Model
+# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Postupy: Použití shaderu na 3D model
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento dokument popisuje způsob použití Editoru modelů pro použití orientovaného grafu Shader Language (DGSL) shaderu na 3D model.  
@@ -40,10 +40,10 @@ Tento dokument popisuje způsob použití Editoru modelů pro použití orientov
   
    ![3&#45;scény D, která demonstruje účinek základní barvy](../designers/media/digit-3d-model-effect.png "číslice 3D modelu efekt")  
   
-   Po použití shaderu na model, lze jej otevřít v Návrháři shaderu tak, že vyberete model a pak v **vlastnosti** okno v **(rozšířené)** vlastnost **efekt**skupiny vlastností, vyberete symbol tří teček (**...** ) tlačítko.  
+   Po použití shaderu na model, lze jej otevřít v Návrháři shaderu tak, že vyberete model a pak v **vlastnosti** okno v **(rozšířené)** vlastnost **efekt**skupiny vlastností, vyberete symbol tří teček ( **...** ) tlačítko.  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Vytvoření základního 3D modelu](../designers/how-to-create-a-basic-3-d-model.md)   
  [Postupy: Vytvoření shaderu základní barvy](../designers/how-to-create-a-basic-color-shader.md)   
- [Model Editor](../designers/model-editor.md)   
+ [Editor modelů](../designers/model-editor.md)   
  [Návrhář shaderů](../designers/shader-designer.md)

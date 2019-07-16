@@ -10,20 +10,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161540"
 ---
-# <a name="configure-the-windows-firewall-for-remote-debugging"></a>Konfigurace brány Windows Firewall pro vzdálené ladění
+# <a name="configure-the-windows-firewall-for-remote-debugging"></a>Konfigurace brány firewall ve Windows pro vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje postup konfigurace brány firewall pro povolení vzdáleného ladění na počítačích, na kterých běží tyto operační systémy:  
   
 - Windows 7  
   
-- Windows 8/8.1  
+- Windows 8 nebo 8.1  
   
 - Windows 10  
   

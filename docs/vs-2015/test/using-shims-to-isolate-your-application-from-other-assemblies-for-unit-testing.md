@@ -9,11 +9,11 @@ caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ddbcac3073dec1e7f21d381d30978589f1cdd792
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185738"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Izolace aplikace od ostatních sestavení pomocí překrytí za účelem testů jednotek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -508,5 +508,5 @@ ShimFile.WriteAllTextStringString = shim;
   
 ## <a name="see-also"></a>Viz také  
  [Izolace testovaného kódu pomocí napodobenin Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)   
- [Peter Provost blogu: Visual Studio 2012 Shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
- [Video (1h16): Testování bez možností intenzivního testování kódu pomocí zástupného rozhraní v sadě Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+ [Peter Provost blogu: Visual Studio 2012 překrytí](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
+ [Video (1 hodina 16): Testování bez možností intenzivního testování kódu pomocí zástupného rozhraní v sadě Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)

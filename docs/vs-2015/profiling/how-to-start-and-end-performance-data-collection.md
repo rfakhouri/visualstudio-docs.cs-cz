@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15c6d6c904bbab27bac541894ed6cd4f9e1f80f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202682"
 ---
-# <a name="how-to-start-and-end-performance-data-collection"></a>Postupy: Zahájení a ukončení shromažďování dat výkonu
+# <a name="how-to-start-and-end-performance-data-collection"></a>Postupy: Zahájení a ukončení shromažďování údajů o výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Je nutné přidat cílový binární soubor, který chcete Profilovat, do relace výkonu, před zahájením profilování. Chcete-li přidat cíl, klikněte pravým tlačítkem na **cíle** v **prohlížeč výkonu**a potom klikněte na tlačítko **přidat cílový binární**. V **přidat cílový binární** dialogové okno, vyberte název souboru a pak klikněte na tlačítko **otevřít**. Přidání nové binární soubor.  

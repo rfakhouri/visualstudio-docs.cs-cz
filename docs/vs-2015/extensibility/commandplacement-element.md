@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43fd417c4d54c0ab57133cf6dbff2c770c1ffc45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184339"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement – element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ Commandplacement – element umožňuje tlačítka, skupiny a nabídek, které m
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|identifikátor GUID|Povinný parametr. Identifikátor guid sady příkazů, jak jsou definovány v [Symbols – Element](../extensibility/symbols-element.md).|  
+|guid|Povinný parametr. Identifikátor guid sady příkazů, jak jsou definovány v [Symbols – Element](../extensibility/symbols-element.md).|  
 |id|Povinný parametr. Id nabídky, skupiny nebo příkaz, který byl umístěn, jak jsou definovány v `Symbols Element`.|  
-|priorita|Povinný parametr. Určuje vizuální umístění položky v svého nadřízeného elementu.|  
+|priority|Povinný parametr. Určuje vizuální umístění položky v svého nadřízeného elementu.|  
 |Podmínka|Volitelné. Zobrazit [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Podřízené elementy  

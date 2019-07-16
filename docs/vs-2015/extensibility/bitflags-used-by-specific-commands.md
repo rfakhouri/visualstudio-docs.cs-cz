@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184685"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Příznaky bitflag používané konkrétními příkazy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="add-flags"></a>Přidání příznaků  
  Tyto příznaky jsou používány [sccadd –](../extensibility/sccadd-function.md).  
   
-|Příznak|Hodnota|Popis|  
+|Příznak|Value|Popis|  
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Modul plug-in správy zdrojového kódu by měl automaticky zjišťovat, zda je text nebo binární soubor.|  
 |`SCC_FILETYPE_TEXT`|0x01|Typ souboru je text.|  
@@ -42,7 +42,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="diff-flags"></a>Příznaky diff  
  [Sccdiff –](../extensibility/sccdiff-function.md) používá tyto příznaky pro určení oboru rozdílové operaci. `SCC_DIFF_QD_xxx` Příznaky se vzájemně vylučují. Pokud některý z nich není zadána, žádný vizuální zpětnou vazbu je má být poskytnut. V "rychlé diff" (hloubka fronty), modul plug-in neurčuje, čím se liší, pouze pokud je jiný soubor. Pokud žádná z těchto příznaků není zadán, že se provádí "visual diff"; podrobný soubor rozdíly jsou vypočítané a zobrazí. Pokud hf požadovaný není podporován, modul plug-in přesune dalšímu nejlepší. Například pokud rozhraní IDE požaduje kontrolní součet a modulu plug-in ji nepodporuje, modul plug-in nepodporuje full obsah zkontrolujte (stále mnohem rychleji než zobrazení vizuálu).  
   
-|Příznak|Hodnota|Popis|  
+|Příznak|Value|Popis|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignorujte velká rozdíly.|  
 |`SCC_DIFF_IGNORESPACE`|0x0004|Ignorujte prázdné znaky rozdíly. **Poznámka:**  `SCC_DIFF_IGNORECASE` a `SCC_DIFF_IGNORESPACE` příznaky jsou volitelné příznaky bitflag.|  
@@ -54,14 +54,14 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="populatelist-flag"></a>Příznak PopulateList  
  Tento příznak se používá [sccpopulatelist –](../extensibility/sccpopulatelist-function.md) v `fOptions` parametru.  
   
-|Příznak|Hodnota|Popis|  
+|Příznak|Value|Popis|  
 |----------|-----------|-----------------|  
 |`SCC_PL_DIR`|0x00000001L|Rozhraní IDE dojde k předání adresáře, nikoli soubory.|  
   
 ## <a name="populatedirlist-flags"></a>Příznaky PopulateDirList  
  Tyto příznaky jsou používány [sccpopulatedirlist –](../extensibility/sccpopulatedirlist-function.md) v `fOptions` parametru.  
   
-|Hodnota možnosti|Hodnota|Popis|  
+|Hodnota možnosti|Value|Popis|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|Prozkoumejte pouze jednu úroveň adresářů pro adresáře (to je výchozí hodnota).|  
 |SCC_PDL_RECURSIVE|0x0001|Rekurzivně zkontrolujte všechny adresáře v rámci každého daného adresáře.|  
@@ -70,7 +70,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 ## <a name="openproject-flags"></a>Příznaky OpenProject  
  Tyto příznaky jsou používány [sccopenproject –](../extensibility/sccopenproject-function.md) v `dwFlags` parametru.  
   
-|Hodnota možnosti|Hodnota|Popis|  
+|Hodnota možnosti|Value|Popis|  
 |------------------|-----------|-----------------|  
 |SCC_OP_CREATEIFNEW|0x00000001L|Pokud projekt neexistuje ve správě zdrojového kódu, vytvořte ho. Pokud není tento příznak nastaven, zobrazit výzvu uživateli pro projekt pro vytvoření (není-li `SCC_OP_SILENTOPEN` zadán příznak).|  
 |SCC_OP_SILENTOPEN|0x00000002L|Nezobrazovat výzvu k vytvoření projektu. jenom vrátit `SCC_E_UNKNOWNPROJECT`.|  

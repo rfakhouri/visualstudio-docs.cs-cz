@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b6da7ef473f279c968c676c768e89a6f1145ae4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159386"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Klávesové zkratky a modifikační klávesy v Blendu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Klávesové zkratky můžete urychlit práci díky snížení akce, které by vy
   
    Většina klávesových zkratek jsou snadno rozpoznat v uživatelském rozhraní [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]; se zobrazí napravo od příkazů nabídky. Třeba na **souboru** nabídky, **otevřít projekt** příkazu nabídky zahrnuje klávesové zkratky CTRL + SHIFT + O. Zobrazíte klávesové zkratky nástroje **nástroje** panelu, umístěte ukazatel ukazatel myši nástroj.  
   
-   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")  
+   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4E8A-8039-bead80a3e595")  
   Klávesové zkratky, které se zobrazí vedle položky nabídky, které mají klávesové zkratky  
   
   Další informace o usnadnění přístupu a funkcích najdete v části [usnadnění společnosti Microsoft](http://go.microsoft.com/fwlink/?LinkId=75069).  

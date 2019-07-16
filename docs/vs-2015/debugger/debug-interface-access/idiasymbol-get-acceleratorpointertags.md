@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 829c7a0193ce2742959f677e95dd4a499997cf5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763873"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68149845"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ HRESULT get_acceleratorPointerTags(
  [in] Velikost pole výstup `pPointerTags`.  
   
  `pcnt`  
- [out] Počet značek akcelerátoru ukazatel ve funkci jazyka C++ AMP akcelerátor zástupné procedury.  
+ [out] Počet značek ukazatel akcelerátoru v C++ AMP akcelerátor zástupné procedury funkcí.  
   
  `pPointerTags`  
- [out] A `DWORD` pole ukazatel, který je vyplněna hodnoty značek akcelerátoru ukazatel ve funkci jazyka C++ AMP akcelerátor zástupné procedury.  
+ [out] A `DWORD` pole ukazatel, který je vyplněna hodnot značek akcelerátoru ukazatel v C++ AMP akcelerátor zástupné procedury funkcí.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  

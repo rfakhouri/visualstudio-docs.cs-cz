@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194950"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: limitech paměti spravovaného 32bitová aplikace spuštěná v procesu
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32bitová aplikace spuštěná v limitech paměti spravovaného procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0018|  
+Id pravidla | DA0018 |  
 | Kategorie | Použití nástroje pro profilaci |  
 | Metoda profilace | Vzorkování |  
 | Zpráva | Spravované přidělení paměti se blíží se limit počtu výchozí pro 32bitový proces. Vaše aplikace může být vázána na paměť. |  
@@ -31,7 +31,7 @@ Rule Id|DA0018|
   
  Při profilování pomocí vzorkování, paměti .NET nebo metodám sporu prostředků, musíte shromáždit minimálně 10 vzorky k aktivaci tohoto pravidla.  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Systém data shromážděná během spuštění profilování označuje, že rozhraní .NET Framework paměti haldy dosaženy maximální velikost, se kterým dosáhnete spravované haldy v 32bitový proces. Maximální velikost je výchozí hodnota. Je založen na celkové množství adresní prostor procesu je možné přidělit pro Nesdílené bajty. Hlášená hodnota je maximum pozorované hodnotu haldy zatímco byla aktivní profilovaný proces. Vezměte v úvahu profilaci znovu pomocí metody profilování paměti .NET a optimalizaci aplikací pomocí spravované prostředky.  
   
  Při velikosti spravované haldy přístup výchozí omezení, proces automatického uvolňování paměti kolekce pravděpodobně mají být vyvolány častěji. Tím se zvyšuje nároky na správu paměti.  

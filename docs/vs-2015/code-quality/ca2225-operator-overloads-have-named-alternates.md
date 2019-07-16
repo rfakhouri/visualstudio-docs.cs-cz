@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201618"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Přetížení operátoru mají pojmenované alternativy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54786582"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Pevné|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Bylo zjištěno přetížení operátoru a alternativní metoda s očekávaným názvem nebyla nalezena.
 
 ## <a name="rule-description"></a>Popis pravidla
@@ -47,7 +47,7 @@ ms.locfileid: "54786582"
 |&|A|&|BitwiseAnd|
 |&=|A =|&=|BitwiseAnd|
 |&#124;|Nebo|&#124;|BitwiseOr|
-|&#124;=|Or=|&#124;=|BitwiseOr|
+|&#124;=|Nebo =|&#124;=|BitwiseOr|
 |--|Není k dispozici|--|Snížení|
 |/|/|/|Dělení|
 |/=|/=|/=|Dělení|

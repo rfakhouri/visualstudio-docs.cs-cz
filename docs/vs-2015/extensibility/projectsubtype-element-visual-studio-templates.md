@@ -14,11 +14,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d07a62027b494242d3c25aba00fbd5f4d75df78b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193899"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType – element (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54786067"
 Klasifikuje v subcategory hodnoty zadané v šabloně `ProjectType` elementu.  
   
  \<Vstemplate – >  
- \<TemplateData>  
+ \<TemplateData >  
  \<ProjectSubType>  
   
 ## <a name="syntax"></a>Syntaxe  

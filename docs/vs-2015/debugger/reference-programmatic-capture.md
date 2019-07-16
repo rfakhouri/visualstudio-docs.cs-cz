@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cebeb7eb651c11b5f560b981df30213fc726c66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162264"
 ---
 # <a name="reference-programmatic-capture"></a>Referenční dokumentace (zachytávání prostřednictvím kódu programu)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Diagnostika grafiky podporuje programovou kontrolu nad jeho zachytávání funkc
   
 ### <a name="classes"></a>Třídy  
   
-|Název|Popis|  
+|Name|Popis|  
 |----------|-----------------|  
 |[Třída VsgDbg](../debugger/vsgdbg-class.md)|Představuje rozhraní, přes který součást diagnostiky grafiky v aplikaci je řízen prostřednictvím kódu programu.|  
   
 ### <a name="preprocessor-symbols"></a>Symboly preprocesoru  
   
-|Název|Popis|  
+|Name|Popis|  
 |----------|-----------------|  
 |[DONT_SAVE_VSGLOG_TO_TEMP](../debugger/dont-save-vsglog-to-temp.md)|Definuje jeho přítomnost, zda soubor protokolu grafiky je uložen do adresáře dočasných souborů uživatele.|  
 |[VSG_DEFAULT_RUN_FILENAME](../debugger/vsg-default-run-filename.md)|Definuje výchozí název souboru pro soubor protokolu grafiky.|  

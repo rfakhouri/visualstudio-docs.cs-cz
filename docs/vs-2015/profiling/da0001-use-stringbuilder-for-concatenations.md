@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 386eda282364ccc4ab9841f126bb10944477df18
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202248"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Použití třídy StringBuilder ke zřetězení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [DA0001: Po
 |Id pravidla|DA0001|  
 |Kategorie|Použití rozhraní .NET framework|  
 |Metod profilace|Vzorkování<br /><br /> Instrumentace|  
-|Zpráva|Zvažte možnost použít StringBuilder pro zřetězení řetězců|  
+|Message|Zvažte možnost použít StringBuilder pro zřetězení řetězců|  
 |Typ zprávy|Upozornění|  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Volání System.String.Concat jsou podstatnou část dat profilování. Zvažte použití <xref:System.Text.StringBuilder> třídy k vytvoření řetězce z více segmentů.  
   
 ## <a name="rule-description"></a>Popis pravidla  

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cdea32ece50e83c046a67399a0d5f36410edb9a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189707"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,6 +58,6 @@ pEnum->Next( 1, &pSym, &celt );
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
+ [Idiaenumsymbols –](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [Idiasession::findlinesbylinenum –](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

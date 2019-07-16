@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6f9eaa1299ec49cf20713723e822f8fc641401d8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199136"
 ---
 # <a name="list-registers-command"></a>Listovat registry – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,6 +65,6 @@ r /Display Flags
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
+ [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Základy ladění: Registr – okno](../../debugger/debugging-basics-registers-window.md)   
  [Postupy: Použití okna Registry](../../debugger/how-to-use-the-registers-window.md)

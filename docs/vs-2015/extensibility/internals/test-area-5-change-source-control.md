@@ -12,13 +12,13 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d79281e2fef6a7ae77a2ba6c8375f47dc6520b3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155966"
 ---
-# <a name="test-area-5-change-source-control"></a>Testovací oblast 5: Změnit správu zdrojového kódu
+# <a name="test-area-5-change-source-control"></a>Testovací oblast 5: Změna správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Tento modul plug-in testu oblast správy zdrojového kódu obsahuje informace o změnou správy zdrojových kódů prostřednictvím **změnit správu zdrojových kódů** příkazu.  

@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58aca542571066ecfa9328c9600972665e757150
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176632"
 ---
-# <a name="callercallee-view"></a>Zobrazení volající/volaný
+# <a name="callercallee-view"></a>Zobrazení olající/volaný
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Zobrazení volající/volaný zobrazí profilování informace pro vybrané funkce a jeho funkce pro nadřazené a podřízené. Zobrazení volající/volaný obsahuje tři tabulky:  

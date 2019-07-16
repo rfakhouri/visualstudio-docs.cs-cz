@@ -14,13 +14,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186011"
 ---
-# <a name="create-an-offline-installation-of-visual-studio"></a>Vytvoření Offline instalace sady Visual Studio
+# <a name="create-an-offline-installation-of-visual-studio"></a>Vytvoření offline instalace sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [vytvoření offline instalace sady Visual Studio](/visualstudio/install/create-an-offline-installation-of-visual-studio) nebo [vytvoření síťové instalace sady Visual Studio](/visualstudio/install/create-a-network-installation-of-visual-studio).

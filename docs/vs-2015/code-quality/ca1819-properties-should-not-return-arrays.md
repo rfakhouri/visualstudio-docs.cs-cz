@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 48f1b0c0860f8dfc38a83856570cdcdfa6f6ffc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201735"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Vlastnosti by neměly vracet pole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54786795"
 |Kategorie|Microsoft.Performance|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
  Veřejné nebo chráněné vlastnosti veřejného typu vrací pole.
 
 ## <a name="rule-description"></a>Popis pravidla
@@ -42,7 +42,7 @@ ms.locfileid: "54786795"
  Chcete-li opravit porušení tohoto pravidla, metodu nastavení vlastnosti nebo změňte vlastnost na vrácení kolekce.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Atributy mohou obsahovat vlastnosti, které vrací pole, ale nemůže obsahovat vlastnosti, které vracejí kolekce. Můžete potlačit upozornění, která se vyvolá pro vlastnost atributu, který je odvozen od třídy [System.Attribute] (<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) třídy. V opačném případě nepotlačujte upozornění tohoto pravidla.
+ Atributy mohou obsahovat vlastnosti, které vrací pole, ale nemůže obsahovat vlastnosti, které vracejí kolekce. Můžete potlačit upozornění, která se vyvolá pro vlastnost atributu, který je odvozen z ([System.Attribute]<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) třídy. V opačném případě nepotlačujte upozornění tohoto pravidla.
 
 ## <a name="example-violation"></a>Příklad porušení
 

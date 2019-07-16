@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb86a15e73ac2410ad763acd3b361e4a82bc44f1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199075"
 ---
 # <a name="new-file-command"></a>Nový soubor – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
   
  Výše uvedený příklad určuje, že soubor C++ šablona se nachází v kategorii Visual C++ v **nový soubor** dialogové okno.  
   
- /e:`editorname`  
+ / e:`editorname`  
  Volitelné. Název editoru, ve kterém chcete soubor otevřít. Pokud je zadán argument, ale žádný editor název je zadán, **otevřít v** zobrazí se dialogové okno.  
   
  / E:`editorname` argument syntaxe používá názvy editoru, jak se objeví v dialogovém okně Otevřít s, do uvozovek.  
@@ -69,7 +69,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
+ [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Okno příkazového řádku](../../ide/reference/command-window.md)   
  [Příkazové podokno](../../ide/reference/immediate-window.md)   
  [Pole najít/příkaz](../../ide/find-command-box.md)   

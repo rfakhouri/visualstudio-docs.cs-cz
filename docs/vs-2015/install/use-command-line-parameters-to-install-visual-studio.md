@@ -15,13 +15,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180253"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio"></a>Použití parametrů příkazového řádku instalace sady Visual Studio
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Instalace sady Visual Studio s použitím parametrů příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nejnovější dokumentaci k sadě Visual Studio, naleznete v tématu [použít parametry příkazového řádku instalace sady Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio).

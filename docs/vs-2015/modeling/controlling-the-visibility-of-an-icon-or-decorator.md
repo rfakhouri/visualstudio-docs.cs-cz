@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159629"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Řízení viditelnosti ikony či dekorátoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ A *dekoratér* je ikona nebo řádek textu, který se zobrazí na tvar z jazyka 
   
 1. Přidáte počítané doménová vlastnost, která do doménové třídy. V **vlastnosti** okno, nastavte následující hodnoty:  
   
-     **IsBrowsable =**`False`**-skryje vlastnost od uživatele**  
+     **IsBrowsable =** `False` **-skryje vlastnost od uživatele**  
   
-     **Typ =**`Calculated`**– to znamená, že zadáte kód, který vypočítá její hodnotu**  
+     **Typ =** `Calculated` **– to znamená, že zadáte kód, který vypočítá její hodnotu**  
   
      **Název** například **DecoratorControl**  
   

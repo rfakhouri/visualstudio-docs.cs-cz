@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176691"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Postupy: Vytváření šablon vícenásobného projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ ms.locfileid: "60096449"
   
 3. Vytvořte kořenový soubor .vstemplate, který obsahuje metadata pro víceprojektové šabloně. Další informace najdete v prvním příkladu v následující části.  
   
-4. Vyberte soubory a složky, které chcete do šablony zahrnout, klikněte pravým tlačítkem na výběr, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)**. Komprimování souborů a složek do souboru .zip.  
+4. Vyberte soubory a složky, které chcete do šablony zahrnout, klikněte pravým tlačítkem na výběr, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)** . Komprimování souborů a složek do souboru .zip.  
   
 5. Vložit soubor ZIP šablony [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] adresář šablon projektu. Ve výchozím nastavení je tento adresář Documents\Visual Studio *verze*\Templates\ProjectTemplates\\.  
   

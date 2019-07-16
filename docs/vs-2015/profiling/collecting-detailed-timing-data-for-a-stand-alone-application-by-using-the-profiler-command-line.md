@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b39ac28776b1af71e2cccb601776f5518ff9e99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176625"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,5 +52,5 @@ Tato část popisuje postupy a možnosti k shromažďování údajů o výkonu p
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analýza dat instrumentace zobrazeních a sestavách  
  [Zobrazení dat metody instrumentace](../profiling/instrumentation-method-data-views.md)  
   
-## <a name="reference"></a>Odkaz  
+## <a name="reference"></a>Reference  
  [Referenční dokumentace nástrojů příkazového řádku pro profilaci](../profiling/command-line-profiling-tools-reference.md)

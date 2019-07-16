@@ -9,13 +9,13 @@ caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 64632c175b44a370d7dcaf48e7c0a8cee766a4ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192509"
 ---
-# <a name="sample-excel-extension-technologymanager-class"></a>Ukázka rozšíření Excel: TechnologyManager – třída
+# <a name="sample-excel-extension-technologymanager-class"></a>Ukázka rozšíření Excel: Třída TechnologyManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tato třída rozšiřuje <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> třídy a je odpovědný za poskytnutí základních služeb pro [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] rozšíření. Přestože základní třídy obsahuje mnoho metod, pouze jen některé z nich se používá v této ukázce.  

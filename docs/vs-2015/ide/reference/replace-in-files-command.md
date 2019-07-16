@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8398f07cf6fa6bd2702b2d84ab0d29dcd614ed32
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157807"
 ---
 # <a name="replace-in-files-command"></a>Nahradit v souborech – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  / Reset nebo /e  
  Volitelné. Vrátí možnosti hledání na jejich výchozí nastavení a nebude provádět vyhledávání.  
   
- /stop  
+ / stop  
  Volitelné. Zastaví aktuální operace vyhledávání, pokud je v průběhu. Nahradit ignoruje všechny argumenty při `/stop` nebyl zadán. Třeba zastavit aktuální nahrazení zadáte následující:  
   
 ```  
@@ -98,5 +98,5 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  [Nahradit v souborech](../../ide/replace-in-files.md)   
  [Okno příkazového řádku](../../ide/reference/command-window.md)   
  [Pole najít/příkaz](../../ide/find-command-box.md)   
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
+ [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39b2377dd1599d58eac4ca967ca540d8ce0e6847
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184358"
 ---
 # <a name="command-flag-element"></a>Command Flag – element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Upraví svého nadřízeného elementu.
   
 ### <a name="child-elements"></a>Podřízené elementy  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |AllowParams|Označuje, že uživatelé můžou zadat parametry příkazu v **příkaz** okno při zadání kanonický název příkazu.<br /><br /> Platí pro: `Button`|  
 |AlwaysCreate|Nabídka se vytvoří i v případě, že nemá žádné skupiny ani tlačítka.<br /><br /> Platí pro: `Menu`|  
@@ -49,7 +49,7 @@ Upraví svého nadřízeného elementu.
 |DontCache|Vývojové prostředí neukládá do mezipaměti `QueryStatus` výsledky metody pro tento příkaz.<br /><br /> Pro nabídku znamená to kontroleru nabídky nemají ukládat do mezipaměti text položky nabídky. Tento příznak použijte, pokud nabídka obsahuje dynamické položky nebo položky, které mají dynamický text.<br /><br /> Platné pro: `Button`, `Menu`|  
 |DynamicItemStart|Označuje začátek dynamického seznamu. To umožňuje prostředí tak, aby sestavení seznamu postupně voláním `QueryStatus` metodu na položky seznamu, dokud se nevrátí OLECMDERR_E_UNSUPPORTED příznak. Tento postup funguje dobře pro položky, jako je naposledy použité Naposledy použitých seznamech a seznamů oken.<br /><br /> Platí pro: `Button`|  
 |DynamicVisibility|Viditelnost příkaz lze změnit prostřednictvím `QueryStatus` metoda nebo prostřednictvím kontextu identifikátor GUID, který je součástí `VisibilityConstraints` části.<br /><br /> Platí pro příkazy, které se zobrazují v nabídkách a panelech nástrojů, ale ne na nejvyšší úrovni panely nástrojů, které se zobrazí v hlavním okně. Položky panelu nástrojů nejvyšší úrovně mohou být zakázané, ale není skrytý, pokud je příznak OLECMDF_INVISIBLE vrácen z `QueryStatus` metody. Příkazy nástrojů, které se zobrazují na panelech nástrojů lze skrýt.<br /><br /> V nabídce tento příznak také určuje, že ho automaticky skryt, pokud její členové budou skryti. Tento příznak se obvykle přiřadí podnabídek vzhledem k tomu, že už máte toto chování nabídek nejvyšší úrovně.<br /><br /> Tento příznak by měly být kombinované pomocí `DefaultInvisible` příznak.<br /><br /> Platné pro: `Button`, `Combo`, `Menu`|  
-|FilterKeys|Filtrování klíče tématu v části [prvek pole se seznamem](../extensibility/combo-element.md).<br /><br /> Platí pro: `Combo`|  
+|Kláves|Filtrování klíče tématu v části [prvek pole se seznamem](../extensibility/combo-element.md).<br /><br /> Platí pro: `Combo`|  
 |FixMenuController|Pokud tento příkaz je umístěn na kontroleru nabídky, příkaz je vždy výchozí; To znamená příkaz se vybere pokaždé, když se vybere tlačítko kontroleru nabídky, samotného. Pokud má kontroleru nabídky `TextIsAnchorCommand` příznak nastaven, pak kontroleru nabídky přijímá také jeho text příkazu, který má `FixMenuController` příznak.<br /><br /> By měl mít jenom jeden příkaz na kontroleru nabídky `FixMenuController` příznak. Pokud je označeno tak více než jednoho příkazu, poslední příkaz v nabídce stane výchozí příkaz.<br /><br /> Platí pro: `Button`|  
 |IconAndText|Zobrazte ikonu a text nabídky a panelu nástrojů.<br /><br /> Platné pro: `Button`, `Combo`, `Menu`|  
 |NoAutoComplete|Funkce automatického dokončování je zakázaná.<br /><br /> Platí pro: `Combo`|  

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199810"
 ---
-# <a name="how-to-choose-collection-methods"></a>Postupy: Výběr metod kolekcí
+# <a name="how-to-choose-collection-methods"></a>Postupy: Výběr metod shromažďování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Nástrojů pro profilaci sady podporují tři metody shromažďování dat výkonu: vzorkování, instrumentace a souběžnosti. Metoda vzorkování nebo instrumentace můžete také použít ke shromažďování dat o přidělování a životnosti paměti .NET.  

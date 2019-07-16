@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77e21a280700520b6861dd42e01a4aefa4faa704
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180208"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn a ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  Celé číslo identifikátor procesu spuštění nebo zastavení. ID procesu jsou uvedeny na kartě procesy ve Správci úloh Windows.  
   
 ## <a name="required-subcommands"></a>Požadovaný dílčí příkazy  
- Žádná  
+ Žádné  
   
 ## <a name="valid-subcommands"></a>Neplatný dílčí příkazy  
  **ProcessOn** a **ProcessOff** se dá nastavit na příkazové řádky, které také obsahují následující dílčí příkazy.  
@@ -62,7 +62,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  **GlobalOff**&#124;**GlobalOn**  
  Zastaví nebo spustí profilaci pro všechny procesy v relaci příkazového řádku profilování.  
   
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
  Zastavení nebo spuštění profilování pro zadaný podproces (pouze metody instrumentace).  
   
 ## <a name="example"></a>Příklad  

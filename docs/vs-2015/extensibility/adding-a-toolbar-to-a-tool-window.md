@@ -12,11 +12,11 @@ caps.latest.revision: 49
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2c5df1ce1721c63b5c5cfc3c5b94929da088660f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184884"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>Přidání panelu nástrojů do panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Tento návod ukazuje, jak přidat panel nástrojů do panelu nástrojů.
   
      Měli byste vidět, že panel nástrojů (vypadá jako výchozí ikona) v horní levé části okna nástroje, pod názvem.  
   
-3. Na panelu nástrojů klikněte na ikonu pro zobrazení zprávy **TWTestCommandPackage uvnitř TWToolbar.TWTestCommand.MenuItemCallback()**.  
+3. Na panelu nástrojů klikněte na ikonu pro zobrazení zprávy **TWTestCommandPackage uvnitř TWToolbar.TWTestCommand.MenuItemCallback()** .  
   
 ## <a name="see-also"></a>Viz také  
  [Přidání panelu nástrojů](../extensibility/adding-a-toolbar.md)

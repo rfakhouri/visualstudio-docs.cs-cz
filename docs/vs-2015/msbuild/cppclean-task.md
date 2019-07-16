@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bddba1170cf675b5bde7ab8deed8cce1e7eb57dd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196579"
 ---
 # <a name="cppclean-task"></a>CPPClean – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Odstraní dočasné soubory, které MSBuild vytvoří při vytváření projektu
 |          **DoDelete**           |                                                            Volitelné **logická** parametru.<br /><br /> Pokud `true`, čištění dočasné soubory sestavení.                                                             |
 | **FilePatternsToDeleteOnClean** |                                            Vyžaduje `String` parametru.<br /><br /> Určuje středníky oddělený seznam přípon souborů souborů k vyčištění.                                             |
 |   **FilesExcludedFromClean**    |                                                    Volitelné `String` parametru.<br /><br /> Určuje středníky oddělený seznam souborů nechcete vyčistit.                                                    |
-|       **FoldersToClean**        | Vyžaduje `String` parametru.<br /><br /> Určuje středníky oddělený seznam adresářů pro vyčištění. Můžete zadat úplnou nebo relativní cestu a cestu může obsahovat zástupný znak (**\\**\*). |
+|       **FoldersToClean**        | Vyžaduje `String` parametru.<br /><br /> Určuje středníky oddělený seznam adresářů pro vyčištění. Můžete zadat úplnou nebo relativní cestu a cestu může obsahovat zástupný znak ( **\\** \*). |
 
 ## <a name="remarks"></a>Poznámky  
 

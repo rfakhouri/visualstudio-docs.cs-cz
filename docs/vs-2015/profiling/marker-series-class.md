@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb199d74ade593d0bc8318c27bc96ffbf70e4dcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194930"
 ---
 # <a name="markerseries-class"></a>marker_series – třída
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,14 +35,14 @@ class marker_series;
   
 ### <a name="public-constructors"></a>Veřejné konstruktory  
   
-|Název|Popis|  
+|Name|Popis|  
 |----------|-----------------|  
 |[marker_series::marker_series – konstruktor](../profiling/marker-series-marker-series-constructor.md)|Inicializuje novou instanci třídy `marker_series` třídy.|  
 |[marker_series::~marker_series – destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Odstraní objekt marker_series – a uvolní všechny přidělené prostředky.|  
   
 ### <a name="public-methods"></a>Veřejné metody  
   
-|Název|Popis|  
+|Name|Popis|  
 |----------|-----------------|  
 |[marker_series::is_enabled – metoda](../profiling/marker-series-is-enabled-method.md)|Určuje, zda všechny relace má povoleno zprostředkovatele.|  
 |[marker_series::write_alert – metoda](../profiling/marker-series-write-alert-method.md)|Zapíše upozornění do souboru trasování vizualizátoru souběžnosti.|  
@@ -55,7 +55,7 @@ class marker_series;
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** cvmarkersobj.h  
   
- **Namespace:** Concurrency::diagnostic  
+ **Namespace:** Concurrency::Diagnostic –  
   
 ## <a name="see-also"></a>Viz také  
  [diagnostic – obor názvů](../profiling/diagnostic-namespace.md)

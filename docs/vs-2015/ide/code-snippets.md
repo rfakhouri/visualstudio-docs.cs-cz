@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188859"
 ---
 # <a name="code-snippets"></a>Fragmenty kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ finally
   
 ```  
   
- Tento fragment kódu lze vložit kliknutím **Vložit fragment** v místní nabídce okna kódu, pak **Visual C#**, zadejte `tryf`, pak kartu, nebo můžete zadat `tryf` a stiskněte klávesu TAB + TAB.  
+ Tento fragment kódu lze vložit kliknutím **Vložit fragment** v místní nabídce okna kódu, pak **Visual C#** , zadejte `tryf`, pak kartu, nebo můžete zadat `tryf` a stiskněte klávesu TAB + TAB.  
   
  Příklad obklopit fragmentem: v jazyce C++ zástupce `if` lze použít jako fragment vložení nebo jako obklopit fragmentem. Pokud vyberete řádek kódu (například `return FALSE;`) a potom klikněte na tlačítko **obklopit fragmentem**, pak **Pokud**, fragment kódu je rozbalený kolem řádku:  
   

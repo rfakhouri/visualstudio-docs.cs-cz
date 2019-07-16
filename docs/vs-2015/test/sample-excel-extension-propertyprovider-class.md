@@ -9,13 +9,13 @@ caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d38b430dd88eb1a732c4e4ca335a0a5bb057b1f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189451"
 ---
-# <a name="sample-excel-extension-propertyprovider-class"></a>Ukázka rozšíření Excel: PropertyProvider – třída
+# <a name="sample-excel-extension-propertyprovider-class"></a>Ukázka rozšíření Excel: Třída PropertyProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tento vnitřní třída rozšiřuje <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> třídy a nabízí vlastnosti pro [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] prvků, které se záznam a přehrávání testů uživatelského rozhraní (UI).  

@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199686"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Klávesové zkratky (HTML a JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |------------|--------------|  
 |Spuštění příkazu konzoly|Enter|  
 |Vymazat konzolu|Esc|  
-|Přepínání mezi režimem jedním řádkem a více řádky|Ctrl+Alt+M|  
+|Přepínání mezi režimem jedním řádkem a více řádky|Ctrl + Alt + M|  
   
 ## <a name="dom-explorer-shortcuts"></a>Klávesové zkratky Průzkumníka modelu DOM  
  V Průzkumníku modelu DOM použijte tyto klávesové zkratky.  

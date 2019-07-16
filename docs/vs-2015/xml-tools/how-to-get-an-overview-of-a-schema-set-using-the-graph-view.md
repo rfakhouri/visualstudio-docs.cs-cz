@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f6f264427e10cbe444cab8a5208e86866635ed17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150725"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Postupy: Získání přehledu o sadě schémat pomocí zobrazení grafu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Toto téma popisuje způsob použití [zobrazení grafu](../xml-tools/graph-view
   
 6. Vyberte **schéma nastaveno** uzlu Průzkumníka schémat XML a přetáhněte uzel návrhu suface zobrazení grafu. Měli byste vidět všechny globální uzly a šipky spojující uzly, které mají relace.  
   
-     ![Graph View](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")  
+     ![Zobrazení grafu](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")  
   
 7. Klikněte na libovolný uzel na návrhové ploše a podívejte se na panelu s popisem cesty chcete zobrazit, kde se nachází na vybraný uzel v sadě schémat.  
   

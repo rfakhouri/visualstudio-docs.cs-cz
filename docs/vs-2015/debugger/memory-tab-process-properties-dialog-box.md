@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b70c5a982da866cbeb9e9907859ad4d270d79bd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203306"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Karta Paměť, dialogové okno vlastností procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Použití **paměti** zobrazte použití paměti v procesu. Pro zobrazení [dial
   
  Následující nastavení jsou k dispozici na **paměti** kartu:  
   
-|Položka|Popis|  
+|Entry|Popis|  
 |-----------|-----------------|  
 |**Virtuální bajty**|Aktuální velikost (v bajtech) prostoru virtuálních adres je využívána procesem. Použití virtuálního adresového prostoru ještě nutně neznamená odpovídající použití buď disku nebo stránek hlavní paměti. Však virtuální prostor je však konečný a pomocí příliš mnoho může omezit schopnost procesu načítat knihovny.|  
 |**Virtuální bajty – Špička**|Maximální počet bajtů virtuálního adresového prostoru procesu využil v jednom okamžiku.|  

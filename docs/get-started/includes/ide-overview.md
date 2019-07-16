@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 9a8fd8ca5081e3353cdbb488da5d43f54275d8da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d0d46a39bed9600ccdc0a7f343accf74378b81e
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952397"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68148385"
 ---
 Visual Studio *integrovaného vývojového prostředí* je creative odrazový, můžete použít k úpravám, ladit a sestavovat kód a pak publikujete aplikaci. Integrované vývojové prostředí (IDE) je plně funkční program, který lze použít pro mnoho aspektů vývoje softwaru. Kromě standardní editor a ladicího programu, že většina integrovanými vývojovými prostředími poskytnout, Visual Studio obsahuje kompilátory, nástroje dokončování kódu, grafičtí návrháři pro a mnoho dalších funkcí, které usnadňují proces vývoje softwaru.
 
@@ -23,7 +23,7 @@ Visual Studio *integrovaného vývojového prostředí* je creative odrazový, m
 
 ::: moniker range="vs-2019"
 
-[![](../media/vs-2019/ide-overview.png "Prostředí IDE sady Visual Studio")](../media/vs-2019/ide-overview.png#lightbox)
+[![Visual Studio IDE. 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -197,7 +197,7 @@ Pojďme začít a vytvořit jednoduchý program.
 
    ![Ladit > Spustit bez ladění nabídky](../media/overview-start-without-debugging.png)
 
-   Visual Studio vytvoří aplikaci a otevře se okno konzoly se zprávou **Hello World!**. Nyní máte funkční aplikaci.
+   Visual Studio vytvoří aplikaci a otevře se okno konzoly se zprávou **Hello World!** . Nyní máte funkční aplikaci.
 
    ![Okno konzoly](../media/overview-console-window.png)
 
@@ -266,7 +266,7 @@ Pojďme začít a vytvořit jednoduchý program.
 
    ![Ladit > Spustit bez ladění nabídky](../media/overview-start-without-debugging.png)
 
-   Visual Studio vytvoří aplikaci a otevře se okno konzoly se zprávou **Hello World!**. Nyní máte funkční aplikaci.
+   Visual Studio vytvoří aplikaci a otevře se okno konzoly se zprávou **Hello World!** . Nyní máte funkční aplikaci.
 
    ![Okno konzoly](../media/vs-2019/overview-console-window.png)
 
@@ -313,7 +313,7 @@ Nejprve přejmenujme `name` proměnné:
 
 ::: moniker range="vs-2017"
 
-3. Vyberte ikonu žárovky k zobrazení dostupných [rychlé akce](../../ide/quick-actions.md). Vyberte **přejmenovat "název" na "username"**.
+3. Vyberte ikonu žárovky k zobrazení dostupných [rychlé akce](../../ide/quick-actions.md). Vyberte **přejmenovat "název" na "username"** .
 
    ![Přejmenujte akci v sadě Visual Studio](../media/rename-quick-action.png)
 
@@ -325,7 +325,7 @@ Nejprve přejmenujme `name` proměnné:
 
 ::: moniker range=">=vs-2019"
 
-3. Vyberte ikonu žárovky k zobrazení dostupných [rychlé akce](../../ide/quick-actions.md). Vyberte **přejmenovat "název" na "username"**.
+3. Vyberte ikonu žárovky k zobrazení dostupných [rychlé akce](../../ide/quick-actions.md). Vyberte **přejmenovat "název" na "username"** .
 
    ![Přejmenujte akci v sadě Visual Studio](../media/vs-2019/rename-quick-action.png)
 

@@ -12,13 +12,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186399"
 ---
-# <a name="tool-window-display-configuration"></a>Konfigurace zobrazení okna nástroje
+# <a name="tool-window-display-configuration"></a>Konfigurace zobrazení oken nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud VSPackage zaregistruje panelu nástrojů, výchozí umístění, velikost, styl ukotvení a další informace o viditelnosti se zadává v volitelné hodnoty. Další informace o registraci okna nástroje, najdete v části [nástroj Windows v registru](../extensibility/tool-windows-in-the-registry.md)  
@@ -37,10 +37,10 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|Název|Typ|Data|Popis|  
+|Name|Typ|Data|Popis|  
 |----------|----------|----------|-----------------|  
-|Název|REG_SZ|"Krátký název místo"|Krátký název, který popisuje panel nástrojů. Použít pouze pro referenci v registru.|  
-|Float|REG_SZ|"X1,Y1,X2,Y2"|Čtyři hodnoty oddělené čárkami. X1, Y1 je souřadnice levého horního rohu panelu nástrojů. X2, Y2 je souřadnice pravého dolního rohu. Všechny hodnoty jsou souřadnice obrazovky.|  
+|Name|REG_SZ|"Krátký název místo"|Krátký název, který popisuje panel nástrojů. Použít pouze pro referenci v registru.|  
+|Float|REG_SZ|"X1, Y1, X2, Y2"|Čtyři hodnoty oddělené čárkami. X1, Y1 je souřadnice levého horního rohu panelu nástrojů. X2, Y2 je souřadnice pravého dolního rohu. Všechny hodnoty jsou souřadnice obrazovky.|  
 |Styl|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Propojené"<br /><br /> "S kartami"<br /><br /> "AlwaysFloat"|Klíčové slovo určující počáteční zobrazit stav panelu nástrojů.<br /><br /> "MDI" = ukotven pomocí okna MDI.<br /><br /> "Float" = s plovoucí desetinnou čárkou.<br /><br /> "Propojené" = propojené se jiné okno (zadané v položce okno).<br /><br /> "S kartami" = v kombinaci s další okno nástroje.<br /><br /> "AlwaysFloat" = nelze ukotvit.<br /><br /> Další informace najdete v oddílu pro komentáře.|  
 |Okno|REG_SZ|*\<GUID>*|Identifikátor GUID okna, ke kterému můžete propojené okno nástroje nebo s kartami. Identifikátor GUID může patřit do jedné vlastní windows nebo některý z windows v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaného vývojového prostředí.|  
 |Orientace|REG_SZ|"Left"<br /><br /> "Právo"<br /><br /> "Top"<br /><br /> "Dolů"|Najdete v oddílu pro komentáře.|  
@@ -86,9 +86,9 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|Název|Typ|Data|Popis|  
+|Name|Typ|Data|Popis|  
 |----------|----------|----------|-----------------|  
-|(Výchozí)|REG_SZ|Žádná|Nechte prázdné.|  
+|(Výchozí)|REG_SZ|Žádné|Nechte prázdné.|  
 |*\<GUID>*|REG_DWORD nebo REG_SZ|0 nebo popisný řetězec.|Volitelné. Název položky musí být identifikátor GUID příkaz vyžadující viditelnost. Hodnota obsahuje jenom informativní řetězec. Hodnota je obvykle `reg_dword` nastavena na hodnotu 0.|  
   
 ### <a name="example"></a>Příklad  

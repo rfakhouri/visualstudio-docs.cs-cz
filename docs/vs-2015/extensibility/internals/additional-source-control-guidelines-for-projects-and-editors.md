@@ -11,11 +11,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 376b297e94cc8e5f429254bdc981aea994b27130
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203829"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Další pokyny pro správu zdrojového kódu pro projekty a editory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Existuje mnoho pokyny, které projekty a editory by měl splňovat za účelem p
 ## <a name="guidelines"></a>Pokyny  
  Projekt nebo editor by měl provádět následující pro podporu správy zdrojového kódu:  
   
-|Oblast|Projekt|Editor|Podrobnosti|  
+|Oblast|Project|Editor|Podrobnosti|  
 |----------|-------------|------------|-------------|  
 |Soukromé kopie souborů|X||Prostředí podporuje privátní kopie souborů. To znamená že každý uživatel, který uveden v projektu má jeho vlastní privátní kopii souborů v daném projektu.|  
 |ANSI nebo Unicode trvalosti|X|X|Pokud píšete kód trvalost, zachovejte soubory ve formátu ANSI, protože většina zdrojových programů ovládací prvek aktuálně nepodporují kódování Unicode.|  

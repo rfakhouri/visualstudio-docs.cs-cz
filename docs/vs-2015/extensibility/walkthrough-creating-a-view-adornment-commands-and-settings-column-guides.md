@@ -1,5 +1,5 @@
 ---
-title: 'Průvodce: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců) | Dokumentace Microsoftu'
+title: 'Návod: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců) | Dokumentace Microsoftu'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,13 +9,13 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0cab24a373595ca1257cbdaa50c009eefa713ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148845"
 ---
-# <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Průvodce: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců)
+# <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Návod: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete rozšířit editoru textu nebo kódu sady Visual Studio s příkazy a zobrazit důsledky. V tomto tématu se dozvíte, jak začít pracovat s funkcí oblíbené rozšíření, vodítka sloupců. Vodítka sloupců jsou vizuálně světla čáry dekorace pro zobrazení textového editoru vám pomohou při správě kód do určitého sloupce šířky. Speciálně formátovaného kódu může být důležité pro ukázky zahrnout do dokumentů, blogy, nebo zpráv o chybách.
@@ -31,7 +31,7 @@ V tomto návodu provedete následující:
   
   Budete moct vyzkoušet verzi funkce vodítka sloupců s této galerie sady Visual Studio[rozšíření](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
   
-  **Poznámka:**: v tomto názorném postupu vložte velké množství kódu do několika soubory generované záznamem šablony pro rozšíření sady visual studio, ale brzy bude odkazovat Tento názorný postup dokončené řešení na Githubu s příklady dalších rozšíření. Dokončený kód se mírně liší v tom, že má skutečné příkaz ikony namísto použití generictemplate ikony.
+  **Poznámka:** : v tomto názorném postupu vložte velké množství kódu do několika soubory generované záznamem šablony pro rozšíření sady visual studio, ale brzy bude odkazovat Tento názorný postup dokončené řešení na Githubu s příklady dalších rozšíření. Dokončený kód se mírně liší v tom, že má skutečné příkaz ikony namísto použití generictemplate ikony.
 
 ## <a name="getting-started"></a>Začínáme
 Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).

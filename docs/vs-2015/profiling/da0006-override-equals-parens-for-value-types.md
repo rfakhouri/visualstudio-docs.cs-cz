@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2229edad7ff338251fea23740343e23f87aa2792
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158670"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006: Přepište Equals() pro hodnoty
+# <a name="da0006-override-equals-for-value-types"></a>DA0006: Přepis Equals() pro typy hodnot
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id pravidla | DA0006 |  
@@ -30,7 +30,7 @@ Id pravidla | DA0006 |
 | Zpráva | Přepište Equals a operátory rovnosti na hodnotových typech. |  
 | Typ Messge | Upozornění |  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Volání metody Equals a operátory rovnosti veřejné hodnotového typu je podstatnou část dat profilování. Zvažte implementaci metodu efektivnější.  
   
 ## <a name="rule-description"></a>Popis pravidla  

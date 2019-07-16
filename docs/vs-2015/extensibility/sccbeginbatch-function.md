@@ -13,11 +13,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 264d9057bf4f17281d6d8a16ed3a6794004e0e21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189557"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>Návratová hodnota  
  Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:  
   
-|Hodnota|Popis|  
+|Value|Popis|  
 |-----------|-----------------|  
 |SCC_OK|Dávkové operace úspěšně začala.|  
 |SCC_E_UNKNOWNERROR|K nespecifikované chybě.|  

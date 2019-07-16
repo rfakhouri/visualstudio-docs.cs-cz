@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177885"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Začínáme s laděním v sadě Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 poskytuje výkonné integrované sady sestavení projektu a n
 
  Právě začínáte, použijte **ladění** a **x86** jako konfiguraci sestavení a platformy, v uvedeném pořadí. Jakmile budete hotovi, kódování a ladění, změňte konfiguraci tak, aby **vydání** a cílit na konkrétní platformu. (Starší verze sady Visual Studio k dispozici **AnyCPU** výchozí platformu pro projekty .net kód.)
 
- Poznámka: Při sestavování projektu hodnoty konfigurace a platforma jsou také umožňuje určit, jaké cesta k adresáři projektu se vytvoří spustitelný soubor. Obvykle je to  **\<cestu projektu >\\< název projektu\>\\< konfigurace\>\\< platforma\>**. Například projekt s konfigurací `Debug` a jinou platformu `x86` by se nepodařilo najít `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. To může být užitečné, pokud máte vlastní nástroje nebo skripty, které Správa těchto sestavené spustitelné soubory.
+ Poznámka: Při sestavování projektu hodnoty konfigurace a platforma jsou také umožňuje určit, jaké cesta k adresáři projektu se vytvoří spustitelný soubor. Obvykle je to  **\<cestu projektu >\\< název projektu\>\\< konfigurace\>\\< platforma\>** . Například projekt s konfigurací `Debug` a jinou platformu `x86` by se nepodařilo najít `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. To může být užitečné, pokud máte vlastní nástroje nebo skripty, které Správa těchto sestavené spustitelné soubory.
 
 ### <a name="building-your-code"></a>Vytváření kódu
  Ve vašem sestavení nakonfigurované je čas vytvořit projekt. Nejjednodušší způsob, jak to stisknutím klávesy F7, ale můžete také spustit sestavení tak, že vyberete **sestavení -> Sestavit řešení** z hlavní nabídky.

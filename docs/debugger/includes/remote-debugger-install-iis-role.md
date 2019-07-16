@@ -14,15 +14,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 13ca035b01ec8af1277d70b3c792293a1af4687a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908070"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68149231"
 ---
 Tyto kroky ukazují jenom základní konfiguraci služby IIS. Podrobnější informace nebo informace o instalaci na počítač s Windows Desktop, najdete v článku [publikování do služby IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration) nebo [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-Pro operační systémy Windows Server, použijte **přidat role a funkce** prostřednictvím průvodce **spravovat** odkaz nebo **řídicí panel** odkaz v **správce serveru**. Na **role serveru** krok, zaškrtněte políčko u **webového serveru (IIS)**.
+Pro operační systémy Windows Server, použijte **přidat role a funkce** prostřednictvím průvodce **spravovat** odkaz nebo **řídicí panel** odkaz v **správce serveru**. Na **role serveru** krok, zaškrtněte políčko u **webového serveru (IIS)** .
 
 ![V kroku výběr serveru role je vybrána role webového serveru IIS.](../media/remotedbg-server-roles-ws2012.png)
 

@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f36e8dd780788d241e3c286b1bbbe581311b143
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204096"
 ---
-# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Postupy: Zaregistrujte se na textové vyrovnávací paměti události s rozhraním API starší verze
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Postupy: Registrace událostí vyrovnávací paměti textu pomocí zastaralého rozhraní API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud vyrovnávací paměť textu přistupujete pomocí starší verze rozhraní API, byste měli zaregistrovat pro události vyrovnávací paměti textu, jak je znázorněno v následujícím postupu.  

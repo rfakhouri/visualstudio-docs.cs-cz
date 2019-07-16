@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ae0f361d4bbfe48b3133e50c360f66387d555814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187869"
 ---
-# <a name="da0012-significant-amount-of-reflection"></a>DA0012: Objem odrazů
+# <a name="da0012-significant-amount-of-reflection"></a>DA0012: Velký počet reflexí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id pravidla | DA0012 VYSOKÝ |  
@@ -30,7 +30,7 @@ Id pravidla | DA0012 VYSOKÝ |
 | Zpráva | Budete pravděpodobně používáte nadměrně reflexi. Je náročná operace. |  
 | Typ pravidla | Upozornění |  
   
-## <a name="cause"></a>Příčina  
+## <a name="cause"></a>příčina  
  Volání metody System.Reflection například metodu InvokeMember a GetMember nebo typ metody, jako je například MemberInvoke je podstatnou část dat profilování. Pokud je to možné, zvažte nahrazení tyto metody s časná vazba metod závislá sestavení.  
   
 ## <a name="rule-description"></a>Popis pravidla  
