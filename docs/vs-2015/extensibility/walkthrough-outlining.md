@@ -11,11 +11,11 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201959"
 ---
 # <a name="walkthrough-outlining"></a>Návod: Sbalování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,4 +134,4 @@ Budete moct implementovat založený na jazyce funkce, jako je například sbalo
 4. Měla by existovat sbalování oblastí, obsahující oba složené závorky. Byste měli být schopni klepněte na znaménko MINUS nalevo od levou složenou závorku sbalte sbalování oblastí. Když sbalen oblast, na symbol tří teček (...) by se měla zobrazit nalevo od sbaleného regionu a automaticky otevíraného okna obsahující text **najetí na text** by se měla zobrazit při přesunutí ukazatele myši na tři tečky.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

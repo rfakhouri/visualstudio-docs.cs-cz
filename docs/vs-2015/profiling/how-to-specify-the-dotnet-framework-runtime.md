@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f631e8639c1004fa2cb005da3b6c8bcb27f1a9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203407"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Postupy: Určení modulu Runtime rozhraní .NET Framework
+# <a name="how-to-specify-the-net-framework-runtime"></a>Postupy: Zadání modulu Runtime rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S vydáním [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], aplikace se může skládat z modulů, které byly vytvořeny pomocí různých verzí [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] za běhu. Ve výchozím nastavení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro profilaci sady Profilovat první modulu runtime, který je načten aplikací. Můžete zadat za běhu, která má být profilována při spuštění aplikace s profilerem a při připojení profileru k již běžícímu aplikace.  

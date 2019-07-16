@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158063"
 ---
 # <a name="opening-and-saving-project-items"></a>Otevření a uložení položek projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Když přidáte nový typ projektu, musíte spravovat otevírání a ukládání
  [Zobrazení souborů pomocí příkazu Otevřít v aplikaci](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
  Poskytuje podrobné vysvětlení způsobu, jakým zpracovává integrovaného vývojového prostředí **otevřít v** příkaz dotazování otevření souboru, který má některé volba standardních editorů.  
   
- [Postupy: Otevřít editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Postupy: Otevření editorů pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md)  
  Obsahuje podrobné pokyny pro určení, že soubory určitého typu ve vašem projektu by měla otevřít pomocí editoru specifické pro projekt.  
   
- [Postupy: Otevřít standardních editorů](../../extensibility/how-to-open-standard-editors.md)  
+ [Postupy: Otevření standardních editorů](../../extensibility/how-to-open-standard-editors.md)  
  Obsahuje podrobné pokyny pro zadání povolení integrovaného vývojového prostředí otevřete standardní editor pro soubory ve vašem typu projektu.  
   
- [Postupy: Otevřít editorů pro otevřené dokumenty](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ [Postupy: Otevření editorů pro otevřené dokumenty](../../extensibility/how-to-open-editors-for-open-documents.md)  
  Obsahuje podrobné pokyny k otevření editoru specifické pro projekt pro otevření souboru.  
   
  [Uložení standardního dokumentu](../../extensibility/internals/saving-a-standard-document.md)  

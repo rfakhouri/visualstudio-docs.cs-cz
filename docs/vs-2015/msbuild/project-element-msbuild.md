@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 132d1c3fbf23433ea89e7dba39bc226bc253b015
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205654"
 ---
 # <a name="project-element-msbuild"></a>Project – element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|Volitelný element.<br /><br /> Vyhodnotí jako podřízené prvky k výběru jedné sadě `ItemGroup` elementy a/nebo `PropertyGroup` prvky k vyhodnocení.|  
+|[Zvolte](../msbuild/choose-element-msbuild.md)|Volitelný element.<br /><br /> Vyhodnotí jako podřízené prvky k výběru jedné sadě `ItemGroup` elementy a/nebo `PropertyGroup` prvky k vyhodnocení.|  
 |[Import](../msbuild/import-element-msbuild.md)|Volitelný element.<br /><br /> Umožňuje projektu soubor k importu jiný soubor projektu. Může být nula nebo více `Import` prvky v projektu.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Volitelný element.<br /><br /> Element grouping pro jednotlivé položky. Položkami zadávají pomocí [položky](../msbuild/item-element-msbuild.md) elementu. Může být nula nebo více `ItemGroup` prvky v projektu.|  
 |[ProjectExtensions](../msbuild/projectextensions-element-msbuild.md)|Volitelný element.<br /><br /> Poskytuje způsob, jak zachovat jinou hodnotu než[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] informace [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] souboru projektu. Může být žádný nebo jeden `ProjectExtensions` prvky v projektu.|  

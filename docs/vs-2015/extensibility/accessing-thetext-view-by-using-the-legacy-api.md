@@ -11,13 +11,13 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8f9396e4523e38e7313efb5668c4680f551558ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184956"
 ---
-# <a name="accessing-thetext-view-by-using-the-legacy-api"></a>Přístup k text zobrazení pomocí starší verze rozhraní API
+# <a name="accessing-thetext-view-by-using-the-legacy-api"></a>Přístup k textovému zobrazení pomocí zastaralého rozhraní API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Zobrazení textu je prezentace textu, který je uložen do vyrovnávací paměti textu. Text můžete zobrazit pomocí starší verze rozhraní API, jak je znázorněno v následující části.  

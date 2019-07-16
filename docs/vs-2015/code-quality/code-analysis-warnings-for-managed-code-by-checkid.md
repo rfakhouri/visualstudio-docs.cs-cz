@@ -260,11 +260,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 91dcea4d9d16a6e846a66e4a5590dedfdc62b90f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201470"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Upozornění Analýzy kódu pro spravovaný kód podle CheckId
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -336,7 +336,7 @@ Následující tabulka obsahuje seznam upozornění analýzy kódu pro spravovan
 |CA1063|[CA1063: Implementuje správně IDisposable](../code-quality/ca1063-implement-idisposable-correctly.md)|Všechny typy IDisposable by měly správně implementovat vzor Dispose.|  
 |CA1064|[CA1064: Výjimky by měly být veřejné](../code-quality/ca1064-exceptions-should-be-public.md)|Interní výjimka je viditelná pouze uvnitř svého vlastního vnitřního rozsahu. Jakmile výjimka přesáhne hranice vnitřního rozsahu, lze pro zachycení výjimky použít pouze základní výjimku. Pokud je vnitřní výjimka zděděna z typů T:System.Exception, T:System.SystemException nebo T:System.ApplicationException, externí kód nebude mít dostatečné informace o tom, co s výjimkou udělat.|  
 |CA1065|[CA1065: Nevyvolávejte výjimky v neočekávaných umístěních](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Metoda, u které není předpokládáno vyvolání výjimky, vyvolá výjimku.|  
-|CA1300|[CA1300: Specify MessageBoxOptions](../code-quality/ca1300-specify-messageboxoptions.md)|Chcete-li správně zobrazit okno pro kultury, které používají směr čtení zprava doleva, musí být členy RightAlign a RtlReading výčtu MessageBoxOptions předány metodě Show.|  
+|CA1300|[CA1300: Zadejte možnosti MessageBoxOptions](../code-quality/ca1300-specify-messageboxoptions.md)|Chcete-li správně zobrazit okno pro kultury, které používají směr čtení zprava doleva, musí být členy RightAlign a RtlReading výčtu MessageBoxOptions předány metodě Show.|  
 |CA1301|[CA1301: Vyhněte se duplicitním akcelerátorům](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Přístupová klávesa neboli akcelerátor umožňuje klávesnici přístup k ovládacímu prvku pomocí klávesy ALT. Když má více ovládacích prvků duplicitní přístupové klávesy, není chování přístupové klávesy dobře definováno.|  
 |CA1302|[CA1302: Nekódujte pevně řetězce závislé národní prostředí](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Výčet System.Environment.SpecialFolder obsahuje členy, které odkazují na speciální systémové složky. Umístění těchto složek mohou mít různé hodnoty v různých operačních systémech; uživatel může změnit některé z míst; a místa jsou lokalizována. Metoda Environment.GetFolderPath vrátí lokace, které jsou spojené s výčtem Environment.SpecialFolder, lokalizované a vhodné pro aktuálně spuštěný počítač.|  
 |CA1303|[CA1303: Nepředávejte literály jako lokalizované parametry](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Externě viditelná metoda předává řetězcový literál jako parametr do konstruktoru nebo metody v [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] knihovny tříd a řetězec by měl být lokalizovatelný.|  

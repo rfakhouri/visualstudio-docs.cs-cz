@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204121"
 ---
-# <a name="how-to-register-editor-file-types"></a>Postupy: Typy souborů Editor registru
+# <a name="how-to-register-editor-file-types"></a>Postupy: Registrace typů souborů editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nejjednodušší způsob, jak zaregistrovat editor typů souborů se s použitím atributů registrace k dispozici jako součást [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] managed package framework (MPF) třídy. Při implementaci vašeho balíčku v nativním [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], můžete také napsat skript registru, která se registruje editor a související rozšíření.  

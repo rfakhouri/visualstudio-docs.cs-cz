@@ -11,13 +11,13 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203912"
 ---
-# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Vytvoření instance základní Editor pomocí starší verze rozhraní API
+# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Vytvoření instance základního editoru pomocí zastaralého rozhraní API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Editor je zodpovědná za funkce jako je například vložení, odstranění, zkopírování a vložení pro úpravy textu. Je kombinací těchto funkcí s těmi, která poskytuje služby jazyka, jako je text barvy, odsazení a dokončování příkazů IntelliSense.  
@@ -69,4 +69,4 @@ Editor je zodpovědná za funkce jako je například vložení, odstranění, zk
 ## <a name="see-also"></a>Viz také  
  [Uvnitř základní Editor](../extensibility/inside-the-core-editor.md)   
  [Otevření a uložení položek projektu](../extensibility/internals/opening-and-saving-project-items.md)   
- [Návod: Vytvoření základní Editor a registrace typu souboru editoru](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [Návod: Vytvoření základního editoru a registrace typu souboru editoru](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

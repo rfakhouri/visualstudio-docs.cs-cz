@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b8733ef63a60baa1b268c42c8780cdf80f2674b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159963"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Karta Obecné, dialogové okno vlastnosti okna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Použití **Obecné** zobrazte informace o vybrané okno. Zobrazíte [dialogové
   
  Následující nastavení jsou k dispozici na **Obecné** kartu:  
   
-|Položka|Popis|  
+|Entry|Popis|  
 |-----------|-----------------|  
 |**Titulek okna**|Text v záhlaví okna, nebo text obsažen v okně, pokud je ovládací prvek.|  
 |**Popisovač okna**|Jedinečné ID tohoto okna. Jsou opakovaně využívána popisovač okna; okno identifikují pouze po dobu platnosti tohoto okna.|  

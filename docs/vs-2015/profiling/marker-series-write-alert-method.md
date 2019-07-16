@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d65bec449938a55ee9a415dd86db1ba07efbdb1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54792827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200766"
 ---
 # <a name="markerserieswritealert-method"></a>marker_series::write_alert – metoda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ void write_alert(
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** cvmarkersobj.h  
   
- **Namespace:** Concurrency::diagnostic  
+ **Namespace:** Concurrency::Diagnostic –  
   
 ## <a name="see-also"></a>Viz také  
  [marker_series – třída](../profiling/marker-series-class.md)

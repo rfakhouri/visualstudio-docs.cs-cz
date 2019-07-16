@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1e70ec3ba50e5be1ed532bb4a88cbdd500af09c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195177"
 ---
 # <a name="remote-debugger-port-assignments"></a>Přiřazení portů vzdáleného ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,14 +34,14 @@ Visual Studio Remote Debugger může běžet jako aplikace nebo jako službu na 
   
  V okně vzdáleného ladicího programu klikněte na tlačítko **Nástroje / možnosti**a nastavte číslo portu TCP/IP.  
   
- Na příkazovém řádku spustit vzdálený ladicí program se **portu/** přepnout: **msvsmon/port \<číslo portu >**.  
+ Na příkazovém řádku spustit vzdálený ladicí program se **portu/** přepnout: **msvsmon/port \<číslo portu >** .  
   
  Můžete najít vzdálený ladicí program přepínače příkazového řádku v nápovědě vzdáleného ladění (stisknutím klávesy **F1** nebo klikněte na tlačítko **Nápověda / využití** v okně vzdáleného ladicího programu).  
   
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Portu vzdáleného ladicího programu na 64bitové operační systémy  
  Při spuštění 64bitovou verzi vzdáleného ladicího programu, ve výchozím nastavení používá 4020 port.  Pokud ladíte 32bitový proces, spustí 64bitovou verzi vzdáleného ladicího programu na portu 4021 32bitovou verzi vzdáleného ladicího programu. Při spuštění vzdáleného ladicího programu 32-bit, používá 4020 a 4021 nepoužívá.  
   
- Tento port jde nakonfigurovat z příkazového řádku: **Msvsmon/wow64port \<číslo portu >**.  
+ Tento port jde nakonfigurovat z příkazového řádku: **Msvsmon/wow64port \<číslo portu >** .  
   
 ## <a name="the-discovery-port"></a>Port zjišťování  
  UDP 3702 slouží k vyhledání spuštěné instance vzdáleného ladícího programu v síti (například **najít** dialogového okna v **připojit k procesu** dialogového okna). Používá se pouze pro zjišťování počítači se systémem vzdálený ladicí program, takže je volitelný, pokud máte nějaké další způsob, jak zjistit název počítače nebo IP adresu cílového počítače. Jedná se standardním portem pro zjišťování, proto není možné nakonfigurovat číslo portu.  

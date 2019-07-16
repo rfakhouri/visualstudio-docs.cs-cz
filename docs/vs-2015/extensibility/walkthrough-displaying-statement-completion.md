@@ -11,11 +11,11 @@ caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202015"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Návod: Zobrazení dokončování příkazů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Doplňování výrazů založený na jazyce lze implementovat definováním iden
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-     Microsoft.VisualStudio.OLE.Interop  
+     Sestavení Microsoft.VisualStudio.OLE.Interop  
   
      Microsoft.VisualStudio.Shell.14.0  
   
@@ -204,4 +204,4 @@ Doplňování výrazů založený na jazyce lze implementovat definováním iden
 4. Při psaní nejprve "a" a potom "d", by měl zobrazit seznam, který obsahuje "Přidání" a "úpravy". Všimněte si, že je vybraná sčítání. Pokud zadáte jiný "d", v seznamu by měla obsahovat pouze "Přidání", který je teď vybrán. Můžete potvrdit "Přidání" stisknutím klávesy MEZERNÍK, tabulátor nebo Enter nebo zavřete seznam tak, že zadáte Esc ani jiného klíče.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

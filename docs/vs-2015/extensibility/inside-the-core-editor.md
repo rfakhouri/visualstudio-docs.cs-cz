@@ -11,13 +11,13 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203957"
 ---
-# <a name="inside-the-core-editor"></a>Uvnitř základní Editor
+# <a name="inside-the-core-editor"></a>Práce v základním editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Core editor je sada několik komponent, které vám umožní změnit a dotazování textové informace. Pokud jste upravili základní editor pomocí starší verze rozhraní API, můžou dál používat tyto úpravy, které se budou směrovat přes adaptéry editoru. Doporučujeme však, že můžete přizpůsobit vlastní nastavení do nového editoru rozhraní API.  
@@ -46,7 +46,7 @@ ms.locfileid: "60083358"
  [Události vyrovnávací paměti textu v zastaralém rozhraní API](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  Obsahuje seznam rozhraní, které se používají pro oznámení události vyrovnávací paměti textu.  
   
- [Postupy: Zaregistrujte se na textové vyrovnávací paměti události s rozhraním API starší verze](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [Postupy: Registrace událostí vyrovnávací paměti textu pomocí zastaralého rozhraní API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  Popisuje, jak dokáží události vyrovnávací paměti textu.  
   
  [Použití textového správce k monitorování globálního nastavení](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -65,7 +65,7 @@ ms.locfileid: "60083358"
  Popisuje vytvoření instance služby jazyka pro ovládací prvek kódu dekorace.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Návod: Vytvoření základní Editor a registrace typu souboru editoru](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [Návod: Vytvoření základního editoru a registrace typu souboru editoru](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  Obsahuje podrobné pokyny o tom, jak spustit základní editor ze spravovaného kódu.  
   
  [Rozevírací panel](../extensibility/drop-down-bar.md)  
@@ -74,8 +74,8 @@ ms.locfileid: "60083358"
  [Použití textových značek pomocí zastaralého rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)  
  Vysvětluje pojem text značky a jak se používají v základní editor a seznam rozhraní, které se používají k přístupu a správě text značky.  
   
- [Postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md)  
+ [Postupy: Přidání standardních textových značek](../extensibility/how-to-add-standard-text-markers.md)  
  Obsahuje podrobné pokyny o tom, jak vytvořit text značky a jak přidat vlastní příkaz do místní nabídky.  
   
- [Postupy: Vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)  
+ [Postupy: Vytvoření vlastních textových značek](../extensibility/how-to-create-custom-text-markers.md)  
  Obsahuje podrobné pokyny o tom, jak vytvořit vlastní text značky a k poskytování typ značky jako služba.

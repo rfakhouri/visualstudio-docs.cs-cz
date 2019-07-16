@@ -9,11 +9,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf0d8a4cab8d30a56e84d1a6869c2c842b982aea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204667"
 ---
 # <a name="distributing-isolated-shell-applications"></a>Distribuce aplikací izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Chcete-li vytvořit aplikací izolovaného prostředí musíte nainstalovat Visu
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>Požadavky distribuce aplikací izolovaného prostředí  
   
-|Název|Popis|  
+|Name|Popis|  
 |----------|-----------------|  
 |Visual Studio SDK|Sady SDK potřebujete pro vývoj a testování rozšíření [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Sady SDK můžete použít také k vytvoření vlastní instance sady Visual Studio izolované prostředí.<br /><br /> Visual Studio je předpokladem pro sadu SDK.|  
 |Izolované prostředí distribuovatelné součásti Microsoft Visual Studio|Redistribuovatelný balíček při vytváření prostředí pro nástroje v sadě Visual Studio zahrnují ve vašem instalačním programu izolované prostředí. Distribuovatelný balíček rozhraní izolovaného prostředí zahrnuje rozhraní .NET Framework 4.5.|  
