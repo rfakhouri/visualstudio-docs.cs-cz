@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Dokumentace Microsoftu
+title: 'IDebugComPlusSymbolProvider2:: GetTypeFromToken | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1fa5e258390040fc70c0538c929a166984c3a7b0
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 07/17/2019
 ms.locfileid: "62540563"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Získá typ zadané svůj token.  
+Načte typ daného tokenu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,22 +45,22 @@ int GetTypeFromToken(
   
 #### <a name="parameters"></a>Parametry  
  `appDomain`  
- [in] Identifikátor domény aplikace.  
+ pro Identifikátor domény aplikace  
   
  `guidModule`  
- [in] Jedinečný identifikátor modulu.  
+ pro Jedinečný identifikátor modulu  
   
  `tdToken`  
- [in] Token typu, který se má načíst.  
+ pro Token typu, který se má načíst  
   
  `ppField`  
- [out] Vrátí typ, který je reprezentován [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
+ mimo Vrátí typ, který je reprezentován [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
+ V případě úspěchu vrátí `S_OK`. jinak vrátí kód chyby.  
   
 ## <a name="example"></a>Příklad  
- Následující příklad ukazuje, jak pro tuto metodu implementovat **CDebugSymbolProvider** objekt, který zveřejňuje [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) rozhraní.  
+ Následující příklad ukazuje, jak implementovat tuto metodu pro objekt **CDebugSymbolProvider** , který zpřístupňuje rozhraní [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetTypeFromToken(  
