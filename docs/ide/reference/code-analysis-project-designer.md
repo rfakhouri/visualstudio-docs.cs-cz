@@ -26,40 +26,40 @@ Obsahuje nástroj pro analýzu kódu, který můžete se rozhodnout spustit na v
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
 
- Povolit Analysis\ kódu
+ Povolit Analysis kódu\
  Povolí nebo zakáže analýzy kódu pro váš projekt.
 
- Návrh Rules\\
+ Návrh Rules\
  Povolí nebo zakáže pravidla návrhu. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Globalizace Rules\\
+ Globalizace Rules\
  Povolí nebo zakáže pravidla globalizace. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Vzájemná funkční spolupráce Rules\\
+ Vzájemná funkční spolupráce Rules\
  Povolí nebo zakáže pravidla interoperability. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Rules\\ udržovatelnosti
+ Rules udržovatelnosti\
  Povolí nebo zakáže pravidla udržovatelnosti. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Mobility Rules\\
+ Mobility Rules\
  Povolí nebo zakáže pravidla mobility. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Pojmenování Rules\\
+ Pojmenování Rules\
  Povolí nebo zakáže pravidla pojmenování. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Rules\\ výkonu
+ Rules výkonu\
  Povolí nebo zakáže pravidla výkonu. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Přenositelnost Rules\\
+ Přenositelnost Rules\
  Povolí nebo zakáže pravidla přenositelnosti. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Spolehlivost Rules\\
+ Spolehlivost Rules\
  Povolí nebo zakáže pravidla spolehlivosti. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Rules\\ zabezpečení
+ Rules zabezpečení\
  Povolí nebo zakáže pravidla zabezpečení. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
- Využití Rules\\
+ Využití Rules\
  Povolí nebo zakáže použití pravidla. Můžete také rozšířit tuto položku k povolení nebo zakázání jednotlivá pravidla.
 
 ## <a name="see-also"></a>Viz také:

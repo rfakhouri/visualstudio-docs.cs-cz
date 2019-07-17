@@ -690,6 +690,14 @@
                   href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
                 - name: 'CA3147: Označte obslužné rutiny příkazů pomocí ValidateAntiForgeryToken'
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
+                - name: 'CA5361: Nezakazovat zprostředkovateli SChannel použití silného šifrování'
+                  href: ca5361.md
+                - name: 'CA5364: Nepoužívejte zastaralé protokoly zabezpečení'
+                  href: ca5364.md
+                - name: 'CA5378: Nezakazujte ServicePointManagerSecurityProtocols'
+                  href: ca5378.md
+                - name: 'CA5386: Vyhněte se pevnému zakódování hodnoty SecurityProtocolType'
+                  href: ca5386.md
             - name: Upozornění využití
               items:
                 - name: Přehled

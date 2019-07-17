@@ -582,12 +582,14 @@
             - name: Vývoj mezinárodních aplikací
               displayName: Globalization localization world-ready
               href: ide/globalizing-and-localizing-applications.md
-    - name: Přístup k datům...
+    - name: Přístup k datům >>
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
-    - name: Návrh uživatelských rozhraní...
+    - name: Návrh uživatelských rozhraní >>
       displayName: XAML designer
       href: designers/designing-user-interfaces.md
+    - name: Vývoj aplikací pomocí Návrháře postupu provádění >>
+      href: workflow-designer/developing-applications-with-the-workflow-designer.md
     - name: Kompilace a sestavení
       items:
         - name: Přehled
@@ -636,9 +638,9 @@
               href: ide/how-to-configure-projects-to-target-platforms.md
             - name: Konfigurace projektů pro více cílových platforem
               href: ide/how-to-configure-projects-to-target-multiple-platforms.md
-        - name: MSBuild...
+        - name: MSBuild >>
           href: msbuild/msbuild.md
-        - name: Azure Pipelines a TFS...
+        - name: Azure Pipelines a TFS >>
           displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
           href: /azure/devops/pipelines/index?view=vsts
         - name: Určení událostí sestavení (Visual Basic)
@@ -649,23 +651,23 @@
           href: ide/configuring-warnings-in-visual-basic.md
         - name: "Návod: Vytvoření prostředí pro sestavení s\_použitím více počítačů"
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
-    - name: Ladění...
+    - name: Ladění >>
       href: debugger/index.md
-    - name: Test...
+    - name: Test >>
       displayName: Unit testing
       href: test/improve-code-quality.md
-    - name: Měření výkonu...
+    - name: Měření výkonu >>
       displayName: Profiling
       href: profiling/index.md
-    - name: Analýza kvality kódu...
+    - name: Analýza kvality kódu >>
       displayName: Code analysis FxCop Analyzers
       href: code-quality/index.md
-    - name: Nasazení...
+    - name: Nasazení >>
       href: deployment/index.md
-    - name: Rozšíření sady Visual Studio...
+    - name: Rozšíření sady Visual Studio >>
       displayName: Visual Studio SDK
       href: extensibility/visual-studio-sdk.md
-    - name: Analýza a modelování architektury...
+    - name: Analýza a modelování architektury >>
       href: modeling/analyze-and-model-your-architecture.md
     - name: "Tipy a\_triky"
       items:
