@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Další informace o benefitech Office 365 pro vývojáře, které jsou součástí vašeho předplatného sady Visual Studio.
-ms.openlocfilehash: 86a4ba86b8da06107436005daba8a4728c2c1fa5
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 9b31b1d1195e47dcf1f38351306a0c59a4472298
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784540"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250808"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Zvýhodněné předplatné Office 365 pro vývojáře v předplatných sady Visual Studio
 
@@ -55,7 +55,7 @@ Předplatitelé s vybraným předplatným sady Visual Studio získají výhody p
 
 A to je vše!  Zobrazí se stránka zobrazení informací podle vašich požadavků.
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
 Pokud chcete získat přístup k vašeho vývojářského předplatného, přejděte na [office.com](https://www.office.com) a přihlaste se pomocí ID uživatele a heslo, které jste právě vytvořili.
 

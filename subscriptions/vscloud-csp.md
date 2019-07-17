@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 03/15/2018
 ms.topic: conceptual
 description: Informace pro poskytovatele Cloud Solution Provider, jak zakoupit a spravovat předplatné cloudu Visual Studio pro vaše zákazníky.
-ms.openlocfilehash: 5eed13a25c76cdacdd86923a1d4519d29374d25e
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 4db9211041aca4a49bcd3feb182cfd80423d6960
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784902"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250650"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Nákup a správa cloudových předplatných sady Visual Studio pro vaše zákazníky
 

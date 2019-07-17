@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 03/02/2018
 ms.topic: conceptual
 description: Dotazy k fakturaci cloudových předplatných.
-ms.openlocfilehash: 21e32bc6fd1517b2c6724e97863cf70734caac80
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 858707358062386191c526810644f110bd7ac58d
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891100"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250739"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio cloudovými předplatnými nejčastější dotazy k fakturaci
 
@@ -72,7 +72,7 @@ Pro roční Cloudová předplatná stornování projeví v první den v měsíci
 O:  Získejte 5 % slevu na 6 a všechny další předplatná *jednotlivých typů* předplatného:
 
 * Visual Studio Professional měsíčně
-* Visual Studio Professional annual
+* Visual Studio Professional roční
 * Visual Studio Enterprise měsíční
 * Visual Studio Enterprise roční
 

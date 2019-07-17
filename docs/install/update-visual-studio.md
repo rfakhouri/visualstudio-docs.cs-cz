@@ -2,7 +2,7 @@
 title: Aktualizace sady Visual Studio
 titleSuffix: ''
 description: Zjistěte, jak aktualizovat na nejnovější verzi, podrobné sady Visual Studio.
-ms.date: 06/19/2019
+ms.date: 07/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,17 +10,19 @@ ms.technology: vs-installation
 helpviewer_keywords:
 - update [Visual Studio]
 - change [Visual Studio]
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.ProductUpdates
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290656"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250580"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizace na nejnovější verzi sady Visual Studio
 
@@ -224,7 +226,7 @@ Můžete si vyhledejte aktualizaci a nainstalujte ji pomocí panelu nabídek neb
 
    Visual Studio aktualizuje, zavře a znovu neotevře.
 
-### <a name="in-visual-studio"></a>In Visual Studio
+### <a name="in-visual-studio"></a>V sadě Visual Studio
 
 1. Na panelu nabídek zvolte **pomáhají**a klikněte na tlačítko **vyhledávat aktualizace**.
 
@@ -257,6 +259,27 @@ Můžete si vyhledejte aktualizaci a nainstalujte ji pomocí panelu nabídek neb
 1. V **aktualizovat stažený a připravený k instalaci** dialogového okna zvolte **aktualizace**.
 
    Visual Studio aktualizuje, zavře a znovu neotevře.
+
+## <a name="customize-update-settings"></a>Nastavení aktualizace
+
+Aktualizace nastavení v sadě Visual Studio můžete přizpůsobit několika různými způsoby, například tak, že změníte režim instalace a výběrem automatické stahování.
+
+Existují dva režimy instalace lze vybírat:
+
+* **Nainstalovat při stahování**
+* **Vše stáhnout, potom nainstalovat**
+
+Můžete také **automaticky stahovat aktualizace** nastavení, která umožňuje instalaci aktualizací chcete stáhnout době nečinnosti počítače.
+
+Tady je způsob:
+
+1. V panelu nabídky zvolte **nástroje** > **možnosti**.
+
+2. Rozbalte **prostředí**a klikněte na tlačítko **aktualizace produktu**.
+
+    ![Aktualizace nastavení v sadě Visual Studio](media/vs-2019/update-settings-options.png)
+
+3. Zvolte režim instalace a možnosti automatické stahování, které chcete pro aktualizace sady Visual Studio.
 
 ::: moniker-end
 

@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Podrobnosti o jaká předplatná jsou k dispozici, platí pravidla a kolik předplatných v programu MPN nabízíme.
-ms.openlocfilehash: 5b31cc6ef83583074920e5544b0551aa14edf1d5
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 133b9561b6276329e17104b17f0687172b94a574
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784997"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250671"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Předplatná sady Visual Studio nabízí pro partnery v Microsoft Partner Network (MPN)
 Partneři, kteří získejte kompetenci nebo kteří zakoupili Action Pack v programu MPN mají nárok na použití předplatná sady Visual Studio. Tato předplatná jsou licencovaný podle počtu uživatelů a platí pouze v případě přiřazenou na konkrétní uživatele, který se dá použít pro partnerské firmě s názvem.

@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c4a7622c748f3522828517061cf9225f511d3913
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: bf167c46e9b7dd9317278c7ce388977c4cc9428a
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890512"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250332"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualizace sady Visual Studio v servisním směrném plánu
 
-Visual Studio 2019 bude mít časté aktualizace během její [životního cyklu produktu](/visualstudio/productinfo/release-rhythm#release-channel-updates). Aktualizace bude obsahovat aktualizace vedlejší verze (např. z 16.0 k 16.1), které můžou přidat nové funkce a součásti a servisní aktualizace (např. z 16.0.4 k 16.0.5), které obsahují pouze cílová opravy pro kritické problémy. 
+Visual Studio 2019 bude mít časté aktualizace během její [životního cyklu produktu](/visualstudio/productinfo/release-rhythm#release-channel-updates). Aktualizace bude obsahovat aktualizace vedlejší verze (např. z 16.0 k 16.1), které můžou přidat nové funkce a součásti a servisní aktualizace (např. z 16.0.4 k 16.0.5), které obsahují pouze cílová opravy pro kritické problémy.
 
 Organizace mohou správci uchovat své klienty v směrném plánu údržby. Směrný plán údržby se podporuje s aktualizace pro rok po vydání další údržby směrného plánu údržby.
 
@@ -29,7 +29,7 @@ Možnost údržby směrný plán poskytuje vývojářům a správcům větší f
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Jak získat na směrný plán údržby
 
-Pokud chcete začít používat směrný plán údržby, stáhněte si zaváděcí nástroj – verze sady Visual Studio Instalační program z [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0). Bootstrapperů mají odkazy na konfigurace produktu, úlohy a komponenty pro tuto konkrétní verzi. 
+Pokud chcete začít používat směrný plán údržby, stáhněte si zaváděcí nástroj – verze sady Visual Studio Instalační program z [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0). Bootstrapperů mají odkazy na konfigurace produktu, úlohy a komponenty pro tuto konkrétní verzi.
 
 > [!NOTE]
 > Buďte opatrní rozlišovat mezi zaváděcí nástroj – verze a standardní bootstrapperů. Standardní bootstrapperů umožňují použít nejnovější verzi sady Visual Studio, která je k dispozici. Standardní boostrappers obsahovat číslo v názvu souboru (například vs_enterprise__123456789-123456789.exe) Pokud jste stáhli z My.VisualStudio.com.
@@ -37,18 +37,19 @@ Pokud chcete začít používat směrný plán údržby, stáhněte si zaváděc
 Během instalace musíte nakonfigurovat správcům jejich klientům zabránit klientům v aktualizaci na nejnovější verzi. Klienty můžete nakonfigurovat různými způsoby:
 - [Změnit `channelUri` nastavení v konfiguračním souboru odezvy](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network) použít manifest kanálu v rozložení nebo místní složky.
 - [Upravit parametr channelUri prostřednictvím spuštění příkazového řádku](update-servicing-baseline.md#install-a-servicing-baseline-via-the-internet) neexistující soubor.
-- [Nastavení zásad v klientském systému zakázat aktualizace](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating), čímž zabráníte klientům automatických aktualizací. 
+- [Nastavení zásad v klientském systému zakázat aktualizace](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating), čímž zabráníte klientům automatických aktualizací.
 
 ### <a name="install-a-servicing-baseline-on-a-network"></a>Instalace v síti směrný plán údržby
 
-Správci, kteří používají instalace rozložení sítě by měl změnit `channelUri` hodnotu *response.json* souboru v rozložení chcete použít *channelmanifest.json* soubor, který je ve stejné složce. Kroky pro zajištění, naleznete v tématu [řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md). Změna `channelUri` hodnota umožňuje klientům vyhledat aktualizace v umístění rozložení. 
+Správci, kteří používají instalace rozložení sítě by měl změnit `channelUri` hodnotu *response.json* souboru v rozložení chcete použít *channelmanifest.json* soubor, který je ve stejné složce. Kroky pro zajištění, naleznete v tématu [řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md). Změna `channelUri` hodnota umožňuje klientům vyhledat aktualizace v umístění rozložení.
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>Nainstalujte směrný plán údržby přes internet
 
 Pro instalaci založené na Internetu, přidejte `--channelUri` kanálu neexistuje manifest pro příkazový řádek použitý ke spuštění instalace. Visual Studio zakáže pomocí nejnovější dostupné verze pro aktualizaci. Tady je příklad:
-  ```cmd
-   vs_enterprise.exe --channelUri c:\doesnotexist.chman 
-  ```
+
+```cmd
+vs_enterprise.exe --channelUri c:\doesnotexist.chman
+```
 
 ### <a name="use-policy-settings-to-disable-clients-from-updating"></a>Použít nastavení zásad zakážete klientů z aktualizace
 
@@ -56,9 +57,9 @@ Další možností k řízení aktualizací na klientovi je [vypnout oznámení 
 
 ## <a name="how-to-stay-on-a-servicing-baseline"></a>Jak si udržet na směrný plán údržby
 
-Pokud je k dispozici aktualizace pro směrný plán údržby, soubory bootstrapperu-version jsou k dispozici pro servisní aktualizace na [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0). 
+Pokud je k dispozici aktualizace pro směrný plán údržby, soubory bootstrapperu-version jsou k dispozici pro servisní aktualizace na [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0).
 
-Pro instalaci Správci nasazení prostřednictvím sítě rozložení správce chtít aktualizovat [umístění rozložení](update-a-network-installation-of-visual-studio.md). Klienti, kteří nainstalovány z umístění se zobrazí oznámení o aktualizacích. Pokud aktualizace musí být nasazený na klienty, postupujte podle [tyto pokyny](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Při úpravě "response.json" pro aktualizaci, bez přidání dalších úloh, komponenty nebo jazyky. Správa těchto nastavení je nutné provést jako "upravit" nasazení po aktualizaci produktu. 
+Pro instalaci Správci nasazení prostřednictvím sítě rozložení správce chtít aktualizovat [umístění rozložení](update-a-network-installation-of-visual-studio.md). Klienti, kteří nainstalovány z umístění se zobrazí oznámení o aktualizacích. Pokud aktualizace musí být nasazený na klienty, postupujte podle [tyto pokyny](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Při úpravě "response.json" pro aktualizaci, bez přidání dalších úloh, komponenty nebo jazyky. Správa těchto nastavení je nutné provést jako "upravit" nasazení po aktualizaci produktu.
 
 Při instalaci internetových spustit nový zavaděč opravenou verzi s `--channelUri` parametr odkazuje na neexistující kanál manifest na straně klienta. Pokud se aktualizace nasadí v tichém nebo pasivním režimu, použijte dva různé příkazy:
 
@@ -69,7 +70,7 @@ Při instalaci internetových spustit nový zavaděč opravenou verzi s `--chann
     ```
 
 2. Aktualizujte vlastní aplikace Visual Studio:
-    
+
     ```cmd
     vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart --channelUri c:\doesnotexist.chman
     ```
