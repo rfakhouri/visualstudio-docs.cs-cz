@@ -6,22 +6,22 @@ Manager: lank
 layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
-Description: Vítá vás Visual Studio předplatná
-ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+Description: Vítá vás Visual Studio Subscriptions
+ms.openlocfilehash: 25337098dded67d28df1cea03a47ec8c28646763
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784385"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315226"
 ---
 # <a name="visual-studio-subscriptions"></a>Předplatná sady Visual Studio
 
-Předplatná sady Visual Studio je komplexní sadu prostředků můžete vytvářet, nasazovat a spravovat skvělé aplikace pro vaše preferované platformy a zařízení, včetně Windows, iOS, Androidu a Linuxu.  Výhody předplatná zahrnují přístup k nástrojům pro vývojáře, cloudových služeb a softwaru, školení a podporu pro vývoj a testování.
+Předplatná sady Visual Studio jsou komplexní sada prostředků, pomocí kterých můžete vytvářet, nasazovat a spravovat skvělé aplikace na vašich upřednostňovaných platformách a zařízeních, včetně systémů Windows, iOS, Android a Linux.  Výhody předplatného zahrnují přístup k vývojářským nástrojům, cloudovým službám a softwaru, školením a podpoře potřeb pro vývoj a testování.
 
 ## <a name="get-started"></a>Začínáme
 
-Správci přihlásit k [ https://manage.visualstudio.com ](https://manage.visualstudio.com) přiřazení předplatných pro váš tým.<br>
-Předplatitelé Přihlaste se k [ https://my.visualstudio.com ](https://my.visualstudio.com) pro přístup k výhodám vašeho předplatného.
+Správci se přihlásí [https://manage.visualstudio.com](https://manage.visualstudio.com) k přiřazení předplatných týmu.<br>
+Předplatitelé se [https://my.visualstudio.com](https://my.visualstudio.com) přihlásí, aby měli přístup k výhodám předplatného.
 
 <!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
@@ -139,7 +139,7 @@ Předplatitelé Přihlaste se k [ https://my.visualstudio.com ](https://my.visua
 
 ## <a name="whats-new"></a>Co je nového
 
-Aby vaše předplatné ještě užitečnější, přidáme a často aktualizovat výhody předplatného. Další informace najdete v tématu [co je nového v předplatných](whats-new-in-subscriptions.md) stránky.
+Aby bylo předplatné ještě užitečnější, doporučujeme vám často přidávat a aktualizovat výhody předplatného. Další informace najdete na stránce [co je nového v](whats-new-in-subscriptions.md) předplatných.
 
 ---
 
@@ -150,12 +150,12 @@ Aby vaše předplatné ještě užitečnější, přidáme a často aktualizovat
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Nástroje pro vývojáře</h3>
-                        <p>Získejte přístup k nejnovějším verzím sady Visual Studio, plně vybavené integrované vývojové prostředí pro Android, iOS, Windows, macOS, vývoj aplikací pro web a cloud a další nástroje pro různé platformy na PC nebo Mac.</p>
+                        <h3>Vývojářské nástroje</h3>
+                        <p>Získáte přístup k nejnovějším verzím sady Visual Studio, plnohodnotnému integrovanému vývojovém prostředí (IDE) pro vývoj aplikací pro Android, iOS, Windows, macOS, web a Cloud a dalším nástrojům pro různé platformy na počítači PC nebo Mac.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
-                            <li>Azure DevOps Server a licence CAL</li>
+                            <li>Azure DevOps Server a CAL</li>
                         </ul>
                     </div>
                 </div>
@@ -168,7 +168,7 @@ Aby vaše předplatné ještě užitečnější, přidáme a často aktualizovat
                 <div class="card">
                     <div class="cardText">
                         <h3>Cloudové služby</h3>
-                        <p>S vaším předplatným sady Visual Studio můžete obdržet měsíční kredit Azure pro přístup ke službám Azure, zvýhodněné sazby pro vývoj a testování a exkluzivní přístup do galler image jen pro předplatitele y s předkonfigurovanými virtuálními počítači. V závislosti na vaše předplatné může zahrnovat cloudové služby:</p>
+                        <p>V rámci vašeho předplatného sady Visual Studio můžete obdržet měsíční kredit Azure pro přístup ke službám Azure, zlevněné sazby pro vývoj a testování a exkluzivní přístup k Galler image jenom pro předplatitele. y s předem konfigurovanými virtuálními počítači. V závislosti na vašem předplatném můžou cloudové služby zahrnovat:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
@@ -188,13 +188,12 @@ Aby vaše předplatné ještě užitečnější, přidáme a často aktualizovat
                 <div class="card">
                     <div class="cardText">
                         <h3>Školení a podpora</h3>
-                        <p>Předplatná sady Visual Studio zahrnují technickým a odborným školením výhod Microsoftu a partnerů. Poslední kurzy o tématech technologie a profesionální studijní materiály pro vaše další kariérní školení obsah obsahuje. Získejte odbornou pomoc s řešením problémů a otázek. Vaše předplatné může zahrnovat:</p>
+                        <p>Předplatná sady Visual Studio zahrnují výhody technického a profesionálního školení prostřednictvím Microsoftu a našich partnerů. Školicí obsah zahrnuje nejnovější kurzy týkající se technologických témat a profesionálních kurzů pro váš pokračující technologický vývoj. Získejte odbornou pomoc pro řešení problémů a zodpovězení otázek. Vaše předplatné může zahrnovat:</p>
                         <ul>
-                            <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (firmy, technické a tvorba)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (cloud, návrh, mobilní zařízení a data)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn – Premium</a> (Business, Tech a Creative)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (Cloud, návrh, mobilní zařízení a data)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (datové vědy a AI)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Školení Opsgility</a> (zaměřeno na cloud)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-tech-support">Incidenty profesionální technické podpory Microsoftu</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-tech-support">Incidenty technické podpory společnosti Microsoft Professional</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Chat s poradcem pro Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Komunita Azure</a></li>
                         </ul>
