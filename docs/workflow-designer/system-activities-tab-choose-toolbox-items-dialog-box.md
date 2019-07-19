@@ -43,7 +43,7 @@ Obsahuje seznam aktivit pracovního postupu, které jsou aktuálně registrovan�
 Namespace\
 Zobrazuje hierarchii obor názvů .NET, který definuje strukturu aktivity.
 
-Name\ sestavení
+Name sestavení\
 Zobrazí název a verze .NET sestavení, který obsahuje aktivitu.
 
 Directory\
