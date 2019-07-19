@@ -575,6 +575,8 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Práce se soubory XML a XSLT
           href: xml-tools/xml-tools-in-visual-studio.md
+        - name: Vývoj s využitím kontejnerů
+          href: containers/index.yml
         - name: Vývoj inkluzivních aplikací
           items:
             - name: Návrh přístupných aplikací
