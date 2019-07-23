@@ -11,34 +11,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d4f0cce0699c27068152827382eb7d8627b715
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3b8b11b01afa1d78aef9403acd13a305e36b2613
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531951"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377981"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Postupy: Změna velikosti písmen v editoru
+# <a name="how-to-change-text-case-in-the-editor"></a>Postupy: Změna velikosti písmen textu v editoru
 
 Příkazy nabídky nebo klávesové zkratky můžete použít k převodu případ vybraný text na velká písmena nebo velká písmena.
 
 > [!NOTE]
-> Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v tomto článku, v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, například k **Obecné** nebo **Visual C++** nastavení, zvolte **nástroje** > **nastavení importu a exportu**a klikněte na tlačítko **obnovit všechna nastavení**.
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v tomto článku, které jsou založeny na **obecném** nastavení pro vývoj. Chcete-li změnit nastavení pro vývoj, zvolte **nástroje** > **Nastavení importu a exportu**a pak zvolte možnost **resetovat všechna nastavení**.
 
-## <a name="to-switch-text-to-upper-case"></a>Chcete-li přepnout text na velká písmena
+## <a name="to-change-text-case"></a>Změna velikosti písmen textu
 
 1. Vyberte text, který má být převeden.
 
-2. Na **upravit** nabídce vyberte možnost **Upřesnit**.
+2. Pokud chcete převést text na velká písmena, zvolte **Upravit** > **Upřesnit** > **nastavit velká písmena**nebo stiskněte klávesy **CTRL**+**SHIFT**+**U**.
 
-3. Chcete-li převést text na velká písmena, zvolte **Ujistěte se, velká písmena**, nebo stiskněte klávesu **Ctrl**+**Shift**+**U**.
+   Chcete-li převést text na malá písmena, zvolte možnost **Upravit** > **Upřesnit** > **nastavení malých písmen**nebo stiskněte klávesu **CTRL**+**U**.
 
-    – nebo –
-
-    Chcete-li převést text na malá písmena, zvolte **Ujistěte se, malá písmena**, nebo stiskněte klávesu **Ctrl**+**U**.
-
-    > [!TIP]
-    > Chcete-li vrátit k předchozí větví formátování před touto změnou, vyberte **zpět** z **upravit** nabídky.
+> [!TIP]
+> Chcete-li vrátit k předchozí větví formátování před touto změnou, vyberte **zpět** z **upravit** nabídky.
 
 ## <a name="see-also"></a>Viz také:
 
