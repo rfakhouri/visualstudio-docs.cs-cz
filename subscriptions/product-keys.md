@@ -1,17 +1,17 @@
 ---
 title: Použití kódů Product Key | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/20/2019
 ms.topic: conceptual
 description: Naučte se, jak získat a spravovat kódy Product Key v předplatných sady Visual Studio.
-ms.openlocfilehash: 0b5c1470938f49ffe2b1ddf72851c2f20cd241f8
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 35dee0a03aa50e40b60d4207dcd6e830c9c27383
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315254"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377687"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Používání kódů Product Key v předplatných sady Visual Studio
 
@@ -43,12 +43,17 @@ Pokud jste v průběhu 24 hodin dosáhli maximálního počtu klíčů dostupný
 Náš výzkum znázorňuje, že většina předplatitelů je pokrytá počtem kódů Product Key, které jsou součástí jejich předplatného. Pokud potřebujete další klíče, můžete odeslat žádost prostřednictvím služby Visual Studio Subscription Customer [Service](https://visualstudio.microsoft.com/subscriptions/support/) , která se bude považovat za schválení na základě případu.
 
 ## <a name="accessing-product-keys"></a>Přístup k klíčům Product Key
-Abyste mohli zobrazit kódy Product Key, musíte být přihlášení k vašemu předplatnému sady Visual Studio. Jednotlivé kódy Product Key najdete tak, že na stránce [soubory ke stažení](https://my.visualstudio.com/downloads) vyberete odkaz modrého **klíče** pro určitý produkt, jak je znázorněno níže.  Všechny klíče jsou také k dispozici ve agregované na stránce [kódy Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) . Pokud pro jeden produkt existuje více klíčů, zobrazí se ve sloupci poznámky ke stažení poznámky, které vám pomůžou určit, který klíč se má použít.
-> [!div class="mx-imgBorder"]
-> ![Získat klíč ze stránky soubory ke stažení](_img/product-keys/download-get-key.png)
+Abyste mohli zobrazit kódy Product Key, musíte být přihlášení k vašemu předplatnému sady Visual Studio. Jednotlivé kódy Product Key najdete tak, že na stránce [soubory ke stažení](https://my.visualstudio.com/downloads) vyberete odkaz modrého **klíče** pro určitý produkt, jak je znázorněno níže.  Pokud pro jeden produkt existuje více klíčů, zobrazí se ve sloupci poznámky ke stažení poznámky, které vám pomůžou určit, který klíč se má použít.
 
 Některé produkty zabalí více edicí produktu do jediného stažení. V těchto případech se zadaným produktovým klíčem určí, která edice produktu je nainstalovaná.
 Některé klíče jsou k dispozici automaticky, například "statické" klíče, které můžete použít tolikrát, kolikrát je potřeba, protože aktivace není nutná. Další klíče musí být vyžádány tak, že vyberete odkaz **získat klíč** pro daný produkt.
+> [!div class="mx-imgBorder"]
+> ![Získat klíč ze stránky soubory ke stažení](_img/product-keys/download-get-key.png)
+
+Všechny klíče jsou také k dispozici ve agregované na stránce [kódy Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) . Na této stránce můžete najít statické klíče, které fungují pro všechny uživatele produktu, získat vlastní klíče jenom pro vaše použití, zobrazit stav omezení deklarací klíčů a exportovat všechny kódy Product Key. 
+
+> [!div class="mx-imgBorder"]
+> ![Stránka kódy Product Key](_img/product-keys/product-keys-page.png)
 
 V závislosti na produktu je k dispozici celá řada typů klíčů.
 
@@ -72,7 +77,5 @@ Můžete si vyžádat klíč ze stránky pro stahování pro daný produkt, nebo
 
 ## <a name="next-steps"></a>Další postup
 Pokud chcete získat přístup k https://my.visualstudio.com/productkeys klíčům, navštivte.  
-
 Naučte se [Najít a vyžádat si klíče](find-keys.md).
-
 Můžete si také přečíst informace o použití kódů Product Key k podpoře [internetových ukázek](internet-demos.md).

@@ -3,15 +3,15 @@ title: Použití kódů Product Key k podpoře internetových ukázek prostředn
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Naučte se používat kódy Product Key k podpoře internetových ukázek prostřednictvím Terminálové služby a povolení přístupu k VP.
-ms.openlocfilehash: 41057496dc42761fcad7c1ebe69b646dfddf16cc
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 34fa32f22582ccde69cbc54c86a3442ad92a7c96
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315568"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377969"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Internetové ukázky prostřednictvím Terminálové služby
 Pomocí předplatného sady Visual Studio můžete koncovým uživatelům poskytnout přístup k internetovým demonstračním programům prostřednictvím Terminálové služby (Windows Server 2003 nebo Windows Server 2008) nebo služby Vzdálená plocha (Windows Server 2008 R2 a novější). Tímto způsobem můžou k vašemu předvádění přistupovat až 200 anonymních uživatelů. Vaše ukázka nesmí používat produkční data. Předplatitelé sady Visual Studio mají licenci k předvedení svých aplikací koncovým uživatelům. Tato internetová ukázka pomocí Terminálové služby (TS) nebo služby Vzdálená plocha (RDS) je jediným scénářem, kdy koncoví uživatelé bez předplatného sady Visual Studio můžou pracovat s demonstrační aplikací, když je software licencovaný prostřednictvím vizuálu. Předplatná studia.
@@ -34,6 +34,8 @@ Koncoví uživatelé se můžou k aplikacím přistupovat přes RDS, pokud jsou 
 - Pro ukázky aplikace lze použít až 200 souběžných uživatelských připojení.
 - Kódy Product Key pro povolení připojení uživatele musí získat předplatitel sady Visual Studio.
 
-## <a name="next-steps"></a>Další kroky
-Pokud potřebujete pokyny k nastavení Licencování VP na serveru, přečtěte si prosím [licencování VP konfigurace v systému Windows server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Pokud máte nějaké dotazy, navštivte [fórum služby Vzdálená plocha Microsoft Services](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
+## <a name="next-steps"></a>Další postup
+Pokud potřebujete pokyny k nasazení služby RDS, Projděte si část blogové řady pro https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf **službu Vzdálená plocha (RDS) 2012 v části nasazení relace vzdálené plochy** . 
+
+Pokud máte nějaké dotazy, navštivte [fórum služby Vzdálená plocha Microsoft Services](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
 

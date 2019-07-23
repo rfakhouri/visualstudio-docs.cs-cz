@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: Naučte se najít, vyžádat a exportovat kódy Product Key v předplatných sady Visual Studio.
-ms.openlocfilehash: 1b10209f516c040c415f422c52b72a1c81fa5c48
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 4efdc118961b6e773e33eb16e40c6e0f09a13dc7
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315571"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68378001"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Vyhledání a nárokování kódů Product Key v předplatných sady Visual Studio
 Tento článek vysvětluje, jak najít, vyžádat a exportovat kódy Product Key https://my.visualstudio.com/productkeys z.  Další informace o aktivaci produktu pomocí klíče, maloobchodních a multilicenčních verzí klíčů a denních limitů deklarací identity pro klíč produktu najdete na stránce [Přehled kódů Product](product-keys.md)Key.
@@ -51,11 +51,11 @@ Deklarace kódu Product Key:
 1. Přihlaste se k předplatnému sady Visual Studio.  Abyste mohli stahovat produkty nebo kódy Product Key, musíte být přihlášení.
 2. Klikněte na kartu [kódy Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) .
 3. Kódy Product Key jsou seřazené abecedně podle názvu produktu.  Můžete se buď posunout dolů na název požadovaného produktu, nebo ho vyhledat pomocí panelu hledání v horní části stránky.
-   > [!div class="mx-imgBorder"]
-   > ![Vyhledat kód Product Key](_img/product-keys/visio-product-key-cropped.png)
-
-V tomto příkladu jsme použili panel hledání k vyhledání kódu Product Key pro Visio 2010.
-Jak vidíte, v seznamu je uvedeno několik verzí aplikace Visio 2010.  Jeden klíč byl již vyžádán pro Visio Standard 2010 a Visio Premium 2010 a oba mají zbývající čtyři klíče.  Klíče, které byly uplatněny, jsou jak maloobchodní, tak se zobrazují na stránce.  Všimněte si, že si můžete zaznamenat stručnou poznámku o deklarovaných klíčích ve sloupci **poznámky** .  Tuto možnost můžete použít spolu s datem ve sloupci **požadováno** k udržení přehledu o klíčích, které jste si vyžádali.  Můžete například vytvořit poznámky při aktivaci instalace produktu pomocí klíče.
+> [!div class="mx-imgBorder"]
+> ![Vyhledat kód Product Key](_img/product-keys/search-keys.png)
+   
+V tomto příkladu jsme použili panel hledání k vyhledání kódu Product Key pro Visual Studio Enterprise 2019.
+Jak vidíte, obsahuje několik uvedených verzí.  Jeden klíč, který již byl požadován pro Visual Studio Enterprise 2019 verze 16,0 a 16,1.  Pro obě verze jsou stále k dispozici další klíče různých typů. Všimněte si, že si můžete zaznamenat stručnou poznámku o deklarovaných klíčích ve sloupci **poznámky** .  Tuto možnost můžete použít spolu s datem ve sloupci **požadováno** k udržení přehledu o klíčích, které jste si vyžádali.  Můžete například vytvořit poznámky při aktivaci instalace produktu pomocí klíče.
 
 ### <a name="exporting-your-claimed-keys"></a>Export požadovaných klíčů
 Můžete exportovat seznam všech požadovaných klíčů a také velký výběr statických a dalších klíčů, které jsou automaticky označeny jako "tvrzeno".
@@ -65,5 +65,5 @@ Můžete exportovat seznam všech požadovaných klíčů a také velký výběr
 
 Pokud chcete klíče exportovat, stačí kliknout na odkaz **exportovat všechny klíče** v pravém rohu stránky kódy Product Key.  Vytvoří se soubor. XML s názvem KeysExport. XML a budete mít možnost soubor otevřít nebo Uložit.  Budete muset otevřít soubor s aplikací, která je schopná zpracovat soubory XML.  Soubor můžete například otevřít jako sešit jen pro čtení v aplikaci Excel.
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 Až budete připraveni ke stažení softwaru a použití klíčů, navštivte https://my.visualstudio.com/downloads.  Další informace o stahování softwaru najdete v [přehledu stahování](download-software.md).

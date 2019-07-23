@@ -1,44 +1,40 @@
 ---
-title: Anonymizace dat předplatitele sady Visual Studio | Dokumentace Microsoftu
+title: Anonymita dat předplatitele sady Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/31/2018
+ms.date: 07/19/2019
 ms.topic: conceptual
-description: Zjistěte, jak předplatitelská data jsou anonymní, když se ztratí přístup k předplatným.
-ms.openlocfilehash: 1d4e4c5f2e1946a75a70ab4ddb49f000c951cd97
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Přečtěte si, jak se data předplatitelů při ztrátě přístupu k předplatným nezdařila.
+ms.openlocfilehash: 8ba1a462083281c2228f2d6e25c42485ead8aa19
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783658"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377959"
 ---
-# <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymizace informace předplatitele sady Visual Studio
-
-Při výskytu události, které blokuje předplatitele pomocí předplatného, jako je například vypršení platnosti předplatného nebo odstranění odběratele přihlašovací účet, osobní údaje uživatele, jako je název a přihlašovací účet jsou v podstatě zamíchal k vykreslení je nepoužitelné.  To se provádí na trhu při ochraně osobních údajů předplatitele.
+# <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymita informací předplatitele sady Visual Studio
+Když dojde k události, která blokuje použití předplatného předplatitele, jako je například vypršení platnosti předplatného nebo odstranění přihlašovacího účtu odběratele, osobní údaje uživatele, například jméno a přihlašovací účet, jsou v podstatě zakódované pro vykreslování. nepoužitelné.  Tento postup slouží k ochraně osobních údajů předplatitele.
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-intro-sentence.md)]
 
-## <a name="when-does-anonymization-occur"></a>Když dojde k anonymizaci?
+## <a name="when-does-anonymization-occur"></a>Kdy dojde k anonymitě?
+Události, které vygenerují předplatné nepoužité pro předplatitele, aktivují anonymitu.  Jak rychle probíhá, závisí na typu předplatného a události triggeru. Další informace najdete v následující tabulce.
 
-Anonymizace se aktivuje události, které nepoužitelná odběr pro odběratele.  Nastane, jak rychle anonymizace závisí na typu předplatného a aktivační událost. Najdete v následující tabulce pro další informace.
-
-| Typ odběru                                                                                                                       | Událost aktivuje anonymizace                                                                                                     | Pokud dojde k anonymizaci |
+| Typ předplatného                                                                                                                       | Událost aktivující anonymitu                                                                                                     | Když dojde k anonymitě |
 |-----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|---------------------------|
-| Visual Studio Dev Essentials                                                                                                            | Předplatitel požádá o mimo program nebo nepřijímá žádné podmínky použití                                    | 30 dní               |
-| Předplatná sady Visual Studio koupili prostřednictvím Microsoft Store (prodejní verze)                                                                      | Předplatné vyprší platnost nebo není aktivováno                                                                   | 360 dní                  |
-| Předplatná sady Visual Studio získali prostřednictvím multilicence, Visual Studio Marketplace (Cloudová předplatná) nebo programy, jako je MPN | Předplatné vyprší platnost nebo není přiřazená uživateli                                                          | 180 dnů                  |
-| Všechna předplatná                                                                                                                       | Zavření účtu služby Azure Active Directory nebo účet Microsoft (MSA) používaná pro přihlášení odběru | Okamžitě               |
-| Všechna předplatná                                                                                                                       | Předplatitel se odebere z klienta, která je přidružená k účtu Azure Active Directory                                | Okamžitě               |
+| Visual Studio Dev Essentials                                                                                                            | Předplatitelský výslovný z programu nebo nepřijímá podmínky použití                                    | 30 dní               |
+| Předplatná sady Visual Studio zakoupená prostřednictvím Microsoft Store (maloobchodní)                                                                      | Předplatné vyprší nebo není aktivované.                                                                   | 360 dní                  |
+| Předplatná sady Visual Studio získaná prostřednictvím multilicenčního programu, Visual Studio Marketplace (odběry cloudu) nebo programy jako MPN | Předplatné vyprší nebo není přiřazeno uživateli.                                                          | 180 dní                  |
+| Všechna předplatná                                                                                                                       | Zavře se účet Azure Active Directory nebo účet Microsoft (MSA), který se používá k přihlášení k předplatnému. | Hned               |
+| Všechna předplatná                                                                                                                       | Předplatitel se odebere z klienta, který je přidružený k Azure Active Directorymu účtu.                                | Hned               |
 
 ## <a name="faq"></a>Nejčastější dotazy
+### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>Č  Způsobuje anonymita osobních údajů předplatitele ztrátu přístupu k předplatnému?
+O:  Ne.  Anonymita je v reakci na událost, která způsobuje ztrátu přístupu k předplatnému, ale nezpůsobí přístup k tomuto předplatnému.
 
-### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>DOTAZ:  Anonymizace osobní údaje účastníka nevyvolá ztrátu přístupu k předplatnému?
-O:  Ne.  Je anonymizace v reakci na událost, která způsobí, že dojde ke ztrátě přístupu k předplatnému, ale nezpůsobí zamezení přístupu.
-
-### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>DOTAZ:  Jsem správce předplatného mojí organizace.  Pokud jeden z Moje předplatitele informace jsou anonymní, můžete toto předplatné přiřadit jiný uživatel?
-O:  Ano – za předpokladu, nevypršela platnost předplatného, ji můžete přiřadit na jiného předplatitele.
+### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Č  Jsem správcem předplatných mojí organizace.  Pokud je jedna z informací o mém předplatiteli anonymá, může se předplatné znovu přiřadit jinému uživateli?
+O:  Ano – Pokud platnost předplatného nevypršela, je možné ji přiřadit jinému předplatiteli.
 
 ## <a name="next-steps"></a>Další kroky
-
-Naučte se, aby se zabránilo anonymizace podle [propojení identity MSA a AAD](/azure/active-directory/b2b/add-users-administrator).
+Přečtěte si, jak se vyhnout anonymitě pomocí [propojení MSA a identit AAD](/azure/active-directory/b2b/add-users-administrator).
