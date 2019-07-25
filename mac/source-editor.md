@@ -1,86 +1,84 @@
 ---
 title: Editor zdroje
-description: Pomocí editoru zdrojového kódu v sadě Visual Studio for Mac
+description: Použití editoru zdrojového kódu v Visual Studio pro Mac
 author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: b8414f50ed420d8fb4b29d4c8a21d3c8dc6cee72
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691969"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493239"
 ---
 # <a name="source-editor"></a>Editor zdrojového kódu
 
-Editor spolehlivý zdroj je zásadní pro ve zhuštěné a efektivní psaní kódu. Visual Studio for Mac obsahuje editor sofistikované zdrojového kódu, který je v centru vaši interakci s integrovaného vývojového prostředí. Editor zdrojového kódu obsahuje funkce, které můžou očekávat a potřebují k práci s lehkostí a elegancí: Od základů takové zvýrazňování syntaxe, fragmenty kódu a skrývání kódu k výhodám její integraci kompilátoru Roslyn jako plně funkční IntelliSense dokončování kódu.
+Spolehlivý zdrojový Editor je zásadní pro psaní kódu stručně a efektivně. Visual Studio pro Mac poskytuje sofistikovaný zdrojový editor, který je uprostřed vašich interakcí s IDE. Editor zdrojového kódu nabízí funkce, které byste mohli očekávat, a potřebujete snadnou práci: Ze základů, jako jsou zvýrazňování syntaxe, fragmenty kódu a skládání kódu, na výhody integrace kompilátoru Roslyn, jako je plně funkční dokončování kódu technologie IntelliSense.
 
-Editor zdrojového kódu v sadě Visual Studio for Mac umožňuje bezproblémové prostředí pro všechny ostatní funkce v rozhraní IDE, jako je ladění, refaktoring a integraci správy verzí.
+Editor zdrojového kódu v Visual Studio pro Mac umožňuje bezproblémové prostředí se všemi ostatními funkcemi v integrovaném vývojovém prostředí (IDE), jako je ladění, refaktoring a integrace řízení verzí.
 
-Tento článek uvádí některé klíčové funkce editoru zdrojového kódu a popisuje, jak Visual Studio for Mac můžete být stejně produktivní, jako je to možné.
+V tomto článku se seznámíte s některými klíčovými funkcemi v editoru zdrojového kódu a prozkoumáte, jak můžete využít Visual Studio pro Mac jako produktivitu.
 
-## <a name="the-source-editor-experience"></a>Editor zdrojového prostředí
+## <a name="the-source-editor-experience"></a>Prostředí editoru zdrojového kódu
 
-Zobrazení a jak efektivně přesunout v rámci kódu je nedílnou součástí pracovního postupu vývoje. Přesně jak se rozhodnete zobrazit a spravovat kód je osobní rozhodnutí, které se liší mezi vývojáře na platformě – a často mezi projekty.
+Zobrazení a pohyb je efektivně v rámci kódu je nedílnou součástí pracovního postupu vývoje. Přesně způsob, jakým se rozhodnete zobrazit a spravovat kód, je osobní rozhodnutí, které mezi vývojáři a často mezi projekty se liší.
 
-Visual Studio pro Mac nabízí řadu výkonných funkcí pro zajištění vývoj multiplatformních aplikací jako přístupné a co nejužitečnější. Následující části popisují mezi nejzajímavější z nich.
+Visual Studio pro Mac nabízí spoustu výkonných funkcí pro vývoj pro více platforem jako přístupný a co nejužitečnější. V následujících částech jsou popsány některé z nejzajímavosti.
 
-## <a name="code-folding"></a>Skrývání kódu
+## <a name="code-folding"></a>Skládání kódu
 
-Skrývání kódu usnadňuje vývojářům zobrazit nebo skrýt kompletní částí kódu, jako je třeba použití direktivy, často používaný kód a komentáře a příkazy #region spravovat velké zdrojové soubory. Skrývání kódu je vypnuto ve výchozím nastavení v sadě Visual Studio pro Mac
+Skládání kódu usnadňuje správu rozsáhlých souborů zdrojového kódu tím, že vývojářům umožňuje zobrazit nebo skrýt kompletní části kódu, jako jsou například direktivy using, často používaný kód a komentáře a příkazy #region. Skládání kódu je ve výchozím nastavení vypnutá v Visual Studio pro Mac
 
-Pokud chcete zapnout skrývání kódu, přejděte na **sady Visual Studio > Předvolby > textový Editor > Obecné > skrývání kódu**:
+Chcete-li zapnout skládání kódu, přejděte do sady **Visual Studio > předvolby > textový Editor > obecné > skládání kódu**:
 
-![Možnosti sbalování kódu](media/source-editor-image1.png)
+![Možnosti skládání kódu](media/source-neweditor-image1.png)
 
-Tato nabídka také zahrnuje možnost ve výchozím nastavení, zobrazení s názvem nápovědu, místo kódu sbalovat #regions a komentáře.
+Tato nabídka také obsahuje možnost skládání #regions a komentářů ve výchozím nastavení s pomocným parametrem namísto kódu.
 
-Chcete-li zobrazit nebo skrýt oddíly, použijte widget zpřístupnění vedle číslo řádku:
+Chcete-li zobrazit nebo skrýt oddíly, použijte pomůcku pro zpřístupnění vedle čísla řádku:
 
-![Zobrazení nebo skrytí oddílů v kódu](media/source-editor-image2.png)
+![Zobrazení nebo skrytí oddílů v kódu](media/source-neweditor-image2.png)
 
-Můžete také přepínat mezi zobrazení a skrytí složení pomocí **zobrazení > skládání > Fold přepínač / přepne všechny složení** položky nabídky:
+Můžete také přepínat mezi zobrazením a skrytím skládání pomocí položky nabídky **zobrazit > skládání > přepínač přeložení/přepnout všechny skládání** :
 
 ![Skládání položky nabídky](media/source-editor-image19.png)
 
-Tuto položku je také možné povolit nebo zakázat skrývání kódu.
+Tato položka nabídky slouží také k povolení nebo zakázání skládání kódu.
 
-## <a name="white-space"></a>Prázdné znaky
+## <a name="word-wrap"></a>Zalamování řádků
 
-Může být nutné k zobrazení neviditelné znaky ve zdrojovém kódu. Je to způsob viditelné, abyste měli jistotu, že jste už týkajícími se standardy kódování a není zbytečně zabírat místo. Je také užitečné při psaní F#, která závisí na přesně odsazené řádky za vaše rozhodnutí vyzkoušet kód.
+Zalamování řádků vám může pomoct se správou místa při práci na dlouhých řádcích kódu nebo s omezeným prostorem zobrazení. Zalamování řádků může také zajistit, že vaše zobrazení kódu obsahuje úplný obsah zdrojového souboru i v případě, že se otevírají podokna, která mohou zakrývat zobrazení nebo snížit šířku zobrazení zdroje. 
 
-Nastavit možnosti Zobrazit prázdné znaky tak, že přejdete do **sady Visual Studio > Předvolby > textový Editor > značky a pravítka**. Tato volba povolí nastavení _při_ neviditelné znaky se zobrazí: Nikdy na výběr, nebo vždy:
+Zalamování řádků je ve výchozím nastavení zakázáno, ale lze je povolit prostřednictvím **předvoleb** v Visual Studio pro Mac. 
 
-![Zobrazit možnosti neviditelné znaky](media/source-editor-image3.png)
+Chcete-li povolit zalamování řádků, přejděte do sady **Visual Studio > předvolby > textový Editor > nový editor > zalamování slov**:
 
-Možnost Zobrazit karty, mezery a konce řádků je také k dispozici:
+![Možnosti zalamování řádků](media/source-neweditor-wordwrap1.png)
 
-![Zobrazit karty a mezery](media/source-editor-image4.png)
+S povoleným zalamováním řádků se řádky, které překračují šířku zobrazení vašeho zdrojového editoru, automaticky zalomí na další řádek ve zdrojovém souboru. Můžete také povolit možnost, která zobrazí viditelný glyf vedle obtékaných řádků. To vám umožní odlišit řádky, které byly zabaleny automaticky, a ty, které jste zabalit ručně.
 
-Neviditelné znaky zobrazují jako šedé tečky, jak je znázorněno na následujícím obrázku:
+![Zalamování textu s povoleným zalamováním slov](media/source-neweditor-wordwrap2.png)
 
-![Zobrazit prázdné znaky](media/source-editor-image22.png)
+## <a name="ruler"></a>Určete
 
-## <a name="ruler"></a>Pravítko
+Pravítko sloupce je užitečné při určování délek řádků, zejména při práci na týmu, který má pokyny pro délku řádku. Pravítko sloupce můžete zapnout nebo vypnout tak, že přejdete do sady **Visual Studio > předvolby > textový Editor > značky a pravítka** a vyberete (nebo odznačte výběr) **Zobrazit pravítko sloupce**, jak je znázorněno na následujícím obrázku:
 
-Pravítko pro sloupce jsou užitečné pro určení délky řádku, zejména při práci v týmu, který má pokyny délka řádku. Pravítko pro sloupce. je možné zapnout nebo vypnout tak, že přejdete do **sady Visual Studio > Předvolby > textový Editor > značky a pravítka** a vyberete (nebo zrušením výběru) **pravítko pro sloupce. zobrazit**, jak je znázorněno v Následující obrázek:
+![Dialog předvoleb se zvýrazněnou možností zobrazit pravítko sloupce](media/source-editor-image5.png)
 
-![Dialogové okno Předvolby s "zobrazovat pravítko pro sloupce" zvýrazněnou](media/source-editor-image5.png)
+ Tato barva se zobrazí jako svislá šedá čára v editoru zdrojového kódu.
 
- Zobrazí se jako svislý světle šedá čára v editoru zdrojového kódu.
+## <a name="highlight-identifier-references"></a>Zvýraznit odkazy na identifikátory
 
-## <a name="highlight-identifier-references"></a>Zvýrazňovat odkazy na identifikátory.
+Když je povolená možnost "odkazy na identifikátory identifikátoru", můžete vybrat libovolný symbol ve zdrojovém kódu a Editor zdrojového kódu nabídne vizuální vodítko pro všechny ostatní odkazy v tomto souboru. Pokud chcete zapnout tuto možnost, přejděte do sady **Visual Studio > předvolby > textový Editor > značky a pravítka** a vyberte _Zvýraznit odkazy na identifikátory_, jak je znázorněno na následujícím obrázku:
 
-"Zvýraznění identifikátoru odkazy" je povolená možnost můžete vybrat libovolný symbol ve zdrojovém kódu a editoru zdrojového kódu poskytne vizuální průvodce pro všechny odkazy v tomto souboru. Chcete-li tuto možnost, přejděte na **sady Visual Studio > Předvolby > textový Editor > značky a pravítka** a vyberte _zvýrazňovat odkazy na identifikátory_, jak je znázorněno na následujícím obrázku:
+![Dialogové okno Předvolby s zvýrazněnými odkazy identifikátorů zvýraznění](media/source-editor-image6.png)
 
-![Dialogové okno Předvolby s "Zvýraznění odkazy na identifikátory" zvýrazněnou](media/source-editor-image6.png)
+Barva zvýraznění je užitečná také pro označení, že je něco přiřazeno nebo odkazováno. Pokud je položka přiřazena, zvýrazní se červeně; Pokud je odkazováno, je zvýrazněna modře:
 
-Barvu zvýraznění je také užitečné pro označení to něco je přidělovaná nebo odkazovat. Pokud není přiřazena něco, se zvýrazní červeně; Pokud se na ni odkazuje, je modře zvýrazněný:
-
-![Příklad zobrazující barvu zvýraznění](media/source-editor-image7.png)
+![Příklad ukazující barvy zvýraznění](media/source-editor-image7.png)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Funkce editoru kódu (Visual Studio na Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
-- [Sbalování (Visual Studio na Windows)](/visualstudio/ide/outlining)
+- [Funkce editoru kódu (Visual Studio ve Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
+- [Sbalení (Visual Studio ve Windows)](/visualstudio/ide/outlining)

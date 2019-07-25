@@ -3,23 +3,23 @@ title: Potlačení upozornění kompilátoru pro projekty a balíčky NuGet
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 764c488b659418dd409a5d83b1efcaac502f1e5e
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549290"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415784"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Postupy: Potlačení upozornění kompilátoru
 
-Pomocí filtrování jedné nebo více druhů upozornění kompilátoru můžete declutter protokolu sestavení. Například můžete chtít zkontrolovat jenom některé z výstupu, který se vygeneruje, když nastavíte úroveň podrobností protokolu sestavení na **normální**, **podrobné**, nebo **diagnostických**. Další informace o podrobnosti najdete v tématu [jak: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).
+Pomocí filtrování jedné nebo více druhů upozornění kompilátoru můžete declutter protokolu sestavení. Například můžete chtít zkontrolovat jenom některé z výstupu, který se vygeneruje, když nastavíte úroveň podrobností protokolu sestavení na **normální**, **podrobné**, nebo **diagnostických**. Další informace o podrobnostech naleznete v tématu [How to: Zobrazit, Uložit a nakonfigurovat soubory](../ide/how-to-view-save-and-configure-build-log-files.md)protokolu sestavení.
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Potlačit specifická upozornění pro vizuál C# nebo F\#
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Potlačit specifická upozornění pro C# vizuál nebo F\#
 
 Použití **sestavení** potlačit specifická upozornění pro na stránce vlastností C# a F# projekty.
 
@@ -63,7 +63,7 @@ Tento příklad ukazuje, jak upravit *.vbproj* souboru můžete potlačit upozor
 
 1. V panelu nabídky zvolte **projektu** > **uvolnit projekt**.
 
-1. V **Průzkumníka řešení**, otevřete kliknutím pravým tlačítkem nebo místní nabídku projektu a klikněte na tlačítko **upravit \<ProjectName > .vbproj**.
+1. V **Průzkumník řešení**otevřete kliknutím pravým tlačítkem myši nebo místní nabídku pro projekt a pak zvolte **Upravit \<ProjectName >. vbproj**.
 
     XML souboru projektu se otevře v editoru kódu.
 
@@ -133,5 +133,5 @@ V některých případech můžete chtít potlačit upozornění kompilátoru Nu
 ## <a name="see-also"></a>Viz také:
 
 - [Návod: Sestavení aplikace](../ide/walkthrough-building-an-application.md)
-- [Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Postupy: Zobrazení, uložení a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

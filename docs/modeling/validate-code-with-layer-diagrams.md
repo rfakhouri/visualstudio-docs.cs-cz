@@ -19,24 +19,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e21c3699d796d6037d3b8ca0e744e792b9810b6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a9786c35b81ac0ff4fd29ffe121aab7e1aa04f2f
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824544"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416435"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Ověřování kódu pomocí diagramů závislostí
 
-## <a name="why-use-dependency-diagrams"></a>Proč používat diagramů závislostí?
+## <a name="why-use-dependency-diagrams"></a>Proč používat diagramy závislostí?
 
-Pokud chcete mít jistotu, že kód není v konfliktu s návrhem, ověřování kódu pomocí diagramů závislostí v sadě Visual Studio. To může pomoci při:
+Chcete-li zajistit, aby kód nekoliduje s jeho návrhem, ověřte kód pomocí diagramů závislostí v aplikaci Visual Studio. To může pomoci při:
 
-- Vyhledání konfliktů mezi závislostmi v kódu a závislostmi na diagram závislostí.
+- Vyhledá konflikty mezi závislostmi v kódu a závislostmi na diagramu závislostí.
 
 - Vyhledání závislostí, které mohou být ovlivněny navrhovanými změnami.
 
-   Například lze upravit diagram závislostí k zobrazení možných změn architektury a následně ověřit kód pro vyhledání ovlivněných závislostí.
+   Diagram závislosti můžete například upravit tak, aby zobrazoval možné změny architektury, a pak ověřit kód, aby se zobrazily ovlivněné závislosti.
 
 - Refaktorujte nebo přeneste kód do jiného návrhu.
 
@@ -46,72 +46,71 @@ Pokud chcete mít jistotu, že kód není v konfliktu s návrhem, ověřování 
 
 - Visual Studio
 
-- Řešení, které má projekt modelování s diagramem závislostí. Tento diagram závislostí musí být spojen s artefakty v projektech C# nebo Visual Basic, které chcete ověřit. Zobrazit [vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md).
+  Chcete-li vytvořit diagram závislostí pro projekt .NET Core, musíte mít Visual Studio 2019 verze 16,2 nebo novější.
 
-> [!NOTE]
-> Diagramy závislostí nejsou podporovány pro projekty .NET Core v sadě Visual Studio.
+- Řešení, které má projekt modelování s diagramem závislostí. Tento diagram závislostí musí být spojen s artefakty C# v nebo Visual Basic projektů, které chcete ověřit. Viz [vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md).
 
-Chcete-li zjistit, jaké edice sady Visual Studio podporují tuto funkci, přečtěte si téma [podpora edice nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pokud chcete zjistit, které edice sady Visual Studio podporují tuto funkci, přečtěte si téma [Podpora edice pro nástroje pro architekturu a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Můžete ověřit kód ručně z diagramu otevřete závislostí v sadě Visual Studio nebo z příkazového řádku. Rovněž je možné ověřit kód automaticky při spuštění místních sestavení nebo kanály Azure sestavení. Zobrazit [Video pro kanál 9: Návrh a ověření architektury pomocí diagramů závislostí](http://go.microsoft.com/fwlink/?LinkID=252073).
+Kód lze ověřit ručně z otevřeného diagramu závislostí v aplikaci Visual Studio nebo z příkazového řádku. Kód lze také automaticky ověřit při spuštění místních sestavení nebo sestavení Azure Pipelines. Podívejte [se na video pro kanál 9: Navrhněte a ověřte svoji architekturu pomocí diagramů](http://go.microsoft.com/fwlink/?LinkID=252073)závislostí.
 
 > [!IMPORTANT]
-> Pokud chcete spustit ověření vrstvy pomocí Team Foundation Server (TFS), je rovněž nutné nainstalovat stejnou verzi sady Visual Studio na svém serveru sestavení.
+> Pokud chcete spustit ověřování vrstvy pomocí Team Foundation Server (TFS), musíte na server sestavení také nainstalovat stejnou verzi sady Visual Studio.
 
 ## <a name="live-dependency-validation"></a>Ověřování závislostí v reálném čase
 
-Nastane, ověřování závislostí v reálném čase a zobrazují se chyby okamžitě v **seznam chyb**.
+Ověřování závislostí probíhá v reálném čase a chyby jsou zobrazeny ihned v **Seznam chyb**.
 
-* Živé ověření je podporováno pro C# a Visual Basic.
+* Pro C# a Visual Basic se podporuje živé ověřování.
 
-* K povolení úplné analýzy řešení při použití ověřování závislostí v reálném čase, otevřete nastavení možností z zlatý pruh, který se zobrazí **seznam chyb**.
+* Pokud chcete při ověřování závislosti v reálném čase povolit úplnou analýzu řešení, otevřete nastavení možností z zlatého panelu, který se zobrazí v **Seznam chyb**.
 
-  - Zlatý pruh můžete trvale zavřít, pokud si nejste nepotřebujete vidět všechny architektury problémy ve vašem řešení.
-  - Pokud nepovolíte úplné analýzy řešení, analýze se provádí pouze u souborů, který právě upravujete.
+  - Zlatý panel můžete trvale zavřít, pokud vás zajímá všechny problémy architektury vašeho řešení.
+  - Pokud nepovolíte úplnou analýzu řešení, provede se analýza pouze u upravovaných souborů.
 
-* Při upgradu projekty Povolit živé ověření, zobrazí dialogové okno průběhu převodu.
+* Při upgradu projektů pro povolení živého ověřování se v dialogu zobrazuje průběh převodu.
 
-* Při aktualizaci projektu ověřování závislostí v reálném čase, verze balíčku NuGet se upgraduje na stejné pro všechny projekty a je nejvyšší verze používá.
+* Při aktualizaci projektu pro ověření závislosti na živé závislosti je verze balíčku NuGet upgradována tak, aby byla stejná pro všechny projekty, a je nejvyšší použitá verze.
 
-* Přidání nových triggerů projektu ověřování závislostí projektu aktualizace.
+* Přidáním nového projektu ověření závislosti se aktivuje aktualizace projektu.
 
 ## <a name="see-if-an-item-supports-validation"></a>Zjištění, zda položka podporuje validaci
 
-Vrstvy můžete propojit s weby, dokumenty Office, místo textových souborů a soubory v projektech, které jsou sdíleny napříč více aplikacemi, ale proces ověření nebude zahrnovat je. Chyby ověřování se neobjeví pro odkazy na projekty nebo sestavení, které jsou připojeny k samostatným vrstvám a v případě, že se mezi těmito vrstvami neobjeví závislosti. Tyto odkazy jsou považovány za závislosti jen tehdy, pokud kód tyto odkazy používá.
+Vrstvy můžete v projektech, které jsou sdíleny napříč více aplikacemi, propojit s weby, dokumenty Office, soubory ve formátu prostého textu a soubory, ale proces ověření je nebude zahrnovat. Chyby ověřování se neobjeví pro odkazy na projekty nebo sestavení, které jsou připojeny k samostatným vrstvám a v případě, že se mezi těmito vrstvami neobjeví závislosti. Tyto odkazy jsou považovány za závislosti jen tehdy, pokud kód tyto odkazy používá.
 
-1. Na diagram závislostí, vyberte jednu nebo více vrstev, klikněte pravým tlačítkem na svůj výběr a potom klikněte na tlačítko **zobrazit odkazy**.
+1. V diagramu závislosti vyberte jednu nebo více vrstev, klikněte pravým tlačítkem myši na výběr a potom klikněte na možnost **Zobrazit odkazy**.
 
-2. V **Průzkumník vrstev**, podívejte se na **podporuje ověřování** sloupce. Pokud je hodnota false, položka ověřování nepodporuje.
+2. V **Průzkumníku vrstev**se podívejte do sloupce **podporuje ověřování** . Pokud je hodnota false, položka ověřování nepodporuje.
 
 ## <a name="include-other-net-assemblies-and-projects-for-validation"></a>Zahrnutí dalších projektů a sestavení .NET pro ověřování
 
-Při přetažení položky do diagramu závislost, odkazy odpovídající sestavení nebo projekty .NET přidány automaticky do **odkazy vrstvy** složky v projektu modelování. Tato složka obsahuje odkazy na sestavení a projekty, které jsou analyzovány během ověřování. Můžete zahrnout další sestavení a projekty .NET pro ověření bez ručně přetahovat na diagram závislostí.
+Při přetahování položek do diagramu závislostí se automaticky přidají odkazy na odpovídající sestavení nebo projekty .NET do složky **odkazy na vrstvy** v projektu modelování. Tato složka obsahuje odkazy na sestavení a projekty, které jsou analyzovány během ověřování. Můžete zahrnout další sestavení a projekty .NET pro ověřování, aniž byste je museli ručně přetahovat do diagramu závislostí.
 
-1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt modelování nebo **odkazy vrstvy** složku a pak klikněte na tlačítko **přidat odkaz**.
+1. V **Průzkumník řešení**klikněte pravým tlačítkem myši na projekt modelování nebo na složku **odkazy na vrstvu** a potom klikněte na tlačítko **Přidat odkaz**.
 
-2. V **přidat odkaz** dialogovém okně vyberte projekty nebo sestavení a klikněte na **OK**.
+2. V dialogovém okně **Přidat odkaz** vyberte sestavení nebo projekty a potom klikněte na tlačítko **OK**.
 
 ## <a name="validate-code-manually"></a>Ověřování kódu ručně
 
-Pokud máte diagramu otevřete závislostí, který je propojen s položkami řešení, můžete spustit **ověřit** příkaz z diagramu. Můžete také použít příkazový řádek ke spuštění **msbuild** příkazů **validatearchitecture** vlastní vlastnost nastavena na **True**. Například lze při provádění změn v kódu provádět pravidelně ověřování vrstvy, takže bude možné zachytit konflikty závislostí včas.
+Pokud máte otevřený Diagram závislostí, který je propojen s položkami řešení, můžete spustit příkaz **ověřit** zástupce z diagramu. Pomocí příkazového řádku můžete také spustit příkaz **MSBuild** s vlastní vlastností **/p: ValidateArchitecture** nastavenou na **hodnotu true**. Například lze při provádění změn v kódu provádět pravidelně ověřování vrstvy, takže bude možné zachytit konflikty závislostí včas.
 
-### <a name="validate-code-from-an-open-dependency-diagram"></a>Ověření kódu z diagramu otevřete závislostí
+### <a name="validate-code-from-an-open-dependency-diagram"></a>Ověření kódu z otevřeného diagramu závislostí
 
-1. Klikněte pravým tlačítkem na plochu diagramu a potom klikněte na tlačítko **ověřit architekturu**.
-
-    > [!NOTE]
-    > Ve výchozím nastavení **akce sestavení** vlastnost na závislost soubor diagramu (.layerdiagram) nastavena na **ověřit** tak, aby diagram je součástí procesu ověřování.
-
-     **Seznam chyb** okno hlásí chyby, ke kterým dochází. Další informace o chybách ověřování najdete v části [řešit problémy s ověřením vrstvy](#troubleshoot-layer-validation-issues).
-
-2. Chcete-li zobrazit zdroje každé chyby, klikněte dvakrát na chybu v **seznam chyb** okna.
+1. Klikněte pravým tlačítkem na plochu diagramu a potom klikněte na **ověřit architekturu**.
 
     > [!NOTE]
-    > Visual Studio může namísto zdroje chyby zobrazit mapu kódu. K tomu dojde, pokud kód obsahuje závislost na sestavení, které není specifikováno diagram závislostí nebo kód chybí závislost, která je zadána diagram závislostí. Projděte si mapu kódu nebo kód určující, zda by měla závislost existovat. Další informace o mapách kódu najdete v tématu [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md).
+    > Ve výchozím nastavení je vlastnost **Akce sestavení** v souboru diagramu závislosti (. layerdiagram) nastavena na hodnotu **ověřit** , aby byl diagram součástí procesu ověřování.
 
-3. Ke správě chyb, naleznete v tématu [vyřešení chyb ověření vrstvy](#resolve-layer-validation-errors).
+     Okno **Seznam chyb** nahlásí všechny chyby, ke kterým dojde. Další informace o chybách ověřování najdete v tématu [řešení potíží s ověřováním vrstev](#troubleshoot-layer-validation-issues).
 
-### <a name="validate-code-at-the-command-prompt"></a>Ověřování kódu v příkazovém řádku
+2. Chcete-li zobrazit zdroj každé chyby, dvakrát klikněte na chybu v okně **Seznam chyb** .
+
+    > [!NOTE]
+    > Visual Studio může namísto zdroje chyby zobrazit mapu kódu. K tomu dochází, když má kód závislost na sestavení, které není zadáno v diagramu závislosti, nebo v kódu chybí závislost, která je určena diagramem závislostí. Zkontrolujte mapu kódu nebo kód, abyste zjistili, zda by měla závislost existovat. Další informace o mapách kódu najdete v tématu [Mapování závislostí napříč vašimi řešeními](../modeling/map-dependencies-across-your-solutions.md).
+
+3. Chcete-li spravovat chyby, přečtěte si téma [řešení chyb ověřování vrstvy](#resolve-layer-validation-errors).
+
+### <a name="validate-code-at-the-command-prompt"></a>Ověřit kód na příkazovém řádku
 
 1. Otevřete příkazový řádek sady Visual Studio.
 
@@ -125,13 +124,13 @@ Pokud máte diagramu otevřete závislostí, který je propojen s položkami ře
 
      - nebo –
 
-       Přejděte do složky, která obsahuje projekt modelování (.modelproj) souboru a závislost diagramu a pak spusťte nástroj MSBuild s následující vlastní vlastností:
+       Přejděte do složky, která obsahuje soubor projektu modelování (. modelproj) a diagram závislosti, a poté spusťte nástroj MSBuild s následující vlastní vlastností:
 
        ```
        msbuild /p:ValidateArchitecture=true
        ```
 
-   - Pro ověření kódu proti všem projektům modelování v řešení spusťte nástroj MSBuild s následující vlastní vlastností:
+   - Chcete-li ověřit kód pro všechny projekty modelování v řešení, spusťte MSBuild s následující vlastní vlastností:
 
        ```
        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
@@ -139,39 +138,39 @@ Pokud máte diagramu otevřete závislostí, který je propojen s položkami ře
 
      - nebo –
 
-       Přejděte do složky řešení, která musí obsahovat projekt modelování obsahující diagram závislostí a pak spusťte nástroj MSBuild s následující vlastní vlastností:
+       Přejděte do složky řešení, která musí obsahovat projekt modelování, který obsahuje diagram závislosti, a poté spusťte nástroj MSBuild s následující vlastní vlastností:
 
        ```
        msbuild /p:ValidateArchitecture=true
        ```
 
-     Zobrazí se všechny chyby, ke kterým dochází. Další informace o nástroji MSBuild naleznete v tématu [MSBuild](../msbuild/msbuild.md) a [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).
+     Zobrazí se všechny chyby, ke kterým dochází. Další informace o nástroji MSBuild naleznete v tématu úloha [MSBuild](../msbuild/msbuild.md) a [MSBuild](../msbuild/msbuild-task.md).
 
-   Další informace o chybách ověřování najdete v části [řešit problémy s ověřením vrstvy](#troubleshoot-layer-validation-issues).
+   Další informace o chybách ověřování najdete v tématu [řešení potíží s ověřováním vrstev](#troubleshoot-layer-validation-issues).
 
 ### <a name="manage-validation-errors"></a>Správa chyb ověřování
 
-Během procesu vývoje můžete chtít potlačit některé vykázané konflikty během ověřování. Například můžete chtít potlačit chyby, které již řešíte nebo které nejsou relevantní k danému scénáři. Při potlačení chyby je praktikou zaznamenat pracovní položku v Team Foundation.
+Během procesu vývoje můžete chtít potlačit některé vykázané konflikty během ověřování. Například můžete chtít potlačit chyby, které již řešíte nebo které nejsou relevantní k danému scénáři. Pokud potlačíte chybu, je vhodné Protokolovat pracovní položku v Team Foundation.
 
 > [!WARNING]
-> Musíte už být připojení k TFS zdrojového kódu ovládacího prvku (SCC) vytvořit nebo propojit s pracovní položkou. Pokud se pokusíte otevřít připojení k jiné SCC TFS, Visual Studio automaticky zavře aktuální řešení. Ujistěte se, že jste již připojeni k příslušné SCC než se pokusíte vytvořit nebo propojit s pracovní položkou. V pozdějších verzích sady Visual Studio příkazy nabídky nejsou k dispozici v případě, že nejste připojeni k SCC.
+> Aby bylo možné vytvořit nebo propojit pracovní položku, musíte být již připojeni ke správě zdrojového kódu TFS (SCC). Pokud se pokusíte otevřít připojení k jinému SCC TFS, Visual Studio automaticky zavře aktuální řešení. Před pokusem o vytvoření nebo propojení pracovní položky se ujistěte, že jste již připojeni k odpovídajícímu SCC. V novějších verzích sady Visual Studio nejsou příkazy nabídky k dispozici, pokud nejste připojeni k SCC.
 
-#### <a name="create-a-work-item-for-a-validation-error"></a>Vytvoření pracovní položky pro chybu ověřování
+#### <a name="create-a-work-item-for-a-validation-error"></a>Vytvoření pracovní položky pro chybu ověření
 
-- V **seznam chyb** okna, klikněte pravým tlačítkem na chyby, přejděte na **vytvořit pracovní položku**a potom klikněte na typ pracovní položky, kterou chcete vytvořit.
+- V okně **Seznam chyb** klikněte pravým tlačítkem myši na chybu, přejděte na příkaz **vytvořit pracovní položku**a poté klikněte na typ pracovní položky, kterou chcete vytvořit.
 
-Tyto úlohy slouží ke správě chyb ověřování v **seznam chyb** okno:
+Pomocí těchto úloh můžete spravovat chyby ověřování v okně **Seznam chyb** :
 
 |**To**|**Postupujte podle těchto kroků**|
 |-|-|
-|Potlačení vybraných chyb během ověřování|Klikněte pravým tlačítkem na jeden nebo více vybraných chyb, přejděte na **spravovat chyby ověřování**a potom klikněte na tlačítko **potlačit chyby**.<br /><br /> Potlačené chyby se zobrazují s přeškrtnutím. Při příštím spuštění ověřování se tyto chyby nezobrazí.<br /><br /> Potlačené chyby jsou sledovány v souboru .suppressions pro odpovídající soubor diagramu závislostí.|
-|Ukončení potlačování vybraných chyb|Klikněte pravým tlačítkem na Potlačené chyby nebo chyby, přejděte na **spravovat chyby ověřování**a potom klikněte na tlačítko **ukončit potlačování chyb**.<br /><br /> Vybrané potlačené chyby se při příštím spuštění ověřování zobrazí.|
-|Obnovení všech potlačených chyb v **seznam chyb** okna|Klikněte pravým tlačítkem kamkoli **seznam chyb** okno, přejděte na příkaz **spravovat chyby ověřování**a potom klikněte na tlačítko **zobrazit všechny Potlačené chyby**.|
-|Skrytí všech potlačených chyb v **seznam chyb** okna|Klikněte pravým tlačítkem kamkoli **seznam chyb** okno, přejděte na příkaz **spravovat chyby ověřování**a potom klikněte na tlačítko **skrýt všechny Potlačené chyby**.|
+|Potlačení vybraných chyb během ověřování|Klikněte pravým tlačítkem myši na jednu nebo více vybraných chyb, přejděte na položku **Spravovat chyby ověřování**a potom klikněte na potlačit **chyby**.<br /><br /> Potlačené chyby se zobrazují s přeškrtnutím. Při příštím spuštění ověřování se tyto chyby nezobrazí.<br /><br /> Potlačené chyby jsou sledovány v souboru. potlačení pro odpovídající soubor diagramu závislosti.|
+|Ukončení potlačování vybraných chyb|Klikněte pravým tlačítkem myši na potlačit chybu nebo chyby, přejděte na položku **Spravovat chyby ověřování**a potom klikněte na možnost **ukončit potlačení chyb**.<br /><br /> Vybrané potlačené chyby se při příštím spuštění ověřování zobrazí.|
+|Obnovit všechny Potlačené chyby v okně **Seznam chyb**|Klikněte pravým tlačítkem myši kdekoli v okně **Seznam chyb** , přejděte na položku **Spravovat chyby ověřování**a potom klikněte na možnost **Zobrazit všechny Potlačené chyby**.|
+|Skrýt všechny Potlačené chyby z okna **Seznam chyb**|Klikněte pravým tlačítkem myši kdekoli v okně **Seznam chyb** , přejděte na možnost **Spravovat chyby ověřování**a potom klikněte na **Skrýt všechny Potlačené chyby**.|
 
 ## <a name="validate-code-automatically"></a>Ověřování kódu automaticky
 
-Ověřování vrstev lze provádět při každém spuštění místního sestavení. Pokud váš tým používá Azure DevOps, můžete provést ověření vrstev s ověřenými vráceními se změnami, které lze určit vytvořením vlastní úlohy MSBuild a použít sestavy sestavení pro sběr chyb ověřování. Vytvoření sestavení hlídaného vrácení se změnami naleznete v tématu [TFVC hlídané vrácení se změnami](/azure/devops/pipelines/build/triggers#gated).
+Ověřování vrstev lze provádět při každém spuštění místního sestavení. Pokud váš tým používá Azure DevOps, můžete provést ověřování vrstvy pomocí ověřovaných vrácení se změnami, které lze zadat vytvořením vlastní úlohy MSBuild, a pomocí sestav sestavení shromažďovat chyby ověřování. Chcete-li vytvořit ověřovaná sestavení pro vrácení se změnami, přečtěte si téma [TFVC gated check-in](/azure/devops/pipelines/build/triggers#gated).
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>Automatické ověřování kódu během místního sestavení
 
@@ -183,31 +182,31 @@ K otevření souboru projektu modelování (.modelproj) použijte textový edito
 
 \- nebo –
 
-1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt modelování obsahující diagram závislostí nebo diagramy a pak klikněte na **vlastnosti**.
+1. V **Průzkumník řešení**klikněte pravým tlačítkem myši na projekt modelování, který obsahuje diagram nebo diagramy závislosti, a poté klikněte na možnost **vlastnosti**.
 
-2. V **vlastnosti** okno, nastavte projekt modelování **ověřit architekturu** vlastnost **True**.
+2. V okně **vlastnosti** nastavte vlastnost **ověřit architekturu** projektu modelování na **hodnotu true**.
 
     To zahrne projekt modelování do ověřovacího procesu.
 
-3. V **Průzkumníka řešení**, klikněte na soubor diagramu (.layerdiagram) závislost, kterou chcete použít pro ověřování.
+3. V **Průzkumník řešení**klikněte na soubor diagramu závislosti (. layerdiagram), který chcete použít k ověření.
 
-4. V **vlastnosti** okno, ujistěte se, že v diagramu **akce sestavení** je nastavena na **ověřit**.
+4. V okně **vlastnosti** se ujistěte, že je vlastnost **Akce sestavení** diagramu nastavena na hodnotu **ověřit**.
 
-    To zahrnuje diagram závislostí do ověřovacího procesu.
+    To zahrnuje diagram závislosti v procesu ověřování.
 
-Ke správě chyb v okně Seznam chyb, naleznete v tématu [vyřešení chyb ověření vrstvy](#resolve-layer-validation-errors).
+Chcete-li spravovat chyby v okně Seznam chyb, přečtěte si téma [řešení chyb ověřování vrstvy](#resolve-layer-validation-errors).
 
 ## <a name="troubleshoot-layer-validation-issues"></a>Poradce při potížích s ověřením vrstvy
 
-Následující tabulka popisuje problémy s ověřením vrstvy a jejich řešení. Tyto problémy se liší od chyb, které vzniknou z konfliktů mezi kódem a návrhem. Další informace o těchto chybách naleznete v tématu [řešit problémy s ověřením vrstvy](#troubleshoot-layer-validation-issues).
+Následující tabulka popisuje problémy s ověřením vrstvy a jejich řešení. Tyto problémy se liší od chyb, které vzniknou z konfliktů mezi kódem a návrhem. Další informace o těchto chybách najdete v tématu [řešení potíží s ověřováním vrstev](#troubleshoot-layer-validation-issues).
 
-|**Problém**|**Možná příčina**|**Řešení**|
+|**Chybu**|**Možná příčina**|**Řešení**|
 |-|-|-|
-|Chyby ověřování se nezobrazí podle očekávání.|Ověřování nefunguje v diagramech závislosti, které jsou zkopírovány z jiných diagramů závislostí v Průzkumníku řešení a jsou ve stejném projektu modelování. diagramy závislostí, které jsou tímto způsobem zkopírují, obsahují stejné odkazy jako původní diagram závislostí.|Přidejte do projektu modelování nový diagram závislostí.<br /><br /> Zkopírujte prvky ze zdrojového diagramu závislostí do nového diagramu.|
+|Chyby ověřování se nezobrazí podle očekávání.|Ověřování nefunguje na diagramech závislostí, které se zkopírují z jiných diagramů závislostí v Průzkumník řešení a které jsou ve stejném projektu modelování. diagramy závislostí, které jsou tímto způsobem zkopírovány, obsahují stejné odkazy jako původní Diagram závislostí.|Přidejte do projektu modelování nový diagram závislosti.<br /><br /> Zkopírujte prvky z diagramu závislosti zdrojového kódu do nového diagramu.|
 
-## <a name="resolve-layer-validation-errors"></a>Řešení chyb při ověřování vrstvy
+## <a name="resolve-layer-validation-errors"></a>Vyřešit chyby ověřování vrstvy
 
-Při ověřování kódu proti diagramu závislost vyskytnou chyby, pokud kód je v konfliktu s návrhem. Chyby ověřování mohou způsobit například následující podmínky:
+Při ověřování kódu proti diagramu závislostí dojde k chybám ověřování, když je kód v konfliktu s návrhem. Chyby ověřování mohou způsobit například následující podmínky:
 
 - Artefakt je přiřazen nesprávné vrstvě. V tomto případě přesuňte artefakt.
 
@@ -219,22 +218,22 @@ Následující oddíl popisuje syntaxi, která se u těchto chyb používá, vy
 
 |**Syntaxe**|**Popis**|
 |-|-|
-|*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* je artefakt, který je spojen s vrstvou v diagramu závislostí.<br /><br /> *ArtifactTypeN* je typ *ArtifactN*, například **třídy** nebo **metoda**, například:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* je artefakt, který je spojen s vrstvou v diagramu závislostí.<br /><br /> *ArtifactTypeN* je typ *ArtifactN*, například **Třída** nebo **Metoda**, například:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|Název oboru názvů.|
-|*LayerNameN*|Název vrstvy na diagram závislostí.|
-|*DependencyType*|Typ vztahu závislosti mezi *Artifact1* a *Artifact2*. Například *Artifact1* má **volání** vztah s *Artifact2*.|
+|*LayerNameN*|Název vrstvy v diagramu závislostí.|
+|*DependencyType*|Typ vztahu závislostí mezi *artefakt Artifact1* a *Artifact2*. Například *artefakt Artifact1* má relaci **volání** s *Artifact2*.|
 
 | **Chyba syntaxe** | **Popis chyby** |
 |-|-|
-| DV0001: **Neplatná závislost** | Tento problém je oznamují prvek kódu (obor názvů, typ, členství) mapovat na odkazy vrstvy prvek kódu, který je namapována na jinou vrstvu, ale neexistuje žádná šipky závislostí mezi tyto vrstvy v diagram ověřování závislostí obsahující této vrstvy. To je narušení omezení závislosti. |
-| DV1001: **Neplatný název oboru názvů** | Tento problém je uveden na prvek kódu spojené s vrstvou, která vlastnost "názvů Namespace povoleno" neobsahuje obor názvů, ve kterém je definována tento prvek kódu. To je narušení omezení vytváření názvů. Všimněte si, že syntaxe názvů Namespace"povoleno", které má být středníkem seznam oborů názvů v kódu jsou elementy související s vrstvou se smí být definované. |
-| DV1002: **Závislost na u oboru názvů** | Tento problém je uveden na prvek kódu spojené s vrstvou a odkazuje na jiný element kód definovaný v oboru názvů, který je definován v "U Namespace" Vlastnosti vrstvy. To je narušení omezení vytváření názvů. Všimněte si, že vlastnost "Odkazy názvů" je definován jako středníkem oddělený seznam oborů názvů, které nesmí elementy kódu přidružené k této vrstvě odkazovat. |
-| DV1003: **Zakázaný název oboru názvů** | Tento problém je uveden na prvek kódu spojené s vrstvou obsahující obor názvů, ve kterém je tento prvek kódu definována vlastnost "názvů Namespace zakázáno". To je narušení omezení vytváření názvů. Všimněte si, že vlastnost "Název oboru názvů Nepovoleno" je definován jako středníkem oddělený seznam oborů názvů, ve které kódu nesmí být definována prvky přidružené k této vrstvě. |
-| DV3001: **Chybějící spojení** | Vrstva "*LayerName*"odkazuje na"*artefaktů*" který nebyl nalezen. Nechybí odkaz na sestavení? |
-| DV9001: **Strukturální analýza nalezla vnitřní chyby** | Výsledky nemusí být úplné. Další informace lze nalézt v podrobném protokolu událostí sestavení nebo ve výstupním okně. |
+| DV0001: **Neplatná závislost** | K tomuto problému dochází, pokud prvek kódu (obor názvů, typ, člen) mapovaný na vrstvu odkazuje na prvek kódu mapovaný na jinou vrstvu, ale mezi těmito vrstvami není žádná šipka závislosti v diagramu ověřování závislostí obsahující tuto vrstvu. Toto je narušení omezení závislosti. |
+| DV1001: **Neplatný název oboru názvů** | Tento problém je hlášen u elementu kódu přidruženého k vrstvě, která "povolené názvy oborů názvů" neobsahuje obor názvů, ve kterém je tento prvek kódu definován. Toto je porušení omezení pojmenování. Všimněte si, že syntaxe "povolených názvů oborů názvů" je středníkem seznam oborů názvů, ve kterých je povoleno definovat prvky kódu přidružené ke vrstvě. |
+| DV1002: **Závislost na neodkazovaném oboru názvů** | Tento problém je hlášen u prvku kódu přidruženého k vrstvě a odkazování na jiný prvek kódu definovaný v oboru názvů, který je definován v vlastnosti "neodkazovaná" názvový prostor vrstvy. Toto je porušení omezení pojmenování. Všimněte si, že vlastnost "neodkazované obory názvů" je definována jako středníkem oddělený seznam oborů názvů, na které by neměly být odkazovány v prvcích kódu přidružených k této vrstvě. |
+| DV1003: **Nepovolený název oboru názvů** | Tento problém je hlášen u elementu kódu přidruženého ke vrstvě, která "nepovolené názvy oborů názvů" obsahuje obor názvů, ve kterém je tento prvek kódu definován. Toto je porušení omezení pojmenování. Všimněte si, že vlastnost "nepovolený název oboru názvů" je definována jako středníkem oddělený seznam oborů názvů, ve kterých by neměly být definovány elementy kódu přidružené k této vrstvě. |
+| DV3001: **Chybějící propojení** | Vrstva "*propojuje" odkazuje*na*artefakt*, který nebyl nalezen. Nechybí odkaz na sestavení? |
+| DV9001: **Analýza architektury zjistila vnitřní chyby.** | Výsledky nemusí být úplné. Další informace lze nalézt v podrobném protokolu událostí sestavení nebo ve výstupním okně. |
 
 ## <a name="see-also"></a>Viz také:
 
-- [Živé ověření závislosti v sadě Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
+- [Ověřování aktivní závislosti v aplikaci Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Ověřování systému během vývoje](../modeling/validate-your-system-during-development.md)
-- [Video: Ověření závislostí architektury v reálném čase](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [Video: Ověřování závislostí architektury v reálném čase](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

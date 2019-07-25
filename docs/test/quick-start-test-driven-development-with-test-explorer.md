@@ -1,81 +1,36 @@
 ---
-title: Vývoj řízený testy s použitím Průzkumníka testů
-ms.date: 11/04/2016
+title: Návod pro vývoj řízený testovacím prostředím
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cd80739f887a42c62af55bc06cfb65704f4755ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17ee82630e75e0b0ea8b4a069249c2dccad9010e
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002224"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493153"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Rychlý start: Testování vývoj řízený testy s použitím Průzkumníka testů
+# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Návod: Vývoj řízený testováním pomocí Průzkumníka testů
 
-Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně funguje napříč mnoha inkrementálními kroky vývoje. Existuje několik architektur, které můžete použít pro psaní jednotkových testů, včetně některých vyvinutých třetími stranami. Některá testovací rozhraní jsou zaměřena na testování v jiných jazycích či platformách. Průzkumník testů poskytuje tak jednotné rozhraní pro testování částí v některém z těchto rozhraní. Adaptéry jsou k dispozici pro nejčastěji používaná rozhraní a můžete napsat vlastní adaptér pro jiná rozhraní.
+Vytvořte testy jednotek, které vám pomůžou zajistit správné fungování kódu prostřednictvím přírůstkových změn kódu. Existuje několik architektur, které můžete použít pro psaní jednotkových testů, včetně některých vyvinutých třetími stranami. Některé testovací architektury jsou specializované pro testování v různých jazycích nebo platformách. Průzkumník testů poskytuje tak jednotné rozhraní pro testování částí v některém z těchto rozhraní. Další informace o **Průzkumníku testů**naleznete v tématu [spuštění testů jednotek pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md) a [nejčastějších dotazů Průzkumníka testů](test-explorer-faq.md).
 
-Průzkumník testů nahrazuje okna jednotkových testů starších vydání sady Visual Studio. Mezi její výhody patří:
+Tento návod ukazuje, jak vyvíjet testovaný způsob v C# použití Microsoft Test Frameworku (MSTest). Můžete ji snadno přizpůsobit pro jiné jazyky nebo jiné testovací architektury, jako je například NUnit. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](install-third-party-unit-test-frameworks.md).
 
-- Spustit .NET, nespravovaných, databázových a jiných testů pomocí jednoho rozhraní.
+## <a name="create-a-test-and-generate-code"></a>Vytvoří test a vygeneruje kód.
 
-- Použití jednotky testovacího rozhraní dle vlastního výběru, jako je například NUnit nebo rozhraní MSTest.
+1. C# Vytvořte projekt **knihovny tříd (.NET Standard)** . Tento projekt bude obsahovat kód, který chceme testovat. Pojmenujte projekt **MyMath**.
 
-- Zobrazit v jednom okně všechny informace, které potřebujete.
+2. Ve stejném řešení přidejte nový projekt **testů MSTest (.NET Core)** . Pojmenujte projekt testů **MathTests**.
 
-## <a name="use-test-explorer"></a>Pomocí Průzkumníka testů
+   ![Nové projekty kódu a testování](../test/media/test-driven-development-ide.png)
 
-![Test Explorer zobrazující tlačítko Spustit vše](../test/media/unittestexplorer-beta-.png)
-
-### <a name="to-run-unit-tests-by-using-test-explorer"></a>Spuštění testů jednotek pomocí Průzkumníka testů
-
-1. Vytvořte jednotkové testy používající vybrané testovací rozhraní podle vlastního výběru. Například vytvořit test používající rozhraní MSTest:
-
-   1. Vytvoření **projekt testu jednotek** projektu pro C#, Visual Basic nebo C++.
-
-   2. Zapište každý Jednotkový test jako metodu. Předpona každou metodu testu `[TestMethod]` atribut.
-
-2. Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.
-
-3. V panelu nabídky zvolte **testovací** > **spustit jednotkové testy** > **všechny testy**.
-
-    Řešení je sestaveno a testy spuštěny.
-
-    Průzkumník testů otevře a zobrazí souhrn výsledků.
-
-   **Pokud chcete zobrazit úplný seznam testů:** Zvolte **Zobrazit vše** v každé kategorii.
-
-   **Pokud chcete zobrazit podrobnosti výsledku testu:** Vyberte test v Průzkumníku testů, chcete-li zobrazit podrobnosti, jako jsou zprávy o výjimkách v podokně podrobností.
-
-   **Přejít na kód testu:** Klikněte dvakrát na test v Průzkumníku testů nebo zvolte **otevřít Test** v místní nabídce.
-
-   **Ladění testu:** Otevřete místní nabídku pro jeden nebo více testů a klikněte na tlačítko **ladit vybrané testy**.
-
-> [!IMPORTANT]
-> Výsledky, které se zobrazují se poslední spuštění. Obarvený panel výsledků zobrazuje pouze výsledky testů, které byly spuštěny. Například pokud spuštění více testů a některé z nich selhání a poté spustíte pouze úspěšné testy, pak na panelu výsledků bude celý zelený.
-
-> [!NOTE]
-> Je-li zobrazen žádný test, ujistěte se, že máte nainstalován adaptér pro připojení Průzkumníku testů pro testovací rozhraní, kterou používáte. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](install-third-party-unit-test-frameworks.md).
-
-## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Návod: Pomocí jednotky testů pro vývoj metody
-
-Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhraní Microsoft Unit Test framework. Můžete snadno přizpůsobit ho pro ostatní jazyky a použití jiných testovacích architektur, jako je například NUnit. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](install-third-party-unit-test-frameworks.md).
-
-### <a name="create-the-test-and-method"></a>Vytvoření testu a metody
-
-1. Vytvoření C# **knihovny tříd** projektu. Tento projekt bude obsahovat kód, který chceme dodat. V tomto příkladu je pojmenována `MyMath`.
-
-2. Vytvořte nový **projekt testu jednotek** projektu.
-
-   ![Nové projekty kódu a testování](../test/media/unittestexplorerwalk1.png)
-
-3. Napište základní testovací metodu. Ověřte výsledek pro určitý vstup:
+3. Napište jednoduchou testovací metodu, která ověří výsledek získaný pro konkrétní vstup. Do `UnitTest1` třídy přidejte následující kód:
 
    ```csharp
-
    [TestMethod]
    public void BasicRooterTest()
    {
@@ -87,98 +42,93 @@ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhran
      // Run the method under test:
      double actualResult = rooter.SquareRoot(input);
      // Verify the result:
-     Assert.AreEqual(expectedResult, actualResult,
-         delta: expectedResult / 100);
+     Assert.AreEqual(expectedResult, actualResult, delta: expectedResult / 100);
    }
    ```
 
-4. Generovat metodu testu.
+4. Vygeneruje typ z testovacího kódu.
 
-   1. Umístěte kurzor na `Rooter`a pak v místní nabídce zvolte **generovat** > **nový typ**.
+   1. Umístěte kurzor na `Rooter`a potom v nabídce žárovky zvolte **generovat typ** > Rooter**generovat nový typ**.
 
-   2. V **generovat nový typ** dialogové okno, nastavte **projektu** do projektu knihovny tříd. V tomto příkladu je `MyMath`.
+      ![Vytvořit novou rychlou akci typu](media/test-driven-development-generate-new-type.png)
 
-   3. Umístěte kurzor na `SquareRoot`a pak v místní nabídce zvolte **generovat** > **Pahýl metody**.
+   2. V dialogovém okně **generovat typ** nastavte možnost **projekt** na **MyMath**, projekt knihovny tříd a klikněte na **tlačítko OK**.
 
-5. Spusťte Jednotkový test.
+      ![Dialogové okno generovat typ v aplikaci Visual Studio 2019](media/test-driven-development-generate-type-dialog.png)
 
-   1. Na **testovací** nabídce zvolte **spustit jednotkové testy** > **všechny testy**.
+5. Vygenerujte metodu z testovacího kódu. Umístěte kurzor na `SquareRoot`a potom v nabídce žárovky zvolte **generovat metodu root. SquareRoot**.
 
-        Toto řešení je sestaveno a spuštěno.
+6. Spusťte Jednotkový test.
 
-        Průzkumník testů otevře a zobrazí výsledky.
+   1. Chcete-li otevřít **Průzkumníka testů**, v nabídce **test** vyberte možnost**Průzkumník testů aplikace** **Windows** > .
 
-        Test je zobrazen **neúspěšné testy**.
+   2. V **Průzkumníku testů**klikněte na tlačítko **Spustit vše** a spusťte test.
 
-6. Vyberte název testu.
+   Řešení se sestaví a testovací běhy a selžou.
 
-    Podrobnosti testu se zobrazí v dolní části Průzkumníku testů.
+7. Vyberte název testu.
 
-7. Vyberte položky v oblasti **trasování zásobníku** zobrazíte, pokud se test nezdařil.
+   Podrobnosti testu se zobrazí v podokně **Souhrn podrobností testu** .
 
-   ![Testování jednotek Test Explorer zobrazující se nezdařilo.](../test/media/unittestexplorerwalkthrough2.png)
+   ![Souhrn podrobností testu v Průzkumníku testů](media/test-driven-development-test-detail-summary.png)
 
-   V tomto okamžiku jste vytvořili test a prázdnou metodu, kterou upravíte tak, aby byl test úspěšný.
+8. Vyberte horní odkaz v části **trasování zásobníku** a přejděte do umístění, kde se test nezdařil.
 
-#### <a name="after-every-change-make-all-the-tests-pass"></a>Po každé změně Ujistěte se, všechny testy úspěšné.
+V tomto okamžiku jste vytvořili test a zástupnou proceduru, kterou lze upravit tak, aby test prošl.
 
-1. V *MyMath\Rooter.cs*, Vylepšete kód `SquareRoot`:
+## <a name="verify-a-code-change"></a>Ověření změny kódu
+
+1. V souboru *Class1.cs* Vylepšete kód `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)
-     {
-       return input / 2;
-     }
+    {
+        return input / 2;
+    }
     ```
 
-2. V Průzkumníku testů, zvolte **spustit všechny**.
+2. V **Průzkumník testů**, zvolte **spustit všechny**.
 
-     Kód sestavení a spuštění testu.
+   Řešení sestaví a spustí test a projde.
 
-     Test byl úspěšný.
+   ![Průzkumník testů ukazující procházející test](../test/media/test-driven-development-passed-test.png)
 
-     ![Průzkumník testů jednotek zobrazující prochází testem.](../test/media/unittestexplorerwalkthrough3.png)
+## <a name="extend-the-range-of-inputs"></a>Rozšiřování rozsahu vstupů
 
-#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Přidat testy do Rozšiřte rozsah vstupů
+Chcete-li zlepšit naši jistotu, že kód funguje ve všech případech, přidejte testy, které vyzkouší širší rozsah vstupních hodnot.
 
-1. Pokud chcete zlepšit si být jistější, který váš kód funguje ve všech případech, přidejte testy, které zkoušejí širší rozsah vstupních hodnot.
+> [!TIP]
+> Neupravujte existující testy, které předávají. Místo toho přidejte nové testy. Existující testy měňte pouze v případě, že se změní požadavky uživatele. Tato zásada umožňuje zajistit, aby neztratili stávajících funkcí během rozšiřování kódu.
 
-    > [!TIP]
-    > Neupravujte existující testy, které předávají. Místo toho přidejte nové testy. Existující testy měňte pouze v případě, že se změní požadavky uživatele. Tato zásada umožňuje zajistit, aby neztratili stávajících funkcí během rozšiřování kódu.
-
-     V testovací třídě přidejte následující test, který zkouší rozsah vstupních hodnot:
+1. Ve třídě test přidejte následující test, který se pokusí o rozsah vstupních hodnot:
 
     ```csharp
     [TestMethod]
     public void RooterValueRange()
     {
-      // Create an instance to test:
-      Rooter rooter = new Rooter();
-      // Try a range of values:
-      for (double expectedResult = 1e-8;
-          expectedResult < 1e+8;
-          expectedResult = expectedResult * 3.2)
-      {
-        RooterOneValue(rooter, expectedResult);
-      }
+        // Create an instance to test.
+        Rooter rooter = new Rooter();
+
+        // Try a range of values.
+        for (double expected = 1e-8; expected < 1e+8; expected *= 3.2)
+        {
+            RooterOneValue(rooter, expected);
+        }
     }
 
     private void RooterOneValue(Rooter rooter, double expectedResult)
     {
-      double input = expectedResult * expectedResult;
-      double actualResult = rooter.SquareRoot(input);
-      Assert.AreEqual(expectedResult, actualResult,
-          delta: expectedResult / 1000);
+        double input = expectedResult * expectedResult;
+        double actualResult = rooter.SquareRoot(input);
+        Assert.AreEqual(expectedResult, actualResult, delta: expectedResult / 1000);
     }
     ```
 
-2. V Průzkumníku testů, zvolte **spustit všechny**.
+2. V **Průzkumník testů**, zvolte **spustit všechny**.
 
-     Nový test se nezdaří, i když se první test stále úspěšný.
+   Nový test se nezdařil (i když první test stále projde). Chcete-li najít bod selhání, vyberte neúspěšný test a potom se podívejte na podrobnosti v podokně **Souhrn podrobností testu** .
 
-     K hledání bodu selhání, zvolte test obsahující a potom v dolní části Průzkumníku testů vyberte položku nejvýše **trasování zásobníku**.
-
-3. Zkontrolujte, zda chcete zobrazit, co mohlo způsobit chybu testované metody. V `MyMath.Rooter` třídy, revize kódu:
+3. Zkontrolujte, zda chcete zobrazit, co mohlo způsobit chybu testované metody. `SquareRoot` Upravte kód následujícím způsobem:
 
     ```csharp
     public double SquareRoot(double input)
@@ -194,89 +144,86 @@ Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhran
     }
     ```
 
-4. V Průzkumníku testů, zvolte **spustit všechny**.
+4. V **Průzkumník testů**, zvolte **spustit všechny**.
 
-     Oba testy jsou nyní úspěšné.
+   Oba testy jsou nyní úspěšné.
 
-#### <a name="add-tests-for-exceptional-cases"></a>Přidejte testy výjimečných případů
+## <a name="add-tests-for-exceptional-cases"></a>Přidejte testy výjimečných případů
 
-1. Přidejte test záporných vstupů:
+1. Přidejte nový test pro záporné vstupy:
 
     ```csharp
     [TestMethod]
-     public void RooterTestNegativeInputx()
-     {
-         Rooter rooter = new Rooter();
-         try
-         {
-             rooter.SquareRoot(-10);
-         }
-         catch (ArgumentOutOfRangeException e)
-         {
-             return;
-         }
-         Assert.Fail();
-     }
+    public void RooterTestNegativeInputx()
+    {
+        Rooter rooter = new Rooter();
+        try
+        {
+            rooter.SquareRoot(-10);
+        }
+        catch (System.ArgumentOutOfRangeException)
+        {
+            return;
+        }
+        Assert.Fail();
+    }
     ```
 
-2. V Průzkumníku testů, zvolte **spustit všechny**.
+2. V **Průzkumník testů**, zvolte **spustit všechny**.
 
-     Metoda v rámci testu smyčky a musí být ukončena ručně.
+   Metoda v testovacích cyklech a je nutné ji zrušit ručně.
 
-3. Zvolte **zrušit**.
+3. Na panelu nástrojů v **Průzkumníku testů**klikněte na **tlačítko zrušit** .
 
-     Test se ukončí po 10 sekundách.
+   Test zastaví provádění.
 
-4. Opravte kód metody:
+4. `if` Opravte `SquareRoot` kód přidáním následujícího příkazu na začátku metody:
 
     ```csharp
-
     public double SquareRoot(double input)
     {
-      if (input <= 0.0)
-      {
-        throw new ArgumentOutOfRangeException();
-      }
-    ...
-    ```
-
-5. V Průzkumníku testů, zvolte **spustit všechny**.
-
-     Všechny testy jsou úspěšné.
-
-#### <a name="refactor-without-changing-tests"></a>Refaktorujte beze změn testů
-
-1. Zjednodušte kód, ale neměňte testy.
-
-    > [!TIP]
-    > A *refaktoring* je změna, která slouží k provádění kódu líp fungovat nebo k srozumitelnější kód. Refaktorování není zamýšleno změnit chování kódu, a proto testy zůstávají nezměněny.
-    >
-    > Doporučujeme provádět kroky refaktorování odděleně od kroků rozšiřujících funkčnost. Udržování testů v nezměněné podobě zajišťuje, že jste ještě kódu omylem zavedeny chyby během refaktoringu.
-
-    ```csharp
-    public class Rooter
-    {
-      public double SquareRoot(double input)
-      {
         if (input <= 0.0)
         {
-          throw new ArgumentOutOfRangeException();
+            throw new ArgumentOutOfRangeException();
         }
+        ...
+    ```
+
+5. V **Průzkumník testů**, zvolte **spustit všechny**.
+
+   Všechny testy jsou úspěšné.
+
+## <a name="refactor-the-code-under-test"></a>Refaktoring testovaného kódu
+
+Refaktorujte kód, ale neměňte testy.
+
+> [!TIP]
+> Refaktoring je změna, která je určena k tomu, aby byl kód lépe nebo čitelnější. Refaktorování není zamýšleno změnit chování kódu, a proto testy zůstávají nezměněny.
+>
+> Doporučujeme provádět kroky refaktorování odděleně od kroků rozšiřujících funkčnost. Udržování testů v nezměněné podobě zajišťuje, že jste ještě kódu omylem zavedeny chyby během refaktoringu.
+
+1. Změňte řádek, který počítá `result` `SquareRoot` v metodě následujícím způsobem:
+
+    ```csharp
+    public double SquareRoot(double input)
+    {
+        if (input <= 0.0)
+        {
+            throw new ArgumentOutOfRangeException();
+        }
+
         double result = input;
         double previousResult = -input;
         while (Math.Abs(previousResult - result) > result / 1000)
         {
-          previousResult = result;
-          result = (result + input / result) / 2;
-          //was: result = result - (result * result - input) / (2*result);
+            previousResult = result;
+            result = (result + input / result) / 2;
+            //was: result = result - (result * result - input) / (2*result);
         }
         return result;
-      }
     }
     ```
 
-2. Zvolte **spustit všechny**.
+2. Vyberte možnost **Spustit vše**a ověřte, zda všechny testy jsou stále průchodné.
 
-     Všechny testy jsou stále úspěšné.
-
-     ![Úspěšné testy 3 zobrazuje Průzkumník testu jednotek.](../test/media/unittestexplorerwalkthrough4.png)
+   ![Průzkumník testů zobrazující 3 úspěšné testy](../test/media/test-driven-development-three-passed-tests.png)

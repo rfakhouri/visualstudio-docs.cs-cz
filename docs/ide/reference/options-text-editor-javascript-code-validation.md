@@ -1,40 +1,44 @@
 ---
-title: Možnosti, textový Editor, JavaScript, kód ověřování
+title: Možnosti, textový editor, JavaScript, ověřování kódu
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f42cda0f80261a0cf499f03e01d52e9a10ae475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ecf5073a590b1e1bd5eb47fb3c98064b9b7b506
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778489"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461748"
 ---
-# <a name="options-text-editor-javascript-code-validation"></a>Možnosti, textový Editor, JavaScript, kód ověřování
-Použití **ověření kódu** stránku **možnosti** dialogové okno Upravit nastavení, které mají vliv na způsob, jakým jazyka JavaScript zpracovává chyby. Můžete přistupovat **ověření kódu** stránky výběrem **nástroje** > **možnosti** na řádku nabídek a následným rozbalením položek **textový Editor**  >  **JavaScript** > **ověřovací kód.**
+# <a name="options-text-editor-javascript-code-validation"></a>Možnosti, textový editor, JavaScript, ověřování kódu
+
+Stránka **ověřování kódu** v dialogovém okně **Možnosti** slouží k úpravě nastavení, která ovlivňují způsob, jakým JavaScript zpracovává chyby. Na stránku **ověření kódu** můžete přistupovat kliknutím na**Možnosti** **nástroje** > na panelu nabídek a následným rozbalením**ověřování kódu** **JavaScript** > v **textovém editoru** > .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
-**Ověření kódu** stránka obsahuje následující části:
+Stránka **ověření kódu** obsahuje následující oddíly:
 
-## <a name="javascript-errors"></a>Chyby jazyka JavaScript
- Pomocí těchto možností můžete nastavit předvolby toho, jak editor kódu JavaScript validuje syntaxi v dokumentu.
+## <a name="javascript-errors"></a>Chyby JavaScriptu
 
-### <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
- **Povolit chyby JavaScriptu**
+Pomocí těchto možností můžete nastavit předvolby toho, jak editor kódu JavaScript validuje syntaxi v dokumentu.
 
- Pokud je nastavena na **True**, editor kódu JavaScript se zobrazí chyby souborů JavaScriptu a JSX. Zobrazí chyby v **seznam chyb** s předponou (JS). Zobrazení těchto chyb je užitečné, pokud pracujete s kódem, který jste nenapsali a nehodláte opravovat chyby syntaxe.
+### <a name="uielement-list"></a>UIElement – seznam
 
- **Zobrazit chyby jako upozornění**
+**Povolit chyby JavaScriptu**
 
- Pokud je nastavena na **True**, zobrazují se chyby JavaScriptu jako upozornění místo chyby **seznam chyb**.
+Při nastavení na **hodnotu true**zobrazí Editor kódu JavaScript chyby pro soubory JavaScript a JSX. V **Seznam chyb** se zobrazí chyby s předponou (js). Zobrazení těchto chyb je užitečné, pokud pracujete s kódem, který jste nenapsali, a nechcete opravit chyby syntaxe.
 
-## <a name="see-also"></a>Viz také
+**Zobrazit chyby jako upozornění**
+
+Při nastavení na **hodnotu true**se chyby JavaScriptu zobrazují jako varování namísto chyb v **Seznam chyb**.
+
+## <a name="see-also"></a>Viz také:
 
 - [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

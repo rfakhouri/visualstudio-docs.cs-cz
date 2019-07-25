@@ -1,5 +1,5 @@
 ---
-title: Možnosti, textový Editor, C/C++, experimentální
+title: Možnosti, textový editor, C/C++, experimentální
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -8,63 +8,63 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75f36d66ea46e7a0474c3b76ae000f745337fc45
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817920"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461373"
 ---
-# <a name="options-text-editor-cc-experimental"></a>Možnosti, textový Editor, C/C++, experimentální
+# <a name="options-text-editor-cc-experimental"></a>Možnosti, textový editor, C/C++, experimentální
 
-Změnou tyto možnosti můžete změnit chování související se technologie IntelliSense a procházení databází, když programujete v jazyce C nebo C++. Tyto funkce jsou skutečně experimentální a může změnit ani odebrat ze sady Visual Studio v budoucí verzi.
+Změnou těchto možností můžete změnit chování související s technologií IntelliSense a databází procházení při programování v jazyce C nebo C++. Tyto funkce jsou skutečně experimentální a můžou se v budoucí verzi upravovat nebo odebírat v rámci sady Visual Studio.
 
 ::: moniker range="vs-2017"
 
-Tento článek popisuje možnosti v sadě Visual Studio 2017. Visual Studio 2015, vyberte **2015** v modulu pro výběr nad obsahu.
+Tento článek popisuje možnosti sady Visual Studio 2017. V případě sady Visual Studio 2015 vyberte v selektoru nad obsahem položku **2015** .
 
 ::: moniker-end
 
-Chcete-li získat přístup k této stránky vlastností, stiskněte **Ctrl**+**Q** aktivovat do vyhledávacího pole a pak zadejte **experimentální**. Hledáním na stránce po prvních pár písmen. Můžete také získáte k němu výběrem **nástroje** > **možnosti** rozšiřuje **textový Editor**, pak **C/C++** a následným výběrem možnosti **Experimentální**.
+Chcete-li získat přístup k této stránce vlastností, stiskněte klávesu **CTRL**+**Q** pro aktivaci vyhledávacího pole a pak zadejte **experimentální**. Hledání najde stránku za několika prvních písmeny. K tomu se můžete dostat taky tak, že vyberete**Možnosti** **nástrojů** > a rozbalíte **textový editor**, pak **C/C++** a pak zvolíte **experimentální**.
 
-Tyto funkce jsou dostupné v instalaci sady Visual Studio.
+Tyto funkce jsou k dispozici v instalaci sady Visual Studio.
 
 > [!NOTE]
-> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Zobrazit [přizpůsobit prostředí IDE sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Viz [Přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="enable-predictive-intellisense"></a>Povolit prediktivní IntelliSense
 
-Prediktivní IntelliSense omezí počet výsledků zobrazuje v rozevíracím seznamu technologie IntelliSense tak, aby se zobrazí pouze výsledky, které jsou relevantní v kontextu. Pokud zadáte například `int x =` a vyvolání rozevíracího seznamu technologie IntelliSense, zobrazí se jen celá čísla nebo funkce, které vrací celá čísla. Prediktivní IntelliSense je vypnuto ve výchozím nastavení.
+Prediktivní technologie IntelliSense omezuje počet výsledků zobrazených v rozevíracím seznamu technologie IntelliSense tak, aby se zobrazily pouze výsledky, které jsou relevantní v kontextu. Například pokud zadáte `int x =` a vyvoláte rozevírací seznam IntelliSense, zobrazí se pouze celá čísla nebo funkce vracející celá čísla. Prediktivní technologie IntelliSense je ve výchozím nastavení vypnutá.
 
 ::: moniker range="vs-2017"
 
 ## <a name="enable-faster-project-load"></a>Povolit rychlejší načítání projektů
 
-Od verze Visual Studio 2017 verze 15.3, tato funkce se nazývá **povolit ukládání projektů do mezipaměti** a byla přesunuta do [nastavení projektu VC ++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) stránku vlastností.
+Počínaje verzí sady Visual Studio 2017 verze 15,3 Tato funkce označuje **možnost Povolit ukládání projektů do mezipaměti** a přesunula se na stránku vlastností [nastavení projektu VC + +](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) .
 
-Tato možnost umožňuje sadě Visual Studio projekt ukládání dat do mezipaměti tak, aby při příštím otevření projektu, je možné načíst, uložit do mezipaměti dat spíše než znovu computingu ze souborů projektu. Pomocí dat uložených v mezipaměti může výrazně zkracují čas načtení projektu.
+Tato možnost umožňuje aplikaci Visual Studio ukládat data projektu do mezipaměti, aby při příštím otevření projektu mohla načíst tato data z mezipaměti, nikoli znovu provést zpracování ze souborů projektu. Použití dat uložených v mezipaměti může výrazně zrychlit dobu načítání projektu.
 
 ::: moniker-end
 
-## <a name="additional-features-in-the-visual-studio-marketplace"></a>Další funkce v aplikaci Visual Studio Marketplace
+## <a name="additional-features-in-the-visual-studio-marketplace"></a>Další funkce v Visual Studio Marketplace
 
-Můžete procházet další textové funkce editoru [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Downloads). Příkladem je [C++ rychlých oprav](https://marketplace.visualstudio.com/items?itemName=VisualCppDevLabs.CQuickFixes2017), která podporuje následující:
+V [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Downloads)můžete procházet další funkce textového editoru. Příkladem jsou [ C++ rychlé opravy](https://marketplace.visualstudio.com/items?itemName=VisualCppDevLabs.CQuickFixes2017), které podporují následující:
 
-- **Přidat chybějící #include** -navrhuje relevantní #include pro neznámý symboly ve vašem kódu
+- **Přidat chybějící #include** – navrhuje relevantní #include pro neznámé symboly v kódu
 
-- **Přidat direktivu using obor názvů/plnému symbol** – podobně jako předchozí položce, ale pro obory názvů
+- **Přidat pomocí oboru názvů nebo plně kvalifikovat symbol** podobný předchozí položce, ale pro obory názvů
 
-- **Přidat chybějící středníkem**
+- **Přidat chybějící středník**
 
-- **Online Nápověda** -online nápovědě pro chybové zprávy
+- **Online nápovědu** – prohledání online nápovědu pro chybové zprávy
 
 - a další...
 
 ## <a name="see-also"></a>Viz také:
 
 - [Nastavení možností editoru pro konkrétní jazyk](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refaktoring v jazyce C++ (VC blogu)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
+- [Refaktoring v C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
 )

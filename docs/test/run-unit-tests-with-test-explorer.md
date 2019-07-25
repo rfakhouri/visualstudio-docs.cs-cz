@@ -1,6 +1,6 @@
 ---
 title: Spuštění a ladění testů jednotek pomocí Průzkumníka testů
-description: Zjistěte, jak ke spuštění testů pomocí Průzkumníka testů v sadě Visual Studio. Toto téma popisuje, jak povolit automatické testy po sestavení, zobrazit výsledky testů, skupiny a filtrovat seznam testů, vytvořit seznam stop, ladit testy a použít klávesové zkratky testu.
+description: Naučte se spouštět testy pomocí Průzkumníka testů v aplikaci Visual Studio. Toto téma popisuje, jak povolit automatické testovací běhy po sestavení, zobrazení výsledků testů, seskupení a filtrování seznamu testů, vytvoření seznamů stop, ladění testů a používání klávesových zkratek.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,30 +10,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 68ed41eeecde853459bc9c817d84bd433788084c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747781"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493303"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů částí pomocí Průzkumníka testů
 
-Použití **Průzkumníka testů** spouštění testů jednotek sady Visual Studio nebo projektů testování jednotky třetí strany. Můžete také použít **Průzkumníka testů** seskupte testy do kategorií, filtrovat seznam testů a vytvořte, uložte a spusťte seznamy stop testů. Můžete ladit testy a analyzovat pokrytí testu výkonu a kódu.
+Pomocí **Průzkumníka testů** spusťte testy jednotek ze sady Visual Studio nebo projektů testování částí třetích stran. Můžete také použít **Průzkumníka testů** k seskupení testů do kategorií, filtrování seznamu testů a vytváření, ukládání a spouštění seznamů testů. Můžete ladit testy a analyzovat výkon testu a pokrytí kódu.
 
-Visual Studio obsahuje rozhraní testování částí Microsoft pro spravovaný i nativní kód. Ale **Průzkumníka testů** můžete taky spustit libovolné jednotky rozhraní testování, který zavedl adaptér Test Explorer. Další informace o instalaci rozhraní pro testování jednotky třetí strany, naleznete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)
+Visual Studio obsahuje rozhraní pro testování částí společnosti Microsoft pro spravovaný i nativní kód. Nicméně **Průzkumník testů** může také spustit libovolné rozhraní testování částí, které implementovalo adaptér Průzkumníka testů. Další informace o instalaci rozhraní pro testování částí třetích stran najdete v tématu [instalace rozhraní pro testování částí třetích stran](../test/install-third-party-unit-test-frameworks.md) .
 
-**Průzkumník testů** můžete spouštět testy z více zkušebních projektů v řešení a z testů tříd, které jsou součástí výroby kódu projektů. Projekty testů mohou použít jiné jednotky rozhraní testování. Pokud testovaný kód je určené pro rozhraní .NET, testovací projekt lze zapsat v libovolném jazyce, který také cílí na .NET, bez ohledu na jazyk cílového kódu. Nativní projekty kódu C/C++ musí být testovány pomocí rozhraní testování částí C++. Další informace najdete v tématu [zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md).
+**Průzkumník testů** může spustit testy z více projektů testů v řešení a z testovacích tříd, které jsou součástí projektů produkčního kódu. Testovací projekty mohou používat různé architektury testování částí. Při zápisu testovaného kódu pro rozhraní .NET může být testovací projekt napsán v jakémkoli jazyce, který také cílí na rozhraní .NET bez ohledu na jazyk cílového kódu. Nativní projekty kódu C/C++ musí být testovány pomocí rozhraní testování částí C++. Další informace najdete v tématu [zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Spustit testy v Průzkumníku testů
 
 Když sestavíte testovací projekt, testy se zobrazí v Průzkumníku testů. Pokud se nezobrazí Průzkumník testů, zvolte **testovací** v nabídce sady Visual Studio, zvolte **Windows**a klikněte na tlačítko **Průzkumník testů**.
 
-![Průzkumník testu jednotek](../test/media/ute_failedpassednotrunsummary.png)
+![Průzkumník testů](../test/media/ute_failedpassednotrunsummary.png)
 
 Jak spustit, zápis a znovu spouštěny, zobrazuje Průzkumník testů výsledky ve výchozích skupinách **neúspěšné testy**, **úspěšné testy**, **přeskočené testy** a  **Nespuštěné testy**. Můžete změnit způsob, jakým Průzkumník testů seskupuje vaše testy.
 
-Můžete provádět většinu práce hledání, uspořádání a spouštění testů z **Průzkumník testů** nástrojů.
+Na panelu nástrojů **Průzkumníka testů** můžete provádět spoustu práce při hledání, organizování a spouštění testů.
 
 ![Spuštění testů z panelu nástrojů Průzkumníka testů](../test/media/ute_toolbar.png)
 
@@ -43,28 +43,28 @@ Spustit všechny testy v řešení, všechny testy ve skupině nebo sadu testů,
 
 - Chcete-li spustit všechny testy v řešení, zvolte **spustit všechny**.
 
-- Chcete-li spustit všechny testy ve výchozí skupině, zvolte **spustit** a pak vyberte skupinu v nabídce.
+- Chcete-li spustit všechny testy ve výchozí skupině, zvolte možnost **Spustit** a poté vyberte skupinu v nabídce.
 
-- Vyberte jednotlivé testy, které chcete spustit, otevřete v místní nabídce pro vybraný test a zvolte **spustit vybrané testy**.
+- Vyberte jednotlivé testy, které chcete spustit, otevřete nabídku kliknutím pravým tlačítkem pro vybraný test a pak zvolte možnost **Spustit vybrané testy**.
 
 - Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.
 
-**Panel úspěšný/selhání** v horní části **Průzkumník testů** okna je animovaný ke spuštění testů. V závěru testovacího běhu **panel úspěšný/selhání** se změní na zelenou, pokud všechny testy proběhly úspěšně, nebo zčervená, pokud některé testy selhaly.
+V horní části okna **Průzkumníka testů** je animovaný **řádek Pass/selhat** , protože testy jsou spouštěny. Při uzavírání testovacího běhu se **pruh úspěch/selhání** změní na zelený, pokud všechny testy proběhly úspěšně, nebo pokud dojde k selhání testu na červenou.
 
 ### <a name="run-tests-after-every-build"></a>Spustit testy po každém sestavení
 
 |Tlačítko|Popis|
 |-|-|
-|![Spustit po sestavení](../test/media/ute_runafterbuild_btn.png)|Chcete-li spouštět testy jednotek po každém místním sestavení, zvolte **testovací** ve standardní nabídce a klikněte na tlačítko **spustit testy po sestavení** na **Průzkumníka testů** nástrojů.|
+|![Spustit po sestavení](../test/media/ute_runafterbuild_btn.png)|Chcete-li spustit testy jednotek po každém místním sestavení, zvolte možnost **test** v nabídce Standard a pak zvolte možnost **Spustit testy po sestavení** na panelu nástrojů **Průzkumníka testů** .|
 
 > [!NOTE]
-> Spuštění testů jednotky po každém sestavení vyžaduje Visual Studio 2017 Enterprise nebo Visual Studio 2019. V aplikaci Visual Studio 2019 je součástí komunity Professional i Enterprise.
+> Spuštění testů jednotek po každém sestavení vyžaduje Visual Studio 2017 Enterprise nebo Visual Studio 2019. V aplikaci Visual Studio 2019 je součástí komunity a Professional i Enterprise.
 
-## <a name="view-test-results"></a>Zobrazení výsledků testu
+## <a name="view-test-results"></a>Zobrazit výsledky testu
 
 Jak spustit, zápis a znovu spouštěny, zobrazuje Průzkumník testů výsledky ve skupinách **neúspěšné testy**, **úspěšné testy**, **přeskočené testy** a **není spuštěn Testy**. V podokně podrobností v dolní části Průzkumníku testů zobrazí shrnutí testu spusťte.
 
-### <a name="view-test-details"></a>Zobrazit podrobnosti o testu
+### <a name="view-test-details"></a>Zobrazit podrobnosti testu
 
 Chcete-li zobrazit podrobnosti o konkrétním testu, vyberte test.
 
@@ -86,98 +86,98 @@ Pokud se test nezdaří, zobrazí se také v podokně podrobností:
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Zobrazit zdrojový kód testovací metody
 
-Chcete-li zobrazit zdrojový kód pro testovací metodu v editoru sady Visual Studio, vyberte test a zvolte **otevřít Test** v místní nabídce (klávesnice: **F12**).
+Chcete-li zobrazit zdrojový kód testovací metody v editoru sady Visual Studio, vyberte test a pak zvolte možnost **Otevřít test** v místní nabídce kliknutím pravým tlačítkem myši (klávesnice: **F12**).
 
-## <a name="group-and-filter-the-test-list"></a>Seskupit a filtrovat seznam testů
+## <a name="group-and-filter-the-test-list"></a>Seskupení a filtrování seznamu testů
 
-Test Explorer umožňuje seskupit testy do předdefinovaných kategorií. Většina prostředí testování jednotek, které běží v Průzkumníku testů, umožňuje definovat vlastní kategorie a dvojice kategorie/hodnota pro seskupení testů. Seznam testů můžete také filtrovat porovnáním řetězců s vlastnostmi testů.
+Průzkumník testů umožňuje seskupit testy do předdefinovaných kategorií. Většina rozhraní testů jednotek, která běží v Průzkumníku testů, vám umožní definovat vlastní kategorie a páry kategorií a hodnot pro seskupení testů. Můžete také filtrovat seznam testů porovnáním řetězců s vlastnostmi testu.
 
-### <a name="group-tests-in-the-test-list"></a>Skupinu testů v seznamu testů
+### <a name="group-tests-in-the-test-list"></a>Seskupit testy v seznamu testů
 
-Chcete-li změnit způsob uspořádání testů, zvolte šipku dolů vedle **Group** tlačítko ![tlačítko skupiny Průzkumníka testů](../test/media/ute_groupby_btn.png) a vyberte nová kritéria seskupení.
+Chcete-li změnit způsob, jakým jsou testy uspořádány, zvolte šipku dolů vedle tlačítka skupina ![](../test/media/ute_groupby_btn.png) **pro tlačítko Test** Průzkumníka a vyberte Nová kritéria seskupení.
 
-![Skupinu testů podle kategorií v Průzkumníku testů](../test/media/ute_groupbycategory.png)
+![Seskupit testy podle kategorie v Průzkumníku testů](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>Skupiny Průzkumníka testů
 
 |Skupina|Popis|
 |-|-----------------|
-|**Doba trvání**|Seskupí testy podle času spuštění: **Rychlé**, **střední**, a **pomalé**.|
-|**Výsledek**|Skupiny testy podle výsledků spuštění: **Neúspěšné testy**, **přeskočeno testy**, **prošel testy**.|
-|**Osobnostní rysy**|Seskupí testy podle kategorie nebo párových hodnot, které definujete. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.|
-|**Projekt**|Seskupí testy podle názvů projektů.|
+|**Doba trvání**|Testuje počet skupin podle doby spuštění: **Rychlé**, **střední**a **pomalé**.|
+|**Výsledek**|Seskupí testy podle výsledků spuštění: **Neúspěšné testy**, **vynechané testy**, **Úspěšné testy**.|
+|**Traits**|Seskupí testy podle párů kategorií/hodnot, které definujete. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.|
+|**Projekt**|Seskupí testy podle názvu projektů.|
 
 ### <a name="group-by-traits"></a>Seskupit podle vlastností
 
-Vlastnost je obvykle dvojice název/hodnota kategorie, ale může být také jednu kategorii. Vlastnosti mohou být přiřazeny metodám, které jsou označeny jako testovací metody testovacím rozhraním jednotky. Rámce jednotkových testů můžete definovat kategorií vlastností. Chcete-li definovat vlastní dvojice název/hodnota kategorie do kategorií vlastností můžete přidat hodnoty. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.
+Vlastnost je obvykle dvojice název/hodnota kategorie, ale může to být také jedna kategorie. Vlastnostem lze přiřadit metody, které jsou identifikovány jako testovací metoda v rámci jednotkového testu. Rozhraní testování částí může definovat kategorie vlastností. Přidáním hodnot do kategorií vlastností můžete definovat vlastní páry název-hodnota kategorie. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.
 
-**Vlastnosti v testování části Microsoft Framework pro spravovaný kód**
+**Vlastnosti v rozhraní testování částí společnosti Microsoft pro spravovaný kód**
 
-V rámci Microsoft testovacího rozhraní jednotky pro spravované aplikace, můžete definovat vlastnost název / hodnota v <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> atribut. Testovací rozhraní obsahuje také tyto předdefinované vlastnosti:
+V rozhraní Microsoft pro testování částí pro spravované aplikace definujete v <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> atributu dvojici název/hodnota vlastnosti. Testovací rozhraní obsahuje také tyto předdefinované vlastnosti:
 
-|Vlastnost|Popis|
+|Znak|Popis|
 |-|-----------------|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Kategorie vlastník je definována testovacím rozhraním jednotky a vyžaduje poskytnutí řetězce hodnoty vlastníka.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Kategorie Priorita je definována testovacím rozhraním jednotky a vyžaduje poskytnutí celočíselné hodnoty priority.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Atribut TestCategory umožňuje zadat kategorii bez hodnoty. Kategorie definované atributu TestCategory může být také kategorie atribut TestProperty.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|Atribut TestProperty umožňuje definovat pár vlastností kategorie/hodnota.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Kategorie vlastník je definována v rámci testovacího rozhraní jednotky a vyžaduje zadání řetězcové hodnoty vlastníka.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Kategorie priority je definována v rámci testovacího rozhraní jednotky a vyžaduje, abyste zadali celočíselnou hodnotu priority.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Atribut TestCategory umožňuje zadat kategorii bez hodnoty. Kategorie definovaná atributem TestCategory může být také kategorií atributu TestProperty.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|Atribut TestProperty umožňuje definovat vlastnost páru kategorie/hodnota.|
 
-**Vlastnosti v testování části Microsoft Framework pro C++**
+**Vlastnosti v architektuře testování částí společnosti Microsoft proC++**
 
- Zobrazit [použití Microsoft Unit Testing Framework pro C++](how-to-use-microsoft-test-framework-for-cpp.md).
+ Viz [jak použít systém testování částí od společnosti Microsoft pro C++ ](how-to-use-microsoft-test-framework-for-cpp.md).
 
-### <a name="search-and-filter-the-test-list"></a>Hledat a filtrovat seznam testů
+### <a name="search-and-filter-the-test-list"></a>Hledání a filtrování seznamu testů
 
-Filtry Průzkumníka testování filtrů můžete použít k omezení zkušebních metod v projektech, které můžete zobrazit a spustit.
+Filtry Průzkumníka testů můžete použít k omezení testovacích metod v projektech, které můžete zobrazit a spustit.
 
-Pokud zadáte řetězec **Průzkumníka testů** vyhledávací pole a tlačítko **Enter**, seznam testů je filtrován a zobrazuje pouze testy, jejichž plně kvalifikované názvy obsahují řetězec.
+Když zadáte řetězec do vyhledávacího pole **Průzkumníka testů** a kliknete na tlačítko **ENTER**, seznam testů je filtrován tak, aby zobrazoval pouze testy, jejichž plně kvalifikované názvy obsahují řetězec.
 
-Filtrovat podle různých kritérií:
+Filtrování podle různých kritérií:
 
 1. Otevřete rozevírací seznam napravo od vyhledávacího pole.
 
-2. Zvolte Nová kritéria.
+2. Vyberte Nová kritéria.
 
-3. Mezi uvozovkami zadejte hodnotu filtru.
+3. Zadejte hodnotu filtru mezi uvozovky.
 
-![Filtruje testy v Průzkumníku testů](../test/media/ute_filtertestlist.png)
+![Filtrovat testy v Průzkumníku testů](../test/media/ute_filtertestlist.png)
 
 > [!NOTE]
-> Hledání jsou malá a velká písmena a odpovídají libovolné části hodnoty kritérií zadaného řetězce.
+> V hledání jsou rozlišována malá a velká písmena a odpovídají zadanému řetězci všem částem hodnoty kritérií.
 
 |Kvalifikátor|Popis|
 |-|-----------------|
-|**Vlastnost**|Hledá odpovídající vlastnosti kategorie a hodnoty pro shody. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.|
-|**Projekt**|Vyhledá názvy projektů testů pro shody.|
-|**Chybová zpráva**|Hledání uživatelem definované chybové zprávy vrácené selháním výrazů pro shody.|
-|**Cesta k souboru**|Hledá plně kvalifikovaný název zdrojové soubory testů pro shody.|
-|**Plně kvalifikovaný název**|Hledá plně kvalifikovaný název testovací obory názvů, tříd a metod pro shody.|
-|**Output**|Prohledá uživatelem definované chybové zprávy, které jsou zapsány do standardního výstupního (stdout) nebo standardní chyby (stderr). Syntaxe pro určení výstupních zpráv je definována v rámci testovacího rozhraní jednotky.|
-|**Výsledek**|Vyhledá názvy kategorií Průzkumníka testů pro shody: **Neúspěšné testy**, **přeskočeno testy**, **prošel testy**.|
+|**Znak**|Vyhledá shody v kategorii a hodnotě vlastností. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.|
+|**Projekt**|Vyhledá shody v názvech projektů testů.|
+|**Chybová zpráva**|Vyhledá shodu v uživatelsky definovaných chybových zprávách vrácených neúspěšnými kontrolními výrazy.|
+|**Cesta k souboru**|Vyhledá shody v plně kvalifikovaném názvu souboru zdrojových souborů testu.|
+|**Plně kvalifikovaný název**|Vyhledá plně kvalifikovaný název souboru testovacích oborů názvů, tříd a metod pro shody.|
+|**Output**|Vyhledá chybové zprávy definované uživatelem, které jsou zapsány do standardního výstupu (stdout) nebo standardní chyby (stderr). Syntaxe pro určení výstupních zpráv je definována v rámci testovacího rozhraní jednotky.|
+|**Výsledek**|Vyhledá odpovídající názvy kategorií Průzkumníka testů: **Neúspěšné testy**, **vynechané testy**, **Úspěšné testy**.|
 
-K vyloučení části výsledků filtru, použijte následující syntaxi:
+K vyloučení podmnožiny výsledků filtru použijte následující syntaxi:
 
 ```cpp
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 
-Například `FullName:"MyClass" - FullName:"PerfTest"` vrátí všechny testy, které zahrnují "MyClass" v názvu, s výjimkou případů, testy, které zahrnují také "PerfTest" v názvu.
+Například `FullName:"MyClass" - FullName:"PerfTest"` vrátí všechny testy, které zahrnují "MyClass" v názvu, s výjimkou testů, které také zahrnují "PerfTest" v názvu.
 
-## <a name="create-custom-playlists"></a>Vytvořit vlastní seznamy skladeb
+## <a name="create-custom-playlists"></a>Vytváření vlastních seznamů testů
 
-Můžete vytvořit a uložit seznam testů, které chcete spustit nebo zobrazit jako skupinu. Když vyberete seznam stop, testy v seznamu se zobrazí v Průzkumníku testů. Test můžete přidat k více než jednoho seznamu stop a všechny testy ve vašem projektu jsou k dispozici, když zvolíte výchozí **všechny testy** seznamu testů.
+Můžete vytvořit a uložit seznam testů, které chcete spustit nebo zobrazit jako skupinu. Když vyberete seznam testů, testy v seznamu se zobrazí v Průzkumníku testů. Test můžete přidat do více než jednoho seznamu skladeb a všechny testy v projektu jsou k dispozici, když vyberete výchozí seznam **testů pro všechny testy** .
 
-![Zvolte seznam stop](../test/media/ute_playlist.png)
+![Zvolit seznam testů](../test/media/ute_playlist.png)
 
-**Chcete-li vytvořit seznam stop**, vyberte jeden nebo více testů v aplikaci Průzkumník testů. V místní nabídce zvolte **přidat do seznamu testů** > **NewPlaylist**. Uložte soubor s názvem a umístění, které zadáte **vytvořit nový seznam testů** dialogové okno.
+**Chcete-li vytvořit seznam stop**, vyberte jeden nebo více testů v Průzkumníku testů. V nabídce kliknutím pravým tlačítkem myši vyberte možnost **Přidat do seznamu** > **NewPlaylist**. Uložte soubor s názvem a umístěním, které zadáte v dialogovém okně **vytvořit nový seznam** testů.
 
-**Chcete-li přidat testy do seznamu stop**, vyberte jeden nebo více testů v aplikaci Průzkumník testů. V místní nabídce zvolte **přidat do seznamu testů**a pak zvolte seznam testů, které chcete přidat testy.
+**Chcete-li přidat testy do seznamu stop**, vyberte jeden nebo více testů v Průzkumníku testů. V nabídce klepněte pravým tlačítkem myši na položku **Přidat do seznamu stop**a zvolte seznam testů, do kterého chcete přidat testy.
 
-**Chcete-li otevřít seznam skladeb**, zvolte **testovací** > **stop** v nabídce sady Visual Studio a buď zvolte ze seznamu naposledy použitých seznamů stop nebo zvolte **otevřete Seznam testů** zadat název a umístění seznamu stop.
+**Chcete-li otevřít seznam stop**, zvolte možnost **test** > **seznamu** testů v nabídce aplikace Visual Studio a buď zvolte ze seznamu naposledy použitých seznamů stop, nebo zvolte možnost **otevřít seznam stop** a zadejte název a umístění seznamu skladeb.
 
 Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.
 
-## <a name="debug-and-analyze-unit-tests"></a>Ladění a analýza testů jednotek
+## <a name="debug-and-analyze-unit-tests"></a>Ladit a analyzovat testy jednotek
 
 Průzkumník testů můžete použít ke spuštění relace ladění pro testy. Krokování kódu s ladicím programem Visual Studio bez problémů přejdete vpřed a zpět mezi testováním částí a testovaný projekt. Spuštění ladění:
 
@@ -186,25 +186,25 @@ Průzkumník testů můžete použít ke spuštění relace ladění pro testy. 
     > [!NOTE]
     > Vzhledem k tomu, že zkušební metody lze spustit v libovolném pořadí, nastavte zarážky v všechny testovací metody, které chcete ladit.
 
-2. V Průzkumníku testů vyberte testovací metody a pak zvolte **ladit vybrané testy** v místní nabídce.
+2. V Průzkumníku testů vyberte testovací metody a pak zvolte možnost **ladit vybrané testy** v místní nabídce kliknutím pravým tlačítkem myši.
 
-   Další informace o ladicím programu, najdete v části [ladit v sadě Visual Studio](../debugger/debugger-feature-tour.md).
+   Další informace o ladicím programu naleznete v tématu [ladění v aplikaci Visual Studio](../debugger/debugger-feature-tour.md).
 
-### <a name="diagnose-test-method-performance-issues"></a>Diagnostika problémů s výkonem test – metoda
+### <a name="diagnose-test-method-performance-issues"></a>Diagnostika problémů s výkonem testovacích metod
 
-Chcete-li diagnostikovat, proč testovací metoda trvá příliš dlouho, v Průzkumníku testů vyberte metodu a zvolte **profilu** v místní nabídce. Zobrazit [prohlížeč výkonu](../profiling/performance-explorer.md).
+Chcete-li diagnostikovat, proč testovací metoda trvá příliš dlouho, vyberte metodu v Průzkumníku testů a pak zvolte možnost **profil** v nabídce kliknutím pravým tlačítkem myši. Viz [prohlížeč výkonu](../profiling/performance-explorer.md).
 
-### <a name="analyze-unit-test-code-coverage"></a>Analyzovat pokrytí kódem jednotkového testu
+### <a name="analyze-unit-test-code-coverage"></a>Analýza pokrytí kódu testu jednotek
 
-Můžete určit množství kódu produktu, který je skutečně testován prostřednictvím testů jednotky pomocí nástroje pokrytí kódu sady Visual Studio. Můžete spustit pokrytí kódem u vybraných testů nebo u všech testů v řešení.
+Můžete určit množství kódu produktu, který je skutečně testován pomocí testu jednotek pomocí nástroje pokrytí kódu sady Visual Studio. Můžete spustit pokrytí kódem u vybraných testů nebo u všech testů v řešení.
 
-Pokud chcete spustit pokrytí kódu pro testovací metody v řešení:
+Spuštění pokrytí kódu pro testovací metody v řešení:
 
-1. Zvolte **testovací** v horní nabídce panelu a klikněte na tlačítko **analyzovat pokrytí kódu**.
+1. Zvolte možnost **test** na horním řádku nabídek a pak zvolte možnost **Analyzovat pokrytí kódu**.
 
-2. Z podnabídky zvolte jeden z následujících příkazů:
+2. V podnabídce vyberte jeden z následujících příkazů:
 
-    - **Vybrané testy** spouští testovací metody, které jste vybrali v aplikaci Test Explorer.
+    - **Vybrané testy** spouští testovací metody, které jste vybrali v Průzkumníku testů.
 
     - **Všechny testy** spustí všechny testovací metody v řešení.
 
@@ -212,9 +212,9 @@ Pokud chcete spustit pokrytí kódu pro testovací metody v řešení:
 
 Další informace najdete v tématu [použití pokrytí kódu k určení, kolik kódu je právě testováno](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
-## <a name="test-shortcuts"></a>Testování klávesové zkratky
+## <a name="test-shortcuts"></a>Zástupci testů
 
-Testy můžete spustit z **Průzkumníka testů**, tak, že kliknete pravým tlačítkem v editoru kódu v testu a vyberete **spuštění testu**, nebo s použitím výchozí [zástupce Průzkumník testů](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) v Visual Studio. Některé zkratky jsou založené na kontextu. To znamená, že spustit nebo ladit testy založené na to, kde je kurzor v editoru kódu. Pokud ukazatel myši nachází uvnitř testovací metoda, která testovacích běhů metoda. Pokud je kurzor na úrovni třídy a poté spusťte všechny testy v dané třídě. To je stejný pro úroveň oboru názvů.
+Testy lze spustit z **Průzkumníka testů**kliknutím pravým tlačítkem myši v editoru kódu na test a výběrem možnosti **Spustit test**nebo pomocí výchozího [zástupce Průzkumníka testů](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) v aplikaci Visual Studio. Některé zástupce jsou založené na kontextu. To znamená, že spouštějí nebo ladí testy na základě toho, kde je kurzor v editoru kódu. Pokud je kurzor uvnitř testovací metody, pak se tato testovací metoda spustí. Pokud je kurzor na úrovni třídy, pak se spustí všechny testy v této třídě. To je stejné i pro úrovni oboru názvů.
 
 |Časté příkazy| Klávesové zkratky|
 |-|------------------------|
@@ -222,9 +222,10 @@ Testy můžete spustit z **Průzkumníka testů**, tak, že kliknete pravým tla
 |TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
 
 > [!NOTE]
-> Nelze spustit test v abstraktní třídě, protože testy jsou definována pouze v abstraktní třídy a není vytvořena instance. Pro spouštění testů z abstraktní třídy, vytvořte třídu, která dědí z abstraktní třídy.
+> Nemůžete spustit test v abstraktní třídě, protože testy jsou definovány pouze v abstraktních třídách a nikoli v instanci. Chcete-li spustit testy v abstraktních třídách, vytvořte třídu, která je odvozena z abstraktní třídy.
 
 ## <a name="see-also"></a>Viz také:
 
 - [Testování částí kódu](../test/unit-test-your-code.md)
 - [Spuštění testování částí v podobě 64bitového procesu](../test/run-a-unit-test-as-a-64-bit-process.md)
+- [Průzkumník testů – nejčastější dotazy](test-explorer-faq.md)

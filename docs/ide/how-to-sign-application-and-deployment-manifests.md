@@ -1,6 +1,7 @@
 ---
 title: 'Postupy: Podepsání manifestů aplikace a nasazení'
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -12,104 +13,104 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85a0dcb3b10db33605f1411615210928cde565fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946918"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461601"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Postupy: Podepsání manifestů aplikace a nasazení
 
-Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace a nasazení musí být podepsány párem veřejného a privátního klíče a pomocí technologie Authenticode. Manifesty můžete podepsat pomocí certifikátu z úložiště certifikátů Windows nebo soubor klíče.
+Pokud chcete publikovat aplikaci pomocí nasazení ClickOnce, manifesty aplikace a nasazení musí být podepsány pomocí páru veřejného a privátního klíče a podepsány pomocí technologie Authenticode. Manifesty můžete podepsat pomocí certifikátu z úložiště certifikátů Windows nebo souboru klíče.
 
- Další informace o nasazení ClickOnce naleznete v tématu [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md).
+Další informace o nasazení ClickOnce naleznete v tématu [Security and Deployment ClickOnce](../deployment/clickonce-security-and-deployment.md).
 
- Podepisování manifestů ClickOnce je nepovinné pro *.exe*– na základě aplikací. Další informace najdete v části "Generování nepodepsaných manifestů" tohoto dokumentu.
+Podepisování manifestů ClickOnce je volitelné pro aplikace založené na *. exe*. Další informace naleznete v části "generování nepodepsaných manifestů" v tomto dokumentu.
 
- Informace o vytváření souborů klíčů naleznete v tématu [jak: Vytvoření páru veřejného a privátního klíče](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+Informace o vytváření souborů klíčů naleznete v tématu [How to: Vytvoří pár](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)veřejného a privátního klíče.
 
 > [!NOTE]
-> Visual Studio podporuje pouze soubory klíčů Personal Information Exchange (PFX), které mají *.pfx* rozšíření. Ale můžete vybrat jiné typy certifikátů z úložiště certifikátů Windows aktuálního uživatele klepnutím **vybírat Store** na **podepisování** stránky vlastností projektu.
+> Visual Studio podporuje pouze soubory klíčů PFX (Personal Information Exchange), které mají příponu *. pfx* . Můžete ale vybrat jiné typy certifikátů z úložiště certifikátů Windows aktuálního uživatele tak, že kliknete na **vybrat ze Storu** na stránce **podepisování** vlastností projektu.
 
 ## <a name="sign-using-a-certificate"></a>Podepsat pomocí certifikátu
 
-1. Přejděte na okno s vlastnostmi projektu (klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**). Na **podepisování** kartu, vyberte **podepsat manifesty ClickOnce** zaškrtávací políčko.
+1. Přejděte do okna Vlastnosti projektu (klikněte pravým tlačítkem myši na uzel projektu v **Průzkumník řešení** a vyberte **vlastnosti**). Na kartě **podepisování** zaškrtněte políčko **podepsat manifesty ClickOnce** .
 
-2. Klikněte na tlačítko **vybírat Store** tlačítko.
+2. Klikněte na tlačítko **vybrat z úložiště** .
 
-     **Vyberte certifikát, který** dialogové okno se zobrazí a zobrazí se obsah z úložiště certifikátů Windows.
+     Zobrazí se dialogové okno **Vybrat certifikát** , ve kterém se zobrazí obsah úložiště certifikátů Windows.
 
     > [!TIP]
-    > Vyberete-li **kliknutím sem můžete zobrazit vlastnosti certifikátu**, **podrobnosti o certifikátu** zobrazí se dialogové okno. Toto dialogové okno obsahuje podrobné informace o certifikátu a obsahuje další možnosti. Můžete kliknout na **certifikáty** zobrazíte další informace nápovědy.
+    > Pokud kliknete na **možnost kliknutím sem zobrazíte vlastnosti certifikátu**, zobrazí se dialogové okno **Podrobnosti o certifikátu** . Toto dialogové okno obsahuje podrobné informace o certifikátu a obsahuje další možnosti. Kliknutím na **certifikáty** můžete zobrazit další informace o nápovědě.
 
 3. Vyberte certifikát, který chcete použít k podepsání manifestů.
 
-4. Kromě toho můžete zadat adresu serveru časového razítka v **adresa URL serveru časového razítka** textového pole. To je server, který obsahuje časové razítko určující, když byl manifest podepsán.
+4. Navíc můžete zadat adresu serveru časového razítka v textovém poli **Adresa URL serveru časového razítka** . Toto je server, který poskytuje časové razítko, které určuje, kdy byl manifest podepsán.
 
-## <a name="sign-using-an-existing-key-file"></a>Přihlaste se pomocí existujícího souboru s klíčem
+## <a name="sign-using-an-existing-key-file"></a>Podepsat pomocí existujícího souboru klíče
 
-1. Na **podepisování** stránky, vyberte **podepsat manifesty ClickOnce** zaškrtávací políčko.
+1. Na stránce **podepisování** zaškrtněte políčko **podepsat manifesty ClickOnce** .
 
-2. Klikněte na tlačítko **vybrat ze souboru** tlačítko.
+2. Klikněte na tlačítko **vybrat ze souboru** .
 
-     **Vybrat soubor** zobrazí se dialogové okno.
+     Zobrazí se dialogové okno **Vybrat soubor** .
 
-3. V **vybrat soubor** dialogové okno, přejděte do umístění souboru s klíčem (*.pfx*), který chcete použít a potom klikněte na tlačítko **otevřít**.
+3. V dialogovém okně **Vybrat soubor** přejděte do umístění souboru klíče ( *. pfx*), který chcete použít, a potom klikněte na tlačítko **otevřít**.
 
     > [!NOTE]
-    > Tato možnost podporuje pouze soubory, které mají *.pfx* rozšíření. Pokud máte soubor s klíčem nebo certifikátem v jiném formátu, uložte ho do úložiště certifikátů Windows a vyberte certifikát, který je popsaný v předchozím postupu. Vybraný účel certifikátu by měl zahrnovat podepisování kódu.
+    > Tato možnost podporuje pouze soubory, které mají příponu *. pfx* . Pokud máte soubor klíče nebo certifikát v jiném formátu, uložte ho do úložiště certifikátů Windows a vyberte certifikát, který je popsaný v předchozím postupu. Vybraný účel certifikátu by měl zahrnovat podepisování kódu.
 
-     **Zadejte heslo pro otevření souboru** zobrazí se dialogové okno. (Pokud *.pfx* soubor je již uložen v úložišti certifikátů Windows nebo není chráněn heslem, nezobrazí se výzva k zadání hesla.)
+     Zobrazí se dialogové okno **zadat heslo pro otevření souboru** . (Pokud soubor *. pfx* už je uložený v úložišti certifikátů Windows nebo není chráněný heslem, nebudete vyzváni k zadání hesla.)
 
-4. Zadejte heslo pro přístup k souboru s klíčem a stiskněte klávesu **Enter**.
+4. Zadejte heslo pro přístup k souboru klíče a stiskněte klávesu **ENTER**.
 
-## <a name="sign-using-a-test-certificate"></a>Přihlášení pomocí testovacího certifikátu
+## <a name="sign-using-a-test-certificate"></a>Podepsat pomocí testovacího certifikátu
 
-1. Na **podepisování** stránky, vyberte **podepsat manifesty ClickOnce** zaškrtávací políčko.
+1. Na stránce **podepisování** zaškrtněte políčko **podepsat manifesty ClickOnce** .
 
-2. Chcete-li vytvořit nový certifikát pro účely testování, klikněte na tlačítko **vytvořit testovací certifikát** tlačítko.
+2. Chcete-li vytvořit nový certifikát pro testování, klikněte na tlačítko **vytvořit testovací certifikát** .
 
-3. V **vytvořit testovací certifikát** dialogového okna zadejte heslo k zabezpečení vašeho testovacího certifikátu.
+3. V dialogovém okně **vytvořit testovací certifikát** zadejte heslo pro zvýšení zabezpečení testovacího certifikátu.
 
-## <a name="generate-unsigned-manifests"></a>Generování nepodepsaných manifestů
+## <a name="generate-unsigned-manifests"></a>Generovat nepodepsané manifesty
 
-Podepisování manifestů ClickOnce je nepovinné pro *.exe*– na základě aplikací. Následující postupy ukazují, jak vygenerovat nepodepsané manifesty ClickOnce.
+Podepisování manifestů ClickOnce je volitelné pro aplikace založené na *. exe*. Následující postupy ukazují, jak generovat nepodepsané manifesty ClickOnce.
 
 > [!IMPORTANT]
-> Nepodepsané manifesty mohou zjednodušit vývoj a testování vaší aplikace. Nepodepsané manifesty však představují podstatná bezpečnostní rizika v produkčním prostředí. Pouze zvažte použití nepodepsaných manifestů, pokud vaše aplikace ClickOnce funguje na počítačích v rámci sítě intranet, který je zcela izolována od Internetu nebo jiných zdrojů škodlivého kódu.
+> Nepodepsané manifesty mohou zjednodušit vývoj a testování vaší aplikace. Nepodepsané manifesty však představují podstatná bezpečnostní rizika v produkčním prostředí. Zvažte použití nepodepsaných manifestů, pokud vaše aplikace ClickOnce běží na počítačích v intranetu, který je zcela izolovaný od Internetu nebo jiných zdrojů škodlivého kódu.
 
- Ve výchozím nastavení ClickOnce automaticky generuje podepsané manifesty, pokud jeden nebo více souborů výslovně vyloučeno z generované hodnoty hash. Jinými slovy, publikování výsledků aplikace podepsané manifesty, pokud jsou všechny soubory zahrnuty v algoritmu hodnoty hash, i když **podepsat manifesty ClickOnce** zrušení zaškrtnutí políčka.
+Ve výchozím nastavení ClickOnce automaticky generuje podepsané manifesty, pokud jeden nebo více souborů není výslovně vyloučen z generované hodnoty hash. Jinými slovy, publikování aplikace má za následek podepsané manifesty, pokud jsou všechny soubory zahrnuty v hodnotě hash, a to i v případě, že není zaškrtnuto políčko **podepsat manifesty ClickOnce** .
 
-### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>Chcete-li generovat nepodepsané manifesty a zahrnout všechny soubory v generované hodnoty hash
+### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>Generování nepodepsaných manifestů a zahrnutí všech souborů do generované hodnoty hash
 
-1. Chcete-li generovat nepodepsané manifesty, které zahrnují všechny soubory v algoritmu hodnoty hash, musíte nejprve publikovat aplikace spolu s podepsanými manifesty. Proto nejprve podepište manifesty ClickOnce podle jednoho z předchozích kroků a potom aplikaci publikujte.
+1. Chcete-li generovat nepodepsané manifesty, které obsahují všechny soubory v hodnotě hash, je nutné nejprve publikovat aplikaci společně s podepsanými manifesty. Proto nejprve podepište manifesty ClickOnce pomocí jednoho z předchozích postupů a pak aplikaci publikujte.
 
-2. Na **podepisování** zrušte **podepsat manifesty ClickOnce** zaškrtávací políčko.
+2. Na stránce **podepisování** zrušte zaškrtnutí políčka **podepsat manifesty ClickOnce** .
 
-3. Resetujte verzi publikování, takže je k dispozici pouze jedna verze vaší aplikace. Ve výchozím nastavení Visual Studio automaticky zvýší číslo revize verze publikování pokaždé, když se publikování aplikace. Další informace najdete v tématu [jak: Nastavení publikování ClickOnce verze](../deployment/how-to-set-the-clickonce-publish-version.md).
+3. Obnovte verzi publikování tak, aby byla k dispozici pouze jedna verze aplikace. Ve výchozím nastavení Visual Studio automaticky zvyšuje číslo revize verze publikování pokaždé, když publikujete aplikaci. Další informace najdete v tématu [jak: Nastavte publikační verzi](../deployment/how-to-set-the-clickonce-publish-version.md)ClickOnce.
 
-4. Publikování aplikace.
+4. Publikujte aplikaci.
 
 ### <a name="to-generate-unsigned-manifests-and-exclude-one-or-more-files-from-the-generated-hash"></a>Generování nepodepsaných manifestů a vyloučení jednoho nebo více souborů z generované hodnoty hash
 
-1. Na **podepisování** zrušte **podepsat manifesty ClickOnce** zaškrtávací políčko.
+1. Na stránce **podepisování** zrušte zaškrtnutí políčka **podepsat manifesty ClickOnce** .
 
-2. Otevřít **soubory aplikace** dialogové okno a nastavte **Hash** k **vyloučit** pro soubory, které chcete vyloučit z generované hodnoty hash.
+2. Otevřete dialogové okno **soubory aplikace** a nastavte **hodnotu hash** na **vyloučené** pro soubory, které chcete vyloučit z vygenerované hodnoty hash.
 
     > [!NOTE]
-    > Vyloučení souboru z hodnoty hash konfiguruje ClickOnce k zakázání automatického podepisování manifestů, takže není nutné nejprve publikovat s podepsanými manifesty, jak je znázorněno v předchozím postupu.
+    > Vyloučení souboru z hodnoty hash konfiguruje ClickOnce pro zákaz automatického podepisování manifestů, takže není nutné nejprve publikovat s podepsanými manifesty, jak je znázorněno v předchozím postupu.
 
-3. Publikování aplikace.
+3. Publikujte aplikaci.
 
 ## <a name="see-also"></a>Viz také:
 
 - [Sestavení se silným názvem](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Postupy: Vytvoření páru veřejného a privátního klíče](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
+- [Postupy: Vytvoření páru klíčů veřejného a soukromého](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [Stránka podepisování, Návrhář projektu](../ide/reference/signing-page-project-designer.md)
 - [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)

@@ -13,60 +13,60 @@ helpviewer_keywords:
 - CPUs, targeting specific
 - 64-bit applications [Visual Studio]
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: faef9f55a88385953a121574f761193cc8c11ea9
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438194"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416831"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Postupy: Konfigurace projektů pro cílové platformy
 
 Visual Studio umožňuje nastavení aplikací na různých platformách, včetně 64bitových platforem. Další informace o podpoře platforem 64-bit v sadě Visual Studio najdete v tématu [64bitové aplikace](/dotnet/framework/64-bit-apps).
 
-## <a name="target-platforms-with-the-configuration-manager"></a>Cílové platformy s Configuration Managerem
+## <a name="target-platforms-with-the-configuration-manager"></a>Cílové platformy s Configuration Manager
 
-**Nástroje Configuration Manager** poskytuje způsob, jak můžete rychle přidat novou platformu k cíli s projektem. Pokud vyberete některou z platforem, které jsou součástí sady Visual Studio, úpravě vlastností pro váš projekt k sestavení projektu pro vybranou platformu.
+**Configuration Manager** poskytuje způsob, jak rychle přidat novou platformu pro cílení na váš projekt. Pokud vyberete jednu z platforem, které jsou součástí sady Visual Studio, vlastnosti projektu jsou upraveny pro sestavení projektu pro vybranou platformu.
 
-### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Ke konfiguraci projektu cílit na 64bitové platformě
+### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Konfigurace projektu pro cílení na 64 platformu
 
-1. V panelu nabídky zvolte **sestavení** > **nástroje Configuration Manager**.
+1. Na panelu nabídek vyberte možnost **sestavit** > **Configuration Manager**.
 
-2. V **platformou aktivního řešení** seznamu, zvolte 64bitovou platformu pro řešení do cíle a klikněte na tlačítko **Zavřít** tlačítko.
+2. V seznamu **Aktivní platforma řešení** zvolte 64 platformu pro cílové řešení a pak klikněte na tlačítko **Zavřít** .
 
-    1. Pokud se nezobrazí platforma, která chcete v **platformou aktivního řešení** klikněte na položku **nový**.
+    1. Pokud se požadovaná platforma nezobrazí v seznamu **Aktivní platforma řešení** , vyberte možnost **nové**.
 
-         **Nová platforma řešení** zobrazí se dialogové okno.
+         Zobrazí se dialogové okno **Nová platforma řešení** .
 
-    2. V **zadejte nebo vyberte novou platformu** klikněte na položku **x64**.
+    2. V rozevíracím seznamu **Typ vyberte Nová platforma** a zvolte možnost **x64**.
 
         > [!NOTE]
-        > Pokud vaše konfigurace zadejte nový název, bude pravděpodobně nutné upravit nastavení v **Návrháře projektu** pro zaměření na správnou platformu.
+        > Pokud vaší konfiguraci přiřadíte nový název, může být nutné upravit nastavení v **Návrháři projektu** , aby se zacíleno na správnou platformu.
 
-    3. Pokud chcete tato nastavení zkopírovat z aktuální konfiguraci platformy, vyberte jej a klikněte na tlačítko **OK** tlačítko.
+    3. Pokud chcete zkopírovat nastavení z aktuální konfigurace platformy, vyberte ji a pak klikněte na tlačítko **OK** .
 
-Jsou aktualizovány vlastnosti pro všechny projekty, které se zaměřují 64bitové platformě a optimalizují se další sestavení projektu pro 64bitové platformy.
+Vlastnosti pro všechny projekty, které cílí na 64, jsou aktualizovány a další sestavení projektu bude optimalizováno pro 64-bitové platformy.
 
 ## <a name="target-platforms-in-the-project-designer"></a>Cílové platformy v Návrháři projektu
 
-**Návrháře projektu** také poskytuje způsob, jak určené pro různé platformy s projektem. Pokud vyberete některou z platforem zahrnuté v seznamu **nová platforma řešení** dialogové okno pro vaše řešení nebude fungovat, můžete vytvořit vlastní název a upravte nastavení v **Návrhář projektu**  pro zaměření na správnou platformu.
+**Návrhář projektu** také poskytuje způsob, jak cílit na různé platformy s vaším projektem. Pokud výběr jedné z platforem zahrnutých v seznamu v dialogovém okně **Nová platforma řešení** nefunguje pro vaše řešení, můžete vytvořit vlastní název konfigurace a upravit nastavení v **Návrháři projektu** , abyste mohli cílit na správnou platformu. .
 
-Provedení tohoto úkolu se liší v závislosti na programovacím jazyku, který používáte. V následujících tématech pro další informace:
+Provádění tohoto úkolu se liší v závislosti na programovacím jazyku, který používáte. Další informace najdete na následujících odkazech:
 
-- Pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektů, naleznete v tématu [/Platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
+- Pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projekty naleznete v tématu [/Platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
-- Pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektů, naleznete v tématu [stránka sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).
+- Pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projekty, viz [Stránka sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
-- Pro [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektů, naleznete v tématu [/CLR (kompilace modulu Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
+- Pro [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projekty naleznete v tématu [/CLR (Common Language Runtime Compilation)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
 ## <a name="see-also"></a>Viz také:
 
 - [Principy platforem sestavení](../ide/understanding-build-platforms.md)
-- [/ Platform (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
-- [64bitové aplikace](/dotnet/framework/64-bit-apps)
-- [Podpora v sadě Visual Studio IDE 64-Bit](../ide/visual-studio-ide-64-bit-support.md)
+- [/Platform (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
+- [64 – bitové aplikace](/dotnet/framework/64-bit-apps)
+- [Visual Studio IDE 64 – Podpora bitových procesorů](../ide/visual-studio-ide-64-bit-support.md)

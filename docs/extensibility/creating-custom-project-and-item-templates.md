@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fbe1a4decebd68b80e6cbe8728c5de84a44c641
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff4d3566dcfb4b40f1008eed09371e42459c3a5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377747"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493119"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Vytváření vlastních šablon projektů a položek
 
@@ -35,7 +35,6 @@ Pro scénáře vytvoření základní šablony, byste měli použít **exportova
      Šablona vygeneruje soubor třídy, ikonu, soubor *. vstemplate* , upravitelný soubor projektu s názvem *ProjectTemplate. vbproj* nebo *ProjectTemplate. csproj*a některé soubory, které jsou obvykle generovány jinými typy projektů, například  *Resources. resx* soubor, soubor *AssemblyInfo* a soubor *. Settings* . Každý soubor kódu obsahuje běžné náhrad parametrů, kde je to vhodné.
 
 ![výběr projektu šablony projektu](media/project-template-selection.png)
-
 
 2. Přidání a odebrání položek z projektu, jak je vyžadováno pro váš projekt. Neodstraňujte upravitelný soubor projektu, soubor *AssemblyInfo* nebo soubor *. vstemplate* .
 

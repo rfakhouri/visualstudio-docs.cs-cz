@@ -1,60 +1,61 @@
 ---
 title: Dialogové okno Požadavky
 ms.date: 06/29/2018
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 helpviewer_keywords:
 - Prerequisites dialog box
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 925f36f2ed82f65afcc0eef9622cab1a8c9542b5
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 70fc9e728c409684d7b0160fcb521d7bc2a2aa1d
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746492"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461723"
 ---
 # <a name="prerequisites-dialog-box"></a>dialogové okno Požadavky
 
-**Požadavky** dialogové okno určuje, které nezbytné součásti se instalují, jak jsou nainstalovány a v jakém pořadí jsou balíčky instalovány.
+Dialogové okno **požadavky** určuje, které požadované součásti jsou nainstalovány, jak jsou nainstalovány a v jakém pořadí jsou balíčky nainstalovány.
 
-![Dialogové okno požadavky v sadě Visual Studio](media/prerequisites-dialog-box.png)
+![Dialogové okno požadavky v aplikaci Visual Studio](media/prerequisites-dialog-box.png)
 
-Pro přístup k dialogovému oknu, vyberte uzel projektu v **Průzkumníka řešení**a pak vyberte **projektu** > **vlastnosti**. Když **Návrháře projektu** se zobrazí, vyberte **publikovat** kartu a potom vyberte **požadavky**. Pro projekty instalace na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **stránky vlastností** dialogové okno se zobrazí, klikněte na tlačítko **požadavky**.
+Chcete-li získat přístup k dialogovému oknu, vyberte uzel projektu v **Průzkumník řešení**a pak vyberte**vlastnosti** **projektu** > . Když se zobrazí **Návrhář projektu** , vyberte kartu **publikovat** a pak vyberte **požadované součásti**. Pro projekty instalace klikněte v nabídce **projekt** na příkaz **vlastnosti**. Když se zobrazí dialogové okno **stránky vlastností** , klikněte na **požadavky**.
 
-## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
+## <a name="uielement-list"></a>UIElement – seznam
 
 |Prvek|Popis|
 |-------------|-----------------|
-|**Vytvořit instalační program pro nainstalování nezbytných součástí**|Zahrne požadované součásti v instalačním programu vaší aplikace (*Setup.exe*) tak, že bude možné nainstalovat před vaše aplikace v pořadí závislosti. Ve výchozím nastavení je tato možnost vybrána. Pokud není vybraná žádná *Setup.exe* se vytvoří.|
-|**Vyberte předpoklady k instalaci**|Určuje, jestli se má nainstalovat komponenty, například knihovny modulu runtime rozhraní .NET Framework a jazyka C++.<br /><br />Například výběrem zaškrtávacího políčka vedle položky **SQL Server 2012 Express**, určíte, že instalační program musíte ověřit, zda tato součást je nainstalován v cílovém počítači a nainstalujte ji, pokud není.<br /><br />Podrobné informace o jednotlivých požadovaných balíčcích najdete v tématu [informace o požadavcích](#prerequisites-information).|
-|**Stáhnout nezbytné součásti z webu dodavatele součástí**|Určuje, že součásti požadavků mají být nainstalovány z webu dodavatele. Toto je výchozí možnost.|
-|**Stáhnout součásti ze stejného umístění, jako je má aplikace**|Určuje, že požadované součásti nainstalovat ze stejného umístění jako aplikace. To zkopíruje všechny požadované balíčky do umístění pro publikování. Tato možnost bude fungovat, pouze pokud jsou balíčky požadovaných součástí ve vývojovém počítači.|
-|**Stáhnout nezbytné součásti z následujícího umístění**|Určuje, že požadované součásti nainstalovány z umístění, které zadáte. Můžete použít **Procházet** tlačítko a vyberte umístění.|
+|**Vytvoření instalačního programu pro instalaci požadovaných součástí**|Zahrnuje požadované součásti v instalačním programu aplikace (*Setup. exe*), aby byly nainstalovány před aplikací v závislosti na závislosti. Ve výchozím nastavení je tato možnost vybraná. Pokud není vybrána, není vytvořen soubor *Setup. exe* .|
+|**Vyberte požadavky pro instalaci.**|Určuje, jestli se mají nainstalovat komponenty, jako C++ .NET Framework a běhové knihovny.<br /><br />Například zaškrtnutím políčka vedle **SQL Server 2012 Express**zadáte, že instalační program musí ověřit, zda je tato součást nainstalována na cílovém počítači, a nainstalovat ji, pokud není.<br /><br />Podrobné informace o každém balíčku předpokladů najdete v tématu [informace o požadavcích](#prerequisites-information).|
+|**Stáhnout požadavky z webu dodavatele součásti**|Určuje, že požadované součásti budou nainstalovány z webu dodavatele. Toto je výchozí možnost.|
+|**Stáhnout požadavky ze stejného umístění jako moje aplikace**|Určuje, že požadované součásti budou nainstalovány ze stejného umístění jako aplikace. Tím se zkopírují všechny požadované balíčky do umístění pro publikování. Tato možnost bude fungovat, pouze pokud jsou balíčky požadovaných součástí ve vývojovém počítači.|
+|**Stáhnout požadované součásti z následujícího umístění**|Určuje, že požadované součásti budou nainstalovány z umístění, které zadáte. Můžete použít tlačítko **Procházet** a vybrat umístění.|
 
 ## <a name="prerequisites-information"></a>Informace o požadavcích
 
-Požadované součásti, které se zobrazují v **požadavky** dialogové okno se mohou lišit od těch v následujícím seznamu. Požadované balíčky uvedené v **dialogové okno požadavky** se nastaví automaticky při prvním otevření dialogu. Pokud později změníte cílový rámec projektu, budete muset vybrat předpoklady ručně, aby odpovídaly novému cílovému rozhraní.
+Požadované součásti, které se zobrazí v dialogovém okně **předpoklady** , se mohou lišit od těch, které jsou uvedeny v následujícím seznamu. Požadované balíčky uvedené v **dialogovém okně požadavky** se nastaví automaticky při prvním otevření dialogového okna. Pokud následně změníte cílovou architekturu projektu, je nutné vybrat požadované součásti ručně, aby odpovídaly novému cílovému rozhraní.
 
 |Prvek|Popis|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Tento balíček nainstaluje následující:<br /><br /> – .NET framework verze 2.0, 3.0 a 3.5.<br />-Podpora pro všechny verze rozhraní .NET Framework na 32-bit (x86) a (x64) 64bitové operační systémy.<br />– Jazykové sady pro každou verzi rozhraní .NET Framework je nainstalována spolu s balíčkem.<br />-Service Pack pro rozhraní .NET Framework 2.0 a 3.0.<br /><br /> Rozhraní .NET framework 3.0 je součástí systému Windows Vista a rozhraní .NET Framework 3.5 je součástí sady Visual Studio. Rozhraní .NET framework 3.5 je vyžadováno pro všechny projekty jazyka Visual Basic a C#, které jsou kompilovány pro 32bitové operační systémy a pro který je nastaven cílovou architekturu na **rozhraní .NET Framework 3.5**a pro projekty jazyka Visual Basic a C# zkompilovány pro 64bitové prostředí operační systémy. (IA64 není podporován.) Všimněte si, že jsou projekty Visual Basic a C# zkompilovány pro všechny architektury procesoru ve výchozím nastavení. Další informace najdete v tématu [Framework targeting přehled](../../ide/visual-studio-multi-targeting-overview.md) a [nasazení nezbytných součástí pro 64bitové aplikace](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
-|**Microsoft .NET Framework 4.x**|Tento balíček nainstaluje rozhraní .NET Framework 4.x x86 a x64 platforem.|
-|**Microsoft System CLR Types pro SQL Server 2014 (x64 a x86)**|Tento balíček nainstaluje Microsoft System CLR Types pro SQL Server 2014 x64 nebo x86.|
-|**SQL Server 2008 R2 Express**|Tento balíček nainstaluje Microsoft SQL Server 2008 R2 Express, bezplatnou edici systému Microsoft SQL Server 2008 R2, ideální databázi pro malý web, server nebo aplikací klasické pracovní plochy. To je možné zdarma pro vývoj a provoz.|
+|**.NET Framework 3,5 SP1**|Tento balíček nainstaluje následující:<br /><br /> -.NET Framework verze 2,0, 3,0 a 3,5.<br />-Podpora pro všechny verze .NET Framework v operačních systémech 32 (x86) a 64-bit (x64).<br />-Jazykové sady pro každou verzi .NET Framework, která se instaluje s balíčkem.<br />– Aktualizace Service Pack pro .NET Framework 2,0 a 3,0.<br /><br /> .NET Framework 3,0 je součástí systému Windows Vista a součástí sady Visual Studio je .NET Framework 3,5. .NET Framework 3,5 je vyžadován pro všechny Visual Basic a C# projekty, které jsou kompilovány pro 32 operační systémy a pro které je cílové rozhraní nastaveno na **.NET Framework 3,5**a pro Visual Basic a C# projekty zkompilované pro 64-bit operační systémy. (IA64 není podporováno.) Všimněte si, že C# Visual Basic a projekty jsou ve výchozím nastavení kompilovány pro všechny architektury procesoru. Další informace najdete v tématu věnovaném [přehledu cílení na rozhraní](../../ide/visual-studio-multi-targeting-overview.md) a [nasazení požadavků pro 64 – bitové aplikace](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**Microsoft .NET Framework 4.x**|Tento balíček nainstaluje .NET Framework 4. x pro platformy x86 i x64.|
+|**Microsoft System CLR types pro SQL Server 2014 (x64 a x86)**|Tento balíček nainstaluje typy CLR systému Microsoft pro SQL Server 2014 pro x64 nebo x86.|
+|**SQL Server 2008 R2 Express**|Tento balíček nainstaluje Microsoft SQL Server 2008 R2 Express, bezplatnou edici Microsoft SQL Server 2008 R2, ideální databází pro malé webové, serverové nebo desktopové aplikace. Dá se použít zdarma pro vývoj a produkci.|
 |**SQL Server 2012 Express**|Tento balíček nainstaluje Microsoft SQL Server 2012 Express.|
 |**SQL Server 2012 Express LocalDB**|Tento balíček nainstaluje Microsoft SQL Server 2012 Express LocalDB.|
-|**Visual C++ "14" Runtime Libraries (ARM)**|Tento balíček nainstaluje knihovny runtime Visual C++ pro architekturu Itanium, což poskytuje rutiny pro programování pro operační systém Microsoft Windows. Tyto rutiny automatizují mnoho běžných programovacích úloh, které nejsou součástí jazyků C a C++.<br /><br /> Další informace najdete v tématu [C Run-Time Library Reference](/cpp/c-runtime-library/c-run-time-library-reference).|
-|**Visual C++ "14" Runtime Libraries (x64)**|Tento balíček nainstaluje knihovny běhového modulu Visual C++ pro x64 operační systémy, což poskytuje rutiny pro programování pro operační systém Microsoft Windows. Tyto rutiny automatizují mnoho běžných programovacích úloh, které nejsou součástí jazyků C a C++.<br /><br /> Další informace najdete v tématu [C Run-Time Library Reference](/cpp/c-runtime-library/c-run-time-library-reference).|
-|**Visual C++ "14" Runtime Libraries (x86)**|Tento balíček nainstaluje knihovny běhového modulu Visual C++ pro x86 operační systémy, což poskytuje rutiny pro programování pro operační systém Microsoft Windows. Tyto rutiny automatizují mnoho běžných programovacích úloh, které nejsou součástí jazyků C a C++.<br /><br /> Další informace najdete v tématu [C Run-Time Library Reference](/cpp/c-runtime-library/c-run-time-library-reference).|
+|**Visual C++ "14" běhové knihovny (ARM)**|Tento balíček nainstaluje Visual C++ runtime knihovny pro architekturu Itanium, která poskytuje rutiny pro programování pro operační systém Microsoft Windows. Tyto rutiny automatizují mnoho běžných programovacích úloh, které nejsou poskytovány jazyky C C++ a.<br /><br /> Další informace najdete v tématu Referenční dokumentace běhové [knihovny jazyka C](/cpp/c-runtime-library/c-run-time-library-reference).|
+|**Visual C++ "14" běhové knihovny (x64)**|Tento balíček nainstaluje Visual C++ běhové knihovny pro operační systémy x64, které poskytují rutiny pro programování pro operační systém Microsoft Windows. Tyto rutiny automatizují mnoho běžných programovacích úloh, které nejsou poskytovány jazyky C C++ a.<br /><br /> Další informace najdete v tématu Referenční dokumentace běhové [knihovny jazyka C](/cpp/c-runtime-library/c-run-time-library-reference).|
+|**Visual C++ "14" běhové knihovny (x86)**|Tento balíček nainstaluje Visual C++ běhové knihovny pro operační systémy x86, které poskytují rutiny pro programování pro operační systém Microsoft Windows. Tyto rutiny automatizují mnoho běžných programovacích úloh, které nejsou poskytovány jazyky C C++ a.<br /><br /> Další informace najdete v tématu Referenční dokumentace běhové [knihovny jazyka C](/cpp/c-runtime-library/c-run-time-library-reference).|
 
 ## <a name="see-also"></a>Viz také:
 
 - [Stránka Publikovat, Návrhář projektu](../../ide/reference/publish-page-project-designer.md)
 - [Nezbytné součásti nasazení aplikace](../../deployment/application-deployment-prerequisites.md)
 - [Nasazení nezbytných součástí pro 64bitové aplikace](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
-- [Přehled cílení na rozhraní Framework](../../ide/visual-studio-multi-targeting-overview.md)
+- [Přehled cílení na rozhraní](../../ide/visual-studio-multi-targeting-overview.md)

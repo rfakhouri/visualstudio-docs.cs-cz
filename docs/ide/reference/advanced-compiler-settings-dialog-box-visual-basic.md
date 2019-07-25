@@ -1,83 +1,84 @@
 ---
 title: Dialogové okno Upřesnit nastavení kompilátoru (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792228"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461471"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Dialogové okno Upřesnit nastavení kompilátoru (Visual Basic)
 
-Použití **AdvancedCompiler nastavení** dialogovému oknu **Návrháře projektu** k určení rozšířenou vlastností konfigurace sestavení projektu. Toto dialogové okno se vztahují na projekty Visual Basic pouze.
+Pomocí dialogového okna **Nastavení AdvancedCompiler** **Návrháře projektu** můžete zadat rozšířené vlastnosti konfigurace sestavení projektu. Toto dialogové okno se vztahuje pouze na Visual Basic projekty.
 
-## <a name="to-access-this-dialog-box"></a>Pro přístup k tomuto dialogovému oknu
+## <a name="to-access-this-dialog-box"></a>Přístup k tomuto dialogovému oknu
 
-1. V **Průzkumníka řešení**, zvolte uzel projektu (ne **řešení** uzlu).
+1. V **Průzkumník řešení**vyberte uzel projektu (ne uzel **řešení** ).
 
-2. Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **kompilace** kartu.
+2. V nabídce **projekt** klikněte na příkaz **vlastnosti**. Když se zobrazí **Návrhář projektu** , klikněte na kartu **kompilovat** .
 
-3. Na [stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), vyberte **konfigurace** a **platformy**. Ve zjednodušených konfigurací sestavení **konfigurace** a **platformy** seznamy se nezobrazují. Další informace najdete v tématu [jak: Nastavení ladění a vydání konfigurace](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. Na [stránce kompilovat Návrháře projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)vyberte **konfiguraci** a **platformu**. Ve zjednodušených konfiguracích sestavení se nezobrazí seznamy **konfigurací** a **platforem** . Další informace najdete v tématu [jak: Nastavte konfiguraci](../../debugger/how-to-set-debug-and-release-configurations.md)ladění a vydání.
 
-4. Klikněte na tlačítko **Upřesnit možnosti kompilace**.
+4. Klikněte na možnost **Pokročilé možnosti kompilace**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="optimizations"></a>Optimalizace
 
- Určete následující možnosti optimalizace, které můžete v některých případech zmenšit soubor programu, programu pracovat rychleji a urychlit proces sestavení.
+ Následující možnosti určují optimalizace, které mohou v některých případech zmenšit programový soubor, nastavit program rychleji nebo urychlit proces sestavení.
 
 **Odebrat kontroly přetečení celých čísel**
 
-Toto políčko zaškrtnuto, ve výchozím nastavení, povolíte kontrolu přetečení celého čísla. Zaškrtněte toto políčko, chcete-li odebrat kontroly přetečení celého čísla. Pokud toto políčko zaškrtnete, může být rychlejší výpočty celé číslo. Pokud odeberete přetečení kontrolu a datový typ kapacity přetečení, nesprávné výsledky může ukládat bez vyvolání chyby.
+Toto políčko je ve výchozím nastavení zaškrtnuté, aby se povolila kontrola přetečení celého čísla. Zaškrtnutím tohoto políčka odeberete kontrolu přetečení celých čísel. Pokud zaškrtnete toto políčko, mohou být výpočty typu Integer rychlejší. Pokud však odeberete kontrolu přetečení a přetečení kapacity datového typu, mohou být uloženy nesprávné výsledky bez vyvolání chyby.
 
-Pokud přetečení podmínky jsou kontrolovány a přetečení celočíselné operace <xref:System.OverflowException> je vyvolána výjimka. V případě přetečení podmínky nejsou zaškrtnuté, není operace přetečení celého čísla vyvolat výjimku.
+Pokud jsou kontrolovány podmínky přetečení a celočíselná operace přeteče, <xref:System.OverflowException> je vyvolána výjimka. Pokud nejsou kontrolovány podmínky přetečení, celočíselná operace přetéká nevyvolává výjimku.
 
 **Povolit optimalizace**
 
-Toto políčko zaškrtnuto, ve výchozím nastavení, chcete-li zakázat optimalizace kompilátoru. Výběr tohoto políčka povolíte optimalizace kompilátoru. Optimalizace kompilátoru zkontrolujte výstupní soubor menší, rychlejší a efektivnější. Nicméně protože optimalizace způsobit změnou kódu do výstupního souboru, optimalizace kompilátoru mohou ztížit ladění.
+Toto políčko není ve výchozím nastavení zaškrtnuté, chcete-li zakázat optimalizace kompilátoru. Zaškrtnutím tohoto políčka povolíte optimalizace kompilátoru. Optimalizace kompilátoru usnadňují, rychlejší a efektivnější výstupní soubor. Vzhledem k tomu, že optimalizace způsobují změnu uspořádání kódu ve výstupním souboru, optimalizace kompilátoru můžou ztížit ladění.
 
  **Základní adresa knihovny DLL**
 
- Toto textové pole se zobrazí výchozí základní adresa knihovny DLL v šestnáctkovém formátu. V projektech knihovny tříd a Knihovna ovládacích prvků vám pomůže tohoto textového pole zadejte základní adresu, která se dá použít při vytvoření knihovny DLL.
+ V tomto textovém poli se zobrazí výchozí základní adresa knihovny DLL v šestnáctkovém formátu. V knihovně tříd a v projektech knihovny ovládacích prvků lze pomocí tohoto textového pole zadat základní adresu, která má být použita při vytvoření knihovny DLL.
 
  **Generovat ladicí informace**
 
- Vyberte **žádný**, **úplné**, nebo **pouze soubor pdb** ze seznamu. **Žádný** Určuje, že nebudou generována žádná informace o ladění. **Úplné** Určuje, že nebudou generována úplné ladicí informace, a **pouze soubor pdb** Určuje, že by měly být generovány pouze soubor PDB ladicí informace. Výchozí hodnota pro tuto možnost je **úplné**.
+ V seznamu vyberte možnost **žádná**, **Úplná**nebo **PDB** . **None** určuje, že nejsou vygenerovány žádné informace o ladění. **Full** určuje, zda mají být vygenerovány úplné informace o ladění a **pouze PDB** určuje, zda mají být vygenerovány pouze informace o ladění PDB. Výchozí hodnota této možnosti je **plná**.
 
-## <a name="compilation-constants"></a>Kompilace konstanty
+## <a name="compilation-constants"></a>Konstanty kompilace
 
-Konstanty pro podmíněnou kompilaci mít podobný pomocí vliv [#Const](/dotnet/visual-basic/language-reference/directives/const-directive) direktivy preprocesoru ve zdroji souborů, s tím rozdílem, že konstanty definované jsou veřejné a použít na všechny soubory v projektu. Můžete použít konstanty pro podmíněnou kompilaci spolu s [#If... Pak... #Else](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) direktivy podmíněné kompilace zdrojové soubory. Zobrazit [podmíněné kompilace](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation).
+Konstanty podmíněné kompilace mají podobný účinek jako použití direktivy preprocesoru [#Const](/dotnet/visual-basic/language-reference/directives/const-directive) ve zdrojovém souboru s tím rozdílem, že definované konstanty jsou veřejné a platí pro všechny soubory v projektu. Můžete použít konstanty podmíněné kompilace společně s [#If... Then... #Else](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) direktiva pro podmíněné kompilování zdrojových souborů. Viz [Podmíněná kompilace](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation).
 
  **Definovat konstantu DEBUG**
 
- Ve výchozím nastavení je toto políčko zaškrtnuto, určení nastavit konstantu DEBUG.
+ Ve výchozím nastavení je toto zaškrtávací políčko zaškrtnuto a určuje, že je nastavena konstanta ladění.
 
  **Definovat konstantu TRACE**
 
- Ve výchozím nastavení je toto políčko zaškrtnuto, určení nastavit konstantu TRACE.
+ Ve výchozím nastavení je toto zaškrtávací políčko zaškrtnuto a určuje, že je nastavena konstanta trasování.
 
  **Vlastní konstanty**
 
- Zadejte všechny vlastní konstanty pro vaši aplikaci do tohoto textového pole. Položky by měly být odděleny čárkami, pomocí tohoto formuláře: **Name1 = "Hodnota1", NAZEV2 = "Hodnota2", nazev3 = "Hodnota3"**.
+ Do tohoto textového pole zadejte libovolné vlastní konstanty pro vaši aplikaci. Položky by se měly oddělit čárkami, a to pomocí tohoto formuláře: **Název1 = "hodnota1", název2 = "hodnota2", Název3 = "hodnota3"** .
 
 ## <a name="other-settings"></a>Další nastavení
 
-**Generování sestavení serializace**
+**Generovat serializace sestavení**
 
-Toto nastavení určuje, zda kompilátor vytvoří sestavení serializace XML. Sestavení serializace mohou zvýšit výkon při spuštění <xref:System.Xml.Serialization.XmlSerializer> Pokud jste použili třídy k serializaci typů ve vašem kódu. Výchozí hodnota pro tuto možnost je **automaticky**. **Automatické** Určuje, že se serializace sestavení vytvoří pouze v případě, že jste použili <xref:System.Xml.Serialization.XmlSerializer> ke kódování typů ve vašem kódu pro XML. **Vypnout** Určuje, že sestavení serializace nebudou nikdy generována, bez ohledu na to, jestli váš kód používá <xref:System.Xml.Serialization.XmlSerializer>. **Na** Určuje, že sestavení serializace budou vždy generována. Jsou pojmenované sestavení serializace `TypeName`. XmlSerializers.dll.
+Toto nastavení určuje, zda bude kompilátor vytvářet sestavení serializace XML. Sestavení serializace mohou zlepšit výkon <xref:System.Xml.Serialization.XmlSerializer> při spuštění v případě, že jste tuto třídu použili k serializaci typů ve vašem kódu. Výchozí hodnota této možnosti je **auto**. **Automaticky** určuje, že sestavení serializace budou generována pouze v <xref:System.Xml.Serialization.XmlSerializer> případě, že jste použili ke kódování typů v kódu do XML. **Off** určuje, že sestavení serializace nikdy nebyla vygenerována bez ohledu na to <xref:System.Xml.Serialization.XmlSerializer>, zda váš kód používá. **V** určuje, zda mají být sestavení serializace vždy vygenerována. Sestavení serializace jsou `TypeName`pojmenována. XmlSerializers. dll.
 
 ## <a name="see-also"></a>Viz také:
 

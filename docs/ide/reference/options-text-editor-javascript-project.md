@@ -1,69 +1,69 @@
 ---
-title: Možnosti, textový Editor, JavaScript, projektu
+title: Možnosti, textový editor, JavaScript, projekt
 ms.date: 1/15/2019
-ms.technology: vs-ide-general
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ed64d6bffaa4453c3294229ee48fd0a065eb74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df602b7ffa8f5109d8bbca827e59d6e1fd62c504
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778170"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461683"
 ---
-# <a name="options-text-editor-javascript-project"></a>Možnosti, textový Editor, JavaScript, projektu
+# <a name="options-text-editor-javascript-project"></a>Možnosti, textový editor, JavaScript, projekt
 
-Použití **projektu** stránku **možnosti** dialogové okno k zadání možnosti projektů jazyka JavaScript v editoru kódu. Pro přístup k této stránce, na panelu nabídek zvolte **nástroje** > **možnosti**a potom rozbalte **textový Editor** > **JavaScript**  >  **Projektu**.
+Pomocí stránky **projekt** v dialogovém okně **Možnosti** můžete zadat možnosti projektu JavaScriptu v editoru kódu. Chcete-li získat přístup k této stránce, v řádku nabídek zvolte**možnost** **nástroje** > a potom rozbalte**projekt** **textový editor** > **JavaScript** > .
 
-## <a name="project-analysis-options"></a>Možnosti analýzy projektů
+## <a name="project-analysis-options"></a>Možnosti analýzy projektu
 
-Tyto možnosti určíte, jak editor analyzuje projekty, zprávy diagnostiky a navrhne vylepšení. Vyberte nebo zrušte zaškrtnutí možností, které určují, jak editor zpracovává tyto situace.
+Tyto možnosti určují, jak editor analyzuje projekty, sestavuje diagnostiku a navrhuje vylepšení. Zaškrtněte nebo zrušte zaškrtnutí možností pro určení způsobu, jakým Editor zpracovává tyto situace.
 
-### <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
+### <a name="uielement-list"></a>UIElement – seznam
 
-- **Analyzujte jen projekty, které obsahují soubory otevřené v editoru**
-- **Oznamovat diagnostiku jenom pro soubory otevřené v editoru**
-- **Navrhnout možných zlepšení, které nejsou opravy**
+- **Analyzovat pouze projekty, které obsahují soubory otevřené v editoru**
+- **Pouze diagnostiku sestav pro soubory otevřené v editoru**
+- **Navrhnout možná vylepšení, která nejsou opravena**
 
-## <a name="virtual-projects-in-solution-explorer"></a>Virtuální projekty v Průzkumníkovi řešení
+## <a name="virtual-projects-in-solution-explorer"></a>Virtuální projekty v Průzkumník řešení
 
-Tyto možnosti umožňují vybrat, zda zobrazení virtuální projekty, když řešení je buď načtena nebo není načtený.
+Tyto možnosti umožňují zvolit, zda se mají zobrazit virtuální projekty, když je řešení načteno nebo není načteno.
 
-## <a name="compile-on-save"></a>Zkompilovat při uložení
+## <a name="compile-on-save"></a>Kompilovat při uložení
 
-Tyto možnosti určují, zda jsou automaticky zkompilovány soubory TypeScript, které nejsou součástí projektu. Zaškrtněte políčko a pak zvolte typ generování kódu použití.
+Tyto možnosti určují, zda jsou soubory TypeScript, které nejsou součástí projektu, automaticky kompilovány. Zaškrtněte políčko a pak zvolte typ generování kódu, který chcete použít.
 
-### <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
+### <a name="uielement-list"></a>UIElement – seznam
 
-- **Použít generování kódu AMD u modulů, které nejsou součástí projektu**
+- **Pro moduly, které nejsou součástí projektu, použijte generování kódu AMD**
 - **Použít generování kódu CommonJS u modulů, které nejsou součástí projektu**
 - **Použít generování kódu UMD u modulů, které nejsou součástí projektu**
-- **Použít generování kódu systému pro moduly, které nejsou součástí projektu**
+- **Použít generování systémového kódu pro moduly, které nejsou součástí projektu**
 - **Použít generování kódu ES2015 u modulů, které nejsou součástí projektu**
 
 ## <a name="ecmascript-version-for-files-that-are-not-part-of-a-project"></a>Verze ECMAScript pro soubory, které nejsou součástí projektu
 
-Tyto možnosti vám umožní vybrat verze ECMAScript pro soubory, které nejsou součástí projektu. Můžete si vybrat mezi **ECMAScript 3**, **ECMAScript 5**, nebo **ECMAScript 6**.
+Tyto možnosti umožňují vybrat verzi ECMAScript pro soubory, které nejsou součástí projektu. Můžete zvolit mezi **ECMAScript 3**, **ECMAScript 5**nebo **ECMAScript 6**.
 
 ## <a name="jsx-emit-for-tsx-files-that-are-not-part-of-a-project"></a>JSX Emit pro soubory TSX, které nejsou součástí projektu
 
 Tyto možnosti určují, jak editor zpracovává soubory TypeScript, které nejsou součástí projektu.
 
-### <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
+### <a name="uielement-list"></a>UIElement – seznam
 
 |Možnost|Popis|
 |------------|-----------------|
-|**Rozhraní react**|Pokud je vybraná tato možnost, vysílá editoru kódu *js* příponu souboru.|
-|**Preserve**|Pokud je vybraná tato možnost, Editor kódu udržuje JSX v rámci výstupu a generuje *.jsx, které jsou* příponu souboru.|
+|**Reakce – architektura**|Pokud je vybrána tato možnost, Editor kódu vygeneruje příponu souboru *. js* .|
+|**Chovají**|Pokud je vybrána tato možnost, Editor kódu udržuje JSX jako součást výstupu a generuje příponu souboru *. jsx* .|
 
 ## <a name="see-also"></a>Viz také:
 

@@ -1,5 +1,6 @@
 ---
 title: Extrahovat metodu
+description: Zapněte fragment kódu do své vlastní metody, a to tak, že vyberete kód a zadáte CTRL + R, CTRL + M.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -12,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc1e96bed6c3f7fac857262644765d383de37482
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a764fd0d95696866e914ec76a560a49d641acb47
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790992"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483662"
 ---
 # <a name="extract-a-method-refactoring"></a>Extrahovat metodu refaktoring
 
@@ -27,11 +28,11 @@ Tento refaktoring platí pro:
 
 - Visual Basic
 
-**Co:** Umožňuje vypnout fragment kódu do své vlastní metody.
+**Co:** Umožňuje přepínat fragment kódu na svou vlastní metodu.
 
-**Kdy:** Máte fragment stávající kód v některé metody, která musí být volána z jiné metody.
+**Kdy:** Máte fragment stávajícího kódu v některé metodě, který je třeba volat z jiné metody.
 
-**Proč:** Vám může kopírovat/vložit tento kód, ale které by mohlo dojít k duplikaci. Lepším řešením je refaktorovat tohoto fragmentu do své vlastní metody, které je možné vyvolat volně jiným způsobem.
+**Proč:** Tento kód můžete zkopírovat nebo vložit, ale to by vedlo k duplikaci. Lepším řešením je refaktorovat tohoto fragmentu do své vlastní metody, které je možné vyvolat volně jiným způsobem.
 
 ## <a name="how-to"></a>Postupy
 
@@ -49,7 +50,7 @@ Tento refaktoring platí pro:
 
    - **Klávesnice**
       - Stisknutím klávesy **Ctrl + R**, pak **Ctrl + M**. (Všimněte si, že klávesová zkratka může být jiný platformě, na který profil vyberete.)
-      - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky a vybereme **extrahovat metodu** z automaticky otevíraného okna okno náhledu.
+      - Stisknutím klávesy **Ctrl**+ **.** aktivační událost **rychlé akce a Refaktoringy** nabídky a vybereme **extrahovat metodu** z automaticky otevíraného okna okno náhledu.
    - **Myši**
       - Vyberte **Upravit > Refaktorovat > extrahovat metodu**.
       - Klikněte pravým tlačítkem na kód a vybrat **Refaktorovat > extrahovat > extrahovat metodu**.

@@ -1,6 +1,7 @@
 ---
 title: Dialogové okno Možnosti, Projekty a řešení, Sestavit a spustit
 ms.date: 07/14/2017
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Build_and_Run
@@ -9,55 +10,55 @@ helpviewer_keywords:
 - run actions
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0f24dc1afa875183f03e15e46cc2331f27cbf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996835"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461397"
 ---
-# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Dialogové okno Možnosti: Projekty a řešení \> sestavit a spustit
+# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Dialogové okno Možnosti: Sestavení a spuštění \> projektů a řešení
 
-V tomto dialogovém okně můžete zadat maximální počet C++ nebo C# projekty, které můžete vytvářet ve stejnou dobu, určité výchozí chování, ale taky popustit některé nastavení protokolu sestavení. Zpřístupníte tyto možnosti, vyberte **nástroje** > **možnosti** rozbalte **projekty a řešení**a pak vyberte **sestavíte a spustíte**.
+V tomto dialogovém okně můžete zadat maximální počet C++ nebo C# projekty, které mohou být sestaveny současně, určité výchozí chování sestavení a některá nastavení protokolu sestavení. Chcete-li získat přístup k těmto možnostem, vyberte možnost **nástroje** > **Možnosti** rozbalit **projekty a řešení**a pak vyberte **sestavení a spustit**.
 
-**maximální počet paralelních projektu sestavení**
+**Maximální počet paralelně sestavovaných projektů**
 
-Určuje maximální počet C++ a C# projekty, které můžete vytvářet ve stejnou dobu. K optimalizaci procesu sestavení, je maximální číslo sestavení paralelního projektu automaticky nastaví počet procesorů počítače. Maximální počet je 32.
+Určuje maximální počet C++ a C# projekty, které lze současně sestavit. Pro optimalizaci procesu sestavení je maximální počet paralelních sestavení projektu automaticky nastaven na počet procesorů počítače. Maximální hodnota je 32.
 
-**Pouze při spuštění sestavit projekty a závislosti**
+**Při běhu sestavovat pouze spouštěné projekty a závislosti**
 
-Při použití sestavení spouštěný projekt a jeho závislosti **F5** klíč, **ladění** > **spustit ladění** příkaz nabídky nebo použít příkazy v **sestavení** nabídky. Pokud není zaškrtnuto, jsou vytvořeny všechny projekty a závislosti.
+Vytvoří pouze spouštěný projekt a jeho závislosti, pokud  > použijete klávesu **F5** , příkaz nabídky**Spustit ladění** a příslušné příkazy v nabídce **sestavení** . Pokud není zaškrtnuto, jsou sestaveny všechny projekty a závislosti.
 
-**Spustit, pokud projekty jsou zastaralé**
+**Spustit, pokud jsou projekty zastaralé**
 
-*Platí pro projekty v jazyce C++.*
+*Platí jenom C++ pro projekty.*
 
-Při spuštění projektu s **F5** nebo **ladění** > **spustit ladění** příkazu, ve výchozím nastavení **zobrazit výzvu k vytvoření** Zobrazí zprávu, pokud konfigurace projektu je zastaralý. Vyberte **vždy sestavení** a sestavte projekt pokaždé, když je spuštěn. Vyberte **nikdy nesestavovat** potlačit všechny automatické sestavení při spuštění projektu.
+Při spuštění projektu pomocí klávesy **F5** nebo příkazu**Spustit ladění** pro **ladění** > se ve výchozím nastavení zobrazí zpráva s **výzvou k sestavení** zobrazí zprávu, pokud je konfigurace projektu neaktuální. Vyberte **vždy sestavit** a sestavte projekt pokaždé, když je spuštěn. Vyberte **nikdy Nesestavit** , pokud chcete potlačit všechna Automatická sestavení při spuštění projektu.
 
-**Při spuštění, při sestavení nebo dojde k chybě nasazení**
+**Při spuštění, když dojde k chybám sestavení nebo nasazení**
 
-*Platí pro projekty v jazyce C++.*
+*Platí jenom C++ pro projekty.*
 
-Při spuštění projektu s **F5** nebo **ladění** > **spustit ladění** příkazu, ve výchozím nastavení **výzva ke spuštění**zobrazí zprávu, pokud projekt by měl spustit i v případě, že sestavení selhalo. Vyberte **spuštění starší verze** automaticky spustit poslední úspěšný build, což může způsobit neshody mezi spuštěním kódu a zdrojový kód. Vyberte **nespouštět** k potlačení zprávy.
+Při spuštění projektu pomocí klávesy **F5** nebo příkazu**Spustit ladění** **pro** **ladění** > se ve výchozím nastavení zobrazí zpráva, pokud se má projekt spustit i v případě, že se sestavení nezdařilo. Vyberte možnost **Spustit starou verzi** , chcete-li automaticky spustit poslední funkční sestavení, což může vést k neshodě mezi běžícím kódem a zdrojovým kódem. Vyberte **nespouštět** , pokud chcete zprávu potlačit.
 
-**Nové řešení použít aktuálně zvolený projekt jako spouštěný projekt**
+**Pro nová řešení použijte aktuálně vybraný projekt jako spouštěný projekt.**
 
-Když nastavíte tuto možnost, nová řešení použít aktuálně zvolený projekt jako spouštěný projekt.
+Pokud je tato možnost nastavena, nová řešení použijí aktuálně vybraný projekt jako spouštěný projekt.
 
-**Podrobnost výstupu sestavení projektu nástroje MSBuild**
+**Podrobnosti výstupu sestavení projektu nástroje MSBuild**
 
-Určuje, kolik informací z procesu sestavení je zobrazen v **výstup** okna.
+Určuje, kolik informací z procesu sestavení se zobrazí v okně **výstup** .
 
-**Úroveň podrobností MSBuild projektu sestavení protokolu souborů**
+**Podrobnosti souboru protokolu sestavení projektu nástroje MSBuild**
 
-*Platí pro projekty v jazyce C++.*
+*Platí jenom C++ pro projekty.*
 
-Určuje, kolik informací je zapsána do souboru protokolu sestavení, které se nacházejí v  *\\ \<ProjectName > \Debug\\\<ProjectName > .log*.
+Určuje, kolik informací je zapsáno do souboru protokolu sestavení, který je umístěn  *\\ \<v ProjectName >\\\debug.\<ProjectName >. log*.
 
 ## <a name="see-also"></a>Viz také:
 

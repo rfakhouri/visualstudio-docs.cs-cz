@@ -6,17 +6,17 @@ ms.date: 12/04/2017
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a132787a5af0aca9b42775931b343b89710ce91b
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 0caebc01e2a1db85a38f967b47226e998cfc69d6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043397"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461692"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Začínáme s C++ v sadě Visual Studio
 
@@ -28,13 +28,13 @@ Nemusíte znát C++ Chcete-li dokončit tento quickstart, ale měli byste se sez
 
 ::: moniker range="vs-2017"
 
-Pokud chcete postupovat s námi, budete potřebovat kopii sady Visual Studio 2017 s **vývoj desktopových aplikací pomocí C++** nainstalovaná úloha. Rychlý průvodce instalací, naleznete v [podpory instalace jazyka C++ v sadě Visual Studio](/cpp/build/vscpp-step-0-installation).
+Pokud chcete postup sledovat, potřebujete kopii sady Visual Studio 2017 s nainstalovaným pracovním **postupem C++ pro desktopový vývoj** . Rychlý průvodce instalací, naleznete v [podpory instalace jazyka C++ v sadě Visual Studio](/cpp/build/vscpp-step-0-installation).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Pokud chcete postupovat s námi, budete potřebovat kopii aplikace Visual Studio 2019 s **vývoj desktopových aplikací pomocí C++** nainstalovaná úloha. Rychlý průvodce instalací, naleznete v [podpory instalace jazyka C++ v sadě Visual Studio](/cpp/build/vscpp-step-0-installation).
+Pokud chcete postup sledovat, potřebujete kopii sady Visual Studio 2019 s nainstalovaným pracovním **postupem C++ pro desktopový vývoj** . Rychlý průvodce instalací, naleznete v [podpory instalace jazyka C++ v sadě Visual Studio](/cpp/build/vscpp-step-0-installation).
 
 ::: moniker-end
 
@@ -52,9 +52,9 @@ Po otevření sady Visual Studio se zobrazí tři základní části rozhraní I
 
 ::: moniker range=">=vs-2019"
 
-Po otevření sady Visual Studio, zobrazí se okno start první. Vyberte **pokračovat bez kódu** otevřete vývojové prostředí.
+Po otevření sady Visual Studio se nejprve zobrazí okno Start. Pokud chcete otevřít vývojové prostředí, vyberte **pokračovat bez kódu** .
 
-Zobrazí se vám tyto tři základní části rozhraní IDE: nástroj oken, nabídek a panelů nástrojů a prostor hlavního okna. Nástroje systému windows jsou ukotveny na levé a pravé straně okna aplikace. Vyhledávací pole, nabídek a běžný panel nástrojů se nacházejí v horní části. Při načítání řešení nebo projektu, návrháři a editory se zobrazí v centrální místo okna aplikace. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
+Uvidíte tři základní části integrovaného vývojového prostředí (IDE): okna nástrojů, nabídky a panely nástrojů a prostor hlavního okna. Nástroje systému windows jsou ukotveny na levé a pravé straně okna aplikace. Vyhledávací pole, panel nabídek a standardní panel nástrojů najdete v horní části. Při načítání řešení nebo projektu se editory a návrháře zobrazí v centrálním prostoru okna aplikace. Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
 
 ::: moniker-end
 
@@ -107,7 +107,7 @@ Dále přidáte kód, který zobrazí slovo "Ahoj" v okně konzoly.
    using namespace std;
    ```
 
-   Pravděpodobně jste zaznamenali, že se nezobrazují pole při zadávání kódu. Toto pole obsahuje návrhy automatického dokončení pro znaky, které zadáte. To je součástí C++ IntelliSense, který poskytuje kódování výzvy, včetně členů třídy nebo rozhraní a informace o parametru. Můžete také použít fragmenty kódu, které jsou předem definovaných bloky kódu. Další informace naleznete v tématu [pomocí technologie IntelliSense](../ide/using-intellisense.md) a [výstřižky kódu](../ide/code-snippets.md).
+   Pravděpodobně jste zaznamenali, že se nezobrazují pole při zadávání kódu. Toto pole obsahuje návrhy automatického dokončování pro znaky, které zadáte. To je součástí C++ IntelliSense, který poskytuje kódování výzvy, včetně členů třídy nebo rozhraní a informace o parametru. Můžete také použít fragmenty kódu, které jsou předem definovaných bloky kódu. Další informace naleznete v tématu [pomocí technologie IntelliSense](../ide/using-intellisense.md) a [výstřižky kódu](../ide/code-snippets.md).
 
    ![Dlouhodobého kódu v editoru](../ide/media/get-started-cpp-cout-fix.png)
 
@@ -176,5 +176,5 @@ Blahopřejeme k dokončení tohoto rychlého startu!
 ## <a name="see-also"></a>Viz také:
 
 - [Pomocí integrovaného vývojového prostředí sady Visual Studio pro vývoj pro klientské počítače C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [Návod: Vytvoření jednoduché aplikace s C# nebo Visual Basic](../get-started/csharp/tutorial-wpf.md)
-- [Pro zvýšení produktivity v sadě Visual Studio](../ide/productivity-features.md)
+- [Návod: Vytvoření jednoduché aplikace pomocí C# nebo Visual Basic](../get-started/csharp/tutorial-wpf.md)
+- [Funkce pro produktivitu v aplikaci Visual Studio](../ide/productivity-features.md)

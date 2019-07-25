@@ -1,44 +1,47 @@
 ---
-title: 'Krok 8: Přidejte metodu k ověření, zda hráč vyhrál'
+title: 'Krok 8: Přidání metody k ověření, jestli hráč vyhrál'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e21caa6b73d6cf23a41bd7691fa19b1f7ff8e2f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9daa4d939eb1cd5c03d3811337f258fc3ef3c70c
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996546"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415633"
 ---
-# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Krok 8: Přidejte metodu k ověření, zda hráč vyhrál
-Vytvořili jste zábavnou hru, která však potřebuje ještě něco. Hra by měla skončit vítězstvím hráče, takže budete muset přidat `CheckForWinner()` metodu k ověření, zda hráč zvítězil.
+# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Krok 8: Přidání metody k ověření, jestli hráč vyhrál
+Vytvořili jste zábavnou hru, která však potřebuje ještě něco. Hra by měla skončit, když je přehrávač WINS, takže potřebujete přidat `CheckForWinner()` metodu pro ověření, zda hráč zvítězil.
 
 ## <a name="to-add-a-method-to-verify-whether-the-player-won"></a>Přidání metody k ověření, zda hráč zvítězil
 
-1. Přidat `CheckForWinner()` metoda do dolní části kódu, níže `timer1_Tick()` obslužná rutina události, jak je znázorněno v následujícím kódu.
+1. Přidejte metodu do dolní části kódu `timer1_Tick()` pod obslužnou rutinou události, jak je znázorněno v následujícím kódu. `CheckForWinner()`
 
      [!code-csharp[VbExpressTutorial4Step8#10](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_1.cs)]
      [!code-vb[VbExpressTutorial4Step8#10](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_1.vb)]
 
-     Metoda používá další `foreach` smyčky ve Vizuálu C# nebo `For Each` smyčky v jazyce Visual Basic k projití každého popisku v <xref:System.Windows.Forms.TableLayoutPanel>. Používá operátor rovnosti (`==` v jazyce Visual C# a `=` v jazyce Visual Basic) ke kontrole barvy ikony každého popisku k ověření, zda odpovídá pozadí. Pokud se barvy shodují, zůstane ikona skryta a hráč nespároval všechny zbývající ikony. V takovém případě program použije `return` příkaz k vynechání zbývající metody. Pokud smyčka projde přes všechny popisky bez spuštění `return` příkazu, to znamená, že všechny ikony ve formuláři byly spárovány. Program zobrazí prvek MessageBox s blahopřáním k vítězství a pak zavolá formuláře `Close()` metoda k ukončení hry.
+     Metoda používá jinou `foreach` smyčku v vizuálu C# nebo `For Each` smyčce v Visual Basic <xref:System.Windows.Forms.TableLayoutPanel>k procházení každého popisku v. Používá operátor rovnosti (`==` v jazyce Visual C# a `=` v Visual Basic) ke kontrole barvy ikony jednotlivých popisků a k ověření, zda odpovídá pozadí. Pokud se barvy shodují, zůstane ikona skryta a hráč nespároval všechny zbývající ikony. V takovém případě program používá `return` příkaz k přeskočení zbytku metody. Pokud smyčka projde všemi štítky bez provedení `return` příkazu, znamená to, že všechny ikony ve formuláři byly spárovány. Program zobrazí MessageBox, aby congratulate přehrávač při výhrě, a potom zavolá `Close()` metodu formuláře pro ukončení hry.
 
-2. Dále nechejme popisku <xref:System.Windows.Forms.Control.Click> zavolat novou obslužnou rutinu události `CheckForWinner()` metody. Ujistěte se, že váš program kontroluje vítěze ihned po tom, co zobrazí druhou ikonu, kterou hráč vybere. Vyhledejte řádek, kde jste nastavili barvu druhé vybrané ikony a poté zavolejte `CheckForWinner()` metodu, jak je znázorněno v následujícím kódu.
+2. Dále má obslužná rutina <xref:System.Windows.Forms.Control.Click> události popisku zavolat novou `CheckForWinner()` metodu. Ujistěte se, že váš program kontroluje vítěze ihned po tom, co zobrazí druhou ikonu, kterou hráč vybere. Vyhledejte řádek, kde jste nastavili barvu druhé zvolené ikony, a potom zavolejte `CheckForWinner()` metodu hned po tom, jak je znázorněno v následujícím kódu.
 
      [!code-csharp[VbExpressTutorial4Step8#11](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_2.cs)]
      [!code-vb[VbExpressTutorial4Step8#11](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_2.vb)]
 
-3. Program uložte a spusťte jej. Zahrajte si hru a spárujte všechny ikony. Když vyhrajete, program zobrazí gratulací **MessageBox** (jak ukazuje následující obrázek) a potom jej zavře.
+3. Program uložte a spusťte jej. Zahrajte si hru a spárujte všechny ikony. Když nahrajete, program zobrazí congratulatory **MessageBox** (jak je znázorněno na následujícím obrázku) a pak pole zavře.
 
-     ![Porovnávací hra s ovládacím prvkem MessageBox](../ide/media/express_tut4step8.png)
-**Porovnávací hra** s **MessageBox**
+     ![Porovnávací hra s](../ide/media/express_tut4step8.png)
+MessageBox, která**odpovídá hře** s **MessageBox**
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 
-- Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 9: Vyzkoušejte další funkce](../ide/step-9-try-other-features.md).
+- Pokud chcete přejít na další krok kurzu, přečtěte si [krok 9: Vyzkoušejte jiné funkce](../ide/step-9-try-other-features.md).
 
-- Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 7: Zachování dvojic viditelných](../ide/step-7-keep-pairs-visible.md).
+- Pokud se chcete vrátit k předchozímu kroku kurzu [, přečtěte si krok 7: Zachovat páry viditelné](../ide/step-7-keep-pairs-visible.md)

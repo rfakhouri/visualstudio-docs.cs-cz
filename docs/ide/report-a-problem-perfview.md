@@ -1,5 +1,5 @@
 ---
-title: Shromažďovat ETL trasování pomocí nástroje PerfView
+title: Shromažďování trasovacích protokolů ETL pomocí nástroje PerfView
 ms.date: 06/27/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,31 +15,31 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: baae89b7bf45a4848c571f75e37c6cc0d203d459
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 6b1f61888fa642ed544c6da7d1cf77c43b52b2d9
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518235"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461544"
 ---
-# <a name="collect-an-etl-trace-with-perfview"></a>Shromažďovat ETL trasování pomocí nástroje PerfView
+# <a name="collect-an-etl-trace-with-perfview"></a>Shromažďování trasovacích protokolů ETL pomocí nástroje PerfView
 
-PerfView je nástroj, který vytvoří soubory ETL (protokol trasování událostí) na základě [události trasování pro Windows](/windows/desktop/ETW/event-tracing-portal) , může být užitečné při řešení potíží některých typech vypnout problémy s aplikací Visual Studio. Čas od času při nahlásit problém, produktový tým vás může požádat o spuštění PerfView ke sběru dalších informací.
+PerfView je nástroj, který vytváří soubory ETL (protokol trasování událostí) založené na [trasování událostí pro Windows](/windows/desktop/ETW/event-tracing-portal) , které může být užitečné při řešení potíží s některými druhy problémů se sadou Visual Studio. Při nahlášení problému občas může produktový tým požádat o spuštění PerfView ke shromažďování dalších informací.
 
-## <a name="install-perfview"></a>Instalace nástroje PerfView
+## <a name="install-perfview"></a>Nainstalovat PerfView
 
-Stáhněte si nástroje PerfView z [Microsoft Download Center](http://www.microsoft.com/download/details.aspx?id=28567).
+Stáhněte si PerfView z webu [Microsoft Download Center](http://www.microsoft.com/download/details.aspx?id=28567).
 
-## <a name="run-perfview"></a>Spuštění nástroje PerfView
+## <a name="run-perfview"></a>Spustit PerfView
 
-1. Klikněte pravým tlačítkem na **PerfView.exe** v aplikaci Windows Explorer a zvolte **spustit jako správce** jako správce
-1. V nabídce shromažďovat, zvolte **shromažďování**
-1. Zkontrolujte **Zip**, **sloučit**, a **Čas vlákna**.
-1. Zvýšit **cyklické MB** až 1000.
-1. Změna **aktuální adresář** ukládání trasování ETL do zadané složky a datový soubor, pokud budete shromažďovat více než jednou.
-1. Chcete-li spustit nahrávání dat, zvolte **spustit shromažďování** tlačítko.
-1. Chcete-li zastavit nahrávání dat, zvolte **zastavit shromažďování** tlačítko. PrefView.etl.zip soubor se uloží v zadaném adresáři.
+1. V Průzkumníku Windows klikněte pravým tlačítkem na **PerfView. exe** a jako správce vyberte **Spustit jako správce** .
+1. V nabídce shromáždit klikněte na možnost **shromáždit** .
+1. Podívejte se na **zip**, **Merge**a **ThreadTime**.
+1. Zvyšte **kruhové MB** na 1000.
+1. Změna **aktuálního adresáře** pro uložení trasování ETL do zadané složky a datového souboru, pokud se chystáte shromažďovat více než jednou.
+1. Chcete-li spustit zaznamenávání dat, klikněte na tlačítko **Spustit shromažďování** .
+1. Chcete-li zastavit zaznamenávání dat, klikněte na tlačítko **Zastavit shromažďování** . V zadaném adresáři bude uložen soubor PrefView. ETL. zip.
 
-PerfView lze uložit pouze nejnovější data, která se vejde do vyrovnávací paměti. Proto se pokusí zastavit shromažďování co nejdříve po spuštění sady Visual Studio zablokovat nebo zpomalit. Bez shromažďování pro více než 30 sekund poté, co dostanete se k problému.
+PerfView může ukládat pouze nejnovější data, která se vejdou do vyrovnávací paměti. Proto se pokuste zastavit shromažďování co nejdříve po zahájení zablokování nebo zpomalení sady Visual Studio. Neshromažďovat po dobu delší než 30 sekund, než se narazí na problém.
 
-Další informace najdete v tématu [PerfView kurzu na webu Channel 9](http://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-1-Collecting-data-with-the-Run-command).
+Další informace najdete v tématu [kurz PerfView na channel9](http://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-1-Collecting-data-with-the-Run-command).

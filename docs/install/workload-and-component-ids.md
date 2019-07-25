@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/22/2019
+ms.date: 07/23/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cdab0458d67bb13ffdd456e2e50e86d290444f3c
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: c0f7f52b79c1c6e165aabe19df8848361a096653
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177676"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461607"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>ID úloh a komponent sady Visual Studio
 
@@ -44,13 +44,13 @@ Klikněte na názvy edition v následující tabulce se zobrazí dostupné úloh
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
 | [Vizuální&nbsp;Studio Feedback&nbsp;klienta&nbsp;2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 
-Další informace o tom, jak pomocí těchto seznamů, najdete v článku [použitím parametrů příkazového řádku instalace sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) stránky a [jak: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017) stránky.
+Další informace o použití těchto seznamů naleznete na stránce [ [použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) a postupy: Migrujte projekty rozšiřitelnosti na stránku](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017) sady Visual Studio 2017.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-**Aktualizováno pro [16.1 vydání](/visualstudio/releases/2019/release-notes/)**
+**Aktualizováno pro [verzi 16,2](/visualstudio/releases/2019/release-notes/)**
 
 | **Edice** | **ID** | **Popis** |
 | ----------- | ------ | --------------- |
@@ -62,10 +62,10 @@ Další informace o tom, jak pomocí těchto seznamů, najdete v článku [použ
 | [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2019](workload-component-id-vs-test-agent.md?vs-2019)  | Microsoft.VisualStudio.Product.TestAgent | Podporuje vzdálené spouštění automatizovaných a zátěžových testů |
 | [Visual&nbsp;Studio Load&nbsp;Test&nbsp;Controller 2019](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft.VisualStudio.Product.TestController | Rozdělení automatizovaných testů mezi více počítačů |
 
-Další informace o tom, jak pomocí těchto seznamů, najdete v článku [použít parametry příkazového řádku instalace sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) stránky a [jak: Migrace projektů rozšíření do sady Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) stránky.
+Další informace o použití těchto seznamů naleznete na stránce [ [použití parametrů příkazového řádku pro instalaci sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) a postupy: Migrujte projekty rozšiřitelnosti na](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) stránku sady Visual Studio.
 
 > [!NOTE]
-> Seznam pracovního vytížení a komponenta ID pro předchozí verze, najdete v části [ID pracovního vytížení a komponenta Visual Studio 2017](workload-and-component-ids.md?view=vs-2017)
+> Seznam úloh a ID komponent pro předchozí verzi najdete v tématu [úlohy a ID komponent sady Visual Studio 2017](workload-and-component-ids.md?view=vs-2017) .
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ Další informace o tom, jak pomocí těchto seznamů, najdete v článku [použ
 
 ## <a name="see-also"></a>Viz také:
 
-* [Visual Studio Příručka správce pro sadu Visual Studio](visual-studio-administrator-guide.md)
+* [Příručka pro správce sady Visual Studio pro Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
   * [Příklady parametrů příkazového řádku](command-line-parameter-examples.md)
 * [Vytvoření offline instalace sady Visual Studio](create-an-offline-installation-of-visual-studio.md)

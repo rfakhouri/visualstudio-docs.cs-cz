@@ -1,5 +1,6 @@
 ---
 title: Refaktoring
+description: Nejoblíbenější Refaktoring v aplikaci Visual Studio s popisem a příklady.
 ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a36378efe7b6e3151882d5e6927cd7fbfa4542
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b9ce37df2999ac27f5bc8e5aeb7edfb1959b8cc
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793177"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483645"
 ---
 # <a name="refactor-code"></a>Refaktorování kódu
 
@@ -22,10 +23,10 @@ Refaktoring je proces upravovat kód, aby byla jednodušší udržovat, pochopit
 
 ## <a name="programming-languages"></a>Programovací jazyky
 
-Jiné operace refaktoringu kódu jsou k dispozici pro různé programovací jazyky v sadě Visual Studio:
+Různé operace refaktoringu jsou k dispozici pro různé programovací jazyky v aplikaci Visual Studio:
 
-- Na stránkách v této části obsahu vztahovat k dispozici pro refaktoring C# a Visual Basic. Tady je několik příkladů [extrahovat metodu refaktoring](reference/extract-method.md) a [přesunutí typu do odpovídajícího souboru refaktoring](reference/move-type-to-matching-file.md).
-- Informace o refaktoring kódu jazyka C++, naleznete v tématu [psaní a refaktoring kódu (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
+- Stránky v této části obsahu zahrnují refaktoring dostupné pro C# a Visual Basic. Některé příklady jsou [extrahováním refaktoringu metody](reference/extract-method.md) a [přesunutí typu do odpovídajícího refaktoringu souboru](reference/move-type-to-matching-file.md).
+- Informace o refaktoringu C++ kódu naleznete v tématu [Write a refaktoring Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
 - Podporu refaktoringu pro F# je poskytován [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), rozšíření sady Visual Studio třetích stran.
 
 ## <a name="see-also"></a>Viz také:
