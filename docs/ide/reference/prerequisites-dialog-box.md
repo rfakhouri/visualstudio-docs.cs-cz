@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70fc9e728c409684d7b0160fcb521d7bc2a2aa1d
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 3ab3cb844f518ef5fae553010fe4a800c09d170a
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461723"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533385"
 ---
 # <a name="prerequisites-dialog-box"></a>dialogové okno Požadavky
 
@@ -36,6 +36,9 @@ Chcete-li získat přístup k dialogovému oknu, vyberte uzel projektu v **Průz
 |**Stáhnout požadavky z webu dodavatele součásti**|Určuje, že požadované součásti budou nainstalovány z webu dodavatele. Toto je výchozí možnost.|
 |**Stáhnout požadavky ze stejného umístění jako moje aplikace**|Určuje, že požadované součásti budou nainstalovány ze stejného umístění jako aplikace. Tím se zkopírují všechny požadované balíčky do umístění pro publikování. Tato možnost bude fungovat, pouze pokud jsou balíčky požadovaných součástí ve vývojovém počítači.|
 |**Stáhnout požadované součásti z následujícího umístění**|Určuje, že požadované součásti budou nainstalovány z umístění, které zadáte. Můžete použít tlačítko **Procházet** a vybrat umístění.|
+
+> [!NOTE]
+> Informace o tom, kam umístit požadavky, najdete v tématu [Vytvoření balíčků zaváděcího nástroje](../../deployment/creating-bootstrapper-packages.md#create-custom-bootstrapper-packages).
 
 ## <a name="prerequisites-information"></a>Informace o požadavcích
 

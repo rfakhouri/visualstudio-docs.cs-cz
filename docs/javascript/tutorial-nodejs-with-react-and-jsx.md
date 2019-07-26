@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 563dcd4d91e23c019edf5a777b70453f40091d69
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315252"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533376"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Kurz: Vytvoření aplikace Node. js a reakce aplikace v aplikaci Visual Studio
 
@@ -322,7 +322,7 @@ Vždycky, když provedete změny v *app.tsx*, je nutné znovu spustit příkaz w
 
 ## <a name="add-a-build-script-to-transpile-the-jsx"></a>Přidání skriptu sestavení pro přebudování JSX
 
-V novějších verzích Node. js je vyžadován skript sestavení. Místo transpiling JSX na příkazovém řádku (jak je znázorněno v předchozí části), můžete místo toho přepracovat JSX při sestavování ze sady Visual Studio.
+Počínaje verzí Visual Studio 2019 je vyžadován skript sestavení. Namísto transpiling JSX na příkazovém řádku (jak je znázorněno v předchozí části), můžete přepracovat JSX při sestavování ze sady Visual Studio.
 
 * Otevřete soubor *Package. JSON* a přidejte následující část za `dependencies` oddíl:
 
@@ -432,7 +432,7 @@ V předchozí části jste připojili ladicí program ke kódu Node.js na stran�
      > [!TIP]
      > Po prvním připojení k procesu podle tohoto postupu se v sadě Visual Studio 2017 můžete rychle znovu připojit ke stejnému procesu tak, že zvolíte **Ladit** > **Znovu připojit k procesu**.
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
 > [!div class="nextstepaction"]
 > [Nasazení aplikace do služby App Service pro Linux](../javascript/publish-nodejs-app-azure.md)
