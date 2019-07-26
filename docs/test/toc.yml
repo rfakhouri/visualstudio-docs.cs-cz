@@ -54,9 +54,9 @@
       items:
         - name: "Návod: Vytváření a\_spouštění testů jednotek pro spravovaný kód"
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: "Rychlý start: Vývoj řízený testy s\_použitím Průzkumníka testů"
+        - name: 'Návod: Vývoj řízený testy'
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: Používání členů oboru názvů Microsoft.VisualStudio.TestTools.UnitTesting při testech jednotek
+        - name: Použití rozhraní MSTest API v testech jednotek
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Používání tříd Assert
           href: using-the-assert-classes.md
@@ -74,11 +74,11 @@
           items:
             - name: Vytvoření testu jednotek řízeného daty
               href: how-to-create-a-data-driven-unit-test.md
-            - name: 'Návod: Definování zdroje dat pomocí konfiguračního souboru'
+            - name: Definování zdroje dat pomocí konfiguračního souboru
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Testy jednotek pro obecné metody
           href: unit-tests-for-generic-methods.md
-        - name: Konfigurace testů jednotek pro cílení na dřívější verzi rozhraní .NET Framework
+        - name: Konfigurace testů jednotek pro cílení na dřívější verzi .NET
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: Testy jednotek pro kód C/C++
       items:

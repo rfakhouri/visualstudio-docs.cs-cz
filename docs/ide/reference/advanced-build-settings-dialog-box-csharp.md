@@ -1,35 +1,36 @@
 ---
 title: Dialogové okno Upřesnit nastavení sestavení (C#)
 ms.date: 06/20/2017
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 908f79b40b17eba5c0e3f518e6d7f2f3ae58e9c7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745012"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461887"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Dialogové okno Upřesnit nastavení sestavení (C#)
 
-Použití **pokročilé nastavení sestavení** dialogovému oknu **Návrháře projektu** k určení rozšířenou vlastností konfigurace sestavení projektu. Toto dialogové okno se vztahuje na [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] pouze pro projekty.
+Dialogové okno **Upřesnit nastavení sestavení** **Návrháře projektu** slouží k určení rozšířených vlastností konfigurace sestavení projektu. Toto dialogové okno se vztahuje [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] pouze na projekty.
 
 ## <a name="general"></a>Obecné
 
-Tyto možnosti umožňují nastavit obecné upřesňující nastavení.
+Následující možnosti umožňují nastavit obecná Pokročilá nastavení.
 
 **Verze jazyka**
 
-Určuje verzi modulu jazyka. Sada funkcí se liší v jednotlivých verzích, proto tato možnost umožňuje vynutit na kompilátoru povolit pouze podmnožinu implementovaných funkcí nebo povolte jenom funkce, kompatibilní s současných standardů. Toto nastavení obsahuje následující možnosti:
+Určuje verzi jazyka, který se má použít. Sada funkcí se v každé verzi liší, takže tuto možnost lze použít k vynucení, aby kompilátor povoloval pouze podmnožinu implementovaných funkcí, nebo aby povoloval pouze ty funkce, které jsou kompatibilní se stávajícím standardem. Toto nastavení má následující možnosti:
 
 - **default**
 
@@ -37,61 +38,61 @@ Určuje verzi modulu jazyka. Sada funkcí se liší v jednotlivých verzích, pr
 
 - **ISO-1** a **ISO-2**
 
-   Standardní funkce ISO-1 a ISO-2, zaměřuje v uvedeném pořadí.
+   Cílí na standardní funkce ISO-1 a ISO-2 v uvedeném pořadí.
 
 - **C#[číslo verze]**
 
-   Cílí na konkrétní verzi C#. Další informace najdete v tématu [/langversion (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+   Cílí na konkrétní verzi C#. Další informace naleznete v tématu [/langversion (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
 
-**Vnitřní kompilátor zpráv o chybách**
+**Zasílání zpráv o vnitřních chybách kompilátoru**
 
-Určuje, zda chcete zprávy o chybách kompilátoru společnosti Microsoft. Pokud nastavit **řádku** (výchozí), zobrazí se výzva Pokud dojde k chybě vnitřní kompilátor, získáte možnost elektronicky odešle zprávu o chybách společnosti Microsoft. Pokud hodnotu **odeslat**, zprávu o chybách se automaticky odešlou. Pokud hodnotu **fronty**, zprávy o chybách se zařadí do fronty. Pokud nastavena na **žádný**, ohlásí chybu pouze v kompilátoru textový výstup. Další informace najdete v tématu [/errorreport (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
+Určuje, jestli se mají hlásit chyby kompilátoru Microsoftu. Pokud se nastaví **výzva** (výchozí nastavení), zobrazí se výzva, pokud dojde k vnitřní chybě kompilátoru, takže budete moct poslat zprávu o chybě elektronicky společnosti Microsoft. Pokud je nastavená na **Odeslat**, pošle se automaticky zpráva o chybě. Pokud je nastaveno na **Queue**, zprávy o chybách budou zařazeny do fronty. Pokud je nastavena na **hodnotu None**, bude chyba zaznamenána pouze v textovém výstupu kompilátoru. Další informace naleznete v tématu [/errorreport (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
 
 **Kontrolovat aritmetické přetečení a podtečení**
 
-Určuje, zda celočíselný aritmetické příkaz, který není v oboru [zaškrtnutí](/dotnet/csharp/language-reference/keywords/checked) nebo [Nekontrolovaná](/dotnet/csharp/language-reference/keywords/unchecked) klíčová slova a způsobí, že výsledkem je hodnota mimo rozsah datového typu za běhu došlo k výjimce. Další informace najdete v tématu [/ checked (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
+Určuje, zda je celočíselný aritmetický příkaz, který není v rozsahu [](/dotnet/csharp/language-reference/keywords/checked) zkontrolovaných [](/dotnet/csharp/language-reference/keywords/unchecked) nebo nekontrolovaných klíčových slov a který má za následek, že hodnota mimo rozsah datového typu způsobí výjimku za běhu. Další informace naleznete v tématu [/checked (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
 
-**Neodkazovat na mscorlib.dll**
+**Neodkazovat na mscorlib. dll**
 
-Určuje, zda mscorlib.dll se naimportují do programu, definování celý <xref:System> oboru názvů. Toto políčko zaškrtněte, pokud chcete definovat nebo si vytvořte svoje vlastní <xref:System> obor názvů a objekty. Další informace najdete v tématu [/nostdlib (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
+Určuje, zda bude do programu importována knihovna mscorlib. dll a definuje celý <xref:System> obor názvů. Zaškrtněte toto políčko, pokud chcete definovat nebo vytvořit vlastní <xref:System> obor názvů a objekty. Další informace naleznete v tématu [/nostdlib (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
 ## <a name="output"></a>Výstup
 
-Tyto možnosti umožňují zadat možnosti pokročilé výstupu.
+Následující možnosti umožňují zadat upřesňující možnosti výstupu.
 
 **Informace o ladění**
 
-Určuje typ ladicích informací generovaných kompilátorem. Informace o tom, jak konfigurovat výkon ladění aplikace najdete v tématu [usnadnění bitové kopie k ladění](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Toto nastavení obsahuje následující možnosti:
+Určuje typ ladicích informací generovaných kompilátorem. Informace o tom, jak nakonfigurovat výkon ladění aplikace, najdete v tématu [Vytvoření obrázku pro snadnější ladění](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Toto nastavení má následující možnosti:
 
-- **None**
+- **nTato**
 
-   Určuje, že se nevygeneruje žádná informace o ladění.
+   Určuje, že se nevygenerují žádné informace o ladění.
 
-- **Úplné**
+- **kompletní**
 
-   Umožňuje připojení ladicího programu ke spuštěnému programu.
+   Umožňuje připojit k běžícímu programu ladicí program.
 
 - **pdbonly**
 
-   Umožňuje zdrojového kódu, ladění, když program se spustí v ladicím programu, ale zobrazí jenom assembler když spuštěný program je připojen k ladicímu programu.
+   Umožňuje ladění zdrojového kódu, když je program spuštěn v ladicím programu, ale zobrazí pouze Assembler, pokud je spuštěný program připojen k ladicímu programu.
 
-- **portable**
+- **přenosné**
 
-   Vytvoří. Soubor PDB, soubor se symboly bez specifický pro platformu, přenosná, která poskytuje další nástroje, zejména ladicí programy, informace o tom, co je v hlavní spustitelný soubor a jak byl vytvořen. Zobrazit [souboru PDB typu Portable](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) Další informace.
+   Vytvoří. Soubor PDB, přenosový soubor, který není specifický pro platformu, který poskytuje další nástroje, zejména ladicí programy, informace o tom, co je v hlavním spustitelném souboru a jak bylo vytvořeno. Další informace najdete v části [přenosná PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) .
 
-- **Vložený**
+- **vložené**
 
-   Vloží informace o symbolech přenosný do sestavení. Žádné externí. Soubor PDB je vytvořen.
+   Vloží do sestavení přenositelné informace o symbolech. Žádná externí. Vytvoří se soubor PDB.
 
-Další informace najdete v tématu [/Debug (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).
+Další informace naleznete v tématu [/Debug (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).
 
 **Zarovnání souboru**
 
-Určuje velikost oddíly výstupního souboru. Platné hodnoty jsou **512**, **1024**, **2048**, **4096**, a **8192**. Tyto hodnoty se měří v bajtech. Každý oddíl se zarovnáno na hranici, která je násobkem tuto hodnotu by to ovlivnilo velikost výstupního souboru. Další informace najdete v tématu [/filealign (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+Určuje velikost oddílů ve výstupním souboru. Platné hodnoty jsou **512**, **1024**, **2048**, **4096**a **8192**. Tyto hodnoty se měří v bajtech. Každý oddíl bude zarovnán na hranici, která je násobkem této hodnoty, což ovlivní velikost výstupního souboru. Další informace naleznete v tématu [/filealign (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
 
 **Základní adresa knihovny**
 
-Určuje upřednostňovaná základní adresa, ve kterém se má načíst knihovnu DLL. Výchozí základní adresa knihovny DLL je nastavit modul common language runtime rozhraní .NET Framework. Další informace najdete v tématu [/BaseAddress (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
+Určuje upřednostňovanou základní adresu, na které se má načíst knihovna DLL. Výchozí základní adresa pro knihovnu DLL je nastavena .NET Framework modul CLR (Common Language Runtime). Další informace naleznete v tématu [/BaseAddress (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
 ## <a name="see-also"></a>Viz také
 

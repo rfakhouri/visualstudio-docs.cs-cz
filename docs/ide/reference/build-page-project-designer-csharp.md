@@ -1,6 +1,7 @@
 ---
 title: Stránka Sestavení, návrhář projektu (C#)
 ms.date: 06/20/2017
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
@@ -13,91 +14,135 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 146d98701f144aacf0ff073c3099b2239ebd1872
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791666"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461458"
 ---
 # <a name="build-page-project-designer-c"></a>Stránka Sestavení, návrhář projektu (C#)
-Použití **sestavení** stránku **Návrháře projektu** k určení vlastností konfigurace sestavení projektu. Tato stránka se vztahuje na [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] pouze pro projekty.
 
-Pro přístup k **sestavení** zvolte uzel projektu (ne **řešení** uzlu) v **Průzkumníka řešení**. Klikněte na tlačítko **zobrazení**, **stránky vlastností** v nabídce. Jakmile se zobrazí Návrhář projektu, zvolte **sestavení** kartu.
+Pomocí stránky **sestavení** **Návrháře projektu** Určete vlastnosti konfigurace sestavení projektu. Tato stránka se vztahuje [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] pouze na projekty.
+
+Pro přístup na stránku **sestavení** vyberte uzel projektu (nikoli uzel **řešení** ) v **Průzkumník řešení**. Pak v nabídce zvolte možnost **zobrazení**, **stránky vlastností** . Když se zobrazí Návrhář projektu, klikněte na kartu **sestavení** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="configuration-and-platform"></a>Konfigurace a platforma
-Tyto možnosti umožňují vybrat konfigurace a platformy k zobrazení a úpravě.
+
+Následující možnosti umožňují vybrat konfiguraci a platformu pro zobrazení nebo úpravu.
 
 > [!NOTE]
-> Pomocí zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. Proto nejsou tyto možnosti zobrazeny. Další informace najdete v tématu [jak: Nastavení ladění a vydání konfigurace](../../debugger/how-to-set-debug-and-release-configurations.md).
+> V případě zjednodušených konfigurací sestavení Určuje projektový systém, zda má být vytvořena verze ladění nebo vydání. Proto tyto možnosti nejsou zobrazeny. Další informace najdete v tématu [jak: Nastavte konfiguraci](../../debugger/how-to-set-debug-and-release-configurations.md)ladění a vydání.
 
-**Konfigurace** určuje které nastavení konfigurace má být zobrazeno nebo upraveno. Toto nastavení může být **aktivní (ladění)** (Toto je výchozí), **ladění**, **vydání**, nebo **všechny konfigurace**.
+**Konfigurace**
 
-**Platforma** určuje které nastavení platformy má být zobrazeno nebo upraveno. Ve výchozím nastavení **aktivní (jakýkoli procesor)** . Můžete změnit aktivní platformu pomocí **nástroje Configuration Manager**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).
+Určuje, která nastavení konfigurace se mají zobrazit nebo upravit. Nastavení může být **aktivní (ladění)** (Toto je výchozí nastavení), **ladění**, **vydání**nebo **všechny konfigurace**.
+
+**Platformy**
+
+Určuje, která nastavení platformy se mají zobrazit nebo upravit. Výchozí nastavení je **aktivní (libovolný procesor)** . Aktivní platformu můžete změnit pomocí **Configuration Manager**. Další informace najdete v tématu [jak: Vytvářejte a upravujte konfigurace](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Obecné
-Tyto možnosti umožňují konfigurovat několik nastavení kompilátoru jazyka C#.
 
-**Symboly podmíněné kompilace** určuje symboly, s nimiž se má provést Podmíněná kompilace. Symboly oddělte středníkem (";"). Další informace najdete v tématu [/ define (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).
+Následující možnosti umožňují nakonfigurovat několik C# nastavení kompilátoru.
 
-**Definovat konstantu DEBUG** definuje DEBUG jako symbol ve zdrojovém kódu všechny soubory ve vaší aplikaci. Tento výběr je ekvivalentní k použití `/define:DEBUG` možnost příkazového řádku.
+**Symboly podmíněné kompilace**
 
-**Definovat konstantu TRACE** definuje TRACE jako symbol ve zdrojovém kódu všechny soubory ve vaší aplikaci. Tento výběr je ekvivalentní k použití `/define:TRACE` možnost příkazového řádku.
+Určuje symboly, na kterých se má provést Podmíněná kompilace. Symboly oddělujte středníkem (";"). Další informace naleznete v tématu [/define (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).
 
-**Cílová platforma** Určuje procesor, který bude cílen výstupním souborem. Zvolte **x86** jakýkoli procesor kompatibilní s verzí Intel 32-bit, zvolte **x64** jakýkoli procesor kompatibilní s verzí Intel 64-bit, zvolte **ARM** pro procesory ARM, nebo zvolte  **Jakýkoli procesor** k určení, že je přijatelný jakýkoli procesor. **Jakýkoli procesor** je výchozí hodnota pro projekty, protože umožňuje aplikaci, aby běžela v nejširší škále hardwaru.
+**Definovat konstantu DEBUG**
 
-Další informace najdete v tématu [/Platform (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
+Definuje ladění jako symbol ve všech souborech zdrojového kódu ve vaší aplikaci. Výběr této možnosti je stejný jako při `/define:DEBUG` použití možnosti příkazového řádku.
 
-**Preferovat 32bitovou verzi** Pokud **preferovat 32bitovou verzi** zaškrtávací políčko zaškrtnuto, aplikace běží jako 32bitová aplikace ve 32bitové a 64bitové verze Windows. Pokud políčko není zaškrtnuto, aplikace běží jako 32bitová aplikace ve 32bitové verze Windows a jako na 64bitovými verzemi Windows 64-bit aplikace.
+**Definovat konstantu TRACE**
 
-Pokud spustíte aplikaci jako 64bitovou aplikaci, zdvojnásobí se velikost ukazatele, a může dojít k problémům kompatibilita s ostatními knihovnami, které jsou výhradně 32bitové. Je vhodné spouštět 64bitovou aplikaci pouze v případě, že potřebuje více než 4 GB paměti nebo 64bitové instrukce poskytují významné výkonnostní zlepšení.
+Definuje TRACE jako symbol ve všech souborech zdrojového kódu ve vaší aplikaci. Výběr této možnosti je stejný jako při `/define:TRACE` použití možnosti příkazového řádku.
 
-Toto zaškrtávací políčko je dostupné jenom v případě, že jsou splněny všechny následující podmínky:
+**Cíl platformy**
 
-- Na **sestavit stránku**, **Cílová platforma** seznamu je nastavena na **jakýkoli procesor**.
+Určuje procesor, na který má výstupní soubor cílit. Zvolte **x86** pro libovolný 32 procesor kompatibilní s procesorem Intel, zvolte **x64** pro libovolný 64 procesor kompatibilního s procesorem Intel, zvolte **ARM** pro PROCESORy ARM nebo zvolte **Libovolný procesor** , abyste určili, že je přípustný libovolný procesor. **Libovolný procesor** je výchozí hodnota pro projekty, protože umožňuje aplikaci běžet na nejširší škále hardwaru.
 
-- Na **stránky aplikace**, **typ výstupu** seznam určuje, že projekt je aplikace.
+Další informace naleznete v tématu [/Platform (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
 
-- Na **stránky aplikace**, **Cílová architektura** seznamu určuje rozhraní .NET Framework 4.5.
+**Preferovat 32 – bit**
 
-**Povolit nezabezpečený kód** umožňuje kód, který používá [nebezpečné](/dotnet/csharp/language-reference/keywords/unsafe) ke kompilaci klíčové slovo. Další informace najdete v tématu [/ unsafe (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
+Pokud je zaškrtnuto políčko **Prefer32-bit** , aplikace běží jako 32ová aplikace v 32 i v 64 bitových verzích systému Windows. Pokud políčko není zaškrtnuto, aplikace bude spuštěna jako 32ská aplikace v 32 verzích systému Windows a jako aplikace 64 64 v systému Windows v 16bitovém verzích.
 
-**Optimalizovat kód** povolte nebo zakažte optimalizace prováděné kompilátorem, aby výstupní soubor menší, rychlejší a efektivnější. Další informace najdete v tématu [/ optimize (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).
+Pokud aplikaci spouštíte jako 64ovou aplikaci, je velikost ukazatele Dvojitá a problémy s kompatibilitou můžou nastat i u jiných knihoven, které jsou výhradně 32 bitové. Je vhodné spustit 64ovou aplikaci pouze v případě, že potřebuje více než 4 GB paměti nebo 64 instrukcí, což přináší výrazné zlepšení výkonu.
+
+Toto zaškrtávací políčko je k dispozici pouze v případě, že jsou splněné všechny následující podmínky:
+
+- Na **stránce sestavení**je seznam **cílů platformy** nastavený na **Libovolný procesor**.
+
+- Na **stránce aplikace**se v seznamu **Typ výstupu** určuje, že projekt je aplikace.
+
+- Na **stránce aplikace**se v seznamu **cílový rámec** určuje .NET Framework 4,5.
+
+**Povolení nezabezpečeného kódu**
+
+Umožňuje kompilaci kódu, který [](/dotnet/csharp/language-reference/keywords/unsafe) používá klíčové slovo unsafe. Další informace naleznete v tématu [/unsafe (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
+
+**Optimalizovat kód**
+
+Povolte nebo zakažte optimalizace prováděné kompilátorem, abyste mohli zmenšit, rychleji a zefektivnit výstupní soubor. Další informace naleznete v tématu [/optimize (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).
 
 ## <a name="errors-and-warnings"></a>Chyby a upozornění
-Následující nastavení se používají ke konfiguraci chyby a upozornění možnosti procesu sestavení.
 
-**Úroveň upozornění** upřesňuje úroveň zobrazení upozornění kompilátoru. Další informace najdete v tématu [/ warn (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option).
+Následující nastavení jsou použita ke konfiguraci chyb a možností upozornění pro proces sestavení.
 
-**Potlačení upozornění** blokuje možnost kompilátoru generovat jedno nebo více upozornění. Více čísel upozornění oddělte čárkou nebo středníkem. Další informace najdete v tématu [/nowarn (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option).
+**Úroveň upozornění**
+
+Určuje úroveň, která se má zobrazit pro upozornění kompilátoru. Další informace naleznete v tématu [/warn (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option).
+
+**Potlačit upozornění**
+
+Blokuje schopnost kompilátoru generovat jedno nebo více upozornění. Více čísel upozornění oddělte čárkou nebo středníkem. Další informace naleznete v tématu [/nowarn (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option).
 
 ## <a name="treat-warnings-as-errors"></a>Zpracovávat upozornění jako chyby
-Tato nastavení slouží k určení, která upozornění jsou považována za chyby. Vyberte jednu z následujících možností pro označení podmínek pro vrácení chyby, když sestavení narazí na upozornění. Další informace najdete v tématu [/warnaserror (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**Žádný** nezpracovává žádná upozornění jako chyby.
+Následující nastavení slouží k určení, která upozornění jsou považována za chyby. Vyberte jednu z následujících možností, která určuje, za jakých podmínek se má v případě, že se při sestavení vyskytne upozornění, vrátit chybu. Další informace naleznete v tématu [/warnaserror (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**Specifická upozornění** zachází s určenými varováními jako s chybami. Více čísel upozornění oddělte čárkou nebo středníkem.
+**Žádné**
 
-**Všechny** zpracuje všechna upozornění jako chyby.
+Nezpracovává žádná upozornění jako chyby.
+
+**Konkrétní upozornění**
+
+Zpracovává zadaná upozornění jako chyby. Více čísel upozornění oddělte čárkou nebo středníkem.
+
+**Vše**
+
+Zpracovává všechna upozornění jako chyby.
 
 ## <a name="output"></a>Výstup
+
 Následující nastavení se používají ke konfiguraci možností výstupu pro proces sestavení.
 
-**Výstupní cesta** Určuje umístění výstupních souborů pro tuto konfiguraci projektu. Zadejte cestu k výstupu sestavení v tomto poli, nebo zvolte **Procházet** tlačítko a zadejte cestu. Všimněte si, že cesta je relativní; Pokud zadáte absolutní cestu, bude uložena jako relativní. Výchozí cesta je bin\Debug nebo bin\Release\\.
+**Výstupní cesta**
 
-Pomocí zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. **Sestavení** příkaz **ladění** nabídky (F5) vloží sestavení do místa ladění bez ohledu na to **výstupní cesta** zadáte. Ale **sestavení** příkaz **sestavení** nabídky se vloží do umístění, které zadáte. Další informace najdete v tématu [Principy konfigurací sestavení](../../ide/understanding-build-configurations.md).
+Určuje umístění výstupních souborů pro tuto konfiguraci projektu. Do tohoto pole zadejte cestu k výstupu sestavení nebo klikněte na tlačítko **Procházet** a zadejte cestu. Cesta je relativní; Pokud zadáte absolutní cestu, bude uložena jako relativní. Výchozí cesta je bin\Debug nebo bin\Release\\.
 
-**Soubor dokumentace XML** Určuje název souboru, do které dokumentace se zpracuje komentáře. Další informace najdete v tématu [/DOC (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option).
+V případě zjednodušených konfigurací sestavení Určuje projektový systém, zda má být vytvořena verze ladění nebo vydání. Příkaz **Build** z nabídky **ladění** (F5) vloží sestavení do umístění ladění bez ohledu na **výstupní cestu** , kterou zadáte. Příkaz **Build** v nabídce **sestavení** však vloží do umístění, které zadáte. Další informace najdete v tématu [Principy konfigurací sestavení](../../ide/understanding-build-configurations.md).
 
-**Zaregistrovat pro interoperabilitu COM** označuje, že bude vaše spravovaná aplikace vystavovat objekt modelu COM (Obálka volatelná aplikacemi COM) umožňující objektu modelu COM interakci s vaší spravovanou aplikací. **Typ výstupu** vlastnost [stránky aplikace](../../ide/reference/application-page-project-designer-visual-basic.md) z **Návrháře projektu** pro tuto aplikaci musí být nastaven na hodnotu **knihovny tříd** v pořadí **zaregistrovat pro interoperabilitu COM** vlastnost k dispozici. Příklad třídy, které můžete zahrnout do vaší [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] aplikace a použít jako objekt modelu COM naleznete v tématu [Ukázka třídy COM](/dotnet/csharp/programming-guide/interop/example-com-class).
+**Soubor dokumentace XML**
 
-**Generovat sestavení serializace** Určuje, zda kompilátor použije nástroj generátoru Serializéru XML (Sgen.exe) k tvorbě XML serializace sestavení. Sestavení serializace mohou zvýšit výkon při spuštění <xref:System.Xml.Serialization.XmlSerializer> Pokud jste již použili k serializaci typů ve vašem kódu. Ve výchozím nastavení je tato možnost nastavená na **automaticky**, která určuje, že se serializace sestavení vytvoří pouze v případě, že jste už použili <xref:System.Xml.Serialization.XmlSerializer> ke kódování typů ve vašem kódu pro XML. **Vypnout** Určuje, že sestavení serializace nebudou nikdy generována, bez ohledu na to, jestli váš kód používá <xref:System.Xml.Serialization.XmlSerializer>. **Na** Určuje, že sestavení serializace budou vždy generována. Jsou pojmenované sestavení serializace `TypeName`. XmlSerializers.dll. Další informace najdete v tématu [nástroj XML Serializer Generator (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
+Určuje název souboru, do kterého se budou zpracovávat komentáře k dokumentaci. Další informace naleznete v tématu [/doc (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option).
 
-**Upřesnit** zobrazíte klepnutím [pokročilé vytváření dialogové okno nastavení (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) dialogové okno.
+**Registrovat pro zprostředkovatele komunikace s objekty COM**
 
-## <a name="see-also"></a>Viz také
+Označuje, že vaše spravovaná aplikace bude vystavovat objekt COM (obálka s možnou sadou COM), která umožňuje objektu COM pracovat s vaší spravovanou aplikací. Vlastnost **Typ výstupu** na [stránce aplikace](../../ide/reference/application-page-project-designer-visual-basic.md) **Návrháře projektu** pro tuto aplikaci je nutné nastavit na **knihovnu tříd** , aby byla k dispozici vlastnost **Register pro zprostředkovatele komunikace s objekty COM** . Pro ukázkovou třídu, kterou můžete zahrnout do [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] aplikace a zveřejnit jako objekt modelu COM, viz [příklad třídy com](/dotnet/csharp/programming-guide/interop/example-com-class).
+
+**Generovat sestavení serializace**
+
+Určuje, zda kompilátor použije XML Serializer Generator Tool (Sgen. exe) k vytvoření sestavení serializace XML. Sestavení serializace mohou zlepšit výkon <xref:System.Xml.Serialization.XmlSerializer> při spuštění v případě, že jste tuto třídu použili k serializaci typů ve vašem kódu. Ve výchozím nastavení je tato možnost nastavena na hodnotu **auto**, která určuje, že sestavení serializace budou generována pouze <xref:System.Xml.Serialization.XmlSerializer> v případě, že jste použili ke kódování typů v kódu do XML. **Off** určuje, že sestavení serializace nikdy nebyla vygenerována bez ohledu na to <xref:System.Xml.Serialization.XmlSerializer>, zda váš kód používá. **V** určuje, zda mají být sestavení serializace vždy vygenerována. Sestavení serializace jsou `TypeName`pojmenována. XmlSerializers. dll. Další informace najdete v tématu [XML Serializer Generator Tool (Sgen. exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
+
+**Pokročilé**
+
+Kliknutím zobrazíte dialogové okno [Upřesnit nastavení sestaveníC#()](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) .
+
+## <a name="see-also"></a>Viz také:
 
 - [Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)
 - [Možnosti kompilátoru jazyka C#](/dotnet/csharp/language-reference/compiler-options/index)
