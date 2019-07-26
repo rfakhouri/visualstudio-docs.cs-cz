@@ -7,7 +7,7 @@
     - name: O editoru kódu
       href: tutorial-editor.md
     - name: O projektech a řešeních
-      href: tutorial-projects-solutions.md
+      href: ../tutorial-projects-solutions.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Další funkce sady Visual Studio
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
 - name: Vytvoření aplikace

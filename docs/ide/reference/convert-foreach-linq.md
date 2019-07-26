@@ -1,5 +1,6 @@
 ---
 title: Převést smyčku foreach na LINQ
+descritpion: Convert any foreach loop that uses an IEnumerable to a LINQ query or a LINQ call form (also known as a LINQ method).
 ms.date: 02/20/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7893ed676372cce94d883353139de91ef639aeb0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: baa1f32bb981e6d244555baef2a00d03933cdd6c
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531850"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483722"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>Převést smyčku foreach na LINQ
 
@@ -22,26 +23,26 @@ Tento refaktoring platí pro:
 
 - C#
 
-**Co:** Umožňuje snadno převést vaše *foreach* smyčku, která se používá hodnota IEnumerable dotazu LINQ nebo formuláře volání LINQ (označované také jako LINQ metoda).
+**Co:** Umožňuje snadno převést smyčku *foreach* , která používá rozhraní IEnumerable pro dotaz LINQ nebo formulář volání LINQ (označované také jako metoda LINQ).
 
-**Kdy:** Máte smyčku foreach, která používá použití rozhraní IEnumerable, a chcete smyčky číst jako dotaz LINQ.
+**Kdy:** Máte smyčku foreach, která používá rozhraní IEnumerable a chcete, aby se tato smyčka četla jako dotaz LINQ.
 
-**Proč:** Chcete použít syntaxi LINQ spíše než smyčku foreach. [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) zadá dotaz do typů prvotřídní jazykové konstrukce v C#. LINQ můžete snížit množství kódu v souboru, aby byl kód lépe čitelný a povolit různých zdrojů dat. podobné vzorce výrazu dotazu.
+**Proč:** Dáváte přednost použití syntaxe LINQ spíše než smyčky foreach. [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) provede dotaz do konstrukce jazyka první třídy v C#. LINQ může snížit množství kódu v souboru, usnadnit čtení kódu a umožnit různým zdrojům dat, aby měly podobné vzory výrazů dotazů.
 
 > [!NOTE]
-> Syntaxi LINQ je obvykle méně efektivní než smyčku foreach. Je dobré znát žádné úkor výkonu, které může dojít při použití LINQ pro lepší čitelnost kódu.
+> Syntaxe LINQ je obvykle méně efektivní než smyčka foreach. Je dobré si uvědomit o všech kompromisech s výkonem, které mohou nastat při použití jazyka LINQ ke zlepšení čitelnosti kódu.
 
 ## <a name="convert-a-foreach-loop-to-linq-refactoring"></a>Převést smyčku foreach na refaktoring LINQ
 
-1. Umístěte ukazatel myši v `foreach` – klíčové slovo.
+1. Umístěte kurzor do `foreach` klíčového slova.
 
-    ![Ukázka IEnumerable foreach](media/convert-foreach-to-LINQ.png)
+    ![Foreach s použitím ukázky IEnumerable](media/convert-foreach-to-LINQ.png)
 
-2. Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
+2. Stisknutím klávesy **Ctrl**+ **.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
 
-   ![Převést na nabídku ukázky LINQ](media/convert-foreach-to-LINQ-codefix.png)
+   ![Ukázka převodu na nabídku LINQ](media/convert-foreach-to-LINQ-codefix.png)
 
-3. Vyberte **převést na LINQ** nebo **převést na Linq (volání formulář)**.
+3. Vyberte možnost **převést na LINQ** nebo **převést na LINQ (formulář volání)** .
 
    ![Ukázka výsledku dotazu LINQ](media/convert-foreach-to-LINQ-result.png)
 
@@ -78,5 +79,5 @@ public class Class1
 ## <a name="see-also"></a>Viz také:
 
 - [Refactoring](../refactoring-in-visual-studio.md)
-- [Okno předchozích změn](../../ide/preview-changes.md)
+- [Okno Náhled změn](../../ide/preview-changes.md)
 - [Tipy pro vývojáře .NET](../csharp-developer-productivity.md)

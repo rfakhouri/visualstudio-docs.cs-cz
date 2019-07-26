@@ -18,7 +18,6 @@
 #### [Přihlášení pracovním/školním účtem](sign-in-work.md)
 #### [Přihlášení pomocí GitHubu](sign-in-github.md)
 #### [Alternativní identity](vs-alternate-identity.md)
-#### [Přihlašování pomocí aliasů](aliasing.md)
 #### [Problémy s přihlášením](sign-in-issues.md)
 #### [Anonymizace údajů o předplatitelích](anonymization.md)
 ### [Přehled portálu předplatných](using-the-subscriber-portal.md)
@@ -60,6 +59,9 @@
 #### [Internetové ukázky](internet-demos.md)
 ## Správci
 ### [Odpovědnosti správce](admin-responsibilities.md)
+#### [Předprodukční inventář](admin-inventory.md)
+#### [Správa velkých týmů a externích dodavatelů](manage-teams.md)
+#### [Sledování přiřazení uživatelů a zpracování objednávek](assignments-orders.md)
 ### [Multilicence](volume-license-admins.md)
 ### Onboarding v organizaci
 #### [Onboarding po migraci](post-migration-onboarding.md)
@@ -78,6 +80,7 @@
 #### [Nadměrná přidělení](handle-overclaimed-license.md)
 #### [Maximální využití](maximum-usage.md)
 #### [Předplatná po konci platnosti](handle-expired-license.md)
+#### [Aliasy Using pro předplatitele](aliasing.md)
 #### [Předplatitelé s přihlášením pomocí osobního e-mailu](personal-email-sign-ins.md)
 ### [Správa sady Visual Studio s GitHub Enterprise](assign-github.md)
 ## Prostředky
