@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4a458a50be6161e320b3ffbbe702e21f9f502c77
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 2e635f2cbbeda67c4fbed760eb7e57dfcf140d15
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559671"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604877"
 ---
 # <a name="fxcop-rule-port-status"></a>Stav portu pravidla FxCop
 
-Pokud jste dříve používali statickou analýzu kódu v předchozí verzi sady Visual Studio, vám může zajímat, které tato pravidla jsou k dispozici v aktuální implementaci jako [analyzátory FxCop](install-fxcop-analyzers.md). Tato stránka obsahuje seznam pravidel, která se přenáší i těch, které nebyly byla přenáší a jestli existují plány, které je.
+Pokud jste dříve používali analýzu statického kódu v předchozí verzi sady Visual Studio, můžete si všimnout, že tato pravidla jsou k dispozici v aktuální implementaci jako [analyzátory FxCop](install-fxcop-analyzers.md). Tato stránka obsahuje seznam nakonfigurovaných pravidel a také těch, které nebyly přepsány a zda existují plány, které je mají přenést.
 
 ## <a name="ported-rules"></a>Přenesená pravidla
 
-[Automaticky generované stránky dokumentace](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) v analyzátory roslyn úložiště má nejaktuálnější seznam pravidel, která přenesené analyzátory FxCop. Tuto stránku obsahuje také další informace, jako je například určuje, zda je pravidlo povolené ve výchozím nastavení a pokud má přiřazený *opravu kódu*. ([Opravy kódu](../ide/quick-actions.md) jsou opravy jedním kliknutím v nabídce ikonu žárovky v sadě Visual Studio k dispozici.)
+[Stránka pro automaticky generovanou dokumentaci](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) v úložišti Roslyn-Analyzer obsahuje nejaktuálnější seznam pravidel, která byla předaná do analyzátorů FxCop. Tato stránka obsahuje také další informace, například zda je pravidlo povoleno ve výchozím nastavení a zda má přidruženou *opravu kódu*. ([Opravy kódu](../ide/quick-actions.md) jsou dostupné opravy jedním kliknutím v nabídce ikony žárovky v aplikaci Visual Studio.)
 
-K datu na této stránce, seznam FxCop pravidla, která přenesené [analyzátory FxCop](install-fxcop-analyzers.md) zahrnuje:
+Od data na této stránce seznam pravidel FxCop, která byla předaná do [analyzátorů FxCop](install-fxcop-analyzers.md) , zahrnují:
 
 ID pravidla | Název
 --------|---------
@@ -35,8 +35,8 @@ ID pravidla | Název
 [CA1008](ca1008-enums-should-have-zero-value.md) | Výčty by měly mít nulovou hodnotu
 [CA1010](ca1010-collections-should-implement-generic-interface.md) | Kolekce musí implementovat obecné rozhraní
 [CA1012](ca1012-abstract-types-should-not-have-constructors.md) | Abstraktní typy by neměly mít konstruktory
-[CA1014](ca1014-mark-assemblies-with-clscompliantattribute.md) | Označte sestavení pomocí CLSCompliant.
-[CA1016](ca1016-mark-assemblies-with-assemblyversionattribute.md) | Označte sestavení pomocí verze sestavení
+[CA1014](ca1014-mark-assemblies-with-clscompliantattribute.md) | Označte sestavení pomocí CLSCompliant
+[CA1016](ca1016-mark-assemblies-with-assemblyversionattribute.md) | Označit sestavení verzí sestavení
 [CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | Označte sestavení pomocí ComVisible
 [CA1018](ca1018-mark-attributes-with-attributeusageattribute.md) | Označte atributy pomocí AttributeUsageAttribute
 [CA1019](ca1019-define-accessors-for-attribute-arguments.md) | Definujte přístupové objekty pro argumenty atributů
@@ -51,40 +51,40 @@ ID pravidla | Název
 [CA1036](ca1036-override-methods-on-comparable-types.md) | Přepište metody u srovnatelných typů
 [CA1040](ca1040-avoid-empty-interfaces.md) | Vyhněte se prázdným rozhraním
 [CA1041](ca1041-provide-obsoleteattribute-message.md) | Poskytněte zprávu ObsoleteAttribute
-[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md) | Použijte celočíselný nebo řetězcový Argument pro indexery
+[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md) | Použít celočíselný nebo řetězcový argument pro indexery
 [CA1044](ca1044-properties-should-not-be-write-only.md) | Vlastnosti by neměly být pouze pro zápis
 [CA1050](ca1050-declare-types-in-namespaces.md) | Deklarujte typy v oborech názvů
 [CA1051](ca1051-do-not-declare-visible-instance-fields.md) | Nedeklarujte viditelná pole instance
-[CA1052](ca1052-static-holder-types-should-be-sealed.md) | Statický vlastník typů by měla být statická nebo NotInheritable (viz poznámka za touto tabulkou)
-[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | Statický vlastník typů by neměly mít konstruktory (viz poznámka za touto tabulkou)
+[CA1052](ca1052-static-holder-types-should-be-sealed.md) | Statické typy držitelů by měly být statické nebo NotInheritable.
+[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | Typy statických držitelů by neměly mít konstruktory (CA1053 je součást [CA1052](ca1052-static-holder-types-should-be-sealed.md) pro analyzátory FxCop).
 [CA1054](ca1054-uri-parameters-should-not-be-strings.md) | Parametry identifikátoru URI by neměly být řetězce
-[CA1055](ca1055-uri-return-values-should-not-be-strings.md) | Identifikátor URI návratové hodnoty by neměly být řetězce
+[CA1055](ca1055-uri-return-values-should-not-be-strings.md) | Návratové hodnoty identifikátoru URI by neměly být řetězce
 [CA1056](ca1056-uri-properties-should-not-be-strings.md) | Vlastnosti identifikátoru URI by neměly být řetězce
 [CA1058](ca1058-types-should-not-extend-certain-base-types.md) | Typy by neměly rozšiřovat určité základní typy
-[CA1060](ca1060-move-p-invokes-to-nativemethods-class.md) | Přesunout pinvokes do nativní metody třídy
+[CA1060](ca1060-move-p-invokes-to-nativemethods-class.md) | Přesunout PInvoke do nativní třídy metod
 [CA1061](ca1061-do-not-hide-base-class-methods.md) | Neskrývejte metody základní třídy
 [CA1062](ca1062-validate-arguments-of-public-methods.md) | Ověřte argumenty veřejných metod
-[CA1063](ca1063-implement-idisposable-correctly.md) | Implementuje správně IDisposable
+[CA1063](ca1063-implement-idisposable-correctly.md) | Implementovat správně IDisposable
 [CA1064](ca1064-exceptions-should-be-public.md) | Výjimky by měly být veřejné
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Nevyvolávejte výjimky v neočekávaných umístěních
-CA1066 | Typ {0} by měly implementovat IEquatable\<T > protože přepsání Equals
-CA1067 | Při implementaci IEquatable Object.Equals(objekt)\<T >
-CA1068 | CancellationToken parametry musí být poslední
-CA1200 | Vyhněte se použití cref značky s předponou
+CA1066 | Typ {0} by měl implementovat\<IEquatable T >, protože přepisuje rovnost
+CA1067 | Přepsat Object. Equals (objekt) při implementaci IEquatable\<T >
+CA1068 | Parametry CancellationToken se musí nacházet jako poslední.
+CA1200 | Nepoužívejte značky cref s předponou.
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Nepředávejte literály jako lokalizované parametry
 [CA1304](ca1304-specify-cultureinfo.md) | Určete CultureInfo
 [CA1305](ca1305-specify-iformatprovider.md) | Určete IFormatProvider
 [CA1307](ca1307-specify-stringcomparison.md) | Určete StringComparison
 [CA1308](ca1308-normalize-strings-to-uppercase.md) | Normalizujte řetězce na velká písmena
-[CA1309](ca1309-use-ordinal-stringcomparison.md) | Použít porovnání podle pořadového čísla řetězců
+[CA1309](ca1309-use-ordinal-stringcomparison.md) | Použít ordinální porovnávání řetězců
 [CA1401](ca1401-p-invokes-should-not-be-visible.md) | Volání nespravovaných kódů by neměla být viditelná
 [CA1501](ca1501-avoid-excessive-inheritance.md) | Vyhněte se nadměrné dědičnosti
 [CA1502](ca1502-avoid-excessive-complexity.md) | Vyhněte se nadměrné složitosti
 [CA1505](ca1505-avoid-unmaintainable-code.md) | Vyhněte se neudržovatelnému kódu
 [CA1506](ca1506-avoid-excessive-class-coupling.md) | Vyhněte se nadměrnému párování tříd
-[CA1507](ca1507.md) | Pomocí nameof express názvy symbolů
-CA1508 | Vyhněte se dead podmíněného kódu
-CA1509 | Neplatný záznam v souboru specifikace pravidlo metriky kódu
+[CA1507](ca1507.md) | Použití nameof k vyjádření názvů symbolů
+CA1508 | Vyhněte se neaktivnímu podmíněnému kódu
+CA1509 | Neplatný záznam v souboru specifikace pravidla metrik kódu
 [CA1707](ca1707-identifiers-should-not-contain-underscores.md) | Identifikátory by neměly obsahovat podtržítka
 [CA1708](ca1708-identifiers-should-differ-by-more-than-case.md) | Identifikátory by se měly lišit více než použitím malých a velkých písmen
 [CA1710](ca1710-identifiers-should-have-correct-suffix.md) | Identifikátory by měly mít správnou příponu
@@ -94,7 +94,7 @@ CA1509 | Neplatný záznam v souboru specifikace pravidlo metriky kódu
 [CA1715](ca1715-identifiers-should-have-correct-prefix.md) | Identifikátory by měly mít správnou předponu
 [CA1716](ca1716-identifiers-should-not-match-keywords.md) | Identifikátory by se neměly shodovat s klíčovými slovy
 [CA1717](ca1717-only-flagsattribute-enums-should-have-plural-names.md) | Pouze výčty FlagsAttribute by měly mít názvy v množném čísle
-[CA1720](ca1720-identifiers-should-not-contain-type-names.md) | Identifikátor obsahuje název typu
+[CA1720](ca1720-identifiers-should-not-contain-type-names.md) | Identifikátor obsahuje název typu.
 [CA1721](ca1721-property-names-should-not-match-get-methods.md) | Názvy vlastností by se neměly shodovat s metodami Get
 [CA1724](ca1724-type-names-should-not-match-namespaces.md) | Názvy typů by neměly odpovídat oborům názvů
 [CA1725](ca1725-parameter-names-should-match-base-declaration.md) | Názvy parametrů by měly odpovídat základní deklaraci
@@ -109,22 +109,22 @@ CA1509 | Neplatný záznam v souboru specifikace pravidlo metriky kódu
 [CA1816](ca1816-call-gc-suppressfinalize-correctly.md) | Metody Dispose by měly volat SuppressFinalize
 [CA1819](ca1819-properties-should-not-return-arrays.md) | Vlastnosti by neměly vracet pole
 [CA1820](ca1820-test-for-empty-strings-using-string-length.md) | Testujte prázdné řetězce pomocí délky řetězce
-[CA1821](ca1821-remove-empty-finalizers.md) | Odstraňte prázdné finalizační metody
+[CA1821](ca1821-remove-empty-finalizers.md) | Odebrat prázdné finalizační metody
 [CA1822](ca1822-mark-members-as-static.md) | Označte členy jako statické
 [CA1823](ca1823-avoid-unused-private-fields.md) | Vyhněte se nepoužitým privátním polím
 [CA1824](ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md) | Označte sestavení pomocí NeutralResourcesLanguageAttribute
-CA1825 | Vyhněte se pole nulové délky přidělení.
-CA1826 | Nepoužívejte vyčíslitelné metody na indexované kolekce. Místo toho použít kolekci přímo
+CA1825 | Vyhněte se přidělení pole s nulovou délkou.
+CA1826 | Nepoužívejte vyčíslitelné metody pro indexované kolekce. Místo toho použijte kolekci přímo
 [CA2000](ca2000-dispose-objects-before-losing-scope.md) | Uvolňujte objekty před ztrátou oboru
 [CA2002](ca2002-do-not-lock-on-objects-with-weak-identity.md) | Nepoužívejte zámky u objektů se slabou identitou
-[CA2007](ca2007-do-not-directly-await-task.md) | Zvažte možnost volání ConfigureAwait očekávané úlohy
+[CA2007](ca2007-do-not-directly-await-task.md) | Zvažte možnost zavolat ConfigureAwait na očekávaný úkol.
 CA2008 | Nevytvářejte úlohy bez předávání TaskScheduler
-CA2009 | Nevolejte ToImmutableCollection na hodnotě ImmutableCollection
-CA2010 | Vždy používat hodnotu vrácenou příkazem metody označené třídu PreserveSigAttribute
+CA2009 | Nevolejte ToImmutableCollection na hodnotu neměnnécollection
+CA2010 | Vždycky spotřebovat hodnotu vrácenou metodami označenými pomocí třídu PreserveSigAttribute nelze
 [CA2100](ca2100-review-sql-queries-for-security-vulnerabilities.md) | Zkontrolujte chyby zabezpečení u dotazů SQL
 [CA2101](ca2101-specify-marshaling-for-p-invoke-string-arguments.md) | Určete zařazování pro argumenty řetězce volání nespravovaného kódu
 [CA2119](ca2119-seal-methods-that-satisfy-private-interfaces.md) | Zapečeťte metody, které vyhovují privátním rozhraním
-[CA2153](ca2153-avoid-handling-corrupted-state-exceptions.md) | Nezachycujte výjimek v poškozeném stavu
+[CA2153](ca2153-avoid-handling-corrupted-state-exceptions.md) | Nezachytit poškozené výjimky stavu
 [CA2200](ca2200-rethrow-to-preserve-stack-details.md) | Znovu vyvolejte pro zachování podrobností zásobníku.
 [CA2201](ca2201-do-not-raise-reserved-exception-types.md) | Nevyvolávejte vyhrazené typy výjimek
 [CA2207](ca2207-initialize-value-type-static-fields-inline.md) | Inicializujte statická pole s typem hodnoty vloženě
@@ -135,20 +135,20 @@ CA2010 | Vždy používat hodnotu vrácenou příkazem metody označené třídu
 [CA2216](ca2216-disposable-types-should-declare-finalizer.md) | Uvolnitelné typy by měly deklarovat finalizační metodu
 [CA2217](ca2217-do-not-mark-enums-with-flagsattribute.md) | Neoznačujte výčty pomocí FlagsAttribute
 [CA2218](ca2218-override-gethashcode-on-overriding-equals.md) | Přepište GetHashCode při přepsání Equals
-[CA2219](ca2219-do-not-raise-exceptions-in-exception-clauses.md) | Nevyvolávejte výjimky v klauzulích finally
-[CA2224](ca2224-override-equals-on-overloading-operator-equals.md) | Přepište Equals při přetížení operátoru rovnosti
+[CA2219](ca2219-do-not-raise-exceptions-in-exception-clauses.md) | Nevyvolávání výjimek v klauzulích finally
+[CA2224](ca2224-override-equals-on-overloading-operator-equals.md) | Přepište Equals při přetížení operátoru Equals
 [CA2225](ca2225-operator-overloads-have-named-alternates.md) | Přetížení operátoru mají pojmenované alternativy
 [CA2226](ca2226-operators-should-have-symmetrical-overloads.md) | Operátory by měly mít symetrická přetížení
 [CA2227](ca2227-collection-properties-should-be-read-only.md) | Vlastnosti kolekce by měly být pouze pro čtení
 [CA2229](ca2229-implement-serialization-constructors.md) | Implementujte serializační konstruktory
-[CA2231](ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | Přetižte operátor rovnosti při přepsání hodnotu zadejte rovná se
-[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) | Předat systému objekty uri namísto řetězců
+[CA2231](ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | Operátor přetížení se rovná překrytí typu hodnoty Equals.
+[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) | Předání objektů identifikátoru URI systému místo řetězců
 [CA2235](ca2235-mark-all-non-serializable-fields.md) | Označte všechna neserializovatelná pole
-[CA2237](ca2237-mark-iserializable-types-with-serializableattribute.md) | Označte typy ISerializable pomocí serializovatelného
+[CA2237](ca2237-mark-iserializable-types-with-serializableattribute.md) | Označte typy ISerializable s serializovatelným
 [CA2241](ca2241-provide-correct-arguments-to-formatting-methods.md) | Zadejte správné argumenty pro metody formátování
 [CA2242](ca2242-test-for-nan-correctly.md) | Testujte správně NaN
 [CA2243](ca2243-attribute-string-literals-should-parse-correctly.md) | Řetězcové literály atributů by se měly správně parsovat
-CA2244 | Není duplicitní inicializace indexovaný prvek
+CA2244 | Neduplikovat inicializace indexovaných elementů
 [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md) | Nepoužívat nezabezpečený deserializátor BinaryFormatter
 [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) | Nevolat BinaryFormatter.Deserialize dříve, než se nastaví BinaryFormatter.Binder
 [CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) | Než zavoláte BinaryFormatter.Deserialize, ujistěte se, že je nastavený BinaryFormatter.Binder
@@ -171,49 +171,46 @@ CA2244 | Není duplicitní inicializace indexovaný prvek
 [CA3010](ca3010-review-code-for-xaml-injection-vulnerabilities.md) | Zkontrolujte ohrožení zabezpečení injektáží XAML v kódu
 [CA3011](ca3011-review-code-for-dll-injection-vulnerabilities.md) | Zkontrolujte ohrožení zabezpečení injektáží knihovny DLL v kódu
 [CA3012](ca3012-review-code-for-regex-injection-vulnerabilities.md) | Zkontrolujte ohrožení zabezpečení injektáží regulárního výrazu v kódu
-CA3061 | Nepřidávejte schématu pomocí adresy URL
-[CA3075](ca3075-insecure-dtd-processing.md) | Nezabezpečené specifikace DTD zpracování ve formátu XML
-[CA3076](ca3076-insecure-xslt-script-execution.md) | Zpracování nezabezpečeného skriptu XSLT.
-[CA3077](ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md) | Nezabezpečené zpracování v návrhu rozhraní API, XmlDocument a XmlTextReader
-[CA3147](ca3147-mark-verb-handlers-with-validateantiforgerytoken.md) | Označit operaci obslužné rutiny s ověřit Antiforgery Token
+CA3061 | Nepřidávat schéma podle adresy URL
+[CA3075](ca3075-insecure-dtd-processing.md) | Nezabezpečené zpracování DTD v XML
+[CA3076](ca3076-insecure-xslt-script-execution.md) | Nezabezpečené zpracování skriptu XSLT
+[CA3077](ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md) | Nezabezpečené zpracování v návrzích rozhraní API, XmlDocument a XmlTextReader
+[CA3147](ca3147-mark-verb-handlers-with-validateantiforgerytoken.md) | Označit obslužné rutiny operací s tokenem ověření antipadělání
 [CA5350](ca5350-do-not-use-weak-cryptographic-algorithms.md) | Nepoužívejte slabé kryptografické algoritmy
-[CA5351](ca5351-do-not-use-broken-cryptographic-algorithms.md) | Nepoužívejte poškozené kryptografické algoritmy
-CA5358 | Nepoužívejte nebezpečné šifer režimy
-CA5359 | Nelze zakázat ověřování certifikátu
-CA5360 | Nevolejte nebezpečných metod v deserializaci
-CA5361 | Nezakazujte SChannel používat silné Crypto
-CA5362 | Neodkazují Self v serializovatelné třídy
-CA5363 | Nezakazujte ověření žádosti
-CA5364 | Nepoužívejte zabezpečení zastaralé protokoly
-CA5365 | Nezakazujte kontroluje hlavičky protokolu HTTP
-CA5366 | Použijte třídu XmlReader pro formát Xml pro čtení datové sady
-CA5367 | Nelze serializovat typy s poli ukazatele
-CA5368 | Nastavit ViewStateUserKey je pro třídy odvozené ze stránky
-CA5369 | Použijte třídu XmlReader pro Deserialize
-CA5370 | Použijte třídu XmlReader pro ověření čtečky
-CA5371 | Použijte třídu XmlReader pro čtení schématu
-CA5372 | Použijte třídu XmlReader pro XPathDocument
-CA5373 | Nepoužívejte zastaralý odvození klíče – funkce
-CA5374 | Nepoužívejte XslTransform
-CA5375 | Nepoužívejte účet sdílený přístupový podpis
-CA5376 | Použít SharedAccessProtocol HttpsOnly
+[CA5351](ca5351-do-not-use-broken-cryptographic-algorithms.md) | Nepoužívejte nefunkční kryptografické algoritmy.
+CA5358 | Nepoužívat nezabezpečené šifrovací režimy
+CA5359 | Nezakázat ověřování certifikátu
+CA5360 | Nevolat nebezpečné metody v deserializaci
+CA5361 | Nepovolujte používání SChannel silného šifrování.
+CA5362 | Neodkazovat na sebe jako na serializovatelných třídách
+CA5363 | Nezakázat ověřování žádostí
+CA5364 | Nepoužívat zastaralé protokoly zabezpečení
+CA5365 | Nezakázat kontrolu hlaviček protokolu HTTP
+CA5366 | Použití XmlReader pro čtení XML pro datovou sadu
+CA5367 | Neserializovat typy s poli ukazatelů
+CA5368 | Nastavit ViewStateUserKey pro třídy odvozené ze stránky
+CA5369 | Použít XmlReader pro deserializaci
+CA5370 | Použití XmlReader k ověření čtecího zařízení
+CA5371 | Použít XmlReader pro čtení schématu
+CA5372 | Použití XmlReader pro XPathDocument
+CA5373 | Nepoužívat zastaralou funkci odvození klíče
+CA5374 | Nepoužívat XslTransform
+CA5375 | Nepoužívat sdílený přístupový podpis účtu
+CA5376 | Použití SharedAccessProtocol HttpsOnly
 CA5377 | Použít zásady přístupu na úrovni kontejneru
 CA5378 | Nezakazujte ServicePointManagerSecurityProtocols
-CA5379 | Nepoužívejte slabé odvození klíče algoritmu – funkce
-CA9999 | Zjistila se Neshoda verzí Analyzer
+CA5379 | Nepoužívejte slabý algoritmus funkce odvození klíče.
+CA9999 | Neshoda verze analyzátoru
 
-> [!NOTE]
-> CA1052 pravidla a CA1053 od původní implementace FxCop jsou sloučeny do jednoho pravidla, CA1052, v analyzátory FxCop.
+## <a name="unported-rules"></a>Nepřenosná pravidla
 
-## <a name="unported-rules"></a>Unported pravidla
+Sada pravidel, která se nerozšířila na [analyzátory FxCop](install-fxcop-analyzers.md) , se skládá z pravidel, která ještě nejsou, ale pořád se [můžou přenést](#rules-that-may-be-ported), a těch, které jsou zastaralé a [nebudou se](#deprecated-rules)přepravovat.
 
-Sada pravidel, která nebyla byla přenést do [analyzátory FxCop](install-fxcop-analyzers.md) se skládá z pravidel, které ještě nebyly, ale stále [může přenést](#rules-that-may-be-ported)a ty, které jsou zastaralé a [nebudou přenesená](#deprecated-rules).
+### <a name="rules-that-may-be-ported"></a>Pravidla, která je možné přenést
 
-### <a name="rules-that-may-be-ported"></a>Pravidla, která může přenést
+Následující pravidla analýzy statických kódu FxCop ještě nebyla implementována jako analyzátory, ale přesto může být. Důvodem může být blokující technický důvod nebo jednoduché pravidlo s nižší prioritou. Další informace o stavu přenosu každého pravidla získáte kliknutím na odkaz ve sloupci **problém sledování** .
 
-Následující pravidla analýzy FxCop statického kódu nebyla ještě implementována jako analyzátory, ale stále může být. Může se jednat z jiného důvodu blokování technické nebo jednoduše se pravidla s nižší prioritou. Další informace o přenos stav každé pravidlo, klikněte na odkaz v **sledování problému** sloupce.
-
-ID pravidla | Sledování problému
+ID pravidla | Problém sledování
 --- | ---
 [CA1002](ca1002-do-not-expose-generic-lists.md) | [https://github.com/dotnet/roslyn-analyzers/issues/369](https://github.com/dotnet/roslyn-analyzers/issues/369)
 [CA1004](ca1004-generic-methods-should-provide-type-parameter.md) | [https://github.com/dotnet/roslyn-analyzers/issues/370](https://github.com/dotnet/roslyn-analyzers/issues/370)
@@ -274,7 +271,7 @@ ID pravidla | Sledování problému
 
 ### <a name="deprecated-rules"></a>Zastaralá pravidla
 
-Následující pravidla analýzy FxCop statického kódu jsou zastaralé a nebude možné implementovat jako analyzátory. Další informace, můžete vyhledávat podle ID pravidla (třeba **CA1009**) na [stránce problémů Githubu analyzátory roslyn](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
+Následující pravidla analýzy statických kódů FxCop jsou zastaralá a nebudou implementována jako analyzátory. Další informace můžete najít podle ID pravidla (například **CA1009**) na [stránce problémy GitHubu Roslyn-analyzers](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)
@@ -349,4 +346,4 @@ Následující pravidla analýzy FxCop statického kódu jsou zastaralé a nebud
 
 ## <a name="see-also"></a>Viz také:
 
-- [Microsoft.CodeAnalysis.FxCopAnalyzers pravidla](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
+- [Pravidla Microsoft. CodeAnalysis. FxCopAnalyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

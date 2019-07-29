@@ -1,5 +1,5 @@
 ---
-title: Odkazy na možnosti účty
+title: Odkaz na možnosti účtů
 ms.date: 12/10/2018
 ms.topic: reference
 f1_keywords:
@@ -10,41 +10,40 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27950e104b6064bdaf3b8b4a8fe4a760fa4e677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc3d88fd07ec5d345b3e8697ef69b193ece0fac1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792889"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604893"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Účty, prostředí, dialogové okno Možnosti
 
-Pomocí této stránky můžete nastavit různé možnosti související s účty, které používáte k přihlášení k sadě Visual Studio.
+Pomocí této stránky můžete nastavit různé možnosti týkající se účtů, které používáte k přihlášení do sady Visual Studio.
 
 ## <a name="personalization-account"></a>Účet přizpůsobení
 
-### <a name="synchronize-settings-across-devices"></a>Synchronizace nastavení mezi zařízeními
+### <a name="synchronize-settings-across-devices"></a>Synchronizovat nastavení mezi zařízeními
 
-Tuto možnost použijte k určení, jestli se má nastavení synchronizovat napříč různými počítači. Další informace najdete v tématu [synchronizovaná nastavení](../../ide/synchronized-settings-in-visual-studio.md).
+Tuto možnost použijte, chcete-li určit, zda chcete synchronizovat nastavení mezi více počítači. Další informace najdete v tématu [synchronizovaná nastavení](../../ide/synchronized-settings-in-visual-studio.md).
 
-### <a name="enable-device-code-flow"></a>Povolení toku kódu zařízení
+### <a name="enable-device-code-flow"></a>Povolit tok kódu zařízení
 
-Pokud je vybraná tato možnost, chování aplikace Visual Studio se změní při výběru **přidat účet** na **souboru** > **nastavení účtu** stránky. Místo toho, abyste **přihlásit ke svému účtu** stránky, zobrazí se dialogové okno, které poskytuje adresu URL a kód vložte do webového prohlížeče k přihlášení. Tato možnost je užitečná v případech, kde nemůžete se přihlásit k sadě Visual Studio regulární způsobem, například pokud používáte starší verzi aplikace Internet Explorer, nebo pokud brána firewall omezuje přístup. Další informace najdete v tématu [práce s několika uživatelskými účty](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow).
+Pokud je vybrána tato možnost, chování aplikace Visual Studio se změní po výběru možnosti **Přidat účet** na stránce**Nastavení účtu** **souboru** > . Namísto zobrazení na stránce **účtu** se zobrazí dialogové okno, které vám poskytne adresu URL a kód pro vložení do webového prohlížeče pro přihlášení. Tato možnost je užitečná v případech, kdy se nemůžete přihlásit k sadě Visual Studio běžným způsobem, například pokud používáte starší verzi Internet Exploreru nebo pokud brána firewall omezuje přístup. Další informace najdete v tématu [práce s několika uživatelskými účty](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow).
 
 ## <a name="registered-azure-clouds"></a>Registrované cloudy Azure
 
-Tato část ukazuje instance cloudu Azure, abyste měli přístup k prostřednictvím jednoho nebo více účtů, které používáte k přihlášení k sadě Visual Studio. Například můžete mít přístup k privátní instance Azure v datovém centru společnosti. Nebo můžete mít přístup k instanci suverénních nebo státní správu v Azure, jako je Azure China nebo Azure USA Státní správy. Ve výchozím nastavení v seznamu se zobrazí instance globálního cloudu Azure a nelze ji odstranit.
+V této části najdete informace o cloudových instancích Azure, ke kterým máte přístup, prostřednictvím jednoho nebo více účtů, které používáte k přihlášení do sady Visual Studio. Například můžete mít přístup k soukromé instanci Azure v datovém centru vaší společnosti. Nebo můžete mít přístup k instanci služby Azure svrchovaná nebo státní správy, jako je Azure Čína 21 Vianet nebo Azure USA. Schod. Globální cloudová instance Azure se v seznamu zobrazí ve výchozím nastavení a nemůžete ji odebrat.
 
-Registrace cloudu další Azure výběrem **přidat** tlačítko. **Přidat nový Cloud Azure** dialogové okno obsahuje několik instancí dobře známé cloudu Azure, můžete se připojit k, nebo můžete zadat adresu URL do privátního koncového bodu Azure.
+Další cloud Azure zaregistrujete tak, že kliknete na tlačítko **Přidat** . V dialogu **Přidat nový cloud Azure** se zobrazí seznam několika dobře známých cloudových instancí Azure, ke kterým se můžete připojit, nebo můžete zadat adresu URL privátního koncového bodu Azure.
 
-![Přidat nové instance cloudu Azure](media/add-new-azure-cloud.png)
+![Přidat novou instanci cloudu Azure](media/add-new-azure-cloud.png)
 
-Až dokončíte registraci další cloudu Azure, můžete zvolit které cloudu Azure, budete chtít přihlásit po přihlášení k sadě Visual Studio.
+Po registraci dalšího cloudu Azure si můžete vybrat cloud Azure, ke kterému se chcete přihlašovat při přihlášení k aplikaci Visual Studio.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Synchronizace nastavení mezi více počítačů](../synchronized-settings-in-visual-studio.md)
+- [Synchronizace nastavení mezi několika počítači](../synchronized-settings-in-visual-studio.md)
 - [Přihlášení k sadě Visual Studio](../signing-in-to-visual-studio.md)
 - [Práce s několika uživatelskými účty](../work-with-multiple-user-accounts.md)
 - [Nastavení prostředí](../environment-settings.md)
-- [Dialogové okno Možnosti prostředí](../../ide/reference/environment-options-dialog-box.md)

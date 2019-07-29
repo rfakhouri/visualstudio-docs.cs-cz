@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd951c180d23f4798fd797ee36a2bac9ca422ea1
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 50b86a32cb055eded71535b84b6b09fd59f78595
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461357"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605933"
 ---
 # <a name="property-pages-javascript"></a>Stránky vlastností, JavaScript
 
@@ -57,7 +57,7 @@ Pomocí následujících možností nastavte obecné vlastnosti projektu.
 
  Určuje umístění výstupních souborů pro konfiguraci projektu. Cesta je relativní; Pokud zadáte absolutní cestu, absolutní cesta je uložena v projektu. Výchozí cesta je bin\Debug.
 
- Použijete-li zjednodušené konfigurace sestavení, systém projektu určí, zda má být vytvořena verze ladění nebo vydání. Po kliknutí na položku **ladit**, **Spustit ladění** (nebo stiskněte klávesu F5) je sestavení vloženo do umístění ladění bez ohledu na **výstupní cestu** , kterou zadáte. Příkaz **Sestavit řešení** v nabídce **sestavení** však vloží do umístění, které zadáte. Chcete-li povolit pokročilé konfigurace sestavení, v řádku nabídek klikněte na položku **nástroje**, **Možnosti**. V dialogovém okně **Možnosti** rozbalte položku **projekty a řešení**, vyberte možnost **Obecné**a zrušte zaškrtnutí políčka **Zobrazit pokročilé konfigurace sestavení** . Tím získáte ruční kontrolu nad všemi konfiguračními hodnotami a zda je vytvořena verze ladění nebo vydání.
+ Použijete-li zjednodušené konfigurace sestavení, systém projektu určí, zda má být vytvořena verze ladění nebo vydání. Po kliknutí na **ladění** > **Spustit ladění** (nebo stisknutím klávesy **F5**) je sestavení vloženo do umístění ladění bez ohledu na **výstupní cestu** , kterou zadáte. Příkaz **Sestavit řešení** v nabídce **sestavení** však vloží do umístění, které zadáte. Chcete-li povolit pokročilé konfigurace sestavení, na panelu nabídek vyberte možnost **nástroje** > **Možnosti**. V dialogovém okně **Možnosti** rozbalte položku **projekty a řešení**, vyberte možnost **Obecné**a zrušte zaškrtnutí políčka **Zobrazit pokročilé konfigurace sestavení** . Tím získáte ruční kontrolu nad všemi konfiguračními hodnotami a zda je vytvořena verze ladění nebo vydání.
 
  **Výchozí jazyk**
 
@@ -82,7 +82,7 @@ Pomocí následujících možností nastavte vlastnosti pro chování ladění v
 
 **Spustit aplikaci**
 
-Určuje, jestli se má aplikace spustit, když stisknete klávesu F5 nebo kliknete na **ladit**, **Spustit ladění**. Pokud chcete aplikaci spustit, vyberte **Ano** . v opačném případě vyberte možnost **ne**. Pokud vyberete **ne**, můžete aplikaci ladit i v případě, že ji chcete spustit pomocí jiné metody.
+Určuje, jestli se má aplikace spustit, když stisknete klávesu **F5** nebo kliknete na **ladění** > **Spustit ladění**. Pokud chcete aplikaci spustit, vyberte **Ano** . v opačném případě vyberte možnost **ne**. Pokud vyberete **ne**, můžete aplikaci ladit i v případě, že ji chcete spustit pomocí jiné metody.
 
 **Typ ladicího programu**
 

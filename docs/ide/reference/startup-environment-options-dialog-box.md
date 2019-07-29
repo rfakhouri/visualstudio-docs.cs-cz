@@ -10,27 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27f67c00173db998b32d0a012af55428b87d1eda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0f14d830c9b0c3d091ffc380f64c128b8b79b83
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950918"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605911"
 ---
-# <a name="options-dialog-box-environment--startup"></a>Dialogové okno Možnosti: Prostředí \> po spuštění
+# <a name="options-dialog-box-environment--startup"></a>Dialogové okno Možnosti: Spuštění \> prostředí
 
 ::: moniker range="vs-2017"
 
-Pomocí této stránky můžete přizpůsobit úvodní stránku sady Visual Studio nebo nastavit jiné výchozí akce při spuštění sady Visual Studio. Další informace najdete v tématu [přizpůsobit spouštěcí](../../ide/customizing-the-start-page-for-visual-studio.md).
+Pomocí této stránky můžete přizpůsobit úvodní stránku aplikace Visual Studio nebo nastavit jinou výchozí akci při spuštění sady Visual Studio. Další informace najdete v tématu [přizpůsobení spuštění](../../ide/customizing-the-start-page-for-visual-studio.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Pomocí této stránky můžete nastavit různé výchozí akce při spuštění sady Visual Studio. V **při spuštění, otevřete** klikněte na položku z **počáteční okno** (které vám umožní otevřít nového nebo existujícího projektu), **nejnovější řešení**, nebo **prázdný prostředí**.
+Tato stránka slouží k nastavení jiné výchozí akce při spuštění sady Visual Studio. V rozevíracím seznamu **při spuštění** vyberte možnost z **okna Start** (umožňuje otevřít nový nebo existující projekt), nejnovější **řešení**nebo **prázdné prostředí**.
 
 ::: moniker-end
-
-## <a name="see-also"></a>Viz také:
-
-- [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)

@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df602b7ffa8f5109d8bbca827e59d6e1fd62c504
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461683"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605932"
 ---
 # <a name="options-text-editor-javascript-project"></a>Možnosti, textový editor, JavaScript, projekt
 
-Pomocí stránky **projekt** v dialogovém okně **Možnosti** můžete zadat možnosti projektu JavaScriptu v editoru kódu. Chcete-li získat přístup k této stránce, v řádku nabídek zvolte**možnost** **nástroje** > a potom rozbalte**projekt** **textový editor** > **JavaScript** > .
+Pomocí stránky **projekt** v dialogovém okně **Možnosti** můžete určit možnosti projektu JavaScript a TypeScript v editoru kódu. Chcete-li získat přístup k této stránce, v řádku nabídek zvolte**možnost** **nástroje** > a potom rozbalte**projekt** **textový editor** > **JavaScript/TypeScript** > .
 
 ## <a name="project-analysis-options"></a>Možnosti analýzy projektu
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2961730594abd268ae130cf2c3d2b93df5322c14
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953293"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606077"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Přizpůsobení prostředí IDE sady Visual Studio
 
@@ -27,28 +27,28 @@ Můžete zvolit výchozí kolekce nastavení, která optimalizuje Visual Studio 
 
 ## <a name="general-environment-options"></a>Možnosti Obecné prostředí
 
-Mnoho možností přizpůsobení, které jsou vystaveny prostřednictvím [možnosti prostředí](../ide/reference/environment-options-dialog-box.md) dialogové okno. Existují dva způsoby přístupu k tomuto dialogovému oknu:
+Mnoho možností přizpůsobení, které jsou vystaveny prostřednictvím [možnosti prostředí](../ide/reference/general-environment-options-dialog-box.md) dialogové okno. Existují dva způsoby přístupu k tomuto dialogovému oknu:
 
 - V panelu nabídky zvolte **nástroje** > **možnosti**a pokud ještě není rozbalen, rozbalte **prostředí** uzlu.
 
-- Stisknutím klávesy **Ctrl**+**Q**, typ **prostředí** do vyhledávacího pole a klikněte na tlačítko **prostředí--> Obecné** z výsledky.
+- Stiskněte **kombinaci kláves CTRL**+**Q**, do vyhledávacího pole zadejte **prostředí** a v části Výsledky zvolte **prostředí > Obecné** .
 
 > [!TIP]
-> Jakmile se zobrazí dialogové okno Možnosti, můžete stisknout **F1** o pomoc na různá nastavení na této stránce.
+> Po zobrazení dialogového okna Možnosti můžete stisknutím klávesy **F1** zobrazit nápovědu k různým nastavením na této stránce.
 
 ## <a name="environment-color-themes"></a>Barevné motivy prostředí
 
-Chcete-li změnit barevný motiv mezi světla a tmavě modrá, typ **prostředí** do vyhledávacího pole a klikněte na tlačítko **prostředí--> Obecné**. V **možnosti** dialogovém okně Změnit **barevný motiv** možnost.
+Chcete-li změnit barevný motiv mezi světlým, tmavým a modrým, zadejte **prostředí** do vyhledávacího pole a zvolte možnost **prostředí > Obecné**. V **možnosti** dialogovém okně Změnit **barevný motiv** možnost.
 
-Chcete-li změnit možnosti zabarvení v editoru, zadejte **prostředí** do vyhledávacího pole a klikněte na tlačítko **prostředí--> písma a barvy**. Zobrazit [jak: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Chcete-li změnit možnosti zabarvení v editoru, do vyhledávacího pole zadejte **Environment** a pak zvolte **prostředí > písma a barvy**. Viz [jak: Změnit písma a barvy](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Hlavní nabídka malých a velkých písmen
 
-Můžete změnit malých a velkých písmen hlavní nabídky mezi **Mena všech slov velká** ("File") a **všechna velká mají standardní** ("FILE"). Typ **prostředí** do vyhledávacího pole, vyberte **prostředí--> Obecné**a potom změňte **použít název případu stylů na řádku nabídek** možnost.
+Můžete změnit malých a velkých písmen hlavní nabídky mezi **Mena všech slov velká** ("File") a **všechna velká mají standardní** ("FILE"). Do vyhledávacího pole zadejte **prostředí** , vyberte **prostředí > Obecné**a pak změňte možnost **použít styl případu použití pro nadpis na panel nabídek** .
 
 ### <a name="customize-menus-and-toolbars"></a>Přizpůsobení nabídek a panelů nástrojů
 
-Chcete-li přidat nebo odebrat položky nabídky nebo panelu nástrojů, přečtěte si téma [jak: Přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Chcete-li přidat nebo odebrat položky nabídky nebo panelu [nástrojů, přečtěte si téma How to: Přizpůsobení nabídek a panelů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)nástrojů.
 
 ::: moniker range="vs-2017"
 
@@ -70,5 +70,5 @@ Můžete přizpůsobit **nástroje** nabídky ke spuštění externích nástroj
 
 - [Nastavení prostředí](environment-settings.md)
 - [Visual Studio IDE – přehled](../get-started/visual-studio-ide.md)
-- [Rychlý start: První pohled na integrovaném vývojovém prostředí sady Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Rychlý start: První pohled na integrované vývojové prostředí (IDE) sady Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Přizpůsobení sady Visual Studio pro Mac integrovaného vývojového prostředí](/visualstudio/mac/customizing-the-ide)

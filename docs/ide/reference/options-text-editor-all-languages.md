@@ -42,87 +42,87 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e15357220c9a9d74d4b08fdd97d4f808ff770b9a
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817848"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606062"
 ---
-# <a name="options-text-editor-all-languages"></a>Možnosti, textový editor, všechny jazyky
+# <a name="options-dialog-box-text-editor--all-languages"></a>Dialogové okno Možnosti: Textový editor \> – všechny jazyky
 
-Toto dialogové okno umožňuje změnit výchozí chování editoru kódu. Tato nastavení platí také pro jiné editory založen na editoru kódu, jako je HTML návrháře zobrazení zdroje. Chcete-li otevřít toto dialogové okno, vyberte **možnosti** z **nástroje** nabídky. V rámci **textový Editor** složky, rozbalte **všechny jazyky** podsložky a klikněte na tlačítko **Obecné**.
+Toto dialogové okno umožňuje změnit výchozí chování editoru kódu. Tato nastavení platí také pro ostatní editory na základě editoru kódu, jako je například zobrazení zdroje v Návrháři HTML. Chcete-li otevřít toto dialogové okno, vyberte možnost **Možnosti** v nabídce **nástroje** . V rámci složky **textový editor** rozbalte podsložku **všechny jazyky** a zvolte možnost **Obecné**.
 
 > [!CAUTION]
-> Tato stránka nastaví výchozí možnosti pro všechny vývojářské jazyky. Mějte na paměti, že obnovení možnost v tomto dialogovém okně resetuje Obecné možnosti ve všech jazycích na jakékoli volby jsou tady vyberete. Chcete-li změnit možnosti textového editoru pro právě jeden jazyk, rozbalte podsložku pro daný jazyk a vyberte jeho možnosti.
+> Tato stránka nastaví výchozí možnosti pro všechny vývojové jazyky. Mějte na paměti, že při resetování možnosti v tomto dialogu dojde k resetování obecných možností ve všech jazycích na jakékoli vybrané možnosti. Chcete-li změnit možnosti textového editoru pouze pro jeden jazyk, rozbalte podsložku pro daný jazyk a vyberte její stránky možností.
 
-Zatržení šedým se zobrazí, když byla vybrána možnost na stránkách Obecné možnosti pro některé programovací jazyky, ale ne pro ostatní uživatele.
+Po výběru možnosti na stránkách Obecné možnosti pro některé programovací jazyky, ale ne pro jiné, se zobrazí šedá značka zaškrtnutí.
 
 ## <a name="statement-completion"></a>Doplňování výrazů
 
 **Automatický seznam členů**
 
-Při výběru rozbalovací seznam dostupných členů, vlastnosti, hodnoty nebo metody se zobrazí v IntelliSense při psaní v editoru. Vyberte libovolnou položku ze seznamu místní nabídky k vložení položky do kódu. Tato volba umožňuje **rýt pokročilé členy** možnost.
+V případě, že je tato možnost vybrána, budou při psaní v editoru v technologii IntelliSense zobrazeny automaticky otevírané seznamy dostupných členů, vlastností, hodnot nebo metod. Výběrem libovolné položky v rozevíracím seznamu vložte položku do kódu. Výběrem této možnosti povolíte možnost **Skrýt pokročilé členy** .
 
-**Skrýt členy rozšířené úrovně**
+**Skrýt pokročilé členy**
 
-Při výběru, zkrátí seznamy dokončení rozbalovací příkaz tím, že zobrazuje pouze ty položky, které jsou obvykle používány. Další položky jsou filtrovány ze seznamu.
+Když se tato možnost vybere, zkrátí se seznamy pro doplňování příkazů tím, že se zobrazí jenom ty položky, které se nejčastěji používají. Další položky jsou filtrovány ze seznamu.
 
 **Informace o parametrech**
 
-Pokud je vybráno, zobrazí se pod kurzor v editoru se všechny její dostupné parametry úplnou syntaxi pro deklaraci aktuální nebo proceduru. Zobrazí se další parametr, který můžete přiřadit tučným písmem.
+Je-li vybrána tato možnost, je zobrazena Úplná syntaxe pro aktuální deklaraci nebo proceduru v editoru s použitím všech dostupných parametrů. Další parametr, který můžete přiřadit, se zobrazí tučně.
 
 ## <a name="settings"></a>Nastavení
 
 **Povolit virtuální prostor**
 
-Pokud je vybraná tato možnost a **zalamování** je zaškrtnutí zrušeno, můžete kliknout na libovolné místo za koncem řádku v editoru kódu a typu. Tato funkce slouží k umístění komentářů na bod konzistentní vzhledem k vedle vašeho kódu.
+Pokud je vybrána tato možnost a **zalamování** řádků je vymazáno, můžete kliknout kamkoli za konec řádku v editoru kódu a zadat. Tato funkce se dá použít k umístění komentářů v konzistentním bodě vedle vašeho kódu.
 
 **Zalamování řádků**
 
-Pokud je vybráno, jakékoli její části řádek, který rozšiřuje vodorovně nad rámec oblasti Zobrazit editor automaticky zobrazí na dalším řádku. Tato volba umožňuje **brazit piktogramy pro zalamování řádků** možnost.
+Je-li tato možnost vybrána, budou na dalším řádku automaticky zobrazeny všechny části řádku, které se nacházejí vodorovně nad rámec zobrazitelných oblastí editoru. Výběrem této možnosti povolíte možnost **Zobrazit vizuální glyfy pro zalamování řádků** .
 
 > [!NOTE]
-> **Virtuální prostor** zapnuté funkce chvíli off **zalamování** zapnutý.
+> Funkce **virtuálního prostoru** je vypnuta, když je zapnuto **zalamování řádků** .
 
-**Brazit piktogramy pro zalamování řádků**
+**Zobrazit vizuální glyfy pro zalamování řádků**
 
-Při výběru, zobrazí se ukazatel vrátit šipku kde dlouhý řádek zalamuje na další řádek.
+Je-li toto políčko zaškrtnuto, zobrazí se indikátor návratové šipky, kde se na druhý řádek zalomí dlouhá čára.
 
 ![Snímek obrazovky LineBreakSymbol](../../ide/reference/media/linebreak.gif)
 
-Pokud nechcete zobrazovat tyto indikátory, zrušte zaškrtnutí tohoto políčka.
+Tuto možnost zrušte, pokud nechcete zobrazit tyto indikátory.
 
 > [!NOTE]
-> Tyto šipky připomenutí nejsou přidány do kódu a ne k tisku. Jsou pouze pro referenci.
+> Tyto šipky připomenutí nejsou přidány do kódu a netiskou. Jsou pouze pro referenci.
 
 **Čísla řádků**
 
-Pokud je vybráno, číslo řádku vedle každého řádku kódu.
+Je-li toto políčko zaškrtnuto, zobrazí se vedle každého řádku kódu číslo řádku.
 
 > [!NOTE]
-> Tato čísla řádků nejsou přidány do kódu a ne k tisku. Jsou pouze pro referenci.
+> Tato čísla řádků nejsou přidána do kódu a netiskou. Jsou pouze pro referenci.
 
-**Povolit navigaci adres URL jedním kliknutím**
+**Povolit navigaci na adresu URL jedním kliknutím**
 
-Pokud je vybráno, ukazatel myši se změní ukazující ruku během přes adresu URL v editoru. Můžete kliknout na adresu URL pro zobrazení stránky označené ve webovém prohlížeči.
+Je-li vybrána tato možnost, ukazatel myši se změní na ukazující ruku v případě, že se předává přes adresu URL v editoru. Kliknutím na adresu URL můžete ve webovém prohlížeči zobrazit označenou stránku.
 
 **Navigační panel**
 
-Pokud je vybráno, zobrazí **navigační panel** v horní části stránky editoru kódu. Jeho rozevíracího seznamu **objekty** a **členy** seznamy umožňují vybrat určitý objekt v kódu, vyberte z jejích členů a přejde na deklaraci vybraného členu v editoru kódu.
+Je-li vybrána tato možnost, zobrazí se **navigační panel** v horní části editoru kódu. Jeho **objekty** DropDown a seznamy **členů** umožňují zvolit konkrétní objekt v kódu, vybrat z jeho členů a přejít k deklaraci vybraného člena v editoru kódu.
 
-**Použít příkazů Vyjmout nebo kopírovat na prázdné řádky, pokud nebyla vybrána žádná položka**
+**Použít příkazy Vyjmout nebo kopírovat na prázdné řádky, když není vybrán žádný výběr**
 
-Tato možnost nastaví chování editoru, když umístíte kurzor na prázdný řádek, nothing, vyberte a zkopírujte nebo vyjmutí.
+Tato možnost nastaví chování editoru při umístění kurzoru na prázdný řádek, výběr možnosti Nothing a zkopírování nebo vyjmutí.
 
-- Pokud je vybraná tato možnost, prázdný řádek zkopíruje nebo vyjmutí. Pokud pak vložíte, je vložen nový, prázdný řádek.
+- Pokud je vybrána tato možnost, je prázdný řádek zkopírován nebo vyjmut. Pokud pak vložíte nový, prázdný řádek se vloží.
 
-- Pokud tato možnost vybrána, příkaz Cut odstraní prázdné řádky. Nicméně se zajistilo uchování dat do schránky. Proto pokud použijete příkaz Paste, je vložit obsah naposledy zkopírovaný do schránky. Pokud není nic se zkopírovala dříve, není nic vloženo.
+- Pokud je tato možnost vymazána, příkaz Vyjmout Odstraní prázdné řádky. Data ve schránce jsou ale zachovaná. Proto pokud použijete příkaz pro vložení, obsah naposledy zkopírovaný do schránky se vloží. Pokud jste nic nezkopírovali, nic se nevloží.
 
-Toto nastavení nemá žádný vliv na kopírování nebo vyjmutí, když řádek není prázdný. Pokud není nic vybráno, celý řádek zkopíruje nebo vyjmutí. Pokud pak vložte text celý řádek a jeho ukončovacího znaku jsou vloženy.
+Toto nastavení nemá žádný vliv na kopírování nebo vyjmutí, pokud řádek není prázdný. Pokud není nic vybráno, je celý řádek zkopírován nebo vyvyjmut. Pokud vložíte, text celého řádku a jeho EndLine objektu SourceLocation znak se vloží.
 
 > [!TIP]
-> Chcete-li zobrazit ukazatele pro mezery, tabulátory a konce řádků a proto odlišit odsazené řádky z řádků, které jsou zcela prázdný, vyberte **Upřesnit** z **upravit** nabídku a zvolte **prázdné zobrazení Místo**.
+> Chcete-li zobrazit indikátory pro mezery, tabulátory a konce řádků, a odlišit odsazené řádky od řádků, které jsou zcela prázdné, v nabídce **Upravit** vyberte možnost **Upřesnit** a zvolte možnost **Zobrazit prázdné znaky**.
 
 ## <a name="see-also"></a>Viz také
 

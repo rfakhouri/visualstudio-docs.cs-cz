@@ -1,5 +1,5 @@
 ---
-title: Změna editor písma a barvy
+title: Změna písma a barev editoru
 ms.date: 11/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,42 +14,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7936f5a4de6b9feef64819ed85efb7d2ae55002e
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 8b1eb807143e7ee5c3283a88cff12f13515486fb
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531533"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605411"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Postupy: Změna písma a barev v editoru v sadě Visual Studio
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Postupy: Změna písma a barev pro Editor v aplikaci Visual Studio
 
-Můžete změnit výchozí řez písma, nastavit velikost písma a změnit barvy popředí a pozadí pro různé textové **zobrazení položek** v editoru kódu. Když změníte nastavení písma, mějte tyto informace:
+Můžete změnit výchozí řez písma, upravit velikost písma a změnit barvy popředí a pozadí pro různé **položky zobrazení** textu v editoru kódu. Při změně nastavení písma mějte na paměti následující informace:
 
-- Nastavení pro **písmo** a **velikost** jsou globální pro všechny elementy textu ve všech editory sady Visual Studio.
+- Nastavení pro **písmo** a **Velikost** jsou globální pro všechny textové prvky ve všech editorech sady Visual Studio.
 
-- Názvy neproporcionální písma jsou uvedené tučným písmem.
+- Názvy písem s pevnou šířkou jsou uvedeny tučně.
 
-- **Popředí položky**, **položky pozadí**, a **tučné** možnosti můžete nastavit pro každý typ textu elementu. Například, pokud změna barev a vyberte **tučné** pro **komentář** a **záložky**, nebude mít jiné typy textových prvků.
+- Můžete nastavit možnosti **popředí položky**, **pozadí položky**a **tučné písmo** pro každý typ textového prvku. Například pokud změníte barvy a vyberete tučné pro  **Komentáře** a **záložky**, jiné typy textových prvků nebudou nijak ovlivněny.
 
-## <a name="change-the-default-font-face-size-and-colors"></a>Změna výchozí řez písma, velikosti a barvy
+## <a name="change-the-default-font-face-size-and-colors"></a>Změna výchozího vzhledu písma, velikosti a barev
 
-1. Vyberte **možnosti** z **nástroje** nabídky a **prostředí** složky, vyberte **písma a barvy**.
+1. V nabídce **nástroje** vyberte **Možnosti** a ve složce **prostředí** vyberte **písma a barvy**.
 
-     [Písma a barvy, prostředí, dialogové okno Možnosti](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) otevře.
+     Otevře se [dialogové okno písma a barvy, prostředí, možnosti](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) .
 
-2. V **zobrazit nastavení pro**vyberte **textový Editor**.
+2. V **zobrazení zobrazit nastavení pro**vyberte **textový editor**.
 
-3. Upravit **písmo** a **velikost** možnosti, jak změnit vzhled písma a velikost pro všechny elementy textu v editoru všechny.
+3. Upravte možnosti **písmo** a **Velikost** pro změnu vzhledu a velikosti písma pro všechny textové prvky ve všech editorech.
 
-4. Vyberte odpovídající položku v **zobrazení položek**a potom změňte **popředí položky** a **položky pozadí** možnosti.
+4. Vyberte příslušnou položku v části **Zobrazit položky**a pak změňte možnosti pozadí **položky** a **pozadí položky** .
 
     > [!TIP]
-    > Klikněte na tlačítko **použít výchozí hodnoty** obnovíte výchozí nastavení.
+    > Kliknutím na **použít výchozí** obnovíte výchozí nastavení.
 
 5. Klikněte na **OK**.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Dialogové okno Možnosti textového editoru](../../ide/reference/text-editor-options-dialog-box.md)
 - [Funkce editoru kódu](../../ide/writing-code-in-the-code-and-text-editor.md)
-- [Postupy: Změna písma a barev v sadě Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Postupy: Změna písma a barev v aplikaci Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

@@ -10,17 +10,13 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 339f6477395bf8d91618298bc1618132d76b3794
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6055f71ee90fee451cad78552a3f853a28b808cd
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945112"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605886"
 ---
-# <a name="options-dialog-box-environment--tabs-and-windows"></a>Dialogové okno Možnosti: Prostředí \> karty a Windows
+# <a name="options-dialog-box-environment--tabs-and-windows"></a>Dialogové okno Možnosti: Karty \> prostředí a okna
 
-Pomocí této stránky lze nastavit možnosti pro jak s kartami windows chovat do podokna editoru a chování oken nástrojů. Další informace najdete v tématu [přizpůsobení rozložení oken v sadě Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-### <a name="see-also"></a>Viz také:
-
-- [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
+Pomocí této stránky můžete nastavit možnosti, jak se okna s kartami chovají v podokně editoru a jak se chovají okna nástrojů. Další informace najdete v tématu [přizpůsobení rozložení oken v aplikaci Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md) .

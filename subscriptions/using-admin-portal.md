@@ -1,75 +1,61 @@
 ---
-title: Použití portálu správce | Visual Studio Marketplace
+title: Začínáme s portálem pro správu předplatných | Visual Studio Marketplace
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
-description: Další informace o správě předplatných sady Visual Studio vaší organizace pomocí portálu pro správce.
-ms.openlocfilehash: 6da1f0ce52e810a7652dd306ff5a6e44404b76f7
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Naučte se, jak začít spravovat předplatná sady Visual Studio ve vaší organizaci pomocí portálu pro správu předplatných.
+ms.openlocfilehash: f3b11a0a0977fff8a6c89f565adffb1cac49e2ad
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784796"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605709"
 ---
-# <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Pomocí portálu pro správce předplatných sady Visual Studio
+# <a name="get-started-with-the-visual-studio-subscriptions-administration-portal"></a>Začínáme s portálem pro správu předplatných sady Visual Studio
+Mějte na paměti, že když použijete portál pro správu předplatných sady Visual Studio:
+- **Předplatná sady Visual Studio jsou licencovaná na uživatele.** Každý předplatitel může software používat na tolik počítačů, kolik jich je potřeba pro vývoj a testování.
+- **Přiřaďte každému předplatiteli jenom jednu úroveň**předplatného, která odpovídá předplatnému sady Visual Studio, které vaše organizace zakoupila. Pokud máte k těmto předplatitelům přiřazenou víc než jednu úroveň předplatného, upravte jejich nastavení tak, aby byla jenom jedna.
+- **Úroveň předplatného předplatitele se bude muset aktualizovat** , až se předplatné upgraduje (po zakoupení "podrobné" licence), nebo se obnoví na nižší úrovni.
+- **Nesdílejte předplatná mezi předplatiteli.** Předplatná musí být přiřazena k pojmenovaným jednotlivcům.  Přiřazení předplatných týmům se nepovoluje.  Musíte přiřadit předplatné všem, kdo používá celou aplikaci nebo výhody předplatného (software pro vývoj a testování, Microsoft Azure, e-Learning atd.).
 
-Mějte na paměti při použití Visual Studio předplatná portálu pro správu:
-
-- **Předplatná sady Visual Studio mají licenci na uživatele.** Každý předplatitel na tolik počítačů, jak je potřebné pro vývoj a testování používat software.
-- **Přiřaďte úroveň jenom jedno předplatné pro každý předplatitel**, odpovídající předplatné sady Visual Studio, vaše organizace koupila. Pokud máte předplatitelé s přiřazenou víc než jednu úroveň předplatného, upravte jejich nastavení tak, aby uživatel pouze nějakou.
-- **Úroveň předplatného předplatitele bude potřeba aktualizovat** Pokud je předplatné upgradovat (po zakoupení "stupňované" licenci) nebo obnovit na nižší úrovni.
-- **Nesdílejte předplatná mezi předplatitele.** Předplatné je nutné přiřadit každému, kdo používá nebo její část výhody předplatného (software pro vývoj a testování, Microsoft Azure, e-learning, atd.).
+## <a name="access-to-the-portal"></a>Přístup k portálu
+Pokud jste primární nebo kontaktní kontakt na smlouvu vaší organizace, budete po nastavení multilicenční smlouvy automaticky zřídit přístup k portálu. Obdržíte uvítací e-mail systému aktivovaný systémem a určíte, která e-mailová adresa se má použít k přihlášení na portál. Jakmile se přihlásíte, budete automaticky nastaveni jako správce super a můžete začít spravovat předplatné a jiné správce. 
 
 ## <a name="administrator-roles"></a>Role správce
+Na novém portálu pro správu předplatných sady Visual Studio existují dvě různé role pro multilicenční zákazníky. Tyto role jsou jako role správce předplatných a role správce předplatných v VLSC v dnešní době.
 
-Existují dva různé role, které existují v nový portál správy předplatných Visual Studio pro zákazníky s multilicenčními programy. Pracovníci v těchto rolích v tuto chvíli jako primární nebo informační kontakt role a role správce předplatných ve VLSC.
+**Super správci:** Při prvním nastavení organizace se primární nebo informační kontakt ve výchozím nastavení stal nadtypem správce. Primární nebo informační kontakt se může rozhodnout, že přiřadí další superuživatele nebo správce. Správce Super může přidat a odebrat další správce i předplatitele. Pokud je v systému více než dva Super správci, může nadstraněný správce odstranit všechny kromě poslední dvě pro zabezpečení.
 
-**Supersprávců, kteří jsou:** Při prvním nastavování organizace se stane primární nebo informační kontakt supersprávce ve výchozím nastavení. Primární nebo informační kontakt můžete přiřadit další supersprávců, kteří jsou nebo správci. Supersprávce můžete přidávat a odebírat další správce, jakož i předplatitele. Pokud existuje více než dva supersprávců, kteří jsou v systému, – supersprávce odstranit všechny kromě poslední dva pro zabezpečení.
+**Systémů** Správce může nastavit jenom správce s rolí super. Správce může spravovat předplatitele v rámci smluv, které se k nim správce superuživatele přiřadí.
 
-**Správci:** Správce může nastavit pouze pomocí super správce. Správce může spravovat předplatitele v smlouvy, které přiřadí super admin k nim.
-
-## <a name="getting-started"></a>Začínáme
-
-Abyste mohli spravovat předplatná vaší organizace pomocí portálu správce, musíte nejprve připojit vaše organizace k portálu.  Po dokončení registrace, je vhodné se seznámit s účastníky a podrobnosti stránky, jak jsou, kde najdete nástroje a informace, které potřebujete k provádění úloh správy vašeho předplatného.
-
-### <a name="onboarding"></a>Registrace
-
-Pokud vaše organizace je připravené k odeslání zařazeni na portál pro správu předplatných Visual Studio se odešle e-mail primární a informační kontakt vyzývající k dokončení procesu registrace. Podrobnosti uvedené níže jsou uvedené kroky, které bude třeba provést pro připojení k novému portálu. Pokud byste o ni návod k technikám, najdete v tomto [správce registrace videa](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) nebo to [článek podpory](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Visual Studio předplatná správce procesu migrace").
-
-1. **Vyhledáním čísla PCN a přihlášení:**
-    - V e-mailu primární a informační kontakt jsou součástí jedinečného odkazu a poslední tři číslice z jejich veřejné zákaznické číslo (PCN). * 
-    - K získání celého čísla PCN, třeba adresu primárního kontaktu pro přihlášení k webu VLSC (pokyny k vyhledání PCN najdete existuje). 
-    - Po získání PCN, budete potřebovat k výběru jejich jedinečného odkazu, která je vyzve k přihlášení. Budou moct přihlásit pomocí pracovní nebo školní účet (Pokud je vaše organizace v AAD) nebo účet Microsoft (MSA), pokud vaše organizace není v AAD. 
-    - V dalším kroku se potřebují zadáte PCN. 
-2. **Nastavení správce.** Jakmile zadáte PCN, že se zaregistruje jako supersprávce v novém systému a budete moct přidat další supersprávci a správci (dříve označovaní jako manažeři předplatného). Abyste neztratili přístup by se měly dokončit ještě před datem migrace vaší organizace. 
-3. **Přístup k novému portálu pro správu předplatného.**  Jakmile se vaše organizace migrována, se odešlou e-maily na nově přidaných supersprávci a správci vyzývající k přístupu na novém portálu a zahájení správy předplatných.  
-
-> [!NOTE]
-> Pokud primární nebo informační kontakt zobrazí více než jednu e-mailu, to znamená, že mají více než jedno číslo PCN. Bude potřeba provést použitím jedinečného odkazu pro číslo PCN odkazovat v každé email.*
-
-Pokud je potřeba přidat na nový portál pro správu předplatných Visual Studio a nejste si jisti, který je váš primární nebo informační kontakt, najdete tyto informace po přihlášení k [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Podívejte se na [najít váš primární kontakt](find-primary-contact.md) tématu najdete postup vyhledejte svůj primární nebo informační kontakt ve VLSC.
-Pokud již byl nastavíte jako správce a potom můžete přejít přímo na [portál pro správu předplatných sady Visual Studio](https://manage.visualstudio.com).
-
-### <a name="understanding-the-subscribers-page"></a>Vysvětlení stránky předplatitele
-Po přiřazení předplatného můžete na kartě předplatitele poskytuje podrobné informace o vaši předplatitelé, včetně:
-- První a poslední název každý předplatitel.
-- E-mailovou adresu pro tohoto uživatele.
-- Úroveň předplatného, které jim byly přiřazeny.
-- Data, která byla přiřazena svoje předplatné.
-- Datum vypršení platnosti jeho předplatného.
-- Volitelné textový popis.
-- Údaj o tom, jestli ke stažení pro předplatitele byl povolen nebo zakázán.
+## <a name="the-subscribers-page"></a>Stránka předplatitelé
+Po přiřazení předplatných vám karta předplatitelé poskytne podrobné informace o předplatitelích, včetně těchto:
+- Křestní jméno a příjmení každého předplatitele.
+- E-mailová adresa pro tohoto uživatele
+- Úroveň předplatného, která je jim přiřazena.
+- Datum přiřazení jejich předplatného.
+- Datum vypršení platnosti předplatného.
+- Volitelný textový popis.
+- Označení toho, zda bylo stahování odběratele povoleno nebo zakázáno.
 - Země, ve které se nacházejí.
-- Jejich preferovaný jazyk pro e-mail s přiřazením komunikaci z portálu pro správu.
-- Volitelné pole pro jinou e-mailovou adresu použitou pro komunikaci než přihlášení.
+- Jazykové předvolby pro e-maily týkající se komunikace přiřazení na portálu pro správu.
+- Volitelné pole pro jinou e-mailovou adresu, která se používá pro komunikaci než přihlášení.
 
-Na levé straně této stránky lze zobrazit další informace o počtu licencí předplatné zakoupené, přiřazené a stále k dispozici ve vaší organizaci pro každou smlouvu.
+Na levé straně této stránky můžete zobrazit další informace o počtu zakoupených, přiřazených a stále dostupných licencí k předplatnému v organizaci pro každou smlouvu.
 > [!div class="mx-imgBorder"]
-> ![Stránku předplatitele portál pro správu předplatných sady Visual Studio](_img/using-admin-portal/subscribers-page.png)
+> ![Stránka předplatitelů portálu pro správu předplatných sady Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
-### <a name="understanding-the-details-page"></a>Stránce s podrobnostmi o vysvětlení
-Další informace o smlouvě, že si prohlížíte vyberte na kartě s podrobnostmi. Zobrazuje stav smlouvy, nákupní účet, organizační údaje, primární kontakty (VLSC), supersprávci (Pokud je k dispozici) a další relevantní informace.
+## <a name="the-details-page"></a>Stránka s podrobnostmi
+Další informace o zobrazené smlouvě získáte výběrem karty Podrobnosti. Zobrazuje stav smlouvy, účet nákupu, podrobnosti o organizaci, nadřízeného správce a další související informace.
 > [!div class="mx-imgBorder"]
-> ![Stránka podrobností portál pro správu předplatných sady Visual Studio](_img/using-admin-portal/details-page.png)
+> ![Stránka podrobností portálu pro správu předplatných sady Visual Studio](_img/using-admin-portal/details-page.png)
+
+## <a name="next-steps"></a>Další postup
+Další informace o zodpovědnostech pro správce:
+- [Přehled odpovědností správce](admin-responsibilities.md)
+- [Inventář předprodukčního prostředí](admin-inventory.md)
+- [Správa velkých týmů a externích dodavatelů](manage-teams.md)
+- [Sledování přiřazení uživatelů a zpracování objednávek](assignments-orders.md)
+- Použití [maximálního využití](maximum-usage.md) ke sledování závazků nákupu

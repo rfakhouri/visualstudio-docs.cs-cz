@@ -1,12 +1,7 @@
 ---
-title: Odesílání zpráv do okna výstup | Dokumentace Microsoftu
+title: Odeslat zprávy do okna výstup | Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: conceptual
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
 helpviewer_keywords:
 - diagnostic messages [C#]
 - System.Diagnostics.Debug class, Output window
@@ -26,39 +21,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4493eb55b83b9f76d1a833ba2df359ae9683e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47b563f58d08a732ec224bb8bbf47ad807c4e81d
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852142"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605374"
 ---
 # <a name="send-messages-to-the-output-window"></a>Odesílání zpráv do okna výstupu
 
-Můžete napsat zpráv za běhu **výstup** pomocí okna <xref:System.Diagnostics.Debug> třídy nebo <xref:System.Diagnostics.Trace> třídy, které jsou součástí z <xref:System.Diagnostics> knihovny tříd. Použití <xref:System.Diagnostics.Debug> třídy, pokud chcete výstup pouze *ladění* verzi aplikace. Použití <xref:System.Diagnostics.Trace> třídy, pokud chcete výstup v obou *ladění* a *vydání* verze.
+Můžete zapisovat zprávy za běhu do okna **výstup** pomocí <xref:System.Diagnostics.Debug> třídy nebo <xref:System.Diagnostics.Trace> <xref:System.Diagnostics> třídy, která je součástí knihovny tříd. Použijte třídu <xref:System.Diagnostics.Debug> , pokud chcete výstup pouze v *ladicí* verzi programu. Použijte třídu <xref:System.Diagnostics.Trace> , pokud chcete výstup v *ladicí* verzi i ve *verzi Release* .
 
-## <a name="output-methods"></a>Výstup metody
- <xref:System.Diagnostics.Trace> a <xref:System.Diagnostics.Debug> třídy poskytují metody pro následující výstup:
+## <a name="output-methods"></a>Metody výstupu
+ Třídy <xref:System.Diagnostics.Trace> a<xref:System.Diagnostics.Debug> poskytují následující metody výstupu:
 
-- Různé `Write` metody, které výstup s informacemi bez narušení provádění. Nahraďte tyto metody `Debug.Print` metodu použitou v předchozích verzích jazyka Visual Basic.
+- Různé `Write` metody, které výstupní informace bez přerušení provádění. Tyto metody nahrazují `Debug.Print` metodu použitou v předchozích verzích Visual Basic.
 
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> a <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> metody, které přeruší informace o spuštění a výstupu, pokud je zadaná podmínka se nezdaří. Ve výchozím nastavení `Assert` metoda zobrazí informace v dialogovém okně. Další informace najdete v tématu [kontrolní výrazy ve spravovaném kódu](../debugger/assertions-in-managed-code.md).
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>a <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> metody, které přeruší spuštění a výstupní informace v případě, že se zadaná podmínka nezdařila. Ve výchozím nastavení `Assert` metoda zobrazí informace v dialogovém okně. Další informace naleznete v tématu [kontrolní výrazy ve spravovaném kódu](../debugger/assertions-in-managed-code.md).
 
-- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> a <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> metody, které vždy přeruší provádění a výstupní informace. Ve výchozím nastavení `Fail` metody zobrazení informací v dialogovém okně.
+- Metody <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> a<xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> , které vždy přeruší spuštění a výstupní informace. Ve výchozím nastavení `Fail` metody zobrazují informace v dialogovém okně.
 
-**Výstup** okna můžete také zobrazit informace o:
+V okně **výstup** se taky můžou zobrazit informace o:
 
-- Moduly ladicí program má načten nebo byla uvolněna.
+- Moduly, které ladicí program načetl nebo uvolní.
 
 - Výjimky, které jsou vyvolány.
 
-- Procesy, které ukončíte.
+- Procesy, které se ukončí.
 
-- Vlákna, která ukončíte.
+- Vlákna, která se ukončí.
 
 ## <a name="see-also"></a>Viz také:
 - [Zabezpečení ladicího programu](../debugger/debugger-security.md)
 - [Okno výstup](../ide/reference/output-window.md)
 - [Trasování a instrumentace aplikací](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
-- [C#, F#a typy projektů jazyka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [C#typy F#projektů, a Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)

@@ -1,66 +1,57 @@
 ---
-title: Předplatná sady Visual Studio produktů společnosti Microsoft a smlouvu o poskytování služeb (MPSA) | Dokumentace Microsoftu
+title: Předplatná sady Visual Studio v rámci smlouvy o produktech a službách společnosti Microsoft (MPSA) | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 03/14/2018
+ms.author: lank
+manager: lank
+ms.date: 07/23/2019
 ms.topic: conceptual
-description: Předplatná sady Visual Studio produktů společnosti Microsoft a smlouvu o poskytování služeb (MPSA)
-ms.openlocfilehash: 30437703029128232c82d0f4cc4441f09cbd9123
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Předplatná sady Visual Studio v rámci smlouvy o produktech a službách společnosti Microsoft (MPSA)
+ms.openlocfilehash: f87a77cdc19244ca24da1685c0b05372f6cc76d7
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784416"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605845"
 ---
-# <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Předplatná sady Visual Studio v Microsoft Products a smlouvu Services (MPSA)
+# <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Předplatná sady Visual Studio v rámci smlouvy o produktech a službách společnosti Microsoft (MPSA)
+Pokud jste si zakoupili předplatná sady Visual Studio prostřednictvím programu MPSA, měli byste si být vědomi, že před tím, než se stanete správcem předplatných sady Visual Studio a přiřadíte odběry uživatelům. Pokud jste již nastavili jako správce, můžete přejít přímo na [portál pro správu](https://manage.visualstudio.com/)předplatných sady Visual Studio.
 
-Předplatná sady Visual Studio jste zakoupili prostřednictvím programu MPSA, existuje několik věcí, které měli vědět, než se může stát se správcem předplatných sady Visual Studio a přiřazení předplatných pro vaše uživatele. Pokud již byl nastavíte jako správce a potom můžete přejít přímo na předplatná sady Visual Studio [portál pro správu](https://manage.visualstudio.com/).
+Zákazníci MPSA nyní spravují prostředky zakoupené prostřednictvím MPSA na novém portálu s názvem [Business Center](https://businessaccount.microsoft.com/Customer), který podporuje funkce podobně jako na webu Volume Licensing Service Center (VLSC). Patří mezi ně zobrazení souhrnu licencí, objednávek, souborů ke stažení, klíčů, uživatelů atd. Předplatná sady Visual Studio v MPSA se však chovají podobně jako Cloud Services. Centrum Business Center také používá pracovní účty k přihlašování místo účtů Microsoft (MSA). Pokud vaše organizace používá cloudové služby, jako je například Office 365 nebo Azure Active Directory, a váš e-mail je součástí některé z těchto dvou služeb, již je to pracovní účet. To vám umožní zaregistrovat se do centra pro firmy s vaším stávajícím heslem. Pokud vaše organizace nepoužívá cloudové služby a váš e-mail není pracovní účet, můžete ho použít k registraci do obchodního centra.
 
-Jako zákazník MPSA vám představíme na portál, kde můžete spravovat vaše prostředky zakoupená prostřednictvím MPSA. Tento nový portál, nazývá [Business Center](https://businessaccount.microsoft.com/), který podporuje některé stejné a nové funkce, stejně jako Volume Licensing Service Center (VLSC). Patří mezi ně zobrazení vaší licence souhrn objednávek, soubory ke stažení, klíče, uživatelů atd. Však předplatná sady Visual Studio v MPSA chovají podobně jako cloudové služby. Business Center také používá pro přihlášení, místo Microsoft Accounts pracovních účtů. Pokud vaše organizace používá cloudové služby, jako je Office 365 nebo Azure Active Directory a e-mailu je součástí libovolné z těchto dvou služeb je již pracovní účet. To vám umožní registraci do centra pro firmy pomocí existujícího hesla, která vaší organizaci určený pro vás. Pokud vaše organizace nepoužívá cloudových služeb a e-mailu není pracovní účet na všech, Nedělejte si starosti jak může použijte ho k registraci do centra pro firmy.
+Kromě toho [portál pro správu](https://manage.visualstudio.com/) předplatných sady Visual Studio je místo, kde se přiřadí předplatitelé, jakmile se stanete správcem předplatných sady Visual Studio. V MPSA musí být předplatná sady Visual Studio zřízena na příslušný portál pro správu, což je portál pro správu předplatných sady Visual Studio. K tomu je potřeba přidružit svůj nákupní účet ke klientovi (tj. contoso.onmicrosoft.com).
 
-Kromě toho, předplatná sady Visual Studio [portál pro správu](https://manage.visualstudio.com/) je, kde předplatná se přiřadí pro předplatitele po stát správce sady Visual Studio. V MPSA musí být zřízená předplatná sady Visual Studio na jeho odpovídající management portal, což je portál pro správu předplatných Visual Studio. K tomuto účelu, budete muset postupu přidružte svůj účet nákup na tenanta (například contoso.onmicrosoft.com).
+Všimněte si, že existují dva typy klientů spravovaných klienty a nespravovaných tenantů. Spravovaný tenant odkazuje na tenanta, který už spravuje správci v rámci organizace.
 
-Mějte prosím na paměti, že existují dva typy klientů (nespravovaného tenanta na spravovaného a nespravovaného tenanta). Ke spravovanému tenantovi odkazuje na tenantovi, který je již spravován jako správci v rámci organizace.
+Nespravovaný tenant je tenant bez přiřazených správců a není použitelný pro online služby, jako je například Office 365. Nespravované klienty se vytvoří také při registraci do obchodního centra pomocí e-mailu, který není pracovním účtem. Pokud jste byli požádáni o vytvoření hesla při registraci do obchodního centra, znamená to, že váš e-mail nebyl pracovní účet a vytvořil nespravovaného tenanta.
 
-Nespravovaného tenanta je tenant bez jakékoli správci v rámci a není použitelné pro Online služby, jako je Office 365. Nespravované tenanti také vytvářejí při registraci do centra pro firmy s e-mailu, který není pracovní účet. Pokud se zobrazí výzva vytvořit heslo při registraci do centra pro firmy, pak to znamená, že e-mailu nebylo pracovní účet a vytvořili nespravovaného tenanta.
+Tady je několik požadavků/kroků potřebných k tomu, abyste se stali správcem předplatných sady Visual Studio před dokončením přidružení tenanta.
 
-Před dokončením přidružení tenanta tady je pár požadavky a kroky potřebné k stát se správcem předplatných sady Visual Studio.
-
-## <a name="pre-tenant-association-managed-tenant"></a>Přidružení předběžné tenanta (spravovaného klienta)
-
-- Musí být registrovaný uživatel k centru pro firmy.
-- Uživatel správce (minimálně) nebo globální správce musí být v rámci tenanta, které jsou součástí. (To platí, pokud vaše společnost už používá cloudové služby). Kteroukoli z těchto rolí je potřeba mít oprávnění správce předplatných sady Visual Studio.
-- Musíte být globálním správcem tenanta, které jsou součástí budete moci přidružit zakoupení účtu pro vašeho tenanta.
-- Musí být účet správce nebo správce účtu v Centru pro firmy.
-- "Země nebo oblast" pole v rámci profilu uživatele (a žádný jiný uživatel) v [Azure](https://portal.azure.com/) musí být správně vyplní podle vaší oblasti (například USA, certifikační Autority, atd.). 
+## <a name="pre-tenant-association-managed-tenant"></a>Přidružení před tenantovi (spravovaný tenant)
+- Musíte být registrovaným uživatelem služby Business Center.
+- Musíte být správcem uživatelů (minimálně) nebo globálním správcem v rámci tenanta, kterého jste členem. (To platí, pokud vaše společnost už používá Cloud Services). Kterákoli z rolí musí být správce předplatných sady Visual Studio.
+- Abyste mohli k vašemu tenantovi přidružit svůj nákupní účet, musíte být globálním správcem v tenantovi, který jste členem.
+- Musíte být správcem účtu nebo správcem účtů v centru podnikání.
+- Pole země nebo oblast v rámci vašeho uživatelského profilu (a jakýkoli jiný uživatel) v [Azure](https://portal.azure.com/) se musí správně naplnit v závislosti na vaší oblasti (například USA, CA atd.). 
 
 > [!NOTE]
-> Všichni uživatelé, kteří mají být správce předplatných sady Visual Studio nejsou musí být uživatelé v Centru pro firmy, protože stačí splňují kritéria v krocích 2 a 5.
+> Všichni uživatelé, u kterých chcete, aby správci předplatných sady Visual Studio nemuseli být uživateli v obchodním centru, protože potřebují splňovat kritéria 2 a 5.
 
-Po splnění kritérií pro výše uvedené kroky 5 můžete pokračovat k přidružení účtu nákupu do svého tenanta níže uvedeného postupu.
-1. Přihlaste se k [centra Business](https://businessaccount.microsoft.com/).
-2. Klikněte na **účet** kartě a zvolte **přidružit domén**.
-3. Vyberte vaše **nákupu účet** (Pokud máte více než jeden).
-4. Vyberte vaše **tenanta** (například contoso.onmicrosoft.com).
-5. Klikněte na tlačítko **přidružit domény**.
+Jakmile splníte kritéria výše, můžete k vašemu tenantovi přidružit svůj nákupní účet podle následujících kroků.
+1. Přihlaste se do [centra Business Center](https://businessaccount.microsoft.com/Customer).
+2. Klikněte na kartu **účet** a vyberte **přidružit domény**.
+3. Vyberte svůj **Nákupní účet** (Pokud máte víc než jeden).
+4. Vyberte svého **tenanta** (například contoso.onmicrosoft.com).
+5. Klikněte na **přidružit doménu**.
 
-Po přidružení všem uživatelům potřebné kritériím obvykle zřídí jako správce předplatných sady Visual Studio během několika minut. Nicméně v některých případech může trvat až 24 hodin. Jakmile zřídíte budete mít přístup k portálu správy předplatných Visual Studio. Pokud tento postup trvá déle než 24 hodin, kontaktujte prosím podporu MPSA.
-
-> [!NOTE]
-> Pokud existují noví uživatelé, kteří splnění kritérií pro kroky 2 a 5 (po přidružení) obraťte se na podporu MPSA. Podpora MPSA poskytne pomoc zřídit nový správce předplatných sady Visual Studio.
-
-## <a name="tenant-association-unmanaged"></a>Přidružení klienta (nespravovaný)
-
-Pokud jste se zaregistrovali k centru pro firmy s e-mailu, která nebyla pracovní účet (není zaregistrovaný ve službě Azure Active Directory "Azure AD"), jak bylo vysvětleno v odstavci pět výše, přidružení tenanta se bude poněkud lišit. Je potřeba provést, co se nazývá "převzetí domény". Během tohoto procesu vytvoříte sami globálního správce, který se změní váš tenant z nespravovaných do spravovaných.
-
-Podrobnější vysvětlení tohoto procesu, můžete použít [rychlý Start provede](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx). Stáhněte si prosím průvodce s názvem *"Instalace a použití vaše Online služeb"* který vás provede převzetí domény. Po dokončení nákupu také bude účet přidružený k vašemu tenantovi.
+Při přidružení budou všichni uživatelé, kteří splňují kritéria, obvykle zřizovat jako správci předplatných sady Visual Studio během několika minut. V časech ale může trvat až 24 hodin. Po zřízení tenanta budete mít přístup k portálu pro správu předplatných sady Visual Studio. Pokud bude trvat déle než 24 hodin, obraťte se prosím na podporu MPSA.
 
 > [!NOTE]
-> Po dokončení procesu převzetí domény, je nutné splnit kritéria z pěti kroků v části pro přidružení Tenanta předem (spravované). Po splnění těchto kritérií, pouze je nutné se obrátit na podporu MPSA zřídit další správce předplatných sady Visual Studio.
+> Pokud existují noví uživatelé, kteří splňují kritéria v krocích 2 a 5 (po přidružení), musíte se obrátit na podporu MPSA. Podpora MPSA vám poskytne pomoc při zřizování nových správců předplatných sady Visual Studio.
 
-Vyžadovat pomoc nebo máte nějaké dotazy, můžete požádat podpory telefonicky nebo e-mailu.
+## <a name="tenant-association-unmanaged"></a>Přidružení tenanta (nespravované)
+Pokud jste se zaregistrovali do centra Business Center pomocí e-mailu, který nebyl pracovním účtem (není zaregistrován v Azure Active Directory "Azure AD"), jak je vysvětleno výše, přidružení tenanta se mírně liší. Budete muset provést akci, která se nazývá "převzetí služeb při selhání domény". Během tohoto procesu sami provedete globálního správce, který změní vašeho tenanta z nespravovaného na spravované.
 
-Podpora MPSA: **1-866-200-9611**, k dispozici od pondělí až pátek 5:30:00 do 5:30 hodin tichomořského času
+Pro podrobnější vysvětlení tohoto procesu můžete použít [průvodce rychlé zprovoznění](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx). Stáhněte si prosím příručku s názvem *"Setup" a použijte své online služby* , které vás provedou převzetím domény. Až to dokončíte, Váš nákupní účet se taky přidruží k vašemu tenantovi.
 
-Online:  https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f?sl=enampsc=US
+> [!NOTE]
+> Po dokončení procesu převzetí domény musíte dodržovat kritéria z pěti kroků v části pro přidružení předběžného tenanta (spravované). Jakmile jsou kritéria splněná, bude nutné, abyste se obrátili na podporu MPSA a zřídili další správce předplatných sady Visual Studio.

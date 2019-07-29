@@ -1,70 +1,63 @@
 ---
-title: Spravovat Visual Studio předplatných nabízených prostřednictvím Microsoft Partner Network (MPN) | Dokumentace Microsoftu
+title: Správa předplatných sady Visual Studio nabízených prostřednictvím Microsoft Partner Network (MPN) | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/11/2017
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
-description: Postup přiřazení předplatných sady Visual Studio pro vaši koncoví uživatelé, pro partnery MPN.
-ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+description: Přiřazení předplatných sady Visual Studio koncovým uživatelům pro partnery programu MPN.
+ms.openlocfilehash: 600d7c651e4e4b4396293e8be60a008a6f6d0bf3
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823200"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605461"
 ---
-# <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Správa předplatných sady Visual Studio nabízí prostřednictvím Microsoft Partner Network (MPN)
+# <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Správa předplatných sady Visual Studio nabízených prostřednictvím Microsoft Partner Network (MPN)
+Partneři, kteří získají kompetenci nebo kteří si zakoupí akční Pack v programu MPN, mají nárok na použití předplatných sady Visual Studio. Tato předplatná jsou licencovaná na uživatele a jsou platná jenom v případě, že jsou přiřazená konkrétnímu pojmenovanému uživateli, který pro partnerský produkt pracuje.
 
-Partneři, kteří získejte kompetenci nebo kteří zakoupili Action Pack v programu MPN mají nárok na použití předplatná sady Visual Studio. Tato předplatná jsou licencovaný podle počtu uživatelů a platí pouze v případě přiřazenou na konkrétní uživatele, který se dá použít pro partnerské firmě s názvem.
+Podrobnosti najdete v tématu předplatná sady Visual Studio nabízená partnerům v [Microsoft Partner Network (MPN)](program-mpn.md) .
 
-Zobrazit [předplatná sady Visual Studio nabízí pro partnery v Microsoft Partner Network (MPN)](program-mpn.md) podrobnosti.
-
-## <a name="high-level-assignment-and-access-flow"></a>Základní tok přiřazení a přístup
-
-### <a name="microsoft-action-pack-subscribers"></a>Předplatitelé Microsoft Action Pack
-Předplatitele Microsoft Action Pack a předplatná sady Visual Studio
-
-1. Správce programu se přihlásí na Partner Membership Center.
-2. Přidružení uživatelů prostřednictvím **požadavky a prostředky**
-3. Vyhledejte jednotlivce a **přiřazení rolí**
-4. Vyberte první, druhý nebo třetí **technický kontakt** a **uložit**
-5. Vyberte **požadavky a prostředky**
-6. Vyberte **oprávnění**
-7. Vyberte **předplatná sady Visual Studio** (Poznámka: Visual Studio Probíhá aktualizace předplatného)
-8. Vyberte požadovaný **jednotlivé**
-9. Klikněte na tlačítko **odeslání**
-10. Jednotlivec obdrží e-mailu
-11. Bude mít přístup k přiřazené jednotlivých [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) pro přihlášení
-12. Může se zobrazit stránka profil sady Visual Studio, včetně:
+## <a name="microsoft-action-pack-subscribers"></a>Předplatitelé Microsoft Action Pack
+Předplatitelé Microsoft Action Pack a předplatná sady Visual Studio
+1. Správce programu se přihlásí do centra členství v partnerovi.
+2. Přidružte lidi přes **požadavky a prostředky** .
+3. Hledání jednotlivců a **přiřazování rolí**
+4. Vyberte první, druhý nebo třetí **technický kontakt** a **uložte**
+5. Vybrat **požadavky & assety**
+6. Vybrat **oprávnění**
+7. Vyberte **předplatná sady Visual Studio** (Poznámka: Aktualizace předplatného sady Visual Studio čeká na vyřízení)
+8. Vybrat požadovanou **osobu**
+9. Klikněte na **Odeslat** .
+10. Jednotlivec dostane e-mail.
+11. Přiřazená osoba bude mít [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) přístup k přihlašování.
+12. Může se zobrazit Stránka s profilem sady Visual Studio, včetně:
     - Křestní jméno
     - Příjmení
     - Kontaktní E-mail
-13. Přihlášení je teď dokončeno a předplatitel by měl mít přístup k výhodám
+13. Přihlášení je nyní dokončeno a předplatitel by měl mít přístup k výhodám
 
-### <a name="competency-partners"></a>Partnerům s kompetencí
-1. Vyberte **požadavky a prostředky**
-2. Vyberte **oprávnění**
-3. Vyberte **předplatná MSDN** (Poznámka: to bude možné relabeled "Předplatná sady Visual Studio" brzy)
-4. Vyhledejte požadovaný **jednotlivé**
-5. Klikněte na tlačítko **odeslání**
-6. Jednotlivec obdrží e-mailu
-7. Bude mít přístup k přiřazené jednotlivých [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) pro přihlášení
-8. Může se zobrazit stránka profil sady Visual Studio
+## <a name="competency-partners"></a>Partneři kompetence
+1. Vybrat **požadavky a prostředky**
+2. Vybrat **oprávnění**
+3. Vyberte **Předplatná MSDN** (Poznámka: brzo se přiznačí "předplatná sady Visual Studio").
+4. Vyhledat požadovanou **osobu**
+5. Klikněte na **Odeslat** .
+6. Jednotlivec dostane e-mail.
+7. Přiřazená osoba bude mít [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) přístup k přihlašování.
+8. Může se zobrazit Stránka s profilem sady Visual Studio.
     - Křestní jméno
     - Příjmení
     - Kontaktní E-mail
-9. Přihlášení je teď dokončeno a předplatitel by měl mít přístup k výhodám
+9. Přihlášení je nyní dokončeno a předplatitel by měl mít přístup k výhodám
 
-## <a name="resources-and-references"></a>Zdroje a odkazy
+## <a name="resources-and-references"></a>Prostředky a odkazy
+- Podrobnosti týkající se Microsoft Partner Network předplatných sady [Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions)
+- [Příručka pro správce programu Microsoft Partner Network pro výhody softwaru a online služeb](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)
+  - PG 6 – přiřazení rolí kontaktů a předplatných sady Visual Studio pro sadu akcí
+  > [!NOTE]
+  > Pro předplatná sady Visual Studio se vyžaduje role technického kontaktu.
+  - PG 8 – přiřazení předplatných sady Visual Studio pro partnery s kompetencí
 
-- Podrobné informace o programu Microsoft Partner Network [předplatná sady Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions)
-
-- Microsoft Partner Network [Příručka pro správce programu pro Software a Online služby výhody](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)
-  - PG 6 – přiřazování rolí kontaktu a předplatných sady Visual Studio pro program Action Pack
-
-> [!NOTE]
-> Role technického kontaktu se vyžaduje pro předplatná sady Visual Studio
-> - PG 8 – předplatná sady Visual Studio přiřazení pro partnery s kompetencí
-
-## <a name="need-help"></a>Potřebujete pomoc?
-Předplatitelé a správci programu by měl fungovat přímo s týmem podpory programu Microsoft Partner Network pomoc při řešení potíží s odběrateli přístup k předplatných. Přejděte [Support pro partnery](https://partner.microsoft.com/support) stránky žádostí o pomoc. (Přihlašovací údaje MPN nutné.)
+## <a name="next-steps"></a>Další kroky
+Účastníci a správci programu by měli pracovat přímo s týmem podpory Microsoft Partner Network, aby vyřešili případné problémy s předplatiteli přistupujícími k předplatným. Pomoc najdete na stránce [Podpora pro partnery](https://partner.microsoft.com/support) . (Vaše přihlašovací údaje pro program MPN se budou vyžadovat.)

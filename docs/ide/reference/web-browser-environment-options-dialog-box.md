@@ -21,50 +21,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad36a2c9c741cffdb1ad3da04f81a21ce68f7ebd
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788951"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605627"
 ---
-# <a name="options-dialog-box-environment--web-browser"></a>Dialogové okno Možnosti: Prostředí \> webového prohlížeče
+# <a name="options-dialog-box-environment--web-browser"></a>Dialogové okno Možnosti: Webový \> prohlížeč prostředí
 
-Nastaví možnosti pro interní webový prohlížeč a aplikaci Internet Explorer. Chcete-li získat přístup k tomuto dialogovému oknu, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **prostředí** a pak zvolte položku **webový prohlížeč**.
+Nastaví možnosti pro interní webový prohlížeč i Internet Explorer. Chcete-li získat přístup k tomuto dialogovému oknu, klikněte na tlačítko **Možnosti** v nabídce **nástroje** , rozbalte složku **prostředí** a vyberte možnost **webový prohlížeč**.
 
 > [!NOTE]
 > Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [Resetovat nastavení](../environment-settings.md#reset-settings).
 
 > [!IMPORTANT]
-> Otevírání určité soubory nebo součásti z webu může spustit kód ve vašem počítači.
+> Otevřením určitých souborů nebo komponent z webu můžete v počítači spustit kód.
 
 ## <a name="home-page"></a>Domovská stránka
 
-Nastaví na stránce se zobrazí, když otevřete webový prohlížeč integrované vývojové prostředí.
+Nastaví stránku, která se zobrazí, když otevřete webový prohlížeč IDE.
 
 ## <a name="search-page"></a>Stránka hledání
 
-Umožňuje určit stránku vyhledávání pro interní webový prohlížeč. Toto umístění se může lišit od hledání stránky, používané instancí aplikace Internet Explorer inicioval mimo integrované vývojové prostředí (IDE).
+Umožňuje určit stránku vyhledávání pro interní webový prohlížeč. Toto umístění se může lišit od stránky vyhledávání používané instancemi prohlížeče Internet Explorer, které jsou spouštěny mimo integrované vývojové prostředí (IDE).
 
-## <a name="view-source-in"></a>Zobrazit zdrojový kód v
+## <a name="view-source-in"></a>Zobrazit zdroj v
 
-Nastaví editor používá k otevření webové stránky, když zvolíte **zobrazit zdroj** na stránce z interní webový prohlížeč.
+Nastaví Editor použitý k otevření webové stránky při výběru možnosti **Zobrazit zdroj** na stránce z interního webového prohlížeče.
 
-- **Editor zdrojového kódu** vyberte zobrazení zdroje v [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
+- **Editor zdrojového kódu** Tuto možnost vyberte, pokud chcete zobrazit zdroj v [editoru](../../ide/writing-code-in-the-code-and-text-editor.md).
 
-- **HTML editor** vyberte zobrazení zdroje v [Návrháři HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Tento výběr slouží k úpravě webové stránky v jednom ze dvou zobrazení: Zobrazení návrhu nebo standardní zobrazení zdroje založený na textu.
+- **Editor HTML** Tuto možnost vyberte, pokud chcete zobrazit zdroj v [Návrháři HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Tento výběr slouží k úpravě webové stránky v jednom ze dvou zobrazení: Zobrazení Návrh nebo standardní textové zobrazení zdroje.
 
-- **Externí editor** vyberte zobrazení zdroje v jiném editoru. Zadejte cestu k libovolný editor, který si vyberete, například Notepad.exe.
+- **Externí editor** Tuto možnost vyberte, pokud chcete zobrazit zdroj v jiném editoru. Zadejte cestu libovolného editoru, který zvolíte, například Notepad. exe.
 
 ## <a name="internet-explorer-options"></a>Možnosti aplikace Internet Explorer
 
-Kliknutím můžete změnit možnosti aplikace Internet Explorer pro **vlastnosti Internetu** dialogové okno. Změny provedené v tomto dialogovém vliv na interní webový prohlížeč i instancí aplikace Internet Explorer inicioval mimo rozhraní IDE sady Visual Studio (například z nabídky Start).
+Kliknutím můžete změnit možnosti pro Internet Explorer v dialogovém okně **Vlastnosti Internetu** . Změny provedené v tomto dialogovém okně mají vliv na vnitřní webový prohlížeč a instance aplikace Internet Explorer, které jsou iniciovány mimo Visual Studio IDE (například z nabídky Start).
 
 > [!NOTE]
-> Použití **procházet s** dialogové okno k nahrazení interní webový prohlížeč sady Visual Studio pomocí prohlížeče podle vašeho výběru. V dialogovém okně Procházet s můžete přistupovat z klikněte pravým tlačítkem nebo kontextu nabídku, například soubor HTML ve vašem projektu.
+> Pomocí dialogového okna **Procházet s** můžete nahradit interní webový prohlížeč sady Visual Studio prohlížečem podle vašeho výběru. Můžete získat přístup k dialogovému oknu procházet s pomocí kliknutí pravým tlačítkem nebo místní nabídky, například souboru HTML v projektu.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
 - [Obecné, Prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)
 - [HTML Designer](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

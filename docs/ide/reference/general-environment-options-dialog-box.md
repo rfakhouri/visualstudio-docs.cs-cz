@@ -1,106 +1,101 @@
 ---
 title: Obecné, prostředí, dialogové okno Možnosti
-ms.date: 03/28/2019
+ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
-- VS.Message.0x800a002e
-- VS.ToolsOptionsPages.Environment.General
 - VS.Environment.General
+- VS.Message.0x800a002e
+- VS.OptionsDialog.Environment
+- VS.ToolsOptionsPages.Environment
+- VS.ToolsOptionsPages.Environment.General
 helpviewer_keywords:
-- MRU lists
-- windows, customizing
-- MDI, environment options
-- speed, environment animation
-- File menu
-- menus, customizing
-- Windows menu customizing
-- status bars, displaying
-- IDE, startup options
-- editors, autocompletion
+- recently used file lists
+- Windows menu, customizing
+- status bar, displaying
 - Options dialog box, General Environment
 - General Environment Options dialog box
+- Environment Options dialog box
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790132"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605443"
 ---
-# <a name="options-dialog-box-environment--general"></a>Dialogové okno Možnosti: Prostředí \> obecné
+# <a name="options-dialog-box-environment--general"></a>Dialogové okno Možnosti: Obecné \> prostředí
 
-Pomocí této stránky můžete změnit barevné motivy, nastavení panelu stavu a přidružení přípony souboru, mezi další možnosti pro integrované vývojové prostředí (IDE). Můžete přistupovat **možnosti** dialogové okno tak, že otevřete **nástroje** nabídku, zvolíte **možnosti**, otevřete **prostředí** složky a pak Výběr **Obecné** stránky. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** zaškrtávací políčko **možnosti** dialogové okno.
+Tato stránka slouží ke změně barevných motivů, nastavení stavového řádku a přidružení přípon souborů mezi další možnosti pro integrované vývojové prostředí (IDE). K dialogovému oknu **Možnosti** můžete přistupovat otevřením nabídky **nástroje** , výběrem **Možnosti**, otevřením složky **prostředí** a kliknutím na stránku **Obecné** . Pokud se tato stránka v seznamu nezobrazí, zaškrtněte políčko **Zobrazit všechna nastavení** v dialogovém okně **Možnosti** .
 
-## <a name="visual-experience"></a>Vzhled
+## <a name="visual-experience"></a>Vizuální prostředí
 
 **Barevný motiv**
 
-Zvolte **modré**, **světla**, **tmavě**, nebo **modrý (zvláště kontrastní)** barvy motivu rozhraní IDE.
+Vyberte barevný motiv **Blue**, **světlý**, **tmavý**nebo **modrý (extra Contrast)** pro rozhraní IDE.
 
-Můžete nainstalovat další předdefinované motivy a vytvářet vlastní motivy stažením a instalací **Editor motivů sady Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po instalaci tohoto nástroje, další barevné motivy joinkind **barevný motiv** pole se seznamem.
+Můžete nainstalovat další předdefinované motivy a vytvořit vlastní motivy stažením a instalací **editoru barevných motivů sady Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po instalaci tohoto nástroje se v seznamu **barevný motiv** zobrazí další barevné motivy.
 
-**Použít první velká písmena na řádku nabídek pro používání stylů**
+**Použití stylu případu nadpisu na řádku nabídek**
 
-Nabídky použijte mena všech slov velká ve výchozím nastavení pro používání stylů. Tuto možnost používat všechna velká písmena používání stylů pro místo, zrušte zaškrtnutí.
+Nabídky používají ve výchozím nastavení styl písmen názvů. Zrušte tuto možnost, chcete-li místo toho použít všechny styly velkých a malých písmen.
 
 ::: moniker range=">=vs-2019"
 
-**Optimalizace vykreslování pro obrazovky s jinou densities – (vyžaduje restart)**
+**Optimalizovat vykreslování pro obrazovky s různou hustotou pixelů (vyžaduje restart)**
 
-Tato možnost povolí nebo zakáže na monitorování bodů na palec (DPI) sledování (nebo *PMA*). Když je povolené PMA, uživatelské rozhraní sady Visual Studio se zobrazí zřetelný v jakékoli koeficient měřítka zobrazení monitorování a konfigurace DPI, včetně víc monitorů. Pokud chcete povolit PMA, je třeba Windows 10. dubna 2018 Update nebo novější a rozhraní .NET Framework 4,8 nebo novější. (Tato možnost se zobrazí šedě Pokud se nesplní tyto dva požadavky.)
+Tato možnost povoluje nebo zakazuje sledování bodů monitorování a DPI (nebo *PMA*) na palec. Když je povolený PMA, uživatelské rozhraní sady Visual Studio se zobrazí ostře v jakémkoli monitorování a konfigurace rozlišení DPI, včetně různých monitorů. K povolení PMA potřebujete Windows 10 Update 2018 nebo novější a .NET Framework 4,8 nebo novější. (Tato možnost se zobrazí šedě, pokud tyto dva požadavky nejsou splněny.)
 
 > [!TIP]
-> - Windows 10 obsahuje nastavení, které se říká **nechat Windows se pokusí opravit aplikace tak, že nejsou fuzzy**. Povolením tohoto nastavení Windows **na** nemá zanedbatelný vliv, pokud máte **optimalizace vykreslování pro obrazovky s jinou hustoty** zaškrtnutým políčkem.
-> - Windows 10 obsahuje také **při potížích s kompatibilitou programu**. Nedoporučujeme ale pokoušejí opravit vzhledu aplikace Visual Studio s použitím tohoto poradce při odstraňování potíží.
+> - Windows 10 obsahuje nastavení, které říká, že se **Windows snaží opravit aplikace, aby**se rozmazaný. Zapnutí **nastavení systému** Windows má zanedbatelný efekt, pokud máte zaškrtnuté políčko **optimalizovat vykreslování pro obrazovky s různou hustotou pixelů** .
+> - Windows 10 zahrnuje také **Poradce při potížích s kompatibilitou programů**. Nedoporučujeme řešit vzhled sady Visual Studio pomocí tohoto poradce při potížích.
 
 ::: moniker-end
 
-**Automaticky upravit vzhled na základě výkonu klienta**
+**Automatické přizpůsobení vizuálního prostředí na základě výkonu klienta**
 
-Určuje, zda sady Visual Studio úpravy automaticky nastaví na vizuální prostředí nebo explicitně nastavit úpravy. Toto nastavení může změnit zobrazení barvy z přechody pro plochý barev, nebo to může omezit použití animací v nabídkách nebo automaticky otevíraného okna windows.
+Určuje, zda sada Visual Studio nastaví automatické nastavení pro vizuální prostředí nebo zda je nastavení explicitně nastaveno. Tato úprava může měnit zobrazení barev z přechodů na ploché barvy, nebo může omezit použití animací v nabídkách nebo v automaticky otevíraných oknech.
 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 obsahuje nastavení, které se říká **nechat Windows se pokusí opravit aplikace tak, že nejsou fuzzy**. Povolením tohoto nastavení **na** se doporučuje, pokud je na vaše monitorování rozmazané sady Visual Studio. Zvažte možnost upgradovat na [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), což výrazně se zvýšil přehlednost zobrazení vzhledem k tomu, že je na monitorování bodů na palec aplikace pracující s.
+> Windows 10 obsahuje nastavení, které říká, že se **Windows snaží opravit aplikace, aby**se rozmazaný. Zapnutí **tohoto nastavení se** doporučuje, pokud se Visual Studio na monitoru neostří. Zvažte upgrade na [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), který výrazně vylepšuje přehlednost zobrazení, protože se jedná o každou monitorovanou aplikaci pro monitorování bodů na palec.
 
 ::: moniker-end
 
-**Povolit vzhled plně funkčního klienta**
+**Povolit komplexní klientské prostředí**
 
-Poskytuje možnost celý vizuální prostředí sady Visual Studio, včetně přechody a animace. Při použití připojení ke vzdálené ploše nebo starší grafických adaptérů, protože tyto funkce může dojít ke snížení výkonu v těchto případech, zrušte tuto možnost. Tato možnost je dostupná jenom v případě, že zrušíte výběr **automaticky upravit vzhled na základě klienta** možnost.
+Umožňuje plné vizuální prostředí sady Visual Studio, včetně přechodů a animací. Tuto možnost zrušte, pokud používáte připojení ke vzdálené ploše nebo starší grafické adaptéry, protože tyto funkce mohou mít v těchto případech špatný výkon. Tato možnost je dostupná, jenom když zrušíte zaškrtnutí políčka **automaticky upravit vizuální prostředí na základě možnosti klienta** .
 
 **Použít hardwarovou akceleraci grafiky, pokud je k dispozici**
 
-Používá hardwarovou akceleraci grafiky, pokud je k dispozici, nebo softwarové akcelerace.
+Používá hardwarovou akceleraci grafiky, je-li k dispozici, nikoli při akceleraci softwaru.
 
 ## <a name="other"></a>Ostatní
 
-**Položky, které chcete zobrazit v nabídce okno**
+**Položky, které se mají zobrazit v nabídce okna**
 
-Přizpůsobí počet období, která se zobrazí v seznamu Windows **okno** nabídky. Zadejte číslo mezi 1 a 24. Výchozí hodnota je 10.
+Přizpůsobuje počet oken, která se zobrazí v seznamu Windows v nabídce **okna** . Zadejte číslo od 1 do 24. Výchozí hodnota je 10.
 
-**Počet položek zobrazovaných v seznamech**
+**Položky zobrazené v seznamu naposledy použitých položek**
 
-Přizpůsobí počet naposledy použitých projekty a soubory, které se zobrazují na **souboru** nabídky. Zadejte číslo mezi 1 a 24. Výchozí hodnota je 10. Toto je snadný způsob, jak načíst nedávno použité projekty a soubory.
+Přizpůsobuje počet naposledy použitých projektů a souborů, které se zobrazí v nabídce **soubor** . Zadejte číslo od 1 do 24. Výchozí hodnota je 10. Toto je snadný způsob, jak načíst nedávno použité projekty a soubory.
 
 **Zobrazit stavový řádek**
 
-Zobrazí stavový řádek. Stavový řádek je umístěn na spodní části okna IDE a zobrazí informace o průběhu probíhající operace.
+Zobrazí stavový řádek. Stavový řádek je umístěný v dolní části okna IDE a zobrazí informace o průběhu probíhajících operací.
 
 **Tlačítko Zavřít ovlivní pouze aktivní okno nástrojů**
 
-Určuje, kdy **Zavřít** po kliknutí na tlačítko, jen pro okno nástroje, který má právě fokus, je uzavřený a ne všechny oken nástrojů ukotvených v sadě. Ve výchozím nastavení je tato možnost vybrána.
+Určuje, že když se klikne na tlačítko **Zavřít** , zavře se jenom okno nástroje, které má fokus, a ne všechna okna nástrojů v ukotvené sadě. Ve výchozím nastavení je tato možnost vybraná.
 
-**Automaticky skrýt ovlivní pouze aktivní okno nástrojů**
+**Tlačítko automaticky skrýt ovlivní pouze aktivní okno nástrojů**
 
-Určuje, kdy **automaticky skrýt** po kliknutí na tlačítko, pouze panel nástrojů, který má právě fokus, je skrytý automaticky a nikoli všech oken nástrojů ukotvených v sadě. Ve výchozím nastavení tato možnost není vybraná.
+Určuje, že po kliknutí na tlačítko pro **automatické skrývání** bude automaticky skryto okno nástroje, které má fokus, a ne všechna okna nástrojů v ukotvené sadě. Ve výchozím nastavení není tato možnost vybrána.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
 - [Přizpůsobení rozložení oken](../../ide/customizing-window-layouts-in-visual-studio.md)

@@ -1,10 +1,9 @@
 ---
-title: Projekty a řešení – dialogové okno Možnosti
-ms.date: 07/14/2017
+title: Projekty a řešení, dialogové okno Možnosti
+ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
-- VS.ToolsOptionsPages.Projects.Locations
 helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
@@ -14,90 +13,71 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37d31f76a448933bb3809cd609ebd355c8e0a04b
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969069"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605948"
 ---
-# <a name="projects-and-solutions-page-options-dialog-box"></a>Stránku projekty a řešení, dialogové okno Možnosti
+# <a name="options-dialog-box-projects-and-solutions--general"></a>Dialogové okno Možnosti: Projekty a řešení \> – obecné
 
-Nastaví chování sady Visual Studio související s projekty a řešení. Zpřístupníte tyto možnosti, vyberte **nástroje** > **možnosti**, rozbalte **projekty a řešení**a pak vyberte **Obecné** .
+Pomocí této stránky můžete definovat chování sady Visual Studio související s projekty a řešeními. Chcete-li získat přístup k těmto možnostem, vyberte možnost **nástroje** >  **, rozbalte**položku **projekty a řešení**a pak vyberte možnost **Obecné**.
 
-Výchozí cesty pro složky projektu a šablony, které se konfigurují pomocí **umístění** kartu v dialogovém okně stejné.
+Na stránce **Obecné** jsou k dispozici následující možnosti.
 
-## <a name="general-page"></a>Obecná stránka
+## <a name="always-show-error-list-if-build-finishes-with-errors"></a>Při dokončení buildu vždycky zobrazit Seznam chyb s chybami
 
-Tyto možnosti jsou k dispozici na **Obecné** stránky.
+Otevře okno **Seznam chyb** při dokončování sestavení, pouze pokud se projekt nepovedlo sestavit. Zobrazí se chyby, ke kterým dojde během procesu sestavení. Pokud je tato možnost smazána, k chybám stále dochází, ale okno není po dokončení sestavení otevřeno. Tato možnost je ve výchozím nastavení povolená.
 
-### <a name="always-show-error-list-if-build-finishes-with-errors"></a>Vždy zobrazit seznam chyb-li sestavení dokončí s chybami
+## <a name="track-active-item-in-solution-explorer"></a>Sledovat aktivní položku v Průzkumník řešení
 
-Otevře **seznam chyb** okně při dokončení sestavení, pouze v případě, že projekt se nepovedlo sestavit. Se zobrazí chyby, ke kterým dochází během procesu sestavení. Když toto políčko zaškrtnuto, stále dochází k chybám, ale okno se neotevře, po dokončení sestavení. Tato možnost je povolená ve výchozím nastavení.
+Když se tato možnost vybere, **Průzkumník řešení** se automaticky otevře a vybere se aktivní položka. Vybraná položka se mění při práci s různými soubory v projektu nebo řešení nebo v různých součástech v návrháři. Pokud je tato možnost vymazána, výběr v **Průzkumník řešení** se nemění automaticky. Tato možnost je ve výchozím nastavení povolená.
 
-### <a name="track-active-item-in-solution-explorer"></a>Sledovat aktivní položku v Průzkumníku řešení
+## <a name="show-advanced-build-configurations"></a>Zobrazit pokročilé konfigurace sestavení
 
-Pokud je vybráno, **Průzkumníka řešení** automaticky otevře a aktivní položky je vybrána. Vybraná položka změny při práci s různé soubory v projektu nebo řešení nebo různé součásti v návrháři. Pokud tato možnost vybrána, výběr v **Průzkumníka řešení** nezmění automaticky. Tato možnost je povolená ve výchozím nastavení.
+Je-li vybrána tato možnost, možnosti konfigurace sestavení se zobrazí v dialogovém okně **stránky vlastností projektu** a v dialogovém okně **stránky vlastností řešení** . Pokud není zaškrtnuto, možnosti konfigurace sestavení se nezobrazí v dialogovém okně **stránky vlastností projektu** a v dialogovém okně **stránky vlastností řešení** pro Visual Basic a C# projekty, které obsahují jednu konfiguraci nebo dvě konfigurace. ladění a vydaná verze. Pokud má projekt uživatelsky definované konfigurace, zobrazí se možnosti konfigurace sestavení.
 
-### <a name="show-advanced-build-configurations"></a>Zobrazit pokročilou konfiguraci sestavení
+Pokud není vybráno, příkazy v nabídce **sestavení** , jako je **sestavení řešení**, **opětovné sestavení řešení**a **Vyčištění**, jsou prováděny v konfiguraci vydané verze a příkazy v nabídce **ladění** , jako je například **Start. Ladění** a **spouštění bez ladění**se provádí v konfiguraci ladění.
 
-Při výběru možnosti konfigurace sestavení se zobrazí na **stránky vlastností projektu** dialogové okno a **stránek vlastností řešení** dialogové okno. Není-li zaškrtnuto, možnosti konfigurace sestavení nejsou zobrazeny na **stránky vlastností projektu** dialogové okno a **stránek vlastností řešení** dialogové okno pro jazyk Visual Basic a C# projekty, které obsahují jeden konfigurace nebo dvě konfigurace pro ladění a vydání. Pokud projekt obsahuje konfigurace definovaná uživatelem, jsou uvedeny možnosti konfigurace sestavení.
+## <a name="always-show-solution"></a>Vždy zobrazit řešení
 
-Při zrušení výběru, příkazy na **sestavení** nabídky, jako například **sestavit řešení**, **znovu sestavit řešení**, a **Vyčistit řešení**, jsou proveden na konfiguraci vydané verze a příkazy na **ladění** nabídky, například **spustit ladění** a **spustit bez ladění**, jsou prováděny na konfiguraci ladění.
-
-### <a name="always-show-solution"></a>Vždy zobrazit řešení
-
-Při výběru řešení a všechny příkazy, které fungují v řešení jsou vždy zobrazen v integrovaném vývojovém prostředí. Není-li zaškrtnuto, všechny projekty byly vytvořeny jako samostatné projekty a nevidíte řešení v Průzkumníku řešení nebo příkazy, které fungují v řešení v integrovaném vývojovém prostředí Pokud řešení obsahuje pouze jeden projekt.
+Je-li toto políčko zaškrtnuto, řešení a všechny příkazy, které fungují na řešení, jsou vždy zobrazeny v integrovaném vývojovém prostředí. Pokud je zaškrtnuto, všechny projekty jsou vytvořeny jako samostatné projekty a toto řešení se nezobrazuje v Průzkumník řešení nebo příkazy, které fungují na řešeních v rozhraní IDE, pokud řešení obsahuje pouze jeden projekt.
 
 ::: moniker range="vs-2017"
 
-### <a name="save-new-projects-when-created"></a>Uložit nové projekty při vytvoření
+## <a name="save-new-projects-when-created"></a>Uložit nové projekty při vytvoření
 
-Pokud je vybráno, můžete zadat umístění pro váš projekt v **nový projekt** dialogové okno. Není-li zaškrtnuto, všechny nové projekty jsou vytvořeny jako dočasné projekty. Při práci s dočasné projekty, můžete vytvořit a experimentovat s projektem, aniž byste museli zadat umístění na disku.
+Když je tato možnost vybrána, můžete v dialogovém okně **Nový projekt** zadat umístění pro projekt. Po zaškrtnutí budou všechny nové projekty vytvořeny jako dočasné projekty. Při práci s dočasnými projekty můžete vytvořit a experimentovat s projektem bez nutnosti zadávat umístění na disku.
 
 ::: moniker-end
 
-### <a name="warn-user-when-the-project-location-is-not-trusted"></a>Upozornit uživatele, pokud umístění projektu není důvěryhodné
+## <a name="warn-user-when-the-project-location-is-not-trusted"></a>Upozornit uživatele, pokud umístění projektu není důvěryhodné
 
-Při pokusu o vytvoření nového projektu nebo otevřete existující projekt do umístění, které není plně důvěryhodné (třeba na cestu UNC nebo cesta k protokolu HTTP), zobrazí se zpráva. Tuto možnost použijte k určení, zda zpráva se zobrazí pokaždé, když se při pokusu o vytvoření nebo otevření projektu do umístění, které není plně důvěryhodné.
+Pokud se pokusíte vytvořit nový projekt nebo otevřít existující projekt v umístění, které není plně důvěryhodné (například na cestě UNC nebo v cestě HTTP), zobrazí se zpráva. Tuto možnost použijte, chcete-li určit, zda se zpráva zobrazí při každém pokusu o vytvoření nebo otevření projektu v umístění, které není plně důvěryhodné.
 
-### <a name="show-output-window-when-build-starts"></a>Zobrazit okno výstup při spuštění sestavení
+## <a name="show-output-window-when-build-starts"></a>Zobrazit okno výstup při zahájení sestavování
 
-Automaticky zobrazí [okno výstup](../../ide/reference/output-window.md) v integrovaném vývojovém prostředí od počátku řešení sestavení.
+Automaticky zobrazí [okno výstup](../../ide/reference/output-window.md) v integrovaném vývojovém prostředí na začátku sestavení řešení.
 
-### <a name="prompt-for-symbolic-renaming-when-renaming-files"></a>Vyzvat k symbolickému přejmenování při přejmenování souborů
+## <a name="prompt-for-symbolic-renaming-when-renaming-files"></a>Při přejmenování souborů zobrazit výzvu k zadání symbolického názvu
 
-Pokud je vybráno, Visual Studio zobrazí okno se zprávou s dotazem, jestli ji by měl také přejmenování všech referencí v projektu na prvek kódu.
+Je-li vybrána tato možnost, aplikace Visual Studio zobrazí okno se zprávou s dotazem, zda by měla být také přejmenovány všechny odkazy v projektu na prvek kódu.
 
-### <a name="prompt-before-moving-files-to-a-new-location"></a>Zobrazit výzvu před přesunutím souborů do nového umístění
+## <a name="prompt-before-moving-files-to-a-new-location"></a>Dotázat se před přesunutím souborů na nové umístění
 
-Pokud je vybráno, Visual Studio zobrazí okno se zprávou potvrzení před akcemi v se změnilo umístění souborů **Průzkumníka řešení**.
+Je-li vybrána tato možnost, aplikace Visual Studio zobrazí okno potvrzovací zprávy před změnou umístění souborů pomocí akcí v **Průzkumník řešení**.
 
-### <a name="reopen-documents-on-solution-load"></a>Znovu otevřít dokumenty u načtení řešení
+## <a name="reopen-documents-on-solution-load"></a>Znovu otevřít dokumenty při načtení řešení
 
-**Zavedena v sadě Visual Studio 2017 verze 15.8**
+**Představeno v aplikaci Visual Studio 2017 verze 15,8**
 
-Pokud je vybráno, dokumenty, které byly zanechány otevřít předchozí doba řešení bylo ukončeno. jsou automaticky otevře při otevření řešení.
+Když je tato možnost vybraná, dokumenty, které zůstaly otevřené, se po otevření řešení automaticky otevřou.
 
-Znovu otevřít určité typy souborů nebo návrháři zpozdit načtení řešení. Zrušte zaškrtnutí této možnosti [vylepšil výkon při zatížení řešení](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) Pokud už nechcete obnovit předchozí místní řešení.
-
-## <a name="locations-page"></a>Stránka umístění
-
-Tyto možnosti jsou k dispozici na **umístění** stránky.
-
-### <a name="projects-location"></a>Umístění projektů
-
-Určuje výchozí umístění, kde sada Visual Studio vytvoří nové projekty a řešení. Dialogová okna několika také použít tak umístění, nastavte tuto možnost pro složku počáteční body. Například **otevřít projekt** dialogové okno používá toto umístění pro **projekty** zástupce.
-
-### <a name="user-project-templates-location"></a>Umístění šablon projektů uživatele
-
-Určuje výchozí umístění, která se používá k hledání pro šablony projektů vytvořené uživatelem. Další informace najdete v tématu [jak: Hledání a organizace šablon](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
-
-### <a name="user-item-templates-location"></a>Umístění šablon položek uživatele
-
-Určuje výchozí umístění, která se používá k hledání pro šablony položek vytvořený uživatel. Další informace najdete v tématu [jak: Hledání a organizace šablon](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Opětovné otevření určitých typů souborů nebo návrhářů může zpozdit zatížení řešení. Zrušte tuto možnost, pokud chcete [zlepšit výkon při načítání řešení](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) , pokud nechcete obnovit předchozí kontext řešení.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Dialogové okno Možnosti, projekty a řešení, sestavit a spustit](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
+- [Dialogové okno Možnosti: Umístění projektů a \> řešení](projects-solutions-locations-options.md)
+- [Dialogové okno Možnosti, projekty a řešení, sestavení a spuštění](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Dialogové okno Možnosti, Projekty a řešení, Webové projekty](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

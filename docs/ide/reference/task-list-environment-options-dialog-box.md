@@ -22,47 +22,46 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b2fc59a2f04dc30ef8b052e93fc6ffdf030e054
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 980b4ae40b1b7706b47bd884cc02dad14b743625
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945024"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605685"
 ---
-# <a name="options-dialog-box-environment--task-list"></a>Dialogové okno Možnosti: Prostředí \> seznamu úloh
+# <a name="options-dialog-box-environment--task-list"></a>Dialogové okno Možnosti: Seznam úkolů \> prostředí
 
-Tato stránka možností umožňuje přidat, odstranit a změnit tokeny komentáře, které generují **seznamu úkolů** připomenutí. Chcete-li zobrazit tato nastavení, vyberte **možnosti** z **nástroje** nabídky, rozbalte **prostředí** složky a zvolte **seznamu úkolů**.
+Tato stránka možností umožňuje přidávat, odstraňovat a měnit tokeny komentářů, které generují **seznam úkolů** připomenutí. Chcete-li zobrazit tato nastavení, vyberte **Možnosti** v nabídce **nástroje** , rozbalte složku **prostředí** a zvolte možnost **seznam úkolů**.
 
-## <a name="task-list-tokens"></a>Tokeny seznamu úkolů
+## <a name="task-list-tokens"></a>Tokeny Seznam úkolů
 
-Při vložení komentář do svého kódu, jejichž text začíná s tokenem od **Token seznam**, **seznamu úkolů** komentáře jako nová položka se zobrazí pokaždé, když je soubor otevřen pro úpravy. Klikněte na tlačítko **seznamu úkolů** položky můžete přejít přímo na řádku komentáře v kódu. Další informace najdete v tématu [pomocí seznamu úkolů](../../ide/using-the-task-list.md).
+Když vložíte komentář do kódu, jehož text začíná tokenem ze **seznamu tokenu**, **seznam úkolů** zobrazí váš komentář jako novou položku vždy, když je soubor otevřen pro úpravy. Klikněte na položku **seznam úkolů** pro přechod přímo na řádek komentáře ve vašem kódu. Další informace najdete v tématu [použití seznam úkolů](../../ide/using-the-task-list.md).
 
-Token List\
-Zobrazí seznam tokenů a umožňuje přidat nebo odebrat vlastní tokeny. Tokeny komentáře jsou malá a velká písmena v C# a C++, ale ne v jazyce Visual Basic.
+Seznam tokenů \
+Zobrazí seznam tokenů a umožňuje přidat nebo odebrat vlastní tokeny. Tokeny komentáře rozlišují velká a C# malá C++písmena v a, ale ne v Visual Basic.
 
 > [!NOTE]
-> Pokud nezadáte požadovaný token přesně tak, jak se zobrazí v seznamu tokenů, úkolu komentář se nezobrazí v **seznamu úkolů**.
+> Pokud nechcete požadovaný token zadat přesně tak, jak se zobrazuje v seznamu tokenů, nebude se v **seznam úkolů**zobrazovat úloha s komentářem.
 
-Priority\
-Nastaví prioritu úlohy, které používají vybraný token (nízká, normální nebo vysoká). Komentáře k úkolu, které začínají s tímto tokenem jsou automaticky přiřazeny určené priority v **seznamu úkolů**.
+Upřednostněn
+Nastaví prioritu úloh, které používají vybraný token (nízká, normální nebo vysoká). K komentářům úlohy začínajícím tímto tokenem se automaticky přiřadí určená priorita v **seznam úkolů**.
 
-Name\
-Zadejte řetězec tokenu tady a pak klikněte na tlačítko **přidat** přidat řetězec do seznam tokenů.
+Název
+Sem zadejte řetězec tokenu a potom kliknutím na **Přidat** přidejte řetězec do seznamu tokenů.
 
 Add\
-Povolený při zadání nového **název**. Klikněte na tlačítko Přidat nový řetězec tokenu pomocí zadaných hodnot **název** a **Priority** pole.
+Tato možnost je povolená, když zadáte nový **název**. Kliknutím můžete přidat nový řetězec tokenu s použitím hodnot zadaných do polí **název** a **Priorita** .
 
-Delete\
-Kliknutím můžete odstranit vybraný token v seznamu tokenů. Nelze odstranit výchozí token komentář.
+Dstranit
+Kliknutím odstraníte vybraný token ze seznamu tokenů. Nelze odstranit výchozí token komentáře.
 
-Change\
-Kliknutím provést změny existujícího tokenu pomocí zadaných hodnot **název** a **Priority** pole.
+Mění
+Kliknutím provedete změny v existujícím tokenu pomocí hodnot zadaných do polí **název** a **Priorita** .
 
 > [!NOTE]
-> Nelze přejmenovat nebo odstranit výchozí token komentář, ale můžete změnit jeho úroveň priority.
+> Výchozí token komentáře nelze přejmenovat ani odstranit, ale můžete změnit jeho úroveň priority.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Používání seznamu úkolů](../../ide/using-the-task-list.md)
-- [Nastavení záložek v kódu](../../ide/setting-bookmarks-in-code.md)
-- [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
+- [Použití seznamu úloh](../../ide/using-the-task-list.md)
+- [N záložky v kódu](../../ide/setting-bookmarks-in-code.md)

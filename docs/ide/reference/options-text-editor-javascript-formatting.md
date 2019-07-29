@@ -16,20 +16,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23067475c8c5ff4d858ade8443946f7d9c73afc
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461337"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605997"
 ---
-# <a name="options-text-editor-javascript-formatting"></a>Možnosti, textový editor, JavaScript, formátování
-Stránka **formátování** dialogového okna **Možnosti** slouží k nastavení možností formátování kódu v editoru kódu. Chcete-li získat přístup k této stránce, na panelu nabídek zvolte **nástroje**, **Možnosti**a potom rozbalte **Text Editor**, **JavaScript**a **formátování**.
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Dialogové okno Možnosti: Formátování textového \> editoru \> JavaScript
+
+Stránka **formátování** dialogového okna **Možnosti** slouží k nastavení možností formátování kódu v editoru kódu. Chcete-li získat přístup k této stránce, v řádku nabídek zvolte**možnost** **nástroje** > a potom rozbalte**formátování** **textový editor** > **JavaScript/TypeScript** > .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="automatic-formatting"></a>Automatické formátování
- Tyto možnosti určují, kdy se formátování vyskytne v zobrazení **zdroje** .
+
+Tyto možnosti určují, kdy se formátování vyskytne v zobrazení **zdroje** .
 
 ### <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
 
@@ -42,9 +44,10 @@ Stránka **formátování** dialogového okna **Možnosti** slouží k nastaven�
 |**Formátovat při vložení**|Pokud je vybrána tato možnost, Editor kódu přeformátuje kód při vložení do editoru. Editor používá aktuálně definovaná pravidla formátování. Pokud tato možnost není vybrána, editor použije původní formátování vloženého kódu.|
 
 ## <a name="new-lines"></a>Nové řádky
- Tyto možnosti určují, zda editor kódu vloží levou složenou závorku pro funkce a řídicí bloky na nový řádek.
 
-### <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
+Tyto možnosti určují, zda editor kódu vloží levou složenou závorku pro funkce a řídicí bloky na nový řádek.
+
+### <a name="uielement-list"></a>UIElement – seznam
 
 |Možnost|Popis|
 |------------|-----------------|
@@ -52,9 +55,10 @@ Stránka **formátování** dialogového okna **Možnosti** slouží k nastaven�
 |**Pro řídicí bloky umístit levou složenou závorku na nový řádek**|Je-li vybrána tato možnost, Editor kódu přesune levou složenou závorku spojenou s řídicím blokem ( `if` například `while` a řídicími bloky) na nový řádek.|
 
 ## <a name="spacing"></a>Mezery
- Tyto možnosti určují, jak jsou mezery vloženy do zobrazení **zdroje** .
 
-### <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
+Tyto možnosti určují, jak jsou mezery vloženy do zobrazení **zdroje** .
+
+### <a name="uielement-list"></a>UIElement – seznam
 
 |Možnost|Popis|
 |------------|-----------------|
@@ -65,6 +69,6 @@ Stránka **formátování** dialogového okna **Možnosti** slouží k nastaven�
 |**Vložit mezeru za klíčové slovo funkce pro anonymní funkce**|Pokud je vybrána tato možnost, Editor kódu přidá mezeru za `function` klíčovým slovem pro anonymní funkce.|
 |**Vložit mezeru za levou a před pravou závorku, která není prázdná**|Pokud je vybrána tato možnost, Editor kódu přidá mezeru za levou (otevírací) závorku a před pravou závorku, pokud jsou v závorkách přítomny neprázdné znaky.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Obecné, Prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)

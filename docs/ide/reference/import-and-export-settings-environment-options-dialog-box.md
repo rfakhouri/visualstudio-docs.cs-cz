@@ -10,17 +10,13 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 312038f14da876fae91b8d65e47235adeb1d14ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d683185927cf6b184c112df559a7da38da4a1662
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778502"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605589"
 ---
-# <a name="options-dialog-box-environment--import-and-export-settings"></a>Dialogové okno Možnosti: Prostředí \> nastavení importu a exportu
+# <a name="options-dialog-box-environment--import-and-export-settings"></a>Dialogové okno Možnosti: Nastavení \> importu a exportu prostředí
 
-Tato stránka slouží k určení, kde je uložený soubor nastavení uživatele. Další informace o nastavení najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-### <a name="see-also"></a>Viz také:
-
-- [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
+Pomocí této stránky můžete zadat, kam se má uložit soubor uživatelských nastavení. Další informace o nastaveních naleznete v tématu [přizpůsobení prostředí IDE sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).

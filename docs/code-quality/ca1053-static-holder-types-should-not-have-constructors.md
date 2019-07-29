@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f04355a266f87a039b8197675c2f5377b840ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: fec59e1d683c7867eb1cad9ae4e796a0815200d4
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388317"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604783"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Statické typy vlastníků by neměly mít konstruktory
+# <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053: Typy statických držitelů by neměly mít výchozí konstruktory.
 
 |||
 |-|-|
@@ -30,22 +30,21 @@ ms.locfileid: "63388317"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Veřejný nebo vnořený veřejný typ deklaruje pouze statické členy a má veřejný nebo chráněný výchozí konstruktor.
+> [!NOTE]
+> Pravidlo CA1053 je kombinované do [CA1052: Statické typy držitelů by měly](ca1052-static-holder-types-should-be-sealed.md) být zapečetěné v [analyzátorech FxCop](fxcop-analyzers.yml).
+
+## <a name="cause"></a>příčina
+
+Veřejný nebo vnořený veřejný typ deklaruje pouze statické členy a má výchozí konstruktor.
 
 ## <a name="rule-description"></a>Popis pravidla
- Konstruktor není nutný, protože volání statických členů nevyžaduje instanci typu. Navíc vzhledem k tomu, že typ nemá žádné nestatické členy, vytvoření instance neposkytuje přístup k libovolnému členy tohoto typu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, odeberte výchozí konstruktor nebo ji učiňte soukromou.
+Výchozí konstruktor není potřebný, protože volání statických členů nevyžaduje instanci typu. Vzhledem k tomu, že typ nemá nestatické členy, vytvoření instance neposkytuje přístup k žádnému z členů typu.
 
-> [!NOTE]
-> Některé kompilátory automaticky vytvořit výchozí veřejný konstruktor, pokud typ nedefinuje žádné konstruktory. Pokud tomu tak s typem, přidejte privátní výchozí konstruktor, chcete-li odstranit porušení zásady.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+
+Chcete-li opravit porušení tohoto pravidla, odeberte výchozí konstruktor.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo. Přítomnost konstruktoru naznačuje, že typ není statický typ.
 
-## <a name="example"></a>Příklad
- Následující příklad ukazuje typ, který porušuje tato pravidla. Všimněte si, že neexistuje žádný výchozí konstruktor ve zdrojovém kódu. Když tento kód je zkompilován do sestavení, kompilátor jazyka C# vloží výchozí konstruktor, který bude toto pravidlo porušují. Chcete-li opravit, deklarujte soukromý konstruktor.
-
- [!code-csharp[FxCop.Design.StaticTypes#1](../code-quality/codesnippet/CSharp/ca1053-static-holder-types-should-not-have-constructors_1.cs)]
+Nepotlačujte upozornění na toto pravidlo. Přítomnost výchozího konstruktoru naznačuje, že typ není statický typ.

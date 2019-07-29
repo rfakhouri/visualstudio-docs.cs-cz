@@ -15,39 +15,35 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: a67e909dc43f17e12dd63b7a8a3b2e8a4afacc5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f5026a014b5adc96f0729d130c4398474d6d413
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969043"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605903"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Dialogové okno Snadné spuštění, Prostředí, Možnosti
 
-Můžete použít **Snadné spuštění** chcete rychle najít a spustit akce pro prostředky IDE, jako jsou možnosti, šablony, nabídky. Nemůžete použít **Snadné spuštění** k vyhledání kódu a symbolům. **Snadné spuštění** vyhledávacího pole se nachází v pravém horním rohu řádku nabídek a je přístupný stisknutím kombinace kláves **Ctrl**+**Q**. Do pole zadejte hledaný řetězec. K vyhledání řetězce, které obsahují @, použijte ”@@”. 
+**Rychlé spuštění** můžete použít k rychlému vyhledávání a provádění akcí pro prostředky IDE, jako jsou například možnosti, šablony nebo nabídky. Nelze použít funkci **snadného spuštění** k hledání kódu a symbolů. Vyhledávací pole **Snadné spuštění** se nachází v pravém horním rohu řádku nabídek a je přístupné stisknutím **kombinace kláves CTRL**+**Q**. Do pole zadejte hledaný řetězec. K vyhledání řetězce, které obsahují @, použijte ”@@”.
 
-**Snadné spuštění** je ve výchozím nastavení povolené při instalaci sady Visual Studio. Na panelu nabídky můžete zobrazit nebo skrýt **Snadné spuštění** výběrem **nástroje** > **možnosti**. Rozbalte **prostředí** uzel a klikněte na tlačítko **Snadné spuštění**. Zaškrtněte nebo zrušte zaškrtnutí **umožňují snadné spuštění** zaškrtávací políčko. Můžete také povolit nebo zakázat kategorie vyhledávání na této stránce.
+Při instalaci sady Visual Studio je **Rychlé spuštění** povoleno ve výchozím nastavení. Na panelu nabídek můžete zobrazit nebo skrýt**Možnosti**snadného **spuštění** výběrem možností **nástroje** > . Rozbalte uzel **prostředí** a pak zvolte možnost **Snadné spuštění**. Zaškrtněte nebo zrušte zaškrtnutí políčka **Povolit rychlé spuštění** . Na této stránce můžete také povolit nebo zakázat kategorie hledání.
 
 ## <a name="category-list"></a>Seznam kategorií
 
-Rychlé spuštění výsledky hledání se zobrazí v čtyři kategorie: **Většina naposledy použité**, **nabídky**, **možnosti**, a **otevřené dokumenty**, spolu s počtem položek v kategorii. Průchodné výsledky hledání podle kategorií, zvolte **Ctrl**+**Q** klíče pro zobrazení všech výsledků z další kategorie. Jakmile se zobrazí poslední kategorie, **Ctrl**+**Q** ukazuje několik výsledky z každé kategorie. Stisknutím klávesy **Ctrl**+**Shift**+**Q** procházení kategorií v obráceném pořadí. Chcete-li zobrazit všechny výsledky hledání podle kategorie, zvolte název kategorie.
+Výsledky hledání snadného spuštění se zobrazí ve čtyřech kategoriích: **Naposledy použité** **nabídky**, **Možnosti**a **otevřené dokumenty**spolu s počtem položek v kategorii. Chcete-li procházet výsledky hledání podle kategorie, klikněte na klávesy **CTRL**+**Q** , abyste zobrazili všechny výsledky z další kategorie. Po zobrazení poslední kategorie vám **CTRL**+**Q** zobrazí několik výsledků z každé kategorie. Stisknutím **kombinace kláves CTRL**+**SHIFT**+**Q** procházejte kategorie v opačném pořadí. Chcete-li zobrazit všechny výsledky hledání v kategorii, vyberte název kategorie.
 
-Následující klávesové zkratky můžete použít k omezení hledání na konkrétní kategorie.
+Pomocí následujících zástupců můžete omezit hledání na konkrétní kategorie.
 
-|Kategorie|Zástupce|Popis místní|
+|Kategorie|Zástupce|Popis zástupce|
 |--------------|--------------| - |
-|Naposledy použité|@mru<br /><br /> Třeba `@mru font`.|Zobrazí až pět položek, které jste **naposledy použitých**.|
-|Nabídky|@menu<br /><br /> Třeba `@menu project`.|Omezení vyhledávání a položkami nabídky.|
-|Možnosti|@opt<br /><br /> Třeba `@opt font`.|Omezuje vyhledávání na nastavení v **možnosti** dialogové okno.|
-|Dokumenty|@doc<br /><br /> Třeba `@doc program.cs`.|Omezuje vyhledávání na názvy souborů a cesty otevřené dokumenty pro kritéria vyhledávání, ale nebude hledat text mezi soubory sami.|
+|Naposledy použité|@mru<br /><br /> Třeba `@mru font`.|Zobrazí až pět položek, které jste **naposledy použili**.|
+|Nabídky|@menu<br /><br /> Třeba `@menu project`.|Omezí hledání na položky nabídky.|
+|Možnosti|@opt<br /><br /> Třeba `@opt font`.|Omezí hledání na nastavení v dialogovém okně **Možnosti** .|
+|Dokumenty|@doc<br /><br /> Třeba `@doc program.cs`.|Omezí hledání na názvy souborů a cesty k otevřeným dokumentům pro kritéria hledání, ale nehledá text v samotných souborech.|
 
 > [!NOTE]
-> Můžete změnit klávesové zkratky na **Obecné** > **klávesnice** stránku **možnosti** dialogové okno.
+> Klávesové zkratky můžete změnit na stránce **Obecné** > **klávesnice** v dialogovém okně **Možnosti** .
 
 ## <a name="show-previous-results"></a>Zobrazit předchozí výsledky
 
-Ve výchozím nastavení není mezi relacemi hledání trvalých hledaný termín, který zadáte. Hledaný řetězec není zaškrtnuto, je-li vyhledat termín, přesuňte kurzor mimo **Snadné spuštění** oblasti a pak se vraťte zpět. Pokud chcete zachovat výsledky hledání, přejděte na **možnosti** dialogového okna zvolte **Snadné spuštění**a pak vyberte **zobrazit výsledky předchozího vyhledávání. Pokud je aktivováno Snadné spuštění.** Zaškrtávací políčko. Při příštím hledání, ponechte v oblasti Snadné spuštění a vraťte, snadné spuštění bude uchovávat hledaný termín, naposledy použité a také zobrazit výsledky hledání.
-
-## <a name="see-also"></a>Viz také:
-
-- [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
+Ve výchozím nastavení se hledaný termín, který zadáte, netrval mezi vyhledávacími relacemi. Hledaný řetězec je při hledání termínu vymazán, přesuňte kurzor mimo oblast snadné **spuštění** a pak se vraťte zpět. Chcete-li zachovat výsledky hledání, otevřete dialogové okno **Možnosti** , zvolte možnost **Snadné spuštění**a pak vyberte možnost **Zobrazit výsledky hledání z předchozího hledání, když je aktivováno snadné spuštění.** zaškrtávací políčko. Při příštím hledání ponechte oblast snadné spuštění a vraťte se zpátky. rychlé spuštění zachová hledaný termín a také zobrazí výsledky hledání.

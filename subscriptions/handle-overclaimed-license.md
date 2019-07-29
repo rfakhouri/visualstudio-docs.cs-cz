@@ -1,49 +1,41 @@
 ---
-title: Zpracování over-pass-the nárokován licence | Dokumentace Microsoftu
+title: Zpracovat přetížené licence | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 02/13/2018
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
-description: Zjistěte, jak můžou správci vyřešit over-pass-the nárokován předplatná
-ms.openlocfilehash: 23a0888a670c10af4447d7a097067ffe4fe70c0f
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Zjistěte, jak můžou správci vyřešit přetížená předplatná.
+ms.openlocfilehash: 924f6fb2c513d70aefd28c1d4ff18d1af62178c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783455"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605504"
 ---
-# <a name="overallocated-subscriptions"></a>Přetížené předplatná
-
-Někdy jsou po předplatitele byly přidány, což může vést k nutnosti informace změnit objednávky přiřazené předplatné než počet licencí vlastněná vaší společností. Pokud k tomu dojde, předplatitelé karta zobrazuje výstrahy a poskytuje další informace.
+# <a name="overallocated-subscriptions"></a>Přetížená předplatná
+V některých případech se po přidání předplatitelů mění objednávky, což může vést k většímu počtu přiřazených předplatných než k licencím vlastněných vaší společností. Tato možnost se nazývá "přetížení".  Pokud k tomu dojde, karta předplatitelé zobrazí výstrahu a poskytne vám další informace o tom, kolik předplatných bylo přetíženo.
 
 > [!NOTE]
-> Overclaimed scénáře nejsou povoleny v programu Open License programy.  Navíc další programy mohou tyto informace na portálu zobrazovat odlišně.
+> Přetížení nejsou u Open Licensech programů povolená.  Další programy můžou tyto informace na portálu zobrazit jinak.
 >
 > [!div class="mx-imgBorder"]
-> ![Všimněte si, že over-pass-the nárokován předplatných](_img/over-claimed/over-claimed-alert.png)
+> ![Oznámení o vyhodnocených předplatných](_img/over-claimed/over-claimed-alert.png)
 
-## <a name="resolving-overallocated-subscriptions"></a>Řešení přetížené předplatná
+## <a name="resolve-overallocated-subscriptions"></a>Vyřešit přetížené odběry
+Přetížení můžete vyřešit několika způsoby:
+- Pokud si chcete koupit další odběry, obraťte se na svého prodejce.
+- Počkejte prosím, než se dokončí vaše roční období v hodnotě true a platíte za přetížené předplatné v daném okamžiku. 
+- Odstraňte některá přiřazení předplatného.  (To nebrání tomu, aby platba při ročním pravdivosti, která je pravdivá, jako pravdivá, byla založená na maximálním počtu přidaných předplatných v průběhu roku.)
 
-Chcete-li vyřešit přetížené licence:
-
-1. Klikněte na tlačítko textu výstrahy. Tím se zobrazí filtrovaný seznam předplatitele, které jsou přiřazeny na úrovni předplatného a datum vypršení platnosti, která je nadměrně jste požádali. 
-
-2. Odeberte odběratele podle potřeby k nápravě over-pass-the nárokován licence. 
-
-3. Přehled na levé straně stránky se aktualizuje a zobrazí, že jste ještě jednou v dodržování předpisů a všech over-pass-the nárokován upozornění zmizí. 
-
-## <a name="billing-and-true-up"></a>Fakturace a true nahoru
-
-Pokud vaše organizace má smlouvu Enterprise (EA), správci budou moct bez nutnosti pořizovat jejich přiřazení předplatných a platit později prostřednictvím odsouhlasení proces označovaný jako "true nahoru".  Pokud jste overallocate, vaše organizace bude účtovat maximální počet předplatných, které jsou přiřazené uživatelům během "true nahoru".  To platí i v případě, že už nebude mít maximální počet předplatných, které jsou přiřazeny v době probíhá true nahoru.  Další informace o monitorování maximální využití najdete [maximální využití](maximum-usage.md) tématu.
+## <a name="billing-and-true-up"></a>Fakturace a pravdivost
+Pokud má vaše organizace smlouva Enterprise (EA), správci můžou přiřadit předplatné bez jejich nákupu a platit za ně později prostřednictvím procesu odsouhlasení označovaného jako "pravda".  Při přetížení se ve vaší organizaci bude účtovat maximální počet předplatných přiřazených uživatelům během "pravdivého".  Platí to i v případě, že už nebudete mít k dispozici maximální počet předplatných, které jsou přiřazené v době, kdy se pravdivá doba projeví.  Další informace o monitorování maximálního využití najdete v tématu věnovaném [maximálnímu využití](maximum-usage.md) .
 
 > [!Important]
-> Pokud předplatných sady Visual Studio pomocí GitHub Enterprise mají přiřazenou správci předplatného sady Visual Studio a který by byl nákupu těchto předplatných, nebudou viditelné pro GitHub Enterprise admins v rámci organizace. K zajištění Githubu Enterprise předplatná jsou viditelné, nákupu včetně **alespoň jeden** pomocí GitHub Enterprise sady Visual Studio Professional nebo Visual Studio Enterprise s předplatným Githubu Enterprise by měl provést první čas, kdy jsou přiřazeny předplatná.  
+> Pokud jsou předplatná sady Visual Studio s GitHubem Enterprise přiřazena pomocí Správce předplatných sady Visual Studio a nikdy se nekoupí těchto předplatných, nebudou se v rámci organizace zobrazovat na GitHub Enterprise Admins. Pokud chcete zajistit, aby se předplatná GitHubu Enterprise zobrazovala, měli byste při prvním přihlášení k předplatným v rámci předplatného na webu GitHub Enterprise nebo Visual Studio Enterprise provést nákup, včetně **aspoň jednoho** Visual Studio Professional. jsou přiřazeny.
 >
-> Je zodpovědností zákazníka, aby se zajistilo, že pro každé předplatné Githubu, který je přiřazen odpovídající sady Visual Studio s předplatným Githubu přiřazená portálu spravovat zůstal zajištěn soulad s licenčním požadavkům pro tento předplatné.
+> Je zodpovědností zákazníka, aby bylo zajištěno, že pro každé předplatné GitHub, kterému je přiřazeno, je k dispozici odpovídající předplatné sady Visual Studio s předplatným GitHub na portálu pro správu, aby zůstalo v souladu s licenčními požadavky pro toto formě.
 
-Další informace o správě [předplatných sady Visual Studio pomocí GitHub Enterprise](assign-github.md).
-
-## <a name="support-resources"></a>Informační zdroje podpory
-
-- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+## <a name="next-steps"></a>Další kroky
+- Přečtěte si další informace o správě předplatných [sady Visual Studio pomocí GitHubu Enterprise](assign-github.md).
+- Pokud potřebujete pomoc s prodejem, předplatnými, účty a fakturací za předplatná sady Visual Studio, kontaktujte [podporu](https://visualstudio.microsoft.com/subscriptions/support/)předplatných sady Visual Studio

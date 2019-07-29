@@ -12,48 +12,47 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ef55b44d57cecadb690637c17c0a35e9cb0659
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: bdf19530461d52523bc581835e14fcaabe0e9a76
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531616"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605429"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Postupy: Správa zalamování řádků v editoru
 
-Můžete nastavit a zrušit **zalamování** možnost. Když nastavíte tuto možnost, zobrazí se na další řádek část dlouhý řádek, který přesahuje aktuální šířku okna editoru kódu. Pokud tato možnost vybrána, například pro usnadnění použití číslování řádků, můžete posouvat doprava a zobrazit konce dlouhé řádky.
+Můžete nastavit a vymazat možnost **zalamování slov** . Pokud je tato možnost nastavena, část dlouhé čáry, která přesahuje aktuální šířku okna editoru kódu, se zobrazí na dalším řádku. Pokud je tato možnost prázdná, například pro usnadnění použití číslování řádků, můžete přejít na pravé tlačítko a zobrazit konce dlouhých řádků.
 
 > [!NOTE]
-> Toto téma se vztahuje pouze k sadě Visual Studio ve Windows. Visual Studio pro Mac v současné době nepodporuje zalamování řádků.
+> Toto téma se vztahuje pouze na Visual Studio ve Windows. Visual Studio pro Mac aktuálně nepodporuje zalamování řádků.
 
-## <a name="to-set-word-wrap-preferences"></a>Nastavení aplikace word wrap předvoleb
+## <a name="to-set-word-wrap-preferences"></a>Nastavení předvoleb zalamování řádků
 
-1. Na **nástroje** nabídce vyberte možnost **možnosti**.
+1. V nabídce **nástroje** vyberte možnost **Možnosti**.
 
-2. V **textový Editor** složky, zvolte **Obecné** možnosti **všechny jazyky** podsložky globální nastavení této možnosti.
+2. Ve složce **textový editor** výběrem možnosti **Obecné** v podsložce **všechny jazyky** nastavte tuto možnost globálně.
 
      – nebo –
 
-     Zvolte **Obecné** možnosti v podsložce pro jazyk, ve kterém jsou programování.
+     V podsložce vyberte **Obecné** možnosti pro jazyk, ve kterém programujete.
 
-3. V části **nastavení**zaškrtněte nebo zrušte **zalamování** možnost.
+3. V části **Nastavení**zaškrtněte nebo zrušte zaškrtnutí políčka **zalamování řádků** .
 
-     Když **zalamování řádků** je vybraná možnost, **brazit piktogramy pro zalamování řádků** je povolená možnost.
+     Je-li vybrána možnost **zalamování řádků** , možnost **Zobrazit vizuální glyfy pro zalamování řádků** je povolena.
 
-4. Vyberte **brazit piktogramy pro zalamování** možnost, pokud chcete zobrazit indikátor vrátit šipku, kde dlouhý řádek zalamuje na další řádek. Pokud nechcete zobrazovat indikátor šipky, zrušte zaškrtnutí tohoto políčka.
+4. Vyberte možnost **Zobrazit vizuální glyfy pro zalamování řádků** , pokud upřednostňujete zobrazení indikátoru pro návratové šipky, kde se dlouhá čára zalomí na druhý řádek. Tuto možnost zrušte, pokud nechcete zobrazovat šipky indikátorů.
 
     > [!NOTE]
-    > Tyto šipky připomenutí nejsou přidány do kódu; jsou pouze pro účely zobrazení.
+    > Tyto šipky připomenutí nejsou přidány do kódu; jsou jen pro účely zobrazení.
 
 ## <a name="known-issues"></a>Známé problémy
 
-Pokud jste obeznámeni s zalamování řádků v poznámkovém bloku ++, Sublime Text nebo Visual Studio Code, mějte na paměti následující problémy, kde sady Visual Studio se chová jinak než ostatní editory:
+Pokud jste obeznámeni se zalamováním řádků v programu Notepad + +, podprogramový text nebo Visual Studio Code, pamatujte na následující problémy, kde se Visual Studio chová jinak než v jiných editorech:
 
-* [Klikněte na tři nevybere celý řádek](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
-* [Příkazy Vyjmout nedojde k odstranění celý řádek](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
-* [Klíč ukončení stiskněte dvakrát nepřesouvá kurzoru na konec řádku](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
+* [Třikrát kliknout na možnost nevybírat celý řádek](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
+* [Příkaz Vyjmout neodstraní celý řádek.](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
+* [Stisknutím klávesy END dvakrát nepřesunete kurzor na konec řádku.](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Textový editor, dialogové okno Možnosti](../../ide/reference/text-editor-options-dialog-box.md)
 - [Funkce editoru kódu](../../ide/writing-code-in-the-code-and-text-editor.md)

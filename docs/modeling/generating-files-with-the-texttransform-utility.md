@@ -1,6 +1,6 @@
 ---
 title: Generování souborů pomocí nástroje TextTransform
-ms.date: 03/22/2018
+ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c7a33f7510eb862ed6af1f1d5337d8d3e2743ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f224419cd92b760d71045859a13887a83115b987
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993757"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606093"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generování souborů pomocí nástroje TextTransform
 
@@ -24,21 +24,37 @@ TextTransform.exe je nástroj příkazového řádku, který vám pomůže trans
 > [!NOTE]
 > Pokud chcete provést transformaci textu jako součást procesu sestavení, zvažte použití nástroje MSBuild úlohy transformace textu. Další informace najdete v tématu [generování kódu v procesu sestavení](../modeling/code-generation-in-a-build-process.md). Na počítači, na kterém je nainstalovaná sada Visual Studio můžete taky psát aplikace nebo rozšíření sady Visual Studio, který může transformace textových šablon. Další informace najdete v tématu [zpracování textových šablon pomocí vlastního hostitele](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- TextTransform.exe se nachází v následujícím adresáři:
+TextTransform.exe se nachází v následujícím adresáři:
+ 
+::: moniker range=">=vs-2019"
 
- **\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE**
+**\Program Files (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
 
-pro edice Professional nebo
+pro Professional Edition nebo
 
- **\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+**\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
 
- pro Enterprise edition.
+pro Enterprise Edition.
+
+::: moniker-end
+ 
+::: moniker range="vs-2017"
+
+**\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE**
+
+pro Professional Edition nebo
+
+**\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+
+pro Enterprise Edition.
 
 V předchozích verzích sady Visual Studio se soubor nachází v následujícím umístění:
 
 **\Program Files (x86)\Common Files\Microsoft Shared\TextTemplating\{version}**
 
 Pokud {version} závisí na nainstalované předchozí verze.
+
+::: moniker-end
 
 ## <a name="syntax"></a>Syntaxe
 

@@ -31,60 +31,59 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e74358d4eb24d54c36ee099942dfbf0b5ca40210
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a09036e0c0f83d262760598dd02e6cf6e8cdd38e
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827047"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606073"
 ---
-# <a name="options-dialog-box-environment--documents"></a>Dialogové okno Možnosti: Prostředí \> dokumentů
+# <a name="options-dialog-box-environment--documents"></a>Dialogové okno Možnosti: Dokumenty \> prostředí
 
-Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazování dokumentů v integrovaném vývojovém prostředí (IDE) a spravovat externí změny dokumentů a souborů. Toto dialogové okno se zpřístupní po kliknutí **možnosti** na **nástroje** nabídky a následným výběrem **prostředí** > **dokumenty**.
+Pomocí této stránky dialogového okna **Možnosti** můžete řídit zobrazení dokumentů v integrovaném vývojovém prostředí (IDE) a spravovat externí změny dokumentů a souborů. K tomuto dialogovému oknu se dostanete tak, že v **nabídce nástroje** kliknete na **Možnosti** a pak vyberete**dokumenty** **prostředí** > .
 
-**Rozpoznat, kdy soubor se změnil mimo prostředí**
+**Rozpoznat, kdy se soubor změnil mimo prostředí**
 
-Pokud je vybraná tato možnost, zprávy o změnách otevřeného souboru, které byly provedeny pomocí editoru mimo rozhraní IDE ihned upozorní. Zpráva umožňuje znovu načíst soubor ze služby storage.
+Pokud je vybrána tato možnost, zpráva okamžitě upozorní vás na změny otevřeného souboru, které byly provedeny editorem mimo rozhraní IDE. Tato zpráva umožňuje znovu načíst soubor z úložiště.
 
-**Znovu načíst upravené soubory, pokud neobsahují neuložené změny**
+**Znovu načíst změněné soubory, pokud neexistují neuložené změny**
 
-Pokud máte **rozpoznat změnu souboru mimo prostředí** vybrané a otevření souboru v integrovaném vývojovém prostředí změny mimo rozhraní IDE, upozornění je vygenerována ve výchozím nastavení. Pokud je tato možnost povolena, bez upozornění se zobrazí a dokument je znovu načten v integrovaném vývojovém prostředí, aby se získaly externích změn.
+Když zjistíte, **že se soubor změnil mimo zvolené prostředí** a když se otevřený soubor v integrovaném vývojovém prostředí změní mimo IDE, ve výchozím nastavení se vygeneruje varovná zpráva. Pokud je tato možnost povolená, nezobrazí se žádné upozornění a dokument se znovu načte v integrovaném vývojovém prostředí, aby se vybraly externí změny.
 
-**Povolit úpravy souborů jen pro čtení. Zobrazit upozornění při pokusu o uložení**
+**Povolí úpravy souborů jen pro čtení; Zobrazit upozornění při pokusu o uložení**
 
-Pokud je tato možnost povolená, můžete otevřít a upravit soubor jen pro čtení. Až skončíte, je nutné použít **uložit jako** příkazu pro uložení souboru podle nového názvu, pokud chcete uložit záznam změn.
+Když je tato možnost povolená, můžete otevřít a upravit soubor, který je jen pro čtení. Až budete hotovi, musíte použít příkaz **Uložit jako** a soubor uložit do nového názvu, pokud chcete uložit záznam změn.
 
 **Otevřít soubor pomocí adresáře aktuálně aktivního dokumentu**
 
-Pokud je vybráno, tato možnost určuje, že **otevřít soubor** dialogové okno zobrazí adresář aktivního dokumentu. Pokud tato možnost vybrána, **otevřít soubor** dialogové okno zobrazí adresář naposledy použila k otevření souboru.
+Pokud je tato možnost vybrána, tato možnost určuje, že dialogové okno **otevřít soubor** zobrazí adresář aktivního dokumentu. Pokud je tato možnost vymazána, zobrazí se dialogové okno **otevřít soubor** s adresářem naposledy použitým k otevření souboru.
 
-**Kontrola konce řádků při načtení**
+**Při načtení kontrolovat konzistentní konce řádků**
 
-Tuto možnost mít editoru kontroly ukončení řádků v souboru a zobrazí okno se zprávou, pokud jsou zjištěny nekonzistence v formátování konce řádků.
+Tuto možnost vyberte, pokud chcete, aby Editor kontroloval konce řádku v souboru a zobrazil okno se zprávou, pokud jsou zjištěny nekonzistence při formátování konců řádků.
 
-**Zobrazit upozornění, když se upraví globální akce zpět upravovat soubory**
+**Zobrazit upozornění, pokud bude globální akce zpět upravovat upravované soubory**
 
-Tuto možnost použijte pro zobrazení zprávy když **globální zpět** příkazu se vrátit zpět refaktoringu změny provedené v souborech, které byly změněny po operaci refaktoringu. Vrací do stavu před Refaktoring souboru může zrušit změny provedené v souboru.
+Tuto možnost vyberte, pokud chcete zobrazit okno se zprávou, když bude **globální příkaz zpět** vracet refaktoring změn provedených v souborech, které se změnily i po operaci refaktoringu. Vrácení souboru do jeho stavu před refaktoringem může zahodit následné změny provedené v souboru.
 
-**Zobrazit různé soubory v Průzkumníku řešení**
+**Zobrazit různé soubory v Průzkumník řešení**
 
-Výběr této možnosti se zobrazí **různé soubory** uzel v **Průzkumníka řešení**. Různé soubory jsou soubory, které nejsou přiřazeny k projektu nebo řešení, ale může objevit v **Průzkumníka řešení** pro vaše pohodlí.
+Tuto možnost vyberte, pokud chcete zobrazit uzel **různé soubory** v **Průzkumník řešení**. Různé soubory jsou soubory, které nejsou přidružené k projektu nebo řešení, ale můžou se zobrazit v **Průzkumník řešení** pro vaše pohodlí.
 
 > [!NOTE]
-> Vyberte tuto možnost **zobrazit v prohlížeči** příkaz **souboru** nabídku webové dokumenty, které nejsou součástí webovou aplikaci služby active.
+> Tuto možnost vyberte, pokud chcete povolit příkaz **Zobrazit v prohlížeči** v nabídce **soubor** pro webové dokumenty, které nejsou součástí aktivní webové aplikace.
 
-**Položek uložených v ostatních souborech projektu**
+**Položky uložené v projektu různých souborů**
 
-Určuje počet souborů pro uchování v **různé soubory** složky **Průzkumníka řešení**. Tyto soubory jsou uvedené i v případě, že už nejsou otevřená v editoru. Můžete zadat libovolný celé číslo od 0 do 256. Výchozí hodnota je 0.
+Určuje počet souborů, které se mají zachovat, do složky **různé soubory** **Průzkumník řešení**. Tyto soubory jsou uvedeny i v případě, že již nejsou otevřeny v editoru. Můžete zadat libovolné celé číslo od 0 do 256. Výchozí hodnota je 0.
 
-Například pokud se tato možnost nastavena na 5 a máte 10 různé soubory otevřené po zavření všech 10 souborů, první 5 stále v zobrazí **různé soubory** složky.
+Například pokud nastavíte tuto možnost na 5 a máte otevřené 10 různých souborů, při zavření všech 10 souborů se ve složce **různé soubory** stále zobrazí prvních 5.
 
-**Pokud data nelze uložit v znakové stránce uložit dokumenty znakové sady Unicode**
+**Uložit dokumenty jako Unicode, pokud data nelze uložit ve znakové sadě**
 
-Tato možnost způsobí soubory, které obsahují informace, které jsou kompatibilní s vybranou znakovou stránku, která se má uložit jako Unicode ve výchozím nastavení.
+Tuto možnost vyberte, pokud chcete, aby soubory obsahující informace nekompatibilní s vybranou znakovou stránkou byly ve výchozím nastavení uložené jako Unicode.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
 - [Složka Ostatní soubory](../../ide/reference/miscellaneous-files.md)
 - [Hledání a nahrazení textu](../../ide/finding-and-replacing-text.md)

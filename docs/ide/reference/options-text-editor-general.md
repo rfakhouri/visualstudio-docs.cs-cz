@@ -3,21 +3,25 @@ title: Možnosti, textový editor, obecné
 ms.date: 01/18/2019
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
-- VS.ToolsOptionsPages.Text_Editor.SQL.General
-- vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.XOML.General
-- VS.ToolsOptionsPages.Text_Editor.SQL
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- vs.toolsoptionspages.text_editor
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.General
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
+- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
+- VS.ToolsOptionsPages.Text_Editor.SQL
+- VS.ToolsOptionsPages.Text_Editor.SQL.General
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL
+- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - Code Editor
@@ -29,66 +33,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 986c52a365abcb1780b741af61414bfc758413db
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3b23edb73ee08762ae8e3efaea4f883693aaacbd
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531932"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606015"
 ---
-# <a name="options-text-editor-general"></a>Možnosti, textový editor, obecné
+# <a name="options-dialog-box-text-editor--general"></a>Dialogové okno Možnosti: Textový editor \> – obecné
 
-Toto dialogové okno umožňuje měnit globální nastavení pro kód a text editoru sady Visual Studio. Chcete-li zobrazit toto dialogové okno, vyberte **možnosti** na **nástroje** nabídky, rozbalte **textový Editor** složku a pak vyberte **Obecné**.
+Toto dialogové okno umožňuje změnit globální nastavení pro Editor kódu a text v aplikaci Visual Studio. Chcete-li zobrazit toto dialogové okno, vyberte možnost **Možnosti** v nabídce **nástroje** , rozbalte složku **textový editor** a pak vyberte možnost **Obecné**.
 
 ## <a name="settings"></a>Nastavení
 
-### <a name="drag-and-drop-text-editing"></a>Přetáhnout myší úpravy textu
+### <a name="drag-and-drop-text-editing"></a>Přetažení úprav textu
 
-Při výběru, umožňuje přesunout text jeho výběrem a přetažením myší do jiného umístění v rámci aktuálního dokumentu nebo libovolného otevřeného dokumentu.
+Když je tato možnost vybraná, umožňuje přesunout text tak, že ho vyberete a přetáhnete myší na jiné místo v rámci aktuálního dokumentu nebo jiného otevřeného dokumentu.
 
-### <a name="automatic-delimiter-highlighting"></a>Automatické zvýrazňování oddělovače
+### <a name="automatic-delimiter-highlighting"></a>Zvýrazňování automatického oddělovače
 
-Pokud je vybráno, jsou zvýrazněny znaky oddělovače, které oddělují parametry nebo párů hodnot položky, jakož i odpovídající složené závorky.
+Je-li vybrána tato možnost, jsou zvýrazněny znaky oddělovače, které oddělují parametry nebo páry položek a hodnot a odpovídající závorky.
 
-### <a name="track-changes"></a>Sledování změn
+### <a name="track-changes"></a>Sledovat změny
 
-Pokud je vybrána editoru kódu, se zobrazí v okraj výběru označit kód, který se změnil, protože soubor byl uložen jako poslední svislé Žlutá čára. Při ukládání změn budou zelené svislé čáry.
+Když je vybrán Editor kódu, v okraji výběru se zobrazí svislá žlutá čára, která označuje kód, který se změnil od posledního uložení souboru. Při uložení změn se svislé čáry změní na zelenou.
 
-### <a name="auto-detect-utf-8-encoding-without-signature"></a>Automatické rozpoznání kódování UTF-8 bez podpisu
+### <a name="auto-detect-utf-8-encoding-without-signature"></a>Automaticky rozpoznat kódování UTF-8 bez podpisu
 
-Ve výchozím nastavení zjistí editoru kódování tak, že značky pořadí bajtů nebo znaková sada značky. Pokud ani jedno nenajde v aktuálním dokumentu, pokusí se editor kódu tím, že kontroluje pořadí bajtů kódování automatické rozpoznání kódování UTF-8. Chcete-li zakázat automatickou detekcí kódování, zrušte zaškrtnutí tohoto políčka.
+Ve výchozím nastavení Editor detekuje kódování hledáním značek pořadí bajtů nebo charset značek. Pokud se v aktuálním dokumentu nenalezne, Editor kódu se pokusí automaticky detekovat kódování UTF-8 kontrolou sekvencí bajtů. Chcete-li zakázat automatickou detekci kódování, zrušte zaškrtnutí tohoto políčka.
 
-### <a name="follow-project-coding-conventions"></a>Podle konvence psaní kódu projektu
+### <a name="follow-project-coding-conventions"></a>Sledovat konvence psaní kódu projektu
 
-Při výběru konvence kódování zadaného projektu přepsat všechny konvence kódování, které používáte na svých osobních projektech.
+Je-li vybrána tato možnost, zadané konvence kódování pro projekt přepíší všechny konvence kódování používané v osobních projektech.
 
-### <a name="enable-mouse-click-to-perform-go-to-definition"></a>Povolit pro kliknutí myši provedení příkazu Přejít k definici
+### <a name="enable-mouse-click-to-perform-go-to-definition"></a>Povolit možnost přejít k definici kliknutím myši
 
-Při výběru stisknete klávesu **Ctrl** a podržte ukazatel myši nad prvek při kliknutí myší. Tím přejdete na definici vybraného prvku. Můžete také zvolit **Alt** nebo **Ctrl** + **Alt** z **použít modifikátor klíč** rozevíracího seznamu.
+Když vyberete tuto možnost, můžete stisknout **CTRL** a při kliknutí myší umístit ukazatel myši na prvek. Provedete to tak, že přejdete do definice vybraného elementu. Můžete také zvolit **ALT** nebo **CTRL** + **ALT** z rozevíracího seznamu **použít klávesu modifikátoru** .
 
-Vyberte **Otevřít definici v zobrazení náhledu** zaškrtnutím políčka Zobrazit definice prvku v okně bez navigaci pryč z aktuální umístění v editoru kódu.
+Zaškrtněte políčko **Otevřít definici v náhledu zobrazení** , chcete-li v okně zobrazit definici elementu, aniž byste museli přejít pryč z aktuálního umístění v editoru kódu.
 
 ## <a name="display"></a>Displej
 
 ### <a name="selection-margin"></a>Okraj výběru
 
-Pokud je vybráno, zobrazí svislý okraj podél levého okraje editoru textová oblast. Můžete kliknout na tento okraj označit celý řádek textu, nebo klikněte a tažením vyberte po sobě jdoucích řádků textu.
+Je-li vybrána tato možnost, zobrazí se svislé okraje podél levého okraje textové oblasti editoru. Kliknutím na tuto hranici můžete vybrat celý řádek textu nebo kliknutím a přetažením vybrat po sobě jdoucí řádky textu.
 
-|Okraj výběru|Okraj výběru vypnuto|
+|Okraj výběru na|Okraj výběru vypnut|
 | - | - |
 |![Snímek obrazovky HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Snímek obrazovky HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Okraj indikátoru
 
-Pokud je vybráno, zobrazí svislý okraj mimo levého okraje editoru textová oblast. Po kliknutí na toto rozpětí, zobrazí ikonu a popis, který se vztahují na text. Zarážky nebo úloha klávesové zkratky seznamu se zobrazí v okraj indikátoru. Nelze vytisknout informace okraj indikátoru.
+Je-li vybrána tato možnost, zobrazí se svislé okraje mimo levý okraj textové oblasti editoru. Po kliknutí na tento okraj se zobrazí ikona a popis tlačítka, které se vztahují k danému textu. Například na okraji indikátoru se zobrazí zarážka nebo zástupci seznamu úkolů. Informace o okraji indikátoru se netiskou.
 
 ### <a name="highlight-current-line"></a>Zvýraznit aktuální řádek
 
-Pokud je vybráno, zobrazí šedé okolo řádek kódu, ve kterém se nachází kurzor.
+Je-li vybrána tato možnost, aplikace zobrazí šedé pole kolem řádku kódu, ve kterém je umístěn kurzor.
 
 ### <a name="show-structure-guide-lines"></a>Zobrazit vodicí čáry struktury
 
-Pokud je vybráno, svislé čáry zobrazí v editoru tento řádek nahoru strukturovaný kód bloky, které vám umožní snadno identifikovat jednotlivé bloky kódu.
+Je-li vybrána tato možnost, zobrazí se v editoru svislé čáry, které se zařadí do strukturovaných bloků kódu, což vám umožní snadno identifikovat jednotlivé bloky kódu.
 
 ## <a name="see-also"></a>Viz také:
 
