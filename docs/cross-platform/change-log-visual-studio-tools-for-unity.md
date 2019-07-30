@@ -1,7 +1,7 @@
 ---
 title: Protokol změn (Visual Studio Tools for Unity, Windows) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 07/29/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,208 +10,232 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 365476e0e87f5bb8c71041ad8afbdd7db6e6f952
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821337"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661961"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Protokol změn (Visual Studio Tools for Unity, Windows)
 
 Protokol změn Visual Studio Tools for Unity.
 
-## <a name="4110"></a>4.1.1.0
+## <a name="4201"></a>4.2.0.1
 
-vydáno 24. května 2019
+Vydáno 24. července 2019
 
 ### <a name="new-features"></a>Nové funkce
 
 - **Integrace:**
 
-  - Aktualizace třídy MonoBehaviour. rozhraní API pro 2019.1.
+  - Přidání nové možnosti pro vytvoření libovolného typu souboru z Průzkumníka projektů Unity.
+  
+  - Při použití rychlých buildů pro projekty Unity Vylepšete ukládání do mezipaměti diagnostiky.
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
 - **Integrace:**
 
-  - Opravili jsme generování sestav, upozornění a chyby výstupu, pokud je povolená zjednodušené sestavení.
+  - Opravili jsme problém, když Přípona souboru nebyla zpracována žádným známým editorem.
 
-  - Oprava lightweight výkon sestavení.
+  - Pevná podpora pro vlastní rozšíření v Průzkumníku projektů Unity.
+
+  - Pevné uložení nastavení mimo hlavní dialog.
+
+  - Byla odebrána starší závislost Microsoft. VisualStudio. MPF.
+
+## <a name="4110"></a>4.1.1.0
+
+Vydáno 24. května 2019
+
+### <a name="new-features"></a>Nové funkce
+
+- **Integrace:**
+
+  - Rozhraní MonoBehaviour API se aktualizovalo na 2019,1.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+- **Integrace:**
+
+  - Opravená upozornění a chyby při generování výstupu, když je povolené zjednodušené sestavení.
+
+  - Pevný výkon pro odlehčené sestavení.
 
 ## <a name="4100"></a>4.1.0.0
 
-vydáno 21. května 2019
+Vydáno 21. května 2019
 
 ### <a name="new-features"></a>Nové funkce
 
 - **Integrace:**
 
-  - Přidání podpory pro rozhraní API znovu načte projekty rychleji nové dávky.
+  - Přidání podpory nového rozhraní API služby Batch pro rychlejší opětovné načtení projektů.
 
-  - Zakázat úplné sestavení pro projekty Unity, používat technologii IntelliSense chyby a upozornění. Ve skutečnosti Unity vytvoří řešení sady Visual Studio s projekty knihovny tříd, které představují Unity je činnosti interně. Který říká, výsledek sestavení v sadě Visual Studio je nikdy použít nebo vybere Unity jako jejich kompilace kanál je uzavřen. Vytváření v sadě Visual Studio právě spotřebovává prostředky pro žádnou akci. Pokud potřebujete úplného buildu, protože máte nástroje nebo instalační program, který na něm závisí, můžete zakázat tyto optimalizace (Nástroje/možnosti/Tools for Unity nebo zakázat úplné sestavení projektů).
+  - Pro projekty Unity se zakázalo úplné sestavení, a to na základě chyb a upozornění technologie IntelliSense. Ve skutečnosti Unity vytvoří řešení sady Visual Studio s projekty knihoven tříd, které reprezentují, co Unity interně dělá. To se říká, výsledek sestavení v sadě Visual Studio se nikdy nepoužívá nebo nezískala v Unity, protože je jejich kanál kompilace uzavřený. Sestavování v aplikaci Visual Studio právě spotřebovává prostředky pro nic. Pokud potřebujete úplné sestavení, protože máte nástroje nebo nastavení, které na něm závisí, můžete tuto optimalizaci zakázat (nástroje/Možnosti/nástroje pro Unity nebo zakázat kompletní sestavení projektů).
 
-  - Automaticky zobrazit Průzkumníka projektů Unity (UPE) při načtení projektu Unity. UPE bude ukotven vedle Průzkumníka řešení.
+  - Při načtení projektu Unity automaticky zobrazit Průzkumníka projektů Unity (UPE) UPE bude ukotven vedle Průzkumník řešení.
 
-  - Aktualizovat mechanismus extrakce názvem projektu s Unity 2019.x.
+  - Byl aktualizován mechanismus extrakce názvů projektů pomocí Unity 2019. x.
 
-  - Přidání podpory pro balíčky UPE Unity. Pouze pro odkazované balíčky (pomocí manifest.json v ```Packages``` složku) a místní balíčky (vložené v ```Packages``` složky) jsou viditelné.
+  - Přidala se podpora pro balíčky Unity v UPE. Jsou viditelné pouze odkazované balíčky (používající manifest. JSON ```Packages``` ve složce) a místní balíčky (vložené ```Packages``` do složky).
 
 - **Generování projektu:**
 
-  - Zachovat vlastnosti externích při zpracování souboru řešení.
+  - Při zpracování souboru řešení zachovat externí vlastnosti.
 
 - **Vyhodnocení:**
 
-  - Přidání podpory pro alias kvalifikované názvy (pouze globální obor názvů pro nyní). Chyba při vyhodnocování výrazu tedy nyní přijímá typů pomocí global::namespace.type formuláře.
+  - Byla přidána podpora názvů kvalifikovaných aliasů (pouze globální obor názvů pro nyní). Proto vyhodnocovací filtr výrazů nyní přijímá typy pomocí formuláře Global:: Namespace. Type.
 
-  - Přidání podpory pro ```pointer[index]``` formulář, který je sémanticky stejný jako ukazatel přistoupit přes ukazatel ```*(pointer+index)``` formuláře.
+  - Přidání podpory pro ```pointer[index]``` formulář, která je sémanticky totožná s odkazem ```*(pointer+index)``` na odkazy na ukazatel.
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
 - **Integrace:**
 
-  - Oprava potíží závislostí s Microsoft.VisualStudio.MPF.
+  - Opravili jsme problémy s závislostí pomocí Microsoft. VisualStudio. MPF.
 
-  - Oprava player UPW připojit bez žádného projektu načteného.
+  - Pevný aktér pro UWP se připojí bez načtení projektu.
 
-  - Obnovení databáze DM automatické, pokud dosud nebyl připojen sady Visual Studio.
+  - Pevná Automatická aktualizace databáze prostředků, když se ještě nepřipojila aplikace Visual Studio
 
-  - Oprava potíží motiv s popisky a zaškrtávací políčka.
+  - Pevné problémy s motivem pomocí popisků a zaškrtávacích políček.
 
 - **Ladicí program:**
 
-  - Opravili jsme krokování s statické konstruktory.
+  - Pevné krokování se statickými konstruktory.
 
 ## <a name="4005"></a>4.0.0.5
 
-vydáno 27. února 2019
+Vydáno 27. února 2019
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
 - **Integrace:**
 
-  - Oprava detekce verze sady Visual Studio pomocí instalačního balíčku.
+  - Opravili jsme detekci verzí sady Visual Studio pomocí instalačního balíčku.
 
-  - Odebrat nepoužité sestavení z instalačního balíčku.
+  - Z instalačního balíčku se odebrala nepoužívaná sestavení.
 
 ## <a name="4004"></a>4.0.0.4
 
-vydáno 13. února 2019
+Vydáno 13. února 2019
 
 ### <a name="new-features"></a>Nové funkce
 
 - **Integrace:**
 
-  - Přidání podpory pro detekci správně Unity zpracovává během instalace a povolit instalačního modulu pro lepší zpracování souboru zámků.
+  - Přidání podpory pro správné detekci procesů Unity během instalace a povolení instalačního modulu pro lepší zpracování zámků souborů.
 
-  - Aktualizovat ScriptableObject rozhraní API.
+  - Aktualizace rozhraní API ScriptableObject
 
 ## <a name="4003"></a>4.0.0.3
 
-vydáno 31. ledna 2019
+Vydáno 31. ledna 2019
 
 ### <a name="new-features"></a>Nové funkce
 
 - **Generování projektu:**
 
-  - Veřejné a serializovaná pole způsobí, že už upozornění. Jsme jste automaticky potlačit upozornění kompilátoru CS0649 a IDE0051 v Unity projekty, které vytvoří tyto zprávy.
+  - Veřejná a serializovaná pole už nebudou způsobovat upozornění. Automaticky jsme potlačili upozornění kompilátoru CS0649 a IDE0051 v projektech Unity, které tyto zprávy vytvořily.
 
 - **Integrace:**
 
-  - Vylepšené uživatelské prostředí pro zobrazování Unity editoru a player instance (windows jsou teď umožňující změnu velikosti, použití jednotného okraje a zobrazí změny velikosti úchytu). Byly přidané informace Id procesu pro Unity editoru.
+  - Zlepšilo se uživatelské prostředí pro zobrazování editoru Unity a instancí přehrávače (Windows teď měnitelné velikosti, používejte jednotné okraje a zobrazují úchyt pro změnu velikosti). Přidání informací o ID procesu pro editory Unity
 
-  - Aktualizace třídy MonoBehaviour rozhraní API.
+  - Aktualizace rozhraní API MonoBehaviour
 
 - **Vyhodnocení:**
 
-  - Přidání podpory pro lokální funkce.
+  - Byla přidána podpora místních funkcí.
 
-  - Přidání podpory pro pseudo proměnné (identifikátory výjimky a objekt).
+  - Přidání podpory pro pseudo Variables (výjimky a identifikátory objektů).
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
 - **Integrace:**
 
-  - Opravili jsme problém s moniker bitové kopie a motivů.
+  - Opravili jsme problém s obrázky monikeru a motivy.
 
-  - Jenom zápis do okna výstup během ladění, při automatické aktualizaci databáze asset.
+  - Zapisovat pouze do okno Výstup při ladění při automatické aktualizaci databáze prostředků.
 
-  - Oprava opoždění v uživatelském rozhraní pomocí třídy MonoBehaviour. Průvodce filtrování.
+  - Pevná prodleva uživatelského rozhraní pomocí filtrování Průvodce MonoBehaviour
 
 - **Ladicí program:**
 
-  - Opravili jsme čtení vlastní atribut v pojmenované argumenty při používání starší verze protokolu.
+  - Bylo vyřešeno čtení vlastního atributu u pojmenovaných argumentů při použití starších verzí protokolu.
 
 ## <a name="4002"></a>4.0.0.2
 
-vydáno 23. ledna 2019
+Vydáno 23. ledna 2019
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
 - **Integrace:**
 
-  - Opravili jsme generování experimentální sestavení.
+  - Opravilo se generování experimentálního buildu.
 
-  - Zpracování událostí pevné projektu souboru chcete-li minimalizovat zatížení vlákna uživatelského rozhraní.
+  - Pevné zpracování událostí souboru projektu pro minimalizaci zatížení vlákna uživatelského rozhraní.
 
-  - Oprava dokončení zprostředkovatele s dávkové text se změní.
+  - Fixní poskytovatel dokončení se změnami v dávce textu
 
 - **Ladicí program:**
 
-  - Opravili jsme zobrazování zpráv uživateli ladění na připojený ladicí program.
+  - Opravili jsme zobrazení zpráv ladění uživatele k připojenému ladicímu programu.
 
 ## <a name="4001"></a>4.0.0.1
 
-vydáno 10. prosince 2018
+Vydáno 10. prosince 2018
 
 ### <a name="new-features"></a>Nové funkce
 
 - **Vyhodnocení:**
 
-  - Nahradit NRefactory ve prospěch Roslyn pro vyhodnocení výrazu.
+  - Nahradili jsme NRefactory a upřednostňujeme Roslyn pro vyhodnocení výrazu.
 
-  - Přidali jsme podporu pro ukazatele: přistoupit přes ukazatel, přetypování a aritmetika ukazatele (Unity 2018.2 + nový modul runtime je požadováno i to).
+  - Přidání podpory pro ukazatele: dereference, přetypování a aritmetické operace (2018.2 Unity + a nový modul runtime jsou pro toto) nutné.
 
-  - Přidání podpory pro zobrazení pole ukazatele (jako v jazyce C++). Proveďte výraz ukazatele pak přidat čárku a počet prvků, které chcete zobrazit.
+  - Přidání podpory pro zobrazení ukazatele pole (jako v C++) Ponechejte výraz ukazatele a potom přidejte čárku a počet prvků, které chcete zobrazit.
 
-  - Přidání podpory pro asynchronní konstrukce.
+  - Byla přidána podpora pro asynchronní konstrukce.
 
 - **Integrace:**
 
-  - Byla přidána podpora automaticky obnovovaných Unity a asset databáze na Uložit. To je ve výchozím nastavení povolené a aktivuje opětovnou kompilaci na straně Unity při ukládání skriptu v sadě Visual Studio. Můžete zakázat tuto funkci v Tools\Options\Tools AssetDatabase Unity\Refresh Unity na uložení.
+  - Přidání podpory pro automatickou aktualizaci databáze assetů v Unity při uložení Tato možnost je ve výchozím nastavení povolená a při ukládání skriptu do sady Visual Studio aktivuje novou kompilaci na straně Unity. Tuto funkci můžete zakázat v Tools\Options\Tools pro AssetDatabase v Unity\Refresh Unity při uložení.
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
 - **Integrace:**
 
-  - Oprava most aktivace při sady Visual Studio není vybrána jako upřednostňované externí editor.
+  - Fixní aktivace přemostění, když není vybrána možnost Visual Studio jako preferovaný externí editor.
 
-  - Opravili jsme vyhodnocení výrazu s výrazy poškozený nebo nepodporovaný.
+  - Vyhodnocení výrazu se špatnými nebo nepodporovanými výrazy.
 
 ## <a name="4000"></a>4.0.0.0
 
-vydáno 4. prosince 2018
+Vydáno 4. prosince 2018
 
 ### <a name="new-features"></a>Nové funkce
 
 - **Integrace:**
 
-  - Přidání podpory pro Visual Studio 2019 (musí být minimálně 2018.3 Unity pro schopnost používat Visual Studio 2019 jako editor externího skriptu).
+  - Přidání podpory pro Visual Studio 2019 (potřebujete aspoň Unity 2018,3, aby bylo možné použít Visual Studio 2019 jako externí editor skriptu).
 
-  - Přijata image služby Visual Studio a katalog s plnou podporu pro škálování HDPI, ideální obrázky pixelů a motivů.
+  - Přijali jste službu a katalog sady Visual Studio s plnou podporou škálování HDPI, dokonalých obrázků v pixelech a jejich.
 
 ### <a name="deprecated-features"></a>Zastaralé funkce
 
 - **Integrace:**
 
-  - Od této chvíle, Visual Studio Tools for Unity bude podporovat jenom Unity 5.2 + (s Unity a vestavěná integrace sady Visual Studio).
+  - Po přeposílání Visual Studio Tools for Unity bude podporovat Unity 5.2 + (s integrovanou integrací sady Visual Studio Unity).
 
-  - Od této chvíle, Visual Studio Tools for Unity bude podporovat jenom Visual Studio 2015 +.
+  - Až budete dál, Visual Studio Tools for Unity podporují jenom Visual Studio 2015 +.
 
-  - Odebrání služby starší verze jazyka, chybových úseček seznam a stav.
+  - Byla odebrána služba starší verze jazyka, seznam chyb a stavový řádek.
 
-  - Odebrat rychlé třídy Monobehaviour. Průvodce (ve prospěch podporu vyhrazené technologie intellisense).
+  - Odebral se Průvodce rychlým MonoBehaviour (ve prospěch vyhrazené podpory technologie IntelliSense).
 
 ## <a name="3903"></a>3.9.0.3
 
@@ -221,7 +245,7 @@ vydáno 28. listopadu 2018
 
 - **Integrace:**
 
-  - Opravili jsme projekt znovu načíst a technologii intellisense problémy při přidávání nebo odstraňování skriptů, které jsou umístěné v úplně první projekt.
+  - Pevné opětovné načítání projektů a problémy IntelliSense při přidávání nebo odebírání skriptů umístěných v velmi prvním projektu.
 
 ## <a name="3902"></a>3.9.0.2
 
@@ -894,7 +918,7 @@ Vydáno 8. září 2015
 
 - Pevné odkazy na sestavení UnityEngine a UnityEditor pro aplikace Windows Store.
 
-- Oprava chyby při krokování v ladicím programu: Nelze provést obecnou výjimku.
+- Opravená chyba při krokování v ladicím programu: Nepovedlo se krokovat, obecná výjimka.
 
 - Pevný počet průchodů zarážky v sadě Visual Studio 2015.
 
@@ -975,13 +999,13 @@ Vydáno 2. dubna 2015
 
   - Instalace Visual Studio Tools pro Unity balíček pro Unity 5.
 
-- **Dokumentace ke službě:** Zlepšení výkonu při generování dokumentace.
+- **Nápovědě** Zvyšte výkon generování dokumentace.
 
-- **Průvodci:** Podpora nových MonoBehavior metod 4.6 v Unity a Unity 5.
+- **Průvodci:** Podpora nových metod MonoBehavior pro Unity 4,6 a Unity 5.
 
-- **Unity:** Nezabezpečený příznaků vyhledávání a vlastních definuje soubory .rsp při generování souboru projektu.
+- **Unity:** Vyhledávání nebezpečných příznaků a vlastní definice v souborech. rsp během generování souboru projektu.
 
-- **UŽIVATELSKÉ ROZHRANÍ:** Přidat Visual Studio Tools for Unity **možnosti** dialogového okna v sadě Visual Studio.
+- **UŽIVATELSKÉ ROZHRANÍ:** Přidání dialogového okna **možností** Visual Studio Tools for Unity v aplikaci Visual Studio.
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -1015,13 +1039,13 @@ Vydáno 2. dubna 2015
 
   - Odeslat protokoly konzoly s Unity v seznamu chyb VS.
 
-- **Dokumentace ke službě:** Opravte generování dokumentace pro nové dokumentace k unity.
+- **Nápovědě** Opravte generaci dokumentace pro novou dokumentaci k Unity.
 
-- **Projekt:** Přesunutí a přejmenování souborů .meta Unity v případě potřeby i ve složkách.
+- **Projektem** V případě potřeby přesuňte a přejmenujte soubory Unity. meta, i ve složkách.
 
 - **Průvodci:** Opravte pořadí parametrů metody MonoBehavior při generování kódu.
 
-- **UŽIVATELSKÉ ROZHRANÍ:** Podpora kontextové nabídky a ikony motivů aplikace Visual Studio.
+- **UŽIVATELSKÉ ROZHRANÍ:** Podpora motivů sady Visual Studio pro kontextovou nabídku a ikony.
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 preview
 Vydáno 12. listopadu 2014
@@ -1375,21 +1399,21 @@ Vydáno 25. března 2013
 
 - Oprava chyby UVS 48: zadáním dvojité uvozovky někdy chybě a přerušení všech – funkce (dokončování kódu, zvýraznění syntaxe atd).
 
-- Oprava chyby UVS 46: Duplicitní soubor otevřen skriptu (UnityScript), když kliknou na chyby seznam sady Visual Studio.
+- Opravená chyba UVS-46: Po kliknutí na Seznam chyb sady Visual Studio byl duplikován otevřený soubor skriptu (UnityScript).
 
-- Oprava chyby UVS 42: Logo připojení k Unity ve stavovém řádku nezpracuje události myši ve VS 2012.
+- Opravená chyba UVS-42: Logo konektivity Unity ve stavovém řádku nezpracovává události myši v sadě VS 2012.
 
-- Oprava chyby UVS 44: CTRL + SHIFT + Q není k dispozici v sadě VS 2012 pro rychlé třídy Monobehaviour.
+- Opravená chyba UVS-44: CTRL + SHIFT + Q není v sadě VS 2012 pro rychlé třídy MonoBehaviour k dispozici.
 
-- Oprava chyby UVS 40: Vybrané položky v Průzkumníku projektů Unity jsou nejde přečíst, když je okno v VS2012 "" tmavé neaktivní.
+- Opravená chyba UVS-40: Vybrané položky v Průzkumníku projektů Unity jsou nečitelný, pokud je okno neaktivní v VS2012 "tmavého" motivu.
 
-- Oprava chyby UVS 39: Problém tokenizaci uvozeny řídicími znaky řetězce.
+- Opravená chyba UVS-39: Vystavení tokenizacích řídicích řetězců
 
-- Oprava chyby UVS 35: Vyvolání ToString u objektů při kontrole proměnných.
+- Opravená chyba UVS-35: Při kontrole proměnných vyvolat ToString na objekty.
 
-- Oprava chyby UVS 27: Goto Symbol okno nesoulad s "" tmavé v VS2012.
+- Opravená chyba UVS-27: Přejít na okno symbolů nekonzistence s "tmavým" motivem v VS2012.
 
-- Oprava chyby UVS-11: Místní hodnoty v korutinách.
+- Opravená chyba UVS-11: Lokální hodnoty v korutinách.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 – beta verze
 Vydáno 9. března, 2013
@@ -1496,9 +1520,9 @@ Vydáno 3 říjen 2012
 
 - Opravili jsme, jak jsou typy prohledaný načtená sestavení pro vyhodnocení výrazu.
 
-- Oprava chyby UVS – 21: Hodnocení přiřazení na objektech Unity nemá žádný vliv.
+- Opravená chyba UVS-21: Vyhodnocení přiřazení u objektů Unity nemá žádný vliv.
 
-- Oprava chyby UVS – 21: Neplatný ukazatel při vyhodnocení volání metody matematické API Unity.
+- Opravená chyba UVS-21: Neplatný ukazatel při vyhodnocování volání metody do rozhraní API pro matematiku Unity
 
 ## <a name="1080"></a>1.0.8.0
 

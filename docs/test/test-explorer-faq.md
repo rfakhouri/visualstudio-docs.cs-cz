@@ -14,18 +14,29 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429454"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661978"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Průzkumník testů sady Visual Studio – nejčastější dotazy
 
+::: moniker range=">=vs-2019"
+## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Kde je v aplikaci Visual Studio 2019 seskupení podle vlastností?
+Toto seskupení vlastností se přesunulo na sloupec. S vícevrstvou a přizpůsobitelnou hierarchií v aplikaci Visual Studio 2019 verze 16,2 jsme si mysleli, že jako seskupení vytvořilo nepotřebnou vizuální složitost, včetně vlastností. V tomto designu jsme jednoznačně naslouchají názoru. https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+
+Prozatím můžete kliknout pravým tlačítkem na sloupec v Průzkumníku testů a vybrat sloupce. Zkontrolujte sloupec vlastností a zobrazí se v Průzkumníku testů. Tento sloupec teď můžete filtrovat podle vlastností, které vás zajímají.
+
+![Zobrazení sloupce](media/vs-2019/trait-column.png)
+![vlastností – filtr vlastností sloupce](media/vs-2019/trait-column-filter.png)
+
+::: moniker-end
+
 ## <a name="dynamic-test-discovery"></a>Zjišťování dynamických testů
 
-**Průzkumník testů není zjišťování mých testů, které jsou definována dynamicky. (Například teorie, vlastní adaptéry, vlastní vlastnosti, #ifdefs atd.) Jak lze zjistit tyto testy?**
+**Průzkumník testů nezjišťuje moje testy, které jsou dynamicky definovány. (Například teorie, vlastní adaptéry, vlastní vlastnosti, #ifdefs atd.) Jak lze zjistit tyto testy?**
 
 Sestavení projektu a ujistěte se, že je zapnuté zjišťování na základě sestavení **nástroje** > **možnosti** > **Test**.
 
@@ -91,7 +102,7 @@ Ikony vedle seskupení projektu, Namespace a třída zobrazení stavu testů v r
 
 **Do vyhledávacího pole Průzkumníka testů již není filtr "Cesta k souboru".**
 
-Filtr cesty souboru v **Průzkumník testů** vyhledávacího pole byla odebrána v sadě Visual Studio 2017 verze 15.7. Tato funkce má málo využívaných a Průzkumník testů může načíst testovací metody rychlejší vynecháním tuto funkci. Pokud se tato změna přerušení tok vývoj, dejte nám vědět, zasláním svého názoru na [komunity vývojářů](https://developercommunity.visualstudio.com/).
+Filtr cesty k souboru v poli Hledat v **Průzkumníku testů** byl odebrán v aplikaci Visual Studio 2017 verze 15,7. Tato funkce měla nízké využití a Průzkumník testů může rychleji načíst testovací metody tím, že tuto funkci opustí. Pokud se tato změna přerušení tok vývoj, dejte nám vědět, zasláním svého názoru na [komunity vývojářů](https://developercommunity.visualstudio.com/).
 
 ## <a name="remove-undocumented-interfaces"></a>Odebrání nedokumentované rozhraní
 
@@ -116,11 +127,11 @@ Namísto použití rozšíření adaptérů testů, jsou nutné k použití bal�
 
 ## <a name="uwp-testcontainer-was-not-found"></a>UPW TestContainer nebyl nalezen
 
-**Mých testů UPW se už spouštějí v sadě Visual Studio 2017 verze 15.7 nebo novější.**
+**Moje testy UWP již nejsou spouštěny v aplikaci Visual Studio 2017 verze 15,7 a novější.**
 
 Poslední projekty testů UPW zadejte vlastnosti sestavení testovací platformy, která umožňuje lepší výkon pro identifikaci testovací aplikace. Pokud máte projektu testů UPW, který byl inicializován před Visual Studio verze 15.7, může se zobrazit tato chyba v **výstup** > **testy**:
 
-**System.AggregateException: Došlo k jedné nebo více chybám. ---> System.InvalidOperationException: Následující TestContainer nebyl nalezen {} na Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync > d__61.MoveNext()**
+**System. AggregateException: Došlo k jedné nebo více chybám. ---> System. InvalidOperationException: Následující testcontainer nebyl nalezen {} v Microsoft. VisualStudio. TestWindow. Controller. TestContainerProvider \<GetTestContainerAsync > d__61. MoveNext ()**
 
 Chcete-li vyřešit tuto chybu:
 

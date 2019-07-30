@@ -9,19 +9,19 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786474"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662065"
 ---
-# <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing pomocí sady Visual Studio
+# <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing se sadou Visual Studio
 
 Vyvíjíte aplikaci, Live Unit Testing automaticky spustí všechny testy jednotek během toho na pozadí a představuje výsledky a pokrytí kódu za provozu v rozhraní IDE sady Visual Studio v reálném čase. Při úpravě kódu, na jaký vliv na existující testy změny Live Unit Testing poskytuje zpětnou vazbu a určuje, zda nový kód jste přidali se vztahuje na jeden nebo více existujících testů. To je pro psaní jednotkových testů při provádění oprav chyb a přidání nových funkcí jemně připomene.
 
 > [!NOTE]
-> Live Unit Testing je k dispozici pro C# a projekty Visual Basic, které cílí na .NET Core nebo .NET Framework v edici Visual Studio Enterprise.
+> Live Unit Testing je k dispozici pro C# a Visual Basic projekty, které cílí na rozhraní .NET Core nebo .NET Framework ve verzi Enterprise sady Visual Studio.
 
 Pokud používáte Live Unit Testing pro testy, Live Unit Testing uchovává data o stavu vašich testů. Schopnost používat trvalých dat umožňuje Live Unit Testing nabízí špičkový výkon při spouštění testů dynamicky v reakci na změny kódu.
 
@@ -30,11 +30,11 @@ Live Unit Testing spolupracuje s tři rozhraní testování částí oblíbenýc
 
 |Rozhraní pro testování  |Minimální verze aplikace Visual Studio adaptéru  |Minimální verze rozhraní Framework  |
 |---------|---------|---------|
-|xUnit.net |verze 2.2.0-beta3-build1187 xunit.Runner.VisualStudio |1.9.2 xunit |
+|xUnit.net |verze 2.2.0-beta3-build1187 xunit.Runner.VisualStudio |1\.9.2 xunit |
 |NUnit |NUnit3TestAdapter verzí 3.5.1 |NUnit verze 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
-Pokud máte starší MSTest projektů založených na testu, které odkazují `Microsoft.VisualStudio.QualityTools.UnitTestFramework` a nechcete přesunout na novější balíčky MSTest NuGet, proveďte upgrade na Visual Studio 2017 verze 15.4 nebo novější.
+Pokud máte starší projekty `Microsoft.VisualStudio.QualityTools.UnitTestFramework` testů založené na MSTest a nechcete přejít k novějším balíčkům NuGet MSTest, upgradujte na Visual Studio 2017 verze 15,4 nebo novější.
 
 V některých případech budete muset explicitně obnovit balíčky NuGet odkazované projekty v řešení v pořadí pro Live Unit Testing pro práci. Uděláte to buď tímto způsobem vytvořte explicitní sestavení řešení (vyberte **sestavení** > **znovu sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio) nebo obnovují se balíčky v řešení ( Klikněte pravým tlačítkem na řešení a vyberte **obnovit balíčky NuGet**) před povolením živých Unit Testing.
 
@@ -145,7 +145,7 @@ Existují určité rozdíly mezi Live Unit Testing automatickým spuštěním a 
 
 - Spouštění nebo ladění testů z okna Průzkumníka testů běží regulární binární soubory, zatímco Live Unit Testing běží instrumentované binární soubory.
 - Live Unit Testing nevytvoří novou doménu aplikace pro spuštění testů, ale místo toho spustí testy z výchozí doménu. Spustit testy z **Průzkumník testů** okno Vytvořit novou doménu aplikace.
-- Live Unit Testing spustí testy v každé sestavení testu postupně. Při spuštění více testů z **Průzkumník testů** okno a **spustit testy paralelně** se vybere tlačítko, paralelní spuštění testů.
+- Live Unit Testing spustí testy v každé sestavení testu postupně. V okně **Průzkumník testů** můžete zvolit možnost spuštění více testů paralelně.
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing a rozsáhlých řešeních
 
@@ -166,7 +166,7 @@ Chcete-li vybrat jednotlivé projekty při testech jednotek, proveďte následuj
 
 **Vyloučení jednotlivých testů z okna editoru kódu**
 
-Okna editoru kódu můžete použít k zahrnutí nebo vyloučení jednotlivých testovacích metod. Klikněte pravým tlačítkem na podpis testovací metody v okně editoru kódu a vyberte **Live testy** > **[vybranou metodu]**, **Live testy**  >  **Vyloučit [vybrané metody]**, nebo **Live testy** > **vyloučit vše kromě [vybrané metody]**, kde název je "vybranou metodu" Metoda, kterou jste vybrali v okně kódu.
+Okna editoru kódu můžete použít k zahrnutí nebo vyloučení jednotlivých testovacích metod. Klikněte pravým tlačítkem na podpis testovací metody v okně editoru kódu a vyberte **Live testy** >  **[vybranou metodu]** , **Live testy**  >  **Vyloučit [vybrané metody]** , nebo **Live testy** > **vyloučit vše kromě [vybrané metody]** , kde název je "vybranou metodu" Metoda, kterou jste vybrali v okně kódu.
 
 **S výjimkou testů prostřednictvím kódu programu**
 
@@ -183,4 +183,4 @@ Také vám pomůže následující atributy z Live Unit Testing vyloučit jednot
 - [Kód testovací nástroje](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Blogu Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Nejčastější dotazy k funkci Live Unit Testing](live-unit-testing-faq.md)
-- [Video pro kanál 9: Live Unit Testing v sadě Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Video pro kanál 9: Live Unit Testing v aplikaci Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

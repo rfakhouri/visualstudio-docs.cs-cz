@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 17b373e38d9a808ea830f758c28bea1218bb0b69
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6d9fd531016a4ac5784f927641a181ac05e4c9ae
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446349"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661870"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Správa balíčků npm v sadě Visual Studio
 
@@ -29,6 +29,9 @@ Visual Studio umožňuje snadno pracovat s npm a vydávání příkazů npm pře
 * [Použití `.npm` v interaktivním okně Node.js](#interactive)
 
 Tyto funkce fungují společně a synchronizovat systém projektu a *package.json* soubor v projektu.
+
+> [!Important]
+> NPM očekává, že se složka *node_modules* a *Package. JSON* v kořenu projektu. Pokud je struktura složky vaší aplikace odlišná, můžete eitehr [Otevřít projekt jako složku](npm-package-management.md) nebo aktualizovat strukturu složek, pokud chcete spravovat balíčky npm pomocí sady Visual Studio.
 
 ## <a name="npmInstallWindow"></a> Instalace balíčků z Průzkumníka řešení
 
