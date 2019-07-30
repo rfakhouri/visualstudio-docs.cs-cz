@@ -80,3 +80,5 @@ Sekundární přístupový klíč poskytuje stejný přístup k vašemu účtu �
 ## <a name="next-steps"></a>Další kroky
 
 Další informace o publikování aplikace do Azure ze sady Visual Studio, naleznete v tématu [publikování cloudové služby pomocí nástroje Azure](vs-azure-tools-publishing-a-cloud-service.md).
+
+<!-- test -->
