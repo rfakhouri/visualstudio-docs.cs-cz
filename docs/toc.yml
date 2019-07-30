@@ -838,7 +838,7 @@
           href: ide/reference/choose-toolbox-items-wpf-components.md
         - name: Sběrač fragmentů kódu
           href: ide/reference/code-snippet-picker.md
-        - name: Příkazové okno
+        - name: Okno Příkaz
           href: ide/reference/command-window.md
         - name: Dialogové okno Převést
           href: ide/reference/convert-dialog-box.md
@@ -854,131 +854,151 @@
           href: ide/reference/miscellaneous-files.md
         - name: Možnosti
           items:
-            - name: Dialogové okno Možnosti
+            - name: Možnosti – dialogové okno
               href: ide/reference/options-dialog-box-visual-studio.md
-            - name: Možnosti prostředí
+            - name: Prostředí
               items:
-                - name: Dialogové okno Možnosti prostředí
-                  href: ide/reference/environment-options-dialog-box.md
-                - name: Prostředí – Obecné
+                - name: Obecné
                   href: ide/reference/general-environment-options-dialog-box.md
-                - name: Prostředí – Automatická obnova
-                  href: ide/reference/autorecover-environment-options-dialog-box.md
-                - name: Prostředí – Dokumenty
-                  href: ide/reference/documents-environment-options-dialog-box.md
-                - name: Prostředí – Rozšíření
-                  href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
-                - name: Prostředí – Najít a nahradit
-                  href: ide/reference/find-and-replace-environment-options-dialog-box.md
-                - name: Prostředí – Písma a barvy
-                  href: ide/reference/fonts-and-colors-environment-options-dialog-box.md
-                - name: Prostředí – Nastavení importu a exportu
-                  href: ide/reference/import-and-export-settings-environment-options-dialog-box.md
-                - name: Prostředí – Mezinárodní nastavení
-                  href: ide/reference/international-settings-environment-options-dialog-box.md
-                - name: Prostředí – Klávesnice
-                  href: ide/reference/keyboard-environment-options-dialog-box.md
-                - name: Prostředí – Oznámení
-                  href: ide/reference/notifications-environment-options-dialog-box.md
-                - name: Prostředí – Snadné spuštění
-                  href: ide/reference/quick-launch-environment-options-dialog-box.md
-                - name: Prostředí – Po spuštění
-                  href: ide/reference/startup-environment-options-dialog-box.md
-                - name: Prostředí – Účty
+                - name: Účty
                   href: ide/reference/accounts-environment-options-dialog-box.md
-                - name: Prostředí – Karty a okna
+                - name: Automatická obnova
+                  href: ide/reference/autorecover-environment-options-dialog-box.md
+                - name: Dokumenty
+                  href: ide/reference/documents-environment-options-dialog-box.md
+                - name: Rozšíření
+                  href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
+                - name: hledání a nahrazování
+                  href: ide/reference/find-and-replace-environment-options-dialog-box.md
+                - name: Písma a barvy
+                  href: ide/reference/fonts-and-colors-environment-options-dialog-box.md
+                - name: Nastavení importu a exportu
+                  href: ide/reference/import-and-export-settings-environment-options-dialog-box.md
+                - name: Mezinárodní nastavení
+                  href: ide/reference/international-settings-environment-options-dialog-box.md
+                - name: Klávesnice
+                  href: ide/reference/keyboard-environment-options-dialog-box.md
+                - name: Funkce Preview
+                  href: ide/reference/environment-preview-features-options.md
+                - name: Oznámení
+                  href: ide/reference/notifications-environment-options-dialog-box.md
+                - name: Snadné spuštění
+                  href: ide/reference/quick-launch-environment-options-dialog-box.md
+                - name: Spuštění
+                  href: ide/reference/startup-environment-options-dialog-box.md
+                - name: Karty a okna
                   href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
-                - name: Prostředí – Seznam úkolů
+                - name: Seznam úkolů
                   href: ide/reference/task-list-environment-options-dialog-box.md
-                - name: Prostředí – nastavení důvěryhodnosti
+                - name: Nastavení důvěryhodnosti
                   href: ide/reference/trust-settings.md
-                - name: Prostředí – Webový prohlížeč
+                - name: Webový prohlížeč
                   href: ide/reference/web-browser-environment-options-dialog-box.md
-            - name: Možnosti textového editoru
+            - name: "Projekty a\_řešení"
               items:
-                - name: Dialogové okno Možnosti textového editoru
-                  href: ide/reference/text-editor-options-dialog-box.md
-                - name: Textový editor – Obecné
-                  href: ide/reference/options-text-editor-general.md
-                - name: Textový editor – Přípona souboru
-                  href: ide/reference/options-text-editor-file-extension.md
-                - name: Textový editor – Všechny jazyky
-                  href: ide/reference/options-text-editor-all-languages.md
-                - name: 'Textový editor – Všechny jazyky, Posuvníky'
-                  href: ide/reference/options-text-editor-all-languages-scroll-bars.md
-                - name: 'Textový editor – Všechny jazyky, Tabulátory'
-                  href: ide/reference/options-text-editor-all-languages-tabs.md
-                - name: 'Textový editor – Basic (Visual Basic), Upřesnit'
-                  href: ide/reference/options-text-editor-basic-visual-basic.md
-                - name: 'Textový editor – Basic (Visual Basic), Styl kódu'
-                  href: ide/code-styles-and-code-cleanup.md
-                - name: 'Textový editor – Basic (Visual Basic), IntelliSense'
-                  href: ide/visual-basic-specific-intellisense.md
-                - name: 'Textový editor – C/C++, Formátování'
-                  href: ide/reference/options-text-editor-c-cpp-formatting.md
-                - name: 'Textový editor – C/C++, Upřesnit'
-                  href: ide/reference/options-text-editor-c-cpp-advanced.md
-                - name: 'Textový editor – C/C++, Experimentální'
-                  href: ide/reference/options-text-editor-c-cpp-experimental.md
-                - name: 'Textový editor – C/C++, Zobrazit'
-                  href: ide/reference/options-text-editor-c-cpp-view.md
-                - name: 'Textový editor – C#, styl kódu, formátování'
-                  href: ide/reference/options-text-editor-csharp-formatting.md
-                - name: 'Textový editor – C#, Upřesnit'
-                  href: ide/reference/options-text-editor-csharp-advanced.md
-                - name: 'Textový editor – C#, IntelliSense'
-                  href: ide/reference/options-text-editor-csharp-intellisense.md
-                - name: 'Textový editor – F#, Upřesnit'
-                  href: ide/reference/options-text-editor-fsharp-advanced.md
-                - name: 'Textový editor – F#, Opravy kódu'
-                  href: ide/reference/options-text-editor-fsharp-code-fixes.md
-                - name: 'Textový editor – F#, CodeLens'
-                  href: ide/reference/options-text-editor-fsharp-codelens.md
-                - name: 'Textový editor – F#, IntelliSense'
-                  href: ide/reference/options-text-editor-fsharp-intellisense.md
-                - name: 'Textový Editor – HTML (webové formuláře), Formátování'
-                  href: ide/reference/options-text-editor-html-formatting.md
-                - name: 'Textový Editor – HTML (webové formuláře), Různé'
-                  href: ide/reference/options-text-editor-html-miscellaneous.md
-                - name: 'Textový Editor – HTML (webové formuláře), Ověření'
-                  href: ide/reference/options-text-editor-html-validation.md
-                - name: 'Textový editor – JavaScript, Ověření kódu'
-                  href: ide/reference/options-text-editor-javascript-code-validation.md
-                - name: 'Textový editor – JavaScript, Formátování'
-                  href: ide/reference/options-text-editor-javascript-formatting.md
-                - name: 'Textový editor – JavaScript, IntelliSense'
-                  href: ide/reference/options-text-editor-javascript-intellisense.md
-                - name: 'Textový editor – JavaScript, Linting'
-                  href: ide/reference/options-text-editor-javascript-linting.md
-                - name: 'Textový editor – JavaScript, Projekt'
-                  href: ide/reference/options-text-editor-javascript-project.md
-                - name: 'Textový editor – U-SQL, Formátování'
-                  href: ide/reference/options-text-editor-usql-formatting.md
-                - name: 'Textový editor – U-SQL, IntelliSense'
-                  href: ide/reference/options-text-editor-usql-intellisense.md
-                - name: 'Textový editor – XAML, Formátování'
-                  href: ide/reference/options-text-editor-xaml-formatting.md
-                - name: 'Textový editor – XAML, Různé'
-                  href: ide/reference/options-text-editor-xaml-miscellaneous.md
-                - name: 'Textový editor – XML, Formátování'
-                  href: ide/reference/options-text-editor-xml-formatting.md
-                - name: 'Textový editor – XML, Různé'
-                  href: ide/reference/options-text-editor-xml-miscellaneous.md
-            - name: Projekty a řešení – Možnosti
-              items:
-                - name: Projekty a řešení – dialogové okno Možnosti
+                - name: Obecné
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
-                - name: Projekty a řešení – Sestavit a spustit
+                - name: Sestavení a spuštění
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
-                - name: Projekty a řešení – Webové projekty
-                  href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
-                - name: Projekty a řešení – Výchozí hodnoty pro VB
+                - name: Umístění
+                  href: ide/reference/projects-solutions-locations-options.md
+                - name: Výchozí hodnoty pro VB
                   href: ide/reference/visual-basic-defaults-projects-options-dialog-box.md
-                - name: Projekty a řešení – Nastavení projektu VC++
+                - name: Nastavení projektu VC++
                   href: ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box.md
-            - name: 'Návrhář XAML, dialogové okno Možnosti'
+                - name: Webové projekty
+                  href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
+            - name: Textový editor
+              items:
+                - name: Obecné
+                  href: ide/reference/options-text-editor-general.md
+                - name: Přípona souboru
+                  href: ide/reference/options-text-editor-file-extension.md
+                - name: Všechny jazyky
+                  items:
+                    - name: Obecné
+                      href: ide/reference/options-text-editor-all-languages.md
+                    - name: Posuvníky
+                      href: ide/reference/options-text-editor-all-languages-scroll-bars.md
+                    - name: Karty
+                      href: ide/reference/options-text-editor-all-languages-tabs.md
+                - name: Základní
+                  items:
+                    - name: Upřesnit
+                      href: ide/reference/options-text-editor-basic-visual-basic.md
+                    - name: Styl kódu
+                      href: ide/code-styles-and-code-cleanup.md
+                    - name: IntelliSense
+                      href: ide/visual-basic-specific-intellisense.md
+                - name: 'C#'
+                  items:
+                    - name: Upřesnit
+                      href: ide/reference/options-text-editor-csharp-advanced.md
+                    - name: Styl kódu > Formátování
+                      href: ide/reference/options-text-editor-csharp-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-csharp-intellisense.md
+                - name: C/C++
+                  items:
+                    - name: Upřesnit
+                      href: ide/reference/options-text-editor-c-cpp-advanced.md
+                    - name: Experimentální
+                      href: ide/reference/options-text-editor-c-cpp-experimental.md
+                    - name: Formátování
+                      href: ide/reference/options-text-editor-c-cpp-formatting.md
+                    - name: Zobrazit
+                      href: ide/reference/options-text-editor-c-cpp-view.md
+                - name: 'F#'
+                  items:
+                    - name: Upřesnit
+                      href: ide/reference/options-text-editor-fsharp-advanced.md
+                    - name: Opravy kódu
+                      href: ide/reference/options-text-editor-fsharp-code-fixes.md
+                    - name: CodeLens
+                      href: ide/reference/options-text-editor-fsharp-codelens.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-fsharp-intellisense.md
+                - name: HTML (Web Forms)
+                  items:
+                    - name: Formátování
+                      href: ide/reference/options-text-editor-html-formatting.md
+                    - name: Různé
+                      href: ide/reference/options-text-editor-html-miscellaneous.md
+                    - name: Ověřování
+                      href: ide/reference/options-text-editor-html-validation.md
+                - name: JavaScript/TypeScript
+                  items:
+                    - name: Ověření kódu
+                      href: ide/reference/options-text-editor-javascript-code-validation.md
+                    - name: Formátování
+                      href: ide/reference/options-text-editor-javascript-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-javascript-intellisense.md
+                    - name: Analyzování kódu
+                      href: ide/reference/options-text-editor-javascript-linting.md
+                    - name: Project
+                      href: ide/reference/options-text-editor-javascript-project.md
+                - name: U-SQL
+                  items:
+                    - name: Formátování
+                      href: ide/reference/options-text-editor-usql-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-usql-intellisense.md
+                - name: XAML
+                  items:
+                    - name: Formátování
+                      href: ide/reference/options-text-editor-xaml-formatting.md
+                    - name: Různé
+                      href: ide/reference/options-text-editor-xaml-miscellaneous.md
+                - name: XML
+                  items:
+                    - name: Formátování
+                      href: ide/reference/options-text-editor-xml-formatting.md
+                    - name: Různé
+                      href: ide/reference/options-text-editor-xml-miscellaneous.md
+            - name: Návrhář XAML
               href: ide/reference/xaml-designer.md
-        - name: Okno Výstup
+        - name: Výstup – okno
           href: ide/reference/output-window.md
         - name: Vlastnosti projektu
           items:

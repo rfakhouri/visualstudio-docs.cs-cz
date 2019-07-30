@@ -71,8 +71,9 @@
 #### [Video k onboardingu](https://youtu.be/plSu6fpi7UI)
 ### Použití portálu pro správu
 #### [Přehled](using-admin-portal.md)
-#### [Přiřazení předplatných](assign-license.md)
-#### [Opětovné odeslání e-mailů k zadáním](resend-assignment-email.md)
+#### Přiřazení předplatných
+##### [Přidání jednotlivých uživatelů](assign-license.md)
+##### [Přidání více uživatelů](assign-license-bulk.md)
 #### [Úprava předplatných](edit-license.md)
 #### [Odstranění předplatných](delete-license.md)
 #### [Hledání předplatného](search-license.md)
@@ -84,7 +85,7 @@
 #### [Předplatitelé s přihlášením pomocí osobního e-mailu](personal-email-sign-ins.md)
 ### [Správa sady Visual Studio s GitHub Enterprise](assign-github.md)
 ## Prostředky
-### [White paper k licencování sady Visual Studio](https://aka.ms/vslicensing)
+### [Dokument white paper k licencování sady Visual Studio](https://aka.ms/vslicensing)
 ### [Porovnání možností a cen předplatného](https://visualstudio.microsoft.com/vs/pricing)
 ### [Porovnání funkcí integrovaných vývojových prostředí (IDE) sady Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 ### [Podpora správy a předplatných sady Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
