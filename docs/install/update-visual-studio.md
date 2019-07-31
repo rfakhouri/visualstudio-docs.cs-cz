@@ -2,7 +2,7 @@
 title: Aktualizace sady Visual Studio
 titleSuffix: ''
 description: Zjistěte, jak aktualizovat na nejnovější verzi, podrobné sady Visual Studio.
-ms.date: 07/11/2019
+ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -17,20 +17,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: 80ee1a568e30a4898c767533a4f592e2301a097a
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250580"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681496"
 ---
-# <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizace na nejnovější verzi sady Visual Studio
+# <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizace sady Visual Studio na nejnovější verzi
 
 ::: moniker range="vs-2017"
 
-Doporučujeme vám přejít na maximum [poslední verzi](/visualstudio/releasenotes/vs2017-relnotes/) sady Visual Studio 2017 tak, že vždycky získáte nejnovější funkce, opravy a vylepšení.
+Doporučujeme, abyste aktualizovali na nejnovější [verzi](/visualstudio/releasenotes/vs2017-relnotes/) sady Visual Studio 2017, abyste vždycky získali nejnovější funkce, opravy a vylepšení.
 
-A pokud chcete vyzkoušet naše nejnovější verzi, zvažte stažení a instalaci [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) místo.
+A pokud si chcete vyzkoušet naši nejnovější verzi, zvažte místo toho stažení a instalaci sady [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) .
 
 > [!IMPORTANT]
 > Musíte se přihlásit pomocí účtu, který má oprávnění správce k instalaci, aktualizaci nebo úpravy sady Visual Studio. Další informace najdete v tématu [uživatelská oprávnění a sada Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -42,9 +42,9 @@ A pokud chcete vyzkoušet naše nejnovější verzi, zvažte stažení a instala
 
 My jsme nově zjednodušili instalace a aktualizovat prostředí, aby bylo snazší pro použití přímo z integrovaného vývojového prostředí. Tady je postup k aktualizaci z verze 15.6 a novějším, která je novější verze sady Visual Studio.
 
-### <a name="using-the-notifications-hub"></a>Pomocí centra oznámení
+### <a name="using-the-notifications-hub"></a>Použití centra oznámení
 
-Při aktualizaci neexistuje odpovídající příznak oznámení v sadě Visual Studio.
+V případě aktualizace existuje odpovídající příznak oznámení v aplikaci Visual Studio.
 
 1. Uložte si práci.
 
@@ -53,7 +53,7 @@ Při aktualizaci neexistuje odpovídající příznak oznámení v sadě Visual 
    ![Aktualizace sady Visual Studio 2017 pomocí centra oznámení](media/vs-install-notifications-hub-15dot6.png "centru oznámení sadě Visual Studio 2017")
 
       > [!TIP]
-      > Je kumulativní aktualizace pro edice Visual Studio 2017, takže vždy rozhodnout je nainstalovat jeden nejnovější číslo verze.
+      > Aktualizace pro edici sady Visual Studio 2017 je kumulativní, takže se vždy rozhodnete nainstalovat jednu s nejnovějším číslem verze.
 
 1. Když **aktualizace** dialogové okno se otevře, zvolte **aktualizovat**.
 
@@ -74,7 +74,7 @@ Můžete si vyhledejte aktualizaci a potom nainstalovat na panelu nabídek v sad
 
 1. Uložte si práci.
 
-1. Zvolte **pomáhají** > **vyhledávat aktualizace**.
+1. Zvolit **nápovědu** > **pro kontrolu aktualizací**.
 
      ![Nové nabídky Nápověda v sadě Visual Studio verze 15.6](media/vs-help-menu-check-for-updates.png "nové nabídky Nápověda v sadě Visual Studio verze 15.6")
 
@@ -85,9 +85,9 @@ Můžete si vyhledejte aktualizaci a potom nainstalovat na panelu nabídek v sad
    > [!NOTE]
    > Když spustíte Visual Studio v režimu správce, musíte ručně restartovat Visual Studio po aktualizaci.
 
-### <a name="using-the-visual-studio-installer"></a>Pomocí instalačního programu sady Visual Studio
+### <a name="using-the-visual-studio-installer"></a>Použití Instalační program pro Visual Studio
 
-Stejně jako v dřívějších verzích sady Visual Studio můžete použít instalační program sady Visual Studio pro instalaci aktualizace.
+Stejně jako v dřívějších verzích sady Visual Studio můžete použít Instalační program pro Visual Studio k instalaci aktualizace.
 
 1. Uložte si práci.
 
@@ -96,7 +96,7 @@ Stejně jako v dřívějších verzích sady Visual Studio můžete použít ins
    > [!NOTE]
    > Na počítači se systémem Windows 10, najdete instalační program pod písmenem **V** jako **instalační program sady Visual Studio**, nebo pod písmenem **M** jako  **Instalační program sady Microsoft Visual Studio**.
 
-1. Na **produktu** stránce v instalačním programu, hledejte pro edice Visual Studio, kterou jste předtím nainstalovali.
+1. Na stránce **produkt** v instalačním programu vyhledejte verzi sady Visual Studio, kterou jste předtím nainstalovali.
 
 1. Pokud je k dispozici aktualizace, zobrazí se **aktualizovat** tlačítko. (Může trvat několik sekund, než instalační program k určení, zda je k dispozici aktualizace.)
 
@@ -106,7 +106,7 @@ Stejně jako v dřívějších verzích sady Visual Studio můžete použít ins
 
 ## <a name="update-visual-studio-2017-version-155-or-earlier"></a>Aktualizace sady Visual Studio 2017 verze 15.5 nebo starší
 
-Pokud používáte starší verzi, tady je postup, chcete-li použít aktualizace ze sady Visual Studio 2017 verze 15.0 prostřednictvím verze 15.5.
+Pokud používáte starší verzi, můžete použít aktualizaci ze sady Visual Studio 2017 verze 15,0 prostřednictvím verze 15,5.
 
 ### <a name="update-by-using-the-notifications-hub"></a>Aktualizovat pomocí centra oznámení
 
@@ -119,7 +119,7 @@ Pokud používáte starší verzi, tady je postup, chcete-li použít aktualizac
    ![Aktualizace sady Visual Studio 2017 pomocí centra oznámení](media/notifications-hub.png "centru oznámení v sadě Visual Studio")
 
       > [!TIP]
-      > Je kumulativní aktualizace pro edice Visual Studio 2017, takže vždy rozhodnout je nainstalovat jeden nejnovější číslo verze.
+      > Aktualizace pro edici sady Visual Studio 2017 je kumulativní, takže se vždy rozhodnete nainstalovat jednu s nejnovějším číslem verze.
 
 1. Zvolte **"Visual Studio Update" je k dispozici**, které se otevře **rozšíření a aktualizace** dialogové okno.
 
@@ -133,8 +133,8 @@ Pokud používáte starší verzi, tady je postup, chcete-li použít aktualizac
 
 Visual Studio vás upozorní, když je aktualizace k dispozici pro samotnou sadu Visual Studio nebo pro všechny součásti a také při výskytu určitých událostí v prostředí sady Visual Studio.
 
-* Když na příznak oznámení je žlutý, aktualizace produktu Visual Studio pro není k dispozici k instalaci.
-* Po červenou na příznak oznámení je nějaký problém s vaší licencí.
+* Pokud je příznak oznámení žlutý, je k dispozici aktualizace produktu Visual Studio, kterou si můžete nainstalovat.
+* Pokud je příznak oznámení červený, dojde k problému s vaší licencí.
 * Po černou na příznak oznámení nejsou nepovinné nebo informační zprávy ke kontrole.
 
 Vyberte příznak oznámení a otevřete **oznámení** centra a potom vyberte oznámení, které chcete zpracovat. Nebo můžete rozhodnout ignorovat nebo chcete oznámení zavřít.
@@ -147,26 +147,26 @@ Pokud vyberete možnost Ignorovat upozornění, Visual Studio zastaví, abych ho
 
 ### <a name="update-by-using-the-visual-studio-installer"></a>Aktualizovat pomocí instalačního programu sady Visual Studio
 
-1. Spusťte instalační program. Může být potřeba aktualizovat instalační program, než budete pokračovat. Pokud je to tento případ, budete vyzváni k tomu.
+1. Spusťte instalační program. Může být potřeba aktualizovat instalační program, než budete pokračovat. Pokud se jedná o tento případ, budete vyzváni k tomu.
 
    > [!NOTE]
    > Na počítači se systémem Windows 10, najdete instalační program pod písmenem **V** jako **instalační program sady Visual Studio**, nebo pod písmenem **M** jako  **Instalační program sady Microsoft Visual Studio**.
 
-1. Na **produktu** stránce v instalačním programu, hledejte pro edice Visual Studio, které dřív nainstalované.
+1. Na stránce **produkt** v instalačním programu vyhledejte verzi sady Visual Studio, která byla dříve nainstalována.
 
 1. Pokud je k dispozici aktualizace, zobrazí se **aktualizovat** tlačítko. (Může trvat několik sekund, než instalační program k určení, zda je k dispozici aktualizace.)
 
    Zvolte **aktualizace** tlačítko Instalovat aktualizace.
 
-     ![Aktualizace sady Visual Studio 2017 s použitím instalačního programu sady Visual Studio](media/update-visual-studio.png "aktualizace sady Visual Studio pomocí instalačního programu sady Visual Studio")
+     ![Aktualizace sady Visual Studio 2017 pomocí instalační program pro Visual Studio](media/update-visual-studio.png "Aktualizace sady Visual Studio pomocí instalační program pro Visual Studio")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Doporučujeme vám přejít na maximum [poslední verzi](/visualstudio/releases/2019/release-notes/) sady Visual Studio 2019 tak, že vždycky získáte nejnovější funkce, opravy a vylepšení.
+Doporučujeme, abyste aktualizovali na nejnovější [verzi](/visualstudio/releases/2019/release-notes/) sady Visual Studio 2019, abyste vždycky získali nejnovější funkce, opravy a vylepšení.
 
-A pokud jste ještě nenainstalovali aplikaci Visual Studio 2019, přejděte na [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalujte ji zdarma.
+A pokud jste ještě nenainstalovali Visual Studio 2019, navštivte stránku [ke stažení pro Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) , abyste ho nainstalovali zdarma.
 
 > [!IMPORTANT]
 > Musíte se přihlásit pomocí účtu, který má oprávnění správce k instalaci, aktualizaci nebo úpravy sady Visual Studio. Další informace najdete v tématu [uživatelská oprávnění a sada Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -174,112 +174,114 @@ A pokud jste ještě nenainstalovali aplikaci Visual Studio 2019, přejděte na 
 > [!NOTE]
 > Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [aktualizace sady Visual Studio pro Mac](/visualstudio/mac/update).
 
-Tady je postup, chcete-li aktualizovat vizuál&nbsp;Studio&nbsp;2019.
+Tady je postup aktualizace sady Visual&nbsp;Studio&nbsp;2019.
 
 ## <a name="use-the-visual-studio-installer"></a>Použití instalačního programu sady Visual Studio
 
 1. Spusťte instalační program.
 
-     ![Spusťte instalační program sady Visual Studio](media/vs2019-visual-studio-installer.png "spusťte instalační program sady Visual Studio")
+     ![Otevřete instalační program pro Visual Studio z Windows](media/vs-2019/vs-installer-windows-start.png "Otevřete instalační program pro Visual Studio")
 
-   Budete muset aktualizovat instalační program pokračovat. Pokud ano, postupujte podle pokynů.
+   Než budete pokračovat, bude pravděpodobně nutné aktualizovat instalační program. Pokud ano, postupujte podle pokynů.
 
-1. V instalačním programu vyhledejte edici sady Visual Studio, který jste nainstalovali.
+1. V instalačním programu vyhledejte edici sady Visual Studio, kterou jste nainstalovali.
 
-   Například, pokud jste dříve nainstalovali Visual&nbsp;Studio Community&nbsp;2019 a dojde k aktualizaci, pak **k dispozici je aktualizace** v instalačním programu se zobrazí zpráva.
+   Například pokud jste dříve nainstalovali Visual&nbsp;Studio Community&nbsp;2019 a pro něj existuje aktualizace, zobrazí se v instalačním programu zpráva k dispozici **aktualizace** .
 
-     ![Zvolte edici sady Visual Studio 2019, kterou chcete aktualizovat](media/vs2019-update-visual-studio-community-rc.png "zvolte edici sady Visual Studio 2019, kterou chcete aktualizovat")
+     ![Vyberte edici sady Visual Studio 2019, kterou chcete aktualizovat] . (media/vs-2019/vs-installer-update-visual-studio-community.png "Vyberte edici sady Visual Studio 2019, kterou chcete aktualizovat") .
 
-1. Zvolte **aktualizace** nainstalujte aktualizace.
+1. Pro instalaci aktualizací vyberte **aktualizovat** .
 
-    ![Klikněte na tlačítko aktualizace můžete nainstalovat aktualizace](media/vs2019-choose-update-visual-studio-community-rc.png "klikněte na tlačítko aktualizace můžete nainstalovat aktualizace")
+    ![Kliknutím na tlačítko Aktualizovat nainstalujete aktualizace] . (media/vs-2019/vs-installer-choose-update-visual-studio-community.png "Kliknutím na tlačítko Aktualizovat nainstalujete aktualizace") .
 
-1. Po dokončení aktualizace, zvolte **spuštění** ke spuštění sady Visual Studio.
+1. Po dokončení aktualizace se může zobrazit výzva k restartování počítače. Pokud ano, udělejte to a potom spusťte Visual Studio jako obvykle.
 
-    ![Vyberte tlačítko Spustit ke spuštění sady Visual Studio](media/vs2019-choose-launch-visual-studio-community-rc.png "vyberte na spouštěcí tlačítko ke spuštění sady Visual Studio")
+   Pokud se vám nezobrazí výzva k restartování počítače, klikněte na tlačítko **Spustit** a spusťte aplikaci Visual Studio z instalačního programu.
+
+    ![Kliknutím na tlačítko Spustit spusťte aplikaci Visual Studio] . (media/vs-2019/choose-launch-visual-studio-community.png "Kliknutím na tlačítko Spustit spusťte aplikaci Visual Studio") .
 
 ## <a name="use-the-ide"></a>Pomocí integrovaného vývojového prostředí
 
-Můžete si vyhledejte aktualizaci a nainstalujte ji pomocí panelu nabídek nebo vyhledávací pole v aplikaci Visual Studio 2019.
+Aktualizaci můžete vyhledat a pak ji nainstalovat pomocí řádku nabídek nebo vyhledávacího pole v aplikaci Visual Studio 2019.
 
 ### <a name="open-visual-studio"></a>Otevřít Visual Studio
 
-1. Z Windows **Start** nabídce zvolte **Visual Studio 2019**.
+1. V nabídce **Start** systému Windows vyberte možnost **Visual Studio 2019**.
 
-    ![Otevřít Visual Studio 2019](media/vs2019-visual-studio-rc.png "otevřete Visual Studio 2019 z Windows")
+    ![Otevřete Visual Studio 2019](media/vs-2019/vs-installer-visual-studio-2019.png "Otevřete Visual Studio 2019 z Windows") .
 
-1. V části **Začínáme**, zvolte možnosti otevření rozhraní IDE.
+1. V části **Začínáme**vyberte libovolnou možnost a otevřete integrované vývojové prostředí (IDE).
 
-    ![Spusťte instalační program sady Visual Studio](media/vs2019-choose-option-from-get-started.png "spusťte instalační program sady Visual Studio")
+    ![Otevřete instalační program pro Visual Studio](media/vs2019-choose-option-from-get-started.png "Otevřete instalační program pro Visual Studio")
 
-    Otevře se Visual Studio. V integrovaném vývojovém prostředí **aktualizace Visual Studio 2019** se zobrazí zpráva.
+    Otevře se Visual Studio. V integrovaném vývojovém prostředí se zobrazí zpráva **aktualizace sady Visual Studio 2019** .
 
-    ![Zpráva 'aktualizace Visual Studio 2019' v integrovaném vývojovém prostředí](media/vs2019-update-visual-studio-ide-message.png "zpráva 'aktualizace Visual Studio 2019' v integrovaném vývojovém prostředí")
+    ![Zpráva o aktualizaci sady Visual Studio 2019 v integrovaném vývojovém prostředí](media/vs-2019/update-visual-studio-ide-message.png "Zpráva o aktualizaci sady Visual Studio 2019 v integrovaném vývojovém prostředí")
 
-1. V **aktualizace Visual Studio 2019** zprávu, zvolte **podrobnosti**.
+1. Ve zprávě **aktualizace sady Visual Studio 2019** vyberte možnost **Zobrazit podrobnosti**.
 
-   ![Zvolte tlačítko Zobrazit podrobnosti o ve zprávě aktualizace Visual Studio IDE. 2019](media/vs2019-update-visual-studio-ide-view-details.png "klikněte na tlačítko Zobrazit podrobnosti zprávy aktualizace Visual Studio 2019")
+   ![Vyberte tlačítko Zobrazit podrobnosti ve zprávě aktualizace IDE sady Visual Studio 2019](media/vs-2019/update-visual-studio-ide-view-details.png "Klikněte na tlačítko Zobrazit podrobnosti ve zprávě aktualizace sady Visual Studio 2019.")
 
-1. V **aktualizovat stažený a připravený k instalaci** dialogového okna zvolte **aktualizace**.
+1. V dialogovém okně **stažená aktualizace a připraveno k instalaci** vyberte **aktualizovat**.
 
-     ![Klikněte na tlačítko aktualizace v dialogovém okně aktualizace stažené a připravené k instalaci](media/vs2019-update-visual-studio-community-rc-from-ide.png "klikněte na tlačítko aktualizace v dialogovém okně aktualizace stažené a připravené k instalaci")
+     ![V dialogovém okně aktualizace staženého a připraveno k instalaci klikněte na tlačítko Aktualizovat] . (media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "V dialogovém okně aktualizace staženého a připraveno k instalaci klikněte na tlačítko Aktualizovat") .
 
-   Visual Studio aktualizuje, zavře a znovu neotevře.
+   Visual Studio aktualizuje, zavírá a znovu otevírá.
 
-### <a name="in-visual-studio"></a>V sadě Visual Studio
+### <a name="in-visual-studio"></a>V aplikaci Visual Studio
 
-1. Na panelu nabídek zvolte **pomáhají**a klikněte na tlačítko **vyhledávat aktualizace**.
+1. V řádku nabídek zvolte možnost **help**a pak možnost **Vyhledat aktualizace**.
 
-     ![Zvolte možnost "Vyhledat aktualizace z nabídky Nápověda](media/vs-2019/vs-ide-check-updates-help-menu.png "zvolit\"Kontrola aktualizací\"z nabídky Nápověda")
+     ![V nabídce nápovědu vyberte možnost vyhledat aktualizace.](media/vs-2019/vs-ide-check-updates-help-menu.png "V nabídce nápovědu vyberte možnost vyhledat aktualizace.")
 
     > [!NOTE]
-    > Do vyhledávacího pole v integrovaném vývojovém prostředí můžete také vyhledat aktualizace. Stisknutím klávesy **Ctrl**+**Q**, zadejte "Kontrola aktualizací" a vyberte výsledek hledání, který odpovídá.
+    > Můžete také použít vyhledávací pole v integrovaném vývojovém prostředí (IDE) a vyhledat aktualizace. Stiskněte **kombinaci kláves CTRL**+**Q**, zadejte "Vyhledat aktualizace" a pak zvolte výsledek hledání, který odpovídá.
 
-1. V **aktualizovat stažený a připravený k instalaci** dialogového okna zvolte **aktualizace**.
+1. V dialogovém okně **aktualizace k dispozici** vyberte **aktualizovat**.
 
-     ![Klikněte na tlačítko aktualizace v dialogovém okně aktualizace stažené a připravené k instalaci](media/vs2019-update-visual-studio-community-rc-from-ide.png "klikněte na tlačítko aktualizace v dialogovém okně aktualizace stažené a připravené k instalaci")
+     ![V dialogovém okně aktualizace staženého a připraveno k instalaci klikněte na tlačítko Aktualizovat] . (media/vs-2019/update-visual-studio-community-from-ide.png "V dialogovém okně aktualizace staženého a připraveno k instalaci klikněte na tlačítko Aktualizovat") .
 
-   Visual Studio aktualizuje, zavře a znovu neotevře.
+   Visual Studio aktualizuje, zavírá a znovu otevírá.
 
 ## <a name="use-the-notifications-hub"></a>Použití centra oznámení
 
-1. V sadě Visual Studio uložte si práci.
+1. V aplikaci Visual Studio uložte svou práci.
 
-1. Vyberte ikonu oznámení v pravém horním rohu IDE sady Visual Studio otevřete **oznámení** rozbočovače.
+1. Kliknutím na ikonu oznámení v pravém dolním rohu integrovaného vývojového prostředí sady Visual Studio otevřete centrum **oznámení** .
 
-   ![Ikona oznámení v integrovaném vývojovém prostředí sady Visual Studio](media/vs-2019/notification-bar.png "ikonu oznámení v integrovaném vývojovém prostředí sady Visual Studio")
+   ![Ikona oznámení v integrovaném vývojovém prostředí sady Visual Studio](media/vs-2019/notification-bar.png "Ikona oznámení v integrovaném vývojovém prostředí sady Visual Studio")
 
-1. V **centrem oznámení**, vyberte aktualizaci, kterou chcete nainstalovat a klikněte na tlačítko **podrobnosti**.
+1. V **centru oznámení**zvolte aktualizaci, kterou chcete nainstalovat, a pak zvolte **Zobrazit podrobnosti**.
 
-     ![V centru oznámení v aplikaci Visual Studio 2019](media/vs-2019/notification-hub-update.png "centra oznámení v aplikaci Visual Studio 2019")
+     ![Centrum oznámení v aplikaci Visual Studio 2019](media/vs-2019/notification-hub-update.png "Centrum oznámení v aplikaci Visual Studio 2019")
 
       > [!TIP]
-      > Je kumulativní aktualizace pro edice Visual Studio 2019, takže vždy rozhodnout je nainstalovat jeden nejnovější číslo verze.
+      > Aktualizace pro edici sady Visual Studio 2019 je kumulativní, takže se vždy rozhodnete nainstalovat jednu s nejnovějším číslem verze.
 
-1. V **aktualizovat stažený a připravený k instalaci** dialogového okna zvolte **aktualizace**.
+1. V dialogovém okně **aktualizace k dispozici** vyberte **aktualizovat**.
 
-   Visual Studio aktualizuje, zavře a znovu neotevře.
+   Visual Studio aktualizuje, zavírá a znovu otevírá.
 
-## <a name="customize-update-settings"></a>Nastavení aktualizace
+## <a name="customize-update-settings"></a>Přizpůsobení nastavení aktualizace
 
-Aktualizace nastavení v sadě Visual Studio můžete přizpůsobit několika různými způsoby, například tak, že změníte režim instalace a výběrem automatické stahování.
+Nastavení aktualizací v aplikaci Visual Studio můžete přizpůsobit několika různými způsoby, například změnou režimu instalace a výběrem možnosti automatické stahování.
 
-Existují dva režimy instalace lze vybírat:
+Existují dva způsoby instalace, ze kterých si můžete vybrat:
 
-* **Nainstalovat při stahování**
-* **Vše stáhnout, potom nainstalovat**
+* **Instalovat během stahování**
+* **Stáhnout vše a pak nainstalovat**
 
-Můžete také **automaticky stahovat aktualizace** nastavení, která umožňuje instalaci aktualizací chcete stáhnout době nečinnosti počítače.
+Můžete také zvolit nastavení **automaticky stahovat aktualizace** , které umožňuje stažení aktualizací v době nečinnosti počítače.
 
-Tady je způsob:
+Tady je postup:
 
-1. V panelu nabídky zvolte **nástroje** > **možnosti**.
+1. Na panelu nabídek vyberte **Možnosti** **nástroje** > .
 
-2. Rozbalte **prostředí**a klikněte na tlačítko **aktualizace produktu**.
+2. Rozbalte položku **prostředí**a pak zvolte možnost **aktualizace produktu**.
 
-    ![Aktualizace nastavení v sadě Visual Studio](media/vs-2019/update-settings-options.png)
+    ![Aktualizuje nastavení v aplikaci Visual Studio.](media/vs-2019/update-settings-options.png)
 
-3. Zvolte režim instalace a možnosti automatické stahování, které chcete pro aktualizace sady Visual Studio.
+3. Vyberte režim instalace a možnosti automatického stažení, které chcete pro aktualizace sady Visual Studio.
 
 ::: moniker-end
 
@@ -287,9 +289,9 @@ Tady je způsob:
 
 ## <a name="see-also"></a>Viz také:
 
-* [Instalace sady Visual Studio verze vedle sebe](install-visual-studio-versions-side-by-side.md)
+* [Souběžná instalace verzí sady Visual Studio](install-visual-studio-versions-side-by-side.md)
 * [Aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Aktualizace sady Visual Studio na směrný plán údržby](update-servicing-baseline.md)
-* [Aktualizace sady Visual Studio pro Mac](/visualstudio/mac/update)
+* [Aktualizace sady Visual Studio na standardních hodnotách údržby](update-servicing-baseline.md)
+* [Řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md)
 * [Úpravy sady Visual Studio](modify-visual-studio.md)
 * [Odinstalace sady Visual Studio](uninstall-visual-studio.md)

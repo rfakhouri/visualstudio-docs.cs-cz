@@ -1,6 +1,6 @@
 ---
-title: Testování jazyka JavaScript a TypeScript
-description: Visual Studio poskytuje podporu testování kódu jazyka JavaScript a TypeScript pomocí Node.js Tools for Visual Studio
+title: Testování částí JavaScript a TypeScript
+description: Visual Studio poskytuje podporu testování částí JavaScriptu a kódu TypeScript pomocí nástrojů Node. js Tools for Visual Studio.
 ms.date: 06/06/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,41 +11,42 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7ad0105cffc99894134dc58af7c71c9f95bceace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 263d2eb93c3ad78e14a066fe11486be9122cfd96
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840500"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681306"
 ---
-# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testování jazyka JavaScript a TypeScript v sadě Visual Studio
+# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testování částí JavaScriptu a TypeScript v aplikaci Visual Studio
 
-Node.js Tools For Visual Studio umožňují psání a spouštění testování částí pomocí některé další oblíbené architektury JavaScriptu bez nutnosti přepínat do příkazového řádku.
+Nástroje Node. js Tools for Visual Studio umožňují psát a spouštět testy jednotek pomocí některých z oblíbených rozhraní JavaScript, aniž by bylo nutné přepnout na příkazový řádek.
 
-Podporované architektury jsou:
+Podporované architektury:
 * Mocha ([mochajs.org](http://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Pásky ([github.com/substack/tape](https://github.com/substack/tape))
-* Export Runner (toto rozhraní je specifická pro Node.js Tools for Visual Studio)
+* Jest ([jestjs.IO](https://jestjs.io/))
+* Exportovat Runner (Toto rozhraní je specifické pro Node. js Tools for Visual Studio)
 
 > [!WARNING]
-> Problém v pásky aktuálně zabraňuje pásku testy spuštění. Pokud [žádosti o přijetí změn #361](https://github.com/substack/tape/pull/361) se sloučí, by měl být problém vyřešen.
+> Problém v pásce aktuálně brání spuštění testů pásky. Pokud se sloučí [#361 PR](https://github.com/substack/tape/pull/361) , problém by se měl vyřešit.
 
-Pokud vaše oblíbená architektura není podporovaná, najdete v článku [přidání podpory pro rozhraní testování částí](#addingFramework) informace o přidání podpory.
+Pokud vaše oblíbené rozhraní není podporováno, přečtěte si téma [Přidání podpory pro testovací prostředí jednotky](#addingFramework) , kde najdete informace o přidání podpory.
 
 ## <a name="write-unit-tests"></a>Zápis testů jednotek
 
-Před přidáním do projektu testování částí, ujistěte se, že je rozhraní, které plánujete použít místně nainstalovaný ve vašem projektu. Je to snadné dosáhnout pomocí [okno instalace balíčku npm](npm-package-management.md#npmInstallWindow).
+Než do svého projektu přidáte testy jednotek, ujistěte se, že je v projektu nainstalováno rozhraní, které plánujete použít. To se dá snadno udělat pomocí [okna instalace balíčku npm](npm-package-management.md#npmInstallWindow).
 
-Preferovaný způsob, jak přidat do projektu testování částí je tak, že vytvoříte *testy* složky v projektu a nastavení, které jako testovací kořenové ve vlastnostech projektu. Musíte také vybrat, kterou chcete použít rozhraní pro testování.
+Upřednostňovaným způsobem, jak přidat testy jednotek do projektu, je vytvoření složky *testů* v projektu a nastavení, které jako kořen testu ve vlastnostech projektu. Také je nutné vybrat testovací rozhraní, které chcete použít.
 
-![Nastavte testovací kořenové a testovací rozhraní](../javascript/media/unit-test-project-properties.png)
+![Nastavit testovací kořen a testovací rozhraní](../javascript/media/unit-test-project-properties.png)
 
-Jednoduché prázdné testů můžete přidat do projektu pomocí **přidat novou položku** dialogové okno. JavaScript a TypeScript jsou podporovány ve stejném projektu.
+Do projektu můžete přidat jednoduché prázdné testy pomocí dialogového okna **Přidat novou položku** . Jazyk JavaScript i TypeScript jsou podporovány ve stejném projektu.
 
 ![Přidat nový test jednotek](../javascript/media/unit-test-add-new-item.png)
 
-Pro test jednotek Moka použijte následující kód:
+Pro test jednotky Mocha použijte následující kód:
 
 ```javascript
 var assert = require('assert');
@@ -62,37 +63,37 @@ describe('Test Suite 1', function() {
 })
 ```
 
-Pokud jste nenastavili jednotky možnosti testování ve vlastnostech projektu, musíte zajistit **Test Framework** vlastnost **vlastnosti** okno bude nastaveno na správné testovací rozhraní pro soubory testu jednotky. To se provádí automaticky šablony soubor testu jednotek.
+Pokud jste nenastavili možnosti testu jednotek ve vlastnostech projektu, je nutné zajistit, aby vlastnost **testovacího rozhraní** v okně **vlastnosti** byla nastavena na správné testovací rozhraní pro soubory testů jednotek. To se provádí automaticky pomocí šablon souborů testu jednotek.
 
 ![Rozhraní pro testování](../javascript/media/UnitTestsFrameworkMocha.png)
 
 > [!Note]
-> Možnosti testování částí převezme předvoleb nastavení pro jednotlivé soubory.
+> Možnosti testu jednotek budou mít přednost před nastaveními pro jednotlivé soubory.
 
-Po otevření Průzkumníka testů (zvolte **testovací** > **Windows** > **Průzkumník testů**), Visual Studio zjistí a zobrazí testy. Pokud testy nejsou zobrazeny původně, pak znovu sestavte projekt a aktualizujte seznam.
+Po otevření Průzkumníka testů (zvolte **testovací** > **Windows** > **Průzkumník testů**), Visual Studio zjistí a zobrazí testy. Pokud testy nejsou zpočátku zobrazeny, pak znovu sestavte projekt, aby se seznam aktualizoval.
 
 ![Průzkumník testů](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> Nepoužívejte `outdir` nebo `outfile` možnost *tsconfig.json*, protože Průzkumník testů nebude moci najít testování částí v souborech TypeScript.
+> Nepoužívejte `outdir` možnost ani `outfile` v souboru *tsconfig. JSON*, protože Průzkumník testů nebude moci nalézt testy jednotek v souborech TypeScript.
 
 ## <a name="run-tests"></a>Spouštění testů
 
-Testy můžete spustit v sadě Visual Studio 2017 nebo z příkazového řádku.
+Můžete spustit testy v aplikaci Visual Studio 2017 nebo z příkazového řádku.
 
-### <a name="run-tests-in-visual-studio-2017"></a>Spuštění testů v sadě Visual Studio 2017
+### <a name="run-tests-in-visual-studio-2017"></a>Spuštění testů v aplikaci Visual Studio 2017
 
-Testy můžete spustit kliknutím **spustit všechny** odkaz v Průzkumníku testů. Nebo testy můžete spustit tak, že vyberete jeden nebo více testů nebo skupiny, že kliknete pravým tlačítkem a vyberete **spustit vybrané testy** z místní nabídky. Spustit testy na pozadí a Průzkumník testů automaticky aktualizuje a zobrazí výsledky. Kromě toho můžete také ladit vybrané testy tak, že vyberete **ladit vybrané testy**.
+Testy můžete spustit kliknutím na odkaz **Spustit vše** v Průzkumníku testů. Nebo můžete spustit testy tak, že vyberete jeden nebo více testů nebo skupin, kliknete pravým tlačítkem myši a vyberete možnost **Spustit vybrané testy** z místní nabídky. Testy běží na pozadí a Průzkumník testů automaticky aktualizuje a zobrazí výsledky. Kromě toho můžete také ladit vybrané testy výběrem možnosti **ladit vybrané testy**.
 
 > [!Warning]
-> Ladění testů jednotek pomocí Node 8 + momentálně se podporuje jenom funguje pro jazyk JavaScript soubory testů, TypeScript, soubory testu se nezdaří pro dosažení zarážky. Jako alternativní řešení použít `debugger` – klíčové slovo.
+> Ladění testů jednotek pomocí uzlu 8 + v současné době funguje pouze pro testovací soubory jazyka JavaScript, testovací soubory TypeScript neumožní volání zarážek. Alternativním řešením je použití `debugger` klíčového slova.
 
 > [!NOTE]
-> Aktuálně nepodporujeme testy profilaci nebo pokrytí kódu.
+> V současné době nepodporujeme testy profilování nebo pokrytí kódu.
 
 ### <a name="run-tests-from-the-command-line"></a>Spuštění testů z příkazového řádku
 
-Můžete spouštět testy z [Developer Command Prompt](/dotnet/framework/tools/developer-command-prompt-for-vs) pro Visual Studio 2017 pomocí následujícího příkazu:
+Testy můžete spustit z [Developer Command Prompt](/dotnet/framework/tools/developer-command-prompt-for-vs) pro Visual Studio 2017 pomocí následujícího příkazu:
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
@@ -127,32 +128,32 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> Pokud dojde k chybě, což indikuje, že *vstest.console.exe* nemůže být nalezen, ujistěte se, že jste otevřeli Developer Command Prompt a nejsou pravidelně příkazový řádek.
+> Pokud se zobrazí chyba s oznámením, že *VSTest. Console. exe* nelze najít, ujistěte se, že jste otevřeli Developer Command Prompt a nikoli běžný příkazový řádek.
 
-## <a name="addingFramework"></a>Přidání podpory pro rozhraní testování částí
+## <a name="addingFramework"></a>Přidání podpory pro systém testů jednotek
 
-Přidání podpory pro další testovacích architektur díky implementaci zjišťování a spouštění logiky pomocí jazyka JavaScript. To provedete tak, že přidáte složku s názvem rozhraní pro testování v rámci:
+Můžete přidat podporu pro další testovací architektury implementací logiky zjišťování a spouštění pomocí JavaScriptu. To provedete tak, že přidáte složku s názvem testovacího rozhraní pod:
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks`
 
-Tato složka musí obsahovat soubor jazyka JavaScript se stejným názvem, který exportuje tyto dvě funkce:
+Tato složka musí obsahovat soubor JavaScriptu se stejným názvem, který vyexportuje tyto dvě funkce:
 
 * `find_tests`
 * `run_tests`
 
-Pro dobré a příklad `find_tests` a `run_tests` implementace rozhraní v testování Mocha implementace, naleznete v tématu:
+Dobrý příklad `find_tests` `run_tests` a implementace naleznete v tématu implementace pro rozhraní Mocha pro testování částí v:
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 
-K dispozici testovacích architektur zjišťování dochází při spuštění sady Visual Studio. Pokud architektura se přidá, když běží Visual Studio, restartujte Visual Studio ke zjištění rozhraní framework. Ale není nutné restartovat při provádění změn pro implementaci.
+Zjišťování dostupných testovacích rozhraní probíhá při spuštění sady Visual Studio. Pokud se při spuštění sady Visual Studio přidá rozhraní, restartujte Visual Studio, aby se zjistilo rozhraní. Při provádění změn v implementaci ale nemusíte nic restartovat.
 
-## <a name="unit-tests-in-other-project-types"></a>Testování částí v jiné typy projektů
-Nejste omezeni pouze do projektu Node.js zápis testů jednotek. Po přidání vlastnosti TestFramework a TestRoot k libovolnému C# nebo projektu jazyka Visual Basic, tyto testy se vytvořil výčet a ji můžete spustit pomocí okna Průzkumníka testů.
+## <a name="unit-tests-in-other-project-types"></a>Testování částí v jiných typech projektů
+Nejste omezeni na psaní testů jednotek pouze v projektech Node. js. Když přidáte vlastnosti TestFramework a TestRoot do libovolného C# nebo Visual Basic projektu, tyto testy budou vyčísleny a lze je spustit pomocí okna Průzkumník testů.
 
-Chcete-li povolit, klikněte pravým tlačítkem na uzel projektu v Průzkumníku řešení, zvolte **uvolnit projekt**a klikněte na tlačítko **upravit projekt**. Potom v souboru projektu přidejte následující dva elementy do vlastností skupiny.
+Pokud to chcete povolit, klikněte pravým tlačítkem myši na uzel projektu v Průzkumník řešení, zvolte **Uvolnit projekt**a pak zvolte **upravit projekt**. Poté v souboru projektu přidejte následující dva prvky do skupiny vlastností.
 
 > [!NOTE]
-> Ujistěte se, že vlastnost skupinu, kterou přidáváte prvky, které mají nemá podmínka uvedená.
+> Ujistěte se, že skupina vlastností, na kterou přidáváte prvky, nemá zadanou podmínku.
 > To může způsobit neočekávané chování.
 
 ```xml
@@ -162,7 +163,7 @@ Chcete-li povolit, klikněte pravým tlačítkem na uzel projektu v Průzkumník
 </PropertyGroup>
 ```
 
-V dalším kroku přidat testy do kořenové složky test, který jste zadali, a budou k dispozici ke spuštění v okně Průzkumníka testů. Pokud se zpočátku nezobrazí, budete muset projekt znovu sestavte.
+Dále přidejte testy do kořenové složky testu, kterou jste zadali, a budou k dispozici pro spuštění v okně Průzkumník testů. Pokud se nezobrazují, může být nutné projekt znovu sestavit.
 
 > [!NOTE]
-> To aktuálně nebude fungovat pro projekty .NET Standard a .NET Core.
+> V tuto chvíli nefunguje pro projekty .NET Standard a .NET Core.

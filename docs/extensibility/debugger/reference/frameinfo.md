@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO | Dokumentace Microsoftu
+title: FRAMEINFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1209036bced88cffb3681be0ceedd28942714419
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eb6a4a9f7408e5bcd03da464bfbc8ade3fa39e7e
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344466"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681096"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Popisuje rámec zásobníku.
@@ -65,49 +65,49 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Členové
 `m_dwValidFields`\
-Kombinace příznaků z [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) výčet, který určuje, která pole jsou vyplněna.
+Kombinace příznaků z výčtu [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) , která určuje, která pole jsou vyplněna.
 
 `m_bstrFuncName`\
-Název funkce související s rámce zásobníku.
+Název funkce spojený s rámcem zásobníku.
 
 `m_bstrReturnType`\
-Návratový typ přidružený k rámce zásobníku.
+Návratový typ spojený s rámcem zásobníku.
 
 `m_bstrArgs`\
-Argumenty funkce související s rámce zásobníku.
+Argumenty funkce spojené s rámcem zásobníku.
 
 `m_bstrLanguage`\
-Jazyk, ve kterém se funkce implementuje.
+Jazyk, ve kterém je funkce implementována.
 
 `m_bstrModule`\
-Název modulu, který je přidružený k rámce zásobníku.
+Název modulu spojený s rámcem zásobníku.
 
 `m_addrMin`\
-Adresy minimální fyzického zásobníku.
+Minimální adresa fyzického zásobníku.
 
 `m_addrMAX`\
-Adresy maximální fyzického zásobníku.
+Maximální adresa fyzického zásobníku.
 
 `m_pFrame`\
-[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objekt, který představuje tento rámec zásobníku.
+Objekt [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , který představuje tento rámec zásobníku.
 
-`m_pFrame`\
-[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objekt, který představuje modul, který obsahuje tento rámec zásobníku.
-
-`m_fHasDebugInfo`\
-Nenulová (`TRUE`) Pokud v daném rámci existuje ladicí informace.
+`m_pModule`\
+Objekt [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , který představuje modul, který obsahuje tento rámec zásobníku.
 
 `m_fHasDebugInfo`\
-Nenulová (`TRUE`) Pokud je spojen s kódem, který již není platný rámec zásobníku.
+Non-Zero (`TRUE`), pokud informace o ladění existují v daném snímku.
 
-`m_fHasDebugInfo`\
-Nenulová (`TRUE`) Pokud rámec zásobníku je označena pomocí Správce ladění relace (SDM).
+`m_fStaleCode`\
+Non-Zero (`TRUE`), pokud je rámec zásobníku přidružen k kódu, který již není platný.
+
+`m_fAnnotatedFrame`\
+Nenulová (`TRUE`), pokud je bloku zásobníku opatřeno poznámkou v rámci Správce ladění relace (SDM).
 
 ## <a name="remarks"></a>Poznámky
-Tato struktura je předán [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) metoda být vyplněna. Tato struktura je také obsažen v seznamu, který je součástí [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) rozhraní, které je pak vrácen z volání [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) metody.
+Tato struktura je předána metodě [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) , která bude vyplněna. Tato struktura je také obsažena v seznamu, který je obsažen v rozhraní [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) , které je zase vráceno voláním metody [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
 
 ## <a name="requirements"></a>Požadavky
-Záhlaví: msdbg.h
+Záhlaví: msdbg. h
 
 Obor názvů: Microsoft.VisualStudio.Debugger.Interop
 

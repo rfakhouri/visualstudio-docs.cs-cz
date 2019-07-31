@@ -1,6 +1,6 @@
 ---
-title: Resolvecomreference – úloha | Dokumentace Microsoftu
-ms.date: 11/04/2016
+title: Úloha ResolveComReference – | Microsoft Docs
+ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -18,63 +18,73 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 123aa52b5062d8ac083f054074df2c65ba77f80d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ecefab48babc2938a4995ec8232e0aa7a06dae3c
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431302"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681114"
 ---
-# <a name="resolvecomreference-task"></a>Resolvecomreference – úloha
-Přebírá seznam jednoho nebo více typů názvy knihoven nebo *.tlb* soubory a řeší tyto knihovny typů do umístění na disku.
+# <a name="resolvecomreference-task"></a>ResolveComReference – – úloha
+
+Převezme seznam jednoho nebo více názvů knihoven typů nebo souborů *. tlb* a přeloží tyto knihovny typů do umístění na disku.
 
 ## <a name="parameters"></a>Parametry
- Následující tabulka popisuje parametry `ResolveCOMReference` úloh.
+
+ Následující tabulka popisuje parametry `ResolveCOMReference` úkolu.
 
 |Parametr|Popis|
 |---------------|-----------------|
-|`DelaySign`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, umístí veřejný klíč v sestavení. Pokud `false`, plně podepíše sestavení.|
-|`EnvironmentVariables`|Volitelné `String[]` parametru.<br /><br /> Pole párů proměnné prostředí oddělené rovnítko. Tyto proměnné jsou předány do nové kopie *tlbimp.exe* a *aximp.exe* kromě, nebo selektivní přepsání, blok regulární prostředí...|
-|`ExecuteAsTool`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, spustí *tlbimp.exe* a *aximp.exe* z příslušné cílové rozhraní framework z – mimoprocesovou ke generování sestavení obálky nezbytné. Tento parametr umožňuje cílení na více platforem.|
-|`IncludeVersionInInteropName`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, verze knihovny typů se zahrne název obálky. Výchozí hodnota je `false`.|
-|`KeyContainer`|Volitelné `String` parametru.<br /><br /> Určuje kontejner obsahující pár veřejného a privátního klíče.|
-|`KeyFile`|Volitelné `String` parametru.<br /><br /> Určuje položku, která obsahuje pár veřejného a privátního klíče.|
-|`NoClassMembers`|Volitelné `Boolean`parametru.|
-|`ResolvedAssemblyReferences`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Určuje odkazy na sestavení přeložit.|
-|`ResolvedFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Určuje plně kvalifikovaný soubory na disku, které odpovídají fyzických umístění knihovny typů, které byly k dispozici jako vstup pro tuto úlohu.|
-|`ResolvedModules`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]`parametru.|
-|`SdkToolsPath`|Volitelné <xref:System.String?displayProperty=fullName> parametru.<br /><br /> Pokud `ExecuteAsTool` je `true`, tento parametr musí být nastaven na cestu k nástrojům sady SDK pro verzi rozhraní framework, který se cílí.|
-|`StateFile`|Volitelné `String` parametru.<br /><br /> Určuje soubor mezipaměti pro komponenty modelu COM časová razítka. Pokud není k dispozici, každé spuštění se znova vygeneruje všechny obálky.|
-|`TargetFrameworkVersion`|Volitelné `String` parametru.<br /><br /> Určuje cílovou verzi rozhraní framework projektu.<br /><br /> Výchozí hodnota je `String.Empty`. což znamená, že není žádné filtrování pro referenci podle cílovou architekturu.|
-|`TargetProcessorArchitecture`|Volitelné `String` parametru.<br /><br /> Určuje upřednostňovaný cíl architekturu procesoru. Předány *tlbimp.exe*  /machine příznak po převodu.<br /><br /> Hodnota parametru by měl být členem skupiny <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|
-|`TypeLibFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Určuje cesta k souboru knihovny typů pro odkazy modelu COM. Metadata položek může obsahovat položky obsažené v tomto parametru. Další informace najdete v části [TypeLibFiles položky metadat](#typelibfiles-item-metadata) níže.|
-|`TypeLibNames`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Určuje názvy knihovny typů řešení. Některá metadata položky musí obsahovat položky obsažené v tomto parametru. Další informace najdete v části [TypeLibNames položky metadat](#typelibnames-item-metadata) níže.|
-|`WrapperOutputDirectory`|Volitelné `String` parametru.<br /><br /> Umístění na disku, kde je umístěn vygenerovaný definiční sestavení. Pokud tuto položku metadat není zadán, úkol používá absolutní cestu k adresáři a kde je umístěn soubor projektu.|
+|`DelaySign`|Volitelný `Boolean` parametr.<br /><br /> Pokud `true`, umístí veřejný klíč do sestavení. Pokud `false`, plně podepíše sestavení.|
+|`EnvironmentVariables`|Volitelný `String[]` parametr.<br /><br /> Pole párů proměnných prostředí oddělené znaménkem rovná se. Tyto proměnné jsou předány do vytvořeného nástroje *Tlbimp. exe* a *Aximp. exe* kromě nebo selektivního přepsání regulárního bloku prostředí.|
+|`ExecuteAsTool`|Volitelný `Boolean` parametr.<br /><br /> Pokud `true`spustí nástroj *Tlbimp. exe* a *Aximp. exe* z příslušného cílového rozhraní out-of-proc, aby se vygenerovala potřebná sestavení obálky. Tento parametr umožňuje cílení na více platforem.|
+|`IncludeVersionInInteropName`|Volitelný `Boolean` parametr.<br /><br /> Pokud `true`bude verze TypeLib obsažena v názvu obálky. Výchozí hodnota je `false`.|
+|`KeyContainer`|Volitelný `String` parametr.<br /><br /> Určuje kontejner, který obsahuje pár veřejného a privátního klíče.|
+|`KeyFile`|Volitelný `String` parametr.<br /><br /> Určuje položku, která obsahuje pár veřejného a privátního klíče.|
+|`NoClassMembers`|Volitelný `Boolean`parametr.|
+|`ResolvedAssemblyReferences`|<xref:Microsoft.Build.Framework.ITaskItem> Volitelný`[]` výstupní parametr.<br /><br /> Určuje odkazy na přeložené sestavení.|
+|`ResolvedFiles`|<xref:Microsoft.Build.Framework.ITaskItem> Volitelný`[]` výstupní parametr.<br /><br /> Určuje plně kvalifikované soubory na disku, které odpovídají fyzickým umístěním knihoven typů, které byly zadány jako vstup pro tento úkol.|
+|`ResolvedModules`|<xref:Microsoft.Build.Framework.ITaskItem> Volitelný`[]`parametr.|
+|`SdkToolsPath`|Volitelný <xref:System.String?displayProperty=fullName> parametr.<br /><br /> Pokud `ExecuteAsTool` má `true`parametr hodnotu, musí být tento parametr nastaven na cestu nástrojů sady SDK pro cílovou verzi rozhraní.|
+|`StateFile`|Volitelný `String` parametr.<br /><br /> Určuje soubor mezipaměti pro časová razítka komponenty modelu COM. Pokud tato akce není k dispozici, budou všechny obálky znovu vygenerovány při každém spuštění.|
+|`TargetFrameworkVersion`|Volitelný `String` parametr.<br /><br /> Určuje verzi cílového rozhraní projektu.<br /><br /> Výchozí hodnota je `String.Empty`. To znamená, že neexistuje žádné filtrování pro odkaz na základě cílové architektury.|
+|`TargetProcessorArchitecture`|Volitelný `String` parametr.<br /><br /> Určuje preferovanou cílovou architekturu procesoru. Po překladu předávají příznak *Tlbimp. exe*/Machine.<br /><br /> Hodnota parametru by měla být členem <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|
+|`TypeLibFiles`|<xref:Microsoft.Build.Framework.ITaskItem> Volitelný`[]` parametr.<br /><br /> Určuje cestu k souboru knihovny typů pro odkazy COM. Položky zahrnuté v tomto parametru můžou obsahovat metadata položky. Další informace najdete v části [TypeLibFiles Item metadata](#typelibfiles-item-metadata) níže.|
+|`TypeLibNames`|<xref:Microsoft.Build.Framework.ITaskItem> Volitelný`[]` parametr.<br /><br /> Určuje názvy knihoven typů, které se mají přeložit. Položky zahrnuté v tomto parametru musí obsahovat některá metadata položky. Další informace najdete v části [TypeLibNames Item metadata](#typelibnames-item-metadata) níže.|
+|`WrapperOutputDirectory`|Volitelný `String` parametr.<br /><br /> Umístění na disku, kde je umístěno vygenerované sestavení vzájemné spolupráce. Pokud tato metadata položky nejsou zadána, úloha používá absolutní cestu adresáře, ve kterém je umístěn soubor projektu.|
 
 ## <a name="typelibnames-item-metadata"></a>Metadata položky TypeLibNames
- Následující tabulka popisuje dostupná metadata položky pro položky předán `TypeLibNames` parametru.
+
+ Následující tabulka popisuje metadata položek, která jsou k dispozici pro položky `TypeLibNames` předané do parametru.
 
 |Metadata|Popis|
 |--------------|-----------------|
-|`GUID`|Požadovaná položka metadat.<br /><br /> Identifikátor GUID pro knihovnu typů. Pokud se tato metadata položky nezadá, úloha se nezdaří.|
-|`VersionMajor`|Požadovaná položka metadat.<br /><br /> Hlavní verze knihovny typů. Pokud se tato metadata položky nezadá, úloha se nezdaří.|
-|`VersionMinor`|Požadovaná položka metadat.<br /><br /> Dílčí verze knihovny typů. Pokud se tato metadata položky nezadá, úloha se nezdaří.|
-|`LocaleIdentifier`|Nepovinná položka metadat.<br /><br /> Identifikátor národního prostředí (nebo LCID) pro knihovnu typů. Tento parametr je zadán jako hodnotu 32-bit, který identifikuje lidské jazyk upřednostňuje uživatelů, oblast nebo aplikaci. Pokud se tato metadata položky nezadá, použije úloha výchozí identifikátor národního prostředí "0".|
-|`WrapperTool`|Nepovinná položka metadat.<br /><br /> Určuje, že nástrojem obálky, který se používá ke generování sestavení obálky pro tuto knihovnu typů. Pokud není zadána tato metadata položky, úkol používá výchozí nástroj obálky "tlbimp". Jsou k dispozici, malá a velká písmena výběr typelibs:<br /><br /> -   `Primary`: Nástroj obálky, když chcete použít pro komponenty modelu COM již generované primární definiční sestavení. Použijete-li tento nástroj obálky, nezadávejte obálky výstupní adresář, protože, které způsobí selhání úlohy.<br />-   `TLBImp`: Při generování sestavení vzájemné spolupráce pro komponenty modelu COM, použijte tento nástroj obálky.<br />-   `AXImp`: Použijte tento nástroj obálky, když potřebujete ke generování sestavení vzájemné spolupráce pro ovládací prvek ActiveX.|
+|`GUID`|Požadovaná metadata položky<br /><br /> Identifikátor GUID knihovny typů Pokud tato metadata položky nejsou zadaná, úloha se nezdařila.|
+|`VersionMajor`|Požadovaná metadata položky<br /><br /> Hlavní verze knihovny typů. Pokud tato metadata položky nejsou zadaná, úloha se nezdařila.|
+|`VersionMinor`|Požadovaná metadata položky<br /><br /> Vedlejší verze knihovny typů. Pokud tato metadata položky nejsou zadaná, úloha se nezdařila.|
+|`EmbedInteropTypes`|Volitelná `Boolean` metadata.<br /><br />  Pokud `true`, vložte typy spolupráce z tohoto odkazu přímo do sestavení namísto generování knihovny DLL pro spolupráci.|
+|`LocaleIdentifier`|Nepovinná metadata položky<br /><br /> Identifikátor národního prostředí (nebo LCID) pro knihovnu typů. Tento parametr je určený jako 32 hodnota, která identifikuje lidský jazyk upřednostňovaný uživatelem, oblastí nebo aplikací. Pokud tato metadata položky nejsou zadaná, úloha použije výchozí identifikátor národního prostředí "0".|
+|`WrapperTool`|Nepovinná metadata položky<br /><br /> Určuje nástroj obálky, který se používá ke generování obálky sestavení pro tuto knihovnu typů. Pokud tato metadata položky nejsou zadána, úloha použije výchozí nástroj obálky "Tlbimp". K dispozici jsou možnosti pro nerozlišování velkých a malých písmen:<br /><br /> -   `Primary`: Tento nástroj pro obálky použijte v případě, že chcete použít již vygenerované primární definiční sestavení pro komponentu COM. Když použijete tento nástroj obálky, nezadávejte výstupní adresář obálky, protože to způsobí, že se úloha nezdaří.<br />-   `TLBImp`: Tento nástroj pro obálky použijte, pokud chcete vygenerovat definiční sestavení pro komponentu COM.<br />-   `AXImp`: Použijte tento nástroj obálky, pokud chcete vygenerovat definiční sestavení pro ovládací prvek ActiveX.|
 
 ## <a name="typelibfiles-item-metadata"></a>Metadata položky TypeLibFiles
- Následující tabulka popisuje dostupná metadata položky pro položky předán `TypeLibFiles` parametru.
+
+ Následující tabulka popisuje metadata položek, která jsou k dispozici pro položky `TypeLibFiles` předané do parametru.
 
 |Metadata|Popis|
 |--------------|-----------------|
-|`WrapperTool`|Nepovinná položka metadat.<br /><br /> Určuje, že nástrojem obálky, který se používá ke generování sestavení obálky pro tuto knihovnu typů. Pokud není zadána tato metadata položky, úkol používá výchozí nástroj obálky "tlbimp". Jsou k dispozici, malá a velká písmena výběr typelibs:<br /><br /> -   `Primary`: Nástroj obálky, když chcete použít pro komponenty modelu COM již generované primární definiční sestavení. Použijete-li tento nástroj obálky, nezadávejte obálky výstupní adresář, protože, které způsobí selhání úlohy.<br />-   `TLBImp`: Při generování sestavení vzájemné spolupráce pro komponenty modelu COM, použijte tento nástroj obálky.<br />-   `AXImp`: Nástroj obálky, když chcete generování sestavení vzájemné spolupráce pro ovládací prvek ActiveX.|
+|`EmbedInteropTypes`|Volitelný `Boolean`parametr.<br /><br />  Pokud `true`, vložte typy spolupráce z tohoto odkazu přímo do sestavení namísto generování knihovny DLL pro spolupráci.|
+|`WrapperTool`|Nepovinná metadata položky<br /><br /> Určuje nástroj obálky, který se používá ke generování obálky sestavení pro tuto knihovnu typů. Pokud tato metadata položky nejsou zadána, úloha použije výchozí nástroj obálky "Tlbimp". K dispozici jsou možnosti pro nerozlišování velkých a malých písmen:<br /><br /> -   `Primary`: Tento nástroj pro obálky použijte v případě, že chcete použít již vygenerované primární definiční sestavení pro komponentu COM. Když použijete tento nástroj obálky, nezadávejte výstupní adresář obálky, protože to způsobí, že se úloha nezdaří.<br />-   `TLBImp`: Tento nástroj pro obálky použijte, pokud chcete vygenerovat definiční sestavení pro komponentu COM.<br />-   `AXImp`: Tento nástroj pro obálky použijte, pokud chcete vygenerovat definiční sestavení pro ovládací prvek ActiveX.|
 
 > [!NOTE]
-> Další informace, které poskytnete k jednoznačné identifikaci knihovny typů, větší možnost, že úloha se přeloží správný soubor na disku.
+> Další informace, které zadáte k jedinečné identifikaci knihovny typů, jsou větší než možnost, že se úloha vyřeší na správný soubor na disku.
 
 ## <a name="remarks"></a>Poznámky
- Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [Task – základní třída](../msbuild/task-base-class.md).
+
+Kromě výše uvedených parametrů Tato úloha dědí parametry z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisů naleznete v tématu [základní třída Task](../msbuild/task-base-class.md).
+
+Aby tato úloha fungovala, nemusí být v počítači zaregistrovaná knihovna COM.
 
 ## <a name="see-also"></a>Viz také:
+
 - [Úlohy](../msbuild/msbuild-tasks.md)
-- [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)
+- [Odkaz na úkol](../msbuild/msbuild-task-reference.md)

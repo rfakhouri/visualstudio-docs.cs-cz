@@ -1,69 +1,59 @@
 ---
-title: Výhoda MSDN Magazine v předplatných sady Visual Studio | Dokumentace Microsoftu
+title: Zvýhodnění MSDN Magazine v předplatných sady Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
-description: Přihlaste se k odběru předplatného MSDN Magazine součástí vašeho předplatného sady Visual Studio.
-ms.openlocfilehash: 8bc38545ce497c0f8f85dfe74db841ef1ae4ee78
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Zaregistrujte se, abyste získali předplatné služby MSDN Magazine zahrnuté ve vašem předplatném sady Visual Studio.
+ms.openlocfilehash: 0cc6757a77536a7bd8073418be8729802e8aaaae
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250790"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681581"
 ---
-# <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Výhoda MSDN Magazine v předplatných sady Visual Studio
+# <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Zvýhodnění MSDN Magazine v předplatných sady Visual Studio
+Komplexní pokrytí technologií Microsoftu pro praktická řešení problémů v reálném světě.  V závislosti na vašem předplatném máte nárok na vytištěný časopis nebo k digitálnímu přístupu z dřívější verze.
 
-Komplexní pokrytí technologií Microsoftu a praktická řešení reálných problémů.  V závislosti na předplatné mají nárok na tištěných časopis, nebo dřívější přístup k digitální verzi.
-
-## <a name="activation-steps"></a>Postup aktivace
-Postup výhodu si aktivujete závisí na edici, kterou zvolíte.
-
-### <a name="digital-edition"></a>Digitální vydání
-Digitální edice je k dispozici pro členy programu Visual Studio Dev Essentials.
-
-1. Pro přístup k digitální verzi MSDN Magazine, přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2. Vyhledejte dlaždici Zpravodaj MSDN Magazine v části vývoj Professional a klikněte na tlačítko **přístup**.
-
-### <a name="printed-edition"></a>Tištěné vydání
-1. Vaše předplatné MSDN Magazine dostávat, přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-2. Vyhledejte dlaždici Zpravodaj MSDN Magazine v části vývoj Professional a klikněte na **přihlásit k odběru** na dlaždici předplatné MSDN Magazine. (Klikněte na "!" v pravém dolním rohu dlaždice pro přístup k digitální verzi.)
+## <a name="activation-steps"></a>Kroky aktivace
+1. Pokud chcete předplatitele MSDN Magazine, přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2. Vyhledejte dlaždici MSDN Magazine v části profesionální vývoj a klikněte na **přístup**.
+3. Na stránce časopis MSDN Magazine vyberte preferovaný typ předplatného.  Můžete si zvolit zdarma Digital Edition bez ohledu na to, kde žijete.  Vytištěná verze je zdarma k dispozici pro rezidenty v USA.  Poplatky za expedici se vztahují na tištěné verze odeslané na jiné než americké adresy.
    > [!div class="mx-imgBorder"]
-   > ![Dlaždice MSDN Magazine výhody](_img/vs-msdn/vs-msdn-tile.png)
-
-3. Na stránce MSDN Magazine. Vyberte typ své upřednostňované předplatného.  Můžete zvolit digitální edice zdarma, bez ohledu na to, kde bydlíte.  Tištěná verze je k dispozici zdarma do oblasti USA.  Přesouvání poplatky za tištěné verze odeslané na adresy mimo USA.
+   > ![Předplatná MSDN Magazine – výhody](_img/vs-msdn/vs-msdn-subs-page-resized.png)
+4. Zadejte požadované kontaktní informace a klikněte na **Odeslat**.  (Verze časopisu, kterou jste vybrali, se zobrazí v části předplatné časopisu.  Pokud jste zvolili vytištěnou edici, první z možností **bude číst Ano!  Chci zdarma**dostávat 1 rok (12 problémů) časopisu MSDN Magazine.
    > [!div class="mx-imgBorder"]
-   > ![Předplatná MSDN Magazine výhody](_img/vs-msdn/vs-msdn-subs-page-resized.png)
+   > ![Profil výhody MSDN Magazine](_img/vs-msdn/vs-msdn-profile.png)
+5. To je všechno, co je to vše.  V závislosti na verzi vašeho časopisu, kterou jste zvolili, můžete buď začít přijímat tištěné časopisy nebo e-maily s odkazy na nejnovější online verze s další edicí.  Sledovat!
 
-4. Zadejte kontaktní údaje a klikněte na **odeslat**.  (Verze magazine, kterou jste vybrali se zobrazí v části předplatné Magazine.  Pokud jste zvolili tištěné vydání, bude první možnost číst **Ano!  Chci dostávat časopisu MSDN Magazine (12 problémy) 1 rok zdarma**.)
-   > [!div class="mx-imgBorder"]
-   > ![MSDN Magazine výhodu profilu](_img/vs-msdn/vs-msdn-profile.png)
-
-5. To je všechno je to.  V závislosti na tom, kterou verzi magazine vyberete buď zahájíte příjem tištěné časopisy nebo e-mailů s odkazy na online verzích s další verzí.  Užijte si!
-
-## <a name="eligibility"></a>Způsobilost
-
-| Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
+## <a name="eligibility"></a>Vznik
+| Úroveň předplatného                                                 |     Kanály                                            | Výhodnosti                                                          | Mlčky?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> |Tištěné vydání       |  Ne.  K dispozici pro nové předplatitele pouze          |
-| Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | Tištěné vydání                                                            |Ne.  K dispozici pro nové předplatitele pouze         |
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Tištěné vydání                                             |  Ne.  K dispozici pro nové předplatitele pouze         |
-| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Tištěné vydání                                              | Ne.  K dispozici pro nové předplatitele pouze         |
-|Visual Studio Enterprise, Visual Studio Professional (měsíční cloud)   | Azure |Není k dispozici      |  Není k dispozici         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, vybrané NFR<sup>1</sup> |Vytištěná edice       |  Ne.  Dostupné jenom pro nové předplatitele          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Vytištěná edice                                                            |Ne.  Dostupné jenom pro nové předplatitele         |
+| Visual Studio Test Professional (Standard)                         | VL, maloobchodní prodej                                              | Vytištěná edice                                             |  Ne.  Dostupné jenom pro nové předplatitele         |
+| MSDN Platforms (Standard)                                          | VL, maloobchodní prodej                                              | Vytištěná edice                                              | Ne.  Dostupné jenom pro nové předplatitele         |
+|Visual Studio Enterprise Visual Studio Professional (měsíční Cloud)   | Azure |Není k dispozici      |  Není k dispozici         |
 ||
 
-<sup>1</sup>*vytištěná edice:  Neprodejné (NFR), Visual Studio Industry Partner (VSIP), Imagine FTE, Microsoft Partner Network (organizace), (Premium).*
+<sup>1 vytištěná edice</sup> *:    Neprodejné (NFR), Visual Studio Industry Partner (VSIP), FTE, Microsoft Partner Network (Enterprise), představte (Premium).*
 
-*Digitální edice: MCT Software & Services nejcennější Professional (MVP) Regional Director (RD).*
+*Digital Edition: MCT software & Services, profesionálního odborníka (MVP), regionálního ředitele (RD).*
 
-*Vyloučí:  Představte si (Standard), BizSpark, MCT Software & Services pro vývojáře*
+*Vyloučí  Představte si (Standard), BizSpark, MCT software & Services Developer*
 
 > [!NOTE]
-> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+> Společnost Microsoft už nenabízí Visual Studio Professional roční předplatné a Visual Studio Enterprise roční předplatné v cloudových předplatných. Stávající prostředí pro zákazníky se nijak nemění a možnost obnovit, zvýšit, snížit nebo zrušit jejich odběry. Novým zákazníkům doporučujeme přejít na [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumat různé možnosti nákupu sady Visual Studio.
 
-Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
+Nejste si jistí, jaké Předplatné používáte?  Připojte se [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a zobrazte všechna předplatná přiřazená k vaší e-mailové adrese. Pokud nevidíte všechna Vaše předplatná, může být jedna nebo více přiřazená k jiné e-mailové adrese.  K zobrazení těchto předplatných se budete muset přihlásit pomocí této e-mailové adresy.
 
-## <a name="support-resources"></a>Informační zdroje podpory
-- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
-- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+## <a name="support-resources"></a>Prostředky podpory
+- Pokud potřebujete pomoc s prodejem, předplatnými, účty a fakturací za předplatná sady Visual Studio, kontaktujte [podporu](https://visualstudio.microsoft.com/subscriptions/support/)předplatných sady Visual Studio
+- Máte dotaz o integrovaném vývojovém prostředí (IDE) sady Visual Studio, Azure DevOps Services nebo jiných produktech nebo službách sady Visual Studio?  Navštivte [podporu sady Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Další postup
+Podívejte se na další profesionální vývojářské možnosti ve vašem předplatném:
+- [Pluralsight](vs-pluralsight.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)
+- [DataCamp](vs-datacamp.md)

@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1541f3608aef33cbd286a8c96257eb191712e245
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960568"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681285"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Vývoj kódu jazyka JavaScript a TypeScript v sadě Visual Studio bez řešení nebo projektů
 
-Spouští se v sadě Visual Studio 2017, můžete [vývoj kódu bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), což vám umožní otevřít složku kódu a okamžitě začít pracovat s podporou bohaté editoru, například IntelliSense, vyhledávání, refaktoring, ladění a další. Kromě těchto funkcí Node.js Tools for Visual Studio přidává podporu pro vytváření souborů TypeScript, Správa balíčků npm a spouštění skriptů npm.
+Počínaje sadou Visual Studio 2017 můžete [vyvíjet kód bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), což umožňuje otevřít složku kódu a hned začít pracovat s bohatou podporou editoru, jako je IntelliSense, hledání, refaktoring, ladění a další. Kromě těchto funkcí Node.js Tools for Visual Studio přidává podporu pro vytváření souborů TypeScript, Správa balíčků npm a spouštění skriptů npm.
 
-Abyste mohli začít, vyberte **souboru** > **otevřít** > **složky** z panelu nástrojů. Průzkumník řešení zobrazí všechny soubory ve složce, a můžete otevřít libovolný soubory, které chcete zahájit úpravy. Na pozadí aplikace Visual Studio indexuje soubory, které chcete povolit npm, sestavení a ladění funkcí.
+Začněte tím, že na panelu nástrojů vyberete **soubor** > **otevřít** > **složku** . Průzkumník řešení zobrazí všechny soubory ve složce, a můžete otevřít libovolný soubory, které chcete zahájit úpravy. Na pozadí aplikace Visual Studio indexuje soubory, které chcete povolit npm, sestavení a ladění funkcí.
 
 > [!IMPORTANT]
-> Mnoho funkcí popsaných v tomto článku, včetně integrace npm, vyžadují Visual Studio 2017 verze 15,8 nebo novější verze.
+> Mnohé z funkcí popsaných v tomto článku, včetně integrace npm, vyžadují Visual Studio 2017 verze 15,8 nebo novější.
 
 ## <a name="npm-integration"></a>integrace npm
 
@@ -77,6 +77,7 @@ Pokud jsou rozpoznány žádné podporované architektury, nástroje test runner
 * Mocha ([mochajs.org](http://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Pásky ([github.com/substack/tape](https://github.com/substack/tape))
+* Jest ([jestjs.IO](https://jestjs.io/))
 
 Po otevření Průzkumníka testů (zvolte **testovací** > **Windows** > **Průzkumník testů**), Visual Studio zjistí a zobrazí testy.
 

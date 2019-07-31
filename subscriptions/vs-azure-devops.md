@@ -1,54 +1,52 @@
 ---
-title: Azure DevOps výhody pro předplatitele Visual Studia | Dokumentace Microsoftu
+title: Výhody Azure DevOps pro předplatitele sady Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 09/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
-description: Zjistěte, jak můžete Azure DevOps jako předplatitel sady Visual Studio.
-ms.openlocfilehash: 766bb49678080a926553f4aa42af72f15fd30f98
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Zjistěte, jak můžete Azure DevOps použít jako předplatitel sady Visual Studio.
+ms.openlocfilehash: 00a60415af16f31362b359944c8007fb3d21351f
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784690"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681622"
 ---
-# <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps výhody pro předplatitele sady Visual Studio
+# <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Výhody Azure DevOps pro předplatitele sady Visual Studio
+Jako aktivní předplatitelé sady Visual Studio můžete využívat řadu funkcí v Azure DevOps, které jsou součástí vašeho předplatného jako výhod. Tyto stejné funkce budete moct používat v každé organizaci Azure DevOps, ve které jste členem, ať už jste organizaci vytvořili nebo ji přidali někdo jiný.
 
-Jako aktivní předplatitelé sady Visual Studio můžete použít celou řadu funkcí v Azure DevOps, které jsou součástí vašeho předplatného jako výhoda. Budete moct používat tyto stejné funkce v každé organizaci Azure DevOps, ve kterém jste členem, ať už jste vytvořili organizaci nebo se přidal někdo jiný.
+## <a name="sign-in"></a>Přihlášení
+Když se přihlásíte k Azure DevOps pomocí identity, kterou jste použili k aktivaci předplatného sady Visual Studio nebo vaší [alternativní identity](vs-alternate-identity.md), rozpoznáme to automaticky.  Tímto způsobem můžete také přidat pracovní nebo školní účet (který použijete při přihlašování do sady Visual Studio, Office 365 nebo firemní nebo školní síť), což vám umožní přístup k Azure DevOps pomocí vašeho osobního účtu i vašeho pracovního nebo školního účtu.
 
-Při přihlášení k Azure DevOps pomocí identity, který jste použili pro aktivaci předplatného sady Visual Studio nebo vaše [alternativní identity](vs-alternate-identity.md), to jsme automaticky rozpoznat.
+[Zaregistrujte si bezplatnou organizaci Azure DevOps](https://visualstudio.microsoft.com/team-services/)
 
-[Zaregistrujte si bezplatnou organizace Azure DevOps](https://visualstudio.microsoft.com/team-services/)
-
-## <a name="eligibility"></a>Způsobilost
-
-| Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
+## <a name="eligibility"></a>Vznik
+| Úroveň předplatného                                                 |     Kanály                                            | Výhodnosti                                                          | Mlčky?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní, měsíčních cloudových)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup>, FTE  | Azure panely & úložišť (Basic), Azure testovací plány, Azure artefakty<sup>2</sup>, kanály Azure (v místním prostředí)       |  Ano          |
-| Visual Studio Professional (standardní, měsíčních cloudových) | VL, Azure, maloobchodní prodej                                        | Azure panely & úložišť (Basic), Azure artefakty<sup>2</sup>                                                            |  Ano          |
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Azure panely & úložišť (Basic), Azure testovacích plánů                                              |  Ano          |
-| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Azure panely & úložišť (Basic), Azure testovacích plánů                                              |  Ano          |
+| Visual Studio Enterprise (standardní, měsíční Cloud)   | VL, Azure, Retail, vybrané NFR<sup>1</sup>, FTE  | Azure Boards & úložišť (Basic), Azure Test Plans Azure Artifacts<sup>2</sup>Azure Pipelines (v místním prostředí)       |  Ano          |
+| Visual Studio Professional (standardní, měsíční Cloud) | VL, Azure, Retail,                                        | Azure Boards & úložišť (Basic), Azure Artifacts<sup>2</sup>                                                            |  Ano          |
+| Visual Studio Test Professional (Standard)                         | VL, maloobchodní prodej                                              | Azure Boards & úložišť (Basic), Azure Test Plans                                              |  Ano          |
+| MSDN Platforms (Standard)                                          | VL, maloobchodní prodej                                              | Azure Boards & úložišť (Basic), Azure Test Plans                                              |  Ano          |
 ||
 
-<sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), nejcennější Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (organizace), BizSpark, MCT Software & služby pro vývojáře. Vyloučí: MCT Software & Services, Imagine.*
+<sup></sup>1*zahrnuje:    Není určeno k dalšímu prodeji (NFR), většině cenných Professional (MVP), regionálního ředitele (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT software & Services Developer. Vyloučí MCT software & Services, Představte si.*
 
-<sup>2</sup>*zahrnuje 2 GB zdarma*
+<sup>2</sup> . *Zahrnuje bezplatně 2 GB* .
 
 > [!NOTE]
-> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+> Společnost Microsoft už nenabízí Visual Studio Professional roční předplatné a Visual Studio Enterprise roční předplatné v cloudových předplatných. Stávající prostředí pro zákazníky se nijak nemění a možnost obnovit, zvýšit, snížit nebo zrušit jejich odběry. Novým zákazníkům doporučujeme přejít na [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumat různé možnosti nákupu sady Visual Studio.
 
-Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, které jsou vám přiřazeny.
-Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
+Nejste si jistí, jaké Předplatné používáte?  Připojte se [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a zobrazte si všechna předplatná, která jste vám přiřadili.
+Pokud nevidíte všechna Vaše předplatná, může být jedna nebo více přiřazená k jiné e-mailové adrese.  K zobrazení těchto předplatných se budete muset přihlásit pomocí této e-mailové adresy.
 
-Další informace o funkcích Azure DevOps:
-
-- [Azure panely & úložišť (Basic)](https://azure.microsoft.com/services/devops/compare-features/)
-- [Plány testování v Azure](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-- [Azure artefaktů](https://marketplace.visualstudio.com/items?itemName=ms.feed)
-
-## <a name="support-resources"></a>Informační zdroje podpory
-
-- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podporu předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
-- Máte dotaz k Visual Studio IDE, Azure DevOps, nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+## <a name="support-resources"></a>Prostředky podpory
+- Pokud potřebujete pomoc s prodejem, předplatnými, účty a fakturací za předplatná sady Visual Studio, kontaktujte [podporu](https://visualstudio.microsoft.com/subscriptions/support/)předplatných sady Visual Studio
+- Máte dotazy k integrovanému vývojovém prostředí (IDE) sady Visual Studio, Azure DevOps nebo k jiným produktům nebo službám sady Visual Studio?  Navštivte [podporu sady Visual Studio](https://visualstudio.microsoft.com/support/).
 - [Dokumentace ke službě Azure DevOps](/azure/devops/).
+
+## <a name="next-steps"></a>Další kroky
+Další informace o funkcích Azure DevOps:
+- [Úložiště & Azure Boards (základní)](https://azure.microsoft.com/services/devops/compare-features/)
+- [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+- [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)

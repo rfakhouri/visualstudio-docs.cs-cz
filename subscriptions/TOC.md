@@ -62,9 +62,7 @@
 #### [Předprodukční inventář](admin-inventory.md)
 #### [Správa velkých týmů a externích dodavatelů](manage-teams.md)
 #### [Sledování přiřazení uživatelů a zpracování objednávek](assignments-orders.md)
-### [Multilicence](volume-license-admins.md)
 ### Onboarding v organizaci
-#### [Onboarding po migraci](post-migration-onboarding.md)
 #### [Migrace předplatných Open a Open License](open-migration.md)
 #### [MPSA](mpsa.md)
 #### [Cloudová předplatná](cloud-admin.md)

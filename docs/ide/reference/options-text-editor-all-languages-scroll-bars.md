@@ -1,5 +1,5 @@
 ---
-title: Možnosti, textový Editor, všechny jazyky, posuvníky
+title: Možnosti, textový editor, všechny jazyky, posuvníky
 ms.date: 10/25/2018
 ms.topic: reference
 f1_keywords:
@@ -32,58 +32,60 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a753574e883872780446929f7c2349b0d726c71a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd7be5aea136c901241ca66af485e76a39cd0ee5
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817581"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681317"
 ---
-# <a name="options-text-editor-all-languages-scroll-bars"></a>Možnosti, textový Editor, všechny jazyky, posuvníky
-Toto dialogové okno umožňuje změnit výchozí chování posuvníku editoru kódu. Chcete-li zobrazit tyto možnosti, vyberte **možnosti** z **nástroje** nabídky. V rámci **textový Editor** složky, rozbalte **všechny jazyky** podsložku a klikněte na tlačítko **posuvníky**.
+# <a name="options-text-editor-all-languages-scroll-bars"></a>Možnosti, textový editor, všechny jazyky, posuvníky
+Toto dialogové okno umožňuje změnit výchozí chování posuvníku editoru kódu. Chcete-li zobrazit tyto možnosti, vyberte **Možnosti** v nabídce **nástroje** . V rámci složky **textový editor** rozbalte podsložku **všechny jazyky** a pak zvolte posuvníky.
 
 > [!CAUTION]
-> Tato stránka nastaví výchozí možnosti pro všechny vývojářské jazyky. Resetuje se možnost v tomto dialogovém okně obnovíte možnosti posuvníky ve všech jazycích do jakékoli volby jsou tady vyberete. Chcete-li změnit možnosti textového editoru pro právě jeden jazyk, rozbalte podsložku pro daný jazyk a vyberte jeho možnosti.
+> Tato stránka nastaví výchozí možnosti pro všechny vývojové jazyky. Resetování možnosti v tomto dialogovém okně obnoví možnosti posuvníků ve všech jazycích na jakékoli vybrané možnosti. Chcete-li změnit možnosti textového editoru pouze pro jeden jazyk, rozbalte podsložku pro daný jazyk a vyberte její stránky možností.
 
-## <a name="show-horizontal-scroll-bar"></a>Zobrazí vodorovný posuvník
+## <a name="show-horizontal-scroll-bar"></a>Zobrazit vodorovný posuvník
 
-Pokud je vybráno, zobrazí vodorovný posuvník, který umožňuje ze strany na stranu přejděte do zobrazení elementy, které spadají mimo oblast zobrazení editoru. Pokud vodorovné posuvníky nedostupné, můžete přejít kurzor klíče.
+Když se tato možnost vybere, zobrazí vodorovný posuvník, který vám umožní posouvat se od sebe až po zobrazení prvků, které spadají mimo oblast zobrazení editoru. Pokud nejsou k dispozici vodorovné posuvníky, můžete k posouvání použít klávesy kurzoru.
 
-## <a name="show-vertical-scroll-bar"></a>Zobrazit svislý posuvník.
+## <a name="show-vertical-scroll-bar"></a>Zobrazit svislý posuvník
 
-Pokud je vybráno, zobrazí svislý posuvník, který umožňuje nahoru a dolů k zobrazení elementy, které spadají mimo oblast zobrazení editoru. Pokud svislé posuvníky nejsou k dispozici, můžete Page Up, Page Down a klíče kurzor posouvat.
+Je-li vybrána tato možnost, zobrazí svislý posuvník, který umožňuje posun nahoru a dolů k zobrazení prvků, které spadají mimo oblast zobrazení editoru. Pokud nejsou svislé posuvníky k dispozici, můžete k posouvání použít klávesu Page Up, Page Down a Cursor.
 
 ## <a name="display"></a>Displej
 
 ### <a name="show-annotations-over-vertical-scroll-bar"></a>Zobrazit poznámky přes svislý posuvník
 
-Vyberte, zda svislý posuvník zobrazuje následující poznámky:
+Vyberte, zda se u svislého posuvníku zobrazí následující poznámky:
 
 - změny
 - značky
 - chyby
-- pozici blikajícího kurzoru
+- pozice blikajícího kurzoru
 
 > [!TIP]
-> **Zobrazit značky** možnost obsahuje zarážky a záložky.
+> Možnost **Zobrazit značky** obsahuje zarážky a záložky.
 
-Vyzkoušejte si, že otevřete soubor kódu a nahrazení nějaký text, který se nachází na několika místech v souboru. Posuvník demonstruje účinek nahrazení, tak si změny můžete zálohovat, pokud něco, co by nemělo být nahrazen.
+Vyzkoušejte si to tak, že otevřete velký soubor kódu a nahradíte nějaký text, který se nachází na několika místech v souboru. Posuvník zobrazuje účinek nahrazení, takže můžete zálohovat změny, pokud jste nahradili něco, co byste neměli mít.
+
+Podívejte se na [Rozšířený posuvník](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/) v příspěvku na blogu, na kterém různé barvy a symboly znamenají při úpravách kódu.
 
 ## <a name="behavior"></a>Chování
 
-Posuvník má dva režimy: panelu režim a režim mapování.
+Posuvník má dva režimy: režim pruhů a režim mapování.
 
-### <a name="use-bar-mode-for-vertical-scroll-bar"></a>Použít panel režim pro svislý posuvník.
+### <a name="use-bar-mode-for-vertical-scroll-bar"></a>Pro svislý posuvník použít režim pruhového panelu
 
-*Panel režimu* zobrazí poznámka ukazatelů posuvníku. Kliknutím na posuvník posune stránku nahoru nebo dolů, ale nepřejde do tohoto umístění v souboru.
+*Režim pruhů* zobrazuje indikátory poznámek na posuvníku. Kliknutím na posuvník posunete stránku nahoru nebo dolů, ale nepřejdete do tohoto umístění v souboru.
 
-### <a name="use-map-mode-for-vertical-scroll-bar"></a>Použít režim mapování pro svislý posuvník.
+### <a name="use-map-mode-for-vertical-scroll-bar"></a>Pro svislý posuvník použít režim mapování
 
-V *režim mapování*po kliknutí na umístění na posuvník, kurzor přejde do tohoto umístění v souboru namísto pouze posouvání navýšení nebo snížení kapacity na stránce. Řádky kódu jsou uvedeny v miniaturní posuvníku. Můžete zvolit, jak široké sloupce mapy je tak, že vyberete hodnotu v **hled zdrojů**. Pokud chcete povolit větší náhled kódu při přesunutí ukazatele myši na mapě, vyberte **zobrazení popisu tlačítka ve verzi Preview** možnost. Sbalených oblasti jinak jsou zobrazena šedě a rozbalte při dvojitém kliknutí na ně.
+Když v *režimu mapování*kliknete na umístění na posuvníku, přesune se kurzor na toto místo v souboru místo pouhého posouvání nahoru nebo dolů stránky. Řádky kódu jsou v miniaturním zobrazení zobrazeny na posuvníku. Můžete zvolit, jak velký má sloupec mapy výběrem hodnoty v **přehledu zdroje**. Chcete-li povolit větší náhled kódu při přesunutí ukazatele na mapu, vyberte možnost **Zobrazit náhled tlačítka** . Sbalené oblasti jsou vybarvené jinak a při jejich dvojitém kliknutí se rozbalí.
 
 > [!TIP]
-> Můžete vypnout zobrazení miniaturní kódu v režimu mapování tak, že nastavíte **hled zdrojů** k **vypnout**. Pokud **zobrazení popisu tlačítka ve verzi Preview** je vybrané, se stále zobrazuje náhled kódu na tomto místě při najetí na ukazatel na posuvníku a kurzor stále přejde do tohoto umístění v souboru po kliknutí na.
+> Zobrazení miniaturního kódu můžete zapnout v režimu mapování nastavením **zdrojového přehledu** na **vypnuto**. Pokud je vybrána možnost **Zobrazit náhled náhledu** , stále se zobrazuje náhled kódu v tomto umístění, když na posuvníku najedete ukazatel myši, a když na něj kliknete, přesune se kurzor na toto umístění v souboru.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Upravit posuvník](../how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Postupy: Přizpůsobit posuvník](../how-to-track-your-code-by-customizing-the-scrollbar.md)

@@ -3,15 +3,15 @@ title: Dostupnost produktu pro stahování softwaru v předplatných sady Visual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Informace o dostupnosti produktů v předplatných sady Visual Studio ke stažení softwaru
-ms.openlocfilehash: 8377168808f3d143d3845cddf06e361f113f1642
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315601"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681695"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Dostupnost produktu pro stahování softwaru v předplatných sady Visual Studio
 V rámci výhod vašeho předplatitele máte přístup k široké škále stahování softwaru.
@@ -37,5 +37,6 @@ Počet a typ stahování závisí na úrovni předplatného a na členství v pr
 
 Nejste si jistí, jaké Předplatné používáte?  Připojte se [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a zobrazte všechna předplatná přiřazená k vaší e-mailové adrese. Pokud nevidíte všechna Vaše předplatná, může být jedna nebo více přiřazená k jiné e-mailové adrese.  K zobrazení těchto předplatných se budete muset přihlásit pomocí této e-mailové adresy.
 
-## <a name="next-steps"></a>Další postup
-Některé položky ke stažení softwaru mohou pro instalaci a aktivaci vyžadovat kód Product Key.  Podrobnosti o tom, jak získat a spravovat kódy Product Key, najdete v článku o našich klíčích Product Key. 
+## <a name="next-steps"></a>Další kroky
+- Některé položky ke stažení softwaru mohou pro instalaci a aktivaci vyžadovat kód Product Key.  Podrobnosti o tom, jak získat a spravovat kódy Product Key, najdete v článku o našich [klíčích Product Key](product-keys.md) . 
+- Přečtěte si, jak [Stáhnout software](download-software.md).

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Jak přidat alternativní identitu pro předplatné sady Visual Studio, která se má použít pro Azure DevOps a Azure
-ms.openlocfilehash: 1c6f052f4e5c7d3382f8244dd8e551f9e400513f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 5a496af29e520b72e24348a68692efc582fff600
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378033"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681221"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identity pro předplatitele sady Visual Studio
 Při aktivaci předplatného sady Visual Studio propojíme identitu (nebo přihlášení), kterou jste použili během aktivace v rámci předplatného sady Visual Studio. Tímto způsobem můžeme na [portálu pro předplatitele Visual studia](https://my.visualstudio.com?wt.mc_id=o~msft~docs), v Azure DevOps a v Azure.
@@ -21,7 +21,7 @@ Vzhledem k tomu, že tyto funkce jsou zahrnuté jako zvýhodnění pro předplat
 
 V Azure zkontrolujeme stav předplatného sady Visual Studio, když aktivujete [měsíční kredit Azure](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) , který je výhodou pro předplatitele.
 
-V rámci [portálu pro předplatitele sady Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs)můžete přidat **alternativní identitu** – kromě identity, kterou jste použili během aktivace. V dnešní době umožňuje přidat alternativní identitu, pokud jste použili účet Microsoft k aktivaci předplatného. Tímto způsobem můžete také přidat pracovní nebo školní účet (který použijete při přihlašování do sady Visual Studio, Office 365 nebo firemní nebo školní síť), což vám umožní přístup k Azure DevOps pomocí vašeho osobního účtu i vašeho pracovního nebo školního účtu.
+V rámci [portálu pro předplatitele sady Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs)můžete přidat **alternativní identitu** – kromě identity, kterou jste použili během aktivace. Umožňuje přidat alternativní identitu, pokud jste použili účet Microsoft k aktivaci svého předplatného. Tímto způsobem můžete také přidat pracovní nebo školní účet (který použijete při přihlašování do sady Visual Studio, Office 365 nebo firemní nebo školní síť), což vám umožní přístup k Azure DevOps pomocí vašeho osobního účtu i vašeho pracovního nebo školního účtu.
 
 ## <a name="add-an-alternate-account-to-your-subscription"></a>Přidání alternativního účtu do předplatného
 Přidání alternativního účtu do předplatného sady Visual Studio vám umožní získat přístup k výhodám předplatného, jako je Azure DevOps a Azure, s jinou identitou, než ke které je předplatné přiřazeno. Tato funkce byla v minulosti k dispozici pouze v případě, že vaše předplatné sady Visual Studio (VS) bylo přiřazeno k účtu Microsoft (MSA). Rozšířili jsme tuto funkci pro pracovní nebo školní účty v Azure Active Directory (Azure AD).

@@ -1,124 +1,109 @@
 ---
-title: Visual Studio nákupu cloudového předplatného sady pro zprostředkovatele kryptografických služeb
+title: Nákupy cloudového předplatného sady Visual Studio pro zprostředkovatele CSP
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 03/15/2018
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
-description: Informace pro poskytovatele Cloud Solution Provider, jak zakoupit a spravovat předplatné cloudu Visual Studio pro vaše zákazníky.
-ms.openlocfilehash: 4db9211041aca4a49bcd3feb182cfd80423d6960
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Informace o poskytovatelích cloudových řešeních, jak koupit a spravovat cloudová předplatná sady Visual Studio pro vaše zákazníky.
+ms.openlocfilehash: 57d54a14a9249c4ec792ce349076ba0ec77b4e15
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250650"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681121"
 ---
-# <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Nákup a správa cloudových předplatných sady Visual Studio pro vaše zákazníky
+# <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Nákup a Správa cloudových předplatných sady Visual Studio pro vaše zákazníky
+Partneři v programu [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) si můžou koupit Visual Studio Enterprise a Visual Studio Professional předplatné cloudu pro své zákazníky.
 
-Partneři v [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) programu si můžete koupit Cloudová předplatná sady Visual Studio Enterprise a Visual Studio Professional pro své zákazníky.
-
-[Porovnání možností předplatného cloudu](https://visualstudio.microsoft.com/vs/pricing)
+[Porovnání možností cloudového předplatného](https://visualstudio.microsoft.com/vs/pricing)
 
 > [!NOTE]
-> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+> Společnost Microsoft už nenabízí Visual Studio Professional roční předplatné a Visual Studio Enterprise roční předplatné v cloudových předplatných. Stávající prostředí pro zákazníky se nijak nemění a možnost obnovit, zvýšit, snížit nebo zrušit jejich odběry. Novým zákazníkům doporučujeme přejít na [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumat různé možnosti nákupu sady Visual Studio.
 
 ## <a name="prerequisites"></a>Požadavky
-
-Musíte nastavit vašeho tenanta zákazníka v partnerském centru a předplatné Azure, vytvořte pro tohoto tenanta.
+Musíte nejdřív nastavit tenanta zákazníka v partnerském centru a vytvořit předplatné Azure pro tohoto tenanta.
 
 [Víc se uč](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
-## <a name="who-can-buy-visual-studio-subscriptions"></a>Kdo může zakoupit předplatná sady Visual Studio?
-
-Každý, kdo má [přístup přispěvatele nebo vlastníka](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) do Azure můžete zakoupit předplatné předplatná sady Visual Studio.
+## <a name="who-can-buy-visual-studio-subscriptions"></a>Kdo může koupit předplatné sady Visual Studio?
+K nákupu předplatných sady Visual Studio může koupit kdokoli s [přístupem vlastníka nebo přispěvatele](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) k předplatnému Azure.
 
 ## <a name="how-to-buy"></a>Jak koupit
-
 > [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player]
 
-1. Přihlaste se [Partnerské centrum Microsoftu](https://partnercenter.microsoft.com).
-0. Zvolte **zákazníkům** a vyberte si pro zákazníka.
-0. Zvolte **Správa služeb**.
-0. Zvolte **Visual Studio Marketplace**.
-0. Ujistěte se, že jste už je v pravém horním rohu název zákazníka.
-0. Zvolte **předplatná**.
-0. Zvolte Enterprise nebo Professional pro sadu Visual Studio.
-0. Zvolte **koupit**.
-0. Zvolte předplatné Azure pro fakturaci pro nákup.
-0. Zadejte počet uživatelů, které musí vaše zákazníky.
-0. Zkontrolujte pořadí a **potvrdit** ho.
+1. Přihlaste se k [partnerskému centru Microsoftu](https://partnercenter.microsoft.com).
+0. Zvolte **zákazníky** a vyberte zákazníka, pro který chcete koupit.
+0. Vyberte možnost **Správa služeb**.
+0. Vyberte **Visual Studio Marketplace**.
+0. Ujistěte se, že jste customer's jméno v pravém horním rohu.
+0. Vyberte **odběry**.
+0. Vyberte Enterprise nebo Professional pro Visual Studio.
+0. Vyberte **koupit**.
+0. Vyberte předplatné Azure, které se bude fakturovat za nákup.
+0. Zadejte počet uživatelů, kteří potřebují vaši zákazníci.
+0. Zkontrolujte pořadí a **potvrďte** ho.
 
 >[!NOTE]
-> Je potřeba postupovat podle těchto kroků pokaždé, když se koupit předplatná sady Visual Studio jako zprostředkovatel kryptografických služeb. V současné době neexistuje žádné rozhraní API pro automatizaci nákupu.
+> Při každém nákupu předplatných sady Visual Studio jako CSP budete muset postupovat podle těchto kroků. V současné době není k dispozici žádné rozhraní API pro automatizaci nákupu.
 
-Po potvrzení nákupu, můžete zvolit **spravovat** přiřazení předplatných koncovým uživatelům vašich zákazníků.  Na portálu pro správu předplatného můžete také přístup z partnerského centra výběrem **Správa služeb**.  Tady najdete v článku kroky nebo video níže.
+Po potvrzení nákupu můžete zvolit **Spravovat** a přiřadit k předplatným koncovým uživatelům vašeho zákazníka.  K portálu pro správu předplatného můžete získat přístup také z partnerského centra volbou **Service Management**.  Tady vidíte níže uvedený postup nebo video.
 
-## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Správa cloudových předplatných sady Visual Studio pro vaše zákazníky
-
+## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Jak spravovat cloudová předplatná sady Visual Studio pro zákazníka
 > [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player]
 
-1. Přihlaste se k [Partnerské centrum Microsoftu](https://partnercenter.microsoft.com).
-0. Zvolte **zákazníkům** a jméno zákazníka.
-0. Zvolte **Správa služeb**.
-0. Zvolte **spravovat předplatná sady Visual Studio**.
+1. Přihlaste se k [partnerskému centru Microsoftu](https://partnercenter.microsoft.com).
+0. Vyberte možnost **zákazníci** a jméno zákazníka.
+0. Vyberte možnost **Správa služeb**.
+0. Vyberte **spravovat předplatná sady Visual Studio**.
 
-Pokud máte více než jedno předplatné Azure pro tohoto zákazníka, pomocí rozevírací nabídky vyberte předplatné Azure, pomocí kterého jste provedli nákupu.  **Souhrn licencí** ukazuje počet předplatných, které byly přiřazeny a kolik jsou k dispozici pro jednotlivé možnosti cloudové předplatné sady Visual Studio.  Souhrn také umožňuje koupit další předplatná nebo snižte počet předplatných.
+Pokud pro tohoto zákazníka máte více než jedno předplatné Azure, použijte rozevírací nabídku k výběru předplatného Azure, přes které jste provedli nákupy.  V **souhrnu licence** se zobrazí počet přidaných předplatných a kolik je dostupných pro jednotlivé možnosti cloudového předplatného sady Visual Studio.  Souhrn také umožňuje zakoupit další předplatná nebo snížit počet předplatných.
 
-Zvolte **přidat** předplatné přiřadit novému uživateli.  Počet zobrazených aktualizace a koncový uživatel obdrží e-mailové oznámení.
-Koncový uživatel může Přihlaste se pomocí e-mailovou adresu, které jste zadali do aktivovat svoje předplatné sady Visual Studio v [portál pro předplatitele sady Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+Pokud chcete novému uživateli přiřadit předplatné, klikněte na tlačítko **Přidat** .  Zobrazené aktualizace počtu a koncový uživatel obdrží e-mailové oznámení. Koncový uživatel se pak může přihlásit pomocí e-mailové adresy, kterou jste zadali k aktivaci předplatného sady Visual Studio na portálu pro předplatitele sady [Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 
-Přiřazení předplatného sady Visual Studio na jiného uživatele, můžete odstranit aktuální odběratele a přidat nové předplatitele.
+Chcete-li znovu přiřadit předplatné sady Visual Studio jinému uživateli, můžete odstranit aktuálního předplatitele a přidat nového předplatitele.
 
-Pokud odběratel nebyl aktivovat svoje předplatné sady Visual Studio, pravděpodobně se vynechalo e-mailová pozvánka.  Můžete požádat, že můžeme znovu odeslat pozvánku aktivace uživatele z portálu pro správu sady Visual Studio příliš.
+Pokud předplatitel neaktivoval své předplatné sady Visual Studio, může to být způsobeno tím, že vynechali e-mail s pozvánkou.  Můžete požádat o to, abychom znovu odeslali pozvánku k aktivaci uživateli z portálu pro správu sady Visual Studio.
 
-## <a name="view-visual-studio-pricing-for-csp-partners"></a>Prohlédněte si ceny sady Visual Studio pro partnery CSP
+## <a name="view-visual-studio-pricing-for-csp-partners"></a>Zobrazit ceny sady Visual Studio pro partnery CSP
+Pokud si chcete zobrazit ceny pro partnery CSP v programu Visual Studio, přihlaste se do [partnerského centra](https://partnercenter.microsoft.com).  V levém navigačním panelu vyberte **ceny a nabídky** .  V pravém horním rohu vyberte soubor s cenami aktuálního měsíce v části **služby založené na používání** . Po stažení excelového listu přejít na **seznam ceníků Azure** a vyfiltrujte sloupec **kategorie měřičů** na **Visual Studio**.
 
-Chcete-li zobrazit ceny sady Visual Studio pro partnery CSP, přihlaste se [partnerského centra](https://partnercenter.microsoft.com).  Zvolte **cenami a nabídkami** v levém navigačním podokně  Vyberte aktuální měsíc ceny souboru v rámci **založená na využití služby** v pravém horním rohu. Když se soubory ke stažení Excelovou tabulku, přejděte do **ceník Azure** list a filtrování **kategorie měřiče** sloupec, který se **sady Visual Studio**.
+Tady je postup, jak interpretovat, co vidíte v této tabulce:
 
-Tady je postup pro interpretaci, co vidíte na tuto tabulku:
-
-| Kategorie měřiče    |   Name                 |  Jednotky                                |           Toto je                          |
+| Kategorie měřiče    |   Name                 |  Podíl                                |           Co to je                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Visual Studio     | Enterprise             |  Subscription                         | Měsíční předplatné sady Visual Studio Enterprise   |
-| Visual Studio     | Professional           |  Subscription                         | Měsíční předplatné sady Visual Studio Professional |
+| Visual Studio     | Enterprise             |  Subscription                         | Visual Studio Enterprise měsíční předplatné   |
+| Visual Studio     | Professional           |  Subscription                         | Visual Studio Professional měsíční předplatné |
 
-Nabízíme 5 % slevu na jednotce 6, které můžete (pro daného zákazníka) každý měsíc koupit každého předplatného sady Visual Studio. To je důvod, proč se zobrazí dva řádky u každého odběru. Jeden řádek ukazuje "Minimální hodnotu" 0, což by měl interpretovat jako základní ceny pro jednotky 1 až 5. Druhý řádek ukazuje "Minimální hodnotu" 5, tohle je 5 % slevu za cenu, která se vztahuje na jednotky 6 a vyšší.
+Nabízíme 5% slevu na šesté jednotce, kterou koupíte (pro konkrétního zákazníka) každý měsíc každého předplatného sady Visual Studio. To je důvod, proč uvidíte dva řádky pro každou možnost předplatného. V jednom řádku se zobrazuje "minimální hodnota" 0, kterou byste měli interpretovat jako základní cenu za jednotky 1 až 5. V druhém řádku se zobrazuje "minimální hodnota" 5, takže se jedná o 5% slevu, která se vztahuje na jednotky 6 a vyšší.
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Č Jak se účtují poplatky za **měsíční** cloudové předplatné?
+O: Při prvním nákupu účtujeme průběžné množství, které pokryje zbývající dny v aktuálním měsíci. Pokud se třeba koupí 10 Visual Studio Professional měsíčních předplatných v cloudu 15. dubna, účtujeme 5 jednotek, protože zbývá 15 dní na 30 dnů nebo 50% a jednotky účtované za 50%. Na první z těchto let a potom každý měsíc až do doby, kdy zrušíte, budou se fakturovat celých 10 jednotek.
 
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>DOTAZ: Jak jsou **měsíční** cloudové předplatné poplatky za zpracování?
+Po pozdějším zvýšení placeného množství také provedeme průběžné zvyšování počtu zbývajících dnů v aktuálním měsíci. Takže pokud jste si koupili 1 více Visual Studio Professional měsíčního cloudového předplatného 10. května, bude se vám účtovat zhruba 0,677 jednotek (21 dní zbývajících v 31. den).
 
-O: Na první nákup účtujeme poměrnou množství, které zahrnují zbývající dny v aktuálním měsíci. Například pokud nákup 10 Visual Studio Professional měsíční Cloudová předplatná na 15. dubna, pak by účtujeme 5 jednotek vzhledem k tomu, že existují 15 dnů zbývajících v daném měsíci 30 dnů nebo 50 % a nám prorate jednotky účtují za 50 %.
-Na první dne a poté každý měsíc až zrušíte, úplné 10 jednotek se bude účtovat.
+### <a name="q-how-do-cancellations-work"></a>Č Jak zrušení funguje?
+O: Když zrušíte předplatné cloudu sady Visual Studio, zrušíte tím automatické obnovení. Předplatné pokračuje do normálního data obnovení a pak jednoduše vyprší jeho platnost. Po vypršení platnosti nemůže předplatitel sady Visual Studio nadále používat Visual Studio ani jiné výhody z předplatného.
 
-Pokud zvýšíte množství placené později, jsme také prorate zvýšenou jednotky pro zbývající dny do aktuálního měsíce. Takže pokud jste si zakoupili 1 další sady Visual Studio Professional měsíční cloudového předplatného 10. května, by naúčtujeme vám jenom přibližně 0.677 jednotek (21 dní zbývajících v květnu měsíc s 31 dny).
+U předplatných v rámci měsíčního cloudu se zrušení projeví na prvním dni příštího měsíce. Pokud zrušíte jenom některé z měsíčních předplatných v rámci vašeho zákazníka, nezapomeňte na první z následujících měsíců odebrat uživatele, abyste měli jistotu, že budou mít přiřazená aktivní předplatná.
 
-### <a name="q-how-do-cancellations-work"></a>DOTAZ: Jak fungují zrušení?
+Pro roční cloudová předplatná se zrušení projeví v platnost první den v měsíci po uplynutí 12 měsíců od původního nákupu nebo po uplynutí 12 měsíců od poslední roční poplatky za obnovení. Pokud jste například koupili Visual Studio Enterprise roční předplatné cloudu 3. ledna 2018, zůstane aktivní až do 1. února 2019, když se automaticky obnoví na jiný rok. Pokud kdykoli operaci zrušíte od 1. února 2020, platnost předplatného vyprší 1. února 2020. V rámci předplatného s ročním předplatným cloudu není k dispozici žádný Rabat ke zrušení části.
 
-O: Při zrušení cloudové předplatné sady Visual Studio se ruší automatické obnovení. Předplatné pokračuje, dokud jeho datum normální obnovení a pak jednoduše vyprší platnost.
-Při jejím vypršení předplatitel sady Visual Studio již nebudete používat Visual Studio nebo další výhody z předplatného.
+### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>Č Jaký druh množstevních slev je k dispozici pro předplatná sady Visual Studio?
+O:  Získáte 5% slevu v šesté a všech dalších předplatných *v rámci každého typu* předplatného:
+- Visual Studio Professional měsíčně
+- Visual Studio Enterprise měsíčně
 
-V případě s měsíční Cloudová předplatná, se projeví první den následujícího měsíce. Pokud zrušíte jenom některé z vašich zákazníků měsíční Cloudová předplatná, nezapomeňte odebrat uživatele prvního dne následujícího měsíce zajistit, že správných lidí i nadále mít aktivní odběry, které jsou přiřazeny.
+Pokud třeba koupíte 6 Visual Studio Professional měsíční předplatná a 5 Visual Studio Enterprise měsíční předplatné, platíte běžnou cenu na pět Professional, získáte 5% slevu na šest Professional a platíte běžnou cenu na všech pět Podniková předplatná.
 
-Pro roční Cloudová předplatná zrušení projeví v první den v měsíci, po dobu 12 měsíců od data původního nákupu nebo 12 měsíců od posledního obnovení roční poplatek. Například pokud jste si zakoupili roční cloudové předplatné sady Visual Studio Enterprise 3. ledna 2018 pak zůstane aktivní až do 1 února. května 2019 když ho automaticky obnovuje na další rok. Pokud zrušíte kdykoli mezi pak a 1. února 2020 předplatné vyprší dne 1. února 2020. Neexistuje žádné slevy pro zrušení rozúčtují až do roku předplatné s ročních cloudových předplatných.
+Sleva se vztahuje také na poplatky v daném měsíčním fakturačním období. Takže pokud koupíte 5 Visual Studio Professional ročních předplatných za jeden měsíc a pak si koupíte 5 dalších dalších měsíců, platíte běžnou cenu na všechna deset předplatných.
 
-### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>DOTAZ: Jaký druh množstevní slevy jsou k dispozici pro předplatná sady Visual Studio?
+Tyto slevy se projeví v údajích o cenách v [partnerském centru](https://partnercenter.microsoft.com).
 
-O:  Získejte 5 % slevu na 6 a všechny další předplatná *jednotlivých typů* předplatného:
+### <a name="q-are-there-renewal-discounts"></a>Č Existují nějaké obnovovací slevy?
+O:  Ne, ceny pro předplatná sady Visual Studio jsou ploché. Stejná cena se nabízí pro nová předplatná a pokračování v předplatných.
 
-* Visual Studio Professional měsíčně
-* Visual Studio Enterprise měsíční
+### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>Č Jsou pro zprostředkovatele CSP k dispozici cenové možnosti pro vývoj a testování v Azure?
+O: V tuto chvíli to není možné. Vaši zákazníci můžou využít [ceny Azure pro vývoj a testování](https://aka.ms/azuredevtestpricing), ale pro CSP nepoužíváme žádné konkrétní.
 
-Ano, například pokud zakoupíte 6 měsíční předplatná sady Visual Studio Professional a 5 měsíční předplatná sady Visual Studio Enterprise, budete zaplatíte jenom běžná cena na 5 Professional, získejte 5 % slevu na 6 Professional a zaplatit běžná cena ve všech 5 Enterprise předplatná.
-
-Navíc slevu platí jenom pro poplatky v daném měsíčnímu fakturačnímu období. Takže pokud koupit 5 ročních předplatných sady Visual Studio Professional v jednom měsíci a pak si zakoupit 5 Další příští měsíc, budete platit běžná cena na všechna předplatná 10.
-
-Tyto slevy se projeví v ceně v rámci [partnerského centra](https://partnercenter.microsoft.com).
-
-### <a name="q-are-there-renewal-discounts"></a>DOTAZ: Jsou slevy obnovení?
-
-O:  Ne, se ceny pro předplatná sady Visual Studio bez stromové struktury. U nových předplatných a pokračování předplatného se nabízí stejnou cenu.
-
-### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>DOTAZ: Existují Azure pro vývoj/testování cenové možnosti pro CSP?
-
-O: V tuto chvíli to není možné. Vaši zákazníci můžou využít výhod [ceny Azure pro vývoj/testování](https://aka.ms/azuredevtestpricing), ale nemáme nic speciálně pro poskytovatele CSP.
