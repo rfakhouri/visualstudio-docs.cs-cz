@@ -13,83 +13,93 @@ helpviewer_keywords:
 - extensions, files built by C or C++ compiler
 - BuildLog.htm
 ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
-author: gewarren
-ms.author: gewarren
-manager: jillfra
+author: corob-msft
+ms.author: corob
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 186db68e9b69b98a9fe9d9a2a8c8941302304cb2
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263080"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461565"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Nastavení projektu VC++, projekty a řešení, dialogové okno Možnosti
-Toto dialogové okno umožňuje definovat [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] sestavení a nastavení související s protokolování, výkon a podporuje typy souborů projektu.
 
-### <a name="to-access-this-dialog-box"></a>Pro přístup k tomuto dialogovému oknu
+Toto dialogové okno umožňuje definovat C++ sestavení a nastavení projektu související s protokolováním, výkonem a podpůrnými typy souborů.
+
+## <a name="to-access-this-dialog-box"></a>Přístup k tomuto dialogovému oknu
 
 1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
 
-2. Vyberte **projekty a řešení**a pak vyberte **nastavení projektu VC ++**.
+2. Vyberte **projekty a řešení**a pak vyberte **nastavení projektu VC + +** .
 
 ## <a name="build-logging"></a>Protokolování sestavení
+
  **Ano**
 
-  Zapnutí generování souboru protokolu sestavení. Tato možnost vygeneruje BuildLog.htm, který se nachází v adresáři zprostředkujících souborů projektu. Každé nové sestavení přepíše předchozí soubor BuildLog.htm.
+  Zapne generování souboru protokolu sestavení. Tato možnost generuje BuildLog. htm, kterou najdete v adresáři zprostředkujících souborů projektu. Každé nové sestavení přepíše předchozí soubor BuildLog. htm.
 
  **Ne**
 
   Vypne generování souboru protokolu sestavení.
 
 ## <a name="show-environment-in-log"></a>Zobrazit prostředí v protokolu
+
  **Ano**
 
- Seznam proměnných prostředí v souboru protokolu sestavení. Tato možnost určuje vypisovat všech proměnných prostředí během sestavení [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projekty, do souboru protokolu sestavení.
+ Zobrazí seznam proměnných prostředí v souboru protokolu sestavení. Tato možnost určuje, že se všechny proměnné prostředí během sestavení C++ projektů do souboru protokolu sestavení budou zobrazovat jako ozvěny.
 
  **Ne**
 
- Proměnné prostředí vyloučíte ze souboru protokolu sestavení.
+ Vyloučení proměnných prostředí ze souboru protokolu sestavení.
 
 ## <a name="build-timing"></a>Časování sestavení
+
  **Ano**
 
-  Zapne časování sestavení. Pokud vybraná, čas potřebný pro na dokončení sestavení se zveřejní v okně výstupu. Další informace najdete v tématu [okno výstup](../../ide/reference/output-window.md).
+  Zapne časování buildu. Pokud je tato možnost vybrána, bude čas potřebný k dokončení sestavení odeslán do okna výstup. Další informace najdete v tématu [okno výstup](../../ide/reference/output-window.md).
 
  **Ne**
 
- Vypne časování sestavení.
+ Vypne časování buildu.
 
-## <a name="maximum-concurrent-c-compilations"></a>Maximum souběžných kompilací C++
-  Určuje maximální počet Procesorových jader pro paralelní kompilaci jazyka C++.
+## <a name="maximum-concurrent-c-compilations"></a>Maximální počet C++ souběžných kompilací
 
-## <a name="extensions-to-include"></a>Rozšíření zahrnout
-  Určuje přípony názvů souborů, které můžete přenést do projektu.
+Určuje maximální počet jader procesoru, které se mají použít pro paralelní C++ kompilaci.
 
-## <a name="extensions-to-hide"></a>Přípony ke skrytí
-  Určuje přípony názvů souborů, které se nezobrazí v **Průzkumníka řešení** při **zobrazit všechny soubory** je povolená.
+## <a name="extensions-to-include"></a>Rozšíření, která mají být zahrnuta
 
-## <a name="build-customization-search-path"></a>Cesty pro hledání vlastního nastavení sestavení
-  Určuje seznam adresářů, které obsahují .rules soubory, které vám pomůžou definovat pravidla sestavení pro vaše projekty.
+Určuje přípony názvů souborů, které lze přenést do projektu.
 
-## <a name="solution-explorer-mode"></a>Režim Průzkumník řešení
- **Zobrazit pouze soubory v projektu**
+## <a name="extensions-to-hide"></a>Rozšíření pro skrytí
 
-  Nakonfiguruje **Průzkumníka řešení** můžete zobrazit jenom soubory v projektu.
+Určuje přípony názvů souborů, které se nezobrazí v **Průzkumník řešení** , když je povolená možnost **Zobrazit všechny soubory** .
 
- **Zobrazit všechny soubory**
+## <a name="build-customization-search-path"></a>Cesta pro vyhledávání vlastního nastavení sestavení
 
-  Nakonfiguruje **Průzkumníka řešení** k zobrazení souborů v projektu a souborů na disku ve složce projektu.
+Určuje seznam adresářů, které obsahují soubory. Rules, které vám pomůžou definovat pravidla sestavení pro vaše projekty.
+
+## <a name="solution-explorer-mode"></a>Průzkumník řešení režim
+
+**Zobrazit pouze soubory v projektu**
+
+Nakonfiguruje **Průzkumník řešení** jenom zobrazení souborů v projektu.
+
+**Zobrazit všechny soubory**
+
+Nakonfiguruje **Průzkumník řešení** k zobrazení souborů v projektu a souborů na disku ve složce projektu.
 
 ## <a name="enable-project-caching"></a>Povolit ukládání projektů do mezipaměti
+
 **Ano**
 
-Umožňuje sadě Visual Studio projekt ukládání dat do mezipaměti tak, aby při příštím otevření projektu, je možné načíst, uložit do mezipaměti dat spíše než znovu computingu ze souborů projektu. Pomocí dat uložených v mezipaměti může výrazně zkracují čas načtení projektu.
+Umožňuje aplikaci Visual Studio ukládat data projektu do mezipaměti, aby při příštím otevření projektu mohla tato data načíst z mezipaměti, nikoli ze souborů projektu. Použití dat uložených v mezipaměti může výrazně zrychlit dobu načítání projektu.
 
 **Ne**
 
-Nepoužívejte data uložená v mezipaměti projektu. Analyzovat pokaždé, když projekt načte soubory projektu.
+Nepoužívejte data projektu v mezipaměti. Analyzujte soubory projektu pokaždé, když se projekt načte.
 
 ## <a name="see-also"></a>Viz také:
 

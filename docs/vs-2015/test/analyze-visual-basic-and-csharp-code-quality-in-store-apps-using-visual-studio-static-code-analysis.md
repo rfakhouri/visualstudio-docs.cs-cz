@@ -8,15 +8,15 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686560"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416643"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analýza kvality kódu jazyka Visual Basic a C# v aplikacích pro Store pomocí sady Visual Studio statické analýzy kódu
 
@@ -51,7 +51,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 
 1. Klikněte pravým tlačítkem na název projektu v Průzkumníku řešení a klikněte na tlačítko **vlastnosti**.
 
-2. Na stránce vlastností projektu zvolte **analýzy kódu** a klikněte na tlačítko **povolit analýzu kódu na sestavení (definuje konstantu úloze CODEANALYSIS)**.
+2. Na stránce vlastností projektu zvolte **analýzy kódu** a klikněte na tlačítko **povolit analýzu kódu na sestavení (definuje konstantu úloze CODEANALYSIS)** .
 
    Toto řešení je zkompilován a spuštění analýzy kódu. Výsledky se zobrazí v okně analýzy kódu.
 
@@ -98,12 +98,12 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 ## <a name="BKMK_Warnings"></a> Upozornění analýzy kódu jazyka Visual Basic a C#
  Analýza kódu vyvolává následujícími upozorněními:
 
- [CA1001: Typy, které vlastní uvolnitelné pole by měly být uvolnitelné](https://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: Typy, které vlastní pole na jedno použití, by měly být jednorázové.](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: Odstraňte prázdné finalizační metody](https://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: Odebrat prázdné finalizační metody](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: Uvolnitelné pole by mělo být uvolněno](https://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: Pole na jedno použití by mělo být uvolněno](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: Implementovat Serializační konstruktory](https://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: Implementovat konstruktory serializace](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: Přetižte operátor equals při přepsání ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: Operátor přetížení se rovná přepisování ValueType. Equals.](https://msdn.microsoft.com/library/ms182359.aspx)

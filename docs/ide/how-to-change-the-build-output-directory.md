@@ -6,51 +6,51 @@ ms.topic: conceptual
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9dce876b477dfb802b9cf64214af2ca1cec6a4e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: e006be2099d5132ce7445f1e8fe74b0f2752c260
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715353"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416802"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Postupy: Změna výstupního adresáře sestavení
 
-Můžete zadat umístění výstupu generovaného ve vašem projektu na základě podle konfigurace (pro ladění, vydání nebo obojí).
+Můžete určit umístění výstupu generovaného vaším projektem podle konfigurace (pro ladění, vydání nebo obojí).
 
 ## <a name="change-the-build-output-directory"></a>Změna výstupního adresáře sestavení
 
-1. Otevření stránek vlastností projektu, klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**.
+1. Chcete-li otevřít stránky vlastností projektu, klikněte pravým tlačítkem myši na uzel projektu v **Průzkumník řešení** a vyberte možnost **vlastnosti**.
 
-2. Vyberte příslušnou kartu podle typu projektu:
+2. Vyberte příslušnou kartu na základě typu projektu:
 
-   - Pro C#, vyberte **sestavení** kartu.
-   - V jazyce Visual Basic, vyberte **kompilaci** kartu.
-   - Pro C++ nebo JavaScript, vyberte **Obecné** kartu.
+   - V případě klikněte na kartu **sestavení.** C#
+   - Pro Visual Basic vyberte kartu **kompilovat** .
+   - Pro C++ nebo JavaScript vyberte kartu **Obecné** .
 
-3. V rozevíracího seznamu v horní části konfigurace zvolte konfiguraci, jejíž výstup chcete změnit umístění souboru (**ladění**, **vydání**, nebo **všechny konfigurace**).
+3. V rozevíracím seznamu konfigurace v horní části vyberte konfiguraci, jejíž umístění výstupního souboru chcete změnit (**ladění**, **vydání**nebo **všechny konfigurace**).
 
-4. Vyhledejte položku výstupní cestu na stránce&mdash;se liší v závislosti na typu vašeho projektu:
+4. Najít položku výstupní cesty na stránce&mdash;, která se liší v závislosti na typu projektu:
 
-   - **Výstupní cesta** pro C# a projekty jazyka JavaScript
-   - **Výstupní cesta sestavení** pro projekty jazyka Visual Basic
-   - **Výstupní adresář** vizuálu C++ projekty
+   - **Výstupní cesta** pro C# projekty a projekty JavaScriptu
+   - **Výstupní cesta k sestavení** pro projekty Visual Basic
+   - **Výstupní adresář** pro vizuální C++ projekty
 
-   Zadejte cestu a generovat výstup (absolutní nebo relativní k adresáři projektu kořenový), nebo zvolte **Procházet** a místo toho přejděte do této složky.
+   Zadejte cestu k vygenerování výstupu (absolutní nebo relativní ke kořenovému adresáři projektu), nebo klikněte na tlačítko **Procházet** a přejděte k této složce.
 
-   ![Výstupní cesta k vlastnosti pro sadu Visual Studio C# projektu](media/output-path.png)
+   ![Vlastnost výstupní cesty pro projekt sady Visual C# Studio](media/output-path.png)
 
 > [!TIP]
-> Pokud výstup není generována umístění, které jste zadali, ujistěte se, že vytváříte odpovídající konfiguraci (například **ladění** nebo **vydání**) tak, že ji vyberete na panelu nabídek Visual Studio.
+> Pokud výstup není generován do umístění, které jste určili, ujistěte se, že vytváříte odpovídající konfiguraci (například **ladění** nebo **vydání**) tak, že ji vyberete v panelu nabídek aplikace Visual Studio.
 >
-> ![Sestavení pro výběr konfigurace v aplikaci Visual Studio 2019](media/build-configuration-chooser.png)
+> ![Výběr konfigurace sestavení v aplikaci Visual Studio 2019](media/build-configuration-chooser.png)
 
 ## <a name="see-also"></a>Viz také:
 
 - [Stránka sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md)
-- [Stránka Obecné vlastností (projekt)](/cpp/build/reference/general-property-page-project)
+- [Obecná stránka vlastností (projekt)](/cpp/build/reference/general-property-page-project)
 - [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

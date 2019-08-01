@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Přečtěte si, jak využít předplatná sady Visual Studio na maximum.
-ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378046"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493361"
 ---
 # <a name="managing-subscriptions"></a>Správa předplatných
 
@@ -73,7 +73,6 @@ V profilu můžete snadno změnit kontaktní informace a předvolby.
 3. Na kartě **o** aplikaci můžete změnit své jméno, e-mail, zemi nebo oblast, profilový obrázek a kontaktní preference. Na kartě **Předvolby** můžete vybrat preferovaný jazyk, vzory data a času, časové pásmo a motiv uživatelského rozhraní.
 4. Po dokončení změn klikněte na **Uložit**.
 5. Kliknutím na tlačítko **zpět** v prohlížeči se vraťte na stránku výhody.
-
 
 ### <a name="setting-communications-preferences"></a>Nastavení předvoleb komunikace
 Pokud chcete dostávat pravidelné aktualizace vašeho předplatného a výhod, včetně bulletinu měsíčních předplatných sady Visual Studio, [aktualizujte předvolby](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) zaškrtnutím políčka pro předplatná sady Visual Studio v profilu sady Visual Studio. . Tyto předvolby můžete kdykoli změnit a zrušit odběr. 

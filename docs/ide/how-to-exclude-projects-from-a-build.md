@@ -4,53 +4,53 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ca736d65a889c0bbada24412ebedecbe6970ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54e65c411afe9815696112dfbcc99bcb9433c4db
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428973"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416862"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Postupy: Vyloučení projektů ze sestavení
 
-Vytvoření řešení bez nutnosti všechny projekty, které obsahuje. Například může vyloučit projektu, který naruší sestavení. Může pak sestavíte projekt po můžete prozkoumat a adresu problémy.
+Můžete sestavit řešení bez nutnosti sestavovat všechny projekty, které obsahuje. Můžete například vyloučit projekt, který přerušuje sestavení. Po prozkoumání a vyřešení problémů pak můžete sestavit projekt.
 
-Projekt můžete vyloučit pomocí následujících postupů:
+Projekt můžete vyloučit provedením následujících přístupů:
 
-- Odstraněním dočasně konfiguraci aktivního řešení.
+- Dočasné odebrání z aktivní konfigurace řešení.
 
-- Vytvoření konfigurace řešení, která neobsahuje projekt.
+- Vytvoření konfigurace řešení, která nezahrnuje projekt.
 
-Další informace najdete v tématu [pochopení konfigurace sestavení](../ide/understanding-build-configurations.md).
+Další informace najdete v tématu [Principy konfigurací sestavení](../ide/understanding-build-configurations.md).
 
-## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>K dočasnému odstranění projektu z konfigurace aktivního řešení
+## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Dočasné odebrání projektu z aktivní konfigurace řešení
 
-1. V panelu nabídky zvolte **sestavení** > **nástroje Configuration Manager**.
+1. Na panelu nabídek vyberte možnost **sestavit** > **Configuration Manager**.
 
-2. V **projektu kontexty** tabulky, najděte projektu, které chcete vyloučit ze sestavení.
+2. V tabulce **kontexty projektu** vyhledejte projekt, který chcete ze sestavení vyloučit.
 
-3. V **sestavení** sloupec pro projekt, zrušte zaškrtnutí políčka.
+3. Ve sloupci **sestavení** projektu zrušte zaškrtnutí políčka.
 
-4. Zvolte **Zavřít** tlačítko a pak znovu sestavte řešení.
+4. Klikněte na tlačítko **Zavřít** a pak znovu sestavte řešení.
 
-## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Pro vytvoření konfigurace řešení, která nezahrnuje projektu
+## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Vytvoření konfigurace řešení, která vylučuje projekt
 
-1. V panelu nabídky zvolte **sestavení** > **nástroje Configuration Manager**.
+1. Na panelu nabídek vyberte možnost **sestavit** > **Configuration Manager**.
 
-2. V **konfigurace aktivního řešení** klikněte na položku  **\<nový >**.
+2. V seznamu **aktivní konfigurace řešení** vyberte možnost  **\<nový >** .
 
-3. V **název** pole, zadejte název konfigurace řešení.
+3. Do pole **název** zadejte název pro konfiguraci řešení.
 
-4. V **Kopírovat nastavení z:** klikněte na položku konfigurace řešení, na kterém chcete vytvořit novou konfiguraci (například **ladění**) a klikněte na tlačítko **OK** tlačítko .
+4. V seznamu **Kopírovat nastavení z** vyberte konfiguraci řešení, na které chcete založit novou konfiguraci (například **ladit**), a pak klikněte na tlačítko **OK** .
 
-5. V **nástroje Configuration Manager** dialogové okno, zrušte zaškrtnutí políčka v **sestavení** sloupec pro projekt, který chcete vyloučit a klikněte na tlačítko **Zavřít** tlačítko.
+5. V dialogovém okně **Configuration Manager** zrušte zaškrtnutí políčka ve sloupci **sestavení** pro projekt, který chcete vyloučit, a poté klikněte na tlačítko **Zavřít** .
 
-6. Na **standardní** nástrojů, ověřte, zda je nová konfigurace řešení v aktivní konfiguraci **konfigurace řešení** pole.
+6. Na **standardním** panelu nástrojů ověřte, zda je nová konfigurace řešení aktivní konfigurace v poli **Konfigurace řešení** .
 
 7. V panelu nabídky zvolte **sestavení** > **znovu sestavit řešení**.
 
@@ -58,4 +58,4 @@ Další informace najdete v tématu [pochopení konfigurace sestavení](../ide/u
 
 - [Principy konfigurací sestavení](../ide/understanding-build-configurations.md)
 - [Postupy: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)
-- [Postupy: Sestavení více konfigurací současně](../ide/how-to-build-multiple-configurations-simultaneously.md)
+- [Postupy: Sestavování několika konfigurací současně](../ide/how-to-build-multiple-configurations-simultaneously.md)

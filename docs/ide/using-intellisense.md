@@ -15,91 +15,102 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c621a09c6a000c9e3c7e52caa99569f7e5d781
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32e62131b2a66052ad4712b434c7b6f2b89065d0
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821679"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493290"
 ---
-# <a name="intellisense-in-visual-studio"></a>Technologie IntelliSense v sadě Visual Studio
+# <a name="intellisense-in-visual-studio"></a>IntelliSense v aplikaci Visual Studio
 
-Technologie IntelliSense je podpora dokončování kódu, která zahrnuje celou řadu funkcí: Seznam členů, informace o parametrech, rychlé informace a dokončit slovo. Tyto funkce umožňují získat další informace o kód, který používáte, udržovat přehled o parametrech zadávání textu a přidávat volání vlastností a metod s pomocí několika klávesových úhozů.
+IntelliSense je podpora dokončování kódu, která zahrnuje několik funkcí: Seznam členů, informace o parametrech, rychlé informace a dokončování slov. Tyto funkce vám pomůžou získat další informace o kódu, který používáte, sledovat parametry, které píšete, a přidávat volání vlastností a metod s pouze několika klávesami.
 
-Mnoho aspektů technologie IntelliSense je specifických pro jazyk. Další informace o technologii IntelliSense pro různé jazyky, naleznete v tématech uvedených v [viz také](#see-also) oddílu.
+Mnoho aspektů technologie IntelliSense je specifických pro jazyk. Další informace o technologii IntelliSense pro různé jazyky naleznete v tématech uvedených v části [Viz také](#see-also) .
 
 ## <a name="list-members"></a>Vypsat členy
 
-Po zadání znaku aktivační události se zobrazí seznam platných členů z typu (nebo oboru názvů) (například, období (`.`) ve spravovaném kódu nebo `::` v jazyce C++). Pokud budete pokračovat v zadávání znaků, v seznamu jsou vyfiltrované pouze členové, kteří začínají danými znaky nebo kde začátku *jakékoli* slova v rámci název začíná znaky. Technologie IntelliSense také provádí "camelCase" párování, takže první písmeno každého slova ve formátu camelCase můžete jednoduše zadat v členu názvu zobrazíte výsledky.
+Po zadání spouštěcího znaku (například tečka (`.`) ve spravovaném kódu nebo `::` v C++) se zobrazí seznam platných členů z typu (nebo oboru názvů). Pokud budete pokračovat v zadávání znaků, seznam bude filtrován tak, aby zahrnoval pouze členy, které začínají těmito znaky, nebo kde začátek *libovolného* slova v rámci názvu začíná znaky. Technologie IntelliSense také provádí párování "ve stylu CamelCase Case", takže můžete pouze zadat první písmeno každého slova ve stylu CamelCase-použita v názvu člena, aby se zobrazily shody.
 
-Po výběru položky ji můžete vložit do kódu stisknutím klávesy **kartu** nebo a zadáním mezery. Pokud vyberte položku a zadáte období, položka se zobrazí s uvedenou dobou, která vyvolá jiný seznam členů. Pokud vyberete položku, ale ještě před jejím vložením, zobrazí se rychlé informace pro položku.
+Po výběru položky ji můžete vložit do kódu stisknutím klávesy **TAB** nebo zadáním mezery. Pokud vyberte položku a zadáte období, položka se zobrazí s uvedenou dobou, která vyvolá jiný seznam členů. Pokud vyberete položku, ale ještě před jejím vložením, zobrazí se rychlé informace pro položku.
 
-V seznamu členů ikona vlevo představuje typ členu, například obor názvů, třídu, funkci nebo proměnnou. Seznam ikon naleznete v tématu [ikony zobrazení třídy a prohlížeče objektů](../ide/class-view-and-object-browser-icons.md). Seznam může být poměrně dlouhé, takže můžete stisknout **PgUp** a **Page Down** přesunout nahoru nebo dolů v seznamu.
+V seznamu členů ikona vlevo představuje typ členu, například obor názvů, třídu, funkci nebo proměnnou. Seznam ikon naleznete v tématu [zobrazení tříd a prohlížeč objektů ikony](../ide/class-view-and-object-browser-icons.md). Seznam může být poměrně dlouhý, takže stisknutím **Page Up** a **Page Down** se můžete v seznamu pohybovat nahoru nebo dolů.
 
 ![Seznam členů sady Visual Studio](../ide/media/vs2015_intellisense.png)
 
-Můžete vyvolat **seznam členů** funkce ručně zadáním pomocí **Ctrl**+**J**zvolíte možnost **upravit**  >  **IntelliSense** > **seznam členů**, nebo kliknutím **seznam členů** tlačítko na panelu nástrojů editoru. Při vyvolání na prázdném řádku nebo mimo podporovaný rozsah zobrazí seznam symboly v globálním oboru názvů.
+Funkci vypsat **členy** můžete vyvolat ručně zadáním **kombinace kláves CTRL**+**J**, výběrem možnosti **Upravit** > **členy seznamu** **IntelliSense** > nebo výběrem **členů seznamu.** tlačítko na panelu nástrojů editoru. Při vyvolání na prázdném řádku nebo mimo podporovaný rozsah zobrazí seznam symboly v globálním oboru názvů.
 
-Chcete-li vypnout členy seznamu ve výchozím nastavení (tak, že se nezobrazí, pokud nejsou konkrétně vyvolány), přejděte na **nástroje** > **možnosti** > **všechny jazyky**a zrušte zaškrtnutí možnosti **automatický seznam členů**. Pokud chcete vypnout funkci vypsat členy pouze pro určitý jazyk, přejděte **Obecné** nastavení pro daný jazyk.
+Chcete-li vypnout členy seznamu ve výchozím nastavení (takže se nezobrazí, pokud není výslovně vyvoláno), vyberte možnost **nástroje** > **Možnosti** > **všechny jazyky** a zrušte zaškrtnutí políčka **Členové automatických seznamů**. Pokud chcete vypnout seznam členů jenom pro určitý jazyk, přečtěte si **Obecné** nastavení daného jazyka.
 
-Můžete také změnit nastavení na režim návrhu, ve kterém je do kódu vložen pouze text, který zadáte. Například, pokud zadáte identifikátor, který se nenachází v seznamu a stiskněte klávesu **kartu**, při dokončení by režimu položka nahradil zadaný identifikátor. Chcete-li přepnout mezi doplňovacím režimem a režimem návrhu, stiskněte **Ctrl**+**Alt**+**místo**, nebo zvolte **upravit**  >  **IntelliSense** > **přepnout režim dokončení**.
+Můžete také změnit nastavení na režim návrhu, ve kterém je do kódu vložen pouze text, který zadáte. Například pokud zadáte identifikátor, který není v seznamu a stiskněte klávesu **TAB**, v režimu dokončování by položka nahradila typový identifikátor. Chcete-li přepnout mezi režimem dokončení a režimem návrhu, stiskněte klávesu **CTRL**+**ALT +** +**MEZERNÍK**nebo zvolte možnost **Upravit** >  > režim dokončení přepínání**technologie IntelliSense**.
 
 ## <a name="parameter-info"></a>Informace o parametrech
 
 Informace o parametru poskytují informace o počtu, názvech a typech parametrů vyžadovaných metodou, atributem parametru obecného typu (v jazyce C#) nebo šablonou (v jazyce C++).
 
-Parametr tučně označuje další parametr, který je vyžadován při zadávání funkce. Pro přetížené funkce můžete použít **nahoru** a **dolů** klávesy se šipkami zobrazíte alternativní informace o parametru pro přetížení funkce.
+Parametr tučně označuje další parametr, který je vyžadován při zadávání funkce. Pro přetížené funkce můžete použít klávesy se šipkami **nahoru** a **dolů** k zobrazení alternativních informací o parametrech pro přetížení funkce.
 
 ![Informace o parametrech](../ide/media/vs2015_param_info.png)
 
-Když opatřujete poznámkami funkce a parametry s komentáři XML dokumentace, komentáře se zobrazí jako informace o parametru. Další informace najdete v tématu [komentářů ke kódu XML zadat](reference/generate-xml-documentation-comments.md).
+Když opatřujete poznámkami funkce a parametry s komentáři XML dokumentace, komentáře se zobrazí jako informace o parametru. Další informace najdete v tématu [zadání komentářů kódu XML](reference/generate-xml-documentation-comments.md).
 
-Informace o parametrech lze vyvolat ručně kliknutím **upravit** > **IntelliSense** > **informace o parametru**, stisknutím klávesy **Ctrl**  + **Shift**+**místo**, nebo kliknutím **informace o parametru** tlačítko na panelu nástrojů editoru.
+Informace o parametrech lze vyvolat ručně kliknutímna možnost **Upravit** > **informace o parametrech** **technologie IntelliSense** > , stisknutím klávesy **CTRL**+**SHIFT**+nebo pomocí Výběr tlačítka **informace o parametru** na panelu nástrojů editoru.
 
 ## <a name="quick-info"></a>Rychlé informace
 
 Rychlé informace zobrazí úplnou deklaraci pro libovolný identifikátor ve vašem kódu.
 
-![Visual Studio Quick Info](../ide/media/vs2015_quick_info.png)
+![Rychlé informace pro Visual Studio](../ide/media/vs2015_quick_info.png)
 
-Vyberete-li člena v **seznam členů** , rychlé informace zobrazí se také pole.
+Když vyberete člena v poli **seznam členů** , zobrazí se také pole rychlé informace.
 
-![Informace o parametrech ve C&#35; souboru kódu](../ide/media/vs2015_paraminfo.png)
+![Informace o parametrech v&#35; souboru kódu jazyka C](../ide/media/vs2015_paraminfo.png)
 
-Rychlé informace lze vyvolat ručně kliknutím **upravit** > **IntelliSense** > **rychlé informace**, stisknutím klávesy **Ctrl** + **můžu**, nebo kliknutím **rychlé informace** tlačítko na panelu nástrojů editoru.
+Rychlé informace můžete vyvolat ručně výběrem možnosti **Upravit** > **rychlé informace** **technologie IntelliSense** > , stisknutím **kombinace kláves CTRL +** +nebo výběrem tlačítka **rychlé informace** v editoru. pruhu.
 
 Pokud je funkce přetížena, technologie IntelliSense nemusí zobrazit informace pro všechny formy přetížení.
 
-Můžete vypnout rychlé informace pro kód C++ tak, že přejdete do **nástroje** > **možnosti** > **textový Editor** > **C / C++** > **Upřesnit**a nastavení **automatické rychlé informace** k `false`.
+C++ Rychlé informace pro kód můžete vypnout tak, že přejdete na **nástroje** > **Možnosti** > **textový editor** > **C/C++**  > **Upřesnit**a nastavíte **auto. Rychlé informace** pro `false`.
 
 ## <a name="complete-word"></a>Dokončit slovo
 
-Jakmile zadáte dostatečný počet znaků pro odstranění dvojznačnosti termínu funkce dokončit slovo dokončí zbytek proměnné, příkazu nebo název funkce. Dokončit slovo můžete vyvolat kliknutím **upravit** > **IntelliSense** > **dokončit slovo**, stisknutím klávesy **Ctrl** + **Místo**, nebo kliknutím **dokončit slovo** tlačítko na panelu nástrojů editoru.
+Po zadání dostatečného počtu znaků k odstranění nejednoznačného období dokončí aplikace slovo zbytek proměnné, příkazu nebo názvu funkce. Úplné slovo můžete vyvolat tak, že kliknete na tlačítko **Upravit** > **IntelliSense** > **hotové slovo**, stisknete klávesu **CTRL**+nebo kliknutím na tlačítko **kompletní slovo** na panel nástrojů editoru
 
 ## <a name="intellisense-options"></a>Možnosti technologie IntelliSense
 
-Možnosti technologie IntelliSense jsou standardně povoleny. Chcete-li je vypnout, vyberte **nástroje** > **možnosti** > **textový Editor** a zrušte zaškrtnutí možnosti **informace o parametrech**nebo **automatický seznam členů** Pokud nechcete, aby funkci vypsat členy.
+Možnosti technologie IntelliSense jsou standardně povoleny. Chcete-li je vypnout, zvolte možnost **nástroje** >  > **textový editor** a zrušte výběr **informací o parametrech** nebo **Automatické seznamy členů** , pokud nechcete, aby funkce členové seznamu byly.
 
-## <a name="troubleshoot-intellisense"></a>Řešení potíží s IntelliSense
+## <a name="intellisense-icons"></a>Ikony IntelliSense
+Ikony v technologii IntelliSense mohou vyjádřit další význam s modifikátory ikon. Jedná se o hvězdičky, srdce a zámky nad ikonou objektu, který předává chráněné, interní nebo soukromé, v uvedeném pořadí.
+
+|    Ikona    |    Usnadnění    |    Popis    |
+|------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Modifikátor veřejných ikon](../ide/media/intellisensePublicNoModifier.png)       |    Veřejná třída    |    Přístup není omezen.   |
+| ![Modifikátor chráněné ikony](../ide/media/intellisenseProtectedModifier.png)       |    Chráněná třída    |    Přístup je omezen na obsahující třídu nebo typy odvozené z obsažené třídy.    |
+| ![Modifikátor chráněné interní ikony](../ide/media/intellisenseProtectedInternalModifier.png)       |    Chráněná interní třída    |    Přístup je omezen na aktuální sestavení nebo typy odvozené z nadřazené třídy.    |
+| ![Modifikátor interní ikony](../ide/media/intellisenseInternalModifier.png)       |    Internal – třída    |    Přístup je omezen na aktuální sestavení.    |
+|![Modifikátor privátní ikony](../ide/media/intellisensePrivateModifier.png)        |    Soukromá třída    |    Přístup je omezen na obsahující třídu nebo typy odvozené z obsažené třídy v rámci aktuálního sestavení. (K dispozici od C# verze 7,2.)    |
+
+## <a name="troubleshoot-intellisense"></a>Řešení potíží s technologií IntelliSense
 
 Možnosti technologie IntelliSense nemusí v určitých případech fungovat podle očekávání.
 
-**Kurzor je pod chybě s kódem.** Nebudete moct používat technologii IntelliSense, pokud neúplné funkce nebo jiná chyba v kódu nad kurzorem existuje, protože nemusí být možné zpracovat prvky kódu technologie IntelliSense. Tento problém lze vyřešit okomentováním odpovídajícího kódu.
+**Kurzor je pod chybou kódu.** Je možné, že nebudete moci používat technologii IntelliSense, pokud v kódu nad kurzorem existuje nekompletní funkce nebo jiná chyba, protože technologie IntelliSense nemusí být schopna analyzovat prvky kódu. Tento problém lze vyřešit okomentováním odpovídajícího kódu.
 
-**Kurzor je v komentáři kódu.** Technologii IntelliSense nelze použít, pokud je kurzor v komentáři ve zdrojovém souboru.
+**Kurzor je v komentáři kódu.** IntelliSense nemůžete použít, pokud je kurzor v komentáři ve zdrojovém souboru.
 
-**Kurzor je v řetězcovém literálu.** Technologii IntelliSense nelze použít, pokud je kurzor v uvozovkách okolo literálu řetězce, jako v následujícím příkladu:
+**Kurzor je v řetězcovém literálu.** IntelliSense nemůžete použít, pokud je kurzor v uvozovkách kolem řetězcového literálu, jako v následujícím příkladu:
 
 ```cpp
 MessageBox( hWnd, "String literal|")
 ```
 
-**Automatické možnosti jsou vypnuté.** Ve výchozím nastavení funguje technologie IntelliSense automaticky, ale lze je vypnout. Použít funkci IntelliSense můžete i v případě, že je zakázáno automatické dokončování.
+**Automatické možnosti jsou vypnuté.** Ve výchozím nastavení funguje technologie IntelliSense automaticky, ale můžete ji zakázat. Použít funkci IntelliSense můžete i v případě, že je zakázáno automatické dokončování.
 
 ## <a name="see-also"></a>Viz také:
 
 - [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)
 - [JavaScript IntelliSense](../ide/javascript-intellisense.md)
-- [Zápis a Refaktorujte kód (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
-- [Zadat komentářů ke kódu XML](reference/generate-xml-documentation-comments.md)
+- [Zápis a refaktoring kódu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Zadejte komentáře kódu XML](reference/generate-xml-documentation-comments.md)

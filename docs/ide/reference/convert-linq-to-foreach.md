@@ -1,5 +1,6 @@
 ---
-title: Refaktorovat kód, který převede dotazu LINQ příkazu foreach
+title: Refaktoring kódu pro převod dotazu LINQ na příkaz foreach
+description: Převeďte jakýkoli dotaz LINQ napsaný v syntaxi dotazu na příkaz foreach.
 ms.date: 05/15/2018
 ms.topic: reference
 author: gewarren
@@ -9,16 +10,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 237c6215971cbbac5dec25fd81c995cf87ed57c6
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 446d0f3a4988552e8e1fbbac32ca150491975d94
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67261734"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483679"
 ---
-# <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refaktoring pro převod LINQ na příkazu foreach
+# <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refaktoring pro převod LINQ na příkaz foreach
 
-Použít tento Refaktoring a převést [syntaxe dotazů LINQ](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq) k [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) příkazu.
+Tento refaktoring slouží k převodu [syntaxe dotazu LINQ](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq) na příkaz [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) .
 
 Tento refaktoring platí pro:
 
@@ -26,19 +27,19 @@ Tento refaktoring platí pro:
 
 ## <a name="how-to-use-it"></a>Jak ji použít
 
-1. Vybrat celý LINQ dotaz počáteční s `from`.
+1. Vyberte celý dotaz LINQ od `from`.
 
    > [!NOTE]
-   > Tento refaktoring můžete použít jenom pro převod vyjádřit pomocí syntaxe dotazu a nikoli syntaxe využívající metody dotazů LINQ.
+   > Tento refaktoring lze použít pouze pro převod LINQ dotazů vyjádřených syntaxí dotazu a nikoli syntaxí metody.
 
-1. Stisknutím klávesy **Ctrl**+ **.** nebo klikněte na tlačítko šroubovák ![šroubovák ikonu](../media/screwdriver-icon.png) ikonu na okraji na soubor kódu.
+1. Stisknutím klávesy **Ctrl**+ **.** nebo klikněte na ikonu ![ikony](../media/screwdriver-icon.png) Screwdriver Screwdriver na okraji souboru s kódem.
 
-   ![Převést na foreach nabídky rychlé akce LINQ](media/convert-linq-to-foreach.png)
+   ![Nabídka rychlé akce převedení LINQ na foreach](media/convert-linq-to-foreach.png)
 
-1. Vyberte **převést na "foreach"** . Nebo vyberte **náhled změn** otevřít [náhled změn](../../ide/preview-changes.md) dialogového okna a pak vyberte **použít**.
+1. Vyberte **převést na foreach**. Případně můžete výběrem **Zobrazit náhled změn** otevřít dialogové okno [Náhled změn](../../ide/preview-changes.md) a pak vybrat **použít**.
 
 > [!NOTE]
-> Pro C#, kód vygenerovaný tyto refaktoringy používá explicitního typu nebo [var](/dotnet/csharp/language-reference/keywords/var) pro proměnné iterace `foreach` smyčky. Typ v generovaném kódu explicitní nebo implicitní, závisí na nastavení stylu kódu, které jsou v oboru. Tato nastavení konkrétního stylu kódu jsou konfigurována na úrovni počítače v rámci **nástroje** > **možnosti** > **textový Editor**  >  **C#**  >  **Styl kódu** > **Obecné** >  **\'var' Předvolby**, nebo na úrovni řešení [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) souboru. Pokud změníte nastavení stylu kódu v **možnosti**, znovu otevřete soubor kódu pro změny projevily.
+> Pro C#kód, který vygenerovaly tyto refaktoringy, používá explicitní typ nebo [var](/dotnet/csharp/language-reference/keywords/var) pro `foreach` proměnnou iterace smyčky. Typ v generovaném kódu, explicitní nebo implicitní, závisí na nastavení stylu kódu, které jsou v rozsahu. Tato konkrétní nastavení stylu kódu jsou konfigurována na úrovni počítače v nabídce **nástroje** > **Možnosti** > **textový editor** > **C#**  > **styl kódu**  >  **Obecné** var nebo na úrovni řešení v souboru [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) .  **\'**  >  Pokud změníte nastavení stylu kódu v **možnostech**, znovu otevřete soubor kódu, aby se změny projevily.
 
 ## <a name="see-also"></a>Viz také:
 

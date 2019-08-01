@@ -1,5 +1,5 @@
 ---
-title: Principy konfigurací sestavení
+title: Vysvětlení konfigurací sestavení
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -21,77 +21,77 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - solutions [Visual Studio], build configuration
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 030b581f44535c62b950b5b54c15aa36232711e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 453e27df58e8a12baa3821def6c66fc1391401d3
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821754"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416956"
 ---
-# <a name="understand-build-configurations"></a>Principy konfigurací sestavení
+# <a name="understand-build-configurations"></a>Vysvětlení konfigurací sestavení
 
-Můžete ukládat různé konfigurace vlastností řešení a projektu pro použití v různé druhy sestavení. Chcete-li vytvořit, vyberte, upravit nebo odstranit konfiguraci, můžete použít **nástroje Configuration Manager**. Pokud chcete soubor otevřít, v řádku nabídek, zvolte **sestavení** > **nástroje Configuration Manager**, nebo zadejte **konfigurace** do vyhledávacího pole. Můžete také použít **konfigurace řešení** seznamu **standardní** panelu nástrojů vyberte konfiguraci nebo otevřít **nástroje Configuration Manager**.
-
-> [!NOTE]
-> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [konfigurace v sadě Visual Studio pro Mac sestavení](/visualstudio/mac/configurations).
+Můžete uložit různé konfigurace vlastností řešení a projektu pro použití v různých typech sestavení. Chcete-li vytvořit, vybrat, upravit nebo odstranit konfiguraci, můžete použít **Configuration Manager**. Chcete-li jej otevřít, v panelu nabídek vyberte možnost **sestavit** > **Configuration Manager**, nebo do vyhledávacího pole zadejte pouze **konfiguraci** . Můžete také použít seznam **Konfigurace řešení** na panelu nástrojů **standardní** k výběru konfigurace nebo otevření **Configuration Manager**.
 
 > [!NOTE]
-> Pokud nemůže najít řešení, konfigurace nastavení na panelu nástrojů a nemůžou přistupovat **nástroje Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] můžou vztahovat. vývojové nastavení. Další informace najdete v tématu [jak: Správa konfigurací s použitými nastaveními vývojáře jazyka Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac najdete v tématu [konfigurace sestavení v Visual Studio pro Mac](/visualstudio/mac/configurations).
 
-Ve výchozím nastavení, ladění a konfiguraci vydání jsou zahrnuté v projektech, které jsou vytvářeny instalační sadou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] šablony. Konfigurace ladění podporuje ladění aplikace a konfiguraci vydané verze sestavení na verzi aplikace, který je možné nasadit. Další informace najdete v tématu [jak: Nastavení ladění a vydání konfigurace](../debugger/how-to-set-debug-and-release-configurations.md). Můžete také vytvořit vlastní řešení konfigurace a konfigurace projektu. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).
+> [!NOTE]
+> Pokud nemůžete najít nastavení konfigurace řešení na panelu nástrojů a nemůžete získat [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] přístup k **Configuration Manager**, lze použít nastavení vývoje. Další informace najdete v tématu [jak: Správa konfigurací s použitím](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)Visual Basic nastavení pro vývojáře
+
+Ve výchozím nastavení jsou konfigurace ladění a vydání zahrnuty v projektech, které jsou vytvořeny pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] šablon. Konfigurace ladění podporuje ladění aplikace a konfigurace vydaných verzí vytvoří verzi aplikace, kterou lze nasadit. Další informace najdete v tématu [jak: Nastavte konfiguraci](../debugger/how-to-set-debug-and-release-configurations.md)ladění a vydání. Můžete také vytvořit vlastní konfigurace řešení a konfigurace projektu. Další informace najdete v tématu [jak: Vytvářejte a upravujte konfigurace](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Konfigurace řešení
 
-Konfigurace řešení určuje, jak jsou projekty v řešení sestaveny a nasazeny. K úpravě konfigurace řešení nebo definovat novou, v **nástroje Configuration Manager**v části **konfigurace aktivního řešení**, zvolte **upravit** nebo **nový** .
+Konfigurace řešení určuje, jak mají být projekty v řešení sestaveny a nasazeny. Chcete-li upravit konfiguraci řešení nebo definovat nový, v **Configuration Manager**v části **Konfigurace aktivního řešení**vyberte možnost **Upravit** nebo **Nový**.
 
-Každá položka **projektu kontexty** pole v konfiguraci řešení představuje projekt v řešení. Pro každou kombinaci **konfigurace aktivního řešení** a **platformou aktivního řešení**, můžete nastavit, jak každý projekt používá. (Další informace o platformy řešení najdete v tématu [platformy sestavení porozumění](../ide/understanding-build-platforms.md).)
+Každá položka v poli **kontexty projektu** v konfiguraci řešení představuje projekt v řešení. Pro každou kombinaci **aktivní konfigurace řešení** a **platformy aktivního řešení**můžete nastavit, jak se má každý projekt používat. (Další informace o platformách řešení najdete v tématu [porozumění platformám sestavení](../ide/understanding-build-platforms.md).)
 
 > [!NOTE]
-> Při definování nové konfigurace řešení a vyberte **vytvořit nové konfigurace projektu** zaškrtávací políčko [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticky přiřadí novou konfiguraci pro všechny projekty. Podobně když definovat nová platforma řešení a vyberete **vytvořit nové platformy projektu** zaškrtávací políčko [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticky přiřadí novou platformu pro všechny projekty. Také pokud chcete přidat projekt, který cílí na novou platformu, Visual Studio přidá tuto platformu na seznam platformy řešení a přiřadí ji do všech projektů.
+> Při definování nové konfigurace řešení a zaškrtnutí políčka [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **vytvořit nové konfigurace projektu** automaticky přiřadí novou konfiguraci všem projektům. Podobně, při definování nové platformy řešení a zaškrtnutí políčka [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **vytvořit nové projektové platformy** automaticky přiřadí novou platformu všem projektům. Také Pokud přidáte projekt, který cílí na novou platformu, Visual Studio přidá tuto platformu do seznamu platforem řešení a přiřadí je ke všem projektům.
 >
-> Pořád můžete upravit nastavení pro každý projekt.
+> Můžete přesto upravit nastavení pro každý projekt.
 
-Konfigurace aktivního řešení také poskytuje kontext do rozhraní IDE. Například pokud pracujete na projektu a konfigurace určuje, že dojde k jeho sestavení pro mobilní zařízení, **nástrojů** zobrazí pouze položky, které lze použít v projektu mobilních zařízení.
+Aktivní konfigurace řešení také poskytuje kontext rozhraní IDE. Například pokud pracujete na projektu a konfigurace určuje, že bude sestavena pro mobilní zařízení, zobrazí **Sada nástrojů** pouze položky, které lze použít v projektu mobilního zařízení.
 
 ## <a name="project-configurations"></a>Konfigurace projektu
- Konfigurace a platformy, které projekt cílí na se používají společně k určení vlastností pro použití při systém orchard je založen. Projekt může mít jinou sadu definice vlastností pro každou kombinaci konfigurace a platforma. Chcete-li změnit vlastnosti projektu, můžete použít stránky s jejími vlastnostmi. (V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**.)
+ Konfigurace a platforma, které cílí na projekt, se používají společně k určení vlastností, které mají být použity při sestavení. Projekt může mít jinou sadu definic vlastností pro každou kombinaci konfigurace a platformy. Chcete-li upravit vlastnosti projektu, můžete použít jeho stránky vlastností. (V **Průzkumník řešení**otevřete místní nabídku pro projekt a pak zvolte možnost **vlastnosti**.)
 
- Pro každou konfiguraci projektu můžete definovat vlastnosti závislé na konfiguraci podle potřeby. Například pro konkrétní sestavení, můžete nastavit, položky projektu, které budou zahrnuty, a co výstupní soubory budou vytvořeny, kde budou umístěny, a jak bude optimalizované.
+ Pro každou konfiguraci projektu můžete podle potřeby definovat vlastnosti závislé na konfiguraci. Například pro konkrétní sestavení můžete nastavit, které položky projektu budou zahrnuty a které výstupní soubory budou vytvořeny, kde budou vloženy a jak budou optimalizovány.
 
- Konfigurace projektu se může značně lišit. Vlastnosti jedné konfigurace může například zadat, že jeho výstupní soubor optimalizovat tak, aby obsadily minimální volné místo, zatímco jiné konfigurace může být spouštěna, že její spustitelný soubor maximální rychlostí.
+ Konfigurace projektu se můžou výrazně lišit. Například vlastnosti jedné konfigurace můžou určit, že se má jeho výstupní soubor optimalizovat tak, aby vybíral minimální místo, zatímco jiná konfigurace může určit, že jeho spustitelný soubor běží s maximální rychlostí.
 
- Konfigurace projektu jsou uloženy řešením – není uživatelem, tak, aby může být sdílen týmem.
+ Konfigurace projektu jsou uloženy podle řešení, nikoli podle uživatele, aby mohly být sdíleny týmem.
 
- I když závislosti projektu jsou nezávislé na konfiguraci, bude vytvořen pouze projekty, které jsou určené v konfiguraci aktivního řešení.
+ Přestože závislosti projektu jsou nezávislé na konfiguraci, budou sestaveny pouze projekty, které jsou zadány v aktivní konfiguraci řešení.
 
-## <a name="how-visual-studio-assigns-project-configurations"></a>Přiřazování konfigurace projektu v sadě Visual Studio
- Při definování nové konfigurace řešení a nekopírujte nastavení z existující aplikace Visual Studio používá následující kritéria přiřadit výchozí konfigurace projektu. Kritéria jsou vyhodnocovány v uvedeném pořadí.
+## <a name="how-visual-studio-assigns-project-configurations"></a>Jak Visual Studio přiřadí konfigurace projektu
+ Pokud definujete novou konfiguraci řešení a nekopírujete nastavení z existujícího projektu, Visual Studio použije následující kritéria k přiřazení výchozích konfigurací projektu. Kritéria jsou vyhodnocována v uvedeném pořadí.
 
-1. Pokud projekt obsahuje název konfigurace (*\<název konfigurace > \<název platformy >*), je přiřazen přesně odpovídá názvu nová konfigurace řešení, tuto konfiguraci. Názvy konfigurace nejsou malá a velká písmena.
+1. Pokud má projekt název konfigurace ( *\<název konfigurace > \<název platformy >* ), který přesně odpovídá názvu nové konfigurace řešení, tato konfigurace je přiřazena. V názvech konfigurace se nerozlišují velká a malá písmena.
 
-2. Pokud projekt obsahuje název konfigurace, ve kterých části název konfigurace odpovídá nová konfigurace řešení, tato konfigurace je přiřazen, zda odpovídá platforma část nebo ne.
+2. Pokud má projekt název konfigurace, ve kterém část konfigurace-název odpovídá nové konfiguraci řešení, je tato konfigurace přiřazena, ať už část platformy odpovídá nebo ne.
 
-3. Pokud ještě není nalezena žádná shoda, přiřadí se první konfigurace, který je uveden v projektu.
+3. Pokud se stále neshoduje, první konfigurace, která je uvedená v projektu, je přiřazena.
 
-## <a name="how-visual-studio-assigns-solution-configurations"></a>Přiřazování konfigurace řešení v sadě Visual Studio
- Při vytváření konfigurace projektu (v **nástroje Configuration Manager**, výběrem **nový** v rozevírací nabídce v **konfigurace** sloupce pro tento projekt) a Vyberte **vytvořit nové konfigurace řešení** zaškrtávací políčko, Visual Studio vyhledá konfigurace s názvem jako řešení pro sestavení projektu na jednotlivých platformách podporuje. V některých případech může Visual Studio přejmenuje existující konfigurace řešení nebo definuje nové značky.
+## <a name="how-visual-studio-assigns-solution-configurations"></a>Jak Visual Studio přiřadí konfigurace řešení
+ Když vytvoříte konfiguraci projektu (v **Configuration Manager**kliknutím na možnost **Nový** v rozevírací nabídce ve sloupci **Konfigurace** pro daný projekt) a zaškrtnutím políčka **vytvořit nové konfigurace řešení** , vizuál Studio vyhledá konfiguraci řešení se stejným názvem a sestaví projekt na všech podporovaných platformách. V některých případech aplikace Visual Studio přejmenuje existující konfigurace řešení nebo definuje nové.
 
- Visual Studio používá následující kritéria pro přiřazení konfigurací řešení.
+ Visual Studio používá následující kritéria k přiřazení konfigurací řešení.
 
-- Pokud konfigurace projektu neurčuje platformu nebo určuje jenom jednu platformu, pak konfigurace řešení, jehož název se shoduje s novou konfiguraci projektu je najít nebo přidat. Výchozí název této konfigurace řešení neobsahuje název platformy. má podobu  *\<název konfigurace projektu >*.
+- Pokud konfigurace projektu nespecifikuje platformu nebo určuje jenom jednu platformu, pak se v konfiguraci řešení, jejíž název shoduje s názvem nové konfigurace projektu, najde nebo přidá. Výchozí název této konfigurace řešení nezahrnuje název platformy; má podobu *> název konfigurace projektu.\<*
 
-- Pokud projekt podporuje více platforem, konfigurace řešení je najít nebo přidat pro každou podporovanou platformu. Název každé konfigurace řešení obsahuje název konfigurace projektu a název platformy a má tvar  *\<název konfigurace projektu > \<název platformy >*.
+- Pokud projekt podporuje více platforem, je konfigurace řešení buď nalezena, nebo přidána pro každou podporovanou platformu. Název každé konfigurace řešení zahrnuje název konfigurace projektu i název platformy a má  *\<název konfigurace projektu \<> název platformy >* .
 
 ## <a name="see-also"></a>Viz také:
 
 - [Návod: Sestavení aplikace](../ide/walkthrough-building-an-application.md)
 - [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)
 - [Řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)
-- [Reference sestavení C/C++](/cpp/build/reference/c-cpp-building-reference)
-- [Přepínače příkazového řádku nástroje devenv](../ide/reference/devenv-command-line-switches.md)
-- [Sestavení konfigurací (Visual Studio for Mac)](/visualstudio/mac/configurations)
+- [Reference CC++ /Build](/cpp/build/reference/c-cpp-building-reference)
+- [Devenv – přepínače příkazového řádku](../ide/reference/devenv-command-line-switches.md)
+- [Konfigurace sestavení (Visual Studio pro Mac)](/visualstudio/mac/configurations)

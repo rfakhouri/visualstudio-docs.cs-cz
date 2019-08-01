@@ -1,5 +1,6 @@
 ---
 title: Přesun typu do odpovídajícího souboru refaktoring
+description: Přesuňte typ do samostatného souboru se stejným názvem. Klikněte pravým tlačítkem na typ, vyberte rychlé akce a refaktoring a vyberte přesunout typ do <TypeName>. cs.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e3b12f6a19ea64e43f7a5e00e3c795cc7358e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3021e08d3cfb601a67f51e53c97d2eba60c397a5
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540734"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483657"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Přesunutí typu do odpovídajícího souboru refaktoring
 
@@ -25,11 +26,11 @@ Tento refaktoring platí pro:
 
 - Visual Basic
 
-**Co:** Umožňuje vybraného typu přesuňte do samostatného souboru se stejným názvem.
+**Co:** Umožňuje přesunout vybraný typ do samostatného souboru se stejným názvem.
 
-**Kdy:** Máte ve stejném souboru, který chcete použít k oddělení více tříd, struktur, rozhraní a podobně.
+**Kdy:** Máte více tříd, struktur, rozhraní atd. ve stejném souboru, který chcete oddělit.
 
-**Proč:** Umístěním více typů ve stejném souboru může ztěžovat vyhledávání těchto typů. Přesunutím typů souborů se stejným názvem, bude kód čitelnější a přehlednější a díky tomu.
+**Proč:** Umístěním více typů do stejného souboru může být obtížné tyto typy najít. Přesunutím typů souborů se stejným názvem, bude kód čitelnější a přehlednější a díky tomu.
 
 ## <a name="how-to"></a>Postupy
 
@@ -45,7 +46,7 @@ Tento refaktoring platí pro:
 
 2. Dále proveďte jednu z následujících akcí:
 
-   - Stisknutím klávesy **Ctrl**+**.**
+   - Stisknutím klávesy **Ctrl**+ **.**
    - Klikněte pravým tlačítkem na název typu a vyberte **rychlé akce a Refaktoringy**
 
 1. Vyberte **přesunutí typu do *TypeName*.cs** z nabídky kde *TypeName* je název typu, který jste vybrali.

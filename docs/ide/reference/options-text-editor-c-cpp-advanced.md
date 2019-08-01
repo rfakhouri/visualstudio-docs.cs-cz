@@ -11,200 +11,200 @@ helpviewer_keywords:
 ms.assetid: 67c82ae5-fddd-49df-baec-8e7498b156f3
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c6cdfc62885133d82911c7336d011804e9a322d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c5399411998f4a03468f2dedccfd660eaf8de11
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817594"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461825"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Možnosti, textový editor, C/C++, upřesnit
 
-Změnou tyto možnosti můžete změnit chování související se technologie IntelliSense a procházení databází, když programujete v jazyce C nebo C++.
+Změnou těchto možností můžete změnit chování související s technologií IntelliSense a databází procházení při programování v jazyce C nebo C++.
 
-Pro přístup k této stránce v **možnosti** dialogové okno, v levém podokně rozbalte **textový Editor**, rozbalte **C/C++** a klikněte na tlačítko **Upřesnit**.
+Chcete-li získat přístup k této stránce, v dialogovém okně **Možnosti** rozbalte v levém podokně položku **textový editor**, rozbalte položku **C++C/** a pak zvolte možnost **Upřesnit**.
 
 > [!NOTE]
-> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Zobrazit [přizpůsobit prostředí IDE sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Viz [Přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="browsingnavigation"></a>Procházení a navigace
+## <a name="browsingnavigation"></a>Procházení/navigace
 
-Tyto možnosti s výjimkou případů, měli byste zvolit nikdy ve výjimečných případech, kde je tak velká, že aktivita databáze používá nepřijatelné množství systémových prostředků řešení.
+Tyto možnosti byste nikdy neměli volit s výjimkou případů, kdy je řešení tak velké, že aktivita databáze spotřebovává nepřijatelný objem systémových prostředků.
 
 **Zakázat databázi**
 
-Veškeré možnosti použití databáze (SDF), všechny ostatní možnosti procházení/navigace a všechny funkce technologie IntelliSense, s výjimkou procházení kódu # automatické dokončování include jsou zakázané.
+Veškeré použití databáze procházení kódu (SDF), všech dalších možností procházení/navigace a všech funkcí IntelliSense s výjimkou #include automatické dokončování jsou zakázané.
 
 **Zakázat aktualizace databáze**
 
-Databáze se otevřou jen pro čtení a žádné aktualizace se provede, jako jsou soubory upravovat. Většina funkcí budou i nadále fungovat. Ale jak jsou provedeny změny, data budou zastaralá a získáte nesprávné výsledky.
+Databáze bude otevřena jen pro čtení a nebudou provedeny žádné aktualizace, protože soubory budou upravovány. Většina funkcí bude pořád fungovat. Při úpravách se ale data stanou zastaralá a získáte nesprávné výsledky.
 
 **Zakázat automatické aktualizace databáze**
 
-Databáze procházení kódu nebude automaticky aktualizovat při změně zdrojových souborů. Ale pokud otevřete **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **znovu prohledat řešení**, zkontroluje všechny zastaralé soubory a databáze bude aktualizována.
+Databáze procházení kódu nebude automaticky aktualizována při změně zdrojových souborů. Pokud však otevřete **Průzkumník řešení**, otevřete místní nabídku pro projekt a pak zvolte možnost **Prohledat řešení**, všechny soubory se zastaralou verzí a bude aktualizována databáze.
 
 **Zakázat implicitní soubory**
 
-Databáze procházení kódu nebude shromažďovat data pro soubory, které nejsou uvedeny v projektu. Projekt obsahuje zdrojové soubory a soubory hlaviček, které jsou explicitně zadány. Implicitní soubory jsou zahrnuty explicitní soubory (například afxwin.h windows.h a atlbase.h). Za normálních okolností systém vyhledá tyto soubory a také je indexuje pro různé funkce procházení (včetně přejít na). Pokud zvolíte tuto možnost, tyto soubory nejsou indexovány a některé funkce nejsou k dispozici pro ně. Pokud zvolíte tuto možnost, jsou také implicitně zvolili "Zakázat implicitní vyčištění" a "Zakázat externích závislostí".
+Databáze procházení kódu neshromažďuje data pro soubory, které nejsou zadány v projektu. Projekt obsahuje zdrojové soubory a hlavičkové soubory, které jsou explicitně určeny. Implicitní soubory jsou zahrnuty v explicitních souborech (například afxwin. h, Windows. h a atlbase. h). Systém obvykle tyto soubory najde a také je indexuje pro různé funkce procházení (včetně přechodu na). Pokud zvolíte tuto možnost, tyto soubory nebudou indexovány a některé funkce nejsou pro ně k dispozici. Pokud zvolíte tuto možnost, implicitně se volí taky možnost zakázat implicitní vyčištění a zakázat externí závislosti.
 
 **Zakázat implicitní vyčištění**
 
-Databáze procházení kódu nebude vyčištění implicitní soubory, které se už neodkazuje. Tato možnost zabraňuje implicitní soubory odebírá z databáze, pokud jste už nebude používat. Například, pokud chcete přidat `#include` direktiv, která odkazuje na mapi.h do jednoho z vašich zdrojových souborů, mapi.h bude nalezen a indexovat. Pokud později odeberete #include a soubor není odkazovat kdekoli, informace o tom se nakonec odeberou, pokud zvolíte tuto možnost. (Viz **znovu prohledat řešení Interval** možnost.) Tato možnost se ignoruje, pokud explicitně znovu prohledat řešení.
+Databáze procházení kódu nečistí implicitní soubory, které již nejsou odkazovány. Tato možnost zabrání odebrání implicitních souborů z databáze, pokud už se nepoužívají. Například pokud přidáte `#include` direktivu, která odkazuje na rozhraní MAPI. h na jeden ze zdrojových souborů, bude nalezeno a indexováno rozhraní MAPI. h. Pokud odeberete #include a soubor se neodkazuje jinam, informace o něm se nakonec odeberou, pokud tuto možnost nevyberete. (Viz možnost **znovu prohledat interval řešení** .) Tato možnost se ignoruje, když řešení explicitně prohledáváte.
 
-**Zakázat složky vnějších závislostí**
+**Zakázat složky externích závislostí**
 
-Složka externí závislosti pro každý projekt se vytvoří nebo aktualizuje. V **Průzkumníka řešení**, každý projekt obsahuje externí závislosti složky, která obsahuje všechny implicitní soubory pro daný projekt. Pokud zvolíte tuto možnost, nezobrazí se této složky.
+Složka externích závislostí pro každý projekt není vytvořena nebo aktualizována. V **Průzkumník řešení**každý projekt obsahuje složku externích závislostí, která obsahuje všechny implicitní soubory pro daný projekt. Pokud zvolíte tuto možnost, tato složka se nezobrazí.
 
 **Znovu vytvořit databázi**
 
-Znovu vytvořte databázi procházení kódu od nic při příštím načtení řešení. Pokud zvolíte tuto možnost, odstraní se tento soubor databáze SDF při příštím načtení řešení, což způsobuje databáze, kterou chcete znovu vytvořit všechny soubory a indexovat a.
+Znovu vytvořit databázi procházení kódu od okamžiku, kdy řešení příště nebylo načteno. Pokud zvolíte tuto možnost, soubor databáze SDF se odstraní při příštím načtení řešení, což způsobí, že se databáze znovu vytvoří a naindexují se všechny soubory.
 
-**Znovu prohledat řešení Interval**
+**Interval řešení opětovného prohledání**
 
-Úloha "Znovu prohledat řešení nyní" je naplánováno interval, který zadáte. Je nutné zadat mezi 0 a 5000 minut. Výchozí hodnota je 60 minut. Zatímco probíhá prohledávání řešení, časová razítka souborů jsou zkontrolována k určení, zda soubor byl změněn mimo rozhraní IDE. (Jsou automaticky sleduje změny provedené v integrovaném vývojovém prostředí, a soubory se aktualizují.) Implicitně zahrnuté soubory jsou zkontrolována k určení, jestli se máte vše stále odkazuje.
+Úloha opětovného prohledání řešení je naplánovaná pro interval, který zadáte. Je nutné zadat mezi 0 a 5000 minutami. Výchozí hodnota je 60 minut. I když je řešení znovu naskenováno, jsou zkontrolována časová razítka souborů, aby bylo možné určit, zda byl soubor změněn mimo rozhraní IDE. (Změny provedené v integrovaném vývojovém prostředí (IDE) se automaticky sledují a aktualizují se soubory.) Implicitně zahrnuté soubory jsou zkontrolovány, aby bylo možné zjistit, zda jsou všechny stále odkazovány.
 
 ## <a name="diagnostic-logging"></a>Protokolování diagnostiky
 
-Tyto možnosti jsou k dispozici v případě, že Microsoft vás vyzve k shromažďování upřesňující informace pro diagnostiku problému. Informace o protokolování není vhodný pro uživatele, a doporučujeme ponechat jej zakázán.
+Tyto možnosti jsou k dispozici v případě, že vás Microsoft požaduje, abyste shromáždili rozšířené informace pro diagnostiku problému. Informace o protokolování nejsou vhodné pro uživatele a doporučujeme, abyste ji nechali zakázanou.
 
-**Povolení protokolování**
+**Povolit protokolování**
 
-Povolí protokolování diagnostiky v okně výstupu.
+Povolí diagnostické protokolování do okna výstup.
 
 **Úroveň protokolování**
 
-Nastavte úroveň podrobností protokolu, od 0 do 5.
+Nastavte podrobnosti protokolu z 0 na 5.
 
-**Protokolování filtru**
+**Filtr protokolování**
 
-Filtry se zobrazí typy událostí s využitím bitová maska.
+Filtruje zobrazené typy událostí pomocí bitové masky.
 
-Nastavení s použitím součet některý z následujících možností:
+Nastavte pomocí součtu některé z následujících možností:
 
-- 0 – žádný
+- 0 – žádné
 
-- 1 - Obecné
+- 1 – Obecné
 
-- 2 – nečinné
+- 2 – nečinný
 
-- 4 – pracovní položky
+- 4\. pracovní položka
 
-- 8 – technologie IntelliSense
+- 8 – IntelliSense
 
-- 16 - ACPerf
+- 16 – ACPerf
 
-- 32 - ClassView
+- 32 – ClassView
 
 ## <a name="fallback-location"></a>Záložní umístění
 
-Záložní umístění je, kde jsou umístěny podpůrné soubory SDF a technologii IntelliSense (například iPCH), když primární umístění (stejného adresáře jako řešení) se nepoužívá. Tato situace může nastat, uživatel nemá oprávnění k zápisu do adresáře řešení nebo řešení adresář je na pomalé zařízení. Výchozí umístění pro použití náhradní lokality je v adresáři temp uživatele.
+Záložní umístění je místo, kde se soubory podpory SDF a IntelliSense (například iPCH) vloží, když se nepoužije primární umístění (stejný adresář jako řešení). K této situaci může dojít, když uživatel nemá oprávnění k zápisu do adresáře řešení nebo když je adresář řešení na pomalé zařízení. Výchozí záložní umístění je v dočasném adresáři uživatele.
 
 **Vždy použít záložní umístění**
 
-Označuje, že kód databázi procházení a soubory IntelliSense by měl vždy být uloženy ve složce, který zadáte jako "Záložní umístění", ne u souboru .sln. Rozhraní IDE se nikdy pokusí pro soubory SDF nebo iPCH vedle adresáři řešení a bude vždy používat záložní umístění.
+Označuje, že databáze procházení kódu a soubory IntelliSense by měly být vždy uloženy ve složce, kterou zadáte jako záložní umístění, nikoli u souboru. sln. Rozhraní IDE se nikdy nepokusí umístit soubory SDF nebo iPCH vedle adresáře řešení a bude vždy používat záložní umístění.
 
-**Nezobrazí upozornění, pokud je použito záložní umístění**
+**Neupozorňovat na použití záložního umístění**
 
-Nejsou informován nebo dotaz, zda se používá záložní umístění. Za normálních okolností rozhraní IDE vám oznámí, pokud bylo nutné použít záložní umístění. Tato volba vypne tohoto upozornění.
+Nebudete informováni ani se zobrazí výzva, pokud je použito záložní umístění. V normálním případě bude IDE vědět, jestli by musel používat záložní umístění. Tato možnost vypne toto upozornění.
 
 **Záložní umístění**
 
-Tato hodnota se používá jako sekundární umístění pro uložení kódu, procházení databáze nebo soubory IntelliSense. Ve výchozím nastavení je dočasný adresář záložní umístění. Rozhraní IDE vytvoří podadresář pod zadanou cestu (nebo na dočasný adresář), který obsahuje název řešení spolu s hodnotu hash úplnou cestu k řešení, které předchází problémům s názvy řešení je stejná.
+Tato hodnota se používá jako sekundární umístění pro uložení databáze procházení kódu nebo souborů IntelliSense. Ve výchozím nastavení je vaším dočasným adresářem vaše záložní umístění. Rozhraní IDE vytvoří podadresáře v zadané cestě (nebo v dočasném adresáři), který obsahuje název řešení společně s hodnotou hash úplné cesty k řešení, což zabrání problémům se stejnými názvy řešení.
 
 ## <a name="intellisense"></a>IntelliSense
 
 **Automatické rychlé informace**
 
-Umožňuje zobrazovat popisy tlačítek QuickInfo, při přesunutí ukazatele myši text.
+Povoluje QuickInfo popisy tlačítek při přesunutí ukazatele myši na text.
 
-**Zakázat technologii IntelliSense**
+**Zakázat IntelliSense**
 
-Zakáže všechny funkce technologie IntelliSense. Rozhraní IDE nevytváří VCPkgSrv.exe procesy pro žádosti o služby technologie IntelliSense a bude fungovat bez funkce IntelliSense (rychlé informace, seznam členů, automatické dokončování, Param nápovědy). Sémantické zbarvení a zvýraznění odkazů jsou zakázané taky. Tato možnost není zakázat procházení funkcí, které spoléhají výhradně na databázi (včetně navigační panel, ClassView a vlastnost okno).
+Zakáže všechny funkce technologie IntelliSense. Rozhraní IDE nevytváří procesy VCPkgSrv. exe pro obsluhu požadavků technologie IntelliSense a žádné funkce technologie IntelliSense nebudou fungovat (QuickInfo, seznam členů, automatické dokončování, pomocníka param). Zároveň jsou zakázané sémantické zabarvení a zvýrazňování odkazů. Tato možnost nezakáže funkce procházení, které se spoléhají výhradně na databázi (včetně navigačního panelu, ClassView a okna vlastností).
 
 **Zakázat automatické aktualizace**
 
-Aktualizace IntelliSense zpožděn až do aktuálního požadavku pro technologii IntelliSense. Toto zpoždění může vést k delší dobu provádění první operace IntelliSense na souboru, ale může být užitečné nastavit tuto možnost na počítačích velmi pomalý nebo s omezenými zdroji. Pokud zvolíte tuto možnost, zvolíte také implicitně možnosti "Zakázat Error Reporting" a "Zakázat podtržení vlnovkou".
+Aktualizace technologie IntelliSense je zpožděna, dokud nebude vytvořena skutečná žádost o IntelliSense. Tato prodleva může mít za následek delší dobu provádění první operace IntelliSense v souboru, ale může být užitečné nastavit tuto možnost na velmi pomalé nebo na počítačích s omezenými prostředky. Pokud zvolíte tuto možnost, implicitně zvolíte možnosti "zakázat zasílání zpráv o chybách" a "zakázat vlnovky".
 
-**Vypnout hlášení chyb**
+**Zakázat zasílání zpráv o chybách**
 
-Zakáže hlášení chyb IntelliSense formě podtržení vlnovkou a v okně Seznam chyb. Zakáže také analýzu na pozadí, který je spojen s hlášením chyb. Pokud zvolíte tuto možnost, zvolíte také implicitně možnost "Zakázat podtržení vlnovkou".
+Zakáže zasílání zpráv o chybách IntelliSense prostřednictvím vlnovek a okna Seznam chyb. Také zakáže analýzu na pozadí, která je přidružena k zasílání zpráv o chybách. Pokud zvolíte tuto možnost, implicitně zvolíte možnost zakázat vlnovky.
 
-**Zakázat podtržení vlnovkou**
+**Zakázat vlnovky**
 
-Zakáže podtržení vlnovkou u chyb IntelliSense. Nezobrazovat red "podtržení vlnovkou" v okně editoru, ale tato chybová zpráva stále zobrazí v okně Seznam chyb.
+Zakáže chybové vlnovky technologie IntelliSense. Červené "vlnovky" se v okně editoru nezobrazují, ale v okně Seznam chyb se stále zobrazuje chyba.
 
-**Automaticky ladit maximální počet jednotek překladu uložené v mezipaměti.**
+**Automaticky vyladit maximální počet jednotek překladu v mezipaměti**
 
-Maximální počet jednotek překladu, které se budou uchovávat v daný okamžik aktivní pro požadavky IntelliSense. Musíte zadat hodnotu v rozmezí 2 až 15. Toto číslo přímo souvisí s maximální počet procesů VCPkgSrv.exe, které bude možné spustit (pro danou instanci sady Visual Studio). Výchozí hodnota je 2, ale pokud máte dostupnou paměť, můžete tuto hodnotu zvýšit a případně dosáhnout mírně vyšší výkon na IntelliSense.
+Maximální počet jednotek překladu, které budou v jednom okamžiku aktivní pro požadavky IntelliSense. Je nutné zadat hodnotu mezi 2 a 15. Toto číslo přímo souvisí s maximálním počtem procesů VCPkgSrv. exe, které se spustí (pro danou instanci sady Visual Studio). Výchozí hodnota je 2, ale pokud máte dostupnou paměť, můžete tuto hodnotu zvýšit a pravděpodobně dosáhnout mírného lepšího výkonu technologie IntelliSense.
 
 Další informace o jednotkách překladu naleznete v tématu [fáze překladu](/cpp/preprocessor/phases-of-translation).
 
-**Zakázat #include automatické dokončování**
+**Zakázat automatické dokončování #include**
 
-Zakáže Automatické doplňování `#include` příkazy.
+Zakáže automatické dokončování `#include` příkazů.
 
-**Použít lomítko vpřed v #include automatické dokončování**
+**Použití lomítka v #include automatické dokončování**
 
-Aktivuje automatické doplňování `#include` příkazy při "/" se používá. Výchozím oddělovačem je zpětné lomítko "\'. Kompilátor může přijímat buď, proto tuto možnost použijte, chcete-li určit, co vašeho základu kódu používá.
+Spustí automatické dokončování `#include` příkazů při použití "/". Výchozím oddělovačem je zpětné lomítko\'. Kompilátor může přijmout buď, a tuto možnost použijte k určení toho, co váš základ kódu používá.
 
-**Zakázat agresivní člena seznamu**
+**Zakázat agresivní seznam členů**
 
-Seznam členů se nezobrazí, když zadáte název typu nebo proměnné. V seznamu se zobrazí pouze po zadání jedním ze znaků potvrzení, jak jsou definovány v **potvrzující znaky seznamu členů** možnost.
+Seznam členů se nezobrazí, když zadáte název typu nebo proměnné. Seznam se zobrazí až po zadání jednoho ze znaků potvrzení, jak je definováno v možnosti pro **zápis znaků v seznamu členů** .
 
 **Zakázat klíčová slova v seznamu členů**
 
-Klíčová slova jazyka, jako `void`, `class`, `switch` nezobrazí v seznamu návrhů člen.
+Klíčová slova jazyka `void`, `class`například `switch` ,, se nezobrazují v návrzích na seznam členů.
 
-**Zakázat fragmenty kódu člena seznamu**
+**Zakázat fragmenty kódu v seznamu členů**
 
-Fragmenty kódu se nezobrazují v seznamu návrhů člen.
+Fragmenty kódu se nezobrazují v návrzích na seznam členů.
 
 **Režim filtrování seznamu členů**
 
-Nastaví typ porovnávací algoritmus. **Přibližné** najde, co nejvíce odpovídá, protože ho používá algoritmus, který je podobný kontrolu pravopisu pro hledání shody, které jsou podobné, ale nejsou identické. **Inteligentní filtrování** odpovídá podřetězců, i když nejsou na začátku slova. **Předpona** odpovídá pouze na stejné dílčích řetězců, které začínají na začátku slova.
+Nastaví typ odpovídajícího algoritmu. **Fuzzy** najde nejvíc možné shody, protože používá algoritmus, který je podobný kontrole pravopisu k nalezení shod, které jsou podobné, ale nejsou totožné. **Inteligentní filtrování** odpovídá podřetězcům i v případě, že nejsou na začátku slova. **Prefix** se shoduje jenom se stejnými podřetězci, které začínají na začátku slova.
 
-**Zakázat sémantické zbarvení**
+**Zakázat sémantickou zabarvení**
 
-Vypne všechny barevné zvýraznění kódu s výjimkou klíčová slova jazyka, řetězce a komentáře.
+Vypne všechny barvy kódu s výjimkou klíčových slov jazyka, řetězců a komentářů.
 
-**Potvrzující znaky seznamu členů**
+**Znaky potvrzení seznamu členů**
 
-Určuje znaky, které způsobují aktuálně zvýrazněný seznam členů návrh pro potvrzení. Můžete přidat nebo odebrat znaky z tohoto seznamu.
+Určuje znaky, které způsobují, že návrh aktuálně zvýrazněného seznamu členů bude potvrzen. V tomto seznamu můžete přidat nebo odebrat znaky.
 
-**Potvrzení seznamu členů inteligentní**
+**Potvrzení seznamu inteligentních členů**
 
-Pokud zvolíte klávesu Enter na konci úplně napsaného slova, přidá nový řádek.
+Přidá řádek, když na konci plně zadaného slova vyberete klávesu ENTER.
 
-**Povolit člena seznamu tečky na šipku**
+**Povolit u seznamu členů změnu tečky na šipku**
 
-Nahradí "." znaky->' Pokud se dá použít pro seznam členů.
+Nahradí '. ' s '-> ', pokud je použit pro seznam členů.
 
 ## <a name="references"></a>Odkazy
 
 **Zakázat řešení**
 
-Z důvodů výkonu "Najít všechny odkazy" zobrazí nezpracované textové výsledky hledání ve výchozím nastavení namísto použití IntelliSense k ověření každého kandidáta. Pro přesnější výsledky pro všechny operace hledání můžete zrušte zaškrtnutí tohoto políčka. Filtrovat na základě za vyhledávání, otevřete místní nabídku pro seznam výsledků a klikněte na tlačítko "Vyřešit výsledky."
+Z důvodů výkonu se ve výchozím nastavení zobrazí nezpracované textové výsledky hledání bez použití IntelliSense k ověření každého kandidáta. Zaškrtnutím tohoto políčka můžete přesnější výsledky u všech operací hledání zrušit. Chcete-li filtrovat podle konkrétního výběru, otevřete místní nabídku seznamu výsledků a zvolte možnost vyřešit výsledky.
 
-**Hide Unconfirmed**
+**Skrýt nepotvrzené**
 
-Skryjte nepotvrzené položky ve výsledcích najít všechny odkazy. Pokud jste možnost zrušit nastavení "Zakázat řešení", můžete použít tuto možnost skryjete nepotvrzené položky ve výsledcích.
+Ve výsledcích hledání všech odkazů skryjte nepotvrzené položky. Pokud zrušíte možnost zakázat řešení, můžete tuto možnost použít ke skrytí nepotvrzených položek ve výsledcích.
 
-**Zakázat zvýraznění odkazů**
+**Zakázat zvýrazňování odkazů**
 
-Ve výchozím nastavení když vyberete nějaký text, všechny výskyty stejného textu jsou automaticky zvýrazněné v aktuálním dokumentu. Tuto funkci můžete zakázat nastavením **zakázat zvýraznění odkazu** k **True**.
+Ve výchozím nastavení, když vyberete nějaký text, všechny výskyty stejného textu se v aktuálním dokumentu automaticky zvýrazní. Tuto funkci můžete zakázat nastavením **Zakázat zvýraznění odkazů** na **hodnotu true**.
 
 ## <a name="text-editor"></a>Textový editor
 
-**Povolit kulatých závorek**
+**Povolit Surround pomocí složených závorek**
 
-Pokud je povoleno, je možné ohraničit vybraný text pomocí složených závorek zadáním "{" v textovém editoru.
+Pokud je povoleno, můžete vybraný text uzavřít do složených závorek zadáním "{" do textového editoru.
 
-**Povolit kulatých závorek**
+**Povolit Surround pomocí závorek**
 
-Pokud je povoleno, je možné ohraničit vybraný text v závorkách zadáním "(" v textovém editoru.
+Pokud je povoleno, můžete vybraný text uzavřít závorkami zadáním ' (' do textového editoru.
 
 ## <a name="see-also"></a>Viz také
 

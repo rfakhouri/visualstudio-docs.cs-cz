@@ -9,38 +9,38 @@ helpviewer_keywords:
 - debug builds
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee2ecb5e501390dfc82d895bf6a81706f4297a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b422b1844ffb30c1c6f2f8fa8845995c98c794e4
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430288"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416846"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Postupy: Správa konfigurací sestavení s použitými nastaveními vývojáře jazyka Visual Basic
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Postupy: Správa konfigurací sestavení s použitím Visual Basic nastavení pro vývojáře
 
-Ve výchozím nastavení jsou všechny možnosti rozšířené sestavení konfigurace skryté při použití nastaveními vývojáře jazyka Visual Basic. Tento článek vysvětluje, jak ručně povolit toto nastavení sestavení.
+Ve výchozím nastavení jsou všechny rozšířené možnosti konfigurace sestavení při použití Visual Basicho nastavení vývojářů skryté. Tento článek vysvětluje, jak ručně povolit tato nastavení sestavení.
 
 ## <a name="enable-advanced-build-configurations"></a>Povolit pokročilé konfigurace sestavení
 
-Ve výchozím nastavení pro vývojáře jazyka Visual Basic Skrýt možnost otevření **nástroje Configuration Manager** dialogové okno a **konfigurace** a **platformy** seznamů v [ Návrhář projektu](../ide/reference/application-page-project-designer-visual-basic.md).
+Ve výchozím nastavení skryje Visual Basic vývojář možnost otevřít dialogové okno **Configuration Manager** a seznam **konfigurací** a **platforem** v [Návrháři projektu](../ide/reference/application-page-project-designer-visual-basic.md).
 
 1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
 
-2. Rozbalte **projekty a řešení**a klikněte na tlačítko **Obecné**.
+2. Rozbalte **projekty a řešení**a klikněte na **Obecné**.
 
     > [!NOTE]
-    > **Obecné** uzlu je viditelný i v případě **zobrazit všechna nastavení** možnost není zaškrtnutá. Pokud chcete zobrazit všechny dostupné možnosti, klikněte na tlačítko **zobrazit všechna nastavení**.
+    > **Obecný** uzel je viditelný i v případě, že není zaškrtnuta možnost **Zobrazit všechna nastavení** . Pokud chcete zobrazit všechny dostupné možnosti, klikněte na **Zobrazit všechna nastavení**.
 
-3. Klikněte na tlačítko **zobrazit pokročilé konfigurace sestavení**.
+3. Klikněte na **Zobrazit pokročilé konfigurace sestavení**.
 
 4. Klikněte na **OK**.
 
-     **Nástroj Configuration Manager** je nyní k dispozici na **sestavení** nabídky a **konfigurace** a **platformy** seznamy jsou viditelné v  **Návrhář projektu**.
+     **Configuration Manager** je nyní k dispozici v nabídce **sestavení** a seznamy **Konfigurace** a **platforma** jsou viditelné v **Návrháři projektu**.
 
 ## <a name="see-also"></a>Viz také:
 

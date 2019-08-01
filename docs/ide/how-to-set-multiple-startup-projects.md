@@ -5,31 +5,32 @@ ms.topic: conceptual
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
-author: gewarren
-ms.author: gewarren
+ms.technology: vs-ide-compile
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4675977872057010e4279f88739981505bf73e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: be2f782d8dcdbf81ca2446a73ac7f13dea4f2ef9
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946867"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416773"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Postupy: Nastavení více projektů po spuštění
 
-Visual Studio můžete zadat více než jeden projekt je spuštěn při spuštění ladicího programu.
+Visual Studio umožňuje určit, jak se spustí více než jeden projekt při spuštění ladicího programu.
 
-## <a name="to-set-multiple-startup-projects"></a>Chcete-li nastavit více projektů po spuštění
+## <a name="to-set-multiple-startup-projects"></a>Nastavení více projektů po spuštění
 
-1. V **Průzkumníka řešení**, vyberte řešení (na nejvyšší uzel).
+1. V **Průzkumník řešení**vyberte řešení (nejvyšší uzel).
 
-2. Vyberte uzel řešení nabídka (kliknutí pravým tlačítkem myši) a pak zvolte **vlastnosti**. **Stránek vlastností řešení** zobrazí se dialogové okno.
+2. Zvolte nabídku kontext uzlu řešení (klikněte pravým tlačítkem myši) a pak zvolte **vlastnosti**. Zobrazí se dialogové okno **stránky vlastností řešení** .
 
-3. Rozbalte **společné vlastnosti** uzel a zvolte **spouštěný projekt**.
+3. Rozbalte uzel **společné vlastnosti** a vyberte možnost **projekt po spuštění**.
 
-4. Zvolte **více projektů po spuštění** možnosti a nastavte příslušné akce.
+4. Vyberte možnost **více projektů po spuštění** a nastavte příslušné akce.
 
 ## <a name="see-also"></a>Viz také:
 

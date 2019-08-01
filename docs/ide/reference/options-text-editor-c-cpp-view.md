@@ -1,5 +1,5 @@
 ---
-title: Zobrazit možnosti, textový Editor, C/C++
+title: Možnosti, textový editor, C/C++, zobrazení
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -8,53 +8,53 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.View
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f4705b6326a3a2968084ecbd1bd385954528017
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15952c8262ea1e8dec1e89816a5887f9bfe9bf6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817762"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461274"
 ---
-# <a name="options-text-editor-cc-view"></a>Zobrazit možnosti, textový Editor, C/C++
+# <a name="options-text-editor-cc-view"></a>Možnosti, textový editor, C/C++, zobrazení
 
-Chcete-li změnit výchozí chování editoru kódu při programování v jazyce C nebo C++, použijte tyto stránky vlastností.
+Pomocí těchto stránek vlastností můžete změnit výchozí chování editoru kódu při programování v jazyce C nebo C++.
 
-Chcete-li získat přístup k této stránky vlastností, zvolte **nástroje** > **možnosti** a rozbalte **textový Editor**, pak **C/C++** a klikněte na tlačítko **Zobrazení**.
+Chcete-li získat přístup k této stránce vlastností, zvolte**možnost** **nástroje** > a rozbalte **Text Editor**, pak **C/C++** a pak zvolte možnost **Zobrazit**.
 
-## <a name="code-squiggles"></a>Podtržení vlnovkou kódu
+## <a name="code-squiggles"></a>Vlnovky kódu
 
-Můžete povolit nebo zakázat následujících nastavení můžete spravovat způsob, jak v textu, který zpracovává editor kódu podtržení vlnovkou pro jazyky C a C++:
+Můžete povolit nebo zakázat následující nastavení pro správu způsobu, jakým textový editor zpracovává vlnovky kódu pro C a C++:
 
-- **Makra v oblastech přeskočeno procházení** – definuje, jak zvýrazněte makra, které jsou uvnitř přeskočené oblastí pomocí databáze procházení, jako jsou makra, jejichž definice zahrnují složené závorky.
+- **Makra v vynechaných oblastech procházení** – definuje, jak zvýraznit makra, která jsou uvnitř vynechaných oblastí v databázi procházení, například makra, jejichž definice obsahují složené závorky.
 
-- **Makra lze převést na constexpr** – definuje, jak zvýrazněte definice maker, které lze převést na `constexpr` definice.
+- **Makra převoditelná na constexpr** – definuje, jak zvýraznit definice maker, které je možné `constexpr` převést na definice.
 
 ## <a name="inactive-code"></a>Neaktivní kód
 
-- **Zobrazit neaktivní bloky** – neaktivní bloky preprocesoru budou odlišně zbarveny.
+- **Zobrazit neaktivní bloky** – neaktivní bloky preprocesoru jsou barevně odlišné.
 
-- **Zakázat krytí neaktivního kódu** -plnou barvu namísto průhlednosti, se používá pro neaktivní bloky kódu.
+- **Zakázat krytí neaktivního kódu** – plná barva namísto neprůhlednosti se používá pro neaktivní bloky kódu.
 
-- **Míra průhlednosti neaktivního kódu v procentech** – stupeň průhlednosti bloků neaktivního kódu.
+- **Neaktivní neprůhlednost kódu** – procento neprůhlednosti pro neaktivní bloky kódu.
 
 ## <a name="miscellaneous"></a>Různé
 
-- **Vytvořit výčet úkolů komentáře** – otevřených zdrojových souborech pro tokeny VS a dejte nám o nich v okně seznamu úkolů.
+- Zobrazení **výčtu úkolů** s komentářem – vyhledá v otevřených zdrojových souborech tokeny vs a nahlásí je v okně seznam úkolů.
 
-- **Zvýraznit odpovídající tokeny** – zvýraznit uzavírající závorky nebo syntaxi, které odpovídají, kde je umístěn kurzor.
+- **Zvýraznit odpovídající tokeny** – zvýrazněte uzavírací závorky nebo syntaxi, které odpovídají místu, kde je kurzor umístěný.
 
 ## <a name="outlining"></a>Sbalování
 
-- **Povolit sbalování** -vstoupit do režimu sbalování po otevření souboru.
+- **Povolit sbalení** – po otevření souboru zadejte režim sbalení.
 
-- **Popisují Pragma region** : automaticky popisují `#pragma` oblasti bloky.
+- **Vytvoření osnovy oblastí pragma** – automatické `#pragma` bloky osnovy oblasti
 
-- **Popisují výkazu bloků** – automaticky sbalit bloky příkazů.
+- **Bloky příkazů osnovy** – automatické bloky příkazů osnovy.
 
 ## <a name="see-also"></a>Viz také:
 
 - [Nastavení možností editoru pro konkrétní jazyk](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refaktoring v jazyce C++ (VC blogu)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [Refaktoring v C++ (blog VC)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)

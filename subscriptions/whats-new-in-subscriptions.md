@@ -7,12 +7,12 @@ ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: b6922e5a2b14186afd1f3fa9294bbb24c2e7d649
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: ba6c17aa6aa1f0a89e53be6b8dba7067e1fdc902
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377945"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493400"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;je nového v předplatných sady Visual Studio
 
@@ -42,5 +42,3 @@ Další informace o výhodách, možnostech a cenách najdete na stránce https:
 Pokud už vaše organizace má Visual Studio s předplatnými GitHub Enterprise, můžete získat další informace o [správě sady Visual Studio s](assign-github.md) předplatnými na GitHubu Enterprise v naší dokumentaci.  
 
 A je to teď!
-
-

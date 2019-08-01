@@ -1,5 +1,6 @@
 ---
 title: Přidání místní proměnné
+description: Vygeneruje místní proměnnou, která nahradí existující výraz. Vyberte výraz, klikněte na něj pravým tlačítkem a vyberte nabídku rychlé akce a refaktoringy, vyberte zavést místní pro (všechny výskyty) výrazu.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -7,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5564752fcecfe2d7a1b2d0bf7632a9cebe3d9353
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43f54072d495cfdd6607ccb033ffd1a1713ad8bb
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540996"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483687"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Přidání místní proměnné v sadě Visual Studio
 
@@ -22,11 +23,11 @@ Tato generace kód platí pro:
 
 - Visual Basic
 
-**Co:** Umožňuje okamžitě Generovat lokální proměnná má nahradit stávající výraz.
+**Co:** Umožňuje ihned vygenerovat místní proměnnou, která nahradí existující výraz.
 
-**Kdy:** Máte kód, který se dá snadno opakovaně použít později byl v místní proměnné.
+**Kdy:** Máte kód, který můžete později snadno znovu použít, pokud byl v místní proměnné.
 
-**Proč:** Může zkopírujte a vložte kód několikrát jeho použití v různých umístěních, ale bylo by lepší provést operaci jednou, uloží výsledek v místní proměnné a používat místní proměnné v rámci.
+**Proč:** Kód můžete zkopírovat a vložit několikrát, abyste ho mohli použít v různých umístěních, ale bylo by lepší provést operaci jednou, uložit výsledek do místní proměnné a použít místní proměnnou v rámci.
 
 ## <a name="how-to"></a>Postupy
 
@@ -43,14 +44,14 @@ Tato generace kód platí pro:
 2. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-      - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
+      - Stisknutím klávesy **Ctrl**+ **.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
       - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-      - Klikněte na ![šroubovák](media/screwdriver.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek zvýrazněný výrazem.
+      - Klikněte na ![screwdriver](media/screwdriver.png) ikona, která se zobrazí na levém okraji, pokud je textový kurzor již na řádku se zvýrazněným výrazem.
 
    ![Zavést místní náhled](media/local-preview-cs.png)
 
-3. Vyberte **zavést lokální proměnnou (všech výskytů) "výrazu"** z rozevírací nabídky.
+3. Z rozevírací nabídky vyberte **zavést místní pro (všechny výskyty) výrazu** .
 
    > [!TIP]
    > Použití **náhled změn** odkaz v dolní části okna náhledu [zobrazíte všechny změny](../../ide/preview-changes.md) , který bude proveden před zvolení požadované možnosti.

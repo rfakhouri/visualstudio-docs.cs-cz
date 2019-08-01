@@ -1,5 +1,6 @@
 ---
 title: Refaktorujte podpis metody
+description: Odeberte nebo změňte pořadí parametrů metody. Klikněte pravým tlačítkem na metodu, vyberte rychlé akce a refaktoring a vyberte změnit signaturu.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -13,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e8332cb8fb39c47f4e46a7d306b2673ff61b9e9
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791112"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483750"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Změna podpisu metody refaktoring
 
@@ -28,11 +29,11 @@ Tento refaktoring platí pro:
 
 - Visual Basic
 
-**Co:** Umožňuje odebrat nebo změnit pořadí parametrů metod.
+**Co:** Umožňuje odebrat nebo změnit pořadí parametrů metody.
 
-**Kdy:** Chcete přesunout nebo odeberte parametr metody, která je aktuálně používána v různých umístěních.
+**Kdy:** Chcete přesunout nebo odebrat parametr metody, který je aktuálně používán v různých umístěních.
 
-**Proč:** Může ručně odebrat a změnit pořadí parametrů a pak najít všechna volání metody a změnit je jeden po druhém, ale které by mohly vést k chybám.  Tento refaktoring nástroj automaticky provede úlohu.
+**Proč:** Můžete ručně odebrat a změnit pořadí parametrů a pak vyhledat všechna volání této metody a změnit je po jednom, ale to může vést k chybám.  Tento refaktoring nástroj automaticky provede úlohu.
 
 ## <a name="how-to"></a>Postupy
 
@@ -50,7 +51,7 @@ Tento refaktoring platí pro:
 
    - **Klávesnice**
       - Stisknutím klávesy **Ctrl + R**, pak **Ctrl + V**.  (Všimněte si, že klávesová zkratka může být jiný platformě, na který profil vyberete.)
-      - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky a vybereme **změnit signaturu** z automaticky otevíraného okna okno náhledu.
+      - Stisknutím klávesy **Ctrl**+ **.** aktivační událost **rychlé akce a Refaktoringy** nabídky a vybereme **změnit signaturu** z automaticky otevíraného okna okno náhledu.
    - **Myši**
       - Vyberte **Upravit > Refaktorovat > pro odebrání parametrů**.
       - Vyberte **Upravit > Refaktorovat > přeskupení parametrů**.

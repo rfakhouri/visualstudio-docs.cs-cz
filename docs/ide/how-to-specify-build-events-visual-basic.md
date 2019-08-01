@@ -1,6 +1,7 @@
 ---
 title: 'Postupy: Určení událostí sestavení (Visual Basic)'
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -9,48 +10,48 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c516b6fc412d393d0528536afe0bb69629c87c44
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549330"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461513"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Postupy: Určení událostí sestavení (Visual Basic)
 
-Událostí sestavení v jazyce Visual Basic můžete použít ke spouštění skriptů, maker nebo jiných akcí jako součást procesu kompilace. Před kompilací; dojde k události před sestavením Po kompilaci dojde k události po sestavení.
+Události sestavení v Visual Basic lze použít ke spouštění skriptů, maker nebo jiných akcí jako součást procesu kompilace. Před kompilací dojde k událostem před sestavením; Po kompilaci dojde k událostem po sestavení.
 
-Sestavení události jsou uvedeny v **události sestavení** dialogovém okně k dispozici **kompilaci** stránku **Návrháře projektu**.
+Události sestavení jsou uvedeny v dialogovém okně **události sestavení** , které jsou k dispozici na stránce **kompilovat** v **Návrháři projektu**.
 
 > [!NOTE]
-> Visual Basic Express nepodporuje zadání událostí sestavení. To je podporováno pouze v plné verze produktu Visual Studio.
+> Visual Basic Express nepodporuje záznam událostí sestavení. To je podporováno pouze v plném produktu Visual Studio.
 
-## <a name="how-to-specify-pre-build-and-post-build-events"></a>Určení události před sestavením a po sestavení
+## <a name="how-to-specify-pre-build-and-post-build-events"></a>Jak zadat události před sestavením a po sestavení
 
-### <a name="to-specify-a-build-event"></a>K určení událostí sestavení
+### <a name="to-specify-a-build-event"></a>Určení události sestavení
 
 1. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
-2. Klikněte na tlačítko **kompilaci** kartu.
+2. Klikněte na kartu **kompilovat** .
 
-3. Klikněte na tlačítko **události sestavení** tlačítko Otevřít **události sestavení** dialogové okno.
+3. Kliknutím na tlačítko **události sestavení** otevřete dialogové okno **události sestavení** .
 
-4. Zadejte argumenty příkazového řádku pro vaši akci před sestavením nebo po sestavení a pak klikněte na tlačítko **OK**.
-
-    > [!NOTE]
-    > Přidat `call` příkaz před vše post-build příkazy, které spouštějí *.bat* soubory. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.
+4. Zadejte argumenty příkazového řádku pro akci před sestavením nebo po sestavení a pak klikněte na **OK**.
 
     > [!NOTE]
-    > Pokud události před sestavením nebo po sestavení úspěšně nedokončí, můžete ukončit sestavení tak, že vaše akce události ukončení s kódem než nula (0), který označuje úspěšné akce.
+    > Přidejte příkaz před všechny příkazy po sestavení, které spouštějí soubory *. bat.* `call` Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Příklad: Jak změnit informace o manifestu pomocí událost po sestavení
+    > [!NOTE]
+    > Pokud událost před sestavením nebo po sestavení není úspěšně dokončena, můžete ukončit sestavení tím, že se akce události ukončí s kódem jiným než nula (0), což označuje úspěšnou akci.
 
-Následující postup ukazuje, jak nastavit minimální verzi operačního systému v aplikaci manifestu pomocí *.exe* příkaz volat z události po sestavení ( *. exe.manifest* soubor v projektu adresář). Minimální verzi operačního systému je složené ze čtyř částí čísla, jako je například 4.10.0.0. K tomu příkaz změní `<dependentOS>` manifestu:
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Příklad: Postup změny informací o manifestu pomocí události po sestavení
+
+Následující postup ukazuje, jak nastavit minimální verzi operačního systému v manifestu aplikace pomocí příkazu *. exe* s názvem z události po sestavení (soubor *. exe. manifest* v adresáři projektu). Minimální verze operačního systému je číslo se čtyřmi částmi, například 4.10.0.0. K tomu příkaz změní `<dependentOS>` část manifestu:
 
 ```xml
 <dependentOS>
@@ -60,19 +61,19 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
 </dependentOS>
 ```
 
-### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Chcete-li vytvořit příkaz .exe změna manifestu aplikace
+### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Vytvoření příkazu. exe pro změnu manifestu aplikace
 
 1. Vytvořte konzolovou aplikaci pro příkaz. V nabídce **Soubor** klikněte na položku **Nový** a potom klikněte na položku **Projekt**.
 
-2. V **nový projekt** v dialogu **jazyka Visual Basic** uzlu, vyberte **Windows** a pak **konzolovou aplikaci** šablony. Pojmenujte projekt `ChangeOSVersionVB`.
+2. V dialogovém okně **Nový projekt** , v uzlu **Visual Basic** vyberte možnost **Windows** a potom šablonu Konzolová **aplikace** . Pojmenujte `ChangeOSVersionVB`projekt.
 
-3. V *Module1.vb*, přidejte následující řádek do jiné `Imports` příkazů v horní části souboru:
+3. V *Module1. vb*přidejte k ostatním `Imports` příkazům v horní části souboru následující řádek:
 
    ```vb
    Imports System.Xml
    ```
 
-4. Přidejte následující kód do `Sub Main`:
+4. Do `Sub Main`tohoto pole přidejte následující kód:
 
    ```vb
    Sub Main()
@@ -115,48 +116,48 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
    End Sub
    ```
 
-   Příkaz přebírá dva argumenty. První argument je cesta k manifestu aplikace (to znamená, složka, ve které proces sestavení vytvoří manifest, obvykle  *\<ProjectName > .publish*). Druhý argument je nová verze operačního systému.
+   Příkaz přijímá dva argumenty. První argument je cesta k manifestu aplikace (to je složka, ve které proces sestavení vytvoří manifest, obvykle  *\<ProjectName >. Publish*). Druhým argumentem je nová verze operačního systému.
 
 5. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.
 
-6. Kopírovat *.exe* soubor do adresáře například *C:\TEMP\ChangeOSVersionVB.exe*.
+6. Zkopírujte soubor *. exe* do adresáře, jako je například *C:\TEMP\ChangeOSVersionVB.exe*.
 
-   V dalším kroku vyvolání tohoto příkazu v události po sestavení změňte manifest aplikace.
+   Dále vyvolejte tento příkaz v události po sestavení pro změnu manifestu aplikace.
 
-### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Chcete-li vyvolat událost po sestavení, chcete-li změnit manifest aplikace
+### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Chcete-li vyvolat událost po sestavení pro změnu manifestu aplikace
 
-1. Vytvoření aplikace Windows pro projekt, který má být publikován. V nabídce **Soubor** klikněte na položku **Nový** a potom klikněte na položku **Projekt**.
+1. Vytvořte aplikaci pro Windows pro projekt, který chcete publikovat. V nabídce **Soubor** klikněte na položku **Nový** a potom klikněte na položku **Projekt**.
 
-2. V **nový projekt** v dialogu **jazyka Visual Basic** uzlu, vyberte **Windows Desktop** a pak **aplikace Windows Forms** šablony. Pojmenujte projekt `VBWinApp`.
-3. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
+2. V dialogovém okně **Nový projekt** v uzlu **Visual Basic** vyberte možnost **Desktop Windows** a potom šablonu **model Windows Forms App** . Pojmenujte `VBWinApp`projekt.
+3. S projektem vybraným v **Průzkumník řešení**v nabídce **projekt** klikněte na **vlastnosti**.
 
-4. V **Návrháře projektu**, přejděte **publikovat** stránku a nastavit **umístění pro publikování** k *C:\TEMP*.
+4. V **Návrháři projektu**klikněte na stránku **publikovat** a nastavte **umístění pro publikování** na *C:\Temp*.
 
-5. Publikování projektu kliknutím **publikovat**.
+5. Publikujte projekt kliknutím na **Publikovat nyní**.
 
-     Soubor manifestu bude sestaven a vložit *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Manifest, klikněte pravým tlačítkem na soubor a pak kliknete na **otevřít v programu**, klikněte na **ze seznamu vyberte program**a potom klikněte na tlačítko **Poznámkový blok**.
+     Soubor manifestu bude sestaven a umístěn do *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Chcete-li zobrazit manifest, klikněte na něj pravým tlačítkem myši a klikněte na příkaz **otevřít**v programu, potom klikněte na **možnost vybrat program v seznamu**a potom klikněte na tlačítko Poznámkový **blok**.
 
-     Hledání v souboru `<osVersionInfo>` elementu. Například může být verze:
+     Vyhledejte v souboru `<osVersionInfo>` element. Například verze může být:
 
     ```xml
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. V **Návrháře projektu**, přejděte na stránku **kompilaci** kartě a klikněte na tlačítko **události sestavení** tlačítko Otevřít **události sestavení** dialogové okno.
+6. V **Návrháři projektu**přejděte na kartu **kompilovat** a kliknutím na tlačítko **události sestavení** otevřete dialogové okno **události sestavení** .
 
-7. V **příkazový řádek události po sestavení** zadejte následující příkaz:
+7. Do pole **příkazový řádek události po sestavení** zadejte následující příkaz:
 
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`
 
-     Při sestavování projektu se tento příkaz změní 5.1.2600.0 minimální verzi operačního systému v manifestu aplikace.
+     Při sestavování projektu tento příkaz změní minimální verzi operačního systému v manifestu aplikace na 5.1.2600.0.
 
-     `$(TargetPath)` – Makro vyjadřuje úplnou cestu ke spustitelnému souboru, který vytváří. Proto *.manifest $(TargetPath)* určí manifestem aplikace vytvořeným v *bin* adresáře. Publikování zkopíruje tento manifest na umístění pro publikování, který jste nastavili dříve.
+     `$(TargetPath)` Makro vyjadřuje úplnou cestu pro spustitelný soubor, který se vytváří. Proto *$ (TargetPath). manifest* určí manifest aplikace vytvořený v adresáři *bin* . Publikováním se tento manifest zkopíruje do umístění pro publikování, které jste nastavili dříve.
 
-8. Znovu publikujte projekt. Přejděte **publikovat** stránky a klikněte na tlačítko **publikovat**.
+8. Publikujte projekt znovu. Přejděte na stránku **publikovat** a klikněte na **publikovat**.
 
-     Zobrazte manifest znovu. Chcete-li zobrazit manifest, přejděte do adresáře publikovat, klikněte pravým tlačítkem na soubor a klikněte na tlačítko **otevřít v programu** a potom **ze seznamu vyberte program**a potom klikněte na **Poznámkový blok**.
+     Zobrazte manifest znovu. Chcete-li zobrazit manifest, přejděte do adresáře Publish, klikněte pravým tlačítkem myši na soubor a klikněte na příkaz **otevřít** v programu a potom **vyberte požadovaný program v seznamu**a klikněte na tlačítko Poznámkový **blok**.
 
-     Verze by nyní mělo:
+     Verze by teď měla číst:
 
     ```xml
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
@@ -164,7 +165,7 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
 
 ## <a name="see-also"></a>Viz také:
 
-- [Stránka kompilovat, Návrhář projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Publikovat stranu, Návrhář projektu](../ide/reference/publish-page-project-designer.md)
-- [Dialogové okno Příkazový řádek události před sestavením události/po sestavení](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Postupy: Určení událostí sestavení (C#)](../ide/how-to-specify-build-events-csharp.md)
+- [Stránka Kompilovat, Návrhář projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Stránka publikování, Návrhář projektu](../ide/reference/publish-page-project-designer.md)
+- [Dialogové okno Příkazový řádek události před sestavením/po sestavení](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [Postupy: Zadat události sestavení (C#)](../ide/how-to-specify-build-events-csharp.md)

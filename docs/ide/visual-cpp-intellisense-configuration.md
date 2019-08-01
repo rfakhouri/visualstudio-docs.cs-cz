@@ -2,81 +2,81 @@
 title: Konfigurace projektu C++ pro IntelliSense
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mblome
+author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fef5f63d8c3fd843ed6f92a313102a9c9879003f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 605ad454d00387d9a9094a518b4afed279fcc190
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715369"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461591"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurace projektu C++ pro IntelliSense
 
-V některých případech můžete potřebovat ručně konfigurovat projektu v jazyce C++ k získání funkce IntelliSense funguje správně. Pro projekty MSBuild (podle souborů .vcxproj) můžete upravit nastavení ve vlastnostech projektu. Pro projekty bez MSBuild upravte nastavení v souboru CppProperties.json v kořenovém adresáři projektu. V některých případech budete muset vytvořit pomocný parametr souboru, který usnadní pochopení definic – makro technologie IntelliSense. Integrované vývojové prostředí sady Visual Studio pomáhá identifikovat a opravit problémy technologie IntelliSense.
+V některých případech může být nutné ručně nakonfigurovat C++ projekt pro správné fungování technologie IntelliSense. Pro projekty MSBuild (na základě souborů. vcxproj) můžete upravit nastavení ve vlastnostech projektu. Pro projekty jiné než MSBuild upravíte nastavení v souboru CppProperties. JSON v kořenovém adresáři projektu. V některých případech může být nutné vytvořit soubor pokynů, který IntelliSense pomůže pochopit definice maker. Integrované vývojové prostředí sady Visual Studio vám pomůže identifikovat a opravit problémy IntelliSense.
 
 ## <a name="single-file-intellisense"></a>IntelliSense s jedním souborem
 
-Při otevření souboru, který není zahrnutý v projektu sady Visual Studio poskytuje podporu technologie IntelliSense, ale ve výchozím nastavení jsou uvedeny žádné podtržení vlnovkou u chyb. Pokud **navigační panel** říká *různé soubory*, potom to pravděpodobně vysvětluje, proč se nezobrazují podtržení vlnovkou u chyb v rámci nesprávný kód nebo proč preprocesor makro není definované.
+Když otevřete soubor, který není zahrnutý v projektu, Visual Studio poskytuje podporu technologie IntelliSense, ale ve výchozím nastavení se nezobrazují žádné chybové vlnovky. Pokud **navigační panel** říká *různé soubory*, pak to pravděpodobně vysvětlí, proč se nezobrazuje Vlnová chyba v nesprávném kódu, nebo proč není definováno makro preprocesoru.
 
-## <a name="check-the-error-list"></a>Najdete v seznamu chyb
+## <a name="check-the-error-list"></a>Podívejte se na Seznam chyb
 
-Pokud soubor není otevřen v režimu jednoho souboru a IntelliSense nepracuje správně, je prvním místem, kde můžete zkontrolovat okna Seznam chyb. Chcete-li zobrazit všechny chyby technologie IntelliSense pro aktuální zdrojový soubor spolu s všechny soubory zahrnuté záhlaví, zvolte **sestavení + IntelliSense** v rozevíracím seznamu:
+Pokud soubor není otevřen v režimu s jedním souborem a technologie IntelliSense nepracuje správně, první místo, kde se má kontrolovat, je Seznam chyb okno. Chcete-li zobrazit všechny chyby technologie IntelliSense pro aktuální zdrojový soubor společně se všemi zahrnutými hlavičkými soubory, v rozevíracím seznamu vyberte možnost **sestavení + IntelliSense** :
 
-![VC ++ IntelliSense v seznamu chyb](media/vcpp-intellisense-error-list.png)
+![VC + + IntelliSense v Seznam chyb](media/vcpp-intellisense-error-list.png)
 
-Technologie IntelliSense produkuje maximálně 1000 chyby. Pokud existuje více než 1000 chyby v souborech hlaviček, které jsou zahrnuté ve zdrojovém souboru, zdrojový soubor zobrazuje pouze jediné chyby vlnovku na začátku zdrojového souboru.
+Technologie IntelliSense generuje maximálně 1000 chyb. Pokud v hlavičkových souborech obsažených ve zdrojovém souboru dojde k více než 1000 chybám, pak zdrojový soubor zobrazí jenom jednu chybu vlnovkou na začátku ve zdrojovém souboru.
 
-## <a name="ensure-include-paths-are-correct"></a>Zajištění #include správnost cesty
+## <a name="ensure-include-paths-are-correct"></a>Ujistěte se, že jsou cesty #include správné.
 
 ### <a name="msbuild-projects"></a>Projekty MSBuild
 
-Je-li spustit vaše sestavení mimo rozhraní IDE sady Visual Studio a sestavení jsou úspěšné, ale technologie IntelliSense je nesprávná, je možné, že příkazový řádek je mimo rozsah synchronizace s nastavení projektu pro jednu nebo několik konfigurací. Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a ujistěte se, že všechny **#include** cesty jsou správné pro aktuální konfiguraci a platformu. Pokud cesty jsou stejné ve všech konfigurací a platforem, můžete si vybrat **všechny konfigurace** a **všechny platformy** a pak ověřte správnost cesty.
+Pokud spustíte vaše sestavení mimo prostředí Visual Studio IDE a vaše sestavení jsou úspěšná, ale technologie IntelliSense není správná, je možné, že se příkazový řádek nesynchronizuje s nastavením projektu pro jednu nebo více konfigurací. V **Průzkumník řešení** klikněte pravým tlačítkem myši na uzel projektu a ujistěte se, že všechny cesty **#include** jsou správné pro aktuální konfiguraci a platformu. Pokud jsou cesty identické ve všech konfiguracích a platformách, můžete vybrat **všechny konfigurace** a **všechny platformy** a pak ověřit, jestli jsou cesty správné.
 
-![VC ++ adresáře souborů k zahrnutí](media/vcpp-intellisense-include-paths.png)
+![Adresáře zahrnutí VC + +](media/vcpp-intellisense-include-paths.png)
 
- Pokud chcete zobrazit aktuální hodnoty pro makra sestavení, jako **VC_IncludePath**, vyberte řádek adresáře souborů k zahrnutí a klikněte na rozevírací nabídku na pravé straně. Klikněte na tlačítko  **\<Upravit >** a klikněte na **makra** tlačítko.
+ Chcete-li zobrazit aktuální hodnoty pro makra sestavení, jako je například **VC_IncludePath**, vyberte řádek zahrnout adresáře a klikněte na rozevírací seznam na pravé straně. Pak zvolte  **\<Upravit >** a klikněte na tlačítko **makra** .
 
 ### <a name="makefile-projects"></a>Projekty makefile
 
-Pro projekty souborů pravidel, které jsou založeny na šabloně NMake projektu, zvolte **NMake** v levém podokně a pak zvolte **cesty hledání zahrnutí** pod **IntelliSense** kategorie:
+Pro projekty makefile, které jsou založeny na šabloně projektu NMake, zvolte v levém podokně možnost **NMAKE** a v kategorii **IntelliSense** zvolte možnost **zahrnout cestu pro vyhledávání** :
 
-![Cesty zahrnutí projektu souboru pravidel](media/vcpp-intellisense-makefile-include-paths.png)
+![Projekt makefile obsahuje cesty](media/vcpp-intellisense-makefile-include-paths.png)
 
-### <a name="open-folder-projects"></a>Otevřete složku projekty
+### <a name="open-folder-projects"></a>Projekty otevřené složky
 
-Pro projekty CMake, ujistěte se, že #include cesty jsou správně zadané u všech konfigurací v soubor CMakeLists.txt. Ostatní typy projektů může vyžadovat souboru CppProperties.json. Další informace najdete v tématu [konfigurace technologie IntelliSense s CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Zkontrolujte správnost cesty pro každou konfiguraci, která je definována v souboru.
+V případě projektů CMake se ujistěte, že jsou správně zadané #include cesty pro všechny konfigurace v CMakeLists. txt. Jiné typy projektů mohou vyžadovat soubor CppProperties. JSON. Další informace najdete v tématu [Konfigurace IntelliSense pomocí CppProperties. JSON](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Ujistěte se, že cesty jsou správné pro každou konfiguraci, která je definována v souboru.
 
-Pokud je v souboru CppProperties.json chybu syntaxe, IntelliSense v souborech ovlivněné bude nepřesná. Visual Studio se zobrazí chyby v okně výstup.
+Pokud v souboru CppProperties. JSON dojde k syntaktické chybě, IntelliSense v ovlivněných souborech bude nesprávný. V aplikaci Visual Studio se zobrazí chyba v okno Výstup.
 
-## <a name="tag-parser-issues"></a>Problémy analyzátoru značky
+## <a name="tag-parser-issues"></a>Problémy analyzátoru značek
 
-Analyzátor značek je "přibližné" analyzátor jazyka C++, který se používá k procházení a navigace. Je velmi rychlé zpracování, ale nebude pokoušet o úplně pochopili konstrukci kódu pro každý.
+Analyzátor značek je "nepřibližný" C++ analyzátor, který se používá pro procházení a navigaci. Je velmi rychlé, ale nepokouší se úplně pochopit každou konstrukci kódu.
 
-Například nevyhodnocuje makra preprocesoru, a proto ho může správně analyzovat kód, který značně používá z nich. Když analyzátor značek, zaznamená konstrukce neznámého kódu, přeskočte tento kód celé oblasti.
+Například nevyhodnotí makra preprocesoru, a proto může nesprávně analyzovat kód, který je pro něj těžké použít. Když analyzátor značek narazí na neznámou konstrukci kódu, může přeskočit tuto celou oblast kódu.
 
-Existují dva běžné způsoby, ve kterých se tyto potíže projeví v sadě Visual Studio:
+Existují dva běžné způsoby, jak tyto problémy manifestují v aplikaci Visual Studio:
 
-1. Na navigačním panelu se zobrazí vnitřní – makro, byla přeskočena aktuální definice funkce:
+1. Pokud navigační panel zobrazuje nejvnitřnější makro, aktuální definice funkce byla vynechána:
 
-   ![Analyzátor značek přeskočí definice funkce](media/vcpp-intellisense-tag-parser-macro.png)
+   ![Analyzátor značek přeskočí definici funkce.](media/vcpp-intellisense-tag-parser-macro.png)
 
-1. Rozhraní IDE, nabídne vám vytvoření definice funkce pro funkci, která je už definovaný:
+1. Rozhraní IDE nabízí vytvoření definice funkce pro funkci, která je již definována:
 
-   ![Analyzátor značek nabízí k definování stávající – funkce](media/vcpp-intellisense-tag-parser-function.png)
+   ![Nabídky analyzátoru značek pro definování existující funkce](media/vcpp-intellisense-tag-parser-function.png)
 
-Chcete-li tyto druhy problémů vyřešit, přidejte do ní soubor **cpp.hint** do kořenového adresáře řešení. Další informace najdete v tématu [soubory pokynů](/cpp/build/reference/hint-files).
+Chcete-li opravit tyto druhy problémů, přidejte soubor s názvem **cpp. Hint** do kořenové složky adresáře řešení. Další informace najdete v tématu [soubory pokynů](/cpp/build/reference/hint-files).
 
-Chyby analyzátoru značek joinkind **seznam chyb** okna.
+V okně **Seznam chyb** se zobrazí chyby analyzátoru značek.
 
-## <a name="validate-project-settings-with-diagnostic-logging"></a>Ověření nastavení projektu pomocí protokolování diagnostiky
+## <a name="validate-project-settings-with-diagnostic-logging"></a>Ověření nastavení projektu pomocí diagnostického protokolování
 
-Chcete-li zkontrolovat, zda kompilátor technologie IntelliSense je pomocí možnosti kompilátoru správný, včetně cesty zahrnutí a makra preprocesoru, zapněte diagnostické protokolování z IntelliSense příkazové řádky v **nástroje > Možnosti > textový Editor > C/C++ > Upřesnit > Diagnostické protokolování**. Nastavte **povolit protokolování** na hodnotu True, **úrovně protokolování** do 5 (nejpodrobnější), a **protokolování filtru** 8 (protokolování technologie IntelliSense).
+Chcete-li ověřit, zda kompilátor technologie IntelliSense používá správné možnosti kompilátoru, včetně zahrnutí cest a makra preprocesoru, zapněte diagnostické protokolování příkazového řádku technologie IntelliSense v **nástrojích > možnosti > textovýC++ Editor > C/> Advanced > Protokolování diagnostiky**. Nastavte **Povolit protokolování** na hodnotu true, **úroveň protokolování** na 5 (nejvíc verbose) a **Filtr protokolování** na 8 (protokolování IntelliSense).
 
-V okně Výstup se teď zobrazí příkazové řádky, které jsou předány kompilátoru technologie IntelliSense. Tady je ukázkový výstup:
+Okno Výstup nyní zobrazí příkazové řádky, které jsou předány kompilátoru technologie IntelliSense. Tady je ukázkový výstup:
 
 ```output
  [IntelliSense] Configuration Name: Debug|Win32
@@ -93,21 +93,21 @@ V okně Výstup se teď zobrazí příkazové řádky, které jsou předány kom
  /Yustdafx.h
 ```
 
-Tyto informace vám můžou pomoct porozumět proč poskytuje nepřesné informace technologie IntelliSense. Pokud adresář vkládaných váš projekt obsahuje třeba **$(MyVariable) \Include**a zobrazí se protokol diagnostiky **/I\Include** jako cestu k zahrnutí, znamená to, že **$(MyVariable)** nebyl vyhodnocen a byl odebrán z konečné cesty vložených souborů.
+Tyto informace vám pomohou pochopit, proč technologie IntelliSense poskytuje nepřesné informace. Například Pokud adresář include vašeho projektu obsahuje **$ (MojePromenna) \Include**a diagnostický protokol ukazuje **/I\Include** jako cestu include, znamená to, že **$ (MojePromenna)** se nevyhodnotila a byla odebrána z poslední cesty include. .
 
-## <a name="about-the-intellisense-build"></a>Informace o sestavení technologie IntelliSense
+## <a name="about-the-intellisense-build"></a>O sestavení IntelliSense
 
-Visual Studio používá vyhrazené kompilátor C++ k vytváření a údržbě databáze, které využívá všechny funkce technologie IntelliSense. Pro synchronizaci databáze IntelliSense s kódem, Visual Studio automaticky spustí sestavení jenom IntelliSense jako úlohy na pozadí v reakci na určité změny v nastavení projektu nebo zdrojové soubory.
+Visual Studio používá vyhrazený C++ kompilátor k vytvoření a údržbě databáze, která je základem všech funkcí technologie IntelliSense. Aby byla databáze IntelliSense stále synchronizovaná s kódem, Visual Studio automaticky spouští pouze IntelliSense sestavení jako úlohy na pozadí v reakci na určité změny provedené v nastavení projektu nebo ve zdrojových souborech.
 
-Nicméně v některých případech nemusí sady Visual Studio aktualizace databáze IntelliSense včas. Například při spuštění **o přijetí změn git** nebo **git checkout** příkazu, Visual Studio může trvat až hodinu zjišťovat změny v souborech. Můžete vynutit opětovné prohledání všech souborů v řešení kliknutím pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a zvolíte **znovu prohledat řešení**.
+V některých případech ale Visual Studio nemusí databázi IntelliSense včas aktualizovat. Pokud například spustíte příkaz **Git Pull** nebo **Git** Replaced, může Visual Studio trvat až hodinu, než zjistí změny v souborech. Opětovnou kontrolu všech souborů v řešení můžete vynutit tak, že kliknete pravým tlačítkem myši na uzel projektu v **Průzkumník řešení** a zvolíte možnost **znovu prohledat řešení**.
 
-## <a name="troubleshooting-intellisense-build-failures"></a>Řešení potíží se selháním sestavení technologie IntelliSense
+## <a name="troubleshooting-intellisense-build-failures"></a>Řešení potíží při vytváření sestavení IntelliSense
 
-Výsledkem sestavování technologie IntelliSense není binární soubory, ale stále může selhat. Jednou z možných příčin selhání je vlastní .props nebo .targets souborů. V sadě Visual Studio 2017 verze 15.6 a novější pouze technologie IntelliSense sestavení chyby se Zaprotokolují v okně výstup. Chcete-li zobrazit, nastavte **zobrazit výstup z:** k **řešení**:
+Sestavení technologie IntelliSense nevytváří binární soubory, ale přesto může selhat. Jednou z možných příčin selhání jsou vlastní soubory. props nebo. targets. V aplikaci Visual Studio 2017 verze 15,6 a novější jsou chyby sestavení pouze technologie IntelliSense protokolovány do okna výstup. Pokud je chcete zobrazit, nastavte **Zobrazit výstup z** do **řešení**:
 
-![Řešení chyb v okně Výstup](media/vcpp-intellisense-output-window.png)
+![Okno výstup pro chyby řešení](media/vcpp-intellisense-output-window.png)
 
-Chybová zpráva může dát pokyn k povolení trasování návrhu:
+Chybová zpráva vám může dát pokyn k povolení trasování v době návrhu:
 
 ```output
  error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
@@ -116,9 +116,9 @@ Chybová zpráva může dát pokyn k povolení trasování návrhu:
  Visual Studio to investigate.
 ```
 
-Pokud jste nastavili proměnnou prostředí TRACEDESIGNTIME na hodnotu true a restartujte aplikaci Visual Studio, zobrazí se soubor protokolu v adresáři % TEMP %, která vám může pomoci diagnostikovat selhání sestavení.
+Pokud nastavíte proměnnou prostředí TRACEDESIGNTIME na hodnotu true a restartujete sadu Visual Studio, zobrazí se soubor protokolu v adresáři% TEMP%, který může vést k diagnostice selhání sestavení.
 
-Další informace o proměnnou prostředí TRACEDESIGNTIME najdete v tématu [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) a [Common Project System](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Informace v těchto článcích jsou relevantní pro projekty C++.
+Další informace o proměnné prostředí TRACEDESIGNTIME naleznete v tématu [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) a [Common Project System](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Informace v těchto článcích jsou relevantní pro C++ projekty.
 
 ## <a name="see-also"></a>Viz také
 

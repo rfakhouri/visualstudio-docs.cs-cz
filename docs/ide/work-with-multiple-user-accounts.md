@@ -1,119 +1,131 @@
 ---
 title: Práce s několika uživatelskými účty
-ms.date: 12/10/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581837"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483555"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Práce s několika uživatelskými účty
 
-Pokud máte více účtů Microsoft a/nebo pracovní nebo školní účty, můžete ho přidat vše do sady Visual Studio, takže mají přístup k prostředkům z libovolného účtu bez nutnosti přihlásit se k němu samostatně. Služby Azure, služby Application Insights, Azure DevOps a Office 365 všechny podporují moderní prostředí přihlásit.
+Pokud máte více účtů Microsoft a/nebo pracovní nebo školní účty, můžete je přidat do sady Visual Studio, abyste měli přístup k prostředkům z libovolného účtu, aniž byste se museli přihlašovat samostatně. Služby Azure, Application Insights, Azure DevOps a Office 365 podporují moderní možnosti přihlašování.
 
-Po přidání více účtů na jednom počítači, že sadu účtů při roamingu s vámi, pokud se přihlásíte k sadě Visual Studio na jiném počítači.
+Po přidání více účtů na jednom počítači se tato sada účtů s vámi přechází, pokud se přihlásíte k sadě Visual Studio v jiném počítači.
 
 > [!NOTE]
-> I když se názvy účtů přesouvat, přihlašovací údaje nejsou. Budete vyzváni k zadání přihlašovacích údajů pro tyto účty poprvé pokusí použít svoje prostředky na nový počítač.
+> I když se názvy účtů roamingují, přihlašovací údaje ne. Při prvním pokusu o použití prostředků na novém počítači se zobrazí výzva k zadání přihlašovacích údajů pro tyto účty.
 
-Tento článek ukazuje, jak přidat více účtů sady Visual Studio. Se také dozvíte, jak zobrazit prostředky, které jsou přístupné z těchto účtů na místech, jako **přidat připojenou službu** dialogového okna, **Průzkumníka serveru**, a **Team Exploreru**.
+V tomto článku se dozvíte, jak přidat více účtů do sady Visual Studio. Také se dozvíte, jak zobrazit prostředky dostupné z těchto účtů na místech, jako je dialogové okno **Přidat připojenou službu** , **Průzkumník serveru**a **Team Explorer**.
 
 ## <a name="sign-in-to-visual-studio"></a>Přihlášení k sadě Visual Studio
 
-Přihlaste se do sady Visual Studio pomocí účtu Microsoft nebo účtu organizace. Měli byste vidět vaše uživatelské jméno se zobrazí v horním okraji okna, podobně jako tato:
+Přihlaste se k aplikaci Visual Studio pomocí účet Microsoft nebo účtu organizace. Mělo by se zobrazit vaše uživatelské jméno v horním rohu okna, podobně jako v tomto příkladu:
 
-![Aktuálně přihlášeného uživatele](../ide/media/vs2015_username.png)
+![Aktuálně přihlášený uživatel](../ide/media/vs2015_username.png)
 
-### <a name="access-your-azure-account-in-server-explorer"></a>Přístup k účtu Azure v Průzkumníku serveru
+### <a name="access-your-azure-account-in-server-explorer"></a>Přístup k účtu Azure v Průzkumník serveru
 
-Stisknutím klávesy **Ctrl**+**Alt**+**S** otevřete **Průzkumníka serveru**. Rozbalte **Azure** uzel a Všimněte si, že obsahuje prostředky, které jsou k dispozici v účtu Azure, který je spojen s účtem, který jste použili pro přihlášení k sadě Visual Studio. Vypadá podobně jako na následujícím obrázku:
+Stisknutím **kombinace kláves CTRL**+**ALT**+**s** otevřete **Průzkumník serveru**. Rozbalte uzel **Azure** a Všimněte si, že obsahuje prostředky dostupné v účtu Azure, který je přidružený k účtu, který jste použili k přihlášení do sady Visual Studio. Vypadá podobně jako na následujícím obrázku:
 
-![Průzkumník serveru s rozbalený uzel Azure](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
+![Průzkumník serveru s rozbaleným uzlem Azure](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
-Při prvním použití sady Visual Studio na konkrétní zařízení, dialogové okno se zobrazuje jenom předplatná zaregistrovaný pod účtem, který jste přihlášení. Mít přístup k prostředkům pro všechny vaše účty přímo z **Průzkumníka serveru** kliknutím pravým tlačítkem na **Azure** uzlu, zvolíte **spravovat a filtrovat předplatná**a následným přidáním vašich účtů z ovládacího prvku pro výběr účtu. Jiný účet, můžete pak v případě potřeby klikněte na šipku dolů vyberte ze seznamu účtů a. Po výběru účtu, si můžete přizpůsobit, které odběry pod tímto účtem zobrazíte v **Průzkumníka serveru**.
+Při prvním použití sady Visual Studio na jakémkoli konkrétním zařízení zobrazí dialog pouze odběry registrované pod účtem, pomocí kterého jste se přihlásili. K prostředkům pro libovolný z vašich dalších účtů můžete přistupovat přímo z **Průzkumník serveru** tak, že kliknete pravým tlačítkem na uzel **Azure** , zvolíte **Spravovat a filtrovat předplatná**a pak přidáte svoje účty z ovládacího prvku pro výběr účtu. Kliknutím na šipku dolů a výběrem ze seznamu účtů pak můžete vybrat jiný účet, a to v případě potřeby. Po výběru účtu můžete přizpůsobit, která předplatná se v rámci tohoto účtu mají zobrazit v **Průzkumník serveru**.
 
-![Správa předplatných Azure dialogového okna](../ide/media/vs2015_manage_subs.png)
+![Dialogové okno Správa předplatných Azure](../ide/media/vs2015_manage_subs.png)
 
-Při příštím otevření **Průzkumníka serveru**, se zobrazí prostředky pro dané předplatné.
+Při příštím otevření **Průzkumník serveru**se zobrazí prostředky pro toto předplatné.
 
-### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Přístup k vašemu účtu Azure přes dialogové okno Přidat připojenou službu
+### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Přístup k účtu Azure prostřednictvím dialogu Přidat připojenou službu
 
 1. Otevřete existující projekt nebo vytvořte nový projekt.
 
-1. Zvolte uzel projektu v **Průzkumníka řešení**a pak klikněte pravým tlačítkem myši a zvolte možnost **přidat** > **připojenou službu**.
+1. Zvolte uzel projektu v **Průzkumník řešení**a potom klikněte pravým tlačítkem a zvolte **Přidat** > **připojenou službu**.
 
-   **Přidat připojenou službu** průvodce se zobrazí a zobrazí seznam služeb v účtu Azure, který je spojen s vaším účtem přizpůsobení sady Visual Studio. Není nutné samostatně přihlášení k Azure. Však nutné se přihlásit na jiné účty při prvním pokusu o přístup k jejich prostředkům z různých počítačů.
+   Zobrazí se průvodce **Přidat připojenou službu** a zobrazí se seznam služeb v účtu Azure, který je přidružený k vašemu účtu přizpůsobení sady Visual Studio. Nemusíte se přihlašovat nezávisle na Azure. Při prvním pokusu o přístup k prostředkům z jiného počítače se ale budete muset přihlásit k ostatním účtům.
 
 ### <a name="access-azure-active-directory-in-a-web-project"></a>Přístup k Azure Active Directory ve webovém projektu
 
-Azure Active Directory (AAD) umožňuje podporu pro koncového uživatele jednotné přihlašování do webové aplikace ASP.NET MVC nebo ověřování AD v rámci služeb webových rozhraní API. Ověření domény se liší od účtu ověřování jednotlivých uživatelů. Uživatelé, kteří mají přístup k vaší doméně služby Active Directory můžete použít své stávající účty AAD pro připojení k webovým aplikacím. Aplikace Office 365 můžete také použít ověřování domény.
+Azure Active Directory (AAD) umožňuje podporu jednotného přihlašování pro koncové uživatele ve webových aplikacích ASP.NET MVC nebo ověřování AD ve službách webového rozhraní API. Ověřování domény se liší od ověřování jednotlivých uživatelských účtů. Uživatelé, kteří mají přístup k vaší doméně služby Active Directory, můžou používat své stávající účty AAD pro připojení k vašim webovým aplikacím. Aplikace Office 365 mohou také používat ověřování v doméně.
 
-Chcete-li zobrazit toto v akci, vytvořte nový **webová aplikace ASP.NET** projektu. V **nový projekt ASP.NET** dialogovém okně zvolte **změna ověřování**. Průvodce ověřením se zobrazí a můžete zvolit jaký typ ověřování, který má použít v aplikaci.
+::: moniker range="vs-2017"
 
-![Změna ověřování dialogové okno pro ASP.NET](../ide/media/vs2015_change_authentication.png)
+Chcete-li se podívat v akci, vytvořte nový projekt **ASP.NET Core webové aplikace** . V dialogovém okně **Nová webová aplikace ASP.NET Core** vyberte šablonu **Webová aplikace** a pak zvolte možnost **změnit ověřování**.
 
-Další informace o různých druzích ověřování v technologii ASP.NET, naleznete v tématu [webové projekty ASP.NET vytvořit v sadě Visual Studio](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#authentication-methods).
+::: moniker-end
 
-### <a name="access-your-azure-devops-organization"></a>Přístup k vaší organizaci Azure DevOps
+::: moniker range=">=vs-2019"
 
-V hlavní nabídce zvolte **týmu** > **spravovat připojení** otevřít **Team Explorer – připojit** okna. Zvolte **spravovat připojení** > **připojit se k projektu**. V **připojit k projektu** dialogového okna, vyberte projekt v seznamu (nebo vyberte **přidat Server TFS** a zadejte adresu URL k vašemu serveru). Při výběru adresu URL jste přihlášeni bez nutnosti znovu zadat přihlašovací údaje.
+Chcete-li se podívat v akci, vytvořte nový projekt **ASP.NET Core webové aplikace** . Na stránce **vytvořit novou webovou aplikaci ASP.NET Core** zvolte šablonu **Webová aplikace** a pak zvolte možnost **změnit** v části **ověřování**.
 
-Další informace najdete v tématu [připojit k projekty v Team Exploreru](connect-team-project.md).
+::: moniker-end
 
-## <a name="add-an-additional-account-to-visual-studio"></a>Přidat další účet se sadou Visual Studio
+Zobrazí se dialogové okno **změnit ověřování** , kde můžete zvolit druh ověřování, které se má použít ve vaší aplikaci.
 
-Chcete-li přidat další účet se sadou Visual Studio:
+![Dialog pro změnu ověřování pro ASP.NET](../ide/media/vs2015_change_authentication.png)
 
-1. Zvolte **souboru** > **nastavení účtu**.
+Další informace o různých druzích ověřování v ASP.NET naleznete v tématu [Create ASP.NET Web Projects in Visual Studio](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#authentication-methods).
 
-1. V části **všechny účty**, zvolte **přidat účet**.
+### <a name="access-your-azure-devops-organization"></a>Přístup ke svojí organizaci Azure DevOps
 
-1. Na **přihlásit ke svému účtu** stránky, vyberte účet nebo zvolte **použijte jiný účet**. Postupujte podle zobrazených výzev a zadejte nové přihlašovací údaje účtu.
+V hlavní nabídce vyberte možnost **Team** > Manage Connections (**Spravovat připojení** ) a otevřete okno **Team Explorer – připojit** . Vyberte možnost **Spravovat připojení** > **připojit k projektu**. V dialogovém okně **připojit k projektu** vyberte v seznamu projekt (nebo vyberte **Přidat server TFS** a zadejte adresu URL k serveru). Když vyberete adresu URL, jste přihlášeni bez nutnosti znovu zadat přihlašovací údaje.
 
-(Volitelné) Teď můžete přejít na **Průzkumníka serveru** a podívejte se služby Azure spojené s účtem, který jste právě přidali. V **Průzkumníka serveru**, klikněte pravým tlačítkem na **Azure** uzlu a zvolte **spravovat a filtrovat předplatná**. Zvolte nový účet kliknutím na šipku rozevíracího seznamu vedle aktuálního účtu a klikněte na tlačítko odběry, které chcete zobrazit v **Průzkumníka serveru**. Měli byste vidět všechny služby, které jsou přidružené k zadanému odběru. I v případě, že jste se přihlásili není aktuálně do sady Visual Studio pomocí druhého účtu, jste přihlášeni k tomuto účtu služby a prostředky. Totéž platí pro **projektu** > **přidat připojenou službu** a **týmu** > **připojit k Team Foundation Server**.
+Další informace najdete v tématu [připojení k projektům v Team Explorer](connect-team-project.md).
 
-### <a name="add-an-account-using-device-code-flow"></a>Přidání účtu služby pomocí toku kódu zařízení
+## <a name="add-an-additional-account-to-visual-studio"></a>Přidat další účet do sady Visual Studio
 
-V některých případech se nelze přihlásit nebo přidat účet způsobem regulárních. Tomu může dojít, pokud je aplikace Internet Explorer blokovaný z nějakého důvodu, nebo pokud se vaše síť za bránou firewall. Chcete-li tento problém obejít, můžete povolit *toku kódu zařízení* přidat účet nebo donutit vašeho účtu. Tok kódu při zařízení umožní se přihlásit pomocí jiného prohlížeče nebo na jiném počítači&mdash;fyzický nebo virtuální (VM).
+Přidání dalšího účtu do sady Visual Studio:
 
-K přihlášení pomocí toku kódu zařízení:
+1. Vyberte**Nastavení účtu** **souboru** > .
 
-1. Otevřít [ **účty** ](reference/accounts-environment-options-dialog-box.md) stránky **nástroje** > **možnosti** > **prostředí**a pak vyberte **povolit zařízení tok kódu při přidávání nebo opětovné autentizace účet**. Zvolte **OK** ukončíte možnosti stránky.
+1. V části **všechny účty**vyberte **Přidat účet**.
 
-1. Zvolte **souboru** > **nastavení účtu** otevřete stránku pro správu účtu.
+1. Na stránce **Přihlásit se k účtu** vyberte účet nebo zvolte **použít jiný účet**. Postupujte podle výzev a zadejte nové přihlašovací údaje k účtu.
 
-1. Zvolte **přidat účet** pod **všechny účty**.
+Volitelné Nyní můžete přejít na **Průzkumník serveru** a zobrazit služby Azure přidružené k účtu, který jste právě přidali. V **Průzkumník serveru**klikněte pravým tlačítkem na uzel **Azure** a vyberte **Spravovat a filtrovat předplatná**. Kliknutím na šipku rozevíracího seznamu vedle aktuálního účtu zvolte nový účet a pak zvolte, která předplatná chcete zobrazit v **Průzkumník serveru**. Měly by se zobrazit všechny služby přidružené k zadanému předplatnému. I když jste se ještě přihlásili do sady Visual Studio s druhým účtem, jste přihlášeni ke službám a prostředkům tohoto účtu. Totéž platí pro**Přidání připojené služby** a připojení **týmu** > **k Team Foundation Server do** **projektu** > .
 
-   Dialogové okno zobrazí adresu URL a kód vložte do webového prohlížeče.
+### <a name="add-an-account-using-device-code-flow"></a>Přidání účtu pomocí toku kódu zařízení
 
-   ![Adresa URL toku zařízení kódu a kódu](media/work-with-multiple-user-accounts/device-login-code.png)
+V některých případech se nemůžete běžným způsobem přihlašovat nebo přidat účet. K tomu může dojít, pokud je z nějakého důvodu blokovaný Internet Explorer nebo pokud je vaše síť za bránou firewall. Pokud chcete tento problém obejít, můžete povolit *tok kódu zařízení* a přidat účet nebo znovu ověřit váš účet. Tok kódu zařízení vám umožňuje přihlásit se pomocí jiného prohlížeče nebo na jiný počítač&mdash;buď jako fyzický nebo virtuální (VM).
 
-1. Stisknutím klávesy **Ctrl**+**C** kopírovat text z dialogového okna a pak zvolte **OK** zavřete dialogové okno. Vložte text, který jste zkopírovali do textového editoru, jako je například Poznámkový blok. Díky tomu vás snadnější zkopírovat kód v dalším kroku.
+Přihlášení pomocí toku kódu zařízení:
 
-1. Přejděte na adresu URL pro přihlášení zařízení na počítači nebo webový prohlížeč, kterou chcete použít k přihlášení k sadě Visual Studio a potom vložte nebo zadejte kód, který jste zkopírovali do pole **kód**.
+1. Otevřete stránku [**účty**](reference/accounts-environment-options-dialog-box.md) v nabídce **nástroje** > **Možnosti** > **prostředí**a pak **při přidávání nebo opětovném ověřování účtu vyberte Povolit tok kódu zařízení**. Kliknutím na **tlačítko OK** zavřete stránky možnosti.
 
-   **Sady Visual Studio** název aplikace by se měla zobrazit další dolů na stránce.
+1. Zvolením**Možnosti účet** **souboru** > otevřete stránku Správa účtů.
 
-1. V části **sady Visual Studio**, zvolte **pokračovat**.
+1. V části **všechny účty**vyberte **Přidat účet** .
 
-   ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
+   V dialogovém okně se zobrazí adresa URL a kód pro vložení do webového prohlížeče.
 
-1. Postupujte podle zobrazených výzev a zadejte svoje přihlašovací údaje.
+   ![Adresa URL a kód toku kódu zařízení](media/work-with-multiple-user-accounts/device-login-code.png)
 
-   Zobrazí se stránka s upozorněním, že už jste se přihlašovali do sady Visual Studio na vašem zařízení, a že můžete zavřít okno prohlížeče.
+1. Stisknutím klávesy **CTRL**+**C** zkopírujte text dialogového okna a kliknutím na **tlačítko OK** zavřete dialogové okno. Vložte zkopírovaný text do textového editoru, jako je například Poznámkový blok. To usnadňuje kopírování kódu v dalším kroku.
 
-   ![Visual Studio přihlášení prostřednictvím prohlížeče dokončení](media/work-with-multiple-user-accounts/sign-in-browser-complete.png)
+1. V počítači nebo webovém prohlížeči přejděte na adresu URL pro přihlášení k zařízení, které chcete použít k přihlášení do sady Visual Studio, a vložte nebo zadejte kód, který jste zkopírovali do pole, které říká **kód**.
 
-1. Přejděte zpět na stránku pro správu účtu v sadě Visual Studio a zobrazí se vám nově přidaný účet uvedený v části **všechny účty**. Zvolte **Zavřít**.
+   Název aplikace sady **Visual Studio** by měl být na stránce uveden dál.
+
+1. V části **Visual Studio**klikněte na **pokračovat**.
+
+   ![Device-Login-Page. png](media/work-with-multiple-user-accounts/device-login-page.png)
+
+1. Podle pokynů zadejte přihlašovací údaje k účtu.
+
+   Zobrazí se stránka s oznámením, že jste se přihlásili do sady Visual Studio na svém zařízení a že můžete zavřít okno prohlížeče.
+
+   ![Přihlášení do sady Visual Studio prostřednictvím prohlížeče bylo dokončeno.](media/work-with-multiple-user-accounts/sign-in-browser-complete.png)
+
+1. Vraťte se na stránku Správa účtů v sadě Visual Studio a zobrazí se nově přidaný účet v seznamu **všechny účty**. Zvolte **Zavřít**.
 
 ## <a name="see-also"></a>Viz také:
 
 - [Přihlášení k sadě Visual Studio](signing-in-to-visual-studio.md)
-- [Přihlaste se k sadě Visual Studio pro Mac](/visualstudio/mac/signing-in)
+- [Přihlášení k Visual Studio pro Mac](/visualstudio/mac/signing-in)

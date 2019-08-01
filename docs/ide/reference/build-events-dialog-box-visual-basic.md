@@ -1,6 +1,7 @@
 ---
 title: Dialogové okno Události sestavení (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesBuildEvents
@@ -11,47 +12,47 @@ helpviewer_keywords:
 - Build Events dialog box
 - post-build events
 ms.assetid: 3a81a7c7-39f9-47a8-ba5a-b351227f380e
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fb6c532016ce37c33766af05fac19eac252c99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb4cd0a46e5ab4cc9c3a9e00773818d536b84891
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791002"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461439"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Dialogové okno Události sestavení (Visual Basic)
 
-Použití **události sestavení** dialogové okno k zadání pokyny ke konfiguraci sestavení. Můžete také zadat podmínky, za kterých jsou spuštěny žádné události před sestavením nebo po sestavení. Další informace najdete v tématu [jak: Určení událostí sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
+Pomocí dialogového okna **události sestavení** můžete zadat pokyny ke konfiguraci sestavení. Můžete také zadat podmínky, za kterých budou spouštěny události před sestavením nebo po sestavení. Další informace najdete v tématu [jak: Zadejte události sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 **Příkazový řádek události před sestavením**
 
-Určuje všechny příkazy se mají provést před začátkem sestavení. Zadejte dlouhé příkazy, klikněte na tlačítko **upravit před sestavením** zobrazíte [pre-build Event/po sestavení příkazového řádku dialogové okno události](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
+Určuje, které příkazy se mají provést před zahájením sestavení. Chcete-li zadat dlouhé příkazy, klikněte na tlačítko **Upravit před sestavením** a zobrazte tak [dialogové okno Příkazový řádek události před sestavením/po sestavení](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
 > [!NOTE]
-> Události před sestavením nebudou spuštěny, pokud je aktuální projekt a není aktivováno žádné sestavení.
+> Události před sestavením nejsou spuštěny, pokud je projekt aktuální a není spuštěno žádné sestavení.
 
 **Příkazový řádek události po sestavení**
 
-Určuje všechny příkazy k provedení po skončení sestavování. Zadejte dlouhé příkazy, klikněte na tlačítko **upravit POST-Build** zobrazíte **pre-build Event/po sestavení příkazový řádek události** dialogové okno.
+Určuje všechny příkazy, které mají být provedeny po ukončení sestavení. Chcete-li zadat dlouhé příkazy, klikněte na **Upravit po sestavení** , aby se zobrazilo dialogové okno **příkazový řádek události před sestavením/po sestavení** .
 
 > [!NOTE]
-> Přidat `call` než vše post-build příkazy, které spouštějí soubory .bat. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.
+> `call` Přidejte příkaz před všechny příkazy po sestavení, které spouštějí soubory. bat. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 **Spustit událost po sestavení**
 
-Podmínky pro událost po sestavení ke spuštění, určuje, jak je znázorněno v následující tabulce.
+Určuje podmínky pro spuštění události po sestavení, jak je znázorněno v následující tabulce.
 
 |Možnost|Výsledek|
 |------------|------------|
-|**Vždy**|Událost po sestavení se spustí bez ohledu na to, zda byl sestaven úspěšně.|
-|**Při úspěšném sestavení**|Událost po sestavení spustí-li sestavení úspěšné. Událost se spustí i pro projekt, který je aktuální, tak dlouho, dokud sestavení úspěšné. Toto je výchozí nastavení.|
-|**Když sestavení aktualizuje výstup projektu**|Událost po sestavení spustí pouze v případě, že kompilátoru výstupního souboru (.exe nebo .dll) se liší od předchozí výstupní soubor kompilátoru. Pokud je aktuální projekt není spuštěna událost po sestavení.|
+|**Vždy**|Událost po sestavení se spustí bez ohledu na to, jestli je sestavení úspěšné.|
+|**Po úspěšném sestavení**|Událost po sestavení se spustí, pokud je sestavení úspěšné. Událost se spustí i pro projekt, který je aktuální, pokud je sestavení úspěšné. Toto je výchozí nastavení.|
+|**Když sestavení aktualizuje výstup projektu**|Událost po sestavení bude spuštěna pouze v případě, že výstupní soubor kompilátoru (. exe nebo. dll) se liší od předchozího výstupního souboru kompilátoru. Událost po sestavení není spuštěna, pokud je projekt v aktuálním stavu.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Stránka Kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Postupy: Určení událostí sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
