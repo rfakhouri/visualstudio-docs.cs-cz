@@ -10,34 +10,40 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 435eb2571f709f3ed5df4effbfdf3b5f4970457b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 153624ec6f0bdb13e4d89a92edf977d0badc7e62
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461400"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68712221"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testovací nástroje v sadě Visual Studio
 
 Testovací nástroje sady Visual Studio vám může pomoct a váš tým vyvíjet a udržovat vysoké standardy pro vzdělávání profesionálů v oblasti kódu.
 
 > [!NOTE]
-> Testování jednotek je k dispozici ve všech edicích sady Visual Studio. Další testovací nástroje, jako je Live Unit Testing, Intellitestu a programový Test uživatelského rozhraní jsou dostupné jenom v edici Visual Studio Enterprise. Další informace o vydáních najdete v části [porovnání prostředí IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
+> Testování jednotek je k dispozici ve všech edicích sady Visual Studio. Další testovací nástroje, například Live Unit Testing, IntelliTest a programový test uživatelského rozhraní, jsou k dispozici pouze v edici Visual Studio Enterprise. Další informace o edicích najdete v tématu [porovnání prostředí Visual Studio](https://visualstudio.microsoft.com/vs/compare/)s více procesory.
 
 ## <a name="test-explorer"></a>Průzkumník testů
 
-**Průzkumník testů** okno pomáhá vývojářům vytvářet, spravovat a spouštět testy jednotek. Můžete použít rozhraní testování částí Microsoft nebo jeden z několika rámců třetích stran a open source.
+Okno **Průzkumník testů** pomáhá vývojářům vytvářet, spravovat a spouštět testy jednotek. Můžete použít rozhraní testování částí Microsoft nebo jeden z několika rámců třetích stran a open source.
 
+::: moniker range="vs-2017"
 ![Průzkumník testů sady Visual Studio](media/devtest-testexplorer.png)
+::: moniker-end
+
+::: moniker range="vs-2019"
+![Visual Studio Test Explorer 16,2](media/vs-2019/test-explorer-16-2.PNG)
+::: moniker-end
 
 * [Začínáme s testováním částí](unit-test-your-code.md)
 * [Spouštění testování částí pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md)
 * [Průzkumník testů – nejčastější dotazy](test-explorer-faq.md)
 * [Instalace systémů pro testování částí od třetích stran](install-third-party-unit-test-frameworks.md)
 
-Visual Studio je rozšiřitelné a otevře dveře pro adaptéry jako například NUnit a xUnit.net testování jednotky třetí strany. Kromě toho přejde funkce klonování kódu ručně spolupráce s doručování vysoce kvalitního softwaru díky tomu můžete identifikovat bloky sémanticky podobné kódu, který se může jednat o kandidáty na běžné opravy chyby nebo refaktoring.
+Visual Studio je také rozšiřitelné a otevírá dvířka adaptérů pro testování částí třetích stran, jako jsou NUnit a xUnit.net. Kromě toho se schopnost klonování kódu doručí za vysoce kvalitní software tím, že vám pomůže identifikovat bloky sémanticky podobného kódu, které mohou být kandidáty na běžné opravy chyb nebo refaktoring.
 
-![Integrace testování třetích stran](media/devtest-thirdparty.png)
+![Integrace testů třetích stran](media/devtest-thirdparty.png)
 
 ## <a name="live-unit-testing"></a>Live Unit Testing
 
@@ -45,42 +51,42 @@ Visual Studio je rozšiřitelné a otevře dveře pro adaptéry jako například
 
 ## <a name="intellitest"></a>IntelliTest
 
-IntelliTest automaticky vygeneruje testování částí a testovací data pro spravovaný kód. IntelliTest zlepšuje pokrytí a výrazně snižuje úsilí nezbytné k vytváření a údržbě testů jednotek pro nový nebo existující kód.
+IntelliTest automaticky generuje jednotkové testy a testovací data pro váš spravovaný kód. IntelliTest vylepšuje pokrytí a významně snižuje úsilí při vytváření a údržbě testů jednotek pro nový nebo existující kód.
 
 ![IntelliTest v akci](media/devtest-intellitest.png)
 
 * [Generování testů částí pro kód pomocí funkce IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
-* [IntelliTest – jeden test pro vládne všem.](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
+* [IntelliTest – jeden test pro všechna pravidla](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 * [Referenční příručka funkce IntelliTest](intellitest-manual/index.md)
 
 ## <a name="code-coverage"></a>Pokrytí kódu
 
-[Pokrytí kódu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) Určuje, jaká část projektového kódu je skutečně testován kódovanými testy, jako je například testování částí. Pro efektivní ochranu před chybami, testy by měly vykonávat nebo "zahrnují" velká část kódu.
+[Pokrytí kódu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) Určuje, jaká část projektového kódu je skutečně testován kódovanými testy, jako je například testování částí. Aby bylo možné efektivně chránit proti chybám, testy by měly vyvolávat nebo "krýt" velkou část kódu.
 
-Analýza pokrytí kódu lze použít pro spravovaný i nespravovaný (nativní) kód.
+Analýza pokrytí kódu se dá použít pro spravovaný i nespravovaný (nativní) kód.
 
 Pokrytí kódu je jedna z možností při spouštění testovacích metod pomocí Průzkumníku testů. Tabulka výsledků zobrazuje procentuální podíl kódu, který byl spuštěn v každém sestavení, třídě a metodě. Editor zdrojového kódu navíc ukazuje samotný kód, který byl testován.
 
 * [Použití pokrytí kódu k určení, kolik kódu je právě testováno.](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Testování částí, pokrytí kódu a analýza duplicit pomocí sady Visual Studio (prostředí) v kódu](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
+* [Testování částí, pokrytí kódu a analýza klonování kódu pomocí sady Visual Studio (testovací prostředí)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Přizpůsobení analýzy pokrytí kódu](customizing-code-coverage-analysis.md)
 
-## <a name="microsoft-fakes"></a>Microsoft Fakes
+## <a name="microsoft-fakes"></a>Napodobeniny Microsoft
 
-[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) může pomoci izolovat kód nahrazením ostatních částí aplikace pomocí zástupných procedur a překrytí testujete.
+[Napodobeniny společnosti Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md) vám pomůžou izolovat testovaný kód nahrazením jiných částí aplikace pomocí zástupných procedur nebo překrytí.
 
-## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Uživatelské rozhraní testování pomocí uživatelského rozhraní a serverem Selenium
+## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Testování uživatelského rozhraní pomocí kódovaného uživatelského rozhraní a programu selen
 
-Programové testy UI poskytují způsob, jak vytvořit plně automatizované testy pro ověření chování vaší aplikace uživatelského rozhraní a funkcí. Můžete se automatizují toto testování v různých technologií, včetně aplikací pro UWP založené na XAML, prohlížečových aplikací a aplikací pro SharePoint.
+Programové testy uživatelského rozhraní poskytují způsob, jak vytvořit plně automatizované testy pro ověření funkčnosti a chování uživatelského rozhraní vaší aplikace. Můžou automatizovat testování uživatelského rozhraní napříč různými technologiemi, včetně aplikací UWP založených na jazyce XAML, aplikací prohlížeče a aplikací služby SharePoint.
 
-Jestli si nejlepší druhu programových testů uživatelského rozhraní nebo obecný webové rozhraní testování s Selenium, Visual Studio poskytuje všechny nástroje, které potřebujete.
+Bez ohledu na to, zda jste zvolili nejlepší programové testy uživatelského rozhraní nebo obecné testování uživatelského rozhraní založeného na prohlížeči pomocí programu selen, Visual Studio poskytuje všechny nástroje, které potřebujete.
 
-![Testování pomocí uživatelského rozhraní programového uživatelského rozhraní](media/devtest-codeduitest.png)
+![Testování uživatelského rozhraní pomocí kódovaného uživatelského rozhraní](media/devtest-codeduitest.png)
 
 * [Použití automatizace uživatelského rozhraní k testování kódu](use-ui-automation-to-test-your-code.md)
-* [Začínáme vytvářet, úpravy a údržba programového testu uživatelského rozhraní](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+* [Začínáme vytvářet, upravovat a udržovat kódovaný test uživatelského rozhraní](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Testování aplikací pro UWP pomocí programových testů uživatelského rozhraní](test-uwp-app-with-coded-ui-test.md)
-* [Úvod do programové testy UI pomocí sady Visual Studio Enterprise (prostředí)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
+* [Úvod k programovým testům uživatelského rozhraní pomocí Visual Studio Enterprise (testovací prostředí)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
 ## <a name="load-testing"></a>Zátěžové testování
 
