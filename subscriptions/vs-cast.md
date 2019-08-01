@@ -1,110 +1,103 @@
 ---
-title: Výhody zvýraznění PŘETYPOVÁNÍ v předplatných sady Visual Studio | Dokumentace Microsoftu
+title: Vytypování – zvýraznit výhody v předplatných sady Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
-description: Další informace o benefitech PŘETYPOVÁNÍ zvýrazněte k dispozici ve vybraných předplatných sady Visual Studio
-ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+description: Přečtěte si o výhodách zvýraznění přetypování dostupných ve vybraných předplatných sady Visual Studio.
+ms.openlocfilehash: 50d892c5da4d39ebd2b379a2b16b8c9ca69d061d
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823686"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681215"
 ---
-# <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Zvýrazněte PŘETYPOVÁNÍ výhoda v předplatných sady Visual Studio
+# <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Výhoda zvýraznění přetypování v předplatných sady Visual Studio
+Při migraci do cloudu potřebují vývojáři důležité poznatky o jejich softwaru. S zvýrazňováním přetypování může Visual Studio Enterprise předplatitelé rychle prověřit svůj zdrojový kód aplikace, aby identifikovali připravenost cloudu svých aplikací pro migraci do Azure a sledovali průběh své aplikace jak během migrace, tak i po ní.
 
-Vývojáři potřebují zásadních informací na svůj software při migraci do cloudu. Pomocí PŘETYPOVÁNÍ zvýraznit předplatitelé sady Visual Studio Enterprise rychle zkontrolovat svůj zdrojový kód aplikace k identifikaci připravenosti cloudových aplikací pro migraci do Azure a monitorovat průběh jejich aplikace během a po migraci.
+Předplatitelé Visual Studio Enterprise můžou získat bezplatné předplatné, jehož součástí je jeden měsíc, abyste mohli vysílat zvýraznění až pro pět aplikací na předplatitele.
 
-Předplatitelé sady Visual Studio Enterprise můžete získat předplatné jeden měsíc zadarmo si vyzkoušejte úplné funkce zvýrazněte PŘETYPOVÁNÍ pro až o pěti aplikace na předplatitele.
-
-## <a name="activation-steps"></a>Postup aktivace
-
+## <a name="activation-steps"></a>Kroky aktivace
 1. Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Vyhledejte výhodu dlaždice zvýrazněte PŘETYPOVÁNÍ v kategorii "Nástroje" a klikněte na **získat kód**.
+2. V kategorii Tools (nástroje) Najděte dlaždici výhody přetypování a klikněte na **získat kód**.
 
    > [!div class="mx-imgBorder"]
-   > ![PŘETYPOVÁNÍ zvýraznění výhodu dlaždice](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
+   > ![Dlaždice zvýraznění s výhodou přetypování](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-0. Zobrazí se zpráva oznamující, váš kód byl úspěšně načten.  Klikněte na tlačítko **aktivovat**, v tomto okamžiku budete přesměrováni na stránku zvýrazněte PŘETYPOVÁNÍ, kde můžete pokračovat v procesu aktivace.  (Pokud nevyberete aktivovat, vždy se můžete vrátit zpět k dlaždici zvýrazněte PŘETYPOVÁNÍ na portálu předplatného.  Odkaz "Kopie kódu" se změní na "Aktivovat", a že na něj kliknete bude pokračovat, proces aktivace.)
+0. Zobrazí se zpráva s informacemi o tom, že váš kód byl úspěšně načten.  Klikněte na **aktivovat**. v takovém případě budete přesměrováni na stránku zvýraznění přetypování, kde můžete pokračovat v procesu aktivace.  (Pokud se nerozhodnete aktivovat nyní, můžete se kdykoli vrátit na dlaždici zvýraznění přetypování na portálu předplatného.  Odkaz získat kód se změní na "aktivovat" a kliknutím na něj se obnoví proces aktivace.)
 
-0. Budete přesměrováni na stránku zvýrazněte PŘETYPOVÁNÍ, kde můžete prozkoumat funkce vašeho předplatného.  Až budete připraveni k vytvoření účtu, jednoduše zadejte svoje kontaktní informace ve webovém formuláři a klikněte na **odeslat**.
+0. Budete přesměrováni na stránku zvýraznění přetypování, kde můžete prozkoumat funkce vašeho předplatného.  Až budete připraveni vytvořit účet, jednoduše poskytněte kontaktní informace ve webovém formuláři a klikněte na **Odeslat**.
 
     > [!div class="mx-imgBorder"]
-    > ![PŘETYPOVÁNÍ zvýraznění cílová stránka](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
+    > ![Cílová stránka zvýraznění přetypování](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
 
    > [!NOTE]
-   > Počet aktivací výhody zvýrazněte PŘETYPOVÁNÍ jsou omezené na deset na organizaci.  Pokud jste už byl využitý vaší organizace desetkrát, nebude možné zvýraznit PŘETYPOVÁNÍ výhodou, aktivujte a obdržíte e-mail s další informace.
+   > Aktivace výhody zvýrazňování přetypování jsou omezené na deset na jednu organizaci.  Pokud již byly vyčerpány 10 aktivací vaší organizace, nebudete moci aktivovat výhody vyjímání funkce přetypování a obdržíte e-mail s dalšími informacemi.
 
-0. Po odeslání vašich informací, zobrazí se vám na stránce potvrzení přijetí vaší žádosti.
+0. Po odeslání informací se zobrazí stránka s potvrzením přijetí vaší žádosti.
 
-    > [!div class="mx-imgBorder"]
-    > ![PŘETYPOVÁNÍ zvýraznění Děkujeme, že stránka](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
+0. Tým přetypování vyhodnotí vaši žádost a bude vás kontaktovat a dokončit vytváření vašeho účtu.
 
-0. PŘETYPOVÁNÍ tým bude vyhodnocovat vaši žádost a bude vás kontaktovat a dokončit vytvoření vašeho účtu.
+0. Z přetypování obdržíte také následující e-mail potvrzující přijetí vaší žádosti.
 
-0. Obdržíte také následující e-mailu z PŘETYPOVÁNÍ potvrzení přijetí vaší žádosti.
-
-   > *Děkujeme vám za vaši žádost o aktivaci přístupu 30denní zvýrazněte PŘETYPOVÁNÍ – exkluzivní nabídka pro zákazníky Microsoft Visual Studio Enterprise!*
+   > *Děkujeme, že jste požádali o aktivaci přístupu ke zdůraznění přetypování na 30 dní, což je exkluzivní nabídka pro Microsoft Visual Studio Enterprise zákazníky!*
    >
-   > *Vaše žádost o aktivaci a přístup, abyste měli na očích PŘETYPOVÁNÍ aktuálně revizi. Z jiné mi uslyší ve více než 48 hodin.*
+   > *V tuto chvíli kontrolujeme vaši žádost o aktivaci a přístup k zvýrazňování přetypování. Od mě už nebudete mít více než 48 hodin.*
    >
-   > *Nejlepším řešením,* 
+   > *Nejlepší *
    > *Greg*
 
-Po schválení vaší žádosti obdržíte e-mail s druhou potvrzení úspěšné vytvoření vašeho účtu a s výzvou, abyste na aktivační odkaz pro dokončení procesu aktivace.
+Po schválení vaší žádosti obdržíte druhý e-mail potvrzující úspěšné vytvoření vašeho účtu a budete vyzváni, abyste kliknutím na aktivační odkaz dokončili proces aktivace.
 
-   > *Úspěšně jsme ověřit a ověřit vaši žádost o přístup k PŘETYPOVÁNÍ zvýraznění. Vítejte na palubě!*
+   > *Úspěšně jsme ověřili a ověřili vaši žádost o přístup k zvýraznění přetypování. Vítejte na palubě!*
    >
-   > *Existuje jeden poslední krok, který je potřeba z-endu vašeho dokončete aktivaci. Obdrželi jste e-mailu z noreply@casthighlight.com s odkazem k aktivaci. Vaše nevyžádanou poštu políčko zaškrtněte, pokud se nezobrazí v e-mailu.*
+   > *Dokončení aktivace vyžaduje jeden poslední krok, který je potřeba od konce. Z noreply@casthighlight.com aktivačního odkazu dostanete e-mail. Pokud nevidíte e-mail, zaškrtněte políčko spam.*
    >
-   > *Kliknutím na aktivační odkaz v e-mailu a dokončení procesu aktivace.*
+   > *Klikněte prosím na aktivační odkaz uvedený v e-mailu a dokončete proces aktivace.*
    >
-   > *Po aktivaci budete mít přístup 30denní platformy zvýrazněte PŘETYPOVÁNÍ a může připojit až 5 aplikací. Všimněte si, že se jedná exkluzivní nabídka je k dispozici jenom zákazníkům Microsoft Visual Studio Enterprise.*
+   > *Po aktivaci budete mít k dispozici 30 dní přístup k platformě zvýrazňování přetypování a můžete připojit až 5 aplikací. Upozorňujeme, že tato exkluzivní nabídka je dostupná jenom pro Microsoft Visual Studio Enterprise zákazníky.*
    >
-   > *Můžu budou kontaktovat a ujistěte se, že všechno, co proběhnout za vás. Do té doby tady je několik užitečný obsah, které vám pomůžou začít:*
+   > *Budu mít jistotu, že se všechno pro vás bude bezproblémově pohybovat. Do té doby je tu pár užitečných materiálů, které vám pomohou začít:*
    >
-   > - [PŘETYPOVÁNÍ zvýraznění – ukázka CloudReadiness](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
-   > - [Příručka Začínáme (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
-   > - Výukové video - [konfigurace vašeho portfolia](https://www.youtube.com/watch?v=MDm8ln4vuGE)
-   > - Výukové video - [připojení vaší aplikace](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
+   > - [Zvýraznění přetypování – ukázka CloudReadiness](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
+   > - [Průvodce Začínáme (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+   > - Kurz videa – [Konfigurace portfolia](https://www.youtube.com/watch?v=MDm8ln4vuGE)
+   > - Kurz videa – [zprovoznění aplikací](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
    >
-   > *Nejlepším řešením,* 
+   > *Nejlepší *
    > *Greg*
 
    > [!NOTE]
-   > Ujistěte se, že klikněte na aktivační odkaz v e-mailu, který jste dostali.  V opačném případě nebude možné přístup k vašemu předplatnému zvýrazněte PŘETYPOVÁNÍ. Pokud nevidíte e-mailu v doručené poště, nezapomeňte se podívat složky s nevyžádanou poštou.
+   > Nezapomeňte kliknout na aktivační odkaz v e-mailu, který obdržíte.  V opačném případě nebudete mít přístup k vašemu předplatnému zvýrazňování přetypování. Pokud nevidíte e-mail ve vaší doručené poště, zkontrolujte složky spamu.
 
-## <a name="eligibility"></a>Způsobilost
-
-| Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
+## <a name="eligibility"></a>Vznik
+| Úroveň předplatného                                                 |     Kanály                                            | Výhodnosti                                                          | Mlčky?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchodní prodej | Vyhodnocení 5 aplikací po dobu 30 dnů|  Ne.  K dispozici pro nové předplatitele pouze          |
-| Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                             |  Není k dispozici          |
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                             |  Není k dispozici           |
-| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              |  Není k dispozici          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Vyhodnotit 5 aplikací na 30 dní|  Ne.  Dostupné jenom pro nové předplatitele          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Není k dispozici                                                             |  Není k dispozici          |
+| Visual Studio Test Professional (Standard)                         | VL, maloobchodní prodej                                              | Není k dispozici                                             |  Není k dispozici           |
+| MSDN Platforms (Standard)                                          | VL, maloobchodní prodej                                              | Není k dispozici                                              |  Není k dispozici          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Není k dispozici  | Není k dispozici |
-| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
+| Visual Studio Enterprise Visual Studio Professional (měsíční Cloud) | Azure | Není k dispozici | Není k dispozici |
 
-<sup>1</sup>*zahrnuje:  Není pro prodej (NFR) FTE, nejcennější Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup></sup>1*zahrnuje:    Ne pro účely opětovného prodeje (NFR), EKVIVALENTu, většiny nejcennějšího profesionálního (MVP), regionálního ředitele (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Představte si*
 
 > [!NOTE]
-> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+> Společnost Microsoft už nenabízí Visual Studio Professional roční předplatné a Visual Studio Enterprise roční předplatné v cloudových předplatných. Stávající prostředí pro zákazníky se nijak nemění a možnost obnovit, zvýšit, snížit nebo zrušit jejich odběry. Novým zákazníkům doporučujeme přejít na [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumat různé možnosti nákupu sady Visual Studio.
 
-Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
+Nejste si jistí, jaké Předplatné používáte?  Připojte se [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a zobrazte všechna předplatná přiřazená k vaší e-mailové adrese. Pokud nevidíte všechna Vaše předplatná, může být jedna nebo více přiřazená k jiné e-mailové adrese.  K zobrazení těchto předplatných se budete muset přihlásit pomocí této e-mailové adresy.
 
-## <a name="support-resources"></a>Informační zdroje podpory
-- Potřebujete pomoc s používáním PŘETYPOVÁNÍ zvýrazněte?  Projděte si tyto prostředky:
+## <a name="support-resources"></a>Prostředky podpory
+- Potřebujete pomoci s používáním zvýrazňování přetypování?  Podívejte se na tyto prostředky:
   - [Odeslat žádost o podporu](https://casthighlight.com/support/)
-  - [Příručka Začínáme (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+  - [Průvodce Začínáme (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
-- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
-- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+- Pokud potřebujete pomoc s prodejem, předplatnými, účty a fakturací za předplatná sady Visual Studio, kontaktujte [podporu](https://visualstudio.microsoft.com/subscriptions/support/)předplatných sady Visual Studio
+- Máte dotaz o integrovaném vývojovém prostředí (IDE) sady Visual Studio, Azure DevOps Services nebo jiných produktech nebo službách sady Visual Studio?  Navštivte [podporu sady Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
+Pokud jste ještě neaktivovali výhody Azure, které jsou součástí vašeho předplatného, přejděte [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) na dlaždici Azure v kategorii Nástroje a nastavte své předplatné Azure a Uplatněte své kredity Azure.
 
-Pokud jste ještě neaktivovali Azure benefit, který je součástí vašeho předplatného, navštivte [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a klikněte na Azure dlaždici v kategorii nástroje pro nastavení vašeho předplatného Azure a jejího uplatnění kreditů Azure.
-
-A nezapomeňte se podívat ukázku uživatele průvodce a uvedené v e-mailu společnosti Greg výukových videí.
+A nezapomeňte se podívat na ukázková videa, uživatelské příručky a kurzy uvedené v e-mailu Greg.
