@@ -1,6 +1,6 @@
 ---
-title: 'CA1052: Statické typy vlastníků by měly být zapečetěné'
-ms.date: 03/11/2019
+title: 'CA1052: Statické typy držitelů by měly být statické nebo NotInheritable.'
+ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
@@ -18,64 +18,71 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 0a574f7f77277255acf2150c218c3f4db061e75c
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744597"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604775"
 ---
-# <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Statické typy vlastníků by měly být zapečetěné
+# <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052: Statické typy držitelů by měly být statické nebo NotInheritable.
 
 |||
 |-|-|
-|TypeName|StaticHolderTypesShouldBeSealed|
+|TypeName|StaticHolderTypesAnalyzer|
 |CheckId|CA1052|
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Neabstraktního typu obsahuje pouze statické členy a není deklarován [zapečetěné](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modifikátor.
+Neabstraktní typ obsahuje pouze statické členy (kromě možného výchozího konstruktoru) a není deklarován se [statickým](/dotnet/csharp/language-reference/keywords/static) nebo sdíleným modifikátorem [](/dotnet/visual-basic/language-reference/modifiers/shared) .
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné typy, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vyhledává pouze externě viditelné typy, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-CA1052 pravidlo předpokládá, že typ, který obsahuje pouze statické členy nespouští zděděno, protože typ neposkytuje všechny funkce, která může být přepsána v odvozeném typu. Typ, který není určena k dědit by měly být označené `sealed` nebo `NotInheritable` modifikátor zakázat jeho použití jako základního typu. Toto pravidlo se neaktivuje pro abstraktní třídy.
+Pravidlo CA1052 předpokládá, že typ, který obsahuje pouze statické členy, není navržen tak, aby byl zděděn, protože typ neposkytuje žádné funkce, které mohou být přepsány v odvozeném typu. Typ, který není určen k dědění, by měl být označen `static` modifikátorem v C# , aby bylo možné jeho použití jako základní typ zakázat. Kromě toho by měl být odebrán jeho výchozí konstruktor. V Visual Basic musí být třída převedena na [modul](/dotnet/visual-basic/language-reference/statements/module-statement).
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+Toto pravidlo se neaktivuje u abstraktních tříd nebo tříd, které mají základní třídu. Pravidlo však aktivuje třídy, které podporují prázdné rozhraní.
 
-Chcete-li opravit porušení tohoto pravidla, označte typ jako `sealed` nebo `NotInheritable`. Pokud projekt cílí na rozhraní .NET Framework 2.0 nebo novější, je lepším řešením pro označení typu jako `static` nebo `Shared`. Tímto způsobem není nutné deklarovat soukromý konstruktor třídy zabránit vytváří.
+> [!NOTE]
+> V rámci implementace FxCop Analyzer tohoto pravidla zahrnuje i funkci [pravidla CA1053](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md).
+
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+
+Chcete-li opravit porušení tohoto pravidla, označte typ jako `static` a odeberte výchozí konstruktor (C#) nebo jej převeďte na modul (Visual Basic).
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Potlačit upozornění tohoto pravidla pouze v případě, že typ je navržen tak, aby se dědila. Chybí `sealed` nebo `NotInheritable` modifikátor naznačuje, že je užitečné jako základní typ typu.
+Potlačí upozornění z tohoto pravidla pouze v případě, že je typ navržen tak, aby byl zděděn. Absence `static` modifikátoru naznačuje, že typ je užitečný jako základní typ.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a nikoli prostřednictvím statické analýzy kódu), můžete nakonfigurovat, které části vašeho základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru EditorConfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1052.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (návrh). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (návrh). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
-## <a name="example-of-a-violation"></a>Příkladem porušení
+## <a name="example-of-a-violation"></a>Příklad porušení
 
-Následující příklad ukazuje typ, který porušuje pravidla:
+Následující příklad ukazuje typ, který je v rozporu s pravidlem:
 
 [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
 [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
 [!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]
 
-## <a name="fix-with-the-static-modifier"></a>Oprava s statickém modifikátoru
+## <a name="fix-with-the-static-modifier"></a>Oprava pomocí modifikátoru static
 
-Následující příklad ukazuje, jak opravit porušení tohoto pravidla typu s označením `static` modifikátor v C#:
+Následující příklad ukazuje, jak opravit porušení tohoto pravidla označením typu s `static` modifikátorem v: C#
 
-[!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
-
-## <a name="related-rules"></a>Související pravidla
-
-- [CA1053: Statický vlastník typů by neměly mít konstruktory](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+```csharp
+public static class StaticMembers
+{
+    public static int SomeProperty { get; set; }
+    public static void SomeMethod() { }
+}
+```

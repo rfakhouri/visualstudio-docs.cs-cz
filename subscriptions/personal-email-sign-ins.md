@@ -1,37 +1,37 @@
 ---
-title: Osobní e-mailů, zobrazí na webu VLSC
+title: Osobní e-maily zobrazené v VLSC
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/23/2018
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
-description: Předplatná sady Visual Studio – proč vidím Hotmailu nebo Gmailu adresy pro moje předplatitele?
-ms.openlocfilehash: acba6b5c1b5efac80590d02e3c813650962b4892
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Předplatná sady Visual Studio – proč se mi zobrazují adresy služby Hotmail nebo Gmail pro moje předplatitele?
+ms.openlocfilehash: 8418a177e793f0b4fe9a5019d2cf62fa724312ff
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250715"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605754"
 ---
-# <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Předplatná sady Visual Studio – proč vidím Hotmailu nebo Gmailu adresy pro moje předplatitele?
-
-Společností z na svazek licencování Service Center (VLSC) migraci na novou sadu Visual Studio [portál pro správu předplatných](https://manage.visualstudio.com), Správce může překvapeni, pokud chcete zjistit, který "Přihlášení e-mailovou adresu" pro některé předplatitele ukazuje 3. stran e-mailovou adresu jako Hotmail, Gmail nebo Yahoo.  Další informace, podívejte se na [toto video](https://www.youtube.com/watch?v=1op-i1zEMfY&t=0s&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=6).
+# <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Předplatná sady Visual Studio – proč se mi zobrazují adresy služby Hotmail nebo Gmail pro moje předplatitele?
+Po migraci společností z webu Volume Licensing Service Center (VLSC) na nový [portál pro správu](https://manage.visualstudio.com)předplatných sady Visual Studio byli správci překvapeni, že přihlašovací e-mailová adresa pro některé předplatitele zobrazuje e-mail třetí strany. adresa jako Hotmail, Gmail nebo Yahoo.  Další informace najdete v [tomto videu](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
 
 ## <a name="cause"></a>příčina
+K tomuto scénáři dochází v důsledku procesů přihlašování, které byly přidruženy k starší verzi služby předplatitele MSDN. Uživatelé byli migrováni z webu Volume License Service Center (VLSC) na portál pro správu předplatných sady Visual Studio bez úprav. Správci možná nebudou vědomi, že uživatelé používali osobní účty pro přístup k výhodám jejich předplatného. Před migrací předplatitele sady Visual Studio, které byly dokončeny v 2016, byly pro úspěšné použití Visual Studio Subscription nutné dvě akce:
+1. Správce přiřadil předplatné individuálnímu předplatiteli pomocí své pracovní nebo školní e-mailové adresy.
+2. Předplatné je aktivované předplatitelem.
 
-K této situaci dochází z důvodu přihlášení procesy, které byly přidruženy k starší verze prostředí pro předplatitele MSDN. Uživatelé se migrovaly ze svazku licence Service Center (VLSC) na nový portál bez úprav. Správci nemusí být vědomi, že uživatelé používala osobní účty pro přístup k svých předplatitelských výhod. Před migrací předplatitele sady Visual Studio, které byly dokončeny v 2016, byly dvě akce potřebné pro úspěšné fungování předplatné sady Visual Studio:
-1. Správce "přiřazeno" předplatné jednotlivých odběratele, pomocí jejich pracovních nebo školní e-mailovou adresu.
-2. Odběratel "" předplatné aktivovali.
-
-Během procesu aktivace předplatitele: Účet Microsoft (MSA) byla nutná k registraci. Při pokusu o jejich pracovní nebo školní účet nebyl v odběrateli (třeba tasha@contoso.com) s MSA, může vytvořit nové MSA nebo využít některý z existujících. Kvůli tomu "Sign in e-mailovými adresami" se liší od jejich "přiřazené k e-mailovou adresu".
+Během procesu aktivace předplatitele: Pro přihlášení se vyžaduje účet Microsoft (MSA). Pokud se předplatitel nepokusí svůj pracovní nebo školní účet (např. tasha@contoso.com) MSA, mohl vytvořit nový MSA nebo využít stávající. Výsledkem je, že se "e-mailová adresa pro přihlášení" liší od jejich "přiřazeno e-mailové adresy".
 
 > [!NOTE]
-> Nové prostředí odběratele na [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) podporuje typy identity pracovní/školní a účet Microsoft (má).
+> Nové prostředí pro předplatitele [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) v systému podporuje typy identit pracovní/školní a účet Microsoft (MAA).
 
-Nakonec od správce migrace trvá data z webu VLSC týkající odběratele "Sign In e-mailovou adresu" k naplnění nové prostředí pro správu odběratele, nedávno migrované správci může zobrazit tyto dříve bez povšimnutí osobní účty z důvodu změny v uživatelském rozhraní, které zviditelnit tyto informace.
+Vzhledem k tomu, že migrace správce přebírá data z VLSC týkající se přihlašovací e-mailové adresy odběratele, aby naplnila nové prostředí pro správu předplatitele, mohl by nedávno migrované správce vidět tyto dřív neuvedené osobní účty. z důvodu změn v uživatelském rozhraní, které tyto informace podrobněji vystavily.
 
 ## <a name="solution"></a>Řešení
+Chcete-li tento problém vyřešit, budete muset upravit informace o odběrateli a aktualizovat e-mailové adresy pro přihlášení.  Úpravy mohou být provedeny pro jednotlivé předplatitele nebo hromadně. Úplné informace najdete v úpravách [](edit-license.md)předplatných.
 
-Chcete-li tento problém, budete muset upravit informace o odběrateli aktualizovat jeho přihlašovací e-mailové adresy.  Úpravy můžete provést u jednotlivých odběratelů nebo hromadně. Podrobnější informace, navštivte prosím [úprava předplatného](edit-license.md).
+##  <a name="next-steps"></a>Další postup
+- Pokud jste aktualizovali e-mailové adresy odběratelů, můžete jim sdělit, že se změnily přihlašovací údaje.  Budou také dostávat e-maily s aktualizovanými informacemi.
+- Může být užitečné [filtrovat seznam předplatitelů](search-license.md) ve vaší organizaci, aby se hledaly e-mailové adresy, které může být potřeba změnit.  
 
-Po aktualizaci předplatitelů e-mailové adresy, můžete chtít upozornit, že došlo ke změně jejich přihlašovací údaje.  Také obdrží e-mail s aktualizované informace.
