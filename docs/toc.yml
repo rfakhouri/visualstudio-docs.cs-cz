@@ -352,6 +352,8 @@
                     - name: Přehled
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
+                    - name: Přidání kontrol hodnot null pro všechny parametry
+                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Změna podpisu metody
                       href: ide/reference/change-method-signature.md
                     - name: Převedení anonymního typu na třídu
