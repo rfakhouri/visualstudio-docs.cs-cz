@@ -1,21 +1,21 @@
 ---
 title: Zvýhodnění WhiteSource | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 08/01/2019
 ms.topic: conceptual
 description: Naučte se aktivovat předplatné WhiteSource, které je součástí vašeho předplatného sady Visual Studio.
-ms.openlocfilehash: 99f6a74609b21fa7279113c97aabc9973782b7c1
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 4119e188a265660b805c1ce404cb909f600fb30a
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681427"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787854"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource v předplatných sady Visual Studio
 
-Najděte a opravte slabá místa v open source a vygenerujte obsáhlé sestavy inventáře a licencí všech open source komponent v sestavení. Některá předplatná sady Visual Studio zahrnují šest měsíců bezplatného přístupu.
+Najděte a opravte slabá místa v open source a vygenerujte obsáhlé sestavy inventáře a licencí všech open source komponent v sestavení. 
 
 ## <a name="activation-steps"></a>Kroky aktivace
 
@@ -45,3 +45,5 @@ WhiteSource je teď k dispozici zdarma v Visual Studio Marketplace.
 - Pokud potřebujete pomoc s prodejem, předplatnými, účty a fakturací za předplatná sady Visual Studio, kontaktujte [podporu](https://visualstudio.microsoft.com/subscriptions/support/)předplatných sady Visual Studio
 - Máte dotaz o integrovaném vývojovém prostředí (IDE) sady Visual Studio, Azure DevOps Services nebo jiných produktech nebo službách sady Visual Studio?  Navštivte [podporu sady Visual Studio](https://visualstudio.microsoft.com/support/).
 
+## <a name="next-steps"></a>Další kroky
+Jako předplatitelé sady Visual Studio můžete použít Microsoft Azure bez dalších poplatků.  Díky [měsíčnímu kreditu Azure](vs-azure.md)je Azure vaším osobním izolovaným prostorem pro vývoj a testování.  Můžete zřídit virtuální počítače, cloudové služby a další prostředky Azure.  Částky kreditu se liší podle úrovně předplatného.

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 263d2eb93c3ad78e14a066fe11486be9122cfd96
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681306"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787980"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testování částí JavaScriptu a TypeScript v aplikaci Visual Studio
 
@@ -165,5 +165,11 @@ Pokud to chcete povolit, klikněte pravým tlačítkem myši na uzel projektu v 
 
 Dále přidejte testy do kořenové složky testu, kterou jste zadali, a budou k dispozici pro spuštění v okně Průzkumník testů. Pokud se nezobrazují, může být nutné projekt znovu sestavit.
 
-> [!NOTE]
-> V tuto chvíli nefunguje pro projekty .NET Standard a .NET Core.
+### <a name="unit-test-net-core-and-net-standard"></a>Test jednotek .NET Core a .NET Standard
+Kromě výše uvedených vlastností také budete muset nainstalovat balíček NuGet [Microsoft. JavaScript. UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) a nastavit vlastnost:
+
+```xml
+<PropertyGroup>
+    <GenerateProgramFile>false</GenerateProgramFile>
+</PropertyGroup>
+```

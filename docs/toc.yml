@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: Přidání nebo odebrání odkazů pomocí správce odkazů
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Přidání odkazů pomocí nástroje NuGet a sady SDK rozšíření
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: Přidání nebo odebrání importovaných oborů názvů (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: Řešení problémů s poškozenými odkazy

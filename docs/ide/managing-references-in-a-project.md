@@ -1,6 +1,6 @@
 ---
 title: Správa odkazů v projektu
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -21,106 +21,112 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747041"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787622"
 ---
 # <a name="manage-references-in-a-project"></a>Správa odkazů v projektu
 
-Předtím, než můžete napsat kód proti externí komponentě nebo připojené služby, váš projekt musí nejprve obsahovat odkaz na jeho. Odkaz je v podstatě záznam v souboru projektu, který obsahuje informace, že Visual Studio potřebuje najít komponentu nebo službu.
+Před psaním kódu proti externí komponentě nebo připojené službě musí projekt nejprve obsahovat odkaz na něj. Odkaz je v podstatě záznam v souboru projektu, který obsahuje informace, které Visual Studio potřebuje k umístění komponenty nebo služby.
 
-Přidání odkazu, klikněte pravým tlačítkem na **odkazy** nebo **závislosti** uzel v **Průzkumníka řešení** a zvolte **přidat odkaz**. Můžete také kliknout pravým tlačítkem na uzel projektu a vyberte **přidat** > **odkaz**. Další informace najdete v tématu [jak: Přidání nebo odebrání odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Chcete-li přidat odkaz, klikněte pravým tlačítkem myši na uzel **odkazy** nebo **závislosti** v **Průzkumník řešení** a vyberte možnost **Přidat odkaz**. Můžete také kliknout pravým tlačítkem myši na uzel projektu a vybrat možnost **Přidat** > **odkaz**. Další informace najdete v tématu [jak: Přidejte nebo odeberte odkazy](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
-![Přidání odkazu v jazyce Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
+![Přidat odkaz v jazyce Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
 Můžete přidat odkaz na následující typy komponent a služeb:
 
-- Knihovny tříd .NET nebo sestavení
+- .NET – knihovny tříd nebo sestavení
 
-- U aplikací pro UPW
+- Aplikace pro UPW
 
 - COM – součásti
 
-- Jiné sestavení nebo knihovny tříd projektů ve stejném řešení
+- Další sestavení nebo knihovny tříd projektů ve stejném řešení
+
+- Sdílené projekty
 
 - webové služby XML
 
-## <a name="uwp-app-references"></a>Odkazy na aplikace pro UPW
+## <a name="uwp-app-references"></a>Odkazy na aplikace UWP
 
 ### <a name="project-references"></a>Odkazy na projekty
 
-Projekty pro Universal Windows Platform (UWP) můžete vytvořit odkazy na jiné projekty UWP v řešení nebo projekty Windows 8.1 nebo binární soubory, za předpokladu, že tyto projekty nepoužívají rozhraní API, která se již nepoužívají v systému Windows 10. Další informace najdete v tématu [přesunout z Windows 8 modulu Runtime pro UPW](/windows/uwp/porting/w8x-to-uwp-root).
+Projekty Univerzální platforma Windows (UWP) mohou vytvářet odkazy na jiné projekty UWP v řešení nebo pro Windows 8.1 projektů nebo binárních souborů za předpokladu, že tyto projekty nepoužívají rozhraní API, která se už nepoužívají ve Windows 10. Další informace najdete v tématu [Přesun z prostředí Windows Runtime 8 na UWP](/windows/uwp/porting/w8x-to-uwp-root).
 
-Pokud budete chtít změnit cílení projektů pro Windows 8.1 na Windows 10, najdete v článku [Port, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Pokud se rozhodnete změnit cílení Windows 8.1 projektů na Windows 10, přečtěte si téma [port, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
-### <a name="extension-sdk-references"></a>Odkazy na rozšíření SDK
+### <a name="extension-sdk-references"></a>Odkazy na sadu SDK rozšíření
 
-V jazyce Visual Basic C#, C++ a JavaScript Universal Windows Platform (UPW) aplikace můžete odkazovat na rozšíření SDK, které cílí na Windows 8.1, tak dlouho, dokud tato rozšíření sady SDK nepoužívají rozhraní API, která se již nepoužívají v systému Windows 10. Zkontrolujte web dodavatele rozšíření SDK a zjistěte, zda jej lze odkazovat v aplikacích pro UPW.
+Aplikace Visual Basic C#, C++ a JavaScriptu Univerzální platforma Windows (UWP) mohou odkazovat na rozšíření sady SDK, které cílí na Windows 8.1, pokud tato rozšíření sady SDK nepoužívají rozhraní API, která jsou ve Windows 10 zastaralá. Podívejte se na web dodavatele rozšíření SDK a zjistěte, jestli na něj můžou odkazovat aplikace pro UWP.
 
-Pokud zjistíte, že není podporováno rozšíření SDK, které odkazuje vaše aplikace, je nutné provést následující kroky:
+Pokud zjistíte, že sada SDK rozšíření, na kterou odkazuje vaše aplikace, není podporovaná, musíte provést následující kroky:
 
-1. Podívejte se na název projektu, který je příčinou chyby. Platformy, na kterou váš projekt je cílen na verzi je uvedena v závorkách vedle názvu projektu. Například **MyProjectName (Windows 8.1)** znamená, že váš projekt **MyProjectName** je zaměřen na verzi platformy Windows 8.1.
+1. Podívejte se na název projektu, který způsobuje chybu. Platforma, na kterou váš projekt cílí, je uvedena v závorkách vedle názvu projektu. Například **MyProjectName (Windows 8.1)** znamená, že váš projekt **MyProjectName** je cílen na verzi platformy Windows 8.1.
 
-1. Přejděte na web dodavatele, který vlastní nepodporovanou sadu SDK rozšíření a nainstalujte verzi sady SDK rozšíření se závislostmi, které jsou kompatibilní s verzí platformy, na kterou váš projekt cílí.
+1. Přejít na web dodavatele, který vlastní nepodporovanou sadu SDK, a nainstalovat verzi sady SDK rozšíření se závislostmi, které jsou kompatibilní s verzí platformy, na kterou váš projekt cílí.
 
     > [!NOTE]
-    > Jeden způsob, jak zjistit, zda rozšíření SDK má závislosti na dalších rozšířeních SDK, je hledání v **správce odkazů**. Restartujte sadu Visual Studio, vytvořte nový C# aplikace pro UPW v projektu a potom klikněte pravým tlačítkem na projekt a zvolte možnost **přidat odkaz**. Přejděte **Windows** kartu, pak bude **rozšíření** dílčí kartě a vyberte rozšíření SDK. Podívejte se na v pravém podokně **správce odkazů**. Pokud existují závislosti, budou uvedeny zde.
+    > Jedním ze způsobů, jak zjistit, jestli sada rozšíření SDK má závislosti na jiných sadách SDK rozšíření, je vyhledána v **nástroji Správce odkazů**. Restartujte Visual Studio, vytvořte nový C# projekt aplikace pro UWP a pak klikněte pravým tlačítkem na projekt a vyberte **Přidat odkaz**. Klikněte na kartu **Windows** , pak na dílčí kartu **rozšíření** a vyberte sadu SDK rozšíření. Podívejte se do pravého podokna ve **Správci odkazů**. Pokud mají závislosti, budou uvedeny zde.
 
     > [!IMPORTANT]
-    > Pokud váš projekt je cílen na verzi Windows 10 a v předchozím kroku nainstalované rozšíření SDK obsahuje závislost na balíčku Microsoft Visual C++ Runtime, verze balíčku Microsoft Visual C++ Runtime, který je kompatibilní s Windows 10 je v14.0 a je nainstalovaná pomocí sady Visual Studio.
+    > Pokud projekt cílí na Windows 10 a sada rozšíření SDK nainstalovaná v předchozím kroku má závislost na balíčku Microsoft Visual C++ runtime, verze balíčku Microsoft Visual C++ runtime, která je kompatibilní s Windows 10 je v 14.0, a je nainstalován se sadou Visual Studio.
 
-1. Pokud jste v předchozím kroku nainstalované rozšíření SDK má závislosti na dalších rozšířeních SDK, přejděte na weby dodavatelů, kteří závislosti vlastní a nainstalujte verze těchto závislostí, které jsou kompatibilní s verzí platformy, na kterou váš projekt je cílem.
+1. Pokud sada rozšíření SDK, kterou jste nainstalovali v předchozím kroku, má závislosti na dalších rozšířeních SDK, navštivte weby dodavatelů, kteří závislosti vlastní, a nainstalujte verze těchto závislostí, které jsou kompatibilní s verzí platformy, na kterou je váš projekt. cílení na.
 
-1. Restartujte Visual Studio a otevřete aplikaci.
+1. Restartujte Visual Studio a otevřete svoji aplikaci.
 
-1. Klikněte pravým tlačítkem na **odkazy** nebo **závislosti** uzlu v projektu, který způsobil chybu a zvolte **přidat odkaz**.
+1. Klikněte pravým tlačítkem myši na uzel **odkazy** nebo **závislosti** v projektu, který způsobil chybu, a vyberte možnost **Přidat odkaz**.
 
-1. Klikněte na tlačítko **Windows** kartu a potom **rozšíření** dílčí kartu, poté zrušte zaškrtnutí políček pro staré SDK rozšíření a zaškrtněte políčka pro nové SDK rozšíření. Klikněte na **OK**.
+1. Klikněte na kartu **Windows** a potom na dílčí kartu **rozšíření** a potom zrušte zaškrtnutí políček pro staré sady SDK rozšíření a zaškrtněte políčka pro nové sady SDK rozšíření. Klikněte na **OK**.
 
 ## <a name="add-a-reference-at-design-time"></a>Přidat odkaz v době návrhu
 
-Pokud odkaz na sestavení v projektu, Visual Studio vyhledá sestavení v následujících umístěních:
+Když vytvoříte odkaz na sestavení v projektu, Visual Studio vyhledá sestavení v následujících umístěních:
 
-- Aktuální adresář projektu. (Můžete vyhledat tato sestavení pomocí **Procházet** tab.)
+- Aktuální adresář projektu. (Tato sestavení můžete najít pomocí karty **Procházet** .)
 
-- Další adresáře projektu ve stejném řešení. (Můžete vyhledat tato sestavení na **projekty** tab.)
+- Další adresáře projektu ve stejném řešení. (Tato sestavení můžete najít na kartě **projekty** .)
 
 > [!NOTE]
 > - Všechny projekty obsahují implicitní odkaz na **mscorlib**.
-> - Všechny projekty obsahují implicitní odkaz na `System.Core`i v případě `System.Core` se odebere ze seznamu odkazů.
-> - Projekty Visual Basic obsahují implicitní odkaz na <xref:Microsoft.VisualBasic>.
+> - Všechny projekty obsahují implicitní odkaz na `System.Core`, i když `System.Core` je odebrán ze seznamu odkazů.
+> - Visual Basic projekty obsahují implicitní odkaz na <xref:Microsoft.VisualBasic>.
 
-## <a name="references-to-shared-components-at-run-time"></a>Odkazy na sdílené komponenty za běhu
+## <a name="references-to-shared-components-at-run-time"></a>Odkazy na sdílené součásti za běhu
 
-V době běhu součásti musí být buď v cestě výstupu projektu nebo v globální mezipaměti sestavení (GAC). Pokud projekt obsahuje odkaz na objekt, který se nenachází v jednom z těchto umístění, musíte zkopírovat odkaz na výstupní cestu k projektu při sestavování projektu. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Vlastnost určuje, zda tato kopie má být provedena. Pokud je hodnota **True**, odkaz je zkopírován do adresáře projektu při sestavování projektu. Pokud je hodnota **False**, odkaz není kopírován.
+V době běhu musí být komponenty buď ve výstupní cestě projektu, nebo v globální mezipaměti sestavení (GAC). Pokud projekt obsahuje odkaz na objekt, který není v jednom z těchto umístění, je nutné zkopírovat odkaz na výstupní cestu projektu při sestavování projektu. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Vlastnost označuje, zda má být tato kopie vytvořena. Pokud je hodnota **true**, odkaz je zkopírován do adresáře projektu při sestavování projektu. Pokud je hodnota **false**, odkaz není zkopírován.
 
-Pokud nasadíte aplikaci, která obsahuje odkaz na vlastní komponentu registrovanou v mezipaměti GAC, komponenta nebude nasazena s aplikací bez ohledu na to <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> nastavení. V dřívějších verzích sady Visual Studio, můžete nastavit <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> vlastnost v odkazu k zajištění toho, že bylo sestavení nasazeno. Nyní je třeba ručně přidat sestavení do složky \Bin. To umístí všechny vlastní kódy pod kontrolu, což zmenší riziko publikování vlastního kódu, se kterým nejste obeznámeni.
+Pokud nasadíte aplikaci, která obsahuje odkaz na vlastní komponentu registrovanou v globální mezipaměti sestavení (GAC), komponenta nebude nasazena s aplikací bez ohledu na <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> nastavení. V dřívějších verzích sady Visual Studio bylo možné nastavit <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> vlastnost na odkaz, aby bylo zajištěno, že bylo sestavení nasazeno. Nyní je třeba ručně přidat sestavení do složky \Bin. Tím se veškerý vlastní kód uloží do kontroly a snižuje riziko publikování vlastního kódu, se kterým nejste obeznámeni.
 
-Ve výchozím nastavení <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> je nastavena na **False** Pokud sestavení nebo komponenta v globální mezipaměti sestavení, nebo je komponentou architektury. V opačném případě je hodnota nastavena na **True**. Odkazy typu projekt projekt jsou vždy nastaveny na **True**.
+Ve výchozím nastavení je <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> vlastnost nastavena na **hodnotu false** , je-li sestavení nebo komponenta v globální mezipaměti sestavení (GAC) nebo je součástí rozhraní. V opačném případě je hodnota nastavena na **true**. Odkazy z projektu na projekt jsou vždy nastaveny na **hodnotu true**.
 
 ## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Odkaz na projekt nebo sestavení, které cílí na jinou verzi rozhraní .NET
 
-Můžete vytvářet aplikace, které odkazují na projekty nebo sestavení, které cílí na jinou verzi rozhraní .NET. Například můžete vytvořit aplikaci cíleného rozhraní .NET Framework 4.6, které odkazuje na sestavení, které cílí na rozhraní .NET Framework 4.5. Pokud vytvoříte projekt, který se zaměřuje na starší verzi rozhraní .NET, nemůžete nastavit odkaz v projektu na projekt nebo sestavení, který se zaměřuje na novější verzi.
+Můžete vytvářet aplikace, které odkazují na projekty nebo sestavení, které cílí na jinou verzi rozhraní .NET. Můžete například vytvořit aplikaci, která cílí na .NET Framework 4,6, která odkazuje na sestavení, které cílí na .NET Framework 4,5. Vytvoříte-li projekt, který se zaměřuje na starší verzi rozhraní .NET, nemůžete v tomto projektu nastavit odkaz na projekt nebo sestavení, které cílí na novější verzi.
 
-Další informace najdete v tématu [Framework – přehled cílení na](../ide/visual-studio-multi-targeting-overview.md).
+Další informace najdete v tématu [Přehled cílení na rozhraní](../ide/visual-studio-multi-targeting-overview.md).
 
-## <a name="project-to-project-references"></a>Projekt pro odkazy na projekt
+## <a name="project-to-project-references"></a>Odkazy z projektu na projekt
 
-Odkazy typu projekt projekt jsou odkazy na projekty obsahující sestavení; Vytvoření s použitím **projektu** kartu. Sada Visual Studio můžete najít sestavení při zadané cestě do projektu.
+Odkazy z projektu na projekt jsou odkazy na projekty obsahující sestavení; odkazy na projekt můžete přidat pomocí karty **projekty** v dialogovém okně Správce odkazů. Visual Studio může najít sestavení, pokud je předána cesta k projektu.
 
-Pokud máte projekt, který vytváří sestavení, by měla odkazovat na projekt a nepoužívat odkaz na soubor (viz níže). Výhodou odkazu typu projekt projekt je, že vytvoří závislost mezi projekty v systému sestavení. Závislý projekt bude vytvořen, pokud se změnil od posledního odkazujícího projektu. Odkaz na soubor nevytváří závislost sestavení, takže je možné sestavit odkazující projekt bez vytváření závislého projektu a odkaz se může stát zastaralým. (To znamená, že projekt může odkazovat na dřívější sestavené verze projektu.) Může dojít k několika verzí jednoho souboru knihovny DLL v nich vyžaduje *bin* adresáře, který není možné. Pokud dojde k tomuto konfliktu, zobrazí se zpráva, jako "Upozornění: závislost 'file' v projektu 'project' nelze zkopírovat do běhového adresáře, protože by přepsala odkaz 'file'.". Další informace najdete v tématu [nefunkční odkazy na řešení potíží](../ide/troubleshooting-broken-references.md) a [jak: Vytváření a odebrání závislostí projektu](../ide/how-to-create-and-remove-project-dependencies.md).
+Pokud máte projekt, který vytváří sestavení, měli byste odkazovat na projekt a nepoužívat odkaz na soubor (viz níže). Výhodou odkazu typu projekt-projekt je, že vytvoří závislost mezi projekty v systému sestavení. Závislý projekt bude sestaven, pokud byl od posledního vytvoření odkazujícího projektu změněn. Odkaz na soubor nevytváří závislost sestavení, takže je možné sestavit odkazující projekt bez sestavení závislého projektu a odkaz může být zastaralý. (To znamená, že projekt může odkazovat na dříve sestavenou verzi projektu.) To může mít za následek, že v adresáři *bin* je vyžadováno několik verzí jediné knihovny DLL, což není možné. Když dojde ke konfliktu, zobrazí se zpráva, například "Upozornění: závislost ' souboru ' v projektu ' Project ' nelze zkopírovat do běhového adresáře, protože by přepsala odkaz ' file '. Další informace najdete v tématu [řešení potíží s poškozenými odkazy](../ide/troubleshooting-broken-references.md) a [postupy: Vytvoření a odebrání závislostí](../ide/how-to-create-and-remove-project-dependencies.md)projektu.
 
 > [!NOTE]
-> Odkaz na soubor místo odkazu typu projekt projekt je vytvořen, pokud cílová verze rozhraní .NET Framework jednoho projektu je verze 4.5 a cílová verze jiného projektu je verze 2, 3, 3.5 nebo 4.0.
+> Odkaz na soubor namísto odkazu projekt-projekt je vytvořen, pokud je cílová verze .NET Framework jednoho projektu verze 4,5 a cílová verze druhého projektu je verze 2, 3, 3,5 nebo 4,0.
+
+## <a name="shared-project-references"></a>Odkazy na sdílené projekty
+
+Na rozdíl od většiny ostatních typů projektu, *sdílený projekt* nemá žádný binární výstup. Místo toho je kód zkompilován do každého projektu, který na něj odkazuje. [Sdílené projekty](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) umožňují psát společný kód, na který odkazuje několik různých aplikačních projektů. Kód je kompilován jako součást každého odkazujícího projektu a může obsahovat direktivy kompilátoru, které pomohou integrovat funkce specifické pro platformu do základu sdíleného kódu. Přidejte odkaz na sdílený projekt na kartě **sdílené projekty** v dialogovém okně Správce odkazů.
 
 ## <a name="file-references"></a>Odkazy na soubory
 
-Odkazy na soubory jsou přímé odkazy na sestavení mimo kontext projektu ve Visual Studiu. Vytvoření s použitím **Procházet** karty **správce odkazů**. Používejte odkaz na soubor, pokud máte jenom sestavení nebo komponentu a ne projekt, který vytvoří jako výstup.
+Odkazy na soubory jsou přímé odkazy na sestavení mimo kontext projektu sady Visual Studio. Vytvoříte je pomocí karty **Procházet** v dialogovém okně Správce odkazů. Odkaz na soubor použijte, pokud máte pouze sestavení nebo komponentu, a ne projekt, který jej vytvoří jako výstup.
 
 ## <a name="see-also"></a>Viz také:
 
 - [Řešení problémů s poškozenými odkazy](../ide/troubleshooting-broken-references.md)
-- [Postupy: Přidání nebo odebrání odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+- [Postupy: Přidat nebo odebrat odkazy](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

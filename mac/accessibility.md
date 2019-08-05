@@ -1,78 +1,78 @@
 ---
 title: Usnadnění
-description: Tento článek představuje funkce pro usnadnění přístupu v sadě Visual Studio pro Mac a jak lze povolit.
+description: V tomto článku se seznámíte s funkcemi pro usnadnění přístupu v Visual Studio pro Mac a o tom, jak je možné je povolit.
 author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 13b8d40a6ab31d7178e95a3896afa1c85c804f6c
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824451"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787642"
 ---
 # <a name="accessibility"></a>Usnadnění
 
-Visual Studio for Mac obsahuje následující funkce pro usnadnění přístupu, tak přístupnější pro osoby s různými schopnostmi:
+Visual Studio pro Mac má následující funkce usnadnění přístupu, aby bylo lépe dostupné pro lidi s různými schopnostmi:
 
-- Rozšíření text v řešení a editor dotyková zařízení
+- Zvětšení textu v panelu řešení a editoru
 - Možnosti změnit velikost textu v editorech
 - Přizpůsobení barev v editorech
 - Procházení pomocí klávesnice
-- Vlastní místní nastavení
-- Doplňování kódu pro metody a parametrů
+- Přizpůsobení zástupce
+- Dokončování kódu pro metody a parametry
 
-Kromě těchto funkcí Apple poskytuje několik nástrojů, které pomáhají uživatelům se zvláštními potřebami, jako je VoiceOver a diktování.
+Kromě těchto funkcí Apple poskytuje řadu nástrojů, které uživatelům pomůžou se speciálními potřebami, jako je VoiceOver a diktování.
 
-Další informace o funkce pro usnadnění přístupu v systému macOS najdete v tématu [webu společnosti Apple](https://www.apple.com/accessibility/mac/).
+Další informace o funkcích přístupnosti v macOS najdete na [webu společnosti Apple](https://www.apple.com/accessibility/mac/).
 
-## <a name="enabling-macos-assistive-technologies-in-visual-studio-for-mac"></a>Povolení macOS technologie pro usnadnění v sadě Visual Studio pro Mac
+## <a name="enabling-macos-assistive-technologies-in-visual-studio-for-mac"></a>Povolení technologií macOS pro usnadnění v Visual Studio pro Mac
 
-Visual Studio for Mac – podpora pro technologie pro usnadnění macOS je vypnuto ve výchozím nastavení. Ho Pokud chcete povolit, postupujte takto:
+Ve výchozím nastavení je podpora pro technologie macOS pro usnadnění Standard vypnutá. Visual Studio pro Mac Pokud ho chcete povolit, postupujte podle těchto kroků:
 
-1. Přejděte na **sady Visual Studio (nabídka) > Předvolby > Další > usnadnění přístupu**
+1. Přejít do sady **Visual Studio (nabídka) > předvolby > jiné > přístupnost**
 
-2. Zkontrolujte **povolit usnadnění** zaškrtávací políčko:
+2. Zaškrtněte políčko **Povolit přístupnost** :
 
-   ![Zaškrtávací políčko předvolby usnadnění](media/accessibility-preferences.png)
+   ![Zaškrtávací políčko přístupnosti předvoleb](media/accessibility-preferences.png)
 
-3. Vyberte **restartujte Visual Studio** tlačítko a restartujte aplikaci Visual Studio a povolit podporu pro technologie pro usnadnění společnosti Apple.
+3. Vyberte tlačítko **restartovat Visual Studio** a restartujte Visual Studio a povolte podporu pro technologie pro usnadnění společnosti Apple.
 
-## <a name="how-to-use-keyboard-navigation"></a>Postupy: Navigace pomocí klávesnice
+## <a name="how-to-use-keyboard-navigation"></a>Postupy: Použití navigace pomocí klávesnice
 
-Podpora navigačního klávesnice je integrována do macOS, ale pokud chcete mít komplexní prostředí, které by měl nastavte macOS přejděte **všechny ovládací prvky**:
+Podpora navigace klávesnicí je integrovaná přímo do macOS, ale aby bylo možné mít nejkomplexnější prostředí, měli byste nastavit macOS na navigaci **všech ovládacích prvků**:
 
-![Předvolby systému klávesnice všechny ovládací prvky](media/accessibility-preferences-keyboard.png)
+![Systémové předvolby klávesnice – všechny ovládací prvky](media/accessibility-preferences-keyboard.png)
 
-Nastavení **úplný přístup klávesnice** k **všechny ovládací prvky** můžete přejít přes všechny ovládací prvky v okně nebo dialogovém okně. Pak můžete vybrat pomocí ovládacích prvků:
+Nastavení **úplného přístupu** k klávesnicím pro **všechny ovládací prvky** umožňuje procházet všemi ovládacími prvky v okně nebo dialogovém okně. Pak můžete vybrat ovládací prvky pomocí:
 
-- TAB přejděte vpřed přes ovládací prvky
-- Stiskněte Shift + Tab zpětně projít ovládacích prvků
-- Klávesy se šipkami pro přesun mezi ovládacími prvky směrem šipky
-- Ovládací prvek karty z pole Textová oblast
-- Stisknutím klávesy MEZERNÍK aktivuje ovládacího prvku na aktuálně fokus.
+- Karta k přechodu mezi ovládacími prvky
+- Klávesa SHIFT pro přechod zpět přes ovládací prvky
+- Klávesy se šipkami pro pohyb mezi ovládacími prvky ve směru šipky
+- Karta ovládacího prvku mimo oblast textu
+- Stisknutí mezerníku aktivuje aktuálně fokus ovládacího prvku.
 
-## <a name="how-to-enable-and-use-voiceover"></a>Postupy: Povolení a používání VoiceOver
+## <a name="how-to-enable-and-use-voiceover"></a>Postupy: Povolení a použití VoiceOver
 
-Povolit nebo zakázat hlasového stiskněte  **&#8984; + F5**
+Povolení nebo zakázání VoiceOver stisknutím klávesy  **&#8984; + F5**
 
-VoiceOver příkazy se zobrazují v tomto průvodci jako **VO + * klíč*** kterým **VO** odkazuje na modifikátor nastavit **VoiceOver nástroj** aplikace. Výchozí modifikátor **Ctrl + Alt**. Například v závislosti na vaší modifikátor VoiceOver **VO + M** znamená **Ctrl + Alt + M**. Pro zkrácení, bude se kurzor klíče označovány jako **vlevo** a **vpravo**atd.
+Příkazy VoiceOver se zobrazí v této příručce jako **vo +_Key_**  , kde **vo** označuje modifikátor nastavený v aplikaci **VoiceOver Utility** . Výchozí modifikátor je **CTRL + ALT**. Například v závislosti na modifikátoru VoiceOver, **vo + m** bude znamenat **CTRL + ALT + m**. V případě zkrácení budou klávesy kurzorů označovány jako **levé** a **pravé**atd.
 
-Přejít Visual Studio pro Mac uživatelské rozhraní, použijte následující kombinace kláves:
+K procházení uživatelského rozhraní Visual Studio pro Mac použijte následující kombinace kláves:
 
-- **VO + šipka doprava nebo doleva**: Navigace mezi elementy uživatelského rozhraní
-  - VoiceOver bude oznámit popisek a typ ovládacího prvku a popisují, jak pracovat s ním.
-- **VO + Shift + dolů / nahoru**: Krok do / z elementu
-  - Po uvnitř elementu lze použít **VO + vlevo / vpravo** k navigaci v prvky v ní.
-- **VO + MEZERNÍK**: Vyberte / pracovat s ovládacím prvkem
-- **VO + M**: Interakce s aplikací Visual Studio pro Mac nabídek
+- **Vo + vpravo/vlevo**: Navigace mezi prvky uživatelského rozhraní
+  - VoiceOver oznámí popisek a typ ovládacího prvku a vysvětluje, jak s ním pracovat.
+- **Vo + Shift + šipka dolů**: Krokovat dovnitř a ven z prvku
+  - Jednou v prvku můžete použít **vo + Left/Right** k procházení prvků v ní.
+- **Vo + mezera**: Výběr/interakce s ovládacím prvkem
+- **VO + M**: Interakce s panelem nabídek Visual Studio pro Mac
 
-Další informace o použití VoiceOver a kompletní seznam příkazů najdete v následujících příručkách:
+Další informace o používání VoiceOver a vyčerpávajícího seznamu příkazů najdete v následujících příručkách:
 
-- [Apple VoiceOver – Příručka Začínáme](https://support.apple.com/en-us/guide/voiceover-guide/welcome/web)
-- [Příkazy voiceOver v systému macOS](http://lab.dotjay.com/notes/voiceover-commands/)
+- [Příručka pro Začínáme pro Apple VoiceOver](https://support.apple.com/en-us/guide/voiceover-guide/welcome/web)
+- [Příkazy VoiceOver v macOS](http://lab.dotjay.com/notes/voiceover-commands/)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Funkce usnadnění v sadě Visual Studio (ve Windows)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)
+- [Funkce usnadnění v aplikaci Visual Studio (ve Windows)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)

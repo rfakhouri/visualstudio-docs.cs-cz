@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Informace o poskytovatelích cloudových řešeních, jak koupit a spravovat cloudová předplatná sady Visual Studio pro vaše zákazníky.
-ms.openlocfilehash: 57d54a14a9249c4ec792ce349076ba0ec77b4e15
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 7711d9296ca26a09f251f70a6f8dc4848f769507
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681121"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787748"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Nákup a Správa cloudových předplatných sady Visual Studio pro vaše zákazníky
 Partneři v programu [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) si můžou koupit Visual Studio Enterprise a Visual Studio Professional předplatné cloudu pro své zákazníky.
@@ -30,7 +30,6 @@ Musíte nejdřív nastavit tenanta zákazníka v partnerském centru a vytvořit
 K nákupu předplatných sady Visual Studio může koupit kdokoli s [přístupem vlastníka nebo přispěvatele](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) k předplatnému Azure.
 
 ## <a name="how-to-buy"></a>Jak koupit
-> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player]
 
 1. Přihlaste se k [partnerskému centru Microsoftu](https://partnercenter.microsoft.com).
 0. Zvolte **zákazníky** a vyberte zákazníka, pro který chcete koupit.
@@ -50,7 +49,6 @@ K nákupu předplatných sady Visual Studio může koupit kdokoli s [přístupem
 Po potvrzení nákupu můžete zvolit **Spravovat** a přiřadit k předplatným koncovým uživatelům vašeho zákazníka.  K portálu pro správu předplatného můžete získat přístup také z partnerského centra volbou **Service Management**.  Tady vidíte níže uvedený postup nebo video.
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Jak spravovat cloudová předplatná sady Visual Studio pro zákazníka
-> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player]
 
 1. Přihlaste se k [partnerskému centru Microsoftu](https://partnercenter.microsoft.com).
 0. Vyberte možnost **zákazníci** a jméno zákazníka.

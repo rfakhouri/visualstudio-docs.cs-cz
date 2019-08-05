@@ -1,74 +1,46 @@
 ---
-title: EMS Benefit | Dokumentace Microsoftu
+title: Zvýhodnění EMS | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 08/05/2019
 ms.topic: conceptual
-description: Další informace o Enterprise Mobility + Security výhodu součástí vašeho předplatného sady Visual Studio.
-ms.openlocfilehash: 240a3c78a6c1e327c09abb8c31624eca2861bbe0
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Přečtěte si o výhodách Enterprise Mobility + Security, které jsou součástí vašeho předplatného sady Visual Studio.
+ms.openlocfilehash: 93b613d06c6cd8ebcb3b28437677339084a9b720
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250804"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787766"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) v předplatných sady Visual Studio
 
-Roční cloudové služby Visual Studio Enterprise a standardních předplatných zahrnují Enterprise Mobility + Security (EMS).  Zabezpečení a Správa identit, zařízení, aplikací a dat s využitím EMS – Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics a Microsoft Cloud App Security.
+Visual Studio Enterprise ročních cloudových a standardních předplatných zahrnuje Enterprise Mobility + Security (EMS).  Zabezpečte a spravujte své identity, zařízení, aplikace a data pomocí EMS-Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics a Microsoft Cloud App Security. 
 
-> [!NOTE]
-> Pokud si koupíte předplatné více rok prostřednictvím multilicenčních programů, EMS benefit je momentálně dostupný jenom v prvním roce.
+> [!IMPORTANT]
+> Výhoda Enterprise Mobility + Security (EMS) momentálně není k dispozici pro nové aktivace, zatímco máme důležité změny této výhody.  Pokud jste ho už aktivovali, můžete ho normálně používat.  
 
-## <a name="activation-steps"></a>Postup aktivace
+## <a name="eligibility"></a>Vznik
 
-Pokud chcete použít EMS, budete muset nastavit účet nebo se přihlaste pomocí existujícího účtu.
-
-1. Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-
-2. Vyhledejte dlaždici Enterprise Mobility + Security v části nástroje a klikněte na **získat kód** odkaz v dolní části dlaždice.   Obdržíte oznámení, že kód se úspěšně načetla.  Klikněte na tlačítko **aktivovat**.
-   > [!div class="mx-imgBorder"]
-   > ![EMS výhodu dlaždice](_img/vs-ems/vs-ems-tile.png)
-
-3. V Enterprise Mobility + Security E5 stránky můžete přihlásit pomocí existujícího předplatného nebo vytvořte novou.  Vytvořte novou, dokončete požadované informace a klikněte na tlačítko **Další**.
-   > [!div class="mx-imgBorder"]
-   > ![EMS výhody vytvoření účtu](_img/vs-ems/vs-ems-create-account-cropped.png)
-
-4. Vytvořte ID uživatele a heslo.  Klikněte na tlačítko **vytvořit Můj účet** pokračujte.
-   > [!div class="mx-imgBorder"]
-   > ![Výhoda EMS vytvořit ID uživatele](_img/vs-ems/vs-ems-userID-cropped.png)
-
-5. Dále zadejte telefonní číslo chcete obdržet svůj ověřovací kód telefonicky nebo text.  Zadejte kód a klikněte na tlačítko **Další**.
-   > [!div class="mx-imgBorder"]
-   > ![Ověření výhodu EMS](_img/vs-ems/vs-ems-robot-cropped.png)
-
-6. Na další stránce se zobrazí vaše přihlašovací stránku a ID uživatele.  Uložte pro pozdější použití.  Klikněte na tlačítko **jste připraveni přejít...**
-   > [!div class="mx-imgBorder"]
-   > ![Vytvořený účet výhodu EMS](_img/vs-ems/vs-ems-save-info-cropped.png)
-
-7. EMS vyžaduje přístup k Microsoft [webu Azure Portal](https://azure.microsoft.com).  Postupujte podle tří kroků v rámci EMS úvodní stránka k aktivaci předplatného Azure přidejte uživatele a nakonfigurujte EMS.
-
-## <a name="eligibility"></a>Způsobilost
-
-| Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
+| Úroveň předplatného                                                 |     Kanály                                            | Výhodnosti                                                          | Mlčky?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | K dispozici       |  Ano          |
-| Visual Studio Professional (Standard<sup>2</sup>) | VL, Azure, maloobchodního prodeje                                       | K dispozici                                                            |  Ano          |
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                             |  Není k dispozici          |
-| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              |  Není k dispozici          |
-| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, vybrané NFR<sup>1</sup> | K dispozici       |  Ano          |
+| Visual Studio Professional (Standard<sup>2</sup>) | VL, Azure, Retail                                       | K dispozici                                                            |  Ano          |
+| Visual Studio Test Professional (Standard)                         | VL, maloobchodní prodej                                              | Není k dispozici                                             |  Není k dispozici          |
+| MSDN Platforms (Standard)                                          | VL, maloobchodní prodej                                              | Není k dispozici                                              |  Není k dispozici          |
+| Visual Studio Enterprise Visual Studio Professional (měsíční Cloud) | Azure | Není k dispozici | Není k dispozici |
 
-<sup>1</sup>*zahrnuje:  Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark.  Vyloučí: Většina Valuable Professional (MVP), Regional Director (RD), MCT Software & Services, představte si, Microsoft Partner Network (Professional).*
+<sup></sup>1*zahrnuje:    Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekvivalent, MCT software & Services Developer, BizSpark.  Vyloučí Nejkomplexnější specialista (MVP), oblastní ředitel (RD), MCT software & služby, Představte si Microsoft Partner Network (Professional).*
 
-<sup>2</sup> *vyloučí programu Microsoft Partner Network (Professional)*
+<sup>2</sup> *vyloučení Microsoft Partner Network (Professional)*
 
 > [!NOTE]
-> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+> Společnost Microsoft už nenabízí Visual Studio Professional roční předplatné a Visual Studio Enterprise roční předplatné v cloudových předplatných. Stávající prostředí pro zákazníky se nijak nemění a možnost obnovit, zvýšit, snížit nebo zrušit jejich odběry. Novým zákazníkům doporučujeme přejít na [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumat různé možnosti nákupu sady Visual Studio.
 
-Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
+Nejste si jistí, jaké Předplatné používáte?  Připojte se [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a zobrazte všechna předplatná přiřazená k vaší e-mailové adrese. Pokud nevidíte všechna Vaše předplatná, může být jedna nebo více přiřazená k jiné e-mailové adrese.  K zobrazení těchto předplatných se budete muset přihlásit pomocí této e-mailové adresy.
 
-## <a name="support-resources"></a>Informační zdroje podpory
-- Potřebujete pomoc s EMS?  Podívejte se na online [dokumentace k EMS](/enterprise-mobility-security/).
-- Pro technickou podporu pro všechny součásti EMS, navštivte prosím [nejčastější dotazy podpory EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) najít správné podpory pro váš dotaz.
-- Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
-- Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+## <a name="support-resources"></a>Prostředky podpory
+- Potřebujete pomáhat s EMS?  Projděte si online [dokumentaci k EMS](/enterprise-mobility-security/).
+- Technickou podporu pro všechny komponenty EMS najdete v tématu [Nejčastější dotazy k podpoře EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) , kde najdete správnou podporu pro vaši otázku.
+- Pokud potřebujete pomoc s prodejem, předplatnými, účty a fakturací za předplatná sady Visual Studio, kontaktujte [podporu](https://visualstudio.microsoft.com/subscriptions/support/)předplatných sady Visual Studio
+- Máte dotaz o integrovaném vývojovém prostředí (IDE) sady Visual Studio, Azure DevOps Services nebo jiných produktech nebo službách sady Visual Studio?  Navštivte [podporu sady Visual Studio](https://visualstudio.microsoft.com/support/).
