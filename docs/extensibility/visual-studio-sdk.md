@@ -1,5 +1,5 @@
 ---
-title: Visual Studio SDK | Dokumentace Microsoftu
+title: Sada Visual Studio SDK | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,84 +14,84 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b713015bc2ee1f42fdf331521a990d89eb6adbcd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 41bffbc248d9004248a3552f335dccefaba72cca
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323095"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822157"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
-Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo systém integrovat nové funkce do sady Visual Studio. Můžete distribuovat rozšíření ostatním uživatelům, tak na Visual Studio Marketplace. Tady jsou některé způsoby, ve kterém můžete rozšíření sady Visual Studio:
+Sada Visual Studio SDK vám pomůže s rozšiřováním funkcí sady Visual Studio nebo integrací nových funkcí do sady Visual Studio. Rozšíření můžete distribuovat dalším uživatelům i Visual Studio Marketplace. Níže jsou uvedeny některé způsoby, jak můžete sadu Visual Studio rozšíří:
 
-- Přidání příkazů, tlačítek, nabídek a další prvky uživatelského rozhraní do integrovaného vývojového prostředí
+- Přidání příkazů, tlačítek, nabídek a dalších prvků uživatelského rozhraní do integrovaného vývojového prostředí
 
-- Přidat nové funkce okna nástrojů
+- Přidat okna nástrojů pro nové funkce
 
-- Rozšíření technologie IntelliSense pro daný jazyk, nebo na poskytovat technologii IntelliSense pro nový programovací jazyky
+- Rozšiřování technologie IntelliSense pro daný jazyk nebo poskytnutí IntelliSense pro nové programovací jazyky
 
-- Ikony žárovky používat k poskytování pomocné parametry a návrhy, které pomáhá vývojářům psát lepší kód
+- Používejte žárovky k poskytování pomocných rad a návrhů, které vývojářům pomůžou psát lepší kód.
 
 - Povolit podporu pro nový jazyk
 
-- Přidat do vlastního typu projektu
+- Přidat vlastní typ projektu
 
-- Oslovení miliónů vývojářů prostřednictvím Visual Studio Marketplace
+- Oslovení milionů vývojářů prostřednictvím Visual Studio Marketplace
 
-  Pokud jste nikdy napsali před rozšíření sady Visual Studio, byste měli najít další informace o těchto funkcích a na [Začínáme s vývojem rozšíření sady Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).
+  Pokud jste ještě nikdy nezapsali rozšíření sady Visual Studio, měli byste najít další informace o těchto funkcích a [začít vyvíjet rozšíření sady Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).
 
 ## <a name="install-the-visual-studio-sdk"></a>Instalace sady Visual Studio SDK
- Visual Studio SDK je volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Sada Visual Studio SDK je volitelnou funkcí instalačního programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="whats-new-in-the-visual-studio-2017-sdk"></a>Co je nového ve Visual Studio 2017 SDK
- Visual Studio SDK má několik nových funkcí, jako je formát VSIX v3, jakož i rozbíjející změny, které by mohly vyžadovat aktualizace rozšíření. Další informace najdete v tématu [co je nového ve Visual Studio 2017 SDK](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md).
+## <a name="whats-new-in-the-visual-studio-2017-sdk"></a>Co je nového v sadě Visual Studio 2017 SDK
+ Sada Visual Studio SDK obsahuje některé nové funkce, jako je například formát VSIX v3, a také zásadní změny, které mohou vyžadovat aktualizaci rozšíření. Další informace najdete v tématu [co je nového v sadě Visual Studio 2017 SDK](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md).
 
-## <a name="visual-studio-user-experience-guidelines"></a>Visual Studio zkušenosti uživatelů
- Skvělé tipy k návrhu uživatelského rozhraní pro rozšíření v [zkušenosti uživatelů sady Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+## <a name="visual-studio-user-experience-guidelines"></a>Pokyny pro uživatelské prostředí sady Visual Studio
+ V pokynech pro [uživatelské prostředí sady Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)získáte Skvělé tipy pro návrh uživatelského rozhraní pro vaše rozšíření.
 
- Můžete také zjistíte, jak vypadají skvěle na vysoké rozlišení DPI zařízení pomocí rozšíření [vydává adresu DPI](../extensibility/addressing-dpi-issues2.md) článku.
+ Můžete se také seznámit s tím, jak se má vaše rozšíření na zařízeních s vysokým rozlišením DPI zobrazovat v článku s [problémy s adresou dpi](../extensibility/addressing-dpi-issues2.md) .
 
- Využijte výhod [Image service a katalog](../extensibility/image-service-and-catalog.md) Správa skvělé imagí a podpora vysokého nastavení DPI a motivů.
+ Využijte výhod [služby image a katalogu](../extensibility/image-service-and-catalog.md) pro skvělou správu imagí a podporu vysokého rozlišení DPI.
 
-## <a name="find-and-install-existing-visual-studio-extensions"></a>Najít a nainstalovat rozšíření existující sady Visual Studio
- S rozšířeními Visual Studia můžete najít **rozšíření a aktualizace** dialogového okna na **nástroje** nabídky. Další informace najdete v tématu [hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Rozšíření můžete také vyhledat [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
+## <a name="find-and-install-existing-visual-studio-extensions"></a>Vyhledat a nainstalovat existující rozšíření sady Visual Studio
+ Rozšíření sady Visual Studio najdete v dialogovém okně **rozšíření a aktualizace** v nabídce **nástroje** . Další informace najdete v tématu [hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). V [Visual Studio Marketplace](https://marketplace.visualstudio.com/) můžete také najít rozšíření.
 
-## <a name="visual-studio-sdk-reference"></a>Referenční dokumentace jazyka Visual Studio SDK
- Můžete najít referenční dokumentace rozhraní API sady Visual Studio SDK na [referenční dokumentace jazyka Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
+## <a name="visual-studio-sdk-reference"></a>Referenční informace k sadě Visual Studio SDK
+ Referenční informace k rozhraní API sady Visual Studio SDK najdete v referenčních informacích k [sadě Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
 
 ## <a name="visual-studio-sdk-samples"></a>Ukázky sady Visual Studio SDK
- Můžete najít příklady opensourcové rozšíření VS SDK na Githubu v [ukázky sady Visual Studio](https://aka.ms/vs2015sdksamples). Úložiště GitHub obsahuje ukázky, které ukazují různé rozšiřitelné funkce v sadě Visual Studio.
+ Příklady open source rozšíření sady VS SDK najdete na webu GitHub v sadě [Visual Studio Samples](https://aka.ms/vs2015sdksamples). Toto úložiště GitHub obsahuje ukázky, které ilustrují různé rozšiřitelné funkce v aplikaci Visual Studio.
 
 ## <a name="other-visual-studio-sdk-resources"></a>Další prostředky sady Visual Studio SDK
- Pokud máte dotazy týkající VSSDK nebo chcete sdílet vaše prostředí pro vývoj rozšíření, můžete použít [Visual Studio Extensibility fórum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) nebo [ExtendVS Gitteru Chatroom](https://gitter.im/Microsoft/extendvs).
+ Pokud máte dotazy týkající se VSSDK nebo chcete sdílet své zkušenosti s vývojem rozšíření, můžete použít [Fórum rozšiřitelnosti sady Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) nebo [extendvs gitteru chatroom](https://gitter.im/Microsoft/extendvs).
 
- Můžete najít další informace najdete v [VSX Arcana blogu](https://blogs.msdn.microsoft.com/vsx/) a počet blogy autorem MVPs společnosti Microsoft:
+ Další informace najdete na [blogu VSX Arcana](https://blogs.msdn.microsoft.com/vsx/) a v několika blogůch zapsaných přes Microsoft MVP:
 
 - [Oblíbená rozšíření sady Visual Studio](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
 
-- [Rozšíření produktu Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
+- [Rozšiřitelnost sady Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
 
 - [Rozšíření sady Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>Viz také:
 - [Vytvoření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)
-- [Postupy: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
+- [Postupy: Migrace rozšiřujících projektů do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
 - [Časté otázky: Převádění doplňků na rozšíření VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
 - [Správa více vláken ve spravovaném kódu](../extensibility/managing-multiple-threads-in-managed-code.md)
-- [Rozšíření nabídek a příkazů](../extensibility/extending-menus-and-commands.md)
-- [Přidání příkazů na panely nástrojů](../extensibility/adding-commands-to-toolbars.md)
-- [Rozšíření a přizpůsobení nástrojů systému windows](../extensibility/extending-and-customizing-tool-windows.md)
-- [Jazyk a Editor rozšíření služeb](../extensibility/editor-and-language-service-extensions.md)
-- [Rozšíření projektů](../extensibility/extending-projects.md)
-- [Rozšířit možnosti a nastavení uživatele](../extensibility/extending-user-settings-and-options.md)
+- [Rozšiřování nabídek a příkazů](../extensibility/extending-menus-and-commands.md)
+- [Přidat příkazy na panely nástrojů](../extensibility/adding-commands-to-toolbars.md)
+- [Rozšiřování a přizpůsobení oken nástrojů](../extensibility/extending-and-customizing-tool-windows.md)
+- [Editor a rozšíření služby jazyka](../extensibility/editor-and-language-service-extensions.md)
+- [Roztažení projektů](../extensibility/extending-projects.md)
+- [Rozšíří uživatelská nastavení a možnosti.](../extensibility/extending-user-settings-and-options.md)
 - [Vytváření vlastních šablon projektů a položek](../extensibility/creating-custom-project-and-item-templates.md)
-- [Rozšíření vlastností a okno Vlastnosti](../extensibility/extending-properties-and-the-property-window.md)
-- [Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Rozšířené vlastnosti a okno vlastností](../extensibility/extending-properties-and-the-property-window.md)
+- [Rozšiřování dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Používání a poskytování služeb](../extensibility/using-and-providing-services.md)
-- [Správa rozšíření VSPackages](../extensibility/managing-vspackages.md)
-- [Prostředí sady Visual Studio izolovaný režim](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
-- [Dodávejte rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
+- [Spravovat VSPackage](../extensibility/managing-vspackages.md)
+- [Izolované prostředí sady Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
+- [Dodávat rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Práce se sadou Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)
 - [Podpora sady Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)
 - [Archivace](../extensibility/archive.md)
-- [Referenční dokumentace jazyka Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)
+- [Referenční informace k sadě Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)

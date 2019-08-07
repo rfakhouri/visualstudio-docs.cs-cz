@@ -1,6 +1,7 @@
 ---
 title: Kreslení tvarů a cest
-ms.date: 11/04/2016
+titleSuffix: Blend for Visual Studio
+ms.date: 07/31/2019
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
@@ -8,112 +9,118 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 948f18ef9abbea1b54346a86b950b90a82ade1ba
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820430"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821895"
 ---
 # <a name="draw-shapes-and-paths"></a>Kreslení tvarů a cest
 
-V Návrháři XAML *tvar* je přesně to, co byste očekávali. Příklad: obdélník, kruh nebo elipsu. A *cesta* je flexibilnější verze tvaru. Můžete třeba je změnit tvar nebo kombinovat společně na formulář nové obrazce.
+V Návrhář XAML je *tvar* přesně to, co byste očekávali. Například: obdélník, kruh nebo elipsa. *Cesta* je flexibilnější verze tvaru. Můžete provádět akce, jako je jejich změna tvaru nebo jejich kombinování, aby bylo možné vytvořit nové tvary.
 
-Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na displejích s vysokým rozlišením. Pokud chcete získat další informace o vektorové grafiky, naleznete v tématu [co jsou vektorové grafiky](https://www.youtube.com/watch?v=MoCSwF0n-io) nebo [vektorové grafiky](http://www.webopedia.com/TERM/V/vector_graphics.html).
+Obrazce a cesty používají vektorovou grafiku, takže se na displeje s vysokým rozlišením zvětšují.
 
-## <a name="Shape"></a> Nakreslit obrazec
- Tvary můžete najít **prostředky** panelu.
+## <a name="draw-a-shape"></a>Nakreslit obrazec
 
- ![Kategorii prvků na panelu aktiva](../designers/media/b4_shapes_assetspanel.png)
+V okně Assety vyhledejte obrazce.
 
- Žádný obrazec, který chcete přetáhněte na návrhovou plochu. Pak můžete popisovače obrazce škálování, otáčet, přesunout nebo zkosení tvar.
+![Kategorie Shapes v okně Assety](../designers/media/blend-shapes.png)
 
- ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
+Přetáhněte libovolný tvar, který chcete na návrhovou plochu. Pak použijte táhla obrazce pro škálování, otočení, přesunutí nebo zkosení obrazce.
 
-## <a name="Path"></a> Nakreslení cesty
- Cesta je řada připojených čar a křivek. Můžete vytvářet zajímavé tvary, které nejsou k dispozici v cestu **prostředky** panelu.
+![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
- Nakreslení cesty pomocí spojnicovém, psaní perem nebo tužky. Můžete najít v těchto nástrojů **nástroje** panelu.
+## <a name="draw-a-path"></a>Nakreslit cestu
 
- ![Nástroje pero](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png) ![Možnosti nástroje pero](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png)
+Cesta je řada propojených čar a křivek. Použijte cestu k vytvoření zajímavých tvarů, které nejsou k dispozici v okně assety.
+
+Můžete nakreslit cestu pomocí čáry, pera nebo tužky. Tyto nástroje můžete najít v okně **nástroje** .
 
 ### <a name="draw-a-straight-line"></a>Nakreslení rovné čáry
- Použití **pera** nástroj ![nástroje pero](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png), nebo **řádku** nástroj ![čára](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png).
 
- **S nástrojem pero** ![nástroje pero](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)
+Použijte nástroj **pero** nebo nástroj **čára** .
 
- Na návrhové ploše kliknutím definujte počáteční bod a poté opětovným kliknutím definujte konec řádku.
+**Použití nástroje pero**
 
- **Pomocí nástroje řádku** ![čára](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png)
+Na návrhové ploše klikněte jednou, abyste definovali počáteční bod, a potom klikněte znovu na definovat konec řádku.
 
- Na návrhové ploše přetáhnout z kde chcete řádek, který spustí a uvolněte v místě, kde chcete řádek na konec.
+**Pomocí nástroje čára**
+
+Na návrhové ploše přetáhněte z místa, kde má být řádek spuštěn, a potom uvolněte místo, kde má řádek končit.
 
 ### <a name="draw-a-curve"></a>Nakreslení křivky
- Použití **pera** nástroj ![nástroje pero](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
 
- Na návrhové ploše jedním kliknutím definujte počáteční bod řádku a potom klikněte na tlačítko a táhnutím ukazatele k vytvoření požadovaného křivky.
+Použijte nástroj **pero** .
 
- Pokud chcete zavřít cestu, klikněte na první bod na řádku.
+Na návrhové ploše klikněte jednou a definujte počáteční bod řádku a potom klikněte a přetáhněte ukazatel myši k vytvoření požadované křivky.
+
+Pokud chcete cestu zavřít, klikněte na první bod na řádku.
 
 ### <a name="change-the-shape-of-a-curve"></a>Změna tvaru křivky
- Použití **přímý výběr** nástroj ![nástroje přímý výběr](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png).
 
- Klikněte na tvar a přetáhněte libovolného bodu na tvar, který má změnit křivky.
+Použijte nástroj **přímý výběr** .
+
+Klikněte na tvar a potom přetažením libovolného bodu na tvaru změňte obrazce křivky.
 
 ### <a name="draw-a-free-form-path"></a>Nakreslení cesty volného tvaru
- Použití **tužky** nástroj ![tužka](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png).
 
- Na návrhové ploše nakreslení cesty volného tvaru, stejně jako při použití skutečné tužky.
+Použijte nástroj **Tužka** .
 
-### <a name="remove-part-of-a-path"></a>Odstranění části cesty
- Použití **přímý výběr** nástroj ![nástroje přímý výběr](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png).
+Na návrhové ploše nakreslete cestu k volnému formátu stejným způsobem jako při použití skutečné tužky.
 
- Vyberte cestu, která obsahuje segment, který chcete odstranit a potom klikněte na tlačítko **odstranit** tlačítko.
+### <a name="remove-part-of-a-path"></a>Odebrání části cesty
 
-### <a name="remove-a-point-in-a-path"></a>Odebrání bodu cestě
- Použití **výběr** nástroj ![nástroj pro výběr](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)a **pera** nástroj ![nástroje pero](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
+Použijte nástroj **přímý výběr** .
 
- Použití **výběr** nástroj ![nástroj pro výběr](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) vyberte cestu. Potom použijte **pera** nástroj ![nástroje pero](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) kliknout na bod, který chcete odebrat.
+Vyberte cestu obsahující segment, který chcete odstranit, a potom klikněte na tlačítko **Odstranit** .
 
-### <a name="add-a-point-to-a-path"></a>Přidat bod na cestu
- Použití **výběr** nástroj ![nástroj pro výběr](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)a **pera** nástroj ![nástroje pero](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
+### <a name="remove-a-point-in-a-path"></a>Odebrání bodu v cestě
 
- Použití **výběr** nástroj ![nástroj pro výběr](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) vyberte cestu. Použití **pera** nástroj ![nástroje pero](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) k klikněte na libovolné místo v cestě, kam chcete přidat bod.
+Pomocí nástroje **Výběr** vyberte cestu. Pak pomocí nástroje **pero** klikněte na bod, který chcete odebrat.
 
-## <a name="Convert"></a> Převod tvaru na cestu
- Pokud chcete změnit tvar stejným způsobem, že změníte cestu, převod tvaru na cestu.
+### <a name="add-a-point-to-a-path"></a>Přidat bod do cesty
 
- **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Převod tvaru na cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+Pomocí nástroje **Výběr** vyberte cestu. Pomocí nástroje **pero** klikněte na libovolné místo na cestě, kam chcete bod přidat.
 
-## <a name="Combine"></a> Spojit cesty
- Cesty a tvary můžete zkombinovat do jedné cesty.
+## <a name="convert-a-shape-to-a-path"></a>Převod tvaru na cestu
 
- ![Spojit cesty](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
+Chcete-li upravit tvar stejným způsobem, jakým jste změnili cestu, převeďte tvar na cestu. Vyberte tvar a pak vyberte **Formát** > **převést na cestu** **cesta** > .
+
+**Podívejte se na krátké video:** ![Konfigurace nainstalovaných](../designers/media/bldadminconsoleinitialconfigicon.png) funkcí [pracujících s cestami: Převod tvaru na cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+
+> [!NOTE]
+> **Převést na cestu** není aktuálně k dispozici pro aplikace pro UWP, které `TargetPlatformVersion` mají minimálně 10.0.16299.0 nebo novější.
+
+## <a name="combine-paths"></a>Kombinovat cesty
+
+Cesty a tvary můžete zkombinovat do jedné cesty.
+
+![Kombinovat cesty](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
 |||||
 |-|-|-|-|
-|![Dva tvary před kombinování](../designers/media/b1_1.png)|Dva tvary před kombinování|![Intersect](../designers/media/b1_4.png)|Intersect|
-|![Sjednocení](../designers/media/b1_2.png)|Sjednocení|![Vyloučit překryv](../designers/media/b1_5.png)|Vyloučit překryv|
-|![Dělení](../designers/media/b1_3.png)|Dělení|![Odečíst](../designers/media/b1_6.png)|Odečíst|
+|![Dva obrazce před kombinováním](../designers/media/b1_1.png)|Dva obrazce před kombinováním|![Krývají](../designers/media/b1_4.png)|Krývají|
+|![Toho](../designers/media/b1_2.png)|Toho|![Vyloučit překryv](../designers/media/b1_5.png)|Vyloučit překryv|
+|![Rozdělovací](../designers/media/b1_3.png)|Rozdělovací|![Odečten](../designers/media/b1_6.png)|Odečten|
 
- **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Kombinace cesty](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
+**Podívejte se na krátké video:** ![Konfigurace nainstalovaných](../designers/media/bldadminconsoleinitialconfigicon.png) funkcí [pracujících s cestami: Kombinování](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)cest.
 
-## <a name="Compound"></a> Vytvořit složenou cestu
- Při vytváření složené cesty protínající části cesty jsou odečtena od výsledku a výslednou cestu převezme visual vlastnosti nejspodnějších cesty.
+## <a name="create-a-compound-path"></a>Vytvořit složenou cestu
 
- Můžete přerušit od sebe složené cesty kdykoli po jeho vytvoření.
+Když vytváříte složenou cestu, všechny protínající se části cest odečtou od výsledku a výsledná cesta přebírá vizuální vlastnosti nejspodnější cesty.
 
- ![Přerušit složenou cestu](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
+Složenou cestu můžete kdykoli po vytvoření rozdělit do všech časových teček.
 
- **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Vytvořit složenou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
+![Rozdělit složenou cestu](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
-## <a name="Clipping"></a> Vytvořit ořezovou cestu
- Ořezové cesty je cesta nebo tvar, který se použije na jiný objekt skrytí částí maskované objektu, které spadají mimo ořezové cesty.
+**Podívejte se na krátké video:** ![Konfigurace nainstalovaných](../designers/media/bldadminconsoleinitialconfigicon.png) funkcí [pracujících s cestami: Vytvořte složenou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
- ![Ořezovou cestu](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
+## <a name="create-a-clipping-path"></a>Vytvořit ořezovou cestu
 
- **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Vytvořit ořezovou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
+Ořezová cesta je cesta nebo tvar, který je použit na jiný objekt, skrývání částí maskovaného objektu, které spadají mimo ořezovou cestu.
 
-## <a name="see-also"></a>Viz také:
+![Ořezová cesta](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
-- [Vytvoření uživatelského rozhraní pomocí nástroje Blend pro Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+**Podívejte se na krátké video:** ![Konfigurace nainstalovaných](../designers/media/bldadminconsoleinitialconfigicon.png) funkcí [pracujících s cestami: Vytvořte ořezovou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).

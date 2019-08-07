@@ -1,5 +1,6 @@
 ---
-title: Klávesové zkratky v Blendu
+title: Klávesové zkratky
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -8,112 +9,112 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38eaaa42ae0869ae26f0a048f69a94684b240c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7dc340b25f5a900c9456f56587e39dede6e0ad2
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844322"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821735"
 ---
-# <a name="keyboard-shortcuts-in-blend"></a>Klávesové zkratky v Blendu
+# <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Klávesové zkratky v Blend pro Visual Studio
 
-## <a name="project-shortcuts"></a>Klávesové zkratky projektu
+## <a name="project-shortcuts"></a>Zástupci projektu
 
-|Provedete to tak|Postup|
+|K tomu|Postup|
 |----------------|-------------|
 |Vytvoření nového projektu|**Ctrl**+**Shift**+**N**|
-|Otevřete projekt nebo řešení (ne web)|**Ctrl**+**Shift**+**O**|
+|Otevřít projekt nebo řešení (ne Web)|**CTRL**+ **+ SHIFT** O+|
 |Zavřít řešení|**Ctrl**+**Shift**+**C**|
-|Uložit kopii tohoto řešení nebo webu|**Ctrl**+**Shift**+**P**|
+|Uložit kopii řešení nebo webu|**CTRL**+ **+ SHIFT**++|
 |Přidat existující položku do projektu|**Ctrl**+**I**|
-|Přidat odkaz na knihovnu DLL (WPF)|**ALT**+**Shift**+**R**|
+|Přidat odkaz na knihovnu DLL (WPF)|**ALT**+**SHIFT** R+|
 |Sestavení projektu|**Ctrl**+**Shift**+**B**|
 |Testování projektu nebo webu|**F5**|
 
-## <a name="document-shortcuts"></a>Zástupce dokumentů
+## <a name="document-shortcuts"></a>Zástupci dokumentů
 
-|Provedete to tak|Postup|
+|K tomu|Postup|
 |----------------|-------------|
-|Přepínat mezi otevřenými dokumenty|**Ctrl**+**Tab**|
+|Přepínání mezi otevřenými dokumenty|**Ctrl**+**Tab**|
 |Uložit aktivní dokument|**Ctrl**+**S**|
-|Uložily všechny dokumenty.|**Ctrl**+**Shift**+**S**|
+|Uložit všechny dokumenty|**Ctrl**+**Shift**+**S**|
 |Zavřít aktivní dokument|**Ctrl**+**W**|
-|Zavřete všechny otevřené dokumenty|**Ctrl**+**Shift**+**W**|
-|Vrátí poslední akci.|**Ctrl**+Z|
-|Zopakovat poslední akci, která byla vrácena zpět|**CTRL**+ Y nebo **Ctrl**+**Shift**+**Z**|
-|Vytvořit poznámky k návrhu|**Ctrl**+**Shift**+**T**|
+|Zavřít všechny otevřené dokumenty|**Ctrl**+**Shift**+**W**|
+|Vrátit zpět poslední akci|**Ctrl**+Z|
+|Zopakuje poslední akci, která byla vrácena zpět.|**CTRL**+ Y nebo **CTRL**+**SHIFT**+**Z**|
+|Vytvoření poznámky k době návrhu|**Ctrl**+**Shift**+**T**|
 |Vyjmout|**Ctrl**+**X**|
 |Kopírovat|**Ctrl**+**C**|
 |Vložit|**Ctrl**+**V**|
 |Odstranit|**Delete**|
-|Najít text (zobrazení XAML nebo JavaScript – editor jenom)|**CTRL**+**F**|
-|Najde další výskyt text (zobrazení XAML nebo JavaScript – editor jenom)|**F3** nebo **Ctrl**+**H**|
+|Najít text (jenom zobrazení XAML nebo editor JavaScript)|**CTRL**+**F**|
+|Najde další výskyt textu (jenom zobrazení XAML nebo editor JavaScriptu).|**F3** nebo **CTRL**+**H**|
 
-## <a name="object-shortcuts"></a>Zástupce objektů
+## <a name="object-shortcuts"></a>Zástupci objektů
 
-|Provedete to tak|Postup|
+|K tomu|Postup|
 |----------------|-------------|
 |Vytvořit novou položku|**Ctrl**+**N**|
-|Duplicitní objektu|Podržte stisknutou klávesu **Alt** a přetáhněte objekt|
-|Změnu nadřazení objektu|Přetáhněte objekt na panel rozložení a stiskněte klávesu **Alt**|
-|Úprava textu v ovládacím prvku|**F2** (**Esc** ukončíte)|
+|Duplikování objektu|Podržte klávesu **ALT** a přetáhněte objekt.|
+|Nadřadit objekt|Přetáhněte objekt na panel rozložení a stiskněte klávesu **ALT** .|
+|Úprava textu v ovládacím prvku|**F2** (**Klávesa ESC** pro ukončení)|
 |Upravit ovládací prvek (WPF)|**CTRL**+**E**|
-|Nastavit stejnou šířku vybraných objektů.|**Ctrl**+**Shift**+**1**|
-|Ujistěte se stejnou výškou vybrané objekty|**Ctrl**+**Shift**+**2**|
-|Nastavit stejnou velikost vybraných objektů.|**Ctrl**+**Shift**+**9**|
-|Vybraný objekt Převrátit vodorovně|**Ctrl**+**Shift**+**3**|
-|Vybraný objekt svisle Převrátit|**Ctrl**+**Shift**+**4**|
-|Vybrat více objektů|Podržte stisknutou klávesu **Ctrl**|
-|Vybrat více objektů sousední|Podržte stisknutou klávesu **Shift**|
-|Přizpůsobit výběru velikosti obrazovky|**Ctrl**+**9**|
-|Připnout aktivní kontejner|**Ctrl**+**Shift**+**D**|
-|Posunout vybrané objekty|**Šipka** klíče|
-|Automaticky změnit šířku|**Ctrl**+**Shift**+**5**|
-|Automatická velikost výška|**Ctrl**+**Shift**+**6**|
+|Nastavit u vybraných objektů stejnou šířku|**Ctrl**+**Shift**+**1**|
+|Nastavit vybrané objekty jako stejnou výšku|**Ctrl**+**Shift**+**2**|
+|Nastavit vybrané objekty jako stejné velikosti|**Ctrl**+**Shift**+**9**|
+|Překlopit vybraný objekt vodorovně|**Ctrl**+**Shift**+**3**|
+|Překlopit vybraný objekt svisle|**Ctrl**+**Shift**+**4**|
+|Vybrat více objektů|Podržte **klávesu CTRL**|
+|Výběr více sousedících objektů|Podržte **SHIFT** .|
+|Přizpůsobit výběru na velikost obrazovky|**Ctrl**+**9**|
+|Připnout aktivní kontejner|**CTRL**+**SHIFT** D+|
+|Posunout vybrané objekty|Klávesy se **šipkami**|
+|Šířka automatické velikosti|**Ctrl**+**Shift**+**5**|
+|Automatická velikost výšky|**Ctrl**+**Shift**+**6**|
 |Seskupení objektů do panelu rozložení|**Ctrl**+**G**|
-|Zrušení seskupení objektů|**Ctrl**+**Shift**+**G**|
-|Přenese vybraný objekt dopředu|**Ctrl**+**Shift**+**]**|
-|Přenést blíž|**Ctrl**+**]**|
-|Přenese vybraný objekt do pozadí|**Ctrl**+**Shift**+**[**|
-|Přenést dál|**Ctrl**+**[**|
-|Nastavení uživatelského ovládacího prvku z vybraných objektů (WPF)|**F8**|
-|Zachovat poměr stran objektů|Podržte stisknutou klávesu **Shift** při přetažení objektu|
-|Otočení objektu v přírůstcích po 15 stupňů|Podržte stisknutou klávesu **Shift** při otočení objektu|
+|Oddělit objekty|**CTRL**+**SHIFT** G+|
+|Přenést vybraný objekt do popředí|**Ctrl**+**Shift**+ **]**|
+|Přenést do popředí|**Ctrl**+ **]**|
+|Poslat vybraný objekt zpátky|**Ctrl**+**Shift**+ **[**|
+|Přenést dál|**Ctrl**+ **[**|
+|Vytvoření uživatelského ovládacího prvku z vybraných objektů (WPF)|**F8**|
+|Omezení proporcí objektů|Při přetahování objektu držte klávesu **SHIFT**|
+|Otočení objektu o 15 stupňů přírůstku|Při otáčení objektu podržte klávesu **SHIFT** .|
 |Vytvořit ořezovou cestu|**Ctrl**+**7**|
-|Uvolnit ořezovou cestu|**Ctrl**+**Shift**+**7**|
+|Uvolnění ořezové cesty|**Ctrl**+**Shift**+**7**|
 |Vytvořit složenou cestu|**Ctrl**+**8**|
-|Uvolnit složenou cestu|**Ctrl**+**Shift**+**8**|
-|Uzamknout výběr|**Ctrl**+**L**|
-|Odemknutí všech objektů|**Ctrl**+**Shift**+**L**|
+|Uvolnění složené cesty|**Ctrl**+**Shift**+**8**|
+|Zamknout výběr|**Ctrl**+**L**|
+|Odemknout všechny objekty|**Ctrl**+**Shift**+**L**|
 |Zobrazit výběr|**Ctrl**+**T**|
 |Skrýt výběr|**Ctrl**+**3**|
 |Vybrat všechny objekty|**Ctrl**+**A**|
-|Zrušte výběr všech objektů|**Ctrl**+**Shift**+**A**|
+|Vymazat výběr všech objektů|**CTRL**+ **+ SHIFT** A+|
 
-## <a name="view-shortcuts"></a>Zobrazit klávesové zkratky
+## <a name="view-shortcuts"></a>Zobrazit zástupce
 
-|Provedete to tak|Postup|
+|K tomu|Postup|
 |----------------|-------------|
-|Přepínání mezi **návrhu**, **kód**, a **rozdělení** zobrazení|**F11**|
-|Přiblížit na návrhové ploše|**CTRL**+**znaménka rovnosti** (**=**)|
-|Horizonální oddálení na návrhové ploše|**CTRL**+**znaménko Minus** (**-**)|
+|Přepínání mezi zobrazeními **návrhu**, **kódu**a **rozděleného**|**F11**|
+|Přiblížení na návrhovou plochu|**CTRL**+ **=** rovnítko ( **=** )|
+|Oddálení na návrhové ploše|**CTRL +** +**mínus Sign** ( **-** )|
 |Přiblížení nebo oddálení na návrhové ploše|Otočení kolečka myši|
-|Návrhové ploše přesuňte doleva nebo doprava|**SHIFT** a otočení kolečka myši|
-|Přesunout nahoru nebo dolů návrhové ploše|**CTRL** a otočení kolečka myši|
-|Přizpůsobit výběru velikosti obrazovky|**Ctrl**+**0**|
-|Návrhové ploše zobrazit ve skutečné velikosti|**Ctrl**+**1**|
-|Umožňuje zobrazit nebo skrýt obslužné rutiny|**F9**|
-|Umožňuje zobrazit nebo skrýt ohraničení objektu|**CTRL**+**Shift**+**H**|
-|Přepínání mezi **návrhu**, **XAML**, a **rozdělení** zobrazení|**F11**|
+|Přesunout návrhovou plochu doleva nebo doprava|**Posunutí** a otočení kolečka myši|
+|Přesunout návrhovou plochu nahoru nebo dolů|**CTRL** a otočení kolečka myši|
+|Přizpůsobit výběru na velikost obrazovky|**Ctrl**+**0**|
+|Zobrazit návrhovou plochu ve skutečné velikosti|**Ctrl**+**1**|
+|Zobrazit nebo skrýt úchyty|**F9**|
+|Zobrazit nebo skrýt hranice objektů|**CTRL**+**Shift**+**H**|
+|Přepínání mezi zobrazeními **Návrh**, **XAML**a **rozdělená**|**F11**|
 
-## <a name="workspace-shortcuts"></a>Zástupců pracovního prostoru
+## <a name="workspace-shortcuts"></a>Zástupci v pracovním prostoru
 
-|Provedete to tak|Postup|
+|K tomu|Postup|
 |----------------|-------------|
-|Přepínání mezi **animace** a **návrhu** pracovních prostorů|**Ctrl**+**F11**|
-|Umožňuje zobrazit nebo skrýt **prostředky** panel|**CTRL**+**období**|
-|Umožňuje zobrazit nebo skrýt **výsledky** panel|**F12**|
-|Zobrazení nebo skrytí všech panelů|**F4**|
+|Přepínání mezi pracovními prostory s **animací** a **návrhem**|**Ctrl**+**F11**|
+|Zobrazit nebo skrýt panel **aktiva**|CTRL+–**tečka**|
+|Zobrazit nebo skrýt panel **výsledků**|**F12**|
+|Zobrazit nebo skrýt všechny panely|**F4**|
 |Resetování rozložení aktivního pracovního prostoru|**Ctrl**+**Shift**+**R**|
-|Posunout pracovního prostoru|Podržte stisknutou klávesu **MEZERNÍK**|
-|Dočasně použít **výběr** nástroj (zatímco jiné nástroje pro ně zaškrtnuto)|Podržte stisknutou klávesu **Ctrl**|
+|Posunout pracovní prostor|Držte klávesu **MEZERNÍK**|
+|Dočasné použití nástroje **Výběr** (když zůstane vybraný jiný nástroj)|Podržte **klávesu CTRL**|

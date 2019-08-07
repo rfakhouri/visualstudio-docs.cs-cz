@@ -1,5 +1,5 @@
 ---
-title: Možnosti stylu kódu a kód čištění
+title: Možnosti stylu kódu a vyčištění kódu
 ms.date: 04/25/2019
 ms.topic: conceptual
 author: gewarren
@@ -10,35 +10,35 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c31a04d5471224ed8433bba70baa5bd1dae9125e
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 4c7bb8f3e94a761023a19a5ea3361073b73d9f3b
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328766"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822428"
 ---
 # <a name="code-style-preferences"></a>Předvolby stylu kódu
 
-Kód stylu nastavení jednotlivých projektů můžete definovat pomocí [souborů EditorConfig](#code-styles-in-editorconfig-files), nebo pro celý kód upravíte v sadě Visual Studio v textovém editoru [ **možnosti** stránky](#code-styles-in-the-options-dialog-box). Pro C# kódu, můžete taky nakonfigurovat sady Visual Studio, chcete-li použít tyto předvolby stylu kódu pomocí **vyčištění kódu** (Visual Studio 2019) a **formátovat dokument** příkazy (Visual Studio 2017).
+Můžete definovat nastavení stylu kódu pro jednotlivé projekty pomocí [souboru EditorConfig](#code-styles-in-editorconfig-files)nebo pro veškerý kód, který upravíte v aplikaci Visual Studio na [stránce **Možnosti** ](#code-styles-in-the-options-dialog-box)textového editoru. Pro C# kód můžete také nakonfigurovat aplikaci Visual Studio, aby používala Tyto předvolby stylu kódu pomocí příkazů pro **Vyčištění kódu** (Visual Studio 2019) a **formátovat dokument** (Visual Studio 2017).
 
 > [!NOTE]
 > Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [chování editoru v sadě Visual Studio pro Mac](/visualstudio/mac/editor-behavior).
 
 ## <a name="code-styles-in-editorconfig-files"></a>Styly kódu v souborech EditorConfig
 
-[Nastavení stylu kódu](../ide/editorconfig-code-style-settings-reference.md) pro .NET se dá nastavit tak, že přidáte [EditorConfig](create-portable-custom-editor-options.md) soubor do projektu. EditorConfig soubory jsou spojeny se základ kódu, spíše než účtem přizpůsobení sady Visual Studio. Nastavení v souboru EditorConfig přednost styly kódu, které jsou určené v **možnosti** dialogové okno. Používejte soubor EditorConfig, pokud chcete vynutit kódování styly pro všechny uživatele k projektu nebo úložiště.
+[Nastavení stylu kódu](../ide/editorconfig-code-style-settings-reference.md) pro rozhraní .NET lze určit přidáním souboru [EditorConfig](create-portable-custom-editor-options.md) do projektu. Soubory EditorConfig jsou přidruženy k základu kódu a nikoli k účtu přizpůsobení sady Visual Studio. Nastavení v souboru EditorConfig mají přednost před styly kódu, které jsou uvedeny v dialogovém okně **Možnosti** . Soubor EditorConfig použijte, pokud chcete vymáhat styly kódování pro všechny přispěvatele do vašeho úložiště nebo projektu.
 
 ::: moniker range=">=vs-2019"
 
-EditorConfig souboru můžete naplnit ručně nebo můžete automaticky vygenerovat soubor podle nastavení stylu kódu, kterou jste zvolili v sadě Visual Studio **možnosti** dialogové okno. Tato stránka možností je k dispozici na **nástroje** > **možnosti** > **textový Editor** > [**C#** nebo  **Základní**] > **styl kódu** > **Obecné**. Klikněte na tlačítko **souboru .editorconfig Generovat z nastavení** styl psaní kódu budou automaticky generovány *.editorconfig* souboru na základě nastavení na tomto **možnosti** stránky.
+Můžete ručně naplnit soubor EditorConfig nebo můžete soubor automaticky vygenerovat na základě nastavení stylu kódu, které jste zvolili v dialogovém okně **Možnosti** sady Visual Studio. Tato > stránka možností je k dispozici v **nabídce nástroje** > –**textový editor** > [**C#** nebo **Basic**] > **styl** > kódu**Obecné**. Klikněte na **Generovat soubor. editorconfig z nastavení** a automaticky vygenerujte soubor *. editorconfig* stylu kódování na základě nastavení na této stránce **Možnosti** .
 
-![Generovat editorconfig soubor z nastavení v aplikaci Visual Studio 2019](media/vs-2019/generate-editorconfig-file-small.png)
+![Generování souboru editorconfig z nastavení v aplikaci Visual Studio 2019](media/vs-2019/generate-editorconfig-file-small.png)
 
 ::: moniker-end
 
 ## <a name="code-styles-in-the-options-dialog-box"></a>Styly kódu v dialogovém okně Možnosti
 
-Předvolby stylu kódu můžete nastavit pro všechny vaše C# a projekty Visual Basic tak, že otevřete **možnosti** dialogové **nástroje** nabídky. V **možnosti** dialogu **textový Editor** > [**C#** nebo **základní**] > **styl kódu**  >  **Obecné**.
+Předvolby stylu kódu lze nastavit pro všechny vaše C# projekty a Visual Basic otevřením dialogového okna **Možnosti** v nabídce **nástroje** . V **možnosti** dialogu **textový Editor** > [**C#** nebo **základní**] > **styl kódu**  >  **Obecné**.
 
 Každá položka v seznamu zobrazí náhled předvoleb při výběru:
 
@@ -54,50 +54,50 @@ Každá položka v seznamu zobrazí náhled předvoleb při výběru:
 
 ::: moniker-end
 
-Možnostmi nastavenými v tomto okně se vztahují na váš účet přizpůsobení sady Visual Studio a nejsou spojeny s konkrétní projekt nebo základ kódu. Kromě toho nejsou vynucená v okamžiku sestavení, včetně v sestaveních nepřetržité integrace (CI). Pokud chcete přidružit předvolby stylu kódu vašeho projektu a styly vynucují v průběhu sestavení, zadejte předvolby v [souboru .editorconfig](#code-styles-in-editorconfig-files) , který je asociován s projektem.
+Možnosti nastavené v tomto okně se vztahují na váš účet přizpůsobení sady Visual Studio a nejsou přidružené ke konkrétnímu projektu nebo základu kódu. Kromě toho nejsou vynutily při sestavování, včetně v sestaveních průběžné integrace (CI). Chcete-li přidružit předvolby stylu kódu k vašemu projektu a nechat styly vynutily během sestavování, určete předvolby v [souboru. editorconfig](#code-styles-in-editorconfig-files) , který je přidružen k projektu.
 
 ### <a name="preference-and-severity"></a>Priority a závažnosti
 
-Pro každé nastavení stylu kódu na této stránce, můžete nastavit **předvoleb** a **závažnost** hodnoty pomocí rozevíracích na každém řádku. Je možné nastavit závažnost **žádný**, **návrh**, **upozornění**, nebo **chyba**. Pokud chcete povolit [rychlé akce](../ide/quick-actions.md) pro styl kódu, ujistěte se, že **závažnost** nastavená na něco jiného než **žádný**. **Rychlé akce** žárovky ![žárovky](media/light-bulb-dropdown.png), chyba žárovky ![chyba žárovky](media/error-bulb.png), nebo šroubovák ![šroubovák](media/screwdriver.png) ikona se zobrazuje, kdy jiný než upřednostňovaný styl se používá, a zvolíte možnost na **rychlé akce** seznamu automaticky přepište kód upřednostňované stylu.
+U každého nastavení stylu kódu na této stránce můžete nastavit hodnoty **předvoleb** a závažnosti pomocí rozevíracích seznamu na každém řádku. Závažnost se dá nastavit **jenom**na refaktoring, **Návrh**, **varování**nebo **chybu**. Pokud chcete povolit [rychlé akce](../ide/quick-actions.md) pro styl kódu, zajistěte, aby bylo nastavení závažnosti nastaveno na jinou hodnotu než refaktoring. V případě, že se ![používá nepreferovaný styl, se v případě použití nepreferovaného](media/screwdriver.png) stylu zobrazí ikona pro **rychlé akce** ](media/light-bulb-dropdown.png)žárovky žárovky](media/error-bulb.png), ![chyba žárovky chyba žárovky nebo Screwdriver ![Screwdriver. a můžete zvolit možnost v seznamu **rychlé akce** pro automatické přepsání kódu na preferovaný styl.
 
-## <a name="apply-code-styles"></a>Použití stylů kódu
+## <a name="apply-code-styles"></a>Použít styly kódu
 
 ::: moniker range="vs-2017"
 
-Můžete nakonfigurovat **formátovat dokument** příkazu (**upravit** > **Upřesnit** > **formátovat dokument**) do nastavení stylu kódu použijte (ze souboru EditorConfig nebo **styl kódu** možnosti) spolu s regulární formátování, který provádí (např. odsazení). Pokud *.editorconfig* existuje soubor projektu, tato nastavení mají přednost.
+Můžete nakonfigurovat příkaz **formátovat dokument** (**Upravit** > **Rozšířený** > **Formát dokumentu**), chcete-li použít nastavení stylu kódu (ze souboru EditorConfig nebo možnosti **stylu kódu** ) spolu s běžné formátování, které dělá (například odsazení). Pokud soubor *. editorconfig* pro projekt existuje, mají tato nastavení přednost.
 
 > [!NOTE]
-> Aplikování stylů kódu s použitím **formátovat dokument** příkaz je dostupná jenom pro C# soubory kódu. Toto je experimentální funkce.
+> Použití stylů kódu pomocí příkazu **formátovat dokument** je k dispozici pouze pro C# soubory kódu. Toto je experimentální funkce.
 
-Nakonfigurujte nastavení, které chcete, aby **formátovat dokument** použít [stránka možností formátování](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Nakonfigurujte nastavení, které má **formátovat dokument** použít na [stránce možnosti formátování](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
-![Nastavení stylu kódu pro formát dokumentu v sadě Visual Studio 2017](media/format-document-settings-experiment.png)
+![Nastavení stylu kódu pro formát dokumentu v aplikaci Visual Studio 2017](media/format-document-settings-experiment.png)
 
 > [!TIP]
-> Se závažností z nakonfigurovaných pravidel **žádný** nehrají roli, v vyčištění kódu však lze použít jednotlivě prostřednictvím **rychlé akce a Refaktoringy** nabídky.
+> Pravidla konfigurovaná se závažností **none** se nepodílejí na čištění kódu, ale lze je individuálně použít prostřednictvím nabídky **rychlé akce a** refaktoringu.
 
-Poprvé spustíte **formátovat dokument** příkazu žlutý informační panel zobrazí výzvu, mohli konfigurovat svá nastavení vyčištění kódu.
+Při prvním spuštění příkazu **Formát dokumentu** vás žlutý informační panel vyzve ke konfiguraci nastavení pro vyčištění kódu.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Pro C# má soubory kódu, Visual Studio 2019 **vyčištění kódu** tlačítko v dolní části editoru (klávesnice: **CTRL**+**K**, **Ctrl**+**E**) Chcete-li použít styly kódu ze souboru EditorConfig nebo z **styl kódu**  stránka možností. Pokud *.editorconfig* existuje soubor projektu, jsou nastavení, která mají přednost.
+V C# případě souborů kódu má Visual Studio 2019 tlačítko pro **Vyčištění kódu** v dolní části editoru (klávesnice: **CTRL** **k,** CTRLE+), chcete-li použít styly kódu ze souboru EditorConfig nebo ze stránky možností **stylu kódu.** + Pokud soubor *. editorconfig* existuje pro projekt, jsou to nastavení, která mají přednost.
 
-![Spuštění kódu čištění v aplikaci Visual Studio 2019](media/execute-code-cleanup.png)
+![Spustit čištění kódu v aplikaci Visual Studio 2019](media/execute-code-cleanup.png)
 
 > [!TIP]
-> Se závažností z nakonfigurovaných pravidel **žádný** nehrají roli, v vyčištění kódu však lze použít jednotlivě prostřednictvím **rychlé akce a Refaktoringy** nabídky.
+> Pravidla konfigurovaná se závažností **none** se nepodílejí na čištění kódu, ale lze je individuálně použít prostřednictvím nabídky **rychlé akce a** refaktoringu.
 
-Nejprve nakonfigurujte styly kódu, které chcete použít (v jednom ze dvou profilů) v **konfigurace vyčištění kódu** dialogové okno. Chcete-li otevřít toto dialogové okno, klikněte na rozbalovací šipku vedle ikony zarovnání vyčištění kódu a klikněte na tlačítko **konfigurace vyčištění kódu**.
+Nejprve nakonfigurujte styly kódu, které chcete použít (v jednom ze dvou profilů) v dialogovém okně **Konfigurovat vyčištění kódu** . Chcete-li otevřít toto dialogové okno, klikněte na šipku vedle ikony vyčištění kódu Broom a pak zvolte možnost **Konfigurovat vyčištění kódu**.
 
-![Konfigurace vyčištění kódu ve Visual Studio 2019](media/configure-code-cleanup.png)
+![Konfigurace vyčištění kódu v aplikaci Visual Studio 2019](media/configure-code-cleanup.png)
 
-Po dokončení konfigurace vyčištění kódu, můžete kliknutím na ikonu zarovnání nebo stisknutím klávesy **Ctrl**+**K**, **Ctrl**+**E** ke spuštění kódu čištění. Můžete také spustit čištění kódu napříč celý projekt nebo řešení. Klikněte pravým tlačítkem na název projektu nebo řešení v **Průzkumníka řešení**vyberte **analyzovat a vyčištění kódu**a pak vyberte **spuštění kódu čištění**.
+Po nakonfigurování vyčištění kódu můžete buď kliknout na ikonu Broom, nebo stisknout **kombinaci kláves CTRL**+**k**, **CTRL**+**E** a spustit program Vyčištění kódu. Můžete také spustit vyčištění kódu v celém projektu nebo řešení. Klikněte pravým tlačítkem myši na název projektu nebo řešení v **Průzkumník řešení**, vyberte **Analýza a vyčištění kódu**a pak vyberte **Spustit vyčištění kódu**.
 
-![Spuštění kódu čištění přes celý projekt nebo řešení](media/run-code-cleanup-project-solution.png)
+![Spustit čištění kódu v celém projektu nebo řešení](media/run-code-cleanup-project-solution.png)
 
-Pokud chcete, aby vaše nastavení stylu kódu použít pokaždé, když uložíte soubor, může jako [vyčištění kódu při uložení](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave) rozšíření.
+Pokud chcete, aby nastavení stylu kódu bylo použito při každém uložení souboru, může se stát, že v rozšíření [pro uložení bude provedeno vyčištění kódu](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave) .
 
 ::: moniker-end
 

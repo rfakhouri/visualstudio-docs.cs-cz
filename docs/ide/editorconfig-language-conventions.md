@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 5305ee8db1161415f038ec6cc149c9e88edb9589
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 7b88824e6be7dbb216aa14ca9a22fd692474ec2f
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377933"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787425"
 ---
 # <a name="language-conventions"></a>Konvence jazyka
 
@@ -102,7 +102,7 @@ dotnet_style_qualification_for_method = false:suggestion
 dotnet_style_qualification_for_event = false:suggestion
 ```
 
-#### <a name="dotnetstylequalificationforfield"></a>for_field kvalifikace\_\_stylu\_dotnet
+#### <a name="dotnet_style_qualification_for_field"></a>for_field kvalifikace\_\_stylu\_dotnet
 
 |||
 |-|-|
@@ -130,7 +130,7 @@ Me.capacity = 0
 capacity = 0
 ```
 
-#### <a name="dotnetstylequalificationforproperty"></a>dotnet\_style\_qualification\_for_property
+#### <a name="dotnet_style_qualification_for_property"></a>dotnet\_style\_qualification\_for_property
 
 |||
 |-|-|
@@ -158,7 +158,7 @@ Me.ID = 0
 ID = 0
 ```
 
-#### <a name="dotnetstylequalificationformethod"></a>for_method kvalifikace\_\_stylu\_dotnet
+#### <a name="dotnet_style_qualification_for_method"></a>for_method kvalifikace\_\_stylu\_dotnet
 
 |||
 |-|-|
@@ -186,14 +186,14 @@ Me.Display()
 Display()
 ```
 
-#### <a name="dotnetstylequalificationforevent"></a>for_event kvalifikace\_\_stylu\_dotnet
+#### <a name="dotnet_style_qualification_for_event"></a>for_event kvalifikace\_\_stylu\_dotnet
 
 |||
 |-|-|
 | **Název pravidla** | dotnet_style_qualification_for_event |
 | **ID pravidla** | IDE0003 a IDE0009 |
 | **Příslušné jazyky** | C# a Visual Basic |
-| **Hodnoty** | `true`-Preferovat události, které mají být `this.` v C# nebo `Me.` Visual Basic.<br /><br />`false`-Preferovat události  , které nemusejí být uvozeny `this.` nebo `Me.`. |
+| **Hodnoty** | `true`-Preferovat události, které mají být `this.` v C# nebo `Me.` Visual Basic.<br /><br />`false`-Preferovat události , které nemusejí být uvozeny `this.` nebo `Me.`. |
 | **Výchozí nastavení sady Visual Studio** | `false:silent` |
 
 Příklady kódu:
@@ -227,7 +227,7 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 dotnet_style_predefined_type_for_member_access = true:suggestion
 ```
 
-#### <a name="dotnetstylepredefinedtypeforlocalsparametersmembers"></a>\_\_předdefinovaný\_Typstyludotnetpro\_lokální hodnotyparameters_members\_\_
+#### <a name="dotnet_style_predefined_type_for_locals_parameters_members"></a>\_\_předdefinovaný\_Typstyludotnetpro\_lokální hodnotyparameters_members\_\_
 
 |||
 |-|-|
@@ -255,7 +255,7 @@ Private _member As Integer
 Private _member As Int32
 ```
 
-#### <a name="dotnetstylepredefinedtypeformemberaccess"></a>dotnet\_style\_predefined\_type\_for\_member_access
+#### <a name="dotnet_style_predefined_type_for_member_access"></a>dotnet\_style\_predefined\_type\_for\_member_access
 
 |||
 |-|-|
@@ -304,7 +304,7 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
-#### <a name="dotnetstylerequireaccessibilitymodifiers"></a>styl\_dotnet\_vyžaduje\_accessibility_modifiers.
+#### <a name="dotnet_style_require_accessibility_modifiers"></a>styl\_dotnet\_vyžaduje\_accessibility_modifiers.
 
 |||
 |-|-|
@@ -332,7 +332,7 @@ class MyClass
 }
 ```
 
-#### <a name="csharppreferredmodifierorder"></a>csharp_preferred_modifier_order
+#### <a name="csharp_preferred_modifier_order"></a>csharp_preferred_modifier_order
 
 |||
 |-|-|
@@ -356,7 +356,7 @@ class MyClass
 }
 ```
 
-#### <a name="visualbasicpreferredmodifierorder"></a>visual_basic_preferred_modifier_order
+#### <a name="visual_basic_preferred_modifier_order"></a>visual_basic_preferred_modifier_order
 
 |||
 |-|-|
@@ -379,7 +379,7 @@ Public Class MyClass
 End Class
 ```
 
-#### <a name="dotnetstylereadonlyfield"></a>dotnet_style_readonly_field
+#### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
 
 |||
 |-|-|
@@ -422,7 +422,7 @@ dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 ```
 
-#### <a name="dotnetstyleparenthesesinarithmeticbinaryoperators"></a>\_kulaté\_\_závorky\_stylu dotnet v aritmetických\_binary_operators
+#### <a name="dotnet_style_parentheses_in_arithmetic_binary_operators"></a>\_kulaté\_\_závorky\_stylu dotnet v aritmetických\_binary_operators
 
 |||
 |-|-|
@@ -451,7 +451,7 @@ Dim v = a + (b * c)
 Dim v = a + b * c
 ```
 
-#### <a name="dotnetstyleparenthesesinrelationalbinaryoperators"></a>\_kulaté\_\_závorky\_stylu dotnet v relačních\_binary_operators
+#### <a name="dotnet_style_parentheses_in_relational_binary_operators"></a>\_kulaté\_\_závorky\_stylu dotnet v relačních\_binary_operators
 
 |||
 |-|-|
@@ -480,7 +480,7 @@ Dim v = (a < b) = (c > d)
 Dim v = a < b = c > d
 ```
 
-#### <a name="dotnetstyleparenthesesinotherbinaryoperators"></a>\_v\_jiných\_binary_operatorsch závorkách stylu\_dotnet\_
+#### <a name="dotnet_style_parentheses_in_other_binary_operators"></a>\_v\_jiných\_binary_operatorsch závorkách stylu\_dotnet\_
 
 |||
 |-|-|
@@ -509,7 +509,7 @@ Dim v = a OrElse (b AndAlso c)
 Dim v = a OrElse b AndAlso c
 ```
 
-#### <a name="dotnetstyleparenthesesinotheroperators"></a>\_kulaté\_závorky\_stylu\_dotnet v other_operators
+#### <a name="dotnet_style_parentheses_in_other_operators"></a>\_kulaté\_závorky\_stylu\_dotnet v other_operators
 
 |||
 |-|-|
@@ -558,7 +558,7 @@ dotnet_style_prefer_conditional_expression_over_return = true:suggestion
 dotnet_style_prefer_compound_assignment = true:suggestion
 ```
 
-#### <a name="dotnetstyleobjectinitializer"></a>dotnet\_style\_object_initializer
+#### <a name="dotnet_style_object_initializer"></a>dotnet\_style\_object_initializer
 
 |||
 |-|-|
@@ -588,7 +588,7 @@ Dim c = New Customer()
 c.Age = 21
 ```
 
-#### <a name="dotnetstylecollectioninitializer"></a>dotnet\_–\_styl collection_initializer
+#### <a name="dotnet_style_collection_initializer"></a>dotnet\_–\_styl collection_initializer
 
 |||
 |-|-|
@@ -622,7 +622,7 @@ list.Add(2)
 list.Add(3)
 ```
 
-#### <a name="dotnetstyleexplicittuplenames"></a>dotnet\_–\_stylexplicitní\_tuple_names
+#### <a name="dotnet_style_explicit_tuple_names"></a>dotnet\_–\_stylexplicitní\_tuple_names
 
 |||
 |-|-|
@@ -654,7 +654,7 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
-#### <a name="dotnetstylepreferinferredtuplenames"></a>styl\_dotnet\_preferovat\_odvozenoutuple_names\_
+#### <a name="dotnet_style_prefer_inferred_tuple_names"></a>styl\_dotnet\_preferovat\_odvozenoutuple_names\_
 
 |||
 |-|-|
@@ -683,7 +683,7 @@ Dim tuple = (name, age)
 Dim tuple = (name:=name, age:=age)
 ```
 
-#### <a name="dotnetstylepreferinferredanonymoustypemembernames"></a>styl\_dotnet\_preferovat\_odvození\_anonymního\_typumember_names\_
+#### <a name="dotnet_style_prefer_inferred_anonymous_type_member_names"></a>styl\_dotnet\_preferovat\_odvození\_anonymního\_typumember_names\_
 
 |||
 |-|-|
@@ -712,7 +712,7 @@ Dim anon = New With {name, age}
 Dim anon = New With {.name = name, .age = age}
 ```
 
-#### <a name="dotnetstylepreferautoproperties"></a>dotnet\_style\_prefer\_auto\_properties
+#### <a name="dotnet_style_prefer_auto_properties"></a>dotnet\_style\_prefer\_auto\_properties
 
 |||
 |-|-|
@@ -755,7 +755,7 @@ Public ReadOnly Property Age As Integer
 End Property
 ```
 
-#### <a name="dotnetstylepreferisnullcheckoverreferenceequalitymethod"></a>styl\_dotnetpreferovat\_jehodnotanull\_kontrolynad\_referenčnímetodourovnosti\_.\_\_\_\_
+#### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>styl\_dotnetpreferovat\_jehodnotanull\_kontrolynad\_referenčnímetodourovnosti\_.\_\_\_\_
 
 |||
 |-|-|
@@ -790,7 +790,7 @@ If Object.ReferenceEquals(value, Nothing)
 End If
 ```
 
-#### <a name="dotnetstylepreferconditionalexpressionoverassignment"></a>dotnet\_style\_prefer\_conditional\_expression\_over_assignment
+#### <a name="dotnet_style_prefer_conditional_expression_over_assignment"></a>dotnet\_style\_prefer\_conditional\_expression\_over_assignment
 
 |||
 |-|-|
@@ -832,7 +832,7 @@ Else
 End If
 ```
 
-#### <a name="dotnetstylepreferconditionalexpressionoverreturn"></a>styl\_dotnetpreferovat\_podmíněný\_výraz over_return\_\_
+#### <a name="dotnet_style_prefer_conditional_expression_over_return"></a>styl\_dotnetpreferovat\_podmíněný\_výraz over_return\_\_
 
 |||
 |-|-|
@@ -872,7 +872,7 @@ Else
 End If
 ```
 
-#### <a name="dotnetstyleprefercompoundassignment"></a>styl\_dotnetpreferovat\_složenépřiřazení\_\_
+#### <a name="dotnet_style_prefer_compound_assignment"></a>styl\_dotnetpreferovat\_složenépřiřazení\_\_
 
 |||
 |-|-|
@@ -913,7 +913,7 @@ dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 ```
 
-#### <a name="dotnetstylecoalesceexpression"></a>dotnet\_style\_coalesce_expression
+#### <a name="dotnet_style_coalesce_expression"></a>dotnet\_style\_coalesce_expression
 
 |||
 |-|-|
@@ -943,7 +943,7 @@ Dim v = If(x Is Nothing, y, x) ' or
 Dim v = If(x IsNot Nothing, x, y)
 ```
 
-#### <a name="dotnetstylenullpropagation"></a>dotnet\_style\_null_propagation
+#### <a name="dotnet_style_null_propagation"></a>dotnet\_style\_null_propagation
 
 |||
 |-|-|
@@ -975,7 +975,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 
 ## <a name="net-code-quality-settings"></a>Nastavení kvality kódu .NET
 
-Pravidla kvality v této části se vztahují na kód C# i Visual Basic. Slouží ke konfiguraci analyzátorů kódu, které jsou integrovány do interaktivního vývojového prostředí (IDE) sady Visual Studio. Informace o konfiguraci analyzátorů FxCop pomocí souboru EditorConfig najdete v tématu [Konfigurace analyzátorů FxCop](../code-quality/configure-fxcop-analyzers.md).
+Pravidla kvality v této části se vztahují na kód C# i Visual Basic. Slouží ke konfiguraci analyzátorů kódu, které jsou integrovány do integrovaného vývojového prostředí (IDE) sady Visual Studio. Informace o konfiguraci analyzátorů FxCop pomocí souboru EditorConfig najdete v tématu [Konfigurace analyzátorů FxCop](../code-quality/configure-fxcop-analyzers.md).
 
 - [Předvolby parametrů](#parameter-preferences)
   - \_nepoužívané\_parametrykvality\_kódudotnet\_
@@ -992,7 +992,7 @@ Tato pravidla by se mohla objevit v souboru *. editorconfig* následujícím zp�
 dotnet_code_quality_unused_parameters = all:suggestion
 ```
 
-#### <a name="dotnetcodequalityunusedparameters"></a>\_nepoužívané\_parametrykvality\_kódudotnet\_
+#### <a name="dotnet_code_quality_unused_parameters"></a>\_nepoužívané\_parametrykvality\_kódudotnet\_
 
 |||
 |-|-|
@@ -1065,6 +1065,7 @@ Pravidla stylu v této části platí pouze pro C# .
   - CSharp\_používající\_umístěnídirektiv\_
   - CSharp\_preferovat\_staticlocal_function\_
   - CSharp\_preferovat\_jednoduchéusing_statement\_
+  - styl\_CSharp\_preferovatswitch_expression\_
 
 ### <a name="implicit-and-explicit-types"></a>Implicitní a explicitní typy
 
@@ -1080,7 +1081,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
 ```
 
-#### <a name="csharpstylevarforbuiltintypes"></a>var\_style\_CSharppro\_sestavené\_in_types\_
+#### <a name="csharp_style_var_for_built_in_types"></a>var\_style\_CSharppro\_sestavené\_in_types\_
 
 |||
 |-|-|
@@ -1100,7 +1101,7 @@ var x = 5;
 int x = 5;
 ```
 
-#### <a name="csharpstylevarwhentypeisapparent"></a>csharp\_style\_var\_when\_type\_is_apparent
+#### <a name="csharp_style_var_when_type_is_apparent"></a>csharp\_style\_var\_when\_type\_is_apparent
 
 |||
 |-|-|
@@ -1120,7 +1121,7 @@ var obj = new Customer();
 Customer obj = new Customer();
 ```
 
-#### <a name="csharpstylevarelsewhere"></a>csharp\_style\_var_elsewhere
+#### <a name="csharp_style_var_elsewhere"></a>csharp\_style\_var_elsewhere
 
 |||
 |-|-|
@@ -1159,7 +1160,7 @@ csharp_style_expression_bodied_lambdas = true:silent
 csharp_style_expression_bodied_local_functions = false:silent
 ```
 
-#### <a name="csharpstyleexpressionbodiedmethods"></a>CSharp\_stylu\_výrazubodied_methods\_
+#### <a name="csharp_style_expression_bodied_methods"></a>CSharp\_stylu\_výrazubodied_methods\_
 
 |||
 |-|-|
@@ -1179,7 +1180,7 @@ public int GetAge() => this.Age;
 public int GetAge() { return this.Age; }
 ```
 
-#### <a name="csharpstyleexpressionbodiedconstructors"></a>csharp\_style\_expression\_bodied_constructors
+#### <a name="csharp_style_expression_bodied_constructors"></a>csharp\_style\_expression\_bodied_constructors
 
 |||
 |-|-|
@@ -1199,7 +1200,7 @@ public Customer(int age) => Age = age;
 public Customer(int age) { Age = age; }
 ```
 
-#### <a name="csharpstyleexpressionbodiedoperators"></a>csharp\_style\_expression\_bodied_operators
+#### <a name="csharp_style_expression_bodied_operators"></a>csharp\_style\_expression\_bodied_operators
 
 |||
 |-|-|
@@ -1221,7 +1222,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```
 
-#### <a name="csharpstyleexpressionbodiedproperties"></a>csharp\_style\_expression\_bodied_properties
+#### <a name="csharp_style_expression_bodied_properties"></a>csharp\_style\_expression\_bodied_properties
 
 |||
 |-|-|
@@ -1241,7 +1242,7 @@ public int Age => _age;
 public int Age { get { return _age; }}
 ```
 
-#### <a name="csharpstyleexpressionbodiedindexers"></a>csharp\_style\_expression\_bodied_indexers
+#### <a name="csharp_style_expression_bodied_indexers"></a>csharp\_style\_expression\_bodied_indexers
 
 |||
 |-|-|
@@ -1261,7 +1262,7 @@ public T this[int i] => _values[i];
 public T this[int i] { get { return _values[i]; } }
 ```
 
-#### <a name="csharpstyleexpressionbodiedaccessors"></a>csharp\_style\_expression\_bodied_accessors
+#### <a name="csharp_style_expression_bodied_accessors"></a>csharp\_style\_expression\_bodied_accessors
 
 |||
 |-|-|
@@ -1281,7 +1282,7 @@ public int Age { get => _age; set => _age = value; }
 public int Age { get { return _age; } set { _age = value; } }
 ```
 
-#### <a name="csharpstyleexpressionbodiedlambdas"></a>CSharp\_stylu\_výrazubodied_lambdas\_
+#### <a name="csharp_style_expression_bodied_lambdas"></a>CSharp\_stylu\_výrazubodied_lambdas\_
 
 |||
 |-|-|
@@ -1300,7 +1301,7 @@ Func<int, int> square = x => x * x;
 Func<int, int> square = x => { return x * x; };
 ```
 
-#### <a name="csharpstyleexpressionbodiedlocalfunctions"></a>CSharp\_styl\_výrazutěle\_local_functions\_
+#### <a name="csharp_style_expression_bodied_local_functions"></a>CSharp\_styl\_výrazutěle\_local_functions\_
 
 Počínaje C# 7,0 C# podporuje [místní funkce](/dotnet/csharp/programming-guide/classes-and-structs/local-functions). Lokální funkce jsou soukromé metody typu, které jsou vnořené v jiném členu.
 
@@ -1346,7 +1347,7 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
-#### <a name="csharpstylepatternmatchingoveriswithcastcheck"></a>CSharp\_porovnávání\_vzorů\_ve styluje\_scast_check\_\_\_
+#### <a name="csharp_style_pattern_matching_over_is_with_cast_check"></a>CSharp\_porovnávání\_vzorů\_ve styluje\_scast_check\_\_\_
 
 |||
 |-|-|
@@ -1366,7 +1367,7 @@ if (o is int i) {...}
 if (o is int) {var i = (int)o; ... }
 ```
 
-#### <a name="csharpstylepatternmatchingoveraswithnullcheck"></a>CSharp\_porovnávání\_vzorů\_stylůjako\_snull_check\_\_\_
+#### <a name="csharp_style_pattern_matching_over_as_with_null_check"></a>CSharp\_porovnávání\_vzorů\_stylůjako\_snull_check\_\_\_
 
 |||
 |-|-|
@@ -1391,7 +1392,7 @@ if (s != null) {...}
 
 Toto pravidlo stylu se týká `out` , zda jsou proměnné deklarovány jako vložené nebo nikoli. Počínaje C# 7 můžete [deklarovat proměnnou out v seznamu argumentů volání metody](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), nikoli v deklaraci samostatné proměnné.
 
-#### <a name="csharpstyleinlinedvariabledeclaration"></a>CSharp\_–\_styl na řádku\_variable_declaration
+#### <a name="csharp_style_inlined_variable_declaration"></a>CSharp\_–\_styl na řádku\_variable_declaration
 
 |||
 |-|-|
@@ -1432,7 +1433,7 @@ Příklad souboru *. editorconfig* :
 csharp_prefer_simple_default_expression = true:suggestion
 ```
 
-#### <a name="csharpprefersimpledefaultexpression"></a>csharp\_prefer\_simple\_default_expression
+#### <a name="csharp_prefer_simple_default_expression"></a>csharp\_prefer\_simple\_default_expression
 
 Toto pravidlo stylu se týká použití [ `default` literálu pro výrazy výchozích hodnot](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) , když kompilátor může odvodit typ výrazu.
 
@@ -1467,7 +1468,7 @@ csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = false:suggestion
 ```
 
-#### <a name="csharpstylethrowexpression"></a>csharp\_style\_throw_expression
+#### <a name="csharp_style_throw_expression"></a>csharp\_style\_throw_expression
 
 |||
 |-|-|
@@ -1488,7 +1489,7 @@ if (s == null) { throw new ArgumentNullException(nameof(s)); }
 this.s = s;
 ```
 
-#### <a name="csharpstyleconditionaldelegatecall"></a>csharp\_style\_conditional\_delegate_call
+#### <a name="csharp_style_conditional_delegate_call"></a>csharp\_style\_conditional\_delegate_call
 
 |||
 |-|-|
@@ -1520,7 +1521,7 @@ Příklad souboru *. editorconfig* :
 csharp_prefer_braces = true:silent
 ```
 
-#### <a name="csharppreferbraces"></a>CSharp\_preferovat\_složené závorky
+#### <a name="csharp_prefer_braces"></a>CSharp\_preferovat\_složené závorky
 
 |||
 |-|-|
@@ -1553,7 +1554,7 @@ csharp_style_unused_value_expression_statement_preference = discard_variable:sil
 csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 ```
 
-#### <a name="csharpstyleunusedvalueexpressionstatementpreference"></a>csharp_style_unused_value_expression_statement_preference
+#### <a name="csharp_style_unused_value_expression_statement_preference"></a>csharp_style_unused_value_expression_statement_preference
 
 |||
 |-|-|
@@ -1578,7 +1579,7 @@ _ = System.Convert.ToInt32("35");
 var unused = Convert.ToInt32("35");
 ```
 
-#### <a name="csharpstyleunusedvalueassignmentpreference"></a>csharp_style_unused_value_assignment_preference
+#### <a name="csharp_style_unused_value_assignment_preference"></a>csharp_style_unused_value_assignment_preference
 
 |||
 |-|-|
@@ -1619,7 +1620,7 @@ csharp_style_prefer_index_operator = true:suggestion
 csharp_style_prefer_range_operator = true:suggestion
 ```
 
-#### <a name="csharpstylepreferindexoperator"></a>styl\_CSharp\_preferovatindex_operator\_
+#### <a name="csharp_style_prefer_index_operator"></a>styl\_CSharp\_preferovatindex_operator\_
 
 |||
 |-|-|
@@ -1641,7 +1642,7 @@ string[] names = { "Archimedes", "Pythagoras", "Euclid" };
 var index = names[names.Length - 1];
 ```
 
-#### <a name="csharpstylepreferrangeoperator"></a>styl\_CSharp\_preferovatrange_operator\_
+#### <a name="csharp_style_prefer_range_operator"></a>styl\_CSharp\_preferovatrange_operator\_
 
 |||
 |-|-|
@@ -1677,9 +1678,10 @@ csharp_style_pattern_local_over_anonymous_function = true:suggestion
 csharp_using_directive_placement = outside_namespace:silent
 csharp_prefer_static_local_function = true:suggestion
 csharp_prefer_simple_using_statement = true:suggestion
+csharp_style_prefer_switch_expression = true:suggestion
 ```
 
-#### <a name="csharpstyledeconstructedvariabledeclaration"></a>CSharp\_–\_Dekonstruovaný\_styl variable_declaration
+#### <a name="csharp_style_deconstructed_variable_declaration"></a>CSharp\_–\_Dekonstruovaný\_styl variable_declaration
 
 |||
 |-|-|
@@ -1707,7 +1709,7 @@ Console.WriteLine($"{person.name} {person.age}");
 Console.WriteLine($"{point.x} {point.y}");
 ```
 
-#### <a name="csharpstylepatternlocaloveranonymousfunction"></a>CSharp\_vzor\_stylumístní\_nadanonymous_function\_\_
+#### <a name="csharp_style_pattern_local_over_anonymous_function"></a>CSharp\_vzor\_stylumístní\_nadanonymous_function\_\_
 
 Počínaje C# 7,0 C# podporuje [místní funkce](/dotnet/csharp/programming-guide/classes-and-structs/local-functions). Lokální funkce jsou soukromé metody typu, které jsou vnořené v jiném členu.
 
@@ -1736,7 +1738,7 @@ fibonacci = (int n) =>
 };
 ```
 
-#### <a name="csharpusingdirectiveplacement"></a>CSharp\_pomocí\_directive_placement
+#### <a name="csharp_using_directive_placement"></a>CSharp\_pomocí\_directive_placement
 
 |||
 |-|-|
@@ -1765,7 +1767,7 @@ namespace Conventions
 }
 ```
 
-#### <a name="csharppreferstaticlocalfunction"></a>CSharp\_preferovat\_staticlocal_function\_
+#### <a name="csharp_prefer_static_local_function"></a>CSharp\_preferovat\_staticlocal_function\_
 
 |||
 |-|-|
@@ -1799,14 +1801,14 @@ void M()
 }
 ```
 
-#### <a name="csharpprefersimpleusingstatement"></a>CSharp\_preferovat\_jednoduchéusing_statement\_
+#### <a name="csharp_prefer_simple_using_statement"></a>CSharp\_preferovat\_jednoduchéusing_statement\_
 
 |||
 |-|-|
 | **Název pravidla** | csharp_prefer_simple_using_statement |
 | **ID pravidla** | IDE0063 |
 | **Příslušné jazyky** | C#8.0 + |
-| **Hodnoty** | `true`– Preferovat použití jednoduchého  `using` příkazu<br /><br />`false`– Nedoporučujeme používat *jednoduchý* `using` příkaz. |
+| **Hodnoty** | `true`– Preferovat použití jednoduchého `using` příkazu<br /><br />`false`– Nedoporučujeme používat *jednoduchý* `using` příkaz. |
 | **Výchozí nastavení sady Visual Studio** | `true:suggestion` |
 
 Příklady kódu:
@@ -1817,6 +1819,40 @@ using var a = b;
 
 // csharp_prefer_simple_using_statement = false
 using (var a = b) { }
+```
+
+#### <a name="csharp_style_prefer_switch_expression"></a>styl\_CSharp\_preferovatswitch_expression\_
+
+|||
+|-|-|
+| **Název pravidla** | csharp_style_prefer_switch_expression |
+| **ID pravidla** | IDE0066 |
+| **Příslušné jazyky** | C#8.0 + |
+| **Hodnoty** | `true`– Raději použijte `switch` výraz (představený s C# 8,0)<br /><br />`false`– Preferovat použití [příkazu switch](/dotnet/csharp/language-reference/keywords/switch) |
+| **Výchozí nastavení sady Visual Studio** | `true:suggestion` |
+| **Představená verze** | Visual Studio 2019 verze 16,2 |
+
+Příklady kódu:
+
+```csharp
+// csharp_style_prefer_switch_expression = true
+return x switch
+{
+    1 => 1 * 1,
+    2 => 2 * 2,
+    _ => 0,
+};
+
+// csharp_style_prefer_switch_expression = false
+switch (x)
+{
+    case 1:
+        return 1 * 1;
+    case 2:
+        return 2 * 2;
+    default:
+        return 0;
+}
 ```
 
 ## <a name="see-also"></a>Viz také:

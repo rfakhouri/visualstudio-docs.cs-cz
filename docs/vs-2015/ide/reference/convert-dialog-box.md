@@ -15,20 +15,20 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 8dfceb7ca6221a342a5adbc3b3fcd3c193e0109e
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "65705859"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822410"
 ---
 # <a name="convert-dialog-box"></a>Dialogové okno Převést
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Dialogové okno **převést** umožňuje vybrat nástroj pro převod a vytvořit nový projekt z původního projektu, například vytvoření [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] projektu z projektu Visual Basic 6. Můžete také použít [převaděč projektu sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465), který je k dispozici na webu CodePlex, pro upgrade projektů vytvořených v předchozích verzích sady Visual Studio.  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)].  
-  
+ [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
+
 ## <a name="opening-the-convert-dialog-box"></a>Otevření dialogového okna převést  
   
 #### <a name="to-access-the-convert-dialog-box"></a>Přístup k dialogovému oknu převést  

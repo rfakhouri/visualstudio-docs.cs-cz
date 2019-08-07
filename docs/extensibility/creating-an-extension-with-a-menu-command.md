@@ -1,5 +1,5 @@
 ---
-title: Vytváření rozšíření pomocí příkazu nabídky | Dokumentace Microsoftu
+title: Vytvoření rozšíření pomocí příkazu nabídky | Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb18792e2d0d357bb131af6c12e97425cd72fd05
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7cb82a2a5e02b2e109bb5b27ec54d1a2cd965901
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345374"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821536"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Vytvoření rozšíření pomocí příkazu nabídky
 
@@ -30,39 +30,39 @@ Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK 
 
 ## <a name="create-a-menu-command"></a>Vytvoření příkazu nabídky
 
-1. Vytvořte projekt VSIX s názvem **FirstMenuCommand**. Šablona projektu VSIX v můžete najít **nový projekt** dialogové okno tak, že "vsix".
+1. Vytvořte projekt VSIX s názvem **FirstMenuCommand**. Šablonu projektu VSIX můžete najít v dialogovém okně **Nový projekt** hledáním "VSIX".
 
-2. Po otevření projektu přidat vlastní příkaz šablonu položky s názvem **FirstCommand**. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **přidat novou položku** dialogové okno, přejděte na **Visual C#**  > **rozšiřitelnost** a vyberte **vlastního příkazu**. V **název** pole v dolní části okna, změňte název souboru příkazu *FirstCommand.cs*.
+2. Po otevření projektu přidejte šablonu vlastní položky příkazu s názvem **FirstCommand**. V **Průzkumník řešení**klikněte pravým tlačítkem myši na uzel projektu a vyberte možnost **Přidat** > **novou položku**. V dialogovém okně **Přidat novou položku** přejdete na **rozšiřitelnost** **vizuálů C#**   > a vyberte **vlastní příkaz**. V poli **název** v dolní části okna změňte název souboru příkazů na *FirstCommand.cs*.
 
 3. Sestavte projekt a spusťte ladění.
 
-    Experimentální instanci sady Visual Studio se zobrazí. Další informace o experimentální instanci najdete v tématu [experimentální instanci](../extensibility/the-experimental-instance.md).
+    Zobrazí se experimentální instance aplikace Visual Studio. Další informace o experimentální instanci naleznete v [experimentální instanci](../extensibility/the-experimental-instance.md).
 
 ::: moniker range="vs-2017"
 
-4. V experimentální instanci aplikace, otevřete **nástroje** > **rozšíření a aktualizace** okna. Měli byste vidět **FirstMenuCommand** rozšíření tady. (Pokud otevřete **rozšíření a aktualizace** v instanci pracovního sadě Visual Studio, neuvidíte **FirstMenuCommand**).
+4. V experimentální instanci otevřete okno**rozšíření a aktualizace** **nástrojů** > . Tady byste měli vidět rozšíření **FirstMenuCommand** . (Pokud v pracovní instanci sady Visual Studio otevřete **rozšíření a aktualizace** , neuvidíte **FirstMenuCommand**).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. V experimentální instanci aplikace, otevřete **rozšíření** > **spravovat rozšíření** okna. Měli byste vidět **FirstMenuCommand** rozšíření tady. (Pokud otevřete **spravovat rozšíření** v instanci pracovního sadě Visual Studio, neuvidíte **FirstMenuCommand**).
+4. V experimentální instanci otevřete okno **rozšíření** > **Spravovat rozšíření** . Tady byste měli vidět rozšíření **FirstMenuCommand** . (Pokud otevřete **Spravovat rozšíření** v pracovní instanci sady Visual Studio, neuvidíte **FirstMenuCommand**).
 
 ::: moniker-end
 
-Teď přejděte **nástroje** nabídky v experimentální instanci aplikace. Měli byste vidět **vyvolat FirstCommand** příkazu. V tomto okamžiku zobrazí okno se zprávou, že příkaz **FirstCommandPackage uvnitř FirstMenuCommand.FirstCommand.MenuItemCallback()** . Uvidíme, jak se ve skutečnosti spustí program Poznámkový blok z tohoto příkazu v další části.
+Nyní přejděte do nabídky **nástroje** v experimentální instanci. Měl by se zobrazit příkaz **Invoke FirstCommand** . V tomto okamžiku příkaz zobrazí okno se zprávou, které říká **FirstCommandPackage uvnitř FirstMenuCommand. FirstCommand. MenuItemCallback ()** . V další části se dozvíte, jak ve skutečnosti spustit program Poznámkový blok z tohoto příkazu.
 
-## <a name="change-the-menu-command-handler"></a>Změnit obslužná rutina příkazu nabídky
+## <a name="change-the-menu-command-handler"></a>Změna obslužné rutiny příkazu nabídky
 
-Teď můžeme aktualizovat obslužná rutina příkazu Spustit Poznámkový blok.
+Nyní aktualizujeme obslužnou rutinu příkazu na spustit Poznámkový blok.
 
-1. Zastavit ladění a vrátit se zpět k vaší instanci pracovní sady Visual Studio. Otevřít *FirstCommand.cs* soubor a přidejte následující příkaz using:
+1. Zastavte ladění a vraťte se do funkční instance sady Visual Studio. Otevřete soubor *FirstCommand.cs* a přidejte následující příkaz using:
 
     ```csharp
     using System.Diagnostics;
     ```
 
-2. Najdete soukromý konstruktor FirstCommand. Toto je kde příkazu se připojili ke službě příkazu a zadaná obslužná rutina příkazu. Změňte název obslužná rutina příkazu StartNotepad, následujícím způsobem:
+2. Vyhledejte privátní konstruktor FirstCommand. V tomto případě se příkaz připojí ke službě Command Service a zadává se obslužná rutina příkazu. Změňte název obslužné rutiny příkazu na StartNotepad následujícím způsobem:
 
     ```csharp
     private FirstCommand(AsyncPackage package, OleMenuCommandService commandService)
@@ -77,7 +77,7 @@ Teď můžeme aktualizovat obslužná rutina příkazu Spustit Poznámkový blok
     }
     ```
 
-3. Odebrat `MenuItemCallback` metoda a přidejte `StartNotepad` metodu, která se právě spusťte program Poznámkový blok:
+3. Odeberte metodu a přidejte metodu, která bude jednoduše spouštět program Poznámkový blok: `StartNotepad` `MenuItemCallback`
 
     ```csharp
     private void StartNotepad(object sender, EventArgs e)
@@ -88,17 +88,17 @@ Teď můžeme aktualizovat obslužná rutina příkazu Spustit Poznámkový blok
     }
     ```
 
-4. Nyní vyzkoušejte. Při spuštění ladění projektu a klikněte na tlačítko **nástroje** > **vyvolat FirstCommand**, byste měli vidět instance poznámkového bloku přijít.
+4. Nyní to vyzkoušejte. Když spustíte ladění projektu a kliknete na **nástroje** > **vyvolání FirstCommand**, měla by se zobrazit instance poznámkového bloku.
 
-    Můžete použít instanci <xref:System.Diagnostics.Process> má třída spustit libovolný spustitelný soubor, nejen Poznámkový blok. Vyzkoušejte si to s `calc.exe`, např.
+    Můžete použít instanci <xref:System.Diagnostics.Process> třídy pro spuštění libovolného spustitelného souboru, nikoli pouze Poznámkový blok. Zkuste to třeba `calc.exe`s.
 
-## <a name="clean-up-the-experimental-environment"></a>Vyčistěte experimentální prostředí.
+## <a name="clean-up-the-experimental-environment"></a>Vyčištění experimentálního prostředí
 
-Pokud vyvíjíte několik rozšíření nebo stačí zkoumání výsledků s různými verzemi kódu rozšíření, experimentální prostředí mohou přestat fungovat tak, jak by měl. V takovém případě byste měli spustit skript obnovení. Je volána **resetovat experimentální instanci aplikace Visual Studio**, a je dodáván jako součást sady Visual Studio SDK. Tento skript odebere všechny odkazy na vaše rozšíření v experimentální prostředí, abyste je mohli začít úplně od začátku.
+Pokud vyvíjíte více rozšíření nebo pouze prozkoumáte výsledky s různými verzemi kódu rozšíření, může vaše experimentální prostředí přestat pracovat způsobem, který by měl. V takovém případě byste měli spustit skript pro resetování. Nazývá se to **resetování experimentální instance sady Visual Studio**a dodává se jako součást sady Visual Studio SDK. Tento skript odebere všechny odkazy na vaše rozšíření z experimentálního prostředí, takže můžete začít od začátku.
 
-Můžete získat tohoto skriptu v jednom ze dvou způsobů:
+Tento skript se dá získat jedním ze dvou způsobů:
 
-1. Z plochy, vyhledejte **resetovat experimentální instanci aplikace Visual Studio**.
+1. Z plochy Najděte **obnovení experimentální instance sady Visual Studio**.
 
 2. Z příkazového řádku spusťte následující příkaz:
 
@@ -107,36 +107,36 @@ Můžete získat tohoto skriptu v jednom ze dvou způsobů:
 
     ```
 
-## <a name="deploy-your-extension"></a>Nasazení vašeho rozšíření
+## <a name="deploy-your-extension"></a>Nasazení rozšíření
 
-Teď, když máte rozšíření nástroje s požadovaným způsobem, je čas přemýšlení o sdílení s přáteli nebo kolegy. Je to jednoduché, za předpokladu, že mají nainstalovanou sadu Visual Studio 2015. Vše, co musíte udělat poslal je *VSIX* souborů, které jste vytvořili. (Nezapomeňte vytvořit v režimu vydání.)
+Teď, když máte vaše rozšíření nástroje spuštěné požadovaným způsobem, je čas si představit, jak ho sdílet s vašimi přáteli a kolegy. To je snadné, pokud máte nainstalovanou aplikaci Visual Studio 2015. Vše, co je třeba udělat, je odeslat do souboru *. vsix* , který jste vytvořili. (Nezapomeňte ho sestavit v režimu vydání.)
 
-Můžete najít *VSIX* u tohoto rozšíření v soubor *FirstMenuCommand* adresáře bin. Konkrétně za předpokladu, že jste vytvořili konfiguraci vydané verze, bude ve:
+Soubor *. vsix* pro toto rozšíření najdete v adresáři *FirstMenuCommand* bin. Konkrétně za předpokladu, že jste vytvořili konfiguraci vydané verze, bude v:
 
-*\<adresář kódu > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix*
+*\<Adresář kódu > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand. vsix*
 
-K instalaci rozšíření, přítele musí zavřít všechny otevřené instance sady Visual Studio a pak dvakrát klikněte *VSIX* souboru, kterým se zobrazí **instalátor VSIX**. Soubory se zkopírují do *%LocalAppData%\Microsoft\VisualStudio\<verze > \Extensions* adresáře.
+Chcete-li nainstalovat rozšíření, váš přítel potřebuje zavřít všechny otevřené instance aplikace Visual Studio a potom poklikejte na soubor *. vsix* , který spustí **instalační program VSIX**. Soubory jsou zkopírovány do *%localappdata%\Microsoft\VisualStudio\<verze > adresáři \Extensions* .
 
-Když přítele sady Visual Studio zobrazí znovu, naleznou FirstMenuCommand rozšíření v **nástroje** > **rozšíření a aktualizace**. Můžete přejít na **rozšíření a aktualizace** odinstalace nebo zakázání rozšíření, příliš.
+Když váš přítel znovu vyvolá Visual Studio, nalezne rozšíření FirstMenuCommand v části**rozšíření a aktualizace** **nástrojů** > . Můžou přejít na **rozšíření a aktualizace** pro odinstalaci nebo zakázání rozšíření.
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
-Tento návod vám ukázal pouze malou část můžete dělat pomocí rozšíření sady Visual Studio. Tady je krátký seznam (poměrně snadno) je dobré, které vám pomůžou s rozšířeními sady Visual Studio:
+Tento názorný postup vám ukázal jenom malou část toho, co můžete dělat s rozšířením sady Visual Studio. Tady je krátký seznam dalších (rozumně jednoduchých) věcí, které můžete dělat s rozšířeními sady Visual Studio:
 
-1. Můžete provést mnoho dalších věcí s jednoduchý příkaz:
+1. Pomocí jednoduchého příkazu nabídky můžete udělat spoustu dalších věcí:
 
-   1. Přidáte vlastní ikonu: [Přidání ikon k příkazům nabídky](../extensibility/adding-icons-to-menu-commands.md)
+   1. Přidat vlastní ikonu: [Přidat ikony do příkazů nabídky](../extensibility/adding-icons-to-menu-commands.md)
 
-   2. Změna textu příkazu nabídky: [Změna textu příkazu nabídky](../extensibility/changing-the-text-of-a-menu-command.md)
+   2. Změňte text příkazu nabídky: [Změna textu příkazu nabídky](../extensibility/changing-the-text-of-a-menu-command.md)
 
-   3. Přidání místní nabídky k příkazu: [Vytvoření vazby klávesové zkratky a položkami nabídky](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)
+   3. Přidat zástupce nabídky do příkazu: [Vázání klávesových zkratek k položkám nabídky](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)
 
-2. Přidáte různé druhy příkazy, nabídky a panely nástrojů: [Rozšíření nabídek a příkazů](../extensibility/extending-menus-and-commands.md)
+2. Přidejte různé druhy příkazů, nabídek a panelů nástrojů: [Rozšiřování nabídek a příkazů](../extensibility/extending-menus-and-commands.md)
 
-3. Přidat oken nástrojů a rozšíření integrovaných okna nástrojů sady Visual Studio: [Rozšířit a přizpůsobit panely nástrojů](../extensibility/extending-and-customizing-tool-windows.md)
+3. Přidání oken nástrojů a rozšiřování integrovaných oken nástrojů sady Visual Studio: [Rozšiřování a přizpůsobení oken nástrojů](../extensibility/extending-and-customizing-tool-windows.md)
 
-4. Přidáte do existující editory kódu technologie IntelliSense, kód návrhy a další funkce: [Rozšíření služby jazyk a editor](../extensibility/extending-the-editor-and-language-services.md)
+4. Přidejte IntelliSense, návrhy kódu a další funkce do existujících editorů kódu: [Rozšiřování editoru a jazykových služeb](../extensibility/extending-the-editor-and-language-services.md)
 
-5. Přidání stránky možnosti a vlastnosti a nastavení uživatele do rozšíření: [Rozšíření vlastností a okno Vlastnosti](../extensibility/extending-properties-and-the-property-window.md) a [rozšířit možnosti a nastavení uživatele](../extensibility/extending-user-settings-and-options.md)
+5. Přidejte možnosti a stránky vlastností a uživatelská nastavení do svého rozšíření: [Rozšiřování vlastností a okna vlastností](../extensibility/extending-properties-and-the-property-window.md) a [roztažení uživatelských nastavení a možností](../extensibility/extending-user-settings-and-options.md)
 
-   Jiné druhy rozšíření vyžaduje trochu více práce, jako je vytvoření nového typu projektu ([rozšíření projektů](../extensibility/extending-projects.md)), vytvoření nového typu editoru ([vytváření vlastních editorů a návrhářů](../extensibility/creating-custom-editors-and-designers.md)), nebo implementaci vašeho rozšíření izolovaného prostředí: [Prostředí sady Visual Studio izolovaný režim](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
+   Jiné druhy rozšíření vyžadují trochu více práce, jako je například vytvoření nového typu projektu ([rozšíření projektů](../extensibility/extending-projects.md)), vytvoření nového typu editoru ([Vytvoření vlastních editorů a návrhářů](../extensibility/creating-custom-editors-and-designers.md)) nebo implementace rozšíření v izolovaném prostředí: [Izolované prostředí sady Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)

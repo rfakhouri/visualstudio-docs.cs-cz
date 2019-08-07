@@ -11,67 +11,67 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9eee42d9e3a48f77153e5bd94f72a975ab27843
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 21de3480ff3ac2d6733aacff6bcf714f910e7022
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263396"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821879"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Postup vytvoření a použití prostředku
 
-Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně použitelné entity nazývané prostředky. Styly umožňují nastavit vlastnosti elementu a použít tato nastavení pro jednotný vzhled napříč více prvků. A [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definuje vzhled ovládacího prvku a mohou být použity také jako prostředek. Další informace najdete v tématu [rychlý start: Používání stylů pro ovládací prvky](http://go.microsoft.com/fwlink/?LinkID=248239) a [rychlý start: Ovládací prvek šablony](http://go.microsoft.com/fwlink/?LinkID=247982).
+Styly a šablony pro prvky v Návrhář XAML jsou uloženy v opakovaně použitelných entitách nazývaných prostředky. Styly umožňují nastavit vlastnosti elementu a znovu použít tato nastavení pro konzistentní vzhled napříč více prvky. [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) definuje vzhled ovládacího prvku a lze jej také použít jako prostředek. Další informace naleznete v tématu [styly XAML](/windows/uwp/design/controls-and-patterns/xaml-styles) a [šablony ovládacích prvků](/windows/uwp/design/controls-and-patterns/control-templates).
 
-Při každém vytvoření nového prostředku z existující vlastnosti [styl](/uwp/api/Windows.UI.Xaml.Style), nebo `ControlTemplate`, **vytvořit prostředek** dialogové okno umožňuje definovat prostředek na úrovni aplikace, úrovni dokumentu nebo na úrovni prvku. Tyto úrovně určit, kde lze prostředek použít. Například pokud definujete prostředek na úrovni prvku, prostředek je použít jenom na element, na kterém jste vytvořili. Můžete také zvolit uložení prostředku v [slovník prostředků](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references), což je samostatný soubor, který lze znovu použít v jiném projektu.
+Při každém vytvoření nového prostředku z existující vlastnosti, [stylu](xref:Windows.UI.Xaml.Style)nebo [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate)vám dialogové okno **vytvořit prostředek** umožňuje definovat prostředek na úrovni aplikace, na úrovni dokumentu nebo na úrovni prvku. Tyto úrovně určují, kde můžete prostředek použít. Například pokud definujete prostředek na úrovni prvku, prostředek lze použít pouze pro prvek, na kterém jste jej vytvořili. Můžete také zvolit uložení prostředku do [slovníku prostředků](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references), což je samostatný soubor, který můžete použít znovu v jiném projektu.
 
 ## <a name="create-a-new-resource"></a>Vytvořit nový prostředek
 
-1. S XAML soubor otevřen v Návrháři XAML vytvořte element nebo zvolte prvek v okně osnovy dokumentu.
+1. Se souborem XAML otevřeným v Návrhář XAML vytvořte prvek nebo vyberte prvek v okně Osnova dokumentu.
 
-2. V **vlastnosti** okna, vyberte vlastnost značky, které se zobrazí jako symbol políčka napravo od hodnoty vlastnosti, a pak zvolte **převést na nový prostředek**. Symbol bílé pole určuje výchozí hodnotu a symbol černé skříňky obvykle značí, že použití místního prostředku.
+2. V okně **vlastnosti** zvolte značku vlastnosti, která se zobrazí jako symbol pole napravo od hodnoty vlastnosti, a pak zvolte **převést na nový prostředek**. Symbol bílého pole označuje výchozí hodnotu a symbol černého pole obvykle indikuje, že byl použit místní prostředek.
 
-     Zobrazí se příslušné dialogové okno pro tvorbu prostředku. Při vytváření prostředku ze štětce, zobrazí se toto dialogové okno:
+     Zobrazí se příslušné dialogové okno pro tvorbu prostředku. Toto dialogové okno se zobrazí při vytvoření prostředku z štětce:
 
      ![Vytvořit prostředek – dialogové okno](../designers/media/xaml_create_resource.png)
 
-3. V **název (klíč)** zadejte název klíče. Toto je název, který vám pomůže při dalších prvků, které odkazují na prostředek.
+3. Do pole **název (klíč)** zadejte název klíče. Toto je název, který lze použít, pokud chcete, aby na prostředek odkazovaly jiné prvky.
 
-4. V části **definovat v**, zvolte možnost, která určuje, kde chcete prostředek, který chcete definovat:
+4. V části **definovat v**vyberte možnost, která určuje, kde se má prostředek definovat:
 
-    - Chcete-li být prostředek dostupný libovolnému dokumentu v aplikaci, zvolte **aplikace**.
+    - Chcete-li prostředek zpřístupnit pro libovolný dokument v aplikaci, vyberte možnost **aplikace**.
 
-    - Chcete-li být prostředek přístupný pouze v aktuálním dokumentu, zvolte **tento dokument**.
+    - Chcete-li prostředek zpřístupnit pouze pro aktuální dokument, vyberte **Tento dokument**.
 
-    - Chcete-li být prostředek přístupný pouze na prvek z jste vytvořili prostředek nebo na jeho podřízené prvky, zvolte **tento dokument**a v rozevíracím seznamu vyberte **element**: **název** .
+    - Chcete-li prostředek zpřístupnit pouze pro prvek, ze kterého jste vytvořili prostředek, nebo na jeho podřízené prvky, zvolte **Tento dokument**a v rozevíracím seznamu vyberte **element**: **název**.
 
-    - Chcete-li definovat prostředek v [slovník prostředků](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) soubor, který lze opětovně použít v jiných projektech, klikněte na tlačítko **slovník prostředků**. Potom vyberte existující soubor slovníku prostředků, jako je například **StandardStyles.xaml**, v rozevíracím seznamu.
+    - Chcete-li definovat prostředek v souboru [slovníku prostředků](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) , který lze znovu použít v jiných projektech, klikněte na možnost **slovník prostředků**. Pak v rozevíracím seznamu vyberte existující soubor slovníku prostředků, například **StandardStyles. XAML**.
 
-5. Zvolte **OK** tlačítko má prostředek vytvořit a použít ji k elementu, ze kterého jste vytvořili.
+5. Klikněte na tlačítko **OK** a vytvořte prostředek a použijte ho pro element, ze kterého jste ho vytvořili.
 
-## <a name="apply-a-resource-to-an-element-or-property"></a>Použití prostředků na element nebo vlastnost
+## <a name="apply-a-resource-to-an-element-or-property"></a>Použít prostředek pro element nebo vlastnost
 
-1. V okně osnovy dokumentu zvolte element, na který chcete použít prostředek.
+1. V okně Osnova dokumentu vyberte prvek, pro který chcete použít prostředek.
 
 2. Proveďte jednu z těchto akcí:
 
-   - Použití prostředku na vlastnost. V **vlastnosti** okno, vyberte značku vlastnosti vedle hodnoty vlastností, vyberte **místního prostředku** nebo **systémový prostředek**a pak zvolte prostředek k dispozici ze seznamu, který se zobrazí.
+   - Použijte prostředek pro vlastnost. V okně **vlastnosti** zvolte značku vlastnosti vedle hodnoty vlastnosti, zvolte **místní prostředek** nebo **systémové prostředky**a pak zvolte dostupný prostředek ze seznamu, který se zobrazí.
 
-      Pokud nevidíte prostředek, který byste měli vidět, může to být způsobeno typ prostředku neodpovídá typu vlastnosti.
+      Pokud nevidíte prostředek, který byste očekávali, může to být způsobeno tím, že typ prostředku neodpovídá typu vlastnosti.
 
-   - Platí pro ovládací prvek prostředku šablony stylů nebo ovládací prvek. Otevřete zvolte v místní nabídce (kontextová nabídka) pro ovládací prvek v okně Osnova dokumentu **upravit šablonu** nebo **upravit další šablony**, zvolte **aplikovat zdroj**, a pak vyberte název šablony ovládacích prvků ze seznamu, který se zobrazí.
+   - Použití prostředku stylu nebo šablony ovládacího prvku k ovládacímu prvku. Otevřete nabídku klikněte pravým tlačítkem myši (kontextová nabídka) pro ovládací prvek v okně Osnova dokumentu, zvolte možnost **Upravit šablonu** nebo **upravte další šablony**, zvolte možnost **použít prostředek**a potom zvolte název šablony ovládacího prvku ze seznamu uvedeny.
 
      > [!NOTE]
-     > **Úprava šablony** použije šablony ovládacího prvku. **Upravit další šablony** platí jiné typy šablon.
+     > **Úprava šablony** aplikuje šablony ovládacích prvků. **Úprava dalších šablon** aplikuje další typy šablon.
 
-     Prostředky můžete použít bez ohledu na to jsou kompatibilní. Například můžete použít na prostředek štětce **popředí** vlastnost <xref:Windows.UI.Xaml.Controls.TextBox> ovládacího prvku.
+     Můžete použít prostředky bez ohledu na to, kde jsou kompatibilní. Například můžete použít prostředek štětce na vlastnost **popředí** ovládacího prvku [TextBox](xref:Windows.UI.Xaml.Controls.TextBox) .
 
 ## <a name="edit-a-resource"></a>Úprava prostředku
 
-1. Vyberte prvek na návrhové ploše nebo v okně osnovy dokumentu.
+1. Vyberte prvek na návrhové ploše nebo v okně Osnova dokumentu.
 
-2. Zvolte výchozí nebo místní vlastnost značku napravo od vlastnost **vlastnosti** okna a klikněte na tlačítko **upravit prostředek** otevřete **upravit prostředek** dialogové okno.
+2. Zvolte výchozí nebo místní značku vlastnosti napravo od vlastnosti v okně **vlastnosti** a pak zvolte **Upravit prostředek** . otevře se dialogové okno **Upravit prostředek** .
 
-3. Změna možností pro prostředek.
+3. Upravte možnosti prostředku.
 
 ## <a name="see-also"></a>Viz také:
 

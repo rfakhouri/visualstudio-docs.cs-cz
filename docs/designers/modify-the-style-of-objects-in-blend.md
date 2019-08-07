@@ -1,5 +1,6 @@
 ---
-title: Úpravy stylu objektů v Blendu
+title: Úpravy stylu objektů
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,98 +8,98 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a2071e17898fc77aba8a5d51dda77ea2927187
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845203"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821956"
 ---
-# <a name="modify-the-style-of-objects-in-blend"></a>Úpravy stylu objektů v Blendu
+# <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Úprava stylu objektů v Blend pro Visual Studio
 
-Nejjednodušší způsob, jak přizpůsobit objektu je můžete nastavit vlastnosti **vlastnosti** podokně.
+Nejjednodušší způsob, jak přizpůsobit objekt, je nastavit vlastnosti v podokně **vlastnosti** .
 
-Pokud chcete znovu použít nastavení nebo skupiny nastavení, vytvoření opakovaně použitelné prostředku. Může se jednat *styl*, *šablony*, nebo je příčina prostá, jako jsou vlastní barvy. Můžete provést také ovládací prvek zobrazí odlišně v závislosti na jeho stavu. Například tlačítko se změní na zelenou když na něj uživatel klikne.
+Pokud chcete znovu použít nastavení nebo skupiny nastavení, vytvořte opakovaně použitelný prostředek. Může se jednat o *styl*, *šablonu*nebo něco jednoduchého jako vlastní barva. Můžete také nastavit, aby se ovládací prvek zobrazoval odlišně v závislosti na jeho stavu. Například tlačítko se změní na zelenou, jakmile na něj uživatel klikne.
 
-## <a name="brushes-modify-the-appearance-of-an-object"></a>Štětce: Upravení vzhledu objektu
+## <a name="brushes-modify-the-appearance-of-an-object"></a>Štětec Úprava vzhledu objektu
 
-Použití štětce k objektu, pokud chcete změnit její vzhled.
+Pokud chcete změnit jeho vzhled, použijte k objektu štětce.
 
-### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Malování s opakováním image nebo vzor pro objekt
+### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Malování opakujícího se obrázku nebo vzoru na objekt
 
-Vykreslení s použitím image nebo vzor pro objekt s opakováním *dlaždicového štětce*.
+Vykreslí opakující se obrázek nebo vzor objektu pomocí *štětce dlaždice*.
 
-K vytvoření dlaždicového štětce, začněte vytvořením *obrázku štětce*, *kreslicí štětec*, nebo *vizuální štětec* prostředků.
+Chcete-li vytvořit štětec dlaždice, začněte tím, že vytvoříte prostředek *štětce obrázku*, *Kreslicí štětce*nebo *vizuálního štětce* .
 
-Vytvoření obrázkový štětec pomocí obrázku. Na následujících obrázcích obrázkový štětec, obrázkový štětec vedle sebe a obrázkový štětec obráceně.
+Vytvoření obrázkového štětce pomocí obrázku. Následující ilustrace znázorňují obrázek štětce, obrázek štětce vedle sebe a Překlopí obrázek štětce.
 
-![Obrázkový štětec](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png) ![štětec Mage vedle sebe](../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png) ![Obrázkový štětec překlopení](../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png)
+![Obrázek štětce](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png) ![štětec Mage vedle sebe](../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png) ![Překlopení obrázku štětce](../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png)
 
-Vytvořením kreslicího štětce vektorové kreslení například cestu nebo tvar. Na následujících obrázcích kreslicího štětce, kreslicího štětce vedle sebe a kreslicího štětce obráceně.
+Vytvořte štětec kresby pomocí vektorového vykreslování, jako je například cesta nebo tvar. Následující ilustrace znázorňují kreslicí štětce, kreslicí štětce vedle sebe a vykreslení štětce Překlopí.
 
-![Kreslicí štětec](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png) ![Kreslicí štětec vedle sebe](../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png) ![Kreslicí štětec překlopení](../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png)
+![Kreslicí štětec](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png) ![Kreslení štětce vedle sebe](../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png) ![Vykreslování štětce převráceno](../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png)
 
-Vytvoření vizuální štětec pomocí ovládacího prvku, jako je například tlačítko. Na následujících obrázcích je vizuální štětec a vizuální štětec vedle sebe.
+Vytvořte vizuální štětce z ovládacího prvku, jako je tlačítko. Následující ilustrace znázorňují vizuální štětec a vizuální štětce vedle sebe.
 
 ![Vizuální štětec](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Vizuální štětec vedle sebe](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
 
-## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Styly a šablony: Vytvoření konzistentního vzhledu a chování napříč ovládacích prvků
+## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Styly a šablony: Vytvoření konzistentního vzhledu napříč ovládacími prvky
 
-Můžete navrhnout vzhled a chování ovládacího prvku jednou a použití tohoto návrhu pro ostatní ovládací prvky, takže není nutné udržovat je jednotlivě.
+Vzhled a chování ovládacího prvku můžete navrhovat jednou a použít tento návrh i na jiné ovládací prvky, abyste je nemuseli udržovat individuálně.
 
-**Byste měli použít styl?** : Pokud chcete nastavit výchozí vlastnosti (například barva tlačítka), použijte *styl*. Ovládací prvek můžete upravit, i když jste použili k němu stylu.
+**Měli byste použít styl?** : Pokud chcete nastavit pouze výchozí vlastnosti (například barvu tlačítka), použijte *styl*. Ovládací prvek můžete upravit i po použití stylu.
 
-**Můžete použít šablonu?** : Pokud chcete změnit strukturu ovládacího prvku, použijte *šablony*. Představte si převod obrázek nebo logo na tlačítku. Ovládací prvek nelze změnit poté, co jste použili šablony do něj.
+**Měli byste použít šablonu?** : Pokud chcete změnit strukturu ovládacího prvku, použijte *šablonu*. Představte si převod grafiky nebo loga na tlačítko. Nemůžete změnit ovládací prvek poté, co jste na něj použili šablonu.
 
-### <a name="create-a-template-or-style"></a>Vytvořit šablonu nebo styl
+### <a name="create-a-template-or-style"></a>Vytvoření šablony nebo stylu
 
-Existují dva způsoby, jak vytvořit šablonu. Libovolný objekt lze převést na kreslicí ploše do ovládacího prvku nebo vytváříte šablonu na existující ovládací prvek.
+Existují dva způsoby, jak vytvořit šablonu. Libovolný objekt na návrhové ploše můžete převést na ovládací prvek nebo můžete šablonu založit na stávajícím ovládacím prvku.
 
-Libovolný objekt převést na šablonu ovládacího prvku, vyberte objekt a pak na **nástroje** nabídce zvolte **Ujistěte se, do ovládacího prvku**.
+Chcete-li převést libovolný objekt na šablonu ovládacího prvku, vyberte objekt a potom v nabídce **nástroje** zvolte možnost **vytvořit k ovládacímu prvku**.
 
-Pokud chcete založit šablony na existující ovládací prvek, vyberte objekt na návrhové ploše. Potom v horní části návrhové plochy, klikněte na tlačítko s popisem cesty, zvolte **upravit šablonu**a klikněte na tlačítko **upravit kopii** nebo **vytvořit prázdnou**.
+Pokud chcete šablonu založenou na existujícím ovládacím prvku, vyberte objekt na návrhové ploše. Pak v horní části návrhové plochy zvolte tlačítko s popisem cesty, zvolte **Upravit šablonu**a pak zvolte **Upravit kopii** nebo **vytvořit prázdné**.
 
-![Úprava šablony nabídky](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png)
+![Nabídka upravit šablonu](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png)
 
-Chcete-li vytvořit styl, vyberte objekt a potom v **objekt** nabídce zvolte **upravit styl**a klikněte na tlačítko **upravit kopii** nebo **vytvořit prázdnou**.
+Chcete-li vytvořit styl, vyberte objekt a potom v nabídce **objekt** zvolte možnost **Upravit styl**a pak zvolte možnost **Upravit kopii** nebo **vytvořit prázdnou**.
 
-- Zvolte **upravit kopii** začínat výchozí styl nebo šablonu ovládacího prvku.
+- Vyberte možnost **Upravit kopii** a začněte s výchozím stylem nebo šablonou ovládacího prvku.
 
-- Zvolte **vytvořit prázdnou** od záčátku.
+- Vyberte **vytvořit prázdné** a začněte od začátku.
 
-**Upravit aktuální** možnost bude nabídnuta jen v případě, že upravit styl nebo šablonu, kterou jste vytvořili. Nebude se zobrazovat pro ovládací prvek, který je stále používá výchozí šablonu systému.
+Možnost **Upravit aktuální** se zobrazí pouze v případě, že upravíte styl nebo šablonu, kterou jste již vytvořili. Nezobrazí se pro ovládací prvek, který stále používá výchozí systémovou šablonu.
 
-V **vytvořit prostředek stylu** dialogové okno, můžete buď pojmenovat stylu nebo šablony tak, aby ji mohli použít později, nebo použít styl nebo šablonu pro všechny ovládací prvky tohoto typu.
+V dialogovém okně **vytvořit prostředek stylu** můžete buď pojmenovat styl nebo šablonu, abyste ji mohli použít později, nebo můžete použít styl nebo šablonu pro všechny ovládací prvky tohoto typu.
 
-![Vytvořit styl prostředek – dialogové okno](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png)
+![Dialogové okno vytvořit prostředek stylu](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png)
 
 > [!NOTE]
-> Nelze vytvořit styly a šablony pro každý typ ovládacího prvku. Pokud je nepodporuje ovládací prvek, tlačítko s popisem cesty nezobrazí výše na návrhovou plochu.
-> Chcete-li vrátit do rozsahu úprav hlavního dokumentu, klikněte na tlačítko **vrátit rozsah do** ![obnovit obor na ikonu](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Pro každý typ ovládacího prvku nelze vytvářet styly ani šablony. Pokud je ovládací prvek nepodporuje, tlačítko s popisem cesty se nezobrazí nad návrhovou plochou.
+> Pokud se chcete vrátit do oboru úprav hlavního dokumentu, klikněte na **vrátit obor a** ![vraťte rozsah do ikony](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
-### <a name="apply-a-style-or-template-to-a-control"></a>Platí pro ovládací prvek stylu nebo šablony
+### <a name="apply-a-style-or-template-to-a-control"></a>Použití stylu nebo šablony pro ovládací prvek
 
-Klikněte pravým tlačítkem na objekt [objekty a časová osa](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window) okně zvolte **upravit šablonu**a klikněte na tlačítko **aplikovat zdroj**.
+V okně [objekty a časová osa](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window) klikněte pravým tlačítkem myši na objekt, zvolte možnost **Upravit šablonu**a pak zvolte **použít prostředek**.
 
-![Použít prostředek nabídky](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
+![Nabídka použít prostředek](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
-### <a name="restore-the-default-style-or-template-of-a-control"></a>Obnovit výchozí styl nebo šablonu ovládacího prvku
+### <a name="restore-the-default-style-or-template-of-a-control"></a>Obnovení výchozího stylu nebo šablony ovládacího prvku
 
-Vyberte ovládací prvek a [vlastnosti](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window) okna, vyhledejte **styl** nebo **šablony** vlastnost. Zvolte **pokročilé možnosti**a potom klikněte na tlačítko **resetování** v místní nabídce.
+Vyberte ovládací prvek a v okně * * Vlastnosti * * * * vyhledejte vlastnost **style** nebo **template** . Zvolte **Upřesnit možnosti**a potom v místní nabídce klikněte na **obnovit** .
 
-## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Vizuální stavy: Změna vzhledu ovládacího prvku na základě jeho stavu
+## <a name="visual-states"></a>Vizuální stavy
 
-Ovládací prvky mohou mít různé vizuální vzhled na základě interakcí uživatele. Například můžete provést tlačítka změní na zelenou když na něj uživatel klikne nebo ji můžete spustit animaci. Zkraťte nebo prodloužit doba mezi vizuálních stavů pomocí přechodů.
+Vizuální stavy umožňují změnit vzhled ovládacího prvku na základě jeho stavu. Ovládací prvky mohou mít různé vizuální vzhledy na základě interakcí uživatelů. Například můžete nastavit, aby se tlačítko zeleně, když na něj uživatel klikne, nebo můžete spustit animaci. Zkraťte nebo prodlužte dobu mezi vizuálními stavy pomocí přechodů.
 
-![Přesuňte ukazatel stavu](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
+![Myš nad stavem](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Podívejte se na krátké video:** ![Tlačítko Přehrát](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Správa stavu ovládacích prvků WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Podívejte se na krátké video:** ![Tlačítko](../designers/media/bldadminconsoleinitialconfigicon.PNG) přehrát – [umožňuje spravovat stav ovládacích prvků WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Prostředky: Vytvoření barvy, styly a šablony a pozdější použití
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Prostředky Vytváření barev, stylů a šablon a jejich opětovné použití později
 
-Můžete převést prakticky cokoliv ve vašem projektu a prostředek. Prostředek je právě objekt, který můžete ve své aplikaci využít v různých místech. Můžete například vytvořit jednou barvu, usnadňují prostředek a potom použít na několik objektů. Chcete-li změnit barvu všech těchto objektů, stačí změňte barvu prostředků.
+V projektu můžete převést prakticky cokoli na prostředek. Prostředek je pouze objekt, který lze použít na různých místech aplikace. Můžete například vytvořit barvu jednou, nastavit ji jako prostředek a potom použít tuto barvu u několika objektů. Chcete-li změnit barvu všech těchto objektů, stačí změnit zdroj barvy.
 
-![Převést barvu na prostředek](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Vytvořit prostředek barev – dialogové okno](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
+![Tlačítko převést barvu na prostředek](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Dialogové okno vytvořit prostředek barvy](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
 ## <a name="see-also"></a>Viz také:
 

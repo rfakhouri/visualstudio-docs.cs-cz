@@ -6,104 +6,102 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0401d810f5f97b0306290faff2cfeb1785ba14f
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893581"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821932"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Uspořádání objektů do kontejnerů rozložení v Návrháři XAML
 
-Tento článek popisuje panely rozložení a ovládací prvky pro návrháře XAML.
+Tento článek popisuje panely rozložení a ovládací prvky pro Návrhář XAML.
 
-Představte si, kam chcete objektů se zobrazí na stránce. objekty, jako jsou obrázky, tlačítka a videa. Možná budete chtít zobrazit řádky a sloupce, na jednom řádku svisle nebo vodorovně nebo v pevné umístění.
+Představte si, kde byste chtěli zobrazit objekty na&mdash;objektech stránky, jako jsou obrázky, tlačítka a videa. Možná budete chtít, aby se zobrazovaly v řádcích a sloupcích, na jednom řádku svisle nebo vodorovně nebo na pevných pozicích.
 
-Poté, co jste využili příležitost dobře se rozmyslete si, jak může zobrazit na stránce, zvolte panely rozložení. Všechny stránky spustit s jednou, protože potřebujete něco, do níž přidáváte objekty. Ve výchozím nastavení je **mřížky**, ale můžete výběr změnit.
+Až budete mít možnost si představit, jak se stránka může zobrazit, vyberte panel rozložení. Všechny stránky začínají na jednom, protože potřebujete něco, ke kterému přidáte objekty. Ve výchozím nastavení je to **Mřížka**, ale můžete ji změnit.
 
-Panely rozložení můžete uspořádat objekty na stránce, ale více než oni. Jejich pomáhají navrhovat pro jiné velikosti obrazovky a jejich řešení. Když uživatelé spustí aplikaci, všechno v panelu rozložení změní velikost tak, aby odpovídaly nemovitosti obrazovku svého zařízení. Samozřejmě pokud nechcete, aby si rozložení, které provedete, můžete přepsat toto chování pro část rozložení nebo celý rozložení. Chcete-li ovládací prvek, který můžete použít vlastností výšky a šířky.
+Panely rozložení vám pomohou uspořádat objekty na stránce, ale mají větší hodnotu. Umožňují vám navrhovat různé velikosti a rozlišení obrazovky. Když uživatelé spustí vaši aplikaci, vše v panelu rozložení mění velikost tak, aby odpovídala skutečnému vzhledu zařízení na obrazovce. Samozřejmě, pokud nechcete, aby to vaše rozložení mělo, můžete toto chování přepsat pro část rozložení nebo celé rozložení. Můžete použít vlastnosti Height a Width k řízení.
 
 ## <a name="layout-panels"></a>Panely rozložení
 
-Vaše stránka Začněte výběrem jedné z těchto panelů rozložení. Stránka může mít více než jeden. Například můžete začít s **mřížky** rozložení panelu a pak přidejte **StackPanel** na oblast v **mřížky** tak, aby si můžete uspořádat ovládací prvky v tomto elementu svisle.
+Začněte svou stránku výběrem jednoho z těchto panelů rozložení. Vaše stránka může mít víc než jednu. Například můžete začít s panelem rozložení **mřížky** a pak přidat **StackPanel** do oblasti v **mřížce** , aby bylo možné uspořádat ovládací prvky v daném prvku svisle.
 
-Následující panely rozložení jsou nejvíce popularly používá, ale existují i další. Najdete je vše v **nástrojů** v sadě Visual Studio nebo **prostředky** panelu v Blendu pro Visual Studio.
+Níže jsou používány následující panely rozložení, ale existují i jiné. Vše najdete v **sadě nástrojů v sadě** Visual Studio nebo na panelu **aktiva** v Blend pro Visual Studio.
 
 ### <a name="grid"></a>Mřížka
 
-Uspořádání objektů do řádků a sloupců.
+Uspořádá objekty do řádků a sloupců.
 
 ![Panel rozložení mřížky](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
 
 ### <a name="uniformgrid"></a>UniformGrid
 
-Uspořádání objektů do mřížky stejných, nebo jednotných, oblastí. Tento panel se skvěle hodí k uspořádání seznamu imagí.
+Uspořádejte objekty do oblastí mřížky EQUAL nebo Uniform. Tento panel je skvělý pro uspořádání seznamu imagí.
+
+(K dispozici pouze pro projekty WPF.)
 
 ![Panel rozložení UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-(K dispozici pouze pro projekty WPF).
-
 ### <a name="canvas"></a>Plátno
 
-Uspořádání objektů požadovaným způsobem. Když uživatelé spustí aplikaci, budou tyto prvky pevné umístění na obrazovce.
+Uspořádejte objekty tak, jak chcete. Když uživatelé spustí vaši aplikaci, budou mít tyto prvky na obrazovce pevně stanovené pozice.
 
 ![Panel rozložení plátna](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
 
 ### <a name="stackpanel"></a>StackPanel
 
-Uspořádání objektů v jednom řádku vodorovně nebo svisle.
+Uspořádá objekty v jednom řádku vodorovně nebo svisle.
 
-![Panel rozložení objektu StackPanel](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png)
+![Panel rozložení StackPanel](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png)
 
 ### <a name="wrappanel"></a>WrapPanel
 
-Uspořádání objektů postupně zleva doprava. Když je spuštěna na panelu dochází volné místo na pravé hraně ho *zabalí* obsah na další řádek, a tak dále zleva doprava, shora dolů. Můžete provést také orientace zalamovacího panelu svislé tak, aby objekty směrovat z horní části shora dolů, zleva doprava.
+Uspořádá objekty postupně zleva doprava. Když je panel mimo prostor v pravém horním rohu, *zalomí* obsah na další řádek, a tak dále zleva doprava (shora dolů). Můžete také nastavit orientaci svislého panelu, aby objekty byly předávány shora dolů a zleva doprava.
 
-(K dispozici pouze pro projekty WPF).
+(K dispozici pouze pro projekty WPF.)
 
-![Panel rozložení WrapPanel](../designers/media/b1c415fb-9a32-4a18-aa0b-308fca994ac9.png)
+![Panel rozložení objektu WrapPanel](../designers/media/b1c415fb-9a32-4a18-aa0b-308fca994ac9.png)
 
 ### <a name="dockpanel"></a>DockPanel
 
-Uspořádat objekty tak, aby zůstanou, nebo *ukotvit*, k jednomu z okrajů panelu.
+Uspořádejte objekty tak, aby zůstaly nebo *ukotveny*k jednomu okraji panelu.
 
-(K dispozici pouze pro projekty WPF).
+(K dispozici pouze pro projekty WPF.)
 
-![Panel rozložení objektu DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
+![Panel rozložení DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Podívejte se na krátké video:** ![Tlačítko Přehrát](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF – DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**Podívejte se na krátké video:** ![Tlačítko](../designers/media/bldadminconsoleinitialconfigicon.PNG) přehrát [WPF – DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
-## <a name="layout-controls"></a>Rozložení ovládacích prvků
+## <a name="layout-controls"></a>Ovládací prvky rozložení
 
-Do rozložení ovládacích prvků také můžete přidat objekty. Nejsou jako plně funkční jako panel rozložení, ale mohou být užitečné je pro určité scénáře.
+Můžete také přidat objekty do ovládacích prvků rozložení. Nejsou jako panel rozložení s funkcemi, ale můžou být pro určité scénáře užitečné.
 
-Následující ovládací prvky rozložení jsou nejoblíbenější, ale existují i další. Najdete je vše v **nástrojů** v sadě Visual Studio nebo **prostředky** panelu v Blendu pro Visual Studio.
+Následující ovládací prvky rozložení jsou nejoblíbenější, ale existují i jiné. Vše najdete v **sadě nástrojů v sadě** Visual Studio nebo na panelu **aktiva** v Blend pro Visual Studio.
 
 ### <a name="border"></a>Ohraničení
 
-Vytvoření ohraničení, pozadí nebo obojí kolem objektu. Můžete přidat pouze jeden objekt **ohraničení**. Pokud chcete použít ohraničení a pozadí pro více než jeden objekt, přidání panelu rozložení **ohraničení**. Potom můžete přidáte objekty do tohoto panelu nebo ovládacího prvku.
+Vytvořte ohraničení, pozadí nebo obojí kolem objektu. Do **ohraničení**lze přidat pouze jeden objekt. Chcete-li použít ohraničení nebo pozadí pro více než jeden objekt, přidejte do **ohraničení**panel rozložení. Pak přidejte objekty do tohoto panelu nebo ovládacího prvku.
 
 ![Ovládací prvek rozložení ohraničení](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png)
 
 ### <a name="popup"></a>Překryvný
 
-Zobrazit informace nebo uživatelům v okně Možnosti. Můžete přidat pouze jeden objekt **automaticky otevírané okno**. Ve výchozím nastavení **automaticky otevírané okno** obsahuje **mřížky** ale můžete výběr změnit.
+Zobrazit informace nebo možnosti uživatelům v okně. Do **překryvného okna**lze přidat pouze jeden objekt. Ve výchozím nastavení obsahuje **automaticky otevírané okno** **mřížku**, ale můžete ho změnit.
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-Povolte uživatelům přejděte dolů na stránce nebo oblasti stránky. Můžete přidat pouze jeden objekt **ScrollViewer** , je velmi výhodné, chcete-li přidat panel rozložení, jako **mřížky** nebo **StackPanel**.
+Umožní uživatelům procházet stránku nebo oblast stránky. Do **ScrollViewer**můžete přidat pouze jeden objekt, takže má smysl přidat panel rozložení, jako je například **Mřížka** nebo **StackPanel**.
 
-![Scrollviewer – ovládací prvek rozložení](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
+![Ovládací prvek rozložení ScrollViewer](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 
 ### <a name="viewbox"></a>Viewbox
 
-Škálování objekty, které podobně jako s ovládacím prvkem přiblížení. Můžete přidat pouze jeden objekt **Viewbox**. Pokud chcete k použití tohoto efektu pro více než jeden objekt, přidat do panelu rozložení **ViewBox**a pak přidejte své ovládací prvky do panelu rozložení.
+Škálujte objekty podobně, jako byste měli ovládací prvek Lupa. Do **Viewbox**můžete přidat pouze jeden objekt. Chcete-li tento efekt použít pro více než jeden objekt, přidejte do **Viewbox**panel rozložení a pak přidejte ovládací prvky do tohoto panelu rozložení.
 
-(K dispozici pouze pro projekty WPF).
+(K dispozici pouze pro projekty WPF.)
 
-![Viewbox – ovládací prvek rozložení](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
+![Ovládací prvek rozložení ViewBox](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
 ## <a name="see-also"></a>Viz také:
 

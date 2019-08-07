@@ -10,28 +10,26 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58f83616985556d762ae05a0a97c6263e2e6d7a4
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892838"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821558"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Návod: Vazba s daty v Návrháři XAML
 
-V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové ploše nebo v okně Vlastnosti. V příkladu v tomto návodu ukazuje, jak k vytvoření vazby dat k ovládacímu prvku. Konkrétně návodu ukazuje, jak vytvořit jednoduchou nákupního košíku třídu, která má [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) s názvem `ItemCount`a pak vytvoříte vazbu `ItemCount` vlastnost **Text** vlastnost nástroje [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) ovládacího prvku.
+V Návrhář XAML můžete nastavit vlastnosti datové vazby pomocí návrhové plochy a okno Vlastnosti. Příklad v tomto návodu ukazuje, jak vytvořit vazby dat k ovládacímu prvku. Konkrétně návod ukazuje, jak vytvořit jednoduchou třídu nákupního košíku s názvem `ItemCount` [DependencyProperty](xref:Windows.UI.Xaml.DependencyProperty) `ItemCount` a pak vytvořit vazby vlastnosti na vlastnost **text** ovládacího prvku [TextBlock](xref:Windows.UI.Xaml.Controls.TextBlock) .
 
-## <a name="to-create-a-class-to-use-as-a-data-source"></a>Pro vytvoření třídy, který se použije jako zdroj dat
+## <a name="to-create-a-class-to-use-as-a-data-source"></a>Vytvoření třídy, která bude použita jako zdroj dat
 
 1. Na **souboru** nabídce zvolte **nový** > **projektu**.
 
-1. V **nový projekt** dialogového okna zvolte buď **Visual C#** nebo **jazyka Visual Basic** uzlu, rozbalte **Windows Desktop** uzel a pak Zvolte **aplikace WPF** šablony.
+1. V dialogovém **okně Nový projekt** zvolte buď uzel  **C# vizuál** , nebo **Visual Basic** , rozbalte uzel **Windows Desktop** a pak zvolte šablonu **aplikace WPF** .
 
-1. Pojmenujte projekt **BindingTest**a klikněte na tlačítko **OK** tlačítko.
+1. Pojmenujte projekt **BindingTest**a pak klikněte na tlačítko **OK** .
 
-1. Otevřít **MainWindow.xaml.cs** (nebo **soubor MainWindow.xaml.vb**) a přidejte následující kód. V jazyce C#, přidejte kód `BindingTest` obor názvů (před posledním pravou závorku v souboru). V jazyce Visual Basic přidejte novou třídu.
+1. Otevřete soubor **MainWindow.XAML.cs** (nebo **MainWindow. vb**) a přidejte následující kód. V C#přidejte kód do `BindingTest` oboru názvů (před poslední pravou závorku v souboru). V Visual Basic stačí přidat novou třídu.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -65,39 +63,39 @@ V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové
    End Class
    ```
 
-   Tento kód nastaví hodnotu 0 jako počet položek výchozí pomocí [třída PropertyMetadata](/uwp/api/Windows.UI.Xaml.PropertyMetadata) objektu.
+   Tento kód nastaví hodnotu 0 jako výchozí počet položek pomocí objektu [hodnotu PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata) .
 
-1. Na **souboru** nabídce zvolte **sestavení** > **sestavit řešení**.
+1. V nabídce **soubor** klikněte na příkaz **sestavit** > **sestavení řešení**.
 
-## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Vlastnost ItemCount vázat na ovládací prvek TextBlock
+## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Svázání vlastnosti vlastnost ItemCount s ovládacím prvkem TextBlock
 
-1. V Průzkumníku řešení otevřete místní nabídku pro **souboru MainWindow.xaml** a zvolte **Návrhář zobrazení**.
+1. V Průzkumník řešení otevřete místní nabídku pro **MainWindow. XAML** a klikněte na tlačítko **Návrhář zobrazení**.
 
-1. Na panelu nástrojů zvolte [mřížky](/uwp/api/Windows.UI.Xaml.Controls.Grid) ovládací prvek a přidat do formuláře.
+1. V sadě nástrojů vyberte ovládací prvek [mřížky](xref:Windows.UI.Xaml.Controls.Grid) a přidejte jej do formuláře.
 
-1. S `Grid` vybrán, v okně Vlastnosti zvolte **nový** vedle **DataContext** vlastnost.
+1. Když vyberete, v okno Vlastnosti klikněte na tlačítko **Nový** vedle vlastnosti DataContext. `Grid`
 
-1. V **vybrat objekt** dialogové okno pole, ujistěte se, že **ukázat všechna sestavení** zrušeno zaškrtnutí políčka, zvolte **ShoppingCart** pod **BindingTest** obor názvů a klikněte na tlačítko **OK** tlačítko.
+1. V dialogovém okně **Vybrat objekt** se ujistěte, že je zaškrtnuto políčko **Zobrazit všechna sestavení** , zvolte **ShoppingCart** pod oborem názvů **BindingTest** a pak klikněte na tlačítko **OK** .
 
-     Je vidět na následujícím obrázku **vybrat objekt** dialogové okno s **ShoppingCart** vybrané.
+     Na následujícím obrázku je znázorněno dialogové okno **Vybrat objekt** s vybraným **ShoppingCart** .
 
-     ![Dialogové okno Vybrat objekt](../designers/media/blendselectobject.png)
+     ![Výběr objektu – dialogové okno](../designers/media/blendselectobject.png)
 
-1. V **nástrojů**, zvolte `TextBlock` ovládací prvek pro přidání do formuláře.
+1. V sadě **nástrojů**vyberte `TextBlock` ovládací prvek, který chcete přidat do formuláře.
 
-1. S `TextBlock` ovládací prvek vybrán, v okně Vlastnosti zvolte značku vlastnost napravo od **Text** vlastnost a klikněte na tlačítko **vytvořit datovou vazbu**. (Značka vlastnosti vypadá jako malé pole.)
+1. V ovládacím prvku vyberte v okno Vlastnosti značku vlastnosti napravo od vlastnosti text a pak zvolte **vytvořit datovou vazbu**. `TextBlock` (Značka vlastnosti vypadá jako malá box.)
 
-1. V datech vytvořit vazby v dialogovém okně **cesta** zvolte **ItemCount: (int32)** vlastnosti a klikněte na tlačítko **OK** tlačítko.
+1. V dialogovém okně vytvořit datovou vazbu vyberte v poli **cesta** vlastnost **vlastnost ItemCount: (Int32)** a pak klikněte na tlačítko **OK** .
 
-     Je vidět na následujícím obrázku **vytvořit datovou vazbu** dialogové okno s **ItemCount** vybrané vlastnosti.
+     Na následujícím obrázku je znázorněno dialogové okno **vytvořit datovou vazbu** s vybranou vlastností **vlastnost ItemCount** .
 
-     ![Vytvoření datové vazby dialogového okna](../designers/media/xaml_create_data_binding.png)
+     ![Dialog vytvořit datovou vazbu – dialogové okno](../designers/media/xaml_create_data_binding.png)
 
-1. Stisknutím klávesy **F5** ke spuštění aplikace.
+1. Stisknutím klávesy **F5** spusťte aplikaci.
 
-     `TextBlock` Ovládací prvek zobrazovat výchozí hodnotu 0 jako text.
+     `TextBlock` Ovládací prvek by měl zobrazit výchozí hodnotu 0 jako text.
 
 ## <a name="see-also"></a>Viz také:
 
 - [Vytvoření uživatelského rozhraní pomocí Návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-- [Přidat převaděč hodnot – dialogové okno](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Dialogové okno Přidat převaděč hodnot](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)

@@ -104,3 +104,11 @@
 
 # [Zpráva k vydání verze](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [Zpráva k vydání verze Preview](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
+# Ukázky
+## [Vybrané ukázky](samples.yml)
+## [Všechny ukázky ASP.NET Core](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
+## [Všechny ukázky .NET Core](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
+## [Všechny ukázky Xamarin.Forms](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)
+## [Všechny ukázky Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/samples/)
+## [Všechny ukázky Xamarin.Android](https://docs.microsoft.com/xamarin/android/samples/)
+## [Všechny ukázky Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/samples/)

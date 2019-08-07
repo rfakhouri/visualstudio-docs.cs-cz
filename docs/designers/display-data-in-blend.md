@@ -1,5 +1,6 @@
 ---
-title: Zobrazení dat v Blendu
+title: Vizualizace ukázkových dat v uživatelském rozhraní XAML
+titleSuffix: Blend for Visual Studio
 ms.date: 03/06/2018
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
@@ -8,50 +9,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a17f3db9aac8128218f82d3faa3ff1b62f9822a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fcec16b0f67d54766ae373fc52228792dc1f732
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898008"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822091"
 ---
-# <a name="display-data-in-blend"></a>Zobrazení dat v Blendu
+# <a name="display-data-in-blend-for-visual-studio"></a>Zobrazit data v Blend pro Visual Studio
 
-Při úpravách rozložení stránek, můžete zobrazit ukázkových dat do návrháře. Můžete generovat ukázková data od začátku nebo pomocí existující třídy. Můžete také připojit k *živá data* , který se zobrazí v aplikaci při každém spuštění.
+Ukázková data můžete zobrazit v návrháři při přizpůsobování rozložení stránek. Můžete vygenerovat ukázková data od začátku nebo pomocí existující třídy. Můžete se také připojit k *živým datům* , která se zobrazí v aplikaci při jejím spuštění.
 
 ## <a name="generate-sample-data"></a>Generování ukázkových dat
 
-Chcete-li generovat ukázková data, otevřete dokument XAML. V **Data** panelu, vyberte **vytvořit ukázková data** ![ikonu vytvořit ukázková data](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) tlačítko a pak zvolte **nová vzorová Data**.
+Chcete-li generovat ukázková data, otevřete dokument XAML. Na panelu **data** klikněte na](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) tlačítko **vytvořit** ![ukázková data vytvořit ukázková data a pak zvolte **Nová ukázková data**.
 
-Definují strukturu vašich dat v **Data** panel a připnout ho ke prvky uživatelského rozhraní na libovolné stránce.
+Na panelu **data** definujte strukturu vašich dat a potom ji navažte na prvky uživatelského rozhraní na libovolné stránce.
 
-![Panel dat](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png)
+![Panel data](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png)
 
-Pokud chcete vaše ukázková data se zobrazí na stránkách při spuštění aplikace, zvolte **možnosti zdroje dat** ![ikona Možnosti zdroje dat](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png)a klikněte na tlačítko **povolit při spuštění aplikace**.
+Pokud chcete, aby se vaše ukázková data zobrazovala na stránkách, když aplikaci spouštíte, zvolte možnost **zdroj** ![dat ikona](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png)možnosti zdroje dat a pak zvolte **Povolit při spuštění aplikace**.
 
-![Povolit položku nabídky při spuštění aplikace](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
+![Povolit při spuštění položky nabídky aplikace](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
- **Podívejte se na krátké video:** ![Ikona Přehrát](../designers/media/bldadminconsoleinitialconfigicon.PNG) [vytvořit ukázková data ze začátku](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
+**Podívejte se na krátké video:** ![Ikona](../designers/media/bldadminconsoleinitialconfigicon.PNG) přehrát – [Vytvořit Ukázková data od začátku](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2)
 
- **Podívejte se na krátké video:** ![Ikona Přehrát](../designers/media/bldadminconsoleinitialconfigicon.PNG) [kombinování si některé datové vazby pomocí programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
+## <a name="generate-sample-data-from-a-class"></a>Generování ukázkových dat z třídy
 
-## <a name="generate-sample-data-from-a-class"></a>Generování ukázkových dat ze třídy
+Pokud jste již vytvořili třídy, které popisují strukturu vašich dat, můžete z nich vygenerovat ukázková data.
 
-Pokud jste již vytvořili tříd, které popisují strukturu vašich dat, můžete generovat ukázková data z nich.
+Chcete-li generovat ukázková data z třídy, otevřete dokument XAML a poté na panelu **data** klikněte na](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) tlačítko **vytvořit** ![ukázková data vytvořit ukázková data a potom klikněte na možnost **Vytvořit Ukázková data z třídy**.
 
-Chcete-li generovat ukázková data ze třídy, otevřete dokument XAML a potom v **Data** panelu, klikněte na tlačítko **vytvořit ukázková data** ![ikonu vytvořit ukázková data](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) tlačítko a pak klikněte na **Vytvořit ukázková Data ze třídy**.
-
-**Podívejte se na krátké video:** ![Ikona Přehrát](../designers/media/bldadminconsoleinitialconfigicon.PNG) [vytvořit ukázková data ze třídy](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
-
-**Podívejte se na krátké video:** ![Ikona Přehrát](../designers/media/bldadminconsoleinitialconfigicon.PNG) [kombinovat si některé datové vazby pomocí programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
-
-## <a name="show-live-data-in-a-wpf-application"></a>Zobrazit živá data v aplikaci WPF
-
-**Podívejte se na krátké video:** ![Ikona Přehrát](../designers/media/bldadminconsoleinitialconfigicon.PNG) [vytvořit zdroj dat XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
-
-## <a name="show-live-data-in-a-store-or-phone-app"></a>Zobrazit živá data v app storu nebo telefon
-
-Zobrazit [práce s daty a soubory (XAML)](/previous-versions/windows/apps/br229562(v=win.10)).
+**Podívejte se na krátké video:** ![Ikona](../designers/media/bldadminconsoleinitialconfigicon.PNG) přehrát [se smíchá s několika vazbami dat pomocí Blendu](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
 ## <a name="see-also"></a>Viz také:
 

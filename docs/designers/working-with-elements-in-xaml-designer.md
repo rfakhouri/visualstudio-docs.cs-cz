@@ -6,110 +6,108 @@ ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f80496cb54e8e7f4c99a819ddd3c07fbed5438ca
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823817"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821522"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Práce s elementy v Návrháři XAML
 
-Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší aplikace v XAML, v kódu nebo s použitím návrháře XAML. Toto téma popisuje, jak pracovat s elementy v Návrháři XAML v sadě Visual Studio nebo nástroje Blend for Visual Studio.
+Můžete přidat prvky – ovládací prvky, rozložení a tvary – do aplikace v jazyce XAML, v kódu nebo pomocí Návrhář XAML. Toto téma popisuje, jak pracovat s prvky v Návrhář XAML v aplikaci Visual Studio nebo Blend pro Visual Studio.
 
-## <a name="add-an-element-to-a-layout"></a>Přidat element do rozložení
+## <a name="add-an-element-to-a-layout"></a>Přidání elementu do rozložení
 
-*Rozložení* je proces pro změnu velikosti a rozmístění prvků v uživatelském rozhraní. Pokud chcete umístit vizuálních prvků, je nutné umístit je v rozložení [Panel](/uwp/api/Windows.UI.Xaml.Controls.Panel). A `Panel` má vlastnost podřízené, což je kolekce z [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement) typy. Můžete použít různé `Panel` podřízené prvky, jako například [plátna](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel), a [mřížky](/uwp/api/Windows.UI.Xaml.Controls.Grid), která bude sloužit jako kontejnery rozložení a do pozice a uspořádání prvků na stránce.
+*Rozložení* je proces změny velikosti a umístění prvků v uživatelském rozhraní. Chcete-li umístit vizuální prvky, je nutné je umístit do [panelu](xref:Windows.UI.Xaml.Controls.Panel)rozložení. Má podřízenou vlastnost, která je kolekcí typů [FrameworkElement.](xref:Windows.UI.Xaml.FrameworkElement) `Panel` `Panel` Můžete použít různé podřízené prvky, jako je [plátno](xref:Windows.UI.Xaml.Controls.Canvas), [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel)a [Grid](xref:Windows.UI.Xaml.Controls.Grid), k obsluze jako kontejnerů rozložení a k umístění a uspořádání prvků na stránce.
 
-Ve výchozím nastavení `Grid` panel slouží jako kontejner rozložení nejvyšší úrovně v rámci stránky nebo formuláře. Můžete přidat panely rozložení, ovládacích prvků nebo jiných prvků v rámci rozložení stránky nejvyšší úrovně.
+Ve výchozím nastavení `Grid` je panel použit jako kontejner rozložení nejvyšší úrovně v rámci stránky nebo formuláře. Můžete přidat panely rozložení, ovládací prvky nebo jiné prvky v rozložení stránky nejvyšší úrovně.
 
-Chcete-li přidat element do rozložení v Návrháři XAML, proveďte jednu z následujících akcí:
+Chcete-li přidat prvek do rozložení v Návrhář XAML, proveďte jednu z následujících akcí:
 
-- Klikněte dvakrát na prvek v **nástrojů** (nebo vybrat prvek v panelu nástrojů a stisknutím klávesy **Enter**).
+- Dvakrát klikněte na prvek v **sadě nástrojů** (nebo vyberte element v sadě nástrojů a stiskněte klávesu **ENTER**).
 
-- Přetáhněte element z **nástrojů** na návrhovou plochu.
+- Přetáhněte element ze **sady nástrojů** na návrhovou plochu.
 
-- V **nástrojů**, vyberte jeden z kreslících nástrojů (například [Elipsa](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) nebo [obdélník](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle)) a následně nakreslete prvek v panelu aktivní.
+- V **sadě nástrojů**vyberte jeden z nástrojů pro kreslení (například Elipsa nebo [](xref:Windows.UI.Xaml.Shapes.Ellipse) [obdélník](xref:Windows.UI.Xaml.Shapes.Rectangle)) a potom nakreslete prvek na aktivním panelu.
 
-## <a name="change-the-layering-order-of-elements"></a>Změna pořadí vrstev elementů
+## <a name="change-the-layering-order-of-elements"></a>Změna pořadí vrstvení prvků
 
-Pokud existují dva prvky na návrhovou plochu v Návrháři XAML, jeden prvek se zobrazí před jiným v pořadí vrstev. V dolní části Seznam prvků, osnovy dokumentu okna je nejvíce vpředu prvek (s výjimkou, kdy **ZIndex** je nastavena vlastnost pro daný element). Při vkládání elementů do stránky, formuláře nebo kontejner rozložení, element automaticky umístěn před další prvky v elementu aktivní kontejner. Chcete-li změnit pořadí prvků, můžete použít **pořadí** příkazy nebo přetáhnout prvky v rámci stromů objektů v okně osnovy dokumentu.
+Pokud jsou na návrhové ploše dva prvky v Návrhář XAML, jeden prvek se zobrazí před druhým v pořadí vrstev. V dolní části seznamu prvků je v okně Osnova dokumentu přední prvek (kromě případu, kdy je nastavena vlastnost **ZIndex** elementu). Při vložení elementu do kontejneru stránky, formuláře nebo rozložení, je prvek automaticky umístěn před další prvky v rámci aktivního prvku kontejneru. Chcete-li změnit pořadí prvků, lze použít příkazy **Order** nebo přetáhnout prvky ve stromové struktuře objektů v okně Osnova dokumentu.
 
-Chcete-li změnit pořadí vrstev, proveďte jednu z následujících akcí:
+Chcete-li změnit pořadí vrstvení, proveďte jednu z následujících akcí:
 
-- V **Osnova dokumentu** okně elementy přetáhnout nebo dolů lze vytvořit požadované pořadí vrstev.
+- V okně **Osnova dokumentu** přetáhněte prvky nahoru nebo dolů a vytvořte požadované pořadí vrstev.
 
-- Klikněte pravým tlačítkem myši na prvek v okně Osnova dokumentu nebo na návrhovou plochu, pro kterou chcete změnit pořadí vrstev, přejděte na **pořadí**a pak klikněte na jednu z následujících akcí:
+- Klikněte pravým tlačítkem myši na prvek v okně Osnova dokumentu nebo na návrhové ploše, pro kterou chcete změnit pořadí vrstev, přejděte na příkaz **pořadí**a potom klikněte na jednu z následujících možností:
 
-  - **Přenést do popředí** elementu uvést úplně přenést do popředí pořadí.
+  - **Přeneste dopředu** pro převedení prvku na začátek objednávky.
 
-  - **Přenést blíž** vám elementu vpřed o jednu úroveň v pořadí.
+  - **Přenést** nahoru, aby prvek předali jednu úroveň v pořadí.
 
-  - **Přenést dál** odeslat zpět o jednu úroveň element v pořadí.
+  - **Přenést dozadu** pro odeslání elementu zpět o jednu úroveň v pořadí.
 
-  - **Přenést do pozadí** odesílat elementu úplně přenést do pozadí pořadí.
+  - **Přenést do back** pro odeslání elementu všem způsobem na zadní stranu objednávky.
 
-  Změnit **ZIndex** vlastnost **rozložení** oddíl v okně Vlastnosti. Pro překrývající se prvky, **ZIndex** vlastnost má přednost před pořadí prvků, které jsou zobrazeny v okně Osnova dokumentu. Element, který má vyšší **ZIndex** hodnota se zobrazí v popředí při prvky překrývat.
+- Změňte vlastnost **ZIndex** v části **rozložení** v okno Vlastnosti. U překrývajících se prvků má vlastnost **ZIndex** přednost před pořadím prvků zobrazených v okně Osnova dokumentu. Prvek, který má vyšší hodnotu **ZIndex** , se zobrazí v popředí při překrytí prvků.
 
-## <a name="change-the-alignment-of-an-element"></a>Změna zarovnání prvku
+## <a name="change-the-alignment-of-an-element"></a>Změna zarovnání elementu
 
-Pomocí příkazů nabídky nebo přetažením prvky k zarovnávacím čárám je možné zarovnat elementy v návrhové ploše.
+Prvky můžete zarovnat na návrhové ploše pomocí příkazů nabídky nebo přetažením prvků do zarovnávacím čárám.
 
-A *snapline –* je vizuální upozornění, která pomáhá zarovnat element vzhledem k další prvky v aplikaci.
+*Snapline* je vizuální znázornění, které vám pomůže zarovnat prvek relativně k ostatním prvkům v aplikaci.
 
-Chcete-li zarovnat nejmíň dva elementy pomocí příkazů nabídky:
+Zarovnání dvou nebo více prvků pomocí příkazů nabídky:
 
-1. Vyberte prvky, které chcete, aby bylo v souladu. Můžete vybrat více než jeden element stisknutím a podržením **Ctrl** klávesu vybrat elementy.
+1. Vyberte prvky, které chcete zarovnat. Stisknutím a podržením klávesy **CTRL** můžete vybrat více než jeden prvek a zároveň vybrat prvky.
 
-2. Vyberte jednu z následujících vlastností v rámci **HorizontalAlignment** v **rozložení** části okna vlastnosti: **Vlevo**, **Center**, **vpravo**, nebo **Stretch**.
+2. V části **HorizontalAlignment** okno Vlastnosti v části **rozložení** vyberte jednu z následujících vlastností: **Left**, **Center**, **Right**nebo **Stretch**.
 
-3. Vyberte jednu z následujících vlastností v rámci **VerticalAlignment** v **rozložení** části okna vlastnosti: **Horní**, **Center**, **dolní**, nebo **Stretch**.
+3. V části **VerticalAlignment** okno Vlastnosti v části **rozložení** vyberte jednu z následujících vlastností: **Top**, **Center**, **Bottom**nebo **Stretch**
 
-Zarovnat dva nebo více prvků pomocí zarovnávacích čar, v Návrháři XAML, v rozložení, který obsahuje alespoň dva prvky, přetáhněte nebo jeden z elementů velikost tak, aby na hraničních zařízeních je v souladu s jiný element.
+Chcete-li zarovnat dva nebo více prvků pomocí zarovnávacím čárám, v Návrhář XAML v rozložení, které obsahuje alespoň dva prvky, přetáhněte nebo změňte velikost jednoho z prvků tak, aby byl okraj zarovnán s jiným prvkem.
 
-Když jsou zarovnány okrajů, *hranicích zarovnání* se zobrazí k označení zarovnání. Hranicích zarovnání je red přerušovanou čáru. Hranice pro zarovnání se zobrazí pouze tehdy, když **přichycování k zarovnávacím čárám** je povolená. Pro ilustraci na návrhovou plochu, zobrazující hranici zarovnání, najdete v článku [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+Když jsou okraje zarovnány, zobrazí se *hranice zarovnání* označující zarovnání. Hranice zarovnání je červená přerušovaná čára. Hranice pro zarovnání se zobrazí pouze tehdy, když **přichycování k zarovnávacím čárám** je povolená. Ilustraci návrhové plochy, která zobrazuje hranici zarovnání, najdete v tématu [Vytvoření uživatelského rozhraní pomocí Návrhář XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="change-an-elements-margins"></a>Změna okrajů elementu
+## <a name="change-an-elements-margins"></a>Změna okrajů prvku
 
-Okraje v Návrháři XAML určují velikost volného místa okolo prvek na návrhovou plochu. Například mohou také určovat velikost místa mezi vnějšími hranami elementu a hranice `Grid` panel, který obsahuje element. Mohou také také určovat velikost místa mezi prvky, které jsou součástí `StackPanel`.
+Okraje v Návrhář XAML určují velikost prázdného místa, které je okolo prvku na návrhové ploše. Například okraje určují velikost prostoru mezi vnějšími okraji prvku a hranicemi `Grid` panelu, který obsahuje prvek. Okraje také určují velikost prostoru mezi prvky, které jsou obsaženy v `StackPanel`.
 
-Změna okrajů elementu v okně Vlastnosti:
+Změna okrajů prvku v okno Vlastnosti:
 
-1. Vyberte prvek, jehož okraje, kterou chcete změnit.
+1. Vyberte prvek, jehož okraje chcete změnit.
 
-2. V části **rozložení** v okně Vlastnosti změňte hodnotu (v pixelech nebo jednotkách nezávislých na zařízení, které jsou přibližně 1/96 palce) pro některý z **okraj** vlastnosti (**horní**, **Vlevo**, **vpravo**, nebo **dolní**).
+2. V části **rozložení** v okno Vlastnosti změňte hodnotu (v pixelech nebo jednotkách nezávislých na zařízení, které jsou přibližně 1/96 palce) pro kteroukoli vlastnost **okraje** (**nahoře**, **vlevo**, **vpravo**nebo **dole**).
 
-V návrhové ploše, chcete-li změnit okrajů elementu vzhledem k elementu kontejner rozložení, klikněte na tlačítko *doplňků pro úpravy okrajů* , který se zobrazí kolem elementu když elementu je vybraná a není kontejner rozložení. Obrázek, na kterém doplňků pro úpravy rozpětí, naleznete v tématu [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+Chcete-li změnit okraje prvku vzhledem k kontejneru rozložení prvku, klikněte na tlačítko *Doplňky okrajů* , které se zobrazí kolem prvku, když je vybrán prvek a je uvnitř kontejneru rozložení. Ilustrace znázorňující doplňky okrajů naleznete v tématu [Vytvoření uživatelského rozhraní pomocí Návrhář XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-Pokud je okrajů otevřen, svisle nebo vodorovně, není tento okraj nastaven. Pokud okrajů zavřen, je okraj nastaven.
+Je-li doplněk pro úpravy okrajů otevřený, svisle nebo vodorovně, tato marže není nastavena. Je-li doplněk pro úpravy okrajů uzavřen, je tento okraj nastaven.
 
-Když otevřete okrajů a není nastavená na opačnou okraj, je opačné okraj nastaven na správnou hodnotu podle umístění prvku v návrhové ploše. Opačné okrajů, jako **vlevo** a **vpravo** okrajů, alespoň jednu vlastnost je vždycky nastavený.
+Když otevřete doplněk pro úpravy okrajů a opačná marže není nastavena, je opačná marže nastavena na správnou hodnotu podle umístění prvku na návrhové ploše. Pro opačné okraje, jako jsou **levý** a **pravý** okraj, je vždy nastavena alespoň jedna vlastnost.
 
 > [!IMPORTANT]
-> Prvky umístit do některé kontejnery rozložení, jako například <xref:Windows.UI.Xaml.Controls.Canvas>, nemají doplňků pro úpravy rozpětí. Umístí prvky uvnitř <xref:Windows.UI.Xaml.Controls.StackPanel> mají doplňků pro úpravy rozpětí pro buď levého a pravého okraje nebo horní a dolní okraj, v závislosti na orientaci ovládacího prvku `StackPanel`.
+> Prvky umístěné uvnitř některých kontejnerů rozložení, jako je [plátno](xref:Windows.UI.Xaml.Controls.Canvas), nemají doplňky pro okraje. Prvky umístěné uvnitř [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) mají doplňky pro okraje pro levý a pravý okraj nebo horní a dolní okraj v závislosti na orientaci `StackPanel`.
 
-## <a name="group-and-ungroup-elements"></a>Ungroup prvků skupina a
+## <a name="group-and-ungroup-elements"></a>Seskupit a zrušit seskupení prvků
 
-Seskupení dvou nebo více prvků v Návrháři XAML vytvoří nový kontejner rozložení a umístí tyto prvky v rámci tohoto kontejneru. Umístěním dvou nebo více prvků společně v kontejneru rozložení umožňuje snadno vybrat, přesun a transformaci skupiny, jako kdyby byly prvky v dané skupině jeden element. Seskupení je také užitečné pro identifikaci prvků, které se vztahují k sobě navzájem nějakým způsobem, jako je například tlačítka, která tvoří prvek navigace. Když oddělíte prvků, je jednoduše provedeno odstranění kontejner rozložení, který obsahoval prvky.
+Seskupení dvou nebo více prvků v Návrhář XAML vytvoří nový kontejner rozložení a umístí tyto prvky do tohoto kontejneru. Umístění dvou nebo více prvků dohromady do kontejneru rozložení umožňuje snadno vybrat, přesunout a transformovat skupinu, jako kdyby byly elementy v dané skupině jedním prvkem. Seskupení je také užitečné pro identifikaci prvků, které jsou vzájemně propojené, například tlačítek, která tvoří prvek navigace. Při zrušení seskupení prvků je jednoduše odstraněn kontejner rozložení, který obsahuje prvky.
 
-Které prvky do nového kontejneru rozložení:
+Seskupení prvků do nového kontejneru rozložení:
 
-1. Vyberte prvky, které chcete seskupit. (Pokud chcete vybrat více prvků, stiskněte a podržte **Ctrl** klávesu klikněte na ně.)
+1. Vyberte prvky, které chcete seskupit. (Chcete-li vybrat více prvků, stiskněte a podržte stisknutou **klávesu CTRL** a klikněte na ně.)
 
-2. Klikněte pravým tlačítkem na vybrané elementy, přejděte na **seskupit do**a potom klikněte na typ kontejner rozložení, ve kterém chcete bude skupina nacházet.
+2. Klikněte pravým tlačítkem myši na vybrané prvky, přejděte na položku **Seskupit na**a potom klikněte na typ kontejneru rozložení, ve kterém chcete skupinu umístit.
 
     > [!TIP]
-    > Pokud vyberete <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, nebo <xref:Windows.UI.Xaml.Controls.ScrollViewer> k seskupení elementů, prvky jsou umístěny v novém <xref:Windows.UI.Xaml.Controls.Grid> panelu v rámci <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, nebo <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Pokud oddělíte prvky v jednom z těchto kontejnerů rozložení, pouze <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, nebo <xref:Windows.UI.Xaml.Controls.ScrollViewer> se odstraní a <xref:Windows.UI.Xaml.Controls.Grid> panelu zůstane. Chcete-li odstranit `Grid` panelu, znovu zrušit seskupení elementů.
+    > Pokud vyberete možnost [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [border](xref:Windows.UI.Xaml.Controls.Border)nebo [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) k seskupení prvků, prvky jsou umístěny na novém panelu [mřížky](xref:Windows.UI.Xaml.Controls.Grid) v rámci [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [ohraničení](xref:Windows.UI.Xaml.Controls.Border)nebo [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer). Pokud zrušíte seskupení prvků v jednom z těchto kontejnerů rozložení, odstraní se pouze [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [border](xref:Windows.UI.Xaml.Controls.Border)nebo [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) a panel [mřížky](xref:Windows.UI.Xaml.Controls.Grid) zůstane. Chcete-li `Grid` panel odstranit, oddělit prvky znovu.
 
-Zrušit seskupení elementů a odstranit rozložení, klikněte pravým tlačítkem na skupinu, kterou chcete oddělit a klikněte na tlačítko **oddělit**. Můžete taky seskupit nebo oddělit prvků tak, že pravým tlačítkem myši na vybrané položky v okně Osnova dokumentu a kliknutím na **seskupit do** nebo **oddělit**.
+Chcete-li zrušit seskupení prvků a odstranit rozložení, klikněte pravým tlačítkem myši na skupinu, kterou chcete zrušit seskupení, a klikněte na příkaz **Zrušit seskupení**. Prvky můžete také seskupit nebo zrušit seskupení kliknutím pravým tlačítkem myši na vybrané položky v okně Osnova dokumentu a kliknutím na **seskupit do** nebo oddělit.
 
-## <a name="reset-the-element-layout"></a>Resetování rozložení elementu
+## <a name="reset-the-element-layout"></a>Resetovat rozložení elementu
 
-Pomocí příkazů resetovat rozložení můžete obnovit výchozí hodnoty pro specifické rozložení vlastností elementu. Pomocí tohoto příkazu můžete obnovit okraj, zarovnání, šířku, výšku a velikost elementu, samostatně nebo společně.
+Můžete obnovit výchozí hodnoty pro konkrétní vlastnosti rozložení prvku pomocí příkazů pro obnovení rozložení. Pomocí tohoto příkazu můžete obnovit okraj, zarovnání, šířku, výšku a velikost elementu, a to buď jednotlivě, nebo souhrnně.
 
-Resetovat rozložení elementu, klikněte pravým tlačítkem myši na prvek v okně Osnova dokumentu nebo na návrhovou plochu a klikněte na tlačítko **rozložení** > **resetování** *PropertyName* , kde *PropertyName* je vlastnost, kterou chcete obnovit (nebo zvolte **rozložení** > **Obnovit vše** resetovat všechny vlastnosti rozložení pro element).
+Chcete-li obnovit rozložení prvku, klikněte pravým tlačítkem myši na prvek v okně Osnova dokumentu nebo na návrhové ploše a pak zvolte **rozložení** > **obnovit** *PropertyName*, kde *PropertyName* je vlastnost, kterou chcete obnovit (nebo zvolit **rozložení** > **Obnovit vše** pro resetování všech vlastností rozložení elementu).
 
 ## <a name="see-also"></a>Viz také:
 
