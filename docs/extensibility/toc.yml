@@ -488,8 +488,6 @@
       href: how-to-diagnose-ui-delays-caused-by-extensions.md
     - name: Řešení potíží s rozšířením VSPackages
       href: troubleshooting-vspackages.md
-- name: Prostředí shell (integrované nebo izolované)
-  href: 'https://vspartner.com/pages/vsshells'
 - name: Odesílání rozšíření sady Visual Studio
   items:
     - name: Odesílání rozšíření sady Visual Studio
