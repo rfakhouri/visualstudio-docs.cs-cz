@@ -1,5 +1,5 @@
 ---
-title: Slovníček nástroje MSBuild | Dokumentace Microsoftu
+title: Glosář nástroje MSBuild
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
@@ -8,116 +8,167 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f074bf7b5c7077b1c4808d7d3035be0c6366d526
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0b5feaa70a79a534af45c67e61b300feb1188bf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842471"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926346"
 ---
-# <a name="msbuild-glossary"></a>Slovníček nástroje MSBuild
-Tyto podmínky se používají k popisu Microsoft Build Engine (MSBuild) a jeho součástí.
+# <a name="msbuild-glossary"></a>Glosář nástroje MSBuild
+
+Tyto výrazy slouží k popisu Microsoft Build Engine (MSBuild) a jeho součástí.
 
 ## <a name="glossary"></a>Slovníček
- Umístění registru AssemblyFoldersEx A kde externích dodavatelů ukládat cesty pro každou verzi rozhraní framework, které podporují, kde můžete zobrazit návrh čas rozlišení lze nalézt odkaz na sestavení.
 
- dávkování dávkování znamená, že dělení položek do různých kategorií známo jako *dávky*založená na metadata položky a pak spusťte cíl nebo úloha jeden čas pomocí jednotlivých dávek. Dávkování je ekvivalentem MSBuild pro--smyčky konstrukce. Další informace najdete v tématu [dávkování](../msbuild/msbuild-batching.md).
+AssemblyFoldersEx
+Umístění v registru, kde dodavatelé třetích stran uchovávají cesty pro každou verzi rozhraní .NET Framework, které podporují, kde řešení pro dobu návrhu může vyhledat referenční sestavení.
 
- sestavení sestavení scope oboru popisuje objekt MSBuild, třeba globální vlastností, která je potenciálně viditelný na projekt a všechny podřízené projekty, které jsou vytvořené v sestaveních s více projekty.
+dávkování
+Dávkování znamená rozdělení položek do různých kategorií, které jsou v závislosti na metadatech položek známé jako *dávky*, a následným spuštěním cíle nebo úlohy jednou pomocí každé dávky. Dávkování je ekvivalentem konstruktoru smyčky for--Loop. Další informace najdete v tématu [dávkování](../msbuild/msbuild-batching.md).
 
- podřízený projekt viz *projektu, podřízené*.
+obor sestavení \
+Obor sestavení popisuje objekt MSBuild, například globální vlastnost, která je potenciálně viditelná pro projekt, a pro všechny podřízené projekty, které jsou vytvořeny v sestavení více projektů.
 
- Podmínka MSBuild mnoho prvků lze definovat podmíněně; To znamená `Condition` atributu se zobrazí v elementu. Obsah podmíněných prvků se ignoruje, pokud je podmínka vyhodnocena jako `true`. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).
+podřízený projekt \
+Viz *projekt, podřízená položka*.
 
- definice položky viz *položky definice*.
+pomocné
+Mnoho elementů MSBuild lze definovat podmíněně. To znamená, `Condition` že se atribut objeví v elementu. Obsah podmíněných elementů je ignorován, pokud není podmínka vyhodnocena `true`jako. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).
 
- Generování položky ve fázi spuštění sestavení, můžou vytvořit nebo upravit podle úloh, které mají podřízené položky `Output` prvky, které mají `ItemName` atribut. Úloha se říká, že "generování" nové položky.
+definice, položka \
+Viz *definice položky*.
 
- Generovat vlastnost během fáze spuštění sestavení, můžou vytvořit nebo upravit podle úloh, které mají podřízené vlastnosti `Output` prvky, které mají `PropertyName` atribut. Úloha se říká, že "generování" novou vlastnost.
+Generovat položku \
+Během fáze provádění sestavení mohou být položky vytvořeny nebo upraveny úlohami, které mají podřízené `Output` prvky, které `ItemName` mají atribut. Tato úloha se označuje jako "generování" nových položek.
 
- fáze hodnocení, které se vyžaduje vyhodnocení za první fáze sestavení projektu. Všechny vlastnosti a položky se vyhodnocují v pořadí, v jakém jsou uvedeny v projektu. Importované projekty jsou vyhodnocovány, jak se vyskytují v projektu. Cíle a úlohy se nespustí, dokud fáze spuštění a žádné vlastnosti nebo položky by deklarovat nebo generování ignorují během vyhodnocení.
+generovat vlastnost \
+Během fáze provádění sestavení lze vlastnosti vytvořit nebo upravit pomocí úloh, které mají podřízené `Output` prvky, které `PropertyName` mají atribut. Tato úloha se označuje jako "vygenerování" nové vlastnosti.
 
- fáze spuštění, provádění se druhá fáze sestavení projektu. Vybrané cíle jsou integrované a jsou spouštěny úkoly. Může být vytvoření nebo úpravě vlastností a položek ve srovnání s jejich hodnoty hodnocení.
+fáze vyhodnocení \
+Hodnocení je první fází sestavení projektu. Všechny vlastnosti a položky jsou vyhodnocovány v pořadí, v jakém jsou uvedeny v projektu. Importované projekty jsou vyhodnocovány při jejich zjištění v projektu. Cíle a úkoly nejsou spuštěny, dokud fáze provádění a žádné vlastnosti nebo položky, které by mohly být deklarovány nebo generovány, se během hodnocení ignorují.
 
- Funkce, vlastnost viz *vlastnost funkce*.
+fáze provádění \
+Provádění je druhá fáze sestavení projektu. Vybrané cíle jsou sestavené a úlohy jsou spouštěny. Vlastnosti a položky lze vytvořit nebo upravit v porovnání s hodnotami jejich vyhodnocování.
 
- Funkce, položky viz položku funkce.
+funkce, vlastnost \
+Viz *funkce vlastnosti*.
 
- Položka položky jsou vstupy do systému sestavení a jsou seskupeny do typů položek podle jejich názvy elementů. Položky obvykle představují soubory. Protože položky jsou pojmenovány podle typu položky patří do podmínky *položky* a *hodnota položky* zaměnitelné. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).
+funkce, položka \
+Viz funkce Item.
 
- skupinách definic položek definice položky obsahovat definice položek, které aplikacím dodávají výchozí metadat na libovolný typ položky. Stejně jako známých metadat je přidružen k všechny položky daného typu určenou položku metadat výchozí. V definici položky lze explicitně přepsat výchozí metadat. Další informace najdete v tématu [definice položek](../msbuild/item-definitions.md).
+položkami
+Položky jsou vstupy do systému sestavení a jsou seskupeny do typů položek, které jsou založeny na jejich názvech elementů. Položky obvykle reprezentují soubory. Vzhledem k tomu, že položky jsou pojmenovány typem položky, ke kterému patří, lze s hodnotou *položku* a *hodnota položky* použít zaměnitelné. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).
 
- funkce položek funkce položky získat informace o položkách v projektu. Tyto funkce zjednodušují získávání Distinct() položek a jsou rychlejší než položky ve smyčce. Nejsou k dispozici funkce pro manipulaci s cesty položky a řetězce. Další informace najdete v tématu [položky funkce](../msbuild/item-functions.md)
+definice položky \
+Skupiny definic položek obsahují definice položek, které přidávají výchozí metadata k libovolnému typu položky. Podobně jako dobře známá metadata jsou výchozí metadata spojena se všemi položkami zadaného typu položky. Výchozí metadata lze explicitně přepsat v definici položky. Další informace naleznete v tématu [Definice položek](../msbuild/item-definitions.md).
 
- položka metadat viz *metadata položky*.
+funkce položky \
+Funkce položky získávají informace o položkách v projektu. Tyto funkce zjednodušují získání jedinečných položek () a jsou rychlejší než přechází mezi položkami. K dispozici jsou funkce pro manipulaci s cestami a řetězci položek. Další informace najdete v tématu [funkce položek](../msbuild/item-functions.md).
 
- Typ položky typů položek jsou pojmenovány seznamy položek, které lze použít jako parametry pro úkoly. Úkoly pomocí hodnoty položek k provedení kroků procesu sestavení. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).
+metadata položky \
+Viz *metadata, položka*.
 
- metadata, metadata položky položky je kolekce dvojic název hodnota, která je přidružena položce. Metadata poskytuje popisné informace pro položku a je volitelné, s výjimkou dobře známé metadat. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).
+typ položky \
+Typy položek jsou pojmenované seznamy položek, které lze použít jako parametry pro úlohy. Úkoly používají hodnoty položek k provedení kroků procesu sestavení. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).
 
- metadata, dobře známé známá metadata jsou jen pro čtení položky metadat, který je inicializován pomocí předdefinované hodnoty. Metadata známé poskytuje popisné informace pro položku, která odkazuje na soubor. Například hodnota dobře známé metadat s názvem `FullPath` je úplná cesta odkazovaný soubor. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).
+metadata, položka \
+Metadata položky jsou kolekce párů název-hodnota, které jsou přidruženy k položce. Metadata poskytují popisné informace pro položku a jsou volitelné, s výjimkou dobře známých metadat. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).
 
- cílení na více verzí možnost pro aplikace nebo sestavení projekt cílit na mnoha různých CLR a rozhraní MSBuild a ze sady Visual Studio.
+metadata, dobře známá
+Dobře známá metadata jsou metadata položky jen pro čtení, která jsou inicializována pomocí předdefinované hodnoty. Dobře známá metadata poskytují popisné informace pro položku, která odkazuje na soubor. Například hodnota známých metadat s názvem `FullPath` je úplná cesta k odkazovanému souboru. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).
 
- Profilovat podmnožinu úplné rozhraní framework. To umožňuje minimalizovat, kterou je potřeba stáhnout do počítače.
+cílení na více verzí \
+Schopnost projektu aplikace nebo sestavení cílit na mnoho různých rozhraní CLR a z nástroje MSBuild a ze sady Visual Studio.
 
- soubor projektu soubor projektu obsahuje MSBuild skript, který určuje sestavení. Soubory projektu obvykle mají příponu souboru, který končí *proj*, jako například *.csproj* nebo *.vbproj*. Soubory projektu mohou importovat soubory vlastnost a cílové soubory.
+profilu
+Podmnožina celého rozhraní. Slouží k minimalizaci množství, které je třeba stáhnout do počítače.
 
- Vlastnost A je pár klíč hodnota, která slouží k řízení procesu sestavení. Další informace najdete v tématu [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md).
+soubor projektu \
+Soubor projektu obsahuje skript MSBuild, který řídí sestavení. Soubory projektu mají obvykle příponu souboru, která končí na *proj*, jako je například *. csproj* nebo *. vbproj*. Soubory projektu mohou importovat soubory vlastností a cílové soubory.
 
- vlastnosti prostředí vlastnost prostředí je vlastnost, která je automaticky inicializován na hodnotu proměnné prostředí systému, který má stejný název. Další informace najdete v tématu [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md).
+majetek
+Vlastnost je pár klíč-hodnota, který slouží k řízení procesu sestavení. Další informace najdete v tématu [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md).
 
- Vlastnosti souboru A vlastnost soubor je soubor projektu, který obsahuje většinou vlastnosti skupin a skupin položek, které provedou sestavení. Podle konvence má příponu souboru *.props*. Soubory vlastností se importují obvykle na začátku přidružené soubory projektu.
+vlastnost, prostředí \
+Vlastnost prostředí je vlastnost, která se automaticky inicializuje na hodnotu systémové proměnné prostředí, která má stejný název. Další informace najdete v tématu [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md).
 
- vlastnost, vlastností A funkcí je systémová vlastnost nebo metoda, která slouží k vyhodnocení skriptů nástroje MSBuild. Metody vlastností je možné přečíst systémový čas, porovnat řetězce, porovnat regulární výrazy a provádět jiné akce. Další informace najdete v tématu [funkce vlastností](../msbuild/property-functions.md).
+soubor vlastností \
+Soubor vlastností je soubor projektu, který obsahuje převážně skupiny vlastností a skupiny položek, které sestavují sestavení. Podle konvence má Přípona souboru *. props*. Soubory vlastností jsou obvykle importovány na začátek přidružených souborů projektu.
 
- Vlastnosti funkce, vnořené funkce vlastností mohou být kombinovány do formuláře složitější funkce. Například
+vlastnost, funkce \
+Funkce vlastnosti je systémová vlastnost nebo metoda, která se dá použít k vyhodnocení skriptů MSBuild. Metody vlastností lze použít ke čtení systémového času, porovnávání řetězců, porovnávání regulárních výrazů a provádění dalších akcí. Další informace najdete v tématu [funkce vlastností](../msbuild/property-functions.md).
+
+funkce Property, vnořená \
+Funkce vlastností mohou být kombinovány pro vytvoření složitějších funkcí. Například
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
- Další informace najdete v tématu [funkce vlastností](../msbuild/property-functions.md).
+Další informace najdete v tématu [funkce vlastností](../msbuild/property-functions.md).
 
- Vlastnosti globální že globální vlastnost je pár klíč hodnota, která slouží k řízení procesu sestavení. Globální vlastnosti jsou nastaveny na příkazovém řádku nebo pomocí `Properties` atribut [úlohy nástroje MSBuild](../msbuild/msbuild-task.md)a nelze změnit během fáze vyhodnocení sestavení. Další informace najdete v tématu [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md).
+vlastnost, Global \
+Globální vlastnost je pár klíč-hodnota, který slouží k řízení procesu sestavení. Globální vlastnosti jsou nastaveny na příkazovém řádku nebo pomocí `Properties` atributu [úlohy MSBuild](../msbuild/msbuild-task.md)a nelze je změnit během fáze hodnocení sestavení. Další informace najdete v tématu [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md).
 
- vlastnost, místní místní vlastnost je pár klíč hodnota, která slouží k řízení procesu sestavení. Tento termín slouží pouze k odlišení vlastnost, která není globální vlastnost.
+vlastnost, místní \
+Místní vlastnost je pár klíč-hodnota, který slouží k řízení procesu sestavení. Tento termín slouží pouze k odlišení vlastnosti, která není globálních vlastností.
 
- vlastnost, registru A registru vlastnost má hodnotu, která byla nastavena pomocí speciální syntaxe, která načte hodnotu podklíče registru systému. Další informace najdete v tématu [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md).
+vlastnost, registr \
+Vlastnost registru obsahuje hodnotu, která je nastavena pomocí speciální syntaxe, která čte hodnotu podklíče systémového registru. Další informace najdete v tématu [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md).
 
- Vlastnost vyhrazené že vyhrazené vlastnost je pár klíč hodnota, která slouží k řízení procesu sestavení. Rezervované vlastnosti jsou automaticky inicializovány na předem definovaných hodnot. Další informace najdete v tématu [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md).
+vlastnost, rezervovaná \
+Vyhrazená vlastnost je pár klíč-hodnota, který slouží k řízení procesu sestavení. Vyhrazené vlastnosti jsou automaticky inicializovány na předdefinované hodnoty. Další informace najdete v tématu [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md).
 
- rozsah projektu. projekt oboru popisuje objekt MSBuild, například místní vlastnost, která je viditelná pouze v obsahující soubor projektu a všechny projekty, které importuje.
+projekt – rozsah \
+Obor projektu popisuje objekt MSBuild, například místní vlastnost, která je viditelná pouze v obsahujícím souboru projektu a na všech projektech, které importuje.
 
- projekt, podřízené A podřízený projekt vytvoří úkolu MSBuild během sestavování projektu. Tímto novým projektem je podřízený projekt, který obsahuje nebo importuje cíl, který obsahuje úkol MSBuild. Podřízený projekt dědí zadaná globální vlastnosti nadřazený projekt, pokud se změnil `Properties` atribut.
+projekt, dítě \
+Podřízený projekt je vytvořen úlohou MSBuild během sestavení projektu. Tento nový projekt je podřízenou položkou projektu, který obsahuje nebo importuje cíl, který obsahuje úlohu MSBuild. Podřízený projekt dědí globální vlastnosti nadřazeného projektu, pokud nejsou upraveny `Properties` atributem.
 
- seznam REDIST, na automatické distribuce signatur seznamu: seznam sestavení, které odpovídají dané rozhraní.
+seznam Redist \
+Seznam opětovných distribucí: seznam sestavení, která odpovídají danému rozhraní.
 
- sestavení referenční sestavení, který slouží k vytvoření aplikace v době návrhu. Referenční sestavení může mít skutečný kód a privátním rozhraním odebrány, byste museli opustit pouze metadata a veřejných rozhraní.
+referenční sestavení \
+Sestavení, které se používá během doby návrhu k vytvoření aplikace. Referenční sestavení může mít z něj odebrán skutečný kód a privátní rozhraní a přitom ponechává jenom metadata a veřejná rozhraní.
 
- Vlastnosti registru najdete v tématu *vlastnost, registru*.
+vlastnost registru \
+Viz *vlastnost, registr*.
 
- cílil A seskupuje úlohy v určitém pořadí a zpřístupňuje části souboru projektu jako vstupní body do procesu sestavení. Další informace najdete v tématu [cíle](../msbuild/msbuild-targets.md).
+cílové
+Cílová skupina seskupuje úlohy v určitém pořadí a zpřístupňuje oddíly souboru projektu jako vstupní body do procesu sestavení. Další informace najdete v tématu [cíle](../msbuild/msbuild-targets.md).
 
- cíl sestavení naleznete v cíli, spuštění.
+cíl, sestavení \
+Viz cíl, spuštěno.
 
- cíl, vyhodnocování kvůli přírůstková kompilace, cíle musí být analyzován na potenciálních změn vlastností a položek. I v případě, že je cíl vynechán, tyto změny musí provést. Vyhodnocení cíl znamená, že provádí tuto analýzu a provedení těchto změn. Další informace najdete v tématu [přírůstková sestavení](../msbuild/incremental-builds.md).
+cíl, vyhodnocení \
+Z důvodu přírůstkové kompilace je nutné analyzovat cíle pro případné změny vlastností a položek. I v případě, že je cíl vynechán, je nutné provést tyto změny. Vyhodnocení cíle znamená provedení této analýzy a provedení těchto změn. Další informace naleznete v tématu [přírůstkové sestavení](../msbuild/incremental-builds.md).
 
- cíl, provádění cíl provádění znamená, že vyhodnocení a provádění všech úloh, které mají žádné podmínky nebo jejíž podmínky vyhodnocen na hodnotu true. Během přírůstkové kompilace cíle může přeskočená nebo spustit, ale jsou vždy vyhodnoceny. Další informace najdete v tématu cílit, vyhodnocování.
+cíl, spuštění \
+Provedení cíle znamená vyhodnocení a spuštění všech úloh, které nemají žádné podmínky nebo jejichž podmínky jsou vyhodnoceny jako pravdivé. Během přírůstkové kompilace mohou být cíle vynechány nebo vykonány, ale jsou vždy vyhodnoceny. Další informace najdete v tématu cíl a vyhodnocení.
 
- cíl, cíl, který má podmínku, která se vyhodnotí na hodnotu false s nespustil, to znamená, nemá žádný vliv na sestavení. Cíle, na kterých běží jsou proveden nebo vynechán. V obou případech se vyhodnotí cíl. Další informace najdete v tématu cílit, vyhodnocování.
+cíl, spuštěno \
+Cíl, který má podmínku, která je vyhodnocena jako false, není spuštěn, to znamená, že nemá na sestavení žádný vliv. Cíle, které běží, se spustí nebo přeskočí. V obou případech se cíl vyhodnocuje. Další informace najdete v tématu cíl a vyhodnocení.
 
- cíl, přeskočí, pokud se přírůstková kompilace Určuje, že všechny výstupní soubory jsou aktuální, pak je cíl vynechán, to znamená, se vyhodnotí cíl, ale nejsou provedeny úlohy v rámci cíle. Další informace najdete v tématu cílit, vyhodnocování.
+cíl, přeskočení \
+Pokud přírůstková kompilace zjistí aktuálnost všech výstupních souborů, bude cíl vynechán, to znamená, že cíl je vyhodnocen, ale úkoly v cíli nebudou provedeny. Další informace najdete v tématu cíl a vyhodnocení.
 
- cílové rozhraní framework zástupný název, který popisuje rozhraní framework (například. NETFramework, Silverlight, atd.), verze a profilu (například klienta, Server atd.), který chcete cílit.
+moniker cílového rozhraní .NET Framework \
+Název, který popisuje rozhraní (například. NETFramework, Silverlight atd.), verzi a profil (například klient, server atd.), na který chcete cílit.
 
- Targeting pack v seznamu sestavení, které jsou distribuovány s danou architekturu a sadu referenčních sestavení pro dané rozhraní.
+targeting pack \
+Seznam sestavení, která jsou distribuována pomocí dané architektury a sady referenčních sestavení pro tuto architekturu.
 
- cíle A cíle soubor je soubor projektu, který obsahuje většinou cíle a úlohy, které provede sestavení. Podle konvence má příponu souboru *.targets*. Cílové soubory obvykle importují na konci přidružené soubory projektu.
+soubor cílů \
+Soubor cílů je soubor projektu, který obsahuje hlavně cíle a úlohy, které sestavují sestavení. Podle konvence má příponu souboru *. targets*. Cílové soubory jsou obvykle importovány na konci přidružených souborů projektu.
 
- Úloha úkoly jsou jednotky spustitelného kódu, který [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty používají k provádění operací sestavení. Úkol může například kompilovat vstupní soubory nebo spustit externí nástroj. Další informace najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).
+hybn
+Úlohy jsou jednotky spustitelného kódu, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] který projekty používají k provádění operací sestavení. Například úloha může kompilovat vstupní soubory nebo spustit externí nástroj. Další informace najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).
 
- Transformace A transformace je 1: 1 převod jednu položku kolekce do druhé. Kromě povolení projekt převést položky kolekce, umožňuje transformace cíl k identifikaci přímé mapování mezi její vstupy a výstupy. Další informace najdete v tématu [transformuje](../msbuild/msbuild-transforms.md).
+převedení
+Transformace je převod 1:1 na jednu kolekci položek na jiný. Kromě povolení projektu pro převod kolekcí položek umožňuje transformace cíli identifikovat přímé mapování mezi vstupy a výstupy. Další informace najdete v tématu [transformace](../msbuild/msbuild-transforms.md).
 
- známá metadata viz *metadat, dobře známé*.
+dobře známá metadata \
+Podívejte *se na metadata, dobře známá*.
 
 ## <a name="see-also"></a>Viz také:
+
 - [MSBuild](../msbuild/msbuild.md)

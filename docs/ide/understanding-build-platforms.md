@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2c95a460f7e3003db5cdec67e5bf142295719a
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416925"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925834"
 ---
 # <a name="understand-build-platforms"></a>Vysvětlení platforem sestavení
 
@@ -30,9 +30,11 @@ Můžete ukládat různé verze řešení a vlastností projektu, které se vzta
 
 ## <a name="in-this-section"></a>V tomto oddílu
 
- [Postupy: Konfigurace projektů na cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md) vysvětluje, jak nakonfigurovat projekt pro cílení na konkrétní platformu.
+[Postupy: Konfigurace projektů pro cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md)\
+Vysvětluje, jak nakonfigurovat projekt pro cílení na konkrétní platformu.
 
- [Postupy: Konfigurace projektů k zaměření na více](../ide/how-to-configure-projects-to-target-multiple-platforms.md) platforem vysvětluje, jak nakonfigurovat projekt tak, aby byl cílen na více platforem.
+[Postupy: Konfigurace projektů k cílení na více platforem](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+Vysvětluje, jak nakonfigurovat projekt tak, aby byl cílen na více platforem.
 
 ## <a name="see-also"></a>Viz také:
 

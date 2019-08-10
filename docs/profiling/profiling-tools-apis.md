@@ -1,5 +1,5 @@
 ---
-title: Rozhraní API nástrojů pro profilaci | Dokumentace Microsoftu
+title: Rozhraní API pro Nástroje pro profilaci | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
@@ -8,30 +8,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b1f0a56cc2aee3aafe31ca786d508d2162e50c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e724b9d5891d9e716be064e0b3b9404455c770fc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956356"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870296"
 ---
 # <a name="profiling-tools-apis"></a>Rozhraní API nástrojů pro profilaci
 
-Můžete vložit spravované nebo nativní metody rozhraní API, aby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje pro profilaci k řízení shromažďování dat profilování. Tato část popisuje metody rozhraní API a jejich použití.
+Můžete vložit spravované nebo nativní metody rozhraní API [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje pro profilaci pro řízení shromažďování dat při spuštění profilace. Tato část popisuje metody rozhraní API a popisuje, jak je používat.
 
 ## <a name="in-this-section"></a>V tomto oddílu
 
 [Referenční dokumentace rozhraní Visual Studio Profiler API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)
 
-Popisuje nástroje pro profilaci sady C++ metody.
+Popisuje metody C++ nástroje pro profilaci.
 
-<xref:Microsoft.VisualStudio.Profiler>
+[Profiler](/previous-versions/ms242704(v=vs.140))
 
-Popisuje nástroje pro profilaci .NET metody.
+Popisuje metody Nástroje pro profilaci .NET.
 
 [Návod: Použití rozhraní API profileru](../profiling/walkthrough-using-profiler-apis.md)
 
-Další informace o použití metody nástroje pro profilaci .NET v tomto kompletní příklad.
+Naučte se používat metody .NET Nástroje pro profilaci v tomto kompletním příkladu.
 
 ## <a name="related-sections"></a>Související oddíly
 

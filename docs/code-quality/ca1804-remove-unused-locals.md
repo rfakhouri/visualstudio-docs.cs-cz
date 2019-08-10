@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c94f1b2709f3541692a0dfcd2a92559135639c2a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bd3e9c56bb02995d9b99b57bb2799ab69b51a42d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744596"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921570"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Odeberte nepoužívané lokální hodnoty
 
@@ -30,36 +30,36 @@ ms.locfileid: "66744596"
 |-|-|
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
-|Kategorie|Microsoft.Performance|
+|Kategorie|Microsoft. Performance|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
- Metoda deklaruje místní proměnnou, ale nepoužívá proměnnou s výjimkou pravděpodobně jako příjemce příkazu přiřazení. Pro analýzu tímto pravidlem testované sestavení musí být sestaveny s ladicími informacemi a přidružené programového souboru databáze (PDB) musí být k dispozici.
+## <a name="cause"></a>příčina
+Metoda deklaruje místní proměnnou, ale nepoužívá proměnnou, kromě toho, že se může jednat o příjemce příkazu přiřazení. Pro analýzu podle tohoto pravidla musí být testované sestavení sestaveno s ladicími informacemi a přidružený soubor databáze programu (PDB) musí být k dispozici.
 
 ## <a name="rule-description"></a>Popis pravidla
- Nepoužívané místní proměnné a zbytečná přiřazení zvětšují velikost sestavení a snižují výkon.
+Nepoužívané místní proměnné a zbytečná přiřazení zvětšují velikost sestavení a snižují výkon.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
 Chcete-li opravit porušení tohoto pravidla, odeberte nebo použijte místní proměnnou.
 
 > [!NOTE]
-> C# Kompilátor odebere nepoužívané místní proměnné při `optimize` je povolená možnost.
+> C# Kompilátor odebere nepoužívané místní proměnné, pokud `optimize` je povolena možnost.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačit upozornění tohoto pravidla, je-li proměnná byla kompilátoru, protože ho. Je také bezpečné upozornění tohoto pravidla můžete potlačit nebo zakážete pravidlo, pokud výkon a údržba kódu nejsou primární obavy.
+Potlačí upozornění z tohoto pravidla, pokud byla proměnná vyvolána kompilátorem. Je také bezpečné potlačit upozornění z tohoto pravidla nebo zakázat pravidlo, pokud není výkon a údržba kódu primárními aspekty.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje několik nepoužívané místní proměnné.
+Následující příklad ukazuje několik nepoužitých místních proměnných.
 
- [!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)]
- [!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
+[!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)]
+[!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1809: Vyhněte se nadměrným místním hodnotám](../code-quality/ca1809-avoid-excessive-locals.md)
+[CA1809: Vyhněte se nadměrným lokálním hodnotám](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811: Vyhněte se nevolanému místnímu kódu](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811: Vyhněte se nevolanému privátnímu kódu](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: Vyhněte se nevytvořeným instancím vnitřních tříd](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812: Vyhněte se nevytváření instancí vnitřních tříd](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Revize nepoužitých parametrů](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801: Zkontrolovat nepoužité parametry](../code-quality/ca1801-review-unused-parameters.md)

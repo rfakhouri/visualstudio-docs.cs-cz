@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8d80c4e9a21c29ce7b34a3998e241b11713f355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df19d31abe88c6d12bafc933ba740badb832eb16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545697"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921075"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106: Zabezpečte kontrolní příkazy
 
@@ -30,17 +30,17 @@ ms.locfileid: "62545697"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Metoda uplatňuje oprávnění a provádí kontroly zabezpečení volajícího.
+## <a name="cause"></a>příčina
+Metoda uplatňuje oprávnění a neprovádí žádné kontroly zabezpečení volajícího.
 
 ## <a name="rule-description"></a>Popis pravidla
- Uplatnění oprávnění zabezpečení bez provedení jakékoliv kontroly zabezpečení může zanechat ve vašem kódu zneužitelné slabé stránky zabezpečení. Procházení zásobníku zabezpečení zastaví, když je uplatněna oprávnění zabezpečení. Pokud uplatňujete oprávnění bez provedení jakékoli kontroly volajícího, volající mohl nepřímo spustit kód pomocí oprávnění. Nepodmíněné výrazy bez kontroly zabezpečení jsou přípustné, pokud si nejste jisti, že že kontrolní výraz nelze použít škodlivých způsobem. Pokud kód, který voláte je neškodný, nebo pokud uživatelé nemůžou projít libovolné informace pro kód, který voláte je neškodný assert.
+Uplatnění oprávnění zabezpečení bez provedení jakékoliv kontroly zabezpečení může zanechat ve vašem kódu zneužitelné slabé stránky zabezpečení. Pokud je uplatněno oprávnění zabezpečení, procházení zásobníku zabezpečení se zastaví. Pokud potvrdíte oprávnění bez provedení kontroly volajícího, volající by mohl nepřímo spustit kód pomocí vašich oprávnění. Výrazy bez kontroly zabezpečení jsou přípustné, pokud jste si jisti, že kontrolní výraz nelze použít škodlivým způsobem. Kontrolní výraz je neškodný, pokud je kód, který zavoláte, neškodný, nebo pokud uživatelé nemohou předat libovolné informace do kódu, který zavoláte.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, přidejte do metody nebo její deklarující typ požadavku zabezpečení.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, přidejte požadavek zabezpečení do metody nebo jejího deklarovaného typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačit upozornění tohoto pravidla až po přezkoumání pečlivé ověření zabezpečení.
+Potlačí upozornění od tohoto pravidla až po pečlivou kontrolu zabezpečení.
 
 ## <a name="see-also"></a>Viz také:
 

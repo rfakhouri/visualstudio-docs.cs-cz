@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c2dd1f6a23c3df4d77207efb49531b97b3b381
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8912cb6eeec8009364936a42d572f4f3d83fae5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541399"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919910"
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242: Testujte správně NaN
 
@@ -30,22 +30,22 @@ ms.locfileid: "62541399"
 |TypeName|TestForNaNCorrectly|
 |CheckId|CA2242|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
- Výraz testuje hodnotu proti <xref:System.Single.NaN?displayProperty=fullName> nebo <xref:System.Double.NaN?displayProperty=fullName>.
+## <a name="cause"></a>příčina
+Výraz testuje hodnotu proti <xref:System.Single.NaN?displayProperty=fullName> nebo. <xref:System.Double.NaN?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Popis pravidla
- <xref:System.Double.NaN?displayProperty=fullName>, který představuje not a number, vznikne, když není definován aritmetické operace. Libovolný výraz, který testuje rovnost mezi hodnotou a <xref:System.Double.NaN?displayProperty=fullName> vždy vrátí `false`. Libovolný výraz, který testuje nerovnost mezi hodnotou a <xref:System.Double.NaN?displayProperty=fullName> vždy vrátí `true`.
+ <xref:System.Double.NaN?displayProperty=fullName>, který reprezentuje nečíselný výsledek, je-li aritmetická operace nedefinovaná. Libovolný výraz, který testuje rovnost mezi hodnotou a <xref:System.Double.NaN?displayProperty=fullName> vždy vrátí `false`. Libovolný výraz, který testuje nerovnost mezi hodnotou a <xref:System.Double.NaN?displayProperty=fullName> vždy vrátí. `true`
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla a přesně určit, zda hodnota představuje <xref:System.Double.NaN?displayProperty=fullName>, použijte <xref:System.Single.IsNaN%2A?displayProperty=fullName> nebo <xref:System.Double.IsNaN%2A?displayProperty=fullName> pro testování hodnot.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla a přesně určit, zda hodnota představuje <xref:System.Double.NaN?displayProperty=fullName>, použijte <xref:System.Single.IsNaN%2A?displayProperty=fullName> nebo <xref:System.Double.IsNaN%2A?displayProperty=fullName> k otestování hodnoty.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje dva výrazy, které testují nesprávné hodnoty s <xref:System.Double.NaN?displayProperty=fullName> a výraz, který používá správně <xref:System.Double.IsNaN%2A?displayProperty=fullName> pro testování hodnot.
+Následující příklad ukazuje dva výrazy, které nesprávně testují hodnotu proti <xref:System.Double.NaN?displayProperty=fullName> a výraz, který je správně použit <xref:System.Double.IsNaN%2A?displayProperty=fullName> k otestování hodnoty.
 
- [!code-vb[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/VisualBasic/ca2242-test-for-nan-correctly_1.vb)]
- [!code-csharp[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/CSharp/ca2242-test-for-nan-correctly_1.cs)]
+[!code-vb[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/VisualBasic/ca2242-test-for-nan-correctly_1.vb)]
+[!code-csharp[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/CSharp/ca2242-test-for-nan-correctly_1.cs)]

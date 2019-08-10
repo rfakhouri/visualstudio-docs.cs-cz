@@ -1,209 +1,209 @@
 ---
-title: Aplikací ASP.NET Core v sadě Visual Studio pro Mac
-description: Tento článek popisuje, jak začít pracovat s technologií ASP.NET v sadě Visual Studio pro Mac, včetně instalace a vytvoření nového projektu.
+title: Sestavování ASP.NET Corech aplikací
+description: Tento článek popisuje, jak začít s ASP.NET v Visual Studio pro Mac, včetně instalace a vytvoření nového projektu.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: f0a2e8433877b3eb61228a886280707f3b4a37fe
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 345111144e0e209d91d34e53fefcd7d1207d9a8a
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693142"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872412"
 ---
-# <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Aplikací ASP.NET Core v sadě Visual Studio pro Mac 
+# <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Sestavování aplikací ASP.NET Core v Visual Studio pro Mac
 
-ASP.NET Core je open source a multiplatformní rozhraní pro vytváření moderních cloudových aplikací připojených k Internetu, například webové aplikace a služby, aplikace IoT a mobilní back-EndY. Aplikace ASP.NET Core můžete spustit na [.NET Core](https://www.microsoft.com/net/core/platform) nebo na verze rozhraní .NET Framework. Byl navržen k poskytování optimalizované vývojářská platforma pro aplikace, které jsou nasazené do cloudu nebo místní spouštění. Se skládá z modulární komponenty s minimální režií, takže zachování flexibility při sestavování řešení. Můžete vyvíjet a spouštět multiplatformní aplikace ASP.NET Core ve Windows, Mac a Linux. ASP.NET Core je open source v [Githubu](https://github.com/aspnet/home).
+ASP.NET Core je open source architektura pro různé platformy pro vytváření moderních cloudových aplikací připojených k Internetu, jako jsou webové aplikace a služby, aplikace IoT a mobilní back-endy. Aplikace ASP.NET Core mohou běžet v prostředí [.NET Core](https://www.microsoft.com/net/core/platform) nebo v .NET Framework modulech runtime. Byla navržena tak, aby poskytovala optimalizované vývojové rozhraní pro aplikace, které jsou nasazeny do cloudu nebo místně spuštěné. Skládá se z modulárních komponent s minimálními nároky, takže při vytváření vašich řešení si zachováte flexibilitu. Můžete vyvíjet a spouštět aplikace ASP.NET Core pro různé platformy v systémech Windows, Mac a Linux. ASP.NET Core je open source na [GitHubu](https://github.com/aspnet/home).
 
-V tomto testovacím prostředí vytvoříte a prozkoumejte aplikace ASP.NET Core pomocí sady Visual Studio pro Mac.
+V tomto testovacím prostředí vytvoříte a prozkoumáte ASP.NET Core aplikaci pomocí Visual Studio pro Mac.
 
 ## <a name="objectives"></a>Cíle
 
 > [!div class="checklist"]
-> * Vytvoření webové aplikace ASP.NET Core
-> * Prozkoumejte ASP.NET Core hostování, konfigurace a middleware modelu
-> * Ladění webové aplikace ASP.NET Core
+> * Vytvoření webové aplikace v ASP.NET Core
+> * Prozkoumejte ASP.NET Core hostování, konfigurace a middlewarového modelu
+> * Ladění ASP.NET Core webové aplikace
 
 ## <a name="prerequisites"></a>Požadavky
 
 - [Visual Studio pro Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
-## <a name="intended-audience"></a>Cílová skupina
+## <a name="intended-audience"></a>Zamýšlená cílová skupina
 
-Toto testovací prostředí je určeno pro vývojáře, kteří znají C#, i když prostředí není potřeba.
+Toto testovací prostředí je určené pro vývojáře, kteří jsou C#obeznámeni s, přestože se nepožaduje důkladné prostředí.
 
 ## <a name="task-1-creating-a-new-aspnet-core-application"></a>Úkol 1: Vytvoření nové aplikace ASP.NET Core
 
-1. Spuštění **Visual Studio for Mac**.
+1. Spusťte **Visual Studio pro Mac**.
 
-2. Vyberte **soubor > Nový řešení**.
+2. Vyberte **soubor > nové řešení**.
 
-3. Vyberte **.NET Core > aplikace** kategorie a **webové aplikace ASP.NET Core (C#)** šablony. Klikněte na **Další**.
+3. Vyberte kategorii **aplikace > .NET Core** a šablonu **ASP.NET Core webové aplikace (C#)** . Klikněte na **Další**.
 
     ![](media/netcore-image1.png)
 
-4. Zadejte název **"CoreLab"** a klikněte na tlačítko **vytvořit** pro vytvoření projektu. Chvilku vyplnění bude trvat.
+4. Zadejte název **"CoreLab"** a kliknutím na **vytvořit** vytvořte projekt. Dokončení této akce bude chvíli trvat.
 
     ![](media/netcore-image2.png)
 
-## <a name="task-2-touring-the-solution"></a>Úkol 2: Uznávaný řešení
+## <a name="task-2-touring-the-solution"></a>Úkol 2: Prohlídky řešení
 
-1. Výchozí šablona vytvoří řešení pomocí jednoho projektu ASP.NET Core s názvem **CoreLab**. Rozbalte uzel projektu k vystavení jeho obsah.
+1. Výchozí šablona vytvoří řešení s jedním ASP.NET Core projektem s názvem **CoreLab**. Rozbalením uzlu projektu vystavte jeho obsah.
 
     ![](media/netcore-image3.png)
 
-2. Tento projekt se řídí model-view-controller (MVC) paradigma poskytnout jasné rozdělení povinností mezi daty (modelů), prezentace (zobrazení) a funkce (kontrolery). Otevřít **HomeController.cs** soubor **řadiče** složky.
+2. Tento projekt následuje po paradigmatu Model-View-Controller (MVC) a poskytuje jasné rozdělení zodpovědnosti mezi daty (modely), prezentací (zobrazeními) a funkcemi (kontroléry). Otevřete soubor **HomeController.cs** ze složky **Controllers** .
 
     ![](media/netcore-image4.png)
 
-3. **HomeController** třídy podle úmluvy – zpracovává všechny příchozí požadavky, které začínají **/Home**. **Index** metoda obsluhuje požadavky do kořenového adresáře (například `http://site.com/Home`) a jiné metody zpracovávat žádosti o jejich cestu s názvem podle úmluvy, třeba **About()** zpracování žádosti o `http://site.com/Home/About`. To je samozřejmě všechno konfigurovatelné. Jeden zajímavé je, že **HomeController** je výchozí kontroler v novém projektu, proto požadavky do kořenového adresáře webu (`http://site.com`) byste projít **Index()** z  **HomeController** stejně, jako jsou požadavky na `http://site.com/Home` nebo `http://site.com/Home/Index`.
+3. Konvence třídy **HomeController** – zpracovává všechny příchozí požadavky, které začínají na **/Home**. Metoda **index** zpracovává požadavky do kořenové složky adresáře (jako `http://site.com/Home`) a další metody zpracovávají požadavky na jejich pojmenovanou cestu na základě konvence, jako je například zpracování žádostí **o** `http://site.com/Home/About`(). To je samozřejmě vše konfigurovatelné. Jednou z nich je, **že HomeController** je výchozí kontroler v novém projektu, takže požadavky na kořen`http://site.com`webu () by přecházejí přes **index ()** **HomeController** , stejně jako požadavky na `http://site.com/Home` nebo. `http://site.com/Home/Index`.
 
     ![](media/netcore-image5.png)
 
-4. Projekt má také **zobrazení** složku, která obsahuje další složky, které mapují na každém řadiči (a jeden pro **Shared** zobrazení. Například v zobrazení CSHTML souboru (rozšíření HTML) **/Home/About** cesta bude na **Views/Home/About.cshtml**. Otevřete tento soubor.
+4. Projekt má také složku **zobrazení** , která obsahuje další složky, které jsou namapovány na jednotlivé řadiče (a také na jeden pro **sdílená** zobrazení. Například soubor zobrazení CSHTML (rozšíření HTML) pro cestu **/Home/about** by měl být v **zobrazení/domů/o. cshtml**. Otevřete tento soubor.
 
     ![](media/netcore-image6.png)
 
-5. Tento soubor CSHTML používá syntaxi Razor k vykreslení HTML na základě kombinace standardních značek a vložené C#. Další informace najdete v [online dokumentaci](https://docs.microsoft.com/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
+5. Tento soubor CSHTML používá syntaxe Razor k vykreslování kódu HTML na základě kombinace standardních značek a vložených C#hodnot. Další informace najdete v [online dokumentaci](https://docs.microsoft.com/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
     ![](media/netcore-image7.png)
 
-6. Řešení obsahuje také **wwwroot** složku, která se použije kořen pro váš web. Statické webový obsah, jako jsou šablony stylů CSS, obrázky a knihoven jazyka JavaScript, můžete vložit přímo na cesty byste jim být při nasazení webu.
+6. Řešení obsahuje také složku **wwwroot** , která bude kořenem vašeho webu. Statický obsah webu, jako jsou CSS, obrázky a knihovny JavaScriptu, můžete umístit přímo na cesty, ve kterých byste měli při nasazení webu.
 
     ![](media/netcore-image8.png)
 
-7. Existují také celou řadu konfiguračních souborů, které slouží ke správě projektu, jeho balíčky a aplikace za běhu. Například výchozí aplikaci [konfigurace](https://docs.microsoft.com/aspnet/core/fundamentals/configuration) je uložen v **appsettings.json**. Však můžete přepsat všech nebo některých z těchto nastavení na základě na prostředí, například tím, že poskytuje **appsettings. Development.JSON** souboru **vývoj** prostředí.
+7. K dispozici jsou také různé konfigurační soubory, které slouží ke správě projektu, jeho balíčků a aplikace za běhu. Například výchozí [Konfigurace](https://docs.microsoft.com/aspnet/core/fundamentals/configuration) aplikace je uložena v souboru **appSettings. JSON**. Některá nebo všechna tato nastavení však můžete přepsat v jednotlivých prostředích, například zadáním **appSettings. Soubor Development. JSON** pro **vývojové** prostředí.
 
     ![](media/netcore-image9.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>Úkol 3: Vysvětlení, jak je hostitelem aplikace
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>Úkol 3: Princip hostování aplikace
 
-1. Z **Průzkumníka řešení**, otevřete **Program.cs**. Toto je zaváděcí nástroj, který se spustí aplikace.
+1. Z **Průzkumník řešení**otevřete **program.cs**. Toto je zaváděcí nástroj, který spustí vaši aplikaci.
 
     ![](media/netcore-image10.png)
 
-2. I když existují jenom dva řádky kódu tady, jsou to podstatné. Podívejme se na nich. První, nový **WebHostBuilder** se vytvoří. Aplikace ASP.NET Core vyžadují hostitele, ve kterém chcete spustit. Hostitel musí implementovat **IWebHost** rozhraní, které vystavuje kolekce funkcí a služeb, a **Start** metody. Hostitel se obvykle vytvoří pomocí instance **WebHostBuilder**, kde jsou vytvářeny a vrátí **WebHost** instance. **WebHost** odkazuje na server, který bude zpracovávat požadavky.
+2. I když zde jsou pouze dva řádky kódu, jsou zásadní. Pojďme je rozdělit. Nejprve se vytvoří nový **WebHostBuilder** . ASP.NET Core aplikace vyžadují hostitele, ve kterém se má provést. Hostitel musí implementovat rozhraní **IWebHost** , které zpřístupňuje kolekce funkcí a služeb a metodu **Start** . Hostitel je obvykle vytvořen pomocí instance třídy **WebHostBuilder**, která sestaví a vrací instanci webhost. **Webhost** odkazuje na server, který bude zpracovávat požadavky.
 
     ![](media/netcore-image11.png)
 
-3. Zatímco **WebHostBuilder** zodpovídá pro vytváření hostitele, který bude bootstrap serveru pro aplikaci, vyžaduje zadejte server, který implementuje **IServer**. Ve výchozím nastavení je to  **[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)** , napříč platformami webový server pro ASP.NET Core na základě **libuv**, což je knihovna asynchronní vstupně-výstupní operace napříč platformami.
+3. I když je **WebHostBuilder** zodpovědný za vytvoření hostitele, který spustí server aplikace, vyžaduje poskytnutí serveru, který implementuje **IServer**. Ve výchozím nastavení se jedná o **[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)** webový server pro různé platformy pro ASP.NET Core založený na **libuv**, což je asynchronní vstupně-výstupní knihovna pro různé platformy.
 
     ![](media/netcore-image12.png)
 
-4. Dále je nastavte kořenové obsahu serveru. Určuje, kde hledá soubory obsahu, jako jsou soubory zobrazení MVC. Výchozí kořen obsahu je složka, ve kterém je aplikace spuštěna.
+4. V dalším kroku je nastaven kořen obsahu serveru. To určuje, kde hledá soubory obsahu, například soubory zobrazení MVC. Výchozí kořen obsahu je složka, ze které se aplikace spouští.
 
     ![](media/netcore-image13.png)
 
-5. Pokud aplikace musí fungovat s webový server Internetové informační služby (IIS), **UseIISIntegration** metoda by měla být volána jako součást vytváření hostitele. Že to není konfigurace serveru, jako je třeba **UseKestrel** nepodporuje. Použití služby IIS s ASP.NET Core, musíte zadat oba **UseKestrel** a **UseIISIntegration**. **Kestrel** je navržen pro spouštění za proxy serverem a by se neměly nasazovat přímo směřující internet. **UseIISIntegration** určuje IIS jako reverzní proxy server, ale je relevantní pouze, když běží na počítačích, které služba IIS. Pokud nasadíte aplikaci pro Windows, nechte ho. V opačném případě nebude snížit.
+5. Pokud aplikace musí spolupracovat s webovým serverem Internetová informační služba (IIS), měla by být metoda **UseIISIntegration** volána jako součást sestavení hostitele. To neprovádí konfiguraci serveru, jako je **UseKestrel** . Chcete-li použít službu IIS s ASP.NET Core, je nutné zadat jak **UseKestrel** , tak **UseIISIntegration**. **Kestrel** je navržený tak, aby se spouštěl za proxy serverem a neměl by se nasazovat přímo na Internet. **UseIISIntegration** Určuje službu IIS jako reverzní proxy server, ale je relevantní pouze při spuštění na počítačích, které mají službu IIS. Pokud nasadíte aplikaci do systému Windows, ponechte ji v systému. Nesnížit jinak.
 
     ![](media/netcore-image14.png)
 
-6. Je přehlednější postupů k oddělení načítání nastavení od spuštění aplikace. Snadno provedete, **UseStartup** nazývá určit, že **spuštění** třída je volat pro načtení nastavení a další úlohy po spuštění, jako je například vložení middleware v kanálu protokolu HTTP. Můžete mít více **UseStartup** volání s předpokladem, že každý z nich přepíše předchozí nastavení podle potřeby.
+6. Je to čisticí postup, který odděluje načítání nastavení z zavedení aplikace. Aby to bylo možné snadno, je volána metoda **UseStartup** , která určuje, zda má být **spouštěcí** třída volána pro načítání nastavení a další úlohy po spuštění, například vložení middlewaru do kanálu http. Je možné, že máte několik volání **UseStartup** s očekáváním, že každé z nich Přepisuje předchozí nastavení podle potřeby.
 
     ![](media/netcore-image15.png)
 
-7. Posledním krokem při vytváření **IWebHost** je volání **sestavení**.
+7. Posledním krokem při vytváření **IWebHost** je volání buildu.
 
     ![](media/netcore-image16.png)
 
-8. Zatímco **IWebHost** třídy jsou nutné k implementaci neblokující **spustit**, projekty ASP.NET Core má rozšířenou metodu volá **spustit** tím končí naše  **Spustit** s blokování kódu, takže není nutné ručně metoda zabránit okamžitě ukončí.
+8. I když třídy **IWebHost** jsou vyžadovány k implementaci neblokujícího **spuštění**, ASP.NET Core projekty mají metodu rozšíření nazvanou **Run** , která zabalí **začátek** s blokujícím kódem, takže nemusíte ručně bránit metodu z okamžitě se ukončí.
 
     ![](media/netcore-image17.png)
 
 ## <a name="task-4-running-and-debugging-the-application"></a>Úloha 4: Spuštění a ladění aplikace
 
-1. V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **CoreLab** uzel projektu a vyberte **možnosti**.
+1. V **Průzkumník řešení**klikněte pravým tlačítkem myši na uzel projektu **CoreLab** a vyberte **možnost možnosti**.
 
     ![](media/netcore-image18.png)
 
-2. **Možnosti projektu** dialogového okna obsahuje všechno, co je potřeba upravit, jak je aplikace vytvořená a spustit. Vyberte **spustit > Konfigurace > výchozí** uzlu na levém panelu.
+2. Dialog **Možnosti projektu** obsahuje vše, co potřebujete k úpravě způsobu sestavení a spuštění aplikace. V levém panelu vyberte **Konfigurace spustit > > výchozí** uzel.
 
-3. Zkontrolujte **spouštět na externí konzole** a zrušte zaškrtnutí políčka **pozastavit výstup konzoly**. Obvykle nemusí jeho konzole viditelné v místním prostředí aplikace, ale místo toho typicky zaznamenávají svých výsledků **výstup** panel. Pro účely tohoto testovacího prostředí se vám ukážeme ho v samostatném okně, i když není nutné to udělat během vývoje.
+3. Kontrolovat **spuštění na externí konzole** a zrušit kontrolu **výstupu konzoly pozastavit**. Obvykle by se konzola aplikace v místním prostředí nezobrazovala, ale místo toho se do panelu **výstupu** zaprotokoluje jeho výsledky. Pro účely tohoto testovacího prostředí ji zobrazíme v samostatném okně, i když to nemusíte dělat během normálního vývoje.
 
 4. Klikněte na **OK**.
 
     ![](media/netcore-image19.png)
 
-5. Stisknutím klávesy **F5** sestavíte a spustíte aplikaci. Alternativně můžete vybrat **spuštění > Spustit ladění**.
+5. Stisknutím klávesy **F5** Sestavte a spusťte aplikaci. Případně můžete vybrat **spustit > spustit ladění**.
 
-6. Visual Studio pro Mac se spustí dvě okna. První je okno konzoly, která poskytuje přehled o aplikace v místním prostředí serveru.
+6. Visual Studio pro Mac spustí dvě okna. První je okno konzoly, které nabízí zobrazení serverové aplikace s místním hostitelem.
 
     ![](media/netcore-image20.png)
 
-7. Druhým je okno prohlížeče typické pro testování webu. Jde o prohlížeči ví, tuto aplikaci můžou být hostované kdekoli. Klikněte na tlačítko **o** přejděte na tuto stránku.
+7. Druhým je typické okno prohlížeče k otestování lokality. Pokud prohlížeč ví, že tato aplikace může být hostována kdekoli. Kliknutím na tlačítko **o** přejděte na tuto stránku.
 
     ![](media/netcore-image21.png)
 
-8. Mimo jiné stránka vykresluje nějaký text, nastavte v kontroleru.
+8. Kromě jiných věcí stránka o stránku vykresluje nějaký text nastavený v kontroleru.
 
     ![](media/netcore-image22.png)
 
-9. Zachovat obě okna otevřete a vrátit se sadou Visual Studio pro Mac. Otevřete **Controllers/HomeController.cs** Pokud ještě není otevřený.
+9. Nechte Windows otevřené a vraťte se k Visual Studio pro Mac. Otevřete **Controllers/HomeController. cs** , pokud ještě není otevřený.
 
     ![](media/netcore-image23.png)
 
-10. Nastavte zarážku v prvním řádku **o** metody. To můžete provést klepnutím na okraj nebo nastavuje kurzor na řádku a stisknutím klávesy **F9**. Tento řádek nastaví některá data **ViewData** kolekce, který je vykreslen na stránce CSHTML v **Views/Home/About.cshtml**.
+10. Nastavte zarážku na prvním řádku metody **About** . Můžete to udělat tak, že kliknete na okraj nebo nastavíte kurzor na řádku a stisknete **F9**. Tento řádek nastaví některá data v kolekci **ViewData** , která se vykreslí na stránce cshtml na **views/Home/About. cshtml**.
 
     ![](media/netcore-image24.png)
 
-11. Vraťte se do prohlížeče a aktualizace o stránce. Tím se aktivuje zarážky v sadě Visual Studio pro Mac.
+11. Vraťte se do prohlížeče a aktualizujte stránku o produktu. Tím se aktivuje zarážka v Visual Studio pro Mac.
 
-12. Najedete myší **ViewData** člen zobrazíte jeho data. Můžete také rozšířit jeho podřízených členů zobrazíte vnořené data.
+12. Myš nad členem **ViewData** , aby se zobrazila jeho data. Můžete také rozbalit jeho podřízené členy, aby se zobrazila vnořená data.
 
     ![](media/netcore-image25.png)
 
-13. Odeberte narážku aplikace stejným způsobem, který jste použili ho přidat.
+13. Odeberte zarážku aplikace pomocí stejné metody, jakou jste použili k jejímu přidání.
 
-14. Otevřít **Views/Home/About.cshtml**.
+14. Otevřete **zobrazení/domů/o. cshtml**.
 
-15. Změní celý text **"Další"** k **"změnit"** a soubor uložte.
+15. Změňte text **"Další"** na **"změněno"** a uložte soubor.
 
     ![](media/netcore-image26.png)
 
-16. Stisknutím klávesy **pokračovat** tlačítko pro pokračování v provádění.
+16. Kliknutím na tlačítko **pokračovat** můžete pokračovat v provádění.
 
     ![](media/netcore-image27.png)
 
-17. Vraťte se do okna prohlížeče, zobrazí aktualizovaný text. Tato změna docházelo v okamžiku a není nutně vyžadovat zarážek ladicího programu. Aktualizujte prohlížeč, pokud se tato změna se projeví okamžitě.
+17. Pokud se chcete podívat na aktualizovaný text, vraťte se do okna prohlížeče. Tato změna se může provést kdykoli a nemusela by nutně vyžadovat zarážku ladicího programu. Aktualizujte prohlížeč, pokud se změna neprojeví okamžitě.
 
     ![](media/netcore-image28.png)
 
-18. Zavřete konzolu prohlížeče testovací okno a aplikace. Tento kód přestane i ladění.
+18. Zavřete okno testovacího prohlížeče a konzolu aplikace. Tím se zastaví i ladění.
 
-## <a name="task-5-application-startup-configuration"></a>Úloha 5: Konfigurace spuštění aplikace
+## <a name="task-5-application-startup-configuration"></a>5\. úkol: Konfigurace spuštění aplikace
 
-1. Z **Průzkumníka řešení**, otevřete **Startup.cs**. Můžete si všimnout některých červenou vlnovkou zpočátku na pozadí probíhá obnovení balíčků NuGet a kompilátor Roslyn sestavuje ucelený přehled o závislosti projektu.
+1. Z **Průzkumník řešení**otevřete **Startup.cs**. Všimněte si, že některé červené vlnovky jsou zpočátku obnoveny na pozadí a kompilátor Roslyn vytváří kompletní přehled závislostí projektu.
 
     ![](media/netcore-image29.png)
 
-2. Vyhledejte **spuštění** metody. Tato část definuje počáteční konfiguraci aplikace a hustě zabaleny. Pojďme si to ujasnit.
+2. Vyhledejte metodu **spuštění** . Tato část definuje počáteční konfiguraci aplikace a je zhuštěná. Pojďme to rozdělit.
 
     ![](media/netcore-image30.png)
 
-3. Metoda spustí na inicializaci **ConfigurationBuilder** a nastavení jeho základní cesta.
+3. Metoda začíná inicializací **nerozšiřuje configurationbuilder** a nastavením jeho základní cesty.
 
     ![](media/netcore-image31.png)
 
-4. V dalším kroku načte požadované **appsettings.json** souboru.
+4. V dalším kroku načte požadovaný soubor **appSettings. JSON** .
 
     ![](media/netcore-image32.png)
 
-5. Poté, pokusí se načíst konkrétní prostředí **appsettings.json** soubor, který by se mělo přepsat stávající nastavení. Jde například zadaný **appsettings. Development.JSON** soubor použitý pro toto konkrétní prostředí. Další informace o konfiguraci v ASP.NET Core, projděte si [dokumenty](https://docs.microsoft.com/aspnet/core/fundamentals/configuration).
+5. Potom se pokusí načíst soubor **appSettings. JSON** specifický pro prostředí, který by přepsal stávající nastavení. Jedná se například o poskytnutý příkaz **appSettings. Soubor Development. JSON** , který se používá pro konkrétní prostředí. Další informace o konfiguraci v ASP.NET Core najdete v [dokumentaci](https://docs.microsoft.com/aspnet/core/fundamentals/configuration).
 
     ![](media/netcore-image34.png)
 
-6. A konečně proměnné prostředí jsou přidány do Tvůrce konfigurace a konfigurace je vytvořená a nastavte pro využití.
+6. Nakonec jsou proměnné prostředí přidány do nástroje Configuration Builder a konfigurace je sestavena a nastavena pro použití.
 
     ![](media/netcore-image35.png)
 
-## <a name="task-6-inserting-application-middleware"></a>Krok 6: Vložení aplikace middlewaru
+## <a name="task-6-inserting-application-middleware"></a>Úloha 6: Vkládání middlewaru aplikace
 
-1. Vyhledejte **konfigurovat** metodu **spuštění** třídy. Je to, kde veškerý middleware je nakonfigurovaný tak, že může být vložen do kanálu protokolu HTTP a používají ke zpracování každého požadavku na server. Zatímco tato metoda je volána pouze jednou, obsah z metod (například **UseStaticFiles**) mohou být provedeny u každého požadavku.
+1. Vyhledejte metodu **Configure** ve třídě **Startup** . Tady je místo, kde je nakonfigurované všechny middleware, aby je bylo možné vložit do kanálu HTTP a použít ke zpracování všech požadavků na server. I když je tato metoda volána pouze jednou, může být obsah metod (například **UseStaticFiles**) proveden při každém požadavku.
 
     ![](media/netcore-image36.png)
 
-2. Můžete také přidat další middleware, který se spustí jako součást kanálu. Přidejte následující kód za **aplikace. UseStaticFiles** automaticky přidat **X-Test** záhlaví pro každou odchozí odpovědi. Technologie IntelliSense vám pomůže dokončit kód při psaní.
+2. Můžete také přidat další middleware, který bude spuštěn jako součást kanálu. Přidejte kód níže po **aplikaci. UseStaticFiles** automaticky přidat hlavičku **X-test** do každé odchozí odpovědi. Technologie IntelliSense pomůže doplňovat kód při psaní.
 
     ```csharp
     app.Use(async (context, next) =>
@@ -213,34 +213,34 @@ Toto testovací prostředí je určeno pro vývojáře, kteří znají C#, i kdy
     });
     ```
 
-3. Stisknutím klávesy **F5** sestavte a spusťte projekt.
+3. Stisknutím klávesy **F5** Sestavte a spusťte projekt.
 
-4. Prohlížeč jsme můžete použít ke kontrole hlavičky pro ověření, že jsou přidány. Následující pokyny jsou určené pro Safari, ale můžete provést totéž [Chrome](https://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome) nebo [Firefox](https://stackoverflow.com/questions/33974595/in-firefox-how-do-i-see-http-request-headers-where-in-web-console).
+4. Pomocí prohlížeče můžeme zkontrolovat hlavičky a ověřit, zda jsou přidány. Následující pokyny jsou pro Safari, ale můžete je dělat stejně jako v [Chrome](https://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome) nebo v [prohlížeči Firefox](https://stackoverflow.com/questions/33974595/in-firefox-how-do-i-see-http-request-headers-where-in-web-console).
 
-5. Jakmile prohlížeč načte webu, vyberte **Safari > Předvolby**.
+5. Jakmile prohlížeč načte lokalitu, vyberte možnost **Safari > předvolby**.
 
-6. Na **Upřesnit** kartě **nabídky Zobrazit vyvíjet v řádku nabídek** a zavřete dialogové okno.
+6. Na kartě **Upřesnit** klikněte na příkaz **Zobrazit nabídku vývoje v řádku nabídek** a zavřete dialogové okno.
 
     ![](media/netcore-image37.png)
 
-7. Vyberte **vývoj > Zobrazit prostředky stránky**.
+7. Vyberte možnost **vyvinout > zobrazit prostředky stránky**.
 
-8. Aktualizujte okno prohlížeče, takže můžete sledovat a analyzovat provoz a obsah nově otevřené vývojářské nástroje.
+8. Aktualizujte okno prohlížeče tak, aby nově otevřené vývojářské nástroje mohly sledovat a analyzovat provoz a obsah.
 
-9. Stránku HTML localhost zpracovanou serverem budou položky vybrané ve výchozím nastavení.
+9. Stránka HTML localhost vykreslená serverem bude položka vybraná jako výchozí.
 
     ![](media/netcore-image38.png)
 
-10. Rozbalte **postranní panel podrobnosti**.
+10. Rozbalte **postranní panel podrobností**.
 
     ![](media/netcore-image39.png)
 
-11. Přejděte do dolní části bočního panelu zobrazíte hlavička odpovědi přidat v kódu výše.
+11. Posuňte se k dolnímu okraji bočního panelu, abyste viděli hlavičku odpovědi přidanou v kódu dříve.
 
     ![](media/netcore-image40.png)
 
-12. Zavřete okno prohlížeče a konzoly, když vyhovují.
+12. Po splnění tohoto okna zavřete okno prohlížeče a konzolu.
 
 ## <a name="summary"></a>Souhrn
 
-V tomto testovacím prostředí jsme zjistili, jak začít s vývojem aplikací ASP.NET Core pomocí sady Visual Studio pro Mac. Pokud chcete prozkoumat vývoj úplnější filmy databázovou aplikaci, najdete v článku [Začínáme s ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/start-mvc) kurzu.
+V tomto testovacím prostředí jste se naučili, jak začít vyvíjet ASP.NET Core aplikace pomocí Visual Studio pro Mac. Pokud chcete prozkoumat vývoj více kompletních databázových aplikací filmů, přečtěte si kurz Začínáme [s ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/start-mvc) .

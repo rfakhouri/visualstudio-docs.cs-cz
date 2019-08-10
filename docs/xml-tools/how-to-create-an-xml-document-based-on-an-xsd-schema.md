@@ -8,44 +8,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7739f33bad62667fdc7be8704237ebdd3932739c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783327"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918566"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Postupy: Vytvoření dokumentu XML na základě schématu XSD
 
-**Generovat ukázkové XML** funkce generuje ukázkový soubor XML na základě souboru schématu XML (XSD).
+Funkce **Generovat ukázková data XML** generuje ukázkový soubor XML na základě vašeho souboru schématu XML (XSD).
 
- Tuto možnost můžete použít v následujících scénářích:
+Tuto možnost můžete použít pro následující scénáře:
 
-- Abyste pochopili použití různých konstrukcí ve schématu.
+- Pro pochopení použití různých konstrukcí ve schématu.
 
-- Potvrďte, že schéma co dělá jeho účelem je provádět.
+- Potvrďte, že je schéma zamýšleno k tomu, aby.
 
-**Generovat ukázkové XML** funkce je dostupná pouze na globální prvky a vyžaduje platnou sadu schémat XML.
+Funkce **Generovat vzor XML** je k dispozici pouze pro globální prvky a vyžaduje platnou sadu schémat XML.
 
-Tato funkce generuje obvykle platný dokumentů XML. Nicméně pokud schéma obsahuje jeden nebo více z následujících akcí, ukázka nemusí být platné:
+Tato funkce obvykle generuje platné dokumenty XML. Pokud však schéma obsahuje jednu nebo více z následujících možností, příklad nemusí být platný:
 
-- `xs:key`, `xs:keyref`, A `xs:unique` omezení identity.
+- Omezení identity `xs:keyref`,a `xs:unique` . `xs:key`
 
-- `xs:pattern` omezující vlastnosti.
+- `xs:pattern`omezující vlastnosti.
 
 - Výčty `xs:QName` typu.
 
-- `xs:ENTITY`, `xs:ENTITIES`, a `xs:NOTATION` typy.
+- `xs:ENTITY`typy `xs:ENTITIES`, a `xs:NOTATION` .
 
-Všimněte si také, že `xs:base64Binary` obsah se bude generovat jenom v případě, že dojde k vyčíslení ve schématu pro daný typ.
+Také si všimněte, `xs:base64Binary` že obsah bude vygenerován pouze v případě, že ve schématu pro daný typ dojde k výčtům.
 
-## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Generovat dokument XML instance na základě souboru XSD
+## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Vygenerování dokumentu instance XML na základě souboru XSD
 
-1. Postupujte podle kroků v [jak: Vytvoření a úprava souboru schématu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Postupujte podle kroků v [tématu Postupy: Vytvořte a upravte soubor](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)schématu XSD.
 
-2. V [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md), klikněte pravým tlačítkem myši `PurchaseOrder` globální element. Vyberte **generovat ukázkový soubor XML**.
+2. V [Průzkumníku schémat XML](../xml-tools/xml-schema-explorer.md)klikněte pravým tlačítkem na `PurchaseOrder` globální prvek. Vyberte **vytvořit ukázkový kód XML**.
 
-     Když vyberete tuto možnost, PurchaseOrder. *xml* soubor s následujícím obsahem XML ukázky bude vygenerována a otevřené v editoru XML:
+     Když vyberete tuto možnost, PurchaseOrder. soubor *XML* s následujícím ukázkovým obsahem XML bude vygenerován a otevřen v editoru XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

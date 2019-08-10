@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98185eb44bc598d83eddd2690d4a321f8880f014
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570059"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925696"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 
@@ -59,7 +59,7 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
 
 7. Vložte skript T-SQL do editoru dotazů a klikněte na tlačítko **Execute** tlačítko.
 
-     Po chvilce dotaz doběhnutí a databázové objekty jsou vytvořeny. Databáze obsahuje dvě tabulky: Customer a Orders. Tyto tabulky zpočátku neobsahují žádná data, ale přidáte data při spuštění aplikace, kterou vytvoříte. Databáze také obsahuje čtyři jednoduchých uložených procedur.
+     Po chvilce dotaz doběhnutí a databázové objekty jsou vytvořeny. Databáze obsahuje dvě tabulky: Zákazník a objednávky. Tyto tabulky zpočátku neobsahují žádná data, ale přidáte data při spuštění aplikace, kterou vytvoříte. Databáze také obsahuje čtyři jednoduchých uložených procedur.
 
 ## <a name="create-the-forms-and-add-controls"></a>Vytvoření formulářů a přidání ovládacích prvků
 
@@ -90,9 +90,9 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
 |Tlačítko|Název = btnGoToFillOrCancel|
 |Tlačítko|Název = btnExit|
 
- **Formulář NewCustomer**
+**Formulář NewCustomer**
 
- ![Přidání nového odběratele a objednávky](../data-tools/media/simpleappnewcust.png)
+![Přidání nového odběratele a objednávky](../data-tools/media/simpleappnewcust.png)
 
 |Ovládací prvky formuláře NewCustomer|Vlastnosti|
 | - |----------------|
@@ -105,9 +105,9 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
 |Tlačítko|Název = btnAddAnotherAccount|
 |Tlačítko|Název = btnAddFinish|
 
- **Formulář FillOrCancel**
+**Formulář FillOrCancel**
 
- ![vyplnit nebo zrušit objednávky](../data-tools/media/simpleappcancelfill.png)
+![vyplnit nebo zrušit objednávky](../data-tools/media/simpleappcancelfill.png)
 
 |Ovládací prvky formuláře FillOrCancel|Vlastnosti|
 | - |----------------|
@@ -120,16 +120,16 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
 |Tlačítko|Název = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Store připojovací řetězec
- Když vaše aplikace se pokusí otevřít připojení k databázi, musí mít vaše aplikace přístup k připojovací řetězec. Aby se zabránilo ručním zadáním řetězce na každém formuláři, uložte řetězec v *App.config* souborů ve vašem projektu a vytvořte metodu, která vrátí řetězec, když je volána metoda z libovolného formuláře v aplikaci.
+Když vaše aplikace se pokusí otevřít připojení k databázi, musí mít vaše aplikace přístup k připojovací řetězec. Aby se zabránilo ručním zadáním řetězce na každém formuláři, uložte řetězec v *App.config* souborů ve vašem projektu a vytvořte metodu, která vrátí řetězec, když je volána metoda z libovolného formuláře v aplikaci.
 
- Připojovací řetězec můžete najít kliknutím pravým tlačítkem na **Sales** datové připojení v **Průzkumníka serveru** a zvolíte **vlastnosti**. Vyhledejte **ConnectionString** vlastnost, pak použijte **Ctrl**+**A**, **Ctrl**+**C**  vyberte a zkopírujte řetězec do schránky.
+Připojovací řetězec můžete najít kliknutím pravým tlačítkem na **Sales** datové připojení v **Průzkumníka serveru** a zvolíte **vlastnosti**. Vyhledejte **ConnectionString** vlastnost, pak použijte **Ctrl**+**A**, **Ctrl**+**C**  vyberte a zkopírujte řetězec do schránky.
 
 1. Pokud používáte C#v **Průzkumníka řešení**, rozbalte **vlastnosti** uzlu v rámci projektu a potom otevřete **Settings.settings** souboru.
     Pokud používáte Visual Basic v **Průzkumníka řešení**, klikněte na tlačítko **zobrazit všechny soubory**, rozbalte **Můj projekt** uzlu a pak otevřete **Settings.settings** souboru.
 
 2. V **název** sloupce, zadejte `connString`.
 
-3. V **typ** seznamu vyberte **(připojovací řetězec)**.
+3. V **typ** seznamu vyberte **(připojovací řetězec)** .
 
 4. V **oboru** seznamu vyberte **aplikace**.
 

@@ -1,5 +1,5 @@
 ---
-title: VSIX Extension Schema 2.0 – referenční informace | Dokumentace Microsoftu
+title: Referenční dokumentace schématu rozšíření VSIX 2,0 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,209 +11,209 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e6b00aa746b613d9eff90b9c91c029b100775cf2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b63f226b7aaadb851eab95f9b60f88f8f2be5ff1
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821733"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869980"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX Extension Schema 2.0 – referenční informace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Soubor manifestu VSIX nasazení popisuje obsah balíčku VSIX. Formát souboru se řídí schéma. Verze 2.0 tato schématu podporuje přidávání vlastních typů a atributů.  Je možné rozšířit schéma manifestu. Manifestu zaváděcího programu ignoruje XML elementů a atributů, které ho nerozumí.  
-  
+Soubor manifestu nasazení VSIX popisuje obsah balíčku VSIX. Formát souboru se řídí schématem. Verze 2,0 tohoto schématu podporuje přidávání vlastních typů a atributů.  Schéma manifestu je rozšiřitelné. Zavaděč manifestu ignoruje prvky XML a atributy, které nerozumí.
+
 > [!IMPORTANT]
-> Visual Studio 2015 můžete načíst soubory VSIX v sadě Visual Studio 2010, Visual Studio 2012 nebo Visual Studio 2013 formátech.  
-  
-## <a name="package-manifest-schema"></a>Schéma manifestu balíčku  
- Kořenový element souboru manifestu XML je `<PackageManifest>`, s jeden atribut `Version`, což je verze manifestu formátu. Pokud hlavní změny provedené ve formátu, formátu verze se změní. Toto téma popisuje formát manifestu verze 2.0, která je určená v manifestu tak, že nastavíte `Version` atributu na hodnotu verze = "2.0".  
-  
-### <a name="packagemanifest-element"></a>PackageManifest – Element  
- V rámci `<PackageManifest>` kořenový element, můžete použít následující prvky:  
-  
-- `<Metadata>` – Metadata a reklamní informace o samotném balíčku. Pouze jeden `Metadata` element je povolen v manifestu.  
-  
-- `<Installation>` – Tento oddíl definuje způsob, jakým tento balíček rozšíření může být nainstalován, včetně aplikace skladové položky, které můžete nainstalovat do. Pouze jeden `Installation` element je povolen v manifestu. Manifest musí mít `Installation` element nebo tento balíček nelze nainstalovat do všech SKU.  
-  
-- `<Dependencies>` – Zde jsou definovány volitelný seznam závislostí pro tento balíček.  
-  
-- `<Assets>` – Tento oddíl obsahuje všechny prostředky obsažené v tomto balíčku. Bez této části nebude tento balíček zařízení surface žádný obsah.  
-  
-- `<AnyElement>*` – Schéma manifestu je dostatečně flexibilní, aby povolit další prvky. Všechny podřízené prvky nebyl rozpoznán zavaděčem manifestu jsou přístupné v rozhraní API pro správce rozšíření jako objekty navíc XmlElement. Pomocí těchto podřízených elementů, rozšíření VSIX můžete definovat další data v souboru manifestu, který kód spuštěný v sadě Visual Studio můžete získat přístup za běhu. Zobrazit <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> a <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>.  
-  
-### <a name="metadata-element"></a>Metadata – Element  
- Tato část se metadata o balíčku, identity a reklamním informace. `<Metadata>` obsahuje následující prvky:  
-  
-- `<Identity>` -Toto definuje identifikační informace pro tento balíček a zahrnuje následující atributy:  
+> Visual Studio 2015 může načíst soubory VSIX v formátech Visual Studio 2010, Visual Studio 2012 nebo Visual Studio 2013.
 
-  - `Id` – Tento atribut musí být jedinečné ID pro balíček zvolí jeho autor. Název musí být kvalifikovány stejným způsobem jako typy CLR jsou namespaced: Company.Product.Feature.Name. `Id` Atribut je maximálně 100 znaků.  
+## <a name="package-manifest-schema"></a>Schéma manifestu balíčku
+ Kořenový prvek souboru XML manifestu je `<PackageManifest>`s jedním atributem `Version`, což je verze formátu manifestu. Pokud jsou ve formátu provedeny významné změny, formát verze se změní. Toto téma popisuje formát manifestu verze 2,0, který je zadán v manifestu `Version` nastavením atributu na hodnotu Value verze = "2.0".
 
-  - `Version` – Ten definuje verze tento balíček a jeho obsah. Tento atribut řídí formát Správa verzí sestavení CLR: Hlavníverze.podverze.Build.revize (1.2.40308.00). Balíček s vyšší číslo verze je považován za aktualizace balíčku a je možné nainstalovat přes existující nainstalovanou verzi.  
+### <a name="packagemanifest-element"></a>Element PackageManifest
+ V rámci `<PackageManifest>` kořenového elementu můžete použít následující prvky:
 
-  - `Language` – Tento atribut je výchozí jazyk pro balíček a odpovídá textová data v tomto manifestu. Tento atribut řídí konvence kódu CLR národní prostředí pro sestavení prostředků, například: en-us, en, fr-fr. Můžete zadat `neutral` deklarovat příponu neutrální jazyk, který se spustí na libovolné verzi sady Visual Studio. Výchozí hodnota je `neutral`.  
+- `<Metadata>`– Metadata a reklamní informace o samotném balíčku. V manifestu `Metadata` je povolen pouze jeden prvek.
 
-  - `Publisher` – Tento atribut určuje vydavatele tohoto balíčku, společnost nebo jednoho názvu. `Publisher` Atribut je maximálně 100 znaků.  
-  
-- `<DisplayName>` – Tento prvek určuje název uživatelsky přívětivé balíčku, který se zobrazí v Uživatelském rozhraní Správce rozšíření. `DisplayName` Obsah je maximálně 100 znaků.  
-  
-- `<Description>` – Tento volitelný prvek je krátký popis balíček a jeho obsah, který se zobrazí v uživatelském rozhraní Správce rozšíření. `Description` Obsahu může obsahovat jakýkoli text, který chcete, ale je omezený na 1 000 znaků.  
-  
-- `<MoreInfo>` – Tento volitelný prvek je adresa URL online stránku, která obsahuje úplný popis tohoto balíčku. Protokol musí být zadán jako protokolu http.  
-  
-- `<License>` – Tento volitelný prvek je relativní cesta k licenční soubor (.txt, RTF) obsažené v balíčku.  
-  
-- `<ReleaseNotes>` – Tento volitelný prvek je buď relativní cesta k souboru poznámky k verzi obsažené v balíčku (.txt, RTF), jinak se adresa URL webu, který se zobrazí zpráva k vydání verze.  
-  
-- `<Icon>` – Tento volitelný prvek je relativní cesta k souboru image (png, bmp, jpeg, ico) obsažené v balíčku. Obrázek ikony musí být 32 x 32 pixelů (nebo bude zmenšit s velikostí) a zobrazí se v zobrazení listview uživatelského rozhraní. Pokud ne `Icon` Zadaný prvek, uživatelské rozhraní používá výchozí.  
-  
-- `<PreviewImage>` – Tento volitelný prvek je relativní cesta k souboru image (png, bmp, jpeg) obsažené v balíčku. Obrázek náhledu by měl být 200 x 200 pixelů a zobrazí v podrobnostech uživatelského rozhraní. Pokud ne `PreviewImage` Zadaný prvek, uživatelské rozhraní používá výchozí.  
-  
-- `<Tags>` – Tento volitelný prvek obsahuje seznam dalších text oddělený středníkem značky, které jsou používány pro pomocné parametry vyhledávání. `Tags` Element je maximálně 100 znaků.  
-  
-- `<GettingStartedGuide>` – Tento volitelný prvek je relativní cesta k souboru ve formátu HTML nebo adresa URL webu, který obsahuje informace o tom, jak používat rozšíření nebo obsah v rámci tohoto balíčku. Tento průvodce se spustí jako součást instalace.  
-  
-- `<AnyElement>*` – Schéma manifestu je dostatečně flexibilní, aby povolit další prvky. Podřízené elementy, které nejsou rozpoznány aplikací manifestu zaváděcího programu jsou vystaveny jako seznam objektů XmlElement. Pomocí těchto podřízených elementů, rozšíření VSIX definovat další data v souboru manifestu a výčet za běhu.  
-  
-### <a name="installation-element"></a>Instalace – Element  
- Tento oddíl definuje způsob, jakým lze nainstalovat tento balíček a skladové položky aplikace, které můžete nainstalovat do. Tato část obsahuje následující atributy:  
-  
-- `Experimental` – Tento atribut nastaven na hodnotu true, pokud máte rozšíření, která je aktuálně nainstalována pro všechny uživatele, ale vyvíjíte aktualizovanou verzi na stejném počítači. Například pokud jste nainstalovali MyExtension 1.0 pro všechny uživatele, ale chcete ladit MyExtension 2.0 na stejném počítači, nastavte experimentální = "true". Tento atribut je k dispozici v aplikaci Visual Studio 2015 Update 1 nebo novější.  
-  
-- `Scope` – Tento atribut může přijmout hodnoty "Globální" nebo "ProductExtension":  
+- `<Installation>`– Tato část definuje způsob, jakým se dá balíček pro rozšíření nainstalovat, včetně SKU aplikace, do kterého se dá nainstalovat. V manifestu je `Installation` povolen pouze jeden prvek. Manifest musí mít `Installation` element, nebo tento balíček nebude nainstalován do žádné SKU.
 
-  - "Globální" Určuje, že instalace není v oboru konkrétní SKU. Například tato hodnota se používá při instalaci sady SDK rozšíření.  
+- `<Dependencies>`– Tady je definovaný volitelný seznam závislostí pro tento balíček.
 
-  - "ProductExtension" Určuje, že je nainstalována tradiční rozšíření VSIX (verze 1.0) obor na jednotlivých SKU Visual Studio. Jedná se o výchozí hodnotu.  
-  
-- `AllUsers` – Tento volitelný atribut určuje, jestli tento balíček se nainstalují pro všechny uživatele. Ve výchozím nastavení je tento atribut false, která určuje, že balíček je na uživatele. (Když nastavíte tuto hodnotu na hodnotu true, daný uživatel musí zvýšení úrovně oprávnění pro správu instalace výsledného souboru VSIX.  
-  
-- `InstalledByMsi` – Tento volitelný atribut určuje, jestli tento balíček je nainstalován pomocí MSI. Balíčky nainstalované pomocí MSI jsou nainstalované a spravované pomocí MSI (programy a funkce) a ne pomocí správce sady Visual Studio rozšíření.  Ve výchozím nastavení je tento atribut false, která určuje, že balíček není nainstalovaný pomocí MSI.  
-  
-- `SystemComponent` – Tento volitelný atribut určuje, jestli tento balíček má považovat za součást systému. Součásti systému nezobrazovat v Uživatelském rozhraní Správce rozšíření a nelze ji aktualizovat. Ve výchozím nastavení je tento atribut false, která určuje, že balíček není součástí systému.  
-  
-- `AnyAttribute*` – Tím `Installation` element přijímá neuzavřenou množinu atributy, které se zveřejní v době běhu jako slovník dvojice název hodnota.  
-  
-- `<InstallationTarget>` – Tento prvek určuje umístění, kde instalátor VSIX nainstaluje balíček. Pokud hodnota `Scope` atribut je "ProductExtension" balíček, musí jako cíl skladové položky, který má nainstalovaný soubor manifestu jako součást svůj obsah rozbalí do inzerovat její dostupnost pro rozšíření. `<InstallationTarget>` Element má následující atributy, kdy `Scope` atribut má explicitní nebo výchozí hodnotu "ProductExtension":  
-  
-  - `Id` – Tento atribut určuje balíček.  Atribut následující konvence oboru názvů: Company.Product.Feature.Name. `Id` Atribut může obsahovat jenom alfanumerické znaky a je maximálně 100 znaků. Očekávané hodnoty:  
+- `<Assets>`– Tato část obsahuje všechny prostředky obsažené v rámci tohoto balíčku. Bez této části Tento balíček nebude mít žádný obsah.
 
-    - Microsoft.VisualStudio.IntegratedShell  
+- `<AnyElement>*`– Schéma manifestu je dostatečně flexibilní, aby bylo možné jakékoli jiné prvky. Všechny podřízené elementy, které nejsou rozpoznány zavaděčem manifestu, jsou zveřejněny v rozhraní API Správce rozšíření jako extra objekty XmlElement. Pomocí těchto podřízených prvků mohou rozšíření VSIX definovat další data v souboru manifestu, který kód spuštěný v aplikaci Visual Studio má přístup za běhu. Viz [AdditionalElements](/previous-versions/visualstudio/visual-studio-2013/hh265266(v=vs.120)).
 
-    - Microsoft.VisualStudio.Pro  
+### <a name="metadata-element"></a>Element metadata
+ V této části najdete metadata týkající se balíčku, jeho identity a reklamních informací. `<Metadata>`obsahuje následující prvky:
 
-    - Microsoft.VisualStudio.Premium  
+- `<Identity>`– Definuje identifikační informace pro tento balíček a obsahuje následující atributy:
 
-    - Microsoft.VisualStudio.Ultimate  
+  - `Id`– Tento atribut musí být jedinečným IDENTIFIKÁTORem pro balíček zvolený autorem. Název by měl být kvalifikován stejným způsobem jako typy CLR jsou v oboru názvů: Company.Product.Feature.Name. `Id` Atribut je omezen na 100 znaků.
 
-    - Microsoft.VisualStudio.VWDExpress  
+  - `Version`– Definuje verzi tohoto balíčku a jeho obsah. Tento atribut následuje po formátu verze sestavení CLR: Hlavní_verze. podverze. sestavení. revize (1.2.40308.00). Balíček s vyšším číslem verze se považuje za aktualizace balíčku a dá se nainstalovat přes existující nainstalovanou verzi.
 
-    - Microsoft.VisualStudio.VPDExpress  
+  - `Language`– Tento atribut je výchozím jazykem pro balíček a odpovídá textovým datům v tomto manifestu. Tento atribut následuje po konvenci kódu národního prostředí CLR pro sestavení prostředků, například en-US, EN, fr-fr. Můžete určit `neutral` , že se má deklarovat jazyková a neutrální rozšíření, které se spustí na libovolné verzi sady Visual Studio. Výchozí hodnota je `neutral`.
 
-    - Microsoft.VisualStudio.VSWinExpress  
+  - `Publisher`– Tento atribut identifikuje vydavatele tohoto balíčku, buď název společnosti, nebo jméno jednotlivce. `Publisher` Atribut je omezen na 100 znaků.
 
-    - Microsoft.VisualStudio.VSLS  
+- `<DisplayName>`– Tento prvek určuje uživatelsky přívětivý název balíčku, který se zobrazí v uživatelském rozhraní Správce rozšíření. `DisplayName` Obsah je omezený na 100 znaků.
 
-    - My.Shell.App  
+- `<Description>`– Tento volitelný element je krátký popis balíčku a jeho obsah, který se zobrazí v uživatelském rozhraní Správce rozšíření. `Description` Obsah může obsahovat libovolný text, který požadujete, ale je omezený na 1000 znaků.
 
-  - `Version` – Tento atribut určuje rozsah verzí s minimální a maximální podporovanou verzí tato skladová položka. Balíček lze podrobně verze SKU, které podporuje. Zápis rozsahu verze je [10.0 – 11.0], kde  
+- `<MoreInfo>`– Tento volitelný prvek je adresa URL stránky online obsahující úplný popis tohoto balíčku. Protokol musí být zadaný jako http.
 
-    - [– minimální verze (včetně).  
+- `<License>`– Tento volitelný prvek je relativní cesta k souboru s licencí (. txt,. RTF) obsaženému v balíčku.
 
-    - ] – maximální verze (včetně).  
+- `<ReleaseNotes>`– Tento volitelný prvek je buď relativní cesta k souboru poznámky k verzi obsažené v balíčku (. txt,. RTF), nebo jinak adresa URL webu, který zobrazuje poznámky k verzi.
 
-    - (– minimální verze exkluzivní.  
+- `<Icon>`– Tento volitelný prvek je relativní cesta k souboru obrázku (PNG, BMP, JPEG, ICO) obsaženému v balíčku. Obrázek ikony by měl být 32x32 pixelů (nebo bude zmenšen na tuto velikost) a zobrazí se v uživatelském rozhraní ListView. Pokud není `Icon` zadán žádný element, uživatelské rozhraní použije výchozí.
 
-    - ) – exkluzivní maximální verze.  
+- `<PreviewImage>`– Tento volitelný prvek je relativní cesta k souboru obrázku (PNG, BMP, JPEG) obsaženému v balíčku. Obrázek verze Preview by měl být 200x200 pixelů a zobrazený v uživatelském rozhraní podrobností. Pokud není `PreviewImage` zadán žádný element, uživatelské rozhraní použije výchozí.
 
-    - Jedna verze # - jenom určená verze.  
+- `<Tags>`– Tento volitelný element vypíše další textové značky oddělené středníkem, které se použijí pro hledání tipů. `Tags` Element je omezený na 100 znaků.
+
+- `<GettingStartedGuide>`– Tento volitelný prvek je buď relativní cesta k souboru HTML, nebo adresa URL webu, který obsahuje informace o tom, jak používat rozšíření nebo obsah v rámci tohoto balíčku. Tato příručka se spouští jako součást instalace.
+
+- `<AnyElement>*`– Schéma manifestu je dostatečně flexibilní, aby bylo možné jakékoli jiné prvky. Všechny podřízené prvky, které nejsou rozpoznány zavaděčem manifestu, jsou zveřejněny jako seznam objektů XmlElement. Pomocí těchto podřízených prvků mohou rozšíření VSIX definovat další data v souboru manifestu a vytvořit jejich výčet za běhu.
+
+### <a name="installation-element"></a>Element instalace
+ Tato část definuje způsob, jakým se tento balíček dá nainstalovat, a SKU aplikace, do kterých se dá nainstalovat. Tato část obsahuje následující atributy:
+
+- `Experimental`– Nastavte tento atribut na hodnotu true, pokud máte rozšíření, které je aktuálně nainstalováno pro všechny uživatele, ale vyvíjíte aktualizovanou verzi ve stejném počítači. Pokud jste například nainstalovali MyExtension 1,0 pro všechny uživatele, ale chcete ladit MyExtension 2,0 na stejném počítači, nastavte experimentální = "true". Tento atribut je k dispozici v aplikaci Visual Studio 2015 Update 1 nebo novější.
+
+- `Scope`– Tento atribut může mít hodnotu "Global" nebo "ProductExtension":
+
+  - "Globální" Určuje, že instalace není vymezená na konkrétní SKU. Tato hodnota se používá například v případě, že je nainstalována sada SDK rozšíření.
+
+  - "ProductExtension" Určuje, že je nainstalovaná tradiční přípona VSIX (verze 1,0) v oboru pro jednotlivé SKU sady Visual Studio. Jedná se o výchozí hodnotu.
+
+- `AllUsers`– Tento volitelný atribut určuje, jestli se tento balíček nainstaluje pro všechny uživatele. Ve výchozím nastavení má tento atribut hodnotu false, která určuje, že balíček je na uživatele. (Pokud nastavíte tuto hodnotu na true, musí se uživatel, který se instaluje, zvýšit na úroveň oprávnění správce a nainstalovat výsledný VSIX.
+
+- `InstalledByMsi`– Tento volitelný atribut určuje, jestli je tento balíček nainstalovaný pomocí MSI. Balíčky nainstalované pomocí MSI se instalují a spravují pomocí MSI (programy a funkce), ne pomocí Správce rozšíření sady Visual Studio.  Ve výchozím nastavení má tento atribut hodnotu false, která určuje, že balíček není nainstalován pomocí MSI.
+
+- `SystemComponent`– Tento volitelný atribut určuje, zda má být tento balíček považován za součást systému. Systémové součásti se nezobrazují v uživatelském rozhraní Správce rozšíření a nelze je aktualizovat. Ve výchozím nastavení má tento atribut hodnotu false, která určuje, že balíček není součástí systému.
+
+- `AnyAttribute*``Installation` – Element akceptuje otevřené sady atributů, které budou zveřejněny za běhu jako dvojici název-hodnota.
+
+- `<InstallationTarget>`– Tento prvek řídí umístění, kde instalační program VSIX balíček nainstaluje. Pokud je hodnota `Scope` atributu "ProductExtension", balíček musí cílit na skladovou položku, která instalovala soubor manifestu jako součást jeho obsahu pro inzerování jeho dostupnosti pro rozšíření. Element má následující atributy, `Scope` Pokud má atribut explicitní nebo výchozí hodnotu "ProductExtension": `<InstallationTarget>`
+
+  - `Id`– Tento atribut identifikuje balíček.  Atribut následuje po konvenci oboru názvů: Company.Product.Feature.Name. `Id` Atribut může obsahovat pouze alfanumerické znaky a je omezen na 100 znaků. Očekávané hodnoty:
+
+    - Microsoft.VisualStudio.IntegratedShell
+
+    - Microsoft.VisualStudio.Pro
+
+    - Microsoft.VisualStudio.Premium
+
+    - Microsoft.VisualStudio.Ultimate
+
+    - Microsoft.VisualStudio.VWDExpress
+
+    - Microsoft.VisualStudio.VPDExpress
+
+    - Microsoft. VisualStudio. VSWinExpress
+
+    - Microsoft.VisualStudio.VSLS
+
+    - My. Shell. app
+
+  - `Version`– Tento atribut určuje rozsah verzí s minimální a maximální podporovanou verzí této SKU. Balíček může podrobně navýšit verze SKU, které podporuje. Zápis rozsahu verzí je [10,0 – 11,0], kde
+
+    - [– minimální verze včetně.
+
+    - ] – maximální verze včetně.
+
+    - (-minimální verze exkluzivní.
+
+    - ) – maximální verze exkluzivní.
+
+    - Samostatná verze – pouze zadaná verze
 
     > [!IMPORTANT]
-    > Verze 2.0 VSIX schématu byla zavedena v sadě Visual Studio 2012. Pro toto schéma používají, musíte mít Visual Studio 2012 nebo později na počítači nainstalovaný a použít VSIXInstaller.exe, které jsou součástí tohoto produktu. Můžete cílit starší verze sady Visual Studio s Visual Studio 2012 nebo novější VSIXInstaller, ale pouze pomocí novější verze Instalační služby.  
+    > Verze 2,0 schématu VSIX byla představena v aplikaci Visual Studio 2012. Chcete-li použít toto schéma, je nutné mít v počítači nainstalováno prostředí Visual Studio 2012 nebo novější a používat VSIXInstaller. exe, který je součástí daného produktu. Můžete cílit na starší verze sady Visual Studio pomocí sady Visual Studio 2012 nebo novějšího VSIXInstaller, ale pouze pomocí novějších verzí instalačního programu.
 
-  - `AnyAttribute*` – Tím `<InstallationTarget>` element umožňuje neuzavřenou množinu atributy, které bude přístupné za běhu jako slovník dvojice název hodnota.  
+  - `AnyAttribute*``<InstallationTarget>` – Element umožňuje otevřené, ukončené sady atributů, které budou zveřejněny za běhu jako dvojici název-hodnota.
 
-### <a name="dependencies-element"></a>Dependencies – Element  
- Tento prvek obsahuje seznam závislostí, které deklaruje tento balíček. Pokud nejsou zadány žádné závislosti, tyto balíčky (identifikovaný jejich `Id`) musí být nainstalována před.  
-  
-- `<Dependency>` Element – tento podřízený element má následující atributy:  
-  
-  - `Id` – Tento atribut musí být jedinečné ID pro závislý balíček. Tato hodnota identity musí odpovídat `<Metadata><Identity>Id` atribut, který tento balíček závisí na balíčku. `Id` Atribut konvenci, obor názvů: Company.Product.Feature.Name. Atribut může obsahovat jenom alfanumerické znaky a je maximálně 100 znaků.  
+### <a name="dependencies-element"></a>Element závislosti
+ Tento prvek obsahuje seznam závislostí, které tento balíček deklaruje. Pokud jsou zadány jakékoli závislosti, musí být tyto balíčky ( `Id`identifikované jejich) nainstalovány před.
 
-  - `Version` – Tento atribut určuje rozsah verzí s minimální a maximální podporovanou verzí tato skladová položka. Balíček lze podrobně verze SKU, které podporuje. Zápis verze rozsah je [12,0, 13,0], kde:  
+- `<Dependency>`element – tento podřízený element má následující atributy:
 
-    - [– minimální verze (včetně).  
+  - `Id`– Tento atribut musí být jedinečné ID pro závislý balíček. Tato hodnota identity se musí shodovat `<Metadata><Identity>Id` s atributem balíčku, na kterém je tento balíček závislý. `Id` Atribut následuje po konvenci oboru názvů: Company.Product.Feature.Name. Atribut může obsahovat pouze alfanumerické znaky a je omezen na 100 znaků.
 
-    - ] – maximální verze (včetně).  
+  - `Version`– Tento atribut určuje rozsah verzí s minimální a maximální podporovanou verzí této SKU. Balíček může podrobně navýšit verze SKU, které podporuje. Zápis rozsahu verzí je [12,0, 13,0], kde:
 
-    - (– minimální verze exkluzivní.  
+    - [– minimální verze včetně.
 
-    - ) – exkluzivní maximální verze.  
+    - ] – maximální verze včetně.
 
-    - Jedna verze # - jenom určená verze.  
+    - (-minimální verze exkluzivní.
 
-  - `DisplayName` – Tento atribut je zobrazovaný název závislý balíček, který se používá v prvky uživatelského rozhraní, jako je například dialogová okna a chybové zprávy. Atribut je volitelný, pokud je nainstalován závislý balíček pomocí Instalační služby MSI.  
+    - ) – maximální verze exkluzivní.
 
-  - `Location` – Tento volitelný atribut určuje buď relativní cesta v rámci tohoto VSIX do vnořených balíčku VSIX nebo adresu URL pro umístění stahování pro závislost. Tento atribut slouží umožňující uživateli, vyhledejte balíček požadovaných součástí.  
+    - Samostatná verze – pouze zadaná verze
 
-  - `AnyAttribute*` – Tím `Dependency` element přijímá neuzavřenou množinu atributy, které se zveřejní v době běhu jako slovník dvojice název hodnota.  
-  
-### <a name="assets-element"></a>Element prostředky  
- Tento prvek obsahuje seznam `<Asset>` prezentované značky pro každý prvek rozšíření nebo obsahu, kterou tento balíček.  
-  
-- `<Asset>` – Tento prvek obsahuje následující atributy a elementy:  
-  
-  - `Type` – Toto je typ rozšíření nebo obsah reprezentovaný tímto prvkem. Každý `<Asset>` element musí mít jeden `Type`, ale více `<Asset>` elementy může mít stejný `Type`. Tento atribut by měl být reprezentován jako plně kvalifikovaný název, podle konvence oboru názvů. Známé typy jsou:  
-  
-    1. Microsoft.VisualStudio.VsPackage  
-  
-    2. Microsoft.VisualStudio.MefComponent  
-  
-    3. Microsoft.VisualStudio.ToolboxControl  
-  
-    4. Microsoft.VisualStudio.Samples  
-  
-    5. Microsoft.VisualStudio.ProjectTemplate  
-  
-    6. Microsoft.VisualStudio.ItemTemplate  
-  
-    7. Microsoft.VisualStudio.Assembly  
-  
-       Můžete vytvořit vlastní typy a přiřadit jedinečné názvy. Za běhu v sadě Visual Studio můžete kód výčet a tyto vlastní typy přístup prostřednictvím Správce rozšíření pro rozhraní API.  
-  
-  - Cesta – relativní cesta k souboru nebo složky v rámci balíčku, který obsahuje prostředek.  
-  
-  - `AnyAttribute*` – Neuzavřenou množinu atributy, které bude přístupné za běhu jako slovník dvojice název hodnota.  
-  
-     `<AnyElement>*` – Všechny Strukturovaný obsah je povolen mezi `<Asset>` začínají i končí značky. Všechny prvky jsou vystaveny jako seznam objektů XmlElement. Rozšíření VSIX, můžete definovat strukturovaných metadata specifická pro typ v souboru manifestu a výčet za běhu.  
-  
-### <a name="sample-manifest"></a>Ukázka manifestu  
-  
-```  
-<?xml version="1.0" encoding="utf-8"?>  
-<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">  
-  <Metadata>  
-    <Identity Id="0000000-0000-0000-0000-000000000000" Version="1.0" Language="en-US" Publisher="Company" />  
-    <DisplayName>Test Package</DisplayName>  
-    <Description>Information about my package</Description>  
-    <MoreInfo>http://www.fabrikam.com/Extension1/</MoreInfo>  
-    <License>eula.rtf</License>  
-    <ReleaseNotes>notes.txt</ReleaseNotes>  
-    <Icon>Images\icon.png</Icon>  
-    <PreviewImage>Images\preview.png</PreviewImage>  
-  </Metadata>  
-  <Installation InstalledByMsi="false" AllUsers="false" SystemComponent="false" Scope="ProductExtension">  
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0, 12.0]" />  
-  </Installation>  
-  <Dependencies>  
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />  
-    <Dependency Id="Microsoft.VisualStudio.MPF.12.0" DisplayName="Visual Studio MPF 12.0" d:Source="Installed" Version="[12.0]" />  
-  </Dependencies>  
-  <Assets>  
-    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />  
-  </Assets>  
-</PackageManifest>  
-```  
-  
-## <a name="see-also"></a>Viz také  
+  - `DisplayName`– Tento atribut je zobrazovaným názvem závislého balíčku, který se používá v prvcích uživatelského rozhraní, jako jsou dialogová okna a chybové zprávy. Atribut je volitelný, pokud není závislý balíček nainstalován pomocí MSI.
+
+  - `Location`– Tento nepovinný atribut určuje buď relativní cestu v rámci tohoto VSIX, do vnořeného balíčku VSIX nebo adresu URL umístění pro stažení závislosti. Tento atribut slouží k tomu, aby uživatel mohl najít požadovaný balíček.
+
+  - `AnyAttribute*``Dependency` – Element akceptuje otevřené sady atributů, které budou zveřejněny za běhu jako dvojici název-hodnota.
+
+### <a name="assets-element"></a>Asset – element
+ Tento prvek obsahuje seznam `<Asset>` značek pro každé rozšíření nebo element obsahu, který je v tomto balíčku Surface.
+
+- `<Asset>`– Tento prvek obsahuje následující atributy a prvky:
+
+  - `Type`– Toto je typ rozšíření nebo obsahu reprezentovaného tímto prvkem. Každý `<Asset>` prvek musí mít jeden `Type`, ale více `<Asset>` elementů může mít stejnou `Type`hodnotu. Tento atribut by měl být reprezentován jako plně kvalifikovaný název podle konvencí oboru názvů. Známé typy jsou:
+
+    1. Microsoft.VisualStudio.VsPackage
+
+    2. Microsoft.VisualStudio.MefComponent
+
+    3. Microsoft.VisualStudio.ToolboxControl
+
+    4. Microsoft. VisualStudio. Samples
+
+    5. Microsoft.VisualStudio.ProjectTemplate
+
+    6. Microsoft.VisualStudio.ItemTemplate
+
+    7. Microsoft. VisualStudio. Assembly
+
+       Můžete vytvořit vlastní typy a přiřadit jim jedinečné názvy. V době běhu v rámci sady Visual Studio může váš kód vytvořit výčet a přistupovat k těmto vlastním typům prostřednictvím rozhraní API Správce rozšíření.
+
+  - Cesta – relativní cesta k souboru nebo složce v rámci balíčku, který obsahuje Asset.
+
+  - `AnyAttribute*`– Otevřená sada atributů, která bude zveřejněna za běhu jako dvojici název-hodnota.
+
+     `<AnyElement>*`– Mezi `<Asset>` začátkem a koncovou značkou je povolený jakýkoliv strukturovaný obsah. Všechny elementy jsou zveřejněny jako seznam objektů XmlElement. Rozšíření VSIX mohou v souboru manifestu definovat strukturovaná metadata specifická pro typ a vytvořit jejich výčet za běhu.
+
+### <a name="sample-manifest"></a>Vzorový manifest
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="0000000-0000-0000-0000-000000000000" Version="1.0" Language="en-US" Publisher="Company" />
+    <DisplayName>Test Package</DisplayName>
+    <Description>Information about my package</Description>
+    <MoreInfo>http://www.fabrikam.com/Extension1/</MoreInfo>
+    <License>eula.rtf</License>
+    <ReleaseNotes>notes.txt</ReleaseNotes>
+    <Icon>Images\icon.png</Icon>
+    <PreviewImage>Images\preview.png</PreviewImage>
+  </Metadata>
+  <Installation InstalledByMsi="false" AllUsers="false" SystemComponent="false" Scope="ProductExtension">
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0, 12.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.12.0" DisplayName="Visual Studio MPF 12.0" d:Source="Installed" Version="[12.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
+```
+
+## <a name="see-also"></a>Viz také
  [Odesílání rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

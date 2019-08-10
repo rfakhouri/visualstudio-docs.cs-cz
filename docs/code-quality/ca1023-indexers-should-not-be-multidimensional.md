@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef3afd9dda70d02698abec5459b36e6acc2c5ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08a45219eb2fceeaa9c58a140990ea577c941ff7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779613"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923036"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Indexery by neměly být multidimenzionální
 
@@ -34,26 +34,26 @@ ms.locfileid: "62779613"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Veřejný nebo chráněný typ obsahuje veřejná nebo chráněná indexer, který používá více než jeden index.
+## <a name="cause"></a>příčina
+Veřejný nebo chráněný typ obsahuje veřejný nebo chráněný indexer, který používá více než jeden index.
 
 ## <a name="rule-description"></a>Popis pravidla
- Indexery, tj. indexované vlastnosti, by měly používat jediný index. Vícerozměrné indexery mohou výrazně snížit použitelnost knihovny. Pokud návrhu vyžaduje více indexů, zvažte, zda typ představuje logické datové úložiště. Pokud ne, použijte metodu.
+Indexery, tj. indexované vlastnosti, by měly používat jeden index. Multidimenzionální indexery můžou významně snížit použitelnost knihovny. Pokud návrh vyžaduje více indexů, je třeba znovu zvážit, zda typ představuje logické úložiště dat. V takovém případě použijte metodu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, změňte návrhu a použít jedinou celé číslo nebo řetězec indexu nebo použijte metodu místo indexeru.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, změňte návrh tak, aby používal celé číslo jedinou nebo index řetězce, nebo použijte metodu místo indexeru.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačit upozornění tohoto pravidla až po pečlivého zvážení potřebu nestandardní indexeru.
+Potlačí upozornění z tohoto pravidla až po pečlivém zvážení nutnosti nestandardního indexeru.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ, `DayOfWeek03`, pomocí multidimenzionální indexeru, který porušuje pravidla. Indexer se dají považovat za typ převodu a proto je více správně vystavena jako metoda. Typ je upraveno `RedesignedDayOfWeek03` splňovat pravidla.
+Následující příklad ukazuje typ `DayOfWeek03`s multidimenzionálním indexerem, který porušuje pravidlo. Indexer se může zobrazit jako typ převodu, a proto je lépe přístupný jako metoda. Typ je přepracován v `RedesignedDayOfWeek03` pro splnění pravidla.
 
- [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
- [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]
- [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]
+[!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
+[!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]
+[!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1043: Použijte celočíselný nebo řetězcový argument pro indexery](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
+[CA1043: Použít celočíselný nebo řetězcový argument pro indexery](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
 
- [CA1024: Použijte vlastnosti, kde je to vhodné](../code-quality/ca1024-use-properties-where-appropriate.md)
+[CA1024: Použijte vlastnosti, kde je to vhodné](../code-quality/ca1024-use-properties-where-appropriate.md)

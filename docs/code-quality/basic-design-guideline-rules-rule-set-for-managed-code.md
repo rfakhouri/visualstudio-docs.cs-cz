@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571365"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919542"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Sada pravidel Základní pravidla obecných zásad návrhu pro spravovaný kód
-Můžete použít sadu soustředit na to, jak váš kód lépe pochopit a používat pravidel základní pravidla obecných zásad návrhu společnosti Microsoft. Měli byste zahrnout tuto sadu Pokud váš projekt zahrnuje kód knihovny nebo pokud chcete vynutit doporučené postupy pro kód, který se snadnou údržbou pravidel.
+Můžete použít pravidlo pravidla obecných zásad návrhu Microsoft Basic, abyste se mohli soustředit na snazší pochopení a používání kódu. Tuto sadu pravidel byste měli zahrnout, pokud projekt obsahuje kód knihovny nebo pokud chcete vyhovět osvědčeným postupům pro kód, který se snadno udržuje.
 
- Základní pravidla obecných zásad návrhu zahrnout všechna pravidla v sadě pravidel Microsoftu minimální Recommeded pravidla. Seznam minimálních pravidel najdete v tématu [sada pravidel spravovaná doporučená pravidla pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+Základní pravidla obecných zásad návrhu zahrnují všechna pravidla v sadě pravidel minimálních pravidel recommeded společnosti Microsoft. Seznam minimálních pravidel najdete v tématu [spravovaná sada pravidel pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
 
- Následující tabulka popisuje všechna pravidla v sadě pravidel základní pravidla obecných zásad návrhu společnosti Microsoft.
+V následující tabulce jsou popsána všechna pravidla v sadě pravidel základní pravidla návrhu Microsoft Basic.
 
 |Pravidlo|Popis|
 |----------|-----------------|
@@ -64,7 +64,7 @@ Můžete použít sadu soustředit na to, jak váš kód lépe pochopit a použ�
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Transparentní metody musí obsahovat pouze ověřitelné IL|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Transparentní metody nesmí volat metody s atributem SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Transparentní kód nesmí odkazovat na položky kritické pro zabezpečení|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparentní metody nesmějí vyhovovat LinkDemands|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparentní metody nesmí splňovat LinkDemand.|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Typy musí být alespoň tak kritické, jako jejich základní typy a rozhraní|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparentní metody nemusí používat kontrolní příkazy zabezpečení|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparentní metody nesmí provádět volání nativního kódu|

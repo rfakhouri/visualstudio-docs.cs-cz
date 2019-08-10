@@ -1,5 +1,5 @@
 ---
-title: Referenční informace k sadě Visual Studio SDK | Dokumentace Microsoftu
+title: Referenční informace k sadě Visual Studio SDK | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,200 +11,203 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 692297a22017ad3bb934bc80cc05c9b90f62ecbc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 54a0b972090381da5c0aa8c9faaf823a41172d1e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322174"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870846"
 ---
-# <a name="visual-studio-sdk-reference"></a>Referenční dokumentace jazyka Visual Studio SDK
-Tato část obsahuje informace o oborech názvů, související obory názvů a ostatní oblasti zájmu sady Visual Studio pro vývojáře, kteří používají Visual Studio SDK.
+# <a name="visual-studio-sdk-reference"></a>Referenční informace k sadě Visual Studio SDK
+
+Tato část obsahuje informace o oborech názvů sady Visual Studio, souvisejících oborech názvů a dalších oblastech zájmu pro vývojáře, kteří používají sadu Visual Studio SDK.
 
 ## <a name="in-this-section"></a>V tomto oddílu
-- <xref:Microsoft.VisualStudio.TextManager.Interop> Starší verze definiční rozhraní použitý pro jazyk a editor služby.
 
-- <xref:Microsoft.VisualStudio.Editor> Třídy používané v novém editoru.
+- <xref:Microsoft.VisualStudio.TextManager.Interop>Starší rozhraní spolupráce používaná pro Editor a jazykové služby.
 
-- <xref:Microsoft.VisualStudio.Language.Intellisense> Třídy používané v novém editoru pro technologii IntelliSense.
+- <xref:Microsoft.VisualStudio.Editor>Třídy používané v novém editoru.
 
-- <xref:Microsoft.VisualStudio.Language.StandardClassification> Třídy používané v novém editoru.
+- <xref:Microsoft.VisualStudio.Language.Intellisense>Třídy používané v novém editoru pro technologii IntelliSense.
 
-- <xref:Microsoft.VisualStudio.Text> Třídy používané v novém editoru.
+- <xref:Microsoft.VisualStudio.Language.StandardClassification>Třídy používané v novém editoru.
 
-- <xref:Microsoft.VisualStudio.Text.Adornments> Třídy používané v novém editoru pro vylepšení.
+- <xref:Microsoft.VisualStudio.Text>Třídy používané v novém editoru.
 
-- <xref:Microsoft.VisualStudio.Text.Classification> Třídy používané v novém editoru pro klasifikaci.
+- <xref:Microsoft.VisualStudio.Text.Adornments>Třídy používané v novém editoru pro doplňky.
 
-- <xref:Microsoft.VisualStudio.Text.Differencing> Třídy používané v novém editoru pro rozdílové porovnávání.
+- <xref:Microsoft.VisualStudio.Text.Classification>Třídy používané v novém editoru pro klasifikaci.
 
-- <xref:Microsoft.VisualStudio.Text.Document> Třídy používané v novém editoru pro dokumenty.
+- <xref:Microsoft.VisualStudio.Text.Differencing>Třídy používané v novém editoru pro rozdílové.
 
-- <xref:Microsoft.VisualStudio.Text.Editor> Třídy používané v novém editoru.
+- <xref:Microsoft.VisualStudio.Text.Document>Třídy používané v novém editoru pro dokumenty
 
-- <xref:Microsoft.VisualStudio.Text.Editor.DragDrop> Třídy používané v novém editoru pro přetažení.
+- <xref:Microsoft.VisualStudio.Text.Editor>Třídy používané v novém editoru.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.OptionsExtensionMethods> Třídy používané v novém editoru.
+- <xref:Microsoft.VisualStudio.Text.Editor.DragDrop>Třídy používané v novém editoru pro přetažení
 
-- <xref:Microsoft.VisualStudio.Text.Formatting> Třídy používané v novém editoru pro formátování.
+- <xref:Microsoft.VisualStudio.Text.Editor.OptionsExtensionMethods>Třídy používané v novém editoru.
 
-- <xref:Microsoft.VisualStudio.Text.IncrementalSearch> Třídy používané v novém editoru pro přírůstkové hledání.
+- <xref:Microsoft.VisualStudio.Text.Formatting>Třídy používané v novém editoru pro formátování
 
-- <xref:Microsoft.VisualStudio.Text.Operations> Třídy používané v novém editoru.
+- <xref:Microsoft.VisualStudio.Text.IncrementalSearch>Třídy používané v novém editoru pro přírůstkové vyhledávání.
 
-- <xref:Microsoft.VisualStudio.Text.Outlining> Třídy používané v novém editoru pro sbalení.
+- <xref:Microsoft.VisualStudio.Text.Operations>Třídy používané v novém editoru.
 
-- <xref:Microsoft.VisualStudio.Text.Projection> Třídy používané v novém editoru pro projekci.
+- <xref:Microsoft.VisualStudio.Text.Outlining>Třídy používané v novém editoru pro sbalení.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging> Třídy používané v novém editoru pro označování.
+- <xref:Microsoft.VisualStudio.Text.Projection>Třídy používané v novém editoru pro projekci
 
-- <xref:Microsoft.VisualStudio.Utilities> Třídy používané v novém editoru.
+- <xref:Microsoft.VisualStudio.Text.Tagging>Třídy používané v novém editoru pro označování.
 
-- <xref:Microsoft.Internal.VisualStudio.PlatformUI> Především Microsoftu pouze pro interní použití.
+- <xref:Microsoft.VisualStudio.Utilities>Třídy používané v novém editoru.
 
-- <xref:Microsoft.Internal.VisualStudio.Shell.Interop> Microsoft pouze pro interní použití.
+- <xref:Microsoft.VisualStudio.PlatformUI>
 
-- <xref:Microsoft.VisualStudio> Třídy pro Visual Studio konstanty a pomocné rutiny.
+- <xref:Microsoft.VisualStudio.Shell.Interop>
 
-- <xref:Microsoft.VisualStudio.CommandBars> Třídy pro panely příkazů sady Visual Studio.
+- <xref:Microsoft.VisualStudio>Třídy pro konstanty a pomocníky sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.ComponentModelHost> Třídy používané pro Managed Extensibility Framework (MEF) v sadě Visual Studio.
+- <xref:Microsoft.VisualStudio.CommandBars>Třídy pro panely příkazů sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.Designer.Interfaces> Rozhraní používá pomocí návrháře sady Visual Studio.
+- <xref:Microsoft.VisualStudio.ComponentModelHost>Třídy používané pro Managed Extensibility Framework (MEF) v aplikaci Visual Studio.
 
-- <xref:Microsoft.VisualStudio.ManagedInterfaces.ProjectDesigner> Rozhraní používá pomocí Návrháře projektu sady Visual Studio.
+- <xref:Microsoft.VisualStudio.Designer.Interfaces>Rozhraní používaná s návrháři sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.ManagedInterfaces.Publish> Třídy používané pro publikování aplikací.
+- <xref:Microsoft.VisualStudio.ManagedInterfaces.ProjectDesigner>Rozhraní použitá v Návrháři projektu sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.OLE.Interop> Vzájemné spolupráce rozhraní používaných v sadě Visual Studio pro součásti OLE.
+- <xref:Microsoft.VisualStudio.ManagedInterfaces.Publish>Třídy používané pro publikování aplikací.
 
-- <xref:Microsoft.VisualStudio.Package> Třídy používané pro Visual Studio managed jazykových služeb.
+- <xref:Microsoft.VisualStudio.OLE.Interop>Rozhraní spolupráce používaná v aplikaci Visual Studio pro součásti OLE.
 
-- <xref:Microsoft.VisualStudio.PlatformUI> Třídy používané v prostředí sady Visual Studio.
+- <xref:Microsoft.VisualStudio.Package>Třídy používané pro spravované jazykové služby sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.PlatformUI.OleComponentSupport> Microsoft pouze pro interní použití.
+- <xref:Microsoft.VisualStudio.PlatformUI>Třídy používané v prostředí sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.ProjectAggregator> Třídy používané pro projekty aplikace Visual Studio.
+- <xref:Microsoft.VisualStudio.PlatformUI.OleComponentSupport>Jenom interní použití Microsoftu.
 
-- <xref:Microsoft.VisualStudio.Settings> Třídy používané v prostředí sady Visual Studio.
+- <xref:Microsoft.VisualStudio.ProjectAggregator>Třídy používané pro projekty sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.Shell> Třídy používané v prostředí sady Visual Studio.
+- <xref:Microsoft.VisualStudio.Settings>Třídy používané v prostředí sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.Shell.Design> Třídy používané v prostředí sady Visual Studio.
+- <xref:Microsoft.VisualStudio.Shell>Třídy používané v prostředí sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.Shell.Design.Serialization> Třídy používané v prostředí sady Visual Studio.
+- <xref:Microsoft.VisualStudio.Shell.Design>Třídy používané v prostředí sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom> Třídy používané v prostředí sady Visual Studio.
+- <xref:Microsoft.VisualStudio.Shell.Design.Serialization>Třídy používané v prostředí sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.Shell.Flavor> Třídy používané pro projekty aplikace Visual Studio.
+- <xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom>Třídy používané v prostředí sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop> Vzájemné spolupráce rozhraní používaných pro prostředí sady Visual Studio.
+- <xref:Microsoft.VisualStudio.Shell.Flavor>Třídy používané pro projekty sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.Shell.Settings> Třídy používané v prostředí sady Visual Studio.
+- <xref:Microsoft.VisualStudio.Shell.Interop>Rozhraní spolupráce používaná pro prostředí sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.VSHelp> Třídy používané pro nápovědu.
+- <xref:Microsoft.VisualStudio.Shell.Settings>Třídy používané v prostředí sady Visual Studio.
 
-- <xref:VSLangProj> Třídy používané pro projekty služeb jazyka.
+- <xref:Microsoft.VisualStudio.VSHelp>Třídy používané pro nápovědu
 
-- <xref:XamlGeneratedNamespace> Microsoft pouze pro interní použití.
+- <xref:VSLangProj>Třídy používané pro projekty jazykové služby.
 
-- <xref:Microsoft.VisualStudio.ManagedInterfaces9> Rozhraní použité pro sadu Visual Studio.
+- <xref:XamlGeneratedNamespace>Jenom interní použití Microsoftu.
 
-- <xref:Microsoft.VisualStudio.WCFReference.Interop> Třídy používané pro Windows Communication Framework.
+- <xref:Microsoft.VisualStudio.ManagedInterfaces9>Rozhraní používaná pro Visual Studio.
 
-- <xref:Microsoft.VisualStudio.TestTools.Vsip> Třídy používané pro testovací nástroje.
+- <xref:Microsoft.VisualStudio.WCFReference.Interop>Třídy používané pro rozhraní Windows Communication Framework.
 
-- <xref:EnvDTE> Použít pro automatizaci sady Visual Studio.
+- Třídy [Microsoft. VisualStudio. TestTools. VSIP](/previous-versions/aa993343(v=vs.120)) používané pro testovací nástroje.
 
-- <xref:Extensibility> Použít pro automatizaci sady Visual Studio.
+- <xref:EnvDTE>Používá se pro automatizaci sady Visual Studio.
 
-- <xref:EnvDTE80> Použít pro automatizaci sady Visual Studio.
+- <xref:Extensibility>Používá se pro automatizaci sady Visual Studio.
 
-- <xref:EnvDTE90> Použít pro automatizaci sady Visual Studio.
+- <xref:EnvDTE80>Používá se pro automatizaci sady Visual Studio.
 
-- <xref:EnvDTE90a> Použít pro automatizaci sady Visual Studio.
+- <xref:EnvDTE90>Používá se pro automatizaci sady Visual Studio.
 
-- <xref:EnvDTE100> Použít pro automatizaci sady Visual Studio.
+- <xref:EnvDTE90a>Používá se pro automatizaci sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.VCCodeModel> Použít pro automatizaci projektu Visual C++.
+- <xref:EnvDTE100>Používá se pro automatizaci sady Visual Studio.
 
-- <xref:Microsoft.VisualStudio.VCProject> Třídy používané pro automatizaci projektu Visual C++.
+- <xref:Microsoft.VisualStudio.VCCodeModel>Používá se pro C++ automatizaci Visual Project.
 
-- <xref:Microsoft.VisualStudio.VCProjectEngine> Použít pro automatizaci projektu Visual C++.
+- <xref:Microsoft.VisualStudio.VCProject>Třídy používané pro automatizaci Visual C++ Project.
 
-- <xref:Microsoft.VisualStudio.VsWizard> Používá se pro průvodce Visual Studio.
+- <xref:Microsoft.VisualStudio.VCProjectEngine>Používá se pro C++ automatizaci Visual Project.
 
-- <xref:VSLangProj> Použít pro automatizaci projektu C# a Visual Basic.
+- <xref:Microsoft.VisualStudio.VsWizard>Používá se pro Průvodce pro Visual Studio.
 
-- <xref:VSLangProj2> Použít pro automatizaci projektu C# a Visual Basic.
+- <xref:VSLangProj>Používá se C# pro a Visual Basic automatizaci projektu.
 
-- <xref:VSLangProj80> Použít pro automatizaci projektu C# a Visual Basic.
+- <xref:VSLangProj2>Používá se C# pro a Visual Basic automatizaci projektu.
 
-- <xref:VSLangProj90> Použít pro automatizaci projektu C# a Visual Basic.
+- <xref:VSLangProj80>Používá se C# pro a Visual Basic automatizaci projektu.
 
-- <xref:VSLangProj100> Použít pro automatizaci projektu C# a Visual Basic.
+- <xref:VslangProj90>Používá se C# pro a Visual Basic automatizaci projektu.
 
-- <xref:VSLangProj110> Použít pro automatizaci projektu C# a Visual Basic.
+- <xref:VslangProj100>Používá se C# pro a Visual Basic automatizaci projektu.
 
-- <xref:VSLangProj140> Použít pro automatizaci projektu C# a Visual Basic.
+- <xref:VSLangProj110>Používá se C# pro a Visual Basic automatizaci projektu.
 
-- <xref:Microsoft.VisualStudio.Language.CallHierarchy> Používá se pro automatizaci C# a Visual Basic.
+- <xref:VSLangProj140>Používá se C# pro a Visual Basic automatizaci projektu.
 
-- <xref:Microsoft.VisualStudio.Language.NavigateTo.Interfaces> Používá se pro automatizaci C# a Visual Basic.
+- <xref:Microsoft.VisualStudio.Language.CallHierarchy>Používá se C# pro a Visual Basic automatizaci.
 
-- <xref:Microsoft.VisualStudio.Threading> Používá se pro dělení na vlákna sady Visual Studio.
+- <xref:Microsoft.VisualStudio.Language.NavigateTo.Interfaces>Používá se C# pro a Visual Basic automatizaci.
 
-- [Namespace Microsoft.VisualStudio.ConnectedServices](/dotnet/api/microsoft.visualstudio.connectedservices) používané pro Visual Studio připojené služby.
+- <xref:Microsoft.VisualStudio.Threading>Používá se pro vlákna sady Visual Studio.
 
-- [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) výčet příznaků hostitele určuje technologie IntelliSense.
+- [Microsoft. VisualStudio. připojených služeb – obor názvů](/dotnet/api/microsoft.visualstudio.connectedservices) Používá se pro připojené služby sady Visual Studio.
 
-- [Odkaz na XML schéma VSCT](../extensibility/vsct-xml-schema-reference.md) poskytuje elementy schématu tabulky příkazů aplikace Visual Studio, s povolenou podřízené prvky a atributy pro každý.
+- Výčet [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) Určuje příznaky hostitele technologie IntelliSense.
 
-- [Identifikátory GUID a konstanty](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md) poskytuje seznam identifikátorů GUID použít v celé sadě SDK.
+- [Referenční dokumentace schématu vsct XML](../extensibility/vsct-xml-schema-reference.md) Poskytuje tabulku prvků schématu příkazového řádku sady Visual Studio s povolenými podřízenými elementy a atributy pro každý z nich.
 
-- [Konstanty modelu COM v spravovaného kódu](../extensibility/com-constants-in-managed-code.md) poskytuje seznam identifikátorů pro prvky uživatelského rozhraní používaný v celém prostředí SDK.
+- [Identifikátory GUID a konstanty](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md) Obsahuje seznam identifikátorů GUID používaných v rámci celé sady SDK.
 
-- [Moduly plug-in správy zdrojového](../extensibility/source-control-plug-ins.md) odkazy na témata pro rozhraní API modulu Plug-in zdroje ovládacího prvku.
+- [Konstanty modelu COM ve spravovaném kódu](../extensibility/com-constants-in-managed-code.md) Poskytuje seznam identifikátorů pro prvky uživatelského rozhraní používané v celé sadě SDK prostředí.
 
-- [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md) odkazy na témata, které popisují, jak vývojáři automatizovat některé úlohy z příkazového řádku.
+- [Moduly plug-in správy zdrojového kódu](../extensibility/source-control-plug-ins.md) Obsahuje odkazy na témata pro rozhraní API modulu plug-in správy zdrojového kódu.
 
-- [Zpracování chyb a vracet hodnoty](../extensibility/error-handling-and-return-values.md) vysvětluje architektura chyby pro balíčky VSPackages, což je shodná se použijí při další programování pro Windows.
+- [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md) Obsahuje odkazy na témata, která popisují, jak můžou vývojáři automatizovat několik úloh z příkazového řádku.
 
-- [Objekty](../extensibility/objects.md) poskytuje seznam objektů, které se používají v prostředí.
+- [Zpracování chyb a návratové hodnoty](../extensibility/error-handling-and-return-values.md) Vysvětluje architekturu chyb pro VSPackage, která je stejná jako ta, která se používá v jiném programování v systému Windows.
 
-- [Glosář](../extensibility/visual-studio-sdk-glossary.md) poskytuje seznam užitečné termíny a jejich definice pro použití při čtení dokumentace ke službě Visual Studio SDK.
+- [Objekty](../extensibility/objects.md) Poskytuje seznam objektů, které jsou používány v prostředí.
 
-- <xref:Microsoft.Build.BuildEngine> Používá se pro MSBuild.
+- [Glosář](../extensibility/visual-studio-sdk-glossary.md) Obsahuje seznam užitečných podmínek a jejich definicí pro použití při čtení dokumentace sady Visual Studio SDK.
 
-- <xref:Microsoft.Build.Construction> Používá se pro MSBuild.
+- <xref:Microsoft.Build.BuildEngine>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Conversion> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Construction>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Debugging> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Conversion>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Evaluation> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Debugging>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Exceptions> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Evaluation>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Execution> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Exceptions>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Framework> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Execution>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Framework.XamlTypes> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Framework>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Logging> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Framework.XamlTypes>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Tasks> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Logging>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Tasks>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Tasks.Hosting> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Tasks.Xaml> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Tasks.Hosting>Používá se pro MSBuild.
 
-- <xref:Microsoft.Build.Utilities> Používá se pro MSBuild.
+- <xref:Microsoft.Build.Tasks.Xaml>Používá se pro MSBuild.
+
+- <xref:Microsoft.Build.Utilities>Používá se pro MSBuild.
 
 ## <a name="related-sections"></a>Související oddíly
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md) obsahuje dokumentaci, ukázky a kód, který vám pomůžou s vývojem produkty, které se integrují se sadou Visual Studio.
+
+[Sada Visual Studio SDK](../extensibility/visual-studio-sdk.md) obsahuje dokumentaci, ukázky a kód, které vám pomůžou s vývojem produktů, které se integrují se sadou Visual Studio.

@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro PowerPoint'
+title: 'Návod: Vytvoření prvního doplňku VSTO pro PowerPoint'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b69b90c8ede6bfba4d388f547742de6d92cd7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bba8095c1e79b8ab8addfd69afc1e89a50e3fce
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981239"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871952"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Návod: Vytvoření vašeho prvního doplňku VSTO pro PowerPoint
-  Tento návod ukazuje, jak k vytvoření doplňku VSTO pro Microsoft Office PowerPoint. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro vlastní, bez ohledu na to, které jsou otevřené prezentace aplikace. Další informace najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Návod: Vytvoření prvního doplňku VSTO pro PowerPoint
+  V tomto návodu se dozvíte, jak vytvořit doplněk VSTO pro systém Microsoft Office PowerPointu. Funkce, které vytvoříte v tomto druhu řešení, jsou k dispozici pro samotnou aplikaci, bez ohledu na to, jaké prezentace jsou otevřené. Další informace najdete v tématu [Přehled &#40;vývoje řešení pro systém&#41;Office VSTO](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
  Tento návod znázorňuje následující úlohy:
 
-- Vytvoření projektu doplňku VSTO pro PowerPoint pro aplikaci PowerPoint.
+- Vytváření projektu doplňku VSTO pro PowerPoint pro PowerPoint
 
-- Psaní kódu, který používá model objektu aplikace PowerPoint přidáte textové pole pro každý nový snímek.
+- Psaní kódu, který používá objektový model aplikace PowerPoint k přidání textového pole do každého nového snímku.
 
-- Vytváření a spouštění projektů a otestovat ho.
+- Sestavení a spuštění projektu pro otestování.
 
-- Čištění projektu tak, aby doplňku VSTO už nespouští automaticky na vašem vývojovém počítači.
+- Vyčistěte projekt, aby se doplněk VSTO na vašem vývojovém počítači už nespouštěl automaticky.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -48,91 +48,91 @@ ms.locfileid: "62981239"
 
 ## <a name="create-the-project"></a>Vytvoření projektu
 
-### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt
+### <a name="to-create-a-new-project"></a>Vytvoření nového projektu
 
 1. Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
+2. V nabídce **soubor** přejděte na příkaz **Nový**a klikněte na **projekt**.
 
-3. V podokně šablony rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom rozbalte **Office/SharePoint**.
+3. V podokně šablony rozbalte položku **Visual C#**  nebo **Visual Basic**a potom rozbalte položku **Office/SharePoint**.
 
-4. V rozbalených **Office/SharePoint** uzlu, vyberte **Office Add-ins** uzlu.
+4. V rozbaleném uzlu **Office/SharePoint** vyberte uzel **Doplňky Office** .
 
-5. V seznamu šablon projektu vyberte projekt doplňku VSTO v PowerPointu.
+5. V seznamu šablon projektu vyberte projekt doplňku VSTO pro PowerPoint.
 
-6. V **název** zadejte **FirstPowerPointAddIn**.
+6. Do pole **název** zadejte **FirstPowerPointAddIn**.
 
 7. Klikněte na **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstPowerPointAddIn** projekt a otevře **ThisAddIn** souboru kódu v editoru.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Vytvoří projekt **FirstPowerPointAddIn** a otevře soubor s kódem **ThisAddIn** v editoru.
 
-## <a name="write-code-that-adds-text-to-each-new-slide"></a>Napsat kód, který přidá text pro každý nový snímek
- V dalším kroku přidejte kód do soubor kódu ThisAddIn. Nový kód používá model objektu aplikace PowerPoint přidáte textové pole pro každý nový snímek. Ve výchozím nastavení obsahuje soubor kódu ThisAddIn následující generovaného kódu:
+## <a name="write-code-that-adds-text-to-each-new-slide"></a>Napsat kód, který do každého nového snímku přidá text
+ Dále přidejte kód do souboru kódu ThisAddIn. Nový kód používá objektový model aplikace PowerPoint k přidání textového pole do každého nového snímku. Ve výchozím nastavení soubor kódu ThisAddIn obsahuje následující generovaný kód:
 
-- Částečnou definici `ThisAddIn` třídy. Tato třída představuje vstupní bod pro kód a poskytuje přístup k objektovému modelu aplikace PowerPoint. Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md). Zbývající část `ThisAddIn` třída je definována v souboru skryté kódu, který byste neměli měnit.
+- Částečná definice `ThisAddIn` třídy. Tato třída poskytuje vstupní bod pro váš kód a poskytuje přístup k objektovému modelu aplikace PowerPoint. Další informace najdete v tématu [programové doplňky VSTO](../vsto/programming-vsto-add-ins.md). Zbytek `ThisAddIn` třídy je definován ve skrytém souboru kódu, který byste neměli upravovat.
 
-- `ThisAddIn_Startup` a `ThisAddIn_Shutdown` obslužných rutin událostí. Tyto obslužné rutiny událostí jsou volány při PowerPoint načte a uvolní doplňku VSTO. Pomocí těchto obslužných rutin událostí k inicializaci doplňku VSTO, když je načten a chcete vyčistit prostředky využívané třídou doplňku VSTO, když je uvolněn. Další informace najdete v tématu [události v projektech pro systém Office](../vsto/events-in-office-projects.md).
+- Obslužné rutiny události `ThisAddIn_Shutdown` a.`ThisAddIn_Startup` Tyto obslužné rutiny události jsou volány, když aplikace PowerPoint načte a uvolní doplněk VSTO. Tyto obslužné rutiny událostí použijte k inicializaci doplňku VSTO po jeho načtení a k vyčištění prostředků používaných doplňkem VSTO, když se uvolní. Další informace najdete v tématu [události v projektech Office](../vsto/events-in-office-projects.md).
 
-### <a name="to-add-a-text-box-to-each-new-slide"></a>Chcete-li přidat textové pole pro každý nový snímek
+### <a name="to-add-a-text-box-to-each-new-slide"></a>Přidání textového pole do každého nového snímku
 
-1. V soubor kódu ThisAddIn, přidejte následující kód, který `ThisAddIn` třídy. Tento kód definuje obslužnou rutinu události pro [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) událost <xref:Microsoft.Office.Interop.PowerPoint.Application> objektu.
+1. V souboru kódu ThisAddIn přidejte do `ThisAddIn` třídy následující kód. Tento kód definuje obslužnou rutinu události pro událost objektu [aplikace](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
 
-    Když uživatel přidá nový snímek na aktivní prezentace, tato obslužná rutina události přidá do textového pole k hornímu okraji nový snímek a přidá nějaký text do textového pole.
+    Když uživatel přidá nový snímek do aktivní prezentace, přidá tato obslužná rutina události do horní části nového snímku textové pole a přidá do textového pole nějaký text.
 
     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
 
-2. Pokud používáte C#, přidejte následující kód, který `ThisAddIn_Startup` obslužné rutiny události. Tento kód se nejde připojit `Application_PresentationNewSlide` obslužné rutině události [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) událostí.
+2. Pokud používáte C#, přidejte následující kód do `ThisAddIn_Startup` obslužné rutiny události. Tento kód je vyžadován pro připojení `Application_PresentationNewSlide` obslužné rutiny události pomocí události [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) .
 
     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
 
-   V předchozích příkladech kódu upravit každý nový snímek, použijte následující objekty:
+   Pro úpravu každého nového snímku používají předchozí příklady kódu následující objekty:
 
-- `Application` Pole `ThisAddIn` třídy. `Application` Pole vrátí <xref:Microsoft.Office.Interop.PowerPoint.Application> objektu, který představuje aktuální instanci aplikace PowerPoint.
+- `Application` Pole třídy`ThisAddIn` Pole vrátí objekt aplikace, který představuje aktuální instanci aplikace PowerPoint. [](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) `Application`
 
-- `Sld` Parametr obslužné rutiny události pro [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) událostí. `Sld` Parametr je <xref:Microsoft.Office.Interop.PowerPoint.Slide> objektu, který reprezentuje nový snímek. Další informace najdete v tématu [řešení pro aplikaci PowerPoint](../vsto/powerpoint-solutions.md).
+- Parametr obslužné rutiny události pro událost [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationNewSlide.](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) `Sld` Parametr je objekt snímku, který představuje nový snímek. [](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) `Sld` Další informace najdete v tématu [řešení pro PowerPoint](../vsto/powerpoint-solutions.md).
 
 ## <a name="test-the-project"></a>Testování projektu
- Při sestavení a spuštění projektu, ověřte, že do textového pole zobrazuje v nových snímků, které přidáte do prezentace.
+ Při sestavování a spouštění projektu ověřte, zda se textové pole zobrazuje v nových snímcích, které přidáte do prezentace.
 
 ### <a name="to-test-the-project"></a>Otestování projektu
 
-1. Stisknutím klávesy **F5** sestavení a spuštění projektu.
+1. Stisknutím klávesy **F5** Sestavte a spusťte projekt.
 
-     Při sestavování projektu kód je zkompilován do sestavení, které je umístěn ve výstupní složce sestavení pro projekt. Visual Studio také vytvoří sadu položky registru, kterými může zjišťovat a načíst doplňku VSTO v aplikaci PowerPoint a nakonfiguruje nastavení zabezpečení na vývojovém počítači povolit doplňku VSTO pro spuštění. Další informace najdete v tématu [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).
+     Při sestavování projektu je kód zkompilován do sestavení, které je vloženo do výstupní složky sestavení pro projekt. Sada Visual Studio také vytvoří sadu položek registru, které umožní aplikaci PowerPoint vyhledat a načíst doplněk VSTO a nakonfiguruje nastavení zabezpečení na vývojovém počítači, aby bylo možné doplněk VSTO spustit. Další informace najdete v tématu [sestavování řešení pro systém Office](../vsto/building-office-solutions.md).
 
-2. V aplikaci PowerPoint přidejte nový snímek active prezentaci.
+2. V aplikaci PowerPoint přidejte do aktivní prezentace nový snímek.
 
-3. Ověřte, že následující text je přidán do nového textového pole v horní části snímku.
+3. Ověřte, zda je do nového textového pole v horní části snímku přidáno následující text.
 
-     **Tento text byl přidán s použitím kódu.**
+     **Tento text byl přidán pomocí kódu.**
 
-4. Zavřete aplikaci PowerPoint.
+4. Zavřete PowerPoint.
 
-## <a name="clean-up-the-project"></a>Vyčistěte projekt
- Po dokončení vývoje projektu doplňku VSTO sestavení, položky registru a nastavení zabezpečení odeberte z vývojového počítače. V opačném případě doplňku VSTO se spustí pokaždé, když otevřete aplikaci PowerPoint ve vývojovém počítači.
+## <a name="clean-up-the-project"></a>Vyčištění projektu
+ Po dokončení vývoje projektu odeberte sestavení doplňku VSTO, položky registru a nastavení zabezpečení z vývojového počítače. V opačném případě se doplněk VSTO spustí pokaždé, když ve vývojovém počítači otevřete PowerPoint.
 
-### <a name="to-clean-up-your-project"></a>Chcete-li vyčistit projekt
+### <a name="to-clean-up-your-project"></a>Vyčištění projektu
 
-1. V sadě Visual Studio na **sestavení** nabídky, klikněte na tlačítko **Vyčistit řešení**.
+1. V aplikaci Visual Studio v nabídce **sestavení** klikněte na možnost **Vyčistit řešení**.
 
 ## <a name="next-steps"></a>Další kroky
- Teď, když jste vytvořili základní doplňku VSTO pro PowerPoint, můžete další informace o tom, jak vývoj doplňků VSTO z těchto témat:
+ Teď, když jste vytvořili základní doplněk VSTO pro PowerPoint, můžete získat další informace o tom, jak vyvíjet doplňky VSTO z těchto témat:
 
-- Obecné programovacích úloh, které můžete provádět v doplňcích VSTO pro PowerPoint. Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).
+- Obecné úlohy programování, které můžete provádět v Doplňkech VSTO pro PowerPoint Další informace najdete v tématu [programové doplňky VSTO](../vsto/programming-vsto-add-ins.md).
 
-- Použití objektového modelu aplikace PowerPoint. Další informace najdete v tématu [řešení pro aplikaci PowerPoint](../vsto/powerpoint-solutions.md).
+- Pomocí objektového modelu aplikace PowerPoint. Další informace najdete v tématu [řešení pro PowerPoint](../vsto/powerpoint-solutions.md).
 
-- Přizpůsobení uživatelského rozhraní PowerPointu například přidat vlastní kartu na pás karet nebo vytvořením vlastní vlastního podokna úloh. Další informace najdete v tématu [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).
+- Přizpůsobení uživatelského rozhraní aplikace PowerPoint, například přidáním vlastní karty na pás karet nebo vytvořením vlastního podokna úloh. Další informace najdete v tématu [přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md).
 
-- Sestavování a ladění doplňků VSTO pro PowerPoint. Další informace najdete v tématu [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).
+- Sestavování a ladění doplňků VSTO pro PowerPoint Další informace najdete v tématu [sestavování řešení pro systém Office](../vsto/building-office-solutions.md).
 
-- Nasazení doplňků VSTO pro PowerPoint. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).
+- Nasazují se doplňky VSTO pro PowerPoint. Další informace najdete v tématu [nasazení řešení pro Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Viz také:
-- [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)
-- [Řešení pro aplikaci PowerPoint](../vsto/powerpoint-solutions.md)
+- [Programové doplňky VSTO](../vsto/programming-vsto-add-ins.md)
+- [Řešení aplikace PowerPoint](../vsto/powerpoint-solutions.md)
 - [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)
-- [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)
-- [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)
+- [Sestavování řešení pro systém Office](../vsto/building-office-solutions.md)
+- [Nasazení řešení pro systém Office](../vsto/deploying-an-office-solution.md)
 - [Přehled šablon projektů Office](../vsto/office-project-templates-overview.md)

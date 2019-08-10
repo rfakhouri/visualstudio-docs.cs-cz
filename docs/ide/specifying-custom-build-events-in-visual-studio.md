@@ -11,18 +11,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416732"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918900"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Určení vlastních událostí sestavení v sadě Visual Studio
 
 Zadání vlastního sestavení události, můžete automaticky spustit příkazy před zahájením sestavení nebo po jejím dokončení. Například můžete spustit *.bat* souborů před spuštěním sestavení nebo zkopírujte nové soubory do složky, po dokončení sestavení. Události sestavení spustit pouze v případě, že se sestavení úspěšně dosáhne těchto bodů v procesu sestavení.
 
- Konkrétní informace o programovacím jazyce, který používáte naleznete v následujících tématech:
+Konkrétní informace o programovacím jazyce, který používáte naleznete v následujících tématech:
 
 - Visual Basic--[postupy: Zadejte události sestavení (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
@@ -34,7 +34,7 @@ Zadání vlastního sestavení události, můžete automaticky spustit příkazy
 
 Události sestavení, postupujte podle stejné syntaxe jako DOS příkazy, ale makra můžete jednoduše vytvořit události sestavení. Seznam dostupných maker naleznete v tématu [dialogové okno Příkazový řádek události před sestavením události/po sestavení](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
- Nejlepších výsledků dosáhnete postupujte podle těchto formátování tipy:
+Nejlepších výsledků dosáhnete postupujte podle těchto formátování tipy:
 
 - Přidat `call` příkaz před všechny události, na kterých běží sestavení *.bat* soubory.
 

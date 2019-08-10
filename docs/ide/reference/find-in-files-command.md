@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5549bd0047b38ef8f0dff5fa420d4b5ce0ae4ce9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2877057f32ba6553a2cdcefbbc1bb7a8bf2884da
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790258"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919257"
 ---
 # <a name="find-in-files-command"></a>Najít v souborech – příkaz
-Hledání souborů pomocí některé podsady z možností, které jsou k dispozici na **najít v souborech** karty **najít a nahradit** okna.
+Vyhledejte soubory pomocí podmnožiny možností dostupných na kartě **najít v souborech** okna **Najít a nahradit** .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -32,39 +32,53 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ```
 
 ## <a name="arguments"></a>Arguments
- `findwhat` Povinné. Text tak, aby odpovídaly.
+
+`findwhat`\
+Povinný parametr. Text, který se má shodovat.
 
 ## <a name="switches"></a>Přepínače
- /Case nebo /c volitelné. Odpovídá dojde pouze v případě, že velká a malá písmena přesně odpovídá platformám zadaným v `findwhat` argument.
+/Case nebo/c\
+Volitelné. Shody se objeví pouze v případě, že velká a malá písmena přesně odpovídají znakům zadaným v `findwhat` argumentu.
 
- /ext: `extensions` Volitelné. Určuje rozšíření souboru pro soubory k prohledání. Pokud není zadán, používá předchozí rozšíření, pokud dříve bylo zadáno.
+rozšířeného`extensions`\
+Volitelné. Určuje přípony souborů pro soubory, které mají být prohledány. Pokud není zadaný, použije se předchozí rozšíření, pokud se dřív zadal.
 
- /lookin: `searchpath` Volitelné. Adresář pro hledání. Pokud cesta obsahuje mezery, uzavřete do uvozovek celou cestu.
+oblasthledání`searchpath`\
+Volitelné. Adresář, který chcete vyhledat. Pokud cesta obsahuje mezery, uzavřete celou cestu do uvozovek.
 
- /Names nebo /n volitelné. Zobrazí seznam názvů souborů, které obsahují shody.
+/Names nebo/n\
+Volitelné. Zobrazí seznam názvů souborů, které obsahují shody.
 
- / Options nebo /t volitelné. Zobrazí seznam aktuální nastavení možnosti hledání a nebude provádět vyhledávání.
+/Options nebo/T\
+Volitelné. Zobrazí seznam aktuálních nastavení možností hledání a neprovádí hledání.
 
- /Regex nebo /r volitelné. Používá předdefinované speciální znaky v `findwhat` argument jako zápisy, které představují vzorů textu spíše než literálními znaky. Úplný seznam znaky regulárního výrazu, naleznete v tématu [regulární výrazy](../../ide/using-regular-expressions-in-visual-studio.md).
+/Regex nebo/r\
+Volitelné. Používá předem definované speciální znaky v `findwhat` argumentu jako notace, které reprezentují vzory textu, nikoli literální znaky. Úplný seznam znaků regulárních výrazů naleznete v tématu [regulární výrazy](../../ide/using-regular-expressions-in-visual-studio.md).
 
- / Reset nebo /e volitelné. Vrátí možnosti hledání na jejich výchozí nastavení a nebude provádět vyhledávání.
+/Reset po vyčištění nebo/e\
+Volitelné. Vrátí možnosti hledání do jejich výchozího nastavení a neprovádí hledání.
 
- / stop volitelné. Zastaví aktuální operace vyhledávání, pokud je v průběhu. Hledání ignoruje všechny argumenty při `/stop` nebyl zadán. Například chcete-li ukončit aktuální hledání zadáte následující:
+/stop
+Volitelné. Zastaví aktuální operaci hledání, pokud právě probíhá. Při hledání se ignorují všechny `/stop` ostatní argumenty, pokud je zadaný. Pokud například chcete zastavit aktuální hledání, zadejte následující:
 
 ```cmd
 >Edit.FindinFiles /stop
 ```
 
- / Sub nebo /s volitelné. Vyhledá podsložky v adresáři uvedeném na /lookin:`searchpath` argument.
+/Sub nebo/s\
+Volitelné. Vyhledá podsložky v adresáři zadaném v argumentu/Lookin:`searchpath` .
 
- /Text2 nebo /2 volitelné. Výsledky hledání se zobrazí v okně Najít výsledky 2.
+/Text2 nebo/2 \
+Volitelné. Zobrazí výsledky hledání v okně výsledky hledání 2.
 
- /Wild nebo /l volitelné. Používá předdefinované speciální znaky v `findwhat` argument jako zápisy představující znak nebo posloupnost znaků.
+/Wild nebo/l\
+Volitelné. Používá předdefinované speciální znaky v `findwhat` argumentu jako notace, které reprezentují znak nebo sekvenci znaků.
 
- lze nebo /w volitelné. Vyhledá pouze celá slova.
+/Word nebo/W\
+Volitelné. Vyhledává pouze celá slova.
 
 ## <a name="example"></a>Příklad
- Tento příklad vyhledá btnCancel ve všech souborech .cls umístěný ve složce "My projektů sady Visual Studio" a zobrazí informace o shodu v okně Najít výsledky 2.
+Tento příklad vyhledá btnCancel ve všech souborech. CLS umístěných ve složce Moje projekty sady Visual Studio a v okně výsledky hledání 2 zobrazí informace o shodě.
 
 ```cmd
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2

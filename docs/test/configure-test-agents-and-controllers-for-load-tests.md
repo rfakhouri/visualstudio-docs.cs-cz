@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461618"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918373"
 ---
-# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Přehled testovacích agentů a testovacích kontrolérů ke spouštění zátěžových testů
+# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Přehled testovacích agentů a testovacích kontrolérů pro spouštění zátěžových testů
 
 Visual Studio může generovat simulované zatížení pro vaši aplikaci s využitím fyzických nebo virtuálních počítačů. Tyto počítače musíte nastavit jako jediný testovací kontrolér a jeden nebo více testovacích agentů. Testovací kontrolér a testovací agenty můžete použít k vygenerování větší zátěže, než jeden počítač můžete vygenerovat samostatně.
 
@@ -41,17 +41,17 @@ Tato architektura přináší následující výhody:
 
    **Místní konfigurace:**
 
-  - Machine1: Visual Studio, kontrolér, agent.
+  - Machine1: Visual Studio, Controller, agent.
 
     ![Místní počítače pomocí řadiče a agentů](./media/load-test-configa.png)
 
     **Typická Vzdálená konfigurace:**
 
-  - Počítač 1 a 2: Visual Studio (více testerů může používat stejný kontrolér).
+  - Machine1 a 2: Visual Studio (více testerů může používat stejný kontroler).
 
-  - Machine3: Kontrolér (může mít nainstalovány také agenty).
+  - Machine3: Kontroler (může mít také nainstalované agenty).
 
-  - Machine4-n: Agent nebo agenty přidružené ke kontroleru na počítač 3.
+  - Machine4-n: Agenti nebo agenti přidružení k řadiči v Machine3.
 
     ![Vzdálené počítače pomocí řadiče a agentů](./media/load-test-configb.png)
 
@@ -69,17 +69,17 @@ Testovací kontrolér poskytuje obecnou architekturu pro spouštění testů a z
 
 Testovací agent je spouštěn jako služba, která naslouchá požadavkům testovacího kontroléru na spuštění nového testu. Když testovací agent obdrží žádost, služba testovacího agentu spustí proces, na kterém chcete spustit testy. Každý testovací agent spouští stejný zátěžový test.
 
- Testovacím agentům je správcem přiřazována váha a zátěž je přerozdělena dle váhy jednotlivých agentů. Pokud má například testovací agent 1 váhu 30 a testovací agent 2 váhu 70, přičemž je zátěž nastavena na 1000 uživatelů, testovací agent 1 simuluje 300 virtuálních uživatelů, zatímco testovací agent 2 jich simuluje 700. Zobrazit [Správa testovacích kontrolérů a testovacích agentů v sadě Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+Testovacím agentům je správcem přiřazována váha a zátěž je přerozdělena dle váhy jednotlivých agentů. Pokud má například testovací agent 1 váhu 30 a testovací agent 2 váhu 70, přičemž je zátěž nastavena na 1000 uživatelů, testovací agent 1 simuluje 300 virtuálních uživatelů, zatímco testovací agent 2 jich simuluje 700. Zobrazit [Správa testovacích kontrolérů a testovacích agentů v sadě Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
- Testovací agent přijímá jako vstup sadu testů a sadu parametrů simulace. Klíčovým konceptem je, že platí bez ohledu na počítači, kde budete spouštět testy.
+Testovací agent přijímá jako vstup sadu testů a sadu parametrů simulace. Klíčovým konceptem je, že platí bez ohledu na počítači, kde budete spouštět testy.
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>Testovací kontrolér a testovací agent spojovacích bodů
 
 Následující obrázek znázorňuje spojovací body mezi testovacím kontrolérem, testovacím agentem a klientem. Poskytuje přehled o používaných portech pro příchozí a odchozí připojení, jakož i omezení zabezpečení použité na těchto portech.
 
- ![Testovací kontrolér a testovací agent portů a zabezpečení](./media/test-controller-agent-firewall.png)
+![Testovací kontrolér a porty a zabezpečení testovacího agenta](./media/test-controller-agent-firewall.png)
 
- Další informace najdete v části [konfigurace portů pro testovací kontrolery a testovací agenty](../test/configure-ports-for-test-controllers-and-test-agents.md).
+Další informace najdete v části [konfigurace portů pro testovací kontrolery a testovací agenty](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
 ## <a name="test-controller-and-agent-installation-information"></a>Informace o instalaci řadiče a agentů testu
 

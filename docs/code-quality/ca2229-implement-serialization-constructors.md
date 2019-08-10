@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2353c342b38a9dca42500c8997dcebb03137c91c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11dfa98bb348f874a2774454cc465fb80cb71750
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806580"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920168"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229: Implementujte serializační konstruktory
 
@@ -28,33 +28,33 @@ ms.locfileid: "62806580"
 |TypeName|ImplementSerializationConstructors|
 |CheckId|CA2229|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
- Tento typ implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> rozhraní, delegáta nebo rozhraní a je splněna jedna z následujících podmínek:
+## <a name="cause"></a>příčina
+Typ implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> rozhraní, není delegát nebo rozhraní a jedna z následujících podmínek je pravdivá:
 
-- Typ nemá konstruktor, který přijímá <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objektu a <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objektu (podpis serializace konstruktoru).
+- Typ nemá konstruktor, který přebírá <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objekt <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> a objekt (signatura konstruktoru serializace).
 
-- Typ nezapečetěná a modifikátor přístupu pro jeho Serializační konstruktor není chráněné (řady).
+- Typ je nezapečetěný a modifikátor přístupu pro svůj Serializační konstruktor není chráněný (Family).
 
-- Typ je zapečetěná a modifikátor přístupu pro jeho Serializační konstruktor není soukromý.
+- Typ je zapečetěný a modifikátor přístupu pro svůj Serializační konstruktor není privátní.
 
 ## <a name="rule-description"></a>Popis pravidla
- Toto pravidlo platí pro typy, které podporují vlastní serializace. Typ podporuje vlastní serializace v případě, že implementuje <xref:System.Runtime.Serialization.ISerializable> rozhraní. Serializační konstruktor je potřeba deserializovat, nebo znovu vytvořit objekty, které byl serializován pomocí <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metody.
+Toto pravidlo je relevantní pro typy, které podporují vlastní serializaci. Typ podporuje vlastní serializaci, pokud implementuje <xref:System.Runtime.Serialization.ISerializable> rozhraní. Konstruktor serializace je vyžadován k deserializaci nebo opětovnému vytvoření objektů, které byly serializovány pomocí <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metody.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Implementací konstruktoru serializace se vyřeší porušení tohoto pravidla. Pro zapečetěnou třídu musí být konstruktor soukromý. V ostatních případech musí být chráněný.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Implementací konstruktoru serializace se vyřeší porušení tohoto pravidla. Pro zapečetěnou třídu musí být konstruktor soukromý. V ostatních případech musí být chráněný.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte porušení tohoto pravidla. Typ nesmí být deserializaci a nebude fungovat v mnoha scénářích.
+Potlačit porušení pravidla Typ nebude deserializovatelný a nebude fungovat v mnoha scénářích.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ, který splňuje pravidlo.
+Následující příklad ukazuje typ, který splňuje pravidlo.
 
- [!code-csharp[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]
+[!code-csharp[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA2237: Označte typy ISerializable pomocí SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+[CA2237: Označte typy ISerializable pomocí SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>Viz také:
 

@@ -13,25 +13,25 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b94bd5dc40102bce073e42302e92b737b4e8b0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c7adb310db9eece1d8d4a2881057cc1acde1062
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825224"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923820"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Určení, kdy a kde se má poznámka použít
-Po podmíněné Poznámka se může vyžadovat další poznámky a určit, že analyzátor.  Například pokud je funkce, které mohou být synchronní nebo asynchronní proměnné, funkce se chová takto: V případě synchronní je vždy nakonec úspěšná, ale v případě asynchronní oznámí chybu Pokud nemůže být okamžitě úspěšná. Když je zavolána funkce synchronně, kontrolou hodnoty výsledku poskytuje převáděná hodnota analyzátor kódu, protože nebude mít vrátil.  Když je tato funkce volána asynchronně a výsledek funkce není povolená, může dojít k závažné chybě. Tento příklad ukazuje situaci, ve kterém můžete použít `_When_` anotace – je popsáno dále v tomto článku – Povolení kontroly.
+Pokud je Poznámka podmíněná, může vyžadovat další poznámky k určení tohoto analyzátoru.  Například pokud má funkce proměnnou, která může být buď synchronní, nebo asynchronní, funkce se chová takto: V případě synchronního případu to vždy proběhne úspěšně, ale v asynchronním případě hlásí chybu, pokud nemůže být okamžitě úspěšná. Pokud je funkce volána synchronně, kontrola hodnoty výsledku neposkytne analyzátoru kódu žádnou hodnotu, protože by nebyla vrácena.  Nicméně pokud je funkce volána asynchronně a výsledek funkce není kontrolován, může dojít k závažné chybě. Tento příklad znázorňuje situaci, ve které byste mohli použít `_When_` anotaci popsanou dále v tomto článku – Chcete-li povolit kontrolu.
 
 ## <a name="structural-annotations"></a>Strukturální poznámky
- Pokud chcete řídit, kdy a kde použít poznámky, použití následující strukturální anotací.
+Chcete-li určit, kdy a kde se poznámky vztahují, použijte následující strukturální poznámky.
 
 |Poznámka|Popis|
 |----------------|-----------------|
-|`_At_(expr, anno-list)`|`expr` je výraz, jehož výsledkem jsou l-hodnota. Poznámky v `anno-list` aplikují i na objekt, který je pojmenován podle `expr`. Pro jednotlivé poznámky v `anno-list`, `expr` interpretována v předběžné podmínce, pokud anotace je interpretován v předběžné podmínce, a pokud podmínka po Poznámka je interpretován po stavu.|
-|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` je výraz, jehož výsledkem jsou l-hodnota. Poznámky v `anno-list` aplikují i na objekt, který je pojmenován podle `expr`. Pro jednotlivé poznámky v `anno-list`, `expr` interpretována v předběžné podmínce, pokud anotace je interpretován v předběžné podmínce, a pokud podmínka po Poznámka je interpretován po stavu.<br /><br /> `iter` je název proměnné, která působí na poznámku (inclusive z `anno-list`). `iter` má implicitní typ `long`. Ze zkušební verze jsou skryté identicky pojmenovanou proměnné v ohraničujícím oboru.<br /><br /> `elem-count` je výraz vyhodnocen jako celé číslo.|
-|`_Group_(anno-list)`|Poznámky v `anno-list` jsou všechny považovány za jakékoli kvalifikátor, které platí pro skupiny anotace, které platí pro jednotlivé poznámky.|
-|`_When_(expr, anno-list)`|`expr` je výraz, který lze převést na `bool`. Když je nenulová (`true`), poznámky, které jsou určené v `anno-list` jsou považovány za použít.<br /><br /> Ve výchozím nastavení pro jednotlivé poznámky v `anno-list`, `expr` je interpretován jako pomocí vstupní hodnoty, pokud anotace je předpokladem a Poznámka pomocí výstupní hodnoty, pokud je po podmínku. Chcete-li přepsat výchozí nastavení, můžete použít `_Old_` vnitřní při vyhodnocení po podmínky k označení, že má být použit vstupní hodnoty. **Poznámka:**  Různé poznámek může povolit následkem pomocí `_When_` Pokud proměnlivé hodnoty – například `*pLength`– je zahrnuta, protože Vyhodnocená výsledek `expr` v předběžné podmínce může lišit od jeho Vyhodnocená výsledek v podmínce po.|
+|`_At_(expr, anno-list)`|`expr`je výraz, který vrací lvalue. Poznámky v `anno-list` jsou aplikovány na objekt, který je `expr`pojmenován. Pro každou anotaci `anno-list`v `expr` je interpretována v předběžné podmínce, pokud je Poznámka interpretována v předběžné podmínce, a v případě, že je Poznámka interpretována v podmínkách post.|
+|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr`je výraz, který vrací lvalue. Poznámky v `anno-list` jsou aplikovány na objekt, který je `expr`pojmenován. Pro každou anotaci `anno-list`v `expr` je interpretována v předběžném stavu, pokud je Poznámka interpretována v předběžné podmínce, a v případě, že je Poznámka interpretována v podmínkách post.<br /><br /> `iter`je název proměnné, která je vymezena na anotaci (včetně `anno-list`). `iter`má implicitní typ `long`. Identicky pojmenované proměnné v jakémkoli ohraničujícím oboru jsou ze hodnocení skryté.<br /><br /> `elem-count`je výraz, který je vyhodnocen jako celé číslo.|
+|`_Group_(anno-list)`|Poznámky v `anno-list` jsou všechny považované za všechny kvalifikátory, které se vztahují k poznámce skupiny, která se používá u každé poznámky.|
+|`_When_(expr, anno-list)`|`expr`je výraz, který lze převést na `bool`. Pokud je hodnota nenulová (`true`), poznámky, které jsou určeny v `anno-list` , jsou považovány za použitelné.<br /><br /> Ve výchozím nastavení je pro každou anotaci `expr` v `anno-list`, interpretován jako použití vstupních hodnot, pokud je Poznámka podmínkou, a jako výstupních hodnot, pokud je Poznámka podmínkou. Chcete-li přepsat výchozí hodnotu, můžete použít `_Old_` vnitřní při vyhodnocení podmínky post, aby označovala, že by měly být použity vstupní hodnoty. **Poznámka:**  Různé poznámky mohou být povoleny jako důsledek použití `_When_` , je-li zahrnuta proměnlivá hodnota ( `*pLength`například), `expr` protože vyhodnocený výsledek v předběžné podmínce se může lišit od vyhodnoceného výsledku v podmínkách post.|
 
 ## <a name="see-also"></a>Viz také
 

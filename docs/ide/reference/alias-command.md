@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 396db6e08da211a801361328416d97622ee3eac8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791841"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926343"
 ---
 # <a name="alias-command"></a>Alias – příkaz
-Vytvoří nový alias pro úplný příkaz, úplný příkaz a argumenty, nebo jiný alias.
+Vytvoří nový alias pro úplný příkaz, úplný příkaz a argumenty nebo jiný alias.
 
 > [!TIP]
-> Zadáním `>alias` bez argumentů zobrazí aktuální seznam aliasů a jejich definice.
+> Při `>alias` psaní bez argumentů se zobrazí aktuální seznam aliasů a jejich definice.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,36 +36,40 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
 ## <a name="arguments"></a>Arguments
- `aliasname` Volitelné. Název pro nový alias. Pokud není zadána žádná hodnota pro `aliasname`, zobrazí se seznam aktuálních aliasů a jejich definice.
+`aliasname`\
+Volitelné. Název nového aliasu Pokud není zadána žádná hodnota pro `aliasname`, zobrazí se seznam aktuálních aliasů a jejich definice.
 
- `aliasstring` Volitelné. Úplný název příkazu nebo existující alias a všechny parametry, které chcete vytvořit jako alias. Pokud není zadána žádná hodnota pro `aliasstring`, název aliasu a řetězec aliasu pro zadaný alias se zobrazí.
+`aliasstring`\
+Volitelné. Úplný název příkazu nebo existující alias a všechny parametry, které chcete vytvořit jako alias. Pokud není zadána žádná hodnota pro `aliasstring`, zobrazí se název aliasu a řetězec aliasu pro zadaný alias.
 
 ## <a name="switches"></a>Přepínače
- / DELETE nebo/del nebo /d volitelné. Odstraní určený alias a odebere ji z automatického dokončování.
+/Delete nebo/del nebo/D\
+Volitelné. Odstraní zadaný alias a odebere ho z automatického dokončování.
 
- / reset volitelné. Obnoví původní nastavení seznamu předdefinovaných aliasů. To znamená, že obnoví všechny předdefinované aliasy a odebere všechny aliasy definované uživatelem.
+/Reset po vyčištění
+Volitelné. Obnoví původní nastavení seznamu předem definovaných aliasů. To znamená, že obnoví všechny předdefinované aliasy a odstraní všechny aliasy definované uživatelem.
 
 ## <a name="remarks"></a>Poznámky
- Vzhledem k tomu, že aliasy představují příkazy, musí být umístěné na začátku příkazového řádku.
+Vzhledem k tomu, že aliasy představují příkazy, musí být umístěny na začátku příkazového řádku.
 
- Při vydávání tohoto příkazu byste měli zahrnout přepínače bezprostředně za příkaz, nikoli za aliasy, jinak bude přepínač samotný součástí řetězce aliasu.
+Při vydávání tohoto příkazu byste měli zahrnout přepínače hned za příkaz, nikoli za aliasy, jinak bude samotný přepínač zahrnut jako součást řetězce aliasu.
 
- `/reset` Přepínač žádá o potvrzení před aliasů. Neexistuje krátký tvar `/reset`.
+`/reset` Přepínač požádá o potvrzení před obnovením aliasů. Neexistuje žádná krátká forma `/reset`.
 
 ## <a name="examples"></a>Příklady
- Tento příklad vytvoří nový alias `upper`, pro kompletní příkaz Edit.MakeUpperCase.
+Tento příklad vytvoří nový alias `upper`, pro kompletní příkaz Edit. MakeUpperCase.
 
 ```cmd
 >Tools.Alias upper Edit.MakeUpperCase
 ```
 
- Tento příklad odstraní alias, `upper`.
+Tento příklad odstraní alias, `upper`.
 
 ```cmd
 >Tools.alias /delete upper
 ```
 
- Tento příklad zobrazuje seznam všech aktuálních aliasů a definic.
+Tento příklad zobrazuje seznam všech aktuálních aliasů a definic.
 
 ```cmd
 >Tools.Alias

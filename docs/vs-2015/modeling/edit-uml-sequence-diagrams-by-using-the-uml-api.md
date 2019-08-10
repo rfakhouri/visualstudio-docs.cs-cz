@@ -1,5 +1,5 @@
 ---
-title: Úpravy sekvenčních diagramů UML pomocí rozhraní API UML | Dokumentace Microsoftu
+title: Úprava sekvenčních diagramů UML pomocí rozhraní API UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,245 +11,246 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0bebbb4e6dfe25ce9834595be11aad0fd1f1ba0
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442960"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871874"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Úpravy sekvenčních diagramů UML pomocí rozhraní API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Interakce je posloupnost zpráv mezi sadu životností. Interakce se zobrazí v sekvenčním diagramu UML.  
-  
- Úplné podrobnosti o rozhraní API najdete v části <xref:Microsoft.VisualStudio.Uml.Interactions?displayProperty=fullName>.  
-  
- Další obecné Úvod k psaní příkazů a obslužné rutiny gesta pro UML diagramů naleznete v tématu [definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
-  
-## <a name="basic-code"></a>Základní kód  
-  
-### <a name="namespace-imports"></a>Importuje Namespace  
- Musí zahrnovat následující `using` příkazy:  
-  
-```  
-using Microsoft.VisualStudio.Uml.Classes;  
-   // for basic UML types such as IPackage  
-using Microsoft.VisualStudio.Uml.Interactions;  
-   // for interaction types  
-using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
-   // to create elements and use additional functions  
-```  
-  
- Pokud vytváříte příkazy a obslužnými rutinami gest, budete také potřebovat:  
-  
-```  
-using System.ComponentModel.Composition;   
-   // for Import and Export  
-using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
-   // for ICommandExtension  
-using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
-   // for diagrams and context  
-```  
-  
- Další informace najdete v tématu [definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
-  
-### <a name="getting-the-context"></a>Získání kontextu  
- Pokud upravujete interakce v rámci obslužné rutiny příkazu nebo gesta v sekvenčním diagramu, můžete získat odkaz na kontextu. Příklad:  
-  
-```  
-[SequenceDesignerExtension]  
-[Export(typeof(ICommandExtension))]    
-public class MySequenceDiagramCommand : ICommandExtension  
-{  
-    [Import]  
-    public IDiagramContext Context { get; set; }  
-    public void QueryStatus (IMenuCommand command)  
-    {  
-      ISequenceDiagram sequenceDiagram =   
-          Context.CurrentDiagram as ISequenceDiagram;  
-         ...  
-```  
-  
-### <a name="generated-and-uml-sequence-diagrams"></a>Generuje a diagramů UML pořadí  
- Existují dva druhy sekvenční diagramy: ty, které jsou ručně vytvořeny v projektu modelování UML a ty, které byly generovány z programového kódu. Použití `UmlMode` vlastnost ke zjišťování, které sekvence diagramu můžete mít.  
-  
+Interakce je posloupnost zpráv mezi sadou životností. Interakce se zobrazí v sekvenčním diagramu UML.
+
+ Úplné podrobnosti o rozhraní API naleznete v tématu [Microsoft. VisualStudio. Uml. interakcí](/previous-versions/dd493373(v=vs.140)).
+
+ Obecnější Úvod do psaní příkazů a obslužných rutin gest pro diagramy UML najdete v tématu věnovaném [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+
+## <a name="basic-code"></a>Základní kód
+
+### <a name="namespace-imports"></a>Importy oboru názvů
+ Je nutné zahrnout následující `using` příkazy:
+
+```
+using Microsoft.VisualStudio.Uml.Classes;
+   // for basic UML types such as IPackage
+using Microsoft.VisualStudio.Uml.Interactions;
+   // for interaction types
+using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;
+   // to create elements and use additional functions
+```
+
+ Pokud vytváříte příkazy nabídky a obslužné rutiny gest, budete také potřebovat:
+
+```
+using System.ComponentModel.Composition;
+   // for Import and Export
+using Microsoft.VisualStudio.Modeling.ExtensionEnablement;
+   // for ICommandExtension
+using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
+   // for diagrams and context
+```
+
+ Další informace najdete v tématu [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+
+### <a name="getting-the-context"></a>Získání kontextu
+ Pokud upravujete interakci jako součást obslužné rutiny příkazu nebo gesta v sekvenčním diagramu, můžete získat odkaz na kontext. Příklad:
+
+```
+[SequenceDesignerExtension]
+[Export(typeof(ICommandExtension))]
+public class MySequenceDiagramCommand : ICommandExtension
+{
+    [Import]
+    public IDiagramContext Context { get; set; }
+    public void QueryStatus (IMenuCommand command)
+    {
+      ISequenceDiagram sequenceDiagram =
+          Context.CurrentDiagram as ISequenceDiagram;
+         ...
+```
+
+### <a name="generated-and-uml-sequence-diagrams"></a>Vygenerované a sekvenční diagramy UML
+ Existují dva druhy sekvenčních diagramů: ty, které jsou ručně vytvořeny v projektu modelování UML, a ty, které byly generovány z programového kódu. `UmlMode` Pomocí vlastnosti můžete zjistit, který sekvenční diagram máte.
+
 > [!NOTE]
-> Tato vlastnost vrátí hodnotu false pouze pro sekvenční diagramy generované z kódu pomocí sady Visual Studio 2013 nebo starší. To zahrnuje kód generovaný pořadí diagramy migrovat z 2013 a starší. Tato verze sady Visual Studio nepodporuje, generuje se nový sekvenční diagramy.  
-  
- Například, pokud chcete provést příkaz nabídky, která se zobrazí pouze na sekvenční diagramy UML pak bude `QueryStatus()` metoda může zahrnovat následující příkaz:  
-  
-```  
-command.Enabled = command.Visible =   
-      sequenceDiagram != null && sequenceDiagram.UmlMode;  
-```  
-  
- Na generovaného sekvenčního diagramu, životností, zpráv a další prvky jsou většinou stejné jako v sekvenčním diagramu UML. V modelu UML Model Store má kořenový adresář, který je Model, který vlastní všem ostatním prvkům. Ale v Store svůj vlastní Model, který má hodnotu null kořenové existuje generovaného interakce:  
-  
-```  
-IModel rootModel = sequenceDiagram.ModelStore.Root;  
-    // !sequenceDiagram.UmlMode == (rootModel == null)  
-```  
-  
-## <a name="to-create-and-display-an-interaction"></a>Vytvoření a zobrazení interakce  
- Vytvořte interakce jako podřízený objekt balíčku nebo modelu.  
-  
- Například pokud vyvíjíte příkaz, který může být proveden na prázdný sekvenční diagram, by měla vždy začnete tak, že zkontrolujete, jestli existuje interakce.  
-  
-```  
-public void Execute (IMenuCommand command)  
-{  
-    ISequenceDiagram sequenceDiagram =   
-         Context.CurrentDiagram as ISequenceDiagram;  
-    if (sequenceDiagram == null) return;  
-    // Get the diagram's interaction:  
-    IInteraction interaction = sequenceDiagram.Interaction;  
-    // A new sequence diagram might have no interaction:  
-    if (interaction == null)  
-    {  
-       // Get the home package or model of the diagram:  
-       IPackage parentPackage = sequenceDiagram.GetObject<IPackage>();  
-       interaction = parentPackage.CreateInteraction();  
-       // Display the interaction on the sequence diagram:  
-       sequenceDiagram.Bind(interaction);  
-    }   
-```  
-  
-## <a name="updating-an-interaction-and-its-layout"></a>Aktualizuje se interakce a její rozložení  
- Při aktualizaci interakci vždy ukončit operaci aktualizací rozložení pomocí jedné z následujících metod:  
-  
-- `ISequenceDiagram.UpdateShapePositions()` Upraví pozice tvary, které nedávno bylo vloženo nebo přesunout a jejich sousedních tvarů.  
-  
-- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` Překreslí celý diagram. Parametr slouží k určení přemístění životnosti nebo zprávy.  
-  
-  To je zvlášť důležité při vložení nových elementů nebo přesunout existující prvky. Nebudou do správné polohy v diagramu, dokud jste provedli jednu z těchto operací. Potřebujete pouze volání jednoho z těchto operací jednou na konci řady změn.  
-  
-  Chcete-li zabránit bemusing uživatel, který provádí vrácení zpět po příkazu, použijte `ILinkedUndoTransaction` uzavřete změny a finální `Layout()` nebo `UpdateShapePositions()` operace. Příklad:  
-  
-```  
-using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  
-{  
-  Interaction.CreateCombinedFragment(InteractionOperatorKind.Loop, messages);  
-  Diagram.UpdateShapePositions();  
-  transaction.Commit();  
-}  
-```  
-  
- Použití `ILinkedUndoTransaction`, je třeba tuto deklaraci ve své třídě:  
-  
-```  
-[Import] ILinkedUndoContext LinkedUndoContext { get; set; }  
-```  
-  
- Další informace najdete v tématu [UML propojení aktualizací modelů pomocí transakcí](../modeling/link-uml-model-updates-by-using-transactions.md).  
-  
-## <a name="building-an-interaction"></a>Vytváření interakce  
-  
-### <a name="to-create-lifelines"></a>Chcete-li vytvořit životnosti  
-  
-```  
-ILifeline lifeline = interaction.CreateLifeline();  
-```  
-  
- Životnost představuje umožňující připojení k elementu, to znamená, že instance typu. Například pokud interakce se používá k zobrazení, jak komponenty deleguje příchozí zprávy do jeho vnitřních částí, životnosti může představovat portů a součást:  
-  
-```  
-foreach (IConnectableElement part in   
-            component.Parts  
-           .Concat<IConnectableElement>(component.OwnedPorts))  
-{  
-   ILifeline lifeline = interaction.CreateLifeline();  
-   lifeline.Represents = part;  
-}  
-```  
-  
- Případně, pokud interakce ukazuje libovolného sadu objektů, můžete vytvořit vlastnost nebo jiné `IConnectableElement` interakce sama:  
-  
-```  
-ILifeline lifeline = interaction.CreateLifeline();  
-IProperty property1 = interaction.CreateProperty();  
-property1.Type = model.CreateInterface();  
-property1.Type.Name = "Type 1";  
-lifeline.Represents = property1;  
-```  
-  
- Jako další alternativu můžete nastavit název a typ životnosti bez odkazu na prvek umožňující připojení k:  
-  
-```  
-ILifeline lifeline = interaction.CreateLifeline();  
-lifeline.Name = "c1";  
-lifeline.SetInstanceType("Customer");  
-System.Diagnostics.Debug.Assert(  
-           lifeline.GetDisplayName() == "c1:Customer"  );  
-```  
-  
-### <a name="to-create-messages"></a>Chcete-li vytvořit zprávy  
- K vytvoření zprávy, musí identifikovat body vložení v rámci životnosti zdroj a cíl. Příklad:  
-  
-```  
-interaction.CreateMessage( sourceInsertionPoint,   
-                           targetInsertionPoint,   
-                           MessageKind.Complete,   
-                           MessageSort.ASynchCall)  
-```  
-  
- K vytvoření zprávy, která má Nedefinovaný zdroj nebo cíl nedefinované:  
-  
-```  
-interaction.CreateLostFoundMessage(MessageKind.Found, insertionPoint);  
-```  
-  
- Existuje několik zpráv, které vám umožní identifikovat body vložení vůbec klíčové body na životnost:  
-  
-|Metoda ILifeline|Použijte ho k vložení v tomto okamžiku|  
-|-------------------------|------------------------------------|  
-|`FindInsertionPointAtTop()`|Horní životnost.|  
-|`FindInsertionPointAtBottom()`|Konec životnosti.|  
-|`FindInsertionPointAfterMessage`<br /><br /> `(IMessage previous)`|Bod okamžitě po určenou zprávu.|  
-|`FindInsertionPointAfterExecutionSpecification`<br /><br /> `(IExecutionSpecification previous)`|Bod může být na životnost, nebo na nadřazený blok specifikace spuštění.|  
-|`FindInsertionPointAfterInteractionUse`<br /><br /> `(IInteractionUse previous)`|Bod, následující použitím interakce.|  
-|`FindInsertionPointAfterCombinedFragment`<br /><br /> `(ICombinedFragment previous)`|Bod, následující Fragment kombinovat.|  
-|`FindInsertionPoint(IExecutionSpecification block)`|Na začátek bloku spuštění.|  
-|`FindInsertionPoint(IInteractionOperand fragment)`|Horní operand kombinovaného fragmentu.|  
-  
- Při vytváření zprávy, pečlivě Vyhněte se definování zprávu, která by překřížila další zprávu.  
-  
-### <a name="to-create-combined-fragments-and-interaction-uses"></a>Vytvoření kombinované fragmenty a interakce používá  
- Kombinované fragmenty a interakce používá můžete vytvořit tak, že určíte bod vložení na každé životnosti, musí být pokryté komponentami elementu. Snažte se vyhnout zadávání sadu body, které by překřížila existující zprávu nebo fragment.  
-  
-```  
-Interaction.CreateCombinedFragment(InteractionOperatorKind.Loop,   
-  Interaction.Lifelines.Select(lifeline => lifeline.FindInsertionPointAtTop()));  
-Interaction.CreateInteractionUse(  
-  Interaction.Lifelines.Select(lifeline => lifeline.FindInsertionPointAtTop()));  
-```  
-  
- Můžete také vytvořit kombinovaného fragmentu, která zahrnuje existující sadu zpráv. Všechny zprávy musí zdroj na stejné životnosti nebo provedení bloku.  
-  
-```  
-ICombinedFragment cf = Interaction.CreateCombinedFragment(  
-  InteractionOperatorKind.Loop,  
-  Interaction.Lifelines.First().GetAllOutgoingMessages());  
-```  
-  
- Do kombinovaného fragmentu je vytvořen vždy pomocí jediného operandu. K vytvoření nové operandu, je nutné zadat existující operand, který chcete vložit před nebo po a zda chcete vložit za něj nebo před ní:  
-  
-```  
-// Create an additional operand before the first  
-cf.CreateInteractionOperand(cf.Operands.First(), false);  
-// Create an additional operand after the last:  
-cf.CreateInteractionOperand(cf.Operands.Last(), true);  
-```  
-  
-## <a name="troubleshooting"></a>Poradce při potížích  
- Obrazce se zobrazí v nesprávné pozici v případě změny nebyly dokončeny s `UpdateShapePositions()` nebo `Layout()` operace.  
-  
- Většina jiných problémy jsou způsobené právě chybně zarovnaných, tak, aby nové zprávy nebo fragmenty byste museli překřížila ostatní body vložení. Příznaky může být, že je provedena žádná změna, nebo dojde k výjimce. Nemusí být vyvolána výjimka, dokud `UpdateShapePositions()` nebo `Layout()` proběhlo.  
-  
-## <a name="see-also"></a>Viz také  
- <xref:Microsoft.VisualStudio.Uml.Interactions?displayProperty=fullName>   
- [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)   
- [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
- [Definování vlastní položky sady nástrojů pro modelování](../modeling/define-a-custom-modeling-toolbox-item.md)   
- [Definování omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)   
- [Programování pomocí rozhraní API UML](../modeling/programming-with-the-uml-api.md)
+> Tato vlastnost vrátí hodnotu false pouze pro sekvenční diagramy vygenerované z kódu pomocí Visual Studio 2013 a předchozích. To zahrnuje sekvenční diagramy generované kódem z 2013 a starších verzí. Tato verze sady Visual Studio nepodporuje generování nových sekvenčních diagramů.
+
+ Například pokud chcete vytvořit příkaz nabídky, který je viditelný pouze v sekvenčních diagramech UML, `QueryStatus()` může metoda zahrnovat následující příkaz:
+
+```
+command.Enabled = command.Visible =
+      sequenceDiagram != null && sequenceDiagram.UmlMode;
+```
+
+ U generovaného sekvenčního diagramu jsou životnosti, zprávy a další prvky většinou stejné jako u sekvenčního diagramu UML. V modelu UML má úložiště modelu kořen, což je model, který je vlastníkem všech ostatních prvků. Ale vytvořená interakce existuje ve vlastním úložišti modelu, které má kořen null:
+
+```
+IModel rootModel = sequenceDiagram.ModelStore.Root;
+    // !sequenceDiagram.UmlMode == (rootModel == null)
+```
+
+## <a name="to-create-and-display-an-interaction"></a>Vytvoření a zobrazení interakce
+ Vytvořte interakci jako podřízenou položku balíčku nebo modelu.
+
+ Například při vývoji příkazu, který může být proveden v prázdném sekvenčním diagramu, byste měli vždy začít tím, že zkontrolujete, zda interakce existuje.
+
+```
+public void Execute (IMenuCommand command)
+{
+    ISequenceDiagram sequenceDiagram =
+         Context.CurrentDiagram as ISequenceDiagram;
+    if (sequenceDiagram == null) return;
+    // Get the diagram's interaction:
+    IInteraction interaction = sequenceDiagram.Interaction;
+    // A new sequence diagram might have no interaction:
+    if (interaction == null)
+    {
+       // Get the home package or model of the diagram:
+       IPackage parentPackage = sequenceDiagram.GetObject<IPackage>();
+       interaction = parentPackage.CreateInteraction();
+       // Display the interaction on the sequence diagram:
+       sequenceDiagram.Bind(interaction);
+    }
+```
+
+## <a name="updating-an-interaction-and-its-layout"></a>Aktualizace interakce a jejího rozložení
+ Když aktualizujete interakci, vždy ukončete operaci tím, že aktualizujete její rozložení, a to pomocí jedné z následujících metod:
+
+- `ISequenceDiagram.UpdateShapePositions()`upraví pozice tvarů, které byly nedávno vloženy nebo přesunuty, a jejich sousední obrazce.
+
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])`překreslí celý diagram. Parametr můžete použít k určení přemístění životností, zpráv nebo obojího.
+
+  To je obzvláště důležité, pokud vložíte nové prvky nebo přesunete existující prvky. Dokud neprovedete jednu z těchto operací, nebudou ve správném umístění v diagramu. Jednu z těchto operací je třeba volat pouze jednou na konci řady změn.
+
+  Chcete-li se vyhnout bemusing uživateli, který po příkazu provede vrácení akce zpět `ILinkedUndoTransaction` , použijte k uzavření svých změn a `UpdateShapePositions()` finálních `Layout()` operací. Příklad:
+
+```
+using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
+{
+  Interaction.CreateCombinedFragment(InteractionOperatorKind.Loop, messages);
+  Diagram.UpdateShapePositions();
+  transaction.Commit();
+}
+```
+
+ Chcete-li `ILinkedUndoTransaction`použít, je nutné provést tuto deklaraci ve třídě:
+
+```
+[Import] ILinkedUndoContext LinkedUndoContext { get; set; }
+```
+
+ Další informace najdete v tématu [propojení aktualizací modelů UML pomocí transakcí](../modeling/link-uml-model-updates-by-using-transactions.md).
+
+## <a name="building-an-interaction"></a>Sestavování interakce
+
+### <a name="to-create-lifelines"></a>Vytvoření životností
+
+```
+ILifeline lifeline = interaction.CreateLifeline();
+```
+
+ Životnost představuje element s připojením, to znamená instance typu. Například pokud je interakce použita k zobrazení, jak komponenta deleguje příchozí zprávy do svých vnitřních částí, životnosti mohou představovat porty a části komponenty:
+
+```
+foreach (IConnectableElement part in
+            component.Parts
+           .Concat<IConnectableElement>(component.OwnedPorts))
+{
+   ILifeline lifeline = interaction.CreateLifeline();
+   lifeline.Represents = part;
+}
+```
+
+ Případně, pokud interakce zobrazuje libovolnou sadu objektů, můžete vytvořit vlastnost nebo jinou `IConnectableElement` v samotné interakci:
+
+```
+ILifeline lifeline = interaction.CreateLifeline();
+IProperty property1 = interaction.CreateProperty();
+property1.Type = model.CreateInterface();
+property1.Type.Name = "Type 1";
+lifeline.Represents = property1;
+```
+
+ Jako další alternativu můžete nastavit název a typ životnosti bez propojení s připojeným elementem:
+
+```
+ILifeline lifeline = interaction.CreateLifeline();
+lifeline.Name = "c1";
+lifeline.SetInstanceType("Customer");
+System.Diagnostics.Debug.Assert(
+           lifeline.GetDisplayName() == "c1:Customer"  );
+```
+
+### <a name="to-create-messages"></a>Vytvoření zpráv
+ Chcete-li vytvořit zprávu, je nutné identifikovat body vložení na zdrojovém a cílovém životnosti. Příklad:
+
+```
+interaction.CreateMessage( sourceInsertionPoint,
+                           targetInsertionPoint,
+                           MessageKind.Complete,
+                           MessageSort.ASynchCall)
+```
+
+ Chcete-li vytvořit zprávu s nedefinovaným zdrojem nebo nedefinovaným cílem:
+
+```
+interaction.CreateLostFoundMessage(MessageKind.Found, insertionPoint);
+```
+
+ K dispozici je několik zpráv, které můžete použít k identifikaci bodů vložení všech klíčových bodů na životnosti:
+
+|Metoda na ILifeline|Použít ho k vložení do tohoto bodu|
+|-------------------------|------------------------------------|
+|`FindInsertionPointAtTop()`|Horní část životnosti.|
+|`FindInsertionPointAtBottom()`|Dolní část životnosti.|
+|`FindInsertionPointAfterMessage`<br /><br /> `(IMessage previous)`|Bod hned za určenou zprávou.|
+|`FindInsertionPointAfterExecutionSpecification`<br /><br /> `(IExecutionSpecification previous)`|Bod může být buď na životnosti, nebo v nadřazeném bloku specifikace spuštění.|
+|`FindInsertionPointAfterInteractionUse`<br /><br /> `(IInteractionUse previous)`|Bod následující po použití interakce.|
+|`FindInsertionPointAfterCombinedFragment`<br /><br /> `(ICombinedFragment previous)`|Bod následující po kombinovaném fragmentu.|
+|`FindInsertionPoint(IExecutionSpecification block)`|Horní část bloku spuštění.|
+|`FindInsertionPoint(IInteractionOperand fragment)`|Horní část operandu kombinovaného fragmentu.|
+
+ Při vytváření zpráv se ujistěte, že nedefinujete zprávu, která by převzala jiné zprávy.
+
+### <a name="to-create-combined-fragments-and-interaction-uses"></a>Vytvoření kombinovaných fragmentů a použití interakce
+ Můžete vytvořit kombinované fragmenty a použití interakce zadáním kurzoru na každou životnost, která musí být pokryta elementem. Je nutné se vyhnout zadání množiny bodů, které by přebraly existující zprávu nebo fragment.
+
+```
+Interaction.CreateCombinedFragment(InteractionOperatorKind.Loop,
+  Interaction.Lifelines.Select(lifeline => lifeline.FindInsertionPointAtTop()));
+Interaction.CreateInteractionUse(
+  Interaction.Lifelines.Select(lifeline => lifeline.FindInsertionPointAtTop()));
+```
+
+ Můžete také vytvořit Kombinovaný fragment, který pokrývá existující sadu zpráv. Zprávy musí být všechny nasource ve stejném životnosti nebo bloku spuštění.
+
+```
+ICombinedFragment cf = Interaction.CreateCombinedFragment(
+  InteractionOperatorKind.Loop,
+  Interaction.Lifelines.First().GetAllOutgoingMessages());
+```
+
+ Kombinovaný fragment je vždy vytvořen s jedním operandem. Chcete-li vytvořit nový operand, je nutné zadat existující operand, který chcete vložit před nebo po, a zda chcete vložit po něm nebo před ním:
+
+```
+// Create an additional operand before the first
+cf.CreateInteractionOperand(cf.Operands.First(), false);
+// Create an additional operand after the last:
+cf.CreateInteractionOperand(cf.Operands.Last(), true);
+```
+
+## <a name="troubleshooting"></a>Poradce při potížích
+ Pokud nejsou změny dokončeny pomocí `UpdateShapePositions()` operace nebo `Layout()` , zobrazí se obrazce v nesprávných pozicích.
+
+ Většina ostatních problémů je způsobena chybně zarovnanými body vložení, takže nové zprávy nebo fragmenty by musely překračovat jiné. Je možné, že se neprovádí žádná změna nebo je vyvolána výjimka. Výjimka nemusí být vyvolána, `UpdateShapePositions()` dokud nebude provedena operace nebo. `Layout()`
+
+## <a name="see-also"></a>Viz také:
+
+- [Microsoft. VisualStudio. Uml. interakcí](/previous-versions/dd493373(v=vs.140))
+- [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)
+- [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+- [Definování vlastní položky sady nástrojů pro modelování](../modeling/define-a-custom-modeling-toolbox-item.md)
+- [Definování omezení ověřování pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)
+- [Programování pomocí rozhraní API UML](../modeling/programming-with-the-uml-api.md)

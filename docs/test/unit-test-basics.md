@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d129d823c662a96a2186ea24989922d4af7442
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 39e5529ae777fe1cee69e669ce20fb919eceb5ef
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661966"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925819"
 ---
 # <a name="unit-test-basics"></a>Základní informace o testování částí
 
@@ -263,7 +263,7 @@ V případě, že máte velký počet testů, můžete zadat **Průzkumník test
 |-|-|
 |![Tlačítko skupiny Průzkumníka testů](../test/media/ute_groupby_btn.png)|Chcete-li seskupit podle kategorie testů, zvolte **Group** tlačítko.|
 
-Další informace najdete v tématu [spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)
+Další informace najdete v tématu [spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md).
 
 ## <a name="qa"></a>FUNKCE Q &AMP; A
 

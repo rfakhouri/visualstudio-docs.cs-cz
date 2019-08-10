@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5599f111d6580f654436fdd2ff85f69f1329920d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0cd59ec30ce45c94ac3422c4271959d74073bff
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541633"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920054"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Zadejte metody deserializace pro nepovinná pole
 
@@ -31,37 +31,37 @@ ms.locfileid: "62541633"
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
- Typ má pole, která je označena pomocí <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> atribut a typ neposkytuje metody zpracování událostí rušení serializace.
+## <a name="cause"></a>příčina
+Typ obsahuje pole, které je označeno <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> atributem a typ neposkytuje metody zpracování událostí rušení serializace.
 
 ## <a name="rule-description"></a>Popis pravidla
- <xref:System.Runtime.Serialization.OptionalFieldAttribute> Atribut nemá žádný vliv na serializace, je serializována pole označená pomocí atributu. Ale pole se ignoruje u rušení serializace a zachová výchozí hodnotu přidruženou k jeho typu. Rušení serializace obslužné rutiny události by měly být deklarovány nastavit pole během rušení serializace.
+<xref:System.Runtime.Serialization.OptionalFieldAttribute> Atribut nemá žádný vliv na serializaci; pole označené atributem je serializováno. Pole je však ignorováno při zrušení serializace a zachovává výchozí hodnotu přidruženou k jeho typu. Obslužné rutiny události deserializace by měly být deklarovány pro nastavení pole během procesu rušení serializace.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, přidejte metody pro typ zpracování událostí rušení serializace.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, přidejte do typu metody zpracování událostí ve více serializacích.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla, je-li pole mají ignorovat během rušení serializace.
+V případě, že by mělo být pole během procesu rušení serializace ignorováno, je bezpečné potlačit upozornění od tohoto pravidla.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ volitelné pole a rušení serializace událostí obslužné metody.
+Následující příklad ukazuje typ s volitelnou metodou zpracování události v poli a deserializaci.
 
- [!code-csharp[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/CSharp/ca2239-provide-deserialization-methods-for-optional-fields_1.cs)]
- [!code-vb[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/VisualBasic/ca2239-provide-deserialization-methods-for-optional-fields_1.vb)]
+[!code-csharp[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/CSharp/ca2239-provide-deserialization-methods-for-optional-fields_1.cs)]
+[!code-vb[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/VisualBasic/ca2239-provide-deserialization-methods-for-optional-fields_1.vb)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA2236: Volání metody třídy base na typech ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+[CA2236: Volání metod třídy Base na typech ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
- [CA2240: Implementujte správně ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
+[CA2240: Správně implementovat ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
 
- [CA2229: Implementovat Serializační konstruktory](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229: Implementovat konstruktory serializace](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2238: Implementujte správně metody serializace](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+[CA2238: Implementujte správně metody serializace](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
- [CA2235: Označte všechna neserializovatelná pole](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+[CA2235: Označte všechna Neserializovatelný pole](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237: Označte typy ISerializable pomocí SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+[CA2237: Označte typy ISerializable pomocí SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2120: Zabezpečte Serializační konstruktory](../code-quality/ca2120-secure-serialization-constructors.md)
+[CA2120: Zabezpečené konstruktory serializace](../code-quality/ca2120-secure-serialization-constructors.md)

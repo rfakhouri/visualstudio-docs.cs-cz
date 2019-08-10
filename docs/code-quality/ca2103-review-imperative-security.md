@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2417266da44c4af38e37eb8e0f67ac13a5a7823e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acbb9d0127dd2ddb6668e72db8fa88124ec2b3c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808234"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921418"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103: Zkontrolujte imperativní zabezpečení
 
@@ -30,19 +30,19 @@ ms.locfileid: "62808234"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Metoda používá imperativní zabezpečení a může vytvářet oprávnění pomocí stavové informace nebo návratové hodnoty, která se může změnit, pokud je žádost aktivní.
+## <a name="cause"></a>příčina
+Metoda používá imperativní zabezpečení a může vytvářet oprávnění pomocí stavové informace nebo návratové hodnoty, která se může změnit, pokud je žádost aktivní.
 
 ## <a name="rule-description"></a>Popis pravidla
- Imperativní zabezpečení používá k určení oprávnění a akce zabezpečení při provádění kódu, ve srovnání s deklarativní zabezpečení, která využívá atributy pro uložení oprávnění a akcí v metadatech spravovaných objektů. Imperativní zabezpečení je velmi flexibilní, protože můžete nastavit stav objektu oprávnění a výběr akce zabezpečení pomocí informace, které nejsou k dispozici až do spuštění. Spolu s, která se dodává flexibilitu riziko, že informace o modulu runtime, který používáte k určení, že stav oprávnění nezůstávat beze změny, dokud akce je v platnosti.
+Imperativní zabezpečení používá spravované objekty k určení oprávnění a akcí zabezpečení během provádění kódu ve srovnání s deklarativním zabezpečením, které používá atributy k ukládání oprávnění a akcí v metadatech. Imperativní zabezpečení je velmi flexibilní, protože můžete nastavit stav objektu oprávnění a vybrat akce zabezpečení pomocí informací, které nejsou k dispozici, dokud nebudete mít čas spuštění. Společně s touto flexibilitou je riziko, že běhové informace, které použijete k určení stavu oprávnění, nezůstanou beze změny, dokud je tato akce platná.
 
- Používejte deklarativní zabezpečení vždy, když je to možné. Jsou Jednoduší na porozumění deklarativní požadavky.
+Používejte deklarativní zabezpečení vždy, když je to možné. Deklarativní požadavky je snazší pochopit.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Zkontrolujte požadavky imperativní zabezpečení, abyste měli jistotu, že stav oprávnění nevyžaduje informace, které můžete změnit tak dlouho, dokud se používá oprávnění.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Zkontrolujte imperativní požadavky zabezpečení a ujistěte se, že stav oprávnění nezávisí na informacích, které se mohou měnit, pokud je použito oprávnění.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla, je-li oprávnění nevyžaduje se měnícími daty. Je však lepší změnit imperativní požadavek na ekvivalentní deklarativní.
+Pokud se oprávnění nespoléhá na změnu dat, je bezpečné potlačit upozornění od tohoto pravidla. Je však lepší změnit imperativní požadavek na jeho deklarativní ekvivalent.
 
 ## <a name="see-also"></a>Viz také:
 

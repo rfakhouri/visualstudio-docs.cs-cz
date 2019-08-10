@@ -1,22 +1,22 @@
 ---
-title: Vytvoření Offline instalační program pro Visual Studio pro Mac
+title: Vytvoření offline instalačního programu
 description: ''
 author: asb3993
 ms.author: amburns
 ms.date: 11/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 5CA4B8C1-2D01-46EA-A6B2-8573B324509B
-ms.openlocfilehash: 168aad3aac59037c8f16be614db1ea4af847de2f
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 66835d6e983e9522dd7aab28670e747655a16029
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693052"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872106"
 ---
-# <a name="create-an-offline-installer-for-visual-studio-for-mac"></a>Vytvoření Offline instalační program pro Visual Studio pro Mac
+# <a name="create-an-offline-installer-for-visual-studio-for-mac"></a>Vytvoření instalačního programu offline pro Visual Studio pro Mac
 
 > [!IMPORTANT]
-> O funkci offline instalační program je plánovaná pro budoucí verze sady Visual Studio pro Mac.
+> Offline funkce instalačního programu je plánována pro budoucí verze Visual Studio pro Mac.
 
 ## <a name="see-also"></a>Viz také:
 

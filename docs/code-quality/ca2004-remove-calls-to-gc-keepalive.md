@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4520649050e6e4004b2c8864d5c081897852826c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a716da8eb0fb1b741c302ed32408e63a4933567b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808363"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921137"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: Odeberte volání GC.KeepAlive
 
@@ -30,14 +30,14 @@ ms.locfileid: "62808363"
 |Kategorie|Microsoft.Reliability|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
- Použití třídy `SafeHandle` ale stále obsahovat volání `GC.KeepAlive`.
+## <a name="cause"></a>příčina
+Třídy používají `SafeHandle` `GC.KeepAlive`, ale stále obsahují volání.
 
 ## <a name="rule-description"></a>Popis pravidla
- Pokud převádíte na `SafeHandle` využití, odeberte veškerá volání `GC.KeepAlive` (objekt). V tomto případě by neměl mít třídy volání `GC.KeepAlive`, za předpokladu, že nemají finalizační metodu, ale spoléhají na `SafeHandle` dokončete popisovač operačního systému pro ně.  I když náklady při volání k opuštění `GC.KeepAlive` může být nepatrné měřený podle výkonu, vnímání, který volání `GC.KeepAlive` je nezbytné nebo dostatečná k vyřešení problému, který již neexistuje provede kód obtížnější životnost Udržujte.
+Pokud převádíte na `SafeHandle` použití, odeberte všechna `GC.KeepAlive` volání (Object). V takovém případě třídy by neměly být volány `GC.KeepAlive`, za předpokladu, že nemají finalizační metodu, ale spoléhají `SafeHandle` na dokončení popisovače operačního systému pro ně.  I když náklady na `GC.KeepAlive` zanechání v volání může být zanedbatelné na základě výkonu, vnímání, že `GC.KeepAlive` volání je buď nezbytné, nebo dostačující k vyřešení potíží při životnosti, která již nemusí existovat, způsobuje, že by se kód obtížnější vést.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Odeberte volání `GC.KeepAlive`.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Odeberte volání `GC.KeepAlive`.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Toto upozornění můžete potlačit pouze v případě, že není technicky správné pro převod na `SafeHandle` využití ve své třídě.
+Toto upozornění můžete potlačit pouze v případě, že není technicky správné převést `SafeHandle` na využití ve vaší třídě.

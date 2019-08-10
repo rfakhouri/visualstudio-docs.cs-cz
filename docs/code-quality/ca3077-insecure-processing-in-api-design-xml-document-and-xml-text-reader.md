@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3b17ad3449bebcab57344355f7cc7687ea6b19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca39cef1fb4f1bf1114673dd96a91a1ac8e105cc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541074"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919879"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Nezabezpečené zpracování v návrhu rozhraní API, dokumentu XML a čtečce textu XML
 
@@ -22,30 +22,30 @@ ms.locfileid: "62541074"
 |TypeName|InsecureDTDProcessingInAPIDesign|
 |CheckId|CA3077|
 |Kategorie|Microsoft.Security|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
- Při navrhování rozhraní API odvozený od XMLDocument a XMLTextReader, mějte na paměti z <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Použití nezabezpečené DTDProcessing instancí, při odkazování na řešení externí entity zdroje nebo nastavení nezabezpečené hodnot v souboru XML může způsobit zpřístupnění informací.
+## <a name="cause"></a>příčina
+Při navrhování rozhraní API odvozeného z XMLDocument a XMLTextReader si zavědomi <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Použití nezabezpečených instancí DTDProcessing při odkazování na zdroje externích entit nebo jejich překládání na nezabezpečené hodnoty v XML může vést k odhalení informací.
 
 ## <a name="rule-description"></a>Popis pravidla
- A *dokumentu typ definice (DTD)* je jedním ze dvou způsobů analyzátor jazyka XML můžete určit platnosti dokumentu, podle definice [World Wide Web Consortium (W3C) značky XML (Extensible Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Toto pravidlo vyhledá vlastnosti a instance, kde je nedůvěryhodná data přijat upozornit vývojáře o potenciál [informacím](/dotnet/framework/wcf/feature-details/information-disclosure) hrozeb, které mohou vést k [útok na dostupnost služby (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) útoky. Toto pravidlo aktivuje, když:
+*Definice typu dokumentu (DTD)* je jedním ze dvou způsobů, jak může analyzátor XML určit platnost dokumentu, jak je definováno v [konsorcium World Wide Web (W3C) jazyk XML (Extensible Markup Language) (XML) 1,0](http://www.w3.org/TR/2008/REC-xml-20081126/). Toto pravidlo vyhledává vlastnosti a instance, kde jsou přijímána nedůvěryhodná data, aby upozornila vývojáře na potenciální hrozby [zpřístupnění informací](/dotnet/framework/wcf/feature-details/information-disclosure) , což může vést k útokům DOS [(Denial of Service)](/dotnet/framework/wcf/feature-details/denial-of-service) . Toto pravidlo se aktivuje v těchto případech:
 
-- <xref:System.Xml.XmlDocument> nebo <xref:System.Xml.XmlTextReader> třídy použijte výchozí překladač hodnoty pro zpracování deklarace DTD.
+- <xref:System.Xml.XmlDocument>třídy <xref:System.Xml.XmlTextReader> nebo používají výchozí hodnoty překladače pro zpracování DTD.
 
-- Žádný konstruktor je definován pro dokument XML nebo odvozené třídy XmlTextReader nebo bez zabezpečeného hodnota se používá pro <xref:System.Xml.XmlResolver>.
+- Pro odvozené třídy XmlDocument nebo XmlTextReader není definován žádný konstruktor nebo není použita žádná bezpečná hodnota pro <xref:System.Xml.XmlResolver>.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-- Zachytit a zpracovat všechny výjimky XmlTextReader správně, aby se zabránilo zpřístupnění informací cestu.
+- Zachyťte a zpracujte všechny výjimky XmlTextReader správně, aby nedocházelo k odhalení informací o cestách.
 
-- Použití <xref:System.Xml.XmlSecureResolver>místo objekt XmlResolver omezit prostředky XmlTextReader přístup.
+- Použijte <xref:System.Xml.XmlSecureResolver>místo objekt XmlResolver k omezení prostředků, ke kterým má přístup XmlTextReader přístup.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Pokud si nejste jisti, že vstup je znám jako z důvěryhodného zdroje, nepotlačujte pravidlo z tohoto upozornění.
+Pokud si nejste jistí, že je vstup z důvěryhodného zdroje známý, nedoporučujeme z tohoto upozornění pravidlo potlačit.
 
-## <a name="pseudo-code-examples"></a>Příklady pseudo kódu
+## <a name="pseudo-code-examples"></a>Příklady kódu pseudo
 
-### <a name="violation"></a>Porušení
+### <a name="violation"></a>Selhání
 
 ```csharp
 using System;

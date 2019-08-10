@@ -1,6 +1,6 @@
 ---
-title: Publikování – WebApplicationWebSite (skript prostředí Windows PowerShell) | Dokumentace Microsoftu
-description: Zjistěte, jak publikovat projekt webu na web Azure. Tento skript vytvoří požadované prostředky ve vašem předplatném Azure, pokud ještě neexistují.
+title: Publish-WebApplicationWebSite (skript prostředí Windows PowerShell) | Microsoft Docs
+description: Přečtěte si, jak publikovat webový projekt na webu Azure. Tento skript vytvoří požadované prostředky v předplatném Azure, pokud už neexistují.
 author: ghogen
 manager: jillfra
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
@@ -9,16 +9,16 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 1ad49cc9efd97fbd51159a0527ee1dc7aa2e25b6
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: e1085d13612cefee370aeac5fe67c7ddd2af8bae
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67623978"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919787"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (skript Windows PowerShellu)
 ## <a name="syntax"></a>Syntaxe
-Webový projekt se publikuje na web Azure. Skript vytvoří požadované prostředky ve vašem předplatném Azure, pokud ještě neexistují.
+Publikuje webový projekt na webu Azure. Skript vytvoří požadované prostředky v předplatném Azure, pokud už neexistují.
 
 ```
 Publish-WebApplicationWebSite
@@ -31,7 +31,7 @@ Publish-WebApplicationWebSite
 ```
 
 ## <a name="configuration"></a>Konfiguraci
-Cesta ke konfiguračnímu souboru JSON popisující podrobnosti o nasazení.
+Cesta ke konfiguračnímu souboru JSON, který popisuje podrobnosti nasazení.
 
 | Parametr | Výchozí hodnota |
 | --- | --- |
@@ -39,11 +39,11 @@ Cesta ke konfiguračnímu souboru JSON popisující podrobnosti o nasazení.
 | Povinné? |true |
 | Pozice |pojmenované |
 | Výchozí hodnota |žádná |
-| Přijmout kanálový vstup? |false |
-| Přijímat zástupné znaky? |false |
+| Přijmout vstup kanálu? |false |
+| Přijmout zástupné znaky? |false |
 
-## <a name="subscriptionname"></a>subscriptionName
-Název předplatného Azure, který chcete vytvořit web v.
+## <a name="subscriptionname"></a>SubscriptionName
+Název předplatného Azure, ve kterém chcete vytvořit web.
 
 | Parametr | Výchozí hodnota |
 | --- | --- |
@@ -51,11 +51,11 @@ Název předplatného Azure, který chcete vytvořit web v.
 | Povinné? |false |
 | Pozice |pojmenované |
 | Výchozí hodnota |žádná |
-| Přijmout kanálový vstup? |false |
-| Přijímat zástupné znaky? |false |
+| Přijmout vstup kanálu? |false |
+| Přijmout zástupné znaky? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Cesta k balíčku pro nasazení webu k publikování na web. Tento balíček můžete vytvořit pomocí Průvodce publikováním webu v sadě Visual Studio. Další informace najdete v tématu [Začínáme s Azure Cloud Services a ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089).
+Cesta k balíčku pro nasazení webu, který má být publikován na webu. Tento balíček můžete vytvořit pomocí Průvodce publikováním webu v aplikaci Visual Studio. Další informace najdete v tématu [Začínáme s Azure Cloud Services a ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089).
 
 | Parametr | Výchozí hodnota |
 | --- | --- |
@@ -63,8 +63,8 @@ Cesta k balíčku pro nasazení webu k publikování na web. Tento balíček mů
 | Povinné? |false |
 | Pozice |pojmenované |
 | Výchozí hodnota |žádná |
-| Přijmout kanálový vstup? |false |
-| Přijímat zástupné znaky? |false |
+| Přijmout vstup kanálu? |false |
+| Přijmout zástupné znaky? |false |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
 Uživatelské jméno a heslo pro databázi SQL v Azure.
@@ -75,11 +75,11 @@ Uživatelské jméno a heslo pro databázi SQL v Azure.
 | Povinné? |false |
 | Pozice |pojmenované |
 | Výchozí hodnota |žádná |
-| Přijmout kanálový vstup? |false |
-| Přijímat zástupné znaky? |false |
+| Přijmout vstup kanálu? |false |
+| Přijmout zástupné znaky? |false |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
-Pokud je hodnota true, tisk zpráv ze skriptu do výstupního datového proudu.
+Pokud je nastaveno na true, vytiskněte zprávy ze skriptu do výstupního datového proudu.
 
 | Parametr | Výchozí hodnota |
 | --- | --- |
@@ -87,13 +87,13 @@ Pokud je hodnota true, tisk zpráv ze skriptu do výstupního datového proudu.
 | Povinné? |false |
 | Pozice |pojmenované |
 | Výchozí hodnota |false |
-| Přijmout kanálový vstup? |false |
-| Přijímat zástupné znaky? |false |
+| Přijmout vstup kanálu? |false |
+| Přijmout zástupné znaky? |false |
 
 ## <a name="remarks"></a>Poznámky
-Úplné vysvětlení toho, jak použít skript k vytvoření vývojových a testovacích prostředí, najdete v části [pomocí skriptů Windows Powershellu k publikování do vývojových a testovacích prostředí](vs-azure-tools-publishing-using-powershell-scripts.md).
+Úplné vysvětlení způsobu použití skriptu k vytváření vývojových a testovacích prostředí najdete v tématu [použití skriptů prostředí Windows PowerShell pro publikování do vývojových a testovacích prostředí](vs-azure-tools-publishing-using-powershell-scripts.md).
 
-Konfigurační soubor JSON má podrobnosti o co se má nasadit. Obsahuje informace, které jste zadali při vytváření projektu, jako jsou název a uživatelské jméno pro web. Zahrnuje také databáze, kterou chcete zřídit, pokud existuje. Následující kód ukazuje příklad konfigurace souboru JSON:
+Konfigurační soubor JSON určuje podrobnosti o tom, co má být nasazeno. Obsahuje informace, které jste zadali při vytváření projektu, jako je název a uživatelské jméno pro web. Zahrnuje také databázi ke zřízení, pokud existuje. Následující kód ukazuje příklad konfiguračního souboru JSON:
 
 ```json
 {
@@ -119,7 +119,7 @@ Konfigurační soubor JSON má podrobnosti o co se má nasadit. Obsahuje informa
 }
 ```
 
-Můžete upravit konfigurační soubor JSON, chcete-li změnit, co se nasadí. Části webu je povinný, ale databáze část je nepovinná.
+Můžete upravit konfigurační soubor JSON pro změnu toho, co je nasazeno. Oddíl webu je povinný, ale oddíl databáze je nepovinný.
 
-## <a name="next-steps"></a>Další kroky
-Další informace najdete v tématu [Publish-WebApplicationVM (skript Windows Powershellu)](vs-azure-tools-publish-webapplicationvm.md)
+## <a name="next-steps"></a>Další postup
+Další informace najdete v tématu [Publishing-WebApplicationVM (skript prostředí Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md).

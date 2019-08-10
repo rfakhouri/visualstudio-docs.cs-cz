@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4f72ba56b27d87d785ca561bad0de6e59dfdc2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ffb18316b5f009a0f2854c8a158e528f15c92326
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744770"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923209"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Použijte obecné typy, kde je to vhodné
 
@@ -33,38 +33,38 @@ ms.locfileid: "66744770"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Externě viditelná metoda obsahuje referenční parametr typu <xref:System.Object?displayProperty=fullName>, a příslušné sestavení zacíleno na rozhraní .NET Framework 2.0.
+## <a name="cause"></a>příčina
+Externě viditelná metoda obsahuje referenční parametr typu <xref:System.Object?displayProperty=fullName>a sestavení obsahující cíle .NET Framework 2,0.
 
 ## <a name="rule-description"></a>Popis pravidla
- Odkaz na parametr je parametr, který je upraven pomocí `ref` (`ByRef` v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) – klíčové slovo. Typ argumentu, který je zadán pro referenční parametr musí přesně odpovídat na referenční typ parametru. Pokud chcete použít typ, který je odvozen z parametrů typu odkazu, typ musí nejprve být přetypování a přiřazen proměnné typu odkazu, parametr. Použití generické metody umožňuje všechny typy v souladu s omezením, které se mají předat metodě bez předchozího přetypování typu na referenční typ parametru.
+Parametr reference je parametr, který je upraven pomocí `ref` klíčového slova (`ByRef` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Typ argumentu, který je zadán pro parametr odkazu, musí přesně odpovídat typu referenčního parametru. Chcete-li použít typ, který je odvozen z typu parametru reference, typ musí být nejprve převeden a přiřazen proměnné typu referenčního parametru. Použití obecné metody umožňuje všem typům, které podléhají omezením, předávat metodě bez předchozího přetypování typu na typ referenčního parametru.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, ujistěte se, metoda obecný a nahraďte <xref:System.Object> parametru pomocí typu parametru.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, proveďte obecné metody a nahraďte <xref:System.Object> parametr pomocí parametru typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje rutinu prohození pro obecné účely, která je implementována jako neobecné a obecné metody. Všimněte si, jak efektivní jsou přehozeny řetězců s použitím ve srovnání s neobecnou metodu obecnou metodu.
+Následující příklad ukazuje rutinu swapu pro obecné účely, která je implementována jako neobecné a obecné metody. Všimněte si, jak efektivně jsou řetězce zahozeny pomocí obecné metody v porovnání s neobecnou metodou.
 
- [!code-vb[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/VisualBasic/ca1007-use-generics-where-appropriate_1.vb)]
- [!code-csharp[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/CSharp/ca1007-use-generics-where-appropriate_1.cs)]
+[!code-vb[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/VisualBasic/ca1007-use-generics-where-appropriate_1.vb)]
+[!code-csharp[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/CSharp/ca1007-use-generics-where-appropriate_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1005: Vyhněte se nadbytečným parametrům na obecných typech](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+[CA1005: Vyhnout se nadměrnému počtu parametrů u obecných typů](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1010: Kolekce musí implementovat obecné rozhraní](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+[CA1010: Kolekce by měly implementovat obecné rozhraní](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1000: Nedeklarujte statické členy v obecných typech](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+[CA1000: Nedeklarujte statické členy v obecných typech](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
- [CA1002: Nezveřejňujte obecné seznamy](../code-quality/ca1002-do-not-expose-generic-lists.md)
+[CA1002 Nezveřejňujte obecné seznamy](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
- [CA1006: Nevnořujte obecné typy v signaturách členu](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+[CA1006 Nevnořovat obecné typy v signaturách členů](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004: Obecné metody by měly poskytnout parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+[CA1004: Obecné metody by měly poskytnout parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
- [CA1003: Použijte instance obecných události obslužné rutiny](../code-quality/ca1003-use-generic-event-handler-instances.md)
+[CA1003: Použití instancí obecných obslužných rutin událostí](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
 ## <a name="see-also"></a>Viz také:
- [Obecné typy](/dotnet/csharp/programming-guide/generics/index)
+[Obecné typy](/dotnet/csharp/programming-guide/generics/index)

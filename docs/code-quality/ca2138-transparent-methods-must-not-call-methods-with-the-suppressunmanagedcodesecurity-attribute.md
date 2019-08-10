@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e302c9e8cc74d461dc67237bd62b34097c0aceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 316aef3b0f1f715857fde8eaf2a6e74b1a49e40f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542180"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920580"
 ---
 # <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138: Transparentní metody nesmí volat metody s atributem SuppressUnmanagedCodeSecurity
 
@@ -26,19 +26,19 @@ ms.locfileid: "62542180"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Transparentní metoda zabezpečení volá metodu, která je označena <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atribut.
+## <a name="cause"></a>příčina
+Transparentní metoda zabezpečení volá metodu, která je označena <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atributem.
 
 ## <a name="rule-description"></a>Popis pravidla
- Toto pravidlo je vyvoláno na jakékoli transparentní metodě, která přímo volá nativní kód, například prostřednictvím P/Invoke (nespravovaného) volání. P/Invoke a modelu COM interop metody, které jsou označené <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atribut výsledkem LinkDemand provádí proti volání metody. Protože transparentního kódu zabezpečení nemůže vyhovovat LinkDemands, kód také nelze volat metody, které jsou označeny atributem SuppressUnmanagedCodeSecurity nebo metody třídy, která je označena atributem SuppressUnmanagedCodeSecurity. Metoda se nezdaří, nebo vyžádání se převedou na úplný požadavek.
+Toto pravidlo je vyvoláno na jakékoli transparentní metodě, která volá přímo do nativního kódu, například pomocí volání volání nespravovaného kódu (volání platformy). Metody volání nespravovaného volání a modelu COM, které jsou <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> označeny atributem Result, mají za následek, že se v LinkDemand provádí v rámci volající metody. Vzhledem k tomu, že kód transparentní pro zabezpečení nemůže naplnit LinkDemand, kód také nemůže volat metody, které jsou označeny atributem SuppressUnmanagedCodeSecurity, nebo metody třídy, které jsou označeny atributem SuppressUnmanagedCodeSecurity. Metoda se nezdaří nebo se požadavek převede na úplný požadavek.
 
- Porušení tohoto pravidla vede k <xref:System.MethodAccessException> v modelu transparentnosti zabezpečení úrovně 2 a k úplnému pro <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> v modelu transparentnosti úrovně 1.
+Porušení tohoto pravidla povedou k <xref:System.MethodAccessException> tomu, že v modelu transparentnosti úrovně 2 a v modelu transparentnosti úrovně 1 máte plnou <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> poptávku.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, odeberte <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atribut a označit metody <xref:System.Security.SecurityCriticalAttribute> nebo <xref:System.Security.SecuritySafeCriticalAttribute> atribut.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, odeberte <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atribut a označte metodu <xref:System.Security.SecurityCriticalAttribute> <xref:System.Security.SecuritySafeCriticalAttribute> atributem nebo.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- [!code-csharp[FxCop.Security.CA2138.TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods#1](../code-quality/codesnippet/CSharp/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute_1.cs)]
+[!code-csharp[FxCop.Security.CA2138.TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods#1](../code-quality/codesnippet/CSharp/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute_1.cs)]

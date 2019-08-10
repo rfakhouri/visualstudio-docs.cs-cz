@@ -1,6 +1,6 @@
 ---
 title: Nahlášení problému
-description: Najdete zde přehled sestavy nástrojů problém a zahrnuje stavy problém a definice
+description: Poskytuje přehled o nástroji nahlásit problém a obsahuje stavy a definice problémů.
 ms.date: 11/15/2018
 ms.custom: seodec18
 ms.topic: conceptual
@@ -9,127 +9,127 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309815"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925987"
 ---
 # <a name="overview-report-a-problem"></a>Přehled: Nahlášení problému
 
-Sestava problém nástroj umožňuje komunity vývojářů sady Visual Studio k odeslání problémy. Každý z nich sestavy problém se změní pracovní položku v našich základní technické systému, bude moct kontaktovat přímo našich produktových týmů a pomoci tak identifikovat a řešit problémy dopad. Váš názor se odeslal s podrobnými diagnostickými informacemi je důležité pro zlepšení produktové řady Visual Studio. Opravdu si ceníme jste si udělali čas k hlášení problémů.
+Nástroj ohlásit problém umožňuje komunitě vývojářů sady Visual Studio odesílat problémy. Každá z vašich sestav problémů se stává pracovní položkou v našem jádrovém systému, který vám umožní přímo se zapojit do našich produktových týmů a pomoct tak identifikovat a vyřešit ovlivněné problémy. Vaše zpětná vazba odeslaná s bohatými diagnostickými informacemi je důležitá pro zlepšení produktové řady Visual Studio. Opravdu si vybereme čas k nahlášení problémů.
 
-Kromě toho můžete hlasovat o zpětnou vazbu od ostatních členů komunity zpřístupnit další pozornost k problému a řešení rychleji.
+Kromě toho můžete hlasovat o zpětné vazbě jiných členů komunity a věnovat vám tak větší pozornost problému a jejich rychlejšímu řešení.
 
 ## <a name="problem-status"></a>Stav problému
 
-Poté, co můžete nahlásit problém, stavy určují, kde vašim příspěvkům poskytnutým prostřednictvím jejich životního cyklu. Microsoft teams, prohlédněte si vaší zpětné vazby, které nastavily s odpovídajícím stavu.  Sledování pokroku vaší sestavy problémů pomocí odkazu na stavy uvedené níže, spolu s indikátory jejich význam a barvu.
+Po nahlášení problému se stavem označují, kde se vaše příspěvky nacházejí v životním cyklu. Protože Microsoft Teams provedou vaše názory, nastaví je s odpovídajícím stavem.  Sledovat průběh hlášení o problémech na základě níže uvedených stavů spolu s jejich významem a barevnými indikátory.
 
-![Nový stav problému vyvářet komunity vývojářů](../ide/media/ProblemStates/New.jpg)
+![Nový stav pro hlášení problémů na komunitě vývojářů](../ide/media/ProblemStates/New.jpg)
 
-**Nové** označuje, že nově ohlásil chybu nebo problém, a nic se nestalo na něm ještě.
-
-- - -
-
-![Třídění stav problému vyvářet komunity vývojářů](../ide/media/ProblemStates/Triaged.jpg)
-
-**Třídění** označuje, že jsou předběžné kroky, jako je například moderování, překlad a počáteční kontroly duplicitních položek dokončení. Lístku směrována odpovídající technickému týmu k posouzení vlastní.
+**Novinka** znamená, že chyba nebo problém jsou nově hlášeny, a zatím není provedena žádná akce.
 
 - - -
 
-![V části stav posouzení pro problém vyvářet komunity vývojářů](../ide/media/ProblemStates/UnderConsideration.jpg)
+![Stav pro hlášení problémů na komunitě vývojářů](../ide/media/ProblemStates/Triaged.jpg)
 
-**Posuzuje se** označuje, že Microsoft je kontrola váš problém pro komunity dopad a její priority odpovídajícím způsobem. Pokud dopad komunity ještě není jasné nebo významné, budeme nadále monitorovat problém v tomto stavu.
-
-- - -
-
-![V části šetření stav problému vyvářet komunity vývojářů](../ide/media/ProblemStates/UnderInvestigation.jpg)
-
-**V části šetření** označuje, že technici aktivně ho prověřují váš problém najít řešení.
+**Třídění** naznačuje, že jsou dokončeny předběžné kroky, jako je moderování, překlad a prvotní kontroly duplicit. Váš lístek byl pro zvážení směrován na příslušný technický tým.
 
 - - -
 
-![Potřebujete více informací o stavu pro problém vyvářet komunity vývojářů](../ide/media/ProblemStates/NeedMoreInfo.jpg)
+![Ve stavu zvážení hlášení problémů na komunitě vývojářů](../ide/media/ProblemStates/UnderConsideration.jpg)
 
-**Potřebujete další informace o** označuje, že potřebujeme od vás další diagnostické informace tak, aby nám můžete pokračovat v šetření.  [Zjistěte, jak reagovat na požadavky nutné další informace.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
-
-- - -
-
-![Vyřešeno – čeká na vydání stav problému vyvářet komunity vývojářů](../ide/media/ProblemStates/FixedPendingRelease.jpg)
-
-**Oprava – čeká na vydání** označuje, že jsme opravu problému a bude k dispozici v nadcházející verzi preview nebo vydání.  Až oprava bude dostupná ve verzi preview, problém se označí značkou opravené ve určení verze preview.
+**V této části** je uvedeno, že společnost Microsoft zkoumá váš problém s ohledem na dopad na komunitu a podle toho bude upřednostňovat. Pokud není dopad komunity jasný ani významný, budeme dál monitorovat problém v tomto stavu.
 
 - - -
 
-![Uzavřeno – oprava stav problému vyvářet komunity vývojářů](../ide/media/ProblemStates/ClosedFixed.jpg)
+![Stav šetření pro hlášení problémů na komunitě vývojářů](../ide/media/ProblemStates/UnderInvestigation.jpg)
 
-**Uzavřeno – opraveno** označuje, že Vydali jsme opravu problému. Problém je nyní také označené "opravené ve:" značky určující vydanou verzi.
-
-- - -
-
-![Uzavřeno – duplicitní stav problému vyvářet komunity vývojářů](../ide/media/ProblemStates/ClosedDuplicate.jpg)
-
-**Uzavřeno – duplicitní** označuje, že problém již oznámen prostřednictvím jinou zpětnou vazbu. Poskytneme vám odkaz, kde můžete sledovat původní hlášení o problému.
+**V rámci šetření** se dozvíte, že technici aktivně vyšetřují váš problém, aby našli řešení.
 
 - - -
 
-![Uzavřeno – nižší priorita stav problému vyvářet komunity vývojářů](../ide/media/ProblemStates/ClosedLowerPriority.jpg)
+![Pro vytváření sestav problémů na komunitě vývojářů potřebujete více informací o stavu](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Uzavřeno – nižší priorita** a zaměřte se na níž se přináší každý z vás, naše vývojářská komunita nejlepší poměr, priority a problémy s nejvyšším dopadem na zákazníka. I když nemůžeme v tuto chvíli tento konkrétní problém vyřešit, je třeba zajistit, že všechny vaše zpětná vazba je cenná a pomáhá vylepšení sady Visual Studio.
-
-- - -
-
-![Uzavřeno – není chybový stav pro problém vyvářet komunity vývojářů](../ide/media/ProblemStates/ClosedNotABug.jpg)
-
-**Uzavřeno – není chyba** označuje, že jsme jste zjistili, že ohlášená funkce chování je záměrné aktuální.
+**Potřebujete další informace o** tom, že od vás potřebujeme další diagnostické informace, abychom mohli pokračovat v šetření.  [Přečtěte si, jak reagovat na nutnost dalších žádostí o informace.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
-![Uzavřeno – není dostatek informací o stavu problému vyvářet komunity vývojářů](../ide/media/ProblemStates/ClosedNotEnoughInfo.jpg)
+![Opraveno – čeká se na stav vydání pro hlášení problémů na komunitě vývojářů.](../ide/media/ProblemStates/FixedPendingRelease.jpg)
 
-**Uzavřeno – není k dispozici dostatek informací o** označuje, že nemáme dostatek informací, abychom to za vás. Jsme rádi zvažte zpětnou vazbu po nezbytné informace jsou k dispozici.
-
-- - -
-
-![Uzavřeno – jiný produkt stav problému vyvářet komunity vývojářů v sadě](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
-
-**Uzavřeno – jiný produkt** označuje, můžeme jste zjistili, že váš problém vztahuje na jiného produktu. Zobrazí komentář od společnosti Microsoft, pro kterou externí produktu a všechny související odkazy.
+**Nevyřešená verze** znamená, že máme opravu problému a bude k dispozici v nadcházející verzi Preview nebo vydání.  Pokud je oprava k dispozici ve verzi Preview, bude problém označen značkou Fixed in, která určuje verzi Preview.
 
 - - -
 
-![Uzavřeno – zůstane bez opravy stav problému vyvářet komunity vývojářů](../ide/media/ProblemStates/ClosedWontFix.jpg)
+![Uzavřeno – pevný stav pro hlášení problémů na komunitě vývojářů](../ide/media/ProblemStates/ClosedFixed.jpg)
 
-**Uzavřeno – zůstane bez opravy** označuje, že jsme nejsou ovlivňovat tento problém faktorech, jako je například chybějící produktu směr zarovnání nebo community dopad na chod firmy. Zobrazí komentář od společnosti Microsoft pro všechny další nejasnostem.  I když jsme se tento konkrétní problém vyřešit, být jistí, že váš názor se hodí v situaci a pomáhá nám vylepšení sady Visual Studio.
+**Uzavřeno – opraveno** znamená, že jsme vydali opravu problému. Tento problém se také teď označí příznakem "opraveno v:", který určuje verzi vydání.
+
+- - -
+
+![Uzavřeno – duplicitní stav pro hlášení problémů na komunitě vývojářů](../ide/media/ProblemStates/ClosedDuplicate.jpg)
+
+**Uzavřeno – duplicitní** znamená, že váš problém již byl nahlášen prostřednictvím jiné zpětné vazby. Poskytneme vám odkaz, kde můžete sledovat původní zprávu o problému.
+
+- - -
+
+![Stav Uzavřeno – nižší priorita pro hlášení problémů na komunitě vývojářů](../ide/media/ProblemStates/ClosedLowerPriority.jpg)
+
+**Uzavřeno – nižší priorita** Abychom se mohli soustředit na to, co je naše komunita vývojářů nejlepší, nakonfigurujeme problémy s největším dopadem na zákazníky. I když v tuto chvíli nemůžeme vyřešit tento konkrétní problém, je zaručeno, že všechny vaše názory jsou cenné a pomáhají zdokonalit Visual Studio.
+
+- - -
+
+![Uzavřeno – nejedná se o stav chyby pro hlášení problémů na komunitě vývojářů.](../ide/media/ProblemStates/ClosedNotABug.jpg)
+
+**Uzavřeno – není chyba** znamená, že jsme zjistili, že se jedná o aktuální návrh.
+
+- - -
+
+![Uzavřeno – nedostatek informací o stavu pro hlášení problémů na komunitě vývojářů](../ide/media/ProblemStates/ClosedNotEnoughInfo.jpg)
+
+**Uzavřeno –** nedostatek informací indikuje, že nemáme k dispozici dostatek informací, abychom to mohli prozkoumat. Až budete mít k dispozici potřebné informace, budeme rádi znovu považovat zpětnou vazbu.
+
+- - -
+
+![Uzavřeno – jiný stav produktu pro hlášení problémů na komunitě vývojářů](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
+
+**Uzavřeno – jiný produkt** znamená, že jsme zjistili, že váš problém platí pro jiný produkt. Podívejte se na komentář od Microsoftu, pro který externí produkt a všechny související odkazy.
+
+- - -
+
+![Uzavřeno – nebude opravovat stav pro hlášení problémů na komunitě vývojářů](../ide/media/ProblemStates/ClosedWontFix.jpg)
+
+**Uzavřeno – nebude opraveno** znamená, že tento problém nemůžeme provést kvůli faktorům, jako je například nedostatečné zarovnání v oddělení produktu nebo dopad na komunitu. Další přehlednost najdete v komentářích od Microsoftu.  I když nemůžeme vyřešit tento konkrétní problém, je zaručeno, že veškerá vaše zpětná vazba je cenná a pomáhá zdokonalit Visual Studio.
 
 - - -
 
 ## <a name="faq"></a>Nejčastější dotazy
 
-### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>Jak můžu zvýšit šanci získání rychlé vyřešení problému?
+### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>Jak můžu zvýšit pravděpodobnost, že se problém vyřeší rychle?
 
-Doporučujeme použít vyhledávání k zajištění, že byl neohlásil už problém, který se chystáte do sestavy. Pokud zjistíte existující položku odpovídající váš problém, postupujte podle a hlasovat pro tento lístek problém.
+Doporučujeme, abyste pomocí vyhledávání zajistili, že problém, který chcete ohlásit, už není nahlášený. Pokud najdete existující položku odpovídající vašemu problému, sledujte tento lístek problému a Hlasujte na něj.
 
- Poskytují všechny informace, které můžete se k naší týmům, které reprodukovat, co se zobrazuje.  Tyto informace zahrnují nezbytné reprodukovat kroky, fragmenty kódu, snímky obrazovky, záznamy reprodukci, soubory protokolů a jiné artefakty.  Tady je [jak chcete nahlásit problém v sadě Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
+Poskytněte všechny informace, které vám pomůžou naši týmy pomáhat s tím, co se setkáváte.  Tyto informace zahrnují nezbytné kroky reprodukci, fragmenty kódu, snímky obrazovky, záznamy reprodukci, soubory protokolů a další artefakty.  Zde je [uveden postup nahlášení problému v aplikaci Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
-### <a name="how-is-my-feedback-prioritized"></a>Jak se mého názoru priority?
+### <a name="how-is-my-feedback-prioritized"></a>Jak mám prioritu mého názoru?
 
-Od našich zákazníků dostáváme velký počet cenné problémy. Aby bylo zajištěno, že v naší komunitě vývojářů přinášíme doporučené hodnoty ke každému z vás, priority a akce na zpětnou vazbu, která má nejvýrazněji ovlivňují komunity.
+Od našich zákazníků získáme velký počet cenných problémů. Aby bylo zajištěno, že chceme v naší komunitě vývojářů dodávat nejlepší hodnotu, nastavíme u názoru na zpětnou vazbu, která má nejvyšší dopad na komunitu, prioritní akci.
 
-Pokud nejste schopni sami reagovat na vaši zpětnou vazbu, vědět, že jsme plně Děkujeme za váš vstup. Být jistí, že získá váš názor na správný tým.
+Pokud se nám nedaří odpovědět osobně na váš názor, nezapomeňte vám, že váš vstup je plně ocení. Zajistěte, aby se všechny vaše názory dostaly do správného týmu.
 
-Čas, kdy investovat do sady Visual Studio lepší skutečně vážíme.
+Skutečně jsme vyhodnotí čas, který investovali do poskytování sady Visual Studio lépe.
 
-### <a name="what-actions-can-i-take-if-im-not-satisfied-with-the-resolution"></a>Jaké akce může trvat pokud nejsem spokojeni s tím, řešení?
+### <a name="what-actions-can-i-take-if-im-not-satisfied-with-the-resolution"></a>Jaké akce mohu provést, pokud mi nevyhovuje řešení?
 
-Naše týmy provést co nejlepší výkon diagnostikovat a opravit problémy, které zaznamenáte, ale může nastat situace, když nejste plně vyhovují Naše doporučení. Komentář zpět na zpětnou vazbu a dejte nám vědět, co přesně nejste spokojeni s tím, a pokusíme nejlepší se ujistěte, že jsme vašim potřebám.
+Naši týmy mají nejlepší diagnostikovat a opravovat všechny problémy, ke kterým dochází, ale můžou nastat situace, kdy nebudete plně spokojeni s naším doporučením. Přihlaste se zpět na zpětnou vazbu a dejte nám vědět přesně to, co nejste spokojeni, a my zkusíme, abychom Splníme vaše potřeby.
 
-### <a name="how-will-i-get-notified-of-progress-on-my-feedback"></a>Jak můžu dostanete oznámení o průběhu s mým názorem?
+### <a name="how-will-i-get-notified-of-progress-on-my-feedback"></a>Jak se mi pošle oznámení o pokroku na zpětnou vazbu?
 
-Týmy inženýrů Microsoftu bude komunikovat s vámi komentování-the-ticket zpětnou vazbu a změnu stavu lístku, jak využívají průběh. Podívejte se na e-mailových oznámení, které jsou odeslány po publikování změn stavu lístků nebo komentář.  Můžete spravovat četnost oznámení v nastavení profilu a předvolby portálu komunity vývojářů.
+Technické týmy Microsoftu budou s vámi komunikovat pomocí komentářů na základě lístku zpětné vazby a změnou stavu lístku v průběhu provádění. Sledujte e-mailová oznámení, která se odesílají při změně stavu lístku nebo odeslání komentáře.  Četnost oznámení můžete spravovat v nastavení profil a předvolby na webu komunity pro vývojáře.
 
-### <a name="why-cant-i-add-a-problem-for-visual-studio-ide-on-the-developer-community-website"></a>Proč nelze přidat k problému pro Visual Studio IDE na web komunity vývojářů?
+### <a name="why-cant-i-add-a-problem-for-visual-studio-ide-on-the-developer-community-website"></a>Proč nemůžu přidat problém pro prostředí Visual Studio IDE na webu komunity vývojářů?
 
-Vytváření sestav problém pomocí sady Visual Studio umožňuje získat diagnostické informace, které mají být automaticky zahrnuty do sestavy. Je základní informace, které poskytuje naši technici kontext, abyste úplně pochopili problém a práce na řešení ji potřebují.
+Nahlášení problému prostřednictvím sady Visual Studio umožňuje, aby byly diagnostické informace automaticky zahrnuty do sestavy. Jsou to důležité informace, které našim inženýrům poskytují kontext, který potřebuje k plnému pochopení vašeho problému a k tomu, aby je mohl vyřešit.
 
-Při hlášení pomocí sady Visual Studio, můžete jednoduše sdílet podrobnými diagnostickými informacemi s námi, například velké soubory protokolu, informace o chybách, snímky obrazovky, záznam reprodukci a další artefakty, které nám pomohou dodávat kvalitnější řešení rychleji na vás.
+Při vytváření sestav prostřednictvím sady Visual Studio můžete snadno sdílet Podrobné diagnostické informace, jako jsou například velké soubory protokolů, informace o chybách, snímky obrazovky, záznam reprodukci a další artefakty, které nám pomáhají zajistit rychlejší řešení vyšší kvality.

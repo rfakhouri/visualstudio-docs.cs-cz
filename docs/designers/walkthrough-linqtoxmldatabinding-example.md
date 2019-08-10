@@ -8,44 +8,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67031266ce9b2ded595ab448d7c45674932b8751
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c99d8571480dd98726a5f1ae5772162e97e0baed
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892542"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925739"
 ---
-# <a name="walkthrough-linqtoxmldatabinding-example"></a>Návod: Příklad LinqToXmlDataBinding
-Tento návod popisuje příklad LinqToXmlDataBinding a vysvětluje některé zajímavější obsah dva primární zdrojové soubory, *L2DBForm.xaml* a *L2DBForm.xaml.cs*.
+# <a name="walkthrough-linqtoxmldatabinding-example"></a>Návod: Příklad příkladu LinqToXmlDataBinding
+Tento návod popisuje příklad příkladu LinqToXmlDataBinding a vysvětluje některé zajímavé obsahy svých dvou primárních zdrojových souborů, *zdrojový kód L2DBForm. XAML* a *L2DBForm.XAML.cs*.
 
 ## <a name="prerequisites"></a>Požadavky
- Předtím, než se pustíte do čtení tohoto návodu, důrazně doporučujeme sestavit a spustit LinqToXmlDataBinding program, jak je popsáno v [jak: Sestavení a spuštění příkladu linqtoxmldatabinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md).
+Než si přečtete tento návod, důrazně doporučujeme sestavit a spustit program příkladu LinqToXmlDataBinding, jak je popsáno v [tématu How to: Sestavte a spusťte příklad](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)příkladu LinqToXmlDataBinding.
 
 ## <a name="remarks"></a>Poznámky
- LinqToXmlDataBinding program je aplikace Windows Presentation Foundation (WPF), který se skládá C# a XAML zdrojové soubory. Obsahuje vložený dokument XML, který definuje seznam knihy a umožňuje uživatelům zobrazit, přidat, odstranit a upravit tyto položky. Se skládá z následujících dvou primární zdrojové soubory:
+ Program příkladu LinqToXmlDataBinding je aplikace Windows Presentation Foundation (WPF), která se skládá ze C# zdrojových souborů a XAML. Obsahuje vložený dokument XML, který definuje seznam knih a umožňuje uživateli zobrazovat, přidávat, odstraňovat a upravovat tyto položky. Skládá se z následujících dvou primárních zdrojových souborů:
 
-- *L2DBForm.XAML* obsahuje kód XAML deklarace pro uživatelské rozhraní (UI) hlavního okna. Obsahuje také oddíl prostředků okna, která definuje data provider a vloženého dokumentu XML pro výpisy knihy.
+- *Zdrojový kód L2DBForm. XAML* obsahuje kód deklarace XAML pro uživatelské rozhraní (UI) hlavního okna. Obsahuje také oddíl prostředků okna definující poskytovatele dat a vložený dokument XML pro výpisy knih.
 
-- *L2DBForm.XAML.cs* obsahuje inicializační a metody zpracování událostí, které jsou přidružené uživatelské rozhraní.
+- *L2DBForm.XAML.cs* obsahuje metody inicializace a zpracování událostí přidružené k uživatelskému rozhraní.
 
-  Hlavní okno je rozdělen do následujících čtyř svislé částí uživatelského rozhraní:
+  Hlavní okno je rozdělené do následujících čtyř oddílů vertikálního uživatelského rozhraní:
 
-- **XML** zobrazí nezpracovaný zdroj dat XML vložené adresáře seznamu.
+- **XML** zobrazí nezpracovaný zdroj XML se seznamem vložených knih.
 
-- **Rezervuje seznamu** zobrazuje jako standardní text položky adresáře a umožňuje uživateli vybrat a odstranit jednotlivé položky.
+- **Seznam knih** zobrazuje položky knihy jako standardní text a umožňuje uživateli vybrat a odstranit jednotlivé položky.
 
-- **Upravit vybrané knihy** umožňuje uživateli upravit hodnoty přidružené k položce vybrané knihy.
+- **Možnost upravit vybranou knihu** umožňuje uživateli upravovat hodnoty spojené s aktuálně vybranou položkou knihy.
 
-- **Přidat nový adresář** umožňuje vytvořit novou položku seznamu na základě hodnot zadaných uživatelem.
+- Možnost **Přidat novou knihu** umožňuje vytvořit novou položku knihy na základě hodnot zadaných uživatelem.
 
 ## <a name="in-this-section"></a>V tomto oddílu
 
 |Téma|Popis|
 |-----------|-----------------|
-|[Zdrojový kód L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)|Obsahuje obsah a popis kódu XAML v souboru L2DBForm.xaml.|
-|[Zdrojový kód L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)|Obsahuje obsah a popis zdrojový kód C# v souboru L2DBForm.xaml.cs.|
+|[Zdrojový kód L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)|Obsahuje obsah a popis kódu XAML v souboru zdrojový kód L2DBForm. XAML.|
+|[Zdrojový kód L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)|Obsahuje obsah a popis C# zdrojového kódu v souboru L2DBForm.XAML.cs.|
 
 ## <a name="see-also"></a>Viz také:
 
-- [Datové vazby WPF pomocí LINQ na ukázkový kód XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)
-- [Postupy: Sestavení a spuštění příkladu linqtoxmldatabinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)
+- [Datová vazba WPF pomocí LINQ to XMLho příkladu](../designers/wpf-data-binding-using-linq-to-xml-example.md)
+- [Postupy: Vytvoření a spuštění příkladu příkladu LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)

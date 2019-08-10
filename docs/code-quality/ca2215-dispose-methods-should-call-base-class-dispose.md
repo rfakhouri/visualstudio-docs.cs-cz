@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203fc14097e0c6d2fbdaee1689deffdfe814eb63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f3c118b097dbcd9eba8a5755672bde9c11cb13a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541894"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920308"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Metody Dispose by měly volat uvolnění základní třídy
 
@@ -29,29 +29,29 @@ ms.locfileid: "62541894"
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|
 |CheckId|CA2215|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
- Typ, který implementuje <xref:System.IDisposable?displayProperty=fullName> je odvozen z typu, který také implementuje <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Nevolá metodu ze dědičné typu <xref:System.IDisposable.Dispose%2A> metoda nadřazeného typu.
+## <a name="cause"></a>příčina
+Typ, který implementuje <xref:System.IDisposable?displayProperty=fullName> dědí z typu, který také implementuje <xref:System.IDisposable>. Metoda dědění typu nevolá <xref:System.IDisposable.Dispose%2A> metodu nadřazeného typu. <xref:System.IDisposable.Dispose%2A>
 
 ## <a name="rule-description"></a>Popis pravidla
- Pokud typ dědí z uvolnitelného typu, musí volat <xref:System.IDisposable.Dispose%2A> metodu základního typu v rámci své vlastní <xref:System.IDisposable.Dispose%2A> metody. Volání metody základní typ Dispose zajistí, že se vydávají všechny prostředky vytvořené v rámci základního typu.
+Pokud typ dědí z typu na jedno použití, musí volat <xref:System.IDisposable.Dispose%2A> metodu základního typu v rámci své vlastní <xref:System.IDisposable.Dispose%2A> metody. Volání metody Dispose základní typ zajistí, že budou uvolněny všechny prostředky vytvořené základním typem.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, zavolejte `base`.<xref:System.IDisposable.Dispose%2A> ve vaší <xref:System.IDisposable.Dispose%2A> metody.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, zavolejte `base`.<xref:System.IDisposable.Dispose%2A> <xref:System.IDisposable.Dispose%2A> v metodě.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla, pokud volání `base`.<xref:System.IDisposable.Dispose%2A> nastane na hlubší úrovni volání než pravidla kontroly.
+V případě volání metody `base`je bezpečné potlačit upozornění od tohoto pravidla.<xref:System.IDisposable.Dispose%2A> nastane na hlubší úrovni volání než kontroly pravidla.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ `TypeA` , který implementuje <xref:System.IDisposable>.
+Následující příklad ukazuje typ `TypeA` , který implementuje. <xref:System.IDisposable>
 
- [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
+[!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ `TypeB` , která dědí z typu `TypeA` a správně volá jeho <xref:System.IDisposable.Dispose%2A> metoda.
+Následující příklad ukazuje typ `TypeB` , který dědí z typu `TypeA` a správně volá jeho <xref:System.IDisposable.Dispose%2A> metodu.
 
- [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
+[!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
 
 ## <a name="see-also"></a>Viz také:
 

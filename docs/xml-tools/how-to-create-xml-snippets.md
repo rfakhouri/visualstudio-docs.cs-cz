@@ -8,46 +8,46 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ad13fd3c8c1c2efeeec28794e10a91d9dd0db1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5d5ba351c20328829c05168d846fb7bffad7c11d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948836"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926510"
 ---
 # <a name="how-to-create-xml-snippets"></a>Postupy: Vytváření fragmentů kódu XML
 
-XML editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsahuje fragmentu XML, s názvem "Fragmentu kódu", který je často používaný text fragment kódu pro vytvoření nových fragmentů kódu XML.
+Editor XML lze použít k vytvoření nových fragmentů kódu XML. Editor obsahuje fragment kódu XML s názvem "fragment", který je často používaný fragment pro vytváření nových fragmentů kódu XML.
 
-## <a name="to-create-a-new-xml-snippet"></a>Chcete-li vytvořit nové fragment kódu XML
+## <a name="to-create-a-new-xml-snippet"></a>Vytvoření nového fragmentu kódu XML
 
- Chcete-li vytvořit nový kód XML fragmentu kódu vytvořte nový soubor XML a použít **Vložit fragment** funkce.
+Chcete-li vytvořit nový fragment kódu XML, vytvořte nový soubor XML a použijte funkci **Vložit fragment** kódu.
 
-1. Na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **souboru**.
+1. V nabídce **soubor** klikněte na příkaz **Nový** a pak klikněte na **soubor**.
 
-2. Klikněte na tlačítko **soubor XML** a potom klikněte na tlačítko **otevřít**.
+2. Klikněte na **soubor XML** a potom klikněte na **otevřít**.
 
-3. Podokna editoru pravým tlačítkem a vyberte **Vložit fragment**.
+3. V podokně Editoru klikněte pravým tlačítkem myši a vyberte **Vložit fragment**.
 
-4. Vyberte **fragment** ze seznamu a stisknutím klávesy **Enter**.
+4. Vyberte ze seznamu **fragment kódu** a stiskněte klávesu **ENTER**.
 
-5. Proveďte změny nového fragment kódu.
+5. Proveďte všechny změny v novém fragmentu kódu.
 
-6. Z **souboru** nabídky vyberte možnost **uložit XMLFile.xml**.
+6. V nabídce **soubor** vyberte **uložit XMLFile. XML**.
 
-     **Uložit soubor jako** se zobrazí dialogové okno.
+     Zobrazí se dialogové okno **Uložit soubor jako** .
 
-7. Zadejte název pro nový fragment kódu a vyberte **soubory fragmentu kódu** z **uložit jako typ** okno rozevíracího seznamu.
+7. Zadejte název nového fragmentu a vyberte **soubory fragmentů** v rozevíracím seznamu **Uložit jako typ** .
 
-8. Použití **uložit v** rozevíracího seznamu, chcete-li změnit umístění souboru *fragmentů XML Snippets\XML\My 2005\Code My Documents\Visual Studio* složku a potom stiskněte klávesu **Uložit**.
+8. Pomocí rozevíracího seznamu **Uložit v** změňte umístění souboru na složku Moje fragmenty kódu *XML Documents\Visual Studio 2005 \ Code Snippets\XML\My* a pak stiskněte **Uložit**.
 
-## <a name="snippet-description"></a>Fragment kódu popis
+## <a name="snippet-description"></a>Popis fragmentu
 
- Tato část popisuje některé z klíčových prvků v tomto fragmentu kódu často používaný text. Další informace o schématu elementy používané fragmenty XML, naleznete v tématu [referenční dokumentace schématu fragmentů kódu](../ide/code-snippets-schema-reference.md).
+Tato část popisuje některé klíčové prvky ve vzorci často používaného kódu. Další informace o prvcích schématu používaných fragmenty kódu XML naleznete v tématu [reference ke schématu fragmentů kódu](../ide/code-snippets-schema-reference.md).
 
-### <a name="snippettype-element"></a>Snippettype – element
+### <a name="snippettype-element"></a>Element SnippetType
 
- Editor podporuje dva typy fragment kódu:
+Editor podporuje dva typy fragmentů:
 
 ```xml
 <SnippetTypes>
@@ -56,16 +56,16 @@ XML editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsah
 </SnippetTypes>
 ```
 
- `Expansion` Typ Určuje, zda fragment kódu se zobrazí při vyvolání **Vložit fragment** příkazu. `SurroundsWith` Typ Určuje, zda fragment kódu se zobrazí při vyvolání **obklopí s** příkazu.
+Typ určuje, zda se má fragment kódu zobrazit při vyvolání příkazu **Vložit fragment.** `Expansion` Typ určuje, zda se má fragment kódu zobrazit při vyvolání příkazu **s ohraničením.** `SurroundsWith`
 
 ### <a name="code-element"></a>Element kódu
 
- `Code` Element definuje text XML, který se vloží při vyvolání fragmentu kódu.
+`Code` Element definuje text XML, který bude vložen při vyvolání fragmentu kódu.
 
 > [!NOTE]
-> Fragment textu XML musí být uzavřena do `<![CDATA[...]]>` oddílu.
+> Text fragmentu XML musí být uzavřen v `<![CDATA[...]]>` oddílu.
 
- Tady je `Code` element, který je vytvořen pomocí standardní fragment kódu.
+Následuje `Code` prvek, který je vytvořen pomocí často používaného fragmentu kódu.
 
 ```xml
 <Code Language="XML">
@@ -75,15 +75,15 @@ XML editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsah
 </Code>
 ```
 
- `Code` Element obsahuje tři proměnné.
+`Code` Element obsahuje tři proměnné.
 
-- $name$ je uživatelem definované proměnné. Vytvoří `name` element, který se má upravit hodnotu, která výchozí hodnota je "name". Uživatelem definované proměnné jsou definovány pomocí `Literal` elementu.
+- $name $ je uživatelsky definovaná proměnná. Vytvoří `name` prvek, který má upravitelnou hodnotu, která má výchozí hodnotu "Name". Uživatelsky definované proměnné jsou definovány pomocí `Literal` elementu.
 
-- Vybraná $$ je předdefinovaná proměnná. Představuje text, který byl vybrán v editoru XML před vyvoláním fragmentu kódu. Umístění tato proměnná Určuje, kde se zobrazí vybraný text ve fragmentu kódu obklopující výběr.
+- $selected $ je předdefinovaná proměnná. Představuje text, který byl vybrán v editoru XML před vyvoláním fragmentu. Umístění této proměnné určuje, kde se vybraný text zobrazí ve fragmentu kódu, který tento výběr obklopuje.
 
-- $end$ je předdefinovaná proměnná. Když uživatel stiskne **Enter** dokončete úpravu polí fragmentu kódu, tato proměnná Určuje, kde znak stříšky (^) je přesunuta do.
+- $end $ je předdefinovaná proměnná. Když uživatel stiskne klávesu **ENTER** k dokončení úprav polí fragmentu kódu, tato proměnná Určuje, kde se kurzor (^) přesune na.
 
-  Výše uvedené `Code` element vloží následující text XML:
+  Výše uvedený `Code` element vloží následující text XML:
 
 ```xml
 <test>
@@ -91,11 +91,11 @@ XML editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsah
 </test>
 ```
 
- Hodnota elementu, který název je označen jako upravitelnou oblastí.
+Hodnota elementu Name je označena jako upravitelná oblast.
 
-### <a name="literal-element"></a>Literal element
+### <a name="literal-element"></a>Element Literal
 
- `Literal` Element slouží k identifikaci Nahrazovací text, kterou lze přizpůsobit po vložení do souboru. Například řetězcové literály, číselné hodnoty a některé názvy proměnných lze deklarovat jako literály. Můžete definovat libovolný počet literály v fragment XML dozvídat a můžete se k nim z více než jednou v tomto fragmentu kódu. Následující je příklad `Literal` element, který definuje proměnnou $name$, jejíž výchozí hodnota je "name".
+`Literal` Prvek slouží k identifikaci nahrazujícího textu, který lze přizpůsobit poté, co je vložen do souboru. Například literálové řetězce, číselné hodnoty a některé názvy proměnných lze deklarovat jako literály. Ve fragmentu kódu XML můžete definovat libovolný počet literálů a můžete na ně odkazovat několikrát v rámci fragmentu. Následuje příklad `Literal` prvku, který definuje $Name $ Variable, jejíž výchozí hodnota je "Name".
 
 ```xml
 <Literal>
@@ -104,7 +104,7 @@ XML editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsah
 </Literal
 ```
 
- Literály najdete také na funkce. XML editor obsahuje funkci s názvem **LookupPrefix**. **LookupPrefix** funkce vyhledá daného oboru názvů identifikátoru URI z umístění v dokumentu XML, že tento fragment kódu je vyvolána z a vrátí předponu oboru názvů, která je definována pro tento obor názvů, pokud existuje, a obsahuje dvojtečkou (:) v názvu. Následující je příklad `Literal` element, který se používá **LookupPrefix** funkce.
+Literály mohou také odkazovat na funkce. Editor XML obsahuje funkci s názvem **LookupPrefix**. Funkce **LookupPrefix** vyhledá daný identifikátor URI oboru názvů z umístění v dokumentu XML, ze kterého je tento fragment kódu vyvolán, a vrátí předponu oboru názvů, která je definována pro daný obor názvů, pokud existuje, a obsahuje dvojtečku (:) v tomto názvu. Následuje příklad `Literal` prvku, který používá funkci **LookupPrefix** .
 
 ```xml
 <Literal Editable="false">
@@ -113,10 +113,10 @@ XML editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsah
 </Literal>
 ```
 
- Proměnné $ $prefix pak využijete jinde v fragment XML.
+Proměnnou $prefix $ lze následně použít jinde ve fragmentu kódu XML.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Fragmentů XML](../xml-tools/xml-snippets.md)
-- [Postupy: Použití fragmentů XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Fragmenty kódu XML](../xml-tools/xml-snippets.md)
+- [Postupy: Použití fragmentů kódu XML](../xml-tools/how-to-use-xml-snippets.md)
 - [Postupy: Generování fragmentu XML ze schématu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

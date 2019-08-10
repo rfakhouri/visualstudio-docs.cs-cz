@@ -14,33 +14,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aedaf5c31eca900ec1730622dfc7ff6f026a61a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7322ee72509a199e3b4168a0b24083fe463e2457
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789132"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925963"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Výchozí možnosti jazyka Visual Basic, projekty, dialogové okno Možnosti
-Určuje výchozí nastavení pro možnosti projektu jazyka Visual Basic. Po vytvoření nového projektu je zadaná možnost příkazy se přidají do záhlaví projektu v editoru kódu. Platí pro všechny projekty jazyka Visual Basic.
+Určuje výchozí nastavení pro Visual Basic možnosti projektu. Při vytvoření nového projektu budou zadané příkazy Option přidány do záhlaví projektu v editoru kódu. Možnosti platí pro všechny projekty Visual Basic.
 
- Přístup v tomto dialogovém okně **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **projekty a řešení** složku a pak klikněte na tlačítko **VB výchozí**.
+Chcete-li získat přístup k tomuto dialogovému oknu, v nabídce **nástroje** klikněte na položku **Možnosti**, rozbalte složku **projekty a řešení** a potom klikněte na položku **výchozí hodnoty VB**.
 
  **Možnost Explicit**
 
- Nastaví výchozí nastavení kompilátoru, aby se vyžadují explicitní deklarace proměnných. Ve výchozím nastavení **Option Explicit** je nastavena na **na**. Další informace najdete v tématu [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
+Nastaví výchozí kompilátor tak, aby se vyžadovaly explicitní deklarace proměnných. Ve výchozím nastavení je **možnost explicitně** nastavenána hodnotu Zapnuto. Další informace najdete v tématu [/OptionExplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
 
  **Možnost Strict**
 
- Nastaví výchozí nastavení kompilátoru, aby se vyžadují explicitní zužující převody a nepovoluje pozdní vazbu. Ve výchozím nastavení **Option Strict** je nastavena na **vypnout**. Další informace najdete v tématu [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
+Nastaví výchozí kompilátor tak, aby byly vyžadovány explicitní zužující převody a pozdní vazba není povolena. Ve výchozím nastavení je **možnost Option Strict** nastavená na **off (vypnuto**). Další informace najdete v tématu [/OptionStrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
 
  **Možnost Compare**
 
- Nastaví výchozí nastavení kompilátoru pro porovnávání řetězců: binární soubor (malá a velká písmena) nebo text (velká a malá písmena.) Ve výchozím nastavení **Option Compare** je nastavena na **binární**. Další informace najdete v tématu [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
+Nastaví výchozí kompilátor pro porovnávání řetězců: binární (rozlišuje velká a malá písmena) nebo text (bez rozlišení velkých a malých písmen). Ve výchozím nastavení je **možnost Compare** nastavena na hodnotu **Binary**. Další informace najdete v tématu [/OptionCompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
- **Option Infer**
+ **Odvoditelné možnosti**
 
- Nastaví výchozí nastavení kompilátoru pro odvození místního typu. Ve výchozím nastavení **Option Infer** je nastavena na **na** pro nově vytvořených projektů a získat **vypnout** pro migrované projekty vytvořené ve starších verzích jazyka Visual Basic. Další informace najdete v tématu [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
+Nastaví výchozí kompilátor pro odvození lokálního typu. Ve výchozím nastavení je **možnost odvozování** u nově vytvořených projektů a u migrovaných projektů vytvořených v dřívějších verzích Visual Basic nastavena na hodnotu **zapnuto** . Další informace najdete v tématu [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 
 ## <a name="see-also"></a>Viz také
 

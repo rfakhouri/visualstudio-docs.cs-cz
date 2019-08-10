@@ -1,42 +1,42 @@
 ---
-title: Výchozí klávesové zkratky v sadě Visual Studio pro Mac
-description: V tomto článku jsou uvedené výchozí klávesové zkratky v sadě Visual Studio pro Mac
+title: Výchozí klávesové zkratky
+description: V tomto článku jsou uvedené výchozí klávesové zkratky v Visual Studio pro Mac
 ms.date: 03/14/2019
 author: bytesguy
-ms.author: adhartle
+ms.author: crdun
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 498cea9cdc32eab48d4f861f349e2076bb312bb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 371f1e93405d3034bda4259831cee27c6f52a40c
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997166"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872247"
 ---
-# <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Výchozí klávesové zkratky v sadě Visual Studio pro Mac
+# <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Výchozí klávesové zkratky v Visual Studio pro Mac
 
-Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí navigace klávesnicí](accessibility.md#how-to-use-keyboard-navigation).
+Informace o přístupnosti klávesnice najdete [v tématu How to: Použijte navigaci](accessibility.md#how-to-use-keyboard-navigation)pomocí klávesnice.
 
-Řadu příkazů v sadě Visual Studio for Mac můžete přistupovat pomocí příslušné klávesové zkratky. Tento dokument obsahuje seznam výchozí klávesové zkratky pro **sady Visual Studio** klávesová zkratka schématu. Další informace o postupu při změně klávesová zkratka schématu naleznete v tématu [přizpůsobení integrovaného vývojového prostředí](customizing-the-ide.md#key-bindings). Můžete také upravit klávesové zkratky pro příkaz using **Visual Studio for Mac** > **Předvolby** položky nabídky a zvolíte **prostředí**  >  **Vazeb klíče** v **Předvolby** okna.
+K nejrůznějším příkazům v Visual Studio pro Mac můžete přistupovat pomocí příslušné klávesové zkratky. Tento dokument obsahuje seznam výchozích klávesových zkratek pro schéma vázání klíčů sady **Visual Studio** . Další informace o tom, jak změnit schéma vázání klíčů, najdete v tématu [přizpůsobení rozhraní IDE](customizing-the-ide.md#key-bindings). Zástupce příkazu můžete také přizpůsobit pomocí položky nabídky**Předvolby** **Visual Studio pro Mac** > a volbou**vazby klíče** **prostředí** > v okně **Předvolby** .
 
 > [!TIP]
-> Klávesové zkratky, zobrazí v tomto dokumentu a předvolby klíčové vazby v sadě Visual Studio pro Mac, jsou ilustrovány pomocí symbolů běžně používá v systému macOS. Pokud si nejste jisti symbolu, přečtěte si [macOS klíče symboly loopkup tabulky](#macos-key-symbols-lookup).
+> Klávesové zkratky zobrazené v tomto dokumentu a předvolby pro vázání klíčů v Visual Studio pro Mac se zobrazují pomocí symbolů běžně používaných v macOS. Pokud si nejste jisti symbolem, podívejte se do [tabulky MacOS Key Symbols loopkup](#macos-key-symbols-lookup).
 
 ## <a name="code-navigation"></a>Navigace v kódu
 
 |Příkazy|Klávesové zkratky|
 |-|-|
 |Najít odkazy|**⇧⌘R**, **F12**|
-|Přejít na deklaraci|**⌘D**, **F12**|
+|Přejít k deklaraci|**⌘D**, **F12**|
 |Další chyba|**⌥⇧⇟**, **⇧⌘F12**|
-|Dalším problémem v souboru|**⌥⇟**|
+|Další problém v souboru|**⌥⇟**|
 |Předchozí chyba|**⌥⇧⇞**|
 |Předchozí problém v souboru|**⌥⇞**|
 
-## <a name="debug"></a>Ladit
+## <a name="debug"></a>Ladění
 
 |Příkazy|Klávesové zkratky|
 |-|-|
-|Povolit nebo zakázat zarážku|**⌥⌘/**, **⌘F9**|
+|Povolit nebo zakázat zarážku|**⌥⌘/** , **⌘F9**|
 |Pause|**⌥⌘P**, **⌥⌘L5**|
 |Odebrat všechny zarážky|**⇧⌘F9**|
 |Spustit ke kurzoru|**⌘F10**|
@@ -45,14 +45,14 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Krokovat s vnořením|**⇧⌘I**, **⌘F11**|
 |Krokovat s Vystoupením|**⇧⌘U**, **⇧⌘F11**|
 |Krok přes|**⇧⌘O**, **F10**|
-|Přepnout zarážku|**⌘\\**, **F9**|
+|Přepnout zarážku|**⌘\\** , **F9**|
 |Zobrazit zarážky|**⌥⌘B**|
 
 ## <a name="designer"></a>Návrhář
 
 |Příkazy|Klávesové zkratky|
 |-|-|
-|Přepnout mezi souvisejícími soubory|**⌃⌘↑**|
+|Přepínat mezi souvisejícími soubory|**⌃⌘↑**|
 
 ## <a name="edit"></a>Upravit
 
@@ -62,7 +62,7 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Kopírovat|**⌘C**|
 |Vyjmout|**⌘X**|
 |Odstranit|**⌘⌫**|
-|Formátovat dokument|**⌃I**|
+|Formátovat dokument|**⌃ I**|
 |Odsadit výběr|**⌘]**|
 |Vložit|**⌘V**|
 |Předvolby|**⌘,**|
@@ -70,38 +70,38 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |přejmenování|**⌘R**, **F2**|
 |Vybrat vše|**⌘A**|
 |Zobrazit generování kódu|**⌘I**|
-|Přepnout všechny složení|**⌥⇧⌘↑**|
-|Definice přepínací tlačítko|**⌥⇧⌘↓**|
-|Fold přepínací tlačítko|**⌥⇧⌘←**|
-|Přepnout komentáře k řádkům|**⌘/**|
+|Přepnout všechna skládání|**⌥⇧⌘↑**|
+|Přepnout definice|**⌥⇧⌘↓**|
+|Přepnout skládání|**⌥⇧⌘←**|
+|Přepnout komentáře řádků|**⌘/**|
 |Vrácení zpět|**⌘Z**|
 |Zrušit odsazení výběru|**⌘[**|
-|Aktualizovat rámce z omezení|**⇧⌘R**|
+|Aktualizovat rámec z omezení|**⇧⌘R**|
 
-## <a name="f-integration"></a>F#Integrace
+## <a name="f-integration"></a>F#Spolupráci
 
 |Příkazy|Klávesové zkratky|
 |-|-|
-|Vymazat F# interaktivní|**⌃⌥C**|
-|F# Interactive|**⌃⌥F**|
-|Restartujte F# interaktivní|**⌃⌥R**|
-|Odeslat řádek do F# Interactive|**⌃⌥L**|
-|Odeslat reference do F# Interactive|**⌃⌥P**|
-|Odeslat výběr do F# Interactive|**⌃⏎**|
+|Zrušit F# interaktivní|**⌃⌥C**|
+|F# Interactive|**⌃ ⌥ F**|
+|Interaktivní F# restartování|**⌃ ⌥ R**|
+|Odeslat řádek do F# interaktivního|**⌃ ⌥ L**|
+|Odeslat odkazy na F# interaktivní|**⌃⌥P**|
+|Odeslat výběr do F# interaktivního|**⌃⏎**|
 
 ## <a name="file"></a>Soubor
 
 |Příkazy|Klávesové zkratky|
 |-|-|
 |Zavřít vše|**⇧⌘W**|
-|Zavřete soubor|**⌘W**|
+|Zavřít soubor|**⌘W**|
 |Zavřít pracovní prostor|**⌥⌘W**|
 |Nový soubor|**⌘N**|
 |Nové řešení|**⇧⌘N**|
 |Otevřít|**⌘O**|
 |Tisk|**⌘P**|
-|Ukončení|**⌘Q**|
-|Vrátit zpět|**⌘U**|
+|Ukončit|**⌘Q**|
+|Stane|**⌘U**|
 |Uložit|**⌘S**|
 |Uložit vše|**⇧⌘S**|
 
@@ -110,14 +110,14 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Příkazy|Klávesové zkratky|
 |-|-|
 |Dokumentace k rozhraní API|**⌥⌘?**|
-|Přehled API Unity|**⌘'**|
+|Reference k rozhraní API Unity|**⌘'**|
 
 ## <a name="other"></a>Ostatní
 
 |Příkazy|Klávesové zkratky|
 |-|-|
-|Implementovat zprávy Unity|**⇧⌘M**|
-|Kontrola|**⌥⌘I**|
+|Implementace zpráv Unity|**⇧⌘M**|
+|Prohlížen|**⌥⌘I**|
 
 ## <a name="project"></a>Project
 
@@ -126,8 +126,8 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Přidání souborů|**⌥⌘A**|
 |Sestavení|**⌘K**, **⇧F6**|
 |Sestavit vše|**⌘B**, **F6**|
-|Vyčistit|**⇧⌘K**|
-|Opětovné sestavení|**⌃⌘K**|
+|Odstranit|**⇧⌘K**|
+|Znovu sestavit|**⌃⌘K**|
 |Sestavit vše znovu|**⌃⌘B**|
 |Spustit ladění|**⌘⏎**, **F5**|
 |Spustit bez ladění|**⌥⌘⏎**, **⌃F5**|
@@ -137,7 +137,7 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 
 |Příkazy|Klávesové zkratky|
 |-|-|
-|Importovat Symbol|**⌃⌥␣**|
+|Importovat symbol|**⌃⌥␣**|
 |Rychlá oprava|**⌥⏎**|
 
 ## <a name="search"></a>Hledat
@@ -151,9 +151,9 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Najít předchozí|**⇧⌘G**, **⇧F3**|
 |Najít předchozí podobný výběr|**⇧⌘F3**|
 |Vyhledávání|**⌘F**|
-|Přejděte k souboru|**⇧⌘D**|
+|Přejít k souboru|**⇧⌘D**|
 |Přejít na řádek|**⌘L**|
-|Přejít na typ.|**⇧⌘T**|
+|Přejít na typ|**⇧⌘T**|
 |Přejděte na|**⌘.**|
 |Nahradit v souborech|**⌥⇧⌘F**|
 |Nahradit|**⌥⌘F**|
@@ -168,8 +168,8 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Odstranit následující slovo|**⌥⌦**|
 |Odstranit předchozí podslovo|**⌃⌫**|
 |Odstranit předchozí slovo|**⌥⌫**|
-|Odstranit znak napravo|**⌃D**|
-|Vymazat do konce řádku|**⌃K**|
+|Odstranit pravý znak|**⌃D**|
+|Odstranit až na konec řádku|**⌃ K**|
 |Dynamické zkratky|**⌃/**|
 |Rozšířit výběr|**⌥⇧↓**|
 |Rozšířit výběr|**⌥⇧↑**|
@@ -185,48 +185,48 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Rozšířit výběr na předchozí slovo|**⌥⇧←**|
 |Rozšířit výběr doleva|**⇧←**|
 |Rozšířit výběr doprava|**⇧→**|
-|Najít kurzor|**⌘\|**|
-|Přejít o jeden znak vlevo|**⌃B**|
-|Přejít doprava o jeden znak|**⌃F**|
+|Najít blikající kurzor|**⌘\|**|
+|Přejít o jeden znak doleva|**⌃B**|
+|Přejít o jeden znak vpravo|**⌃F**|
 |Přejít na začátek dokumentu|**⌘↑**|
 |Přejít na začátek řádku|**⌘←**, **⌃A**|
 |Přejít na konec dokumentu|**⌘↓**|
 |Přejít na konec řádku|**⌘→**, **⌃E**|
-|Přejít na odpovídající závorku|**⇧⌘\\**|
+|Přejít k párové závorce|**⇧⌘\\**|
 |Přejít na další řádek|**⌃N**|
-|Přejít na následující slovo|**⌥→**|
+|Přejít na následující slovo|**⌥ →**|
 |Přejít na předchozí řádek|**⌃P**|
 |Přejít na předchozí slovo|**⌥←**|
-|Vložit zalomení řádku za blikajícím kurzorem|**⌃O**|
-|Přesunout kurzor do konce řádku a vložit nový řádek|**⇧⏎**|
+|Vložit zalomení řádku za blikajícím kurzorem|**⌃ O**|
+|Přesunout blikající kurzor na konce řádku a vložit nový řádek|**⇧⏎**|
 |Posunout řádek nebo zvýrazněný výběr dolů|**⌥↓**|
 |Posunout řádek nebo zvýrazněný výběr nahoru|**⌥↑**|
-|Přesunout na další použití|**⌃⌥⌘↓**|
-|Přesunout na předchozí použití|**⌃⌥⌘↑**|
+|Přejít na další použití|**⌃⌥⌘↓**|
+|Přejít na předchozí použití|**⌃⌥⌘↑**|
 |Zobrazit seznam parametrů|**⌃⇧␣**|
 |Zobrazit rychlé informace|**⌘F1**|
-|Zobrazit rozsahy|**⌥⇧⌘P**|
-|Transponovat znaky|**⌃T**|
-|Zabalení &lt;div&gt;|**⌥⇧W**|
+|Zobrazit obory|**⌥⇧⌘P**|
+|Transponovat znaky|**⌃ T**|
+|Zalamovat pomocí &lt;div&gt;|**⌥⇧W**|
 
 ## <a name="view"></a>Zobrazit
 
 |Příkazy|Klávesové zkratky|
 |-|-|
-|System Center a zaměření dokumentu|**⌃L**|
-|Zaměření dokumentu|**F7**|
+|Vycentrovat a vybraný dokument|**⌃ L**|
+|Detailní dokument|**F7**|
 |Zobrazení na celé obrazovce|**⌃⌘F**|
-|Přesunout na následující kartu dokumentu|**⌥⌘→**|
-|Přesunout na předchozí kartu dokumentu|**⌥⌘←**|
-|Navigovat zpět|**⌃⌘←**|
-|Přejít dopředu|**⌃⌘→**|
+|Přesunout na další Poznámkový blok|**⌥⌘→**|
+|Přejít na předchozí Poznámkový blok|**⌥⌘←**|
+|Přejít zpátky|**⌃⌘←**|
+|Přejít vpřed|**⌃⌘→**|
 |Normální velikost|**⌘0**|
 |Jeden sloupec editoru|**⌥⌘1**|
 |Zobrazit další|**⌥⌘↓**, **F8**|
 |Zobrazit předchozí|**⌥⌘↑**, **⇧F8**|
-|Dva sloupce editoru|**⌥⌘2**|
-|Přiblížit|**⌘+**, **⌘=**|
-|Horizonální oddálení|**⌘-**, **⌘_**|
+|Dva sloupce editoru|**⌥ ⌘ 2**|
+|Přiblížit|**⌘+** , **⌘=**|
+|Oddálit|**⌘-** , **⌘_**|
 
 ## <a name="window"></a>Okno
 
@@ -235,41 +235,41 @@ Informace o přístupnost přes klávesnici, naleznete v tématu [jak: Pomocí n
 |Aktivovat 1|**⌘1**|
 |Aktivovat 2|**⌘2**|
 |Aktivovat 3|**⌘3**|
-|Aktivovat 4|**⌘4**|
+|Aktivace 4|**⌘4**|
 |Aktivovat 5|**⌘5**|
 |Aktivovat 6|**⌘6**|
-|Aktivace 7|**⌘7**|
+|Aktivovat 7|**⌘7**|
 |Aktivovat 8|**⌘8**|
 |Aktivovat 9|**⌘9**|
 |Skrýt ostatní|**⌥⌘H**|
-|Hide Visual Studio|**⌘H**|
-|Minimalizovat|**⌘M**|
-|Následující dokument|**⌘}**, **⌘F6**|
-|Předchozí dokument|**⌘{**, **⇧⌘F6**|
+|Skrýt Visual Studio|**⌘H**|
+|Minimální|**⌘M**|
+|Další dokument|**⌘}** , **⌘F6**|
+|Předchozí dokument|**⌘{** , **⇧⌘F6**|
 |Přepnout na následující dokument|**⌃⇥**|
 |Přepnout na další panel|**⌃⌥⇥**|
 |Přepnout na předchozí dokument|**⌃⇧⇥**|
 |Přepnout na předchozí panel|**⌃⌥⇧⇥**|
 
-## <a name="macos-key-symbols-lookup"></a>vyhledání klíče symboly macOS
+## <a name="macos-key-symbols-lookup"></a>macOS – vyhledávání symbolů klíčů
 
-|Symbol|Key|
+|Písmeno|Key|
 |-|-|
 |⌘|**Příkaz** (**cmd**)|
-|⌥|**Možnost** (**alt**)|
-|⇧|**SHIFT**|
-|⌃|**Ovládací prvek** (**ctrl**)
-|⇞|**Page Up** (**Pg nahoru**)|
-|⇟|**Page Down** (**Pg Dn**)|
-|⌫|**Odstranit** (**Backspace**)|
-|⌦|**Odstranit vpřed**|
-|⏎|**Vrátí**|
-|←→↑↓|**Klávesy se šipkami**|
+|⌥|**Možnost** (**ALT**)|
+|⇧|**Posouvá**|
+|⌃|**Ovládací prvek** (**CTRL**)
+|⇞|O **stránku nahoru** (**Pg nahoru**)|
+|⇟|O **stránku dolů** (**Rozlišující název stránky**)|
+|⌫|**Odstranit** (**BACKSPACE**)|
+|⌦|**Před odstraněním**|
+|⏎|**Vrátit**|
+|← → ↑ ↓|**Klávesy se šipkami**|
 |↖|**Domovská stránka**|
 |↘|**ukončení**|
-|␣|**MEZERNÍK**|
+|␣|**Mezerník**|
 |⇥|**Karta**|
 
 ## <a name="see-also"></a>Viz také:
 
-- [Klávesové zkratky v sadě Visual Studio (ve Windows)](/visualstudio/ide/tips-and-tricks-for-visual-studio)
+- [Klávesové zkratky v aplikaci Visual Studio (ve Windows)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

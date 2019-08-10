@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc94f3486a4a290dbcdff40303f58b8b42f3f9d9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825869"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926546"
 ---
 # <a name="troubleshoot-code-coverage"></a>Řešení problémů s pokrytím kódu
 
@@ -29,7 +29,7 @@ Další informace najdete v tématu [použití pokrytí kódu k určení, kolik 
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Možné příčiny zobrazení žádných nebo starých výsledků
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>Máte správnou verzi sady Visual Studio?
- Je třeba Visual Studio Enterprise.
+Je třeba Visual Studio Enterprise.
 
 ### <a name="no-tests-were-executed"></a>Nebyly provedeny žádné testy
 

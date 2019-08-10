@@ -1,5 +1,5 @@
 ---
-title: Třídy LINQ to SQL s jednou tabulkou dědičnosti (Návrhář O-R)
+title: Třídy LINQ to SQL s děděním jednou tabulkou (Návrhář O-R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,64 +11,64 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c99023f57cec8b920518ac702cf5c71988a163c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 157309d49fd46c4ecdd92236188a6739a3e9c2ad
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262871"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925405"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Návod: Vytvoření tříd LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)
-[Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) podporuje dědičnosti jedné tabulky, jak se zpravidla implementuje v relačních systémech. Tento názorný postup rozšiřují obecných kroků uvedených v [jak: Konfigurace dědičnosti pomocí Návrháře relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tématu a poskytuje některé reálná data pro demonstraci použití dědičnosti v [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Návod: Vytváření tříd LINQ to SQL pomocí dědičnosti s jednou tabulkou (O/R Designer)
+[Nástroje LINQ to SQL v aplikaci Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) podporují dědičnost jedné tabulky, protože je obvykle implementována v relačních systémech. Tento názorný postup se rozbalí na základě obecných kroků [uvedených v tématu Postupy: Nakonfigurujte dědičnost pomocí tématu o/R designeru](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) a poskytuje některá skutečná data k předvedení použití dědičnosti [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]v.
 
- V tomto návodu budete provádět následující úlohy:
+Během tohoto Názorného postupu provedete následující úlohy:
 
-- Vytvořit tabulku databáze a přidejte do ní data.
+- Vytvořte databázovou tabulku a přidejte do ní data.
 
-- Vytvoření aplikace Windows Forms.
+- Vytvořte aplikaci model Windows Forms.
 
-- Přidat [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] soubor do projektu.
+- [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] Přidejte soubor do projektu.
 
-- Vytvořte nové entity třídy.
+- Vytvořte nové třídy entit.
 
-- Nakonfigurujte tříd entit použít dědičnosti.
+- Nakonfigurujte třídy entit pro použití dědičnosti.
 
-- Dotazování zděděné třídy.
+- Dotaz na zděděnou třídu
 
-- Zobrazte data ve formuláři Windows.
+- Zobrazí data ve formuláři Windows.
 
-## <a name="create-a-table-to-inherit-from"></a>Vytvořte tabulku pro dědí z
- Pokud chcete zjistit, jak funguje dědičnosti, vytvoření malé `Person` tabulky, použijte ho jako základní třídu a pak vytvořte `Employee` objekt, který z něj dědí.
+## <a name="create-a-table-to-inherit-from"></a>Vytvoření tabulky, ze které se zdědí
+Chcete-li zjistit, jak dědičnost funguje, vytvořte `Person` malou tabulku, použijte ji jako základní třídu a pak `Employee` vytvořte objekt, který z něj dědí.
 
-### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Chcete-li vytvořit základní tabulky k předvedení dědičnosti
+### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Vytvoření základní tabulky k demonstraci dědičnosti
 
-1. V **Průzkumníka serveru** nebo **Průzkumník databáze**, klikněte pravým tlačítkem myši **tabulky** uzel a klikněte na tlačítko **přidat novou tabulku**.
+1. V **Průzkumník serveru** nebo **Průzkumníku databáze**klikněte pravým tlačítkem myši na uzel **tabulky** a pak klikněte na **Přidat novou tabulku**.
 
     > [!NOTE]
-    > Můžete použít databázi Northwind nebo jakékoli jiné databáze, které můžete přidat tabulku.
+    > Můžete použít databázi Northwind nebo jakoukoli jinou databázi, do které můžete přidat tabulku.
 
-2. V **návrháře tabulky**, přidejte následující sloupce v tabulce:
+2. V **Návrháři tabulky**přidejte do tabulky následující sloupce:
 
-    |Název sloupce|Datový typ|Povolit hodnoty Null|
+    |Název sloupce|Datový typ|Povoluje hodnoty null.|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**False**|
-    |**Typ**|**int**|**Hodnota TRUE**|
-    |**Jméno**|**nvarchar(200)**|**False**|
-    |**LastName**|**nvarchar(200)**|**False**|
-    |**Manager**|**int**|**Hodnota TRUE**|
+    |**ID**|**int**|**Chybné**|
+    |**Typ**|**int**|**Podmínka**|
+    |**Jméno**|**nvarchar(200)**|**Chybné**|
+    |**LastName**|**nvarchar(200)**|**Chybné**|
+    |**Manager**|**int**|**Podmínka**|
 
-3. Sloupec ID nastavte jako primární klíč.
+3. Nastavte sloupec ID jako primární klíč.
 
-4. Uložte tabulku a pojmenujte ho **osoba**.
+4. Uložte tabulku a pojmenujte ji **Person**.
 
-## <a name="add-data-to-the-table"></a>Přidání dat do tabulky
- Tak, aby můžete ověřit, jestli je správně nakonfigurovaný dědičnosti, musí v tabulce některá data pro každou třídu v jedné tabulky dědičnosti.
+## <a name="add-data-to-the-table"></a>Přidat data do tabulky
+Aby bylo možné ověřit, že je dědění správně nakonfigurováno, tabulka potřebuje nějaká data pro každou třídu v dědičnosti s jednou tabulkou.
 
-### <a name="to-add-data-to-the-table"></a>Chcete-li přidat data do tabulky
+### <a name="to-add-data-to-the-table"></a>Přidání dat do tabulky
 
-1. Otevřete v zobrazení dat v tabulce. (Klikněte pravým tlačítkem myši **osoba** tabulku v **Průzkumníka serveru** nebo **Průzkumník databáze** a klikněte na tlačítko **zobrazit Data tabulky**.)
+1. Otevřete tabulku v zobrazení dat. (Klikněte pravým tlačítkem myši na tabulku **osob** v **Průzkumník serveru** nebo v **Průzkumníku databáze** a klikněte na **Zobrazit data tabulky**.)
 
-2. Zkopírujte následující data do tabulky. (Můžete ho zkopírujte a vložte ho do tabulky tak, že vyberete celý řádek v **výsledky** podokně.)
+2. Zkopírujte do tabulky následující data. (Můžete ho zkopírovat a pak ho vložit do tabulky výběrem celého řádku v podokně **výsledků** .)
 
     ||||||
     |-|-|-|-|-|
@@ -81,75 +81,75 @@ ms.locfileid: "66262871"
     |**6**|**2**|**Tiffany**|**Phuvasate**|**1**|
     |**7**|**2**|**Alexey**|**Orekhov**|**2**|
     |**8**|**2**|**Michał**|**Poliszkiewicz**|**2**|
-    |**9**|**2**|**Tai**|**Jé**|**2**|
+    |**9**|**2**|**Černý**|**Yee**|**2**|
     |**10**|**2**|**Fabricio**|**Noriega**|**3**|
     |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
- Teď, když jste vytvořili v tabulce, vytvořte nový projekt, na které si předvedeme konfiguraci dědičnosti.
+Teď, když jste vytvořili tabulku, vytvořte nový projekt pro ukázku konfigurace dědičnosti.
 
-### <a name="to-create-the-new-windows-forms-application"></a>Chcete-li vytvořit novou aplikaci Windows Forms
+### <a name="to-create-the-new-windows-forms-application"></a>Vytvoření nové aplikace model Windows Forms
 
-1. V sadě Visual Studio na **souboru** nabídce vyberte možnost **nový** > **projektu**.
+1. V aplikaci Visual Studio v nabídce **soubor** vyberte **Nový** > **projekt**.
 
-2. Rozbalte buď **Visual C#** nebo **jazyka Visual Basic** v levém podokně vyberte **Windows Desktop**.
+2. V levém podokně rozbalte buď **vizuál C#**  , nebo **Visual Basic** a pak vyberte **Desktop Windows**.
 
-3. V prostředním podokně, vyberte **aplikace Windows Forms** typ projektu.
+3. V prostředním podokně vyberte typ projektu **aplikace model Windows Forms** .
 
-4. Pojmenujte projekt **InheritanceWalkthrough**a klikněte na tlačítko **OK**.
+4. Pojmenujte projekt **InheritanceWalkthrough**a klikněte na **tlačítko OK**.
 
-     **InheritanceWalkthrough** projekt je vytvořen a přidán do **Průzkumníka řešení**.
+     Vytvoří se projekt **InheritanceWalkthrough** a přidá se do **Průzkumník řešení**.
 
-## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>Do souboru třídy SQL do projektu přidejte LINQ
+## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>Přidání souboru tříd LINQ to SQL do projektu
 
-### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>Chcete-li přidat LINQ do SQL souboru do projektu
+### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>Přidání souboru LINQ to SQL do projektu
 
-1. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
+1. V nabídce **projekt** klikněte na příkaz **Přidat novou položku**.
 
-2. Klikněte na tlačítko **třídy LINQ to SQL** šablonu a pak klikněte na tlačítko **přidat**.
+2. Klikněte na šablonu **třídy LINQ to SQL** a pak klikněte na **Přidat**.
 
-     *Dbml* přidá soubor do projektu a **O/R Designer** otevře.
+     Soubor *. dbml* se přidá do projektu a otevře se **Návrhář o/R** .
 
-## <a name="create-the-inheritance-by-using-the-or-designer"></a>Vytvoření dědičnosti pomocí Návrháře relací objektů
- Konfigurace dědičnosti přetažením **dědičnosti** objektu z **nástrojů** na návrhovou plochu.
+## <a name="create-the-inheritance-by-using-the-or-designer"></a>Vytvoření dědičnosti pomocí návrháře O/R
+Nastavte dědičnost přetažením objektu dědičnosti z **panelu nástrojů** na návrhovou plochu.
 
-### <a name="to-create-the-inheritance"></a>Chcete-li vytvořit dědičnost
+### <a name="to-create-the-inheritance"></a>Vytvoření dědičnosti
 
-1. V **Průzkumníka serveru** nebo **Průzkumník databáze**, přejděte **osoba** tabulku, která jste vytvořili dříve.
+1. V **Průzkumník serveru** nebo **Průzkumníku databáze**přejděte do tabulky **Person** , kterou jste vytvořili dříve.
 
-2. Přetáhněte **osoba** tabulky do **O/R Designer** návrhovou plochu.
+2. Přetáhněte tabulku **Person** na návrhovou plochu **návrháře o/R** .
 
-3. Přetáhněte druhý **osoba** tabulky do **O/R Designer** a změňte její název na **zaměstnance**.
+3. Přetáhněte druhou tabulku **Person** do **návrháře o/R** a změňte její název na **Zaměstnanec**.
 
-4. Odstranit **správce** vlastnost z **osoba** objektu.
+4. Odstraňte vlastnost **správce** z objektu **Person** .
 
-5. Odstranit **typ**, **ID**, **FirstName**, a **LastName** vlastnosti z **zaměstnance** objektu. (Jinými slovy, odstraní se všechny vlastnosti s výjimkou **správce**.)
+5. Z objektu **Employee** odstraňte vlastnosti **Type**, **ID**, **FirstName**a **LastName** . (Jinými slovy, odstraňte všechny vlastnosti s výjimkou **manažera**.)
 
-6. Z **Návrhář relací objektů** karty **nástrojů**, vytvořit **dědičnosti** mezi **osoba** a  **Zaměstnanec** objekty. Chcete-li to provést, klikněte na tlačítko **dědičnosti** položky v **nástrojů** a uvolněte tlačítko myši. Klikněte **zaměstnance** objekt a potom **osoba** objektu v **O/R Designer**. Pak odkazuje na šipku v linii dědičnosti **osoba** objektu.
+6. Na kartě **Návrhář relací objektů** **panelu nástrojů**vytvořte **Dědičnost** mezi objekty **Person** a **Employee** . Provedete to tak, že kliknete na položku **Dědičnost** v **sadě nástrojů** a uvolníte tlačítko myši. Potom klikněte na objekt **zaměstnance** a pak na objekt **Person** v **Návrháři o/R**. Šipka na čáře dědičnosti pak odkazuje na objekt **Person** .
 
-7. Klikněte na tlačítko **dědičnosti** řádku na návrhové ploše.
+7. Klikněte na čáru dědičnosti na návrhové ploše.
 
-8. Nastavte **vlastnost diskriminátoru** vlastnost **typ**.
+8. Nastavte vlastnost **vlastnosti diskriminátoru** na **typ**.
 
-9. Nastavte **hodnota diskriminátoru odvozené třídy** vlastnost **2**.
+9. Vlastnost **hodnoty diskriminátoru odvozené třídy** nastavte na **2**.
 
-10. Nastavte **hodnota diskriminátoru základní třídy** vlastnost **1**.
+10. Nastavte vlastnost **hodnoty diskriminátoru základní třídy na hodnotu** **1**.
 
-11. Nastavte **výchozí dědičnost** vlastnost **osoba**.
+11. Nastavte vlastnost **Default dědičnosti** na **Person**.
 
 12. Sestavte projekt.
 
-## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Dotaz na zděděné třídu a zobrazení dat ve formuláři
- Nyní přidáte nějaký kód do formuláře, který se dotazuje na určité třídy v objektovém modelu.
+## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Dotaz na zděděnou třídu a zobrazení dat ve formuláři
+Nyní do formuláře přidáte nějaký kód, který se dotazuje na konkrétní třídu v objektovém modelu.
 
-### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>Můžete vytvořit dotaz LINQ a zobrazit výsledky ve formuláři
+### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>Vytvoření dotazu LINQ a zobrazení výsledků ve formuláři
 
-1. Přetáhněte **ListBox** do **Form1**.
+1. Přetáhněte **seznam** na **Form1**.
 
-2. Klikněte dvakrát na formulář pro vytvoření `Form1_Load` obslužné rutiny události.
+2. Dvojitým kliknutím na formulář vytvoříte `Form1_Load` obslužnou rutinu události.
 
-3. Přidejte následující kód, který `Form1_Load` obslužné rutiny události:
+3. Do obslužné rutiny `Form1_Load` události přidejte následující kód:
 
     ```vb
     Dim dc As New DataClasses1DataContext
@@ -175,20 +175,20 @@ ms.locfileid: "66262871"
     ```
 
 ## <a name="test-the-application"></a>Testování aplikace
- Spusťte aplikaci a ověřte, že záznamy zobrazené v seznamu jsou všichni zaměstnanci (záznamy, jejichž hodnota 2 v jejich **typ** sloupec).
+Spusťte aplikaci a ověřte, že záznamy zobrazené v seznamu jsou všichni zaměstnanci (záznamy, které mají ve sloupci **typ** hodnotu 2).
 
 ### <a name="to-test-the-application"></a>Testování aplikace
 
-1. Stisknutím klávesy **F5**.
+1. Stiskněte klávesu **F5**.
 
-2. Ověření, který pouze záznamy, které mají hodnotu 2 v jejich **typ** sloupce se zobrazí.
+2. Ověřte, zda jsou zobrazeny pouze záznamy, které mají ve sloupci **typ** hodnotu 2.
 
-3. Zavřete formulář. (Na **ladění** nabídky, klikněte na tlačítko **Zastavit ladění**.)
+3. Zavřete formulář. (V nabídce **ladění** klikněte na položku **Zastavit ladění**.)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Návod: Vytvoření LINQ na třídy SQL (Návrhář O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Nástroje LINQ to SQL v aplikaci Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Návod: Vytváření tříd LINQ to SQL (Návrhář O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Postupy: Přiřazení uložených procedur za účelem aktualizací, vkládání a odstraňování (Návrhář relací objektů)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Postupy: Generování objektového modelu v jazyce Visual Basic neboC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Postupy: Generování objektového modelu v Visual Basic neboC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

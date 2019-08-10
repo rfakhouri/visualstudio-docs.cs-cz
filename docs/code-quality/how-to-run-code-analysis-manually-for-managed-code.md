@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75b518e1bf59ebd0e92d7cef311277ccf7d98c82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 588f78c600aa7c78894a2e0bdc7f4443f4e86b31
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815834"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923969"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Postupy: Ruční spuštění analýzy kódu pro spravovaný kód
-Nástroj pro analýzu kódu vám poskytuje informace o možných chyb ve zdrojovém kódu. Můžete spustit analýzu kódu automaticky s každým sestavením projektu kódu a můžete také spustit analýzu kódu ručně. Pravidla, která jsou kontrolována při spuštění analýzy kódu jsou určeny na stránce analýzy kódu stránky vlastností projektu. Další informace najdete v tématu [jak: Konfigurace analýzy kódu pro spravovaný projekt kódu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+Nástroj Analýza kódu poskytuje informace o možných vadch ve vašem zdrojovém kódu. Můžete spustit analýzu kódu automaticky s každým sestavením kódu projektu a také můžete spustit analýzu kódu ručně. Pravidla, která jsou kontrolována při spuštění analýzy kódu, jsou uvedena na stránce vlastností projektu na stránce Analýza kódu. Další informace najdete v tématu [jak: Konfigurace analýzy kódu pro projekt](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)spravovaného kódu.
 
-### <a name="to-run-code-analysis-manually"></a>Pro ruční spuštění analýzy kódu
+### <a name="to-run-code-analysis-manually"></a>Ruční spuštění analýzy kódu
 
-1. V **Průzkumníka řešení**, klikněte na projekt.
+1. V **Průzkumník řešení**klikněte na projekt.
 
-2. Na **analyzovat** nabídky, klikněte na tlačítko **spustit analýzu kódu na** *název projektu*.
+2. V nabídce **analyzovat** klikněte na možnost **Spustit analýzu kódu na** *název projektu*.

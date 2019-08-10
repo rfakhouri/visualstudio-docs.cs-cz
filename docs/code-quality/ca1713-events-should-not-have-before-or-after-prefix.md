@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8dba144740a2a39494323a456cddf90131e35c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee39ffbfd2e73a14fd42d574cef92a24784d1ad4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545880"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921676"
 ---
 # <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Události by neměly mít předponu před nebo po
 
@@ -30,16 +30,16 @@ ms.locfileid: "62545880"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Název události začíná 'Before' a 'After'.
+## <a name="cause"></a>příčina
+Název události začíná na ' before ' nebo ' After '.
 
 ## <a name="rule-description"></a>Popis pravidla
- Názvy událostí, měl by popisovat akce, která vyvolává událost. Pro pojmenování souvisejících událostí vyvolaných v určitém pořadí je vhodné používat přítomný a minulý čas, který naznačí relativní pozici v pořadí akcí. Například při pojmenování dvojice událostí, který je vyvolána při zavření prostředek, můžete pojmenovat ho "Zavřít" a "Uzavřeno" místo "BeforeClose" a "AfterClose".
+Názvy událostí by měly popsat akci, která vyvolá událost. Pro pojmenování souvisejících událostí vyvolaných v určitém pořadí je vhodné používat přítomný a minulý čas, který naznačí relativní pozici v pořadí akcí. Například při pojmenovávání páru událostí, které jsou vyvolány při zavírání prostředku, můžete pojmenovat klíčové slovo ' Zavřít ' a ' Zavřít ' namísto ' BeforeClose ' a ' AfterClose '.
 
- Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. To snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
+Zásady vytváření názvů poskytují běžný vzhled pro knihovny, které cílí na modul CLR (Common Language Runtime). Tím se zmenší výuková křivka, která je požadována pro nové knihovny softwaru, a zvyšuje důvěru zákazníků, že knihovna byla vyvinuta někým, kdo má zkušenosti s vývojem spravovaného kódu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Odebrání předpony názvu události a zvažte možnost změnit název, který má používat přítomný a minulý čas slovesa.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Odeberte předponu z názvu události a zvažte změnu názvu tak, aby používala stávající nebo poslední vhodné operace.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.

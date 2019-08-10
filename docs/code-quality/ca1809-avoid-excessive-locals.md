@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4ac6947f8424c3b9aa7429ee378b4bb89be73ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d1c2f76258be3b0be6409bffd002fd916883ab2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545238"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921539"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: Vyhněte se nadměrným lokálním hodnotám
 
@@ -27,20 +27,20 @@ ms.locfileid: "62545238"
 |-|-|
 |TypeName|AvoidExcessiveLocals|
 |CheckId|CA1809|
-|Kategorie|Microsoft.Performance|
+|Kategorie|Microsoft. Performance|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
- Člen obsahuje více než 64 místních proměnných, z nichž některé mohou být vygenerovaný kompilátorem.
+## <a name="cause"></a>příčina
+Člen obsahuje více než 64 místních proměnných, z nichž některé mohou být generovány kompilátorem.
 
 ## <a name="rule-description"></a>Popis pravidla
- Běžnou optimalizací výkonu je uložení hodnoty v registru procesoru místo v paměti, což se označuje jako *enregistering* hodnotu. Modul common language runtime bere v úvahu pro enregistration až 64 místních proměnných. Proměnné, které nejsou uloženy v registrech procesoru jsou vloženy do zásobníku a musí přesunout do registru před manipulaci. Chcete-li možnost povolit, že všechny místní proměnné získat uloženy v registrech procesoru, omezte počet lokálních proměnných na 64.
+Běžnou optimalizací výkonu je uložení hodnoty v registru procesoru místo v paměti, která se označuje jako *zaregistrování* hodnoty. Modul CLR (Common Language Runtime) zohledňuje až 64 místních proměnných pro enregistration. Proměnné, které nejsou registrován, jsou vloženy do zásobníku a musí být před manipulací přesunuty do registru. Pro umožnění pravděpodobnosti, že všechny místní proměnné získají registrován, omezte počet místních proměnných na 64.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, Refaktorujte implementace používat více než 64 místních proměnných.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, refaktorujte implementaci, aby nepoužívala více než 64 místních proměnných.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné, můžete potlačit upozornění tohoto pravidla nebo zakážete pravidlo, pokud výkon není problém.
+Je bezpečné potlačit upozornění z tohoto pravidla nebo zakázat pravidlo, pokud se nejedná o problém s výkonem.
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1804: Odeberte nepoužívané místní hodnoty](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Odebrat nepoužívané místní hodnoty](../code-quality/ca1804-remove-unused-locals.md)

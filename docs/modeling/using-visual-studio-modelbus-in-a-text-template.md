@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9324c33e383029fa6f98a9b890309cc0a11eb95d
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: d3ea71b2a0226036a923395bbc2dfa3d6b4fc58c
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226268"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870487"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Použití prvku Visual Studio ModelBus v textové šabloně
 
@@ -20,16 +20,16 @@ Při zápisu textových šablon, které čtou modelu, který obsahuje odkazy na 
 
 - DSL, která je cílem dané odkazy musí být ModelBus adaptér, který je nakonfigurovaný pro přístup z textové šablony. Pokud můžete také získat přístup k DSL od jiného kódu, se vyžaduje kromě standardní adaptér ModelBus překonfigurovaná adaptér.
 
-     Správce adaptéru musí dědit z <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager> a musí mít atribut `[HostSpecific(HostName)]`.
+     Správce adaptéru musí dědit z [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)) a musí mít atribut `[HostSpecific(HostName)]`.
 
-- Šablona musí dědit z <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
+- Šablona musí dědit z [ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140)).
 
 > [!NOTE]
 > Pokud chcete číst DSL modely, které neobsahují ModelBus odkazy, můžete použít procesorů pro direktivy, které jsou generovány ve vašich projektech DSL. Další informace najdete v tématu [přístup k modelům z textových šablon](../modeling/accessing-models-from-text-templates.md).
 
 Další informace o textových šablonách naleznete v tématu [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
-## <a name="create-a-model-bus-adapter-for-access-from-text-templates"></a>Vytvoření adaptéru modelu Service Bus pro přístup z textových šablon
+## <a name="create-a-model-bus-adapter-for-access-from-text-templates"></a>Vytvoření adaptéru modelové sběrnice pro přístup z textových šablon
 
 Přeložit odkaz ModelBus v textové šabloně, cíl DSL musí mít kompatibilní adaptéru. Spuštění textové šablony v oddělené doméně AppDomain. z dokumentu editory sady Visual Studio, a proto má adaptér načíst model ne přístup prostřednictvím DTE.
 
@@ -57,7 +57,7 @@ Přeložit odkaz ModelBus v textové šabloně, cíl DSL musí mít kompatibiln�
 
     4. V každém `*.tt` souboru nového projektu změnit obor názvů.
 
-    5. Klikněte pravým tlačítkem na nový projekt v **Průzkumníka řešení** a potom klikněte na tlačítko **vlastnosti**. V editoru vlastností změňte názvy generované sestavení a výchozí obor názvů.
+    5. Klikněte pravým tlačítkem na nový projekt v **Průzkumník řešení** a pak klikněte na **vlastnosti**. V editoru vlastností změňte názvy generované sestavení a výchozí obor názvů.
 
     6. V projektu DslPackage přidejte odkaz na nový projekt adaptéru tak, aby se odkazy na obou adaptérů.
 
@@ -76,7 +76,7 @@ Přeložit odkaz ModelBus v textové šabloně, cíl DSL musí mít kompatibiln�
 
 4. V AdapterManager.tt:
 
-    - Změňte deklaraci AdapterManagerBase tak, aby dědila z <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.
+    - Změňte deklaraci AdapterManagerBase tak, aby dědila z [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)).
 
          `public partial class <#= dslName =>AdapterManagerBase :`
 
@@ -94,11 +94,11 @@ Přeložit odkaz ModelBus v textové šabloně, cíl DSL musí mít kompatibiln�
 
 5. **Transformovat všechny šablony** a znovu sestavte řešení. Žádné chyby buildu se budou objevovat.
 
-## <a name="write-a-text-template-that-can-resolve-modelbus-references"></a>Zápis textové šablony, který dokáže přeložit odkazy ModelBus
+## <a name="write-a-text-template-that-can-resolve-modelbus-references"></a>Napsat textovou šablonu, která může vyřešit odkazy ModelBus
 
 Obvykle začněte šablonou, která čte a generuje soubory z "zdroj" DSL. Tato šablona používá směrnice, které se generuje v projektu DSL zdroje pro čtení zdrojových souborů modelu způsobem, který je popsaný v [přístup k modelům z textových šablon](../modeling/accessing-models-from-text-templates.md). Zdroj DSL však obsahuje ModelBus odkazy na "cíl" DSL. Proto budete chtít povolit kód šablony k vyřešení odkazů a přístup k cíli DSL. Proto musíte přizpůsobit šablonu pomocí následujících kroků:
 
-- Změňte základní třídu šablony, která má <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
+- Změňte základní třídu šablony na [ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140)).
 
 - Zahrnout `hostspecific="true"` v direktivě šablony.
 
@@ -179,7 +179,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. V definici DSL diagramu, klikněte pravým tlačítkem na prázdnou část diagramu, který není v horní části a klikněte na **povolit Modelbus**.
 
-   Pokud nevidíte **povolit Modelbus**, stáhněte a nainstalujte rozšíření ModelBus vmsdk následující položky.
+   Pokud nevidíte **možnost povolit ModelBus**, Stáhněte a nainstalujte rozšíření ModelBus VMSDK.
 
 3. V **povolit Modelbus** dialogu **zveřejnit tento DSL k ModelBus**a potom klikněte na tlačítko **OK**.
 
@@ -187,13 +187,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 Teď máte DSL, který je přístupný pomocí textových šablon pomocí ModelBus. Odkazy na ni může být vyřešen v kódu příkazy, obslužné rutiny událostí nebo pravidla, které pracují v AppDomain soubor editoru modelů. Ale textových šablon spustit v oddělené doméně AppDomain a nemůžou přistupovat modelu se právě upravuje. Pokud chcete získat přístup ModelBus odkazy na tento DSL z textové šablony, musíte mít samostatný objekt ModelBusAdapter.
 
-### <a name="create-a-modelbus-adapter-that-is-configured-for-text-templates"></a>Vytvořit ModelBus adaptér, který je nakonfigurovaný pro textové šablony
+### <a name="create-a-modelbus-adapter-that-is-configured-for-text-templates"></a>Vytvoření adaptéru ModelBus, který je nakonfigurovaný pro textové šablony
 
-1. V Průzkumníku souborů, zkopírujte a vložte tato složka obsahuje *ModelBusAdapter.csproj*.
+1. V Průzkumníku souborů zkopírujte a vložte složku, která obsahuje *ModelBusAdapter. csproj*.
 
-    Název složky **T4ModelBusAdapter**.
+    Pojmenujte složku **T4ModelBusAdapter**.
 
-    Přejmenovat soubor projektu *T4ModelBusAdapter.csproj*.
+    Přejmenujte soubor projektu *T4ModelBusAdapter. csproj*.
 
 2. V Průzkumníku řešení přidejte do řešení MBProvider T4ModelBusAdapter. Klikněte pravým tlačítkem na uzel řešení, přejděte na **přidat**a potom klikněte na tlačítko **existující projekt**.
 
@@ -209,11 +209,11 @@ Teď máte DSL, který je přístupný pomocí textových šablon pomocí ModelB
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
-7. V `T4ModelBusAdapter` projektu, přidejte odkaz na: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
+7. `T4ModelBusAdapter` Do projektu přidejte odkaz na: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
 
 8. Otevřete T4ModelBusAdapter\AdapterManager.tt:
 
-   1. Změňte základní třídu AdapterManagerBase k <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>. Tato část souboru teď vypadá podobně jako tento.
+   1. Změňte základní třídu AdapterManagerBase na [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)). Tato část souboru teď vypadá podobně jako tento.
 
        ```
        namespace <#= CodeGenerationUtilities.GetPackageNamespace(this.Dsl) #>.T4ModelBusAdapters
@@ -247,9 +247,9 @@ Teď máte DSL, který je přístupný pomocí textových šablon pomocí ModelB
 
 9. Klikněte na tlačítko **Transformovat všechny šablony** v nadpisu panel z Průzkumníka řešení.
 
-10. Stisknutím klávesy **F5**.
+10. Stiskněte klávesu **F5**.
 
-11. Ověřte, zda je funkční DSL. V experimentální projektu otevřete `Sample.provider`. Ukončete experimentální instanci sady Visual Studio.
+11. Ověřte, že DSL funguje. V experimentální projektu otevřete `Sample.provider`. Ukončete experimentální instanci sady Visual Studio.
 
     Nyní možné vyřešit ModelBus odkazy na tento DSL textové šablony a taky na běžnou kódu.
 
@@ -297,7 +297,7 @@ Teď máte DSL, který je přístupný pomocí textových šablon pomocí ModelB
 
 5. Uložte soubor. (Ještě nezavírejte experimentální instanci sady Visual Studio.)
 
-   Vytvořili jste model, který obsahuje odkaz na prvek v jiném modelu ModelBus.
+   Vytvořili jste model, který obsahuje odkaz ModelBus na prvek v jiném modelu.
 
 ### <a name="resolve-a-modelbus-reference-in-a-text-template"></a>Přeložení odkazu ModelBus v textové šabloně
 
@@ -357,7 +357,7 @@ Teď máte DSL, který je přístupný pomocí textových šablon pomocí ModelB
 
 1. Ukončete experimentální instanci sady Visual Studio, pokud je spuštěn.
 
-2. Přidejte do ní soubor *MBConsumer\Dsl\Custom.cs* a nastavte jeho obsah na následující:
+2. Přidejte soubor s názvem *MBConsumer\Dsl\Custom.cs* a nastavte jeho obsah na následující:
 
     ```csharp
     namespace Company.MB2Consume
@@ -388,7 +388,7 @@ Teď máte DSL, který je přístupný pomocí textových šablon pomocí ModelB
     }
     ```
 
-3. Stisknutím klávesy **Ctrl**+**F5**.
+3. Stiskněte klávesu **CTRL**+**F5**.
 
 4. V experimentální instanci sady Visual Studio, otevřete `Debugging\Sample.consume`.
 

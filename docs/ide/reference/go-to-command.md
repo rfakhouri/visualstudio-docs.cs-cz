@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bdc1c97d35b79fec40bbaf8994176cfbb27b8e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789828"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919221"
 ---
 # <a name="go-to-command"></a>Přejít na – příkaz
 Přesune kurzor na zadaný řádek.
@@ -30,16 +30,15 @@ Edit.GoTo [linenumber]
 ```
 
 ## <a name="arguments"></a>Arguments
- `linenumber`
-
- Volitelné. Celé číslo představující číslo řádku, přejděte na.
+`linenumber`\
+Volitelné. Celé číslo představující číslo řádku, na který se má přejít
 
 ## <a name="remarks"></a>Poznámky
- Číslování řádků začíná u jedné. Pokud hodnota `linenumber` je menší než 1, první řádek zobrazí. Pokud hodnota `linenumber` je větší než počet poslední řádek zobrazí poslední řádek.
+Číslování řádků začíná na jednom. Pokud hodnota `linenumber` je menší než jedna, zobrazí se první řádek. Pokud `linenumber` je hodnota větší než číslo posledního řádku, zobrazí se poslední řádek.
 
- Pokud hodnotu `linenumber` není zadán, **přejít na řádek** zobrazí dialogové okno.
+Pokud není zadána hodnota `linenumber` pro, zobrazí se dialogové okno **Přejít na řádek** .
 
- Alias pro tento příkaz je GoToLn.
+Alias pro tento příkaz je GoToLn.
 
 ## <a name="example"></a>Příklad
 

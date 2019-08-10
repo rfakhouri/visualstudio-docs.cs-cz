@@ -1,5 +1,5 @@
 ---
-title: Spouštění testování částí v rozšířeních UML | Dokumentace Microsoftu
+title: Spustit testy jednotek v rozšířeních UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,379 +9,374 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf83fdf92133284271ea696bccef31af1bd72dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5aeeb8bf9ec70a7288316c8b4c6baa337c232621
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701707"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871728"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Spouštění testování částí v rozšířeních UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-K udržení stabilní prostřednictvím po sobě jdoucích změn kódu, doporučujeme, abyste zápis testů jednotek a provádět jako součást procesu regulárního sestavení. Další informace najdete v tématu [svůj kód testu jednotek](../test/unit-test-your-code.md). Nastavení testů pro rozšíření modelování Visual Studio, budete potřebovat několik důležitých informací. Souhrn:  
-  
-- [Nastavení testu jednotek pro rozšíření VSIX](#Host)  
-  
-   Spusťte testy s hostitelského adaptéru VS IDE. Předpona každou metodu testu `[HostType("VS IDE")]`. Spuštění tohoto hostitelského adaptéru [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] při spuštění testů.  
-  
-- [Přístup k DTE a modelstore modelu](#DTE)  
-  
-   Obvykle budete muset otevřít modelu a jeho diagramy a přístup `IModelStore` inicializace testu.  
-  
-- [Otevření diagramu modelu](#Opening)  
-  
-   Můžete přetypovat `EnvDTE.ProjectItem` do a z `IDiagramContext`.  
-  
-- [Provádění změn ve vlákně uživatelského rozhraní](#UiThread)  
-  
-   Testy, které provádět změny v úložišti modelu se musí provádět ve vlákně uživatelského rozhraní. Můžete použít `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` to.  
-  
-- [Testování příkazy, gesta a další součásti MEF](#MEF)  
-  
-   K testování komponent MEF, musí explicitně připojit jejich importované vlastností hodnoty.  
-  
-  Tyto body jsou podrobně uvedeno v následující části.  
-  
-  Ukázka rozšíření UML jednotek testování najdete na galerii vzorových příkladů kódu na [UML – rychlé položku pomocí textu](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
-  
-## <a name="requirements"></a>Požadavky  
- Zobrazit [požadavky](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
-  
- Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
-## <a name="Host"></a> Nastavení testu jednotek pro rozšíření VSIX  
- Metody v rozšíření modelování obvykle pracovat diagram, který je již otevřen. Metody jako například použít importů MEF **IDiagramContext** a **ILinkedUndoContext**. Testovací prostředí, musíte nastavit kontext, před spuštěním testů.  
-  
-#### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>Nastavení, který se spustí v testu jednotek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
-  
-1. Vytvořte projekt rozšíření UML a projekt testu jednotek.  
-  
-    1. **Projekt rozšíření UML.** Obvykle to vytvoříte pomocí příkazu, gesta nebo šablony projektu ověřování. Viz například [definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
-  
-    2. **Projekt testování částí.** Další informace najdete v tématu [svůj kód testu jednotek](../test/unit-test-your-code.md).  
-  
-2. Vytvoření [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, které obsahuje projekt modelování UML. Toto řešení bude používat jako počáteční stav testů. By měla být oddělena od řešení, ve kterém píšete rozšíření UML a jeho testování částí. Další informace najdete v tématu [vytvořit modelování projektů a diagramů UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  
-  
-3. **V projektu rozšíření UML**, upravíte soubor .csproj jako text a ujistěte se, že tyto řádky zobrazit `true`:  
-  
-    ```  
-    <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>  
-        <CopyOutputSymbolsToOutputDirectory>true</CopyOutputSymbolsToOutputDirectory>  
-    ```  
-  
-     Chcete-li upravit soubor .csproj jako text, zvolte **uvolnit projekt** v místní nabídce projektu v Průzkumníku řešení. Klikněte na tlačítko **upravit. .csproj**. Po úpravě textu, zvolte **znovu načíst projekt**.  
-  
-4. V projektu rozšíření UML, přidejte následující řádek, který **Properties\AssemblyInfo.cs**. To umožňuje testování částí pro přístup k metodám, které chcete testovat:  
-  
-    ```csharp  
-    [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
-    ```  
-  
-5. **V projektu testování částí**, přidejte následující odkazy na sestavení:  
-  
-    - *Projekt pro rozšíření UML*  
-  
-    - **EnvDTE.dll**  
-  
-    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
-  
-    - **Microsoft.VisualStudio.ComponentModelHost.dll**  
-  
-    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
-  
-    - **Microsoft.VisualStudio.Uml.Interfaces.dll**  
-  
-    - **Microsoft.VSSDK.TestHostFramework.dll**  
-  
-6. Předpona atributu `[HostType("VS IDE")]` do jednotlivých testovacích metod, včetně metod inicializace.  
-  
-     Tím se zajistí, že test bude spuštěn v experimentální instanci sady Visual Studio.  
-  
-## <a name="DTE"></a> Přístup k DTE a modelstore modelu  
- Zápis metody k otevření projektu modelování v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Obvykle chcete otevřít řešení pouze jednou v každém testovacím běhu. Metoda spustit jenom jednou, předpona metody `[AssemblyInitialize]` atribut. Nezapomeňte, že potřebujete atribut [HostType ("VS IDE")] v jednotlivých testovacích metod.  Příklad:  
-  
-```csharp  
-using EnvDTE;  
-using Microsoft.VisualStudio.ArchitectureTools.Extensibility;  
-using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
-using Microsoft.VisualStudio.TestTools.UnitTesting;  
-using Microsoft.VSSDK.Tools.VsIdeTesting;  
-  
-namespace UnitTests  
-{  
-  [TestClass]  
-  public static class TestSetup  
-  {  
-  
-    // Location of a VS Solution that defines an initial state for your tests:  
-    private const string testSolutionFilePath = @"C:\MyTestFolder\TestModelSln\TestModel.sln";  
-    // Name of a modeling project within the test solution:  
-    private const string testModelingProjectName = "MyTestModel";  
-  
-    // Make Solution and IModelStore available to test methods:  
-    public static Solution ModelSolution = null;  
-    public static IModelingProject ModelingProject = null;  
-    public static IModelStore ModelStore = null;  
-  
-    // This method will be performed once to initialize tests for this assembly:  
-    [AssemblyInitialize]   
-    [HostType("VS IDE")]  
-    public static void OpenTestModelingProject(TestContext testContext)  
-    {  
-      // To make sure that we always start the tests in the same state,  
-      // copy the test solution from a read-only directory:  
-      // TODO: copy test solution folder.  
-  
-      // Open a solution that is the initial state for your tests:  
-      ModelSolution = VsIdeTestHostContext.Dte.Solution;  
-      ModelSolution.Open(testSolutionFilePath);  
-  
-      // Find the ModelingProject and IModelStore:  
-      foreach (Project project in ModelSolution.Projects)  
-      {  
-        // https://msdn.microsoft.com/library/ee791691.aspx  
-        ModelingProject = project as IModelingProject;  
-        if (ModelingProject != null)  
-        {  
-          // This is a modeling project.  
-          ModelStore = ModelingProject.Store;  
-          break;  
-        }  
-        // else this is another kind of project.  
-      }  
-  
-      Assert.IsNotNull(ModelSolution, "VS solution not found");  
-      Assert.IsNotNull(ModelStore, "Modeling store not found");  
-    }  
-    [AssemblyCleanup]  
-    public static void RemoveTestSolution ()  
-    {  
-      // TODO: Remove copied test solution directory.  
-    }  
-  }  
-}  
-  
-```  
-  
- Pokud instance <xref:EnvDTE.Project?displayProperty=fullName> představuje projekt modelování a lze jej přetypovat do a z <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.IModelingProject>.  
-  
-## <a name="Opening"></a> Otevření diagramu modelu  
- Pro každý test nebo třída testů je obvykle chcete pracovat Otevřít diagram. V následujícím příkladu `[ClassInitialize]` atribut, který spustí tuto metodu před jinými metodami v této testovací třídy. Znovu nezapomeňte, že potřebujete každou metodu testu atribut [HostType ("VS IDE")]:  
-  
-```csharp  
-//   
-private IDiagram diagram;  
-// This class contains unit tests:  
-[TestClass]  
-public class MyTestClass  
-{  
-  // Map filenames to open diagram files:  
-  private static Dictionary<string, IDiagram> diagrams = new Dictionary<string, IDiagram>();  
-  
-  // This method will be called once for this test class:  
-  [ClassInitialize]  
-  [HostType("VS IDE")]  
-  public static void TestClassInitialize(TestContext testContext)  
-  {  
-    // Open all the diagrams in the model:  
-    foreach (ProjectItem item in (TestSetup.ModelingProject as Project).ProjectItems)  
-    {  
-      // Get the filename of the principal file (not the .layout subsidiary):  
-      string fileName = item.FileNames[0];  
-      // If this is a model diagram file, it can be cast to IDiagramContext:  
-      IDiagramContext modelingItem = item as IDiagramContext;  
-      if (modelingItem != null)  
-      {  
-        IDiagram diagram = modelingItem.CurrentDiagram;  
-        if (diagram == null)  
-        {  
-          // Diagram is closed. Open it:  
-          item.Open().Activate();  
-          diagram = modelingItem.CurrentDiagram;  
-        }  
-        diagrams[fileName] = diagram;  
-      }  
-      // else item is not a model diagram.  
-    }  
-    Assert.IsTrue(diagrams.Count>0, "UML diagram not found");  
-  }  
-// Insert test methods here ...  
-}  
-  
-```  
-  
-## <a name="UiThread"></a> Provádění změn modelu ve vlákně uživatelského rozhraní  
- Pokud testy nebo metody v rámci testu, provést změny modelu úložiště, musíte je spouštět ve vlákně uživatelského rozhraní. Pokud to neprovedete, může se zobrazit `AccessViolationException`. Ve volání metody Invoke uvést kód testovací metody:  
-  
-```  
-using System.Windows.Forms;  
-using Microsoft.VSSDK.Tools.VsIdeTesting;  
- ...  
-    [TestMethod]  
-    [HostType("VS IDE")]  
-    public void MyTest1()  
-    {  
-      // Store operations must run in the UI thread:  
-      UIThreadInvoker.Invoke((System.Action)delegate()  
-      {  
-        SetupTestState(TestSetup.ModelStore, diagram);  
-        ExecuteMethodUnderTest(TestSetup.ModelStore, diagram);  
-      });  
-    }  
-```  
-  
-## <a name="MEF"></a> Testování příkazu, gesta a další součásti MEF  
- Deklarace vlastností, které mají používat komponent MEF `[Import]` atribut a jehož hodnoty jsou nastavené podle jejich hostitelů. Tyto vlastnosti obvykle zahrnují IDiagramContext, SVsServiceProvider a ILinkedUndoContext. Pokud testujete metodu, která používá některou z těchto vlastností, je nutné nastavit jejich hodnoty před spuštěním testované metody. Například, pokud jste napsali rozšíření příkazu podobné tento kód:  
-  
-```  
-  
-  [Export(typeof(ICommandExtension))]  
-  [ClassDesignerExtension]  
-  class MyCommand : ICommandExtension  
-  {  
-    [Import] IDiagramContext context { get; set; }  
-    [Import]   
-Microsoft.VisualStudio.Shell.SVsServiceProvider  
-serviceProvider {get;set;}  
-    [Import] ILinkedUndoContext linkedUndoContext { get; set; }  
-    public void Execute(IMenuCommand command)  
-    {  
-      DoCommand();  
-    }  
-    private void DoCommand()  
-    {  
-      IDiagram diagram = context.CurrentDiagram;  
-      using (ILinkedUndoTransaction t = linkedUndoContext.BeginTransaction("go"))  
-      { ... }}}  
-  
-```  
-  
- Importované vlastnosti můžete nastavit následujícím způsobem:  
-  
-```  
-  
-using System.ComponentModel.Composition;  
-using Microsoft.VisualStudio.ComponentModelHost;   
-using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
-using Microsoft.VisualStudio.TestTools.UnitTesting;  
-using Microsoft.VSSDK.Tools.VsIdeTesting;  
-...  
-    [TestMethod]   
-    [HostType("VS IDE")]  
-    public void Test1()  
-    {  
-      // Create an instance of the class under test:  
-      MyCommand myCommand = new MyCommand();  
-      // Get the components service:  
-      IComponentModel components = VsIdeTestHostContext.ServiceProvider  
-        .GetService(typeof(SComponentModel)) as IComponentModel;  
-      // Set the imported properties of the instance under test:  
-      // Extension requires "using System.ComponentModel.Composition;" :  
-      components.DefaultCompositionService.SatisfyImportsOnce(myCommand);  
-      // Call method(s) under test:  
-      UIThreadInvoker.Invoke((System.Action)delegate()  
-      {  
-        myCommand.DoCommand();  
-      });  
-...}  
-```  
-  
- Pokud chcete otestovat metodu, která přebírá jako parametr importovanou vlastnost, pak můžete importovat vlastnost do vaší testovací třídy a použít `SatisfyImportsOnce` do testovací instance. Příklad:  
-  
-```  
-  
-using System.ComponentModel.Composition;  
-...  
-  [TestClass]  
-  public class MyTestClass  
-  {  
-    [Import] ILinkedUndoContext linkedUndoContext { get; set; }  
-  
-    // Called before each test method:  
-    [TestInitialize, HostType("VS IDE")]   
-    public void TestInitializer()  
-    {  
-      IComponentModel components = VsIdeTestHostContext.ServiceProvider  
-            .GetService(typeof(SComponentModel)) as IComponentModel;  
-      // Extension requires "using System.ComponentModel.Composition;" :  
-      components.DefaultCompositionService.SatisfyImportsOnce(this);  
-    }  
-    [TestMethod, HostType("VS IDE")]  
-    public void Test2()  
-    {   
-     UIThreadInvoker.Invoke((System.Action)delegate()  
-      {  
-      // Pass context items to class under test:  
-      Class1 item1 = new Class1(this.linkedUndoContext);  
-      item1.Method1(); // Can use linkedUndoContext  
-     });  
-   }  
-}  
-  
-```  
-  
- V tomto příkladu jsou dva atributy u každé zkušební metody kombinovat pro usnadnění práce do jednoho řádku.  
-  
-## <a name="access-from-tests-to-private-methods-and-variables"></a>Přístup z testů k privátní metody a proměnné  
- Někdy chcete otestovat metodu, která je privátní, nebo chcete ověřit stav pole, které je privátní, před a po provedení metody v rámci testu. To představuje problém, protože jsou testy v samostatném sestavení na třídy v rámci testu. Existuje několik taktika, které můžete zvážit, včetně následujících:  
-  
- Testování pouze s použitím veřejné a vnitřní položky  
- Zápis testů tak, aby se používají pouze veřejné (nebo interní) třídy a členy. Toto je nejlepším řešením. Testy budou fungovat i v případě Refaktorujte vnitřní implementace sestavení v rámci testu. S použitím stejné testy před a po změně, máte jistotu, že vaše změny nebyly změnit chování sestavení.  
-  
- Chcete-li to možné, budete muset změnit strukturu kódu. Například můžete potřebovat rozdělit některé metody do jiné třídy.  
-  
- Zadáním důkladně zvážit tohoto přístupu často zjistíte, že váš kód je snazší pro čtení a změnit a méně prone k chybám při potřebné změnám.  
-  
- Můžete povolit přístup k interním položky tak, že přidáte atribut v sestavení testu **Properties\AssemblyInfo.cs** v Testovaný projekt:  
-  
-```csharp  
-[assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
-```  
-  
- Definujte testovací rozhraní  
- Definujte rozhraní, která obsahuje jak veřejné členy třídy má být testována a další vlastnosti a metody pro soukromé členy, které chcete testy moct dál používat. Přidejte tato rozhraní Testovaný projekt. Příklad:  
-  
-```csharp  
-internal interface MyClassTestInterface {  
-  void PublicMethod1();  
-  string PublicProperty1 { get; }  
-  string privateField1_Accessor { get; }  
-  int privateMethod1_Accessor (string p1);   
- }  
-```  
-  
- Přidání metody do třídy má být testována, explicitně implementovat přístupové metody. Tyto další metody oddělte od hlavní třída jejich zapsáním do částečné třídy definice v samostatném souboru. Příklad:  
-  
-```csharp  
-partial public class MyClass  
-{  
-  string MyClassTestInterface.privateField1_Accessor  
-  { get { return privateField1; } }  
-  int MyClassTestInterface.privateMethod1_Accessor (string p1)  
-  { return privateMethod1(p1); }  
-}  
-  
-```  
-  
- Povolit testovací sestavení používat testovací rozhraní přidáním tohoto atributu na sestavení, které testujete:  
-  
-```csharp  
-[assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
-```  
-  
- Do metody jednotkového testu použijte rozhraní testu. Příklad:  
-  
-```csharp  
-MyClassTestInterface testInstance = new MyClass();  
-testInstance.PublicMethod1();  
-Assert.AreEqual("hello", testInstance.privateField1_Accessor);  
-```  
-  
- Definujte přístupové objekty pomocí reflexe  
- Toto je způsob, doporučujeme vám nejméně. Starší verze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástroj, který automaticky vytvoří přístupové metody pro každou privátní metodu k dispozici. I když je to pohodlné, naše prostředí pro naznačuje, že je obvykle za následek testy jednotek, které jsou velmi silného spjat s interní aplikace, kterou testují. Výsledkem je práce navíc při změně požadavků nebo architekturu, protože testy musí být změněny spolu s implementací. Navíc závěry chybné v návrhu implementace jsou také součástí testy, tak, aby testy nelze najít chyby.  
-  
-## <a name="see-also"></a>Viz také  
- [Anatomie testování částí](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
- [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
- [UML – rychlé položku pomocí textu](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)
+Abychom vám pomohli udržet kód v průběhu po sobě jdoucích změn, doporučujeme napsat testy jednotek a provádět je v rámci běžného procesu sestavení. Další informace najdete v tématu [svůj kód testu jednotek](../test/unit-test-your-code.md). Chcete-li nastavit testy pro rozšíření modelování sady Visual Studio, budete potřebovat některé klíčové informace. Souhrn:
+
+- [Nastavení testu jednotek pro rozšíření VSIX](#Host)
+
+   Spusťte testy s hostitelským adaptérem sady VS IDE. Každou testovací metodu nahraďte `[HostType("VS IDE")]`předponou. Tento hostitelský adaptér se [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spustí při spuštění testů.
+
+- [Přístup k DTE a úložišti ModelStore](#DTE)
+
+   Obvykle budete muset otevřít model a jeho diagramy a získat přístup `IModelStore` k při inicializaci testu.
+
+- [Otevření diagramu modelu](#Opening)
+
+   Můžete přetypovat `EnvDTE.ProjectItem` na a z `IDiagramContext`.
+
+- [Provádění změn ve vláknu UI](#UiThread)
+
+   Testy, které provádějí změny v úložišti modelu, musí být provedeny ve vlákně UI. K tomu můžete `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` použít.
+
+- [Testování příkazů, gest a dalších komponent MEF](#MEF)
+
+   Chcete-li testovat komponenty MEF, je nutné explicitně připojit své importované vlastnosti k hodnotám.
+
+  Tyto body jsou vypracované v následujících oddílech.
+
+  Vzorek rozšíření UML testované jednotky najdete v galerii ukázek kódu v [UML – rychlé zadání pomocí textu](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).
+
+## <a name="requirements"></a>Požadavky
+ Viz [požadavky](../modeling/extend-uml-models-and-diagrams.md#Requirements).
+
+ Chcete-li zjistit, které verze aplikace Visual Studio tuto funkci podporují, přečtěte si téma [podpora verzí pro nástroje pro architekturu a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+## <a name="Host"></a>Nastavení testu jednotek pro rozšíření VSIX
+ Metody v rozšířeních modelování obvykle pracují s diagramem, který je již otevřen. Metody používají importy MEF, například **IDiagramContext** a **ILinkedUndoContext**. Vaše testovací prostředí musí nastavit tento kontext před spuštěním testů.
+
+#### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>Nastavení testu jednotek, který se spustí v[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+
+1. Vytvořte projekt rozšíření UML a projekt testování částí.
+
+    1. **Projekt rozšíření UML.** Obvykle to vytvoříte pomocí šablon projektů pro příkazy, gesta nebo ověřování. Například viz [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+
+    2. **Projekt testování částí.** Další informace najdete v tématu [svůj kód testu jednotek](../test/unit-test-your-code.md).
+
+2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Vytvořte řešení, které obsahuje projekt modelování UML. Toto řešení budete používat jako počáteční stav vašich testů. Mělo by být oddělené od řešení, ve kterém zapisujete rozšíření UML a testy jednotek. Další informace najdete v tématu [vytváření projektů a diagramů modelování UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
+
+3. **V projektu rozšíření UML**upravte soubor. csproj jako text a ujistěte se, že následující řádky ukazují `true`:
+
+    ```
+    <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>
+        <CopyOutputSymbolsToOutputDirectory>true</CopyOutputSymbolsToOutputDirectory>
+    ```
+
+     Chcete-li upravit soubor. csproj jako text, klikněte na tlačítko **Uvolnit projekt** v místní nabídce projektu v Průzkumník řešení. Pak zvolte **Upravit.... csproj**. Po úpravě textu vyberte **znovu načíst projekt**.
+
+4. V projektu rozšíření UML přidejte následující řádek do **Properties\AssemblyInfo.cs**. To umožňuje jednotkovým testům přístup k metodám, které chcete testovat:
+
+    ```csharp
+    [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
+    ```
+
+5. **V projektu testování částí**přidejte následující odkazy na sestavení:
+
+    - *Váš projekt rozšíření UML*
+
+    - **EnvDTE.dll**
+
+    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
+
+    - **Microsoft.VisualStudio.ComponentModelHost.dll**
+
+    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
+
+    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
+
+    - **Microsoft.VSSDK.TestHostFramework.dll**
+
+6. Prefixujte atribut `[HostType("VS IDE")]` na každou testovací metodu, včetně inicializačních metod.
+
+     Tím se zajistí, že se test spustí v experimentální instanci aplikace Visual Studio.
+
+## <a name="DTE"></a>Přístup k DTE a úložišti ModelStore
+ Napište metodu pro otevření projektu modelování v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Obvykle je vhodné otevřít řešení pouze jednou v každém testovacím běhu. Chcete-li spustit metodu pouze jednou, předponu metody s `[AssemblyInitialize]` atributem. Nezapomeňte, že pro každou testovací metodu budete potřebovat také atribut [HostType ("VS IDE")].  Příklad:
+
+```csharp
+using EnvDTE;
+using Microsoft.VisualStudio.ArchitectureTools.Extensibility;
+using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VSSDK.Tools.VsIdeTesting;
+
+namespace UnitTests
+{
+  [TestClass]
+  public static class TestSetup
+  {
+
+    // Location of a VS Solution that defines an initial state for your tests:
+    private const string testSolutionFilePath = @"C:\MyTestFolder\TestModelSln\TestModel.sln";
+    // Name of a modeling project within the test solution:
+    private const string testModelingProjectName = "MyTestModel";
+
+    // Make Solution and IModelStore available to test methods:
+    public static Solution ModelSolution = null;
+    public static IModelingProject ModelingProject = null;
+    public static IModelStore ModelStore = null;
+
+    // This method will be performed once to initialize tests for this assembly:
+    [AssemblyInitialize]
+    [HostType("VS IDE")]
+    public static void OpenTestModelingProject(TestContext testContext)
+    {
+      // To make sure that we always start the tests in the same state,
+      // copy the test solution from a read-only directory:
+      // TODO: copy test solution folder.
+
+      // Open a solution that is the initial state for your tests:
+      ModelSolution = VsIdeTestHostContext.Dte.Solution;
+      ModelSolution.Open(testSolutionFilePath);
+
+      // Find the ModelingProject and IModelStore:
+      foreach (Project project in ModelSolution.Projects)
+      {
+        // https://msdn.microsoft.com/library/ee791691.aspx
+        ModelingProject = project as IModelingProject;
+        if (ModelingProject != null)
+        {
+          // This is a modeling project.
+          ModelStore = ModelingProject.Store;
+          break;
+        }
+        // else this is another kind of project.
+      }
+
+      Assert.IsNotNull(ModelSolution, "VS solution not found");
+      Assert.IsNotNull(ModelStore, "Modeling store not found");
+    }
+    [AssemblyCleanup]
+    public static void RemoveTestSolution ()
+    {
+      // TODO: Remove copied test solution directory.
+    }
+  }
+}
+
+```
+
+ Pokud instance <xref:EnvDTE.Project?displayProperty=fullName> představuje projekt modelování, můžete jej přetypovat na a z [IModelingProject](/previous-versions/ee789474(v=vs.140)).
+
+## <a name="Opening"></a>Otevření diagramu modelu
+ Pro každý test nebo třídu testů obvykle chcete pracovat s otevřeným diagramem. Následující příklad používá `[ClassInitialize]` atribut, který spustí tuto metodu před jinými metodami v této třídě testu. Znovu nezapomeňte, že pro každou testovací metodu budete potřebovat také atribut [HostType ("VS IDE")]:
+
+```csharp
+//
+private IDiagram diagram;
+// This class contains unit tests:
+[TestClass]
+public class MyTestClass
+{
+  // Map filenames to open diagram files:
+  private static Dictionary<string, IDiagram> diagrams = new Dictionary<string, IDiagram>();
+
+  // This method will be called once for this test class:
+  [ClassInitialize]
+  [HostType("VS IDE")]
+  public static void TestClassInitialize(TestContext testContext)
+  {
+    // Open all the diagrams in the model:
+    foreach (ProjectItem item in (TestSetup.ModelingProject as Project).ProjectItems)
+    {
+      // Get the filename of the principal file (not the .layout subsidiary):
+      string fileName = item.FileNames[0];
+      // If this is a model diagram file, it can be cast to IDiagramContext:
+      IDiagramContext modelingItem = item as IDiagramContext;
+      if (modelingItem != null)
+      {
+        IDiagram diagram = modelingItem.CurrentDiagram;
+        if (diagram == null)
+        {
+          // Diagram is closed. Open it:
+          item.Open().Activate();
+          diagram = modelingItem.CurrentDiagram;
+        }
+        diagrams[fileName] = diagram;
+      }
+      // else item is not a model diagram.
+    }
+    Assert.IsTrue(diagrams.Count>0, "UML diagram not found");
+  }
+// Insert test methods here ...
+}
+
+```
+
+## <a name="UiThread"></a>Provádění změn modelu ve vlákně UI
+ Pokud vaše testy nebo metody v rámci testu provádějí změny v úložišti modelu, je nutné je spustit ve vlákně uživatelského rozhraní. Pokud to neuděláte, může se zobrazit `AccessViolationException`. Vložte kód testovací metody ve volání metody Invoke:
+
+```
+using System.Windows.Forms;
+using Microsoft.VSSDK.Tools.VsIdeTesting;
+ ...
+    [TestMethod]
+    [HostType("VS IDE")]
+    public void MyTest1()
+    {
+      // Store operations must run in the UI thread:
+      UIThreadInvoker.Invoke((System.Action)delegate()
+      {
+        SetupTestState(TestSetup.ModelStore, diagram);
+        ExecuteMethodUnderTest(TestSetup.ModelStore, diagram);
+      });
+    }
+```
+
+## <a name="MEF"></a>Testování příkazu, gesta a dalších komponent MEF
+ Komponenty MEF používají deklarace vlastností, které mají `[Import]` atribut a jehož hodnoty jsou nastaveny podle jejich hostitelů. Obvykle tyto vlastnosti zahrnují IDiagramContext, SVsServiceProvider a ILinkedUndoContext. Při testování metody, která používá některou z těchto vlastností, je nutné před spuštěním testované metody nastavit jejich hodnoty. Například pokud jste napsali rozšíření příkazu podobné tomuto kódu:
+
+```
+
+  [Export(typeof(ICommandExtension))]
+  [ClassDesignerExtension]
+  class MyCommand : ICommandExtension
+  {
+    [Import] IDiagramContext context { get; set; }
+    [Import]
+Microsoft.VisualStudio.Shell.SVsServiceProvider
+serviceProvider {get;set;}
+    [Import] ILinkedUndoContext linkedUndoContext { get; set; }
+    public void Execute(IMenuCommand command)
+    {
+      DoCommand();
+    }
+    private void DoCommand()
+    {
+      IDiagram diagram = context.CurrentDiagram;
+      using (ILinkedUndoTransaction t = linkedUndoContext.BeginTransaction("go"))
+      { ... }}}
+
+```
+
+ Importované vlastnosti pak můžete nastavit takto:
+
+```
+
+using System.ComponentModel.Composition;
+using Microsoft.VisualStudio.ComponentModelHost;
+using Microsoft.VisualStudio.Modeling.ExtensionEnablement;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VSSDK.Tools.VsIdeTesting;
+...
+    [TestMethod]
+    [HostType("VS IDE")]
+    public void Test1()
+    {
+      // Create an instance of the class under test:
+      MyCommand myCommand = new MyCommand();
+      // Get the components service:
+      IComponentModel components = VsIdeTestHostContext.ServiceProvider
+        .GetService(typeof(SComponentModel)) as IComponentModel;
+      // Set the imported properties of the instance under test:
+      // Extension requires "using System.ComponentModel.Composition;" :
+      components.DefaultCompositionService.SatisfyImportsOnce(myCommand);
+      // Call method(s) under test:
+      UIThreadInvoker.Invoke((System.Action)delegate()
+      {
+        myCommand.DoCommand();
+      });
+...}
+```
+
+ Pokud chcete otestovat metodu, která přebírá importovanou vlastnost jako parametr, můžete importovat vlastnost do vaší třídy testu a použít `SatisfyImportsOnce` ji na testovací instanci. Příklad:
+
+```
+
+using System.ComponentModel.Composition;
+...
+  [TestClass]
+  public class MyTestClass
+  {
+    [Import] ILinkedUndoContext linkedUndoContext { get; set; }
+
+    // Called before each test method:
+    [TestInitialize, HostType("VS IDE")]
+    public void TestInitializer()
+    {
+      IComponentModel components = VsIdeTestHostContext.ServiceProvider
+            .GetService(typeof(SComponentModel)) as IComponentModel;
+      // Extension requires "using System.ComponentModel.Composition;" :
+      components.DefaultCompositionService.SatisfyImportsOnce(this);
+    }
+    [TestMethod, HostType("VS IDE")]
+    public void Test2()
+    {
+     UIThreadInvoker.Invoke((System.Action)delegate()
+      {
+      // Pass context items to class under test:
+      Class1 item1 = new Class1(this.linkedUndoContext);
+      item1.Method1(); // Can use linkedUndoContext
+     });
+   }
+}
+
+```
+
+ V tomto příkladu jsou dva atributy každé testovací metody kombinovány pro pohodlí do jednoho řádku.
+
+## <a name="access-from-tests-to-private-methods-and-variables"></a>Přístup z testů do privátních metod a proměnných
+ Někdy budete chtít otestovat metodu, která je soukromá, nebo chcete ověřit stav pole, které je soukromé, před a po provedení testované metody. To představuje obtížnost, protože testy jsou v samostatném sestavení pro zkoušené třídy. Existuje několik taktiku, které můžete zvážit, včetně následujících:
+
+ Testujte pouze pomocí veřejné a interní položky zápis testů tak, aby používaly pouze veřejné (nebo interní) třídy a členy. Toto je nejlepší přístup. Vaše testy budou fungovat i v případě, že refaktorujte interní implementaci sestavení v rámci testu. Když použijete stejné testy před a po změnách, můžete si být jisti, že změny nezměnily chování sestavení.
+
+ Aby to bylo možné, možná budete muset změnit strukturu kódu. Například může být nutné oddělit některé metody do jiné třídy.
+
+ Díky vážnému zvážení tohoto přístupu často zjistíte, že váš kód bude čitelnější a může být změněn a méně náchylný k chybám, když jsou potřebné změny.
+
+ Testovacímu sestavení můžete dovolit přístup k interním položkám přidáním atributu v **Properties\AssemblyInfo.cs** v projektu, který má být testován:
+
+```csharp
+[assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
+```
+
+ Definujte testovací rozhraní definovat rozhraní, které obsahuje veřejné členy třídy, které mají být testovány, a další vlastnosti a metody pro soukromé členy, které chcete, aby testy mohly používat. Přidejte toto rozhraní do projektu, který se má testovat. Příklad:
+
+```csharp
+internal interface MyClassTestInterface {
+  void PublicMethod1();
+  string PublicProperty1 { get; }
+  string privateField1_Accessor { get; }
+  int privateMethod1_Accessor (string p1);
+ }
+```
+
+ Přidejte metody do třídy, která má být testována, k explicitní implementaci metod přistupujícího objektu. Tyto další metody oddělte od hlavní třídy jejich zapsáním v definici částečné třídy v samostatném souboru. Příklad:
+
+```csharp
+partial public class MyClass
+{
+  string MyClassTestInterface.privateField1_Accessor
+  { get { return privateField1; } }
+  int MyClassTestInterface.privateMethod1_Accessor (string p1)
+  { return privateMethod1(p1); }
+}
+
+```
+
+ Umožněte testovacímu sestavení používat testovací rozhraní přidáním tohoto atributu do sestavení, které testujete:
+
+```csharp
+[assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
+```
+
+ V metodách testování částí použijte testovací rozhraní. Příklad:
+
+```csharp
+MyClassTestInterface testInstance = new MyClass();
+testInstance.PublicMethod1();
+Assert.AreEqual("hello", testInstance.privateField1_Accessor);
+```
+
+ Definování přístupových objektů pomocí reflexe je to způsob, který doporučujeme nejméně. Starší verze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástroje poskytují nástroj, který automaticky vytvořil přístupovou metodu pro každou soukromou metodu. I když je to pohodlné, naše prostředí má za následek to, že má za následek testy jednotek, které jsou velmi silně spojeny s interní strukturou aplikace, kterou testuje. Výsledkem je další práce při změně požadavků nebo architektury, protože testy je třeba změnit společně s implementací. Všechny chybné předpoklady v návrhu implementace jsou také integrovány do testů, takže testy nenaleznou chyby.
+
+## <a name="see-also"></a>Viz také
+ [Anatomie testu jednotek](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [UML – rychlý zápis pomocí textu](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)

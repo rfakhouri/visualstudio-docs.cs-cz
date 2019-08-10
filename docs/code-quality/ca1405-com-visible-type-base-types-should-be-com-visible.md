@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bddd599bb544e000ca1d1269b84e53f51843bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56e6e7a53f5f8b07d1afc8b68ef641c576524316
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546069"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922054"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Základní typy viditelného typu modelu COM by měly být viditelné modelu COM
 
@@ -30,26 +30,26 @@ ms.locfileid: "62546069"
 |-|-|
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |CheckId|CA1405|
-|Kategorie|Microsoft.Interoperability|
+|Kategorie|Microsoft. interoperabilita|
 |Narušující změna|DependsOnFix|
 
-## <a name="cause"></a>Příčina
- Viditelného typu modelu COM (Component Object) je odvozen z typu, který není viditelné modelu COM.
+## <a name="cause"></a>příčina
+Viditelný typ objektu součásti modelu COM je odvozen z typu, který není viditelný v modelu COM.
 
 ## <a name="rule-description"></a>Popis pravidla
- Když viditelného typu modelu COM přidá členy v nové verzi, musí dodržovat přísné pokyny, aby se zabránilo přerušení klientům modelu COM, kteří jsou navázáni na aktuální verzi. Typ, který není viditelný pro model COM předpokládá, že že není nutné postupovat podle těchto pravidel správy verzí modelu COM, když přidá nové členy. Pokud ale viditelné modelu COM typ je odvozen z typu neviditelné COM a zpřístupňuje rozhraní třídy z <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> nebo <xref:System.Runtime.InteropServices.ClassInterfaceType> (výchozí), všechny veřejné členy základního typu (pokud nejsou konkrétně označeny jako COM neviditelné, které by bylo nadbytečné) jsou vystaveny objektům modelu COM. Pokud základní typ přidá nové členy v následné verze, může to způsobit narušení jakékoli klientům modelu COM, kteří jsou navázáni na třídy rozhraní odvozeného typu. Viditelné typy modelu COM by měl odvodit jen z viditelných typech modelu COM, abyste snížili riziko rozbíjející klientům modelu COM.
+Pokud viditelný typ modelu COM přidá členy v nové verzi, musí dodržovat přísné pokyny, aby nedošlo k narušení klientů modelu COM, které se váže k aktuální verzi. Typ, který není viditelný v modelu COM, se předpokládá, že při přidávání nových členů není nutné dodržovat pravidla správy verzí modelu COM. Pokud je však viditelný typ modelu COM odvozen z neviditelného typu modelu COM a zpřístupňuje rozhraní <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> třídy nebo <xref:System.Runtime.InteropServices.ClassInterfaceType> (výchozí), všechny veřejné členy základního typu (pokud nejsou výslovně označeny jako com neviditelné, což by bylo redundantní). jsou vystavené pro COM. Pokud základní typ přidá nové členy v následné verzi, může dojít k přerušení všech klientů modelu COM, které jsou vázány na rozhraní třídy odvozeného typu. Viditelné typy modelu COM by měly odvozovat pouze z viditelných typů modelu COM, aby se snížila pravděpodobnost poškození klientů modelu COM.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, skrytí základní typy viditelné modelu COM nebo odvozeného typu modelu COM.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, zajistěte, aby základní typy modelu COM byly viditelné nebo aby byl odvozený typ COM neviditelný.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ, který porušuje pravidla.
+Následující příklad ukazuje typ, který je v rozporu s pravidlem.
 
- [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
- [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
 
 ## <a name="see-also"></a>Viz také:
 

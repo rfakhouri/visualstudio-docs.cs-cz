@@ -1,5 +1,5 @@
 ---
-title: Generování kódu z diagramů tříd UML | Dokumentace Microsoftu
+title: Generování kódu z diagramů tříd UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -16,225 +16,223 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fa073c794e790974f7f749b9d6f2302e9ff0a230
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 23cefa3d072c2e582237152bff77a2271046053d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692518"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871831"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generování kódu z diagramů tříd UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual Studio, použijte **generovat kód** příkazu. Ve výchozím nastavení tento příkaz vygeneruje typ jazyka C# pro každý vybraný typ modelu UML. Toto chování lze upravit a rozšířit úpravou nebo zkopírováním textových šablon, které generují kód. Lze určit různá chování pro typy, které jsou obsaženy v různých balíčcích modelu.  
+K vygenerování C# kódu Visual .NET z diagramů tříd UML v aplikaci Visual Studio použijte příkaz **generovat kód** . Ve výchozím nastavení tento příkaz vygeneruje typ jazyka C# pro každý vybraný typ modelu UML. Toto chování lze upravit a rozšířit úpravou nebo zkopírováním textových šablon, které generují kód. Lze určit různá chování pro typy, které jsou obsaženy v různých balíčcích modelu.
 
- **Generovat kód** příkaz je velmi vhodné pro generování kódu z výběru uživatele prvků a pro generování jednoho souboru pro každou třídu modelu UML nebo jiný prvek. Například, tento snímek obrazovky ukazuje dva soubory jazyka C#, které byly vytvořeny ze dvou tříd modelu UML.  
+ Příkaz **generovat kód** je vhodný zejména pro generování kódu z výběru prvků uživatele a pro generování jednoho souboru pro každou třídu UML nebo jiný prvek. Například, tento snímek obrazovky ukazuje dva soubory jazyka C#, které byly vytvořeny ze dvou tříd modelu UML.
 
- Případně, pokud chcete generovat kód, ve kterém generované soubory nemají s prvky modelu UML vztah 1:1, zvažte vytvoření textových šablon, které jsou vyvolány pomocí **Transformovat všechny šablony** příkazu. Další informace o této metodě naleznete v tématu [generování souborů z modelu UML](../modeling/generate-files-from-a-uml-model.md).  
+ Alternativně, pokud chcete vygenerovat kód, ve kterém generované soubory nemají vztah 1:1 s prvky UML, můžete zvážit zápis textových šablon, které jsou vyvolány příkazem **Transform All Templates** . Další informace o této metodě najdete v tématu [generování souborů z modelu UML](../modeling/generate-files-from-a-uml-model.md).
 
- ![Třída UML, diagram a generovaný kód C&#35; soubory tříd. ](../modeling/media/oob-gencode1.png "oob_GenCode1")  
+ ![Diagram tříd UML a generované soubory&#35; třídy jazyka C.](../modeling/media/oob-gencode1.png "oob_GenCode1")
 
- Další informace o diagramech tříd UML v sadě Visual Studio naleznete v následujících tématech:  
+ Další informace o diagramech tříd UML v aplikaci Visual Studio naleznete v následujících tématech:
 
-- [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)  
+- [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)
 
-- [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)
 
-  Pokud chcete zobrazit, které verze sady Visual Studio podporují diagramů tříd UML, naleznete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  Chcete-li zjistit, které verze aplikace Visual Studio podporují diagramy tříd UML, přečtěte si téma [podpora verzí pro nástroje pro architekturu a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="using-the-generate-code-command"></a>Použití příkazu Generovat kód  
- Následující postup popisuje výchozí chování **generovat kód** příkaz:  
+## <a name="using-the-generate-code-command"></a>Použití příkazu Generovat kód
+ Následující postup popisuje výchozí chování příkazu **generovat kód** :
 
-#### <a name="to-generate-a-separate-file-for-each-element"></a>Generování samostatného souboru pro každý prvek  
+#### <a name="to-generate-a-separate-file-for-each-element"></a>Generování samostatného souboru pro každý prvek
 
-1. Vytvořte model UML, který obsahuje třídy. Pro prvky modelu lze použít stereotypy.  
+1. Vytvořte model UML, který obsahuje třídy. Pro prvky modelu lze použít stereotypy.
 
-    Další informace najdete v tématu [výchozí transformace generování kódu](#default).  
+    Další informace naleznete v tématu [výchozí transformace generování kódu](#default).
 
-2. V diagramu tříd nebo v **Průzkumníku modelů UML**, vyberte prvky, ze kterých chcete generovat kód. Lze vybrat jednu z následujících možností:  
+2. V diagramu tříd nebo v **Průzkumníku modelů UML**vyberte prvky, ze kterých chcete generovat kód. Lze vybrat jednu z následujících možností:
 
-   - Určitou sadu prvků.  
+   - Určitou sadu prvků.
 
-   - Balíček nebo model, chcete-li z jeho obsahu vygenerovat kód.  
+   - Balíček nebo model, chcete-li z jeho obsahu vygenerovat kód.
 
-   - Diagram, chcete-li vybrat všechny prvky diagramu.  
+   - Diagram, chcete-li vybrat všechny prvky diagramu.
 
-3. Otevřete místní nabídku pro vybraný element a pak zvolte **generovat kód**.  
+3. Otevřete místní nabídku pro vybraný prvek a pak zvolte možnost **generovat kód**.
 
-    Při prvním použití **generovat kód** v konkrétním modelu, zobrazí se dialogové okno. Toto dialogové okno umožňuje upravit parametry pro generování kódu modelu.  
+    Při prvním použití **generovat kód** v konkrétním modelu se zobrazí dialogové okno. Toto dialogové okno umožňuje upravit parametry pro generování kódu modelu.
 
-    Zvolte **OK** Pokud si nejste jisti, že chcete tyto parametry měnit.  
+    Pokud si nejste jisti, že chcete tyto parametry změnit, klikněte na **tlačítko OK** .
 
-    Chcete-li tomuto dialogovému oknu vrátit později, otevřete **Průzkumníku modelů UML**. Otevřete místní nabídku projektu modelování a klikněte na tlačítko **nastavení generování kódu**. Další informace najdete v tématu [přizpůsobení příkazu generovat kód](#custom).  
+    Chcete-li se do tohoto dialogového okna vrátit později, otevřete **Průzkumníka modelů UML**. Otevřete místní nabídku projekt modelování a zvolte možnost **nastavit generování kódu**. Další informace naleznete v tématu [Přizpůsobení příkazu generovat kód](#custom).
 
-   Vygenerují se soubory, které obsahují kód jazyka C#. Ve výchozím nastavení je vygenerován soubor pro každý typ a tyto soubory jsou vygenerovány v projektu knihovny tříd jazyka C#. Toto chování však lze přizpůsobit. Další informace najdete v tématu [přizpůsobení příkazu generovat kód](#custom).  
+   Vygenerují se soubory, které obsahují kód jazyka C#. Ve výchozím nastavení je vygenerován soubor pro každý typ a tyto soubory jsou vygenerovány v projektu knihovny tříd jazyka C#. Toto chování však lze přizpůsobit. Další informace naleznete v tématu [Přizpůsobení příkazu generovat kód](#custom).
 
-   Na model jsou použity některé ověřovací testy, aby bylo zajištěno, že jej lze přeložit do jazyka C#. Pokud se tyto testy nezdaří, zobrazí se chybová zpráva a generování kódu nebude provedeno. Pokud jste vytvořili příkaz nabídky ověření, kód nebude vygenerován pro žádný prvek, u kterého příkaz ověření selže. Další informace najdete v tématu [definovat omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md).  
+   Na model jsou použity některé ověřovací testy, aby bylo zajištěno, že jej lze přeložit do jazyka C#. Pokud se tyto testy nezdaří, zobrazí se chybová zpráva a generování kódu nebude provedeno. Pokud jste vytvořili příkaz nabídky ověření, kód nebude vygenerován pro žádný prvek, u kterého příkaz ověření selže. Další informace najdete v tématu [Definování omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md).
 
-## <a name="default"></a> Výchozí transformace generování kódu  
- Tento oddíl shrnuje výsledky, které jsou vytvářeny **generovat kód** příkazu, pokud jste tento příkaz nepřizpůsobili. Další informace najdete v tématu [přizpůsobení příkazu generovat kód](#custom).  
+## <a name="default"></a>Výchozí transformace generování kódu
+ V této části jsou shrnuty výsledky, které jsou vytvářeny příkazem **generovat kód** , pokud tento příkaz neupravíte. Další informace naleznete v tématu [Přizpůsobení příkazu generovat kód](#custom).
 
-- Pro každý typ je vytvořen jeden typ jazyka C#, který jste vybrali v modelu UML. Každý typ je umístěn v samostatném souboru kódu v rámci **GeneratedCode** složky.  
+- Pro každý typ je vytvořen jeden typ jazyka C#, který jste vybrali v modelu UML. Každý typ je umístěn v samostatném souboru kódu ve složce **GeneratedCode** .
 
-- Pokud je typ modelu UML obsažen v balíčku, vygenerovaný typ jazyka C# je umístěn do oboru názvů a soubor je vygenerován ve složce, která má stejný název jako tento obor názvů.  
+- Pokud je typ modelu UML obsažen v balíčku, vygenerovaný typ jazyka C# je umístěn do oboru názvů a soubor je vygenerován ve složce, která má stejný název jako tento obor názvů.
 
-- Vlastnost jazyka C# je vygenerována pro každý `Attribute` třídy modelu UML.  
+- Pro C# každou `Attribute` třídu UML je vygenerována vlastnost.
 
-- Metoda jazyka C# je vygenerována pro každý `Operation` typu modelu UML.  
+- C# Metoda je vygenerována pro `Operation` každý typ UML.
 
-- Pole jazyka C# je vygenerováno pro každé provázané přidružení, kterého se třída účastní.  
+- Pole jazyka C# je vygenerováno pro každé provázané přidružení, kterého se třída účastní.
 
-  Přidáním stereotypu každému typu modelu UML lze určit další vlastnosti generovaného typu jazyka C#.  
+  Přidáním stereotypu každému typu modelu UML lze určit další vlastnosti generovaného typu jazyka C#.
 
-|**Chcete-li vytvořit tento typ jazyka C#**|**Nakreslete tento typ modelu UML**|**Použijte tento stereotyp**|  
-|---------------------------------|----------------------------|-------------------------------|  
-|Třída|Třída|\<žádný > nebo<br /><br /> třída jazyka C#|  
-|Rozhraní|Rozhraní|\<žádný > nebo<br /><br /> rozhraní jazyka C#|  
-|Výčet|Výčet|\<žádný > nebo<br /><br /> výčet jazyka C#|  
-|Delegát|Třída|delegát jazyka C#|  
-|Struktura|Třída|struktura jazyka C#|  
+|**Chcete-li C# vytvořit tento typ**|**Nakreslit tento typ UML**|**Použít tento stereotyp**|
+|---------------------------------|----------------------------|-------------------------------|
+|Třída|Třída|\<žádná > ani<br /><br /> třída jazyka C#|
+|Rozhraní|Rozhraní|\<žádná > ani<br /><br /> rozhraní jazyka C#|
+|Výčet|Výčet|\<žádná > ani<br /><br /> výčet jazyka C#|
+|Delegát|Třída|delegát jazyka C#|
+|Struktura|Třída|struktura jazyka C#|
 
-#### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Nastavení stereotypu pro typ nebo jiný prvek  
+#### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Nastavení stereotypu pro typ nebo jiný prvek
 
-1. Otevřete místní nabídku prvku v diagramu nebo v **Průzkumníku modelů UML**a klikněte na tlačítko **vlastnosti**.  
+1. Otevřete místní nabídku pro prvek v diagramu nebo v **Průzkumníku modelů UML**a poté zvolte možnost **vlastnosti**.
 
-2. V **vlastnosti** okna, klikněte na šipku rozevíracího seznamu v **Stereotypy** vlastnost a potom zaškrtněte políčko stereotypu, který chcete použít.  
+2. V okně **vlastnosti** zvolte šipku rozevíracího seznamu ve vlastnosti stereotypy a potom zaškrtněte políčko stereotypu, který chcete použít.
 
    > [!TIP]
-   > Pokud se stereotypy jazyka C# nezobrazí, povolte profil jazyka C# pro model nebo balíček obsahující prvky modelu, které vás zajímají. Vyberte balíček nebo kořen modelu v **Průzkumníku modelů UML**. Pak v **vlastnosti** okně zvolte **profilu**a poté povolte profil jazyka C#.  
+   > Pokud se stereotypy jazyka C# nezobrazí, povolte profil jazyka C# pro model nebo balíček obsahující prvky modelu, které vás zajímají. Vyberte balíček nebo kořen modelu v **Průzkumníku modelů UML**. Poté v okně **vlastnosti** zvolte možnost **profil**a poté C# profil povolte.
 
-3. Rozbalte **Stereotypy** vlastnosti chcete zobrazit další vlastnosti, které můžete nastavit.  
+3. Rozbalením vlastnosti **Stereotypy** zobrazíte další vlastnosti, které lze nastavit.
 
-   **Popis** vlastnosti typů, atributů, operací a přidružení se zapisují do `<summary>` komentáře v generovaném kódu. Prvky komentářů, které jsou spojeny s typy se zapisují do `<remarks>` komentáře.  
+   Vlastnosti **popisu** typů, atributů, operací a přidružení jsou zapisovány do `<summary>` komentářů ve vygenerovaném kódu. Prvky komentáře, které jsou propojeny s typy, `<remarks>` jsou zapsány do komentářů.
 
-## <a name="varying-the-generated-code"></a>Rozlišování generovaného kódu  
- Generovaný kód se liší v závislosti na vlastnostech každého typu, atributu nebo operace. Pokud nastavíte například **je abstraktní** vlastnost třídy na hodnotu true, pak bude `abstract` – klíčové slovo se zobrazí na tuto vygenerovanou třídu. Pokud jste nastavili **násobnost** atributu k **0..\*** , pak bude mít vygenerovaná vlastnost `IEnumerable<>` typu.  
+## <a name="varying-the-generated-code"></a>Rozlišování generovaného kódu
+ Generovaný kód se liší v závislosti na vlastnostech každého typu, atributu nebo operace. Například pokud nastavíte vlastnost **is abstract** třídy na hodnotu true, `abstract` klíčové slovo se zobrazí ve vygenerované třídě. Pokud nastavíte **násobnost** atributu na **hodnotu\*0..** , bude mít `IEnumerable<>` vygenerovaná vlastnost typ.
 
- Každý stereotyp navíc obsahuje několik dalších vlastností, které lze nastavit. Tyto hodnoty jsou převedeny na příslušná klíčová slova v kódu jazyka C#. Například pokud nastavíte vlastnost `Is Static` na třídu, pak třída jazyka C# budou `static`.  
+ Každý stereotyp navíc obsahuje několik dalších vlastností, které lze nastavit. Tyto hodnoty jsou převedeny na příslušná klíčová slova v kódu jazyka C#. Například pokud nastavíte vlastnost `Is Static` pro třídu, pak bude C# `static`třída.
 
- Chcete-li nastavit tyto další vlastnosti, vyberte v diagramu třídu nebo jiný prvek. V okně Vlastnosti rozbalte **Stereotypy**a poté rozbalte stereotyp jazyka C#, jako **třída jazyka C#** .  V případě tříd tyto dodatečné vlastnosti zahrnují:  
+ Chcete-li nastavit tyto další vlastnosti, vyberte v diagramu třídu nebo jiný prvek. V okno Vlastnosti rozbalte stereotypya potom rozbalte C# stereotyp, jako je například  **C# třída**.  V případě tříd tyto dodatečné vlastnosti zahrnují:
 
-- Atributy CLR  
+- Atributy CLR
 
-- Je částečná  
+- Je částečná
 
-- Je statická  
+- Je statická
 
-- Je nebezpečná  
+- Je nebezpečná
 
-- Viditelnost balíčku  
+- Viditelnost balíčku
 
-  Všechny atributy a operace mají také vlastnosti stereotypu, které lze nastavit. Pokud se vlastnosti na novém atributu nezobrazí, spusťte **generovat kód**.  
+  Všechny atributy a operace mají také vlastnosti stereotypu, které lze nastavit. Pokud nevidíte vlastnosti u nového atributu, spusťte příkaz **generovat kód**.
 
-## <a name="custom"></a> Přizpůsobení příkazu generovat kód  
- **Generovat kód** příkaz funguje pomocí transformace prvků modelu s použitím sady textových šablon. Další informace o textových šablonách naleznete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md).  
+## <a name="custom"></a>Přizpůsobení příkazu generovat kód
+ Příkaz **generovat kód** funguje pomocí transformace prvků modelu pomocí sady textových šablon. Další informace o textových šablonách naleznete v tématu [Code Generation and T4 text Templates](../modeling/code-generation-and-t4-text-templates.md).
 
- Šablony jsou uvedeny v sadě *vazby textové šablony*. Vazba textové šablony určuje, co šablona měla být použita, kde by měl být umístěn generovaný výstup a jiné parametry **generovat kód** příkazu.  
+ Šablony jsou určeny v sadě *vazeb textových šablon*. Vazba textové šablony určuje, která šablona se má použít, kde by se měl umístit generovaný výstup, a další parametry příkazu pro **Vytvoření kódu** .
 
- Při prvním spuštění **generovat kód** příkaz na konkrétním modelu připojí sada výchozích vazeb šablony k kořen modelu. Tyto vazby se vztahují na všechny prvky v modelu.  
+ Při prvním spuštění příkazu **generovat kód** na konkrétním modelu připojí výchozí sadu vazeb šablony ke kořenu modelu. Tyto vazby se vztahují na všechny prvky v modelu.
 
- To však lze přepsat a přidat k těmto výchozím vazbám další, a to připojením vlastních vazeb balíčkům, třídám nebo jiným prvkům. Vazba se vztahuje na všechny prvky obsažené uvnitř prvku, k němuž je připojena. Pokud například chcete, aby všechny typy uvnitř konkrétního balíčku byly transformovány pomocí jiné sady šablon nebo má být výstup proveden do jiné složky, lze vazbu šablony připojit k balíčku.  
+ To však lze přepsat a přidat k těmto výchozím vazbám další, a to připojením vlastních vazeb balíčkům, třídám nebo jiným prvkům. Vazba se vztahuje na všechny prvky obsažené uvnitř prvku, k němuž je připojena. Pokud například chcete, aby všechny typy uvnitř konkrétního balíčku byly transformovány pomocí jiné sady šablon nebo má být výstup proveden do jiné složky, lze vazbu šablony připojit k balíčku.
 
- Chcete-li zkontrolovat vazby šablony připojené k prvku modelu, zvolte tři tečky **[...]**  v **vazby textové šablony** vlastností v okně Vlastnosti.  
+ Chcete-li zkontrolovat vazby šablony připojené k prvku modelu, klikněte na tlačítko se třemi tečkami **[...]** ve vlastnosti **vazby textové šablony** v okno Vlastnosti.
 
- **Generovat kód** šablony příkaz se vztahuje na každý prvek modelu, který jste vybrali. Pro každý prvek je sada použitých šablon kombinovaná sada šablon, které jsou připojeny k jejím kontejnerům až po kořen modelu.  
+ Příkaz **generovat kód** použije šablony pro každý prvek modelu, který jste vybrali. Pro každý prvek je sada použitých šablon kombinovaná sada šablon, které jsou připojeny k jejím kontejnerům až po kořen modelu.
 
- Pokud mají dvě vazby šablony v této sadě stejný název, vazba v menším kontejneru přepíše vazbu ve větším kontejneru. Například kořen modelu má vazbu s názvem **šablony třídy**. Chcete-li mít vlastní šablonu na obsah konkrétního balíčku, definovat vlastní vazba šablony, který má název **šablony třídy**.  
+ Pokud mají dvě vazby šablony v této sadě stejný název, vazba v menším kontejneru přepíše vazbu ve větším kontejneru. Například kořen modelu má vazbu se **šablonou třídy**název. Chcete-li použít vlastní šablonu na obsah konkrétního balíčku, definujte vlastní vazbu šablony, která má **šablonu třídy**název.
 
- Na prvek modelu lze použít více než jednu šablonu. Z každého prvku modelu lze vytvořit více než jeden soubor.  
+ Na prvek modelu lze použít více než jednu šablonu. Z každého prvku modelu lze vytvořit více než jeden soubor.
 
 > [!NOTE]
-> Vazby připojené ke kořenu modelu jsou použity jako výchozí pro všechny prvky v modelu. Chcete-li zobrazit tyto výchozí vazby, otevřete **Průzkumníku modelů UML**. Otevřete místní nabídku projektu modelování, a pak zvolte **nastavení generování kódu**. Případně lze vybrat kořen modelu v Průzkumníku modelů UML. V okně Vlastnosti zvolte **[...]**  v **vazby textové šablony** vlastnost. Tyto vazby se nezobrazí, dokud jste použili **generovat kód** příkaz alespoň jednou. Vazby šablony nelze připojit k diagramu.  
+> Vazby připojené ke kořenu modelu jsou použity jako výchozí pro všechny prvky v modelu. Chcete-li zobrazit tyto výchozí vazby, otevřete **Průzkumníka modelů UML**. Otevřete místní nabídku projektu modelování a pak zvolte **nastavit generování kódu**. Alternativně můžete vybrat kořen modelu v Průzkumníku modelů UML. V okno Vlastnosti vyberte **[...]** ve vlastnosti **vazby textové šablony** . Vazby se nezobrazí, dokud nepoužijete příkaz **generovat kód** alespoň jednou. Vazby šablony nelze připojit k diagramu.
 
-#### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Připojení vazby textové šablony k balíčku nebo jinému prvku modelu  
+#### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Připojení vazby textové šablony k balíčku nebo jinému prvku modelu
 
-1. V **Průzkumníku modelů UML**, otevřete místní nabídku pro prvek modelu a klikněte na tlačítko **vlastnosti**. Obecně byste měli připojovat vazby textové šablony k balíčku nebo kořenu modelu.  
+1. V **Průzkumníku modelů UML**otevřete místní nabídku pro prvek modelu a poté zvolte možnost **vlastnosti**. Obecně byste měli připojovat vazby textové šablony k balíčku nebo kořenu modelu.
 
-2. V **vlastnosti** okna, klikněte na tlačítko tří teček ( **[...]** ) v **vazby textové šablony** vlastnost.  
+2. V okně **vlastnosti** klikněte na tlačítko se třemi tečkami ( **[...]** ) ve vlastnosti **vazby textové šablony** .
 
-    **Vazby textové šablony** zobrazí se dialogové okno.  
+    Zobrazí se dialogové okno **vazby textové šablony** .
 
-3. Zvolte **přidat** vytvořte novou vazbu textové šablony.  
+3. Klikněte na tlačítko **Přidat** a vytvořte novou vazbu textové šablony.
 
-    \- nebo –  
+    \- nebo –
 
-    Zvolte existující vazbu a upravte ji.  
+    Zvolte existující vazbu a upravte ji.
 
-    Každá vazba šablony definuje, jak by zadaná šablona měla být použita na vybraný prvek modelu a jiné prvky modelu, které obsahuje.  
+    Každá vazba šablony definuje, jak by zadaná šablona měla být použita na vybraný prvek modelu a jiné prvky modelu, které obsahuje.
 
-4. V tomto dialogovém okně nastavte vlastnosti vazby textové šablony.  
+4. V tomto dialogovém okně nastavte vlastnosti vazby textové šablony.
 
-   |    **Vlastnost**    |                                                                                                                                                                                                                                                                                                                    **Popis**                                                                                                                                                                                                                                                                                                                    |
+   |    **Majetek**    |                                                                                                                                                                                                                                                                                                                    **Popis**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        Name        |                                                                                                                                                                                                                                                  Název této vazby. Chcete-li přepsat vazby zděděné od nadřazeného balíčku nebo modelu, použijte stejný název, jako je název vazby, kterou chcete přepsat.                                                                                                                                                                                                                                                  |
    |     Přepsat      |                                                                                                                                                                                                                                                                                                      Pokud je hodnota true, je existující kód přepsán.                                                                                                                                                                                                                                                                                                       |
-   |    Cílový název     | Název souboru, který je generován.<br /><br /> Výrazy můžete vložit do tohoto řetězce, jako `{Name}` nebo `{Owner.Name}`. Můžete například napsat: `{Owner.Name}_{Name}`. Tento výraz je vyhodnocen pro prvek modelu. Mohou být použity vlastnosti prvků, ale nikoli metody. Pokud chcete zjistit, jaké vlastnosti lze použít, podívejte se na vlastnosti typů v **Microsoft.VisualStudio.Uml.\*** . \*\*Důležité:\*\*  `{Name}` nebo `{Owner.Name}` lze použít pouze ve **název cílového** vlastnost. Chcete-li změnit název vygenerované třídy, musíte změnit šablonu. Další informace najdete v tématu [Writing a Text Template](#writing). |
-   |    Cesta k projektu    |                                                                      Určuje cestu k [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] výstupní soubory projektu, který bude obsahovat transformace. Zadávané hodnoty slouží k vytvoření nového projektu. Zvolte tlačítko se třemi tečkami ( **[...]** ) vyberte existující projekt.<br /><br /> Pokud nový projekt neexistuje, bude vytvořen. Bude to projekt knihovny tříd jazyka C#.<br /><br /> Chcete-li to provést, je nutné projekt zadat přímo. Lze použít makra proměnných prostředí, například %ProgramFiles% nebo %LocalAppData%.                                                                       |
-   |  Cílový adresář  |                                                                                          Složka, do které je cílový soubor generován. Tato cesta je relativní ke složce projektu.<br /><br /> Můžete použít `{PackageStructure}` výraz lze vložit cestu, která odpovídá názvům obsažených balíčků. Výchozí hodnota je `\GeneratedCode\{PackageStructure}`. Lze také použít proměnné prostředí, například %TEMP% nebo %HomePath%. **Důležité:** `{PackageStructure}` lze použít pouze ve **cílový adresář** vlastnost.                                                                                          |
+   |    Cílový název     | Název souboru, který je generován.<br /><br /> Do tohoto řetězce lze vkládat výrazy, například `{Name}` nebo. `{Owner.Name}` Můžete například napsat: `{Owner.Name}_{Name}`. Tento výraz je vyhodnocen pro prvek modelu. Mohou být použity vlastnosti prvků, ale nikoli metody. Pokud chcete zjistit, jaké vlastnosti lze použít, podívejte se na vlastnosti typů v **Microsoft.VisualStudio.Uml.\*** . \*\*Důležité:\*\*  `{Name}` nebo `{Owner.Name}` lze použít pouze ve **název cílového** vlastnost. Chcete-li změnit název vygenerované třídy, musíte změnit šablonu. Další informace najdete v tématu [Vytvoření textové šablony](#writing). |
+   |    Cesta k projektu    |                                                                      Určuje cestu k [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu, který bude obsahovat výstupní soubory transformace. Zadávané hodnoty slouží k vytvoření nového projektu. Kliknutím na tlačítko se třemi tečkami ( **[...]** ) vyberte existující projekt.<br /><br /> Pokud nový projekt neexistuje, bude vytvořen. Bude to projekt knihovny tříd jazyka C#.<br /><br /> Chcete-li to provést, je nutné projekt zadat přímo. Lze použít makra proměnných prostředí, například %ProgramFiles% nebo %LocalAppData%.                                                                       |
+   |  Cílový adresář  |                                                                                          Složka, do které je cílový soubor generován. Tato cesta je relativní ke složce projektu.<br /><br /> Pomocí `{PackageStructure}` výrazu můžete vložit cestu, která odpovídá názvům obsahujícího balíčky. Výchozí hodnota je `\GeneratedCode\{PackageStructure}`. Lze také použít proměnné prostředí, například %TEMP% nebo %HomePath%. **Důležité:** `{PackageStructure}` dá se použít jenom ve vlastnosti **cílového adresáře** .                                                                                          |
    | Cesta k souboru šablony |                                                                                                                                                           Šablona, která bude provádět transformaci.<br /><br /> Lze použít buď dodané šablony, nebo vytvořit vlastní. Dodané šablony naleznete v následujícím umístění:<br /><br /> ...\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
 
-5. K prvku lze připojit libovolný počet vazeb.  
+5. K prvku lze připojit libovolný počet vazeb.
 
-## <a name="writing"></a> Vytvoření textové šablony  
- Lze vytvářet vlastní textové šablony. Textové šablony mohou generovat kód programu nebo jakýkoli jiný typ textového souboru.  
+## <a name="writing"></a>Zápis textové šablony
+ Lze vytvářet vlastní textové šablony. Textové šablony mohou generovat kód programu nebo jakýkoli jiný typ textového souboru.
 
- Doporučujeme začít úpravou kopií standardních šablon. Tyto šablony lze zkopírovat z následujících umístění:  
+ Doporučujeme začít úpravou kopií standardních šablon. Tyto šablony lze zkopírovat z následujících umístění:
 
- ...\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\  
+ ...\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\
 
- Další informace o těchto textových šablonách naleznete v následujících tématech.  
+ Další informace o těchto textových šablonách naleznete v následujících tématech.
 
-- Textová šablona je prototyp výsledného souboru a obsahuje výsledný text a programový kód, který čte model. Další informace najdete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md).  
+- Textová šablona je prototyp výsledného souboru a obsahuje výsledný text a programový kód, který čte model. Další informace najdete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md).
 
-- Chcete-li navigovat model UML v kódu programu, je nutné použít rozhraní API modelu UML. Další informace najdete v tématu [procházení modelu UML](../modeling/navigate-the-uml-model.md) a [Reference k rozhraní API pro rozšíření modelování UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
+- Chcete-li navigovat model UML v kódu programu, je nutné použít rozhraní API modelu UML. Další informace najdete v tématu [navigace modelu UML](../modeling/navigate-the-uml-model.md) a [referenční informace k rozhraní API pro rozšíření modelování UML](../modeling/api-reference-for-uml-modeling-extensibility.md).
 
-  Použití šablon s **generovat kód** příkazu musíte přidat direktivu modelování. Příklad:  
+  Chcete-li použít šablony s příkazem **generovat kód** , je nutné zahrnout direktivu Modeling. Příklad:
 
-  `<#@ Modeling ElementType="Microsoft.VisualStudio.Uml.Classes.IClass" Processor="ModelingProcessor" #>`  
+  `<#@ Modeling ElementType="Microsoft.VisualStudio.Uml.Classes.IClass" Processor="ModelingProcessor" #>`
 
-  `ElementType` Atribut definuje typ prvku modelu UML, ke kterému se tato šablona vztahuje.  
+  `ElementType` Atribut definuje typ prvku UML, na který se tato šablona vztahuje.
 
-  V šabloně `this` patří dočasné třídě, která má následující vlastnosti:  
+  V šabloně `this` patří do dočasné třídy, která má následující vlastnosti:
 
-- `Element` = UML <xref:Microsoft.VisualStudio.Uml.Classes.IElement> na které se je šablona použita.  
+- `Element`= [IELEMENT](/previous-versions/dd516035(v=vs.140)) UML, na který je šablona použita.
 
-- `Errors`: <xref:System.CodeDom.Compiler.CompilerErrorCollection>  
+- `Errors`: <xref:System.CodeDom.Compiler.CompilerErrorCollection>
 
-- `Host`: <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>  
+- `Host`: [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
-- `ModelBus`: <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>. Další informace najdete v tématu [modely UML integrovat s jinými modely a nástroji](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- `ModelBus`: [ModelBus](/previous-versions/ee904639(v=vs.140)). Další informace najdete v tématu [Integrace modelů UML s jinými modely a nástroji](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-- `ProfileName` = "#Profile jazyka C#"  
+- `ProfileName`= "Profil C #"
 
-- `ServiceProvider`: <xref:System.IServiceProvider>  
+- `ServiceProvider`: <xref:System.IServiceProvider>
 
-- `Session`: <xref:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession>.  
+- `Session`: <xref:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession>.
 
-- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>. Toto je úložiště SDK vizualizace a modelování, pomocí kterého je implementován ModelStore modelu UML. Chcete-li získat UML <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml.IModelStore>, použijte `this.Element.GetModelStore()`.  
+- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>. Toto je úložiště SDK vizualizace a modelování, pomocí kterého je implementován ModelStore modelu UML. Chcete-li získat [IMODELSTORE](/previous-versions/ee789385(v=vs.140))UML, `this.Element.GetModelStore()`použijte.
 
-  Následující body mohou být užitečné při vytváření textové šablony. Tyto informace je podrobně popsány v [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md).  
+  Následující body mohou být užitečné při vytváření textové šablony. Tyto informace jsou podrobně popsané v článku [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md).
 
-- Můžete nastavit příponu názvu souboru výsledku `Output` směrnice. Jeden `Output` – direktiva je vyžadována v každé textové šabloně.  
+- V `Output` direktivě můžete nastavit příponu názvu souboru výsledku. Každá `Output` textová šablona vyžaduje jednu direktivu.
 
-- Některá sestavení jsou automaticky odkazována pomocí šablony. Mezi tato sestavení patří například System.dll a Microsoft.VisualStudio.Uml.Interfaces.dll.  
+- Některá sestavení jsou automaticky odkazována pomocí šablony. Mezi tato sestavení patří například System.dll a Microsoft.VisualStudio.Uml.Interfaces.dll.
 
-   Chcete-li v generování programového kódu použít jiná sestavení, musíte použít `Assembly` směrnice. Příklad:  
+   Chcete-li použít jiná sestavení v kódu vygenerování programu, je nutné `Assembly` použít direktivu. Příklad:
 
-   `<#@ Assembly Name="%ProgramFiles%\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll" #>`  
+   `<#@ Assembly Name="%ProgramFiles%\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll" #>`
 
-- Některé obory názvů, jako `System` automaticky importují do kódu programu. Pro ostatní obory názvů, můžete použít `Import` direktiv stejným způsobem, který můžete využít `using` příkazu. Příklad:  
+- Některé obory názvů `System` , jako je například, jsou automaticky importovány do kódu programu. Pro jiné obory názvů můžete použít `Import` direktivu stejným způsobem, jako byste `using` použili příkaz. Příklad:
 
-   `<#@ Import Namespace="Microsoft.VisualStudio.Uml.Classes" #>`  
+   `<#@ Import Namespace="Microsoft.VisualStudio.Uml.Classes" #>`
 
-   `<#@ Import Namespace="Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml" #>`  
+   `<#@ Import Namespace="Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml" #>`
 
-- Použití `Include` – direktiva lze odkazovat na text jiného souboru.  
+- `Include` Pomocí direktivy můžete odkazovat na text jiného souboru.
 
-- Části šablony uzavřené v závorkách `<# ... #>` jsou spouštěny **generovat kód** příkazu. Části šablony mimo tyto závorky jsou do výsledného souboru zkopírovány. Je důležité rozlišovat mezi generovacím kódem a generovaným textem. Generovaný text může být v libovolném jazyce.  
+- Části šablony uzavřené v závorkách `<# ... #>` jsou spouštěny příkazem **generovat kód** . Části šablony mimo tyto závorky jsou do výsledného souboru zkopírovány. Je důležité rozlišovat mezi generovacím kódem a generovaným textem. Generovaný text může být v libovolném jazyce.
 
-- `<#= Expressions #>` jsou vyhodnoceny a převedeny na řetězce.  
+- `<#= Expressions #>`jsou vyhodnocovány a převedeny na řetězce.
 
-## <a name="see-also"></a>Viz také  
- [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)   
- [Generování souborů z modelu UML](../modeling/generate-files-from-a-uml-model.md)
+## <a name="see-also"></a>Viz také
+ [Diagramy tříd UML: ](../modeling/uml-class-diagrams-reference.md) Referenční[diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md) [generují soubory z modelu UML](../modeling/generate-files-from-a-uml-model.md)

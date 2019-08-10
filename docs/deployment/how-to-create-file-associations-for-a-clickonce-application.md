@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Vytváření přidružení souborů pro aplikaci ClickOnce | Dokumentace Microsoftu'
+title: 'Postupy: Vytváření přidružení souborů pro aplikaci ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,45 +15,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15d9b81bd342ccd8a5ee3377323e140ab1167c10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0526351d2b3e2c223aacbe0e58d9ee39bd1b19c4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899457"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924561"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Postupy: Vytváření přidružení souborů pro aplikaci ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace může být přidružený jeden nebo více přípon souborů, tak, aby aplikaci spustit automaticky, když uživatel otevře soubor z těchto typů. Přidání podpory přípony názvu souboru [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací je jednoduché.
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Postupy: Vytvoření přidružení souborů pro aplikaci ClickOnce
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikace je možné přidružit k jedné nebo více příponám názvů souborů, aby se aplikace spustila automaticky, když uživatel otevře soubor těchto typů. Přidání podpory přípon názvů souborů do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace je jednoduché.
 
-### <a name="to-create-file-associations-for-a-clickonce-application"></a>Chcete-li vytvořit přidružení souborů pro aplikaci ClickOnce
+### <a name="to-create-file-associations-for-a-clickonce-application"></a>Vytvoření přidružení souborů pro aplikaci ClickOnce
 
-1. Vytvoření [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace za normálních okolností nebo použít stávající [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.
+1. Vytvořte aplikaci normálně nebo použijte existující [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
-2. Otevření manifestu aplikace se textovém editoru nebo editoru XML, jako je například Poznámkový blok.
+2. Otevřete manifest aplikace pomocí textového editoru nebo editoru XML, jako je například Poznámkový blok.
 
-3. Najít `assembly` elementu. Další informace najdete v tématu [ClickOnce – manifest aplikace](../deployment/clickonce-application-manifest.md).
+3. `assembly` Vyhledejte element. Další informace naleznete v tématu [manifest aplikace ClickOnce](../deployment/clickonce-application-manifest.md).
 
-4. Jako podřízený objekt `assembly` element, přidejte `fileAssociation` elementu. `fileAssociation` Element má čtyři atributy:
+4. Jako podřízený `assembly` prvek elementu `fileAssociation` přidejte element. `fileAssociation` Element má čtyři atributy:
 
-   - `extension`: Přípona názvu souboru, kterou chcete přiřadit k aplikaci.
+   - `extension`: Přípona názvu souboru, kterou chcete přidružit k aplikaci.
 
-   - `description`: Popis typu souboru, který se zobrazí v prostředí Windows.
+   - `description`: Popis typu souboru, který se zobrazí v prostředí Windows Shell.
 
-   - `progid`: Řetězec, který jednoznačně identifikuje typ souboru k označení v registru.
+   - `progid`: Řetězec jednoznačně identifikující typ souboru, který se má označit v registru.
 
-   - `defaultIcon`: Ikona pro tento typ souboru. Ikona je nutné přidat jako soubor prostředků v manifestu aplikace. Další informace najdete v tématu [jak: Zahrnutí datového souboru do aplikace ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+   - `defaultIcon`: Ikona, která se má použít pro tento typ souboru Ikona musí být přidána jako prostředek souboru v manifestu aplikace. Další informace najdete v tématu [jak: Zahrnutí datového souboru do aplikace](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)ClickOnce.
 
-     Příkladem `file` a `fileAssociation` prvky, naleznete v tématu [ \<fileAssociation > Element](../deployment/fileassociation-element-clickonce-application.md).
+     Příklad `file` prvků a `fileAssociation` naleznete v tématu [ \<Association > element](../deployment/fileassociation-element-clickonce-application.md).
 
-5. Pokud chcete přidružit více než jeden typ souboru aplikace, přidejte další `fileAssociation` elementy. Všimněte si, `progid` atribut by měl být různé pro jednotlivé.
+5. Pokud chcete aplikaci přidružit více než jeden typ souboru, přidejte další `fileAssociation` prvky. Všimněte si, `progid` že atribut by měl být pro každý z nich odlišný.
 
-6. Jakmile budete hotovi s manifestem aplikace, znovu podepište manifest. Můžete to provést z příkazového řádku pomocí *Mage.exe*.
+6. Po dokončení manifestu aplikace znovu podepište manifest. To lze provést z příkazového řádku pomocí nástroje *Mage. exe*.
 
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`
 
-    Další informace najdete v tématu [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+    Další informace naleznete v tématu [Mage. exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 ## <a name="see-also"></a>Viz také:
-- [\<fileAssociation > – element](../deployment/fileassociation-element-clickonce-application.md)
-- [ClickOnce – manifest aplikace](../deployment/clickonce-application-manifest.md)
+- [\<element > přidružení](../deployment/fileassociation-element-clickonce-application.md)
+- [Manifest aplikace ClickOnce](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

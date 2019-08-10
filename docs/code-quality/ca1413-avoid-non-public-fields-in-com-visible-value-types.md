@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ac998d8a0e3a8c1883afa07c2cfe16098a2461af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3eb216af1b6cd742aff83b248b6752adea292345
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546092"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921842"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: Vyhněte se neveřejným polím v typech hodnot viditelných modulem COM
 
@@ -30,33 +30,33 @@ ms.locfileid: "62546092"
 |-|-|
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
 |CheckId|CA1413|
-|Kategorie|Microsoft.Interoperability|
+|Kategorie|Microsoft. interoperabilita|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Hodnotový typ, který je označen jako viditelný pro Model COM (Component Object) deklaruje instanci neveřejné pole.
+## <a name="cause"></a>příčina
+Typ hodnoty, který je konkrétně označen jako viditelný pro model COM (Component Object Model), deklaruje pole instance NonPublic.
 
 ## <a name="rule-description"></a>Popis pravidla
- Neveřejná pole instancí hodnotových typů viditelných moduly COM jsou viditelná klientům typu COM. Zkontrolujte obsah pole informace, které by neměly být vystaveny nebo které budou mít nežádoucí vliv návrh nebo zabezpečení.
+Neveřejná pole instancí hodnotových typů viditelných moduly COM jsou viditelná klientům typu COM. Projděte si obsah pole s informacemi, které by neměly být vystavené nebo které budou mít neúmyslný návrh nebo bezpečnostní účinek.
 
- Všechny veřejné hodnotové typy jsou standardně viditelné v modelu COM. Pokud chcete snížit počet falešně pozitivních výsledků, vyžaduje toto pravidlo viditelnost modelu COM typ, který má být explicitně uvedena. Musí být označené obsahující sestavení <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> nastavena na `false` a typ musí být označeny pomocí <xref:System.Runtime.InteropServices.ComVisibleAttribute> nastavena na `true`.
+Ve výchozím nastavení jsou všechny typy veřejné hodnoty viditelné modelu COM. Chcete-li však omezit falešně pozitivní hodnoty, toto pravidlo vyžaduje explicitní stanovení viditelnosti typu modelu COM. Obsahující <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> sestavení musí být označeno nastavením na `false` a typ <xref:System.Runtime.InteropServices.ComVisibleAttribute> musí být označen nastavením na `true`.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla a ponechat skryté pole, změňte typ hodnoty na typ odkazu nebo odebrat <xref:System.Runtime.InteropServices.ComVisibleAttribute> atribut typu.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla a nechat pole skryté, změňte typ hodnoty na typ odkazu nebo odeberte <xref:System.Runtime.InteropServices.ComVisibleAttribute> atribut z typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla, pokud veřejná odhalení pole je přijatelné.
+Je bezpečné potlačit upozornění od tohoto pravidla, pokud je veřejná expozice pole přijatelná.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ, který porušuje pravidla.
+Následující příklad ukazuje typ, který je v rozporu s pravidlem.
 
- [!code-csharp[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/CSharp/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.cs)]
- [!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]
+[!code-csharp[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/CSharp/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.cs)]
+[!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1407: Vyhněte se statickým členům ve viditelných typech modelu COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+[CA1407: Vyhněte se statickým členům ve viditelných typech modelu COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017: Označte sestavení pomocí atributu ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017: Označte sestavení pomocí ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Viz také:
 

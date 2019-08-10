@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea4d559921fc7cf387116d013906891c74a4ed8c
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822349"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919526"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Tipy a triky pro usnadnění pro Visual Studio
 
@@ -29,7 +29,7 @@ Také pokryjeme, jak používat poznámky k odhalení užitečných informací o
 
 ## <a name="save-your-ide-settings"></a>Uložení nastavení IDE
 
- Prostředí IDE můžete přizpůsobit uložením rozložení okna, schématu mapování klávesnice a dalších předvoleb. Další informace najdete v tématu [Přizpůsobení integrovaného vývojového prostředí (IDE) sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Prostředí IDE můžete přizpůsobit uložením rozložení okna, schématu mapování klávesnice a dalších předvoleb. Další informace najdete v tématu [Přizpůsobení integrovaného vývojového prostředí (IDE) sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="modify-your-ide-for-high-contrast-viewing"></a>Úprava prostředí IDE pro zobrazení s vysokým kontrastem
 

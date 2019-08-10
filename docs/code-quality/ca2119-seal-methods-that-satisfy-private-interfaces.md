@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c019e98e7f1311b6521dff563cb8e7bb0a2356e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02e69a97468675cd6f7530793581c15717465d6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62544011"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921065"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Zapečeťte metody, které vyhovují privátním rozhraním
 
@@ -34,41 +34,41 @@ ms.locfileid: "62544011"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Odvoditelný veřejný typ poskytuje implementaci přepisovatelné metody `internal` (`Friend` v jazyce Visual Basic) rozhraní.
+## <a name="cause"></a>příčina
+Dědičný veřejný typ poskytuje implementaci `internal` přepsatelné metody rozhraní (`Friend` v Visual Basic).
 
 ## <a name="rule-description"></a>Popis pravidla
- Metody rozhraní mít přístupnost public, což není možné změnit implementujícího typu. Vnitřní rozhraní vytvoří kontrakt, který není zamýšlena k implementaci mimo sestavení, který definuje rozhraní. Veřejný typ, který implementuje metodu pomocí interní rozhraní `virtual` (`Overridable` v jazyce Visual Basic) umožňuje Modifikátor metody, která se dá přepsat odvozený typ, který se nachází mimo sestavení. Pokud druhý typ v sestavení volá metodu a očekává, že pouze interní smlouvy, chování může být ohrožené, když místo toho se zpracovává přepsané metody v mimo sestavení. Tím se vytvoří ohrožení zabezpečení.
+Metody rozhraní mají veřejné přístupnost, které nelze změnit implementací typu. Interní rozhraní vytvoří kontrakt, který není určen pro implementaci mimo sestavení, které definuje rozhraní. Veřejný typ, který implementuje metodu interního rozhraní pomocí `virtual` modifikátoru (`Overridable` in Visual Basic), umožňuje metodu přepsat odvozeným typem, který je mimo sestavení. Pokud druhý typ v definičním sestavení volá metodu a očekává pouze interní kontrakt, chování může být ohroženo, když místo toho je provedena přepsaná metoda v externím sestavení. Tím se vytvoří chyba zabezpečení.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, zabránit metody přepsání mimo sestavení pomocí jedné z následujících akcí:
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, zabráníte přepsání metody mimo sestavení pomocí jedné z následujících akcí:
 
-- Ujistěte se, že deklarující typ `sealed` (`NotInheritable` v jazyce Visual Basic).
+- Proveďte deklaraci typu `sealed` (`NotInheritable` v Visual Basic).
 
-- Změňte přístupnost deklarující typ, který má `internal` (`Friend` v jazyce Visual Basic).
+- Změňte přístupnost deklarace typu na `internal` (`Friend` v Visual Basic).
 
-- Odebrání všech veřejných konstruktorů deklarujícího typu.
+- Odebere všechny veřejné konstruktory z deklarující typ.
 
-- Implementace metody bez použití `virtual` modifikátor.
+- Implementujte metodu bez použití `virtual` modifikátoru.
 
-- Explicitně implementujte metodu.
+- Explicitně Implementujte metodu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění z tohoto pravidla, pokud po pečlivou revizi, neexistují žádné problémy se zabezpečením, která může být zneužitelné, pokud je přepsána metoda mimo sestavení.
+Je bezpečné potlačit upozornění od tohoto pravidla, pokud po pečlivém přezkoumání neexistují žádné problémy se zabezpečením, které by mohly být zneužity, pokud je metoda přepsána mimo sestavení.
 
 ## <a name="example-1"></a>Příklad 1
- Následující příklad ukazuje typ, `BaseImplementation`, který porušuje tato pravidla.
+Následující příklad ukazuje typ, `BaseImplementation`, který porušuje toto pravidlo.
 
- [!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
- [!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
- [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
+[!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
+[!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
+[!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
 
 ## <a name="example-2"></a>Příklad 2
- Následující příklad využívá virtuální metoda provádění předchozího příkladu.
+Následující příklad zneužije implementaci virtuální metody předchozího příkladu.
 
- [!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
- [!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
- [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
+[!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
+[!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
+[!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
 
 ## <a name="see-also"></a>Viz také:
 

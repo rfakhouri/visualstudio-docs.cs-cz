@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a52add4453276ebf415b47f7f50e74b51a573306
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b3789b5e786038c2bf1fe5e823a1b0fb4f7a7c9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546510"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922730"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Nekódujte pevně řetězce závislé na národním prostředí
 
@@ -33,25 +33,25 @@ ms.locfileid: "62546510"
 |Kategorie|Microsoft.Globalization|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
- Metoda používá řetězcový literál, který představuje část cesty k určitým složkám systému.
+## <a name="cause"></a>příčina
+Metoda používá řetězcový literál, který představuje část cesty určitých systémových složek.
 
 ## <a name="rule-description"></a>Popis pravidla
- <xref:System.Environment.SpecialFolder?displayProperty=fullName> Výčet obsahuje členy, které odkazují na speciální systémové složky. Umístění těchto složek mohou mít různé hodnoty v různých operačních systémech, uživatel může změnit některé z míst a místa jsou lokalizována. Příklad speciální složky je systémová složka, která je "C:\WINDOWS\system32" na [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] ale "C:\WINNT\system32" na [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]. <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> Metoda vrátí umístění, které jsou přidružené k <xref:System.Environment.SpecialFolder> výčtu. Umístění, které jsou vráceny pomocí <xref:System.Environment.GetFolderPath%2A> jsou lokalizované a vhodné pro aktuálně spuštěný počítač.
+<xref:System.Environment.SpecialFolder?displayProperty=fullName> Výčet obsahuje členy, kteří odkazují na speciální systémové složky. Umístění těchto složek může mít různé hodnoty v různých operačních systémech, uživatel může změnit některá umístění a umístění jsou lokalizovaná. Příkladem speciální složky je systémová složka, která je "C:\Windows\System32" na [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] serveru, ale "C:\Winnt\System32 [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]". Metoda vrátí umístění, která jsou přidružena <xref:System.Environment.SpecialFolder> k výčtu. <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> Umístění, která jsou vrácena nástrojem <xref:System.Environment.GetFolderPath%2A> , jsou lokalizována a vhodná pro aktuálně běžící počítač.
 
- Toto pravidlo tokenizes, které se načítají pomocí cesty ke složkám <xref:System.Environment.GetFolderPath%2A> metoda do úrovní samostatný adresář. Každý řetězcového literálu je ve srovnání s tokeny. Pokud se najde shoda, se předpokládá, že metoda je vytváření řetězec, který označuje umístění systému, který je přidružený k tokenu. Přenositelnost a lokalizovatelnosti <xref:System.Environment.GetFolderPath%2A> metody k získání umístění speciální systémové složky namísto použití řetězcových literálů.
+Toto pravidlo tokenizes cesty ke složkám, které jsou načteny <xref:System.Environment.GetFolderPath%2A> pomocí metody do samostatných úrovní adresáře. Každý řetězcový literál je porovnán s tokeny. Pokud je nalezena shoda, předpokládá se, že metoda sestavuje řetězec, který odkazuje na umístění systému, které je přidruženo k tokenu. Pro přenositelnost a lokalizaci použijte <xref:System.Environment.GetFolderPath%2A> metodu pro načtení umístění speciálních systémových složek namísto použití řetězcových literálů.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, načtěte umístění pomocí <xref:System.Environment.GetFolderPath%2A> metody.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, načtěte umístění pomocí <xref:System.Environment.GetFolderPath%2A> metody.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla, pokud řetězcového literálu se nepoužívá k odkazování na jedno z umístění systému, které je přidružené <xref:System.Environment.SpecialFolder> výčtu.
+Pokud se řetězcový literál nepoužívá k odkazování na jeden ze systémových umístění, která jsou přidružena <xref:System.Environment.SpecialFolder> k výčtu, je bezpečné potlačit upozornění od tohoto pravidla.
 
 ## <a name="example"></a>Příklad
- Následující příklad vytvoří cesta běžné složka dat aplikace, které toto pravidlo generuje upozornění na tři. V dalším kroku příklad načte pomocí cesty <xref:System.Environment.GetFolderPath%2A> metody.
+Následující příklad vytvoří cestu ke složce Common data Application, která z tohoto pravidla generuje tři upozornění. Dále příklad načte cestu pomocí <xref:System.Environment.GetFolderPath%2A> metody.
 
- [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
- [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
+[!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
+[!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1303: Nepředávejte literály jako lokalizované parametry](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)
+[CA1303: Nepředávejte literály jako lokalizované parametry](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)

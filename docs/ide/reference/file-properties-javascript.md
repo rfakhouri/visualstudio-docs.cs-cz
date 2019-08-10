@@ -26,27 +26,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d615a6d805fb9ff63ffd0ac402b115a0e9dc691
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461835"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926238"
 ---
 # <a name="file-properties-javascript"></a>Vlastnosti souboru, JavaScript
 
 Pomocí vlastností souboru můžete určit, jaké akce má projektový systém provádět na souborech. Můžete například nastavit vlastnosti souboru a určit, jestli se má soubor přidat do balíčku jako soubor prostředků.
 
- Můžete vybrat libovolný soubor v Průzkumník řešení a potom prostudovat jeho vlastnosti v okno Vlastnosti. Soubory JavaScriptu mají čtyři vlastnosti: **Kopírovat do výstupního adresáře**, **Akce balíčku**, **názvu souboru**a **cesty k souboru**.
+Můžete vybrat libovolný soubor v Průzkumník řešení a potom prostudovat jeho vlastnosti v okno Vlastnosti. Soubory JavaScriptu mají čtyři vlastnosti: **Kopírovat do výstupního adresáře**, **Akce balíčku**, **názvu souboru**a **cesty k souboru**.
 
 ## <a name="file-properties"></a>Vlastnosti souboru
- Tato část popisuje vlastnosti společné pro soubory jazyka JavaScript.
+Tato část popisuje vlastnosti společné pro soubory jazyka JavaScript.
 
 ### <a name="copy-to-output-directory-property"></a>Vlastnost kopírovat do výstupního adresáře
- Tato vlastnost určuje podmínky, za kterých se vybraný zdrojový soubor zkopíruje do výstupního adresáře. Pokud  se soubor nikdy nekopíruje do výstupního adresáře, vyberte nekopírovat. Vyberte možnost **Kopírovat vždy** , pokud je soubor vždy zkopírován do výstupního adresáře. Vyberte možnost **Kopírovat, pokud je novější** , pokud má být soubor zkopírován pouze v případě, že je novější než existující soubor se stejným názvem ve výstupním adresáři.
+Tato vlastnost určuje podmínky, za kterých se vybraný zdrojový soubor zkopíruje do výstupního adresáře. Pokud se soubor nikdy nekopíruje do výstupního adresáře, vyberte nekopírovat. Vyberte možnost **Kopírovat vždy** , pokud je soubor vždy zkopírován do výstupního adresáře. Vyberte možnost **Kopírovat, pokud je novější** , pokud má být soubor zkopírován pouze v případě, že je novější než existující soubor se stejným názvem ve výstupním adresáři.
 
 ### <a name="package-action"></a>Akce balíčku
- Vlastnost **Akce balíčku** označuje, co sada Visual Studio obsahuje soubor při spuštění sestavení. **Akce balíčku** může mít jednu z několika hodnot:
+Vlastnost **Akce balíčku** označuje, co sada Visual Studio obsahuje soubor při spuštění sestavení. **Akce balíčku** může mít jednu z několika hodnot:
 
 - **Žádné** – soubor není zahrnutý v manifestu balíčku. Příkladem je textový soubor, který obsahuje dokumentaci, například soubor Readme.
 
@@ -59,40 +59,40 @@ Pomocí vlastností souboru můžete určit, jaké akce má projektový systém 
 Výchozí hodnota pro **akci balíčku** závisí na příponě souboru, který do řešení přidáte.
 
 ### <a name="file-name-property"></a>Vlastnost názvu souboru
- Zobrazí název souboru jako hodnotu určenou jen pro čtení. Chcete-li přejmenovat soubor, je nutné kliknout pravým tlačítkem myši na Průzkumník řešení a vybrat možnost **Přejmenovat**.
+Zobrazí název souboru jako hodnotu určenou jen pro čtení. Chcete-li přejmenovat soubor, je nutné kliknout pravým tlačítkem myši na Průzkumník řešení a vybrat možnost **Přejmenovat**.
 
 ### <a name="full-path-property"></a>Vlastnost úplné cesty
- Zobrazí úplnou cestu k souboru jako hodnotu určenou jen pro čtení. Pokud chcete změnit cestu k souboru, můžete ho přetáhnout v Průzkumník řešení.
+Zobrazí úplnou cestu k souboru jako hodnotu určenou jen pro čtení. Pokud chcete změnit cestu k souboru, můžete ho přetáhnout v Průzkumník řešení.
 
 ## <a name="reference-file-properties"></a>Vlastnosti referenčního souboru
- Tato část popisuje obecné vlastnosti souborů, na které se odkazuje z aplikace pro UWP sestavené pomocí JavaScriptu. Když vyberete odkaz, jako je soubor. winmd, odkaz na sadu SDK, odkaz na projekt na projekt nebo odkaz na sestavení v Průzkumník řešení, další vlastnosti se mohou v okno Vlastnosti zobrazit podle typu souboru.
+Tato část popisuje obecné vlastnosti souborů, na které se odkazuje z aplikace pro UWP sestavené pomocí JavaScriptu. Když vyberete odkaz, jako je soubor. winmd, odkaz na sadu SDK, odkaz na projekt na projekt nebo odkaz na sestavení v Průzkumník řešení, další vlastnosti se mohou v okno Vlastnosti zobrazit podle typu souboru.
 
 ### <a name="culture"></a>Jazyková verze
- Zobrazuje jazyk přidružený k odkazu.
+Zobrazuje jazyk přidružený k odkazu.
 
 ### <a name="file-type"></a>Typ souboru
- Zobrazí typ souboru odkazu.
+Zobrazí typ souboru odkazu.
 
 ### <a name="file-version"></a>Verze souboru
- Zobrazuje verzi souboru odkazu.
+Zobrazuje verzi souboru odkazu.
 
 ### <a name="identity"></a>Identita
- Zobrazuje identitu odkazu, který je použit v projektu, který je uložen v souboru projektu.
+Zobrazuje identitu odkazu, který je použit v projektu, který je uložen v souboru projektu.
 
 ### <a name="package"></a>Balíček
- Zobrazuje název manifestu balíčku přidruženého k odkazu.
+Zobrazuje název manifestu balíčku přidruženého k odkazu.
 
 ### <a name="resolved-path"></a>Přeložená cesta
- Zobrazuje cestu k odkazu, který se používá v projektu.
+Zobrazuje cestu k odkazu, který se používá v projektu.
 
 ### <a name="sdk-path"></a>Cesta k sadě SDK
- Zobrazí cestu k odkazovanému souboru sady SDK.
+Zobrazí cestu k odkazovanému souboru sady SDK.
 
 ### <a name="uri"></a>Uri
- Zobrazuje identifikátor URI, který musí být součástí souborů HTML nebo JavaScript projektu pro zahrnutí souboru jako zdrojového souboru.
+Zobrazuje identifikátor URI, který musí být součástí souborů HTML nebo JavaScript projektu pro zahrnutí souboru jako zdrojového souboru.
 
 ### <a name="version"></a>Version
- Zobrazuje verzi odkazu.
+Zobrazuje verzi odkazu.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49691b2031d1d935871a73833924e9dc4aa46dcd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002545"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918408"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generování a spuštění programového testu výkonnosti webu
 
@@ -84,17 +84,17 @@ Testy webového výkonu jsou zaznamenány procházením webové aplikace. Testy 
 
 ## <a name="qa"></a>FUNKCE Q &AMP; A
 
-### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>DOTAZ: Můžete spustit více než jeden test v čase?
- **ODPOVĚĎ:** Ano, použít místní (objektu context) nabídky v **Průzkumníka řešení**.
+### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Č Můžu spustit více než jeden test najednou?
+**URČITÉHO** Ano, můžete použít místní nabídku (kontext) na **Průzkumník řešení**.
 
-### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>DOTAZ: By měl přidat zdroj dat, před nebo po generování kódovaného testu?
- **ODPOVĚĎ:** Je snazší pro přidání [zdroj dat](../test/add-a-data-source-to-a-web-performance-test.md) před generováním kódovaného testu, protože kód se automaticky vygeneruje za vás.
+### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Č Je vhodné přidat zdroj dat před nebo po vygenerování kódovaného testu?
+**URČITÉHO** Před vygenerováním kódovaného testu je snazší přidat [zdroj dat](../test/add-a-data-source-to-a-web-performance-test.md) , protože kód bude automaticky vygenerován za vás.
 
- Když spustíte programový test se zdrojem dat, může se zobrazit následující chybová zpráva:
+Když spustíte programový test se zdrojem dat, může se zobrazit následující chybová zpráva:
 
- **Nelze spustit test \<název testu > na agentovi \<název počítače >: Odkaz na objekt není nastaven na instanci objektu.**
+**Nelze spustit \<název testu > v názvu počítače agenta \<>: Odkaz na objekt není nastaven na instanci objektu.**
 
- Tato situace může nastat, protože máte definovaný atribut pro třídu testování bez odpovídajícího atributu databindingattribute Datasourceattribute. Chcete-li vyřešit tuto chybu, přidejte odpovídající DataBindingAttribute, odstraňte ho nebo komentář z kódu.
+Tato situace může nastat, protože máte definovaný atribut pro třídu testování bez odpovídajícího atributu databindingattribute Datasourceattribute. Chcete-li vyřešit tuto chybu, přidejte odpovídající DataBindingAttribute, odstraňte ho nebo komentář z kódu.
 
-### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>DOTAZ: By měl přidání pravidel ověřování a extrakce, před nebo po generování kódovaného testu?
- **ODPOVĚĎ:** Je snazší pro přidání pravidel ověřování a pravidla extrakce před generováním kódovaného testu; Doporučujeme však, že používáte [programové testy UI](../test/use-ui-automation-to-test-your-code.md) pro účely ověření.
+### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>Č Je vhodné přidat pravidla ověřování a extrakce před nebo po vygenerování kódovaného testu?
+**URČITÉHO** Před vygenerováním kódovaného testu je snazší přidat pravidla ověřování a pravidla pro extrakci. Nicméně doporučujeme, abyste pro účely ověřování používali programové [testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md) .

@@ -20,38 +20,38 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a8bf94323391d031aaf718f6e3132eb89e1df3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7ff2551f3a99bf13909f9db3b1659482246e957
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560373"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919632"
 ---
 # <a name="annotating-function-behavior"></a>Zadávání poznámek k chování funkcí
-Kromě zadávání poznámek k [funkci parametry a návratové hodnoty](../code-quality/annotating-function-parameters-and-return-values.md), přidávat poznámky k vlastnosti celé funkce.
+Kromě zadávání poznámek k [parametrům funkcí a návratovým hodnotám](../code-quality/annotating-function-parameters-and-return-values.md)můžete opatřit poznámkami vlastnosti celé funkce.
 
-## <a name="function-annotations"></a>Poznámky – funkce
- Následující poznámky platí pro funkce jako celek a popisují, jak se chová nebo co se očekává, že na hodnotu true.
-
-|Poznámka|Popis|
-|----------------|-----------------|
-|`_Called_from_function_class_(name)`|Není určen pro samostatné; Místo toho je predikátu, která se použije `_When_` poznámky. Další informace najdete v tématu [zadání při a kde Poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> `name` Parametr je libovolný řetězec, který se také zobrazí `_Function_class_` poznámky v deklaraci některé funkce.  `_Called_from_function_class_` vrátí nenulovou hodnotu, pokud funkce, která se právě analyzuje je označena pomocí `_Function_class_` , který má stejnou hodnotu `name`; v opačném případě vrátí 0.|
-|`_Check_return_`|Označí návratovou hodnotu a uvádí, že volající by měl zkontrolovat. Nástroj pro kontrolu hlásí chybu, pokud je tato funkce volána v rámci typu void.|
-|`_Function_class_(name)`|`name` Parametr je libovolný řetězec, který je určený uživatel.  Existuje v oboru názvů, která se liší od jiných obory názvů. Funkce, ukazatele na funkci nebo – největší úspěšně – typ ukazatele funkce může být určen jako patřící do jedné nebo více tříd funkce.|
-|`_Raises_SEH_exception_`|Označí funkci, která vždy vyvolá výjimku strukturovaných výjimek (SEH) obslužné rutiny, podléhají `_When_` a `_On_failure_` podmínky. Další informace najdete v tématu [zadání při a kde Poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
-|`_Maybe_raises_SEH_exception_`|Označí funkci, která může volitelně vyvolat výjimku SEH podléhají `_When_` a `_On_failure_` podmínky.|
-|`_Must_inspect_result_`|Označí všechny výstupní hodnota, včetně návratovou hodnotu, parametry a globální prvky.  Analyzátor hlásí chybu, pokud není následně zkontroloval hodnotu v objektu s poznámkami. "Kontrola" zahrnuje, ať už se používá v podmíněném výrazu, je přiřazená k výstupní parametr nebo globální nebo je předán jako parametr.  Pro vrácené hodnoty `_Must_inspect_result_` znamená `_Check_return_`.|
-|`_Use_decl_annotations_`|Mohou být použity v definici funkce (označované také jako tělo funkce) namísto seznamu poznámky v záhlaví.  Když `_Use_decl_annotations_` je používají, poznámky, které se zobrazují na hlavičku v oboru pro stejnou funkci se používají, jako by šlo také obsažené v definici, která má `_Use_decl_annotations_` poznámky.|
-
-## <a name="successfailure-annotations"></a>Poznámky o úspěchu nebo selhání
- Funkce může selhat, a pokud ano, jeho výsledky mohou být neúplná nebo se liší od výsledky, pokud funkce uspěje.  Poznámky v následujícím seznamu poskytují způsoby, jak express chování selhání.  Pokud chcete použít tyto anotace, musíte povolit jak určit úspěch; Proto `_Success_` je vyžadována Poznámka.  Všimněte si, že `NTSTATUS` a `HRESULT` už máte `_Success_` poznámky, které jsou integrované do nich; však při zadání vlastní `_Success_` poznámky na `NTSTATUS` nebo `HRESULT`, přepíše integrované poznámky.
+## <a name="function-annotations"></a>Poznámky k funkcím
+Následující poznámky se vztahují na funkci jako celek a popisují, jak se chovají nebo co očekává jako true.
 
 |Poznámka|Popis|
 |----------------|-----------------|
-|`_Always_(anno_list)`|Ekvivalentní `anno_list _On_failure_(anno_list)`; to znamená, poznámky v `anno_list` použít, jestli je funkce úspěšná.|
-|`_On_failure_(anno_list)`|Má být použit pouze tehdy, když `_Success_` je také používaná k anotaci funkce – buď explicitně nebo implicitně prostřednictvím `_Return_type_success_` v definici typu. Když `_On_failure_` poznámky je k dispozici na parametr nebo návratovou hodnotou funkce, jednotlivé poznámky v `anno_list` (anno) se chová jako kdyby bylo kódováno jako `_When_(!expr, anno)`, kde `expr` je parametr k požadovaným `_Success_` poznámky. To znamená, že implicitní použití `_Success_` všechny podmínky se nedá použít pro `_On_failure_`.|
-|`_Return_type_success_(expr)`|Může použít pro definice typu. Označuje, že všechny funkce, který vrací typ, který není nutné explicitně `_Success_` jsou označena jako by měly `_Success_(expr)`. `_Return_type_success_` nelze použít na funkce nebo definice typu ukazatele funkce.|
-|`_Success_(expr)`|`expr` je výraz, jehož výsledkem jsou r-hodnoty. Když `_Success_` poznámky je k dispozici v deklaraci funkce nebo definice, jednotlivé poznámky (`anno`) na funkce a je ve stavu po se chová jako kdyby bylo kódováno jako `_When_(expr, anno)`. `_Success_` Poznámka může být použita pouze na funkce, ne na jeho parametry nebo návratový typ. Může existovat maximálně jeden `_Success_` Poznámka pro funkci a nemůže být v libovolném `_When_`, `_At_`, nebo `_Group_`. Další informace najdete v tématu [zadání při a kde Poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
+|`_Called_from_function_class_(name)`|Neurčeno k samostatnému; místo toho je predikát pro použití s `_When_` poznámkou. Další informace najdete v tématu [určení, kdy a kde se Poznámka vztahuje](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Parametr je libovolný řetězec, který se také zobrazí `_Function_class_` v anotaci v deklaraci některých funkcí. `name`  `_Called_from_function_class_`vrátí nenulovou hodnotu, pokud je funkce, která je právě analyzována, opatřena `_Function_class_` poznámkami pomocí, který má `name`stejnou hodnotu; v opačném případě vrátí hodnotu nula.|
+|`_Check_return_`|Označí návratovou hodnotu a určí, že ji volající má zkontrolovat. Nástroj Checker hlásí chybu, pokud je funkce volána v kontextu void.|
+|`_Function_class_(name)`|`name` Parametr je libovolný řetězec, který je určen uživatelem.  Existuje v oboru názvů, který se liší od jiných oborů názvů. Funkce, ukazatel na funkci nebo – nejužitečnější – typ ukazatele na funkci může být určen jako patřící do jedné nebo více tříd Functions.|
+|`_Raises_SEH_exception_`|Doznámí funkci, která vždy vyvolá výjimku strukturované obslužné rutiny výjimek (SEH), `_When_` podléhá `_On_failure_` podmínkám a. Další informace najdete v tématu [určení, kdy a kde se Poznámka vztahuje](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
+|`_Maybe_raises_SEH_exception_`|Doznámí funkci, která může volitelně vyvolat výjimku SEH, podléhá `_When_` podmínkám a. `_On_failure_`|
+|`_Must_inspect_result_`|Označí jakoukoli výstupní hodnotu, včetně návratové hodnoty, parametrů a Globals.  Analyzátor ohlásí chybu, pokud hodnota v objektu s poznámkou není následně kontrolována. "Kontrola" zahrnuje, zda je použit v podmíněném výrazu, je přiřazen výstupnímu parametru nebo globálnímu nebo je předán jako parametr.  Pro návratové hodnoty `_Must_inspect_result_` implikuje `_Check_return_`.|
+|`_Use_decl_annotations_`|Dá se použít v definici funkce (označované také jako tělo funkce) místo seznamu poznámek v hlavičce.  Při `_Use_decl_annotations_` použití se použijí poznámky, které se zobrazí v záhlaví v oboru pro stejnou funkci, jako kdyby byly také přítomny v definici, která `_Use_decl_annotations_` má anotaci.|
+
+## <a name="successfailure-annotations"></a>Poznámky k úspěchu/neúspěchu
+Funkce může selhat a když je, její výsledky mohou být neúplné nebo se liší od výsledků, pokud je funkce úspěšná.  Poznámky v následujícím seznamu poskytují způsoby, jak vyjádřit chování při selhání.  Chcete-li použít tyto poznámky, je nutné jim povolit, aby určily úspěch. Proto je vyžadována Poznámka. `_Success_`  Všimněte si `NTSTATUS` , `HRESULT` že a již `_Success_` do nich máte zabudovanou poznámku. Pokud však zadáte `_Success_` vlastní poznámku `NTSTATUS` na `HRESULT`nebo, přepíše vestavěnou poznámku.
+
+|Poznámka|Popis|
+|----------------|-----------------|
+|`_Always_(anno_list)`|Ekvivalent; to znamená, že poznámky v aplikaci `anno_list` platí bez ohledu na to, zda funkce proběhne úspěšně. `anno_list _On_failure_(anno_list)`|
+|`_On_failure_(anno_list)`|Má být použit pouze v `_Success_` případě, že se používá také k přidání poznámky k funkci – buď explicitně, nebo `_Return_type_success_` implicitně prostřednictvím typu typedef. `_Success_` `expr` `_When_(!expr, anno)` `anno_list` Pokud je Poznámkapřítomnavparametrufunkcenebonávratovéhodnotě,každáPoznámkav(Anno)sechová,jakobybylakódovánajako,kdejeparametrpropožadovanoupoznámku.`_On_failure_` To znamená, že předpokládaná aplikace `_Success_` pro všechny podmínky odeslání neplatí pro. `_On_failure_`|
+|`_Return_type_success_(expr)`|Může být použito pro typedef. Označuje, že všechny funkce, které vracejí tento typ a explicitně `_Success_` nejsou opatřeny poznámkami, jako by měly. `_Success_(expr)` `_Return_type_success_`nelze použít pro funkci nebo typedef s ukazatelem na funkci.|
+|`_Success_(expr)`|`expr`je výraz, který poskytuje rvalue. Pokud je`anno` `_When_(expr, anno)`Poznámka přítomna v deklaraci nebo definici funkce, každé anotace () funkce a v podmínkách post se chová, jako by byla kódována jako. `_Success_` `_Success_` Anotace lze použít pouze pro funkci, nikoli pro její parametry nebo návratový typ. U funkce může existovat maximálně jedno `_Success_` anotace a nemůže být v žádném `_When_`, `_At_`nebo `_Group_`. Další informace najdete v tématu [určení, kdy a kde se Poznámka vztahuje](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
 
 ## <a name="see-also"></a>Viz také:
 

@@ -12,71 +12,71 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c439a981573934215ecad8796e7980a5f9c8c2f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 406e8fbb16d3cac4b755b0532f3916fed486e466
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934929"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919006"
 ---
 # <a name="services-page-project-designer"></a>Stránka Služby, návrhář projektu
 
-Klientské aplikační služby nabízejí zjednodušený přístup ke [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] přihlášení, role a služby profilu v aplikacích Windows Forms a Windows Presentation Foundation (WPF). Můžete použít **služby** stránku **Návrháře projektu** povolení a konfigurace klientských aplikačních služeb pro váš projekt.
+Klientské aplikační služby poskytují zjednodušený přístup [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] k přihlašování, rolím a profilovým službám z aplikací model Windows Forms a Windows Presentation Foundation (WPF). Stránku **služby** **Návrháře projektu** můžete použít k povolení a konfiguraci klientských aplikačních služeb pro svůj projekt.
 
-U klientských aplikačních služeb můžete použít centralizované serverové k ověřování uživatelů, určete každý uživatel přiřazenou roli nebo role a ukládání nastavení aplikace pro jednotlivé uživatele, které můžete sdílet přes síť. Další informace najdete v tématu [klientských aplikačních služeb](/dotnet/framework/common-client-technologies/client-application-services).
+Pomocí klientských aplikačních služeb můžete pomocí centralizovaného serveru ověřovat uživatele, určit role nebo role přiřazené jednotlivým uživatelům a ukládat nastavení aplikací pro jednotlivé uživatele, která můžete sdílet přes síť. Další informace najdete v tématu [aplikační služby klienta](/dotnet/framework/common-client-technologies/client-application-services).
 
-Pro přístup **služby** stránky, vyberte uzel projektu v **Průzkumníku řešení**a potom klikněte na **vlastnosti** na **projektu** nabídky. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **služby** kartu.
+Chcete-li získat přístup ke stránce **služby** , vyberte uzel projektu v **Průzkumník řešení**a potom klikněte na tlačítko **vlastnosti** v nabídce **projekt** . Když se zobrazí **Návrhář projektu** , klikněte na kartu **služby** .
 
 ## <a name="task-list"></a>Seznam úkolů
 
-[Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+[Postupy: Nakonfigurovat Aplikační služby klienta](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
 
  **Konfigurace**
 
- Tento ovládací prvek není na této stránce upravovat. Popis tohoto ovládacího prvku, naleznete v tématu [stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) nebo [stránku sestavení, Návrhář projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+Tento ovládací prvek není na této stránce možné upravovat. Popis tohoto ovládacího prvku naleznete v tématu [Kompilovat stránku, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) nebo [Stránka sestavení, Návrhář projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
- **Platforma**
+ **Platformy**
 
- Tento ovládací prvek není na této stránce upravovat. Popis tohoto ovládacího prvku, naleznete v tématu [stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) nebo [stránku sestavení, Návrhář projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+Tento ovládací prvek není na této stránce možné upravovat. Popis tohoto ovládacího prvku naleznete v tématu [Kompilovat stránku, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) nebo [Stránka sestavení, Návrhář projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
  **Povolit klientské aplikační služby**
 
- Vyberte povolit klientské aplikační služby. Je nutné zadat umístění služby na **služby** stránku klientské aplikační služby.
+Tuto možnost vyberte, pokud chcete povolit klientské aplikační služby. Aby bylo možné používat klientské aplikační služby, je nutné zadat umístění služby na stránce **služby** .
 
- **Používat ověřování Windows**
+ **Použít ověřování systému Windows**
 
- Označuje, že zprostředkovatel ověřování bude používat ověřování založené na Windows, to znamená, identity, které jsou součástí operačního systému Windows.
+Označuje, že zprostředkovatel ověřování bude používat ověřování založené na systému Windows, to znamená identitu poskytovanou operačním systémem Windows.
 
- **Ověřování pomocí formulářů**
+ **Použití ověřování pomocí formulářů**
 
- Označuje, že zprostředkovatel ověřování bude používat ověřování pomocí formulářů. To znamená, že vaše aplikace musí poskytovat uživatelského rozhraní pro přihlášení. Další informace najdete v tématu [jak: Implementace přihlášení uživatele u klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+Označuje, že zprostředkovatel ověřování bude používat ověřování pomocí formulářů. To znamená, že aplikace musí poskytnout uživatelské rozhraní pro přihlášení. Další informace najdete v tématu [jak: Implementace přihlášení uživatele pomocí Aplikační služby](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)klienta.
 
- **Umístění služby ověřování**
+ **Umístění ověřovací služby**
 
- Použít pouze s ověřování pomocí formulářů. Určuje umístění ověřovací služby.
+Používá se pouze s ověřováním pomocí formulářů. Určuje umístění ověřovací služby.
 
- **Volitelné: Poskytovatel přihlašovacích údajů**
+ **Volitelné Poskytovatel pověření**
 
- Použít pouze s ověřování pomocí formulářů. Označuje <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementace, která se má zobrazit dialogové okno přihlášení, když vaše aplikace volá bude používat službu ověřování `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metoda a předá prázdné řetězce nebo `null` parametrů. Když toto pole ponecháte prázdné, je nutné předat platné uživatelské jméno a heslo <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metody. Jako název typu kvalifikovaného pro sestavení, je nutné zadat poskytovatele přihlašovacích údajů. Další informace najdete v tématu <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> a [názvy sestavení](/dotnet/framework/app-domains/assembly-names). Ve své nejjednodušší podobě vypadá podobně jako v následujícím příkladu představuje název typu kvalifikovaného pro sestavení: `MyNamespace.MyLoginClass, MyAssembly`
+Používá se pouze s ověřováním pomocí formulářů. Označuje implementaci, kterou bude služba ověřování používat k zobrazení přihlašovacího dialogového okna, když vaše aplikace `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> volá metodu a předá prázdné řetězce nebo `null` parametry. <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> Pokud toto pole necháte prázdné, musíte do <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metody předat platné uživatelské jméno a heslo. Je nutné zadat poskytovatele pověření jako název typu kvalifikovaného pro sestavení. Další informace naleznete v tématu <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> a [názvy sestavení](/dotnet/framework/app-domains/assembly-names). V nejjednodušším tvaru název kvalifikovaného typu sestavení vypadá podobně jako v následujícím příkladu:`MyNamespace.MyLoginClass, MyAssembly`
 
- **Umístění služby role**
+ **Umístění služby rolí**
 
- Určuje umístění služby rolí.
+Určuje umístění služby rolí.
 
- **Nastavení webové služby umístění**
+ **Umístění služby webového nastavení**
 
- Určuje umístění služby profilu (nastavení webu).
+Určuje umístění služby Profile (webové nastavení).
 
  **Pokročilé**
 
- Otevře [rozšířená nastavení pro dialogové okno služby](../../ide/reference/advanced-settings-for-services-dialog-box.md), což vám umožní potlačit výchozí chování. Například můžete použít toto dialogové okno zadat databázi pro offline úložiště namísto použití místního systému souborů. Další informace najdete v tématu [rozšířená nastavení pro dialogové okno služby](../../ide/reference/advanced-settings-for-services-dialog-box.md).
+Otevře [dialogové okno Upřesnit nastavení pro služby](../../ide/reference/advanced-settings-for-services-dialog-box.md), které můžete použít k přepsání výchozího chování. Toto dialogové okno můžete například použít k určení databáze pro úložiště offline místo použití místního systému souborů. Další informace najdete v tématu [Pokročilá nastavení pro služby v dialogovém okně](../../ide/reference/advanced-settings-for-services-dialog-box.md).
 
 ## <a name="see-also"></a>Viz také:
 
 - [Klientské aplikační služby](/dotnet/framework/common-client-technologies/client-application-services)
 - [Dialogové okno Pokročilé nastavení služeb](../../ide/reference/advanced-settings-for-services-dialog-box.md)
-- [Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Postupy: Nakonfigurovat Aplikační služby klienta](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [Stránka Kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Stránka Sestavení, Návrhář projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md)

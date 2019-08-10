@@ -1,50 +1,50 @@
 ---
-title: Nastavení více projektů po spuštění v sadě Visual Studio pro Mac
-description: Tento článek popisuje, jak nastavit více projektů, spusťte na spuštění nebo ladění.
+title: Nastavení více projektů po spuštění
+description: Tento článek popisuje, jak nastavit více projektů, které se spustí při spuštění nebo ladění.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 02/21/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: c692cf8907fcd232b7ba442cea351664bc8dd407
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 55519960a6b84968ced43183833167a365e91b35
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043599"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872315"
 ---
 # <a name="set-multiple-startup-projects"></a>Nastavení více projektů po spuštění
 
-Visual Studio for Mac umožňuje určit, že více než jeden projekt by měl být spuštěn při ladění nebo spuštění vašeho řešení.
+Visual Studio pro Mac umožňuje určit, že při ladění nebo spuštění řešení by měl být spuštěn více než jeden projekt.
 
-## <a name="to-set-multiple-startup-projects"></a>Chcete-li nastavit více projektů po spuštění
+## <a name="to-set-multiple-startup-projects"></a>Nastavení více projektů po spuštění
 
-1. V oblasti řešení vyberte řešení (na nejvyšší uzel).
+1. V Oblast řešení vyberte řešení (nejvyšší uzel).
 
 2. Klikněte pravým tlačítkem na uzel řešení a pak vyberte **nastavit projekty po spuštění**:
 
-   ![Vybraná sada spouštěných projektů](media/startup-proj-ctx-menu.png)
+   ![Vyberte nastavit projekty po spuštění.](media/startup-proj-ctx-menu.png)
 
-3. **Vytvoření konfigurace spuštění řešení** zobrazí se dialogové okno. Toto dialogové okno umožňuje vytvořit nový s názvem spustit konfigurace řešení pro vaše řešení. Můžete použít libovolný název, který vám vyhovuje. Výchozí název je `Multiple Projects`.
+3. Otevře se dialogové okno **vytvořit konfiguraci spuštění řešení** . Toto dialogové okno umožňuje vytvořit novou konfiguraci spuštění pojmenovaného řešení pro vaše řešení. Můžete použít libovolný název, který chcete. Výchozí název je `Multiple Projects`.
 
-   ![Vytvoření dialogového okna konfigurace spuštění řešení](media/create-sln-run-config.png)
+   ![Dialogové okno vytvořit konfiguraci spuštění řešení](media/create-sln-run-config.png)
 
-4. Vyberte **vytvoření konfigurace spuštění**. **Možnosti řešení** dialogové okno s nové řešení spustit vybranou konfiguraci:
+4. Vyberte **vytvořit konfiguraci spuštění**. Otevře se dialogové okno **Možnosti řešení** s vybranou možností nová konfigurace spuštění řešení:
 
    ![Dialogové okno Možnosti řešení](media/sln-options-run-config-multi-projects.png)
 
-5. Vyberte projekty, které chcete spustit při ladění nebo spuštění aplikace ze sady Visual Studio pro Mac:
+5. Vyberte projekty, které chcete spustit při ladění nebo spuštění vaší aplikace z Visual Studio pro Mac:
 
-   ![Dialogové okno možností řešení s vybraných projektů](media/sln-options-run-config-multi-projects-configured.png)
+   ![Dialogové okno Možnosti řešení s vybranými projekty](media/sln-options-run-config-multi-projects-configured.png)
 
-6. Vyberte **OK**. Nová konfigurace spuštění řešení je nastaven jako aktivní konfigurace spuštění:
+6. Vyberte **OK**. Nová konfigurace spuštění řešení je nastavená jako aktivní konfigurace spuštění:
 
-   ![Řešení s více projekty nakonfigurované za účelem spuštění na ladění nebo spuštění](media/startup-project-configured.png)
+   ![Řešení s více projekty nakonfigurovanými na spouštění při ladění nebo běhu](media/startup-project-configured.png)
 
-   Uvidíte, že dva projekty jsou nakonfigurované na spustit, protože jsou oba projekty **tučné** v oblasti řešení. Na panelu nástrojů novou konfiguraci spuštění nastavit jako aktuální konfigurace spuštění řešení.
+   Můžete vidět, že dva projekty jsou nakonfigurovány pro spuštění, protože oba projekty jsou tučné v oblast řešení. Na panelu nástrojů je nová konfigurace spuštění nastavena jako aktuální konfigurace spuštění řešení.
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
-- [Kompilování a sestavování v sadě Visual Studio pro Mac](compiling-and-building.md)
+- [Kompilace a sestavování v Visual Studio pro Mac](compiling-and-building.md)
 - [Principy konfigurací sestavení](configurations.md)

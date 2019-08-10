@@ -1,5 +1,5 @@
 ---
-title: Kurz datově řízeného programového testu uživatelského rozhraní
+title: Kurz pro programový test uživatelského rozhraní řízený daty
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6202a8287232c0226104be59bdab6a15fd00d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3c9837f1babf3cb37d99eb1bb74c2c35c05eff9
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785358"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870323"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Vytvoření datově řízeného programového testu UI
 
@@ -50,7 +50,7 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
 
 4. Přidat 1 a 2, pozastavit záznam a generovat zkušební metody. Později budete nahradíme hodnoty tento uživatelský vstup s hodnotami z datového souboru.
 
-    ![Generovat testovací metody](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![Generovat testovací metodu](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
     Zavřete Tvůrce testu. Metoda je přidána do testu:
 
@@ -64,11 +64,11 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
    }
    ```
 
-5. Použití `AddNumbers()` metodu k ověření, že test běží. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete nabídku klikněte pravým tlačítkem a zvolte **spustit testy**. (Klávesová zkratka: **Ctrl**+**R**,**T**).
+5. Použití `AddNumbers()` metodu k ověření, že test běží. Umístěte kurzor do zkušební metody zobrazené výše, otevřete nabídku klikněte pravým tlačítkem myši a vyberte možnost **Spustit testy**. (Klávesová zkratka: **CTRL**+**R**,**T**).
 
     Zobrazí se ve výsledku testu, který ukazuje-li test úspěšný nebo neúspěšný **Průzkumníka testů** okna. Otevření okna Průzkumníka testů z **testovací** nabídce zvolte **Windows** a klikněte na tlačítko **Průzkumník testů**.
 
-6. Vzhledem k tomu, že zdroje dat lze také hodnoty parametrů kontrolní výraz – které jsou používány test ověření očekávané hodnoty – můžeme přidat kontrolní výraz se ověřit správnost součet dvou čísel. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete nabídku klikněte pravým tlačítkem a zvolte **generovat kód pro programový Test uživatelského rozhraní**a potom **použití Tvůrce programového testu UI**.
+6. Vzhledem k tomu, že zdroje dat lze také hodnoty parametrů kontrolní výraz – které jsou používány test ověření očekávané hodnoty – můžeme přidat kontrolní výraz se ověřit správnost součet dvou čísel. Umístěte kurzor do zkušební metody zobrazené výše, otevřete nabídku klikněte pravým tlačítkem myši a zvolte příkaz **generovat kód pro programový test uživatelského rozhraní**a pak **použijte Tvůrce programového testu uživatelského rozhraní**.
 
     Mapování ovládacího prvku text v kalkulačce zobrazující součet.
 
@@ -92,7 +92,7 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
    }
    ```
 
-9. Ověřte, že test běží za použití `ValidateSum()` metody. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete nabídku klikněte pravým tlačítkem a zvolte **spustit testy**. (Klávesová zkratka: **Ctrl**+**R**,**T**).
+9. Ověřte, že test běží za použití `ValidateSum()` metody. Umístěte kurzor do zkušební metody zobrazené výše, otevřete nabídku klikněte pravým tlačítkem myši a vyberte možnost **Spustit testy**. (Klávesová zkratka: **CTRL**+**R**,**T**).
 
      V tomto okamžiku všechny hodnoty parametrů jsou definovány v jejich metod jako konstanty. V dalším kroku vytvoříte datové sady, aby naše testovací řízené daty.
 
@@ -203,7 +203,7 @@ Měla by se zobrazit testovací běh prostřednictvím tři iterace pomocí hodn
 
 ### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Co jsou atributy zdroje dat pro další typy zdrojů dat, jako je například SQL Express nebo XML?
 
-**ODPOVĚĎ:** Ukázka řetězce zdrojů dat v následující tabulce můžete použít zkopírováním do vašeho kódu a provedením nezbytných úpravách.
+**URČITÉHO** Ukázka řetězce zdrojů dat v následující tabulce můžete použít zkopírováním do vašeho kódu a provedením nezbytných úpravách.
 
 **Typy zdrojů dat a atributy**
 
@@ -227,15 +227,15 @@ Měla by se zobrazit testovací běh prostřednictvím tři iterace pomocí hodn
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>DOTAZ: Proč nelze upravit kód v souboru UIMap.Designer?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Č Proč nemůžu změnit kód v souboru UIMap. Designer?
 
-**ODPOVĚĎ:** Všechny změny provedené v kódu *UIMapDesigner.cs* soubor bude přepsán při každém vytvoření kódu pomocí UIMap – Tvůrce programového testu uživatelského rozhraní. V této ukázce a ve většině případů, můžete provést změny kódu potřebná k povolení testu budou používat zdroj dat k souboru zdrojového kódu testu (to znamená *CodedUITest1.cs*).
+**URČITÉHO** Všechny změny kódu, které provedete v souboru *UIMapDesigner.cs* , budou přepsány pokaždé, když generujete kód pomocí Tvůrce programového testu uživatelského rozhraní UIMap. V této ukázce a ve většině případů, můžete provést změny kódu potřebná k povolení testu budou používat zdroj dat k souboru zdrojového kódu testu (to znamená *CodedUITest1.cs*).
 
 Pokud je třeba změnit zaznamenanou metodu, je nutné zkopírovat ho do *UIMap.cs* souboru a přejmenujte jej. *UIMap.cs* soubor lze použít k přepsání metod a vlastností v *UIMapDesigner.cs* souboru. Musíte odebrat odkaz na původní metodu programového *UITest.cs* soubor a nahradit ji názvem přejmenované metody.
 
 ## <a name="see-also"></a>Viz také:
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)
 - [Vytvoření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md)

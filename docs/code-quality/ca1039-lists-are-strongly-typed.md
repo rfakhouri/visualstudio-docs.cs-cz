@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d11afe8a3ea8fcae971461b8e33fc4771b74eb75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94b1e8134eb89e4ae78ec0ad6f07fd7406215185
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778897"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922846"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Seznamy jsou silného typu
 
@@ -30,45 +30,45 @@ ms.locfileid: "62778897"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Veřejný nebo chráněný typ implementuje <xref:System.Collections.IList?displayProperty=fullName> ale neposkytuje metodu silného typu pro jeden nebo více z následujících akcí:
+Veřejný nebo chráněný typ implementuje <xref:System.Collections.IList?displayProperty=fullName> , ale neposkytuje metodu silného typu pro jednu nebo více z následujících možností:
 
-- IList.Item
+- IList. Item
 
-- IList.Add
+- IList. Add
 
-- IList.Contains
+- IList. Contains
 
-- IList.IndexOf
+- IList. IndexOf
 
-- IList.Insert
+- IList. Insert
 
-- IList.Remove
+- IList. Remove
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Toto pravidlo vyžaduje <xref:System.Collections.IList> implementace poskytnout silného typu členy, tak, aby uživatelé nebudou muset přetypovávat argumenty na <xref:System.Object?displayProperty=fullName> zadejte při využívání funkčnosti poskytované rozhraní. <xref:System.Collections.IList> Rozhraní je implementováno kolekce objektů, které lze využívat pomocí indexu. Toto pravidlo předpokládá, že tento typ, který implementuje <xref:System.Collections.IList> spravuje kolekci instancí typu silnějšího než <xref:System.Object>.
+Toto pravidlo vyžaduje <xref:System.Collections.IList> implementace, aby poskytovaly členy se silnými typy, aby uživatelé nemuseli přetypování <xref:System.Object?displayProperty=fullName> argumentů na typ při použití funkcí poskytovaných rozhraním. <xref:System.Collections.IList> Rozhraní je implementováno kolekcemi objektů, které jsou k dispozici pomocí indexu. Toto pravidlo předpokládá, že typ, který <xref:System.Collections.IList> implementuje, spravuje kolekci instancí typu, který je silnější než. <xref:System.Object>
 
-<xref:System.Collections.IList> implementuje <xref:System.Collections.ICollection?displayProperty=fullName> a <xref:System.Collections.IEnumerable?displayProperty=fullName> rozhraní. Pokud se rozhodnete implementovat <xref:System.Collections.IList>, je nutné zadat požadované členy silného typu pro <xref:System.Collections.ICollection>. Pokud objekty v kolekci rozšíření <xref:System.ValueType?displayProperty=fullName>, je nutné zadat silného typu člena, který <xref:System.Collections.IEnumerable.GetEnumerator%2A> aby se zabránilo snížení výkonu, který je způsobeno tím, zabalení, tento krok není povinný když jsou objekty kolekce typu odkazu.
+<xref:System.Collections.IList>implementuje rozhraní <xref:System.Collections.IEnumerable?displayProperty=fullName>a. <xref:System.Collections.ICollection?displayProperty=fullName> Pokud implementujete <xref:System.Collections.IList>, musíte poskytnout požadované členy silného typu pro <xref:System.Collections.ICollection>. Pokud se objekty v kolekci rozšiřují <xref:System.ValueType?displayProperty=fullName>, je nutné poskytnout člen silného typu pro <xref:System.Collections.IEnumerable.GetEnumerator%2A> , aby se zabránilo poklesu výkonu, který je způsoben zabalením. to není vyžadováno, pokud jsou objekty kolekce typu odkaz.
 
-Pro dosažení souladu s tímto pravidlem, implementovat členy rozhraní explicitně pomocí názvů v podobě InterfaceName.InterfaceMemberName, jako například <xref:System.Collections.IList.Add%2A>. Členy explicitní rozhraní datové typy, které jsou deklarovány pomocí rozhraní. Implementovat členy silného typu pomocí názvu členu rozhraní `Add`. Deklarace členy se silnými typy jako veřejnou a deklarovat parametry a návratové hodnoty bude silného typu, který spravuje kolekci. Silné typy nahradit slabší typy, jako <xref:System.Object> a <xref:System.Array> , které jsou deklarovány pomocí rozhraní.
+Aby bylo toto pravidlo vyhověno, implementujte členy rozhraní explicitně pomocí názvů ve tvaru InterfaceName. InterfaceMemberName, například <xref:System.Collections.IList.Add%2A>. Explicitní členové rozhraní používají datové typy, které jsou deklarovány rozhraním. Implementujte členy silného typu pomocí názvu člena rozhraní, například `Add`. Deklarovat členy silného typu jako veřejné a deklarovat parametry a návratové hodnoty, aby byly silného typu, který je spravován kolekcí. Silné typy nahrazují slabší typy <xref:System.Object> jako a <xref:System.Array> , které jsou deklarovány rozhraním.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, explicitně implementovat <xref:System.Collections.IList> členy a nabízí alternativu silného typu pro členy, které jste si poznamenali dříve. Pro kód, který implementuje správně <xref:System.Collections.IList> rozhraní a poskytuje požadované členy se silnými typy, viz následující příklad.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, explicitně implementujte <xref:System.Collections.IList> členy a poskytněte alternativy silného typu pro členy, kteří byli uvedeni dříve. Pro kód, který správně implementuje <xref:System.Collections.IList> rozhraní a poskytuje požadované členy silného typu, si přečtěte následující příklad.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačit upozornění tohoto pravidla, Pokud implementujete nové založenou na objektech kolekce, jako je například propojený seznam, kde určit typy, které rozšiřují nová kolekce silného typu. Tyto typy by měly splňovat toto pravidlo a vystavit členy se silnými typy.
+Potlačí upozornění od tohoto pravidla při implementaci nové kolekce založené na objektech, jako je například propojený seznam, kde typy, které rozšiřuje novou kolekci, určují silný typ. Tyto typy by měly dodržovat toto pravidlo a zveřejnit členy silného typu.
 
 ## <a name="example"></a>Příklad
- V následujícím příkladu typ `YourType` rozšiřuje <xref:System.Collections.CollectionBase?displayProperty=fullName>, jako by všechny kolekce silného typu. <xref:System.Collections.CollectionBase> poskytuje explicitní implementaci <xref:System.Collections.IList> rozhraní za vás. Proto musíte zadat jenom členy se silnými typy pro <xref:System.Collections.IList> a <xref:System.Collections.ICollection>.
+V následujícím příkladu typ `YourType` rozšiřuje <xref:System.Collections.CollectionBase?displayProperty=fullName>, stejně jako všechny kolekce silného typu. <xref:System.Collections.CollectionBase>poskytuje explicitní implementaci <xref:System.Collections.IList> rozhraní za vás. Proto je nutné zadat pouze členy silného typu pro <xref:System.Collections.IList> a. <xref:System.Collections.ICollection>
 
- [!code-csharp[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]
+[!code-csharp[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1035: Implementace ICollection mají členy silného typu](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+[CA1035: Implementace rozhraní ICollection mají členy silného typu](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1038: Enumerátory by měly být silného typu](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+[CA1038: Enumerátory by měly být silného typu](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
 ## <a name="see-also"></a>Viz také:
 

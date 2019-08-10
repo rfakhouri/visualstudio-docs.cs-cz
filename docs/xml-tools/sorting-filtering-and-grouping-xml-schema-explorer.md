@@ -1,5 +1,5 @@
 ---
-title: Řazení, filtrování a seskupování v Průzkumník schémat XML
+title: Řazení, filtrování a seskupování v Průzkumníkovi schémat XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
@@ -8,75 +8,75 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740fd46d453a6e6a51285d418374d036d83bc598
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: daa629b4c26abf7b6ce801c30ea6f6fd41fbaa48
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808103"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926721"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Řazení, filtrování a seskupování (Průzkumník schémat XML)
 
-Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **řazení, filtrování a možnosti seskupení** nabídce **Průzkumníka schémat XML** nástrojů.
+Toto téma popisuje možnosti, které jsou k dispozici v nabídce **Možnosti řazení, filtrování a seskupování** na panelu nástrojů **Průzkumníka schémat XML** .
 
-## <a name="filter-options"></a>Možnosti filtrování
+## <a name="filter-options"></a>Možnosti filtru
 
- Jsou k dispozici následující možnosti filtru. Ve výchozím nastavení **zobrazit obory názvů** a **zobrazit soubory schémat** jsou vybrané možnosti.
+K dispozici jsou následující možnosti filtru. Ve výchozím nastavení jsou vybrány možnosti **Zobrazit soubory oborů názvů** a **Zobrazit schéma** .
 
 - **Zobrazit obory názvů**.
 
-- **Zobrazit soubory schémat**.
+- **Zobrazit soubory schématu**.
 
-- **Zobrazit tvůrce (pořadí/volba/all)**.
+- **Zobrazit kompozice (Sequence/Choice/All)** .
 
 ## <a name="sorting-options"></a>Možnosti řazení
 
- Jsou k dispozici následující možnosti řazení. Výchozí hodnota je **řazení podle typu**. **Řadit podle** možnosti se nevztahují na soubory a obory názvů.
+K dispozici jsou následující možnosti řazení. Výchozí hodnota je **Sort podle typu**. Možnosti **řazení podle** možností se nevztahují na soubory a obory názvů.
 
-- **Seřadit podle typu**.
+- **Seřadit podle typu**
 
-- **Seřadit podle názvu**.
+- **Seřadit podle názvu**
 
-- **Zdokumentujte pořadí**.
+- **Pořadí dokumentů**.
 
 ### <a name="sort-by-type"></a>Seřadit podle typu
 
- Když **řazení podle typu** je vybraná možnost, jsou globální uzly seřazeny v uvedeném pořadí. Uzly jsou pak seřazená podle abecedy v rámci jednotlivých skupin.
+Když je vybrána možnost **Seřadit podle typu** , globální uzly jsou seřazeny v následujícím pořadí. Uzly jsou pak seřazené podle abecedy v rámci každé skupiny.
 
-1. `import` uzly.
+1. `import`sortiment.
 
-2. `include` uzly.
+2. `include`sortiment.
 
-3. `redefine` uzly.
+3. `redefine`sortiment.
 
-4. `attribute` uzly.
+4. `attribute`sortiment.
 
-5. `attributeGroup` uzly.
+5. `attributeGroup`sortiment.
 
-6. `complexType` uzly.
+6. `complexType`sortiment.
 
-7. `simpleType` uzly.
+7. `simpleType`sortiment.
 
-8. `element` uzly.
+8. `element`sortiment.
 
-9. `group` uzly.
+9. `group`sortiment.
 
 ### <a name="sort-by-name"></a>Seřadit podle názvu
 
- Když **seřadit podle názvu** je vybraná možnost, jsou globální uzly seřazeny v následujícím pořadí:
+Když je vybraná možnost **Seřadit podle názvu** , globální uzly se seřadí v následujícím pořadí:
 
-1. `import` uzly (v abecedním pořadí oborů názvů).
+1. `import`uzly (v abecedním pořadí oborů názvů).
 
-2. `include` uzly (v abecedním pořadí podle `schemaLocation` atributy).
+2. `include`uzly (v abecedním pořadí `schemaLocation` atributů).
 
-3. `redefine` uzly (v abecedním pořadí podle `schemaLocation` atributy).
+3. `redefine`uzly (v abecedním pořadí `schemaLocation` atributů).
 
-4. Jiné globální uzly v abecedním pořadí.
+4. Další globální uzly v abecedním pořadí.
 
 ### <a name="document-order"></a>Pořadí dokumentů
 
- **Pořadí dokumentů** možnost je k dispozici, když **zobrazit soubory schémat** je vybraná možnost. Když **pořadí dokumentů** je vybraná globální uzly jsou zobrazeny v pořadí, v jakém jsou uvedeny v souboru schématu.
+Možnost **pořadí dokumentů** je k dispozici, pokud je vybrána možnost **Zobrazit soubory schématu** . Pokud je vybráno **pořadí dokumentů** , globální uzly budou zobrazeny v pořadí, v jakém jsou uvedeny v souboru schématu.
 
-## <a name="persisting-sortfilter-options"></a>Zachování možnosti řazení a filtrování
+## <a name="persisting-sortfilter-options"></a>Zachování možností řazení a filtrování
 
- Řazení, filtrování a možnosti seskupení jsou uložena do registru pro každého uživatele, bez ohledu na to, které řešení nebo soubory byly otevřeny Pokud byla nastavení změněna.
+Možnosti řazení, filtrování a seskupování jsou uloženy v registru pro každého uživatele bez ohledu na to, jaké řešení nebo soubory byly otevřeny při změně nastavení.

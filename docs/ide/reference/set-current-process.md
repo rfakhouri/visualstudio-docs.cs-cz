@@ -11,15 +11,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f4c08147f72168f5207418a51d7a9cfa8a2b51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8d4c23934ddb6a838344eb6252f6002a5ecf10d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934560"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926088"
 ---
 # <a name="set-current-process"></a>Nastavit aktuální proces
-Nastavujte určený proces jako aktivní proces v ladicím programu.
+Nastaví zadaný proces jako aktivní proces v ladicím programu.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -28,12 +28,12 @@ Debug.SetCurrentProcess index
 ```
 
 ## <a name="arguments"></a>Arguments
- `index`
+`index`
 
- Povinný parametr. Index procesu.
+Povinný parametr. Index procesu.
 
 ## <a name="remarks"></a>Poznámky
- Můžete se připojit k více procesům při ladění, ale pouze jeden proces je v daném okamžiku aktivní v ladicím programu. Můžete použít `SetCurrentProcess` příkaz pro nastavení aktivního procesu.
+Můžete se připojit k více procesům při ladění, ale v Dubber je v daném okamžiku aktivní pouze jeden proces. Pomocí `SetCurrentProcess` příkazu můžete nastavit aktivní proces.
 
 ## <a name="example"></a>Příklad
 

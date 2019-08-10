@@ -1,6 +1,6 @@
 ---
-title: Úloha datové vědy a analytické aplikace
-description: Tato úloha Visual Studio spojuje Python, F#a jejich odpovídajících runtime distribuce, včetně Anaconda. (R je také součástí sady Visual Studio 2017 pouze.)
+title: Úlohy pro datové vědy a analytické aplikace
+description: Tato úloha sady Visual Studio přináší propojení Pythonu, F#a jejich příslušné distribuce modulu runtime, včetně Anaconda. (R je také součástí sady Visual Studio 2017.)
 ms.date: 02/28/2019
 ms.topic: overview
 author: JoshuaPartlow
@@ -9,44 +9,44 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20ebd6def9fcac2336ca13118300737b66142812
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958295"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926383"
 ---
-# <a name="install-data-science-support-in-visual-studio"></a>Nainstalovat podporu datové vědy v sadě Visual Studio
+# <a name="install-data-science-support-in-visual-studio"></a>Instalace podpory pro datové vědy v aplikaci Visual Studio
 
-Úlohy pro datové vědy a analytické aplikace, které výběru a instalaci pomocí instalačního programu sady Visual Studio, spojuje několik jazyků a jejich odpovídajících runtime distribuce:
+Úloha aplikace pro datovou vědu a analýzu, kterou vyberete a nainstalujete prostřednictvím instalačního programu sady Visual Studio, spojuje několik jazyků a jejich příslušné distribuce modulu runtime:
 
 ::: moniker range="vs-2017"
 - [Python a Anaconda](../python/overview-of-python-tools-for-visual-studio.md)
-- [F#s použitím rozhraní .NET framework](/dotnet/fsharp/)
+- [F#s rozhraním .NET Framework](/dotnet/fsharp/)
 - [R a Microsoft R Client](../rtvs/index.md)
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 - [Python](../python/overview-of-python-tools-for-visual-studio.md)
-- [F#s použitím rozhraní .NET framework](/dotnet/fsharp/)
+- [F#s rozhraním .NET Framework](/dotnet/fsharp/)
 ::: moniker-end
 
-![Pro datové vědy a analytické aplikace funkcí v instalačním programu sady Visual Studio](media/workload/data-science-workload.png)
+![Úlohy pro datové vědy a analytické aplikace v instalačním programu sady Visual Studio](media/workload/data-science-workload.png)
 
 ::: moniker range="vs-2017"
-Python a jazyka R jsou dvě primární skriptovací jazyky používané pro datové vědy. Oba jazyky se snadno učí a podporují bohatý ekosystém balíčků. Tyto balíčky adres širokou škálu scénářů, jako je získání dat, čištění, model školení, nasazení a vykreslení. F#je výkonná jazyková funkcionální .NET, která je vhodná pro širokou škálu úloh zpracování dat.
+Python a R jsou dva z primárních skriptovacích jazyků používaných pro datové vědy. Oba jazyky se snadno učí a podporují bohatý ekosystém balíčků. Tyto balíčky řeší široké spektrum scénářů, jako jsou získávání dat, čištění, školení modelů, nasazování a vykreslování. F#je také výkonný funkční jazyk .NET, který je vhodný pro širokou škálu úloh zpracování dat.
 ::: moniker-end
 
 ::: moniker range="vs-2019"
-Python je primární skriptovací jazyk používaný pro datové vědy. Python se snadno učí a je podporován bohatý ekosystém balíčků. Tyto balíčky adres širokou škálu scénářů, jako je získání dat, čištění, model školení, nasazení a vykreslení. F#je výkonná jazyková funkcionální .NET, která je vhodná pro širokou škálu úloh zpracování dat. (Pro jazyk R doporučujeme [poznámkových bloků Azure](https://notebooks.azure.com).)
+Python je primární skriptovací jazyk používaný pro datové vědy. Python se snadno učí a podporuje bohatý ekosystém balíčků. Tyto balíčky řeší široké spektrum scénářů, jako jsou získávání dat, čištění, školení modelů, nasazování a vykreslování. F#je také výkonný funkční jazyk .NET, který je vhodný pro širokou škálu úloh zpracování dat. (Pro jazyk R doporučujeme [Azure Notebooks](https://notebooks.azure.com).)
 ::: moniker-end
 
 <!--Note link on the image because this one is large -->
-[![Snímky obrazovky sady Visual Studio s jazykem R, Python, aF#](media/workload/data-science-workload-screens.png)](media/workload/data-science-workload-screens.png#lightbox)
+[![Snímky obrazovky sady Visual Studio s R, Pythonem aF#](media/workload/data-science-workload-screens.png)](media/workload/data-science-workload-screens.png#lightbox)
 
 ## <a name="workload-options"></a>Možnosti úlohy
 
-Ve výchozím nastavení nainstaluje zatížení následující možnosti, které můžete upravit v části Souhrn pro zatížení v instalačním programu sady Visual Studio:
+Ve výchozím nastavení zatížení nainstaluje následující možnosti, které můžete upravit v části Souhrn pro úlohu v instalačním programu sady Visual Studio:
 
 ::: moniker range="vs-2019"
 - F#Podpora klasické pracovní plochy jazyka
@@ -59,56 +59,56 @@ Ve výchozím nastavení nainstaluje zatížení následující možnosti, kter�
 - F#podpora jazyků
 - Python:
   - Podpora jazyka Python
-  - [Anaconda3, 64-bit](https://www.continuum.io), distribuce Python, která obsahuje knihovny rozsáhlé datové vědy a interpret Pythonu.
+  - [Anaconda3 64-bit](https://www.continuum.io), distribuce Pythonu, který obsahuje rozsáhlé knihovny pro datové vědy a interpret Pythonu.
   - Podpora webů v Pythonu
   - Podpora šablon Cookiecutter
 - R:
   - Podpora jazyka r.
   - Podpora modulu runtime pro vývojové nástroje R
-  - [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client) (od Microsoftu plně kompatibilní, – podporované komunitou interpret R pomocí knihovny ScaleR pro rychlejší výpočty na jednotlivé uzly a clustery. Můžete také použít libovolný jazyka R z [CRAN](https://cran.r-project.org/).)
+  - [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client) (Plně kompatibilní, Community podporuje překladač R s knihovnami škálování pro rychlejší výpočty na jednom uzlu nebo clusterech. Můžete také použít libovolný jazyk R z [Cran](https://cran.r-project.org/).)
 ::: moniker-end
 
 ## <a name="sql-server-integration"></a>Integrace SQL Serveru
 
 ::: moniker range="vs-2017"
-Systém SQL Server podporuje pomocí Pythonu a R pro pokročilé analýzy přímo v systému SQL Server. Podpora jazyka R je součástí systému SQL Server 2016 a vyšší. Podpora Pythonu je k dispozici v SQL serveru 2017 CTP 2.0 nebo novější.
+SQL Server podporuje použití Pythonu i R k provádění pokročilých analýz přímo v SQL Server. Podpora jazyka R je součástí SQL Server 2016 a novějších verzí. Podpora Pythonu je k dispozici ve verzi SQL Server 2017 CTP 2,0 a novější.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-SQL Server podporuje, pomocí Pythonu pro pokročilé analýzy přímo v systému SQL Server. Podpora Pythonu je k dispozici v SQL serveru 2017 CTP 2.0 nebo novější.
+SQL Server podporuje použití Pythonu k provádění pokročilých analýz přímo v SQL Server. Podpora Pythonu je k dispozici ve verzi SQL Server 2017 CTP 2,0 a novější.
 ::: moniker-end
 
-Díky spouštění kódu, kde již vaše data kdekoli budete moct využívat následující výhody:
+Pomocí kódu, ve kterém vaše data už žijí, můžete využívat následující výhody:
 
-- **Odstranění přesun dat**: Místo přesouvá data z databáze pro vaše aplikace nebo modelu, můžete vytvářet aplikace v databázi. Tato funkce eliminuje bariéry zabezpečení, dodržování předpisů, zásad správného řízení, integritu a celou řadu podobné problémy související s obrovských objemů dat po přesunutí. Můžete také využívat datové sady, který nelze umístit do paměti klientského počítače.
+- **Eliminace přesunu dat**: Místo přesunu dat z databáze do aplikace nebo modelu můžete v databázi vytvářet aplikace. Tato funkce eliminuje překážky proti překážkám zabezpečení, dodržování předpisů, zásad správného řízení, integrity a hostiteli podobných problémů souvisejících s přesunem obrovského množství dat. Můžete také využívat datové sady, které se nedají umístit do paměti klientského počítače.
 
-- **Snadné nasazení**: Jakmile budete mít připravený modelu, jeho nasazení do produkčního prostředí je jednoduché vkládání ve skriptu T-SQL. Všechny SQL klientské aplikace napsané v libovolném jazyce pak můžete využít výhod modely a inteligence pomocí volání uložené procedury. Žádné konkrétní jazyk integrace jsou nezbytné.
+- **Snadné nasazení**: Jakmile budete mít model připravený, nasadíte ho do produkčního prostředí, stačí ho vložit do skriptu T-SQL. Každá klientská aplikace SQL napsaná v jakémkoli jazyce pak může využít výhod modelů a inteligentního volání uložené procedury. Nejsou nutné žádné konkrétní jazykové integrace.
 
-- **Výkon na podnikové úrovni a škálování**: Pokročilé funkce serveru SQL Server můžete použít jako tabulka v paměti a ve sloupci ukládat v balíčcích RevoScale indexy s rozhraními API pro vysoce výkonné škálovatelné. Úplného oproštění od přesunu dat taky znamená, že vyhnout tak klienta omezení paměti, jak roste vaše data nebo chcete zvýšit výkon aplikace.
+- **Výkon a škálování na podnikové úrovni**: V balíčcích RevoScale můžete SQL Server používat pokročilé funkce, jako jsou tabulky v paměti a indexy úložiště sloupců s vysokým výkonem škálovatelných rozhraní API. Vyloučení přesunu dat také znamená, že se vyhnete omezením paměti klienta při zvětšování dat nebo chcete zvýšit výkon aplikace.
 
-- **Bohatá rozšiřitelnost**: Můžete nainstalovat a spustit některý z nejnovější opensourcových balíčků na SQL serveru k sestavení aplikace AI a hloubkového učení na velké objemy dat v systému SQL Server. Instalace balíčku v systému SQL Server je jednoduché, stačí instalaci balíčku na místním počítači.
+- **Rozšířená rozšiřitelnost**: V SQL Server můžete nainstalovat a spustit kterýkoli z nejnovějších balíčků open source k vytváření aplikací pro rozsáhlou výuku a AI pro velké objemy dat v SQL Server. Instalace balíčku v SQL Server je stejně jednoduchá jako instalace balíčku do místního počítače.
 
-- **Široký dostupnost bez dalších poplatků**: Integrace jazyka jsou k dispozici ve všech edicích systému SQL Server 2017 a novějších, včetně Express edition.
+- **Bezplatná dostupnost bez dalších nákladů**: Jazykové integrace jsou k dispozici ve všech edicích SQL Server 2017 a novějších, včetně edice Express.
 
-Plně využít integraci s SQL serverem, použijte k instalaci instalačního programu sady Visual Studio **ukládání a zpracování dat** úlohy **SQL Server Data Tools** možnost. Druhou možnost umožňuje SQL IntelliSense, zvýrazňování syntaxe a nasazení.
+Pokud chcete plně využít výhod SQL Server integrace, pomocí instalačního programu sady Visual Studio nainstalujte úlohu **ukládání a zpracování dat** pomocí možnosti **nástroje SQL Server Data Tools** . Druhá možnost umožňuje technologii SQL IntelliSense, zvýrazňování syntaxe a nasazení.
 
-![Úloze ukládání a zpracování dat](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![Úložiště dat a zpracování úloh možností](media/workload/data-storage-workload-options.png)
+![Zátěžové úložiště a zpracování dat](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![Možnosti úlohy úložiště a zpracování dat](media/workload/data-storage-workload-options.png)
 
 Další informace:
 
 ::: moniker range="vs-2017"
-- [Práce s využitím SQL serveru a jazyka R](../rtvs/integrating-sql-server-with-r.md)
-- [V databázi pokročilé analýzy s jazykem R v SQL serveru 2016 (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
+- [Práce s SQL Server a R](../rtvs/integrating-sql-server-with-r.md)
+- [Pokročilá analýza v databázi pomocí R v SQL Server 2016 (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
 ::: moniker-end
-- [Python v sadě SQL Server 2017: rozšířené v databázi machine learning (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
+- [Python v SQL Server 2017: vylepšené v databázovém strojovém učení (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
 
 ## <a name="additional-services-and-sdks"></a>Další služby a sady SDK
 
-Kromě přímo Novinky v úloze datové vědy a analytické aplikace služby Azure poznámkových bloků a sady Azure SDK for Python jsou také užitečná pro datové vědy.
+Kromě toho, co je přímo v úloze datové vědy a analytické aplikace, je užitečná taky služba Azure Notebooks a sada Azure SDK pro Python je užitečná i pro datové vědy.
 
-Sada Azure SDK pro Python umožňuje snadno využívat a spravovat služby Microsoft Azure z aplikací běžících ve Windows, Mac a Linux. Další informace najdete v tématu [sady Azure SDK pro Python](../python/azure-sdk-for-python.md)
+Sada Azure SDK pro Python umožňuje snadno využívat a spravovat služby Microsoft Azure z aplikací běžících ve Windows, Mac a Linux. Další informace najdete v tématu [sada Azure SDK pro Python](../python/azure-sdk-for-python.md).
 
-Azure poznámkových bloků (aktuálně ve verzi preview) poskytuje Bezplatná online přístup k poznámkové bloky Jupyter, které běží v cloudu v Microsoft Azure. Součástí služby je v jazyce Python, R a ukázkové poznámkové bloky a F# vám pomůžou začít. Navštivte [notebooks.azure.com](https://notebooks.azure.com/).
+Azure Notebooks (aktuálně ve verzi Preview) poskytuje bezplatný online přístup k poznámkovým blokům Jupyter, které běží v cloudu v Microsoft Azure. Služba obsahuje ukázkové poznámkové bloky v Pythonu, R F# a, které vám pomohou začít. Navštivte [Notebooks.Azure.com](https://notebooks.azure.com/).
 
 <!--Note link on the image because this one is large -->
-[![Snímky obrazovky z Azure poznámkové bloky s Úvod do ukázkové R](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)
+[![Snímky obrazovky Azure Notebooks s ukázkou Úvod do jazyka R](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)

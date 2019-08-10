@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f5f8e389e3dfe91252149fb4c3d3c1e59f38b0
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e6fdf3fa790a29f94a5bf3b40bc0d2ada703bc5b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415583"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925763"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Postupy: Vytvoření a úprava konfigurací
 
@@ -44,7 +44,7 @@ Chcete-li otevřít dialogové okno **Configuration Manager** , v **Průzkumník
 
 V dialogovém okně **Configuration Manager** můžete použít rozevírací seznam **Konfigurace aktivního řešení** k výběru konfigurace sestavení pro celé řešení, úpravě existujícího nebo vytvoření nové konfigurace. Pomocí rozevíracího seznamu **Aktivní platforma řešení** můžete vybrat platformu, kterou konfigurace cílí, upravit existující nebo přidat novou platformu. Podokno **kontexty projektu** obsahuje seznam projektů v řešení. Pro každý projekt můžete vybrat konfiguraci a platformu specifickou pro konkrétní projekt, upravit existující nebo vytvořit novou konfiguraci nebo přidat novou platformu. Můžete také zaškrtnout políčka, která určují, zda je každý projekt zahrnut při použití konfigurace pro sestavení nebo nasazení řešení v rámci řešení.
 
- Po nastavení požadovaných konfigurací můžete nastavit vlastnosti projektu, které jsou vhodné pro tyto konfigurace.
+Po nastavení požadovaných konfigurací můžete nastavit vlastnosti projektu, které jsou vhodné pro tyto konfigurace.
 
 ### <a name="set-properties-based-on-configurations"></a>Nastavení vlastností na základě konfigurací
 

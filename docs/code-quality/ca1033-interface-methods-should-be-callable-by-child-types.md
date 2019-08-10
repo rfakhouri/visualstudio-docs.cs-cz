@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd8ee08b53ef3f9216edcb67ebcdbe6c4978bb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10db644fe4cf65a7336ef8bd50dcf62e072e1c46
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778841"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922958"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Metody rozhraní by měly být volatelné podřízenými typy
 
@@ -30,24 +30,24 @@ ms.locfileid: "62778841"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
- Nezapečetěný externě viditelný typ poskytuje explicitní implementaci metod veřejného rozhraní a neposkytuje alternativní externě viditelnou metodu stejného názvu.
+## <a name="cause"></a>příčina
+Nezapečetěný externě viditelný typ poskytuje explicitní implementaci metod veřejného rozhraní a neposkytuje alternativní externě viditelnou metodu stejného názvu.
 
 ## <a name="rule-description"></a>Popis pravidla
- Vezměte v úvahu základní typ, který explicitně implementuje metodu veřejných rozhraní. Typ, který se odvozuje od základního typu má přístup k zděděné metody pouze prostřednictvím odkaz na aktuální instanci (`this` v jazyce C#), který je přetypován na rozhraní. Pokud je odvozený typ reimplements (explicitně) metoda zděděné rozhraní, základní implementaci už je přístupný. Vyvolá odvozené provádění; volání prostřednictvím odkazu na aktuální instanci To způsobí, že rekurze a přetečení zásobníku konečný výsledek.
+Vezměte v úvahu základní typ, který explicitně implementuje metodu veřejného rozhraní. Typ, který je odvozen od základního typu, má přístup k zděděné metodě rozhraní pouze prostřednictvím odkazu na aktuální instanci (`this` v C#), která je převedena na rozhraní. Pokud odvozený typ znovu implementuje (explicitně) zděděnou metodu rozhraní, k základní implementaci již nelze přivodit. Volání prostřednictvím aktuální reference instance vyvolá odvozenou implementaci; To způsobí rekurzi a případné přetečení zásobníku.
 
- Toto pravidlo nevytváří sestavu porušení pro explicitní implementaci <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> při externě viditelného `Close()` nebo `System.IDisposable.Dispose(Boolean)` metoda je k dispozici.
+Toto pravidlo neoznamuje porušení explicitní implementace, <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Pokud je k dispozici externě viditelný `Close()` nebo `System.IDisposable.Dispose(Boolean)` metoda.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, implementovat novou metodu, která poskytuje stejné funkce a je viditelná pro odvozené typy nebo změňte implicitními implementace. Pokud k zásadní změně je přijatelné, alternativou je učiňte typ zapečetěná.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, implementujte novou metodu, která zveřejňuje stejnou funkci a je viditelná pro odvozené typy nebo se změní na neexplicitní implementaci. V případě, že je zásadní změna přijatelné, alternativou je vytvořit zapečetěný typ.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla, pokud je externě viditelná metoda, která má stejné funkce, ale jiný název než explicitně implementované metody.
+Je bezpečné potlačit upozornění z tohoto pravidla, pokud je k dispozici externě viditelná metoda, která má stejnou funkci, ale jiný název než explicitně implementovaná metoda.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ, `ViolatingBase`, který porušuje pravidla a typ, `FixedBase`, která zobrazuje oprava porušení zásady.
+Následující příklad ukazuje typ, `ViolatingBase`, který porušuje pravidlo a typ, `FixedBase`,, který ukazuje opravu pro porušení.
 
- [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
+[!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
 
 ## <a name="see-also"></a>Viz také:
- [Rozhraní](/dotnet/csharp/programming-guide/interfaces/index)
+[Rozhraní](/dotnet/csharp/programming-guide/interfaces/index)

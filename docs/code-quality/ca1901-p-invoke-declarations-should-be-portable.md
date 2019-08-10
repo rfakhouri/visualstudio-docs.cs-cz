@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c4216b52fa4a23848a82548c36c34592deacc0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545456"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921307"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklarace volání nespravovaného kódu by měla být přenosná
 
@@ -27,27 +27,27 @@ ms.locfileid: "62545456"
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|Kategorie|Microsoft.Portability|
-|Narušující změna|Rozdělení - P/Invoke je viditelná mimo sestavení. Pevné – Pokud P/Invoke není viditelný mimo sestavení.|
+|Kategorie|Microsoft. přenositelnost|
+|Narušující změna|Přerušení – Pokud je volání nespravovaného modulu mimo sestavení viditelné. Bez přerušení – Pokud není volání nespravovaného volání mimo sestavení viditelné.|
 
-## <a name="cause"></a>Příčina
- Toto pravidlo vyhodnotí velikost každého parametru a vrácené hodnoty deklarace P/Invoke a ověří správnost jejich velikost, při zařazení na nespravovaný kód v 32bitové a 64bitové platformy. Nejběžnější porušení tohoto pravidla je předat celé číslo pevnou velikostí, ve kterém jsou vyžadována proměnná závislého na platformě, velikosti ukazatele.
+## <a name="cause"></a>příčina
+Toto pravidlo vyhodnocuje velikost každého parametru a návratovou hodnotu volání nespravovaného kódu a ověřuje, zda je jejich velikost, je-li zařazování na nespravovaný kód na 32 a 64-bitových platforem správná. Nejběžnějším porušením tohoto pravidla je předávat celé číslo s pevnou velikostí, kde je vyžadována proměnná závislá na platformě a proměnné velikosti ukazatele.
 
 ## <a name="rule-description"></a>Popis pravidla
- Jednu z následujících scénářů poruší toto pravidlo vyvolá:
+Toto pravidlo je v rozporu s některým z následujících scénářů:
 
-- Návratová hodnota nebo parametr je zadán jako celé číslo pevnou velikostí při by měla být zadána jako `IntPtr`.
+- Návratová hodnota nebo parametr je zadán jako celé číslo pevné velikosti, pokud by měl být zadán jako `IntPtr`.
 
-- Návratová hodnota nebo parametr je zadán jako `IntPtr` kdy by měla být zadána jako celé číslo pevnou velikostí.
+- Návratová hodnota nebo parametr je zadán jako `IntPtr` , když by měl být zadán jako celé číslo s pevnou velikostí.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Je-li opravit toto porušení pomocí `IntPtr` nebo `UIntPtr` k reprezentaci obslužné rutiny místo `Int32` nebo `UInt32`.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Toto porušení můžete opravit `IntPtr` pomocí nebo `UIntPtr` `Int32` k reprezentování popisovačů místo nebo `UInt32`.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Neměli potlačení tohoto upozornění.
+Toto upozornění byste neměli potlačit.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje porušení tohoto pravidla.
+Následující příklad demonstruje porušení tohoto pravidla.
 
 ```csharp
 internal class NativeMethods
@@ -58,7 +58,7 @@ internal class NativeMethods
 }
 ```
 
- V tomto příkladu `nIconIndex` parametr je deklarován jako `IntPtr`, což je 4 bajty široké na 32bitové platformě a 8 bajtů na platformě 64 bitů široké. V nespravované deklarace, který následuje, vidíte, že `nIconIndex` je 4 bajty celé číslo bez znaménka na všech platformách.
+V tomto příkladu `nIconIndex` je parametr deklarovaný `IntPtr`jako, což je 4 bajty na platformě 32 a 8 bajtů v celé 64 platformě. V nespravované deklaraci, která následuje, můžete vidět `nIconIndex` , že je na všech platformách unsigned integer o velikosti 4 bajty.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -66,7 +66,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>Příklad
- Chcete-li vyřešit porušení zásad, změňte deklaraci takto:
+Chcete-li toto porušení opravit, změňte deklaraci na následující:
 
 ```csharp
 internal class NativeMethods{
@@ -77,4 +77,4 @@ internal class NativeMethods{
 ```
 
 ## <a name="see-also"></a>Viz také:
- [Upozornění přenositelnosti](../code-quality/portability-warnings.md)
+[Upozornění přenositelnosti](../code-quality/portability-warnings.md)

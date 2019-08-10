@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 0acacac883153990861385c96eeb3379c464f97f
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822143"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870989"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Zápis a ladění spuštěného kódu XAML pomocí programu XAML Hot reloading v aplikaci Visual Studio
 
@@ -45,7 +45,7 @@ Níže jsou známá omezení pro opětovné načtení kódu XAML. Chcete-li obej
 |Události zapojení do ovládacích prvků, když je aplikace spuštěná|Nepodporováno|Není podporováno|Zobrazit chybu: *Zajistěte selhání události*|
 |Vytváření objektů prostředků ve slovníku prostředků, jako jsou například v rámci stránky nebo okna vaší aplikace nebo souboru *App. XAML*|Nepodporováno|Podporováno|Příklad: přidání `SolidColorBrush` do slovníku prostředků pro použití `StaticResource`jako.</br>Poznámka: Statické prostředky, převaděče stylu a další elementy zapsané do slovníku prostředků lze použít nebo použít při použití kódu XAML Hot reloading. Nepodporují se jenom vytváření prostředků.</br> Změna vlastnosti slovníku `Source` prostředků.|
 |Přidání nových ovládacích prvků, tříd, oken nebo jiných souborů do projektu v době, kdy aplikace běží|Nepodporováno|Nepodporováno|Žádné|
-|Správa balíčků NuGet (přidávání/odebírání a aktualizace balíčků)|Nepodporováno|Nepodporováno|Žádný|
+|Správa balíčků NuGet (přidávání/odebírání a aktualizace balíčků)|Nepodporováno|Nepodporováno|Žádné|
 |Změna datové vazby, která používá rozšíření značek {x:Bind}|Není k dispozici|Podporováno v aplikaci Visual Studio 2019 a novějších verzích|Nepodporováno v aplikaci Visual Studio 2017 nebo předchozích verzích|
 
 ## <a name="error-messages"></a>Chybové zprávy
@@ -53,7 +53,7 @@ Níže jsou známá omezení pro opětovné načtení kódu XAML. Chcete-li obej
 Při použití kódu XAML Hot reload může docházet k následujícím chybám.
 
 |Chybová zpráva|Popis|
-|-|-|-|
+|-|-|
 |Zajistěte selhání události|Chyba znamená, že se pokoušíte o přenos události do některého z vašich ovládacích prvků, které se při spuštění aplikace nepodporují.|
 |Úpravy a pokračování jazyka XAML nenalezly žádné prvky, které by bylo možné aktualizovat.|K chybě dojde při úpravách jazyka XAML, který nelze v aplikaci aktualizovat.</br> Tato chyba se může někdy vyřešit pomocí spuštěné aplikace a přejít tak k zobrazení, ve kterém se používá XAML.</br> V některých případech tato chyba znamená, že konkrétní změnu nelze použít, dokud nerestartujete relaci ladění. |
 |Tato změna se během relace ladění nepodporuje.|Chyba indikuje, že změna, kterou zkoušíte, není podporována kódováním XAML Hot reloading. Zastavte ladicí relaci, proveďte změnu a pak znovu spusťte ladicí relaci.|

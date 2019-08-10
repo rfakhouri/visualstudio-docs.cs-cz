@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a3790f57882071bddc90ef78a0ac74dd565514
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c82e7303ea4016974be04c3d8745cb2011017f0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779580"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923166"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Přetižte operátor rovnosti společně s přetížením operátorů sčítání a odečítání
 
@@ -37,13 +37,13 @@ ms.locfileid: "62779580"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
- Veřejný nebo chráněný typ implementuje operátory sčítání a odčítání, aniž by implementoval operátor rovnosti.
+## <a name="cause"></a>příčina
+Veřejný nebo chráněný typ implementuje operátory sčítání a odčítání, aniž by implementoval operátor rovnosti.
 
 ## <a name="rule-description"></a>Popis pravidla
- Když instance typu je možné kombinovat s použitím operace, jako je sčítání a odčítání, téměř vždy měli definovat rovnosti vrátil `true` pro jakékoli dvě instance, které mají stejný základní hodnoty.
+V případě, že instance typu lze kombinovat pomocí operací, jako je sčítání a odčítání, byste měli téměř vždy definovat rovnost, která `true` se vrátí pro všechny dvě instance, které mají stejné hodnoty prvků.
 
- V implementaci přetížení operátoru rovnosti nelze použít výchozí operátor rovnosti. To způsobí přetečení zásobníku. K implementaci operátor rovnosti, použijte metodu Object.Equals v implementaci. Podívejte se na téma v následujícím příkladu.
+Nelze použít výchozí operátor rovnosti v přetížené implementaci operátoru rovnosti. Uděláte to tak, že dojde k přetečení zásobníku. K implementaci operátoru rovnosti použijte metodu Object. Equals v implementaci. Podívejte se na téma v následujícím příkladu.
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -59,21 +59,21 @@ if (Object.ReferenceEquals(left, null))
 return left.Equals(right);
 ```
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, implementujte operátor rovnosti, tak, aby se matematicky konzistentní s operátory sčítání a odčítání.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, implementujte operátor rovnosti tak, aby byl matematicky konzistentní s operátory sčítání a odčítání.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla, pokud výchozí implementace operátoru rovnosti pro typ poskytuje správné chování.
+V případě, že výchozí implementace operátoru rovnosti poskytuje správné chování pro typ, je bezpečné potlačit upozornění od tohoto pravidla.
 
 ## <a name="example"></a>Příklad
- Následující příklad definuje typ (`BadAddableType`), který porušuje tato pravidla. Tento typ by měly implementovat operátor rovnosti, chcete-li jakékoli dvě instance, které mají stejné hodnoty pole testování `true` rovnosti. Typ `GoodAddableType` ukazuje opravený implementaci. Mějte na paměti, že tento typ také implementuje operátor nerovnosti a přepíše <xref:System.Object.Equals%2A> splnit další pravidla. Úplnou implementaci byste implementovali také <xref:System.Object.GetHashCode%2A>.
+Následující příklad definuje typ (`BadAddableType`), který porušuje toto pravidlo. Tento typ by měl implementovat operátor rovnosti, aby všechny dvě instance, které mají stejné hodnoty polí `true` , byly testovány pro rovnost. Typ `GoodAddableType` zobrazuje opravenou implementaci. Všimněte si, že tento typ také implementuje operátor nerovnosti a <xref:System.Object.Equals%2A> přepsání pro splnění dalších pravidel. Bude implementována <xref:System.Object.GetHashCode%2A>i kompletní implementace.
 
- [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]
+[!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]
 
 ## <a name="example"></a>Příklad
- Následující příklad testuje rovnost pomocí instance typů, které byly dříve definovány v tomto tématu pro ilustraci výchozí a správné chování pro operátor rovnosti.
+Následující příklad testuje rovnost pomocí instancí typů, které byly dříve definovány v tomto tématu, k ilustraci výchozího a správného chování operátoru rovnosti.
 
- [!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]
+[!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]
 
 Tento příklad vytvoří následující výstup:
 

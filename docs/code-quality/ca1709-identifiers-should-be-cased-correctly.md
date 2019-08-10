@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f692218cd051338a6bd4e83a07d985bb52f907e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 864918b7ce394e9f096c6fa9dea9389957983177
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546232"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921768"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Malá a velká písmena identifikátorů by měla být použita správně
 
@@ -28,37 +28,42 @@ ms.locfileid: "62546232"
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
 |Kategorie|Microsoft.Naming|
-|Narušující změna|Zásadní – při aktivaci pro sestavení, oborů názvů, typy, členy a parametry.<br /><br /> Bez konce – při vyvolání v parametrech obecného typu.|
+|Narušující změna|Přerušení – při vyvolání v sestaveních, oborech názvů, typech, členech a parametrech.<br /><br /> Nerozdělitelné – při vyvolání v parametrech obecného typu|
 
-## <a name="cause"></a>Příčina
- Název identifikátoru není správně formátováno.
+## <a name="cause"></a>příčina
 
- \- nebo –
+Název identifikátoru není správně použita.
 
- Název identifikátoru obsahuje dvoupísmenné zkratky a druhý písmena jsou malá písmena.
+\- nebo –
 
- \- nebo –
+Název identifikátoru obsahuje zkratku se dvěma písmeny a druhé písmeno je malými písmeny.
 
- Název identifikátoru obsahuje zkratka tři nebo více velkých písmen.
+\- nebo –
+
+Název identifikátoru obsahuje akronym o třech nebo více velkých písmenech.
 
 ## <a name="rule-description"></a>Popis pravidla
- Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. Taková konzistence snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
 
- Podle konvence používají názvy parametrů ve formátu camelCase velká a malá písmena a obor názvů, typ a názvů členů pomocí Pascal velká a malá písmena. V názvu ve formátu camelCase první písmena jsou malá písmena a je velké písmeno první písmeno zbývající slov v názvu. Příklady názvů ve formátu camelCase `packetSniffer`, `ioFile`, a `fatalErrorCode`. Název stylu jazyka Pascal je velké písmeno první písmeno a je velké písmeno první písmeno zbývající slov v názvu. Příklady názvů jazyka Pascal `PacketSniffer`, `IOFile`, a `FatalErrorCode`.
+Zásady vytváření názvů poskytují běžný vzhled pro knihovny, které cílí na modul CLR (Common Language Runtime). Tato konzistence snižuje výukovou křivku, která je požadována pro nové knihovny softwaru, a zvyšuje důvěru zákazníků, že knihovna byla vyvinuta někým, kdo má zkušenosti s vývojem spravovaného kódu.
 
- Toto pravidlo rozdělí slova malých a velkých písmen podle názvu a kontroluje všechny slova dvoupísmenné seznamem běžná slova dvou písmen, jako je například "V" nebo "My". Pokud není nalezena shoda, slovo je považován za zkratka. Kromě toho toto pravidlo předpokládá, že našla zkratka, pokud název obsahuje buď čtyři velká písmena v řádku nebo v řádku na konec názvu tři velká písmena.
+Podle konvence názvy parametrů používají ve stylu CamelCase velká a malá písmena, typy a názvy členů používají název Pascal. V názvu ve stylu CamelCase-použita je první písmeno malé písmeno a první písmeno všech zbývajících slov v názvu je velká písmena. Příklady názvů ve stylu CamelCase-použita jsou `packetSniffer`, `ioFile`a `fatalErrorCode`. V názvu Pascal-použita je první písmeno velkými písmeny a první písmeno všech zbývajících slov v názvu je velká písmena. Příklady názvů Pascal-použita jsou `PacketSniffer`, `IOFile`a `FatalErrorCode`.
 
- Podle konvence dvoupísmenné zkratky používat všechna velká písmena a zkratky tři nebo více znaků používat Pascal velká a malá písmena. Následující příklady používají tyto zásady vytváření názvů: "DB", "Vy", "Cpa" a "Ecma". Následující příklady porušují Tato konvence: ' Vstup/výstup', 'XML' a "Amerického ministerstva obrany" a pro názvy bez parametrů, "xp" a "panelu".
+Toto pravidlo rozdělí název na slova na základě velkých a malých písmen a kontroluje všechna slova v seznamu běžných dvou písmen, například "in" nebo "my". Pokud se shoda nenajde, slovo se považuje za akronym. Kromě toho toto pravidlo předpokládá, že našla akronym, když název obsahuje buď čtyři velká písmena v řádku, nebo tři velká písmena v řádku na konci názvu.
 
- "ID" je speciální malými a velkými písmeny způsobit porušení tohoto pravidla. 'Id' není zkratka, ale je zkratkou pro "Identifikace".
+Podle konvence používají akronym se dvěma písmeny všechna velká písmena a akronymy se třemi nebo více znaky používají velká a malá písmena Pascal. Tato konvence vytváření názvů se používá v následujících příkladech: ' DB ', ' CR ', ' CPA ' a ' ECMA '. Následující příklady porušují konvenci: ' IO ', ' XML ' a ' DoD ' a pro názvy bez parametrů, ' XP ' a ' cpl '.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Změňte název tak, že je správně formátováno.
+' ID ' je speciální – použita způsob porušení tohoto pravidla. ' ID ' není akronym, ale zkratka pro ' Identification '.
+
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+
+Změňte název tak, aby byl použita správně.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné pro potlačení tohoto upozornění, pokud máte vlastní zásady vytváření názvů, nebo pokud tento identifikátor představuje název správný, například název společnosti nebo technologie.
 
- Můžete také přidat konkrétní podmínky, zkratky a zkratky, které do vlastního slovníku analýzy kódu. Podmínky zadané ve slovníku nezpůsobí porušení tohoto pravidla. Další informace najdete v tématu [jak: Přizpůsobení slovníku analýzy kódu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+Toto upozornění je bezpečné potlačit, pokud máte vlastní konvence pojmenování, nebo pokud identifikátor představuje správný název, například název společnosti nebo technologie.
+
+Můžete také přidat konkrétní výrazy, zkratky a zkratky, které jsou k vlastnímu slovníku nástroje Code Analysis. U podmínek zadaných ve vlastním slovníku nebude porušení tohoto pravidla způsobovat. Další informace najdete v tématu [jak: Přizpůsobení slovníku](../code-quality/how-to-customize-the-code-analysis-dictionary.md)analýzy kódu.
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1708: Identifikátory by se měly lišit o více než velikostí písmen](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+
+[CA1708: Identifikátory by se měly lišit o více než malých písmenech](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

@@ -21,99 +21,99 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1e9fd28a946911a019ee0a1e144e7565bac9e004
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80f258e87bd7bd197460d5ff9ab29b6964347f7c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402726"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925418"
 ---
 # <a name="validate-data-in-datasets"></a>Ověřování dat v datových sadách
-Ověřování dat je proces ověření, hodnot zadaných do datových objektů v souladu s omezeními ve schématu datové sady. Proces ověřování také potvrdí, že jsou tyto hodnoty dle pravidel, které se vytvořily pro vaši aplikaci. Je vhodné ověřit data před odesláním aktualizace do podkladové databáze. Tím se snižuje chyby, jakož i potenciální počet výměn mezi aplikací a databáze.
+Ověřování dat je proces potvrzení, že hodnoty, které jsou zadány do datových objektů, jsou v souladu s omezeními v rámci schématu datové sady. Proces ověřování také potvrdí, že tyto hodnoty následují pravidla, která byla pro vaši aplikaci vytvořena. Před odesláním aktualizací do podkladové databáze je dobrým zvykem ověřit data. Tím se snižuje počet chyb a také potenciální počet odezvy mezi aplikací a databází.
 
-Si můžete ověřit, že data, která zapisuje do datové sady platný integrováním ověřovacích kontrol do samotné datové sadě. Datové sady dat bez ohledu na to, jak se provádí aktualizace můžete zkontrolovat, zda přímo ovládacími prvky ve formuláři v rámci komponenty, nebo jiným způsobem. Protože tato datová sada je součástí vaší aplikace (na rozdíl od databáze back-end), je logický místo, kde můžete vytvářet ověřování konkrétní aplikace.
+Můžete potvrdit, že data, která jsou zapsána do datové sady, jsou platná sestavením kontrol ověření do samotné datové sady. Datová sada může kontrolovat data bez ohledu na to, jak je prováděna aktualizace – ať už přímo ovládacími prvky ve formuláři, v rámci součásti nebo jiným způsobem. Vzhledem k tomu, že datová sada je součástí vaší aplikace (na rozdíl od back-endu databáze), je logické místo pro sestavení ověřování specifického pro aplikaci.
 
-Nejlepší místo pro přidání ověřování do aplikace je v souboru částečné třídy datové sady. V [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nebo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], otevřete **Návrhář Dataset** a poklepejte na sloupec nebo tabulka, pro kterou chcete vytvořit ověřování. Tato akce automaticky vytvoří <xref:System.Data.DataTable.ColumnChanging> nebo <xref:System.Data.DataTable.RowChanging> obslužné rutiny události.
+Nejlepším místem pro přidání ověřování do aplikace je soubor částečné třídy datové sady. V [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nebo[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]otevřete **Návrhář datových sad** a dvakrát klikněte na sloupec nebo tabulku, pro které chcete vytvořit ověření. Tato akce automaticky vytvoří <xref:System.Data.DataTable.ColumnChanging> obslužnou rutinu události nebo. <xref:System.Data.DataTable.RowChanging>
 
-## <a name="validate-data"></a>Ověření dat
- Ověřování v rámci datové sady se provádí následujícími způsoby:
+## <a name="validate-data"></a>Ověřit data
+Ověřování v rámci datové sady je provedeno následujícími způsoby:
 
-- Tím, že vytvoříte vlastní ověřování konkrétní aplikace, které můžete zkontrolovat hodnoty v jednotlivých datový sloupec během změny. Další informace najdete v tématu [jak: Ověřování dat během úprav sloupců](validate-data-in-datasets.md).
+- Vytvořením vlastního ověřování specifického pro aplikaci, které během změn může kontrolovat hodnoty v jednotlivých datových sloupcích. Další informace najdete v tématu [jak: Ověří data během změny](validate-data-in-datasets.md)sloupce.
 
-- Tím, že vytvoříte vlastní ověření specifické pro aplikace, který můžete zkontrolovat dat na hodnoty během celého datového řádku mění. Další informace najdete v tématu [jak: Ověřování dat během úprav řádků](validate-data-in-datasets.md).
+- Vytvořením vlastního ověřování specifického pro aplikaci, které může kontrolovat data na hodnoty v průběhu změny celého řádku dat. Další informace najdete v tématu [jak: Ověří data při změnách](validate-data-in-datasets.md)řádku.
 
-- Tím, že vytvoříte klíče, unikátních omezení a podobně jako součást definice skutečné schématu datové sady.
+- Vytvořením klíčů, jedinečných omezení a tak dále jako součást skutečné definice schématu pro datovou sadu.
 
-- Nastavením vlastnosti <xref:System.Data.DataColumn> objektu, například <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, a <xref:System.Data.DataColumn.Unique%2A>.
+- Nastavením vlastností <xref:System.Data.DataColumn> objektu, <xref:System.Data.DataColumn.MaxLength%2A>například <xref:System.Data.DataColumn.AllowDBNull%2A>, a <xref:System.Data.DataColumn.Unique%2A>.
 
-Několik události jsou vyvolány <xref:System.Data.DataTable> objektu, když probíhá změnu v záznamu:
+Několik událostí je vyvoláno <xref:System.Data.DataTable> objektem, když dojde ke změně v záznamu:
 
-- <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.ColumnChanged> události jsou vyvolány během a po každé změně na jednotlivých sloupců. <xref:System.Data.DataTable.ColumnChanging> Událostí je užitečné, pokud chcete ověřit změny v určité sloupce. Informace o navrhované změny je předán jako argument události.
-- <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události jsou vyvolány během a po všech změn za sebou. <xref:System.Data.DataTable.RowChanging> Je další obecné události. Označuje, že změna dochází jinde v řádku, ale nevíte, který sloupec došlo ke změně.
+- Události <xref:System.Data.DataTable.ColumnChanging> a<xref:System.Data.DataTable.ColumnChanged> jsou vyvolány během a po každé změně do jednotlivého sloupce. <xref:System.Data.DataTable.ColumnChanging> Událost je užitečná v případě, že chcete ověřit změny v konkrétních sloupcích. Informace o navrhované změně jsou předány jako argument s událostí.
+- Události <xref:System.Data.DataTable.RowChanging> a<xref:System.Data.DataTable.RowChanged> jsou vyvolány během každé změny řádku a po ní. <xref:System.Data.DataTable.RowChanging> Událost je obecnější. Indikuje, že se na řádku vyskytuje změna, ale nevíte, který sloupec se změnil.
 
-Ve výchozím nastavení jednotlivé změny do sloupce tedy vyvolává čtyři události. První je <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.ColumnChanged> události pro určitý sloupec, který mění. Dále jsou <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události. Pokud více změn jsou prováděny na řádek, události, bude vyvolána u každé změny.
+Ve výchozím nastavení každá změna ve sloupci proto vyvolává čtyři události. První je <xref:System.Data.DataTable.ColumnChanging> události a <xref:System.Data.DataTable.ColumnChanged> pro konkrétní sloupec, který se mění. Další jsou <xref:System.Data.DataTable.RowChanging> události a <xref:System.Data.DataTable.RowChanged> . Je-li na řádku provedeno více změn, události budou vyvolány pro každou změnu.
 
 > [!NOTE]
-> Řádek dat <xref:System.Data.DataRow.BeginEdit%2A> metoda vypne <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události po každé změně jednotlivých sloupců. V takovém případě není vyvolána událost až <xref:System.Data.DataRow.EndEdit%2A> metoda byla volána, když <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události jsou vyvolány pouze jednou. Další informace najdete v tématu [vypnutí omezení při naplňování datové sady](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
+> <xref:System.Data.DataRow.BeginEdit%2A> Metoda datového řádku vypne <xref:System.Data.DataTable.RowChanging> události a <xref:System.Data.DataTable.RowChanged> po změně každého jednotlivého sloupce. V takovém případě událost není vyvolána, <xref:System.Data.DataRow.EndEdit%2A> <xref:System.Data.DataTable.RowChanging> dokud není volána metoda a události a <xref:System.Data.DataTable.RowChanged> jsou vyvolány pouze jednou. Další informace najdete v tématu vypnutí [omezení při naplňování datové sady](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
 
-Události, kterou zvolíte, závisí na to, jak podrobné chtějí ověření bude. Pokud je to důležité zachytit chybu, okamžitě při změně sloupce, sestavení pomocí ověření <xref:System.Data.DataTable.ColumnChanging> událostí. Jinak použijte <xref:System.Data.DataTable.RowChanging> událost, což může vést k zachycení několik chyb najednou. Navíc pokud vaše data strukturovaná, aby hodnota jednoho sloupce ověření na základě obsahu jiného sloupce, proveďte ověření během <xref:System.Data.DataTable.RowChanging> událostí.
+Událost, kterou zvolíte, závisí na tom, jak podrobně chcete ověřování provést. Pokud je důležité zachytit chybu okamžitě při změně sloupce, sestavte ověření pomocí <xref:System.Data.DataTable.ColumnChanging> události. V opačném případě <xref:System.Data.DataTable.RowChanging> použijte událost, která by mohla vést k zachycení několika chyb najednou. Pokud jsou vaše data strukturována tak, aby byla hodnota jednoho sloupce ověřena na základě obsahu jiného sloupce, proveďte ověření během <xref:System.Data.DataTable.RowChanging> události.
 
-Při aktualizaci záznamů <xref:System.Data.DataTable> objekt vyvolává události, které může reagovat na změny se vyskytují a po provedení změn.
+Po aktualizaci <xref:System.Data.DataTable> záznamů objekt vyvolá události, na které můžete reagovat, když dojde ke změnám a po provedení změn.
 
-Pokud vaše aplikace používá typové datové sady, můžete vytvořit obslužné rutiny událostí silného typu. Tento postup přidá čtyři další typu události, pro které můžete vytvořit obslužné rutiny: `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting`, a `dataTableNameRowDeleted`. Tyto obslužné rutiny zadané události předat argument, který obsahuje názvy sloupců tabulky, které usnadňují zápis a čtení kódu.
+Pokud vaše aplikace používá typovou datovou sadu, můžete vytvořit obslužné rutiny událostí silného typu. Tím přidáte čtyři další události typu, pro které můžete vytvořit obslužné rutiny `dataTableNameRowChanged`: `dataTableNameRowDeleting` `dataTableNameRowChanging`,, `dataTableNameRowDeleted`a. Tyto obslužné rutiny událostí typu předávají argument, který obsahuje názvy sloupců tabulky, které usnadňují zápis a čtení kódu.
 
-## <a name="data-update-events"></a>Aktualizace dat události
+## <a name="data-update-events"></a>Události aktualizace dat
 
 |Událost|Popis|
 |-----------|-----------------|
-|<xref:System.Data.DataTable.ColumnChanging>|Mění hodnotu ve sloupci. Událost předává řádků a sloupců, spolu s navrhovanou novou hodnotu.|
-|<xref:System.Data.DataTable.ColumnChanged>|Změnila se hodnota ve sloupci. Událost předává řádků a sloupců, spolu s navrhovanou hodnotu.|
-|<xref:System.Data.DataTable.RowChanging>|Změny, které byly provedeny <xref:System.Data.DataRow> objektu se chystáte potvrzeny zpět do datové sady. Pokud nebyla volána <xref:System.Data.DataRow.BeginEdit%2A> metody <xref:System.Data.DataTable.RowChanging> událost se vyvolá u každé změny do sloupce ihned po <xref:System.Data.DataTable.ColumnChanging> byla vyvolána událost. Pokud jste volali <xref:System.Data.DataRow.BeginEdit%2A> před prováděním změn, <xref:System.Data.DataTable.RowChanging> událost se vyvolá pouze v případě, že zavoláte <xref:System.Data.DataRow.EndEdit%2A> metody.<br /><br /> Událost předává řádku, spolu s hodnotu určující, jaký typ akce (změnu, insert a tak dále) je prováděna.|
-|<xref:System.Data.DataTable.RowChanged>|Řádek byl změněn. Událost předává řádku, spolu s hodnotu určující, jaký typ akce (změnu, insert a tak dále) je prováděna.|
-|<xref:System.Data.DataTable.RowDeleting>|Řádek se odstraňuje. Událost předává řádku, spolu s hodnotu určující, jaký typ akce (delete) se provádí.|
-|<xref:System.Data.DataTable.RowDeleted>|Řádek byl odstraněn. Událost předává řádku, spolu s hodnotu určující, jaký typ akce (delete) se provádí.|
+|<xref:System.Data.DataTable.ColumnChanging>|Změní se hodnota ve sloupci. Událost předá do sebe řádek a sloupec, spolu s navrhovanou novou hodnotou.|
+|<xref:System.Data.DataTable.ColumnChanged>|Hodnota ve sloupci byla změněna. Událost předá do sebe řádek a sloupec, společně s navrhovanou hodnotou.|
+|<xref:System.Data.DataTable.RowChanging>|Změny provedené u <xref:System.Data.DataRow> objektu se budou zasílat zpátky do datové sady. Pokud jste nevolali <xref:System.Data.DataRow.BeginEdit%2A> metodu <xref:System.Data.DataTable.RowChanging> , událost je vyvolána pro každou změnu sloupce ihned po <xref:System.Data.DataTable.ColumnChanging> vyvolání události. Pokud jste volali <xref:System.Data.DataRow.BeginEdit%2A> před provedením změn <xref:System.Data.DataTable.RowChanging> , událost je vyvolána <xref:System.Data.DataRow.EndEdit%2A> pouze při volání metody.<br /><br /> Událost předá řádek, spolu s hodnotou, která označuje, jaký typ akce (změny, vložení a tak dále) se provádí.|
+|<xref:System.Data.DataTable.RowChanged>|Řádek byl změněn. Událost předá řádek, spolu s hodnotou, která označuje, jaký typ akce (změny, vložení a tak dále) se provádí.|
+|<xref:System.Data.DataTable.RowDeleting>|Odstraňuje se řádek. Událost předá tento řádek spolu s hodnotou, která označuje, jaký typ akce (odstranění) se provádí.|
+|<xref:System.Data.DataTable.RowDeleted>|Řádek byl odstraněn. Událost předá tento řádek spolu s hodnotou, která označuje, jaký typ akce (odstranění) se provádí.|
 
-<xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging>, A <xref:System.Data.DataTable.RowDeleting> události jsou vyvolány během procesu aktualizace. Tyto události můžete použít k ověření dat nebo provedení jiných druhů zpracování. Vzhledem k tomu, že během těchto událostí je v procesu aktualizace, můžete je zrušit vyvoláním výjimky, což zabrání aktualizaci z dokončení.
+Události <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging> a<xref:System.Data.DataTable.RowDeleting> jsou vyvolány během procesu aktualizace. Tyto události můžete použít k ověření dat nebo provádění jiných typů zpracování. Vzhledem k tomu, že aktualizace probíhá během těchto událostí, můžete ji zrušit vyvoláním výjimky, která zabrání dokončení aktualizace.
 
-<xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowChanged> a <xref:System.Data.DataTable.RowDeleted> události jsou oznámení událostí, které jsou vyvolány při aktualizaci byl úspěšně dokončen. Tyto události jsou užitečné, pokud chcete provádět další akce v závislosti na úspěšná aktualizace.
+<xref:System.Data.DataTable.ColumnChanged> Události<xref:System.Data.DataTable.RowChanged> a jsou<xref:System.Data.DataTable.RowDeleted> události oznámení, které jsou vyvolány po úspěšném dokončení aktualizace. Tyto události jsou užitečné, když chcete provést další akci na základě úspěšné aktualizace.
 
-## <a name="validate-data-during-column-changes"></a>Ověřování dat během úprav sloupců
+## <a name="validate-data-during-column-changes"></a>Ověřit data během změny sloupce
 
 > [!NOTE]
-> **Návrhář Dataset** vytvoří částečnou třídu, která ověřování lze přidat logiku pro datovou sadu. Datová sada vygenerovaná návrhářem není odstranit ani nezmění žádný kód v dílčí třídě.
+> **Návrhář datových sad** vytvoří částečnou třídu, ve které lze ověřovací logiku přidat do datové sady. Datová sada generovaná návrhářem neodstraní ani nezmění žádný kód v dílčí třídě.
 
-Data můžete ověřit při změně hodnoty ve sloupci data reakcí na <xref:System.Data.DataTable.ColumnChanging> událostí. Po vyvolání Tato událost předává argument události (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>), který obsahuje hodnotu, která je právě navrhuje se pro aktuální sloupec. Na základě obsahu z `e.ProposedValue`, můžete:
+Data můžete ověřit při změně hodnoty v datovém sloupci tím, že odpovíte na <xref:System.Data.DataTable.ColumnChanging> událost. Při vyvolání Tato událost předává argument události (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>), který obsahuje hodnotu, která je navržena pro aktuální sloupec. Na základě obsahu `e.ProposedValue`můžete:
 
-- Přijměte navrhovanou hodnotu neprovedením žádné akce.
+- Přijměte navrhovanou hodnotu tím, že nic nedělá.
 
-- Odmítnout navrhovanou hodnota nastavením chyby sloupce (<xref:System.Data.DataRow.SetColumnError%2A>) z v rámci obslužné rutiny události měnící sloupec.
+- Odmítne navrhovanou hodnotu nastavením chyby sloupce (<xref:System.Data.DataRow.SetColumnError%2A>) z obslužné rutiny události měnící sloupce.
 
-- Volitelně můžete použít <xref:System.Windows.Forms.ErrorProvider> ovládací prvek zobrazí uživateli chybovou zprávu. Další informace najdete v tématu [ErrorProvider – komponenta](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
+- Volitelně můžete pomocí <xref:System.Windows.Forms.ErrorProvider> ovládacího prvku zobrazit uživateli chybovou zprávu. Další informace najdete v tématu [Komponenta ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
-Ověření lze provést také během <xref:System.Data.DataTable.RowChanging> událostí.
+Ověřování lze také provést během <xref:System.Data.DataTable.RowChanging> události.
 
-## <a name="validate-data-during-row-changes"></a>Ověřování dat během úprav řádků
-Můžete napsat kód pro každý sloupec, který chcete ověřit, jestli obsahuje data, která splňují požadavky aplikace. To lze proveďte nastavením sloupec, aby označoval, že obsahuje chybu Pokud navrhovaná hodnota není přijatelná. Následující příklady nastavují chybu sloupce při `Quantity` sloupec je 0 nebo menší. Obslužné rutiny události měnící řádek by měl vypadat podobně jako následující příklady.
+## <a name="validate-data-during-row-changes"></a>Ověřit data během změny řádku
+Můžete napsat kód pro ověření, že každý sloupec, který chcete ověřit, obsahuje data, která splňují požadavky vaší aplikace. Provedete to tak, že nastavíte sloupec tak, aby označoval, že obsahuje chybu, pokud navrhovaná hodnota nesouhlasí. Následující příklady nastavují chybu sloupce, pokud `Quantity` je sloupec 0 nebo menší. Obslužné rutiny události měnící řádky by měly vypadat podobně jako v následujících příkladech.
 
-### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Ověření dat při řádek změní (Visual Basic)
+### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Ověření dat při změně řádku (Visual Basic)
 
-1. Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [názorný postup: Vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [Návod: Vytvoření datové sady v Návrhář datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2. Poklepejte na záhlaví tabulky, kterou chcete ověřit. Tato akce automaticky vytvoří <xref:System.Data.DataTable.RowChanging> obslužná rutina události <xref:System.Data.DataTable> v souboru částečné třídy datové sady.
+2. Dvakrát klikněte na záhlaví tabulky, kterou chcete ověřit. Tato akce automaticky vytvoří <xref:System.Data.DataTable.RowChanging> obslužnou rutinu <xref:System.Data.DataTable> události v souboru částečné třídy datové sady.
 
     > [!TIP]
-    > Dvakrát klikněte na panel vlevo od názvu tabulky k vytvoření obslužné rutiny události měnící řádek. Pokud dvakrát kliknete na název tabulky, můžete ho upravit.
+    > Dvojitým kliknutím nalevo od názvu tabulky vytvoříte obslužnou rutinu události měnící řádek. Pokud dvakrát kliknete na název tabulky, můžete ho upravit.
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>Ověření dat při změně řádku (C#)
 
-1. Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [názorný postup: Vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [Návod: Vytvoření datové sady v Návrhář datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2. Poklepejte na záhlaví tabulky, kterou chcete ověřit. Tato akce vytvoří soubor částečné třídy pro <xref:System.Data.DataTable>.
+2. Dvakrát klikněte na záhlaví tabulky, kterou chcete ověřit. Tato akce vytvoří soubor částečné třídy pro <xref:System.Data.DataTable>.
 
     > [!NOTE]
-    > **Návrhář Dataset** nevytváří automaticky obslužnou rutinu události pro <xref:System.Data.DataTable.RowChanging> událostí. Je nutné vytvořit metodu ke zpracování <xref:System.Data.DataTable.RowChanging> události a spouštění kódu k připojení události do metody inicializace tabulky.
+    > **Návrhář datových sad** nevytváří automaticky obslužnou rutinu události pro <xref:System.Data.DataTable.RowChanging> událost. Je nutné vytvořit metodu pro zpracování <xref:System.Data.DataTable.RowChanging> události a spustit kód pro zapojení události do inicializační metody tabulky.
 
 3. Zkopírujte následující kód do částečné třídy:
 
@@ -137,72 +137,72 @@ Můžete napsat kód pro každý sloupec, který chcete ověřit, jestli obsahuj
     }
     ```
 
-## <a name="to-retrieve-changed-rows"></a>Chcete-li načítání změněných řádků
-Má každý řádek v tabulce dat <xref:System.Data.DataRow.RowState%2A> vlastnost, která uchovává informace o aktuálním stavu daného řádku s použitím hodnoty <xref:System.Data.DataRowState> výčtu. Může vrátit změněných řádků z tabulky datovou sadu nebo dat pomocí volání `GetChanges` metodu <xref:System.Data.DataSet> nebo <xref:System.Data.DataTable>. Můžete ověřit, že existují změny před voláním `GetChanges` voláním <xref:System.Data.DataSet.HasChanges%2A> metoda datové sady.
+## <a name="to-retrieve-changed-rows"></a>Načtení změněných řádků
+Každý řádek v tabulce dat má <xref:System.Data.DataRow.RowState%2A> vlastnost, která sleduje aktuální stav tohoto řádku pomocí hodnot <xref:System.Data.DataRowState> ve výčtu. Můžete vrátit změněné řádky z datové sady nebo tabulky dat voláním `GetChanges` metody <xref:System.Data.DataSet> nebo <xref:System.Data.DataTable>. Můžete ověřit, zda existují změny před voláním `GetChanges` <xref:System.Data.DataSet.HasChanges%2A> voláním metody datové sady.
 
 > [!NOTE]
-> Po potvrzení změn do datové sady nebo dat tabulky (voláním <xref:System.Data.DataSet.AcceptChanges%2A> metoda), `GetChanges` metoda nevrátí žádná data. Pokud vaše aplikace potřebuje ke zpracování změněných řádků, je nutné zpracovat změny před voláním `AcceptChanges` metody.
+> Po potvrzení změn v datové sadě nebo tabulce dat (voláním <xref:System.Data.DataSet.AcceptChanges%2A> metody) `GetChanges` nevrátí metoda žádná data. Pokud vaše aplikace potřebuje zpracovat změněné řádky, je nutné před voláním `AcceptChanges` metody zpracovat změny.
 
-Volání <xref:System.Data.DataSet.GetChanges%2A> metoda datovou sadu nebo data tabulky vrátí novou tabulku datové sady nebo data, která obsahuje pouze záznamy, které se změnily. Pokud chcete získat konkrétních záznamů – například pouze nové záznamy nebo pouze změněné záznamy – můžete předat hodnotu z <xref:System.Data.DataRowState> výčet jako parametr, který se `GetChanges` metody.
+<xref:System.Data.DataSet.GetChanges%2A> Volání metody datové sady nebo tabulky dat vrátí novou datovou sadu nebo datovou tabulku, která obsahuje pouze záznamy, které byly změněny. Pokud chcete získat konkrétní záznamy, například pouze nové záznamy nebo pouze změněné záznamy, můžete předat hodnotu z <xref:System.Data.DataRowState> výčtu jako parametr `GetChanges` metodě.
 
-Použití <xref:System.Data.DataRowVersion> výčtu pro přístup k různé verze řádku (například původní hodnoty, které byly v řádku před zpracováním).
+<xref:System.Data.DataRowVersion> Použijte výčet pro přístup k různým verzím řádku (například původní hodnoty, které byly v řádku před jeho zpracováním).
 
-### <a name="to-get-all-changed-records-from-a-dataset"></a>Chcete-li získat všechny změněné záznamy z datové sady
+### <a name="to-get-all-changed-records-from-a-dataset"></a>Získání všech změněných záznamů z datové sady
 
-- Volání <xref:System.Data.DataSet.GetChanges%2A> metoda datové sady.
+- <xref:System.Data.DataSet.GetChanges%2A> Zavolejte metodu datové sady.
 
-     Následující příklad vytvoří novou datovou sadu s názvem `changedRecords` a naplní se všechny změněné záznamy z jiného datovou sadu s názvem `dataSet1`.
+     Následující příklad vytvoří novou datovou sadu s `changedRecords` názvem a naplní ji všemi změněnými záznamy z jiné datové sady `dataSet1`s názvem.
 
      [!code-csharp[VbRaddataEditing#14](../data-tools/codesnippet/CSharp/validate-data-in-datasets_2.cs)]
      [!code-vb[VbRaddataEditing#14](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_2.vb)]
 
-### <a name="to-get-all-changed-records-from-a-data-table"></a>Chcete-li získat všechny změněné záznamy z tabulky dat
+### <a name="to-get-all-changed-records-from-a-data-table"></a>Získání všech změněných záznamů z tabulky dat
 
-- Volání <xref:System.Data.DataTable.GetChanges%2A> metoda objektu DataTable.
+- <xref:System.Data.DataTable.GetChanges%2A> Zavolejte metodu objektu DataTable.
 
-     Následující příklad vytvoří novou tabulku volá `changedRecordsTable` a naplní se všechny změněné záznamy z jiné tabulky dat, volá `dataTable1`.
+     Následující příklad vytvoří novou tabulku dat s názvem `changedRecordsTable` a naplní ji všemi změněnými záznamy z jiné tabulky dat s názvem. `dataTable1`
 
      [!code-csharp[VbRaddataEditing#15](../data-tools/codesnippet/CSharp/validate-data-in-datasets_3.cs)]
      [!code-vb[VbRaddataEditing#15](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_3.vb)]
 
-### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Chcete-li získat všechny záznamy, které mají stav konkrétní řádek
+### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Získání všech záznamů, které mají určitý stav řádku
 
-- Volání `GetChanges` metoda datová sada nebo tabulka dat a pass <xref:System.Data.DataRowState> hodnota výčtu jako argument.
+- Zavolejte metodu datové sady nebo tabulky dat a <xref:System.Data.DataRowState> předejte hodnotu výčtu jako argument. `GetChanges`
 
-     Následující příklad ukazuje, jak vytvořit novou datovou sadu s názvem `addedRecords` a přidejte do ní jenom záznamy, které byly přidány do `dataSet1` datové sady.
+     Následující příklad ukazuje, jak vytvořit novou datovou sadu s `addedRecords` názvem a naplnit ji pouze záznamy, které byly přidány `dataSet1` do datové sady.
 
      [!code-csharp[VbRaddataEditing#16](../data-tools/codesnippet/CSharp/validate-data-in-datasets_4.cs)]
      [!code-vb[VbRaddataEditing#16](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_4.vb)]
 
-     Následující příklad ukazuje, jak vrátit všechny záznamy, které jste nedávno přidali `Customers` tabulky:
+     Následující příklad ukazuje, jak vrátit všechny záznamy, které byly nedávno přidány do `Customers` tabulky:
 
      [!code-csharp[VbRaddataEditing#17](../data-tools/codesnippet/CSharp/validate-data-in-datasets_5.cs)]
      [!code-vb[VbRaddataEditing#17](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_5.vb)]
 
 ## <a name="access-the-original-version-of-a-datarow"></a>Přístup k původní verzi objektu DataRow
-Při změně na řádky dat, datová sada zachová původní (<xref:System.Data.DataRowVersion.Original>) i novou (<xref:System.Data.DataRowVersion.Current>) verzi řádku. Například před voláním `AcceptChanges` metoda, vaše aplikace můžou přistupovat k různé verze záznamu (jak je definováno ve <xref:System.Data.DataRowVersion> výčet) a odpovídajícím způsobem zpracovávat změny.
+Pokud jsou provedeny změny v řádcích dat, datová sada si uchová původní (<xref:System.Data.DataRowVersion.Original>) a nové (<xref:System.Data.DataRowVersion.Current>) verze řádku. Například před voláním `AcceptChanges` metody může vaše aplikace přistupovat k různým verzím záznamu (jak je definováno <xref:System.Data.DataRowVersion> ve výčtu) a odpovídajícím způsobem zpracovat změny.
 
 > [!NOTE]
-> Různé verze řádku existují pouze poté, co byl upraven a před ní `AcceptChanges` byla volána metoda. Po `AcceptChanges` byla volána metoda, aktuální a původní verze jsou stejné.
+> Různé verze řádku existují až po úpravě a před `AcceptChanges` voláním metody. Po volání `AcceptChanges` metody jsou aktuální a původní verze stejné.
 
-Předání <xref:System.Data.DataRowVersion> hodnotu spolu indexem sloupce (nebo název sloupce jako řetězce) vrátí hodnotu z verze konkrétního řádku tohoto sloupce. Změněný sloupec je rozpoznán během <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.ColumnChanged> události. Toto je vhodná doba ke kontrole verze různých řádků pro účely ověření. Pokud jste dočasně pozastavili omezení, tyto události nebudou vyvolány a budete muset programově Identifikujte však sloupce, které se změnily. Uděláte to tak iterace <xref:System.Data.DataTable.Columns%2A> kolekce a porovnáním různých <xref:System.Data.DataRowVersion> hodnoty.
+<xref:System.Data.DataRowVersion> Předání hodnoty spolu s indexem sloupce (nebo názvem sloupce jako řetězce) vrátí hodnotu z verze konkrétního řádku daného sloupce. Změněný sloupec se identifikuje během <xref:System.Data.DataTable.ColumnChanging> událostí a. <xref:System.Data.DataTable.ColumnChanged> To je dobrý čas pro kontrolu různých verzí řádků pro účely ověření. Pokud jste však dočasně pozastavili omezení, tyto události nebudou vyvolány a budete muset programově určit, které sloupce se změnily. To můžete provést tak, že provedete iteraci <xref:System.Data.DataTable.Columns%2A> kolekce a porovnáváte různé <xref:System.Data.DataRowVersion> hodnoty.
 
 ### <a name="to-get-the-original-version-of-a-record"></a>Získání původní verze záznamu
 
-- Přístup k hodnotě sloupce předáním <xref:System.Data.DataRowVersion> řádku, který chcete vrátit.
+- Přejděte k hodnotě sloupce předáním na <xref:System.Data.DataRowVersion> řádku, který chcete vrátit.
 
-     Následující příklad ukazuje způsob použití <xref:System.Data.DataRowVersion> hodnotu k získání původní hodnoty `CompanyName` pole <xref:System.Data.DataRow>:
+     Následující příklad ukazuje, jak použít <xref:System.Data.DataRowVersion> hodnotu k získání původní hodnoty `CompanyName` pole v <xref:System.Data.DataRow>:
 
      [!code-csharp[VbRaddataEditing#21](../data-tools/codesnippet/CSharp/validate-data-in-datasets_6.cs)]
      [!code-vb[VbRaddataEditing#21](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_6.vb)]
 
 ## <a name="access-the-current-version-of-a-datarow"></a>Přístup k aktuální verzi objektu DataRow
 
-### <a name="to-get-the-current-version-of-a-record"></a>Chcete-li získat aktuální verze záznamu
+### <a name="to-get-the-current-version-of-a-record"></a>Získání aktuální verze záznamu
 
-- Přístup k hodnotě sloupce a pak přidejte parametr do indexu, která určuje, kterou verzi řádku chcete vrátit.
+- Přistoupit k hodnotě sloupce a poté přidejte parametr do indexu, který označuje, která verze řádku má být vrácena.
 
-     Následující příklad ukazuje způsob použití <xref:System.Data.DataRowVersion> hodnotu k získání aktuální hodnoty `CompanyName` pole <xref:System.Data.DataRow>:
+     Následující příklad ukazuje, jak použít <xref:System.Data.DataRowVersion> hodnotu k získání aktuální hodnoty `CompanyName` pole v <xref:System.Data.DataRow>:
 
      [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
      [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]
@@ -210,5 +210,5 @@ Předání <xref:System.Data.DataRowVersion> hodnotu spolu indexem sloupce (nebo
 ## <a name="see-also"></a>Viz také:
 
 - [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Postupy: Ověřování dat v ovládacím prvku Windows Forms DataGridView](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Postupy: Zobrazení ikon chyb pro ověřování formuláře pomocí komponenty Windows Forms ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Postupy: Ověřit data v ovládacím prvku DataGridView model Windows Forms](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Postupy: Zobrazit chybové ikony pro ověření formuláře pomocí součásti model Windows Forms ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

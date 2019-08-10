@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493334"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918787"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novinky v sadě Visual Studio 2019
 
@@ -65,7 +65,7 @@ Jednoduše volejte refaktoring stisknutím **kombinace kláves CTRL +.** a vyber
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) vylepšuje úsilí při vývoji softwaru pomocí umělé Intelligence (AI). IntelliCode vlaky napříč 2 000 open source projektů na GitHubu&mdash;každý s více než 100 hvězdičkami&mdash;, aby vygenerovala doporučení.
 
- ![Animace IntelliCode ve Visual Studiu 2019](media/vs-2019/IntelliCode.gif)
+![Animace IntelliCode ve Visual Studiu 2019](media/vs-2019/IntelliCode.gif)
 
 Tady je několik způsobů, jak může Visual Studio IntelliCode přispět k lepší produktivitě:
 
@@ -184,7 +184,7 @@ Přidali jsme podporu pro cílení aplikací ASP.NET (základní a desktopové),
 
 Další informace najdete v článku [ladění živých ASP.NET aplikací Azure pomocí stránky Snapshot Debugger](../debugger/debug-live-azure-applications.md) a na blogovém příspěvku [pro Visual Studio Enterprise 2019 s časem zavedení](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) .
 
-### <a name="microsoft-edge-insider-support"></a>Podpora Microsoft Edge Insider
+### <a name="microsoft-edge-insider-support"></a>Podpora prohlížeče Microsoft Edge Insider
 
 **Novinka v 16,2**: Můžete nastavit zarážku v aplikaci JavaScriptu a spustit relaci ladění pomocí prohlížeče [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) . Když to uděláte, Visual Studio otevře nové okno prohlížeče s povoleným laděním, které pak můžete použít ke krokování v aplikaci JavaScript aplikace v sadě Visual Studio.
 

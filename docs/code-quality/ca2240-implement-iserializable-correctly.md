@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ef3e012b3a818c60be23278fe622a40330f3b43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a6d9acc3a74505f766fbf9cfe26fc6878fdbb4b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541477"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920046"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Implementujte správně ISerializable
 
@@ -32,47 +32,47 @@ ms.locfileid: "62541477"
 |TypeName|ImplementISerializableCorrectly|
 |CheckId|CA2240|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Externě viditelný typ je přiřadit k <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> platí rozhraní a jeden z následujících podmínek:
+Externě viditelný typ je přiřadit k <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> rozhraní a jedna z následujících podmínek je pravdivá:
 
-- Typ dědí, ale nepřepisuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metoda a typ deklaruje pole instancí, které nejsou označené <xref:System.NonSerializedAttribute?displayProperty=fullName> atribut.
+- Typ dědí, ale nepřepisuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metodu a typ deklaruje pole instance, která nejsou označena <xref:System.NonSerializedAttribute?displayProperty=fullName> atributem.
 
-- Typ není zapečetěná a tento typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodu, která není externě viditelnou a přepisovatelnou.
+- Typ není zapečetěn a typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodu, která není externě viditelná a overridable.
 
 ## <a name="rule-description"></a>Popis pravidla
- Instance pole, které jsou deklarovány v typu, který dědí <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> rozhraní nejsou automaticky součástí procesu serializace. Chcete-li zahrnují pole, musí implementovat typ <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metody a konstruktoru serializace. Pokud pole nesmí být serializován, použije <xref:System.NonSerializedAttribute> atributu na pole explicitně určit rozhodnutí.
+Pole instance, která jsou deklarována v typu, který <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> dědí rozhraní, nejsou automaticky obsažena v procesu serializace. Chcete-li zahrnout pole, typ musí implementovat <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodu a konstruktor serializace. Pokud by pole neměly být serializována, použijte <xref:System.NonSerializedAttribute> atribut na pole, aby explicitně označovala rozhodnutí.
 
- Typy, které nejsou uzavřeny, implementace <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metoda by měla být externě viditelné. Proto metodu je možné vyvolat v odvozených typech a je přepsatelný.
+V typech, které nejsou zapečetěné, implementace <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metody by měly být externě viditelné. Proto může být metoda volána odvozenými typy a je možné ji přepsat.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, ujistěte se, <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metoda viditelnou a přepisovatelnou a ujistěte se, že všechna pole instancí jsou součástí procesu serializace nebo výslovně označena <xref:System.NonSerializedAttribute> atribut.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, zajistěte, aby byla <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metoda viditelná a Overridable, a ujistěte se, že všechna pole instance jsou zahrnuta v procesu serializace nebo explicitně označena <xref:System.NonSerializedAttribute> atributem.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje dva Serializovatelné typy, které pravidlo porušují.
+Následující příklad ukazuje dva Serializovatelné typy, které porušují pravidlo.
 
- [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_1.cs)]
- [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_1.cpp)]
- [!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_1.vb)]
+[!code-csharp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_1.cs)]
+[!code-cpp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_1.cpp)]
+[!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_1.vb)]
 
 ## <a name="example"></a>Příklad
- V následujícím příkladu řeší tím, že poskytuje implementaci přepisovatelný dvě předchozí porušení <xref:System.Runtime.Serialization.ISerializable.GetObjectData> ve třídě knihy a tím, že poskytuje implementace `GetObjectData` na knihovna tříd.
+Následující příklad opravuje dvě předchozí porušení poskytnutím přepsané implementace <xref:System.Runtime.Serialization.ISerializable.GetObjectData> třídy Book a poskytnutím `GetObjectData` implementace třídy knihovny.
 
- [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_2.cpp)]
- [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_2.cs)]
- [!code-vb[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_2.vb)]
+[!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_2.cpp)]
+[!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_2.cs)]
+[!code-vb[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_2.vb)]
 
 ## <a name="related-rules"></a>Související pravidla
 
-- [CA2236: Volání metody třídy base na typech ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
-- [CA2229: Implementovat Serializační konstruktory](../code-quality/ca2229-implement-serialization-constructors.md)
+- [CA2236: Volání metod třídy Base na typech ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+- [CA2229: Implementovat konstruktory serializace](../code-quality/ca2229-implement-serialization-constructors.md)
 - [CA2238: Implementujte správně metody serializace](../code-quality/ca2238-implement-serialization-methods-correctly.md)
-- [CA2235: Označte všechna neserializovatelná pole](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+- [CA2235: Označte všechna Neserializovatelný pole](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 - [CA2237: Označte typy ISerializable pomocí SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
-- [CA2239: Poskytujte metody deserializace pro nepovinné pole](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
-- [CA2120: Zabezpečte Serializační konstruktory](../code-quality/ca2120-secure-serialization-constructors.md)
+- [CA2239: Poskytněte metody deserializace pro volitelná pole.](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+- [CA2120: Zabezpečené konstruktory serializace](../code-quality/ca2120-secure-serialization-constructors.md)

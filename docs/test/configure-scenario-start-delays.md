@@ -1,5 +1,5 @@
 ---
-title: Konfigurace prodlevy spustit scénář pro zátěžové testování
+title: Konfigurace zpoždění zahájení scénářů pro zátěžové testování
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,80 +8,80 @@ ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e053ee01d60d1ce3dcae10e044bb642e11f90dd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83e3086aa8181156a9d35a906a9d3a7e60575cd2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963790"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918446"
 ---
-# <a name="configure-scenario-start-delays-in-load-tests"></a>Konfigurace zpoždění pro spuštění scénáře v zátěžových testech
+# <a name="configure-scenario-start-delays-in-load-tests"></a>Konfigurace zpoždění spouštění scénářů v zátěžových testech
 
-Zadejte zpoždění před zahájením scénáře v zátěžovém testu pomocí editoru zátěžových testů a **vlastnosti** okna.
+Určete zpoždění před spuštěním scénáře v zátěžovém testu pomocí Editor zátěžového testu a okna **vlastnosti** .
 
-Například můžete chtít použít **zpoždění spuštění** vlastnost potřebujete jeden scénář pro zahájení výroby položek, které jiný scénář spotřebovává. Můžete pozdržet náročnou situaci povolení výrobního scénáře k naplnění nějaká data.
+Například můžete chtít použít vlastnost **zpoždění spuštění** , pokud potřebujete jeden scénář pro zahájení výroby položek, které jiný scénář spotřebovává. Můžete zpozdit nenáročný scénář a umožnit tak scénáři výroby naplnit nějaká data.
 
-Dalším příkladem je, že může mít jeden scénář, který se spustí jenom v určité denní doby. Ano budete chtít zpoždění spuštění scénář nasimulovali.
+Dalším příkladem je, že můžete mít jeden scénář, který se spouští pouze v určitou dobu dne. Chcete tedy odložit začátek scénáře a simulovat ho.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="specify-the-delay-start-time-of-a-scenario"></a>Zadejte zpoždění spuštění scénáře
+## <a name="specify-the-delay-start-time-of-a-scenario"></a>Zadejte čas zahájení zpoždění scénáře.
 
-Můžete zadat zpoždění před zahájením scénáře v zátěžovém testu pomocí editoru zátěžových testů, chcete-li změnit **zpoždění spuštění** vlastnost **vlastnosti** okna.
+Můžete zadat zpoždění před začátkem scénáře v zátěžovém testu pomocí Editor zátěžového testu pro změnu vlastnosti **zpoždění spuštění** v okně **vlastnosti** .
 
 > [!NOTE]
 > Úplný seznam vlastnosti scénáře zátěžového testu a jejich popis najdete v tématu [vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md).
 
- Příklad instance, pokud chcete použít **zpoždění spuštění** vlastnost je, když potřebujete jeden scénář pro zahájení výroby položek, které jiný scénář spotřebovává. Můžete pozdržet náročnou situaci povolení výrobního scénáře k naplnění nějaká data.
+Příkladem instance, kdy může být vhodné použít vlastnost **zpoždění spuštění** , je, když potřebujete jeden scénář pro zahájení výroby položek, které jiný scénář spotřebovává. Můžete zpozdit nenáročný scénář a umožnit tak scénáři výroby naplnit nějaká data.
 
- Dalším příkladem je, že může mít jeden scénář, který se spustí jenom v určité denní dobu. Proto budete chtít zpoždění spuštění scénář nasimulovali.
+Dalším příkladem je, že můžete mít jeden scénář, který se spouští pouze v určitém denním čase. Proto chcete, aby se zazpozdil začátek scénáře, který simuluje tuto situaci.
 
 > [!NOTE]
-> Úplný seznam vlastností parametrů spuštění a jejich popis najdete v tématu [vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md).
+> Úplný seznam vlastností parametrů spuštění a jejich popis naleznete v tématu [Vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md).
 
-### <a name="to-specify-the-delay-start-time-for-a-scenario"></a>K určení zpoždění spuštění pro scénář
+### <a name="to-specify-the-delay-start-time-for-a-scenario"></a>Určení prodlevy počátečního času pro scénář
 
 1. Otevřete zátěžový test.
 
      Zobrazí se Editor zátěžového testu. Zobrazí se strom zátěžového testu.
 
-2. V zátěžového testu stromů **scénáře** složky, vyberte uzel scénáře, pro kterou chcete zadat čas zahájení zpoždění.
+2. Ve složce **scénáře** stromů zátěžového testu vyberte uzel scénáře, pro který chcete zadat čas spuštění zpoždění.
 
 3. Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
 
      Kategorie a vlastnosti scénáře jsou zobrazeny v **vlastnosti** okna.
 
-4. V textovém poli pro **zpoždění spuštění** zadejte hodnotu času, který označuje dobu čekání po zátěžový test spustí před spuštěním scénáře při spuštění zátěžového testu.
+4. Do textového pole vlastnosti **zpoždění spuštění** zadejte hodnotu času, která určuje čas, který se má počkat po spuštění testu zatížení před spuštěním scénáře při spuštění zátěžového testu.
 
     > [!NOTE]
-    > Pokud hodnota **zakázat při zahřívání** pro tento scénář je nastavena na **True**, pak bude **zpoždění spuštění** hodnotu vlastnosti času se použije po zahřívání období. Můžete řídit, jaké scénáře jsou součástí zahřívání pomocí **zakázat při zahřívání** vlastnost scénář.
+    > Pokud je hodnota vlastnosti **Disable během zahřívání** pro daný scénář nastavená na **hodnotu true**, použije se po uplynutí doby zahřívání hodnota čas spuštění vlastnosti doba **zpoždění** . Můžete určit, které scénáře jsou zahrnuty do zahřívání, pomocí vlastnosti **zahřívání scénáře zakázat** .
 
-5. Po změně vlastnosti zvolte **Uložit** na **souboru** nabídky. Potom můžete spustit zátěžový test pomocí nového **zpoždění spuštění** hodnotu.
+5. Po změně vlastnosti zvolte **Uložit** na **souboru** nabídky. Zátěžový test lze následně spustit pomocí nové hodnoty **času spuštění** .
 
-## <a name="enable-and-disable-whether-a-scenario-runs-during-the-warm-up-period"></a>Povolit nebo zakázat, zda se scénář spustí během doby zahřívání
+## <a name="enable-and-disable-whether-a-scenario-runs-during-the-warm-up-period"></a>Umožňuje povolit a zakázat, jestli se scénář spouští během období zahřívání.
 
-**Zakázat při zahřívání** je nastavena pomocí **vlastnosti** okna. Úpravy vlastnosti scénáře zátěžového testu je nastavena pomocí editoru zátěžového testu.
+Vlastnost **Zakázat během zahřívání** je nastavena pomocí okna **vlastnosti** . Úpravy vlastností scénáře zátěžového testu jsou nastaveny pomocí Editor zátěžového testu.
 
- **Zakázat při zahřívání** vlastnost se používá k označení, zda tento scénář by měl spustit nebo nepoběží během doby zahřívání ve stanoveném **zpoždění spuštění** vlastnost. Další informace najdete v tématu z předchozího postupu [určení zpoždění spuštění scénáře](#specify-the-delay-start-time-of-a-scenario).
+Vlastnost **Zakázat během zahřívání** se používá k označení, zda se má scénář spustit nebo nespustit během doby zahřívání, která je zadána ve vlastnosti **zpoždění spuštění** . Další informace najdete v předchozím postupu [zadání času zpoždění spuštění scénáře](#specify-the-delay-start-time-of-a-scenario).
 
 > [!NOTE]
-> Úplný seznam vlastností parametrů spuštění a jejich popis najdete v části [vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md).
+> Úplný seznam vlastností parametrů spuštění a jejich popis naleznete v tématu [Vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md).
 
-### <a name="to-enable-or-disable-the-warm-up-period-for-a-scenario"></a>K povolení nebo zakázání zahřívání pro scénář
+### <a name="to-enable-or-disable-the-warm-up-period-for-a-scenario"></a>Povolení nebo zakázání období zahřívání pro scénář
 
 1. Otevřete zátěžový test.
 
      **Editoru zátěžových testů** se zobrazí. Zobrazí se strom zátěžového testu.
 
-2. V zátěžového testu stromů **scénáře** složky, vyberte uzel scénář, který chcete změnit chování zahřívání.
+2. Ve složce **scénáře** stromů zátěžového testu vyberte uzel scénáře, pro který chcete změnit chování zahřívání pro.
 
 3. Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
 
      Tento scénář kategorie a vlastnosti jsou zobrazeny v **vlastnosti** okna.
 
-     V **zakázat při zahřívání** vlastnosti, vyberte buď **True** nebo **hodnotu False.**
+     Ve vlastnosti **Zakázat během zahřívání** vyberte buď **true** , nebo **false.**
 
-4. Po dokončení změn vlastnosti, zvolte **Uložit** na **souboru** nabídky. Potom můžete spustit zátěžový test pomocí nového **zakázat při zahřívání** hodnotu.
+4. Po dokončení změn vlastnosti, zvolte **Uložit** na **souboru** nabídky. Pak můžete spustit zátěžový test pomocí nového zakazování **během zahřívání** hodnoty.
 
 ## <a name="see-also"></a>Viz také:
 

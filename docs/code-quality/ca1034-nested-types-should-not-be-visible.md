@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb01065fed41a30f26e15d7295fabc03fb3f1f4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a086ad80bd13fb18f866769db34d72cae3e67496
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779075"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922867"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: Vnořené typy by neměly být viditelné
 
@@ -34,28 +34,28 @@ ms.locfileid: "62779075"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Externě viditelný typ obsahuje externě viditelný typ deklarace. Chráněné typy a výčty vnořené jsou z tohoto pravidla vyjmuty.
+Externě viditelný typ obsahuje deklaraci externě viditelného typu. Vnořené výčty a chráněné typy jsou z tohoto pravidla vyloučeny.
 
 ## <a name="rule-description"></a>Popis pravidla
- Vnořený typ je typ deklarovaný v rámci oboru jiného typu. Vnořené typy jsou užitečné pro zapouzdření soukromých podrobností implementace v nadřazeného typu. Jsou-li vnořené typy používány za tímto účelem, neměly by být externě viditelné.
+Vnořený typ je typ deklarovaný v oboru jiného typu. Vnořené typy jsou užitečné pro zapouzdření údajů o privátní implementaci nadřazeného typu. Jsou-li vnořené typy používány za tímto účelem, neměly by být externě viditelné.
 
- Nepoužívejte externě viditelné typy vnořených logického seskupení nebo vyhnete kolize názvů; Místo toho použijte obory názvů.
+Nepoužívejte externě viditelné vnořené typy pro logické seskupení nebo pro zamezení kolizí názvů; místo toho použijte obory názvů.
 
- Vnořené typy zahrnují informace o usnadnění přístupu člena, který není srozumitelný jasně některé programátory.
+Vnořené typy zahrnují pojem přístupnost členů, které někteří programátoré nerozumí jasně.
 
- Chráněné typy lze použít v podtřídy třídy a vnořené typy ve scénářích přizpůsobení zálohy.
+Chráněné typy lze použít v podtřídách a vnořených typech ve scénářích přizpůsobení předem.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Pokud už nebudete vnořený typ externě viditelný, změňte přístupnost typu. V opačném případě odeberte vnořený typ ze svého nadřazeného objektu. Pokud účel vnořování je do kategorií vnořeného typu, použijte místo toho vytvářet hierarchii oboru názvů.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Pokud nechcete, aby byl vnořený typ externě viditelný, změňte přístupnost typu. V opačném případě odeberte vnořený typ z jeho nadřazeného typu. Pokud je účel vnoření zařazen do kategorie vnořeného typu, použijte místo toho obor názvů k vytvoření hierarchie.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ, který porušuje pravidla.
+Následující příklad ukazuje typ, který je v rozporu s pravidlem.
 
- [!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)]
- [!code-csharp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CSharp/ca1034-nested-types-should-not-be-visible_1.cs)]
- [!code-vb[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/VisualBasic/ca1034-nested-types-should-not-be-visible_1.vb)]
+[!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)]
+[!code-csharp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CSharp/ca1034-nested-types-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/VisualBasic/ca1034-nested-types-should-not-be-visible_1.vb)]

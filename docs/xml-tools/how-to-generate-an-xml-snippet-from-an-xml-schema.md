@@ -8,22 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: cb5b10e142c1dd62625a48c39c3860d49e8942cb
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825755"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926816"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Postupy: Generování fragmentu XML ze schématu XML
 
-XML editor má schopnost generovat fragmentů XML ze schématu XML definice jazyk (XSD) schématu. Například při vytváření souboru XML, zatímco umístěný vedle názvu elementu, stisknutí klávesy **kartu** k naplnění element s daty XML generované informace o schématu pro daný element.
+Editor XML má možnost generovat fragmenty XML ze schématu XML schématu definice jazyka (XSD). Například při vytváření souboru XML, který je umístěn vedle názvu elementu, lze stisknutím klávesy **TAB** naplnit element daty XML generovanými z informací o schématu pro daný element.
 
-Tato funkce dostupná pouze na prvky. Také platí následující pravidla:
+Tato funkce je k dispozici pouze u elementů. Platí taky následující pravidla:
 
-- Element musí mít typ přidružené schéma; To znamená, že element musí být platná pro některé přidružené schéma. Typ schématu nemůže být abstraktní a typu musí obsahovat povinné atributy a/nebo požadované podřízené prvky.
+- Element musí mít přidružený typ schématu. To znamená, že element musí být platný vzhledem k některému přidruženému schématu. Typ schématu nemůže být abstraktní a typ musí obsahovat požadované atributy nebo požadované podřízené prvky.
 
-- Aktuální element v editoru musí být prázdný s žádné atributy. Například následující jsou všechny platné
+- Aktuální prvek v editoru musí být prázdný bez atributů. Následující jsou například všechny platné
 
   - `<Account`
 
@@ -31,68 +31,68 @@ Tato funkce dostupná pouze na prvky. Také platí následující pravidla:
 
   - `<Account></Account>`
 
-- Kurzor musí být umístěné bezprostředně napravo od názvu elementu.
+- Kurzor musí být umístěn hned napravo od názvu elementu.
 
-Vygenerovaný fragment kódu obsahuje všechny povinné atributy a prvky. Pokud `minOccurs` je větší než jedna minimální požadovaný počet instancí tohoto prvku je zahrnuta v tomto fragmentu kódu až do maximálního počtu 100 instancí. Všechny pevné hodnoty nalezené v výsledek schématu v pevné hodnoty v tomto fragmentu kódu. `xsd:any` a `xsd:anyAttribute` prvky jsou ignorovány a mít za následek konstrukty žádný další fragment kódu.
+Vygenerovaný fragment obsahuje všechny požadované atributy a prvky. Pokud `minOccurs` je větší než jeden, požadovaný minimální počet instancí tohoto prvku je zahrnut ve fragmentu až do maximálního počtu instancí 100. Všechny pevné hodnoty nalezené ve schématu mají za následek pevné hodnoty fragmentu. `xsd:any`prvky `xsd:anyAttribute` a jsou ignorovány a nemají za následek žádné další konstrukce fragmentů.
 
-Výchozí hodnoty jsou generovány a jsou uvedené jako upravitelné hodnoty. Pokud schéma určí výchozí hodnotu, tato výchozí hodnota se používá. Nicméně pokud schéma výchozí hodnota je prázdný řetězec, editoru generuje výchozí hodnoty následujícím způsobem:
+Výchozí hodnoty jsou vygenerovány a označeny jako upravitelné hodnoty. Pokud schéma určuje výchozí hodnotu, použije se tato výchozí hodnota. Pokud je však výchozí hodnota schématu prázdný řetězec, Editor vygeneruje výchozí hodnoty následujícím způsobem:
 
-- Pokud typ schématu obsahuje všechny omezující vlastnosti výčtu přímo nebo nepřímo prostřednictvím žádné členy typu sjednocení, první Výčtový hodnotu nalezenou v modelu objektu schématu se používá jako výchozí.
+- Pokud typ schématu obsahuje všechny omezující vlastnosti výčtu, a to buď přímo, nebo nepřímo prostřednictvím kteréhokoli člena typu sjednocení, jako výchozí se použije první Výčtová hodnota nalezená v objektovém modelu schématu.
 
-- Pokud je Atomický typ je typ schématu, editor získá Atomický typ a vloží název Atomický typ. Odvozené jednoduchý typ používá základní jednoduchého typu. Pro typ seznamu je Atomický typ `itemType`. Pro sjednocení, Atomický typ je Atomický typ prvního `memberType`.
+- Pokud je typ schématu typ Atomic, Editor získá typ atomie a vloží název atomické typu. Pro odvozený jednoduchý typ používá základní jednoduchý typ. Jako typ seznamu je `itemType`atomická typ. Pro sjednocení je typ atomické atomická typ prvního `memberType`.
 
 ## <a name="example"></a>Příklad
 
- Kroky v této části ukazují, jak používat funkci generované schématu XML fragmentu kódu editoru XML.
+Kroky v této části ukazují, jak používat funkci fragmentu XML vygenerovanou schématem editoru XML.
 
 > [!NOTE]
-> Než zahájíte tyto postupy, uložte soubor schématu do místního počítače.
+> Než začnete s tímto postupem, uložte soubor schématu do místního počítače.
 
-### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Vytvořte nový soubor XML a přidružte jej k schématu XML
+### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Vytvoření nového souboru XML a jeho přidružení ke schématu XML
 
-1. Na **souboru** nabídky, přejděte k **nový**a klikněte na tlačítko **souboru**.
+1. V nabídce **soubor** přejděte na příkaz **Nový**a klikněte na možnost **soubor**.
 
-2. Vyberte **soubor XML** v **šablony** podokně a klepněte na **otevřít**.
+2. V podokně **šablony** vyberte **soubor XML** a klikněte na **otevřít**.
 
-     Nový soubor je otevřen v editoru. Tento soubor obsahuje deklaraci XML výchozí `<?xml version="1.0" encoding="utf-8">`.
+     V editoru se otevře nový soubor. Soubor obsahuje výchozí deklaraci XML, `<?xml version="1.0" encoding="utf-8">`.
 
-3. V okně Vlastnosti dokumentu, klikněte na tlačítko Procházet ( **...** ) na **schémata** pole.
+3. V okně Vlastnosti dokumentu klikněte na tlačítko pro procházení ( **...** ) v poli **schémata** .
 
-     **Schémata XSD** se zobrazí dialogové okno.
+     Zobrazí se dialogové okno **schémata XSD** .
 
 4. Klikněte na **Přidat**.
 
-     **Otevřít schéma XSD** se zobrazí dialogové okno.
+     Zobrazí se dialogové okno **otevřít schéma XSD** .
 
-5. Vyberte soubor schématu a klikněte na tlačítko **otevřít**.
+5. Vyberte soubor schématu a klikněte na **otevřít**.
 
 6. Klikněte na **OK**.
 
-     Schéma XML je teď přidružený k dokumentu XML.
+     Schéma XML je nyní přidruženo k dokumentu XML.
 
-### <a name="to-generate-an-xml-snippet"></a>Ke generování fragmentu XML
+### <a name="to-generate-an-xml-snippet"></a>Generování fragmentu XML
 
-1. Typ `<` podokna editoru.
+1. Zadejte `<` v podokně editoru.
 
-2. Seznam členů obsahuje položky, je to možné:
+2. Seznam členů zobrazuje možné položky:
 
-     **! –** a přidejte komentář.
+     Přidejte komentář **!--** .
 
-     **! Typ dokumentu** přidat typ dokumentu.
+     **! DOCTYPE** pro přidání typu dokumentu
 
-     **?** Chcete-li přidat instrukce pro zpracování.
+     **?** Přidání instrukce pro zpracování.
 
-     **Kontakt** přidat kořenový element.
+     **Kontaktujte** pro přidání kořenového prvku.
 
-3. Vyberte **kontakt** ze seznamu členů a stiskněte klávesu **Enter**.
+3. Vyberte ze seznamu členů položku **kontakt** a stiskněte klávesu **ENTER**.
 
-     Editor přidá počáteční značce `<Contact` a umístí kurzor po názvu elementu.
+     Editor přidá počáteční značku `<Contact` a umístí kurzor za název elementu.
 
-4. Stisknutím klávesy **kartu** generují data XML pro `Contact` element podle jeho informace o schématu.
+4. Stisknutím klávesy **TAB** vygenerujte XML data pro `Contact` element na základě jeho informací o schématu.
 
 ## <a name="input"></a>Vstup
 
- Následující soubor schématu je používán návodu.
+Následující soubor schématu se používá v tomto návodu.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -141,7 +141,7 @@ Výchozí hodnoty jsou generovány a jsou uvedené jako upravitelné hodnoty. Po
 
 ### <a name="output"></a>Výstup
 
- Tady je data XML, který je generován podle informací o schématu přidružené k `Contact` elementu. Položky označené jako `bold` určit upravitelná pole v tomto fragmentu kódu XML.
+Následuje data XML, která jsou generována na základě informací o schématu přidružených `Contact` k elementu. Položky označené jako `bold` upravitelná pole ve fragmentu kódu XML.
 
 ```xml
 <Contact>
@@ -156,5 +156,5 @@ Výchozí hodnoty jsou generovány a jsou uvedené jako upravitelné hodnoty. Po
 
 ## <a name="see-also"></a>Viz také:
 
-- [Fragmentů XML](../xml-tools/xml-snippets.md)
-- [Postupy: Použití fragmentů XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Fragmenty kódu XML](../xml-tools/xml-snippets.md)
+- [Postupy: Použití fragmentů kódu XML](../xml-tools/how-to-use-xml-snippets.md)

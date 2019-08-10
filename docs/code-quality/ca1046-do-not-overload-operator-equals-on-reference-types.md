@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f9304fcd86a9b36a729b1436fe16471b449ac0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d765bfda87fe184256304b86f145f4f02adb7db6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778720"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922631"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Nepřetěžujte operátory rovnosti u odkazových typů
 
@@ -30,22 +30,22 @@ ms.locfileid: "62778720"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Odkaz na veřejný nebo vnořený veřejný typ přetížení operátoru rovnosti.
+## <a name="cause"></a>příčina
+Veřejný nebo vnořený typ veřejného odkazu přetěžuje operátor rovnosti.
 
 ## <a name="rule-description"></a>Popis pravidla
- U referenčních typů je výchozí implementace operátoru rovnosti téměř vždy správná. Ve výchozím nastavení jsou dva odkazy rovny, pouze pokud ukazují na stejný objekt.
+U referenčních typů je výchozí implementace operátoru rovnosti téměř vždy správná. Ve výchozím nastavení jsou dva odkazy rovny, pouze pokud ukazují na stejný objekt.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, odeberte implementace operátoru rovnosti.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, odeberte implementaci operátoru rovnosti.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla, pokud typ odkazu se chová jako předdefinovaného hodnotového typu. Pokud je smysluplná provedete sčítání a odčítání na instance daného typu, je nejspíš správná implementace operátoru rovnosti a potlačit porušení zásady.
+Je bezpečné potlačit upozornění od tohoto pravidla, pokud se typ odkazu chová jako vestavěný typ hodnoty. Pokud je smysluplné provést sčítání nebo odčítání na instancích typu, je pravděpodobně správné implementovat operátor rovnosti a potlačit porušení.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje výchozí chování při porovnávání dva odkazy.
+Následující příklad ukazuje výchozí chování při porovnávání dvou odkazů.
 
- [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
+[!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
 
 ## <a name="example"></a>Příklad
 
@@ -64,7 +64,7 @@ c and a are == ? Yes
 
 ## <a name="related-rules"></a>Související pravidla
 
-[CA1013: Přetižte operátor rovnosti při přetížení operátorů sčítání a odečítání](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+[CA1013: Operátor přetížení se rovná při přetížení metody sčítání a odečítání.](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Viz také:
 

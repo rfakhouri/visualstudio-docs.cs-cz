@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 79448909dcffd9c55ecf78154295ac77a7538bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec40eb3317f541bec92f06d8921fc2f545606d1a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541581"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920086"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementujte správně metody serializace
 
@@ -31,13 +31,13 @@ ms.locfileid: "62541581"
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Rozdělení - metoda je viditelná mimo sestavení.<br /><br /> Pevné – Pokud metoda není viditelná mimo sestavení.|
+|Narušující změna|Přerušení – Pokud je metoda viditelná vně sestavení.<br /><br /> Bez přerušení – Pokud není metoda viditelná vně sestavení.|
 
-## <a name="cause"></a>Příčina
- Metoda, která zpracovává událost serializace, nemá správný podpis, návratový typ nebo viditelnost.
+## <a name="cause"></a>příčina
+Metoda, která zpracovává událost serializace, nemá správný podpis, návratový typ nebo viditelnost.
 
 ## <a name="rule-description"></a>Popis pravidla
- Metoda je určený obslužnou rutinu události serializace s použitím jedné z následujících atributů událost serializace:
+Metoda je určena pro obslužnou rutinu události serializace použitím jednoho z následujících atributů události serializace:
 
 - <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
 
@@ -47,31 +47,31 @@ ms.locfileid: "62541581"
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  Obslužné rutiny událostí serializace vyžadovat jeden parametr typu <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, vrátí `void`a mít `private` viditelnost.
+  Obslužné rutiny událostí serializace přebírají jeden <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>parametr typu `void`, vrátí a `private` mají viditelnost.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, opravte podpis, návratový typ nebo viditelnost obslužné rutiny události serializace.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, opravte podpis, návratový typ nebo viditelnost obslužné rutiny události serializace.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje správně deklarované serializace obslužných rutin událostí.
+Následující příklad ukazuje správně deklarované obslužné rutiny událostí serializace.
 
- [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/VisualBasic/ca2238-implement-serialization-methods-correctly_1.vb)]
- [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/CSharp/ca2238-implement-serialization-methods-correctly_1.cs)]
+[!code-vb[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/VisualBasic/ca2238-implement-serialization-methods-correctly_1.vb)]
+[!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/CSharp/ca2238-implement-serialization-methods-correctly_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA2236: Volání metody třídy base na typech ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+[CA2236: Volání metod třídy Base na typech ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
- [CA2240: Implementujte správně ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
+[CA2240: Správně implementovat ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
 
- [CA2229: Implementovat Serializační konstruktory](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229: Implementovat konstruktory serializace](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2235: Označte všechna neserializovatelná pole](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+[CA2235: Označte všechna Neserializovatelný pole](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237: Označte typy ISerializable pomocí SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+[CA2237: Označte typy ISerializable pomocí SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239: Poskytujte metody deserializace pro nepovinné pole](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+[CA2239: Poskytněte metody deserializace pro volitelná pole.](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120: Zabezpečte Serializační konstruktory](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: Zabezpečené konstruktory serializace](../code-quality/ca2120-secure-serialization-constructors.md)

@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 453e27df58e8a12baa3821def6c66fc1391401d3
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: eed19993f5339a2f33521ad1233522a29eb0442b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416956"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918707"
 ---
 # <a name="understand-build-configurations"></a>Vysvětlení konfigurací sestavení
 
@@ -59,18 +59,18 @@ Každá položka v poli **kontexty projektu** v konfiguraci řešení představu
 Aktivní konfigurace řešení také poskytuje kontext rozhraní IDE. Například pokud pracujete na projektu a konfigurace určuje, že bude sestavena pro mobilní zařízení, zobrazí **Sada nástrojů** pouze položky, které lze použít v projektu mobilního zařízení.
 
 ## <a name="project-configurations"></a>Konfigurace projektu
- Konfigurace a platforma, které cílí na projekt, se používají společně k určení vlastností, které mají být použity při sestavení. Projekt může mít jinou sadu definic vlastností pro každou kombinaci konfigurace a platformy. Chcete-li upravit vlastnosti projektu, můžete použít jeho stránky vlastností. (V **Průzkumník řešení**otevřete místní nabídku pro projekt a pak zvolte možnost **vlastnosti**.)
+Konfigurace a platforma, které cílí na projekt, se používají společně k určení vlastností, které mají být použity při sestavení. Projekt může mít jinou sadu definic vlastností pro každou kombinaci konfigurace a platformy. Chcete-li upravit vlastnosti projektu, můžete použít jeho stránky vlastností. (V **Průzkumník řešení**otevřete místní nabídku pro projekt a pak zvolte možnost **vlastnosti**.)
 
- Pro každou konfiguraci projektu můžete podle potřeby definovat vlastnosti závislé na konfiguraci. Například pro konkrétní sestavení můžete nastavit, které položky projektu budou zahrnuty a které výstupní soubory budou vytvořeny, kde budou vloženy a jak budou optimalizovány.
+Pro každou konfiguraci projektu můžete podle potřeby definovat vlastnosti závislé na konfiguraci. Například pro konkrétní sestavení můžete nastavit, které položky projektu budou zahrnuty a které výstupní soubory budou vytvořeny, kde budou vloženy a jak budou optimalizovány.
 
- Konfigurace projektu se můžou výrazně lišit. Například vlastnosti jedné konfigurace můžou určit, že se má jeho výstupní soubor optimalizovat tak, aby vybíral minimální místo, zatímco jiná konfigurace může určit, že jeho spustitelný soubor běží s maximální rychlostí.
+Konfigurace projektu se můžou výrazně lišit. Například vlastnosti jedné konfigurace můžou určit, že se má jeho výstupní soubor optimalizovat tak, aby vybíral minimální místo, zatímco jiná konfigurace může určit, že jeho spustitelný soubor běží s maximální rychlostí.
 
- Konfigurace projektu jsou uloženy podle řešení, nikoli podle uživatele, aby mohly být sdíleny týmem.
+Konfigurace projektu jsou uloženy podle řešení, nikoli podle uživatele, aby mohly být sdíleny týmem.
 
- Přestože závislosti projektu jsou nezávislé na konfiguraci, budou sestaveny pouze projekty, které jsou zadány v aktivní konfiguraci řešení.
+Přestože závislosti projektu jsou nezávislé na konfiguraci, budou sestaveny pouze projekty, které jsou zadány v aktivní konfiguraci řešení.
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Jak Visual Studio přiřadí konfigurace projektu
- Pokud definujete novou konfiguraci řešení a nekopírujete nastavení z existujícího projektu, Visual Studio použije následující kritéria k přiřazení výchozích konfigurací projektu. Kritéria jsou vyhodnocována v uvedeném pořadí.
+Pokud definujete novou konfiguraci řešení a nekopírujete nastavení z existujícího projektu, Visual Studio použije následující kritéria k přiřazení výchozích konfigurací projektu. Kritéria jsou vyhodnocována v uvedeném pořadí.
 
 1. Pokud má projekt název konfigurace ( *\<název konfigurace > \<název platformy >* ), který přesně odpovídá názvu nové konfigurace řešení, tato konfigurace je přiřazena. V názvech konfigurace se nerozlišují velká a malá písmena.
 
@@ -79,9 +79,9 @@ Aktivní konfigurace řešení také poskytuje kontext rozhraní IDE. Napříkla
 3. Pokud se stále neshoduje, první konfigurace, která je uvedená v projektu, je přiřazena.
 
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Jak Visual Studio přiřadí konfigurace řešení
- Když vytvoříte konfiguraci projektu (v **Configuration Manager**kliknutím na možnost **Nový** v rozevírací nabídce ve sloupci **Konfigurace** pro daný projekt) a zaškrtnutím políčka **vytvořit nové konfigurace řešení** , vizuál Studio vyhledá konfiguraci řešení se stejným názvem a sestaví projekt na všech podporovaných platformách. V některých případech aplikace Visual Studio přejmenuje existující konfigurace řešení nebo definuje nové.
+Když vytvoříte konfiguraci projektu (v **Configuration Manager**kliknutím na možnost **Nový** v rozevírací nabídce ve sloupci **Konfigurace** pro daný projekt) a zaškrtnutím políčka **vytvořit nové konfigurace řešení** , vizuál Studio vyhledá konfiguraci řešení se stejným názvem a sestaví projekt na všech podporovaných platformách. V některých případech aplikace Visual Studio přejmenuje existující konfigurace řešení nebo definuje nové.
 
- Visual Studio používá následující kritéria k přiřazení konfigurací řešení.
+Visual Studio používá následující kritéria k přiřazení konfigurací řešení.
 
 - Pokud konfigurace projektu nespecifikuje platformu nebo určuje jenom jednu platformu, pak se v konfiguraci řešení, jejíž název shoduje s názvem nové konfigurace projektu, najde nebo přidá. Výchozí název této konfigurace řešení nezahrnuje název platformy; má podobu *> název konfigurace projektu.\<*
 

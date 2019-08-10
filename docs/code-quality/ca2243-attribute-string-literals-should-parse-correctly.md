@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12007beaffab1e046ae7f359bf2988c02278fd91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9c0f078c21de023b1f5cfacde0cf122c179adb2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541451"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919903"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Řetězcové literály atributů by se měly správně parsovat
 
@@ -28,36 +28,36 @@ ms.locfileid: "62541451"
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
- Parametr literál řetězce atributu nesprávně analyzuje adresu URL, identifikátor GUID nebo verzi.
+## <a name="cause"></a>příčina
+Parametr řetězcového literálu atributu se neanalyzuje správně pro adresu URL, identifikátor GUID nebo verzi.
 
 ## <a name="rule-description"></a>Popis pravidla
- Protože atributy jsou odvozeny z <xref:System.Attribute?displayProperty=fullName>a atributy se používají v době kompilace, jejich konstruktory mohou být předány pouze konstantní hodnoty. Parametry atributu, které musí představovat adresy URL, identifikátory GUID a verze nemůže být typu <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>, a <xref:System.Version?displayProperty=fullName>, protože tyto typy nemůže být reprezentovaná jako konstanty. Místo toho se musí být reprezentována řetězce.
+Vzhledem k tomu, že <xref:System.Attribute?displayProperty=fullName>atributy jsou odvozeny z a jsou použity atributy v době kompilace, lze do jejich konstruktorů předat pouze konstantní hodnoty. Parametry atributů, které musí představovat adresy URL, identifikátory GUID a verze, nelze zadat <xref:System.Uri?displayProperty=fullName>jako <xref:System.Guid?displayProperty=fullName>konstanty <xref:System.Version?displayProperty=fullName>, a, protože tyto typy nemohou být reprezentovány jako konstanty. Místo toho musí být reprezentovány pomocí řetězců.
 
- Protože parametr je zadán jako řetězec, je možné, že parametr nesprávně naformátovanou může předávat v době kompilace.
+Vzhledem k tomu, že parametr je zadán jako řetězec, je možné předat nesprávně naformátovaný parametr v době kompilace.
 
- Toto pravidlo používá pojmenování heuristiku k nalezení parametry, které představují identifikátor URI (URI), verze nebo globálně jedinečný identifikátor (GUID) a ověří, zda předaná hodnota je správný.
+Toto pravidlo používá heuristické pojmenování k nalezení parametrů, které reprezentují identifikátor URI (Uniform Resource Identifier), globálně jedinečného identifikátoru (GUID) nebo verzi a ověřuje, že je předaná hodnota správná.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Změňte parametr řetězec správně vytvořená adresa URL, identifikátor GUID nebo verzi.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Změňte řetězec parametru na správně vytvořenou adresu URL, identifikátor GUID nebo verzi.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla, je-li parametr nepředstavuje adresu URL, identifikátor GUID nebo verzi.
+Pokud parametr nepředstavuje adresu URL, identifikátor GUID ani verzi, je bezpečné potlačit upozornění od tohoto pravidla.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje kód pro AssemblyFileVersionAttribute, který porušuje tato pravidla.
+Následující příklad ukazuje kód pro AssemblyFileVersionAttribute, který porušuje toto pravidlo.
 
- [!code-csharp[FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly#1](../code-quality/codesnippet/CSharp/ca2243-attribute-string-literals-should-parse-correctly_1.cs)]
+[!code-csharp[FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly#1](../code-quality/codesnippet/CSharp/ca2243-attribute-string-literals-should-parse-correctly_1.cs)]
 
- Toto pravidlo aktivuje následující parametry:
+Pravidlo se aktivuje následujícími parametry:
 
-- Parametry, které obsahují 'version' a nejde ho parsovat na System.Version.
+- Parametry obsahující ' Version ' a nelze je analyzovat na System. Version.
 
-- Parametry, které obsahují 'guid' a nejde ho parsovat na System.Guid.
+- Parametry obsahující identifikátor GUID a nelze je analyzovat na System. GUID.
 
-- Parametry, které obsahuje "uri", "urn" nebo "url" a nelze jej analyzovat na System.Uri.
+- Parametry obsahující ' URI ', ' urn ' nebo ' URL ' a nelze je analyzovat na System. URI.
 
 ## <a name="see-also"></a>Viz také:
 

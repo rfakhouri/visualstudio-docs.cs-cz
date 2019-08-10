@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad984f82d6d3bdcabf3a5a6952751cfa944a0eb
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 15c5cfbd419cc34f4d26cdb90da03f38e28a26c4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416613"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925891"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9: Kontrola, okomentování a otestování kódu
 Dál přidáte komentář k vašemu kódu. Komentář je Poznámka, která nemění způsob, jakým se program chová. Usnadňuje někomu, kdo čte váš kód, abychom pochopili, co dělá. Přidání komentářů do kódu je dobrým příznakem, který se má dostat do. V jazyce C#Visual je dvě lomítka (//) označovat řádek jako komentář. V Visual Basic se k označení řádku jako komentáře používá jednoduchá uvozovka ('). Po přidání komentáře otestujete program. Dobrým zvykem je spouštět a testovat kód často při práci na projektech, takže můžete zachytit a opravit případné problémy dříve, než bude kód složitější. Toto se nazývá *iterativní testování*.
 
- Právě jste vytvořili něco, co funguje, a i když ještě není hotové, může už načíst obrázek. Než přidáte komentář do kódu a otestujete jej, vezměte v úvahu čas ke kontrole konceptů kódu, protože tyto koncepty budete používat často:
+Právě jste vytvořili něco, co funguje, a i když ještě není hotové, může už načíst obrázek. Než přidáte komentář do kódu a otestujete jej, vezměte v úvahu čas ke kontrole konceptů kódu, protože tyto koncepty budete používat často:
 
 - Po dvojitém kliknutí na tlačítko **Zobrazit obrázek** v **Návrhář formulářů**rozhraní IDE automaticky přidalo do kódu programu *metodu* .
 
@@ -55,7 +55,7 @@ Dál přidáte komentář k vašemu kódu. Komentář je Poznámka, která nemě
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
 
     > [!NOTE]
-    > Obslužná  rutina <xref:System.Windows.Forms.Control.Click> události tlačítka showButton je teď dokončená a funguje. Začali jste psát kód, počínaje `if` příkazem. `if` Příkaz je způsob, jakým program poznáte, "Podívejte se na tuto jednu věc a pokud ano, udělejte tyto akce." V takovém případě řekněte programu, aby otevřel dialogové okno **otevřít soubor** , a pokud uživatel vybere soubor a klikne na tlačítko **OK** , načte tento soubor do **ovládacího prvku PictureBox**.
+    > Obslužná rutina <xref:System.Windows.Forms.Control.Click> události tlačítka showButton je teď dokončená a funguje. Začali jste psát kód, počínaje `if` příkazem. `if` Příkaz je způsob, jakým program poznáte, "Podívejte se na tuto jednu věc a pokud ano, udělejte tyto akce." V takovém případě řekněte programu, aby otevřel dialogové okno **otevřít soubor** , a pokud uživatel vybere soubor a klikne na tlačítko **OK** , načte tento soubor do **ovládacího prvku PictureBox**.
 
     > [!TIP]
     > Rozhraní IDE je sestaveno tak, aby bylo snadné psát kód a fragmenty *kódu* jsou jedním ze způsobů, jak to provést. Fragment kódu je zástupce, který se rozšíří na malý blok kódu.

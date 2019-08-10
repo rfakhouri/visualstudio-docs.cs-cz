@@ -7,24 +7,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046389"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919475"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu sady Visual Studio
 
-Tento článek popisuje tipy pro sadu Visual Studio funkce, které vám pomůžou psaní, navigace a ladit kód rychle a efektivně.
+V tomto článku jsou popsány tipy pro funkce sady Visual Studio, které vám pomůžou rychleji a efektivně psát, Procházet a ladit kód.
 
-Informace o užitečné klávesových zkratkách naleznete v tématu [produktivitu zkratky](../ide/productivity-shortcuts.md). Úplný seznam zástupců příkazů najdete v tématu [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Informace o užitečných klávesových zkratkách [](../ide/productivity-shortcuts.md)najdete v tématu věnovaném zástupcům produktivity. Úplný seznam klávesových zkratek najdete v tématu [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="write-code"></a>Psaní kódu
 
 Napište kód rychleji s využitím následující funkce.
 
-- **Pomocí příkazů pohodlí**. Visual Studio obsahuje různé příkazy můžete provádět běžné úlohy úprav rychleji. Například můžete příkazu, který bude snadno duplicitní jediného řádku kódu bez nutnosti ho zkopírovat, změnit umístění kurzoru a vložte ji. Zvolte **upravit** > **duplicitní** nebo stiskněte klávesu **Ctrl**+**E**,**V**. Můžete také rychle rozbalit nebo sbalit výběru textu výběrem **upravit** > **Upřesnit** > **Rozbalit výběr** nebo **Upravit** > **Upřesnit** > **výběr kontraktu**, nebo stisknutím klávesy **Shift** + **Alt** + **=** nebo **Shift**+**Alt** +  **-** .
+- **Pomocí příkazů pohodlí**. Visual Studio obsahuje různé příkazy můžete provádět běžné úlohy úprav rychleji. Můžete například zvolit příkaz pro snadné duplikování řádku kódu bez nutnosti jeho zkopírování, přemístění kurzoru a vložení. Zvolte **upravit** > **duplicitní** nebo stiskněte klávesu **Ctrl**+**E**,**V**. Výběr textu můžete také rychle rozšířit nebo zúžit výběrem možnosti **Upravit** > **Upřesnit** > **rozšířit výběr** nebo **Upravit** > **pokročilou** > **smlouvu. Výběr**nebo stisknutím klávesy **SHIFT**+**ALT** + neboShift+**ALT**.+ **=** **-**
 
 - **Použijte technologii IntelliSense**. Při zadávání kódu v editoru, zobrazí se informace technologie IntelliSense, jako je například seznam členů, informace o parametrech, rychlé informace, pomoc při podpisu a dokončit slovo. Tyto funkce podporují fuzzy vyhledávání textu. například seznam výsledků pro seznam členů obsahuje nejen pouze položky, které začínají znaky, zda jste zadali, ale také záznamy, které obsahují kombinaci znaků kdekoli v jejich názvy. Další informace najdete v tématu [použití IntelliSense](../ide/using-intellisense.md).
 
@@ -46,7 +46,7 @@ Napište kód rychleji s využitím následující funkce.
 
 ## <a name="navigate-within-your-code"></a>Navigace v kódu
 
- Různé techniky slouží k vyhledání a přesunutí na konkrétní místo v kódu rychleji.
+Různé techniky slouží k vyhledání a přesunutí na konkrétní místo v kódu rychleji.
 
 - **Záložka pro řádky kódu**. Pomocí záložek lze rychle přejít na konkrétní řádky kódu v souboru.
 
@@ -66,23 +66,23 @@ Můžete hledat v prostředí IDE pro příkazy, soubory a možnosti, kromě fil
 
 - **Zobrazit pouze chyby, které chcete na adresu**. Pokud se rozhodnete **filtr** tlačítko **seznam chyb** nástrojů, můžete snížit počet chyb, které se zobrazují v **seznam chyb** okno. Můžete zobrazit pouze chyby v souborech, které jsou otevřeny v editoru, pouze chyby v aktuálním souboru, nebo pouze chyby v aktuálním projektu. Můžete také hledat v rámci **seznam chyb** okno najít konkrétní chyby.
 
-- **Vyhledejte dialogová okna, příkazy nabídky, možnosti a další materiály**. Do vyhledávacího pole zadejte klíčová slova nebo fráze pro položky, které se snažíte najít. Například se zobrazí následující možnosti, pokud zadáte **nový projekt**:
+- **Najděte dialogová okna, příkazy nabídky, možnosti a další**. Do vyhledávacího pole zadejte klíčová slova nebo fráze pro položky, které se pokoušíte najít. Například následující možnosti se zobrazí, pokud zadáte **Nový projekt**:
 
    ::: moniker range="vs-2017"
 
    ![Rychlé spuštění výsledky pro "nový projekt.](../ide/media/productivity_quicklaunch.png)
 
-   **Snadné spuštění** zobrazuje odkazy na vytvoření nového projektu, chcete-li přidat novou položku do projektu a k **projekty a řešení** stránku **možnosti** dialogové okno, mimo jiné. Výsledky hledání mohou také obsahovat soubory projektů a okna nástrojů.
+   **Rychlé spuštění** zobrazuje odkazy na vytvoření nového projektu, pro přidání nové položky do projektu a na stránku **projekty a řešení** v dialogovém okně **Možnosti** mimo jiné. Výsledky hledání mohou také zahrnovat soubory projektu a okna nástrojů.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   ![Výsledky hledání pro: nový projekt.](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+   ![Výsledky hledání pro nový projekt](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
 
    ::: moniker-end
 
-   Stisknutím klávesy **Ctrl**+**Q** můžete přejít rovnou do vyhledávacího pole.
+   Stiskněte klávesu **CTRL**+**Q** pro přechod přímo do vyhledávacího pole.
 
 ## <a name="debug-code"></a>Ladění kódu
 
@@ -114,13 +114,13 @@ Můžete rychle získat Developer Command Prompt nebo jiného nástroje Visual S
 
 ::: moniker range="vs-2017"
 
-1. V Průzkumníku Windows přejděte do *%ProgramData%\Microsoft\Windows\Start nástroje Studio 2017\Visual Menu\Programs\Visual Studio*.
+1. V Průzkumníku Windows přejděte do *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual studia 2017 \ Visual Studio Tools*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. V Průzkumníku Windows přejděte do *%ProgramData%\Microsoft\Windows\Start nástroje Studio 2019\Visual Menu\Programs\Visual Studio*.
+1. V Průzkumníku Windows přejděte do *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual studia 2019 \ Visual Studio Tools*.
 
 ::: moniker-end
 
@@ -128,7 +128,7 @@ Můžete rychle získat Developer Command Prompt nebo jiného nástroje Visual S
 
 ## <a name="manage-files-toolbars-and-windows"></a>Správa souborů, panelů nástrojů a windows
 
-V jednu chvíli můžete být práce ve více souborech s kódem a budete přecházet mezi několika okny nástrojů při vývoji aplikace. Abyste mohli uspořádané pomocí následujících tipů:
+V jednu chvíli můžete být práce ve více souborech s kódem a budete přecházet mezi několika okny nástrojů při vývoji aplikace. Pomocí následujících tipů můžete dál organizovat:
 
 - **Soubory, které často používají ve viditelném stavu v editoru**. Dobře, takže zůstávají viditelné bez ohledu na to, kolik souborů je otevřen v editoru můžete připnout soubory k levé straně karty.
 
@@ -138,7 +138,7 @@ V jednu chvíli můžete být práce ve více souborech s kódem a budete přech
 
    Můžete také spravovat soubory snadněji tak, že vytvoříte jiná instance **Průzkumníka řešení** a jeho přesunutím na jiný monitor. K vytvoření další instance okna **Průzkumníka řešení**, otevřete místní nabídku v **Průzkumníka řešení**a klikněte na tlačítko **nové zobrazení Průzkumníka řešení**.
 
-- **Přizpůsobte písmo zobrazené v sadě Visual Studio**. Můžete změnit vzhled písma, velikost a barvu, která se používá pro text v integrovaném vývojovém prostředí. Například lze upravit barvu konkrétních prvků kódu v editoru a řez písma v oknech nástrojů nebo v celém rozhraní IDE. Další informace najdete v tématu [jak: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) a [jak: Změna písma a barev v editoru](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Přizpůsobte písmo zobrazené v sadě Visual Studio**. Můžete změnit vzhled písma, velikost a barvu, která se používá pro text v integrovaném vývojovém prostředí. Například lze upravit barvu konkrétních prvků kódu v editoru a řez písma v oknech nástrojů nebo v celém rozhraní IDE. Další informace najdete v tématu [jak: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) a [postup: Změna písma a barev v editoru](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 
 ## <a name="see-also"></a>Viz také:
 

@@ -17,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a13aeeffbc77e4f40ff886c0d890f181697fcc11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 942a9911d0dadbf5f130344735ca9aa504cb71fd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797176"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921586"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Nepřetypujte zbytečně
 
@@ -30,36 +30,36 @@ ms.locfileid: "62797176"
 |-|-|
 |TypeName|DoNotCastUnnecessarily|
 |CheckId|CA1800|
-|Kategorie|Microsoft.Performance|
+|Kategorie|Microsoft. Performance|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
-Metoda provádí duplicitní přetypování na jednom z jeho argumenty nebo místní proměnné.
+## <a name="cause"></a>příčina
+Metoda provádí duplicitní přetypování na jednom z jeho argumentů nebo místních proměnných.
 
-Pro dokončení analýzy tímto pravidlem testované sestavení musí být sestaveny s použitím informací o ladění a přidružené programového souboru databáze (PDB) musí být k dispozici.
+Pro úplnou analýzu podle tohoto pravidla musí být testované sestavení sestaveno pomocí ladicích informací a přidružený soubor databáze programu (PDB) musí být k dispozici.
 
 ## <a name="rule-description"></a>Popis pravidla
-Duplicitní přetypování snižuje výkon, zvláště když jsou přetypování vykonána v příkazech kompaktní iterace. Pro explicitní přetypování. duplicitní operace uložení výsledku přetypování do místní proměnné a používat místní proměnnou místo operací duplicitní přetypování.
+Duplicitní přetypování snižuje výkon, zvláště když jsou přetypování vykonána v příkazech kompaktní iterace. U explicitních operací přetypování uložte výsledek přetypování do místní proměnné a místo duplicitních operací přetypování použijte místní proměnnou.
 
-Pokud jazyka C# `is` operátor se používá k ověření, zda přetypování proběhne úspěšně, před provedením skutečné přetypování, vezměte v úvahu bude testování výsledku `as` operátor místo toho. Funkce bez implicitní přetypování operace prováděné `is` operátor. Nebo v jazyce C# 7.0 nebo novější, použijte `is` operátor s [porovnávání vzorů](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) kontrolu převodu typu a přetypovat výraz, který má proměnnou daného typu v jednom kroku.
+Pokud operátor slouží k otestování, zda bude přetypování úspěšné před samotným přetypováním, zvažte místo toho testování výsledku `as` operátoru. `is` C# To poskytuje stejnou funkčnost bez operace implicitního přetypování, kterou provádí `is` operátor. Nebo v C# 7,0 a novějším, použijte `is` operátor s porovnáváním [vzorů](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) pro kontrolu převodu typu a přetypujte výraz na proměnnou daného typu v jednom kroku.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, upravte implementace metody, chcete-li minimalizovat počet operací přetypování.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, upravte implementaci metody tak, aby minimalizovala počet operací přetypování.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné, můžete potlačit upozornění tohoto pravidla nebo ignorovat pravidlo úplně, pokud výkon není žádný problém.
+Z tohoto pravidla je bezpečné potlačit upozornění nebo pravidlo ignorovat, pokud výkon nezáleží na výkonu.
 
 ## <a name="examples"></a>Příklady
- Následující příklad ukazuje metodu, která porušuje pravidlo pomocí jazyka C# `is` operátor. Druhá metoda splňuje pravidlo tak, že nahradíte `is` operátor s testují splnění výsledek `as` operátor, který snižuje počet operací přetypování na iteraci ze dvou do jednoho. Třetí metoda také splňuje pravidlo s použitím `is` s [porovnávání vzorů](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) vytvoření proměnné požadovaného typu, pokud by uspěl převod typů.
+Následující příklad ukazuje metodu, která porušuje pravidlo pomocí C# `is` operátoru. Druhá metoda splňuje pravidlo tím, že nahrazuje `is` operátor s testem proti výsledku `as` operátoru, což snižuje počet operací přetypování na iteraci od dvou k jednomu. Třetí metoda také splňuje pravidlo pomocí `is` [porovnávání vzorů](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) pro vytvoření proměnné požadovaného typu, pokud by převod typu proběhl úspěšně.
 
- [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
+[!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
 
- Následující příklad ukazuje metodu, `start_Click`, který má více duplicitních explicitní přetypování, který porušuje pravidla a metodu, `reset_Click`, který splňuje pravidlo uložením přetypování do místní proměnné.
+Následující příklad ukazuje metodu, `start_Click`, která má více duplicitní explicitní přetypování, které porušují pravidlo a metodu, `reset_Click`která splňuje pravidlo uložením přetypování do místní proměnné.
 
- [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
- [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]
+[!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
+[!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]
 
 ## <a name="see-also"></a>Viz také:
 
-- [jako (referenční dokumentace jazyka C#)](/dotnet/csharp/language-reference/keywords/as)
-- [je (referenční dokumentace jazyka C#)](/dotnet/csharp/language-reference/keywords/is)
+- [as (C# referenční)](/dotnet/csharp/language-reference/keywords/as)
+- [je (C# referenční)](/dotnet/csharp/language-reference/keywords/is)

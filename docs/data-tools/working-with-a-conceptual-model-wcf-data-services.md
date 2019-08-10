@@ -1,5 +1,5 @@
 ---
-title: Práce s Konceptuálními modely (WCF Data Services)
+title: Práce s koncepčním modelem (WCF Data Services)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,38 +12,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e92885e652c9456503bfa75fbce5640c377b684
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 677e423e456c448204d39a286509fa93aa5c57b8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745340"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925332"
 ---
-# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Práce s Konceptuálními modely (WCF Data Services)
+# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Práce s koncepčním modelem (WCF Data Services)
 
-Při použití koncepčního modelu pro popis dat v databázi se můžete dotazovat data prostřednictvím objekty namísto toho, aby pro převod vpřed a zpět mezi schéma databáze a objektový model.
+Když použijete koncepční model k popisu dat v databázi, můžete zadávat dotazy na data prostřednictvím objektů, aniž byste museli překládat mezi schématem databáze a objektovým modelem.
 
- Použití konceptuálních modelů pomocí aplikace služby WCF Data Services. Následující témata ukazují, jak zadávat dotazy na data prostřednictvím konceptuálního modelu.
+Můžete použít koncepční modely s aplikacemi WCF Data Services. Následující témata ukazují, jak zadávat dotazy na data pomocí koncepčního modelu.
 
 | Téma | Popis |
 | - | - |
-| [Postupy: Provádění dotazů v datové službě](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Ukazuje, jak zadávat dotazy na datovou službu z aplikace .NET. |
-| [Postupy: Výsledky dotazu projektu](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Ukazuje, jak snížit množství dat, které jsou vráceny prostřednictvím dotazu v datové službě. |
+| [Postupy: Spouštění dotazů datové služby](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Ukazuje, jak zadávat dotazy na datovou službu z aplikace .NET. |
+| [Postupy: Výsledky dotazu projektu](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Ukazuje, jak omezit množství dat vrácených prostřednictvím dotazu datové služby. |
 
- Při použití konceptuálního modelu můžete definovat, jaký druh dat je platný v jazyce, který odpovídá vaší domény. Můžete definovat platná data v modelu, nebo můžete přidat ověření pro operace, které můžete provádět na entity nebo dat služby.
+Když použijete koncepční model, můžete definovat, jaký druh dat je platný v jazyce, který odpovídá vaší doméně. V modelu můžete definovat platná data nebo můžete přidat ověřování do operací, které provádíte v entitě nebo datové službě.
 
- Následující témata ukazují, jak přidat ověřování do aplikace služby WCF Data Services.
-
-|Téma|Popis|
-|-----------|-----------------|
-|[Postupy: Zachytit zpráv datové služby](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Ukazuje, jak přidat ověřování do datové operace služby.|
-
- Následující témata ukazují, jak vytvořit, aktualizovat a odstraňovat data o provádění operací na entity.
+Následující témata ukazují, jak přidat ověřování do WCF Data Services aplikací.
 
 |Téma|Popis|
 |-----------|-----------------|
-|[Postupy: Přidání, úpravy a odstranění entit](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Ukazuje, jak vytvářet, aktualizovat a odstraňovat data entity ve službě data.|
-|[Postupy: Definování vztahů mezi entitami](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Ukazuje, jak vytvořit nebo změnit vztahy v datových služeb.|
+|[Postupy: Zachytávání zpráv datových služeb](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Ukazuje, jak přidat ověřování do operace datové služby.|
+
+ V následujících tématech se dozvíte, jak vytvářet, aktualizovat a odstraňovat data prováděním operací s entitami.
+
+|Téma|Popis|
+|-----------|-----------------|
+|[Postupy: Přidání, úprava a odstranění entit](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Ukazuje, jak vytvořit, aktualizovat a odstranit data entity v datové službě.|
+|[Postupy: Definování vztahů mezi entitami](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Ukazuje, jak vytvořit nebo změnit relace v datové službě.|
 
 ## <a name="see-also"></a>Viz také:
 

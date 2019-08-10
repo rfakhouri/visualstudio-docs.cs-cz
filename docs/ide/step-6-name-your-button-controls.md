@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2051ac669c52480d62ee0d0a79c5a165bff502fc
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 46ad996f7c3b1eeff4a3eb928442879f0b7275aa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416605"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925888"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6: Pojmenování tlačítkových ovládacích prvků
 Ve formuláři je pouze <xref:System.Windows.Forms.PictureBox> jeden. Po přidání se rozhraní IDE automaticky jmenuje **pictureBox1**. Existuje pouze jeden <xref:System.Windows.Forms.CheckBox>, který má název **checkBox1**. Brzy napíšete kód, který bude odkazovat na zaškrtávací políčko a PictureBox. Vzhledem k tomu, že existuje pouze jeden z těchto ovládacích prvků, budete znát, co to znamená, když ve svém kódu uvidíte **pictureBox1** nebo **checkBox1** .
@@ -24,9 +24,9 @@ Ve formuláři je pouze <xref:System.Windows.Forms.PictureBox> jeden. Po přidá
 > [!NOTE]
 > V Visual Basic výchozí první písmeno libovolného názvu ovládacího prvku má počáteční zakončení, takže názvy jsou **pictureBox1**, **checkBox1**a tak dále.
 
- Ve formuláři jsou čtyři tlačítka a rozhraní IDE s názvem **Button1**, **Button2**, **Button3**a **Button4**. Pouhým zobrazením jejich aktuálních názvů nevíte, které tlačítko představuje tlačítko **Zavřít** a který je jedním z tlačítek **Zobrazit obrázek** . To je důvod, proč vaše tlačítko ovládá více informativních názvů je užitečné.
+Ve formuláři jsou čtyři tlačítka a rozhraní IDE s názvem **Button1**, **Button2**, **Button3**a **Button4**. Pouhým zobrazením jejich aktuálních názvů nevíte, které tlačítko představuje tlačítko **Zavřít** a který je jedním z tlačítek **Zobrazit obrázek** . To je důvod, proč vaše tlačítko ovládá více informativních názvů je užitečné.
 
- ![odkaz na video](../data-tools/media/playvideo.gif)ve verzi videa tohoto tématu najdete v [kurzu 1: Vytvoření prohlížeče obrázků v Visual Basic-Video 3](http://go.microsoft.com/fwlink/?LinkId=205213) nebo [kurz 1: Vytvoření prohlížeče obrázků ve C# formátu-Video 3](http://go.microsoft.com/fwlink/?LinkId=205202) Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídky a dalších prvcích uživatelského rozhraní. Koncepty a postupy však fungují podobně v aktuální verzi sady Visual Studio.
+![odkaz na video](../data-tools/media/playvideo.gif)ve verzi videa tohoto tématu najdete v [kurzu 1: Vytvoření prohlížeče obrázků v Visual Basic-Video 3](http://go.microsoft.com/fwlink/?LinkId=205213) nebo [kurz 1: Vytvoření prohlížeče obrázků ve C# formátu-Video 3](http://go.microsoft.com/fwlink/?LinkId=205202) Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídky a dalších prvcích uživatelského rozhraní. Koncepty a postupy však fungují podobně v aktuální verzi sady Visual Studio.
 
 ## <a name="to-name-your-button-controls"></a>Chcete-li pojmenovat ovládací prvky tlačítka
 
@@ -73,7 +73,7 @@ Ve formuláři je pouze <xref:System.Windows.Forms.PictureBox> jeden. Po přidá
 
      Po přidání obslužné rutiny události pro ovládací prvek se k němu můžete kdykoli vrátit z **Návrhář formulářů** dvojitým kliknutím na ovládací prvek nebo na řádku nabídek, výběrem možnosti **Zobrazit** > **kód**.
 
-     Názvy jsou důležité při sestavování programů a metody (včetně obslužných rutin událostí) můžou mít libovolný název, který chcete. Když přidáte obslužnou rutinu události s rozhraním IDE, vytvoří se název založený na názvu ovládacího prvku a události, která je zpracovávána. Například událost Click pro tlačítko s názvem **showButton** se nazývá `showButton_Click()` metoda obslužné rutiny události. Také se za názvem metody obvykle přidávají otevírací a uzavírací závorky `()` , které označují, že se metody diskutuje. Pokud se rozhodnete, že chcete změnit název proměnné kódu, klikněte pravým tlačítkem myši na proměnnou v kódu a pak  > zvolte příkaz refaktor**Rename**. Všechny instance této proměnné v kódu jsou přejmenovány. Další informace viz [přejmenování](../ide/reference/rename.md) refaktoringu.
+     Názvy jsou důležité při sestavování programů a metody (včetně obslužných rutin událostí) můžou mít libovolný název, který chcete. Když přidáte obslužnou rutinu události s rozhraním IDE, vytvoří se název založený na názvu ovládacího prvku a události, která je zpracovávána. Například událost Click pro tlačítko s názvem **showButton** se nazývá `showButton_Click()` metoda obslužné rutiny události. Také se za názvem metody obvykle přidávají otevírací a uzavírací závorky `()` , které označují, že se metody diskutuje. Pokud se rozhodnete, že chcete změnit název proměnné kódu, klikněte pravým tlačítkem myši na proměnnou v kódu a pak > zvolte příkaz refaktor**Rename**. Všechny instance této proměnné v kódu jsou přejmenovány. Další informace viz [přejmenování](../ide/reference/rename.md) refaktoringu.
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 

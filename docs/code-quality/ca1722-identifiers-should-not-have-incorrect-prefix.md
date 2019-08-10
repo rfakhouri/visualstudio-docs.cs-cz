@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c1d2aa6f0889216b39b891b042989f1c8c69692
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5daf51cd8bef4910a327b8e261f15332ad6522da
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545981"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921614"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Identifikátory by neměly mít nesprávnou předponu
 
@@ -30,21 +30,21 @@ ms.locfileid: "62545981"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Identifikátor má nesprávnou předponu.
+## <a name="cause"></a>příčina
+Identifikátor má nesprávnou předponu.
 
 ## <a name="rule-description"></a>Popis pravidla
- Podle konvence mají pouze některé programovací prvky názvy začínající určitou předponou.
+Podle konvence mají pouze některé programovací prvky názvy začínající určitou předponou.
 
- Názvy typů nemusí specifický prefix a by neměly mít předponu 'C'. Toto pravidlo oznámí porušení zásad pro názvy typů, jako je například "CMyClass" a nevytváří sestavu porušení zásad pro názvy typů, jako je například "Mezipaměti".
+Názvy typů nemají konkrétní předponu a neměly by být uvozeny znakem "C". Toto pravidlo oznamuje porušení pro názvy typů, jako je například ' CMyClass ', a neoznamuje porušení pro názvy typů, jako je ' cache '.
 
- Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. Taková konzistence snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
+Zásady vytváření názvů poskytují běžný vzhled pro knihovny, které cílí na modul CLR (Common Language Runtime). Tato konzistence snižuje výukovou křivku, která je požadována pro nové knihovny softwaru, a zvyšuje důvěru zákazníků, že knihovna byla vyvinuta někým, kdo má zkušenosti s vývojem spravovaného kódu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Odebrání předpony identifikátoru.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Odeberte předponu z identifikátoru.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1715: Identifikátory by měly mít správnou předponu](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+[CA1715: Identifikátory by měly mít správnou předponu](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

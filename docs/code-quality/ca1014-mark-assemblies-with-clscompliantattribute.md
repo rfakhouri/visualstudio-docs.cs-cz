@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ea7c0d4b9c1d8edea3c2d96f04114db47f3b0d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f11a93380f149648ece4ae6d71bc9c2f25df5191
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779505"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923107"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Označte sestavení pomocí CLSCompliantAttribute
 
@@ -34,26 +34,26 @@ ms.locfileid: "62779505"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
- Sestavení nemá <xref:System.CLSCompliantAttribute?displayProperty=fullName> byt aplikovaný atribut.
+## <a name="cause"></a>příčina
+Pro sestavení není <xref:System.CLSCompliantAttribute?displayProperty=fullName> použit atribut.
 
 ## <a name="rule-description"></a>Popis pravidla
- Specifikace Common Language Specification (CLS) definuje omezení názvů, datové typy a pravidla, která musí sestavení dodržovat, pokud budou použita napříč programovacími jazyky. Dobrý návrh přikazuje, aby všechna sestavení explicitně uvedla dodržování specifikace CLS <xref:System.CLSCompliantAttribute>. Pokud atribut není v sestavení přítomen, nedodržuje sestavení předpisy.
+Specifikace Common Language Specification (CLS) definuje omezení názvů, datové typy a pravidla, která musí sestavení dodržovat, pokud budou použita napříč programovacími jazyky. Dobrý návrh určuje, že všechna sestavení explicitně označují dodržování specifikace CLS <xref:System.CLSCompliantAttribute>pomocí. Pokud atribut není v sestavení přítomen, sestavení nedodržuje předpisy.
 
- Je možné, kompatibilní se Specifikací CLS sestavení obsahují typy nebo členy, které nejsou kompatibilní s typu.
+Sestavení kompatibilní se specifikací CLS může obsahovat typy nebo členy typu, které nedodržují předpisy.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, přidejte atribut do sestavení. Namísto označení celé sestavení jako nesplňující požadavky, měli byste určit, které typ nebo členy typu jsou nekompatibilní a označte tyto prvky jako takové. Pokud je to možné by měl poskytovat alternativy CLS pro členy nesplňující požadavky, aby na nejširší možné cílovou skupinu dostanete všechny funkce, které jsou součástí vašeho sestavení.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, přidejte atribut do sestavení. Místo označení celého sestavení jako nedodržující předpisy byste měli určit, které typy nebo členy typu nejsou kompatibilní, a označit tyto prvky jako takové. Pokud je to možné, měli byste poskytnout alternativu neodpovídající specifikaci CLS pro členy, kteří nedodržují předpisy, aby co nejširšímu možnému posluchači mohl přistupovat ke všem funkcím sestavení.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo. Pokud nechcete, aby sestavení, aby vyhovoval předpisům, použijte atribut a nastavte jej na hodnotu `false`.
+Nepotlačujte upozornění na toto pravidlo. Pokud nechcete, aby sestavení bylo kompatibilní, použijte atribut a nastavte jeho hodnotu na `false`.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje sestavení, který má <xref:System.CLSCompliantAttribute?displayProperty=fullName> atribut, který deklaruje kompatibilní se Specifikací CLS.
+Následující příklad ukazuje sestavení, které má <xref:System.CLSCompliantAttribute?displayProperty=fullName> atribut použit, který deklaruje specifikaci kompatibilní se specifikací CLS.
 
- [!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
- [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]
- [!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]
+[!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
+[!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]
+[!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]
 
 ## <a name="see-also"></a>Viz také:
 

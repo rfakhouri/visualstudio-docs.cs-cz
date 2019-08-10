@@ -10,12 +10,12 @@ ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c3ebadd34988c83dbb688d3864ab88280d7a077
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cce1da2d3cb20ca7f577c806d0506ffc0b947903
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783789"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918278"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurace iterací testů ve scénáři zátěžového testu
 
@@ -32,18 +32,18 @@ Můžete určit maximální počet případů, kdy chcete, aby ke spuštění te
 > [!NOTE]
 > Úplný seznam vlastnosti scénáře zátěžového testu a jejich popis najdete v tématu [vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md).
 
- Kombinace sekvenčního testu jedné iterace je jednom průchodu přes všechny testy v kombinaci. Pro všechny ostatní mix testů každé spuštění testu se počítá jako iterace. Další informace najdete v tématu [o ovládacím prvku kombinace](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+Kombinace sekvenčního testu jedné iterace je jednom průchodu přes všechny testy v kombinaci. Pro všechny ostatní mix testů každé spuštění testu se počítá jako iterace. Další informace najdete v tématu [o ovládacím prvku kombinace](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
- Pokud zátěžový test je založené na době trvání zátěžového testu a dobu trvání vyprší před dokončením počet iterací, test bude stále zastavit. Pokud test je založená na iterace a iterace testů jsou splnit, abyste mohli iterací scénáře, test se zastaví. Doba trvání se konfiguruje pomocí **doba běhu** vlastnost **vlastnosti** okno, které jsou přidružené k parametrům spuštění zátěžového testu.
+Pokud zátěžový test je založené na době trvání zátěžového testu a dobu trvání vyprší před dokončením počet iterací, test bude stále zastavit. Pokud test je založená na iterace a iterace testů jsou splnit, abyste mohli iterací scénáře, test se zastaví. Doba trvání se konfiguruje pomocí **doba běhu** vlastnost **vlastnosti** okno, které jsou přidružené k parametrům spuštění zátěžového testu.
 
- Počet iterací scénáře při splnění, tento scénář se zastaví, ale jiné aktivní scénáře budou nadále spuštěné.
+Počet iterací scénáře při splnění, tento scénář se zastaví, ale jiné aktivní scénáře budou nadále spuštěné.
 
 > [!NOTE]
 > Související vlastností je **jedinečné** vlastností webového testu zdroje dat, která prochází postupně data, řádek po řádku, ale pouze jeden čas pro každý záznam. Další informace najdete v tématu [přidat zdroj dat do testu výkonnosti webu](../test/add-a-data-source-to-a-web-performance-test.md).
 
- **Maximální testovací iterace** vlastnost je užitečná pro celou řadu situací. Testery zatížení raději chování iterační testování, zatímco jiné zatížení testery raději proveďte založené na době trvání test.
+**Maximální testovací iterace** vlastnost je užitečná pro celou řadu situací. Testery zatížení raději chování iterační testování, zatímco jiné zatížení testery raději proveďte založené na době trvání test.
 
- ![Určení iterací testů ve scénáři](../test/media/loadtest_prop.png)
+![Určení iterací testů ve scénáři](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Chcete-li určit maximální počet iterací
 

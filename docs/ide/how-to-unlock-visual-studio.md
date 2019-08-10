@@ -11,64 +11,64 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe0aa86be242e9a7e7ed8d877944c66247718167
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549195"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926292"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Postupy: Odemknout Visual Studio
 
-Můžete si vyzkoušet Visual Studio zdarma až po dobu 30 dnů. Přihlašování do integrovaného vývojového prostředí rozšiřuje zkušební období na 90 dní. Chcete-li pokračovat pomocí sady Visual Studio, odemknete rozhraní IDE podle:
+Můžete si vyzkoušet Visual Studio zdarma až po dobu 30 dnů. Přihlášení k prostředí IDE rozšiřuje zkušební období na 90 dní. Chcete-li pokračovat v používání sady Visual Studio, odemkněte rozhraní IDE buď pomocí:
 
-- prostřednictvím online předplatného
+- používání online předplatného
 
-- zadání kódu product key
+- zadání kódu Product Key
 
-## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Odemknout prostřednictvím online předplatného sady Visual Studio
+## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Odemčení sady Visual Studio pomocí online předplatného
 
-K odemknutí sady Visual Studio pomocí předplatného sady Visual Studio nebo organizace Azure DevOps přidružené k účtu Microsoft nebo pracovní nebo školní účet:
+Pokud chcete aplikaci Visual Studio odemknout pomocí předplatného sady Visual Studio nebo organizace Azure DevOps, která je přidružená k účet Microsoft, nebo pracovnímu nebo školnímu účtu:
 
-1. Zvolte **přihlášení** tlačítko v pravém horním rohu integrovaného vývojového prostředí (nebo můžete přejít na **souboru** > **nastavení účtu** otevřít **nastavení účtu**  dialogové okno a zvolte **přihlášení** tlačítko).
+1. Klikněte na tlačítko **Přihlásit** v pravém horním rohu integrovaného vývojového prostředí (nebo přejít na**Nastavení účtu** **souboru** > a otevřete dialogové okno **Nastavení účtu** a klikněte na tlačítko **Přihlásit** se).
 
-1. Zadejte přihlašovací údaje pro účet Microsoft nebo pracovní nebo školní účet. Visual Studio vyhledá předplatné sady Visual Studio nebo spojené s vaším účtem organizace Azure DevOps.
+1. Zadejte přihlašovací údaje pro účet Microsoft nebo pracovní nebo školní účet. Visual Studio najde předplatné sady Visual Studio nebo organizaci Azure DevOps, která je přidružená k vašemu účtu.
 
 > [!IMPORTANT]
-> Visual Studio online přidružených předplatných automaticky vyhledá, při připojení k organizaci Azure DevOps z **Team Exploreru** panelu nástrojů. Při připojení k organizaci Azure DevOps se můžete přihlásit pomocí Microsoft a pracovní nebo školní účty. Pokud pro tento uživatelský účet existuje s online předplatným, sada Visual Studio automaticky odemknout rozhraní IDE za vás.
+> Když se připojíte k organizaci Azure DevOps z okna nástroje **Team Explorer** , Visual Studio automaticky vyhledá přidružené online předplatné. Když se připojíte k organizaci Azure DevOps, můžete se přihlásit pomocí Microsoft i pracovního nebo školního účtu. Pokud pro tento uživatelský účet existuje s online předplatným, sada Visual Studio automaticky odemknout rozhraní IDE za vás.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>K odemknutí sady Visual Studio s kódem product key
 
-1. Vyberte **souboru** > **nastavení účtu** otevřít **nastavení účtu** dialogového okna a klikněte na tlačítko **licence s kódem Product Key** odkaz.
+1. Zvolením**Možnosti účet** **souboru** > otevřete dialogové okno **Nastavení účtu** a pak vyberte **licenci s odkazem na kód Product Key** .
 
 1. Zadejte kód product key v poskytnutém prostoru.
 
 > [!TIP]
-> Předběžné verze sady Visual Studio nemají žádné kódy product key. Musíte se přihlásit k prostředí IDE použití předběžných verzí.
+> Předběžné verze sady Visual Studio nemají kódy Product Key. Chcete-li použít předběžné verze, je nutné se přihlásit k integrovanému vývojovému prostředí.
 
-## <a name="address-license-problem-states"></a>Stavy problém licenční adresy
+## <a name="address-license-problem-states"></a>Adresové stavy problémů s licencí
 
-### <a name="update-stale-licenses"></a>Aktualizovat zastaralé licence
+### <a name="update-stale-licenses"></a>Aktualizace zastaralých licencí
 
- Možná jste viděli následující zpráva, která říká, že vaše licence bude zastaralé v sadě Visual Studio. Načte, "vaše licence je prošlá a musí se aktualizovat."
+Možná jste viděli následující zprávu s oznámením, že vaše licence bude v aplikaci Visual Studio zastaralá. Čte "vaše licence prošla zastaralým a je nutné ji aktualizovat."
 
- ![Zpráva zastaralé licence Visual Studio](../ide/media/vs2017_stale-license.png)
+![Zpráva zastaralá licence sady Visual Studio](../ide/media/vs2017_stale-license.png)
 
- Tato zpráva znamená, že vaše předplatné může být stále platná, licenci, kterou token Visual Studio používá k zajištění aktuálnosti vaše předplatné se aktualizují a je prošlá kvůli jednomu z následujících důvodů:
+Tato zpráva znamená, že i když může být předplatné stále platné, aplikace Visual Studio s tokenem licence zachová aktuální předplatné a v důsledku toho je zastaralá kvůli jednomu z následujících důvodů:
 
-- Nepoužili sady Visual Studio nebo měli bez připojení k Internetu pro delší dobu.
+- Nepoužívali jste aplikaci Visual Studio nebo nemáte k dispozici žádné připojení k Internetu po delší dobu.
 - Odhlásili jste se od sady Visual Studio.
 
-Předtím, než půjde zastaralé token licence, sada Visual Studio nejprve zobrazí zpráva s dotazem, můžete znovu zadat přihlašovací údaje.
+Před zastaralým tokenem licence Visual Studio nejprve zobrazí zprávu s upozorněním, že je třeba znovu zadat přihlašovací údaje.
 
-Pokud není znovu zadat přihlašovací údaje, token se začne přejít zastaralé a **nastavení účtu** dialogové okno zjistíte, kolik dní zbývá před plně vyprší platnost tokenu. Po vypršení platnosti tokenu, je nutné znovu zadat své přihlašovací údaje pro účet předtím, než můžete pokračovat v používání sady Visual Studio.
+Pokud přihlašovací údaje nezadáte znovu, zahájí se platnost tokenu a dialogové okno **Nastavení účtu** vám ukáže, kolik dní zbývá před úplným vypršením platnosti tokenu. Po vypršení platnosti tokenu musíte znovu zadat svoje přihlašovací údaje pro účet, aby bylo možné pokračovat v používání sady Visual Studio.
 
 > [!Important]
-> Pokud používáte Visual Studio po delší dobu v prostředích s omezením nebo bez připojení k Internetu, by měl použít kód product key k odemknutí sady Visual Studio, aby se zabránilo přerušení.
+> Pokud používáte Visual Studio pro rozšířené tečky v prostředích s omezeným nebo žádným přístupem k Internetu, měli byste použít kód Product Key k odemknutí sady Visual Studio, abyste se vyhnuli přerušení.
 
-### <a name="update-expired-licenses"></a>Aktualizovat vypršela platnost licence
+### <a name="update-expired-licenses"></a>Aktualizace licencí s vypršenou platností
 
- Pokud vypršela platnost vašeho předplatného úplně a už nebude mít přístupová práva ke službě Visual Studio, musíte předplatné nebo přidat další účet, který má předplatné. Chcete-li zobrazit další informace o licenci, kterou používáte, přejděte na **souboru** > **nastavení účtu** a podívejte se na informace o licenci na pravé straně dialogového okna. Pokud máte jiné předplatné spojené s jiným účtem, přidejte daný účet do **všechny účty** seznamu na levé straně dialogového okna tak, že vyberete **přidat účet** odkaz.
+Pokud vašemu předplatnému vypršela platnost a už nemáte přístupová práva k aplikaci Visual Studio, musíte si obnovit předplatné nebo přidat další účet s předplatným. Pokud chcete zobrazit další informace o licenci, kterou používáte, přejděte na**Nastavení účtu** **soubor** > a podívejte se na informace o licencích na pravé straně dialogového okna. Pokud máte k jinému účtu přidruženo jiné předplatné, přidejte tento účet do seznamu **všechny účty** na levé straně dialogového okna tak, že vyberete odkaz **Přidat účet** .
 
 ## <a name="see-also"></a>Viz také:
 

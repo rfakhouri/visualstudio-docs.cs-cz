@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea570ff50ea48286bcb52b56acdd108516b02022
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf9475ad208a229057700fa2965984fbdcb17abf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779393"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923082"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021: Vyhněte se výstupním parametrům
 
@@ -30,45 +30,45 @@ ms.locfileid: "62779393"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Veřejná nebo chráněná metoda veřejného typu má `out` parametru.
+## <a name="cause"></a>příčina
+Veřejná nebo chráněná metoda ve veřejném typu má `out` parametr.
 
 ## <a name="rule-description"></a>Popis pravidla
- Předávání typů odkazem (pomocí `out` nebo `ref`) vyžaduje zkušenosti s ukazateli, pochopení, jak se liší typy hodnot a odkazové typy a metody s více návratových zpracování. Také rozdíl mezi `out` a `ref` parametrů není běžně chápán.
+Předávání typů odkazem (pomocí `out` nebo `ref`) vyžaduje zkušenosti s ukazateli, porozumění způsobu, jakým se liší typy hodnot a typy odkazů, a metody zpracování s více návratových hodnot. Také rozdíl mezi `out` parametry a `ref` není široce srozumitelný.
 
- Při "podle odkazu" je předán odkaz na typ, metodu v úmyslu použít parametr a vrátí jinou instanci objektu. Předávání odkazem odkazový typ se označuje také jako pomocí dvojitých ukazatel, ukazatel na ukazatel nebo dvojitou dereferenci. Pomocí výchozí konvence volání, což je předat "value", přijímá parametr, který již má odkazový typ ukazatel na objekt. Ukazatel, nikoli objekt, na kterou odkazuje, je předán podle hodnoty. Předejte jako hodnota znamená, že metoda nelze změnit tak, aby odkazoval na nové instanci typu odkazu ukazatel. Můžete však změnit obsah objektu, na kterou odkazuje. Pro většinu aplikací je dostačující a provede požadované chování.
+Pokud je odkazový typ předán "odkazem", metoda zamýšlí použít parametr pro návrat jiné instance objektu. Předání typu odkazu odkazem je také známo, že používá dvojité ukazatele, ukazatel na ukazatel nebo dvojitou indirekce. Pomocí výchozí konvence volání, která je předána "podle hodnoty", parametr, který přebírá odkazový typ již obdrží ukazatel na objekt. Ukazatel, nikoli objekt, na který odkazuje, je předán podle hodnoty. Hodnota Pass by znamená, že metoda nemůže změnit ukazatel tak, aby odkazovala na novou instanci typu odkazu. Může však změnit obsah objektu, na který odkazuje. Pro většinu aplikací je to dostačující a vede k požadovanému chování.
 
- Pokud metoda musí vracet jinou instanci, použijte k tomu návratovou hodnotu metody. Zobrazit <xref:System.String?displayProperty=fullName> třídy pro celou řadu metod, které pracují na řetězce a vrátí novou instanci řetězce. Když se tento model používá, volající musíte rozhodnout, jestli se zachová původní objekt.
+Pokud metoda musí vracet jinou instanci, použijte k tomu vrácenou hodnotu metody. Podívejte se <xref:System.String?displayProperty=fullName> na třídu pro různé metody, které pracují s řetězci a vracejí novou instanci řetězce. Při použití tohoto modelu musí volající rozhodnout, zda je původní objekt zachován.
 
- I když vrácené hodnoty jsou běžné a nejčastěji používá správné použití `out` a `ref` parametry vyžaduje zprostředkující návrhu a dovednosti kódování. Knihovna architektům, kteří návrhu pro širokou veřejnost, by neměli očekávat uživatelům pracovat s `out` nebo `ref` parametry.
+I když návratové hodnoty jsou maloobchodech a silně využívány, `out` správné `ref` použití parametrů a vyžaduje pokročilou návrh a kódování. Architekti knihoven, kteří navrhují pro obecnou cílovou skupinu, by neměli očekávat `out` , `ref` že uživatelé budou hlavní pracovat s parametry nebo.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, která je způsobeno tím, typ hodnoty, mají metoda vrátit objekt jako jeho návratovou hodnotu. Metoda musí vracet více hodnot, změnit návrh jej vrátí jednu instanci objektu, který obsahuje hodnoty.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, které je způsobeno typem hodnoty, je třeba, aby metoda vracela objekt jako vrácenou hodnotu. Pokud metoda musí vracet více hodnot, změňte její návrh a vraťte jednu instanci objektu, který obsahuje hodnoty.
 
- Chcete-li opravit porušení tohoto pravidla, která je způsobeno tím, typ odkazu, zajistěte, aby požadované chování vrácení nové instance odkazu. Pokud se jedná, používejte metodu k tomu jeho návratovou hodnotu.
+Chcete-li opravit porušení tohoto pravidla, která je způsobena odkazovým typem, ujistěte se, že požadované chování je vrácení nové instance odkazu. Pokud je, metoda by k tomu měla použít jeho návratovou hodnotu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla. Tento návrh však může způsobit problémy se použitelnost.
+Z tohoto pravidla je bezpečné potlačit upozornění. Tento návrh ale může způsobit problémy s použitelností.
 
 ## <a name="example"></a>Příklad
- Následující knihovny ukazuje dvě implementace třídy, která generuje odpovědi na zpětnou vazbu od uživatele. První provedení (`BadRefAndOut`) vynutí knihovny uživatele ke správě tři návratové hodnoty. Druhý implementace (`RedesignedRefAndOut`) zjednodušuje činnost koncového uživatele tak, že vrací instanci třídy kontejneru (`ReplyData`), která zvládne správu dat jako jeden celek.
+Následující knihovna ukazuje dvě implementace třídy, které generují odpovědi na zpětnou vazbu uživatele. První implementace (`BadRefAndOut`) vynutí, aby uživatel knihovny spravoval tři návratové hodnoty. Druhá implementace (`RedesignedRefAndOut`) zjednodušuje uživatelské prostředí vrácením instance třídy kontejneru (`ReplyData`), která spravuje data jako jednu jednotku.
 
- [!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_1.cs)]
-
-## <a name="example"></a>Příklad
- Následující aplikace ukazuje možnosti uživatele. Volání přepracovaný knihovny (`UseTheSimplifiedClass` metoda) je jednodušší, a snadno se spravuje informace vrácené metodou. Je stejný jako výstup ze dvou metod.
-
- [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_2.cs)]
+[!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_1.cs)]
 
 ## <a name="example"></a>Příklad
- Knihovna následující příklad ukazuje, jak `ref` parametrů pro typy odkazů se používají a zobrazuje lepší způsob, jak implementovat tuto funkci.
+Následující aplikace znázorňuje prostředí uživatele. Volání přepracované knihovny (`UseTheSimplifiedClass` metoda) je jednodušší a informace vrácené metodou lze snadno spravovat. Výstup ze dvou metod je stejný.
 
- [!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_3.cs)]
+[!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_2.cs)]
 
 ## <a name="example"></a>Příklad
- Následující aplikace volá při každé metody v knihovně k předvedení chování.
+Následující příklad knihovny ukazuje, jak `ref` se používají parametry pro typy odkazů, a ukazuje lepší způsob implementace této funkce.
 
- [!code-csharp[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_4.cs)]
+[!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_3.cs)]
+
+## <a name="example"></a>Příklad
+Následující aplikace volá jednotlivé metody v knihovně k demonstraci chování.
+
+[!code-csharp[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_4.cs)]
 
 Tento příklad vytvoří následující výstup:
 
@@ -83,13 +83,13 @@ Passing by return value:
 12345 ABCDE
 ```
 
-## <a name="try-pattern-methods"></a>Zkuste vzor metody
+## <a name="try-pattern-methods"></a>Vyzkoušet metody vzoru
 
 ### <a name="description"></a>Popis
- Metody, které implementují **zkuste\<něco >** vzorku, jako například <xref:System.Int32.TryParse%2A?displayProperty=fullName>, nevyvolávejte toto porušení. Následující příklad ukazuje strukturu (typ hodnoty), který implementuje <xref:System.Int32.TryParse%2A?displayProperty=fullName> metody.
+Metody, které implementují <xref:System.Int32.TryParse%2A?displayProperty=fullName>vzorec **Try\<>** , například, nevyvolávají toto porušení. Následující příklad ukazuje strukturu (typ hodnoty), která implementuje <xref:System.Int32.TryParse%2A?displayProperty=fullName> metodu.
 
 ### <a name="code"></a>Kód
- [!code-csharp[FxCop.Design.TryPattern#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_5.cs)]
+[!code-csharp[FxCop.Design.TryPattern#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_5.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1045: Nepředávejte typy odkazem](../code-quality/ca1045-do-not-pass-types-by-reference.md)
+[CA1045: Nepředávejte typy odkazem](../code-quality/ca1045-do-not-pass-types-by-reference.md)

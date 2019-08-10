@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e4e7aa59d273242bd8b97fd4f2777b7edcb5990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de64e0271370a3cdcc6f0963dbf06925621b9b65
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806664"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920192"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Členy by se měly lišit více než návratovým typem
 
@@ -30,20 +30,20 @@ ms.locfileid: "62806664"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Dvě veřejné nebo chráněné členy mají podpisy, které jsou stejné s výjimkou návratovým typem.
+## <a name="cause"></a>příčina
+Dva veřejné nebo chráněné členy mají signatury, které jsou stejné s výjimkou návratového typu.
 
 ## <a name="rule-description"></a>Popis pravidla
- I když se modul common language runtime umožňuje používat návratové typy k rozlišení mezi jinak identickými členy, tato funkce není v Common Language Specification ani je to běžná funkce programovacích jazycích rozhraní .NET. Když členové liší pouze návratovým typem, vývojáře a nástroje pro vývoj nemusí správně mezi nimi rozlišovat.
+I když modul CLR (Common Language Runtime) umožňuje použití návratových typů k rozlišení mezi ostatními identickými členy, tato funkce není součástí specifikace CLS, ani není běžnou funkcí programovacích jazyků .NET. Pokud se členové liší jenom návratovým typem, vývojáři a vývojové nástroje nemusí mezi nimi správně rozlišovat.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, změňte návrh členů tak, aby byly jedinečné, pouze na základě jejich názvy a typy parametrů, nebo nezveřejňujte členy.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, změňte návrh členů tak, aby byly jedinečné v závislosti pouze na jejich názvech a typech parametrů, nebo nezveřejňujte členy.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje v jazyk Microsoft intermediate language (MSIL), typ, který porušuje tato pravidla. Všimněte si, že nelze toto pravidlo porušeno pomocí jazyka C# nebo Visual Basic.
+Následující příklad v jazyce MSIL (Microsoft Intermediate Language) zobrazuje typ, který toto pravidlo porušuje. Všimněte si, že toto pravidlo nelze narušit pomocí C# ani Visual Basic.
 
 ```
 .namespace UsageLibrary

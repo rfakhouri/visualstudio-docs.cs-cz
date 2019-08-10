@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d6707d2e9ed8e001762939cb08ffee58f1c1cdc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7a71a6d313ce12a40cd5c30470f53b1e2a1b69e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950901"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919116"
 ---
 # <a name="new-file-command"></a>Nový soubor – příkaz
-Vytvoří nový soubor a otevře jej. Soubor se zobrazí ve složce ostatní soubory.
+Vytvoří nový soubor a otevře ho. Soubor se zobrazí ve složce různé soubory.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,39 +30,37 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```
 
 ## <a name="arguments"></a>Arguments
- `filename`
+`filename`
 
- Volitelné. Název souboru. Pokud je zadaný žádný název, výchozí název zadán. Pokud je uvedený žádný název šablony, se vytvoří textový soubor.
+Volitelné. Název souboru Pokud není zadán žádný název, je zadán výchozí název. Pokud není uveden žádný název šablony, je vytvořen textový soubor.
 
 ## <a name="switches"></a>Přepínače
- /t:`templatename`
+parametr`templatename`\
+Volitelné. Určuje typ souboru, který se má vytvořit.
 
- Volitelné. Určuje typ souboru, který se má vytvořit.
+Syntaxe/t:`templatename` argument odráží informace, které se nacházejí v dialogovém okně Nový soubor. Zadejte název kategorie následovaný zpětným lomítkem (`\`) a názvem šablony a uzavřete celý řetězec do uvozovek.
 
- T:`templatename` argument syntaxe odráží informace nacházející se v dialogovém okně Nový soubor. Zadejte název kategorie, za nímž následuje zpětné lomítko (`\`) a šablony, zadejte název a uzavřete celý řetězec v uvozovkách.
-
- Například vytvořte novou [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] zdrojového souboru, zadali byste následující t:`templatename` argument.
+Pokud například chcete vytvořit nový [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] zdrojový soubor, zadejte do argumentu/t:`templatename` následující hodnotu.
 
 ```cmd
 /t:"Visual C++\C++ File (.cpp)"
 ```
 
- Výše uvedený příklad určuje, že soubor C++ šablona se nachází v kategorii Visual C++ v **nový soubor** dialogové okno.
+Výše uvedený příklad ukazuje, že C++ šablona souboru je umístěna v kategorii vizuálu C++ v dialogovém okně **nový soubor** .
 
- /e:`editorname`
+/e`editorname`\
+Volitelné. Název editoru, ve kterém bude soubor otevřen. Je-li zadán argument, ale není zadán žádný název editoru, zobrazí se dialogové okno **otevřít v** .
 
- Volitelné. Název editoru, ve kterém chcete soubor otevřít. Pokud je zadán argument, ale žádný editor název je zadán, **otevřít v** zobrazí se dialogové okno.
+Syntaxe/e:`editorname` argument používá názvy editoru tak, jak se zobrazí v dialogovém okně Otevřít v aplikaci uzavřené v uvozovkách.
 
- / E:`editorname` argument syntaxe používá názvy editoru, jak se objeví v dialogovém okně Otevřít s, do uvozovek.
-
- Například by pro otevření souboru v editoru zdrojového kódu, zadejte následující pro / e:`editorname` argument.
+Chcete-li například otevřít soubor v editoru zdrojového kódu, zadejte následující příkaz pro parametr/e:`editorname` .
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>Příklad
- Tento příklad vytvoří novou webovou stránku "test1.htm" a otevře v editoru zdrojového kódu.
+Tento příklad vytvoří novou webovou stránku "test1. htm" a otevře ji v editoru zdrojového kódu.
 
 ```cmd
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"

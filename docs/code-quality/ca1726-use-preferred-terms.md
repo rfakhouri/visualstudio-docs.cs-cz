@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 469025e5856f284f4d8887b351865a0304e4d35c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4e068fee014d767b7afcdf8183ac6611b299f36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797155"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921578"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Použijte upřednostňované výrazy
 
@@ -27,17 +27,17 @@ ms.locfileid: "62797155"
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
 |Kategorie|Microsoft.Naming|
-|Narušující změna|Zásadní - při vyvolání na sestavení<br /><br /> Bez konce – při vyvolání na parametry typu|
+|Narušující změna|Přerušení – při vyvolání u sestavení<br /><br /> Nerozdělitelné – při vyvolání u parametrů typu|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Název externě viditelného identifikátoru zahrnuje výraz, pro který existuje alternativní upřednostňovaný výraz. Nebo název obsahuje také výraz příznak nebo příznaky.
+Název externě viditelného identifikátoru zahrnuje výraz, pro který existuje alternativní upřednostňovaný výraz. Nebo název obsahuje příznak Term nebo Flags.
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Toto pravidlo analyzuje identifikátor do tokenů. Každý jeden token a každou souvislých kombinaci duální tokenu je ve srovnání s podmínkami, které jsou integrované do pravidla a v části zastaralé vlastní slovníky. V následující tabulce jsou uvedeny podmínky, které jsou součástí pravidla a jejich preferované alternativy.
+Toto pravidlo analyzuje identifikátor na tokeny. Každý token a Každá souvislá kombinace dvou tokenů je porovnána s podmínkami, které jsou integrovány v pravidle a v nepoužívané části libovolného vlastního slovníku. V následující tabulce jsou uvedeny výrazy, které jsou součástí pravidla a jejich preferované alternativy.
 
-|Zastaralé termín|Upřednostňovaný termín|
+|Zastaralý termín|Upřednostňovaný pojem|
 |-------------------|--------------------|
 |`Arent`|`AreNot`|
 |`Cancelled`|`Canceled`|
@@ -47,7 +47,7 @@ Toto pravidlo analyzuje identifikátor do tokenů. Každý jeden token a každou
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` Nebo `Flags`|Neexistuje žádné nahrazující výraz. Nepoužívejte.|
+|`Flag` Nebo `Flags`|Neexistuje žádný náhradní termín. Nepoužívejte.|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|
@@ -64,11 +64,11 @@ Toto pravidlo analyzuje identifikátor do tokenů. Každý jeden token a každou
 |`Wouldnt`|`WouldNot`|
 |`Writeable`|`Writable`|
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, nahraďte výraz s alternativní upřednostňovaný výraz.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, nahraďte výraz upřednostňovaným alternativním termínem.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačit upozornění tohoto pravidla pouze v případě, že je název identifikátoru je úmyslné a se vztahuje konkrétně k původní termín místo Upřednostňovaný termín.
+Potlačí upozornění z tohoto pravidla pouze v případě, že název identifikátoru je záměrné a vztahuje se konkrétně k původnímu termínu místo upřednostňovaného termínu.
 
 ## <a name="related-rules"></a>Související pravidla
- [Upozornění na pojmenování](../code-quality/naming-warnings.md)
+[Upozornění na pojmenování](../code-quality/naming-warnings.md)

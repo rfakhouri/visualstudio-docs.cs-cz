@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461471"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919362"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Dialogové okno Upřesnit nastavení kompilátoru (Visual Basic)
 
@@ -38,7 +38,7 @@ Pomocí dialogového okna **Nastavení AdvancedCompiler** **Návrháře projektu
 
 ## <a name="optimizations"></a>Optimalizace
 
- Následující možnosti určují optimalizace, které mohou v některých případech zmenšit programový soubor, nastavit program rychleji nebo urychlit proces sestavení.
+Následující možnosti určují optimalizace, které mohou v některých případech zmenšit programový soubor, nastavit program rychleji nebo urychlit proces sestavení.
 
 **Odebrat kontroly přetečení celých čísel**
 
@@ -52,11 +52,11 @@ Toto políčko není ve výchozím nastavení zaškrtnuté, chcete-li zakázat o
 
  **Základní adresa knihovny DLL**
 
- V tomto textovém poli se zobrazí výchozí základní adresa knihovny DLL v šestnáctkovém formátu. V knihovně tříd a v projektech knihovny ovládacích prvků lze pomocí tohoto textového pole zadat základní adresu, která má být použita při vytvoření knihovny DLL.
+V tomto textovém poli se zobrazí výchozí základní adresa knihovny DLL v šestnáctkovém formátu. V knihovně tříd a v projektech knihovny ovládacích prvků lze pomocí tohoto textového pole zadat základní adresu, která má být použita při vytvoření knihovny DLL.
 
  **Generovat ladicí informace**
 
- V seznamu vyberte možnost **žádná**, **Úplná**nebo **PDB** . **None** určuje, že nejsou vygenerovány žádné informace o ladění. **Full** určuje, zda mají být vygenerovány úplné informace o ladění a **pouze PDB** určuje, zda mají být vygenerovány pouze informace o ladění PDB. Výchozí hodnota této možnosti je **plná**.
+V seznamu vyberte možnost **žádná**, **Úplná**nebo **PDB** . **None** určuje, že nejsou vygenerovány žádné informace o ladění. **Full** určuje, zda mají být vygenerovány úplné informace o ladění a **pouze PDB** určuje, zda mají být vygenerovány pouze informace o ladění PDB. Výchozí hodnota této možnosti je **plná**.
 
 ## <a name="compilation-constants"></a>Konstanty kompilace
 
@@ -64,15 +64,15 @@ Konstanty podmíněné kompilace mají podobný účinek jako použití direktiv
 
  **Definovat konstantu DEBUG**
 
- Ve výchozím nastavení je toto zaškrtávací políčko zaškrtnuto a určuje, že je nastavena konstanta ladění.
+Ve výchozím nastavení je toto zaškrtávací políčko zaškrtnuto a určuje, že je nastavena konstanta ladění.
 
  **Definovat konstantu TRACE**
 
- Ve výchozím nastavení je toto zaškrtávací políčko zaškrtnuto a určuje, že je nastavena konstanta trasování.
+Ve výchozím nastavení je toto zaškrtávací políčko zaškrtnuto a určuje, že je nastavena konstanta trasování.
 
  **Vlastní konstanty**
 
- Do tohoto textového pole zadejte libovolné vlastní konstanty pro vaši aplikaci. Položky by se měly oddělit čárkami, a to pomocí tohoto formuláře: **Název1 = "hodnota1", název2 = "hodnota2", Název3 = "hodnota3"** .
+Do tohoto textového pole zadejte libovolné vlastní konstanty pro vaši aplikaci. Položky by se měly oddělit čárkami, a to pomocí tohoto formuláře: **Název1 = "hodnota1", název2 = "hodnota2", Název3 = "hodnota3"** .
 
 ## <a name="other-settings"></a>Další nastavení
 

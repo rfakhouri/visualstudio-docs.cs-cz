@@ -11,27 +11,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e4e5e90e7b808e50f30c3a1d6527cdb7cfb4c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 5f01b16971c85a07923783e97f08a8b91512eef6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605827"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870793"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Postupy: Změna velikosti písmen textu v editoru
 
 Příkazy nabídky nebo klávesové zkratky můžete použít k převodu případ vybraný text na velká písmena nebo velká písmena.
 
 > [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v tomto článku, které jsou založeny na **obecném** nastavení pro vývoj. Chcete-li změnit nastavení pro vývoj, zvolte **nástroje** > **Nastavení importu a exportu**a pak zvolte možnost **resetovat všechna nastavení**.
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v tomto článku, které jsou založeny na obecném nastavení prostředí. Chcete-li změnit nastavení prostředí, zvolte **nástroje** > **Nastavení importu a exportu**a pak zvolte možnost **resetovat všechna nastavení**.
 
 ## <a name="to-change-text-case"></a>Změna velikosti písmen textu
 
 1. Vyberte text, který má být převeden.
 
-2. Pokud chcete převést text na velká písmena, zvolte **Upravit** > **Upřesnit** > **nastavit velká písmena**nebo stiskněte klávesy **CTRL**+**SHIFT**+**U**.
+2. Pokud chcete převést text na velká písmena, zvolte **Upravit** > **Upřesnit** > **vytvořit velká písmena** nebo stiskněte klávesy **CTRL**+**SHIFT**+**U**.
 
-   Chcete-li převést text na malá písmena, zvolte možnost **Upravit** > **Upřesnit** > **nastavení malých písmen**nebo stiskněte klávesu **CTRL**+**U**.
+   Chcete-li převést text na malá písmena, zvolte možnost **Upravit** > **Upřesnit** > **nastavení malých a velkých písmen** nebo stiskněte klávesu **CTRL**+**U**. (Pokud máte nainstalovanou C++ úlohu vývoje, může být tato vazba použita jiným příkazem.)
 
 > [!TIP]
 > Chcete-li vrátit k předchozí větví formátování před touto změnou, vyberte **zpět** z **upravit** nabídky.

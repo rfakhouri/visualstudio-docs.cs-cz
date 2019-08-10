@@ -9,26 +9,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c639ecc19f99f25fb5cb38539d2322131ddc2e0c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eb7dd7df55f67d486d03048860bf3d20f976a70f
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446322"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870703"
 ---
-# <a name="accessing-models-from-text-templates"></a>Přístup k modelům z textových šablon
-Pomocí textových šablon, můžete vytvořit sestavy soubory, soubory se zdrojovým kódem a jiné textové soubory, které jsou založeny na modely jazyka specifického pro doménu. Základní informace o textových šablonách naleznete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md). Textové šablony budou fungovat v experimentálním režimu při ladění vašeho DSL a budou fungovat i v počítači, na které jste nasadili DSL.
+# <a name="access-models-from-text-templates"></a>Přístup k modelům z textových šablon
+
+Pomocí textových šablon můžete vytvářet soubory sestav, soubory zdrojového kódu a další textové soubory založené na modelech jazyka specifického pro doménu. Základní informace o textových šablonách naleznete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md). Textové šablony budou fungovat v experimentálním režimu při ladění DSL a budou fungovat i na počítači, na kterém jste nasadili DSL.
 
 > [!NOTE]
-> Když vytvoříte řešení DSL, ukázka textové šablony  **\*.tt** soubory jsou vygenerovány v ladění projektu. Při změně názvu doménové třídy tyto šablony už nebude fungovat. Nicméně, zahrnují základní direktivy, které potřebujete a uvádějte příklady, které můžete aktualizovat tak, aby odpovídaly vašeho DSL.
+> Když vytvoříte řešení DSL, ukázkový text šablona  **\*. soubory TT** se generují v ladicím projektu. Když změníte názvy doménových tříd, tyto šablony již nebudou fungovat. Nicméně obsahují základní direktivy, které potřebujete, a poskytněte příklady, které můžete aktualizovat tak, aby odpovídaly vaší DSL.
 
- Pro přístup k modelu z textové šablony:
+ Přístup k modelu z textové šablony:
 
-- Nastavte vlastnost Zdědit – direktiva šablony do <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. To poskytuje přístup k Store.
+- Nastavte vlastnost zdědit direktivy Template na [Microsoft. VisualStudio. TextTemplating. VSHost. ModelingTextTransformation](/previous-versions/bb893209(v=vs.140)). To poskytuje přístup ke Storu.
 
-- Zadejte procesory direktiv pro DSL, který chcete získat přístup. Tento kód načte sestavení vašeho DSL tak, že můžete použít své doménové třídy, vlastnosti a vztahy v kódu textové šablony. Také načte soubor modelu, který zadáte.
+- Zadejte procesory direktiv pro DSL, ke kterým chcete získat přístup. Tím se načte sestavení pro vaši DSL, abyste mohli používat své doménové třídy, vlastnosti a vztahy v kódu textové šablony. Načte také soubor modelu, který zadáte.
 
-  A `.tt` soubor podobně jako v následujícím příkladu se vytvoří v ladění projektu při vytváření nové řešení sady Visual Studio z šablony minimální jazyka DSL.
+  `.tt` Soubor podobný následujícímu příkladu je vytvořen v projektu ladění při vytváření nového řešení sady Visual Studio ze šablony minimálního jazyka DSL.
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -50,37 +51,37 @@ Here is a list of elements in the model:
 #>
 ```
 
- Všimněte si, že o této šabloně následující body:
+ Všimněte si následujících bodů této šablony:
 
-- Šablonu můžete použít doménové třídy, vlastnosti a vztahy, které jste definovali v definici DSL.
+- Šablona může používat doménové třídy, vlastnosti a vztahy, které jste definovali v definici DSL.
 
-- Se šablona načte, který zadáte v souboru modelu `requires` vlastnost.
+- Šablona načte soubor modelu, který zadáte do `requires` vlastnosti.
 
-- Vlastnost v `this` obsahuje kořenový element. Odtud můžete kód přejít na další prvky modelu. Název vlastnosti je obvykle stejný jako kořenový doménová třída tohoto kódu DSL. V tomto příkladu je to `this.ExampleModel`.
+- Vlastnost v `this` obsahuje kořenový element. Odtud může váš kód přejít na jiné prvky modelu. Název vlastnosti je obvykle stejný jako třída kořenové domény vaší DSL. V tomto příkladu je to `this.ExampleModel`.
 
-- I když je jazyk, ve kterém jsou zapsány fragmenty kódu jazyka C#, můžete vygenerovat text jakéhokoli druhu. Můžete také napsat kód [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] tak, že přidáte vlastnost `language="VB"` k `template` směrnice.
+- I když jazyk, ve kterém jsou fragmenty kódu napsané, je C#, můžete vygenerovat text libovolného typu. Můžete také napsat kód v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] části `template` přidáním vlastnosti `language="VB"` do direktivy.
 
-- Chcete-li ladit šablonu, přidejte `debug="true"` k `template` směrnice. Šablonu se otevře v jiné instanci sady Visual Studio, pokud dojde k výjimce. Pokud chcete do ladicího programu v konkrétním bodě v kódu, vložte – příkaz `System.Diagnostics.Debugger.Break();`
+- Chcete-li ladit šablonu, `debug="true"` přidejte `template` do direktivy. Šablona se otevře v jiné instanci sady Visual Studio, pokud dojde k výjimce. Pokud chcete přerušit ladicí program v určitém místě v kódu, vložte příkaz`System.Diagnostics.Debugger.Break();`
 
    Další informace najdete v tématu [ladění textové šablony T4](../modeling/debugging-a-t4-text-template.md).
 
-## <a name="about-the-dsl-directive-processor"></a>Informace o procesoru direktiv DSL
- Šablonu můžete použít doménové třídy definované v definici DSL. To je způsobené směrnice, které obvykle se zobrazí dříve v šabloně. V předchozím příkladu je následující.
+## <a name="about-the-dsl-directive-processor"></a>O procesoru direktiv DSL
+ Šablona může používat doménové třídy, které jste definovali v definici DSL. To se týká direktivy, která se obvykle zobrazuje v blízkosti začátku šablony. V předchozím příkladu je to následující.
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
 ```
 
- Název směrnice ( `MyLanguage`, v tomto příkladu) je odvozen z názvu tohoto kódu DSL. Vyvolá *procesor direktiv* , který je generován jako součást tohoto kódu DSL. Můžete najít jeho zdrojový kód v **Dsl\GeneratedCode\DirectiveProcessor.cs**.
+ Název direktivy ( `MyLanguage`v tomto příkladu) je odvozený od názvu vaší DSL. Vyvolá *procesor direktiv* , který se generuje jako součást vaší DSL. Svůj zdrojový kód můžete najít v **Dsl\GeneratedCode\DirectiveProcessor.cs**.
 
  Procesor direktiv DSL provádí dvě hlavní úlohy:
 
-- Vloží efektivně direktivy sestavení a importovat do šablony, která odkazuje na vaše DSL. To vám umožní používat doménové třídy v kódu šablony.
+- Do šablony, která odkazuje na DSL, to efektivně vloží direktivy Assembly a import. To vám umožňuje používat vaše doménové třídy v kódu šablony.
 
-- Načte soubor, který zadáte `requires` parametr a nastaví vlastnost `this` , který odkazuje na kořenový element načíst model.
+- Načte soubor, který zadáte v `requires` parametru, a nastaví vlastnost v `this` , která odkazuje na kořenový prvek načteného modelu.
 
-## <a name="validating-the-model-before-running-the-template"></a>Ověření modelu před spuštěním šablony
- Může způsobit modelu na ověření. před provedením šablony.
+## <a name="validating-the-model-before-running-the-template"></a>Ověřování modelu před spuštěním šablony
+ Můžete způsobit, že se model ověří před provedením šablony.
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>
@@ -88,18 +89,18 @@ Here is a list of elements in the model:
 
  Všimněte si, že:
 
-1. `filename` a `validation` parametry jsou odděleny ";" a musí být žádné jiné oddělovače nebo mezery.
+1. Parametry `filename` a`validation` jsou odděleny znakem ";" a nesmí existovat žádné jiné oddělovače nebo mezery.
 
-2. Seznam kategorií ověřování určuje, jaké metody ověřování se spustí. Více kategorií by měla být oddělena pomocí "&#124;" a musí být žádné jiné oddělovače nebo mezery.
+2. Seznam kategorií ověřování určuje, které metody ověřování budou provedeny. Více kategorií by mělo být odděleno&#124;znakem "" a nesmí existovat žádné jiné oddělovače nebo mezery.
 
-   Pokud je nalezena chyba, se ohlásí v okně chyby a výsledek soubor obsahovat chybovou zprávu.
+   Pokud je nalezena chyba, bude uvedena v okně chyby a výsledný soubor bude obsahovat chybovou zprávu.
 
-## <a name="Multiple"></a> Přístup k více modelů z textové šablony
+## <a name="Multiple"></a>Přístup k více modelům z textové šablony
 
 > [!NOTE]
-> Tato metoda umožňuje číst několik modelů v stejnou šablonu, ale nepodporuje odkazy ModelBus. Modely, které jsou vzájemně propojena ModelBus odkazy najdete v tématu [pomocí Visual Studio ModelBus v textové šabloně](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+> Tato metoda umožňuje číst více modelů ve stejné šabloně, ale nepodporuje ModelBus odkazy. Chcete-li číst modely propojené odkazy ModelBus, přečtěte si téma [použití Visual Studio Modelbus v textové šabloně](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- Pokud chcete pro přístup k více než jeden model ze stejné textové šablony, je nutné volat procesoru vygenerovaných direktiv vždy jednou pro každý model. Musíte zadat název souboru každý model v `requires` parametru. Je nutné zadat názvy, které chcete použít pro třídu kořenové domény v `provides` parametru. Je nutné zadat jiné hodnoty `provides` parametrů každé volání rozhraní direktiv. Předpokládejme například, že máte tři soubory modelu s názvem Library.xyz, School.xyz a Work.xyz. Pro přístup k nim ze stejné textové šablony, musí zapsat tři direktiv volání, které se podobají následující dotazy.
+ Pokud chcete získat přístup k více než jednomu modelu ze stejné textové šablony, je nutné zavolat procesor vygenerovaný direktivou jednou pro každý model. Je nutné zadat název souboru každého modelu v `requires` parametru. Je nutné zadat názvy, které chcete použít pro kořenovou třídu domény v `provides` parametru. V každém volání direktivy musíte zadat `provides` jiné hodnoty parametrů. Předpokládejme například, že máte tři soubory modelu s názvem Library. xyz, School. xyz a Work. xyz. Chcete-li získat přístup ze stejné textové šablony, je nutné zapsat tři volání direktiv, která připomínají následující.
 
 ```
 <#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>
@@ -108,9 +109,9 @@ Here is a list of elements in the model:
 ```
 
 > [!NOTE]
-> Tento příklad kódu je pro jazyk, který je založen na šabloně minimální jazykový řešení.
+> Tento ukázkový kód je určen pro jazyk, který je založen na šabloně minimálního jazyka řešení.
 
- Pro přístup k modelů do textové šablony, teď můžete psát kód podobný kód v následujícím příkladu.
+ Chcete-li získat přístup k modelům v textové šabloně, můžete nyní napsat kód podobný kódu v následujícím příkladu.
 
 ```csharp
 <#
@@ -135,21 +136,21 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ```
 
 ## <a name="loading-models-dynamically"></a>Dynamické načítání modelů
- Pokud chcete určit za běhu, které modely načtení, můžete načíst soubor modelu dynamicky ve svém kódu programu, namísto použití direktivy specifické pro DSL.
+ Pokud chcete určit za běhu, které modely načíst, můžete místo použití direktivy specifické pro DSL načíst soubor modelu dynamicky v kódu programu.
 
- Jedna z funkcí směrnice specifické pro DSL je však pro import oboru názvů DSL tak, aby kód šablony mohl používat doménové třídy definované v tomto DSL. Vzhledem k tomu, že nepoužíváte direktivu, je nutné přidat  **\<sestavení >** a  **\<import >** direktivy pro všechny modely, které může načíst. Je to snadné, pokud jsou všechny výskyty stejného DSL různých modelů, které může načíst.
+ Jedna z funkcí direktivy specifické pro DSL je však importovat obor názvů DSL, aby kód šablony mohl používat doménové třídy definované v této DSL. Vzhledem k tomu, že nepoužíváte direktivu, je nutné přidat  **\<sestavení >** a  **\<importovat >** direktiv pro všechny modely, které mohou být načteny. To je jednoduché, pokud jsou různé modely, které můžete načíst, všechny instance stejné DSL.
 
- Načíst soubor, největší efektivity dosáhnete metodou je používání Visual Studio ModelBus. V rámci typického scénáře použije textová šablona direktivu specifické pro DSL načíst první model obvyklým způsobem. Tento model by obsahoval odkazy ModelBus k jinému modelu. ModelBus můžete použít k otevření odkazovaným modelem a přístup ke konkrétní elementu. Další informace najdete v tématu [pomocí Visual Studio ModelBus v textové šabloně](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+ Pro načtení souboru je nejúčinnější metodou použití Visual Studio ModelBus. V typickém scénáři vaše textová šablona použije direktivu specifickou pro načtení prvního modelu obvyklým způsobem. Tento model by obsahoval odkazy ModelBus na jiný model. Můžete použít ModelBus k otevření odkazovaného modelu a přístup k určitému prvku. Další informace najdete v tématu [pomocí Visual Studio ModelBus v textové šabloně](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- V rámci méně obvyklé scénáře, můžete chtít otevřít soubor modelu, pro který máte jenom název souboru, a která nemusí být v aktuálním projektu sady Visual Studio. V takovém případě můžete otevřít soubor pomocí techniky popsané v [jak: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+ V méně obvyklém scénáři můžete chtít otevřít soubor modelu, pro který máte pouze název souboru a který nemusí být v aktuálním projektu sady Visual Studio. V tomto případě můžete soubor otevřít pomocí techniky popsané v [tématu How to: Otevřete model ze souboru v kódu](../modeling/how-to-open-a-model-from-file-in-program-code.md)programu.
 
 ## <a name="generating-multiple-files-from-a-template"></a>Generování více souborů ze šablony
- Pokud chcete vygenerovat několik souborů – například ke generování samostatného souboru pro každý prvek v modelu, existuje několik možných přístupů. Ve výchozím nastavení je vytvořen pouze jeden soubor z každého souboru šablony.
+ Pokud chcete vygenerovat několik souborů – například pro vygenerování samostatného souboru pro každý prvek v modelu, existuje několik možných přístupů. Ve výchozím nastavení je z každého souboru šablony vytvořen pouze jeden soubor.
 
-### <a name="splitting-a-long-file"></a>Rozdělení souboru dlouhý
- V této metodě použijte šablonu pro generování jednoho souboru, oddělené oddělovačem. Soubor se poté rozděleny do částí. Existují dvě šablony, z nich se má generovat jeden soubor a druhým k ho rozdělte.
+### <a name="splitting-a-long-file"></a>Rozdělení dlouhého souboru
+ V této metodě použijete šablonu k vygenerování jednoho souboru odděleného oddělovačem. Pak soubor rozdělíte na jeho části. Existují dvě šablony, jeden pro vygenerování jednoho souboru a druhý pro rozdělení.
 
- **LoopTemplate.t4** generuje dlouhé jeden soubor. Všimněte si, že jeho přípona byla ".t4", protože nemají být zpracovány přímo po kliknutí na **Transformovat všechny šablony**. Tato šablona má parametr, který určuje oddělovač řetězec, který odděluje segmenty:
+ **LoopTemplate. T4** generuje dlouhý jeden soubor. Všimněte si, že jeho Přípona souboru je ". T4", protože by neměla být zpracována přímo po kliknutí na možnost **transformovat všechny šablony**. Tato šablona přebírá parametr, který určuje řetězec oddělovače, který odděluje segmenty:
 
 ```
 <#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -171,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt` Vyvolá `LoopTemplate.t4`a pak rozdělí výsledný soubor do jeho segmentů. Všimněte si, že tato šablona nemusí být šablonu modelování protože nenačítá modelu.
+ `LoopSplitter.tt``LoopTemplate.t4`vyvolá a pak rozdělí výsledný soubor na jeho segmenty. Všimněte si, že tato šablona nemusí mít šablonu modelování, protože nečte model.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

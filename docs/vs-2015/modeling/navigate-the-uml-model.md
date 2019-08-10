@@ -1,5 +1,5 @@
 ---
-title: Procházení modelu UML | Dokumentace Microsoftu
+title: Navigace v modelu UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,123 +11,124 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c98aefb5e3dc0090338233ca5b05b4ebc6460719
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158980"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871779"
 ---
 # <a name="navigate-the-uml-model"></a>Procházení modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Toto téma uvádí hlavní typy modelu UML.  
-  
-## <a name="the-model-elements-model-and-model-store"></a>Prvky modelu, Model a Model Store  
- Typy definované v sestavení **Microsoft.VisualStudio.Uml.Interfaces.dll** odpovídají typům definovaným v [specifikaci UML, verze 2.1.2](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).  
-  
- Typy ve specifikaci UML jsou realizovány jako rozhraní v sadě Visual Studio. Písmeno "I" je přidáno před název každého typu. Příklad: <xref:Microsoft.VisualStudio.Uml.Classes.IElement>, <xref:Microsoft.VisualStudio.Uml.Classes.IClass>, <xref:Microsoft.VisualStudio.Uml.Interactions.IInteraction>, <xref:Microsoft.VisualStudio.Uml.Classes.IOperation>.  
-  
- Všechny typy s výjimkou IElement dědí vlastnosti z jednoho nebo více nadtypů.  
-  
-- Shrnutí typů modelu viz [typy prvků modelu UML](../modeling/uml-model-element-types.md).  
-  
-- Úplné podrobnosti o rozhraní API najdete v části [Reference k rozhraní API pro rozšíření modelování UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
-  
-### <a name="relationships"></a>Relace  
- Vlastnosti a vztahy, které jsou definovány ve specifikaci UML jsou implementovány jako vlastnosti rozhraní .NET.  
-  
- Jsou většinu vztahů lze procházet v obou směrech. Vztah odpovídá dvojici vlastností s jednou vlastností pro typ na každém konci. Například vlastnosti `IElement.Owner` a `IElement.OwnedElements` představují dva konce vztahu. Proto tento výraz bude vždy vyhodnocen na hodnotu true:  
-  
- `IElement c; ...  c.OwnedElements.All(x => x.Owner == c)`  
-  
- Mnoho vztahů, například IAssociation, jsou také reprezentované objektem, který může mít svůj vlastní vlastnosti.  
-  
- Pokud odstraníte z modelu prvek, každá relace, ve kterém se účastní se odstraní automaticky a vlastnost na druhém konci je aktualizována.  
-  
- Pokud specifikace UML přiřadí vlastnosti násobnost 0.. 1, může mít hodnotu `null`. Násobnost s maximem větším než 1 znamená, že má vlastnost .NET typ: `IEnumerable<`*Typ*`>`.  
-  
- Další informace o překračování vztahů naleznete v tématu [procházení vztahů pomocí rozhraní API UML](../modeling/navigate-relationships-with-the-uml-api.md).  
-  
-### <a name="the-ownership-tree"></a>Strom vlastnictví  
- Model obsahuje strom <xref:Microsoft.VisualStudio.Uml.Classes.IElement> objekty. Každý prvek má vlastnosti `OwnedElements` a `Owner`.  
-  
- Ve většině případů cíle `Owner` a `OwnedElements` vlastnosti jsou také odkazovány jinými vlastnostmi, které mají specifičtější názvy. Například každé operace UML je vlastněná třídou UML. Proto <xref:Microsoft.VisualStudio.Uml.Classes.IOperation> má vlastnost s názvem <xref:Microsoft.VisualStudio.Uml.Classes.IOperation.Class%2A>a v každé <xref:Microsoft.VisualStudio.Uml.Classes.IOperation> objektu, `Class == Owner`.  
-  
- Nejvyšší prvek stromu, který nemá vlastníka, je <xref:Microsoft.VisualStudio.Uml.AuxiliaryConstructs.IModel>. IModel je součástí <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml.IModelStore>, v níž je <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml.IModelStore.Root%2A>.  
-  
- Každý prvek modelu je vytvořen s vlastníkem. Další informace najdete v tématu [vytváření elementů a vztahů v modelech UML](../modeling/create-elements-and-relationships-in-uml-models.md).  
-  
- ![Diagram tříd: Model, Diagram, tvar a Element](../modeling/media/uml-mm1.png "UML_MM1")  
-  
-## <a name="shapes-and-diagrams"></a>Tvary a diagramy  
- Prvky v modelu UML lze zobrazit v diagramech. Různé typy diagramů mohou zobrazit různé podtypy IElement.  
-  
- V některých případech se může prvek zobrazit ve více než jeden diagram. Například IUseCase prvek může mít například několik IShapes, které lze zobrazit na jednom diagramu nebo různých diagramech.  
-  
- Tvary jsou uspořádány ve stromové struktuře. Okraje stromu jsou reprezentovány vlastnostmi ParentShape a ChildShapes. Diagramy jsou pouze tvary, které nemají nadřazené položky. Tvary na povrchu diagramu se skládají z menších částí. Například tvar třídy má oddíly pro atributy a operace.  
-  
- Další informace o tvarech naleznete v tématu [zobrazení modelu UML v diagramech](../modeling/display-a-uml-model-on-diagrams.md).  
-  
-## <a name="access-to-the-model-in-extensions"></a>Přístup k modelu v rozšířeních  
- V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření definovaných jako komponenty MEF můžete deklarovat vlastnosti, které importují informace z kontextu, ve kterém se spustí rozšíření.  
-  
-|Typ atributu|Získáte přístup k|Další informace|  
-|--------------------|----------------------------------|----------------------|  
-|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> .IDiagramContext<br /><br /> (v Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Aktuální diagram výběru.|[Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
-|Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (v Microsoft.VisualStudio.Modeling.Sdk. [version] .dll)|Umožňuje seskupení změn do transakce.|[Propojení aktualizací modelu UML pomocí transakcí](../modeling/link-uml-model-updates-by-using-transactions.md)|  
-|Microsoft.VisualStudio.Shell. SVsServiceProvider<br /><br /> (v Microsoft.VisualStudio.Shell.Immutable. [version] .dll)|Hostitel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Odtud můžete přístup k souborům, projektům a další aspekty.|[Otevření modelu UML pomocí rozhraní API sady Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|  
-  
-### <a name="to-get-the-context"></a>Získání kontextu  
- Deklarace jednoho nebo obou z následujících rozhraní uvnitř vaší třídy rozšíření:  
-  
-```  
-[Import] public IDiagramContext DiagramContext { get; set; }  
-  
-```  
-  
- Managed Extensibility Framework (MEF) je naváže na definice, ze kterých můžete získat aktuální diagram, úložiště modelu, kořenový objekt a tak dále:  
-  
-```  
-IDiagram diagram = this.DiagramContext.CurrentDiagram;  
-IClassDiagram classDiagram = diagram as IClassDiagram;  
-       // or diagrams of other types  
-IModelStore modelStore = diagram.ModelStore;  
-IModel model = modelStore.Root;  
-foreach (IDiagram diagram in modelStore.Diagrams) {...}  
-foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}  
-```  
-  
-### <a name="to-get-the-current-selection"></a>Chcete-li získat aktuální výběr  
-  
-```  
-// All selected shapes and their elements  
-foreach (IShape shape in diagram.SelectedShapes)  
-{    
-   IDiagram selectedDiagram = shape as IDiagram;  
-   if (selectedDiagram != null)  
-   { // no shape selected - user right-clicked the diagram  
-     ... Context.CurrentDiagram ...  
-   }  
-   else  
-   {  
-     IElement selectedElement = shape.Element;  
-   ...}  
-// All selected shapes that display a specfic type of element  
-foreach (IShape<IInterface> in   
-   diagram.GetSelectedShapes<IInterface>())   
-{...}  
-```  
-  
-## <a name="accessing-another-model-or-diagrams"></a>Přístup k jiným modelům nebo diagramům  
- Můžete:  
-  
-- Použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] model Service bus k vytvoření odkazů mezi prvky v různých modelech. Další informace najdete v tématu [modely UML integrovat s jinými modely a nástroji](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
-  
-- Načíst projekt modelování a diagramy v režimu jen pro čtení bez zviditelnění v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uživatelské rozhraní. Další informace najdete v tématu [čtení modelu UML v programovém kódu](../modeling/read-a-uml-model-in-program-code.md).  
-  
-- Otevřete projekt modelování a jeho diagramy v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]a pak přístup k obsahu. Další informace najdete v tématu [otevření modelu UML pomocí rozhraní API sady Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
-  
-## <a name="see-also"></a>Viz také  
- [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)   
- [Programování pomocí rozhraní API UML](../modeling/programming-with-the-uml-api.md)
+Toto téma představuje hlavní typy modelu UML.
+
+## <a name="the-model-elements-model-and-model-store"></a>Modely prvků, modelů a úložiště modelu
+ Typy definované v sestavení **Microsoft. VisualStudio. Uml. Interfaces. dll** odpovídají typům definovaným ve [specifikaci UML verze 2.1.2](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
+
+ Typy ve specifikaci UML jsou realizovány jako rozhraní v aplikaci Visual Studio. K názvu každého typu se přidá písmeno "I". Příklad: [IElement](/previous-versions/dd516035(v=vs.140)), [IClass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
+
+ Všechny typy s výjimkou IElement dědí vlastnosti z jednoho nebo více typů.
+
+- Souhrn typů modelů naleznete v tématu [typy prvků modelu UML](../modeling/uml-model-element-types.md).
+
+- Úplné podrobnosti o rozhraní API najdete v tématu [Reference k rozhraní API pro rozšiřitelnost modelování UML](../modeling/api-reference-for-uml-modeling-extensibility.md).
+
+### <a name="relationships"></a>Relace
+ Vlastnosti a vztahy, které jsou definovány ve specifikaci UML, jsou implementovány jako vlastnosti rozhraní .NET.
+
+ Většina vztahů se v obou směrech naviguje. Vztah odpovídá páru vlastností s jednou vlastností typu na každém konci. Například vlastnosti `IElement.Owner` a `IElement.OwnedElements` reprezentují dva konce relace. Proto se tento výraz vždy vyhodnotí jako true:
+
+ `IElement c; ...  c.OwnedElements.All(x => x.Owner == c)`
+
+ Mnoho vztahů, například IAssociation, je také reprezentované objektem, který může mít své vlastní vlastnosti.
+
+ Odstraníte-li prvek z modelu, dojde k automatickému odstranění všech relací, ve kterých je součást obsažena a vlastnost na druhém konci je aktualizována.
+
+ Pokud specifikace UML přiřadí násobnost 0.. 1 k vlastnosti, může mít hodnotu `null`. Násobnost s maximálním limitem větším než 1 znamená, že vlastnost .NET má typ: `IEnumerable<`*Zadejte*`>`.
+
+ Další informace o přecházení mezi vztahy najdete v tématu [navigace s rozhraním API UML](../modeling/navigate-relationships-with-the-uml-api.md).
+
+### <a name="the-ownership-tree"></a>Strom vlastnictví
+ Model obsahuje strom objektů [IElement](/previous-versions/dd516035(v=vs.140)) . Každý prvek má vlastnosti `OwnedElements` a `Owner`.
+
+ Ve většině případů cíle `Owner` vlastností a `OwnedElements` odkazují také na jiné vlastnosti, které mají konkrétnější názvy. Například každá operace UML je vlastněna třídou UML. Proto [IOperation](/previous-versions/dd481186(v=vs.140)) má vlastnost s názvem [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)a v každém objektu [](/previous-versions/dd481186(v=vs.140)) `Class == Owner`IOperation.
+
+ Nejvyšší prvek stromu, který nemá žádného vlastníka, je `AuxiliaryConstructs.IModel`. IModel je obsažen `IModelStore`v, ve kterém je [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
+
+ Každý prvek modelu je vytvořen s vlastníkem. Další informace najdete v tématu [vytváření elementů a vztahů v modelech UML](../modeling/create-elements-and-relationships-in-uml-models.md).
+
+ ![Diagram tříd: Model, diagram, tvar a element](../modeling/media/uml-mm1.png)
+
+## <a name="shapes-and-diagrams"></a>Tvary a diagramy
+ Prvky v modelu UML lze zobrazit v diagramech. Různé typy diagramů mohou zobrazovat různé podtypy IElement.
+
+ V některých případech se element může objevit ve více než jednom diagramu. Například element IUseCase může mít několik IShapes, které se mohou objevit na jednom nebo několika diagramech.
+
+ Tvary jsou uspořádány ve stromové struktuře. Okraje stromu jsou reprezentovány vlastnostmi ParentShape a ChildShapes. Diagramy jsou jediné tvary, které nemají nadřazené položky. Tvary na povrchu diagramu se skládají z menších částí. Například tvar třídy má oddíly pro atributy a operace.
+
+ Další informace o obrazcích naleznete v tématu [zobrazení modelu UML v diagramech](../modeling/display-a-uml-model-on-diagrams.md).
+
+## <a name="access-to-the-model-in-extensions"></a>Přístup k modelu v rozšířeních
+ V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšířeních definovaných jako komponenty MEF můžete deklarovat vlastnosti, které importují informace z kontextu, ve kterém je rozšíření spuštěno.
+
+|Typ atributu|K čemu poskytuje přístup|Další informace|
+|--------------------|----------------------------------|----------------------|
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> .IDiagramContext<br /><br /> (v Microsoft. VisualStudio. ArchitectureTools. rozšiřitelnost. dll)|Aktuální diagram fokusu|[Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|
+|Microsoft. VisualStudio. Modeling. ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (v Microsoft. VisualStudio. Modeling. SDK. [Version]. dll)|Umožňuje seskupit změny do transakcí.|[Propojení aktualizací modelu UML pomocí transakcí](../modeling/link-uml-model-updates-by-using-transactions.md)|
+|Microsoft. VisualStudio. Shell. SVsServiceProvider<br /><br /> (v Microsoft. VisualStudio. Shell. unmutable. [Version]. dll)|Hostitel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Odtud získáte přístup k souborům, projektům a dalším aspektům.|[Otevření modelu UML pomocí rozhraní API sady Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|
+
+### <a name="to-get-the-context"></a>Získání kontextu
+ Deklarujte jedno nebo obě následující rozhraní v rámci třídy rozšíření:
+
+```
+[Import] public IDiagramContext DiagramContext { get; set; }
+
+```
+
+ Managed Extensibility Framework (MEF) je sváže s definicemi, ze kterých můžete získat aktuální diagram, úložiště modelu, kořenový objekt a tak dále:
+
+```
+IDiagram diagram = this.DiagramContext.CurrentDiagram;
+IClassDiagram classDiagram = diagram as IClassDiagram;
+       // or diagrams of other types
+IModelStore modelStore = diagram.ModelStore;
+IModel model = modelStore.Root;
+foreach (IDiagram diagram in modelStore.Diagrams) {...}
+foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
+```
+
+### <a name="to-get-the-current-selection"></a>Získání aktuálního výběru
+
+```
+// All selected shapes and their elements
+foreach (IShape shape in diagram.SelectedShapes)
+{
+   IDiagram selectedDiagram = shape as IDiagram;
+   if (selectedDiagram != null)
+   { // no shape selected - user right-clicked the diagram
+     ... Context.CurrentDiagram ...
+   }
+   else
+   {
+     IElement selectedElement = shape.Element;
+   ...}
+// All selected shapes that display a specfic type of element
+foreach (IShape<IInterface> in
+   diagram.GetSelectedShapes<IInterface>())
+{...}
+```
+
+## <a name="accessing-another-model-or-diagrams"></a>Přístup k jinému modelu nebo diagramům
+ Můžete:
+
+- Pomocí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sběrnice modelu můžete vytvořit propojení mezi prvky v různých modelech. Další informace najdete v tématu [Integrace modelů UML s jinými modely a nástroji](../modeling/integrate-uml-models-with-other-models-and-tools.md).
+
+- Načtěte projekt modelování a diagramy v režimu jen pro čtení, bez toho, aby se [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zobrazily v uživatelském rozhraní. Další informace najdete v tématu [čtení modelu UML v programovém kódu](../modeling/read-a-uml-model-in-program-code.md).
+
+- Otevřete projekt modelování a jeho diagramy v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]a potom přejděte k obsahu. Další informace najdete v tématu [otevření modelu UML pomocí rozhraní API sady Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
+
+## <a name="see-also"></a>Viz také:
+
+- [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)
+- [Programování pomocí rozhraní API UML](../modeling/programming-with-the-uml-api.md)

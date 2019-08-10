@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13341d8cb6a708f4e10f211bd47b79a75e1b6e2a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952032"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926039"
 ---
 # <a name="set-radix-command"></a>Nastavit základ – příkaz
-Nastaví nebo vrátí číselný základ slouží k zobrazení hodnot typu integer.
+Nastaví nebo vrátí číselnou základnu použitou k zobrazení celočíselných hodnot.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,12 +30,12 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ```
 
 ## <a name="arguments"></a>Arguments
- `10` nebo `16` nebo `hex` nebo `dec`
+`10`nebo `16`neboor `hex``dec`
 
- Volitelné. Určuje desetinné číslo (10 nebo dec) nebo šestnáctkové číslo (maximálně 16 šestnáctkových). Pokud je argument vynechán, je vrácena aktuální hodnota Číselná soustava.
+Volitelné. Označuje desetinné číslo (10 nebo DEC) nebo hexadecimální (16 nebo hex). Pokud je argument vynechán, je vrácena aktuální hodnota základu.
 
 ## <a name="example"></a>Příklad
- V tomto příkladu nastaví prostředí tak, aby zobrazení celočíselné hodnoty v šestnáctkovém formátu.
+Tento příklad nastaví prostředí tak, aby zobrazovalo celočíselné hodnoty v šestnáctkovém formátu.
 
 ```cmd
 >Debug.SetRadix hex

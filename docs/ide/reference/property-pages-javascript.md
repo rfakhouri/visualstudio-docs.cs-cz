@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b86a32cb055eded71535b84b6b09fd59f78595
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605933"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926200"
 ---
 # <a name="property-pages-javascript"></a>Stránky vlastností, JavaScript
 
@@ -40,11 +40,11 @@ Pomocí následujících možností vyberte konfiguraci a platformu, které chce
 
  **Konfigurace**
 
- Určuje nastavení konfigurace, která se mají zobrazit nebo upravit. Nastavení jsou **ladění** (výchozí), **vydaná verze**, **všechny konfigurace**nebo uživatelsky definovaná konfigurace. Další informace najdete v tématu [jak: Nastavení konfigurace ladění a vydání v sadě Visual](../../debugger/how-to-set-debug-and-release-configurations.md)Studio.
+Určuje nastavení konfigurace, která se mají zobrazit nebo upravit. Nastavení jsou **ladění** (výchozí), **vydaná verze**, **všechny konfigurace**nebo uživatelsky definovaná konfigurace. Další informace najdete v tématu [jak: Nastavení konfigurace ladění a vydání v sadě Visual](../../debugger/how-to-set-debug-and-release-configurations.md)Studio.
 
  **Platformy**
 
- Určuje nastavení platformy, která se mají zobrazit nebo upravit. Nastavení jsou **všechny procesory** (výchozí pro [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikace), **x64**, **ARM**, **x86**nebo uživatelsky definované platformy. Další informace najdete v tématu [jak: Nastavení konfigurace ladění a vydání v sadě Visual](../../debugger/how-to-set-debug-and-release-configurations.md)Studio.
+Určuje nastavení platformy, která se mají zobrazit nebo upravit. Nastavení jsou **všechny procesory** (výchozí pro [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikace), **x64**, **ARM**, **x86**nebo uživatelsky definované platformy. Další informace najdete v tématu [jak: Nastavení konfigurace ladění a vydání v sadě Visual](../../debugger/how-to-set-debug-and-release-configurations.md)Studio.
 
 ## <a name="general-page"></a>Stránka Obecné
 
@@ -55,13 +55,13 @@ Pomocí následujících možností nastavte obecné vlastnosti projektu.
 
  **Výstupní cesta**
 
- Určuje umístění výstupních souborů pro konfiguraci projektu. Cesta je relativní; Pokud zadáte absolutní cestu, absolutní cesta je uložena v projektu. Výchozí cesta je bin\Debug.
+Určuje umístění výstupních souborů pro konfiguraci projektu. Cesta je relativní; Pokud zadáte absolutní cestu, absolutní cesta je uložena v projektu. Výchozí cesta je bin\Debug.
 
- Použijete-li zjednodušené konfigurace sestavení, systém projektu určí, zda má být vytvořena verze ladění nebo vydání. Po kliknutí na **ladění** > **Spustit ladění** (nebo stisknutím klávesy **F5**) je sestavení vloženo do umístění ladění bez ohledu na **výstupní cestu** , kterou zadáte. Příkaz **Sestavit řešení** v nabídce **sestavení** však vloží do umístění, které zadáte. Chcete-li povolit pokročilé konfigurace sestavení, na panelu nabídek vyberte možnost **nástroje** > **Možnosti**. V dialogovém okně **Možnosti** rozbalte položku **projekty a řešení**, vyberte možnost **Obecné**a zrušte zaškrtnutí políčka **Zobrazit pokročilé konfigurace sestavení** . Tím získáte ruční kontrolu nad všemi konfiguračními hodnotami a zda je vytvořena verze ladění nebo vydání.
+Použijete-li zjednodušené konfigurace sestavení, systém projektu určí, zda má být vytvořena verze ladění nebo vydání. Po kliknutí na **ladění** > **Spustit ladění** (nebo stisknutím klávesy **F5**) je sestavení vloženo do umístění ladění bez ohledu na **výstupní cestu** , kterou zadáte. Příkaz **Sestavit řešení** v nabídce **sestavení** však vloží do umístění, které zadáte. Chcete-li povolit pokročilé konfigurace sestavení, na panelu nabídek vyberte možnost **nástroje** > **Možnosti**. V dialogovém okně **Možnosti** rozbalte položku **projekty a řešení**, vyberte možnost **Obecné**a zrušte zaškrtnutí políčka **Zobrazit pokročilé konfigurace sestavení** . Tím získáte ruční kontrolu nad všemi konfiguračními hodnotami a zda je vytvořena verze ladění nebo vydání.
 
  **Výchozí jazyk**
 
- Určuje výchozí jazyk pro projekt. Možnost jazyka vybraná v části **hodiny, jazyk a oblast** v Ovládacích panelech určuje preferovaný jazyk uživatele. Zadáním výchozího jazyka pro projekt se ujistěte, že zadané výchozí jazykové prostředky budou použity, pokud preferovaný jazyk uživatele neodpovídá jazykovým prostředkům uvedeným v aplikaci.
+Určuje výchozí jazyk pro projekt. Možnost jazyka vybraná v části **hodiny, jazyk a oblast** v Ovládacích panelech určuje preferovaný jazyk uživatele. Zadáním výchozího jazyka pro projekt se ujistěte, že zadané výchozí jazykové prostředky budou použity, pokud preferovaný jazyk uživatele neodpovídá jazykovým prostředkům uvedeným v aplikaci.
 
 ## <a name="debug-page"></a>Ladit stránku
 
@@ -72,7 +72,7 @@ Pomocí následujících možností nastavte vlastnosti pro chování ladění v
 
  **Spuštění ladicího programu**
 
- Určuje výchozího hostitele pro ladicí program.
+Určuje výchozího hostitele pro ladicí program.
 
 - Vyberte možnost **místní počítač** a spusťte tak aplikaci na hostitelském počítači sady Visual Studio. Další informace najdete v tématu [spuštění aplikací v místním počítači](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 

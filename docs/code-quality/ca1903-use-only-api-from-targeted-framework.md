@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e57607cdfa8790c9b9fd4e692956f7bb823981a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744861"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921290"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Používejte jen rozhraní API z cílové architektury
 
@@ -27,44 +27,44 @@ ms.locfileid: "66744861"
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|Kategorie|Microsoft.Portability|
-|Narušující změna|Zásadní - při vyvolání s podpisem externě viditelného členu nebo typu.<br /><br /> Bez konce – při vyvolání v těle metody.|
+|Kategorie|Microsoft. přenositelnost|
+|Narušující změna|Přerušení – při vyvolání proti podpisu externě viditelného člena nebo typu.<br /><br /> Bez přerušení – při vyvolání v těle metody.|
 
-## <a name="cause"></a>Příčina
- Člen nebo typ používá člen nebo typ, který byl zaveden v aktualizaci service pack, která není součástí cílové rozhraní projektu.
+## <a name="cause"></a>příčina
+Člen nebo typ používá člen nebo typ, který byl představen v aktualizaci Service Pack, která nebyla zahrnuta do cíleného rozhraní projektu.
 
 ## <a name="rule-description"></a>Popis pravidla
- Nové členy a typy byly součástí rozhraní .NET Framework 2.0 Service Pack 1 a 2, rozhraní .NET Framework 3.0 Service Pack 1 a 2 a rozhraní .NET Framework 3.5 Service Pack 1. Projekty, které cílí hlavní verze rozhraní .NET Framework neúmyslně může trvat závislosti na těchto nových rozhraní API. Pokud chcete zabránit této závislosti, toto pravidlo je vyvoláno na použití nové členy a typy, které nejsou zahrnuty ve výchozím nastavení se cílové rozhraní projektu.
+Nové členy a typy byly součástí .NET Framework 2,0 Service Pack 1 a 2, .NET Framework 3,0 Service Pack 1 a 2 a .NET Framework 3,5 Service Pack 1. Projekty, které cílí na hlavní verze .NET Framework, můžou neúmyslně převzít závislosti na těchto nových rozhraních API. Chcete-li zabránit této závislosti, toto pravidlo je vyvoláno při použití všech nových členů a typů, které nebyly zahrnuty ve výchozím nastavení s cílovým rozhraním projektu.
 
- **Cílová architektura a závislosti Service Pack**
+**Závislosti cílové architektury a aktualizace Service Pack**
 
 |||
 |-|-|
-|Pokud je Cílová architektura|Je aktivována na použití členy zavedený|
-|.NET Framework 2.0|Rozhraní .NET framework 2.0 SP1, .NET Framework 2.0 SP2|
-|.NET Framework 3.0|Rozhraní .NET framework 2.0 SP1, .NET Framework 2.0 SP2, rozhraní .NET Framework 3.0 s aktualizací SP1, .NET Framework 3.0 s aktualizací SP2|
+|Když je cílová architektura|Aktivuje se při použití členů představených v.|
+|.NET Framework 2.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2|
+|.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|Není k dispozici|
 
- Chcete-li změnit cílový rámec projektu, [jak: Cílení na verzi .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Chcete-li změnit cílové rozhraní .NET Framework projektu [, přečtěte si téma How to: Cílí na verzi .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- K odebírání závislostí pro aktualizace service pack, odeberte všechny použití nového člena nebo typu. Pokud je to rozhodnout vědomě a záměrně závislost, potlačit upozornění nebo vypnout toto pravidlo.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li odebrat závislost na aktualizaci Service Pack, odeberte všechna použití nového člena nebo typu. Pokud se jedná o záměrné závislosti, potlačit upozornění nebo vypnout toto pravidlo.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění tohoto pravidla, pokud to není záměrné závislost na balíčku zadaná služba. V takovém případě se vaše aplikace nemusí podařit spustit v systémech bez této aktualizace service pack nainstalována. Potlačit upozornění nebo vypněte toto pravidlo, pokud jste to byli rozhodnout vědomě a záměrně závislost.
+Potlačit upozornění z tohoto pravidla, pokud se nejedná o záměrné závislosti na zadané aktualizaci Service Pack. V takovém případě se aplikace nemusí podařit spustit v systémech bez nainstalované této aktualizace Service Pack. Potlačit upozornění nebo vypnout toto pravidlo, pokud se jednalo o záměrné závislosti.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje třídu, která používá typ DateTimeOffset, která je dostupná pouze v rozhraní .NET 2.0 Service Pack 1. Tento příklad vyžaduje, aby byla vybrána rozhraní .NET Framework 2.0 v rozevíracím seznamu cílovou architekturu ve vlastnostech projektu.
+Následující příklad ukazuje třídu, která používá typ DateTimeOffset, který je k dispozici pouze v rozhraní .NET 2,0 Service Pack 1. Tento příklad vyžaduje, aby byl v rozevíracím seznamu cílové rozhraní ve vlastnostech projektu vybráno .NET Framework 2,0.
 
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
+[!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
 
 ## <a name="example"></a>Příklad
- V následujícím příkladu řeší dříve popsaná porušení nahrazením použití typu DateTimeOffset typu DateTime.
+Následující příklad opravuje dříve popsané porušení nahrazením využití typu DateTimeOffset typem DateTime.
 
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
+[!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
 
 ## <a name="see-also"></a>Viz také:
 
 - [Upozornění přenositelnosti](../code-quality/portability-warnings.md)
-- [Přehled cílení na rozhraní Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Přehled cílení na rozhraní](../ide/visual-studio-multi-targeting-overview.md)

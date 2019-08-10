@@ -12,42 +12,57 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c5420839d97fb62797d0f739ce62da4d14b340b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c36fbacfde97eb42b1feab3e9097a731437cce4e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744886"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870762"
 ---
-# <a name="assembly-information-dialog-box"></a>Dialogové okno Informace o sestavení
-**Informace o sestavení** dialogové okno se používá k určení hodnoty atributů globální sestavení rozhraní .NET Framework, které jsou uloženy v souboru AssemblyInfo automaticky vytvořené pomocí projektu. V **Průzkumníku řešení**, soubor se nachází v **Můj projekt** uzel v [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (klikněte na tlačítko **zobrazit všechny soubory** zobrazíte jeho); je umístěn v rámci  **Vlastnosti** v [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Další informace o atributech sestavení naleznete v tématu [atributy](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).
+# <a name="assembly-information-dialog-box"></a>dialogové okno Informace o sestavení
 
- Pro přístup k tomuto dialogovému oknu, vyberte uzel projektu v **Průzkumníka řešení**a potom na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **aplikace** kartu. Na **aplikace** stránky, klikněte na tlačítko **informace o sestavení** tlačítko.
+Dialogové okno informace o sestavení slouží k určení hodnot .NET Framework atributů globálních sestavení, které jsou uloženy v souboru AssemblyInfo vytvořeném automaticky s vaším projektem. V Průzkumník řešení je soubor AssemblyInfo umístěný v uzlu **můj projekt** pro Visual Basic projekty (kliknutím na **Zobrazit všechny soubory** ho zobrazíte). Pro C# projekty se nachází v části **vlastnosti**. Další informace naleznete v tématu [atributy (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index).
 
-## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
- **Název** Určuje název pro manifest sestavení. Odpovídá <xref:System.Reflection.AssemblyTitleAttribute>.
+Chcete-li získat přístup k tomuto dialogovému oknu, vyberte uzel projektu v **Průzkumník řešení**a potom v nabídce **projekt** vyberte možnost **vlastnosti**. Na stránce **aplikace** vyberte tlačítko **informace o sestavení** .
 
- **Popis** Určuje volitelný popis pro manifest sestavení. Odpovídá <xref:System.Reflection.AssemblyDescriptionAttribute>.
+## <a name="uielement-list"></a>UIElement – seznam
 
- **Společnost** Určuje název společnosti pro manifest sestavení. Odpovídá <xref:System.Reflection.AssemblyCompanyAttribute>.
+**Hlava**\
+Určuje název manifestu sestavení. <xref:System.Reflection.AssemblyTitleAttribute>Odpovídá.
 
- **Produkt** Určuje název produktu pro manifest sestavení. Odpovídá <xref:System.Reflection.AssemblyProductAttribute>.
+**Název**\
+Určuje volitelný popis manifestu sestavení. <xref:System.Reflection.AssemblyDescriptionAttribute>Odpovídá.
 
- **O autorských právech** určuje autorských právech pro manifest sestavení. Odpovídá <xref:System.Reflection.AssemblyCopyrightAttribute>.
+**Podnikový**\
+Určuje název společnosti pro manifest sestavení. <xref:System.Reflection.AssemblyCompanyAttribute>Odpovídá.
 
- **Ochranná známka** určuje ochranná známka pro manifest sestavení. Odpovídá <xref:System.Reflection.AssemblyTrademarkAttribute>.
+V registru můžete nastavit nebo změnit výchozí hodnotu pro společnost. Vyhledejte hodnotu **RegisteredOrganization** pod **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion** nebo **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion** klíč v závislosti na vaší verzi systému Windows.
 
- **Verze sestavení** Určuje verzi sestavení. Odpovídá <xref:System.Reflection.AssemblyVersionAttribute>.
+**Produktu**\
+Určuje název produktu pro manifest sestavení. <xref:System.Reflection.AssemblyProductAttribute>Odpovídá.
 
- **Verze souboru** Určuje číslo verze, který instruuje kompilátor, aby používaly určitou verzi prostředku verze souboru Win32. Odpovídá <xref:System.Reflection.AssemblyFileVersionAttribute>.
+**Úprava**\
+Určuje oznámení o autorských právech pro manifest sestavení. <xref:System.Reflection.AssemblyCopyrightAttribute>Odpovídá.
 
- **Identifikátor GUID** jedinečný identifikátor GUID, který identifikuje sestavení. Při vytváření projektu sady Visual Studio vytvoří identifikátor GUID pro sestavení. Odpovídá <xref:System.Guid>.
+**Patka**\
+Určuje ochrannou známku pro manifest sestavení. <xref:System.Reflection.AssemblyTrademarkAttribute>Odpovídá.
 
- **Neutrální jazyk** určuje jazykovou verzi sestavení podporuje. Odpovídá <xref:System.Resources.NeutralResourcesLanguageAttribute>. Výchozí hodnota je **(žádný)** .
+**Verze sestavení**\
+Určuje verzi sestavení. <xref:System.Reflection.AssemblyVersionAttribute>Odpovídá.
 
- **Ujistěte se, sestavení viditelné modulu COM** Určuje, zda bude k dispozici do modelu COM. typy v sestavení Odpovídá <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
+**Verze souboru**\
+Určuje číslo verze, které instruuje kompilátor, aby používal specifickou verzi pro prostředek verze souboru Win32. <xref:System.Reflection.AssemblyFileVersionAttribute>Odpovídá.
 
-## <a name="see-also"></a>Viz také
+**HLAVNÍCH**\
+Jedinečný identifikátor GUID, který identifikuje sestavení. Při vytváření projektu aplikace Visual Studio generuje identifikátor GUID pro sestavení. <xref:System.Guid>Odpovídá.
+
+**Neutrální jazyk**\
+Určuje jazykovou verzi, kterou sestavení podporuje. <xref:System.Resources.NeutralResourcesLanguageAttribute>Odpovídá. Výchozí hodnota je **(žádné)** .
+
+**Nastavit model COM sestavení – viditelné**\
+Určuje, zda typy v sestavení budou k dispozici pro model COM. <xref:System.Runtime.InteropServices.ComVisibleAttribute>Odpovídá.
+
+## <a name="see-also"></a>Viz také:
 
 - [Stránka Aplikace, Návrhář projektu (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [Atributy](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

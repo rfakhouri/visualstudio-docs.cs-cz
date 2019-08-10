@@ -18,12 +18,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461565"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918889"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Nastavení projektu VC++, projekty a řešení, dialogové okno Možnosti
 
@@ -49,11 +49,11 @@ Toto dialogové okno umožňuje definovat C++ sestavení a nastavení projektu s
 
  **Ano**
 
- Zobrazí seznam proměnných prostředí v souboru protokolu sestavení. Tato možnost určuje, že se všechny proměnné prostředí během sestavení C++ projektů do souboru protokolu sestavení budou zobrazovat jako ozvěny.
+Zobrazí seznam proměnných prostředí v souboru protokolu sestavení. Tato možnost určuje, že se všechny proměnné prostředí během sestavení C++ projektů do souboru protokolu sestavení budou zobrazovat jako ozvěny.
 
  **Ne**
 
- Vyloučení proměnných prostředí ze souboru protokolu sestavení.
+Vyloučení proměnných prostředí ze souboru protokolu sestavení.
 
 ## <a name="build-timing"></a>Časování sestavení
 
@@ -63,7 +63,7 @@ Toto dialogové okno umožňuje definovat C++ sestavení a nastavení projektu s
 
  **Ne**
 
- Vypne časování buildu.
+Vypne časování buildu.
 
 ## <a name="maximum-concurrent-c-compilations"></a>Maximální počet C++ souběžných kompilací
 

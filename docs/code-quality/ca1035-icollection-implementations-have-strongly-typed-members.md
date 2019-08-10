@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf1db06ba3b78c6033b143b55f41cc203441973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a20feb514b87f2906fd4db32dfb38d3d9b661999
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779062"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922833"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: Implementace ICollection mají členy silného typu
 
@@ -30,31 +30,31 @@ ms.locfileid: "62779062"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Veřejný nebo chráněný typ implementuje <xref:System.Collections.ICollection?displayProperty=fullName> ale neposkytuje metodu silného typu pro <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. Verzi silného typu <xref:System.Collections.ICollection.CopyTo%2A> musí přijmout dva parametry a nemůže mít <xref:System.Array?displayProperty=fullName> nebo pole <xref:System.Object?displayProperty=fullName> jako svůj první parametr.
+## <a name="cause"></a>příčina
+Veřejný nebo chráněný typ implementuje <xref:System.Collections.ICollection?displayProperty=fullName> , ale neposkytuje metodu se silným typem pro. <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> Verze <xref:System.Collections.ICollection.CopyTo%2A> silného typu musí přijmout dva parametry a nemůže <xref:System.Array?displayProperty=fullName> mít ani pole <xref:System.Object?displayProperty=fullName> jako první parametr.
 
 ## <a name="rule-description"></a>Popis pravidla
- Toto pravidlo vyžaduje <xref:System.Collections.ICollection> implementace důrazně poskytovaly členy typu tak, aby uživatelé nebudou muset přetypovávat argumenty na <xref:System.Object> zadejte při využívání funkčnosti poskytované rozhraní. Toto pravidlo předpokládá, že tento typ, který implementuje <xref:System.Collections.ICollection> nemá chci spravovat kolekci instancí typu silnějšího než <xref:System.Object>.
+Toto pravidlo vyžaduje <xref:System.Collections.ICollection> , aby implementace poskytovaly členy se silnými typy, aby uživatelé nemuseli přetypování argumentů <xref:System.Object> na typ při použití funkcí poskytovaných rozhraním. Toto pravidlo předpokládá, že typ, který <xref:System.Collections.ICollection> implementuje, tak, aby spravoval kolekci instancí typu, který je silnější než. <xref:System.Object>
 
- <xref:System.Collections.ICollection> implementuje <xref:System.Collections.IEnumerable?displayProperty=fullName> rozhraní. Pokud objekty v kolekci rozšíření <xref:System.ValueType?displayProperty=fullName>, je nutné zadat silného typu člena, který <xref:System.Collections.IEnumerable.GetEnumerator%2A> aby se zabránilo snížení výkonu, jež je způsobena zabalení. To není potřeba když jsou objekty kolekce typu odkazu.
+ <xref:System.Collections.ICollection><xref:System.Collections.IEnumerable?displayProperty=fullName> implementuje rozhraní. Pokud se objekty v kolekci rozšiřují <xref:System.ValueType?displayProperty=fullName>, je nutné poskytnout <xref:System.Collections.IEnumerable.GetEnumerator%2A> člen silně typovaného typu, aby se zabránilo poklesu výkonu, který je způsoben zabalením. To není vyžadováno, pokud jsou objekty kolekce typu odkaz.
 
- K implementaci verzi silného typu člena rozhraní implementovat členy rozhraní explicitně pomocí názvů ve formě `InterfaceName.InterfaceMemberName`, jako například <xref:System.Collections.ICollection.CopyTo%2A>. Členy explicitní rozhraní datové typy, které jsou deklarovány pomocí rozhraní. Implementovat členy silného typu pomocí názvu členu rozhraní <xref:System.Collections.ICollection.CopyTo%2A>. Deklarace členy se silnými typy jako veřejnou a deklarovat parametry a návratové hodnoty bude silného typu, který spravuje kolekci. Silné typy nahradit slabší typy, jako <xref:System.Object> a <xref:System.Array> , které jsou deklarovány pomocí rozhraní.
+Chcete-li implementovat verzi silného typu člena rozhraní, implementujte členy rozhraní explicitně pomocí názvů ve formuláři `InterfaceName.InterfaceMemberName`, <xref:System.Collections.ICollection.CopyTo%2A>jako je například. Explicitní členové rozhraní používají datové typy, které jsou deklarovány rozhraním. Implementujte členy silného typu pomocí názvu člena rozhraní, například <xref:System.Collections.ICollection.CopyTo%2A>. Deklarovat členy silného typu jako veřejné a deklarovat parametry a návratové hodnoty, aby byly silného typu, který je spravován kolekcí. Silné typy nahrazují slabší typy <xref:System.Object> jako a <xref:System.Array> , které jsou deklarovány rozhraním.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, implementovat člena rozhraní explicitně (deklarujte ho jako <xref:System.Collections.ICollection.CopyTo%2A>). Přidejte veřejnou silného typu člen deklarovaný jako `CopyTo`, a jeho trvat pole jako svůj první parametr silného typu.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, implementujte člen rozhraní explicitně (deklarujete jako <xref:System.Collections.ICollection.CopyTo%2A>). Přidejte veřejného člena silného typu deklarovaného `CopyTo`jako a pokaždé, když jako první parametr převezme pole silného typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačit upozornění tohoto pravidla, pokud se rozhodnete implementovat nové založenou na objektech kolekce, jako je například binární strom, kde určit typy, které rozšiřují nová kolekce silného typu. Tyto typy by měly splňovat toto pravidlo a vystavit členy se silnými typy.
+Potlačí upozornění z tohoto pravidla, Pokud implementujete novou kolekci založenou na objektech, jako je například binární strom, kde typy, které rozšiřuje novou kolekci, určují silný typ. Tyto typy by měly dodržovat toto pravidlo a zveřejnit členy silného typu.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje správný způsob implementace <xref:System.Collections.ICollection>.
+Následující příklad ukazuje správný způsob implementace <xref:System.Collections.ICollection>.
 
- [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
+[!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1038: Enumerátory by měly být silného typu](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+[CA1038: Enumerátory by měly být silného typu](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
- [CA1039: Seznamy jsou silného typu](../code-quality/ca1039-lists-are-strongly-typed.md)
+[CA1039: Seznamy jsou silného typu](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Viz také:
 

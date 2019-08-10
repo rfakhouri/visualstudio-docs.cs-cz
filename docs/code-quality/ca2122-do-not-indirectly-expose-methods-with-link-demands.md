@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8239b27cd92f66ae8f74ddb1accd95535bf56f93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 340d8f0a45506f15cdd9281f7ecda463583c3144
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542334"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920830"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Nezveřejňujte nepřímo metody s požadavky propojení
 
@@ -28,29 +28,29 @@ ms.locfileid: "62542334"
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
 |Kategorie|Microsoft.Security|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
- Veřejný nebo chráněný člen má [požadavky propojení](/dotnet/framework/misc/link-demands) a je volán členem, který neprovádí žádné bezpečnostní kontroly.
+## <a name="cause"></a>příčina
+Veřejný nebo chráněný člen má odkaz na [požadavky](/dotnet/framework/misc/link-demands) a je volán členem, který neprovádí žádné kontroly zabezpečení.
 
 ## <a name="rule-description"></a>Popis pravidla
- Požadavek propojení kontroluje pouze oprávnění bezprostředního volajícího. Pokud člen `X` provádí žádné požadavky na zabezpečení svých volající a kód chráněn pomocí požadavku propojení, volající bez nezbytná oprávnění můžete použít volání `X` přístup chráněný člen.
+Požadavek propojení kontroluje pouze oprávnění bezprostředního volajícího. Pokud člen `X` neprovede žádné požadavky na zabezpečení svých volajících a volá kód chráněný požadavkem propojení, volající bez nezbytných oprávnění může použít `X` pro přístup k chráněnému členu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Přidat bezpečnostní [Data a modelování](/dotnet/framework/data/index) nebo vyžádání propojit člen tak, aby už neposkytuje nezabezpečený přístup na vyžádání chráněné člena odkazu.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Přidejte data zabezpečení [a modelování](/dotnet/framework/data/index) nebo přidejte požadavek na člena, aby již neposkytoval nezabezpečený přístup k členovi, který je chráněn požadavkem propojení.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Můžete bezpečně potlačit upozornění tohoto pravidla, ujistěte se, že váš kód bez možnosti udělovat volajících přístup pro operace nebo prostředky použité destruktivním způsobem.
+Chcete-li bezpečně potlačit upozornění z tohoto pravidla, je nutné zajistit, aby váš kód neudělil volajícím přístup k operacím nebo prostředkům, které lze použít destruktivním způsobem.
 
 ## <a name="example-1"></a>Příklad 1
- Následující příklady ukazují knihovnu, která porušuje pravidlo a aplikace, která ukazuje slabé stránky knihovny. Ukázky knihovny poskytuje dvě metody, které společně pravidlo porušují. `EnvironmentSetting` Metoda je zabezpečena pomocí požadavku propojení pro neomezený přístup k proměnným prostředí. `DomainInformation` Metoda provádí žádné požadavky na zabezpečení volajících před voláním `EnvironmentSetting`.
+Následující příklady znázorňují knihovnu, která porušuje pravidlo, a aplikaci, která demonstruje slabé stránky knihovny. Ukázková knihovna poskytuje dvě metody, které dohromady narušují pravidlo. `EnvironmentSetting` Metoda je zabezpečena požadavkem propojení pro neomezený přístup k proměnným prostředí. Metoda neprovede žádné požadavky na zabezpečení svých volajících před voláním `EnvironmentSetting`. `DomainInformation`
 
- [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
+[!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
 
 ## <a name="example-2"></a>Příklad 2
- Následující aplikace volá člen nezabezpečené knihovny.
+Následující aplikace volá nezabezpečeného člena knihovny.
 
- [!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
+[!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
 
 Tento příklad vytvoří následující výstup:
 

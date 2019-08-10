@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: fd5780479da10da43c270bbf4ffc5a215cb86ad6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132133"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926692"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Použít Microsoft rozhraní testování části pro C++ v sadě Visual Studio
 
@@ -24,28 +24,28 @@ Obvykle spustíte testovací kód ve svém vlastním projektu ve stejném řeše
 
 ## <a name="same_project"></a> Pro psaní jednotkových testů do stejného projektu
 
-V některých případech, například při testování Neexportované funkce v knihovně DLL budete možná muset vytvořit testy ve stejném projektu jako program, který testujete. Pro psaní jednotkových testů do stejného projektu:
+V některých případech, například při testování neexportovaných funkcí v knihovně DLL, může být nutné vytvořit testy ve stejném projektu jako program, který testujete. Pro psaní jednotkových testů do stejného projektu:
 
 1. Upravte vlastnosti projektu, aby zahrnovaly hlavičkové soubory a soubory knihoven, které jsou požadovány pro testování částí.
 
    1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu pro testování programu a pak zvolte **vlastnosti** > **vlastnosti konfigurace**  >  **Adresáře VC ++** .
 
-   2. Klikněte na šipku dolů v následujících řádcích a zvolte  **\<Upravit >** . Přidejte tyto cesty:
+   2. Klikněte na šipku dolů v následujících řádcích a vyberte možnost  **\<Upravit >** . Přidejte tyto cesty:
 
       | Adresář | Vlastnost |
       |-| - |
-      | **Adresáře souborů k zahrnutí** | **Auxiliary\VS\UnitTest\include $(VCInstallDir)** |
-      | **Adresáře knihoven** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
+      | **Adresáře souborů k zahrnutí** | **$ (VCInstallDir) Auxiliary\VS\UnitTest\include** |
+      | **Adresáře knihoven** | **$ (VCInstallDir) Auxiliary\VS\UnitTest\lib** |
 
 2. Přidáte soubor testu jednotek C++:
 
-   - Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a zvolte **přidat** > **nová položka**  >  **C++ souboru (.cpp)** .
+   - V **Průzkumník řešení** klikněte pravým tlačítkem myši na uzel projektu a vyberte možnost **Přidat** > **nový soubor položky**  >   **C++ (. cpp)** .
 
 ## <a name="write-the-tests"></a>Zápis testů
 
 Žádné *.cpp* soubor s testovacích tříd musí obsahovat "CppUnitTest.h" a obsahovat using příkazu pro `using namespace Microsoft::VisualStudio::CppUnitTestFramework`. Projekt testů už je nakonfigurovaný pro vás. Zahrnuje také definice oboru názvů a TEST_CLASS s TEST_METHOD, které vám pomůžou začít. Můžete upravit název oboru názvů, jakož i názvy v závorkách v makrech třídy a metody.
 
-Speciální makra jsou definována pro inicializaci modulů testu, třídy a metody a vyčištění prostředků po dokončení testu. Tato makra generovat kód, který je proveden před třídy nebo metody, je nejprve otevřen a po provedení posledního testu. Další informace najdete v tématu [inicializace a vyčištění](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup).
+Speciální makra jsou definována pro inicializaci testovacích modulů, tříd a metod a pro vyčištění prostředků po dokončení testů. Tato makra generovat kód, který je proveden před třídy nebo metody, je nejprve otevřen a po provedení posledního testu. Další informace najdete v tématu [inicializace a vyčištění](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup).
 
 Používají statické metody v [Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) třídy definovat podmínky testu. Použití [protokolovací nástroj](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) třídu pro zápis zpráv do **okno výstup**. Přidat atributy s testovacími metodami
 
@@ -69,7 +69,7 @@ Můžete definovat vlastnosti pro testovací metody, které vám umožní katego
 #define TEST_MY_TRAIT(traitValue) TEST_METHOD_ATTRIBUTE(L"MyTrait", traitValue)
 ```
 
- Použití definované vlastnosti v testech jednotek:
+Použití definované vlastnosti v testech jednotek:
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
@@ -97,4 +97,4 @@ Následující předdefinované vlastnosti se nacházejí v `CppUnitTest.h`. Dal
 
 ## <a name="see-also"></a>Viz také:
 
-- [Rychlý start: Testování vývoj řízený testy s použitím Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Rychlý start: Vývoj řízených testů pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)

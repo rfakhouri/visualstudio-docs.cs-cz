@@ -9,12 +9,12 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5422d8cb56a9df1fad40857f6802e55ebd11b2ed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3f9094b4d668df37c25da075d0cee590052f910d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675500"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919816"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimalizace kódu Azure
 Pokud programujete aplikace, které využívají Microsoft Azure, existují některé postupy psaní kódu, které byste měli postupovat, která pomáhá zabránit problémům s aplikací škálovatelnost, chování a výkon v cloudovém prostředí. Společnost Microsoft poskytuje nástroj Azure analýzy kódu, který rozpozná a některé z těchto problémů obvykle zjistil identifikuje a pomáhá vám je vyřešit. Můžete stáhnout nástroj v sadě Visual Studio prostřednictvím balíčku NuGet.
@@ -34,7 +34,7 @@ Sdělte nám prosím své nápady a názory na [zpětnou vazbu analýzy kódu Az
 ### <a name="reason"></a>Důvod
 Ve výchozím nastavení je zadaný v souboru web.config režim stavu relace v procesu. Navíc pokud žádná položka zadaná v konfiguračním souboru, režim stavu relace tak výchozí hodnota je v procesu. Režim v procesu ukládá stav relace v paměti na webovém serveru. Při restartování instance nebo novou instanci se používá pro vyrovnávání zatížení nebo podporu převzetí služeb při selhání, není uložen stav relace, které jsou uložené v paměti na webovém serveru. Tato situace zabrání aplikaci v právě škálovatelné v cloudu.
 
-Stavu relace ASP.NET podporuje několik různých možností ukládání pro data o stavu relace: InProc, StateServer, systému SQL Server, vlastní a Off. Je doporučeno použít režim vlastní k hostování dat na externí úložiště stavu relace, jako například [poskytovatele stavu relace Azure Redis](http://go.microsoft.com/fwlink/?LinkId=401521).
+Stav relace ASP.NET podporuje několik různých možností úložiště pro data stavu relace: InProc, StateServer, SQLServer, vlastní a vypnuto. Je doporučeno použít režim vlastní k hostování dat na externí úložiště stavu relace, jako například [poskytovatele stavu relace Azure Redis](http://go.microsoft.com/fwlink/?LinkId=401521).
 
 ### <a name="solution"></a>Řešení
 K ukládání stavu relace na služby managed cache service je jedním z doporučených řešení. Další informace o použití [poskytovatele stavu relace Azure Redis](http://go.microsoft.com/fwlink/?LinkId=401521) k ukládání stavu relace. Můžete také ukládat stav relace v jiných zdrojů, ujistěte se, že je vaše aplikace v cloudu škálovatelný. Další informace o alternativní řešení přečtěte si prosím [režim stavu relace](https://msdn.microsoft.com/library/ms178586).
@@ -128,7 +128,7 @@ Výhodou použití **OnMessage** ve srovnání s **Receive** je, že uživatelé
 Při volání **Receive** bez použití výchozí hodnoty, ujistěte se, *ServerWaitTime* hodnota je více než jedna minuta. Nastavení *ServerWaitTime* na více než jednu minutu zabrání serveru vypršení časového limitu před plně doručení zprávy.
 
 ### <a name="solution"></a>Řešení
-Podrobnosti najdete na následující příklady kódu pro použití, doporučených. Další podrobnosti najdete v tématu [QueueClient.OnMessage – metoda (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx)a [QueueClient.Receive – metoda (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx).
+Podrobnosti najdete na následující příklady kódu pro použití, doporučených. Další podrobnosti najdete v tématu [Metoda QueueClient.-Message (Microsoft. ServiceBus. Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) a [QueueClient. Receive (Microsoft. ServiceBus. Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx).
 
 Ke zlepšení výkonu Azure infrastruktura zasílání zpráv, najdete v článku vzor návrhu [asynchronnímu zasílání zpráv](https://msdn.microsoft.com/library/dn589781.aspx).
 
@@ -395,7 +395,7 @@ Připojovací řetězce Store v konfiguračních souborů nebo prostředí Azure
 * Pro službu IIS hostované webové aplikace slouží k ukládání připojovacích řetězců souboru web.config.
 * Pro aplikace ASP.NET vNext slouží k ukládání připojovacích řetězců configuration.json.
 
-Informace o použití souborů konfigurace, jako jsou souboru web.config nebo app.config najdete v tématu [pokyny ke konfiguraci ASP.NET Web](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Informace o Azure pracovní proměnné prostředí, najdete v části [weby Azure: Jak řetězců aplikace a připojení fungují řetězce](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Informace o ukládání připojovací řetězec ve správě zdrojového kódu, naleznete v tématu [nevkládejte citlivé informace, jako je například připojovací řetězce v souborech, které se ukládají do úložiště zdrojového kódu](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
+Informace o použití souborů konfigurace, jako jsou souboru web.config nebo app.config najdete v tématu [pokyny ke konfiguraci ASP.NET Web](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Informace o tom, jak proměnné prostředí Azure fungují, [najdete v tématu weby Azure: Způsob fungování](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)řetězců aplikace a připojovacích řetězců Informace o ukládání připojovací řetězec ve správě zdrojového kódu, naleznete v tématu [nevkládejte citlivé informace, jako je například připojovací řetězce v souborech, které se ukládají do úložiště zdrojového kódu](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
 
 ## <a name="use-diagnostics-configuration-file"></a>Použití diagnostického konfiguračního souboru
 ### <a name="id"></a>ID
@@ -407,12 +407,12 @@ Namísto konfigurace nastavení diagnostiky ve vašem kódu, jako s využitím M
 Sdělte nám prosím své nápady a názory na [zpětnou vazbu analýzy kódu Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Důvod
-Předtím, než Azure SDK 2.5, (ta používá Azure diagnostics 1.3), Azure Diagnostics (WAD) může nakonfigurovat pomocí několika různými způsoby: přidání do objektu blob konfigurace ve službě storage pomocí imperativního kódu, deklarativní konfigurace nebo výchozí konfigurace. Preferovaný způsob, jak konfigurovat diagnostiku je však použít konfigurační soubor XML (diagnostics.wadcfg nebo diagnostics.wadcfgx pro SDK 2.5 a novější) v projektu aplikace. V takovém případě soubor diagnostics.wadcfg zcela definuje konfiguraci a můžeme je aktualizovat a znovu nasadit kdykoli. Kombinování použití konfiguračního souboru diagnostics.wadcfg pomocí programové metody s použitím nastavení konfigurací [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)nebo [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx)můžete třídy vést k nejasnostem. Zobrazit [inicializace nebo změnit konfiguraci diagnostiky Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) Další informace.
+Předtím, než Azure SDK 2.5, (ta používá Azure diagnostics 1.3), Azure Diagnostics (WAD) může nakonfigurovat pomocí několika různými způsoby: přidání do objektu blob konfigurace ve službě storage pomocí imperativního kódu, deklarativní konfigurace nebo výchozí konfigurace. Upřednostňovaným způsobem konfigurace diagnostiky je však použít konfigurační soubor XML (Diagnostics. wadcfg nebo Diagnostics. wadcfgx pro sadu SDK 2,5 a novější) v projektu aplikace. V takovém případě soubor diagnostics.wadcfg zcela definuje konfiguraci a můžeme je aktualizovat a znovu nasadit kdykoli. Kombinování použití konfiguračního souboru diagnostics.wadcfg pomocí programové metody s použitím nastavení konfigurací [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)nebo [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx)můžete třídy vést k nejasnostem. Zobrazit [inicializace nebo změnit konfiguraci diagnostiky Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) Další informace.
 
 Od verze 1.3 WAD (je součástí Azure SDK 2.5), je už nebude možné použít ke konfiguraci diagnostiky kódu. V důsledku toho můžete zadat pouze konfiguraci při použití nebo rozšíření diagnostiky se aktualizuje.
 
 ### <a name="solution"></a>Řešení
-Použijte Návrháře konfigurace diagnostiky pro přesun nastavení diagnostiky pro konfigurační soubor diagnostiky (diagnostics.wadcfg nebo diagnostics.wadcfgx pro SDK 2.5 a novější). Doporučujeme také nainstalovat [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) a použijte nejnovější funkce Diagnostika.
+Pomocí návrháře konfigurace diagnostiky přesuňte nastavení diagnostiky do konfiguračního souboru diagnostiky (Diagnostics. wadcfg nebo Diagnostics. wadcfgx pro sadu SDK 2,5 a novější). Doporučujeme také nainstalovat [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) a použijte nejnovější funkce Diagnostika.
 
 1. V místní nabídce pro roli, kterou chcete konfigurovat, zvolte Vlastnosti a pak zvolte na kartě konfigurace.
 2. V **diagnostiky** části, ujistěte se, že **povolit diagnostiku** je zaškrtnuto políčko.

@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft Fakes: Generování a kompilaci kódu; zásady vytváření názvů'
+title: 'Napodobeniny Microsoftu: Generovat kód & kompilace; zásady vytváření názvů'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432301"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918454"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Vytváření, kompilace a konvence pojmenování kódu v Napodobeniny Microsoft
 
@@ -110,9 +110,9 @@ Generátor falešného kódu generuje typy překrytí a zástupných procedur ty
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **Vnitřní typy v sestaveních se silným názvem**
+**Vnitřní typy v sestaveních se silným názvem**
 
- Pokud je překryté sestavení pojmenováno silně a chcete získat přístup k vnitřním typům sestavení:
+Pokud je překryté sestavení pojmenováno silně a chcete získat přístup k vnitřním typům sestavení:
 
 - Zkušební sestava i falešné sestavení musí mít silný název.
 
@@ -179,11 +179,11 @@ V projektech jednotkových testů přidejte odkaz na kompilovaná falešná sest
 
 V prostředí Team Build jsou všechna výstupní sestavení sloučena do jednoho adresáře. Pokud více projektů použít produkt Fakes, může se stát, že sestavení napodobenin z různých verzí navzájem přepisují. Například projekt testproject1 vyžaduje napodobeninu *mscorlib.dll* z rozhraní .NET Framework 2.0 a projekt testproject2 vyžaduje fakes *mscorlib.dll* pro rozhraní .NET Framework 4 mscorlib.fakes.dll k *mscorlib. Fakes.dll* napodobeniny sestavení.
 
- K tomuto problému vyhnout, napodobeniny automaticky vytvořila verze kvalifikovaný pro reference mimo projekt názvy falešných sestavení při přidávání *.fakes* soubory. Verze kvalifikovaný název sestavení napodobenin vloží číslo verze, když vytváříte název sestavení napodobenin:
+K tomuto problému vyhnout, napodobeniny automaticky vytvořila verze kvalifikovaný pro reference mimo projekt názvy falešných sestavení při přidávání *.fakes* soubory. Verze kvalifikovaný název sestavení napodobenin vloží číslo verze, když vytváříte název sestavení napodobenin:
 
- Název sestavení napodobenin zadaný pro sestavení MyAssembly a verzi 1.2.3.4 nazývat MyAssembly.1.2.3.4.Fakes.
+Název sestavení napodobenin zadaný pro sestavení MyAssembly a verzi 1.2.3.4 nazývat MyAssembly.1.2.3.4.Fakes.
 
- Můžete změnit nebo odebrat tak, že upravíte atribut Version prvku Assembly v této verzi *.fakes*:
+Můžete změnit nebo odebrat tak, že upravíte atribut Version prvku Assembly v této verzi *.fakes*:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Překrývajících a provizorních zadejte zásady vytváření názvů
 
- **Obory názvů**
+**Obory názvů**
 
 - . Napodobeniny přípona se přidá do oboru názvů.
 

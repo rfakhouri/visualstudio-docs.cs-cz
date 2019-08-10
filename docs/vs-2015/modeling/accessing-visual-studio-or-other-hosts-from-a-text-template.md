@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d26c168780051d3644d04d209001bf0cc9a551cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 053e8b09fd2b52683238f1ffe008e5e7d38b3962
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68179085"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872008"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Přístup k prostředí Visual Studio nebo k jiným hostitelům z textové šablony
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,8 @@ V textové šabloně, můžete použít metody a vlastnosti hostitele, který se
  To platí pro pravidelné textových šablon, ne Předzpracované textové šablony.
 
 ## <a name="obtaining-access-to-the-host"></a>Získání přístupu k hostiteli
- Nastavte `hostspecific="true"` v `template` směrnice. To vám umožní používat `this.Host`, která má typ <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Tento typ obsahuje členy, které používáte, třeba k překladu názvů souborů a k protokolování chyb.
+
+Nastavte `hostspecific="true"` v `template` směrnice. To vám umožní používat `this.Host`, který je typu [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Tento typ obsahuje členy, které používáte, třeba k překladu názvů souborů a k protokolování chyb.
 
 ### <a name="resolving-file-names"></a>Řešení názvů souborů
  Pokud chcete najít úplnou cestu k souboru relativně vzhledem k textu šablony, použijte. Host.ResolvePath().

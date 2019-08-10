@@ -1,5 +1,5 @@
 ---
-title: Nastavení ladění a vydání konfigurace | Dokumentace Microsoftu
+title: Nastavení konfigurace ladění a vydaných verzí | Microsoft Docs
 ms.date: 10/05/2018
 ms.topic: reference
 f1_keywords:
@@ -31,97 +31,97 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75acf0a3a821b4d2561ea14e583e71761b8b476e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847692"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925483"
 ---
-# <a name="set-debug-and-release-configurations-in-visual-studio"></a>Nastavení ladění a vydání konfigurace v sadě Visual Studio
+# <a name="set-debug-and-release-configurations-in-visual-studio"></a>Nastavení konfigurace ladění a vydaných verzí v sadě Visual Studio
 
-Projekty aplikace Visual Studio mají samostatné verze a ladění konfigurace pro váš program. Vytváření verzí ladění pro ladění a verze vydání pro konečnou distribuci vydání.
+Projekty sady Visual Studio mají samostatné konfigurace vydaných verzí a ladění pro váš program. Sestavíte ladicí verzi pro ladění a verzi Release pro konečnou distribuci vydaných verzí.
 
-V konfiguraci ladění váš program zkompiluje se sestaví neoptimalizovaná a obsahující symbolické ladicí informace. Optimalizace komplikuje ladění, protože vztah mezi zdrojovým kódem a vytvořenými pokyny je složitější.
+V konfiguraci ladění se program kompiluje s úplnými symbolickými informacemi o ladění a bez optimalizace. Optimalizace komplikuje ladění, protože vztah mezi zdrojovým kódem a vygenerovanými pokyny je složitější.
 
-Konfigurace programu pro vydání neobsahuje symbolické ladicí informace a je plně optimalizována. Pro spravovaný kód a kód jazyka C++, informace o ladění mohou být generovány v souborech pdb, [v závislosti na možnostech kompilátoru](#BKMK_symbols_release) , která se používají. Vytváření souborů PDB může být užitečné, pokud budete muset později ladit vydané verze.
+Konfigurace vydané verze vašeho programu neobsahuje symbolické ladicí informace a je plně optimalizována. Pro spravovaný kód a C++ kód mohou být informace o ladění generovány v souborech. pdb v [závislosti na použitých možnostech kompilátoru](#BKMK_symbols_release) . Vytváření souborů. pdb může být užitečné, pokud budete později muset ladit prodejní verzi.
 
-Další informace o konfiguracích sestavení naleznete v tématu [pochopení konfigurace sestavení](../ide/understanding-build-configurations.md).
+Další informace o konfiguracích sestavení naleznete v tématu [Principy konfigurací sestavení](../ide/understanding-build-configurations.md).
 
-Můžete změnit konfiguraci sestavení z **sestavení** nabídky, z panelu nástrojů nebo na stránkách vlastností projektu. Stránky vlastností projektu jsou specifické pro jazyk. Následující postup ukazuje, jak změnit konfiguraci sestavení z nabídky a panelu nástrojů. Další informace o tom, jak změnit konfiguraci sestavení v projektech v jiných jazycích najdete v článku [viz také](#see-also) níže v části.
+Můžete změnit konfiguraci sestavení z nabídky **sestavit** , z panelu nástrojů nebo na stránkách vlastností projektu. Stránky vlastností projektu jsou specifické pro jazyk. Následující postup ukazuje, jak změnit konfiguraci sestavení z nabídky a panelu nástrojů. Další informace o tom, jak změnit konfiguraci sestavení v projektech v různých jazycích, naleznete v části [Viz také](#see-also) níže.
 
-## <a name="change-the-build-configuration"></a>Změňte konfiguraci buildu
+## <a name="change-the-build-configuration"></a>Změna konfigurace sestavení
 
-Chcete-li změnit konfiguraci sestavení, buď:
+Chcete-li změnit konfiguraci sestavení, proveďte jednu z těchto akcí:
 
-* Z **sestavení** nabídce vyberte možnost **nástroje Configuration Manager**a pak vyberte **ladění** nebo **vydání**.
+* V nabídce **sestavení** vyberte **Configuration Manager**a pak vyberte **ladit** nebo **vydat**.
 
 or
 
-* Na panelu nástrojů zvolte buď **ladění** nebo **vydání** z **konfigurace řešení** seznamu.
+* Na panelu nástrojů vyberte buď možnost **ladit** , nebo **vydaná verze** v seznamu **Konfigurace řešení** .
 
-  ![panely nástrojů sestavení konfigurace](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
+  ![konfigurace sestavení panelů nástrojů](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
-## <a name="BKMK_symbols_release"></a>Generovat soubory symbolů (PDB) pro sestavení (C#, C++, Visual Basic, F#)
+## <a name="BKMK_symbols_release"></a>Generování souborů symbolů (. pdb) pro sestavení (C#, C++, Visual Basic,) F#
 
-Můžete také generovat soubory symbolů (PDB) a co ladit informace, včetně. Pro většinu typů projektu kompilátor generuje soubory symbolů ve výchozím nastavení pro ladění a verze sestavení, zatímco ostatní výchozí nastavení se liší podle typu projektu a verzi sady Visual Studio.
+Můžete zvolit generování souborů symbolů (. pdb) a informace o ladicím programu, které chcete zahrnout. Pro většinu typů projektů kompilátor generuje soubory symbolů ve výchozím nastavení pro sestavení ladění a vydání, zatímco jiné výchozí nastavení se liší podle typu projektu a verze sady Visual Studio.
 
 > [!IMPORTANT]
-> Ladicí program načte pouze soubor PDB pro spustitelný soubor, který přesně odpovídá souboru .pdb vytvořeném, když byl sestaven spustitelný soubor (to znamená, že PDB musí být originál nebo kopie původního souboru .pdb). Další informace najdete v tématu [proč sada Visual Studio vyžaduje soubory symbolů ladicího programu shodovaly binárním souborům, se kterými byly vytvořeny?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+> Ladicí program načte pouze soubor PDB pro spustitelný soubor, který přesně odpovídá souboru .pdb vytvořeném, když byl sestaven spustitelný soubor (to znamená, že PDB musí být originál nebo kopie původního souboru .pdb). Další informace najdete v tématu [Proč Visual Studio vyžaduje soubory symbolů ladicího programu, aby přesně odpovídaly binárním souborům, se kterými byly vytvořeny?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/).
 
-Každý typ projektu může mít jiný způsob nastavení těchto možností.
+Každý typ projektu může mít jiný způsob, jak tyto možnosti nastavovat.
 
-### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Generovat soubory symbolů pro projekt C#, ASP.NET nebo Visual Basic
+### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Generovat soubory symbolů pro C#, ASP.NET nebo Visual Basic projekt
 
-Podrobné informace o nastavení projektu pro konfiguraci ladění v jazyce C# nebo Visual Basic najdete v tématu [konfiguraci Ladit nastavení projektu pro jazyk C#](../debugger/project-settings-for-csharp-debug-configurations.md) nebo [nastavení projektu pro Visual Basic ladění konfigurace](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+Podrobné informace o nastavení projektu pro konfiguraci ladění v C# nebo Visual Basic naleznete v tématu [nastavení projektu pro konfiguraci C# ladění](../debugger/project-settings-for-csharp-debug-configurations.md) nebo [nastavení projektu pro Visual Basic konfiguraci ladění](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
 
 1. V Průzkumníku řešení vyberte projekt.
 
-2. Vyberte **vlastnosti** ikonu (nebo stiskněte klávesu **Alt + Enter**).
+2. Vyberte ikonu **vlastnosti** (nebo stiskněte klávesu **ALT + ENTER**).
 
-3. V podokně úloh zvolit **sestavení** (nebo **kompilaci** v jazyce Visual Basic).
+3. V bočním podokně vyberte **sestavení** (nebo **zkompilujte** v Visual Basic).
 
-4. V **konfigurace** klikněte na položku **ladění** nebo **vydání**.
+4. V seznamu **Konfigurace** vyberte možnost **ladění** nebo **vydání**.
 
-5. Vyberte **Upřesnit** tlačítko (nebo **Upřesnit možnosti kompilace** tlačítko v jazyce Visual Basic).
+5. Vyberte tlačítko **Upřesnit** (nebo tlačítko **Upřesnit možnosti kompilace** v Visual Basic).
 
-6. V **ladicí informace** seznamu (nebo **Generovat ladicí informace** seznamu v jazyce Visual Basic), zvolte **úplné**, **pouze soubor Pdb**, nebo **Přenosné**.
+6. V seznamu **ladicích informací** (nebo v seznamu vygenerovat **informace o ladění** v Visual Basic) vyberte **úplné**, **pouze PDB**nebo **přenosné**.
 
-   Přenosný formát je nejnovější formát pro různé platformy pro .NET Core. Další informace o možnostech najdete v tématu [dialogové okno Upřesnit nastavení sestavení (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
+   Přenosný formát je nejnovější formát pro více platforem pro .NET Core. Další informace o možnostech najdete v tématu [dialogové okno Upřesnit nastavení sestavení (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
-   ![Generování souborů PDB pro sestavení v jazyce C#](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   ![Generovat soubory PDB pro sestavení v C# ](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
 7. Sestavte projekt.
 
-   Kompilátor vytvoří soubory symbolů ve stejné složce jako spustitelný soubor nebo hlavního výstupního souboru.
+   Kompilátor vytvoří soubory symbolů ve stejné složce jako spustitelný soubor nebo hlavní výstupní soubor.
 
-### <a name="generate-symbol-files-for-a-c-project"></a>Generovat soubory symbolů pro projekt jazyka C++
+### <a name="generate-symbol-files-for-a-c-project"></a>Generování souborů symbolů pro C++ projekt
 
 1. V Průzkumníku řešení vyberte projekt.
 
-2. Vyberte **vlastnosti** ikonu (nebo stiskněte klávesu **Alt + Enter**).
+2. Vyberte ikonu **vlastnosti** (nebo stiskněte klávesu **ALT + ENTER**).
 
-3. V **konfigurace** klikněte na položku **ladění** nebo **vydání**.
+3. V seznamu **Konfigurace** vyberte možnost **ladění** nebo **vydání**.
 
-4. V podokně úloh zvolit **Linkeru > ladění**, vyberte možnosti pro **Generovat ladicí informace**.
+4. V bočním podokně zvolte **Linker > ladění**a pak vyberte možnosti pro vygenerování **informací o ladění**.
 
-   Podrobné informace o nastavení projektu pro konfiguraci ladění v jazyce C++, naleznete v tématu [konfiguraci Ladit nastavení projektu pro C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+   Podrobné informace o nastavení projektu pro konfigurace ladění v naleznete C++v tématu [nastavení projektu pro konfiguraci C++ ladění](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
-5. Konfigurace možností **generování souborů databáze programu**.
+5. Nakonfigurujte možnosti pro **vygenerování souborů databáze programu**.
 
-   Ve většině projektů C++, výchozí hodnota je `$(OutDir)$(TargetName).pdb`, který generuje soubory PDB do výstupní složky.
+   Ve většině C++ projektů je `$(OutDir)$(TargetName).pdb`výchozí hodnota, která generuje soubory. pdb ve výstupní složce.
 
-   ![Generování souborů PDB pro sestavení v jazyce C++](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
+   ![Generovat soubory PDB pro sestavení v C++ ](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
 
 6. Sestavte projekt.
 
-   Kompilátor vytvoří soubory symbolů ve stejné složce jako spustitelný soubor nebo hlavního výstupního souboru.
+   Kompilátor vytvoří soubory symbolů ve stejné složce jako spustitelný soubor nebo hlavní výstupní soubor.
 
 ## <a name="see-also"></a>Viz také
 
-- [Zadejte soubory symbolů (PDB) a zdrojových souborů v ladicím programu sady Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
+- [Určení souborů symbolů (. pdb) a zdrojových souborů v ladicím programu sady Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
 - [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)<br/>
 - [Nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
-- [Nastavení projektu pro konfiguraci ladění jazyka C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
+- [Nastavení projektu pro konfiguraci C# ladění](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
 - [Nastavení projektu pro konfiguraci ladění jazyka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
 - [Postupy: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)

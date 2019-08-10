@@ -1,5 +1,5 @@
 ---
-title: Analýza výsledků zátěžových testů v zobrazení grafů Analyzéru zátěžového testu
+title: Analýza výsledků zátěžových testů v grafu zobrazení analyzátoru zátěžového testu
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,86 +15,86 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bf74aba289e98e76fdd5b9a35d486d207bcc05
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432016"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926471"
 ---
-# <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů v zobrazení grafů Analyzéru zátěžového testu
+# <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů v zobrazení grafů analyzátoru zátěžového testu
 
-Výsledky zátěžového testu se zobrazí jako data v několika různých podoken.
+Výsledky zátěžového testu se zobrazí jako data v několika různých podoknech.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Chcete-li zobrazit výsledky testů jako grafy, zvolte **grafy** na **zátěžový test** nástrojů. Každé jednotlivé grafu se zobrazí v panelu s názvem grafu zobrazí v horní části stránky v rozevíracím seznamu. K zobrazení různých graf na panelu, vyberte název jiného grafu ze seznamu.
+Chcete-li zobrazit výsledky testů jako grafy, klikněte na tlačítko **grafy** na panelu nástrojů **zátěžového testu** . Každý jednotlivý graf se zobrazí na panelu s názvem grafu zobrazeným nahoře v rozevíracím seznamu. Chcete-li zobrazit jiný graf na panelu, v seznamu vyberte jiný název grafu.
 
-Až čtyři grafu lze zobrazit panely najednou. Můžete přepínat mezi jiný panel rozložení pomocí **panelové rozložení** tlačítka panelu nástrojů.
+Současně lze zobrazit až čtyři panely grafu. Můžete přepínat mezi různými rozloženími panelů pomocí tlačítka panelu nástrojů **rozložení panelu** .
 
-Jsou k dispozici několik předdefinovaných grafy. Můžete použít předdefinované grafů, jako je nebo je můžete přizpůsobit. Kromě toho můžete vytvořit vlastní grafy. Další informace najdete v tématu [jak: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) a [jak: Vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md).
+K dispozici je několik integrovaných grafů. Předdefinované grafy můžete použít tak, jak jsou, nebo je můžete přizpůsobit. Navíc můžete vytvořit vlastní grafy. Další informace najdete v tématu [jak: Přidejte a odstraňte čítače v](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) grafech [a postupy: Vytvořte vlastní grafy](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
-## <a name="built-in-graphs"></a>Integrované grafy
+## <a name="built-in-graphs"></a>Předdefinované grafy
 
-V následující tabulce jsou uvedeny předdefinované grafy, které jsou k dispozici k analýze výsledků zátěžového testu.
+V následující tabulce je uveden seznam integrovaných grafů, které jsou k dispozici pro analýzu výsledků zátěžového testu.
 
 |Název grafu|Popis|
 |-|-|
-|Klíčoví ukazatelé|Čítače, které popisují základní aspekty testování výkonu, jako je například uživatelské zatížení, propustnost a dobu odezvy.|
-|Doba odezvy testu|Data o množství času testy provést, aby spustil.|
-|Doba odezvy stránky|Průměrná doba odezvy pro webové stránky, které jsou přístupné během zátěžového testu.|
-|Testovaný systém|Informace o počítačích, na kterých aplikace právě testováno spuštění. To zahrnuje data o využití paměti, procesoru, fyzického disku, procesy.<br /><br /> Ve výchozím nastavení se shromažďují pouze čítače Počet MB k dispozici a času procesoru.|
-|Kontrolér a agenti|Informace o počítačích, na kterých zátěžové testy spustit. To zahrnuje data o využití paměti, procesoru, fyzického disku, procesy.<br /><br /> Ve výchozím nastavení jenom počet MB k dispozici a se shromažďují čítače času procesoru.|
-|Doba odezvy transakce|Průměrná doba odezvy pro transakce prováděné během zátěžového testu.|
+|Klíčové ukazatele|Čítače, které popisují základní aspekty testovacího výkonu, jako je například uživatelské zatížení, propustnost a doba odezvy.|
+|Doba odezvy testu|Data o množství časových testů, které se mají spustit.|
+|Doba odezvy stránky|Průměrná doba odezvy webových stránek, které jsou k dispozici během zátěžového testu.|
+|Testovaný systém|Informace o počítačích, ve kterých se aplikace testuje. To zahrnuje data o využití paměti, procesoru, fyzickém disku a procesech.<br /><br /> Ve výchozím nastavení jsou shromažďovány pouze čítače dostupné MB a čas procesoru.|
+|Kontrolér a agenti|Informace o počítačích, na kterých běží zátěžové testy. To zahrnuje data o využití paměti, procesoru, fyzickém disku a procesech.<br /><br /> Ve výchozím nastavení se shromažďují jenom dostupné MB a čítače času procesoru.|
+|Doba odezvy transakce|Průměrná doba odezvy pro transakce, ke kterým dojde během zátěžového testu.|
 
- Různé čítače lze zobrazit v grafu v době běhu a po spuštění testu.
+V grafu můžete zobrazit různé čítače v době běhu i po spuštění testu.
 
 > [!NOTE]
-> Pouze čítače výkonu doby odpovědi lze přidat do grafu automaticky generované odpovědi čas.
+> Do grafu automaticky generované doby odezvy lze přidat pouze čítače výkonu doby odezvy.
 
- Informace o čítači zobrazí v grafu i v legendě pod grafy. Můžete také přiblížíte části grafu. Další informace najdete v tématu [jak: Přiblížení oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+Informace čítače zobrazuje v grafu i v legendě pod grafy. Můžete také přiblížit část grafu. Další informace najdete v tématu [jak: Přiblížení v oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 
-## <a name="counters-displayed-in-graphs"></a>Zobrazí v grafech čítače
+## <a name="counters-displayed-in-graphs"></a>Čítače zobrazené v grafech
 
- Zobrazení grafů *čítače*. Čítače odkazovat na data shromážděná během zátěžového testu, jako jsou například testy za sekundu nebo průměrnou testovacího času. Další informace o čítačích najdete v tématu [určení sad čítačů a mezních pravidel pro počítače v rámci zátěžového testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Grafy zobrazují *čítače*. Čítače odkazují na data získaná během zátěžového testu, například testy za sekundu nebo Průměrná doba testování. Další informace o čítačích naleznete v tématu [Určení sad čítačů a mezních pravidel pro počítače v rámci zátěžového testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
- Legenda pro čítače, které jsou zobrazeny v grafu zobrazí několik sloupců užitečné údaje o spuštění zátěžového testu. Chcete-li vypnout zobrazení všech dat v grafu, zrušte zaškrtnutí políčka v řádku v legendě.
+Legenda k čítačům, které jsou zobrazeny v grafech, zobrazuje několik sloupců užitečných dat o běhu zátěžového testu. Chcete-li zobrazení dat v grafu vypnout, zrušte zaškrtnutí políčka v řádku legendy.
 
- Legenda obsahuje následující sloupce:
+Legenda obsahuje následující sloupce:
 
 |Čítač|Název čítače|
 |-|-|
 |instance|Název instance čítače.|
 |Kategorie|Název kategorie čítače.|
-|Computer|Název počítače, do které se shromažďují čítače.|
-|Barva|Barva čáry v grafu.|
-|Rozsah|Označuje číslo, která je reprezentována 100 v grafu pro tento čítač. Pro rozsah, jejíž horní hodnota je 10 000 operací, například 100 popisek v horní části grafu představuje 10 000.|
-|Minimum|Určuje minimální hodnotu pro čítač v milisekundách.|
-|Maximum|Určuje maximální hodnotu pro čítač v milisekundách.|
-|Průměr|Označuje průměrná hodnota čítače v milisekundách.|
-|Poslední|Uvádí hodnotu čítače během posledního intervalu vzorkování v milisekundách.|
+|Computer|Název počítače, do kterého se má čítač shromažďovat|
+|Barva|Barva čáry v grafu|
+|Rozsah|Označuje číslo reprezentované 100em v grafu pro daný čítač. Například pro rozsah, jehož horní hodnota je 10 000, jmenovka 100 v horní části grafu představuje 10 000.|
+|Minimum|Určuje minimální hodnotu čítače v milisekundách.|
+|Maximum|Určuje maximální hodnotu čítače v milisekundách.|
+|Volání|Určuje průměrnou hodnotu čítače v milisekundách.|
+|Poslední|Zobrazuje hodnotu čítače během posledního intervalu vzorkování v milisekundách.|
 
 ## <a name="tasks"></a>Úkoly
 
 |Úlohy|Související témata|
 |-|-|
-|**Přizpůsobte grafy pomocí legendy:** Grafy zobrazení informací zobrazí legendy pro každý čítač výkonu, který je spojen s grafem. Legendu můžete odebrat čítače výkonu, čítače výkonu v grafu zvýraznit a přizpůsobení možností zobrazování.|-   [Použití legendy zobrazení grafů k analýze zátěžových testů](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
-|**Zobrazení čítačů pro grafy:** Různé druhy dat můžete přidat do grafu výsledků zátěžového testu tak, že čítače v grafu.|-   [Jak: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**Přibližte grafy:** Po dokončení zátěžového testu můžete přiblížit a přejděte do oblasti grafu pruhy přiblížení. Podle přiblížit, můžete zkoumat data, která byla vygenerována během spuštění jemnější podrobně zátěžového testu.|-   [Jak: Přiblížení oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
-|**Rozložení grafů vedle sebe:** Můžete uspořádat grafy výsledků zátěžového testu v některém z několika způsoby. Až čtyři grafy můžete dlaždici.||
-|**Vytváření vlastních grafů:** Můžete navrhovat grafy, které zobrazí konkrétní informace o výsledcích zátěžového testu. Navrhněte vlastní graf tak, že zadáte počítadla testu zatížení, které se zobrazí grafu.|-   [Jak: Vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**Exportujte data čítače výkonu v grafu:** Můžete exportovat data grafu do aplikace Microsoft Excel s použitím **exportovat Data grafu do aplikace Excel** tlačítko **Analyzéru zátěžového testu** nástrojů při práci v **grafy** zobrazení.||
+|**Přizpůsobte grafy pomocí legendy:** Legenda zobrazení grafů zobrazuje informace pro každý čítač výkonu, který je přidružen k grafu. Pomocí legendy můžete odebrat čítače výkonu, zvýraznit čítače výkonu v grafu a přizpůsobit možnosti vykreslování.|-   [Použití legendy zobrazení grafů k analýze zátěžových testů](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
+|**Zobrazit čítače v grafech:** Do grafu výsledků zátěžového testu můžete přidat různé druhy dat tak, že do grafu umístíte čítače.|-   [Jak: Přidávání a odstraňování čítačů v grafech](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**Přiblížit grafy:** Po dokončení zátěžového testu můžete přiblížit a přejděte do oblasti grafu pruhy přiblížení. Podle přiblížit, můžete zkoumat data, která byla vygenerována během spuštění jemnější podrobně zátěžového testu.|-   [Jak: Přiblížení v oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
+|**Grafy dlaždic:** Grafy výsledků zátěžového testu lze uspořádat v některém z několika vzorů. Můžete uspořádat až čtyři grafy.||
+|**Vytvořit vlastní grafy:** Můžete navrhovat grafy, které zobrazí konkrétní informace o výsledcích zátěžového testu. Navrhněte vlastní graf tak, že zadáte počítadla testu zatížení, které se zobrazí grafu.|-   [Jak: Vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md)|
+|**Exportujte data čítačů výkonu v grafu:** Data grafu můžete exportovat do aplikace Microsoft Excel pomocí tlačítka **exportovat data grafu do aplikace Excel** na panelu nástrojů **analyzátoru zátěžového testu** , když jste v zobrazení **grafů** .||
 
 ## <a name="related-tasks"></a>Související úlohy
 
- [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+[Analýza výsledků zátěžových testů a chyb v zobrazení tabulky](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [Postupy: Přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md)
+[Postupy: Přístup k výsledkům zátěžového testu pro analýzu](../test/how-to-access-load-test-results-for-analysis.md)
 
- [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Postupy: Přidávání a odstraňování čítačů v grafech](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
 - [Postupy: Vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Postupy: Přiblížení oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Postupy: Přiblížení v oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)

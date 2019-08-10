@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41ab039d33155769eac13469a65f2a35c8ed7324
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 415b8c95dda3fca084fcb103dfa5e4f39e1a73da
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778603"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922531"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typy, které vlastní nativní prostředky, by měly být uvolnitelné
 
@@ -33,36 +33,36 @@ ms.locfileid: "62778603"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Odkazuje na typ <xref:System.IntPtr?displayProperty=fullName> pole, <xref:System.UIntPtr?displayProperty=fullName> pole, nebo <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> pole, ale neimplementuje <xref:System.IDisposable?displayProperty=fullName>.
+Typ odkazuje na <xref:System.IntPtr?displayProperty=fullName> pole <xref:System.UIntPtr?displayProperty=fullName> , pole nebo <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> pole, ale neimplementuje <xref:System.IDisposable?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Toto pravidlo předpokládá, že <xref:System.IntPtr>, <xref:System.UIntPtr>, a <xref:System.Runtime.InteropServices.HandleRef> ukládání pole ukazatelů na nespravované prostředky. Typy, které přidělují nespravované prostředky by měly implementovat <xref:System.IDisposable> umožníte volajícím uvolnit tyto prostředky na požádání a zkrátit životní cyklus objektů, které obsahují prostředky.
+Toto pravidlo předpokládá, <xref:System.IntPtr>že <xref:System.UIntPtr>, a <xref:System.Runtime.InteropServices.HandleRef> pole ukládají ukazatele do nespravovaných prostředků. Typy, které přidělují nespravované <xref:System.IDisposable> prostředky, by měly implementovat, aby volajícím uvolnili tyto prostředky na vyžádání a zkrátili životnost objektů, které uchovávají prostředky.
 
-Doporučený návrhový vzor pro vyčištění nespravovaných prostředků je poskytnout implicitní a explicitní znamená, že k uvolnění těchto prostředků s použitím <xref:System.Object.Finalize%2A?displayProperty=fullName> metoda a <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metoda, v uvedeném pořadí. Uvolňování paměti zavolá <xref:System.Object.Finalize%2A> metodu objektu v době, po objektu je určena být již nebude dostupná. Po <xref:System.Object.Finalize%2A> je volána, zobrazí se další uvolňování paměti se vyžaduje k uvolnění objektu. <xref:System.IDisposable.Dispose%2A> Metoda umožňuje volajícímu explicitně uvolnit prostředky na vyžádání, dříve, než prostředky by být uvolněny, pokud zleva systému uvolňování paměti. Poté, co ho vyčistí nespravované prostředky, <xref:System.IDisposable.Dispose%2A> by měly volat <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> metoda umožňuje systému uvolňování paměti vědět, že <xref:System.Object.Finalize%2A> není k dispozici k volání; tím se eliminuje potřeba další uvolnění paměti a tím Doba života objektu.
+Doporučený návrhový vzor pro vyčištění nespravovaných prostředků je poskytnout implicitní a explicitní způsob, jak uvolnit tyto prostředky pomocí <xref:System.Object.Finalize%2A?displayProperty=fullName> metody <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> a metody, v uvedeném pořadí. Systém uvolňování paměti volá <xref:System.Object.Finalize%2A> metodu objektu v neurčitém čase po zjištění, že je objekt již dostupný. Po <xref:System.Object.Finalize%2A> volání je vyžadován další uvolňování paměti pro uvolnění objektu. <xref:System.IDisposable.Dispose%2A> Metoda umožňuje volajícímu explicitně uvolnit prostředky na vyžádání, a to dříve, než budou prostředky uvolněny, pokud zbývá do uvolňování paměti. Po vyčištění nespravovaných prostředků <xref:System.IDisposable.Dispose%2A> by měla <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> zavolat metodu, aby systém uvolňování paměti věděl, že <xref:System.Object.Finalize%2A> již není nutné volat, což eliminuje nutnost dalšího uvolňování paměti a zkrátí doba života objektu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, implementovat <xref:System.IDisposable>.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, implementujte <xref:System.IDisposable>.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla, pokud typ neobsahuje odkaz nespravovaný prostředek. V opačném případě nepotlačujte upozornění tohoto pravidla protože neschopnost implementace <xref:System.IDisposable> může způsobit, že budou k dispozici nebo využívané uvolnění nespravovaných prostředků.
+Pokud typ neodkazuje na nespravovaný prostředek, je bezpečné potlačit upozornění od tohoto pravidla. V opačném případě potlačí upozornění z tohoto pravidla, protože selhání <xref:System.IDisposable> implementace může způsobit nedostupnost nespravovaných prostředků nebo nepoužívané.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ, který implementuje <xref:System.IDisposable> pro vyčištění nespravovaných prostředků.
+Následující příklad ukazuje typ, který implementuje <xref:System.IDisposable> k vyčištění nespravovaného prostředku.
 
- [!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
- [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
+[!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
+[!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA2115: Volání uvolňování paměti. KeepAlive při použití nativních zdrojů](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115: Vyvolejte GC. Udržení naživu při použití nativních prostředků](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
- [CA1816: Volání uvolňování paměti. SuppressFinalize správně](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816: Vyvolejte GC. SuppressFinalize správně](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
- [CA2216: Uvolnitelné typy by měly deklarovat finalizační metodu](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216: Typy na jedno použití by měly deklarovat finalizační metodu](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA1001: Typy, které vlastní uvolnitelné pole by měly být uvolnitelné](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+[CA1001: Typy, které vlastní pole na jedno použití, by měly být jednorázové.](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>Viz také:
 

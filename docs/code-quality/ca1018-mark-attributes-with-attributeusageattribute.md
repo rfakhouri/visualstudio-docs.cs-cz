@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c0aa3fe5c45e34445c49c4b3a5f0abad1e98739
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78917bcd4c67e1da205595bac07c8e0e5947318d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779334"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923062"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Označte atributy pomocí AttributeUsageAttribute
 
@@ -33,30 +33,30 @@ ms.locfileid: "62779334"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- <xref:System.AttributeUsageAttribute?displayProperty=fullName> Atribut není k dispozici pro vlastní atribut.
+## <a name="cause"></a>příčina
+<xref:System.AttributeUsageAttribute?displayProperty=fullName> Atribut není přítomen u vlastního atributu.
 
 ## <a name="rule-description"></a>Popis pravidla
- Při definování vlastního atributu jej označte použitím <xref:System.AttributeUsageAttribute> k označení, kde ve zdrojovém kódu vlastní atribut lze použít. Význam a zamýšlené použití atributu určuje jeho platné umístění v kódu. Můžete definovat atribut, který identifikuje uživatele, který zodpovídá za údržbu a vylepšování jednotlivé typy v knihovně, a zodpovědností je vždy přiřazené na úrovni typu. V takovém případě kompilátory by měly umožnit atributů na třídy, výčty a rozhraní, ale neměli byste ji povolit pro metody, události nebo vlastnosti. Organizační zásady a postupy by určovat, zda má být povolen atribut v sestavení.
+Při definování vlastního atributu jej označte pomocí <xref:System.AttributeUsageAttribute> a určete, kde ve zdrojovém kódu lze použít vlastní atribut. Význam a zamýšlené použití atributu určuje jeho platné umístění v kódu. Například můžete definovat atribut, který identifikuje osobu, která je zodpovědná za údržbu a vylepšení každého typu v knihovně, a tato zodpovědnost je vždy přiřazena na úrovni typu. V takovém případě by měly kompilátory povolit atribut pro třídy, výčty a rozhraní, ale neměly by být povoleny v metodách, událostech nebo vlastnostech. Zásady a postupy organizace by měly určovat, jestli má být atribut povolený u sestavení.
 
- <xref:System.AttributeTargets?displayProperty=fullName> Výčet definuje cíle, které určíte pro vlastní atribut. Vynecháte-li <xref:System.AttributeUsageAttribute>, vlastní atribut bude platit pro všechny cíle, podle definice `All` hodnotu <xref:System.AttributeTargets> výčtu.
+<xref:System.AttributeTargets?displayProperty=fullName> Výčet definuje cíle, které lze zadat pro vlastní atribut. Pokud tento parametr <xref:System.AttributeUsageAttribute>vynecháte, bude váš vlastní atribut platný pro všechny cíle, jak je `All` definováno hodnotou <xref:System.AttributeTargets> výčtu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, zadejte cíle pro atribut s použitím <xref:System.AttributeUsageAttribute>. Podívejte se na téma v následujícím příkladu.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, zadejte cíle pro atribut pomocí <xref:System.AttributeUsageAttribute>. Podívejte se na téma v následujícím příkladu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Měli opravit porušení tohoto pravidla místo vyloučení zprávy. I v případě, že dědí atribut <xref:System.AttributeUsageAttribute>, atribut by měl být k dispozici pro zjednodušení údržby kódu.
+Místo vyloučení zprávy byste měli opravit porušení tohoto pravidla. I v případě, že <xref:System.AttributeUsageAttribute>atribut dědí, by měl být k dispozici atribut pro zjednodušení údržby kódu.
 
 ## <a name="example"></a>Příklad
- Následující příklad definuje dva atributy. `BadCodeMaintainerAttribute` nesprávně vynechává <xref:System.AttributeUsageAttribute> příkaz, a `GoodCodeMaintainerAttribute` správně implementuje atributu, který je popsán výše v této části. Všimněte si, že vlastnost `DeveloperName` vyžaduje pravidlo návrhu [CA1019: Definujte přístupové objekty pro argumenty atributu](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) a je zahrnuté pro úplnost.
+Následující příklad definuje dva atributy. `BadCodeMaintainerAttribute`nesprávně vynechá <xref:System.AttributeUsageAttribute> příkaz a `GoodCodeMaintainerAttribute` správně implementuje atribut, který je popsaný výše v této části. Všimněte si, že `DeveloperName` vlastnost je vyžadována pravidlem [návrhu CA1019: Definujte přístupové objekty pro argumenty](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) atributů a jsou zahrnuty pro úplnost.
 
- [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
- [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
+[!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
+[!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1019: Definujte přístupové objekty pro argumenty atributu](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+[CA1019: Definovat přístupové objekty pro argumenty atributu](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1813: Vyhněte se nezapečetěným atributům](../code-quality/ca1813-avoid-unsealed-attributes.md)
+[CA1813: Vyhněte se nezapečetěným atributům](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Viz také:
 

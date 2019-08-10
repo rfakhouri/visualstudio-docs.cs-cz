@@ -18,35 +18,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ca5161d0ddb73a72b88f36e85bda9206839aec3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61ebcd6c833b55f0769365b89274e35136c914f9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565857"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925351"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualizace dat pomocí objektu TableAdapter
 
-Poté, co byl upravit a ověřit data v datové sadě, můžete odeslat aktualizovaná data zpět do databáze pomocí volání `Update` metodu [TableAdapter](../data-tools/create-and-configure-tableadapters.md). `Update` Metodu aktualizace jedné tabulky datového a spustí správný příkaz (vložení, aktualizace nebo odstranění) na základě <xref:System.Data.DataRow.RowState%2A> každého řádku dat v tabulce. Když datové sady má související tabulky, Visual Studio vygeneruje třídy TableAdapterManager, které umožňují provádět aktualizace. Třída TableAdapterManager zajistí, že jsou ve správném pořadí podle omezení cizího klíče, které jsou definovány v databázi provedeny aktualizace. Při použití ovládacích prvků vázaných na data, architektura vázání dat vytvoří členské proměnné třídy TableAdapterManager volá tableAdapterManager.
+Po úpravě a ověření dat ve vaší datové sadě můžete aktualizovaná data odeslat zpět do databáze voláním `Update` metody [TableAdapter](../data-tools/create-and-configure-tableadapters.md). Metoda aktualizuje jedinou datovou tabulku a spustí správný příkaz (INSERT, Update nebo Delete) na základě <xref:System.Data.DataRow.RowState%2A> každého řádku dat v tabulce. `Update` Pokud má datová sada související tabulky, aplikace Visual Studio vygeneruje třídu TableAdapterManager, kterou použijete k provedení aktualizací. Třída TableAdapterManager zajišťuje, že aktualizace budou provedeny ve správném pořadí na základě omezení cizího klíče, které jsou definovány v databázi. Při použití ovládacích prvků vázaných na data vytvoří architektura datové vazby členskou proměnnou třídy TableAdapterManager s názvem tableAdapterManager.
 
 > [!NOTE]
-> Při pokusu aktualizovat zdroj dat s obsahem datové sady, může docházet k chybám. Aby nedocházelo k chybám, doporučujeme umístit kód, který volá adaptéru `Update` metodu `try` / `catch` bloku.
+> Když se pokusíte aktualizovat zdroj dat obsahem datové sady, můžete získat chyby. Aby se předešlo chybám, doporučujeme, abyste vložili kód, který volá `Update` metodu adaptéru `try` / `catch` uvnitř bloku.
 
- Přesný postup pro aktualizaci zdroje dat se může lišit v závislosti na obchodní potřeby, ale zahrnuje následující kroky:
+Přesný postup pro aktualizaci zdroje dat se může lišit v závislosti na obchodních potřebách, ale obsahuje následující kroky:
 
-1. Volání `Update` metoda `try` / `catch` bloku.
+1. Zavolejte `Update` metodu adaptéru `try` v bloku./ `catch`
 
-2. Pokud je výjimka zachycena, vyhledejte řádek dat, která způsobila chybu.
+2. Pokud je zachycena výjimka, vyhledejte řádek dat, který způsobil chybu.
 
-3. Sjednotit problém v datech řádku (prostřednictvím kódu programu, pokud je to možné, nebo tím, že předloží neplatný řádek pro uživatele pro úpravy) a akci opakujte aktualizaci (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
+3. Odsouhlasení problému s datovým řádkem (v případě, že je to možné, nebo zadáním neplatného řádku uživateli pro úpravu) a pak zkuste aktualizaci zopakovat<xref:System.Data.DataRow.HasErrors%2A>( <xref:System.Data.DataTable.GetErrors%2A>,).
 
 ## <a name="save-data-to-a-database"></a>Uložení dat do databáze
 
-Volání `Update` metody třídy TableAdapter. Předejte název tabulky dat, který obsahuje hodnoty, které mají být zapsána do databáze.
+`Update` Zavolejte metodu TableAdapter. Předejte název tabulky dat obsahující hodnoty, které mají být zapsány do databáze.
 
-### <a name="to-update-a-database-by-using-a-tableadapter"></a>Chcete-li aktualizovat databázi pomocí TableAdapter
+### <a name="to-update-a-database-by-using-a-tableadapter"></a>Aktualizace databáze pomocí TableAdapter
 
-- Uzavřete objektu TableAdapter`Update` metoda `try` / `catch` bloku. Následující příklad ukazuje, jak aktualizovat obsah `Customers` tabulku v `NorthwindDataSet` zevnitř `try` / `catch` bloku.
+- Uzavřete`Update` metodu TableAdapter `try` do bloku./ `catch` Následující příklad ukazuje `Customers` , jak aktualizovat obsah tabulky v `NorthwindDataSet` rámci `try` / `catch` bloku.
 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17160e5fd47491dddb22a28d4b3f7464ad3efb78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 532a10740b0617f32e4f970da8dc2a7e2807f792
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806786"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920474"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Transparentní metody by neměly používat požadavky zabezpečení
 
@@ -26,22 +26,22 @@ ms.locfileid: "62806786"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Které má průhledné typ nebo metoda je označena pomocí deklarace s <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` vyžádání nebo volání metody <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> metody.
+## <a name="cause"></a>příčina
+Typ nebo metoda Tranparent je deklarativně označena <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` poptávkou <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> nebo metoda volá metodu.
 
 ## <a name="rule-description"></a>Popis pravidla
- Kód transparentní z hlediska zabezpečení by neměl být odpovědný za ověření zabezpečení operace, a proto by neměl požadovat oprávnění. Kód transparentní z hlediska zabezpečení by měl k učinění rozhodnutí o zabezpečení používat úplné požadavky a bezpečně kritický kód by neměl spoléhat na to, že transparentní kód tyto úplné požadavky provede. Místo toho by měl být bezpečný a kritický veškerý kód, který provádí kontroly zabezpečení, jako jsou požadavky na zabezpečení.
+Kód transparentní z hlediska zabezpečení by neměl být odpovědný za ověření zabezpečení operace, a proto by neměl požadovat oprávnění. Kód transparentní z hlediska zabezpečení by měl k učinění rozhodnutí o zabezpečení používat úplné požadavky a bezpečně kritický kód by neměl spoléhat na to, že transparentní kód tyto úplné požadavky provede. Jakýkoli kód, který provádí kontroly zabezpečení, jako třeba požadavky na zabezpečení, by měl být místo toho kritický.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Obecně platí, chcete-li opravit porušení tohoto pravidla, označte metody <xref:System.Security.SecuritySafeCriticalAttribute> atribut. Můžete také odebrat vyžádání.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Obecně platí, že chcete-li opravit porušení tohoto pravidla, označte metodu <xref:System.Security.SecuritySafeCriticalAttribute> atributem. Můžete také odebrat poptávku.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Pravidlo soubory v následujícím kódu, protože transparentní metoda provede požadavek deklarativní zabezpečení.
+Soubory pravidla v následujícím kódu, protože transparentní metoda vytvoří deklarativní požadavek zabezpečení.
 
- [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../code-quality/codesnippet/CSharp/ca2143-transparent-methods-should-not-use-security-demands_1.cs)]
+[!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../code-quality/codesnippet/CSharp/ca2143-transparent-methods-should-not-use-security-demands_1.cs)]
 
 ## <a name="see-also"></a>Viz také:
- [CA2142: Transparentní kód nemůže být chráněn pomocí LinkDemands](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)
+[CA2142: Transparentní kód by neměl být chráněn pomocí LinkDemands](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)

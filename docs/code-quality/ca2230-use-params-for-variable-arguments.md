@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3318a9f5bd65c6b9514519936cc52e037e0c215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 505aa8cdc1371a3bc288772d77b49eb7a50e9830
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541780"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920143"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Použijte parametry pro proměnné argumenty
 
@@ -30,24 +30,24 @@ ms.locfileid: "62541780"
 |Kategorie|Microsoft.Usage|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Veřejný nebo chráněný typ obsahuje veřejná nebo chráněná metoda, která používá `VarArgs` konvence volání.
+## <a name="cause"></a>příčina
+Veřejný nebo chráněný typ obsahuje veřejnou nebo chráněnou metodu, která používá `VarArgs` konvenci volání.
 
 ## <a name="rule-description"></a>Popis pravidla
- `VarArgs` Konvence volání se používá některé metody definicemi přijímajícími proměnný počet parametrů. Metoda použití `VarArgs` konvence volání není specifikace CLS (Common Language) předpisy a nemusí být přístupné napříč programovacími jazyky.
+Konvence `VarArgs` volání se používá s určitými definicemi metod, které přebírají proměnný počet parametrů. Metoda používající `VarArgs` konvenci volání není kompatibilní se specifikací CLS (Common Language Specification) a nemusí být přístupná v různých programovacích jazycích.
 
- V jazyce C# `VarArgs` konvence volání se používá při seznamu parametrů metod končí `__arglist` – klíčové slovo. Jazyk Visual Basic nepodporuje `VarArgs` volání konvence a Visual C++ umožňuje použití pouze v nespravovaném kódu, který používá tři tečky `...` zápis.
+V C#je konvence `VarArgs` volání použita v případě, že `__arglist` seznam parametrů metody končí klíčovým slovem. Visual Basic nepodporuje konvenci C++ `...` voláníavizuálumožňujejehopoužitípouzevnespravovanémkódu,kterýpoužívátřitečky`VarArgs` .
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla v jazyce C#, použijte [params](/dotnet/csharp/language-reference/keywords/params) – klíčové slovo místo `__arglist`.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla C#, použijte `__arglist`klíčové slovo [params](/dotnet/csharp/language-reference/keywords/params) namísto.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje dva způsoby, ten, který porušuje pravidla a ten, který splňuje pravidlo.
+Následující příklad ukazuje dvě metody, jeden, který porušuje pravidlo a jeden, který splňuje pravidlo.
 
- [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
+[!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
 
 ## <a name="see-also"></a>Viz také:
 

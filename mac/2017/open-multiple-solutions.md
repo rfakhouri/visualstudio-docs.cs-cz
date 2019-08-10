@@ -1,56 +1,56 @@
 ---
-title: 'Postupy: Otevřít více řešení v sadě Visual Studio pro Mac'
-description: Zjistěte, jak otevřít více než jednoho řešení v sadě Visual Studio pro Mac a tom, jak otevřít více než jednu instanci aplikace.
+title: 'Postupy: Otevřít více řešení'
+description: Naučte se, jak otevřít více než jedno řešení v Visual Studio pro Mac a jak otevřít více než jednu instanci aplikace.
 author: conceptdev
 ms.author: crdun
 ms.date: 07/19/2018
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: cdbe02cf3d60b460252f09764521afd240551115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8fe8f8506bdd332553cffaed45951219c7904bc3
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988163"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872280"
 ---
-# <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Otevřít více řešení nebo instance sady Visual Studio pro Mac
+# <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Otevřete více řešení nebo instancí Visual Studio pro Mac
 
-Ve výchozím nastavení, všechny aplikace na počítači Mac, včetně sady Visual Studio pro Mac, jsou _jednou instancí_ aplikace. To znamená, že pokud aplikace, kterou chcete použít už otevřené (znázorněný v části ikonu v doku tečkou), znovu vyberte ikonu otevře spuštěnou instanci, nikoli nové. Pokud budete potřebovat další instance aplikace, může vyzvat systém a otevřete ho za vás, jak je popsáno v [další části](#open-a-second-instance-of-visual-studio-for-mac).
+Ve výchozím nastavení jsou všechny aplikace na Macu, včetně Visual Studio pro Mac, aplikace s _jednou instancí_ . To znamená, že pokud je aplikace, kterou chcete použít, už otevřená (znázorněná tečkou pod ikonou v Docku), pak se znovu vybere ikona se spuštěnou instancí namísto nového. Pokud požadujete další instance aplikace, můžete si systém vyzvat, aby ho otevřel za vás, jak je popsáno v [následující části](#open-a-second-instance-of-visual-studio-for-mac).
 
-Kromě toho když otevřete řešení, výchozí chování je otevřete řešení v nový pracovní prostor a zavřít aktuální pracovní prostor (v případě potřeby). Toto výchozí chování můžete přepsat udržováním aktuální pracovní prostor otevřít, jak je popsáno v [otevřete druhou řešení](#open-a-second-solution-inside-a-single-instance) oddílu.
+Kromě toho, když otevřete řešení, výchozí chování je otevřít řešení v novém pracovním prostoru a zavřít aktuální pracovní prostor (v případě potřeby). Toto výchozí chování můžete přepsat tak, že zachováte otevřený aktuální pracovní prostor, jak je popsáno v části [otevření druhého řešení](#open-a-second-solution-inside-a-single-instance) .
 
-## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Spusťte druhou instanci aplikace Visual Studio pro Mac
+## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Otevření druhé instance Visual Studio pro Mac
 
-Chcete-li otevřít druhou instanci integrovaného vývojového prostředí (IDE), otevřete **terminálu** aplikace a zadejte následující řádek:
+Chcete-li otevřít druhou instanci integrovaného vývojového prostředí (IDE), otevřete aplikaci **terminálu** a zadejte následující řádek:
 
 ```bash
 open -n "/Applications/Visual Studio.app"
 ```
 
-## <a name="open-a-second-solution-inside-a-single-instance"></a>Otevřete druhou řešení v jediné instance
+## <a name="open-a-second-solution-inside-a-single-instance"></a>Otevřít druhé řešení v rámci jedné instance
 
-Chcete-li otevřít druhé řešení spolu s svoje první řešení, postupujte následovně:
+Pokud chcete otevřít druhé řešení společně s vaším prvním řešením, použijte následující postup:
 
-1. S svoje první řešení otevřen, vyberte **souboru** > **otevřete**.
-2. Procházejte a najít stávající řešení v systému souborů.
-3. Vyberte **.sln** a vyberte možnost **možnosti**:
+1. Když máte vaše první řešení otevřené, vyberte **soubor** > **otevřít**.
+2. Procházejte systémem souborů a vyhledejte existující řešení.
+3. Vyberte soubor **. sln** a vyberte **Možnosti**:
 
-    ![Snímek obrazovky sady Visual Studio pro Mac, soubor .sln a zvýrazněnou možností](media/open-multiple-solutions-image3.png)
+    ![Snímek obrazovky Visual Studio pro Mac se zvýrazněným souborem. sln a vybranými možnostmi](media/open-multiple-solutions-image3.png)
 
-4. Zrušte **zavřít aktuální pracovní prostor** pole:
+4. Zrušte zaškrtnutí políčka **Zavřít aktuální pracovní prostor** :
 
-    ![Snímek obrazovky s možností dialogovém okně s zavřít aktuální pracovní prostor políčka](media/open-multiple-solutions-image1.png)
+    ![Snímek obrazovky dialogového okna Možnosti s nezaškrtnutým políčkem Zavřít aktuální pracovní prostor](media/open-multiple-solutions-image1.png)
 
-5. Vyberte **otevřete** otevřete druhou řešení v oblasti řešení.
+5. Výběrem **otevřít** otevřete druhé řešení v oblast řešení.
 
-Případně pokud jste nedávno otevřeli řešení, můžete následující kroky:
+Případně, pokud jste řešení nedávno otevřeli, můžete použít následující postup:
 
-1. Přejděte na **souboru** > **poslední řešení**.
+1. Přejít na**Poslední řešení** **souborů** > 
 
-    ![snímek obrazovky nabídky poslední řešení](media/open-multiple-solutions-image2.png)
+    ![Snímek obrazovky s posledními nabídkami řešení](media/open-multiple-solutions-image2.png)
 
-1. Podržte stisknutou klávesu **Ctrl** klíče a vyberte řešení. Tato kombinace otevře druhý řešení v oblasti řešení.
+1. Podržte stisknutou klávesu **CTRL** a vyberte řešení. Tato kombinace otevře druhé řešení v Oblast řešení.
 
-## <a name="related-video"></a>Související videa
+## <a name="related-video"></a>Související video
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Work-With-Multiple-Solutions/player]

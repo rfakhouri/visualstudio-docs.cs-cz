@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9120b3076dff1620f6ec5b9ff77041126932481a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6d0b694f9703c6260d95ad03e085fcdf774dc52
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557096"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919134"
 ---
 # <a name="list-memory-command"></a>Listovat paměť – příkaz
 Zobrazí obsah určeného rozsahu paměti.
@@ -32,50 +32,50 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ```
 
 ## <a name="arguments"></a>Arguments
- `expression`
+`expression`
 
- Volitelné. Adresa paměti, ze kterého se má zahájit zobrazování paměti.
+Volitelné. Adresa paměti, ze které se má začít zobrazovat paměť
 
 ## <a name="switches"></a>Přepínače
- / ANSI&#124;kódování Unicode
+/ANSI&#124;Unicode
 
- Volitelné. Zobrazení paměti jako odpovídající počet bajtů paměti, ANSI nebo Unicode znaky.
+Volitelné. Zobrazí paměť jako znaky odpovídající bajtům paměti, a to buď ANSI nebo Unicode.
 
- / Počet:`number`
+Výpočtu`number`
 
- Volitelné. Určuje počet bajtů paměti k zobrazení, počínaje `expression`.
+Volitelné. Určuje, kolik bajtů paměti se má zobrazit, od `expression`.
 
- / Formát:`formattype`
+Formátovat`formattype`
 
- Volitelné. Formát typu pro zobrazení informací o paměti v **paměti** okno; je pravděpodobně být OneByte TwoBytes, FourBytes, EightBytes, Float (32bitová verze) nebo dvakrát (64 bitů). Pokud použijete OneByte `/Unicode` není k dispozici.
+Volitelné. Typ formátu pro zobrazení informací o paměti v okně **paměti** ; může být OneByte, TwoBytes, FourBytes, EightBytes, float (32-bit) nebo Double (64-bit). Pokud se používá OneByte, `/Unicode` není k dispozici.
 
- / Hex&#124;podepsané&#124;bez znaménka
+/Hex&#124;podepsané&#124;bez znaménka
 
- Volitelné. Určuje formát zobrazení čísel: jako podepsaný držitelem, bez znaménka nebo šestnáctkové.
+Volitelné. Určuje formát pro zobrazení čísel: jako podepsaný, unsigned nebo hexadecimální.
 
 ## <a name="remarks"></a>Poznámky
- Místo psaní si kompletní **Debug.listmemory –** příkazu se všechny přepínače, můžete vyvolat příkaz předdefinované aliasy using s určitým přepínači přednastaveny tak, aby zadané hodnoty. Například místo zadávání:
+Místo zapsání kompletního příkazu **Debug. ListMemory –** se všemi přepínači můžete vyvolat příkaz pomocí předdefinovaných aliasů s určitými přepínači předem zadaným hodnotám. Například namísto zadání:
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
- můžete psát:
+můžete napsat:
 
 ```cmd
 >df /Count:30 /Unicode
 ```
 
- Tady je seznam dostupné aliasy pro **Debug.listmemory –** příkaz:
+Tady je seznam dostupných aliasů pro příkaz **Debug. ListMemory –** :
 
-|Alias|Příkaz a přepínače|
+|Alias|Příkazy a přepínače|
 |-----------| - |
 |**d**|Debug.listmemory –|
 |**da**|Debug.listmemory – /Ansi|
 |**db**|Debug.listmemory – /Format:OneByte|
 |**dc**|Debug.listmemory – /Format:FourBytes /Ansi|
 |**dd**|Debug.listmemory – /Format:FourBytes|
-|**df**|Debug.listmemory – /Format:Float|
+|**df**|Debug. ListMemory –/Format: float|
 |**dq**|Debug.listmemory – /Format:EightBytes|
 |**du**|Debug.listmemory – Unicode|
 

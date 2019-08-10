@@ -1,5 +1,5 @@
 ---
-title: Možnosti, textový Editor, F#, opravy kódu
+title: Možnosti, textový editor, F#, opravy kódu
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,34 +9,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb9daee86fec058fca68740eaea3b9436e5570d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a73991702455fab54baf868499634e1a4f5bbf48
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778538"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870749"
 ---
-# <a name="options-text-editor-f-code-fixes"></a>Možnosti, textový Editor, F#, opravy kódu
+# <a name="options-text-editor--f--code-fixes"></a>Nastavení Editor textu > F# > opravy kódu
 
-Použití **opravy kódu** stránky možnosti můžete zadat nastavení, které vám mohou pomoci identifikovat chyby kódu a nabízejí řešení. Chcete-li získat přístup k této stránce Možnosti, zvolte **nástroje** > **možnosti**a klikněte na tlačítko **textový Editor**  >  **F#**  >  **Opravy kódu**.
+Pomocí stránky možnosti oprav kódu můžete určit nastavení, které může pomáhat identifikovat chyby kódu a nabízet řešení. Chcete-li získat přístup k této stránce Možnosti, zvolte**možnost** **nástroje** > a pak zvolte možnost**opravy kódu** **editoru** > **F#**  > textu.
 
 ## <a name="code-fixes"></a>Opravy kódu
 
 - **Zjednodušit názvy (odebrat nepotřebné kvalifikátory)**
 
-   Pokud je toto políčko zaškrtnuto, jsou plně kvalifikované názvy zjednodušeny podmínky nejsou nezbytné, například pro člena často používaných oboru názvů.
+  Pokud je toto políčko zaškrtnuté, plně kvalifikované názvy budou zjednodušeny, pokud není potřebná kvalifikace, například pro člena často používaného oboru názvů.
 
-- **Vždy umístit otevřené příkazy na nejvyšší úrovni**
+- **Vždy umístit otevřené příkazy na nejvyšší úroveň**
 
-   Pokud je toto políčko zaškrtnuto a zadejte příkaz Otevřít v kódu, přejde na nejvyšší úrovni.
+  Pokud je toto políčko zaškrtnuté a zadáte `open` příkaz v kódu, je umístěn na nejvyšší úrovni.
 
-- **Odebrat nepoužívané otevřené výkazy**
+- **Odebrat nepoužívané otevřené příkazy**
 
-   Pokud je toto políčko zaškrtnuto, odeberou se otevřené příkazy v aktuálním souboru, které se nepoužívají.
+  Pokud je toto políčko zaškrtnuté, dokumenty se analyzují pro nepoužité `open` příkazy a v [rychlé akci](../quick-actions.md) se zobrazí akce, která odebere všechny nepoužité `open` příkazy.
 
-- **Analýza a navrhnout opravy nepoužitých hodnot**
+- **Analyzovat a navrhovat opravy pro nepoužívané hodnoty**
 
-   Pokud je toto políčko zaškrtnuto, nástroj rozpozná hodnotu, která se nepoužívá v kódu. Potom Pokud najedete myší nepoužitých hodnot, doporučuje způsoby, ve kterém můžete použít hodnotu.
+  Pokud je toto zaškrtávací políčko zaškrtnuto, nástroj rozpozná hodnotu, která není v kódu použita. Pokud pak najedete na nepoužitou hodnotu, doporučí se způsob, jakým můžete použít hodnotu.
 
 ## <a name="see-also"></a>Viz také:
 

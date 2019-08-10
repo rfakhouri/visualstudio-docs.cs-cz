@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 605ad454d00387d9a9094a518b4afed279fcc190
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461591"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925862"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurace projektu C++ pro IntelliSense
 
@@ -38,7 +38,7 @@ Pokud spustíte vaše sestavení mimo prostředí Visual Studio IDE a vaše sest
 
 ![Adresáře zahrnutí VC + +](media/vcpp-intellisense-include-paths.png)
 
- Chcete-li zobrazit aktuální hodnoty pro makra sestavení, jako je například **VC_IncludePath**, vyberte řádek zahrnout adresáře a klikněte na rozevírací seznam na pravé straně. Pak zvolte  **\<Upravit >** a klikněte na tlačítko **makra** .
+Chcete-li zobrazit aktuální hodnoty pro makra sestavení, jako je například **VC_IncludePath**, vyberte řádek zahrnout adresáře a klikněte na rozevírací seznam na pravé straně. Pak zvolte  **\<Upravit >** a klikněte na tlačítko **makra** .
 
 ### <a name="makefile-projects"></a>Projekty makefile
 
@@ -79,18 +79,18 @@ Chcete-li ověřit, zda kompilátor technologie IntelliSense používá správn�
 Okno Výstup nyní zobrazí příkazové řádky, které jsou předány kompilátoru technologie IntelliSense. Tady je ukázkový výstup:
 
 ```output
- [IntelliSense] Configuration Name: Debug|Win32
- [IntelliSense] Toolset IntelliSense Identifier:
- [IntelliSense] command line options:
- /c
- /I.
- /IC:\Repo\Includes
- /DWIN32
- /DDEBUG
- /D_DEBUG
- /Zc:wchar_t-
- /Zc:forScope
- /Yustdafx.h
+[IntelliSense] Configuration Name: Debug|Win32
+[IntelliSense] Toolset IntelliSense Identifier:
+[IntelliSense] command line options:
+/c
+/I.
+/IC:\Repo\Includes
+/DWIN32
+/DDEBUG
+/D_DEBUG
+/Zc:wchar_t-
+/Zc:forScope
+/Yustdafx.h
 ```
 
 Tyto informace vám pomohou pochopit, proč technologie IntelliSense poskytuje nepřesné informace. Například Pokud adresář include vašeho projektu obsahuje **$ (MojePromenna) \Include**a diagnostický protokol ukazuje **/I\Include** jako cestu include, znamená to, že **$ (MojePromenna)** se nevyhodnotila a byla odebrána z poslední cesty include. .
@@ -110,10 +110,10 @@ Sestavení technologie IntelliSense nevytváří binární soubory, ale přesto 
 Chybová zpráva vám může dát pokyn k povolení trasování v době návrhu:
 
 ```output
- error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
- configuration 'Debug|x64'. IntelliSense might be unavailable.
- Set environment variable TRACEDESIGNTIME=true and restart
- Visual Studio to investigate.
+error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
+configuration 'Debug|x64'. IntelliSense might be unavailable.
+Set environment variable TRACEDESIGNTIME=true and restart
+Visual Studio to investigate.
 ```
 
 Pokud nastavíte proměnnou prostředí TRACEDESIGNTIME na hodnotu true a restartujete sadu Visual Studio, zobrazí se soubor protokolu v adresáři% TEMP%, který může vést k diagnostice selhání sestavení.

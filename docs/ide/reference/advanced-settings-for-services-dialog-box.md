@@ -12,38 +12,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 330f52e1dd72f56c61e2fd77f5150edf4ac30731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7f599b4448fe39bf8c0d82d030f5f1173f28699
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791959"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919334"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Dialogové okno Pokročilé nastavení služeb
-Klientské aplikační služby nabízejí zjednodušený přístup ke [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] přihlášení, role a služby profilu v aplikacích Windows Forms a Windows Presentation Foundation (WPF). Můžete použít **služby** stránku **Návrháře projektu** konfigurace klientských aplikačních služeb. Další informace o **služby** stránky, přečtěte si téma [stránka služby, Návrhář projektu](../../ide/reference/services-page-project-designer.md).
+Klientské aplikační služby poskytují zjednodušený přístup [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] k přihlašování, rolím a profilovým službám z aplikací model Windows Forms a Windows Presentation Foundation (WPF). Ke konfiguraci klientských aplikačních služeb můžete použít stránku **služby** v **Návrháři projektu** . Další informace o stránce **služby** naleznete na [stránce služby, Návrhář projektu](../../ide/reference/services-page-project-designer.md).
 
- Použití **pokročilé nastavení služeb** dialogovému oknu **služby** stránku **Návrháře projektu** nakonfigurovat upřesňující nastavení pro klientské aplikační služby. Pomocí těchto nastavení můžete změnit některé výchozí aplikace služby chování umožňující méně běžné scénáře. Další informace najdete v tématu [klientských aplikačních služeb](/dotnet/framework/common-client-technologies/client-application-services).
+Pomocí dialogového okna **Upřesnit nastavení služeb** stránky **služby** v **Návrháři projektu** můžete nakonfigurovat upřesňující nastavení pro klientské aplikační služby. Pomocí těchto nastavení můžete přepsat některá výchozí chování aplikační služby a povolit tak méně běžných scénářů. Další informace najdete v tématu [aplikační služby klienta](/dotnet/framework/common-client-technologies/client-application-services).
 
- Přístup **pokročilé nastavení služeb** dialogové okno, vyberte uzel projektu v **Průzkumníku řešení**a potom klikněte na tlačítko **vlastnosti** na **projektu**  nabídky. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **služby** kartu a potom klikněte na **Upřesnit** tlačítko. Toto tlačítko bude zakázána, dokud povolit klientské aplikační služby.
+Chcete-li získat přístup k dialogovému oknu **Upřesnit nastavení služeb** , vyberte uzel projektu v **Průzkumník řešení**a potom klikněte na tlačítko **vlastnosti** v nabídce **projekt** . Když se zobrazí **Návrhář projektu** , klikněte na kartu **služby** a pak klikněte na tlačítko **Upřesnit** . Toto tlačítko bude zakázáno, dokud nepovolíte klientské aplikační služby.
 
 ## <a name="task-list"></a>Seznam úkolů
 
-- [Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Postupy: Nakonfigurovat Aplikační služby klienta](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
 
- **Uložit hodnoty hash hesla místně umožňující přihlášení offline** Určuje, zda zašifrované heslo uživatele bude do mezipaměti místně a povolit uživateli přihlášení, když je aplikace v režimu offline. Ve výchozím nastavení je vybraná tato možnost.
+ **Uložit hodnotu hash hesla lokálně pro povolení offline přihlášení** Určuje, zda bude zašifrovaná forma hesla uživatele ukládána do mezipaměti, aby se uživatel mohl přihlásit, když je aplikace v režimu offline. Tato možnost je vybrána ve výchozím nastavení.
 
- **Vyžadovat, aby uživatelé přihlásit znovu pokaždé, když vyprší platnost souboru cookie server** Určuje, zda dříve ověřené uživatele automaticky ověřit při vaše aplikace přistupuje role nebo služby profilů a ověření serveru vypršela platnost souboru cookie. Vyberte tuto možnost, chcete odepřít přístup k aplikačním službám a vyžadují explicitní opětovné ověření po vypršení platnosti souboru cookie. To je užitečné pro aplikace nasazené na veřejných místech, abyste měli jistotu, že uživatelé, kteří neustále spuštěný aplikace po použití zůstat ověření po neomezenou dobu. Tato možnost není ve výchozím nastavení zaškrtnuto.
+ **Vyžadovat, aby se uživatelé přihlásili znovu vždy, když vyprší platnost souboru cookie serveru** Určuje, jestli má být dřív ověřený uživatel znovu ověřený, když vaše aplikace přistupuje k rolím nebo službě profilů a vypršela platnost souboru cookie pro ověření serveru. Tuto možnost vyberte, pokud chcete odepřít přístup k aplikačním službám a po vypršení platnosti souboru cookie vyžadovat explicitní opakované ověření. To je užitečné pro aplikace nasazené ve veřejných umístěních, aby se zajistilo, že uživatelé, kteří aplikaci spouštějí po použití, se nebudou nadále ověřovat po neomezenou dobu. Tato možnost je ve výchozím nastavení prázdná.
 
- **Časový limit mezipaměti služby role** určuje množství času se použití zprostředkovatele rolí klienta do mezipaměti hodnoty role namísto přístupu ke službě role. Nastavte tento časový interval na malou hodnotu při aktualizaci role často nebo větší hodnotu při aktualizaci role zřídka. Výchozí hodnota je jeden den.
+ **Časový limit mezipaměti služby role** Určuje dobu, po kterou bude zprostředkovatel rolí klienta místo přístupu ke službě rolí používat hodnoty role v mezipaměti. Nastavte tento časový interval na malou hodnotu, pokud se role často aktualizují, nebo na větší hodnotu, když se role aktualizují zřídka. Výchozí hodnota je jeden den.
 
- Zprostředkovatel rolí má přístup k hodnoty uložené v mezipaměti role nebo služby role při volání <xref:System.Web.Security.RolePrincipal.IsInRole%2A> metody. Chcete-li programově vymazat mezipaměť a vynutit tato metoda pro přístup k vzdálené službě, zavolejte <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A> metody.
+Zprostředkovatel rolí přistupuje k hodnotám role v mezipaměti nebo službě rolí při volání <xref:System.Web.Security.RolePrincipal.IsInRole%2A> metody. Pro programové vymazání mezipaměti a vynucení této metody pro přístup ke vzdálené službě volejte <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A> metodu.
 
- **Použijte vlastní připojovací řetězec** Určuje, jestli poskytovatelé služeb klienta bude používat vlastní úložiště dat pro místní mezipaměti. Ve výchozím nastavení použije poskytovatelé místního systému souborů pro ukládání do mezipaměti. Výběrem této možnosti se automaticky vyplní výchozí připojovací řetězec do textového pole. Můžete ponechat výchozí připojovací řetězec k automatickému generování a použití databáze systému SQL Server Compact Edition, nebo můžete zadat připojovací řetězec k existující databázi SQL serveru. Další informace najdete v tématu [jak: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). Tato možnost není ve výchozím nastavení zaškrtnuto.
+ **Použít vlastní připojovací řetězec** Určuje, jestli budou poskytovatelé služeb klienta používat vlastní úložiště dat pro místní mezipaměť. Ve výchozím nastavení budou poskytovatelé služeb používat místní systém souborů pro mezipaměť. Výběrem této možnosti se automaticky naplní textové pole výchozím připojovacím řetězcem. Můžete ponechat výchozí připojovací řetězec pro automatické generování a používání databáze edice SQL Server Compact, nebo můžete zadat připojovací řetězec do existující databáze SQL Server. Další informace najdete v tématu [jak: Nakonfigurujte Aplikační služby](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)klienta. Tato možnost je ve výchozím nastavení prázdná.
 
 ## <a name="see-also"></a>Viz také:
 
 - [Klientské aplikační služby](/dotnet/framework/common-client-technologies/client-application-services)
 - [Stránka Služby, Návrhář projektu](../../ide/reference/services-page-project-designer.md)
-- [Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Postupy: Nakonfigurovat Aplikační služby klienta](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)

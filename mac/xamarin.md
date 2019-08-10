@@ -1,60 +1,60 @@
 ---
-title: Xamarin in Visual Studio for Mac
-description: 'pomocí Xamarinu v sadě Visual Studio for Mac umožňuje vytvářet multiplatformní aplikace pro iOS, Mac, Android, tvOS a watchOS '
+title: Xamarin
+description: 'pomocí Xamarin v Visual Studio pro Mac můžete vytvářet aplikace pro různé platformy, které cílí na iOS, Mac, Android, tvOS a watchOS. '
 author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: e6cc642125f3b1466dd38d9ba3778c4f287cec63
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692099"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872351"
 ---
-# <a name="xamarin-mobile-app-development"></a>Vývoj mobilních aplikací pro Xamarin
+# <a name="xamarin-mobile-app-development"></a>Vývoj mobilních aplikací Xamarin
 
 Prvotřídní podpora [Xamarinu](/xamarin) umožňuje vývoj propracovaných nativních možností pro Android, macOS, iOS, tvOS a watchOS. Multiplatformní aplikace Xamarin.Forms usnadňují sdílení kódu uživatelského rozhraní založeného na XAML mezi Androidem, iOSem a macOSem bez omezení přístupu k nativním funkcím.
 
 ## <a name="android"></a>Android
 
-Visual Studio pro Mac má svůj vlastní integrované správce sady Android SDK, umožňuje přístup k sady SDK má vaše aplikace cílí.
+Visual Studio pro Mac má svého vlastního integrovaného správce Android SDK a umožňuje přístup k sadám SDK, na které chcete aplikaci cílit.
 
-Pro aplikace pro Android, Visual Studio for Mac obsahuje vlastního návrháře, který funguje s Androidem `.axml` soubory vizuálně sestavit uživatelská rozhraní. Visual Studio pro Mac bude otevření těchto souborů v Android Designer, jak je znázorněno na následujícím obrázku:
+Pro aplikace pro Android Visual Studio pro Mac obsahuje vlastní Návrhář, který spolupracuje se soubory `.axml` pro Android a umožňuje vizuálně sestavovat uživatelská rozhraní. Visual Studio pro Mac tyto soubory otevřou v Android Designer, jak je znázorněno na následujícím obrázku:
 
-![Návrhář v jazyce s androidem](media/intro-image31.png)
+![Návrhář uživatelského rozhraní pro Android](media/intro-image31.png)
 
-Další informace o návrháři s Androidem, najdete v článku [přehled návrháře Xamarin.Android](/xamarin/android/user-interface/android-designer/index) průvodce.
+Další informace o Android Designer najdete v průvodci přehledem [Xamarin. Android Designer](/xamarin/android/user-interface/android-designer/index) .
 
 ## <a name="ios"></a>iOS
 
-IOS Designer je plně integrovaná se službou Visual Studio pro Mac a umožňuje úpravy s náhledem .xib a scénáře souborů vytvářet iOS, tvOS a WatchOS uživatelská rozhraní a přechody. Celé uživatelské rozhraní může být sestavena pomocí funkcí a přetažení mezi nástrojů a návrhovou plochu, při použití intuitivní prostředí pro zpracování událostí. IOS Designer také podporuje [vlastní ovládací prvky](/xamarin/ios/user-interface/designer/ios-designable-controls-overview) s její Další výhodou vykreslování v době návrhu.
+IOS Designer je plně integrovaný s Visual Studio pro Mac a umožňuje vizuální úpravy souborů. xib a scénářů pro vytváření uživatelská rozhraní a přechodů na iOS, tvOS a WatchOS. Celé uživatelské rozhraní lze sestavit pomocí funkce přetažení mezi prvky nástrojů a Návrhová plocha a při použití intuitivního přístupu ke zpracování událostí. IOS Designer podporuje také [vlastní ovládací prvky](/xamarin/ios/user-interface/designer/ios-designable-controls-overview) s přidanou výhodou pro vykreslování v době návrhu.
 
-![iOS designer scénáře](media/intro-image30.png)
+![Návrhář scénářů pro iOS](media/intro-image30.png)
 
-Další informace o použití v iOS designeru, najdete v článku [návrháře](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos) vodítka.
+Další informace o používání návrháře pro iOS najdete v příručkách pro [Návrháře](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos) .
 
 ### <a name="mac"></a>Mac
 
-Xamarin poskytuje nativní rozhraní API Macu vazby, které vám umožňují vytvářet působivé aplikace systému Mac.
+Xamarin poskytuje nativní vazby rozhraní Mac API, které umožňují vytvářet působivé aplikace pro Mac.
 
-Další informace o psaní aplikací systému Mac pomocí sady Visual Studio for Mac najdete [Xamarin.Mac](/xamarin/mac/get-started/index) vodítka.
+Další informace o psaní aplikací pro Mac pomocí Visual Studio pro Mac najdete v příručkách pro [Xamarin. Mac](/xamarin/mac/get-started/index) .
 
 ## <a name="xamarin-enterprise-features"></a>Funkce Xamarin Enterprise
 
 > [!Note]
-> Tyto produkty jde použít jenom s předplatným sady Visual Studio Enterprise.
+> Tyto produkty se dají používat jenom s předplatným Visual Studio Enterprise.
 
 ### <a name="profiler"></a>profiler
 
-Xamarin Profiler má tři nástrojů pro profilaci. [Úvod do Xamarin Profiler](/xamarin/tools/profiler/index?tabs=macos) příručka popisuje, co tyto nástroje měření a způsob jejich analýze vaší aplikace a vysvětluje význam údaje zobrazené na jednotlivých obrazovkách.
+Xamarin Profiler má k dispozici tři nástroje k profilaci. [Úvod do Xamarin Profilerového](/xamarin/tools/profiler/index?tabs=macos) Průvodce zkoumá, co tyto nástroje měří a jak analyzují vaši aplikaci a vysvětluje význam dat zobrazených na jednotlivých obrazovkách.
 
 ### <a name="inspector"></a>Inspector
 
-Xamarin Inspector poskytuje interaktivní konzolu C# s uživatelskými nástroji. To může sloužit jako podpory ladění nebo diagnostiku, když inspekce živých aplikací, jako nástroj výuky, jako nástroj dokumentace nebo nástroj pro experimentování ve službě.
+Xamarin Inspector poskytuje interaktivní C# konzolu s uživatelskými nástroji. Dá se použít jako pomůcka pro ladění nebo diagnostiku při kontrole živých aplikací, jako je učebnní nástroj, jako nástroj dokumentace nebo nástroj experimentování.
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-Skládá se ze samostatné aplikace, která poskytuje bohaté možnosti jazyka C# konzolu, která můžete zacílit na různé programovací platforem (Android, iOS, Mac a Windows) a integrujte je do vašeho prostředí IDE ladění pracovního postupu. 
+Skládá se ze samostatné aplikace, která poskytuje bohatou C# konzolu, která může cílit na různé programovací platformy (Android, iOS, Mac a Windows) a integrovat do vašeho pracovního postupu ladění pro platformu IDES.
 
-Další informace najdete v tématu [Xamarin Inspector](/xamarin/tools/inspector/) průvodce.
+Další informace najdete v příručce pro [Xamarin Inspector](/xamarin/tools/inspector/) .

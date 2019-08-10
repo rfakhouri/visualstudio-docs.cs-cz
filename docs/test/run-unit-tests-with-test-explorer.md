@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711293"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918174"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů částí pomocí Průzkumníka testů
 
@@ -134,7 +134,7 @@ Průzkumník testů umožňuje seskupit testy do předdefinovaných kategorií. 
 ### <a name="group-tests-in-the-test-list"></a>Seskupit testy v seznamu testů
 
 ::: moniker range="vs-2017"
-Chcete-li změnit způsob, jakým jsou testy uspořádány, zvolte šipku dolů vedle tlačítka skupina ![](../test/media/ute_groupby_btn.png) **pro tlačítko Test** Průzkumníka a vyberte Nová kritéria seskupení.
+Chcete-li změnit způsob, jakým jsou testy uspořádány, zvolte šipku dolů vedle tlačítka skupina ![pro tlačítko](../test/media/ute_groupby_btn.png) test Průzkumníka a vyberte Nová kritéria seskupení.
 
 ![Seskupit testy podle kategorie v Průzkumníku testů](../test/media/ute_groupbycategory.png)
 ::: moniker-end
@@ -169,7 +169,7 @@ Můžete definovat vlastní úrovně hierarchie a seskupit podle **stavu** a pak
 |**Třída**|Seskupí testy pomocí obsahující třídy.|
 ::: moniker-end
 
-### <a name="group-by-traits"></a>Seskupit podle vlastností
+### <a name="traits"></a>Traits
 
 Vlastnost je obvykle dvojice název/hodnota kategorie, ale může to být také jedna kategorie. Vlastnostem lze přiřadit metody, které jsou identifikovány jako testovací metoda v rámci jednotkového testu. Rozhraní testování částí může definovat kategorie vlastností. Přidáním hodnot do kategorií vlastností můžete definovat vlastní páry název-hodnota kategorie. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.
 
@@ -187,7 +187,7 @@ V rozhraní Microsoft pro testování částí pro spravované aplikace definuje
 
 **Vlastnosti v architektuře testování částí společnosti Microsoft proC++**
 
- Viz [jak použít systém testování částí od společnosti Microsoft pro C++ ](how-to-use-microsoft-test-framework-for-cpp.md).
+Viz [jak použít systém testování částí od společnosti Microsoft pro C++ ](how-to-use-microsoft-test-framework-for-cpp.md).
 
 ## <a name="create-custom-playlists"></a>Vytváření vlastních seznamů testů
 
@@ -215,7 +215,7 @@ Seznam se otevře na nové kartě Průzkumník testů. Tento seznam je možné p
 
 ![Seznam testů se otevře na samostatné kartě Průzkumníka testů.](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Chcete-li přidat testy do seznamu stop**, vyberte jeden nebo více testů v Průzkumníku testů. Klikněte pravým tlačítkem a vyberte **Přidat do seznamu** > testů**Nový seznam**testů. 
+**Chcete-li přidat testy do seznamu stop**, vyberte jeden nebo více testů v Průzkumníku testů. Klikněte pravým tlačítkem a vyberte **Přidat do seznamu** > testů**Nový seznam**testů.
 
 **Chcete-li otevřít seznam**testů, zvolte ikonu seznamu stop na panelu nástrojů sady Visual Studio a v nabídce vyberte dříve uložený soubor seznamu testů.
 ::: moniker-end
@@ -229,7 +229,7 @@ Seznam se otevře na nové kartě Průzkumník testů. Tento seznam je možné p
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtrování, řazení a změna uspořádání sloupců testu
 
-Sloupce lze filtrovat, seřadit a změnit jejich uspořádání. 
+Sloupce lze filtrovat, seřadit a změnit jejich uspořádání.
 * Pokud chcete filtrovat konkrétní vlastnosti, klikněte na ikonu filtru v horní části sloupce vlastnosti.
 
   ![Filtr sloupců](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
@@ -302,7 +302,7 @@ Chcete-li diagnostikovat, proč testovací metoda trvá příliš dlouho, vybert
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analýza pokrytí kódu testu jednotek
 
-Můžete určit množství kódu produktu, který je skutečně testován pomocí testu jednotek pomocí nástroje pokrytí kódu sady Visual Studio. Můžete spustit pokrytí kódem u vybraných testů nebo u všech testů v řešení.
+Množství kódu produktu, který je skutečně testován pomocí testů jednotek, můžete určit pomocí nástroje pokrytí kódu sady Visual Studio, který je k dispozici v edici Visual Studio Enterprise. Můžete spustit pokrytí kódem u vybraných testů nebo u všech testů v řešení.
 
 Spuštění pokrytí kódu pro testovací metody v řešení:
 
@@ -331,6 +331,8 @@ Testy lze spustit z **Průzkumníka testů**kliknutím pravým tlačítkem myši
 |-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
+|TestExplorer.RunAllTests|**CTRL**+**R**, **A**|
+|TestExplorer.RepeatLastRun|**CTRL**+**R**, **L**|
 
 > [!NOTE]
 > Nemůžete spustit test v abstraktní třídě, protože testy jsou definovány pouze v abstraktních třídách a nikoli v instanci. Chcete-li spustit testy v abstraktních třídách, vytvořte třídu, která je odvozena z abstraktní třídy.

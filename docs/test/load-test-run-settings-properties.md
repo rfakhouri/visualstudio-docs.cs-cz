@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3755a0ebc0227a62a2a23bc15d88d4d008ab733e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 4d50303596cec88bd5463b2ad1df713991c8932c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662077"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923676"
 ---
 # <a name="load-test-run-settings-properties"></a>Vlastnosti nastavení běhu zátěžového testu
 
@@ -45,7 +45,7 @@ Další informace najdete v tématu [Konfigurace nastavení běhu zátěžového
 |**Uložit četnost protokolu pro dokončené testy**|Určuje četnost zápisu protokolu testu. Číslo označuje, že se do protokolu testu uloží jeden z každého zadaného počtu testů. Například zadáním hodnoty deset určíte, že desáté, dvacáté, thirtieth a tak dále budou zapsány do protokolu testu. Nastavením hodnoty na 0 určíte, že se neuloží žádné protokoly testů.|
 |**Při selhání testu uložit protokol**|Logická hodnota, která určuje, zda jsou v případě neúspěšného testu v rámci zátěžového testu uloženy protokoly testů. Výchozí hodnota je `True`.<br /><br /> Další informace najdete v tématu [jak: Určete, jestli se chyby testu ukládají do protokolů testu.](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
- Další informace najdete v tématu [Úprava nastavení protokolování zátěžového testu](../test/modify-load-test-logging-settings.md).
+Další informace najdete v tématu [Úprava nastavení protokolování zátěžového testu](../test/modify-load-test-logging-settings.md).
 
 ## <a name="results-properties"></a>Vlastnosti výsledků
 
@@ -70,7 +70,7 @@ Další informace najdete v tématu [Konfigurace nastavení běhu zátěžového
 |**Iterace testu**|Určuje celkový počet jednotlivých testů, které mají být spuštěny před dokončením zátěžového testu. Tato vlastnost se vztahuje pouze v případě, že je `True`vlastnost "použít iterace testu".|
 |**Použít iterace testu**|Pokud je `True`použita iterace testu, pak zátěžový test běží, dokud počet jednotlivých testů dokončených v rámci zátěžového testu nedosáhne čísla zadaného vlastností "test iterací". V tomto případě se budou ignorovat časová nastavení, která jsou zahřívání, doba běhu a doba trvání chlazení. Pokud je `False`použita iterace testu, platí všechna nastavení časování a "iterace testu" se ignorují.|
 
- Další informace najdete v tématu [jak: Zadejte počet iterací testu v nastavení](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)spuštění.
+Další informace najdete v tématu [jak: Zadejte počet iterací testu v nastavení](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)spuštění.
 
 ## <a name="timing-properties"></a>Vlastnosti časování
 

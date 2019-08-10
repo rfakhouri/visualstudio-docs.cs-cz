@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a68b22b5a4fedb7d3548ac3aceda7c4dc109bebe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483555"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870861"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Práce s několika uživatelskými účty
 
@@ -33,7 +33,7 @@ Přihlaste se k aplikaci Visual Studio pomocí účet Microsoft nebo účtu orga
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Přístup k účtu Azure v Průzkumník serveru
 
-Stisknutím **kombinace kláves CTRL**+**ALT**+**s** otevřete **Průzkumník serveru**. Rozbalte uzel **Azure** a Všimněte si, že obsahuje prostředky dostupné v účtu Azure, který je přidružený k účtu, který jste použili k přihlášení do sady Visual Studio. Vypadá podobně jako na následujícím obrázku:
+Chcete-li otevřít Průzkumník serveru, zvolte možnost **Zobrazit** > **Průzkumník serveru** (nebo v případě, že používáte "Obecné" [nastavení prostředí](../ide/environment-settings.md), stiskněte **kombinaci kláves CTRL**+ **+** +**S**). Rozbalte uzel **Azure** a Všimněte si, že obsahuje prostředky dostupné v účtu Azure, který je přidružený k účtu, který jste použili k přihlášení do sady Visual Studio. Vypadá podobně jako na následujícím obrázku:
 
 ![Průzkumník serveru s rozbaleným uzlem Azure](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 

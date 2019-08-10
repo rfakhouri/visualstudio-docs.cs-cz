@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88ede32645c9fc761c476e9f4d45ddf11a7577a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ea652f04295871f9437d80555254caecab87a48
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934617"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926065"
 ---
 # <a name="set-current-thread-command"></a>Nastavit aktuální vlákno – příkaz
-Nastaví zadaný podproces jako aktuální vlákno.
+Nastaví zadané vlákno jako aktuální vlákno.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,9 +30,9 @@ Debug.SetCurrentThread index
 ```
 
 ## <a name="arguments"></a>Arguments
- `index`
+`index`
 
- Povinný parametr. Vybere vlákno podle jejich indexu.
+Povinný parametr. Vybere vlákno podle jeho indexu.
 
 ## <a name="example"></a>Příklad
 

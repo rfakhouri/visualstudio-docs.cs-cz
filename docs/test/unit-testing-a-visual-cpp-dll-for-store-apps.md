@@ -7,34 +7,34 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 723e61f60550230774eb909dfce44d5f91ae7a64
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 6e0599445ff07227f5075a1a10a8dfdfe50e88f0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132196"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925786"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Testování knihovny DLL Visual C++
 
 Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro knihovny DLL C++ pro aplikace univerzální platformy Windows (UPW) pomocí rozhraní pro testování Microsoft pro jazyk C++. Knihovny DLL RooterLib ukazuje vágní paměti limit teorie z calculus implementací funkce, která vypočítá odhad odmocninu daného čísla. Knihovna DLL může potom bude zahrnutý aplikace pro UPW, která zobrazuje uživatele zábavných věcí, které lze provést s matematickým výrazem.
 
- Toto téma ukazuje, jak používat jako první krok při vývoji testování částí. V takovém případě napíšete testovací metoda, která ověřuje konkrétní chování v systému, který testujete a potom napíšete kód, který projde testem. Tím, že změny v pořadí podle následujících postupů lze zrušit tuto strategii první zapisovat kód, který chcete otestovat a teprve pak píšete jednotkové testy.
+Toto téma ukazuje, jak používat jako první krok při vývoji testování částí. V takovém případě napíšete testovací metoda, která ověřuje konkrétní chování v systému, který testujete a potom napíšete kód, který projde testem. Tím, že změny v pořadí podle následujících postupů lze zrušit tuto strategii první zapisovat kód, který chcete otestovat a teprve pak píšete jednotkové testy.
 
- V tomto tématu se vytvoří také jedno řešení sady Visual Studio a samostatné projekty pro testy jednotky a knihovny DLL, který chcete testovat. Můžete také zahrnout jednotkové testy přímo do projektu knihovny DLL, nebo můžete vytvořit samostatné řešení pro testování částí a. KNIHOVNY DLL. V tématu [přidání testů jednotek do stávajících aplikací C++](../test/how-to-use-microsoft-test-framework-for-cpp.md) tipy, které struktury používat.
+V tomto tématu se vytvoří také jedno řešení sady Visual Studio a samostatné projekty pro testy jednotky a knihovny DLL, který chcete testovat. Můžete také zahrnout jednotkové testy přímo do projektu knihovny DLL, nebo můžete vytvořit samostatné řešení pro testování částí a. KNIHOVNY DLL. V tématu [přidání testů jednotek do stávajících aplikací C++](../test/how-to-use-microsoft-test-framework-for-cpp.md) tipy, které struktury používat.
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> Vytvoření řešení a projektu testování částí
 
 ::: moniker range="vs-2019"
 
-Začněte tím, že vytvoříte nový testovací projekt. Na **souboru** nabídce zvolte **nový** > **projektu**. V **vytvořte nový projekt** dialogového okna, do vyhledávacího pole zadejte "test" a potom nastavte **jazyk** k C++. Klikněte na tlačítko **aplikace testů jednotek (Universal Windows)** ze seznamu šablon projektu.
+Začněte vytvořením nového testovacího projektu. Na **souboru** nabídce zvolte **nový** > **projektu**. V dialogovém okně **vytvořit nový projekt** zadejte do vyhledávacího pole "test" a pak nastavte **jazyk** na C++. Klikněte na tlačítko **aplikace testů jednotek (Universal Windows)** ze seznamu šablon projektu.
 
-   ![Vytvoření nového projektu testů UPW](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
+   ![Vytvořit nový projekt testů UWP](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Začněte tím, že vytvoříte nový testovací projekt. Na **souboru** nabídce zvolte **nový** > **projektu**. V **nový projekt** dialogového okna, rozbalte **nainstalováno** > **Visual C++**  a zvolte **Windows Universal**. Klikněte na tlačítko **aplikace testů jednotek (Universal Windows)** ze seznamu šablon projektu.
+Začněte vytvořením nového testovacího projektu. Na **souboru** nabídce zvolte **nový** > **projektu**. V dialogovém okně **Nový projekt** rozbalte položku **nainstalovaná** > **aplikace C++ Visual** a vyberte možnost univerzální pro **Windows**. Klikněte na tlačítko **aplikace testů jednotek (Universal Windows)** ze seznamu šablon projektu.
 
 ::: moniker-end
 
@@ -81,14 +81,14 @@ Začněte tím, že vytvoříte nový testovací projekt. Na **souboru** nabídc
 
 ::: moniker range="vs-2019"
 
-V **Průzkumníka řešení**, zvolte název řešení. V místní nabídce zvolte **přidat**a potom **nový projekt**. V **přidat nový projekt** dialogové okno, nastavte **jazyk** k C++ a do vyhledávacího pole zadejte "DLL". Ze seznamu výsledků zvolte **aplikace testů jednotek (Universal Windows - C++/CX)** .
+V **Průzkumníka řešení**, zvolte název řešení. V místní nabídce zvolte možnost **Přidat**a **Nový projekt**. V dialogovém okně **Přidat nový projekt** nastavte **jazyk** na C++ a do vyhledávacího pole zadejte "dll". V seznamu výsledků vyberte možnost **aplikace pro testování částí (Universal Windows- C++/CX)** .
 
 ![Vytvoření projektu RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-V **Průzkumníka řešení**, zvolte název řešení. V místní nabídce zvolte **přidat**a potom **nový projekt**.
+V **Průzkumníka řešení**, zvolte název řešení. V místní nabídce zvolte možnost **Přidat**a **Nový projekt**.
 
 ![Vytvoření projektu RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
@@ -152,9 +152,9 @@ V **Průzkumníka řešení**, zvolte název řešení. V místní nabídce zvol
 
 1. Přidáte RooterLib RooterLibTests projektu.
 
-   1. V **Průzkumníka řešení**, zvolte **RooterLibTests** projektu a klikněte na tlačítko **přidat** > **odkaz** na zástupce nabídka.
+   1. V **Průzkumník řešení**zvolte projekt **RooterLibTests** a pak zvolte **Přidat** > **odkaz** v místní nabídce.
 
-   1. V **přidat odkaz** dialogového okna zvolte **projekty**. Vyberte **RouterLib** položky.
+   1. V dialogovém okně **Přidat odkaz** vyberte možnost **projekty**. Vyberte **RouterLib** položky.
 
 2. Zahrnutím souboru hlaviček RooterLib v *unittest1.cpp*.
 

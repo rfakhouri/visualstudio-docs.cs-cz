@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c811c7e2b6ba06c716179469c8b038fd26b3b38a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b79483e8703ea297634d0d81d5449c09b58c9fb7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546030"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921987"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: Nepoužívejte typ AutoDual ClassInterface
 
@@ -30,33 +30,33 @@ ms.locfileid: "62546030"
 |-|-|
 |TypeName|DoNotUseAutoDualClassInterfaceType|
 |CheckId|CA1408|
-|Kategorie|Microsoft.Interoperability|
+|Kategorie|Microsoft. interoperabilita|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Viditelného typu modelu COM (Component Object) je označena <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atribut nastaven `AutoDual` hodnotu <xref:System.Runtime.InteropServices.ClassInterfaceType>.
+## <a name="cause"></a>příčina
+Viditelný typ modelu COM (Component Object Model) je označen <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atributem nastaveným `AutoDual` na hodnotu <xref:System.Runtime.InteropServices.ClassInterfaceType>.
 
 ## <a name="rule-description"></a>Popis pravidla
- Typy, které používají duální rozhraní, umožňují klientům navázat se na určité rozložení rozhraní. Změny v budoucí verzi rozložení typu nebo jakéhokoli základního typu přeruší klienty modulu COM, kteří jsou navázáni na toto rozhraní. Ve výchozím nastavení pokud <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atribut není zadán, slouží pouze pro odeslání rozhraní.
+Typy, které používají duální rozhraní, umožňují klientům navázat se na určité rozložení rozhraní. Změny v budoucí verzi rozložení typu nebo jakéhokoli základního typu přeruší klienty modulu COM, kteří jsou navázáni na toto rozhraní. Ve výchozím nastavení platí, <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> že pokud atribut není zadán, je použita pouze odesílající rozhraní.
 
- Pokud není označen jinak, jsou viditelné modelu COM; všechny veřejné neobecné typy všechny neveřejné a obecné typy nejsou viditelná modelu COM.
+Pokud není určeno jinak, všechny veřejné neobecné typy jsou viditelné pro COM; všechny NonPublic a obecné typy jsou neviditelné v modelu COM.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, změňte hodnotu <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atribut `None` hodnotu <xref:System.Runtime.InteropServices.ClassInterfaceType> a explicitně definují rozhraní.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, změňte hodnotu <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atributu `None` na hodnotu <xref:System.Runtime.InteropServices.ClassInterfaceType> a explicitně definujte rozhraní.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění tohoto pravidla, pokud je jisté, že nedojde ke změně rozložení typu a jeho základních typů. v budoucí verzi.
+Potlačí upozornění z tohoto pravidla, pokud není jisté, že rozložení typu a jeho základní typy se v budoucí verzi nezmění.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje třídu, která porušuje pravidla a opakované deklaraci třídy, která se použijte explicitní rozhraní.
+Následující příklad ukazuje třídu, která porušuje pravidlo a opětovnou deklaraci třídy pro použití explicitního rozhraní.
 
- [!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
- [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
+[!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
+[!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1403: Typy automatického rozložení by neměly být viditelné modelu COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
+[CA1403: Typy automatického rozložení by neměly být viditelné modelu COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
 
- [CA1412: Označte rozhraní ComSource jako IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
+[CA1412: Označte rozhraní ComSource jako IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
 ## <a name="see-also"></a>Viz také:
 

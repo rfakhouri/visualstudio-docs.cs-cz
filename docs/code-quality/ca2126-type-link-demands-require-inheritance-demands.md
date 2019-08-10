@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fdf92eae202f1ebb80b88e28307e7dacfbc0a39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2be42519f87c3c040c1f80c80d53d490853d986e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542387"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920756"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Požadavky na propojení typů vyžadují požadavky na dědičnost
 
@@ -34,33 +34,33 @@ ms.locfileid: "62542387"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Veřejný nezapečetěný typ je chráněn pomocí požadavku propojení, má přepisovatelnou metodu a typ ani metoda nejsou chráněny pomocí vyžádané dědičnosti.
+## <a name="cause"></a>příčina
+Veřejný nezapečetěný typ je chráněn s požadavkem propojení, má přepsatelné metody a ani typ ani metoda není chráněna pomocí požadavku dědičnosti.
 
 ## <a name="rule-description"></a>Popis pravidla
- Požadavek propojení na metody nebo její deklarující typ vyžaduje okamžitou volajícímu metody zadané oprávnění. Požadavek dědičnosti na metodě vyžaduje metodu přepsání zadané oprávnění. Požadavek dědičnosti na typu vyžaduje odvozená třída má zadané oprávnění.
+Požadavek propojení na metodu nebo jeho deklarující typ vyžaduje bezprostředního volajícího metody, že má zadané oprávnění. Požadavek dědičnosti na metodu vyžaduje přepsání metody, která má zadané oprávnění. Požadavek dědičnosti na typ vyžaduje, aby odvozená třída měla zadané oprávnění.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, zabezpečte typu nebo metody pomocí vyžádané dědičnosti pro stejné oprávnění jako požadavek propojení.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, zabezpečte typ nebo metodu pomocí požadavku dědičnosti pro stejné oprávnění, jako je požadavek propojení.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ, který porušuje pravidla.
+Následující příklad ukazuje typ, který je v rozporu s pravidlem.
 
- [!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
- [!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
- [!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]
+[!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
+[!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
+[!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA2108: Revize deklarativních zabezpečení na hodnotách](../code-quality/ca2108-review-declarative-security-on-value-types.md)
+[CA2108: Kontrola deklarativních zabezpečení na hodnotových typech](../code-quality/ca2108-review-declarative-security-on-value-types.md)
 
- [CA2112: Zabezpečené typy by neměly vystavovat pole](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+[CA2112: Zabezpečené typy by neměly vystavovat pole](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA2122: Nezveřejňujte nepřímo metody s požadavky propojení](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
+[CA2122: Nezveřejňujte nepřímo metody s požadavky propojení](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
 
- [CA2123: Požadavky na přepsání odkazu musejí být identické s bází](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
+[CA2123: Požadavky na přepsání odkazu by měly být shodné se základem](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>Viz také:
 

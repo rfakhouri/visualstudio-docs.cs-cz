@@ -13,36 +13,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d366ed403eba6fbfab4aec22f4542ee5362962f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1527d3d44d499028c852cb09e489c1b873b11c45
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540608"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926149"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Stránka Moje rozšíření, návrhář projektu (Visual Basic)
-Použití **Moje rozšíření** stránku **Návrháře projektu** ke správě `My` rozšíření oboru názvů ve vašem projektu. `My` rozšíření oboru názvů umožňují přizpůsobit `My` obor názvů pro přidání vlastních členů. Informace o vytváření vlastních `My` rozšíření oboru názvů, naleznete v tématu [rozšíření My Namespace v jazyce Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
+Pomocí stránky **Moje rozšíření** v **Návrháři projektu** můžete spravovat `My` rozšíření oboru názvů v projektu. `My`rozšíření oboru názvů umožňují přizpůsobit `My` obor názvů pro přidání vlastních členů. Informace o vytváření rozšíření vlastního `My` oboru názvů najdete [v tématu rozšíření oboru názvů My v Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
 
- Pro přístup **Moje rozšíření** stránce, dvakrát klikněte na panel **Můj projekt** pro uzel projektu v **Průzkumníku řešení**. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **Moje rozšíření** kartu.
+Chcete-li získat přístup ke stránce **Moje rozšíření** , dvakrát klikněte na položku **projekt** pro uzel projektu v **Průzkumník řešení**. Když se zobrazí **Návrhář projektu** , klikněte na kartu **Moje rozšíření** .
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
- Tyto možnosti umožňují přidávat nebo odebírat `My` rozšíření oboru názvů ve vašem projektu. A `My` obor názvů rozšíření je nutné nejdříve nainstalovat jako šablonu položky Visual Studio bude možné přidat. Informace o publikování a instalaci `My` rozšíření oboru názvů, naleznete v tématu [balení a nasazení Moje rozšíření pro vlastní](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
+Následující možnosti umožňují přidat nebo odebrat `My` rozšíření oboru názvů v projektu. Aby bylo možné přidat rozšíření oborunázvů,musíbýtnejprvenainstalovánojakošablonapoložkysadyVisualStudio.`My` Informace o publikování a instalaci `My` rozšíření oboru názvů najdete v tématu [balení a nasazení vlastních rozšíření](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
 
- **Rozšíření rozhraní My namespace**
+ **Rozšíření pro moje obory názvů**
 
- Tento seznam obsahuje všechny `My` rozšíření oboru názvů, které jsou nainstalované v projektu.
+V tomto seznamu jsou uvedena `My` všechna rozšíření oboru názvů nainstalovaná v projektu.
 
  **Přidat rozšíření**
 
- Kliknutím na toto tlačítko Přidat nainstalovaného `My` rozšíření oboru názvů do vašeho projektu. Seznam všech možných `My` rozšíření oboru názvů se zobrazí. Vyberte `My` rozšíření oboru názvů, který chcete přidat do projektu a klikněte na tlačítko **OK** a přidejte ji.
+Kliknutím na toto tlačítko přidejte do svého `My` projektu rozšíření nainstalovaného oboru názvů. Zobrazí se seznam všech možných `My` rozšíření oboru názvů. Vyberte rozšíření oboru názvů, které chcete přidat do projektu, a kliknutím na tlačítko OK ho přidejte. `My`
 
  **Odebrat rozšíření**
 
- Vyberte jeden nebo více odkazů v **rozšíření rozhraní My namespace** seznamu a potom klikněte na toto tlačítko odeberete `My` rozšíření oboru názvů z projektu.
+Vyberte jeden nebo více odkazů v seznamu **rozšíření rozhraní My Namespace** a potom kliknutím na toto tlačítko odeberte `My` rozšíření oboru názvů z projektu.
 
 ## <a name="see-also"></a>Viz také
 
-- [Rozšíření My Namespace v jazyce Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
+- [Rozšíření oboru názvů My v Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [Balení a nasazení vlastních rozšíření oboru názvů My](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)
 - [Rozšíření aplikačního modelu jazyka Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model)
 - [Přizpůsobení výběru objektů dostupných v oboru názvů My](/dotnet/visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my)

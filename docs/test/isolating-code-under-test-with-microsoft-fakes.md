@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 8dd991af976c9262a6a1af7813c1201f68b36ab8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: c2f3ec4accc9353923e80017774f5a2b15fe095d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431736"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926640"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Izolace testovaného kódu pomocí Napodobenin Microsoft
 
@@ -36,7 +36,7 @@ Jsou dva typy napodobenin:
 
 > [!NOTE]
 > - Projekty .NET standard teď nejsou podporovány.
-> - Profilace pomocí sady Visual Studio není k dispozici pro testy, které používají Microsoft Fakes.
+> - Profilování v aplikaci Visual Studio není k dispozici pro testy, které používají napodobeniny společnosti Microsoft.
 
 ## <a name="choose-between-stub-and-shim-types"></a>Výběr mezi zástupnou procedurou a překrytím typy
 Obvykle byste měli považovat projekt sady Visual Studio za součást, protože vytváříte a aktualizujete tyto třídy současně. Měli byste zvážit použití zástupných procedur a překrytí pro volání, která projekt provádí do jiných projektů v rámci vašeho řešení nebo do jiných sestavení, na která projekt odkazuje.
@@ -245,8 +245,8 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 Můžete také vytvořit překrytí pro konkrétní instance, konstruktory a vlastnosti. Další informace najdete v tématu [izolace aplikace od ostatních sestavení pro testování částí pomocí Překryvné ovladače](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="in-this-section"></a>V tomto oddílu
- [Vzájemná izolace částí aplikace pomocí zástupných procedur za účelem testování jednotek](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
+[Vzájemná izolace částí aplikace pomocí zástupných procedur za účelem testování jednotek](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
- [Izolace aplikace od jiných sestavení pomocí testů shim za účelem testování jednotek](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
+[Izolace aplikace od jiných sestavení pomocí testů shim za účelem testování jednotek](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 
- [Vytváření, kompilace a konvence pojmenování kódu v Napodobeniny Microsoft](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
+[Vytváření, kompilace a konvence pojmenování kódu v Napodobeniny Microsoft](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)

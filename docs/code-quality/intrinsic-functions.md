@@ -15,36 +15,36 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ac8e38f501152d329e788572c500f68a8d2214
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 65a5272d74e1987cd7838932182e7e59c9c53f21
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820717"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923951"
 ---
 # <a name="intrinsic-functions"></a>Vnitřní funkce
-Výraz v SAL může být výraz jazyka C/C++, za předpokladu, že je výraz, který nemá žádné vedlejší účinky, například ++,--a všechny vedlejší účinky mají v tomto kontextu volání funkce.  Poznámky SAL však poskytuje některé funkce jako objekty a některé rezervované symboly, které můžete použít ve výrazech SAL. Tyto jsou označovány jako *vnitřní funkce*.
+Výraz v SAL může být výraz C/C++ , pokud se jedná o výraz, který nemá vedlejší účinky, například + +,--, a volání funkcí mají v tomto kontextu vedlejší účinky.  SAL však poskytuje některé objekty podobné funkcím a některé vyhrazené symboly, které lze použít ve výrazech SAL. Ty jsou označovány jako *vnitřní funkce*.
 
 ## <a name="general-purpose"></a>Obecné použití
- Následující poznámky instrinsic funkce poskytují obecné nástroje pro poznámky SAL.
+Následující poznámky k funkcím instrinsic poskytují obecný nástroj pro SAL.
 
 |Poznámka|Popis|
 |----------------|-----------------|
-|`_Curr_`|Synonymum pro objekt, který je aktuálně poznámkou.  Když `_At_` poznámky se používá, `_Curr_` je stejný jako první parametr `_At_`.  V opačném případě je parametr nebo celé funkce/návratová hodnota, ke kterému je poznámka lexikálně přidružena.|
-|`_Inexpressible_(expr)`|Vyjadřuje situaci, kde velikost vyrovnávací paměti je příliš složité pomocí výrazu anotace – například když je vypočítán prohledáním vstupní datové sady a potom počítání Vybraní členové.|
-|`_Nullterm_length_(param)`|`param` je počet elementů ve vyrovnávací paměti až, ale nezahrnuje ukončovací znak null. Lze ji použít na všechny vyrovnávací paměti typu neagregované, jiný než void.|
-|`_Old_(expr)`|Když je vyhodnocen v předběžné podmínce, `_Old_` vrátí vstupní hodnoty `expr`.  Když je vyhodnocen v po podmínka, vrátí hodnotu `expr` jako jeho by se vyhodnotily v předběžné podmínce.|
-|`_Param_(n)`|`n`Th parametr funkce, počítáno od 1 do `n`, a `n` je literál integrální konstanta. Pokud je parametr pojmenovaný, tato poznámka se shoduje s přístupem k parametru podle názvu. **Poznámka:** `n` mohou odkazovat na poziční parametry, které jsou definovány pomocí tři teček nebo mohou být použity v prototypech funkcí nejsou-li použity názvy.|
-|`return`|Vyhrazené klíčové slovo jazyka C/C++ `return` lze použít ve výrazu poznámky SAL k označení návratovou hodnotu funkce.  Hodnota je k dispozici pouze ve stavu příspěvku; Jedná se chybu syntaxe jeho použití v předem stavu.|
+|`_Curr_`|Synonymum pro objekt, který je v současné době opatřen poznámkami.  Když se `_Curr_` Poznámka používá, je stejná jako první parametr pro `_At_`. `_At_`  V opačném případě se jedná o parametr nebo o celou funkci nebo návratovou hodnotu, se kterou je Poznámka lexikální.|
+|`_Inexpressible_(expr)`|Vyjadřuje situaci, kdy velikost vyrovnávací paměti je příliš složitá, aby byla reprezentována pomocí výrazu poznámky, například když je vypočítána kontrolou vstupní datové sady a následným vypočítáním vybraných členů.|
+|`_Nullterm_length_(param)`|`param`je počet prvků ve vyrovnávací paměti až do ne včetně ukončovacího znaku null. Dá se použít na jakoukoli vyrovnávací paměť neagregovaného typu, který není typu void.|
+|`_Old_(expr)`|Pokud je vyhodnocena v předběžné podmínce, `_Old_` vrátí vstupní hodnotu. `expr`  Pokud je vyhodnocena v rámci podmínky post, vrátí hodnotu `expr` , protože by byla vyhodnocena v předběžné podmínce.|
+|`_Param_(n)`|Parametr th pro funkci, který se počítá z 1 na `n` `n` a je literál integrální konstanty. `n` Pokud je parametr pojmenován, je tato poznámka shodná s přístupem k parametru podle názvu. **Poznámka:** `n` může odkazovat na poziční parametry, které jsou definovány třemi tečkami, nebo mohou být použity v prototypech funkce, kde se názvy nepoužívají.|
+|`return`|Klíčové slovo `return` CC++ /rezervované lze použít ve výrazu SAL k označení návratové hodnoty funkce.  Hodnota je k dispozici pouze ve stavu post; Jedná se o chybu syntaxe, která se má použít v předběžném stavu.|
 
-## <a name="string-specific"></a>Konkrétní řetězec
- Následující poznámky pro vnitřní funkce povolit manipulaci s řetězci. Všechny čtyři z těchto funkcí slouží stejnému účelu: k vrácení počtu prvků typu, který se nachází před ukončovací znak null. Rozdíly jsou typy dat v prvky, které jsou uvedené. Všimněte si, že pokud chcete zadat délku zakončený hodnotou null vyrovnávací paměti, který není tvořený znaky, použijte `_Nullterm_length_(param)` poznámky z předchozí části.
+## <a name="string-specific"></a>Specifické pro řetězec
+Následující poznámky vnitřní funkce umožňují manipulaci s řetězci. Všechny čtyři tyto funkce mají stejný účel: k vrácení počtu prvků typu, který se nachází před prázdným znakem null. Rozdíly jsou typy dat v prvcích, na které se odkazuje. Všimněte si, že pokud chcete zadat délku vyrovnávací paměti zakončené hodnotou null, která není složena ze znaků, použijte `_Nullterm_length_(param)` poznámku z předchozí části.
 
 |Poznámka|Popis|
 |----------------|-----------------|
-|`_String_length_(param)`|`param` je počet elementů v řetězec, který se má ale nezahrnuje ukončovací znak null. Tato poznámka je vyhrazený pro typy řetězce znaků.|
-|`strlen(param)`|`param` je počet elementů v řetězec, který se má ale nezahrnuje ukončovací znak null. Tato poznámka je vyhrazený pro použití na znak pole a podobá se funkci C Runtime [strlen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
-|`wcslen(param)`|`param` počet prvků v řetězci nahoru (ale nikoli včetně), které je ukončovacího znaku null. Tato poznámka je vyhrazený pro použití na široké znaky pole a podobá se funkci C Runtime [wcslen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
+|`_String_length_(param)`|`param`je počet prvků v řetězci až do, ale ne včetně ukončovacího znaku null. Tato poznámka je vyhrazena pro typy řetězcových znaků.|
+|`strlen(param)`|`param`je počet prvků v řetězci až do, ale ne včetně ukončovacího znaku null. Tato poznámka je vyhrazena pro použití v polích znaků a podobá se běhové funkci jazyka C [strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
+|`wcslen(param)`|`param`je počet prvků v řetězci až do (ale ne včetně) ukončovacího znaku null. Tato poznámka je vyhrazena pro použití v různých polích znaků a podobá se běhové funkci jazyka C [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
 
 ## <a name="see-also"></a>Viz také
 

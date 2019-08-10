@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8d8b5b522f805bd7e8826cea5ced394c50064f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06fe8d4fbd4def14bfb8a24f4f211a121c809930
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546671"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922243"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizujte řetězce na velká písmena
 
@@ -30,17 +30,17 @@ ms.locfileid: "62546671"
 |Kategorie|Microsoft.Globalization|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
- Operace normalizuje řetězec na malá písmena.
+## <a name="cause"></a>příčina
+Operace normalizuje řetězec na malá písmena.
 
 ## <a name="rule-description"></a>Popis pravidla
- Řetězce by měly být normalizovány na velká písmena. Malá skupina znaků, když jsou převedeny na malá písmena, nelze provést zpáteční cestu. Chcete-li provést zpáteční cestu načíst prostředky pro převod znaků ze jeden národního prostředí na jiné národní prostředí, která představuje znak data jiným způsobem a potom na přesně původní znaky z převedené znaky.
+Řetězce by měly být normalizovány na velká písmena. Malá skupina znaků, když se převede na malá písmena, nemůže vytvořit zpáteční cestu. Aby bylo možné provést operaci round trip pro převod znaků z jednoho národního prostředí do jiného národního prostředí, které představuje data znaků odlišně, a pak pro přesné načtení původních znaků z převedených znaků.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Změňte operace, které provádějí převod řetězce na malá písmena, proto, že jsou převedeny řetězce na velká písmena místo. Například změnit `String.ToLower(CultureInfo.InvariantCulture)` k `String.ToUpper(CultureInfo.InvariantCulture)`.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Změňte operace, které převádějí řetězce na malá písmena, aby byly řetězce převedeny na velká písmena. Například změňte `String.ToLower(CultureInfo.InvariantCulture)` na `String.ToUpper(CultureInfo.InvariantCulture)`.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění, nejsou při rozhodnutí o zabezpečení založeno na výsledku (například, když zobrazujete v uživatelském rozhraní).
+Pokud neprovádíte rozhodnutí zabezpečení na základě výsledku (například při zobrazení v uživatelském rozhraní), je bezpečné potlačit zprávu s upozorněním.
 
 ## <a name="see-also"></a>Viz také:
- [Upozornění globalizace](../code-quality/globalization-warnings.md)
+[Upozornění globalizace](../code-quality/globalization-warnings.md)

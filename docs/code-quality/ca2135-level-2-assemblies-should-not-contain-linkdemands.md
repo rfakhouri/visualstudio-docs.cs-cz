@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcd9032d550e79a47941540408dc6e98a15e33f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d466a508eade835563627a829f937416a24972a0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796715"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920641"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135: Sestavení úrovně 2 by neměla obsahovat LinkDemands
 
@@ -26,19 +26,19 @@ ms.locfileid: "62796715"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Používá třídu nebo člen třídy <xref:System.Security.Permissions.SecurityAction> v aplikaci, která používá zabezpečení úrovně 2.
+## <a name="cause"></a>příčina
+Člen třídy nebo třídy používá <xref:System.Security.Permissions.SecurityAction> v aplikaci, která používá zabezpečení úrovně 2.
 
 ## <a name="rule-description"></a>Popis pravidla
- Pravidla LinkDemand jsou v sadě pravidel zabezpečení úrovně 2 již zastaralá. Namísto použití pravidel LinkDemand k vynucení zabezpečení v době kompilace just-in-time (JIT), označte metody, typy a pole s <xref:System.Security.SecurityCriticalAttribute> atribut.
+Pravidla LinkDemand jsou v sadě pravidel zabezpečení úrovně 2 již zastaralá. Namísto použití LinkDemand k vymáhání zabezpečení při kompilaci za běhu, označte metody, typy a pole <xref:System.Security.SecurityCriticalAttribute> atributem.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, odeberte <xref:System.Security.Permissions.SecurityAction> a označit typ nebo člen se <xref:System.Security.SecurityCriticalAttribute> atribut.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, odeberte <xref:System.Security.Permissions.SecurityAction> a označte typ nebo člen <xref:System.Security.SecurityCriticalAttribute> s atributem.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- V následujícím příkladu <xref:System.Security.Permissions.SecurityAction> by měly být odstraněny a metodě označené <xref:System.Security.SecurityCriticalAttribute> atribut.
+V následujícím příkladu <xref:System.Security.Permissions.SecurityAction> by měla být odebrána a metoda označená <xref:System.Security.SecurityCriticalAttribute> atributem.
 
- [!code-csharp[FxCop.Security.CA2135.SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2135-level-2-assemblies-should-not-contain-linkdemands_1.cs)]
+[!code-csharp[FxCop.Security.CA2135.SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2135-level-2-assemblies-should-not-contain-linkdemands_1.cs)]

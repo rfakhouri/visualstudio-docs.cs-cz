@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f48f9cba146251aee1a58ffc7a3403ed899c4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bdb8ef315c9702cc10352368aba7202a8f29f7f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541464"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920005"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Zadejte správné argumenty pro metody formátování
 
@@ -32,22 +32,22 @@ ms.locfileid: "62541464"
 |TypeName|ProvideCorrectArgumentsToFormattingMethods|
 |CheckId|CA2241|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
- `format` Řetězcový argument předaný metodě například <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, nebo <xref:System.String.Format%2A?displayProperty=fullName> neobsahuje položky formátu, který odpovídá každému argumentu objektu nebo naopak.
+## <a name="cause"></a>příčina
+Řetězcový argument předaný metodě <xref:System.Console.WriteLine%2A>jako, <xref:System.Console.Write%2A>nebo <xref:System.String.Format%2A?displayProperty=fullName> neobsahuje položku formátu, která odpovídá jednotlivým argumentům objektu, nebo naopak. `format`
 
 ## <a name="rule-description"></a>Popis pravidla
- Argumenty pro metody jako <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, a <xref:System.String.Format%2A> obsahovat řetězec formátu, za nímž následuje několik <xref:System.Object?displayProperty=fullName> instancí. Řetězec formátu se skládá z textu a vložené formátu položek formuláře, {index [, zarovnání] [: formatString]}. "index" je založený na nule celého čísla, která označuje, které objekty, které chcete formátovat. Pokud objekt nemá odpovídající index ve formátovacím řetězci, objekt se ignoruje. Pokud objektu určeném "index" buď neexistuje, <xref:System.FormatException?displayProperty=fullName> je vyvolána výjimka za běhu.
+Argumenty metody jako <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>a <xref:System.String.Format%2A> se skládají z formátovacího řetězce následovaného několika <xref:System.Object?displayProperty=fullName> instancemi. Formátovací řetězec se skládá z položek textu a vloženého formátu ve formuláři, {index [, Alignment] [: formatString]}. ' index ' je celé číslo založené na nule, které určuje, které objekty mají být naformátované. Pokud objekt nemá odpovídající index ve formátovacím řetězci, objekt se ignoruje. Pokud objekt zadaný pomocí ' index ' neexistuje, <xref:System.FormatException?displayProperty=fullName> je vyvolána za běhu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, poskytují formát položky pro každý objekt argument a argument objektu pro každou položku formátu.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, zadejte položku formátu pro každý argument objektu a zadejte argument objektu pro každou položku formátu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje dva porušení tohoto pravidla.
+Následující příklad ukazuje dvě porušení pravidla.
 
- [!code-vb[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/VisualBasic/ca2241-provide-correct-arguments-to-formatting-methods_1.vb)]
- [!code-csharp[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/CSharp/ca2241-provide-correct-arguments-to-formatting-methods_1.cs)]
+[!code-vb[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/VisualBasic/ca2241-provide-correct-arguments-to-formatting-methods_1.vb)]
+[!code-csharp[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/CSharp/ca2241-provide-correct-arguments-to-formatting-methods_1.cs)]

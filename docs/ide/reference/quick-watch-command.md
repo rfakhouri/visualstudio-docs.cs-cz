@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e45a6c63cb1f886c1440b93d58f944458f61290
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75afe1cdd0d1755d2953e6b9e6e3e85a089b3303
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811697"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926128"
 ---
 # <a name="quick-watch-command"></a>Rychlé kukátko – příkaz
-Zobrazí zadaný nebo vybraný text v poli výraz [QuickWatch](../../debugger/watch-and-quickwatch-windows.md) okna. Toto dialogové okno můžete použít k výpočtu aktuální hodnotu proměnné nebo výrazu rozpoznávaných ladicí program nebo obsah registru. Kromě toho můžete změnit hodnotu kterékoli proměnné nekonstantní nebo obsah jakékoli registru.
+Zobrazí vybraný nebo zadaný text v poli Expression okna [QuickWatch](../../debugger/watch-and-quickwatch-windows.md) . Toto dialogové okno můžete použít k výpočtu aktuální hodnoty proměnné nebo výrazu rozpoznaného ladicím programem nebo obsahu registru. Kromě toho můžete změnit hodnotu libovolné nekonstantní proměnné nebo obsah jakéhokoli registru.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,12 +30,13 @@ Debug.QuickWatchq [text]
 ```
 
 ## <a name="arguments"></a>Arguments
- `text`
 
- Volitelné. Text, který má přidat **QuickWatch** dialogové okno.
+`text`\
+Volitelné. Text, který se má přidat do dialogového okna **QuickWatch** .
 
 ## <a name="remarks"></a>Poznámky
- Pokud `text` je tento parametr vynechán, aktuálně vybraného textu nebo word na pozici kurzoru se přidá do okna kukátka.
+
+Pokud `text` je tento parametr vynechán, je aktuálně vybraný text nebo slovo na kurzoru přidáno do okno kukátko.
 
 ## <a name="example"></a>Příklad
 
@@ -45,7 +46,7 @@ Debug.QuickWatchq [text]
 
 ## <a name="see-also"></a>Viz také
 
-- [Nastavení sledování u proměnných pomocí kukátko a Rychlé kukátko Windows v sadě Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
+- [Nastavení sledování proměnných pomocí oken kukátka a QuickWatch v sadě Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
 - [Pole Najít/příkaz](../../ide/find-command-box.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14e2d6f2c753c56d1628d20e921b7dff2aa83471
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950647"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926013"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser – příkaz
 
@@ -31,24 +31,24 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="arguments"></a>Arguments
- `URL`
+`URL`
 
- Povinný parametr. Adresa URL (Uniform Resource Locator) pro web.
+Povinný parametr. Adresa URL (Uniform Resource Locator) pro web
 
 ## <a name="switches"></a>Přepínače
- / Nový
+/new
 
- Volitelné. Určuje, že se zobrazí v nové instanci webového prohlížeče.
+Volitelné. Určuje, že se stránka zobrazí v nové instanci webového prohlížeče.
 
- /ext
+/ext
 
- Volitelné. Určuje, že se zobrazí ve webovém prohlížeči výchozí mimo rozhraní IDE.
+Volitelné. Určuje, že se stránka zobrazí ve výchozím webovém prohlížeči mimo rozhraní IDE.
 
 ## <a name="remarks"></a>Poznámky
- Alias **showwebbrowser –** příkaz je **přejděte** nebo **nav**.
+Alias pro příkaz **ShowWebBrowser –** je **Navigate** nebo **NAV**.
 
 ## <a name="example"></a>Příklad
- Následující příklad zobrazí domovská stránka Microsoft Docs ve webovém prohlížeči mimo rozhraní IDE. Pokud instance webového prohlížeče je už otevřená, je použit. v opačném případě se spustí novou instanci.
+Následující příklad zobrazuje domovskou stránku Microsoft Docs ve webovém prohlížeči mimo rozhraní IDE. Pokud je již otevřena instance webového prohlížeče, je použita. v opačném případě se spustí nová instance.
 
 ```cmd
 >View.ShowWebBrowser https://docs.microsoft.com /ext

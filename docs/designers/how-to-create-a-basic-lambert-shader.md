@@ -8,51 +8,51 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 595f44403d5dc8062bea86504a74ed0d7e0ee565
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 662409f3655e23589a2416bb15572eb3df41bcb6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893959"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924443"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Postupy: Vytvoření základního Lambertova shaderu
 
-Tento článek popisuje způsob použití návrháře shaderu a orientovaného grafu shaderu jazyka (DGSL) k vytvoření, který implementuje klasického modelu osvětlení Lambert osvětlení shaderu.
+Tento článek ukazuje, jak pomocí Návrháře shaderu a jazyka DGSL (Direct Graph shader) vytvořit světelný shader, který implementuje model osvětlení Classic Lambert.
 
-## <a name="the-lambert-lighting-model"></a>Lambertova modelu osvětlení
+## <a name="the-lambert-lighting-model"></a>Model osvětlení Lambert
 
-Model osvětlení Lambert zahrnuje okolí a směrové světlo na odstín objekty ve 3D scéně. Ambientní komponenty poskytují základní úroveň osvětlení ve 3D scéně. Směrové komponenty nabízejí další osvětlení z směrové zdroje (vzdálené) světla. Ambientní osvětlení má vliv na všechny plochy ve scéně stejně, bez ohledu na jejich orientace. Pro daný plochu je produkt okolní barvy na povrchu a barvy a intenzitu zrcadlových osvětlením okolí ve scéně. Směrové světlo ovlivňuje všechny oblasti ve scéně odlišně, na základě orientace povrchu s ohledem na směru světla. Je produkt barvy rozptýlení a orientaci ovládacího prvku na plochu a barvu, intenzity a směr světla zdrojů. Zařízení Surface směřujících přímo ke zdroji světla získat maximální příspěvek a povrchy směřujících přímo okamžitě obdržet žádná příspěvek. V části Lambertova modelu osvětlení okolí komponenty a jednu nebo více komponent směrové kombinovat určit příspěvek celkový rozptýlení barvy pro každý bod na objekt.
+Model osvětlení Lambert zahrnuje okolí a směrové osvětlení k vystínování objektů ve 3D scéně. Okolní komponenty poskytují základní úroveň osvětlení 3D scény. Směrové komponenty poskytují další osvětlení ze směrných (nečinných) světelných zdrojů. Okolní osvětlení ovlivňuje všechny povrchy scény stejně, bez ohledu na jejich orientaci. Pro danou plochu je to součin okolní barvy povrchu a barvy a intenzita okolního osvětlení na scéně. Směrové světlo má vliv na všechny povrchy scény odlišně na základě orientace povrchu v závislosti na směru zdroje světla. Jde o součin barev a orientace povrchu a barvu, intenzitu a směr zdrojů světla. Plochy, které čelí přímo ke zdroji světla, obdrží maximální podíl a plochy, které čelí přímo, nezískají žádný příspěvek. V rámci modelu osvětlení Lambert se kombinovaná komponenta a jedna nebo více směrových komponent spojí s cílem určit celkový podíl barev difúzí pro každý bod objektu.
 
-Než začnete, ujistěte se, že **vlastnosti** okno a **nástrojů** jsou zobrazeny.
+Než začnete, ujistěte se, že se zobrazilo okno **vlastnosti** a **Sada nástrojů** .
 
-1. Vytvořte shader DGSL se kterým chcete pracovat. Informace o tom, jak přidat do projektu DGSL shader naleznete v části Začínáme v [návrháře shaderu](../designers/shader-designer.md).
+1. Vytvořte DGSL shader, který bude fungovat. Informace o tom, jak přidat DGSL shader do projektu, naleznete v části Začínáme v [Návrháři shaderu](../designers/shader-designer.md).
 
-2. Odpojte **barva bodu** uzlu z **konečnou barvu** uzlu. Zvolte **RGB** z terminálu **barva bodu** uzel a klikněte na tlačítko **přerušit odkazy**. Nechte **alfa** terminálu připojen.
+2. Odpojí uzel **Barva bodu** od finálního uzlu **barvy** . Zvolte terminál **RGB** pro uzel **Barva bodu** a pak zvolte možnost **přerušení propojení**. Nechejte terminál **Alpha** připojený.
 
-3. Přidat **Lambertova** uzel do grafu. V **nástrojů**v části **nástroj**vyberte **Lambertova** a přesuňte jej na návrhovou plochu. Uzel lambertova vypočítá podíl celkové rozptýlení barvy pixelu na základě parametrů osvětlením okolí a difúzním.
+3. Přidejte uzel **Lambert** do grafu. V **panelu nástrojů**vyberte v části **Nástroj**možnost **Lambert** a přesuňte ji na návrhovou plochu. Uzel Lambert vypočítá celkový podíl barvy difúze v pixelech na základě parametrů okolí a rozptýlené osvětlení.
 
-4. Připojení **barva bodu** uzlu **Lambertova** uzlu. V **vyberte** režimu, přesunout **RGB** z terminálu **barva bodu** uzlu **rozptýlit barvu** z terminálu **Lambertova**  uzlu. Toto připojení obsahuje uzel lambertova s interpolovanými barvy rozptýlení pixelu.
+4. Připojte uzel **Barva bodu** k **Lambert** uzlu. V režimu **výběru** přesuňte terminál **RGB** uzlu **barvy bodu** do terminálu rozdifúze **barvy** uzlu **Lambert** . Toto připojení poskytuje uzel Lambert s interpolací barvou difúze na pixelu.
 
-5. Hodnota počítaného barvy se připojte k konečnou barvu. Přesunout **výstup** z terminálu **Lambertova** uzlu **RGB** z terminálu **konečnou barvu** uzlu.
+5. Připojí vypočítanou hodnotu barvy k konečné barvě. Přesuňte **výstupní** terminál uzlu **Lambert** do terminálu **RGB** **konečného uzlu barvy** .
 
-   Následující obrázek znázorňuje dokončené shader graf a náhled shaderu použité pro model čajové konvice.
+   Následující ilustrace znázorňuje dokončený graf shaderu a náhled shaderu, který se použije pro model konvice.
 
 > [!NOTE]
-> K předvedení lépe efekt shaderu na tomto obrázku, byl zadán oranžové barvy s použitím **MaterialDiffuse** parametr shaderu. Hry nebo aplikace můžete použít tento parametr slouží k poskytování hodnotu barvy jedinečný pro každý objekt. Informace o parametrech materiálu, naleznete v části Náhled shadery v [návrháře shaderu](../designers/shader-designer.md).
+> Pro lepší ukázku účinku shaderu na tomto obrázku je oranžová barva určena pomocí parametru **MaterialDiffuse** shaderu. Hra nebo aplikace může pomocí tohoto parametru zadat jedinečnou hodnotu barvy pro každý objekt. Informace o parametrech materiálu naleznete v části shadery Preview v [Návrháři shaderu](../designers/shader-designer.md).
 
- ![Graf shaderu a jeho účinkem ve verzi preview.](../designers/media/digit-lambert-effect-graph.png)
+![Graf shaderu a náhled jeho efektu.](../designers/media/digit-lambert-effect-graph.png)
 
- Určité tvary můžou poskytovat lepší verze Preview pro některé shadery. Další informace o tom, jak shadery v Návrháři shaderu ve verzi preview, najdete v části Náhled shadery v [návrháře shaderu](../designers/shader-designer.md).
+Některé tvary mohou pro některé shadery poskytnout lepší náhled. Další informace o tom, jak zobrazit náhled shaderů v Návrháři shaderu, naleznete v části shadery Preview v [Návrháři shaderu](../designers/shader-designer.md).
 
- Následující obrázek znázorňuje shaderu, který je popsaný v tomto dokumentu použité pro 3D model.
+Následující ilustrace znázorňuje shader, který je popsaný v tomto dokumentu, aplikovaný na 3D model.
 
- ![Osvětlení Lambert k modelu.](../designers/media/digit-lambert-effect-result.png)
+![Lambert osvětlení použité pro model.](../designers/media/digit-lambert-effect-result.png)
 
- Další informace o tom, jak použití shaderu na 3D model, najdete v části [jak: Použití shaderu na 3D Model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Další informace o tom, jak použít shader na 3D model, naleznete v tématu [How to: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Použití shaderu na 3D Model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Postupy: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Postupy: Export shaderu](../designers/how-to-export-a-shader.md)
 - [Postupy: Vytvoření základního Phongova shaderu](../designers/how-to-create-a-basic-phong-shader.md)
 - [Návrhář shaderů](../designers/shader-designer.md)

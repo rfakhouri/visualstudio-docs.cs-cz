@@ -1,5 +1,5 @@
 ---
-title: Použití automatizace uživatelského rozhraní k testování kódu | Dokumentace Microsoftu
+title: Použití automatizace uživatelského rozhraní k otestování kódu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -17,109 +17,109 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e2cc2f08032d9281e3c86990201315fb8bf3937
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 54a050fc6d9d585be2613a27ca177dc77af61121
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825533"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871637"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Automatizované testy, které ovládají aplikaci prostřednictvím jejího uživatelského rozhraní (UI) jsou označovány jako *programové testy UI* (CUITs). Tyto testy zahrnují funkční testování ovládacích prvků uživatelského rozhraní. Umožňují ověřit, že celá aplikace včetně uživatelského rozhraní, funguje správně. Programové testy uživatelského rozhraní jsou obzvláště užitečná, pokud je ověření nebo jiná logika v uživatelském rozhraní, například na webové stránce. Používají se také často k automatizaci existujícího manuálního testu.
+Automatizované testy, které zařídí vaši aplikaci prostřednictvím uživatelského rozhraní (UI), se označují jako programové *testy uživatelského rozhraní* (CUITs). Tyto testy zahrnují funkční testování ovládacích prvků uživatelského rozhraní. Umožňují ověřit, že celá aplikace, včetně jejího uživatelského rozhraní, funguje správně. Programové testy uživatelského rozhraní jsou zvláště užitečné v případě, že je v uživatelském rozhraní k dispozici ověřování nebo jiná logika, například na webové stránce. Používají se také často k automatizaci stávajícího manuálního testu.
 
- Jak je znázorněno na následujícím obrázku, může být typické vývojové prostředí, kde na začátku můžete jednoduše svou aplikaci (F5) a klikněte na tlačítko prostřednictvím ovládacích prvků uživatelského rozhraní k ověření, že všechno správně funguje. Můžete pak se rozhodnout vytvořit programový test, takže není nutné a pokračujte v testování aplikace ručně. V závislosti na konkrétní funkce testování ve vaší aplikaci můžete napsat kód pro funkční testování nebo pro test integrace, který může nebo nemusí obsahovat testování na úrovni uživatelského rozhraní. Pokud chcete jednoduše přímý přístup k spustí nějakou obchodní logiku, může kód testu jednotek. Ale za určitých okolností může být vhodné zahrnout testování různých ovládacích prvků uživatelského rozhraní v aplikaci. Programový test uživatelského rozhraní můžete automatizovat počáteční (F5) scénář, ověření, že změny v kódu neovlivní funkčnost aplikace.
+ Jak je znázorněno na následujícím obrázku, typickým vývojovým prostředím může být jedna z nich, kde zpočátku stačí sestavit aplikaci (F5) a kliknout na ovládací prvky uživatelského rozhraní a ověřit, zda fungují správně. Pak se můžete rozhodnout vytvořit kódovaný test, aby nemuseli aplikace nadále testovat ručně. V závislosti na tom, jaké funkce jsou testovány ve vaší aplikaci, můžete napsat kód pro funkční test nebo pro test integrace, který může nebo nemusí zahrnovat testování na úrovni uživatelského rozhraní. Pokud jednoduše chcete získat přímý přístup k některé obchodní Logic, můžete kód otestovat jednotkou. Za určitých okolností však může být užitečné zahrnout do aplikace testování různých ovládacích prvků uživatelského rozhraní. Programový test uživatelského rozhraní může automatizovat úvodní scénář (F5) a ověřit, že změny kódu nemají vliv na funkčnost aplikace.
 
  ![Testování během vývoje aplikace](../test/media/cuit-overview.png "CUIT_Overview")
 
- Vytvoření programového testu uživatelského rozhraní je jednoduché. Můžete jednoduše ručním prováděním testu při testování Tvůrce CUIT běží na pozadí. Můžete také určit, jaké hodnoty by se zobrazit v konkrétních polích. Tvůrce testu CUIT zaznamená vaše akce a generuje kód z nich. Po vytvoření testu, můžete ho upravit v začínáte se speciálním editorem, který umožňuje upravit posloupnost akcí.
+ Vytvoření programového testu uživatelského rozhraní je snadné. Stačí provést test ručně, zatímco se UI test Builder spouští na pozadí. Můžete také určit, které hodnoty se mají zobrazit v určitých polích. Nástroj UI test Builder zaznamenává vaše akce a generuje z nich kód. Po vytvoření testu ho můžete upravit ve specializovaném editoru, který vám umožní upravit sekvenci akcí.
 
- Případně pokud máte testovací případ, která byla zaznamenána v nástroji Microsoft Test Manager, může generovat kód od. Další informace najdete v tématu [záznam a přehrávání zpět manuálních testů](/azure/devops/test/mtm/record-play-back-manual-tests).
+ Případně, pokud máte testovací případ, který byl zaznamenán v Microsoft Test Manager, můžete z něj vygenerovat kód. Další informace najdete v tématech [záznam a přehrání manuálních testů](/azure/devops/test/mtm/record-play-back-manual-tests).
 
- Specializované Tvůrce CUIT testu a editor umožňují snadno vytvářet a upravovat programové testy uživatelského rozhraní, i když jsou hlavní dovednosti koncentrované testování místo psaní kódu. Ale pokud jste vývojář a chcete rozšířit test pokročilejší způsobem, kód je strukturována tak, aby se snadno kopírovat a upravit. Například může zaznamenat test koupit na webu a pak upravte generovaný kód pro přidání smyčku, která koupí mnoho položek.
+ Specializovaný UI a editor testů usnadňuje vytváření a úpravy programových testů UI i v případě, že vaše hlavní dovednosti jsou při testování soustředěny spíše než kódování. Ale pokud jste vývojář a chcete rozšířit test pokročilým způsobem, je kód strukturovaný, aby bylo snadné ho zkopírovat a přizpůsobit. Můžete například zaznamenat test a koupit něco na webu a potom upravit generovaný kód a přidat smyčku, která nakupuje mnoho položek.
 
  **Požadavky**
 
 - Visual Studio Enterprise
 
-  Další informace o tom, které platformy a konfigurace podporují programové testy UI, naleznete v tématu [podporované konfigurace a platformy pro kódované testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
+  Další informace o tom, které platformy a konfigurace podporuje programové testy UI, najdete v tématu [podporované konfigurace a platformy pro programové testy uživatelského rozhraní a záznamy akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
 
   **V tomto tématu**
 
-- [Vytváření programových testů UI](#VerifyingCodeUsingCUITCreate)
+- [Vytváření programových testů uživatelského rozhraní](#VerifyingCodeUsingCUITCreate)
 
-  - [Main – procedura](#VerifyingCodeUsingCUITCreate)
+  - [Hlavní procedura](#VerifyingCodeUsingCUITCreate)
 
   - [Spuštění a zastavení aplikace](#starting)
 
-  - [Ověření vlastností ovládacích prvků uživatelského rozhraní](#VerifyingCodeUsingCUITGenerateAssertions)
+  - [Ověřování vlastností ovládacích prvků uživatelského rozhraní](#VerifyingCodeUsingCUITGenerateAssertions)
 
-- [Přizpůsobení programového testu UI](#VerifyingCodeCUITModify)
+- [Přizpůsobení kódovaného testu uživatelského rozhraní](#VerifyingCodeCUITModify)
 
   - [Generovaný kód](#generatedCode)
 
-  - [Kódování akce ovládacího prvku uživatelského rozhraní a vlastnosti](#actions)
+  - [Kódování akcí a vlastností ovládacích prvků uživatelského rozhraní](#actions)
 
   - [Ladění](#debugging)
 
-- [Co se chystá](#VerifyCodeUsingCUITWhatsNext)
+- [Co dál](#VerifyCodeUsingCUITWhatsNext)
 
-## <a name="VerifyingCodeUsingCUITCreate"></a> Vytváření programových testů UI
+## <a name="VerifyingCodeUsingCUITCreate"></a>Vytváření programových testů uživatelského rozhraní
 
-1. **Vytvořte projekt programového testu UI.**
+1. **Vytvořte projekt programového testu uživatelského rozhraní.**
 
-    Programové testy uživatelského rozhraní musí být součástí projektu programového testu UI. Pokud ještě nemáte projekt programového testu uživatelského rozhraní, vytvořte si ho. V **Průzkumníka řešení**, v místní nabídce řešení zvolte **přidat**, **nový projekt** a pak vyberte buď **jazyka Visual Basic** nebo **Visual C#** . Dále zvolte **testovací**, **programový Test uživatelského rozhraní**.
+    Programové testy uživatelského rozhraní musí být obsaženy v projektu programového testu uživatelského rozhraní. Pokud ještě nemáte projekt programového testu UI, vytvořte ho. V **Průzkumník řešení**v místní nabídce řešení zvolte možnost **Přidat**, **Nový projekt** a potom vyberte možnost **Visual Basic** nebo **vizuál C#** . Dále vyberte **test**, programový **test uživatelského rozhraní**.
 
-   - <em>Nevidím **programový Test uživatelského rozhraní</em>* šablony projektu.*
+   - <em>Nevidím šablony projektu programový **test uživatelského rozhraní</em>* .*
 
-      Pravděpodobně používáte verzi sady Visual Studio, který nepodporuje programové testy uživatelského rozhraní. Chcete-li vytvořit kódované testy uživatelského rozhraní, musíte použít Visual Studio Enterprise.
+      Je možné, že používáte verzi sady Visual Studio, která nepodporuje programové testy uživatelského rozhraní. Chcete-li vytvořit programové testy uživatelského rozhraní, je nutné použít Visual Studio Enterprise.
 
-2. **Přidejte soubor do programového testu uživatelského rozhraní.**
+2. **Přidejte soubor programového testu uživatelského rozhraní.**
 
-    Pokud jste právě vytvořili projekt programového uživatelského rozhraní, první soubor CUIT je automaticky přidán. Pokud chcete přidat jiný soubor testu, otevřete místní nabídku na projekt programového testu UI, přejděte na **přidat**a klikněte na tlačítko **programový Test uživatelského rozhraní**.
+    Pokud jste právě vytvořili projekt kódovaného uživatelského rozhraní, je první soubor UI přidán automaticky. Chcete-li přidat další testovací soubor, otevřete místní nabídku projektu programového testu uživatelského rozhraní, přejděte na položku **Přidat**a poté vyberte programový **test uživatelského rozhraní**.
 
-    ![Vytvořit programový test UI](../test/media/codedui-create.png "CodedUI_Create")
+    ![Vytvoření programového testu uživatelského rozhraní](../test/media/codedui-create.png "CodedUI_Create")
 
-    V **generovat kód pro programový Test uživatelského rozhraní** dialogového okna zvolte **zaznamenat akce, upravit mapu uživatelského rozhraní nebo přidat kontrolní výrazy**.
+    V dialogovém okně **generovat kód pro programový test UI** , vyberte možnost **zaznamenat akce, upravit mapu uživatelského rozhraní nebo přidat kontrolní výrazy**.
 
-    ![Vyberte záznamu akce](../test/media/codedui-codegendialogb.png "CodedUI_CodeGenDialogB")
+    ![Vybrat akce záznamu](../test/media/codedui-codegendialogb.png "CodedUI_CodeGenDialogB")
 
-    Tvůrce programového testu uživatelského rozhraní se zobrazí a je minimalizován sady Visual Studio.
+    Zobrazí se Tvůrce programového testu uživatelského rozhraní a minimalizuje se Visual Studio.
 
-    ![Tvůrce programového testu UI](../test/media/codedui-testbuilder.png "CodedUI_TestBuilder")
+    ![Tvůrce programového testu uživatelského rozhraní](../test/media/codedui-testbuilder.png "CodedUI_TestBuilder")
 
-3. **Zaznamenejte posloupnost akcí**.
+3. **Zaznamenejte sekvenci akcí**.
 
-    **Účelem zahájení zaznamenávání**, zvolte **záznam** ikonu. Provedení akce, které chcete otestovat ve vaší aplikaci, včetně spuštění aplikace, pokud je povinný.
+    **Chcete-li spustit záznam**, vyberte ikonu **záznamu** . Proveďte akce, které chcete ve své aplikaci testovat, včetně spuštění aplikace, pokud je to nutné.
 
-    Například pokud testujete webovou aplikaci, můžete může spustit prohlížeč, přejděte na web a přihlaste se k aplikaci.
+    Například při testování webové aplikace je možné spustit prohlížeč, přejít na web a přihlásit se k aplikaci.
 
-    **Pozastavit záznam**, například pokud budete muset řešit příchozí pošty, zvolte **pozastavit**.
+    **Chcete-li záznam pozastavit**, například pokud potřebujete pracovat s příchozí poštou, vyberte možnost **pozastavit**.
 
    > [!WARNING]
-   > Všechny akce provedené v klientských počítačích, bude zaznamenán. Pozastavte záznam, pokud provádíte akce, které může vést k citlivá data nebudou zahrnuty v záznamu.
+   > Budou zaznamenány všechny akce prováděné na ploše. Pozastaví nahrávání, pokud provádíte akce, které mohou vést k zahrnutí citlivých dat do záznamu.
 
-    **Chcete-li odstranit některé akce** , který jste si poznamenali omylem, zvolte **upravit akce**.
+    Pokud **chcete odstranit akce** , které jste si poznamenali omylem, klikněte na **Upravit akce**.
 
-    **Ke generování kódu** , který bude replikovat vaše akce, zvolte **generovat kód** ikonu a zadejte název a popis pro kódované UI testovací metoda.
+    **Chcete-li vygenerovat kód** , který bude replikovat vaše akce, vyberte ikonu **generovat kód** a zadejte název a popis pro metodu programového testu uživatelského rozhraní.
 
-4. **Ověřte hodnoty v polích uživatelského rozhraní, jako je například textová pole**.
+4. **Ověřte hodnoty v polích uživatelského rozhraní, jako jsou textová pole**.
 
-    Zvolte **přidat kontrolní výrazy** v Tvůrce programového testu UI a klikněte na tlačítko ovládacího prvku uživatelského rozhraní ve spuštěné aplikaci. V seznamu vlastností, které se zobrazí, vyberte vlastnosti, například **Text** v textovém poli. V místní nabídce zvolte **přidat kontrolní výraz**. V dialogovém okně vyberte operátor porovnání, hodnotu porovnání a chybová zpráva.
+    Zvolte **Přidat kontrolní výrazy** v Tvůrci programového testu UI a pak zvolte ovládací prvek uživatelského rozhraní v běžící aplikaci. V seznamu vlastností, které se zobrazí, vyberte vlastnost, například **text** v textovém poli. V místní nabídce vyberte možnost **Přidat kontrolní výraz**. V dialogovém okně vyberte operátor porovnání, hodnotu porovnání a chybovou zprávu.
 
-    Zavřete okno kontrolní výraz a zvolte **generovat kód**.
+    Zavřete okno kontrolního výrazu a klikněte na příkaz **generovat kód**.
 
-    ![Programový test uživatelského rozhraní, které cílí na element](../test/media/codedui-1.png "CodedUI_1")
+    ![Cílový prvek programového testu uživatelského rozhraní](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
-   > Střídání nahrávání akcí a ověření hodnot. Generování kódu na konci každé posloupnost akcí nebo ověření. Pokud chcete, bude možné později vložit nové akce a ověření.
+   > Alternativní mezi akcemi záznamu a ověřováním hodnot. Vygenerujte kód na konci každé posloupnosti akcí nebo ověření. Pokud chcete, budete moct později vkládat nové akce a ověřování.
 
-    Další podrobnosti najdete v tématu [ověřování vlastnosti ovládacích prvků](#VerifyingCodeUsingCUITGenerateAssertions).
+    Další podrobnosti najdete v tématu [ověřování vlastností ovládacích prvků](#VerifyingCodeUsingCUITGenerateAssertions).
 
-5. **Zobrazení kódu vygenerovaného testu**.
+5. **Zobrazit generovaný testovací kód**.
 
-    Chcete-li zobrazit generovaného kódu, zavřete okno Tvůrce testu uživatelského rozhraní. V kódu můžete vidět názvy, které jste zadali pro každý krok. Kód je v souboru CUIT, kterou jste vytvořili:
+    Chcete-li zobrazit generovaný kód, zavřete okno Tvůrce testu uživatelského rozhraní. V kódu uvidíte názvy, které jste přiřadili jednotlivým krokům. Kód je v souboru UI, který jste vytvořili:
 
    ```csharp
    [CodedUITest]
@@ -136,63 +136,63 @@ Automatizované testy, které ovládají aplikaci prostřednictvím jejího uži
    }
    ```
 
-6. **Přidání více akcí a kontrolní výrazy**.
+6. **Přidejte další akce a kontrolní výrazy**.
 
-    Umístěte kurzor na slovo v odpovídajícím bodě v testovací metodě a potom v místní nabídce zvolte **generovat kód pro programový Test uživatelského rozhraní**. V tomto okamžiku se vloží nový kód.
+    Umístěte kurzor do vhodného bodu v testovací metodě a potom v místní nabídce zvolte možnost **generovat kód pro programový test uživatelského rozhraní**. V tomto okamžiku bude vložen nový kód.
 
-7. **Upravit podrobnosti o testovacích akcí a kontrolní výrazy**.
+7. **Upravte podrobnosti testovacích akcí a kontrolních výrazů**.
 
-    Otevřete UIMap.uitest. Tento soubor se otevře v editoru programového testu UI, kde je můžete upravit libovolnou posloupností akce, které jste si poznamenali i upravit vaše kontrolní výrazy.
+    Otevřete UIMap. UITest. Tento soubor se otevře v editoru programového testu UI, kde můžete upravit libovolnou sekvenci akcí, které jste si poznamenali, a upravit kontrolní výrazy.
 
-    ![Programové Editor testu UI](../test/media/cuit-editor-edit.png "CUIT_Editor_edit")
+    ![Editor programového testu UI](../test/media/cuit-editor-edit.png "CUIT_Editor_edit")
 
-    Další informace najdete v tématu [testů uživatelského rozhraní programového úpravy pomocí editoru programového testu UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+    Další informace naleznete v tématu [Úpravy programových testů uživatelského rozhraní pomocí editoru programových testů uživatelského rozhraní](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-8. **Spustit test**.
+8. **Spusťte test**.
 
-    Pomocí nástroje Test Explorer, nebo otevřete místní nabídku v testovací metodě a klikněte na tlačítko **spustit testy**. Další informace o tom, jak spustit testy, naleznete v tématu [spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md) a *dalších možností pro spouštění programových testů UI* v [co se chystá?](#VerifyCodeUsingCUITWhatsNext) části na konci tohoto tématu.
+    Použijte Průzkumníka testů nebo otevřete místní nabídku v testovací metodě a pak zvolte možnost **Spustit testy**. Další informace o tom, jak spustit testy, najdete v tématu [spuštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md) a *dalších možností pro spuštění programových testů uživatelského rozhraní* v části [co dál?](#VerifyCodeUsingCUITWhatsNext) na konci tohoto tématu.
 
-   Zbývající části tohoto tématu poskytují další podrobnosti o postupu v tomto postupu.
+   Zbývající části tohoto tématu poskytují další podrobnosti o krocích v tomto postupu.
 
-   Podrobnější příklad naleznete v tématu [názorný postup: Vytváření, úpravy a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). V tomto návodu vytvoříte jednoduchou aplikaci Windows Presentation Foundation (WPF) pro demonstraci vytvoření, úpravy a správy programového testu UI. Návod poskytuje řešení pro opravu testů, které byly poškozeny různými chybami časování a refaktoringem ovládacích prvků.
+   Podrobnější příklad najdete v tématu [Názorný postup: Vytváření, úpravy a údržba kódovaného testu](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)uživatelského rozhraní. V tomto návodu vytvoříte jednoduchou aplikaci Windows Presentation Foundation (WPF), která ukazuje, jak vytvořit, upravit a udržovat programový test uživatelského rozhraní. Návod poskytuje řešení pro opravu testů, které byly poškozeny různými chybami časování a refaktoringem ovládacích prvků.
 
-### <a name="starting"></a> Spuštění a zastavení testovanou aplikaci
- *Nechci spouštět a zastavovat Moje aplikace, prohlížeče nebo databáze samostatně pro každý test. Jak se můžu vyhnout, který?*
+### <a name="starting"></a>Spuštění a zastavení testované aplikace
+ *Nechci spouštět a zastavovat aplikaci, prohlížeč ani databázi samostatně pro každý test. Návody se tomu vyhnout?*
 
-- ![Prerequsite](../test/media/prereq.png "požadavky") Pokud nechcete pro záznam akce, které chcete spustit aplikaci v rámci testu, je nutné spustit aplikace, než se rozhodnete **záznam** ikonu.
+- ![Prerequsite](../test/media/prereq.png "Požadavků ohlásila") Pokud nechcete zaznamenávat akce pro spuštění testované aplikace, musíte aplikaci spustit před výběrem ikony **záznamu** .
 
-- ![Prerequsite](../test/media/prereq.png "požadavky")na konci testu je proces, ve kterém běží test ukončen. Pokud jste začali vaše aplikace v testu, aplikace obvykle ukončí.  Pokud nechcete, aby test zavřete aplikaci při jejím ukončení, musíte přidat soubor s příponou .runsettings do vašeho řešení a použití `KeepExecutorAliveAfterLegacyRun` možnost. Další informace najdete v tématu [konfigurace testů jednotek s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
+- ![Prerequsite](../test/media/prereq.png "Požadavků ohlásila") Na konci testu proces, ve kterém je test spuštěn, je ukončen. Pokud jste aplikaci spustili v testu, aplikace se obvykle zavře.  Pokud nechcete, aby test zavřel aplikaci při ukončení, musíte do svého řešení přidat soubor. runsettings a použít `KeepExecutorAliveAfterLegacyRun` možnost. Další informace najdete v tématu [konfigurace testů jednotek s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
-- ![Prerequsite](../test/media/prereq.png "požadavky") můžete přidat testovací metodu initialize, identifikovat podle atributu [TestInitialize], která spustí kód na začátku každé zkušební metody. Například by mohl spustit aplikaci z metody TestInitialize.
+- ![Prerequsite](../test/media/prereq.png "Požadavků ohlásila") Můžete přidat metodu Initialize testu identifikovanou atributem [TestInitialize], který spouští kód na začátku každé testovací metody. Například můžete spustit aplikaci z metody TestInitialize.
 
-- ![Prerequsite](../test/media/prereq.png "požadavky") přidáte čistící metoda testu, identifikovat podle atributu [TestCleanup], která spustí kód na konci jednotlivých zkušebních metod. Například metoda zavřít aplikaci může volat z metoda TestCleanup.
+- ![Prerequsite](../test/media/prereq.png "Požadavků ohlásila") Můžete přidat metodu čištění testu identifikovanou atributem [TestCleanup], který spouští kód na konci každé testovací metody. Například metoda zavření aplikace by mohla být volána z metody TestCleanup.
 
-### <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> Ověření vlastností ovládacích prvků uživatelského rozhraní
- Můžete použít **Tvůrce programového testu UI** přidat ovládací prvek uživatelského rozhraní (UI) pro <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> pro test nebo ke generování kódu pro metodu ověřování, používá kontrolní výraz pro ovládací prvek uživatelského rozhraní.
+### <a name="VerifyingCodeUsingCUITGenerateAssertions"></a>Ověřování vlastností ovládacích prvků uživatelského rozhraní
+ Tvůrce programového **testu UI** můžete použít k přidání ovládacího prvku uživatelského rozhraní (UI) do [UIMap](/previous-versions/dd580454(v=vs.140)) pro váš test nebo k vygenerování kódu pro metodu ověřování, která používá kontrolní výraz pro ovládací prvek uživatelského rozhraní.
 
- Chcete-li vygenerovat kontrolní výrazy pro vaše ovládací prvky uživatelského rozhraní, zvolte **přidat kontrolní výrazy** nástroj Tvůrce programového testu UI a přetáhněte ji na ovládací prvek na aplikaci v rámci testu, který chcete ověřit správnost. Pokud pole obsahuje ovládací prvek, uvolněte tlačítko myši. Kód třídy ovládacího prvku se okamžitě vytvoří v `UIMap.Designer.cs` souboru.
+ Chcete-li generovat kontrolní výrazy pro ovládací prvky uživatelského rozhraní, vyberte nástroj **Přidat kontrolní** výraz v Tvůrci programového testu uživatelského rozhraní a přetáhněte jej do ovládacího prvku testované aplikace, kterou chcete ověřit, je správný. Jakmile se v poli zobrazí ovládací prvek, uvolněte tlačítko myši. Kód třídy ovládacího prvku je v `UIMap.Designer.cs` souboru ihned vytvořen.
 
- ![Programový test uživatelského rozhraní, které cílí na element](../test/media/codedui-1.png "CodedUI_1")
+ ![Cílový prvek programového testu uživatelského rozhraní](../test/media/codedui-1.png "CodedUI_1")
 
- Vlastnosti pro tento ovládací prvek je nyní obsažena v **přidat kontrolní výrazy** dialogové okno.
+ Vlastnosti tohoto ovládacího prvku jsou nyní uvedeny v dialogovém okně **Přidat kontrolní výrazy** .
 
- Jiný způsob přechodu na určitý ovládací prvek je na šipku **(<<)** rozbalte zobrazení **mapování ovládacího prvku UI**. Najít nadřazený, na stejné úrovni nebo podřízený ovládací prvek, klikněte na libovolné místo na mapě a pohyb stromu pomocí kláves se šipkami.
+ Dalším způsobem navigace na konkrétní ovládací prvek je výběr šipky **(< <)** pro rozšíření zobrazení pro **mapu ovládacího prvku uživatelského rozhraní**. Chcete-li najít nadřazený ovládací prvek, na stejné úrovni nebo podřízený ovládací prvek, můžete kliknout kamkoli na mapu a pomocí kláves se šipkami se pohybovat kolem stromu.
 
- ![Programových testů UI vlastnosti](../test/media/codedui-2.png "CodedUI_2")
+ ![Vlastnosti kódovaného testu uživatelského rozhraní](../test/media/codedui-2.png "CodedUI_2")
 
-- *Všechny vlastnosti se mi nezobrazují, když v aplikaci vyberte ovládací prvek, nebo se mi nezobrazují ovládacího prvku v mapování ovládacího prvku uživatelského rozhraní.*
+- *Při výběru ovládacího prvku v aplikaci se nezobrazí žádné vlastnosti, nebo ovládací prvek není zobrazen v mapě ovládacího prvku uživatelského rozhraní.*
 
-   Ovládací prvek, který chcete ověřit kód aplikace, musí mít jedinečné ID, jako je například atributu HTML ID nebo WPF UId. Můžete potřebovat k aktualizaci kódu aplikace přidejte tyto identifikátory.
+   V kódu aplikace musí mít ovládací prvek, který chcete ověřit, jedinečné ID, jako je atribut ID HTML nebo UId WPF. Pro přidání těchto ID může být nutné aktualizovat kód aplikace.
 
-  Dále otevřete místní nabídku pro vlastnost pro ovládací prvek uživatelského rozhraní, který chcete ověřit a pak přejděte na **přidat kontrolní výraz**. V **přidat kontrolní výraz** dialogové okno, vyberte **Komparátor** pro vaše kontrolního výrazu, například <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>a zadejte hodnotu pro vaše kontrolního výrazu v **hodnotu porovnání**.
+  Potom otevřete místní nabídku vlastnosti ovládacího prvku uživatelského rozhraní, který chcete ověřit, a pak přejděte na **Přidat kontrolní výraz**. V dialogovém okně **Přidat kontrolní výraz** vyberte **komparátor** pro váš kontrolní výraz, například <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>a zadejte hodnotu pro kontrolní výraz v **hodnotě porovnání**.
 
-  ![Programových testů UI kontrolní výrazy](../test/media/codedui-3.png "CodedUI_3")
+  ![Kontrolní výrazy programového testu UI](../test/media/codedui-3.png "CodedUI_3")
 
-  Po přidání všech kontrolních výrazů pro test, zvolte **OK**.
+  Když jste přidali všechny kontrolní výrazy pro svůj test, klikněte na **tlačítko OK**.
 
-  Chcete-li generovat kód pro vaše kontrolní výrazy a přidejte ovládací prvek do mapy uživatelského rozhraní, zvolte **generovat kód** ikonu. Zadejte název pro metodu programového testu uživatelského rozhraní a popis pro metodu, která se přidají jako komentář pro metodu. Zvolte **přidejte a generujte**. V dalším kroku vyberte **zavřete** ikonu Zavřít **Tvůrce programového testu UI**. Tím se vygeneruje kód, podobně jako v následujícím kódu. Například, pokud zadaný název je `AssertForAddTwoNumbers`, kód bude vypadat jako v tomto příkladu:
+  Chcete-li vygenerovat kód pro kontrolní výrazy a přidat ovládací prvek do mapy uživatelského rozhraní, klikněte na ikonu **generovat kód** . Zadejte název metody programového testu uživatelského rozhraní a popis metody, který bude přidán jako komentář pro metodu. Vyberte možnost **Přidat a generovat**. Potom klikněte na ikonu **Zavřít** a zavřete Tvůrce programového **testu uživatelského rozhraní**. Tím se vygeneruje kód podobný následujícímu kódu. Pokud název, který jste zadali, je `AssertForAddTwoNumbers`například, kód bude vypadat jako v tomto příkladu:
 
-- Volání metody assert AssertForAddTwoNumbers přidá do testovací metody v souboru programového testu uživatelského rozhraní:
+- Přidá volání metody Assert AssertForAddTwoNumbers do testovací metody v souboru programového testu uživatelského rozhraní:
 
   ```
   [TestMethod]
@@ -203,15 +203,15 @@ Automatizované testy, které ovládají aplikaci prostřednictvím jejího uži
   }
   ```
 
-   Můžete upravit tento soubor, chcete-li změnit pořadí kroků a kontrolní výrazy nebo k vytvoření nové metody testu. Chcete-li přidat další kód, umístěte kurzor v testovací metodě a v místní nabídce zvolte **generovat kód pro programový Test uživatelského rozhraní**.
+   Úpravou tohoto souboru můžete změnit pořadí kroků a kontrolních výrazů nebo vytvořit nové testovací metody. Chcete-li přidat další kód, umístěte kurzor na testovací metodu a v místní nabídce vyberte možnost **generovat kód pro programový test uživatelského rozhraní**.
 
-- Přidá metodu nazvanou `AssertForAddTwoNumbers` do mapy uživatelského rozhraní (UIMap.uitest). Tento soubor se otevře v editoru programového testu UI, kde můžete upravit kontrolní výrazy.
+- Přidá metodu volanou `AssertForAddTwoNumbers` do vaší mapy uživatelského rozhraní (UIMap. UITest). Tento soubor se otevře v editoru programového testu UI, kde můžete upravit kontrolní výrazy.
 
-   ![Vyhodnocení upravit pomocí editoru programového testu UI](../test/media/cuit-editor-assert.png "CUIT_Editor_assert")
+   ![Upravit kontrolní výraz pomocí editoru programového testu UI](../test/media/cuit-editor-assert.png "CUIT_Editor_assert")
 
-   Další informace najdete v tématu [testů uživatelského rozhraní programového úpravy pomocí editoru programového testu UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+   Další informace naleznete v tématu [Úpravy programových testů uživatelského rozhraní pomocí editoru programových testů uživatelského rozhraní](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-   Můžete také zobrazit generovaný kód výrazu metody v UIMap.Designer.cs. Tento soubor by neměl upravit. Pokud chcete vytvořit přizpůsobené verzi kódu, zkopírovat do jiného souboru, jako je například UIMap.cs metody, přejmenujte metody a upravit je.
+   Můžete také zobrazit generovaný kód metody kontrolního výrazu v UIMap.Designer.cs. Tento soubor byste ale neměli upravovat. Chcete-li vytvořit upravenou verzi kódu, zkopírujte metody do jiného souboru, například UIMap.cs, přejmenujte metody a upravte je zde.
 
   ```
   public void AssertForAddTwoNumbers()
@@ -220,28 +220,28 @@ Automatizované testy, které ovládají aplikaci prostřednictvím jejího uži
   }
   ```
 
-  *Ovládací prvek, který chcete vybrat ztratí fokus a zmizí při vyberte přidat kontrolní výrazy nástroj Tvůrce programového testu UI. Jak se vybírá ovládací prvek? * 
-   **Výběr skrytý ovládací prvek pomocí klávesnice**
+  *Ovládací prvek, který chcete vybrat, ztratí fokus a zmizí při pokusu o výběr nástroje Přidat kontrolní výrazy z Tvůrce programového testu uživatelského rozhraní. Návody vybrat ovládací prvek? Výběr skrytého **ovládacího prvku pomocí klávesnice** * 
+  
 
-  V některých případech, kdy [přidání ovládacích prvků a jejich vlastnosti ověřování](#VerifyingCodeUsingCUITGenerateAssertions), možná budete muset pomocí klávesnice. Například když zkusíte zaznamenat programový test UI používající ovládací prvek místní nabídky, seznam položek nabídky v ovládacím prvku ztratí fokus a zmizí při pokusu o vyberte nástroj přidat kontrolní výrazy Tvůrce programového testu UI. To je patrné na následujícím obrázku, kde bude místní nabídky v aplikaci Internet Explorer ztratí fokus a zmizí, pokud se pokusíte vyberte pomocí nástroje Přidat kontrolní výrazy.
+  V některých případech může být při [přidávání ovládacích prvků a ověřování jejich vlastností](#VerifyingCodeUsingCUITGenerateAssertions)nutné použít klávesnici. Například při pokusu o nahrání kódovaného testu uživatelského rozhraní, který používá ovládací prvek místní nabídky, seznam položek nabídky v ovládacím prvku ztratí fokus a zmizí při pokusu o výběr nástroje Přidat kontrolní výrazy z Tvůrce programového testu uživatelského rozhraní. To je znázorněno na následujícím obrázku, kde kontextová nabídka v aplikaci Internet Explorer ztratí fokus a zmizí, pokud se pokusíte o výběr pomocí nástroje Přidat kontrolní výrazy.
 
   ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest-selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")
 
-  Použití klávesnice k výběru ovládacího prvku uživatelského rozhraní, najeďte myší ovládací prvek pomocí myši. Potom podržte klávesu **Ctrl** klíč a **můžu** klíče ve stejnou dobu. Verze klíče. Tvůrce programového testu UT zaznamenané ovládacího prvku.
+  Chcete-li použít klávesnici k výběru ovládacího prvku uživatelského rozhraní, najeďte myší nad ovládací prvek myší. Pak podržte stisknutou klávesu **CTRL** a klávesu **I** . Uvolněte klíče. Ovládací prvek je zaznamenán pomocí kódovaného tvůrce testů.
 
 > [!WARNING]
-> Pokud používáte Microsoft Lync, je třeba nejprve spustit Tvůrce programového testu UI zavřít Lync. Microsoft Lync, dochází ke kolizím s **Ctrl + I** klávesové zkratky.
+> Pokud používáte Microsoft Lync, musíte před spuštěním Tvůrce programového testu uživatelského rozhraní zavřít Lync. Microsoft Lync má vliv na klávesovou zkratku **CTRL + I** .
 
- *Můžu nelze zaznamenat najedete myší na ovládací prvek. Je možné vyřešit?*
- **Ruční nahrávání se ukazatel myši nachází**
+ *Nemohu nahrávat ukazatel myši na ovládací prvek. Existuje toto řešení?*
+ **Ruční zaznamenávání ukazatele myši**
 
- Za určitých okolností konkrétní ovládací prvek, který se používá v programového uživatelského rozhraní testu může vyžadovat použití klávesnice k události ručně zaznamenávat myši při najetí myší. Například při testování formuláře Windows nebo aplikaci Windows Presentation Foundation (WPF), může existovat vlastní kód. Nebo může být zvláštní chování definované pro najedete myší na ovládací prvek, jako je například uzel stromu, rozbalení, když uživatel najede myší ho. K otestování za těchto okolností, budete muset ručně byli informováni vždy, předdefinované Tvůrce programového testu UI, které jsou ukazatele myši nad ovládací prvek stisknutím kombinace kláves.
+ Za určitých okolností může konkrétní ovládací prvek, který se používá v programovém testu UI, vyžadovat použití klávesnice k ručnímu záznamu událostí při přechodu myší. Například při testování aplikace Windows Form nebo Windows Presentation Foundation (WPF) může existovat vlastní kód. Nebo může být definováno speciální chování pro najetí myší nad ovládací prvek, jako je například rozbalování uzlu stromu, když na něj uživatel najede myší. Chcete-li otestovat okolnosti, jako jsou tyto, je nutné ručně nastavit program Tvůrce programového testu uživatelského rozhraní, který přejedete nad ovládací prvek pomocí klávesových zkratek předdefinovaných klávesových zkratek.
 
- Když provádíte programového testu uživatelského rozhraní, najeďte myší ovládací prvek. Stiskněte a podržte klávesu Ctrl, a stiskněte a podržte klávesu Shift a R na klávesnici. Verze klíče. Pomocí Tvůrce programového testu UT se zaznamená událost myši při najetí myší.
+ Při provádění programového testu uživatelského rozhraní, najeďte myší na ovládací prvek. Pak stiskněte a podržte klávesu CTRL, zatímco stisknete a podržíte klávesy SHIFT a R na klávesnici. Uvolněte klíče. Událost najetí myší je zaznamenána prostřednictvím kódovaného tvůrce testů.
 
- ![CodedUI&#95;při najetí myší](../test/media/codedui-hover.png "CodedUI_Hover")
+ ![Najeďte myší CodedUI&#95;](../test/media/codedui-hover.png "CodedUI_Hover")
 
- Po vytvoření testovací metody, podobně jako v následujícím příkladu kódu se přidají do souboru UIMap.Desinger.cs:
+ Po vygenerování testovací metody se kód podobný následujícímu příkladu přidá do souboru UIMap.Desinger.cs:
 
 ```csharp
 // Mouse hover '1' label at (87, 9)
@@ -249,15 +249,15 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ```
 
- *Přiřazení klíče pro zachytávání událostí myši při najetí myší se Moje prostředí používá jinde. Můžete změnit výchozí přiřazení klíče?*
- **Konfigurace přiřazení klávesových přechodu myši**
+ *Přiřazení klíče pro zachytávání událostí při přechodu myší se v mém prostředí používá jinde. Můžu změnit výchozí přiřazení kláves?*
+ **Konfigurace přiřazení klávesnice při najetí myší**
 
- V případě potřeby výchozí přiřazení klávesnice Ctrl + Shift + R, který se používá k aplikování ukázání událostí myši v programových testů UI může nakonfigurován k používání různých klíčů.
+ V případě potřeby se výchozí přiřazení klávesnice CTRL + SHIFT + R, které se používá k aplikování událostí najetí myší v programových testech UI, dá nakonfigurovat tak, aby používalo jiné klíče.
 
 > [!WARNING]
-> Není nutné změnit přiřazení klávesnice pro události myši při najetí myší za běžných okolností. Buďte opatrní při přiřazení přiřazení klávesnice. Podle vašeho výběru mohou být již používá jinde v rámci sady Visual Studio nebo aplikaci právě testováno.
+> Nemusíte měnit přiřazení klávesnice pro události ukazatele myši za běžných okolností. Při opětovném přiřazení klávesnice použijte upozornění. Vaše volba se už možná používá jinde v sadě Visual Studio nebo v testované aplikaci.
 
- Chcete-li změnit přiřazení klávesnice, je třeba upravit následující konfigurační soubor:
+ Chcete-li změnit přiřazení klávesnice, je nutné upravit následující konfigurační soubor:
 
  `<drive letter:>\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\CodedUITestBuilder.exe.config`
 
@@ -271,16 +271,16 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ```
 
- *Mám problémy s nahráváním umístění ukazatele myši na webovou stránku. Existuje opravy v tomto případě příliš?*
- **Nastavení implicitní ukazatel myši nachází pro webový prohlížeč**
+ *Mám problémy s nahráváním ukazatele myši na webu. Je zde nějaká oprava?*
+ **Nastavení implicitního efektu myši pro webový prohlížeč**
 
- V mnoha weby když najedete myší na ovládací prvek konkrétní rozšiřuje zobrazíte další podrobnosti. Obecně tyto vypadat nabídky v aplikacích klasické pracovní plochy. Protože jde o častou, programové testy uživatelského rozhraní povolit implicitní ukazatele pro procházení webu. Například pokud jste záznam se nachází v aplikaci Internet Explorer, je vyvolána událost. Tyto události může vést k redundantní pohybuje nahrávají. Z toho důvodu se zaznamenávají implicitní ukazatele s `ContinueOnError` nastavena na `true` v konfiguračním souboru testu uživatelského rozhraní. To umožňuje přehrávání pokračovat, pokud událost při najetí myší se nezdaří.
+ Pokud na mnoha webech najedete myší na určitý ovládací prvek, rozbalí se a zobrazí se další podrobnosti. Obecně tyto vypadají jako nabídky v aplikacích klasické pracovní plochy. Vzhledem k tomu, že se jedná o společný vzor, kódované testy uživatelského rozhraní umožňují implicitní najetí myší na prohlížení webu. Pokud například záznam najedete myší v aplikaci Internet Explorer, aktivuje se událost. Tyto události mohou vést k nahranému nadbytečnému najetí myší. Z tohoto důvodu jsou implicitní najetí myší zaznamenávány `ContinueOnError` s nastavením `true` do konfiguračního souboru testu uživatelského rozhraní. To umožňuje, aby přehrávání pokračovalo i v případě neúspěchu události přechodu myší.
 
- Pokud chcete povolit nahrávání implicitní ukazatele ve webovém prohlížeči, otevřete konfigurační soubor:
+ Chcete-li povolit záznam implicitních pojetí myší ve webovém prohlížeči, otevřete konfigurační soubor:
 
  `<drive letter:>\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\CodedUITestBuilder.exe.config`
 
- Ověřte, zda konfigurační soubor má klíč `RecordImplicitiHovers` nastavena na hodnotě `true` jak je znázorněno v následujícím příkladu:
+ Ověřte, že konfigurační soubor má klíč `RecordImplicitiHovers` nastavený na `true` hodnotu, jak je znázorněno v následující ukázce:
 
 ```
 <!--Use this to enable/disable recording of implicit hovers.-->
@@ -288,24 +288,24 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ```
 
-## <a name="VerifyingCodeCUITModify"></a> Přizpůsobení programového testu UI
- Po vytvoření programového testu UI, můžete ji upravit pomocí některého z následujících nástrojů v sadě Visual Studio:
+## <a name="VerifyingCodeCUITModify"></a>Přizpůsobení kódovaného testu uživatelského rozhraní
+ Po vytvoření programového testu UI ho můžete upravit pomocí některého z následujících nástrojů v aplikaci Visual Studio:
 
-- **Tvůrce programového testu UI:** Do testů přidat další ovládací prvky a ověřování pomocí Tvůrce programového testu UI. V části [přidání ovládacích prvků a jejich vlastnosti ověřování](#VerifyingCodeUsingCUITGenerateAssertions) v tomto tématu.
+- **Tvůrce programového testu uživatelského rozhraní:** Pomocí Tvůrce programového testu UI přidejte další ovládací prvky a ověření k vašim testům. Přečtěte si část [Přidání ovládacích prvků a ověření jejich vlastností](#VerifyingCodeUsingCUITGenerateAssertions) v tomto tématu.
 
-- **Editor programového testu UI:** Editor programového testu uživatelského rozhraní umožňuje snadno upravovat programové testy uživatelského rozhraní. Použití editoru programového testu UI, můžete vyhledat, zobrazit a upravit testovací metody. Můžete také upravit akce uživatelského rozhraní a jim přidružené ovládací prvky v mapování ovládacího prvku uživatelského rozhraní. Další informace najdete v tématu [testů uživatelského rozhraní programového úpravy pomocí editoru programového testu UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+- **Editor programového testu uživatelského rozhraní:** Editor programového testu UI umožňuje snadno upravit kódované testy uživatelského rozhraní. Pomocí editoru programového testu UI můžete vyhledat, zobrazit a upravit testovací metody. Můžete také upravit akce uživatelského rozhraní a jejich přidružené ovládací prvky v mapě ovládacího prvku uživatelského rozhraní. Další informace naleznete v tématu [Úpravy programových testů uživatelského rozhraní pomocí editoru programových testů uživatelského rozhraní](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 - **Editor kódu:**
 
-  - Ručně přidejte kód pro ovládací prvky v testu, jak je popsáno v [akce ovládacího prvku uživatelského rozhraní kódování a vlastnosti](#actions) v tomto tématu.
+  - Ručně přidejte kód pro ovládací prvky v testu, jak je popsáno v části [kódy a vlastnosti ovládacího prvku uživatelského rozhraní](#actions) v tomto tématu.
 
-  - Po vytvoření programového testu UI můžete upravit tak být řízený daty. Další informace najdete v tématu [vytváření data-Driven programový Test uživatelského rozhraní](../test/creating-a-data-driven-coded-ui-test.md).
+  - Po vytvoření programového testu UI ho můžete upravit tak, aby byl řízený daty. Další informace naleznete v tématu [vytváření programového testu uživatelského rozhraní řízeného daty](../test/creating-a-data-driven-coded-ui-test.md).
 
-  - Programové přehrávání testů uživatelského rozhraní webu můžete dát pokyn testů čekala určitých událostí pravděpodobnější, jako je okno se zobrazí indikátor průběhu signalizující zmizí a tak dále. K tomu přidáte odpovídající metodu UITestControl.WaitForControlXXX(). Úplný seznam dostupných metod najdete v tématu [vytváření programového uživatelského rozhraní testy čekat pro konkrétní události při přehrávání](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Příklad programový test UI, který čeká na ovládací prvek pro povolit pomocí WaitForControlEnabled metodu, najdete v části [názorný postup: Vytváření, úpravy a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+  - V průběhu přehrávání programového testu uživatelského rozhraní můžete určit, že se má test čekat na výskyt určitých událostí, jako je okno, které se má zobrazit, indikátor průběhu zmizí atd. Chcete-li to provést, přidejte příslušnou metodu UITestControl. WaitForControlXXX (). Úplný seznam dostupných metod naleznete v tématu vytváření programových [testů uživatelského rozhraní, které čekají na konkrétní události během přehrávání](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Příklad kódovaného testu uživatelského rozhraní, který čeká na povolení ovládacího prvku pomocí metody metody WaitForControlEnabled, najdete v tématu [Názorný postup: Vytváření, úpravy a údržba kódovaného testu](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)uživatelského rozhraní.
 
-  - Programové testy UI zahrnují podporu pro některé ovládací prvky jazyka HTML5, které jsou zahrnuty v aplikaci Internet Explorer 9 a Internet Explorer 10. Další informace najdete v tématu [pomocí ovládacích prvků HTML5 v programových testů uživatelského rozhraní](../test/using-html5-controls-in-coded-ui-tests.md).
+  - Programové testy UI zahrnují podporu pro některé ovládací prvky HTML5, které jsou součástí aplikace Internet Explorer 9 a Internet Explorer 10. Další informace naleznete v tématu [použití ovládacích prvků HTML5 v programových testech UI](../test/using-html5-controls-in-coded-ui-tests.md).
 
-  - **Programový test UI kódování pokyny:**
+  - **Pokyny pro kódování programového testu uživatelského rozhraní:**
 
     - [Anatomie programového testu UI](../test/anatomy-of-a-coded-ui-test.md)
 
@@ -315,8 +315,8 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
     - [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
-### <a name="generatedCode"></a> Generovaný kód
- Pokud zvolíte **generovat kód**, několika částí kódu jsou vytvořeny:
+### <a name="generatedCode"></a>Generovaný kód
+ Když zvolíte možnost **generovat kód**, vytvoří se několik částí kódu:
 
 - **Řádek v testovací metodě.**
 
@@ -333,15 +333,15 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   }
   ```
 
-   Klikněte pravým tlačítkem v této metodě, chcete-li přidat více zaznamenané akce a ověření. Můžete také upravit ho ručně, aby se rozšířit nebo upravit kód. Může některý kód například uzavřete ve smyčce.
+   Kliknutím pravým tlačítkem na tuto metodu můžete přidat další zaznamenané akce a ověření. Můžete ji také upravit ručně a kód tak rozšíříte nebo upravíte. Například můžete uzavřít část kódu ve smyčce.
 
-   Můžete také přidat nové metody testu, přidejte kód k nim stejným způsobem. Každá testovací metoda musí mít `[TestMethod]` atribut.
+   Můžete také přidat nové testovací metody a přidat kód do nich stejným způsobem. Každá testovací metoda musí mít `[TestMethod]` atribut.
 
-- **Metoda ve UIMap.uitest**
+- **Metoda v UIMap. UITest**
 
-   Tato metoda zahrnuje podrobné akce, které jste si poznamenali nebo hodnotu, která jste ověřili. Tento kód můžete upravit tak, že otevřete UIMap.uitest. Otevře se v začínáte se speciálním editorem, ve kterém můžete odstranit nebo Refaktorujte již nahrané akce.
+   Tato metoda zahrnuje podrobné informace o vámi zaznamenaných akcích nebo o hodnotě, kterou jste ověřili. Tento kód můžete upravit otevřením UIMap. UITest. Otevře se ve specializovaném editoru, ve kterém můžete zaznamenané akce odstranit nebo Refaktorovat.
 
-   Vytvořena metoda Youcan také zobrazit v UIMap.Designer.cs. Tato metoda provádí akce, že jste si poznamenali při spuštění testu.
+   Youcan také zobrazit vygenerovanou metodu v UIMap.Designer.cs. Tato metoda provádí akce, které jste si poznamenali při spuštění testu.
 
   ```csharp
   // File: UIMap.Designer.cs
@@ -356,9 +356,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   ```
 
   > [!WARNING]
-  > Tento soubor by neměl upravit, protože se znovu vygeneruje, když vytvoříte další testy.
+  > Tento soubor byste neměli upravovat, protože se znovu vygeneruje při vytváření dalších testů.
 
-   Upravit verze těchto metod můžete nastavit zkopírováním UIMap.cs. Například může vytvořit parametrizovanou verzi, která lze volat z testovací metody:
+   Upravené verze těchto metod můžete upravit jejich zkopírováním do UIMap.cs. Můžete například vytvořit parametrizovanou verzi, kterou můžete volat z testovací metody:
 
   ```csharp
   // File: UIMap.cs
@@ -373,118 +373,118 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   }
   ```
 
-- **Deklarace v UIMap.uitest**
+- **Deklarace v UIMap. UITest**
 
-   Tyto deklarace představují ovládací prvky uživatelského rozhraní aplikace, které jsou používány vašeho testu. Používají se vygenerovaný kód pracovat ovládací prvky a přístup k jejich vlastností.
+   Tyto deklarace představují ovládací prvky uživatelského rozhraní aplikace, které jsou používány vaším testem. Jsou používány generovaným kódem k provozování ovládacích prvků a k přístupu ke svým vlastnostem.
 
-   Můžete také je můžete psát vlastní kód. Například můžete mít vaše testovací metoda vyberte hypertextový odkaz ve webové aplikaci, zadejte hodnotu v textovém poli, nebo větví a provést různé testovací akce na základě hodnoty v poli.
+   Můžete je také použít, pokud píšete vlastní kód. Například můžete mít testovací metodu zvolit hypertextový odkaz ve webové aplikaci, zadat hodnotu do textového pole nebo vytvořit větev a provést jiné testovací akce na základě hodnoty v poli.
 
-   Můžete přidat více programové testy uživatelského rozhraní a více objekty mapování uživatelského rozhraní a soubory, aby usnadnil testování rozsáhlé aplikace. Další informace najdete v tématu [testování rozsáhlé aplikace s více mapami uživatelského rozhraní](../test/testing-a-large-application-with-multiple-ui-maps.md).
+   Pro usnadnění testování rozsáhlých aplikací můžete přidat více programových testů UI a více objektů a souborů map uživatelského rozhraní. Další informace najdete v tématu [testování velké aplikace s více mapami uživatelského rozhraní](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
-  Další informace o generovaný kód, naleznete v tématu [anatomie programového testu UI](../test/anatomy-of-a-coded-ui-test.md).
+  Další informace o vygenerovaném kódu naleznete v tématu [anatomie kódovaného testu uživatelského rozhraní](../test/anatomy-of-a-coded-ui-test.md).
 
-### <a name="actions"></a> Kódování akce ovládacího prvku uživatelského rozhraní a vlastnosti
- Při práci s ovládacími prvky test uživatelského rozhraní v kódované testy uživatelského rozhraní jsou rozdělené do dvou částí: akcí a vlastností.
+### <a name="actions"></a>Kódování akcí a vlastností ovládacích prvků uživatelského rozhraní
+ Při práci s ovládacími prvky testu uživatelského rozhraní v programových testech UI jsou rozděleny do dvou částí: akce a vlastnosti.
 
-- V první části se skládá z akcí, které můžete provádět na ovládací prvky uživatelského rozhraní testu. Například programové testy uživatelského rozhraní můžete simulovat kliknutí myší na ovládací prvek uživatelského rozhraní testu, nebo simulovat zadané na klávesnici ovlivnit ovládacího prvku uživatelského rozhraní testu klávesy.
+- První část se skládá z akcí, které lze provádět v ovládacích prvcích testu uživatelského rozhraní. Například kódované testy uživatelského rozhraní mohou simulovat kliknutí myší na ovládací prvek testu uživatelského rozhraní nebo simulovat klíče, které jsou zadány na klávesnici a ovlivnit ovládací prvek testu uživatelského rozhraní.
 
-- Druhá část se skládá z něhož můžete získat a nastavit vlastnosti ovládacího prvku uživatelského rozhraní testu. Například programové testy uživatelského rozhraní můžete získat počet položek v `ListBox`, nebo nastavte `CheckBox` na vybraném stavu.
+- Druhá část se skládá z možnosti získat a nastavit vlastnosti ovládacího prvku test uživatelského rozhraní. Například kódované testy uživatelského rozhraní mohou získat počet položek v `ListBox`, nebo `CheckBox` nastavit na vybraný stav.
 
-  **Přístup k akce testu ovládacího prvku uživatelského rozhraní**
+  **Přístup k akcím ovládacího prvku test uživatelského rozhraní**
 
-  K provádění akcí v ovládacích prvcích test uživatelského rozhraní, jako je například kliknutí myší nebo akce klávesnice, použijte metody v <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse> a <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard> třídy:
+  Chcete-li provádět akce s ovládacími prvky testu uživatelského rozhraní, jako je kliknutí myší nebo akce klávesnice, <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse> použijte <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard> metody v třídách a:
 
-- Chcete-li provést akci myši objektově orientovaný, jako například kliknutí myší na ovládací prvek uživatelského rozhraní testu použijte <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>.
+- K provedení akce orientované na myš, jako je například kliknutí myší, na ovládacím prvku test uživatelského rozhraní, použijte <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>.
 
    `Mouse.Click(buttonCancel);`
 
-- K provedení akce orientované klávesnice, jako je například psaní do ovládacího prvku pro úpravy, použijte <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>.
+- K provedení akcí orientovaných na klávesnici, jako je například psaní do ovládacího prvku pro úpravy <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>, použijte.
 
    `Keyboard.SendKeys(textBoxDestination, @"C:\Temp\Output.txt");`
 
-  **Přístup k vlastnostem ovládacího prvku uživatelského rozhraní testu**
+  **Přístup k vlastnostem ovládacího prvku test uživatelského rozhraní**
 
-  K získání a nastavení konkrétní hodnoty vlastností ovládacího prvku uživatelského rozhraní, můžete přímo získání nebo nastavení hodnoty vlastností ovládacího prvku, nebo můžete použít <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> a <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> metody s názvem konkrétní vlastnost, která má získat nebo nastavit.
+  Chcete-li získat a nastavit hodnoty vlastností specifických pro ovládací prvky uživatelského rozhraní, můžete přímo získat nebo nastavit hodnoty vlastností ovládacího prvku nebo můžete použít <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> metody a <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> s názvem konkrétní vlastnosti, kterou chcete získat nebo nastavit.
 
-  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> Vrátí objekt, který lze převést na příslušné <xref:System.Type>. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> přijímá objekt pro hodnoty vlastnosti.
+  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>Vrátí objekt, který lze následně přetypovat na příslušný <xref:System.Type>objekt. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>přijímá objekt pro hodnotu vlastnosti.
 
-##### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Pro získání nebo nastavení vlastnosti přímo z ovládacích prvků uživatelského rozhraní testu
+##### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Chcete-li získat nebo nastavit vlastnosti z ovládacích prvků testu uživatelského rozhraní přímo
 
-- Pomocí ovládacích prvků, které jsou odvozeny z T:Microsoft.VisualStudio.TestTools.UITesting.UITestControl, jako je například T:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList nebo T: Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox, můžete získat nebo nastavit jejich hodnoty vlastností přímo, následujícím způsobem:
+- Pomocí ovládacích prvků, které jsou odvozeny z T:Microsoft.VisualStudio.TestTools.UITesting.UITestControl, jako je například T:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList nebo T: Microsoft. VisualStudio. TestTools. UITesting. WinControls. WinComboBox, můžete získat nebo nastavit hodnoty vlastností přímo následujícím způsobem:
 
     ```
     int i = myHtmlList.ItemCount;
     myWinCheckBox.Checked = true;
     ```
 
-##### <a name="to-get-properties-from-ui-test-controls"></a>Chcete-li získat vlastnosti z ovládacích prvků uživatelského rozhraní testu
+##### <a name="to-get-properties-from-ui-test-controls"></a>Získání vlastností z ovládacích prvků testu uživatelského rozhraní
 
-- K získání hodnoty vlastnosti z ovládacího prvku použijte <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.
+- Chcete-li získat hodnotu vlastnosti z ovládacího prvku, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>použijte.
 
-- Pokud chcete nastavit vlastnost ovládacího prvku, chcete-li získat, použijte příslušným řetězcem z `PropertyNames` třídy v každém ovládacím prvku jako parametr <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.
+- Chcete-li určit vlastnost ovládacího prvku, který má být získán, použijte odpovídající řetězec `PropertyNames` z třídy v každém ovládacím prvku jako parametr <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>na.
 
-- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> vrátí odpovídající typ dat, ale to vrátit hodnotu je typovaná jako <xref:System.Object>. Vrácení <xref:System.Object> musíte přetypovat jako odpovídajícího typu.
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>vrátí příslušný datový typ, ale tato návratová hodnota je převedena jako <xref:System.Object>. Návratový <xref:System.Object> typ musí být poté převeden jako příslušný typ.
 
      Příklad:
 
      `int i = (int)GetProperty(myHtmlList.PropertyNames.ItemCount);`
 
-##### <a name="to-set-properties-for-ui-test-controls"></a>Chcete-li nastavit vlastnosti pro test uživatelského rozhraní ovládacích prvků
+##### <a name="to-set-properties-for-ui-test-controls"></a>Nastavení vlastností ovládacích prvků testu uživatelského rozhraní
 
-- Chcete-li nastavit vlastnost v ovládacím prvku, použijte <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>.
+- Chcete-li nastavit vlastnost v ovládacím prvku, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>použijte.
 
-- Chcete-li určit vlastnost ovládacího prvku, chcete-li nastavit, použijte příslušným řetězcem z `PropertyNames` třídu jako první parametr <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, s hodnotou vlastnosti jako druhý parametr.
+- Chcete-li určit vlastnost ovládacího prvku, který má být nastaven, použijte odpovídající řetězec `PropertyNames` z třídy jako první parametr pro <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>s hodnotou vlastnosti jako druhý parametr.
 
      Příklad:
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 
 ### <a name="debugging"></a> Ladění
- Programové testy uživatelského rozhraní pomocí protokolů z programových testů uživatelského rozhraní můžete analyzovat. Programového uživatelského rozhraní testu protokoly filtr a záznam, který běží důležité informace o programového testu UI. Formát protokolů umožňuje ladit problémy rychle. Další informace najdete v tématu [analýza programových testů pomocí programového uživatelského rozhraní protokolů testů](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
+ Můžete analyzovat kódované testy uživatelského rozhraní pomocí protokolů programových testů uživatelského rozhraní. Protokoly programových testů uživatelského rozhraní filtr a zaznamenávají důležité informace o běhu programového testu uživatelského rozhraní. Formát protokolů vám umožní rychle ladit problémy. Další informace naleznete v tématu [Analýza programových testů uživatelského rozhraní pomocí protokolů kódovaného testu uživatelského rozhraní](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
-## <a name="VerifyCodeUsingCUITWhatsNext"></a> Co se chystá?
- **Další možností pro spouštění programových testů uživatelského rozhraní:** Můžete spustit programové testy UI přímo ze sady Visual Studio, jak je popsáno výše v tomto tématu. Kromě toho můžete spustit automatizované testy uživatelského rozhraní z [!INCLUDE[TCMext](../includes/tcmext-md.md)], nebo z [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. Pokud jsou automatizované programové testy UI, mají komunikovat s plochou, když spustíte, je oproti jiným automatizovaným testům.
+## <a name="VerifyCodeUsingCUITWhatsNext"></a>Co dál?
+ **Další možnosti pro spuštění programových testů uživatelského rozhraní:** Programové testy uživatelského rozhraní lze spustit přímo ze sady Visual Studio, jak je popsáno dříve v tomto tématu. Kromě toho můžete spustit automatizované testy uživatelského rozhraní z [!INCLUDE[TCMext](../includes/tcmext-md.md)]nástroje nebo z [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. Když jsou programové testy uživatelského rozhraní automatizované, musí při jejich spouštění pracovat na rozdíl od jiných automatizovaných testů.
 
-- [Postupy: Spuštění testů ze sady Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [Postupy: Spustit testy z Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
 
-- [Spuštění automatických testů v nástroji Microsoft Test Manager](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
+- [Spouštění automatizovaných testů v Microsoft Test Manager](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [Postupy: Konfigurace a spuštění naplánovaných testů po sestavení aplikace](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [Postupy: Konfigurace a spuštění plánovaných testů po sestavení aplikace](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
 - [Spuštění testů v procesu sestavení](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
 - [Spouštění automatizovaných testů z příkazového řádku](https://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
 
-- [Postupy: Nastavení testovacího agenta pro spouštění testů komunikujících s plochou](/visualstudio/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop?view=vs-2015)
+- [Postupy: Nastavení testovacího agenta pro spouštění testů, které komunikují s plochou](/visualstudio/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop?view=vs-2015)
 
-- [&#91;Vyřazeno&#93; pomocí programových testů uživatelského rozhraní v zátěžových testech](https://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
+- [&#91;vyřazení&#93; pomocí programových testů uživatelského rozhraní v zátěžových testech](https://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
 
-  **Přidání podpory pro vlastní ovládací prvky:**  Testovací rozhraní kódované UI nepodporuje všechna možná uživatelská rozhraní a nemusí podporovat uživatelské rozhraní, které chcete testovat. Například nelze okamžitě vytvořit programový test UI uživatelského rozhraní pro [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Můžete však vytvořit rozšíření programového uživatelského rozhraní testování rozhraní, která bude podporovat vlastní ovládací prvek.
+  **Přidání podpory pro vlastní ovládací prvky:**  Rozhraní programového testování uživatelského rozhraní nepodporuje všechny možné uživatelské rozhraní a nemusí podporovat uživatelské rozhraní, které chcete testovat. Například nelze okamžitě vytvořit programový test uživatelského rozhraní pro [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Můžete však vytvořit rozšíření pro programové testování uživatelského rozhraní, které bude podporovat vlastní ovládací prvek.
 
 - [Povolení programového testování uživatelského rozhraní pro vaše ovládací prvky](../test/enable-coded-ui-testing-of-your-controls.md)
 
 - [Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Programové testy uživatelského rozhraní se často používají k automatizaci ručních testů. Další informace najdete v tématu [testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 5: Automatizace systémových testů](http://go.microsoft.com/fwlink/?LinkID=255196). Další informace o ruční testy, naleznete v tématu [ &#91;vyřazeno&#93; vytváření ručních testovacích případů pomocí nástroje Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Další informace o automatizované systémové testy, naleznete v tématu [vytváření automatizovaných testů pomocí nástroje Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Programové testy uživatelského rozhraní se často používají k automatizaci ručních testů. Další pokyny najdete v tématu [testování pro průběžné doručování pomocí sady Visual Studio 2012 – Kapitola 5: Automatizace systémových testů](http://go.microsoft.com/fwlink/?LinkID=255196). Další informace o manuálních testech naleznete v [ &#91;tématu&#93; vyřazeno Vytváření manuálních testovacích případů pomocí Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Další informace o automatizovaných systémových testech naleznete v tématu [vytváření automatizovaných testů pomocí Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Externí zdroje
 
 ### <a name="guidance"></a>Doprovodné materiály
-- [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 2: Testování částí: Testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)
+- [Testování pro průběžné doručování pomocí sady Visual Studio 2012 – Kapitola 2: Testování částí: Testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)
 
-- [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 5: Automatizace systémových testů](http://go.microsoft.com/fwlink/?LinkID=255196)
+- [Testování pro průběžné doručování pomocí sady Visual Studio 2012 – Kapitola 5: Automatizace systémových testů](http://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>Nejčastější dotazy
-- [Programové testy UI – nejčastější dotazy – 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+- [Nejčastější dotazy k programovým testům UI – 1](http://go.microsoft.com/fwlink/?LinkID=230576)
 
-- [Programové testy UI – nejčastější dotazy -2](http://go.microsoft.com/fwlink/?LinkID=230578)
+- [Nejčastější dotazy k programovým testům UI – 2](http://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Fórum
-- [Visual Studio automatické testování uživatelského rozhraní (včetně CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)
+- [Testování automatizace uživatelského rozhraní sady Visual Studio (zahrnuje CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Zlepšení kvality kódu](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [Návod: Vytváření, upravování a údržba programového testu uživatelského rozhraní](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
@@ -494,4 +494,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - [Úpravy programových testů uživatelského rozhraní pomocí Editoru programových testů uživatelského rozhraní](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
 - [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Upgrade programových testů UI z produktu Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-- [Generování programového testu UI ze stávajícího záznamu akcí](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)
+- [Generování kódovaného testu uživatelského rozhraní z existujícího záznamu akce](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)

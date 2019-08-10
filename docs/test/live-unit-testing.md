@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662065"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923752"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing se sadou Visual Studio
 
@@ -151,7 +151,7 @@ Existují určité rozdíly mezi Live Unit Testing automatickým spuštěním a 
 
 Pokud má vaše řešení 10 nebo více projektů po spuštění funkce Live Unit Testing a neexistuje žádná trvalá data, nebo když vyberete **testovací** > **Live Unit Testing**  >  **Resetování čisté** možnost z nejvyšší úrovně nabídky sady Visual Studio, Visual Studio se zobrazí následující dialogové okno s upozorněním, že dynamické spuštění velkého počtu testů ve velkých projektech vážně může ovlivnit výkon. Pokud vyberete **OK**, Live Unit Testing spustí všechny testy v řešení. Pokud vyberete **zrušit**, můžete vybrat testy ke spuštění. Informace o tom, jak to provést, najdete v následující části, [zahrnutí a vyloučení projekty testů a testovací metody](#include-and-exclude-test-projects-and-test-methods).
 
- ![Live Unit Testing dialogové okno pro velké projekty](media/lut-large-project.png)
+![Live Unit Testing dialogové okno pro velké projekty](media/lut-large-project.png)
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>Zahrnout a vyloučit projekty testů a testovací metody
 

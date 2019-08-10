@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de5ab1fac368f1da1ceea39df19b198a22d999c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee5b1d92a6c7a813eea6efb409d3c2a22f68547c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808286"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921131"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Zkontrolujte viditelné obslužné rutiny událostí
 
@@ -30,36 +30,36 @@ ms.locfileid: "62808286"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Byla zjištěna veřejná nebo chráněná metoda zpracování událostí.
+## <a name="cause"></a>příčina
+Byla zjištěna veřejná nebo chráněná metoda zpracování událostí.
 
 ## <a name="rule-description"></a>Popis pravidla
- Externě viditelná metoda zpracování událostí představuje problém zabezpečení, která vyžaduje kontrolu.
+Externě viditelná metoda zpracování událostí představuje problémy se zabezpečením, které vyžadují kontrolu.
 
-Nezveřejňujte metody zpracování událostí, pokud není nezbytně nutné. Obslužné rutiny události, delegát typu, který vyvolá metodu vystavené lze přidat na libovolnou událost shodují signatury obslužné rutiny a události. Události může potenciálně navýšit tak, že veškerý kód a jsou často vydané kódem vysoce důvěryhodných systému v odpovědi s uživatelskými akcemi, jako je kliknutí na tlačítko. Přidání kontrolu zabezpečení metody zpracování událostí nebrání kód obslužné rutiny události, která volá metodu registrace.
+Nezveřejňujte metody zpracování událostí, pokud není nezbytně nutné. Obslužná rutina události, typ delegáta, který vyvolá vystavenou metodu, lze přidat k jakékoli události, pokud se shodují signatury obslužné rutiny a události. Události mohou být vyvolány jakýmkoli kódem a často jsou vyvolány vysoce důvěryhodným systémovým kódem v reakci na akce uživatele, jako je například kliknutí na tlačítko. Přidání kontroly zabezpečení do metody zpracování události nebrání kódu v registraci obslužné rutiny události, která vyvolá metodu.
 
- Požadavek nelze spolehlivě chránit metoda vyvolá obslužnou rutinu události. Pomoc se požadavky na zabezpečení chránit kódu z nedůvěryhodných volajících prozkoumáním volající v zásobníku volání. Kód, který přidá obslužnou rutinu události pro událost se nutně nenachází v zásobníku volání při spuštění metody obslužné rutiny události. Proto zásobník volání může mít pouze vysoce důvěryhodné volající při vyvolání metody obslužné rutiny události. To způsobí, že požadavky metodu obslužné rutiny události úspěšné. Požadované oprávnění může být také, uplatněna při vyvolání metody. Z těchto důvodů riziko není opravit porušení tohoto pravidla lze pouze použit k vyhodnocení po kontrole metody zpracování událostí. Při kontrole kódu, zvažte následující skutečnosti:
+Poptávka nemůže spolehlivě chránit metodu vyvolanou obslužnou rutinou události. Požadavky na zabezpečení pomůžou chránit kód před nedůvěryhodnými volajícími prozkoumáním volajících v zásobníku volání. Kód, který přidá obslužnou rutinu události do události, není nutně přítomen v zásobníku volání při spuštění metod obslužné rutiny události. Proto zásobník volání může mít pouze vysoce důvěryhodné volající, když je vyvolána metoda obslužné rutiny události. To způsobí, že požadavky provedené metodou obslužné rutiny události budou úspěšné. Vyžádané oprávnění může také být při vyvolání metody uplatněno. Z těchto důvodů může být riziko, že není nutné opravit porušení tohoto pravidla, posouzeno pouze po kontrole metody zpracování událostí. Při revizi kódu Vezměte v úvahu následující problémy:
 
-- Obslužnou rutinu události provádět žádné operace, které jsou nebezpečné nebo zneužitelné, jako je například potvrzující oprávnění nebo potlačení oprávnění nespravovaného kódu?
+- Provádí vaše obslužná rutina události nějaké operace, které jsou nebezpečné nebo zneužitelné, jako je například vyhodnocení oprávnění nebo potlačení oprávnění nespravovaného kódu?
 
-- Co jsou bezpečnostní hrozby na a z vašeho kódu, protože může probíhat kdykoli bez pouze vysoce důvěryhodné volající v zásobníku?
+- Jaké jsou bezpečnostní hrozby a z vašeho kódu, protože může běžet kdykoli a s pouze vysoce důvěryhodnými volajícími v zásobníku?
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, zkontrolujte metodu a vyhodnoťte následující:
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, Projděte si metodu a vyhodnoťte následující:
 
-- Budete moct nastavit metodu zpracování událostí neveřejné?
+- Je možné provést neveřejnou metodu zpracování událostí?
 
-- Můžete přesunout všechny funkce nebezpečné mimo obslužnou rutinu události?
+- Je možné přesunout ze všech nebezpečných funkcí z obslužné rutiny události?
 
-- Pokud je zavedena požadavku zabezpečení, můžete to provést jiným způsobem?
+- Pokud je zajištěna žádost o zabezpečení, je možné ji provést nějakým jiným způsobem?
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačení upozornění tohoto pravidla až po přezkoumání pečlivé ověření zabezpečení, abyste měli jistotu, že váš kód nepředstavuje bezpečnostní hrozbu.
+Potlačí upozornění od tohoto pravidla až po pečlivém přezkoumání zabezpečení, abyste se ujistili, že váš kód nepředstavuje bezpečnostní riziko.
 
 ## <a name="example"></a>Příklad
- Následující kód ukazuje metodu zpracování událostí, které mohou být zneužity škodlivý kód.
+Následující kód ukazuje metodu zpracování událostí, která může být zneužita škodlivým kódem.
 
- [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
+[!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
 
 ## <a name="see-also"></a>Viz také:
 

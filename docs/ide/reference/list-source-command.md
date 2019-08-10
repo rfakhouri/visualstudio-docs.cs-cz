@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dcecdaa206964e6c8a5aebcadc958fe2c1ee1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f162590fafaa263e9cc4233744e5f2ba39c8ce6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946853"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926187"
 ---
 # <a name="list-source-command"></a>Listovat zdroj – příkaz
 Zobrazí zadané řádky zdrojového kódu.
@@ -32,28 +32,28 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ```
 
 ## <a name="switches"></a>Přepínače
- / Počet:`number`
+Výpočtu`number`
 
- Volitelné. Určuje počet řádků k zobrazení.
+Volitelné. Určuje počet řádků, které se mají zobrazit.
 
- Nebo aktuální
+/Current
 
- Volitelné. Zobrazí aktuální řádek.
+Volitelné. Zobrazuje aktuální řádek.
 
- / Souboru:`filename`
+Souborů`filename`
 
- Volitelné. Cesta k souboru, který má zobrazit. Pokud není zadán žádný název souboru, příkaz zobrazuje zdrojový kód pro řádek aktuální příkaz.
+Volitelné. Cesta k souboru, který se má zobrazit Pokud není zadán žádný název souboru, příkaz zobrazí zdrojový kód pro řádek aktuálního příkazu.
 
- / Řádek:`number`
+Link`number`
 
- Volitelné. Zobrazí konkrétní řádek určený číslem.
+Volitelné. Zobrazuje konkrétní číslo řádku.
 
- /ShowLineNumbers:`yes|no`
+/ShowLineNumbers:`yes|no`
 
- Volitelné. Určuje, jestli se mají zobrazovat čísla řádků.
+Volitelné. Určuje, zda se mají zobrazit čísla řádků.
 
 ## <a name="example"></a>Příklad
- V tomto příkladu obsahuje zdrojový kód z řádek 4 souboru Form1.vb, s čísly řádků viditelná.
+Tento příklad uvádí zdrojový kód ze řádku 4 souboru Form1. vb s čísly řádků, které jsou viditelné.
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes

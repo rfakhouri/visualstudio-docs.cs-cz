@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cac669b96f362d6da73e3eb2f373137c3d9bdd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 869ff99243349ae01c63da0a7d9e6544761cbd39
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778515"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922499"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Deklarujte typy v oborech názvů
 
@@ -33,26 +33,26 @@ ms.locfileid: "62778515"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Veřejný nebo chráněný typ definovaný vně rozsahu pojmenovaného oboru názvů.
+## <a name="cause"></a>příčina
+Veřejný nebo chráněný typ je definován mimo rozsah pojmenovaného oboru názvů.
 
 ## <a name="rule-description"></a>Popis pravidla
- Typy jsou deklarovány v oborech názvů, aby se zabránilo kolize názvů a zároveň jako způsob organizace souvisejících typů v hierarchii objektů. Typy, které jsou mimo všechny pojmenovaného oboru názvů jsou v globálním oboru názvů, který se nedá odkazovat v kódu.
+Typy jsou deklarovány v oborech názvů, aby se zabránilo kolizím názvů a jako způsob uspořádání souvisejících typů v hierarchii objektů. Typy, které jsou mimo libovolný pojmenovaný obor názvů, jsou v globálním oboru názvů, na který nelze odkazovat v kódu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, umístěte typ v oboru názvů.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Chcete-li opravit porušení tohoto pravidla, umístěte typ do oboru názvů.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- I když si už nikdy nemusíte potlačit upozornění tohoto pravidla, je bezpečné k tomu, když sestavení nebude nikdy používat společně s ostatními sestaveními.
+I když nikdy nemusíte potlačit upozornění z tohoto pravidla, je bezpečné to provést, pokud sestavení nebude nikdy použito společně s jinými sestaveními.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje knihovnu, která má typ nesprávně deklarované mimo obor názvů a typ, který má stejný název deklarovaný v oboru názvů.
+Následující příklad ukazuje knihovnu, která má nesprávně deklarovaný typ mimo obor názvů a typ, který má stejný název deklarovaný v oboru názvů.
 
- [!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
- [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
+[!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
+[!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
 
 ## <a name="example"></a>Příklad
- Následující aplikace používá knihovnu, která byla definována dříve. Všimněte si, že je vytvořen typ, který je deklarovaná mimo obor názvů, když název `Test` není kvalifikován pomocí oboru názvů. Všimněte si také, že pro přístup k `Test` zadejte `Goodspace`, vyžaduje se název oboru názvů.
+Následující aplikace používá knihovnu, která byla definována dříve. Všimněte si, že typ deklarovaný mimo obor názvů je vytvořen, pokud název `Test` není kvalifikován oborem názvů. Všimněte si také, že pro `Test` přístup k `Goodspace`typu v je požadován název oboru názvů.
 
- [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
- [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]
+[!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
+[!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

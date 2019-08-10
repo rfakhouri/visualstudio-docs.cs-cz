@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 623416e557759ace1ad6403ef8ef977df01da39e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d83da42a029d746899bfaccf5d62f8856a040611
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545482"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921105"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Zabezpečení metod by mělo být nadmnožinou typu
 
@@ -30,29 +30,29 @@ ms.locfileid: "62545482"
 |Kategorie|Microsoft.Security|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
- Typ má deklarativní zabezpečení a jeden z jeho metod má deklarativní zabezpečení pro stejnou akci zabezpečení a akce zabezpečení není [požadavky propojení](/dotnet/framework/misc/link-demands), a oprávnění ověřena pomocí typu nejsou podmnožinu oprávnění ověří pomocí metody.
+## <a name="cause"></a>příčina
+Typ má deklarativní zabezpečení a jedna z jeho metod má deklarativní zabezpečení pro stejnou akci zabezpečení a akce zabezpečení není [propojením požadavků](/dotnet/framework/misc/link-demands)a oprávnění kontrolovaného typem nejsou podmnožinou oprávnění zkontrolovaných metodou.
 
 ## <a name="rule-description"></a>Popis pravidla
- Metoda by neměla mít v obou úrovni metody nebo typ deklarativní zabezpečení pro stejnou akci. Dva kontroly nejsou sloučeny; je použita pouze vyžádání úrovni metod. Například, pokud typ požaduje oprávnění `X`, a jeden z jeho metod požaduje oprávnění `Y`, kód nemá oprávnění k `X` spustí metodu.
+Metoda by neměla mít deklarativní zabezpečení na úrovni metody i typu pro stejnou akci. Tyto dvě kontroly nejsou kombinovány. použije se jenom požadavek úrovně metody. Například pokud typ vyžaduje oprávnění `X`a jedna z jeho metod požaduje oprávnění `Y`, kód nemusí mít oprávnění `X` ke spuštění metody.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Zrevidujete váš kód, abyste měli jistotu, že obě akce se vyžadují. Pokud obě akce, ujistěte se, že úroveň metody akce obsahuje zabezpečení na úrovni typu. Například, pokud váš typ požaduje oprávnění `X`, a její metoda musí také vyžadují oprávnění `Y`, metoda by měla explicitně vyžadují `X` a `Y`.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
+Zkontrolujte kód a ujistěte se, že jsou nutné obě akce. Pokud jsou požadovány obě akce, ujistěte se, že akce na úrovni metody zahrnuje zabezpečení specifikované na úrovni typu. Například pokud váš typ požaduje `X`oprávnění a jeho metoda musí také vyžadovat oprávnění `Y`, metoda by měla explicitně vyžadovat `X` a `Y`.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla, pokud metoda nevyžaduje zabezpečení podle typu. To však není běžné scénáře a může znamenat potřebu přezkoumání Pečlivý návrh.
+V případě, že metoda nevyžaduje zabezpečení určené typem, je bezpečné potlačit upozornění od tohoto pravidla. Nejedná se ale o běžný scénář a může to znamenat, že je potřeba pečlivé přezkoumání návrhu.
 
 ## <a name="example-1"></a>Příklad 1
 
-Následující příklad používá oprávnění prostředí k předvedení nebezpečí porušení tohoto pravidla. V tomto příkladu kódu aplikace vytvoří instanci typu zabezpečené před odepřením oprávnění vyžadovaný typem. Ve scénáři hrozbami reálného světa bude aplikace vyžadovat, aby jiný způsob, jak získat instanci objektu.
+Následující příklad používá oprávnění prostředí k demonstraci nebezpečí porušení tohoto pravidla. V tomto příkladu kód aplikace vytvoří instanci zabezpečeného typu před odepřením oprávnění vyžadovaných typem. Ve scénáři reálného ohrožení vyžaduje aplikace další způsob, jak získat instanci objektu.
 
-V následujícím příkladu knihovna požadavků pro typ oprávnění k zápisu a oprávnění ke čtení pro metodu.
+V následujícím příkladu Knihovna požaduje oprávnění k zápisu pro typ a oprávnění číst pro metodu.
 
 [!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
 
 ## <a name="example-2"></a>Příklad 2
 
-Následující kód aplikace ukazuje ohrožení zabezpečení knihovny voláním metody i v případě, že nesplňuje požadavek na zabezpečení na úrovni typu.
+Následující kód aplikace demonstruje ohrožení zabezpečení knihovny voláním metody, i když nesplňuje požadavek zabezpečení na úrovni typu.
 
 [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
 

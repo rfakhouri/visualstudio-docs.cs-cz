@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816631"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924001"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Sada pravidel Rozšířená pravidla správnosti pro spravovaný kód
-Sada pravidel Microsoftu rozšířená pravidla správnosti maximalizuje logiku a framework chyby využití, které jsou hlášeny sadou analýzy kódu. Je kladen zvláštní důraz na konkrétní scénáře, jako je například interoperabilita modelů COM a mobilní aplikace. Měli byste zvážit, včetně toto pravidlo nastavte, pokud jeden z těchto scénářů vztahuje k vašemu projektu nebo pro nalezení dalších problémů ve vašem projektu.
+Sada pravidel Rozšířená pravidla správnosti společnosti Microsoft maximalizuje logiku a chyby použití architektury, které jsou hlášeny nástrojem analýza kódu. Další důraz je kladen na konkrétní scénáře, jako je interoperabilita modelu COM a mobilní aplikace. Měli byste zvážit zahrnutí této sady pravidel, pokud se jeden z těchto scénářů vztahuje na váš projekt nebo pokud chcete najít další problémy v projektu.
 
- Sada pravidel Microsoftu rozšířená pravidla správnosti obsahuje pravidla, která jsou v pravidel základní pravidla správnosti společnosti Microsoft nastavit. Základní pravidla správnosti obsahovat pravidla, která jsou v pravidle Microsoft Minimální doporučená pravidla nastavena. Další informace najdete v části [sada pravidel základní pravidla správnosti pro spravovaný kód](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) a [sada pravidel spravovaná doporučená pravidla pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Sada pravidel Rozšířená pravidla správnosti společnosti Microsoft zahrnuje pravidla, která jsou uvedená v sadě pravidel základní pravidla správnosti společnosti Microsoft. Základní pravidla správnosti zahrnují pravidla, která jsou uvedená v sadě pravidel Minimální doporučená pravidla společnosti Microsoft. Další informace najdete v tématu sada [pravidel základní pravidla správnosti pro spravovaný kód](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) a [sadu pravidel spravovaná doporučená pravidla pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
- Následující tabulka popisuje všechna pravidla v sadě pravidel Microsoftu rozšířená pravidla správnosti.
+V následující tabulce jsou popsána všechna pravidla v sadě pravidel Rozšířená pravidla správnosti společnosti Microsoft.
 
 |Pravidlo|Popis|
 |----------|-----------------|
@@ -64,7 +64,7 @@ Sada pravidel Microsoftu rozšířená pravidla správnosti maximalizuje logiku 
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Transparentní metody musí obsahovat pouze ověřitelné IL|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Transparentní metody nesmí volat metody s atributem SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Transparentní kód nesmí odkazovat na položky kritické pro zabezpečení|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparentní metody nesmějí vyhovovat LinkDemands|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparentní metody nesmí splňovat LinkDemand.|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Typy musí být alespoň tak kritické, jako jejich základní typy a rozhraní|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparentní metody nemusí používat kontrolní příkazy zabezpečení|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparentní metody nesmí provádět volání nativního kódu|
