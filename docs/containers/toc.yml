@@ -26,6 +26,8 @@
           href: hosting-web-apps-in-docker.md
         - name: Nasazení do Azure App Service
           href: deploy-app-service.md
+        - name: Nasazení do Docker Hubu
+          href: deploy-docker-hub.md
         - name: Zobrazení a diagnostika kontejnerů
           href: view-and-diagnose-containers.md
         - name: Konfigurace Nástrojů kontejneru
