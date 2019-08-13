@@ -1,6 +1,6 @@
 ---
 title: Konvence vytváření názvů .NET pro soubory EditorConfig
-ms.date: 11/20/2017
+ms.date: 08/07/2019
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 048fb4474caae6b7cc81a8c62061e879e7556c58
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345701"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957432"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konvence vytváření názvů .NET pro EditorConfig
 
@@ -165,7 +165,8 @@ Následující tabulka uvádí povolené hodnoty závažnosti a jejich význam:
 
 severity | Efekt
 ------------ | -------------
-žádné nebo tiché | Pokud se tento styl nesleduje, nezobrazujte na uživateli žádné údaje. Nicméně automaticky generovaný kód se řídí tímto stylem.
+žádná | Pravidlo je zcela potlačené.
+refaktoring nebo tichá | Pokud se tento styl nesleduje, nezobrazujte na uživateli žádné údaje. Nicméně automaticky generovaný kód se řídí tímto stylem.
 návrhů | Pokud se tento styl nesleduje, zobrazte ho uživateli jako návrh, jako základní tečky na prvních dvou znacích. Nemá žádný vliv na čas kompilace.
 upozornění | Pokud se tento styl nesleduje, zobrazte v **Seznam chyb**upozornění kompilátoru.
 error | Pokud se tento styl nesleduje, zobrazte v **Seznam chyb**chybu kompilátoru.

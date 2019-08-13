@@ -1,72 +1,78 @@
 ---
-title: Podpora sledování na sledování pro rozšíření sady Visual Studio
+title: Zvýšení povědomí o podpoře pro rozšířené služby sady Visual Studio pro jednotlivé monitory
 titleSuffix: ''
-description: Další informace o novou podporu zařízení extender pro za monitorování – sledování k dispozici v aplikaci Visual Studio 2019.
+description: Přečtěte si o novém podpoře rozšířené podpory pro monitorování pro jednotlivé monitory, které jsou k dispozici v aplikaci Visual Studio 2019.
 ms.date: 04/10/2019
 helpviewer_keywords:
 - Visual Studio, PMA, per-monitor-awareness, extenders, Windows Forms
 - Per-Monitor Awareness support for extenders
-ms.assetid: ''
 author: rub8n
 ms.author: rurios
 manager: anthc
-ms.prod: visual-studio-windows
 monikerRange: vs-2019
-ms.technology: vs-ide-general
-ms.topic: reference
-ms.workload:
-- multiple
-ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.topic: conceptual
+dev_langs:
+- CSharp
+- CPP
+ms.openlocfilehash: 2686248a087650f6170b72c8ef9b3a77e2ba275c
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793633"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957342"
 ---
-# <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Podpora sledování na sledování pro rozšíření sady Visual Studio
-Verze starší než Visual Studio 2019 měl svým kontextem povědomí o DPI nastavena na systém vědět, spíše než za sledování DPI vědět (PMA). Spouštění v systému sledování je v degradovaném stavu vizuálu pokaždé, když Visual Studio došlo k vykreslení na monitorech s jinou měřítko nebo vzdálené do počítačů s jiným zobrazením konfigurací např (jiné prostředí (například fuzzy písma nebo ikony) Windows škálování).
+# <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Zvýšení povědomí o podpoře pro rozšířené služby sady Visual Studio pro jednotlivé monitory
 
-Kontext povědomí o DPI. 2019 Visual Studio je nastaven jako PMA, když prostředí podporuje proces v2v, umožní sadě Visual Studio k vykreslení závislosti na konfiguraci zobrazení, kde se hostuje místo jediného systému definované konfigurace. Takže v konečném důsledku překládá na vždy zřetelný uživatelského rozhraní pro plochy, které podporují režim PMA.
+Verze před sadou Visual Studio 2019 měly svůj kontext sledování DPI nastavený na systém, nikoli rozlišení DPI na monitoru (PMA). Výsledkem sledování systému je zhoršené vizuální prostředí (např. rozmazaných písem nebo ikon), kdykoli se Visual Studio muselo vykreslovat mezi monitory s různými faktory škálování nebo se vzdáleně v počítačích s různými konfiguracemi displeje (např. různé Škálování systému Windows).
 
-Odkazovat [vysoké rozlišení DPI Desktop Application Development na Windows](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) dokumentaci pro další informace o podmínkách a celkové scénáře popsané v tomto dokumentu.
+Kontext sledování DPI v sadě Visual Studio 2019 je nastaven jako PMA, když ho prostředí podporuje, což umožňuje, aby se sada Visual Studio vykreslila v závislosti na konfiguraci displeje, kde je hostovaná, a ne v jednom systémem definované konfiguraci. Nakonec se přeloží na vždy ostřené uživatelské rozhraní pro oblasti Surface, které podporují režim PMA.
+
+Další informace o pojmech a celkovém scénáři popsaných v tomto dokumentu najdete v dokumentaci pro [vývoj desktopových aplikací s vysokým rozlišením DPI v dokumentaci Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) .
 
 ## <a name="quickstart"></a>Rychlý start
-- Zkontrolujte, Visual Studio běží v režimu PMA (naleznete v tématu **povolení PMA**)
 
-- Byly správně ověřeny vaše rozšíření funguje mezi sadu běžné scénáře (viz **testování rozšíření pro problémy PMA**)
+- Zajistěte, aby v režimu PMA běžela aplikace Visual Studio (viz **Povolení PMA**).
 
-- Pokud narazíte na problémy, můžete k diagnostikování a odstranění těchto problémů strategie/doporučení popsaných v tomto dokumentu. Také budete muset přidat nové [Microsoft.VisualStudio.DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) balíček NuGet do projektu pro přístup k požadované rozhraní API.
+- Ověřte, že rozšíření funguje správně v rámci sady běžných scénářů (viz **testování vašich rozšíření pro problémy PMA**).
 
-## <a name="enabling-pma"></a>Povolení PMA
-Pokud chcete povolit PMA v sadě Visual Studio, musí být splněny následující požadavky:
-1) Windows 10. dubna 2018 Update (v1803 RS4) nebo novější
-2) Rozhraní .NET framework 4.8 RTM nebo novější
-3) Visual Studio 2019 s ["Optimalizace vykreslování obrazovky s jinou hustoty"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) povolenou možnost
+- Pokud zjistíte problémy, můžete k jejich diagnostikování a opravě použít strategie/doporučení popsaná v tomto dokumentu. Také budete muset přidat nový balíček NuGet [Microsoft. VisualStudio. DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) do vašeho projektu pro přístup k požadovaným rozhraním API.
 
-Jakmile jsou splněny tyto požadavky, Visual Studio automaticky povolí režim PMA celém procesu.
+## <a name="enable-pma"></a>Povolit PMA
+
+Chcete-li povolit PMA v aplikaci Visual Studio, je třeba splnit následující požadavky:
+
+- Windows 10 duben 2018 Update (v1803, RS4) nebo novější
+- .NET Framework 4,8 RTM nebo vyšší
+- Visual Studio 2019 s povolenou možností [optimalizovat vykreslování pro obrazovky s různou hustotou pixelů](../../ide/reference/general-environment-options-dialog-box.md)
+
+Po splnění těchto požadavků Visual Studio automaticky povolí režim PMA napříč procesem.
 
 > [!NOTE]
-> Obsah Windows Forms v sadě Visual Studio (například prohlížeč vlastností) budou podporovat PMA pouze v případě, že máte Visual Studio. 2019 aktualizace č. 1.
+> Model Windows Forms obsah v aplikaci Visual Studio (například prohlížeč vlastností) podporuje PMA pouze v případě, že máte Visual Studio 2019 verze 16,1 nebo novější.
 
-## <a name="testing-your-extensions-for-pma-issues"></a>Testování rozšíření PMA problémů
+## <a name="test-your-extensions-for-pma-issues"></a>Testování rozšíření pro problémy s PMA
 
-Visual Studio oficiálně podporuje rozhraní WPF, Windows Forms, Win32 a HTML/JS uživatelského rozhraní. Když Visual Studio přejde do režimu PMA, každý zásobník uživatelského rozhraní se chová odlišně. Bez ohledu na architekturu uživatelského rozhraní, proto doporučujeme, že průchodu testů se provádí za účelem Ujistěte se, že je kompatibilní s režimem PMA všechny uživatelské rozhraní.
+Visual Studio oficiálně podporuje architektury uživatelského rozhraní WPF, model Windows Forms, Win32 a HTML/JS. Když je sada Visual Studio přepnuta do režimu PMA, každý zásobník uživatelského rozhraní se chová jinak. Bez ohledu na architekturu uživatelského rozhraní se proto doporučuje provést test Pass, aby bylo zajištěno, že veškeré uživatelské rozhraní bude kompatibilní s režimem PMA.
 
-Doporučuje se, že ověříte následující běžné scénáře:
+Doporučuje se ověřit následující běžné scénáře:
 
-1. Změna faktoru škálovací sady jednoho monitoru prostředí, když je aplikace spuštěná *
-    - V tomto scénáři pomáhá otestovat, zda uživatelské rozhraní reaguje na dynamické změny Windows DPI
+- Změna faktoru škálování jednoho monitorovaného prostředí, když je aplikace spuštěná.
 
-2. Ukotvení/vyjímání přenosném počítači, kde připojené monitorování změní na primární a připojené monitorování má jiný měřítko než přenosný počítač, když je spuštěná aplikace.
-    - V tomto scénáři pomáhá otestovat, zda reaguje uživatelského rozhraní zobrazení změnit DPI, jakož i dynamicky zpracování zobrazí přidávání nebo odebírání
+  Tento scénář pomáhá otestovat, že uživatelské rozhraní reaguje na změnu rozlišení DPI pro dynamickou systém Windows.
 
-3. S více monitorů s jinou měřítko a přesun aplikace mezi nimi.
-    - V tomto scénáři pomáhá otestovat, zda uživatelské rozhraní reaguje na změnu zobrazení DPI
+- Ukotvení/odkování přenosného počítače, kde je připojené monitorování nastaveno na primární a připojené monitorování má jiný faktor škálování než přenosný počítač, když je aplikace spuštěná.
+
+  Tento scénář pomáhá otestovat, že uživatelské rozhraní reaguje na změnu rozlišení DPI a že se dynamicky přidávají nebo odebírají zobrazení.
+
+- Máte několik monitorů s různými faktory škálování a mezi nimi přesunete aplikaci.
+
+  Tento scénář pomáhá otestovat, že uživatelské rozhraní reaguje na změnu rozlišení DPI.
     
-4. Vzdálená komunikace k počítači, když místní a vzdálené počítače mají různé měřítko pro primární monitorování.
-    - V tomto scénáři pomáhá otestovat, zda uživatelské rozhraní reaguje na dynamické změny Windows DPI
+- Vzdálená komunikace v počítači, pokud mají místní a vzdálené počítače různé faktory škálování pro primární monitorování.
 
-Vhodný předběžný test pro Určuje, zda vaše uživatelské rozhraní může mít problémy se určuje, zda kód využívá *Microsoft.VisualStudio.Utilities.Dpi.DpiHelper*, *Microsoft.VisualStudio.PlatformUI.DpiHelper*, nebo *VsUI::CDpiHelper* třídy. Tyto třídy staré DpiHelper podporují jenom systému rozpoznání nastavení dpi a nebude vždy fungovat správně, když je proces PMA.
+  Tento scénář pomáhá otestovat, že uživatelské rozhraní reaguje na změnu rozlišení DPI pro dynamickou systém Windows.
+
+Dobrý předběžný test na to, jestli vaše uživatelské rozhraní může mít problémy, je, jestli kód používá třídy *Microsoft. VisualStudio. Utilities. dpi. DpiHelper*, *Microsoft. VisualStudio. PlatformUI. DpiHelper*nebo *vsui nebyla rozpoznána:: CDpiHelper* . Tyto staré třídy DpiHelper podporují pouze systémové sledování DPI a při PMA procesu vždy nefungují správně.
 
 Typické použití těchto DpiHelpers bude vypadat takto:
 
@@ -83,81 +89,86 @@ POINT screenIntTopRight = new POINT
 IntPtr monitor = MonitorFromPoint(screenIntTopRight, MONITOR_DEFAULTTONEARST);
 ```
 
-V předchozím příkladu obdélník představující logické hranice okna je převedena na jednotky zařízení tak, aby může být předán do nativní metody MonitorFromPoint, která očekává souřadnice zařízení, aby bylo možné vrátit zpět ukazatel přesné monitorování.
+V předchozím příkladu je obdélník reprezentující logické hranice okna převeden na jednotky zařízení, aby jej bylo možné předat nativní metodě MonitorFromPoint, která očekává souřadnice zařízení, aby vracela přesný ukazatel monitorování.
 
 ### <a name="classes-of-issues"></a>Třídy problémů
-Když je povolený režim PMA pro sadu Visual Studio, uživatelské rozhraní může replikovat problémy běžné způsoby. Většina. Pokud ne, z těchto problémů může dojít v některém z podporovaných architektury uživatelského rozhraní sady Visual Studio. Kromě toho těchto problémů může také dojít, když část uživatelského rozhraní je hostovaná v kombinovaném režimu DPI škálování scénáře (odkazovat Windows [dokumentaci](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) Další). 
+Když je pro Visual Studio povolený režim PMA, uživatelské rozhraní může replikovat problémy několika běžnými způsoby. Většina, pokud k těmto problémům dojde, se může vyskytnout v rámci podporovaných rozhraní .NET studia pro sadu Visual Studio. K těmto potížím může také docházet, když je část uživatelského rozhraní hostována ve scénářích škály DPI ve smíšeném režimu (Další informace najdete v [dokumentaci](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) k systému Windows). 
 
-#### <a name="win32-window-creation"></a>Vytváření oken Win32
-Při vytváření oken s CreateWindow() nebo CreateWindowEx(), běžným postupem je vytvoření okna na souřadnicích (0,0) (/ levého horního rohu primárního), přesuňte ho do konečného umístění. Díky tomu může způsobit okno k aktivaci DPI však změnit zprávy nebo událost, která můžete znovu aktivovat neúspěšnou dalších zpráv uživatelského rozhraní nebo události a nakonec vést k nežádoucímu chování nebo vykreslování.
+#### <a name="win32-window-creation"></a>Vytvoření okna Win32
+Při vytváření oken pomocí funkce CreateWindow () nebo CreateWindowEx () je běžným vzorem vytvoření okna v souřadnicích (0, 0) (horní nebo levý roh primárního zobrazení) a jeho přesunutí na poslední pozici. Nicméně to může způsobit, že okno spustí zprávu nebo událost se změněnou hodnotou DPI, která může znovu aktivovat jiné zprávy uživatelského rozhraní nebo události a nakonec vést k neočekávanému chování nebo vykreslování.
 
-#### <a name="wpf-element-placement"></a>Umístění prvku WPF
-Při přesouvání elementů WPF pomocí staré Microsoft.VisualStudio.Utilities.Dpi.DpiHelper, souřadnice levého horního rohu nemusí být nevypočte správně pokaždé, když se elementy jsou v jiné než primární DPI.
+#### <a name="wpf-element-placement"></a>Umístění elementu WPF
+Při přesunu prvků WPF pomocí starého rozhraní Microsoft. VisualStudio. Utilities. dpi. DpiHelper se souřadnice v levém horním rohu nemusí správně vypočítat, pokud jsou prvky na neprimárním typu DPI.
 
-#### <a name="serialization-of-ui-element-sizes-or-positions"></a>Serializace velikosti prvku uživatelského rozhraní nebo umístění
-Po obnovení uživatelského rozhraní velikosti nebo pozice (Pokud je uložen jako jednotky zařízení) v jiném kontextu DPI než co byl uložen v bude umístěn a velikosti nesprávně. K tomu dochází, protože zařízení jednotky jsou vlastní relaci DPI.
+#### <a name="serialization-of-ui-element-sizes-or-positions"></a>Serializace velikostí a umístění prvků uživatelského rozhraní
+Pokud je velikost nebo pozice uživatelského rozhraní (Pokud je uložená jako jednotky zařízení) obnovena v jiném kontextu DPI, než bylo uloženo v, bude umístění a velikost nesprávně umístěna. K tomu dochází, protože jednotky zařízení mají vlastní vztah DPI.
 
-#### <a name="incorrect-scaling"></a>Nesprávné měřítko
-Prvky uživatelského rozhraní vytvářené na primární DPI škálovaly správně, ale když přesune na monitor s jinou DPI, není měřítko a díky tomu se jejich obsah končí nebuďte příliš velký či příliš malý.
+#### <a name="incorrect-scaling"></a>Nesprávné škálování
+Prvky uživatelského rozhraní vytvořené na primárním DPI se budou škálovat správně, ale když se přesunou na obrazovku s jiným DPI, nemění se jejich škálování a jejich obsah je moc velký nebo moc malý.
 
-#### <a name="incorrect-bounding"></a>Nesprávný ohraničující
-Podobně škálování problému prvky uživatelského rozhraní bude počítat jejich rozsah správně v daném kontextu se primární DPI, ale při přesunu na neprimární DPI, jejich nových mezí nevypočte správně. V důsledku toho okno obsahu končí je příliš malá nebo příliš velké ve srovnání s hostování uživatelského rozhraní, jehož výsledkem je prázdný nebo oříznutí.
+#### <a name="incorrect-bounding"></a>Nesprávné ohraničování
+Podobně jako při potížích s škálováním prvky uživatelského rozhraní počítají jejich meze správně v primárním kontextu DPI, ale při přesunu na neprimární DPI nebudou nové meze vypočítány správně. V takovém případě je okno obsahu příliš malé nebo příliš velké v porovnání s hostujícím uživatelským rozhraním, které má za následek prázdné místo nebo oříznutí.
 
-#### <a name="drag--drop"></a>Přetažením
-Vždy, když ve scénářích DPI ve smíšeném režimu (například různé prvky uživatelského rozhraní vykreslování v různých režimech povědomí o DPI), přetáhněte souřadnice může být nesprávně vypočteny, výsledkem je konečné rozevírací koncové pozici nahoru nesprávné.
+#### <a name="drag--drop"></a>Přetažení &
+Vždy, když jsou scénáře DPI ve smíšeném režimu (například různé prvky uživatelského rozhraní, které se vykreslují v různých režimech sledování DPI), mohou být souřadnice přetažení nesprávně vypočítány, což vede k nesprávnému ukončení konečné pozice odkládací složky.
 
-#### <a name="out-of-process-ui"></a>Uživatelského rozhraní na více instancí procesu
-Některé uživatelské rozhraní se vytvoří na více instancí procesu a pokud vytvoření externího procesu je v jiném režimu povědomí o DPI než Visual Studio, což může představovat všechny předchozí problémů vykreslování.
+#### <a name="out-of-process-ui"></a>Uživatelské rozhraní mimo procesy
+Některé uživatelské rozhraní se vytvořilo mimo proces a pokud je vytvoření externího procesu v jiném režimu sledování DPI než Visual Studio, může to vést k některému z předchozích problémů vykreslování.
 
-#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Ovládací prvky Windows Forms, Image nebo rozložení vykreslen nesprávně
-Obsah Windows Forms nepodporují PMA režimu. V důsledku toho se může zobrazit vykreslování problém s nesprávnou rozložení nebo škálování. V tomto případě je možné řešení explicitně vykreslení obsahu Windows Forms v "Systému upozornit" DpiAwarenessContext (odkazovat [vynucení ovládacího prvku do konkrétní DpiAwarenessContext](#forcing-a-control-into-a-specific-dpiawarenesscontext)).
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Nesprávně generované ovládací prvky, obrázky nebo zobrazení model Windows Forms
+Ne všechen model Windows Forms obsah podporuje režim PMA. V důsledku toho se může zobrazit problém vykreslování s nesprávným rozložením nebo škálováním. V tomto případě je možné, že v tomto případě výslovně vykreslíte model Windows Forms obsah v části "systémově závislé" DpiAwarenessContext (vynutíte si [ovládací prvek pro konkrétní DpiAwarenessContext](#force-a-control-into-a-specific-dpiawarenesscontext)).
 
-#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Ovládací prvky Windows Forms nebo windows nejsou zobrazena
-Jedním z hlavní příčiny tohoto problému je vývojáři, chcete-li změnit nadřazenou položku pro ovládací prvek nebo okno s jeden DpiAwarenessContext do okna s jinou DpiAwarenessContext.
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Nezobrazení ovládacích prvků model Windows Forms nebo oken
+Jedním z hlavních příčin tohoto problému jsou vývojáři, kteří se pokoušejí znovu vytvořit nadřazený ovládací prvek nebo okno s jedním DpiAwarenessContext do okna s jiným DpiAwarenessContext.
 
-Následující obrázky ukazují aktuální **výchozí** omezení operačního systému Windows v systému windows nadřazenosti:
+Následující obrázky znázorňují aktuální **výchozí** omezení operačního systému Windows v nadřazených oknech:
 
-![Snímek obrazovky vztahy k nadřazeným položkám správné chování](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+![Snímek obrazovky se správným chováním nadřazeného objektu](media/PMA-parenting-behavior.PNG)
 
 > [!Note]
-> Toto chování můžete změnit nastavením chování vlákna hostování (odkazovat [DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
+> Toto chování můžete změnit nastavením chování hostování vlákna (viz [výčet Dpi_Hosting_Behavior](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
-V důsledku toho pokud je nastavit vztah nadřazenosti a podřízenosti mezi nepodporované režimy, se nezdaří a okna ovládacího prvku nebo nemusí být vykreslen podle očekávání.
+V důsledku toho, pokud nastavíte vztah nadřazenosti-podřízenosti mezi nepodporovanými režimy, selže a ovládací prvek nebo okno nebude možné vykreslit podle očekávání.
 
-### <a name="diagnosing-issues"></a>Diagnostika problémů
-Existuje celá řada faktorů, které je třeba zvážit při identifikaci problémů souvisejících se PMA: 
+### <a name="diagnose-issues"></a>Diagnostika problémů
 
-1. Fakturuje se u uživatelského rozhraní nebo rozhraní API očekávat logické nebo hodnoty zařízení.
-    - Rozhraní API a rozhraní WPF obvykle používají logické hodnoty (ale ne vždy)
-    - Uživatelského rozhraní Win32 API se obvykle používá hodnoty zařízení
+Při identifikaci problémů souvisejících s PMA je potřeba vzít v úvahu mnoho faktorů: 
 
-2. Pokud jsou hodnoty pocházející z?
-    - Pokud se zobrazuje hodnoty z jiných uživatelského rozhraní nebo rozhraní API, je to zařízení předávání nebo logické hodnoty.
-    - Pokud se zobrazuje hodnoty z více zdrojů, všechny použijte/očekávají stejné typy hodnot nebo převody nemusíte být smíšený a odpovídající?
+- Očekává uživatelské rozhraní nebo rozhraní API logické hodnoty nebo hodnoty zařízení?
+    - Uživatelské rozhraní a rozhraní API WPF obvykle používají logické hodnoty (ale ne vždycky).
+    - Rozhraní Win32 UI a rozhraní API obvykle používají hodnoty zařízení.
 
-3. Jsou konstanty uživatelské rozhraní používá a jaké formuláře jsou v?
+- Kde jsou hodnoty přicházející?
+    - Pokud přijímáte hodnoty z jiného uživatelského rozhraní nebo rozhraní API, předává zařízení nebo logické hodnoty.
+    - Pokud jsou přijímány hodnoty z více zdrojů, všechny používají/očekávají stejné typy hodnot, nebo je nutné převody spojit a porovnat?
 
-4. Vlákno je ve správném kontextu pro hodnoty DPI přijímá?
-    - Změny umožňují hostování smíšené DPI by měly obecně put cesty kódu ve správném kontextu, však může spustit práce mimo hlavní zprávy smyčky nebo událost toku v chybném kontextu DPI.
+- Používají se konstanty uživatelského rozhraní a na kterých formulářích jsou?
 
-5. Hodnoty překračují hranice kontextu DPI?
-    - Přetáhnout je běžné situace, ve kterém můžete souřadnice napříč kontexty DPI. Okno se pokouší provést správnou věc, ale v některých případech možná muset práci převod zajistit odpovídající hranice kontext hostitele uživatelského rozhraní.
+- Je vlákno ve správném kontextu DPI pro hodnoty, které přijímá?
 
-### <a name="pma-nuget-package"></a>Balíček PMA NuGet
-Nové knihovny DpiAwarness můžete najít na [Microsoft.VisualStudio.DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) balíček NuGet.
+  Změny, které umožňují smíšené hostování přes DPI, by měly obecně vkládat cesty kódu do správného kontextu, ale práce prováděná mimo hlavní smyčku zpráv nebo tok událostí se může provádět v nesprávném kontextu DPI.
+
+- Jsou hranice kontextu mezi jednotlivými rozlišeními mezi DPI?
+
+  Přetažení & je běžné situaci, kdy souřadnice mohou překračovat kontexty DPI. Okno se pokusí provést správnou věc, ale v některých případech může být nutné, aby uživatelské rozhraní hostitele mohlo provést převod, aby se zajistilo, že se shodují hranice kontextu.
+
+### <a name="pma-nuget-package"></a>Balíček NuGet PMA
+Nové knihovny DpiAwarness lze nalézt v balíčku NuGet [Microsoft. VisualStudio. DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) .
 
 ### <a name="recommended-tools"></a>Doporučené nástroje
-Následující nástroje vám mohou pomoci ladit problémy související s PMA v některé z různých zásobníky uživatelské rozhraní nepodporuje sady Visual Studio.
+Následující nástroje mohou přispět k ladění problémů souvisejících s PMA napříč některými různými zásobníky uživatelského rozhraní, které podporuje Visual Studio.
 
 #### <a name="snoop"></a>Sledování
-Sledování je nástroj ladění XAML, který má některé další funkce, která nemá integrované nástroje Visual Studio XAML. Kromě toho stará není potřeba aktivně ladění sady Visual Studio, abyste mohli zobrazit a upravit jeho uživatelské rozhraní WPF. Dva hlavní způsoby sledování může být užitečné při diagnostikování potíží PMA je pro ověření souřadnice logické umístění nebo velikost hranice a pro ověření rozhraní má správné DPI.
+Snoop je ladicí nástroj XAML, který obsahuje některé další funkce, které integrované nástroje Visual Studio XAML nemají. Snoop navíc nemusí aktivně ladit Visual Studio, aby bylo možné zobrazit a vylepšit jeho uživatelské rozhraní WPF. Dva hlavní způsoby ověřování pro modul Snoop mohou být užitečné pro diagnostiku problémů PMA je pro ověřování souřadnic logických umístění nebo mezí velikosti a pro ověření uživatelského rozhraní má správné rozlišení DPI.
  
-#### <a name="visual-studio-xaml-tools"></a>Nástroje sady Visual Studio XAML
-Třeba sledování můžete nástroje XAML v sadě Visual Studio usnadnění diagnostiky potíží se PMA. Po nalezení pravděpodobnou můžete nastavit zarážky a použít ke kontrole hranice uživatelského rozhraní a aktuální DPI Live Visual Tree okna, jakož i ladicích oknech.
+#### <a name="visual-studio-xaml-tools"></a>Visual Studio – nástroje XAML
+Podobně jako monitorování, mohou nástroje XAML v aplikaci Visual Studio pomáhat s diagnostikou PMA problémů. Po nalezení pravděpodobná příčinou můžete nastavit zarážky a použít okno živého vizuálního stromu stejně jako okna ladění, chcete-li zkontrolovat hranice uživatelského rozhraní a aktuální DPI.
 
-## <a name="strategies-for-fixing-pma-issues"></a>Strategie pro řešení problémů PMA
-### <a name="replacing-dpihelper-calls"></a>Nahrazení DpiHelper volání
-Ve většině případů opravit problémy uživatelského rozhraní v režimu PMA boils na nahrazení volání ve spravovaném kódu starého *Microsoft.VisualStudio.Utilities.Dpi.DpiHelper* a *Microsoft.VisualStudio.PlatformUI.DpiHelper*tříd pomocí volání do nového *Microsoft.VisualStudio.Utilities.DpiAwareness* pomocná třída. 
+## <a name="strategies-for-fixing-pma-issues"></a>Strategie pro řešení problémů s PMA
+
+### <a name="replace-dpihelper-calls"></a>Nahradit volání DpiHelper
+
+Ve většině případů je možné opravit problémy uživatelského rozhraní v režimu PMA a nahradit volání ve spravovaném kódu starými třídami *Microsoft. VisualStudio. Utilities. dpi. DpiHelper* a *Microsoft. VisualStudio. PlatformUI. DpiHelper* s voláními nového  *Pomocná třída Microsoft. VisualStudio. Utilities. DpiAwareness* 
 
 ```cs
 // Remove this kind of use:
@@ -167,7 +178,7 @@ Point deviceTopLeft = new Point(window.Left, window.Top).LogicalToDeviceUnits();
 Point deviceTopLeft = window.LogicalToDevicePoint(new Point(window.Left, window.Top));
 ```
 
-Pro nativní kód, bude mít nahrazení volání do starého *VsUI::CDpiHelper* třídy pomocí volání do nového *VsUI::CDpiAwareness* třídy. 
+V případě nativního kódu bude mít za následek nahrazení volání staré třídy *vsui nebyla rozpoznána:: CDpiHelper* s voláními nové třídy *Vsui nebyla rozpoznána:: CDpiAwareness* . 
 
 ```cpp
 // Remove this kind of use:
@@ -181,28 +192,26 @@ VsUI::CDpiAwareness::LogicalToDeviceUnitsX(m_hwnd, &cx);
 VsUI::CDpiAwareness::LogicalToDeviceUnitsY(m_hwnd, &cy);
 ```
 
-Nové třídy DpiAwareness a CDpiAwareness nabízí stejné jednotce převodu pomocné rutiny třídy DpiHelper ale vyžadovat další vstupní parametr: prvku uživatelského rozhraní, který chcete použít jako referenci pro operaci převodu. Je důležité si uvědomit, že pomocné rutiny pro škálování image neexistuje v nové DpiAwareness/CDpiAwareness pomocné rutiny a v případě potřeby [ImageService](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog?view=vs-2019) by místo toho používat.
+Nové třídy DpiAwareness a CDpiAwareness nabízejí stejné pomocníky převodu jednotek jako třídy DpiHelper, ale vyžadují další vstupní parametr: prvek uživatelského rozhraní, který se použije jako odkaz pro operaci převodu. Je důležité si uvědomit, že v nových pomocníkech DpiAwareness/CDpiAwareness neexistují a v případě potřeby by měl být místo toho použit [ImageService](../image-service-and-catalog.md) .
 
-Spravované třídy DpiAwareness nabízí pomocné rutiny pro Vizuály WPF, ovládacích prvků Windows Forms a Win32 HWND a HMONITORs (i ve formě IntPtrs), při nativní CDpiAwareness nabídky HWND a HMONITOR pomocné rutiny třídy.
+Spravovaná třída DpiAwareness nabízí nápovědu pro vizuály WPF, model Windows Forms ovládací prvky a Win32 HWND a HMONITORs (jak ve formě IntPtr), zatímco nativní třída CDpiAwareness nabízí pomocníky HWND a HMONITOR.
 
-### <a name="windows-forms-dialogs-windows-or-controls-displayed-in-the-wrong-dpiawarenesscontext"></a>Dialogová okna Windows Forms, windows nebo ovládací prvky zobrazují v chybě DpiAwarenessContext
-I potom, co úspěšném vztahy k nadřazeným položkám systému windows s jinou DpiAwarenessContexts (z důvodu výchozí chování Windows), může stále uvidí škálování problémy jako windows pomocí jiné DpiAwarenessContexts měřítko odlišně. Díky tomu uživatelé uvidí fuzzy/zarovnání textu nebo obrázků problémy v Uživatelském rozhraní.
+### <a name="windows-forms-dialogs-windows-or-controls-displayed-in-the-wrong-dpiawarenesscontext"></a>Model Windows Forms dialogová okna, okna nebo ovládací prvky zobrazené v nesprávném DpiAwarenessContext
+I po úspěšném vytvoření nadřazeného objektu Windows s různými DpiAwarenessContexts (kvůli výchozímu chování Windows) můžou uživatelé dál sledovat problémy s škálováním v případě, že se Windows s jiným škálováním DpiAwarenessContexts liší. Výsledkem je, že uživatelé mohou v uživatelském rozhraní zobrazit zarovnání nebo rozmazaný text nebo problémy s obrázkem.
 
-Řešením je nastavit správný obor DpiAwarenessContext pro všechna okna a ovládací prvky v aplikaci.
+Řešením je nastavit správný rozsah DpiAwarenessContext pro všechna okna a ovládací prvky v aplikaci.
 
-### <a name="top-level-mixed-mode-tlmm-dialogs"></a>Dialogová okna nejvyšší úrovně ve smíšeném režimu (TLMM)
-Při vytváření oknům nejvyšší úrovně, jako je například modální dialogová okna, je důležité zajistit, aby že vlákno je ve správném stavu před okna (a jeho popisovač) vytváří. Vlákno můžou být přepnuté do systému povědomí o použití pomocné rutiny CDpiScope v nativní nebo spravovaný DpiAwareness.EnterDpiScope pomocné rutiny v. (TLMM doporučujeme používat pro jiné WPF dialogů/windows.)
+### <a name="top-level-mixed-mode-tlmm-dialogs"></a>Dialogová okna nejvyšší úrovně smíšeného režimu (TLMM)
+Při vytváření oken nejvyšší úrovně, jako jsou modální dialogy, je důležité se ujistit, že je vlákno ve správném stavu před oknem (a jeho popisovač), který se vytváří. Vlákno může být zavedeno do sledování systému pomocí pomocníka CDpiScope v nativním režimu nebo pomocníka DpiAwareness. EnterDpiScope ve spravovaném počítači. (TLMM by se mělo obecně používat v dialogových oknech, které nejsou WPF nebo Windows.)
 
-### <a name="child-level-mixed-mode-clmm"></a>Podřízená úroveň ve smíšeném režimu (CLMM)
-Ve výchozím nastavení podřízená okna přijímat povědomí o DPI aktuální vlákno kontext Pokud vytvořen bez nadřazených nebo nadřazeného objektu DPI povědomí o kontextu při vytvoření s nadřazenou položku. Pokud chcete vytvořit podřízenou pomocí jiného kontextu povědomí o DPI než jeho nadřazený objekt, vlákno můžou být přepnuté do požadovaného kontextu povědomí o DPI. Potom podřízené se dají vytvářet bez nadřazených a ručně potomkům do nadřazeného okna.
+### <a name="child-level-mixed-mode-clmm"></a>Smíšený režim úrovně podřízenosti (CLMM)
+Ve výchozím nastavení obdrží podřízená okna aktuální kontext sledování DPI vlákna, pokud je vytvořeno bez nadřazeného objektu, nebo kontext sledování DPI nadřazeného objektu, pokud je vytvořen s nadřazeným prvkem. Chcete-li vytvořit podřízený objekt s jiným kontextem sledování DPI od jeho nadřazeného kontextu, vlákno lze umístit do požadovaného kontextu sledování DPI. Potom může být podřízený objekt vytvořen bez nadřazeného objektu a ručně znovu nadřazen do nadřazeného okna.
 
-#### <a name="clmm-issues"></a>CLMM problémy
-Většina práce výpočtu uživatelského rozhraní, ke které dochází jako součást hlavní zasílání zpráv smyčky nebo událost řetězce by již být spuštěné ve správném kontextu povědomí o DPI. Nicméně pokud souřadnice nebo výpočty velikosti dokončení mimo tyto hlavní pracovní postupy (např. během úlohu dobu nečinnosti, nebo mimo vlákno uživatelského rozhraní, může být nesprávný, což vede k misplacement uživatelského rozhraní nebo chybně velikosti problémy s aktuálním kontextu povědomí o DPI. Uvedení vlákna do správného stavu pro uživatelské rozhraní pracovní obecně vyřeší daný problém.
+#### <a name="clmm-issues"></a>Problémy CLMM
+Většina práce při výpočtu uživatelského rozhraní, která probíhá v rámci hlavní smyčky pro zasílání zpráv nebo řetěz událostí, by měla být spuštěná v pravém kontextu sledování DPI. Pokud jsou však výpočty souřadnice nebo velikosti provedeny mimo tyto hlavní pracovní postupy (například během úlohy nečinnosti nebo mimo vlákno uživatelského rozhraní, může být aktuální kontext sledování DPI nesprávný, což vede k problémům s chybou v uživatelském rozhraní nebo chybou chybného určení velikosti. Tento problém se obecně vyřeší tím, že se vlákno umístí do správného stavu pro práci s uživatelským rozhraním.
  
-#### <a name="opting-out-of-clmm"></a>Výslovné odhlášení z CLMM
-Pokud okno nástroje bez WPF se migruje pro úplnou podporu PMA, ji budou muset vyjádřit výslovný nesouhlas CLMM. Uděláte to tak, je potřeba implementovat nové rozhraní: IVsDpiAware.
-
-C#:
+#### <a name="opt-out-of-clmm"></a>Odhlásit z CLMM
+Pokud se migruje okno nástroje bez WPF, aby plně podporovalo PMA, bude se muset odhlásit z CLMM. K tomu je potřeba implementovat nové rozhraní: IVsDpiAware.
 
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
@@ -212,8 +221,6 @@ public interface IVsDpiAeware
     uint Mode {get;}
 }
 ```
- 
-C++:
 
 ```cpp
 IVsDpiAware : public IUnknown
@@ -223,9 +230,9 @@ IVsDpiAware : public IUnknown
 };
 ```
 
-Pro spravované jazyky, je nejlepším místem pro toto rozhraní implementují ve stejné třídě, která je odvozena z *Microsoft.VisualStudio.Shell.ToolWindowPane*. Pro C++, je nejlepším místem pro toto rozhraní implementují ve stejné třídě, která implementuje *IVsWindowPane* z vsshell.h.
+Pro spravované jazyky je nejvhodnější místo pro implementaci tohoto rozhraní ve stejné třídě, která je odvozena od třídy *Microsoft. VisualStudio. Shell. třídy ToolWindowPane*. Pro C++je nejvhodnější místo pro implementaci tohoto rozhraní ve stejné třídě, která implementuje *IVsWindowPane* z vsshell. h.
 
-Hodnota vrácená vlastností režimu rozhraní je __VSDPIMODE (a spravovat přetypování na uint v):
+Hodnota vrácená vlastností Mode v rozhraní je __VSDPIMODE (a přetypování na objekt uint ve spravovaném):
 
 ```cs
 enum __VSDPIMODE
@@ -236,17 +243,16 @@ enum __VSDPIMODE
 }
 ```
 
-- Neví, znamená, že panel nástrojů je potřeba zpracovat 96 DPI, Windows bude zpracovávat vertikální snížení jeho kapacity pro všechny ostatní dpi. Výsledné na obsah se mírně rozmazaný.
-- Systém znamená, že panel nástrojů je potřeba zpracovat DPI pro primární zobrazení DPI. Žádné zobrazení s odpovídající DPI bude vypadat zřetelný, ale pokud DPI se liší nebo změny během relace, Windows bude zpracovávat škálování a bude mírně rozmazaný.
-- PerMonitor znamená, že panel nástrojů je potřeba zpracovat všechny DPI na všech obrazovkách a vždy, když se změní DPI.
+- To znamená, že okno nástroje potřebuje zpracovat 96 DPI, Windows bude zpracovávat všechna ostatní dpi. Výsledkem je mírně rozmazaný obsah.
+- Systém znamená, že okno nástroje potřebuje pro rozlišení DPI primárního displeje zpracovat DPI. Jakékoli zobrazení s porovnávacím DPI bude vypadat ostře, ale pokud se rozlišení DPI liší nebo se změní během relace, Windows zpracuje měřítko a bude mírně rozmazaný.
+- PerMonitor znamená, že okno nástroje musí zpracovat všechny dpi všech displejů a vždy, když se změní DPI.
 
 > [!NOTE]
-> Visual Studio podporuje pouze PerMonitorV2 povědomí, tak hodnota výčtu PerMonitor překládá na hodnotu Windows DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2.
+> Visual Studio podporuje pouze sledování PerMonitorV2, takže hodnota výčtu PerMonitor se překládá na hodnotu Windows DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2.
 
-#### <a name="forcing-a-control-into-a-specific-dpiawarenesscontext"></a>Vynucení ovládacího prvku do konkrétní DpiAwarenessContext
-Starší verze uživatelského rozhraní, která není aktualizován pro podporu PMA režimu, může dále potřebovat menší vylepšení pro práci v režimu PMA je spuštěna sada Visual Studio. Jeden takový oprava zahrnuje, ujistěte se, že probíhá vytváření uživatelského rozhraní v pravém DpiAwarenessContext. Přinutit uživatelské rozhraní do konkrétní DpiAwarenessContext můžete zadat rozsah DPI následujícím kódem:
+#### <a name="force-a-control-into-a-specific-dpiawarenesscontext"></a>Vynucení ovládacího prvku na konkrétní DpiAwarenessContext
 
-C#:
+Starší uživatelské rozhraní, které není aktualizováno pro podporu režimu PMA, může stále vyžadovat drobné vylepšení, aby fungovalo, když je Visual Studio spuštěno v režimu PMA. Jedna taková oprava zahrnuje ujištění, že se uživatelské rozhraní vytváří ve správném DpiAwarenessContext. K vynucení uživatelského rozhraní do konkrétního DpiAwarenessContext můžete zadat rozsah DPI s následujícím kódem:
 
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
@@ -255,8 +261,6 @@ using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
     form.ShowDialog();
 }
 ```
-
-C++:
 
 ```cpp
 void MyClass::ShowDialog()
@@ -267,13 +271,14 @@ void MyClass::ShowDialog()
 ```
 
 > [!NOTE]
-> Vynucení DpiAwarenessContext funguje pouze na rozhraní WPF a nejvyšší úrovně dialogů WPF. Po vytvoření uživatelského rozhraní WPF, která se zajistit také jejich hostování v oknech nástrojů nebo návrháři, jakmile obsah je vložen do stromu rozhraní WPF získá převést na aktuální proces DpiAwarenessContext.
+> Vynucení DpiAwarenessContext funguje jenom v dialogových oknech, které nejsou WPF, a na nejvyšší úrovni. Při vytváření uživatelského rozhraní WPF, které má být hostováno v oknech nástrojů nebo návrhářích, jakmile bude obsah vložen do stromu uživatelského rozhraní WPF, bude převeden na aktuální DpiAwarenessContext procesu.
 
 ## <a name="known-issues"></a>Známé problémy
+
 ### <a name="windows-forms"></a>Windows Forms
 
-Optimalizovat pro nové scénáře ve smíšeném režimu, Windows Forms změnit způsob, jak ho vytvořit ovládací prvky a windows pokaždé, když se jejich nadřazené nebyl explicitně nastaven. Ovládací prvky bez explicitní nadřazené dříve, použít interní "parkovací oknem" jako dočasné nadřazený ovládací prvek nebo vytváří okno. 
+Pro optimalizaci pro nové scénáře se smíšeným režimem model Windows Forms změnit způsob vytváření ovládacích prvků a oken vždy, když jejich nadřazený objekt nebyl explicitně nastaven. Dříve ovládací prvky bez explicitního nadřazeného objektu používaly interní "parkovací okno" jako dočasný nadřazený prvek pro vytvoření ovládacího prvku nebo okna. 
 
-Před .NET 4.8 byl jednoho "parkovací okna", který získá jeho DpiAwarenessContext z aktuálního kontextu povědomí o DPI vláken v okamžiku vytvoření okna. Všechny ovládací prvky bez nadřazených položek dědí stejné DpiAwarenessContext jako okno parkovací při popisovač tohoto ovládacího prvku se vytvoří a bude potomkům nadřazený koncový/očekávanímu vývojářem aplikace. Pokud "Parkovací okno" vyšší DpiAwarenessContext než poslední nadřazené okno by způsobily selhání na základě časování.
+Před rozhraním .NET 4,8 bylo k dispozici jedno "parkovací okno", které získá své DpiAwarenessContext z aktuálního kontextu sledování rozlišení DPI vlákna v čase vytvoření okna. Jakékoli nenadřazené ovládací prvky zdědí stejný DpiAwarenessContext jako zaparkování, když je vytvořen popisovač ovládacího prvku a by měl být nadřízen pro finální/očekávaný nadřízený modul vývojář aplikace. To by způsobilo selhání založené na časování, pokud "zaparkované" okno má vyšší DpiAwarenessContext než konečné nadřazené okno.
 
-Od .NET 4.8 je nyní "Parkovací okno" pro každý DpiAwarenessContext, který je zjištěn. Hlavní rozdíl je, že DpiAwarenessContext pro ovládací prvek je do mezipaměti při vytvoření ovládacího prvku, ne v případě, že je vytvořen popisovač. To znamená, že celkové chování end je stejný, ale můžete vypnout, co dříve problém na základě časování do konzistentního problém. Také poskytuje vývojář aplikace další deterministické chování pro psaní kódu jejich uživatelského rozhraní a oborů správně.
+Od rozhraní .NET 4,8 je nyní "parkování" okno pro každý DpiAwarenessContext, který byl zjištěn. Dalším významným rozdílem je, že DpiAwarenessContext, který se používá pro ovládací prvek, je uložen do mezipaměti při vytvoření ovládacího prvku, nikoli při vytvoření popisovače. To znamená, že celkové chování je stejné, ale může aktivovat, které z nich se bude vydávat podle časování, do konzistentního problému. Poskytuje také vývojářům aplikací více deterministické chování při psaní kódu uživatelského rozhraní a jeho správnému určení jeho oboru.
