@@ -14,7 +14,7 @@ ms.lasthandoff: 07/29/2019
 ms.locfileid: "68605750"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Předplatná sady Visual Studio nabízená po spuštění
-Kvalifikovaná spuštění, která se připojují k programu Microsoft for Startups, [](https://visualstudio.microsoft.com/vs/pricing/)můžou získat 5 Visual Studio Enterprise měsíčních předplatných cloudu. 
+Kvalifikovaná spuštění, která se připojují k programu Microsoft for Startups, [měsíční cloudové předplatné](https://visualstudio.microsoft.com/vs/pricing/)můžou získat 5 Visual Studio Enterprise měsíčních předplatných cloudu. 
 
 ## <a name="subscription-details"></a>Podrobnosti o předplatném 
 Jedná se o stejná předplatná, která jsou poskytována komerčně, bez zvláštních omezení nebo omezení. Každé předplatné musí být přiřazeno koncovému uživateli (který je Licencovanému uživateli) předtím, než může uživatel spustit aplikaci Visual Studio a rozpoznat jako předplatitele Visual Studio Enterprise v Azure DevOps Services.

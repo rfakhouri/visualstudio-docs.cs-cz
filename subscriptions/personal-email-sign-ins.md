@@ -29,7 +29,7 @@ Během procesu aktivace předplatitele: Pro přihlášení se vyžaduje účet M
 Vzhledem k tomu, že migrace správce přebírá data z VLSC týkající se přihlašovací e-mailové adresy odběratele, aby naplnila nové prostředí pro správu předplatitele, mohl by nedávno migrované správce vidět tyto dřív neuvedené osobní účty. z důvodu změn v uživatelském rozhraní, které tyto informace podrobněji vystavily.
 
 ## <a name="solution"></a>Řešení
-Chcete-li tento problém vyřešit, budete muset upravit informace o odběrateli a aktualizovat e-mailové adresy pro přihlášení.  Úpravy mohou být provedeny pro jednotlivé předplatitele nebo hromadně. Úplné informace najdete v úpravách [](edit-license.md)předplatných.
+Chcete-li tento problém vyřešit, budete muset upravit informace o odběrateli a aktualizovat e-mailové adresy pro přihlášení.  Úpravy mohou být provedeny pro jednotlivé předplatitele nebo hromadně. Úplné informace najdete v úpravách [Upravit předplatné](edit-license.md)předplatných.
 
 ##  <a name="next-steps"></a>Další postup
 - Pokud jste aktualizovali e-mailové adresy odběratelů, můžete jim sdělit, že se změnily přihlašovací údaje.  Budou také dostávat e-maily s aktualizovanými informacemi.

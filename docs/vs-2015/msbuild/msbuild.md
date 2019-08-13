@@ -132,7 +132,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 </ItemGroup>  
 ```  
   
- Položky mohou být deklarovány pomocí zástupných znaků a mohou obsahovat další metadata pro pokročilejší scénáře sestavení. Další informace o položkách naleznete v [](../msbuild/msbuild-items.md)tématu Items.  
+ Položky mohou být deklarovány pomocí zástupných znaků a mohou obsahovat další metadata pro pokročilejší scénáře sestavení. Další informace o položkách naleznete v [Položky](../msbuild/msbuild-items.md)tématu Items.  
   
 ### <a name="BKMK_Tasks"></a>Provádění  
  Úlohy jsou jednotky spustitelného kódu, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] který projekty používají k provádění operací sestavení. Například úloha může kompilovat vstupní soubory nebo spustit externí nástroj. Úlohy se dají znovu použít a můžou je sdílet s různými vývojáři v různých projektech.  

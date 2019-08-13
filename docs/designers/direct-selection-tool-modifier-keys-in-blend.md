@@ -18,7 +18,7 @@ ms.locfileid: "68821818"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Přímý výběr modifikační klávesy nástrojů v Blend pro Visual Studio
 
-V následující tabulce jsou uvedeny zkratky, které můžete použít k úpravě tvaru existující cesty pomocí nástroje](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) **přímý výběr** nástrojů ![pro přímý výběr. Chcete-li přidat nebo odebrat body v existující cestě nebo připojit dvě existující cesty, použijte nástroj **pero** .
+V následující tabulce jsou uvedeny zkratky, které můžete použít k úpravě tvaru existující cesty pomocí nástroje přímý **výběr** nástrojů ![pro přímý výběr.](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) Chcete-li přidat nebo odebrat body v existující cestě nebo připojit dvě existující cesty, použijte nástroj **pero** .
 
 |K provedení této akce|Postup|Ukazatele|
 | - |-------------|-------------|
