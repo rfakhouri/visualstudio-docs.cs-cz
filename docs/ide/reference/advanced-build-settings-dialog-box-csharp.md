@@ -50,7 +50,7 @@ Určuje, jestli se mají hlásit chyby kompilátoru Microsoftu. Pokud se nastav�
 
 **Kontrolovat aritmetické přetečení a podtečení**
 
-Určuje, zda je celočíselný aritmetický příkaz, který není v rozsahu [](/dotnet/csharp/language-reference/keywords/checked) zkontrolovaných [](/dotnet/csharp/language-reference/keywords/unchecked) nebo nekontrolovaných klíčových slov a který má za následek, že hodnota mimo rozsah datového typu způsobí výjimku za běhu. Další informace naleznete v tématu [/checked (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
+Určuje, zda je celočíselný aritmetický příkaz, který není v rozsahu [kontrolovány](/dotnet/csharp/language-reference/keywords/checked) zkontrolovaných [nezaškrtnuto](/dotnet/csharp/language-reference/keywords/unchecked) nebo nekontrolovaných klíčových slov a který má za následek, že hodnota mimo rozsah datového typu způsobí výjimku za běhu. Další informace naleznete v tématu [/checked (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
 
 **Neodkazovat na mscorlib. dll**
 

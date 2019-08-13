@@ -22,7 +22,7 @@ Ukázková data můžete zobrazit v návrháři při přizpůsobování rozlože
 
 ## <a name="generate-sample-data"></a>Generování ukázkových dat
 
-Chcete-li generovat ukázková data, otevřete dokument XAML. Na panelu **data** klikněte na](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) tlačítko **vytvořit** ![ukázková data vytvořit ukázková data a pak zvolte **Nová ukázková data**.
+Chcete-li generovat ukázková data, otevřete dokument XAML. Na panelu **data** ![klikněte na](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) tlačítko **vytvořit** ukázková data vytvořit ukázková data a pak zvolte **Nová ukázková data**.
 
 Na panelu **data** definujte strukturu vašich dat a potom ji navažte na prvky uživatelského rozhraní na libovolné stránce.
 
@@ -38,7 +38,7 @@ Pokud chcete, aby se vaše ukázková data zobrazovala na stránkách, když apl
 
 Pokud jste již vytvořili třídy, které popisují strukturu vašich dat, můžete z nich vygenerovat ukázková data.
 
-Chcete-li generovat ukázková data z třídy, otevřete dokument XAML a poté na panelu **data** klikněte na](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) tlačítko **vytvořit** ![ukázková data vytvořit ukázková data a potom klikněte na možnost **Vytvořit Ukázková data z třídy**.
+Chcete-li generovat ukázková data z třídy, otevřete dokument XAML a poté na panelu **data** ![klikněte na](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) tlačítko **vytvořit** ukázková data vytvořit ukázková data a potom klikněte na možnost **Vytvořit Ukázková data z třídy**.
 
 **Podívejte se na krátké video:** ![Ikona](../designers/media/bldadminconsoleinitialconfigicon.PNG) přehrát [se smíchá s několika vazbami dat pomocí Blendu](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 

@@ -82,7 +82,7 @@ Toto zaškrtávací políčko je k dispozici pouze v případě, že jsou splně
 
 **Povolení nezabezpečeného kódu**
 
-Umožňuje kompilaci kódu, který [](/dotnet/csharp/language-reference/keywords/unsafe) používá klíčové slovo unsafe. Další informace naleznete v tématu [/unsafe (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
+Umožňuje kompilaci kódu, který [nebezpečný](/dotnet/csharp/language-reference/keywords/unsafe) používá klíčové slovo Další informace naleznete v tématu [/unsafe (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 
 **Optimalizovat kód**
 
