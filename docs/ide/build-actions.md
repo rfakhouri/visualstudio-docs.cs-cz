@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 061a3cce8d1d29b57c02de4506a809994bf12910
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: eac31e0fe12d703e11d286b629e7e690f641f4e3
+ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416497"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68981098"
 ---
 # <a name="build-actions"></a>Akce sestavení
 
@@ -30,13 +30,29 @@ Chcete-li nastavit akci sestavení pro soubor, otevřete vlastnosti souboru v ok
 
 ## <a name="build-action-values"></a>Sestavit hodnoty akcí
 
-Některé akce sestavení pro C# a Visual Basic soubory projektu jsou:
+Některé nejběžnější akce sestavení pro C# a Visual Basic soubory projektu jsou:
 
-* **Žádné** – soubor není součástí sestavení jakýmkoli způsobem. Tato hodnota se dá použít například pro soubory dokumentace, například soubory Readme.
-* **Kompilovat** – soubor je předán kompilátoru jako zdrojový soubor.
-* **Obsah** – soubor označený jako **obsah** lze načíst jako datový proud voláním <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>. Pro projekty ASP.NET jsou tyto soubory zahrnuty jako součást webu při jeho nasazení.
-* **Vložený prostředek** – soubor se předává kompilátoru jako prostředek, který se má vložit do sestavení. Můžete zavolat <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> pro čtení souboru ze sestavení.
-* **AdditionalFiles** – nezdrojový textový soubor, který se předává do kompilátoru C# nebo Visual Basic jako vstup. Tato akce sestavení slouží hlavně k poskytnutí vstupů [analyzátorům](../code-quality/roslyn-analyzers-overview.md) , na které se odkazuje v projektu za účelem ověření kvality kódu. Další informace najdete v tématu [použití dalších souborů](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).
+|Akce sestavení | Typy projektů | Popis |
+|-|-|
+| **AdditionalFiles** | C#Visual Basic | Nezdrojový textový soubor, který se předává kompilátoru C# nebo Visual Basic jako vstup. Tato akce sestavení slouží hlavně k poskytnutí vstupů [analyzátorům](../code-quality/roslyn-analyzers-overview.md) , na které se odkazuje v projektu za účelem ověření kvality kódu. Další informace najdete v tématu [použití dalších souborů](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
+| **ApplicationDefinition** | WPF | Soubor, který definuje vaši aplikaci. Při prvním vytvoření projektu se jedná o *App. XAML*. |
+| **CodeAnalysisDictionary** | .NET | Vlastní slovník slov, který je používán analýzou kódu pro kontrolu pravopisu. Viz [jak: Přizpůsobení slovníku analýzy kódu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
+| **Sestavení** | jakýmikoli | Soubor je předán kompilátoru jako zdrojový soubor.|
+| **Obsah** | .NET | Soubor označený jako **obsah** lze načíst jako datový proud voláním <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>. Pro projekty ASP.NET jsou tyto soubory zahrnuty jako součást webu při jeho nasazení.|
+| **Vazbě designdata** | WPF | Slouží k tomu, aby byly uživatelské ovládací prvky zobrazovány v době návrhu s použitím fiktivních typů a ukázkových dat, pro soubory ViewModel XAML. |
+| **DesignDataWithDesignTimeCreateable** | WPF | Podobně jako **vazbě designdata**, ale se skutečnými typy.  |
+| **Vložený prostředek** | .NET | Soubor je předán kompilátoru jako prostředek, který má být vložen do sestavení. Můžete zavolat <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> pro čtení souboru ze sestavení.|
+| **EntityDeploy** | .NET | Pro Entity Framework (EF). edmx soubory, které určují nasazení artefaktů EF. |
+| **Fakes** | .NET | Používá se pro testovací rozhraní napodobeniny od společnosti Microsoft. Viz [izolování testovaného kódu pomocí napodobenin společnosti Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md) |
+| **Žádné** | jakýmikoli | Soubor není součástí sestavení jakýmkoli způsobem. Tato hodnota se dá použít například pro soubory dokumentace, například soubory Readme.|
+| **Stránka** | WPF | Zkompilujte soubor XAML do binárního souboru. BAML pro rychlejší načítání za běhu. |
+| **Prostředek** | WPF | Určuje, že se má soubor vložit do souboru prostředků manifestu sestavení s příponou *. g.* Resources. |
+| **Vytváření** | .NET | Používá se pro soubor. přistupující objekt, který obsahuje seznam sestavených názvů souborů sestavení, jednu na řádek. Pro každé sestavení v seznamu vygenerujte veřejné třídy s názvy `ClassName_Accessor` , které jsou stejně jako originály, ale s veřejnými metodami namísto privátních metod. Používá se pro testování částí. |
+| **Úvodní obrazovka** | WPF | Určuje soubor obrázku, který se má zobrazit za běhu při spuštění aplikace. |
+| **XamlAppDef** | Windows Workflow Foundation | Vydá pokyn sestavení k sestavení souboru XAML pracovního postupu do sestavení pomocí vloženého pracovního postupu. |
+
+> [!NOTE]
+> Další akce sestavení mohou být definovány pro konkrétní typy projektů, takže seznam akcí sestavení závisí na typu projektu a hodnoty mohou být zobrazeny, které nejsou v tomto seznamu.
 
 ## <a name="see-also"></a>Viz také:
 
