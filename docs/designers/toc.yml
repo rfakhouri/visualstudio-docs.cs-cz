@@ -93,6 +93,10 @@
                   href: l2dbform-xaml-cs-source-code.md
 - name: Windows Forms
   items:
+    - name: Přehled nástroje Návrhář formulářů
+      href: windows-forms-designer-overview.md
+    - name: "Začínáme s\_nástrojem Návrhář formulářů"
+      href: walkthrough-windows-forms-designer.md
     - name: 'Kurz 1: Vytvoření prohlížeče obrázků (C#)'
       items:
         - name: Přehled

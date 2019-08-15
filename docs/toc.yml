@@ -996,6 +996,12 @@
                       href: ide/reference/options-text-editor-xml-formatting.md
                     - name: Různé
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
+            - name: Návrhář formulářů Windows
+              items:
+                - name: Obecné
+                  href: ide/reference/options-windows-forms-designer.md
+                - name: Přizpůsobení uživatelského rozhraní dat
+                  href: ide/reference/options-windows-forms-designer-data-ui-customization.md
             - name: Návrhář XAML
               href: ide/reference/xaml-designer.md
         - name: Výstup – okno
