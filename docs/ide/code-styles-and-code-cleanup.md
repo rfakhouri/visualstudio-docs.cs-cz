@@ -58,7 +58,7 @@ Možnosti nastavené v tomto okně se vztahují na váš účet přizpůsobení 
 
 ### <a name="preference-and-severity"></a>Priority a závažnosti
 
-U každého nastavení stylu kódu na této stránce můžete nastavit hodnoty **předvoleb** a závažnosti pomocí rozevíracích seznamu na každém řádku. Závažnost se dá nastavit **jenom**na refaktoring, **Návrh**, **varování**nebo **chybu**. Pokud chcete povolit [rychlé akce](../ide/quick-actions.md) pro styl kódu, zajistěte, aby bylo nastavení závažnosti nastaveno na jinou hodnotu než refaktoring. V případě, že se ![používá nepreferovaný styl, se v případě použití nepreferovaného](media/screwdriver.png) stylu zobrazí ikona pro **rychlé akce** ](media/light-bulb-dropdown.png)žárovky žárovky](media/error-bulb.png), ![chyba žárovky chyba žárovky nebo Screwdriver ![Screwdriver. a můžete zvolit možnost v seznamu **rychlé akce** pro automatické přepsání kódu na preferovaný styl.
+U každého nastavení stylu kódu na této stránce můžete nastavit hodnoty **předvoleb** a **závažnosti** pomocí rozevíracích seznamu na každém řádku. Závažnost se dá nastavit **jenom**na refaktoring, **Návrh**, **varování**nebo **chybu**. Pokud chcete povolit [rychlé akce](../ide/quick-actions.md) pro styl kódu, zajistěte, aby bylo **Vážnost** nastavení závažnosti nastaveno na jinou hodnotu než **refaktoring**. V případě, že se používá nepreferovaný styl, se v případě použití nepreferovaného stylu zobrazí ikona pro **rychlé akce** ![žárovky](media/light-bulb-dropdown.png), chyba žárovky ![chyba žárovky](media/error-bulb.png) nebo ![Screwdriver](media/screwdriver.png). a můžete zvolit možnost v seznamu **rychlé akce** pro automatické přepsání kódu na preferovaný styl.
 
 ## <a name="apply-code-styles"></a>Použít styly kódu
 
