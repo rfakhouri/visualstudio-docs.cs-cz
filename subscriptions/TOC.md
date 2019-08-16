@@ -1,7 +1,7 @@
 # [Předplatná sady Visual Studio](index.md)
 ## [Co je nového](whats-new-in-subscriptions.md)
 ## Předplatná
-### Nákup předplatných
+### Zakoupení předplatných
 #### [Maloobchod](https://visualstudio.microsoft.com/vs/pricing)
 #### Cloud 
 ##### [Přehled](vscloud-overview.md)
@@ -21,7 +21,7 @@
 #### [Problémy s přihlášením](sign-in-issues.md)
 #### [Anonymizace údajů o předplatitelích](anonymization.md)
 ### [Přehled portálu předplatných](using-the-subscriber-portal.md)
-### [Správa předplatných](manage-vs-subscriptions.md)
+### [Správa vašich předplatných](manage-vs-subscriptions.md)
 ### Výhody
 #### Nástroje
 ##### [Kredit Azure](vs-azure.md)
