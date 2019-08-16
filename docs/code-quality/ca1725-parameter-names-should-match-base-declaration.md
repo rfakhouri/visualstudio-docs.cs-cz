@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe62c830b7cd3454adbde8b1d3081af11ef1a6b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: b0d5afd33ffb73c47b0f373f70c56166dbfced6d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841652"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547123"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Názvy parametrů by měly odpovídat základní deklaraci
 
@@ -30,30 +30,30 @@ ms.locfileid: "65841652"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Název parametru v přepsání metody neodpovídá názvu parametru v základní deklaraci metody nebo název parametru v deklaraci metody rozhraní.
+Název parametru v přepsání metody se neshoduje s názvem parametru v základní deklaraci metody nebo s názvem parametru v deklaraci rozhraní metody.
 
-Ve výchozím nastavení, toto pravidlo pouze prohledá externě viditelným metodám, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vypadá pouze externě viditelnými metodami, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
 Konzistentní pojmenování parametrů v hierarchii přetěžování zvyšuje použitelnost přetížení metody. Název parametru, který se v odvozené metodě liší od názvu v základní deklaraci, může způsobit zmatení, zda se u metody jedná o přepis základní metody, nebo o nové přetížení metody.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení tohoto pravidla, přejmenujte parametr odpovídat základní deklaraci. Oprava je zásadní změny pro metody viditelné modelu COM.
+Chcete-li opravit porušení tohoto pravidla, přejmenujte parametr tak, aby odpovídal základní deklaraci. Oprava je zásadní změnou pro viditelné metody modelu COM.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Nepotlačujte upozornění tohoto pravidla s výjimkou metod viditelné modelu COM v knihovnách, které byly dříve součástí.
+Potlačit upozornění z tohoto pravidla s výjimkou viditelných metod modelu COM v knihovnách, které byly odeslány dříve.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1725.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (zásady). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (pojmenování). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).

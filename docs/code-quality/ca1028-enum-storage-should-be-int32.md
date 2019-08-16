@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: eee81a96e6841aa77e2056a95bd18979724b62e5
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c91de575abe8b19a5d8f6fca864e2bc452da7cb2
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842398"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547644"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: Úložiště výčtu by mělo být Int32
 
@@ -33,55 +33,55 @@ ms.locfileid: "65842398"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Základní typ výčtu není <xref:System.Int32?displayProperty=fullName>.
+Podkladový typ výčtu není <xref:System.Int32?displayProperty=fullName>.
 
-Ve výchozím nastavení, toto pravidlo pouze prohledá veřejné výčty, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vyhledává pouze veřejné výčty, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Výčet je typ hodnoty, který definuje množinu souvisejících pojmenovaných konstant. Ve výchozím nastavení <xref:System.Int32?displayProperty=fullName> datový typ se používá pro uložení konstantní hodnoty. I když toto můžete změnit základní typ, není nutné nebo doporučené pro většinu scénářů. Žádné zvýšení výkonu můžete dosáhnout použitím datový typ, který je menší než <xref:System.Int32>. Pokud nemůžete použít výchozí typ dat, měli byste použít jeden z systému CLS (Common Language)-kompatibilní celočíselných typů <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, nebo <xref:System.Int64> abyste měli jistotu, že všechny hodnoty výčtu lze znázornit v Kompatibilní se Specifikací CLS programovacích jazyků.
+Výčet je typ hodnoty, který definuje množinu souvisejících pojmenovaných konstant. Ve výchozím nastavení <xref:System.Int32?displayProperty=fullName> je datový typ použit k uložení hodnoty konstanty. I když tento základní typ můžete změnit, není nutné ani se pro většinu scénářů doporučuje. Nemusíte dosáhnout významného nárůstu výkonu pomocí datového typu, který je <xref:System.Int32>menší než. Pokud nemůžete použít výchozí datový typ, měli byste použít jeden z integrálních typů kompatibilních se specifikací CLS (Common Language System <xref:System.Byte>) <xref:System.Int16>, <xref:System.Int32>,, <xref:System.Int64> nebo k zajištění, aby všechny hodnoty výčtu mohly být zastoupeny v Programovací jazyky kompatibilní se specifikací CLS.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení tohoto pravidla, pokud existují problémy velikost nebo kompatibility, použijte <xref:System.Int32>. Pro situace, kdy <xref:System.Int32> není dostatečně velký pro uložení hodnot, použijte <xref:System.Int64>. Pokud zpětné kompatibility vyžaduje menší datový typ, použijte <xref:System.Byte> nebo <xref:System.Int16>.
+Chcete-li opravit porušení tohoto pravidla, pokud neexistují problémy s velikostí nebo kompatibilitou, použijte <xref:System.Int32>. V situacích, <xref:System.Int32> kdy není dostatečná velikost pro uložení hodnot, použijte. <xref:System.Int64> Pokud zpětné kompatibility vyžaduje menší datový typ, použijte <xref:System.Byte> nebo. <xref:System.Int16>
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Potlačit upozornění tohoto pravidla, pouze pokud to vyžaduje problémům se zpětnou kompatibilitou. V aplikacích selhání pro dosažení souladu s tímto pravidlem obvykle nezpůsobí potíže. V knihovnách, ve kterém jsou vyžadována vzájemná funkční spolupráce jazyka, nedodržení tohoto pravidla může nepříznivě ovlivnit vaši uživatelé.
+Potlačí upozornění z tohoto pravidla pouze v případě, že to vyžaduje problémy s zpětnou kompatibilitou. V aplikacích není selhání při dodržení tohoto pravidla obvykle způsobeno problémy. V knihovnách, kde je třeba vzájemná funkční spolupráce jazyků, neúspěšná nedodržení tohoto pravidla může negativně ovlivnit vaše uživatele.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1028.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (návrh). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (návrh). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
-## <a name="example-of-a-violation"></a>Příkladem porušení
+## <a name="example-of-a-violation"></a>Příklad porušení
 
-Následující příklad ukazuje dva výčty, které nepoužívají doporučené příslušný datový typ.
+Následující příklad ukazuje dva výčty, které nepoužívají doporučený podkladový datový typ.
 
 [!code-vb[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_1.vb)]
 [!code-csharp[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_1.cs)]
 
-## <a name="example-of-how-to-fix"></a>Příklad toho, jak opravit
+## <a name="example-of-how-to-fix"></a>Příklad opravy
 
-Následující příklad opravuje předchozí porušení změnou základní datový typ na <xref:System.Int32>.
+Následující příklad opravuje předchozí porušení změnou základního datového typu na <xref:System.Int32>.
 
 [!code-csharp[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_2.cs)]
 [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_2.vb)]
 
 ## <a name="related-rules"></a>Související pravidla
 
-- [CA1008: Výčty by měly mít nulovou hodnotu](../code-quality/ca1008-enums-should-have-zero-value.md)
-- [CA1027: Označte výčty pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA1008 Výčty by měly mít nulovou hodnotu](../code-quality/ca1008-enums-should-have-zero-value.md)
+- [CA1027: Označení výčtů pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 - [CA2217: Neoznačujte výčty pomocí FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700: Nepojmenovávejte výčtu hodnoty 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712: Nezačínejte hodnoty výčtu s názvem typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1700: Nejmenujte hodnoty výčtu ' rezervované '](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712: Neprefixovat hodnoty výčtu s názvem typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>Viz také:
 

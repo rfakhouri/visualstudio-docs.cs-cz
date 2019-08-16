@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf16a9edf25132aa8b58702f01563b8d7ccf109a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 44028caf027191846fa653db06abbe4027fdde8d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841495"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547086"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Názvy vlastností by se neměly shodovat s metodami Get
 
@@ -33,42 +33,42 @@ ms.locfileid: "65841495"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Název členu začíná na "Get" a shoduje s názvem vlastnosti. Například typ, který obsahuje metodu s názvem 'Getcolor –' a vlastnost s názvem 'Color' způsobit porušení pravidla.
+Název člena začíná na Get a jinak odpovídá názvu vlastnosti. Například typ, který obsahuje metodu s názvem GetColor a vlastnost s názvem Color způsobí porušení pravidla.
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné členy a vlastnosti, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vypadá pouze na externě viditelných členech a vlastnostech, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
 Metody „Get“ a vlastnosti by měly mít názvy, které zřetelně rozliší jejich funkce.
 
-Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. Taková konzistence snižuje čas, který vyžaduje další nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
+Zásady vytváření názvů poskytují běžný vzhled pro knihovny, které cílí na modul CLR (Common Language Runtime). Tato konzistence zkracuje dobu potřebnou k tomu, aby se seznámila s novou softwarovou knihovnou, a zvyšuje důvěru zákazníků, že se knihovna vyvinula někým, kdo má zkušenosti s vývojem spravovaného kódu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Změňte název tak, aby neodpovídá názvu metody, která je s předponou "Get".
+Změňte název tak, aby se neshodoval s názvem metody, která je s předponou "Get".
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
 Nepotlačujte upozornění na toto pravidlo.
 
 > [!NOTE]
-> Toto upozornění může vyloučit, je-li metody "Get" implementací rozhraní IExtenderProvider.
+> Toto upozornění může být vyloučeno, pokud je metoda get způsobena implementací rozhraní IExtenderProvider.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1721.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (zásady). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (pojmenování). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Příklad
 
-Následující příklad obsahuje metody a vlastnosti, která toto pravidlo porušují.
+Následující příklad obsahuje metodu a vlastnost, která toto pravidlo porušuje.
 
 [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
 [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]

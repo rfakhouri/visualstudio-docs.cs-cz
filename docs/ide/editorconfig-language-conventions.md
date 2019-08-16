@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 7b88824e6be7dbb216aa14ca9a22fd692474ec2f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787425"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551414"
 ---
 # <a name="language-conventions"></a>Konvence jazyka
 
@@ -1435,7 +1435,7 @@ csharp_prefer_simple_default_expression = true:suggestion
 
 #### <a name="csharp_prefer_simple_default_expression"></a>csharp\_prefer\_simple\_default_expression
 
-Toto pravidlo stylu se týká použití [ `default` literálu pro výrazy výchozích hodnot](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) , když kompilátor může odvodit typ výrazu.
+Toto pravidlo stylu se týká použití [ `default` literálu pro výrazy výchozích hodnot](/dotnet/csharp/language-reference/operators/default#default-literal) , když kompilátor může odvodit typ výrazu.
 
 |||
 |-|-|

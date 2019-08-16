@@ -1,8 +1,8 @@
 ---
-title: 'Postupy: Nainstalovat Visual Studio Tools for Office runtime redistributable'
+title: 'Postupy: Nainstalovat Visual Studio Tools for Office distribuovatelné za běhu'
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,45 +15,47 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41b6ec5c91fe9dc16a07703358ee0bb951efb490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5d9bb53fbdc3d6766dab47c654f0a43ad902b2f3
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412592"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551835"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Postupy: Nainstalovat Visual Studio Tools for Office runtime redistributable
-  Visual Studio 2010 Tools for Office runtime musí být nainstalovaný na každém počítači, na kterém běží řešení, které jsou vytvořeny pomocí nástroje Microsoft Office developer tools v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Modul runtime se nainstaluje automaticky při instalaci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]a Microsoft Office. Další informace najdete v tématu [Visual Studio Tools for Office runtime instalace scénáře](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Postupy: Nainstalovat Visual Studio Tools for Office distribuovatelné za běhu
+  Nástroje Visual Studio 2010 Tools for Office runtime musí být nainstalované na každém počítači, na kterém běží řešení vytvořená pomocí nástrojů systém Microsoft Office Developer Tools v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Modul runtime se nainstaluje automaticky při instalaci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]nástroje a systém Microsoft Office. Další informace najdete v tématu [scénáře instalace modulu runtime Visual Studio Tools for Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
- Je třeba postupovat podle pokynů pro ruční instalaci níže v následujících situacích:
+[!include[Add-ins note](includes/addinsnote.md)]
 
-- Je potřeba nainstalovat [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] na serveru. Například chcete použít <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy ke správě řešení na úrovni dokumentu na serveru.
+ Možná budete muset postupovat podle pokynů k ruční instalaci v následujících situacích:
 
-- Je potřeba nainstalovat modul runtime na počítači, který již má všechny další požadavky pro řešení Office nainstalována.
+- Musíte nainstalovat [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] na server. Například chcete použít <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídu ke správě řešení na úrovni dokumentu na serveru.
+
+- Je potřeba nainstalovat modul runtime na počítač, který už má nainstalované všechny ostatní předpoklady pro řešení Office.
 
     > [!NOTE]
-    > Musíte být správce na vývojovém počítači, aby instalaci rozhraní .NET Framework a [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+    > Abyste mohli nainstalovat .NET Framework a, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]musíte být správcem vývojového počítače.
 
-## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Chcete-li nainstalovat Visual Studio Tools for Office runtime
+## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Instalace modulu runtime Visual Studio Tools for Office
 
-1. Nainstalujte [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější.
+1. [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Nainstalujte nebo novější.
 
-    - Chcete-li stáhnout [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], naleznete v tématu [rozhraní Microsoft .NET Framework 4 (Webová instalační služba)](http://go.microsoft.com/fwlink/?LinkId=178957).
+    - Pokud si chcete [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]stáhnout, přečtěte si článek [Microsoft .NET Framework 4 (Webová instalační služba)](http://go.microsoft.com/fwlink/?LinkId=178957).
 
-    - Chcete-li stáhnout [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)], naleznete v tématu [rozhraní Microsoft .NET Framework 4 Client Profile (Webová instalační služba)](http://go.microsoft.com/fwlink/?LinkId=178958).
+    - Pokud si chcete [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]stáhnout, přečtěte si článek [Profil klienta Microsoft .NET Framework 4 (Webová instalační služba)](http://go.microsoft.com/fwlink/?LinkId=178958).
 
-    - Chcete-li stáhnout [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], naleznete v tématu [rozhraní Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).
+    - Informace o stažení [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]najdete v tématu [Microsoft .NET Framework 4,5](http://www.microsoft.com/download/details.aspx?id=30653).
 
-2. Spustit *vstor_redist.exe* k instalaci [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+2. Spusťte *vstor_redist. exe* a nainstalujte [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
-     Můžete stáhnout z těchto instalačních souborů [Visual Studio 2010 Tools for Office runtime](http://go.microsoft.com/fwlink/?LinkId=140384). Požadavky pro [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] odpovídat požadavky pro rozhraní .NET Framework.
+     Tyto instalační soubory si můžete stáhnout z [nástroje Visual Studio 2010 Tools for Office runtime](http://go.microsoft.com/fwlink/?LinkId=140384). Předpoklady pro [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] odpovídající požadavky pro .NET Framework.
 
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Obsahuje jazykové sady. Pokud instalace systému Windows je nastavena na jiný jazyk než angličtinu, můžete zobrazit zprávy modulu runtime ve stejném jazyce, který používáte pro Windows. Podobně pokud si koncoví uživatelé nainstalují [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] a spusťte instalaci systému Windows, která jsou nastavena na jiný jazyk než angličtinu, zpráv modulu runtime se zobrazí ve stejném jazyce jako Windows vašich řešení. V některých případech můžete potřebovat další jazykové sady. Například může být nutné další jazykové sady, pokud vaše kopie systému Windows používá více než jedno nastavení jazyka nebo přepnout na jiný jazyk, poté, co jste již nainstalovali [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Můžete najít jazykové sady v [Microsoft Visual Studio 2010 Tools pro Microsoft Office system (verze 4.0 modulu runtime) language pack](http://go.microsoft.com/fwlink/?LinkId=140386).
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zahrnuje jazykové sady. Pokud je vaše instalace systému Windows nastavená na jiný jazyk než angličtinu, můžete zobrazit zprávy za běhu ve stejném jazyce, který používáte pro Windows. Podobně platí, že pokud koncoví [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] uživatelé nainstalují a pak spouštějí vaše řešení na instalacích systému Windows, které jsou nastaveny na jiný jazyk než angličtinu, budou se zprávy za běhu zobrazovat ve stejném jazyce jako Windows. V některých případech možná budete potřebovat další jazykové sady. Můžete například potřebovat další jazykové sady, pokud vaše kopie systému Windows používá více než jedno nastavení jazyka nebo pokud jste již nainstalovali [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]sadu, jste přepnuli na jiný jazyk. Jazykové sady můžete najít v [Microsoft Visual Studio 2010 nástrojích pro systém Microsoft Office systému (verze 4,0 Runtime) pro jazykovou sadu](http://go.microsoft.com/fwlink/?LinkId=140386).
 
 ## <a name="see-also"></a>Viz také:
-- [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Začínáme &#40;s vývojem pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [Postupy: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
-- [Postupy: Instalace primárních sestavení vzájemné spolupráce Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
-- [Správa dokumentů na serveru s použitím třídy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
-- [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)
+- [Postupy: Nainstalovat primární spolupracující sestavení pro Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [Správa dokumentů na serveru pomocí třídy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
+- [Nasazení řešení pro systém Office](../vsto/deploying-an-office-solution.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58d746b022d5cc3f67b53e1dc845d81bf8409ec6
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 97f56e406d00de1891647c4211d21336f9d1a266
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841484"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547033"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Přepište rovnosti a operátory rovnosti u typů hodnot
 
@@ -27,52 +27,52 @@ ms.locfileid: "65841484"
 |-|-|
 |TypeName|OverrideEqualsAndOperatorEqualsOnValueTypes|
 |CheckId|CA1815|
-|Kategorie|Microsoft.Performance|
+|Kategorie|Microsoft. Performance|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Hodnotový typ nemůže přepsat <xref:System.Object.Equals%2A?displayProperty=fullName> nebo neimplementuje operátor rovnosti (==). Toto pravidlo nekontroluje výčty.
+Typ hodnoty nepřepisuje <xref:System.Object.Equals%2A?displayProperty=fullName> nebo neimplementuje operátor rovnosti (= =). Toto pravidlo nekontroluje výčty.
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné typy, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vyhledává pouze externě viditelné typy, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-U typů hodnot, zděděná implementace metody <xref:System.Object.Equals%2A> používá knihovnu reflexe a porovnává obsah všech polí. Reflexe je výpočetně náročná a porovnání rovnosti všech polí může být zbytečné. Pokud budou uživatelé k porovnání nebo řazení instance nebo používají jako klíče zatřiďovací tabulky, typ hodnoty by měly implementovat <xref:System.Object.Equals%2A>. Pokud svůj oblíbený programovací jazyk podporuje přetížení operátoru, měli byste také poskytnout implementaci pro operátory rovnosti a nerovnosti.
+U hodnotových typů zděděná implementace <xref:System.Object.Equals%2A> používá knihovnu reflexe a porovnává obsah všech polí. Reflexe je výpočetně náročná a porovnání rovnosti všech polí může být zbytečné. Pokud očekáváte, že uživatelé budou tyto instance porovnat nebo seřadit, nebo je použít jako klíče zatřiďovací tabulky, váš typ <xref:System.Object.Equals%2A>hodnoty by měl implementovat. Pokud váš programovací jazyk podporuje přetížení operátoru, měli byste také poskytnout implementaci operátorů rovnosti a nerovnosti.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení tohoto pravidla, zajišťovat implementaci rozhraní <xref:System.Object.Equals%2A>. Pokud je to možné, implementujte operátor rovnosti.
+Chcete-li opravit porušení tohoto pravidla, Poskytněte implementaci <xref:System.Object.Equals%2A>. Pokud můžete, implementujte operátor rovnosti.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Je bezpečné potlačit upozornění tohoto pravidla, pokud instance typu hodnoty nebudou porovnány, k sobě navzájem.
+Z tohoto pravidla je bezpečné potlačit upozornění, pokud se instance daného typu hodnoty nebudou porovnávat mezi sebou.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1815.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (výkon). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (výkon). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Příklad
 
-Následující kód ukazuje strukturu (typ hodnoty), který porušuje tato pravidla:
+Následující kód ukazuje strukturu (typ hodnoty), která porušuje toto pravidlo:
 
 [!code-csharp[FxCop.Performance.OverrideEqualsViolation#1](../code-quality/codesnippet/CSharp/ca1815-override-equals-and-operator-equals-on-value-types_1.cs)]
 
-Následující kód opravuje předchozí porušení tak, že přepíšete <xref:System.ValueType.Equals%2A?displayProperty=fullName> a implementace operátory rovnosti (==,! =):
+Následující kód opravuje předchozí porušení přepsáním <xref:System.ValueType.Equals%2A?displayProperty=fullName> a implementací operátorů rovnosti (= =,! =):
 
 [!code-csharp[FxCop.Performance.OverrideEqualsFixed#1](../code-quality/codesnippet/CSharp/ca1815-override-equals-and-operator-equals-on-value-types_2.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
 
-- [CA2224: Přepište equals při přetížení operátoru rovnosti](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
-- [CA2231: Přetižte operátor equals při přepsání ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-- [CA2226: Operátory by měly mít symetrické přetížení](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+- [CA2224: Přepište Equals při přetížení operátoru Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+- [CA2231: Operátor přetížení se rovná přepisování ValueType. Equals.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+- [CA2226 Operátory by měly mít symetrické přetížení](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
 ## <a name="see-also"></a>Viz také:
 

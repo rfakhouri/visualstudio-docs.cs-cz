@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9377dcf03bcbb8087d152ef98986f31c12c94c45
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 8b047669b962d5e38cd37132f84ae653ba30f9dc
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841931"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547291"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identifikátory by neměly mít nesprávnou příponu
 
@@ -30,11 +30,11 @@ ms.locfileid: "65841931"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
 Identifikátor nemá správnou příponu.
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné identifikátory, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vypadá pouze na externě viditelných identifikátorech, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
@@ -42,11 +42,11 @@ Pouze názvy typů, které rozšiřují určité základní typy nebo které imp
 
 Následující tabulka uvádí vyhrazené přípony a základní typy a rozhraní, ke kterým jsou přidruženy.
 
-|Přípona|Základní typ nebo rozhraní|
+|Auditování|Základní typ/rozhraní|
 |------------|--------------------------|
 |Atribut|<xref:System.Attribute?displayProperty=fullName>|
 |Shromažďování|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
-|Slovník|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
+|Slovníku|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
 |EventHandler|Delegát obslužné rutiny události|
 |Výjimka|<xref:System.Exception?displayProperty=fullName>|
@@ -55,19 +55,19 @@ Následující tabulka uvádí vyhrazené přípony a základní typy a rozhra
 |Rámec|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Stream|<xref:System.IO.Stream?displayProperty=fullName>|
 
-Kromě toho by měl následující přípony **není** použít:
+Kromě toho by se neměly používat následující přípony :
 
 - `Delegate`
 
 - `Enum`
 
-- `Impl` (použít `Core` místo)
+- `Impl`(místo `Core` toho použijte)
 
-- `Ex` nebo podobná přípona k odlišení starší verze stejného typu
+- `Ex`nebo podobná přípona pro odlišení od starší verze stejného typu
 
-Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. To snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
+Zásady vytváření názvů poskytují běžný vzhled pro knihovny, které cílí na modul CLR (Common Language Runtime). Tím se zmenší výuková křivka, která je požadována pro nové knihovny softwaru, a zvyšuje důvěru zákazníků, že knihovna byla vyvinuta někým, kdo má zkušenosti s vývojem spravovaného kódu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
 Odeberte příponu z názvu typu.
 
@@ -75,15 +75,15 @@ Odeberte příponu z názvu typu.
 
 Nepotlačujte upozornění tohoto pravidla, pokud přípona nemá v doméně aplikace jednoznačný význam.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1711.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (zásady). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (pojmenování). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Související pravidla
 
@@ -92,4 +92,4 @@ Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pra
 ## <a name="see-also"></a>Viz také:
 
 - [Atributy](/dotnet/standard/design-guidelines/attributes)
-- [Zpracování a generování událostí](/dotnet/standard/events/index)
+- [Zpracování a vyvolávání událostí](/dotnet/standard/events/index)

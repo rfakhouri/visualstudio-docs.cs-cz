@@ -1,5 +1,5 @@
 ---
-title: Stránky aplikace C# vlastnosti projektu
+title: Stránka aplikace – C# vlastnosti projektu
 ms.date: 10/30/2018
 ms.topic: reference
 f1_keywords:
@@ -13,110 +13,114 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160055"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551426"
 ---
 # <a name="application-page-project-designer-c"></a>Stránka Aplikace, návrhář projektu (C#)
 
-Použití **aplikace** stránku **Návrháře projektu** k určení nastavení aplikace a vlastnosti projektu.
+Použijte stránku **aplikace** **Návrháře projektu** k určení nastavení aplikace a vlastností projektu.
 
-Pro přístup k **aplikace** zvolte uzel projektu (ne **řešení** uzlu) v **Průzkumníka řešení**. Klikněte na tlačítko **projektu** > **vlastnosti** na řádku nabídek. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **aplikace** kartu.
+Pro přístup ke stránce **aplikace** vyberte uzel projektu (nikoli uzel **řešení** ) v **Průzkumník řešení**. Pak zvolte**vlastnosti** **projektu** > na řádku nabídek. Když se zobrazí **Návrhář projektu** , klikněte na kartu **aplikace** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="general-application-settings"></a>Obecné nastavení aplikace
 
-Tyto možnosti umožňují nakonfigurovat obecná nastavení pro aplikaci.
+Následující možnosti umožňují nakonfigurovat obecná nastavení aplikace.
 
 **Název sestavení**
 
-Určuje název výstupního souboru, který bude obsahovat manifest sestavení. Změna této vlastnosti změní také **název výstupního** vlastnost.
+Určuje název výstupního souboru, který bude obsahovat manifest sestavení. Změna této vlastnosti také změní vlastnost **Název výstupu** .
 
-Tuto změnu z příkazového řádku můžete také provést pomocí [/out (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).
+Tuto změnu můžete provést také z příkazového řádku pomocí [/out (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).
 
-Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
+Chcete-li získat přístup k této <xref:VSLangProj.ProjectProperties.AssemblyName%2A>vlastnosti programově, přečtěte si téma.
 
-**výchozí obor názvů**
+**Výchozí obor názvů**
 
 Určuje základní obor názvů pro soubory přidané do projektu.
 
-Zobrazit [obor názvů](/dotnet/csharp/language-reference/keywords/namespace) pro další informace o vytváření oborů názvů ve vašem kódu.
+Další informace o vytváření oborů názvů v kódu naleznete v tématu [obor názvů](/dotnet/csharp/language-reference/keywords/namespace) .
 
-Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
+Chcete-li získat přístup k této <xref:VSLangProj.ProjectProperties.RootNamespace%2A>vlastnosti programově, přečtěte si téma.
 
 **Cílová architektura**
 
-Určuje verzi rozhraní .NET, který aplikace cílí. Tato možnost může mít různé hodnoty v závislosti na tom, které verze rozhraní .NET jsou nainstalovány ve vašem počítači.
+Určuje verzi rozhraní .NET, na kterou aplikace cílí. Tato možnost může mít různé hodnoty v závislosti na tom, které verze rozhraní .NET jsou nainstalovány v počítači.
 
-Pro projekty .NET Framework výchozí hodnota odpovídá cílovou architekturu, který jste zadali při vytváření projektu.
+Pro .NET Framework projekty je výchozí hodnota shodná s cílovou architekturou, kterou jste zadali při vytváření projektu.
 
-Pro projekt .NET Core, který cílí na dostupné verze může vypadat takto:
+Pro projekt, který cílí na .NET Core, mohou být dostupné verze následující:
 
-![Cílová verze rozhraní framework pro projekt .NET Core](../media/application-target-framework.png)
+![Cílové verze rozhraní pro projekt .NET Core](../media/application-target-framework.png)
 
 > [!NOTE]
-> Požadované balíčky uvedené v [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md) se nastaví automaticky při prvním otevření dialogu. Pokud později změníte cílový rámec projektu, je třeba vybrat předpoklady ručně, aby odpovídaly novému cílovému rozhraní.
+> Požadované balíčky uvedené v [dialogovém okně požadavky](../../ide/reference/prerequisites-dialog-box.md) se nastaví automaticky při prvním otevření dialogového okna. Pokud následně změníte cílovou architekturu projektu, je nutné vybrat požadované součásti ručně, aby odpovídaly novému cílovému rozhraní.
 
-Další informace najdete v tématu [Framework – přehled cílení na](../../ide/visual-studio-multi-targeting-overview.md).
+Další informace najdete v tématu [Přehled cílení na rozhraní](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Typ výstupu**
 
-Určuje typ aplikace k sestavení. Hodnoty se liší v závislosti na typu projektu. Třeba **konzolovou aplikaci** projektu, můžete zadat **aplikace Windows**, **konzolovou aplikaci**, nebo **knihovny tříd** jako Typ výstupu.
+Určuje typ aplikace, která se má sestavit. Hodnoty se liší v závislosti na typu projektu. Například pro projekt konzolové aplikace můžete jako výstupní typ zadat **aplikaci systému Windows**, **konzolovou aplikaci**nebo **knihovnu tříd** .
 
-Pro projekt webové aplikace, je nutné zadat **knihovny tříd**.
+Pro projekt webové aplikace je nutné zadat **knihovnu tříd**.
 
-Další informace o **typ výstupu** vlastnost, naleznete v tématu [/target (C# – možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option).
+Další informace o vlastnosti **výstupního typu** naleznete v tématu [/target (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option).
 
-Informace o tom, jak programově přístup k této vlastnosti naleznete v tématu <xref:VSLangProj.ProjectProperties.OutputType%2A>.
+Informace o tom, jak získat přístup k této vlastnosti prostřednictvím <xref:VSLangProj.ProjectProperties.OutputType%2A>kódu programu, najdete v tématu.
 
 **Automaticky generovat přesměrování vazby**
 
-Přesměrování vazby jsou přidány do projektu, pokud vaše aplikace nebo její součásti odkazují na více verzí stejného sestavení. Pokud chcete ručně definovat přesměrování vazby v souboru projektu, zrušte zaškrtnutí možnosti **generovat automatické přesměrování vazby**.
+Přesměrování vazby jsou přidána do projektu, pokud vaše aplikace nebo její součásti odkazují na více než jednu verzi stejného sestavení. Chcete-li v souboru projektu definovat přesměrování vazby ručně, zrušte výběr **automatického generování přesměrování vazby**.
 
-Další informace o přesměrování najdete v tématu [přesměrování verze sestavení](/dotnet/framework/configure-apps/redirect-assembly-versions).
+Další informace o přesměrování naleznete v tématu [přesměrovávání verzí sestavení](/dotnet/framework/configure-apps/redirect-assembly-versions).
 
 **Spouštěcí objekt**
 
-Definuje vstupní bod, který bude volán při načtení aplikace. Obvykle je tato možnost nastavená buď hlavního formuláře v aplikaci nebo na `Main` proceduru, která se má spustit při spuštění aplikace. Vzhledem k tomu, že nemá vstupní bod knihovny tříd, jejich jedinou možností pro tuto vlastnost je **(Nenastaveno)** .
+Definuje vstupní bod, který se má volat při načtení aplikace. Obecně je tato možnost nastavena buď na hlavní formulář v aplikaci, nebo na `Main` proceduru, která by měla být spuštěna při spuštění aplikace. Vzhledem k tomu, že knihovny tříd nemají vstupní bod, je jejich jediná možnost pro tuto vlastnost **(nenastavená)** .
 
-Ve výchozím nastavení v rámci projektu aplikace WPF, je tato možnost nastavená na **(Nenastaveno)** . Další možností je \[názevprojektu] .app. V rámci projektu WPF musíte nastavit počáteční identifikátor URI pro načtení prostředku uživatelského rozhraní při spuštění aplikace. Chcete-li to provést, otevřete *Application.xaml* souboru ve vašem projektu a nastavit `StartupUri` vlastnost *.xaml* souborů ve vašem projektu, jako například *Window1.xaml*. Seznam prvků přijatelný kořenový najdete v tématu <xref:System.Windows.Application.StartupUri%2A>. Musíte také definovat `public static void Main()` metody ve třídě v projektu. Tato třída se objeví v **spouštěcí objekt** jako seznam *ProjectName.ClassName*. Pak můžete vybrat třídu jako spouštěcí objekt.
+Ve výchozím nastavení je v projektu aplikace WPF Tato možnost nastavená na **(Nenastaveno)** . Druhá možnost je \[ProjectName]. app. V projektu WPF musíte nastavit spouštěcí identifikátor URI pro načtení prostředku uživatelského rozhraní při spuštění aplikace. Provedete to tak, že otevřete soubor *Application. XAML* v projektu a nastavíte `StartupUri` vlastnost na soubor *. XAML* v projektu, například *Window1. XAML*. Seznam přijatelných kořenových elementů naleznete v <xref:System.Windows.Application.StartupUri%2A>tématu. Musíte také definovat `public static void Main()` metodu ve třídě v projektu. Tato třída se zobrazí v seznamu **spouštěcích objektů** jako *ProjectName. ClassName*. Pak můžete vybrat třídu jako spouštěcí objekt.
 
-Zobrazit [/Main (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) Další informace. Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+Další informace naleznete v tématu [/Main (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) . Chcete-li získat přístup k této <xref:VSLangProj.ProjectProperties.StartupObject%2A>vlastnosti programově, přečtěte si téma.
 
 **Informace o sestavení**
 
-Toto tlačítko otevře [informace o sestavení](../../ide/reference/assembly-information-dialog-box.md) dialogové okno.
+Toto tlačítko otevře dialogové okno [informace o sestavení](../../ide/reference/assembly-information-dialog-box.md) .
 
 ## <a name="resources"></a>Prostředky
 
-**Prostředky** možnosti vám pomohou nakonfigurovat nastavení prostředků pro vaši aplikaci.
+Možnosti **prostředků** vám pomůžou nakonfigurovat nastavení prostředků pro vaši aplikaci.
 
 **Ikona a manifest**
 
-Ve výchozím nastavení, je přepínač vybrán a **ikonu** a **Manifest** aktivnují možnosti. To umožňuje vybrat vlastní ikona nebo vyberte jiný generování manifestu možnosti. Nechte tento přepínač vybrat, pokud zadáváte soubor prostředků pro projekt.
+Ve výchozím nastavení je tento přepínač vybraný a jsou povolené **ikony** a možnosti **manifestu** . To vám umožní vybrat si vlastní ikonu nebo vybrat jiné možnosti generování manifestu. Pokud pro projekt neposkytnete soubor prostředků, ponechte tento přepínač vybraný.
 
 **Ikona**
 
-Nastaví *.ico* soubor, který chcete použít jako ikona programu. Klikněte na tlačítko **Procházet** k vyhledání existujícího obrázku nebo zadejte název souboru, který chcete. Zobrazit [/win32icon (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) Další informace.
+Nastaví soubor *. ico* , který chcete použít jako ikonu programu. Klikněte na tlačítko **Procházet** a vyhledejte existující grafiku nebo zadejte požadovaný název souboru. Další informace naleznete v tématu [/win32icon (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) .
 
-Programový přístup k této vlastnosti, najdete v článku <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+Chcete-li získat přístup k této <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>vlastnosti programově, přečtěte si téma.
+
+Informace o vytvoření ikony najdete v tématu [Editor obrázků pro ikony](/cpp/windows/image-editor-for-icons).
 
 **Manifest**
 
-Vybere možnost generování manifestu, když je aplikace spuštěná v systému Windows Vista v rámci řízení uživatelských účtů (UAC). Tato možnost může mít následující hodnoty:
+Vybere možnost generování manifestu, pokud je aplikace spuštěna v systému Windows Vista pod nástrojem Řízení uživatelských účtů (UAC). Tato možnost může mít následující hodnoty:
 
-- **Vložit manifest s výchozím nastavením**. Podporuje typické způsobem, ve kterém aplikace Visual Studio pracuje na Windows Vista, který je pro vložení informací o zabezpečení ve spustitelném souboru aplikace, určení, že `requestedExecutionLevel` být `AsInvoker`. Toto je výchozí možnost.
+- **Vloží manifest s výchozími nastaveními**. Podporuje typický způsob, jakým aplikace Visual Studio funguje v systému Windows Vista, což znamená vložení informací o zabezpečení do spustitelného souboru aplikace `requestedExecutionLevel` `AsInvoker`. tím se určí. Toto je výchozí možnost.
 
-- **Vytvořit aplikaci bez manifestu**. Tato metoda se označuje jako *virtualizace*. Tuto možnost použijte, pokud z důvodu kompatibility s dřívějšími aplikacemi.
+- **Vytvořit aplikaci bez manifestu** Tato metoda se označuje jako *virtualizace*. Tato možnost slouží k zajištění kompatibility se staršími aplikacemi.
 
-- **Properties\app.manifest**. Tato možnost je vyžadována pro aplikace nasazené pomocí technologie ClickOnce nebo bez registrace modelu COM Pokud publikujete třeba aplikaci pomocí nasazení ClickOnce **Manifest** se automaticky nastaví na tuto možnost.
+- **Properties\app.manifest**. Tato možnost je vyžadována pro aplikace nasazené pomocí technologie ClickOnce nebo bez registrace modelu COM. Pokud publikujete aplikaci pomocí nasazení ClickOnce, **manifest** je automaticky nastaven na tuto možnost.
 
 **Soubor prostředků**
 
-Když zadáváte soubor prostředků pro projekt, vyberte přepínač. Výběrem této možnosti zakáže **ikonu** a **Manifest** možnosti.
+Vyberte tento přepínač při poskytování souboru prostředků pro projekt. Výběrem této možnosti zakážete **ikonu** a možnosti **manifestu** .
 
-Zadejte název cesty nebo klikněte na tlačítko Procházet ( **...** ) Chcete-li přidat soubor prostředků Win32 do projektu.
+Zadejte název cesty nebo použijte tlačítko Procházet ( **...** ) a přidejte soubor prostředků Win32 do projektu.
+
+Další informace najdete v tématu [vytvoření souborů prostředků pro aplikace .NET](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).

@@ -1,5 +1,5 @@
 ---
-title: Názorný postup analýza spravovaného kódu na výskyt závad kódu | Dokumentace Microsoftu
+title: Návod k analýze spravovaného kódu pro vady kódu | Microsoft Docs
 ms.date: 01/29/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,34 +10,34 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 4a00fdb2a41a03554113f2ecb626185aab2c74d5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195295"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547994"
 ---
-# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Návod: Analýza statického kódu použijte k vyhledání vad kódu
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Návod: Hledání vad kódu pomocí statické analýzy kódu
 
-V tomto podrobném návodu analyzujete spravovaný projekt závad v kódu pomocí nástroje Analýza kódu.
+V tomto návodu budete analyzovat spravovaný projekt pro vady kódu pomocí nástroje Analýza kódu starší verze.
 
-Tento názorný postup vás provede procesem pomocí statické analýzy kódu pro analýzu sestavení .NET spravovat kód pro soulad s pokyny k návrhu rozhraní .NET.
+Tento článek vás provede procesem použití starší verze analýzy k analýze sestavení spravovaného kódu .NET pro účely souladu s pokyny pro návrh .NET.
 
 ## <a name="create-a-class-library"></a>Vytvoření knihovny tříd
 
-### <a name="to-create-a-class-library"></a>Chcete-li vytvořit knihovnu tříd
+### <a name="to-create-a-class-library"></a>Vytvoření knihovny tříd
 
 1. Na **souboru** nabídce zvolte **nový** > **projektu**.
 
-1. V **nový projekt** dialogového okna rozbalte **nainstalováno** > **Visual C#** a klikněte na tlačítko **Windows Desktop**.
+1. V dialogovém **okně Nový projekt** rozbalte položku nainstalovaná > **aplikace C#Visual** a pak zvolte možnost **plocha systému Windows**.
 
-1. Zvolte **knihovna tříd (.NET Framework)** šablony.
+1. Vyberte šablonu **knihovny tříd (.NET Framework)** .
 
-1. V **název** textového pole, typ **CodeAnalysisManagedDemo** a potom klikněte na tlačítko **OK**.
+1. Do textového pole **název** zadejte **CodeAnalysisManagedDemo** a pak klikněte na **OK**.
 
-1. Po vytvoření projektu, otevřete *Class1.cs* souboru.
+1. Po vytvoření projektu otevřete soubor *Class1.cs* .
 
-1. Nahraďte existující text v Class1.cs následujícím kódem:
+1. Existující text v Class1.cs nahraďte následujícím kódem:
 
    ```csharp
    using System;
@@ -55,107 +55,107 @@ Tento názorný postup vás provede procesem pomocí statické analýzy kódu pr
 
 1. Uložte soubor Class1.cs.
 
-## <a name="analyze-the-project"></a>Analýza projektu
+## <a name="analyze-the-project"></a>Analyzovat projekt
 
-### <a name="to-analyze-a-managed-project-for-code-defects"></a>K analýze spravovaných projektů závad v kódu
+### <a name="to-analyze-a-managed-project-for-code-defects"></a>Analýza spravovaného projektu pro vady kódu
 
-1. Vyberte projekt CodeAnalysisManagedDemo v **Průzkumníka řešení**.
+1. Vyberte projekt CodeAnalysisManagedDemo v **Průzkumník řešení**.
 
-1. Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
+1. V nabídce **projekt** klikněte na příkaz **vlastnosti**.
 
-     Zobrazí se stránka Vlastnosti CodeAnalysisManagedDemo.
+     Zobrazí se stránka vlastnosti CodeAnalysisManagedDemo.
 
-1. Zvolte **analýzy kódu** kartu.
+1. Klikněte na kartu **Analýza kódu** .
 
-1. Ujistěte se, že **povolit analýzu kódu na sestavení** je zaškrtnuté políčko.
+1. Ujistěte se, že je zaškrtnuté políčko **Povolit analýzu kódu při sestavení** .
 
-1. Z **spustit tuto sadu pravidel** rozevíracího seznamu vyberte **všechna pravidla společnosti Microsoft**.
+1. V rozevíracím seznamu **Spustit tuto sadu pravidel** vyberte možnost **Microsoft všechna pravidla**.
 
-1. Na **souboru** nabídky, klikněte na tlačítko **uložit vybrané položky**a pak zavřete vlastnosti stránky.
+1. V nabídce **soubor** klikněte na příkaz **Uložit vybrané položky**a poté zavřete stránky vlastnosti.
 
-1. Na **sestavení** nabídky, klikněte na tlačítko **sestavení CodeAnalysisManagedDemo**.
+1. V nabídce **sestavení** klikněte na příkaz **sestavit CodeAnalysisManagedDemo**.
 
-    Upozornění sestavení projektu CodeAnalysisManagedDemo jsou uvedeny v **seznam chyb** a **výstup** systému windows.
+    Upozornění sestavení projektu CodeAnalysisManagedDemo se zobrazují v oknech **Seznam chyb** a **výstup** .
 
-## <a name="correct-the-code-analysis-issues"></a>Opravte problémy s analýzou kódu
+## <a name="correct-the-code-analysis-issues"></a>Opravte potíže s analýzou kódu
 
-### <a name="to-correct-code-analysis-rule-violations"></a>Chcete-li opravit porušení pravidel analýzy kódu
+### <a name="to-correct-code-analysis-rule-violations"></a>Oprava porušení pravidel pro analýzu kódu
 
-1. Na **zobrazení** nabídce zvolte **seznam chyb**.
+1. V nabídce **zobrazení** vyberte možnost **Seznam chyb**.
 
-    V závislosti na profil pro vývojáře, který jste zvolili, možná budete muset odkazovat na **ostatní Windows** na **zobrazení** nabídky a klikněte na tlačítko **seznam chyb**.
+    V závislosti na zvoleném profilu vývojáře možná budete muset v nabídce **zobrazení** Ukázat na **jiné okna** a pak vybrat **Seznam chyb**.
 
-1. V **Průzkumníka řešení**, zvolte **zobrazit všechny soubory**.
+1. V **Průzkumník řešení**vyberte možnost **Zobrazit všechny soubory**.
 
-1. Rozbalte uzel vlastnosti a pak otevřete *AssemblyInfo.cs* souboru.
+1. Rozbalte uzel vlastnosti a pak otevřete soubor *AssemblyInfo.cs* .
 
-1. Chcete-li opravit upozornění použijte následující tipy:
+1. Upozornění můžete opravit pomocí následujících tipů:
 
-   [CA1014: Označte sestavení pomocí atributu CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: 'ukázka' by měla být označena pomocí CLSCompliantAttribute a jeho hodnota by měla mít hodnotu true.
+   [CA1014: Označte sestavení pomocí CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft. Design: demo by měla být označená CLSCompliantAttribute a její hodnota by měla být true.
 
-   1. Přidejte kód `using System;` soubor AssemblyInfo.cs.
+   1. Přidejte kód `using System;` do souboru AssemblyInfo.cs.
 
-   1. V dalším kroku přidejte kód `[assembly: CLSCompliant(true)]` na konec souboru AssemblyInfo.cs.
+   1. Dále přidejte kód `[assembly: CLSCompliant(true)]` na konec souboru AssemblyInfo.cs.
 
-   [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Přidejte následující konstruktor k této třídě: veřejné demo(String)
+   [CA1032: Implementujte standardní konstruktory](../code-quality/ca1032-implement-standard-exception-constructors.md)výjimky: Microsoft.Design: Do této třídy přidejte následující konstruktor: public demo (String)
 
    1. Přidejte konstruktor `public demo (String s) : base(s) { }` do třídy `demo`.
 
-   [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Přidejte následující konstruktor k této třídě: veřejné ukázkové (String, výjimka)
+   [CA1032: Implementujte standardní konstruktory](../code-quality/ca1032-implement-standard-exception-constructors.md)výjimky: Microsoft.Design: Do této třídy přidejte následující konstruktor: public demo (řetězec, výjimka)
 
    1. Přidejte konstruktor `public demo (String s, Exception e) : base(s, e) { }` do třídy `demo`.
 
-   [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Přidejte následující konstruktor k této třídě: chráněné ukázka (SerializationInfo, StreamingContext)
+   [CA1032: Implementujte standardní konstruktory](../code-quality/ca1032-implement-standard-exception-constructors.md)výjimky: Microsoft.Design: Do této třídy přidejte následující konstruktor: protected demo (SerializationInfo, StreamingContext)
 
    1. Přidejte kód `using System.Runtime.Serialization;` na začátek souboru Class1.cs.
 
-   1. V dalším kroku přidejte konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   1. Dále přidejte konstruktor`protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
-   [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Přidejte následující konstruktor k této třídě: veřejné demo()
+   [CA1032: Implementujte standardní konstruktory](../code-quality/ca1032-implement-standard-exception-constructors.md)výjimky: Microsoft.Design: Do této třídy přidejte následující konstruktor: public demo ()
 
-   1. Přidejte konstruktor `public demo () : base() { }` do třídy `demo` **.**
+   1. Přidejte konstruktor `public demo () : base() { }` do třídy **.** `demo`
 
-   [CA1709: Identifikátory by měly být správně formátováno](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Opravte použití malých a velkých oboru názvů názvu 'testCode' pomocí změny na "TestCode".
+   [CA1709: Identifikátory by se měly použita](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)správně: Microsoft. pojmenování: Opravte použití malých a velkých písmen názvu oboru názvů ' testCode ', a to změnou na ' TestCode '.
 
-   1. Změna velikosti písmen názvů `testCode` k `TestCode`.
+   1. Změňte velikost písmen oboru názvů `testCode` na. `TestCode`
 
-   [CA1709: Identifikátory by měly být správně formátováno](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Opravte použití malých a velkých název typu 'ukázku"změnou"Ukázka".
+   [CA1709: Identifikátory by se měly použita](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)správně: Microsoft. pojmenování: Opravte použití malých a velkých písmen typu "demo", a to změnou na demo.
 
-   1. Název členu, který chcete změnit `Demo`.
+   1. Změňte název člena na `Demo`.
 
-   [CA1709: Identifikátory by měly být správně formátováno](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Opravte použití malých a velkých název člena 'item' pomocí změny na "Položka".
+   [CA1709: Identifikátory by se měly použita](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)správně: Microsoft. pojmenování: Opravte použití malých a velkých písmen názvu člena ' Item ' změnou na ' Item '.
 
-   1. Název členu, který chcete změnit `Item`.
+   1. Změňte název člena na `Item`.
 
-   [CA1710: Identifikátory by měly mít správnou příponu](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Přejmenujte "testCode.demo" za účelem v 'Exception'.
+   [CA1710: Identifikátory by měly mít správnou](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)příponu: Microsoft. pojmenování: Přejmenujte ' testCode. Demo ' na konec ' Exception '.
 
-   1. Změnit název třídy a jejích konstruktorů k `DemoException`.
+   1. Změňte název třídy a jejích konstruktorů na `DemoException`.
 
-   [CA2210: Sestavení by měly mít platné silné názvy](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): "CodeAnalysisManagedDemo" podepište klíče silného názvu.
+   [CA2210: Sestavení by měly mít platné silné](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)názvy: Podepište ' CodeAnalysisManagedDemo ' pomocí klíče silného názvu.
 
-   1. Na **projektu** nabídce zvolte **CodeAnalysisManagedDemo vlastnosti**.
+   1. V nabídce **projekt** vyberte **vlastnosti CodeAnalysisManagedDemo**.
 
-      Zobrazí vlastnosti projektu.
+      Zobrazí se vlastnosti projektu.
 
-   1. Zvolte **podepisování** kartu.
+   1. Klikněte na kartu **podepisování** .
 
-   1. Vyberte **podepsat sestavení** zaškrtávací políčko.
+   1. Zaškrtněte políčko **podepsat sestavení** .
 
-   1. V **vybrat soubor klíče název řetězce** seznamu vyberte  **\<nový … >** .
+   1. V seznamu **Vyberte soubor klíče s názvem řetězce** vyberte možnost  **\<nový... >** .
 
-      **Vytvořit klíč se silným názvem** zobrazí se dialogové okno.
+      Zobrazí se dialogové okno **vytvořit klíč se silným názvem** .
 
-   1. V **název souboru klíče**, zadejte TestKey.
+   1. Do pole **název souboru klíče**zadejte TestKey.
 
-   1. Zadejte heslo a klikněte na tlačítko **OK**.
+   1. Zadejte heslo a klikněte na **tlačítko OK**.
 
-   1. Na **souboru** nabídce zvolte **uložit vybrané položky**a pak zavřete stránku vlastností.
+   1. V nabídce **soubor** klikněte na příkaz **Uložit vybrané položky**a poté zavřete stránky vlastností.
 
-   [CA2237: Označte typy ISerializable pomocí SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Přidejte atribut [Serializable] na typ 'ukázka' protože tento typ implementuje ISerializable.
+   [CA2237: Označte typy ISerializable pomocí SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft. Usage: Přidejte atribut [serializovatelný] do typu demo, protože tento typ implementuje ISerializable.
 
-   1. Přidat `[Serializable ()]` atribut třídy `demo`.
+   1. Přidejte atribut do třídy `demo`. `[Serializable ()]`
 
-   Po dokončení změny souboru Class1.cs by měl vypadat nějak takto:
+   Až změny dokončíte, soubor Class1.cs by měl vypadat takto:
 
    ```csharp
    using System;
@@ -178,19 +178,19 @@ Tento názorný postup vás provede procesem pomocí statické analýzy kódu pr
    }
    ```
 
-1. Sestavte projekt znovu.
+1. Znovu sestavte projekt.
 
-## <a name="exclude-code-analysis-warnings"></a>Vyloučit upozornění analýzy kódu
+## <a name="exclude-code-analysis-warnings"></a>Upozornění analýzy kódu vyloučení
 
-1. Pro každý zbývající upozornění postupujte takto:
+1. Pro každé ze zbývajících upozornění proveďte následující:
 
-    1. Výběr varování v **seznam chyb**.
+    1. Vyberte upozornění v **Seznam chyb**.
 
-    1. V místní nabídce (kontextová nabídka), zvolte **potlačit** > **v souboru potlačení**.
+    1. V nabídce kliknutím pravým tlačítkem (kontextová nabídka) vyberte **potlačit** > **v souboru potlačení**.
 
-1. Sestavte projekt znovu.
+1. Znovu sestavte projekt.
 
-     Projekt se sestaví bez žádná upozornění ani chyby.
+     Projekt se vytváří bez upozornění a chyb.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ca381d88524535ad042b5bd3efda25f8cc350fa4
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: aeec6e202ccb7f3075b04d29bdef7d171ae545f7
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842128"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547683"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Použijte celočíselný nebo řetězcový argument pro indexery
 
@@ -34,37 +34,37 @@ ms.locfileid: "65842128"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Typ obsahuje indexer, který používá typ indexu jiné než <xref:System.Int32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName>, nebo <xref:System.String?displayProperty=fullName>.
+Typ obsahuje indexer, který používá jiný typ indexu <xref:System.Int32?displayProperty=fullName>než, <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName>nebo <xref:System.String?displayProperty=fullName>.
 
-Ve výchozím nastavení, toto pravidlo pouze prohledá veřejné a chráněné typy, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vyhledává pouze veřejné a chráněné typy, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Indexery, tj. indexované vlastnosti, by měly používat celočíselné typy nebo typy řetězců pro index. Tyto typy se obvykle používají pro indexování datových struktur a zlepšit tak použitelnost knihovny. Použití <xref:System.Object> typ by měl být omezeno na ty případy, ve kterém nejde zadat konkrétní typ celé číslo nebo řetězec v době návrhu. Pokud návrhu vyžaduje další typy pro index, zvažte, zda typ představuje logické datové úložiště. Pokud to nepředstavuje logické datové úložiště, použijte metodu.
+Indexery, tj. indexované vlastnosti, by měly pro index používat celočíselné nebo řetězcové typy. Tyto typy jsou obvykle používány pro indexování datových struktur a zvyšují použitelnost knihovny. <xref:System.Object> Použití typu by mělo být omezeno na ty případy, kde konkrétní celé číslo nebo typ řetězce nelze zadat v době návrhu. Pokud návrh vyžaduje jiné typy pro index, je třeba znovu zvážit, zda typ představuje logické úložiště dat. Pokud nepředstavuje logické úložiště dat, použijte metodu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení tohoto pravidla, změnit index typu celé číslo nebo řetězec nebo používat metodu místo indexeru.
+Chcete-li opravit porušení tohoto pravidla, změňte index na celé číslo nebo typ řetězce nebo použijte metodu místo indexeru.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Potlačit upozornění tohoto pravidla až po pečlivého zvážení potřebu nestandardní indexeru.
+Potlačí upozornění z tohoto pravidla až po pečlivém zvážení nutnosti nestandardního indexeru.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1043.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (návrh). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (návrh). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Příklad
 
-Následující příklad ukazuje, indexer, který se používá <xref:System.Int32> indexu.
+Následující příklad ukazuje indexer, který používá <xref:System.Int32> index.
 
 [!code-csharp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CSharp/ca1043-use-integral-or-string-argument-for-indexers_1.cs)]
 [!code-cpp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CPP/ca1043-use-integral-or-string-argument-for-indexers_1.cpp)]

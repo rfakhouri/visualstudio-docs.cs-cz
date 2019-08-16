@@ -10,17 +10,17 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3231efbac4f4c101632e281fd54718e688bb885
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: a44465b5f3daf89e915a5f6f5e7abe6c856598e5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195146"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546919"
 ---
-# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Přehled analýzy kódu pro spravovaný kód v sadě Visual Studio
+# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Přehled analýzy kódu pro spravovaný kód v aplikaci Visual Studio
 
-Visual Studio můžete provést analýzu kódu spravovaného kódu dvěma způsoby: pomocí [binární analyzátory](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), označovaný také jako statické analýzy FxCop spravovaných sestavení a s další moderní [analyzátory Roslyn](../code-quality/roslyn-analyzers-overview.md). Analyzátory Roslyn, které analyzovat živé kódu při psaní, nahraďte statické analýzy FxCop, který pouze po sestavení provede analýzu vašeho kódu.  
+Visual Studio může analyzovat kód spravovaného kódu dvěma způsoby: pomocí [starší verze analýzy](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), označované také jako FxCop statická analýza spravovaných sestavení a s pokročilejšími [analyzátory kódu](../code-quality/roslyn-analyzers-overview.md)založeného na .NET Compiler Platform. Analyzátory kódu založené na .NET Compiler Platform, které analyzují kód živě při psaní, nahradí starší analýzu statického kódu FxCop, která analyzuje jenom zkompilovaný kód.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Přehled analyzátory Roslyn](../code-quality/roslyn-analyzers-overview.md)
+- [Přehled analyzátorů založených na .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md)

@@ -1,6 +1,6 @@
 ---
 title: Vývoj řešení pro systém Office
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,59 +14,58 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d4ee308c5c689644c9fd9ca6e85493a081e2cdf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8ede09f18808eda22c747ac28e3c279fc43266bc
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440753"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551573"
 ---
 # <a name="develop-office-solutions"></a>Vývoj řešení pro systém Office
-  Po návrh projektu pomocí nástroje Office developer tools v sadě Visual Studio a nastavit soubory projektu, můžete začít se soustředit na implementaci kódu a vlastní uživatelské rozhraní (UI).
+  Po návrhu projektu pomocí nástrojů Office Developer Tools v sadě Visual Studio a nastavení souborů projektu můžete začít soustředit na implementaci kódu a vlastního uživatelského rozhraní (UI).
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-> [!NOTE]
-> Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="office-solutions-programming-model"></a>Programovací model řešení pro systém Office
- Objektový model Office poskytuje širokou škálu objekty, které můžete programovat proti. Pokaždé, když se program řešení pro systém Office pomocí spravovaného kódu, můžete napsat kód, který používá typy v sestavení primární spolupráce sady Office. V řešení, které vytvoříte pomocí šablony projektů pro Office v sadě Visual Studio také napsat kód přímo proti generované třídy ve vašem projektu. Další informace najdete v tématu [psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md).
+ Objektový model Office zpřístupňuje celou řadu objektů, na které můžete programovat. Pokaždé, když budete programovat řešení Office pomocí spravovaného kódu, napíšete kód, který používá typy v primárních sestaveních vzájemné spolupráce pro Office. V řešeních, která vytvoříte pomocí šablon projektů Office v sadě Visual Studio, můžete také napsat kód přímo proti generovaným třídám v projektu. Další informace najdete v tématu [psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md).
 
-## <a name="program-different-types-of-office-solutions"></a>Program různé druhy řešení pro systém Office
- Typ řešení, které vytváříte určuje funkcí, které můžete použít ve vašem projektu. Například můžete přidat ovládací prvky Windows Forms a ovládacích prvků rozšířenou Office (s názvem *hostování ovládacích prvků*) do přizpůsobení na úrovni dokumentu přetažením položek z **nástrojů** v sadě Visual Studio v době návrhu . Nicméně pokud vyvíjíte doplňku VSTO, pouze přidáte tyto druhy ovládacích prvků do dokumentů za běhu, napsáním kódu.
+## <a name="program-different-types-of-office-solutions"></a>Programování různých typů řešení pro systém Office
+ Typ řešení, které vytváříte, určuje, které funkce můžete v projektu použít. Můžete například přidat ovládací prvky model Windows Forms a rozšířené ovládací prvky Office (pojmenované *ovládací prvky hostitele*) do přizpůsobení na úrovni dokumentu přetažením položek z **panelu nástrojů v sadě** Visual Studio v době návrhu. Pokud ale vyvíjíte doplněk VSTO, můžete do dokumentů za běhu přidat jenom tyto ovládací prvky, a to tak, že napíšete kód.
 
- Další informace o funkcích, které jsou specifické pro různé druhy řešení naleznete v následujících tématech:
+ Další informace o funkcích, které jsou specifické pro různé typy řešení, naleznete v následujících tématech:
 
-- [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md).
+- [Programové doplňky VSTO](../vsto/programming-vsto-add-ins.md)
 
-- [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md).
+- [Přizpůsobení na úrovni dokumentu programu](../vsto/programming-document-level-customizations.md).
 
 - [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md).
 
-  Obecné informace, které vám pomohou při plánování řešení systému Office a postupy, které vám pomůžou vytvořit projekty, naleznete v tématu [návrhu a vytvořte řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).
+  Základní informace, které vám pomůžou plánovat řešení a postupy pro Office, které vám pomůžou vytvářet projekty, najdete v tématu [Návrh a vytváření řešení pro Office](../vsto/designing-and-creating-office-solutions.md).
 
 ## <a name="related-topics"></a>Související témata
 
 |Název|Popis|
 |-----------|-----------------|
 |[Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)|Popisuje různé aspekty psaní kódu v řešeních pro systém Office.|
-|[Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)|Přehled modelu programování doplňků VSTO a související úlohy programování.|
-|[Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)|Poskytuje přehled o programovací model přizpůsobení na úrovni dokumentu a související úlohy programování.|
-|[Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)|Popisuje různé způsoby, které lze přizpůsobit uživatelské rozhraní aplikací s použitím doplňků VSTO a přizpůsobení na úrovni dokumentu.|
-|[Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)|Popisuje různé způsoby, které můžete pracovat s daty v řešeních pro systém Office, jako je například vazba dat k ovládacím prvkům a ukládání do mezipaměti data v přizpůsobeních na úrovni dokumentu.|
-|[Jak ovlivňuje automatické ukládání řešení pro systém Office](./how-autosave-impacts-office-solutions.md)|Popisuje úpravy, které můžete potřebovat tak, aby řešení pro systém Office, když je povoleno automatické ukládání.|
-|[Řešení potíží s řešení pro systém Office](../vsto/troubleshooting-office-solutions.md)|Poskytuje tipy pro řešení běžných problémů, které se mohou vyskytnout při vytváření řešení pro systém Office.|
-|[Podpora v systému Office práce s vlákny](../vsto/threading-support-in-office.md)|Poskytuje přehled práce s více vlákny v řešeních pro systém Office.|
+|[Programové doplňky VSTO](../vsto/programming-vsto-add-ins.md)|Poskytuje přehled programovacího modelu doplňků VSTO a souvisejících programovacích úloh.|
+|[Přizpůsobení na úrovni dokumentu programu](../vsto/programming-document-level-customizations.md)|Poskytuje přehled programovacího modelu přizpůsobení na úrovni dokumentu a souvisejících programovacích úloh.|
+|[Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)|Popisuje různé způsoby, kterými můžete přizpůsobit uživatelské rozhraní aplikací Office pomocí doplňků VSTO a přizpůsobení na úrovni dokumentu.|
+|[Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)|Popisuje různé způsoby, jak můžete pracovat s daty v řešeních pro systém Office, například svázat data s ovládacími prvky a ukládat data do mezipaměti v přizpůsobeních na úrovni dokumentu.|
+|[Způsob ukládání dopadů na řešení pro systém Office](./how-autosave-impacts-office-solutions.md)|Popisuje úpravy, které může být nutné provést v řešeních Office, pokud je povoleno automatické ukládání.|
+|[Řešení potíží s řešeními pro systém Office](../vsto/troubleshooting-office-solutions.md)|Poskytuje tipy pro řešení běžných problémů, se kterými se můžete setkat při vytváření řešení pro Office.|
+|[Podpora práce s vlákny v systému Office](../vsto/threading-support-in-office.md)|Poskytuje přehled o práci s více vlákny v řešeních pro systém Office.|
 |[Usnadnění v projektech pro systém Office](../vsto/accessibility-in-office-projects.md)|Popisuje funkce pro usnadnění přístupu, které jsou k dispozici v řešeních pro systém Office.|
 
 ## <a name="see-also"></a>Viz také:
-- [Postupy: Vytvoření a změny přizpůsobených vlastností dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)
-- [Postupy: Čtení a zápis do vlastnosti dokumentu](../vsto/how-to-read-from-and-write-to-document-properties.md)
-- [Postupy: Cílení na vícejazyčné uživatelské rozhraní sady Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)
-- [Návod: Vytvoření vašeho prvního doplňku VSTO pro Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
+- [Postupy: Vytvoření a úprava vlastností vlastního dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Postupy: Číst z a zapisovat do vlastností dokumentu](../vsto/how-to-read-from-and-write-to-document-properties.md)
+- [Postupy: Cílení na vícejazyčné uživatelské rozhraní Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)
+- [Návod: Vytvoření prvního doplňku VSTO pro Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 - [Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
-- [Návod: Vytvoření vašeho prvního doplňku VSTO pro Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
-- [Návod: Vytvoření vašeho prvního doplňku VSTO pro PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
-- [Návod: Vytvoření vašeho prvního doplňku VSTO pro Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
-- [Návod: Vytvoření vašeho prvního doplňku VSTO pro Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)
+- [Návod: Vytvoření prvního doplňku VSTO pro Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [Návod: Vytvoření prvního doplňku VSTO pro PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
+- [Návod: Vytvoření prvního doplňku VSTO pro Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
+- [Návod: Vytvoření prvního doplňku VSTO pro Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)
 - [Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)

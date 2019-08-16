@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0152ae9f76ea1318f717c41a70d3d46351c9021a
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300614"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551141"
 ---
 # <a name="configure-fxcop-analyzers"></a>Konfigurace analyzátorů FxCop
 
-[Analyzátory FxCop](install-fxcop-analyzers.md) se skládají z nejdůležitějších pravidel "FxCop" ze statické analýzy kódu, která je převedena na analyzátory Roslyn. Analyzátory kódu FxCop můžete nakonfigurovat dvěma způsoby:
+[Analyzátory FxCop](install-fxcop-analyzers.md) se skládají z nejdůležitějších pravidel "FxCop" z analyzátoru starší verze, která se převedou na analyzátory kódu založené na .NET Compiler Platform. Analyzátory kódu FxCop můžete nakonfigurovat dvěma způsoby:
 
 - Se [sadou pravidel](#fxcop-analyzer-rule-sets), která umožňuje povolit nebo zakázat pravidlo a nastavit závažnost pro porušení jednotlivých pravidel.
 
 - Počínaje verzí 2.6.3 balíčku NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) prostřednictvím [souboru. editorconfig](#editorconfig-file). [Konfigurovatelné možnosti](fxcop-analyzer-options.md) umožňují Upřesnit, které části základu kódu se mají analyzovat.
 
 > [!TIP]
-> Informace o rozdílech mezi FxCop statické analýzy kódu a analyzátory FxCop najdete v tématu [Nejčastější dotazy k analyzátorům FxCop](fxcop-analyzers-faq.md).
+> Informace o rozdílech mezi staršími analyzátory analýz a FxCop najdete v tématu [Nejčastější dotazy k analyzátorům FxCop](fxcop-analyzers-faq.md).
 
 ## <a name="fxcop-analyzer-rule-sets"></a>Sady pravidel nástroje FxCop Analyzer
 
@@ -42,7 +42,7 @@ Balíček NuGet pro FxCop Analyzer obsahuje předdefinované sady pravidel pro n
 - zabezpečení
 - využití
 
-Další informace najdete v tématu [sady pravidel pro analyzátory Roslyn](analyzer-rule-sets.md).
+Další informace najdete v tématu [sady pravidel pro analyzátory kódu](analyzer-rule-sets.md).
 
 ## <a name="editorconfig-file"></a>Soubor EditorConfig
 
@@ -90,7 +90,7 @@ Můžete sdílet soubor. editorconfig pro konfiguraci analyzátoru mezi dvěma n
 4. Znovu načtěte projekt.
 
 > [!NOTE]
-> Pomocí souboru. editorconfig nelze nakonfigurovat starší pravidla FxCop (FxCop pro analýzu statického kódu).
+> Starší pravidla FxCop nejde nakonfigurovat pomocí souboru. editorconfig.
 
 ## <a name="option-scopes"></a>Obory možností
 

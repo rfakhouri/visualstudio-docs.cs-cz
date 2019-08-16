@@ -1,5 +1,5 @@
 ---
-title: Povolení nebo zákaz analýzy kódu
+title: Povolit nebo zakázat analýzu kódu
 ms.date: 10/25/2018
 ms.topic: conceptual
 author: gewarren
@@ -7,31 +7,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4878c25021d87e91f6a575d11a876d7aac2455d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec0a8a3f04830115d343fcef611cfbd338163395
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816240"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551044"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Postupy: Povolení a zákaz automatické analýzy kódu pro spravovaný kód
 
-Můžete konfigurovat analýzu kódu (statické) ke spuštění po každém sestavení spravovaný projekt kódu. Můžete nastavení vlastností analýzy pro každou konfiguraci sestavení odlišný kód, například ladění a vydání.
+Můžete nakonfigurovat (statický) analýzu kódu pro spuštění po každém sestavení spravovaného kódu projektu. Můžete nastavit různé vlastnosti analýzy kódu pro každou konfiguraci sestavení, například ladění a vydání.
 
-Tento článek se týká pouze statické analýzy kódu a pomocí analýzy není živého kódu [analyzátorů Roslyn kódu](roslyn-analyzers-overview.md).
+Tento článek se vztahuje pouze na starší verze analýzy a ne na živé analýzy kódu pomocí [analyzátorů kódu](roslyn-analyzers-overview.md).
 
-## <a name="to-enable-or-disable-automatic-code-analysis"></a>K povolení nebo zakázání automatické analýzy kódu
+## <a name="to-enable-or-disable-automatic-code-analysis"></a>Povolení nebo zakázání automatické analýzy kódu
 
-1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a klikněte na tlačítko **vlastnosti**.
+1. V **Průzkumník řešení**klikněte pravým tlačítkem myši na projekt a zvolte možnost **vlastnosti**.
 
-1. V dialogovém okně vlastností projektu zvolte **analýzy kódu** kartu.
+1. V dialogovém okně Vlastnosti projektu klikněte na kartu **Analýza kódu** .
 
    > [!TIP]
-   > Typy novější projektů, jako je .NET Core a .NET Standard aplikace nemáte **analýzy kódu** kartu. Analýza statického kódu není k dispozici pro tyto typy projektů, ale můžete pořád dostat, živé kódu pomocí analýzy [analyzátorů Roslyn kódu](roslyn-analyzers-overview.md). Potlačení upozornění z analyzátorů Roslyn kódu, najdete v poznámce na konci tohoto článku.
+   > Novější typy projektů, například .NET Core a aplikace .NET Standard, nemají kartu **Analýza kódu** . Starší verze analýzy není pro tyto typy projektů k dispozici, ale můžete získat živou analýzu kódu pomocí [analyzátorů kódu založeného na .NET Compiler Platform](roslyn-analyzers-overview.md). Chcete-li potlačit upozornění z analyzátorů kódu, přečtěte si poznámku na konci tohoto článku.
 
-1. Zadejte typ sestavení v **konfigurace** a cílovou platformu v **platformy**.
+1. Zadejte typ sestavení v **konfiguraci** a cílovou platformu na **platformě**.
 
-1. K povolení nebo zakázání automatické analýzy kódu, zaškrtněte nebo zrušte zaškrtnutí **povolit analýzu kódu na sestavení** zaškrtávací políčko.
+1. Chcete-li povolit nebo zakázat automatickou analýzu kódu, zaškrtněte nebo zrušte zaškrtnutí políčka **Povolit analýzu kódu při sestavení** .
 
 > [!NOTE]
-> **Povolit analýzu kódu na sestavení** zaškrtávacího políčka se týká pouze statické analýzy kódu. Nemá vliv [analyzátorů Roslyn kódu](roslyn-analyzers-overview.md), což vždy spustit v sestavení, pokud jste nainstalovali jako balíček NuGet. Pokud chcete vymazat chyby analyzátoru z **seznam chyb**, všechna aktuální porušení pravidel můžete potlačit výběrem **analyzovat** > **spustit analýzu kódu a potlačit aktivní Problémy s** na řádku nabídek. Další informace najdete v tématu [potlačit porušení](use-roslyn-analyzers.md#suppress-violations).
+> Zaškrtávací políčko **Povolit analýzu kódu při sestavení** má vliv pouze na starší verzi analýzy. Neovlivňuje [analyzátory kódu založené na .NET Compiler Platform](roslyn-analyzers-overview.md), které se vždycky spouštějí při sestavení, pokud jste je nainstalovali jako balíček NuGet. Pokud chcete vymazat chyby analyzátoru z **Seznam chyb**, můžete potlačit všechna aktuální porušení výběrem možnosti **analyzovat** > **Spustit analýzu kódu a potlačit aktivní problémy** na řádku nabídek. Další informace najdete v tématu [potlačení porušení](use-roslyn-analyzers.md#suppress-violations).

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2824be0ecc29965abb68519aaa8eb8a83af8e688
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 9fd738b0c16ede4f71c001036546c335d8ca7186
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841383"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547052"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Vlastnosti by neměly vracet pole
 
@@ -30,72 +30,72 @@ ms.locfileid: "65841383"
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
 |CheckId|CA1819|
-|Kategorie|Microsoft.Performance|
+|Kategorie|Microsoft. Performance|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
 Vlastnost vrací pole.
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné vlastnosti a typy, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vypadá pouze v externě viditelných vlastnostech a typech, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Pole vrácená vlastnostmi nejsou chráněna proti zápisu, i v případě, že vlastnost je jen pro čtení. Abyste pole ochránili před změnou, musí vlastnost vrátit kopii tohoto pole. Uživatelé obvykle nebudou rozumět nepříznivým výkonnostním důsledkům volání těchto vlastností. Konkrétně se může použít vlastnost jako indexovaná vlastnost.
+Pole vrácená vlastnostmi nejsou chráněna proti zápisu, a to i v případě, že je vlastnost určena pouze pro čtení. Abyste pole ochránili před změnou, musí vlastnost vrátit kopii tohoto pole. Obvykle uživatelé nebudou rozumět negativním dopadům na výkon volání takové vlastnosti. Konkrétně můžou použít vlastnost jako indexovanou vlastnost.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení tohoto pravidla, metodu nastavení vlastnosti nebo změňte vlastnost na vrácení kolekce.
+Chcete-li opravit porušení tohoto pravidla, buď vlastnost nastavte jako metodu, nebo změňte vlastnost tak, aby vracela kolekci.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Můžete potlačit upozornění, která se vyvolá pro vlastnost, která je odvozena z atributu <xref:System.Attribute> třídy. Atributy mohou obsahovat vlastnosti, které vrací pole, ale nemůže obsahovat vlastnosti, které vracejí kolekce.
+Můžete potlačit upozornění, která je vyvolána pro vlastnost atributu odvozeného od <xref:System.Attribute> třídy. Atributy můžou obsahovat vlastnosti, které vracejí pole, ale nemůžou obsahovat vlastnosti, které vracejí kolekce.
 
-Upozornění můžete potlačit, pokud vlastnost je součástí [objekt pro přenos dat (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) třídy.
+Můžete potlačit upozornění, pokud je vlastnost součástí třídy [přenos dat objektů (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) .
 
-V opačném případě nepotlačujte upozornění tohoto pravidla.
+V opačném případě potlačíte upozornění z tohoto pravidla.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1819.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (výkon). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (výkon). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Příklad porušení
 
-Následující příklad ukazuje vlastnost, která porušuje tato pravidla:
+Následující příklad ukazuje vlastnost, která porušuje toto pravidlo:
 
 [!code-csharp[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_1.cs)]
 [!code-vb[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_1.vb)]
 
-Chcete-li opravit porušení tohoto pravidla, metodu nastavení vlastnosti nebo změňte vlastnost na vrácení kolekce místo pole.
+Chcete-li opravit porušení tohoto pravidla, buď vlastnost nastavte jako metodu, nebo změňte vlastnost tak, aby vracela kolekci místo pole.
 
-### <a name="change-the-property-to-a-method"></a>Změňte hodnotu vlastnosti na metodu
+### <a name="change-the-property-to-a-method"></a>Změňte vlastnost na metodu.
 
-V následujícím příkladu řeší porušení změnou vlastnosti na metodu:
+Následující příklad opravuje porušení změnou vlastnosti na metodu:
 
 [!code-vb[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_2.vb)]
 [!code-csharp[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_2.cs)]
 
-### <a name="change-the-property-to-return-a-collection"></a>Změňte vlastnost na vrácení kolekce
+### <a name="change-the-property-to-return-a-collection"></a>Změňte vlastnost tak, aby vracela kolekci.
 
-V následujícím příkladu řeší porušení změnou vlastnosti se vraťte <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>:
+Následující příklad opravuje porušení změnou vlastnosti tak, aby vrátila <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>:
 
 [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_3.cs)]
 [!code-vb[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_3.vb)]
 
-## <a name="allow-users-to-modify-a-property"></a>Povolit uživatelům změnit vlastnost
+## <a name="allow-users-to-modify-a-property"></a>Povolení úprav vlastnosti uživateli
 
-Můžete chtít umožnit příjemci třídy k úpravě vlastností. Následující příklad ukazuje vlastnost pro čtení a zápis, který porušuje tato pravidla:
+Můžete chtít, aby příjemce třídy mohl upravovat vlastnost. Následující příklad ukazuje vlastnost pro čtení/zápis, která porušuje toto pravidlo:
 
 [!code-csharp[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_4.cs)]
 [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_4.vb)]
 
-V následujícím příkladu řeší porušení změnou vlastnosti se vraťte <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>:
+Následující příklad opravuje porušení změnou vlastnosti tak, aby vrátila <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>:
 
 [!code-vb[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_5.vb)]
 [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_5.cs)]

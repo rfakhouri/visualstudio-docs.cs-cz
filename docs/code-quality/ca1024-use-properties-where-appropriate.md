@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfedb55c0dcdb1077faea03bca56488ab3da1525
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2763d7dd167ad0027509c44b8f9d43523f03976b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842458"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547791"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Použijte vlastnosti, kde je to vhodné
 
@@ -33,59 +33,59 @@ ms.locfileid: "65842458"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Metoda má název, který začíná `Get`, nepřijímá žádné parametry a vrátí hodnotu, která není pole.
+Metoda má název, který začíná `Get`, nepřebírá žádné parametry a vrací hodnotu, která není polem.
 
-Ve výchozím nastavení, toto pravidlo pouze prohledá veřejné a chráněné metody, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vyhledává pouze veřejné a chráněné metody, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Ve většině případů vlastnosti představují data a provedení metody akce. Vlastnosti jsou dostupné jako pole, které usnadňují jejich použití. Metoda je vhodným kandidátem pro stala vlastností, pokud se nachází jedna z těchto podmínek:
+Ve většině případů vlastnosti reprezentují data a metody, které provádějí akce. Vlastnosti jsou dostupné jako pole, což usnadňuje jejich použití. Metoda je dobrým kandidátem, který se stane vlastností, pokud je přítomna jedna z těchto podmínek:
 
-- Nepřijímá žádné argumenty a vrátí informace o stavu objektu.
+- Nepřijímá žádné argumenty a vrací informace o stavu objektu.
 
-- Přijímá jeden argument nastavit některá část stav objektu.
+- Přijímá jeden argument pro nastavení některých částí stavu objektu.
 
-Vlastnosti by měla chovat, jako by šlo polí. Pokud nelze metodu by neměla změnit na vlastnost. Metody jsou lepší než vlastnosti v následujících situacích:
+Vlastnosti by se měly chovat, jako by se jedná o pole. Pokud metoda nemůže, neměla by být změněna na vlastnost. Metody jsou lepší než vlastnosti v následujících situacích:
 
-- Metoda provádí časově náročná operace. Metoda je perceivably pomalejší než čas, který je potřeba nastavit nebo získat hodnotu pole.
+- Metoda provádí časově náročnou operaci. Metoda je vnímana pomalejší než čas, který je požadován k nastavení nebo získání hodnoty pole.
 
-- Metoda provádí převod. Přístup k poli nevrací převedená verze tohoto data, která ukládá.
+- Metoda provádí převod. Přístup k poli nevrátí převedenou verzi dat, která ukládá.
 
-- Metoda Get má pozorovatelný vedlejší efekt. Načítání hodnoty pole nevytváří žádné vedlejší účinky.
+- Metoda get má pozorovatelný vedlejší efekt. Načtení hodnoty pole neprodukuje žádné vedlejší účinky.
 
-- Je důležité pořadí provádění. Nastaví hodnotu pole není závislý na výskyt jiné operace.
+- Pořadí spuštění je důležité. Nastavení hodnoty pole nezávisí na výskytu jiných operací.
 
-- Volání metody dvakrát za sebou vytvoří jiné výsledky.
+- Volání metody dvakrát v případě úspěchu vytváří různé výsledky.
 
-- Metoda je statická, ale vrátí objekt, který můžete změnit tak, volající. Načítání hodnoty pole neumožňuje volajícího, aby změna dat uložených v poli.
+- Metoda je statická, ale vrací objekt, který může změnit volající. Načítání hodnoty pole neumožňuje volajícímu měnit data, která jsou uložena v poli.
 
-- Metoda vrátí pole.
+- Metoda vrací pole.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
 Chcete-li opravit porušení tohoto pravidla, změňte metodu na vlastnost.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Potlačit upozornění tohoto pravidla, pokud metoda splňuje splnit aspoň jednu z výše uvedených kritérií.
+Potlačí upozornění z tohoto pravidla, pokud metoda splňuje alespoň jedno z výše uvedených kritérií.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1024.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (návrh). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (návrh). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
-## <a name="control-property-expansion-in-the-debugger"></a>Ovládací prvek vlastnosti rozšíření v ladicím programu
+## <a name="control-property-expansion-in-the-debugger"></a>Rozšíření vlastností ovládacího prvku v ladicím programu
 
-Jedním z důvodů programátoři Vyhněte se použití vlastnosti je vzhledem k tomu, že nechcete, aby ladicí program automaticky doplnit jej. Například vlastnost může zahrnovat přidělování velkého objektu nebo volání P/Invoke, ale nemusí mít ve skutečnosti všechny pozorovatelný vedlejší účinky.
+Jedním z důvodů, proč programátoři nepoužívají vlastnost, je, že nechtějí, aby ladicí program automaticky rozbalí. Například vlastnost může zahrnovat přidělení velkého objektu nebo volání volání nespravovaného objektu, ale nemusí mít ve skutečnosti žádné pozorovatelné vedlejší účinky.
 
-Ladicí program z vlastností autoexpanding můžete zabránit použitím <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Následující příklad ukazuje tento atribut použity pro vlastnost instance.
+Ladicímu programu můžete zabránit v automaticky rozbalování vlastností, a <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>to použitím. Následující příklad ukazuje tento atribut aplikovaný na vlastnost instance.
 
 ```vb
 Imports System
@@ -135,6 +135,6 @@ namespace Microsoft.Samples
 
 ## <a name="example"></a>Příklad
 
-Následující příklad obsahuje několik metod, které mají být převedeny do vlastností a několik, který by nebyl, protože není chovají jako pole.
+Následující příklad obsahuje několik metod, které by měly být převedeny na vlastnosti a několik, které by neměly být stejné, protože se chovají jako pole.
 
 [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

@@ -1,6 +1,6 @@
 ---
-title: 'Postupy: Odeslání e-mailu prostřednictvím kódu programu'
-ms.date: 02/02/2017
+title: 'Postupy: Programové odeslání e-mailu'
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72d033add2ba8320b14eebd5af700ab225d34410
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961885"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551751"
 ---
-# <a name="how-to-programmatically-send-email"></a>Postupy: Odeslání e-mailu prostřednictvím kódu programu
-  Tento příklad odešle e-mailovou zprávu na kontakty, které mají název domény **example.com** jejich e-mailové adresy.
+# <a name="how-to-programmatically-send-email"></a>Postupy: Programové odeslání e-mailu
+  Tento příklad pošle e-mailovou zprávu kontaktům, které mají název domény **example.com** ve svých e-mailových adresách.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="example"></a>Příklad
  [!code-csharp[Trin_OL_ProgramEmail#1](../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs#1)]
@@ -33,13 +35,13 @@ ms.locfileid: "62961885"
 ## <a name="compile-the-code"></a>Kompilace kódu
  Tento příklad vyžaduje:
 
-- Kontakty, které mají název domény **example.com** jejich e-mailové adresy.
+- Kontakty, které mají název domény **example.com** ve svých e-mailových adresách.
 
 ## <a name="robust-programming"></a>Robustní programování
- Neodebírejte filtr kód, který hledá název domény **example.com**. Vaše řešení pošle e-mailové zprávy na všechny kontakty Pokud filtr odeberete.
+ Neodstraňujte kód filtru, který vyhledává název domény **example.com**. Pokud filtr odeberete, vaše řešení pošle e-mailové zprávy všem vašim kontaktům.
 
 ## <a name="see-also"></a>Viz také:
 - [Práce s položkami pošty](../vsto/working-with-mail-items.md)
-- [Postupy: Programové vytváření položek e-mailu](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [Postupy: Programové vytvoření e-mailové položky](../vsto/how-to-programmatically-create-an-e-mail-item.md)
 - [Postupy: Programový přístup ke kontaktům aplikace Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [Postupy: Programově provádění akcí po přijetí e-mailovou zprávu](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Postupy: Při přijetí e-mailové zprávy programově provádět akce](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

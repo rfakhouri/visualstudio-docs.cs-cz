@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a412161d9f91830486378d4e8228386cfd3fb7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: d71200c6c7fbb61e7994119fde5e75f7623fa669
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841900"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547188"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Výčty příznaků by neměly mít názvy v množném čísle
 
@@ -30,39 +30,39 @@ ms.locfileid: "65841900"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Výčet má <xref:System.FlagsAttribute?displayProperty=fullName> a jeho název nekončí v prvku ".
+Výčet má <xref:System.FlagsAttribute?displayProperty=fullName> a jeho název nekončí na ' '.
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné výčtů, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vypadá pouze v externě viditelných výčtech, ale to je [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Typy, které jsou označené <xref:System.FlagsAttribute> mít názvy, které jsou v množném čísle, protože tento atribut označuje, že lze zadat více než jednu hodnotu. Například výčet, který definuje dny v týdnu může být určena pro použití v aplikaci ve kterém můžete zadat více dní. By měl mít tento výčet <xref:System.FlagsAttribute> a může mít název "dny. Podobně jako výčet, který umožňuje zadat pouze jeden den by obsahovat atribut a může být volána "Den".
+Typy, které jsou označeny <xref:System.FlagsAttribute> s názvy, které jsou plural, protože atribut označuje, že lze zadat více než jednu hodnotu. Například výčet, který definuje dny v týdnu, může být určen pro použití v aplikaci, kde můžete zadat více dní. Tento výčet by měl mít <xref:System.FlagsAttribute> operátor a mohl by být pojmenovaný ' days '. Podobný výčet, který umožňuje zadat pouze jeden den, by neměl mít atribut a mohl by být označován za "Day".
 
-Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. To snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
+Zásady vytváření názvů poskytují běžný vzhled pro knihovny, které cílí na modul CLR (Common Language Runtime). Tím se zmenší výuková křivka, která je požadována pro nové knihovny softwaru, a zvyšuje důvěru zákazníků, že knihovna byla vyvinuta někým, kdo má zkušenosti s vývojem spravovaného kódu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Vytvořit název výčtu množném čísle slova nebo odebrat <xref:System.FlagsAttribute> atribut, pokud by neměla současně zadat více hodnot výčtu.
+Nastavte název výčtu v množném čísle, nebo odeberte <xref:System.FlagsAttribute> atribut, pokud by neměl být zadán více hodnot výčtu současně.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Je bezpečné potlačit narušení, je-li název množném čísle slovo ale nekončí na ". Například pokud několik dní výčtu, která byla popsána dříve byly s názvem "DaysOfTheWeek", to by mohla narušit logice pravidla, ale ne jeho záměr. Má být potlačeno těchto porušení.
+Je bezpečné potlačit porušení, pokud je název plurální slovo, ale nekončí na '. Například pokud je výpis více dní popsaný dříve pojmenován ' DaysOfTheWeek ', může to porušovat logiku pravidla, ale ne jeho záměr. Tato porušení by se měla potlačit.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1714.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (zásady). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (pojmenování). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Související pravidla
 
-- [CA1027: Označte výčty pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA1027: Označení výčtů pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 - [CA2217: Neoznačujte výčty pomocí FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Viz také:

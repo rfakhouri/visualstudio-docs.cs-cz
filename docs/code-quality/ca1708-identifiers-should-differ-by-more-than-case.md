@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 059770b28b9e885608769f3844f91097a16d66cf
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 5098e2feadc6d67c466e31ab19d059ac70c7d833
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714253"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547395"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Identifikátory by se měly lišit více než použitím malých a velkých písmen
 
@@ -30,42 +30,42 @@ ms.locfileid: "66714253"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Názvy dva typy, členy, parametry nebo plně kvalifikovaný obory názvů jsou identické, když jste převedený na malá písmena.
+Názvy dvou typů, členů, parametrů nebo plně kvalifikovaných oborů názvů jsou identické, když jsou převedeny na malá písmena.
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné typy, členy a obory názvů, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vyhledává pouze externě viditelné typy, členy a obory názvů, ale to je [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Identifikátory pro obory názvů, typy, členy a parametry nelze odlišit pouze ve velikosti písmen, protože jazyky cílené na modul CLR (Common Language Runtime) nemusí rozlišovat malá a velká písmena. Například [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] je často používaný jazyk velká a malá písmena.
+Identifikátory pro obory názvů, typy, členy a parametry nelze odlišit pouze ve velikosti písmen, protože jazyky cílené na modul CLR (Common Language Runtime) nemusí rozlišovat malá a velká písmena. Například [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] je široce používaný jazyk bez rozlišení velkých a malých písmen.
 
-Toto pravidlo je vyvoláno na veřejně viditelné pouze členy.
+Toto pravidlo je vyvoláno pouze u veřejně viditelných členů.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Vyberte název, který je jedinečný, je porovnání pro jiné identifikátory písmen.
+Vyberte název, který je jedinečný, pokud je porovnán s jinými identifikátory při nerozlišování velkých a malých písmen.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Nepotlačujte upozornění na toto pravidlo. Knihovny nemusí být použitelná ve všech jazycích k dispozici v rozhraní .NET.
+Nepotlačujte upozornění na toto pravidlo. Knihovna nemusí být použitelná ve všech dostupných jazycích v rozhraní .NET.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1708.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (zásady). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (pojmenování). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
-## <a name="example-of-a-violation"></a>Příkladem porušení
+## <a name="example-of-a-violation"></a>Příklad porušení
 
-Následující příklad ukazuje porušení tohoto pravidla.
+Následující příklad demonstruje porušení tohoto pravidla.
 
 [!code-csharp[FxCop.Naming.IdentifiersShouldDifferByMoreThanCase#1](../code-quality/codesnippet/CSharp/ca1708-identifiers-should-differ-by-more-than-case_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
 
-- [CA1709: Identifikátory by měly správně formátováno.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: Identifikátory by se měly použita správně.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

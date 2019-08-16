@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c596ddfa36beec696c275ea13b662ceebf8bde2c
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a35bec2395ccec649443df71e87904c71bf635d8
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841800"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547107"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identifikátory by neměly obsahovat názvy typů
 
@@ -30,21 +30,21 @@ ms.locfileid: "65841800"
 |Kategorie|Microsoft.Naming|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Název parametru v člena obsahuje název datového typu.
+Název parametru v členu obsahuje název datového typu.
 
 -nebo-
 
-Název členu obsahuje název typu dat pro konkrétní jazyk.
+Název členu obsahuje název datového typu specifický pro jazyk.
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné členy, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vypadá pouze u externě viditelných členů, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Názvy parametrů a členů se lépe používají ke komunikaci jejich význam než se popisují jejich typ, který má být poskytuje nástroje pro vývoj. Pro názvy členů Pokud je třeba zadat název datového typu, použijte název nezávislým na jazyku místo jeden konkrétní jazyk. Například místo nástroje C# název typu `int`, použít název typu nezávislým na jazyku data `Int32`.
+Názvy parametrů a členů jsou lépe použity ke sdělení jejich významu, než aby bylo možné popsat jejich typ, který je třeba poskytnout pomocí vývojářských nástrojů. V případě názvů členů, pokud je třeba použít název datového typu, použijte název nezávislá na jazyce, nikoli na konkrétní jazyk. Například namísto názvu C# `int`typu použijte název datového typu nezávislý na jazyku,. `Int32`
 
-Každý samostatný token název parametru nebo člen je porovnávána s následující názvy typů dat pro konkrétní jazyk v podobě velká a malá písmena:
+Všechny diskrétní tokeny v názvu parametru nebo členu jsou zkontrolovány proti následujícím jazykově specifickým názvům datových typů při nerozlišování velkých a malých písmen:
 
 - Bool
 - WChar
@@ -55,19 +55,19 @@ Každý samostatný token název parametru nebo člen je porovnávána s násled
 - Int
 - UInt
 - Integer
-- UInteger
+- UInteger –
 - Dlouhé
 - ULong
-- bez znaménka
-- podepsané
+- Celé
+- Podpisy
 - Float
 - Float32
 - Float64
 
-Kromě toho názvy parametru jsou zkontrolovány také proti následující názvy typů dat nezávislým na jazyku písmen:
+Kromě toho názvy parametrů jsou také zkontrolovány proti následujícím jazykově nezávislým názvům datových typů při nerozlišování velkých a malých písmen:
 
 - Objekt
-- Obj
+- Objektu
 - Boolean
 - Char
 - String
@@ -81,8 +81,8 @@ Kromě toho názvy parametru jsou zkontrolovány také proti následující náz
 - Int64
 - UInt64
 - IntPtr
-- Ptr
-- Ukazatel
+- Střed
+- Ukazatele
 - UInptr
 - UPtr
 - UPointer
@@ -91,33 +91,33 @@ Kromě toho názvy parametru jsou zkontrolovány také proti následující náz
 - Desetinné číslo
 - Guid
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-**Pokud je aktivována před parametr:**
+**Je-li aktivováno proti parametru:**
 
-Nahraďte datového typu identifikátoru názvu parametru termín, který lépe popisuje jeho význam nebo obecnějším pojmem, jako například 'value'.
+Nahraďte identifikátor datového typu v názvu parametru výrazem, který lépe popisuje svůj význam nebo obecnější výraz, jako je hodnota.
 
-**Pokud je aktivována před členem:**
+**Při vyvolání proti členovi:**
 
-Nahraďte konkrétní jazyk datového typu identifikátoru název člena termín, který lépe popisuje jeho význam, jazykově nezávislým ekvivalentem nebo obecnějším pojmem, jako například 'value'.
+Nahraďte identifikátor datového typu specifický pro jazyk v názvu člena termínem, který lépe popisuje svůj význam, ekvivalent nezávislého jazyka nebo obecnější výraz, jako je hodnota.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Příležitostné použití založené na typ parametru a člen názvů může být vhodné. Ale pro vývoj, žádné známé scénáře nastat, pokud by měla potlačit upozornění tohoto pravidla. Pro knihovny, které byly dříve součástí budete muset potlačit upozornění tohoto pravidla.
+Příležitostné použití parametrů založených na typu a názvů členů může být vhodné. Pro nový vývoj ale nedochází k žádným známým scénářům, kdy byste měli potlačit upozornění od tohoto pravidla. U knihoven, které byly dřív dodány, možná budete muset potlačit upozornění od tohoto pravidla.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1720.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (zásady). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (pojmenování). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Související pravidla
 
-- [CA1709: Identifikátory by měly správně formátováno.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Identifikátory by se měly lišit o více než velikostí písmen](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709: Identifikátory by se měly použita správně.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Identifikátory by se měly lišit o více než malých písmenech](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 - [CA1707: Identifikátory by neměly obsahovat podtržítka](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 - [CA1719: Názvy parametrů by neměly odpovídat názvům členů](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

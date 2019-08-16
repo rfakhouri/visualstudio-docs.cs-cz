@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f1ddb1f1d39255c14e03d114891145c8f2dece5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945011"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551189"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio
 
@@ -52,13 +52,14 @@ Můžete nastavit následující hodnoty registru:
 
 | **Jméno** | **Typ** | **Default** | **Popis** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` Nebo `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Ukládají se adresáře, kde manifesty balíček a volitelně datové části. Další informace najdete v tématu [zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md) stránky. |
-| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Zachovejte datové části balíčku, i když jsou nainstalovány. Kdykoli můžete změnit hodnotu. Zakázání zásady odebere všechny datové části v mezipaměti balíčku pro instanci opravit nebo změnit. Další informace najdete v tématu [zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md) stránky. |
-| `SharedInstallationPath` | `REG_SZ` Nebo `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Adresář, ve kterém jsou nainstalované některé balíčky sdíleny napříč verzemi instance sady Visual Studio. Můžete kdykoli změnit hodnotu, ale pouze ovlivní budoucí nainstaluje. Všechny produkty již nainstalován na původní umístění nesmí být přesunuta, nebo že nebudou fungovat správně. |
+| `CachePath` | `REG_SZ` Nebo `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Ukládají se adresáře, kde manifesty balíček a volitelně datové části. Další informace najdete na stránce [Zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md) . |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Zachovejte datové části balíčku, i když jsou nainstalovány. Kdykoli můžete změnit hodnotu. Zakázání zásady odebere všechny datové části v mezipaměti balíčku pro instanci opravit nebo změnit. Další informace najdete na stránce [Zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md) . |
+| `SharedInstallationPath` | `REG_SZ` Nebo `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Adresář, ve kterém jsou nainstalované některé balíčky sdíleny napříč verzemi instance sady Visual Studio. Hodnotu můžete kdykoli změnit, ale bude to mít vliv jenom na budoucí instalace. Jakékoli produkty, které jsou již nainstalovány do starého umístění, nesmí být přesunuty nebo nemusí fungovat správně. |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Zabrání instalačnímu programu stahovat aktualizace automaticky pro všechny nainstalované produkty sady Visual Studio. Kdykoli můžete změnit hodnotu. |
 
 > [!IMPORTANT]
-> Pokud změníte `CachePath` registru zásad po všechny instalace musíte přesunout stávající mezipaměti balíčku do nového umístění a ujistěte se, že je zabezpečený tak, aby `SYSTEM` a `Administrators` mít plnou kontrolu a že `Everyone` má přístup pro čtení.
-> Nepodařilo se přesunout stávající mezipaměti nebo jeho zabezpečení může způsobit problémy s budoucí nainstaluje.
+> Pokud zásady `CachePath` registru po instalaci změníte, je nutné přesunout existující mezipaměť balíčku do nového umístění a zajistit `Administrators` , aby byla zabezpečená, `SYSTEM` aby byla zajištěna úplná kontrola a `Everyone` měla by mít oprávnění ke čtení.
+> Nepovedlo se přesunout existující mezipaměť nebo ji zabezpečit, může to způsobit problémy s budoucími instalacemi.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

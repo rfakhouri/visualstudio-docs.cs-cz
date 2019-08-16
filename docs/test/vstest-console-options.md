@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 147ec9096be430d0bc81be65fdf68f927c0f3dac
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 34b38ca89e33fd1f3ab8d309c6f55822bf8b7107
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661946"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551822"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe – možnosti příkazového řádku
 
@@ -41,7 +41,7 @@ V následující tabulce jsou uvedeny všechny možnosti pro *VSTest. Console. e
 |**/UseVsixExtensions**|Tato možnost zpřístupní proces *VSTest. Console. exe* nebo přeskočí nainstalované rozšíření VSIX (pokud existuje) v testovacím běhu.<br />Tato možnost je zastaralá. Od další hlavní verze sady Visual Studio může být tato možnost odebrána. Přejděte k využití rozšíření, která jsou zpřístupněna jako balíček NuGet.<br />Příklad: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*path*]**|Vynutí, aby proces *VSTest. Console. exe* používal vlastní testovací adaptéry ze zadané cesty (pokud existuje) v testovacím běhu.<br />Příklad: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform: [*typ platformy*]**|Cílová architektura platformy, která se má použít pro spuštění testu.<br />Platné hodnoty jsou x86, x64 a ARM.|
-|**/Framework: [*Framework – verze*]**|Cílová verze rozhraní .NET, která se má použít pro spuštění testu.<br />Platné hodnoty jsou Framework35, Framework40, Framework45 a FrameworkUap10.<br />Je-li cílové rozhraní určeno jako **Framework35**, testy jsou spouštěny v modulu CLR 4,0 "compatibly Mode".<br />Příklad: `/Framework:framework40`|
+|**/Framework: [*Framework – verze*]**|Cílová verze rozhraní .NET, která se má použít pro spuštění testu.<br />Příklady hodnot jsou `Framework35`, `Framework40`, `Framework45` ,`FrameworkUap10`, .`.NETCoreApp,Version=v1.1`<br />Je-li cílové rozhraní určeno jako **Framework35**, testy jsou spouštěny v modulu CLR 4,0 "compatibly Mode".<br />Příklad: `/Framework:framework40`|
 |**/TestCaseFilter:[*expression*]**|Spustí testy, které odpovídají danému výrazu.<br />výraz\> < má formát < vlastnost\>= < hodnota\>[\|<ový výraz\>].<br />Příklad: `/TestCaseFilter:"Priority=1"`<br />Příklad: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Možnost příkazového řádku **/TestCaseFilter** nelze použít s parametrem příkazového řádku **/Tests** . <br />Informace o vytváření a používání výrazů najdete v tématu [testovací případ Filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Zobrazí informace o použití.|
 |**/Logger: [*URI/FriendlyName*]**|Zadejte protokolovací nástroj pro výsledky testů.<br />Příklad: K protokolování výsledků do souboru sady Visual Studio Výsledky testů (TRX) použijte **/Logger: TRX**.<br />Příklad: K publikování výsledků testů do Team Foundation Server použijte TfsPublisher:<br />**/Logger: TfsPublisher;**<br />**Collection = adresa URL\>projektu <;**<br />**Název sestavení = < název\>sestavení;**<br />**TeamProject = < název\>projektu;**<br />**[; Platform =\<standardně "any CPU" >]**<br />**[; Charakter =\<výchozí nastavení "ladit" >]**<br />**[; RunTitle = < název\>]**|

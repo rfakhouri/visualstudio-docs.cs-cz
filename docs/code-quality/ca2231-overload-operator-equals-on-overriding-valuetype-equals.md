@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5f3bd1dfe66451ceff0b3af334a75aafb2e0b1
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: fafa4782762e18f1ced8c7f929720e995986ac7a
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841624"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546864"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Přetižte operátor rovnosti při přetížení ValueType.Equals
 
@@ -32,19 +32,19 @@ ms.locfileid: "65841624"
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|
 |CheckId|CA2231|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
 Hodnotový typ přepisuje <xref:System.Object.Equals%2A?displayProperty=fullName> , ale neimplementuje operátor rovnosti.
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné typy, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vyhledává pouze externě viditelné typy, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Ve většině programovacích jazyků neexistuje žádný výchozí implementace operátoru rovnosti (==) pro typy hodnot. Pokud svůj oblíbený programovací jazyk podporuje přetížení operátoru, měli byste zvážit, implementoval operátor rovnosti. Musí být shodná s jeho chování <xref:System.Object.Equals%2A>.
+Ve většině programovacích jazyků neexistuje žádná výchozí implementace operátoru rovnosti (= =) pro typy hodnot. Pokud váš programovací jazyk podporuje přetížení operátorů, měli byste uvažovat o implementaci operátoru rovnosti. Chování by mělo být stejné jako u <xref:System.Object.Equals%2A>.
 
-V implementaci přetížení operátoru rovnosti nelze použít výchozí operátor rovnosti. To způsobí přetečení zásobníku. K implementaci operátor rovnosti, použijte metodu Object.Equals v implementaci. Příklad:
+Nelze použít výchozí operátor rovnosti v přetížené implementaci operátoru rovnosti. Uděláte to tak, že dojde k přetečení zásobníku. K implementaci operátoru rovnosti použijte metodu Object. Equals v implementaci. Příklad:
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -60,37 +60,37 @@ if (Object.ReferenceEquals(left, null))
 return left.Equals(right);
 ```
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
 Chcete-li opravit porušení tohoto pravidla, implementujte operátor rovnosti.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Je bezpečné potlačit upozornění tohoto pravidla; Doporučujeme však, že pokud je to možné zadat operátor rovnosti.
+Je bezpečné potlačit upozornění od tohoto pravidla; Nicméně doporučujeme, abyste zadali operátor rovnosti, pokud je to možné.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca2231.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (využití). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (použití). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Příklad
 
-Následující příklad definuje typ, který porušuje tato pravidla:
+Následující příklad definuje typ, který je v rozporu s tímto pravidlem:
 
 [!code-csharp[FxCop.Usage.EqualsGetHashCode#1](../code-quality/codesnippet/CSharp/ca2231-overload-operator-equals-on-overriding-valuetype-equals_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
 
-- [CA1046: Nepřetěžujte operátory rovnosti na odkazových typech](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
-- [CA2225: Přetížení operátoru mají pojmenované alternativy](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
-- [CA2226: Operátory by měly mít symetrické přetížení](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
-- [CA2224: Přepište equals při přetížení operátoru rovnosti](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
-- [CA2218: Přepište GetHashCode při přepsání Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+- [CA1046: Nepřetížit operátor přetížení se rovná na odkazových typech](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+- [CA2225: Přetížení operátoru mají pojmenované alternativy.](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+- [CA2226 Operátory by měly mít symetrické přetížení](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+- [CA2224: Přepište Equals při přetížení operátoru Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+- [CA2218: Přepsat GetHashCode při přepsání Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
 ## <a name="see-also"></a>Viz také:
 

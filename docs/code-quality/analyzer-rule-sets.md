@@ -1,41 +1,41 @@
 ---
-title: Sady pravidel v analyzátoru
+title: Sady pravidel analyzátoru
 ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- analyzers, rule sets
+- analyzer packages, rule sets
 - rule sets for analyzers
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 696e6bd46c17054494be2ea0e0f2a1af4fd703d7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675477"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547952"
 ---
-# <a name="rule-sets-for-roslyn-analyzers"></a>Sady pravidel pro analyzátory Roslyn
+# <a name="rule-sets-for-analyzer-packages"></a>Sady pravidel pro balíčky analyzátoru
 
-Sady předdefinovaných pravidel jsou zahrnuty některé balíčky NuGet analyzátor. Například sady pravidel, které jsou součástí [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) balíček NuGet analyzer (počínaje verzí 2.6.2) povolení nebo zakázání pravidla na základě jejich kategorie, jako je zabezpečení, názvy, nebo výkon. Použití sad pravidel usnadňuje se krátce zobrazit pouze těchto porušení pravidel, které se vztahují k určité kategorie pravidla.
+Předdefinované sady pravidel jsou součástí některých balíčků analyzátorů NuGet. Například sady pravidel, které jsou součástí balíčku NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (počínaje verzí 2.6.2), povolují nebo zakazují pravidla na základě jejich kategorie, jako je například zabezpečení, pojmenování nebo výkon. Použití sad pravidel usnadňuje rychlé zobrazení pouze těch porušení pravidel, která se vztahují k určité kategorii pravidla.
 
-Pokud migrujete ze starší verze "FxCop" statické analýzy kódu pro analyzátory Roslyn, povolte tyto sady pravidel můžete nadále používat stejnou konfiguraci pravidlo, které jste použili dříve.
+Pokud migrujete ze starší analýzy "FxCop" na analýzu kódu na základě .NET Compiler Platform, tyto sady pravidel vám umožní pokračovat v používání stejných konfigurací pravidel, které jste použili dříve.
 
-## <a name="use-analyzer-rule-sets"></a>Použití sad pravidel v analyzátoru
+## <a name="use-analyzer-package-rule-sets"></a>Použít sady pravidel balíčku analyzátoru
 
-Poté co [instalaci balíčku NuGet analyzátor](install-roslyn-analyzers.md), vyhledejte předem definované pravidlo, nastavte jeho *sady pravidel* adresáře. Například pokud odkazujete `Microsoft.CodeAnalysis.FxCopAnalyzers` můžete najít analyzátor balíček a pak jeho *sady pravidel* adresáře v *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\ \<verze\>\rulesets*. Odtud, zkopírujte jeden nebo více pravidel a vložte je do adresáře, který obsahuje projekt sady Visual Studio nebo přímo do **Průzkumníka řešení**.
+Po [instalaci balíčku NuGet Analyzer](install-roslyn-analyzers.md)vyhledejte v adresáři *RuleSets* sadu předdefinovaných pravidel. Pokud jste například odkazovali `Microsoft.CodeAnalysis.FxCopAnalyzers` na balíček analyzátoru, můžete najít jeho adresář *RuleSets* ve *verzi% USERPROFILE%\\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\\\< \rulesets\>* . Odtud zkopírujte jeden nebo více RuleSets a vložte je do adresáře, který obsahuje projekt aplikace Visual Studio, nebo přímo do **Průzkumník řešení**.
 
-Můžete také [přizpůsobení sady předdefinovaných pravidel](how-to-create-a-custom-rule-set.md) dle požadavků. Například můžete změnit závažnost jedno nebo více pravidel tak, aby narušení se zobrazují jako chyby nebo varování v **seznam chyb**.
+Můžete také [přizpůsobit předdefinované pravidlo](how-to-create-a-custom-rule-set.md) , které je nastaveno na vaše preference. Můžete například změnit závažnost jednoho nebo více pravidel tak, aby se v **Seznam chyb**zobrazovaly chyby nebo upozornění.
 
-## <a name="set-the-active-rule-set"></a>Nastavte aktivní sadu pravidel
+## <a name="set-the-active-rule-set"></a>Nastavit aktivní sadu pravidel
 
-Proces pro nastavení aktivní sadu pravidel se mírně liší v závislosti na tom, zda je třeba projekt .NET Core/.NET Standard nebo .NET Framework projektu.
+Proces nastavení aktivní sady pravidel se trochu liší v závislosti na tom, zda máte projekt .NET Core/. NET Standard nebo projekt .NET Framework.
 
 ### <a name="net-core"></a>.NET Core
 
-Chcete-li pravidlo nastavena aktivní sadu pravidel pro analýzu v projektech .NET Core nebo .NET Standard, ručně přidejte **CodeAnalysisRuleSet** vlastnosti do souboru projektu. Například následující kód fragment kódu nastaví `HelloWorld.ruleset` nastavit jako aktivní pravidlo.
+Chcete-li nastavit pravidlo jako aktivní sadu pravidel pro analýzu v projektech .NET Core nebo .NET Standard, přidejte do souboru projektu ručně vlastnost **CodeAnalysisRuleSet** . Například následující sady `HelloWorld.ruleset` fragmentů kódu jako aktivní sada pravidel.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -46,19 +46,19 @@ Chcete-li pravidlo nastavena aktivní sadu pravidel pro analýzu v projektech .N
 
 ### <a name="net-framework"></a>.NET Framework
 
-Chcete-li aktivní sadu pravidel pro analýzu v projektech .NET Framework sadu pravidel, klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a zvolte **vlastnosti**. Na stránkách vlastností projektu, vyberte **analýzy kódu** kartu. V části **spustit tuto sadu pravidel**vyberte **Procházet**a potom vyberte požadované pravidlo sadu, kterou jste zkopírovali do adresáře projektu. Teď vidíte pouze porušení pravidel pro tato pravidla, které jsou povolené v vybranou sadu pravidel.
+Chcete-li nastavit pravidlo pro nastavení aktivní sady pravidel pro analýzu v .NET Framework projekty, klikněte pravým tlačítkem na projekt v **Průzkumník řešení** a vyberte možnost **vlastnosti**. Na stránkách vlastností projektu vyberte kartu **Analýza kódu** . V části **Spustit tuto sadu pravidel**vyberte **Procházet**a pak vyberte požadovanou sadu pravidel, kterou jste zkopírovali do adresáře projektu. Pro tato pravidla, která jsou povolená ve vybrané sadě pravidel, se teď zobrazují jenom porušení pravidel.
 
-## <a name="available-rule-sets"></a>Sad pravidel k dispozici
+## <a name="available-rule-sets"></a>Dostupné sady pravidel
 
-Analyzátor předdefinované sady pravidel patří tři sady pravidel, které ovlivňují všechna pravidla v balíčku&mdash;ten, který umožňuje uspořádat, ten, který zakáže všechny a ten, který respektuje každé pravidlo výchozí závažnost a povolení nastavení:
+Předdefinované sady pravidel analyzátoru zahrnují tři RuleSets, které mají vliv na všechna pravidla v&mdash;balíčku, a to tak, že jsou všechny, které je zakazují, a jeden, který respektuje výchozí závažnost jednotlivých pravidel a nastavení povolení:
 
 - AllRulesEnabled.ruleset
 - AllRulesDisabled.ruleset
-- AllRulesDefault.ruleset
+- AllRulesDefault. RuleSet
 
-Kromě toho existují dvě sady pravidel pro každou kategorii pravidla v balíčku, například výkon a zabezpečení. Jedna sada pravidel povolí všechna pravidla pro kategorii a jedna sada pravidel respektuje výchozí nastavení závažnosti a povolení pro každé pravidlo v dané kategorii.
+Kromě toho existují dvě sady pravidel pro každou kategorii pravidel v balíčku, jako je například výkon nebo zabezpečení. Jedna sada pravidel povoluje všechna pravidla pro kategorii a jedna sada pravidel respektuje výchozí závažnost a nastavení povolení pro každé pravidlo v kategorii.
 
-[Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) zahrnuje analyzátor balíček NuGet sady pravidel v těchto kategoriích, které shoda sady pravidel pro analýzu statického kódu starší verze "FxCop" k dispozici:
+Balíček [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer obsahuje sady pravidel pro následující kategorie, které odpovídají sadám pravidel dostupným pro starší verze analýzy:
 
 - návrh
 - dokumentace
@@ -71,8 +71,8 @@ Kromě toho existují dvě sady pravidel pro každou kategorii pravidla v balí�
 
 ## <a name="see-also"></a>Viz také:
 
-- [Analyzátory – nejčastější dotazy](analyzers-faq.md)
-- [Přehled analyzátory pro .NET Compiler Platform](roslyn-analyzers-overview.md)
-- [Instalace analyzátorů](install-roslyn-analyzers.md)
-- [Použití analyzátory](use-roslyn-analyzers.md)
-- [Použití sady pravidel k seskupování pravidel analýzy kódu](using-rule-sets-to-group-code-analysis-rules.md)
+- [Nejčastější dotazy k analyzátorům](analyzers-faq.md)
+- [Přehled analyzátorů .NET Compiler Platform](roslyn-analyzers-overview.md)
+- [Nainstalovat analyzátory](install-roslyn-analyzers.md)
+- [Použít analyzátory](use-roslyn-analyzers.md)
+- [Použití sad pravidel k seskupení pravidel analýzy kódu](using-rule-sets-to-group-code-analysis-rules.md)

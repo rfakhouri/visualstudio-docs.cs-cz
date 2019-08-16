@@ -2,7 +2,7 @@
 title: Obecný odkaz (vývoj pro Office v sadě Visual Studio)
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,49 +14,48 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f1370dc0eb159b3f566e6ddcba6e1317cfb441a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427962"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551513"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Obecný odkaz (vývoj pro Office v sadě Visual Studio)
-  Tato část obsahuje technické podrobnosti o projektů Microsoft Office v sadě Visual Studio.
+  Tato část obsahuje technické podrobnosti o systém Microsoft Office projektů v aplikaci Visual Studio.
 
-> [!NOTE]
-> Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>V tomto oddílu
-- [Primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md)
+- [Sestavení primární spolupráce pro Office](../vsto/office-primary-interop-assemblies.md)
 
- Zobrazuje seznam sestavení primární spolupráce, které jsou k dispozici pro instalaci se sadou Office a obsahuje stručný popis jednotlivých.
+ Obsahuje seznam primárních spolupracujících sestavení, která jsou k dispozici pro instalaci v systému Office a stručný popis každého z nich.
 
-- [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md)
 
- Popisuje, jak jsou manifesty aplikací používat v řešeních pro systém Office.
+ Popisuje, jak se používají manifesty aplikace v řešeních pro systém Office.
 
-- [Manifesty nasazení pro řešení pro systém Office](../vsto/deployment-manifests-for-office-solutions.md)
+- [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)
 
- Popisuje, jak jsou manifesty nasazení používaná řešení Office.
+ Popisuje, jak se používají manifesty nasazení řešení pro systém Office.
 
-- [Reference k uživatelskému rozhraní &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
+- [Referenční informace &#40;o uživatelském rozhraní pro vývoj pro Office v sadě Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
 
- Vypíše seznam témat, která popisují možnosti, které se zobrazují v různých dialogových oknech, windows a další uživatelská rozhraní.
+ Obsahuje témata vysvětlující možnosti, které se zobrazí v různých dialogových oknech, oknech a dalších uživatelských rozhraních.
 
 - [Chybové zprávy &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
 
- Seznam témat, která vysvětlují chybové zprávy pro projekty pro Office.
+ Obsahuje témata, která vysvětlují chybové zprávy pro projekty Office.
 
 ## <a name="related-sections"></a>Související oddíly
-- [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Začínáme &#40;s vývojem pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
- Obsahuje odkazy na informace o instalaci, šablony projektů, primární spolupracující sestavení Office a co je nového ve vývoji Office.
+ Obsahuje odkazy na informace o nastavení, šablonách projektů, sestaveních primární spolupráce se sadou Office a novinkách o tom, co je nového ve vývoji pro Office.
 
-- [Ukázky vývoje pro Office a názorné postupy](../vsto/office-development-samples-and-walkthroughs.md)
+- [Ukázky a návody pro vývoj pro Office](../vsto/office-development-samples-and-walkthroughs.md)
 
- Popisuje, ukázky a podrobné návody pro vytváření projektů pro systém Office v sadě Visual Studio, který usnadňuje získávání vědomostí a syntaxi, struktury a techniky použít k vytváření řešení pro systém Office.
+ Popisuje ukázky kódu a podrobné návody pro vytváření projektů Office v sadě Visual Studio, které vám můžou pomáhat se syntaxí, strukturou a postupy pro sestavování řešení pro systém Office.
 
-- [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)
+- [Návrh a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)
 
- Obsahuje odkazy na informace o tom, jak hned začít vytvářet projekty sady Office pomocí sady Visual Studio.
+ Obsahuje odkazy na informace o tom, jak začít vytvářet projekty Office pomocí sady Visual Studio.

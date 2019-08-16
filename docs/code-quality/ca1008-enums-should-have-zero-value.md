@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7db2961022a6d3a168812b5b85552e21dcd3f9da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 502033d2adffd640d2af6ee8d36b0c0f3cd71472
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842515"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547928"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Výčty by měly mít nulovou hodnotu
 
@@ -32,41 +32,41 @@ ms.locfileid: "65842515"
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
 |Kategorie|Microsoft.Design|
-|Narušující změna|Bez konce – po zobrazení výzvy k přidání **žádný** hodnotu výčtu bez příznaku. Zásadní – po zobrazení výzvy k přejmenujte nebo odeberte všechny hodnoty výčtu.|
+|Narušující změna|Bez přerušení – když se zobrazí výzva k přidání hodnoty **none** do výčtu bez příznaků. Přerušení – když se zobrazí výzva k přejmenování nebo odebrání všech hodnot výčtu.|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Výčet bez použité <xref:System.FlagsAttribute?displayProperty=fullName> nedefinuje člena, který má hodnotu nula. Nebo výčet, který má použité <xref:System.FlagsAttribute> definuje člen s hodnotou nula, ale jeho název není 'None'. Nebo výčet definuje víc členů s hodnotou nula.
+Výčet bez aplikovaného <xref:System.FlagsAttribute?displayProperty=fullName> objektu nedefinuje člena, který má nulovou hodnotu. Nebo výčet, který má použit <xref:System.FlagsAttribute> , definuje člena, který má hodnotu nula, ale jeho název není ' None '. Nebo výčet definuje více členů s nulovou hodnotou.
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné výčtů, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vypadá pouze v externě viditelných výčtech, ale to je [konfigurovatelné](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Výchozí hodnota neinicializovaného výčtu je stejně jako jiné hodnotové typy, je nula. Výčet bez příznaků atributů by měl definovat člen, který má hodnotu nula, tak, aby výchozí hodnota je platná hodnota výčtu. V případě potřeby, název člena 'None'. V opačném případě přiřadíte nulový nejčastěji používané člena. Ve výchozím nastavení Pokud hodnota první člen výčtu není nastavená v deklaraci, jeho hodnota je nula.
+Výchozí hodnota neinicializovaného výčtu, stejně jako jiné typy hodnot, je nula. Výčet bez příznaků musí definovat člen, který má nulovou hodnotu, takže výchozí hodnota je platná hodnota výčtu. V případě potřeby pojmenujte člena ' None '. V opačném případě přiřaďte k nejčastěji používanému členu nulu. Ve výchozím nastavení platí, že pokud hodnota prvního člena výčtu není v deklaraci nastavena, je jeho hodnota nula.
 
-Pokud výčet, který má <xref:System.FlagsAttribute> použít definuje člen s nulovou hodnotou, její název by měl být "Žádný" k označení, že ve výčtu byly nastaveny žádné hodnoty. Použití člena s nulovou hodnotou pro jakékoli jiné účely bylo v rozporu s použití <xref:System.FlagsAttribute> , AND a bitové operátory jsou zbytečné s členem. Z toho vyplývá, že pouze jednoho člena by měla být přiřazena hodnota nula. Pokud dojde k více členů, které mají nulovou hodnotu ve výčtu s atributy příznaky `Enum.ToString()` vrátí nesprávné výsledky pro členy, kteří nejsou nula.
+Pokud výčet, který má <xref:System.FlagsAttribute> použit, definuje člena s nulovou hodnotou, jeho název by měl být None, aby označoval, že ve výčtu nebyly nastaveny žádné hodnoty. Použití člena s nulovou hodnotou pro jakýkoliv jiný účel je <xref:System.FlagsAttribute> v rozporu s používáním v tom, že operátory and a nebo jsou nepoužitelné u člena. To znamená, že hodnota nula by měla být přiřazena pouze jednomu členu. Pokud se v výčtu Flags-Attribute vyčísluje více členů, které mají hodnotu `Enum.ToString()` nula, vrátí nesprávné výsledky pro členy, kteří nejsou nula.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení tohoto pravidla pro výčty bez příznaků atributů, definujte člen, který má hodnotu nula; Jedná se o změnu pevné. Pro výčty příznaků s atributy, které definovat člen s hodnotou nula název tohoto člena 'None' a odstranit všechny členy, které mají hodnotu nula; Toto je zásadní změnu.
+Chcete-li opravit porušení tohoto pravidla pro výčty s atributy bez příznaků, definujte člena, který má hodnotu nula; Tato změna je nevýznamná. Pro výčty s atributy, které definují člena s nulovou hodnotou, pojmenujte tohoto člena ' None ' a odstraňte všechny ostatní členy, které mají hodnotu nula; Toto je zásadní změna.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Nepotlačujte upozornění tohoto pravidla s výjimkou s atributy příznaky výčty, které byly dříve součástí.
+Potlačit upozornění z tohoto pravidla s výjimkou výčtů s atributy, které byly odeslány dříve.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1008.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (návrh). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (návrh). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Příklad
 
-Následující příklad ukazuje dva výčty, které splňují pravidla a výčet, `BadTraceOptions`, který porušuje pravidla.
+Následující příklad ukazuje dva výčty, které splňují pravidlo a výčet, `BadTraceOptions`, který porušuje pravidlo.
 
 [!code-cpp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CPP/ca1008-enums-should-have-zero-value_1.cpp)]
 [!code-csharp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CSharp/ca1008-enums-should-have-zero-value_1.cs)]
@@ -75,10 +75,10 @@ Následující příklad ukazuje dva výčty, které splňují pravidla a výče
 ## <a name="related-rules"></a>Související pravidla
 
 - [CA2217: Neoznačujte výčty pomocí FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700: Nepojmenovávejte výčtu hodnoty 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712: Nezačínejte hodnoty výčtu s názvem typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1700: Nejmenujte hodnoty výčtu ' rezervované '](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712: Neprefixovat hodnoty výčtu s názvem typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 - [CA1028: Úložiště výčtu by měl být Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
-- [CA1027: Označte výčty pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA1027: Označení výčtů pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Viz také:
 

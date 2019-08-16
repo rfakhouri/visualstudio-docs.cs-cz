@@ -1,5 +1,5 @@
 ---
-title: Potlačení upozornění analýzy kódu
+title: Potlačit upozornění analýzy kódu
 ms.date: 12/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,32 +14,32 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 39fd588a51771aae79d22d2d7f0a02a648184c05
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 60fcb13c978d614d40964bd8d6da21e8cf41f00f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821566"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551075"
 ---
-# <a name="suppress-code-analysis-warnings"></a>Potlačení upozornění analýzy kódu
+# <a name="suppress-code-analysis-warnings"></a>Potlačit upozornění analýzy kódu
 
-Často je užitečné k označení, že varování není použitelné. To znamená pro členy týmu, který byl recenzován kód a, který lze potlačit upozornění. Zdroj potlačení (ISS) používá <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut upozornění můžete potlačit. Atribut mohou být umístěny blízko segmentu kódu, které upozornění vygenerovalo. Můžete přidat <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut ke zdrojovému souboru tak, že zadáte v, nebo můžete použít na upozornění v místní nabídce **seznam chyb** a přidejte ji automaticky.
+Je často vhodné označit, že upozornění není k dispozici. To znamená, že členové týmu byli zkontrolováni kód a že je možné upozornění potlačit. In-source potlačení (ISS) používá <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut k potlačení upozornění. Atribut může být umístěn blízko segmentu kódu, který vygeneroval upozornění. <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Atribut můžete přidat do zdrojového souboru jeho zadáním do, nebo můžete použít místní nabídku na upozornění v **Seznam chyb** k jeho automatickému přidání.
 
-<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Atribut je podmíněný atribut, který je součástí metadata IL sestavení spravovaného kódu, pouze v případě, že je definován symbol kompilace CODE_ANALYSIS v době kompilace.
+<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Atribut je podmíněný atribut, který je obsažen v metadatech Il sestavení spravovaného kódu, pouze pokud je symbol kompilace CODE_ANALYSIS definován v době kompilace.
 
-V C++vyhodnocovací, použijte makra certifikační Autority\_POTLAČIT\_zprávy nebo certifikační Autorita\_globální\_SUPPRESS_MESSAGE v hlavičkovém souboru při přidání atributu.
-
-> [!NOTE]
-> Potlačení v zdroj byste neměli používat u sestavení pro vydání, aby se zabránilo omylem přesouvání potlačení v zdroje metadat. Navíc vzhledem k zpracování potlačení-source, může být snížený výkon vaší aplikace.
+V C++/CLI použijte k přidání atributu v\_hlavičkovém souboru, že\_se má přidat atribut, pomocí certifikační autority maker potlačit\_zprávu nebo globální SUPPRESS_MESSAGE certifikační autority\_.
 
 > [!NOTE]
-> Pokud provádíte migraci do projektu sady Visual Studio 2017 nebo Visual Studio 2019, může vás prudce potýkají s velký počet upozornění analýzy kódu. Tato upozornění pocházejí z [analyzátory Roslyn](roslyn-analyzers-overview.md). Pokud vám ještě nejsou připravené k vyřešení upozornění, můžete je všechny potlačit výběrem **analyzovat** > **spustit analýzu kódu a potlačit aktivních problémů**.
+> V sestavách vydaných verzí byste neměli používat potlačení ve zdrojovém kódu, abyste zabránili nechtěnému přesouvání metadat potlačení ve zdroji. Z důvodu nákladů na zpracování potlačení v rámci zdroje je navíc možné snížit výkon vaší aplikace.
+
+> [!NOTE]
+> Pokud migrujete projekt do sady Visual Studio 2017 nebo Visual Studio 2019, může dojít k náhlému vynechání velkého počtu upozornění analýzy kódu. Pokud nejste připraveni na opravu upozornění, můžete je potlačit kliknutím na možnost **analyzovat** > **spuštění analýza kódu a potlačit aktivní problémy**.
 >
-> ![Spustit analýzu kódu a potlačit problémy v sadě Visual Studio](media/suppress-active-issues.png)
+> ![Spustit analýzu kódu a potlačit problémy v aplikaci Visual Studio](media/suppress-active-issues.png)
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage – atribut
 
-Při výběru **potlačit** z nabídky upozornění analýzy kódu v kontextu nebo klikněte pravým tlačítkem **seznam chyb**, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> je ve vašem kódu nebo globální potlačení projektu přidat atribut soubor.
+Pokud zvolíte možnost **potlačit** z kontextu nebo v místní nabídce upozornění analýzy kódu v **Seznam chyb**, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> přidá se do kódu nebo do globálního souboru potlačení projektu atribut.
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Atribut má následující formát:
 
@@ -55,17 +55,17 @@ Při výběru **potlačit** z nabídky upozornění analýzy kódu v kontextu ne
 CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")
 ```
 
-Vlastnosti atributu:
+Mezi vlastnosti atributu patří:
 
-- **Kategorie** – kategorie, ve které je definováno pravidlo. Další informace o kategoriích pravidla analýzy kódu, naleznete v tématu [spravovat upozornění kódu](../code-quality/code-analysis-for-managed-code-warnings.md).
+- **Category** (kategorie) – kategorie, ve které je definováno pravidlo. Další informace o kategoriích pravidla analýzy kódu najdete v tématu [Upozornění spravovaného kódu](../code-quality/code-analysis-for-managed-code-warnings.md).
 
-- **ID kontroly** -identifikátor pravidla. Podpora zahrnuje jak krátký a dlouhý název identifikátor pravidla. Krátký název je CAXXXX; dlouhý název je CAXXXX:FriendlyTypeName.
+- **CheckId** – identifikátor pravidla. Podpora zahrnuje krátký i dlouhý název identifikátoru pravidla. Krátký název je CAXXXX; dlouhé jméno je CAXXXX: FriendlyTypeName.
 
-- **Odůvodnění** – text, který se používá k dokumentu důvod pro potlačení zprávy.
+- **Odůvodnění** – text, který se používá k dokumentaci důvodu pro potlačení zprávy.
 
-- **ID zprávy** – jedinečný identifikátor pro každou zprávu problém.
+- **MessageID** – jedinečný identifikátor problému pro každou zprávu.
 
-- **Obor** – cíl, na kterém je potlačeno upozornění. Pokud cíl není zadán, je nastavena na cíl atributu. Podporované [obory](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) patří následující:
+- **Rozsah** – cíl, na kterém je upozornění potlačeno. Pokud není cíl zadán, je nastaven na cíl atributu. Mezi [](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) podporované obory patří následující:
 
   - `module`
 
@@ -75,33 +75,33 @@ Vlastnosti atributu:
 
   - `member`
 
-  - `namespace` – Tento obor potlačí upozornění pro obor názvů, samotného. Upozornění s typy v rámci oboru názvů je nepotlačuje.
+  - `namespace`– Tento rozsah potlačuje upozornění proti samotnému oboru názvů. Potlačí upozornění na typy v rámci oboru názvů.
 
-  - `namespaceanddescendants` – Tento obor (Nový pro Visual Studio 2019) potlačí upozornění v oboru názvů a všechny jeho odvozené symboly. `namespaceanddescendants` Hodnota je platná pouze pro analyzátory Roslyn a je ignorován binární, na základě FxCop statické analýzy.
+  - `namespaceanddescendants`– (Novinka pro Visual Studio 2019) Tento rozsah potlačuje upozornění v oboru názvů a všechny jeho odvozené symboly. `namespaceanddescendants` Hodnota se ignoruje v rámci analýzy starší verze.
 
-- **Cíl** – identifikátor, který se používá k určení cíle, na kterém je potlačeno upozornění. Musí obsahovat položky plně kvalifikovaný název.
+- **Target** – identifikátor, který se používá k určení cíle, na kterém je upozornění potlačeno. Musí obsahovat plně kvalifikovaný název položky.
 
-## <a name="suppressmessage-usage"></a>SuppressMessage využití
+## <a name="suppressmessage-usage"></a>Využití SuppressMessage
 
-Upozornění analýzy kódu jsou potlačeny na úrovni, do kterého <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut se používá. Například atribut lze použít v sestavení, modulu, typu, člen nebo parametr úroveň. Účelem tohoto objektu je úzce spárovat informace o potlačení kódu kde dojde k porušení zásady.
+Upozornění analýzy kódu jsou potlačena na úrovni, na kterou <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> je atribut použit. Atribut lze například použít na úrovni sestavení, modulu, typu, člena nebo parametru. Účelem tohoto je pevně spojit informace o potlačení s kódem, kde dojde k porušení.
 
-Obecný tvar potlačení obsahuje kategorie pravidel a identifikátor pravidla, která obsahuje reprezentaci volitelné čitelný název pravidla. Příklad:
+Obecná podoba potlačení zahrnuje kategorii pravidla a identifikátor pravidla, který obsahuje nepovinné uživatelsky čitelné reprezentace názvu pravidla. Příklad:
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-Pokud jsou kvůli výkonu přísné pro minimalizaci potlačení v zdroje metadat, můžete vynechat název pravidla. Kategorie pravidel a jeho ID pravidla společně tvoří pravidlo dostatečně jedinečný identifikátor. Příklad:
+Pokud existují přísné důvody pro výkon pro minimalizaci v metadatech potlačení zdroje, je možné název pravidla vynechat. Kategorie pravidla a ID pravidla společně tvoří dostatečně jedinečný identifikátor pravidla. Příklad:
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
-Z důvodu udržovatelnosti vynechání název pravidla se nedoporučuje.
+V případě důvodů zachování nedoporučujeme název pravidla vynechat.
 
-## <a name="suppress-selective-violations-within-a-method-body"></a>Potlačit selektivní narušení v těle metody
+## <a name="suppress-selective-violations-within-a-method-body"></a>Potlačit selektivní porušení v těle metody
 
-Potlačení atributy lze použít pro metodu, ale nemůže být vložený, v těle metody. To znamená, že jsou potlačeny porušování je konkrétní pravidlo, pokud chcete přidat <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut do metody.
+Atributy potlačení lze použít pro metodu, ale nelze je vložit do těla metody. To znamená, že všechna porušení určitého pravidla jsou potlačena při přidání <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributu do metody.
 
-V některých případech můžete chtít potlačit konkrétní instanci porušení zásady, třeba tak, že budoucí kód není automaticky vyloučit z pravidel nástroje Analýza kódu. Určitá pravidla analýzy kódu bylo možné provést pomocí `MessageId` vlastnost <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut. Obecně platí, starší verze pravidla pro porušení na konkrétním symbolem (lokální proměnná ani parametr) dodržování `MessageId` vlastnost. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) je příkladem takové pravidlo. Nicméně, nerespektují starší pravidla pro porušení na spustitelný kód (bez symbolů) `MessageId` vlastnost. Kromě toho, nerespektují analyzátory .NET Compiler Platform ("Roslyn") `MessageId` vlastnost.
+V některých případech můžete chtít potlačit určitou instanci porušení, například tak, aby budoucí kód nebyl automaticky vyloučen z pravidla analýzy kódu. Určitá pravidla analýzy kódu vám umožňují použít `MessageId` vlastnost <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributu. Obecně platí, že `MessageId` starší pravidla pro porušení určitého symbolu (místní proměnná nebo parametr) respektují vlastnost. [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) je příkladem takového pravidla. Starší pravidla pro porušení u spustitelného kódu (bez symbolu) ale nerespektují `MessageId` vlastnost. Kromě toho .NET Compiler Platform ("Roslyn") analyzátory nerespektují `MessageId` vlastnost.
 
-Potlačit konkrétní symbol porušení pravidla, zadejte název symbolu `MessageId` vlastnost <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut. Následující příklad ukazuje kód pomocí dvou porušení [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;jeden pro `name` proměnné a jeden pro `age` proměnné. Pouze porušení pro `age` symbol je potlačeno.
+Chcete-li potlačit určité porušení symbolu pravidla, zadejte název symbolu pro `MessageId` vlastnost <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributu. Následující příklad ukazuje kód se dvěma porušeními [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;jeden pro `name` proměnnou a jednu pro `age` proměnnou. Pouze porušení pro `age` symbol je potlačeno.
 
 ```vb
 Public Class Animal
@@ -138,37 +138,37 @@ public class Animal
 
 ## <a name="generated-code"></a>Generovaný kód
 
-Spravovaný kód kompilátory a některé nástroje třetích stran generování kódu pro usnadnění vývoje rychlý kód. Kód generovaný kompilátorem, který se zobrazí ve zdrojových souborech obvykle označené `GeneratedCodeAttribute` atribut.
+Kompilátory spravovaného kódu a některé nástroje třetích stran generují kód pro usnadnění rychlého vývoje kódu. Kód generovaný kompilátorem, který se zobrazí ve zdrojových souborech, je obvykle `GeneratedCodeAttribute` označen atributem.
 
-Můžete zvolit, jestli se má potlačit upozornění analýzy kódu a chyby pro vygenerovaný kód. Informace o tom, jak potlačit takové upozornění a chyby najdete v tématu [jak: Potlačení upozornění pro vygenerovaný kód](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
+Můžete zvolit, zda chcete potlačit upozornění a chyby analýzy kódu pro vygenerovaný kód. Informace o tom, jak potlačit taková upozornění a chyby, [najdete v tématu How to: Potlačit upozornění pro vygenerovaný kód](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
 > [!NOTE]
-> Analýza kódu ignoruje `GeneratedCodeAttribute` při použití na celé sestavení nebo jeden parametr.
+> Analýza kódu se `GeneratedCodeAttribute` ignoruje, když se použije na celé sestavení nebo na jeden parametr.
 
 ## <a name="global-level-suppressions"></a>Potlačení na globální úrovni
 
-Nástroj pro analýzu spravovaného kódu prozkoumá `SuppressMessage` atributy, které jsou použity na úrovni sestavení, modulu, typu, člen nebo parametr. Je také vyvoláno porušení proti prostředky a obory názvů. Tato porušení se musí použít na globální úrovni a jsou obor a cílem. Například následující zpráva potlačí narušení obor názvů:
+Nástroj Analýza spravovaného kódu prověřuje `SuppressMessage` atributy, které jsou aplikovány na úrovni sestavení, modulu, typu, člena nebo parametru. Také se aktivují narušení proti prostředkům a oborům názvů. Tato porušení musí být použita na globální úrovni a mají rozsah a cíl. Například následující zpráva potlačuje porušení oboru názvů:
 
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Kdy potlačit upozornění se `namespace` oboru, potlačí upozornění pro obor názvů, samotného. Upozornění s typy v rámci oboru názvů je nepotlačuje.
+> Potlačíte-li upozornění `namespace` s rozsahem, potlačí upozornění na samotný obor názvů. Potlačí upozornění na typy v rámci oboru názvů.
 
-Žádné potlačení lze vyjádřit zadáním výslovného oboru. Tyto potlačení musí být aktivní na globální úrovni. Potlačení na úrovni člena nelze zadat pomocí upravení typu.
+Jakékoli potlačení lze vyjádřit zadáním explicitního oboru. Tato potlačení musí být živá na globální úrovni. Nemůžete zadat potlačení na úrovni člena upravení typem.
 
-Potlačení na globální úrovni jsou jediným způsobem, jak potlačí zobrazování zpráv, které odkazují na kód generovaný kompilátorem, které nejsou namapované na výslovně zadaný uživatelský zdroj. Například následující kód potlačí porušení proti vyslaném kompilátor konstruktor:
+Potlačení globální úrovně jsou jediným způsobem, jak potlačit zprávy, které odkazují na kód generovaný kompilátorem, který není namapován na explicitně zadaný zdroj uživatele. Například následující kód potlačí porušení proti konstruktoru generovanému kompilátorem:
 
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target` vždy obsahuje plně kvalifikovaný název.
+> `Target`vždy obsahuje plně kvalifikovaný název položky.
 
-## <a name="global-suppression-file"></a>Soubor globálního potlačení
+## <a name="global-suppression-file"></a>Globální soubor potlačení
 
-Soubor globálního potlačení udržuje potlačení, které jsou potlačení na globální úrovni nebo potlačení, u kterých není cíl. Například pro porušení úrovně sestavení jsou uložena v tomto souboru. Kromě toho některé technologie ASP.NET jsou uložena v tomto souboru vzhledem k tomu, že nastavení na úrovni projektu nejsou k dispozici pro kódu na pozadí formuláře. Soubor globálního potlačení je vytvořen a přidán do projektu poprvé, kterou jste vybrali **v souboru potlačení projektu** možnost **potlačit** v příkaz **seznam chyb**okna.
+Globální soubor potlačení uchovává potlačení, která jsou buď potlačená, nebo potlačení, která neurčují cíl. Například potlačení pro porušení na úrovni sestavení se ukládají do tohoto souboru. Kromě toho jsou v tomto souboru uložena některá potlačení ASP.NET, protože nastavení na úrovni projektu nejsou k dispozici pro kód za formulářem. Globální soubor potlačení je vytvořen a přidán do projektu při prvním výběru možnosti **v souboru potlačení projektu** v příkazu potlačit v okně **Seznam chyb** .
 
 ## <a name="see-also"></a>Viz také:
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
-- [Používání analyzátorů Roslyn](../code-quality/use-roslyn-analyzers.md)
+- [Použití analyzátorů kódu](../code-quality/use-roslyn-analyzers.md)

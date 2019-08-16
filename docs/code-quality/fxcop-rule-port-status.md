@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e635f2cbbeda67c4fbed760eb7e57dfcf140d15
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604877"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551067"
 ---
 # <a name="fxcop-rule-port-status"></a>Stav portu pravidla FxCop
 
-Pokud jste dříve používali analýzu statického kódu v předchozí verzi sady Visual Studio, můžete si všimnout, že tato pravidla jsou k dispozici v aktuální implementaci jako [analyzátory FxCop](install-fxcop-analyzers.md). Tato stránka obsahuje seznam nakonfigurovaných pravidel a také těch, které nebyly přepsány a zda existují plány, které je mají přenést.
+Pokud jste dříve používali analýzu statického kódu v aplikaci Visual Studio, můžete si všimnout, že tato pravidla jsou k dispozici v aktuální implementaci jako [analyzátory FxCop](install-fxcop-analyzers.md). Tato stránka obsahuje seznam nakonfigurovaných pravidel a také těch, které nebyly přepsány a zda existují plány, které je mají přenést.
 
 ## <a name="ported-rules"></a>Přenesená pravidla
 
@@ -208,7 +208,7 @@ Sada pravidel, která se nerozšířila na [analyzátory FxCop](install-fxcop-an
 
 ### <a name="rules-that-may-be-ported"></a>Pravidla, která je možné přenést
 
-Následující pravidla analýzy statických kódu FxCop ještě nebyla implementována jako analyzátory, ale přesto může být. Důvodem může být blokující technický důvod nebo jednoduché pravidlo s nižší prioritou. Další informace o stavu přenosu každého pravidla získáte kliknutím na odkaz ve sloupci **problém sledování** .
+Následující starší pravidla analýzy FxCop ještě nebyla implementována jako analyzátory, ale přesto může být. Důvodem může být blokující technický důvod nebo jednoduché pravidlo s nižší prioritou. Další informace o stavu přenosu každého pravidla získáte kliknutím na odkaz ve sloupci **problém sledování** .
 
 ID pravidla | Problém sledování
 --- | ---
@@ -271,7 +271,7 @@ ID pravidla | Problém sledování
 
 ### <a name="deprecated-rules"></a>Zastaralá pravidla
 
-Následující pravidla analýzy statických kódů FxCop jsou zastaralá a nebudou implementována jako analyzátory. Další informace můžete najít podle ID pravidla (například **CA1009**) na [stránce problémy GitHubu Roslyn-analyzers](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
+Následující starší pravidla analýzy FxCop jsou zastaralá a nebudou implementována jako analyzátory. Další informace můžete najít podle ID pravidla (například **CA1009**) na [stránce problémy GitHubu Roslyn-analyzers](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)

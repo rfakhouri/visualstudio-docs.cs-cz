@@ -1,8 +1,8 @@
 ---
-title: Získejte Začínáme (vývoj pro Office v sadě Visual Studio)
+title: Začínáme (vývoj pro Office v sadě Visual Studio)
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,79 +14,78 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b5a666c2c0b558cf7f85e478c43ed9d469f4864c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7a8a49f2b72745dac18a46fe8567578bca090834
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427926"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551493"
 ---
-# <a name="get-started-office-development-in-visual-studio"></a>Získejte Začínáme (vývoj pro Office v sadě Visual Studio)
-  Tento oddíl obsahuje témata, které vám pomůžou začít používat Microsoft Office developer tools v sadě Visual Studio.
+# <a name="get-started-office-development-in-visual-studio"></a>Začínáme (vývoj pro Office v sadě Visual Studio)
+  Tato část obsahuje témata, která vám pomohou začít používat nástroje systém Microsoft Office Developer Tools v aplikaci Visual Studio.
 
-> [!NOTE]
-> Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>V tomto oddílu
-- [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Přehled &#40;vývoje řešení pro systém Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
  Poskytuje základní informace pro vývoj řešení pro systém Office v sadě Visual Studio.
 
-- [Změny v návrhu projektů Office cílených na rozhraní .NET Framework 4 nebo .NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
+- [Změny v návrhu projektů Office cílených na .NET Framework 4 nebo .NET Framework 4,5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
- Popisuje nový návrh projektů Office cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější a uvádí nejnovější změny kódu v projektech Office při migraci na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější.
+ Popisuje nový návrh projektů Office, které cílí na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, a uvádí zásadní změny kódu v projektech Office, které migrujete [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] do nebo později.
 
-- [Zadejte dostupné funkce podle aplikace systému Office a projektu](../vsto/features-available-by-office-application-and-project-type.md)
+- [Dostupné funkce podle aplikace systému Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md)
 
- Popisuje, které aplikace a projekty jsou nutné k použití funkce vývoj pro Office, jako je rozšiřitelnost pásu karet, vlastní podokna úloh, podokna akcí a oblasti formuláře.
+ Popisuje, které aplikace a projekty jsou vyžadovány pro použití funkcí vývoje Office, jako je například rozšiřitelnost pásu karet, vlastní podokna úloh, podokna akcí a oblasti formulářů.
 
 - [Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 
- Obsahuje informace a postup pro instalaci vývojových nástrojů systému Office, modulu runtime, který umožňuje řešení Office spuštění na počítačích koncových uživatelů a primární spolupracující sestavení Office.
+ Poskytuje informace a kroky pro instalaci nástrojů pro vývoj pro Office, modul runtime, který umožňuje, aby se řešení Office spouštěla na počítačích koncových uživatelů a v primárních sestaveních spolupráce pro Office.
 
-- [Získat spuštěného programu přizpůsobení úrovni dokumentu pro aplikaci Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
+- [Začínáme s přizpůsobením na úrovni dokumentu v aplikaci Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 
- Poskytuje přehled důležitých konceptů, které jsou potřeba k použití sady Visual Studio k vytvoření přizpůsobení na úrovni dokumentu pro Excel.
+ Poskytuje souhrn důležitých konceptů, které jsou potřebné k použití sady Visual Studio k vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Excel.
 
-- [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
+- [Začínáme programovat přizpůsobení na úrovni dokumentu pro Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 
- Poskytuje přehled důležitých konceptů, které jsou potřeba k použití sady Visual Studio k vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Word.
+ Poskytuje souhrn důležitých konceptů, které jsou potřebné k použití sady Visual Studio k vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Word.
 
 - [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 
- Poskytuje přehled důležitých konceptů, které jsou potřebné k použití sady Visual Studio k vytvoření úrovni aplikace Visual Studio Tools pro Office (VSTO) doplňky aplikací sady Microsoft Office.
+ Poskytuje souhrn důležitých konceptů, které jsou potřeba k používání sady Visual Studio k vytváření doplňků VSTO (Application Visual Studio Tools for Office) pro systém Microsoft Office aplikace.
 
-- [Řešení VBA a Office v sadě Visual Studio porovnání](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)
+- [Srovnání řešení VBA a Office v sadě Visual Studio](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)
 
- Popisuje relativní výhody jazyka Visual Basic pro aplikace a vývojářské nástroje balíku Office v sadě Visual Studio pro vývoj řešení Office.
+ Popisuje relativní síly jazyk Visual Basic for Application a vývojové nástroje pro Office v sadě Visual Studio pro vývoj řešení pro systém Office.
 
 - [Běžné úlohy při programování pro systém Office](../vsto/common-tasks-in-office-programming.md)
 
- Obsahuje odkazy na témata, které pomohou vyřešit běžné problémy.
+ Obsahuje odkazy na témata, která mohou pomáhat při řešení běžných problémů.
 
 ## <a name="related-sections"></a>Související oddíly
-- [Ukázky vývoje pro Office a názorné postupy](../vsto/office-development-samples-and-walkthroughs.md)
+- [Ukázky a návody pro vývoj pro Office](../vsto/office-development-samples-and-walkthroughs.md)
 
- Obsahuje odkazy na ukázkové aplikace a témata, která poskytují podrobné pokyny pro provádění běžných úloh.
+ Obsahuje odkazy na ukázkové aplikace a témata, které poskytují podrobné pokyny pro provádění běžných úloh.
 
-- [Architektura řešení pro Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [Architektura řešení pro systém Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 
- Popisuje součásti řešení pro systém Office a jak pracují v době návrhu a modulu runtime.
+ Popisuje součásti řešení pro systém Office a způsob práce v době návrhu a modulu runtime.
 
-- [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)
+- [Návrh a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)
 
- Poskytuje informace o tom, jak vytvořit projekt sady Office a konfigurovat projektu v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+ Poskytuje informace o tom, jak vytvořit projekt Office a nakonfigurovat projekt v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 - [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)
 
- Poskytuje informace o tom, jak implementovat kód a přizpůsobení uživatelského rozhraní v Office project.
+ Poskytuje informace o tom, jak implementovat kód a přizpůsobení uživatelského rozhraní v projektu sady Office.
 
 - [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)
 
- Poskytuje informace o požadavcích na zabezpečení pro řešení Office.
+ Poskytuje informace o požadavcích zabezpečení pro řešení Office.
 
-- [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)
+- [Nasazení řešení pro systém Office](../vsto/deploying-an-office-solution.md)
 
- Poskytuje informace o způsobu zpřístupnění řešení Office uživatelům a popisuje hlavní problémy, které je třeba zvážit při výběru metody pro nasazení a nastavení zabezpečení.
+ Obsahuje informace o tom, jak zpřístupnit řešení Office uživatelům a popisuje hlavní problémy, které je potřeba vzít v úvahu při výběru metody nasazení a nastavení zabezpečení.
 
-- [Visual Studio Tools for Office technické články a vizuální postupy](http://go.microsoft.com/fwlink/?LinkID=106640) obsahuje odkazy na videa a technické články o řešení pro Office vytvořená pomocí sady Visual Studio.
+- [Visual Studio Tools for Office technické články a Visual how for TOS](http://go.microsoft.com/fwlink/?LinkID=106640) Obsahuje odkazy na videa a technické články o řešeních pro systém Office vytvořených pomocí sady Visual Studio.

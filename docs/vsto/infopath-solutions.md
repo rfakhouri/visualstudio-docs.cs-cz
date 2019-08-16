@@ -1,6 +1,6 @@
 ---
 title: InfoPath – řešení
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,52 +18,51 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7342524d1e7682fd088c4f7ea44037a32c220e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d227e3c87810156e6e4262a79cfcc9b126d68417
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441744"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551734"
 ---
 # <a name="infopath-solutions"></a>InfoPath – řešení
-  Visual Studio poskytuje šablony projektu, které slouží k vytváření doplňků VSTO pro Microsoft Office InfoPath 2013 a Infopathu 2010. InfoPath není k dispozici v Office 2016.
+  Visual Studio poskytuje šablony projektů, pomocí kterých můžete vytvářet doplňky VSTO pro systém Microsoft Office InfoPath 2013 a InfoPath 2010. Aplikace InfoPath není v sadě Office 2016 k dispozici.
 
 > [!NOTE]
-> Můžete stále vytvořit doplňku VSTO pro InfoPath i v případě, že jste nainstalovali Office 2016. Stačí nainstalujte aplikace InfoPath 2013 nebo Office 2013-souběžně s Office 2016.
+> Doplněk VSTO pro InfoPath můžete přesto vytvořit i v případě, že jste nainstalovali Office 2016. Stačí nainstalovat InfoPath 2013 nebo Office 2013 souběžně s Office 2016.
 
  [!INCLUDE[appliesto_infoallapp](../vsto/includes/appliesto-infoallapp-md.md)]
 
+[!include[Add-ins note](includes/addinsnote.md)]
+
+ Doplňky VSTO pro InfoPath jsou podobné doplňkům VSTO pro jiné aplikace systém Microsoft Office. Tyto typy řešení se skládají ze sestavení, které je načteno aplikací. Koncoví uživatelé mohou mít přístup k funkcím tohoto sestavení bez ohledu na to, který formulář nebo šablonu formuláře jsou otevřené. Další informace o doplňcích VSTO najdete v tématu Začínáme s [programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md) a [architektury doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md).
+
 > [!NOTE]
-> Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+> Visual Studio 2015 neobsahuje projekty šablon formuláře aplikace InfoPath, které byly zadány v předchozích verzích sady Visual Studio. Nelze také použít sadu Visual Studio 2015 k otevření nebo úpravám projektu šablony formuláře aplikace InfoPath, který byl vytvořen v předchozí verzi sady Visual Studio. Můžete však otevřít a upravit projekt šablony formuláře aplikace InfoPath pomocí Visual Studio Tools for Applications. Další informace najdete v tématu [práce s projekty VSTO 2008 v infopathu 2010.](http://go.microsoft.com/fwlink/?LinkID=218903).
 
- Doplňků VSTO pro InfoPath se podobají doplňků VSTO pro jiné aplikace Microsoft Office. Tyto druhy řešení obsahovat sestavení, který je načten aplikací. Koncoví uživatelé mají přístup k funkcím tohoto sestavení bez ohledu na to, kterou formulář nebo formulář šablony je otevřený. Další informace o doplňcích VSTO najdete v tématu [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md) a [doplňků VSTO architektura](../vsto/architecture-of-vsto-add-ins.md).
+## <a name="automate-infopath-by-using-an-add-in"></a>Automatizace InfoPathu pomocí doplňku
+ Chcete-li získat přístup k objektovému modelu aplikace InfoPath z doplňku Office VSTO vytvořeného pomocí nástrojů pro vývoj pro Office v `Application` sadě Visual Studio `ThisAddIn` , použijte pole třídy v projektu. `Application` Pole<xref:Microsoft.Office.Interop.InfoPath.Application> vrátí objekt, který představuje aktuální instanci aplikace InfoPath. Další informace najdete v tématu [programové doplňky VSTO](../vsto/programming-vsto-add-ins.md).
 
-> [!NOTE]
-> Visual Studio 2015 nezahrnuje projekty šablony formuláře InfoPath, které byly k dispozici v předchozích verzích sady Visual Studio. Visual Studio 2015 také nelze použít k otevření nebo upravit projekt šablony formuláře InfoPath, který byl vytvořen v předchozí verzi sady Visual Studio. Můžete však otevřít a upravit projekt šablony formuláře InfoPath pomocí Visual Studio Tools for Applications. Další informace najdete v tématu [pracovat s projekty VSTO 2008 v Infopathu 2010.](http://go.microsoft.com/fwlink/?LinkID=218903).
+ Při volání do objektového modelu aplikace InfoPath z doplňku VSTO použijete typy, které jsou k dispozici v primárním sestavení vzájemné spolupráce pro aplikaci InfoPath. Primární definiční sestavení funguje jako most mezi spravovaným kódem v doplňku VSTO a objektovým modelem COM v aplikaci InfoPath. Všechny typy v primárním sestavení vzájemné spolupráce aplikace InfoPath jsou definovány <xref:Microsoft.Office.Interop.InfoPath> v oboru názvů. Další informace o sestavení primární spolupráce aplikace InfoPath najdete v tématu [informace o primárním sestavení vzájemné spolupráce aplikace systém Microsoft Office InfoPath](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72). Další informace o primárních sestaveních vzájemné spolupráce najdete v tématu [vývoj řešení pro &#40;Office&#41; přehled VSTO](../vsto/office-solutions-development-overview-vsto.md) a [sestavení primární spolupráce Office](../vsto/office-primary-interop-assemblies.md).
 
-## <a name="automate-infopath-by-using-an-add-in"></a>Automatizace aplikace InfoPath s využitím doplňku
- Chcete-li objektový model aplikace InfoPath přístup z Office doplňku VSTO vytvořené pomocí nástroje pro vývoj pro Office v sadě Visual Studio, použijte `Application` pole `ThisAddIn` třídu ve vašem projektu. `Application` Pole vrátí <xref:Microsoft.Office.Interop.InfoPath.Application> objekt, který představuje aktuální instanci aplikace InfoPath. Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).
-
- Při volání do objektového modelu aplikace InfoPath v doplňku VSTO pomocí typů, které jsou k dispozici ve primárního spolupracujícího sestavení pro aplikaci InfoPath. Primární spolupracující sestavení funguje jako most mezi spravovaného kódu v doplňku VSTO a objekt modelu COM v aplikaci InfoPath. Všechny typy ve primárního spolupracujícího sestavení aplikace InfoPath, které jsou definovány v <xref:Microsoft.Office.Interop.InfoPath> oboru názvů. Další informace o primární spolupracující sestavení aplikace InfoPath, naleznete v tématu [primární sestavení zprostředkovatele komunikace o the Microsoft Office InfoPath](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72). Další informace o primárních sestavení vzájemné spolupráce obecné naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) a [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).
-
-## <a name="customize-the-user-interface-of-infopath-by-using-an-add-in"></a>Přizpůsobení uživatelského rozhraní aplikace InfoPath s využitím doplňku
- Při vytvoření doplňku VSTO pro InfoPath, máte několik různých možností přizpůsobení uživatelského rozhraní. Následující tabulka uvádí některé z těchto možností.
+## <a name="customize-the-user-interface-of-infopath-by-using-an-add-in"></a>Přizpůsobení uživatelského rozhraní aplikace InfoPath pomocí doplňku
+ Při vytváření doplňku VSTO pro InfoPath máte několik různých možností přizpůsobení uživatelského rozhraní. Některé z těchto možností jsou uvedené v následující tabulce.
 
 |Úloha|Další informace|
 |----------|--------------------------|
 |Vytvoření vlastního podokna úloh.|[Vlastní podokna úloh](../vsto/custom-task-panes.md)|
-|Přidáte vlastní karty na pás karet v aplikaci InfoPath.|[Přizpůsobte pás karet pro aplikaci InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|
+|Přidejte vlastní karty na pás karet v aplikaci InfoPath.|[Přizpůsobení pásu karet pro aplikaci InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|
 
- Další informace o přizpůsobení uživatelského rozhraní aplikace InfoPath a další aplikace Microsoft Office, naleznete v tématu [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).
+ Další informace o přizpůsobení uživatelského rozhraní aplikace InfoPath a dalších systém Microsoft Officech aplikací najdete v tématu [přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md).
 
 ## <a name="see-also"></a>Viz také:
-- [O primárního spolupracujícího sestavení Microsoft Office InfoPath](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)
+- [O sestaveních primární spolupráce aplikace systém Microsoft Office InfoPath](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)
 - [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
-- [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Přehled &#40;vývoje řešení pro systém Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)
-- [Postupy: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)
+- [Postupy: Vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Programové doplňky VSTO](../vsto/programming-vsto-add-ins.md)
 - [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)
-- [Primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md)
+- [Sestavení primární spolupráce pro Office](../vsto/office-primary-interop-assemblies.md)
 - [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)
-- [InfoPath 2010 ve vývoji Office](http://go.microsoft.com/fwlink/?LinkId=199012)
+- [InfoPath 2010 ve vývoji pro Office](http://go.microsoft.com/fwlink/?LinkId=199012)

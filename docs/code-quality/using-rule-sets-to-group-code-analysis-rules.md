@@ -11,26 +11,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bae627e08faed01ab0efc8e64373ff86ed5c877e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825081"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548022"
 ---
-# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Použití sady pravidel k seskupování pravidel analýzy kódu
+# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Použití sad pravidel k seskupení pravidel analýzy kódu
 
-Při konfiguraci analýzy kódu v sadě Visual Studio, můžete zvolit ze seznamu předdefinovaných *sad pravidel*. Sada pravidel je seskupení pravidel analýzy kódu, které vyhledávají cílené problémy a zvláštní podmínky pro daný projekt. Například můžete použít sadu pravidel, která je navržená k vyhledání kódu veřejně dostupných rozhraní API. Můžete také použít sadu pravidel, která zahrnuje všechna dostupná pravidla.
+Při konfiguraci analýzy kódu v sadě Visual Studio můžete vybrat ze seznamu předdefinovaných *sad pravidel*. Sada pravidel je seskupení pravidel analýzy kódu, která identifikují cílené problémy a specifické podmínky pro daný projekt. Můžete například použít sadu pravidel, která je navržena pro prohledávání kódu pro veřejně dostupná rozhraní API. Můžete také použít sadu pravidel, která zahrnuje všechna dostupná pravidla.
 
-Můžete přizpůsobit sadu přidáním nebo odstraněním pravidel nebo změnou pravidel závažnosti jako upozornění nebo chyby v pravidel **seznam chyb**. Sada vlastních pravidel může splnit potřebu konkrétního vývojového prostředí. Při přizpůsobování sady pravidel obsahuje editor sad pravidel vyhledávání a filtrování nástroje, které vám proces usnadní.
+Můžete přizpůsobit sadu pravidel přidáním nebo odstraněním pravidel nebo změnou závažnosti pravidla tak, aby se zobrazila jako upozornění nebo chyby v **Seznam chyb**. Sada vlastních pravidel může splnit potřebu konkrétního vývojového prostředí. Při přizpůsobení sady pravidel poskytuje editor sady pravidel nástroje pro vyhledávání a filtrování, které vám pomůžou postupovat.
 
-Sady pravidel jsou k dispozici pro [statické analýzy spravovaného kódu](how-to-configure-code-analysis-for-a-managed-code-project.md), [analýzu kódu C++](using-rule-sets-to-specify-the-cpp-rules-to-run.md), a [analyzátory Roslyn](analyzer-rule-sets.md).
+Sady pravidel jsou k dispozici pro [analýzu spravovaného kódu](analyzer-rule-sets.md), [starší verzi analýzy spravovaného kódu](how-to-configure-code-analysis-for-a-managed-code-project.md)a [ C++ analýzu kódu](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
-## <a name="rule-set-format"></a>Sada pravidel formátu
+## <a name="rule-set-format"></a>Formát sady pravidel
 
-Sada pravidel je zadaný ve formátu XML *.ruleset* souboru. Pravidla, která se skládá z ID a *akce*, jsou seskupené podle ID analyzátoru a obor názvů v souboru.
+Sada pravidel je určena ve formátu XML v souboru *. ruleset* . Pravidla, která se skládají z ID a *Akce*, jsou seskupena podle ID analyzátoru a oboru názvů v souboru.
 
-Obsah *.ruleset* vypadá podobně jako tato konfigurace XML souboru:
+Obsah souboru *. ruleset* vypadá podobně jako tento kód XML:
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -54,11 +54,11 @@ Obsah *.ruleset* vypadá podobně jako tato konfigurace XML souboru:
 ```
 
 > [!TIP]
-> Je snazší [upravit sadu pravidel](../code-quality/working-in-the-code-analysis-rule-set-editor.md) v grafickém **editoru nastavte pravidlo** než ručně.
+> Je snazší [Upravit sadu pravidel](../code-quality/working-in-the-code-analysis-rule-set-editor.md) v **editoru grafických sad pravidel** než ručně.
 
-## <a name="specify-a-rule-set-for-a-project"></a>Zadejte sadu pravidel pro projekt
+## <a name="specify-a-rule-set-for-a-project"></a>Zadat sadu pravidel pro projekt
 
-Pravidlo nastavené pro projekt je určená **CodeAnalysisRuleSet** vlastnost v souboru projektu sady Visual Studio. Příklad:
+Sada pravidel pro projekt je určena vlastností **CodeAnalysisRuleSet** v souboru projektu sady Visual Studio. Příklad:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

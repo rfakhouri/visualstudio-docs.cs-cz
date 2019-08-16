@@ -1,6 +1,6 @@
 ---
-title: 'Postupy: Instalace primárních sestavení vzájemné spolupráce Office'
-ms.date: 02/02/2017
+title: 'Postupy: Nainstalovat primární spolupracující sestavení pro Office'
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,29 +13,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b6f701e3962a25e7239c829d409a3ad69a1833a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ee6755a2d795d2018136785986a5a346ddc07dc6
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419598"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551790"
 ---
-# <a name="how-to-install-office-primary-interop-assemblies"></a>Postupy: Instalace primárních sestavení vzájemné spolupráce Office
-  Při instalaci sady Office, nainstalujte primární definiční sestavení Microsoft Office (PIA).
+# <a name="how-to-install-office-primary-interop-assemblies"></a>Postupy: Nainstalovat primární spolupracující sestavení pro Office
+  Při instalaci Office nainstalujte systém Microsoft Office primární spolupracující sestavení (PIA).
 
-## <a name="to-install-the-pias-when-you-install-office"></a>Chcete-li nainstalovat sestavení PIA při instalaci sady Office
+[!include[Add-ins note](includes/addinsnote.md)]
 
-1. Ujistěte se, že máte verzi rozhraní .NET Framework, která je starší než 2.0.
+## <a name="to-install-the-pias-when-you-install-office"></a>Instalace PIA při instalaci Office
 
-2. Instalace aplikace Microsoft Office a ujistěte se, že **Podpora programovatelnosti rozhraní .NET** výběru pro aplikace, kterou chcete rozšířit (Tato funkce je součástí výchozí instalace).
+1. Ujistěte se, že máte verzi .NET Framework, která není starší než 2,0.
+
+2. Nainstalujte systém Microsoft Office a ujistěte se, že je pro aplikace, které chcete zvětšit, vybraná funkce **Podpora programovatelnosti rozhraní .NET** (Tato funkce je součástí výchozí instalace).
 
     > [!WARNING]
-    > Ve výchozím nastavení jsou při sestavování, není nutné distribuovat uživatelům PIA předpokladem k použití vašeho doplňku VSTO nebo přizpůsobení PIA pro vložené ve vašem řešení.
+    > Ve výchozím nastavení jsou ve vašem řešení při sestavování služby PIA vloženy do vašeho řešení, takže nemusíte distribuovat PIA uživatelům jako předpoklady pro používání doplňku VSTO nebo přizpůsobení.
 
 ## <a name="see-also"></a>Viz také:
-- [Primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md)
-- [Postupy: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Sestavení primární spolupráce pro Office](../vsto/office-primary-interop-assemblies.md)
+- [Postupy: Cílové aplikace Office prostřednictvím primárních sestavení spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Postupy: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
-- [Postupy: Nainstalovat Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
-- [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Postupy: Nainstalovat Visual Studio Tools for Office distribuovatelné za běhu](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [Přehled &#40;vývoje řešení pro systém Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Začínáme &#40;s vývojem pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

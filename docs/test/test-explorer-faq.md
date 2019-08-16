@@ -1,6 +1,6 @@
 ---
 title: Průzkumník testů – nejčastější dotazy
-ms.date: 11/07/2018
+ms.date: 08/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,16 +14,16 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661978"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551857"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Průzkumník testů sady Visual Studio – nejčastější dotazy
-
 ::: moniker range=">=vs-2019"
+
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Kde je v aplikaci Visual Studio 2019 seskupení podle vlastností?
 Toto seskupení vlastností se přesunulo na sloupec. S vícevrstvou a přizpůsobitelnou hierarchií v aplikaci Visual Studio 2019 verze 16,2 jsme si mysleli, že jako seskupení vytvořilo nepotřebnou vizuální složitost, včetně vlastností. V tomto designu jsme jednoznačně naslouchají názoru. https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
 
@@ -31,38 +31,43 @@ Prozatím můžete kliknout pravým tlačítkem na sloupec v Průzkumníku test�
 
 ![Zobrazení sloupce](media/vs-2019/trait-column.png)
 ![vlastností – filtr vlastností sloupce](media/vs-2019/trait-column-filter.png)
-
 ::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Zjišťování dynamických testů
 
 **Průzkumník testů nezjišťuje moje testy, které jsou dynamicky definovány. (Například teorie, vlastní adaptéry, vlastní vlastnosti, #ifdefs atd.) Jak lze zjistit tyto testy?**
 
-Sestavení projektu a ujistěte se, že je zapnuté zjišťování na základě sestavení **nástroje** > **možnosti** > **Test**.
-
-[Zjišťování testů v reálném čase](https://go.microsoft.com/fwlink/?linkid=862824) je založen zdroj testu zjišťování. Ho nelze zjistit testy, které používají teorie, vlastní adaptéry, vlastní vlastnosti `#ifdef` příkazy a další, protože máte definovaný v době běhu. Sestavení je vyžadován pro tyto testy na přesně najít. V sadě Visual Studio 2017 verze 15.6 a novější se spustí zjišťování na základě sestavení (tradiční prozkoumání) až po sestavení. Toto nastavení znamená, že v reálném čase testu zjišťování najde libovolný počet testů, jak jde při úpravách a zjišťování na základě sestavení umožňuje dynamicky definované testů se zobrazí po sestavení. Zjišťování testů v reálném čase zlepšuje odezvu, ale nepřesahuje umožňují získat úplné a přesné výsledky po sestavení.
+::: moniker range=">=vs-2019"
+Sestavte projekt pro spuštění zjišťování založeného na sestavení.
+::: moniker-end
+::: moniker range="vs-2017"
+Sestavte projekt a ujistěte se, že je v **nabídce nástroje** > **test** **možností** > zapnuto zjišťování na základě sestavení.
+::: moniker-end
+[Zjišťování testů v reálném čase](https://go.microsoft.com/fwlink/?linkid=862824) je založen zdroj testu zjišťování. Ho nelze zjistit testy, které používají teorie, vlastní adaptéry, vlastní vlastnosti `#ifdef` příkazy a další, protože máte definovaný v době běhu. Sestavení je vyžadován pro tyto testy na přesně najít. V sadě Visual Studio 2017 verze 15.6 a novější se spustí zjišťování na základě sestavení (tradiční prozkoumání) až po sestavení. Toto nastavení znamená, že v reálném čase testu zjišťování najde libovolný počet testů, jak jde při úpravách a zjišťování na základě sestavení umožňuje dynamicky definované testů se zobrazí po sestavení. Zjišťování testů v reálném čase vylepšuje rychlost odezvy, ale pořád umožňuje získat úplné a přesné výsledky po sestavení.
 
 ## <a name="test-explorer--plus-symbol"></a>Průzkumník testů "+" (plus) symbol
 
 **Co dělá "+" (plus) symbol, který se zobrazí v horní zobrazený řádek znamená Průzkumník testů?**
 
-"+" (Plus) symbol označuje, že další testy mohou být zjištěny po sestavení, tak dlouho, dokud je zapnuté zjišťování na základě sestavení. Tento symbol se zobrazí dynamicky definované v případě, že testy se zjistí ve vašem projektu.
+Symbol plus (+) označuje, že další testy mohou být zjištěny po sestavení při spuštění zjišťování založeného na sestavení. Tento symbol se zobrazí dynamicky definované v případě, že testy se zjistí ve vašem projektu.
 
 ![Souhrn řádku znaménko plus](media/testex-plussymbol.png)
 
+::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>Zjišťování na základě sestavení
 
 **Zjišťování na základě sestavení je už nefunguje pro svůj projekt. Jak můžu ho znova zapnout?**
 
-Přejděte na **nástroje** > **možnosti** > **testovací** a zaškrtněte políčko u **můžete zjistit také ze zkompilovaných sestavení po testy sestavení.**
+Přejít na > **Možnosti** nástroje test a zaškrtněte políčko pro další zjišťování testů z sestavených sestavení po sestaveních. >
 
 ![Možnosti založené na sestavení](media/testex-toolsoptions.png)
+::: moniker-end
 
 ## <a name="real-time-test-discovery"></a>Zjišťování testů v reálném čase
 
 **Testy se teď zobrazují v Průzkumníku testů při psaní, aniž byste museli svůj projekt sestavovat. Co se změnilo?**
 
-Tato funkce se nazývá [zjišťování testů v reálném čase](https://go.microsoft.com/fwlink/?linkid=862824). Roslyn analyzátor používá k vyhledání testů a naplnit Průzkumníka testů v reálném čase, aniž by bylo potřeba svůj projekt sestavit. Další informace o chování zjišťování testů pro dynamicky definované testy, jako je například teorie nebo vlastní vlastnosti naleznete v tématu Nejčastější dotazy k č. 1.
+Tato funkce se nazývá [zjišťování testů v reálném čase](https://go.microsoft.com/fwlink/?linkid=862824). Roslyn analyzátor používá k vyhledání testů a naplnit Průzkumníka testů v reálném čase, aniž by bylo potřeba svůj projekt sestavit. Další informace o chování zjišťování testů pro dynamicky definované testy, jako jsou teorie nebo vlastní vlastnosti, naleznete v tématu [dynamické zjišťování testů](#dynamic-test-discovery).
 
 ## <a name="real-time-test-discovery-compatibility"></a>Kompatibilita zjišťování testů v reálném čase
 
@@ -92,7 +97,7 @@ Hierarchické zobrazení seřadí testy podle abecedy jako a podle výsledku. Po
 
 ## <a name="test-explorer-hierarchy-view"></a>Zobrazení hierarchie Průzkumníka testů
 
-**V okně hierarchie existuje jsou předány, se nezdařilo, přeskočené a nelze spustit ikonami vedle jejich seskupení projektu, Namespace a třídy. Co znamenají tyto ikony?**
+**V zobrazení hierarchie jsou předány, selhaly, vynechány a nespuštěny ikony vedle seskupení nadřazených uzlů. Co znamenají tyto ikony?**
 
 Ikony vedle seskupení projektu, Namespace a třída zobrazení stavu testů v rámci tohoto seskupení. V následující tabulce.
 
@@ -110,6 +115,7 @@ Filtr cesty k souboru v poli Hledat v **Průzkumníku testů** byl odebrán v ap
 
 V aplikaci Visual Studio 2019 se odeberou některé testovacího okna rozhraní API, které byly dříve označeny veřejné, ale nebyly nikdy oficiálně popsané. Označí se jako "zastaralé" v sadě Visual Studio 2017 poskytnout programu rozšíření včasného varování. Naši znalostní bázi měl velmi málo rozšíření nalezena tato rozhraní API a s nimi provádějí závislost. Patří mezi ně `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken`, a `SearchFilterTokenType`. Pokud se tato změna ovlivní vaše rozšíření, dejte nám vědět, vyplňte chybu na [komunity vývojářů](https://developercommunity.visualstudio.com).
 
+::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>Testovací adaptér referenční dokumentace pro NuGet
 
 **V sadě Visual Studio 2017 verze 15.8 mé testy se zjistí, ale nemusíte spouštět.**
@@ -124,6 +130,7 @@ Namísto použití rozšíření adaptérů testů, jsou nutné k použití bal�
 > Pokud používáte NUnit 2 Test Adapter a jsou nelze provést migraci k NUnit 3 test adapter, můžete ji vypnout toto nové chování zjišťování v sadě Visual Studio verzi 15.8 v **nástroje** > **možnosti**  >  **Test**.
 
 ![Test Explorer adaptér chování v možnostech nástrojů](media/testex-adapterbehavior.png)
+::: moniker-end
 
 ## <a name="uwp-testcontainer-was-not-found"></a>UPW TestContainer nebyl nalezen
 

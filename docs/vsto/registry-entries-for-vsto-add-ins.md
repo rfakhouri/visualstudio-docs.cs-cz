@@ -1,6 +1,6 @@
 ---
 title: Položky registru pro doplňky VSTO
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,96 +16,98 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de101e33e94889a44fe9bc4e21db857763b1c9aa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c0fe4061fe6aefc1e6849bddea1dbab9551b9884
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447034"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551372"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Položky registru pro doplňky VSTO
-  Při nasazení doplňků VSTO, které jsou vytvořené pomocí sady Visual Studio, musíte vytvořit konkrétní sady položek registru. Tyto položky registru poskytují informace, které umožní aplikaci Microsoft Office zjišťovat a načíst doplňku VSTO.
+  Pokud nasazujete doplňky VSTO vytvořené pomocí sady Visual Studio, musíte vytvořit konkrétní sadu položek registru. Tyto položky registru obsahují informace, které umožní aplikaci systém Microsoft Office vyhledat a načíst doplněk VSTO.
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
- Při sestavování projektu sady Visual Studio vytvoří tyto položky registru na vývojovém počítači, takže můžete snadno spouštět a ladit doplňku VSTO. Pokud nasazení doplňku VSTO pomocí ClickOnce, jsou automaticky vytvořeny položky registru v počítači koncového uživatele. Pokud nasazení doplňku VSTO pomocí Instalační služby systému Windows, musíte nakonfigurovat projekt InstallShield Limited Edition vytvořit položky registru v počítači koncového uživatele.
+[!include[Add-ins note](includes/addinsnote.md)]
 
- Další informace o tom, jak použít položky registru během procesu načtení pro doplňky VSTO najdete v tématu [doplňků VSTO architektura](../vsto/architecture-of-vsto-add-ins.md).
+ Při sestavování projektu Visual Studio vytvoří tyto položky registru ve vývojovém počítači, aby bylo možné snadno spustit a ladit doplněk VSTO. Pokud použijete ClickOnce k nasazení doplňku VSTO, položky registru se automaticky vytvoří v počítači koncového uživatele. Pokud použijete Instalační služba systému Windows k nasazení doplňku VSTO, je nutné nakonfigurovat projekt InstallShield limit Edition tak, aby vytvořil položky registru v počítači koncového uživatele.
+
+ Další informace o tom, jak se položky registru používají během procesu načítání pro doplňky VSTO, najdete v tématu [architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
-> V tomto tématu se text *ID doplňku* představuje jedinečné ID pro váš doplněk VSTO. Ve výchozím nastavení ID je název vašeho sestavení doplňku VSTO.
+> V tomto tématu *ID doplňku* textu představuje jedinečné ID doplňku VSTO. Ve výchozím nastavení je toto ID název vašeho sestavení doplňku VSTO.
 
-## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Registrace doplňků VSTO pro aktuálního uživatele a všichni uživatelé
- Když doplňku VSTO je nainstalována, lze jej zaregistrovat dvěma způsoby:
+## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Registrovat doplňky VSTO pro aktuálního uživatele a všechny uživatele
+ Když je doplněk VSTO nainstalovaný, dá se zaregistrovat dvěma způsoby:
 
-- Pro aktuálního uživatele (to znamená, je dostupná jenom pro uživatele, který je přihlášen k počítači při instalaci doplňku VSTO). V takovém případě položky registru jsou vytvořeny v rámci **HKEY_CURRENT_USER**.
+- Pouze pro aktuálního uživatele (to znamená, že je k dispozici pouze pro uživatele, který je přihlášen k počítači při instalaci doplňku VSTO). V tomto případě se položky registru vytvoří pod **HKEY_CURRENT_USER**.
 
-- Pro všechny uživatele (každý uživatel, který se přihlásí k počítači, můžete použít doplňku VSTO). V takovém případě položky registru jsou vytvořeny v rámci **HKEY_LOCAL_MACHINE**.
+- Pro všechny uživatele (tj. libovolný uživatel, který se k počítači přihlašuje) může použít doplněk VSTO. V takovém případě jsou položky registru vytvořeny v klíči **HKEY_LOCAL_MACHINE**.
 
-  Všechny doplňků VSTO, které vytvoříte pomocí sady Visual Studio lze zaregistrovat pro aktuálního uživatele. Doplňky VSTO však lze zaregistrovat pro všechny uživatele v určitých scénářích. Těchto scénářů závisí na verzi Microsoft Office v počítači a způsobu nasazení doplňku VSTO.
+  Všechny doplňky VSTO, které vytvoříte pomocí sady Visual Studio, můžete pro aktuálního uživatele zaregistrovat. Doplňky VSTO ale můžete zaregistrovat jenom pro všechny uživatele v určitých scénářích. Tyto scénáře závisí na verzi systém Microsoft Office v počítači a na způsobu nasazení doplňku VSTO.
 
-### <a name="microsoft-office-version"></a>Verze aplikace Microsoft Office
- Aplikace Office může načíst doplňků VSTO, které jsou registrovány v rámci **HKEY_LOCAL_MACHINE** nebo **HKEY_CURRENT_USER**.
+### <a name="microsoft-office-version"></a>Verze systém Microsoft Office
+ Aplikace Office mohou načíst doplňky VSTO, které jsou registrovány pod **HKEY_LOCAL_MACHINE** nebo **HKEY_CURRENT_USER**.
 
- Načtení doplňků VSTO, které jsou registrovány v rámci **HKEY_LOCAL_MACHINE**, počítačích musí být balíček aktualizace 976477 nainstalované. Další informace najdete na webu [http://go.microsoft.com/fwlink/?LinkId=184923](http://go.microsoft.com/fwlink/?LinkId=184923).
+ Aby bylo možné načíst doplňky VSTO, které jsou registrovány v **HKEY_LOCAL_MACHINE**, musí mít počítače nainstalovaný balíček aktualizace 976477. Další informace najdete na webu [http://go.microsoft.com/fwlink/?LinkId=184923](http://go.microsoft.com/fwlink/?LinkId=184923).
 
 ### <a name="deployment-type"></a>Typ nasazení
- Pokud nasazení doplňku VSTO pomocí ClickOnce, doplňku VSTO lze zaregistrovat pouze pro aktuálního uživatele. Důvodem je, že ClickOnce podporuje pouze vytváření klíčů v rámci **HKEY_CURRENT_USER**. Pokud chcete zaregistrovat doplňku VSTO pro všechny uživatele v počítači, musíte použít instalační služby systému Windows k nasazení doplňku VSTO. Další informace o těchto typech nasazení najdete v tématu [nasazení řešení Office s použitím technologie ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) a [nasazení řešení Office s použitím Instalační služby systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
+ Pokud použijete ClickOnce k nasazení doplňku VSTO, doplněk VSTO se dá zaregistrovat jenom pro aktuálního uživatele. To je způsobeno tím, že ClickOnce podporuje pouze vytváření klíčů pod **HKEY_CURRENT_USER**. Pokud chcete zaregistrovat doplněk VSTO pro všechny uživatele v počítači, musíte k nasazení doplňku VSTO použít Instalační služba systému Windows. Další informace o těchto typech nasazení naleznete v tématu [nasazení řešení pro systém Office pomocí technologie ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) a [nasazení řešení pro systém Office pomocí Instalační služba systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
 ## <a name="registry-entries"></a>Položky registru
- Požadované položky registru doplňku VSTO jsou umístěny v následujícím klíči registru pro všechny aplikace s výjimkou Visio, kde *kořenové* je **HKEY_CURRENT_USER** nebo **HKEY_LOCAL_MACHINE** .
+ Požadované položky registru doplňku VSTO jsou umístěné v následujícím klíči registru pro všechny aplikace s výjimkou aplikace Visio, kde *root* je **HKEY_CURRENT_USER** nebo **HKEY_LOCAL_MACHINE**.
 
- **Všechny aplikace s výjimkou aplikace Visio**
+ **Všechny aplikace s výjimkou Visia**
 
 |Verze Office|Konfigurační cesta|
 |--------------------|------------------------|
-|32bitová|*Kořenové*\Software\Microsoft\Office\\*název_aplikace*\Addins\\*ID doplňku*|
-|64bitová|*Kořenové*\Software\Wow6432Node\Microsoft\Office\\*název_aplikace*\Addins\\*ID doplňku*|
+|32bitová|\Software\Microsoft\Office\\*název aplikace*\Addins\\*ID doplňku v* kořenovém adresáři|
+|64bitová|\Software\Wow6432Node\Microsoft\Office\\*název aplikace*\Addins\\*ID doplňku v* kořenovém adresáři|
 
  **Visio**
 
 |Verze Office|Konfigurační cesta|
 |--------------------|------------------------|
-|32bitová|*Kořenové*\Software\Microsoft\Visio\Addins\\*ID doplňku*|
-|64bitová|*Kořenové*\Software\Wow6432Node\Visio\Addins\\*ID doplňku*|
+|32bitová|\\*ID doplňku* kořenového \Software\Microsoft\Visio\Addins|
+|64bitová|\\*ID doplňku* kořenového \Software\Wow6432Node\Visio\Addins|
 
- V následující tabulce jsou uvedeny položky v tomto klíči registru.
+ V následující tabulce jsou uvedeny položky v rámci tohoto klíče registru.
 
-|Entry|Type|Value|
+|Entry|type|Value|
 |-----------|----------|-----------|
-|**Popis**|REG_SZ|Povinný parametr. Stručný popis doplňku VSTO.<br /><br /> Tento popis se zobrazí, když uživatel vybere doplňku VSTO v **Add-Ins** podokně **možnosti** dialogové okno v aplikaci Microsoft Office.|
-|**FriendlyName**|REG_SZ|Povinný parametr. Popisný název VSTO doplněk, který se zobrazí v **doplňky modelu COM** dialogové okno v aplikaci Microsoft Office. Výchozí hodnota je ID doplňku VSTO|
-|**LoadBehavior**|REG_DWORD|Povinný parametr. Hodnota, která určuje, kdy se aplikace pokusí načíst doplňku VSTO a aktuální stav doplňku VSTO (načteny nebo uvolněny).<br /><br /> Tato položka je standardně nastavenou hodnotu 3, která určuje, že doplňku VSTO je načten při spuštění. Další informace najdete v tématu [hodnotách LoadBehavior](#LoadBehavior). **Poznámka:**  Pokud uživatel zakáže doplňku VSTO, tato akce změní **LoadBehavior** hodnotu **HKEY_CURRENT_USER** podregistr registru. Pro každého uživatele, hodnota **LoadBehavior** přepíše výchozí hodnoty v podregistru HKEY_CURRENT_USER **LoadBehavior** definované v **HKEY_LOCAL_MACHINE** hive.|
-|**Manifest**|REG_SZ|Povinný parametr. Úplná cesta manifest nasazení pro doplňku VSTO. Cesta může být umístění na místním počítači sdílen v síti (UNC) nebo webového serveru (HTTP).<br /><br /> Pokud nasazení řešení pomocí Instalační služby systému Windows, je nutné přidat předponu **file:///** k **manifestu** cestu. Musíte také připojte řetězec  **&#124;vstolocal** (to znamená, znakem svislé čáry **&#124;** následovaný **vstolocal**) na konec této cesty. Tím se zajistí, že vaše řešení se načte z instalační složky, nikoli z mezipaměti ClickOnce. Další informace najdete v tématu [nasazení řešení Office s použitím Instalační služby systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Poznámka:**  Při vytvoření doplňku VSTO ve vývojovém počítači Visual Studio automaticky přidá  **&#124;vstolocal** řetězec, který má tato položka registru.|
+|**Popis**|REG_SZ|Povinný parametr. Stručný popis doplňku VSTO.<br /><br /> Tento popis se zobrazí, když uživatel vybere doplněk VSTO v podokně **Doplňky** v dialogovém okně **možnosti** v aplikaci systém Microsoft Office.|
+|**FriendlyName**|REG_SZ|Povinný parametr. Popisný název doplňku VSTO, který se zobrazí v dialogovém okně **Doplňky modelu COM** v aplikaci systém Microsoft Office. Výchozí hodnota je ID doplňku VSTO.|
+|**LoadBehavior**|REG_DWORD|Povinný parametr. Hodnota, která určuje, kdy se aplikace pokusí načíst doplněk VSTO a aktuální stav doplňku VSTO (načtený nebo uvolněný).<br /><br /> Ve výchozím nastavení je tato položka nastavená na hodnotu 3, která určuje, že doplněk VSTO se načte při spuštění. Další informace najdete v tématu [LoadBehavior Values](#LoadBehavior). **Poznámka:**  Pokud uživatel zakáže doplněk VSTO, tato akce upraví hodnotu **LoadBehavior** v podregistru **HKEY_CURRENT_USER** . Pro každého uživatele hodnota hodnoty **LoadBehavior** v podregistru HKEY_CURRENT_USER přepíše výchozí **LoadBehavior** definovaný v podregistru **HKEY_LOCAL_MACHINE** .|
+|**Manifest**|REG_SZ|Povinný parametr. Úplná cesta k manifestu nasazení doplňku VSTO. Cesta může být umístění v místním počítači, sdílená síťová složka (UNC) nebo webový server (HTTP).<br /><br /> Použijete-li Instalační služba systému Windows k nasazení řešení, je nutné přidat předponu **File:///** do cesty k **manifestu** . Musíte také připojit řetězec  **&#124;vstolocal** (to znamená, že znak **&#124;** kanálu následovaný **vstolocal**) na konec této cesty. Tím se zajistí, že se vaše řešení načte z instalační složky místo mezipaměti ClickOnce. Další informace najdete v tématu [nasazení řešení pro Office pomocí Instalační služba systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Poznámka:**  Když ve vývojovém počítači vytvoříte doplněk VSTO, Visual Studio automaticky připojí řetězec  **&#124;vstolocal** k této položce registru.|
 
-### <a name="OutlookEntries"></a> Položky registru pro oblasti formuláře Outlooku
- Pokud vytvoříte vlastní formulář regionu v doplňku VSTO pro Outlook, další registru položky se používají k registraci oblasti formuláře aplikace Outlook. Tyto položky jsou vytvářeny pod klíčem registru pro každou třídu zpráv, který podporuje oblasti formuláře. Tyto klíče registru jsou v následujícím umístění, kde *kořenové* je **HKEY_CURRENT_USER** nebo **HKEY_LOCAL_MACHINE**.
+### <a name="OutlookEntries"></a>Položky registru pro oblasti formulářů aplikace Outlook
+ Pokud vytvoříte vlastní oblast formuláře v doplňku VSTO pro Outlook, použijí se k registraci oblasti formuláře v Outlooku další položky registru. Tyto položky jsou vytvořeny v jiném klíči registru pro každou třídu zprávy, kterou oblast formuláře podporuje. Tyto klíče registru jsou v následujícím umístění, kde *root* je **HKEY_CURRENT_USER** nebo **HKEY_LOCAL_MACHINE**.
 
- *Kořenové*\Software\Microsoft\Office\Outlook\FormRegions\\*message – třída*
+ Kořenová\\*třída zpráv* \Software\Microsoft\Office\Outlook\FormRegions
 
- Stejně jako jiné položky registru sdílí všechny doplňky VSTO, Visual Studio vytvoří formuláři položky registru oblast na vývojovém počítači při sestavování projektu. Pokud nasazení doplňku VSTO pomocí ClickOnce, jsou automaticky vytvořeny položky registru v počítači koncového uživatele. Pokud nasazení doplňku VSTO pomocí Instalační služby systému Windows, musíte nakonfigurovat projekt InstallShield Limited Edition vytvořit položky registru v počítači koncového uživatele.
+ Podobně jako ostatní položky registru sdílené všemi doplňky VSTO vytvoří Visual Studio položky registru oblasti formuláře ve vývojovém počítači při sestavování projektu. Pokud použijete ClickOnce k nasazení doplňku VSTO, položky registru se automaticky vytvoří v počítači koncového uživatele. Pokud použijete Instalační služba systému Windows k nasazení doplňku VSTO, je nutné nakonfigurovat projekt InstallShield limit Edition tak, aby vytvořil položky registru v počítači koncového uživatele.
 
- Další informace o položkách registru oblasti formuláře, naleznete v tématu [umístění oblasti formuláře ve formě vlastních](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Další informace o oblastech formulářů aplikace Outlook, naleznete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).
+ Další informace o položkách registru oblasti formuláře najdete v tématu [určení umístění oblasti formuláře ve vlastním formuláři](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Další informace o oblastech formulářů Outlook najdete v tématu věnovaném [vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md).
 
-## <a name="LoadBehavior"></a> Hodnotách LoadBehavior
- **LoadBehavior** položku *kořenové*\Software\Microsoft\Office\\*název_aplikace*\Addins\\ *– doplněk ID* klíč obsahuje bitová kombinace hodnot, které určují chování běhu v doplňku VSTO. Nejnižší bitem (hodnoty 0 a 1) označuje, zda doplňku VSTO je aktuálně uvolněných nebo načtena. Ostatní bity o tom, kdy se aplikace pokusí načíst doplňku VSTO.
+## <a name="LoadBehavior"></a>Hodnoty LoadBehavior
+ Položka **LoadBehavior** v kořenovém *adresáři*\Software\Microsoft\Office\\*název aplikace*\Addins\\ *– klíč ID doplňku* obsahuje bitovou kombinaci hodnot, které určují chování za běhu Doplněk VSTO. Nejnižší bit pořadí (hodnoty 0 a 1) označuje, jestli je doplněk VSTO aktuálně uvolněný nebo načtený. Jiné bity označují, kdy se aplikace pokusí načíst doplněk VSTO.
 
- Obvykle **LoadBehavior** položka má být nastaveno na 0, 3 nebo 16 (v desítkové soustavě) při doplňku VSTO instalaci v počítačích koncových uživatelů. Ve výchozím nastavení, aplikace Visual Studio nastaví **LoadBehavior** položky z vašeho doplňku VSTO pro 3 při sestavení nebo ji publikovat.
+ Položka **LoadBehavior** má typicky nastavenou hodnotu 0, 3 nebo 16 (v desítkové soustavě), když je doplněk VSTO nainstalovaný na počítačích koncových uživatelů. Ve výchozím nastavení sada Visual Studio nastaví položku **LoadBehavior** doplňku VSTO na 3 při sestavování nebo publikování.
 
- V následující tabulce jsou uvedeny všechny možné hodnoty **LoadBehavior** položka. Některé popisy v této tabulce najdete načítání doplňku VSTO ručně nebo prostřednictvím kódu programu. Načtení doplňku VSTO ručně, zaškrtněte políčko vedle doplňku VSTO v **doplňky modelu COM** dialogové okno v aplikaci. Načtení doplňku VSTO prostřednictvím kódu programu, nastavte <xref:Microsoft.Office.Core.COMAddIn.Connect%2A> vlastnost <xref:Microsoft.Office.Core.COMAddIn> objekt, který reprezentuje doplňku VSTO pro **true**.
+ V následující tabulce jsou uvedeny všechny možné hodnoty položky **LoadBehavior** . Některé popisy v této tabulce odkazují na ruční načtení doplňku VSTO nebo prostřednictvím kódu programu. Pokud chcete doplněk VSTO načíst ručně, zaškrtněte políčko vedle doplňku VSTO v dialogovém okně **Doplňky modelu COM** v aplikaci. Chcete-li načíst doplněk VSTO programově, nastavte <xref:Microsoft.Office.Core.COMAddIn.Connect%2A> vlastnost <xref:Microsoft.Office.Core.COMAddIn> objektu, který představuje doplněk VSTO na **hodnotu true**.
 
-|Hodnota (v desítkové soustavě)|Stav doplňku VSTO|Chování zatížení doplňku VSTO|Popis|
+|Hodnota (v desítkové soustavě)|Stav doplňku VSTO|Chování při načítání doplňku VSTO|Popis|
 |--------------------------|-------------------------|--------------------------------|-----------------|
-|0|uvolněné|Nenačítat automaticky|Aplikace se nikdy pokusí automaticky načte doplňku VSTO. Uživatel můžete zkusit ruční načtení doplňku VSTO nebo doplňku VSTO lze načíst prostřednictvím kódu programu.<br /><br /> Pokud doplňku VSTO je úspěšně načtena, **LoadBehavior** hodnoty 0 zůstane, ale stav doplňku VSTO v **doplňky modelu COM** dialogové okno se aktualizuje k označení, že doplňku VSTO je načtena.|
-|1|Načten|Nenačítat automaticky|Aplikace se nikdy pokusí automaticky načte doplňku VSTO. Uživatel můžete zkusit ruční načtení doplňku VSTO nebo doplňku VSTO lze načíst prostřednictvím kódu programu.<br /><br /> I když **doplňky modelu COM** dialogovému oknu označuje, že doplňku VSTO je načtena po spuštění aplikace doplňku VSTO není načteny, dokud je načten ručně nebo prostřednictvím kódu programu.<br /><br /> Pokud se aplikace úspěšně načte doplňku VSTO, **LoadBehavior** hodnota se změní na hodnotu 0 a po zavření aplikace zůstává na 0.|
-|2|uvolněné|Načíst při spuštění|Aplikace se nepokusí se automaticky načte doplňku VSTO. Uživatel můžete zkusit ruční načtení doplňku VSTO nebo doplňku VSTO lze načíst prostřednictvím kódu programu.<br /><br /> Pokud se aplikace úspěšně načte doplňku VSTO, **LoadBehavior** hodnota se změní na 3 a zůstává na 3 po zavření aplikace.|
-|3|Načten|Načíst při spuštění|Aplikace se pokusí načíst doplňku VSTO při spuštění aplikace. Toto je výchozí hodnota při sestavení nebo publikování doplňku VSTO v sadě Visual Studio.<br /><br /> Pokud se aplikace úspěšně načte doplňku VSTO, **LoadBehavior** hodnota zůstane 3. Pokud dojde k chybě při načítání doplňku VSTO, **LoadBehavior** hodnota se změní na 2 a zůstává na 2 po zavření aplikace.|
-|8|uvolněné|Načíst na požádání|Aplikace se nepokusí se automaticky načte doplňku VSTO. Uživatel můžete zkusit ruční načtení doplňku VSTO nebo doplňku VSTO lze načíst prostřednictvím kódu programu.<br /><br /> Pokud se aplikace úspěšně načte doplňku VSTO, **LoadBehavior** hodnota nezmění na 9.|
-|9|Načten|Načíst na požádání|Doplněk VSTO načtou pouze v případě, že aplikace vyžaduje, například když uživatel klikne prvek uživatelského rozhraní, která používá funkci VSTO Add-in (například vlastní tlačítko na pásu karet).<br /><br /> Pokud se aplikace úspěšně načte doplňku VSTO, **LoadBehavior** hodnota zůstane 9, ale stav doplňku VSTO v **doplňky modelu COM** dialogové okno se aktualizuje označuje, že doplňku VSTO aktuálně načtené. Pokud dojde k chybě při načítání doplňku VSTO, **LoadBehavior** hodnota nezmění na 8.|
-|16|Načten|Při prvním načtení a pak nahrajte na vyžádání|Nastavte tuto hodnotu, pokud chcete, aby vaše doplňku VSTO pro načtení na požádání. Když uživatel spustí aplikaci poprvé, načtení aplikace doplňku VSTO. Při příštím spuštění aplikace, aplikace načte všechny prvky uživatelského rozhraní, které jsou definovány v doplňku VSTO, ale doplňku VSTO není načten, dokud uživatel neklikne prvku uživatelského rozhraní, který je přidružený k doplňku VSTO.<br /><br /> Při úspěšném načtení aplikace doplňku VSTO pro první spuštění **LoadBehavior** hodnota zůstane 16 při načtení doplňku VSTO. Po zavření aplikace **LoadBehavior** hodnota nezmění na 9.|
+|0|uvolněné|Nečítat automaticky|Aplikace se nikdy nepokouší načíst doplněk VSTO automaticky. Uživatel se může pokusit o ruční načtení doplňku VSTO nebo doplněk VSTO se dá programově načíst.<br /><br /> Pokud je doplněk VSTO úspěšně načtený, hodnota **LoadBehavior** zůstane 0, ale stav doplňku VSTO v dialogovém okně **Doplňky modelu COM** se aktualizuje tak, aby OZNAČOVAL, že doplněk VSTO je načtený.|
+|1|Načten|Nečítat automaticky|Aplikace se nikdy nepokouší načíst doplněk VSTO automaticky. Uživatel se může pokusit o ruční načtení doplňku VSTO nebo doplněk VSTO se dá programově načíst.<br /><br /> I když se v dialogovém okně **Doplňky modelu COM** označuje, že doplněk VSTO se načte po spuštění aplikace, doplněk VSTO se nenačte, dokud ho nenačtete ručně nebo programově.<br /><br /> Pokud aplikace úspěšně načte doplněk VSTO, hodnota **LoadBehavior** se změní na 0 a po zavření aplikace zůstane v hodnotě 0.|
+|2|uvolněné|Načíst při spuštění|Aplikace se nepokouší načíst doplněk VSTO automaticky. Uživatel se může pokusit o ruční načtení doplňku VSTO nebo doplněk VSTO se dá programově načíst.<br /><br /> Pokud aplikace úspěšně načte doplněk VSTO, hodnota **LoadBehavior** se změní na 3 a po zavření aplikace zůstane v hodnotě 3.|
+|3|Načten|Načíst při spuštění|Aplikace se pokusí načíst doplněk VSTO při spuštění aplikace. Toto je výchozí hodnota při sestavování nebo publikování doplňku VSTO v aplikaci Visual Studio.<br /><br /> Pokud aplikace úspěšně načte doplněk VSTO, hodnota **LoadBehavior** zůstane 3. Pokud při načítání doplňku VSTO dojde k chybě, hodnota **LoadBehavior** se změní na 2 a po zavření aplikace zůstane v 2.|
+|8|uvolněné|Načíst na vyžádání|Aplikace se nepokouší načíst doplněk VSTO automaticky. Uživatel se může pokusit o ruční načtení doplňku VSTO nebo doplněk VSTO se dá programově načíst.<br /><br /> Pokud aplikace úspěšně načte doplněk VSTO, hodnota **LoadBehavior** se změní na 9.|
+|9|Načten|Načíst na vyžádání|Doplněk VSTO se načte jenom v případě, že ho aplikace vyžaduje, třeba když uživatel klikne na prvek uživatelského rozhraní, který používá funkce doplňku VSTO (například vlastní tlačítko na pásu karet).<br /><br /> Pokud aplikace úspěšně načte doplněk VSTO, hodnota **LoadBehavior** zůstane 9, ale stav doplňku VSTO v dialogovém okně **Doplňky modelu COM** se aktualizuje tak, aby OZNAČOVAL, že doplněk VSTO je momentálně načtený. Pokud při načítání doplňku VSTO dojde k chybě, hodnota **LoadBehavior** se změní na 8.|
+|16|Načten|Poprvé načíst a pak načíst na vyžádání|Tuto hodnotu nastavte, pokud chcete, aby byl doplněk VSTO načtený na vyžádání. Aplikace načte doplněk VSTO, když uživatel poprvé spustí aplikaci. Když uživatel příště spustí aplikaci, načte všechny prvky uživatelského rozhraní, které jsou definované doplňkem VSTO, ale doplněk VSTO se nenačte, dokud uživatel neklikne na prvek uživatelského rozhraní, který je přidružený k doplňku VSTO.<br /><br /> Když aplikace úspěšně načte doplněk VSTO, hodnota **LoadBehavior** v průběhu načítání doplňku VSTO zůstane 16. Po zavření aplikace se hodnota **LoadBehavior** změní na 9.|
 
 ## <a name="see-also"></a>Viz také:
-- [Architektura řešení pro Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [Architektura řešení pro systém Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)
-- [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)
-- [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)
+- [Sestavování řešení pro systém Office](../vsto/building-office-solutions.md)
+- [Nasazení řešení pro systém Office](../vsto/deploying-an-office-solution.md)

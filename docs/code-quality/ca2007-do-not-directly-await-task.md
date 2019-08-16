@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 3f35e450f17a671b800d003b94ceb5ebc2321c90
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0d3ab899ad660c637492a4c3d229779481184e95
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841405"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547002"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Nečekejte přímo na úlohu
 
@@ -28,31 +28,31 @@ ms.locfileid: "65841405"
 |Kategorie|Microsoft.Reliability|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
 Asynchronní metoda [čeká](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> přímo.
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Když asynchronní metoda čeká <xref:System.Threading.Tasks.Task> přímo, dojde k pokračování ve stejném vlákně, která úkol vytvořila. Toto chování může být náročné na výkon a může vést k zablokování vlákna uživatelského rozhraní. Zvažte možnost volání <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> který signalizuje, že váš záměr pro pokračování.
+Když asynchronní metoda čeká <xref:System.Threading.Tasks.Task> přímo, pokračování probíhá ve stejném vláknu, které úlohu vytvořilo. Toto chování může být nákladné v souvislosti s výkonem a může způsobit zablokování ve vlákně uživatelského rozhraní. Zvažte volání <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> , abyste vyvolali svůj záměr na pokračování.
 
-Toto pravidlo byla zavedena v systémech [analyzátory FxCop](install-fxcop-analyzers.md) a neexistuje v "starší" (analýza statického kódu) FxCop.
+Toto pravidlo bylo představeno pomocí [analyzátorů FxCop](install-fxcop-analyzers.md) a neexistuje ve starší analýze FxCop.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení, zavolejte <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> na očekávaný <xref:System.Threading.Tasks.Task>. Můžete předat buď `true` nebo `false` pro `continueOnCapturedContext` parametru.
+Chcete-li opravit porušení, <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> zavolejte na <xref:System.Threading.Tasks.Task>očekáváno. Pro `false` `true` parametrmůžete`continueOnCapturedContext` předat buď nebo.
 
-- Volání `ConfigureAwait(true)` na úkol má stejné chování jako volání nejsou explicitně <xref:System.Threading.Tasks.Task.ConfigureAwait%2A>. Explicitně voláním této metody, že umožníte tím čtenáři vědět, že chcete záměrně provést pokračování v původní kontextu synchronizace.
+- Volání `ConfigureAwait(true)` na úlohu má stejné chování jako neexplicitní volání <xref:System.Threading.Tasks.Task.ConfigureAwait%2A>. Explicitním voláním této metody umožníte čtenářům, aby měli v úmyslu provést pokračování v původním kontextu synchronizace.
 
-- Volání `ConfigureAwait(false)` na úkol k naplánování pokračování s fondem vláken, a tím zabránit zablokování vlákna uživatelského rozhraní. Předání `false` je dobrou volbou pro knihovny nezávislé na aplikaci.
+- Zavolejte `ConfigureAwait(false)` na úkol pro naplánování pokračování fondu vláken, čímž se vyhnete zablokování vlákna uživatelského rozhraní. Předávání `false` je vhodné pro knihovny nezávislé na aplikaci.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Toto upozornění můžete potlačit, pokud víte, že takový příjemce není aplikace v jazyce grafické uživatelské rozhraní (GUI) nebo pokud uživatel nemá <xref:System.Threading.SynchronizationContext>.
+Toto upozornění můžete potlačit, pokud víte, že příjemce není aplikace grafického uživatelského rozhraní (GUI), nebo pokud uživatel <xref:System.Threading.SynchronizationContext>nemá.
 
 ## <a name="example"></a>Příklad
 
-Následující fragment kódu generuje toto upozornění:
+Následující fragment kódu vygeneruje upozornění:
 
 ```csharp
 public async Task Execute()
@@ -62,7 +62,7 @@ public async Task Execute()
 }
 ```
 
-Chcete-li opravit porušení zásad, zavolejte <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> na očekávaný <xref:System.Threading.Tasks.Task>:
+Chcete-li opravit porušení, <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> zavolejte na <xref:System.Threading.Tasks.Task>očekávaný:
 
 ```csharp
 public async Task Execute()
@@ -72,9 +72,9 @@ public async Task Execute()
 }
 ```
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Můžete nakonfigurovat, zda mají být vyloučeny asynchronní metody, které nevracejí hodnotu z tohoto pravidla. K vyloučení těchto druzích metod, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Můžete nakonfigurovat, zda chcete vyloučit asynchronní metody, které nevracejí hodnotu z tohoto pravidla. Chcete-li vyloučit tyto druhy metod, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 # Package version 2.9.0 and later
@@ -84,15 +84,15 @@ dotnet_code_quality.CA2007.exclude_async_void_methods = true
 dotnet_code_quality.CA2007.skip_async_void_methods = true
 ```
 
-Můžete také nakonfigurovat, které výstupní typy sestavení použít toto pravidlo. Například tohoto pravidla lze použít pouze pro kód, který vytvoří aplikace konzoly nebo dynamicky propojené knihovny (to znamená, ne aplikace uživatelského rozhraní), přidejte do souboru .editorconfig ve vašem projektu následující dvojice klíč hodnota:
+Můžete také nakonfigurovat, na které výstupní typy sestavení se má toto pravidlo použít. Chcete-li například použít toto pravidlo pouze na kód, který vytvoří konzolovou aplikaci nebo dynamicky propojenou knihovnu (tj. není to aplikace uživatelského rozhraní), přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
 ```
 
-Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="see-also"></a>Viz také:
 
-- [By měla očekávat úlohu s ConfigureAwait(false)?](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md#should-i-await-a-task-with-configureawaitfalse)
-- [Nainstalujte analyzátory FxCop v sadě Visual Studio](install-fxcop-analyzers.md)
+- [Mám očekávat úlohu s ConfigureAwait (NEPRAVDA)?](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md#should-i-await-a-task-with-configureawaitfalse)
+- [Instalace analyzátorů FxCop v aplikaci Visual Studio](install-fxcop-analyzers.md)

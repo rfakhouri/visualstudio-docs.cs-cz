@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d08644ede6b9b28496cff585624ea37858afd49
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2a4e04e1afdbecdc9c333ea43a52bff3123d448a
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842292"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547619"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Přepište metody u srovnatelných typů
 
@@ -30,26 +30,26 @@ ms.locfileid: "65842292"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Typ implementuje <xref:System.IComparable?displayProperty=fullName> rozhraní, nedojde k přepsání <xref:System.Object.Equals%2A?displayProperty=fullName> nebo nepřetěžuje specifické pro jazyk operátor rovnosti, nerovnosti, menší – než, nebo větší-než. Pravidlo nevytváří sestavu porušení, pokud typ dědí pouze implementace rozhraní.
+Typ implementuje <xref:System.IComparable?displayProperty=fullName> rozhraní a nepřepisuje <xref:System.Object.Equals%2A?displayProperty=fullName> ani nepřetěžují operátor specifický pro jazyk pro rovnost, nerovnost, menší než nebo větší než. Pravidlo neoznamuje porušení, pokud typ dědí pouze implementaci rozhraní.
 
-Ve výchozím nastavení, toto pravidlo pouze prohledá veřejné a chráněné typy, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vyhledává pouze veřejné a chráněné typy, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Typy, které definují vlastní řazení implementovat <xref:System.IComparable> rozhraní. <xref:System.IComparable.CompareTo%2A> Metoda vrací celočíselnou hodnotu, která určuje správné pořadí řazení pro dvě instance daného typu. Toto pravidlo určuje typy, které nastaví pořadí řazení. Nastavení pořadí řazení vyplývá, že běžný význam rovnosti, nerovnosti, menší – než a větší-než nevztahují. Když zadáte implementace <xref:System.IComparable>, je obvykle třeba také přepsat <xref:System.Object.Equals%2A> tak, že vrátí hodnoty, které jsou konzistentní s <xref:System.IComparable.CompareTo%2A>. Pokud přepíšete <xref:System.Object.Equals%2A> a psaní kódu v jazyce, který podporuje přetížení operátoru, měli byste také poskytnout operátory, které jsou konzistentní s <xref:System.Object.Equals%2A>.
+Typy, které definují vlastní pořadí řazení implementují <xref:System.IComparable> rozhraní. <xref:System.IComparable.CompareTo%2A> Metoda vrátí celočíselnou hodnotu, která označuje správné pořadí řazení pro dvě instance typu. Toto pravidlo identifikuje typy, které nastaví pořadí řazení. Nastavení pořadí řazení znamená, že se běžný význam rovnosti, nerovnosti, menší než a větší než neaplikuje. Pokud zadáte implementaci <xref:System.IComparable>, je nutné obvykle také přepsat <xref:System.Object.Equals%2A> , aby vracely hodnoty, které jsou konzistentní s <xref:System.IComparable.CompareTo%2A>. Pokud přepíšete <xref:System.Object.Equals%2A> a budete kódovat v jazyce, který podporuje přetížení operátoru, měli byste také zadat operátory, které jsou konzistentní <xref:System.Object.Equals%2A>s.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení tohoto pravidla, přepište <xref:System.Object.Equals%2A>. Pokud svůj oblíbený programovací jazyk podporuje přetížení operátoru, zadejte následující operátory:
+Pokud chcete opravit porušení tohoto pravidla, přepište <xref:System.Object.Equals%2A>. Pokud váš programovací jazyk podporuje přetížení operátora, zadejte následující operátory:
 
 - op_Equality
-- op_inequality –
+- op_Inequality
 - op_LessThan
 - op_GreaterThan
 
-Tokeny, které se používají k vyjádření tyto operátory v jazyce C#, jsou následující:
+V C#nástroji tokeny, které se používají k reprezentování těchto operátorů, jsou následující:
 
 ```csharp
 ==
@@ -60,25 +60,25 @@ Tokeny, které se používají k vyjádření tyto operátory v jazyce C#, jsou 
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Je bezpečné potlačit upozornění pravidla CA1036 při porušení zásad je způsobena chybějícími operátory a svůj oblíbený programovací jazyk nepodporuje přetěžování, stejně jako v případě s jazykem Visual Basic. Pokud zjistíte, že implementace operátorů nemá smysl v kontextu vaší aplikace, je také bezpečně potlačit upozornění tohoto pravidla, když je vyvoláno na operátory rovnosti než op_Equality. Nicméně byste měli vždy přepsat op_Equality a pokud přepíšete == – operátor <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
+Je bezpečné potlačit upozornění z pravidla CA1036, pokud je porušení způsobeno chybějícími operátory a váš programovací jazyk nepodporuje přetížení operátoru, stejně jako případ s Visual Basic. Pokud určíte, že implementace operátorů nemá smysl v kontextu vaší aplikace, je také bezpečné potlačit upozornění z tohoto pravidla, je-li aktivováno v operátorech rovnosti jiných než op_Equality. Při přepisování <xref:System.Object.Equals%2A?displayProperty=nameWithType>byste ale měli vždycky přepsat op_Equality a operátor = =.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1036.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (návrh). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (návrh). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="examples"></a>Příklady
 
-Následující kód obsahuje typ, který implementuje správně <xref:System.IComparable>. Kód poznámky určují metody, které splňují různá pravidla, které se týkají <xref:System.Object.Equals%2A> a <xref:System.IComparable> rozhraní.
+Následující kód obsahuje typ, který je správně implementován <xref:System.IComparable>. Komentáře kódu identifikují metody, které odpovídají různým pravidlům, která <xref:System.Object.Equals%2A> se vztahují <xref:System.IComparable> k a rozhraní.
 
 [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
 
-Následující kód aplikace testuje chování <xref:System.IComparable> implementace, které se zobrazilo dříve.
+Následující kód aplikace testuje chování <xref:System.IComparable> implementace, která se zobrazila dříve.
 
 [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 

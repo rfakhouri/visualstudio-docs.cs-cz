@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f11638d8ba5ca373c8fb1479be8d862e62b247
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4557b61afab08c7db05c734c6f2ac927a40edb71
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841418"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546849"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Operátory by měly mít symetrická přetížení
 
@@ -28,42 +28,42 @@ ms.locfileid: "65841418"
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|
 |CheckId|CA2226|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
 Typ implementuje operátor rovnosti nebo nerovnosti a neimplementuje opačný operátor.
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné typy, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vyhledává pouze externě viditelné typy, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Neexistují žádné okolností, kde se vztahuje na instance typu rovnosti nebo nerovnosti a opačný operátor není definován. Operátor nerovnosti typy obvykle implementují tak, že vrací hodnotu negovaným čítačem operátor rovnosti.
+Neexistují žádné okolnosti, kdy je rovnost nebo nerovnost pro instance typu a opačný operátor není definován. Typy obvykle implementují operátor nerovnosti vrácením hodnoty negace operátoru rovnosti.
 
-Kompilátor jazyka C# vygeneruje chybu pro porušení tohoto pravidla.
+C# Kompilátor vydá chybu pro porušení tohoto pravidla.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení tohoto pravidla, implementují rovnosti a nerovnosti operátory nebo odebrat ten, který je k dispozici.
+Chcete-li opravit porušení tohoto pravidla, implementujte operátory rovnosti a nerovnosti nebo odeberte tu, která je k dispozici.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Nepotlačujte upozornění na toto pravidlo. Pokud tak učiníte, typ nebude fungovat způsobem, který je konzistentní s .NET.
+Nepotlačujte upozornění na toto pravidlo. Pokud tak učiníte, váš typ nebude fungovat způsobem, který je konzistentní s rozhraním .NET.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca2226.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (využití). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (použití). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Související pravidla
 
-- [CA1046: Nepřetěžujte operátory rovnosti na odkazových typech](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
-- [CA2225: Přetížení operátoru mají pojmenované alternativy](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
-- [CA2224: Přepište equals při přetížení operátoru rovnosti](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
-- [CA2218: Přepište GetHashCode při přepsání Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
-- [CA2231: Přetižte operátor equals při přepsání ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+- [CA1046: Nepřetížit operátor přetížení se rovná na odkazových typech](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+- [CA2225: Přetížení operátoru mají pojmenované alternativy.](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+- [CA2224: Přepište Equals při přetížení operátoru Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+- [CA2218: Přepsat GetHashCode při přepsání Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+- [CA2231: Operátor přetížení se rovná přepisování ValueType. Equals.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad062154b8213d021c8c265aaf287d3a9335d0e4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4b294b267aa7bb1a2912ed42807ac0f878c87838
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922885"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547656"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementujte standardní konstruktory výjimky
 
@@ -44,7 +44,7 @@ Typy výjimek musí implementovat následující tři konstruktory:
 
 - Public NewException (řetězec, výjimka)
 
-Kromě toho, pokud používáte starší verzi FxCop statické analýzy kódu na rozdíl od [analyzátorů FxCop založených na Roslyn](../code-quality/roslyn-analyzers-overview.md), neexistence čtvrtého konstruktoru také vygeneruje porušení:
+Kromě toho, pokud používáte starší analýzu FxCop na rozdíl od analyzátorů [FxCop založených na .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md), neexistence čtvrtého konstruktoru také vygeneruje porušení:
 
 - Protected nebo Private NewException (SerializationInfo, StreamingContext)
 

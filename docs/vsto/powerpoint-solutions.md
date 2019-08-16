@@ -1,6 +1,6 @@
 ---
 title: Řešení aplikace PowerPoint
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 70968682a8221b88859fd561c9f678aced2911b9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926429"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551467"
 ---
 # <a name="powerpoint-solutions"></a>Řešení aplikace PowerPoint
   Visual Studio poskytuje šablony projektů, pomocí kterých můžete vytvářet doplňky VSTO pro systém Microsoft Office PowerPointu. Doplňky VSTO můžete použít k automatizaci PowerPointu, rozšiřování funkcí PowerPointu nebo přizpůsobení uživatelského rozhraní (UI) PowerPointu.
@@ -31,8 +31,7 @@ ms.locfileid: "68926429"
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
-> [!NOTE]
-> Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.
+[!include[Add-ins note](includes/addinsnote.md)]
 
  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") Související video ukázku najdete v tématu [návody: Vytvořit doplněk pro Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).
 

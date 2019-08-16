@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dfa50fc6007c2313191b430e9ed5445e7fd72a88
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c6512f02d13c2eeb441f5b374c4785deffe22a22
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841556"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547063"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Použijte literály, kde je to vhodné
 
@@ -30,44 +30,44 @@ ms.locfileid: "65841556"
 |-|-|
 |TypeName|UseLiteralsWhereAppropriate|
 |CheckId|CA1802|
-|Kategorie|Microsoft.Performance|
+|Kategorie|Microsoft. Performance|
 |Narušující změna|Nenarušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Pole je deklarován `static` a `readonly` (`Shared` a `ReadOnly` v jazyce Visual Basic) a je inicializován s hodnotou, kterou lze vypočítat v době kompilace.
+Pole je deklarováno `static` a `readonly` (`Shared` a `ReadOnly` v Visual Basic) a je inicializováno s hodnotou, která je COMPUTE v době kompilace.
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné pole, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vypadá pouze v externě viditelných polích, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Hodnota `static readonly` pole je vypočítán za běhu při volání statického konstruktoru pro deklarujícího typu. Pokud `static readonly` pole je inicializováno při deklaraci a statický konstruktor není explicitně deklarované, kompilátor vydává statický konstruktor k inicializaci pole.
+Hodnota `static readonly` pole je vypočítána za běhu při volání statického konstruktoru pro deklarující typ. Pokud je `static readonly` pole inicializováno, když je deklarováno a statický konstruktor není deklarován explicitně, kompilátor vygeneruje statický konstruktor pro inicializaci pole.
 
-Hodnota `const` pole je vypočítána v době kompilace a uložená v metadatech, což zvyšuje výkon modulu runtime srovnání s `static readonly` pole.
+Hodnota `const` pole je vypočítána v době kompilace a uložena v metadatech, což zvyšuje výkon modulu runtime při porovnání `static readonly` s polem.
 
-Protože hodnotu přiřazenou cílovému poli je nelze vypočítat v době kompilace, změňte deklaraci do `const` pole tak, aby hodnota byla vypočítána v době kompilace místo za běhu.
+Vzhledem k tomu, že hodnota přiřazená cílovému poli je COMPUTE v době kompilace, změňte deklaraci `const` na pole tak, aby se hodnota vypočítala v době kompilace namísto za běhu.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení tohoto pravidla, nahraďte `static` a `readonly` modifikátory `const` modifikátor.
+Chcete-li opravit porušení tohoto pravidla, nahraďte `static` modifikátory a `readonly` `const` modifikátorem.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Je bezpečné potlačit upozornění tohoto pravidla nebo zakázat pravidlo, pokud výkon není žádný problém.
+Z tohoto pravidla je bezpečné potlačit upozornění nebo pravidlo zakázat, pokud výkon nebudete mít obavy.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1802.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (výkon). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (výkon). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Příklad
 
-Následující příklad ukazuje typ, `UseReadOnly`, který porušuje pravidla a typ, `UseConstant`, vyhovující pravidlo.
+Následující příklad ukazuje typ, `UseReadOnly`, který porušuje pravidlo a `UseConstant`typ,, který splňuje pravidlo.
 
 [!code-vb[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/VisualBasic/ca1802-use-literals-where-appropriate_1.vb)]
 [!code-csharp[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/CSharp/ca1802-use-literals-where-appropriate_1.cs)]

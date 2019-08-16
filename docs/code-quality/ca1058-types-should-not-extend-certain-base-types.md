@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4157316756e4b180f6fb49082bf60927ddb43707
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 38d92194a5aa2b46a0cb65a1525bc01d9de67b86
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714792"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547368"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typy by neměly rozšiřovat určité základní typy
 
@@ -30,9 +30,9 @@ ms.locfileid: "66714792"
 |Kategorie|Microsoft.Design|
 |Narušující změna|Narušující|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Typ rozšiřuje jednu z následujících základních typů:
+Typ rozšiřuje jeden z následujících základních typů:
 
 - <xref:System.ApplicationException?displayProperty=fullName>
 - <xref:System.Xml.XmlDocument?displayProperty=fullName>
@@ -43,19 +43,19 @@ Typ rozšiřuje jednu z následujících základních typů:
 - <xref:System.Collections.SortedList?displayProperty=fullName>
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
-Ve výchozím nastavení, toto pravidlo pouze vypadá v externě viditelné typy, ale je to [konfigurovatelné](#configurability).
+Ve výchozím nastavení toto pravidlo vyhledává pouze externě viditelné typy, ale je možné jej [nakonfigurovat](#configurability).
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Výjimky by měl být odvozen z <xref:System.Exception?displayProperty=fullName> nebo jeden z jejích podtříd v <xref:System> oboru názvů.
+Výjimky by měly odvozovat z <xref:System.Exception?displayProperty=fullName> nebo jedné z jejích podtříd <xref:System> v oboru názvů.
 
-Nelze vytvořit podtřídu <xref:System.Xml.XmlDocument> Pokud budete chtít vytvořit zobrazení základní objekt model nebo zdroj dat XML.
+Nevytvářejte podtřídu, <xref:System.Xml.XmlDocument> Pokud chcete vytvořit zobrazení XML základního objektového modelu nebo zdroje dat.
 
-### <a name="non-generic-collections"></a>Neobecnou kolekce
+### <a name="non-generic-collections"></a>Neobecné kolekce
 
-Použít a/nebo rozšířit obecných kolekcí, kdykoli je to možné. Pokud dříve dodán se netýkají obecné kolekce ve vašem kódu.
+Pokud je to možné, používejte a rozšíříte obecné kolekce. Nezvětšujte neobecné kolekce v kódu, pokud jste ho předtím dodali.
 
-**Příklady nesprávné použití**
+**Příklady nesprávného použití**
 
 ```csharp
 public class MyCollection : CollectionBase
@@ -67,7 +67,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }
 ```
 
-**Příklady správné použití**
+**Příklady správného použití**
 
 ```csharp
 public class MyCollection : Collection<T>
@@ -79,20 +79,20 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 }
 ```
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení tohoto pravidla, odvodit typ z různých základního typu nebo obecné kolekce.
+Chcete-li opravit porušení tohoto pravidla, odvodit typ z jiného základního typu nebo z obecné kolekce.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Nepotlačujte upozornění tohoto pravidla pro porušení o <xref:System.ApplicationException>. Je bezpečné potlačit upozornění tohoto pravidla pro porušení o <xref:System.Xml.XmlDocument>. Je bezpečné pro potlačení varování týkající se obecné kolekce, pokud kód byla vydána dříve.
+Potlačit upozornění z tohoto pravidla pro porušení <xref:System.ApplicationException>. Z tohoto pravidla je bezpečné potlačit upozornění, které se týká <xref:System.Xml.XmlDocument>porušení. Je bezpečné potlačit upozornění na neobecnou kolekci, pokud byl kód vydaný dříve.
 
-## <a name="configurability"></a>Možnosti konfigurace:
+## <a name="configurability"></a>Konfigurovatelnost
 
-Pokud používáte systém toto pravidlo z [analyzátory FxCop](install-fxcop-analyzers.md) (a ne prostřednictvím statickou analýzu kódu), které části můžete nakonfigurovat vašeho základu kódu pro toto pravidlo spouštět, v závislosti na jejich přístupnost. Například k určení, že se má pravidlo spustit jenom na povrchu neveřejné rozhraní API, přidejte následující dvojice klíč hodnota do souboru .editorconfig ve vašem projektu:
+Pokud toto pravidlo spouštíte z [analyzátorů FxCop](install-fxcop-analyzers.md) (a ne pomocí starší verze analýzy), můžete nakonfigurovat, které části základu kódu mají spustit toto pravidlo, na základě jejich přístupnosti. Například chcete-li určit, že pravidlo by mělo běžet pouze proti neveřejnému povrchu rozhraní API, přidejte do souboru. editorconfig v projektu následující dvojici klíč-hodnota:
 
 ```ini
 dotnet_code_quality.ca1058.api_surface = private, internal
 ```
 
-Tuto možnost pro právě toto pravidlo, všechna pravidla nebo pro všechna pravidla můžete konfigurovat v této kategorii (návrh). Další informace najdete v tématu [analyzátory FxCop konfigurace](configure-fxcop-analyzers.md).
+Tuto možnost můžete nakonfigurovat jenom pro toto pravidlo, pro všechna pravidla nebo pro všechna pravidla v této kategorii (návrh). Další informace najdete v tématu [Konfigurace analyzátorů FxCop](configure-fxcop-analyzers.md).
