@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965545"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490619"
 ---
 # <a name="customize-code-coverage-analysis"></a>Přizpůsobení analýzy pokrytí kódu
 
@@ -30,18 +30,38 @@ Chcete-li přizpůsobit pokrytí kódu, postupujte podle těchto kroků:
 
 1. Přidejte soubor parametrů běhu do vašeho řešení. V **Průzkumníka řešení**, v místní nabídce řešení zvolte **přidat** > **nová položka**a vyberte **soubor XML**. Uložte soubor s názvem, jako *CodeCoverage.runsettings*.
 
-1. Přidejte obsah ze souboru příkladu na konci tohoto článku a jak je popsáno v následující části jeho úprava podle vašich potřeb.
+2. Přidejte obsah ze souboru příkladu na konci tohoto článku a jak je popsáno v následující části jeho úprava podle vašich potřeb.
 
-1. Vyberte soubor parametrů běhu na **testovací** nabídky, zvolte **nastavení testu** > **vybrat soubor nastavení testu**. Zadejte soubor parametrů běhu pro spouštění testů z příkazového řádku nebo v pracovním postupu sestavení, najdete v článku [konfigurace testů jednotek s použitím *s příponou .runsettings* souboru](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+::: moniker range="vs-2017"
+
+3. Vyberte soubor parametrů běhu na **testovací** nabídky, zvolte **nastavení testu** > **vybrat soubor nastavení testu**. Zadejte soubor parametrů běhu pro spouštění testů z příkazového řádku nebo v pracovním postupu sestavení, najdete v článku [konfigurace testů jednotek s použitím *s příponou .runsettings* souboru](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Chcete-li vybrat soubor parametrů spuštění, v **Průzkumníku testů**vyberte šipku na tlačítku **Nastavení** a potom vyberte **možnost soubor nastavení**. Zadejte soubor parametrů běhu pro spouštění testů z příkazového řádku nebo v pracovním postupu sestavení, najdete v článku [konfigurace testů jednotek s použitím *s příponou .runsettings* souboru](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
 
    Když vyberete **analyzovat pokrytí kódu**, informace o konfiguraci je pro čtení ze souboru parametrů běhu.
 
    > [!TIP]
    > Předchozí výsledky pokrytí kódu a barevné zvýraznění kódu nejsou zakryty automaticky při spuštění testů nebo aktualizujte svůj kód.
 
-Vlastní nastavení vypnutí a zapnutí, zrušte výběr nebo vyberte soubor v **testovací** > **nastavení testu** nabídky.
+::: moniker range="vs-2017"
+
+Chcete-li vlastní nastavení vypnout a zapnout, zrušte výběr nebo vyberte soubor v > nabídce **Nastavení** testu testu.
 
 ![Nabídka nastavení testu se soubor s vlastním nastavením](../test/media/codecoverage-settingsfile.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Chcete-li vlastní nastavení vypnout a zapnout, zrušte výběr nebo vyberte soubor v nabídce **Nastavení** v **Průzkumníku testů**.
+
+::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>Určení cest pro hledání symbolů
 
@@ -89,7 +109,7 @@ Pokud **zahrnout** je prázdný, pak zpracování pokrytí kódu zahrne všechna
 
 Pomocí regulárních výrazů můžete zahrnout a vyloučit uzly. Další informace najdete v tématu [použití regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Regulární výrazy nejsou stejné jako zástupné znaky. Zejména:
 
-- **. \\** * odpovídá řetězci libovolných znaků
+- **. odpovídá\***  řetězci libovolných znaků
 
 - **\\.** odpovídá tečce ".")
 

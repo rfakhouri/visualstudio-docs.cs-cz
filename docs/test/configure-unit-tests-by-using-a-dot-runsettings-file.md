@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c291eb614a69d88116c6af228304e19a6295bba2
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: d9f47c54a530f58ea562fd942c1ef795bad37331
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662034"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490657"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek pomocí souboru *. runsettings*
 
@@ -26,11 +26,25 @@ Soubory parametrů spuštění lze použít ke konfiguraci testů, které jsou s
 
 ### <a name="ide"></a>IDE – integrované vývojové prostředí
 
-Chcete-li zadat soubor parametrů běhu v rozhraní IDE, vyberte možnost **test** > **Nastavení** > testu**Vybrat soubor nastavení testu**a pak vyberte soubor *. runsettings* .
+::: moniker range="vs-2017"
 
-![Výběr nabídky soubor nastavení testu v aplikaci Visual Studio](media/select-test-settings-file.png)
+Chcete-li zadat soubor parametrů běhu v rozhraní IDE, vyberte možnost **test** > **Nastavení** > testu **Vybrat soubor nastavení testu**a pak vyberte soubor *. runsettings* .
 
-Soubor se zobrazí v nabídce **nastavení testu** a můžete ho vybrat nebo zrušit jeho výběr. Když vyberete možnost **Analyzovat pokrytí kódu**, soubor parametrů běhu se použije vždy.
+![Výběr nabídky soubor nastavení testu v aplikaci Visual Studio 2017](media/select-test-settings-file.png)
+
+Soubor se zobrazí v nabídce nastavení testu a můžete ho vybrat nebo zrušit jeho výběr. Když vyberete možnost **Analyzovat pokrytí kódu**, soubor parametrů běhu se použije vždy.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Chcete-li zadat soubor parametrů spuštění v integrovaném vývojovém prostředí, v **Průzkumníku testů**vyberte šipku na tlačítku **Nastavení** a potom vyberte **možnost soubor nastavení**. Vyhledejte a vyberte soubor *. runsettings* .
+
+![Výběr nabídky soubor nastavení testu v aplikaci Visual Studio 2019](media/vs-2019/select-test-settings-file.png)
+
+Soubor se zobrazí v nabídce nastavení v Průzkumníku testů a můžete ho vybrat nebo zrušit jeho výběr. Když vyberete možnost **Analyzovat pokrytí kódu**, soubor parametrů běhu se použije vždy.
+
+::: moniker-end
 
 ### <a name="command-line"></a>Příkazový řádek
 
@@ -73,9 +87,19 @@ K přizpůsobení testů pomocí souboru *. runsettings* použijte následujíc�
    > [!TIP]
    > Název souboru nezáleží na tom, pokud použijete příponu *. runsettings*.
 
-1. Nahraďte obsah souboru souborem XML z následujícího příkladu a podle potřeby ho upravte.
+2. Nahraďte obsah souboru souborem XML z následujícího příkladu a podle potřeby ho upravte.
 
-1. V nabídce **test** zvolte možnost **Nastavení** > testu**Vybrat soubor nastavení testu**. Přejděte k souboru *. runsettings* , který jste vytvořili, a pak vyberte **OK**.
+::: moniker range="vs-2017"
+
+3. V nabídce **test** zvolte možnost **Nastavení** > testu**Vybrat soubor nastavení testu**. Přejděte k souboru *. runsettings* , který jste vytvořili, a pak vyberte **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Chcete-li vybrat soubor parametrů spuštění, v **Průzkumníku testů**vyberte šipku na tlačítku **Nastavení** a potom vyberte **možnost soubor nastavení**. Přejděte k souboru *. runsettings* , který jste vytvořili, a pak vyberte **OK**.
+
+::: moniker-end
 
    > [!TIP]
    > Ve vašem řešení můžete vytvořit více než jeden soubor *. runsettings* a podle potřeby vybrat ho jako aktivní soubor nastavení testu.
@@ -94,7 +118,7 @@ Následující kód XML ukazuje obsah typického souboru *. runsettings* . Každ
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the top-level menu Test > Test Settings > Processor Architecture for AnyCPU Projects -->
+    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -260,7 +284,7 @@ Tato nastavení jsou specifická pro testovací adaptér, který spouští testo
 |-|-|-|
 |**ForcedLegacyMode**|false|V aplikaci Visual Studio 2012 byl adaptér MSTest optimalizován, aby byl rychlejší a lépe škálovatelný. Některé rysy chování sady, jako například pořadí, ve kterém jsou testy spuštěny, nemusí být přesně stejné jako v předchozích edicích sady Visual Studio. Nastavte tuto hodnotu na **true** , pokud chcete použít starší testovací adaptér.<br /><br />Toto nastavení můžete použít například v případě, že máte zadaný soubor *App. config* pro testování částí.<br /><br />Doporučujeme zvážit refaktoring testů, aby bylo možné použít novější adaptér.|
 |**IgnoreTestImpact**|false|Funkce dopadu testu upřednostňuje při spuštění testů prostřednictvím adaptéru MSTest nebo nástroje Microsoft Test Manager testy, které jsou ovlivněny nedávnými změnami. Toto nastavení funkci deaktivuje. Další informace naleznete v tématu [které testy mají být spuštěny od předchozího sestavení](https://msdn.microsoft.com/library/dd286589).|
-|**SettingsFile**||Soubor nastavení testu, který se má použít s adaptérem MSTest, můžete zadat tady. Můžete také zadat soubor nastavení testu výběrem**Nastavení** >  **test** > testu**Vybrat soubor nastavení testu**.<br /><br />Pokud zadáte tuto hodnotu, musíte také nastavit **položku forcedlegacymode** na **hodnotu true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||Soubor nastavení testu, který se má použít s adaptérem MSTest, můžete zadat tady. Můžete také zadat soubor nastavení testu [z nabídky nastavení](#ide).<br /><br />Pokud zadáte tuto hodnotu, musíte také nastavit **položku forcedlegacymode** na **hodnotu true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Po dokončení běhu testu je adaptér MSTest vypnut. Všechny procesy, které jsou spuštěny jako součást testu, jsou také ukončeny. Pokud chcete ponechat prováděcí modul testu aktivní, nastavte hodnotu na **true**. Pomocí tohoto nastavení můžete například zachovat, aby prohlížeč běžel mezi kódovanými testy uživatelského rozhraní.|
 |**DeploymentEnabled**|true|Pokud nastavíte hodnotu **false**, položky nasazení, které jste určili v testovací metodě, se zkopírují do adresáře nasazení.|
 |**CaptureTraceOutput**|true|Můžete zapisovat do trasování ladění z testovací metody pomocí <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|

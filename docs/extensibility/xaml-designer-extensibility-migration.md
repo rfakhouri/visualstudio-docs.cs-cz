@@ -1,5 +1,5 @@
 ---
-title: Migrace rozšiřitelnost návrháře XAML
+title: Migrace rozšíření Návrhář XAML
 ms.date: 07/09/2019
 ms.topic: conceptual
 author: lutzroeder
@@ -9,45 +9,45 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890319"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024547"
 ---
-# <a name="xaml-designer-extensibility-migration"></a>Migrace rozšiřitelnost návrháře XAML
+# <a name="xaml-designer-extensibility-migration"></a>Migrace rozšíření návrháře XAML
 
-V aplikaci Visual Studio 2019 Návrhář XAML podporuje dvě různé architektury: architektura návrháře izolace a novější architekturu surface izolace. Tohoto přechodu je architektura je vyžadovaný jako podpora cílového moduly runtime, který nemůže být hostovaná v procesu rozhraní .NET Framework. Přechod na povrchu izolace architektura přináší změny způsobující chyby modelu rozšíření třetích stran. Tento článek popisuje, jak tyto změny, které jsou k dispozici v kanálu Visual Studio 2019 16.2 ve verzi preview.
+Návrhář XAML v aplikaci Visual Studio 2019 podporuje dvě různé architektury: architektura izolace návrháře a novější architekturu izolace povrchu. Tento přechod architektury je vyžadován k podpoře cílových běhových prostředí, která nelze hostovat v procesu .NET Framework. Přechod na architekturu izolace Surface přináší zásadní změny modelu rozšiřitelnosti třetí strany. Tento článek popisuje tyto změny, které jsou k dispozici v aplikaci Visual Studio 2019 počínaje verzí 16,3.
 
-**Návrháře izolace** používá WPF designer pro projekty, které se zaměřují na rozhraní .NET Framework a podporuje *. design.dll* rozšíření. Uživatelský kód, ovládacího prvku knihovny a rozšíření třetích stran jsou načteny v externím procesu (*XDesProc.exe*) spolu s skutečné návrháře kódu a návrháře panelů.
+Návrhář WPF používá **izolaci návrháře** pro projekty, které cílí na .NET Framework a podporuje rozšíření *. Design. dll* . Uživatelský kód, knihovny ovládacích prvků a rozšíření třetích stran se načítají v externím procesu (*XDesProc. exe*) společně s vlastními panely Code Designer a návrháře.
 
-**Zařízení Surface izolace** používá Návrhář UPW. Také se používá ve WPF designer pro projekty, které cílí na .NET Core. Zařízení surface izolovaně knihovny kódu a ovládací prvek jediným uživatelem načteným v samostatném procesu, návrháře a jeho panelů jsou načteny v procesu Visual Studio (*DevEnv.exe*). Modul runtime používá se ke spuštění kódu a ovládacího prvku knihovny uživatele se liší od, který používá rozhraní .NET Framework pro skutečné návrháře a kód třetích stran rozšiřitelnosti.
+**Izolaci povrchu** používá Návrhář UWP. Je také používán návrhářem WPF pro projekty, které cílí na .NET Core. Při izolaci povrchu jsou načteny pouze uživatelské kódy a knihovny ovládacích prvků v samostatném procesu, zatímco Návrhář a jeho panely jsou načteny do procesu sady Visual Studio (*devenv. exe*). Modul runtime, který se používá pro spouštění knihoven uživatelských kódů a ovládacích prvků, se liší od použití .NET Framework pro skutečný Návrhář a kód rozšiřitelnosti třetí strany.
 
-![rozšiřitelnost architekturu migrace](media/xaml-designer-extensibility-migration-architecture.png)
+![Rozšiřitelnost – architektura migrace](media/xaml-designer-extensibility-migration-architecture.png)
 
-Z důvodu tohoto přechodu je architektura se načtou do stejně jako na knihovny třetích stran ovládací prvek již rozšíření třetích stran. Rozšíření můžete už mají přímé závislosti v knihovnách ovládací prvek nebo přímý přístup k objekty modulu runtime. Rozšíření, které byly dříve vytvořeny pro architekturu pomocí návrháře izolace *Microsoft.Windows.Extensibility.dll* rozhraní API musí migrovat na nový přístup pro práci s architekturou surface izolace. V praxi existující rozšíření muset byl zkompilován proti nová rozhraní API sestavení rozšíření. Přístup k prvku za běhu typy prostřednictvím [typeof](/dotnet/csharp/language-reference/keywords/typeof) nebo instancí modulu runtime musí být nahrazen nebo odebrat, protože ovládací prvek knihovny jsou nyní úlohy načítány v jiném procesu.
+Z důvodu tohoto přechodu architektury již nejsou rozšíření jiných výrobců načítána do stejného procesu jako knihovny ovládacích prvků třetích stran. Rozšíření již nemohou mít přímé závislosti na řídicích knihovnách nebo přímo přistupovat k objektům modulu runtime. Rozšíření, která byla dříve vytvořena pro architekturu izolace návrháře pomocí rozhraní API *Microsoft. Windows. rozšiřitelnost. dll* , je nutné migrovat na nový přístup pro práci s architekturou izolace povrchu. V praxi bude nutné kompilovat existující rozšíření proti novým rozšiřujícím sestavením rozhraní API. Přístup k běhovým typům běhu prostřednictvím [typeof](/dotnet/csharp/language-reference/keywords/typeof) nebo instancí modulu runtime musí být nahrazen nebo odebrán, protože knihovny ovládacích prvků jsou nyní načteny v jiném procesu.
 
-## <a name="new-extensibility-api-assemblies"></a>Nová rozšiřitelnost rozhraní API sestavení
+## <a name="new-extensibility-api-assemblies"></a>Nová rozšiřitelná sestavení rozhraní API
 
-Nová rozhraní API sestavení rozšíření jsou podobná stávající rozhraní API sestavení rozšíření, ale použijte jiné schéma pojmenování, aby bylo možné odlišit. Podobně názvy oborů názvů změnili tak, aby odrážela nové názvy sestavení.
+Nová rozšiřující sestavení rozhraní API jsou podobná existujícím sestavením rozhraní API pro rozšiřitelnost, ale následují jiné schéma pojmenování, aby je bylo možné odlišit. Podobně se názvy oborů názvů změnily tak, aby odrážely nové názvy sestavení.
 
-| Návrháře izolaci sestavení rozhraní API            | Izolace povrchu API sestavení                       |
+| Sestavení rozhraní API izolace návrháře            | Sestavení rozhraní API pro izolaci povrchu                       |
 |:------------------------------------------ |:---------------------------------------------------- |
 | Microsoft.Windows.Design.Extensibility.dll | Microsoft.VisualStudio.DesignTools.Extensibility.dll |
 | Microsoft.Windows.Design.Interaction.dll   | Microsoft.VisualStudio.DesignTools.Interaction.dll   |
 
-## <a name="new-file-extension-and-discovery"></a>Novou příponu souboru a zjišťování
+## <a name="new-file-extension-and-discovery"></a>Nová přípona souboru a zjišťování
 
-Namísto použití *. design.dll* souboru rozšíření, nové surface rozšíření se dají zjistit pomocí odkazu *. designtools.dll* příponu souboru. *. design.dll* a *. designtools.dll* rozšíření může existovat ve stejném *návrhu* podsložky.
+Namísto použití přípony souboru *. Design. dll* budou nové rozšíření Surface zjištěny pomocí přípony souboru *. DesignTools. dll* . Přípona *. Design. dll* a *. DesignTools. dll* mohou existovat ve stejné podsložce *návrhu* .
 
-Když jsou kompilovány knihoven třetích stran ovládacího prvku pro skutečné cílový modul runtime (.NET Core nebo UPW), *. designtools.dll* rozšíření by měl vždy být zkompilován jako sestavení rozhraní .NET Framework.
+I když jsou knihovny ovládacích prvků třetích stran kompilovány pro skutečný cílový modul runtime (.NET Core nebo UWP), přípona *. DesignTools. dll* by měla být vždy kompilována jako sestavení .NET Framework.
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>Oddělit atribut tabulek z typů modulu runtime
+## <a name="decouple-attribute-tables-from-runtime-types"></a>Oddělit tabulky atributů z typů modulu runtime
 
-Model rozšiřitelnosti surface izolace neumožňuje rozšíření záviset na knihovnách skutečný ovládací prvek, a proto rozšíření nemohou odkazovat na typy z knihovny ovládacích prvků. Například *MyLibrary.designtools.dll* by neměl být závislý na *MyLibrary.dll*.
+Model rozšiřitelnosti izolace povrchu nepovoluje, aby rozšíření byla závislá na vlastních knihovnách ovládacích prvků, a proto rozšíření nemůžou odkazovat na typy z knihovny ovládacích prvků. Například *MyLibrary. DesignTools. dll* by neměl mít závislost na *MyLibrary. dll*.
 
-Při registraci metadat pro typy prostřednictvím atributu tabulky byly nejběžnější těchto závislostí. Typy kódu rozšíření, která odkazuje na knihovny ovládacích prvků přímo prostřednictvím [typeof](/dotnet/csharp/language-reference/keywords/typeof) nebo [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) pomocí typu založeného na řetězec názvů nahrazeny v nových rozhraní API:
+Tyto závislosti byly nejběžnější při registraci metadat pro typy prostřednictvím tabulek atributů. Kód rozšíření, který odkazuje na typy knihovny ovládacích prvků přímo pomocí [typeof](/dotnet/csharp/language-reference/keywords/typeof) nebo [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) , je nahrazen v nových rozhraních API pomocí názvů typů založených na řetězci:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -92,11 +92,11 @@ Public Class AttributeTableProvider
 End Class
 ```
 
-## <a name="feature-providers-and-model-api"></a>Poskytovatelé funkce a rozhraní API pro Model
+## <a name="feature-providers-and-model-api"></a>Poskytovatelé funkcí a rozhraní API modelu
 
-Poskytovatelé funkce jsou implementované v sestavení rozšíření a načten v procesu sady Visual Studio. `FeatureAttribute` budou dál odkazovat funkce poskytovatele typů přímo pomocí [typeof](/dotnet/csharp/language-reference/keywords/typeof).
+Poskytovatelé funkcí jsou implementováni v sestaveních rozšíření a načteny do procesu sady Visual Studio. `FeatureAttribute`bude nadále odkazovat na typy poskytovatele funkcí přímo pomocí [typeof](/dotnet/csharp/language-reference/keywords/typeof).
 
-V současné době jsou podporovány následující funkce zprostředkovatele:
+V současné době jsou podporovány následující poskytovatelé funkcí:
 
 * `DefaultInitializer`
 * `AdornerProvider`
@@ -104,9 +104,9 @@ V současné době jsou podporovány následující funkce zprostředkovatele:
 * `ParentAdapter`
 * `PlacementAdapter`
 
-Protože funkce poskytovatelé jsou nyní úlohy načítány v procesu, která se liší od knihovny kódu a řízení skutečné modulu runtime, nebudou mít přístup přímo k objekty modulu runtime. Místo toho musí být všechny takové interakce převeden používat odpovídající rozhraní API založené na modelu. Rozhraní API modelu byla aktualizována a přístup k <xref:System.Type> nebo <xref:System.Object> je buď již nejsou k dispozici nebo se nahradil údajem `TypeIdentifier` a `TypeDefinition`.
+Protože poskytovatelé funkcí jsou nyní načítány v jiném procesu než skutečný kód modulu runtime a knihovny ovládacích prvků, již nejsou schopny přistupovat k objektům modulu runtime přímo. Místo toho je nutné všechny takové interakce převést tak, aby používaly odpovídající rozhraní API založených na modelu. Rozhraní API modelu bylo aktualizováno a přístup <xref:System.Type> k nebo <xref:System.Object> již není k dispozici nebo byl nahrazen pomocí `TypeIdentifier` a `TypeDefinition`.
 
-`TypeIdentifier` představuje řetězec bez určení typu název sestavení. A `TypeIdenfifier` lze převést na `TypeDefinition` dotazů na další informace o typu. `TypeDefinition` nelze uložit do mezipaměti instancí do kódu rozšíření.
+`TypeIdentifier`představuje řetězec bez názvu sestavení identifikující typ. Lze ji přeložit `TypeDefinition` na, chcete-li zadat dotaz na Další informace o typu. `TypeIdenfifier` `TypeDefinition`instance se nedají ukládat do mezipaměti v kódu rozšíření.
 
 ```csharp
 TypeDefinition type = ModelFactory.ResolveType(
@@ -128,13 +128,13 @@ If type?.IsSubclassOf(buttonType) Then
 End If
 ```
 
-Rozhraní API odebráno ze sady možností izolace rozšiřitelnost rozhraní API:
+Rozhraní API, která se odebrala ze sady rozhraní API pro rozšíření izolace povrchu:
 
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
 
-Rozhraní API, která pomocí `TypeIdentifier` místo <xref:System.Type>:
+Rozhraní API, `TypeIdentifier` která se <xref:System.Type>používají místo:
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
@@ -150,12 +150,12 @@ Rozhraní API, která pomocí `TypeIdentifier` místo <xref:System.Type>:
 * `ParentAdpater.CanParent(ModelItem parent, Type childType)`
 * `ParentAdapter.RedirectParent(ModelItem parent, Type childType)`
 
-Rozhraní API, která pomocí `TypeIdentifier` místo <xref:System.Type> a už nebude podporovat argumenty konstruktoru:
+Rozhraní API, `TypeIdentifier` která používají <xref:System.Type> místo a již nadále nepodporují argumenty konstruktoru:
 
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, CreateOptions options, params object[] arguments)`
 
-Rozhraní API, která pomocí `TypeDefinition` místo <xref:System.Type>:
+Rozhraní API, `TypeDefinition` která se <xref:System.Type>používají místo:
 
 * `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
@@ -173,7 +173,7 @@ Rozhraní API, která pomocí `TypeDefinition` místo <xref:System.Type>:
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
 
-Rozhraní API, která pomocí `ModelItem` místo <xref:System.Object>:
+Rozhraní API, `ModelItem` která se <xref:System.Object>používají místo:
 
 * `ModelItemCollection.Insert(int index, object value)`
 * `ModelItemCollection.Remove(object value)`
@@ -182,7 +182,12 @@ Rozhraní API, která pomocí `ModelItem` místo <xref:System.Object>:
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-Primitivní typy, jako jsou známé `Int32`, `String`, nebo `Thickness` lze předat do rozhraní API modelu jako instance rozhraní .NET Framework a se převedou na odpovídající objekt v cílovém procesu modulu runtime. Příklad:
+Rozhraní API podobně jako `SetValue` budou podporovat pouze instance primitivních typů nebo předdefinované .NET Framework typy, které lze převést pro cílový modul runtime. `ModelItem` V současné době jsou tyto typy podporovány:
+
+* Primitivní .NET Framework typy: `Boolean`, `Byte`, `Char`, `DateTime`, `Double`, ,`Enum` ,`Int16`, ,`Int64`,, `Int32` `Guid` `Nullable` `SByte` , `Single`, `String`, `Type`, `UInt16`, `UInt32`, `UInt64`,`Uri`
+* Známé typy .NET Framework WPF (a odvozené typy): `Brush`, `Color`, `CompositeTransform`, `CornerRadius`, `Duration`, `EasingFunctionBase`, `EasingMode`, `EllipseGeometry`, `FontFamily`, `GeneralTransform` ,`Geometry` , `GradientStopCollection`, `GradientStop`, `GridLength`, `ImageSource`, `InlineCollection`, `Inline`, `KeySpline`, `Material`, `Matrix`, `PathFigureCollection`, `PathFigure`, `PathSegmentCollection`, `PathSegment`, `Path`, `PointCollection`, `Point`, `PropertyPath`, `Rect`, `RepeatBehavior`, `Setter`, `Size`, `StaticResource`, `TextAlignment`, `TextDecorationCollection`, `ThemeResourceExtension`, `Thickness`, `TimeSpan`, `Transform3D`,`TransformCollection`
+
+Příklad:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -212,10 +217,10 @@ Public Class MyControlDefaultInitializer
 End Class
 ```
 
-Další ukázky kódu jsou k dispozici v [xaml designer rozšíření ukázky](https://github.com/microsoft/xaml-designer-extensibility-samples) úložiště.
+Další ukázky kódu jsou k dispozici v úložišti [XAML-Designer-Samples-Samples](https://github.com/microsoft/xaml-designer-extensibility-samples) .
 
-## <a name="limited-support-for-designdll-extensions"></a>Omezená podpora. design.dll rozšíření
+## <a name="limited-support-for-designdll-extensions"></a>Omezená podpora pro rozšíření. Design. dll
 
-Pokud existuje *. designtools.dll* zjištěnou rozšíření knihovny ovládacích prvků, načtení první a zjišťování pro *. design.dll* rozšíření se přeskočí.
+Pokud je pro knihovnu ovládacích prvků zjištěno jakékoli rozšíření *. DesignTools. dll* , je nejprve načteno a zjišťování pro příponu *. Design. dll* je vynecháno.
 
-Pokud ne *. designtools.dll* rozšíření jsou k dispozici ale *. design.dll* nalezeno rozšíření, že služba jazyka XAML, pokusí se načíst toto sestavení se extrahovat informace o atributu tabulky pro podporu základní editor a vlastnost inspektoru scénáře. Tento mechanismus je omezený v oboru. Neumožňuje načítání rozšíření návrháře izolace ke spuštění funkce poskytovatele, ale může poskytnout základní podporu pro existující knihovny ovládacího prvku WPF.
+Pokud nejsou k dispozici žádná přípona *. DesignTools. dll* , ale je nalezena přípona. *design. dll* , služba jazyka XAML se pokusí načíst toto sestavení a extrahovat informace tabulky atributu pro podporu scénářů základního editoru a inspektoru vlastností. Tento mechanismus je omezený v oboru. Neumožňuje načítání rozšíření izolace návrháře pro provádění poskytovatelů funkcí, ale může poskytovat základní podporu pro stávající knihovny ovládacích prvků WPF.

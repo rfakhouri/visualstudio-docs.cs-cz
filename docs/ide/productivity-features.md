@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e4f238046e671371a1fe83a3f5b9552b3956be8f
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919475"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490659"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu sady Visual Studio
 
@@ -142,6 +142,7 @@ V jednu chvíli můžete být práce ve více souborech s kódem a budete přech
 
 ## <a name="see-also"></a>Viz také:
 
+- [Příspěvek na blogu tipy a triky pro Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Výchozí klávesové zkratky pro často používané příkazy](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Postupy: Přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 - [Návod: Vytvoření jednoduché aplikace](../get-started/csharp/tutorial-wpf.md)
