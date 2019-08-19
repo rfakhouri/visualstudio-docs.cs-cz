@@ -1,9 +1,9 @@
 ---
-title: VBA přístup k vytvořte nebo otevřete projekt VSTO systému
+title: Přístup k aplikaci VBA k vytvoření nebo otevření projektu systému VSTO
 decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
 titleSuffix: Visual Studio Tools for Microsoft Office
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 f1_keywords:
 - vst.project.vbawrongversion
@@ -19,109 +19,111 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c85a907b057118c28ea35b8a920337ecdad5ad01
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 3199b23f7ad1bb45fd509d2a9b5cd21da1a49971
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177651"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551543"
 ---
-# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Povolit přístup pro jazyk VBA vytvořit nebo otevřít Visual Studio Tools pro projekt systému Microsoft Office
+# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Povolení přístupu k jazyku VBA pro vytvoření nebo otevření Visual Studio Tools pro projekt systém Microsoft Office systému
 
-Předtím, než můžete vytvořit nebo otevřít Visual Studio Tools pro Microsoft Office project system, musíte výslovně povolit přístup do jazyka Visual Basic pro systém projektu Applications (VBA) v aplikaci Microsoft Office.
+Musíte explicitně povolit přístup k systému projektu jazyk Visual Basic for Application (VBA) v systém Microsoft Office předtím, než budete moci vytvořit nebo otevřít Visual Studio Tools pro systémový projekt systém Microsoft Office.
 
- Vývojové projekty Microsoft Office vyžadují přístup do jazyka Visual Basic pro systém projektu Applications (VBA) v Microsoft Office Word a Microsoft Office Excel, i v případě, že tyto projekty nepoužívají jazyka Visual Basic pro aplikace. Podpora návrhu ovládacích prvků v obou jazyka Visual Basic a C# projektů závisí na Visual Basic pro systém projektu aplikace.
+ Systém Microsoft Office vývojové projekty vyžadují přístup k systému projektu jazyk Visual Basic for Application (VBA) v systém Microsoft Office Word a systém Microsoft Office Excel, i když projekty nepoužívají jazyk Visual Basic for Application. Podpora ovládacích prvků v době návrhu v obou Visual Basic i C# v projektech závisí na jazyk Visual Basic for Application systému projektu.
 
- Některé aplikace Microsoft Office – makro viry pokusí automatizace jazyka Visual Basic pro aplikace systému projektu jako prostředek k šíření sami. Když povolíte přístup do jazyka Visual Basic pro aplikace systému projektů, odebrat ochranu, která pomáhá zabránit šíření virů maker. Normální – makro zabezpečení, ale zůstává na místě, tak úroveň zabezpečení maker a seznam důvěryhodných vydavatelů, které zajišťují pro aplikace sady Office určí, zda všechna makra, běží na vašem počítači.
+ Některé systém Microsoft Office makro se snaží automatizovat jazyk Visual Basic for Application projektový systém jako prostředek k rozšíření samotného. Povolením přístupu do systému jazyk Visual Basic for Applicationho projektu odeberete ochranu, která pomáhá zabránit šíření virů v makrech. Avšak normální zabezpečení maker zůstává zachováno, takže úroveň zabezpečení makra a seznam důvěryhodných vydavatelů, které udržujete pro aplikace sady Office, určí, zda je v počítači spuštěno jakékoli makro.
 
 > [!NOTE]
-> To se vztahuje pouze na vývojovém počítači. Počítačích koncových uživatelů není nutné je tato možnost povolená, které spouštějí řešení Office.
+> To platí jenom pro vývojový počítač. Počítače koncového uživatele tuto možnost nepotřebují ke spouštění řešení pro Office.
 
- Je důležité si uvědomit, že zakázání přístupu do jazyka Visual Basic pro systém projektu aplikace na svůj vlastní nechrání při před viry, jednoduše pomáhá zastavit některé viry rozšířilo do jiných dokumentů, pokud se počítač stane někdy nakažená hrozbou makra virů. Tato možnost je vypnuta ve výchozím nastavení jako další úroveň ochrany pro počítače, ale jeho povolení Nedovolte, aby byly v počítači více náchylné k viry pokud nedodržíte následující osvědčené postupy zabezpečení.
+ Je důležité si uvědomit, že zakázání přístupu k systému projektu jazyk Visual Basic for Application sám o sobě nebude chránit před viry, ale jednoduše pomůže zastavit rozšiřování některých virů do dalších dokumentů, pokud bude počítač někdy napadený makrem. virů. Tato možnost je ve výchozím nastavení zakázána jako přidaná vrstva ochrany pro váš počítač, ale v případě, že se jedná o osvědčené postupy zabezpečení, nebude mít počítač k dispozici žádný náchylný ke virům.
 
- Nejlepší ochranu před viry, se na spuštění při vysoké nebo velmi vysokou úroveň zabezpečení, pouze důvěřovat makrům Office ověření známých zdrojů, Office a udržovat si aktuální opravy zabezpečení a antivirové programy.
+ Nejlepší ochranou před viry v makrech Office je spouštění Office na vysoké nebo velmi vysoké úrovni zabezpečení, k důvěřování pouze makrům z ověřených, známých zdrojů a k udržení aktuálnosti aktualizací zabezpečení a skenerů virů.
 
- Můžete povolit nebo zakázat možnost **důvěřovat přístup k projektu jazyka Visual Basic** ručně.
+ Můžete povolit nebo zakázat možnost **důvěřovat přístup k Visual Basic projektu** ručně.
 
- Pokud se zobrazí chyby VBA nebo COM může opravením instalace Office.
+ Pokud se zobrazí chyby VBA nebo COM, můžete opravit instalaci Office.
 
-## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>K povolení nebo zakázání přístupu k projektům Visual Basic
+[!include[Add-ins note](includes/addinsnote.md)]
 
-1. Klikněte na tlačítko **souboru** kartu.
+## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>Povolení nebo zakázání přístupu k projektům Visual Basic
 
-2. Klikněte na tlačítko **možnosti**.
+1. Klikněte na kartu **soubor** .
 
-3. Klikněte na tlačítko **centrum**a potom klikněte na tlačítko **nastavení Centra zabezpečení**.
+2. Klikněte na tlačítko **Možnosti**.
 
-4. V **centrum**, klikněte na tlačítko **– makro nastavení**.
+3. Klikněte na **Centrum zabezpečení**a pak klikněte na **Nastavení centra zabezpečení**.
 
-5. Zaškrtněte nebo zrušte zaškrtnutí políčka **důvěřovat přístup k objektovému modelu projektu VBA** k povolení nebo zakázání přístupu k projektům Visual Basic.
+4. V **Centru zabezpečení**klikněte na **Nastavení maker**.
+
+5. Zaškrtněte nebo zrušte kontrolu **přístupu důvěryhodnosti k objektovému modelu projektu VBA** , abyste povolili nebo zakázali přístup k Visual Basic projektům.
 
 6. Klikněte na **OK**.
 
-### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Povolit nebo zakázat přístup k projektům jazyka Visual Basic se systémem Microsoft Office 2007
+### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Povolení nebo zakázání přístupu k Visual Basic projektům pomocí systém Microsoft Office systému 2007
 
-1. Na **nástroje** nabídky v aplikaci Word nebo Excel, přejděte na **– makro**a potom klikněte na tlačítko **zabezpečení**.
+1. V nabídce **nástroje** ve Wordu nebo Excelu přejděte na **makro**a pak klikněte na **zabezpečení**.
 
-2. V **zabezpečení** dialogové okno, klikněte na tlačítko **Důvěryhodní vydavatelé** kartu.
+2. V dialogovém okně **zabezpečení** klikněte na kartu **Důvěryhodní vydavatelé** .
 
-3. Vyberte, chcete povolit, nebo zrušte zakázat, **důvěřovat přístup k projektu jazyka Visual Basic**.
+3. Vyberte, chcete-li zakázat, nebo zrušte zaškrtnutí, pokud chcete povolit **přístup k Visual Basic projektu**.
 
 4. Klikněte na **OK**.
 
-## <a name="to-set-your-office-macro-security-level"></a>Chcete-li nastavit úroveň zabezpečení maker Office
+## <a name="to-set-your-office-macro-security-level"></a>Nastavení úrovně zabezpečení maker Office
 
-1. Klikněte na tlačítko **souboru** kartu.
+1. Klikněte na kartu **soubor** .
 
-2. Klikněte na tlačítko **možnosti**.
+2. Klikněte na tlačítko **Možnosti**.
 
-3. Klikněte na tlačítko **centrum**a potom klikněte na tlačítko **nastavení Centra zabezpečení**.
+3. Klikněte na **Centrum zabezpečení**a pak klikněte na **Nastavení centra zabezpečení**.
 
-4. V **centrum**, klikněte na tlačítko **– makro nastavení**.
+4. V **Centru zabezpečení**klikněte na **Nastavení maker**.
 
-5. V **– makro nastavení** vyberte požadované nastavení.
+5. V části **Nastavení makra** vyberte požadované nastavení.
 
 6. Klikněte na **OK**.
 
-### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Chcete-li nastavit úroveň zabezpečení maker Office pomocí systému Microsoft Office 2007
+### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Nastavení úrovně zabezpečení maker Office pomocí 2007 systém Microsoft Office systému
 
-1. Na **nástroje** nabídky v aplikaci Word nebo Excel, přejděte na **– makro**a potom klikněte na tlačítko **zabezpečení**.
+1. V nabídce **nástroje** ve Wordu nebo Excelu přejděte na **makro**a pak klikněte na **zabezpečení**.
 
-2. Na **úroveň zabezpečení** kartu, vyberte požadované nastavení.
+2. Na kartě **úroveň zabezpečení** vyberte požadované nastavení.
 
-    **Úroveň zabezpečení** karta obsahuje podrobnosti o jednotlivých úrovních. Další informace naleznete v tématu "Úrovni zabezpečení maker" v nápovědě sady Office.
+    Karta **úroveň zabezpečení** obsahuje podrobnosti o každé úrovni. Další informace najdete v tématu "úrovně zabezpečení maker" v nápovědě pro Office.
 
-### <a name="to-install-vba-with-the-2007-microsoft-office-system"></a>K instalaci VBA pomocí systému Microsoft Office 2007
+### <a name="to-install-vba-with-the-2007-microsoft-office-system"></a>Instalace jazyka VBA se systémem 2007 systém Microsoft Office
 
-1. V Ovládacích panelech, spusťte **přidat nebo odebrat programy** nebo **programy a funkce**.
+1. V Ovládacích panelech spusťte ovládací panel **Přidat nebo odebrat programy** nebo **programy a funkce**.
 
-2. Vyberte Office ve službě **aktuálně nainstalované programy** seznamu.
+2. V seznamu **aktuálně nainstalovaných programů** vyberte Office.
 
-3. Klikněte na tlačítko **změnu**.
+3. Klikněte na **změnit**.
 
-4. Vyberte **přidat nebo odebrat součásti**a potom klikněte na tlačítko **pokračovat**.
+4. Vyberte **Přidat nebo odebrat funkce**a potom klikněte na **pokračovat**.
 
-5. Vyberte **zvolit vlastní aplikace**a potom klikněte na tlačítko **Další**.
+5. Vyberte možnost **zvolit pokročilé přizpůsobení aplikací**a potom klikněte na tlačítko **Další**.
 
-6. Rozbalte **sdílené součásti sady Office** v **zvolte možnosti aktualizace pro aplikace a nástroje** seznamu.
+6. V seznamu **zvolit možnosti aktualizace pro aplikace a nástroje** rozbalte položku **sdílené funkce sady Office** .
 
-7. Otevřete rozevírací nabídku vedle **Visual Basic for Applications**a potom klikněte na tlačítko **spouštět z tohoto počítače**.
+7. Otevřete rozevírací nabídku vedle **jazyk Visual Basic for Application**a pak klikněte na **Spustit z tohoto počítače**.
 
 8. Klikněte na **Pokračovat**.
 
 9. Klikněte na **Zavřít**.
 
-## <a name="to-repair-your-installation-of-office"></a>Chcete-li opravit instalaci sady Office
+## <a name="to-repair-your-installation-of-office"></a>Oprava instalace Office
 
-1. V Ovládacích panelech, spusťte **přidat nebo odebrat programy** nebo **programy a funkce**.
+1. V Ovládacích panelech spusťte ovládací panel **Přidat nebo odebrat programy** nebo **programy a funkce**.
 
-2. Vyberte svou verzi Office ve službě **aktuálně nainstalované programy** seznamu.
+2. V seznamu **aktuálně nainstalovaných programů** vyberte svou verzi Office.
 
-3. Klikněte na tlačítko **změnu**.
+3. Klikněte na **změnit**.
 
-4. Vyberte **přeinstalace nebo opravy**a potom klikněte na tlačítko **Další**.
+4. Vyberte **přeinstalovat nebo opravit**a pak klikněte na **Další**.
 
-5. Vyberte **rozpoznat a opravit chyby v instalaci Office**a potom klikněte na tlačítko **nainstalovat**.
+5. **V instalaci Office vyberte rozpoznat a opravit chyby**a pak klikněte na **nainstalovat**.
 
 ## <a name="see-also"></a>Viz také:
 - [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)
