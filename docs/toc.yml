@@ -414,6 +414,8 @@
                       href: ide/reference/use-block-body-lambda.md
                     - name: 'Přiřazení nepoužitých hodnot, proměnné a parametry'
                       href: ide/reference/unused-values-parameters.md
+                    - name: Zalamování a zarovnávání posloupností volání
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: 'Zabalení, odsazení a zarovnání parametrů'
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'Návod: Generování kódu z využití'
