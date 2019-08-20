@@ -1,10 +1,10 @@
 - name: Dokumentace k analýze kódu
   href: index.md
-- name: Analýza kódu pro spravovaný kód
+- name: Analýza spravovaného kódu
   items:
     - name: Přehled
       href: code-analysis-for-managed-code-overview.md
-    - name: Analyzátory Roslyn (analýza zdrojového kódu)
+    - name: Analýza kódu
       items:
         - name: Přehled
           displayName: 'roslyn analyzers, source analysis'
@@ -17,32 +17,32 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Nejčastější dotazy
           href: analyzers-faq.md
-    - name: Binární analyzátory (statická analýza kódu)
+    - name: Starší verze analýzy
       items:
         - name: Přehled
           displayName: 'static code analysis, binary analysis'
           href: static-code-analysis-for-managed-code-overview.md
-        - name: Názorný postup analýzy statického kódu
+        - name: Názorný postup pro spuštění starší verze analýzy
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Migrace
           href: fxcop-analyzers.yml
-        - name: Ruční spuštění analýzy kódu
+        - name: Ruční spuštění starší verze analýzy
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Konfigurace
           items:
-            - name: Konfigurace analýzy kódu pro binární analyzátory
+            - name: Konfigurace starší verze analýzy
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Povolení automatické analýzy kódu
+            - name: Povolení automatického spuštění starší verze analýzy kódu
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-            - name: Přizpůsobení slovníku analýzy kódu
+            - name: Přizpůsobení slovníku starší verze analýzy kódu
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: Potlačení
           items:
-            - name: Potlačení upozornění analýzy statického kódu pro vygenerovaný kód
+            - name: Potlačení upozornění starší verze analýzy pro vygenerovaný kód
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: Chyby aplikace analýzy kódu
+        - name: Chyby aplikace starší verze analýzy
           items:
-            - name: Chyby zásad analýzy kódu
+            - name: Chyby zásad starší verze analýzy
               href: code-analysis-policy-errors.md
             - name: Přehled
               href: code-analysis-application-errors.md
@@ -104,7 +104,7 @@
           items:
             - name: Jak vytvořit nebo aktualizovat zásady vracení zpět se změnami
               href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-            - name: Implementace zásad vracení analýzy kódu zpět se změnami
+            - name: Implementace zásad vracení starší verze analýzy zpět se změnami
               href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
             - name: Vynucování udržitelného kódu
               href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
@@ -127,7 +127,7 @@
               href: fxcop-analyzer-options.md
         - name: Nejčastější dotazy
           href: fxcop-analyzers-faq.md
-    - name: Migrace ze statické analýzy na analyzátory FxCop
+    - name: Migrace ze starší verze analýzy na analyzátory FxCop
       items:
         - name: Přehled
           href: fxcop-analyzers.yml
@@ -698,6 +698,10 @@
                   href: ca5378.md
                 - name: 'CA5386: Vyhněte se pevnému zakódování hodnoty SecurityProtocolType'
                   href: ca5386.md
+                - name: 'CA5397: Nepoužívejte zastaralé hodnoty SslProtocols'
+                  href: ca5397.md
+                - name: 'CA5398: Vyhněte se pevně zakódovaným hodnotám SslProtocols'
+                  href: ca5398.md
             - name: Upozornění využití
               items:
                 - name: Přehled
@@ -791,7 +795,7 @@
                   href: ca2243-attribute-string-literals-should-parse-correctly.md
             - name: Automatické pozastavení funkce
               href: automatic-feature-suspension.md
-- name: Analýza kódu pro C/C++
+- name: Analýza kódu C/C++
   items:
     - name: Přehled
       displayName: C++ code analysis
