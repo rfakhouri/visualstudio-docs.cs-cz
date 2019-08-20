@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924001"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585110"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Sada pravidel Rozšířená pravidla správnosti pro spravovaný kód
+
 Sada pravidel Rozšířená pravidla správnosti společnosti Microsoft maximalizuje logiku a chyby použití architektury, které jsou hlášeny nástrojem analýza kódu. Další důraz je kladen na konkrétní scénáře, jako je interoperabilita modelu COM a mobilní aplikace. Měli byste zvážit zahrnutí této sady pravidel, pokud se jeden z těchto scénářů vztahuje na váš projekt nebo pokud chcete najít další problémy v projektu.
 
-Sada pravidel Rozšířená pravidla správnosti společnosti Microsoft zahrnuje pravidla, která jsou uvedená v sadě pravidel základní pravidla správnosti společnosti Microsoft. Základní pravidla správnosti zahrnují pravidla, která jsou uvedená v sadě pravidel Minimální doporučená pravidla společnosti Microsoft. Další informace najdete v tématu sada [pravidel základní pravidla správnosti pro spravovaný kód](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) a [sadu pravidel spravovaná doporučená pravidla pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
+Sada pravidel Rozšířená pravidla správnosti společnosti Microsoft zahrnuje pravidla, která jsou v sadě pravidel [základní pravidla správnosti](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) , která obsahují pravidla uvedená v sadě pravidel [spravovaná doporučená pravidla](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
 V následující tabulce jsou popsána všechna pravidla v sadě pravidel Rozšířená pravidla správnosti společnosti Microsoft.
 

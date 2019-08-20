@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975907"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585078"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Sada pravidel Rozšířená pravidla pokynů návrhu pro spravovaný kód
 
-Sada pravidel pravidla obecných zásad rozšířené návrhu Microsoft rozšiřuje možnosti návrhu základní pravidla obecných zásad pro maximalizaci problémů použitelnosti a udržovatelnosti, které jsou hlášeny. Je kladen zvláštní důraz na pokyny pro pojmenování. Zvažte zahrnutí této sady, pokud váš projekt zahrnuje kód knihovny nebo pokud chcete zajistit nejvyšší standardy pro psaní kódu, který se snadnou údržbou pravidel.
+Sada pravidel Rozšířená pravidla obecných zásad návrhu se rozšiřuje na základní pravidla obecných zásad návrhu, která maximalizují možnosti použitelnosti a udržovatelnosti, které jsou hlášeny. Dodatečné zdůraznění se řídí pokyny pro pojmenování. Měli byste zvážit zahrnutí této sady pravidel, pokud váš projekt obsahuje kód knihovny nebo pokud chcete vymáhat nejvyšší standardy pro psaní kódu, který se snadno udržuje.
 
-Rozšířená pravidla obecných zásad návrhu zahrnují všechna pravidla pro základní obecných zásad návrhu společnosti Microsoft. Základní pravidla obecných zásad návrhu zahrnují všechny Microsoftu Minimální doporučená pravidla. Další informace najdete v tématu [sada pravidel základní pravidla obecných zásad návrhu pro spravovaný kód](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) a [sada pravidel spravovaná doporučená pravidla pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Rozšířená pravidla obecných zásad návrhu zahrnují všechna pravidla v sadě pravidel [základní pravidla návrhu návrhu](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) , která zahrnují pravidla uvedená v sadě pravidel [spravovaná doporučená pravidla](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
-Následující tabulka popisuje všechna pravidla v sadě pravidel pravidla obecných zásad rozšířené návrhu společnosti Microsoft.
+V následující tabulce jsou popsána všechna pravidla v sadě pravidel Rozšířená pravidla obecných zásad návrhu společnosti Microsoft.
 
 |Pravidlo|Popis|
 |----------|-----------------|
@@ -65,7 +65,7 @@ Následující tabulka popisuje všechna pravidla v sadě pravidel pravidla obec
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Transparentní metody musí obsahovat pouze ověřitelné IL|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Transparentní metody nesmí volat metody s atributem SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Transparentní kód nesmí odkazovat na položky kritické pro zabezpečení|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparentní metody nesmějí vyhovovat LinkDemands|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Transparentní metody nesmí splňovat LinkDemand.|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Typy musí být alespoň tak kritické, jako jejich základní typy a rozhraní|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparentní metody nemusí používat kontrolní příkazy zabezpečení|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparentní metody nesmí provádět volání nativního kódu|

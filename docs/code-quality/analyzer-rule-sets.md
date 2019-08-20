@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547952"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585145"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Sady pravidel pro balíčky analyzátoru
 
 Předdefinované sady pravidel jsou součástí některých balíčků analyzátorů NuGet. Například sady pravidel, které jsou součástí balíčku NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (počínaje verzí 2.6.2), povolují nebo zakazují pravidla na základě jejich kategorie, jako je například zabezpečení, pojmenování nebo výkon. Použití sad pravidel usnadňuje rychlé zobrazení pouze těch porušení pravidel, která se vztahují k určité kategorii pravidla.
 
-Pokud migrujete ze starší analýzy "FxCop" na analýzu kódu na základě .NET Compiler Platform, tyto sady pravidel vám umožní pokračovat v používání stejných konfigurací pravidel, které jste použili dříve.
+Pokud migrujete ze starší analýzy "FxCop" na analýzu kódu na základě .NET Compiler Platform, tyto sady pravidel vám umožní pokračovat v používání podobných konfigurací pravidel pro [ty, které jste použili dříve](rule-set-reference.md).
 
 ## <a name="use-analyzer-package-rule-sets"></a>Použít sady pravidel balíčku analyzátoru
 
@@ -58,7 +58,7 @@ Předdefinované sady pravidel analyzátoru zahrnují tři RuleSets, které maj�
 
 Kromě toho existují dvě sady pravidel pro každou kategorii pravidel v balíčku, jako je například výkon nebo zabezpečení. Jedna sada pravidel povoluje všechna pravidla pro kategorii a jedna sada pravidel respektuje výchozí závažnost a nastavení povolení pro každé pravidlo v kategorii.
 
-Balíček [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer obsahuje sady pravidel pro následující kategorie, které odpovídají sadám pravidel dostupným pro starší verze analýzy:
+Balíček [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer obsahuje sady pravidel pro následující kategorie:
 
 - návrh
 - dokumentace

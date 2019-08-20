@@ -8,21 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28199eb9fa09e2096939ffa8e678eb9812a61b1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffba6b69e1f67b369f3d99c1b54a88448df8a41b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816397"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69584977"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Sada pravidel Pravidla globalizace pro spravovaný kód
-Můžete použít sadu a zaměřte se na problémy, které by mohly bránit dat ve vaší aplikaci správně povolí, v různých jazycích, národních prostředích a jazykových verzích pravidel pravidla globalizace společnosti Microsoft. Měli byste zahrnout tuto pravidlo nastavte, pokud je vaše aplikace lokalizována, globalizována, nebo obojí.
+
+Použijte pravidlo Microsoft globalizace pravidla, která se zaměřují na problémy, které by mohly zabránit tomu, aby se data v aplikaci zobrazovala správně v různých jazycích, národních prostředích a jazykových verzích. Tuto sadu pravidel byste měli zahrnout, pokud je vaše aplikace lokalizovaná, globální nebo obojí.
 
 |Pravidlo|Popis|
 |----------|-----------------|
 |[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|Určete MessageBoxOptions|
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Vyhněte se duplicitním akcelerátorům|
-|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Nekódujte pevně řetězce závislé na národním prostředí|
+|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Nenekódujte pevně řetězce specifické pro národní prostředí|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Nepředávejte literály jako lokalizované parametry|
 |[CA1304](../code-quality/ca1304-specify-cultureinfo.md)|Určete CultureInfo|
 |[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|Určete IFormatProvider|

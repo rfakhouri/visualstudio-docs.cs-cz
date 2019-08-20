@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919542"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585082"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Sada pravidel Základní pravidla obecných zásad návrhu pro spravovaný kód
+
 Můžete použít pravidlo pravidla obecných zásad návrhu Microsoft Basic, abyste se mohli soustředit na snazší pochopení a používání kódu. Tuto sadu pravidel byste měli zahrnout, pokud projekt obsahuje kód knihovny nebo pokud chcete vyhovět osvědčeným postupům pro kód, který se snadno udržuje.
 
-Základní pravidla obecných zásad návrhu zahrnují všechna pravidla v sadě pravidel minimálních pravidel recommeded společnosti Microsoft. Seznam minimálních pravidel najdete v tématu [spravovaná sada pravidel pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+Základní pravidla obecných zásad návrhu zahrnují všechna pravidla uvedená v sadě pravidel [spravovaná doporučená pravidla](managed-recommended-rules-rule-set-for-managed-code.md) .
 
 V následující tabulce jsou popsána všechna pravidla v sadě pravidel základní pravidla návrhu Microsoft Basic.
 

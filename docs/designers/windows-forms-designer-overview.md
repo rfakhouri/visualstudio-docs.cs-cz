@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8280a60f1d265336d427079bdef6612b42ed4330
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 0df8b7ec5955f472d716af2850d2ab0b776c6552
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68984193"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585329"
 ---
-# <a name="windows-forms-designer-overview"></a>Přehled Návrhář formulářů
+# <a name="windows-forms-designer-overview"></a>Přehled nástroje Návrhář formulářů
 
 Návrhář formulářů v aplikaci Visual Studio poskytuje rychlé vývojové řešení pro vytváření aplikací založených na model Windows Forms. Návrhář formulářů umožňuje snadno přidat ovládací prvky do formuláře, uspořádat je a napsat kód pro své události. Další informace o model Windows Forms najdete v tématu [model Windows Forms Overview](/dotnet/framework/winforms/windows-forms-overview).
 
@@ -39,7 +39,7 @@ Pomocí návrháře můžete:
 
 - [Přehled model Windows Forms](/dotnet/framework/winforms/windows-forms-overview)
 - [Ovládací prvky model Windows Forms](/dotnet/framework/winforms/controls/)
-- [Usnadnění pro model Windows Forms ovládací prvky](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
 - [Vstup uživatele v model Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Datová vazba v model Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
 - [Vylepšení model Windows Formsch aplikací](/dotnet/framework/winforms/advanced/)
+- <xref:System.Windows.Forms?displayProperty=fullName>Reference k rozhraní API

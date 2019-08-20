@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919560"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585008"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Sada pravidel Základní pravidla správnosti pro spravovaný kód
-Sada pravidel základní pravidla správnosti se zaměřuje na logické chyby a běžné chyby v používání rozhraní API architektury. Základní pravidla správnosti zahrnují pravidla v sadě pravidel Minimální doporučená pravidla. Další informace najdete v tématu [sada pravidel spravovaná doporučená pravidla pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) . měli byste zahrnout tuto sadu pravidel, která se rozbalí v seznamu upozornění, která jsou v sestavě minimální doporučená pravidla.
+
+Sada pravidel základní pravidla správnosti se zaměřuje na logické chyby a běžné chyby v používání rozhraní API architektury. Základní pravidla správnosti zahrnují pravidla uvedená v sadě pravidel [spravovaná doporučená pravidla](managed-recommended-rules-rule-set-for-managed-code.md) .
 
 V následující tabulce jsou popsána všechna pravidla v sadě pravidel základní pravidla správnosti společnosti Microsoft.
 

@@ -8,15 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b358821705c87767fcb05f45f06b83e8b1e60049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77a0878ff3e359a4cca5c52a2ea8118273bbf2a2
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820658"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585257"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Sada pravidel Nativní minimální pravidla
-Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůležitější problémy v nativním kódu, včetně možných bezpečnostních děr a selhání aplikace. Měli byste zahrnout tuto sadu pravidel v jakékoli vlastní sadě pravidel, že kterou vytvoříte pro vaše nativní projekty.
+
+Nativní minimální pravidla společnosti Microsoft se zaměřují na nejdůležitější problémy v nativním kódu, včetně možných bezpečnostních děr a chyb aplikací.
+
+Zahrňte tuto sadu pravidel v jakékoli vlastní sadě pravidel, kterou vytvoříte pro nativní projekty.
 
 |Pravidlo|Popis|
 |----------|-----------------|
@@ -68,7 +71,7 @@ Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůle�
 |[C6518](../code-quality/c6518.md)|Zapisovatelná velikost pro vyrovnávací paměť, Nezapisovatelný|
 |[C6522](../code-quality/c6522.md)|Typ řetězec neplatné velikosti|
 |[C6525](../code-quality/c6525.md)|Neplatná velikost řetězce-nedosažitelná oblast|
-|[C6527](../code-quality/c6527.md)|Neplatná Poznámka: Vlastnost 'NeedsRelease' nesmí být použita pro hodnoty typu void|
+|[C6527](../code-quality/c6527.md)|Neplatná Anotace: Vlastnost NeedsRelease se nedá použít u hodnot typu void.|
 |[C6530](../code-quality/c6530.md)|Nerozpoznaný styl řetězce formátu|
 |[C6540](../code-quality/c6540.md)|Použití poznámek atributu na této funkci způsobí neplatnost všech existujících poznámek __declspec|
 |[C6551](../code-quality/c6551.md)|Neplatná specifikace velikosti: výraz není analyzovatelný|
@@ -89,13 +92,13 @@ Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůle�
 |[C28182](../code-quality/c28182.md)|Přesměrování ukazatele NULL. Ukazatel obsahuje tutéž hodnotu NULL jako jiný ukazatel.|
 |[C28202](../code-quality/c28202.md)|Neplatný odkaz na Nestatický člen|
 |[C28203](../code-quality/c28203.md)|Nejednoznačný odkaz na člena třídy.|
-|[C28205](../code-quality/c28205.md)|\_Úspěch\_ nebo \_na\_selhání\_ použít v neplatném kontextu|
+|[C28205](../code-quality/c28205.md)|\_Úspěch\_ nebo \_při\_selhánípřipoužitívneplatnémkontextu\_|
 |[C28206](../code-quality/c28206.md)|Levý operand ukazuje na strukturu, použijte "->"|
 |[C28207](../code-quality/c28207.md)|Levý operand je struktura, použijte "."|
 |[C28210](../code-quality/c28210.md)|Poznámky pro kontext __on_failure nesmí být v explicitním předkontextu|
 |[C28211](../code-quality/c28211.md)|Pro SAL_context se očekává název statického kontextu|
 |[C28212](../code-quality/c28212.md)|Očekávaný výraz ukazatele pro poznámku|
-|[C28213](../code-quality/c28213.md)|\_Použití\_decl\_poznámky\_ tak, aby odkazovaly předchozí deklarace bez jakýchkoli úprav, třeba použít poznámku.|
+|[C28213](../code-quality/c28213.md)|Poznámka k\_prohlášení o \_\_použití se musí použít k odkazování na předchozí deklaraci bez úprav.\_|
 |[C28214](../code-quality/c28214.md)|Názvy atributových parametrů musí být p1... p9|
 |[C28215](../code-quality/c28215.md)|Typefix nelze použít pro parametr, který již poznámku typefix obsahuje|
 |[C28216](../code-quality/c28216.md)|Poznámka checkreturn se vztahuje pouze k následným podmínkám specifických parametrů funkcí.|
@@ -137,7 +140,7 @@ Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůle�
 |[C28267](../code-quality/c28267.md)|Poznámky v funkce byla nalezena chyba syntaxe v poznámkách.|
 |[C28272](../code-quality/c28272.md)|Poznámka pro funkci, je parametr při zkoumání nekonzistentní s deklarací funkce|
 |[C28273](../code-quality/c28273.md)|Pro funkci nejsou konzistentní s deklarací funkce|
-|[C28275](../code-quality/c28275.md)|Parametr \_– makro\_hodnotu\_ má hodnotu null.|
+|[C28275](../code-quality/c28275.md)|Parametr k \_hodnotě\_makra\_ je null.|
 |[C28279](../code-quality/c28279.md)|Pro symbol "begin" bylo nalezeno bez odpovídajícího "end"|
 |[C28280](../code-quality/c28280.md)|Pro symbol bylo nalezeno "end" bez odpovídajícího "begin"|
 |[C28282](../code-quality/c28282.md)|Řetězce formátu musí být v předběžných podmínkách|
@@ -145,7 +148,7 @@ Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůle�
 |[C28286](../code-quality/c28286.md)|Pro funkci. syntaktická chyba poblíž konce|
 |[C28287](../code-quality/c28287.md)|Pro funkci. Chyba syntaxe v \_na\_poznámky () (nerozeznaný název parametru)|
 |[C28288](../code-quality/c28288.md)|Pro funkci. Chyba syntaxe v \_na\_poznámky () (neplatný název parametru)|
-|[C28289](../code-quality/c28289.md)|Pro funkci: ReadableTo nebo writableto nebyl neměl limit-spec jako parametr|
+|[C28289](../code-quality/c28289.md)|Pro funkci: ReadableTo nebo Writableto nebyl neobsahovaly omezení-spec jako parametr.|
 |[C28290](../code-quality/c28290.md)|Poznámka pro funkci obsahuje více typů External než je skutečný počet parametrů|
 |[C28291](../code-quality/c28291.md)|Po null/notnull deref úroveň 0 je pro funkci bezvýznamné.|
 |[C28300](../code-quality/c28300.md)|Operandy výrazu nekompatibilních typů pro operátor|
