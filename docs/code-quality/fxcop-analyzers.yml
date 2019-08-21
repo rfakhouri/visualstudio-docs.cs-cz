@@ -1,9 +1,9 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Migrace z binární analýzy (FxCop) do zdrojová analýza (analyzátory FxCop)
+title: Migrace z binární analýzy (FxCop) do zdrojové analýzy (FxCop analyzátory)
 metadata:
   title: Dokumentace k migraci FxCop
-  description: 'Zjistěte, jak přejít od starších verzí binární analýzy (FxCop) do zdrojového kódu analysis (analyzátory FxCop) při analýze kódu.'
+  description: Naučte se při analýze kódu přesunout ze starší binární analýzy (FxCop) do analýzy zdrojů (FxCop Analyzer).
   ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
@@ -14,10 +14,10 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: 'Zjistěte, jak analyzovat kód poprvé nebo o migraci na nový způsob analýzy spravovaného kódu pomocí zdrojová analýza (analyzátory FxCop) z binární analýzy (FxCop).'
+  description: 'Naučte se, jak poprvé analyzovat kód nebo jak migrovat z binární analýzy (FxCop) na nový způsob analýzy spravovaného kódu pomocí analýzy zdrojů (FxCop Analyzer).'
   aside:
     image:
-      alt: Běžné úlohy logo Správa
+      alt: Logo běžných úloh správy
       height: 133
       width: 48
       src: 'https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg'
@@ -25,8 +25,8 @@ abstract:
 sections:
   - title: Nejčastější dotazy
     items:
-      - html: Získejte odpovědi na některé <a href="fxcop-analyzers-faq.md">– nejčastější dotazy</a> o rozdílech mezi binární FxCop analýzy a analýzy zdroje s využitím analyzátory FxCop.
-  - title: Pokud začínáte analýzy kódu...
+      - html: Získejte odpovědi na některé <a href="fxcop-analyzers-faq.md">Nejčastější dotazy</a> týkající se rozdílů mezi analýzou binárního FxCop a analýzou zdroje pomocí analyzátorů FxCop.
+  - title: Pokud začínáte s analýzou kódu...
     items:
       - type: list
         style: cards
@@ -34,54 +34,54 @@ sections:
         columns: 2
         items:
           - href: roslyn-analyzers-overview.md
-            html: '<p>Zjistěte, co jsou analyzátory.</p>'
+            html: '<p>Zjistěte, jaké analyzátory jsou.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-            title: Přehled analyzátory
+            title: Přehled analyzátorů
           - href: install-roslyn-analyzers.md
-            html: '<p>Zjistěte, jak nainstalovat analyzátory jako balíček NuGet nebo rozšíření sady Visual Studio.</p>'
+            html: <p>Naučte se instalovat analyzátory jako balíček NuGet nebo rozšíření sady Visual Studio.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Instalace analyzátorů
+            title: Nainstalovat analyzátory
           - href: use-roslyn-analyzers.md
-            html: '<p>Zjistěte, jak pomocí analyzátorů a potlačit porušení pro C# nebo kódu jazyka Visual Basic.</p>'
+            html: '<p>Naučte se používat analyzátory a potlačit porušení kódu C# nebo Visual Basic.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
-            title: Nastavit závažnost pravidla a potlačit chyby
+            title: Nastavení závažnosti pravidla a potlačení chyb
           - href: 'use-roslyn-analyzers.md#command-line-usage'
-            html: <p>Další informace o použití analyzátory z příkazového řádku.</p>
+            html: <p>Naučte se používat analyzátory z příkazového řádku.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: Použití příkazového řádku
-  - title: Pokud aktuálně používáte binární analýzy (FxCop)...
+  - title: Pokud aktuálně používáte binární analýzu (FxCop)...
     items:
       - type: list
         style: cards
         className: cardsM
         columns: 2
         items:
-          - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>Poznejte rozdíly mezi binární analýzy (FxCop) a zdrojová analýza (analyzátory FxCop).</p>
+          - href: 'roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis'
+            html: <p>Přečtěte si o rozdílech mezi binární analýzou (FxCop) a zdrojovou analýzou (FxCop Analyzer).</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-            title: Co je nového?
+            title: Co se liší?
           - href: install-fxcop-analyzers.md
-            html: '<p>Zjistěte, jak nainstalovat balíček analyzátor FxCop.</p>'
+            html: '<p>Přečtěte si, jak nainstalovat balíček FxCop Analyzer.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: Instalace analyzátorů FxCop
           - href: fxcop-rule-port-status.md
-            html: '<p>Obsahuje seznam pravidel binární analýzy (FxCop), které přenesené zdrojová analýza (analyzátory FxCop).</p>'
+            html: '<p>Vypíše pravidla binární analýzy (FxCop), která byla předaná do analýzy zdrojů (FxCop Analyzer).</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
-            title: Přenesená a unported pravidla
+            title: Přepravovaná a nepřenosná pravidla
           - href: 'use-roslyn-analyzers.md#command-line-usage'
-            html: '<p>Obvykle při spuštění analýzy kódu z příkazového řádku, informace o používání analyzátorů z příkazového řádku.</p>'
+            html: '<p>Pokud obvykle spouštíte analýzu kódu z příkazového řádku, Naučte se používat analyzátory z příkazového řádku.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: Použití příkazového řádku
           - href: analyzer-rule-sets.md
-            html: <p>Další informace o sad pravidel analyzátoru balíčků.</p>
+            html: <p>Přečtěte si o sadách pravidel balíčku analyzátoru.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
             title: Sady pravidel
@@ -93,12 +93,12 @@ sections:
         columns: 2
         items:
           - href: code-analysis-for-c-cpp-overview.md
-            html: '<p>Zjistěte, jak spustit analýzu kódu v nativním kódu C++. Analýzy spravovaného kódu jazyka C++ je zastaralý.</p>'
+            html: '<p>Naučte se, jak spustit analýzu kódu C++ v nativním kódu. Analýza spravovaného C++ kódu je zastaralá.</p>'
             image:
               src: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
-            title: Analýza kódu C++
+            title: C++Analýza kódu
           - href: code-metrics-values.md
-            html: '<p>Zjistěte, jak získat metriky kódu. Uživatelské prostředí pro metriky kódu zůstane beze změny.</p>'
+            html: '<p>Přečtěte si, jak získat metriky kódu. Činnost koncového uživatele pro metriky kódu zůstane beze změny.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_data-collection.svg'
             title: Metriky kódu

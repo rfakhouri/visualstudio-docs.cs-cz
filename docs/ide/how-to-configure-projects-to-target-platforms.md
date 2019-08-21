@@ -1,6 +1,6 @@
 ---
 title: 'Postupy: Konfigurace projektů pro cílové platformy'
-ms.date: 11/04/2016
+ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faef9f55a88385953a121574f761193cc8c11ea9
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416831"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634926"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Postupy: Konfigurace projektů pro cílové platformy
 
@@ -64,9 +64,60 @@ Provádění tohoto úkolu se liší v závislosti na programovacím jazyku, kte
 
 - Pro [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projekty naleznete v tématu [/CLR (Common Language Runtime Compilation)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
+## <a name="manually-editing-the-project-file"></a>Ruční úprava souboru projektu
+
+V některých případech je nutné ručně upravit soubor projektu pro určitou vlastní konfiguraci. Příkladem je, že máte podmínky, které nelze zadat v integrovaném vývojovém prostředí (IDE), jako je například odkaz, který je odlišný pro dvě různé platformy, jako v následujícím příkladu.
+
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Příklad: Odkazy na sestavení a knihovny DLL x86 a x64
+
+Je možné, že máte sestavení .NET nebo knihovnu DLL, které mají verze x86 i x64. Chcete-li nastavit projekt pro použití těchto odkazů, přidejte nejprve odkaz a poté otevřete soubor projektu a upravte jej tak, aby `ItemGroup` se přidala podmínka, která odkazuje jak na konfiguraci, tak na cílovou platformu.  Předpokládejme například, že binární soubor, na který odkazujete, je ClassLibrary1 a jsou k dispozici různé cesty pro konfigurace ladění a vydaných verzí a také verze x86 a x64.  Pak použijte čtyři `ItemGroup` prvky se všemi kombinacemi nastavení následujícím způsobem:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
+```
+
+::: moniker range="vs-2017"
+> [!NOTE]
+> V aplikaci Visual Studio 2017 je nutné před úpravou souboru projektu uvolnit projekt. Chcete-li uvolnit projekt, klikněte pravým tlačítkem myši na uzel projektu a vyberte možnost **Uvolnit projekt**. Po dokončení úprav uložte změny a znovu načtěte projekt kliknutím pravým tlačítkem myši na uzel projektu a výběrem možnosti **znovu načíst projekt**.
+::: moniker-end
+
+Další informace o souboru projektu naleznete v tématu [Referenční dokumentace schématu souboru projektu nástroje MSBuild](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+
 ## <a name="see-also"></a>Viz také:
 
 - [Principy platforem sestavení](../ide/understanding-build-platforms.md)
 - [/Platform (C# možnosti kompilátoru)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [64 – bitové aplikace](/dotnet/framework/64-bit-apps)
 - [Visual Studio IDE 64 – Podpora bitových procesorů](../ide/visual-studio-ide-64-bit-support.md)
+- [Porozumění souboru projektu](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)
