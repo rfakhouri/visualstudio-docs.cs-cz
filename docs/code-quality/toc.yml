@@ -162,31 +162,31 @@
           items:
             - name: Přehled
               href: rule-set-reference.md
-            - name: Sada pravidel Všechna pravidla
+            - name: Všechna pravidla
               href: all-rules-rule-set.md
-            - name: Sada pravidel Základní pravidla správnosti pro spravovaný kód
+            - name: Základní pravidla správnosti
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Základní pravidla obecných zásad návrhu pro spravovaný kód
+            - name: Základní pravidla obecných zásad návrhu
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Rozšířená pravidla správnosti pro spravovaný kód
+            - name: Rozšířená pravidla správnosti
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Rozšířená pravidla pokynů návrhu pro spravovaný kód
+            - name: Rozšířená pravidla obecných zásad návrhu
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Pravidla globalizace pro spravovaný kód
+            - name: Pravidla globalizace
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Spravovaná minimální pravidla pro spravovaný kód
+            - name: Minimální pravidla pro spravovaný kód
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Spravovaná doporučená pravidla pro spravovaný kód
+            - name: Doporučená pravidla pro spravovaný kód
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Sada pravidel Smíšená minimální pravidla
+            - name: Smíšená minimální pravidla
               href: mixed-minimum-rules-rule-set.md
-            - name: Sada pravidel Smíšená doporučená pravidla
+            - name: Smíšená doporučená pravidla
               href: mixed-recommended-rules-rule-set.md
-            - name: Sada pravidel Nativní minimální pravidla
+            - name: Nativní minimální pravidla
               href: native-minimum-rules-rule-set.md
-            - name: Sada pravidel Nativní doporučená pravidla
+            - name: Nativní doporučená pravidla
               href: native-recommended-rules-rule-set.md
-            - name: Sada pravidel Pravidla zabezpečení pro spravovaný kód
+            - name: Pravidla zabezpečení
               href: security-rules-rule-set-for-managed-code.md
         - name: Potlačení upozornění
           href: in-source-suppression-overview.md
