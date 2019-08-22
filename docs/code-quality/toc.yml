@@ -658,6 +658,16 @@
                   href: ca2321.md
                 - name: 'CA2322: Před deserializaci se ujistěte se, že třída JavaScriptSerializer není inicializována pomocí třídy SimpleTypeResolver'
                   href: ca2322.md
+                - name: 'CA2326: Nepoužívejte jiné hodnoty TypeNameHandling než None'
+                  href: ca2326.md
+                - name: 'CA2327: Nepoužívejte nezabezpečená nastavení JsonSerializerSettings'
+                  href: ca2327.md
+                - name: 'CA2328: Ujistěte se, že nastavení JsonSerializerSettings jsou zabezpečená'
+                  href: ca2328.md
+                - name: 'CA2329: Nepoužívejte s JsonSerializer deserializaci pomocí nezabezpečené konfigurace'
+                  href: ca2329.md
+                - name: 'CA2330: Ujistěte se, že JsonSerializer má při deserializaci zabezpečenou konfiguraci'
+                  href: ca2330.md
                 - name: 'CA3001: Zkontrolujte ohrožení zabezpečení injektáží SQL v kódu'
                   href: ca3001-review-code-for-sql-injection-vulnerabilities.md
                 - name: 'CA3002: Zkontrolujte ohrožení zabezpečení proti XSS v kódu'
