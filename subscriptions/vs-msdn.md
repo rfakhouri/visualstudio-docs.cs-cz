@@ -5,48 +5,32 @@ ms.author: lank
 manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
-description: Zaregistrujte se, abyste získali předplatné služby MSDN Magazine zahrnuté ve vašem předplatném sady Visual Studio.
-ms.openlocfilehash: 0cc6757a77536a7bd8073418be8729802e8aaaae
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+description: Vyřazení MSDN Magazine
+ms.openlocfilehash: 8addfcf6c32b8c7d01223ff1ae6bb4cc4b32562c
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681581"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891261"
 ---
-# <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Zvýhodnění MSDN Magazine v předplatných sady Visual Studio
-Komplexní pokrytí technologií Microsoftu pro praktická řešení problémů v reálném světě.  V závislosti na vašem předplatném máte nárok na vytištěný časopis nebo k digitálnímu přístupu z dřívější verze.
+# <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions-has-been-discontinued"></a>Výhoda MSDN Magazine v předplatných sady Visual Studio byla zastavena.
 
-## <a name="activation-steps"></a>Kroky aktivace
-1. Pokud chcete předplatitele MSDN Magazine, přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2. Vyhledejte dlaždici MSDN Magazine v části profesionální vývoj a klikněte na **přístup**.
-3. Na stránce časopis MSDN Magazine vyberte preferovaný typ předplatného.  Můžete si zvolit zdarma Digital Edition bez ohledu na to, kde žijete.  Vytištěná verze je zdarma k dispozici pro rezidenty v USA.  Poplatky za expedici se vztahují na tištěné verze odeslané na jiné než americké adresy.
-   > [!div class="mx-imgBorder"]
-   > ![Předplatná MSDN Magazine – výhody](_img/vs-msdn/vs-msdn-subs-page-resized.png)
-4. Zadejte požadované kontaktní informace a klikněte na **Odeslat**.  (Verze časopisu, kterou jste vybrali, se zobrazí v části předplatné časopisu.  Pokud jste zvolili vytištěnou edici, první z možností **bude číst Ano!  Chci zdarma**dostávat 1 rok (12 problémů) časopisu MSDN Magazine.
-   > [!div class="mx-imgBorder"]
-   > ![Profil výhody MSDN Magazine](_img/vs-msdn/vs-msdn-profile.png)
-5. To je všechno, co je to vše.  V závislosti na verzi vašeho časopisu, kterou jste zvolili, můžete buď začít přijímat tištěné časopisy nebo e-maily s odkazy na nejnovější online verze s další edicí.  Sledovat!
+V časopise MSDN Magazine nedávno oznámil, že bude jeho poslední edice publikovat v listopadu 2019.  Tato změna byla oznámena v [příspěvku na blogu](https://msdn.microsoft.com/magazine/mt833502.aspx?) v MSDN.Microsoft.com v srpnu 2019.  
 
-## <a name="eligibility"></a>Vznik
-| Úroveň předplatného                                                 |     Kanály                                            | Výhodnosti                                                          | Mlčky?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, vybrané NFR<sup>1</sup> |Vytištěná edice       |  Ne.  Dostupné jenom pro nové předplatitele          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Vytištěná edice                                                            |Ne.  Dostupné jenom pro nové předplatitele         |
-| Visual Studio Test Professional (Standard)                         | VL, maloobchodní prodej                                              | Vytištěná edice                                             |  Ne.  Dostupné jenom pro nové předplatitele         |
-| MSDN Platforms (Standard)                                          | VL, maloobchodní prodej                                              | Vytištěná edice                                              | Ne.  Dostupné jenom pro nové předplatitele         |
-|Visual Studio Enterprise Visual Studio Professional (měsíční Cloud)   | Azure |Není k dispozici      |  Není k dispozici         |
-||
+## <a name="the-announcement"></a>Oznámení
+Tady je ukázka oznámení na msdn.microsoft.com:
 
-<sup>1 vytištěná edice</sup> *:    Neprodejné (NFR), Visual Studio Industry Partner (VSIP), FTE, Microsoft Partner Network (Enterprise), představte (Premium).*
+    "Dear reader,
 
-*Digital Edition: MCT software & Services, profesionálního odborníka (MVP), regionálního ředitele (RD).*
+    After more than three decades providing technical guidance to the community of Microsoft developers, MSDN Magazine will publish its last issue in November. All previous issues will be archived and available online.
 
-*Vyloučí  Představte si (Standard), BizSpark, MCT software & Services Developer*
+    MSDN Magazine originally started as two separate magazines, Microsoft Systems Journal and Microsoft Internet Developer, which consolidated into MSDN Magazine in 2000. Our first issue that year was entirely devoted to the Windows operating environment. How far have we all come since then? As Microsoft products and services expanded exponentially over the years, MSDN Magazine has gone through its own evolution, as well. We realized that it is time to retire MSDN Magazine and to carry on its work through Web channels like docs.microsoft.com.
 
-> [!NOTE]
-> Společnost Microsoft už nenabízí Visual Studio Professional roční předplatné a Visual Studio Enterprise roční předplatné v cloudových předplatných. Stávající prostředí pro zákazníky se nijak nemění a možnost obnovit, zvýšit, snížit nebo zrušit jejich odběry. Novým zákazníkům doporučujeme přejít na [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumat různé možnosti nákupu sady Visual Studio.
+    Subscribers of MSDN Magazine who have paid for their subscriptions will receive a pro-rated refund, based on time remaining on their subscription. The refund checks will be mailed out to those subscribers after the November issue has published."
 
-Nejste si jistí, jaké Předplatné používáte?  Připojte se [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a zobrazte všechna předplatná přiřazená k vaší e-mailové adrese. Pokud nevidíte všechna Vaše předplatná, může být jedna nebo více přiřazená k jiné e-mailové adrese.  K zobrazení těchto předplatných se budete muset přihlásit pomocí této e-mailové adresy.
+## <a name="frequently-asked-questions"></a>Nejčastější dotazy
+### <a name="q-how-does-the-refund-process-work"></a>Č Jak proces náhrady funguje?
+O: Refundace se budou poštou na adresu souboru pro vaše předplatné. Pokud máte další dotazy týkající se refundací, kontaktujte **1105 média**.  V [příspěvku na blogu](https://msdn.microsoft.com/magazine/mt833502.aspx?) na MSDN.Microsoft.com jsou k dispozici kompletní kontaktní informace pro 1105 média.  
 
 ## <a name="support-resources"></a>Prostředky podpory
 - Pokud potřebujete pomoc s prodejem, předplatnými, účty a fakturací za předplatná sady Visual Studio, kontaktujte [podporu](https://visualstudio.microsoft.com/subscriptions/support/)předplatných sady Visual Studio

@@ -1,5 +1,5 @@
 ---
-title: 'CA2312: Ujistěte se, že NetDataContractSerializer.Binder nastavený před deserializaci'
+title: 'CA2312: Před deserializací se ujistěte, že je nastavený NetDataContractSerializer.Binder'
 ms.date: 05/01/2019
 ms.topic: reference
 author: dotpaul
@@ -13,52 +13,52 @@ ms.workload:
 f1_keywords:
 - CA2312
 - EnsureNetDataContractSerializerBinderIsSetBeforeDeserializing
-ms.openlocfilehash: 7d438945e9a1e5fdc03b09573168bbad0563ce28
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 38495a3c8d5a2efb5e5e96785cecbd6d50e9cd00
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135563"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891109"
 ---
-# <a name="ca2312-ensure-netdatacontractserializerbinder-is-set-before-deserializing"></a>CA2312: Ujistěte se, že NetDataContractSerializer.Binder nastavený před deserializaci
+# <a name="ca2312-ensure-netdatacontractserializerbinder-is-set-before-deserializing"></a>CA2312: Před deserializací se ujistěte, že je nastavený NetDataContractSerializer.Binder
 
 |||
 |-|-|
 |TypeName|EnsureNetDataContractSerializerBinderIsSetBeforeDeserializing|
 |CheckId|CA2312|
 |Kategorie|Microsoft.Security|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-A <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> metody deserializace byla volána nebo je odkazované a <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> vlastnost může mít hodnotu null.
+Byla volána nebo odkazována metoda deserializace <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> a vlastnost může mít hodnotu null. <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType>
 
 ## <a name="rule-description"></a>Popis pravidla
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Toto pravidlo vyhledá <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> metody deserializace volá nebo kdy se odkazuje <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> může mít hodnotu null. Pokud chcete zakázat všechny deserializace pomocí <xref:System.Runtime.Serialization.NetDataContractSerializer> bez ohledu na to <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> vlastnost zakázat toto pravidlo a [CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)a povolit pravidlo [CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md).
+Toto pravidlo vyhledá <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> volání metody deserializace nebo odkazuje na <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> to, kdy může být null. Pokud chcete <xref:System.Runtime.Serialization.NetDataContractSerializer> zakázat jakoukoli deserializaci bez ohledu na <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> vlastnost, zakažte toto pravidlo a [CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)a povolte pravidlo [CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md).
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-- Pokud je to možné, použijte zabezpečené serializátor, a **Nepovolit útočníkovi zadat libovolný typ k deserializaci**. Některé bezpečnější serializátory patří:
+- Pokud je to možné, použijte místo toho zabezpečený serializátor a nepovolujte **útočníkovi zadání libovolného typu k**deserializaci. Mezi bezpečnější serializátory patří:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Nikdy nepoužívejte <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Pokud je nutné použít typ překladače, omezení deserializovaný typy k očekávaným seznamem.
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>– Nikdy nepoužívejte <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Pokud je nutné použít překladač typů, omezte deserializovatelné typy na očekávaný seznam.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - Newtonsoft Json.NET - TypeNameHandling.None použití. Pokud musíte použít jinou hodnotu pro TypeNameHandling, omezte na očekávaným seznamem s vlastní ISerializationBinder deserializovaný typy.
-  - Protocol Buffers
-- Ujistěte se, manipulací serializovaná data. Po serializaci podepište kryptograficky serializovaná data. Před deserializace ověřte kryptografický podpis. Chraňte kryptografické klíče z je zveřejněn a návrh pro rotace klíčů.
-- Zakázání deserializovaný typů. Implementovat vlastní <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Před deserializace s <xref:System.Runtime.Serialization.NetDataContractSerializer>, nastavte <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> vlastnost instance vašeho vlastního <xref:System.Runtime.Serialization.SerializationBinder>. V přepsané <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> metodu, pokud je očekáván typ vyvolat výjimku.
-  - Ujistěte se, že všechny cesty kódu <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> sadu vlastností.
+  - Newtonsoft Json.NET – použijte TypeNameHandling. None. Pokud je nutné použít jinou hodnotu pro TypeNameHandling, omezte deserializovatelné typy na očekávaný seznam pomocí vlastního ISerializationBinder.
+  - Vyrovnávací paměti protokolu
+- Proveďte serializovanou manipulaci s daty. Po serializaci kryptograficky podepisují Serializovaná data. Před deserializací ověřte kryptografický podpis. Chránit kryptografický klíč před zveřejněním a návrhem pro střídání klíčů.
+- Omezí deserializovatelné typy. Implementujte vlastní <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Před deserializací pomocí <xref:System.Runtime.Serialization.NetDataContractSerializer> <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> nastavte vlastnost na instanci vašeho vlastního <xref:System.Runtime.Serialization.SerializationBinder>. Pokud je typ <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> v přepsané metodě neočekávaný, vyvolejte výjimku pro zastavení deserializace.
+  - Ujistěte se, že všechny cesty kódu <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> mají nastavenou vlastnost.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
 [!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
-## <a name="pseudo-code-examples"></a>Příklady pseudo kódu
+## <a name="pseudo-code-examples"></a>Příklady kódu pseudo
 
-### <a name="violation"></a>Porušení
+### <a name="violation"></a>Selhání
 
 ```csharp
 using System;
@@ -265,6 +265,6 @@ End Class
 
 ## <a name="related-rules"></a>Související pravidla
 
-[CA2310: Nepoužívejte nezabezpečené deserializátor NetDataContractSerializer](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)
+[CA2310: Nepoužívejte nezabezpečený NetDataContractSerializer deserializace.](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)
 
-[CA2311: Nelze deserializovat bez první nastavení NetDataContractSerializer.Binder](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)
+[CA2311: Nepovedlo se deserializovat bez předchozího nastavení NetDataContractSerializer. Binder.](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)

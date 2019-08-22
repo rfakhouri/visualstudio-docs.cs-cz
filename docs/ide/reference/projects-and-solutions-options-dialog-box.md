@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d31f76a448933bb3809cd609ebd355c8e0a04b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 8b71d7040df5f971f320b9bb9999f9cacd0425e7
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605948"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891277"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Dialogové okno Možnosti: Projekty a řešení \> – obecné
 
-Pomocí této stránky můžete definovat chování sady Visual Studio související s projekty a řešeními. Chcete-li získat přístup k těmto možnostem, vyberte možnost **nástroje** >  **, rozbalte**položku **projekty a řešení**a pak vyberte možnost **Obecné**.
+Pomocí této stránky můžete definovat chování sady Visual Studio související s projekty a řešeními. Chcete-li získat přístup k těmto možnostem, vyberte možnost **nástroje** > , rozbalte položku **projekty a řešení**a pak vyberte možnost **Obecné**.
 
 Na stránce **Obecné** jsou k dispozici následující možnosti.
 
@@ -70,11 +70,28 @@ Je-li vybrána tato možnost, aplikace Visual Studio zobrazí okno potvrzovací 
 
 ## <a name="reopen-documents-on-solution-load"></a>Znovu otevřít dokumenty při načtení řešení
 
-**Představeno v aplikaci Visual Studio 2017 verze 15,8**
-
 Když je tato možnost vybraná, dokumenty, které zůstaly otevřené, se po otevření řešení automaticky otevřou.
 
 Opětovné otevření určitých typů souborů nebo návrhářů může zpozdit zatížení řešení. Zrušte tuto možnost, pokud chcete [zlepšit výkon při načítání řešení](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) , pokud nechcete obnovit předchozí kontext řešení.
+
+::: moniker range=">=vs-2019"
+
+## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>Obnovit Průzkumník řešení stav hierarchie projektu při načtení řešení
+
+Pokud je tato možnost vybrána, obnoví stav uzlů v Průzkumník řešení s ohledem na to, zda byly rozbaleny nebo sbaleny při posledním otevření řešení. Tuto možnost vypněte, pokud chcete zkrátit dobu načítání řešení pro velká řešení.
+
+Pokud tuto možnost zakážete, snadný způsob, jak přejít na aktivní dokument v Průzkumník řešení, je výběrem možnosti **synchronizovat s aktivním dokumentem** na panelu nástrojů **Průzkumník řešení** .
+
+![Synchronizovat s aktivním dokumentem v Průzkumník řešení](media/sync-active-document.png)
+
+## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>Otevřete soubory projektu ve stylu sady SDK dvojitým kliknutím nebo klávesou ENTER.
+
+Pokud je vybrána tato možnost a dvakrát kliknete na uzel projektu v Průzkumník řešení nebo vyberete uzel projektu a potom stisknete klávesu **ENTER**, soubor projektu (například \*soubor. csproj) se otevře jako XML v editoru. Toto je snadný způsob, jak upravit soubor XML projektu, aniž byste museli nejprve uvolnit projekt a pak otevřít soubor projektu pro úpravy.
+
+> [!TIP]
+> Pokud je toto políčko zaškrtnuté, poklikejte na uzel projektu v Průzkumník řešení nebo ho vyberte a stisknutí klávesy **ENTER** má vliv pouze na rozbalení nebo sbalení uzlu.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Viz také:
 

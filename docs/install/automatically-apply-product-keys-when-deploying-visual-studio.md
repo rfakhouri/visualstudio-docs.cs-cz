@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f1cdc3d8516271cd397c1d22118ca21a92f78cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dabaf63e205d3e76432767743e323c90ed389846
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974212"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891312"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatické použití kódů Product Key při nasazení sady Visual Studio
 
@@ -33,7 +33,7 @@ Nainstalovaná verze sady Visual Studio s kódem product key můžete aktivovat 
 
 ::: moniker range="vs-2019"
 
-Nainstalovaná verze sady Visual Studio s kódem product key můžete aktivovat pomocí `StorePID.exe` nástroj na cílových počítačích, v bezobslužném režimu. `StorePID.exe` program je nástroj, který nainstaluje se Visual Studio 2019 následující výchozí umístění: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE`
+Nainstalovaná verze sady Visual Studio s kódem product key můžete aktivovat pomocí `StorePID.exe` nástroj na cílových počítačích, v bezobslužném režimu. `StorePID.exe`je program, který se instaluje se sadou Visual Studio 2019 v následujících výchozích umístěních: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE`
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Následující příklad ukazuje použití licence pro Visual Studio 2017 Enterp
 
 ::: moniker range="vs-2019"
 
-Následující příklad ukazuje použití licence pro Visual Studio Enterprise. 2019, který má MPC 09260, příkazový řádek, kód product key z `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`a které předpokládá výchozí umístění instalace:
+Následující příklad ukazuje příkazový řádek pro použití licence sady Visual Studio 2019 Enterprise, která má MPC 09260, kód Product Key `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`a předpokládá výchozí umístění instalace:
 
 ```cmd
 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 09260
@@ -100,6 +100,9 @@ Pokud `StorePID.exe` úspěšně platí kód product key, vrátí se `%ERRORLEVE
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+
+> [!NOTE]
+> Pro řešení potíží s virtuálními instancemi spusťte *C:\Program Files (x86) \<\Microsoft\>Visual Studio verze \Common7\IDE\DDConfigCA.exe*.
 
 ## <a name="see-also"></a>Viz také:
 

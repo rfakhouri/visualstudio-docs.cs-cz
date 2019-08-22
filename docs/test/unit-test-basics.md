@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e439ab3ca22fdb26992164c3927269a0f58a1f3b
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490728"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891344"
 ---
 # <a name="unit-test-basics"></a>Základní informace o testování částí
 
@@ -209,7 +209,7 @@ Další informace o rozhraní testování částí Microsoft naleznete v násled
 
 ## <a name="set-timeouts-for-unit-tests"></a>Nastavit vypršení časového limitu pro testování částí
 
-Nastavení časového limitu na jednotlivé testovací metody:
+Pokud používáte rozhraní MSTest Framework, můžete použít <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> k nastavení časového limitu pro jednotlivé testovací metody:
 
 ```csharp
 [TestMethod]

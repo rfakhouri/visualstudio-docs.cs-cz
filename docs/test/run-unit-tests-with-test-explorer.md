@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918174"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891326"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů částí pomocí Průzkumníka testů
 
@@ -96,7 +96,7 @@ Chcete-li spustit testy jednotek po každém místním sestavení, otevřete iko
 
 ## <a name="view-test-results"></a>Zobrazit výsledky testu
 
-Jak spustit, zápis a znovu spouštěny, zobrazuje Průzkumník testů výsledky ve skupinách **neúspěšné testy**, **úspěšné testy**, **přeskočené testy** a **není spuštěn Testy**. V podokně podrobností v dolní části Průzkumníku testů zobrazí shrnutí testu spusťte.
+Jak spustit, zápis a znovu spouštěny, zobrazuje Průzkumník testů výsledky ve skupinách **neúspěšné testy**, **úspěšné testy**, **přeskočené testy** a **není spuštěn Testy**. Podokno podrobností v dolní nebo boční části Průzkumníka testů zobrazuje souhrn testovacího běhu.
 
 ### <a name="view-test-details"></a>Zobrazit podrobnosti testu
 
@@ -181,7 +181,7 @@ V rozhraní Microsoft pro testování částí pro spravované aplikace definuje
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Kategorie vlastník je definována v rámci testovacího rozhraní jednotky a vyžaduje zadání řetězcové hodnoty vlastníka.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Kategorie priority je definována v rámci testovacího rozhraní jednotky a vyžaduje, abyste zadali celočíselnou hodnotu priority.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Atribut TestCategory umožňuje zadat kategorii bez hodnoty. Kategorie definovaná atributem TestCategory může být také kategorií atributu TestProperty.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Atribut TestCategory umožňuje zadat kategorii bez hodnoty.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|Atribut TestProperty umožňuje definovat vlastnost páru kategorie/hodnota.|
 
 
@@ -215,7 +215,7 @@ Seznam se otevře na nové kartě Průzkumník testů. Tento seznam je možné p
 
 ![Seznam testů se otevře na samostatné kartě Průzkumníka testů.](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Chcete-li přidat testy do seznamu stop**, vyberte jeden nebo více testů v Průzkumníku testů. Klikněte pravým tlačítkem a vyberte **Přidat do seznamu** > testů**Nový seznam**testů.
+**Chcete-li vytvořit seznam stop**, vyberte jeden nebo více testů v Průzkumníku testů. Klikněte pravým tlačítkem a vyberte **Přidat do seznamu** > testů**Nový seznam**testů.
 
 **Chcete-li otevřít seznam**testů, zvolte ikonu seznamu stop na panelu nástrojů sady Visual Studio a v nabídce vyberte dříve uložený soubor seznamu testů.
 ::: moniker-end
@@ -236,7 +236,7 @@ Sloupce lze filtrovat, seřadit a změnit jejich uspořádání.
 
 * Chcete-li změnit pořadí sloupců, klikněte na záhlaví sloupce a přetáhněte je doleva nebo doprava.
 
-* Pokud chcete sloupec seřadit, klikněte na záhlaví sloupce. Nedají se seřadit všechny sloupce.
+* Pokud chcete sloupec seřadit, klikněte na záhlaví sloupce. Nedají se seřadit všechny sloupce. Můžete také řadit podle sekundárního sloupce podržením klávesy **SHIFT** a kliknutím na další záhlaví sloupce.
 
   ![Řazení sloupců](../test/media/vs-2019/test-explorer-sort-column-16-2.png)
 ::: moniker-end
@@ -253,7 +253,7 @@ Filtrování podle různých kritérií:
 
 2. Vyberte Nová kritéria.
 
-3. Zadejte hodnotu filtru mezi uvozovky.
+3. Zadejte hodnotu filtru mezi uvozovky. Pokud chcete vyhledat přesnou shodu řetězce místo obsahujícího shodu, použijte místo dvojtečky znak rovná se (=) (:).
 
 ::: moniker range="vs-2017"
 ![Filtrovat testy v Průzkumníku testů](../test/media/ute_filtertestlist.png)
@@ -265,15 +265,28 @@ Filtrování podle různých kritérií:
 > [!NOTE]
 > V hledání jsou rozlišována malá a velká písmena a odpovídají zadanému řetězci všem částem hodnoty kritérií.
 
+::: moniker range="vs-2017"
 |Kvalifikátor|Popis|
 |-|-----------------|
 |**Znak**|Vyhledá shody v kategorii a hodnotě vlastností. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.|
 |**Projekt**|Vyhledá shody v názvech projektů testů.|
 |**Chybová zpráva**|Vyhledá shodu v uživatelsky definovaných chybových zprávách vrácených neúspěšnými kontrolními výrazy.|
 |**Cesta k souboru**|Vyhledá shody v plně kvalifikovaném názvu souboru zdrojových souborů testu.|
-|**Plně kvalifikovaný název**|Vyhledá plně kvalifikovaný název souboru testovacích oborů názvů, tříd a metod pro shody.|
+|**Plně kvalifikovaný název**|Vyhledá plně kvalifikovaný název testovacích oborů názvů, tříd a metod pro shody.|
 |**Output**|Vyhledá chybové zprávy definované uživatelem, které jsou zapsány do standardního výstupu (stdout) nebo standardní chyby (stderr). Syntaxe pro určení výstupních zpráv je definována v rámci testovacího rozhraní jednotky.|
 |**Výsledek**|Vyhledá odpovídající názvy kategorií Průzkumníka testů: **Neúspěšné testy**, **vynechané testy**, **Úspěšné testy**.|
+::: moniker-end
+::: moniker range=">=vs-2019"
+|Kvalifikátor|Popis|
+|-|-----------------|
+|**Stav**|Vyhledá odpovídající názvy kategorií Průzkumníka testů: **Neúspěšné testy**, **vynechané testy**, **Úspěšné testy**.|
+|**Traits**|Vyhledá shody v kategorii a hodnotě vlastností. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.|
+|**Plně kvalifikovaný název**|Vyhledá plně kvalifikovaný název testovacích oborů názvů, tříd a metod pro shody.|
+|**Projekt**|Vyhledá shody v názvech projektů testů.|
+|**Cílová architektura**|Vyhledá odpovídající názvy kategorií Průzkumníka testů: **Neúspěšné testy**, **vynechané testy**, **Úspěšné testy**.|
+|**Namespace**|Vyhledá shody v oborech názvů testu.|
+|**Třída**|Vyhledá shody v názvech testovacích tříd.|
+::: moniker-end
 
 K vyloučení podmnožiny výsledků filtru použijte následující syntaxi:
 
