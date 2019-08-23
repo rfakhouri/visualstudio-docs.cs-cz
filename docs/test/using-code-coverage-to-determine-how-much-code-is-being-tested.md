@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416454"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976780"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Určení rozsahu testovaného kódu pomocí pokrytí kódu
 
@@ -36,7 +36,12 @@ Funkce pokrytí kódu je k dispozici pouze v edici Visual Studio Enterprise.
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Analýza pokrytí kódu jednotkovými testy v Průzkumníku testů
 
+::: moniker range="vs-2017"
 1. V nabídce **test** vyberte možnost **Analyzovat pokrytí kódu**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. V **Průzkumníku testů**vyberte v nabídce **Spustit** možnost **Analyzovat pokrytí kódu** .
+::: moniker-end
 
 2. Chcete-li zjistit, které řádky byly spuštěny, klikněte na ![možnost](../test/media/codecoverage-showcoloringicon.png) zobrazit ikonu barevného pokrytí kódu **Zobrazit barvy pokrytí kódu**.
 

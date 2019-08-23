@@ -1,5 +1,5 @@
 ---
-title: Vnoření projektů | Dokumentace Microsoftu
+title: Vnořování projektů | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,27 +13,26 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 209d3ca013e72ff709d0bd581dd460205d8e347d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 289062a15c35641d5558409c7643301e346b6e65
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326690"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976692"
 ---
 # <a name="nesting-projects"></a>Vnoření projektů
-Vývojářům aplikací pro podniky, které používají váš balíček VS můžete pohodlně Seskupit podobné typy projektů společně v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pomocí *projektu vnoření*. Projekt šablony organizace například používá vnořené projekty do skupiny projektů do kategorií. Projekty Business průčelí, projekty webového uživatelského rozhraní a podobně jsou seskupeny dohromady v jedné kategorii.
+Vývojáři podnikových aplikací, kteří používají váš balíček vs, mohou pohodlně seskupit podobné typy projektů dohromady [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pomocí *vnoření projektu*. Například projekt šablony organizace používá vnořené projekty k seskupení projektů do kategorií. Projekty obchodní fasády, projekty webového uživatelského rozhraní a tak dále jsou seskupeny do jedné kategorie.
 
- V tomto scénáři neexistuje žádné omezení počtu projekty, které může vývojář vnořené do každý nadřazený projekt, i když vývojář můžete programově zadat omezení. Tento typ seskupení lze provést také rekurzivní, v takovém případě projekty stejného typu jako podřízený projekt mohou být vnořené pod podřízené se dílčí projekt podřízené, což je dílčí projekt nadřazeného prvku.
+ V tomto scénáři neexistuje žádné omezení počtu projektů, které může vývojář vnořit do jednotlivých nadřazených projektů, i když vývojář může programově poskytnout omezení. Tento typ seskupení lze také nastavit jako rekurzivní, v takovém případě mohou být projekty stejného typu jako podřízený projekt vnořeny do podřízené položky, aby se staly dílčím projektem podřízeného prvku, který je dílčím projektem nadřazeného objektu.
 
- Vnoření projektů není vnitřní součástí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Je nutné napsat kód pro povolení vnořené a dílčí projekt vnoření v rámci podřízené projekty. Nadřazený projekt je speciální VSPackage, nebo typ projektu, vytvořen a zaregistrován s vlastní identifikátor GUID, který obsahuje kód, který se vyžaduje k implementaci projektu vnoření.
+ Vnoření projektu není vnitřní součástí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Je nutné napsat kód pro povolení vnoření a dílčího projektu vnoření do podřízených projektů. Nadřazený projekt je speciální VSPackage nebo typ projektu, vytvořený a registrovaný pomocí vlastního identifikátoru GUID, který obsahuje kód, který je vyžadován pro implementaci vnořování projektu.
 
- Příklad vnořených projektů najdete v ukázce Example.Nested projektu C#.
+ Příklad, jak vnořit projekty, najdete v [tématu How to: Implementujte vnořené](../../extensibility/internals/how-to-implement-nested-projects.md)projekty.
 
 ## <a name="nested-projects-example"></a>Příklad vnořených projektů
- ![Vnořené projekty řešení](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") příkladu vnořené projekty
+ ![Řešení vnořených projektů](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") Příklad vnořených projektů
 
 ## <a name="see-also"></a>Viz také
-- [Postupy: Implementace vnořených projektů](../../extensibility/internals/how-to-implement-nested-projects.md)
 - [Důležité informace pro uvolnění a opětovné načtení vnořených projektů](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [Podpora průvodce pro vnořené projekty](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [Registrace šablon projektů a položek](../../extensibility/internals/registering-project-and-item-templates.md)

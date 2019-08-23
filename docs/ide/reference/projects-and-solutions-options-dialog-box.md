@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b71d7040df5f971f320b9bb9999f9cacd0425e7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 31d829a668a2c9690333315c30904623187fe51d
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891277"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976740"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Dialogové okno Možnosti: Projekty a řešení \> – obecné
 
@@ -78,18 +78,21 @@ Opětovné otevření určitých typů souborů nebo návrhářů může zpozdit
 
 ## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>Obnovit Průzkumník řešení stav hierarchie projektu při načtení řešení
 
-Pokud je tato možnost vybrána, obnoví stav uzlů v Průzkumník řešení s ohledem na to, zda byly rozbaleny nebo sbaleny při posledním otevření řešení. Tuto možnost vypněte, pokud chcete zkrátit dobu načítání řešení pro velká řešení.
+Pokud je tato možnost vybrána, obnoví stav uzlů v Průzkumník řešení s ohledem na to, zda byly rozbaleny nebo sbaleny při posledním otevření řešení. Zrušením výběru této možnosti můžete zkrátit dobu načítání řešení u velkých řešení.
 
-Pokud tuto možnost zakážete, snadný způsob, jak přejít na aktivní dokument v Průzkumník řešení, je výběrem možnosti **synchronizovat s aktivním dokumentem** na panelu nástrojů **Průzkumník řešení** .
-
-![Synchronizovat s aktivním dokumentem v Průzkumník řešení](media/sync-active-document.png)
+> [!TIP]
+> Pokud tuto možnost zakážete, snadný způsob, jak přejít na aktivní dokument v Průzkumník řešení, je výběrem možnosti **synchronizovat s aktivním dokumentem** na panelu nástrojů **Průzkumník řešení** .
+>
+> ![Synchronizovat s aktivním dokumentem v Průzkumník řešení](media/sync-active-document.png)
 
 ## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>Otevřete soubory projektu ve stylu sady SDK dvojitým kliknutím nebo klávesou ENTER.
 
-Pokud je vybrána tato možnost a dvakrát kliknete na uzel projektu v Průzkumník řešení nebo vyberete uzel projektu a potom stisknete klávesu **ENTER**, soubor projektu (například \*soubor. csproj) se otevře jako XML v editoru. Toto je snadný způsob, jak upravit soubor XML projektu, aniž byste museli nejprve uvolnit projekt a pak otevřít soubor projektu pro úpravy.
+Pokud je vybrána tato možnost a dvakrát kliknete na uzel projektu ve stylu sady SDK v Průzkumník řešení nebo jej vyberete a potom stisknete klávesu **ENTER**, soubor projektu (například \*soubor. csproj) se otevře jako XML v editoru. Pokud je tato možnost Odstraněná, poklikejte na uzel projektu ve stylu sady SDK v Průzkumník řešení nebo jeho výběr a stisknutí klávesy **ENTER** má vliv na rozbalení nebo sbalení pouze uzlu.
+
+Pokud tuto možnost nemáte zaškrtnuté a chcete upravit soubor projektu ve stylu sady SDK, klikněte pravým tlačítkem myši na uzel projektu v Průzkumník řešení a vyberte **Upravit soubor projektu**. Pro jiné typy projektů je nutné nejprve uvolnit projekt před jeho úpravou v aplikaci Visual Studio.
 
 > [!TIP]
-> Pokud je toto políčko zaškrtnuté, poklikejte na uzel projektu v Průzkumník řešení nebo ho vyberte a stisknutí klávesy **ENTER** má vliv pouze na rozbalení nebo sbalení uzlu.
+> *Projekt ve stylu sady SDK*nebo [sada SDK projektu](../../msbuild/how-to-use-project-sdk.md)mají novější a efektivnější formát souboru projektu, který byl představen nástrojem MSBuild 15,0. Projekt `Sdk` vestylusadySDK`<Project Sdk="Microsoft.NET.Sdk">`obsahuje atribut prvku,například.`Project` Sada Visual Studio vytvoří projekt ve stylu sady SDK při vytváření nového projektu .NET Core v jedné ze šablon sady Visual Studio, například.
 
 ::: moniker-end
 

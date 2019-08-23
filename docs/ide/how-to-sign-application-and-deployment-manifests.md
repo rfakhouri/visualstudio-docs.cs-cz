@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 5c3456ab48822873fb51ad8614ff9a6dd5f07598
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461601"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976715"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Postupy: Podepsání manifestů aplikace a nasazení
 
@@ -47,7 +47,7 @@ Informace o vytváření souborů klíčů naleznete v tématu [How to: Vytvoř�
      Zobrazí se dialogové okno **Vybrat certifikát** , ve kterém se zobrazí obsah úložiště certifikátů Windows.
 
     > [!TIP]
-    > Pokud kliknete na **možnost kliknutím sem zobrazíte vlastnosti certifikátu**, zobrazí se dialogové okno **Podrobnosti o certifikátu** . Toto dialogové okno obsahuje podrobné informace o certifikátu a obsahuje další možnosti. Kliknutím na **certifikáty** můžete zobrazit další informace o nápovědě.
+    > Pokud kliknete na **možnost kliknutím sem zobrazíte vlastnosti certifikátu**, zobrazí se dialogové okno **Podrobnosti o certifikátu** . Toto dialogové okno obsahuje podrobné informace o certifikátu a dalších možnostech. Kliknutím na **certifikáty** zobrazíte další informace o nápovědě.
 
 3. Vyberte certifikát, který chcete použít k podepsání manifestů.
 
@@ -66,9 +66,12 @@ Informace o vytváření souborů klíčů naleznete v tématu [How to: Vytvoř�
     > [!NOTE]
     > Tato možnost podporuje pouze soubory, které mají příponu *. pfx* . Pokud máte soubor klíče nebo certifikát v jiném formátu, uložte ho do úložiště certifikátů Windows a vyberte certifikát, který je popsaný v předchozím postupu. Vybraný účel certifikátu by měl zahrnovat podepisování kódu.
 
-     Zobrazí se dialogové okno **zadat heslo pro otevření souboru** . (Pokud soubor *. pfx* už je uložený v úložišti certifikátů Windows nebo není chráněný heslem, nebudete vyzváni k zadání hesla.)
+     Zobrazí se dialogové okno **zadat heslo pro otevření souboru** . (Pokud soubor *. pfx* už je uložený v úložišti certifikátů Windows nebo není chráněný heslem, nezobrazí se výzva k zadání hesla.)
 
-4. Zadejte heslo pro přístup k souboru klíče a stiskněte klávesu **ENTER**.
+4. Zadejte heslo pro přístup k souboru klíče a pak vyberte **ENTER**.
+
+> [!NOTE]
+> Soubor *. pfx* nemůže obsahovat informace o řetězení certifikátů. V takovém případě dojde k následující chybě importu: **Nejde najít certifikát a privátní klíč pro dešifrování**.
 
 ## <a name="sign-using-a-test-certificate"></a>Podepsat pomocí testovacího certifikátu
 
