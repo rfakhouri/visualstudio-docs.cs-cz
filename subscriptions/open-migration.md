@@ -1,20 +1,20 @@
 ---
-title: Správa objednávky Open a Open License | Microsoft Docs
+title: Partneři, kteří spravují předplatná sady Visual Studio pro zákazníky | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
-description: Přečtěte si o správě pořadí pro odběry pomocí programů Open a Open License.
-ms.openlocfilehash: ecbd5c4b861683742ec8b9e3d9fca571932ae887
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+description: Přečtěte si, jak partneři spravují předplatná sady Visual Studio pro své zákazníky.
+ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
+ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605836"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000901"
 ---
-# <a name="open-and-open-license-management-for-new-orders"></a>Otevřená a Open Licenseá Správa pro nové objednávky
-Chcete-li spravovat předplatná na [portálu pro správu](https://manage.visualstudio.com)předplatných sady Visual Studio, je třeba provést několik kroků, které mohou partneři a zákazníci sledovat. Proces bude:
+# <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partneři, kteří spravují předplatná jménem zákazníků
+Pokud chcete spravovat předplatná na [portálu pro správu](https://manage.visualstudio.com)předplatných sady Visual Studio, je potřeba provést několik kroků. Proces bude:
 - Partneři budou za zákazníka umístit novou objednávku a zadat pracovní e-mailovou adresu zákazníka.
 - Zákazník obdrží oznámení o pozvání k přiřazení správců a k přístupu ke svým předplatným na [portálu pro správu předplatných sady Visual Studio](https://manage.visualstudio.com).
 - Aby partneři mohli spravovat předplatná jménem zákazníků, musí se zaregistrovat na portálu pro správu. Různé způsoby přístupu k získání přístupu jsou uvedené níže (podobně jako proces přidání).
@@ -39,6 +39,7 @@ To platí pro nové partnery, kteří umísťují nové objednávky Open License
 > [!NOTE]
 > Zákazník dostane e-mail s oznámením, že byl do Open License přidán partner. Můžou se rozhodnout odebrat přístup partnera.
 
+
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Noví partneři navštěvují přímo na portálu pro správu předplatných sady Visual Studio.
 Tento scénář se vztahuje na nové partnery, kteří už umístili nové objednávky Open License, ale nezaregistrovali na [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) a přešly přímo na [portál pro správu předplatných sady Visual Studio](https://manage.visualstudio.com).  Postupujte podle těchto kroků:
 - Přejděte https://manage.visualstudio.com na adresu.
@@ -53,6 +54,6 @@ Tento scénář se vztahuje na nové partnery, kteří už umístili nové objed
 - [Podpora správy a předplatných sady Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Podmínky multilicenčních programů](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 - Pro správu předplatných navštivte [portál pro správu](https://manage.visualstudio.com) předplatných sady Visual Studio.
 - Potřebujete pomoc? Kontaktujte [podporu správy a](https://visualstudio.microsoft.com/support/support-overview-vs) předplatných sady Visual Studio.
