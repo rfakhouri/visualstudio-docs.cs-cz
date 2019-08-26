@@ -85,7 +85,7 @@ V okně [objekty a časová osa](../designers/creating-a-ui-by-using-blend-for-v
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Obnovení výchozího stylu nebo šablony ovládacího prvku
 
-Vyberte ovládací prvek a v okně * * Vlastnosti * * * * vyhledejte vlastnost **style** nebo **template** . Zvolte **Upřesnit možnosti**a potom v místní nabídce klikněte na **obnovit** .
+Vyberte ovládací prvek a v okně **Vlastnosti** ** vyhledejte vlastnost **style** nebo **template** . Zvolte **Upřesnit možnosti**a potom v místní nabídce klikněte na **obnovit** .
 
 ## <a name="visual-states"></a>Vizuální stavy
 
