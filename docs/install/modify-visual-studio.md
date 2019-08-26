@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ad5b8a0c261ed967710480b0abd3a2b9d34f01ce
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 593af04805870fcbd505d4004d9984d2a806f7a3
+ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681400"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000931"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Změna sady Visual Studio přidáním nebo odebráním úloh a součástí
 
@@ -127,4 +127,5 @@ Pokud nechcete instalovat úlohy pro přizpůsobení instalace sady Visual Studi
 * [Aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Aktualizace sady Visual Studio na standardních hodnotách údržby](update-servicing-baseline.md)
 * [Řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md)
+* [ID součástí & úloh](workload-and-component-ids.md)
 * [Odinstalace sady Visual Studio](uninstall-visual-studio.md)
