@@ -22,6 +22,7 @@
 #### [Anonymizace údajů o předplatitelích](anonymization.md)
 ### [Přehled portálu předplatných](using-the-subscriber-portal.md)
 ### [Správa vašich předplatných](manage-vs-subscriptions.md)
+### [Kontaktování správce předplatných](contact-my-admin.md)
 ### Výhody
 #### Nástroje
 ##### [Kredit Azure](vs-azure.md)
@@ -58,17 +59,22 @@
 #### [Vyhledání a vyžádání kódů](find-keys.md)
 #### [Internetové ukázky](internet-demos.md)
 ## Správci
-### [Odpovědnosti správce](admin-responsibilities.md)
+### Odpovědnosti správce
+#### [Odpovědnosti správce](admin-responsibilities.md)
 #### [Předprodukční inventář](admin-inventory.md)
 #### [Správa velkých týmů a externích dodavatelů](manage-teams.md)
 #### [Sledování přiřazení uživatelů a zpracování objednávek](assignments-orders.md)
-### Onboarding v organizaci
-#### [Migrace předplatných Open a Open License](open-migration.md)
+### Přístup k portálu pro správu
+#### [Multilicence](volume-license.md)
 #### [MPSA](mpsa.md)
 #### [Cloudová předplatná](cloud-admin.md)
-#### [Video k onboardingu](https://youtu.be/plSu6fpi7UI)
+#### [Správa partnerů pro zákazníky](open-migration.md)
+#### [Videokurz: Přístup na portál pro správu](https://youtu.be/plSu6fpi7UI)
 ### Použití portálu pro správu
+#### [Supersprávci a správci](admin-roles.md)
+#### [Nastavení předvoleb smluv](admin-prefs.md)
 #### [Přehled](using-admin-portal.md)
+#### [Videokurz: Použití portálu pro správu](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 #### Přiřazení předplatných
 ##### [Přidání jednotlivých uživatelů](assign-license.md)
 ##### [Přidání více uživatelů](assign-license-bulk.md)
@@ -81,7 +87,7 @@
 #### [Předplatná po konci platnosti](handle-expired-license.md)
 #### [Aliasy Using pro předplatitele](aliasing.md)
 #### [Předplatitelé s přihlášením pomocí osobního e-mailu](personal-email-sign-ins.md)
-### [Správa sady Visual Studio s GitHub Enterprise](assign-github.md)
+#### [Správa sady Visual Studio s GitHub Enterprise](assign-github.md)
 ## Prostředky
 ### [Dokument white paper k licencování sady Visual Studio](https://aka.ms/vslicensing)
 ### [Porovnání možností a cen předplatného](https://visualstudio.microsoft.com/vs/pricing)
