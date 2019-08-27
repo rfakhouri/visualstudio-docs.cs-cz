@@ -46,7 +46,7 @@ Předplatitelé Visual Studio Enterprise můžou získat bezplatné předplatné
    >
    > *V tuto chvíli kontrolujeme vaši žádost o aktivaci a přístup k zvýrazňování přetypování. Od mě už nebudete mít více než 48 hodin.*
    >
-   > *Nejlepší *
+   > *Nejlepší*
    > *Greg*
 
 Po schválení vaší žádosti obdržíte druhý e-mail potvrzující úspěšné vytvoření vašeho účtu a budete vyzváni, abyste kliknutím na aktivační odkaz dokončili proces aktivace.
@@ -66,7 +66,7 @@ Po schválení vaší žádosti obdržíte druhý e-mail potvrzující úspěšn
    > - Kurz videa – [Konfigurace portfolia](https://www.youtube.com/watch?v=MDm8ln4vuGE)
    > - Kurz videa – [zprovoznění aplikací](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
    >
-   > *Nejlepší *
+   > *Nejlepší*
    > *Greg*
 
    > [!NOTE]
