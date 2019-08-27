@@ -3,7 +3,7 @@ title: Úpravy sady Visual Studio
 titleSuffix: ''
 description: Zjistěte, jak upravit sadu Visual Studio, krok za krokem.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 07/31/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 593af04805870fcbd505d4004d9984d2a806f7a3
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: a97db7e6b81eb9e807902d1b9bd0ea8ee6efa55e
+ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000931"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70026493"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Změna sady Visual Studio přidáním nebo odebráním úloh a součástí
 
@@ -41,15 +41,17 @@ Nejenže jsme zjednodušili si můžete přizpůsobit Visual Studio tak, aby odp
 
 Tady je způsob.
 
-## <a name="modify-workloads"></a>Upravit úlohy
-
- Úlohy obsahují funkce, které potřebujete pro programovací jazyk nebo platformu, kterou používáte. Upravit sadu Visual Studio tak, aby podporoval práce, kterou chcete provést, pokud chcete to udělat pomocí úlohy.
-
 >[!IMPORTANT]
 >Instalovat, aktualizovat nebo upravit sadu Visual Studio, musíte se přihlásit pomocí účtu, který má oprávnění správce. Další informace naleznete v tématu [uživatelská oprávnění a aplikace Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
->[!TIP]
-> Následující postup předpokládá, že máte připojení k Internetu. Další informace o tom, jak upravit dříve vytvořenou instalaci sady Visual Studio v [režimu offline](create-an-offline-installation-of-visual-studio.md) , naleznete na stránce [aktualizace ovládacího prvku pro síťová nasazení sady Visual Studio](controlling-updates-to-visual-studio-deployments.md) .
+## <a name="modify-workloads"></a>Upravit úlohy
+
+ [Úlohy](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) obsahují funkce, které potřebujete pro programovací jazyk nebo platformu, kterou používáte. Upravit sadu Visual Studio tak, aby podporoval práce, kterou chcete provést, pokud chcete to udělat pomocí úlohy.
+
+>[!NOTE]
+> Následující postup předpokládá, že máte připojení k Internetu.
+>
+> Další informace o tom, jak upravit dříve vytvořenou instalaci aplikace Visual Studio v [režimu offline](create-an-offline-installation-of-visual-studio.md) , naleznete v části [aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md) a [aktualizace ovládacího prvku na síť Visual Studio. Stránka nasazení](controlling-updates-to-visual-studio-deployments.md) .
 
 ::: moniker range="vs-2017"
 
@@ -59,7 +61,7 @@ Tady je způsob.
 
      ![Instalační program sady Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "vyhledejte instalační program sady Microsoft Visual Studio")
 
-     >[!NOTE]
+     >[!TIP]
      >V některých počítačích může instalační program sady Visual Studio uvedené pod písmenem **"M"** jako **instalační program Visual Studio**.<br/><br/> Alternativně můžete najít instalační program sady Visual Studio v následujícím umístění: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 1. Klikněte nebo klepněte sem a můžete spustit instalační program a klikněte na tlačítko **změnit**.
@@ -117,15 +119,16 @@ Tady je způsob.
 
 ## <a name="modify-individual-components"></a>Upravit jednotlivé komponenty
 
-Pokud nechcete instalovat úlohy pro přizpůsobení instalace sady Visual Studio, zvolte kartu **jednotlivé komponenty** z instalační program pro Visual Studio, vyberte, co chcete, a pak postupujte podle pokynů.
+Pokud nechcete instalovat [úlohy](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) pro přizpůsobení instalace sady Visual Studio, zvolte kartu **jednotlivé komponenty** z instalační program pro Visual Studio, vyberte, co chcete, a pak postupujte podle pokynů.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Viz také:
 
+* [Další informace o úlohách sady Visual Studio](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)
+* [Seznam úloh sady Visual Studio & ID součástí](workload-and-component-ids.md)
 * [Aktualizace sady Visual Studio](update-visual-studio.md)
 * [Aktualizace síťové instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Aktualizace sady Visual Studio na standardních hodnotách údržby](update-servicing-baseline.md)
 * [Řízení aktualizací nasazení sady Visual Studio založené na síti](controlling-updates-to-visual-studio-deployments.md)
-* [ID součástí & úloh](workload-and-component-ids.md)
 * [Odinstalace sady Visual Studio](uninstall-visual-studio.md)

@@ -31,6 +31,7 @@
 # Editor zdroje
 ## [Funkce editoru](source-editor.md)
 ## [Refactoring](refactoring.md)
+## [IntelliSense](intellisense.md)
 ## [Komentáře](comments.md)
 ## [Chování editoru](editor-behavior.md)
 ## [Komentáře k úlohám](task-comments.md)
