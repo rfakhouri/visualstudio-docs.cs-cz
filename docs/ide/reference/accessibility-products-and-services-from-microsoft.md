@@ -1,8 +1,10 @@
 ---
 title: Produkty a služby pro usnadnění přístupu od Microsoftu
 description: Přečtěte si další informace o produktech a službách od Microsoftu, které vám pomůžou usnadnit přístup k našim operačním systémům, programům a aplikacím pro všechny uživatele, včetně postižených uživatelů.
-ms.date: 08/22/2017
+ms.date: 08/23/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -19,30 +21,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 87416903b469293d292bfa4414d425c31d0c9154
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926276"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060386"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty a služby pro usnadnění přístupu od Microsoftu
 
-> [!TIP]
-> Další informace o nejnovějších aktualizacích usnadnění v aplikaci Visual Studio naleznete v příspěvku na blogu [Vylepšení přístupnosti v rámci sady Visual studio 2017 verze 15,3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) .
+Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní použití. Tato stránka obsahuje informace o funkcích, produktech a službách, které usnadňují přístup k systému Microsoft Windows pro osoby s postižením.
 
-Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní použití. V následujících tématech najdete informace o funkcích, produktech a službách, které usnadňují přístup k systému Microsoft Windows pro osoby s postižením:
-
-- [Funkce usnadnění systému Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
-
-- [Dokumentace v alternativních formátech](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
-
-- [Služby zákazníkům pro lidi s postižením sluchu](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
-
-- [Další informace](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
-
-> [!NOTE]
-> Informace v této části mohou platit pouze pro uživatele, kteří licencují produkty společnosti Microsoft v USA. Pokud jste tento produkt získali mimo USA, můžete použít kartu s informacemi o pobočce, která byla součástí vašeho softwarového balíčku, nebo navštívit web [Microsoft Accessibility (usnadnění](http://go.microsoft.com/fwlink/?LinkId=8431) ), kde najdete seznam telefonních čísel služeb podpory společnosti Microsoft a Adresa. Chcete-li zjistit, zda je typ produktů a služeb popsaných v této části k dispozici ve vaší oblasti, obraťte se na svou pobočku. Informace o usnadnění jsou k dispozici v dalších jazycích včetně japonštiny a francouzštiny.
+> [!IMPORTANT]
+> Informace na této stránce se můžou vztahovat jenom na uživatele, kteří licencují produkty Microsoftu v USA. Pokud jste tento produkt získali mimo USA, přečtěte si web [Microsoft Accessibility (usnadnění](http://go.microsoft.com/fwlink/?LinkId=8431) ), kde najdete seznam telefonních čísel a adres služeb podpory společnosti Microsoft. Chcete-li zjistit, zda je typ produktů a služeb popsaných na této stránce k dispozici ve vaší oblasti, obraťte se na svou pobočku. Informace o usnadnění jsou k dispozici v jiných jazycích.
 
 ## <a name="windows"></a>Funkce usnadnění systému Windows
 
@@ -66,9 +57,8 @@ Pokud máte potíže při čtení nebo manipulaci s tištěnými materiály, mů
 
 Kromě toho můžete získat další publikace od Microsoftu od výukových Ally. Služba Learning Ally distribuuje tyto dokumenty do registrovaných a oprávněných členů jejich distribuční služby. Informace o dostupnosti dokumentace produktů společnosti Microsoft a knih nakladatelství Microsoft Press získáte od:
 
-|Sdružení Learning Ally|
-| - |
-|Roszel cesta 20<br /><br /> Princeton, NJ 08540<br /><br /> Web Learning Ally: [http://www.learningally.org](http://www.learningally.org/).|
+> Sdružení Learning Ally<br />
+> Roszel cesta 20<br /> Princeton, NJ 08540<br /><br /> Web Learning Ally:[http://www.learningally.org](http://www.learningally.org/)
 
 Webové adresy se mohou měnit, takže se možná nebudete moci připojit k webu nebo webům uvedeným zde.
 
@@ -86,7 +76,15 @@ Na podpora Microsoftu služby se vztahují ceny, podmínky a podmínky platné v
 
 Další informace o tom, jak přístupné technologie pro počítače pomáhají zlepšit život osob s postižením, najdete na webu [Microsoft Accessibility (usnadnění](http://go.microsoft.com/fwlink/?LinkId=8431) ).
 
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Další informace o nejnovějších aktualizacích usnadnění v aplikaci Visual Studio naleznete v příspěvku na blogu [Vylepšení přístupnosti v rámci sady Visual studio 2017 verze 15,3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) .
+
+::: moniker-end
+
 ## <a name="see-also"></a>Viz také:
 
 * [Prostředky pro návrh přístupných aplikací](../../ide/reference/resources-for-designing-accessible-applications.md)
 * [Funkce pro usnadnění přístupu sady Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Přístupnost pro Visual Studio pro Mac](/visualstudio/mac/accessibility)

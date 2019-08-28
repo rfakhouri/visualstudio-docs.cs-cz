@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6362d3f14065aaf9661e85266753642e4201ca48
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 5c5af5c98be92e52c356e0f20eaf437f66878690
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69548034"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060441"
 ---
 # <a name="use-code-analyzers"></a>Použití analyzátorů kódu
 
@@ -62,6 +62,18 @@ Chcete-li změnit aktivní sadu pravidel pro projekt, přejděte na kartu **Anal
 
 Pokud nainstalujete analyzátory jako balíček NuGet, můžete nakonfigurovat závažnost pravidel analyzátoru [](../code-quality/install-roslyn-analyzers.md) nebo *diagnostiky*. V následující tabulce jsou uvedeny možnosti závažnosti pro diagnostiku:
 
+
+::: moniker range="vs-2019"
+|severity|Chování při sestavení|Chování editoru|
+|-|-|-|
+|Chyba|Porušení se zobrazují jako *chyby* v **Seznam chyb** a ve výstupu sestavení příkazového řádku a způsobují selhání sestavení.|Poškozený kód je podtržen červenou vlnovkou a označený malým červeným polem na posuvníku.|
+|Upozornění|Porušení se zobrazí jako *Upozornění* v **Seznam chyb** a ve výstupu sestavení příkazového řádku, ale nezpůsobí selhání sestavení.|Poškozený kód je podtržený zelenou vlnovkou a označený malým zeleným polem na posuvníku.|
+|Doporučení|Porušení se zobrazí jako *zprávy* v **Seznam chyb**, a ne vůbec ve výstupu sestavení příkazového řádku.|Poškozený kód je podtržený šedou vlnovkou a označený malým šedým polem na posuvníku.|
+|Tich|Uživatel není viditelný.|Uživatel není viditelný. Diagnostika se oznamuje diagnostickému modulu IDE, ale.|
+|Žádné|Zcela potlačeno.|Zcela potlačeno.|
+::: moniker-end
+
+::: moniker range="< vs-2019"
 |severity|Chování při sestavení|Chování editoru|
 |-|-|-|
 |Chyba|Porušení se zobrazují jako *chyby* v **Seznam chyb** a ve výstupu sestavení příkazového řádku a způsobují selhání sestavení.|Poškozený kód je podtržen červenou vlnovkou a označený malým červeným polem na posuvníku.|
@@ -69,6 +81,7 @@ Pokud nainstalujete analyzátory jako balíček NuGet, můžete nakonfigurovat z
 |Informace o|Porušení se zobrazí jako *zprávy* v **Seznam chyb**, a ne vůbec ve výstupu sestavení příkazového řádku.|Poškozený kód je podtržený šedou vlnovkou a označený malým šedým polem na posuvníku.|
 |Hidden|Uživatel není viditelný.|Uživatel není viditelný. Diagnostika se oznamuje diagnostickému modulu IDE, ale.|
 |Žádné|Zcela potlačeno.|Zcela potlačeno.|
+::: moniker-end
 
 Můžete také resetovat závažnost pravidla tím, že ji nastavíte na **výchozí**. Každé diagnostice má výchozí závažnost, kterou lze zobrazit v okně **vlastnosti** .
 
