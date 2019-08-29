@@ -1,101 +1,100 @@
 ---
-title: Team Foundation Version Control (TFVC)
-description: Připojení z aplikace Visual Studio pro Mac na Team Foundation serveru/Azure DevOps s Team Foundation Version Control (TFVC).
+title: Správa verzí Team Foundation (TFVC)
+description: Připojení z Visual Studio pro Mac k Team Foundation Server/Azure DevOps s Správa verzí Team Foundation (TFVC).
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 06/25/2019
-ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 378d1eaf1d57818a976f41a81c1098d75bb12e48
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 4d0de2b9d91458a4baa7d0ed6498fbc7f65b2fb1
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691956"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108094"
 ---
-# <a name="connecting-to-team-foundation-version-control"></a>Připojování k Team Foundation – správa verzí
+# <a name="connecting-to-team-foundation-version-control"></a>Připojování k Správa verzí Team Foundation
 
 > [!NOTE]
-> Pro nejlepší výkon verze ovládacího prvku v systému macOS doporučujeme používat Git namísto Team Foundation verze ovládacího prvku (TFVC). Git je podporováno v sadě Visual Studio pro Mac a výchozí volba pro úložiště hostovaná v Team Foundation Server (TFS) nebo Azure DevOps. Další informace o používat Git na TFS/Azure DevOps, najdete v článku [nastavení úložiště Git](/visualstudio/mac/set-up-git-repository) článku.
+> K dosažení nejlepšího prostředí pro správu verzí na macOS doporučujeme použít Git místo Správa verzí Team Foundation (TFVC). V Visual Studio pro Mac se podporuje Git a je výchozí možností pro úložiště hostovaná v Team Foundation Server (TFS)/Azure DevOps. Další informace o použití Gitu s TFS/Azure DevOps najdete v článku [Nastavení úložiště Git](/visualstudio/mac/set-up-git-repository) .
 > 
-> Pokud jste dříve používali ve verzi preview TFVC rozšíření pro Visual Studio pro Mac, již podporuje se v Visual Studio 2019 pro Mac.
+> Pokud jste dříve používali verzi Preview rozšíření TFVC pro Visual Studio pro Mac, již není podporováno v aplikaci Visual Studio 2019 for Mac.
 
-Úložiště Azure nabízí dva modely správy verzí: [Git](/azure/devops/repos/git/?view=azure-devops), distribuovaný systém řízení verze, a [Team Foundation Version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), centralizované verze ovládacího prvku systému.
+Azure Repos poskytuje dva modely správy verzí: [Git](/azure/devops/repos/git/?view=azure-devops), distribuovaný systém správy verzí a [Správa verzí Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), centralizovaný systém správy verzí.
 
-Visual Studio for Mac obsahuje plnou podporu pro úložiště Git, ale vyžaduje nějaké řešení pro práci s TFVC. Pokud používáte TFVC pro správu verzí ještě dnes, tady jsou některá řešení, které lze použít pro přístup k zdrojového kódu hostovaná v TFVC:
+Visual Studio pro Mac poskytuje úplnou podporu úložišť Git, ale vyžaduje některá alternativní řešení pro práci s TFVC. Pokud dnes používáte TFVC pro řízení verzí, tady je několik řešení, která můžete použít pro přístup ke zdrojovému kódu hostovanému v TFVC:
 
-* [Použijte Visual Studio Code a rozšíření úložiště Azure pro grafické uživatelské rozhraní](#use-visual-studio-code-and-the-azure-repos-extension)
-* [Připojení k úložišti pomocí Team Explorer Everywhere příkazového řádku klienta (TEE CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
+* [Použití Visual Studio Code a rozšíření Azure Repos pro grafické uživatelské rozhraní](#use-visual-studio-code-and-the-azure-repos-extension)
+* [Připojte se k úložišti pomocí Team Explorer Everywhere klienta příkazového řádku (TEE-CLC).](#connecting-using-the-team-explorer-everywhere-command-line-client)
 
-Zbývající část tohoto článku vás provede výše uvedených možností.
+Zbytek tohoto článku vás provede výše uvedenými možnostmi.
 
 ## <a name="requirements"></a>Požadavky
 
 * Visual Studio Community, Professional nebo Enterprise for Mac verze 7,8 a novější.
-* Služby Azure DevOps, Team Foundation Server 2013 a novější, nebo v Azure DevOps Server 2018 nebo později.
-* Projekt Azure DevOps Services nebo Team Foundation serveru/Azure DevOps serveru, nakonfigurovaný pro použití správy verzí Team Foundation.
+* Azure DevOps Services, Team Foundation Server 2013 a novější, nebo Azure DevOps Server 2018 a novější.
+* Projekt v Azure DevOps Services nebo Team Foundation Server/Azure DevOps Server nakonfigurovaný pro použití Správa verzí Team Foundation.
 
-## <a name="use-visual-studio-code-and-the-azure-repos-extension"></a>Pomocí Visual Studio Code a rozšíření úložiště Azure
+## <a name="use-visual-studio-code-and-the-azure-repos-extension"></a>Použití Visual Studio Code a rozšíření Azure Repos
 
-Pokud chcete pracovat s grafické rozhraní pro správu souborů ve správě verzí, rozšíření úložiště Azure pro Visual Studio Code poskytuje podporované řešení od Microsoftu. Abyste mohli začít, stáhněte si [Visual Studio Code](https://code.visualstudio.com) a dozvíte se, jak [konfiguraci rozšíření úložiště Azure](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
+Pokud chcete pracovat s grafickým rozhraním pro správu souborů ve správě verzí, pak rozšíření Azure Repos pro Visual Studio Code poskytuje podporované řešení od společnosti Microsoft. Začněte tím, že si stáhnete [Visual Studio Code](https://code.visualstudio.com) a pak zjistíte, jak [nakonfigurovat Azure Repos rozšíření](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
 
-## <a name="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Připojení pomocí Team Explorer Everywhere příkazového řádku klienta
+## <a name="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Připojení pomocí klienta příkazového řádku Team Explorer Everywhere
 
-Pokud vám vyhovuje, pomocí macOS terminálu, a potom Team Explorer Everywhere klienta příkazového řádku (TEE CLC) poskytuje podporovaný způsob, jak se připojit ke zdroji v TFVC.
+Pokud jste obeznámeni s používáním terminálu macOS, pak klient příkazového řádku Team Explorer Everywhere (TEE-CLC) poskytuje podporovaný způsob, jak se připojit ke zdroji v TFVC.
 
-Provedením následujících kroků k nastavení připojení pro TFVC a změn.
+Pomocí následujících kroků můžete nastavit připojení tak, aby se TFVC, a potvrdit změny.
 
 ### <a name="setting-up-the-tee-clc"></a>Nastavení TEE-CLC
 
-Existují dva způsoby, jak získat instalačnímu programu TEE – certifikát pro vystavování licencí.
+Existují dva způsoby, jak pomocí TEE-CLC získat instalační program.
 
-* Použijte Homebrew k instalaci klienta, nebo
-* Stáhněte si a ruční instalaci klienta
+* K instalaci klienta použijte homebrew nebo
+* Stažení a ruční instalace klienta
 
-Nejjednodušším řešením je **pomocí HomeBrew**, což je Správce balíčků pro macOS. Chcete-li nainstalovat pomocí této metody:
+Nejjednodušším řešením je **použití HomeBrew**, což je správce balíčků pro MacOS. Postup instalace pomocí této metody:
 
-1. Spusťte terminálu aplikace pro macOS.
-1. Nainstalujte Homebrew na pomocí terminálu a podle pokynů [Homebrew domovskou stránku](https://brew.sh/).
-1. Po instalaci Homebrew, v terminálu spusťte následující příkaz: `brew install tee-clc`
+1. Spusťte aplikaci macOS Terminal.
+1. Nainstalujte homebrew pomocí terminálu a pokynů na [domovské stránce homebrew](https://brew.sh/).
+1. Po instalaci homebrew spusťte z terminálu následující příkaz:`brew install tee-clc`
 
-K **ručně nastavit TEE-CLC**:
+**Ruční nastavení Tee-CLC**:
 
-1. [Stáhněte si nejnovější verzi tee-clc](https://github.com/Microsoft/team-explorer-everywhere/releases) z stránku vydané verze Team Explorer Everywhere úložiště GitHub (například tee-clc-14.134.0.zip v době psaní tohoto textu).
-1. Extrahujte obsah .zip do složky na disku.
-1. Otevřete aplikaci terminál macOS a použít `cd` příkaz pro přepnutí do složky, které jste použili v předchozím kroku.
-1. Ze složky, spusťte příkaz `./tf` otestovat, lze spustit klienta příkazového řádku, můžete být vyzváni k instalaci Javy nebo další závislosti.
+1. [Stáhněte si nejnovější verzi Tee-CLC](https://github.com/Microsoft/team-explorer-everywhere/releases) ze Team Explorer Everywhere stránky vydání úložiště GitHub (např. tee-CLC-14.134.0. zip v době psaní tohoto zápisu).
+1. Extrahujte obsah souboru. zip do složky na disku.
+1. Otevřete aplikaci terminálu MacOS a pomocí `cd` příkazu přejděte do složky, kterou jste použili v předchozím kroku.
+1. V rámci této složky spusťte příkaz `./tf` pro otestování, zda lze spustit klienta příkazového řádku, může se zobrazit výzva k instalaci jazyka Java nebo jiných závislostí.
 
-Po instalaci TEE-CLC můžete spustit příkaz `tf eula` k zobrazení a přijměte licenční smlouvu pro klienta.
+Po instalaci Tee-CLC můžete spustit příkaz `tf eula` a zobrazit a přijmout licenční smlouvu pro klienta.
 
-A konečně k ověření s vaším prostředím TFS/Azure DevOps, bude potřeba vytvořit osobní přístupový token na serveru. Další informace o [dvojúrovňovém osobní přístupové tokeny](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Při vytváření osobního přístupového tokenu pro použití s TFVC, ujistěte se, že jste při konfiguraci token poskytnout úplný přístup.
+Nakonec, pokud chcete ověřit své prostředí TFS nebo Azure DevOps, musíte na serveru vytvořit osobní přístupový token. Přečtěte si další informace o [ověřování pomocí tokenů osobních přístupů](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Při vytváření osobního přístupového tokenu pro použití s TFVC se ujistěte, že při konfiguraci tokenu zadáte úplný přístup.
 
-### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Pomocí TEE-CLC k připojení k úložišti
+### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Připojení k úložišti pomocí TEE-CLC
 
-Chcete-li se připojit ke zdrojovému kódu, musíte nejprve vytvořit pracovní prostor pomocí `tf workspace` příkazu. Například následující příkazy připojit k organizaci v Azure DevOps služby s názvem "TatoOrganizace": 
+Abyste se mohli připojit ke svému zdrojovému kódu, musíte nejprve vytvořit pracovní prostor pomocí `tf workspace` příkazu. Například následující příkazy se připojují k organizaci v Azure DevOps Services s názvem "MyOrganization": 
 
 ```bash
 export TF_AUTO_SAVE_CREDENTIALS=1
 tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
 ```
 
-`TF_AUTO_SAVE_CREDENTIALS` Nastavení prostředí, které se používá k uložení svých přihlašovacích údajů, zobrazí se výzva k zadání je více než jednou. Po zobrazení výzvy k zadání uživatelského jména použijte osobní přístupový token, který jste vytvořili v předchozí části a heslo necháte prázdné.
+Nastavení `TF_AUTO_SAVE_CREDENTIALS` prostředí slouží k uložení vašich přihlašovacích údajů, takže se k nim nebudete muset zadávat víckrát. Po zobrazení výzvy k zadání uživatelského jména použijte token osobní přístup, který jste vytvořili v předchozí části, a použijte prázdné heslo.
 
-Pokud chcete vytvořit mapování zdrojových souborů do místní složky, budete používat `tf workfold` příkazu. Následující příklad provede mapování složky s názvem "WebApp.Services" z "MyRepository" TFVC projekt a nastavit tak, aby je možné zkopírovat do složky místní ~/Projects/ (to znamená "Projekty" složku v aktuální uživatel domovskou složku).
+Chcete-li vytvořit mapování zdrojových souborů do místní složky, použijte `tf workfold` příkaz. Následující příklad mapuje složku s názvem "WebApp. Services" z projektu "MyRepository" TFVC a nastaví ji tak, aby byla zkopírována do místní složky ~/Projects/(tj. složka "projekty" v domovské složce aktuálního uživatele).
 
 ```bash
 tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/
 ```
 
-Nakonec použijte následující příkaz k získání zdrojové soubory ze serveru a místní kopírování:
+Nakonec pomocí následujícího příkazu načtete zdrojové soubory ze serveru a zkopírujete je místně:
 
 ```bash
 tf get
 ```
 
-### <a name="committing-changes-using-the-tee-clc"></a>Potvrzují se změny pomocí TEE-CLC
+### <a name="committing-changes-using-the-tee-clc"></a>Potvrzování změn pomocí TEE-CLC
 
-Po provedení změny na soubory v sadě Visual Studio pro Mac, můžete přepnout zpět do terminálu k vrácení se změnami úpravy. `tf add` Příkaz slouží k přidání souborů do seznamu čekajících změn se zrušenou registrací a `tf checkin` příkaz provede skutečné vrácení se změnami na server. `checkin` Příkaz obsahuje parametry pro přidání komentáře nebo přidružit související pracovní položky. V následujícím fragmentu kódu, všechny soubory `WebApp.Services` složky jsou přidány, rekurzivně, k vrácení se změnami. Kód je pak navázalo kontakt se komentář a přidružené pracovní položky s ID "42".
+Až provedete změny souborů v Visual Studio pro Mac, můžete přejít zpět na terminál a vrátit se změnami provedené úpravy. Příkaz slouží k přidání souborů do seznamu probíhajících změn, které mají být vráceny se změnami `tf checkin` , a příkaz provede skutečné vrácení se změnami na server. `tf add` `checkin` Příkaz obsahuje parametry pro přidání komentáře nebo k přidružení související pracovní položky. V následujícím fragmentu kódu jsou všechny soubory ve `WebApp.Services` složce přidány rekurzivně do vrácení se změnami. Pak je kód vrácen se změnami pomocí komentáře a přidružen k pracovní položce s ID "42".
 
 ```bash
 cd WebApp.Services
@@ -103,10 +102,10 @@ tf add * /recursive
 tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind" -associate:42
 ```
 
-Další informace o příkazy popsané zde, nebo jiné, můžete pomocí následujícího příkazu z terminálu:
+Pokud chcete získat další informace o uvedených příkazech nebo jiných, můžete použít následující příkaz z terminálu:
 
 `tf help`
 
 ### <a name="see-also"></a>Viz také:
 
-- [Vývoj a sdílení kódu v TFVC pomocí sady Visual Studio (Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
+- [Vývoj a sdílení kódu v TFVC pomocí sady Visual Studio (ve Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

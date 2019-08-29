@@ -1,54 +1,55 @@
 ---
 title: Kompilace a sestavení
-description: Tento článek popisuje, jak kompilovat a sestavit projekty a řešení v sadě Visual Studio pro Mac
+description: Tento článek popisuje, jak kompilovat a sestavovat projekty a řešení v Visual Studio pro Mac
+ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 0165594b4c2d77005c2a9ef921cce457f6f2d0f6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: cbf012045145a234f96ac0cd9cdf26565a3a0a64
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693125"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108066"
 ---
-# <a name="compiling-and-building-in-visual-studio-for-mac"></a>Kompilování a sestavování v sadě Visual Studio pro Mac
+# <a name="compiling-and-building-in-visual-studio-for-mac"></a>Kompilace a sestavování v Visual Studio pro Mac
 
-Visual Studio for Mac slouží k vytváření aplikací a vytváření sestavení při vývoji projektu. Je důležité ke kompilaci a vytváření kódu již v rané fázi a často, aby mohli identifikovat neshody typů a další chyby kompilace.
+Visual Studio pro Mac lze použít k sestavování aplikací a vytváření sestavení během vývoje projektu. Je důležité kompilovat a sestavovat kód na začátku a často, abyste mohli identifikovat neshody typu a další chyby při kompilaci.
 
 ## <a name="building-from-the-ide"></a>Sestavení v prostředí IDE
 
-Pomocí sady Visual Studio pro Mac umožňuje vytvářet a spouštět sestavení okamžitě, přitom stále ovládat funkce sestavení. Visual Studio pro Mac nástroj MSBuild používá jako základní systém sestavení.
+Použití Visual Studio pro Mac umožňuje okamžité vytváření a spouštění sestavení a zároveň vám poskytuje kontrolu nad funkcemi sestavení. Visual Studio pro Mac používá nástroj MSBuild jako základní sestavovací systém.
 
-Všechny projekty a řešení vytvořené v integrovaném vývojovém prostředí budou mít výchozí konfigurace sestavení, která definuje kontext pro sestavení. Tyto konfigurace se dá upravit nebo můžete vytvořit svoje vlastní. Vytvoření nebo úprava tyto konfigurace se automaticky aktualizuje soubor projektu, který se pak použije nástroj MSBuild k sestavení projektu.
+Všechny projekty a řešení vytvořené v integrovaném vývojovém prostředí budou mít výchozí konfiguraci sestavení, která definuje kontext pro sestavení. Tyto konfigurace je možné upravit nebo můžete vytvořit vlastní. Vytvořením nebo úpravou těchto konfigurací dojde k automatické aktualizaci souboru projektu, který je poté použit nástrojem MSBuild k sestavení projektu.
 
-Další informace o tom, jak vytvářet projekty a řešení v integrovaném vývojovém prostředí, najdete v článku [sestavování a čištění projektů a řešení](building-and-cleaning-projects-and-solutions.md) průvodce.
+Další informace o tom, jak sestavit projekty a řešení v integrovaném vývojovém prostředí, najdete v tématu Příručka pro [sestavení a čištění projektů a řešení](building-and-cleaning-projects-and-solutions.md) .
 
-Visual Studio for Mac je možné také provést následující kroky:
+Visual Studio pro Mac můžete použít také k následujícím akcím:
 
-* Změna cesty výstupu. To je upravit v možnostech projektu:
+* Změňte výstupní cestu. To je upraveno v možnostech projektu:
 
-    ![Změnit výstupní cesta](media/compiling-and-building-image4.png)
+    ![Změnit výstupní cestu](media/compiling-and-building-image4.png)
 
-* Změna podrobnost výstupu sestavení:
+* Změnit podrobnosti výstupu sestavení:
 
-    ![Podrobnost sestavení změn](media/compiling-and-building-image5.png)
+    ![Změnit podrobnosti sestavení](media/compiling-and-building-image5.png)
 
-* Přidáte vlastní příkazy před, během nebo po vytváření nebo čištění:
+* Přidat vlastní příkazy před, během nebo po sestavení nebo vyčištění:
 
     ![Přidat vlastní příkazy](media/compiling-and-building-image6.png)
 
 ## <a name="building-from-command-line"></a>Sestavování z příkazového řádku
 
-Můžete použít modul sestavení MSBuild pro vytváření aplikací pomocí příkazového řádku.
+Můžete použít modul sestavení MSBuild k sestavování aplikací prostřednictvím příkazového řádku.
 
-Zobrazit [MSBuild](/visualstudio/msbuild/msbuild) obsahu pro další informace o použití nástroje MSBuild.
+Další informace o použití nástroje MSBuild naleznete v obsahu [MSBuild](/visualstudio/msbuild/msbuild) .
 
-## <a name="building-from-azure-pipelines"></a>Vytváření z Azure kanály
+## <a name="building-from-azure-pipelines"></a>Sestavování z Azure Pipelines
 
-* [Sestavení aplikace pro Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
-* [Průběžná integrace se sadou Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)
+* [Sestavení aplikace Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
+* [Kontinuální integrace s Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Kompilace a sestavení (Visual Studio na Windows)](/visualstudio/ide/compiling-and-building-in-visual-studio)
+- [Kompilovat a sestavovat (Visual Studio ve Windows)](/visualstudio/ide/compiling-and-building-in-visual-studio)

@@ -1,61 +1,61 @@
 ---
-title: Updating Visual Studio for Mac
-description: Pokyny k aktualizaci sady Visual Studio pro Mac a přístup k preview verze.
+title: Aktualizace Visual Studio pro Mac
+description: Pokyny pro aktualizaci Visual Studio pro Mac a přístup k vydaným verzím Preview
 author: asb3993
 ms.author: amburns
-ms.date: 04/02/2019
+ms.date: 08/27/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 7aef66e53fee6578707afa60b6ebcf2b7892207b
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 56795fa78a7e850ed96d44d2bbcd3cd3c03abbc1
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691840"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108169"
 ---
-# <a name="update-visual-studio-for-mac"></a>Update Visual Studio for Mac
+# <a name="update-visual-studio-for-mac"></a>Aktualizovat Visual Studio pro Mac
 
-Visual Studio pro Mac distribuuje aktualizace pro integrované vývojové prostředí a podporovaných platforem v pravidelných intervalech. Tato aktualizace je možné ve formě nové funkce, vylepšení a oprav chyb.
+Visual Studio pro Mac pravidelně distribuuje aktualizace pro integrované vývojové prostředí (IDE) a podporované architektury. Tyto aktualizace mohou být ve formě nových funkcí, vylepšení a oprav chyb.
 
-Visual Studio for Mac obsahuje dva kanály, chcete-li získat tyto nejnovější verze:
+Visual Studio pro Mac poskytuje dva kanály pro získání těchto nejnovějších verzí:
 
-* **Stabilní** – poskytuje důkladně otestována aktualizace. Tento kanál se doporučuje pro nejlepší vývojové prostředí.
-* **Ve verzi Preview** – poskytuje přednostní přístup k aktualizacím, které jsou kandidáty na vydání v kanálu stabilní. Tyto verze nemusí být spolehlivé pro každodenní použití.
+* **Stabilní** – poskytuje důkladně testované aktualizace. Tento kanál se doporučuje pro nejlepší vývojové prostředí.
+* **Preview** – poskytuje dřívější přístup k aktualizacím, které jsou kandidáty na vydání v stabilním kanálu. Tyto verze nemusí být spolehlivé pro každodenní použití.
 
-## <a name="checking-for-updates"></a>Vyhledávají se aktualizace
+## <a name="checking-for-updates"></a>Hledají se aktualizace.
 
-Můžete použít **Visual Studio Updater** pole, pokud chcete zkontrolovat nové aktualizace, změna kanálu a stáhněte a nainstalujte aktualizace.
+Pomocí pole pro aktualizaci sady **Visual Studio** můžete kontrolovat nové aktualizace, měnit kanály a stahovat a instalovat aktualizace.
 
-Chcete-li otevřít **Visual Studio Updater**, přejděte do **sady Visual Studio > vyhledat aktualizace**:
+Chcete-li otevřít aktualizaci sady **Visual Studio**, přejděte na **Visual Studio > Vyhledat aktualizace**:
 
-![Vyhledejte možnost aktualizace](media/update-image1.png)
+![Možnost aktualizace pro kontrolu](media/update-image1.png)
 
-Zobrazí se pole aktualizátor:
+Tím se zobrazí okno aktualizace:
 
-![pole aktualizátor](media/update-image2.png)
+![aktualizační pole](media/update-image2.png)
 
-## <a name="changing-the-updater-channel"></a>Změna aktualizační kanál
+## <a name="changing-the-updater-channel"></a>Změna kanálu aktualizačního programu
 
-Chcete-li změnit výběr kanálu z kanálu rozevírací seznam a stiskněte klávesu **tlačítko přepínače kanál**:
+Kanál změníte tak, že ho vyberete v rozevíracím seznamu kanálu a stisknete **tlačítko kanál přepínače**:
 
-![Kanál změn rozevíracího seznamu](media/update-image3.png)
+![Změnit rozevírací seznam kanálu](media/update-image3.png)
 
-## <a name="downloading-and-installing-updates"></a>Stažení a instalace aktualizací
+## <a name="downloading-and-installing-updates"></a>Stahování a instalace aktualizací
 
-Přepínání kanály automaticky spustí proces stahování nových aktualizací.
+Přepínání kanálů automaticky spustí proces stahování nových aktualizací.
 
-Pokud jste vybrali možnost **zkontrolujte automaticky**, pole aktualizátor se automaticky otevře, když Visual Studio for Mac je otevřený s oznámením, že jsou k dispozici nové aktualizace. To vám rovněž poskytne možnosti spuštění stahování je.
+Pokud jste vybrali možnost k **automatické kontrole**, okno aktualizace se zobrazí, když Visual Studio pro Mac otevřené, abyste věděli, že jsou k dispozici nové aktualizace. Poskytne vám taky možnost začít je stahovat.
 
-Chcete-li spustit instalaci aktualizací, vyberte **restartovat a nainstalovat aktualizace** tlačítka:
+Chcete-li zahájit instalaci aktualizací, vyberte tlačítko **restartovat a nainstalovat aktualizace** :
 
-![Tlačítko pro spuštění instalace aktualizace](media/update-image4.png)
+![Tlačítko pro zahájení instalace aktualizací](media/update-image4.png)
 
-V závislosti na součásti, které potřebujete k instalaci budete muset přijmout další licence nebo zadejte uživatelské jméno správce v počítači a heslo.
+V závislosti na součástech, které je potřeba nainstalovat, možná budete muset přijmout další licence nebo zadat uživatelské jméno a heslo správce počítače.
 
 ## <a name="troubleshooting"></a>Poradce při potížích
 
-Pokud máte problémy s aktualizátoru, zkuste následující kroky v [řešení potíží s Updater](updater-troubleshooting.md) průvodce.
+Pokud máte problémy s nástrojem aktualizace, zkuste postupovat podle kroků v průvodci [odstraňováním potíží](updater-troubleshooting.md) s nástrojem aktualizace.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Update Visual Studio (on Windows)](/visualstudio/install/update-visual-studio)
+- [Aktualizace sady Visual Studio (ve Windows)](/visualstudio/install/update-visual-studio)
