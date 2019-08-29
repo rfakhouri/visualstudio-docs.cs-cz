@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 734a192a00ee0c509ed16e71a8629837155888ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957014"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154899"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Použití šablony Polls – webový projekt Flask
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Použití šablony webového projektu v baňce k dotazování
 
-**Předchozí krok: [Použití úplné šablony webového projektu Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Předchozí krok: [Použití šablony webového projektu na celé baňce](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Porozumění "Webový projekt Flask" šablony sady Visual Studio můžete nyní podíváte na třetí šablon Flask "Polls Flask – webový projekt", která staví na stejném základu kódu.
 
@@ -74,7 +74,7 @@ Visual Studio také poskytuje šablony "Hlasovací webový projekt Flask/Jade", 
 
 Poznamenali dříve. velká část Co je v projektu vytvořeného ze šablony "Hlasovací webový projekt Flask" (a šablony "Hlasovací webový projekt Flask/Jade") by měl být obeznámeni, pokud jste prozkoumali další šablony projektů v sadě Visual Studio. Další kroky v tomto článku shrnují významnější změny a dodatky, a to datové modely a další zobrazení.
 
-## <a name="step-5-2-understand-the-data-models"></a>Krok 5 – 2: Principy datových modelů
+## <a name="step-5-2-understand-the-data-models"></a>Krok 5-2: Pochopení datových modelů
 
 Datové modely aplikace jsou třídy Python s názvem dotazování a podle vlastní volby, které jsou definovány v *modely /\_\_init\_\_.py*. Dotazování představuje dotaz, pro které představují kolekci instancí Choice dostupné odpovědi. Dotazování také udržuje celkový počet hlasů (pro kdykoli vybíráte) a metody k výpočtu statistik, které se používají ke generování zobrazení:
 
@@ -110,7 +110,7 @@ class Choice(object):
 
 Tyto datové modely jsou obecné abstrakce, které umožňují zobrazení aplikace tak, aby odpovídaly různé typy zálohování úložišť dat, které jsou popsané v dalším kroku.
 
-## <a name="step-5-3-understand-the-backing-data-stores"></a>Krok 5 – 3: Principy zálohování úložišť dat.
+## <a name="step-5-3-understand-the-backing-data-stores"></a>Krok 5-3: Pochopení úložišť zálohovaných dat
 
 Úložišti dat v paměti, úložiště tabulek v Azure nebo v databázi Mongo DB můžete spustit aplikaci vytvořenou šablonou "Hlasovací webový projekt Flask".
 
@@ -232,11 +232,11 @@ Volání `repository.add_sample_polls()` končí v jednom z konkrétních `Repos
 
 Po dokončení tohoto procesu `redirect('/')` výroky `seed` metoda přejde zpět na domovskou stránku. Protože `repository.get_polls` nyní vrací datový objekt podmíněné značky v *templates\index.html* nyní vykreslí tabulku obsahující dotazuje.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Otázka: Jak jeden přidá nový hlasovací aplikaci?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Daná Jak přidá nové dotazy do aplikace?
 
-Odpověď: Aplikace, jak je uvedeno pomocí šablony projektu neobsahuje zařízení pro přidání nebo úpravu hlasování. Můžete upravit *models\samples.json* vytvořit nový inicializační data, ale to znamenalo, resetuje se úložiště dat. K implementaci funkcí pro úpravy, budete muset rozšířit `Repository` rozhraní třídy pomocí metody k vytvoření potřebných `Choice` a `Poll` instancí, pak implementovat uživatelského rozhraní v dalších stránek, které používají tyto metody.
+Zodpovědět Aplikace, která je součástí šablony projektu, neobsahuje zařízení pro přidávání nebo úpravu dotazů. Můžete upravit *models\samples.json* vytvořit nový inicializační data, ale to znamenalo, resetuje se úložiště dat. K implementaci funkcí pro úpravy, budete muset rozšířit `Repository` rozhraní třídy pomocí metody k vytvoření potřebných `Choice` a `Poll` instancí, pak implementovat uživatelského rozhraní v dalších stránek, které používají tyto metody.
 
-## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Krok 5 – 4: Principy zobrazení podrobností a výsledky dotazování
+## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Krok 5-4: Seznamte se s podrobnostmi dotazování a zobrazení výsledků
 
 Většina vzhled zobrazení vygenerovaných sadou šablony "Hlasovací webový projekt Flask" a "Hlasovací webový projekt Flask/Jade", například zobrazení pro o a kontaktní stránky, jsou velmi podobné zobrazením vytvořených šablonou "Webový projekt Flask" (nebo "Webový projekt Flask/Jade") jste pracovali pomocí výše v tomto kurzu. V předchozí části jste také zjistili, jak je implementovaná na domovské stránce zobrazit tlačítko inicializace nebo seznam hlasování.
 
@@ -346,7 +346,7 @@ def results(key):
 ## <a name="next-steps"></a>Další kroky
 
 > [!Note]
-> Pokud jste se potvrzuje řešení sady Visual Studio do správy zdrojového kódu v průběhu kurzu v tomto kurzu, teď je vhodná doba provést další potvrzení. Řešení by měl odpovídat kurz zdrojového kódu na Githubu: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
+> Pokud jste se potvrzuje řešení sady Visual Studio do správy zdrojového kódu v průběhu kurzu v tomto kurzu, teď je vhodná doba provést další potvrzení. Vaše řešení by mělo odpovídat zdrojovému kódu kurzu na GitHubu: [Microsoft/Python-Sample-vs-Learning-baněk](https://github.com/Microsoft/python-sample-vs-learning-flask).
 
 Nyní jste prozkoumali rozsahu šablony "Prázdné Flask webového projektu", "Webový projekt Flask [/Jade]" a "Hlasovací webový projekt Flask [/Jade]" v sadě Visual Studio. Jste se naučili základy Flask, jako je například směrování a pomocí zobrazení, šablony a viděli, jak používat úložiště dat zálohování. Teď by měl být moct začít používat webovou aplikaci vlastní libovolné zobrazení a modely, které potřebujete.
 
@@ -354,6 +354,6 @@ Spuštění webové aplikace ve svém vývojovém počítači je pouze jeden kro
 
 - Nasazení webové aplikace do produkčního prostředí serveru, jako je Azure App Service. Zobrazit [publikovat do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-- Přidejte implementaci úložiště, který používá jiného úložiště dat na produkční úrovni, jako je PostgreSQL, MySQL a SQL Server (všechny z nich je možné hostovat na Azure). Můžete také použít [sady Azure SDK for Python](/python/azure/?view=azure-python) pro práci se službami Azure storage jako tabulek a objektů BLOB, stejně jako Cosmos DB.
+- Přidejte implementaci úložiště, který používá jiného úložiště dat na produkční úrovni, jako je PostgreSQL, MySQL a SQL Server (všechny z nich je možné hostovat na Azure). Můžete také použít [sady Azure SDK for Python](/azure/python/) pro práci se službami Azure storage jako tabulek a objektů BLOB, stejně jako Cosmos DB.
 
-- Nastavení průběžné integrace a nasazení kanálu ve službě, jako je Azure DevOps. Kromě práce se správou zdrojového kódu (prostřednictvím úložiště Azure nebo Githubu nebo jinde), můžete nakonfigurovat Azure DevOps Project pro automatické spouštění testování částí jako nezbytný předpoklad pro vydanou verzi a také nakonfigurovat kanál pro nasazení do přípravného serveru pro Další testy před nasazením do produkčního prostředí. Azure DevOps, navíc se integruje s monitorováním řešení, jako jsou App Insights a zavře celý cyklus se nástroje pro agilní plánování. Další informace najdete v tématu [vytvoření kanálu CI/CD pro Python s projekty Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts) a také Obecné [dokumentace ke službě Azure DevOps](/azure/devops/?view=vsts).
+- Nastavení průběžné integrace a nasazení kanálu ve službě, jako je Azure DevOps. Kromě práce se správou zdrojového kódu (prostřednictvím úložiště Azure nebo Githubu nebo jinde), můžete nakonfigurovat Azure DevOps Project pro automatické spouštění testování částí jako nezbytný předpoklad pro vydanou verzi a také nakonfigurovat kanál pro nasazení do přípravného serveru pro Další testy před nasazením do produkčního prostředí. Azure DevOps, navíc se integruje s monitorováním řešení, jako jsou App Insights a zavře celý cyklus se nástroje pro agilní plánování. Další informace najdete v tématu [vytvoření kanálu CI/CD pro Python s Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts) a také v dokumentaci ke [službě Azure DevOps](/azure/devops/?view=vsts).

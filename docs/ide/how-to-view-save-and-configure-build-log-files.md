@@ -1,6 +1,6 @@
 ---
 title: 'Postupy: Zobrazit, Uložit a nakonfigurovat soubory protokolu sestavení | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415574"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154814"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení
 
@@ -42,6 +42,8 @@ Pokud sestavíte jakýkoli typ projektu pomocí nástroje MSBuild, můžete vytv
 
    Visual Studio vás vyzve k zadání umístění pro uložení výstupu sestavení.
 
+Můžete také vygenerovat protokoly spuštěním nástroje MSBuild přímo z příkazového řádku pomocí `-fileLogger` možnosti příkazového řádku (`-fl`). Viz [získání protokolů sestavení pomocí nástroje MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).
+
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Změna množství informací obsažených v protokolu sestavení
 
 1. V panelu nabídky zvolte **nástroje** > **možnosti**.
@@ -63,8 +65,11 @@ Pokud sestavíte jakýkoli typ projektu pomocí nástroje MSBuild, můžete vytv
     > [!IMPORTANT]
     > Projekt musíte znovu sestavit, aby se změny projevily v okně **výstup** (všechny projekty) a v  *\<souboru ProjectName >. txt* (C++ pouze projekty).
 
+## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Použití binárních protokolů pro snazší procházení velkých souborů protokolu
+
+Binární protokoly jsou volitelnou funkcí pro projekty .NET, které vám umožní získat bohatší možnosti procházení protokolů, které by mohly usnadnit hledání informací ve velkých protokolech. Chcete-li použít binární protokoly, nainstalujte [Systémové nástroje projektu](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Další informace najdete v tématu [https://msbuildlog.com](https://msbuildlog.com) a v [binárním protokolu](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md) .
+
 ## <a name="see-also"></a>Viz také:
 
-- [Získat protokoly sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Sestavování a čištění projektů a řešení v aplikaci Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

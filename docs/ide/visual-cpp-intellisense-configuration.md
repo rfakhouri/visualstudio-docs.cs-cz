@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5c95990eb875c52a66cd0efa5579c9d39eab5469
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925862"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154908"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurace projektu C++ pro IntelliSense
 
@@ -48,7 +48,7 @@ Pro projekty makefile, které jsou založeny na šabloně projektu NMake, zvolte
 
 ### <a name="open-folder-projects"></a>Projekty otevřené složky
 
-V případě projektů CMake se ujistěte, že jsou správně zadané #include cesty pro všechny konfigurace v CMakeLists. txt. Jiné typy projektů mohou vyžadovat soubor CppProperties. JSON. Další informace najdete v tématu [Konfigurace IntelliSense pomocí CppProperties. JSON](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Ujistěte se, že cesty jsou správné pro každou konfiguraci, která je definována v souboru.
+V případě projektů CMake se ujistěte, že jsou správně zadané #include cesty pro všechny konfigurace v CMakeLists. txt. Jiné typy projektů mohou vyžadovat soubor CppProperties. JSON. Další informace najdete v tématu [Konfigurace IntelliSense pomocí CppProperties. JSON](/cpp/build/open-folder-projects-cpp#configure-code-navigation-with-cpppropertiesjson). Ujistěte se, že cesty jsou správné pro každou konfiguraci, která je definována v souboru.
 
 Pokud v souboru CppProperties. JSON dojde k syntaktické chybě, IntelliSense v ovlivněných souborech bude nesprávný. V aplikaci Visual Studio se zobrazí chyba v okno Výstup.
 

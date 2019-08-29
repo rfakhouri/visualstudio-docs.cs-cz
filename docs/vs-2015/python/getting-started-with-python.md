@@ -1,5 +1,5 @@
 ---
-title: Začínáme s Pythonem | Dokumentace Microsoftu
+title: Začínáme pomocí Pythonu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -9,91 +9,91 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c5cea89b337f4da586ba4ca1954e49b96c84638
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575647"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154946"
 ---
 # <a name="getting-started-with-python"></a>Začínáme s Pythonem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nástroje Pythonu pro Visual Studio (PTVS) je bezplatná, [open source](https://github.com/Microsoft/ptvs) modulu plug-in pro Visual Studio, která prostředí výkonné vývoj v jazyce Python.  
+Python Tools for Visual Studio (PTVS) je bezplatný [Open Source](https://github.com/Microsoft/ptvs) modul plug-in pro Visual Studio, který představuje výkonné prostředí pro vývoj v Pythonu.  
   
-## <a name="python-the-language"></a>Jazyk Python
+## <a name="python-the-language"></a>Jazyk Pythonu
   
-Python je oblíbený programovací jazyk, který používá mnoho univerzity, odborníky, autory skriptů aplikace, příležitostné vývojáři a profesionální vývojáři pracující na aplikace, weby a cloudové služby.
+Python je oblíbený programovací jazyk, který používá spousta vysokých škol, vědců, skriptovacích skriptů, příležitostného vývojáře a profesionálních vývojářů, kteří pracují s aplikacemi, weby a Cloud Services.
 
-Jako programovací jazyk Python je:
+V programovacím jazyce je Python:
   
-- Spolehlivé.
-- Obecně užitečná pro skriptování rychlé programy, skriptování aplikací, aplikací klasické pracovní plochy, webové servery, webové služby a vědecké výpočty.
-- Snadno učí a má dobrý návrh podporovat dobré psaní kódu (mnoha vysokých školách použije pro úvodní kurzy programovací).
-- Flexibilní a podporuje styly imperativní, funkční a objektově orientované programování.
-- Zdarma a open source.
-- Spustí se také všechny hlavní operační systémy.  
-- Podporuje mnoho zdarma, užitečné a přehledné knihoven.  
-- Podporuje spoustu dokumentace, ukázky a silné vývojářské komunity.  
+- Spolehlivosti.
+- Obecně užitečné pro skriptování rychlých programů, skriptování aplikací, desktopových aplikací, webových serverů, webových služeb a vědeckých výpočtů.
+- Snadno se naučíte a má dobrý návrh na podporu správného kódování (spousta vysokých škol ho využívají pro úvodní programovací kurzy).
+- Flexibilní a podporující imperativní, funkční a objektově orientované programovací styly.
+- Bezplatný a open source.
+- Funguje i na všech hlavních operačních systémech.  
+- Podporováno spoustou volných, užitečných a dobře navržených knihoven.  
+- Podporuje spoustu dokumentace, ukázek a výkonné komunity vývojářů.  
 
-Další informace o jazyku, začněte s [Python pro začátečníky](https://www.python.org/about/gettingstarted/) na webu python.org.
+Pokud chcete získat další informace o jazyce, začněte v [Pythonu pro začátečníky](https://www.python.org/about/gettingstarted/) na Python.org.
 
-K instalaci Pythonu, sama, navštivte [ https://www.python.org/download/ ](https://www.python.org/download/).
+Pro instalaci samotného Pythonu [https://www.python.org/download/](https://www.python.org/download/)navštivte.
 
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
-Nástroje Pythonu pro Visual Studio, které si můžete nainstalovat z [visualstudio.com](https://www.visualstudio.com/explore/python-vs), poskytují následující funkce:  
+Python Tools for Visual Studio, které můžete nainstalovat z [VisualStudio.com](https://www.visualstudio.com/explore/python-vs), poskytují následující funkce:  
   
-- Podpora pro více interpretů: různé verze CPython, IronPython a IPython  
-- Systém projektu, který implicitně vybere strukturu složek kódu v Pythonu a také umožňuje explicitní kontrolu, abyste mohli identifikovat kód aplikace, kód testu, webové stránky, JavaScript, skripty sestavení a tak dále.  
-- Šablony projektů pro konzolu, web, Azure, datové vědy a jiné typy projektů.    
-- Sada Azure SDK pro Python (viz níže)    
-- Bohaté možnosti úpravy kódu porozumění funkcí a včetně barevné zvýrazňování, automatické dokončování váš kód a knihoven, signaturám, zobrazení tříd, přejít k definici, najít všechny odkazy, refaktoring a více syntaxe.    
-- Okno aplikace interaktivní (REPL)
-- IPython pomocí datových vizualizací.
-- Podpora pro IronPython a .NET/WPF.    
-- Bohatá podpora ladění bez projektu sady Visual Studio, možnost do existujícího spustitelného souboru, ve smíšeném režimu ladění, vzdálené ladění na Windows/Linux/Mac a ladění v interaktivním okně.   
+- Podpora pro více překladačů: různé verze CPython, Ironpythonu a IPython  
+- Systém projektu, který implicitně vybere strukturu složek kódu Pythonu a umožňuje také explicitní řízení, abyste mohli identifikovat kód aplikace, testovací kód, webové stránky, JavaScript, skripty sestavení atd.  
+- Šablony projektů pro konzolu, web, Azure, datové vědy a další typy projektů.    
+- Sada Azure SDK for Python (viz níže)    
+- Bohatě upravené funkce pro úpravy a porozumění kódu, včetně barevného zvýraznění syntaxe, automatického dokončování všech vašich kódů a knihoven, nápovědě k podpisu, zobrazení tříd, přechodu na definici, hledání všech odkazů, refaktoringu a dalších.    
+- Interaktivní okno (REPL)
+- IPython pomocí vizualizací dat.
+- Podpora pro Ironpythonu a .NET/WPF.    
+- Bohatá ladit bez projektu sady Visual Studio, schopnost existující spustitelný soubor, ladění ve smíšeném režimu, vzdálené ladění na Windows/Linux/Mac a ladění v interaktivním okně.   
 - Nástroje pro profilaci.  
 - Testovací nástroje.  
   
-Následující prostředky vám pomůže začít pracovat:
+Následující materiály vám pomůžou začít:
 
 - [Průvodce instalací](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
-- [Získání krátkých videích Začínáme a deep dive](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
+- [Začínáme a rozsáhlá podrobně krátká videa](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
 - Instalace a funkce ukázka (27 min)]( https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Dokumentace](https://github.com/Microsoft/PTVS/wiki)  
 
-Všimněte si, že Visual Studio v současné době neposkytuje způsob, jak vytvořit samostatný spustitelný soubor pomocí Pythonu, která v podstatě znamená, že program s vložený interpret Pythonu. Existují však různými prostředky v rámci komunity Python k tomu, jak je popsáno na [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython také podporuje se vložený do nativní aplikace, jak je popsáno v blogovém příspěvku [pomocí CPython Vložitelný soubor Zip](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
+Všimněte si, že Visual Studio v současné době neposkytuje způsob vytvoření samostatného spustitelného souboru pomocí Pythonu, což v podstatě znamená program s vloženým překladačem Pythonu. V komunitě Pythonu ale existují různé způsoby, jak je popsáno v [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython podporuje také vkládání do nativní aplikace, jak je popsáno v blogovém příspěvku [pomocí souboru ZIP](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)s možnou vloženou do CPython.
   
-## <a name="building-ui-with-python"></a>Vytváření uživatelského rozhraní pomocí Pythonu  
+## <a name="building-ui-with-python"></a>Sestavování uživatelského rozhraní pomocí Pythonu  
 
-Hlavní nabídky pro vytváření uživatelského rozhraní pomocí Pythonu, je [Qt projektu](https://www.qt.io/qt-for-application-development/), s vazbami pro Python, označované jako [PySide (oficiální vazby)](http://wiki.qt.io/PySide) (viz také [PySide soubory ke stažení](https://download.qt.io/official_releases/pyside/.)) a [PyQt](https://wiki.python.org/moin/PyQt). V současné době podpora Pythonu v sadě Visual Studio neobsahuje žádné konkrétní nástroje pro vývoj uživatelského rozhraní.
+Hlavní nabídka pro vytváření uživatelského rozhraní s Pythonem je [projekt QT](https://www.qt.io/qt-for-application-development/)s vazbami pro Python označované jako [PySide (oficiální vazba)](http://wiki.qt.io/PySide) (viz také [soubory PySide ke stažení](https://download.qt.io/official_releases/pyside/.)) a [PyQt](https://wiki.python.org/moin/PyQt). V současné době podpora Pythonu v sadě Visual Studio neobsahuje žádné konkrétní nástroje pro vývoj uživatelského rozhraní.
 
 ## <a name="azure-sdk-for-python"></a>Azure SDK pro Python
   
-Sada Azure SDK pro Python, která podporuje Windows, Mac a Linux, usnadňuje používání a správu služeb Microsoft Azure. Podívejte se na následujících odkazech podrobnosti: 
+Sada Azure SDK pro Python, která podporuje Windows, Mac a Linux, usnadňuje využívání a správu Microsoft Azure služeb. Podrobnosti najdete v následujících zdrojích informací: 
 
-- Chcete-li nainstalovat sadu SDK, použijte [indexu balíčků Pythonu](https://pypi.python.org/pypi/azure) nebo postupujte podle [instalace Pythonu a sady SDK](https://azure.microsoft.com/documentation/articles/python-how-to-install/) v dokumentaci k Azure. 
-- [Azure SDK pro Centrum pro vývojáře Python](https://azure.microsoft.com/develop/python/) obsahuje velké množství nápovědy z instalace dokumentaci k kurzy.  Mezi nejdůležitější funkce následujícím:  
+- Chcete-li nainstalovat sadu SDK, použijte [index balíčku Python](https://pypi.python.org/pypi/azure) nebo proveďte [instalaci PYTHONU a sadu SDK](https://docs.microsoft.com/azure/python/python-sdk-azure-install) v dokumentaci k Azure. 
+- [Sada Azure SDK for Python Developer Center](https://azure.microsoft.com/develop/python/) obsahuje spoustu lepších ustanovení o instalaci v dokumentaci s kurzy.  Některé nejdůležitější kroky:  
 - Praktičtí průvodci:
-  - [Úložiště objektů Blob](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
+  - [Objekt BLOB úložiště](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
   - [Fronta úložiště](https://azure.microsoft.com/develop/python/how-to-guides/queue-service/)  
-  - [Storage Table](https://azure.microsoft.com/develop/python/how-to-guides/table-service/)  
-  - [Fronty služby Service Bus](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-queues/)
-  - [Předplatná služby Service Bus](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-topics/) 
+  - [Tabulka úložiště](https://azure.microsoft.com/develop/python/how-to-guides/table-service/)  
+  - [Fronty Service Bus](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-queues/)
+  - [Service Bus témata/předplatná](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-topics/) 
   - [Správa služeb](https://azure.microsoft.com/develop/python/how-to-guides/service-management/)  
 
-## <a name="scientific-computing"></a>Vědecké výpočty
+## <a name="scientific-computing"></a>Vědecký výpočetní výkon
 
-Kromě všech mezi odborníky přes data knihoven Pythonu nástroje Pythonu pro Visual Studio podporují IPython a IPython notebook, které je možné hostovat v Azure.
+Kromě všech knihoven dat Pythonu pro odborníky na data, Python Tools for Visual Studio podporují poznámkové bloky IPython a IPython, které můžou být hostované v Azure.
 
-Doporučujeme, abyste získání IPython a vědecké výpočetní knihovny (matplotlib, scipy, numpy, atd.) z [University of California, Irvine](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
+Doporučujeme, abyste získali IPython a vědecké výpočetní knihovny (matplotlib, scipy, numpy atd.) z [University of California, Irvine](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
   
 ## <a name="see-also"></a>Viz také  
 
 [Začínáme s PTVS: Nastavení sady Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[Začínáme s PTVS: Začínáme kódovat (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[Začínáme pomocí PTVS: Spustit kódování (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)
 [Začínáme s PTVS: Úprava kódu](../python/getting-started-with-ptvs-editing-code.md)
-[Začínáme s PTVS: Ladění](../python/getting-started-with-ptvs-debugging.md)
-[Začínáme s PTVS: Interaktivní Python](../python/getting-started-with-ptvs-interactive-python.md)
-[Začínáme s PTVS: Vytvoření webu v Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+ZačínámepomocíPTVS[: Začínáme](../python/getting-started-with-ptvs-debugging.md)ladění
+pomocíPTVS[: Interaktivní Začínáme](../python/getting-started-with-ptvs-interactive-python.md)
+Pythonu[s PTVS: Vytvoření webu v Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

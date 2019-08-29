@@ -14,43 +14,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ffbe1b7f293bc525aa03a536c0fa4fa55ce3e82a
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821564"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154861"
 ---
 # <a name="use-the-task-list"></a>Použití seznamu úkolů
 
-Použít **seznamu úkolů** ke sledování komentářů kódu, které používají tokeny jako `TODO` a `HACK`, nebo vlastní tokeny a ke správě klávesových zkratek, které můžete přejít přímo do předdefinovaného místa v kódu. Klikněte na položku v seznamu a přejděte do umístění ve zdrojovém kódu.
+Použijte **seznam úkolů** ke sledování komentářů kódu, které používají tokeny `TODO` , `HACK`jako jsou a, nebo vlastní tokeny, a ke správě zástupců, které vás přejímají přímo na předdefinované umístění v kódu. Kliknutím na položku v seznamu přejdete do jejího umístění ve zdrojovém kódu.
 
 > [!NOTE]
-> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [úkolů komentáře (Visual Studio for Mac)](/visualstudio/mac/task-comments).
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac najdete v tématu [Komentáře k úkolům (Visual Studio pro Mac)](/visualstudio/mac/task-comments).
 
 ## <a name="the-task-list-window"></a>Okno Seznam úkolů
 
-Když **seznamu úkolů** je otevřené, zobrazí se v dolní části okna aplikace.
+Když je **seznam úkolů** otevřené, zobrazí se v dolní části okna aplikace.
 
-Chcete-li otevřít **seznamu úkolů**vyberte **zobrazení** > **seznamu úkolů**, nebo stisknutím klávesové **Ctrl** + **\\**,**T**.
+Chcete-li otevřít **seznam úkolů**, vyberte možnost **Zobrazit** > **seznam úkolů**nebo na klávesnici stiskněte klávesu **CTRL**+ **\\** ,**T**.
 
 ![okno Seznam úkolů](../ide/media/vs2015_task_list.png)
 
-Chcete-li změnit pořadí řazení seznamu, vyberte záhlaví libovolného sloupce. Chcete-li dále zpřesnit výsledky hledání, stiskněte **Shift** a klikněte na druhé záhlaví sloupce. Další možností je v místní nabídce zvolit **řadit**a pak kliknout na záhlaví. Chcete-li dále zpřesnit výsledky hledání, stiskněte **Shift** a klikněte na druhé záhlaví.
+Chcete-li změnit pořadí řazení seznamu, vyberte záhlaví libovolného sloupce. Chcete-li dále zpřesnit výsledky hledání, stiskněte klávesu **SHIFT** a klikněte na druhé záhlaví sloupce. Případně můžete v místní nabídce vybrat položku **Seřadit podle**a potom zvolit záhlaví. Chcete-li dále zpřesnit výsledky hledání, stiskněte klávesu **SHIFT** a zvolte druhé záhlaví.
 
-Chcete-li zobrazit nebo skrýt sloupce, v místní nabídce zvolte **zobrazit sloupce**. Vyberte sloupce, které chcete zobrazit nebo skrýt.
+Chcete-li zobrazit nebo skrýt sloupce, v místní nabídce vyberte možnost **Zobrazit sloupce**. Vyberte sloupce, které chcete zobrazit nebo skrýt.
 
 Chcete-li změnit pořadí sloupců, přetáhněte libovolné záhlaví sloupce do umístění, které chcete.
 
 ## <a name="user-tasks"></a>Uživatelské úkoly
 
-Funkce úkolů uživatele byla odebrána v sadě Visual Studio 2015. Při otevření řešení, které má uživatelská úloha data ze sady Visual Studio 2013 a dříve uživatel úkolů data ve vašich *.suo* soubor nemá vliv, ale uživatelské úkoly se nezobrazují v seznamu úkolů.
+Funkce úlohy uživatele byla odebrána v aplikaci Visual Studio 2015. Když otevřete řešení, které má data úkolu uživatele z Visual Studio 2013 a dříve, nebudou ovlivněna data uživatelských úloh v souboru *. suo* , ale v seznamu úkolů se nezobrazí úkoly uživatele.
 
-Pokud chcete i nadále přístup a aktualizovat uživatelská data úlohy, otevřete projekt v sadě Visual Studio 2013 a zkopírujte obsah všech úkolů uživatele do vašeho nástroje pro správu upřednostňované projektu (například Team Foundation Server).
+Pokud chcete pokračovat v přístupu a aktualizaci dat uživatelských úloh, otevřete projekt v Visual Studio 2013 a zkopírujte obsah všech uživatelských úloh do preferovaného nástroje pro správu projektu (například Team Foundation Server).
 
 ## <a name="tokens-and-comments"></a>Tokeny a komentáře
 
-Komentáře v kódu předchází značka komentáře a předdefinovaný token se zobrazí také v **seznamu úkolů**. Například následující komentář jazyka C# má tři samostatné části:
+Komentář v kódu předchází značku komentáře a předdefinovaný token se také zobrazí v **seznam úkolů**. Například následující komentář jazyka C# má tři samostatné části:
 
 - Značka komentáře (`//`)
 
@@ -62,50 +62,53 @@ Komentáře v kódu předchází značka komentáře a předdefinovaný token se
 // TODO: Load state from previously suspended application
 ```
 
-Protože `TODO` je i předdefinovanou token, tento komentář se zobrazí jako `TODO` úkol v seznamu.
+Vzhledem `TODO` k tomu, že je předdefinovaný token, tento `TODO` komentář se zobrazí jako úkol v seznamu.
+
+> [!NOTE]
+> Výchozí tokeny jsou dostupné jenom pro jazyky CC++/ C#, a VB. Další jazyky najdete v části **vlastní tokeny** .
 
 ### <a name="custom-tokens"></a>Vlastní tokeny
 
-Ve výchozím nastavení, Visual Studio obsahuje následující tokeny: `HACK`, `TODO`, `UNDONE`, a `UnresolvedMergeConflict`. Nejsou malá a velká písmena. Nebo lze také vytvořit vlastní tokeny.
+Ve výchozím nastavení Visual Studio obsahuje následující tokeny: `HACK`, `TODO`, `UNDONE`a `UnresolvedMergeConflict`. Nerozlišují velká a malá písmena. Nebo lze také vytvořit vlastní tokeny.
 
 Vytvoření vlastního tokenu:
 
 1. Na **nástroje** nabídce zvolte **možnosti**.
 
-2. Otevřít **prostředí** složky a klikněte na tlačítko **seznamu úkolů**.
+2. Otevřete složku **prostředí** a zvolte možnost **seznam úkolů**.
 
-   [Stránky Možnosti seznamu úkolů](../ide/reference/task-list-environment-options-dialog-box.md) se zobrazí.
+   Zobrazí se [Stránka možnosti seznam úkolů](../ide/reference/task-list-environment-options-dialog-box.md) .
 
    ![Seznam úkolů sady Visual Studio](../ide/media/vs2015_task_list_options.png)
 
-3. V **název** textové pole, zadejte název tokenu, například **chyb**.
+3. Do textového pole **název** zadejte název tokenu, například **Chyba**.
 
-4. V **Priority** rozevírací seznam, vyberte výchozí prioritu pro nový token.
+4. V rozevíracím seznamu **Priorita** vyberte výchozí prioritu pro nový token.
 
 5. Zvolte **přidat**.
 
 > [!TIP]
-> **Přidat** aktivuje tlačítko po zadání názvu. Musíte zadat název před kliknutím na tlačítko **přidat**.
+> Tlačítko **Přidat** se aktivuje po zadání názvu. Před kliknutím na **Přidat**je nutné zadat název.
 
 ### <a name="c-todo-comments"></a>Komentáře C++ TODO
 
-Ve výchozím nastavení, komentáře C++ TODO se zobrazí v **seznamu úkolů**.
+Ve výchozím nastavení C++ se komentáře TODO zobrazují v **seznam úkolů**.
 
-Chcete-li vypnout komentáře C++ TODO na **nástroje** nabídce zvolte **možnosti** > **textový Editor** > **C/C++**  >  **Zobrazení** > **vytvořit výčet úkolů komentáře**a nastavte hodnotu na **false**.
+Pokud chcete komentáře C++ TODO vypnout, v nabídce **nástroje** vyberte **Možnosti** > **textový editor** >  > **C/C++** **Zobrazit** > **výčet úkolů** s komentářem. a nastavte hodnotu na **false**.
 
 ## <a name="shortcuts"></a>Zástupci
 
-A *místní* je záložka v kódu, který je sledována v **seznamu úkolů**. Má jinou ikonu než regulární záložku. Dvakrát klikněte na zástupce v **seznamu úkolů** přejít na příslušné místo v kódu.
+*Zástupce* je záložka v kódu, která je sledována v **seznam úkolů**. Má jinou ikonu než běžná záložka. Dvojím kliknutím na zástupce v **seznam úkolů** přejděte na odpovídající umístění v kódu.
 
-![Ikonu zástupce seznamu úkolů sady Visual Studio](../ide/media/vs2015_task_list_bookmark.png)
+![Ikona zástupce Seznam úkolů sady Visual Studio](../ide/media/vs2015_task_list_bookmark.png)
 
 ### <a name="create-a-shortcut"></a>Vytvoření zástupce
 
-Vytvoření zástupce, vložte do kódu, ve které chcete umístit zástupce ukazatel. Zvolte **upravit** > **záložky** > **přidat zástupce seznamu úkolů** nebo stiskněte klávesu **Ctrl** + **K**, **Ctrl**+**H**.
+Chcete-li vytvořit zástupce, vložte ukazatel do kódu, kam chcete umístit zástupce. Zvolte možnost **Upravit** > **záložky**++přidat seznam úkolů zástupce nebo stiskněte klávesy CTRL K, CTRL H. > 
 
-Procházet zástupce v kódu, zvolit zástupce v seznamu a klikněte na tlačítko **dalším úkolem** nebo **předchozího úkolu** z místní nabídky.
+Chcete-li procházet zástupce v kódu, zvolte zástupce v seznamu a potom v místní nabídce zvolte možnost **Další úkol** nebo **předchozí úkol** .
 
 ## <a name="see-also"></a>Viz také:
 
-- [Úloha seznamu prostředí, dialogové okno Možnosti](../ide/reference/task-list-environment-options-dialog-box.md)
-- [Komentáře k úkolu (Visual Studio for Mac)](/visualstudio/mac/task-comments)
+- [Seznam úkolů, prostředí, dialogové okno Možnosti](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Komentáře k úkolu (Visual Studio pro Mac)](/visualstudio/mac/task-comments)

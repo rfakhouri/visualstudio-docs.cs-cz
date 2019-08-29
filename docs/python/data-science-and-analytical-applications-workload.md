@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 20ebd6def9fcac2336ca13118300737b66142812
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926383"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154882"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Instalace podpory pro datové vědy v aplikaci Visual Studio
 
@@ -106,7 +106,7 @@ Další informace:
 
 Kromě toho, co je přímo v úloze datové vědy a analytické aplikace, je užitečná taky služba Azure Notebooks a sada Azure SDK pro Python je užitečná i pro datové vědy.
 
-Sada Azure SDK pro Python umožňuje snadno využívat a spravovat služby Microsoft Azure z aplikací běžících ve Windows, Mac a Linux. Další informace najdete v tématu [sada Azure SDK pro Python](../python/azure-sdk-for-python.md).
+Sada Azure SDK pro Python umožňuje snadno využívat a spravovat služby Microsoft Azure z aplikací běžících ve Windows, Mac a Linux. Další informace najdete v tématu [sada Azure SDK pro Python](/azure/python/).
 
 Azure Notebooks (aktuálně ve verzi Preview) poskytuje bezplatný online přístup k poznámkovým blokům Jupyter, které běží v cloudu v Microsoft Azure. Služba obsahuje ukázkové poznámkové bloky v Pythonu, R F# a, které vám pomohou začít. Navštivte [Notebooks.Azure.com](https://notebooks.azure.com/).
 
