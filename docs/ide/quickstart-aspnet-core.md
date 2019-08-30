@@ -14,14 +14,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0e701fd45230295222ffc6e17c05052e01b47189
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 28994e7f3a4f31a9e3ee8c292a08df1132cf20df
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745038"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180381"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Rychlý start: Vytvoření vaší první webové aplikace ASP.NET Core pomocí sady Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Rychlý start: Vytvoření první ASP.NET Core webové aplikace pomocí sady Visual Studio
 
 V tomto úvodu 5 až 10 minut na tom, jak pomocí sady Visual Studio vytvoříte jednoduchou webovou aplikaci "Hello World" pomocí šablony projektu ASP.NET a programovací jazyk C#.
 
@@ -37,7 +37,7 @@ Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory k
 
 ::: moniker range="vs-2019"
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 
@@ -47,17 +47,17 @@ Tento rychlý úvodní kurz obsahuje snímky obrazovky, použít tmavý motiv. P
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
-Pokud chcete začít, vytvoříte projekt webové aplikace ASP.NET Core. Typ projektu obsahuje všechny soubory šablony k vytvoření webové aplikace, než jste přidali ještě nic!
+Pokud chcete začít, vytvoříte projekt webové aplikace ASP.NET Core. Typ projektu obsahuje všechny soubory šablon pro vytvoření webové aplikace, než dokonce cokoli přidáte.
 
 ::: moniker range="vs-2017"
 
 1. Otevřete Visual Studio 2017.
 
-1. V horní nabídce zvolte **souboru** > **nový** > **projektu**.
+1. V horním řádku nabídek vyberte **soubor** > **Nový** > **projekt**.
 
 1. V levém podokně **nový projekt** dialogového okna rozbalte **Visual C#** a klikněte na tlačítko **.NET Core**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**. <br/><br/>Pojmenujte svůj soubor `HelloWorld` a zvolte **OK**.
 
-   ![Vytvořit nový projekt webové aplikace ASP.NET Core pro jazyk C#](../ide/media/csharp-aspnet-choose-template-name-file.png)
+   ![Vytvořit nový projekt ASP.NET Core webové aplikace proC#](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
    > [!NOTE]
    > Pokud se nezobrazí **.NET Core** kategorii šablony projektu, zvolte **otevřít instalační program Visual Studio** odkaz v levém podokně. (V závislosti na nastavení zobrazení může být potřeba stránku posunout, aby ji.)
@@ -70,12 +70,12 @@ Pokud chcete začít, vytvoříte projekt webové aplikace ASP.NET Core. Typ pro
    >
    > (Může mít ukončit sadu Visual Studio, abyste mohli pokračovat v instalaci nové úlohy.)
 
-1. V **nová webová aplikace ASP.NET Core** dialogu **ASP.NET Core 2.1** z hlavní nabídky rozevíracího seznamu. Dále zvolte **webovou aplikaci**a klikněte na tlačítko **OK**.
+1. V dialogovém okně **Nová webová aplikace ASP.NET Core** v horním rozevíracím seznamu vyberte **ASP.NET Core 2,1** . V dalším kroku zvolte možnost **Webová aplikace**a pak klikněte na **tlačítko OK**.
 
-   ![Dialogové okno nové webové aplikace ASP.NET Core](../ide/media/aspnet-core-2dot1.png)
+   ![Dialogové okno Nová webová aplikace ASP.NET Core](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Pokud nevidíte **ASP.NET Core 2.1**, ujistěte se, že používáte nejnovější verzi sady Visual Studio. Další informace o tom, jak aktualizovat vaši instalaci, najdete v článku [aktualizovat na nejnovější verzi aplikace Visual Studio](../install/update-visual-studio.md) stránky.
+   > Pokud nevidíte **ASP.NET Core 2,1**, ujistěte se, že používáte nejnovější verzi sady Visual Studio. Další informace o tom, jak aktualizovat instalaci, najdete na stránce o [aktualizaci sady Visual Studio na nejnovější verzi](../install/update-visual-studio.md) .
 
 Brzy NATO Visual Studio otevře soubor projektu.
 
@@ -85,34 +85,34 @@ Brzy NATO Visual Studio otevře soubor projektu.
 
 1. Otevřít Visual Studio.
 
-1. V okně start zvolte **vytvořte nový projekt**.
+1. V okně Start vyberte možnost **vytvořit nový projekt**.
 
-   ![Zobrazit okno 'vytvořte nový projekt.](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Zobrazit okno vytvořit nový projekt](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Na **vytvořte nový projekt** okno, zadejte nebo zadejte *ASP.NET* do vyhledávacího pole. Dále zvolte **C#** od jazyka seznamu a klikněte na tlačítko **Windows** ze seznamu platformy.
+1. V okně **vytvořit nový projekt** zadejte nebo do vyhledávacího pole zadejte *ASP.NET* . Dále zvolte **C#** ze seznamu jazyk a v seznamu platforma zvolte možnost **Windows** .
 
-   Po použití filtrů jazyka a libovolné platformy, zvolte **webové aplikace ASP.NET Core** šablony a klikněte na tlačítko **Další**.
+   Po použití filtrů jazyků a platforem zvolte šablonu **ASP.NET Core webové aplikace** a klikněte na tlačítko **Další**.
 
-   ![Zvolte C# šablony pro webové aplikace ASP.NET Core](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+   ![Zvolit C# šablonu pro ASP.NET Core webovou aplikaci](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
 
    > [!NOTE]
-   > Pokud se nezobrazí **webové aplikace ASP.NET Core** šablony, můžete jej nainstalovat z **vytvořte nový projekt** okna. V **nenašli, co hledáte?** zprávu, zvolte **nainstalovat další nástroje a funkce** odkaz.
+   > Pokud nevidíte šablonu **ASP.NET Core webové aplikace** , můžete ji nainstalovat z okna **vytvořit nový projekt** . V části **nenajít, co hledáte?** klikněte na odkaz **instalovat další nástroje a funkce** .
    >
-   > ![Odkaz "Nainstalovat další nástroje a funkce" z 'Nemůžete najít, co hledáte' zprávy v okně "vytvořit nový projekt.](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![Odkaz pro instalaci dalších nástrojů a funkcí v okně vytvořit nový projekt v části nenajít, co hledáte?](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Pak ve Visual Studio Installer, zvolte **vývoj pro ASP.NET a web** pracovního vytížení.
+   > Pak v Instalační program pro Visual Studio zvolte úlohu **vývoje ASP.NET a web** .
    >
-   > ![Úlohy základní webové aplikace ASP.NET v instalačním programu sady Visual Studio](../get-started/media/aspnet-core-web-dev-workload.png)
+   > ![ASP.NET Core úlohy webové aplikace v Instalační program pro Visual Studio](../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > Po tomto, zvolte **změnit** tlačítko v instalačním programu sady Visual Studio. Můžete být vyzváni k uložte svou práci; Pokud ano, udělejte to. Dále zvolte **pokračovat** instalace zatížení. Pak se vraťte ke kroku 2 v tomto "[vytvořte projekt](#create-a-project)" postup.
+   > Potom klikněte na tlačítko **Upravit** v instalační program pro Visual Studio. Může se zobrazit výzva k uložení práce; Pokud ano, udělejte to. V dalším kroku vyberte **pokračovat** a nainstalujte úlohu. Pak se vraťte ke kroku 2 v tomto postupu "[Vytvoření projektu](#create-a-project)".
 
-1. V **konfigurovat nový projekt** okno, zadejte nebo vložte *HelloWorld* v **název projektu** pole. Potom kliknutím na možnost **vytvořit**.
+1. V okně **Konfigurovat nový projekt** zadejte nebo zadejte *HelloWorld* do pole **název projektu** . Pak zvolte **vytvořit**.
 
-   ![v okně 'Konfigurace nového projektu' název projektu "Hello World"](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
+   ![v okně Konfigurovat nový projekt pojmenujte svůj projekt HelloWorld.](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
-1. V **vytvořit novou webovou aplikaci ASP.NET Core** okna, ověřte, že **ASP.NET Core 2.1** se zobrazí v horní nabídce rozevíracího seznamu. Potom kliknutím na možnost **webovou aplikaci**, který obsahuje příklad stránky Razor. Dále zvolte **vytvořit**.
+1. V okně **vytvořit novou webovou aplikaci ASP.NET Core** ověřte, zda se v horní rozevírací nabídce zobrazí **ASP.NET Core 2,1** . Pak zvolte **Webová aplikace**, která obsahuje například Razor Pages. Pak vyberte **vytvořit**.
 
-   ![V okně "vytvořit novou webovou aplikaci ASP.NET Core.](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+   ![Okno vytvořit novou ASP.NET Core webovou aplikaci](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
 
    Visual Studio otevře nový projekt.
 
@@ -120,7 +120,7 @@ Brzy NATO Visual Studio otevře soubor projektu.
 
 ## <a name="create-and-run-the-app"></a>Vytvoření a spuštění aplikace
 
-1. V **Průzkumníka řešení**, rozbalte **stránky** složky a klikněte na tlačítko **About.cshtml**.
+1. V **Průzkumník řešení**rozbalte složku **stránky** a zvolte možnost **o. cshtml**.
 
    ![Zvolte soubor About.cshtml z Průzkumníka řešení](../ide/media/csharp-aspnet-about-page-html-file.png)
 
@@ -128,44 +128,44 @@ Brzy NATO Visual Studio otevře soubor projektu.
 
    ![Na stránce o ve webové aplikaci](../ide/media/csharp-aspnet-about-page.png)
 
-   V editoru HTML zobrazí kód pro oblasti "Další informace" **o** stránky.
+   V editoru uvidíte kód HTML v oblasti "Další informace" na stránce **About** .
 
-   ![Kód HTML pro další informace o oblasti v editoru sady Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
+   ![Kód HTML pro doplňkovou oblast informací v editoru sady Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Změní celý text "Další informace" číst "**Hello World!** ".
+1. Změnou textu "Další informace" Přečtěte "**Hello World!** ".
 
-   ![Změnit výchozí kód HTML pro další informace o oblasti v editoru sady Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
+   ![Změna výchozího kódu HTML pro další informace o oblasti v editoru sady Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
-1. V **Průzkumníka řešení**, rozbalte **About.cshtml**a klikněte na tlačítko **About.cshtml.cs**. (Tento soubor také odpovídá **o** stránku ve webovém prohlížeči.)
+1. V **Průzkumníka řešení**, rozbalte **About.cshtml**a klikněte na tlačítko **About.cshtml.cs**. (Tento soubor také odpovídá stránce **o** stránku ve webovém prohlížeči.)
 
    ![Zvolte soubor About.cshtml z Průzkumníka řešení](../ide/media/csharp-aspnet-about-page-code-file.png)
 
-   V editoru, zobrazí se vám C# kód, který obsahuje text "Popis aplikace" oblasti **o** stránky.
+   V editoru uvidíte C# kód, který obsahuje text pro oblast Popis aplikace na stránce **o produktu** .
 
-   ![Kód jazyka C# pro oblasti Popis aplikace v editoru sady Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
+   ![C# Kód oblasti Popis aplikace v editoru sady Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
 1. Změní celý text zprávy "Popis aplikace" číst "**jaká je Moje zpráva?** ".
 
-   ![Změnit výchozí text zprávy pro oblasti Popis aplikace v editoru sady Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
+   ![Změna výchozího textu zprávy pro oblast popisu aplikace v editoru sady Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
 1. Zvolte **služby IIS Express** nebo stiskněte klávesu **Ctrl**+**F5** ke spuštění aplikace a otevřete ho ve webovém prohlížeči.
 
-   ![Vyberte tlačítko služby IIS Express v sadě Visual Studio](../ide/media/csharp-aspnet-helloworld-iisbutton.png)
+   ![Výběr tlačítka IIS Express v aplikaci Visual Studio](../ide/media/csharp-aspnet-helloworld-iisbutton.png)
 
    > [!NOTE]
-   > Pokud se zobrazí chybová zpráva s upozorněním, **nelze se připojit k webovému serveru služby IIS Express**, nebo chybovou zprávu s odkazem na server certifikát SSL, zavřete sadu Visual Studio. Dále otevřete Visual Studio s použitím **spustit jako správce** možnost v místní nabídce klikněte pravým tlačítkem. Spusťte aplikaci znovu.
+   > Pokud se zobrazí chybová zpráva s upozorněním, **nelze se připojit k webovému serveru služby IIS Express**, nebo chybovou zprávu s odkazem na server certifikát SSL, zavřete sadu Visual Studio. Dále otevřete aplikaci Visual Studio pomocí možnosti **Spustit jako správce** z místní nabídky klikněte pravým tlačítkem myši. Spusťte aplikaci znovu.
 
 1. Ve webovém prohlížeči, ověřte, že **o** stránka obsahuje aktualizovaný text.
 
-   ![Zobrazit aktualizovaný o stránku, která obsahuje změny, které jste provedli](../ide/media/csharp-aspnet-about-page-hello-world.png)
+   ![Zobrazit aktualizované informace o stránce, která obsahuje změny, které jste provedli](../ide/media/csharp-aspnet-about-page-hello-world.png)
 
 1. Zavřete webový prohlížeč.
 
-### <a name="review-your-work"></a>Projděte si svou práci
+### <a name="review-your-work"></a>Kontrola práce
 
-Zobrazte následující animace zkontrolovat práci, kterou jste dokončili v předchozí části.
+Prohlédněte si následující animaci a zkontrolujte práci, kterou jste dokončili v předchozí části.
 
-  ![Zobrazit animovaný obrázek GIF soubor, který ukazuje, jak vytvářet a spouštět jednoduchý C# webové aplikace ASP.NET Core v sadě Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
+  ![Podívejte se na animovaný soubor. gif, který ukazuje, jak vytvořit a spustit C# jednoduchou webovou aplikaci ASP.NET Core v aplikaci Visual Studio.](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
 Blahopřejeme k dokončení tohoto rychlého startu! Doufáme, že jste se dozvěděli ještě něco o jazyce C#, ASP.NET Core a Visual Studio IDE (integrované vývojové prostředí).
 

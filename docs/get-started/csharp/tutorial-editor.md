@@ -1,6 +1,6 @@
 ---
 title: Úvod do úprav pro C# vývojáře
-description: Tento úvod během 10 minut do editoru kódu v sadě Visual Studio jsou uvedeny některé ze způsobů, že sada Visual Studio provádí zápis, navigace a pochopení C# kódu jednodušší.
+description: Tento 10 minutový Úvod do editoru kódu v aplikaci Visual Studio ukazuje některé způsoby, jak aplikace Visual Studio usnadňuje psaní, navigaci a porozumění C# kódu.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5abd287533f2489346b41cdbae5526ed946aa746
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 517437bb1042d052520019c10899173cbc0bf988
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971066"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180261"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 
@@ -33,14 +33,14 @@ V tomto úvodu během 10 minut do editoru kódu v sadě Visual Studio přidáme 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
+> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 
-Tento článek předpokládá, že jste již obeznámeni s C#. Pokud si nejste, doporučujeme vám podívejte se na kurz jako [vám umožní začít C# a ASP.NET Core v sadě Visual Studio](tutorial-aspnet-core.md) první.
+V tomto článku se předpokládá, že už C#jste obeznámeni s nástrojem. Pokud ne, doporučujeme se podívat na kurz, jako je například [Začínáme s C# a ASP.NET Core v aplikaci Visual Studio](tutorial-aspnet-core.md) jako první.
 
 > [!TIP]
-> Chcete-li postupovat podle tohoto článku, ujistěte se, že máte C# nastavení vybraných pro Visual Studio. Informace o výběru nastavení pro integrované vývojové prostředí (IDE) najdete v tématu [vyberte nastavení prostředí](visual-studio-ide.md#select-environment-settings).
+> Pokud chcete postupovat podle tohoto článku, ujistěte se, že C# máte nastavení vybraná pro Visual Studio. Informace o výběru nastavení pro integrované vývojové prostředí (IDE) najdete v tématu [Výběr nastavení prostředí](visual-studio-ide.md#select-environment-settings).
 
 ## <a name="create-a-new-code-file"></a>Vytvořte nový soubor kódu
 
@@ -54,11 +54,11 @@ Začněte tím, že vytváří se nový soubor a přidat nějaký kód do něj.
 
 ::: moniker range=">=vs-2019"
 
-1. Otevřít Visual Studio. Stisknutím klávesy **Esc** nebo klikněte na tlačítko **pokračovat bez kódu** v okně start otevřete vývojové prostředí.
+1. Otevřít Visual Studio. Stisknutím klávesy **ESC** nebo kliknutím na **pokračovat bez kódu** v okně Start otevřete vývojové prostředí.
 
 ::: moniker-end
 
-2. Z **souboru** nabídku v panelu nabídky zvolte **nový** > **souboru**.
+2. V nabídce **soubor** na řádku nabídek vyberte možnost **Nový** > **soubor**.
 
 3. V **nový soubor** dialogovém okně **Obecné** kategorie, zvolte **třídy Visual C#** a klikněte na tlačítko **otevřít**.
 
@@ -132,7 +132,7 @@ Sbalí blok kódu pouze na první řádek, následované třemi tečkami (`...`)
 
 ## <a name="view-symbol-definitions"></a>Definice zobrazení symbolů
 
-Editor sady Visual Studio usnadňuje Zkontrolujte definici typu, metody atd. Jedním ze způsobů, je přejít na soubor, který obsahuje definici, například výběrem **přejít k definici** nebo stisknutím klávesy **F12** kdekoli je odkazováno na symbol. Ještě rychlejší tak, aby váš výběr čárka nepohybuje mimo soubor pracujete v je použití [definice operace Peek](../../ide/go-to-and-peek-definition.md#peek-definition). Umožňuje zobrazení náhledu definice `string` typu.
+Editor sady Visual Studio usnadňuje Zkontrolujte definici typu, metody atd. Jedním ze způsobů je přejít na soubor, který obsahuje definici, například výběrem možnosti **Přejít k definici** nebo stisknutím klávesy **F12** kdekoliv, kde se odkazuje na symbol. Ještě rychlejší tak, aby váš výběr čárka nepohybuje mimo soubor pracujete v je použití [definice operace Peek](../../ide/go-to-and-peek-definition.md#peek-definition). Umožňuje zobrazení náhledu definice `string` typu.
 
 1. Klikněte pravým tlačítkem na jakýmkoli výskytem `string` a zvolte **definice operace Peek** z nabídky obsahu. Také můžete stisknout klávesu **Alt**+**F12**.
 

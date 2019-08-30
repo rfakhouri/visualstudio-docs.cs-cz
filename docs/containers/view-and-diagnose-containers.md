@@ -1,93 +1,93 @@
 ---
-title: Protokoly kontejneru, proměnné prostředí a přístup k systému souborů
-description: Popisuje, jak Zlepšete svou schopnost ladění a Diagnostika aplikací založených na kontejnerech v sadě Visual Studio pomocí panelu nástrojů Pokud chcete zobrazit, co se děje uvnitř kontejnerů, které hostují vaši aplikaci.
+title: Protokoly kontejnerů, proměnné prostředí, přístup k systému souborů &
+description: Popisuje, jak vylepšit schopnost ladit a diagnostikovat aplikace založené na kontejnerech v aplikaci Visual Studio pomocí okna nástroje, které vám umožní zjistit, co se v kontejnerech hostujících vaší aplikaci nachází.
 author: ghogen
 ms.author: ghogen
 ms.topic: conceptual
 ms.date: 05/06/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: b8e8e2db3f8f6e5aa60f3fa593caf017c349dca8
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 3fb9a52f990a2e492c63a6e71a7cc2063110c816
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261197"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179834"
 ---
-# <a name="how-to-view-and-diagnose-containers-in-visual-studio"></a>Postup zobrazení a Diagnostika kontejnerů v sadě Visual Studio
+# <a name="how-to-view-and-diagnose-containers-in-visual-studio"></a>Postup zobrazení a diagnostiky kontejnerů v aplikaci Visual Studio
 
-Můžete zobrazit, co se děje v kontejnerech, které hostují vaši aplikaci s použitím **kontejnery** okna. Pokud jste zvyklí pomocí příkazového řádku spouštět příkazy Dockeru k zobrazení a diagnostikovat, co se děje s kontejnery, toto okno poskytuje pohodlnější způsob pro monitorování kontejnerů, aniž byste museli opustit integrované vývojové prostředí sady Visual Studio.
+Můžete zobrazit, co se chystá v kontejnerech, které hostují vaši aplikaci pomocí okna **kontejnery** . Pokud jste použili k používání příkazového řádku ke spuštění příkazů Docker k zobrazení a diagnostice toho, co se v kontejnerech chystá, toto okno poskytuje pohodlnější způsob, jak monitorovat kontejnery bez nutnosti opustit prostředí Visual Studio IDE.
 
 > [!NOTE]
-> Okno kontejneru je aktuálně k dispozici jako rozšíření ve verzi Preview, které je možné [Stáhnout](https://aka.ms/vscontainerspreview) pro Visual Studio 2019.
+> Okno kontejnery je aktuálně dostupné jako rozšíření verze Preview, které si můžete [Stáhnout](https://aka.ms/vscontainerspreview) pro Visual Studio 2019.
 
 ## <a name="prerequisites"></a>Požadavky
 
-- [Desktop dockeru](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- Install [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
-- Nainstalujte [kontejnery okno rozšíření](https://aka.ms/vscontainerspreview)
+- [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+- Instalace sady [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+- Instalace [rozšíření okna kontejnerů](https://aka.ms/vscontainerspreview)
 
-## <a name="view-information-about-your-containers"></a>Zobrazení informací o kontejnerech
+## <a name="view-information-about-your-containers"></a>Zobrazit informace o kontejnerech
 
-**Kontejnery** okno se automaticky otevře při spuštění kontejnerizované projektu .NET. Kdykoli zobrazit své kontejnery v sadě Visual Studio, použijte **Ctrl**+**Q** aktivovat hledání Visual Studio a zadejte `Containers` a zvolit první položku. Můžete také otevřít **kontejnery** okno v hlavní nabídce. Použijte cestu k nabídce **zobrazení** > **ostatní Windows** > **kontejnery**.  
+Okno **kontejnery** se automaticky otevře při spuštění kontejnerového projektu .NET. Chcete-li zobrazit kontejnery v aplikaci Visual Studio kdykoli, použijte **kombinaci kláves CTRL**+**Q** k aktivaci vyhledávacího pole aplikace Visual Studio `Containers` a zadejte a vyberte první položku. Můžete také otevřít okno **kontejnery** z hlavní nabídky. Použijte cestu nabídky k **zobrazení** > **jiných** > **kontejnerů**Windows.  
 
-![Snímek obrazovky prostředí karta v okně kontejnery](media/view-and-diagnose-containers/container-window.png)
+![Snímek obrazovky s kartou prostředí v okně kontejnery](media/view-and-diagnose-containers/container-window.png)
 
-Na levé straně se zobrazí seznam kontejnerů na místním počítači. Kontejnery přidružené k řešení se zobrazí pod **řešení kontejnerů**. Na pravé straně se zobrazí podokno s kartami pro **prostředí**, **porty**, **protokoly**, a **soubory**.
+Na levé straně se zobrazí seznam kontejnerů na místním počítači. Kontejnery spojené s vaším řešením jsou uvedené v části **kontejnery řešení**. Napravo se zobrazí podokno s kartami pro **prostředí**, **porty**, **protokoly**a **soubory**.
 
 > [!TIP]
-> Kde můžete snadno přizpůsobit **kontejnery** okna nástroje je ukotven v sadě Visual Studio. Zobrazit [přizpůsobení rozložení oken v sadě Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio). Ve výchozím nastavení **kontejnery** je okno ukotveno s **Watch** okno při spuštění ladicího programu.
+> V aplikaci Visual Studio můžete snadno přizpůsobit, kde je ukotveno okno nástrojů **kontejnery** . Viz [přizpůsobení rozložení oken v aplikaci Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio). Ve výchozím nastavení je okno **kontejnery** ukotveno v okně **kukátka** při spuštění ladicího programu.
 
 ## <a name="view-environment-variables"></a>Zobrazit proměnné prostředí
 
-**Prostředí** karta zobrazuje proměnné prostředí v kontejneru. Pro vaše aplikace kontejneru, můžete tyto proměnné můžete nastavit mnoha způsoby, například v souboru Dockerfile, v souboru .env nebo pomocí možnosti -e při spuštění kontejneru pomocí příkazu Docker.
+Karta **prostředí** zobrazuje proměnné prostředí v kontejneru. Pro kontejner vaší aplikace můžete tyto proměnné nastavit mnoha způsoby, například v souboru Dockerfile, v souboru. env nebo pomocí možnosti-e při spuštění kontejneru pomocí příkazu Docker.
 
-![Snímek obrazovky prostředí karta v okně kontejnery](media/view-and-diagnose-containers/container-environment-vars.png)
+![Snímek obrazovky s kartou prostředí v okně kontejnery](media/view-and-diagnose-containers/container-environment-vars.png)
 
 > [!NOTE]
-> Všechny změny do proměnných prostředí, se neprojeví v reálném čase. Také proměnné prostředí na této kartě jsou proměnné prostředí v kontejneru systému a neodrážejí vůči aplikaci lokální proměnné prostředí uživatele.
+> Jakékoli změny proměnných prostředí se neprojeví v reálném čase. Proměnné prostředí na této kartě jsou také proměnné prostředí systému v kontejneru a neodrážejí proměnné uživatelského prostředí, které jsou místní pro aplikaci.
 
-## <a name="view-port-mappings"></a>Zobrazení mapování portů
+## <a name="view-port-mappings"></a>Zobrazit mapování portů
 
-Na **porty** kartu, můžete zkontrolovat, které jsou v platnosti kontejneru mapování portů.
+Na kartě **porty** můžete kontrolovat mapování portů, které jsou platné pro váš kontejner.
 
-![Snímek obrazovky s porty karta v okně kontejnery](media/view-and-diagnose-containers/container-ports.png)
+![Snímek obrazovky s kartou porty v okně kontejnery](media/view-and-diagnose-containers/container-ports.png)
 
-Známé porty jsou propojené, takže pokud není obsah dostupný na portu, můžete kliknout na odkaz k otevření prohlížeče.
+Dobře známé porty jsou propojené, takže pokud je na portu dostupný obsah, můžete kliknutím na odkaz otevřít prohlížeč.
 
 ## <a name="view-logs"></a>Zobrazení protokolů
 
-**Protokoly** karta zobrazuje výsledky `docker logs` příkazu. Ve výchozím nastavení karta zobrazuje stdout a stderr datových proudů v kontejneru, ale můžete nakonfigurovat výstup. Podrobnosti najdete v tématu [protokolování Dockeru](https://docs.docker.com/config/containers/logging/).  Ve výchozím nastavení **protokoly** kartu datové proudy protokoly, ale který můžete zakázat výběrem **Zastavit** tlačítko na kartě.
+Na kartě **protokoly** se zobrazují výsledky `docker logs` příkazu. Ve výchozím nastavení karta zobrazuje streamy stdout a stderr na kontejneru, ale můžete nakonfigurovat výstup. Podrobnosti najdete v tématu [protokolování Docker](https://docs.docker.com/config/containers/logging/).  Ve výchozím nastavení zaproudí protokoly na kartě **protokoly** , ale můžete ji zakázat kliknutím na tlačítko **zastavit** na kartě.
 
-![Snímek obrazovky s protokoly karta v okně kontejnery](media/view-and-diagnose-containers/containers-logs.jpg)
+![Snímek obrazovky s kartou Logs v okně kontejnery](media/view-and-diagnose-containers/containers-logs.jpg)
 
-Pokud chcete vymazat protokoly, použijte **vymazat** tlačítko **protokoly** kartu.  Chcete-li získat všechny protokoly, použijte **aktualizovat** tlačítko.
+Chcete-li vymazat protokoly, použijte tlačítko **Vymazat** na kartě **protokoly** .  Chcete-li získat všechny protokoly, použijte tlačítko **aktualizovat** .
 
 > [!NOTE]
-> Visual Studio automaticky přesměruje stdout a stderr do **výstup** okna, kontejnery spuštění ze sady Visual Studio (to znamená, že kontejnery v **řešení kontejnerů** části) nezobrazí protokoly na této kartě; použít **výstup** okno místo.
+> Visual Studio automaticky přesměruje stdout a stderr do okna **výstupu** , takže kontejnery spouštěné ze sady Visual Studio (to znamená, že kontejnery v části **kontejnery řešení** ) nezobrazí protokoly na této kartě. místo toho použijte okno **výstup** .
 
-## <a name="view-the-filesystem"></a>Zobrazení systému souborů
+## <a name="view-the-filesystem"></a>Zobrazit systém souborů
 
-Na **soubory** kartu, můžete zobrazit systému souborů kontejneru, včetně aplikace, která obsahuje projekt.
+Na kartě **soubory** můžete zobrazit systém souborů kontejneru, včetně složky aplikace, která obsahuje váš projekt.
 
-![Karta souborů snímků obrazovky v okně kontejnery](media/view-and-diagnose-containers/container-filesystem.png)
+![Snímek obrazovky s kartou soubory v okně kontejnery](media/view-and-diagnose-containers/container-filesystem.png)
 
-Pro otevření souborů v sadě Visual Studio, přejděte k souboru a dvojím kliknutím ho, nebo klikněte pravým tlačítkem myši a zvolte **otevřete**. Visual Studio otevře soubory v režimu jen pro čtení.
+Chcete-li otevřít soubory v aplikaci Visual Studio, vyhledejte soubor a dvakrát na něj klikněte nebo klikněte pravým tlačítkem a vyberte možnost **otevřít**. Visual Studio otevře soubory v režimu jen pro čtení.
 
-![Snímek obrazovky se soubor otevřen pro zobrazení v sadě Visual Studio](media/view-and-diagnose-containers/container-file-open.png)
+![Snímek obrazovky otevřeného souboru pro zobrazení v aplikaci Visual Studio](media/view-and-diagnose-containers/container-file-open.png)
 
-Použití **soubory** kartu, můžete zobrazit protokoly aplikací, jako jsou protokoly služby IIS, konfigurační soubory a další soubory obsahu v systému souborů vašeho kontejneru.
+Pomocí karty **soubory** můžete zobrazit protokoly aplikací, jako jsou protokoly IIS, konfigurační soubory a další soubory obsahu v systému souborů kontejneru.
 
-## <a name="start-stop-and-remove-containers"></a>Spuštění, zastavení a odstranění kontejnerů
+## <a name="start-stop-and-remove-containers"></a>Spustit, zastavit a odebrat kontejnery
 
-Ve výchozím nastavení **kontejnery** okno zobrazuje všechny kontejnery, které v počítači, který spravuje Dockeru. Můžete použít tlačítka Spustit, zastavit nebo odstranit (delete) kontejner už nechcete.  Tento seznam se aktualizuje dynamicky, jako jsou kontejnery vytvořené nebo odebrat.
+Ve výchozím nastavení okno **kontejnery** zobrazuje všechny kontejnery v počítači, který je nástrojem Docker. Pomocí tlačítek na panelu nástrojů můžete spustit, zastavit nebo odebrat (odstranit) kontejner, který již nechcete.  Tento seznam se dynamicky aktualizuje při vytváření nebo odebírání kontejnerů.
 
 ## <a name="next-steps"></a>Další kroky
 
-Další informace o kontejneru nástrojů dostupných v sadě Visual Studio najdete [přehled nástrojů pro kontejner](overview.md).
+Další informace o nástrojích kontejnerů, které jsou dostupné v aplikaci Visual Studio, najdete v tématu [Přehled nástrojů kontejnerů](overview.md).
 
 ## <a name="see-also"></a>Viz také:
 
-[Kontejner vývoje v sadě Visual Studio](/visualstudio/containers)
+[Vývoj kontejnerů v aplikaci Visual Studio](/visualstudio/containers)
 
-[Extensions Marketplace for Visual Studio](https://marketplace.visualstudio.com/)
+[Tržiště rozšíření pro Visual Studio](https://marketplace.visualstudio.com/)

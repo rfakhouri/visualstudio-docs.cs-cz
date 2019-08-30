@@ -1,6 +1,6 @@
 ---
 title: 'Kurz: Otevření projektu z úložiště'
-description: Zjistěte, jak pomocí sady Visual Studio otevřete projekt v úložišti Git nebo Azure DevOps.
+description: Naučte se, jak otevřít projekt v úložišti Git nebo Azure DevOps pomocí sady Visual Studio.
 ms.custom: get-started
 ms.date: 03/30/2019
 ms.technology: vs-ide-general
@@ -14,16 +14,16 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b1796ca10226e4aa5d0242bea89cc01f8452cf9e
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402075"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180436"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Kurz: Otevření projektu z úložiště
 
-V tomto kurzu budete používat Visual Studio pro připojení k úložišti poprvé a pak otevřete projekt z něj.
+V tomto kurzu použijete Visual Studio k prvnímu připojení k úložišti a pak z něho otevřete projekt.
 
 ::: moniker range="vs-2017"
 
@@ -33,157 +33,157 @@ Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory k
 
 ::: moniker range="vs-2019"
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 
-## <a name="open-a-project-from-a-github-repo"></a>Otevřete projekt z úložiště GitHub
+## <a name="open-a-project-from-a-github-repo"></a>Otevření projektu z úložiště GitHub
 
 ::: moniker range="vs-2017"
 
 1. Otevřete Visual Studio 2017.
 
-1. V horní nabídce zvolte **souboru** > **otevřít** > **otevřít ze správy zdrojových kódů**.
+1. V horním řádku nabídek vyberte **otevřít** > **soubor** > **Otevřít ze správy zdrojového kódu**.
 
-   **Team Explorer – připojit** se otevře podokno.
+   Otevře se podokno **Team Explorer – připojit** .
 
-    ![V okně Průzkumník týmových projektů v integrovaném vývojovém prostředí sady Visual Studio](./media/open-proj-repo-team-explorer.png)
+    ![Team Explorer okno v integrovaném vývojovém prostředí sady Visual Studio](./media/open-proj-repo-team-explorer.png)
 
-1. V **místní úložiště Git** zvolte **klonování**.
+1. V části **místní úložiště Git** vyberte **klonovat**.
 
-    ![Zvolením možnosti klonovat z části místní úložiště Git](./media/open-proj-repo-local-git-repo-clone.png)
+    ![V části místní úložiště Git vyberte klonovat.](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. Do pole, které se říká ***zadejte adresu URL úložiště Git pro klonování***, zadejte nebo vložte adresu URL pro úložiště a potom stiskněte klávesu **Enter**. (Může se zobrazit výzva k přihlášení na Githubu a pokud ano, Uděláte to tak.)
+1. Do pole ***Zadejte adresu URL úložiště Git, které se má klonovat***, zadejte nebo vložte adresu URL pro vaše úložiště a potom stiskněte klávesu **ENTER**. (Můžete obdržet výzvu k přihlášení do GitHubu. Pokud ano, udělejte to.)
 
-   Po sady Visual Studio duplicity úložišti, Průzkumník týmových projektů zavře a otevře se Průzkumník řešení. Zobrazí se zpráva s upozorněním *klikněte na řešení a složky výše, chcete-li zobrazit seznam řešení*. Zvolte **řešení a složky**.
+   Jakmile aplikace Visual Studio naklonuje vaše úložiště, Team Explorer se zavře a Průzkumník řešení otevře. Zobrazí se zpráva s informacemi *o tom, jak kliknout na řešení a složky výše, a zobrazit seznam řešení*. Vyberte **řešení a složky**.
 
-   ![Z Průzkumníku řešení zvolte "Řešení a složky"](./media/open-proj-repo-github-solutions-folders.png)
+   ![Vyberte řešení a složky z Průzkumník řešení](./media/open-proj-repo-github-solutions-folders.png)
 
-1. Pokud máte k dispozici soubor řešení, se zobrazí v rozevírací nabídce "Řešení a složky". Zvolte jej a Visual Studio otevře vaše řešení.
+1. Pokud máte soubor řešení k dispozici, zobrazí se v rozevírací nabídce "řešení a složky". Vyberte ho a Visual Studio otevře vaše řešení.
 
-   ![Zvolte, co chcete otevřít z rozevíracího seznamu Průzkumníka řešení](./media/open-proj-repo-github-solutions-folders-picker.png)
+   ![Z rozevíracího seznamu Průzkumník řešení vyberte, co chcete otevřít.](./media/open-proj-repo-github-solutions-folders-picker.png)
 
-   Pokud nemáte soubor řešení (konkrétně soubor .sln) ve vašem úložišti, rozevírací nabídce se Řekněme, že "Nalezeno žádné řešení." Můžete však poklepejte na libovolný soubor v nabídce složku ji otevřete v editoru kódu sady Visual Studio.
+   Pokud v úložišti nemáte soubor řešení (konkrétně soubor. sln), nabídka rozchodu znamená "žádná řešení nebyla nalezena." Můžete však dvakrát kliknout na libovolný soubor v nabídce složka a otevřít ho v editoru kódu sady Visual Studio.
 
-### <a name="review-your-work"></a>Projděte si svou práci
+### <a name="review-your-work"></a>Kontrola práce
 
-Zobrazte následující animace zkontrolovat práci, kterou jste dokončili v předchozí části.
+Prohlédněte si následující animaci a zkontrolujte práci, kterou jste dokončili v předchozí části.
 
-   ![Animace dvojice v otevření projektu v úložišti GitHub s použitím sady Visual Studio](./media/open-project-from-github.gif)
+   ![Animace otevření projektu v úložišti GitHub pomocí sady Visual Studio](./media/open-project-from-github.gif)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Open Visual Studio 2019.
+1. Otevřete Visual Studio 2019.
 
-1. V okně start zvolte **klonování nebo prohlédněte si kód**.
+1. V okně Start vyberte **klonovat nebo rezervovat kód**.
 
-   ![Zobrazit okno 'vytvořte nový projekt.](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+   ![Zobrazit okno vytvořit nový projekt](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
-1. Zadejte nebo zadejte umístění úložiště a pak zvolte **klonování**.
+1. Zadejte nebo zadejte umístění úložiště a pak zvolte **klonovat**.
 
-   ![Zobrazení okna kódu klonování nebo rezervace](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+   ![Zobrazení okna klonovat nebo rezervovat kód](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
-   Visual Studio otevřete projekt z úložiště.
+   Visual Studio otevře projekt z úložiště.
 
-1. Pokud máte k dispozici soubor řešení, se zobrazí v rozevírací nabídce "Řešení a složky". Zvolte jej a Visual Studio otevře vaše řešení.
+1. Pokud máte soubor řešení k dispozici, zobrazí se v rozevírací nabídce "řešení a složky". Vyberte ho a Visual Studio otevře vaše řešení.
 
-   ![Zvolte, co chcete otevřít z rozevíracího seznamu Průzkumníka řešení](./media/open-proj-repo-github-solutions-folders-picker.png)
+   ![Z rozevíracího seznamu Průzkumník řešení vyberte, co chcete otevřít.](./media/open-proj-repo-github-solutions-folders-picker.png)
 
-   Pokud nemáte soubor řešení (konkrétně soubor .sln) ve vašem úložišti, rozevírací nabídce se Řekněme, že "Nalezeno žádné řešení." Můžete však poklepejte na libovolný soubor v nabídce složku ji otevřete v editoru kódu sady Visual Studio.
+   Pokud v úložišti nemáte soubor řešení (konkrétně soubor. sln), nabídka rozchodu znamená "žádná řešení nebyla nalezena." Můžete však dvakrát kliknout na libovolný soubor v nabídce složka a otevřít ho v editoru kódu sady Visual Studio.
 
 ::: moniker-end
 
-## <a name="open-a-project-from-an-azure-devops-repo"></a>Otevření projektu ze úložiště Azure DevOps
+## <a name="open-a-project-from-an-azure-devops-repo"></a>Otevření projektu z úložiště Azure DevOps
 
 ::: moniker range="vs-2017"
 
 1. Otevřete Visual Studio 2017.
 
-1. V horní nabídce zvolte **souboru** > **otevřít** > **otevřít ze správy zdrojových kódů**.
+1. V horním řádku nabídek vyberte **otevřít** > **soubor** > **Otevřít ze správy zdrojového kódu**.
 
-   **Team Explorer – připojit** se otevře podokno.
+   Otevře se podokno **Team Explorer – připojit** .
 
-    ![V okně Průzkumník týmových projektů v integrovaném vývojovém prostředí sady Visual Studio](./media/open-proj-repo-team-explorer.png)
+    ![Team Explorer okno v integrovaném vývojovém prostředí sady Visual Studio](./media/open-proj-repo-team-explorer.png)
 
 1. Tady jsou dva způsoby, jak se připojit k úložišti Azure DevOps:
 
-      - V **poskytovatelé hostovaných služeb** zvolte **připojit...** .
+      - V části **poskytovatelé hostovaných služeb** vyberte **připojit...** .
 
-        ![Poskytovatelé hostovaných služeb části okna Průzkumníka týmových projektů v integrovaném vývojovém prostředí sady Visual Studio](./media/open-proj-repo-azure-devops.png)
+        ![Část poskytovatele hostovaných služeb v okně Team Explorer v rámci integrovaného vývojového prostředí (IDE) sady Visual Studio](./media/open-proj-repo-azure-devops.png)
 
-      - V **spravovat připojení** rozevíracím seznamu klikněte na položku **připojit do projektu...** .
+      - V rozevíracím seznamu **Spravovat připojení** vyberte **připojit k projektu...** .
 
-        ![Spravovat připojení části okna Průzkumníka týmových projektů v integrovaném vývojovém prostředí sady Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
+        ![Oddíl spravovat připojení v okně Team Explorer v rámci integrovaného vývojového prostředí (IDE) sady Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
 
-1. V **připojit k projektu** dialogové okno Vyberte úložiště, který chcete připojit a klikněte na tlačítko **klonování**.
+1. V dialogovém okně **připojit k projektu** zvolte úložiště, ke kterému se chcete připojit, a pak zvolte **klonovat**.
 
-      !["Připojení k dialogovém okně projekt", který je generován ze sady Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
+      ![Dialogové okno připojit k projektu, které je vygenerováno ze sady Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
     > [!NOTE]
-    > Co se zobrazí v seznamu, závisí na úložiště Azure DevOps, které máte přístup k.
+    > Co vidíte v seznamu, závisí na úložištích Azure DevOps, ke kterým máte přístup.
 
-1. Po sady Visual Studio duplicity úložišti, Průzkumník týmových projektů zavře a otevře se Průzkumník řešení. Zobrazí se zpráva s upozorněním *klikněte na řešení a složky výše, chcete-li zobrazit seznam řešení*. Zvolte **řešení a složky**.
+1. Jakmile aplikace Visual Studio naklonuje vaše úložiště, Team Explorer se zavře a Průzkumník řešení otevře. Zobrazí se zpráva s informacemi *o tom, jak kliknout na řešení a složky výše, a zobrazit seznam řešení*. Vyberte **řešení a složky**.
 
-      !["Řešení a složky" oznámení z Průzkumníka týmových projektů v sadě Visual Studio](./media/open-proj-repo-solutions-folders.png)
+      ![Oznámení "řešení a složky" z Team Explorer v aplikaci Visual Studio](./media/open-proj-repo-solutions-folders.png)
 
-   Soubor řešení (konkrétně soubor .sln), se zobrazí v rozevírací nabídce "Řešení a složky". Zvolte jej a Visual Studio otevře vaše řešení.
+   Soubor řešení (konkrétně soubor. sln) se zobrazí v rozevírací nabídce "řešení a složky". Vyberte ho a Visual Studio otevře vaše řešení.
 
-   Pokud nemáte soubor řešení ve vašem úložišti, se dozvíte rozevírací nabídce "Řešení nebyl nalezen žádný". Můžete však poklepejte na libovolný soubor v nabídce složku ji otevřete v editoru kódu sady Visual Studio.
+   Pokud ve svém úložišti nemáte soubor řešení, pozastaví se nabídka bez nalezených řešení. Můžete však dvakrát kliknout na libovolný soubor v nabídce složka a otevřít ho v editoru kódu sady Visual Studio.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Open Visual Studio 2019.
+1. Otevřete Visual Studio 2019.
 
-1. V okně start zvolte **klonování nebo prohlédněte si kód**.
+1. V okně Start vyberte **klonovat nebo rezervovat kód**.
 
-   ![Zobrazit okno 'vytvořte nový projekt.](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+   ![Zobrazit okno vytvořit nový projekt](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
-1. V **procházet úložiště** zvolte **Azure DevOps**.
+1. V části **Procházet úložiště** vyberte **Azure DevOps**.
 
-   ![Zobrazit okno 'klonování nebo prohlédněte si kód.](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+   ![Zobrazit okno klonovat nebo rezervovat kód](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
-   Pokud se zobrazí okno přihlášení, přihlaste se ke svému účtu.
+   Pokud se zobrazí okno pro přihlášení, přihlaste se ke svému účtu.
 
-1. V **připojit k projektu** dialogové okno Vyberte úložiště, který chcete připojit a klikněte na tlačítko **klonování**.
+1. V dialogovém okně **připojit k projektu** zvolte úložiště, ke kterému se chcete připojit, a pak zvolte **klonovat**.
 
-      !["Připojení k dialogovém okně projekt", který je generován ze sady Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
+      ![Dialogové okno připojit k projektu, které je vygenerováno ze sady Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
     > [!NOTE]
-    > Co se zobrazí v seznamu, závisí na úložiště Azure DevOps, které máte přístup k.
+    > Co vidíte v seznamu, závisí na úložištích Azure DevOps, ke kterým máte přístup.
 
-   Visual Studio otevře **Team Exploreru** a po dokončení klonování se zobrazí oznámení.
+   Otevře se aplikace Visual Studio **Team Explorer** a po dokončení klonu se zobrazí oznámení.
 
-     ![Okno Průzkumníku týmových projektů v sadě Visual Studio po dokončení klonování](./media/vs-2019/clone-complete-azure-devops.png)
+     ![Team Explorer okno v aplikaci Visual Studio po dokončení klonování](./media/vs-2019/clone-complete-azure-devops.png)
 
-1. Chcete-li zobrazit složek a souborů, zvolte **zobrazit zobrazení složky** odkaz.
+1. Chcete-li zobrazit složky a soubory, klikněte na odkaz **Zobrazit zobrazení složky** .
 
-     ![Část řešení pro okno Průzkumníku týmových projektů v sadě Visual Studio po dokončení klonování](./media/vs-2019/show-folder-view-azure-devops.png)
+     ![Oddíl Solutions okna Team Explorer v aplikaci Visual Studio po dokončení klonu](./media/vs-2019/show-folder-view-azure-devops.png)
 
-     Visual Studio otevře **Průzkumníka řešení**.
+     Visual Studio otevře **Průzkumník řešení**.
 
-1. Zvolte **řešení a složky** odkazu pro vyhledávání a otevřete soubor řešení (konkrétně soubor .sln).
+1. Vyberte odkaz **řešení a složky** a vyhledejte soubor řešení (konkrétně soubor. sln), který chcete otevřít.
 
-      !["Řešení a složky" oznámení z Průzkumníka týmových projektů v sadě Visual Studio](./media/open-proj-repo-solutions-folders.png)
+      ![Oznámení "řešení a složky" z Team Explorer v aplikaci Visual Studio](./media/open-proj-repo-solutions-folders.png)
 
-   Pokud nemáte soubor řešení ve vašem úložišti, zobrazí se zpráva "Řešení nebyl nalezen žádný". Můžete však poklepejte na libovolný soubor v nabídce složku ji otevřete v editoru kódu sady Visual Studio.
+   Pokud v úložišti nemáte soubor řešení, zobrazí se zpráva "bez nalezených řešení". Můžete však dvakrát kliknout na libovolný soubor v nabídce složka a otevřít ho v editoru kódu sady Visual Studio.
 
 ::: moniker-end
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
-Pokud jste připraveni kódu pomocí sady Visual Studio, Ponořte se do libovolného z následujících kurzů specifické pro jazyk:
+Pokud jste připravení na kód v rámci sady Visual Studio, podrobně do některého z následujících kurzů pro konkrétní jazyk:
 
-- [Visual Studio tutorials | **C#** ](./csharp/index.yml)
-- [Visual Studio tutorials | **Visual Basic**](./visual-basic/index.yml)
-- [Visual Studio kurzy | **C++** ](/cpp/get-started/tutorial-console-cpp)
-- [Visual Studio tutorials | **Python**](/visualstudio/python/)
-- [Visual Studio kurzy | **JavaScript**, **TypeScript**, a **Node.js**](/visualstudio/javascript/)
+- [Kurzy pro Visual Studio |**C#**
+- [Kurzy pro Visual Studio | **Visual Basic**](./visual-basic/index.yml)
+- [Kurzy pro Visual Studio |**C++**
+- [Kurzy pro Visual Studio | **Python**](/visualstudio/python/)
+- [Kurzy pro Visual Studio | **JavaScript**, **TypeScript**a **Node. js**](/visualstudio/javascript/)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Azure DevOps služby: Začínáme s úložišti Azure a Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Azure DevOps Services: Začínáme s Azure Repos a sadou Visual Studio](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn: Začínáme s Azure DevOps](/learn/modules/get-started-with-devops/)

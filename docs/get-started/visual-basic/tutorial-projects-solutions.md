@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 97b1fc79c7b558fc4445b3d2621746e752a4ef71
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 37faf8dc0598a4e59c74e36da22df16119d5a001
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416487"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180169"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Další informace o projektech a řešeních pomocí Visual Basic
 
@@ -32,7 +32,7 @@ V tomto článku úvodní podíváme, co to znamená, že k vytvoření *řešen
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
+> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 
@@ -244,7 +244,7 @@ Pokud chcete zkontrolovat, že je funkční testování částí, zvolte **testo
 > [!TIP]
 > Pokud **Průzkumník testů** nebude automaticky otevřené, otevřete ho kliknutím **testovací** > **Windows** > **Průzkumník testů** z řádku nabídek.
 
-## <a name="next-steps"></a>Další postup
+## <a name="next-steps"></a>Další kroky
 
 Pokud chcete dále prozkoumat sadu Visual Studio, zvažte vytvoření aplikace pomocí jednoho z [kurzů Visual Basic](index.yml).
 

@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8641a677ae36ad5a3c1f0f4344fc5c12b8798d7d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 061204de382e95349e141e3321aa033fcf9ccdbc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445139"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180071"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapování metod v zásobníku volání při ladění v sadě Visual Studio
 
@@ -51,7 +51,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
 ::: moniker range="vs-2019"
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -77,9 +77,9 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
 ## <a name="MapStack"></a> Mapování zásobníku volání
 
-1. Spusťte ladění. (Klávesnice: **F5**)
+1. Spusťte ladění. Kombinace **F5**)
 
-2. Až se vaše aplikace přejde do režimu přerušení nebo přejdete na funkci, zvolte **mapy kódu**. (Klávesnice: **Ctrl** + **Shift** + **`**)
+2. Až se vaše aplikace přejde do režimu přerušení nebo přejdete na funkci, zvolte **mapy kódu**. Kombinace **Ctrl** + **Shift** +  **`** )
 
      ![Vyberte mapu kódu pro spuštění mapování zásobníku volání](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -105,7 +105,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
  Nyní máte k dispozici mapu – co dále? Pokud pracujete s C# nebo Visual Basic, přidejte položky, jako je například pole, vlastnosti a jiné metody, můžete sledovat, co se děje v kódu.
 
- Poklepejte na metodu a zobrazte její definici kódu tak, nebo použijte místní nabídku pro metodu. (Klávesnice: Vyberte metodu na mapě a stiskněte klávesu **F12**)
+ Poklepejte na metodu a zobrazte její definici kódu tak, nebo použijte místní nabídku pro metodu. Kombinace Vyberte metodu na mapě a stiskněte klávesu **F12**.
 
  ![Přejít k definici kódu pro metodu na mapě kódu](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -178,7 +178,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
 - **Jak mohu zabránit mapě v automaticky přidání nových zásobníků volání?**
 
-   Zvolte ![tlačítko &#45; zásobníku volání zobrazit na mapě kódu automaticky](../debugger/media/debuggermap_automaticupdateicon.gif) na panelu nástrojů Mapa. Chcete-li ručně přidat aktuální zásobník volání k mapě, stiskněte **Ctrl** + **Shift** + **`**.
+   Zvolte ![tlačítko &#45; zásobníku volání zobrazit na mapě kódu automaticky](../debugger/media/debuggermap_automaticupdateicon.gif) na panelu nástrojů Mapa. Chcete-li ručně přidat aktuální zásobník volání k mapě, stiskněte **Ctrl** + **Shift** +  **`** .
 
    Mapa bude pokračovat ve zvýraznění existujících zásobníků volání na mapě během ladění.
 

@@ -1,6 +1,6 @@
 ---
-title: 'Rychlý start: Vytvořte svoji první aplikaci Node.js pomocí sady Visual Studio'
-description: V tomto rychlém startu vytvoříte aplikaci Node.js v sadě Visual Studio
+title: 'Rychlý start: Vytvoření první aplikace v Node. js pomocí sady Visual Studio'
+description: V tomto rychlém startu vytvoříte aplikaci Node. js v aplikaci Visual Studio.
 ms.date: 06/27/2018
 ms.technology: vs-javascript
 ms.topic: quickstart
@@ -13,29 +13,29 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 000d5f3cccdfda10ef90f5c752ec49ba29681435
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4995c6b95ba12eb776130b17dab1911c47988871
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953452"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180339"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Rychlý start: Vytvořte svoji první aplikaci Node.js pomocí sady Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Rychlý start: Vytvoření první aplikace v Node. js pomocí sady Visual Studio
 
-V tomto úvodu 5 až 10 minut do integrovaného vývojového prostředí (IDE) sady Visual Studio vytvoříte jednoduchou webovou aplikaci Node.js.
+V této 5-10 minut Úvod do integrovaného vývojového prostředí (IDE) sady Visual Studio vytvoříte jednoduchou webovou aplikaci Node. js.
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Musíte mít nainstalovanou sadu Visual Studio a úlohy pro vývoj Node.js.
+* Musíte mít nainstalovanou aplikaci Visual Studio a úlohu vývoje Node. js.
 
     ::: moniker range=">=vs-2019"
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio 2019, pokračujte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
+    Pokud jste ještě nenainstalovali Visual Studio 2019, můžete si ho nainstalovat zdarma na stránku se [soubory ke stažení](https://visualstudio.microsoft.com/downloads) pro Visual Studio.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) stránku a nainstalovat zdarma.
+    Pokud jste ještě nenainstalovali Visual Studio 2017, můžete si ho nainstalovat zdarma na stránku se [soubory ke stažení](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) pro Visual Studio.
     ::: moniker-end
 
-    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
+    Pokud potřebujete nainstalovat úlohu, ale už máte Visual Studio, můžete přejít do části **nástroje** > **získat nástroje a funkce...** , které otevře instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
 
     ![Úloha Node.js v instalačním programu VS](../ide/media/quickstart-nodejs-workload.png)
 
@@ -45,7 +45,7 @@ V tomto úvodu 5 až 10 minut do integrovaného vývojového prostředí (IDE) s
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
-Nejprve vytvoříte projekt webové aplikace Node.js.
+Nejprve vytvoříte projekt webové aplikace Node. js.
 
 1. Pokud nemáte modul runtime Node.js, který je už nainstalovaný, nainstalujte verzi LTS z [Node.js](https://nodejs.org/en/download/) webu.
 
@@ -56,14 +56,14 @@ Nejprve vytvoříte projekt webové aplikace Node.js.
 1. Vytvořte nový projekt.
 
     ::: moniker range=">=vs-2019"
-    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **Node.js**, klikněte na tlačítko **vytvořit nový projekt aplikace prázdná webová Node.js** (JavaScript). V dialogovém okně, které se zobrazí, zvolte **vytvořit**.
+    Stisknutím klávesy **ESC** zavřete okno Start. Zadáním **CTRL + Q** otevřete vyhledávací pole, zadejte **Node. js**a pak zvolte **vytvořit nový prázdný projekt webové aplikace Node. js** (JavaScript). V dialogovém okně, které se zobrazí, vyberte **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogového okna rozbalte **JavaScript**, klikněte na tlačítko **Node.js**. V prostředním podokně vyberte **prázdná webová aplikace Node.js**, klikněte na tlačítko **OK**.
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně dialogového okna **Nový projekt** rozbalte položku **JavaScript**a pak zvolte **Node. js**. V prostředním podokně zvolte **prázdná webová aplikace Node. js**a pak zvolte **OK**.
     ::: moniker-end
-    Pokud se nezobrazí **prázdná webová aplikace Node.js** šablony projektu, je nutné přidat **vývoj v Node.js** pracovního vytížení. Podrobné pokyny najdete v tématu [požadavky](#prerequisites).
+    Pokud nevidíte prázdnou šablonu projektu **webové aplikace Node. js** , je nutné přidat úlohu **vývoje Node. js** . Podrobné pokyny najdete v části [požadavky](#prerequisites).
 
-    Visual Studio vytvoří a nového řešení a otevře projekt. *Server.js* otevře v editoru v levém podokně.
+    Visual Studio vytvoří a nového řešení a otevře projekt. *Server. js* se otevře v editoru v levém podokně.
 
 ## <a name="explore-the-ide"></a>Prozkoumejte rozhraní IDE
 
@@ -71,29 +71,29 @@ Nejprve vytvoříte projekt webové aplikace Node.js.
 
    ![Průzkumník řešení](../ide/media/quickstart-nodejs-solution-explorer.png)
 
-   - Projekt je zvýrazněný tučným písmem a má název, který jste zadali v dialogovém okně **Nový projekt**. Na disku, je reprezentována tento projekt *.njsproj* souboru ve složce vašeho projektu.
+   - Projekt je zvýrazněný tučným písmem a má název, který jste zadali v dialogovém okně **Nový projekt**. Na disku je tento projekt reprezentován souborem *. njsproj* ve složce projektu.
 
    - Na nejvyšší úrovni je řešení, které má ve výchozím nastavení stejný název jako příslušný projekt. Řešení, reprezentované na disku souborem *.sln*, je kontejner pro jeden nebo více souvisejících projektů.
 
    - Uzel npm zobrazuje všechny nainstalované balíčky npm. Po kliknutí pravým tlačítkem na uzel npm lze vyhledat a nainstalovat balíčky npm pomocí dialogového okna.
 
-1. Pokud chcete nainstalovat balíčky npm nebo příkazy Node.js z příkazového řádku, klikněte pravým tlačítkem na uzel projektu a zvolte **tady otevřete příkazový řádek**.
+1. Pokud chcete nainstalovat balíčky npm nebo příkazy Node. js z příkazového řádku, klikněte pravým tlačítkem myši na uzel projektu a vyberte **otevřít příkazový řádek zde**.
 
-   ![Příkazový řádek Node.js](../ide/media/quickstart-nodejs-command-prompt.png)
+   ![Příkazový řádek Node. js](../ide/media/quickstart-nodejs-command-prompt.png)
 
-1. V *server.js* souboru v editoru (levé podokno), zvolte `http.createServer` a potom stiskněte klávesu **F12** nebo zvolte **přejít k definici** (klikněte pravým tlačítkem) místní nabídce. Tento příkaz má definici typu `createServer` fungovat v *index.d.ts*.
+1. V souboru *Server. js* v editoru (levé podokno) zvolte `http.createServer` a pak stiskněte klávesu **F12** nebo zvolte **Přejít k definici** z místní nabídky (kliknutím pravým tlačítkem myši). Tento příkaz vás přesměruje do definice `createServer` funkce v *indexu. d. TS*.
 
-   ![Přejít k definici kontextové nabídky](../ide/media/quickstart-nodejs-gotodefinition.png)
+   ![Přejít na kontextovou nabídku definice](../ide/media/quickstart-nodejs-gotodefinition.png)
 
-1. Vrácen do *server.js*, pak v tomto řádku kódu, umístěte kurzor na konec řetězce `res.end('Hello World\n');`a upravit ji tak, aby vypadal takto:
+1. Vraťte se na *Server. js*, umístěte kurzor na konec řetězce v tomto řádku kódu `res.end('Hello World\n');`a upravte jej tak, aby vypadal takto:
 
     `res.end('Hello World\n' + res.connection.`
 
-    Můžete položit `connection.`, technologie IntelliSense poskytuje možnosti automatického dokončování položky kódu.
+    Když zadáte `connection.`, technologie IntelliSense poskytuje možnosti automatického dokončování položky kódu.
 
    ![Automatické dokončování IntelliSense](../ide/media/quickstart-nodejs-intellisense.png)
 
-1. Zvolte **localPort**a pak zadejte `);` dokončete příkaz tak, aby vypadal takto:
+1. Zvolte **localPort**a potom zadejte `);` příkaz pro dokončení příkazu, aby vypadal takto:
 
     `res.end('Hello World\n' + res.connection.localPort);`
 
@@ -101,16 +101,16 @@ Nejprve vytvoříte projekt webové aplikace Node.js.
 
 1. Stisknutím klávesy **Ctrl**+**F5** (nebo **ladit > Spustit bez ladění**) ke spuštění aplikace. Aplikace se otevře v prohlížeči.
 
-1. V okně prohlížeče se zobrazí "Hello World" plus číslo místního portu.
+1. V okně prohlížeče se zobrazí zpráva "Hello World" plus číslo místního portu.
 
 1. Zavřete webový prohlížeč.
 
-Blahopřejeme k dokončení tohoto rychlého startu, ve kterém jste začínal s Visual Studio IDE a Node.js. Pokud jste chtěli delve hlouběji do své možnosti, pokračujte kurz v **kurzy** část obsahu.
+Blahopřejeme k dokončení tohoto rychlého startu, ve kterém jste začali s IDE sady Visual Studio a Node. js. Pokud se chcete podrobněji dohlížet na jeho funkce, pokračujte v kurzu v části obsah **kurzů** .
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
 > [!div class="nextstepaction"]
 > [Nasazení aplikace do služby App Service pro Linux](../javascript/publish-nodejs-app-azure.md)
 
-- [Kurz Node.js a Express](../javascript/tutorial-nodejs.md)
-- [Kurz Node.js a React](../javascript/tutorial-nodejs-with-react-and-jsx.md)
+- [Kurz pro Node. js a Express](../javascript/tutorial-nodejs.md)
+- [Kurz pro Node. js a reakce](../javascript/tutorial-nodejs-with-react-and-jsx.md)

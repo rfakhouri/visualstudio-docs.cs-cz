@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6fad5424e74c8a65ea8ce889412b834cda6a790
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834930"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180156"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Přidání zdroje dat do testu výkonnosti webu
 
@@ -66,7 +66,7 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
 ::: moniker range="vs-2019"
 
-1. Pokud nemáte Visual Studio Enterprise, můžete ho stáhnout [stahování sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránky.
+1. Pokud nemáte Visual Studio Enterprise, můžete ho stáhnout [stahování sady Visual Studio](https://visualstudio.microsoft.com/downloads) stránky.
 
 2. Vytvoření databáze SQL.
 
@@ -156,9 +156,9 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
 ## <a name="q--a"></a>Dotazy a odpovědi
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>DOTAZ: Jaké databáze můžete použít jako zdroj dat?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Č Jaké databáze je možné použít jako zdroj dat?
 
-**ODPOVĚĎ:** Můžete použít následující:
+**URČITÉHO** Můžete použít následující:
 
 - Microsoft SQL Azure.
 
@@ -172,9 +172,9 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
 - Oracle 7.3, 8i, 9i nebo 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>DOTAZ: Použití textového souboru čárkou hodnot s oddělovači (CSV) jako zdroj dat
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Č Návody jako zdroj dat použít textový soubor s oddělovači (CSV)?
 
-**ODPOVĚĎ:** Tady je způsob:
+**URČITÉHO** Tady je postup:
 
 1. Vytvořte složku k uspořádání vašich artefaktů databáze projektů a přidejte položku.
 
@@ -196,9 +196,9 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
      ![Zadejte název a zvolte soubor CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>DOTAZ: Co když Můj existující soubor CSV neobsahuje záhlaví sloupců?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Č Co když existující soubor CSV neobsahuje záhlaví sloupců?
 
-**ODPOVĚĎ:** Pokud nemůžete přidat záhlaví sloupců, můžete použít souboru popisu schématu a k souborem CSV zacházet jako s databází.
+**URČITÉHO** Pokud nemůžete přidat záhlaví sloupců, můžete použít soubor s popisem schématu, který zachází se souborem CSV jako s databází.
 
 1. Přidat nový textový soubor s názvem *schema.ini*.
 
@@ -247,9 +247,9 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
      ![Zdroj dat, které jsou přidány do testu](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>DOTAZ: Jak použít soubor XML jako zdroj dat?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Č Návody jako zdroj dat použít soubor XML?
 
-**ODPOVĚĎ:** Ano.
+**URČITÉHO** Ano.
 
 1. Vytvořte složku k uspořádání vašich artefaktů databáze projektů a přidejte položku.
 
@@ -279,9 +279,9 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
      ![Zadejte název a vyberte soubor XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>DOTAZ: Můžete přidat datové vazby k požadavku webové služby využívající SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Č Můžu přidat datovou vazbu k požadavku webové služby, který používá protokol SOAP?
 
-**ODPOVĚĎ:** Ano, musíte změnit protokol SOAP XML ručně.
+**URČITÉHO** Ano, kód SOAP XML je nutné ručně změnit.
 
 1. Ve stromové struktuře požadavku a v okně Vlastnosti vyberte požadavek webové služby, zvolte tři tečky (...) ve vlastnosti tělo řetězce.
 

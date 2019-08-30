@@ -9,65 +9,65 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bfe4b1a172158740705e392c573de7911016583
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819562"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179864"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Vývoj aplikací pro Univerzální platformu Windows (UWP)
 
-Univerzální platformu Windows a naše jednoho jádra Windows můžete stejnou aplikaci spustit na jakékoli zařízení s Windows 10 z telefonů pro stolní počítače. Vytvořte tyto Universal Windows apps pomocí sady Visual Studio a nástroje pro vývoj univerzálních aplikací pro Windows.
+Pomocí Univerzální platforma Windows a naší sady Windows Core můžete stejnou aplikaci spustit na jakémkoli zařízení s Windows 10, od telefonů po stolní počítače. Vytvářejte tyto univerzální aplikace pro Windows pomocí sady Visual Studio a nástrojů pro vývoj univerzálních aplikací pro Windows.
 
 ![Univerzální platforma pro Windows](../cross-platform/media/uwp_coreextensions.png)
 
-Spuštění aplikace na telefonu s Windows 10, Windows 10 desktop a Xbox. Jedná se o stejné balíček aplikace! Zavedení projektového systému Windows 10 jediném, sjednoceném jádře jeden balíček aplikace poběží na všech platformách. Několik platforem mají rozšíření sady SDK, které můžete přidat do své aplikace a využijte výhod chování pro konkrétní platformu. Například zpracovává sadu SDK rozšíření pro mobilní zařízení se ve Windows phonu stisknutí tlačítka Zpět. Pokud ve vašem projektu odkazovat na sadu SDK rozšíření a pak stačí přidat elementy kontroly za běhu, který testuje, jestli je k dispozici na této platformě této sady SDK. To je, jak můžete použít balíček aplikace pro každou platformu!
+Spuštění aplikace na telefonu s Windows 10, Windows 10 desktop a Xbox. Je to stejný balíček aplikace! Zavedení projektového systému Windows 10 jediném, sjednoceném jádře jeden balíček aplikace poběží na všech platformách. Několik platforem má rozšiřující sady SDK, které můžete přidat do své aplikace, abyste mohli využít výhod specifického chování platformy. Například zpracovává sadu SDK rozšíření pro mobilní zařízení se ve Windows phonu stisknutí tlačítka Zpět. Pokud odkazujete na sadu SDK rozšíření v projektu, stačí přidat kontroly za běhu k otestování, jestli je tato sada SDK na této platformě k dispozici. To je to, jak můžete mít stejný balíček aplikace pro každou platformu.
 
-**Co je jádro Windows?**
+**Co je Windows Core?**
 
-Poprvé byla refaktorována Windows, aby běžné jádra na všech platformách systému Windows 10. Existuje jeden společný zdroj, jeden společný jádra Windows, jeden zásobníku vstupně-výstupní operace souboru a jeden model aplikace. Pro uživatelské rozhraní je pouze jeden architekturu uživatelského rozhraní XAML a jedno rozhraní HTML uživatelského rozhraní. Protože jsme usnadnili k vaší aplikaci spouštět na různých zařízeních s Windows 10 můžete soustředit na vytváření skvělých aplikací.
+V první době se systém Windows refaktoruje tak, aby měl společný jádro pro všechny platformy Windows 10. Existuje jeden společný zdroj, jeden společný jádro systému Windows, jeden zásobník v/v souborů a jeden model aplikace. Pro uživatelské rozhraní existuje pouze jedno rozhraní XAML UI Framework a jedno rozhraní HTML UI. Můžete se soustředit na vytvoření skvělé aplikace, protože jsme usnadnili, aby vaše aplikace běžela na různých zařízeních s Windows 10.
 
-**Co přesně je univerzální platformu Windows?**
+**Co přesně je Univerzální platforma Windows?**
 
-Univerzální platforma Windows je jednoduše soubor smluv a verze. Tyto rutiny umožňují vám do cíle, kde lze spustit vaši aplikaci. Nebudou cíleny operačního systému; Nyní můžete cílit na jeden nebo více rodin zařízení. Přečtěte si a zjistěte další podrobnosti [Úvod k univerzální platformě Windows](/windows/uwp/get-started/universal-application-platform-guide).
+Univerzální platforma Windows je pouze kolekce kontraktů a verzí. Ty vám umožní zaměřit se na to, kde se vaše aplikace může spouštět. Už necílíte na operační systém. teď cílíte na jednu nebo víc rodin zařízení. Další informace najdete v [úvodu k Univerzální platforma Windows](/windows/uwp/get-started/universal-application-platform-guide).
 
 ## <a name="requirements"></a>Požadavky
 
-Nástroje pro vývoj univerzálních aplikací pro Windows jsou dostupné emulátorů, které vám umožní zjistit, jak vaše aplikace funguje na různých zařízeních. Pokud chcete použít tyto emulátory, budete muset instalovat tento software na fyzickém počítači. Fyzický počítač musí spustit (x64) Windows 8.1 edice Professional nebo vyšší a procesor, který podporuje technologii klient Hyper-V a překlad adres druhé úrovně (SLAT). Emulátory nelze použít, když je na virtuálním počítači nainstalované sady Visual Studio.
+Nástroje pro vývoj univerzálních aplikací pro Windows přináší emulátory, které můžete použít k zobrazení, jak vaše aplikace vypadá na různých zařízeních. Pokud chcete použít tyto emulátory, musíte tento software nainstalovat na fyzický počítač. Fyzický počítač musí běžet Windows 8.1 (x64) Professional Edition nebo vyšší a musí mít procesor, který podporuje technologii Klient Hyper-V a překlad adres druhé úrovně (SLAT). Emulátory nelze použít, pokud je aplikace Visual Studio nainstalována na virtuálním počítači.
 
-Tady je seznam softwaru, které potřebujete:
+Tady je seznam softwaru, který potřebujete:
 
 ::: moniker range="vs-2017"
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 podporuje vývoj pro UPW pouze ve Windows 10. Další podrobnosti najdete v tématu Visual Studio [cílení na platformy](/visualstudio/productinfo/vs2017-compatibility-vs) a [požadavky na systém](/visualstudio/productinfo/vs2017-system-requirements-vs).
+- [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 podporuje vývoj UWP jenom ve Windows 10. Další podrobnosti najdete v tématu cílení na [platformu](/visualstudio/productinfo/vs2017-compatibility-vs) a [požadavky na systém](/visualstudio/productinfo/vs2017-system-requirements-vs)pro Visual Studio.
 
-- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Musíte také volitelné úlohu vývoje univerzální platformy Windows.
+- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Budete také potřebovat volitelnou úlohu vývoje Univerzální platforma Windows.
 
-     ![Úlohy UPW](media/uwp_workload.png)
+     ![Úlohy UWP](media/uwp_workload.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads). Vývoj UWP Visual Studio 2019 podporuje pouze ve Windows 10. Další podrobnosti najdete v tématu Visual Studio [cílení na platformy](/visualstudio/releases/2019/compatibility/) a [požadavky na systém](/visualstudio/releases/2019/system-requirements/).
+- [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2019 podporuje vývoj UWP jenom ve Windows 10. Další podrobnosti najdete v tématu cílení na [platformu](/visualstudio/releases/2019/compatibility/) a [požadavky na systém](/visualstudio/releases/2019/system-requirements/)pro Visual Studio.
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Musíte také volitelné úlohu vývoje univerzální platformy Windows.
+- [Visual Studio](https://visualstudio.microsoft.com/downloads). Budete také potřebovat volitelnou úlohu vývoje Univerzální platforma Windows.
 
-     ![Úlohy UPW](media/uwp_workload.png)
+     ![Úlohy UWP](media/uwp_workload.png)
 
 ::: moniker-end
 
-Po instalaci tohoto softwaru, je potřeba povolit zařízení s Windows 10 pro vývoj. Zobrazit [aktivovat zařízení pro vývoj](/windows/uwp/get-started/enable-your-device-for-development). Už nepotřebujete licenci vývojáře pro každé zařízení s Windows 10.
+Po instalaci tohoto softwaru je potřeba povolit pro vývoj zařízení s Windows 10. Viz [Povolení vývoje zařízení](/windows/uwp/get-started/enable-your-device-for-development). Už nepotřebujete vývojářskou licenci pro každé zařízení s Windows 10.
 
 ## <a name="universal-windows-apps"></a>Univerzální aplikace pro Windows
 
-Zvolte si jazyk oblíbeným vývojovým z jazyka C#, Visual Basic, C++ nebo JavaScript k vytvoření aplikace pro univerzální platformu Windows pro zařízení s Windows 10. Čtení [vytvořit svoji první aplikaci](/windows/uwp/get-started/your-first-app) nebo si pusťte video [přehled nástrojů pro Windows 10](https://channel9.msdn.com/Series/ConnectOn-Demand/229) videa.
+Vyberte preferovaný vývojový jazyk z C#, Visual Basic C++ nebo JavaScript a vytvořte univerzální platforma Windows aplikaci pro zařízení s Windows 10. Přečtěte si téma [Vytvoření první aplikace](/windows/uwp/get-started/your-first-app) nebo sledujte video s [přehledem nástrojů pro Windows 10](https://channel9.msdn.com/Series/ConnectOn-Demand/229) .
 
-Pokud máte existující aplikace Windows Store 8.1, aplikace pro Windows Phone 8.1 nebo Universal Windows apps, které byly vytvořeny pomocí sady Visual Studio 2015, bude nutné přenést tyto aplikace, které používají nejnovější univerzální platformu Windows. Zobrazit [přesunout z modulu Windows Runtime 8.x na UPW](/windows/uwp/porting/w8x-to-uwp-root).
+Pokud máte existující aplikace pro Windows Store 8,1, Windows Phone 8,1 nebo univerzální aplikace pro Windows vytvořené pomocí sady Visual Studio 2015, budete muset tyto aplikace přenést, aby používaly nejnovější Univerzální platforma Windows. Viz [přesunout z prostředí Windows Runtime 8. x do UWP](/windows/uwp/porting/w8x-to-uwp-root).
 
-Po vytvoření aplikace pro Universal Windows, musíte sestavit balíček aplikace nainstalovat na zařízení s Windows 10 nebo odeslání do Windows Store. Zobrazit [balení aplikací](/windows/uwp/packaging/index).
+Po vytvoření univerzální aplikace pro Windows je nutné zabalit aplikaci, aby ji bylo možné nainstalovat na zařízení s Windows 10, nebo ji odeslat do Windows Storu. Viz vytváření [balíčků aplikací](/windows/uwp/packaging/index).
 
 ## <a name="see-also"></a>Viz také:
 
-- [Vývoj multiplatformních mobilních řešení v sadě Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)
+- [Vývoj mobilních aplikací pro různé platformy v aplikaci Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

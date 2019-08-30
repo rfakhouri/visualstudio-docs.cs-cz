@@ -1,5 +1,5 @@
 ---
-title: 'Kurz: Ladění kódu jazyka Visual Basic'
+title: 'Kurz: Ladění kódu Visual Basic'
 description: Zjistěte, jak ke spuštění ladicího programu sady Visual Studio, krokovat kód a kontrolovat data.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 11/27/2018
@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 070de03f56f6d9d10a9e6a41516ffcb67837e90e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7e7ddccf321259ff8f4de2522404fdc42617a810
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680313"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180192"
 ---
-# <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Kurz: Další informace k ladění kódu jazyka Visual Basic pomocí sady Visual Studio
+# <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Kurz: Naučte se ladit kód Visual Basic pomocí sady Visual Studio.
 
-Tento článek obsahuje představení funkcí v ladicím programu sady Visual Studio podrobného návodu. Pokud potřebujete vyšší úroveň zobrazení funkcí ladicího programu, [nejdřív se podívejte na ladicí program](../../debugger/debugger-feature-tour.md). Pokud jste *ladění aplikace*, obvykle to znamená, že spustíte aplikaci s připojeným ladícím nástrojem. Když toto provedete, ladicí program poskytuje mnoho způsobů, jak zjistit, co kód dělá, při spuštění. Můžete procházet kódem a podívejte se na hodnoty uložené v proměnné, můžete nastavit hodinky na proměnné zobrazíte, když se změní hodnoty, můžete prozkoumat cesta provedení kódu naleznete v tématu, jestli větev kódu je spuštěná, a tak dále. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
+Tento článek obsahuje představení funkcí v ladicím programu sady Visual Studio podrobného návodu. Pokud chcete zobrazit vyšší úroveň funkcí ladicího programu, podívejte [se na téma první pohled na ladicí program](../../debugger/debugger-feature-tour.md). Pokud jste *ladění aplikace*, obvykle to znamená, že spustíte aplikaci s připojeným ladícím nástrojem. Když toto provedete, ladicí program poskytuje mnoho způsobů, jak zjistit, co kód dělá, při spuštění. Můžete procházet kódem a podívejte se na hodnoty uložené v proměnné, můžete nastavit hodinky na proměnné zobrazíte, když se změní hodnoty, můžete prozkoumat cesta provedení kódu naleznete v tématu, jestli větev kódu je spuštěná, a tak dále. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
 
 V tomto kurzu se naučíte:
 
@@ -38,7 +38,7 @@ V tomto kurzu se naučíte:
 
 ::: moniker range=">=vs-2019"
 
-Musíte mít Visual Studio 2019 nainstalovaný a **vývoj desktopových aplikací .NET** pracovního vytížení.
+Musíte mít nainstalovanou aplikaci Visual Studio 2019 a úlohu **vývoj desktopových aplikací .NET** .
 
 ::: moniker-end
 ::: moniker range="vs-2017"
@@ -55,28 +55,28 @@ Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory k
 
 ::: moniker range="vs-2019"
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 
-Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací .NET** úloh, klikněte na tlačítko **změnit**.
+Pokud potřebujete nainstalovat úlohu, ale už máte Visual Studio, můžete přejít do části **nástroje** > **získat nástroje a funkce...** , které otevře instalační program pro Visual Studio. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací .NET** úloh, klikněte na tlačítko **změnit**.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
 1. Otevřít Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Stisknutím klávesy **Esc** zavřete okno start. Typ **Ctrl + Q** otevřete do vyhledávacího pole zadejte **jazyka visual basic**, zvolte **šablony**, klikněte na tlačítko **vytvořit nový projekt Konzolová aplikace (.NET Framework)**. V dialogovém okně, které se zobrazí, zadejte název, například **get spuštění – ladění**a klikněte na tlačítko **vytvořit**.
+    Stisknutím klávesy **ESC** zavřete okno Start. Zadáním **CTRL + Q** otevřete vyhledávací pole, zadejte **Visual Basic**, zvolte **šablony**a pak zvolte **vytvořit nový projekt aplikace konzoly (.NET Framework)** . V dialogovém okně, které se zobrazí, zadejte název, jako je například **Get-Started**, a pak zvolte **vytvořit**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně **nový projekt** dialogovém okně **jazyka Visual Basic**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **aplikace konzoly (.NET Rozhraní Framework)**. Zadejte název, například **get spuštění – ladění** a klikněte na tlačítko **OK**.
+    V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**. V levém podokně dialogového okna **Nový projekt** , v části **Visual Basic**zvolte **plocha Windows**a potom v prostředním podokně zvolte **Konzolová aplikace (.NET Framework)** . Pak zadejte název, jako je například **Get-Started-Debugging** a klikněte na **OK**.
     ::: moniker-end
 
-    Pokud se nezobrazí **Konzolová aplikace (.NET Framework)** šablony projektu, přejděte na **nástroje** > **získat nástroje a funkce...** , který otevře instalačního programu sady Visual Studio. Zvolte **vývoj desktopových aplikací .NET** úloh, klikněte na tlačítko **změnit**.
+    Pokud nevidíte šablonu projektu **Konzolová aplikace (.NET Framework)** , přejděte do části **nástroje** > **získat nástroje a funkce...** , které otevře instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací .NET** úloh, klikněte na tlačítko **změnit**.
 
     Visual Studio vytvoří projekt.
 
-1. V *Module1.vb*, nahraďte následující kód
+1. V *Module1. vb*nahraďte následující kód
 
     ```vb
     Module Module1
@@ -226,9 +226,9 @@ Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, přejd
 
     Zarážky jsou základní a nejjednodušší funkcí spolehlivého ladění. Zarážka určuje, kde má Visual Studio spuštěný kód pozastavit, abyste mohli zkontrolovat hodnoty proměnných či chování paměti, nebo abyste zjistili, jestli se nějaká větev kódu spouští.
 
-2. Stisknutím klávesy **F5** nebo **spustit ladění** tlačítko ![spustit ladění](../../debugger/media/dbg-tour-start-debugging.png "spustit ladění"), aplikace se spustí a spuštění ladicího programu na řádek kód, kde nastavit zarážku.
+2. Stiskněte klávesu **F5** nebo tlačítko **Spustit ladění** ![Spustit]ladění(../../debugger/media/dbg-tour-start-debugging.png "Spustit ladění"), aplikace se spustí a ladicí program se spustí na řádek kódu, kde jste nastavili zarážku.
 
-    ![Na zarážku](../visual-basic/media/get-started-hit-breakpoint-vb.png)
+    ![Stiskněte zarážku](../visual-basic/media/get-started-hit-breakpoint-vb.png)
 
     Žlutá šipka označuje příkaz na které ladicí program pozastaví, což také pozastaví provádění aplikace na stejném místě (Tento příkaz nebyl dosud proveden).
 
@@ -250,11 +250,11 @@ Většinou, klávesové zkratky tady používáme, protože je dobrým způsobem
 
      ![F10 můžete krokovat s přeskočením kód](../visual-basic/media/get-started-step-over-vb.png "F10 Krokovat s přeskočením")
 
-     Všimněte si, že tento čas, který ladicí program Nekrokovat s vnořením do `Draw` metody základní třídy (`Shape`). **F10** přejde ladicí program bez krokování do funkce nebo metody v kódu vaší aplikace (kód stále provádí). Stisknutím klávesy **F10** na `MyBase.Draw` volání metody (místo **F11**), jsme přeskočil implementační kód pro `MyBase.Draw` (které možná jsme nejsou nyní zájem).
+     Všimněte si, že tento čas, který ladicí program Nekrokovat s vnořením do `Draw` metody základní třídy (`Shape`). **F10** přejde ladicí program bez krokování do funkce nebo metody v kódu vaší aplikace (kód stále provádí). Stiskem klávesy **F10** ve `MyBase.Draw` volání metody (místo **klávesy F11**) jsme přeskočili na implementační kód pro `MyBase.Draw` (což možná není zajímatme hned teď).
 
 ## <a name="navigate-code-using-run-to-click"></a>Vyhledání kódu pomocí běžet do kliknutí
 
-1. V editoru kódu, přejděte dolů a najeďte myší `Console.WriteLine` metoda ve `Triangle` třídy do zelené **běžet do kliknutí** tlačítko ![běžet do kliknutí](../../debugger/media/dbg-tour-run-to-click.png "RunToClick")se zobrazí na levé straně. Popis tlačítka pro tlačítko zobrazí "Běžet do tohoto místa".
+1. V editoru kódu, přejděte dolů a najeďte myší `Console.WriteLine` metoda ve `Triangle` třídy do zelené **běžet do kliknutí** tlačítko ![běžet do kliknutí](../../debugger/media/dbg-tour-run-to-click.png "RunToClick")se zobrazí na levé straně. V popisu tlačítka se zobrazí text spustit provádění na tomto místě.
 
      ![Použít Run to Click funkce](../visual-basic/media/get-started-run-to-click-vb.png "běžet do kliknutí")
 
@@ -300,13 +300,13 @@ Ladicí program se znovu zastaví na zarážce, nastavíte na `shape.Draw()` met
 
 Funkce, které umožňují kontrolovat proměnné jsou jedním z nejužitečnějších funkce ladicího programu, a to různými způsoby. Při pokusu o ladění chyby se často, pokoušíte zjistit, zda jsou proměnné ukládání hodnot, které očekáváte, že ho, aby v určitou dobu.
 
-1. Během pozastavení na `shape.Draw()` metoda, najeďte myší `shapes` objektu a zobrazit její hodnotu vlastnosti výchozí `Count` vlastnost.
+1. Při pozastavení `shape.Draw()` metody najeďte myší `shapes` na objekt a zobrazí se jeho `Count` výchozí hodnota vlastnosti – vlastnost.
 
-1. Rozbalte `shapes` objektu zobrazíte všechny její vlastnosti, jako je například první index pole `[0]`, který má hodnotu `Rectangle`.
+1. Rozbalením `[0]`objektuzobrazítevšechny jeho vlastnosti, jako je například první index pole, `Rectangle`který má hodnotu. `shapes`
 
      ![Zobrazení datového tipu](../visual-basic/media/get-started-data-tip-vb.png "zobrazení popisu dat.")
 
-    Můžete dále rozšířit objekty zobrazení jejich vlastností, jako `Height` vlastnosti obdélníku.
+    Můžete dále rozbalovat objekty pro zobrazení jejich vlastností, jako je `Height` například vlastnost obdélníku.
 
     Často při ladění, chcete rychle zkontrolovat hodnoty vlastností pro objekty a datové tipy jsou dobrým způsobem, jak to udělat.
 
@@ -347,15 +347,15 @@ Funkce, které umožňují kontrolovat proměnné jsou jedním z nejužitečněj
 
     Dvojitým kliknutím na řádek kódu go, podívejte se na tento zdrojový kód a také změny v aktuálním oboru kontrolován ladicím programem. Tato akce nepřesouvejte vpřed ladicí program.
 
-    Můžete také použít nabídek klikněte pravým tlačítkem **zásobník volání** okno a dělat jiné věci. Například vložení do určené funkce zarážky, ladicí program pomocí předem **spustit ke kurzoru**a zkontrolujte zdrojový kód. Další informace najdete v tématu [jak: Prozkoumat zásobník volání](../../debugger/how-to-use-the-call-stack-window.md).
+    Můžete také použít nabídek klikněte pravým tlačítkem **zásobník volání** okno a dělat jiné věci. Například vložení do určené funkce zarážky, ladicí program pomocí předem **spustit ke kurzoru**a zkontrolujte zdrojový kód. Další informace najdete v tématu [jak: Projděte si zásobník](../../debugger/how-to-use-the-call-stack-window.md)volání.
 
 ## <a name="change-the-execution-flow"></a>Změna toku provádění
 
-1. Pomocí ladicího programu v pozastavena `MyBase.Draw` volání metody `Rectangle` třídy, pomocí myši a zkopírovat žlutá šipka (spuštění ukazatele) na levé straně a přesunout žlutou šipku na jeden řádek nahoru `Console.WriteLine` volání metody.
+1. Když je ladicí program pozastaven ve `MyBase.Draw` volání `Rectangle` metody třídy, použijte myš k `Console.WriteLine` navýšení žluté šipky (ukazatel spuštění) vlevo a přesuňte žlutou šipku o jeden řádek nahoru ke volání metody.
 
 1. Stisknutím klávesy **F11**.
 
-    Znovu spustí ladicí program `Console.WriteLine` – metoda (zobrazí duplicitní výstup v okně výstup konzoly).
+    Ladicí program znovu spustí `Console.WriteLine` metodu (ve výstupu okna konzoly se zobrazí duplicitní výstup).
 
     Změnou provádění toku můžete provést kroky, jako je test cesty spuštění odlišný kód nebo znovu spustit kód bez restartování ladicího programu.
 

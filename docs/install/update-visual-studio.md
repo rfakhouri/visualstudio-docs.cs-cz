@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ee1a568e30a4898c767533a4f592e2301a097a
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: b6fc0ab18fea11b2dd4478538a095762fee75d35
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681496"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180366"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizace sady Visual Studio na nejnovější verzi
 
@@ -166,7 +166,7 @@ Pokud vyberete možnost Ignorovat upozornění, Visual Studio zastaví, abych ho
 
 Doporučujeme, abyste aktualizovali na nejnovější [verzi](/visualstudio/releases/2019/release-notes/) sady Visual Studio 2019, abyste vždycky získali nejnovější funkce, opravy a vylepšení.
 
-A pokud jste ještě nenainstalovali Visual Studio 2019, navštivte stránku [ke stažení pro Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) , abyste ho nainstalovali zdarma.
+A pokud jste ještě nenainstalovali Visual Studio 2019, navštivte stránku [ke stažení pro Visual Studio](https://visualstudio.microsoft.com/downloads) , abyste ho nainstalovali zdarma.
 
 > [!IMPORTANT]
 > Musíte se přihlásit pomocí účtu, který má oprávnění správce k instalaci, aktualizaci nebo úpravy sady Visual Studio. Další informace najdete v tématu [uživatelská oprávnění a sada Visual Studio](../ide/user-permissions-and-visual-studio.md).

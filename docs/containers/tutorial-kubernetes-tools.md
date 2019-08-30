@@ -1,5 +1,5 @@
 ---
-title: Kurz Kubernetes nástroje | Dokumentace Microsoftu
+title: Kurz pro nástroje Kubernetes | Microsoft Docs
 ms.date: 06/08/2018
 ms.topic: conceptual
 author: ghogen
@@ -8,167 +8,167 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 5a778cac1be1ae86fbec197fa49b5d79b6ec8677
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 45397ddf21f1ea1d735c2753864e5954850a4d98
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261194"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179853"
 ---
-# <a name="get-started-with-visual-studio-kubernetes-tools"></a>Začínáme s Kubernetes nástroje sady Visual Studio
+# <a name="get-started-with-visual-studio-kubernetes-tools"></a>Začínáme s nástroji Visual Studio Kubernetes Tools
 
-Visual Studio Kubernetes Tools zjednodušit vývoj kontejnerizovaných aplikací, které cílí na Kubernetes. Visual Studio může automaticky vytvořit konfigurace jako kódu soubory potřebné pro podporu nasazení Kubernetes, jako jsou soubory Dockerfile a Helm grafy. Ladění kódu v aktivní cluster Azure Kubernetes Service (AKS) pomocí Azure Dev mezery nebo publikovat přímo do clusteru AKS z v sadě Visual Studio.
+Nástroje Visual Studio Kubernetes vám pomůžou zjednodušit vývoj kontejnerových aplikací cílících na Kubernetes. Visual Studio může automaticky vytvořit soubory konfigurace s konfigurací, které jsou potřebné k podpoře nasazení Kubernetes, jako jsou fázemi a Helm grafy. Svůj kód můžete ladit v rámci živého clusteru Azure Kubernetes Service (AKS) pomocí Azure Dev Spaces nebo publikovat přímo do clusteru AKS z aplikace Visual Studio.
 
-Tento kurz se zabývá použitím sady Visual Studio, přidejte do projektu podpora pro Kubernetes a publikuje do AKS. Pokud vás zajímají hlavně pomocí [Azure Dev prostory](https://aka.ms/get-azds) pro ladění a testování projektu spuštěná ve službě AKS, můžete přejít na [Azure Dev prostory kurzu](/azure/dev-spaces/get-started-netcore-visualstudio) místo toho.
+Tento kurz se zabývá používáním sady Visual Studio pro přidání podpory Kubernetes do projektu a publikování do AKS. Pokud se primárně zajímá použití [Azure dev Spaces](https://aka.ms/get-azds) k ladění a testování projektu běžícího na AKS, můžete místo toho přejít na [Azure dev Spaces kurz](/azure/dev-spaces/get-started-netcore-visualstudio) .
 
 ## <a name="prerequisites"></a>Požadavky
 
-Chcete-li využívají tato nová funkce, budete potřebovat:
+Abyste mohli využít tuto novou funkci, budete potřebovat:
 
 ::: moniker range="vs-2017"
-- Nejnovější verzi [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) s *vývoj pro ASP.NET a web* pracovního vytížení.
-- [Kubernetes tools pro Visual Studio](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes), která je dostupná jako samostatný soubor ke stažení.
+- Nejnovější verzi sady [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) s úlohou *vývoje ASP.NET a webu* .
+- [Nástroje Kubernetes pro Visual Studio](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes), které jsou k dispozici jako samostatné stažení.
 ::: moniker-end
 ::: moniker range="vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) s *vývoj pro ASP.NET a web* pracovního vytížení.
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) s úlohou *vývoje ASP.NET a webu* .
 ::: moniker-end
-- [Docker Desktop](https://store.docker.com/editions/community/docker-ce-desktop-windows) nainstalované na pracovní stanici vývoje (to znamená, pokud spustíte Visual Studio), pokud chcete sestavit Image Dockeru, ladit místně spuštěné kontejnery Dockeru nebo publikovat ve službě AKS. (Docker je *není* vyžadované pro sestavování a ladění kontejnerů Dockeru ve službě AKS pomocí Azure Dev prostory.)
+- [Docker Desktop](https://store.docker.com/editions/community/docker-ce-desktop-windows) nainstalovaný na vaší vývojové pracovní stanici (to znamená, kde spustíte Visual Studio), pokud chcete vytvořit image Docker, ladit kontejnery Docker místně spuštěné nebo publikovat na AKS. (Docker se nevyžaduje pro sestavování a ladění kontejnerů Docker v AKS pomocí Azure dev Spaces.)
 ::: moniker range="vs-2017"
-- Pokud chcete publikovat ze sady Visual Studio do AKS (*není* požadovaná pro ladění ve službě AKS pomocí Azure Dev mezery):
+- Pokud chcete publikovat na AKS ze sady Visual Studio (*není* vyžadováno pro ladění v AKS pomocí Azure dev Spaces):
 
-    1. [AKS nástroje pro publikování](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes), která je dostupná jako samostatný soubor ke stažení.
+    1. [Nástroje pro publikování AKS](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes), které jsou k dispozici jako samostatné stažení.
 
-    1. Cluster Azure Kubernetes Service. Další informace najdete v tématu [vytváření clusteru AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Nezapomeňte [připojení ke clusteru](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) z vaší pracovní stanici.
+    1. Cluster Azure Kubernetes Service. Další informace najdete v tématu [Vytvoření clusteru AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Ujistěte se, že se ke [clusteru připojíte](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) z pracovní stanice pro vývoj.
 
-    1. Helm CLI nainstalované na pracovní stanici vývoje. Další informace najdete v části [instalace Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
+    1. Helm CLI nainstalované na vaší pracovní stanici pro vývoj. Další informace najdete v tématu [instalace Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1. Konfigurovat u vašeho clusteru AKS pomocí Helm `helm init` příkazu. Další informace o tom, jak to provést, najdete v části [konfigurace Helm](/azure/aks/kubernetes-helm#configure-helm).
+    1. Helm nakonfigurovanou pro `helm init` cluster AKS pomocí příkazu. Další informace o tom, jak to provést, najdete v tématu [How to Configure Helm](/azure/aks/kubernetes-helm#configure-helm).
 ::: moniker-end
 
-## <a name="create-a-new-kubernetes-project"></a>Vytvořte nový projekt Kubernetes
+## <a name="create-a-new-kubernetes-project"></a>Vytvořit nový projekt Kubernetes
 
 ::: moniker range="vs-2017"
 
-Jakmile budete mít nainstalovány odpovídající nástroje, spusťte sadu Visual Studio a vytvořte nový projekt. V části **cloudu**, zvolte **aplikace typu kontejner pro Kubernetes** typ projektu. Vyberte tento typ projektu a zvolte **OK**.
+Po instalaci příslušných nástrojů spusťte aplikaci Visual Studio a vytvořte nový projekt. V části **Cloud**vyberte **aplikace kontejneru pro** typ projektu Kubernetes. Vyberte tento typ projektu a zvolte **OK**.
 
-![Snímek obrazovky vytváření nového projektu aplikace Kubernetes](media/tutorial-kubernetes-tools/k8s-tools-new-k8s-app.png)
+![Snímek obrazovky s vytvořením nového projektu aplikace Kubernetes](media/tutorial-kubernetes-tools/k8s-tools-new-k8s-app.png)
 
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 
-V okně spuštění sady Visual Studio vyhledejte *Kubernetes*a zvolte **aplikace typu kontejner pro Kubernetes**.
+V okně Start sady Visual Studio vyhledejte *Kubernetes*a vyberte **aplikaci kontejneru pro Kubernetes**.
 
-![Snímek obrazovky vytváření nového projektu aplikace Kubernetes](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-new-k8s-app1.png)
+![Snímek obrazovky s vytvořením nového projektu aplikace Kubernetes](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-new-k8s-app1.png)
 
 Zadejte název projektu.
 
-![Snímek obrazovky vytváření nového projektu aplikace Kubernetes](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-new-k8s-app2.png)
+![Snímek obrazovky s vytvořením nového projektu aplikace Kubernetes](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-new-k8s-app2.png)
 
 ::: moniker-end
 
-Potom můžete typu ASP.NET Core, který k vytvoření webové aplikace. Zvolte **webovou aplikaci**. Obvyklého **povolit podporu Dockeru** možnost se nezobrazí v tomto dialogovém okně.  Podporu dockeru je povoleno standardně pro aplikace typu kontejner pro Kubernetes.
+Pak můžete zvolit typ ASP.NET Core webové aplikace, kterou chcete vytvořit. Vyberte možnost **Webová aplikace**. Možnost **Povolit podporu Docker** se v tomto dialogovém okně nezobrazuje.  Podpora Docker je ve výchozím nastavení povolená pro aplikaci typu kontejner pro Kubernetes.
 
 ::: moniker range="vs-2017"
 
-![Snímek obrazovky výběru webové aplikace](media/tutorial-kubernetes-tools/k8s-tools-web-app-selection-screen.png)
+![Snímek obrazovky s výběrem webové aplikace](media/tutorial-kubernetes-tools/k8s-tools-web-app-selection-screen.png)
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 
-![Snímek obrazovky výběru webové aplikace](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-web-app-selection-screen-2019.png)
+![Snímek obrazovky s výběrem webové aplikace](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-web-app-selection-screen-2019.png)
 
 ::: moniker-end
 
-## <a name="add-kubernetes-support-to-an-existing-project"></a>Podpora pro Kubernetes přidat do existujícího projektu
+## <a name="add-kubernetes-support-to-an-existing-project"></a>Přidání podpory Kubernetes do existujícího projektu
 
-Podpora pro Kubernetes můžete alternativně přidat do existujícího projektu webové aplikace ASP.NET Core. Chcete-li to provést, klikněte pravým tlačítkem na projekt a zvolte **přidat** > **podporu Orchestrátoru kontejnerů**.
+Alternativně můžete přidat podporu Kubernetes do existujícího projektu webové aplikace ASP.NET Core. Chcete-li to provést, klikněte pravým tlačítkem myši na projekt a vyberte možnost **Přidat** > **kontejner Orchestrator support**.
 
 ::: moniker range="vs-2017"
 
-![Snímek obrazovky z přidat Orchestrátor kontejnerů položky nabídky](media/tutorial-kubernetes-tools/k8s-tools-add-container-orchestrator.png)
+![Snímek obrazovky přidat položku nabídky Orchestrator kontejneru](media/tutorial-kubernetes-tools/k8s-tools-add-container-orchestrator.png)
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 
-![Snímek obrazovky z přidat Orchestrátor kontejnerů položky nabídky](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-add-container-orchestrator-2019.png)
+![Snímek obrazovky přidat položku nabídky Orchestrator kontejneru](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-add-container-orchestrator-2019.png)
 
 ::: moniker-end
 
-V dialogovém okně vyberte **Kubernetes a Helm** a zvolte **OK**.
+V dialogovém okně vyberte **Kubernetes/Helm** a zvolte **OK**.
 
-![Dialogové okno snímek obrazovky z přidat Orchestrátor kontejnerů](media/tutorial-kubernetes-tools/k8s-tools-add-container-orchestrator-dialog-box.PNG)
+![Snímek obrazovky dialogového okna Přidat kontejner Orchestrator](media/tutorial-kubernetes-tools/k8s-tools-add-container-orchestrator-dialog-box.PNG)
 
-## <a name="what-visual-studio-creates-for-you"></a>Sada Visual Studio vytvoří pro vás
+## <a name="what-visual-studio-creates-for-you"></a>Jakou aplikaci Visual Studio vytvoří
 
-Po vytvoření nového **aplikace typu kontejner pro Kubernetes** projektu nebo přidat podporu orchestrátoru kontejnerů Kubernetes do existujícího projektu, se zobrazí některé další soubory v projektu, které usnadňují nasazování do Kubernetes.
+Po vytvoření nové **aplikace typu kontejner pro projekt Kubernetes** nebo přidání podpory Kubernetes kontejneru Orchestrator do existujícího projektu se zobrazí některé další soubory v projektu, které usnadňují nasazování do Kubernetes.
 
 ::: moniker range="vs-2017"
 
-![Snímek obrazovky Průzkumníka řešení po přidání podpory Orchestrátor kontejnerů](media/tutorial-kubernetes-tools/k8s-tools-solution-explorer.png)
+![Snímek obrazovky Průzkumník řešení po přidání kontejneru support Orchestrator](media/tutorial-kubernetes-tools/k8s-tools-solution-explorer.png)
 
 ::: moniker-end
 ::: moniker range="vs-2019"
 
-![Snímek obrazovky Průzkumníka řešení po přidání podpory Orchestrátor kontejnerů](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-solution-explorer-2019.png)
+![Snímek obrazovky Průzkumník řešení po přidání kontejneru support Orchestrator](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-solution-explorer-2019.png)
 
 ::: moniker-end
 
-Přidání souborů jsou:
+Přidané soubory jsou:
 
-- soubor Dockerfile, který vám umožní generovat Docker image kontejneru, který je hostitelem této webové aplikace. Jak uvidíte, využívá nástrojů sady Visual Studio tento soubor Dockerfile, při ladění a nasazování do Kubernetes. Pokud budete chtít pracovat přímo s image Dockeru, můžete kliknout pravým tlačítkem na soubor Dockerfile a zvolit **sestavit Image Dockeru**.
+- Souboru Dockerfile, který umožňuje vygenerovat image kontejneru Docker hostující tuto webovou aplikaci. Jak vidíte, nástroje sady Visual Studio tento souboru Dockerfile při ladění a nasazování do Kubernetes. Pokud preferujete pracovat přímo s imagí Docker, můžete kliknout pravým tlačítkem na souboru Dockerfile a zvolit **sestavit image Docker**.
 
-   ![Možnost snímek obrazovky z sestavit Image Dockeru](media/tutorial-kubernetes-tools/k8s-tools-build-docker-image.png)
+   ![Snímek obrazovky s možností image Docker Build](media/tutorial-kubernetes-tools/k8s-tools-build-docker-image.png)
 
-- Helm chart a *grafy* složky. Tyto soubory yaml tvoří grafu Helm pro aplikace, které můžete použít k jejímu nasazení Kubernetes. Další informace o Helm, naleznete v tématu [ https://www.helm.sh ](https://www.helm.sh).
+- graf Helm a složka *grafů* . Tyto soubory YAML tvoří graf Helm pro aplikaci, který můžete použít k jejímu nasazení na Kubernetes. Další informace o Helm naleznete v tématu [https://www.helm.sh](https://www.helm.sh).
 
-- *azds.yaml*. Obsahuje nastavení pro prostory vývoj Azure, který poskytuje rychlý a iterativní ladění prostředí ve službě Azure Kubernetes Service. Další informace najdete v tématu [v dokumentaci k Azure Dev prostory](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
+- *azds.yaml*. Obsahuje nastavení pro Azure Dev Spaces, které poskytuje rychlé a iterativní možnosti ladění ve službě Azure Kubernetes. Další informace najdete [v dokumentaci k Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
 
 ::: moniker range="vs-2017"
 
-## <a name="publish-to-azure-kubernetes-service-aks"></a>Publikování do služby Azure Kubernetes Service (AKS)
+## <a name="publish-to-azure-kubernetes-service-aks"></a>Publikování do služby Azure Kubernetes (AKS)
 
-Všechny tyto soubory na místě můžete použít integrovaném vývojovém prostředí sady Visual Studio k psaní a ladění kódu aplikace stejně, jako je navíc vždy nutné. Můžete také použít [Azure Dev prostory](https://aka.ms/get-azds) rychlé spuštění a ladění kódu živě běžet v clusteru AKS. Další informace najdete [kurzu prostory vývoj Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+U všech těchto souborů můžete použít integrované vývojové prostředí (IDE) sady Visual Studio k psaní a ladění kódu aplikace, stejně jako vždy. [Azure dev Spaces](https://aka.ms/get-azds) můžete použít také k rychlému spuštění a ladění kódu spuštěného v clusteru AKS v reálném čase. Další informace najdete v [kurzu Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) .
 
-Jakmile budete mít kód fungovat způsobem, který chcete, můžete publikovat přímo ze sady Visual Studio do clusteru AKS.
+Jakmile budete mít kód spuštěný požadovaným způsobem, můžete publikovat přímo ze sady Visual Studio do clusteru AKS.
 
-Chcete-li to provést, musíte nejprve zkontrolujte, že všechno, co jste nainstalovali jak je popsáno v [požadavky](#prerequisites) v rámci části položky pro publikování do AKS a projít všechny kroky příkazového řádku zadané v odkazech. Potom nastavte profil publikování, který publikuje svou image kontejneru do služby Azure Container Registry (ACR). Potom AKS o přijetí změn svou image kontejneru ze služby ACR a nasaďte je do clusteru.
+Chcete-li to provést, musíte nejprve dvakrát ověřit, zda jste nainstalovali vše, jak je popsáno v části [požadavky](#prerequisites) v položce pro publikování do AKS, a projít všechny kroky příkazového řádku, které jsou uvedeny v odkazech. Pak nastavte profil publikování, který publikuje image kontejneru na Azure Container Registry (ACR). Pak AKS může načíst image kontejneru z ACR a nasadit ji do clusteru.
 
-1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na váš *projektu* a zvolte **publikovat**.
+1. V **Průzkumník řešení**klikněte pravým tlačítkem na *projekt* a vyberte **publikovat**.
 
-   ![Snímek obrazovky publikovat položku nabídky](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
+   ![Snímek obrazovky položky nabídky publikovat](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
 
-2. V **publikovat** obrazovce **Container Registry** jako publikovat cílit a postupujte podle pokynů k výběru vašeho registru kontejneru. Pokud ještě nemáte registr kontejnerů, zvolte **vytvořit nový registr kontejneru Azure** si ji vytvořit v sadě Visual Studio. Další informace najdete v tématu [kterého chcete kontejner publikovat do služby Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md).
+2. Na obrazovce **publikovat** zvolte jako cíl publikování možnost **Container Registry** a podle pokynů vyberte registr kontejneru. Pokud ještě nemáte registr kontejneru, vyberte **vytvořit nový Azure Container Registry** a vytvořte si ho ze sady Visual Studio. Další informace najdete v tématu [publikování kontejneru do Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md).
 
-   ![Snímek obrazovky výběru publikovat cílová obrazovka](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
+   ![Snímek obrazovky pro výběr cíle publikování](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
 
-3. Zpět v Průzkumníku řešení klikněte pravým tlačítkem na váš *řešení* a klikněte na tlačítko **publikování ve službě Azure AKS**.
+3. Zpátky v Průzkumník řešení klikněte pravým tlačítkem na *řešení* a potom klikněte na **publikovat do Azure AKS**.
 
-   ![Snímek obrazovky publikovat položku nabídky Azure AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
+   ![Snímek obrazovky s položkou nabídky publikovat do Azure AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
 
-4. Zvolte předplatné a AKS cluster, spolu s ACR Publikovat profil, který jste právě vytvořili. Pak klikněte na tlačítko **OK**.
+4. Vyberte své předplatné a cluster AKS spolu s profilem publikování ACR, který jste právě vytvořili. Pak klikněte na **OK**.
 
-   ![Snímek obrazovky publikovat na obrazovku AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
+   ![Snímek obrazovky publikování na AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
 
-   Tím přejdete **publikování ve službě Azure AKS** obrazovky.
+   Tím přejdete na obrazovku **publikovat do Azure AKS** .
 
-5. Zvolte **nakonfigurovat Helm** odkaz Aktualizovat příkazovým řádkem použitým k instalaci grafům helmu na serveru.
+5. Klikněte na odkaz **Konfigurovat Helm** a aktualizujte příkazový řádek použitý k instalaci grafů Helm na server.
 
-   ![Snímek obrazovky konfigurace Helm odkaz](media/tutorial-kubernetes-tools/k8s-tools-configure-helm.png)
+   ![Snímek obrazovky s odkazem na konfiguraci Helm](media/tutorial-kubernetes-tools/k8s-tools-configure-helm.png)
 
-   Aktualizace příkazového řádku je užitečné, pokud existují argumenty vlastní příkazové řádky, které chcete zadat, jako je například jiný název kontextu nebo grafu Kubernetes.
+   Aktualizace příkazového řádku je užitečná v případě, že existují vlastní argumenty příkazového řádku, které chcete zadat, jako je například jiný kontext Kubernetes nebo název grafu.
 
-   ![Snímek obrazovky Helm konfigurovat obrazovku](media/tutorial-kubernetes-tools/k8s-tools-helm-configure-screen.png)
+   ![Obrazovka obrazovky konfigurace Helm](media/tutorial-kubernetes-tools/k8s-tools-helm-configure-screen.png)
 
-6. Až budete připravení nasadit, klikněte na tlačítko **publikovat** tlačítko pro publikování aplikace pro AKS.
+6. Až budete připraveni k nasazení, klikněte na tlačítko **publikovat** a publikujte svou aplikaci do AKS.
 
-   ![Snímek obrazovky publikovat do Azure AKS obrazovky](media/tutorial-kubernetes-tools/k8s-tools-publish-screen.png)
+   ![Snímek obrazovky publikování na Azure AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-screen.png)
 
 ::: moniker-end
 
-Blahopřejeme! Teď můžete výkon sady Visual Studio pro všechny vývoje aplikací Kubernetes.
+Blahopřejeme! Nyní můžete využívat plnou sílu sady Visual Studio pro všechny aplikace Kubernetes pro vývoj aplikací.
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
-Další informace o vývoji Kubernetes v Azure najdete [dokumentaci ke službě AKS](/azure/aks).
+Další informace o vývoji Kubernetes v Azure najdete v [dokumentaci k AKS](/azure/aks).
 
-Další informace o Azure Dev prostory načtením [dokumentace ke službě Azure Dev mezery](https://aka.ms/get-azds)
+Další informace o Azure Dev Spaces najdete v [dokumentaci k Azure dev Spaces](https://aka.ms/get-azds)

@@ -1,5 +1,5 @@
 ---
-title: Úvod do úpravy v editoru kódu
+title: Úvod do úprav v editoru kódu
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
 ms.custom: get-started
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 913a5a08dc467ea23d22c2a08a23abfe70b9a736
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6741b40925f5d9914152d396be4686d166bf222
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943850"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180198"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 
@@ -32,7 +32,7 @@ V tomto úvodu během 10 minut do editoru kódu v sadě Visual Studio přidáme 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
+> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 
@@ -50,11 +50,11 @@ Začněte tím, že vytváří se nový soubor a přidat nějaký kód do něj.
 
 ::: moniker range=">=vs-2019"
 
-1. Otevřít Visual Studio. Stisknutím klávesy **Esc** nebo klikněte na tlačítko **pokračovat bez kódu** v okně start otevřete vývojové prostředí.
+1. Otevřít Visual Studio. Stisknutím klávesy **ESC** nebo kliknutím na **pokračovat bez kódu** v okně Start otevřete vývojové prostředí.
 
 ::: moniker-end
 
-2. Z **souboru** nabídku v panelu nabídky zvolte **nový** > **souboru**.
+2. V nabídce **soubor** na řádku nabídek vyberte možnost **Nový** > **soubor**.
 
 3. V **nový soubor** dialogovém okně **Obecné** kategorie, zvolte **třídy Visual C#** a klikněte na tlačítko **otevřít**.
 
@@ -66,7 +66,7 @@ Začněte tím, že vytváří se nový soubor a přidat nějaký kód do něj.
 
 Visual Studio poskytuje užitečné *fragmenty kódu* , že vám pomůže rychle a snadno generovat běžně používá bloky kódu. [Fragmenty kódu](../ide/code-snippets.md) jsou k dispozici pro různé programovací jazyky, včetně C#, Visual Basic a C++. Přidejme jazyka C# `void Main` fragment kódu do souboru.
 
-1. Umístěte ukazatel myši nad konečné pravou složenou závorku **}** v souboru a zadejte znaky `svm`. (`svm` zastupuje `static void Main`; [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) metoda je vstupním bodem pro C# aplikace.)
+1. Umístěte kurzor hned nad poslední pravou závorku do souboru a zadejte znaky `svm`. C# (`svm` zkratka`static void Main`; Metoda [Main ()](/dotnet/csharp/programming-guide/main-and-command-args/) je vstupním bodem pro aplikace.)
 
    Automaticky se zobrazí dialogové okno s informacemi o `svm` fragmentu kódu.
 

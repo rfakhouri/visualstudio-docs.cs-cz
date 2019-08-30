@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eccbc834f4038ec18c2f84244488b81a59ecbfbf
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 2e955c58be8d0df466ad102c95b0d1a8007588dc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531563"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180052"
 ---
-# <a name="personalize-the-visual-studio-ide-and-editor"></a>Přizpůsobení integrovaného vývojového prostředí sady Visual Studio a Editor
+# <a name="personalize-the-visual-studio-ide-and-editor"></a>Přizpůsobení integrovaného vývojového prostředí a editoru sady Visual Studio
 
-V tomto kurzu 5 až 10 minut přizpůsobíme barevný motiv sady Visual Studio tak, že vyberete tmavý motiv. Přizpůsobíme také barvy pro dva různé typy textu v textovém editoru.
+V tomto kurzu 5-10 minut přizpůsobíme barevný motiv sady Visual Studio tak, že vyberete tmavý motiv. Přizpůsobíme také barvy pro dva různé typy textu v textovém editoru.
 
 ::: moniker range="vs-2017"
 
@@ -26,19 +26,19 @@ Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory k
 
 ::: moniker range=">=vs-2019"
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 
 ## <a name="set-the-color-theme"></a>Nastavit barevný motiv
 
-Výchozí barevný motiv uživatelského rozhraní sady Visual Studio se nazývá **modré**. Změňme ji na **tmavě**.
+Výchozí barevný motiv pro uživatelské rozhraní sady Visual Studio se nazývá **modrý**. Změňme ji na **tmavě**.
 
 1. Na panelu nabídek, které, jako je na řádku nabídek **souboru** a **upravit**, zvolte **nástroje** > **možnosti**.
 
 1. Na **prostředí** > **Obecné** stránka Možnosti, změna **barevný motiv** výběru **tmavě**a klikněte na tlačítko **OK**.
 
-   Barva motivu pro celý vývojové prostředí (IDE) sady Visual Studio se změní na **tmavě**.
+   Barevný motiv pro celé vývojové prostředí (IDE) sady Visual Studio se změní na **tmavý**.
 
    ::: moniker range="vs-2017"
 
@@ -53,7 +53,7 @@ Výchozí barevný motiv uživatelského rozhraní sady Visual Studio se nazýv�
    ::: moniker-end
 
 > [!TIP]
-> Můžete nainstalovat další předdefinované motivy nainstalováním **Editor motivů sady Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po instalaci tohoto nástroje, další barevné motivy joinkind **barevný motiv** rozevíracího seznamu.
+> Můžete nainstalovat další předdefinované motivy tím, že z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor)nainstalujete **Editor barevných motivů sady Visual Studio** . Po instalaci tohoto nástroje, další barevné motivy joinkind **barevný motiv** rozevíracího seznamu.
 
 ## <a name="change-text-color"></a>Změna barvy textu
 

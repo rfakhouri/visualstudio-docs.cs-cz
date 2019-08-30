@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 6944c930ba6357fffeebba417a32cd167bd4debd
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493322"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179821"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Ladění živé aplikace ASP.NET Azure pomocí ladicího programu snímků
 
@@ -37,7 +37,7 @@ V tomto kurzu se naučíte:
 * Snapshot Debugger je k dispozici pouze počínaje verzí Visual Studio 2017 Enterprise verze 15,5 nebo vyšší s **úlohou vývoj pro Azure**. (Na kartě **jednotlivé součásti** najdete v části **ladění a testování** > **snímků – ladicí program**.)
 
    ::: moniker range=">=vs-2019"
-   Pokud ještě není nainstalován, nainstalujte [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Pokud aktualizujete z předchozí instalace sady Visual Studio, spusťte Instalační program pro Visual Studio a podívejte se na součást Snapshot Debugger v **ASP.NET a vývoji webu**.
+   Pokud ještě není nainstalován, nainstalujte [Visual Studio 2019](https://visualstudio.microsoft.com/downloads). Pokud aktualizujete z předchozí instalace sady Visual Studio, spusťte Instalační program pro Visual Studio a podívejte se na součást Snapshot Debugger v **ASP.NET a vývoji webu**.
    ::: moniker-end
    ::: moniker range="<=vs-2017"
    Pokud ještě není nainstalovaný, nainstalujte [Visual Studio Enterprise 2017 verze 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) nebo novější. Pokud aktualizujete z předchozí instalace sady Visual Studio 2017, spusťte Instalační program pro Visual Studio a podívejte se na součást Snapshot Debugger v úloze **vývoje ASP.NET a webu**.

@@ -1,7 +1,7 @@
 ---
 title: 'Kurz: Začínáme s C# a ASP.NET Core'
 titleSuffix: ''
-description: Zjistěte, jak vytvořit webovou aplikaci ASP.NET Core v sadě Visual Studio s C#, krok za krokem.
+description: Naučte se, jak vytvořit webovou aplikaci ASP.NET Core v aplikaci Visual C#Studio s nástrojem, krok za krokem.
 ms.custom: seodec18, get-started
 ms.date: 05/29/2019
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 00423f3affa5c882137ee19c355252acbf23c976
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: ac544f033e8b021b7ef0a6253fbd0cb65b4450f5
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402120"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180482"
 ---
-# <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Kurz: Začínáme s C# a ASP.NET Core v sadě Visual Studio
+# <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Kurz: Začínáme s C# a ASP.NET Core v aplikaci Visual Studio
 
-V tomto kurzu o vývoji C# s využitím ASP.NET Core pomocí sady Visual Studio budete vytvoření webové aplikace v C# ASP.NET Core, provést změny, prozkoumat některé funkce integrovaného vývojového prostředí a pak spusťte aplikaci.
+V tomto kurzu pro C# vývoj s ASP.NET Core pomocí sady Visual Studio vytvoříte webovou aplikaci C# ASP.NET Core, provedete její změny, prozkoumáte některé funkce rozhraní IDE a pak aplikaci spustíte.
 
 ## <a name="before-you-begin"></a>Před zahájením
 
@@ -39,178 +39,178 @@ Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory k
 
 ::: moniker range="vs-2019"
 
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads) stránku a nainstalovat zdarma.
 
 ::: moniker-end
 
 ### <a name="update-visual-studio"></a>Aktualizace sady Visual Studio
 
-Pokud jste již nainstalovali aplikaci Visual Studio, ujistěte se, že používáte nejnovější verzi. Další informace o tom, jak aktualizovat vaši instalaci, najdete v článku [aktualizovat na nejnovější verzi aplikace Visual Studio](../../install/update-visual-studio.md) stránky.
+Pokud jste již nainstalovali aplikaci Visual Studio, ujistěte se, že používáte nejnovější verzi. Další informace o tom, jak aktualizovat instalaci, najdete na stránce o [aktualizaci sady Visual Studio na nejnovější verzi](../../install/update-visual-studio.md) .
 
 ### <a name="choose-your-theme-optional"></a>Zvolte motiv (volitelné)
 
-V tomto kurzu zahrnuje snímky obrazovky, použít tmavý motiv. Pokud nepoužíváte tmavý motiv, ale chtěli, najdete v článku [přizpůsobit IDE sady Visual Studio a Editor](../../ide/quickstart-personalize-the-ide.md) stránku a zjistěte, jak.
+Tento kurz obsahuje snímky obrazovky, které používají tmavý motiv. Pokud nepoužíváte tmavý motiv, ale chtěli, najdete v článku [přizpůsobit IDE sady Visual Studio a Editor](../../ide/quickstart-personalize-the-ide.md) stránku a zjistěte, jak.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
-Nejprve vytvoříte projekt ASP.NET Core. Typ projektu obsahuje všechny soubory šablony, které budete potřebovat plně funkčním webem, než jste přidali ještě nic!
+Nejprve vytvoříte projekt ASP.NET Core. Typ projektu se dodává se všemi soubory šablon, které budete potřebovat pro plně funkční web, než dokonce cokoli přidáte!
 
 ::: moniker range="vs-2017"
 
 1. Otevřete Visual Studio 2017.
 
-2. V horní nabídce zvolte **souboru** > **nový** > **projektu**.
+2. V horním řádku nabídek vyberte **soubor** > **Nový** > **projekt**.
 
-3. V **nový projekt** dialogové okno v levém podokně rozbalte **Visual C#** , rozbalte **webové**a klikněte na tlačítko **.NET Core**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**. Pojmenujte jej *MyCoreApp* a zvolte **OK**.
+3. V dialogovém okně **Nový projekt** v levém podokně rozbalte položku **vizuál C#** , rozbalte položku **Web**a potom zvolte možnost **.NET Core**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**. Pak název souboru *MyCoreApp* a zvolte **OK**.
 
    ![Šablona projektu webové aplikace ASP.NET Core v dialogovém okně Nový projekt v integrovaném vývojovém prostředí sady Visual Studio](media/csharp-aspnet-choose-template-name-razor-mycoreapp-file.png)
 
 ### <a name="add-a-workload-optional"></a>Přidat úlohu (volitelné)
 
-Pokud se nezobrazí **webové aplikace ASP.NET Core** šablony projektu, můžete ho získat tak, že přidáte **vývoj pro ASP.NET a web** pracovního vytížení. Přidejte tuto úlohu v jednom z následujících způsobů, v závislosti na tom, které jsou na vašem počítači nainstalovaná aktualizace sady Visual Studio 2017.
+Pokud nevidíte šablonu projektu **ASP.NET Core webové aplikace** , můžete ji získat přidáním úlohy **vývoje pro ASP.NET a web** . Tuto úlohu můžete přidat jedním ze dvou způsobů, v závislosti na tom, které aktualizace sady Visual Studio 2017 jsou nainstalovány na vašem počítači.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Pomocí dialogového okna Nový projekt
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Možnost 1: Použití dialogového okna Nový projekt
 
-1. Vyberte **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. (V závislosti na nastavení zobrazení může být potřeba stránku posunout, aby ji.)
+1. V levém podokně dialogového okna **Nový projekt** vyberte odkaz **otevřít instalační program pro Visual Studio** . (V závislosti na nastavení zobrazení může být potřeba stránku posunout, aby ji.)
 
-   ![Vyberte odkaz otevřít instalační program Visual Studio z dialogového okna Nový projekt](../media/open-visual-studio-installer-mycoreapp.png)
-
-1. Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro ASP.NET a web** úlohy a klikněte na tlačítko **změnit**.
-
-   ![Úlohy pro vývoj pro různé platformy .NET core v instalačním programu sady Visual Studio](../media/tutorial-aspnet-workload.png)
-
-   (Může mít ukončit sadu Visual Studio, abyste mohli pokračovat v instalaci nové úlohy.)
-
-#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Pomocí nabídky panelu nástrojů
-
-1. Zrušit z celkového počtu **nový projekt** dialogové okno. Potom v horní nabídce vyberte **nástroje** > **stažení nástrojů a funkcí**.
+   ![Vyberte odkaz otevřít Instalační program pro Visual Studio z dialogového okna Nový projekt.](../media/open-visual-studio-installer-mycoreapp.png)
 
 1. Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro ASP.NET a web** úlohy a klikněte na tlačítko **změnit**.
 
+   ![Úlohy vývoje .NET Core pro různé platformy v Instalační program pro Visual Studio](../media/tutorial-aspnet-workload.png)
+
    (Může mít ukončit sadu Visual Studio, abyste mohli pokračovat v instalaci nové úlohy.)
 
-### <a name="add-a-project-template"></a>Přidat šablonu projektu
+#### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Použití panelu nabídek nástrojů
 
-1. V **nová webová aplikace ASP.NET Core** dialogového okna zvolte **webovou aplikaci** šablony projektu.
+1. Zruší se dialogové okno **Nový projekt** . Pak na horním panelu nabídek zvolte **nástroje** > **získat nástroje a funkce**.
 
-1. Ověřte, že **ASP.NET Core 2.1** se zobrazí v horní nabídce rozevíracího seznamu. Potom kliknutím na možnost **OK**.
+1. Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro ASP.NET a web** úlohy a klikněte na tlačítko **změnit**.
 
-   ![Dialogové okno nové webové aplikace ASP.NET Core](media/new-project-csharp-aspnet-razor-web-app.png)
+   (Může mít ukončit sadu Visual Studio, abyste mohli pokračovat v instalaci nové úlohy.)
+
+### <a name="add-a-project-template"></a>Přidání šablony projektu
+
+1. V dialogovém okně **Nová webová aplikace ASP.NET Core** vyberte šablonu projektu **Webová aplikace** .
+
+1. Ověřte, že se v horní rozevírací nabídce zobrazuje **ASP.NET Core 2,1** . Pak klikněte na **tlačítko OK**.
+
+   ![Dialogové okno Nová webová aplikace ASP.NET Core](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > Pokud nevidíte **ASP.NET Core 2.1** z hlavní nabídky rozevíracího seznamu, ujistěte se, že používáte nejnovější verzi sady Visual Studio. Další informace o tom, jak aktualizovat vaši instalaci, najdete v článku [aktualizovat na nejnovější verzi aplikace Visual Studio](../../install/update-visual-studio.md) stránky.
+   > Pokud v horní rozevírací nabídce nevidíte **ASP.NET Core 2,1** , ujistěte se, že používáte nejnovější verzi sady Visual Studio. Další informace o tom, jak aktualizovat instalaci, najdete na stránce o [aktualizaci sady Visual Studio na nejnovější verzi](../../install/update-visual-studio.md) .
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. V okně start zvolte **vytvořte nový projekt**.
+1. V okně Start vyberte možnost **vytvořit nový projekt**.
 
-   ![Zobrazit okno 'vytvořte nový projekt.](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Zobrazit okno vytvořit nový projekt](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Na **vytvořte nový projekt** okno, zadejte nebo zadejte *ASP.NET* do vyhledávacího pole. Dále zvolte **C#** od jazyka seznamu a klikněte na tlačítko **Windows** ze seznamu platformy.
+1. V okně **vytvořit nový projekt** zadejte nebo do vyhledávacího pole zadejte *ASP.NET* . Dále zvolte **C#** ze seznamu jazyk a v seznamu platforma zvolte možnost **Windows** .
 
-   Po použití filtrů jazyka a libovolné platformy, zvolte **webové aplikace ASP.NET Core** šablony a klikněte na tlačítko **Další**.
+   Po použití filtrů jazyků a platforem zvolte šablonu **ASP.NET Core webové aplikace** a klikněte na tlačítko **Další**.
 
-   ![Zvolte C# šablony pro webové aplikace ASP.NET Core](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+   ![Zvolit C# šablonu pro ASP.NET Core webovou aplikaci](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
 
    > [!NOTE]
-   > Pokud se nezobrazí **webové aplikace ASP.NET Core** šablony, můžete jej nainstalovat z **vytvořte nový projekt** okna. V **nenašli, co hledáte?** zprávu, zvolte **nainstalovat další nástroje a funkce** odkaz.
+   > Pokud nevidíte šablonu **ASP.NET Core webové aplikace** , můžete ji nainstalovat z okna **vytvořit nový projekt** . V části **nenajít, co hledáte?** klikněte na odkaz **instalovat další nástroje a funkce** .
    >
-   > ![Odkaz "Nainstalovat další nástroje a funkce" z 'Nemůžete najít, co hledáte' zprávy v okně "vytvořit nový projekt.](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![Odkaz pro instalaci dalších nástrojů a funkcí v okně vytvořit nový projekt v části nenajít, co hledáte?](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Pak ve Visual Studio Installer, zvolte **vývoj pro ASP.NET a web** pracovního vytížení.
+   > Pak v Instalační program pro Visual Studio zvolte úlohu **vývoje ASP.NET a web** .
    >
-   > ![Úlohy pro vývoj pro různé platformy .NET core v instalačním programu sady Visual Studio](../../get-started/media/aspnet-core-web-dev-workload.png)
+   > ![Úlohy vývoje .NET Core pro různé platformy v Instalační program pro Visual Studio](../../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > Po tomto, zvolte **změnit** tlačítko v instalačním programu sady Visual Studio. Pokud budete vyzváni k uložte svou práci, udělejte to. Dále zvolte **pokračovat** instalace zatížení. Pak se vraťte ke kroku 2 v tomto "[vytvořte projekt](#create-a-project)" postup.
+   > Potom klikněte na tlačítko **Upravit** v instalační program pro Visual Studio. Pokud budete vyzváni k uložení práce, udělejte to. V dalším kroku vyberte **pokračovat** a nainstalujte úlohu. Pak se vraťte ke kroku 2 v tomto postupu "[Vytvoření projektu](#create-a-project)".
 
-1. V **konfigurovat nový projekt** okno, zadejte nebo vložte *MyCoreApp* v **název projektu** pole. Potom kliknutím na možnost **vytvořit**.
+1. V okně **Konfigurovat nový projekt** zadejte nebo zadejte *MyCoreApp* do pole **název projektu** . Pak zvolte **vytvořit**.
 
-   ![v okně 'Konfigurovat nový projekt' pojmenujte svůj projekt "MyCoreApp.](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
+   ![v okně Konfigurovat nový projekt pojmenujte projekt ' MyCoreApp '.](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
 
-1. V **vytvořit novou webovou aplikaci ASP.NET Core** okna, ověřte, že **ASP.NET Core 2.1** se zobrazí v horní nabídce rozevíracího seznamu. Potom kliknutím na možnost **webovou aplikaci**, který obsahuje příklad stránky Razor. Dále zvolte **vytvořit**.
+1. V okně **vytvořit novou webovou aplikaci ASP.NET Core** ověřte, zda se v horní rozevírací nabídce zobrazí **ASP.NET Core 2,1** . Pak zvolte **Webová aplikace**, která obsahuje například Razor Pages. Pak vyberte **vytvořit**.
 
-   ![V okně "vytvořit novou webovou aplikaci ASP.NET Core.](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+   ![Okno vytvořit novou ASP.NET Core webovou aplikaci](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
 
    Visual Studio otevře nový projekt.
 
 ::: moniker-end
 
-### <a name="about-your-solution"></a>Informace o řešení
+### <a name="about-your-solution"></a>O řešení
 
-Toto řešení následuje **stránky Razor** vzoru návrhu. Se liší od [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) návrhu v tom, že zjednodušené zahrnout samotný kód modelu a kontroler v rámci stránky Razor.
+Toto řešení se řídí vzorem návrhu **stránky Razor** . Je jiný než vzor návrhu [MVC (Model-View-Controller)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) v tom, že je zjednodušený tak, aby zahrnoval model a kód kontroleru v rámci samotné stránky Razor.
 
-## <a name="tour-your-solution"></a>Prohlédnete si vašich řešení
+## <a name="tour-your-solution"></a>Projděte si řešení
 
- 1. Šablona projektu vytvoří řešení pomocí jednoho projektu ASP.NET Core, který je pojmenován _MyCoreApp_. Zvolte **Průzkumníka řešení** kartu a zobrazit jeho obsah.
+ 1. Šablona projektu vytvoří řešení s jedním ASP.NET Core projektem s názvem _MyCoreApp_. Kliknutím na kartu **Průzkumník řešení** zobrazíte její obsah.
 
-    ![Průzkumníka řešení ASP.NET v sadě Visual Studio pro stránky Razor řešení s názvem MyCoreApp](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
+    ![ASP.NET Průzkumník řešení v aplikaci Visual Studio pro Razor Pages řešení s názvem MyCoreApp](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
 
- 1. Rozbalte **stránky** složky a potom rozbalte *About.cshtml*.
+ 1. Rozbalte složku **stránky** a poté rozbalte položku *o. cshtml*.
 
-     ![About.cshtml souboru v Průzkumníku řešení v sadě Visual Studio](media/csharp-aspnet-razor-solution-explorer-aboutcshtml.png)
+     ![Soubor About. cshtml v Průzkumník řešení v aplikaci Visual Studio](media/csharp-aspnet-razor-solution-explorer-aboutcshtml.png)
 
- 1. Zobrazení **About.cshtml** souboru v editoru kódu.
+ 1. Prohlédněte si soubor **About. cshtml** v editoru kódu.
 
-     ![Zobrazení About.cshtml souboru v editoru kódu sady Visual Studio](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
+     ![Zobrazení souboru About. cshtml v editoru kódu sady Visual Studio](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
 
- 1. Zvolte **About.cshtml.cs** souboru.
+ 1. Vyberte soubor **About.cshtml.cs** .
 
-     ![Zvolte soubor About.cshtml.cs v editoru kódu sady Visual Studio](media/csharp-aspnet-razor-solution-explorer-aboutcshtmlcs.png)
+     ![Zvolit soubor About.cshtml.cs v editoru kódu sady Visual Studio](media/csharp-aspnet-razor-solution-explorer-aboutcshtmlcs.png)
 
- 1. Zobrazení **About.cshtml.cs** souboru v editoru kódu.
+ 1. Zobrazit soubor **About.cshtml.cs** v editoru kódu.
 
-     ![Zobrazení About.cshtml souboru v editoru kódu sady Visual Studio](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![Zobrazení souboru About. cshtml v editoru kódu sady Visual Studio](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
- 1. Obsahuje projekt **wwwroot** složku, která je kořenový adresář pro váš web. Rozbalte složky a zobrazit jeho obsah.
+ 1. Projekt obsahuje složku **wwwroot** , která je kořenem vašeho webu. Rozbalte složku pro zobrazení jejího obsahu.
 
-     ![složky Wwwroot v Průzkumníku řešení v sadě Visual Studio](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
+     ![Složka wwwroot v Průzkumník řešení v aplikaci Visual Studio](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
 
-    Můžete vložit obsah statického webu&mdash;jako jsou šablony stylů CSS, obrázky a knihovny JavaScript&mdash;přímo v cestách kamkoli chcete.
+    Statický obsah&mdash;webu, jako jsou CSS, obrázky a knihovny&mdash;JavaScriptu, můžete umístit přímo do cest, kde je chcete.
 
- 1. Projekt také obsahuje konfigurační soubory, které Správa webové aplikace za běhu. Výchozí aplikace [konfigurace](/aspnet/core/fundamentals/configuration) je uložen v *appsettings.json*. Tato nastavení však můžete přepsat pomocí *appsettings. Development.JSON*. Rozbalte **appsettings.json** soubor zobrazíte **appsettings. Development.JSON** souboru.
+ 1. Projekt také obsahuje konfigurační soubory, které spravují webovou aplikaci za běhu. Výchozí [Konfigurace](/aspnet/core/fundamentals/configuration) aplikace je uložena v souboru *appSettings. JSON*. Tato nastavení však můžete přepsat pomocí *appSettings. Vývoj. JSON*. Rozbalením souboru **appSettings. JSON** zobrazíte **appSettings. Soubor Development. JSON** .
 
-     ![Konfigurační soubory v Průzkumníku řešení v sadě Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
+     ![Konfigurační soubory v Průzkumník řešení v aplikaci Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
-## <a name="run-debug-and-make-changes"></a>Spouštět, ladit a provést změny
+## <a name="run-debug-and-make-changes"></a>Spuštění, ladění a provádění změn
 
-1. Zvolte **služby IIS Express** tlačítko v integrovaném vývojovém prostředí pro sestavení a spuštění aplikace v režimu ladění. (Nebo stisknout **F5**, nebo zvolte **ladění** > **spustit ladění** z řádku nabídek.)
+1. Kliknutím na tlačítko **IIS Express** v integrovaném vývojovém prostředí sestavíte a spustíte aplikaci v režimu ladění. (Nebo stiskněte klávesu **F5**nebo zvolte **ladění** > **Spustit ladění** z řádku nabídek.)
 
-     ![Vyberte tlačítko služby IIS Express v sadě Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
+     ![Výběr tlačítka IIS Express v aplikaci Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
-     > Pokud se zobrazí chybová zpráva s upozorněním **nelze se připojit k webovému serveru služby IIS Express**, zavřete sadu Visual Studio a otevřete jej pomocí **spustit jako správce** možnost v nabídce klikněte pravým tlačítkem nebo kontext. Spusťte aplikaci znovu.
+     > Pokud se zobrazí chybová zpráva s oznámením, že se **nelze připojit k webovému serveru ' IIS Express '** , ukončete aplikaci Visual Studio a pak ji otevřete pomocí možnosti **Spustit jako správce** v nabídce nebo v místní nabídce klikněte pravým tlačítkem myši. Spusťte aplikaci znovu.
      >
-     > Může se také zobrazit zprávu s dotazem, jestli chcete přijmout certifikát SSL služby IIS Express. Chcete-li zobrazit kód ve webovém prohlížeči, zvolte **Ano**a klikněte na tlačítko **Ano** Pokud obdržíte zprávu s upozorněním zabezpečení zpracování.
+     > Může se také zobrazit zpráva s dotazem, zda chcete přijmout certifikát IIS SSL Express. Chcete-li zobrazit kód ve webovém prohlížeči, zvolte možnost **Ano**a zvolte možnost **Ano** , pokud se zobrazí zpráva s upozorněním na následné zabezpečení.
 
-1. Visual Studio otevře okno prohlížeče. Pak zobrazí **Domů**, **o**, a **kontakt** stránky v panelu nabídek. (Pokud to neuděláte, vyberte položku "hamburgerové" nabídky si je chcete zobrazit.)
+1. Visual Studio spustí okno prohlížeče. V řádku nabídek byste pak měli vidět stránky **Domů**, **o produktu**a **kontakt** . (Pokud to neuděláte, vyberte položku nabídky "hamburgerovou" "a zobrazte si je.)
 
-    ![Vyberte položku "hamburgerové" nabídky na řádku nabídek ve vaší webové aplikaci](media/csharp-aspnet-razor-browser-page.png)
+    ![Vyberte položku nabídky "hamburgerovou" "z řádku nabídek ve vaší webové aplikaci.](media/csharp-aspnet-razor-browser-page.png)
 
-1. Zvolte **o** z řádku nabídek.
+1. V řádku nabídek vyberte **o** .
 
-   ![Vyberte o v řádku nabídek okna prohlížeče pro vaši aplikaci](media/csharp-aspnet-razor-browser-page-about-menu.png)
+   ![Výběr informací o v panelu nabídek okna prohlížeče pro vaši aplikaci](media/csharp-aspnet-razor-browser-page-about-menu.png)
 
-   Mimo jiné **o** text, který je nastavena v vykreslí stránku v prohlížeči *About.cshtml* souboru.
+   Mimo jiné se stránka **About** v prohlížeči vykresluje text, který je nastaven v souboru *About. cshtml* .
 
-   ![Zobrazit text na stránce o](media/csharp-aspnet-razor-browser-page-about.png)
+   ![Zobrazení textu na stránce o produktu](media/csharp-aspnet-razor-browser-page-about.png)
 
-1. Vraťte se do sady Visual Studio a potom stiskněte klávesu **Shift + F5** zastavení režimu ladění. Také se zavře projektu v okně prohlížeče.
+1. Vraťte se do sady Visual Studio a stisknutím **SHIFT + F5** zastavte režim ladění. Tím se také zavře projekt v okně prohlížeče.
 
-1. V sadě Visual Studio, zvolte **About.cshtml**. Odstraňte slovo _Další_ a místo něj přidat slova _souborů a adresářů_.
+1. V aplikaci Visual Studio, vyberte **o. cshtml**. Pak odstraňte slovo _Další_ a místo na svém místě přidejte slovo _soubor a adresář_.
 
-    ![Změní celý text v souboru About.cshtml](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
+    ![Změna textu v souboru About. cshtml](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
-1. Zvolte **About.cshtml.cs**. Potom Vyčistit `using` direktivy v horní části souboru s použitím následující klávesovou zkratku:
+1. Vyberte **About.cshtml.cs**. Pak v horní části souboru `using` vyčistěte direktivy pomocí následujícího zástupce:
 
-   Vybrat kteroukoli z šedě `using` direktivy a [rychlé akce](../../ide/quick-actions.md) žárovka se zobrazí pod blikajícím kurzorem nebo na levém okraji. Zvolte žárovku a pak zvolte **odebrat nepotřebné direktivy using**.
+   Vyberte některou z šedých direktiv-out `using` a žárovku s [rychlými akcemi](../../ide/quick-actions.md) se zobrazí hned pod blikajícím kurzorem nebo na levém okraji. Zvolte žárovku a pak zvolte **odebrat nepotřebné**direktivy using.
 
-   ![V souboru About.cshtml.cs odebrat nepotřebné direktivy using](media/csharp-aspnet-razor-remove-unnecessary-usings.png)
+   ![Odebrat nepotřebné direktivy using v souboru About.cshtml.cs](media/csharp-aspnet-razor-remove-unnecessary-usings.png)
 
-     Visual Studio odstraní nadbytečné `using` direktivy ze souboru.
+     Visual Studio odstraní nepotřebné `using` direktivy ze souboru.
 
-1. Vedle `OnGet()` metodu, změňte obsah následujícím kódem:
+1. Dále v `OnGet()` metodě změňte tělo na následující kód:
 
      ```csharp
      public void OnGet()
@@ -220,48 +220,48 @@ Toto řešení následuje **stránky Razor** vzoru návrhu. Se liší od [Model-
      }
     ```
 
-1. Všimněte si, že dvě podtržení vlnovkou Microsoft.VSTS.Common **prostředí** a **řetězec**. Podtržení vlnovkou zobrazeny, protože tyto typy nejsou v oboru.
+1. Všimněte si, že v části **prostředí** a **řetězec**se zobrazí dvě podtržení vlnovkou. Podtržení vlnovkou se zobrazí, protože tyto typy nejsou v oboru.
 
-   ![Chyby označené podtržení vlnovkou v OnGet – metoda](media/csharp-aspnet-razor-add-new-on-get-method.png)
+   ![Chyby označené podtrženými vlnovkami v metodě OnGet](media/csharp-aspnet-razor-add-new-on-get-method.png)
 
-    Otevřít **seznam chyb** nástrojů se zobrazí stejné chyby uvedeny zde. (Pokud se nezobrazí **seznam chyb** nástrojů, zvolte **zobrazení** > **seznam chyb** v horní nabídce.)
+    Otevřete panel nástrojů **Seznam chyb** pro zobrazení stejných chyb uvedených v seznamu. (Pokud panel nástrojů **Seznam chyb** nevidíte, vyberte v horním řádku nabídky možnost **Zobrazit** > **Seznam chyb** .)
 
    ![Seznam chyb v sadě Visual Studio](media/csharp-aspnet-razor-error-list.png)
 
-1. Opravíme to. V editoru kódu umístěte ukazatel myši buď řádku, který obsahuje chybu a pak zvolte žárovky rychlé akce na levém okraji. Zvolte z rozevírací nabídky **pomocí systému;** případné chyby opravte a přidejte tuto direktivu do horní části souboru.
+1. Pojďme to opravit. V editoru kódu umístěte kurzor na buď řádek, který obsahuje chybu, a pak zvolte žárovku rychlé akce na levém okraji. Pak z rozevírací nabídky zvolte **použít systém;** k přidání této direktivy do horní části souboru a vyřešení chyb.
 
-   ![Přidat "použití systému;" – direktiva](media/csharp-aspnet-razor-add-usings.png)
+   ![Přidat direktivu using System;](media/csharp-aspnet-razor-add-usings.png)
 
-1. Stisknutím klávesy **Ctrl**+**S** uložte provedené změny a potom stiskněte klávesu **F5** otevřete projekt ve webovém prohlížeči.
+1. Stisknutím **kombinace kláves CTRL +** +uložte změny a potom stisknutím klávesy **F5** otevřete projekt ve webovém prohlížeči.
 
-1. V horní části stránky na webu společnosti, zvolte **o** zobrazíte změny.
+1. V horní části webu vyberte možnost **o** zobrazení změn.
 
-   ![Zobrazit aktualizovaný o stránku, která obsahuje změny, které jste provedli](media/csharp-aspnet-razor-browser-page-about-changed.png)
+   ![Zobrazit aktualizované informace o stránce, která obsahuje změny, které jste provedli](media/csharp-aspnet-razor-browser-page-about-changed.png)
 
-1. Zavřete webový prohlížeč, stiskněte klávesu **Shift**+**F5** zastavení režimu ladění, a pak zavřete sadu Visual Studio.
+1. Zavřete webový prohlížeč, stisknutím klávesy **SHIFT**+**F5** zastavte režim ladění a poté zavřete aplikaci Visual Studio.
 
-## <a name="quick-answers-faq"></a>Rychlé odpovědi – nejčastější dotazy
+## <a name="quick-answers-faq"></a>Rychlé odpovědi – Nejčastější dotazy
 
-Tady je rychlý – nejčastější dotazy ke zvýraznění některých klíčových koncepcí.
+Tady je rychlý přehled nejčastějších dotazů, které vám pomůžeme zvýraznit některé klíčové koncepty.
 
-### <a name="what-is-c"></a>Co je C#?
+### <a name="what-is-c"></a>Co je C#to?
 
-[C#](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework) je typově bezpečný a objektově orientovaný programovací jazyk, který bude robustní a snadno osvojitelná.
+[C#](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework)je typově bezpečný a objektově orientovaný programovací jazyk, který je navržený tak, aby byl robustní a snadno se učí.
 
 ### <a name="what-is-aspnet-core"></a>Co je ASP.NET Core?
 
-ASP.NET Core je open source a multiplatformní rozhraní pro vytváření aplikací připojených k Internetu, jako jsou webové aplikace a služby. Aplikace ASP.NET Core můžete spustit na .NET Core nebo .NET Framework. Můžete vyvíjet a spouštět multiplatformní aplikace ASP.NET Core ve Windows, Mac a Linux. ASP.NET Core je open source v [Githubu](https://github.com/aspnet/home).
+ASP.NET Core je open source architektura pro různé platformy pro vytváření aplikací připojených k Internetu, jako jsou například webové aplikace a služby. Aplikace ASP.NET Core mohou běžet buď v rozhraní .NET Core, nebo v .NET Framework. Můžete vyvíjet a spouštět aplikace ASP.NET Core pro různé platformy v systémech Windows, Mac a Linux. ASP.NET Core je open source na [GitHubu](https://github.com/aspnet/home).
 
-### <a name="what-is-visual-studio"></a>Co je sada Visual Studio?
+### <a name="what-is-visual-studio"></a>Co je Visual Studio?
 
-Visual Studio je integrované vývojové sady nástrojů podporujících produktivitu pro vývojáře. Si ho představit jako program, který můžete použít k vytvoření aplikací a aplikací.
+Visual Studio je integrovaná vývojová sada nástrojů pro produktivitu pro vývojáře. Představte si ho jako program, který můžete použít k vytvoření programů a aplikací.
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
-Blahopřejeme k dokončení tohoto kurzu! Doufáme, že jste se dozvěděli ještě něco o jazyce C#, ASP.NET Core a integrovaném vývojovém prostředí sady Visual Studio. Další informace o vytváření webové aplikace nebo webu pomocí jazyka C# a technologie ASP.NET, pokračujte v následujících kurzech:
+Blahopřejeme k dokončení tohoto kurzu! Doufáme, že jste se dozvěděli C#trochu o, ASP.NET Core a integrovaném vývojovém prostředí sady Visual Studio. Další informace o vytváření webové aplikace nebo webu pomocí C# a ASP.NET najdete v následujících kurzech:
 
 > [!div class="nextstepaction"]
-> [Vytvoření webové aplikace stránky Razor pomocí ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+> [Vytvoření webové aplikace v Razor Pages s využitím ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
 
 ## <a name="see-also"></a>Viz také:
 
