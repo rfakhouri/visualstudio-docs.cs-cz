@@ -45,7 +45,6 @@
 ##### [Předplatné MSDN Magazine](vs-msdn.md)
 ##### [Pluralsight](vs-pluralsight.md)
 #### Podpora 
-##### [Chat s poradcem pro Azure](vs-azure-advisory-chat.md)
 ##### [Komunita Azure](vs-azure-community.md)
 ##### [Podpora od specialisty](vs-concierge-chat.md)
 ##### [Technická podpora](vs-tech-support.md)
