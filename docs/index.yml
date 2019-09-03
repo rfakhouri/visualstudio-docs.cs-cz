@@ -1,19 +1,19 @@
 ### YamlMime:Hub
 title: Dokumentace sady Visual Studio
-summary: Další informace o použití sady Visual Studio pro vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
+summary: Naučte se používat Visual Studio k vývoji aplikací, služeb a nástrojů v jazyce podle vašeho výběru, pro vaše platformy a zařízení.
 brand: visual-studio
 metadata:
   title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
   titleSuffix: ''
-  description: Další informace o použití sady Visual Studio pro vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru pro jakoukoli platformu nebo zařízení.
+  description: Naučte se používat Visual Studio k vývoji aplikací, služeb a nástrojů v jazyce podle vašeho výběru, a to pro libovolnou platformu nebo zařízení.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
-  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+  ms.openlocfilehash: 22c6d731d3c7bfaefb6ee0d89d7bae088d86c035
+  ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
   ms.translationtype: MT
   ms.contentlocale: cs-CZ
-  ms.lasthandoff: 07/01/2019
-  ms.locfileid: "67493717"
+  ms.lasthandoff: 09/03/2019
+  ms.locfileid: "70222659"
 highlightedContent:
   items:
   - title: Nastavení a instalace
@@ -25,7 +25,7 @@ highlightedContent:
   - title: Novinky v sadě Visual Studio 2019
     itemType: get-started
     url: /visualstudio/ide/whats-new-visual-studio-2019
-  - title: Vylepšit vaše dovednosti v oblasti vývoje
+  - title: Zlepšení schopností vývoje
     itemType: learn
     url: /learn/
 conceptualContent:
@@ -33,10 +33,10 @@ conceptualContent:
   items:
   - title: Zjistěte, jak pomocí sady Visual Studio
     links:
-    - text: Spustit prohlídku s průvodcem
+    - text: Spustit prohlídku s asistencí
       url: ide/visual-studio-ide.md
       itemType: overview
-    - text: Otevřete kód z úložiště
+    - text: Otevření kódu z úložiště
       url: get-started/tutorial-open-project-from-repo.md
       itemType: tutorial
     - text: Psaní kódu a jeho úpravy
@@ -54,7 +54,7 @@ conceptualContent:
     - text: Přístup k datům místně nebo v cloudu
       itemType: tutorial
       url: data-tools/create-a-sql-database-by-using-a-designer.md
-  - title: Postupujte podle kurzu
+  - title: Postup v kurzu
     links:
     - text: C#
       url: /visualstudio/get-started/csharp
@@ -76,19 +76,19 @@ conceptualContent:
       itemType: get-started
   - title: Vytvoření aplikace
     links:
-    - text: Aplikace pro klasickou plochu Windows
+    - text: Desktopová aplikace pro Windows
       itemType: tutorial
       url: /visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic
-    - text: Aplikace pro Universal Windows
+    - text: Univerzální aplikace pro Windows
       itemType: tutorial
       url: /visualstudio/get-started/csharp/tutorial-uwp
     - text: Mobilní aplikace
       itemType: overview
       url: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
-    - text: Hry Unity
+    - text: Hra Unity
       itemType: tutorial
       url: /visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
-    - text: Webové aplikace pomocí ASP.NET Core
+    - text: Webová aplikace s ASP.NET Core
       itemType: quickstart
       url: /aspnet/core/tutorials/razor-pages/razor-pages-start
 tools:
@@ -132,10 +132,10 @@ additionalContent:
       summary: Prověřte a opravte chyby ve vašem kódu.
       url: debugger/index.md
     - title: Test
-      summary: Spusťte testy na svých projektech.
+      summary: Spouštějte testy na projektech.
       url: test/improve-code-quality.md
     - title: Nasazení
-      summary: Sdílení aplikací pomocí nasazení webu, InstallShield a průběžná integrace a další.
+      summary: Sdílejte své aplikace a kód pomocí Nasazení webu, InstallShield, NuGet, průběžné integrace a dalších.
       url: deployment/index.md
     - title: Správa verzí
       summary: Sdílení kódu pomocí technologie pro řízení verze jako je Git a TFVC.
@@ -150,7 +150,7 @@ additionalContent:
       summary: Přidáte vlastní funkce pro Visual Studio IDE, chcete-li vylepšit vaše zkušenosti s vývojem.
       url: extensibility/index.md
     - title: Data
-      summary: Vytvářejte aplikace pro data, která se připojují k jakékoli databázi nebo službu a kamkoli&#8212;místní nebo v cloudu.
+      summary: Vytvářejte datové aplikace, které se připojují k jakékoli databázi nebo službě a kdekoli – v místním prostředí nebo cloudu.
       url: data-tools/accessing-data-in-visual-studio.md
     - title: Spolupráce
       summary: Sdílet, úpravy a ladění kódu v prostředí pro spolupráci, v reálném čase.
@@ -172,9 +172,9 @@ additionalContent:
         url: /visualstudio/javascript
       - text: Ukládání a zpracování dat
         url: data-tools/index.md
-      - text: Pro datové vědy
+      - text: Vědecké zpracování dat
         url: python/data-science-and-analytical-applications-workload.md
-      - text: Vývoj pro Office/Sharepoint
+      - text: Vývoj pro Office/SharePoint
         url: https://developer.microsoft.com/office/docs
     - title: Windows
       links:
@@ -186,13 +186,13 @@ additionalContent:
         url: /cpp/windows/desktop-applications-visual-cpp
     - title: Mobilní zařízení a hry
       links:
-      - text: Vývoj mobilních aplikací pomocí .NET (Xamarin)
+      - text: Vývoj pro mobilní zařízení pomocí .NET (Xamarin)
         url: /xamarin/
       - text: Vývoj her pomocí Unity
         url: cross-platform/visual-studio-tools-for-unity.md
       - text: Vývoj pro mobilní zařízení pomocí JavaScriptu
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (Visual Studio 2017 and 2015 only)
+        note: (Pouze Visual Studio 2017 a 2015)
       - text: Vývoj mobilních aplikací pomocí C++
         url: /visualstudio/cross-platform/
       - text: Vývoj her v C++
@@ -205,4 +205,4 @@ additionalContent:
         url: /cpp/linux/
       - text: Vývoj pro různé platformy .NET core
         url: /dotnet/core/
-  footer: '[Blogy](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [hlášení problémů](ide/talk-to-us.md)  -  [Komunity vývojářů](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+  footer: '[Webblogy](https://devblogs.microsoft.com/visualstudio/) - –[Twitter](https://twitter.com/VisualStudio)[](https://stackoverflow.com/questions/tagged/visual-studio)[](ide/talk-to-us.md) - [](https://developercommunity.visualstudio.com/spaces/8/index.html) Stack Overflowkomunitavývojářůprovytváření - sestav - '

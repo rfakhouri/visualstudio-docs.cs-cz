@@ -1,7 +1,6 @@
 ---
 title: Publikování do Azure App Service
 ms.date: 04/02/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
@@ -12,63 +11,63 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: c6aa04ceb08daeb303ae6c421fe34465a9ebcda4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4ce4273b72a57a2b9456974a108809dcd73b4e0
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939358"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222731"
 ---
-# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publikování webové aplikace do služby Azure App Service pomocí sady Visual Studio pro Mac
+# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publikování webové aplikace pro Azure App Service pomocí Visual Studio pro Mac
 
-Nástroj publikování můžete použít k publikování aplikace ASP.NET Core do služby Azure App Service.
+K publikování ASP.NET Corech aplikací do Azure App Service můžete použít nástroj pro publikování.
 
 ## <a name="prerequisites"></a>Požadavky
 
-- [2019 Visual Studio pro Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) nainstalované s ASP.NET Core povolena.
-- Předplatné Azure. Pokud ještě nemáte předplatné, [ZDARMA zaregistrovat](https://azure.microsoft.com/free/dotnet/), což zahrnuje 200 USD v kreditech na 30 dnů a 12 měsíců oblíbených služeb zdarma.
-- Projekt ASP.NET Core. Pokud projekt ještě nemáte, můžete si [vytvořte novou](~/create-new-projects.md).
+- Je nainstalována [aplikace Visual Studio 2019 pro systém Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) s povoleným ASP.NET Core.
+- Předplatné Azure. Pokud ještě předplatné nemáte, zaregistrujte se [zdarma](https://azure.microsoft.com/free/dotnet/), včetně $200 na kreditu po dobu 30 dnů a 12 měsíců oblíbených bezplatných služeb.
+- ASP.NET Core projekt. Pokud projekt ještě nemáte, můžete [vytvořit nový](~/create-new-projects.md).
 
 ## <a name="publish-to-azure-app-service"></a>Publikování do Azure App Service
 
- 1. V oblasti řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**.
+ 1. V Oblast řešení klikněte pravým tlačítkem myši na projekt a vyberte možnost **publikovat**.
 
     ![Místní nabídka publikovat](media/publish-context-menu.png)
 
- 2. Pokud jste dříve publikovali tento projekt do služby Azure App Service, zobrazí se vám v nabídce profilu publikování. Vyberte tento profil publikování, chcete-li zahájit proces publikování.
+ 2. Pokud jste tento projekt publikovali již dříve Azure App Service, zobrazí se v nabídce profil publikování. Kliknutím na tento profil publikování spusťte proces publikování.
 
- 3. První přihlášení publikujte tento projekt do služby App Service, vyberte **publikovat do Azure**
+ 3. Pokud chcete tento projekt publikovat, aby se App Service poprvé, vyberte **publikovat do Azure** .
 
-    ![Publikování do služby App Service kontextové nabídky](media/publish-to-azure-context-menu.png)
+    ![Místní nabídka publikovat do App Service](media/publish-to-azure-context-menu.png)
 
- 4. **Publikovat do služby Azure App Service** se zobrazí dialogové okno a jsou uvedeny všechny existující aplikace služby. Publikovat do existující služby App Service, vyberte službu App Service v seznamu a potom klikněte na tlačítko **publikovat**.
+ 4. Zobrazí se dialogové okno **publikovat do Azure App Service** a zobrazí se všechny existující App Services. Chcete-li publikovat na existující App Service, vyberte App Service v seznamu a klikněte na tlačítko **publikovat**.
 
-    ![Publikování do služby Azure App Service dialogového okna](media/publish-to-app-service-dialog.png)
+    ![Dialog publikovat do Azure App Service](media/publish-to-app-service-dialog.png)
 
- 5. Chcete-li vytvořit novou službu App Service, klikněte na tlačítko **nový** tlačítko.
+ 5. Pokud chcete vytvořit nový App Service, klikněte na tlačítko **Nový** .
 
-    ![Publikování na dialogovém okně App Service](media/publish-to-app-service-dialog-new-selected.png)
+    ![Dialog publikovat do App Service](media/publish-to-app-service-dialog-new-selected.png)
 
- 6. **Novou službu App Service** se zobrazí dialogové okno. V tomto dialogovém okně můžete nakonfigurovat nastavení pro novou službu App Service.
+ 6. Zobrazí se dialogové okno **nový App Service** . V tomto dialogovém okně můžete nakonfigurovat nastavení pro nové App Service.
 
-    ![Dialogové okno nové služby App Service](media/publish-new-app-service.png)
+    ![Dialog Nový App Service](media/publish-new-app-service.png)
 
-    Existuje několik možností přizpůsobení tady. Název projektu se výchozí název služby App Service. Pokud název není k dispozici znaménko upozornění se zobrazí na pravé straně vstupní pole. Název služby App Service se použije v adrese URL vašeho webu, takže název musí být platná pro použití v adrese URL.
+    Existuje několik možností, jak zvážit přizpůsobení. Název App Service bude ve výchozím nastavení název projektu. Pokud není název k dispozici, zobrazí se na pravé straně vstupního pole symbol upozornění. Název App Service bude použit v adrese URL vašeho webu, takže název musí být platný pro použití v adrese URL.
 
-    Můžete změnit předplatné, že bude spojená s využitím služby App Service **předplatné** rozevíracího seznamu.
+    Předplatné, ke kterému se App Service přidruží, můžete změnit pomocí rozevírací nabídky **předplatné** .
 
-    Můžete vybrat existující **skupiny prostředků** pomocí rozevíracího seznamu, nebo můžete vytvořit nový s **+** tlačítko.
+    Pomocí rozevíracího seznamu můžete vybrat existující **skupinu prostředků** , nebo můžete vytvořit novou pomocí **+** tlačítka.
 
-    Plán služby App Service, vyberte nějaký existující, nebo vytvořte nové tak, že vyberete **vlastní** přepínač.
+    U App Serviceho plánu vyberte existující přepínač, nebo vytvořte nový. tím, že vyberete **vlastní** přepínač.
 
-    Pokud chcete vytvořit novou službu App Service a publikovat projekt, klikněte na tlačítko **vytvořit**.
+    Pokud chcete vytvořit nový App Service a projekt do něj publikovat, klikněte na **vytvořit**.
 
-    Po kliknutí na tlačítko **vytvořit** **novou službu App Service** dialogové okno se zavře a by se zobrazit následující zpráva označující, zda bylo zahájeno vytváření služby App Service.
+    Po kliknutí na tlačítko **vytvořit** **nový dialog App Service** bude zavřen a měla by se zobrazit následující zpráva oznamující, že vytváření App Service bylo spuštěno.
 
-      ![Vytvoření služby App Service zprávy](media/publish-create-app-service-message.png)
+      ![Vytvořit App Serviceovou zprávu](media/publish-create-app-service-message.png)
 
-    Po kliknutí na tlačítko **OK** zpráva se zavře a můžete pokračovat v práci na projektu. Můžete sledovat stav procesu publikování pomocí stavového řádku v horní části rozhraní IDE. Až vaše webová aplikace se úspěšně publikovala, web se otevře s výchozím prohlížeči.
+    Po kliknutí na tlačítko **OK** se zpráva zavře a můžete pokračovat v práci na projektu. Stav procesu publikování můžete sledovat na stavovém řádku v horní části rozhraní IDE. Po úspěšném publikování webové aplikace se web otevře ve výchozím prohlížeči.
 
-## <a name="related-video"></a>Související videa
+## <a name="related-video"></a>Související video
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Publish-to-Azure/player]

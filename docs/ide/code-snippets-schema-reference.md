@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924079"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222686"
 ---
 # <a name="code-snippets-schema-reference"></a>Referenční informace ke schématu fragmentů kódu
 
@@ -108,7 +108,7 @@ Je vyžadována textová hodnota. Tento text Určuje kód spolu s literály a ob
 
 Pro element kódu jsou k dispozici tři atributy:
 
--  - Atribut _ jazyka, který určuje jazyk fragmentu kódu. Hodnota může být jedna z následujících:
+-  - Atribut_Required_ jazyka, který určuje jazyk fragmentu kódu. Hodnota může být jedna z následujících:
 
    |Value|Popis|
    |-----|-----------|
@@ -121,7 +121,7 @@ Pro element kódu jsou k dispozici tři atributy:
    |`SQL`|Identifikuje fragment kódu jazyka SQL.|
    |`HTML`|Identifikuje fragment kódu jazyka HTML.|
 
--  -  _ atribut typu, který určuje druh kódu, který obsahuje fragment, a umístění, ve kterém musí být fragment kódu vložen pro zkompilování fragmentu kódu. Hodnota může být jedna z následujících:
+-  - _Volitelný_ atribut typu, který určuje druh kódu, který obsahuje fragment. Hodnota může být jedna z následujících:
 
    |Value|Popis|
    |-----|-----------|
@@ -131,7 +131,7 @@ Pro element kódu jsou k dispozici tři atributy:
    |`file`|Určuje, že fragment kódu je celý soubor kódu. Tyto fragmenty kódu lze vložit samotné do souboru kódu nebo do oboru názvů.|
    |`any`|Určuje, že fragment kódu lze vložit kamkoli. Tato značka se používá pro fragmenty kódu, které jsou nezávislé na kontextu, například pro komentáře.|
 
--  -  _ atribut oddělovače, který určuje oddělovač, který se používá k popisu literálů a objektů v kódu. Ve výchozím nastavení je `$`oddělovač.
+-  - _Volitelný_ atribut oddělovače, který určuje oddělovač, který se používá k popisu literálů a objektů v kódu. Ve výchozím nastavení je `$`oddělovač.
 
 ### <a name="parent-element"></a>Nadřazený element
 

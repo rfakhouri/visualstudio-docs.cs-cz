@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533361"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222624"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>První pohled na nasazení v aplikaci Visual Studio
 
@@ -96,6 +96,13 @@ Ze sady Visual Studio můžete vytvořit balíčky aplikací pro nasazení do Mi
 - **Plocha Windows**: Do Microsoft Store můžete nasadit pomocí mostu pro stolní počítače počínaje verzí Visual Studio 2017 verze 15,4. Pokud to chcete provést, Začněte vytvořením projektu pro vytváření balíčků aplikací pro Windows. Další informace najdete v tématu [zabalení desktopové aplikace pro Microsoft Store (most pro stolní počítače)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Most pro stolní počítače](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>Nasazení balíčků .NET do NuGet.org
+
+Chcete-li nasadit přeložený kód do balíčku "balíčky" obsahující zkompilovaný kód (jako knihovny DLL) spolu s jiným obsahem potřebným v projektech, které využívají tyto balíčky, můžete pomocí sady Visual Studio vytvořit balíček NuGet a nástroj příkazového řádku pro vydání finálního příkazu nasazení.
+
+- [Vytvoření a publikování .NET Standard balíčku](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [Vytvoření a publikování .NET Framework balíčku](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>Nasazení do zařízení (UWP)
 

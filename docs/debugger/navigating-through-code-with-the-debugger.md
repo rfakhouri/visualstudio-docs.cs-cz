@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c5a57c41753c8689e83da2a6f8473fa643a657f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905803"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222651"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Procházení kódu s ladicím programu sady Visual Studio
 
-Ladicí program sady Visual Studio můžete procházet kód pro kontrolu stavu aplikace a zobrazit jeho spuštění toku. Klávesové zkratky, příkazy ladění, zarážky a další funkce můžete rychle dostali k kód, který chcete prověřit. Seznámení se s navigačními příkazy ladicího programu a zkratky umožňuje rychlejší a snazší najít a řešení potíží v aplikacích.  Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) a [nástroje a techniky ladění](../debugger/write-better-code-with-visual-studio.md) před provedením tohoto článku.
+Ladicí program sady Visual Studio můžete procházet kód pro kontrolu stavu aplikace a zobrazit jeho spuštění toku. Klávesové zkratky, příkazy ladění, zarážky a další funkce můžete rychle dostali k kód, který chcete prověřit. Seznámení se s navigačními příkazy ladicího programu a zkratky umožňuje rychlejší a snazší najít a řešení potíží v aplikacích.  Pokud se jedná o první pokus o ladění kódu, můžete si před tím, než projdete Tento článek, přečíst [ladění pro naprostou začátečníky](../debugger/debugging-absolute-beginners.md) a [techniky a nástroje pro ladění](../debugger/write-better-code-with-visual-studio.md) .
 
 ## <a name="basic-debugging"></a>Základní ladění
 
@@ -133,7 +133,7 @@ Během pozastavení v ladicím programu, můžete najedete myší příkaz ve zd
 ![Běžet do kliknutí](../debugger/media/dbg-run-to-click.png "běžet do kliknutí")
 
 > [!NOTE]
-> **Běžet do kliknutí** je k dispozici od [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> **Možnost spustit pro** je dostupná od začátku [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]v.
 
 ### <a name="manually-break-into-code"></a>Ručně proniknout do kódu
 
@@ -186,5 +186,5 @@ Načtení symbolů společnosti Microsoft, naleznete v tématu [konfigurovat um�
 
 ## <a name="see-also"></a>Viz také:
 - [Co je ladění?](../debugger/what-is-debugging.md)
-- [Nástroje a techniky DDebugging](../debugger/write-better-code-with-visual-studio.md)
+- [Techniky a nástroje ladění](../debugger/write-better-code-with-visual-studio.md)
 - [První pohled na ladění](../debugger/debugger-feature-tour.md)

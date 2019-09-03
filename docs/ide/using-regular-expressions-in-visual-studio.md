@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: 755554b73fc80df151550f36e1846e07db70bcd8
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345742"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222743"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Použití regulárních výrazů v sadě Visual Studio
 
@@ -48,7 +48,7 @@ Následující tabulka obsahuje některé znaky regulárního výrazu, operátor
 |Zachytí a implicitně očísluje výraz v závorkách|()|`([a-z])X\1` porovnává "s aXa" a "bXb", ale nikoli "aXb". "\1" se vztahuje k první skupině výrazů "[a-z]". Další informace najdete v tématu [skupiny zachycení a vzory nahrazení](#capture-groups-and-replacement-patterns). |
 |Znehodnotit shodu|(?! ABC)|`real(?!ity)` odpovídá "real" ve slově "realty" a "really", ale ne "reality." Najde také druhý "real" (ale ne první "real") v "realityreal".|
 |Odpovídá jakémukoli znaku, který není v dané sadě znaků. Další informace naleznete v tématu [Skupina negativních znaků](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^ abc]|`be[^n-t]` odpovídá "bef" v "before", "beh" v "behind" a "bel" ve "below", ale ne "beneath".|
-|Porovnává buď výraz před, nebo za symbolem.|&#124;|`(sponge\|mud) bath` odpovídá "výrazům relaxační koupel" a "bahenní koupel".|
+|Porovnává buď výraz před, nebo za symbolem.|&#124;|`(sponge|mud) bath` odpovídá "výrazům relaxační koupel" a "bahenní koupel".|
 |[Řídicí znak](/dotnet/standard/base-types/character-escapes-in-regular-expressions) za zpětným lomítkem| \\ |`\^` odpovídá znaku ^.|
 |Zadejte počet výskytů předcházejícího znaku nebo skupiny. Další informace najdete v tématu [vyhledání přesně n krát](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, kde n je počet výskytů|`x(ab){2}x` odpovídá "xababx" a `x(ab){2,3}x` odpovídá "xababx" a "xabababx" ale ne "xababababx".|
 |[Odpovídá textu v kategorii Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Další informace o třídách znaků Unicode naleznete v tématu [vlastnosti znaků Unicode Standard 5,2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, kde "X" je číslo sady Unicode.|`\p{Lu}` odpovídá "T" a "D" v "Thomas Doe".|
