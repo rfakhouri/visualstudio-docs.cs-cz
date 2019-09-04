@@ -15,19 +15,19 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2c9526a0cbf33278bbc3cab8120bb20ab0f5377a
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918787"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293721"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novinky v sadě Visual Studio 2019
 
 **Aktualizováno pro [verzi 16,2](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Stáhněte si Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+>[Stáhněte si Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 V rámci sady Visual Studio 2019 získáte špičkové nástroje a služby pro všechny vývojáře, aplikace a platformy. Bez ohledu na to, jestli používáte aplikaci Visual Studio poprvé nebo jste ji používali po dobu let, je v této nové verzi hodně podobné.
 
@@ -37,7 +37,7 @@ Tady je nejdůležitější rekapitulace, co je nového:
 * **[Spolupráce](#collaborate)** : Využijte přirozenou spolupráci pomocí pracovního postupu Git-First, úprav a ladění v reálném čase a revizí kódu přímo v aplikaci Visual Studio.
 * **[Ladění](#debug)** : Zvýrazněte a přejděte na konkrétní hodnoty, optimalizujte využití paměti a proveďte automatické snímky provádění vaší aplikace.
 
-Úplný seznam všeho, co je v této verzi nové, najdete v poznámkách k [verzi](/visualstudio/releases/2019/release-notes/).
+Úplný seznam všeho, co je v této verzi nové, najdete v [poznámkách k verzi](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="develop"></a>Vývoj
 
@@ -74,7 +74,7 @@ Tady je několik způsobů, jak může Visual Studio IntelliCode přispět k lep
 * Hledání problémů s kódem, který se špatně zachytí
 * Zaměřte se na revize kódu tím, že vykreslíte pozornost oblastí, které skutečně jsou
 
-Původně jsme podporovali C# jenom v případě, že jsme IntelliCode jako rozšíření pro Visual Studio poprvé. Novinka **v 16,1**jsme přidali podporu pro C# a XAML "in-the-box". (Podpora pro C++ a TypeScript/JavaScript jsou ale pořád ve verzi Preview.)
+Původně jsme podporovali C# jenom v případě, že jsme IntelliCode jako rozšíření pro Visual Studio poprvé. **Novinka v 16,1**jsme přidali podporu pro C# a XAML "in-the-box". (Podpora pro C++ a TypeScript/JavaScript jsou ale pořád ve verzi Preview.)
 
 A pokud používáte C#, Přidali jsme také možnost výuka vlastního modelu ve vlastním kódu.
 
@@ -100,7 +100,7 @@ S vydáním sady Visual Studio 2019 provádíme aplikaci Visual Studio a PMA (pe
 
    ![Vykreslování PMA (per-monitor) v aplikaci Visual Studio 2019](media/vs-2019/pma-dpi-scaling.png)
 
-Další informace najdete v blogovém příspěvku o lepším prostředí pro více monitorů v rámci [sady Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) .
+Další informace najdete v blogovém příspěvku o [lepším prostředí pro více monitorů v rámci sady Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) .
 
 ### <a name="test-explorer"></a>Průzkumník testů
 

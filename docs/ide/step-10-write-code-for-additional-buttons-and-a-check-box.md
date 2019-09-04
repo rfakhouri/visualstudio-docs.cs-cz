@@ -1,42 +1,54 @@
 ---
 title: 'Krok 10: Napsání kódu pro přídavná tlačítka a zaškrtávací políčko'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 08/30/2019
+ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
-ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5db017ac20c84b8d06832a9b40f98c6519842361
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 281c98ca52b6dd18ee726e3191d47d6755fd8326
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918880"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293620"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Krok 10: Napsání kódu pro přídavná tlačítka a zaškrtávací políčko
+
 Nyní jste připraveni provést další čtyři metody. Tento kód můžete zkopírovat a vložit, ale pokud se chcete dozvědět nejvíc od tohoto kurzu, zadejte kód a použijte technologii IntelliSense.
 
-Tento kód přidá funkce do tlačítek, které jste přidali dříve. Bez tohoto kódu nejsou tlačítka dělat nic. Tlačítka používají kód ve svých <xref:System.Windows.Forms.Control.Click> událostech (a zaškrtávací políčko <xref:System.Windows.Forms.CheckBox.CheckedChanged> používá událost) k provedení různých akcí při aktivaci ovládacích prvků. Například `clearButton_Click` událost, která se aktivuje po kliknutí na tlačítko **Vymazat obrázek** , vymaže aktuální obrázek nastavením jeho vlastnosti **Image** na **hodnotu null** (nebo, **Nothing**). Každá událost v kódu obsahuje komentáře, které vysvětlují, co kód dělá.
+Tento kód přidá funkce do tlačítek, které jste přidali dříve. Bez tohoto kódu nejsou tlačítka dělat nic. Tlačítka používají kód ve svých <xref:System.Windows.Forms.Control.Click> událostech (a zaškrtávací políčko <xref:System.Windows.Forms.CheckBox.CheckedChanged> používá událost) k provedení různých akcí při aktivaci ovládacích prvků. Například `clearButton_Click` událost (nebo `ClearButton_Click`), která se aktivuje po kliknutí na tlačítko **Vymazat obrázek** , vymaže aktuální obrázek nastavením jeho vlastnosti **Image** na **hodnotu null** (nebo, **Nothing**). Každá událost v kódu obsahuje komentáře, které vysvětlují, co kód dělá.
 
-![odkaz na video](../data-tools/media/playvideo.gif)ve verzi videa tohoto tématu najdete v [kurzu 1: Vytvoření prohlížeče obrázků v Visual Basic-video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurz 1: Vytvoření prohlížeče obrázků ve C# videu 5.](http://go.microsoft.com/fwlink/?LinkId=205206) Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídky a dalších prvcích uživatelského rozhraní. Koncepty a postupy však fungují podobně v aktuální verzi sady Visual Studio.
+> [!TIP]
+> Osvědčeným postupem: Vždy přikomentujte kód. Komentáře jsou informace, které uživatel přečte, a je to čas, kdy se váš kód může pochopit. Vše na řádku komentáře program ignoruje. V C#aplikaci můžete zadat komentář k řádku zadáním dvou lomítka na začátku (//) a v Visual Basic přidáte komentář k řádku, který začíná jednoduchou uvozovkou (').
 
-> [!NOTE]
-> Osvědčeným postupem: Vždy přikomentujte kód. Komentáře jsou informace, které uživatel přečte, a je to čas, kdy se váš kód může pochopit. Vše na řádku komentáře program ignoruje. V jazyce C#Visual se zadáním dvou dvojitých lomítek na začátku (//) zobrazí komentář k řádku a v Visual Basic zadáte komentář řádku, který začíná jednoduchou uvozovkou (').
+## <a name="how-to-write-code-for-additional-buttons-and-a-check-box"></a>Postup psaní kódu pro další tlačítka a zaškrtávací políčko
 
-## <a name="to-write-code-for-additional-buttons-and-a-check-box"></a>Psaní kódu pro další tlačítka a zaškrtávací políčko
+Přidejte následující kód do souboru kódu **Form1** (*Form1.cs* nebo *Form1. vb*).
+> [!IMPORTANT]
+> Pomocí ovládacího prvku programovací jazyk v pravém horním rohu této stránky můžete zobrazit fragment C# kódu nebo Visual Basic fragment kódu.<br><br>![Řízení programovacího jazyka pro Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
-- Přidejte následující kód do souboru kódu **Form1** (*Form1.cs* nebo *Form1. vb*). Vyberte kartu **VB** pro zobrazení kódu Visual Basic.
+  [!code-csharp[VbExpressTutorial1Step9_10#2](../ide/codesnippet/CSharp/step-10-write-code-for-additional-buttons-and-a-check-box_1.cs)]
 
-     [!code-vb[VbExpressTutorial1Step9_10#2](../ide/codesnippet/VisualBasic/step-10-write-code-for-additional-buttons-and-a-check-box_1.vb)]
-     [!code-csharp[VbExpressTutorial1Step9_10#2](../ide/codesnippet/CSharp/step-10-write-code-for-additional-buttons-and-a-check-box_1.cs)]
+  [!code-vb[VbExpressTutorial1Step9_10#2](../ide/codesnippet/VisualBasic/step-10-write-code-for-additional-buttons-and-a-check-box_1.vb)]
 
-## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
+## <a name="next-steps"></a>Další kroky
 
-- Pokud chcete přejít na další krok kurzu, přečtěte si [krok 11: Spusťte program a vyzkoušejte další funkce](../ide/step-11-run-your-program-and-try-other-features.md).
+* Pokud chcete přejít na další krok kurzu, přečtěte si [krok 11: Spusťte program a vyzkoušejte další funkce](../ide/step-11-run-your-program-and-try-other-features.md).
 
-- Pokud se chcete vrátit k předchozímu kroku kurzu [, přečtěte si krok 9: Přečtěte si, pokomentujte a](../ide/step-9-review-comment-and-test-your-code.md)otestujte svůj kód.
+* Pokud se chcete vrátit k předchozímu kroku kurzu [, přečtěte si krok 9: Přečtěte si, pokomentujte a](../ide/step-9-review-comment-and-test-your-code.md)otestujte svůj kód.
+
+## <a name="see-also"></a>Viz také:
+
+* [Kurz 2: Vytvoření časovaného matematického kvízu](tutorial-2-create-a-timed-math-quiz.md)
+* [Kurz 3: Vytvořit porovnávací hru](tutorial-3-create-a-matching-game.md)

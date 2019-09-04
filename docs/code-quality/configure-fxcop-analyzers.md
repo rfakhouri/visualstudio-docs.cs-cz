@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68c175a55c9e60e870a5466a831aaae50d62dced
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551141"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293452"
 ---
 # <a name="configure-fxcop-analyzers"></a>Konfigurace analyzátorů FxCop
 
@@ -46,7 +46,10 @@ Další informace najdete v tématu [sady pravidel pro analyzátory kódu](analy
 
 ## <a name="editorconfig-file"></a>Soubor EditorConfig
 
-Pravidla analyzátoru můžete nakonfigurovat přidáním párů klíč-hodnota do souboru [. editorconfig](https://editorconfig.org) . Konfigurační soubor může být [specifický pro projekt](#per-project-configuration) nebo může být [sdílen](#shared-configuration) mezi dvěma nebo více projekty.
+Pravidla nástroje FxCop Analyzer můžete nakonfigurovat přidáním párů klíč-hodnota do souboru [. editorconfig](https://editorconfig.org) . Konfigurační soubor může být [specifický pro projekt](#per-project-configuration) nebo může být [sdílen](#shared-configuration) mezi dvěma nebo více projekty.
+
+> [!NOTE]
+> Starší pravidla FxCop nejde nakonfigurovat pomocí souboru. editorconfig.
 
 ### <a name="per-project-configuration"></a>Konfigurace pro jednotlivé projekty
 
@@ -61,7 +64,7 @@ V současné době není k dispozici žádná hierarchická podpora pro kombinov
 
 ### <a name="shared-configuration"></a>Sdílená konfigurace
 
-Můžete sdílet soubor. editorconfig pro konfiguraci analyzátoru mezi dvěma nebo více projekty, ale vyžaduje některé další kroky.
+Můžete sdílet soubor. editorconfig pro konfiguraci FxCop Analyzer mezi dvěma nebo více projekty, ale vyžaduje některé další kroky.
 
 1. Uložte soubor *. editorconfig* do společného umístění.
 
@@ -90,7 +93,7 @@ Můžete sdílet soubor. editorconfig pro konfiguraci analyzátoru mezi dvěma n
 4. Znovu načtěte projekt.
 
 > [!NOTE]
-> Starší pravidla FxCop nejde nakonfigurovat pomocí souboru. editorconfig.
+> Libovolné sdílené umístění souboru EditorConfig popsaného tady se týká jenom konfigurací analyzátorů FxCop. Pro další nastavení, jako je například odsazení a styl kódu, musí být soubor EditorConfig vždy umístěn ve složce projektu nebo v nadřazené složce.
 
 ## <a name="option-scopes"></a>Obory možností
 
