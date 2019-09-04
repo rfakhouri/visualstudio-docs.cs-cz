@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6fc0ab18fea11b2dd4478538a095762fee75d35
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 22b48cdb80f34a4bbf57626b9ffe6e4d753e5a55
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180366"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293683"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizace sady Visual Studio na nejnovější verzi
 
@@ -30,7 +30,7 @@ ms.locfileid: "70180366"
 
 Doporučujeme, abyste aktualizovali na nejnovější [verzi](/visualstudio/releasenotes/vs2017-relnotes/) sady Visual Studio 2017, abyste vždycky získali nejnovější funkce, opravy a vylepšení.
 
-A pokud si chcete vyzkoušet naši nejnovější verzi, zvažte místo toho stažení a instalaci sady [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) .
+A pokud si chcete vyzkoušet naši nejnovější verzi, zvažte místo toho stažení a instalaci sady [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) .
 
 > [!IMPORTANT]
 > Musíte se přihlásit pomocí účtu, který má oprávnění správce k instalaci, aktualizaci nebo úpravy sady Visual Studio. Další informace najdete v tématu [uživatelská oprávnění a sada Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -186,7 +186,7 @@ Tady je postup aktualizace sady Visual&nbsp;Studio&nbsp;2019.
 
 1. V instalačním programu vyhledejte edici sady Visual Studio, kterou jste nainstalovali.
 
-   Například pokud jste dříve nainstalovali Visual&nbsp;Studio Community&nbsp;2019 a pro něj existuje aktualizace, zobrazí se v instalačním programu zpráva k dispozici **aktualizace** .
+   Například pokud jste dříve nainstalovali Visual&nbsp;Studio Community&nbsp;2019 a pro něj existuje aktualizace, zobrazí se v instalačním programu zpráva **k dispozici aktualizace** .
 
      ![Vyberte edici sady Visual Studio 2019, kterou chcete aktualizovat] . (media/vs-2019/vs-installer-update-visual-studio-community.png "Vyberte edici sady Visual Studio 2019, kterou chcete aktualizovat") .
 

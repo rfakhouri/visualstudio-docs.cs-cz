@@ -1,6 +1,6 @@
 ---
 title: Použít regulární výrazy
-ms.date: 03/26/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 755554b73fc80df151550f36e1846e07db70bcd8
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: aaea2e8a2c4fbbead563bd9565cf84466e00c75c
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222743"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293439"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Použití regulárních výrazů v sadě Visual Studio
 
@@ -33,35 +33,35 @@ Následující tabulka obsahuje některé znaky regulárního výrazu, operátor
 
 |Účel|Výraz|Příklad|
 |-------------|----------------|-------------|
-|Odpovídá jakémukoli jednomu znaku (s výjimkou konce řádku). Další informace naleznete v tématu [libovolný znak](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` odpovídá "ARO" ve slově "around" a "abo" ve "o" ale ne "acro" v "v".|
+|Odpovídá jakémukoli jednomu znaku (s výjimkou konce řádku). Další informace naleznete v tématu [libovolný znak](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o`porovnává "ARO" v "okolí" a "ABO" v "About", ale ne "acro" v "napříč".|
 |Porovná žádný nebo více výskytů předcházejícího výrazu (odpovídá tolik znakům, kolik jich je možné). Další informace naleznete v tématu [neshoda nula nebo](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-)vícekrát.|*|`a*r` odpovídá "r" ve "rack", "ar" ve slově "ark" a "aar" ve slově "aardvark"|
 |Odpovídá jakémukoli znaku nula nebo vícekrát (zástupný znak \*)|.*|`c.*e` odpovídá "cke" ve "racket", "comme" ve "komentář" a "code" ve "kód"|
-|Porovnává s jedním nebo více výskyty předcházejícího výrazu (odpovídá co nejvíce znakům). Další informace naleznete v tématu [porovnává jednou nebo](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-)vícekrát.|+|`e.+d` odpovídá "rychlost" ve "slově feeder" ale ne "upravit".|
-|Odpovídá jakémukoli znaku jednou nebo vícekrát (zástupný znak?)|.+|`e.+e` odpovídá "eede" ve "slově feeder" ale ne "ee".|
-|Porovná žádný nebo více výskytů předcházejícího výrazu (odpovídá co nejvíce znakům). Další informace najdete v tématu [Shoda nula nebo vícekrát (opožděné porovnávání)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`e.*?e` odpovídá "ee" ve "slově feeder" ale ne "eede".|
-|Odpovídá jednomu nebo více výskytům předcházejícího výrazu (odpovídá co nejvíce znakům). Další informace najdete v tématu [vyhledání jedné nebo více časů (opožděné porovnávání)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e.+?e` odpovídá "ente" a "erprise" ve slově "enterprise", ale ne celému slovu "enterprise".|
-|Ukotvení řetězce shody na [začátek řádku nebo řetězce](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-)|^|`^car` odpovídá slovu "car" pouze, pokud se nachází na začátku řádku.|
-|Ukotvení řetězce shody na [konec řádku](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`end\r?$` odpovídá "end" pouze pokud je zobrazeno na konci řádku.|
-|Ukotvení řetězce shody na konec souboru|$|`end$` odpovídá "end" pouze pokud je zobrazeno na konci souboru.|
-|Odpovídá jakémukoli jednomu znaku v sadě|[abc]|`b[abc]` odpovídá "ba", "bb" a "bc".|
-|Odpovídá jakémukoli znaku v rozsahu znaků|[a-f]|`be[n-t]` odpovídá "bet" v "between", "ben" v "beneath" a "bes" ve "beside", ale ne "below".|
+|Porovnává s jedním nebo více výskyty předcházejícího výrazu (odpovídá co nejvíce znakům). Další informace naleznete v tématu [porovnává jednou nebo](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-)vícekrát.|+|`e.+d`Porovná "EED" v "Feeder", ale ne "Ed".|
+|Odpovídá jakémukoli znaku jednou nebo vícekrát (zástupný znak?)|.+|`e.+e`Porovná "eede" v "Feeder", ale ne "EE".|
+|Porovná žádný nebo více výskytů předcházejícího výrazu (odpovídá co nejvíce znakům). Další informace najdete v tématu [Shoda nula nebo vícekrát (opožděné porovnávání)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`e.*?e`Porovná "EE" v "Feeder", ale ne "eede".|
+|Odpovídá jednomu nebo více výskytům předcházejícího výrazu (odpovídá co nejvíce znakům). Další informace najdete v tématu [vyhledání jedné nebo více časů (opožděné porovnávání)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e.+?e`Porovná "seznam" a "erprise" ve slově "Enterprise", ale ne celé slovo "Enterprise".|
+|Ukotvení řetězce shody na [začátek řádku nebo řetězce](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-)|^|`^car`odpovídá slovu "auto" jenom v případě, že se zobrazuje na začátku řádku.|
+|Ukotvení řetězce shody na [konec řádku](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`end\r?$`Porovná "end" pouze v případě, že se zobrazí na konci řádku|
+|Ukotvení řetězce shody na konec souboru|$|`end$`Porovná "end" pouze v případě, že se zobrazí na konci souboru|
+|Odpovídá jakémukoli jednomu znaku v sadě|[abc]|`b[abc]`odpovídá "BA", "BB" a "BC"|
+|Odpovídá jakémukoli znaku v rozsahu znaků|[a-f]|`be[n-t]`Porovná "Tip" v "Between", "Robert" v "pod" a "BES" v "dále", ale ne "pod".|
 |Zachytí a implicitně očísluje výraz v závorkách|()|`([a-z])X\1` porovnává "s aXa" a "bXb", ale nikoli "aXb". "\1" se vztahuje k první skupině výrazů "[a-z]". Další informace najdete v tématu [skupiny zachycení a vzory nahrazení](#capture-groups-and-replacement-patterns). |
 |Znehodnotit shodu|(?! ABC)|`real(?!ity)` odpovídá "real" ve slově "realty" a "really", ale ne "reality." Najde také druhý "real" (ale ne první "real") v "realityreal".|
-|Odpovídá jakémukoli znaku, který není v dané sadě znaků. Další informace naleznete v tématu [Skupina negativních znaků](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^ abc]|`be[^n-t]` odpovídá "bef" v "before", "beh" v "behind" a "bel" ve "below", ale ne "beneath".|
-|Porovnává buď výraz před, nebo za symbolem.|&#124;|`(sponge|mud) bath` odpovídá "výrazům relaxační koupel" a "bahenní koupel".|
-|[Řídicí znak](/dotnet/standard/base-types/character-escapes-in-regular-expressions) za zpětným lomítkem| \\ |`\^` odpovídá znaku ^.|
-|Zadejte počet výskytů předcházejícího znaku nebo skupiny. Další informace najdete v tématu [vyhledání přesně n krát](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, kde n je počet výskytů|`x(ab){2}x` odpovídá "xababx" a `x(ab){2,3}x` odpovídá "xababx" a "xabababx" ale ne "xababababx".|
-|[Odpovídá textu v kategorii Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Další informace o třídách znaků Unicode naleznete v tématu [vlastnosti znaků Unicode Standard 5,2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, kde "X" je číslo sady Unicode.|`\p{Lu}` odpovídá "T" a "D" v "Thomas Doe".|
-|[Odpovídá hranici slova](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (mimo třídu znaků `\b` určuje hranici slova a uvnitř třídy znaků `\b` Určuje znak backspace.)|`\bin` odpovídá "in" v "inside" ale ne "pinto".|
-|Odpovídá zalomení řádku (tj. znak návratu na začátek řádku následovaný novým řádkem).|\r?\n|`End\r?\nBegin` odpovídá "End" a "Begin" pouze, když je "End" posledním řetězcem v řádku a "Begin" je první řetězec v následujícím řádku.|
-|Odpovídá jakémukoli [znaku slova](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd` odpovídá "Přidat" a "a1d", ale ne "a d".|
-|Odpovídá jakémukoli [prázdnému znaku](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` odpovídá slovnímu "Veřejné rozhraní".|
-|Odpovídá libovolnému [znaku desítkové číslice](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d` shody a "3" v "3456", "2" ve "23" a "1" v "1".|
-|Odpovídá znaku Unicode|\uXXXX kde XXXX Určuje hodnotu znaku Unicode.|`\u0065` odpovídá znaku "e".|
-|Odpovídá identifikátoru|\b [\_\w-[0-9]] [\_\w]*\b|Odpovídá "type1" ale ne "& type1" nebo "#define".|
+|Odpovídá jakémukoli znaku, který není v dané sadě znaků. Další informace naleznete v tématu [Skupina negativních znaků](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^ abc]|`be[^n-t]`Porovná "BEF" v "před", "Bá" v "za" a "popisku" v "níže", ale ne "pod"|
+|Porovnává buď výraz před, nebo za symbolem.|&#124;|`(sponge|mud) bath`odpovídá "houbě" a "bahenní lázeň"|
+|[Řídicí znak](/dotnet/standard/base-types/character-escapes-in-regular-expressions) za zpětným lomítkem| \\ |`\^`odpovídá znaku ^|
+|Zadejte počet výskytů předcházejícího znaku nebo skupiny. Další informace najdete v tématu [vyhledání přesně n krát](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, kde n je počet výskytů|`x(ab){2}x`odpovídá "xababx"<br/>`x(ab){2,3}x`Porovná "xababx" a "xabababx", ale ne "xababababx"|
+|[Odpovídá textu v kategorii Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Další informace o třídách znaků Unicode naleznete v tématu [vlastnosti znaků Unicode Standard 5,2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, kde "X" je číslo sady Unicode.|`\p{Lu}`odpovídá "T" a "D" v "Tomáši Chvojková"|
+|[Odpovídá hranici slova](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (mimo třídu znaků `\b` určuje hranici slova a uvnitř třídy znaků `\b` Určuje znak backspace.)|`\bin`Porovná "in" v "Inside", ale ne "Pinto"|
+|Odpovídá zalomení řádku (tj. znak návratu na začátek řádku následovaný novým řádkem).|\r?\n|`End\r?\nBegin`Porovná "end" a "begin" pouze v případě, že "end" je poslední řetězec v řádku a "begin" je první řetězec na následujícím řádku.|
+|Odpovídá jakémukoli [znaku slova](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd`odpovídá "Add" a "A1d", ale nikoli "a d"|
+|Odpovídá jakémukoli [prázdnému znaku](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface`odpovídá frázi "veřejné rozhraní"|
+|Odpovídá libovolnému [znaku desítkové číslice](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d`odpovídá a "3" v "3456", "2" v 23 "a" 1 "v" 1 "|
+|Odpovídá znaku Unicode|\uXXXX kde XXXX Určuje hodnotu znaku Unicode.|`\u0065`odpovídá znaku "e"|
+|Odpovídá identifikátoru|\b [\_\w-[0-9]] [\_\w]*\b|Odpovídá "typ1", ale nikoli "& typ1" nebo "#define"|
 |Odpovídá řetězci v uvozovkách|((\\".+?\\")&#124;('.+?'))|Odpovídá jakémukoli řetězci v jednoduchých nebo dvojitých uvozovkách.|
-|Shoda s šestnáctkovým číslem|\b0[xX]([0-9a-fA-F]+\)\b|Porovná "0xc67f", ale ne "0xc67g".|
-|Odpovídá celým nebo desetinným a desetinných míst|\b[0-9]*\\.\*[0-9]+\b|Odpovídá "1,333".|
+|Shoda s šestnáctkovým číslem|\b0[xX]([0-9a-fA-F]+\)\b|Porovná "0xc67f", ale ne "0xc67g"|
+|Odpovídá celým nebo desetinným a desetinných míst|\b[0-9]*\\.\*[0-9]+\b|Odpovídá "1,333"|
 
 > [!TIP]
 > V operačních systémech Windows většina řádků končí "\r\n" (zalomení řádku a nový řádek). Tyto znaky nejsou viditelné, ale jsou k dispozici v editoru a jsou předány službě regulárních výrazů .NET.
@@ -100,7 +100,7 @@ Jako příklad ukazuje následující obrázek regulární výraz `(?<repeated>\
 > [!TIP]
 > Ujistěte se, že je v dialogovém okně **rychlé nahrazení** vybráno tlačítko **použít regulární výrazy** .
 
-Další informace o pojmenovaných skupinách zachycení naleznete v tématu [pojmenované odpovídající](/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#named-matched-subexpressions)podvýrazy. Další informace o regulárních výrazech, které jsou použity v vzorech pro nahrazení, naleznete v tématu [substitutions in Regular Expressions](/dotnet/standard/base-types/substitutions-in-regular-expressions).
+Další informace o pojmenovaných skupinách zachycení naleznete v tématu [pojmenované odpovídající podvýrazy](/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#named-matched-subexpressions). Další informace o regulárních výrazech, které jsou použity v vzorech pro nahrazení, naleznete v tématu [substitutions in Regular Expressions](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
 ## <a name="see-also"></a>Viz také:
 
