@@ -26,7 +26,7 @@
 ### [Přehled](managing-references-in-a-project.md)
 ### [Návod: Zahrnutí balíčku NuGet do projektu](nuget-walkthrough.md)
 ## [Správa prostředků aplikace](managing-app-resources.md)
-## [Postupy: Otevření více řešení nebo instancí](open-multiple-solutions.md)
+## [Postup: Otevření více řešení nebo instancí](open-multiple-solutions.md)
 
 # Editor zdroje
 ## [Funkce editoru](source-editor.md)
@@ -49,7 +49,7 @@
 ## [Přehled](compiling-and-building.md)
 ## [Sestavování a čištění projektů a řešení](building-and-cleaning-projects-and-solutions.md)
 ## [Akce sestavení](build-actions.md)
-## [Postupy: Nastavení více projektů po spuštění](set-startup-projects.md)
+## [Postup: Nastavení více projektů po spuštění](set-startup-projects.md)
 ## [Přizpůsobení procesu sestavení](customizing-build-system.md)
 ## Konfigurace
 ### [Principy konfigurací sestavení](configurations.md)
@@ -57,7 +57,6 @@
 
 # Správa verzí
 ## [Přehled](version-control.md)
-## [Správa verzí TF](tf-version-control.md)
 ## [Nastavení úložiště Git](set-up-git-repository.md)
 ## [Práce s úložištěm Git](working-with-git.md)
 ## [Nastavení úložiště Subversion](set-up-subversion-repository.md)
@@ -68,9 +67,9 @@
 ## [Publikování do Azure App Service](publish-app-svc.md)
 ## [Publikování do složky](publish-folder.md)
 
-# Úkoly
+# Úlohy
 ## [Dostupné sady funkcí](workloads.md)
-## ASP.NET Core
+## Jádro ASP.NET
 ### [Podpora platformy .NET Core](net-core-support.md)
 ### [Začínáme s ASP.NET Core](asp-net-core.md)
 ### [Vytváření aplikací ASP.NET Core v sadě Visual Studio pro Mac](building-asp-net-core.md)
@@ -87,7 +86,7 @@
 
 ## Vývoj her pro Unity
 ### [Vývoj her pro Unity](unity-tools.md)
-### [Instalace a nastavení](setup-vsmac-tools-unity.md)
+### [Nastavení](setup-vsmac-tools-unity.md)
 ### [Začínáme s Unity](unity-walkthrough.md)
 ### [Používání nástrojů Unity](using-vsmac-tools-unity.md)
 ### [Používání .NET 4.x v Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
@@ -96,14 +95,15 @@
 
 # [Usnadnění](accessibility.md)
 
-# Poradce při potížích
+# Řešení potíží
 ## [Protokoly a výjimky](troubleshooting.md)
 ## [Program Zlepšování softwaru a služeb na základě zkušeností uživatelů](visual-studio-experience-improvement-program.md)
 ## [Nahlášení problému](report-a-problem.md)
-## [Odstraňování potíží: Proč se mi nezobrazují všechny šablony?](troubleshooting-no-templates.md)
+## [Řešení potíží: Podporuje Visual Studio pro Mac Správu verzí Team Foundation?](tf-version-control.md)
+## [Řešení potíží: Proč se mi nezobrazují všechny šablony?](troubleshooting-no-templates.md)
 ## [Odstraňování potíží: Aktualizátor obsahuje chyby načítání informací](updater-troubleshooting.md)
 
-# [Zpráva k vydání verze](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [Poznámky k verzi](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [Zpráva k vydání verze Preview](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
 # Ukázky
 ## [Vybrané ukázky](samples.yml)
