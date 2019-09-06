@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2c7a81eefc48626a57d15f99579e151390b52fb9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4b9e30d70aa90645d05d3bf7b530056feec752ca
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926793"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383722"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Návod: Vytváření a spouštění testů jednotek pro spravovaný kód
 
@@ -429,7 +429,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Znovu otestovat, přepsat a znovu analyzovat
 
-Předpokládat, že v testované metodě dojde k chybě, a `Debit` metoda bez ohledu na výstup správné zprávy s výjimkou <xref:System.ArgumentOutOfRangeException> nevyvolává vůbec žádné upozornění. V současné době testovací metoda nezpracovává tento případ. Pokud je `debitAmount` hodnota platná (to znamená menší než zůstatek, ale větší než nula), není zachycena žádná výjimka, takže se kontrolní výraz nikdy neaktivuje. Testovací metoda ještě projde. To není dobré, protože chcete, aby testovací metoda nebyla úspěšná, pokud není vyvolána žádná výjimka.
+Předpokládat, že v testované metodě dojde k chybě, a `Debit` metoda bez ohledu na výstup správné zprávy s výjimkou <xref:System.ArgumentOutOfRangeException> nevyvolává vůbec žádné upozornění. V současné době testovací metoda nezpracovává tento případ. Pokud je `debitAmount` hodnota platná (to znamená menší než zůstatek a větší než nula), není zachycena žádná výjimka, takže se kontrolní výraz nikdy neaktivuje. Testovací metoda ještě projde. To není dobré, protože chcete, aby testovací metoda nebyla úspěšná, pokud není vyvolána žádná výjimka.
 
 Jedná se o chybu v testovací metodě. Chcete-li vyřešit tento problém, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> přidejte na konec testovací metody kontrolní výraz pro zpracování případu, kde není vyvolána žádná výjimka.
 
