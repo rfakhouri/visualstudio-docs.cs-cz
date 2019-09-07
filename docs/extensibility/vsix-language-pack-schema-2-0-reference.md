@@ -1,5 +1,5 @@
 ---
-title: VSIX Language Pack Schema 2.0 – referenční informace | Dokumentace Microsoftu
+title: Referenční dokumentace schématu 2,0 pro jazykové sady VSIX | Microsoft Docs
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,48 +8,46 @@ helpviewer_keywords:
 - localize package
 - localize extension
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
-ms.author: dagriffe
-author: dgriffen
+ms.author: zorio
+author: zoeyr
 manager: jillfra
-ms.workload:
-- dagriffe
-ms.openlocfilehash: acea36031b98693e1d618986720d9932f76a0a63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe6d4bd9e82950d77925dda1560b5c204633d392
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953098"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739334"
 ---
-# <a name="vsix-language-pack-schema-20-reference"></a>VSIX language pack schema 2.0 – referenční informace
+# <a name="vsix-language-pack-schema-20-reference"></a>Referenční dokumentace schématu 2,0 pro jazykové sady VSIX
 
-Schéma VSIX Language Pack obsahuje lokalizovaného instalačního pro balíčky VSIX. Verze 2.0 tato schématu podporuje další lokalizace elementů.
+Schéma jazykové sady VSIX poskytuje lokalizované informace o instalaci balíčků VSIX. Verze 2,0 tohoto schématu podporuje další prvky lokalizace.
 
-## <a name="language-pack-schema"></a>Schéma language pack
+## <a name="language-pack-schema"></a>Schéma jazykové sady
 
-Kořenový element souboru language pack je `<PackageLanguagePackManifest>`, s atributem `Version`, což je verze formátu language pack. Tento článek popisuje, verze 2.0 pack formátu jazyka, který je určený v manifestu tak, že nastavíte `Version` atributu na hodnotu `Version="2.0.0"`. Kořenový element obsahuje přesně jednu podřízenou `<Metadata>` elementu.
+Kořenový prvek souboru jazykové sady je `<PackageLanguagePackManifest>`, s `Version`atributem, který je verze formátu jazykové sady. Tento článek popisuje verzi 2,0 formátu jazykové sady, která je zadána v manifestu, nastavením `Version` atributu na hodnotu. `Version="2.0.0"` Kořenový element obsahuje přesně jeden podřízený `<Metadata>` element.
 
-### <a name="packagelanguagepackmanifest-element"></a>PackageLanguagePackManifest – element
+### <a name="packagelanguagepackmanifest-element"></a>Element PackageLanguagePackManifest
 
-V rámci `<PackageLanguagePackManifest>` element musí existovat následující element:
-
-|Název|Popis|
-|-----------|-----------------|
-|`<Metadata>`| Obsahující element pro všechna metadata lokalizovaných balíčků
-
-### <a name="metadata-element"></a>Metadata – element
-
-V rámci `<Metadata>` prvek může mít následující prvky:
+V rámci `<PackageLanguagePackManifest>` elementu musí existovat následující element:
 
 |Název|Popis|
 |-----------|-----------------|
-|`<DisplayName>`|Lokalizovaný název rozšíření k instalaci|
-|`<Description>`|Lokalizovaný popis rozšíření k instalaci|
-|`<License>`| Cesta k lokalizovanou verzi licenci rozšíření|
+|`<Metadata>`| Nadřazený element pro všechna lokalizovaná metadata balíčku
+
+### <a name="metadata-element"></a>Element metadata
+
+V rámci `<Metadata>` elementu můžete mít následující prvky:
+
+|Název|Popis|
+|-----------|-----------------|
+|`<DisplayName>`|Lokalizovaný název rozšíření, které se má nainstalovat|
+|`<Description>`|Lokalizovaný popis rozšíření, které se má nainstalovat|
+|`<License>`| Cesta k lokalizované verzi licence rozšíření|
 |`<MoreInfo>`| Odkaz na lokalizované informace o rozšíření|
-|`<ReleaseNotes>`| Cesta nebo odkaz na lokalizované verzi zpráva k vydání verze|
-|`<Icon>`| Cesta k lokalizovanou verzi ikonu rozšíření|
+|`<ReleaseNotes>`| Cesta nebo odkaz na lokalizovanou verzi poznámky k verzi|
+|`<Icon>`| Cesta k lokalizované verzi ikony rozšíření|
 
-### <a name="sample-manifest"></a>Ukázka manifestu
+### <a name="sample-manifest"></a>Vzorový manifest
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -69,6 +67,6 @@ V rámci `<Metadata>` prvek může mít následující prvky:
 
 |Název|Popis|
 |-----------|-----------------|
-|[Lokalizace balíčků VSIX](../extensibility/localizing-vsix-packages.md)|Ukazuje, jak poskytnout podporu lokalizovaného instalačního balíčku VSIX.|
-|[VSIX extension schema 2.0 – referenční informace](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX manifest popisuje obsah *VSIX* souboru nasazení. Nasazení souboru umožňuje nainstalovat rozšíření sady Visual Studio s použitím **rozšíření a aktualizace** dialogové okno.|
-|[Vyhledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Ukazuje způsob použití **rozšíření a aktualizace** dialogové okno instalace, odebrání, aktivovat a deaktivovat rozšíření.|
+|[Lokalizace balíčků VSIX](../extensibility/localizing-vsix-packages.md)|Ukazuje, jak poskytnout lokalizovanou podporu instalace balíčku VSIX.|
+|[Referenční dokumentace schématu rozšíření VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)|Manifest VSIX popisuje obsah souboru nasazení *. vsix* . Soubor nasazení umožňuje nainstalovat rozšíření sady Visual Studio pomocí dialogového okna **rozšíření a aktualizace** .|
+|[Vyhledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Ukazuje, jak použít dialogové okno **rozšíření a aktualizace** k instalaci, odebrání, aktivaci a deaktivaci rozšíření.|

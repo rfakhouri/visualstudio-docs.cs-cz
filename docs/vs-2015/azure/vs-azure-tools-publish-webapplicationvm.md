@@ -1,6 +1,6 @@
 ---
-title: Publikování WebApplicationVM | Dokumentace Microsoftu
-description: Zjistěte, jak nasadit webovou aplikaci k virtuálnímu počítači. Tento skript vytvoří požadované prostředky ve vašem předplatném Azure, pokud ještě neexistují.
+title: Publikovat – WebApplicationVM | Microsoft Docs
+description: Přečtěte si, jak nasadit webovou aplikaci na virtuální počítač. Tento skript vytvoří požadované prostředky v předplatném Azure, pokud už neexistují.
 author: ghogen
 manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
@@ -12,14 +12,14 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e35f5decee2a908a9d1075ff3f6365a1d358c7b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771631"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739312"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (skript Windows PowerShellu)
-Nasadí webovou aplikaci k virtuálnímu počítači. Skript vytvoří požadované prostředky ve vašem předplatném Azure, pokud ještě neexistují.
+Nasadí webovou aplikaci na virtuální počítač. Skript vytvoří požadované prostředky v předplatném Azure, pokud už neexistují.
 
 ```
 Publish-WebApplicationVM
@@ -32,87 +32,87 @@ Publish-WebApplicationVM
 -Verbose
 ```
 
-### <a name="configuration"></a>Konfigurace
-Cesta ke konfiguračnímu souboru JSON popisující podrobnosti o nasazení.
+### <a name="configuration"></a>Konfiguraci
+Cesta ke konfiguračnímu souboru JSON, který popisuje podrobnosti nasazení.
 
 | Aliasy | žádná |
 | --- | --- |
 | Povinné? |true |
 | Pozice |pojmenované |
 | Výchozí hodnota |žádná |
-| Přijmout kanálový vstup? |false |
-| Přijímat zástupné znaky? |false |
+| Přijmout vstup kanálu? |false |
+| Přijmout zástupné znaky? |false |
 
-### <a name="subscriptionname"></a>subscriptionName
+### <a name="subscriptionname"></a>SubscriptionName
 Název předplatného Azure, ve kterém chcete vytvořit virtuální počítač.
 
 | Aliasy | žádná |
 | --- | --- |
 | Povinné? |false |
 | Pozice |pojmenované |
-| Výchozí hodnota |Použije první předplatné v souboru odběru |
-| Přijmout kanálový vstup? |false |
-| Přijímat zástupné znaky? |false |
+| Výchozí hodnota |Používá první předplatné v souboru předplatného. |
+| Přijmout vstup kanálu? |false |
+| Přijmout zástupné znaky? |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-Cesta k balíčku pro nasazení webu k publikování do virtuálního počítače. Tento balíček můžete vytvořit pomocí Průvodce publikováním webu v sadě Visual Studio. Zobrazit [jak: Vytvoření balíčku pro nasazení webu v sadě Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
+Cesta k balíčku pro nasazení webu, který se má publikovat na virtuálním počítači. Tento balíček můžete vytvořit pomocí Průvodce publikováním webu v aplikaci Visual Studio. Viz [jak: Vytvořte balíček pro nasazení webu v aplikaci Visual](https://msdn.microsoft.com/library/dd465323.aspx)Studio.
 
 | Aliasy | žádná |
 | --- | --- |
 | Povinné? |false |
 | Pozice |pojmenované |
 | Výchozí hodnota |žádná |
-| Přijmout kanálový vstup? |false |
-| Přijímat zástupné znaky? |false |
+| Přijmout vstup kanálu? |false |
+| Přijmout zástupné znaky? |false |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
-Pokud je hodnota true, povolí používání certifikátů, které nejsou podepsané důvěryhodným kořenovou autoritou.
+Pokud má hodnotu true, povolí použití certifikátů, které nejsou podepsané důvěryhodnou kořenovou autoritou.
 
 | Aliasy | žádná |
 | --- | --- |
 | Povinné? |false |
 | Pozice |pojmenované |
 | Výchozí hodnota |false |
-| Přijmout kanálový vstup? |false |
-| Přijímat zástupné znaky? |false |
+| Přijmout vstup kanálu? |false |
+| Přijmout zástupné znaky? |false |
 
 ### <a name="vmpassword"></a>VMPassword
-Přihlašovací údaje účtu virtuálního počítače. Příklad: - VMPassword @{Name = "admin"; Heslo = "password"}
+Přihlašovací údaje účtu virtuálního počítače Příklad:-VMPassword @ {Name = "admin"; Heslo = "heslo"}
 
 | Aliasy | žádná |
 | --- | --- |
 | Povinné? |false |
 | Pozice |pojmenované |
 | Výchozí hodnota |žádná |
-| Přijmout kanálový vstup? |false |
-| Přijímat zástupné znaky? |false |
+| Přijmout vstup kanálu? |false |
+| Přijmout zástupné znaky? |false |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
-Přihlašovací údaje pro databázi SQL v Azure. Příklad: - DatabaseServerPassword @{Name = "admin"; Heslo = "password"}
+Přihlašovací údaje pro SQL Database v Azure Příklad:-DatabaseServerPassword @ {Name = "admin"; Heslo = "heslo"}
 
 | Aliasy | žádná |
 | --- | --- |
 | Povinné? |false |
 | Pozice |pojmenované |
 | Výchozí hodnota |žádná |
-| Přijmout kanálový vstup? |false |
-| Přijímat zástupné znaky? |false |
+| Přijmout vstup kanálu? |false |
+| Přijmout zástupné znaky? |false |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
-Pokud je hodnota true, tisk zpráv ze skriptu do výstupního datového proudu.
+Pokud je nastaveno na true, vytiskněte zprávy ze skriptu do výstupního datového proudu.
 
 | Aliasy | žádná |
 | --- | --- |
 | Povinné? |false |
 | Pozice |pojmenované |
 | Výchozí hodnota |false |
-| Přijmout kanálový vstup? |false |
-| Přijímat zástupné znaky? |false |
+| Přijmout vstup kanálu? |false |
+| Přijmout zástupné znaky? |false |
 
 ## <a name="remarks"></a>Poznámky
-Úplné vysvětlení toho, jak použít skript k vytvoření vývojových a testovacích prostředí, najdete v části [pomocí skriptů Windows Powershellu k publikování do vývojových a testovacích prostředí](vs-azure-tools-publishing-using-powershell-scripts.md).
+Úplné vysvětlení způsobu použití skriptu k vytváření vývojových a testovacích prostředí najdete v tématu [použití skriptů prostředí Windows PowerShell pro publikování do vývojových a testovacích prostředí](vs-azure-tools-publishing-using-powershell-scripts.md).
 
-Konfigurační soubor JSON má podrobnosti o co se má nasadit. Obsahuje informace, které jste zadali při vytváření projektu, jako je například název, skupinu vztahů, image virtuálního pevného disku a velikost virtuálního počítače. Zahrnuje také koncových bodů na virtuálním počítači, databázi, kterou chcete zřídit, pokud existuje a web parametrů nasazení. Následující kód ukazuje příklad konfigurace souboru JSON:
+Konfigurační soubor JSON určuje podrobnosti o tom, co má být nasazeno. Obsahuje informace, které jste zadali při vytváření projektu, jako je název, skupina vztahů, bitová kopie VHD a velikost virtuálního počítače. Zahrnuje taky koncové body na virtuálním počítači, databáze, které se mají zřídit, pokud existují, a parametry nasazení webu. Následující kód ukazuje příklad konfiguračního souboru JSON:
 
 ```
 {
@@ -181,4 +181,4 @@ Konfigurační soubor JSON má podrobnosti o co se má nasadit. Obsahuje informa
 }
 ```
 
-Můžete upravit konfigurační soubor JSON, chcete-li změnit, co je zřízený. Virtuální počítače a cloudové služby jsou povinné, ale databáze část je nepovinná.
+Úpravou konfiguračního souboru JSON můžete změnit, co je zřízené. Vyžaduje se virtuální počítač a cloudová služba, ale oddíl databáze je nepovinný.
