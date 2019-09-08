@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38157fcc23561b47a919151aa78a71f98b3909b
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 675206bb58e27110af79c46b1d61e9489f7661f2
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805002"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766085"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Uvolnitelná pole by měla být uvolněna
 
@@ -28,52 +28,73 @@ ms.locfileid: "65805002"
 |TypeName|DisposableFieldsShouldBeDisposed|
 |CheckId|CA2213|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Pevné|
+|Narušující změna|Bez přerušení|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Typ, který implementuje <xref:System.IDisposable?displayProperty=fullName> deklaruje pole, která jsou typy, které také implementují <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Není volána metoda pole <xref:System.IDisposable.Dispose%2A> metoda deklarujícího typu.
+Typ, který implementuje <xref:System.IDisposable?displayProperty=fullName> deklaraci polí typů, které také implementují <xref:System.IDisposable>. Metoda pole není volána <xref:System.IDisposable.Dispose%2A> metodou deklarovaného typu. <xref:System.IDisposable.Dispose%2A>
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Typ je zodpovědná za uvolnění všech nespravovaných prostředků. Pravidlo CA2213 kontroluje, zda uvolnitelného typu (to znamená, jednu, která implementuje <xref:System.IDisposable>) `T` deklaruje pole `F` z uvolnitelného typu, který je instance `FT`. Pro každé pole `F` , které se má přiřadit místně vytvořený objekt v rámci metody nebo inicializátory nadřazeného typu `T`, pravidlo se pokusí najít volání `FT.Dispose`. Toto pravidlo vyhledá metody volané `T.Dispose` a jednu úroveň níže (to znamená, volání metody volané metody `T.Dispose`).
+Typ zodpovídá za likvidaci všech spravovaných prostředků. CA2213 pravidla kontroluje, zda typ na <xref:System.IDisposable>jedno, který implementuje `T` , deklaruje pole `F` , které je instancí typu `FT`na jedno použití. Pro každé pole `F` , které je přiřazeno místně vytvořený objekt v rámci metod nebo inicializátorů nadřazeného typu `T`, se pravidlo pokusí vyhledat volání `FT.Dispose`. Pravidlo vyhledá metody volané `T.Dispose` a jednu nižší úroveň (tj. metody volané metodami, které `T.Dispose`volá).
 
 > [!NOTE]
-> Než [zvláštní případy](#special-cases), pravidlo CA2213 je aktivována pouze pro pole, které jsou přiřazeny místně vytvořené uvolnitelný objekt v rámci nadřazeného typu metody a inicializátory. Pokud je objekt vytvořen nebo přiřazené mimo typ `T`, pravidlo se neaktivuje. To snižuje šumu pro případy, kdy nadřazeného typu nevlastní odpovědnost za uvolnění objektu.
+> Kromě [zvláštních případů](#special-cases)se pravidlo CA2213 aktivuje jenom pro pole, která jsou přiřazená místně vytvořenému objektu v rámci metod a inicializátorů obsahujícího typ. Pokud je objekt vytvořen nebo přiřazen mimo typ `T`, pravidlo se neaktivuje. To snižuje šum pro případy, kdy nadřazený typ nevlastní odpovědnost za likvidaci objektu.
 
 ### <a name="special-cases"></a>Zvláštní případy
 
-CA2213 pravidlo můžete platit také pro pole z následujících typů i v případě, že objekt, který je přiřazený není vytvořeno místně:
+Pravidlo CA2213 může také aktivovat pole následujících typů i v případě, že objekt, který je přiřazen, není vytvořen místně:
 
 - <xref:System.IO.Stream?displayProperty=nameWithType>
 - <xref:System.IO.TextReader?displayProperty=nameWithType>
 - <xref:System.IO.TextWriter?displayProperty=nameWithType>
 - <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
 
-Předání objektu jednoho z těchto typů konstruktoru a pak ji přiřadíte do pole označuje *dispose převod vlastnictví* do nově konstruovaný typ. To znamená je nově konstruovaný typ nyní zodpovědná za uvolnění objektu. Pokud není uvolněn, dojde k narušení CA2213.
+Předání objektu jednoho z těchto typů konstruktoru a jeho přiřazení k poli indikuje *přenos vlastnictví* do nově vytvořeného typu. To znamená, že nově konstruovaný typ je nyní zodpovědný za likvidaci objektu. Pokud objekt není vyřazen, dojde k porušení CA2213.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení tohoto pravidla, zavolejte <xref:System.IDisposable.Dispose%2A> pro pole, která jsou typy, které implementují <xref:System.IDisposable>.
+Chcete-li opravit porušení tohoto pravidla, zavolejte <xref:System.IDisposable.Dispose%2A> na pole, která jsou typu implementující <xref:System.IDisposable>.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Je bezpečné potlačit upozornění tohoto pravidla, pokud:
+Upozornění z tohoto pravidla je bezpečné potlačit, pokud:
 
-- Typ s příznakem nezodpovídá za uvolnění prostředku drží pole (to znamená, typ nemá *dispose vlastnictví*)
-- Volání <xref:System.IDisposable.Dispose%2A> dochází na hlubší úrovni volání než pravidla kontroly
+- Typ označený příznakem neodpovídá za uvolnění prostředku uloženého v poli (to znamená, že typ nemá *vlastnictví Dispose*).
+- Volání, ke <xref:System.IDisposable.Dispose%2A> kterému dochází na hlubší úrovni volání než kontroly pravidel
 
 ## <a name="example"></a>Příklad
 
-Následující fragment kódu ukazuje typ `TypeA` , který implementuje <xref:System.IDisposable>.
+Následující fragment kódu ukazuje typ `TypeA` , který implementuje. <xref:System.IDisposable>
 
 [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_1.cs)]
 
-Následující fragment kódu ukazuje typ `TypeB` , který porušuje pravidla CA2213 deklarováním pole `aFieldOfADisposableType` jako uvolnitelného typu (`TypeA`) a není volání <xref:System.IDisposable.Dispose%2A> na pole.
+Následující fragment kódu ukazuje `TypeB` typ, který porušuje pravidlo CA2213 deklarací pole `aFieldOfADisposableType` jako typ na jedno použití (`TypeA`) a nevolá <xref:System.IDisposable.Dispose%2A> ho do pole.
 
 [!code-csharp[FxCop.Usage.IDisposableFields#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_2.cs)]
+
+Chcete-li opravit porušení, `Dispose()` zavolejte na pole na jedno použití:
+
+```csharp
+protected virtual void Dispose(bool disposing)
+{
+   if (!disposed)
+   {
+      // Dispose of resources held by this instance.
+      aFieldOfADisposableType.Dispose();
+
+      disposed = true;
+
+      // Suppress finalization of this disposed instance.
+      if (disposing)
+      {
+          GC.SuppressFinalize(this);
+      }
+   }
+}
+```
 
 ## <a name="see-also"></a>Viz také:
 
 - <xref:System.IDisposable?displayProperty=fullName>
-- [Vzor pro metodu Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+- [Vzor Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

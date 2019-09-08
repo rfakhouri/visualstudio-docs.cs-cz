@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891272"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766116"
 ---
 # <a name="template-parameters"></a>Parametry šablony
 
@@ -61,7 +61,7 @@ Následující tabulka uvádí seznam rezervovaných parametrů šablony, které
 |safeitemrootname|Stejné jako `safeitemname`.|
 |safeprojectname|Název zadaný uživatelem při vytvoření projektu, ale všechny nezabezpečené znaky a mezery byly odebrány.|
 |čas|Aktuální čas ve formátu DD/MM/RRRR 00:00:00.|
-|SpecificSolutionName|Název řešení. Pokud je zaškrtnuto políčko „vytvořit adresář řešení“, `SpecificSolutionName` obsahuje název řešení. Pokud není zaškrtnuto políčko „vytvořit adresář řešení“, `SpecificSolutionName` je prázdné.|
+|specifiedSolutionName|Název řešení. Pokud je zaškrtnuto políčko „vytvořit adresář řešení“, `specifiedSolutionName` obsahuje název řešení. Pokud není zaškrtnuto políčko „vytvořit adresář řešení“, `specifiedSolutionName` je prázdné.|
 |USERDOMAIN|Aktuální uživatel domény.|
 |uživatelské jméno|Aktuální uživatelské jméno.|
 |webnamespace|Název aktuální webové stránky. Tento parametr se používá v šabloně webového formuláře zajistit jedinečné názvy tříd. Pokud webová stránka se v kořenovém adresáři webového serveru, tento parametr šablony přeloží do kořenového adresáře na webovém serveru.|

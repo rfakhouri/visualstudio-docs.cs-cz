@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e300edf07aa98facbe6059ba9574e238ec8f3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 621bb7292ca467d6d3197636f662a4662712d483
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923260"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766026"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Nezveřejňujte obecné seznamy
 
@@ -31,10 +31,12 @@ ms.locfileid: "68923260"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
-Typ obsahuje externě viditelný člen, který je <xref:System.Collections.Generic.List%601?displayProperty=fullName> typu, <xref:System.Collections.Generic.List%601?displayProperty=fullName> vrátí typ, <xref:System.Collections.Generic.List%601?displayProperty=fullName> nebo jehož signatura obsahuje parametr.
+
+Typ obsahuje externě viditelný člen, který je <xref:System.Collections.Generic.List%601?displayProperty=fullName> typu, <xref:System.Collections.Generic.List%601> vrátí typ, <xref:System.Collections.Generic.List%601> nebo jehož signatura obsahuje parametr.
 
 ## <a name="rule-description"></a>Popis pravidla
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>je obecná kolekce, která je navržena pro výkon a nikoli pro dědění. <xref:System.Collections.Generic.List%601?displayProperty=fullName>neobsahuje virtuální členy, které usnadňují změnu chování zděděné třídy. Následující obecné kolekce jsou navržené pro dědění a měly by být vystaveny <xref:System.Collections.Generic.List%601?displayProperty=fullName>namísto.
+
+<xref:System.Collections.Generic.List%601?displayProperty=fullName>je obecná kolekce, která je navržena pro výkon a nikoli pro dědění. <xref:System.Collections.Generic.List%601>neobsahuje virtuální členy, které usnadňují změnu chování zděděné třídy. Následující obecné kolekce jsou navržené pro dědění a měly by být vystaveny <xref:System.Collections.Generic.List%601>namísto.
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
@@ -42,13 +44,20 @@ Typ obsahuje externě viditelný člen, který je <xref:System.Collections.Gener
 
 - <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+
 ## <a name="how-to-fix-violations"></a>Jak opravit porušení
+
 Chcete-li opravit porušení tohoto pravidla, změňte <xref:System.Collections.Generic.List%601?displayProperty=fullName> typ na jednu z obecných kolekcí, která je navržena pro dědění.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
-Potlačí upozornění z tohoto pravidla, pokud sestavení, které vyvolává toto upozornění, není určeno jako opakovaně použitelná knihovna. Může být například bezpečné toto upozornění potlačit v aplikaci výkon s vyladěným výkonem, kde výhoda byla získána z použití obecných seznamů.
+
+Potlačí upozornění z tohoto pravidla, pokud sestavení, které vyvolává toto upozornění, není určeno jako opakovaně použitelná knihovna. Může být například bezpečné toto upozornění potlačit v aplikaci s vyladěným výkonem, kde výhoda výkonu byla získána z použití obecných seznamů.
 
 ## <a name="related-rules"></a>Související pravidla
+
 [CA1005: Vyhnout se nadměrnému počtu parametrů u obecných typů](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
 [CA1010: Kolekce by měly implementovat obecné rozhraní](../code-quality/ca1010-collections-should-implement-generic-interface.md)
@@ -64,4 +73,5 @@ Potlačí upozornění z tohoto pravidla, pokud sestavení, které vyvolává to
 [CA1007: Použijte obecné typy, kde je to vhodné](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Viz také:
+
 [Obecné typy](/dotnet/csharp/programming-guide/generics/index)

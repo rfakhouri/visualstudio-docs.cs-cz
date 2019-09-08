@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9a0714082e0fce744fe74eaa4e4aefee5a41867
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: a73ce207d8efb0c6309ba52648c7231f89bc7984
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365371"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766048"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Zkontrolujte nepoužité parametry
 
@@ -29,54 +29,56 @@ ms.locfileid: "67365371"
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Pevné – Pokud člen není viditelný mimo sestavení, bez ohledu na to, které provedete změnu.<br /><br /> Pevné – Pokud změníte členu, který chcete použít parametr v rámci svého těla.<br /><br /> Rozdělení – odeberte parametr a je viditelný mimo sestavení.|
+|Narušující změna|Bez přerušení – Pokud člen není viditelný mimo sestavení, bez ohledu na změnu, kterou provedete.<br /><br /> Bez přerušení – Pokud změníte člena tak, aby používal parametr v rámci jeho těla.<br /><br /> Přerušení – Pokud odeberete parametr a je viditelný mimo sestavení.|
 
-## <a name="cause"></a>Příčina
+## <a name="cause"></a>příčina
 
-Podpis metody obsahuje parametr, který není použit v těle metody.
+Signatura metody obsahuje parametr, který se nepoužívá v těle metody.
 
-Toto pravidlo nezkoumá následující druhy metod:
+Toto pravidlo neověřuje následující druhy metod:
 
-- Metody odkazuje delegáta.
+- Metody, na které se odkazuje delegát.
 
 - Metody používané jako obslužné rutiny událostí.
 
-- Metody deklarované s `abstract` (`MustOverride` v jazyce Visual Basic) modifikátor.
+- Metody deklarované s `abstract` modifikátorem`MustOverride` (v Visual Basic).
 
-- Metody deklarované s `virtual` (`Overridable` v jazyce Visual Basic) modifikátor.
+- Metody deklarované s `virtual` modifikátorem`Overridable` (v Visual Basic).
 
-- Metody deklarované s `override` (`Overrides` v jazyce Visual Basic) modifikátor.
+- Metody deklarované s `override` modifikátorem`Overrides` (v Visual Basic).
 
-- Metody deklarované s `extern` (`Declare` v sadě Visual Studio) modifikátor.
+- Metody deklarované s `extern` modifikátorem`Declare` (příkaz v Visual Basic)
+
+Pokud používáte [analyzátory FxCop](install-fxcop-analyzers.md), toto pravidlo neoznačí parametry, které jsou pojmenovány symbolem [zahození](/dotnet/csharp/discards) , `_` `_1`například,, a `_2`. Tím se snižuje šum v parametrech, které jsou potřeba pro požadavky na signatury, například metodu použitou jako delegáta, parametr se speciálními atributy nebo parametr, jehož hodnota je implicitně přistupovaná v době běhu rozhraním, ale neodkazuje se na. znakovou.
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Zkontrolujte parametry v nevirtuálních metodách, které nejsou používány v těle metody, abyste měli jistotu, že nesprávnosti kolem selhání k nim přístup. Nevyužité parametry zvyšují náklady na náklady na údržbu a výkonu.
+Zkontrolujte parametry v nevirtuálních metodách, které se nepoužívají v těle metody, abyste se ujistili, že k nim neexistují žádné neopravitelné chyby. Nepoužité parametry účtují náklady na údržbu a výkon.
 
-Porušení tohoto pravidla může někdy odkazovat na implementační chybě v metodě. Například parametr by měl byly použity v těle metody. Potlačení upozornění tohoto pravidla, pokud parametr existuje z důvodu zpětné kompatibility.
+V některých případech může porušení tohoto pravidla ukazovat na chybu implementace v metodě. Například parametr by měl být použit v těle metody. Potlačí upozornění tohoto pravidla, pokud musí existovat parametr z důvodu zpětné kompatibility.
 
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
-Chcete-li opravit porušení tohoto pravidla, odebrat Nepoužitý parametr (k zásadní změně) nebo pomocí parametru v těle metody (nevýznamných změn).
+Chcete-li opravit porušení tohoto pravidla, odeberte nepoužitý parametr (zásadní změnu) nebo použijte parametr v těle metody (nerušená změna).
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Je bezpečné potlačit upozornění tohoto pravidla:
+Z tohoto pravidla je bezpečné potlačit upozornění:
 
-- Pro dříve dodané kód, pro kterou bude oprava rozbíjející změny.
+- V dříve dodaném kódu, pro který by došlo k zásadní změně opravy.
 
-- Pro `this` parametr ve vlastní metody rozšíření pro <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>. Funkce <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> třídy jsou statické, takže není nutné pro přístup k `this` parametr v těle metody.
+- Pro parametr v metodě vlastního rozšíření pro <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>. `this` Funkce ve <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> třídě jsou statické, takže není nutné `this` přístup k parametru v těle metody.
 
 ## <a name="example"></a>Příklad
 
-Následující příklad ukazuje dva způsoby. Jedna metoda porušuje pravidlo a jiná metoda splňuje pravidlo.
+Následující příklad ukazuje dvě metody. Jedna metoda narušuje pravidlo a druhá metoda bude toto pravidlo splňovat.
 
 [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
 
-[CA1811: Vyhněte se nevolanému místnímu kódu](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811: Vyhněte se nevolanému privátnímu kódu](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
-[CA1812: Vyhněte se nevytvořeným instancím vnitřních tříd](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812: Vyhněte se nevytváření instancí vnitřních tříd](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
-[CA1804: Odeberte nepoužívané místní hodnoty](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Odebrat nepoužívané místní hodnoty](../code-quality/ca1804-remove-unused-locals.md)

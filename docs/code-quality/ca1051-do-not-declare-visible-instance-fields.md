@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5dd8a4b2d0b32a8c52f75dee6fd765a7ea6ec9a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 455ab619f293981c5ebd3afba6336c63f2fe7f49
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547552"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766061"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Nedeklarujte viditelná pole instance
 
@@ -38,9 +38,11 @@ Ve výchozím nastavení toto pravidlo vyhledává pouze externě viditelné typ
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Hlavní použití pole by mělo být jako podrobnost implementace. Pole by měla `private` být `internal` nebo a měla by být vystavena pomocí vlastností. Přístup k vlastnosti je snadno přístupný, protože je přístup k poli a kód v přístupových objektech vlastnosti se může změnit, protože funkce typu se rozšiřují bez úvodních změn. Vlastnosti, které vracejí jenom hodnotu privátního nebo interního pole, jsou optimalizované tak, aby se prováděly v hodnotě s přístupem k poli. k používání externě viditelných polí nad vlastnostmi je přidruženo velmi malý nárůst výkonu.
+Hlavní použití pole by mělo být jako podrobnost implementace. Pole by měla `private` být `internal` nebo a měla by být vystavena pomocí vlastností. Je snadné získat přístup k vlastnosti, protože je přístup k poli a kód v přístupových objektech vlastnosti se může změnit, protože funkce typu se rozšiřují bez úvodních změn.
 
-Externě `public`viditelné jsou úrovně dostupnosti `protected`, `protected internal` `Public` a(`Protected`, a vVisualBasic).`Protected Friend`
+Vlastnosti, které vracejí jenom hodnotu privátního nebo interního pole, jsou optimalizované tak, aby se prováděly v hodnotě s přístupem k poli. zvýšení výkonu pro použití externě viditelných polí místo vlastností je minimální. *Externě viditelné* `public`jsou úrovně dostupnosti `protected`, a `protected internal` (`Public`, `Protected` avVisualBasic).`Protected Friend`
+
+Veřejné pole navíc nelze chránit pomocí [požadavků propojení](/dotnet/framework/misc/link-demands). Další informace najdete v tématu [CA2112: Zabezpečené typy by neměly vystavovat pole](../code-quality/ca2112-secured-types-should-not-expose-fields.md). (Požadavky na propojení se nevztahují na aplikace .NET Core.)
 
 ## <a name="how-to-fix-violations"></a>Jak opravit porušení
 
@@ -48,7 +50,12 @@ Chcete-li opravit porušení tohoto pravidla, vytvořte pole `private` nebo `int
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Nepotlačujte upozornění na toto pravidlo. Externě viditelná pole neposkytují žádné výhody, které nejsou k dispozici pro vlastnosti. Veřejné pole navíc nelze chránit pomocí [požadavků propojení](/dotnet/framework/misc/link-demands). Viz [CA2112: Zabezpečené typy by neměly vystavovat pole](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+Toto upozornění potlačí jenom v případě, že jste si jisti, že spotřebitelé potřebují k poli přímý přístup. U většiny aplikací nevystavená pole neposkytují výhody výkonu ani udržovatelnosti prostřednictvím vlastností.
+
+Příjemci můžou potřebovat přístup k polím v následujících situacích:
+
+- v ovládacích prvcích obsahu webových formulářů ASP.NET
+- Když cílová platforma používá `ref` pro úpravu polí, jako jsou například model-View-ViewModel (MVVM) architektury pro WPF a UWP
 
 ## <a name="configurability"></a>Konfigurovatelnost
 
