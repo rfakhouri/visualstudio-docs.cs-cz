@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c14f48c3f6fc5b3b4cbdf9dfb5d36919de6884f
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 1506f4303cf5344c4035642cfdd3e42c98396b02
+ms.sourcegitcommit: bd4e45f1697a8fbfdbc0a7c6b531c8f7b9fb8a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293533"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808771"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Kurz 1: Vytvoření prohlížeče obrázků
 
@@ -52,7 +52,7 @@ Po dokončení by měl program vypadat podobně jako na následujícím obrázku
 |Název|Popis|
 |-----------|-----------------|
 |[Krok 1: Vytvoření projektu model Windows Forms aplikace](../ide/step-1-create-a-windows-forms-application-project.md)|Začněte vytvořením projektu model Windows Forms aplikace.|
-|[Krok 2: Spuštění programu](../ide/step-2-run-your-program.md)|Spusťte program model Windows Forms aplikace, který jste vytvořili v předchozím kroku.|
+|[Krok 2: Spuštění aplikace](../ide/step-2-run-your-program.md)|Spusťte program model Windows Forms aplikace, který jste vytvořili v předchozím kroku.|
 |[Krok 3: Nastavení vlastností formuláře](../ide/step-3-set-your-form-properties.md)|Změňte vzhled formuláře pomocí okna **vlastnosti** .|
 |[Krok 4: Rozložení formuláře pomocí ovládacího prvku TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|`TableLayoutPanel` Přidejte ovládací prvek do formuláře.|
 |[Krok 5: Přidání ovládacích prvků do formuláře](../ide/step-5-add-controls-to-your-form.md)|Přidejte ovládací prvky, například `PictureBox` ovládací prvek `CheckBox` a ovládací prvek, do formuláře. Přidejte tlačítka do formuláře.|
@@ -63,7 +63,7 @@ Po dokončení by měl program vypadat podobně jako na následujícím obrázku
 |[Krok 10: Psaní kódu pro další tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Napíšete kód pro nastavení dalších tlačítek a zaškrtávací políčko v práci pomocí technologie IntelliSense.|
 |[Krok 11: Spusťte program a vyzkoušejte další funkce.](../ide/step-11-run-your-program-and-try-other-features.md)|Spusťte program a nastavte barvu pozadí. Vyzkoušejte jiné funkce, jako je například změna barev, písem a ohraničení.|
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-steps"></a>Další postup
 
 Pokud chcete začít s kurzem, **začněte v [kroku 1: Vytvořte projekt](../ide/step-1-create-a-windows-forms-application-project.md)** aplikace model Windows Forms.
 
