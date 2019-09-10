@@ -42,3 +42,7 @@
       items:
         - name: Vlastnosti nástroje MSBuild pro kontejnerové projekty
           href: container-msbuild-properties.md
+        - name: Nastavení pro projekty Docker Compose
+          href: docker-compose-properties.md
+        - name: Nastavení spuštění
+          href: container-launch-settings.md
