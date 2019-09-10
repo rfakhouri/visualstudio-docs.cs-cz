@@ -14,22 +14,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d146416190924c8f1835ef17bc0fb622fcc53e03
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: facd2ed28ae4eb3e34843bff331567c4c8c55526
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180213"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864788"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Kurz: Vytvoření jednoduché aplikace pomocí jazyka C\#
 
 Po dokončení tohoto kurzu se seznámíte s mnoha nástroji, dialogovými okny a návrháři, které můžete použít při vývoji aplikací pomocí sady Visual Studio. Vytvoříte aplikaci "Hello, World", navrhnete uživatelské rozhraní, přidáte kód a budete ladit chyby, zatímco se naučíte pracovat v integrovaném vývojovém prostředí ([IDE](visual-studio-ide.md)).
 
+## <a name="prerequisites"></a>Požadavky
+
 ::: moniker range="vs-2017"
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) stránku a nainstalovat zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?) stránku a nainstalovat zdarma.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads) stránku a nainstalovat zdarma.
+
+- Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/) stránku a nainstalovat zdarma.
+- Pro tento kurz můžete použít buď .NET Framework, nebo .NET Core. .NET Core je novější, moderní rozhraní. .NET Core vyžaduje Visual Studio 2019 verze 16,3 nebo novější.
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>Nastavení integrovaného vývojového prostředí (IDE)
@@ -40,7 +44,7 @@ Při prvním otevření aplikace Visual Studio budete vyzváni k přihlášení.
 
 ![Dialogové okno zvolit nastavení](../media/exploreide-settings.png)
 
-Po spuštění sady Visual Studio se zobrazí okna nástrojů, nabídky a panely nástrojů a prostor hlavního okna. Okna nástrojů jsou ukotvena na levé a pravé straně okna aplikace, s možností snadného **spuštění**, řádku nabídek a standardní panel nástrojů v horní části. Ve středu okna aplikace je **Úvodní stránka**. Při načítání řešení nebo projektu se zobrazí editory a návrháři v prostoru, kde je **Úvodní stránka** . Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
+Po spuštění sady Visual Studio se zobrazí okna nástrojů, nabídky a panely nástrojů a prostor hlavního okna. Okna nástrojů jsou ukotvena na levé a pravé straně okna aplikace, s možností **snadného spuštění**, řádku nabídek a standardní panel nástrojů v horní části. Ve středu okna aplikace je **Úvodní stránka**. Při načítání řešení nebo projektu se zobrazí editory a návrháři v prostoru, kde je **Úvodní stránka** . Při vývoji aplikace strávíte nejvíce času v této centrální oblasti.
 
 ![Integrované vývojové prostředí (IDE) sady Visual Studio 2017 s obecným nastavením](../media/exploreide-idewithgeneralsettings.png "Snímek obrazovky s prostředím IDE sady Visual Studio 2017 s použitým obecným nastavením")
 
@@ -62,7 +66,7 @@ Při vytváření aplikace v systému Visual Studio je třeba nejprve vytvořit
 
      ![Na panelu nabídek vyberte možnosti soubor, nový, projekt] . (../media/exploreide-filenewproject.png "Snímek obrazovky s panelem nabídek, kde si zvolíte soubor, nový, projekt")
 
-1. V dialogovém **okně Nový projekt** vyberte kategorii nainstalovaná > aplikace  > **Visual C#**  **Windows Desktop** a pak vyberte šablonu **aplikace WPF (.NET Framework)** . Pojmenujte projekt **HelloWPFApp**a vyberte **OK**.
+1. V dialogovém **okně Nový projekt** vyberte kategorii **nainstalovaná** > aplikace  > **Visual C#**  **Windows Desktop** a pak vyberte šablonu **aplikace WPF (.NET Framework)** . Pojmenujte projekt **HelloWPFApp**a vyberte **OK**.
 
      ![Šablona aplikace WPF v dialogovém okně Nový projekt sady Visual Studio](media/exploreide-newprojectcsharp.png "Snímek obrazovky šablony aplikace WPF v dialogovém okně Nový projekt")
 
@@ -76,9 +80,12 @@ Při vytváření aplikace v systému Visual Studio je třeba nejprve vytvořit
 
    ![Zobrazit okno vytvořit nový projekt](../../get-started/media/vs-2019/start-window-create-new-project.png "Snímek obrazovky okna vytvořit nový projekt")
 
-1. Na obrazovce **vytvořit nový projekt** vyhledejte "WPF", zvolte **aplikace WPF (.NET Framework)** a pak klikněte na tlačítko **Další**.
+1. Na obrazovce **vytvořit nový projekt** vyhledejte "WPF", "zvolte **aplikaci WPF (.NET Core)** a pak klikněte na tlačítko **Další**.
 
    ![Šablona aplikace WPF v dialogovém okně vytvořit nový projekt](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Snímek obrazovky šablony aplikace WPF v dialogovém okně vytvořit nový projekt")
+
+   > [!NOTE]
+   > Můžete najít dvě šablony klasické pracovní plochy WPF, jeden pro .NET Framework a druhý pro .NET Core. Šablona .NET Core je k dispozici v aplikaci Visual Studio 2019 verze 16,3 a novější. Pro tento kurz můžete použít jednu z nich, ale doporučujeme .NET Core pro nový vývoj.
 
 1. Na další obrazovce zadejte název projektu, **HelloWPFApp**a klikněte na **vytvořit**.
 
@@ -99,31 +106,23 @@ Poté, co jste projekt vytvořili, jej můžete upravit. Provedete to tak, že v
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Změna názvu souboru MainWindow. XAML
 
-Pojďme dát MainWindow konkrétnější název.
-
-1. V **Průzkumník řešení**vyberte *MainWindow. XAML*. Měli byste vidět okno **vlastnosti** , ale pokud ne, zvolte nabídku **zobrazení** a poté položku **okna vlastnosti** . (Nebo stiskněte **F4**.)
-
-1. Změňte vlastnost **název souboru** na `Greetings.xaml`.
-
-     ![Okno Vlastnosti se zvýrazněným názvem souboru](../media/exploreide-filenameinpropertieswindow.png "Snímek obrazovky okno Vlastnosti se zvýrazněným názvem souboru")
-
-     **Průzkumník řešení** ukazuje, že název souboru je nyní Greetings *. XAML*a vnořený soubor kódu se nyní nazývá *Greetings.XAML.cs*. Tento soubor kódu je vnořený pod uzlem souboru *. XAML* , aby se zobrazily vzájemně propojené.
-
-     ![Okno okno Vlastnosti a Průzkumník řešení s názvem souboru s pozdravem](../media/exploreide-greetingsfilename.png "Snímek obrazovky okna okno Vlastnosti a Průzkumník řešení s názvem souboru s pozdravem")     
+Pojďme dát MainWindow konkrétnější název. V **Průzkumník řešení**klikněte pravým tlačítkem na *MainWindow. XAML* a vyberte **Přejmenovat**. Přejmenujte soubor na *Greetings. XAML*.
 
 ## <a name="design-the-user-interface-ui"></a>Návrh uživatelského rozhraní (UI)
+
+Pokud návrhář není otevřen, vyberte možnost *Greetings. XAML* a stisknutím klávesy **SHIFT**+**F7** Otevřete návrháře.
 
 Do této aplikace přidáme tři typy ovládacích prvků: <xref:System.Windows.Controls.TextBlock> ovládací prvek, dva <xref:System.Windows.Controls.RadioButton> ovládací prvky a <xref:System.Windows.Controls.Button> ovládací prvek.
 
 ### <a name="add-a-textblock-control"></a>Přidání ovládacího prvku TextBlock
 
-1. Zadáním **CTRL**+**Q** aktivujte vyhledávací pole a zadejte **sadu nástrojů**. V seznamu výsledků vyberte možnost **zobrazit > sada nástrojů** .
+1. Stisknutím klávesy **CTRL**+**Q** aktivujte vyhledávací pole a zadejte **sadu nástrojů**. V seznamu výsledků vyberte možnost **zobrazit > sada nástrojů** .
 
 1. V **sadě nástrojů**rozbalte uzel **běžné ovládací prvky WPF** pro zobrazení ovládacího prvku TextBlock.
 
      ![Sada nástrojů se zvýrazněným ovládacím prvkem TextBlock](../media/exploreide-textblocktoolbox.png "Snímek obrazovky okna panelu nástrojů se zvýrazněným ovládacím prvkem TextBlock")
 
-1. Přidejte ovládací prvek TextBlock do návrhové plochy tak, že vyberete položku **TextBlock** a přetáhnete ji do okna na návrhové ploše. Vycentrovat ovládací prvek v horní části okna.
+1. Přidejte ovládací prvek TextBlock do návrhové plochy tak, že vyberete položku **TextBlock** a přetáhnete ji do okna na návrhové ploše. Vycentrovat ovládací prvek v horní části okna. V aplikaci Visual Studio 2019 a novějších můžete použít červené pokyny k centrování ovládacího prvku.
 
     Okno aplikace by mělo vypadat jako na následujícím obrázku:
 
@@ -159,7 +158,7 @@ Dále do formuláře přidejte dva ovládací prvky [RadioButton](/dotnet/framew
 
      ![Okno panelu nástrojů s vybraným ovládacím prvkem RadioButton](../media/exploreide-radiobuttontoolbox.png "Snímek obrazovky okna panelu nástrojů s vybraným ovládacím prvkem RadioButton")
 
-1. Přidejte dva ovládací prvky RadioButton na návrhovou plochu tak, že vyberete položku **RadioButton** a přetáhnete ji do okna na návrhové ploše. Přesuňte tlačítka (tak, že je vyberete a použijete klávesy se šipkami), aby se tlačítka zobrazovala vedle sebe pod ovládacím prvkem TextBlock.
+1. Přidejte dva ovládací prvky RadioButton na návrhovou plochu tak, že vyberete položku **RadioButton** a přetáhnete ji do okna na návrhové ploše. Přesuňte tlačítka (tak, že je vyberete a použijete klávesy se šipkami), aby se tlačítka zobrazovala vedle sebe pod ovládacím prvkem TextBlock. Použijte červené pokyny pro zarovnání ovládacích prvků.
 
    Okno aplikace by mělo vypadat takto:
 
@@ -175,11 +174,7 @@ Dále přidáte zobrazený text pro každý ovládací prvek RadioButton. Násle
 
 ### <a name="add-display-text-for-each-radio-button"></a>Přidat text zobrazení pro každý přepínač
 
-1. Na návrhové ploše otevřete místní nabídku pro HelloButton tak, že stisknete pravé tlačítko myši na HelloButton, zvolíte **Upravit text**a pak zadáte `Hello`.
-
-1. Otevřete místní nabídku pro GoodbyeButton tak, že stisknete pravé tlačítko myši na GoodbyeButton, vyberete **Upravit text**a pak zadáte `Goodbye`.
-
-   Kód XAML by teď měl vypadat podobně jako v následujícím příkladu:
+1. Aktualizujte **atribut obsahu** pro `HelloButton` a `GoodbyeButton` `"Hello"` a vjazyceXAML.`"Goodbye"` Kód XAML by teď měl vypadat podobně jako v následujícím příkladu:
 
    ```xaml
    <Grid>
@@ -195,7 +190,7 @@ V tomto kroku nastavíme HelloButton, aby se kontrolovaly ve výchozím nastaven
 
 1. V zobrazení XAML vyhledejte značku pro HelloButton.
 
-1. Přidejte atribut -Checked a nastavte jej na **hodnotu true**. Konkrétně přidejte `IsChecked="True"`.
+1. Přidejte atribut- **checked** a nastavte jej na **hodnotu true**. Konkrétně přidejte `IsChecked="True"`.
 
    Kód XAML by teď měl vypadat podobně jako v následujícím příkladu:
 
@@ -211,7 +206,7 @@ Konečný prvek uživatelského rozhraní, který přidáte, je ovládací prvek
 
 ### <a name="add-the-button-control"></a>Přidání ovládacího prvku tlačítko
 
-1. V sadě **nástrojů**vyhledejte ovládací prvek **tlačítko** a poté jej přidejte do návrhové plochy v ovládacích prvcích RadioButton přetažením do formuláře v zobrazení Návrh.
+1. V sadě **nástrojů**vyhledejte ovládací prvek **tlačítko** a poté jej přidejte do návrhové plochy v ovládacích prvcích RadioButton přetažením do formuláře v zobrazení Návrh. Pokud používáte Visual Studio 2019 nebo novější, vám červená čára pomůže zarovnat na střed ovládacího prvku.
 
 1. V zobrazení XAML změňte hodnotu **obsahu** pro ovládací prvek tlačítko z `Content="Button"` na `Content="Display"`a poté změny uložte.
 
@@ -239,7 +234,7 @@ Po spuštění této aplikace se zobrazí okno se zprávou, když uživatel zvol
      *Greetings.XAML.cs* se otevře s kurzorem v `Button_Click` události.
 
     ```csharp
-    private void Button_Click_1(object sender, RoutedEventArgs e)
+    private void Button_Click(object sender, RoutedEventArgs e)
     {
 
     }
@@ -286,11 +281,20 @@ Na začátku tohoto kurzu jsme přejmenovali *MainWindow.* XAML na *Greetings. X
 
 1. Změňte `StartupUri="MainWindow.xaml"` na`StartupUri="Greetings.xaml"`a pak změny uložte.
 
-Znovu spusťte ladicí program (stiskněte klávesu **F5**). Měli byste vidět okno **Greetings** aplikace. Nyní zavřete okno aplikace a zastavte ladění.
+Znovu spusťte ladicí program (stiskněte klávesu **F5**). Měli byste vidět okno **Greetings** aplikace.
+
+::: moniker range="vs-2017"
+![Snímek obrazovky běžící aplikace](media/exploreide-wpf-running-app.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Snímek obrazovky běžící aplikace](media/vs-2019/exploreide-wpf-running-app.png)
+::: moniker-end
+
+Nyní zavřete okno aplikace a zastavte ladění.
 
 ### <a name="debug-with-breakpoints"></a>Ladění pomocí zarážek
 
-Můžete otestovat kód během ladění přidáním některých zarážek. Zarážky > můžete přidat kliknutím na levý okraj editoru vedle řádku kódu, kde chcete, aby došlo k přerušení, nebo stisknutím klávesy **F9**.
+Můžete otestovat kód během ladění přidáním některých zarážek. Zarážky > můžete **přidat kliknutím na**levý okraj editoru vedle řádku kódu, kde**chcete, aby**došlo k přerušení, nebo stisknutím klávesy **F9**.
 
 #### <a name="add-breakpoints"></a>Přidat zarážky
 
@@ -316,7 +320,7 @@ Můžete otestovat kód během ladění přidáním některých zarážek. Zará
 
 1. Kliknutím na tlačítko **OK** v okně se zprávou ho zavřete.
 
-1. V okně **Greetings** vyberte přepínač rozdálení a pak klikněte na tlačítko **Zobrazit** .
+1. V okně **Greetings** vyberte přepínač rozdálení a pak **klikněte na tlačítko** **Zobrazit** .
 
      Řádek `MessageBox.Show("Goodbye.")` je zvýrazněn žlutě.
 
@@ -325,6 +329,12 @@ Můžete otestovat kód během ladění přidáním některých zarážek. Zará
 1. Zavřete okno aplikace a zastavte ladění.
 
 1. Na panelu nabídek vyberte možnost **ladit** > **Zakázat všechny zarážky**.
+
+### <a name="view-a-representation-of-the-ui-elements"></a>Zobrazit reprezentace prvků uživatelského rozhraní
+
+Ve spuštěné aplikaci byste měli vidět widget, který se zobrazí v horní části okna. Jedná se o pomocníka za běhu, který poskytuje rychlý přístup k některým užitečným funkcím ladění. Klikněte na první tlačítko, **přejděte do živého vizuálního stromu**. Mělo by se zobrazit okno se stromovou strukturou, která obsahuje všechny vizuální prvky vaší stránky. Rozbalením uzlů Najděte tlačítka, která jste přidali.
+
+![Snímek obrazovky okna živého vizuálního stromu](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>Sestavení verze pro vydání aplikace
 
