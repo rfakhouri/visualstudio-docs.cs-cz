@@ -692,6 +692,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: 'CA3012: Zkontrolujte ohrožení zabezpečení injektáží regulárního výrazu v kódu'
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: 'CA3061: Nepřidávat schéma podle adresy URL'
+                  href: ca3061.md
                 - name: 'CA3075: Zpracování nezabezpečené specifikace DTD'
                   href: ca3075-insecure-dtd-processing.md
                 - name: 'CA3076: Spuštění nezabezpečeného skriptu XSLT'
@@ -702,12 +704,30 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
                 - name: 'CA5361: Nezakazovat zprostředkovateli SChannel použití silného šifrování'
                   href: ca5361.md
+                - name: 'CA5363: Nezakazovat ověřování požadavků'
+                  href: ca5363.md
                 - name: 'CA5364: Nepoužívejte zastaralé protokoly zabezpečení'
                   href: ca5364.md
+                - name: 'CA5369: Použít XmlReader pro Deserialize'
+                  href: ca5369.md
+                - name: 'CA5370: Použít XmlReader pro ověřování čtečky'
+                  href: ca5370.md
+                - name: 'CA5371: Použít XmlReader pro čtení schématu'
+                  href: ca5371.md
+                - name: 'CA5372: Použít XmlReader pro XPathDocument'
+                  href: ca5372.md
+                - name: 'CA5373: Nepoužívat zastaralou funkci odvození klíče'
+                  href: ca5373.md
                 - name: 'CA5378: Nezakazujte ServicePointManagerSecurityProtocols'
                   href: ca5378.md
+                - name: 'CA5380: Nepřidávat certifikáty do kořenového úložiště'
+                  href: ca5380.md
+                - name: 'CA5381: Zajistit, aby se certifikáty nepřidávaly do kořenového úložiště'
+                  href: ca5381.md
                 - name: 'CA5386: Vyhněte se pevnému zakódování hodnoty SecurityProtocolType'
                   href: ca5386.md
+                - name: 'CA5389: Nepřidávat cestu položky archivace k cílové cestě systému souborů'
+                  href: ca5389.md
                 - name: 'CA5397: Nepoužívejte zastaralé hodnoty SslProtocols'
                   href: ca5397.md
                 - name: 'CA5398: Vyhněte se pevně zakódovaným hodnotám SslProtocols'
