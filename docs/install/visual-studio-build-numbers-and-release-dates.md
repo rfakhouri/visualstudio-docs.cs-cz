@@ -5,19 +5,19 @@ description: Seznam vydaných verzí a čísel sestavení pro sadu Visual Studio
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/05/2019
+ms.date: 09/10/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 608d13f53517a59d7345d862296e75b1ac7335b0
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.openlocfilehash: 79d16498b146a09f22d542423d4b691a2573e80d
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739277"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887994"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Čísla sestavení a data vydání sady Visual Studio
 
@@ -29,6 +29,8 @@ V následující tabulce jsou uvedena čísla sestavení a datum vydání sady V
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.2.5 | Vydaná verze | 10. září 2019 | 16.2.29306.81 |
+| 16.0.8 | Vydaná verze | 10. září 2019 | 16.0.28803.584 |
 | 16.2.4 | Vydaná verze | 5\. září 2019 | 16.2.29230.47 |
 | 16.3.0 | Preview 3 | 4\. září 2019 | 16.3.29230.61 |
 | 16.2.3 | Vydaná verze | 20. srpna 2019 | 16.2.29215.179 |
@@ -93,6 +95,8 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.16 | Vydaná verze | 10. září 2019 | 15.9.28307.858 |
+| 15.0.27 | Vydaná verze | 10. září 2019 | 15.0.26228.98 |
 | 15.9.15 | Vydaná verze | 13. srpna 2019 | 15.9.28307.812 |
 | 15.0.26 | Vydaná verze | 13. srpna 2019 | 15.0.26228.96 |
 | 15.9.14 | Vydaná verze | 9\. července 2019 | 15.9.28307.770 |
